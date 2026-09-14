@@ -41,6 +41,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from align import align_ordered                             # noqa: E402
 import coverage as C                                        # noqa: E402
+from paper_census import sittings                           # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.abspath(__file__)))))
@@ -172,46 +173,48 @@ def report(subject, show=False):
     by_ref = C.covered(subject)
     by_text = asked(subject)
     total = open_ = ref_only = text_only = unread = 0
-    for year in range(2021, 2026):
-        for level in ('hl', 'ol'):
-            try:
-                P, S, pairs, positional = align_ordered(subject, year, level)
-            except Exception:
+    # The corpus is every sitting on disk. A fixed 2021-2025 loop made this
+    # diagnostic report a subject complete while reconcile.py still saw all of
+    # its 2016-2020 papers as uncarded.
+    for year, level, _components in sittings(subject):
+        try:
+            P, S, pairs, positional = align_ordered(subject, year, level)
+        except Exception:
+            continue
+        texts = by_text.get((year, level), [])
+        paired = {**positional, **pairs}
+        asks = {sk: question_of(P, S, pk, sk) for sk, (pk, _) in paired.items()}
+        shared = unreadable(P, [(pk, asks[sk]) for sk, (pk, _) in paired.items()])
+        for skey, (pkey, _) in paired.items():
+            if not S.points(*skey):
                 continue
-            texts = by_text.get((year, level), [])
-            paired = {**positional, **pairs}
-            asks = {sk: question_of(P, S, pk, sk) for sk, (pk, _) in paired.items()}
-            shared = unreadable(P, [(pk, asks[sk]) for sk, (pk, _) in paired.items()])
-            for skey, (pkey, _) in paired.items():
-                if not S.points(*skey):
-                    continue
-                if pkey in shared and not CUE_IS_A_QUESTION.match((asks[skey] or '').strip()):
-                    unread += 1
-                    continue
-                q, letter, roman = pkey
-                total += 1
-                hit_ref = False
-                for letters, romans in by_ref.get((year, level, q), ()):
-                    if not letters and not romans:
-                        hit_ref = letter is None and roman is None
-                    else:
-                        hit_ref = ((letter is None or not letters or letter in letters)
-                                   and (roman is None or not romans or roman in romans))
-                    if hit_ref:
-                        break
-                hit_text = covered_by_text(asks[skey], texts)
-                if hit_ref and not hit_text:
-                    ref_only += 1
-                if hit_text and not hit_ref:
-                    text_only += 1
-                if hit_ref or hit_text:
-                    continue
-                open_ += 1
-                if show:
-                    print(f'-- {year} {level.upper()} {P.ref(pkey)}  scheme={skey}')
-                    print(f'   Q: {(asks[skey] or "(no paper text)")[:170]}')
-                    for pt in S.points(*skey)[:4]:
-                        print(f'   * {pt[:150]}')
+            if pkey in shared and not CUE_IS_A_QUESTION.match((asks[skey] or '').strip()):
+                unread += 1
+                continue
+            q, letter, roman = pkey
+            total += 1
+            hit_ref = False
+            for letters, romans in by_ref.get((year, level, q), ()):
+                if not letters and not romans:
+                    hit_ref = letter is None and roman is None
+                else:
+                    hit_ref = ((letter is None or not letters or letter in letters)
+                               and (roman is None or not romans or roman in romans))
+                if hit_ref:
+                    break
+            hit_text = covered_by_text(asks[skey], texts)
+            if hit_ref and not hit_text:
+                ref_only += 1
+            if hit_text and not hit_ref:
+                text_only += 1
+            if hit_ref or hit_text:
+                continue
+            open_ += 1
+            if show:
+                print(f'-- {year} {level.upper()} {P.ref(pkey)}  scheme={skey}')
+                print(f'   Q: {(asks[skey] or "(no paper text)")[:170]}')
+                for pt in S.points(*skey)[:4]:
+                    print(f'   * {pt[:150]}')
     pct = 100 - (open_ * 100 // total) if total else 0
     tail = f'   (reference only {ref_only}, text only {text_only}'
     tail += f', {unread} unmeasurable)' if unread else ')'

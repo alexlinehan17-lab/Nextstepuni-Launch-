@@ -33,6 +33,12 @@ def make_load(subject_id):
     def load(year, level):
         lvl = 'hl' if level == 'higher' else 'ol'
         raw = open(f'examiner-reports/{subject_id}/schemes/{year}-{lvl}.md').read()
+        # The appenders keep a second, block-ordered rendering after this
+        # marker for the provenance gate.  It is deliberately an added form,
+        # not a second copy for authoring: letting the slicing helpers read it
+        # makes formerly unique anchors ambiguous as soon as a scheme PDF is
+        # enriched (and caused the 2025 HE scripts to stop reproducing).
+        raw = raw.split('<!-- pdf-block-order', 1)[0]
         keep = [l for l in raw.split('\n')
                 if not re.match(r'^##\s*Page\s*\d+\s*$', l) and not re.match(r'^\s*\d+\s*$', l)]
         return '\n'.join(keep)

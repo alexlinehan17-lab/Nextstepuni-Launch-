@@ -220,7 +220,7 @@ def blocks(lines, pages=None):
     destroys -- the two-column "material / reason" tables of the Ordinary
     papers read as "Tiles Easy to clean" and cannot be split on text alone.
     """
-    out, q, letter, page = {}, None, None, None
+    out, q, letter, page, q_page = {}, None, None, None, None
     for raw in lines:
         line = raw.strip()
         m = PAGE_MARK.match(line)
@@ -236,8 +236,17 @@ def blocks(lines, pages=None):
             # "Question 10 (Alternative)" is a DIFFERENT question a candidate
             # may answer instead, with its own parts and its own marks. Merged
             # into Question 10 it silently doubled that question's content.
-            q = f'{m.group(1)}alt' if m.group(2) else int(m.group(1))
+            qnum = int(m.group(1))
+            # The 2016-2018 indicative half prints the alternative essay as a
+            # second bare ``Ceist 10.`` after the lettered Question 10.  Only
+            # the later mark table adds the word ``(Alternative)``.  A repeated
+            # unlettered Q10 after lettered Q10 content is therefore the
+            # alternative, not a continuation heading.
+            repeated_alt = (qnum == 10 and not m.group(2)
+                            and any(k[0] == 10 and k[1] is not None for k in out))
+            q = f'{qnum}alt' if m.group(2) or repeated_alt else qnum
             letter = None
+            q_page = page
             rest = (m.group('rest') or '').strip()
             if rest:
                 # The bilingual years weld the part marker and its text onto the
@@ -264,7 +273,20 @@ def blocks(lines, pages=None):
             continue
         parsed_part = part_match(line)
         if parsed_part and q is not None:
-            letter, part_text = parsed_part
+            next_letter, part_text = parsed_part
+            # Several older mark tables omit the ``(a)`` marker: Question 1's
+            # main drawing criteria begin directly under the question heading
+            # and the first printed marker is ``(b)``.  Those accumulated
+            # lines are part (a), not preamble furniture.
+            parent_key = (q, None)
+            if (letter is None and next_letter != 'a'
+                    and out.get(parent_key) and (q, 'a') not in out):
+                out[(q, 'a')] = out.pop(parent_key)
+                if pages is not None:
+                    inherited = pages.pop(parent_key, q_page)
+                    if inherited is not None:
+                        pages[(q, 'a')] = inherited
+            letter = next_letter
             rest = part_text.strip()
             out.setdefault((q, letter), [])
             if pages is not None and page is not None:
@@ -279,6 +301,9 @@ def blocks(lines, pages=None):
             # the five papers, and the richest one in them: the scheme explains
             # every term on the list in full.
             out.setdefault((q, letter), []).append(line)
+            if pages is not None and (q, letter) not in pages \
+                    and (letter is not None or q_page is not None):
+                pages[(q, letter)] = page if page is not None else q_page
     # A (q, None) bucket is only a real part where the question has no lettered
     # parts at all. Everywhere else it is just the lines between the question
     # head and its first "(a)", and keeping those invented one phantom part per
@@ -295,7 +320,13 @@ class Scheme:
         ind, mark = split_halves(lines)
         self.pages = {}
         self.indicative = blocks(ind, self.pages)
-        self.marks = blocks(mark)
+        # Keep the source page for BOTH halves.  The flat markdown is the
+        # provenance document, but the right-most MAXIMUM MARK column is often
+        # represented by an empty glyph in it.  Retaining the mark-table page
+        # lets completion authoring recover those printed numbers from the PDF
+        # coordinates without hand-transcribing them.
+        self.mark_pages = {}
+        self.marks = blocks(mark, self.mark_pages)
 
     def parts(self):
         """Every (question, letter) either half describes.
@@ -465,6 +496,135 @@ class Scheme:
             label = MARK_EXPR.sub('', m.group(1)).strip(' .;:')
             if label:
                 out.append((label, int(m.group(2))))
+        return out
+
+    def pdf_mark_rows(self, q, letter):
+        """[(label, marks)] read from the rendered mark-table coordinates.
+
+        Construction Studies lays the response label at the left of a table
+        and its price in a separate right-most column.  PDF-to-markdown loses
+        some of those price glyphs, leaving apparently unpriced rows such as
+        ``Sketches`` or ``Total resistance``.  The words are still present in
+        the official PDF with stable coordinates, so pair each numeric cell in
+        the MAXIMUM MARK column with the nearest response label on the same
+        visual row.
+
+        This is deliberately a separate, opt-in reader.  Existing authored
+        cards continue to use ``mark_rows()`` unchanged; completion scripts can
+        compare the two readings and use the PDF one only for a reviewed gap.
+        """
+        page_no = self.mark_pages.get((q, letter))
+        path = os.path.join(SCHEMES, f'{self.year}-{self.level}.pdf')
+        if not os.path.exists(path):
+            return []
+
+        import pymupdf
+
+        if page_no is None:
+            # split_halves() begins exactly at the second Question 1 heading,
+            # so its preceding ``## Page`` marker is outside the mark slice.
+            # Locate that one first-page block by its own opening line and the
+            # PERFORMANCE CRITERIA heading in the official PDF.
+            block = self.marks.get((q, letter), [])
+            needle = PCS(block[0])[:48] if block else ''
+            if needle:
+                with pymupdf.open(path) as doc:
+                    for i, page in enumerate(doc):
+                        text = ' '.join(page.get_text().split())
+                        if 'performancecriteria' in PCS(text) and needle in PCS(text):
+                            page_no = i
+                            self.mark_pages[(q, letter)] = i
+                            break
+            if page_no is None and isinstance(q, int):
+                with pymupdf.open(path) as doc:
+                    head = re.compile(rf'\b(?:Question|Ceist)\s+{q}\b(?!\d)', re.I)
+                    for i, page in enumerate(doc):
+                        text = ' '.join(page.get_text().split())
+                        if head.search(text) and 'performancecriteria' in PCS(text):
+                            page_no = i
+                            self.mark_pages[(q, letter)] = i
+                            break
+        if page_no is None:
+            return []
+
+        lines = []
+        with pymupdf.open(path) as doc:
+            if page_no >= len(doc):
+                return []
+            page = doc[page_no]
+            for block in page.get_text('dict').get('blocks', []):
+                for line in block.get('lines', []):
+                    spans = [s for s in line.get('spans', []) if s.get('text', '').strip()]
+                    if not spans:
+                        continue
+                    text = ' '.join(s['text'].strip() for s in spans).strip()
+                    lines.append({
+                        'text': text,
+                        'x0': min(s['bbox'][0] for s in spans),
+                        'x1': max(s['bbox'][2] for s in spans),
+                        'y0': min(s['bbox'][1] for s in spans),
+                    })
+
+        # Bound the requested part.  Lettered parts have an explicit ``(a)``
+        # row; an unlettered Ordinary-Level Q8 owns the body between the table
+        # header and TOTAL.
+        starts = []
+        for row in lines:
+            m = re.match(r'^(?:Part\s+)?\(([a-h])\)(?:\s+|$)', row['text'], re.I)
+            if m:
+                starts.append((m.group(1).lower(), row['y0']))
+        if letter is not None:
+            start = next((y for l, y in starts if l == letter), None)
+            # Older Question 1 mark tables begin part (a) immediately under
+            # the heading and print their first marker only at part (b).
+            if start is None and letter == 'a' and starts:
+                start = 110.0
+            if start is None:
+                return []
+            end = min((y for _, y in starts if y > start), default=10_000.0)
+        else:
+            start = 110.0
+            end = 10_000.0
+
+        totals = [row['y0'] for row in lines
+                  if re.sub(r'[^A-Za-z]', '', row['text']).upper() == 'TOTAL'
+                  and row['y0'] > start]
+        if totals:
+            # The grand-total number is usually typeset a few points ABOVE the
+            # word TOTAL.  Leave a full response-row gap so that 50/60 cannot
+            # be paired with the last label in the part.
+            end = min(end, min(totals) - 20)
+
+        labels = []
+        for row in lines:
+            text = ' '.join(row['text'].split())
+            if not (start < row['y0'] < end) or row['x0'] >= 430:
+                continue
+            if (re.match(r'^(?:Part\s+)?\([a-h]\)(?:\s+|$)', text, re.I)
+                    or re.match(r'^Question\s+\d+', text, re.I)
+                    or re.fullmatch(r'[\d\s×x+]+marks?.*', text, re.I)
+                    or re.search(r'\(\d+\s*marks?\)', text, re.I)
+                    or re.sub(r'[^A-Za-z]', '', text).upper() == 'TOTAL'
+                    or re.fullmatch(r'[•\s]+', text)):
+                continue
+            labels.append(row)
+
+        out = []
+        for mark in lines:
+            if not (start < mark['y0'] < end) or mark['x0'] < 430:
+                continue
+            if not re.fullmatch(r'\d{1,3}', mark['text']):
+                continue
+            nearby = [row for row in labels if abs(row['y0'] - mark['y0']) <= 18]
+            if not nearby:
+                continue
+            # Same baseline wins; when a label wraps, prefer the line above the
+            # mark over a following line at the same distance.
+            row = min(nearby, key=lambda r: (abs(r['y0'] - mark['y0']),
+                                             r['y0'] > mark['y0']))
+            label = MARK_EXPR.sub('', row['text']).strip(' .;:')
+            if label and not SCALE_TAIL.match(label):
+                out.append((label, int(mark['text'])))
         return out
 
     def mark_items(self, q, letter, question=None):

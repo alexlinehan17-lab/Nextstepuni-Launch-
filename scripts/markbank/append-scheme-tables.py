@@ -81,7 +81,9 @@ def pdf_for(subject: str, year: int, level: str) -> Path | None:
         if not path.exists():
             continue
         with pymupdf.open(path) as doc:
-            cover = ' '.join(doc[0].get_text().split())
+            # A subject-only cover may precede the page that names the level.
+            cover = ' '.join(' '.join(doc[i].get_text().split())
+                             for i in range(min(3, len(doc))))
         if 'Deferred' in cover:
             continue
         want = 'Ordinary Level' if level == 'ol' else 'Higher Level'

@@ -149,6 +149,12 @@ class SchemePdf:
             else:
                 run_start, expect = i, n + 1
         seen_first_question = True
+        # A scheme preamble can contain part-like markers before its first
+        # question heading (for example ``(i)`` in an instruction).  Until a
+        # real heading has supplied a question number those markers are just
+        # furniture.  Initialising the state makes that explicit and avoids
+        # reading an unbound ``q`` on older Physics schemes.
+        q = letter = roman = None
         key = None
         for text in self._blocks():
             if PAGENO.match(text) or NOISE.match(text) or BAND.search(text):
@@ -282,7 +288,7 @@ class SchemePdf:
 
 if __name__ == '__main__':
     import sys
-    S = Scheme(sys.argv[1], int(sys.argv[2]), sys.argv[3])
+    S = SchemePdf(sys.argv[1], int(sys.argv[2]), sys.argv[3])
     for key in S.paths():
         pts = S.points(*key)
         print(f'{S.ref(key):<14} marks={",".join(S.marks(*key)) or "-":<14} {len(pts):>2} pts')

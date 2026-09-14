@@ -1,0 +1,196 @@
+[
+ {
+  "file": "home-economics-2023-ol-answerbook-p07-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two black fabric-care symbols printed one above the other. The upper symbol is a square outline containing three parallel vertical strokes. The lower symbol is a square outline containing a circle, crossed through by a large diagonal X. The source credits printed beneath both symbols remain visible in the crop.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Section A Q14"
+ },
+ {
+  "file": "home-economics-2016-hl-paper-p04-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A greyscale diagram of an oval yeast cell with a double outer boundary, granular cytoplasm containing many small dark food-reserve bodies, a large pale central vacuole and a dark round nucleus. Leader A ends in the large pale vacuole, B ends in the dark nucleus, and C ends in the granular cytoplasm near the lower edge.",
+  "solution": false,
+  "lettersVisible": ["A", "B", "C"],
+  "labelMeanings": [
+   {"letter": "A", "meaning": "vacuole"},
+   {"letter": "B", "meaning": "nucleus"},
+   {"letter": "C", "meaning": "granular cytoplasm / food vacuole / food reserve"}
+  ],
+  "questionRef": "2016 HL Section A Q7"
+ },
+ {
+  "file": "home-economics-2016-ol-paper-p06-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete three-column comparison table for two pre-prepared meals. Fisherman's pie contains potato, cod, cream, milk, butter, cheese, onion, peas and salt; per serving it has 392 kcal, 18.4 g fat, 37.9 g carbohydrate, 3.1 g fibre, 17.2 g protein and 1.9 g salt. Chicken curry with rice contains white rice, chicken, apple, onion, curry powder, garlic, tomato puree, flour and salt; per serving it has 524 kcal, 8.0 g fat, 88.0 g carbohydrate, 4.8 g fibre, 22.0 g protein and 1.7 g salt.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Section B Q1(a)"
+ },
+ {
+  "file": "home-economics-2016-ol-paper-p10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two full-length black-and-white photographs of office suits. On the left, a man wears a dark single-breasted jacket and matching straight trousers, a white shirt, striped tie and polished shoes, and holds a briefcase. On the right, a woman wears a fitted dark double-breasted jacket with wide lapels and a matching knee-length pencil skirt, sheer tights, court shoes and a necklace.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Section C Q2(a)(i)"
+ },
+ {
+  "file": "home-economics-2017-hl-paper-p04-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A blank four-column table headed Process, Temperature, Time and Effect. The sole data row already names Ultra Heat Treatment in the Process column; the other three cells are empty for the candidate to complete.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Section A Q8"
+ },
+ {
+  "file": "home-economics-2017-hl-paper-p10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white street-fashion photograph of a woman in an athleisure outfit: a long lightweight open coat over a cropped top, loose drawstring joggers with turned-up cuffs, white trainers, sunglasses and layered necklaces. She carries a large sports bag; a scooter and parked car are behind her.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Section C Q2(a)(i)"
+ },
+ {
+  "file": "home-economics-2017-ol-paper-p10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two framed black-and-white full-length Debs outfits. The man wears a three-piece suit with a single-breasted jacket, waistcoat, shirt, tie and polished shoes. The woman wears a sleeveless floor-length gown with a deep V neckline, fitted waist and full softly pleated skirt, with a necklace and bracelet.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Section C Q2(a)(i)"
+ },
+ {
+  "file": "home-economics-2018-hl-paper-p02-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete blank digestion table with columns Organ, Enzyme, Substrate and Product. It contains two data rows whose Organ cells are pre-filled as Pancreas and Small Intestine; all corresponding enzyme, substrate and product cells are empty.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Section A Q1"
+ },
+ {
+  "file": "home-economics-2018-hl-paper-p03-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete two-column blank table for processed foods. The right header is Food / Product. The three left-hand row labels are Foods that are extensively processed, Foods processed to extend shelf life, and Fortified foods; every answer cell is blank.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Section A Q6"
+ },
+ {
+  "file": "home-economics-2018-ol-paper-p05-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two black textile-care pictograms printed vertically. The upper pictogram is the outline of an iron containing three solid dots. The lower pictogram is a square containing three parallel vertical strokes. No explanatory words or answers appear in the crop.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Section A Q11"
+ },
+ {
+  "file": "home-economics-2018-ol-paper-p06-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete table headed Pre-prepared Beef Lasagne. Ingredients are chopped tomatoes, beef mince, lasagne sheets, milk, cheese, butter, tomato puree, water, onion, carrot, garlic, celery, sugar, olive oil, salt, pepper, beef stock and basil. Per 100 g the table gives 121 kcal energy, 6.8 g protein, 5.1 g fats, 12.6 g carbohydrate including 3.1 g sugars, 1.0 g fibre and 0.5 g salt.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Section B Q1(a)(i)"
+ },
+ {
+  "file": "home-economics-2018-ol-paper-p09-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A labelled cutaway diagram of a two-storey house's cold-water system. The rising main enters at the lower left through a labelled stopcock, rises to a labelled storage tank in the roof space, and feeds the bathroom fittings. A labelled ball valve controls the tank inlet and a labelled overflow pipe leaves the tank through the roof space.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Section C Q1(a)(i)"
+ },
+ {
+  "file": "home-economics-2018-ol-paper-p10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph of three smiling primary-school children in uniform. The boy wears a V-neck jumper over a collared shirt with dark trousers. One girl wears a buttoned cardigan with a pleated skirt; the other wears a sleeveless pinafore over a white collared top. All three wear flat black school shoes.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Section C Q2(a)(i)"
+ },
+ {
+  "file": "home-economics-2019-hl-paper-p06-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A horizontal bar chart headed Survey Healthy Snacking. The reported health benefits are Low sugar 66%, Low fat 56%, Calories 54%, Low salt 36%, High protein 35%, Additive free 26%, Clean 23%, and Raw 5%. Every category and percentage is fully visible.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 HL Section B Q1(a)"
+ },
+ {
+  "file": "home-economics-2019-ol-paper-p10-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A colour photograph of four adults running outdoors. The first man wears a black and grey fitted T-shirt with black shorts; the second wears a neon yellow T-shirt and blue shorts; one woman wears a pink vest and blue patterned capri leggings; the other wears a black vest and grey patterned capri leggings. All wear running shoes and light sportswear.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Section C Q2(a)(i)"
+ },
+ {
+  "file": "home-economics-2020-ol-paper-p06-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A colour studio photograph of two young children. The girl wears a pale pink quilted hooded jacket over a printed white top, navy leggings and blue slip-on shoes. The boy wears a bright blue quilted hooded jacket over a blue star-print top, cuffed jeans and red trainers.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Section C Q2(a)(i)"
+ },
+ {
+  "file": "home-economics-2022-ol-paper-p02-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete nutrition table comparing Whole Milk with Super Milk Fat-free. Whole Milk: 64 kcal energy, 3.4 g protein, 4.7 g carbohydrate, 3.5 g fat, 119 mg calcium and 0.4 micrograms vitamin B12. Super Milk Fat-free: 35 kcal, 3.3 g protein, 5.0 g carbohydrate, 0.2 g fat, 160 mg calcium and 0.4 micrograms vitamin B12.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section B Q1(a)"
+ },
+ {
+  "file": "home-economics-2023-ol-paper-p02-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete nutrition table comparing Peanut & chocolate, Peanut & caramel, and Crunchy peanut butter protein bars. Values respectively are: energy 492, 373 and 518 kcal; protein 25.6, 36.3 and 25 g; carbohydrate 24, 16 and 26 g, of which sugars 15, 3 and 16 g; fibre 13.6, 16.1 and 14 g; fat 30, 15.9 and 12 g, of which saturates 9, 8 and 5 g; salt 0.95, 0.73 and 0.59 g.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Section B Q1(a)"
+ },
+ {
+  "file": "home-economics-2025-ol-paper-p02-art.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete illustrated comparison of Soup A, cook-chill, priced at 2.89 euro, and Soup B, canned, priced at 2.00 euro. Per 100 g, A versus B gives: energy 27 versus 32 kcal; protein 1.1 versus 0.8 g; carbohydrate 4.3 versus 5.6 g, of which sugars 2.2 versus 1.0 g; fibre 3.0 versus 0.5 g; fat 0.6 versus 0.5 g, of which saturates 0.1 versus 0.3 g; salt 0.2 versus 0.8 g.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section B Q1(a)"
+ }
+]

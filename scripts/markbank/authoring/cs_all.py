@@ -21,6 +21,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 OUT = os.path.join(ROOT, 'scripts/markbank/authored/construction-studies.json')
 
 scripts = sorted(f for f in os.listdir(DIR) if re.fullmatch(r'cs_\d{4}_(hl|ol)\.py', f))
+# The historical per-paper plans pre-date the independent paper census and
+# intentionally cover only their first authoring pass.  cs_completion.py owns
+# the census-discovered leaves which those plans do not emit.  Keep it outside
+# the year-script glob so one file can share the reviewed fallback machinery
+# across the whole unchanged syllabus run.
+scripts.append('cs_completion.py')
 
 cards, seen, failed = [], {}, []
 for name in scripts:

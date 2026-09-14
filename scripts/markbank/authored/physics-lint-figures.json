@@ -1,0 +1,327 @@
+[
+ {
+  "file": "physics-2016-HL-paper-p02-art-q1-meter-stick.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete metre-stick force diagram from Question 1, with upward forces of 3.9 N and 4.1 N, downward forces of 2 N, 3 N and 2 N, and every position graduation visible.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q1"
+ },
+ {
+  "file": "physics-2016-HL-paper-p08-art-q10-circuit.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete Question 10 circuit: a 120 V d.c. source and 200 ohm coil in series with parallel 200 ohm and 50 ohm resistors.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q10"
+ },
+ {
+  "file": "physics-2016-OL-paper-p03-art-q4-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete Joule's-law results table from Question 4, giving seven current values from 1.0 A to 4.0 A, the 2.25 A-squared example, and all seven temperature rises.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q4(iii)-(v)"
+ },
+ {
+  "file": "physics-2016-OL-paper-p06-art-q8-circuit.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete Question 8 circuit, showing a 12 V d.c. source and ammeter in series with two 4 ohm resistors connected in parallel.",
+  "solution": false,
+  "lettersVisible": ["A"],
+  "labelMeanings": [
+   {"letter": "A", "meaning": "ammeter symbol"}
+  ],
+  "questionRef": "2016 OL Q8(i)-(iii)"
+ },
+ {
+  "file": "physics-2016-OL-paper-p09-art-q12-magnet.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete blank bar-magnet outline that the candidate copies for Question 12(b)(i), with the north pole on the left and south pole on the right.",
+  "solution": false,
+  "lettersVisible": ["N", "S"],
+  "labelMeanings": [
+   {"letter": "N", "meaning": "north pole"},
+   {"letter": "S", "meaning": "south pole"}
+  ],
+  "questionRef": "2016 OL Q12(b)(i)"
+ },
+ {
+  "file": "physics-2017-HL-paper-p10-art-q12-sign.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete suspended-sign diagram from Question 12(a): a horizontal rod pivoted at wall point X, a support cable at 35 degrees and a 400 N sign at the free end.",
+  "solution": false,
+  "lettersVisible": ["X"],
+  "labelMeanings": [
+   {"letter": "X", "meaning": "the rod's wall contact and moment pivot"}
+  ],
+  "questionRef": "2017 HL Q12(a)"
+ },
+ {
+  "file": "physics-2017-OL-paper-p04-art-q5b-handle.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete door-handle moment diagram from Question 5(b), showing a 40 N perpendicular force applied 0.12 m from the pivot.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q5(b)"
+ },
+ {
+  "file": "physics-2017-OL-paper-p04-art-q5e-micrometer.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete instrument photograph printed with Question 5(e), showing an external micrometer screw gauge from the side.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q5(e)"
+ },
+ {
+  "file": "physics-2017-OL-paper-p11-art-q12d-capacitor.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete Question 12(d) charging circuit, showing a capacitor, open switch, bulb and 12 V d.c. power supply in one loop.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(d)(ii)-(iii)"
+ },
+ {
+  "file": "physics-2018-OL-paper-p04-art-q5b-refraction.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete air-to-glass refraction diagram from Question 5(b), with a 40 degree angle of incidence, 25 degree angle of refraction and dashed normal.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q5(b)"
+ },
+ {
+  "file": "physics-2018-OL-paper-p04-art-q5e-instrument.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete instrument photograph printed with Question 5(e), showing a laboratory spectrometer with its collimator, telescope and central table.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q5(e)"
+ },
+ {
+  "file": "physics-2018-OL-paper-p08-art-q10-xray.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete X-ray-tube diagram from Question 10, with low- and high-voltage supplies and parts A, B and C all fully visible.",
+  "solution": false,
+  "lettersVisible": ["A", "B", "C"],
+  "labelMeanings": [
+   {"letter": "A", "meaning": "heated filament or cathode where thermionic emission occurs"},
+   {"letter": "B", "meaning": "metal target or anode"},
+   {"letter": "C", "meaning": "lead casing that prevents X-rays escaping"}
+  ],
+  "questionRef": "2018 OL Q10(i)-(ix)"
+ },
+ {
+  "file": "physics-2018-OL-paper-p09-art-q11-surfer.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete surfer photograph printed with Question 11, clearly showing the surfer's low centre of gravity and wide stance on the board.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q11(h)"
+ },
+ {
+  "file": "physics-2018-OL-paper-p11-art-q12d-induction.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete electromagnetic-induction apparatus from Question 12(d): a bar magnet beside a coil connected to a centre-zero galvanometer.",
+  "solution": false,
+  "lettersVisible": ["N", "S"],
+  "labelMeanings": [
+   {"letter": "N", "meaning": "north pole of the magnet"},
+   {"letter": "S", "meaning": "south pole of the magnet"}
+  ],
+  "questionRef": "2018 OL Q12(d)(ii)"
+ },
+ {
+  "file": "physics-2019-OL-paper-p02-art-q1-meter-stick.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete metre-stick equilibrium diagram from Question 1, showing 8 N and 4 N upward forces and 3 N and 7 N downward forces at their exact scale positions.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q1(iv)"
+ },
+ {
+  "file": "physics-2019-OL-paper-p08-art-q10-xray-photo.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete X-ray-tube photograph printed beside Question 10(vii), showing the glass tube, electrodes, target assembly and external connection.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q10(vii)"
+ },
+ {
+  "file": "physics-2019-OL-paper-p09-art-q11-ray.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete unfinished converging-lens ray diagram from Question 11(f), with the object arrow, lens, principal axis and both focal points shown.",
+  "solution": false,
+  "lettersVisible": ["f"],
+  "labelMeanings": [
+   {"letter": "f", "meaning": "a focal point of the converging lens"}
+  ],
+  "questionRef": "2019 OL Q11(f)"
+ },
+ {
+  "file": "physics-2019-OL-paper-p10-art-q12b-capacitor.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete capacitor-energy demonstration circuit from Question 12(b)(iv), with battery, two-way switch, capacitor and bulb all labelled.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q12(b)(iv)"
+ },
+ {
+  "file": "physics-2020-HL-paper-p04-art-q5i-photocell.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete task-relevant photocell sketch from Question 5(i), with the cathode on the left and anode on the right both identified by the printed labels.",
+  "solution": false,
+  "lettersVisible": ["Cathode", "Anode"],
+  "labelMeanings": [
+   {"letter": "Cathode", "meaning": "photosensitive emitting electrode"},
+   {"letter": "Anode", "meaning": "electron-collecting electrode"}
+  ],
+  "questionRef": "2020 HL Q5(i)"
+ },
+ {
+  "file": "physics-2020-OL-paper-p05-art-q6-forces.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete force diagram from Question 6(ii)-(iii), showing a 9 kg object acted on by 6 N to the left and by 5 N and 3 N to the right.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q6(ii)-(iii)"
+ },
+ {
+  "file": "physics-2020-OL-paper-p10-art-q12c-circuit.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete series circuit from Question 12(c)(iv)-(v), showing a 12 V source and resistors of 6 ohms and 8 ohms.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q12(c)(iv)-(v)"
+ },
+ {
+  "file": "physics-2022-HL-paper-p08-art-q9c-circuit.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete Question 9(c) resistor network, showing a 12 V source, resistor X of 1 ohm in series with parallel resistors Y of 6 ohms and Z of 3 ohms.",
+  "solution": false,
+  "lettersVisible": ["X", "Y", "Z"],
+  "labelMeanings": [
+   {"letter": "X", "meaning": "the 1 ohm series resistor"},
+   {"letter": "Y", "meaning": "the 6 ohm parallel-branch resistor"},
+   {"letter": "Z", "meaning": "the 3 ohm parallel-branch resistor"}
+  ],
+  "questionRef": "2022 HL Q9(c)(ii)"
+ },
+ {
+  "file": "physics-2022-OL-paper-p14-art-q14c-meter-stick.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete Question 14(c) metre-stick diagram, suspended at 50 cm with downward forces of 7 N at 30 cm, 2 N at 60 cm and 4 N at 80 cm.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(c)(i)-(iv)"
+ },
+ {
+  "file": "physics-2023-OL-paper-p07-art-q8-glass-block.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete rectangular-glass-block ray diagram from Question 8, with A pointing to the incident ray, B to the refracted ray and C to the dashed normal.",
+  "solution": false,
+  "lettersVisible": ["A", "B", "C"],
+  "labelMeanings": [
+   {"letter": "A", "meaning": "incident ray"},
+   {"letter": "B", "meaning": "refracted ray"},
+   {"letter": "C", "meaning": "normal"}
+  ],
+  "questionRef": "2023 OL Q8(ii)-(iii)"
+ },
+ {
+  "file": "physics-2024-HL-paper-p05-art-q6a-meter-stick.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete Question 6(a) equilibrium diagram: a metre stick suspended at 50 cm, with 0.6 N at 10 cm, 1.3 N at 35 cm and an apple at 90 cm.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q6(a)"
+ },
+ {
+  "file": "physics-2025-HL-paper-p13-art-q11ii-parallel.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete two-branch parallel-resistor diagram from Question 11(ii), with the upper resistor labelled R1 and lower resistor labelled R2.",
+  "solution": false,
+  "lettersVisible": ["R1", "R2"],
+  "labelMeanings": [
+   {"letter": "R1", "meaning": "upper parallel-branch resistor"},
+   {"letter": "R2", "meaning": "lower parallel-branch resistor"}
+  ],
+  "questionRef": "2025 HL Q11(ii)"
+ },
+ {
+  "file": "physics-2025-HL-paper-p13-art-q11iii-circuit.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete switched 12 V circuit from Question 11(iii)-(v), showing two 8 ohm resistors, a 4 ohm branch, the switch and junctions X and Y.",
+  "solution": false,
+  "lettersVisible": ["X", "Y"],
+  "labelMeanings": [
+   {"letter": "X", "meaning": "upper potential-difference junction"},
+   {"letter": "Y", "meaning": "lower potential-difference junction"}
+  ],
+  "questionRef": "2025 HL Q11(iii)-(v)"
+ },
+ {
+  "file": "physics-2025-HL-paper-p13-art-q11vii-divider.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete thermostat potential-divider diagram from Question 11(vii), showing the 12 V and 0 V rails, thermistor, variable resistor and Vout terminals.",
+  "solution": false,
+  "lettersVisible": ["Vout"],
+  "labelMeanings": [
+   {"letter": "Vout", "meaning": "output potential difference"}
+  ],
+  "questionRef": "2025 HL Q11(vii)"
+ },
+ {
+  "file": "physics-2025-HL-paper-p16-art-q13vii-current-graph.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete alternating-current graph from Question 13(vii), showing current I from minus 10 A to 10 A over one full 0.02 s cycle.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(vii)"
+ }
+]

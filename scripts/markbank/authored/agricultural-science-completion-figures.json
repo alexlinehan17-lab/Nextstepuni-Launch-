@@ -1,0 +1,182 @@
+[
+  {
+    "file": "agricultural-science-2021-HL-paper-p33-art-q15b.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "A complete line graph comparing average milk protein percentage and average milk fat percentage across the full lactation period, with both labelled series, axes, scale, and legend visible.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2021 HL Q15(b)(ii)"
+  },
+  {
+    "file": "agricultural-science-2022-OL-paper-p29-art-q16a.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete Grass Growth Curve and Feed Demand graph from February to November, showing the blue yield-of-dry-matter line, red dashed feed-demand line, both axes, legend, and source attribution.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2022 OL Q16(a)"
+  },
+  {
+    "file": "agricultural-science-2023-HL-paper-p38-art-cmt.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "A complete diagram of the California Mastitis Test apparatus and result plate, including the labelled wells and visible reaction patterns needed to interpret the test.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2023 HL Q18(a)(v)"
+  },
+  {
+    "file": "agricultural-science-2023-HL-paper-p10-art-goat-table.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete goat performance table used in Question 7, with the animal records, column headings, figures, units, and all rows visible for reading and comparison.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2023 HL Q7(a)"
+  },
+  {
+    "file": "agricultural-science-2023-OL-paper-p10-art-mothering.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete Ewe Mothering Ability scale from 1 to 5, its behaviour descriptions, ewe-and-lamb photograph, and the full results table for ewes 106, 107, and 108.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2023 OL Q7(a)"
+  },
+  {
+    "file": "agricultural-science-2024-HL-paper-p30-art-growth.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "A complete agricultural growth graph with its plotted curve, labelled axes, numeric scale, and all annotations required to read the value requested in Question 15(c)(i).",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2024 HL Q15(c)(i)"
+  },
+  {
+    "file": "agricultural-science-2024-HL-paper-p22-art-plants.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "Four complete plant photographs labelled A, B, C, and D, presented in their original examination layout for plant identification.",
+    "lettersVisible": ["A", "B", "C", "D"],
+    "labelMeanings": ["A = Primrose", "B = Nettle", "C = Ragwort", "D = Meadow thistle"],
+    "questionRef": "2024 HL Q13(a)(ii)"
+  },
+  {
+    "file": "agricultural-science-2024-HL-paper-p39-art-ipm.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete Integrated Pest Management stimulus, including the crop imagery and every printed element needed to distinguish the control approaches asked about in Question 18(c).",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2024 HL Q18(c)"
+  },
+  {
+    "file": "agricultural-science-2024-HL-paper-p37-art-parents.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "Two complete parent-animal photographs labelled A and B, shown side by side in the original breeding-question layout with both identifying letters visible.",
+    "lettersVisible": ["A", "B"],
+    "labelMeanings": [],
+    "questionRef": "2024 HL Q18(a)(ii)"
+  },
+  {
+    "file": "agricultural-science-2025-HL-paper-p11-art-lambing-kit.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "Six complete lambing and livestock-care equipment photographs labelled A through F, arranged in the original two-row examination table.",
+    "lettersVisible": ["A", "B", "C", "D", "E", "F"],
+    "labelMeanings": [],
+    "questionRef": "2025 HL Q6(a)"
+  },
+  {
+    "file": "agricultural-science-2025-OL-paper-p08-art-plants.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "Four complete plant photographs labelled A to D with the printed word bank Chicory, White clover, Perennial ryegrass, and Nettle visible above them.",
+    "lettersVisible": ["A", "B", "C", "D"],
+    "labelMeanings": ["A = Perennial ryegrass", "B = White clover", "C = Nettle", "D = Chicory"],
+    "questionRef": "2025 OL Q7(a)"
+  },
+  {
+    "file": "agricultural-science-2025-OL-paper-p15-art-mortality.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete Causes of Lamb Mortality bar chart, with all five cause categories, percentage-mortality scale, plotted values, axis labels, title, and source attribution visible.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2025 OL Q12(a)"
+  },
+  {
+    "file": "agricultural-science-2025-OL-paper-p16-art-growth.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete Lamb Growth Rate and Weight graph, showing single and twin lamb series from birth to 25 weeks, every plotted value, axes, units, and legend.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2025 OL Q12(b)"
+  },
+  {
+    "file": "agricultural-science-2025-OL-paper-p23-art-crops.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "Three complete crop photographs labelled J, K, and L with the printed word bank Maize, Oilseed rape, and Wheat visible above the images.",
+    "lettersVisible": ["J", "K", "L"],
+    "labelMeanings": ["J = Maize", "K = Wheat", "L = Oilseed rape"],
+    "questionRef": "2025 OL Q14(c)(iii)"
+  },
+  {
+    "file": "agricultural-science-2025-OL-paper-p27-art-calf-nutrition.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "Four complete calf-feeding photographs labelled A to D: calves on milk replacer, a calf on hay, a calf on grass, and a calf being fed colostrum.",
+    "lettersVisible": ["A", "B", "C", "D"],
+    "labelMeanings": ["A = Calves on milk replacer", "B = Calf on hay", "C = Calf on grass", "D = Calf fed colostrum"],
+    "questionRef": "2025 OL Q15(d)(i)"
+  },
+  {
+    "file": "agricultural-science-2025-OL-paper-p28-art-housing.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "A complete interior photograph of a modern cattle house, showing roof structure and skylights, open penned bays, slatted flooring, feed barriers, bedding, and housed cattle.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2025 OL Q16(a)(i)"
+  },
+  {
+    "file": "agricultural-science-2025-OL-paper-p30-art-dm-table.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete dry-matter percentage tick-box table for Tom's silage, showing the three answer options 25%, 45%, and 65% with their empty selection boxes.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2025 OL Q16(c)(i)"
+  },
+  {
+    "file": "agricultural-science-2025-OL-paper-p36-art-exports.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete Seven year growth of Irish Dairy Exports grouped bar chart, comparing 2015 and 2021 tonnages for five products with axes, legend, scale, and source attribution.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2025 OL Q18(c)"
+  }
+]

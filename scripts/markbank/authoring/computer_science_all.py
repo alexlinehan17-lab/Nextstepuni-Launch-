@@ -45,8 +45,11 @@ import computer_science_question_figures as CSF                           # noqa
 
 # The examiner's instruction ABOUT the marking points, not one of them.
 LEAD_IN = re.compile(r'^(any response that captures|any \w+ of the following|'
-                     r'accept any|examples? of|the following are|'
-                     r'any \d+ (?:from|of)|marks? awarded for)', re.I)
+                     r'accept (?:any|other)|examples? of|the following are|'
+                     r'any other (?:valid|relevant|reasonable)|other relevant|'
+                     r'any \d+ (?:from|of)|marks? awarded for|'
+                     r'points (?:for supporting|against) the initiative|'
+                     r'elaboration of any other|example\s*$)', re.I)
 # Two copies of one maths digit, which is what the text layer returns for a
 # scheme set in CambriaMath. The value cannot be recovered from the text: the
 # same font mis-maps some digits, so the pair is not necessarily the digit.
@@ -62,6 +65,161 @@ CREDIT_RULE = re.compile(
     r'|^any (correct|valid) (step|response|attempt|conversion|answer|part)'
     r'|^(small|minor|major)\b[^.]*\berrors?\b', re.I)
 MAX_ROWS = 12
+
+# These parts trip the generic paper-reader's deliberately conservative
+# ``suspect`` test because their complete prompt ends in a table, a program
+# listing, a list value, or another piece of printed matter rather than a
+# sentence.  Each page below was opened at full resolution and checked against
+# the official paper.  Keeping the review beside the generator makes it
+# reproducible: a future parser change cannot silently turn the waiver into a
+# different question.
+REVIEWED_ASKS = {
+    (2020, 'hl', 1, None, None),
+    (2020, 'hl', 10, None, None),
+    (2020, 'hl', 12, None, None),
+    (2020, 'hl', 16, 'a', 'ii'),
+    (2020, 'hl', 16, 'a', 'vi'),
+    (2020, 'hl', 16, 'b', 'i'),
+    (2020, 'hl', 16, 'b', 'ii'),
+    (2021, 'hl', 13, 'c', 'i'),
+    (2021, 'hl', 13, 'a', 'i'),
+    (2021, 'hl', 13, 'a', 'ii'),
+    (2021, 'hl', 13, 'c', 'iv'),
+    (2021, 'ol', 10, 'a', None),
+    (2021, 'ol', 10, 'b', None),
+    (2021, 'ol', 16, 'a', 'ii'),
+    (2021, 'ol', 1, None, None),
+    (2021, 'ol', 9, None, None),
+    (2022, 'hl', 5, None, None),
+    (2022, 'ol', 11, None, None),
+    (2022, 'ol', 13, 'a', 'i'),
+    (2023, 'hl', 7, None, None),
+    (2023, 'ol', 3, None, None),
+    (2023, 'ol', 6, None, None),
+    (2023, 'ol', 9, None, None),
+    (2023, 'ol', 10, None, None),
+    (2023, 'ol', 16, 'a', 'ii'),
+    (2023, 'ol', 16, 'a', 'iii'),
+    (2023, 'ol', 16, 'a', 'v'),
+    (2024, 'hl', 4, None, None),
+    (2024, 'ol', 3, 'a', None),
+    (2024, 'ol', 5, None, None),
+    (2025, 'hl', 3, None, None),
+    (2025, 'hl', 16, 'a', 'v'),
+    (2025, 'hl', 16, 'a', 'vi'),
+    (2025, 'ol', 1, None, None),
+    (2025, 'ol', 5, None, None),
+    (2025, 'ol', 9, None, None),
+    (2025, 'ol', 11, None, None),
+    (2025, 'ol', 16, 'a', 'i'),
+    (2025, 'ol', 16, 'a', 'ii'),
+    (2025, 'ol', 16, 'a', 'iii'),
+    (2025, 'ol', 16, 'a', 'iv'),
+}
+REVIEW_NOTE = (
+    'Opened the official question page at full resolution. The complete '
+    'prompt, its printed listing/table, and the part boundary are legible and '
+    'agree with the text recovered by the paper parser.'
+)
+
+# The official scheme answers the blank decision symbol in words rather than
+# printing an ``A = ...`` decoder.  The rendered paper shows that A is the
+# blank symbol, and the rendered scheme states the accepted text explicitly.
+# Keeping this one reviewed mapping beside the generator prevents a generic
+# label guess while still allowing the complete official flowchart to ship.
+LABEL_OVERRIDES = {
+    (2022, 'ol', 6, 'a', None): {
+        'A': 'Guess < Number (Less than)',
+    },
+}
+
+# These two correct responses are printed inside the official parent solution
+# listing rather than repeated beneath their roman rows. The value is exactly
+# what Author.from_run accepts: parent key, point index, and the token slice
+# which removes the scheme line number and ``# part (...)`` annotation.
+PARENT_SOLUTION_RUNS = {
+    (2021, 'hl', 16, 'a', 'i'): ((16, 'a', None), 12, slice(1, -3)),
+    (2021, 'hl', 16, 'a', 'ii'): ((16, 'a', None), 17, slice(1, -3)),
+    (2021, 'hl', 16, 'a', 'iii'): ((16, 'a', None), 19, slice(1, -3)),
+    (2021, 'hl', 16, 'a', 'iv'): ((16, 'a', None), 16, slice(1, -2)),
+    (2021, 'ol', 16, 'a', 'i'): ((16, 'a', None), 9, slice(1, None)),
+    (2021, 'ol', 16, 'a', 'iii'): ((16, 'a', None), 5, slice(1, None)),
+    (2021, 'ol', 16, 'a', 'iv'): ((16, 'a', None), 14, slice(1, None)),
+    (2021, 'ol', 16, 'a', 'vi'): ((16, 'a', None), 6, slice(1, None)),
+    (2022, 'ol', 16, 'a', 'i'): ((16, 'a', None), 3, slice(1, None)),
+    (2022, 'ol', 16, 'a', 'ii'): ((16, 'a', None), 5, slice(1, None)),
+    (2022, 'hl', 16, 'a', 'i'): ((16, 'a', None), 5, slice(1, -4)),
+    (2022, 'hl', 16, 'a', 'ii'): ((16, 'a', None), 33, slice(1, -3)),
+    (2022, 'hl', 16, 'a', 'iv'): ((16, 'a', None), 31, slice(1, -3)),
+}
+
+# Complete solution blocks for the remaining 2022 programming asks. They are
+# printed once in the parent solution listing and labelled by comments there;
+# each tuple names a scheme line and removes only its printed line number.
+PARENT_SOLUTION_BLOCKS = {
+    (2021, 'hl', 16, 'a', 'v'): [
+        ((16, 'a', None), i, slice(1, None)) for i in range(22, 26)
+    ],
+    (2021, 'hl', 16, 'a', 'vi'): [
+        ((16, 'a', None), i, slice(1, None))
+        for i in (*range(29, 35), *range(36, 40))
+    ],
+    (2021, 'ol', 16, 'a', 'ii'): [
+        ((16, 'a', None), i, slice(1, None)) for i in (15, 16)
+    ],
+    (2021, 'ol', 16, 'a', 'v'): [
+        ((16, 'a', None), i, slice(1, None))
+        for i in (8, 10, 12, 13, 14, 15, 16)
+    ],
+    (2021, 'ol', 16, 'a', 'vii'): [
+        ((16, 'a', None), i, slice(1, None)) for i in (8, 17, 19, 20)
+    ],
+    (2022, 'ol', 16, 'a', 'iii'): [
+        ((16, 'a', None), i, slice(1, None)) for i in (7, 8)
+    ],
+    (2022, 'ol', 16, 'a', 'iv'): [
+        ((16, 'a', None), i, slice(1, None)) for i in (15, 16)
+    ],
+    (2022, 'ol', 16, 'a', 'v'): [
+        ((16, 'a', None), i, slice(1, None)) for i in (13, 17)
+    ],
+    (2022, 'ol', 16, 'a', 'vi'): [
+        ((16, 'a', None), i, slice(1, None)) for i in range(24, 28)
+    ],
+    (2022, 'ol', 16, 'a', 'vii'): [
+        ((16, 'a', None), i, slice(1, None)) for i in range(28, 30)
+    ],
+    (2022, 'hl', 16, 'a', 'iii'): [
+        ((16, 'a', None), i, slice(1, None)) for i in range(20, 28)
+    ],
+    (2022, 'hl', 16, 'a', 'v'): [
+        ((16, 'a', None), i, slice(1, None)) for i in range(36, 41)
+    ],
+    (2022, 'hl', 16, 'a', 'vi'): [
+        ((16, 'a', None), i, slice(1, None)) for i in range(44, 46)
+    ],
+    (2022, 'hl', 16, 'a', 'vii'): [
+        ((16, 'a', None), i, slice(1, None)) for i in range(49, 54)
+    ],
+}
+
+# A marking scheme sometimes prints a diagram key as ``(a) Decode`` rather
+# than ``A = Decode``.  It is still an explicit decoder supplied by the
+# examiner.  Parentheses are required here so an ordinary answer beginning
+# with the article "A" cannot be mistaken for a label.
+PAREN_LABELLED_POINT = re.compile(r'^\s*\(([a-h])\)\s+(.+)$', re.I)
+PLAIN_LABELLED_POINT = re.compile(
+    r'^\s*([A-H])\s*[=:\u2010\u2013\u2014-]\s*(.+)$')
+
+
+def decoded_labels(rows):
+    """Return only label meanings the official scheme states explicitly."""
+    labels = {}
+    for row in rows:
+        match = PAREN_LABELLED_POINT.match(row) or PLAIN_LABELLED_POINT.match(row)
+        if match:
+            labels.setdefault(match.group(1).upper(), match.group(2).strip())
+    return labels
 
 # The A/B booklet ends after Question 15 and the separately printed programming
 # booklet starts at Question 16.  Paper intentionally merges both because the
@@ -136,6 +294,16 @@ def points_at_printed_matter(joined):
     without using a figure word at all, which is the case that reaches the deck
     looking answerable and is not.
     """
+    # Some references point only to RESPONSE SCAFFOLDING or to an optional
+    # example. "Complete the table below with four items of data" immediately
+    # states the three columns to supply; the blank table contains no stimulus.
+    # Likewise "an embedded system ... such as those shown" explicitly permits
+    # any system the candidate has used. Neither needs an image to stand alone.
+    if re.search(r'complete the table below with\s+(?:four|\d+)\s+items? of data',
+                 joined, re.I):
+        return False
+    if re.search(r'\bsuch as (?:that|those) shown\b', joined, re.I):
+        return False
     return bool(
         (cardlint.FIG_REF.search(joined)
          and not cardlint.SELF_WORK.search(joined)
@@ -188,6 +356,8 @@ def main():
     ap.add_argument('--report', action='store_true')
     ap.add_argument('--all', action='store_true',
                     help='list every refusal, not the first three of each')
+    ap.add_argument('--write', action='store_true',
+                    help='write scripts/markbank/authored/computer-science.json')
     args = ap.parse_args()
 
     # {(year, LEVEL, q): figure key} for the code this question prints, from
@@ -195,6 +365,7 @@ def main():
     # ship if it CARRIES that listing, so the crop decides whether the card
     # exists at all rather than being decoration on one that already did.
     figs = {}
+    part_figs = {}
     manifests = [
         os.path.join(ROOT, 'components/MarkBank/figures.json'),
         os.path.join(ROOT, 'components/MarkBank/figures-computer-science.json'),
@@ -211,9 +382,25 @@ def main():
             # the part cannot be matched to one band on the page. Matching
             # "code0" alone missed every question whose printed matter is a
             # table rather than a program.
-            m = re.match(r'computer-science-(\d{4})-(HL|OL)-paper-q(\d+)-\w+$', key)
+            m = re.match(
+                r'computer-science-(\d{4})-(HL|OL)-paper-q(\d+)-[\w-]+$', key)
             if m:
                 figs[(int(m.group(1)), m.group(2), int(m.group(3)))] = key
+            ref = re.fullmatch(
+                r'(\d{4})\s+(HL|OL)\s+Q(\d+)'
+                r'(?:\(([a-h])\))?(?:\((i{1,3}|iv|v|vi{0,3}|ix|x)\))?',
+                meta.get('questionRef', ''), re.I)
+            if ref:
+                ref_key = (int(ref.group(1)), ref.group(2).upper(),
+                           int(ref.group(3)))
+                if ref.group(4) or ref.group(5):
+                    part_figs[(*ref_key, ref.group(4), ref.group(5))] = key
+                else:
+                    # Completion crops can name the printed page in their key
+                    # (``paper-p10-art-q11``) rather than use the catalogue's
+                    # older ``paper-q11`` shape. The reviewed questionRef is
+                    # the authoritative binding in either case.
+                    figs[ref_key] = key
 
     # The program lines each question's crop carries, so the card's question
     # text can be the ask without the listing run into it.
@@ -237,14 +424,19 @@ def main():
     idx = R.leaf_index(census_subject('computer-science'))
     cards, refused = [], collections.Counter()
     examples = collections.defaultdict(list)
+    exclusion_path = os.path.join(DIR, 'exclusions', 'computer-science.json')
+    documented_exclusions = {
+        entry['ref']: entry
+        for entry in (json.load(open(exclusion_path))
+                      if os.path.exists(exclusion_path) else [])
+    }
+    excluded = collections.Counter()
 
     for (year, level, _), leaves in sorted(idx.items()):
-        # This authored corpus and its locally verified schemes cover the five
-        # complete examination years 2021–2025. Paper Trail also indexes the
-        # inaugural 2020 sitting, but no 2020 scheme is present in this corpus;
-        # attempting to open it made a routine regeneration crash before any
-        # reviewed card could be emitted.
-        if year < 2021 or year > 2025:
+        # The corpus now includes the inaugural 2020 Higher Level paper and its
+        # official scheme as well as every complete examination year through
+        # 2025. (There was no separate 2020 Ordinary Level sitting.)
+        if year < 2020 or year > 2025:
             continue
         A = Author('computer-science', year, level)
         table = A._source('table')
@@ -254,14 +446,25 @@ def main():
             ref = (f'{year} {level.upper()} Q{q}'
                    + (f'({letter})' if letter else '')
                    + (f'({roman})' if roman else ''))
+            if ref in documented_exclusions:
+                excluded[documented_exclusions[ref]['reason']] += 1
+                continue
             try:
                 ask = A.paper.text(q, letter, roman) or ''
             except Exception:                                # noqa: BLE001
                 ask = ''
+            try:
+                stem = A.paper.stem(q, letter) or A.paper.stem(q) or ''
+                parent_ask = (A.paper.text(q, letter) or '') if roman else ''
+            except Exception:                                # noqa: BLE001
+                stem = parent_ask = ''
             keep = cardable(table.points(q, letter, roman))
             rows = [t for _, t in keep]
             tariff = table.tariff(q, letter, roman)
-            topic, _ = topic_for(ask + ' ' + ' '.join(rows))
+            topic, _ = topic_for(' '.join((stem, parent_ask, ask, *rows)))
+            figure = (part_figs.get((year, level.upper(), q, letter, roman))
+                      or part_figs.get((year, level.upper(), q, letter, None))
+                      or figs.get((year, level.upper(), q)))
 
             def note(reason):
                 refused[reason] += 1
@@ -270,8 +473,40 @@ def main():
             if not ask.strip():
                 note('the paper reader recovers no ask')
                 continue
-            if not looks_like_an_ask(ask):
+            # A table cell can be the part's entire printed text while the
+            # instruction sits at its parent: Q13(a)(i) is the invalid Eircode
+            # ``GA5 AOK1`` under the parent ask "Explain why each ...". A card
+            # carries both, so judge the combination rather than discarding
+            # the examined row as table noise.
+            if not looks_like_an_ask(ask) and not looks_like_an_ask(
+                    ' '.join((stem, parent_ask))):
                 note('the ask is a table row or code fragment, not a question')
+                continue
+            run = PARENT_SOLUTION_RUNS.get(
+                (year, level.lower(), q, letter, roman))
+            block = PARENT_SOLUTION_BLOCKS.get(
+                (year, level.lower(), q, letter, roman))
+            if run or block:
+                if not (tariff and topic and figure):
+                    note('reviewed parent-listing answer lacks tariff, topic, or figure')
+                    continue
+                try:
+                    kwargs = ({'from_run': run, 'marks': [tariff],
+                               'tariff': 'fixed'} if run else
+                              {'from_runs': block, 'total': tariff,
+                               'tariff': 'questionTotal'})
+                    A.card(
+                        q, letter, roman, topic=topic, concept=concept_for(ask),
+                        source='table',
+                        card_id=f'cs-{year}-{level}-q{q}-{letter}-{roman}',
+                        figure=figure, stem=False,
+                        checked=(REVIEW_NOTE if
+                                 (year, level, q, letter, roman)
+                                 in REVIEWED_ASKS else None),
+                        listing=listing_for(year, level, q)[0],
+                        printed=listing_for(year, level, q)[1], **kwargs)
+                except Refused as exc:
+                    note(str(exc).split(':', 1)[-1].strip()[:60])
                 continue
             if not rows:
                 # Held for the whole-question pass, not refused: the scheme
@@ -301,13 +536,7 @@ def main():
             # which is a figure pass this subject has not had.
             # Card lint reads the STEM as well as the question text, and the
             # stem is where a shared "such as that shown in Figure 3" lives.
-            stem = ''
-            try:
-                stem = A.paper.stem(q, letter) or A.paper.stem(q) or ''
-            except Exception:                                # noqa: BLE001
-                pass
             joined = ' '.join(f'{stem} {ask}'.split())
-            figure = figs.get((year, level.upper(), q))
             if points_at_printed_matter(joined) and not figure:
                 note('points at printed matter the card cannot carry')
                 continue
@@ -317,32 +546,111 @@ def main():
             # answer. Refusing here rather than letting the deck build drop it
             # keeps the authored file and the shipped deck the same thing.
             if cardlint.NAMES_LETTERS.search(joined):
-                note('names a lettered part this author cannot decode')
+                labels = (LABEL_OVERRIDES.get(
+                    (year, level.lower(), q, letter, roman))
+                    or decoded_labels(rows))
+                if not labels:
+                    note('names a lettered part the scheme does not decode')
+                    continue
+            else:
+                labels = None
+
+            # The official table for this part is two independent answer pools,
+            # each paying 3 marks for any two selections. Its nested bullets are
+            # encoded by the PDF text layer as the literal separator `` o ``.
+            # Every option below is derived from those rows and verified against
+            # the scheme markdown; no answer wording is authored here.
+            if (year, level.lower(), q, letter, roman) == (
+                    2023, 'ol', 15, 'b', None):
+                groups = []
+                for scheme_row in rows:
+                    bits = [bit.strip() for bit in
+                            re.split(r'\s+o\s+', scheme_row) if bit.strip()]
+                    if len(bits) < 2:
+                        continue
+                    heading, options = bits[0], bits[1:]
+                    open_list = any(re.fullmatch(
+                        r'Accept any other relevant point', option, re.I)
+                                    for option in options)
+                    options = [option for option in options if not re.fullmatch(
+                        r'Accept any other relevant point', option, re.I)]
+                    groups.append((heading, options, open_list))
+                claims = [option for _, options, _ in groups for option in options]
+                _ok, bad = table.verify(claims)
+                if (len(groups) != 2
+                        or any(not options for _, options, _ in groups)
+                        or bad or tariff != 12):
+                    note('reviewed two-sided answer grid does not verify')
+                    continue
+                A.cards.append({
+                    'id': f'cs-{year}-{level}-q{q}-{letter}',
+                    'topicId': topic,
+                    'conceptId': concept_for(ask),
+                    'level': A.long_level,
+                    'year': year,
+                    'subjectId': 'computer-science',
+                    'section': 'B',
+                    'questionRef': ref,
+                    # Paper.text holds the scenario and Paper.stem holds the
+                    # instruction on this page; join them in printed order.
+                    'questionText': ' '.join((ask, stem)).strip(),
+                    'tariffModel': {'kind': 'fixed'},
+                    'totalMarks': tariff,
+                    'rows': [
+                        {
+                            'id': f'r-{heading.lower()}',
+                            'kind': 'anyN',
+                            'verbatim': heading,
+                            'marks': None,
+                            **({'openList': True} if open_list else {}),
+                            'group': {
+                                'claimMax': 2,
+                                'perOption': 3,
+                                'options': options,
+                            },
+                        }
+                        for heading, options, open_list in groups
+                    ],
+                    'notes': ('Rendered official scheme page reviewed: two '
+                              'advantages at 3 marks each and two disadvantages '
+                              'at 3 marks each.'),
+                })
                 continue
             if len(keep) > MAX_ROWS:
                 keep, rows = keep[:MAX_ROWS], rows[:MAX_ROWS]
-            # One mark per point where the tariff divides, else the whole
-            # tariff on a single claim. Never a guessed split.
-            if len(keep) == 1 or tariff % len(keep):
+            # A single scheme point can carry the printed tariff directly. For
+            # multiple points, divisibility is not evidence of a per-row split:
+            # preserve the part total and leave every row unpriced unless a
+            # reviewed structured override above states the split explicitly.
+            if len(keep) == 1:
                 use, marks = [keep[0][0]], [tariff]
+                tariff_model, total = 'fixed', None
             else:
                 use = [i for i, _ in keep]
-                marks = [tariff // len(keep)] * len(keep)
+                marks = None
+                tariff_model, total = 'questionTotal', tariff
             cid = (f'cs-{year}-{level}-q{q}'
                    + (f'-{letter}' if letter else '')
                    + (f'-{roman}' if roman else ''))
             try:
-                A.card(q, letter, roman, topic=topic,
-                       concept=concept_for(ask), source='table',
-                       use=use, marks=marks, tariff='fixed', card_id=cid,
-                       figure=figure,
-                       listing=listing_for(year, level, q)[0] if figure else (),
-                       printed=listing_for(year, level, q)[1] if figure else (),
-                       # A stem that reads as a heap of short tokens IS the
-                       # printed table, lifted by the text layer. The crop
-                       # carries it properly, so the card drops the text
-                       # version rather than showing a student both.
-                       stem=not (figure and cardlint.label_junk(stem)))
+                made = A.card(
+                    q, letter, roman, topic=topic, concept=concept_for(ask),
+                    source='table', use=use, marks=marks,
+                    tariff=tariff_model, total=total,
+                    card_id=cid, figure=figure, labels=labels,
+                    listing=listing_for(year, level, q)[0] if figure else (),
+                    printed=listing_for(year, level, q)[1] if figure else (),
+                    checked=(REVIEW_NOTE if
+                             (year, level, q, letter, roman) in REVIEWED_ASKS
+                             else None),
+                    # A stem that reads as a heap of short tokens IS the
+                    # printed table, lifted by the text layer. The crop
+                    # carries it properly, so the card drops the text
+                    # version rather than showing a student both.
+                    stem=not (figure and cardlint.label_junk(stem)))
+                if parent_ask and parent_ask not in made.get('stem', ''):
+                    made['stem'] = ' '.join(
+                        (parent_ask, made.get('stem', ''))).strip()
             except Refused as exc:
                 note(str(exc).split(':', 1)[-1].strip()[:60])
         # ── whole-question pass ───────────────────────────────────────────
@@ -384,11 +692,15 @@ def main():
             if not (tariff and rows and ask.strip()):
                 for _ in held:
                     refused['no tariff that reads one way'] += 1
+                examples['no tariff that reads one way'].append(
+                    f'{ref}: {" ".join(ask.split())[:70]}')
                 continue
             topic, _ = topic_for(ask + ' ' + ' '.join(rows))
             if not topic:
                 for _ in held:
                     refused['files under no syllabus topic'] += 1
+                examples['files under no syllabus topic'].append(
+                    f'{ref}: {" ".join(ask.split())[:70]}')
                 continue
             stem = ''
             try:
@@ -442,8 +754,18 @@ def main():
             print(f'   {n:4} REFUSED  {reason}')
             for e in examples[reason][:limit]:
                 print(f'             {e}')
+        for reason, n in excluded.most_common():
+            print(f'   {n:4} EXCLUDED {reason}')
         return 0
-    print(json.dumps(cards, ensure_ascii=False, indent=1))
+    payload = json.dumps(cards, ensure_ascii=False, indent=1) + '\n'
+    if args.write:
+        target = os.path.join(ROOT, 'scripts', 'markbank', 'authored',
+                              'computer-science.json')
+        with open(target, 'w', encoding='utf-8') as handle:
+            handle.write(payload)
+        print(f'wrote {len(cards)} card(s) to {target}')
+    else:
+        print(payload, end='')
     return 0
 
 

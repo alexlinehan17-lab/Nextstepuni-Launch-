@@ -848,6 +848,56 @@
       "reason": "The printed task asks for one milk heat treatment. The five fully specified scheme routes belong to one practice identity. Progress now belongs to he-2024-ol-sc-q4aii-pasteurisation.",
       "drop": true,
       "replacementId": "he-2024-ol-sc-q4aii-pasteurisation"
+    },
+    "he-2017-hl-sc-q1a": {
+      "reason": "A bare room number inside the bungalow plan was formerly read as a new question, so the old shallow card carried only Q1(a)(i) while citing all of Q1(a). The corrected census restores Q1(a)(i)-(iii) as separate tasks; saved progress moves to the first replacement task.",
+      "drop": true,
+      "replacementId": "he-2017-hl-sc-q1ai"
+    },
+    "he-2016-ol-sb-q3bii": {
+      "reason": "The paper and scheme price Q3(b)(i)-(ii) together under one 20-mark scale. The parent card now contains both asks and their shared answer pool.",
+      "drop": true,
+      "replacementId": "he-2016-ol-sb-q3b"
+    },
+    "he-2017-ol-sb-q3bii": {
+      "reason": "The paper prices Q3(b)(i)-(ii) at the parent boundary. The parent card preserves both asks and the complete 16-mark scheme.",
+      "drop": true,
+      "replacementId": "he-2017-ol-sb-q3b"
+    },
+    "he-2018-ol-sb-q2aii": {
+      "reason": "The scheme awards one 20-mark five-point scale across the causes and effects in Q2(a)(i)-(ii). The parent card is the published marking boundary.",
+      "drop": true,
+      "replacementId": "he-2018-ol-sb-q2a"
+    },
+    "he-2019-hl-sb-q2bii": {
+      "reason": "The two vegetable-strategy asks form the paper's single 20-mark Q2(b) task. The parent card contains both official sub-tariffs without pretending the trailing child total belongs to only one ask.",
+      "drop": true,
+      "replacementId": "he-2019-hl-sb-q2b"
+    },
+    "he-2019-ol-sb-q2cii": {
+      "reason": "The scheme marks energy balance and BMR on one shared 12-mark three-point scale. They now live in one parent card.",
+      "drop": true,
+      "replacementId": "he-2019-ol-sb-q2c"
+    },
+    "he-2019-ol-sb-q3bii": {
+      "reason": "The paper prints one 18-mark total after Q3(b)(i)-(ii). The parent card retains both asks and both official response sets.",
+      "drop": true,
+      "replacementId": "he-2019-ol-sb-q3b"
+    },
+    "he-2019-ol-sb-q4bii": {
+      "reason": "The paper prints one 20-mark total for the two insurance asks. The parent card contains the full shared task and scheme.",
+      "drop": true,
+      "replacementId": "he-2019-ol-sb-q4b"
+    },
+    "he-2020-ol-sb-q2aii": {
+      "reason": "The 16 marks printed after Q2(a)(ii) cover both the CHD explanation and risk factors. The parent card restores that complete boundary.",
+      "drop": true,
+      "replacementId": "he-2020-ol-sb-q2a"
+    },
+    "he-2020-ol-sb-q5aii": {
+      "reason": "The 25 marks printed after Q5(a)(ii) cover the definition and validity conditions together. The parent card now contains both asks.",
+      "drop": true,
+      "replacementId": "he-2020-ol-sb-q5a"
     }
   },
   "english": {
@@ -956,12 +1006,34 @@
         "figureKey": "computer-science-2021-OL-paper-q4-figure"
       }
     },
-    "cs-2021-ol-q6": {
+    "cs-2021-ol-q6-a": {
       "reason": "The parser lost the actual ‘What is HTTP?’ line and all four tick-box choices. The prompt is restored verbatim and the inspected official choice layout is attached before reveal.",
       "set": {
         "stem": null,
-        "questionText": "(a) Answer the following question by putting a tick (✓) in the relevant box. Tick one box only. What is HTTP? (b) Describe one difference between the World Wide Web (WWW) and the Internet.",
+        "questionText": "Answer the following question by putting a tick (✓) in the relevant box. Tick one box only. What is HTTP?",
         "figureKey": "computer-science-2021-OL-paper-q6-figure"
+      }
+    },
+    "cs-2021-ol-q10-a": {
+      "reason": "The paper prints the shared linear-search instruction above two short table-cell values. This card now joins that official instruction to part (a), while the row keeps only the scheme's answer.",
+      "set": {
+        "stem": null,
+        "questionText": "The linear search algorithm shown below is to be applied to the following data set. What is the output of this algorithm when you are searching for the following values of x? x = 21",
+        "tariffModel": {"kind": "fixed"},
+        "rows": [
+          {"id": "r-answer", "kind": "point", "verbatim": "Answer: 2", "marks": 3}
+        ]
+      }
+    },
+    "cs-2021-ol-q10-b": {
+      "reason": "The paper prints the shared linear-search instruction above two short table-cell values. This card now joins that official instruction to part (b), while the row keeps only the scheme's answer.",
+      "set": {
+        "stem": null,
+        "questionText": "The linear search algorithm shown below is to be applied to the following data set. What is the output of this algorithm when you are searching for the following values of x? x = 3",
+        "tariffModel": {"kind": "fixed"},
+        "rows": [
+          {"id": "r-answer", "kind": "point", "verbatim": "Answer: item not found", "marks": 2}
+        ]
       }
     },
     "cs-2023-hl-q10": {
@@ -992,15 +1064,10 @@
         "figureKey": "computer-science-2022-HL-paper-q15c-code"
       }
     },
-    "cs-2022-ol-q16": {
-      "reason": "The whole programming task is intentionally grouped with one shared source-code crop, but the parser also flattened that code into the prompt after the seven asks. The prompt now keeps every printed ask and description once, in paper order, while the inspected crop carries the code.",
-      "set": {
-        "questionText": "(a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. The program above is to simulate an automated shop. The aim of the program is to accept the name of the user and then to ask the user to choose what item they would like to buy. The user will select the number of the item they wish to buy and the program outputs a message confirming the item they chose. (i) Insert a comment in an appropriate place to say “user enters first name”. (ii) Amend the program to ask for and accept the user's surname. Store the user’s surname in a variable called surname. (iii) Amend the program so that the user’s first name and their surname are printed when they are asked to select their item. (iv) Amend the program so that the items 2 = Ruler and 3 = Pen appear in the shopping list under the item 1 = Book. (v) Amend the program so that a dashed line appears above and below the available items. (vi) Amend the program so that the correct message is printed if the user purchases a ruler or pen. (vii) Amend the program to deal with invalid number entries. If the user enters any number other than the numbers 1, 2 or 3 they should be presented with an error message."
-      }
-    },
     "cs-2021-hl-q14-b-iv": {
       "reason": "The table parser stopped the marking point at a wrapped line and left doubled mathematical-letter glyphs. The complete SEC strategy is restored; the shared glyph repair renders the variables once.",
       "set": {
+        "tariffModel": {"kind": "fixed"},
         "rows": [
           {
             "id": "r-1",
@@ -1009,6 +1076,21 @@
             "marks": 2
           }
         ]
+      }
+    },
+    "cs-2022-ol-q13-b-i": {
+      "reason": "The generic whole-question crop shows part (a), while this true-or-false task is printed on the next page and contains a smiley glyph the PDF text layer cannot decode. The inspected part-specific crop now carries all four exact statements and boxes.",
+      "set": {
+        "stem": null,
+        "figureKey": null,
+        "questionFigureKey": "computer-science-2022-OL-paper-p12-q13b-i"
+      }
+    },
+    "cs-2022-ol-q13-b-ii": {
+      "reason": "Part (ii) is self-contained. Its inherited whole-question stem contains a broken smiley glyph and its inherited crop belongs to part (a), so both unrelated context fields are removed.",
+      "set": {
+        "stem": null,
+        "figureKey": null
       }
     },
     "cs-2022-ol-q15-c-ii": {
@@ -1102,6 +1184,7 @@
     "cs-2023-ol-q4": {
       "reason": "The scheme awards a six-mark holistic conversion answer with partial-credit bands; the parser incorrectly turned alternative workings and the word OR into six 1-mark claims. The complete required result is one all-or-nothing answer row.",
       "set": {
+        "tariffModel": {"kind": "fixed"},
         "rows": [
           {
             "id": "r-answer",
@@ -1207,6 +1290,7 @@
     "cs-2025-ol-q2": {
       "reason": "The task asks for two cloud-storage reasons, each worth 3 marks. Six scheme examples are a bounded open pool, not six required 1-mark rows.",
       "set": {
+        "tariffModel": {"kind": "fixed"},
         "rows": [
           {
             "id": "r-reasons",
@@ -1233,6 +1317,7 @@
     "cs-2025-ol-q10": {
       "reason": "The flowchart has one six-mark output sequence with holistic partial-credit bands. The parser incorrectly made each printed output value a separate 1-mark claim.",
       "set": {
+        "tariffModel": {"kind": "fixed"},
         "questionText": "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Calculate the output of the algorithm.",
         "rows": [
           {

@@ -1,0 +1,1223 @@
+[
+ {
+  "file": "biology-2016-HL-paper-p05-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2016 HL Q5, showing flowering-plant sexual reproduction from pollination through fertilisation. Every printed label used by the task (A, B, C, D, E, F) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Stigma"
+   },
+   {
+    "letter": "B",
+    "meaning": "Pollen tube"
+   },
+   {
+    "letter": "C",
+    "meaning": "Egg, female gamete or ovum"
+   },
+   {
+    "letter": "D",
+    "meaning": "Pollen grain — the structure whose arrival at A is assessed"
+   },
+   {
+    "letter": "E",
+    "meaning": "The two structures formed from D by mitosis; the scheme does not name them separately"
+   },
+   {
+    "letter": "F",
+    "meaning": "Ovule"
+   }
+  ],
+  "questionRef": "2016 HL Q5",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2016-OL-paper-p05-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2016 OL Q7(a), showing a complete light microscope with the eyepiece and stage leaders. Every printed label used by the task (A, B) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Eyepiece"
+   },
+   {
+    "letter": "B",
+    "meaning": "Stage or platform"
+   }
+  ],
+  "questionRef": "2016 OL Q7(a)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2016-OL-paper-p13-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2016 OL Q14(b), showing the complete human urinary system. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Kidney"
+   },
+   {
+    "letter": "B",
+    "meaning": "Ureter"
+   },
+   {
+    "letter": "C",
+    "meaning": "Urinary bladder — its assessed function is to store urine"
+   }
+  ],
+  "questionRef": "2016 OL Q14(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2016-OL-paper-p13-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2016 OL Q15(a), showing a seed section with the four printed structure names used by the matching task. Every printed label used by the task (Testa, Cotyledon, Plumule, Radicle) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "Testa",
+   "Cotyledon",
+   "Plumule",
+   "Radicle"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "Testa",
+    "meaning": "Protection"
+   },
+   {
+    "letter": "Cotyledon",
+    "meaning": "Food store for the seed"
+   },
+   {
+    "letter": "Plumule",
+    "meaning": "Part that becomes the shoot"
+   },
+   {
+    "letter": "Radicle",
+    "meaning": "Part that becomes the root"
+   }
+  ],
+  "questionRef": "2016 OL Q15(a)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2016-OL-paper-p13-i92.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2016 OL Q15(b), showing a virus with intact A and B leader lines. Every printed label used by the task (A, B) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Protein coat"
+   },
+   {
+    "letter": "B",
+    "meaning": "Nucleic acid, DNA or RNA"
+   }
+  ],
+  "questionRef": "2016 OL Q15(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2017-OL-paper-p04-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2017 OL Q6, showing Rhizopus with its horizontal hyphae, rhizoids and sporangia. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Hypha or stolon"
+   },
+   {
+    "letter": "B",
+    "meaning": "Rhizoid"
+   },
+   {
+    "letter": "C",
+    "meaning": "Sporangium"
+   }
+  ],
+  "questionRef": "2017 OL Q6",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2017-OL-paper-p10-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2017 OL Q12(b), showing the complete human female reproductive system. Every printed label used by the task (A, B, C, D, E) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Vagina"
+   },
+   {
+    "letter": "B",
+    "meaning": "Uterus or womb"
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary"
+   },
+   {
+    "letter": "D",
+    "meaning": "Oviduct or Fallopian tube"
+   },
+   {
+    "letter": "E",
+    "meaning": "Endometrium or womb lining"
+   }
+  ],
+  "questionRef": "2017 OL Q12(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2017-OL-paper-p11-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2017 OL Q13(b), showing all three neurons in a human reflex arc. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Sensory neuron"
+   },
+   {
+    "letter": "B",
+    "meaning": "Interneuron or relay neuron"
+   },
+   {
+    "letter": "C",
+    "meaning": "Motor neuron"
+   }
+  ],
+  "questionRef": "2017 OL Q13(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2017-OL-paper-p14-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2017 OL Q15(a), showing a section through the human eye with A, B and C intact. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Optic nerve"
+   },
+   {
+    "letter": "B",
+    "meaning": "Retina"
+   },
+   {
+    "letter": "C",
+    "meaning": "Lens"
+   }
+  ],
+  "questionRef": "2017 OL Q15(a)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2018-OL-paper-p03-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2018 OL Q4, showing the complete human male reproductive system. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Penis"
+   },
+   {
+    "letter": "B",
+    "meaning": "Testis"
+   },
+   {
+    "letter": "C",
+    "meaning": "Urethra; sperm duct or vas deferens was also allowed"
+   }
+  ],
+  "questionRef": "2018 OL Q4",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2018-OL-paper-p04-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2018 OL Q6, showing a complete plant cell with all five leaders. Every printed label used by the task (A, B, C, D, E) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Not named in the marking scheme"
+   },
+   {
+    "letter": "B",
+    "meaning": "Cell wall"
+   },
+   {
+    "letter": "C",
+    "meaning": "Not named in the marking scheme"
+   },
+   {
+    "letter": "D",
+    "meaning": "Vacuole"
+   },
+   {
+    "letter": "E",
+    "meaning": "Nucleus"
+   }
+  ],
+  "questionRef": "2018 OL Q6",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2018-OL-paper-p10-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2018 OL Q12(c), showing a full section through human skin. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Hair"
+   },
+   {
+    "letter": "B",
+    "meaning": "Blood vessel or blood vessels"
+   },
+   {
+    "letter": "C",
+    "meaning": "Sweat gland"
+   }
+  ],
+  "questionRef": "2018 OL Q12(c)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2018-OL-paper-p12-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2018 OL Q14(a), showing the human ear with its printed contextual labels and A, B and C. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Semicircular canals — function: balance"
+   },
+   {
+    "letter": "B",
+    "meaning": "Cochlea — function: hearing"
+   },
+   {
+    "letter": "C",
+    "meaning": "Eardrum — function: hearing"
+   }
+  ],
+  "questionRef": "2018 OL Q14(a)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2018-OL-paper-p14-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2018 OL Q15(a), showing a complete longitudinal section through a flower. Every printed label used by the task (A, B, C, D) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Stigma"
+   },
+   {
+    "letter": "B",
+    "meaning": "Anther"
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary or ovule"
+   },
+   {
+    "letter": "D",
+    "meaning": "Not named in the marking scheme"
+   }
+  ],
+  "questionRef": "2018 OL Q15(a)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2019-OL-paper-p05-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2019 OL Q6, showing the paper's laboratory microscope photograph. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Eyepiece"
+   },
+   {
+    "letter": "B",
+    "meaning": "Stage"
+   },
+   {
+    "letter": "C",
+    "meaning": "Objective lens"
+   }
+  ],
+  "questionRef": "2019 OL Q6",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2019-OL-paper-p07-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2019 OL Q14(b), showing the two human endocrine glands and their anatomical context. Every printed label used by the task (A, B) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Thyroid"
+   },
+   {
+    "letter": "B",
+    "meaning": "Pancreas"
+   }
+  ],
+  "questionRef": "2019 OL Q14(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2019-OL-paper-p08-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2019 OL Q15(a), showing a complete motor neuron. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Dendrite"
+   },
+   {
+    "letter": "B",
+    "meaning": "Axon"
+   },
+   {
+    "letter": "C",
+    "meaning": "Cell body; nucleus was also allowed"
+   }
+  ],
+  "questionRef": "2019 OL Q15(a)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2019-OL-paper-p08-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2019 OL Q15(b), showing a human kidney and its attached vessels and ureter. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Renal vein"
+   },
+   {
+    "letter": "B",
+    "meaning": "Renal artery"
+   },
+   {
+    "letter": "C",
+    "meaning": "Ureter"
+   }
+  ],
+  "questionRef": "2019 OL Q15(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2019-OL-paper-p09-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2019 OL Q15(c), showing the complete yeast and amoeba comparison. Every printed label used by the task (A, B) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Bud"
+   },
+   {
+    "letter": "B",
+    "meaning": "Pseudopod or false foot"
+   }
+  ],
+  "questionRef": "2019 OL Q15(c)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2020-HL-paper-p07-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2020 HL Q14(c), showing the full microorganism population-growth curve and both axes. Every printed label used by the task (A, B, C, Y) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "Y"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Lag stage"
+   },
+   {
+    "letter": "B",
+    "meaning": "Log stage"
+   },
+   {
+    "letter": "C",
+    "meaning": "Stationary stage"
+   },
+   {
+    "letter": "Y",
+    "meaning": "Population or number of microorganisms"
+   }
+  ],
+  "questionRef": "2020 HL Q14(c)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2020-OL-paper-p04-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2020 OL Q3, showing the incomplete carbon-cycle diagram on which candidates add arrows. Every printed label used by the task (A) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "The arrow already printed on the diagram; the scheme does not name it"
+   }
+  ],
+  "questionRef": "2020 OL Q3",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2020-OL-paper-p04-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2020 OL Q12(b), showing the complete human breathing system. Every printed label used by the task (A, B, C, D) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Larynx"
+   },
+   {
+    "letter": "B",
+    "meaning": "Trachea"
+   },
+   {
+    "letter": "C",
+    "meaning": "Bronchiole"
+   },
+   {
+    "letter": "D",
+    "meaning": "Bronchus"
+   }
+  ],
+  "questionRef": "2020 OL Q12(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2020-OL-paper-p06-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2020 OL Q14(b), showing a complete labelled plant cell. Every printed label used by the task (A, B, C, D) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Vacuole"
+   },
+   {
+    "letter": "B",
+    "meaning": "Cell wall"
+   },
+   {
+    "letter": "C",
+    "meaning": "Cell membrane"
+   },
+   {
+    "letter": "D",
+    "meaning": "Mitochondria"
+   }
+  ],
+  "questionRef": "2020 OL Q14(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2020-OL-paper-p07-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2020 OL Q15(a), showing a section through the human eye with all four leaders. Every printed label used by the task (A, B, C, D) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Lens"
+   },
+   {
+    "letter": "B",
+    "meaning": "Sclera"
+   },
+   {
+    "letter": "C",
+    "meaning": "Optic nerve"
+   },
+   {
+    "letter": "D",
+    "meaning": "Retina"
+   }
+  ],
+  "questionRef": "2020 OL Q15(a)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2020-OL-paper-p07-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2020 OL Q15(c), showing the complete human male reproductive system. Every printed label used by the task (A, B, C, D) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Penis"
+   },
+   {
+    "letter": "B",
+    "meaning": "Urethra"
+   },
+   {
+    "letter": "C",
+    "meaning": "Sperm duct"
+   },
+   {
+    "letter": "D",
+    "meaning": "Testes"
+   }
+  ],
+  "questionRef": "2020 OL Q15(c)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2017-HL-paper-p04-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2017 HL Q3, showing the complete cell-membrane ultrastructure diagram. Every printed label used by the task (A, B) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Protein"
+   },
+   {
+    "letter": "B",
+    "meaning": "Lipid, phospholipid or fatty acid"
+   }
+  ],
+  "questionRef": "2017 HL Q3",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2017-OL-paper-p03-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2017 OL Q4, showing the complete human digestive-system figure with all three lettered leaders. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Liver"
+   },
+   {
+    "letter": "B",
+    "meaning": "Stomach"
+   },
+   {
+    "letter": "C",
+    "meaning": "Pancreas"
+   }
+  ],
+  "questionRef": "2017 OL Q4",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2017-OL-paper-p11-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2017 OL Q13(c), showing the complete sagittal section through the human brain. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Cerebrum"
+   },
+   {
+    "letter": "B",
+    "meaning": "Medulla oblongata"
+   },
+   {
+    "letter": "C",
+    "meaning": "Cerebellum"
+   }
+  ],
+  "questionRef": "2017 OL Q13(c)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2017-OL-paper-p12-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2017 OL Q14(b), showing the complete leaf cross-section and its A, B and C leaders. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Cells marked A; the scheme assesses their chloroplasts rather than a tissue name"
+   },
+   {
+    "letter": "B",
+    "meaning": "Stoma"
+   },
+   {
+    "letter": "C",
+    "meaning": "Guard cells"
+   }
+  ],
+  "questionRef": "2017 OL Q14(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2017-OL-paper-p14-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2017 OL Q15(b), showing all three blood-vessel cross-sections, structural captions and A, B and C. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Artery"
+   },
+   {
+    "letter": "B",
+    "meaning": "Vein"
+   },
+   {
+    "letter": "C",
+    "meaning": "Capillary"
+   }
+  ],
+  "questionRef": "2017 OL Q15(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2018-HL-paper-p06-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2018 HL Q6, showing the complete nephron, associated blood supply and target-area box. Every printed label used by the task (X, Y) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "X",
+    "meaning": "Bowman's capsule"
+   },
+   {
+    "letter": "Y",
+    "meaning": "Distal convoluted tubule or DCT"
+   }
+  ],
+  "questionRef": "2018 HL Q6",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2018-OL-paper-p02-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2018 OL Q2, showing the complete synovial-joint diagram and all three leaders. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Ligament"
+   },
+   {
+    "letter": "B",
+    "meaning": "Cartilage"
+   },
+   {
+    "letter": "C",
+    "meaning": "Synovial fluid"
+   }
+  ],
+  "questionRef": "2018 OL Q2",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2018-OL-paper-p14-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2018 OL Q15(b), showing the complete transverse section of a dicot root. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Phloem"
+   },
+   {
+    "letter": "B",
+    "meaning": "Xylem"
+   },
+   {
+    "letter": "C",
+    "meaning": "Root hair"
+   }
+  ],
+  "questionRef": "2018 OL Q15(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2019-HL-paper-p07-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2019 HL Q14(a), showing the complete central-nervous-system figure and all six lettered leaders. Every printed label used by the task (A, B, C, D, E, F) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Cerebellum"
+   },
+   {
+    "letter": "B",
+    "meaning": "Cerebrum"
+   },
+   {
+    "letter": "C",
+    "meaning": "Pituitary gland"
+   },
+   {
+    "letter": "D",
+    "meaning": "Medulla oblongata"
+   },
+   {
+    "letter": "E",
+    "meaning": "Spinal cord"
+   },
+   {
+    "letter": "F",
+    "meaning": "Hypothalamus"
+   }
+  ],
+  "questionRef": "2019 HL Q14(a)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2020-HL-paper-p06-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2020 HL Q4, showing the complete DNA structural diagram with G, J, K and L intact. Every printed label used by the task (G, J, K, L) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "G",
+   "J",
+   "K",
+   "L"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "G",
+    "meaning": "Guanine"
+   },
+   {
+    "letter": "J",
+    "meaning": "Nucleotide"
+   },
+   {
+    "letter": "K",
+    "meaning": "Base pair or complementary bases"
+   },
+   {
+    "letter": "L",
+    "meaning": "Hydrogen bonding"
+   }
+  ],
+  "questionRef": "2020 HL Q4",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2020-HL-paper-p08-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2020 HL Q6, showing the complete sensory neuron, its direction box and all printed labels. Every printed label used by the task (A, B) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Site labelled A; the scheme names the released substance as a neurotransmitter"
+   },
+   {
+    "letter": "B",
+    "meaning": "Axon"
+   }
+  ],
+  "questionRef": "2020 HL Q6",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2020-OL-paper-p04-i91.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2020 OL Q12(c), showing both exchange structures, villus A and alveolus B, in one crop. Every printed label used by the task (A, B) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Villus"
+   },
+   {
+    "letter": "B",
+    "meaning": "Alveolus"
+   }
+  ],
+  "questionRef": "2020 OL Q12(c)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2021-HL-paper-p07-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2021 HL Q5, showing the complete embryo-development sequence from ovulation to implantation. Every printed label used by the task (A, B, C, D) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Ovulation"
+   },
+   {
+    "letter": "B",
+    "meaning": "Morula"
+   },
+   {
+    "letter": "C",
+    "meaning": "Blastocyst"
+   },
+   {
+    "letter": "D",
+    "meaning": "Implantation"
+   }
+  ],
+  "questionRef": "2021 HL Q5",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2022-HL-paper-p06-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2022 HL Q15(b), showing the complete kidney and nephron pair, including all printed anatomical labels. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Cortex"
+   },
+   {
+    "letter": "B",
+    "meaning": "Medulla or pyramid"
+   },
+   {
+    "letter": "C",
+    "meaning": "Pelvis"
+   }
+  ],
+  "questionRef": "2022 HL Q15(b)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2023-OL-paper-p08-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2023 OL Q7, showing the complete neuron and candidate direction-arrow box. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Dendrite"
+   },
+   {
+    "letter": "B",
+    "meaning": "Axon"
+   },
+   {
+    "letter": "C",
+    "meaning": "Schwann cell or myelin sheath"
+   }
+  ],
+  "questionRef": "2023 OL Q7",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2025-OL-paper-p06-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2025 OL Q15(c), showing the complete male reproductive-system figure without the preceding foetus diagram. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Sperm duct"
+   },
+   {
+    "letter": "B",
+    "meaning": "Prostate gland"
+   },
+   {
+    "letter": "C",
+    "meaning": "Testis"
+   }
+  ],
+  "questionRef": "2025 OL Q15(c)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ },
+ {
+  "file": "biology-2025-OL-paper-p10-i90.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Complete inspected SEC artwork for 2025 OL Q17(c), showing the complete human breathing system, alveolus inset and diaphragm. Every printed label used by the task (A, B, C) and its leader line are intact; no marking-scheme answer overlay is present.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "letter": "A",
+    "meaning": "Intercostal muscle"
+   },
+   {
+    "letter": "B",
+    "meaning": "Bronchus"
+   },
+   {
+    "letter": "C",
+    "meaning": "Trachea"
+   }
+  ],
+  "questionRef": "2025 OL Q17(c)",
+  "notes": "Completion-layer artwork. Checked against the full paper page and decoded only from the corresponding marking scheme."
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "ref": "2020 HL Q10-alt(a)",
+  "reason": "official scheme supplies a discussion tariff but no accepted content",
+  "evidence": "The scheme prices three generic discussion points at 10 marks each (4 for point, 6 for discussion) and publishes no model discussion point for the retrofit quotation. There is no official answer wording for a self-check card."
+ },
+ {
+  "ref": "2020 HL Q10-alt(b)",
+  "reason": "official scheme supplies guideline slots but no accepted content",
+  "evidence": "The scheme prints only Guideline 1, Guideline 2 and Guideline 3 at 10 marks each for sustainable retrofit. It gives no example guideline or indicative answer, so authoring the three required guidelines would be unsupported."
+ },
+ {
+  "ref": "2021 HL Q10-alt(a)",
+  "reason": "official scheme supplies a discussion tariff but no accepted content",
+  "evidence": "The reuse-and-repurposing quotation is marked through three generic discussion slots. The official scheme states their tariff but no accepted discussion point, leaving no provenance-bearing answer content."
+ },
+ {
+  "ref": "2021 HL Q10-alt(b)",
+  "reason": "official scheme supplies guideline slots but no accepted content",
+  "evidence": "The scheme prices three best-practice guidelines for reuse or repurposing but prints only the numbered placeholder labels. It publishes no accepted guideline text."
+ },
+ {
+  "ref": "2022 HL Q10-alt(a)",
+  "reason": "official scheme supplies a discussion tariff but no accepted content",
+  "evidence": "The air-source heat-pump quotation is accompanied only by three generic discussion slots in the published scheme. Their tariff is stated, but no model discussion point is supplied."
+ },
+ {
+  "ref": "2022 HL Q10-alt(b)",
+  "reason": "official scheme supplies guideline slots but no accepted content",
+  "evidence": "The official scheme prints three numbered guideline slots for promoting air-source heat pumps and their tariffs, but no accepted guideline. A model answer would have to be invented."
+ },
+ {
+  "ref": "2023 HL Q10-alt(a)",
+  "reason": "official scheme supplies a discussion tariff but no accepted content",
+  "evidence": "The lifetime-flexibility quotation is graded through three generic discussion slots for which the scheme publishes no indicative content."
+ },
+ {
+  "ref": "2023 HL Q10-alt(b)",
+  "reason": "official scheme supplies guideline slots but no accepted content",
+  "evidence": "The scheme prices three guidelines for flexible buildings but states only Guideline 1/2/3 and the 4+6 tariff. It gives no accepted guideline text."
+ },
+ {
+  "ref": "2024 HL Q10-alt(a)",
+  "reason": "official scheme supplies a discussion tariff but no accepted content",
+  "evidence": "The whole-life-carbon quotation receives three generic discussion slots in the mark table; no accepted discussion point is published."
+ },
+ {
+  "ref": "2024 HL Q10-alt(b)",
+  "reason": "official scheme supplies guideline slots but no accepted content",
+  "evidence": "The published scheme gives only three numbered material-selection guideline slots and their 10-mark tariffs. It supplies no example guideline for reducing whole-life carbon."
+ },
+ {
+  "ref": "2025 HL Q10-alt(a)",
+  "reason": "official scheme supplies a discussion tariff but no accepted content",
+  "evidence": "The historic-building reuse quotation is marked using three generic discussion slots. The official scheme publishes their point/discussion split but no model content."
+ },
+ {
+  "ref": "2025 HL Q10-alt(b)",
+  "reason": "official scheme supplies guideline slots but no accepted content",
+  "evidence": "The scheme prints only Guideline 1, Guideline 2 and Guideline 3 with 5 marks for a point and 5 for discussion. It gives no accepted historic-building reuse guideline, so a card cannot be authored without inventing the answer."
+ }
+]

@@ -45,8 +45,7 @@ for key in A.S.parts():
     if not topic:
         print(f'UNFILED {A.ref(key)}: {qtext[:60]}', file=sys.stderr)
         continue
-    cid = (f'maths-2022-ol-p{paper}-q{q}'
-           + (f'-{letter}' if letter else '') + (f'-{roman}' if roman else ''))
+    cid = A.cid(key)
     try:
         A.card(key, cid=cid, topic=topic, concept=concept_for(qtext),
                figure_key=FIGURES.get(key, ''))

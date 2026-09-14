@@ -167,7 +167,7 @@ A.card(10, None, 'vi', topic='phys-2-3', concept='image-distance-from-magnificat
 
 A.card(11, None, 'vii', topic='phys-2-1', concept='area-of-the-garden',
        source='pdf', from_run=((2, None, 'vii'), 3, slice(1, 6)), marks=[4],
-       figure='physics-2021-OL-paper-p10-i1',
+       figure='physics-2021-ol-paper-p010-i0',
        notes='The 6 m and 9 m sides are read off the paper\'s diagram of the garden. '
              '"m2" is the flattened m².')
 

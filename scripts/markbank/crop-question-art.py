@@ -175,8 +175,17 @@ def main() -> int:
     page = doc[args.page - 1]
     box = art_box(page, ignore_rules=args.ignore_rules, keep_charts=args.keep_charts)
     if box is None:
-        print(f"no artwork found on page {args.page}", file=sys.stderr)
-        return 3
+        # A source table can be made entirely from text and rules. In that
+        # case there is deliberately no raster/vector "art" for art_box() to
+        # discover, but an author who supplied an explicit rectangle has
+        # already identified the exact printed region to render. Honour that
+        # rectangle rather than forcing the table back into flattened prose.
+        if all(v is not None for v in (args.top, args.bottom, args.left, args.right)):
+            box = page.rect
+        else:
+            print(f"no artwork found on page {args.page}; pass all four explicit "
+                  "bounds to render a text/table region", file=sys.stderr)
+            return 3
     # Keep the attribution the SEC prints beneath each symbol.
     bottom = (args.bottom if args.bottom is not None
               else box.y1 + PAD * 2.5 + args.pad_bottom)

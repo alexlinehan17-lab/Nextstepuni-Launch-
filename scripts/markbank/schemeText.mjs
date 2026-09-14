@@ -31,7 +31,7 @@ const MARKS_ONLY = /^\s*\d+\s*(\(\s*\d+\s*\))?\s*$/;
  * (4+3) pays for — then fails provenance because of a label that is not part of
  * the answer at all. Same reasoning as MARKS_ONLY: it carries no marking content.
  */
-const LABEL_ONLY = /^\s*\(?\s*([ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s*$/i;
+const LABEL_ONLY = /^\s*\(\s*([ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s*$/i;
 
 /**
  * The same left-hand label, but sharing a line with the answer beside it.

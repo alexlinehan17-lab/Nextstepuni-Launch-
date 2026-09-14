@@ -1,0 +1,102 @@
+[
+  {
+    "file": "computer-science-2023-HL-paper-q14-cpu-cycle.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete three-stage CPU instruction cycle diagram from Question 14: Fetch Instruction is supplied at the top, with blank stages labelled (a) and (b) and all directional arrows visible.",
+    "lettersVisible": ["A", "B"],
+    "labelMeanings": [],
+    "questionRef": "2023 HL Q14(a)(ii)"
+  },
+  {
+    "file": "computer-science-2020-HL-paper-p06-art-q7-binary.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete eight-bit binary value printed for the ASCII character K in Question 7: 0100 1011.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2020 HL Q7"
+  },
+  {
+    "file": "computer-science-2020-HL-paper-p08-art-q10-html.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete HTML listing and its rendered School Canteen browser page, with all four numbered omissions visible and no empty response table.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2020 HL Q10"
+  },
+  {
+    "file": "computer-science-2020-HL-paper-q16-code0.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete 42-line Question 16(a) password-scoring program as printed, with line numbers, indentation, comments, and the initial three scoring rules visible.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2020 HL Q16(a)"
+  },
+  {
+    "file": "computer-science-2020-HL-paper-p06-art-q16a-viii-tables.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete password-length scoring table required by Question 16(a)(viii), showing all three length bands and their score adjustments.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2020 HL Q16(a)(viii)"
+  },
+  {
+    "file": "computer-science-2020-HL-paper-p08-art-q16b-code.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete 44-line Question 16(b) password-list program as printed, with its calculate_score function, test list, driver loop, line numbers, and indentation visible.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2020 HL Q16(b)"
+  },
+  {
+    "file": "computer-science-2021-HL-paper-p12-art-q12a-dogs.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete six-row dog table used to assess possible primary keys, with dog_name, breed, dob, and microchip headings and every printed value visible.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2021 HL Q12(a)"
+  },
+  {
+    "file": "computer-science-2021-HL-paper-p12-art-q12b-owners.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete owner-and-dog database table used by the foreign-key question, with all seven column headings and all six records visible.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2021 HL Q12(b)"
+  },
+  {
+    "file": "computer-science-2022-HL-paper-p10-art-q11-ancestry.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete five-generation male-honey-bee ancestry tree, including the male/female reproduction key and every M/F node needed to identify the Fibonacci pattern.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2022 HL Q11"
+  },
+  {
+    "file": "computer-science-2022-OL-paper-p12-q13b-i.png",
+    "kind": "figure",
+    "drawingComplete": true,
+    "truncated": false,
+    "description": "The complete 2022 Ordinary Level Question 13(b)(i) true-or-false task, including the ASCII and Unicode context, all four statements, the printed smiley emoji, and every empty True/False box.",
+    "lettersVisible": [],
+    "labelMeanings": [],
+    "questionRef": "2022 OL Q13(b)(i)"
+  }
+]

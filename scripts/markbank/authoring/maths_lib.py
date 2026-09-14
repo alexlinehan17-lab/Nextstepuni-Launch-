@@ -43,12 +43,23 @@ FURNITURE_TAIL = re.compile(
 
 CONTENT_FREE = re.compile(r'^(work of merit|any valid|as above|see above|'
                           r'accept any|other relevant)\W*$', re.I)
+STEM_FURNITURE = re.compile(
+    r'^(?:This question continues on the next page\.?|'
+    r'This question continues on page \d+\.?)$', re.I)
 
 # Primary-paper corrections for asks whose two-dimensional typesetting defeats
 # the generic text extractor. The source remains the SEC paper; these strings
 # are verified transcriptions and keep future regeneration from restoring the
 # broken, interleaved readings currently visible on the affected cards.
 VERIFIED_QUESTION_TEXT = {
+    (2021, 'ol', 1, 2, 'b', None):
+        'z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1. '
+        'z₃ = z₁/z₂. Find z₃ in the form a + bi, where a, b ∈ ℤ.',
+    (2021, 'ol', 2, 5, 'b', 'ii'):
+        'The table on the right shows three numbers. One of the numbers is '
+        'the correlation coefficient of the data shown in the table above. '
+        'Tick (✓) the one which you think best represents the correlation '
+        'coefficient between height and arm span for this data set.',
     (2025, 'hl', 1, 10, 'e', 'i'):
         'H(n) is the total number of dots in Pattern n of the sequence, for '
         'n ∈ ℕ. (i) Write down the value of H(1). When n is a natural number, '
@@ -90,11 +101,53 @@ SOLUTION_LABEL = 'Model solution'
 # Part labels, rung markers and bare mark totals are not working.
 SOLUTION_FURNITURE = re.compile(
     r'^(?:\(?[a-h]\)|\(?(?:i{1,3}|iv|vi{0,3})\)|\[?\d{1,3}\]?|OR'
-    r'|Model Solution.*|Q\d+)$', re.I)
+    r'|Model Solution.*|Q\d+|Mathematics\s*[–—-]\s*'
+    r'(?:Higher|Ordinary|Foundation)\s+Level)$', re.I)
+MILESTONE_FURNITURE = re.compile(
+    r'^(?:Method\s+\d+\*?|Similarly|or equivalent|Graphical Method)$', re.I)
+
+# The PDF reader can splice a stacked fraction through the marking-notes line
+# beside it.  These reviewed plans select contiguous, build-provenance-checked
+# lines from the SAME official scheme instead.  Indices are zero-based into
+# answer_rows (A) or the printed model solution (S); a tuple joins consecutive
+# printed lines into one readable milestone.  No wording is authored here.
+REVIEWED_ROW_PLANS = {
+    (2023, 'hl', 1, 2, 'b', None):
+        [('S', (0,)), ('S', (1,)), ('S', (5,))],
+    (2023, 'hl', 1, 8, 'b', 'i'):
+        [('S', (1, 2, 3)), ('S', (4,)), ('S', (5,)), ('S', (6,))],
+    (2023, 'hl', 1, 8, 'd', 'i'):
+        [('S', (4,)), ('S', (6,)), ('S', (7,)), ('S', (11,))],
+    (2023, 'hl', 2, 1, 'b', None):
+        [('S', (1,)), ('S', (3,)), ('S', (5,)), ('S', (7,))],
+    (2024, 'hl', 1, 9, 'b', 'i'):
+        [('S', (0,)), ('S', (4,)), ('S', (6,)), ('S', (8,))],
+    (2024, 'ol', 1, 10, 'b', 'iv'):
+        [('S', (0,)), ('S', (4,)), ('S', (5,))],
+    (2025, 'hl', 2, 3, 'b', None):
+        [('S', (1,)), ('S', (2,)), ('S', (3,)), ('S', (5,))],
+    (2025, 'hl', 2, 9, 'b', None):
+        [('S', (1, 2)), ('S', (3, 4, 5)),
+         ('S', (6, 7, 8)), ('S', (9, 10, 11, 12))],
+    (2025, 'hl', 2, 9, 'd', None):
+        [('A', (0,)), ('S', (13,)), ('S', (14,))],
+    (2025, 'ol', 1, 3, 'c', 'i'):
+        [('S', (0,)), ('S', (2,)), ('S', (3,))],
+}
 
 
 class Author:
     LEVELS = {'hl': 'higher', 'ol': 'ordinary'}
+    # IDs are public data once a card has shipped.  Parser repairs may correct
+    # the citation without renaming that card; these are the old parsed
+    # addresses whose stable ids already exist in decks/corrections.
+    STABLE_ID_PARTS = {
+        (2021, 'hl', 2, 2, 'c', 'i'): (None, 'i'),
+        (2022, 'hl', 2, 8, 'a', 'v'): ('b', 'v'),
+        (2023, 'hl', 2, 4, 'a', 'ii'): (None, 'ii'),
+        (2023, 'hl', 2, 8, 'b', 'ii'): (None, 'ii'),
+        (2025, 'hl', 2, 2, 'a', 'ii'): (None, 'ii'),
+    }
 
     def __init__(self, year, level):
         self.year, self.level = year, level
@@ -105,6 +158,15 @@ class Author:
         self.cards = []
         self._used = set()
         self._flat = None
+
+    def cid(self, key):
+        paper, q, letter, roman = key[:4]
+        letter, roman = self.STABLE_ID_PARTS.get(
+            (self.year, self.level, paper, q, letter, roman),
+            (letter, roman))
+        return (f'maths-{self.year}-{self.level}-p{paper}-q{q}'
+                + (f'-{letter}' if letter else '')
+                + (f'-{roman}' if roman else ''))
 
     def topic_evidence(self, key):
         """The text a topic classifier may read for this unit.
@@ -137,20 +199,31 @@ class Author:
         if verified:
             return verified
         P = self.P[paper]
-        exact = [k for k in P.parts
-                 if k[0] == q and k[1] == letter and k[2] == roman]
-        if not exact and roman is None:
-            exact = [k for k in P.parts if k[0] == q and k[1] == letter]
-        # The scheme sometimes prices a whole question as one unit -- 2021 OL
-        # Paper 1 Q2 is marked once where the paper sets (a) and (b) -- and the
-        # paper has no part with no letter to match, so the lookup found
-        # nothing and the part was filed as having no question text at all.
-        if not exact and letter is None:
-            exact = [k for k in P.parts if k[0] == q]
+        exact = []
+        # Read every ask the ONE official scale covers.  This is normally a
+        # roman span or a letter span, and once is the irregular (a)(v)+(b)
+        # unit in 2022 HL P2 Q8.  The old exact lookup showed only the first
+        # ask even though the tariff and citation covered several.
+        for wanted_letter, wanted_roman in self.S.covered_parts(tuple(key)):
+            found = [k for k in P.parts
+                     if k[0] == q and k[1] == wanted_letter
+                     and k[2] == wanted_roman]
+            if not found and wanted_roman is None:
+                found = [k for k in P.parts
+                         if k[0] == q and k[1] == wanted_letter]
+            if not found and wanted_letter is None:
+                found = [k for k in P.parts if k[0] == q]
+            exact.extend(k for k in found if k not in exact)
         if not exact:
             return ''
         exact.sort(key=lambda k: (k[1] or '', k[2] or ''))
-        joined = ' '.join((P.text(*k) or '').strip() for k in exact)
+        # Clean each source fragment before joining it.  A joined span is not
+        # contiguous in the PDF and clean_like cannot find it as one passage;
+        # cleaning the artificial join fell back to the damaged plain-text
+        # extraction and restored flattened powers/fractions.
+        cleaned_parts = [mathtext.clean_like(P.files, (P.text(*k) or '').strip())
+                         for k in exact if (P.text(*k) or '').strip()]
+        joined = ' '.join(cleaned_parts)
         # A part whose first line ends in a full stop stops collecting, so an
         # ask set on the next line lands in the letter's stem instead: 2022 HL
         # Paper 1 Q2(a) reads "g(x) = 2x^2 + 5x + 6, where x in R." with "Find
@@ -158,7 +231,7 @@ class Author:
         # question. Pulled in only when the part cannot stand on its own, and
         # only for a lettered part -- a roman's stem holds its SIBLINGS' asks,
         # and Q3(a)'s stem is the wording of Q3(a)(iii).
-        cleaned = mathtext.clean_like(P.files, joined)
+        cleaned = joined
         if roman is None and len(_squash(joined)) < 25:
             extra = (P.stem(q, letter) or '').strip()
             if extra:
@@ -180,31 +253,37 @@ class Author:
     }
 
     def ref(self, key):
-        key = self.RECITE.get((self.year, self.level), {}).get(tuple(key[:4]), key)
+        source_key = tuple(key)
+        recited = self.RECITE.get((self.year, self.level), {}).get(
+            tuple(key[:4]))
+        if recited:
+            key = recited
+            parts = [(key[2], key[3])]
+        else:
+            parts = self.S.covered_parts(source_key)
         paper, q, letter, roman = key[0], key[1], key[2], key[3]
         tail = f'Q{q}'
-        if letter:
-            # One scale, several LETTERS: the scheme heads a unit "(a), (b)"
-            # and marks both together, the letter twin of the roman span
-            # below. 2022 OL Paper 1 Q1 does this; citing only (a) left (b)
-            # reading as uncovered when the card already answers it.
-            lspan = self.S.letter_spans.get(tuple(key[:4])) \
-                if hasattr(self.S, 'letter_spans') else None
-            if lspan and len(lspan) > 1 and not roman:
-                tail += f'({lspan[0]})–({lspan[-1]})' if len(lspan) > 2 \
-                    else f'({lspan[0]}), ({lspan[1]})'
-            else:
-                tail += f'({letter})'
-        if roman:
-            # One scale, several parts: the scheme heads a unit "(a) (i) & (ii)"
-            # and marks both together, so the card answers both and must say so.
-            # Citing only the first left the rest looking uncovered.
-            span = self.S.spans.get(tuple(key[:4])) if hasattr(self.S, 'spans') else None
-            if span and len(span) > 1:
-                tail += f'({span[0]})–({span[-1]})' if len(span) > 2 \
-                    else f'({span[0]}), ({span[1]})'
-            else:
-                tail += f'({roman})'
+        if len(parts) == 1:
+            ltr, rom = parts[0]
+            tail += f'({ltr})' if ltr else ''
+            tail += f'({rom})' if rom else ''
+        elif all(ltr == parts[0][0] and rom for ltr, rom in parts):
+            # One letter, a consecutive roman span.
+            ltr = parts[0][0]
+            tail += f'({ltr})' if ltr else ''
+            romans = [rom for _, rom in parts]
+            tail += f'({romans[0]})–({romans[-1]})' if len(romans) > 2 \
+                else f'({romans[0]}), ({romans[1]})'
+        elif all(ltr and rom is None for ltr, rom in parts):
+            # Several letters, no nested romans.
+            letters = [ltr for ltr, _ in parts]
+            tail += f'({letters[0]})–({letters[-1]})' if len(letters) > 2 \
+                else f'({letters[0]}), ({letters[1]})'
+        else:
+            # An irregular but official joint unit, e.g. Q8(a)(v), (b).
+            tail += ', '.join(
+                (f'({ltr})' if ltr else '') + (f'({rom})' if rom else '')
+                for ltr, rom in parts)
         return f'{self.year} {self.level.upper()} Paper {paper} {tail}'
 
     def _flat_scheme(self):
@@ -255,6 +334,27 @@ class Author:
             out.append((SOLUTION_LABEL, text))
         return out
 
+    def _reviewed_rows(self, key):
+        plan = REVIEWED_ROW_PLANS.get(
+            (self.year, self.level, *tuple(key[:4])))
+        if not plan:
+            return None
+        sources = {
+            'A': self.S.answer_rows(key),
+            'S': self._solution_rows(key),
+        }
+        out = []
+        for source, indices in plan:
+            rows = sources[source]
+            if any(index >= len(rows) for index in indices):
+                raise Refused(f'{self.ref(key)}: reviewed marking-row source moved')
+            if any(not self._traceable([rows[index]]) for index in indices):
+                raise Refused(f'{self.ref(key)}: reviewed marking-row source no longer traces')
+            text = '\n'.join(rows[index][1] for index in indices)
+            label = rows[indices[0]][0] if source == 'A' else SOLUTION_LABEL
+            out.append((label, text))
+        return out
+
     def stem_for(self, key):
         """The paper's setup for this part — the context the ask leans on.
 
@@ -268,12 +368,22 @@ class Author:
         paper, q, letter, roman = key[0], key[1], key[2], key[3]
         P = self.P[paper]
         pieces = []
+        # A nested roman frequently depends on the instruction printed at its
+        # parent letter.  The parser stores that instruction as the letter's
+        # own text, not as stem(): Q1(b) says "Kate spins each spinner once..."
+        # before (i) merely says "her left foot?"; Q5(a) asks for standard
+        # form before (i)/(ii) print only the two numbers.  Carry the official
+        # parent instruction so those asks stand alone.
+        if roman and letter:
+            parent = (P.text(q, letter, None) or '').strip()
+            if len(_squash(parent)) >= 8 and not STEM_FURNITURE.match(parent):
+                pieces.append(mathtext.clean_like(P.files, parent))
         for src in ((q, None), (q, letter) if letter else None):
             if not src:
                 continue
             raw = (P.stem(*src) or '').strip()
             raw = re.sub(r'^\(\d{1,3}\s*marks?\)\s*', '', raw)
-            if len(_squash(raw)) >= 15:
+            if len(_squash(raw)) >= 15 and not STEM_FURNITURE.match(raw):
                 pieces.append(mathtext.clean_like(P.files, raw))
         text = ' '.join(dict.fromkeys(pieces))
         return text if len(_squash(text)) >= 15 else ''
@@ -291,7 +401,7 @@ class Author:
         # Squashing keeps only letters and digits, and a Maths question is
         # mostly neither: "Show that z - iz = 8 - 4i." measures fourteen and is
         # a whole question. Judged on either measure, not on the squash alone.
-        if len(_squash(qtext)) < 12 and len(qtext) < 24:
+        if len(_squash(qtext)) < 12 and len(qtext) < 24 and not stem:
             raise Refused(f'{self.ref(key)}: no question text in the paper')
         total, ladder = self.S.tariff(key)
         if not total or not ladder or len(ladder) < 2:
@@ -304,6 +414,9 @@ class Author:
         dedupe = lambda t: re.sub(r'(\S{1,14}/\S{1,14}) \1(?=\s|$)', r'\1', t)
         rows = [(lab, dedupe(txt)) for lab, txt in self.S.answer_rows(key)
                 if txt and not CONTENT_FREE.match(txt) and len(_squash(txt)) > 6]
+        reviewed = self._reviewed_rows(key)
+        if reviewed is not None:
+            rows = reviewed
         # A marking point set as two-dimensional mathematics does not survive
         # being read line by line: "cos C = (28^2 + 4^2 - 30^2) / (2(28)(4))"
         # comes back as "cosC = 282 + 42-302 or equivalent 2(28)(4)", which is
@@ -311,14 +424,29 @@ class Author:
         # build drops those on provenance -- 85 of them -- so notice here and
         # use the solution column instead, which the same scheme prints in one
         # line at a time.
-        if rows and not self._traceable(rows):
+        if reviewed is None and rows and not self._traceable(rows):
             spelled = self._solution_rows(key)
             if spelled and self._traceable(spelled):
                 rows = spelled
-        if not rows:
+        if reviewed is None and not rows:
             rows = self._solution_rows(key)
         if not rows:
             raise Refused(f'{self.ref(key)}: the marking notes state nothing liftable')
+        # When the credit-band text contains two-dimensional notation that
+        # cannot be quoted safely, the official worked solution is the honest
+        # fallback.  It can run to 20+ printed lines, but the scale has only a
+        # handful of rungs. Show the final method's last one milestone per rung
+        # and leave every line visible in the bound model-solution image.
+        rung_count = len([v for v in ladder if v])
+        if all(lab == SOLUTION_LABEL for lab, _ in rows) \
+                and len(rows) > rung_count:
+            milestones = [row for row in rows
+                          if not MILESTONE_FURNITURE.match(row[1].strip())
+                          and not mathtext.unreadable(row[1])]
+            if len(milestones) >= rung_count:
+                candidate = milestones[-rung_count:]
+                if self._traceable(candidate):
+                    rows = candidate
         if len(rows) > MAX_OPTIONS_SHOWN:
             raise Refused(f'{self.ref(key)}: {len(rows)} rows, past the '
                           f'{MAX_OPTIONS_SHOWN} a row may show')

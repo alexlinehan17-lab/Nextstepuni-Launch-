@@ -134,6 +134,18 @@ CROSSREF = re.compile(
 # where "(b)" belongs inside Question 15, which filed Q15(b) under a fake Q16
 # and merged the real Q16 into it.
 MISPRINTS = {
+    # The papers themselves repeat a roman.  The marking schemes and the
+    # surrounding uninterrupted runs establish the intended address of the
+    # second distinct ask, so normalise the typo while retaining the paper's
+    # wording verbatim.
+    ('biology', 2018, 'hl'): [
+        ('(iv) The graph below shows variations in the dry mass of peas',
+         lambda t: '(v)' + t[4:]),
+    ],
+    ('biology', 2020, 'ol'): [
+        ('(iii) What is meant by the term heterotrophic?',
+         lambda t: '(ii)' + t[5:]),
+    ],
     ('biology', 2023, 'hl'): [
         ('16. (i) Draw a large diagram', lambda t: '(b) ' + t[4:]),
     ],
@@ -188,8 +200,18 @@ def _next_marker(tok):
 LINE_OPENING_MARKER = re.compile(
     r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:[ \t]*$|[ \t]+(?=[a-z]))')
 
+# A question heading printed at the start of its own PDF text line. pymupdf can
+# still place that line in the SAME block as the tail of the preceding
+# question. Once the block is flattened, the line break disappears and a head
+# such as ``6. The diagram shows ...`` cannot be distinguished from a numbered
+# sentence in prose. Preserve that page-geometry fact with an internal
+# sentinel; Paper.__init__ removes it before any text is exposed.
+OWN_LINE_QHEAD = re.compile(
+    r'^(?:Question\s+\d{1,2}\b|\d{1,2}\.\s*(?=$|[A-Z(\d"\u201c\u2018]))')
+OWN_LINE_SENTINEL = '\u2063'
 
-def _split_own_line_markers(raw):
+
+def _split_own_line_markers(raw, recover_heads=False):
     """Flatten a block, but let a marker printed ALONE on its line start one.
 
     A block is flattened to a single line, and INLINE_MARKER -- which finds the
@@ -215,6 +237,14 @@ def _split_own_line_markers(raw):
     lines = [l.strip() for l in raw.splitlines() if l.strip()]
     out, cur, last = [], [], None
     for i, line in enumerate(lines):
+        # A numbered answer choice can share this surface shape, so splitting
+        # alone is not permission to treat it as a question. The sentinel asks
+        # Paper.__init__ to validate it against neighbouring part markers.
+        if recover_heads and cur and OWN_LINE_QHEAD.match(line):
+            out.append(' '.join(' '.join(x.split()) for x in cur))
+            cur = [OWN_LINE_SENTINEL + line]
+            last = None
+            continue
         m = LINE_OPENING_MARKER.match(line)
         tok = m.group(1) if m else None
         alone = m and line == m.group(0).strip()
@@ -242,14 +272,14 @@ def _split_own_line_markers(raw):
     return out
 
 
-def _blocks(path):
+def _blocks(path, recover_heads=False):
     """Every non-empty text block, in page then top-to-bottom, left-to-right order."""
     with pymupdf.open(path) as doc:
         pages = [sorted(doc[n].get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
                  for n in range(doc.page_count)]
     for page in pages:
         for b in page:
-            for text in _split_own_line_markers(b[4]):
+            for text in _split_own_line_markers(b[4], recover_heads):
                 if text and not PAGE_FURNITURE.match(text):
                     yield text
 
@@ -367,11 +397,21 @@ class Paper:
         # filed them under a question they have nothing to do with.
         lone = [i for i, t in enumerate(blocks)
                 if re.fullmatch(r'[-\u2212]?\d{1,2}\.?', t.strip())]
-        axis = {i for i in lone if i - 1 in lone or i + 1 in lone}
+        # An axis may alternate integers and decimals (4.5, 4, 3.5, 3 ...).
+        # Looking only at neighbouring integers left the ``4`` isolated and
+        # eligible to become the next loose question head, splitting a Physics
+        # experiment in half.  Geometry has already given us one numeric block
+        # per tick, so any member of a neighbouring numeric run is axis art.
+        numeric = {i for i, t in enumerate(blocks)
+                   if re.fullmatch(r'[-\u2212]?\d{1,3}(?:\.\d+)?', t.strip())}
+        axis = {i for i in lone if i - 1 in numeric or i + 1 in numeric}
 
         for index, text in enumerate(blocks):
             if index in contents:
                 continue
+            own_line_head = text.startswith(OWN_LINE_SENTINEL)
+            if own_line_head:
+                text = text[len(OWN_LINE_SENTINEL):]
             # A standalone OR announces that the next head, though it repeats
             # the current question number, is a printed ALTERNATIVE the
             # student may choose instead — Construction Studies HL sets Q10
@@ -393,6 +433,14 @@ class Paper:
                 if q < joined_q <= q + 3 and not q < int(sp.group(1)) <= q + 3:
                     text = f'Question {joined_q}' + text[sp.end():]
             m = QHEAD.match(text)
+            # Splitting a heading from a marker below it can leave the first
+            # question as a bare ``1.`` segment. Unlike an arbitrary loose
+            # number later in a paper, this is an own-line token, is the first
+            # question due, and has a first-part marker immediately after it.
+            if not m and own_line_head and q is None \
+                    and re.fullmatch(r'1\.', text) \
+                    and _opens_a_question(blocks, index, letter):
+                m = QHEAD.match(text + ' X')
             if not m and q is not None:
                 # Not every head is printed as "N." followed by a word. 2025 OL
                 # Physics sets "12." in a block of its own with part (a) in the
@@ -401,7 +449,23 @@ class Paper:
                 # answer lines in an Agricultural Science booklet, so these forms
                 # are only read as a head when the number is the very next
                 # question due — no gap, no tolerance.
-                loose = re.match(r'(\d{1,2})\.?(\s+|$)', text)
+                # A loose head is the whole block: ``12.`` or ``13``.  Letting
+                # the number merely open a block admitted ordinary page data
+                # such as ``2 N`` (a force label) as Question 2.  The next
+                # roman marker then looked like that phantom question's first
+                # part and cross-contaminated every real question after it.
+                # A numbered head carrying prose already has the full-stop
+                # form handled by QHEAD above, so accepting trailing text here
+                # buys no legitimate layout.
+                loose = re.fullmatch(r'(\d{1,2})\.?', text.strip())
+                # One verified Physics layout omits the stop but keeps the
+                # question wording on the same line: ``13 Read the following
+                # passage ...``.  Admit that narrow form only when a real word
+                # follows; this keeps force labels such as ``2 N`` out.
+                bare_with_prose = re.match(
+                    r'^(\d{1,2})\s+(?=[A-Z][a-z]{2,}\b)', text.strip())
+                if loose is None:
+                    loose = bare_with_prose
                 # Only papers that head questions 'N.' earn loose bare-number
                 # heads at all: Agricultural Science writes the literal
                 # 'Question N' everywhere, and a stray '19' in a diagram was
@@ -421,13 +485,42 @@ class Paper:
                 if loose and dot_heads and (index not in axis or twin_page) \
                         and int(loose.group(1)) == q + 1 \
                         and _opens_a_question(blocks, index, letter):
-                    text = f'{loose.group(1)}. {text[loose.end():]}'.strip()
+                    tail = text.strip()[loose.end():].strip()
+                    text = f'{loose.group(1)}. {tail or "X"}'
                     m = QHEAD.match(text) or QHEAD.match(text + ' X')
             if not m:
                 unrubriced = RUBRIC_HEAD.sub('', text, count=1)
                 if unrubriced != text:
                     text = unrubriced
                     m = QHEAD.match(text)
+            if m:
+                found = int(m.group(1) or m.group(2))
+                # A numbered list item can look exactly like an own-line
+                # question heading. Accept a recovered heading only when its
+                # remainder starts the first printed part, or nearby blocks do.
+                # This recovers Biology 2018 OL Questions 2, 6 and 7 without
+                # turning ``2. Strategic alliance`` inside Q1 into Q2.
+                rest_after_head = text[m.end():].strip()
+                starts_first_part = _leading(rest_after_head)[:2] in (
+                    ('a', None), (None, 'i'), ('a', 'i'))
+                # Biology's image-matching short questions can put the next
+                # question head on its own visual line and then spend several
+                # blocks on the image bank before the first ``(a)`` answer
+                # slot appears.  The nearby-marker test cannot see through
+                # that artwork.  A long, imperative-bearing heading is itself
+                # substantive evidence of the next question; this admits the
+                # 2020 OL Q5 wording without relaxing recovered bare numbers
+                # for short option rows elsewhere in the paper.
+                substantive_own_head = bool(
+                    own_line_head and len(rest_after_head) >= 70
+                    and re.search(
+                        r'\b(?:answer|calculate|choose|complete|describe|draw|'
+                        r'explain|give|identify|insert|name|select|state|study|'
+                        r'use|write)\b', rest_after_head, re.I))
+                if own_line_head and q is not None \
+                        and not starts_first_part and not substantive_own_head \
+                        and not _opens_a_question(blocks, index, letter):
+                    m = None
             if m:
                 found = int(m.group(1) or m.group(2))
                 # Questions run forward, and a head that jumps too far ahead
@@ -478,6 +571,22 @@ class Paper:
                 continue
 
             found_letter, found_roman, rest = _leading(text)
+            # A gaseous state symbol can be the first token in a continuation
+            # block when a displayed chemical equation wraps at the page's
+            # column edge: ``... + 3C`` / ``(g) The graph ...``.  It is not
+            # Question 9(g).  Accepting it as a part made every real (a)-(e)
+            # look like a backwards letter run in the 2019, 2020 and 2023 HL
+            # Chemistry papers.  A real part (g) does not open by completing
+            # an equation or immediately supplying ΔH, so the two observed
+            # continuation shapes distinguish this without a subject/year
+            # exception.
+            if found_letter == 'g' and found_roman is None \
+                    and letter is None \
+                    and (rest.startswith('ΔH')
+                         or re.match(r'^The\s+(?:graph|table|reaction)\b', rest)):
+                self.stems.setdefault((q, None), []).append(f'(g) {rest}')
+                open_key = None
+                continue
             if found_roman == 'i' and not found_letter and letter == 'h' \
                     and _i_is_letter(blocks, index):
                 # Not gated on (h) being roman-free: Physics 2025 HL Q6 sets
@@ -488,6 +597,21 @@ class Paper:
                 # on to (j) — Chemistry's Q4 runs (a) to (l) — and the first
                 # roman when it does not. The blocks ahead decide.
                 found_letter, found_roman = 'i', None
+            if found_letter and letter is not None and found_letter < letter:
+                # Parts do not run backwards inside a question. A token that
+                # appears to do so is page content referring to an earlier
+                # part, or a table cell headed with that part. Agricultural
+                # Science 2021 OL Q17(b)(i) prints the results row
+                # ``(a) 80 65 35`` beneath its graph; accepting that row as a
+                # fresh part (a) filed the real (b)(ii) and (b)(iii) under
+                # Q17(a), making two valid cards look like orphans. Preserve
+                # the row as context for the currently open part instead.
+                if open_key:
+                    self.parts[open_key].append(f'({found_letter}) {rest}')
+                else:
+                    self.stems.setdefault((q, letter), []).append(
+                        f'({found_letter}) {rest}')
+                continue
             if found_letter and letter is not None and found_letter > letter \
                     and ord(found_letter) - ord(letter) > 1 \
                     and found_letter not in ('j', 'k', 'l'):
@@ -575,7 +699,11 @@ class Paper:
         fixes = MISPRINTS.get((self.subject, self.year, self.level), [])
         carry = ''
         for path in self.files:
-            for block in _blocks(path):
+            # Biology's older answer booklets are the corpus where pymupdf
+            # welds a following question head into the preceding block. Other
+            # subjects contain many own-line numbered construction steps and
+            # answer choices; leave their already-verified block stream intact.
+            for block in _blocks(path, recover_heads=self.subject == 'biology'):
               # A choice question prints its alternative welded on after a
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.

@@ -1,0 +1,17 @@
+[
+ {
+  "ref": "2020 HL Q14(b)(iii)",
+  "reason": "official answer exists only as a completed tape diagram",
+  "evidence": "The paper requires the candidate to complete four tape rows and current-state boxes while showing the read/write-head position after each transition. The official scheme answers solely by filling that diagram and states only 'Each correct row 1 mark' in text. Mark Bank has no solution-overlay or drawable response surface, so converting the head positions and tape states into authored prose would invent answer wording that the SEC scheme does not state."
+ },
+ {
+  "ref": "2022 HL Q11(a)",
+  "reason": "drawing-band task has no honest text answer",
+  "evidence": "The paper asks the candidate to draw and label two additional generations on the honey-bee ancestry tree. The official scheme grades complete branches and 'any correct value' but does not state the missing node values as a text answer. Mark Bank has no drawable response or solution-overlay surface, so a text card would substitute examiner rubric for the requested drawing."
+ },
+ {
+  "ref": "2024 HL Q4",
+  "reason": "official scheme supplies grading bands but no accepted solution sequence",
+  "evidence": "The paper asks for a complete ordered move sequence that swaps the black and white discs. The official scheme states only 'Full correct solution' and 'Four or more correct steps in the correct order'; it publishes no model sequence. Turning that partial-credit rubric into an answer row would not tell a student the required solution, while authoring a sequence would lack SEC provenance."
+ }
+]

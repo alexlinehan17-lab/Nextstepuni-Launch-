@@ -1,0 +1,96 @@
+[
+ {
+  "file": "physics-2016-OL-paper-p07-art-q10-crt.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete cathode-ray-tube diagram printed with Question 10. A points to the cathode, B to the cylindrical anode, and C to the screen; the high-voltage supply, electron beam and vacuum are also labelled.",
+  "solution": false,
+  "lettersVisible": ["A", "B", "C"],
+  "labelMeanings": [
+   {"letter": "A", "meaning": "cathode"},
+   {"letter": "B", "meaning": "anode"},
+   {"letter": "C", "meaning": "screen"}
+  ],
+  "questionRef": "2016 OL Q10(ii)-(iii)"
+ },
+ {
+  "file": "physics-2017-OL-paper-p09-art-q11-plug.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete three-pin-plug photograph printed with Question 11. The three arrows and boxed labels A, B and C are all fully visible.",
+  "solution": false,
+  "lettersVisible": ["A", "B", "C"],
+  "labelMeanings": [
+   {"letter": "A", "meaning": "neutral pin"},
+   {"letter": "B", "meaning": "live pin"},
+   {"letter": "C", "meaning": "earth pin"}
+  ],
+  "questionRef": "2017 OL Q11(f)"
+ },
+ {
+  "file": "physics-2019-OL-paper-p07-art-q9-plug.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The task-relevant A/B wiring detail from the electrical-plug diagram printed with Question 9(c). A points to the earth wire and B points to the live wire; the fuse and both arrows are fully visible.",
+  "solution": false,
+  "lettersVisible": ["A", "B"],
+  "labelMeanings": [
+   {"letter": "A", "meaning": "earth wire"},
+   {"letter": "B", "meaning": "live wire"}
+  ],
+  "questionRef": "2019 OL Q9(c)(i)-(ii)"
+ },
+ {
+  "file": "physics-2023-OL-paper-p03-art-q3-calorimeter.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete calorimetry apparatus diagram printed with Question 3. A points to the thermometer and B to the surrounding lagging or insulation; the calorimeter, crushed ice, water and cloth are fully labelled.",
+  "solution": false,
+  "lettersVisible": ["A", "B"],
+  "labelMeanings": [
+   {"letter": "A", "meaning": "thermometer"},
+   {"letter": "B", "meaning": "lagging or insulation"}
+  ],
+  "questionRef": "2023 OL Q3(i)-(ii)"
+ },
+ {
+  "file": "physics-2024-OL-paper-p09-art-q10-stationary-wave.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete stationary-wave diagram printed with Question 10(iii), showing the fundamental mode in a pipe closed at one end. X marks the antinode at the open end and Y the node at the closed end.",
+  "solution": false,
+  "lettersVisible": ["X", "Y"],
+  "labelMeanings": [
+   {"letter": "X", "meaning": "antinode"},
+   {"letter": "Y", "meaning": "node"}
+  ],
+  "questionRef": "2024 OL Q10(iii)"
+ },
+ {
+  "file": "physics-2025-OL-paper-p07-art-q7-skydiver-graph.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete velocity-time graph printed with Question 7. It rises from A to B, remains constant from B to C, drops sharply when the parachute opens at C, then settles to the small landing velocity after D.",
+  "solution": false,
+  "lettersVisible": ["A", "B", "C", "D"],
+  "labelMeanings": [
+   {"letter": "A", "meaning": "start of the plotted fall"},
+   {"letter": "B", "meaning": "start of the first constant-velocity interval"},
+   {"letter": "C", "meaning": "the skydiver opens the parachute"},
+   {"letter": "D", "meaning": "start of the low landing-velocity interval"}
+  ],
+  "questionRef": "2025 OL Q7(ix)-(xii)"
+ },
+ {
+  "file": "physics-2025-OL-paper-p15-art-q14-electroscope.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The complete gold-leaf-electroscope diagram printed with Question 14(c). The cap, insulating plug, frame and earth connection are visible, and X points to the gold leaf.",
+  "solution": false,
+  "lettersVisible": ["X"],
+  "labelMeanings": [
+   {"letter": "X", "meaning": "gold leaf"}
+  ],
+  "questionRef": "2025 OL Q14(c)(i)"
+ }
+]

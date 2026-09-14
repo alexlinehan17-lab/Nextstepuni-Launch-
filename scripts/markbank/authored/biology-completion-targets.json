@@ -1,0 +1,7263 @@
+{
+ "paperLeafCount": 2982,
+ "targetCount": 1447,
+ "censusCounts": {
+  "2016-hl": 122,
+  "2016-ol": 143,
+  "2017-hl": 129,
+  "2017-ol": 135,
+  "2018-hl": 118,
+  "2018-ol": 149,
+  "2019-hl": 125,
+  "2019-ol": 137,
+  "2020-hl": 131,
+  "2020-ol": 157,
+  "2021-hl": 176,
+  "2021-ol": 184,
+  "2022-hl": 174,
+  "2022-ol": 171,
+  "2023-hl": 158,
+  "2023-ol": 175,
+  "2024-hl": 142,
+  "2024-ol": 157,
+  "2025-hl": 142,
+  "2025-ol": 157
+ },
+ "targets": [
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q1(b)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q1(d)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q1(e)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q1(f)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(c)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(c)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(c)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(c)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q10(c)(vii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(b)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(b)(vii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(b)(viii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(c)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q11(c)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q12(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q12(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q12(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q12(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q12(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q12(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q13(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q13(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q13(a)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q13(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q13(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q13(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q13(c)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(a)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(a)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(a)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(a)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(b)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q14(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(a)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q2(a)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q2(b)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q2(c)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q2(d)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q2(e)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q2(f)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q2(g)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q3(a)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q3(b)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q3(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q3(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q3(d)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q3(e)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q4(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q4(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q4(a)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q4(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q4(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q4(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q5(b)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q5(c)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q5(e)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q6(a)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q6(b)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q6(c)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q6(d)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q6(e)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q7(a)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q7(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q7(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q7(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q7(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q9(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q9(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q9(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q9(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "hl",
+   "label": "Q9(b)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q1(b)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q1(d)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q1(e)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(a)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(c)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(c)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(c)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q10(c)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(a)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(b)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(b)(vii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(c)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(c)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q11(c)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(a)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(c)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(c)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(c)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q12(c)(vii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(b)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(b)(vii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(a)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(a)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(a)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(a)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(b)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(c)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(c)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(c)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q14(c)(vii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(a)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(b)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(c)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(c)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(c)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(c)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q15(c)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q2(a)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q2(b)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q2(c)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q2(d)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q2(e)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q3(a)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q3(b)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q3(c)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q3(d)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q3(e)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q3(f)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q3(g)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q4(b)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q4(c)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q4(d)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q4(e)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q4(e)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q5(b)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q5(c)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q5(e)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q6"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q7(a)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q7(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q7(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q7(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q7(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q7(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q7(b)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q8(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q8(b)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q8(b)(vii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q9(a)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q9(b)(iv)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q9(b)(v)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q9(b)(vi)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q9(b)(vii)"
+  },
+  {
+   "year": 2016,
+   "level": "ol",
+   "label": "Q9(b)(viii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q1(b)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q1(d)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q1(e)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q1(f)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(a)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(b)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q10(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(b)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(b)(vii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q11(c)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q12(a)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q12(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q12(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q13(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q13(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q13(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q13(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q13(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q13(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q13(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q13(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q13(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(a)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(a)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(a)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q14(c)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(a)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(a)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(a)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q15(c)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q2(a)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q2(b)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q2(c)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q2(d)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q2(e)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q2(f)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q2(g)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q3(a)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q3(b)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q3(c)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q3(d)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q3(e)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q3(f)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q4(b)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q4(c)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q4(d)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q4(e)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q4(f)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q4(g)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q5(b)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q5(c)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q5(e)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q5(f)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q5(g)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q6(a)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q6(b)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q6(c)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q6(d)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q6(e)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q7(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q7(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q7(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q7(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q7(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q7(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q7(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q8(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q9(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q9(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "hl",
+   "label": "Q9(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q1(b)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q1(d)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q1(e)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(a)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(b)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(c)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q10(c)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(a)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(b)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(b)(vii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q11(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q12(c)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(b)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(b)(vii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q13(c)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(a)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(a)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(a)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(a)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(a)(vii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(a)(viii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(b)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(b)(vii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q14(c)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(a)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(a)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(a)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(a)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(a)(vii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(c)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(c)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(c)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(c)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q15(c)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q2"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q3"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q4(b)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q4(c)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q4(d)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q4(e)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q5(b)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q5(c)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q5(e)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q5(f)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q5(g)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q6(a)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q6(b)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q6(c)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q6(d)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q7(a)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q7(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q7(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q7(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q7(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q7(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q7(b)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q8(b)(v)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q8(b)(vi)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q9(a)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q9(b)(iv)"
+  },
+  {
+   "year": 2017,
+   "level": "ol",
+   "label": "Q9(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q1(b)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q1(d)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q1(e)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q1(f)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q10(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q10(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q10(a)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q10(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q10(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q10(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q10(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q11(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q11(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q11(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(b)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q12(c)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q13(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q13(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q13(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q13(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q13(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q13(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q13(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(a)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(a)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(a)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(a)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(a)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(a)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q2(a)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q2(b)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q2(c)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q2(d)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q2(e)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q2(f)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q2(g)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q3(a)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q3(b)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q3(c)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q3(d)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q4(b)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q4(c)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q4(d)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q4(e)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q5(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q5(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q5(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q5(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q6(a)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q6(b)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q6(c)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q6(d)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q6(e)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q6(f)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q7(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q7(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q7(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q7(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q7(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q7(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q8(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q9(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q9(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q9(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "hl",
+   "label": "Q9(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q1(b)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q1(d)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q1(e)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(a)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(b)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(b)(vii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(b)(viii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(c)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(c)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q10(c)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(a)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(b)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(b)(vii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(b)(viii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(c)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q11(c)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q12(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q12(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q12(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q12(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q12(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q12(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(a)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(b)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(b)(vii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(b)(viii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(c)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(c)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q13(c)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(a)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(a)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(a)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(a)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(b)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q14(c)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(a)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(a)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(a)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(b)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(c)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(c)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(c)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(c)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(c)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q15(c)(vii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q2(a)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q2(b)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q2(c)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q2(d)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q2(e)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q3(a)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q3(b)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q3(c)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q3(d)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q3(e)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q4(b)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q4(c)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q4(d)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q4(e)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q5(b)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q5(c)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q5(e)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q5(f)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q5(g)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q6(a)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q6(b)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q6(c)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q6(d)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q6(e)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q7(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q7(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q7(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q7(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q7(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q7(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q8(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q8(b)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q9(a)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q9(a)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q9(b)(iv)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q9(b)(v)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q9(b)(vi)"
+  },
+  {
+   "year": 2018,
+   "level": "ol",
+   "label": "Q9(b)(vii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q1(b)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q1(d)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q1(e)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q1(f)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(b)(vi)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q10(c)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q11(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q11(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q11(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(b)(vi)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q12(c)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q13(a)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q13(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q13(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q13(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q13(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q13(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q13(c)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(a)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(a)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(a)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(a)(vi)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(c)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q14(c)(vi)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(a)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(a)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(b)(vi)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(b)(vii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(b)(viii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q2(a)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q2(b)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q2(c)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q2(d)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q2(e)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q2(f)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q3(a)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q3(b)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q3(c)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q3(d)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q3(e)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q4(b)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q4(c)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q4(d)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q4(e)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q5(b)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q5(c)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q5(e)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q5(f)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q6(a)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q6(b)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q6(c)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q7(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q7(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q7(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q7(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q7(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q7(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q8(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q8(b)(vi)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q8(b)(vii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q9(a)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q9(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q9(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "hl",
+   "label": "Q9(b)(vi)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q1(b)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q1(d)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q1(e)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(a)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(b)(vi)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(c)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q10(c)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(a)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(c)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q11(c)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q12(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q12(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q12(a)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q12(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q12(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q12(c)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(a)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(b)(vi)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(b)(vii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(b)(viii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(c)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q13(c)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(a)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(a)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(a)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q14(c)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(a)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(a)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(a)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(c)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(c)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(c)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q15(c)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q2(a)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q2(b)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q2(c)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q2(d)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q2(e)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q3(a)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q3(b)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q3(c)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q3(d)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q3(e)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q4(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q4(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q4(c)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q4(d)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q4(e)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q5(b)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q5(c)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q5(e)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q5(f)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q5(g)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q6(a)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q6(b)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q6(c)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q6(d)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q6(e)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q7(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q7(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q7(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q7(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q7(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q7(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q8(b)(v)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q8(b)(vi)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q8(b)(vii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q8(b)(viii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q9(a)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q9(a)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2019,
+   "level": "ol",
+   "label": "Q9(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q1(b)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q1(d)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q1(e)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q1(f)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q10(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q10(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q10(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q10(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q10(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q10(b)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q10(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q10(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q11(c)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q12(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q12(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q12(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q12(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q12(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q12(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q13(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q13(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q13(a)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q13(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q13(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q13(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q13(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q13(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q13(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(a)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(a)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(a)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(a)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(a)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(a)(viii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q14(c)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(a)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(a)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(a)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(a)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(b)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(b)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(c)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(c)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(c)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q15(c)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q2(a)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q2(b)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q2(c)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q2(d)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q2(e)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q3(a)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q3(b)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q3(c)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q3(d)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q3(e)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q3(f)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q3(g)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q4(b)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q4(c)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q4(d)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q4(e)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q4(f)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q4(g)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q5(b)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q5(c)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q5(e)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q5(f)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q5(g)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q6(a)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q6(b)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q6(c)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q6(d)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q6(e)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q6(f)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q7(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q7(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q7(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q7(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q8(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q9(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q9(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "hl",
+   "label": "Q9(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q1(b)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q1(d)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q1(e)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(a)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(b)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(b)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q10(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(b)(ix)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(b)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(b)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(b)(viii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(c)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(c)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q11(c)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(a)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q12(c)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(a)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(b)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(c)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(c)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q13(c)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(a)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(a)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(a)(ix)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(a)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(a)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(a)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(a)(viii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(a)(x)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(b)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(b)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(c)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(c)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(c)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q14(c)(viii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(a)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(a)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(a)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(c)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(c)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(c)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(c)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(c)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q15(c)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q2(a)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q2(b)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q2(c)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q2(d)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q2(e)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q2(f)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q2(g)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q3(a)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q3(b)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q3(c)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q3(d)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q3(e)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q3(f)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q3(g)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q4(b)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q4(c)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q4(d)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q4(e)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q5"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q6(a)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q6(b)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q6(c)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q6(d)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q6(e)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q6(f)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q7(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q7(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q7(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q7(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q7(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q7(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q7(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q7(b)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q7(b)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q8(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q8(b)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q8(b)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q9(a)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q9(a)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q9(b)(iv)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q9(b)(v)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q9(b)(vi)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q9(b)(vii)"
+  },
+  {
+   "year": 2020,
+   "level": "ol",
+   "label": "Q9(b)(viii)"
+  },
+  {
+   "year": 2021,
+   "level": "hl",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2021,
+   "level": "hl",
+   "label": "Q12(c)(iv)"
+  },
+  {
+   "year": 2021,
+   "level": "hl",
+   "label": "Q2(b)"
+  },
+  {
+   "year": 2021,
+   "level": "hl",
+   "label": "Q2(c)"
+  },
+  {
+   "year": 2021,
+   "level": "hl",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2021,
+   "level": "hl",
+   "label": "Q5(c)"
+  },
+  {
+   "year": 2021,
+   "level": "hl",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2021,
+   "level": "ol",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2021,
+   "level": "ol",
+   "label": "Q11(c)(iii)"
+  },
+  {
+   "year": 2021,
+   "level": "ol",
+   "label": "Q12(c)(iv)"
+  },
+  {
+   "year": 2021,
+   "level": "ol",
+   "label": "Q13(a)(ii)"
+  },
+  {
+   "year": 2021,
+   "level": "ol",
+   "label": "Q16(a)(vi)"
+  },
+  {
+   "year": 2021,
+   "level": "ol",
+   "label": "Q7(c)"
+  },
+  {
+   "year": 2021,
+   "level": "ol",
+   "label": "Q8(a)(i)"
+  },
+  {
+   "year": 2021,
+   "level": "ol",
+   "label": "Q8(a)(ii)"
+  },
+  {
+   "year": 2022,
+   "level": "hl",
+   "label": "Q11(c)(ii)"
+  },
+  {
+   "year": 2022,
+   "level": "hl",
+   "label": "Q12(c)(iv)"
+  },
+  {
+   "year": 2022,
+   "level": "hl",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2022,
+   "level": "hl",
+   "label": "Q14(b)(iii)"
+  },
+  {
+   "year": 2022,
+   "level": "hl",
+   "label": "Q15(b)(ii)"
+  },
+  {
+   "year": 2022,
+   "level": "hl",
+   "label": "Q17(c)(vii)"
+  },
+  {
+   "year": 2022,
+   "level": "hl",
+   "label": "Q7(b)"
+  },
+  {
+   "year": 2022,
+   "level": "hl",
+   "label": "Q7(e)"
+  },
+  {
+   "year": 2022,
+   "level": "hl",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2022,
+   "level": "hl",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2022,
+   "level": "ol",
+   "label": "Q16(c)(iii)"
+  },
+  {
+   "year": 2022,
+   "level": "ol",
+   "label": "Q17(b)(iv)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q11(b)(iii)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q12(b)(i)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q13(c)(iii)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q16(b)(iv)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q17(a)(iii)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q2(a)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q3(e)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q4(d)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q5(b)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q5(e)"
+  },
+  {
+   "year": 2023,
+   "level": "hl",
+   "label": "Q5(f)(ii)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q1(a)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q11(a)(ii)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q11(c)(iv)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q16(b)(vii)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q5(b)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q7(a)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q7(b)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q7(c)"
+  },
+  {
+   "year": 2023,
+   "level": "ol",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2024,
+   "level": "hl",
+   "label": "Q12(c)(i)"
+  },
+  {
+   "year": 2024,
+   "level": "hl",
+   "label": "Q12(c)(iii)"
+  },
+  {
+   "year": 2024,
+   "level": "hl",
+   "label": "Q16(b)(iii)"
+  },
+  {
+   "year": 2024,
+   "level": "hl",
+   "label": "Q4(a)"
+  },
+  {
+   "year": 2024,
+   "level": "hl",
+   "label": "Q7(c)(i)"
+  },
+  {
+   "year": 2024,
+   "level": "hl",
+   "label": "Q7(c)(ii)"
+  },
+  {
+   "year": 2024,
+   "level": "hl",
+   "label": "Q7(c)(iii)"
+  },
+  {
+   "year": 2024,
+   "level": "hl",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2024,
+   "level": "hl",
+   "label": "Q9(b)(iii)"
+  },
+  {
+   "year": 2024,
+   "level": "ol",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2024,
+   "level": "ol",
+   "label": "Q10(b)(ii)"
+  },
+  {
+   "year": 2024,
+   "level": "ol",
+   "label": "Q11(b)(v)"
+  },
+  {
+   "year": 2024,
+   "level": "ol",
+   "label": "Q11(b)(vi)"
+  },
+  {
+   "year": 2024,
+   "level": "ol",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2024,
+   "level": "ol",
+   "label": "Q17(c)(ii)"
+  },
+  {
+   "year": 2024,
+   "level": "ol",
+   "label": "Q2(f)"
+  },
+  {
+   "year": 2024,
+   "level": "ol",
+   "label": "Q4(b)"
+  },
+  {
+   "year": 2024,
+   "level": "ol",
+   "label": "Q9(b)(vi)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q11(c)(iv)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q13(c)(iv)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q14(b)(iv)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q14(c)(iv)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q15(c)(iv)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q16(a)(v)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q16(b)(vi)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q16(d)(iii)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q17(b)(i)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q17(d)(v)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q4(d)(i)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2025,
+   "level": "hl",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q1(c)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q10(b)(i)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q11(b)(i)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q11(b)(ii)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q13(b)(vi)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q15(c)(iii)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q16(d)(iii)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q17(b)(v)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q17(b)(vi)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q17(c)(v)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q5(a)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q5(d)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q8(b)(i)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q8(b)(ii)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q8(b)(iii)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q8(b)(iv)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q9(b)(i)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q9(b)(ii)"
+  },
+  {
+   "year": 2025,
+   "level": "ol",
+   "label": "Q9(b)(vi)"
+  }
+ ]
+}

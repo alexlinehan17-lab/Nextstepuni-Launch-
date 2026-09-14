@@ -1,0 +1,97 @@
+[
+ {
+  "file": "business-2020-OL-paper-p06-art-q11-pay-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete four-column payroll table for Paul Costigan. It shows gross pay of €60,000, PAYE calculations of €7,060 and €9,880, tax credits of €3,300 and net PAYE of €13,640. The four blank values are labelled A beside PRSI, B beside USC, C beside Total Deductions and D beside Net Annual Take Home Pay.",
+  "solution": false,
+  "lettersVisible": ["A", "B", "C", "D"],
+  "labelMeanings": [
+   {"letter": "A", "meaning": "PRSI (4% of gross pay)"},
+   {"letter": "B", "meaning": "USC (3% of gross pay)"},
+   {"letter": "C", "meaning": "Total deductions"},
+   {"letter": "D", "meaning": "Net annual take-home pay"}
+  ],
+  "questionRef": "2020 OL Section 1 Q11"
+ },
+ {
+  "file": "business-2016-HL-paper-p04-art-q7-trade-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete three-column Balance of Trade table. Row one gives visible exports of €70bn and visible imports of €105bn with the balance blank. Row two gives exports of €90bn and a €25bn surplus with imports blank. Row three gives imports of €110bn and a €30bn deficit with exports blank.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Section 1 Q7(a)"
+ },
+ {
+  "file": "business-2016-OL-paper-p05-art-q14-product-life-cycle.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete Product Life Cycle graph with Sales on the vertical axis and Time on the horizontal axis. A curve rises through Stage 1, Stage 2 and Stage 3, peaks during the pre-filled Saturation stage, then falls through Stage 5. The other four stage-name boxes are blank.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Section 1 Q14"
+ },
+ {
+  "file": "business-2017-HL-paper-p09-art-q6-ratio-tables.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two complete Equinox Design Ltd tables. The 2016 information table gives sales €200,000, net profit €30,400, current assets €20,000, current liabilities €16,000, issued ordinary share capital €300,000, long-term loan €400,000 and retained earnings €60,000. The 2015 results table gives net profit margin 20.5%, current ratio 2:1, return on investment 8% and debt/equity ratio 0.7:1.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Section 3 Q6(c)"
+ },
+ {
+  "file": "business-2018-OL-paper-p03-art-q5-swot-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete four-row SWOT table. Row 1 is pre-filled as Strengths, while rows 2, 3 and 4 are blank for the candidate to supply the remaining SWOT elements.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Section 1 Q5"
+ },
+ {
+  "file": "business-2020-HL-paper-p07-art-q9-products-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete three-column Product Life Cycle question table. It shows an Apple iPod Touch released in September 2007, a new Apple Watch Series 5 released in September 2019 and an Apple iPhone 7 released in September 2016. Each column has a blank line for its Product Life Cycle stage.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 HL Section 1 Q9(i)"
+ },
+ {
+  "file": "business-2020-OL-paper-p07-art-q14-development-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete seven-row new product or service development table and its four-item word bank. Product/service Screening is pre-filled at stage 2, Feasibility Study at stage 4 and Test Marketing at stage 6; stages 1, 3, 5 and 7 are blank. The available entries are Prototype Development, Idea Generation, Launch and Concept Development.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Section 1 Q14"
+ },
+ {
+  "file": "business-2020-OL-paper-p03-art-q2-production-options.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three complete monochrome product photographs labelled (i), (ii) and (iii): a tray of decorated cupcakes, an advertisement for a custom-made suit, and rows of identical bottled drinks moving through a large factory production line.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Section 1 Q2"
+ },
+ {
+  "file": "business-2020-OL-paper-p04-art-q4-eu-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A complete EU institutions matching table. The word bank lists European Parliament, European Commission and European Court of Auditors. The three columns ask which institution drafts all European laws, ensures the EU budget is spent correctly, and represents all EU citizens and debates all EU laws.",
+  "solution": false,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Section 1 Q4"
+ }
+]

@@ -23,18 +23,22 @@ RULES = [
                     r'select(?:ing)? (?:a |your |the )?site|choice of site|'
                     r'preferred site|site a or b|building.{0,12}countryside)\b'),
     ('cons-1-2', 8, r'\b(planning authorit|conservation|refurbish|reuse of|'
-                    r'protected structure|built environment|heritage)\b'),
+                    r'protected structure|built environment|heritage|'
+                    r'dwelling house in a town|town rather than)\b'),
     ('cons-1-9', 8, r'\b(building regulation|renewable energy ratio|\brer\b|'
                     r'fire test|part [a-l] of the building)\b'),
     ('cons-1-4', 8, r'\b(construction industry|skilled labour|qualified (?:trades|'
                     r'skilled)|occupation)\b'),
     ('cons-1-5', 7, r'\b(construction term|scale of 1:|standard symbol|notation|'
                     r'freehand sketch of a )\b'),
+    ('cons-1-6', 8, r'\b(waste management|construction waste|sort(?:ing)? and store|'
+                    r'sorted on[- ]site|waste materials?|recycl(?:e|ed|ing)|'
+                    r'site accommodation)\b'),
     ('cons-6-1', 9, r'\b(u-?value|thermal transmittance|thermal resistance|'
                     r'resistivity|heat loss calculation)\b'),
     ('cons-6-6', 9, r'\b(condensation|vapour (?:control|barrier)|interstitial|'
                     r'moisture control layer|breather membrane)\b'),
-    ('cons-6-2', 8, r'\b(insulat|thermal bridge|cold bridge|airtight|air leakage|'
+    ('cons-6-2', 8, r'\b(insulat\w*|thermal bridge|cold bridge|airtight|air leakage|'
                     r'air.?tightness)\b'),
     ('cons-6-4', 8, r'\b(solar (?:gain|overheating|shading)|orientation|sun path|'
                     r'thermal mass|overheat)\b'),

@@ -50,6 +50,20 @@ LIGATURE = {
     '\uf050': '\u2713',   # Wingdings 2 0x50 -- a tick
     '\uf067': '\u2192',   # Wingdings 3 0x67 -- "6O2 -> 6CO2 + 6H2O"
     '\uf081': '\u2460',   # Wingdings 0x81 -- a circled 1
+    # SymbolMT operators read in context across the newly added Physics
+    # schemes.  Unlike an arbitrary PUA guess, each is repeated in equations
+    # whose surrounding operands settle the character: "4 x 3", "F is
+    # proportional to 1/d^2", resistance in ohms, and 2 pi radians.
+    '\uf0b4': '\u00d7',
+    '\uf0b5': '\u221d',
+    '\uf057': '\u03a9',
+    '\uf070': '\u03c0',
+    # The same proportional-to and minus/slash glyphs emitted through broken
+    # non-PUA maps in other Physics subsets.  They occur respectively in the
+    # force law, beta-decay equation, and printed fractions.
+    '\u05df': '\u221d',
+    '\u0202': '\u2212',
+    '\u0d57': '/',
     '\u0424': '\u03a6',   # renders as Phi: "[Phi] = 4.33 x 10^-19 (J)"
     '\u0278': '\u03c6',   # the same letter lowercase, in the same schemes
     '': ' ', '': '•', '': '•', '': '✓',

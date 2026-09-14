@@ -43,6 +43,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from align import align_ordered                             # noqa: E402
 import coverage as C                                        # noqa: E402
 import partcheck as PC                                      # noqa: E402
+from paper_census import sittings                           # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.abspath(__file__)))))
@@ -238,45 +239,49 @@ def report(subject, show=False):
     by_ref = C.covered(subject)
     by_text = PC.asked(subject)
     tally = {k: 0 for k in ORDER}
-    for year in range(2021, 2026):
-        for level in ('hl', 'ol'):
-            try:
-                P, S, pairs, positional = align_ordered(subject, year, level)
-            except Exception:
+    # The corpus is the papers on disk, not a hard-coded modern-year window.
+    # Construction already spans 2016-2025, and the broader completion sweep
+    # now holds those years for the sciences too. Silently ignoring them made
+    # this diagnostic report zero work while reconcile.py correctly reported
+    # more than a thousand open Biology asks.
+    for year, level, _components in sittings(subject):
+        try:
+            P, S, pairs, positional = align_ordered(subject, year, level)
+        except Exception:
+            continue
+        texts = by_text.get((year, level), [])
+        paired = {**positional, **pairs}
+        asks = {sk: PC.question_of(P, S, pk, sk) for sk, (pk, _) in paired.items()}
+        shared = PC.unreadable(P, [(pk, asks[sk]) for sk, (pk, _) in paired.items()])
+        for skey, (pkey, _) in paired.items():
+            pts = S.points(*skey)
+            if not pts:
                 continue
-            texts = by_text.get((year, level), [])
-            paired = {**positional, **pairs}
-            asks = {sk: PC.question_of(P, S, pk, sk) for sk, (pk, _) in paired.items()}
-            shared = PC.unreadable(P, [(pk, asks[sk]) for sk, (pk, _) in paired.items()])
-            for skey, (pkey, _) in paired.items():
-                pts = S.points(*skey)
-                if not pts:
-                    continue
-                if pkey in shared and not PC.CUE_IS_A_QUESTION.match((asks[skey] or '').strip()):
-                    continue
-                q, letter, roman = pkey
-                hit_ref = False
-                for letters, romans in by_ref.get((year, level, q), ()):
-                    if not letters and not romans:
-                        hit_ref = letter is None and roman is None
-                    else:
-                        hit_ref = ((letter is None or not letters or letter in letters)
-                                   and (roman is None or not romans or roman in romans))
-                    if hit_ref:
-                        break
-                if hit_ref or PC.covered_by_text(asks[skey], texts):
-                    continue
-                try:
-                    marks = S.marks(*skey)
-                except Exception:
-                    marks = None
-                cue = (S.cues or {}).get(skey) if hasattr(S, 'cues') else None
-                b = classify(asks[skey], pts, marks, year, level, cue)
-                tally[b] += 1
-                if show:
-                    print(f'-- [{b}] {year} {level.upper()} {P.ref(pkey)}')
-                    print(f'   Q: {(asks[skey] or "(no paper text)")[:150]}')
-                    print(f'   * {pts[0][:150]}')
+            if pkey in shared and not PC.CUE_IS_A_QUESTION.match((asks[skey] or '').strip()):
+                continue
+            q, letter, roman = pkey
+            hit_ref = False
+            for letters, romans in by_ref.get((year, level, q), ()):
+                if not letters and not romans:
+                    hit_ref = letter is None and roman is None
+                else:
+                    hit_ref = ((letter is None or not letters or letter in letters)
+                               and (roman is None or not romans or roman in romans))
+                if hit_ref:
+                    break
+            if hit_ref or PC.covered_by_text(asks[skey], texts):
+                continue
+            try:
+                marks = S.marks(*skey)
+            except Exception:
+                marks = None
+            cue = (S.cues or {}).get(skey) if hasattr(S, 'cues') else None
+            b = classify(asks[skey], pts, marks, year, level, cue)
+            tally[b] += 1
+            if show:
+                print(f'-- [{b}] {year} {level.upper()} {P.ref(pkey)}')
+                print(f'   Q: {(asks[skey] or "(no paper text)")[:150]}')
+                print(f'   * {pts[0][:150]}')
     total = sum(tally.values())
     cells = '  '.join(f'{k} {tally[k]:>3}' for k in ORDER)
     print(f'{subject:<22} {total:>4} open   {cells}')

@@ -1,43 +1,43 @@
 {
  "biology": {
-  "higher": 673,
-  "ordinary": 686
+  "higher": 848,
+  "ordinary": 833
  },
  "chemistry": {
   "higher": 496,
   "ordinary": 380
  },
  "physics": {
-  "higher": 569,
-  "ordinary": 563
+  "higher": 764,
+  "ordinary": 1018
  },
  "agricultural-science": {
-  "higher": 438,
-  "ordinary": 431
+  "higher": 460,
+  "ordinary": 463
  },
  "business": {
-  "higher": 272,
-  "ordinary": 334
+  "higher": 455,
+  "ordinary": 625
  },
  "home-economics": {
-  "higher": 283,
-  "ordinary": 266
+  "higher": 538,
+  "ordinary": 536
  },
  "economics": {
   "higher": 383,
   "ordinary": 314
  },
  "construction-studies": {
-  "higher": 255,
-  "ordinary": 250
+  "higher": 307,
+  "ordinary": 280
  },
  "maths": {
-  "higher": 398,
-  "ordinary": 435
+  "higher": 419,
+  "ordinary": 446
  },
  "computer-science": {
-  "higher": 209,
-  "ordinary": 127
+  "higher": 307,
+  "ordinary": 194
  },
  "english": {
   "higher": 210,

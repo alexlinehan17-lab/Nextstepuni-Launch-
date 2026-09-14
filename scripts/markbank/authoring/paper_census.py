@@ -86,6 +86,15 @@ SUBJECTS = {
     'computer-science': {'mode': 'sections'},
 }
 
+# The 2022 Physics examination used the published pandemic adjustment: Section
+# B carried 224 marks rather than the 280 used by the restored papers from
+# 2023 onward.  The independently read value is therefore evidence of the
+# paper as printed, not a missing-question checksum failure.
+MARKS_SUM_EXCEPTIONS = {
+    ('physics', 2022, 'hl', None): 224,
+    ('physics', 2022, 'ol', None): 224,
+}
+
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
 # "Section 1", "Section A" as a header — never "Sections 2 and 3", which is a
 # cover line for a whole booklet, because \b cannot fall inside "Sections".
@@ -219,6 +228,46 @@ def marks_by_question(P_files, subject):
 
 
 ROM_INLINE = re.compile(r'\((i{1,3}|iv|v)\)\s*')
+ROM_ANY_INLINE = re.compile(
+    r'\((xii|viii|vii|iii|viii|vii|vi|iv|ix|xi|x|v|iii|ii|i)\)\s*')
+
+
+def complete_physics_inline_romans(parts, texts, stem):
+    """Recover roman-major Physics asks printed inside a prose block.
+
+    Several Physics layouts keep a run such as ``Calculate (iv) ...,
+    (v) ...`` in the question stimulus rather than starting each roman at a
+    PDF block boundary.  The generic reader therefore sees (iii), then (vi),
+    even though the paper prints both intervening asks.  Only explicit roman
+    markers in the paper stem are admitted here, and only inside the span from
+    (i) to the last independently keyed roman for that question.
+    """
+    parts = set(parts)
+    questions = sorted({k[-3] for k in parts if isinstance(k[-3], int)})
+    for q in questions:
+        existing = {k[-1] for k in parts
+                    if k[-3] == q and k[-2] is None and k[-1] in ROMANS}
+        if not existing:
+            continue
+        last = max(ROMANS.index(r) for r in existing)
+        missing = set(ROMANS[:last + 1]) - existing
+        if not missing:
+            continue
+        parent = stem(q, None) or ''
+        spans = [m for m in ROM_ANY_INLINE.finditer(parent)
+                 if m.group(1) in missing]
+        all_spans = list(ROM_ANY_INLINE.finditer(parent))
+        for match in spans:
+            roman = match.group(1)
+            following = next((m for m in all_spans if m.start() > match.start()), None)
+            end = following.start() if following else len(parent)
+            body = parent[match.end():end].strip()
+            if sum(ch.isalnum() for ch in body) < 3:
+                continue
+            key = (q, None, roman)
+            parts.add(key)
+            texts[key] = body
+    return parts
 
 
 def complete_leading_romans(parts, texts, stem=lambda q, letter: ''):
@@ -259,11 +308,97 @@ def complete_leading_romans(parts, texts, stem=lambda q, letter: ''):
     return parts
 
 
+def complete_inline_missing_romans(parts, texts):
+    """Recover an explicitly printed roman that sits inside its sibling text.
+
+    The conservative paper reader normally requires a part marker to open a
+    block or a visually separate line.  Two papers instead print the missing
+    member of an otherwise continuous roman run inline: Biology 2017 OL
+    Q7(b)(iii) follows the ruled answer line for (ii), and Chemistry 2022 HL
+    Q10(c)(iii) is the third item of a comma-separated calculation list.  The
+    marker is still present verbatim in the paper text, so a continuity gap
+    can recover it without inventing wording.
+
+    Only a roman strictly *inside* an existing run is considered, and the
+    exact marker must occur in a sibling's extracted text.  Cross-references
+    such as ``(iii) above`` are rejected.  The sibling is cut at the marker so
+    the same ask is not counted twice.
+    """
+    parts = set(parts)
+    parents = {(k[-3], k[-2]) for k in parts if k[-1] in ROMANS}
+    for q, letter in parents:
+        present = {k[-1] for k in parts
+                   if k[-3] == q and k[-2] == letter and k[-1] in ROMANS}
+        if len(present) < 2:
+            continue
+        last = max(ROMANS.index(r) for r in present)
+        for roman in ROMANS[:last + 1]:
+            if roman in present:
+                continue
+            marker = re.compile(rf'\({re.escape(roman)}\)\s+')
+            for key in sorted((k for k in parts
+                               if k[-3] == q and k[-2] == letter), key=str):
+                body = texts.get(key, '')
+                match = marker.search(body)
+                if not match:
+                    continue
+                tail = body[match.end():].strip()
+                if re.match(r'^(?:above\b|,)', tail, re.I):
+                    continue
+                following = [m for m in re.finditer(
+                    r'\((xii|viii|vii|vi|iv|iii|ii|i|ix|xi|x|v)\)\s+', tail)]
+                if following:
+                    tail = tail[:following[0].start()].strip()
+                if sum(ch.isalnum() for ch in tail) < 3:
+                    continue
+                new_key = (q, letter, roman)
+                parts.add(new_key)
+                texts[new_key] = tail
+                texts[key] = body[:match.start()].strip()
+                present.add(roman)
+                break
+    return parts
+
+
 def census_merged(subject, year, level, component=None):
     P = PP.Paper(subject, year, level, component=component)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
+    parts = complete_inline_missing_romans(parts, texts)
+    if subject == 'physics':
+        parts = complete_physics_inline_romans(parts, texts, P.stem)
+    # 2020 OL Biology Q5 is a single image-matching task.  Its seven answer
+    # slots are bare letters laid out underneath seven cell drawings; PDF
+    # reading order welds only four of those letters into a meaningless
+    # ``(c) (d) (e) (g)`` pseudo-part.  The independently recovered own-line
+    # question heading and its complete cell-name bank are substantive paper
+    # text, so census the printed matching task at its actual whole-question
+    # tariff boundary instead of pretending the artwork labels are prose.
+    if subject == 'biology' and year == 2020 and level == 'ol':
+        for key in [k for k in parts if k[-3] == 5]:
+            parts.remove(key)
+            texts.pop(key, None)
+        q5 = ' '.join(P.stems.get((5, None), []))
+        q5 = PP.unligature(' '.join(q5.split()))
+        if q5:
+            parts.add((5, None, None))
+            texts[(5, None, None)] = q5
+    # A one-word leaf is often a deliberately compact completion of the
+    # imperative directly above it: ``Explain ... (i) Niche`` or ``Give one
+    # application ... (i) Plant``.  Carrying the printed parent stem into the
+    # census text makes the ask self-contained and prevents the independent
+    # empty-leaf audit from mistaking brevity for lost content.
+    for key in list(parts):
+        body = texts.get(key, '')
+        if sum(ch.isalnum() for ch in body) >= 6:
+            continue
+        q, letter, _ = key[-3:]
+        parent = ((P.text(q, letter, None) if key[-1] is not None else None)
+                  or P.stem(q, letter) or P.stem(q) or '')
+        if parent:
+            texts[key] = PP.unligature(
+                ' '.join(f'{parent} {body}'.split()))
     return parts, texts, P.files
 
 
@@ -296,13 +431,31 @@ def census_sections(subject, year, level):
     # splits applied, so the neighbour guards can see the whole paper.
     blocks = []
     for path in P.files:
-        for block in PP._blocks(path):
+        # Older Home Economics papers set several numbered questions in one
+        # PDF text block, one heading per visual line.  Preserve those line
+        # starts before flattening; otherwise Q3/Q5/Q6 disappear behind the
+        # ruled answer space of the question above.  The forward-only walk and
+        # scaffold guards below still decide whether a recovered number is a
+        # real question rather than an answer choice.
+        for block in PP._blocks(
+                path, recover_heads=subject in {'business', 'home-economics'}):
+            block = block.lstrip(PP.OWN_LINE_SENTINEL)
             for text in PP.INLINE_QHEAD.split(block):
                 # Capital markers mid-block: Business glues "(B) Outline..."
                 # onto the tail of (A)'s prose.
-                for text in re.split(
+                capital_pieces = re.split(
                         r'\s(?=\((?:[A-H]|[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
-                        r'\s+[A-Z(0-9\u201c"])', text):
+                        r'\s+[A-Z(0-9_\u201c"])', text)
+                # ``1. (a) ...`` is one question head, not a bare ``1.``
+                # followed by a headless part.  The marker split above has to
+                # happen before the generic glued-head repair, so put that
+                # one prefix back before walking the pieces.
+                if len(capital_pieces) > 1 \
+                        and re.fullmatch(r'\s*\d{1,2}\.\s*', capital_pieces[0]):
+                    capital_pieces[1] = (capital_pieces[0].strip() + ' '
+                                         + capital_pieces[1].lstrip())
+                    capital_pieces = capital_pieces[1:]
+                for text in capital_pieces:
                     # Home Economics Section C glues its elective sub-heads:
                     # "or 1.(c)" / "and 3.(b)" / "4.(a)" — split each onto its
                     # own line so the walker can read it as a head.
@@ -310,14 +463,24 @@ def census_sections(subject, year, level):
                         text = text.strip()
                         if not text:
                             continue
-                        head = re.match(r'(\d{1,2}\.)\s+(?=\()', text)
-                        prefix = ''
-                        if head:
-                            prefix, text = head.group(1) + ' ', text[head.end():]
-                        pieces = [x.strip() for x in PP.INLINE_MARKER.split(text)
-                                  if x.strip()]
-                        for i, piece in enumerate(pieces):
-                            blocks.append((prefix + piece) if i == 0 else piece)
+                        # Older Business layouts place the NEXT marker alone
+                        # at the end of the previous part: ``...(20 marks)
+                        # (B)``.  Keep it as a marker-only block; its following
+                        # stimulus and ask are joined during the walk below.
+                        trailing = re.match(
+                            r'^(.*\S)\s+(\((?:[A-Ha-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\))$',
+                            text)
+                        tail_pieces = ([trailing.group(1), trailing.group(2)]
+                                       if trailing else [text])
+                        for text in tail_pieces:
+                            head = re.match(r'(\d{1,2}\.)\s+(?=\()', text)
+                            prefix = ''
+                            if head:
+                                prefix, text = head.group(1) + ' ', text[head.end():]
+                            pieces = [x.strip() for x in PP.INLINE_MARKER.split(text)
+                                      if x.strip()]
+                            for i, piece in enumerate(pieces):
+                                blocks.append((prefix + piece) if i == 0 else piece)
 
     # A lone number beside other lone numbers is a matching-table row or an
     # answerbook rule, not a head — the same neighbour argument paper.py makes
@@ -339,9 +502,30 @@ def census_sections(subject, year, level):
                 or (i + 1 in listy and i + 2 in listy) \
                 or (i - 1 in listy and i - 2 in listy):
             scaffold.add(i)
+    if subject == 'business':
+        # Numbered response lists can end in punctuation or a printed tariff,
+        # so the narrow ``listy`` test above misses their final row.  A run
+        # 1,2,3 (or longer) in adjacent blocks is a table/list inside a
+        # Business question; actual short questions are never three adjacent
+        # block heads without intervening content.
+        numbered = []
+        for i, t in enumerate(blocks):
+            m = re.match(r'^(\d{1,2})\.\s+\S', t.strip())
+            if m:
+                numbered.append((i, int(m.group(1))))
+        for start in range(len(numbered)):
+            run = [numbered[start]]
+            for item in numbered[start + 1:]:
+                if item[0] == run[-1][0] + 1 and item[1] == run[-1][1] + 1:
+                    run.append(item)
+                else:
+                    break
+            if len(run) >= 3 and run[0][1] == 1:
+                scaffold.update(i for i, _ in run)
 
     parts, stems = {}, {}
     section, q, letter, roman = None, None, None, None
+    nested_letter_list = False
     for index, text in enumerate(blocks):
         if index in scaffold:
             continue
@@ -354,8 +538,7 @@ def census_sections(subject, year, level):
         # start, never containing a second "Section" (booklet covers read
         # "Section B and Section C"), and short or marks-bearing.
         sh = re.match(r'(?:SECTION|Section)\s+([A-C]|\d{1,2})\b(.{0,160})', text)
-        if sh and 'Section' not in sh.group(2) \
-                and (len(text) < 200 or 'marks' in sh.group(2).lower()):
+        if sh and (subject == 'business' or 'Section' not in sh.group(2)):
             # Two guards, both earned. Sections only move FORWARD — the
             # answerbook repeats earlier sections' names and re-opening one
             # keyed hundreds of phantom questions from ruled pages. And a new
@@ -367,16 +550,18 @@ def census_sections(subject, year, level):
             if sh.group(1) != section and (section is None
                                            or sh.group(1) > section) \
                     and (section is None
-                         or any(k[0] == section for k in parts)):
+                         or any(k[0] == section for k in parts)
+                         or any(k[0] == section for k in stems)):
                 section, q, letter, roman = sh.group(1), None, None, None
+                nested_letter_list = False
             # 'Section 2 Applied Business Question 80 marks' is one block —
             # the header AND the headless compulsory question it opens.
-            if re.search(r'Applied\s+Business\s+Question', sh.group(2)):
+            if re.search(r'Applied\s+Business\s+Question', sh.group(2), re.I):
                 q = 'ABQ'
             continue
         # The Applied Business Question: compulsory, 80 marks, and headless —
         # it never says "Question N", so it needs its own key.
-        if re.match(r'Applied\s+Business\s+Question', text):
+        if re.match(r'Applied\s+Business\s+Question', text, re.I):
             q, letter, roman = 'ABQ', None, None
             continue
         # Home Economics Section C: "Elective 1 – Home Design..." heads the
@@ -389,12 +574,19 @@ def census_sections(subject, year, level):
         gl = re.match(r'(?:and\s+|or\s+)?(\d)\.\(([a-z])\)\s*', text)
         if gl and str(section) == 'C':
             q, letter, roman = int(gl.group(1)), gl.group(2), None
+            nested_letter_list = False
             key = (section, q, letter, None)
             parts.setdefault(key, [])
             rest = text[gl.end():].strip()
             if rest:
                 parts[key].append(rest)
             continue
+        # The pre-2020 Ordinary papers print their long-question heads as
+        # ``QUESTION 1`` in capitals.  The shared reader deliberately keeps a
+        # conservative case-sensitive head, so normalise this one known layout
+        # family locally before applying it.
+        if subject == 'business':
+            text = re.sub(r'^QUESTION(?=\s+\d{1,2}\b)', 'Question', text)
         m = PP.QHEAD.match(text)
         if not m:
             un = PP.RUBRIC_HEAD.sub('', text, count=1)
@@ -408,7 +600,15 @@ def census_sections(subject, year, level):
             # and 'Start each question on a new page', which walked the
             # counter to a phantom Q16.
             ln = re.match(r'^(\d{1,2})\.?$', text)
-            if ln and int(ln.group(1)) == q + 1:
+            if ln and int(ln.group(1)) == q + 1 \
+                    and not (subject == 'home-economics'
+                             and str(section) == 'C'):
+                # Section C's elective questions always announce a new
+                # number as ``Elective N`` or ``N.(a)``.  A bare number inside
+                # that section is therefore artwork, not a question head.
+                # The 2017 HL bungalow plan contains a room labelled ``2``;
+                # treating it as Q2 moved Q1(a)(i)-(iii) onto a phantom
+                # letterless question and left the real floor-plan task whole.
                 ahead = ' '.join(blocks[index + 1:index + 5])
                 prose = re.sub(
                     r'\b(Question|Part|Start each question on a new page'
@@ -430,6 +630,7 @@ def census_sections(subject, year, level):
             if q in (None, 'ABQ') or (isinstance(q, int) and q < found <= q + 3):
                 q = found
                 letter = roman = None
+                nested_letter_list = False
                 rest = text[m.end():].strip()
                 if rest and PP._leading(rest)[:2] != (None, None):
                     text = rest
@@ -447,9 +648,25 @@ def census_sections(subject, year, level):
         fl, fr, rest = PP._leading(text)
         if fl or fr:
             if fl:
+                # A lettered list printed *inside* a roman ask is content, not
+                # a return to the question's outer letter axis.  HE 2022 OL
+                # Q1(c)(i), for example, names safety devices as "(a) MCB"
+                # and "(b) earth wire" before continuing to Q1(c)(ii).  The
+                # old walk re-keyed those as Q1(a)/Q1(b), then filed (ii) under
+                # (a), which both orphaned the real card and contaminated an
+                # unrelated ask.  A nested enumeration declares itself by
+                # starting again at (a); subsequent letters stay in that list.
+                if roman is not None and letter is not None \
+                        and (nested_letter_list or fl == 'a'):
+                    nested_letter_list = True
+                    key = (section, q, letter, roman)
+                    parts.setdefault(key, []).append(f'({fl}) {rest}'.strip())
+                    continue
                 letter, roman = fl, fr
+                nested_letter_list = False
             else:
                 roman = fr
+                nested_letter_list = False
             key = (section, q, letter, roman)
             parts.setdefault(key, [])
             if rest:
@@ -457,7 +674,105 @@ def census_sections(subject, year, level):
             continue
         if PP.FURNITURE.match(text):
             continue
-        stems.setdefault((section, q, letter), []).append(text)
+        # A part marker is sometimes printed alone and followed by its
+        # stimulus and ask in separate blocks (Business 2025 HL Q2(B)); other
+        # times the marked block contains a headline and the actual imperative
+        # follows beneath it (Q2(C)).  Until another marker/question opens,
+        # those blocks belong to the current part.
+        current = (section, q, letter, roman)
+        if (letter is not None or roman is not None) and current in parts:
+            parts[current].append(text)
+        else:
+            stems.setdefault((section, q, letter), []).append(text)
+
+    if subject == 'business':
+        # The 2018 Ordinary short-answer calculation is a table whose roman
+        # labels are printed AFTER their row labels.  PDF reading order cannot
+        # infer that association, so restore the four exact printed targets.
+        if year == 2018 and level == 'ol':
+            sec, short_q = '1', 6
+            for key in [k for k in parts if k[0] == sec and k[1] == short_q]:
+                del parts[key]
+            base = next((t for t in blocks if t.startswith(
+                '6. Calculate Joanne Heffernan')), '')
+            base = re.sub(r'^6\.\s*', '', base).split(' PRSI ')[0].strip()
+            targets = {
+                'i': 'PRSI (4% of €70,000)',
+                'ii': 'USC (3% of €70,000)',
+                'iii': 'Total Deductions',
+                'iv': 'Net Annual Take Home Pay',
+            }
+            for tag, target in targets.items():
+                parts[(sec, short_q, None, tag)] = [base, target]
+
+        # The 2019 Ordinary Q2/Q3 page is two-column artwork.  Its visual
+        # reading order places the Q3 head between Q2's number and wording;
+        # restore the two questions from their exact paper blocks.
+        if year == 2019 and level == 'ol':
+            for key in [k for k in parts if k[0] == '1' and k[1] in (2, 3)]:
+                del parts[key]
+            pricing = next((t for t in blocks if t.startswith(
+                'Businesses use high price strategies')), '')
+            if pricing:
+                parts[('1', 2, None, 'i')] = [pricing, 'Premium Pricing:']
+                parts[('1', 2, None, 'ii')] = [pricing, 'Penetration Pricing:']
+            fill = next((t for t in blocks if t.startswith(
+                '3. Choose the appropriate word/s')), '')
+            fill_tail = [t for t in blocks if t.startswith(
+                ('person must voluntarily disclose', 'to the risk being insured'))]
+            if fill:
+                parts[('1', 3, None, None)] = [re.sub(r'^3\.\s*', '', fill)] + fill_tail
+
+        # A substantive short-question stem followed only by ruled roman
+        # answer slots is one printed ask, not one ask per blank.  This is the
+        # 2018 Higher Q2 layout; named/calculation rows such as Ordinary Q6
+        # remain separate because their bodies contain real labels.
+        for parent in {(k[0], k[1], k[2]) for k in parts if k[0] == '1'}:
+            children = [k for k in parts if k[:3] == parent
+                        and k[3] is not None]
+            parent_key = (*parent, None)
+            parent_lines = (parts.get(parent_key)
+                            or stems.get(parent, []))
+            if children and parent_lines and all(
+                    sum(ch.isalnum() for ch in ' '.join(parts[k])) < 6
+                    for k in children):
+                for key in children:
+                    del parts[key]
+                parts[parent_key] = list(parent_lines)
+
+        # A term-only child inherits the imperative printed immediately above
+        # it ("Explain the following ... (i) Tariff").  Retaining that stem in
+        # the census text distinguishes a legitimate compact ask from a blank.
+        for key, lines in list(parts.items()):
+            if sum(ch.isalnum() for ch in ' '.join(lines)) >= 6:
+                continue
+            parent_lines = (parts.get((key[0], key[1], key[2], None))
+                            or stems.get((key[0], key[1], key[2]), []))
+            if parent_lines:
+                parts[key] = list(parent_lines) + lines
+
+    if subject == 'home-economics':
+        # Section A prices the numbered short question as one six-mark task.
+        # Its (i)/(ii) labels are answer slots inside that fixed task, not
+        # independently selectable paper parts.  Keeping them as leaves made
+        # a blank first slot look like a roman gap and disagreed with the deck's
+        # long-standing one-card-per-short-question boundary.
+        short_qs = {k[1] for k in parts if k[0] == 'A'} \
+            | {k[1] for k in stems if k[0] == 'A'}
+        for short_q in short_qs:
+            lines = list(stems.get(('A', short_q, None), []))
+            children = sorted(
+                (k for k in parts if k[0] == 'A' and k[1] == short_q),
+                key=lambda k: (k[2] or '', ROMANS.index(k[3])
+                               if k[3] in ROMANS else 99))
+            for child in children:
+                label = ''.join(f'({x})' for x in child[2:] if x)
+                body = ' '.join(parts[child]).strip()
+                if body:
+                    lines.append(f'{label} {body}'.strip())
+                del parts[child]
+            if lines:
+                parts[('A', short_q, None, None)] = lines
 
     # Drop keys that never accumulated text (unlabelled blanks), THEN adopt
     # whole questions — the order matters, because a phantom part suppresses
@@ -474,6 +789,16 @@ def census_sections(subject, year, level):
         if any(k[0] == section_ and k[1] == q_ for k in parts):
             continue
         parts[(section_, q_, None, None)] = list(lines)
+    if subject == 'business':
+        # A dated footer on the final answerbook page followed a bare ``10``
+        # answer-line label in 2022 OL.  It formed a syntactically continuous
+        # phantom Section 2 Q10, so continuity alone could not expose it.
+        exam_date = re.compile(
+            r'^(?:Monday|Tuesday|Wednesday|Thursday|Friday)\s+\d{1,2}\s+'
+            r'\w+\s+(?:Morning|Afternoon)\s+\d{1,2}:\d{2}\s*[–—-]\s*\d{1,2}:\d{2}$',
+            re.I)
+        parts = {k: v for k, v in parts.items()
+                 if not exam_date.match(' '.join(' '.join(v).split()))}
 
     texts = {k: PP.unligature(' '.join(' '.join(v).split())) for k, v in parts.items()}
     return set(parts), texts, P.files
@@ -592,8 +917,15 @@ def census_subject(subject):
                 continue
             leaves = leaves_of(parts)
             flags = continuity_flags(parts, texts)
-            marks = marks_by_question(files if cfg['mode'] != 'papers' else
-                                      [f for f in files], subject)
+            # A restart-section paper has choice-weighted totals: Home
+            # Economics contains three electives worth different totals and
+            # Business repeats Q1 in multiple sections.  Summing the first
+            # parenthesised number seen for each restarted question is not a
+            # checksum of either paper, so do not manufacture one. Continuity
+            # and empty-leaf checks remain the independent paper audit here.
+            marks = ({} if cfg['mode'] == 'sections' else
+                     marks_by_question(files if cfg['mode'] != 'papers' else
+                                       [f for f in files], subject))
             papers.append({
                 'year': year, 'level': level, 'paper': label,
                 'leafCount': len(leaves),
@@ -616,7 +948,9 @@ def census_subject(subject):
             expected[(level, label)] = (total, n)
     for p in papers:
         if p.get('marksSum') and expected.get((p['level'], p.get('paper'))):
-            want = expected[(p['level'], p.get('paper'))][0]
+            want = MARKS_SUM_EXCEPTIONS.get(
+                (subject, p['year'], p['level'], p.get('paper')),
+                expected[(p['level'], p.get('paper'))][0])
             if p['marksSum'] != want:
                 p['flags'].append({
                     'type': 'marks-checksum',

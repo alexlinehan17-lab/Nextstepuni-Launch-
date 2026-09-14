@@ -165,23 +165,19 @@
     "verbatim": "x = −3 substituted into equation",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: If solving as a quadratic equation: Note: If solving as two linear equations: Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: If solving as a quadratic equation: Note: If solving as two linear equations: Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 3,
      "options": [
       "x = −3 substituted into equation",
       "relevant quadratic in p found",
-      "quadratic factorised\none missing or incorrect term in quadratic, but finishes correctly.",
-      "1 linear equation\nx = −3 substituted into equation",
-      "1 value of p found",
-      "Both linear equations in p given"
+      "quadratic factorised\none missing or incorrect term in quadratic, but finishes correctly."
      ],
      "perOptionSteps": [
       3,
       2,
-      3,
-      2
+      5
      ]
     }
    }
@@ -260,7 +256,7 @@
    {
     "id": "maths-2021-hl-p1-q3-a-r1",
     "kind": "anyN",
-    "verbatim": "xz = 2√2",
+    "verbatim": "⇒x = 1 cm",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: (2√2)(8√6)( 4√3) on its own is not awarded any credit. Note: If solving without isolating variables: Low • Partial xz = Credit:/2√2, or similar • xy, xz, and yz stated • • Volume V = = xyz/x(8√6) or similar Mid • Partial xz = Credit:/2√2 and yz = 8√6 and • xz xy = = 2√2/4√3 and yz = 8√6 and. Note: If solving by isolating variables: Low • Partial xz = Credit:/2√2, or similar Mid Partial Credit:/4√3 2√2. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -268,15 +264,6 @@
      "claimMax": 4,
      "perOption": 3,
      "options": [
-      "xz = 2√2",
-      "yz = 8√6",
-      "xy = 4√3",
-      "⇒x²y²z² = (2√2)(8√6)( 4√3)",
-      "⇒x²y²z² = 384",
-      "⇒xyz = √384 = 8√6 [cm³]",
-      "y = 4√3/x and z = 2√2/x",
-      "⇒ x/(4√3 ) (2√2 and ) = 8√6 x",
-      "⇒ (4√3/x ) (2√2/x ) = 8√6",
       "⇒x = 1 cm",
       "⇒y = 4√3 cm",
       "⇒z = 2√2 cm",
@@ -1113,7 +1100,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q8-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-5-1",
   "conceptId": "part",
   "level": "higher",
   "year": 2021,
@@ -1379,6 +1366,51 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2021-HL-ask-p1-q8-c"
+ },
+ {
+  "id": "maths-2021-hl-p1-q9-a-i",
+  "topicId": "maths-5-2",
+  "conceptId": "part",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 HL Paper 1 Q9(a)(i)",
+  "questionText": "Show that A= 75",
+  "figureKey": "maths-2021-HL-paper-p025-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-hl-p1-q9-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Some substitution into function, including A = 75",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Some substitution into function, including A = 75",
+      "Equation in A\nSubstitutes A = 75 and t = 0"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2021-HL-ask-p1-q9-a-i"
  },
  {
   "id": "maths-2021-hl-p1-q9-a-ii",
@@ -2089,51 +2121,6 @@
   "questionFigureKey": "maths-2021-HL-ask-p2-q1-c"
  },
  {
-  "id": "maths-2021-hl-p2-q2-i",
-  "topicId": "maths-2-3",
-  "conceptId": "line-contains-point-point-line-point",
-  "level": "higher",
-  "year": 2021,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2021 HL Paper 2 Q2(c)(i)",
-  "questionText": "The line 3x−6y + 2 = 0 contains the point (k, 2k + 2 3), where k∈ℝ. The point P(s, t) is on the line x−2y−8 = 0. The point P is also a distance of 1 unit from the line 4x + 3y + 6 = 0. Find a value of s and the corresponding value of t. The points A(4, 2) and C(16, 11) are vertices of the triangle ABC shown below. D and E are points on [CA] and [CB] respectively. The ratio |AD| ∶|DC| is 2 ∶1. Find |AD|. [AB]and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E",
-  "figureKey": "maths-2021-HL-paper-p037-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "maths-2021-hl-p2-q2-i-r1",
-    "kind": "anyN",
-    "verbatim": "Some substitution into formula for |AC|\nSome substitution into formula for D\nIdentifies relevant translation",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "Some substitution into formula for |AC|\nSome substitution into formula for D\nIdentifies relevant translation",
-      "|AC| = 15 found\nD found and |AD| fully substituted"
-     ],
-     "perOptionSteps": [
-      2,
-      3
-     ]
-    }
-   }
-  ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-HL-ask-p2-q2-c-i"
- },
- {
   "id": "maths-2021-hl-p2-q2-a",
   "topicId": "maths-3-1",
   "conceptId": "line-contains-point",
@@ -2224,6 +2211,51 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2021-HL-ask-p2-q2-b"
+ },
+ {
+  "id": "maths-2021-hl-p2-q2-i",
+  "topicId": "maths-2-2",
+  "conceptId": "part",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 HL Paper 2 Q2(c)(i)",
+  "questionText": "Find |AD|",
+  "figureKey": "maths-2021-HL-paper-p037-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-hl-p2-q2-i-r1",
+    "kind": "anyN",
+    "verbatim": "Some substitution into formula for |AC|\nSome substitution into formula for D\nIdentifies relevant translation",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Some substitution into formula for |AC|\nSome substitution into formula for D\nIdentifies relevant translation",
+      "|AC| = 15 found\nD found and |AD| fully substituted"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q2-c-i"
  },
  {
   "id": "maths-2021-hl-p2-q2-c-ii",
@@ -2473,7 +2505,7 @@
    {
     "id": "maths-2021-hl-p2-q4-a-ii-r1",
     "kind": "anyN",
-    "verbatim": "cos2A = cos²A−sin²A",
+    "verbatim": "cos𝜃= cos^(2𝜃)",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -2481,11 +2513,6 @@
      "claimMax": 4,
      "perOption": 3,
      "options": [
-      "cos2A = cos²A−sin²A",
-      "⇒ cos𝜃 = cos² ^𝜃/2 − sin² ^𝜃/2",
-      "using a right-angled triangle cos 𝜃/2 = 2/√5 2/√5",
-      "cos𝜃 = (/√5) 2 2 − (/√5) 1 2 = 3/5",
-      "2−sin^(2𝜃)",
       "cos𝜃= cos^(2𝜃)",
       "= (1 − sin² ^𝜃/2) − sin² ^𝜃/2",
       "= 1 − 2sin² ^𝜃/2",
@@ -4114,7 +4141,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q2(b)",
-  "questionText": "z3= ௭1 ௭2 . Find z3 in the form a+ bi, where a, b∈ℤ",
+  "questionText": "z₁ = −3 + 4i and z₂ = 4 + 3i, where i² = −1. z₃ = z₁/z₂. Find z₃ in the form a + bi, where a, b ∈ ℤ",
   "figureKey": "maths-2021-OL-paper-p009-i1",
   "labelKey": [],
   "tariffModel": {
@@ -5107,8 +5134,8 @@
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q8(d)",
-  "questionText": "Complete the table below to show the values of V(x) = 4x³−40x² + 100x, where x∈ℝ, for the given values of x in the domain 0 ≤ x ≤ 5",
+  "questionRef": "2021 OL Paper 1 Q8(d), (e)",
+  "questionText": "Complete the table below to show the values of V(x) = 4x³−40x² + 100x, where x∈ℝ, for the given values of x in the domain 0 ≤ x ≤ 5. Draw the graph of the function V(x) on the grid below",
   "figureKey": "maths-2021-OL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -5149,13 +5176,13 @@
  {
   "id": "maths-2021-ol-p1-q8-f-i",
   "topicId": "maths-5-2",
-  "conceptId": "maximum-volume-box",
+  "conceptId": "maximum-volume-box-values-which-will",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q8(f)(i)–(iii)",
-  "questionText": "The maximum volume of the box",
+  "questionText": "The maximum volume of the box. The values of x which will create a box which has a volume of 30 units cubed. (iii) The volume of the box when x is 2·8 units",
   "figureKey": "maths-2021-OL-paper-p021-i0",
   "labelKey": [],
   "tariffModel": {
@@ -5666,7 +5693,7 @@
    {
     "id": "maths-2021-ol-p1-q10-b-i-r1",
     "kind": "anyN",
-    "verbatim": "D = 2𝜋(0∙5) = 3∙14 km",
+    "verbatim": "T = 2𝜋(0∙5)3/6",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -5674,7 +5701,6 @@
      "claimMax": 4,
      "perOption": 3,
      "options": [
-      "D = 2𝜋(0∙5) = 3∙14 km",
       "T = 2𝜋(0∙5)3/6",
       "= 1∙5707 hours or 1∙57",
       "= 94∙2 mins",
@@ -5716,7 +5742,7 @@
    {
     "id": "maths-2021-ol-p1-q10-b-ii-r1",
     "kind": "anyN",
-    "verbatim": "(ii) T = D/S",
+    "verbatim": "= 1∙3117 hours",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -5724,8 +5750,6 @@
      "claimMax": 4,
      "perOption": 3,
      "options": [
-      "(ii) T = D/S",
-      "⇒ T = 3(1∙15⁴)/4 = 5·247/4",
       "= 1∙3117 hours",
       "= 1 hour and 18∙7 mins",
       "= 78∙7",
@@ -5836,6 +5860,53 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2021-OL-ask-p2-q1-a"
+ },
+ {
+  "id": "maths-2021-ol-p2-q1-b-i",
+  "topicId": "maths-1-2",
+  "conceptId": "her-left-foot",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 OL Paper 2 Q1(b)(i)",
+  "questionText": "her left foot?",
+  "figureKey": "maths-2021-OL-paper-p032-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-ol-p2-q1-b-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit\nOne outcome with left foot listed\nA valid #E or #S in fraction format with no work shown",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Work of merit\nOne outcome with left foot listed\nA valid #E or #S in fraction format with no work shown",
+      "Significant work\nAll 4 relevant outcomes listed",
+      "Correct answer without supporting work Zero Credit:\nProbability > 1, without work"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2021-OL-ask-p2-q1-b-i"
  },
  {
   "id": "maths-2021-ol-p2-q1-b-ii",
@@ -6120,53 +6191,6 @@
   "questionFigureKey": "maths-2021-OL-ask-p2-q2-b"
  },
  {
-  "id": "maths-2021-ol-p2-q3",
-  "topicId": "maths-2-2",
-  "conceptId": "line-passes-through-points-write-equation",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2021 OL Paper 2 Q3",
-  "questionText": "A line n passes through the points A(–1, 2) and B(0, –2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ. The diagram below shows the line l: 3x−4y = 5 and the point P(6, −3). Find the equation of the line k through the point P that is perpendicular to the line l. Write your answer in the form ax + by + c = 0, where a, b, c ∈ℤ. Find the point of intersection of the lines l: 3x−4y = 5 and h: 2x−y = 10",
-  "figureKey": "maths-2021-OL-paper-p035-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "maths-2021-ol-p2-q3-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit\nSome correct substitution into equation y = mx + c",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Work of merit\nSome correct substitution into equation y = mx + c",
-      "Full substitution into both A & B\nm or c found",
-      "Significant Work\nm and c found\nOne error and finishes correctly\nAnswer not in required format"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
-   }
-  ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p2-q3"
- },
- {
   "id": "maths-2021-ol-p2-q3-a",
   "topicId": "maths-3-1",
   "conceptId": "line-passes-through-points-write-equation",
@@ -6176,7 +6200,7 @@
   "section": "B",
   "questionRef": "2021 OL Paper 2 Q3(a)",
   "questionText": "A line n passes through the points A(–1, 2) and B(0, –2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ",
-  "figureKey": "maths-2021-OL-paper-p035-i1",
+  "figureKey": "maths-2021-OL-paper-p035-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -6235,7 +6259,7 @@
    {
     "id": "maths-2021-ol-p2-q3-b-i-r1",
     "kind": "anyN",
-    "verbatim": "(i) slope of l = 3/4",
+    "verbatim": "perpendicular slope = (−4)/3",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -6243,7 +6267,6 @@
      "claimMax": 4,
      "perOption": 3,
      "options": [
-      "(i) slope of l = 3/4",
       "perpendicular slope = (−4)/3",
       "y − (−3) = (−4)/3 (x − 6)",
       "y + 3 = (−4)/3 (x − 6)",
@@ -6263,7 +6286,7 @@
  },
  {
   "id": "maths-2021-ol-p2-q3-b-ii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-3-1",
   "conceptId": "point-intersection-lines",
   "level": "ordinary",
   "year": 2021,
@@ -6640,7 +6663,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 2 Q5(b)(ii)",
-  "questionText": "The table on the right shows three numbers. One of the numbers is the correlation coefficient of the data shown in the table above. Tick () the one which you think best represents the correlation coefficient between height and arm span for this data set",
+  "questionText": "The table on the right shows three numbers. One of the numbers is the correlation coefficient of the data shown in the table above. Tick (✓) the one which you think best represents the correlation coefficient between height and arm span for this data set",
   "figureKey": "maths-2021-OL-paper-p040-i2",
   "labelKey": [],
   "tariffModel": {
@@ -6712,51 +6735,6 @@
   "questionFigureKey": "maths-2021-OL-ask-p2-q5-b-iii"
  },
  {
-  "id": "maths-2021-ol-p2-q6",
-  "topicId": "maths-2-3",
-  "conceptId": "diagram-showing-triangle-abc-construct-perpendicular",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2021 OL Paper 2 Q6",
-  "questionText": "On the diagram below showing the triangle ABC , construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly. Construct the circumcircle of the given triangle ABC. Show all your construction lines and arcs clearly. 14 Leaving Certificate, 2021",
-  "figureKey": "maths-2021-OL-paper-p042-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "maths-2021-ol-p2-q6-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit\nRelevant work with 2∙5 and 18∙75 e. g. 18∙75/2·5 = 7∙5",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "Work of merit\nRelevant work with 2∙5 and 18∙75 e. g. 18∙75/2·5 = 7∙5",
-      "Significant Work\nRelevant work with 2∙5² and 18∙75"
-     ],
-     "perOptionSteps": [
-      3,
-      7
-     ]
-    }
-   }
-  ],
-  "notes": "",
-  "questionFigureKey": "maths-2021-OL-ask-p2-q6"
- },
- {
   "id": "maths-2021-ol-p2-q6-a-i",
   "topicId": "maths-2-3",
   "conceptId": "diagram-showing-triangle-abc-construct-perpendicular",
@@ -6764,7 +6742,7 @@
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 2 Q6(a)(i), (ii)",
+  "questionRef": "2021 OL Paper 2 Q6(a)(i)",
   "questionText": "On the diagram below showing the triangle ABC , construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly",
   "figureKey": "maths-2021-OL-paper-p041-i0",
   "labelKey": [],
@@ -6856,9 +6834,9 @@
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 2 Q6(b)(i), (ii)",
+  "questionRef": "2021 OL Paper 2 Q6(b)(i)",
   "questionText": "Use the scale factor to find |QR|",
-  "figureKey": "maths-2021-OL-paper-p042-i1",
+  "figureKey": "maths-2021-OL-paper-p042-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -6892,6 +6870,51 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2021-OL-ask-p2-q6-b-i"
+ },
+ {
+  "id": "maths-2021-ol-p2-q6-b-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "area-triangle-pqr-area-triangle-def",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 OL Paper 2 Q6(b)(ii)",
+  "questionText": "The area of the triangle PQR is 18∙75 cm². Find the area of triangle DEF",
+  "figureKey": "maths-2021-OL-paper-p042-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-ol-p2-q6-b-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit\nRelevant work with 2∙5 and 18∙75 e. g. 18∙75/2·5 = 7∙5",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Work of merit\nRelevant work with 2∙5 and 18∙75 e. g. 18∙75/2·5 = 7∙5",
+      "Significant Work\nRelevant work with 2∙5² and 18∙75"
+     ],
+     "perOptionSteps": [
+      3,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2021-OL-ask-p2-q6-b-ii"
  },
  {
   "id": "maths-2021-ol-p2-q7-a-i",
@@ -8066,13 +8089,13 @@
  {
   "id": "maths-2022-hl-p1-q1-c-i",
   "topicId": "maths-4-2",
-  "conceptId": "not-solution",
+  "conceptId": "not-solution-remainder-when-divided",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q1(c)(i), (ii)",
-  "questionText": "Show that x = −1 is not a solution of 3x² + 2x + 5 = 0",
+  "questionText": "Show that x = −1 is not a solution of 3x² + 2x + 5 = 0. Find the remainder when 3x² + 2x + 5 is divided by x + 1",
   "figureKey": "maths-2022-HL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8775,33 +8798,22 @@
    {
     "id": "maths-2022-hl-p1-q6-b-r1",
     "kind": "anyN",
-    "verbatim": "A = l × w = 4x × x = 4x²",
+    "verbatim": "Work of merit, for example, l = 4x ; mentions dA/dx",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: Method 1: 1. Write A in terms of x 2. Find x = 3. Find dA/dx 4. Evaluate dA/dx at x = 15/2. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Method 1: 1. Write A in terms of x 2. Find x = 3. Find dA/dx 4. Evaluate dA/dx at x = 15/2. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 3,
      "options": [
-      "A = l × w = 4x × x = 4x²",
-      "When A = 225, 4x² = 225,",
-      "so x² = 225/4 , i.e. x = 15/2",
-      "dA/dx = 8x = 8 ( )/2 15 = 60 cm²/cm",
-      "Accept without unit",
-      "l = 4x so x = l/4",
-      "A = l × l/4 = 1/4 l²",
-      "dl/dx = 4 and dA/dl = 1/2 l",
-      "dA/dx = dA/dl × dl/dx",
-      "dA/dx = 1/2 l × 4",
-      "When A = 225, 1/4 l² = 225, so l = 30",
-      "dA/dx = 1/2 (30)(4) = 60 cm²/cm",
-      "Accept without unit"
+      "Work of merit, for example, l = 4x ; mentions dA/dx",
+      "2 steps correct",
+      "3 steps correct Method 2:"
      ],
      "perOptionSteps": [
       3,
       2,
-      3,
-      2
+      5
      ]
     }
    }
@@ -8863,7 +8875,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q7(a), (b)",
-  "questionText": "Work out Hannah’s heart-rate 4 minutes after the start of the session",
+  "questionText": "Work out Hannah’s heart-rate 4 minutes after the start of the session. Find h′(x)",
   "figureKey": "maths-2022-HL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -9125,14 +9137,14 @@
  },
  {
   "id": "maths-2022-hl-p1-q8-a",
-  "topicId": "maths-2-3",
-  "conceptId": "complete-table-value-given",
+  "topicId": "maths-3-1",
+  "conceptId": "complete-table-value-given-draw-graph",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q8(a), (b)",
-  "questionText": "Complete the table below. The value of h(1) is given",
+  "questionText": "Complete the table below. The value of h(1) is given. Draw the graph of y = h(t) for 0 ≤ t ≤ 8, t∈ℝ",
   "figureKey": "maths-2022-HL-paper-p023-i0",
   "labelKey": [],
   "tariffModel": {
@@ -9173,13 +9185,13 @@
  {
   "id": "maths-2022-hl-p1-q8-c",
   "topicId": "maths-2-3",
-  "conceptId": "period-range-period-range",
+  "conceptId": "period-range",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q8(c)",
-  "questionText": "Find the period and range of h(t). Period = ________________ Range = [ , ]",
+  "questionText": "Find the period and range of h(t)",
   "figureKey": "maths-2022-HL-paper-p023-i1",
   "labelKey": [],
   "tariffModel": {
@@ -9463,7 +9475,7 @@
    {
     "id": "maths-2022-hl-p1-q9-c-r1",
     "kind": "anyN",
-    "verbatim": "15: amount from injection just given",
+    "verbatim": "has reduced by 40% each day",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -9471,12 +9483,6 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "15: amount from injection just given",
-      "15(0 ∙6): amount from injection 1 day ago",
-      "15(0 ∙6²): amount from injection 2 days ago",
-      "15(0 ∙6³): amount from injection 3 days ago",
-      "There is 15 mg from the injection just given,",
-      "and the amount from each previous injection",
       "has reduced by 40% each day"
      ]
     }
@@ -9750,13 +9756,13 @@
  {
   "id": "maths-2022-hl-p1-q10-c-i",
   "topicId": "maths-5-2",
-  "conceptId": "value",
+  "conceptId": "value-always-negative-what-does-tell",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q10(c)(i), (ii)",
-  "questionText": "Find the value of P′(1)",
+  "questionText": "Find the value of P′(1). P′(t) is always negative for 0 ≤ t ≤ 12, t∈ℝ. What does this tell you about the proportion of digits recalled correctly after t hours, according to this model?",
   "figureKey": "maths-2022-HL-paper-p028-i2",
   "labelKey": [],
   "tariffModel": {
@@ -10431,6 +10437,53 @@
   "questionFigureKey": "maths-2022-HL-ask-p2-q4-a-i"
  },
  {
+  "id": "maths-2022-hl-p2-q4-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "write-tan-form",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 2 Q4(a)(ii)",
+  "questionText": "(ii) Write tan 15° in the form (√a−1)/(√a + 1) (√a−1)/(√a + 1) , where a∈ℕ",
+  "figureKey": "maths-2022-HL-paper-p042-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p2-q4-a-ii-r1",
+    "kind": "anyN",
+    "verbatim": "tan 15 = (−2√3 ±√(−2√3) 2−4 × 1 × (−1))/2",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Note: accept solution of: tan 15° = −√3 + 2 = (^√³^−¹)/(√3 + 1) (^√³^−¹)/(√3 + 1). These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "tan 15 = (−2√3 ±√(−2√3) 2−4 × 1 × (−1))/2",
+      "= −√3 + 2 (first quadrant)",
+      "= (√3−1)/(√3 + 1) (√3−1)/(√3 + 1)"
+     ],
+     "perOptionSteps": [
+      3,
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q4-a-ii"
+ },
+ {
   "id": "maths-2022-hl-p2-q4-b",
   "topicId": "maths-2-3",
   "conceptId": "triangle-abc-shown-diagram",
@@ -10477,14 +10530,14 @@
  },
  {
   "id": "maths-2022-hl-p2-q5-a-i",
-  "topicId": "maths-1-5",
+  "topicId": "maths-1-7",
   "conceptId": "work-out-proportion-sample-preferred-remote",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q5(a)(i), (ii)",
-  "questionText": "Work out the proportion of the sample that preferred remote learning",
+  "questionText": "Work out the proportion of the sample that preferred remote learning. Use the margin of error ( 1 √n) to create a 95% confidence interval for the proportion of the population that preferred remote learning",
   "figureKey": "maths-2022-HL-paper-p044-i0",
   "labelKey": [],
   "tariffModel": {
@@ -10499,7 +10552,7 @@
    {
     "id": "maths-2022-hl-p2-q5-a-i-r1",
     "kind": "anyN",
-    "verbatim": "(a) (i) p̂ = 135/400 = 0∙3375",
+    "verbatim": "(ii) 0∙3375 ± 1/√400 1/√400",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Note: In (i), accept correct answer without work. Note: Accept answers given as percentages, correct to 2 or 4 decimal places. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -10507,7 +10560,6 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "(a) (i) p̂ = 135/400 = 0∙3375",
       "(ii) 0∙3375 ± 1/√400 1/√400",
       "= 0∙3375 ± 0∙05",
       "= [0∙2875, 0∙3875]"
@@ -10999,7 +11051,7 @@
    {
     "id": "maths-2022-hl-p2-q7-e-r1",
     "kind": "anyN",
-    "verbatim": "(e) |EB| |EC| = = 15/(√15² + 30²) = 15√5",
+    "verbatim": "sin EBO = |EO|/15 and",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Full Credit –1: Correct value found, but not in the correct form; Finds |OB| (which is 6√5 cm). These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -11007,10 +11059,6 @@
      "claimMax": 3,
      "perOption": 2,
      "options": [
-      "(e) |EB| |EC| = = 15/(√15² + 30²) = 15√5",
-      "ΔEOB is similar to ΔEBC, so |EO|/|EB| = |EB|/|EC|",
-      "|EO| = 15²/15√5 = 3√5 [cm]",
-      "|∠EBO| = |∠BCE| and tan BCE = 1/2",
       "sin EBO = |EO|/15 and",
       "sin EBO = sin BCE = 1/(√1² + 2²) 1/(√1² + 2²) = 1/√5 1/√5",
       "So |EO| = 15/√5 15/√5 = 3√5 [cm]"
@@ -11029,13 +11077,13 @@
  {
   "id": "maths-2022-hl-p2-q8-a-i",
   "topicId": "maths-1-6",
-  "conceptId": "scatterplot-shows-data-cars",
+  "conceptId": "scatterplot-shows-data-cars-scatterplot-draw",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q8(a)(i), (ii)",
-  "questionText": "The scatterplot below shows this data for cars A to F",
+  "questionText": "The scatterplot below shows this data for cars A to F. On the scatterplot, draw the line of best fit for the data, by eye",
   "figureKey": "maths-2022-HL-paper-p050-i0",
   "labelKey": [],
   "tariffModel": {
@@ -11080,7 +11128,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q8(a)(iii), (iv)",
-  "questionText": "(iii) Two other cars, K and L, have the miles per gallon values given in the following table",
+  "questionText": "(iii) Two other cars, K and L, have the miles per gallon values given in the following table. (iv) Based on the data given, would you be more confident in the value you estimated for K or for L? Give a reason for your answer",
   "figureKey": "maths-2022-HL-paper-p050-i1",
   "labelKey": [],
   "tariffModel": {
@@ -11115,6 +11163,46 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2022-HL-ask-p2-q8-a-iii"
+ },
+ {
+  "id": "maths-2022-hl-p2-q8-b-v",
+  "topicId": "maths-4-2",
+  "conceptId": "value-correlation-coefficient-between-city-motorway",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 2 Q8(a)(v), (b)",
+  "questionText": "Find the value of r, the correlation coefficient between city and motorway miles per gallon. Use only the values for the 8 cars A to H in the table on the previous page. Give your answer correct to 3 decimal places. The scatterplot on the right shows some values of fuel consumption (F) for the given values of engine speed (S), for a particular car. For the points in this scatterplot, F can be closely approximated by a quadratic function of S",
+  "figureKey": "maths-2022-HL-paper-p051-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p2-q8-b-v-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, in (a)(v), fully substituted correct formula; or, in (b), draws axis of symmetry or line of best fit",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit –1: (b) correct and 0∙965 or 0∙96 or 0∙97 given in (a)(v). Note: In (a)(v), accept correct answer without supporting work. Marked in order: Partial Credit.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Work of merit, for example, in (a)(v), fully substituted correct formula; or, in (b), draws axis of symmetry or line of best fit"
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q8-a-v"
  },
  {
   "id": "maths-2022-hl-p2-q8-c",
@@ -11347,7 +11435,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q9-c-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "airplane-flies-its-engine-makes-noise",
   "level": "higher",
   "year": 2022,
@@ -11437,7 +11525,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q9-d-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "explain-briefly-why-equation-holds-100",
   "level": "higher",
   "year": 2022,
@@ -11571,7 +11659,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-a-ii",
-  "topicId": "maths-4-4",
+  "topicId": "maths-1-2",
   "conceptId": "runners-fastest-times-qualified-final-assuming",
   "level": "higher",
   "year": 2022,
@@ -11708,7 +11796,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-d",
-  "topicId": "maths-4-4",
+  "topicId": "maths-1-2",
   "conceptId": "300-runners-take-part-road-race",
   "level": "higher",
   "year": 2022,
@@ -11730,7 +11818,7 @@
    {
     "id": "maths-2022-hl-p2-q10-d-r1",
     "kind": "anyN",
-    "verbatim": "50 possible pairs of numbers add to 101:",
+    "verbatim": "100 different 1st numbers could be picked;",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -11738,10 +11826,6 @@
      "claimMax": 3,
      "perOption": 2,
      "options": [
-      "50 possible pairs of numbers add to 101:",
-      "1 + 100, 2 + 99, ... , 50 + 51",
-      "300C2 = 44 850 pairs in total.",
-      "So P = 50/(44 850) = 1/897",
       "100 different 1st numbers could be picked;",
       "for each, only one 2nd number will give 101:",
       "P = 100/300 × 1/299 = 1/897"
@@ -11759,7 +11843,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-e",
-  "topicId": "maths-4-4",
+  "topicId": "maths-1-2",
   "conceptId": "sorcha-ran-two-different-marathons-windy",
   "level": "higher",
   "year": 2022,
@@ -11805,13 +11889,13 @@
  {
   "id": "maths-2022-ol-p1-q1-a",
   "topicId": "maths-4-4",
-  "conceptId": "using-argand-diagram-two-other-complex",
+  "conceptId": "using-argand-diagram-plot-label-argand",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q1(a), (b)",
-  "questionText": "Using the Argand diagram: z₂ and z₃ are two other complex numbers. z₂ = −5 + 3i and z₃ = 4 −2i, where i² = −1",
+  "questionText": "Using the Argand diagram: Plot and label z₂ and z₃ on the Argand diagram on the previous page",
   "figureKey": "maths-2022-OL-paper-p007-i0",
   "labelKey": [],
   "tariffModel": {
@@ -12189,7 +12273,7 @@
    {
     "id": "maths-2022-ol-p1-q3-c-r1",
     "kind": "anyN",
-    "verbatim": "80 × 12 = €960 total annual increase",
+    "verbatim": "100% of increase = 16 × 100 = [€]1600",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. NOTE: Full Credit. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -12197,9 +12281,6 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "80 × 12 = €960 total annual increase",
-      "60% of increase = €960",
-      "1% of increase = 960/60 = 16",
       "100% of increase = 16 × 100 = [€]1600",
       "Trial and improvement leading to solution",
       "Need to show solving using a variable?"
@@ -12354,7 +12435,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q4(b)(i), (ii)",
-  "questionText": "Using the graph, write down a value of x for which u′(x) is negative",
+  "questionText": "Using the graph, write down a value of x for which u′(x) is negative. On the diagram above, draw the tangent to u(x) at the point (4, 2) and use the tangent that you draw to work out an estimate for the value of u′(4)",
   "figureKey": "maths-2022-OL-paper-p012-i3",
   "labelKey": [],
   "tariffModel": {
@@ -12389,6 +12470,51 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2022-OL-ask-p1-q4-b-i"
+ },
+ {
+  "id": "maths-2022-ol-p1-q5-a-i",
+  "topicId": "maths-5-1",
+  "conceptId": "1200",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 Q5(a)(i), (ii)",
+  "questionText": "1200 0∙27",
+  "figureKey": "maths-2022-OL-paper-p014-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-q5-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, a or n correct in one part, or one number correctly written in form a × 10ⁿ but where a < 1 or a > 10\n1000 or 1/10",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Work of merit, for example, a or n correct in one part, or one number correctly written in form a × 10ⁿ but where a < 1 or a > 10\n1000 or 1/10",
+      "One part correct"
+     ],
+     "perOptionSteps": [
+      3,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q5-a-i"
  },
  {
   "id": "maths-2022-ol-p1-q5-b",
@@ -12439,14 +12565,14 @@
  },
  {
   "id": "maths-2022-ol-p1-q5-c-i",
-  "topicId": "maths-3-3",
-  "conceptId": "two-values-which",
+  "topicId": "maths-5-1",
+  "conceptId": "two-values-which-range-values-which",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q5(c)(i), (ii)",
-  "questionText": "the two values of x for which m(x) = 0 x= or x=",
+  "questionText": "the two values of x for which m(x) = 0 x= or x= the range of values of x for which k(x) is less than m(x)",
   "figureKey": "maths-2022-OL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -12661,14 +12787,14 @@
  },
  {
   "id": "maths-2022-ol-p1-q7-a-i",
-  "topicId": "maths-5-1",
+  "topicId": "maths-3-1",
   "conceptId": "complete-table-values-given-values-each",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q7(a)(i), (ii)",
-  "questionText": "Complete the table below to show the values of h(x) for the given values of x. Give each value of h(x) correct to the nearest whole number",
+  "questionText": "Complete the table below to show the values of h(x) for the given values of x. Give each value of h(x) correct to the nearest whole number. Draw the graph of y = h(x) on the axes below, for 0 ≤ x ≤ 6, x∈ℝ. Note that the point A (6, 169) is on the graph",
   "figureKey": "maths-2022-OL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
@@ -12918,7 +13044,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-2-3",
   "conceptId": "work-out-how-many-acid-200",
   "level": "ordinary",
   "year": 2022,
@@ -13043,7 +13169,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-2-3",
   "conceptId": "when-she-making-another-mixture-jessica",
   "level": "ordinary",
   "year": 2022,
@@ -13088,7 +13214,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-2-3",
   "conceptId": "write-down-values-cube-these-values",
   "level": "ordinary",
   "year": 2022,
@@ -13407,7 +13533,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q9(c)(i), (ii)",
-  "questionText": "Draw a line on the diagram above, passing through the first two points on the graph with whole-number values of t (t = 0 and t = 1). Continue your line until it reaches the horizontal axis",
+  "questionText": "Draw a line on the diagram above, passing through the first two points on the graph with whole-number values of t (t = 0 and t = 1). Continue your line until it reaches the horizontal axis. Hence, or otherwise, estimate T, the age of Brian’s car when its value would be €0, according to this new model",
   "figureKey": "maths-2022-OL-paper-p024-i0",
   "labelKey": [],
   "tariffModel": {
@@ -13934,13 +14060,13 @@
  {
   "id": "maths-2022-ol-p2-q1-b-i",
   "topicId": "maths-2-2",
-  "conceptId": "length",
+  "conceptId": "length-write-down-equation-horizontal-line",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q1(b)(i), (ii)",
-  "questionText": "Find the length |LM|",
+  "questionText": "Find the length |LM|. Write down the equation of the horizontal line LM",
   "figureKey": "maths-2022-OL-paper-p033-i0",
   "labelKey": [],
   "tariffModel": {
@@ -14433,7 +14559,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q4-a",
-  "topicId": "maths-3-3",
+  "topicId": "maths-1-6",
   "conceptId": "group-students-sat-exam-each-student",
   "level": "ordinary",
   "year": 2022,
@@ -14487,7 +14613,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q4(b)(i), (ii)",
-  "questionText": "What percentage of the people had scores between 80 and 120?",
+  "questionText": "What percentage of the people had scores between 80 and 120? The top 2∙5% of scores were given a grade of ‘Exceptional’. What was the least score that was needed to get this grade?",
   "figureKey": "maths-2022-OL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
@@ -14575,13 +14701,13 @@
  {
   "id": "maths-2022-ol-p2-q5-a-i",
   "topicId": "maths-2-3",
-  "conceptId": "write-down-size-angle-pqr",
+  "conceptId": "write-down-size-angle-pqr-area",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q5(a)(i), (ii)",
-  "questionText": "Write down the size of the angle ∠ PQR",
+  "questionText": "Write down the size of the angle ∠ PQR. Show that the area of the triangle PQR is 16√3 cm²",
   "figureKey": "maths-2022-OL-paper-p041-i0",
   "labelKey": [],
   "tariffModel": {
@@ -14731,7 +14857,7 @@
    {
     "id": "maths-2022-ol-p2-q6-a-i-r1",
     "kind": "anyN",
-    "verbatim": "Diagram:",
+    "verbatim": "130°",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5. Note: Check Candidate’s Diagram for meritorious work throughout this question B • Hit or Miss. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -14739,9 +14865,6 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "Diagram:",
-      "65^o",
-      "50^o",
       "130°"
      ]
     }
@@ -14819,7 +14942,7 @@
    {
     "id": "maths-2022-ol-p2-q6-a-iii-r1",
     "kind": "anyN",
-    "verbatim": "Minor arc:",
+    "verbatim": "130/360 × 2𝜋(18) = 13𝜋 [cm]",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Note: Misreading(-1). These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -14827,7 +14950,6 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "Minor arc:",
       "130/360 × 2𝜋(18) = 13𝜋 [cm]",
       "Major arc:",
       "(360−130)/360 × 2𝜋(18) = 23𝜋 [cm]"
@@ -14852,7 +14974,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q6(b)(i), (ii)",
-  "questionText": "Statement A: If two triangles are similar, then they must be congruent",
+  "questionText": "Statement A: If two triangles are similar, then they must be congruent. Statement B: If two triangles are congruent, then they must be similar",
   "figureKey": "maths-2022-OL-paper-p044-i1",
   "labelKey": [],
   "tariffModel": {
@@ -14961,7 +15083,7 @@
    {
     "id": "maths-2022-ol-p2-q7-a-ii-r1",
     "kind": "anyN",
-    "verbatim": "Conclusion:",
+    "verbatim": "That the weight of the dogs has increased from",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Note: Word ”Increase” or similar must feature in conclusion. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -14969,7 +15091,6 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Conclusion:",
       "That the weight of the dogs has increased from",
       "Day X to Day Y"
      ],
@@ -15084,7 +15205,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q7(c)(i), (ii)",
-  "questionText": "Find the probability that the first animal picked was a cat",
+  "questionText": "Find the probability that the first animal picked was a cat. Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places",
   "figureKey": "maths-2022-OL-paper-p046-i1",
   "labelKey": [],
   "tariffModel": {
@@ -15657,6 +15778,51 @@
   "questionFigureKey": "maths-2022-OL-ask-p2-q9-c"
  },
  {
+  "id": "maths-2022-ol-p2-q9-d",
+  "topicId": "maths-2-3",
+  "conceptId": "scale-diagram-front-shed-shown-one",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q9(d)",
+  "questionText": "A scale diagram of the front of the shed is shown below. One point on the diagram is marked A",
+  "figureKey": "maths-2022-OL-paper-p053-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q9-d-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit\nDraws enlarged image correctly without construction line.\nDraws THREE or FOUR rays with at least one image point marked\nMarks off any of the image points to satisfy the Scale Factor (3) e.g. Draws = [AE¹]",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Work of merit\nDraws enlarged image correctly without construction line.\nDraws THREE or FOUR rays with at least one image point marked\nMarks off any of the image points to satisfy the Scale Factor (3) e.g. Draws = [AE¹]",
+      "Draws ray AD¹ along with TWO other correct rays and at least ONE correct image point\nConstructs D¹ along with TWO other correct image points"
+     ],
+     "perOptionSteps": [
+      3,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q9-d"
+ },
+ {
   "id": "maths-2022-ol-p2-q9-e-i",
   "topicId": "maths-2-3",
   "conceptId": "correct-decimal-places",
@@ -15812,7 +15978,7 @@
    {
     "id": "maths-2022-ol-p2-q10-b-i-r1",
     "kind": "anyN",
-    "verbatim": "(i) M. E. = 1/√n 1/√n",
+    "verbatim": "= 0 ∙0258 × 100",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -15820,8 +15986,6 @@
      "claimMax": 3,
      "perOption": 2,
      "options": [
-      "(i) M. E. = 1/√n 1/√n",
-      "M. E. = 1/√1500 1/√1500",
       "= 0 ∙0258 × 100",
       "= 2 ∙58 %",
       "= 2 ∙6 %"
@@ -15891,7 +16055,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q10(b)(iii), (iv)",
-  "questionText": "(iii) Use the percentages given in (b)(i) and (b)(ii) to write down a 95% confidence interval for the percentage of all adults in Ireland who walk for recreation, in 2022",
+  "questionText": "(iii) Use the percentages given in (b)(i) and (b)(ii) to write down a 95% confidence interval for the percentage of all adults in Ireland who walk for recreation, in 2022. (iv) According to the 2019 Irish Sport Monitor Report, 65% of the adults in Ireland walked for recreation",
   "figureKey": "maths-2022-OL-paper-p057-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15906,7 +16070,7 @@
    {
     "id": "maths-2022-ol-p2-q10-b-iii-r1",
     "kind": "anyN",
-    "verbatim": "(iii) 71 −2∙6 ≤ p ≤ 71 + 2∙6",
+    "verbatim": "that the figure of 65% has changed",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -15914,12 +16078,6 @@
      "claimMax": 4,
      "perOption": 3,
      "options": [
-      "(iii) 71 −2∙6 ≤ p ≤ 71 + 2∙6",
-      "68∙4 ≤ p ≤ 73∙6 [C.I.]",
-      "[H₀ = 65% ]",
-      "[H_A ≠ 65%].",
-      "Conclusion:",
-      "Reject the Null hypothesis and conclude",
       "that the figure of 65% has changed",
       "in 2022",
       "Reason:",
@@ -16099,23 +16257,19 @@
     "verbatim": "1 linear equation.\nOne correct value of m found without work.\nAttempts at trial and improvement.",
     "marks": 15,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Note: Method 1. Note: If quadratic does not have an m term award Mid Partial Credit at most. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: Method 1. Note: If quadratic does not have an m term award Mid Partial Credit at most. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 4,
      "options": [
       "1 linear equation.\nOne correct value of m found without work.\nAttempts at trial and improvement.",
       "One value of m found with work.",
-      "One value of m correctly found and work of merit in finding the second value. Method 2",
-      "Indication of squaring",
-      "relevant quadratic in m expanded (Line 2 of the solution)\nQuadratic is missing the m term, otherwise correct",
-      "quadratic factorised\nquadratic formula fully substituted"
+      "One value of m correctly found and work of merit in finding the second value. Method 2"
      ],
      "perOptionSteps": [
       4,
       4,
-      4,
-      3
+      7
      ]
     }
    }
@@ -16173,13 +16327,13 @@
  {
   "id": "maths-2023-hl-p1-q1-c",
   "topicId": "maths-3-1",
-  "conceptId": "factor-value-value",
+  "conceptId": "factor",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q1(c)",
-  "questionText": "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p < 0. Find the value of p and the value of r. p = ____________ and r = ____________",
+  "questionText": "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p < 0",
   "figureKey": "maths-2023-HL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16197,26 +16351,19 @@
     "verbatim": "Work of merit, for example, some correct division, or sets up long division.",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Note: Full credit -1 if p = √3 but otherwise correct Method 1 4 steps: 1. Sets up long division 2. First cycle in long division correct 3. Value of p found 4. Value of r found. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: Full credit -1 if p = √3 but otherwise correct Method 1 4 steps: 1. Sets up long division 2. First cycle in long division correct 3. Value of p found 4. Value of r found. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 2,
      "options": [
       "Work of merit, for example, some correct division, or sets up long division.",
       "2 steps correct",
-      "3 steps correct Method 2 4 steps: 1. Equation set up 2. Expansion of the product (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found",
-      "Work of merit, for example, mentions linear factor",
-      "2 steps correct",
-      "3 steps correct. Method 3 1. Grid set up 2. Grid completed (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found",
-      "Work of merit, for example, mentions linear factor.",
-      "2 steps correct.",
-      "3 steps correct."
+      "3 steps correct Method 2 4 steps: 1. Equation set up 2. Expansion of the product (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found"
      ],
      "perOptionSteps": [
       2,
       1,
-      1,
-      1
+      2
      ]
     }
    }
@@ -16295,20 +16442,22 @@
    {
     "id": "maths-2023-hl-p1-q2-b-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, n indicates sum of limits, divides 3) )቏ by highest power of n in one of first two terms\nSubstitutes ∞ for n\nFinds two or more terms of the sequence, Tₙ = n/(n + 1) + (n + 1000)/n + (/3) 1 n",
+    "verbatim": "(b) n→∞ lim ( n/(n + 1) + (n + 1000)/n + (1/3) n )",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Full credit for correct answer n without work. ). Marked in order: Low Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Note: Full credit for correct answer n without work. ). These are the lines of the scheme's own printed solution, in the order it sets them out.",
     "group": {
-     "claimMax": 2,
+     "claimMax": 3,
      "perOption": 2,
      "options": [
-      "Work of merit, for example, n indicates sum of limits, divides 3) )቏ by highest power of n in one of first two terms\nSubstitutes ∞ for n\nFinds two or more terms of the sequence, Tₙ = n/(n + 1) + (n + 1000)/n + (/3) 1 n",
-      "One limit correctly evaluated and work of merit in any one of the other two limits"
+      "(b) n→∞ lim ( n/(n + 1) + (n + 1000)/n + (1/3) n )",
+      "= n→∞ lim n (/1) + n + n→∞ lim (n )/n + 1000 + n→∞ lim ((1/3)",
+      "= 1/(1 + 0) + (1 + 0)/1 + 0"
      ],
      "perOptionSteps": [
       2,
-      3
+      1,
+      2
      ]
     }
    }
@@ -16464,7 +16613,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q3(c)(i), (ii)",
-  "questionText": "Explain what log₆m means, where m is a positive real number",
+  "questionText": "Explain what log₆m means, where m is a positive real number. m is a real number, and m > 6",
   "figureKey": "maths-2023-HL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16527,24 +16676,17 @@
     "verbatim": "Work of merit, for example, some correct substitution or some correct multiplication",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Note: Any attempt involving the conjugate of 1 + i, award Low Partial Credit at most. Method 1. Marked in order: Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Any attempt involving the conjugate of 1 + i, award Low Partial Credit at most. Method 1. Marked in order: Low Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 3,
+     "claimMax": 2,
      "perOption": 2,
      "options": [
       "Work of merit, for example, some correct substitution or some correct multiplication",
-      "Fully correct substitution and multiplication Method 2",
-      "z²−(sum)z + product\nStates p is the product of the roots\nSum of the roots = −3 + 2i",
-      "Finds 2nd root\nStates sum of the roots = 3 −2i, but finishes correctly Method 3",
-      "Some correct substitution in the quadratic formula",
-      "Formula fully substituted and 1 + i substituted for z\nFormula fully substituted and set equal to 1 + i Method 4",
-      "Sets up long division but divisor must be of the form z−a + bi, where a = 1 and b = −1 (Accept b = 1 here)",
-      "First cycle of long division done correctly."
+      "Fully correct substitution and multiplication Method 2"
      ],
      "perOptionSteps": [
       2,
-      1,
-      2
+      3
      ]
     }
    }
@@ -16608,7 +16750,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q4(c)(i)–(iii)",
-  "questionText": "(i) where Write the/iu complex is the complex numbers conjugate iu and of iu complex numbers iu and iu in their simplest form, in terms of a and b, iu is the complex conjugate of iu",
+  "questionText": "(i) where Write the/iu complex is the complex numbers conjugate iu and of iu complex numbers iu and iu in their simplest form, in terms of a and b, iu is the complex conjugate of iu. Plot and label the complex numbers iuand iu on the diagram above, as accurately as possible. State a transformation, or series of transformations, that would send u to iu. Do not include a translation in your answer",
   "figureKey": "maths-2023-HL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16740,14 +16882,14 @@
  },
  {
   "id": "maths-2023-hl-p1-q5-c-i",
-  "topicId": "maths-5-2",
-  "conceptId": "value",
+  "topicId": "maths-5-1",
+  "conceptId": "value-explain-why-injective-but-not",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q5(c)(i), (ii)",
-  "questionText": "Find the value of g(f(3))",
+  "questionText": "Find the value of g(f(3)). Explain why g: B→C is injective but not surjective (that is, one-to-one but not onto)",
   "figureKey": "maths-2023-HL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17280,7 +17422,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q8(b)(i), (ii)",
-  "questionText": "Explain what is meant by the “present value” of a payment of €1000 in 1 year’s time, at a particular interest rate",
+  "questionText": "Explain what is meant by the “present value” of a payment of €1000 in 1 year’s time, at a particular interest rate. Chen puts a different amount in a savings account with the same interest rate (2∙4% per year). After 6 years, Chen has €4000 in the account",
   "figureKey": "maths-2023-HL-paper-p025-i1",
   "labelKey": [],
   "tariffModel": {
@@ -17295,22 +17437,24 @@
    {
     "id": "maths-2023-hl-p1-q8-b-i-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit in (i) or (ii), for example, formula in (i), correct substitution into relevant formula in (ii)\n2.4% written as a decimal",
+    "verbatim": "It is the amount that should be invested\ntoday to amount to €1000 in 1 years’\ntime at the particular interest rate.",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: In (i) Accept P = 1000/(1 + i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: In (i) Accept P = 1000/(1 + i). These are the lines of the scheme's own printed solution, in the order it sets them out.",
     "group": {
-     "claimMax": 3,
+     "claimMax": 4,
      "perOption": 3,
      "options": [
-      "Work of merit in (i) or (ii), for example, formula in (i), correct substitution into relevant formula in (ii)\n2.4% written as a decimal",
-      "(i) or (ii) correct\nWork of merit in both parts",
-      "One part correct and work of merit in the other part"
+      "It is the amount that should be invested\ntoday to amount to €1000 in 1 years’\ntime at the particular interest rate.",
+      "(ii) 4000 = P(1 + 0.024)⁶",
+      "4000/1.024⁶ = P",
+      "P = €3469 · 45"
      ],
      "perOptionSteps": [
       3,
       2,
-      5
+      3,
+      2
      ]
     }
    }
@@ -17372,7 +17516,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q8(d)(i), (ii)",
-  "questionText": "Taking €A to be the amount Rohan puts in his account at the start of each month, write down a geometric series in €A to show the total amount of money in the account at the end of the 3 years. Include the first two and the last two terms",
+  "questionText": "Taking €A to be the amount Rohan puts in his account at the start of each month, write down a geometric series in €A to show the total amount of money in the account at the end of the 3 years. Include the first two and the last two terms. Hence, find the value of €A that will give a total of €12 000 in the account after 3 years. Give your answer correct to the nearest cent",
   "figureKey": "maths-2023-HL-paper-p026-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17387,22 +17531,24 @@
    {
     "id": "maths-2023-hl-p1-q8-d-i-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit in either part, for example, in (i)Writes 0.11% as a decimal; in (ii), sets answer in (i) equal to 12000",
+    "verbatim": "A[1·0011 + (1 · 0011)² + ⋯",
     "marks": 15,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit –1: Correct solution, but excludes second and/or second last term; Investments made at the end of each month, otherwise correct. Note: Consider as requiring 3 steps: 1. Finds geometric series 2. Substitutes into geometric formula 3. Finds A. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Full Credit –1: Correct solution, but excludes second and/or second last term; Investments made at the end of each month, otherwise correct. Note: Consider as requiring 3 steps: 1. Finds geometric series 2. Substitutes into geometric formula 3. Finds A. These are the lines of the scheme's own printed solution, in the order it sets them out.",
     "group": {
-     "claimMax": 3,
+     "claimMax": 4,
      "perOption": 4,
      "options": [
-      "Work of merit in either part, for example, in (i)Writes 0.11% as a decimal; in (ii), sets answer in (i) equal to 12000",
-      "1 step correct\nSubstantial work of merit in both parts",
-      "2 steps correct"
+      "A[1·0011 + (1 · 0011)² + ⋯",
+      "a = 1 · 0011, r = 1 · 0011, n = 36",
+      "A [1 ]/(1 − 1 · 0011) = 12000",
+      "A = €326 · 60 [2 D.P.]"
      ],
      "perOptionSteps": [
       4,
       4,
-      7
+      4,
+      3
      ]
     }
    }
@@ -17504,7 +17650,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q9(a)(i)–(iii)",
-  "questionText": "List the 5 different factors of 2⁴. You can write each one as a power of 2",
+  "questionText": "List the 5 different factors of 2⁴. You can write each one as a power of 2. Work out how many different factors 3⁷ has. (iii) Work out how many different factors 2¹⁰ × 3¹² has",
   "figureKey": "maths-2023-HL-paper-p027-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17544,14 +17690,14 @@
  },
  {
   "id": "maths-2023-hl-p1-q9-b-i",
-  "topicId": "maths-5-2",
-  "conceptId": "complete-table-showing-pairs-factors",
+  "topicId": "maths-2-2",
+  "conceptId": "complete-table-showing-pairs-factors-plot",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q9(b)(i)–(iii)",
-  "questionText": "Complete the table below, showing the 6 pairs of factors (x and y) of 12",
+  "questionText": "Complete the table below, showing the 6 pairs of factors (x and y) of 12. Plot the 6 points above on the co-ordinate diagram below. One of the points is shown. Ava realises that the relationship between x and y is y =",
   "figureKey": "maths-2023-HL-paper-p027-i1",
   "labelKey": [],
   "tariffModel": {
@@ -17616,23 +17762,19 @@
     "verbatim": "Work of merit, for example, some correct differentiation, some correct substitution into equation of line formula",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: Method 1 & Method 2 4 steps: 1. Finds dy/dx 2. Finds slope at x = p 3. Subs slope and point (p, 12 )/p into equation of line formula 4. Finds equation in required form. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Method 1 & Method 2 4 steps: 1. Finds dy/dx 2. Finds slope at x = p 3. Subs slope and point (p, 12 )/p into equation of line formula 4. Finds equation in required form. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 3,
      "options": [
       "Work of merit, for example, some correct differentiation, some correct substitution into equation of line formula",
       "2 steps correct",
-      "3 steps correct Method 3 4 steps: 1. From the given equation writes down the slope of the tangent 2. Finds dy/dx 3. Substitutes x = p in dy/dx 4. Verifies that the point (p, 12 )/p is on the given equation",
-      "Work of merit, for example, some correct differentiation, some correct substitution into the given equation",
-      "2 steps correct.",
-      "3 steps correct."
+      "3 steps correct Method 3 4 steps: 1. From the given equation writes down the slope of the tangent 2. Finds dy/dx 3. Substitutes x = p in dy/dx 4. Verifies that the point (p, 12 )/p is on the given equation"
      ],
      "perOptionSteps": [
       3,
       2,
-      3,
-      2
+      5
      ]
     }
    }
@@ -17667,23 +17809,19 @@
     "verbatim": "Work of merit, for example, lets x = 0 or y = 0",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Note: Method 1 4 steps: 1. Finds the x-intercept 2. Finds the y-intercept 3. Substitution into area formula 4. Finds k. Note: Accept where candidates substitute a value for p into the equation of the tangent, find both intercepts of the subsequent equation, and then find k. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: Method 1 4 steps: 1. Finds the x-intercept 2. Finds the y-intercept 3. Substitution into area formula 4. Finds k. Note: Accept where candidates substitute a value for p into the equation of the tangent, find both intercepts of the subsequent equation, and then find k. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 2,
      "options": [
       "Work of merit, for example, lets x = 0 or y = 0",
       "2 steps correct",
-      "3 steps correct Method 2 1. Finds x intercept 2. Integrates the function 3. Substitutes limits 4. Finds k",
-      "Work of merit, for example, lets y = 0\nIndicates integration",
-      "2 steps correct",
-      "3 steps correct"
+      "3 steps correct Method 2 1. Finds x intercept 2. Integrates the function 3. Substitutes limits 4. Finds k"
      ],
      "perOptionSteps": [
       2,
       1,
-      1,
-      1
+      2
      ]
     }
    }
@@ -17775,6 +17913,53 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2023-HL-ask-p1-q10-b"
+ },
+ {
+  "id": "maths-2023-hl-p1-q10-c",
+  "topicId": "maths-3-4",
+  "conceptId": "total-area-rectangles-square-units-terms",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 Q10(c)",
+  "questionText": "Find the total area of the n rectangles in Tₙ , for n∈ℕ. Give your answer in square units in terms of n, in its simplest form",
+  "figureKey": "maths-2023-HL-paper-p031-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-q10-c-r1",
+    "kind": "anyN",
+    "verbatim": "= 8/n",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "= 8/n",
+      "Area = (/n) 8 + (/2 1 × 2 × 8)",
+      "= 8/n + 8"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q10-c"
  },
  {
   "id": "maths-2023-hl-p1-q10-d",
@@ -17890,7 +18075,7 @@
    {
     "id": "maths-2023-hl-p1-q10-e-ii-r1",
     "kind": "anyN",
-    "verbatim": "(e)(ii) dx/dt = 3 dS/dt = dS/dx × dx/dt",
+    "verbatim": "= 6c²x/h²",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -17898,15 +18083,10 @@
      "claimMax": 4,
      "perOption": 3,
      "options": [
-      "(e)(ii) dx/dt = 3 dS/dt = dS/dx × dx/dt",
-      "S(x) = (x² c²)/ℎ²",
-      "dS/dx = c²/h² (2x)",
-      "dS/dt = c²/h² (2x)(3)",
       "= 6c²x/h²",
       "When x = ℎ/2",
       "dS = 6c² (h/2) = 3c²",
-      "dS/dt = 2)/h² 6c² (h = 3c²/h",
-      "Mathematics – Higher Level"
+      "dS/dt = 2)/h² 6c² (h = 3c²/h"
      ],
      "perOptionSteps": [
       3,
@@ -17989,22 +18169,24 @@
    {
     "id": "maths-2023-hl-p2-q1-b-r1",
     "kind": "anyN",
-    "verbatim": "P(success) = 1/4\nP(failure) = 3/4\n(⁷ 2)\n1/4 for the last day\n(⁸ 3)",
+    "verbatim": "P(success) = 1/4",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit -1: Incorrect rounding or no rounding. Note: Consider the solution as being the product of four terms: (⁷ 2), (/4) 1 2 , (/4) 3 5 and 1/4. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Full Credit -1: Incorrect rounding or no rounding. Note: Consider the solution as being the product of four terms: (⁷ 2), (/4) 1 2 , (/4) 3 5 and 1/4. These are the lines of the scheme's own printed solution, in the order it sets them out.",
     "group": {
-     "claimMax": 3,
+     "claimMax": 4,
      "perOption": 3,
      "options": [
-      "P(success) = 1/4\nP(failure) = 3/4\n(⁷ 2)\n1/4 for the last day\n(⁸ 3)",
-      "Product of two correct terms evaluated\nProduct of three correct terms",
-      "(⁷ 2) (/4) 1 2 (/4) 3 5 × 1/4"
+      "P(success) = 1/4",
+      "P(failure) = 3/4",
+      "= (7 2) (1/4) 2 (3/4) 5 × 1/4",
+      "= 0 · 0779 [4 d.p.]"
      ],
      "perOptionSteps": [
       3,
       2,
-      5
+      3,
+      2
      ]
     }
    }
@@ -18083,10 +18265,55 @@
    {
     "id": "maths-2023-hl-p2-q2-a-r1",
     "kind": "anyN",
+    "verbatim": "Work of merit, for example, cos(A−B) formula\nVerified with one or more values for A and B\nsin A = cos(90 −A) or cos A = sin(90 −A)",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, cos(A−B) formula\nVerified with one or more values for A and B\nsin A = cos(90 −A) or cos A = sin(90 −A)",
+      "cos(90 −A−B) = cos(90 −A) cos B + sin(90 −A) sin B"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-HL-ask-p2-q2-a"
+ },
+ {
+  "id": "maths-2023-hl-p2-q2-b",
+  "topicId": "maths-2-3",
+  "conceptId": "using-formula-part-without-using-calculator",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 Q2(b)",
+  "questionText": "Using the formula in part (a), and without using a calculator, find the value of sin 75°. Give your answer in surd form",
+  "figureKey": "maths-2023-HL-paper-p040-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-q2-b-r1",
+    "kind": "anyN",
     "verbatim": "Work of merit, for example 30 + 45, or some correct substitution into relevant formula",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Note: OR √2) + √3 2( 2( √2) for full credit. Note: Accept. Marked in order: Low Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Note: √2) + √3 2( 2( √2) for full credit. Note: Accept. Marked in order: Low Partial Credit; High Partial Credit.",
     "group": {
      "claimMax": 2,
      "perOption": 4,
@@ -18102,7 +18329,7 @@
    }
   ],
   "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p2-q2-a"
+  "questionFigureKey": "maths-2023-HL-ask-p2-q2-b"
  },
  {
   "id": "maths-2023-hl-p2-q2-c",
@@ -18131,23 +18358,19 @@
     "verbatim": "Work of merit, for example, effort to expand sin2t or some correct transposition",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Full Credit –1: Apply a * for each solution omitted from Step 3 or Step 4 Method 2. Note: Method 1 Consider as involving 4 steps: 1. Replaces sin2t with 2 sintcost 2. sint[1 − 2 cost] = 0 stated or implied 3. Solves sint = 0 4. Solves 1 −2 cost = 0 OR 1. sin2t−sint = 0 2. 2cos 3t/2 sin t/2 = 0 3. Solves cos 3t/2 = 0 4. Solves sin t/2 = 0. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit –1: Apply a * for each solution omitted from Step 3 or Step 4 Method 2. Note: Method 1 Consider as involving 4 steps: 1. Replaces sin2t with 2 sintcost 2. sint[1 − 2 cost] = 0 stated or implied 3. Solves sint = 0 4. Solves 1 −2 cost = 0 OR 1. sin2t−sint = 0 2. 2cos 3t/2 sin t/2 = 0 3. Solves cos 3t/2 = 0 4. Solves sin t/2 = 0. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 3,
      "options": [
       "Work of merit, for example, effort to expand sin2t or some correct transposition",
       "2 steps correct",
-      "3 steps correct",
-      "One correct solution",
-      "3 correct values verified",
-      "4 correct values verified\nAll values correct but no work shown"
+      "3 steps correct"
      ],
      "perOptionSteps": [
       3,
       2,
-      3,
-      2
+      5
      ]
     }
    }
@@ -18182,23 +18405,19 @@
     "verbatim": "Work of merit in translating one point to (0,0)",
     "marks": 15,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Note: Method1. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: Method1. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 4,
      "options": [
       "Work of merit in translating one point to (0,0)",
       "Three points correctly translated\nTwo of the given points subbed in to the area formula and evaluated",
-      "Correct substitution into Area formula\nOne error in translating points and finishes correctly Method 2",
-      "Work of merit, for example, finds one relevant piece of data eg. length of one side",
-      "All information relevant to one formula calculated, for example, the lengths of 2 sides and the included angle; or the length of one side and the perpendicular height",
-      "Correct substitution into Area formula"
+      "Correct substitution into Area formula\nOne error in translating points and finishes correctly Method 2"
      ],
      "perOptionSteps": [
       4,
       4,
-      4,
-      3
+      7
      ]
     }
    }
@@ -18294,16 +18513,61 @@
   "questionFigureKey": "maths-2023-HL-ask-p2-q3-b-ii"
  },
  {
-  "id": "maths-2023-hl-p2-q4-ii",
+  "id": "maths-2023-hl-p2-q4-a-i",
   "topicId": "maths-2-2",
-  "conceptId": "circle-has-equation-write-down-centre",
+  "conceptId": "write-down-centre-radius-circle-terms",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2023 HL Paper 2 Q4(ii)",
-  "questionText": "The circle c has equation: (x−h)2 + (y + 3)2 = 12 where h∈ℝ. Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate. The perpendicular distance from the line x−4y + 7 = 0 to the centre of the circle c is 5 units. The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 < a < 5, a∈ℝ",
+  "questionRef": "2023 HL Paper 2 Q4(a)(i)",
+  "questionText": "Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate",
   "figureKey": "maths-2023-HL-paper-p045-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-q4-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit towards finding x- ordinate or y-ordinate of the centre",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit towards finding x- ordinate or y-ordinate of the centre",
+      "Centre or radius correct"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-HL-ask-p2-q4-a-i"
+ },
+ {
+  "id": "maths-2023-hl-p2-q4-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "perpendicular-distance-line-centre-circle-units",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 Q4(a)(ii)",
+  "questionText": "The perpendicular distance from the line x−4y + 7 = 0 to the centre of the circle c is 5 units",
+  "figureKey": "maths-2023-HL-paper-p045-i1",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -18338,52 +18602,7 @@
    }
   ],
   "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p2-q4-ii"
- },
- {
-  "id": "maths-2023-hl-p2-q4-a-i",
-  "topicId": "maths-2-2",
-  "conceptId": "write-down-centre-radius-circle-terms",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2023 HL Paper 2 Q4(a)(i)",
-  "questionText": "Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate",
-  "figureKey": "maths-2023-HL-paper-p045-i1",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "maths-2023-hl-p2-q4-a-i-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit towards finding x- ordinate or y-ordinate of the centre",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 4,
-     "options": [
-      "Work of merit towards finding x- ordinate or y-ordinate of the centre",
-      "Centre or radius correct"
-     ],
-     "perOptionSteps": [
-      4,
-      6
-     ]
-    }
-   }
-  ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p2-q4-a-i"
+  "questionFigureKey": "maths-2023-HL-ask-p2-q4-a-ii"
  },
  {
   "id": "maths-2023-hl-p2-q4-b",
@@ -18441,7 +18660,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 2 Q5(a)(i)–(iii)",
-  "questionText": "Work out the mean and standard deviation of the number of red cubes per trial, for these 7 trials. Give each answer correct to 1 decimal place",
+  "questionText": "Work out the mean and standard deviation of the number of red cubes per trial, for these 7 trials. Give each answer correct to 1 decimal place. Work out the correlation coefficient between the number of red cubes and the number of green cubes per trial, for these 7 trials. Give your answer correct to 3 decimal places. (iii) Rohan repeats this experiment a large number of times. Explain why you would expect the correlation coefficient between the number of red cubes and the number of green cubes per trial to be negative",
   "figureKey": "maths-2023-HL-paper-p047-i0",
   "labelKey": [],
   "tariffModel": {
@@ -18759,7 +18978,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 2 Q7(c), (d)",
-  "questionText": "Find the values marked a and b on the graph, the minimum and maximum values of V",
+  "questionText": "Find the values marked a and b on the graph, the minimum and maximum values of V. What is the connection between V′(t), the derivative of V, and whether Olga is breathing in or breathing out?",
   "figureKey": "maths-2023-HL-paper-p051-i0",
   "labelKey": [],
   "tariffModel": {
@@ -18930,15 +19149,107 @@
   "questionFigureKey": "maths-2023-HL-ask-p2-q7-f"
  },
  {
-  "id": "maths-2023-hl-p2-q8-ii",
-  "topicId": "maths-1-2",
+  "id": "maths-2023-hl-p2-q8-a",
+  "topicId": "maths-1-6",
   "conceptId": "ireland-players-scores-approximately-normally-distributed",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2023 HL Paper 2 Q8(ii)",
-  "questionText": "In Ireland, players’ scores are approximately normally distributed, with a mean of 3·87 and a standard deviation of 0·36. A player is selected at random from the players in Ireland. Find the probability that this player has a score of less than 3·5. A random sample of 64 Galway players has a mean score of 3·74. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland. Use the information about this sample to construct a 95% confidence interval for the mean score of all Galway players. Use the standard deviation of 0·36 in your calculations. 20",
+  "questionRef": "2023 HL Paper 2 Q8(a)",
+  "questionText": "In Ireland, players’ scores are approximately normally distributed, with a mean of 3·87 and a standard deviation of 0·36",
+  "figureKey": "maths-2023-HL-paper-p053-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 8, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-q8-a-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 1. Find z -score 2. Find 0· 8485 3. Find solution. Note: Accept z = 1. 03 as correct z -score in Step 1, but must be handled correctly for Step 3. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎",
+      "Correct z-score or (3·5−3·87)/0·36",
+      "Finds z-score and further work, for example, finds 0.8485 or indicates 1 −P(z < 1 · 03)"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-HL-ask-p2-q8-a"
+ },
+ {
+  "id": "maths-2023-hl-p2-q8-b-i",
+  "topicId": "maths-1-6",
+  "conceptId": "information-about-sample-construct-confidence-interval",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 Q8(b)(i)",
+  "questionText": "Use the information about this sample to construct a 95% confidence interval for the mean score of all Galway players. Use the standard deviation of 0·36 in your calculations",
+  "figureKey": "maths-2023-HL-paper-p053-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-q8-b-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, some correct substitution into relevant formula",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Note: Credit at most. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, some correct substitution into relevant formula",
+      "Confidence interval fully substituted\nOne side of interval only caculated"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-HL-ask-p2-q8-b-i"
+ },
+ {
+  "id": "maths-2023-hl-p2-q8-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "carry-out-hypothesis-test-level-significance",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 Q8(b)(ii)",
+  "questionText": "Carry out a hypothesis test at the 5% level of significance to test the newspaper’s claim that Galway players have a different mean score to players in Ireland",
   "figureKey": "maths-2023-HL-paper-p054-i0",
   "labelKey": [],
   "tariffModel": {
@@ -18972,63 +19283,7 @@
    }
   ],
   "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p2-q8-ii"
- },
- {
-  "id": "maths-2023-hl-p2-q8-a",
-  "topicId": "maths-1-6",
-  "conceptId": "ireland-players-scores-approximately-normally-distributed",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2023 HL Paper 2 Q8(a)",
-  "questionText": "In Ireland, players’ scores are approximately normally distributed, with a mean of 3·87 and a standard deviation of 0·36",
-  "figureKey": "maths-2023-HL-paper-p053-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "maths-2023-hl-p2-q8-a-r1",
-    "kind": "anyN",
-    "verbatim": "(a) z = (x − 𝜇)/𝜎 = (3 · 5 − 3 · 87)/(0 · 36) = −1 · 03",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: 1. Find z -score 2. Find 0· 8485 3. Find solution. Note: Accept z = 1. 03 as correct z -score in Step 1, but must be handled correctly for Step 3. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 3,
-     "options": [
-      "(a) z = (x − 𝜇)/𝜎 = (3 · 5 − 3 · 87)/(0 · 36) = −1 · 03",
-      "P(x < 3 · 5)",
-      "= P(z < −1 · 03)",
-      "= 1 −P(z < 1 · 03)",
-      "= 1 −0 · 8485",
-      "= 0 · 1515",
-      "(b) (i) x̅ ± 1 · 96 𝜎/√n 𝜎/√n",
-      "3 · 74 − 1 · 96 (0 (· 36)/√64 ) = 3 · 6518",
-      "3 · 74 + 1 · 96 (0 (· 36)/√64 ) = 3 · 8282",
-      "C.I. : 3 · 6518 ≤ 𝜇≤3 · 8282",
-      "Mathematics – Higher Level"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      3,
-      2
-     ]
-    }
-   }
-  ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p2-q8-a"
+  "questionFigureKey": "maths-2023-HL-ask-p2-q8-b-ii"
  },
  {
   "id": "maths-2023-hl-p2-q8-c",
@@ -19078,6 +19333,98 @@
   "questionFigureKey": "maths-2023-HL-ask-p2-q8-c"
  },
  {
+  "id": "maths-2023-hl-p2-q8-d-i",
+  "topicId": "maths-1-6",
+  "conceptId": "complete-tree-diagram-writing-proportion-associated",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 Q8(d)(i)",
+  "questionText": "Complete the tree diagram, by writing the proportion associated with each branch of the tree diagram into the appropriate square and writing the number of people who play, win, and lose the game into the appropriate rectangle",
+  "figureKey": "maths-2023-HL-paper-p056-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 8, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-q8-d-i-r1",
+    "kind": "anyN",
+    "verbatim": "At least one correct entry",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit -1: One incorrect entry Mathematics – Higher Level. Note: (d)(i) Scale 10D (0, 3, 5, 8, 10) 19 entries to check – note: candidates work will need to be followed from left to right as a single error may lead to subsequent answers differing from those shown in solution. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "At least one correct entry",
+      "Eight correct entries",
+      "14 correct entries"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-HL-ask-p2-q8-d-i"
+ },
+ {
+  "id": "maths-2023-hl-p2-q8-d-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "one-person-picked-random-those-who",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 Q8(d)(ii)",
+  "questionText": "One person is picked at random from those who played the game on all three days (1st, 2nd, and 3rd June)",
+  "figureKey": "maths-2023-HL-paper-p057-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-q8-d-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit in finding total players or number of players who lost",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Method 1 3 steps: 1. Finds the total number of players who played on all three days 2. Finds the number of players who lost 3. Finds probability. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Work of merit in finding total players or number of players who lost",
+      "2 steps correct Method 2"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-HL-ask-p2-q8-d-ii"
+ },
+ {
   "id": "maths-2023-hl-p2-q9-a-i",
   "topicId": "maths-2-3",
   "conceptId": "work-out-length-side-square-tile",
@@ -19110,8 +19457,7 @@
      "perOption": 2,
      "options": [
       "(a) (i) Square: l = l²/√140 = = 140 11.83..",
-      "l = 11.8 cm [1 d.p.]",
-      "Mathematics – Higher Level"
+      "l = 11.8 cm [1 d.p.]"
      ],
      "perOptionSteps": [
       2,
@@ -19259,6 +19605,51 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2023-HL-ask-p2-q9-b-ii"
+ },
+ {
+  "id": "maths-2023-hl-p2-q9-c-i",
+  "topicId": "maths-2-3",
+  "conceptId": "qop-point",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 Q9(c)(i)",
+  "questionText": "|∠QOP| = 45°, where O is the point (0, 0)",
+  "figureKey": "maths-2023-HL-paper-p061-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-q9-c-i-r1",
+    "kind": "anyN",
+    "verbatim": "x = ± 1/√2 1/√2",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Note: Check drawing for relevant work of merit. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "x = ± 1/√2 1/√2",
+      "But x in 2ⁿ^d quadrant. ∴ x = (−1)/√2, (−1)/√2, and y ="
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-HL-ask-p2-q9-c-i"
  },
  {
   "id": "maths-2023-hl-p2-q9-c-ii",
@@ -19712,13 +20103,13 @@
  {
   "id": "maths-2023-ol-p1-q2-a-i",
   "topicId": "maths-4-4",
-  "conceptId": "plot-label-complex-conjugate-diagram",
+  "conceptId": "plot-label-complex-conjugate-diagram-plot",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q2(a)(i), (ii)",
-  "questionText": "Plot and label z₁̅ , the complex conjugate of z₁ , on the diagram above",
+  "questionText": "Plot and label z₁̅ , the complex conjugate of z₁ , on the diagram above. Plot and labelz₂ and z₃ on the diagram above",
   "figureKey": "maths-2023-OL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -19927,6 +20318,53 @@
   "questionFigureKey": "maths-2023-OL-ask-p1-q3-a"
  },
  {
+  "id": "maths-2023-ol-p1-q3-b-i",
+  "topicId": "maths-4-3",
+  "conceptId": "part",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 Q3(b)(i)–(iii)",
+  "questionText": "x≤ 2∙8, where x∈ℝ. x≤ 2∙8, where x∈ℤ. x≤ 2∙8, where x∈ℕ",
+  "figureKey": "maths-2023-OL-paper-p010-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 4, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-q3-b-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, shows knowledge of ℝ, ℤ, or ℕ.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: Accept 0 in (iii). Note: Apply a * the first time ≥ is used instead of ≤ ; accept it thereafter. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Work of merit, for example, shows knowledge of ℝ, ℤ, or ℕ.",
+      "One of the three inequalities graphed correctly\nWork of merit in 2 or 3 inequalities",
+      "Two of the inequalities graphed correctly"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q3-b-i"
+ },
+ {
   "id": "maths-2023-ol-p1-q3-c",
   "topicId": "maths-4-2",
   "conceptId": "algebra-solve-simultaneous-equations",
@@ -19975,14 +20413,14 @@
  },
  {
   "id": "maths-2023-ol-p1-q4-a-i",
-  "topicId": "maths-5-2",
-  "conceptId": "estimate-value-work-graph",
+  "topicId": "maths-5-1",
+  "conceptId": "estimate-value-work-graph-estimate-value",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q4(a)(i)–(iii)",
-  "questionText": "Estimate the value of g(1∙5). Show your work on the graph. g(1∙5) :",
+  "questionText": "Estimate the value of g(1∙5). Show your work on the graph. g(1∙5) : Estimate the value of x for which g(x) = −6. Show your work on the graph. x : (iii) Tick one box to show how many real roots the function g(x) has in this domain. Give a reason for your answer",
   "figureKey": "maths-2023-OL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20324,7 +20762,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q6-a-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-4-2",
   "conceptId": "value",
   "level": "ordinary",
   "year": 2023,
@@ -21029,19 +21467,17 @@
     "verbatim": "(f) 840/(0 ∙ 8547) × 1 ∙ 025 = 1007 ∙ 371007",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Note: Apply F* if incorrect or no rounding. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Apply F* if incorrect or no rounding. These are the lines of the scheme's own printed solution, in the order it sets them out.",
     "group": {
-     "claimMax": 3,
+     "claimMax": 2,
      "perOption": 4,
      "options": [
       "(f) 840/(0 ∙ 8547) × 1 ∙ 025 = 1007 ∙ 371007",
-      "€1007 ∙37",
-      "Mathematics – Ordinary Level"
+      "€1007 ∙37"
      ],
      "perOptionSteps": [
       4,
-      2,
-      4
+      6
      ]
     }
    }
@@ -21216,14 +21652,14 @@
  },
  {
   "id": "maths-2023-ol-p1-q9-b-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-1",
   "conceptId": "fill-table-values-given-values-each",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q9(b)(i), (ii)",
-  "questionText": "Fill in the table below to show the values of D(t) for the given values of t. Give each value correct to the nearest whole number",
+  "questionText": "Fill in the table below to show the values of D(t) for the given values of t. Give each value correct to the nearest whole number. Draw the graph of y = D(t) on the axes below, for 0 ≤ t ≤ 6 and t∈ℝ",
   "figureKey": "maths-2023-OL-paper-p023-i0",
   "labelKey": [],
   "tariffModel": {
@@ -21400,7 +21836,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q10(b)(i), (ii)",
-  "questionText": "One particular ring weighs 8 grams. It contains 3 grams of pure gold",
+  "questionText": "One particular ring weighs 8 grams. It contains 3 grams of pure gold. Pink gold is made up of pure gold, copper, and silver. The ratio of the weight of pure gold to copper to silver is 15 ∶4 ∶1, respectively",
   "figureKey": "maths-2023-OL-paper-p024-i2",
   "labelKey": [],
   "tariffModel": {
@@ -21759,7 +22195,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 2 Q1(c)(i), (ii)",
-  "questionText": "Draw the line segment through the point (4, 2) with a slope of 2 on the co-ordinate diagram below, with the range −2 ≤ y ≤ 6, y∈ℝ",
+  "questionText": "Draw the line segment through the point (4, 2) with a slope of 2 on the co-ordinate diagram below, with the range −2 ≤ y ≤ 6, y∈ℝ. Draw the line segment through the point (4, 2) with a slope of 2 on the co-ordinate diagram below, with the range −2 ≤ y ≤ 6, y∈ℝ",
   "figureKey": "maths-2023-OL-paper-p032-i0",
   "labelKey": [],
   "tariffModel": {
@@ -21800,13 +22236,13 @@
  {
   "id": "maths-2023-ol-p2-q2-a-i",
   "topicId": "maths-2-2",
-  "conceptId": "write-down-centre-radius-circle",
+  "conceptId": "write-down-centre-radius-circle-point",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 2 Q2(a)(i), (ii)",
-  "questionText": "Write down the centre and radius of the circle s",
+  "questionText": "Write down the centre and radius of the circle s. (ii) Show that the point (3, −4) is on the circle s",
   "figureKey": "maths-2023-OL-paper-p033-i0",
   "labelKey": [],
   "tariffModel": {
@@ -22086,7 +22522,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 2 Q3(b)(i), (ii)",
-  "questionText": "Write each of the letters A, B, and C in the correct place in the table below to show which scatterplot corresponds to each correlation coefficient. Use each letter only once",
+  "questionText": "Write each of the letters A, B, and C in the correct place in the table below to show which scatterplot corresponds to each correlation coefficient. Use each letter only once. For scatterplot B, explain why the value you picked is correct",
   "figureKey": "maths-2023-OL-paper-p036-i0",
   "labelKey": [],
   "tariffModel": {
@@ -22305,14 +22741,14 @@
  },
  {
   "id": "maths-2023-ol-p2-q5-a",
-  "topicId": "maths-2-2",
-  "conceptId": "length-radius-circle",
+  "topicId": "maths-3-4",
+  "conceptId": "length-radius-circle-work-out-area",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 2 Q5(a), (b)",
-  "questionText": "Find the length of the radius of the circle c",
+  "questionText": "Find the length of the radius of the circle c. Work out the area of the circle c. Give your answer correct to 2 decimal places",
   "figureKey": "maths-2023-OL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
@@ -23175,7 +23611,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 2 Q9(a)(i), (iii)",
-  "questionText": "Work out the maximum number of students in this sample who, on average, could have read for more than 100 minutes per day",
+  "questionText": "Work out the maximum number of students in this sample who, on average, could have read for more than 100 minutes per day. (iii) Explain why the method of choosing the students for this survey could limit the validity of the conclusions",
   "figureKey": "maths-2023-OL-paper-p049-i0",
   "labelKey": [],
   "tariffModel": {
@@ -23415,7 +23851,7 @@
    {
     "id": "maths-2023-ol-p2-q9-b-iii-r1",
     "kind": "anyN",
-    "verbatim": "12 ∙2 −4 ∙5 ≤ p̂ ≤12 ∙2 + 4 ∙5",
+    "verbatim": "No difference between Cork and population",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -23423,14 +23859,10 @@
      "claimMax": 4,
      "perOption": 2,
      "options": [
-      "12 ∙2 −4 ∙5 ≤ p̂ ≤12 ∙2 + 4 ∙5",
-      "7 ∙7 ≤ p̂ ≤16 ∙7",
-      "Conclusion:",
       "No difference between Cork and population",
       "proportion",
       "Reason:",
-      "10% is inside the range found. Within the CI.",
-      "Mathematics – Ordinary Level"
+      "10% is inside the range found. Within the CI."
      ],
      "perOptionSteps": [
       2,
@@ -23446,7 +23878,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q10-a",
-  "topicId": "maths-2-3",
+  "topicId": "maths-1-2",
   "conceptId": "work-out-cba-size-angle-cba",
   "level": "ordinary",
   "year": 2023,
@@ -23886,26 +24318,19 @@
     "verbatim": "Some correct substitution into the quadratic formula",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Note: Award Mid Partial Credit at most if the solutions are not complex Method 1. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: Award Mid Partial Credit at most if the solutions are not complex Method 1. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 2,
      "options": [
       "Some correct substitution into the quadratic formula",
       "Fully correct substitution into the quadratic formula",
-      "(−12±30ii)/2\nError(s) in finding the coefficient of i from a fully correct substitution in the quadratic formula, otherwise correct Method 2",
-      "Some correct substitution of x + y in the in the equation",
-      "Equates Reals to zero and equates Imaginaries to zero\nFinds the x value",
-      "Correct quadratic equation in y Method 3",
-      "Work of merit for example, sum of the roots = −12",
-      "x + y + x−y = −12 and (x + i)(x−i) = 261\nFinds the x value",
-      "Correct quadratic equation in y"
+      "(−12±30ii)/2\nError(s) in finding the coefficient of i from a fully correct substitution in the quadratic formula, otherwise correct Method 2"
      ],
      "perOptionSteps": [
       2,
       1,
-      1,
-      1
+      2
      ]
     }
    }
@@ -23969,7 +24394,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q2(c)(i), (ii)",
-  "questionText": "Plot and label the complex number u= 4 (cos 𝜋 6 + isin 𝜋 6) on the diagram, as accurately as possible",
+  "questionText": "Plot and label the complex number u= 4 (cos 𝜋 6 + isin 𝜋 6) on the diagram, as accurately as possible. The complex number o is 0 + 0i",
   "figureKey": "maths-2024-HL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24408,13 +24833,13 @@
  {
   "id": "maths-2024-hl-p1-q5-c-i",
   "topicId": "maths-4-1",
-  "conceptId": "write-terms",
+  "conceptId": "write-terms-first-value-which",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q5(c)(i), (ii)",
-  "questionText": "Write F₁ and F₂ in terms of x",
+  "questionText": "Write F₁ and F₂ in terms of x. Find the first value of n for which Fₙ = 0",
   "figureKey": "maths-2024-HL-paper-p013-i2",
   "labelKey": [],
   "tariffModel": {
@@ -24455,13 +24880,13 @@
  {
   "id": "maths-2024-hl-p1-q6-a",
   "topicId": "maths-3-1",
-  "conceptId": "constant-value-which-factor",
+  "conceptId": "constant",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q6(a)",
-  "questionText": "h(x) = x² + b−12, where x∈ℝ and b is a constant. Find the value of b for which x−4 is a factor of h(x)",
+  "questionText": "h(x) = x² + b−12, where x∈ℝ and b is a constant",
   "figureKey": "maths-2024-HL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24671,14 +25096,14 @@
  },
  {
   "id": "maths-2024-hl-p1-q7-b-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-3",
   "conceptId": "write-down-present-value-each-their",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q7(b)(i), (ii)",
-  "questionText": "Write down the present value of each of their first three monthly repayments, at the time when they take out the mortgage",
+  "questionText": "Write down the present value of each of their first three monthly repayments, at the time when they take out the mortgage. Work out the amount of money that Fiadh and her partner borrowed for their mortgage. Give your answer correct to the nearest euro",
   "figureKey": "maths-2024-HL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24845,6 +25270,53 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2024-HL-ask-p1-q7-c-iii"
+ },
+ {
+  "id": "maths-2024-hl-p1-q8-a-i",
+  "topicId": "maths-3-1",
+  "conceptId": "fill-table-showing-value-each-given",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 1 Q8(a)(i), (ii)",
+  "questionText": "Fill in the table below, showing the value of T(x) for each of the given values of x. Give each value correct to the nearest whole number. Two values have already been filled in. Draw the graph of y = T(x) on the axes below, for 0 ≤ x ≤ 360, x∈ℝ",
+  "figureKey": "maths-2024-HL-paper-p020-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p1-q8-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit in finding one value of T\n1 part correct",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit-1: 12 parts correct; Correct graph with no table entries Mathematics, Higher Level. Note: Solution consists of 13 parts: • 5 values in table • 7 points plotted • Points joined appropriately (not with line segments). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Work of merit in finding one value of T\n1 part correct",
+      "7 parts correct",
+      "10 parts correct"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2024-HL-ask-p1-q8-a-i"
  },
  {
   "id": "maths-2024-hl-p1-q8-b",
@@ -25073,14 +25545,14 @@
  },
  {
   "id": "maths-2024-hl-p1-q9-b-i",
-  "topicId": "maths-4-1",
-  "conceptId": "expression",
+  "topicId": "maths-4-2",
+  "conceptId": "expression-multiply-out-solve-equation-height",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q9(b)(i), (ii)",
-  "questionText": "Use this, and the expression for C above, to show that: yy/3 (24 −y) = 36",
+  "questionText": "Use this, and the expression for C above, to show that: yy/3 (24 −y) = 36 Multiply out and solve the equation y 3 (24 −y) = 36 to find the height of this cap",
   "figureKey": "maths-2024-HL-paper-p023-i1",
   "labelKey": [],
   "tariffModel": {
@@ -25095,22 +25567,24 @@
    {
     "id": "maths-2024-hl-p1-q9-b-i-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit in one part, for example, some relevant substitution in C",
+    "verbatim": "CC = 𝜋𝜋(yy)²/3 (3(8) − yy) = 36𝜋𝜋𝜋𝜋",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: y = 18 not eliminated. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Full Credit -1: y = 18 not eliminated. These are the lines of the scheme's own printed solution, in the order it sets them out.",
     "group": {
-     "claimMax": 3,
+     "claimMax": 4,
      "perOption": 3,
      "options": [
-      "Work of merit in one part, for example, some relevant substitution in C",
-      "Part (i) correct\nPart (ii) correct\nWork of merit in both parts",
-      "Part (i) correct and work of merit in part (ii)\nPart (ii) correct and work of merit in part (i)"
+      "CC = 𝜋𝜋(yy)²/3 (3(8) − yy) = 36𝜋𝜋𝜋𝜋",
+      "24y−y² = 108",
+      "(y−6)(y−18) = 0",
+      "Ans: y = 6 [as y ≤ 8]"
      ],
      "perOptionSteps": [
       3,
       2,
-      5
+      2,
+      3
      ]
     }
    }
@@ -25523,14 +25997,14 @@
  },
  {
   "id": "maths-2024-hl-p2-q1-a-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-1-6",
   "conceptId": "mode-data-metres-write-down-value",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q1(a)(i)–(iii)",
-  "questionText": "The mode of the data is 34 metres. Use this to write down the value of a",
+  "questionText": "The mode of the data is 34 metres. Use this to write down the value of a. The range of the data is 49 metres. Use this to find the value of b and the value of c. (iii) The median of the data is 43·5 metres. Use this to find the value of d",
   "figureKey": "maths-2024-HL-paper-p031-i0",
   "labelKey": [],
   "tariffModel": {
@@ -25570,14 +26044,14 @@
  },
  {
   "id": "maths-2024-hl-p2-q1-b",
-  "topicId": "maths-4-2",
+  "topicId": "maths-1-7",
   "conceptId": "how-would-you-best-describe-how",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2024 HL Paper 2 Q1(b)",
-  "questionText": "How would you best describe how the results changed for these students, from the initial test to the re-test?",
+  "questionRef": "2024 HL Paper 2 Q1(b), (c)",
+  "questionText": "How would you best describe how the results changed for these students, from the initial test to the re-test? The swimming coach worked out r, the correlation coefficient between the distance in the initial test and the distance in the re-test, for these seven students. Find the value of r, correct to 4 decimal places",
   "figureKey": "maths-2024-HL-paper-p031-i1",
   "labelKey": [],
   "tariffModel": {
@@ -25762,7 +26236,7 @@
    {
     "id": "maths-2024-hl-p2-q2-d-r1",
     "kind": "anyN",
-    "verbatim": "If it is raining I am more likely to wear a coat than if it",
+    "verbatim": "isn’t",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -25770,9 +26244,7 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "If it is raining I am more likely to wear a coat than if it",
-      "isn’t",
-      "Mathematics – Higher Level"
+      "isn’t"
      ]
     }
    }
@@ -25968,7 +26440,7 @@
  },
  {
   "id": "maths-2024-hl-p2-q4-b",
-  "topicId": "maths-2-1",
+  "topicId": "maths-2-3",
   "conceptId": "lines-diagram-parallel",
   "level": "higher",
   "year": 2024,
@@ -26248,14 +26720,14 @@
  },
  {
   "id": "maths-2024-hl-p2-q6-c-i",
-  "topicId": "maths-2-2",
+  "topicId": "maths-1-2",
   "conceptId": "how-many-different-pairs-points-can",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q6(c)(i), (ii)",
-  "questionText": "How many different pairs of points can be picked from these 16 points?",
+  "questionText": "How many different pairs of points can be picked from these 16 points? The two points that are picked are joined with a straight line. Find the probability that this line is horizontal",
   "figureKey": "maths-2024-HL-paper-p038-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26302,7 +26774,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q7(a)(i), (ii)",
-  "questionText": "One person is picked at random from the people who stayed in a PK Hotel in 2023. Find the probability that this person is less than 50 years old",
+  "questionText": "One person is picked at random from the people who stayed in a PK Hotel in 2023. Find the probability that this person is less than 50 years old. Exactly 10% of people who stayed in a PK Hotel in 2023 are at least A years old. Find the value of A, correct to the nearest whole number",
   "figureKey": "maths-2024-HL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26317,7 +26789,7 @@
    {
     "id": "maths-2024-hl-p2-q7-a-i-r1",
     "kind": "anyN",
-    "verbatim": "(a) (i) zz = (50 − 48·2)/10·6 = 0·1698",
+    "verbatim": "A = 61·768",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Full Credit –1: Apply a * for incorrect or no rounding. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -26325,12 +26797,6 @@
      "claimMax": 3,
      "perOption": 2,
      "options": [
-      "(a) (i) zz = (50 − 48·2)/10·6 = 0·1698",
-      "P(z < 0·17) = 0∙5675 o 56·75%",
-      "(a)(ii)",
-      "Oldest 10% ∴90% less than ‘A’ years old",
-      "So, z = 1·28 (or 1·29)",
-      "1·28 = (AA − 48·2)/10·6",
       "A = 61·768",
       "Using z = 1·29, A = 61·874",
       "A = 62 [nearest whole number]"
@@ -26624,14 +27090,14 @@
  },
  {
   "id": "maths-2024-hl-p2-q8-c-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "diagram-symmetrical-about-line-state-why",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q8(c)(i), (ii)",
-  "questionText": "The diagram is symmetrical about the line D. State why |∠C| = 90°",
+  "questionText": "The diagram is symmetrical about the line D. State why |∠C| = 90°. Hence, or otherwise, prove that the triangles B and D are similar. Give a reason for each statement that you make, where appropriate",
   "figureKey": "maths-2024-HL-paper-p043-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27235,8 +27701,7 @@
      "perOption": 2,
      "options": [
       "(i) 3⁵ = 243",
-      "(c)(i)",
-      "Mathematics – Higher Level"
+      "(c)(i)"
      ],
      "perOptionSteps": [
       2,
@@ -27257,7 +27722,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q10(c)(ii), (iii)",
-  "questionText": "How many different patterns could the five traffic lights make, if the first light is red and the fifth light is not red?",
+  "questionText": "How many different patterns could the five traffic lights make, if the first light is red and the fifth light is not red? (iii) How many different patterns could the five traffic lights make if no two consecutive lights are the same colour?",
   "figureKey": "maths-2024-HL-paper-p050-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27298,13 +27763,13 @@
  {
   "id": "maths-2024-ol-p1-q1-a-i",
   "topicId": "maths-3-3",
-  "conceptId": "value-machine-after-year",
+  "conceptId": "value-machine-after-year-otherwise-value",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q1(a)(i), (ii)",
-  "questionText": "Find the value of the machine after 1 year",
+  "questionText": "Find the value of the machine after 1 year. Hence, or otherwise, find the value of the machine after 2 years",
   "figureKey": "maths-2024-OL-paper-p006-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27441,7 +27906,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q2(a)(i), (ii)",
-  "questionText": "Using the Argand diagram, write down the values of z₁, z₂ and z₃ in the form a + b where a, b∈ℤ",
+  "questionText": "Using the Argand diagram, write down the values of z₁, z₂ and z₃ in the form a + b where a, b∈ℤ. Write down the value of |z₂|",
   "figureKey": "maths-2024-OL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27793,14 +28258,14 @@
  },
  {
   "id": "maths-2024-ol-p1-q4-c-i",
-  "topicId": "maths-3-1",
-  "conceptId": "write-128-form",
+  "topicId": "maths-4-2",
+  "conceptId": "write-128-form-otherwise-solve-equation",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q4(c)(i), (ii)",
-  "questionText": "Write 128 in the form 2^k, where k∈ℕ",
+  "questionText": "Write 128 in the form 2^k, where k∈ℕ. Hence, or otherwise, solve the following equation, where x∈ℝ: 2^(4x + 1) = 128",
   "figureKey": "maths-2024-OL-paper-p011-i2",
   "labelKey": [],
   "tariffModel": {
@@ -27971,13 +28436,13 @@
  {
   "id": "maths-2024-ol-p1-q6-a-i",
   "topicId": "maths-5-1",
-  "conceptId": "estimate-value-when-work-graph",
+  "conceptId": "estimate-value-when-work-graph-estimate",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q6(a)(i), (ii)",
-  "questionText": "Estimate the value of k(x) when x = 2∙5. Show your work on the graph",
+  "questionText": "Estimate the value of k(x) when x = 2∙5. Show your work on the graph. Estimate the range of values of x, for which k(x) ≤ 7. Show your work on the graph",
   "figureKey": "maths-2024-OL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28107,14 +28572,14 @@
  },
  {
   "id": "maths-2024-ol-p1-q7-a-i",
-  "topicId": "maths-5-2",
-  "conceptId": "complete-table-values-given-values",
+  "topicId": "maths-3-1",
+  "conceptId": "complete-table-values-given-values-draw",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q7(a)(i), (ii)",
-  "questionText": "Complete the table below to show the values of p(t) for the given values of t",
+  "questionText": "Complete the table below to show the values of p(t) for the given values of t. Draw the graph of p(t) on the axes below, for 0 ≤ t ≤ 5, t∈ℝ",
   "figureKey": "maths-2024-OL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28155,13 +28620,13 @@
  {
   "id": "maths-2024-ol-p1-q7-a-iii",
   "topicId": "maths-5-2",
-  "conceptId": "iii-derivative-remember",
+  "conceptId": "iii-derivative-remember-value",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q7(a)(iii), (iv)",
-  "questionText": "(iii) Find p′(t), the derivative of p(t). Remember that: p(t) = t³ −6t² + 6t + 20",
+  "questionText": "(iii) Find p′(t), the derivative of p(t). Remember that: p(t) = t³ −6t² + 6t + 20 (iv) Find the value of p′(2)",
   "figureKey": "maths-2024-OL-paper-p014-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28468,7 +28933,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q8(b)(i), (ii)",
-  "questionText": "Complete the table below to show the distance Ellie runs each week for the first six weeks",
+  "questionText": "Complete the table below to show the distance Ellie runs each week for the first six weeks. If Ellie continued with this pattern, find the distance she would run in week 100",
   "figureKey": "maths-2024-OL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28555,7 +29020,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q8(b)(iv), (v)",
-  "questionText": "(iv) Sₙ is the total distance, in km, run by Ellie after n weeks, where n∈ℕ. Write Sₙ in terms of n",
+  "questionText": "(iv) Sₙ is the total distance, in km, run by Ellie after n weeks, where n∈ℕ. Write Sₙ in terms of n. Using your answer to part (b)(iv), or otherwise, find the total distance run by Ellie, in km, after 10 weeks if she continues the pattern (that is, find S₁₀)",
   "figureKey": "maths-2024-OL-paper-p017-i2",
   "labelKey": [],
   "tariffModel": {
@@ -28602,7 +29067,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q9(a)(i), (ii)",
-  "questionText": "Using the exchange rate €1 = £0∙85, find the cost of the concert ticket, in euro",
+  "questionText": "Using the exchange rate €1 = £0∙85, find the cost of the concert ticket, in euro. Liam is a member of the venue’s Loyalty Club, so he gets a discount of 20% on all tickets. He buys 8 tickets for the concert",
   "figureKey": "maths-2024-OL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28772,14 +29237,14 @@
  },
  {
   "id": "maths-2024-ol-p1-q9-d-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "concert-total-tickets-sales-360-000",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q9(d)(i), (ii)",
-  "questionText": "For this concert the total tickets sales are €360 000. Use this information to show that: x² −100x + 2400 = 0",
+  "questionText": "For this concert the total tickets sales are €360 000. Use this information to show that: x² −100x + 2400 = 0 Solve the equation x² −100x + 2400 = 0 to find the two possible ticket prices for this concert",
   "figureKey": "maths-2024-OL-paper-p019-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28826,7 +29291,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q10(a)(i), (ii)",
-  "questionText": "Work out his net annual income",
+  "questionText": "Work out his net annual income. Hence, write his net annual income as a percentage of his gross annual income. Give your answer correct to the nearest percent",
   "figureKey": "maths-2024-OL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -28873,7 +29338,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q10(b)(i), (ii)",
-  "questionText": "Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net annual income",
+  "questionText": "Olivia’s gross annual income is €34 000 and her annual tax credit is €3550. Find her net annual income. Caroline’s gross annual income is €50 000. Her annual tax credit is €3550. Find how much annual income tax she pays",
   "figureKey": "maths-2024-OL-paper-p020-i1",
   "labelKey": [],
   "tariffModel": {
@@ -28975,20 +29440,22 @@
    {
     "id": "maths-2024-ol-p1-q10-b-iv-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, finding 2000",
+    "verbatim": "(42 000 −40 000) × 0 ∙2 = [€]400",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
     "group": {
-     "claimMax": 2,
+     "claimMax": 3,
      "perOption": 2,
      "options": [
-      "Work of merit, for example, finding 2000",
-      "2000 × 20%\nFinding total tax for a person earning 42 000 or more for both years"
+      "(42 000 −40 000) × 0 ∙2 = [€]400",
+      "8000 + 800 = 8800",
+      "8800 −8400 = [€]400"
      ],
      "perOptionSteps": [
       2,
-      3
+      1,
+      2
      ]
     }
    }
@@ -29005,7 +29472,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q10(c)(i), (ii)",
-  "questionText": "Anne’s annual electricity bill was €1950 and broadband bill was €400. She worked from home for 120 days in the year",
+  "questionText": "Anne’s annual electricity bill was €1950 and broadband bill was €400. She worked from home for 120 days in the year. Tara also worked from home for a number of days. Tara’s total electricity and broadband bills were €2250. She claimed tax relief of €135 for working from home",
   "figureKey": "maths-2024-OL-paper-p021-i2",
   "labelKey": [],
   "tariffModel": {
@@ -29052,7 +29519,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 2 Q1(a)(i), (ii)",
-  "questionText": "Write the scores in order, from the lowest to the highest in the spaces below",
+  "questionText": "Write the scores in order, from the lowest to the highest in the spaces below. Find the median of these scores and explain what this score means in the context of the question",
   "figureKey": "maths-2024-OL-paper-p026-i0",
   "labelKey": [],
   "tariffModel": {
@@ -29273,8 +29740,8 @@
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2024 OL Paper 2 Q2(c)",
-  "questionText": "Seán picks a card at random and doesn’t replace it. It is Red 5 (R5). He then picks a second card at random",
+  "questionRef": "2024 OL Paper 2 Q2(c), (d)",
+  "questionText": "Seán picks a card at random and doesn’t replace it. It is Red 5 (R5). He then picks a second card at random. Seán picks a card at random and doesn’t replace it. He then picks a second card at random",
   "figureKey": "maths-2024-OL-paper-p027-i2",
   "labelKey": [],
   "tariffModel": {
@@ -29315,13 +29782,13 @@
  {
   "id": "maths-2024-ol-p2-q3-a-i",
   "topicId": "maths-2-2",
-  "conceptId": "point-lies",
+  "conceptId": "point-lies-draw-line-ordinate-diagram",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 2 Q3(a)(i), (ii)",
-  "questionText": "Show that the point (4, 1) lies on l",
+  "questionText": "Show that the point (4, 1) lies on l. Draw the line l on the co-ordinate diagram below, in the domain −4 ≤ x ≤ 5, x∈ℝ",
   "figureKey": "maths-2024-OL-paper-p028-i0",
   "labelKey": [],
   "tariffModel": {
@@ -29725,7 +30192,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 2 Q5(b)(i), (ii)",
-  "questionText": "What is the probability that he does not get the recommended amount of sleep on a particular night?",
+  "questionText": "What is the probability that he does not get the recommended amount of sleep on a particular night? Beginning on a Sunday night, Owen records his sleep each night for a week. Find the probability that Owen gets the recommended amount of sleep for the first time on Tuesday night (the third night)",
   "figureKey": "maths-2024-OL-paper-p033-i0",
   "labelKey": [],
   "tariffModel": {
@@ -29765,14 +30232,14 @@
  },
  {
   "id": "maths-2024-ol-p2-q6-a-i",
-  "topicId": "maths-2-4",
+  "topicId": "maths-2-3",
   "conceptId": "construct-bisector-angle-using-only-compass",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 2 Q6(a)(i), (ii)",
-  "questionText": "Construct the bisector of the angle X, using only a compass and straight edge",
+  "questionText": "Construct the bisector of the angle X, using only a compass and straight edge. Hence, construct the incentre of the triangle X below",
   "figureKey": "maths-2024-OL-paper-p034-i0",
   "labelKey": [],
   "tariffModel": {
@@ -29811,13 +30278,13 @@
  {
   "id": "maths-2024-ol-p2-q6-b-i",
   "topicId": "maths-2-4",
-  "conceptId": "scale-factor",
+  "conceptId": "scale-factor-units-scale-factor-distance",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 2 Q6(b)(i), (ii)",
-  "questionText": "Use |B| and |D| to show the scale factor is 3∙5",
+  "questionText": "Use |B| and |D| to show the scale factor is 3∙5. |A| = 6 units. Use the scale factor to find the distance from C to E, that is, find |C|",
   "figureKey": "maths-2024-OL-paper-p034-i1",
   "labelKey": [],
   "tariffModel": {
@@ -30476,7 +30943,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 2 Q9(a)(i), (ii)",
-  "questionText": "How many different choices are available if you must choose only one flavour, one topping, and either a cone or a tub?",
+  "questionText": "How many different choices are available if you must choose only one flavour, one topping, and either a cone or a tub? Diarmuid wants to maximise the number of choices available to his customers. He can only add either an extra flavour or an extra topping",
   "figureKey": "maths-2024-OL-paper-p040-i0",
   "labelKey": [],
   "tariffModel": {
@@ -30731,14 +31198,14 @@
  },
  {
   "id": "maths-2024-ol-p2-q10-a-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "conversion-rate-mile-convert-121-miles",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 2 Q10(a)(i)–(iii)",
-  "questionText": "Use the conversion rate of 1 mile = 1∙61 km to convert 121 miles to km",
+  "questionText": "Use the conversion rate of 1 mile = 1∙61 km to convert 121 miles to km. Convert one hour to seconds. (iii) Use your answers to parts (a)(i) and (a)(ii) to convert 121 miles per hour to metres per second. Give your answer correct to 2 decimal places",
   "figureKey": "maths-2024-OL-paper-p042-i0",
   "labelKey": [],
   "tariffModel": {
@@ -30871,13 +31338,13 @@
  {
   "id": "maths-2024-ol-p2-q10-d-i",
   "topicId": "maths-3-4",
-  "conceptId": "part",
+  "conceptId": "calculate-volume-cylinder-correct-nearest-whole",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 2 Q10(d)(i), (ii)",
-  "questionText": "Show that h = 20∙4 cm",
+  "questionText": "Show that h = 20∙4 cm. Hence, calculate the volume of the cylinder. Give your answer correct to nearest whole number",
   "figureKey": "maths-2024-OL-paper-p044-i0",
   "labelKey": [],
   "tariffModel": {
@@ -31199,13 +31666,13 @@
  {
   "id": "maths-2025-hl-p1-q2-b-i",
   "topicId": "maths-5-2",
-  "conceptId": "state-range-values-which",
+  "conceptId": "state-range-values-which-value-form",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q2(b)(i)–(iii)",
-  "questionText": "State the range of values of x for which g′(x) > 2",
+  "questionText": "State the range of values of x for which g′(x) > 2. Find the value of g(g(3)). Give your answer in the form Show your work on the graph. (iii) The graph of y = g(x) is shown again on the diagram below",
   "figureKey": "maths-2025-HL-paper-p010-i0",
   "labelKey": [],
   "tariffModel": {
@@ -31404,7 +31871,7 @@
     "verbatim": "Indicates multiplication of top",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Full Credit –1: −7 + 22i. Note: Accept: aa = − 7/41 , bb = 22/41 Consider solution as consisting of 4 steps: Method 1: Step 1. Indicates multiplication of top and bottom by conjugate of denominator Step 2. Expands top line Step 3. Expands bottom line Step 4. Writes in the form a + b Method 2: Step 1.2 + 3i = 4a + 4b−5a−5bi² Step 2. Sets Re = Re and Im = Im Step 3. Solves for 1 variable (a or b) Step 4. Solves for 2nd variable Method 3: Step 1. Writes 2 + 3i in polar form Step 2. Writes 4 −5i in polar form Step 3. Evaluates (2 + 3ii)/(4−5ii) in polar form Step 4. Writes in the form a + b. Note: If the argument is approximated using decimals, then High Partial Credit at most. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 1; Step 2; Step 3; Step 4; Step 1; Step 2; Step 3; Step 4.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Full Credit –1: −7 + 22i. Note: Accept: aa = − 7/41 , bb = 22/41 Consider solution as consisting of 4 steps: Method 1: Step 1. Indicates multiplication of top and bottom by conjugate of denominator Step 2. Expands top line Step 3. Expands bottom line Step 4. Writes in the form a + b Method 2: Step 1.2 + 3i = 4a + 4b−5a−5bi² Step 2. Sets Re = Re and Im = Im Step 3. Solves for 1 variable (a or b) Step 4. Solves for 2nd variable Method 3: Step 1. Writes 2 + 3i in polar form Step 2. Writes 4 −5i in polar form Step 3. Evaluates (2 + 3ii)/(4−5ii) in polar form Step 4. Writes in the form a + b. Note: If the argument is approximated using decimals, then High Partial Credit at most. Marked in order: Step 1; Step 2; Step 3; Step 4.",
     "group": {
      "claimMax": 4,
      "perOption": 2,
@@ -31412,14 +31879,6 @@
       "Indicates multiplication of top",
       "Expands top line",
       "Expands bottom line",
-      "Writes in the form a + b",
-      "2 + 3i = 4a + 4b−5a−5bi²",
-      "Sets Re = Re and Im = Im",
-      "Solves for 1 variable (a or b)",
-      "Solves for 2nd variable",
-      "Writes 2 + 3i in polar form",
-      "Writes 4 −5i in polar form",
-      "Evaluates (2 + 3ii)/(4−5ii) in polar form",
       "Writes in the form a + b"
      ],
      "perOptionSteps": [
@@ -31598,16 +32057,13 @@
     "verbatim": "Deals with power of 5",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Note: Method 1 Consider solution as consisting of 3 steps: Step 1. Deals with power of 5 Step 2. Splits up e³p Step 3. Finishes Method 2 Consider solution as consisting of 3 steps: Step 1. Splits up e¹⁵p⁵ Step 2. Deals with powers Step 3. Finishes. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Note: Method 1 Consider solution as consisting of 3 steps: Step 1. Deals with power of 5 Step 2. Splits up e³p Step 3. Finishes Method 2 Consider solution as consisting of 3 steps: Step 1. Splits up e¹⁵p⁵ Step 2. Deals with powers Step 3. Finishes. Marked in order: Step 1; Step 2; Step 3.",
     "group": {
      "claimMax": 3,
      "perOption": 4,
      "options": [
       "Deals with power of 5",
       "Splits up e³p",
-      "Finishes",
-      "Splits up e¹⁵p⁵",
-      "Deals with powers",
       "Finishes"
      ],
      "perOptionSteps": [
@@ -31648,23 +32104,19 @@
     "verbatim": "States x = 0",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Note: Method 1 Consider solution as consisting of 4 steps: Step 1. States x = 0 Step 2. Finds y when x = 0 Step 3. Substitutes (0, −7) into the curve Step 4. Finds n Method 2 Consider solution as consisting of 4 steps: Step 1. Writes y in terms of x Step 2. Substitutes the expression for y into the curve Step 3. Substitutes x = 0 Step 4. Finds n. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Note: Method 1 Consider solution as consisting of 4 steps: Step 1. States x = 0 Step 2. Finds y when x = 0 Step 3. Substitutes (0, −7) into the curve Step 4. Finds n Method 2 Consider solution as consisting of 4 steps: Step 1. Writes y in terms of x Step 2. Substitutes the expression for y into the curve Step 3. Substitutes x = 0 Step 4. Finds n. Marked in order: Step 1; Step 2; Step 3.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 2,
      "options": [
       "States x = 0",
       "Finds y when x = 0",
-      "Substitutes (0, −7) into the curve",
-      "Writes y in terms of x",
-      "Substitutes the expression for y into",
-      "Substitutes x = 0"
+      "Substitutes (0, −7) into the curve"
      ],
      "perOptionSteps": [
       2,
       2,
-      2,
-      4
+      6
      ]
     }
    }
@@ -31854,13 +32306,13 @@
  {
   "id": "maths-2025-hl-p1-q7-a-ii",
   "topicId": "maths-3-1",
-  "conceptId": "expression",
+  "conceptId": "expression-iii-otherwise-value-100",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q7(a)(ii), (iii)",
-  "questionText": "Find an expression in n for A(n), where n∈ℕ",
+  "questionText": "Find an expression in n for A(n), where n∈ℕ. (iii) Hence, or otherwise, find the value of A(100)",
   "figureKey": "maths-2025-HL-paper-p020-i1",
   "labelKey": [],
   "tariffModel": {
@@ -31995,13 +32447,13 @@
  {
   "id": "maths-2025-hl-p1-q7-b-i",
   "topicId": "maths-3-1",
-  "conceptId": "length",
+  "conceptId": "length-write-expression-total-length-first",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q7(b)(i), (ii)",
-  "questionText": "Find the length of O₃",
+  "questionText": "Find the length of O₃. Write an expression in n for the total length of the first n orbitals of the web, where n∈ℕ",
   "figureKey": "maths-2025-HL-paper-p022-i1",
   "labelKey": [],
   "tariffModel": {
@@ -32156,23 +32608,19 @@
     "verbatim": "Finds cost that Jacob thinks (in €)",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Full Credit -1: Apply a * for no rounding or incorrect rounding. Note: Consider solution as consisting of 3 steps: Method 1 Step 1. Finds cost that Jacob thinks (in €) Step 2. Finds actual cost (in €) Step 3. Finds actual rate Method 2 Step 1. Sets up equation in d Step 2. Simplifies to an equation without denominators Step 3. Solves for d. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Full Credit -1: Apply a * for no rounding or incorrect rounding. Note: Consider solution as consisting of 3 steps: Method 1 Step 1. Finds cost that Jacob thinks (in €) Step 2. Finds actual cost (in €) Step 3. Finds actual rate Method 2 Step 1. Sets up equation in d Step 2. Simplifies to an equation without denominators Step 3. Solves for d. Marked in order: Step 1; Step 2; Step 3.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 2,
      "options": [
       "Finds cost that Jacob thinks (in €)",
       "Finds actual cost (in €)",
-      "Finds actual rate",
-      "Sets up equation in d",
-      "Simplifies to an equation without",
-      "Solves for d"
+      "Finds actual rate"
      ],
      "perOptionSteps": [
       2,
       2,
-      2,
-      4
+      6
      ]
     }
    }
@@ -32189,7 +32637,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q8(c), (d)",
-  "questionText": "Find how long it would take Jacob in total to kayak from S to A, and then run from A to F",
+  "questionText": "Find how long it would take Jacob in total to kayak from S to A, and then run from A to F. Find how long it would take Jacob to kayak directly from S to F, correct to the nearest minute",
   "figureKey": "maths-2025-HL-paper-p025-i0",
   "labelKey": [],
   "tariffModel": {
@@ -32418,7 +32866,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q9(a)(ii), (iii)",
-  "questionText": "Find an expression for d d , the rate of change of fuel consumption with respect to speed",
+  "questionText": "Find an expression for d d , the rate of change of fuel consumption with respect to speed. (iii) Use this, and your answer to part (a)(ii), to find the value of Give your answer correct to 1 decimal place",
   "figureKey": "maths-2025-HL-paper-p029-i0",
   "labelKey": [],
   "tariffModel": {
@@ -32549,14 +32997,14 @@
  },
  {
   "id": "maths-2025-hl-p1-q9-b-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "fill-table-values-given-values-each",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q9(b)(i), (ii)",
-  "questionText": "Fill in the table below to show the values of v(t) for the given values of t, up to t = 8. Give each value correct to 1 decimal place, where appropriate",
+  "questionText": "Fill in the table below to show the values of v(t) for the given values of t, up to t = 8. Give each value correct to 1 decimal place, where appropriate. Hence, draw the graph of the function y = v(t) on the axes below, for 0 ≤ t ≤ 8, t∈ℝ",
   "figureKey": "maths-2025-HL-paper-p031-i0",
   "labelKey": [],
   "tariffModel": {
@@ -32697,7 +33145,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q10(b), (c)",
-  "questionText": "In Pattern 2000, there are 4 points that are a distance of 2000 units from (0, 0). Write down the co-ordinates of these 4 points",
+  "questionText": "In Pattern 2000, there are 4 points that are a distance of 2000 units from (0, 0). Write down the co-ordinates of these 4 points. What is the smallest value of n∈ℕ for which the point (4, 4) is in Pattern n? Do not draw on your diagram from part (a)",
   "figureKey": "maths-2025-HL-paper-p033-i1",
   "labelKey": [],
   "tariffModel": {
@@ -32799,7 +33247,7 @@
    {
     "id": "maths-2025-hl-p1-q10-d-ii-r1",
     "kind": "anyN",
-    "verbatim": "(d) (ii) QQ(nn) = ((nn + 1)²)/((2nn + 1)²)",
+    "verbatim": "((t + 1)2",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -32807,13 +33255,6 @@
      "claimMax": 3,
      "perOption": 4,
      "options": [
-      "(d) (ii) QQ(nn) = ((nn + 1)²)/((2nn + 1)²)",
-      "((tt−1)/2 + 1) 2",
-      "= 2/2",
-      "(2(t−1",
-      "2 ) + 1)",
-      "((tt−1 + 2)/2 ) 2",
-      "(t−1 + 1)²",
       "((t + 1)2",
       "= 22/tt² )",
       "t² + 2t + 1"
@@ -32878,14 +33319,14 @@
  },
  {
   "id": "maths-2025-hl-p1-q10-e-i",
-  "topicId": "maths-4-1",
-  "conceptId": "write-down-value",
+  "topicId": "maths-3-1",
+  "conceptId": "total-number-dots-pattern-sequence-write",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q10(e)(i), (ii)",
-  "questionText": "H(n) is the total number of dots in Pattern n of the sequence, for n ∈ ℕ. (i) Write down the value of H(1). When n is a natural number, H(n + 1) can always be found from H(n), using the formula H(n + 1) = H(n) + 2n + 3. (ii) Using this fact, prove by induction that H(n) = (n + 1)² for all n ∈ ℕ.",
+  "questionText": "H(n) is the total number of dots in Pattern n of the sequence, for n ∈ ℕ. (i) Write down the value of H(1). When n is a natural number, H(n + 1) can always be found from H(n), using the formula H(n + 1) = H(n) + 2n + 3. (ii) Using this fact, prove by induction that H(n) = (n + 1)² for all n ∈ ℕ",
   "figureKey": "maths-2025-HL-paper-p036-i0",
   "labelKey": [],
   "tariffModel": {
@@ -32973,13 +33414,13 @@
  {
   "id": "maths-2025-hl-p2-q1-b",
   "topicId": "maths-2-2",
-  "conceptId": "line-has-equation-line-has-equation",
+  "conceptId": "line-has-equation",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q1(b)",
-  "questionText": "The line l has equation y= − 1 3 x+ 11. The line h has equation 2x−5y + 10 = 0. Work out the size of the acute angle between the lines l and h. Give your answer correct to the nearest degree",
+  "questionText": "The line l has equation y= − 1 3 x+ 11",
   "figureKey": "maths-2025-HL-paper-p042-i0",
   "labelKey": [],
   "tariffModel": {
@@ -32997,26 +33438,19 @@
     "verbatim": "Finds m_l",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Full Credit –1: Finds both acute and obtuse angles, doesn’t specify which is the answer; Apply a * for incorrect rounding. Note: Accept correct answer without unit. Consider solution as consisting of 4 steps: Method 1. Note: For Step 3, accept substitution without ± Step 1. Finds m_l Step 2. Finds m_h Step 3. Subs in formula Step 4. Finds 𝜃 Method 2 Step 1. Finds m_l Step 2. Finds m_h Step 3. Finds 161 ∙56 …⁰ and 21 ∙8 …⁰ Step 4. Finds 𝜃 Method 3 Step 1. Finds m_l Step 2. Finds m_h Step 3. 𝜃𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5 Step 4. Finds 𝜃. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit –1: Finds both acute and obtuse angles, doesn’t specify which is the answer; Apply a * for incorrect rounding. Note: Accept correct answer without unit. Consider solution as consisting of 4 steps: Method 1. Note: For Step 3, accept substitution without ± Step 1. Finds m_l Step 2. Finds m_h Step 3. Subs in formula Step 4. Finds 𝜃 Method 2 Step 1. Finds m_l Step 2. Finds m_h Step 3. Finds 161 ∙56 …⁰ and 21 ∙8 …⁰ Step 4. Finds 𝜃 Method 3 Step 1. Finds m_l Step 2. Finds m_h Step 3. 𝜃𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5 Step 4. Finds 𝜃. Marked in order: Step 1; Step 2; Step 3.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 3,
      "options": [
       "Finds m_l",
       "Finds m_h",
-      "Subs in formula",
-      "Finds m_l",
-      "Finds m_h",
-      "Finds 161 ∙56 …⁰ and 21 ∙8 …⁰",
-      "Finds m_l",
-      "Finds m_h",
-      "𝜃𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5"
+      "Subs in formula"
      ],
      "perOptionSteps": [
       3,
       2,
-      2,
-      3
+      5
      ]
     }
    }
@@ -33051,7 +33485,7 @@
     "verbatim": "Finds area for one set of a and b (not a",
     "marks": 15,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10, four parts for 15. Note: If both the slope and the area are not used to find a and b, then no credit can be awarded for finding the equations of the lines. Consider the solution as consisting of 4 steps: Method 1 If Step 2 is done, consider Step 1 to be done as well. Step 1. Finds area for one set of a and b (not a solution) Step 2. Finds area for a correct set of values of a and b Step 3. Finds one equation Step 4. Finds second equation Method 2 Step 1. 1 equation in a and b Step 2. Second equation in a and b Step 3.Finds a or b Step 4. Finds equations of 2 lines. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 1; Step 2; Step 3; Step 4.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10, four parts for 15. Note: If both the slope and the area are not used to find a and b, then no credit can be awarded for finding the equations of the lines. Consider the solution as consisting of 4 steps: Method 1 If Step 2 is done, consider Step 1 to be done as well. Step 1. Finds area for one set of a and b (not a solution) Step 2. Finds area for a correct set of values of a and b Step 3. Finds one equation Step 4. Finds second equation Method 2 Step 1. 1 equation in a and b Step 2. Second equation in a and b Step 3.Finds a or b Step 4. Finds equations of 2 lines. Marked in order: Step 1; Step 2; Step 3; Step 4.",
     "group": {
      "claimMax": 4,
      "perOption": 4,
@@ -33059,11 +33493,7 @@
       "Finds area for one set of a and b (not a",
       "Finds area for a correct set of values of",
       "Finds one equation",
-      "Finds second equation",
-      "1 equation in a and b",
-      "Second equation in a and b",
-      "Finds a or b",
-      "Finds equations of 2 lines"
+      "Finds second equation"
      ],
      "perOptionSteps": [
       4,
@@ -33123,6 +33553,55 @@
   "questionFigureKey": "maths-2025-HL-ask-p2-q2-a-i"
  },
  {
+  "id": "maths-2025-hl-p2-q2-ii",
+  "topicId": "maths-3-1",
+  "conceptId": "equation-tangent-point-write-form",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 2 Q2(a)(ii)",
+  "questionText": "Find the equation of the tangent to s at the point (−2, −5). Write your answer in the form y = m + c, where m, c∈ℤ",
+  "figureKey": "maths-2025-HL-paper-p045-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p2-q2-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Finds slope of the normal",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Full Credit -1: y isolated and correct but not in correct form. Note: Consider solution as consisting of 4 steps: Method 1 Step 3 is not correct if Step 2 is not completed (with or without errors) Step 1. Finds slope of the normal Step 2. Finds slope of the tangent Step 3. Substitutes values into formula for equation of a line Step 4. Equation in required form Method 2 Step 1. Finds g and f Step 2. Finds c Step 3. Substitutes values into formula Step 4. Equation in required form Method 3 Step 1. Identifies r² Step 2. Finds h and k Step 3. Substitutes values into formula Step 4. Equation in required form Method 4 Step 1. Finds dddd/dddd in terms of xx and yy Step 2. Finds slope of the tangent Step 3. Substitutes values into formula Step 4. Equation in required form. Marked in order: Step 1; Step 2; Step 3; Step 4.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Finds slope of the normal",
+      "Finds slope of the tangent",
+      "Substitutes values into formula for",
+      "Equation in required form"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2025-HL-ask-p2-q2-a-ii"
+ },
+ {
   "id": "maths-2025-hl-p2-q2-b",
   "topicId": "maths-3-1",
   "conceptId": "circle-has-equation-constant-28x-46y",
@@ -33149,24 +33628,19 @@
     "verbatim": "Finds in terms of k, point of tangency",
     "marks": 15,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10, four parts for 15. Note: Consider solution as consisting of 4 steps: Method 1 Step 1. Finds in terms of k, point of tangency Step 2. Equation in k (• in solution) Step 3. Quadratic equation in the form k² −45k−196 = 0 or equivalent. Step 4. Finds k Method 2 Step 1. Finds centre and radius Step 2. Equation in k (• in solution) Step 3. Quadratic equation in form k² −45k−196 = 0 or equivalent. Step 4. Finds k Method 3 Step Step 1. 2. Finds 23 + (centre and)/(√725 − kk) or radius 23 − √725 − kk Step 3. Quadratic equation in form k² −45k−196 = 0 or equivalent. Step 4. Finds k. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3; Step 3.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. The full scale runs to 15. Note: Consider solution as consisting of 4 steps: Method 1 Step 1. Finds in terms of k, point of tangency Step 2. Equation in k (• in solution) Step 3. Quadratic equation in the form k² −45k−196 = 0 or equivalent. Step 4. Finds k Method 2 Step 1. Finds centre and radius Step 2. Equation in k (• in solution) Step 3. Quadratic equation in form k² −45k−196 = 0 or equivalent. Step 4. Finds k Method 3 Step Step 1. 2. Finds 23 + (centre and)/(√725 − kk) or radius 23 − √725 − kk Step 3. Quadratic equation in form k² −45k−196 = 0 or equivalent. Step 4. Finds k. Marked in order: Step 1; Step 2; Step 3.",
     "group": {
-     "claimMax": 4,
+     "claimMax": 3,
      "perOption": 4,
      "options": [
       "Finds in terms of k, point of tangency",
       "Equation in k (• in solution)",
-      "Quadratic equation in the form",
-      "Finds centre and radius",
-      "Equation in k (• in solution)",
-      "Quadratic equation in form",
-      "Quadratic equation in form"
+      "Quadratic equation in the form"
      ],
      "perOptionSteps": [
       4,
       3,
-      3,
-      5
+      8
      ]
     }
    }
@@ -33332,22 +33806,24 @@
    {
     "id": "maths-2025-hl-p2-q3-b-r1",
     "kind": "anyN",
-    "verbatim": "Finds one relevant probability, for example, 6/240 1 ), (240 1), (67\nWrites one of (6 2 )\n67/240 × 6/240 not evaluated",
+    "verbatim": "PP(AA ∩ BB ∩ CC) = 6/240",
     "marks": 15,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10, four parts for 15. These are the lines of the scheme's own printed solution, in the order it sets them out.",
     "group": {
-     "claimMax": 3,
+     "claimMax": 4,
      "perOption": 4,
      "options": [
-      "Finds one relevant probability, for example, 6/240 1 ), (240 1), (67\nWrites one of (6 2 )\n67/240 × 6/240 not evaluated",
-      "239 or similar not evaluated 240 ×\n2 ( 67/240 × 6/240) not evaluated\n1)/(240 ) (6 or 1/(240 ) (67 )",
-      "2 (( 6/240) × ( 67/239)) (6 1)(67\n1/(240 )"
+      "PP(AA ∩ BB ∩ CC) = 6/240",
+      "PP(none) = 67/240",
+      "PP(both) = 2 [( 6/240) × ( 67/239)]",
+      "= [ 67/4780]"
      ],
      "perOptionSteps": [
       4,
       3,
-      8
+      3,
+      5
      ]
     }
    }
@@ -33358,13 +33834,13 @@
  {
   "id": "maths-2025-hl-p2-q4-a-i",
   "topicId": "maths-1-6",
-  "conceptId": "median-age-value",
+  "conceptId": "median-age-value-first-quartile-work",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q4(a)(i), (ii)",
-  "questionText": "The median age is 17∙5. Find the value of x",
+  "questionText": "The median age is 17∙5. Find the value of x. The first quartile (Q₁) is 13. Work out the interquartile range of the ages",
   "figureKey": "maths-2025-HL-paper-p050-i0",
   "labelKey": [],
   "tariffModel": {
@@ -33547,7 +34023,7 @@
  },
  {
   "id": "maths-2025-hl-p2-q5-b-i",
-  "topicId": "maths-2-2",
+  "topicId": "maths-2-3",
   "conceptId": "part",
   "level": "higher",
   "year": 2025,
@@ -33587,7 +34063,7 @@
  },
  {
   "id": "maths-2025-hl-p2-q5-b-ii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-2-3",
   "conceptId": "shown-again-diagram-right",
   "level": "higher",
   "year": 2025,
@@ -33612,7 +34088,7 @@
     "verbatim": "Finds one relevant length",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Note: Accept correct answer without unit. Consider solution as consisting of 4 steps: Methods 1&2: Step 1. Finds one relevant length Step 2. Finds |P′Q| Step 3. Indicates |PP′QQ|/|PPPP| Step 4. Finds area Method 3: Step 1. Finds one relevant length Step 2. Finds |P′| Step 3. Shows |P| s(∠ S) = 4 or equivalent Step 4. Finds area. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 1; Step 3; Step 4.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Note: Accept correct answer without unit. Consider solution as consisting of 4 steps: Methods 1&2: Step 1. Finds one relevant length Step 2. Finds |P′Q| Step 3. Indicates |PP′QQ|/|PPPP| Step 4. Finds area Method 3: Step 1. Finds one relevant length Step 2. Finds |P′| Step 3. Shows |P| s(∠ S) = 4 or equivalent Step 4. Finds area. Marked in order: Step 1; Step 2; Step 3; Step 4.",
     "group": {
      "claimMax": 4,
      "perOption": 3,
@@ -33620,9 +34096,6 @@
       "Finds one relevant length",
       "Finds |P′Q|",
       "Indicates |PP′QQ|/|PPPP|",
-      "Finds area",
-      "Finds one relevant length",
-      "Shows |P| s(∠ S) = 4",
       "Finds area"
      ],
      "perOptionSteps": [
@@ -33789,7 +34262,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q7(a)(i), (ii)",
-  "questionText": "Measure the lengths labelled r, d, and h on the diagram above. Write the length of each, correct to the nearest cm, in the table below",
+  "questionText": "Measure the lengths labelled r, d, and h on the diagram above. Write the length of each, correct to the nearest cm, in the table below. Use the measurements from part (a)(i) to work out the actual lengths represented by r, d, and h. Give each value in metres, correct to 1 decimal place",
   "figureKey": "maths-2025-HL-paper-p056-i0",
   "labelKey": [],
   "tariffModel": {
@@ -33875,13 +34348,13 @@
  {
   "id": "maths-2025-hl-p2-q7-c-i",
   "topicId": "maths-2-2",
-  "conceptId": "write-down-equation-circle",
+  "conceptId": "write-down-equation-circle-using-part",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q7(c)(i), (ii)",
-  "questionText": "Write down the equation of the circle s",
+  "questionText": "Write down the equation of the circle s. (ii) By using your answer to part (c)(i), or otherwise, verify that (7, 3) lies on the circle s",
   "figureKey": "maths-2025-HL-paper-p057-i0",
   "labelKey": [],
   "tariffModel": {
@@ -34061,13 +34534,13 @@
  {
   "id": "maths-2025-hl-p2-q8-a-i",
   "topicId": "maths-2-1",
-  "conceptId": "oooo-theorem-pythagoras-value-theorem-pythagoras",
+  "conceptId": "theorem-pythagoras-vertical-height-pyramid-surd",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q8(a)(i)",
-  "questionText": "(i) Use the theorem of Pythagoras to show that |OB| = 3√2 m, and hence find |OP|, the vertical height of the pyramid. Give |OP| in surd form.",
+  "questionText": "(i) Use the theorem of Pythagoras to show that |OB| = 3√2 m, and hence find |OP|, the vertical height of the pyramid. Give |OP| in surd form",
   "figureKey": "maths-2025-HL-paper-p060-i0",
   "labelKey": [],
   "tariffModel": {
@@ -34107,14 +34580,14 @@
  },
  {
   "id": "maths-2025-hl-p2-q8-a-ii",
-  "topicId": "maths-2-3",
-  "conceptId": "triangular-face-size-correct-decimal-place",
+  "topicId": "maths-3-4",
+  "conceptId": "triangular-face-pab-size-pab-correct",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q8(a)(ii)",
-  "questionText": "(ii) On the triangular face PAB, the size of ∠PAB is 74·2°, correct to 1 decimal place. Using this, or otherwise, work out the total area of the four triangular faces of the roof. Give your answer correct to the nearest m².",
+  "questionText": "(ii) On the triangular face PAB, the size of ∠PAB is 74·2°, correct to 1 decimal place. Using this, or otherwise, work out the total area of the four triangular faces of the roof. Give your answer correct to the nearest m²",
   "figureKey": "maths-2025-HL-paper-p060-i1",
   "labelKey": [],
   "tariffModel": {
@@ -34159,7 +34632,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q8(a)(iii)",
-  "questionText": "(iii) The diagram below shows part of a scaled diagram of the net of this pyramid. The diagram shows the square base and two of the triangular sides. Construct the rest of the scaled diagram of the net of the pyramid. Show all construction lines clearly.",
+  "questionText": "(iii) The diagram below shows part of a scaled diagram of the net of this pyramid. The diagram shows the square base and two of the triangular sides. Construct the rest of the scaled diagram of the net of the pyramid. Show all construction lines clearly",
   "figureKey": "maths-2025-HL-paper-p061-i0",
   "labelKey": [],
   "tariffModel": {
@@ -34330,6 +34803,53 @@
   "questionFigureKey": "maths-2025-HL-ask-p2-q8-c-ii"
  },
  {
+  "id": "maths-2025-hl-p2-q9-a-i",
+  "topicId": "maths-1-2",
+  "conceptId": "writing-proportion-associated-each-branch-tree",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 2 Q9(a)(i), (ii)",
+  "questionText": "writing the proportion associated with each branch of the tree diagram into the appropriate box and working out the probability for each outcome and writing it in the appropriate box in the final column",
+  "figureKey": "maths-2025-HL-paper-p064-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 7, 10, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p2-q9-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, finds 1 relevant probability",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. The full scale runs to 15. Full Credit –1: Incorrect rounding; Apply a * if the probability that someone who has diabetes and gets a positive result is calculated as 0∙0663/0∙067 = 0 ∙ 9896. Note: 7 values are needed in the tree diagram. Note that values may be correct, relative to values that are earlier in the diagram, or may be correct relative to 1. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, finds 1 relevant probability",
+      "3 values correct",
+      "5 values correct"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      8
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2025-HL-ask-p2-q9-a-i"
+ },
+ {
   "id": "maths-2025-hl-p2-q9-a-iii",
   "topicId": "maths-1-2",
   "conceptId": "iii-probability-person-picked-random-tests",
@@ -34338,7 +34858,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q9(a)(iii), (iv)",
-  "questionText": "(iii) Find the probability that the person picked at random tests positive for diabetes",
+  "questionText": "(iii) Find the probability that the person picked at random tests positive for diabetes. (iv) The person picked at random tests positive for diabetes, using this test. Find the probability that they actually have diabetes",
   "figureKey": "maths-2025-HL-paper-p065-i0",
   "labelKey": [],
   "tariffModel": {
@@ -34398,22 +34918,24 @@
    {
     "id": "maths-2025-hl-p2-q9-b-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, P(2) + P(3) + P(4) + P(5), or 1 −0∙067 , or (⁵ 0)",
+    "verbatim": "P(not having diabetes) = 1 −0∙067\n= 0 ∙933",
     "marks": 5,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: For this part, “term” is taken to mean each of P(0), P(1), ..., P(5). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Note: For this part, “term” is taken to mean each of P(0), P(1), ..., P(5). These are the lines of the scheme's own printed solution, in the order it sets them out.",
     "group": {
-     "claimMax": 3,
+     "claimMax": 4,
      "perOption": 2,
      "options": [
-      "Work of merit, for example, P(2) + P(3) + P(4) + P(5), or 1 −0∙067 , or (⁵ 0)",
-      "One term fully correct\nOne aspect of two terms correct (binomial coefficient, power of 0∙933, power of 0∙067)",
-      "Indicates how to find P(2 or more) and work indicated for MPC also present\nFinds sufficient terms to find P(2 or more), but error(s) in finishing"
+      "P(not having diabetes) = 1 −0∙067\n= 0 ∙933",
+      "P(0) = (5\n0)(0∙933)⁵\n= 0 ∙706981 …",
+      "P(1) = (5\n1)(0∙933)⁴(0∙067)\n= 0 ∙253846 …",
+      "P(2 or more) = 1 −(0 ∙706981 … + 0 ∙253846 … )\n= 1 −0 ∙960828 …\n= 0 ∙03917 …\n= 0 ∙0392 [4 D. P. ]"
      ],
      "perOptionSteps": [
       2,
       1,
-      2
+      1,
+      1
      ]
     }
    }
@@ -34528,17 +35050,19 @@
     "verbatim": "Work of merit, for example, (24 16), or (16 8 ), or (24 2 ), or 8!, or diagram\n24P₈ or similar",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; Model solution; Model solution.",
     "group": {
-     "claimMax": 2,
+     "claimMax": 3,
      "perOption": 4,
      "options": [
       "Work of merit, for example, (24 16), or (16 8 ), or (24 2 ), or 8!, or diagram\n24P₈ or similar",
-      "Two relevant terms multiplied, for 8 )(16 example, (²⁴ 2 ), or 15 × 13, 2 )(14 or (16 2 )\n16!/2⁸"
+      "15 × 13 × 11 × … × 3 × 1 × (8!)",
+      "= 8∙173 × 10¹⁰ [3 D.P.]"
      ],
      "perOptionSteps": [
       4,
-      6
+      2,
+      4
      ]
     }
    }
@@ -34698,7 +35222,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q10(c)(i), (ii)",
-  "questionText": "Using values from the table, work out the test statistic (z-score) of the sample mean for country Y for this test. Give your answer correct to 2 decimal places",
+  "questionText": "Using values from the table, work out the test statistic (z-score) of the sample mean for country Y for this test. Give your answer correct to 2 decimal places. Hence, work out the p-value of this test statistic and state the conclusion of the hypothesis test in the given context, making reference to the mean score for country Y",
   "figureKey": "maths-2025-HL-paper-p069-i1",
   "labelKey": [],
   "tariffModel": {
@@ -34713,7 +35237,7 @@
    {
     "id": "maths-2025-hl-p2-q10-c-i-r1",
     "kind": "anyN",
-    "verbatim": "zz = (403 − 400)/(70 ∙ 6)",
+    "verbatim": "= 0.0264",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Full Credit -1: If the context is not mentioned in conclusion. These are the lines of the scheme's own printed solution, in the order it sets them out.",
@@ -34721,13 +35245,6 @@
      "claimMax": 3,
      "perOption": 4,
      "options": [
-      "zz = (403 − 400)/(70 ∙ 6)",
-      "(70 ∙ 6)/√2724 (70 ∙ 6)/√2724",
-      "= 2∙217 …",
-      "= 2 ∙22 [2 D. P. ]",
-      "p-value:",
-      "P(z < 2∙22) = 0∙9868",
-      "p = 2(1 −0∙9868)",
       "= 0.0264",
       "Conclusion: the mean score for country Y is",
       "significantly different to 400"
@@ -34792,7 +35309,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q10(e)",
-  "questionText": "(e) For one of the questions on the test, students are given a mark of 0, 1, 2, or 3. The proportion receiving each mark is 0·19, p, 2r, and r, respectively, where p, r ∈ ℝ and p, r ≥ 0. A student is picked at random. The expected value of their mark will depend on p and r. Find the largest value that the expected value could be.",
+  "questionText": "(e) For one of the questions on the test, students are given a mark of 0, 1, 2, or 3. The proportion receiving each mark is 0·19, p, 2r, and r, respectively, where p, r ∈ ℝ and p, r ≥ 0. A student is picked at random. The expected value of their mark will depend on p and r. Find the largest value that the expected value could be",
   "figureKey": "maths-2025-HL-paper-p070-i1",
   "labelKey": [],
   "tariffModel": {
@@ -34922,7 +35439,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q1(b)(i), (ii)",
-  "questionText": "Máiréad and Diarmuid both start cleaning standard windows at the same time. They both finish cleaning a window at the same time",
+  "questionText": "Máiréad and Diarmuid both start cleaning standard windows at the same time. They both finish cleaning a window at the same time. A building has 35 standard windows. Work out how long it would take Máiréad and Diarmuid to clean the 35 windows if they work together",
   "figureKey": "maths-2025-OL-paper-p006-i2",
   "labelKey": [],
   "tariffModel": {
@@ -35003,13 +35520,13 @@
  {
   "id": "maths-2025-ol-p1-q2-a-ii",
   "topicId": "maths-3-2",
-  "conceptId": "work-out-modulus-surd-form",
+  "conceptId": "work-out-modulus-surd-form-iii",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q2(a)(ii), (iii)",
-  "questionText": "Work out the modulus of z₁. That is, find |z₁|. Give your answer in surd form",
+  "questionText": "Work out the modulus of z₁. That is, find |z₁|. Give your answer in surd form. (iii) Write down one possible value of z₄. Give your answer in the form a + b, where a, b∈ℤ",
   "figureKey": "maths-2025-OL-paper-p007-i1",
   "labelKey": [],
   "tariffModel": {
@@ -35049,14 +35566,14 @@
  },
  {
   "id": "maths-2025-ol-p1-q2-b",
-  "topicId": "maths-3-1",
-  "conceptId": "two-complex-numbers-write-form",
+  "topicId": "maths-4-4",
+  "conceptId": "two-complex-numbers",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q2(b)",
-  "questionText": "u and v are two complex numbers. u= 4 −6i v= 1 + i Write u v in the form a+ b, where a, b∈ℤ",
+  "questionText": "u and v are two complex numbers",
   "figureKey": "maths-2025-OL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35183,7 +35700,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q3(c)(i), (ii)",
-  "questionText": "Write down a possible value of k and the corresponding value of t",
+  "questionText": "Write down a possible value of k and the corresponding value of t. Use your values for k and t from part (c)(i) to find the value of b in the equation below",
   "figureKey": "maths-2025-OL-paper-p009-i2",
   "labelKey": [],
   "tariffModel": {
@@ -35198,17 +35715,17 @@
    {
     "id": "maths-2025-ol-p1-q3-c-i-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit in (i), for example, one factor of 12 given\nWork of merit in (ii), for example, use of the answer from (i)",
+    "verbatim": "k = 6 t = 2",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
     "group": {
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "Work of merit in (i), for example, one factor of 12 given\nWork of merit in (ii), for example, use of the answer from (i)",
-      "Work of merit in (i) AND (ii)\nPart (i) correct",
-      "Part (ii) correct\nPart (i) correct and work of merit in part (ii)"
+      "k = 6 t = 2",
+      "(x + 6)(x + 2)",
+      "[x² + ] 8x [+12]"
      ],
      "perOptionSteps": [
       3,
@@ -35322,7 +35839,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q4(c)(i), (ii)",
-  "questionText": "Write each of the letters P, Q, and R in the correct place in the table so that each point matches the description of the derivative at that point, where g′(x) is the derivative of g(x)",
+  "questionText": "Write each of the letters P, Q, and R in the correct place in the table so that each point matches the description of the derivative at that point, where g′(x) is the derivative of g(x). For the point that you matched to g′(x) = 0, give a reason for your answer",
   "figureKey": "maths-2025-OL-paper-p010-i2",
   "labelKey": [],
   "tariffModel": {
@@ -35454,14 +35971,14 @@
  },
  {
   "id": "maths-2025-ol-p1-q5-c-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-5-2",
   "conceptId": "based-graph-which-pairs-values-possible",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q5(c)(i), (ii)",
-  "questionText": "Based on the graph, which of the following pairs of values of x is a possible set of roots of h(x), that is, values of x for which h(x) = 0?",
+  "questionText": "Based on the graph, which of the following pairs of values of x is a possible set of roots of h(x), that is, values of x for which h(x) = 0? Find the value of x, at which h(x) is a minimum",
   "figureKey": "maths-2025-OL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35502,13 +36019,13 @@
  {
   "id": "maths-2025-ol-p1-q6-a-i",
   "topicId": "maths-3-3",
-  "conceptId": "selling-price-coat",
+  "conceptId": "selling-price-coat-margin-coat-profit",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q6(a)(i), (ii)",
-  "questionText": "Find the selling price of the coat",
+  "questionText": "Find the selling price of the coat. The margin on the coat is the profit as a percentage of the selling price. Write down the profit for this coat and hence find the margin",
   "figureKey": "maths-2025-OL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35645,7 +36162,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q7(a)(i), (ii)",
-  "questionText": "Use the graph to estimate the value of one share on 1st March",
+  "questionText": "Use the graph to estimate the value of one share on 1st March. Use the graph to identify the month during which the value of one share increased by the greatest amount",
   "figureKey": "maths-2025-OL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35775,14 +36292,14 @@
  },
  {
   "id": "maths-2025-ol-p1-q7-d-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-1",
   "conceptId": "complete-table-values-given-values-each",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q7(d)(i), (ii)",
-  "questionText": "Complete the table below to show the values of P(m) for the given values of m. Give each value of P(m) correct to 2 decimal places where relevant",
+  "questionText": "Complete the table below to show the values of P(m) for the given values of m. Give each value of P(m) correct to 2 decimal places where relevant. The graph of Company A is shown again below. On the same diagram, draw the graph of P(m), for 0 ≤ m ≤ 6, m∈ℝ",
   "figureKey": "maths-2025-OL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35862,14 +36379,14 @@
  },
  {
   "id": "maths-2025-ol-p1-q7-e-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-3-1",
   "conceptId": "fill-missing-number-box-complete-expression",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q7(e)(i), (ii)",
-  "questionText": "Fill in the missing number in the box above to complete the expression for Q(n)",
+  "questionText": "Fill in the missing number in the box above to complete the expression for Q(n). Using your expression, or otherwise, find how many months it takes for the value of one share for Company B to fall below its value on 1st January, according to the model. Remember that n∈ℕ",
   "figureKey": "maths-2025-OL-paper-p015-i2",
   "labelKey": [],
   "tariffModel": {
@@ -35907,7 +36424,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q8-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-1",
   "conceptId": "explain-what-means-context-question",
   "level": "ordinary",
   "year": 2025,
@@ -35952,14 +36469,14 @@
  },
  {
   "id": "maths-2025-ol-p1-q8-a-ii",
-  "topicId": "maths-3-3",
-  "conceptId": "complete-table-values-given-values",
+  "topicId": "maths-3-1",
+  "conceptId": "complete-table-values-given-values-iii",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q8(a)(ii), (iii)",
-  "questionText": "Complete the table below to show the values of P(x) for the given values of x",
+  "questionText": "Complete the table below to show the values of P(x) for the given values of x. (iii) Draw the graph of P(x) on the axes below for 0 ≤ x ≤ 7, x∈ℝ",
   "figureKey": "maths-2025-OL-paper-p016-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36045,13 +36562,13 @@
  {
   "id": "maths-2025-ol-p1-q8-b-i",
   "topicId": "maths-5-2",
-  "conceptId": "value-which-will-maximum-value",
+  "conceptId": "value-which-will-maximum-value-maximum",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q8(b)(i), (ii)",
-  "questionText": "Find Q′(x), and hence find the value of x which will give the maximum value of Q(x)",
+  "questionText": "Find Q′(x), and hence find the value of x which will give the maximum value of Q(x). Hence, find the maximum value of Q(x)",
   "figureKey": "maths-2025-OL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -36091,14 +36608,14 @@
  },
  {
   "id": "maths-2025-ol-p1-q8-c-i",
-  "topicId": "maths-3-3",
-  "conceptId": "graph-estimate-work-out-value",
+  "topicId": "maths-3-1",
+  "conceptId": "graph-estimate-work-out-value-diagram",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q8(c)(i), (ii)",
-  "questionText": "From the graph, estimate R(2) and hence work out the value of R(2) + 3",
+  "questionText": "From the graph, estimate R(2) and hence work out the value of R(2) + 3. On the diagram above, draw the graph of y = R(x) + 3 for 0 ≤ x ≤ 6, x∈ℝ, using the same axes and scales",
   "figureKey": "maths-2025-OL-paper-p017-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36138,14 +36655,14 @@
  },
  {
   "id": "maths-2025-ol-p1-q9-a-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-3-3",
   "conceptId": "how-much-money-will-account-after",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q9(a)(i), (ii)",
-  "questionText": "Find how much money will be in the account after 1 year",
+  "questionText": "Find how much money will be in the account after 1 year. Hence, or otherwise, find how much money will be in the account at the end of 3 years using the rate of 2∙8% per annum compound interest. Give your answer correct to the nearest cent",
   "figureKey": "maths-2025-OL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
@@ -36322,7 +36839,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q9(b)(iv), (v)",
-  "questionText": "(iv) Sₙ is the total number of dots required to make the first n patterns, where n∈ℕ. Write Sₙ in terms of n",
+  "questionText": "(iv) Sₙ is the total number of dots required to make the first n patterns, where n∈ℕ. Write Sₙ in terms of n. Hence, or otherwise, find the total number of complete patterns in the sequence that can be made using 740 dots",
   "figureKey": "maths-2025-OL-paper-p019-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36596,7 +37113,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q10(c)(i), (ii)",
-  "questionText": "Find the charge for a repair when it takes 3 hours to do the repair, the extra hourly charge, x, is 3∙5, and the discount rate, d, is 1∙1. Give your answer correct to 2 decimal places",
+  "questionText": "Find the charge for a repair when it takes 3 hours to do the repair, the extra hourly charge, x, is 3∙5, and the discount rate, d, is 1∙1. Give your answer correct to 2 decimal places. Find the value of x when the charge for the repair is €76, the repair takes 4 hours, and the discount rate is 1∙2",
   "figureKey": "maths-2025-OL-paper-p021-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36676,7 +37193,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q1-a-i",
-  "topicId": "maths-1-6",
+  "topicId": "maths-4-2",
   "conceptId": "total-rainfall-athenry-june-2023-was",
   "level": "ordinary",
   "year": 2025,
@@ -36761,7 +37278,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q1-b",
-  "topicId": "maths-1-6",
+  "topicId": "maths-4-2",
   "conceptId": "table-shows-same-monthly-rainfall-values",
   "level": "ordinary",
   "year": 2025,
@@ -37019,13 +37536,13 @@
  {
   "id": "maths-2025-ol-p2-q3-c-i",
   "topicId": "maths-2-2",
-  "conceptId": "radius-circle",
+  "conceptId": "radius-circle-otherwise-write-down-ordinates",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q3(c)(i), (ii)",
-  "questionText": "Find the radius of the circle k",
+  "questionText": "Find the radius of the circle k. Hence, or otherwise, write down the co-ordinates of two points that are on the circle k, other than (2, 7)",
   "figureKey": "maths-2025-OL-paper-p028-i2",
   "labelKey": [],
   "tariffModel": {
@@ -37434,7 +37951,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q6(a)(ii), (iii)",
-  "questionText": "A student is chosen at random. Find the probability that this student had a mark between 34 and 90",
+  "questionText": "A student is chosen at random. Find the probability that this student had a mark between 34 and 90. (iii) 150 students sat the exam. Estimate the number of students who got marks between 48 and 76 in the exam",
   "figureKey": "maths-2025-OL-paper-p032-i1",
   "labelKey": [],
   "tariffModel": {
@@ -37528,7 +38045,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q7(a)(i), (ii)",
-  "questionText": "writing the probability associated with each branch of the tree diagram into the appropriate box and",
+  "questionText": "writing the probability associated with each branch of the tree diagram into the appropriate box and working out the probability for each outcome and writing it in the appropriate box in the final column",
   "figureKey": "maths-2025-OL-paper-p033-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37615,7 +38132,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q7(b)(i), (ii)",
-  "questionText": "What is the probability that Sarah will lose her next service game (that is, that she won’t win her next service game)?",
+  "questionText": "What is the probability that Sarah will lose her next service game (that is, that she won’t win her next service game)? What is the probability that the first service game that Sarah loses is her third service game? Give your answer correct to 3 decimal places",
   "figureKey": "maths-2025-OL-paper-p034-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37889,7 +38406,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q8(b)(i), (ii)",
-  "questionText": "There is a correlation between engine size and fuel efficiency",
+  "questionText": "There is a correlation between engine size and fuel efficiency. Tom says that the correlation coefficient for two sets of data is 5. Explain why this cannot be correct",
   "figureKey": "maths-2025-OL-paper-p037-i0",
   "labelKey": [],
   "tariffModel": {
@@ -38064,14 +38581,14 @@
  },
  {
   "id": "maths-2025-ol-p2-q9-a-i",
-  "topicId": "maths-2-2",
+  "topicId": "maths-2-3",
   "conceptId": "diagram-construct-midpoint-side-label-point",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q9(a)(i), (ii)",
-  "questionText": "On the diagram below, construct the midpoint of the side [A]. Label this point D. (If using measurements and calculations, show all calculations clearly)",
+  "questionText": "On the diagram below, construct the midpoint of the side [A]. Label this point D. (If using measurements and calculations, show all calculations clearly). Hence, construct the centroid of the triangle A. Label this point O",
   "figureKey": "maths-2025-OL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
@@ -38118,7 +38635,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q9(b)(i), (ii)",
-  "questionText": "The longest side of the bigger table-top is 45 cm. The longest side of the smaller table-top is 36 cm",
+  "questionText": "The longest side of the bigger table-top is 45 cm. The longest side of the smaller table-top is 36 cm. The shortest side of the smaller table-top is 25∙5 cm. Work out the length of the shortest side of the bigger table-top, correct to 1 decimal place",
   "figureKey": "maths-2025-OL-paper-p039-i1",
   "labelKey": [],
   "tariffModel": {
@@ -38517,7 +39034,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q10(b)(ii), (iii)",
-  "questionText": "Work out how many such routes are possible",
+  "questionText": "Work out how many such routes are possible. (iii) On a particular day Aoibhe wants to start at A, swim to two markers other than A, and then return to A. For example, Aoibhe could swim the route: Work out how many such routes are possible",
   "figureKey": "maths-2025-OL-paper-p042-i1",
   "labelKey": [],
   "tariffModel": {

@@ -52,12 +52,21 @@ SCHEMES = os.path.join(ROOT, 'examiner-reports', 'computer-science', 'schemes')
 QUESTION = re.compile(r'^Question\s+(\d{1,2})\b', re.I)
 LETTER = re.compile(r'^\(([a-h])\)\s*$')
 ROMAN = re.compile(r'^\((i{1,3}|iv|v|vi{0,3}|ix|x)\)\s*$')
-# "6 marks", "38 (11, 15, 12) marks", "11 (3,3,3, 2) marks", "2 mark".
-TARIFF = re.compile(r'^(\d{1,3})\s*(?:\(([\d,\s]+)\))?\s*marks?\s*$', re.I)
+LETTER_TARIFF = re.compile(r'^\(([a-h])\)\s+(.+)$', re.I)
+ROMAN_TARIFF = re.compile(
+    r'^\((i{1,3}|iv|v|vi{0,3}|ix|x)\)\s+(.+)$', re.I)
+# "6 marks", "38 (11, 15, 12) marks", "11 (3,3,3, 2) marks",
+# and the inaugural paper's "2 + 3 marks".
+TARIFF = re.compile(
+    r'^(\d{1,3})\s*(?:\(([\d,\s]+)\)|(\s*(?:\+\s*\d+)+))?\s*'
+    r'marks?(?:\s*\(([\d,\s]+)\))?\s*$',
+    re.I)
 # The rubric at the foot of a part. It grades the response; it never states it.
-BAND = re.compile(r'^\s*(very good|good|fair|excellent|weak|poor|full correct|'
+BAND = re.compile(r'^\s*(very good|good|fair|excellent|weak|poor|full(?:y)? correct|'
                   r'response with some merit|correct|incorrect|no |partially|'
-                  r'almost|some merit|any \d+ (?:from|of)|award)',
+                  r'almost|some merit|any \d+ (?:from|of)|award|clear |'
+                  r'work of merit|for each|each correct|first correct|'
+                  r'second correct|\d+\s+marks?\s*\([A-Z]-\d+\s+scale\))',
                   re.I)
 SECTION = re.compile(r'^Section\s+([A-C])\b')
 PAGE_NO = re.compile(r'^\d{1,3}$')
@@ -73,6 +82,37 @@ COUNT_WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5,
 ROMAN_ORDER = {r: i + 1 for i, r in enumerate(
     ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x'])}
 BULLET = ''
+
+# Credit-band language sometimes shares the final answer row instead of
+# starting on its own row.  It is still examiner guidance rather than answer
+# content.  Split only at phrases the scheme uses as rubric headings, and keep
+# the answer text which precedes them verbatim.
+INLINE_RUBRIC = re.compile(
+    r'\s+(?:Scenario\s+1\b|Valid solution\s*\(|Reasonable attempt\b|'
+    r'Any\s+(?:one|two|three|four|five|six|\d+)\s+of\s+the\s+above\b|'
+    r'Describing correctly\b|Attempt work of merit\b|'
+    r'Best response marked\b|Correct\s+\d+\s+marks?\b|'
+    r'Calculation Error\b|Valid output device\b|'
+    r'Some relevant information\b|Each\s*\(\d+\)\s+valid\b|'
+    r'Logic error correctly identified\b|Answer any two questions\b|'
+    r'Any other reasonable attempt\b|Response about half-right\b|'
+    r'Difference between digital and analogue\b|'
+    r'\d+\s+marks?\s+for better of\b|'
+    r'Valid (?:example|data item|statement)\b|'
+    r'Key decision and outcomes included\b|'
+    r'Note:\s*Some candidates\b|Half correct\b|'
+    r'Explanation:\s*$|Relevant example\s*$|End Users\s*$|'
+    r'Any one of:\s*$|Valid name\b).*$'
+    , re.I)
+
+SECTION_POINT_HEADING = re.compile(
+    r'^Points\s+(?:for supporting|against)\s+the\s+initiative:\s*$', re.I)
+
+# Some combined scheme files append the coursework rubric after Question 16.
+# Once this heading is reached there are no more written-paper answers; without
+# the boundary, the entire rubric is attributed to the last examination part.
+EXAMINATION_END = re.compile(
+    r'^(?:Coursework\b|Reference Mark Conversion\b|BLANK PAGE\b)', re.I)
 
 
 def _lines(page):
@@ -161,6 +201,9 @@ class CsScheme:
         for n in range(len(self.doc)):
             for row in self._rows(self.doc[n]):
                 head_x, _, head_t = row[0]
+                if EXAMINATION_END.match(head_t):
+                    q = letter = roman = key = None
+                    continue
                 # The tariff on THIS row, if the row carries one to its right.
                 tar = None
                 for x, _, t in row[1:]:
@@ -179,9 +222,19 @@ class CsScheme:
                 if hm and head_x < 100:
                     q, letter, roman = int(hm.group(1)), None, None
                     key, opened = (q, None, None), True
+                    if tar is None:
+                        tar = TARIFF.match(head_t[hm.end():].strip())
                 elif q is not None:
                     lm = LETTER.match(head_t)
                     rm = ROMAN.match(head_t)
+                    ltm = LETTER_TARIFF.match(head_t)
+                    rtm = ROMAN_TARIFF.match(head_t)
+                    ltar = TARIFF.match(ltm.group(2)) if ltm else None
+                    rtar = TARIFF.match(rtm.group(2)) if rtm else None
+                    if ltar and tar is None:
+                        lm, tar = ltm, ltar
+                    if rtar and tar is None:
+                        rm, tar = rtm, rtar
                     if lm and head_x < 100:
                         letter, roman = lm.group(1), None
                         key, opened = (q, letter, None), True
@@ -192,10 +245,27 @@ class CsScheme:
                     self._points.setdefault(key, [])
                     self._section[key] = section
                     if tar:
-                        self._tariff[key] = int(tar.group(1))
-                        if tar.group(2):
+                        if tar.group(3):
+                            split = [int(tar.group(1)),
+                                     *map(int, re.findall(r'\d+', tar.group(3)))]
+                            self._tariff[key] = sum(split)
+                            self._split[key] = split
+                        else:
+                            self._tariff[key] = int(tar.group(1))
+                        trailing_split = tar.group(2) or tar.group(4)
+                        if trailing_split:
                             self._split[key] = [int(v) for v in
-                                                re.findall(r'\d+', tar.group(2))]
+                                                re.findall(r'\d+', trailing_split)]
+                    # A marker and its complete answer often share a table row,
+                    # for example ``(a) 0 / False``. Opening the marker must not
+                    # discard the cells to its right.
+                    body = ' '.join(
+                        t for _, _, t in row[1:] if not TARIFF.match(t)).strip()
+                    if body:
+                        if BAND.match(body):
+                            self._bands[key].append(body)
+                        else:
+                            self._points[key].append(body)
                     continue
 
                 if q is None or key is None:
@@ -207,6 +277,15 @@ class CsScheme:
                     continue
                 if BAND.match(body):
                     self._bands[key].append(body)
+                    # The 2020 Q12 heading omits its tariff, but its own top
+                    # performance band prints "5 marks" on the same row.
+                    # Preserve that explicit value for a whole-question key;
+                    # do not generalise it to subparts, where a band may price
+                    # only one criterion rather than the part.
+                    if (tar and self.year == 2020 and self.level == 'hl'
+                            and key == (12, None, None)
+                            and key not in self._tariff):
+                        self._tariff[key] = int(tar.group(1))
                 else:
                     self._points[key].append(body)
 
@@ -227,13 +306,29 @@ class CsScheme:
                 if cur:
                     out.append(' '.join(cur))
                 cur = [line.lstrip('• ').strip()]
+            elif SECTION_POINT_HEADING.match(line):
+                if cur:
+                    out.append(' '.join(cur))
+                    cur = []
+                out.append(line)
             elif cur:
                 cur.append(line)
             else:
                 out.append(line)
         if cur:
             out.append(' '.join(cur))
-        return [p for p in out if p.strip()]
+        # Running footers sometimes share the final answer row's vertical band
+        # and are therefore joined to it by the PDF grid. They are page
+        # furniture, and everything after the first one is rubric or the next
+        # page's section banner rather than part of the answer.
+        footer = re.compile(r'\s*Leaving Certificate\s+\d{4}\b.*$', re.I)
+        cleaned = []
+        for point in out:
+            point = footer.sub('', point).strip()
+            point = INLINE_RUBRIC.sub('', point).strip()
+            if point:
+                cleaned.append(point)
+        return cleaned
 
     def bands(self, q, letter=None, roman=None):
         """The rubric lines. Never an answer -- kept so a caller can see them."""

@@ -33418,6 +33418,110 @@
   ]
  },
  {
+  "id": "agsci-2021-hl-q14a",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "liquid-and-creamery-milk-systems",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(a)",
+  "questionText": "Compare two different systems of animal production for a chosen livestock enterprise under the following headings at an identified stage in the animal’s production cycle.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 × (4+2)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Housed in loose house or cubicles or slats or straw bedding during dry period and moved to cubicle house once calved — Cows housed in loose house or slats or cubicles or straw bedding prior to calving and then turned out to grass for grazing",
+    "marks": null,
+    "contextNote": "Each row reads Liquid milk first, then Creamery milk."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "High quality silage (72%+ DMD) (autumn calving) and high levels of concentrates — Turned out to grass as soon as conditions allow by day with supplementary silage (72%+ DMD) and lower amounts of concentrates required",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Higher price paid for quantity of milk — higher yielding cows (Holstein Friesian or British Friesian or valid yield) — Quality of milk essential ‐ higher price paid for %fat and protein of the milk — breed with high milk solids (Jersey cross or valid example)",
+    "marks": null
+   }
+  ],
+  "stem": "1. 2. Name of production system Identified stage of production cycle",
+  "notes": "The official scheme presents this as a two-column comparison; joined rows preserve the printed left-to-right pairing without inventing a separate mark value for either cell."
+ },
+ {
+  "id": "agsci-2021-hl-q15bii",
+  "topicId": "agsci-3-2",
+  "conceptId": "calculating-milk-composition-change",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 HL Q15(b)(ii)",
+  "questionText": "Calculate the increase in kg DM / ha of herbage over the five month period for the treatment you have identified at part (i) above compared to the increase in the control treatment.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3700 – 1400 = 2300 kg DM / ha 3400 – 1000 = 2400 kg DM / ha",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "There will be 2300 kg DM in the FYM high treatment compared to the control treatment which gives 2400 kg DM /ha )",
+    "marks": 2
+   }
+  ],
+  "stem": "800 1000 1200 1400 1600 1800 2000 2200 2400 2600 2800 3000 3200 3400 3600 3800 4000 Total Available kg DM / Ha November December January February March Time (Months) Control Slurry (Low ‐ 22,000 litres / hectare) Slurry (High ‐ 33,000 litres / hectare) Farmyard Manure (Low ‐ 12 tonnes / hectare) Farmyard Manure (High ‐ 25 tonnes / hectare) Most beneficial treatment calculations Control treatment calculations",
+  "figureKey": "agricultural-science-2021-HL-paper-p33-art-q15b"
+ },
+ {
+  "id": "agsci-2021-hl-q16ai",
+  "topicId": "agsci-1-3",
+  "conceptId": "comparing-farm-gross-margins",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 HL Q16(a)(i)",
+  "questionText": "Calculate which farmer (Dan or Joe) earns a higher price for their milk.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4+2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1803 X 5.48 = 9880.44 2292 X 3.35 = 7678.20 50,000 x 0.04 = 2000 — 9316 + 6830 ‐ 2000 =14,146 — Total = 15,558.64 Total = 14,146",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Higher Price ‐ Dan",
+    "marks": 2
+   }
+  ],
+  "stem": "Dan Joe Supply (litres, kg) 50,000 L (51,500 kg) 50,000 L (51,500 kg) 3.5 % 3.3 % Protein 1,803 kg 1,700 kg A = €5.48 / kg ? €9,316 4.45 % 3.96 % Fat 2,292 kg 2,039 kg B = €3.35 / kg ? €6,830 Processing cost deduction C = €0.04 / litre €2,000 €2,000 (Adapted from Agriland, 2019) Milk quality Joe’s farm bulk sample results for 5/11/2020 Creamery advice parameters 51,000 – 100,000 cfu / ml Fair milk quality – bacteria present – investigate the cause and address the issues. TBC 75,000 cfu / ml (cfu – colony forming unit) 300,000 – 400,000 cells / ml Unstable control of mastitis and SCC 320,000 cells / ml SCC. Review mastitis control.",
+  "notes": "The first scheme row retains the linked calculations and totals; the second gives the resulting higher-price comparison.",
+  "figureKey": "agricultural-science-2021-HL-paper-p35-i1"
+ },
+ {
   "id": "agsci-2021-ol-q4b",
   "topicId": "agsci-2-1",
   "conceptId": "uses-of-a-brown-earth-soil",
@@ -33630,6 +33734,70 @@
   "figureKey": "agricultural-science-2021-OL-paper-p13-i0"
  },
  {
+  "id": "agsci-2021-ol-q11biv",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "interpreting-a-farm-plan",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q11(b)(iv)",
+  "questionText": "Place an X on the plan view above to show one place where you would advise Claire and John to install slatted tanks. Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2+2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X on the diagram ‐ Where cows stand in the feeding passage",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reason ‐ areas with high levels of slurry or cows are feeding or cows are there longer",
+    "marks": 2
+   }
+  ],
+  "stem": "Isolation area Foot bath Centre feed passage Straw separation Not milked Water (Adapted from Farmers Journal, 2020)",
+  "figureKey": "agricultural-science-2021-OL-paper-p15-i0"
+ },
+ {
+  "id": "agsci-2021-ol-q18biii",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "polled-cattle-trait-and-benefit",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 OL Q18(b)(iii)",
+  "questionText": "The following are pictures of two beef cattle breeds, Aberdeen Angus and Belgian Blue. Both breeds have been selectively bred based on physical traits.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2+2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "AA ‐ polled (no horns)",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "less dangerous",
+    "marks": 2
+   }
+  ],
+  "stem": "State one physical trait, in either of the animals above, and give one reason why this trait is an advantage to beef farmers.",
+  "figureKey": "agricultural-science-2021-OL-paper-p34-i0"
+ },
+ {
   "id": "agsci-2022-hl-q16ci",
   "topicId": "agsci-3-2",
   "conceptId": "named-grazing-systems",
@@ -33653,6 +33821,159 @@
    }
   ],
   "notes": "Block, strip grazing and the spokes-of-a-wheel layout also score. Zero grazing does not."
+ },
+ {
+  "id": "agsci-2022-hl-q13aiv",
+  "topicId": "agsci-3-2",
+  "conceptId": "identifying-plants-from-a-plate",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q13(a)(iv)",
+  "questionText": "Identify the growth cycle stage of the plants in part (iii) and describe briefly what happens at this stage.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(3)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reproductive stage",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Describe briefly what happens at this stage Seed head develops or heading out or flowering",
+    "marks": 3
+   }
+  ],
+  "stem": "kg DM/ha =",
+  "figureKey": "agricultural-science-2022-HL-paper-p20-i0"
+ },
+ {
+  "id": "agsci-2022-hl-q13biii",
+  "topicId": "agsci-3-2",
+  "conceptId": "certified-and-uncertified-seed",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q13(b)(iii)",
+  "questionText": "Gerry was able to compare the plant uniformity of both batches of seed (certified and uncertified). Describe the characteristics Gerry would have observed to determine which batch was certified and which was uncertified.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 × 2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Certified Seed Uncertified Seed Min. 85% of the plants had germination — Less than 85% germinated",
+    "marks": null,
+    "contextNote": "Each row reads Certified seed first, then Uncertified seed."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reduced weeds — increased number of weeds present",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "plants were all similar height — plants varied in height",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "plants were all the same colour — plants varied in colour/ plants varied in stem or root or leaf",
+    "marks": null
+   }
+  ],
+  "notes": "The official comparison table is retained as paired rows."
+ },
+ {
+  "id": "agsci-2022-hl-q14cii",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "ventilation-opening-calculation",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(ii)",
+  "questionText": "A farmer let off a smoke bomb in his calf shed to check the ventilation. Complete the diagram using arrows to show the natural airflow he should expect through the shed.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4+1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct indication of arrows coming in at side",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "going out through roof",
+    "marks": 1
+   }
+  ],
+  "stem": "X Smoke bomb Or",
+  "figureKey": "agricultural-science-2022-HL-paper-p25-i0"
+ },
+ {
+  "id": "agsci-2022-hl-q18bii",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "integrated-mitigation-strategies",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q18(b)(ii)",
+  "questionText": "You have been asked to address a group of tillage farmers. Using the ‘Integrated Management System’ for controlling weeds (outlined on previous page), provide advice to them on the future of weed control on their farms.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 × 3"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Integrated Management — Cultural control has to be the most important part of the IMS, and use of herbicides is less important",
+    "marks": null,
+    "contextNote": "Each row links the scheme heading to its matching advice."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Use of herbicides — Increase use of pre‐emergent herbicides and decrease the use of post‐emergent herbicides",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Increased seed — rates — increase in plant numbers for increased competition with weeds so less chemical sprays required",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Cover crops — increased competition for space or light or nutrients so less chemical sprays required or some cover crops– release chemicals that suppress weeds (allelopathic) (e.g. wheat, kale, cabbage)",
+    "marks": null
+   }
+  ],
+  "stem": "Analyse the diagram and answer the questions which follow. (Adapted from Teagasc, 2021) (i) Explain pre‐emergence weed control.",
+  "figureKey": "agricultural-science-2022-HL-paper-p38-i0"
  },
  {
   "id": "agsci-2022-ol-q1a",
@@ -33938,6 +34259,164 @@
   "notes": "The scheme also allows reduced yield, slower growth or an effect on earthworm activity as the implication."
  },
  {
+  "id": "agsci-2022-ol-q10a",
+  "topicId": "agsci-2-2-2",
+  "conceptId": "testing-soil-ph-and-texture",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q10(a)",
+  "questionText": "Describe two tests a farmer could do to assess the quality of the silage at the pit face.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4+2+1"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Good quality – squeeze silage juice into a jar and place pH probe in or pH paper – pH 4 Poor quality ‐ squeeze silage juice into a jar and place pH probe in or pH paper – pH >5",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Texture Good quality – firm and fibres do not wear easily",
+    "marks": null
+   }
+  ],
+  "stem": "Beef, sheep and dairy farmers require high quality silage for winter feed.",
+  "notes": "The official tariff awards the response by position."
+ },
+ {
+  "id": "agsci-2022-ol-q12a",
+  "topicId": "agsci-2-1",
+  "conceptId": "factors-in-soil-formation",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q12(a)",
+  "questionText": "Describe how any three of the following factors are involved in soil formation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2+1+1"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Soil is formed by weathering of rock",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Erosion will occur in steep slopes",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Over time, vegetation and climate act on parent material and topography",
+    "marks": null
+   }
+  ],
+  "stem": "Factors Parent material Topography Time Climate Organisms"
+ },
+ {
+  "id": "agsci-2022-ol-q16aii",
+  "topicId": "agsci-3-2",
+  "conceptId": "reading-a-grass-growth-graph",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 OL Q16(a)(ii)",
+  "questionText": "Shade onto the graph above the portion which represents the excess grass in summer months.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Shaded area between continous blue line and orange dash line",
+    "marks": 2
+   }
+  ],
+  "stem": "Grass Growth Curve and Feed Demand 90 Yield of DM (kg/ ha) Feed Demand 80 Yield of DM (kg/ha) 70 60 50 40 30 20 10 0 Feb Mar Apr May Jun Jul Aug Sept Oct Nov Months (Adapted from gouldings, 2021)",
+  "figureKey": "agricultural-science-2022-OL-paper-p29-art-q16a"
+ },
+ {
+  "id": "agsci-2022-ol-q17bi",
+  "topicId": "agsci-3-2",
+  "conceptId": "nitrogen-cycle-processes",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 OL Q17(b)(i)",
+  "questionText": "Calculate the total bovine nitrogen (figure A) for John’s 1 – 2 year‐old cattle for 2020‐21.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2020/’21 40 X 57",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "= 2280 (kg)",
+    "marks": 4
+   }
+  ],
+  "stem": "Analyse the data and answer the questions which follow. Bovine nitrogen livestock figures for 2020‐21 Type of livestock Number of livestock on Nitrogen produced per Bovine nitrogen year (kg) produced on John’s farm Suckler Cows 46 65 2990 Cattle (0 ‐ 1 year) 44 24 1056 Cattle (1 ‐ 2 year) 40 57 A Bull (1 ‐ 2 year) 1 57 57 Bull >2 years 1 65 65 Total bovine nitrogen produced on John’s farm B John’s farm",
+  "figureKey": "agricultural-science-2022-OL-paper-p33-art"
+ },
+ {
+  "id": "agsci-2022-ol-q17biii",
+  "topicId": "agsci-3-2",
+  "conceptId": "nitrogen-cycle-calculation",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 OL Q17(b)(iii)",
+  "questionText": "The bovine nitrogen reference figure for the previous year 2019‐20 is 6992kg on John’s farm. State if John achieved his target of 5% bovine nitrogen reduction in 2020‐21. Show your calculation in the box below.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4+2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "6992 x 5% = 349.6 (kg) 6992 ‐ 349.6 = 6642.4 (kg) This can be then rounded to 6643 (kg) or left as it is.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(If a candidate gives 6642.4 (kg) or 6643 (kg) without showing any calculations they may be awarded 4m) Yes – John reached his target as he only produced 6442 (kg)",
+    "marks": 2
+   }
+  ],
+  "stem": "Analyse the data and answer the questions which follow. Bovine nitrogen livestock figures for 2020‐21 Type of livestock Number of livestock on Nitrogen produced per Bovine nitrogen year (kg) produced on John’s farm Suckler Cows 46 65 2990 Cattle (0 ‐ 1 year) 44 24 1056 Cattle (1 ‐ 2 year) 40 57 A Bull (1 ‐ 2 year) 1 57 57 Bull >2 years 1 65 65 Total bovine nitrogen produced on John’s farm B John’s farm",
+  "figureKey": "agricultural-science-2022-OL-paper-p33-art"
+ },
+ {
   "id": "agsci-2022-ol-q4bi",
   "topicId": "agsci-4-1",
   "conceptId": "oestrus-cycle-length",
@@ -34121,8 +34600,7 @@
    }
   ],
   "stem": "Nitrate Levels in Soil Water Amount of Nitrate (mg/l) 300 250 200 150 100 50 0 Control Protected urea Unprotected urea Analyse the graph and briefly describe the conclusion the student made from his investigation.",
-  "notes": "The scheme goes on to say what a farmer should do about it: use protected urea, because less nitrate leaches from it.",
-  "figureKey": "agricultural-science-2023-HL-paper-p11-i1"
+  "notes": "The scheme goes on to say what a farmer should do about it: use protected urea, because less nitrate leaches from it."
  },
  {
   "id": "agsci-2023-hl-q16aii",
@@ -34154,6 +34632,120 @@
    }
   ],
   "stem": "Percentage Share of Farm Carbon Emissions 50 Current farm assessment (2021) Previous farm assessment (2019) National average Percentage Share (%) 40 30 20 10 0 Animal digestion Manure usage Fertiliser used Forage / Feed Sources of Carbon Emissions (Adapted from Teagasc, 2022)"
+ },
+ {
+  "id": "agsci-2023-hl-q7a",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "goat-and-cow-dairy-comparison",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 HL Q7(a)",
+  "questionText": "Complete the table to show how goat dairy farming compares to cow dairy farming.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+3+2+2"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3 0 5",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "280 - 283",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "18 - 24",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(High yielding cows with high milk solids) bred every year (or 365 days)",
+    "marks": 2
+   }
+  ],
+  "notes": "Rows follow the four empty cells in the official comparison table.",
+  "figureKey": "agricultural-science-2023-HL-paper-p10-art-goat-table"
+ },
+ {
+  "id": "agsci-2023-hl-q7b",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "dairy-sustainability-bonus-actions",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 HL Q7(b)",
+  "questionText": "Some dairy farmers can receive a sustainability bonus if they are taking actions to improve sustainability on their farm. Describe actions these dairy farmers could do to improve their sustainability and receive the bonus. The first one has been done as an example.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3+3+2+2"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Milk recording — at least four times a year — Identify high yielding cows with good milk solids for breeding or identifying and breeding more profitable and efficient cows which are better for the environment",
+    "marks": null,
+    "contextNote": "Each row links a named action to the scheme description that earns it."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ASSAP (water) — assessment — Undertake a water quality assessment to measure and improve the quality of water on the farm",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Increasing EBI — EBI will help farmers breed a more profitable dairy cow and lower GHG emissions.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Land management — soil testing for pH, N, P or K every five years",
+    "marks": null
+   }
+  ],
+  "stem": "Action Description Use protected urea Reduces nitrogen loss and greenhouse gases emissions while maintaining the yield when compared with unprotected urea 1."
+ },
+ {
+  "id": "agsci-2023-hl-q18av",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "california-mastitis-test-order",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 HL Q18(a)(v)",
+  "questionText": "Jenny tested the milk quality from various samples of milk to see which cow had high SCC using the cow side California Mastitis Test (CMT). The steps involved in carrying out the test are shown in the table. Assist Jenny in placing each step in the correct order by matching the correct letter to the number in the box.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "allOf",
+    "verbatim": "1 A 2 D 3 B 4 C",
+    "marks": 8
+   }
+  ],
+  "stem": "Take a sample of milk from each quarter onto each well of the paddle Add equal amounts of CMT solution and rotate in circular motion High cell count mixture will thicken to a gel Pour off excess milk 1 2 3 4",
+  "figureKey": "agricultural-science-2023-HL-paper-p38-art-cmt"
  },
  {
   "id": "agsci-2023-ol-q1b",
@@ -34623,6 +35215,125 @@
   ]
  },
  {
+  "id": "agsci-2023-ol-q5",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "farm-biosecurity-threats-and-controls",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q5",
+  "questionText": "Biosecurity is crucial in maintaining healthy animals. Analyse the picture and answer the questions which follow. Domestic food waste Contaminated vehicles & equipment Wild boar Contaminated clothing & shoes Contaminated feed Farm visitors Sick pigs Using your knowledge of biosecurity, explain how each of the following can threaten the biosecurity on a farm and outline what the farmer can do to reduce the risk. Threaten biosecurity How to reduce risk Sick animals Contaminated vehicles and equipment",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 × (4+1)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Can pass the disease (infect) onto other animals or humans — Isolate new animals when entering the farm",
+    "marks": 5,
+    "contextNote": "Each row pairs one pictured threat with its matching risk-reduction action."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Can carry disease between farms (on tyres) — Wash or disinfect vehicles and equipment between farms",
+    "marks": 5
+   }
+  ],
+  "stem": "Biosecurity is crucial in maintaining healthy animals. Analyse the picture and answer the questions which follow. Domestic food waste Contaminated vehicles & equipment Wild boar Contaminated clothing & shoes Contaminated feed Farm visitors Sick pigs Using your knowledge of biosecurity, explain how each of the following can threaten the biosecurity on a farm and outline what the farmer can do to reduce the risk. Threaten biosecurity How to reduce risk Sick animals Contaminated vehicles and equipment",
+  "figureKey": "agricultural-science-2023-OL-paper-p07-i0"
+ },
+ {
+  "id": "agsci-2023-ol-q7a",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "interpreting-ewe-mothering-scores",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q7(a)",
+  "questionText": "Dónal was scoring his ewes mothering ability after lambing and recorded the results in the table below. Complete the table below for Dónal describing the implications of his results. The first one has been done as an example.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(3)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "107 3 (Average mother), not protective and moderately attentive",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "108 1 (Very poor mother) with no interest in lambs",
+    "marks": 3
+   }
+  ],
+  "figureKey": "agricultural-science-2023-OL-paper-p10-art-mothering"
+ },
+ {
+  "id": "agsci-2023-ol-q14biv",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "least-environmentally-friendly-farming",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(iv)",
+  "questionText": "State which diagram represents farming in the least environmentally friendly way and give two reasons for your answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 2(4)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: B",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Two reasons: cattle drinking in river",
+    "marks": 4,
+    "accepts": [
+     "no trees or plants",
+     "monoculture",
+     "no wildlife corridors",
+     "river banks are being eroded into the river",
+     "water quality (eutrophication)",
+     "spraying weed killer (near river)"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "splash plate slurry spreading or slurry being spread near the river",
+    "marks": 4,
+    "accepts": [
+     "no trees or plants",
+     "monoculture",
+     "no wildlife corridors",
+     "river banks are being eroded into the river",
+     "water quality (eutrophication)",
+     "spraying weed killer (near river)"
+    ]
+   }
+  ],
+  "stem": "W X",
+  "notes": "The first row identifies the diagram. The next two are separate reason slots and carry every other scheme-accepted reason as alternatives.",
+  "figureKey": "agricultural-science-2023-OL-paper-p24-art"
+ },
+ {
   "id": "agsci-2024-hl-q10a",
   "topicId": "agsci-3-2",
   "conceptId": "recognising-a-multi-species-sward",
@@ -34953,8 +35664,7 @@
     "marks": 4
    }
   ],
-  "stem": "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)",
-  "figureKey": "agricultural-science-2024-hl-paper-p032-i0"
+  "stem": "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)"
  },
  {
   "id": "agsci-2024-hl-q18aiii",
@@ -34985,8 +35695,327 @@
     "marks": 2
    }
   ],
-  "notes": "The scheme also allows a white face, white legs and belly, a pink nose or the tail switch.",
-  "figureKey": "agricultural-science-2024-hl-paper-p037-i0"
+  "notes": "The scheme also allows a white face, white legs and belly, a pink nose or the tail switch."
+ },
+ {
+  "id": "agsci-2024-hl-q5a",
+  "topicId": "agsci-3-2",
+  "conceptId": "identifying-cereal-crops",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 HL Q5(a)",
+  "questionText": "You have been asked to show a group of farmers barley, wheat and oats crops. At the time of visiting the farm, each crop was at the stage shown in row 1. Each crop at its ripening stage is shown for reference in row 2. Assist farmers by identifying A, B and C as barley, wheat or oats.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5+2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "allOf",
+    "verbatim": "A B C Oats Wheat Barley",
+    "marks": 7
+   }
+  ],
+  "stem": "1 Auricles No auricles and leaf margins are hairless Well-developed hairy auricles Large, hairless auricles 2",
+  "figureKey": "agricultural-science-2024-hl-paper-p009-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Oats",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Wheat",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Barley",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2024-hl-q9bi",
+  "topicId": "agsci-2-2-1",
+  "conceptId": "soil-structure-quality",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 HL Q9(b)(i)",
+  "questionText": "Based on your knowledge of soil structure, identify the soil quality of each of the different soils in A, B and C using the list below.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Good",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Moderate",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Poor",
+    "marks": 2
+   }
+  ],
+  "stem": "Moderate quality Poor quality Good quality A B C",
+  "figureKey": "agricultural-science-2024-HL-paper-p14-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Good",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Moderate",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Poor",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2024-hl-q9bii",
+  "topicId": "agsci-2-2-1",
+  "conceptId": "features-of-good-soil-structure",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 HL Q9(b)(ii)",
+  "questionText": "Briefly describe one reason for your choice of good quality soil structure in part (i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "in part (i) above. Soil particles are predominantly small",
+    "marks": 4,
+    "accepts": [
+     "soil particles are predominantly round",
+     "good crumb structure",
+     "presence of organic matter"
+    ]
+   }
+  ],
+  "stem": "Moderate quality Poor quality Good quality A B C",
+  "figureKey": "agricultural-science-2024-HL-paper-p14-i0"
+ },
+ {
+  "id": "agsci-2024-hl-q13aii",
+  "topicId": "agsci-3-2",
+  "conceptId": "identifying-grassland-plants",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 HL Q13(a)(ii)",
+  "questionText": "Gill identified the following plants on the land when carrying out the investigation. Identify the plants A, B, C and D using the list below.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "allOf",
+    "verbatim": "B C D Primrose Nettle Ragwort Meadow Thistle",
+    "marks": 8
+   }
+  ],
+  "stem": "Ragwort Meadow Thistle Nettle Primrose Gill wanted to provide advice to the farmers on ways to enhance plant biodiversity. She used the Farmland Plant Identification Key for the Agri-Climate Rural Environmental Scheme (ACRES) to help identify positive plant indicator species which would enhance biodiversity. The range and cover of positive plant indicators is one of the best ways of quantifying the biodiversity value of the habitat (field). Biodiversity indicators Description Grassland which is not managed intensively and contains plants such as Primrose and Meadow Thistle. Positive grassland indicators Grassland is managed intensively and is used to rapidly assess if land is in ‘poor’ condition. It contains plants such as Ragwort and Nettles. Negative grassland indicators",
+  "figureKey": "agricultural-science-2024-HL-paper-p22-art-plants",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Primrose",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Nettle",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Ragwort",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Meadow Thistle",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2024-hl-q15ci",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "average-daily-liveweight-gain",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 HL Q15(c)(i)",
+  "questionText": "Calculate the average (mean) daily liveweight gain of the calves from birth to 15 weeks.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "85/105 = 0.81(kg/day)",
+    "marks": 6
+   }
+  ],
+  "stem": "Average Liveweight Gain of Dairy Beef Calves 140 40 45 51 57 62 68 74 80 86 92 98 103 108 113 119 125 120 Liveweight (kg) 100 80 60 40 20 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 Age (weeks)",
+  "figureKey": "agricultural-science-2024-HL-paper-p30-art-growth"
+ },
+ {
+  "id": "agsci-2024-hl-q18aii",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "identifying-parent-breeds",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 HL Q18(a)(ii)",
+  "questionText": "Identify the breeds shown in A and B.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6+2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Hereford",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: (Holstein) Friesian",
+    "marks": 2
+   }
+  ],
+  "figureKey": "agricultural-science-2024-HL-paper-p37-art-parents",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hereford",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "(Holstein) Friesian",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2024-hl-q18biii",
+  "topicId": "agsci-4-2",
+  "conceptId": "genetic-modification-in-breeding",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 HL Q18(b)(iii)",
+  "questionText": "Briefly describe one named method of genetic engineering you have studied and explain its importance in animal breeding.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Genetic modification (GM)",
+    "marks": 2,
+    "contextNote": "The selected official route is Genetic modification: name, description, then one importance in animal breeding."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Organism whose genetic make up has been modified in a lab",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Increased disease resistance",
+    "marks": 2
+   }
+  ]
+ },
+ {
+  "id": "agsci-2024-hl-q18c",
+  "topicId": "agsci-3-2",
+  "conceptId": "integrated-pest-management-controls",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 HL Q18(c)",
+  "questionText": "With the EU’s ‘Farm to Fork Strategy’ proposed to reduce by 50% the use of chemical pesticides, Integrated Pest Management (IPM) systems are becoming increasingly important.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6+6+4"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Biological – ladybirds control aphids",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "pulling by hand or rogueing",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Prevention – crop rotation",
+    "marks": null
+   }
+  ],
+  "stem": "Chemical (Pesticide) Biological Physical / Mechanical Cultural / Sanitation Prevention Using the information shown in the diagram on IPM, advise farmers on ways they can reduce chemical inputs on their farm. Additional writing space for Section B. Label all work clearly with the question number and part. Acknowledgements Image(s) Page 3 agriland.ie; premier1supplies.com; odonovaneng.ie Page 4 britishpigs.org.uk; raisingsheep.net; thatfarming.com Page 5 ystradorganics.co.uk Page 6 grant.k-state.edu Page 7 nwfagriculture.co.uk Page 8 farmersjournal.ie Page 9 teagasc.ie; kids.britanica.com; world-grain.com; britanica.com Page 10 teagasc.ie Page 11 independent.ie Page 12 teagasc.ie Page 13 farmersjournal.ie Page 14 teagasc.ie Page 15 teagasc.ie Page 16 teagasc.ie Page 17 teagasc.ie Page 22 gardenia.net; x.com; countryfile.com; assets.gov.ie Page 25 farmersjournal.ie Page 26 germinal.com Page 28 State Examinations Commission Page 31 ahdb.org.uk Page 37 icbf.com; agriland.ie Page 38 icbf.com Page 39 teagasc.ie Texts Page 5 Irish Moil. https://www.thecattlesite.com/breeds/dairy/107/irish-moiled. (4 September 2022). Page 12 Agroforestry. https://www.teagasc.ie/media/website/rural-economy/rural- development/diversification/Forestry-2-Agroforestry.pdf Page 13 Donovan, R. Irish Beetles Tackle Docks in New Trial. https://www.farmersjournal.ie/irish-beetles-tackle-docks-in-new-trial-706444. (27 June 2022). Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Agricultural Science Monday 17 June Afternoon 2:00 - 4:30",
+  "notes": "One official example is retained from each required approach: biological, physical, and preventative control.",
+  "figureKey": "agricultural-science-2024-HL-paper-p39-art-ipm"
  },
  {
   "id": "agsci-2024-ol-q1b",
@@ -35095,9 +36124,8 @@
     "marks": 6
    }
   ],
-  "stem": "The results from the investigation are shown in the table below.",
-  "notes": "The scheme allows all six for the answer alone and three where the working is shown but the answer is wrong.",
-  "figureKey": "agricultural-science-2024-ol-paper-p019-i0"
+  "stem": "Plant 1 2 3 4 5 6 7 8 9 10 Average % frequency Dock leaf X X X X A Perennial ryegrass X X X X X X X X X X 100 Nettle X X X 30 White clover X X X X X X X 70",
+  "notes": "The scheme allows all six for the answer alone and three where the working is shown but the answer is wrong."
  },
  {
   "id": "agsci-2024-ol-q2biii",
@@ -35127,6 +36155,81 @@
    }
   ],
   "stem": "Single file race Round crowd pen Wrong way Right way Headgate Cattle see place to go"
+ },
+ {
+  "id": "agsci-2024-ol-q11aii",
+  "topicId": "agsci-4-2",
+  "conceptId": "selecting-breeding-offspring",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 OL Q11(a)(ii)",
+  "questionText": "In step 2, state which hen A, B or C is the best offspring to breed future generations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 3
+   }
+  ],
+  "stem": "1. Breed two organisms with desired characteristics 2. Choose the best offspring and breed 4. Over time characteristic increases 3. Repeat over many generations Marbling in meat Milk volume Early maturing Milk protein Or",
+  "figureKey": "agricultural-science-2024-ol-paper-p014-i0"
+ },
+ {
+  "id": "agsci-2024-ol-q13biii",
+  "topicId": "agsci-2-1",
+  "conceptId": "choosing-a-graph-for-frequency-data",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 OL Q13(b)(iii)",
+  "questionText": "Identify the most suitable chart or graph to display the above results by placing a tick () in the correct box.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 6
+   }
+  ],
+  "stem": "Plant 1 2 3 4 5 6 7 8 9 10 Average % frequency Dock leaf X X X X A Perennial ryegrass X X X X X X X X X X 100 Nettle X X X 30 White clover X X X X X X X 70",
+  "figureKey": "agricultural-science-2024-OL-paper-p21-i1"
+ },
+ {
+  "id": "agsci-2024-ol-q14bi",
+  "topicId": "agsci-3-2",
+  "conceptId": "silage-cutting-stage",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(i)",
+  "questionText": "Identify the correct stage of cutting the grass for silage by placing a tick () in the correct box. A B",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 2
+   }
+  ],
+  "stem": "Inflorescence Vegetative Elongation",
+  "figureKey": "agricultural-science-2024-OL-paper-p22-i1"
  },
  {
   "id": "agsci-2025-hl-q15b",
@@ -35316,6 +36419,196 @@
    }
   ],
   "stem": "The graph shows water availability in different soil types. Analyse the graph and answer the questions that follow. (ii) Calculate the % available water in a silt loam soil. Sand Sandy loam Loam Silt loam Clay loam Clay Smaller pore size More porosity Greater pore size Less porosity"
+ },
+ {
+  "id": "agsci-2025-hl-q1b",
+  "topicId": "agsci-4-1",
+  "conceptId": "dominant-polled-cattle-breed",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 HL Q1(b)",
+  "questionText": "State which breed A or B has a dominant polled trait as a characteristic of the breed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A or Aberdeen Angus",
+    "marks": 2
+   }
+  ],
+  "figureKey": "agricultural-science-2025-HL-paper-p03-art"
+ },
+ {
+  "id": "agsci-2025-hl-q6a",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "identifying-lambing-equipment",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 HL Q6(a)",
+  "questionText": "Identify the three pieces of equipment needed for lambing from the six images below.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 × (1+1)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Stomach tube",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "C: heat lamp",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "D: ropes",
+    "marks": 2
+   }
+  ],
+  "stem": "Pádraig is a sheep and beef farmer. He is getting his equipment ready for lambing.",
+  "notes": "Each selected item earns one mark for the correct picture and one for the scheme-stated name.",
+  "figureKey": "agricultural-science-2025-HL-paper-p11-art-lambing-kit",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Stomach tube",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "heat lamp",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "ropes",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2025-hl-q7b",
+  "topicId": "agsci-2-2-2",
+  "conceptId": "soil-microbiome-and-water-retention",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 HL Q7(b)",
+  "questionText": "Analyse the diagram below which shows processes that are carried out by the soil microbiome and answer the questions that follow.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4+1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Mycorrhizal fungi) increase area for water absorption/ (bacteria and fungi) break down OM to humus which increase water retention",
+    "marks": 4,
+    "contextNote": "This card uses the official water-retention route: contribution first, then its productivity benefit."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Increased water availability to the crop/ reduces effects of drought",
+    "marks": 1
+   }
+  ],
+  "stem": "Water retention Plant carbon sink Carbon sequestration Plant growth promotion Outline how the soil microbiome contributes to any one of the above processes and state how this process in turn benefits productivity in a named catch or energy crop.",
+  "figureKey": "agricultural-science-2025-HL-paper-p12-i0"
+ },
+ {
+  "id": "agsci-2025-hl-q15c",
+  "topicId": "agsci-3-2",
+  "conceptId": "weed-control-advice",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 HL Q15(c)",
+  "questionText": "You have been asked to address a group of tillage and dairy farmers on controlling weeds on their farms in order to maximise crop productivity. Using the diagram below, outline the advice you would give them under the following headings:  types of weed control  negative effects of weed control on farms  safety considerations farmers need to consider when controlling weeds.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 × 4"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Crop rotation to reduce the build-up of weeds",
+    "marks": 4,
+    "accepts": [
+     "correct seeding rate to increase competition",
+     "spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop",
+     "ensure the machines are cleaned between fields to reduce weed seeds being carried",
+     "valid named biological control e.g. dock beetle to control dock leaves",
+     "stubble cleaning – depth of cultivation to target specific weeds"
+    ],
+    "contextNote": "Rows 1–3 give one point under each printed heading; row 4 is a different additional point from any heading."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Herbicides can kill non-target plants",
+    "marks": 4,
+    "accepts": [
+     "reduced biodiversity",
+     "residues from herbicides in human or animal food chain",
+     "chemical run off into waterways",
+     "herbicide resistance in weeds"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "Wear masks when spraying or wear gloves",
+    "marks": 4,
+    "accepts": [
+     "take precaution when operating machinery",
+     "avoid drift",
+     "correct storage of chemicals"
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "alt",
+    "verbatim": "correct seeding rate to increase competition",
+    "marks": 4,
+    "accepts": [
+     "spray the field with pre-harvest or pre-emergence herbicides to reduce the weeds in the crop",
+     "ensure the machines are cleaned between fields to reduce weed seeds being carried",
+     "valid named biological control e.g. dock beetle to control dock leaves",
+     "stubble cleaning – depth of cultivation to target specific weeds",
+     "reduced biodiversity",
+     "residues from herbicides in human or animal food chain",
+     "chemical run off into waterways",
+     "herbicide resistance in weeds",
+     "take precaution when operating machinery",
+     "avoid drift",
+     "correct storage of chemicals"
+    ]
+   }
+  ],
+  "stem": "Mature plants Pre-harvest herbicides Cleaning of machinery Stubble management Seed rate Biological controls Patch / band spray 2 3 1 Seedlings Seeds Crop rotation Seedbed preparation Pre-emergence herbicide",
+  "notes": "The fourth answer must be distinct from the three already used.",
+  "figureKey": "agricultural-science-2025-HL-paper-p30-art"
  },
  {
   "id": "agsci-2025-hl-q12a",
@@ -35784,5 +37077,629 @@
   "stem": "Jersey Holstein Friesian Charolais Limousin Or",
   "notes": "Either of the two beef breeds in the plate scores; the other two are dairy.",
   "figureKey": "agricultural-science-2025-OL-paper-p03-art"
+ },
+ {
+  "id": "agsci-2025-ol-q5a",
+  "topicId": "agsci-2-2-1",
+  "conceptId": "ideal-soil-composition",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q5(a)",
+  "questionText": "Identify with reason which picture A, B, or C has the ideal soil composition.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Picture: B",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Reason: soil has (50%) mineral and organic matter or 25% air or 25% water",
+    "marks": 2,
+    "accepts": [
+     "seed can access adequate air or water or has space to grow",
+     "adequate amounts of mineral or organic matter",
+     "seedling is largest in picture B"
+    ]
+   }
+  ],
+  "stem": "The diagram shows the effect of soil composition on the productivity of a crop. Analyse the diagram and answer the questions that follow. Key Mineral and organic matter Soil water Soil air",
+  "figureKey": "agricultural-science-2025-OL-paper-p07-i0"
+ },
+ {
+  "id": "agsci-2025-ol-q5b",
+  "topicId": "agsci-2-2-1",
+  "conceptId": "high-mineral-and-organic-content",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q5(b)",
+  "questionText": "Outline one reason why soil C has a high percentage of mineral and organic matter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "It is a clay soil",
+    "marks": 2,
+    "accepts": [
+     "under continuous grassland",
+     "organic matter or manure or slurry or fertiliser has been added"
+    ]
+   }
+  ],
+  "stem": "The diagram shows the effect of soil composition on the productivity of a crop. Analyse the diagram and answer the questions that follow. Key Mineral and organic matter Soil water Soil air",
+  "figureKey": "agricultural-science-2025-OL-paper-p07-i0"
+ },
+ {
+  "id": "agsci-2025-ol-q7a",
+  "topicId": "agsci-3-2",
+  "conceptId": "identifying-sward-plants",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q7(a)",
+  "questionText": "Identify any three plants shown in the table below using the list opposite.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3x2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: (Perennial) ryegrass",
+    "marks": 2,
+    "accepts": [
+     "D: Chicory"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: (White)clover",
+    "marks": 2,
+    "accepts": [
+     "D: Chicory"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Nettle",
+    "marks": 2,
+    "accepts": [
+     "D: Chicory"
+    ]
+   }
+  ],
+  "stem": "Chicory White clover Perennial ryegrass Nettle",
+  "figureKey": "agricultural-science-2025-OL-paper-p08-art-plants",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Perennial ryegrass",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "White clover",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Nettle",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Chicory",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2025-ol-q7b",
+  "topicId": "agsci-3-2",
+  "conceptId": "undesired-sward-plant",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q7(b)",
+  "questionText": "State which plant from part (a) above is not desired in a grassland sward.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nettle or C",
+    "marks": 4
+   }
+  ],
+  "figureKey": "agricultural-science-2025-OL-paper-p08-art-plants"
+ },
+ {
+  "id": "agsci-2025-ol-q9ai",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "normal-calf-presentation",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q9(a)(i)",
+  "questionText": "Identify with reason which picture A or B is the correct position for a calf at birth.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Picture: B Reason: Fore or front legs first (with head lying flat on top of legs) or normal presentation or easier calving",
+    "marks": 5
+   }
+  ],
+  "stem": "Or",
+  "figureKey": "agricultural-science-2025-OL-paper-p10-i0"
+ },
+ {
+  "id": "agsci-2025-ol-q10a",
+  "topicId": "agsci-4-2",
+  "conceptId": "identifying-a-sex-cell",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q10(a)",
+  "questionText": "Identify the sex cell labelled A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Sperm or male",
+    "marks": 3
+   }
+  ],
+  "stem": "The diagram shows the process of sex sorting bull semen. Analyse the picture and answer the questions that follow.",
+  "figureKey": "agricultural-science-2025-OL-paper-p12-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Sperm or male",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2025-ol-q12ai",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "main-cause-of-lamb-mortality",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q12(a)(i)",
+  "questionText": "Identify the main cause of lamb mortality.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Abortion and stillbirth",
+    "marks": 3
+   }
+  ],
+  "stem": "Causes of Lamb Mortality 45 40 35 30 % Mortality 25 20 15 10 5 0 Chill and starvation Abortion and stillbirth Disease Accidents and predators Birth defects Cause of death (Adapted from Dairygoldagri.ie) Or",
+  "figureKey": "agricultural-science-2025-OL-paper-p15-art-mortality"
+ },
+ {
+  "id": "agsci-2025-ol-q12aii",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "completing-a-mortality-chart",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q12(a)(ii)",
+  "questionText": "Complete the graph above to show that 20% of lambs die due to disease.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Bar inserted in graph to height of 20",
+    "marks": 2
+   }
+  ],
+  "stem": "Causes of Lamb Mortality 45 40 35 30 % Mortality 25 20 15 10 5 0 Chill and starvation Abortion and stillbirth Disease Accidents and predators Birth defects Cause of death (Adapted from Dairygoldagri.ie) Or",
+  "figureKey": "agricultural-science-2025-OL-paper-p15-art-mortality"
+ },
+ {
+  "id": "agsci-2025-ol-q12bi",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "comparing-lamb-growth-rates",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q12(b)(i)",
+  "questionText": "Identify which lamb (single or twin) had a higher growth rate over the 25 weeks.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Single",
+    "marks": 3
+   }
+  ],
+  "stem": "Lamb Growth Rate and Weight 60 50 50 42.5 Liveweight (kg) 40 35 44.5 27.5 29.5 37 30 16.5 20 23.5 Single 10 5 14 Twin 4.5 0 Birth 5 10 15 20 25 Time (weeks) 32kg 42kg 22kg Additional writing space for Section A. Label all work clearly with the question number and part. Section B 200 marks Each question carries 50 marks.",
+  "figureKey": "agricultural-science-2025-OL-paper-p16-art-growth"
+ },
+ {
+  "id": "agsci-2025-ol-q12biii",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "predicting-lamb-slaughter-weight",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q12(b)(iii)",
+  "questionText": "Predict which lamb will have a higher weight at slaughter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Single",
+    "marks": 3
+   }
+  ],
+  "stem": "Lamb Growth Rate and Weight 60 50 50 42.5 Liveweight (kg) 40 35 44.5 27.5 29.5 37 30 16.5 20 23.5 Single 10 5 14 Twin 4.5 0 Birth 5 10 15 20 25 Time (weeks) 32kg 42kg 22kg Additional writing space for Section A. Label all work clearly with the question number and part. Section B 200 marks Each question carries 50 marks.",
+  "figureKey": "agricultural-science-2025-OL-paper-p16-art-growth"
+ },
+ {
+  "id": "agsci-2025-ol-q14aii",
+  "topicId": "agsci-3-2",
+  "conceptId": "weather-effects-on-potato-planting",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q14(a)(ii)",
+  "questionText": "Explain the impacts of two named weather conditions on the planting of a named tillage crop.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(2)+3+2"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Frost free warm soil temperatures needed for development of tubers",
+    "marks": null,
+    "contextNote": "The selected official crop is potatoes; the rows cover temperature and rainfall with their matching impacts."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Heavy rainfall may delay the planting of the potato crop",
+    "marks": null
+   }
+  ],
+  "stem": "Average Soil Temperature (oC) in Ballyhaise, Co. Cavan for 2023 0 2 4 6 8 10 12 14 16 18 20 17.3 16 16.1 15 Temperature (oC) 13.4 11 5.1 6.6 6.3 8.6 6.9 6.4 Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Month (Adapted from Met.ie) (i) Grass needs a minimum temperature of 6 oC for growth. Identify which month you would expect to see grass beginning to grow on a farm in Cavan. Named weather condition Impact"
+ },
+ {
+  "id": "agsci-2025-ol-q14ciii",
+  "topicId": "agsci-3-2",
+  "conceptId": "identifying-field-crops",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q14(c)(iii)",
+  "questionText": "The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(4)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "J: Maize",
+    "marks": 4,
+    "accepts": [
+     "L: Oilseed rape"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "K: Wheat",
+    "marks": 4,
+    "accepts": [
+     "L: Oilseed rape"
+    ]
+   }
+  ],
+  "stem": "% minimum germination for certified seed 75% 85% 95% Maize Oilseed rape Wheat J K L",
+  "figureKey": "agricultural-science-2025-OL-paper-p23-art-crops",
+  "labelKey": [
+   {
+    "letter": "J",
+    "meaning": "Maize",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "K",
+    "meaning": "Wheat",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "L",
+    "meaning": "Oilseed rape",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2025-ol-q15di",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "ordering-calf-nutrition-stages",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q15(d)(i)",
+  "questionText": "The photographs below show four stages of calf nutrition from birth to six weeks old. Place each step in the correct order by matching the correct letter to the number in the box.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4x2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "allOf",
+    "verbatim": "D – — A – — B - C",
+    "marks": 8
+   }
+  ],
+  "stem": "Calves on milk replacer Calf on hay Calf on grass Calf fed colostrum 1 2 3 4",
+  "figureKey": "agricultural-science-2025-OL-paper-p27-art-calf-nutrition"
+ },
+ {
+  "id": "agsci-2025-ol-q16ai",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "suitable-beef-animal-housing",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q16(a)(i)",
+  "questionText": "Identify three things that make the housing in the photograph suitable for beef animals.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4+4+2"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Slatted floor",
+    "marks": null,
+    "accepts": [
+     "straw bedding",
+     "adequate space in pens/ (adequate) feeding space",
+     "good ventilation",
+     "high roof for good air circulation",
+     "headlock gates",
+     "pen gates"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "rubber mats",
+    "marks": null,
+    "accepts": [
+     "straw bedding",
+     "adequate space in pens/ (adequate) feeding space",
+     "good ventilation",
+     "high roof for good air circulation",
+     "headlock gates",
+     "pen gates"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "natural lighting",
+    "marks": null,
+    "accepts": [
+     "straw bedding",
+     "adequate space in pens/ (adequate) feeding space",
+     "good ventilation",
+     "high roof for good air circulation",
+     "headlock gates",
+     "pen gates"
+    ]
+   }
+  ],
+  "figureKey": "agricultural-science-2025-OL-paper-p28-art-housing"
+ },
+ {
+  "id": "agsci-2025-ol-q16ci",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "grass-silage-dry-matter",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q16(c)(i)",
+  "questionText": "The DM% of typical forage crops is shown below in the table. Identify which DM% represents Tom’s silage, by placing a tick () in the correct box.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "25%",
+    "marks": 6
+   }
+  ],
+  "stem": "25% 45% 65%",
+  "figureKey": "agricultural-science-2025-OL-paper-p30-art-dm-table"
+ },
+ {
+  "id": "agsci-2025-ol-q17bii",
+  "topicId": "agsci-2-2-1",
+  "conceptId": "ordering-a-flocculation-test",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q17(b)(ii)",
+  "questionText": "Describe how a student would show that flocculation has occurred in a soil by arranging the steps of the investigation shown below in the correct order.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4x4"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "allOf",
+    "verbatim": "D - — A - — B - C",
+    "marks": 16
+   }
+  ],
+  "stem": "Process during which soil particles in a solution contact and stick together, forming clusters or clumps of a larger size Reducing air spaces in soil Leaching of minerals causes formation of an iron pan in the B horizon Add calcium carbonate to one of the test tubes Add water to each test tube, then stopper and shake the test tubes Leave to settle, one test tube stays muddy, while one test tube goes clear Add clay soil to two test tubes 1 2 3 4",
+  "figureKey": "agricultural-science-2025-ol-paper-p032-i0"
+ },
+ {
+  "id": "agsci-2025-ol-q17d",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "matching-production-systems-and-dam-breeds",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q17(d)",
+  "questionText": "For a livestock enterprise you have studied state two different named systems of production. For each system identify a suitable breed of dam (female) and explain a reason for your choice.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 × (3+3)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1: Liquid milk — Holstein Friesian — High milk volume",
+    "marks": 6,
+    "contextNote": "Each row gives a production system, a suitable dam breed, and the scheme reason for that breed."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2: Creamery milk — J e r s e y — High milk solids",
+    "marks": 6
+   }
+  ],
+  "stem": "Production system 1: Production system 2: Breed of dam Reason for choice"
+ },
+ {
+  "id": "agsci-2025-ol-q18ci",
+  "topicId": "agsci-1-3",
+  "conceptId": "reading-dairy-export-change",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q18(c)(i)",
+  "questionText": "Identify the dairy product which decreased in exports between 2015 and 2021.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Infant food",
+    "marks": 6
+   }
+  ],
+  "stem": "Seven year growth of Irish Dairy Exports 300000 2015 2021 250000 200000 Tonnes (t) 150000 100000 50000 0 Cheese Butter Infant food Milk and cream Skim milk powder Dairy product (Bord Bia, 2024) Additional writing space for Section B. Label all work clearly with the question number and part. Acknowledgements Image(s) Page 3 progressivegenetics.ie; agriland.ie; donedeal.ie; State Examinations Commission Page 4 farminglife.com; irishfarmersjournal.ie Page 6 daft.ie Page 7 vaderstad.com Page 8 guardian.com; Naturesport.org.uk; Gardenshop.ie; Saps.org.uk; wildflowersofireland.net Page 9 farmersjournal.ie; pdsigns.ie Page 10 moocall.ie; mwiah.com Page 11 cso.ie Page 12 agproud.com Page 13 agriland.ie Page 14 comfortslatmat.com Page 15 dairygoldagri.ie Page 16 dairygoldagri.ie Page 18 State Examinations Commission Page 21 met.ie Page 23 agriland.ie; bakingbusiness.com; farmersweekly.co.uk Page 24 independent.ie Page 25 State Examinations Commission Page 27 agriland.ie; wikimediacommons.com; picryl.com; agproud.com Page 28 odonovaneng.ie Page 31 grabngrowsoil.com Page 32 State Examinations Commission Page 36 bordbia.ie Text Page 13 Harnet, H. Lameness: Autumn time is peak risk period on dairy farms. https://www.agriland.ie/farming-news/lameness-autumn-time-is-the-peak-risk- period-on-dairy farms (29 Sept 2024). Page 24 Hamilton, A. With the low milk prices the vending machines are saving us. https://www.independent.ie/farming/rural-life/with-the-low-milk-prices-at- the moment-the-vending-machines-are-saving-us/a695563656.html (7 Nov 2023). Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Agricultural Science Monday 16 June Afternoon 2:00 - 4:30",
+  "figureKey": "agricultural-science-2025-OL-paper-p36-art-exports"
+ },
+ {
+  "id": "agsci-2025-ol-q18cii",
+  "topicId": "agsci-1-3",
+  "conceptId": "estimating-dairy-export-tonnage",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q18(c)(ii)",
+  "questionText": "Using the graph, estimate the value of Irish butter exports to Ireland in 2021.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "265,000 to 275,000",
+    "marks": 6
+   }
+  ],
+  "stem": "Seven year growth of Irish Dairy Exports 300000 2015 2021 250000 200000 Tonnes (t) 150000 100000 50000 0 Cheese Butter Infant food Milk and cream Skim milk powder Dairy product (Bord Bia, 2024) Additional writing space for Section B. Label all work clearly with the question number and part. Acknowledgements Image(s) Page 3 progressivegenetics.ie; agriland.ie; donedeal.ie; State Examinations Commission Page 4 farminglife.com; irishfarmersjournal.ie Page 6 daft.ie Page 7 vaderstad.com Page 8 guardian.com; Naturesport.org.uk; Gardenshop.ie; Saps.org.uk; wildflowersofireland.net Page 9 farmersjournal.ie; pdsigns.ie Page 10 moocall.ie; mwiah.com Page 11 cso.ie Page 12 agproud.com Page 13 agriland.ie Page 14 comfortslatmat.com Page 15 dairygoldagri.ie Page 16 dairygoldagri.ie Page 18 State Examinations Commission Page 21 met.ie Page 23 agriland.ie; bakingbusiness.com; farmersweekly.co.uk Page 24 independent.ie Page 25 State Examinations Commission Page 27 agriland.ie; wikimediacommons.com; picryl.com; agproud.com Page 28 odonovaneng.ie Page 31 grabngrowsoil.com Page 32 State Examinations Commission Page 36 bordbia.ie Text Page 13 Harnet, H. Lameness: Autumn time is peak risk period on dairy farms. https://www.agriland.ie/farming-news/lameness-autumn-time-is-the-peak-risk- period-on-dairy farms (29 Sept 2024). Page 24 Hamilton, A. With the low milk prices the vending machines are saving us. https://www.independent.ie/farming/rural-life/with-the-low-milk-prices-at- the moment-the-vending-machines-are-saving-us/a695563656.html (7 Nov 2023). Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Agricultural Science Monday 16 June Afternoon 2:00 - 4:30",
+  "figureKey": "agricultural-science-2025-OL-paper-p36-art-exports"
  }
 ]

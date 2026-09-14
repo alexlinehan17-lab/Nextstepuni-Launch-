@@ -754,7 +754,14 @@ for (const c of cards) {
   // "three circles, labelled p, q, and r" and "the side labelled l" label
   // themselves on the printed diagram and have nothing to decode. The /i flag
   // conflated the two and refused four Maths cards whose crops show the labels.
-  const namesLetters = !invitesDrawing
+  // In Mathematics, capital letters often ARE the names of plotted points or
+  // complex numbers.  They do not encode hidden structures that need a label
+  // key: X means point X, and A means the plotted complex number A.  Their
+  // official question crop is sufficient.  Treating the broad phrase
+  // "labelled X" as an anatomy-style label dropped two complete Maths cards.
+  const selfNamingMathsPoints = SUBJECT_ID === 'maths'
+    && /\b(?:points?|complex numbers?),?\s+(?:which are\s+)?labelled\s+[A-Z]\b/i.test(c.questionText);
+  const namesLetters = !invitesDrawing && !selfNamingMathsPoints
     && /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/.test(c.questionText);
   // Not merely "has a figure": a question about labelled parts needs those
   // labels DECODED, so it must be a full diagram card with a label key.

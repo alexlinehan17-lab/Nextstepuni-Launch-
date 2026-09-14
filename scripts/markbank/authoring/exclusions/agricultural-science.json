@@ -15,8 +15,38 @@
   "evidence": "The scheme's answer for B is 'Median suspensory ligament' — the skeptic is right that marking scheme p.27 puts the letter and the answer in separate table cells (letters at x≈325, answers at x≈345, marks '3(1)' at x=498), so nothing is printed between the two words and 'Median suspensory' is a fragment, not a structure. It cannot be repaired at card level. The extracted scheme markdown that the bu"
  },
  {
-  "ref": "2025 OL Q8(b)",
-  "reason": "recorded product decision: not representable inside the card format without misleading",
-  "evidence": "The objection requires the 5-mark two-tick answer to be split into two claimable rows so that a student who ticked one correct sign can land on Shaky instead of the all-or-nothing missed/got that one row forces (suggestGrade in components/MarkBank/SessionScreen.tsx confirms this: with a single row the grade is claimedRows 0 = missed, 1 = got). The scheme will not support that split. Its entire ans"
+  "ref": "2022 HL Q9(a)(i)",
+  "reason": "drawing-band task has no honest self-check representation",
+  "evidence": "The official response is a drawing of a calf stomach. Its scheme awards a tiered D=3/2/0 drawing band plus labels, but does not state the required label names as marking points. A text row would invent those labels, while the current Mark Bank model has no drawable answer surface or band-marking renderer."
+ },
+ {
+  "ref": "2022 OL Q15(a)(ii)",
+  "reason": "drawing-band task has no honest self-check representation",
+  "evidence": "The paper asks for a labelled drawing of a named grazing system and the official scheme grades the quality and labelling of the diagram as a band. The card model cannot accept or self-check a student drawing, and converting the band into text rows would alter the examined task."
+ },
+ {
+  "ref": "2023 OL Q11",
+  "reason": "drawing-band task has no honest self-check representation",
+  "evidence": "This whole question requires a labelled drawing that demonstrates earthworm activity. The official scheme uses a tiered diagram-and-label band rather than a list of independently stated answers. Mark Bank has no drawing response or band renderer, so a card would misrepresent how the answer is earned."
+ },
+ {
+  "ref": "2024 HL Q14(c)",
+  "reason": "drawing-band task has no honest self-check representation",
+  "evidence": "The response is a labelled drawing of a grass plant and the official marks depend on a graded drawing/label band. The scheme does not expose a complete independent text answer set, and the current card format cannot collect or grade the drawing itself."
+ },
+ {
+  "ref": "2024 OL Q1(a)",
+  "reason": "answer exists only as a mark placed on the official diagram",
+  "evidence": "The official answer is a left-pointing arrow shown graphically in the scheme solution. Extracted scheme text contains only a tick glyph and supplies no semantic answer wording. Mark Bank has no scheme-solution overlay renderer, so naming a direction in a row would be an unauthorised transcription rather than a provenance-backed answer."
+ },
+ {
+  "ref": "2024 OL Q14(a)(ii)",
+  "reason": "answer exists only as a mark placed on the official graph",
+  "evidence": "The scheme answers by placing X at the first spring grass-growth peak. Its extracted text is only 'X'; it does not state the position in words. Without a solution-overlay renderer, a text answer would have to infer and author a location that the provenance gate cannot verify."
+ },
+ {
+  "ref": "2025 HL Q3(a)(ii)",
+  "reason": "official scheme supplies a generic rubric but no accepted examples",
+  "evidence": "The scheme says only 'Two points on any named valid piece of technology' and provides no named technology or accepted explanatory points. Creating answer rows would require inventing content outside the official scheme, so this ask is deliberately excluded until a provenance-bearing accepted-answer source exists."
  }
 ]

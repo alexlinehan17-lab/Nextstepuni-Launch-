@@ -1,0 +1,946 @@
+{
+ "bio-2016-hl-completion-q5": [
+  {
+   "letter": "A",
+   "meaning": "Stigma",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Pollen tube",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Egg, female gamete or ovum",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "D",
+   "meaning": "Pollen grain — the structure whose arrival at A is assessed",
+   "askedInThisQuestion": false
+  },
+  {
+   "letter": "E",
+   "meaning": "The two structures formed from D by mitosis; the scheme does not name them separately",
+   "askedInThisQuestion": false
+  },
+  {
+   "letter": "F",
+   "meaning": "Ovule",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2016-ol-completion-q14b": [
+  {
+   "letter": "A",
+   "meaning": "Kidney",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Ureter",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Urinary bladder — its assessed function is to store urine",
+   "askedInThisQuestion": false
+  }
+ ],
+ "bio-2016-ol-completion-q15a": [
+  {
+   "letter": "Testa",
+   "meaning": "Protection",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Cotyledon",
+   "meaning": "Food store for the seed",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Plumule",
+   "meaning": "Part that becomes the shoot",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Radicle",
+   "meaning": "Part that becomes the root",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2016-ol-completion-q15b": [
+  {
+   "letter": "A",
+   "meaning": "Protein coat",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Nucleic acid, DNA or RNA",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2016-ol-completion-q7a": [
+  {
+   "letter": "A",
+   "meaning": "Eyepiece",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Stage or platform",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2017-hl-completion-q3": [
+  {
+   "letter": "A",
+   "meaning": "Protein",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Lipid, phospholipid or fatty acid",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2017-ol-completion-q12b": [
+  {
+   "letter": "A",
+   "meaning": "Vagina",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Uterus or womb",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Ovary",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "D",
+   "meaning": "Oviduct or Fallopian tube",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "E",
+   "meaning": "Endometrium or womb lining",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2017-ol-completion-q13b": [
+  {
+   "letter": "A",
+   "meaning": "Sensory neuron",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Interneuron or relay neuron",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Motor neuron",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2017-ol-completion-q13c": [
+  {
+   "letter": "A",
+   "meaning": "Cerebrum",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Medulla oblongata",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Cerebellum",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2017-ol-completion-q14b": [
+  {
+   "letter": "A",
+   "meaning": "Cells marked A; the scheme assesses their chloroplasts rather than a tissue name",
+   "askedInThisQuestion": false
+  },
+  {
+   "letter": "B",
+   "meaning": "Stoma",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Guard cells",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2017-ol-completion-q15a": [
+  {
+   "letter": "A",
+   "meaning": "Optic nerve",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Retina",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Lens",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2017-ol-completion-q15b": [
+  {
+   "letter": "A",
+   "meaning": "Artery",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Vein",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Capillary",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2017-ol-completion-q4": [
+  {
+   "letter": "A",
+   "meaning": "Liver",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Stomach",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Pancreas",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2017-ol-completion-q6": [
+  {
+   "letter": "A",
+   "meaning": "Hypha or stolon",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Rhizoid",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Sporangium",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2018-hl-completion-q6": [
+  {
+   "letter": "X",
+   "meaning": "Bowman's capsule",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Y",
+   "meaning": "Distal convoluted tubule or DCT",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2018-ol-completion-q12c": [
+  {
+   "letter": "A",
+   "meaning": "Hair",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Blood vessel or blood vessels",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Sweat gland",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2018-ol-completion-q14a": [
+  {
+   "letter": "A",
+   "meaning": "Semicircular canals — function: balance",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Cochlea — function: hearing",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Eardrum — function: hearing",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2018-ol-completion-q15a": [
+  {
+   "letter": "A",
+   "meaning": "Stigma",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Anther",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Ovary or ovule",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "D",
+   "meaning": "Not named in the marking scheme",
+   "askedInThisQuestion": false
+  }
+ ],
+ "bio-2018-ol-completion-q15b": [
+  {
+   "letter": "A",
+   "meaning": "Phloem",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Xylem",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Root hair",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2018-ol-completion-q2": [
+  {
+   "letter": "A",
+   "meaning": "Ligament",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Cartilage",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Synovial fluid",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2018-ol-completion-q4": [
+  {
+   "letter": "A",
+   "meaning": "Penis",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Testis",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Urethra; sperm duct or vas deferens was also allowed",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2018-ol-completion-q6": [
+  {
+   "letter": "A",
+   "meaning": "Not named in the marking scheme",
+   "askedInThisQuestion": false
+  },
+  {
+   "letter": "B",
+   "meaning": "Cell wall",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Not named in the marking scheme",
+   "askedInThisQuestion": false
+  },
+  {
+   "letter": "D",
+   "meaning": "Vacuole",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "E",
+   "meaning": "Nucleus",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2019-hl-completion-q14a": [
+  {
+   "letter": "A",
+   "meaning": "Cerebellum",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Cerebrum",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Pituitary gland",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "D",
+   "meaning": "Medulla oblongata",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "E",
+   "meaning": "Spinal cord",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "F",
+   "meaning": "Hypothalamus",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2019-ol-completion-q14b": [
+  {
+   "letter": "A",
+   "meaning": "Thyroid",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Pancreas",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2019-ol-completion-q15a": [
+  {
+   "letter": "A",
+   "meaning": "Dendrite",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Axon",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Cell body; nucleus was also allowed",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2019-ol-completion-q15b": [
+  {
+   "letter": "A",
+   "meaning": "Renal vein",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Renal artery",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Ureter",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2019-ol-completion-q15c": [
+  {
+   "letter": "A",
+   "meaning": "Bud",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Pseudopod or false foot",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2019-ol-completion-q6": [
+  {
+   "letter": "A",
+   "meaning": "Eyepiece",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Stage",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Objective lens",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "F",
+   "meaning": "Candidate-added label for the coarse-focus knob",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2020-hl-completion-q14c": [
+  {
+   "letter": "A",
+   "meaning": "Lag stage",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Log stage",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Stationary stage",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Y",
+   "meaning": "Population or number of microorganisms",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2020-hl-completion-q4": [
+  {
+   "letter": "G",
+   "meaning": "Guanine",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "J",
+   "meaning": "Nucleotide",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "K",
+   "meaning": "Base pair or complementary bases",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "L",
+   "meaning": "Hydrogen bonding",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2020-hl-completion-q6": [
+  {
+   "letter": "A",
+   "meaning": "Site labelled A; the scheme names the released substance as a neurotransmitter",
+   "askedInThisQuestion": false
+  },
+  {
+   "letter": "B",
+   "meaning": "Axon",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2020-ol-completion-q12b": [
+  {
+   "letter": "A",
+   "meaning": "Larynx",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Trachea",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Bronchiole",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "D",
+   "meaning": "Bronchus",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2020-ol-completion-q12c": [
+  {
+   "letter": "A",
+   "meaning": "Villus",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Alveolus",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2020-ol-completion-q14b": [
+  {
+   "letter": "A",
+   "meaning": "Vacuole",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Cell wall",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Cell membrane",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "D",
+   "meaning": "Mitochondria",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2020-ol-completion-q15a": [
+  {
+   "letter": "A",
+   "meaning": "Lens",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Sclera",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Optic nerve",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "D",
+   "meaning": "Retina",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2020-ol-completion-q15c": [
+  {
+   "letter": "A",
+   "meaning": "Penis",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Urethra",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Sperm duct",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "D",
+   "meaning": "Testes",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2020-ol-completion-q3": [
+  {
+   "letter": "A",
+   "meaning": "The arrow already printed on the diagram; the scheme does not name it",
+   "askedInThisQuestion": false
+  },
+  {
+   "letter": "R",
+   "meaning": "Candidate-added arrow representing respiration",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "P",
+   "meaning": "Candidate-added arrow from atmospheric carbon dioxide to plants, representing photosynthesis",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Candidate-added arrow from fossil fuels to the atmosphere, representing burning",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2021-hl-completion-q5": [
+  {
+   "letter": "A",
+   "meaning": "Ovulation",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Morula",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Blastocyst",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "D",
+   "meaning": "Implantation",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2021-ol-completion-q16a": [
+  {
+   "letter": "A",
+   "meaning": "Semicircular canals — function: balance",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Cochlea — function: hearing or conversion of vibrations to nerve impulses",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Eardrum — function: detect sound or pass vibrations to the middle ear",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2021-ol-completion-q7": [
+  {
+   "letter": "X",
+   "meaning": "Candidate-added mark at a synovial joint; the accepted joint type depends on its placement",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "F",
+   "meaning": "Candidate-added mark on the femur",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2022-hl-completion-q15b": [
+  {
+   "letter": "A",
+   "meaning": "Cortex",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Medulla or pyramid",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Pelvis",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2023-ol-completion-q16b": [
+  {
+   "letter": "X",
+   "meaning": "Iris",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Y",
+   "meaning": "Cornea",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Z",
+   "meaning": "Lens",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "d",
+   "meaning": "Diameter of the pupil",
+   "askedInThisQuestion": false
+  }
+ ],
+ "bio-2023-ol-completion-q5": [
+  {
+   "letter": "A",
+   "meaning": "Eyepiece",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Objective lens",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2023-ol-completion-q7": [
+  {
+   "letter": "A",
+   "meaning": "Dendrite",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Axon",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Schwann cell or myelin sheath",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2024-ol-completion-q2": [
+  {
+   "letter": "X",
+   "meaning": "The bud",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Y",
+   "meaning": "The parent yeast cell; X is the bud",
+   "askedInThisQuestion": false
+  },
+  {
+   "letter": "Z",
+   "meaning": "Nucleus",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2025-hl-completion-q16a": [
+  {
+   "letter": "A",
+   "meaning": "Sporangium",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Spore",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Stolon",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2025-hl-completion-q16b": [
+  {
+   "letter": "A",
+   "meaning": "Capillary",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Alveolus",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Red blood cell",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "X",
+   "meaning": "Carbon dioxide or CO2",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Y",
+   "meaning": "Oxygen or O2",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2025-hl-completion-q17d": [
+  {
+   "letter": "A",
+   "meaning": "Head — role: holds the nucleus, DNA or genes",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Tail — role: movement",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2025-hl-completion-q4": [
+  {
+   "letter": "X",
+   "meaning": "Phospholipid",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Y",
+   "meaning": "Protein",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2025-ol-completion-q15c": [
+  {
+   "letter": "A",
+   "meaning": "Sperm duct",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Prostate gland",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Testis",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2025-ol-completion-q17b": [
+  {
+   "letter": "P",
+   "meaning": "Cartilage",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "Q",
+   "meaning": "Synovial fluid",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "R",
+   "meaning": "Ligament",
+   "askedInThisQuestion": true
+  }
+ ],
+ "bio-2025-ol-completion-q17c": [
+  {
+   "letter": "A",
+   "meaning": "Intercostal muscle",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "B",
+   "meaning": "Bronchus",
+   "askedInThisQuestion": true
+  },
+  {
+   "letter": "C",
+   "meaning": "Trachea",
+   "askedInThisQuestion": true
+  }
+ ]
+}

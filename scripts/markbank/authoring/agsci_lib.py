@@ -116,7 +116,8 @@ class Author:
              use=None, marks=None, tariff='fixed', total=None, figure=None,
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
-             omit=(), source='md', card_id=None, from_run=None, from_runs=None):
+             omit=(), source='md', card_id=None, from_run=None, from_runs=None,
+             join=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman) or self._fallback.text(q, letter, roman)
@@ -160,7 +161,8 @@ class Author:
                     raise Refused(f'{ref}: run {run[point_index]!r} yields nothing '
                                   f'for {token_index}')
                 candidates.append(_unstar(' '.join(taken)))
-            use = list(range(len(candidates))) if use is None else use
+            if join is None:
+                use = list(range(len(candidates))) if use is None else use
         elif from_run is not None:
             parent, point_index, token_index = from_run
             run = scheme.points(*parent)
@@ -178,7 +180,8 @@ class Author:
                     raise Refused(f'{ref}: run {run[point_index]!r} has no token '
                                   f'{token_index}')
                 candidates = [tokens[token_index]]
-            use = [0] if use is None else use
+            if join is None:
+                use = [0] if use is None else use
         else:
             candidates = scheme.points(q, letter, roman)
         if not candidates:
@@ -186,14 +189,36 @@ class Author:
         # An entry in `use` may be an index, or a list of indices meaning "this
         # answer, and the scheme's alternatives for it" — which becomes one alt
         # row carrying its accepts, not several rows worth marks each.
-        picks = list(range(len(candidates))) if use is None else list(use)
-        groups = [[candidates[i] for i in (p if isinstance(p, (list, tuple)) else [p])]
-                  for p in picks]
-        chosen = [g[0] for g in groups]
+        if join is not None and use is not None:
+            raise Refused(f'{ref}: pass use or join, not both')
+        if join is not None:
+            # A comparison table pays for both cells in one heading, while one
+            # card row is the smallest useful self-check. ``join`` keeps each
+            # cell independently provenance-gated and then presents the pair in
+            # the scheme's reading order. This is deliberately distinct from
+            # ``use=[[a,b]]``, which means the two entries are alternatives.
+            source_groups = [
+                [candidates[i] for i in (p if isinstance(p, (list, tuple)) else [p])]
+                for p in join
+            ]
+            if any(not g for g in source_groups):
+                raise Refused(f'{ref}: a join group cannot be empty')
+            chosen = [' — '.join(g) for g in source_groups]
+            groups = [[c] for c in chosen]
+            provenance_claims = [c for g in source_groups for c in g]
+            source_shown = set(provenance_claims)
+        else:
+            picks = list(range(len(candidates))) if use is None else list(use)
+            groups = [[candidates[i] for i in (
+                p if isinstance(p, (list, tuple)) else [p])]
+                for p in picks]
+            chosen = [g[0] for g in groups]
+            provenance_claims = chosen
+            source_shown = {c for g in groups for c in g}
         if not chosen:
             raise Refused(f'{ref}: no marking points chosen')
 
-        ok, bad = scheme.verify(chosen)
+        ok, bad = scheme.verify(provenance_claims)
         if bad:
             raise Refused(f'{ref}: {len(bad)} marking point(s) do not trace to the '
                           f'scheme: {bad[0][:90]!r}')
@@ -219,7 +244,7 @@ class Author:
         # 'spread' is the 2(2) shape: the scheme prints more ways than the
         # question asks for, any of them scores, so every row carries the ones
         # the card did not put on its own line.
-        shown = {c for g in groups for c in g}
+        shown = source_shown
         dropped = {candidates[i] for i in omit}
         spare = ([c for c in candidates if c not in shown and c not in dropped]
                  if spread else [])
@@ -242,7 +267,12 @@ class Author:
         for i, (group, m) in enumerate(zip(groups, marks), start=1):
             row = {'id': f'r-{i}',
                    'kind': 'alt' if len(group) > 1 and not spread else row_kind,
-                   'verbatim': group[0], 'marks': m}
+                   'verbatim': group[0],
+                   # These tariffs state only a positional/whole-question
+                   # award. The numeric list above is still used to prove the
+                   # official total, but publishing it per row would invent a
+                   # value the scheme never assigns to that row.
+                   'marks': None if tariff in ('orderedSplit', 'questionTotal') else m}
             accepts = group[1:] + spare
             if accepts:
                 row['accepts'] = accepts

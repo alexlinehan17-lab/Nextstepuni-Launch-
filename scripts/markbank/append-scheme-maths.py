@@ -103,7 +103,11 @@ def pdf_for(subject: str, year: int, level: str) -> Path | None:
         if not path.exists():
             continue
         with pymupdf.open(path) as doc:
-            cover = ' '.join(doc[0].get_text().split())
+            # Some SEC schemes put only the subject on the decorative cover and
+            # print the level on page 2. Inspect the opening run, not page 1
+            # alone, or a correctly levelled file is silently skipped.
+            cover = ' '.join(' '.join(doc[i].get_text().split())
+                             for i in range(min(3, len(doc))))
         if 'Deferred' in cover:
             continue
         if ('Ordinary Level' if level == 'ol' else 'Higher Level') not in cover:

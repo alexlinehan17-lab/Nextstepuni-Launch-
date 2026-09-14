@@ -47,6 +47,7 @@ RULES = [
                    r'hardware|software\b|firmware|peripheral|storage device|'
                    r'solid state drive|hard disk drive|\bssds?\b|\bhdds?\b|'
                    r'input device|output device|motherboard|clock speed|'
+                   r'inputs? A and B|'
                    r'binary(?: number| format| digit)?|hexadecimal|denary|'
                    r'\bbits?\b|\bbytes?\b|base 2|base 16|'
                    r'\bhttps?\b|\btcp\b|\bip\b|\bvoip\b|protocol|'
@@ -57,7 +58,10 @@ RULES = [
                    r'linear search|binary search|pseudo ?code|algorithm|'
                    r'recursi\w+|iteration|\bloop\b|selection|conditional|'
                    r'complexity|big[- ]o\b|efficiency of|flowchart|procedure|'
-                   r'function call|'
+                   r'function call|finite state machine|\bfsm\b|halt state|'
+                   r'shortest (?:possible )?(?:route|path|time)|'
+                   r'travelling sales(?:person|man)|fake coin|'
+                   r'number square|sequence involving the cups?|\bimplement\b|'
                    # 2.7 "implement algorithms using a programming language":
                    # a question about a printed program is a question about the
                    # algorithm it implements.
@@ -71,6 +75,7 @@ RULES = [
                    r'\barray\b|\bindex(?:es|ing)?\b|slice expression|'
                    r'\bascii\b|unicode|utf-8|character set|emoji|'
                    r'encode|decode|two.s complement|database|\bsql\b|'
+                   r'check digit|data entry error|eircodes?|'
                    # 2.18 is "collect, store and sort both continuous and
                    # discrete data" -- the paper asks about the two words one
                    # at a time ("either discrete data or continuous data"),
@@ -86,12 +91,17 @@ RULES = [
                    r'wholes and parts)\b'),
     # ── Strand 1 ───────────────────────────────────────────────────────────
     ('cs-1-2', 10, r'\b(ethic\w*|society|social (?:media|impact)|privacy|'
-                   r'turing machine|the internet|machine learning|'
+                   r'turing machines?|the internet|machine learning|'
                    r'artificial intelligence|\bai\b|user interface|usability|'
                    r'universal design|adaptive technology|accessib\w+|'
-                   r'careers?|digital divide|cyber ?security|data protection|'
+                   r'careers?|history of computing|development\w* (?:in|of|from) '
+                   r'(?:computing|technology)|important for computing|'
+                   r'(?:choose|select)\w* (?:one of |a )?(?:the )?developments?|'
+                   r'digital divide|cyber ?security|data protection|'
                    r'\bgdpr\b|quantum comput\w+|cloud comput\w+|edge comput\w+)\b'),
     ('cs-1-3', 9, r'\b(design process|iterative design|staged design|'
+                  r'(?:staged|iterative) development|development process|'
+                  r'software development life cycle|\bsdlc\b|'
                   r'assign\w* roles|work(?:ing)? in a team|collaborat\w+|'
                   r'stakeholder|end users?|requirements?|version control|'
                   # 1.20 is "collaborate and assign roles and responsibilities
@@ -104,6 +114,10 @@ RULES = [
     # question is a logic problem, which is where the spec puts it.
     ('cs-1-1', 8, r'\b(computational thinking|problem solving|logical thinking|'
                   r'algorithmic thinking|heuristic|simulation|modelling|'
+                  r'computer model|additional generations?|pattern emerging|'
+                  r'(?:non-)?loss state|desired final state|'
+                  r'chop cup|ball starts[^.]{0,80}\bcup|'
+                  r'sequence involving [^.]{0,80}(?:cups?|moves?)|'
                   r'automat\w+|systematic (?:process|approach)|'
                   r'winning (?:position|move|strategy)|losing position|'
                   r'best move|strategy would you|deconstruct\w*|'
@@ -127,9 +141,10 @@ RULES = [
     # this task is "File systems and relational databases". A foreign key is
     # the relation; a primary key is what it points at.
     ('cs-3-1', 9, r'\b(website|web page|\bhtml\b|\bcss\b|javascript|'
+                  r'wireframe|'
                   r'relational database|web design|hyperlink|browser|'
                   r'foreign key|primary key)\b'),
-    ('cs-3-2', 9, r'\b(analytics|data set|visualis\w+|chart|graph of the data|'
+    ('cs-3-2', 9, r'\b(analytics|data ?set|visualis\w+|chart|graph of the data|'
                   r'trend|correlat\w+|statistic\w*)\b'),
     # 3.8 "develop a model that will allow different scenarios to be tested"
     # and 3.9 "analyse and interpret the outcome of simulations".
@@ -192,4 +207,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

@@ -135,6 +135,22 @@ class Scheme:
                 continue
             self.parts.setdefault((q, letter, roman), []).append(line)
 
+        # A handful of SEC tables put the question number in the narrow mark
+        # column one line *after* the first ``(a)`` cue. In flattened reading
+        # order that becomes, for example, ``(a) Identify ...``, ``Q10 3``,
+        # ``Sperm or male``. The ordinary pass therefore leaves the answer at
+        # Q10 (no letter) and the tariff in its cue. Recover that mechanical
+        # layout only where there is no Q10(a) entry to compete with it. Both
+        # recovered strings still come verbatim from the scheme.
+        for (qnum, part_letter, part_roman), lines in list(self.parts.items()):
+            key = (qnum, part_letter, part_roman)
+            cue = self.cues.get(key, '')
+            akey = (qnum, 'a', None)
+            if (part_letter is None and part_roman is None
+                    and MARKS_ONLY.match(cue) and lines and akey not in self.parts):
+                self.parts[akey] = [*lines, cue]
+                self.cues[akey] = ''
+
     def _body(self, qnum, letter=None, roman=None):
         return self.parts.get((qnum, letter, roman))
 

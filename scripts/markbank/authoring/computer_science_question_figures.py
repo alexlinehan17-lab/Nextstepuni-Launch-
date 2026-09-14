@@ -1002,6 +1002,8 @@ def main():
     ap.add_argument('q', nargs='?', type=int)
     ap.add_argument('--write', action='store_true')
     ap.add_argument('--catalogue', action='store_true')
+    ap.add_argument('--catalogue-file',
+                    help='write catalogue JSON to this repository-relative path')
     args = ap.parse_args()
 
     if args.q:
@@ -1040,11 +1042,17 @@ def main():
             print(f'{year} {level.upper()} Q{q}: {name}  '
                   f'{round(rect.width)}x{round(rect.height)}')
     if args.catalogue:
-        print(json.dumps(catalogue, ensure_ascii=False, indent=1))
+        payload = json.dumps(catalogue, ensure_ascii=False, indent=1) + '\n'
+        if args.catalogue_file:
+            target = os.path.join(ROOT, args.catalogue_file)
+            with open(target, 'w', encoding='utf-8') as handle:
+                handle.write(payload)
+            print(f'wrote {len(catalogue)} figure record(s) to {target}')
+        else:
+            print(payload, end='')
     elif not args.q:
         print(f'TOTAL {total} question figure(s)')
 
 
 if __name__ == '__main__':
     main()
-
