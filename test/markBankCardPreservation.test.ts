@@ -430,8 +430,28 @@ const decks = [
    * into the ROMAN slot, so the card cited "Q8(c)(d)" and the paper reader,
    * asked for a part (d) underneath a letter (c), found no question text and
    * refused. It cites "Q8(c), (d)" now. 939/989 -> 941/989, open 50 -> 48. */
-  ['maths:higher', MATHS_HIGHER, 398, '39e8bdf9425336b1d19f5827df8fb9b811f117781b610adf6456ed9213583d25'],
-  ['maths:ordinary', MATHS_ORDINARY, 435, '1739cbe00b51bbe9aed6df6e1226780777f965ec94c9492743cf2ec8df35990e'],
+  /* 2026-09-14: 833 -> 854. The scheme reader was filing some Scale lines
+   * under the wrong unit, which shifted every model-solution crop on a page
+   * by one: 29 live cards showed a NEIGHBOURING part's worked solution --
+   * 2021 OL P1 Q1(c)-(d), Q2(a), Q6(a)(iii), Q6(b), Q7(a)-(e), Q8(a)-(c),
+   * Q9(a)(i)-(v); P2 Q1(c)(i)-(ii), Q4(a)(i)-(ii), Q9(a)(i)-(ii),
+   * Q9(b)(i)-(ii); 2023 HL P1 Q6(b), Q7(a), P2 Q2(a). Each now shows its own,
+   * and every changed image was opened. No card ID changed for those.
+   *
+   * TWO cards are REMOVED, and both carry progress through CARD_ID_ALIASES:
+   * maths-2021-ol-p2-q3 was Q3(a)'s alternative marking route filed as a
+   * letterless question, and maths-2021-ol-p2-q6 was Q6(b)(ii)'s own scale
+   * (now the card maths-2021-ol-p2-q6-b-ii). 23 are ADDED, each an ask the
+   * paper prints that had no card: 2021 HL P1 Q9(a)(i); 2021 OL P2 Q1(b)(i),
+   * Q6(b)(ii); 2022 HL P2 Q2(a), Q4(a)(ii), Q8(a)(v)+(b); 2022 OL P1
+   * Q5(a); 2023 HL P1 Q2(b), Q8(b), Q8(d), P2 Q1(b), Q2(b), Q8(b)(i),
+   * Q8(d)(ii); 2023 OL P1 Q2(a)(iv), P2 Q7(c); 2024 HL P1 Q9(b); 2024 OL P1
+   * Q2(c), Q3(a); 2025 HL P2 Q2(a)(ii), Q3(b), Q9(b); 2025 OL P1 Q3(c).
+   * Seven more asks are HELD in maths_lib.HELD_UNITS with the reason
+   * recorded there (a drawn answer key the cropper cannot see, or rows that
+   * mix methods). Coverage 943/989 -> 974/989. */
+  ['maths:higher', MATHS_HIGHER, 413, '408f77898efcdda78dee3f8243a84241f9e8a7710e146fdb4aa2fbd295536668'],
+  ['maths:ordinary', MATHS_ORDINARY, 441, '94db4616bf64733c0d61293b8a7d7ade1d91c8675fbc0d1b1705dda57943e6d2'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
   /* 2026-08-30: English 19/0 -> 210/450. Every independently selectable
@@ -733,7 +753,7 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_303);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_324);
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -746,7 +766,7 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(52);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(54);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -791,7 +811,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_745);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {

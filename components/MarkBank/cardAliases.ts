@@ -70,4 +70,13 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "am-2021-ol-2-b-ii": "am-2021-ol-2-b",
   "am-2022-hl-6-a-iii": "am-2022-hl-6-a",
   "am-2022-ol-2-vii": "am-2022-ol-2",
+  /* 2026-09-14. Two 2021 Ordinary Maths cards were phantom letterless units:
+   * the scheme reader filed a second Scale line as a question of its own.
+   * Paper 2 Q3's is the ALTERNATIVE marking route for Q3(a) (a coordinate
+   * method and an algebraic method, each with its own Scale 10D), so progress
+   * goes to Q3(a). Paper 2 Q6's is the Scale 10C that marks Q6(b)(ii) --
+   * the "(b)(ii)" marker sits 15 points above it and was folded into
+   * (b)(i)'s Scale 5B -- so progress goes to the (b)(ii) card it always was. */
+  "maths-2021-ol-p2-q3": "maths-2021-ol-p2-q3-a",
+  "maths-2021-ol-p2-q6": "maths-2021-ol-p2-q6-b-ii",
 };
