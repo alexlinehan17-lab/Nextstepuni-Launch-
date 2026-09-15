@@ -1,4 +1,5 @@
 import React from "react";
+import SubjectAvatar from "../SubjectAvatar";
 import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
 import { DAYS_OF_WEEK, SUBJECT_GROUP_LABELS, type Level } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
@@ -393,9 +394,9 @@ export default function SetupFlow(props: OnboardingProps) {
                         aria-pressed={draft.subjects.includes(item.name)}
                         onClick={() => toggleSubject(item.name)}
                       >
-                        <span>{item.name}</span>
-                        <span aria-hidden="true">
-                          {draft.subjects.includes(item.name) ? "−" : "+"}
+                        <span className="setup-subject-name"><SubjectAvatar subject={item.name} /><span>{item.name}</span></span>
+                        <span className="setup-subject-state" aria-hidden="true">
+                          {draft.subjects.includes(item.name) ? "Added" : "Add"}
                         </span>
                       </button>
                     ))}

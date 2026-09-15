@@ -1,4 +1,5 @@
 import React from 'react';
+import SubjectAvatar from './SubjectAvatar';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { type StudyBlock } from './subjectData';
 import { generateWeeklyGoals, getWeekNumber, type GamificationState } from '../gamificationConfig';
@@ -31,7 +32,7 @@ export default function HomeNextStep({ blocks, completions, hasProfile, ready = 
           const complete = completions.includes(`block-${index}`);
           const type = block.sessionType === 'new-learning' ? 'New learning' : block.sessionType === 'practice' ? 'Practice' : 'Revision';
           return <button type="button" className="home-plan-row" key={`${block.subjectName}-${index}`} onClick={() => onPlannedStudy ? onPlannedStudy(block, index) : onStudy?.()} disabled={!onStudy && !onPlannedStudy} aria-label={`${complete ? 'Review' : 'Study'} ${block.subjectName}: ${type}, ${block.durationMinutes} minutes`}>
-            <span className="home-subject-code" aria-hidden="true">{block.subjectName.replace(/[^A-Za-z]/g, '').slice(0, 2).toUpperCase()}</span>
+            <SubjectAvatar subject={block.subjectName} />
             <span className="home-plan-copy"><strong>{block.subjectName}</strong><span>{type} · {block.durationMinutes} min{complete ? ' · Done' : index === nextIndex ? ' · Up next' : ''}</span></span><ChevronRight size={18} aria-hidden="true" />
           </button>;
         })}

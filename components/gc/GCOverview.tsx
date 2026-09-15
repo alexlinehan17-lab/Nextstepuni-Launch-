@@ -2,6 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import Avatar from '../Avatar';
 
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
@@ -9,7 +10,7 @@ import { MotionDiv } from '../Motion';
 import { TrendingUp, TrendingDown, AlertTriangle, Search, ChevronLeft, ChevronRight, Flame, UserX, Download, Trash2, X, AlertCircle, Eye, Megaphone, FileDown, UserPlus, CheckCircle, MinusCircle, Flag, Sparkles, KeyRound, type LucideIcon } from 'lucide-react';
 import { type CourseData } from '../Library';
 import { type CategoryType } from '../KnowledgeTree';
-import { getAvatarUrl, type CurriculumLevel } from '../../utils/authUtils';
+import { type CurriculumLevel } from '../../utils/authUtils';
 import { type YearGroup } from '../subjectData';
 import { getSchoolName } from '../../schoolData';
 import { doc, getDoc } from 'firebase/firestore';
@@ -1087,8 +1088,8 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                 >
                   {/* Severity dot + Avatar */}
                   <div className={`w-2 h-2 rounded-full shrink-0 ${cfg.dot}`} />
-                  <img
-                    src={getAvatarUrl(alert.studentAvatar)}
+                  <Avatar
+                    seed={alert.studentAvatar}
                     alt=""
                     className="w-8 h-8 rounded-lg bg-zinc-200 dark:bg-zinc-700 shrink-0"
                   />
@@ -1206,7 +1207,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                     className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/40 transition-colors text-left"
                     aria-label={`View ${student.user.name}, status: ${stCfg.label}${flag ? ', flagged' : ''}`}
                   >
-                    <img src={getAvatarUrl(student.user.avatar)} alt="" className="w-8 h-8 rounded-full bg-zinc-200 dark:bg-zinc-700 shrink-0" />
+                    <Avatar seed={student.user.avatar} alt="" className="w-8 h-8 rounded-full bg-zinc-200 dark:bg-zinc-700 shrink-0" />
                     <span className="text-sm font-medium text-zinc-800 dark:text-white truncate flex-1">{student.user.name}</span>
                     <span
                       className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-semibold shrink-0 ${stCfg.darkBgClass} ${stCfg.darkTextClass}`}
@@ -1265,7 +1266,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                   onClick={() => onSelectStudent(s.uid)}
                   className="flex items-center gap-3 p-2 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/40 transition-colors text-left"
                 >
-                  <img src={getAvatarUrl(s.avatar)} alt="" className="w-8 h-8 rounded-full bg-zinc-200 shrink-0" />
+                  <Avatar seed={s.avatar} alt="" className="w-8 h-8 rounded-full bg-zinc-200 shrink-0" />
                   <div className="min-w-0 flex-1">
                     <p className="text-sm font-medium text-zinc-800 dark:text-white truncate">{s.name}</p>
                     <p className={`text-[10px] ${TEXT_NEUTRAL_DARK}`} style={{ color: NEUTRAL_GREY }}>
@@ -1617,7 +1618,7 @@ export const GCOverview: React.FC<GCOverviewProps> = ({ studentData, allCourses,
                   >
                     <td className="px-5 py-4 align-middle">
                       <div className="flex items-center gap-3">
-                        <img src={getAvatarUrl(row.student.user.avatar)} alt="" className="w-8 h-8 rounded-full bg-zinc-200 ring-2 ring-zinc-100 dark:ring-zinc-800 hover:ring-[rgba(var(--accent),0.6)] hover:scale-110 transition-all cursor-pointer" />
+                        <Avatar seed={row.student.user.avatar} alt="" className="w-8 h-8 rounded-full bg-zinc-200 ring-2 ring-zinc-100 dark:ring-zinc-800 hover:ring-[rgba(var(--accent),0.6)] hover:scale-110 transition-all cursor-pointer" />
                         <span className="font-medium text-zinc-800 dark:text-white whitespace-nowrap">{row.student.user.name}</span>
                       </div>
                     </td>

@@ -43,6 +43,17 @@
 .auth-paper.account-entry .account-welcome p:not(.account-eyebrow) { color: #77756e; }
 .auth-paper button:focus-visible, .auth-paper a:focus-visible { outline: 2px solid #393b32; outline-offset: 4px; }
 .auth-paper .welcome-character:focus-visible { outline-offset: -26px; }
+.auth-crew-story { justify-content: center; border-right: 1px solid #d4d8cc; background: #fff; }
+.auth-crew-story > h2 { margin: 0 0 25px; font: 700 clamp(52px, 6vw, 76px)/1.02 'Source Serif 4', Georgia, serif; letter-spacing: -2px; }
+.auth-crew-story > p:not(.auth-paper-eyebrow) { color: #686d63; font-size: 15px; line-height: 1.6; }
+.auth-crew-selected { display: flex; align-items: center; gap: 18px; margin-top: 34px; }
+.auth-crew-selected .auth-crew-portrait { width: 132px; height: 132px; }
+.auth-crew-selected h3 { margin: 0 0 7px; font: 700 23px/1.15 'Source Serif 4', Georgia, serif; }
+.auth-crew-selected p { margin: 0; color: #686d63; font-size: 12px; line-height: 1.5; }
+.auth-crew-choice { min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 9px; padding: 3px; border: 0; background: #fff; color: #23251f; font-size: 10px; line-height: 1.35; cursor: pointer; }
+.auth-crew-choice .auth-crew-option { width: 100%; height: auto; aspect-ratio: 1; }
+.auth-crew-choice[aria-pressed=true] .auth-crew-option { border-color: #f26b1f; box-shadow: 0 0 0 2px #f26b1f; }
+.auth-crew-choice:hover .auth-crew-option { border-color: #f26b1f; }
 @media (min-width: 768px) {
   .auth-paper .account-card { border: 1.8px solid #393b32; border-radius: 20px; box-shadow: 5px 6px 0 #393b32; }
   .auth-paper .account-form { padding: 44px 54px; }

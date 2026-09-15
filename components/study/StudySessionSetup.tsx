@@ -5,7 +5,7 @@ import type { StrategyMasteryMap } from '../../types';
 import type { TimetableBlockContext } from './StudySessionView';
 import { DURATION_PRESETS, STRATEGY_REGISTRY } from '../../studySessionData';
 import { MIN_STUDY_SESSION_MINUTES } from '../../hooks/useStudySession';
-import { getSubjectFill } from '../../utils/subjectColors';
+import SubjectAvatar from '../SubjectAvatar';
 import '../launchpad/launchpad.css';
 import './study-session.css';
 
@@ -70,7 +70,7 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
               <div className="ss-section-title"><span aria-hidden="true">01</span><h2 id={`${id}-subjects`}>What are you studying?</h2></div>
               {subjects.length > 0 ? <div className="ss-subjects">
                 {subjects.map(subject => <button type="button" key={subject.subjectName} aria-pressed={selectedSubject === subject.subjectName} onClick={() => onSubject(subject.subjectName)}>
-                  <i style={{ backgroundColor: getSubjectFill(subject.subjectName) }} aria-hidden="true" /><span>{subject.subjectName}</span>
+                  <SubjectAvatar subject={subject.subjectName} /><span className="ss-subject-name">{subject.subjectName}</span>
                 </button>)}
               </div> : <div className="ss-empty"><h3>Add your subjects to begin.</h3><p>We use them to tailor sessions, strategies and progress.</p>{onSetUpProfile && <button type="button" className="ss-text-action" onClick={onSetUpProfile}>Set up subjects <ArrowRight size={17} /></button>}</div>}
               {lastNote && selectedSubject && <div className="ss-last-note"><p className="ss-eyebrow">Last time you studied {selectedSubject}</p><blockquote>{lastNote}</blockquote></div>}
@@ -105,7 +105,7 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
               <p className="ss-today-total">{sessionCount > 0 ? `${sessionCount} session${sessionCount === 1 ? '' : 's'} today · ${todayMinutes} min total` : 'Your first session of the day.'}</p>
             </section>
             {todayBlocks.length > 0 && <section className="ss-timetable" aria-label="Today’s timetable"><h2>On your plan today</h2><div>{todayBlocks.map(block => <button type="button" key={block.blockId} onClick={() => onBlock(block)} aria-label={`Set up ${block.subject}, ${block.durationMinutes} minutes`}>
-              <i style={{ backgroundColor: getSubjectFill(block.subject) }} aria-hidden="true" /><span><strong>{block.subject}</strong><small>{STUDY_TYPES.find(type => type.id === block.sessionType)?.label} · {block.durationMinutes} min</small></span><ArrowRight size={18} aria-hidden="true" />
+              <SubjectAvatar subject={block.subject} /><span className="ss-timetable-copy"><strong>{block.subject}</strong><small>{STUDY_TYPES.find(type => type.id === block.sessionType)?.label} · {block.durationMinutes} min</small></span><ArrowRight size={18} aria-hidden="true" />
             </button>)}</div></section>}
           </aside>
         </div>

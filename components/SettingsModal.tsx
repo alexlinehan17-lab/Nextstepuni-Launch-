@@ -12,6 +12,7 @@ import { useModal } from '../hooks/useModal';
 import { LegalModal, type LegalDoc } from './legal/LegalModal';
 import { DataRightsModal } from './account/DataRightsModal';
 import { AVATAR_SEEDS, nextYearAction, yearGroupLabel, yearGroupToCurriculumLevel } from '../utils/authUtils';
+import { getAvatarName } from '../data/personalStarCrew';
 import { type YearGroup } from './subjectData';
 import Avatar from './Avatar';
 
@@ -174,21 +175,23 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   </span>
                 </div>
                 <div className="grid grid-cols-4 gap-2.5">
-                  {AVATAR_SEEDS.map((seed, index) => (
+                  {AVATAR_SEEDS.map(seed => (
                     <button
                       key={seed}
-                      aria-label={`Select avatar option ${index + 1}`}
+                      aria-label={`Select ${getAvatarName(seed)} avatar`}
+                      aria-pressed={settings.avatar === seed}
+                      title={getAvatarName(seed)}
                       onClick={() => {
                         updateSetting('avatar', seed);
                         flash();
                       }}
-                      className={`rounded-xl aspect-square p-1.5 transition-all ${
+                      className={`rounded-full aspect-square p-1.5 bg-white transition-all ${
                         settings.avatar === seed
-                          ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
-                          : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
+                          ? 'ring-2 ring-[#F26B1F]'
+                          : 'ring-1 ring-zinc-200 hover:ring-zinc-400'
                       }`}
                     >
-                      <Avatar seed={seed} alt="" className="w-full h-full rounded-lg" />
+                      <Avatar seed={seed} alt="" className="w-full h-full" />
                     </button>
                   ))}
                   {EXTRA_AVATAR_SEEDS.map(seed => {

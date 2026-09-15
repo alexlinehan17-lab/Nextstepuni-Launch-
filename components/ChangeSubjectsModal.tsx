@@ -6,6 +6,7 @@
 import React, { useState, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
+import SubjectAvatar from './SubjectAvatar';
 import { ArrowRight, ArrowLeft, Check, X } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 import {
@@ -24,15 +25,6 @@ const GROUP_COLORS: Record<LCSubject['group'], { bg: string; border: string; tex
   humanities: { bg: 'bg-purple-50 dark:bg-purple-900/20', border: 'border-purple-200 dark:border-purple-800/40', text: 'text-purple-700 dark:text-purple-300', selectedBg: 'bg-purple-100 dark:bg-purple-900/40', selectedBorder: 'border-purple-400 dark:border-purple-500' },
   practical: { bg: 'bg-orange-50 dark:bg-orange-900/20', border: 'border-orange-200 dark:border-orange-800/40', text: 'text-orange-700 dark:text-orange-300', selectedBg: 'bg-orange-100 dark:bg-orange-900/40', selectedBorder: 'border-orange-400 dark:border-orange-500' },
   creative: { bg: 'bg-rose-50 dark:bg-rose-900/20', border: 'border-rose-200 dark:border-rose-800/40', text: 'text-rose-700 dark:text-rose-300', selectedBg: 'bg-rose-100 dark:bg-rose-900/40', selectedBorder: 'border-rose-400 dark:border-rose-500' },
-};
-
-const GROUP_DOT_HEX: Record<LCSubject['group'], string> = {
-  languages: '#3B82F6',
-  stem: '#10B981',
-  business: '#F59E0B',
-  humanities: '#A855F7',
-  practical: '#FB923C',
-  creative: '#F43F5E',
 };
 
 // ─── Grade pill color helpers ────────────────────────────────────────────────
@@ -254,7 +246,6 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
                   </p>
                   <div className="space-y-6">
                     {Object.entries(groupedSubjects).map(([group, subjects]) => {
-                      const dotHex = GROUP_DOT_HEX[group as LCSubject['group']];
                       return (
                         <div key={group} className="mb-8 last:mb-0">
                           <p className="mb-3 font-sans text-[11px] font-semibold uppercase tracking-wider text-[#6B6B6B]">
@@ -265,19 +256,12 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
                               const selected = selectedSubjects.has(subj.name);
                               return (
                                 <button key={subj.name} onClick={() => toggleSubject(subj.name)}
-                                  className={`group flex items-center gap-2.5 rounded-2xl border-2 border-[#1A1A1A] px-4 py-3 font-sans text-[15px] font-medium transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[6px_6px_0_0_#1A1A1A] active:shadow-none ${
-                                    selected ? 'bg-[#F26B1F] text-white' : 'bg-white text-[#1A1A1A]'
-                                  }`}
+                                  type="button" aria-pressed={selected}
+                                  className={`flex min-h-[82px] items-center gap-3 rounded-xl border-2 bg-white px-3 py-3 text-left font-sans text-[14px] font-medium text-[#1A1A1A] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F26B1F] ${selected ? 'border-[#F26B1F]' : 'border-[#dedbd6] hover:border-[#9e9186]'}`}
                                 >
-                                  <span
-                                    className="h-2.5 w-2.5 shrink-0 rounded-full"
-                                    style={{
-                                      backgroundColor: selected ? 'transparent' : dotHex,
-                                      boxShadow: selected ? 'inset 0 0 0 1.5px #FFFFFF' : 'none',
-                                    }}
-                                    aria-hidden
-                                  />
-                                  {subj.name}
+                                  <SubjectAvatar subject={subj.name} />
+                                  <span>{subj.name}</span>
+                                  <span aria-hidden="true" className={`text-[11px] ${selected ? 'text-[#b94712]' : 'text-[#626262]'}`}>{selected ? 'Added' : 'Add'}</span>
                                 </button>
                               );
                             })}

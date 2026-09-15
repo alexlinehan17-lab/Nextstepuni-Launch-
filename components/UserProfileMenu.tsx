@@ -3,11 +3,12 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
+import Avatar from './Avatar';
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, LogOut, Settings, Flame, ChevronRight, Trophy, Award, BarChart3, Star, X, BookOpen, CalendarRange, HelpCircle, MessageSquare } from 'lucide-react';
-import { type SessionUser, getAvatarUrl, handleAvatarError } from '../utils/authUtils';
+import { type SessionUser } from '../utils/authUtils';
 import { type UserSettings } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
@@ -54,7 +55,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
   return (
     <div className="relative" ref={dropdownRef}>
       <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] rounded-full">
-        <img src={getAvatarUrl(displayAvatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" onError={(e) => handleAvatarError(e, displayAvatar)} />
+        <Avatar seed={displayAvatar} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
       </button>
       <AnimatePresence>
         {isOpen && (
@@ -66,7 +67,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
           >
             {/* User info */}
             <div className="flex items-center gap-3 border-b border-zinc-200/50 dark:border-white/10 pb-3 mb-3">
-              <img src={getAvatarUrl(displayAvatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" onError={(e) => handleAvatarError(e, displayAvatar)} />
+              <Avatar seed={displayAvatar} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
               <div>
                 <p className="font-bold text-zinc-800 dark:text-white">{user.name}</p>
                 <p className="text-xs text-zinc-500">{user.isAdmin ? 'Admin' : 'Student'}</p>
@@ -242,7 +243,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
               {/* User info */}
               <div className="sticky top-0 z-10 -mx-5 mb-4 flex items-center justify-between border-b border-zinc-100 bg-white/95 px-5 py-3 backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-900/95">
                 <div className="flex items-center gap-3">
-                  <img src={getAvatarUrl(displayAvatar)} alt="Avatar" className="w-12 h-12 rounded-full bg-zinc-200" onError={(e) => handleAvatarError(e, displayAvatar)} />
+                  <Avatar seed={displayAvatar} alt="Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
                   <div>
                     <h2 id="mobile-profile-title" className="font-bold text-zinc-800 dark:text-white">{user.name}</h2>
                     <p className="text-xs text-zinc-500">Student</p>

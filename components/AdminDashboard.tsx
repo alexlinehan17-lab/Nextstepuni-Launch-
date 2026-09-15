@@ -2,10 +2,11 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
+import Avatar from './Avatar';
 import React, { useState, useEffect } from 'react';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
-import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
+import { type SessionUser } from '../utils/authUtils';
 import { GraduationCap, LogOut, Trash2, AlertTriangle, MessageSquareText, Users, TrendingUp, KeyRound } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
 import app, { auth, db } from '../firebase';
@@ -75,7 +76,7 @@ const StudentProgressCard: React.FC<{ user: SessionUser; userProgress: UserProgr
   return (
     <div className="bg-white dark:bg-zinc-900/50 border border-zinc-200/50 dark:border-white/10 rounded-2xl p-6 shadow-sm">
       <div className="flex items-center gap-4 border-b border-zinc-200/50 dark:border-white/10 pb-4 mb-4">
-        <img src={getAvatarUrl(user.avatar)} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
+        <Avatar seed={user.avatar} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
         <div className="flex-1 min-w-0">
           <p className="font-bold text-zinc-800 dark:text-white">{user.name}</p>
           <p className="text-xs text-zinc-500">Overall Progress: {overallProgress.toFixed(0)}%</p>

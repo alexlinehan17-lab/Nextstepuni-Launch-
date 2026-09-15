@@ -2,11 +2,12 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import Avatar from './Avatar';
 import React, { useState, useEffect, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
-import { type SessionUser, getAvatarUrl, yearGroupToCurriculumLevel } from '../utils/authUtils';
+import { type SessionUser, yearGroupToCurriculumLevel } from '../utils/authUtils';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, ListChecks, KeyRound, RefreshCw } from 'lucide-react';
 import app, { auth, db } from '../firebase';
 import { collection, query, where, limit, getDocs, doc, getDoc, setDoc } from 'firebase/firestore';
@@ -476,7 +477,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
           className="flex items-center gap-3 px-3 py-4 w-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
         >
           <div className="w-9 h-9 rounded-lg overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
-            <img src={getAvatarUrl(avatarSeed)} alt="Avatar" className="w-full h-full object-cover" />
+            <Avatar seed={avatarSeed} alt="Avatar" className="w-full h-full object-cover" />
           </div>
           <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
             {getSchoolName(school)}
@@ -535,7 +536,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       <div className="md:hidden flex items-center justify-between px-4 py-3 border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg overflow-hidden bg-zinc-200 dark:bg-zinc-700">
-            <img src={getAvatarUrl(avatarSeed)} alt="Avatar" className="w-full h-full object-cover" />
+            <Avatar seed={avatarSeed} alt="Avatar" className="w-full h-full object-cover" />
           </div>
           <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{getSchoolName(school)}</span>
         </div>

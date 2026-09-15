@@ -2,6 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import Avatar from '../Avatar';
 
 import React, { useState, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
@@ -9,7 +10,6 @@ import { MotionDiv } from '../Motion';
 import { X, Compass, Trophy, LayoutGrid, Crown } from 'lucide-react';
 import { type PeerIsland } from '../../hooks/usePeerIslands';
 import { type IslandState } from '../../types';
-import { getAvatarUrl } from '../../utils/authUtils';
 
 function computeIslandScore(state: IslandState): number {
   const placementCount = state.placements.filter(p => !p.isStarter).length;
@@ -223,8 +223,8 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                             border: '2.5px solid rgba(255,255,255,0.4)',
                           }}
                         >
-                          <img
-                            src={getAvatarUrl(peer.avatar)}
+                          <Avatar
+                            seed={peer.avatar}
                             alt={peer.name}
                             className="w-14 h-14 rounded-full"
                           />
@@ -279,7 +279,7 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                           <div className="absolute pointer-events-none" style={{ top: -15, right: -10, width: 50, height: 50, borderRadius: '50%', background: p.border }} />
                           <span className="text-[11px] font-bold" style={{ color: p.bg }}>2nd</span>
                           <div className="w-12 h-12 rounded-full mx-auto mt-2 mb-1.5 flex items-center justify-center" style={{ backgroundColor: `${p.bg}20`, border: `2px solid ${p.bg}40` }}>
-                            <img src={getAvatarUrl(entry.avatar)} alt={entry.name} className="w-9 h-9 rounded-full" />
+                            <Avatar seed={entry.avatar} alt={entry.name} className="w-9 h-9 rounded-full" />
                           </div>
                           <p className="text-xs font-bold truncate px-2 text-[#1A1A1A] dark:text-white">{entry.name}</p>
                           <span className="inline-flex items-center px-2 py-0.5 mt-1 text-[10px] font-bold" style={{ borderRadius: 6, backgroundColor: `${p.bg}15`, color: p.bg }}>{entry.score}</span>
@@ -315,7 +315,7 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                           <div className="relative z-10">
                             <Crown size={18} style={{ color: 'rgba(255,255,255,0.7)' }} className="mx-auto mb-1" />
                             <div className="w-16 h-16 rounded-full mx-auto mb-2 flex items-center justify-center" style={{ backgroundColor: 'rgba(255,255,255,0.25)', border: '2.5px solid rgba(255,255,255,0.4)' }}>
-                              <img src={getAvatarUrl(entry.avatar)} alt={entry.name} className="w-12 h-12 rounded-full" />
+                              <Avatar seed={entry.avatar} alt={entry.name} className="w-12 h-12 rounded-full" />
                             </div>
                             <p className="text-sm font-bold text-white truncate px-2">{entry.name}</p>
                             <span className="inline-flex items-center px-3 py-0.5 mt-1.5 text-xs font-bold" style={{ borderRadius: 8, backgroundColor: 'rgba(255,255,255,0.2)', color: '#fff' }}>{entry.score}</span>
@@ -347,7 +347,7 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                           <div className="absolute pointer-events-none" style={{ top: -12, left: -8, width: 45, height: 45, borderRadius: '50%', background: p.border }} />
                           <span className="text-[11px] font-bold" style={{ color: p.bg }}>3rd</span>
                           <div className="w-12 h-12 rounded-full mx-auto mt-2 mb-1.5 flex items-center justify-center" style={{ backgroundColor: `${p.bg}20`, border: `2px solid ${p.bg}40` }}>
-                            <img src={getAvatarUrl(entry.avatar)} alt={entry.name} className="w-9 h-9 rounded-full" />
+                            <Avatar seed={entry.avatar} alt={entry.name} className="w-9 h-9 rounded-full" />
                           </div>
                           <p className="text-xs font-bold truncate px-2 text-[#1A1A1A] dark:text-white">{entry.name}</p>
                           <span className="inline-flex items-center px-2 py-0.5 mt-1 text-[10px] font-bold" style={{ borderRadius: 6, backgroundColor: `${p.bg}15`, color: p.bg }}>{entry.score}</span>
@@ -390,7 +390,7 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                           className="w-10 h-10 rounded-full flex items-center justify-center shrink-0"
                           style={{ backgroundColor: palette.light, border: `1.5px solid ${palette.bg}30` }}
                         >
-                          <img src={getAvatarUrl(entry.avatar)} alt={entry.name} className="w-8 h-8 rounded-full" />
+                          <Avatar seed={entry.avatar} alt={entry.name} className="w-8 h-8 rounded-full" />
                         </div>
 
                         <div className="flex-1 min-w-0">
@@ -438,7 +438,7 @@ const PeerIslandsList: React.FC<PeerIslandsListProps> = ({
                         >
                           <span className="w-7 text-center text-[13px] font-bold shrink-0" style={{ color: '#F26B1F' }}>{yourIdx + 1}</span>
                           <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: 'rgba(242,107,31,0.12)' }}>
-                            <img src={getAvatarUrl(you.avatar)} alt={you.name} className="w-8 h-8 rounded-full" />
+                            <Avatar seed={you.avatar} alt={you.name} className="w-8 h-8 rounded-full" />
                           </div>
                           <div className="flex-1 min-w-0">
                             <p className="text-sm font-semibold text-[#1A1A1A] dark:text-white">
