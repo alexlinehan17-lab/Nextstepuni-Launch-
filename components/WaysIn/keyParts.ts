@@ -1992,8 +1992,13 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
     if (unit.use.some(u => u.kind === 'material' && VISUAL.test(u.display)) && !source.figure) unit.flags.push('needs-figure');
     unit.marks = partMarks.get(unit.id) ?? (units.length === 1 ? totalMarks : null);
     if (unit.actionKey === 'wh-plain') {
+      // A high tariff alone does not make "What do the following letters
+      // stand for?" a developed answer; a question about a role, an impact or
+      // the evidence does.
+      const developed = /^(?:what|which|in what)\s+(?:role|roles|impact|impacts|effect|effects|evidence|contribution|influence|importance|significance|problems|challenges|changes|factors|reasons|methods|arguments|lessons|message|messages|view|views|attitude|attitudes|techniques|ways|features|qualities|themes?)\b/i
+        .test(`${unit.action?.display ?? ''} ${unit.focus?.display ?? ''}`);
       if (multipleChoice) unit.means = MEANS.choice;
-      else if ((unit.marks ?? 0) >= 10) unit.means = MEANS['wh-developed'];
+      else if ((unit.marks ?? 0) >= 10 && developed) unit.means = MEANS['wh-developed'];
     }
   }
 
