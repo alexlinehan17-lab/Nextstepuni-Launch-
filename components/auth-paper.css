@@ -86,6 +86,7 @@
   text-transform: none !important;
   color: #23251f;
 }
+.auth-paper[data-view="register"] .auth-registration-brand-heading { font-family: 'DM Sans', sans-serif !important; font-weight: 700; }
 .auth-paper[data-view="register"] .auth-paper-eyebrow { margin-bottom: 14px; color: #686d63; font-size: 10px; font-weight: 700; letter-spacing: .15em; }
 .auth-paper[data-view="register"] .auth-registration-step > p:not(.auth-paper-eyebrow):not(.auth-crew-selection-status):not(.auth-crew-change-hint) { color: #686d63 !important; font-size: 15px; line-height: 1.6; }
 .auth-registration-fields { display: grid; gap: 22px 20px; }
@@ -118,7 +119,10 @@
   .auth-registration-story-content { display: flex; flex-direction: column; justify-content: center; width: 100%; }
   .auth-registration-story h2 { margin: 8px 0 24px; font: 700 clamp(58px, 6.4vw, 88px)/1.03 'Source Serif 4', Georgia, serif; letter-spacing: -3px; }
   .auth-registration-story-copy { max-width: 330px; color: #686d63; font-size: 15px; line-height: 1.7; }
-  .auth-registration-story .auth-registration-illustration { margin-top: 38px; width: 182px; height: 182px; }
+  .auth-registration-illustration { margin-top: 28px; width: 240px; max-width: 100%; }
+  .auth-registration-illustration .welcome-character-stage { height: 220px; margin-bottom: 0; }
+  .auth-registration-illustration .welcome-character { width: 220px; height: 220px; }
+  .auth-registration-illustration .welcome-character-papers { transform: scale(.73); }
   .auth-crew-selected { margin-top: 36px; min-height: 174px; }
   .auth-crew-selected-inner { display: flex; align-items: center; gap: 24px; }
   .auth-crew-selected .auth-crew-portrait { width: 174px; height: 174px; }

@@ -1229,7 +1229,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 {registerStep === 1 && (
                   <MotionDiv key="step1" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={viewTransition} className="auth-registration-step">
                     <p className="auth-paper-eyebrow">First, the essentials</p>
-                    <h1 className="auth-registration-title">Let&apos;s get you set up</h1>
+                    <h1 className="auth-registration-title auth-registration-brand-heading">Let&apos;s get you set up</h1>
                     <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
                     <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="auth-registration-form space-y-4">
                       <div className="auth-registration-fields">
@@ -1274,7 +1274,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 {registerStep === 2 && (
                   <MotionDiv key="step2" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={viewTransition} className="auth-registration-step">
                     <p className="auth-paper-eyebrow">Just for you</p>
-                    <h1 className="auth-registration-title">Create a password</h1>
+                    <h1 className="auth-registration-title auth-registration-brand-heading">Create a password</h1>
                     <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Use at least {MIN_PASSWORD_LENGTH} characters. A short phrase is easier to remember and harder to guess.</p>
                     <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="auth-registration-form space-y-4">
                       <div>

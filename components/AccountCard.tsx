@@ -34,7 +34,7 @@ function RegistrationStory({ step, avatar, name }: { step: number; avatar: strin
         initial={{ opacity: 0, y: reducedMotion ? 0 : 10 }} animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: reducedMotion ? 0 : -8 }} transition={transition}>
         <p className="auth-paper-eyebrow">{step === 3 ? 'Your account. Your character.' : step === 2 ? 'Make yourself at home.' : 'Let’s make it personal.'}</p>
-        <h2>{step === 3 ? <>A little<br />more<br /><em>you.</em></> : step === 2 ? <>A space<br />of your<br /><em>own.</em></> : <>Your next<br /><em>chapter.</em></>}</h2>
+        <h2 className={step < 3 ? 'auth-registration-brand-heading' : undefined}>{step === 3 ? <>A little<br />more<br /><em>you.</em></> : step === 2 ? <>A space<br />of your<br /><em>own.</em></> : <>Your next<br /><em>chapter.</em></>}</h2>
         <p className="auth-registration-story-copy">{step === 3 ? 'Pick the one that feels like you. They’ll be right here as you find your way.' : step === 2 ? 'Your subjects, your progress, your plans. One place to make them yours.' : 'A few details to get started. Then we’ll make room for your subjects, your goals and you.'}</p>
         {step === 3 ? <div className="auth-crew-selected">
           <AnimatePresence mode="wait" initial={false}>
@@ -45,7 +45,7 @@ function RegistrationStory({ step, avatar, name }: { step: number; avatar: strin
               <div><h3>{getAvatarName(avatar)}</h3><p>{name.trim().split(/\s+/)[0] || 'Your'}{name.trim() ? '’s' : ''} Star Crew character</p></div>
             </MotionDiv>
           </AnimatePresence>
-        </div> : <Avatar seed={step === 1 ? 'star-crew:reader' : 'star-crew:hugger'} alt="" className="auth-registration-illustration" />}
+        </div> : <div className="auth-registration-illustration"><WelcomeCharacter /></div>}
       </MotionDiv>
     </AnimatePresence>
   </aside>;
