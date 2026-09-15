@@ -726,7 +726,9 @@ function conditionEnd(raw: string, from: number, end: number, trigger = ''): num
     if (depth > 0) continue;
     const boundary = i + 1 >= rest.length || /\s/.test(rest[i + 1]);
     if (!boundary || !/[,;.?!:]/.test(ch)) continue;
-    if (ch === ':' && (listy || /(?:headings?|following|refer(?: in your answer)? to)\s*$/i.test(rest.slice(0, i)))) {
+    // "with reference to one of the following: • Mining • …": the list after
+    // the colon is options, not the limit; a heading list runs on.
+    if (ch === ':' && (listy || /(?:headings?|refer(?: in your answer)? to)\s*$/i.test(rest.slice(0, i)))) {
       const stop = /[.?!](?=\s|$)/.exec(rest.slice(i));
       cut = stop ? from + i + stop.index : end;
       break;
@@ -2490,8 +2492,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
     // "Show" proves only in a mathematical subject. In a drawing subject it
     // puts the thing on the drawing; elsewhere it sets it out.
     if (!proofSubject && !dcg && unit.actionKey === 'prove' && /^(?:(?:clearly|also|now)\s+)?show\b/i.test(unit.action?.display ?? '') && !/^that\b/i.test(unit.focus?.display ?? '')) {
-      const drawn = /\b(?:sketch|sketches|drawing|drawings|draw|diagram|diagrams)\b/i.test(`${stem} ${q}`);
-      unit.actionKey = drawn ? 'show-drawing' : 'describe';
+      const drawn = /\b(?:sketch|sketches|drawing|drawings|draw|diagram|diagrams|map|maps|graph|grid|axes)\b/i.test(`${stem} ${q}`);
+      // "Show and label the following on the map": marked on the figure itself.
+      const onFigure = /\bon (?:the|your|this) (?:map|diagram|drawing|sketch|graph|grid|axes|figure|photograph)\b/i.test(`${unit.focus?.display ?? ''} ${unit.conditions.map(c => c.display).join(' ')}`);
+      unit.actionKey = onFigure ? 'on-drawing' : drawn ? 'show-drawing' : 'describe';
       unit.means = MEANS[unit.actionKey];
     }
     // In a mathematical subject "Find …" and "Determine …" ask for a value or
