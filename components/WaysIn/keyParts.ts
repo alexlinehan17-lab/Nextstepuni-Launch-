@@ -208,6 +208,9 @@ const keyFor = (surface: string, following: string): string => {
   if (/^give (?:full )?details$/.test(bare)) return 'give-details';
   if (/^illustrate your answer/.test(`${bare} ${next}`)) return 'illustrate-tail';
   if (/^(?:explain|justify) your answer|^give (?:a )?reasons? for your answer/.test(`${bare} ${next}`)) return 'justify-tail';
+  if (/^how (?:did|do|would|will|should)$/.test(bare) && /^you\b/.test(next) && !/^you (?:think|feel|know|describe)\b/.test(next)) return 'describe-how';
+  if (/^how (?:could|can|might)$/.test(bare) && /^you\b/.test(next)) return 'suggest';
+  if (/^(?:explain|state|describe) how$/.test(bare) && /^you (?:know|can tell|could tell)\b/.test(next)) return 'wh-evidence';
   if (/^explain why/.test(bare)) return 'explain-why';
   if (/^explain how/.test(bare)) return 'explain-how';
   if (/^describe how/.test(bare)) return 'describe-how';
@@ -257,6 +260,8 @@ const keyFor = (surface: string, following: string): string => {
     promote: 'persuade', impress: 'persuade', appeal: 'persuade', nominate: 'choose', highlight: 'identify',
     offer: 'give', advise: 'suggest', inform: 'describe', speculate: 'predict', recall: 'describe', respond: 'discuss',
   };
+  // "Place a tick" ticks; "Place X on the diagram" / "place it in Column B" labels or matches.
+  if (/^(?:place|put)$/.test(verb) && !/^(?:a |your )?(?:tick|✓|x\b|cross|circle)/.test(next)) return /\bcolumn\b|\bmatch/.test(next) ? 'match' : 'label';
   // "Express your views" gives them; "Express x in terms of y" converts.
   if (verb === 'express' && /^(?:your|their|his|her|an?\s+(?:opinion|view|personal))\b/.test(next)) return 'give';
   // "construct an argument" is argued and "construct a plan" is written;
@@ -519,7 +524,7 @@ const PARTICIPLE_BEFORE = /\b(?:found|located|situated|grown|used|made|produced|
 // "the passage"), and nouns that only do with a pointer: "the model shown"
 // is material, "the model of the atom" is an idea; "the figure" in an art
 // question is a human figure.
-const STRONG_MATERIAL = 'diagrams?|tables?|graphs?|pie charts?|charts?|photographs?|photos?|word bank|article|extracts?|passages?|texts?|maps?|cartoons?|circuits?(?: diagrams?)?|drawings?|poem|poster|advertisement|pseudo-code|flowchart|timeline|documents?|scheduling network|cashflow forecast|parts list|case study|quotation|recipe|menu|results table|bar chart|line graph|notice board';
+const STRONG_MATERIAL = 'diagrams?|tables?|graphs?|pie charts?|charts?|photographs?|photos?|word bank|article|extracts?|passages?|texts?|maps?|cartoons?|(?<!(?:neural|nerve|reflex|brain|nervous) )circuits?(?: diagrams?)?|drawings?|poem|poster|advertisement|pseudo-code|flowchart|timeline|documents?|scheduling network|cashflow forecast|parts list|case study|quotation|recipe|menu|results table|bar chart|line graph|notice board';
 // "the image distance v", "the source of several gases", "these images" in a
 // poem: material only with a pointer ("the image below").
 const WEAK_MATERIAL = 'list|models?|figures?|sketch(?:es)?|data|information|results|code|algorithm|equation|network|forecast|situation|scenario|statement|label|images?|pictures?|sources?';
@@ -578,7 +583,7 @@ function commandsIn(raw: string, start: number, end: number): CommandMatch[] {
 }
 
 // A second instruction the shared lexicon misses: "… and include one example".
-const SECOND_VERB = /(?:,\s*and|\s(?:and|then))\s+(include|label|annotate|give|state|name|list|suggest|justify|identify|draw|sketch|show|calculate|find|write|comment|discuss|explain|describe|outline)(?![\p{L}])|,\s*and\s+(what|how|why|where|when|who)(?![\p{L}])|,\s+(?:briefly\s+|clearly\s+)?(outline|explain|describe|identify|discuss|suggest|justify|evaluate|assess|analyse|state|give|name)(?=\s+(?:the|their|its|his|her|how|why|what|which|a|an|one|two|three)\b)|,\s+(?:briefly|clearly)\s+(describe|explain|outline|discuss|state|identify)(?![\p{L}])|,?\s+and,?\s+hence,?\s+(find|show|prove|calculate|verify|deduce|write|express|solve|evaluate|determine|sketch|draw)(?![\p{L}])|\s+and\s+((?:at|in|by|for|to|from|on|with|under)\s+what|how (?:many|much|long|far|fast|often))(?![\p{L}])/giu;
+const SECOND_VERB = /(?:,\s*and|\s(?:and|then))\s+(?:briefly\s+|clearly\s+|fully\s+|carefully\s+)?(include|label|annotate|give|state|name|list|suggest|justify|identify|draw|sketch|show|calculate|find|write|comment|discuss|explain|describe|outline)(?![\p{L}])|,\s*and\s+(what|how|why|where|when|who)(?![\p{L}])|,\s+(?:briefly\s+|clearly\s+)?(outline|explain|describe|identify|discuss|suggest|justify|evaluate|assess|analyse|state|give|name)(?=\s+(?:the|their|its|his|her|how|why|what|which|a|an|one|two|three)\b)|,\s+(?:briefly|clearly)\s+(describe|explain|outline|discuss|state|identify)(?![\p{L}])|,?\s+and,?\s+hence,?\s+(find|show|prove|calculate|verify|deduce|write|express|solve|evaluate|determine|sketch|draw)(?![\p{L}])|\s+and\s+((?:at|in|by|for|to|from|on|with|under)\s+what|how (?:many|much|long|far|fast|often))(?![\p{L}])/giu;
 
 // The jobs a composing task lists after "you should:" / "in which you:":
 // "promote your preferred theme …, impress the committee …, and nominate …".
@@ -828,8 +833,8 @@ function buildUnit(
     cur += quote[0].length;
   }
   // "From the list above identify two alkanes": an opener with no comma.
-  const yourOpener = /^((?:On|In) your (?:drawing|diagram|sketch|graph|answer ?book|answer sheet|sketch map))\s+(?=\p{Ll})/u.exec(raw.slice(cur, end));
-  if (yourOpener && EXTRA_VERBS.test(raw.slice(cur + yourOpener[0].length, end))) {
+  const yourOpener = /^((?:On|In) your (?:drawing|diagram|sketch|graph|answer ?book|answer sheet|sketch map))\s*,?\s+(?=\p{Ll})/u.exec(raw.slice(cur, end));
+  if (yourOpener && EXTRA_VERBS.test(raw.slice(cur + yourOpener[0].length, end).replace(/^(?:clearly|carefully|neatly|also|now)\s+/i, ''))) {
     const sp = spanOf(from, raw, cur, cur + yourOpener[1].length);
     if (sp) conditions.push(sp);
     cur += yourOpener[0].length;
@@ -1093,7 +1098,8 @@ function buildUnit(
         count = spanOf(from, raw, cur, cEnd);
         countNoun = singular(noun);
         cur = cEnd;
-        const connector = /^\s+(?:of|for|in|on|as|about)(?![\p{L}])/iu.exec(raw.slice(cur, end));
+        // "one way in which …": "in which" opens what it is about.
+        const connector = /^\s+(?:of|for|in(?!\s+(?:which|whom|whose)\b)|on(?!\s+which\b)|as|about)(?![\p{L}])/iu.exec(raw.slice(cur, end));
         if (connector) cur += connector[0].length;
       } else if (/^(?:each|all|both)$/.test(word) && /^\s+of\s+(?!the following\b)(?:the|these|those|your)\s/i.test(raw.slice(phraseEnd, end))) {
         // "each of the letters A, B, C and D with the term …" — the counted
@@ -1155,7 +1161,7 @@ function buildUnit(
       count = spanOf(from, raw, cur, cur + an[0].length);
       countNoun = an[1];
       cur += an[0].length;
-      const connector = /^\s+(?:of|for|in|on|as|from|about)(?![\p{L}])/iu.exec(raw.slice(cur, end));
+      const connector = /^\s+(?:of|for|in(?!\s+(?:which|whom|whose)\b)|on(?!\s+which\b)|as|from|about)(?![\p{L}])/iu.exec(raw.slice(cur, end));
       if (connector) cur += connector[0].length;
       countValue = 1;
     }
@@ -1299,7 +1305,15 @@ function buildUnit(
     const nouns = COUNTED_ANSWER_NOUNS;
     // "the probability that at most 2 teams drop …" describes the event; it is
     // not how many answers to give.
-    const pool = (at: number) => /\b(?:the|these|those|all|of|between|at most|at least|exactly|more than|fewer than|less than|up to)\s+$/i.test(raw.slice(Math.max(clause.start, at - 13), at));
+    // "Name the two parts" is the object of the command, so it counts; a
+    // number in a description ("where two neurons come into contact") does not.
+    const objectStart = focus && focus.from === from ? focus.start : cur;
+    const pool = (at: number) => {
+      const before = raw.slice(Math.max(clause.start, at - 13), at);
+      if (/\bthe\s+$/i.test(before) && /^\s*the\s+$/i.test(raw.slice(objectStart, at))) return false;
+      if (/\b(?:where|that|which|who|whom|whose|when|while|if|because|between|connect|connects)\b[^,.;:]*$/i.test(raw.slice(Math.max(objectStart, at - 40), at))) return true;
+      return /\b(?:the|these|those|all|of|between|at most|at least|exactly|more than|fewer than|less than|up to)\s+$/i.test(before);
+    };
     const c2 = new RegExp(`(?<![\\p{L}\\p{N}])(one|two|three|four|five|six|[2-6])\\s+(?:(?:different|distinct|separate|possible|other|main|major|key)\\s+)?(?:${nouns})(?![\\p{L}])`, 'iu')
       .exec(clauseText);
     // Any plural noun counted in the clause: "Give an account of any two myths".
@@ -1406,7 +1420,7 @@ function buildUnit(
     actionKey = 'define';
     means = MEANS.define;
   }
-  if (/^(?:state|tick|prove|include|other|identify)$/.test(actionKey) && /^(?:indicate|show|include|mark|identify)\b/i.test(action.display)
+  if (/^(?:state|tick|prove|include|other|identify|label)$/.test(actionKey) && /^(?:(?:clearly|carefully|neatly|also)\s+)?(?:indicate|show|include|mark|identify|label)\b/i.test(action.display)
     && conditions.some(c => /^(?:on|in) (?:your|the) (?:drawing|diagram|sketch|graph)/i.test(c.display))) {
     actionKey = 'on-drawing';
     means = MEANS['on-drawing'];
@@ -1486,6 +1500,10 @@ const singular = (noun: string) => {
   const w = noun.toLowerCase().replace(/\s+of (?:evidence|information)$/, '');
   if (/ies$/.test(w)) return w.replace(/ies$/, 'y');
   if (/sses$/.test(w)) return w.replace(/es$/, '');
+  // viruses, stimuli, nuclei, analyses, hypotheses, crises, bases (of a
+  // triangle stay "base").
+  const irregular: Record<string, string> = { viruses: 'virus', statuses: 'status', bonuses: 'bonus', campuses: 'campus', stimuli: 'stimulus', nuclei: 'nucleus', fungi: 'fungus', bacteria: 'bacterium', analyses: 'analysis', hypotheses: 'hypothesis', crises: 'crisis', theses: 'thesis', axes: 'axis', criteria: 'criterion', phenomena: 'phenomenon', data: 'data', media: 'medium', species: 'species', series: 'series', apparatus: 'apparatus', processes: 'process', leaves: 'leaf', lives: 'life', halves: 'half', shelves: 'shelf', wolves: 'wolf', knives: 'knife', people: 'person', children: 'child', women: 'woman', men: 'man', teeth: 'tooth', feet: 'foot', mice: 'mouse' };
+  if (irregular[w]) return irregular[w];
   if (/(?:ss|us|is)$/.test(w)) return w;
   if (/(?:ch|sh|x)es$/.test(w)) return w.replace(/es$/, '');
   return w.replace(/s$/, '');
@@ -2439,11 +2457,10 @@ export function planRowsFromKeyParts(kp: KeyPartsBreakdown): KeyPartPlanRow[] {
   const rows: KeyPartPlanRow[] = [];
   for (const unit of kp.units) {
     if (unit.jointWith) continue; // drawn together with its partner
-    // "Give reasons for your answer" and "Illustrate your answer" are written
-    // in the answer before them, not in a space of their own.
-    if (/^(?:justify-tail|illustrate-tail)$/.test(unit.actionKey) && rows.length) {
-      const last = rows[rows.length - 1];
-      last.placeholder = unit.actionKey === 'justify-tail' ? 'Your answer, with your reasons' : 'Your answer, with sketches';
+    // "Illustrate your answer" is drawn into the answer before it. "Justify
+    // your answer" is a marked job of its own, so it keeps its own space.
+    if (unit.actionKey === 'illustrate-tail' && rows.length) {
+      rows[rows.length - 1].placeholder = 'Your answer, with sketches';
       continue;
     }
     const partner = kp.units.find(u => u.id !== unit.id && u.jointWith === unit.id);
@@ -2521,6 +2538,9 @@ export function planRowsFor(
     // Rows the old planner made by splitting sentences ("Task 2: Give") are
     // what the breakdown replaces; only a printed count is kept.
     && !printed.prompts.some(p => /^Task \d+:/.test(p.label))
+    // "the synapse, where two neurons come into close contact": a number in
+    // a description is not a count of answers.
+    && !/\b(?:where|that|which|who|whom|when|while|if|between|connects?)\b[^.?!]*\b(?:two|three|four|five|six|[2-6])\b/i.test([kp.units[0].focus?.display, ...kp.units[0].conditions.map(c => c.display)].join(' '))
   ) {
     const unit = kp.units[0];
     const summary = keyPartSummary(unit);

@@ -829,6 +829,8 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
   // words elsewhere in prose are content, not commands.
   if (!prefix) return true;
   if (/(?:,|[—–]|(?:^|\s)-)\s*$/.test(clausePrefix)) return true;
+  // "On your diagram, clearly indicate …", "Name and briefly describe …".
+  if (/(?:,|\band|\bthen)\s+(?:briefly|clearly|carefully|fully|neatly|accurately|also|now|then|hence)\s+$/i.test(clausePrefix)) return true;
   if (/\b(?:and|then)\s+$/i.test(clausePrefix)) return true;
   // "Briefly tell …", "Clearly show …", "Now calculate …": a manner or
   // sequence adverb before the imperative.
