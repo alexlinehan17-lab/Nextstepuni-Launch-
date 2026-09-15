@@ -853,6 +853,12 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
     return false;
   }
 
+  // A word quoted or defined is not an instruction: "A one-star rating means –
+  // Give it a Miss!", "a club called Study Together".
+  if (/\b(?:means|meaning|reads|says|said|called|titled|entitled|labelled|named)\s*[–—:-]?\s*[‘“"']?$/i.test(before.trimEnd() + ' ') || /\b(?:means|meaning|reads|says|called|titled|entitled)\s*[–—:-]\s*$/i.test(before)) return false;
+  // "time and place in which the novel is set": the noun, not "Place a tick".
+  if (key === 'place' && /^\s+(?:in which|where|of|and|,|\.)/i.test(after)) return false;
+
   // Everyday verbs the paper also uses in prose ("… and include the element")
   // are instructions only when they open the sentence.
   // A lead-in comma ("In your account, include …") or an imperative earlier

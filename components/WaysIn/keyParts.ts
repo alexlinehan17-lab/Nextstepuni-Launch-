@@ -473,7 +473,7 @@ const LEADING = /^(?:If\b[^,]{3,80},|Using (?:your knowledge of|notes and freeha
 const WH_FORMS = [
   'what information does this give about', 'to what extent do you agree or disagree with', 'to what extent',
   'what evidence is there', 'what evidence do you find', 'what do you consider', 'what do you think',
-  'do you think', 'do you agree', 'how would you best describe', 'what is the purpose of', 'what is meant by',
+  'do you agree or disagree with', 'do you agree or disagree that', 'do you agree or disagree', 'do you think', 'do you agree', 'how would you best describe', 'what is the purpose of', 'what is meant by',
   'what effect', 'what caused', 'what makes', 'what is', 'what are', 'what was', 'what were', 'what does', 'what did',
   'how does', 'how did', 'how do', 'how is', 'how are', 'how can', 'how would', 'how will', 'how could', 'how should', 'how might', 'how many', 'how much',
   'what will', 'what would', 'what could', 'what should', 'why would', 'why should', 'why might',
@@ -508,7 +508,7 @@ const CONDITION_TRIGGERS = [
   'refer in your answer to', 'in your answer refer to', 'include discussion of', 'include reference to', 'refer to',
   'from the (?:text|passage|extract|article|poem|story|document|source|letter|interview|report)s?',
   'in Ireland', 'outside Ireland', 'in Europe', 'in the EU', 'in the European Union', 'on your drawing',
-  'if', 'unless', 'assuming', 'given that', 'either(?! of\\b)', 'where(?= [a-zA-Z](?:\\s*,|\\s*[∈=<>≤≥]))', 'in English', 'in Irish',
+  'if', 'unless', 'assuming', 'given that', 'where(?= [a-zA-Z](?:\\s*,|\\s*[∈=<>≤≥]))', 'in English', 'in Irish',
   'in the form', 'in its simplest form', 'in simplest form', 'as a fraction', 'as a decimal', 'as a percentage',
   'by ticking', 'with a tick', 'by placing a tick', 'placing a tick', 'by putting', 'giving your answer',
 
@@ -531,6 +531,11 @@ function triggersIn(raw: string, start: number, end: number, actionKey = ''): Re
   return [...raw.slice(start, end).matchAll(TRIGGER_RE)].filter(t => {
     const at = start + (t.index ?? 0);
     if (GERUND_TRIGGER.test(t[0]) && AFTER_PREPOSITION.test(raw.slice(Math.max(0, at - 12), at))) return false;
+    // "the number of people using the services …": a participle after a
+    // noun describes it. A limit is set off: ", using …", "Using …".
+    const agent = /\b(?:people|persons|customers|consumers|students|pupils|farmers|users|workers|employees|businesses|firms|companies|households|children|adults|patients|athletes|players|families|visitors|tourists|drivers|shoppers|individuals|those)\s+$/i;
+    if (/^(?:giving|stating|showing|including)$/i.test(t[0]) && !/(?:^|[,(;:–—]\s*|\b(?:and|or|by|when|while|before|after|without)\s+)$/i.test(raw.slice(Math.max(0, at - 12), at)) && at > start) return false;
+    if (/^using\b/i.test(t[0]) && agent.test(raw.slice(Math.max(0, at - 16), at))) return false;
     if (/^(?:wh-|explain-how|to-what-extent)/.test(actionKey) && QUESTION_TIME_TRIGGER.test(t[0])) return false;
     // "Describe what happens during the primary stage", "Outline two
     // challenges when starting a new business": the occasion is what the
@@ -1378,7 +1383,7 @@ function buildUnit(
     const c2 = new RegExp(`(?<![\\p{L}\\p{N}])(one|two|three|four|five|six|[2-6])\\s+(?:(?:different|distinct|separate|possible|other|main|major|key)\\s+)?(?:${nouns})(?![\\p{L}])`, 'iu')
       .exec(clauseText);
     // Any plural noun counted in the clause: "Give an account of any two myths".
-    const c3 = /(?<![\p{L}\p{N}])(?:any\s+|at least\s+)?(two|three|four|five|six|[2-6])\s+(?:(?:different|distinct|separate|possible|other|main|major|key|named|specific|important)\s+)?([\p{L}-]{3,}s)(?![\p{L}])/iu.exec(clauseText);
+    const c3 = /(?<![\p{L}\p{N}])(?:any\s+|at least\s+)?(two|three|four|five|six|[2-6])\s+(?:(?:most|least)\s+[\p{L}-]+\s+)?(?:(?:different|distinct|separate|possible|other|main|major|key|named|specific|important)\s+)?([\p{L}-]{3,}s)(?![\p{L}])/iu.exec(clauseText);
     const hit = c2 && !pool(clause.start + c2.index) ? c2
       : c3 && !pool(clause.start + c3.index) && !/^(?:years|hours|minutes|seconds|marks|words|times|days|weeks|months|metres|pages|lines|sides|decimal|places)$/i.test(c3[2])
         && !new RegExp(`^(?:${MEANINGFUL_DATA_UNIT.source})$`, 'iu').test(c3[2]) ? c3 : null;
@@ -1654,8 +1659,8 @@ const LOCATOR_ONLY = /^\(?(?:(?:para(?:graph)?|Par\.|section|lines?|Alt|Part|Abs
 function listItems(raw: string, from: 'q' | 'stem', start: number, end: number, bySentence = false): KPSpan[] {
   const body = raw.slice(start, end);
   if (!body.trim()) return [];
-  const strong = /[;\n•◆▪●]|(?:^|\s)(?:\d{1,2}\.|\([a-h]\)|\(\d{1,2}\))\s+\S/.test(body);
-  const sep = strong ? /\s*(?:[;\n•◆▪●]+|(?:^|\s)(?:\d{1,2}\.|\([a-h]\)|\(\d{1,2}\))(?=\s))\s*/g
+  const strong = /[;\n•◆▪●\uF0A7\uF0B7\uF0D8\uF076\uF0FC\uF06E]|(?:^|\s)(?:\d{1,2}\.|\([a-h]\)|\(\d{1,2}\))\s+\S/.test(body);
+  const sep = strong ? /\s*(?:[;\n•◆▪●\uF0A7\uF0B7\uF0D8\uF076\uF0FC\uF06E]+|(?:^|\s)(?:\d{1,2}\.|\([a-h]\)|\(\d{1,2}\))(?=\s))\s*/g
     : bySentence ? /(?<=[.?!])\s+/g
       : /\s*(?:,\s*(?:and\s+|or\s+)?|\s+and\s+)\s*/g;
   let ranges: Array<[number, number]> = [];
@@ -1813,7 +1818,8 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
   // Garbled or leak-prone text is never broken down: private-use glyphs, a
   // "headword= definition" line, or a column-interleaved paper where another
   // question's number lands mid-sentence ("length 2ℓabout an 8. its plane").
-  const privateUse = /[\uE000-\uF04F\uF051-\uF8FF]/.test(q);
+  // Symbol-font bullets (U+F0B7 and kin) are list marks, not garble.
+  const privateUse = /[\uE000-\uF04F\uF051-\uF8FF]/.test(q.replace(/[\uF0A7\uF0B7\uF0D8\uF076\uF0FC\uF06E\uF0A8\uF0AE]/g, ''));
   if (privateUse || /^\s*\S+\s*=\s*\S/.test(q) && !/[\d(]/.test(q.split('=')[0]) || /\p{Ll}\s+\d{1,2}\.\s+\p{Ll}/u.test(q)) {
     return { ...base, mode: 'blocked', reasons: ['garbled'] };
   }
@@ -1938,6 +1944,13 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
             lastUnit.count = sp;
             lastUnit.countValue = NUMBER_WORDS[points[2].toLowerCase()];
             lastUnit.countNoun = singular(points[3].trim().split(/\s+/).pop()!.toLowerCase());
+            // "Make two points in your response, supporting them with …".
+            const rest = /,\s*((?:supporting|referring|using|drawing|developing|illustrating)\b[^.?!]*)/i.exec(q.slice(at, piece.end));
+            if (rest) {
+              const rs = at + rest.index + rest[0].length - rest[1].length;
+              const lim = spanOf('q', q, rs, rs + rest[1].length);
+              if (lim) lastUnit.conditions.push(lim);
+            }
           } else {
             const whole = spanOf('q', q, piece.start, piece.end);
             if (whole) lastUnit.conditions.push(whole);
