@@ -386,6 +386,7 @@ describe('the question comes first and stays', () => {
       questionText: '1. The male reproductive parts of the flower. 2. The female reproductive parts of the flower.',
     })]);
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^02Read$/i }));
 
     expect(screen.getByText('1 of 3')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /Next question line/i }));
@@ -414,7 +415,7 @@ describe('the question comes first and stays', () => {
     expect(screen.queryByText(/Small intestine|Large intestine/)).not.toBeInTheDocument();
   });
 
-  test('keeps each exact printed sub-question beside its planning field', () => {
+  test('breaks each printed item down beside its own planning field', () => {
     renderSession([card({
       stem: 'Give the collective name for:',
       questionText: '1. The male reproductive parts of the flower. 2. The female reproductive parts of the flower.',
@@ -422,15 +423,17 @@ describe('the question comes first and stays', () => {
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
     fireEvent.click(screen.getByRole('button', { name: /^03Plan$/i }));
 
-    expect(screen.getByText('1. The male reproductive parts of the flower.')).toBeInTheDocument();
-    expect(screen.getByText('2. The female reproductive parts of the flower.')).toBeInTheDocument();
-    expect(screen.getByRole('textbox', { name: /Plan idea 1: Part 1$/i })).toBeInTheDocument();
-    expect(screen.getByText(/visible parts: 1, 2\./i)).toBeInTheDocument();
+    // Each printed item gets its own space, named by the item, and the
+    // lead-in's key part sits under every one of them.
+    expect(screen.getByRole('textbox', { name: /Plan idea 1: 1\. The male reproductive parts of the flower$/i })).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: /Plan idea 2: 2\. The female reproductive parts of the flower$/i })).toBeInTheDocument();
+    expect(screen.getAllByText('the collective name for')).toHaveLength(2);
   });
 
   test('can temporarily hide the full question while keeping the focused line available', () => {
     renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^02Read$/i }));
     const questionPane = screen.getByTestId('mark-bank-question-pane');
     expect(questionPane).not.toHaveAttribute('hidden');
 
@@ -465,15 +468,21 @@ describe('the question comes first and stays', () => {
     )).not.toThrow();
   });
 
-  test('announces stage changes and omits empty task-map categories', () => {
+  test('opens on the key parts, announces stage changes and omits empty slots', () => {
     renderSession([card({ questionText: 'State one feature.' })]);
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
-    fireEvent.click(screen.getByRole('button', { name: /^02Understand$/i }));
 
-    expect(screen.getByRole('status')).toHaveTextContent(/Understand stage/i);
-    expect(screen.getByText('Instruction')).toBeInTheDocument();
-    expect(screen.queryByText('Information supplied')).not.toBeInTheDocument();
-    expect(screen.queryByText(/No separate lead-in/i)).not.toBeInTheDocument();
+    expect(screen.getByRole('status')).toHaveTextContent(/Break it down stage/i);
+    const parts = screen.getByRole('list', { name: /Key parts of the question/i });
+    expect(within(parts).getByText('Do')).toBeInTheDocument();
+    expect(within(parts).getByText('State')).toBeInTheDocument();
+    expect(within(parts).getByText('How many')).toBeInTheDocument();
+    expect(within(parts).getByText('one')).toBeInTheDocument();
+    expect(within(parts).queryByText('Only counts if')).not.toBeInTheDocument();
+    expect(within(parts).queryByText('Use')).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /^02Read$/i }));
+    expect(screen.getByRole('status')).toHaveTextContent(/Read stage/i);
   });
 
   test('keeps a typed attempt beside the scheme without saving or grading it', () => {
@@ -561,6 +570,7 @@ describe('the question comes first and stays', () => {
     try {
       renderSession([card({ stem: 'Read the graph carefully.' })]);
       fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+      fireEvent.click(screen.getByRole('button', { name: /^02Read$/i }));
       fireEvent.click(screen.getByRole('button', { name: /Read this line/i }));
       expect(speak).toHaveBeenCalledTimes(1);
       expect(speak.mock.calls[0][0]).toMatchObject({
@@ -825,6 +835,7 @@ describe('a diagram card always decodes its figure', () => {
     };
     renderSession([diagram]);
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^02Read$/i }));
     fireEvent.click(screen.getByRole('button', { name: /Focus on this line/i }));
 
     expect(screen.getByTestId('mark-bank-question-pane')).toHaveAttribute('hidden');

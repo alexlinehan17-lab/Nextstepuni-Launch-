@@ -604,3 +604,215 @@
     transition-duration: .01ms !important;
   }
 }
+
+/* ── Break it down: the key parts of the question ─────────────────────────
+   One row per task. The labels are fixed and short; every value beside them
+   is lifted from the printed question. Orange stays on the small accents the
+   rest of the panel already uses it for. */
+.mb-wi-kp-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1.5px solid var(--mb-ink);
+}
+
+.mb-wi-kp-unit {
+  padding: 14px 0 15px;
+  border-bottom: 1px solid var(--mb-border);
+}
+
+.mb-wi-kp-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.mb-wi-kp-ref {
+  color: var(--mb-ink);
+  font: 700 12px/1 'Roboto Mono', ui-monospace, monospace;
+}
+
+.mb-wi-kp-alt,
+.mb-wi-kp-marks {
+  color: var(--mb-label);
+  font: 700 9px/1.4 'DM Sans', system-ui, sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.mb-wi-kp-marks {
+  margin-left: auto;
+}
+
+.mb-wi-kp-slots {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+}
+
+.mb-wi-kp-slots > div {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  gap: 14px;
+}
+
+.mb-wi-kp-slots dt {
+  padding-top: 3px;
+  color: var(--mb-label);
+  font: 700 9px/1.5 'DM Sans', system-ui, sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.mb-wi-kp-slots dd {
+  margin: 0;
+  color: var(--mb-ink-2);
+  font: 400 13px/1.5 'DM Sans', system-ui, sans-serif;
+}
+
+.mb-wi-kp-slots dd strong {
+  display: block;
+  color: var(--mb-ink);
+  font: 650 18px/1.25 'Source Serif 4', Georgia, serif;
+}
+
+.mb-wi-kp-slots dd strong.mb-wi-kp-long {
+  font-size: 15.5px;
+  line-height: 1.35;
+}
+
+.mb-wi-kp-slots dd.mb-wi-kp-item {
+  color: var(--mb-ink);
+  font-weight: 650;
+}
+
+.mb-wi-kp-gap {
+  color: var(--mb-label);
+}
+
+.mb-wi-kp-slots dd.mb-wi-kp-printed {
+  padding-left: 10px;
+  border-left: 2px solid var(--mb-border);
+  color: var(--mb-ink);
+}
+
+.mb-wi-kp-slots dd strong + span {
+  display: block;
+  margin-top: 2px;
+  color: var(--mb-muted);
+  font-size: 12px;
+}
+
+.mb-wi-kp-slots dd em {
+  color: var(--mb-label);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.mb-wi-kp-slots ul,
+.mb-wi-kp-flags {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mb-wi-kp-slots li + li {
+  margin-top: 4px;
+}
+
+.mb-wi-kp-slots li::before {
+  content: '—';
+  margin-right: 7px;
+  color: #F26B1F;
+}
+
+.mb-wi-kp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.mb-wi-kp-chips span {
+  padding: 2px 8px;
+  border: 1px solid var(--mb-border);
+  border-radius: 999px;
+  background: var(--mb-paper);
+  color: var(--mb-ink-2);
+  font-size: 12px;
+}
+
+.mb-wi-kp-flags {
+  margin-top: 10px;
+  padding-left: 118px;
+}
+
+.mb-wi-kp-flags li {
+  color: var(--mb-muted);
+  font: 500 11.5px/1.5 'DM Sans', system-ui, sans-serif;
+}
+
+.mb-wi-kp-note,
+.mb-wi-kp-rules {
+  margin: 0 0 12px;
+  color: var(--mb-ink-2);
+  font: 500 12.5px/1.5 'DM Sans', system-ui, sans-serif;
+}
+
+.mb-wi-kp-rules span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--mb-label);
+  font: 700 9px/1.5 'DM Sans', system-ui, sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.mb-wi-kp-rules em {
+  font-style: normal;
+}
+
+.mb-wi-kp-rules em + em::before {
+  content: ' · ';
+  color: var(--mb-label);
+}
+
+.mb-wi-kp-fallback {
+  padding: 14px 16px;
+  border: 1px solid var(--mb-border);
+  border-radius: 10px;
+  background: var(--mb-paper);
+}
+
+.mb-wi-kp-fallback p {
+  margin: 0 0 10px;
+  color: var(--mb-ink-2);
+  font: 400 13px/1.5 'DM Sans', system-ui, sans-serif;
+}
+
+.mb-wi-kp-fallback button {
+  padding: 7px 12px;
+  border: 1.5px solid var(--mb-ink);
+  border-radius: 9px;
+  background: var(--mb-paper);
+  color: var(--mb-ink);
+  font: 700 12px/1 'DM Sans', system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.mb-wi-kp-fallback button:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+@media (max-width: 520px) {
+  .mb-wi-kp-slots > div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .mb-wi-kp-flags {
+    padding-left: 0;
+  }
+}
