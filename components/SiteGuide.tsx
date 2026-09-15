@@ -6,17 +6,18 @@
  * home help menu (or the ? key). One card per page: a real
  * screenshot, what the page is, up to three things you do
  * there, and a "Take me there" deep link. Arrows + ←/→ on desktop, swipe on
- * touch, with persistent Next/Back controls. Every image in /assets/guide/<id>.jpg is captured
+ * touch, with persistent Next/Back controls. Every versioned image in /assets/guide/ is captured
  * from the running app. A missing asset shows a plain notice, never simulated
  * product UI.
  */
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { ArrowRight, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, Maximize2, X } from 'lucide-react';
 import { useReducedMotion } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { useModal } from '../hooks/useModal';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import './site-guide.css';
 
 export type GuideAction =
   | 'modules'
@@ -42,18 +43,18 @@ const CARDS: GuideCard[] = [
   {
     id: 'home',
     chip: 'Start here',
-    title: 'Home — your base camp',
-    what: 'Home brings your next lesson and today’s plan together. Continue where you left off, or move into study, tools and progress.',
+    title: 'A little room for what’s next.',
+    what: 'Your home brings the next chapter, your week’s study and your island together. Pick something small and keep going.',
     bullets: [
-      'Pick up where you left off without finding the page again.',
-      'Five clear destinations keep the full app easy to scan.',
-      'The bottom bar takes you to Home, Progress, Study, Journey and Launch.',
+      'Start a study session or continue your unfinished module.',
+      'Open Learning Paths, My Island and Launchpad from the illustrated cards.',
+      'Find progress, year plans and account tools in your navigation.',
     ],
   },
   {
     id: 'modules',
     chip: 'Learn',
-    title: 'Modules & the Library',
+    title: 'Five worlds. Your own pace.',
     what: 'Five learning worlds cover mindset, growth, learning science, subject skills and exam performance — all at your own pace.',
     bullets: [
       'Continue the exact section you last reached.',
@@ -77,12 +78,12 @@ const CARDS: GuideCard[] = [
   {
     id: 'study',
     chip: 'Daily habit',
-    title: 'Study Session & Focus',
-    what: 'Choose the subject, session type and length, then work inside a calm full-screen timer with a useful learning prompt.',
+    title: 'Make some time.',
+    what: 'Choose a subject, how you’ll work and how long you have. Then settle into a study room that feels like yours.',
     bullets: [
-      'The full-screen timer removes everything except the work.',
-      'Strategy prompts turn techniques from the modules into action.',
-      'Finished sessions feed your history, streak and Journey Points.',
+      'Use After hours for a quiet, dark room, or turn on “I want my timer to have more colour!”.',
+      'In Paper Horizon, the landscape opens out when you pause and settles back when you resume.',
+      'Completed sessions build your history, streak and Journey Points.',
     ],
     go: { label: 'Start a session', action: 'study' },
   },
@@ -102,11 +103,11 @@ const CARDS: GuideCard[] = [
     id: 'paper-trail',
     chip: 'Exam tools · Papers',
     title: 'Paper Trail',
-    what: 'Browse past papers and marking schemes in the Paper Trail reader, with question navigation and revision tools in the same view.',
+    what: 'Your exam archive, organised around your subjects. Find a past paper and its marking scheme together.',
     bullets: [
-      'Open a paper, then use Answers to reach its marking scheme.',
-      'Use Topics to find a question, then self-mark your attempt.',
-      'Full Loop guides you through attempt, reveal, mark and next question.',
+      'Choose your subject, level and exam year.',
+      'Open a paper or its matching marking scheme from the same card.',
+      'Save papers to return to them, or open Topic Atlas to practise by topic.',
     ],
     go: { label: 'Open Paper Trail', action: 'tool:paper-trail' },
   },
@@ -149,27 +150,29 @@ const CARDS: GuideCard[] = [
   {
     id: 'journey',
     chip: 'Build your world',
-    title: 'My Journey',
+    title: 'An island of your own.',
     what: 'Your effort becomes a world you can see: studying and completing modules earns Journey Points that build an island of your own.',
     bullets: [
-      'Place tiles to lift the mist and discover the Blue-pencil map.',
-      'Choose a tile from the tray, then choose an open corner on your island.',
-      'Find mythic creatures, hidden islands and treasure as you explore.',
+      'Choose a tile from the tray and place it beside one you’ve already built.',
+      'Each new tile reveals a little more of the Blue-pencil atlas.',
+      'Use Find a sticker to follow a trail towards your next mythic discovery.',
     ],
-    go: { label: 'Visit My Journey', action: 'journey' },
+    go: { label: 'Visit My Island', action: 'journey' },
   },
 ];
 
-/** Current captures; mobile crops stay large enough to read. Tap to expand. */
+const CAPTURE_RELEASE = '2026-09-15';
+
+/** Real captures stay readable in the card and can expand to the full image. */
 const CardImage: React.FC<{ card: GuideCard; mobile: boolean }> = ({ card, mobile }) => {
   const [failed, setFailed] = useState(false);
   const [expanded, setExpanded] = useState(false);
-  if (failed) return <p className="rounded-xl border border-zinc-300 p-6 text-sm dark:border-zinc-600">Screen capture unavailable. You can still open this page below.</p>;
-  return <figure>
-    <button type="button" onClick={() => setExpanded(value => !value)} aria-expanded={expanded} aria-label={`${expanded ? 'Collapse' : 'Expand'} ${card.title} screenshot`} className="block w-full overflow-hidden rounded-xl border border-zinc-300 bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B54D14] dark:border-zinc-600">
-      <img src={mobile ? `/assets/guide/mobile/${card.id}.webp` : `/assets/guide/${card.id}.jpg`} alt={`${card.title} — screenshot from the app`} data-guide-capture="real-app" className={`w-full object-cover object-top ${expanded ? 'h-auto' : mobile ? 'aspect-[393/300]' : 'aspect-[16/10]'}`} onError={() => setFailed(true)} />
+  if (failed) return <p className="guide-capture-missing">Screen capture unavailable. You can still open this page below.</p>;
+  return <figure className={`guide-capture ${mobile ? 'guide-capture-mobile' : ''} ${expanded ? 'guide-capture-expanded' : ''}`}>
+    <button type="button" onClick={() => setExpanded(value => !value)} aria-expanded={expanded} aria-label={`${expanded ? 'Collapse' : 'Expand'} ${card.title} screenshot`} className="guide-capture-button">
+      <img src={`/assets/guide/${CAPTURE_RELEASE}/${mobile ? 'mobile' : 'desktop'}/${card.id}.webp`} alt={`${card.title} — screenshot from the app`} data-guide-capture="real-app" onError={() => setFailed(true)} />
     </button>
-    <figcaption className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">{expanded ? 'Tap the image to collapse' : 'Tap to see the full screen'}</figcaption>
+    <figcaption><span>{mobile ? 'On your phone' : 'Inside the app'}</span><span><Maximize2 size={13} aria-hidden="true" />{expanded ? 'Tap to return' : 'Tap to expand'}</span></figcaption>
   </figure>;
 };
 
@@ -202,35 +205,37 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
   }, [open, idx, goTo]);
   if (!open) return null;
   const card = CARDS[idx];
-  return <div className="fixed inset-0 z-[200] flex items-end justify-center sm:items-center sm:p-4">
-    <div className="absolute inset-0 bg-black/55" onClick={onClose} aria-hidden="true" />
-    <div ref={dialog} role="dialog" aria-modal="true" aria-label="Site guide" className="relative flex max-h-[92dvh] w-full max-w-md flex-col overflow-hidden rounded-t-3xl border border-zinc-300 bg-white text-zinc-900 dark:border-zinc-700 dark:bg-zinc-900 dark:text-white sm:rounded-3xl" style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}>
-      <header className="flex shrink-0 items-center justify-between gap-3 border-b border-zinc-200 px-5 py-2 dark:border-zinc-700">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#B54D14] dark:text-orange-400">A guide to your app</span>
-        <button onClick={onClose} aria-label="Close the guide" className="flex h-11 w-11 items-center justify-center rounded-lg"><X size={22} aria-hidden="true" /></button>
+  return <div className="site-guide">
+    <div className="guide-backdrop" onClick={onClose} aria-hidden="true" />
+    <div ref={dialog} role="dialog" aria-modal="true" aria-label="Site guide" className="guide-dialog">
+      <header className="guide-header">
+        <span>A guide to your app</span>
+        <button onClick={onClose} aria-label="Close the guide" className="guide-close"><X size={22} aria-hidden="true" /></button>
       </header>
-      <div ref={body} className="min-h-0 overflow-y-auto overscroll-contain px-5 py-5" onTouchStart={event => { touch.current = { x: event.touches[0].clientX, y: event.touches[0].clientY }; }} onTouchEnd={event => {
+      <div ref={body} className="guide-body" onTouchStart={event => { touch.current = { x: event.touches[0].clientX, y: event.touches[0].clientY }; }} onTouchEnd={event => {
         if (!touch.current) return;
         const dx = event.changedTouches[0].clientX - touch.current.x;
         const dy = event.changedTouches[0].clientY - touch.current.y;
         touch.current = null;
         if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) goTo(idx + (dx < 0 ? 1 : -1));
       }}>
-        <MotionDiv key={card.id} initial={{ opacity: reduced ? 1 : 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.15 }}>
-          <p className="mb-2 text-xs font-bold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">{card.chip}</p>
-          <h2 className="mb-4 font-serif text-3xl font-semibold leading-tight">{card.title}</h2>
+        <MotionDiv key={card.id} className="guide-page" initial={{ opacity: reduced ? 1 : 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.15 }}>
+          <div className="guide-page-heading">
+            <p>{String(idx + 1).padStart(2, '0')} / {card.chip}</p>
+            <h2>{card.title}</h2>
+          </div>
           <CardImage key={`${card.id}-${mobile}`} card={card} mobile={mobile} />
-          <p className="mb-5 mt-5 text-base leading-relaxed">{card.what}</p>
-          <ul className="space-y-3">{card.bullets.map((bullet, index) => <li key={index} className="flex gap-3 text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-300"><span className="font-bold text-[#B54D14] dark:text-orange-400" aria-hidden="true">{index + 1}.</span><span>{bullet}</span></li>)}</ul>
+          <div className="guide-copy">
+            <p>{card.what}</p>
+            <ol>{card.bullets.map((bullet, index) => <li key={bullet}><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><span>{bullet}</span></li>)}</ol>
+            {card.go && <button onClick={() => { onClose(); onGo(card.go!.action); }} className="guide-open-page">{card.go.label}<ArrowRight size={18} aria-hidden="true" /></button>}
+          </div>
         </MotionDiv>
       </div>
-      <footer className="shrink-0 border-t border-zinc-200 px-5 pb-3 pt-3 dark:border-zinc-700">
-        {card.go && <button onClick={() => { onClose(); onGo(card.go!.action); }} className="mb-2 flex min-h-12 w-full items-center justify-between gap-3 rounded-xl bg-[#F26B1F] px-4 py-3 text-base font-bold text-[#1A1A1A]">{card.go.label}<ArrowRight size={20} aria-hidden="true" /></button>}
-        <div className="flex items-center justify-between gap-2">
-          <button onClick={() => goTo(idx - 1)} disabled={idx === 0} className="flex min-h-11 items-center gap-1 rounded-lg pr-2 text-sm font-semibold disabled:opacity-35" aria-label="Previous page"><ChevronLeft size={18} aria-hidden="true" />Back</button>
-          <p role="status" className="text-sm tabular-nums text-zinc-600 dark:text-zinc-300">{idx + 1} of {CARDS.length}</p>
-          {idx === CARDS.length - 1 ? <button onClick={onClose} className="min-h-11 rounded-lg px-3 text-sm font-bold">Done</button> : <button onClick={() => goTo(idx + 1)} className="flex min-h-11 items-center gap-1 rounded-lg pl-2 text-sm font-bold" aria-label="Next page">Next<ChevronRight size={18} aria-hidden="true" /></button>}
-        </div>
+      <footer className="guide-footer">
+        <button onClick={() => goTo(idx - 1)} disabled={idx === 0} className="guide-previous" aria-label="Previous page"><ChevronLeft size={18} aria-hidden="true" />Back</button>
+        <p role="status">{idx + 1} <span>of {CARDS.length}</span></p>
+        {idx === CARDS.length - 1 ? <button onClick={onClose} className="guide-next">Done<ArrowRight size={18} aria-hidden="true" /></button> : <button onClick={() => goTo(idx + 1)} className="guide-next" aria-label="Next page">Next<ChevronRight size={18} aria-hidden="true" /></button>}
       </footer>
     </div>
   </div>;

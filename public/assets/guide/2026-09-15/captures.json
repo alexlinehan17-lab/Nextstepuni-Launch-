@@ -1,0 +1,148 @@
+{
+  "captured": "2026-09-15",
+  "appCommit": "a181d549",
+  "account": "Built-in demo account",
+  "source": "Running app at localhost:3047",
+  "captures": [
+    {
+      "id": "home",
+      "device": "desktop",
+      "width": 1456,
+      "height": 1437,
+      "bytes": 72490
+    },
+    {
+      "id": "journey",
+      "device": "desktop",
+      "width": 1456,
+      "height": 949,
+      "bytes": 90596
+    },
+    {
+      "id": "launchpad",
+      "device": "desktop",
+      "width": 1456,
+      "height": 949,
+      "bytes": 51848
+    },
+    {
+      "id": "learning-paths",
+      "device": "desktop",
+      "width": 1456,
+      "height": 949,
+      "bytes": 49856
+    },
+    {
+      "id": "mark-bank",
+      "device": "desktop",
+      "width": 1456,
+      "height": 949,
+      "bytes": 57400
+    },
+    {
+      "id": "modules",
+      "device": "desktop",
+      "width": 1456,
+      "height": 949,
+      "bytes": 54740
+    },
+    {
+      "id": "paper-trail",
+      "device": "desktop",
+      "width": 1456,
+      "height": 949,
+      "bytes": 36606
+    },
+    {
+      "id": "points-passport",
+      "device": "desktop",
+      "width": 1456,
+      "height": 949,
+      "bytes": 51130
+    },
+    {
+      "id": "progress",
+      "device": "desktop",
+      "width": 1456,
+      "height": 949,
+      "bytes": 54940
+    },
+    {
+      "id": "study",
+      "device": "desktop",
+      "width": 1456,
+      "height": 949,
+      "bytes": 22070
+    },
+    {
+      "id": "home",
+      "device": "mobile",
+      "width": 393,
+      "height": 852,
+      "bytes": 23442
+    },
+    {
+      "id": "journey",
+      "device": "mobile",
+      "width": 393,
+      "height": 852,
+      "bytes": 30190
+    },
+    {
+      "id": "launchpad",
+      "device": "mobile",
+      "width": 393,
+      "height": 852,
+      "bytes": 28076
+    },
+    {
+      "id": "learning-paths",
+      "device": "mobile",
+      "width": 393,
+      "height": 852,
+      "bytes": 24276
+    },
+    {
+      "id": "mark-bank",
+      "device": "mobile",
+      "width": 393,
+      "height": 852,
+      "bytes": 24788
+    },
+    {
+      "id": "modules",
+      "device": "mobile",
+      "width": 393,
+      "height": 852,
+      "bytes": 27200
+    },
+    {
+      "id": "paper-trail",
+      "device": "mobile",
+      "width": 393,
+      "height": 852,
+      "bytes": 17336
+    },
+    {
+      "id": "points-passport",
+      "device": "mobile",
+      "width": 393,
+      "height": 852,
+      "bytes": 30406
+    },
+    {
+      "id": "progress",
+      "device": "mobile",
+      "width": 393,
+      "height": 852,
+      "bytes": 26470
+    },
+    {
+      "id": "study",
+      "device": "mobile",
+      "width": 393,
+      "height": 852,
+      "bytes": 12966
+    }
+  ]
+}
