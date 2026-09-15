@@ -2075,6 +2075,73 @@
    "set": {
     "stem": "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1). It continues at this speed until it passes Q. The motorbike takes one minute to travel from P to Q."
    }
+  },
+  "am-2021-ol-6-a-ii": {
+   "reason": "The stem carried other parts’ asks or lost what this part depends on. Rebuilt from the 2021 Ordinary Level paper, page 4, Question 6(a), block by block through the same span-aware reader: the setup and the printed \"Find\" that governs (i) and (ii).",
+   "set": {
+    "stem": "Particles of weight 3 N, 1 N, 4 N, and 2 N are placed at the points (p, q), (1, p), (q, 4), and (0, 3) respectively. The co‐ordinates of the centre of gravity of the system are (–0.5, 1.5). Find"
+   }
+  },
+  "am-2021-ol-7-a-ii": {
+   "reason": "The stem carried other parts’ asks or lost what this part depends on. Rebuilt from the 2021 Ordinary Level paper, page 5, Question 7(a), block by block through the same span-aware reader: the setup and the printed \"Find\" that governs (i) and (ii).",
+   "set": {
+    "stem": "A uniform beam AB of length 5 m and weight 1000 N is held in a horizontal position by two vertical forces, F₁ and F₂, positioned at A and C respectively. C is 1 m from B. The beam is in equilibrium and stationary. Find"
+   }
+  },
+  "am-2022-ol-1-ii": {
+   "reason": "The stem carried other parts’ asks or lost what this part depends on. Rebuilt from the 2022 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader: the car scenario, without the question number and the other parts’ asks.",
+   "set": {
+    "stem": "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time 1. of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s."
+   }
+  },
+  "am-2022-ol-1-iii": {
+   "reason": "The stem carried other parts’ asks or lost what this part depends on. Rebuilt from the 2022 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader: the car scenario, without the question number and the other parts’ asks.",
+   "set": {
+    "stem": "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time 1. of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s."
+   }
+  },
+  "am-2022-ol-1-iv": {
+   "reason": "The stem carried other parts’ asks or lost what this part depends on. Rebuilt from the 2022 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader: the car scenario, without the question number and the other parts’ asks.",
+   "set": {
+    "stem": "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time 1. of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s."
+   }
+  },
+  "am-2022-ol-1-v": {
+   "reason": "The stem carried other parts’ asks or lost what this part depends on. Rebuilt from the 2022 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader: the car scenario, without the question number and the other parts’ asks.",
+   "set": {
+    "stem": "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time 1. of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s."
+   }
+  },
+  "am-2022-ol-1-vi": {
+   "reason": "The stem carried other parts’ asks or lost what this part depends on. Rebuilt from the 2022 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader: the car scenario and the motorcycle paragraph (vi) depends on, which the old stem left out.",
+   "set": {
+    "stem": "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time 1. of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s. A motorcycle passes point P with a speed of u m s^(–1) at the same instant that the car starts from P. The motorcycle travels at speed u for 20 s before decelerating to rest so that it finishes at point Q at the same instant as the car."
+   }
+  },
+  "am-2025-hl-2": {
+   "reason": "The question text flattened its fractions (\"a=v dv ds\", \"−1 20 ds\"), repeated (iv) and set (i) in the stem. Rebuilt from the 2025 Higher Level paper, pages 6-9, Question 2: the setup as the stem, and every part in printed order with each stacked fraction read by mathtext.fractions (the −1/20 from the glyph trace).",
+   "set": {
+    "stem": "A particle of mass m moves vertically upwards through the air with displacement s and velocity v. Its motion may first be modelled by ignoring air resistance, so that it has constant acceleration a. At time t = 0 the particle has velocity v₀ = 4 m s^(–1) and displacement s₀ = 0.",
+    "questionText": "(i) Using the chain rule, show that a = v dv/ds. (ii) Use calculus to derive an expression for v in terms of a and s. The model may be improved by including the force due to air resistance as 1/40 mv². (iii) Show that the upward motion can now be expressed by the differential equation: 2v/(v² + 392) dv = −1/20 ds (iv) Solve this differential equation to find an expression for v in terms of s. (v) Calculate the greatest height the particle will reach. (vi) By using a = dv/dt solve a differential equation to find an expression that relates v and t."
+   }
+  },
+  "am-2025-hl-7-b-i": {
+   "reason": "The stem ended in a cut-off \"is\" and ran into part (iii). Rebuilt from the 2025 Higher Level paper, page 28, Question 7(b): the setup this part uses.",
+   "set": {
+    "stem": "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal."
+   }
+  },
+  "am-2025-hl-7-b-ii": {
+   "reason": "The stem ended in a cut-off \"is\" and ran into part (iii). Rebuilt from the 2025 Higher Level paper, page 28, Question 7(b): the setup this part uses.",
+   "set": {
+    "stem": "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal."
+   }
+  },
+  "am-2025-hl-7-b-iii": {
+   "reason": "The stem lost the coefficient of restitution (a stacked 3/7) and ran into this part’s own ask. Rebuilt from the 2025 Higher Level paper, pages 28-29, Question 7(b): the setup and the coefficient sentence printed above (iii), the fraction read by mathtext.fractions.",
+   "set": {
+    "stem": "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal. The coefficient of restitution between the basketball and the wall is 3/7."
+   }
   }
  }
 }

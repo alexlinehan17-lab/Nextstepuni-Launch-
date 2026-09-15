@@ -4,7 +4,10 @@
 
 Produced the 2026-09-15 corrections for econ-2025-hl-q14-a-iii-{agri,sport},
 am-2021-ol-1-*, maths-2022-hl-p2-q10-c, maths-2024-hl-p1-q2-b and
-bio-2022-ol-q6-*, and prints them as JSON in card-corrections.json's shape.
+bio-2022-ol-q6-*, then am-2021-ol-6-a-ii, am-2021-ol-7-a-ii, am-2022-ol-1-*,
+am-2025-hl-2 and am-2025-hl-7-b-*, and prints them as JSON in
+card-corrections.json's shape. Every string was then checked by independent
+readers against the rendered page, with no difference found.
 
 Every string written here is cut out of the paper PDF by the pipeline's own
 readers and repaired with the pipeline's own glyph maps. Nothing is typed.
@@ -166,5 +169,143 @@ for letter in 'abcdefg':
             'question\'s printed instruction from the 2022 Ordinary Level paper (Sections A and B), '
             'page 7, Question 6, as the stem shared by every statement.',
             stem=head)
+
+
+# === 2026-09-15, second set: Applied Maths stems that carried other parts =====
+
+AM_PAPERS = os.path.join(ROOT, 'examiner-reports/applied-maths/papers')
+am_block = lambda year, level, page, needle: ws(block_with(blocks(os.path.join(AM_PAPERS, f'{year}-{level}-paper.pdf'), page), needle))
+AM_REASON = ('The stem carried other parts’ asks or lost what this part depends on. Rebuilt from the {paper}, '
+             'page {page}, {q}, block by block through the same span-aware reader{extra}.')
+
+# --- 2021 OL Q6(a)(ii) and Q7(a)(ii): scenario, then the printed "Find" ---------
+for cid, page, needle, label, q in (
+        ('am-2021-ol-6-a-ii', 4, 'Particles of weight 3', '6. (a) ', 'Question 6(a)'),
+        ('am-2021-ol-7-a-ii', 5, 'A uniform beam AB of length 5', '7. (a) ', 'Question 7(a)')):
+    first = am_block(2021, 'ol', page, needle)
+    assert first.startswith(label), first[:12]
+    pieces = [first[len(label):]]
+    if cid == 'am-2021-ol-6-a-ii':
+        pieces.append(am_block(2021, 'ol', page, 'The co‐ordinates of the centre of gravity'))
+    find = am_block(2021, 'ol', page, 'Find (i) the value of')
+    assert find.startswith('Find '), find
+    stem = ' '.join(render(p) for p in pieces) + ' ' + find[:len('Find')]
+    correct('applied-maths', cid, AM_REASON.format(paper='2021 Ordinary Level paper', page=page, q=q,
+            extra=': the setup and the printed "Find" that governs (i) and (ii)'), stem=stem)
+
+# --- 2022 OL Q1: the car scenario; (vi) also the motorcycle paragraph ------------
+# Read line by line (exponents marked by mathtext.line_text) rather than through
+# clean_like: clean_like's window re-reads the page and sets the question number
+# back into the middle of the first sentence -- "in a time 1. of 5 s", the very
+# fault being corrected.
+doc22 = fitz.open(os.path.join(AM_PAPERS, '2022-ol-paper.pdf'))
+
+
+def block_lines(doc, page_no, needle):
+    hits = []
+    for b in doc[page_no - 1].get_text('dict')['blocks']:
+        lines = [ws(mathtext.line_text(ln)) for ln in b.get('lines', [])]
+        if needle in ' '.join(lines):
+            hits.append(ws(am_scheme.repair(' '.join(t for t in lines if t))))
+    assert len(hits) == 1, (needle, len(hits))
+    return hits[0]
+
+
+first = block_lines(doc22, 2, 'A car starts from rest at point P')
+assert first.startswith('1. '), first[:6]
+car = [first[len('1. '):], block_lines(doc22, 2, 'The total time for the journey from P to Q')]
+moto = block_lines(doc22, 2, 'A motorcycle passes point P')
+assert ' 1. ' not in car[0] and 'in a time of 5 s' in car[0] and '^(–1)' in car[0], car[0]
+assert car[0].endswith('rest at point Q.') and car[1].endswith('35 s.') and moto.endswith('as the car.'), (car, moto)
+for roman in ('ii', 'iii', 'iv', 'v'):
+    correct('applied-maths', f'am-2022-ol-1-{roman}',
+            AM_REASON.format(paper='2022 Ordinary Level paper', page=2, q='Question 1',
+                             extra=': the car scenario, without the question number and the other parts’ asks'),
+            stem=' '.join(car))
+correct('applied-maths', 'am-2022-ol-1-vi',
+        AM_REASON.format(paper='2022 Ordinary Level paper', page=2, q='Question 1',
+                         extra=': the car scenario and the motorcycle paragraph (vi) depends on, which the old stem left out'),
+        stem=' '.join(car + [moto]))
+
+# --- 2025 HL: stacked fractions read by mathtext's fraction reader ------------------
+A25 = am_all.Author(2025, 'hl')
+render25 = lambda piece: am_all.FURNITURE_TAIL.sub('', am_scheme.repair(mathtext.clean_like(A25.P.files, piece))).strip()
+doc25 = fitz.open(os.path.join(AM_PAPERS, '2025-hl-paper.pdf'))
+
+
+def lines25(page_no):
+    """[(y, x, text)] -- each printed line, exponents marked, in reading order."""
+    out = []
+    for b in doc25[page_no - 1].get_text('dict')['blocks']:
+        for ln in b.get('lines', []):
+            t = ws(mathtext.line_text(ln))
+            if t:
+                out.append((ln['bbox'][1], ln['bbox'][0], t))
+    return out
+
+
+def line25(page_no, start):
+    hits = [t for _, _, t in lines25(page_no) if t.startswith(start)]
+    assert len(hits) == 1, (page_no, start, hits)
+    return hits[0]
+
+
+def frac25(page_no, needle):
+    hits = [ws(f[3]) for f in mathtext.fractions(doc25[page_no - 1]) if needle in f[3]]
+    assert len(hits) == 1, (page_no, needle, hits)
+    return hits[0]
+
+
+# Q2: a whole-question card. Stem = the setup; question = every part in order.
+setup = render25(am_block(2025, 'hl', 6, 'moves vertically upwards through the air'))
+assert setup.startswith('A particle of mass') and setup.endswith('s₀ = 0.'), setup
+p_i = frac25(6, 'chain rule')
+assert p_i == '(i) Using the chain rule, show that a = v dv/ds.', p_i
+p_ii = '(ii) ' + line25(6, 'Use calculus to derive')
+model_head = line25(7, 'The model may be improved')
+model_tail = frac25(7, 'air resistance as')
+assert model_head.endswith('air resistance as') and model_tail.startswith('due to air resistance as '), (model_head, model_tail)
+model = model_head + model_tail[len('due to air resistance as'):]
+assert model.endswith('as 1/40 mv².'), model
+p_iii_head = line25(7, '(iii) Show that the upward motion')
+lhs = frac25(7, '392')
+assert lhs == '2v/(v² + 392)', lhs
+# The right-hand side's fraction, from the glyph trace: "1" then "20" in one span
+# twice the line's height, the "20" set back under the "1" -- one over twenty.
+stack = [t for t in doc25[6].get_texttrace() if ''.join(chr(c[0]) for c in t['chars'] if c[1] != -1) == '120']
+assert len(stack) == 1, len(stack)
+xs = [c[3][0] for c in stack[0]['chars'] if c[1] != -1]
+assert xs[1] < xs[0] < xs[2] and stack[0]['bbox'][3] - stack[0]['bbox'][1] > 20, (xs, stack[0]['bbox'])
+tail_line = line25(7, 'v² + 392 dv = −1')
+assert tail_line == 'v² + 392 dv = −1' and line25(7, '20 ds') == '20 ds'
+p_iii = f'{p_iii_head} {lhs} dv = −1/20 ds'
+p_iv = line25(7, '(iv) Solve this differential equation')
+p_v = '(v) ' + line25(8, 'Calculate the greatest height')
+p_vi_head = frac25(9, 'By using')
+rest = line25(9, 'dt solve a differential equation')
+assert p_vi_head == '(vi) By using a = dv/dt solve a differential equation', p_vi_head
+p_vi = p_vi_head + rest[len('dt solve a differential equation'):]
+assert p_vi.endswith('relates v and t.'), p_vi
+correct('applied-maths', 'am-2025-hl-2',
+        'The question text flattened its fractions ("a=v dv ds", "−1 20 ds"), repeated (iv) and set (i) in the stem. '
+        'Rebuilt from the 2025 Higher Level paper, pages 6-9, Question 2: the setup as the stem, and every part in '
+        'printed order with each stacked fraction read by mathtext.fractions (the −1/20 from the glyph trace).',
+        stem=setup, questionText=' '.join([p_i, p_ii, model, p_iii, p_iv, p_v, p_vi]))
+
+# Q7(b): the setup for (i)-(ii); (iii) also the restitution coefficient printed above it.
+setup7 = render25(ws(A25.P.text(7, 'b', None) or ''))
+assert setup7.startswith('Chioma is throwing a basketball') and setup7.endswith('to the horizontal.'), setup7
+coeff_head = line25(29, 'The coefficient of restitution between the basketball')
+coeff_tail = frac25(29, 'and the wall is')
+assert coeff_head.endswith('and the wall is') and coeff_tail == 'and the wall is 3/7.', (coeff_head, coeff_tail)
+coeff = coeff_head + coeff_tail[len('and the wall is'):]
+for roman in ('i', 'ii'):
+    correct('applied-maths', f'am-2025-hl-7-b-{roman}',
+            'The stem ended in a cut-off "is" and ran into part (iii). Rebuilt from the 2025 Higher Level paper, '
+            'page 28, Question 7(b): the setup this part uses.', stem=setup7)
+correct('applied-maths', 'am-2025-hl-7-b-iii',
+        'The stem lost the coefficient of restitution (a stacked 3/7) and ran into this part’s own ask. Rebuilt '
+        'from the 2025 Higher Level paper, pages 28-29, Question 7(b): the setup and the coefficient sentence printed '
+        'above (iii), the fraction read by mathtext.fractions.', stem=f'{setup7} {coeff}')
 
 json.dump(out, sys.stdout, ensure_ascii=False, indent=2)
