@@ -178,6 +178,7 @@ const MEANS: Record<string, string> = {
   'brief-comment': 'A short comment — a point or two, with a reason.',
   persuade: 'Win the reader over — a clear case, with reasons they will accept.',
   step: 'A step to carry out on the computer before the parts that earn marks.',
+  'brief-job': 'One of the things your piece must do — develop it in its own paragraph.',
   'show-drawing': 'Show it in a clear, labelled drawing, with notes where they help.',
   copy: 'Reproduce it accurately — the same labels, scale and features.',
   'as-printed': '',
@@ -364,7 +365,7 @@ const OPENS_TASK = /^\s+(?:Give|Write|Find|Calculate|Explain|Describe|Name|State
 function sentences(raw: string, start: number, end: number): Piece[] {
   const out: Piece[] = [];
   let s = start;
-  const re = /[.?!]\)?(?=\s+[\p{Lu}(“"‘\d•◆▪])|\n{1,}/gu;
+  const re = /[.?!][)”’"]*(?=\s+[\p{Lu}(“"‘\d•◆▪])|\n{1,}/gu;
   re.lastIndex = start;
   let m: RegExpExecArray | null;
   while ((m = re.exec(raw)) && m.index < end) {
@@ -494,6 +495,7 @@ const COUNT_AFTER_CMD = /^(?:(any\s+(?:one|two|three|four|five|six)|at least\s+(
 
 // Each trigger begins a condition that runs to the next clause boundary.
 const CONDITION_TRIGGERS = [
+  '(?:developing|supporting|illustrating) your (?:response|answer|discussion|points?|views?|argument) (?:with|by) (?:close |detailed )?reference to',
   'with reference to', 'with specific reference to', 'with particular reference to', 'by reference to', 'in relation to', 'referring to',
   'making (?:detailed )?reference in your answer to',
   'in the context of', 'in the light of', 'according to', 'using evidence from', 'using your knowledge of', 'using the following',
@@ -509,7 +511,7 @@ const CONDITION_TRIGGERS = [
   'if', 'unless', 'assuming', 'given that', 'either(?! of\\b)', 'where(?= [a-zA-Z](?:\\s*,|\\s*[∈=<>≤≥]))', 'in English', 'in Irish',
   'in the form', 'in its simplest form', 'in simplest form', 'as a fraction', 'as a decimal', 'as a percentage',
   'by ticking', 'with a tick', 'by placing a tick', 'placing a tick', 'by putting', 'giving your answer',
-  'you think', 'you consider',
+
   'when', 'whenever', 'available to', 'required to', 'required for', 'to a scale of', 'on your drawing', 'as part of',
   'for (?:a|an|the) (?:open |closed |irish |local |national |global )?(?:economy|business|home|workplace|farm|week|month|year|day|household|community|society|region|country|school|family|consumer|employee|employer)',
   'in (?:a|an|the) (?:workplace|business|home|farm|laboratory|region|circuit|economy|school|community)',
@@ -567,7 +569,9 @@ const MATERIAL_ADJ = /\b(?:the|this|these)\s+(?:aerial|Ordnance Survey|OS|weathe
 const notMaterial = (text: string, index: number, match: string) =>
   (/^\S+\s+tables?$/i.test(match) && /\b(?:at|around|of|on|under|beside|across)\s+$/i.test(text.slice(Math.max(0, index - 12), index)))
   // The grid the answers go in: "Fill out the table".
-  || /\b(?:fill (?:out|in)|complete|copy)\s+$/i.test(text.slice(Math.max(0, index - 14), index));
+  || /\b(?:fill (?:out|in)|complete|copy)\s+$/i.test(text.slice(Math.max(0, index - 14), index))
+  // "Write the text of a talk", "the text for a podcast": the student's own writing.
+  || (/^the texts?$/i.test(match) && /^\s+(?:of|for)\s+(?:a|an|the|your)\s+(?:[\p{L}-]+\s+){0,2}(?:talk|speech|podcast|article|blog|letter|review|introduction|address|commentary|pitch|dialogue|report|radio|contribution|presentation|feature|editorial|diary|interview|announcement)/iu.test(text.slice(index + match.length, index + match.length + 60)));
 const NAMED_RE = /\b(?:Fig\.?\s*[A-Z]?-?\d+|Figure\s+[A-Z0-9]+|(?:Document|Source|Extract|Image|Photograph|Table|Text|TEXT|Graph|Diagram|Map)\s+[A-Z0-9]+(?:\s+on Paper\s+[A-Z])?)\b/g;
 const LOCATOR_RE = /\((?:para(?:graph)?|Par\.|section|lines?|Alt|Part|Abschnitt|Absatz|Zeile|párrafo|parágrafo|paragraphe|paragrafo|sezione|dalis|część|akapit|línea|ligne|riga|kappale|odsek|bekezdés)\s*[\d\s–-]+\)|\(\s*\d+\s+(?:dalis|bekezdés|odsek|kappale|rész)\s*\)|\bAlt\s+\d+\b|\b(?:paragraph|para\.?|Par\.|section)\s+\d+\b|\blines?\s+\d+\s*[–-]\s*\d+\b/gi;
 const OPTIONS_RE = /\[[^\]]*\/[^\]]*\]/g;
@@ -582,7 +586,7 @@ const SUPPORT_TAIL = /^(?:Support|Develop|Back up)\s+your\s+(?:answer|response|d
 // your response.": how many points, for the job before it.
 const POINTS_SENTENCE = /^(?:Develop|Make|Argue|Present|Offer|Discuss)\s+((?:at least|any)\s+)?(one|two|three|four|five|six)\s+((?:[\p{L}-]+\s+){0,2}?(?:points?|reasons?|examples?|ways?|arguments?|benefits?|recommendations?|features?|factors?|ideas?|aspects?))(?![\p{L}])/iu;
 // "Your plan should include at least four specific benefits."
-const YOUR_SHOULD = /^Your\s+[\p{L}-]+(?:\s+[\p{L}-]+)?\s+(?:should|must)\s+/iu;
+const YOUR_SHOULD = /^(?:Your\s+[\p{L}-]+(?:\s+[\p{L}-]+)?|The\s+[\p{L}-]+\s+you\s+(?:give|write|deliver|make|produce|present))\s+(?:should|must)\s+/iu;
 const YOUR_SHOULD_COUNT = /\b((?:at least|at most|exactly|no more than|up to)\s+)?(one|two|three|four|five|six|seven|eight)\s+((?:[\p{L}-]+\s+){0,2}?[\p{L}-]+s)(?![\p{L}])/iu;
 // Printed for the whole answer: drawing conventions, "work must be shown",
 // a permission.
@@ -614,8 +618,9 @@ const SECOND_VERB = /(?:,\s*and|\s(?:and|then))\s+(?:briefly\s+|clearly\s+|fully
 
 // The jobs a composing task lists after "you should:" / "in which you:":
 // "promote your preferred theme …, impress the committee …, and nominate …".
+const JOB_LIST_MARK = 'job-list';
 const JOB_LIST_LEAD = /\b(?:you (?:should|must|will|need to|are asked to)|in which you|where you|in which they|which should)\s*:\s*/i;
-const JOB_VERBS = 'explore|introduce|provide|warn|urge|share|promote|impress|nominate|reflect on|reflect|recommend|offer|persuade|convince|encourage|invite|advise|inform|express|highlight|consider|celebrate|thank|welcome|challenge|propose|argue|give|state|outline|discuss|describe|explain|identify|name|list|include|mention|recall|imagine|tell|compare|evaluate|assess|examine|present|set out|respond to|respond|suggest|create|design|develop|make|select|choose|convey|capture|reveal|show|demonstrate|justify|comment on|speculate|predict|acknowledge|address|defend|criticise|praise|appeal|ask|answer|summarise|analyse|interpret|review|rank|rate|detail|pay tribute|apologise|remind|announce|question|call on';
+const JOB_VERBS = 'explore|introduce|provide|warn|urge|share|promote|impress|nominate|reflect on|reflect|recommend|offer|persuade|convince|encourage|invite|advise|inform|express|highlight|consider|celebrate|thank|welcome|challenge|propose|argue|give|state|outline|discuss|describe|explain|identify|name|list|include|mention|recall|imagine|tell|compare|evaluate|assess|examine|present|set out|respond to|respond|suggest|create|design|develop|make|select|choose|convey|capture|reveal|show|demonstrate|justify|comment on|speculate|predict|acknowledge|address|defend|criticise|praise|appeal|ask|answer|summarise|analyse|interpret|review|rank|rate|detail|pay tribute|apologise|remind|announce|question|call on|seek to|attempt to|try to|aim to';
 
 /** Split a task sentence into one clause per command ("Name … and explain …"). */
 function clausesOf(raw: string, s: Piece): Clause[] {
@@ -627,8 +632,10 @@ function clausesOf(raw: string, s: Piece): Clause[] {
     const verbAt = new RegExp(`(?:^(?:[-–•]\\s*)?|,\\s*(?:and\\s+)?|\\s+and\\s+|;\\s*(?:and\\s+)?|\\s[-–•]\\s+)(${JOB_VERBS})(?![\\p{L}])`, 'giu');
     for (const m of raw.slice(from, s.end).matchAll(verbAt)) {
       const index = from + (m.index ?? 0) + m[0].length - m[1].length;
-      if (cmds.some(c => Math.abs(c.index - index) < 2)) continue;
-      cmds.push({ demand: { surface: m[1], requiredAction: '', answerShape: '', commonTrap: '' }, index, end: index + m[1].length, match: m[1] });
+      const known = cmds.findIndex(c => Math.abs(c.index - index) < 2);
+      // Marked, so a short-answer gloss is not given to a job the piece develops.
+      if (known >= 0) { cmds[known] = { ...cmds[known], demand: { ...cmds[known].demand, commonTrap: JOB_LIST_MARK } }; continue; }
+      cmds.push({ demand: { surface: m[1], requiredAction: '', answerShape: '', commonTrap: JOB_LIST_MARK }, index, end: index + m[1].length, match: m[1] });
     }
   }
   // "The alkaline earth metals make up Group 2 and include …" is a statement:
@@ -954,6 +961,9 @@ function buildUnit(
     actionKey = keyFor(raw.slice(henceStart >= 0 ? cmd.index : cur, aEnd), raw.slice(aEnd, end));
     // A verb the lexicon has no reading for gets no gloss rather than a wrong one.
     means = MEANS[actionKey] ?? (firstSentence(cmd.demand.requiredAction) || (actionKey === 'other' ? '' : MEANS.state));
+    // A job in a composing brief ("In your talk you should: give …") is
+    // developed in the piece, not answered in a line.
+    if (cmd.demand.commonTrap === JOB_LIST_MARK && /^(?:state|name|give|list|identify|other|tick|label)$/.test(actionKey)) means = MEANS['brief-job'];
     cur = aEnd;
   } else {
     // "By 1715, what was …?" / "Apart from ditches, what did …?": an opening
@@ -1199,7 +1209,7 @@ function buildUnit(
     const connector = /^\s+(?:of|for|in|on|about)(?![\p{L}])/iu.exec(raw.slice(cur, end));
     if (connector) cur += connector[0].length;
   } else {
-    const an = pronounOne ? null : /^(?:an?|one)\s+(example|reason|way|point|detail|use|fact|feature|advantage|disadvantage|benefit|effect|cause|method|function)(?![\p{L}])/iu.exec(afterAction);
+    const an = pronounOne ? null : /^(?:an?|one)\s+(example|reason|way|point|detail|use|fact|feature|advantage|disadvantage|benefit|effect|cause|method|function)(?![\p{L}])(?!\s+(?:article|film|story|writer|length|page|programme|documentary|piece|film|film-maker|report|magazine|book|poem)\b)/iu.exec(afterAction);
     if (an) {
       count = spanOf(from, raw, cur, cur + an[0].length);
       countNoun = an[1];
@@ -1450,7 +1460,7 @@ function buildUnit(
     const verbSplit = /\s+(?:differs?|is different|are different|compares?|contrasts?)\s+(?:from|with|to)\s+/i.exec(focus.text);
     // "the extent to which" joins no sides; the replacement keeps offsets.
     const ftext = focus.text.replace(/\bthe extent to which\b/gi, m => m.replace(/ /g, '_'));
-    const split = verbSplit ?? /\s+(?:and|with|from|to)\s+(?!the same\b|which\b|whom\b|what\b|how\b)/i.exec(ftext);
+    const split = verbSplit ?? /\s+(?:and|with|from|to)\s+(?!the same\b|which\b|whom\b|what\b|how\b|each\b|every\b|at least\b|both\b|one of\b)/i.exec(ftext);
     const last = verbSplit ? verbSplit.index : split ? ftext.lastIndexOf(split[0]) : -1;
     // Two sides are two short things ("artisan produce and a niche market"),
     // not the last "and" of a long clause ("social position and status").
@@ -1467,7 +1477,7 @@ function buildUnit(
   if (/\btrue or false\b/i.test(clauseText) && /^(?:state|identify|tick|other|wh-plain|write)$/.test(actionKey)) {
     actionKey = 'true-false';
     means = MEANS['true-false'];
-  } else if (/whether$/i.test(action.display) && focus && /\s(?:or)\s/i.test(focus.display)) {
+  } else if (/whether$/i.test(action.display) && !/^(?:explain|discuss|examine|consider|assess|evaluate|justify|comment)/i.test(action.display) && focus && /\s(?:or)\s/i.test(focus.display)) {
     actionKey = 'either-or';
     means = MEANS['either-or'];
   } else if (/^indicate/i.test(action.display) && /\btick|✓|\uF050|\bbox\b/i.test(clauseText)) {
@@ -1816,13 +1826,23 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       if (sp && !cardRules.some(r => r.display.toLowerCase() === sp.display.toLowerCase())) cardRules.push(sp);
     }
   }
+  // "Answer in English, giving TWO points and referring to the text.": the
+  // whole printed sentence is the rule, not just its language.
+  for (const [from, raw] of [['stem', stem], ['q', q]] as const) {
+    for (const m of raw.matchAll(/(?:^|(?<=[.?!]\s))Answer\b[^.?!\n]{0,40}?\bin (?:English|ENGLISH|Irish|IRISH)\b[^.?!\n]*/g)) {
+      const sp = spanOf(from, raw, m.index ?? 0, (m.index ?? 0) + m[0].length);
+      if (!sp) continue;
+      for (let i = cardRules.length - 1; i >= 0; i -= 1) if (cardRules[i].from === from && cardRules[i].start >= sp.start && cardRules[i].end <= sp.end) cardRules.splice(i, 1);
+      if (!cardRules.some(r => r.display.toLowerCase() === sp.display.toLowerCase())) cardRules.push(sp);
+    }
+  }
   // "Answer the following questions in ENGLISH." — words between "answer"
   // and the language.
   for (const [from, raw] of [['stem', stem], ['q', q]] as const) {
     for (const m of raw.matchAll(/\b[Aa]nswer\b[^.?!:]{0,60}?\b(in (?:English|ENGLISH|Irish|IRISH))\b/g)) {
       const at = (m.index ?? 0) + m[0].length - m[1].length;
       const sp = spanOf(from, raw, at, at + m[1].length);
-      if (sp && !cardRules.some(r => r.display.toLowerCase() === sp.display.toLowerCase())) cardRules.push(sp);
+      if (sp && !cardRules.some(r => r.display.toLowerCase() === sp.display.toLowerCase() || (r.from === sp.from && r.start <= sp.start && r.end >= sp.end))) cardRules.push(sp);
     }
   }
   const latin = (q.match(/[A-Za-zÀ-ÿ]/g) ?? []).length;
@@ -2724,7 +2744,11 @@ function settingOf(q: string, contexts: Array<{ from: 'q' | 'stem'; raw: string;
   for (const ctx of contexts) {
     if (ctx.from !== 'q') continue;
     for (const piece of ctx.pieces) {
-      if (covered.some(([s, e]) => s < piece.end && e > piece.start)) continue;
+      // Shown already when a slot holds most of it; "In TEXT 2, the writer
+      // suggests …" is still set-up when only "TEXT 2" is in USE.
+      let inSlots = 0;
+      for (let i = piece.start; i < piece.end; i += 1) if (covered.some(([s, e]) => i >= s && i < e)) inSlots += 1;
+      if (inSlots > (piece.end - piece.start) * 0.4) continue;
       const sp = spanOf('q', q, piece.start, piece.end);
       if (!sp || out.some(o => o.start === sp.start)) continue;
       const words = sp.display.split(/\s+/);
@@ -2732,7 +2756,7 @@ function settingOf(q: string, contexts: Array<{ from: 'q' | 'stem'; raw: string;
       // A sentence, not a flattened table, an axis label or a rubric line.
       if (words.length < 4 || letters < sp.display.length * 0.6 || !/^[\p{Lu}“‘"'(]/u.test(sp.display)) continue;
       if (!/[.?!:)”’"']\s*$/.test(q.slice(piece.start, piece.end).trim()) && words.length < 8) continue;
-      if (RUBRIC.test(sp.display) || /^(?:Page \d|Question \d|\[?\d+ marks?\]?$)/i.test(sp.display)) continue;
+      if (RUBRIC.test(sp.display) || /^(?:Page \d|Question \d|\[?\d+ marks?\]?$|Answer\b)/i.test(sp.display)) continue;
       out.push(sp);
     }
   }
