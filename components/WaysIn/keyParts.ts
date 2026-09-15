@@ -1150,6 +1150,9 @@ function buildUnit(
       cur = phraseEnd + ofFollowing[0].length;
       const value = NUMBER_WORDS[word] ?? (/^[2-8]$/.test(word) ? Number(word) : undefined);
       if (value) countValue = value;
+      // "any two of the following terms" → Term 1; bare "the following" → Choice 1.
+      const listNoun = /^the following\s+([\p{L}-]+s)\b/iu.exec(raw.slice(cur, end));
+      countNoun = listNoun ? singular(listNoun[1]) : 'choice';
     } else if (!unitAhead && !/^(?:of)\b/i.test(noun) || /^each of the following|^each|^all|^both/.test(word)) {
       if (noun && GENERIC_UNIT_NOUNS.test(noun) && word !== 'all') {
         const cEnd = phraseEnd + nounMatch![0].length;
@@ -1752,7 +1755,10 @@ function spreadOver(unit: KPUnit, items: KPSpan[], raws: { q: string; stem: stri
     unit = { ...unit, count: null, countValue: undefined, countNoun: undefined };
   }
   if (items.length === 1) return [{ ...unit, item: items[0] }];
-  const perList = unit.count && /\beach\b|\bthe following\b|^all\b|^both\b/i.test(unit.count.display);
+  const perList = unit.count && (/\beach\b|\bthe following\b|^all\b|^both\b/i.test(unit.count.display)
+    // "the following two factors: • Transport • Labour": the count is the list's.
+    || unit.countValue === items.length
+    || /\b(?:the following|these|those)\s+$/i.test(raws[unit.count.from].slice(Math.max(0, unit.count.start - 16), unit.count.start)));
   return items.map(item => ({
     ...unit, id: nextId(), item,
     count: perList ? null : unit.count, countValue: perList ? undefined : unit.countValue, countNoun: perList ? undefined : unit.countNoun,
@@ -2139,6 +2145,9 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           // "Determine and indicate the true length": the shown gloss is the
           // bigger of the two jobs, not the smaller.
           if (JOB_WEIGHT(a.actionKey) > JOB_WEIGHT(b.actionKey)) { b.actionKey = a.actionKey; b.means = a.means; }
+          // "With reference to a region you have studied, describe and
+          // explain …": a limit on the first verb is on the joint job.
+          for (const c of a.conditions) if (!b.conditions.some(x => x.from === c.from && x.start === c.start)) b.conditions.unshift(c);
         }
       }
       // "Identify three principles … and describe how each principle
@@ -2813,7 +2822,9 @@ const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export function keyPartSummary(unit: KPUnit): string {
   if (unit.flags.includes('as-printed')) return '';
-  const about = unit.focus ? [unit.focus.display, ...(unit.focusMore ?? []).map(f => f.display)].join(' … ') : '';
+  const aboutRaw = unit.focus ? [unit.focus.display, ...(unit.focusMore ?? []).map(f => f.display)].join(' … ') : '';
+  // "the following" says nothing once the options are listed.
+  const about = /^the following(?:\s+[\p{L}-]+)?$/iu.test(aboutRaw) && unit.use.some(u => u.kind === 'options') ? '' : aboutRaw;
   // "two pyroclastic materials" · "pyroclastic materials that are …": the
   // noun is said once in a one-line summary.
   const countNoun = unit.count?.display.replace(/^(?:any|at least)?\s*\S+\s*/i, '') ?? '';
