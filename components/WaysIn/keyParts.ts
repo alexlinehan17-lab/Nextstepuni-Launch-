@@ -350,7 +350,7 @@ function englishRatio(text: string): { words: number; ratio: number } {
 
 // Sentence splitting that does not break after "Fig.", "e.g.", "No.", a
 // decimal or a single initial — the old splitter cut "Fig. C-5" in two.
-const NO_BREAK_AFTER = /(?:\b(?:Fig|Figs|No|Nos|Par|para|e\.g|i\.e|etc|c|ca|approx|vs|cf|St|Mr|Mrs|Ms|Dr|Prof|p|pp|vol|Q|Qs)|(?<![\d]\s?)\b[A-Z](?![\p{L}]))\.$/u;
+const NO_BREAK_AFTER = /(?:\b(?:Fig|Figs|No|Nos|Par|para|e\.g|i\.e|etc|c|ca|approx|vs|cf|St|Mr|Mrs|Ms|Dr|Prof|p|pp|vol|Q|Qs|Co|Ltd|Inc|Mt|Rd|Ave)|(?<![\d]\s?)\b[A-Z](?![\p{L}]))\.$/u;
 
 interface Piece { start: number; end: number }
 
@@ -1384,7 +1384,7 @@ function buildUnit(
     const c2 = new RegExp(`(?<![\\p{L}\\p{N}])(one|two|three|four|five|six|[2-6])\\s+(?:(?:different|distinct|separate|possible|other|main|major|key)\\s+)?(?:${nouns})(?![\\p{L}])`, 'iu')
       .exec(clauseText);
     // Any plural noun counted in the clause: "Give an account of any two myths".
-    const c3 = /(?<![\p{L}\p{N}])(?:any\s+|at least\s+)?(two|three|four|five|six|[2-6])\s+(?:(?:most|least)\s+[\p{L}-]+\s+)?(?:(?:different|distinct|separate|possible|other|main|major|key|named|specific|important)\s+)?([\p{L}-]{3,}s)(?![\p{L}])/iu.exec(clauseText);
+    const c3 = /(?<![\p{L}\p{N}])(?:any\s+|at least\s+)?(two|three|four|five|six|[2-6])\s+(?:(?:most|least)\s+[\p{L}-]+\s+)?(?:(?:different|distinct|separate|possible|other|main|major|key|named|specific|important|contrasting|european|irish|non-european|developing|developed|urban|rural|physical|human)\s+){0,2}([\p{L}-]{3,}s)(?![\p{L}])/iu.exec(clauseText);
     const hit = c2 && !pool(clause.start + c2.index) ? c2
       : c3 && !pool(clause.start + c3.index) && !/^(?:years|hours|minutes|seconds|marks|words|times|days|weeks|months|metres|pages|lines|sides|decimal|places)$/i.test(c3[2])
         && !new RegExp(`^(?:${MEANINGFUL_DATA_UNIT.source})$`, 'iu').test(c3[2]) ? c3 : null;
@@ -2101,6 +2101,13 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
             // A question the breakdown cannot read is shown as printed, never dropped.
             const sp = spanOf('q', q, piece.start, piece.end);
             if (sp) { const u = asPrinted(nextId(), part.ref, part.altGroup, sp); partUnits.push(u); unitPiece.set(u.id, piece); }
+          } else if (lastUnit && !lastUnit.flags.includes('as-printed') && (text.match(/\b(?:is|are|was|were|has|have|had|will|would|can|could|the|a|an|to|of|in|on|for|with|by|and|that|this|you|your)\b/gi) ?? []).length < 2
+            && text.split(/\s+/).length >= 2 && !/^[•·▪‣◦\-–\uF0B7]/.test(text) && !/:\s*$/.test(q.slice(Math.max(0, piece.start - 3), piece.start))
+            && /\b(?:table|tick|box)\b/i.test(q.slice(lastUnit.action?.start ?? piece.start, piece.start))) {
+            // "… in the table below. Oil/Gas exploitation Quarrying Mining": a
+            // flattened table after the ask is what it chooses or matches from.
+            const sp = spanOf('q', q, piece.start, piece.end);
+            if (sp && !lastUnit.use.some(u => u.start === sp.start)) lastUnit.use.push({ ...sp, kind: 'options' });
           } else {
             ctxPieces.push(piece);
             lastStatement = piece;
