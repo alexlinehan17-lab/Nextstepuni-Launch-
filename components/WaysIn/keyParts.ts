@@ -173,9 +173,10 @@ const MEANS: Record<string, string> = {
 
 const keyFor = (surface: string, following: string): string => {
   const s = surface.toLowerCase().replace(/\s+/g, ' ').trim();
-  const bare = s.replace(/^(?:briefly|clearly)\s+/, '').replace(/\s+(?:briefly|clearly|in detail)$/, '');
+  const bare = s.replace(/^(?:briefly|clearly)\s+/, '').replace(/\s+(?:briefly|clearly|in detail)(?=\s|$)/g, '');
   const next = following.trimStart().toLowerCase();
-  if (/^explain (?:the (?:underlined |following )?terms?|what is meant by)|^define|^what is meant by/.test(bare)) return 'define';
+  if (/^explain (?:the (?:underlined |following )?terms?|what is meant by)|^define|^what is meant by/.test(bare)
+    || /^(?:explain|state|describe|outline) what is meant by/.test(`${bare} ${next}`)) return 'define';
   if (/^give an account of/.test(bare)) return 'account-of';
   if (/^give (?:full )?details$/.test(bare)) return 'give-details';
   if (/^illustrate your answer/.test(`${bare} ${next}`)) return 'illustrate-tail';
@@ -491,18 +492,23 @@ function commandsIn(raw: string, start: number, end: number): CommandMatch[] {
 }
 
 // A second instruction the shared lexicon misses: "… and include one example".
-const SECOND_VERB = /(?:,\s*and|\s(?:and|then))\s+(include|label|annotate|give|state|name|list|suggest|justify|identify|draw|sketch|show|calculate|find|write|comment|discuss|explain|describe|outline)(?![\p{L}])|,\s*and\s+(what|how|why|where|when|who)(?![\p{L}])/giu;
+const SECOND_VERB = /(?:,\s*and|\s(?:and|then))\s+(include|label|annotate|give|state|name|list|suggest|justify|identify|draw|sketch|show|calculate|find|write|comment|discuss|explain|describe|outline)(?![\p{L}])|,\s*and\s+(what|how|why|where|when|who)(?![\p{L}])|\s+and\s+((?:at|in|by|for|to|from|on|with|under)\s+what|how (?:many|much|long|far|fast|often))(?![\p{L}])/giu;
 
 /** Split a task sentence into one clause per command ("Name … and explain …"). */
 function clausesOf(raw: string, s: Piece): Clause[] {
   const cmds = commandsIn(raw, s.start, s.end);
   for (const m of raw.slice(s.start, s.end).matchAll(SECOND_VERB)) {
-    const word = m[1] ?? m[2];
+    const word = m[1] ?? m[2] ?? m[3];
     const index = s.start + (m.index ?? 0) + m[0].length - word.length;
     if (cmds.some(c => Math.abs(c.index - index) < 2)) continue;
     cmds.push({ demand: { surface: word, requiredAction: '', answerShape: '', commonTrap: '' }, index, end: index + word.length, match: word });
   }
   cmds.sort((a, b) => a.index - b.index);
+  // "In what direction is it moving and at what speed …?": the second
+  // question splits off even when the first opens without a lexicon command.
+  const opener = { demand: { surface: '', requiredAction: '', answerShape: '', commonTrap: '' }, index: s.start, end: s.start, match: '' };
+  if (cmds.length === 1 && cmds[0].index > s.start + 3 && /^\s*\p{Lu}/u.test(raw.slice(s.start, s.end))
+    && !commandsIn(raw, s.start, cmds[0].index).length && /\band\s+$/i.test(raw.slice(s.start, cmds[0].index))) cmds.unshift(opener);
   if (cmds.length <= 1) return [{ start: s.start, end: s.end, command: cmds[0] ?? null }];
   const out: Clause[] = [];
   let cursor = s.start;
@@ -521,7 +527,7 @@ function clausesOf(raw: string, s: Piece): Clause[] {
   });
   out.push({ start: cursor, end: s.end, command: null });
   // Re-attach each clause's own command.
-  return out.map(c => ({ ...c, command: cmds.find(m => m.index >= c.start && m.index < c.end) ?? null }));
+  return out.map(c => ({ ...c, command: cmds.find(m => m !== opener && m.index >= c.start && m.index < c.end) ?? null }));
 }
 
 // A limit that is only its trigger ("in relation to" before a list) says
@@ -601,8 +607,12 @@ const MANNER = /^(?:with the aid of|using|by means of|with the help of|making us
 function actionTail(raw: string, aEnd: number, end: number, verb: string): number {
   const after = raw.slice(aEnd, end);
   const v = verb.toLowerCase().trim();
-  const general = /^\s+(?:(?:why|how|whether|where|when)(?![\p{L}])|between(?![\p{L}])|the (?:underlined |following )?terms?(?![\p{L}])|briefly(?![\p{L}])|clearly(?![\p{L}])|in detail(?![\p{L}]))/iu.exec(after);
-  if (general) return aEnd + general[0].length;
+  const GENERAL = /^\s+(?:what is meant by(?![\p{L}])|(?:why|how|whether|where|when)(?![\p{L}])|between(?![\p{L}])|the (?:underlined |following )?terms?(?![\p{L}])|briefly(?![\p{L}])|clearly(?![\p{L}])|in detail(?![\p{L}]))/iu;
+  const general = GENERAL.exec(after);
+  if (general) {
+    const again = GENERAL.exec(after.slice(general[0].length));
+    return aEnd + general[0].length + (again && /^\s+(?:briefly|clearly|in detail)$/i.test(general[0]) ? again[0].length : 0);
+  }
   const particle = v === 'give'
     ? /^\s+(?:an account of|(?:full |more )?details(?:\s+(?:of|about|on))?(?=\s|[.?!]|$))(?![\p{L}])/iu
     : /^(?:write|set|carry|fill|work|point|find|note|jot|sum|fill)$/.test(v)
@@ -612,6 +622,14 @@ function actionTail(raw: string, aEnd: number, end: number, verb: string): numbe
         : null;
   const p = particle?.exec(after);
   return p ? aEnd + p[0].length : aEnd;
+}
+
+/** "In what direction is …", "Which county has …": the noun belongs to the question word when a verb follows it. */
+function whNounEnd(raw: string, whStart: number, whEnd: number, end: number): number {
+  const wh = raw.slice(whStart, whEnd).trim();
+  if (!/^(?:what|which|whose|(?:to|under|in|into|from|on|at|by|for|with|of|during|between|about)\s+(?:what|which))$/i.test(wh)) return whEnd;
+  const noun = /^\s+([\p{L}-]{3,})(?=(?:\s*\([^)]{1,30}\))?\s+(?:is|are|was|were|did|does|do|has|have|had|can|could|would|should|will|might|may|must)\b)/iu.exec(raw.slice(whEnd, end));
+  return noun ? whEnd + noun[0].length : whEnd;
 }
 
 const YES_NO = /^(?:((?:At|In|On|After|Before|During|From|By|Given|Based on|According to|Having|Throughout|Towards)\b[^?]{2,60}?),?\s+)?(do|does|did|is|are|was|were|can|could|would|should|has|have|had|will)\s+(?=\S)/i;
@@ -714,10 +732,11 @@ function buildUnit(
     let aEnd = actionTail(raw, cmd.end, end, cmd.match.replace(/^(?:briefly|clearly|carefully)\s+/i, '').split(/\s+/)[0]);
     // A question word from the lexicon takes its full printed form:
     // "How many", "What did", "Which".
-    if (/^(?:what|which|how|why|where|when|who)$/i.test(cmd.match.trim())) {
+    if (/^(?:(?:at|in|by|for|to|from|on|with|under)\s+)?(?:what|which|how|why|where|when|who)$/i.test(cmd.match.trim())) {
       const head = raw.slice(cur, end).toLowerCase();
       const wh = WH_FORMS.find(f => head.startsWith(f) && !/[\p{L}]/u.test(head[f.length] ?? ' '));
       if (wh && cur + wh.length > aEnd) aEnd = cur + wh.length;
+      aEnd = whNounEnd(raw, cur, aEnd, end);
     }
     action = spanOf(from, raw, cur, aEnd);
     actionKey = keyFor(raw.slice(cur, aEnd), raw.slice(aEnd, end));
@@ -779,7 +798,7 @@ function buildUnit(
     const prepWh = /^(?:to|under|in|into|from|on|at|by|for|with|of|during|between|about|against|through|towards|within|across|after|before|since|until)\s+(?:what|which|whom|whose|how (?:many|much|long|far|often))(?![\p{L}])/iu.exec(raw.slice(cur, end));
     const wh = prepWh ? prepWh[0].toLowerCase() : WH_FORMS.find(f => head.startsWith(f) && !/[\p{L}]/u.test(head[f.length] ?? ' '));
     if (!action && (wh && /\?\s*$/.test(raw.slice(cur, end)) || (wh && /^(?:what|which|how|why|where|when|who|to what|in what|at what|by how|under which|in which)/.test(wh)))) {
-      const aEnd = cur + wh!.length;
+      const aEnd = whNounEnd(raw, cur, cur + wh!.length, end);
       action = spanOf(from, raw, cur, aEnd);
       actionKey = keyFor(raw.slice(cur, aEnd), raw.slice(aEnd, end));
       means = MEANS[actionKey] ?? MEANS['wh-plain'];
@@ -828,6 +847,13 @@ function buildUnit(
     const sp = spanOf(from, raw, s0, s0 + bracket[1].length);
     if (sp) conditions.push(sp);
     cur += bracket[0].length;
+  }
+  // "at what speed (in mm/year) is it moving": the bracketed unit is a limit.
+  const unitParen = /^\((?:in|to|correct to|as)\s[^)]{1,30}\)\s*/i.exec(raw.slice(cur, end));
+  if (unitParen) {
+    const sp = spanOf(from, raw, cur, cur + unitParen[0].trimEnd().length);
+    if (sp) conditions.push(sp);
+    cur += unitParen[0].length;
   }
   const manner = MANNER.exec(raw.slice(cur, end));
   if (manner && cur + manner[0].length < end - 3) {
@@ -1766,8 +1792,12 @@ const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 export function keyPartSummary(unit: KPUnit): string {
   if (unit.flags.includes('as-printed')) return '';
   const about = unit.focus ? [unit.focus.display, ...(unit.focusMore ?? []).map(f => f.display)].join(' … ') : '';
+  // "two pyroclastic materials" · "pyroclastic materials that are …": the
+  // noun is said once in a one-line summary.
+  const countNoun = unit.count?.display.replace(/^(?:any|at least)?\s*\S+\s*/i, '') ?? '';
+  const repeats = countNoun && about.toLowerCase().startsWith(countNoun.toLowerCase());
   const bits = [
-    unit.count?.display,
+    repeats ? undefined : unit.count?.display,
     about,
     ...unit.conditions.map(c => c.display),
   ].filter(Boolean) as string[];

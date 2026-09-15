@@ -477,7 +477,7 @@ describe('the question comes first and stays', () => {
     expect(within(parts).getByText('Do')).toBeInTheDocument();
     expect(within(parts).getByText('State')).toBeInTheDocument();
     expect(within(parts).getByText('How many')).toBeInTheDocument();
-    expect(within(parts).getByText('one')).toBeInTheDocument();
+    expect(within(parts).getByText('one feature')).toBeInTheDocument();
     expect(within(parts).queryByText('Only counts if')).not.toBeInTheDocument();
     expect(within(parts).queryByText('Use')).not.toBeInTheDocument();
 

@@ -121,7 +121,7 @@ const KeyPartUnit: React.FC<{ unit: KPUnit; partner?: KPUnit }> = ({ unit, partn
       <dl className="mb-wi-kp-slots">
         <div>
           <dt>Do</dt>
-          <dd><strong className={verb.length > 56 ? 'mb-wi-kp-long' : undefined}>{verb}</strong>{unit.means && <span>{unit.means}</span>}</dd>
+          <dd><strong className={verb.length > 56 ? 'mb-wi-kp-long' : undefined}>{verb.charAt(0).toUpperCase() + verb.slice(1)}</strong>{unit.means && <span>{unit.means}</span>}</dd>
         </div>
         {unit.item && <div><dt>Item</dt><dd className="mb-wi-kp-item">{unit.item.display}</dd></div>}
         {unit.count && <div><dt>How many</dt><dd>{unit.count.display}</dd></div>}
