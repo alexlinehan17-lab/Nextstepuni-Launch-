@@ -729,6 +729,10 @@ export interface CommandMatch {
 }
 
 const NOUN_LIKE_COMMANDS = new Set(['label', 'list', 'name', 'outline', 'state']);
+const START_ONLY_COMMANDS = new Set([
+  'include', 'add', 'change', 'modify', 'extend', 'update', 'amend', 'edit', 'redraw', 'reproduce',
+  'tell', 'relate', 'recount', 'narrate', 'copy', 'review', 'reflect on', 'multiply out', 'point out',
+]);
 const QUESTION_COMMANDS = new Set([
   'how', 'how can', 'how does', 'how far', 'how would', 'in which', 'through which', 'to what extent',
   'to which', 'under what', 'what', 'what could', 'what does', 'what distinguishes', 'what is', 'what is meant by', 'what term',
@@ -819,6 +823,8 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
     && /^\s+(?:agency|body|broadcaster|company|enterprise|examinations?|ownership|pension|sector|services?)\b/i.test(after)
   ) return false;
   if (NOUN_LIKE_COMMANDS.has(key) && /^\s*:/.test(after)) return false;
+  // "LIST A: ◆ CHRISTIANITY …": a printed heading, not an instruction.
+  if (NOUN_LIKE_COMMANDS.has(key) && (/^\s+[A-Z0-9]\s*:/.test(after) || (match.length > 2 && match === match.toUpperCase()))) return false;
 
   // A word boundary also exists inside a hyphenated compound. “solid-state”
   // is question content, not a new instruction beginning after a dash.
@@ -843,6 +849,11 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
     if (/^(?:as|if|when)\b[^,]{0,220},\s*$/i.test(prefix)) return true;
     return false;
   }
+
+  // Everyday verbs the paper also uses in prose ("… and include the element")
+  // are instructions only when they open the sentence.
+  if (START_ONLY_COMMANDS.has(key) && prefix
+    && !/^(?:briefly|clearly|carefully|neatly|fully|now|then|also|finally|hence)$/i.test(prefix)) return false;
 
   // Imperatives are accepted at the start of a printed sentence/part, after a
   // lead-in comma, or as an explicitly joined second instruction. Dictionary
