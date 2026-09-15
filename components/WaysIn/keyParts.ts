@@ -160,8 +160,8 @@ const MEANS: Record<string, string> = {
   'wh-developed': 'Answer it directly, then develop it — a reason or piece of evidence for each point.',
   'account-of': 'Say what happened or what it is, in order — develop each point.',
   'give-details': 'Specific points of information — one per detail.',
-  'yes-no': 'Decide yes or no, then say why.',
-  'either-or': 'Pick one of the options it gives, then say why.',
+  'yes-no': 'Decide yes or no.',
+  'either-or': 'Pick one of the options it gives.',
   'true-false': 'Decide true or false for each — no explanation needed.',
   construct: 'Find it by construction on the drawing — leave the construction lines showing.',
   choice: 'Pick the one option that answers it.',
@@ -197,6 +197,7 @@ const keyFor = (surface: string, following: string): string => {
   if (/^when\b/.test(bare)) return 'wh-when';
   if (/^why\b/.test(bare)) return 'wh-why';
   if (/^how (?:does|did|do|can|could|would|is|are|was|were|has|have)$/.test(bare)) return 'explain-how';
+  if (/^how (?:many|much)$/.test(bare) && /^(?:moles?|grams?|kilograms?|g|kg|joules?|kj|j|litres?|cm3|cm³|dm3|dm³|atoms?|molecules?|electrons?|protons?|neutrons?|ions?|energy|heat|work|charge|current|time|mass|volume|water|metres?|seconds?|hours?|minutes?|years|days|euro|money|interest|tax|profit)\b/i.test(next)) return 'calculate';
   if (/^(?:what|which|how|who|whose|whom)\b/.test(bare)) return 'wh-plain';
   if (/^(?:to|under|in|from|on|at|by|for|with|of|during)\s+(?:what|which|whom|whose|how)\b/.test(bare)) return 'wh-plain';
   if (s.startsWith('briefly describe') || /^describe briefly/.test(s)) return 'brief-describe';
@@ -226,7 +227,7 @@ const keyFor = (surface: string, following: string): string => {
   return map[verb] ?? 'other';
 };
 
-const QUANTITY = /^(?:(?:the|an?|its|their|his|her)\s+)?(?:(?:exact|approximate|total|average|mean|maximum|minimum|new|final|initial|resultant|percentage|equivalent|effective)\s+)*(?:values?|area|volume|length|distance|displacement|speed|velocity|time|mass|weight|force|angle|coordinates?|equations?|expression|roots?|derivative|gradient|slope|range|sum|product|probability|mean|median|mode|number|cost|price|rate|percentage|ratio|height|radius|diameter|perimeter|circumference|magnitude|acceleration|energy|power|resistance|current|voltage|concentration|moles?|yield|limit|integral|point|points|intersection|inverse|period|frequency|wavelength|work|momentum|tension|pressure|density|temperature|charge|capacitance|efficiency|profit|loss|interest|tax|amount|size|measure|dimensions?|centre|center|image|solution|solutions|matrix|determinant|modulus|argument|domain|breakeven|margin|elasticity|multiplier|output|surplus)\b|^[a-zA-Zθφλμ](?:\s*[=,)]|\s*$|\s+(?:and|if|when|such|in terms)\b)|^[\d(]|^\|/i;
+const QUANTITY = /^(?:(?:the|an?|its|their|his|her)\s+)?(?:[\p{L}-]+\s+){0,2}(?:values?|area|volume|length|distance|displacement|speed|velocity|time|mass|weight|force|angle|coordinates?|equations?|expression|roots?|derivative|gradient|slope|range|sum|product|probability|mean|median|mode|number|cost|price|rate|percentage|ratio|height|radius|diameter|perimeter|circumference|magnitude|acceleration|energy|power|resistance|current|voltage|concentration|moles?|yield|limit|integral|point|points|intersection|inverse|period|frequency|wavelength|work|momentum|tension|pressure|density|temperature|charge|capacitance|efficiency|profit|loss|interest|tax|amount|size|measure|dimensions?|centre|center|image|solution|solutions|matrix|determinant|modulus|argument|domain|breakeven|margin|elasticity|multiplier|output|surplus)\b|^[a-zA-Zθφλμ](?:\s*[=,)]|\s*$|\s+(?:and|if|when|such|in terms)\b)|^[\d(]|^\|/iu;
 
 const CALC_KEYS = new Set(['calculate', 'solve', 'convert', 'estimate']);
 
@@ -264,12 +265,19 @@ const ENGLISH_FUNCTION = new Set([
   'have', 'each', 'one', 'two', 'three', 'answer', 'explain', 'describe', 'name', 'state', 'give', 'identify',
   'outline', 'discuss', 'evaluate', 'calculate', 'list', 'draw', 'compare', 'suggest', 'write', 'following',
   'above', 'below', 'text', 'question', 'refer', 'reference', 'why', 'where', 'when', 'who', 'does', 'do', 'did',
+  'between', 'during', 'about', 'into', 'than', 'these', 'those', 'their', 'there', 'they', 'his', 'her', 'not', 'can',
+  'will', 'would', 'should', 'could', 'may', 'must', 'been', 'all', 'some', 'other', 'another', 'within', 'after',
+  'before', 'any', 'distinguish', 'define', 'difference', 'differences', 'reason', 'reasons', 'example', 'examples',
+  'using', 'use', 'term', 'terms', 'effect', 'effects', 'role', 'main',
 ]);
 
 function englishRatio(text: string): { words: number; ratio: number } {
   const words = text.toLowerCase().match(/[\p{L}']+/gu) ?? [];
   if (!words.length) return { words: 0, ratio: 0 };
-  const hits = words.filter(w => ENGLISH_FUNCTION.has(w)).length;
+  // Slovak, Hungarian and Irish use "a" too; with their letters present it
+  // is not evidence of English.
+  const foreignLetters = /[à-öø-ÿĀ-ſ]/i.test(text.replace(/[‘’“”–—]/g, ''));
+  const hits = words.filter(w => ENGLISH_FUNCTION.has(w) && !(foreignLetters && w === 'a')).length;
   return { words: words.length, ratio: hits / words.length };
 }
 
@@ -290,11 +298,11 @@ const OPENS_TASK = /^\s+(?:Give|Write|Find|Calculate|Explain|Describe|Name|State
 function sentences(raw: string, start: number, end: number): Piece[] {
   const out: Piece[] = [];
   let s = start;
-  const re = /[.?!](?=\s+[\p{Lu}(“"‘\d•◆▪])|\n{1,}/gu;
+  const re = /[.?!]\)?(?=\s+[\p{Lu}(“"‘\d•◆▪])|\n{1,}/gu;
   re.lastIndex = start;
   let m: RegExpExecArray | null;
   while ((m = re.exec(raw)) && m.index < end) {
-    const cut = m[0] === '\n' || m[0].startsWith('\n') ? m.index : m.index + 1;
+    const cut = m[0] === '\n' || m[0].startsWith('\n') ? m.index : m.index + m[0].length;
     if (m[0][0] === '\n' && m[0].length === 1) {
       const before = raw.slice(s, m.index).trimEnd();
       const after = raw.slice(m.index + 1, end).trimStart();
@@ -454,8 +462,10 @@ const PARTICIPLE_BEFORE = /\b(?:found|located|situated|grown|used|made|produced|
 // "the passage"), and nouns that only do with a pointer: "the model shown"
 // is material, "the model of the atom" is an idea; "the figure" in an art
 // question is a human figure.
-const STRONG_MATERIAL = 'diagrams?|tables?|graphs?|pie charts?|charts?|photographs?|photos?|pictures?|images?|word bank|article|extracts?|passages?|texts?|maps?|cartoons?|circuits?(?: diagrams?)?|drawings?|poem|poster|advertisement|pseudo-code|flowchart|timeline|documents?|sources?|scheduling network|cashflow forecast|parts list|case study|quotation|recipe|menu|results table|bar chart|line graph|notice board';
-const WEAK_MATERIAL = 'list|models?|figures?|sketch(?:es)?|data|information|results|code|algorithm|equation|network|forecast|situation|scenario|statement|label';
+const STRONG_MATERIAL = 'diagrams?|tables?|graphs?|pie charts?|charts?|photographs?|photos?|word bank|article|extracts?|passages?|texts?|maps?|cartoons?|circuits?(?: diagrams?)?|drawings?|poem|poster|advertisement|pseudo-code|flowchart|timeline|documents?|scheduling network|cashflow forecast|parts list|case study|quotation|recipe|menu|results table|bar chart|line graph|notice board';
+// "the image distance v", "the source of several gases", "these images" in a
+// poem: material only with a pointer ("the image below").
+const WEAK_MATERIAL = 'list|models?|figures?|sketch(?:es)?|data|information|results|code|algorithm|equation|network|forecast|situation|scenario|statement|label|images?|pictures?|sources?';
 const MATERIAL_POINTER = '(?:\\s+(?:below|above|shown|provided|supplied|opposite|overleaf|on the next page))';
 const MATERIAL_RE = new RegExp(
   `\\b(?:the|this|these|each)\\s+(?:(?:following|above|below|accompanying|attached|given|printed)\\s+(?:labelled\\s+|unlabelled\\s+)?(?:${STRONG_MATERIAL}|${WEAK_MATERIAL})${MATERIAL_POINTER}?|(?:labelled\\s+|unlabelled\\s+)?(?:${STRONG_MATERIAL})${MATERIAL_POINTER}?|(?:${WEAK_MATERIAL})${MATERIAL_POINTER})\\b`,
@@ -470,14 +480,14 @@ const notMaterial = (text: string, index: number, match: string) =>
   // The grid the answers go in: "Fill out the table".
   || /\b(?:fill (?:out|in)|complete|copy)\s+$/i.test(text.slice(Math.max(0, index - 14), index));
 const NAMED_RE = /\b(?:Fig\.?\s*[A-Z]?-?\d+|Figure\s+[A-Z0-9]+|(?:Document|Source|Extract|Image|Photograph|Table|Text|TEXT|Graph|Diagram|Map)\s+[A-Z0-9]+(?:\s+on Paper\s+[A-Z])?)\b/g;
-const LOCATOR_RE = /\((?:para(?:graph)?|Par\.|section|lines?|Alt|Part)\s*[\d\s–-]+\)|\bAlt\s+\d+\b|\b(?:paragraph|para\.?|Par\.|section)\s+\d+\b|\blines?\s+\d+\s*[–-]\s*\d+\b/gi;
+const LOCATOR_RE = /\((?:para(?:graph)?|Par\.|section|lines?|Alt|Part|Abschnitt|Absatz|Zeile|párrafo|parágrafo|paragraphe|paragrafo|sezione|dalis|część|akapit|línea|ligne|riga|kappale|odsek|bekezdés)\s*[\d\s–-]+\)|\(\s*\d+\s+(?:dalis|bekezdés|odsek|kappale|rész)\s*\)|\bAlt\s+\d+\b|\b(?:paragraph|para\.?|Par\.|section)\s+\d+\b|\blines?\s+\d+\s*[–-]\s*\d+\b/gi;
 const OPTIONS_RE = /\[[^\]]*\/[^\]]*\]/g;
 const VISUAL = /diagram|graph|chart|photo|picture|image|map|cartoon|circuit|figure|drawing|sketch|model|Fig/i;
 
 const TAIL_UNIT = /^(?:(?:Explain|Justify) your (?:answer|choice)|Give (?:a )?reasons? for your (?:answer|choice)|Support your answer|Illustrate your answer)/i;
 // A sentence that says how the answer must be given, not what to answer. It
 // limits the task before it ("Give your answer in its simplest form").
-const TAIL_CONDITION = /^(?:Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b|Note\s*:|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
+const TAIL_CONDITION = /^(?:Put a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b|Note\s*:|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
 // "Name two." / "Give four details." after a question: how many, for that question.
 const COUNT_SENTENCE = /^(?:Give|Name|State|List|Mention|Identify|Write down)\s+(?:(?:any|at least)\s+)?(one|two|three|four|five|six)(?:\s+([\p{L}]+(?: of information)?))?\s*[.?!]?\s*$/iu;
 const DETAILS_SENTENCE = /^Give (?:full |more )?details\s*[.?!]?\s*$/i;
@@ -498,13 +508,13 @@ function commandsIn(raw: string, start: number, end: number): CommandMatch[] {
 }
 
 // A second instruction the shared lexicon misses: "… and include one example".
-const SECOND_VERB = /(?:,\s*and|\s(?:and|then))\s+(include|label|annotate|give|state|name|list|suggest|justify|identify|draw|sketch|show|calculate|find|write|comment|discuss|explain|describe|outline)(?![\p{L}])|,\s*and\s+(what|how|why|where|when|who)(?![\p{L}])|,\s+(?:briefly\s+|clearly\s+)?(outline|explain|describe|identify|discuss|suggest|justify|evaluate|assess|analyse|state)(?=\s+(?:the|their|its|his|her|how|why|what|which|a|an|one|two|three)\b)|\s+and\s+((?:at|in|by|for|to|from|on|with|under)\s+what|how (?:many|much|long|far|fast|often))(?![\p{L}])/giu;
+const SECOND_VERB = /(?:,\s*and|\s(?:and|then))\s+(include|label|annotate|give|state|name|list|suggest|justify|identify|draw|sketch|show|calculate|find|write|comment|discuss|explain|describe|outline)(?![\p{L}])|,\s*and\s+(what|how|why|where|when|who)(?![\p{L}])|,\s+(?:briefly\s+|clearly\s+)?(outline|explain|describe|identify|discuss|suggest|justify|evaluate|assess|analyse|state)(?=\s+(?:the|their|its|his|her|how|why|what|which|a|an|one|two|three)\b)|,\s+(?:briefly|clearly)\s+(describe|explain|outline|discuss|state|identify)(?![\p{L}])|,?\s+and,?\s+hence,?\s+(find|show|prove|calculate|verify|deduce|write|express|solve|evaluate|determine|sketch|draw)(?![\p{L}])|\s+and\s+((?:at|in|by|for|to|from|on|with|under)\s+what|how (?:many|much|long|far|fast|often))(?![\p{L}])/giu;
 
 /** Split a task sentence into one clause per command ("Name … and explain …"). */
 function clausesOf(raw: string, s: Piece): Clause[] {
   const cmds = commandsIn(raw, s.start, s.end);
   for (const m of raw.slice(s.start, s.end).matchAll(SECOND_VERB)) {
-    const word = m[1] ?? m[2] ?? m[4] ?? m[3];
+    const word = m.slice(1).find(Boolean) as string;
     const index = s.start + (m.index ?? 0) + m[0].length - word.length;
     if (cmds.some(c => Math.abs(c.index - index) < 2)) continue;
     cmds.push({ demand: { surface: word, requiredAction: '', answerShape: '', commonTrap: '' }, index, end: index + word.length, match: word });
@@ -527,7 +537,7 @@ function clausesOf(raw: string, s: Piece): Clause[] {
     // Keep "briefly"/"clearly" with the command it modifies.
     const adverb = /(?:briefly|clearly)\s+$/i.exec(raw.slice(cmds[i - 1].end, cmd.index));
     const cut = adverb ? cmd.index - adverb[0].length : cmd.index;
-    const connector = /(?:,\s*(?:and\s+)?|\s+and\s+|\s+then\s+)$/i.exec(raw.slice(cursor, cut));
+    const connector = /(?:,?\s*and,?\s+hence,?\s*|,?\s+hence,?\s*|,\s*(?:and\s+)?|\s+and\s+|\s+then\s+)$/i.exec(raw.slice(cursor, cut));
     out.push({ start: cursor, end: connector ? cut - connector[0].length : cut, command: null });
     cursor = cut;
   });
@@ -594,7 +604,7 @@ function conditionEnd(raw: string, from: number, end: number, trigger = ''): num
     // words that sit inside a limit ("when one character was either …").
     for (const t of triggersIn(raw, from, cut)) {
       const i = t.index ?? 0;
-      if (i <= 3 || depthAt(rest, i) > 0 || /^(?:either|you think|you consider|in english|in irish)$/i.test(t[0])) continue;
+      if (i <= 3 || depthAt(rest, i) > 0 || /^(?:either|you think|you consider|in english|in irish|required to|required for)$/i.test(t[0])) continue;
       cut = from + i;
       break;
     }
@@ -644,13 +654,19 @@ const HEAD_STOP = /^(?:of|in|on|for|to|from|with|by|at|that|which|who|whose|wher
 /** The noun a counted plan row is named after: "three key areas …" → area. */
 function headNoun(focus: KPSpan | null): string | undefined {
   if (!focus) return undefined;
-  const words = focus.display.replace(/[(),;:]/g, ' ').split(/\s+/).filter(Boolean)
-    .filter(w => !/^(?:the|a|an|this|these|those|following|each|any|one|two|three|four|five|six|of|your|its|their)$/i.test(w));
-  let head: string | undefined;
+  const words = focus.display.split(/[,;:(]/)[0].split(/\s+/).filter(Boolean);
+  // Step over the words that open the phrase: "the following", "each of the".
+  while (words.length && /^(?:the|a|an|this|these|those|following|each|any|one|two|three|four|five|six|of|your|its|their)$/i.test(words[0])) words.shift();
+  const window: string[] = [];
   for (const w of words) {
-    if (HEAD_STOP.test(w) || (head && /(?:ed|ing)$/i.test(w))) break;
-    head = w;
+    if (HEAD_STOP.test(w) || /^(?:a|an|the|this|that|these|those|each|every|some|may|might|can|could|will|would|should|must|is|are|was|were|has|have|had|do|does|did)$/i.test(w)) break;
+    window.push(w);
+    if (window.length >= 5) break;
   }
+  // "sport related scalar quantities mentioned …" → quantity; "one safety
+  // benefit" → benefit.
+  const plural = [...window].reverse().find(w => /[^s]s$|ies$|sses$/i.test(w) && !/^(?:is|was|has|this|its|as|us|thus|always|perhaps)$/i.test(w));
+  const head = plural ?? [...window].reverse().find(w => !/(?:ed|ing)$/i.test(w));
   if (!head || !/^[\p{Ll}-]{3,18}$/u.test(head)) return undefined;
   return singular(head);
 }
@@ -804,7 +820,7 @@ function buildUnit(
       cur = aEnd;
     }
     const head = raw.slice(cur, end).toLowerCase();
-    const prepWh = /^(?:to|under|in|into|from|on|at|by|for|with|of|during|between|about|against|through|towards|within|across|after|before|since|until)\s+(?:what|which|whom|whose|how (?:many|much|long|far|often))(?![\p{L}])/iu.exec(raw.slice(cur, end));
+    const prepWh = /^(?:to|under|in|into|from|on|at|by|for|with|of|during|between|about|against|through|towards|within|across|after|before|since|until)\s+(?:what|which|whom|whose|where|when|how (?:many|much|long|far|often))(?![\p{L}])/iu.exec(raw.slice(cur, end));
     const wh = prepWh ? prepWh[0].toLowerCase() : WH_FORMS.find(f => head.startsWith(f) && !/[\p{L}]/u.test(head[f.length] ?? ' '));
     if (!action && (wh && /\?\s*$/.test(raw.slice(cur, end)) || (wh && /^(?:what|which|how|why|where|when|who|to what|in what|at what|by how|under which|in which)/.test(wh)))) {
       const aEnd = whNounEnd(raw, cur, cur + wh!.length, end);
@@ -867,6 +883,7 @@ function buildUnit(
     if (sp) conditions.push(sp);
     cur += unitParen[0].length;
   }
+  if (!bracket) { const lone = /^,\s*/.exec(raw.slice(cur, end)); if (lone) cur += lone[0].length; }
   const manner = MANNER.exec(raw.slice(cur, end));
   if (manner && cur + manner[0].length < end - 3) {
     const sp = spanOf(from, raw, cur, cur + manner[0].length);
@@ -911,6 +928,8 @@ function buildUnit(
         const stop = /\s+(?:with|to|into|in|on|from|for|by|that|which)\s+|,(?=\s)(?!\s*[A-Z0-9](?![\p{L}]))|[;:?.](?=\s|$)/iu.exec(tail.replace(/^\s+of\s+/, m => ' '.repeat(m.length)));
         const cEnd = stop ? phraseEnd + stop.index : end;
         count = spanOf(from, raw, cur, cEnd);
+        const inner = /\b(two|three|four|five|six|seven|eight)\s+([\p{L}-]+s)\b/iu.exec(raw.slice(phraseEnd, cEnd));
+        if (inner) { countValue = NUMBER_WORDS[inner[1].toLowerCase()]; countNoun = singular(inner[2]); }
         cur = cEnd;
         const prep = /^\s+(?:with|to|into|in|on|from|for|by)\s+/i.exec(raw.slice(cur, end));
         if (prep) cur += prep[0].length;
@@ -918,7 +937,7 @@ function buildUnit(
         // "three key areas, other than …": How many is the number with its
         // noun phrase, and About starts at the noun phrase too, so neither
         // slot tears an adjective from its noun.
-        const np = /^(?:each|all|both)$/.test(word) ? null : /^((?:\s+[\p{L}-]+){1,4}?)(?=\s+(?:of|in|on|for|to|from|with|by|at|that|which|who|whose|where|when|between|during|used|found|made|given|shown|than|as|about|into|within|across|you|your|and|or)\b|\s*[,.;:?!(]|\s*$)/iu.exec(raw.slice(cur + c[1].length, end));
+        const np = /^(?:each|all|both)$/.test(word) ? null : /^((?:\s+[\p{L}-]+){1,4}?)(?=\s+(?:of|in|on|for|to|from|with|by|at|that|which|who|whose|where|when|between|during|used|found|made|given|shown|than|as|about|into|within|across|you|your|and|or|a|an|the|this|that|these|those|each|every|some|may|might|can|could|will|would|should|must|is|are|was|were|has|have|had|do|does|did)\b|\s*[,.;:?!(]|\s*$)/iu.exec(raw.slice(cur + c[1].length, end));
         if (np && !unitAhead) {
           count = spanOf(from, raw, cur, cur + c[1].length + np[1].length);
           countNoun = singular(np[1].trim().split(/\s+/).pop() ?? '');
@@ -1020,6 +1039,16 @@ function buildUnit(
     const sp = spanOf(from, raw, at, conditionEnd(raw, tEnd, end, t[0]));
     if (sp && !emptyLimit(sp, t[0]) && !conditions.some(x => x.display === sp.display)) conditions.push(sp);
   }
+  // "if R1 = 10 kΩ, R2 = 60 kΩ and C = 10 µF": in a calculation, a clause
+  // that states values is what you are given, not a limit.
+  const valueClause = (t: string) => /[\p{L}\p{N}₀-₉)\]]\s*=\s*[-−]?[\d(]/u.test(t);
+  if (CALC_KEYS.has(actionKey) || /^(?:prove|derive)$/.test(actionKey)) {
+    for (let i = conditions.length - 1; i >= 0; i -= 1) {
+      if (!valueClause(conditions[i].text)) continue;
+      const [c0] = conditions.splice(i, 1);
+      openerUse.push({ ...c0, kind: 'given' });
+    }
+  }
   // Keep a limit whole when the paper runs it on: "a European region (not in
   // Ireland) that you have studied".
   conditions.sort((a, b) => (a.from === b.from ? a.start - b.start : a.from === 'stem' ? -1 : 1));
@@ -1038,7 +1067,12 @@ function buildUnit(
     // "any two of the following stages": a choice from a printed list.
     const ofList = /(?<![\p{L}])((?:any\s+)?(one|two|three|four|five|six))\s+of\s+the\s+following(?=(?:\s+([\p{L}-]+))?)/iu.exec(clauseText);
     const numbered = /\b(?:items?|parts?|statements?|questions?|sentences?)\s+(\d)\s*(?:to|–|-)\s*(\d)\b/.exec(clauseText);
-    if (ofList) {
+    const eachOfN = /\beach of the (two|three|four|five|six|seven|eight) ([\p{L}-]+s)\b/iu.exec(clauseText);
+    if (eachOfN) {
+      count = spanOf(from, raw, clause.start + eachOfN.index, clause.start + eachOfN.index + eachOfN[0].length);
+      countValue = NUMBER_WORDS[eachOfN[1].toLowerCase()];
+      countNoun = singular(eachOfN[2]);
+    } else if (ofList) {
       count = spanOf(from, raw, clause.start + ofList.index, clause.start + ofList.index + ofList[0].length);
       countValue = NUMBER_WORDS[ofList[2].toLowerCase()];
       countNoun = ofList[3] && /s$/.test(ofList[3]) ? singular(ofList[3]) : 'choice';
@@ -1067,7 +1101,7 @@ function buildUnit(
   }
 
   // USE: supplied material named in the clause.
-  const use: KPUse[] = [...openerUse];
+  const use: KPUse[] = openerUse;
   const addUse = (s: number, e: number, kind: KPUseKind) => {
     const sp = spanOf(from, raw, s, e);
     if (!sp || use.some(u => (s < u.end && e > u.start))) return;
@@ -1104,7 +1138,8 @@ function buildUnit(
           && !/^(?:and|or|then|in your answer|your answer|in|of|on|to|the|a|an)$/i.test(gap.display)
           && !TAIL_UNIT.test(gap.display) && !commandMatches(gap.display).some(m => m.index === 0)
           && !/^(?:in relation|with reference|in terms|referring|in the context|regarding|concerning)(?: to| of)?$/i.test(gap.display)) {
-          focusMore.push(gap);
+          if (valueClause(gap.text) && (CALC_KEYS.has(actionKey) || /^(?:prove|derive)$/.test(actionKey))) use.push({ ...gap, kind: 'given' });
+          else focusMore.push(gap);
         }
       }
       p = Math.max(p, e);
@@ -1114,13 +1149,24 @@ function buildUnit(
     // shown is printed after the colon.
     if (colon >= 0 && /^(?:prove|derive|calculate|solve)$/.test(actionKey)) {
       const eq = spanOf(from, raw, focus.end + colon + 1, end);
-      if (eq && /=/.test(eq.display) && eq.display.length < 120) focusMore.push(eq);
+      if (eq && /=/.test(eq.display) && eq.display.length < 120) {
+        if (/^(?:prove|derive)$/.test(actionKey)) focusMore.push(eq);
+        else if (!use.some(x => x.start === eq.start)) use.push({ ...eq, kind: 'given' });
+      }
     }
   }
 
   // A comparison's two sides.
   let sides: [KPSpan, KPSpan] | undefined;
-  if (focus && /^(?:compare|contrast|compare-contrast|distinguish)$/.test(actionKey)) {
+
+  const both = focus && /^(?:compare|contrast|compare-contrast|distinguish)$/.test(actionKey) ? /\bboth\s+(.+?)\s+and\s+(.+)$/i.exec(focus.text) : null;
+  if (focus && both) {
+    const aStart = focus.start + both.index + both[0].indexOf(both[1]);
+    const bStart = focus.start + both.index + both[0].lastIndexOf(both[2]);
+    const a = spanOf(from, raw, aStart, aStart + both[1].length);
+    const b = spanOf(from, raw, bStart, bStart + both[2].length);
+    if (a && b) sides = [a, b];
+  } else if (focus && /^(?:compare|contrast|compare-contrast|distinguish)$/.test(actionKey)) {
     const split = /\s+(?:and|with|from|to)\s+(?!the same\b)/i.exec(focus.text);
     const last = split ? focus.text.lastIndexOf(split[0]) : -1;
     if (last > 0) {
@@ -1208,6 +1254,7 @@ function stemContextPieces(stem: string, pieces: Piece[]): { material: Piece[]; 
 const singular = (noun: string) => {
   const w = noun.toLowerCase().replace(/\s+of (?:evidence|information)$/, '');
   if (/ies$/.test(w)) return w.replace(/ies$/, 'y');
+  if (/sses$/.test(w)) return w.replace(/es$/, '');
   if (/(?:ss|us|is)$/.test(w)) return w;
   if (/(?:ch|sh|x)es$/.test(w)) return w.replace(/es$/, '');
   return w.replace(/s$/, '');
@@ -1222,6 +1269,12 @@ const firstSentence = (value: string) => {
 // Givens for calculation units (G1–G5).
 // ---------------------------------------------------------------------------
 
+// Units the shared data list lacks: "a half-life of 8 days", "5.4 g", "10 kΩ".
+const GIVEN_TOKEN = /(?:€|£|\$)?\b\d+(?:[.,]\d+)?(?:\s*(?:days?|years?|weeks?|g|Hz|kHz|MHz|kΩ|MΩ|Ω|µF|μF|nF|pF|nm|µm|μm|kPa|kJ|kW|MW|mL|ml|L|dB|rpm|M|K|m|s))\b|(?:€|£|\$)\s?\d[\d,]*(?:\.\d+)?/g;
+const hasGivenValue = (text: string) => [...text.matchAll(DATA_TOKEN)].some(t => MEANINGFUL_DATA_UNIT.test(t[0]))
+  || new RegExp(GIVEN_TOKEN.source).test(text) || /[\p{L}₀-₉)\]]\s*=\s*[-−]?\d/u.test(text)
+  || /\bis equal to\b|\bwas found to be\b|\b(?:value|rate|price|cost|mass|length|number|total|amount|base|concentration|temperature)\s+(?:is|was|of)\s+[-−€£$]?\d/i.test(text);
+
 function givensFor(unit: KPUnit, raws: Array<{ from: 'q' | 'stem'; raw: string; pieces: Piece[] }>): KPUse[] {
   const out: KPUse[] = [];
   // The quantity asked for is the noun before the first preposition:
@@ -1234,9 +1287,10 @@ function givensFor(unit: KPUnit, raws: Array<{ from: 'q' | 'stem'; raw: string; 
       if (unit.action && p.start <= unit.action.start && p.end >= unit.action.end && from === unit.action.from) {
         // The task sentence itself: only a value stated inside it counts.
       }
-      const tokens = [...text.matchAll(DATA_TOKEN)].filter(t => MEANINGFUL_DATA_UNIT.test(t[0]));
-      const hasEquals = /[\p{L}₀-₉)\]]\s*=\s*[-−]?\d/u.test(text) || /\bis equal to\b|\bwas found to be\b/i.test(text);
-      if (!tokens.length && !hasEquals) continue;
+      GIVEN_TOKEN.lastIndex = 0;
+      const tokens = [...text.matchAll(DATA_TOKEN)].filter(t => MEANINGFUL_DATA_UNIT.test(t[0])).concat([...text.matchAll(GIVEN_TOKEN)]);
+      GIVEN_TOKEN.lastIndex = 0;
+      if (!tokens.length && !hasGivenValue(text)) continue;
       // G4: never attach a given about the very quantity being asked for.
       if (head && new RegExp(`\\b${head}`, 'i').test(text) && tokens.length <= 1) continue;
       const clauses = text.split(/(?<=[,;])\s+(?=\S)/);
@@ -1244,8 +1298,9 @@ function givensFor(unit: KPUnit, raws: Array<{ from: 'q' | 'stem'; raw: string; 
       for (const cl of clauses) {
         const s = raw.indexOf(cl, offset);
         offset = s + cl.length;
-        const hasValue = [...cl.matchAll(DATA_TOKEN)].some(t => MEANINGFUL_DATA_UNIT.test(t[0]))
-          || /[\p{L}₀-₉)\]]\s*=\s*[-−]?\d/u.test(cl) || /\bis equal to\b|\bwas found to be\b/i.test(cl);
+        GIVEN_TOKEN.lastIndex = 0;
+        const hasValue = hasGivenValue(cl);
+        GIVEN_TOKEN.lastIndex = 0;
         if (!hasValue) continue;
         if (commandMatches(cl).some(m => m.index < 3)) {
           // A value inside the command sentence: take only "<value> <unit>" tokens.
@@ -1269,7 +1324,7 @@ function givensFor(unit: KPUnit, raws: Array<{ from: 'q' | 'stem'; raw: string; 
 // Printed lists: "the following X: A; B", bullets, one per line.
 // ---------------------------------------------------------------------------
 
-const LOCATOR_ONLY = /^\(?(?:para(?:graph)?|Par\.|section|lines?|Alt|Part)\s*[\d\s–-]+\)?$/i;
+const LOCATOR_ONLY = /^\(?(?:(?:para(?:graph)?|Par\.|section|lines?|Alt|Part|Abschnitt|Absatz|Zeile|párrafo|parágrafo|paragraphe|paragrafo|dalis|część|akapit|línea|ligne|riga)\s*[\d\s–-]+|\s*\d+\s+(?:dalis|bekezdés|odsek|kappale|rész)\s*)\)?$/i;
 
 /** The items of a printed list, each lifted. An instruction ends the list. */
 function listItems(raw: string, from: 'q' | 'stem', start: number, end: number, bySentence = false): KPSpan[] {
@@ -1316,6 +1371,10 @@ function listItems(raw: string, from: 'q' | 'stem', start: number, end: number, 
     if (sp.display.split(/\s+/).length > 6 && commandMatches(sp.display).some(m => m.index === 0)) break;
     items.push(sp);
   }
+  if (!strong && !bySentence && items.length === 1 && /[.?!]\s+\p{Lu}/u.test(body)) {
+    const bits = listItems(raw, from, start, end, true);
+    if (bits.length >= 2 && bits.every(b => b.display.split(/\s+/).length <= 5)) return bits;
+  }
   if (!strong && !bySentence && items.some(it => it.display.split(/\s+/).length > 6)) return [];
   return items.filter(it => it.display.length >= 2 && it.display.length <= 160);
 }
@@ -1332,7 +1391,9 @@ const spanOver = (raw: string, items: KPSpan[]) => {
  * the question asks for fewer than the list offers ("any two of the
  * following"), or asks to match, the list is the options instead.
  */
-function spreadOver(unit: KPUnit, items: KPSpan[], raw: string, nextId: () => string, choice = false): KPUnit[] {
+function spreadOver(unit: KPUnit, items: KPSpan[], raws: { q: string; stem: string }, nextId: () => string, choice = false): KPUnit[] {
+  // Every span is cut from its own printed source.
+  const raw = raws[items[0].from];
   const pick = choice || (unit.countValue && unit.countValue < items.length
     && unit.count && /\bof the following\b|^any\b|\bof these\b/i.test(unit.count.display));
   if (pick || unit.actionKey === 'match') {
@@ -1353,7 +1414,7 @@ function spreadOver(unit: KPUnit, items: KPSpan[], raw: string, nextId: () => st
     // "Indicate with a tick (✓) whether each of the following statements is
     // true or false": the statement is the item; how to mark it is the limit.
     const how = /^(?:with a tick|by ticking)\s*(?:\([^)]*\))?/i.exec(unit.focus.text);
-    const sp = how ? spanOf(unit.focus.from, raw, unit.focus.start, unit.focus.start + how[0].length) : null;
+    const sp = how ? spanOf(unit.focus.from, raws[unit.focus.from], unit.focus.start, unit.focus.start + how[0].length) : null;
     unit = { ...unit, focus: null, conditions: sp ? [sp, ...unit.conditions] : unit.conditions };
   }
   if (items.length === 1) return [{ ...unit, item: items[0] }];
@@ -1434,6 +1495,15 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       if (sp && !cardRules.some(r => r.display.toLowerCase() === sp.display.toLowerCase())) cardRules.push(sp);
     }
   }
+  // "Answer the following questions in ENGLISH." — words between "answer"
+  // and the language.
+  for (const [from, raw] of [['stem', stem], ['q', q]] as const) {
+    for (const m of raw.matchAll(/\b[Aa]nswer\b[^.?!:]{0,60}?\b(in (?:English|ENGLISH|Irish|IRISH))\b/g)) {
+      const at = (m.index ?? 0) + m[0].length - m[1].length;
+      const sp = spanOf(from, raw, at, at + m[1].length);
+      if (sp && !cardRules.some(r => r.display.toLowerCase() === sp.display.toLowerCase())) cardRules.push(sp);
+    }
+  }
   const latin = (q.match(/[A-Za-zÀ-ÿ]/g) ?? []).length;
   const letters = (q.match(/\p{L}/gu) ?? []).length;
   const irish = irishShare(q) >= 0.12 && /[áéíóú]/i.test(q);
@@ -1477,7 +1547,9 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
     const parts = splitParts(q, alt.start, alt.end, alt.altGroup);
     for (const [partIndex, part] of parts.entries()) {
       if (leadIn && leadInFamily && familyOf(part.ref) === leadInFamily) { leadIn = null; leadInFamily = null; }
-      const tariff = /\(\s*(\d{1,3})\s*(?:marks?|mharc|marc)?\s*\)\s*$/i.exec(q.slice(part.start, part.end));
+      const tariffHit = /\(\s*(\d{1,3})\s*(?:marks?|mharc|marc)?\s*\)\s*$/i.exec(q.slice(part.start, part.end));
+      // "(25)" printed for the whole of part (b) is not this sub-part's tariff.
+      const tariff = tariffHit && !(totalMarks != null && Number(tariffHit[1]) > totalMarks) ? tariffHit : null;
       const partEnd = tariff ? part.start + tariff.index : part.end;
       const pieces = sentences(q, part.start, partEnd);
       const ctxPieces: Piece[] = [];
@@ -1492,6 +1564,11 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         const text = q.slice(piece.start, piece.end).trim();
         if (!text) continue;
         const lastUnit = partUnits[partUnits.length - 1];
+        if (/\b(?:may|can) be (?:estimated|assumed|omitted|ignored)|\bneed not\b|\bare not (?:required|needed)\b/i.test(text) && /^(?:Note|Any|All|You)\b/.test(text)) {
+          const sp = spanOf('q', q, piece.start, piece.end);
+          if (sp && !cardRules.some(r => r.display === sp.display)) cardRules.push(sp);
+          continue;
+        }
         if (TAIL_CONDITION.test(text) && lastUnit) {
           const sp = spanOf('q', q, piece.start, piece.end);
           if (sp) lastUnit.conditions.push(sp);
@@ -1579,8 +1656,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           if (!lastStatement) break;
           const statement = spanOf('q', q, lastStatement.start, lastStatement.end);
           if (!statement) break;
-          if (!unit.focus && /^(?:wh-opinion|give-details|to-what-extent)$/.test(unit.actionKey)) unit.focus = statement;
-          else if (unit.focus && STATEMENT_FOCUS.test(unit.focus.display)) unit.use.unshift({ ...statement, kind: 'material' });
+          if (!unit.focus && !/^(?:yes-no|either-or|true-false|justify-tail|illustrate-tail|as-printed)$/.test(unit.actionKey)) unit.focus = statement;
+          else if (unit.focus && (STATEMENT_FOCUS.test(unit.focus.display) || /^(?:it|they|this|these|he|she|its|their)\b|\beach(?: of them)?$/i.test(unit.focus.display))) {
+            unit.use.unshift({ ...statement, kind: 'material' });
+          }
         }
         partUnits.push(...made);
         if (!made.length) {
@@ -1598,17 +1677,19 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       // Units that must not borrow a neighbour's focus: a question that is
       // its own job, or an "Explain your answer" tail.
       const selfContained = (u: KPUnit) => /^(?:yes-no|either-or|true-false|justify-tail|illustrate-tail|as-printed)$/.test(u.actionKey) || u.actionKey.startsWith('wh-');
-      for (let i = 0; i < partUnits.length - 1; i += 1) {
+      // Right to left, so a chain ("Name, briefly describe and discuss X")
+      // passes the focus all the way back.
+      for (let i = partUnits.length - 2; i >= 0; i -= 1) {
         const a = partUnits[i];
         const b = partUnits[i + 1];
-        if (a.focus || !a.action || !b.action || selfContained(a) || selfContained(b)) continue;
+        if (!b || a.focus || !a.action || !b.action || selfContained(a) || selfContained(b)) continue;
         if (b.action.start - a.action.end >= 40 || a.action.from !== b.action.from) continue;
         // "draw and label: …" is one job.
-        if ((/^(?:draw|sketch|construct)$/.test(a.actionKey) || /^(?:show|mark|locate|plot|draw|sketch)$/i.test(a.action.display.trim()))
-          && /^label$/.test(b.actionKey) && /^\s+and\s+$/i.test(q.slice(a.action.end, b.action.start))) {
+        if ((/^label$/.test(b.actionKey) || a.actionKey === 'choose') && /^\s+and\s+$/i.test(q.slice(a.action.end, b.action.start))) {
           const joined = spanOf('q', q, a.action.start, b.action.end);
           if (joined) {
-            partUnits.splice(i, 2, { ...a, action: joined, focus: b.focus, focusMore: b.focusMore, count: a.count ?? b.count, countValue: a.countValue ?? b.countValue, conditions: [...a.conditions, ...b.conditions], use: [...a.use, ...b.use.filter(x => !a.use.some(y => y.display === x.display))] });
+            const lead = a.actionKey === 'choose' || /^(?:state|other|tick)$/.test(a.actionKey) ? b : a;
+            partUnits.splice(i, 2, { ...a, actionKey: lead.actionKey, means: lead.means, action: joined, focus: b.focus, focusMore: b.focusMore, count: a.count ?? b.count, countValue: a.countValue ?? b.countValue, conditions: [...a.conditions, ...b.conditions], use: [...a.use, ...b.use.filter(x => !a.use.some(y => y.display === x.display))] });
             const piece = unitPiece.get(a.id) ?? unitPiece.get(b.id);
             if (piece) unitPiece.set(a.id, piece);
             continue;
@@ -1622,6 +1703,19 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         if (!a.conditions.length) a.conditions = [...b.conditions];
         if (!a.count && b.count) { a.count = b.count; a.countValue = b.countValue; a.countNoun = b.countNoun; }
         if ((EXTENDED.has(a.actionKey.replace(/-.*/, '')) && EXTENDED.has(b.actionKey.replace(/-.*/, ''))) || (b.countValue ?? 0) > 1) a.jointWith = b.id;
+      }
+      // "Identify three principles … and describe how each principle
+      // identified …": the second job is done for each of the first's items.
+      for (let i = 1; i < partUnits.length; i += 1) {
+        const a = partUnits[i - 1];
+        const b = partUnits[i];
+        if (!a.action || !b.action || (b.count && !/^each$/i.test(b.count.display)) || !(a.countValue && a.countValue > 1) || a.jointWith) continue;
+        const eachRef = /\beach\b/i.test(`${b.focus?.display ?? ''} ${b.action.display} ${b.count?.display ?? ''}`);
+        if (!eachRef || !/\s+and\s+(?:then\s+)?$/i.test(q.slice(a.action.end, b.action.start))) continue;
+        b.count = a.count;
+        b.countValue = a.countValue;
+        b.countNoun = a.countNoun;
+        a.jointWith = b.id;
       }
       for (const u of partUnits) if (u.action && !unitPiece.has(u.id)) unitPiece.set(u.id, pieces[0]);
 
@@ -1638,8 +1732,21 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         const listLead = /\bthe following\b/i.test(`${u.count?.display ?? ''} ${u.focus?.display ?? ''}`) || u.actionKey === 'true-false';
         let regionStart = -1;
         if (colon >= 0 && !u.conditions.some(c => c.from === 'q' && colon >= c.start && colon < c.end)) regionStart = colon + 1;
-        else if (listLead) regionStart = piece.end;
+        else if (listLead) {
+          // "… in the following lines. sit qui me raptum …": the list can
+          // start inside the same printed sentence, after the lead's stop.
+          const from = u.focus?.end ?? u.action.end;
+          const stop = q.slice(from, piece.end).search(/[.](?=\s+\S)/);
+          regionStart = stop >= 0 ? from + stop + 1 : piece.end;
+        }
         let items: KPSpan[] = [];
+        // A limit sentence printed straight after the instruction ("Put a
+        // tick (✓) in the appropriate boxes.") is stepped over, not a stop.
+        for (let moved = true; moved && regionStart >= 0;) {
+          moved = false;
+          const lead = u.conditions.find(c => c.from === 'q' && c.start >= regionStart && /^\s*$/.test(q.slice(regionStart, c.start)));
+          if (lead) { regionStart = lead.end + (/^[.!?]/.test(q.slice(lead.end, lead.end + 1)) ? 1 : 0); moved = true; }
+        }
         const limitAfter = u.conditions.filter(c => c.from === 'q' && c.start > regionStart).map(c => c.start);
         const listEnd = Math.min(regionEnd, partEnd, ...limitAfter);
         if (regionStart >= 0 && regionStart < listEnd) items = listItems(q, 'q', regionStart, listEnd, u.actionKey === 'true-false');
@@ -1649,8 +1756,22 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
             if (sp && !u.use.some(x => x.display === sp.display)) u.use.push({ ...sp, kind: 'locator' });
           }
         }
-        // The list printed in the stem: "• Multi-factor authentication • …".
+        // The list printed in the stem: "• Multi-factor authentication • …",
+        // or the rows of an answer table printed as bare lines.
         if (!items.length && listLead && /^\s*[•◆▪●]/.test(stem)) items = listItems(stem, 'stem', 0, stem.length);
+        if (!items.length && listLead && stem.trim() && !BOILERPLATE.test(stem) && !RUBRIC.test(stem.trim())) {
+          const lines = listItems(stem, 'stem', 0, stem.length, !/\n/.test(stem));
+          if (lines.length >= 2 && lines.length <= 8 && lines.every(l => l.display.split(/\s+/).length <= 10 && !commandMatches(l.display).some(m => m.index === 0))) items = lines;
+        }
+        // "Examine how … one of the following: • Coastal processes" — a card
+        // for one option: the option is the item and the choice is made.
+        if (items.length === 1 && isChoice(u, { q, stem }) && u.countValue === 1) {
+          u.item = items[0];
+          u.count = null;
+          u.countValue = undefined;
+          consumed.push([regionStart, regionEnd]);
+          continue;
+        }
         // "Explain the terms user interface and Bluetooth."
         if (!items.length && /\bterms$/i.test(u.action.display) && u.focus) {
           items = listItems(q, 'q', u.focus.start, u.focus.end);
@@ -1682,8 +1803,19 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           consumed.push([regionStart, regionEnd]);
           continue;
         }
+        if (!items.length && listLead && regionStart >= 0 && regionStart < listEnd) {
+          const lines = listItems(q, 'q', regionStart, listEnd, true);
+          if (lines.length >= 1 && lines.length <= 8 && lines.every(l => l.display.split(/\s+/).length <= 40)) items = lines;
+        }
+        // "… in the following lines. sit qui me raptum …": one printed item.
+        if (items.length === 1 && listLead && !isChoice(u, { q, stem }) && !/^(?:true-false|tick|compare|contrast|compare-contrast|distinguish)$/.test(u.actionKey)) {
+          u.item = items[0];
+          for (const other of partUnits) if (other !== u && other.focus && u.focus && other.focus.start === u.focus.start && !other.item) other.item = items[0];
+          consumed.push([regionStart, regionEnd]);
+          continue;
+        }
         if (items.length >= 2 || (items.length === 1 && /^(?:true-false|tick|compare|contrast|compare-contrast|distinguish)$/.test(u.actionKey))) {
-          const spread = spreadOver(u, items, items[0].from === 'stem' ? stem : q, nextId, isChoice(u, { q, stem }) && (u.countValue ?? 0) < items.length);
+          const spread = spreadOver(u, items, { q, stem }, nextId, isChoice(u, { q, stem }) && (u.countValue ?? 0) < items.length);
           partUnits.splice(i, 1, ...spread);
           i += spread.length - 1;
           if (regionStart >= 0) consumed.push([regionStart, regionEnd]);
@@ -1762,7 +1894,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         .filter(u => !(u.from === 'stem' && PICTURE.test(u.display) && !refersToPicture));
       for (const unit of partUnits) {
         if (unit.flags.includes('as-printed')) continue;
+        const ownNamed = unit.use.filter(u => u.kind === 'material' && new RegExp(NAMED_RE.source).test(u.display));
         for (const u of shared) {
+          // "Text B" in the part: "Text A" in the stem belongs to another part.
+          if (ownNamed.length && new RegExp(NAMED_RE.source).test(u.display) && !ownNamed.some(o => o.display.toLowerCase() === u.display.toLowerCase())) continue;
           if (unit.use.some(x => x.display.toLowerCase() === u.display.toLowerCase() || (x.kind === 'material' && headOf(x.display) === headOf(u.display)))) continue;
           unit.use.push(u);
         }
@@ -1804,7 +1939,7 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       units.splice(0, units.length);
       const colon = stem.indexOf(':', lead.action.start);
       const stemItems = colon > 0 ? listItems(stem, 'stem', colon + 1, stem.length) : [];
-      const perList = lead.count && /\beach\b|\bthe following\b/i.test(lead.count.display);
+      const perList = (lead.count && /\beach\b|\bthe following\b/i.test(lead.count.display)) || isChoice(lead, { q, stem });
       if (stemItems.length >= 2) {
         for (const item of stemItems) {
           units.push({ ...lead, id: nextId(), item, count: perList ? null : lead.count, countValue: perList ? undefined : lead.countValue, conditions: [...lead.conditions], use: [...lead.use] });
@@ -1814,7 +1949,8 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         for (const part of parts) {
           const item = spanOf('q', q, part.start, part.end);
           if (!item) continue;
-          units.push({ ...lead, id: nextId(), ref: part.ref, item, count: parts.length > 1 ? null : lead.count, countValue: parts.length > 1 ? undefined : lead.countValue, conditions: [...lead.conditions], use: [...lead.use] });
+          const keep = parts.length === 1 && !perList;
+          units.push({ ...lead, id: nextId(), ref: part.ref, item, count: keep ? lead.count : null, countValue: keep ? lead.countValue : undefined, countNoun: keep ? lead.countNoun : undefined, conditions: [...lead.conditions], use: [...lead.use] });
         }
       }
     }
@@ -1861,6 +1997,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
     }
   }
 
+  for (const unit of units) {
+    // "for each of the following" is the head of a list, not a limit.
+    unit.conditions = unit.conditions.filter(c => !/^(?:for|in) each(?: of the following| case)?$/i.test(c.display));
+  }
   // Nothing could be read: the printed question is the honest view.
   if (units.every(u => u.flags.includes('as-printed'))) return { ...base, reasons: ['command-missing'], cardRules };
   return { mode: 'decomposed', reasons: [], banner, cardRules, units, totalMarks };
@@ -1945,8 +2085,10 @@ export function planRowsFromKeyParts(kp: KeyPartsBreakdown): KeyPartPlanRow[] {
     }
     if (n === 1 && unit.headings && unit.headings.length >= 2) {
       // "Refer in your answer to space, function, layout and lighting".
+      // The heading list is the rows; each row's summary leaves it out.
+      const headingSummary = keyPartSummary({ ...unit, conditions: unit.conditions.filter(c => !unit.headings!.every(h => c.display.includes(h.display))) });
       for (const [i, h] of unit.headings.entries()) {
-        rows.push({ id: `${unit.id}-h${i + 1}`, unitId: unit.id, label: `${ref}${cap(h.display)}`, summary, placeholder: `Your point on ${h.display}` });
+        rows.push({ id: `${unit.id}-h${i + 1}`, unitId: unit.id, label: `${ref}${cap(h.display)}`, summary: headingSummary, placeholder: `Your point on ${h.display}` });
       }
       continue;
     }

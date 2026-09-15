@@ -125,9 +125,12 @@ const KeyPartUnit: React.FC<{ unit: KPUnit; partner?: KPUnit }> = ({ unit, partn
         </div>
         {unit.item && <div><dt>Item</dt><dd className="mb-wi-kp-item">{unit.item.display}</dd></div>}
         {unit.count && <div><dt>How many</dt><dd>{unit.count.display}</dd></div>}
-        {unit.sides ? (
+        {unit.sides && (
           <div><dt>Compare</dt><dd>{unit.sides[0].display} <em>vs</em> {unit.sides[1].display}</dd></div>
-        ) : unit.focus && (
+        )}
+        {/* A comparison keeps its About when the sides do not cover it:
+            "the indenters used in both the Brinell and the Vickers tests". */}
+        {unit.focus && (!unit.sides || (unit.sides[0].from === unit.focus.from && unit.sides[0].start > unit.focus.start + 2)) && (
           <div>
             <dt>About</dt>
             <dd>
