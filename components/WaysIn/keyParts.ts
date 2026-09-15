@@ -598,7 +598,7 @@ const YOUR_SHOULD_COUNT = /\b((?:at least|at most|exactly|no more than|up to)\s+
 const WHOLE_SENTENCE = /^(?:\(?\s*Unless otherwise (?:stated|specified|indicated)\b|(?:Relevant |All )?(?:supporting )?(?:work(?:ings?)?|calculations) must be shown\b|You (?:may|can) (?:use|include|draw|refer)\b)/i;
 // A sentence that says how the answer must be given, not what to answer. It
 // limits the task before it ("Give your answer in its simplest form").
-const TAIL_CONDITION = /^(?:Indicate your (?:choice|sector|option|answer|chosen)\b|(?:Put|Place) a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b(?!\s+(?:one|two|three|four|five|six|[2-6])\b)|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
+const TAIL_CONDITION = /^(?:Indicate your (?:choice|sector|option|answer|chosen)\b|(?:Put|Place) a tick\b|Tick\s*(?:\([^)]{1,4}\)\s*)?(?:the|one|a) (?:correct|appropriate|relevant)?\s*(?:box|boxes|answer|option)?\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b(?!\s+(?:one|two|three|four|five|six|[2-6])\b)|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
 // "Name two." / "Give four details." after a question: how many, for that question.
 const COUNT_SENTENCE = /^(?:Give|Name|State|List|Mention|Identify|Write down)\s+(?:(?:any|at least)\s+)?(one|two|three|four|five|six)(?:\s+([\p{L}]+(?: of information)?))?\s*[.?!]?\s*$/iu;
 const DETAILS_SENTENCE = /^Give (?:full |more )?details\s*[.?!]?\s*$/i;
@@ -1298,12 +1298,8 @@ function buildUnit(
   if (focus && /,?\s+where$/i.test(focus.text)) focus = spanOf(from, raw, focus.start, focus.end - (/,?\s+where$/i.exec(focus.text)![0].length)) ?? focus;
   // Where/When/Why … "located" style questions: a trailing participle is
   // part of the question form, not the thing asked about.
-  if (focus && /^wh-(?:where|when|why)/.test(actionKey)) {
-    const trailing = /\s+[\p{L}]+ed\s*$/u.exec(focus.text);
-    if (trailing && focus.text.split(/\s+/).length > 2) {
-      focus = spanOf(from, raw, focus.start, focus.end - trailing[0].length) ?? focus;
-    }
-  }
+  // (A trailing participle stays: "Where were the families rehoused?" asks
+  // about the rehousing, not the families.)
 
   // CONDITIONS from the relative clause and every trigger in the remainder.
   if (relStart >= 0) {
@@ -2321,8 +2317,19 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           const aw = `${u.action.display} ${u.focus?.display ?? ''}`;
           const whichOf = /^(?:(?:identify|state|say|indicate)\s+)?(?:which|what)\b/i.test(aw) && /\bof the following\b/i.test(aw);
           const spread = spreadOver(u, items, { q, stem }, nextId, whichOf || (isChoice(u, { q, stem }) && (u.countValue ?? 0) < items.length));
-          partUnits.splice(i, 1, ...spread);
-          i += spread.length - 1;
+          // "Describe and explain any two of the following: • …": the joined
+          // first verb goes with the second into every item.
+          const partnerAt = partUnits.findIndex(p => p.jointWith === u.id);
+          if (partnerAt >= 0 && spread.length > 1 && spread[0].id !== u.id) {
+            const partner = partUnits[partnerAt];
+            const withPartners = spread.flatMap(x => [{ ...partner, id: nextId(), jointWith: x.id, item: x.item, conditions: [...partner.conditions], use: [...partner.use], flags: [...partner.flags] }, x]);
+            partUnits.splice(i, 1, ...withPartners);
+            partUnits.splice(partnerAt, 1);
+            i += withPartners.length - 2;
+          } else {
+            partUnits.splice(i, 1, ...spread);
+            i += spread.length - 1;
+          }
           if (regionStart >= 0) consumed.push([regionStart, regionEnd]);
         }
       }
@@ -2530,6 +2537,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
     }
     if (unit.use.some(u => u.kind === 'material' && VISUAL.test(u.display)) && !source.figure) unit.flags.push('needs-figure');
     unit.marks = partMarks.get(unit.id) ?? (units.filter(u => !u.jointWith).length === 1 && !unit.jointWith ? totalMarks : null);
+    if (unit.actionKey === 'explain-how' && /^how (?:did|does|do|was|were|is|are)\b/i.test(unit.action?.display ?? '') && (unit.marks ?? 99) <= 4) {
+      unit.actionKey = 'wh-plain';
+      unit.means = MEANS['wh-plain'];
+    }
     if (unit.actionKey === 'wh-plain') {
       // A high tariff alone does not make "What do the following letters
       // stand for?" a developed answer; a question about a role, an impact or
@@ -2791,6 +2802,9 @@ function settingOf(q: string, contexts: Array<{ from: 'q' | 'stem'; raw: string;
       if (words.length < 4 || letters < sp.display.length * 0.6 || !/^[\p{Lu}“‘"'(]/u.test(sp.display)) continue;
       if (!/[.?!:)”’"']\s*$/.test(q.slice(piece.start, piece.end).trim()) && words.length < 8) continue;
       if (RUBRIC.test(sp.display) || /^(?:Page \d|Question \d|\[?\d+ marks?\]?$|Answer\b)/i.test(sp.display)) continue;
+      // A flattened table ("Oil/Gas exploitation Quarrying Mining …") is not a
+      // sentence the question tells you; a sentence has its small words.
+      if ((sp.display.match(/\b(?:is|are|was|were|has|have|had|will|would|can|could|the|a|an|to|of|in|on|for|with|by|and|that|this|you|your)\b/gi) ?? []).length < 2) continue;
       out.push(sp);
     }
   }
