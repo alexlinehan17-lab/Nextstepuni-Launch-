@@ -211,7 +211,7 @@ const keyFor = (surface: string, following: string): string => {
   if (/^(?:describe|show|explain|state) how$|^how (?:does|do|did|is|are|was|were)$/.test(bare) && /^[^.?]{0,80}\b(?:differs?|different|contrasts?)\b/.test(next)) return 'contrast';
   if (/^(?:describe|show|explain|state) how$|^how (?:does|do|did|is|are|was|were)$/.test(bare) && /^[^.?]{0,80}\bcompares?\b/.test(next)) return 'compare';
   if (/^choose\b/.test(bare) && /^(?:the|one|a) (?:term|word|option|answer|letter|number|phrase|statement|structure|name)s?\b|from the (?:list|following)/.test(next)) return 'choice';
-  if (/^give (?:full )?details$/.test(bare)) return 'give-details';
+  if (/^give (?:full |more )?details(?: (?:of|about|on))?$/.test(bare)) return 'give-details';
   if (/^illustrate your answer/.test(`${bare} ${next}`)) return 'illustrate-tail';
   if (/^(?:explain|justify) your answer|^give (?:a )?reasons? for your answer/.test(`${bare} ${next}`)) return 'justify-tail';
   if (/^how (?:did|do|would|will|should)$/.test(bare) && /^you\b/.test(next) && !/^you (?:think|feel|know|describe)\b/.test(next)) return 'describe-how';
@@ -232,7 +232,8 @@ const keyFor = (surface: string, following: string): string => {
   if (/^(?:distinguish|differentiate)/.test(bare)) return 'distinguish';
   if (/^account for/.test(bare)) return 'account';
   if (/^to what extent/.test(bare)) return 'to-what-extent';
-  if (/^(?:do you (?:think|agree)|what do you (?:think|consider))/.test(bare)) return 'wh-opinion';
+  if (/^(?:do you (?:think|agree|disagree)|what do you (?:think|consider))/.test(bare)) return 'wh-opinion';
+  if (/^explain what you understand by\b/.test(`${bare} ${next}`)) return 'define';
   if (/^what evidence/.test(bare)) return 'wh-evidence';
   if (/^what effect/.test(bare)) return 'wh-effect';
   if (/^how does .* feel|^how did .* feel/.test(`${bare} ${next}`) && /^how/.test(bare)) return 'wh-feel';
@@ -473,7 +474,7 @@ const LEADING = /^(?:If\b[^,]{3,80},|Using (?:your knowledge of|notes and freeha
 const WH_FORMS = [
   'what information does this give about', 'to what extent do you agree or disagree with', 'to what extent',
   'what evidence is there', 'what evidence do you find', 'what do you consider', 'what do you think',
-  'do you agree or disagree with', 'do you agree or disagree that', 'do you agree or disagree', 'do you think', 'do you agree', 'how would you best describe', 'what is the purpose of', 'what is meant by',
+  'do you agree or disagree with', 'do you agree or disagree that', 'do you agree or disagree', 'do you disagree with', 'do you disagree that', 'do you disagree', 'do you think', 'do you agree', 'how would you best describe', 'what is the purpose of', 'what is meant by',
   'what effect', 'what caused', 'what makes', 'what is', 'what are', 'what was', 'what were', 'what does', 'what did',
   'how does', 'how did', 'how do', 'how is', 'how are', 'how can', 'how would', 'how will', 'how could', 'how should', 'how might', 'how many', 'how much',
   'what will', 'what would', 'what could', 'what should', 'why would', 'why should', 'why might',
@@ -1489,7 +1490,11 @@ function buildUnit(
   } else if (/^indicate/i.test(action.display) && /\btick|✓|\uF050|\bbox\b/i.test(clauseText)) {
     actionKey = 'tick';
     means = MEANS.tick;
-  } else if (actionKey === 'explain' && /^(?:each of )?(?:the )?(?:following\s+)?(?:[\p{L}-]+\s+){0,3}terms?\b/iu.test(`${count?.display ?? ''} ${focus?.display ?? ''}`.trim())) {
+  } else if (actionKey === 'explain' && /\b(?:difference|differences|distinction|distinguish)\b/i.test(focus?.display ?? '') && /\bterms?\b/i.test(focus?.display ?? '')) {
+    actionKey = 'distinguish';
+    means = MEANS.distinguish;
+  } else if (actionKey === 'explain' && (/^(?:each of )?(?:the )?(?:following\s+)?(?:[\p{L}-]+\s+){0,3}terms?\b/iu.test(`${count?.display ?? ''} ${focus?.display ?? ''}`.trim())
+    || /^(?:the )?(?:following\s+)?(?:[\p{L}-]+\s+){0,2}terms?\b/iu.test(focus?.display ?? ''))) {
     actionKey = 'define';
     means = MEANS.define;
   }
@@ -1778,7 +1783,7 @@ function headingsFrom(unit: KPUnit, raw: { q: string; stem: string }): KPSpan[] 
     const lead = HEADINGS_LEAD.exec(c.text);
     if (!lead) continue;
     const items = listItems(raw[c.from], c.from, c.start + lead[0].length, c.end);
-    if (items.length >= 2 && items.length <= 6 && items.every(i => i.display.split(/\s+/).length <= 4)) return items;
+    if (items.length >= 2 && items.length <= 6 && items.every(i => i.display.split(/\s+/).length <= 8)) return items;
   }
   return undefined;
 }
