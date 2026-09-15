@@ -178,6 +178,9 @@ const keyFor = (surface: string, following: string): string => {
   if (/^explain (?:the (?:underlined |following )?terms?|what is meant by)|^define|^what is meant by/.test(bare)
     || /^(?:explain|state|describe|outline) what is meant by/.test(`${bare} ${next}`)) return 'define';
   if (/^give an account of/.test(bare)) return 'account-of';
+  if (/^(?:explain|give|state|write)(?: in (?:english|irish))? (?:the |its )?meaning\b/.test(`${bare} ${next}`.replace(/\s+/g, ' '))) return 'define';
+  if (/^write (?:briefly )?about\b|^write briefly/.test(`${bare} ${next}`)) return 'brief-describe';
+  if (/^choose\b/.test(bare) && /^(?:the|one|a) (?:term|word|option|answer|letter|number|phrase|statement|structure|name)s?\b|from the (?:list|following)/.test(next)) return 'choice';
   if (/^give (?:full )?details$/.test(bare)) return 'give-details';
   if (/^illustrate your answer/.test(`${bare} ${next}`)) return 'illustrate-tail';
   if (/^(?:explain|justify) your answer|^give (?:a )?reasons? for your answer/.test(`${bare} ${next}`)) return 'justify-tail';
@@ -196,7 +199,8 @@ const keyFor = (surface: string, following: string): string => {
   if (/^where\b/.test(bare)) return 'wh-where';
   if (/^when\b/.test(bare)) return 'wh-when';
   if (/^why\b/.test(bare)) return 'wh-why';
-  if (/^how (?:does|did|do|can|could|would|is|are|was|were|has|have)$/.test(bare)) return 'explain-how';
+  if (/^how (?:does|did|do|will|would)$/.test(bare) && /^[^.?]{0,80}\b(?:change|vary|differ|affect)\b/.test(next)) return 'wh-effect';
+  if (/^how (?:does|did|do|can|could|would|will|should|might|is|are|was|were|has|have)$/.test(bare)) return 'explain-how';
   if (/^how (?:many|much)$/.test(bare) && /^(?:moles?|grams?|kilograms?|g|kg|joules?|kj|j|litres?|cm3|cm³|dm3|dm³|atoms?|molecules?|electrons?|protons?|neutrons?|ions?|energy|heat|work|charge|current|time|mass|volume|water|metres?|seconds?|hours?|minutes?|years|days|euro|money|interest|tax|profit)\b/i.test(next)) return 'calculate';
   if (/^(?:what|which|how|who|whose|whom)\b/.test(bare)) return 'wh-plain';
   if (/^(?:to|under|in|from|on|at|by|for|with|of|during)\s+(?:what|which|whom|whose|how)\b/.test(bare)) return 'wh-plain';
@@ -398,7 +402,8 @@ const WH_FORMS = [
   'what evidence is there', 'what evidence do you find', 'what do you consider', 'what do you think',
   'do you think', 'do you agree', 'how would you best describe', 'what is the purpose of', 'what is meant by',
   'what effect', 'what caused', 'what makes', 'what is', 'what are', 'what was', 'what were', 'what does', 'what did',
-  'how does', 'how did', 'how do', 'how is', 'how are', 'how can', 'how would', 'how many', 'how much',
+  'how does', 'how did', 'how do', 'how is', 'how are', 'how can', 'how would', 'how will', 'how could', 'how should', 'how might', 'how many', 'how much',
+  'what will', 'what would', 'what could', 'what should', 'why would', 'why should', 'why might',
   'why do', 'why does', 'why did', 'why is', 'why are', 'why was', 'why were', 'why',
   'to what', 'under which', 'under what', 'in which', 'from which', 'on which', 'at which', 'to which', 'by which',
   'for which', 'with which', 'of which', 'during which', 'in whose', 'to whom', 'from whom', 'by whom',
@@ -426,10 +431,11 @@ const CONDITION_TRIGGERS = [
   'stating', 'including', 'other than', 'apart from', 'excluding', 'except', 'outside of', 'outside', 'not in',
   'under the following headings', 'under the headings', 'in your own words', 'in your answer', 'for each', 'in each case',
   'refer in your answer to', 'in your answer refer to', 'include discussion of', 'include reference to', 'refer to',
+  'from the (?:text|passage|extract|article|poem|story|document|source|letter|interview|report)s?',
   'in Ireland', 'outside Ireland', 'in Europe', 'in the EU', 'in the European Union', 'on your drawing',
   'if', 'unless', 'assuming', 'given that', 'either', 'where(?= [a-zA-Z](?:\\s*,|\\s*[∈=<>≤≥]))', 'in English', 'in Irish',
   'in the form', 'in its simplest form', 'in simplest form', 'as a fraction', 'as a decimal', 'as a percentage',
-  'by ticking', 'with a tick', 'by placing a tick', 'by putting', 'giving your answer',
+  'by ticking', 'with a tick', 'by placing a tick', 'placing a tick', 'by putting', 'giving your answer',
   'you can', 'you could', 'you would', 'you will', 'you might', 'you think', 'you consider',
   'when', 'whenever', 'available to', 'required to', 'required for', 'to a scale of', 'on your drawing', 'to find', 'to reach', 'as part of',
   'for (?:a|an|the) (?:open |closed |irish |local |national |global )?(?:economy|business|home|workplace|farm|week|month|year|day|household|community|society|region|country|school|family|consumer|employee|employer)',
@@ -487,7 +493,7 @@ const VISUAL = /diagram|graph|chart|photo|picture|image|map|cartoon|circuit|figu
 const TAIL_UNIT = /^(?:(?:Explain|Justify) your (?:answer|choice)|Give (?:a )?reasons? for your (?:answer|choice)|Support your answer|Illustrate your answer)/i;
 // A sentence that says how the answer must be given, not what to answer. It
 // limits the task before it ("Give your answer in its simplest form").
-const TAIL_CONDITION = /^(?:Put a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b|Note\s*:|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
+const TAIL_CONDITION = /^(?:(?:Put|Place) a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b|Note\s*:|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
 // "Name two." / "Give four details." after a question: how many, for that question.
 const COUNT_SENTENCE = /^(?:Give|Name|State|List|Mention|Identify|Write down)\s+(?:(?:any|at least)\s+)?(one|two|three|four|five|six)(?:\s+([\p{L}]+(?: of information)?))?\s*[.?!]?\s*$/iu;
 const DETAILS_SENTENCE = /^Give (?:full |more )?details\s*[.?!]?\s*$/i;
@@ -508,7 +514,7 @@ function commandsIn(raw: string, start: number, end: number): CommandMatch[] {
 }
 
 // A second instruction the shared lexicon misses: "… and include one example".
-const SECOND_VERB = /(?:,\s*and|\s(?:and|then))\s+(include|label|annotate|give|state|name|list|suggest|justify|identify|draw|sketch|show|calculate|find|write|comment|discuss|explain|describe|outline)(?![\p{L}])|,\s*and\s+(what|how|why|where|when|who)(?![\p{L}])|,\s+(?:briefly\s+|clearly\s+)?(outline|explain|describe|identify|discuss|suggest|justify|evaluate|assess|analyse|state)(?=\s+(?:the|their|its|his|her|how|why|what|which|a|an|one|two|three)\b)|,\s+(?:briefly|clearly)\s+(describe|explain|outline|discuss|state|identify)(?![\p{L}])|,?\s+and,?\s+hence,?\s+(find|show|prove|calculate|verify|deduce|write|express|solve|evaluate|determine|sketch|draw)(?![\p{L}])|\s+and\s+((?:at|in|by|for|to|from|on|with|under)\s+what|how (?:many|much|long|far|fast|often))(?![\p{L}])/giu;
+const SECOND_VERB = /(?:,\s*and|\s(?:and|then))\s+(include|label|annotate|give|state|name|list|suggest|justify|identify|draw|sketch|show|calculate|find|write|comment|discuss|explain|describe|outline)(?![\p{L}])|,\s*and\s+(what|how|why|where|when|who)(?![\p{L}])|,\s+(?:briefly\s+|clearly\s+)?(outline|explain|describe|identify|discuss|suggest|justify|evaluate|assess|analyse|state|give|name)(?=\s+(?:the|their|its|his|her|how|why|what|which|a|an|one|two|three)\b)|,\s+(?:briefly|clearly)\s+(describe|explain|outline|discuss|state|identify)(?![\p{L}])|,?\s+and,?\s+hence,?\s+(find|show|prove|calculate|verify|deduce|write|express|solve|evaluate|determine|sketch|draw)(?![\p{L}])|\s+and\s+((?:at|in|by|for|to|from|on|with|under)\s+what|how (?:many|much|long|far|fast|often))(?![\p{L}])/giu;
 
 /** Split a task sentence into one clause per command ("Name … and explain …"). */
 function clausesOf(raw: string, s: Piece): Clause[] {
@@ -518,6 +524,13 @@ function clausesOf(raw: string, s: Piece): Clause[] {
     const index = s.start + (m.index ?? 0) + m[0].length - word.length;
     if (cmds.some(c => Math.abs(c.index - index) < 2)) continue;
     cmds.push({ demand: { surface: word, requiredAction: '', answerShape: '', commonTrap: '' }, index, end: index + word.length, match: word });
+  }
+  // "you should: identify …, explain why …": a command straight after a colon
+  // or semicolon opens a task even where the shared lexicon misses it.
+  for (const m of raw.slice(s.start, s.end).matchAll(/[:;]\s+(identify|describe|explain|outline|discuss|state|name|list|give|suggest|evaluate|examine|analyse|compare|calculate|draw|write)(?![\p{L}])/giu)) {
+    const index = s.start + (m.index ?? 0) + m[0].length - m[1].length;
+    if (cmds.some(c => Math.abs(c.index - index) < 2)) continue;
+    cmds.push({ demand: { surface: m[1], requiredAction: '', answerShape: '', commonTrap: '' }, index, end: index + m[1].length, match: m[1] });
   }
   cmds.sort((a, b) => a.index - b.index);
   // "In what direction is it moving and at what speed …?": the second
@@ -623,11 +636,14 @@ const MANNER = /^(?:with the aid of|using|by means of|with the help of|making us
 function actionTail(raw: string, aEnd: number, end: number, verb: string): number {
   const after = raw.slice(aEnd, end);
   const v = verb.toLowerCase().trim();
-  const GENERAL = /^\s+(?:what is meant by(?![\p{L}])|(?:why|how|whether|where|when)(?![\p{L}])|between(?![\p{L}])|the (?:underlined |following )?terms?(?![\p{L}])|briefly(?![\p{L}])|clearly(?![\p{L}])|in detail(?![\p{L}]))/iu;
+  const GENERAL = /^\s+(?:what is meant by(?![\p{L}])|which(?=\s+of\s+the\s+following\b)|(?:why|how|whether|where|when)(?![\p{L}])|between(?![\p{L}])|the (?:underlined |following )?terms?(?![\p{L}])|briefly(?![\p{L}])|clearly(?![\p{L}])|in detail(?![\p{L}]))/iu;
   const general = GENERAL.exec(after);
   if (general) {
     const again = GENERAL.exec(after.slice(general[0].length));
-    return aEnd + general[0].length + (again && /^\s+(?:briefly|clearly|in detail)$/i.test(general[0]) ? again[0].length : 0);
+    let more = again && /^\s+(?:briefly|clearly|in detail)$/i.test(general[0]) ? again[0].length : 0;
+    const about = /^(?:write|talk|comment)$/.test(v) && /^\s+about(?![\p{L}])/iu.exec(after.slice(general[0].length + more));
+    if (about) more += about[0].length;
+    return aEnd + general[0].length + more;
   }
   const particle = v === 'give'
     ? /^\s+(?:an account of|(?:full |more )?details(?:\s+(?:of|about|on))?(?=\s|[.?!]|$))(?![\p{L}])/iu
@@ -711,6 +727,12 @@ function buildUnit(
     cur += quote[0].length;
   }
   // "From the list above identify two alkanes": an opener with no comma.
+  const yourOpener = /^((?:On|In) your (?:drawing|diagram|sketch|graph|answer ?book|answer sheet|sketch map))\s+(?=\p{Ll})/u.exec(raw.slice(cur, end));
+  if (yourOpener && EXTRA_VERBS.test(raw.slice(cur + yourOpener[0].length, end))) {
+    const sp = spanOf(from, raw, cur, cur + yourOpener[1].length);
+    if (sp) conditions.push(sp);
+    cur += yourOpener[0].length;
+  }
   const bareOpener = /^((?:From|Using|In|On|Based on|According to) (?:the|this|these) (?:[^,.?]{2,40}?(?:above|below|provided|given|shown)|(?:text|passage|extract|article|poem|story|document|diagram|table|graph|source|letter|advertisement)))\s+(?=\p{Ll})/u.exec(raw.slice(cur, end));
   const openerUse: KPUse[] = [];
   if (bareOpener && EXTRA_VERBS.test(raw.slice(cur + bareOpener[0].length, end))) {
@@ -718,7 +740,15 @@ function buildUnit(
     if (sp) openerUse.push({ ...sp, kind: 'material' });
     cur += bareOpener[0].length;
   }
+  // "In your talk, which can be serious or humorous, you should: identify …"
+  const colonLead = /^([^:?]{0,200}?)(?:,\s*)?(?:you (?:should|must|may|might|could|will need to)|your [\p{L}]+ (?:should|must))\s*:\s*/iu.exec(raw.slice(cur, end));
+  if (colonLead) {
+    const sp = colonLead[1].trim().length > 3 ? spanOf(from, raw, cur, cur + colonLead[1].length) : null;
+    if (sp) conditions.push(sp);
+    cur += colonLead[0].length;
+  }
   let command = clause.command;
+  if (colonLead) command = commandsIn(raw, cur, end).find(m => m.index >= cur) ?? null;
   const method = METHOD.exec(raw.slice(cur, end));
   if (method) {
     const sp = spanOf(from, raw, cur, cur + method[1].length);
@@ -828,7 +858,12 @@ function buildUnit(
     const head = raw.slice(cur, end).toLowerCase();
     const prepWh = /^(?:to|under|in|into|from|on|at|by|for|with|of|during|between|about|against|through|towards|within|across|after|before|since|until)\s+(?:what|which|whom|whose|where|when|how (?:many|much|long|far|often))(?![\p{L}])/iu.exec(raw.slice(cur, end));
     const wh = prepWh ? prepWh[0].toLowerCase() : WH_FORMS.find(f => head.startsWith(f) && !/[\p{L}]/u.test(head[f.length] ?? ' '));
-    if (!action && (wh && /\?\s*$/.test(raw.slice(cur, end)) || (wh && /^(?:what|which|how|why|where|when|who|to what|in what|at what|by how|under which|in which)/.test(wh)))) {
+    // Without a question mark, only a question-shaped sentence is a question:
+    // "When a computer is carrying out lots of tasks, it …" is a statement.
+    const asked = /[?？]\s*$/.test(raw.slice(cur, end))
+      || (wh && !/^(?:when|where|how|why)$/.test(wh))
+      || (wh && /^\s*(?:is|are|was|were|do|does|did|has|have|had|can|could|would|should|will|might|may|must)\b/i.test(raw.slice(cur + wh.length, end)));
+    if (!action && wh && asked) {
       const aEnd = whNounEnd(raw, cur, cur + wh!.length, end);
       action = spanOf(from, raw, cur, aEnd);
       actionKey = keyFor(raw.slice(cur, aEnd), raw.slice(aEnd, end));
@@ -882,6 +917,13 @@ function buildUnit(
     if (sp) conditions.push(sp);
     cur += bracket[0].length;
   }
+  // "Explain in ENGLISH the meaning of …": the language is a limit.
+  const language = /^in (?:English|ENGLISH|Irish|IRISH)\b,?\s*/.exec(raw.slice(cur, end));
+  if (language) {
+    const sp = spanOf(from, raw, cur, cur + language[0].trimEnd().length);
+    if (sp) conditions.push(sp);
+    cur += language[0].length;
+  }
   // "at what speed (in mm/year) is it moving": the bracketed unit is a limit.
   const unitParen = /^\((?:in|to|correct to|as)\s[^)]{1,30}\)\s*/i.exec(raw.slice(cur, end));
   if (unitParen) {
@@ -902,10 +944,12 @@ function buildUnit(
   let count: KPSpan | null = null;
   let countValue: number | undefined;
   let countNoun: string | undefined;
+  let pairHeadings: KPSpan[] | undefined;
   const afterAction = raw.slice(cur, end);
   // "How does one remain safe?": after a question form, "one" is a pronoun.
   const pronounOne = /^(?:wh-|explain-how|to-what-extent|yes-no)/.test(actionKey) && /^one\s/i.test(afterAction);
-  const c = pronounOne ? null : COUNT_AFTER_CMD.exec(afterAction);
+  const pairCount = /^one\s+([\p{L}-]+)\s+and\s+one\s+([\p{L}-]+)/iu.exec(afterAction);
+  const c = pronounOne || pairCount ? null : COUNT_AFTER_CMD.exec(afterAction);
   if (c) {
     const phraseEnd = cur + c[0].length;
     const nounMatch = /^\s+([\p{L}-]+(?:\s+of evidence)?)/u.exec(raw.slice(phraseEnd, end));
@@ -924,7 +968,7 @@ function buildUnit(
         count = spanOf(from, raw, cur, cEnd);
         countNoun = singular(noun);
         cur = cEnd;
-        const connector = /^\s+(?:of|for|in|on|as|from|about)(?![\p{L}])/iu.exec(raw.slice(cur, end));
+        const connector = /^\s+(?:of|for|in|on|as|about)(?![\p{L}])/iu.exec(raw.slice(cur, end));
         if (connector) cur += connector[0].length;
       } else if (/^(?:each|all|both)$/.test(word) && /^\s+of\s+(?!the following\b)(?:the|these|those|your)\s/i.test(raw.slice(phraseEnd, end))) {
         // "each of the letters A, B, C and D with the term …" — the counted
@@ -945,8 +989,12 @@ function buildUnit(
         // slot tears an adjective from its noun.
         const np = /^(?:each|all|both)$/.test(word) ? null : /^((?:\s+[\p{L}-]+){1,4}?)(?=\s+(?:of|in|on|for|to|from|with|by|at|that|which|who|whose|where|when|between|during|used|found|made|given|shown|than|as|about|into|within|across|you|your|and|or|a|an|the|this|that|these|those|each|every|some|may|might|can|could|will|would|should|must|is|are|was|were|has|have|had|do|does|did)\b|\s*[,.;:?!(]|\s*$)/iu.exec(raw.slice(cur + c[1].length, end));
         if (np && !unitAhead) {
-          count = spanOf(from, raw, cur, cur + c[1].length + np[1].length);
-          countNoun = singular(np[1].trim().split(/\s+/).pop() ?? '');
+          const npWords = np[1].trim().split(/\s+/);
+          const plural = [...npWords].reverse().find(w => /[^s]s$|ies$|sses$/i.test(w));
+          const head = plural ?? [...npWords].reverse().find(w => !/(?:ed|ing)$/i.test(w)) ?? npWords[npWords.length - 1];
+          const headEnd = cur + c[1].length + np[1].indexOf(head, np[1].length - npWords.slice(npWords.indexOf(head)).join(' ').length - 1) + head.length;
+          count = spanOf(from, raw, cur, Math.max(cur + c[1].length + 1, headEnd));
+          countNoun = singular(head);
           cur += c[1].length;
         } else {
           count = spanOf(from, raw, cur, phraseEnd);
@@ -956,6 +1004,18 @@ function buildUnit(
       const value = NUMBER_WORDS[word] ?? (/^[2-8]$/.test(word) ? Number(word) : undefined);
       if (value) countValue = value;
     }
+  } else if (pairCount) {
+    // "one advantage and one disadvantage": two answers, one of each.
+    const pair = pairCount;
+    count = spanOf(from, raw, cur, cur + pair[0].length);
+    const aAt = cur + pair[0].indexOf(pair[1]);
+    const bAt = cur + pair[0].lastIndexOf(pair[2]);
+    const a = spanOf(from, raw, aAt, aAt + pair[1].length);
+    const b = spanOf(from, raw, bAt, bAt + pair[2].length);
+    if (a && b) pairHeadings = [a, b];
+    cur += pair[0].length;
+    const connector = /^\s+(?:of|for|in|on|about)(?![\p{L}])/iu.exec(raw.slice(cur, end));
+    if (connector) cur += connector[0].length;
   } else {
     const an = pronounOne ? null : /^(?:an?|one)\s+(example|reason|way|point|detail|use|fact|feature|advantage|disadvantage|benefit|effect|cause|method|function)(?![\p{L}])/iu.exec(afterAction);
     if (an) {
@@ -1005,8 +1065,9 @@ function buildUnit(
   MATERIAL_RE.lastIndex = 0;
   if (pointer && pointer.index > 3 && MATERIAL_RE.test(rest.slice(pointer.index))) focusEnd = Math.min(focusEnd, cur + pointer.index);
   MATERIAL_RE.lastIndex = 0;
-  const hardStop = /[?:;]|\.(?=\s|$)|\s[•◆▪●]\s/.exec(rest);
-  if (hardStop) focusEnd = Math.min(focusEnd, cur + hardStop.index);
+  const hardStop = [...rest.matchAll(/[?:;]|\.(?=\s|$)|\s[•◆▪●]\s/g)]
+    .find(m => m[0] !== '.' || !/(?:\b(?:e\.g|i\.e|etc|approx|Fig|No|c)|\b[A-Z])$/.test(rest.slice(0, m.index)));
+  if (hardStop) focusEnd = Math.min(focusEnd, cur + (hardStop.index ?? 0));
   // A restrictive relative clause after the focus head is a condition.
   const rel = /,?\s+(?:that|which|who)\s+(?=(?:does|do|did|is|are|was|were|can|cannot|could|may|might|would|will|should|has|have)\s+not\b|you\b|could\b|can\b|may\b|might\b|are deemed\b|is deemed\b)/i.exec(raw.slice(cur, focusEnd));
   let relStart = -1;
@@ -1015,6 +1076,13 @@ function buildUnit(
     focusEnd = relStart;
   }
   let focus = spanOf(from, raw, cur, focusEnd);
+  const dangling = focus && /\s+(?:and|or|but|that|which|who)$/i.exec(focus.text);
+  if (focus && dangling) focus = spanOf(from, raw, focus.start, focus.end - dangling[0].length) ?? focus;
+  // "Give two examples from the text": where to look, not what about.
+  if (focus && /^from the (?:text|passage|extract|article|poem|story|document|source|letter|interview|report)s?$/i.test(focus.display)) {
+    conditions.push(focus);
+    focus = null;
+  }
   // "…, and the line l, where:" — the "where" introduces the givens.
   if (focus && /,?\s+where$/i.test(focus.text)) focus = spanOf(from, raw, focus.start, focus.end - (/,?\s+where$/i.exec(focus.text)![0].length)) ?? focus;
   // Where/When/Why … "located" style questions: a trailing participle is
@@ -1036,6 +1104,9 @@ function buildUnit(
     let at = focusEnd + (t.index ?? 0);
     const tEnd = at + t[0].length;
     if (conditions.some(x => at >= x.start && at < x.end)) continue;
+    // "… that you think are the most important": the relative word is the limit's.
+    const rel = /^you\b/i.test(t[0]) ? /\b(?:that|which|who)\s+$/i.exec(raw.slice(Math.max(clause.start, at - 8), at)) : null;
+    if (rel) at -= rel[0].length;
     const participle = PARTICIPLE_BEFORE.exec(raw.slice(Math.max(focusEnd, at - 20), at));
     if (participle && /outside|other than|apart from|excluding|except|not in/i.test(t[0])) at -= participle[0].length;
     if (/^(?:that |which )?you (?:have )?studied|^you studied/i.test(t[0]) && at === focusEnd + (t.index ?? 0)) {
@@ -1090,7 +1161,7 @@ function buildUnit(
   }
   if (!count) {
     const nouns = COUNTED_ANSWER_NOUNS;
-    const pool = (at: number) => /\b(?:the|these|those|all|of)\s+$/i.test(raw.slice(Math.max(clause.start, at - 8), at));
+    const pool = (at: number) => /\b(?:the|these|those|all|of|between)\s+$/i.test(raw.slice(Math.max(clause.start, at - 9), at));
     const c2 = new RegExp(`(?<![\\p{L}\\p{N}])(one|two|three|four|five|six|[2-6])\\s+(?:(?:different|distinct|separate|possible|other|main|major|key)\\s+)?(?:${nouns})(?![\\p{L}])`, 'iu')
       .exec(clauseText);
     // Any plural noun counted in the clause: "Give an account of any two myths".
@@ -1153,10 +1224,10 @@ function buildUnit(
     }
     // "… by the differential equation: v dv/ds = −29.4 −v²" — what is to be
     // shown is printed after the colon.
-    if (colon >= 0 && /^(?:prove|derive|calculate|solve)$/.test(actionKey)) {
+    if (colon >= 0 && /^(?:prove|derive|calculate|solve|balance)$/.test(actionKey)) {
       const eq = spanOf(from, raw, focus.end + colon + 1, end);
-      if (eq && /=/.test(eq.display) && eq.display.length < 120) {
-        if (/^(?:prove|derive)$/.test(actionKey)) focusMore.push(eq);
+      if (eq && /[=→]/.test(eq.display) && eq.display.length < 120) {
+        if (/^(?:prove|derive|balance)$/.test(actionKey)) focusMore.push(eq);
         else if (!use.some(x => x.start === eq.start)) use.push({ ...eq, kind: 'given' });
       }
     }
@@ -1210,7 +1281,7 @@ function buildUnit(
     id: ctx.id, ref: ctx.ref, altGroup: ctx.altGroup,
     action, actionKey, means,
     count, countValue, countNoun,
-    focus, ...(focusMore.length ? { focusMore } : {}), sides, conditions, use,
+    focus, ...(focusMore.length ? { focusMore } : {}), ...(pairHeadings ? { headings: pairHeadings } : {}), sides, conditions, use,
     marks: null, flags,
   };
 }
@@ -1287,6 +1358,8 @@ function givensFor(unit: KPUnit, raws: Array<{ from: 'q' | 'stem'; raw: string; 
   // "the astronaut's weight on Earth" asks for weight, not Earth.
   const beforePrep = unit.focus?.display.toLowerCase().split(/\s+(?:of|on|in|at|for|to|from|with|by|during|when|if|that|which)\s+/)[0] ?? '';
   const head = beforePrep.match(/[\p{L}]+/gu)?.filter(w => w.length > 3 && !/^(?:that|this|with|from|total|value|amount|number|maximum|minimum|average|final|initial)$/.test(w)).pop();
+  const ofWhat = head ? new RegExp(`\\b${head}(?:\\s+of\\s+(?:the\\s+)?[\\p{L}-]+)?`, 'iu').exec(unit.focus?.display.toLowerCase() ?? '') : null;
+  const askedPhrase = ofWhat?.[0];
   for (const { from, raw, pieces } of raws) {
     for (const p of pieces) {
       const text = raw.slice(p.start, p.end);
@@ -1298,7 +1371,8 @@ function givensFor(unit: KPUnit, raws: Array<{ from: 'q' | 'stem'; raw: string; 
       GIVEN_TOKEN.lastIndex = 0;
       if (!tokens.length && !hasGivenValue(text)) continue;
       // G4: never attach a given about the very quantity being asked for.
-      if (head && new RegExp(`\\b${head}`, 'i').test(text) && tokens.length <= 1) continue;
+      // "the heat of reaction" is asked; "the heat of formation of B is …" is given.
+      if (askedPhrase && text.toLowerCase().includes(askedPhrase) && tokens.length <= 1) continue;
       const clauses = text.split(/(?<=[,;])\s+(?=\S)/);
       let offset = p.start;
       for (const cl of clauses) {
@@ -1336,8 +1410,8 @@ const LOCATOR_ONLY = /^\(?(?:(?:para(?:graph)?|Par\.|section|lines?|Alt|Part|Abs
 function listItems(raw: string, from: 'q' | 'stem', start: number, end: number, bySentence = false): KPSpan[] {
   const body = raw.slice(start, end);
   if (!body.trim()) return [];
-  const strong = /[;\n•◆▪●]|(?:^|\s)(?:\d{1,2}\.|\([a-h]\))\s+\S/.test(body);
-  const sep = strong ? /\s*(?:[;\n•◆▪●]+|(?:^|\s)(?:\d{1,2}\.|\([a-h]\))(?=\s))\s*/g
+  const strong = /[;\n•◆▪●]|(?:^|\s)(?:\d{1,2}\.|\([a-h]\)|\(\d{1,2}\))\s+\S/.test(body);
+  const sep = strong ? /\s*(?:[;\n•◆▪●]+|(?:^|\s)(?:\d{1,2}\.|\([a-h]\)|\(\d{1,2}\))(?=\s))\s*/g
     : bySentence ? /(?<=[.?!])\s+/g
       : /\s*(?:,\s*(?:and\s+|or\s+)?|\s+and\s+)\s*/g;
   let ranges: Array<[number, number]> = [];
@@ -1373,7 +1447,7 @@ function listItems(raw: string, from: 'q' | 'stem', start: number, end: number, 
     // A trailing "OR" is the paper's either/or, not part of the item.
     const or = sp && /[.?!]?\s+OR$/.exec(sp.text);
     if (sp && or) sp = spanOf(from, raw, sp.start, sp.end - or[0].length);
-    if (!sp || LOCATOR_ONLY.test(sp.display)) continue;
+    if (!sp || LOCATOR_ONLY.test(sp.display) || /^(?:True|False|True\s+False|Yes|No|Yes\s+No)$/i.test(sp.display)) continue;
     if (sp.display.split(/\s+/).length > 6 && commandMatches(sp.display).some(m => m.index === 0)) break;
     items.push(sp);
   }
@@ -1598,6 +1672,14 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           if (sp) lastUnit.conditions.push(sp);
           continue;
         }
+        if (/^\([^()]{3,120}\)\.?$/.test(text) && lastUnit && !PAREN_COUNT.test(text) && !LOCATOR_ONLY.test(text.replace(/\.$/, ''))
+          && !CARD_RULE.test(text)) {
+          CARD_RULE.lastIndex = 0;
+          const sp = spanOf('q', q, piece.start, piece.end);
+          if (sp) lastUnit.conditions.push(sp);
+          continue;
+        }
+        CARD_RULE.lastIndex = 0;
         // "(Two points, about 50 words in total.)"
         const paren = PAREN_COUNT.exec(text);
         if (paren && lastUnit) {
@@ -1610,7 +1692,7 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           continue;
         }
         if (TAIL_UNIT.test(text)) {
-          const m = /^(\s*)((?:Explain|Justify|Give (?:a )?reasons? for|Support|Illustrate))\s+(your (?:answer|choice))/i.exec(q.slice(piece.start, piece.end));
+          const m = /^(\s*)((?:Explain|Justify|Give (?:a )?reasons? for|Support|Illustrate))\s+(your (?:answers?|choices?))/i.exec(q.slice(piece.start, piece.end));
           if (m) {
             const aStart = piece.start + m[1].length;
             const fStart = aStart + m[2].length + 1;
@@ -1708,7 +1790,9 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         a.focus = b.focus;
         if (!a.conditions.length) a.conditions = [...b.conditions];
         if (!a.count && b.count) { a.count = b.count; a.countValue = b.countValue; a.countNoun = b.countNoun; }
-        if ((EXTENDED.has(a.actionKey.replace(/-.*/, '')) && EXTENDED.has(b.actionKey.replace(/-.*/, ''))) || (b.countValue ?? 0) > 1) a.jointWith = b.id;
+        // Two commands on one object ("Identify and explain the benefits",
+        // "Name and explain one method") are answered together.
+        if (/^\s+and\s+$/i.test(q.slice(a.action.end, b.action.start)) || (EXTENDED.has(a.actionKey.replace(/-.*/, '')) && EXTENDED.has(b.actionKey.replace(/-.*/, ''))) || (b.countValue ?? 0) > 1) a.jointWith = b.id;
       }
       // "Identify three principles … and describe how each principle
       // identified …": the second job is done for each of the first's items.
@@ -1716,7 +1800,8 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         const a = partUnits[i - 1];
         const b = partUnits[i];
         if (!a.action || !b.action || (b.count && !/^each$/i.test(b.count.display)) || !(a.countValue && a.countValue > 1) || a.jointWith) continue;
-        const eachRef = /\beach\b/i.test(`${b.focus?.display ?? ''} ${b.action.display} ${b.count?.display ?? ''}`);
+        const eachRef = /\beach\b/i.test(`${b.focus?.display ?? ''} ${b.action.display} ${b.count?.display ?? ''}`)
+          || (a.countNoun ? [...a.conditions, ...b.conditions].some(c => new RegExp(`\\beach\\s+(?:[\\p{L}-]+\\s+)?${a.countNoun}`, 'iu').test(c.display)) : false);
         if (!eachRef || !/\s+and\s+(?:then\s+)?$/i.test(q.slice(a.action.end, b.action.start))) continue;
         b.count = a.count;
         b.countValue = a.countValue;
@@ -1771,7 +1856,7 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         }
         // "Examine how … one of the following: • Coastal processes" — a card
         // for one option: the option is the item and the choice is made.
-        if (items.length === 1 && isChoice(u, { q, stem }) && u.countValue === 1) {
+        if (items.length === 1 && isChoice(u, { q, stem })) {
           u.item = items[0];
           u.count = null;
           u.countValue = undefined;
@@ -1821,7 +1906,8 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           continue;
         }
         if (items.length >= 2 || (items.length === 1 && /^(?:true-false|tick|compare|contrast|compare-contrast|distinguish)$/.test(u.actionKey))) {
-          const spread = spreadOver(u, items, { q, stem }, nextId, isChoice(u, { q, stem }) && (u.countValue ?? 0) < items.length);
+          const whichOf = /^(?:identify which|which|what|state which|say which|indicate which)/i.test(u.action.display) && /\bof the following\b/i.test(`${u.action.display} ${u.focus?.display ?? ''}`);
+          const spread = spreadOver(u, items, { q, stem }, nextId, whichOf || (isChoice(u, { q, stem }) && (u.countValue ?? 0) < items.length));
           partUnits.splice(i, 1, ...spread);
           i += spread.length - 1;
           if (regionStart >= 0) consumed.push([regionStart, regionEnd]);
@@ -1842,7 +1928,8 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           const header = /\s+(?:True\s+False|Yes\s+No)$/i.exec(item.text);
           const clean = header ? spanOf('q', q, item.start, item.end - header[0].length) ?? item : item;
           const judged = /^(?:true-false|tick)$/.test(leadIn.actionKey);
-          partUnits.push({ ...leadIn, id: nextId(), ref, altGroup: part.altGroup, item: clean, focus: judged ? null : leadIn.focus, count: null, countValue: undefined, countNoun: undefined, conditions: [...leadIn.conditions], use: [...leadIn.use], flags: [...leadIn.flags] });
+          const keepCount = leadIn.count && !/\beach\b|\bthe following\b|^all\b|^both\b/i.test(leadIn.count.display) && !isChoice(leadIn, { q, stem });
+          partUnits.push({ ...leadIn, id: nextId(), ref, altGroup: part.altGroup, item: clean, focus: judged ? null : leadIn.focus, count: keepCount ? leadIn.count : null, countValue: keepCount ? leadIn.countValue : undefined, countNoun: keepCount ? leadIn.countNoun : undefined, conditions: [...leadIn.conditions], use: [...leadIn.use], flags: [...leadIn.flags] });
         }
         usedLeadIns.add(leadIn.id);
       }
@@ -1937,6 +2024,9 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       const byColon = [...clauses].reverse().find(c => /:\s*$/.test(stem.slice(c.start, c.end)));
       for (const clause of byColon ? [byColon, ...clauses.filter(c => c !== byColon)] : clauses) {
         lead = buildUnit(stem, clause, { ref: '', id: `${source.id}#lead`, from: 'stem' });
+        // "Scríobh … Write …": an Irish instruction on a bilingual stem is
+        // passed over for the English one.
+        if (lead?.action && IRISH_FUNCTION.has(lead.action.display.toLowerCase().split(/\s+/)[0])) { lead = null; continue; }
         if (lead) break;
       }
       if (lead) break;
@@ -2009,8 +2099,9 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
   }
 
   for (const unit of units) {
-    // "for each of the following" is the head of a list, not a limit.
-    unit.conditions = unit.conditions.filter(c => !/^(?:for|in) each(?: of the following| case)?$/i.test(c.display));
+    // "for each of the following" is the head of a list, and "Hence or
+    // otherwise" is a permission; neither is a limit.
+    unit.conditions = unit.conditions.filter(c => !/^(?:for|in) each(?: of the following| case)?$|^hence(?:,)?(?: or otherwise)?,?$/i.test(c.display));
   }
   // Nothing could be read: the printed question is the honest view.
   if (units.every(u => u.flags.includes('as-printed'))) return { ...base, reasons: ['command-missing'], cardRules };
@@ -2067,6 +2158,13 @@ export function planRowsFromKeyParts(kp: KeyPartsBreakdown): KeyPartPlanRow[] {
   const rows: KeyPartPlanRow[] = [];
   for (const unit of kp.units) {
     if (unit.jointWith) continue; // drawn together with its partner
+    // "Give reasons for your answer" and "Illustrate your answer" are written
+    // in the answer before them, not in a space of their own.
+    if (/^(?:justify-tail|illustrate-tail)$/.test(unit.actionKey) && rows.length) {
+      const last = rows[rows.length - 1];
+      last.placeholder = unit.actionKey === 'justify-tail' ? 'Your answer, with your reasons' : 'Your answer, with sketches';
+      continue;
+    }
     const partner = kp.units.find(u => u.id !== unit.id && u.jointWith === unit.id);
     const verb = [partner?.action?.display, unit.action?.display].filter(Boolean).join(' and ');
     const ref = unit.ref ? `${unit.ref} ` : '';
