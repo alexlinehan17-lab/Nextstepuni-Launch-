@@ -8,6 +8,7 @@ import { SCHOOLS } from '@/schoolData';
 import {
   SUPPORTED_SCHOOL_IDS,
   isSupportedSchoolId,
+  isValidStudentJoinCodeFormat,
 } from '@/functions/src/schoolJoinPolicy';
 import {
   generateAccessCode,
@@ -17,6 +18,18 @@ import {
 } from '@/functions/src/accessCodes';
 
 describe('school access policy', () => {
+  test('accepts seven-character PwC codes while preserving other school limits', () => {
+    expect(isValidStudentJoinCodeFormat('pwc', 'AB12345')).toBe(true);
+    expect(isValidStudentJoinCodeFormat('pwc', 'AB1234')).toBe(false);
+    for (const { id } of SCHOOLS.filter(school => school.id !== 'pwc')) {
+      expect(isValidStudentJoinCodeFormat(id, 'AB12345')).toBe(false);
+      expect(isValidStudentJoinCodeFormat(id, 'AB123456')).toBe(true);
+    }
+    expect(isValidStudentJoinCodeFormat('pwc', null)).toBe(false);
+    expect(isValidStudentJoinCodeFormat('pwc', 1234567)).toBe(false);
+    expect(isValidStudentJoinCodeFormat('pwc', 'A'.repeat(64))).toBe(true);
+    expect(isValidStudentJoinCodeFormat('pwc', 'A'.repeat(65))).toBe(false);
+  });
   test('the server allowlist stays aligned with the school picker', () => {
     expect([...SUPPORTED_SCHOOL_IDS].sort()).toEqual(SCHOOLS.map(school => school.id).sort());
   });

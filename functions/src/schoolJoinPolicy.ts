@@ -20,3 +20,9 @@ export function isSupportedSchoolId(value: unknown): value is typeof SUPPORTED_S
   return typeof value === "string"
     && (SUPPORTED_SCHOOL_IDS as readonly string[]).includes(value);
 }
+
+/** PwC's owner-managed research access uses a seven-character student code. */
+export function isValidStudentJoinCodeFormat(school: string, code: unknown): code is string {
+  const minimumLength = school === "pwc" ? 7 : 8;
+  return typeof code === "string" && code.length >= minimumLength && code.length <= 64;
+}
