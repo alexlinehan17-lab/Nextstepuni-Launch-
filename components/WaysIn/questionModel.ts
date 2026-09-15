@@ -296,6 +296,36 @@ const ADDITIONAL_COMMAND_GROUPS: Array<{
     commonTrap: 'Leaving the requested structure implicit or mixing separate stages together.',
   },
   {
+    surfaces: ['tell', 'relate', 'recount', 'narrate'],
+    requiredAction: 'Give an account of what happened, in order, with the key details.',
+    answerShape: 'The events or story in sequence → the details that matter to the question.',
+    commonTrap: 'Commenting on the story without actually telling what happens.',
+  },
+  {
+    surfaces: ['point out'],
+    requiredAction: 'Pick out and name the features or details the question asks for.',
+    answerShape: 'Each feature named clearly, with where it is seen where that helps.',
+    commonTrap: 'Describing in general without pointing to the particular features.',
+  },
+  {
+    surfaces: ['copy'],
+    requiredAction: 'Reproduce the printed graph, diagram or table accurately where the question says.',
+    answerShape: 'An accurate copy with the same labels, scale and features.',
+    commonTrap: 'A rough copy that loses the labels or scale the later parts depend on.',
+  },
+  {
+    surfaces: ['multiply out'],
+    requiredAction: 'Expand the expression fully and simplify the result.',
+    answerShape: 'Each term multiplied out → like terms collected → the simplified expression.',
+    commonTrap: 'Missing a term or not collecting like terms at the end.',
+  },
+  {
+    surfaces: ['reflect on', 'review'],
+    requiredAction: 'Think the matter through and set out your considered view with reasons.',
+    answerShape: 'Your view → reasons or evidence for it → a clear conclusion.',
+    commonTrap: 'Retelling the material without giving a considered view on it.',
+  },
+  {
     surfaces: ['circle'],
     requiredAction: 'Mark the permitted option clearly for every statement or item supplied.',
     answerShape: 'One unambiguous selection for each printed item.',
@@ -800,7 +830,9 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
   if (!prefix) return true;
   if (/(?:,|[—–]|(?:^|\s)-)\s*$/.test(clausePrefix)) return true;
   if (/\b(?:and|then)\s+$/i.test(clausePrefix)) return true;
-  if (/^briefly$/i.test(prefix)) return true;
+  // "Briefly tell …", "Clearly show …", "Now calculate …": a manner or
+  // sequence adverb before the imperative.
+  if (/^(?:briefly|clearly|carefully|neatly|fully|accurately|concisely|precisely|now|next|then|also|finally|first|firstly|secondly|thirdly|hence|therefore|thus)$/i.test(prefix)) return true;
   if (/^(?:part|question|section)\s+[a-z0-9()]+:\s*$/i.test(prefix)) return true;
   if (/^(?:according to|based on|from|given|in relation to|referring to|using|with reference to)\b.{0,220}$/i.test(prefix)) {
     // SEC lead-ins do not consistently include a comma (“Using the data

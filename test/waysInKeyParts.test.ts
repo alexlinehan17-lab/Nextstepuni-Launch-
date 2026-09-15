@@ -48,6 +48,7 @@ describe('key parts across every built card', () => {
       const raw = { q: s.questionText ?? '', stem: s.stem ?? '' };
       const spans: KPSpan[] = [
         ...kp.cardRules,
+        ...(kp.setting ?? []),
         ...kp.units.flatMap(u => [u.action, u.count, u.focus, ...(u.sides ?? []), ...u.conditions, ...u.use]
           .filter((x): x is KPSpan => Boolean(x))),
       ];
@@ -155,6 +156,57 @@ describe('the parts a student meets most', () => {
     const kp = buildKeyParts(source('Qu’est-ce qui a empêché Marie-Solène de dire au revoir à ses élèves ? (Section 1)'));
     expect(kp.mode).not.toBe('decomposed');
     expect(kp.reasons).toContain('non-english');
+  });
+
+  test('what the question sets up before it asks is shown, never dropped', () => {
+    const kp = buildKeyParts(source('You are asked to address a group of farmers who are thinking about sowing a multi‐species sward on their farm. Providing evidence from the article and with your own knowledge, construct an argument convincing them why it would be good to sow a multi‐species sward on their farm. Your plan should include at least four specific benefits.', { subjectLabel: 'Agricultural Science' }));
+    expect(kp.setting?.map(s => s.display)).toEqual(['You are asked to address a group of farmers who are thinking about sowing a multi‐species sward on their farm']);
+    const [unit] = kp.units;
+    expect(unit.actionKey).toBe('argue');
+    expect(unit.count?.display).toBe('at least four specific benefits');
+    expect(unit.countValue).toBe(4);
+  });
+
+  test('a sentence that says how many points, or how to back the answer up, belongs to the job before it', () => {
+    const kp = buildKeyParts(source('Explain some of the similarities and differences between the type of musical experience presented in IMAGE 1 and that presented in IMAGE 2. Make three points in your response. Support your answer with reference to both of the images.', { subjectLabel: 'English' }));
+    expect(kp.units).toHaveLength(1);
+    expect(kp.units[0].count?.display).toBe('three points');
+    expect(kp.units[0].conditions.map(c => c.display)).toContain('Support your answer with reference to both of the images');
+  });
+
+  test('an instruction the lexicon did not know still gets its own part', () => {
+    const kp = buildKeyParts(source('Write a biographical note on Euripides and comment on his contribution to Greek drama. Tell briefly the plot of any one of his plays.', { subjectLabel: 'Ancient Greek' }));
+    expect(kp.units.map(u => u.action?.display)).toEqual(['Write', 'comment on', 'Tell briefly']);
+    expect(kp.units[2].focus?.display).toBe('the plot of any one of his plays');
+  });
+
+  test('“any two of the …” counts two out of the pool it names', () => {
+    const [unit] = buildKeyParts(source('Name any two of the plastic manufacturing processes shown at A, B and C.')).units;
+    expect(unit.count?.display).toBe('any two');
+    expect(unit.countValue).toBe(2);
+    expect(unit.focus?.display).toBe('the plastic manufacturing processes shown at A, B and C');
+  });
+
+  test('a question word keeps its noun, and a counted noun is not repeated', () => {
+    expect(slots(buildKeyParts(source('What type of sculpture is shown in Photograph B?')).units[0])).toMatchObject({ do: 'What type of sculpture', about: 'is shown in Photograph B' });
+    expect(slots(buildKeyParts(source('What two things did the herald ask on behalf of Cyrus?')).units[0])).toMatchObject({ do: 'What', n: 'two things', about: 'did the herald ask on behalf of Cyrus' });
+  });
+
+  test('a composing task gives one part per job it lists', () => {
+    const kp = buildKeyParts(source('Write an editorial in which you: give your response to this incident, warn your readers of the dangers inherent in attacking books in this way and urge them to engage in peaceful protest against this and any other form of censorship.', { subjectLabel: 'English' }));
+    expect(kp.units.map(u => u.action?.display)).toEqual(['Write', 'give', 'warn', 'urge']);
+    expect(kp.units[0].focus?.display).toBe('an editorial');
+  });
+
+  test('in a mathematical subject “Find” asks for a value', () => {
+    const [unit] = buildKeyParts(source('g(x) = 2x² + 5x + 6, where x∈ℝ. Find ∫ g(x) dx', { subjectLabel: 'Mathematics' })).units;
+    expect(unit.actionKey).toBe('calculate');
+  });
+
+  test('a relative clause about the answer stays in what it is about', () => {
+    const [unit] = buildKeyParts(source('Outline the advice you would give the farmers.')).units;
+    expect(unit.focus?.display).toBe('the advice you would give the farmers');
+    expect(unit.conditions).toEqual([]);
   });
 
   test('a single part keeps the printed count of spaces', () => {

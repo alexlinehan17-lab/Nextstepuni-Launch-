@@ -16,6 +16,12 @@ stage, **Break it down**, shows them; **Plan** gives one space per part.
 | Given | values for a calculation | a half-life of 8 days |
 | Use | supplied material, options to choose from, where to look | Fig. C-2 · (paragraph 6) |
 
+Above the parts, **The question tells you** shows the printed statements the
+question sets up before it asks — a role ("Imagine you are the historian
+Thucydides."), an audience, the fact the question builds on — and **For the
+whole answer** shows card-wide rules ("Answer in English", "Relevant supporting
+work must be shown").
+
 ## Rules nothing may break
 
 - **Every slot is lifted.** Each value is a character range of the printed
@@ -39,6 +45,11 @@ stage, **Break it down**, shows them; **Plan** gives one space per part.
 - Yes/no, either/or and quiz questions; the statement before "Do you agree?"
   or "Give details."; "Name two." after a question; "Give your answer in its
   simplest form" as a limit on the calculation before it.
+- A composing task's job list after "in which you:" / "you should:" gives one
+  part per job, whatever its verb ("promote …, impress …, and nominate …").
+- Sentences after a job belong to it: "Make three points in your response."
+  is its count, "Support your response with reference to the poem." and
+  "Your plan should include at least four specific benefits." its limits.
 - Plan rows come from the parts: one per item, heading or counted point.
 
 ## How it is measured
@@ -46,10 +57,11 @@ stage, **Break it down**, shows them; **Plan** gives one space per part.
 - `test/waysInKeyPartsGold.test.ts` scores the parser against 220
   hand-written breakdowns (`test/fixtures/waysInKeyPartsGold.json`) and
   fails if any slot drops below its floor.
-- Changes were driven by students' readings: batches of 150 unseen cards,
-  each judged good / ok / confusing / wrong, with every "wrong" put to a
-  skeptical examiner before it counted. When changing the parser, check a
-  fresh sample the same way; the gold set alone rewards matching a format.
+- Changes are driven by students' readings of the WHOLE bank: every card is
+  judged good / ok / confusing / wrong by a reviewer reading it as a student,
+  and the faults are clustered into rules. When changing the parser, diff the
+  whole bank before and after and read the changed cards; the gold set alone
+  rewards matching a format.
 
 ## Card data it cannot fix
 
