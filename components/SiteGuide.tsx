@@ -32,6 +32,7 @@ export type GuideAction =
 
 interface GuideCard {
   id: string;
+  desktopCapture?: string;
   chip: string;
   title: string;
   what: string;
@@ -42,6 +43,7 @@ interface GuideCard {
 const CARDS: GuideCard[] = [
   {
     id: 'home',
+    desktopCapture: 'home-full-height',
     chip: 'Start here',
     title: 'A little room for what’s next.',
     what: 'Your home brings the next chapter, your week’s study and your island together. Pick something small and keep going.',
@@ -170,7 +172,7 @@ const CardImage: React.FC<{ card: GuideCard; mobile: boolean }> = ({ card, mobil
   if (failed) return <p className="guide-capture-missing">Screen capture unavailable. You can still open this page below.</p>;
   return <figure className={`guide-capture ${mobile ? 'guide-capture-mobile' : ''} ${expanded ? 'guide-capture-expanded' : ''}`}>
     <button type="button" onClick={() => setExpanded(value => !value)} aria-expanded={expanded} aria-label={`${expanded ? 'Collapse' : 'Expand'} ${card.title} screenshot`} className="guide-capture-button">
-      <img src={`/assets/guide/${CAPTURE_RELEASE}/${mobile ? 'mobile' : 'desktop'}/${card.id}.webp`} alt={`${card.title} — screenshot from the app`} data-guide-capture="real-app" onError={() => setFailed(true)} />
+      <img src={`/assets/guide/${CAPTURE_RELEASE}/${mobile ? 'mobile' : 'desktop'}/${mobile ? card.id : (card.desktopCapture ?? card.id)}.webp`} alt={`${card.title} — screenshot from the app`} data-guide-capture="real-app" onError={() => setFailed(true)} />
     </button>
     <figcaption><span>{mobile ? 'On your phone' : 'Inside the app'}</span><span><Maximize2 size={13} aria-hidden="true" />{expanded ? 'Tap to return' : 'Tap to expand'}</span></figcaption>
   </figure>;

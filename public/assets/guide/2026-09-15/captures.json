@@ -9,7 +9,10 @@
       "device": "desktop",
       "width": 1456,
       "height": 1437,
-      "bytes": 72490
+      "bytes": 72338,
+      "file": "home-full-height.webp",
+      "appCommit": "4a337d2d",
+      "capture": "Viewport capture at the page height; fixed sidebar extends to the bottom."
     },
     {
       "id": "journey",
