@@ -168,6 +168,7 @@ const MEANS: Record<string, string> = {
   'illustrate-tail': 'Add sketches or diagrams that support what you write.',
   amend: 'Change what is there so it does what is asked — keep the rest working.',
   balance: 'Make both sides match — the same number of each atom and the same charge.',
+  'on-drawing': 'Mark it on the drawing itself — clearly and in the right place.',
   'as-printed': '',
 };
 
@@ -547,8 +548,9 @@ function clausesOf(raw: string, s: Piece): Clause[] {
     const joined = /(?:,\s*(?:and\s+)?|\s+and\s+|\s+then\s+|[.;:]\s*)(?:briefly\s+|clearly\s+)?$/i.test(between)
       || /[.?!;:]/.test(between);
     if (!joined) return;
-    // Keep "briefly"/"clearly" with the command it modifies.
-    const adverb = /(?:briefly|clearly)\s+$/i.exec(raw.slice(cmds[i - 1].end, cmd.index));
+    // Keep "briefly"/"clearly" — and "hence", which ties this task to the
+    // last — with the command they belong to.
+    const adverb = /(?:briefly|clearly|hence,?|hence or otherwise,?)\s+$/i.exec(raw.slice(cmds[i - 1].end, cmd.index));
     const cut = adverb ? cmd.index - adverb[0].length : cmd.index;
     const connector = /(?:,?\s*and,?\s+hence,?\s*|,?\s+hence,?\s*|,\s*(?:and\s+)?|\s+and\s+|\s+then\s+)$/i.exec(raw.slice(cursor, cut));
     out.push({ start: cursor, end: connector ? cut - connector[0].length : cut, command: null });
@@ -763,6 +765,7 @@ function buildUnit(
   let action: KPSpan | null = null;
   let actionKey = 'other';
   let means = '';
+  let henceStart = -1;
   const adverb = /^(?:briefly|clearly|carefully)\s+/i.exec(raw.slice(cur, end));
   let cmd = command && command.index <= cur + (adverb?.[0].length ?? 0) + 2 ? command : null;
   if (!cmd && command && /^\p{Lu}/u.test(command.match) && command.index - cur < 160
@@ -778,7 +781,10 @@ function buildUnit(
     // material when it names what is supplied ("Given the following …,").
     const prefix = raw.slice(cur, command.index);
     if (/,\s*$/.test(prefix) || /^(?:and|then)\s+$/i.test(prefix.trim() + ' ')) {
-      if (/,\s*$/.test(prefix)) {
+      if (/^hence(?:,| or otherwise,)?\s*$/i.test(prefix)) {
+        // "hence, find …": "hence" ties the job to the last and stays with it.
+        henceStart = cur;
+      } else if (/,\s*$/.test(prefix)) {
         const sp = spanOf(from, raw, cur, command.index);
         if (sp && /^(?:Given|From)\s+(?:the|this|these)\s/i.test(sp.display)) openerUse.push({ ...sp, kind: 'material' });
         else if (sp) conditions.push(sp);
@@ -788,6 +794,7 @@ function buildUnit(
     }
   }
   if (cmd) {
+    if (henceStart >= 0) cur = henceStart;
     let aEnd = actionTail(raw, cmd.end, end, cmd.match.replace(/^(?:briefly|clearly|carefully)\s+/i, '').split(/\s+/)[0]);
     // A question word from the lexicon takes its full printed form:
     // "How many", "What did", "Which".
@@ -798,7 +805,7 @@ function buildUnit(
       aEnd = whNounEnd(raw, cur, aEnd, end);
     }
     action = spanOf(from, raw, cur, aEnd);
-    actionKey = keyFor(raw.slice(cur, aEnd), raw.slice(aEnd, end));
+    actionKey = keyFor(raw.slice(henceStart >= 0 ? cmd.index : cur, aEnd), raw.slice(aEnd, end));
     means = MEANS[actionKey] ?? (firstSentence(cmd.demand.requiredAction) || MEANS.state);
     cur = aEnd;
   } else {
@@ -848,9 +855,11 @@ function buildUnit(
     }
     if (verb) {
       const vStart = cur + verb[0].length - verb[1].length;
-      if (vStart > cur) { const hs = spanOf(from, raw, cur, vStart); if (hs) conditions.push(hs); }
+      // "hence, find …" — "hence" ties the job to the last one and stays with it.
+      const hence = /^hence(?:,| or otherwise,)?\s*$/i.test(raw.slice(cur, vStart));
+      if (vStart > cur && !hence) { const hs = spanOf(from, raw, cur, vStart); if (hs) conditions.push(hs); }
       const aEnd = actionTail(raw, vStart + verb[1].length, end, verb[1].split(/\s+/)[0]);
-      action = spanOf(from, raw, vStart, aEnd);
+      action = spanOf(from, raw, hence ? cur : vStart, aEnd);
       actionKey = keyFor(raw.slice(vStart, aEnd), raw.slice(aEnd, end));
       means = MEANS[actionKey] ?? MEANS.state;
       cur = aEnd;
@@ -1270,7 +1279,22 @@ function buildUnit(
     actionKey = 'define';
     means = MEANS.define;
   }
+  if (/^(?:state|tick|prove|include|other|identify)$/.test(actionKey) && /^(?:indicate|show|include|mark|identify)\b/i.test(action.display)
+    && conditions.some(c => /^(?:on|in) (?:your|the) (?:drawing|diagram|sketch|graph)/i.test(c.display))) {
+    actionKey = 'on-drawing';
+    means = MEANS['on-drawing'];
+  }
   if (!countNoun && countValue && countValue > 1) countNoun = headNoun(focus);
+  if (!pairHeadings && !count && focus && !sides) {
+    const pair = /^(?:an?|one)\s+((?:[\p{L}-]+\s+){0,2}[\p{L}-]+)\s+and\s+(?:an?|one)\s+((?:[\p{L}-]+\s+){0,2}[\p{L}-]+?)(?=\s+(?:between|of|in|for|that|which|to|on|with)\b|$)/iu.exec(focus.text);
+    if (pair) {
+      const aAt = focus.start + pair[0].indexOf(pair[1]);
+      const bAt = focus.start + pair[0].lastIndexOf(pair[2]);
+      const a = spanOf(from, raw, aAt, aAt + pair[1].length);
+      const b = spanOf(from, raw, bAt, bAt + pair[2].length);
+      if (a && b) pairHeadings = [a, b];
+    }
+  }
   if (quoted) {
     if (!focus) focus = quoted;
     else use.unshift({ ...quoted, kind: 'material' });
@@ -1608,6 +1632,8 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
   const stemCtx = stemContextPieces(stem, stemPieces);
   if (stemCtx.givens.length) contexts.push({ from: 'stem', raw: stem, pieces: stemCtx.givens });
   const refersToPicture = PICTURE_REFERENCE.test(q);
+  // How many labelled sources the stem names ("Text A", "Text B").
+  const stemNamedCount = new Set([...stem.matchAll(NAMED_RE)].map(m => m[0].toLowerCase())).size;
 
   const alts = splitAlternatives(q);
   const banner = alts.length > 1 ? 'answer-one-alt' as const : undefined;
@@ -1994,6 +2020,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         for (const u of shared) {
           // "Text B" in the part: "Text A" in the stem belongs to another part.
           if (ownNamed.length && new RegExp(NAMED_RE.source).test(u.display) && !ownNamed.some(o => o.display.toLowerCase() === u.display.toLowerCase())) continue;
+          // A part that never points at a text, image or document ("Explain two
+          // arguments that Socrates makes in the Crito") does not borrow the
+          // stem's labelled ones.
+          if (u.from === 'stem' && stemNamedCount >= 2 && new RegExp(NAMED_RE.source).test(u.display) && !/\b(?:texts?|extracts?|documents?|sources?|images?|photographs?|pictures?|figures?|fig|tables?|graphs?|maps?|diagrams?|passages?|poems?|cartoons?)\b/i.test(q)) continue;
           if (unit.use.some(x => x.display.toLowerCase() === u.display.toLowerCase() || (x.kind === 'material' && headOf(x.display) === headOf(u.display)))) continue;
           unit.use.push(u);
         }
@@ -2106,7 +2136,7 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
   for (const unit of units) {
     // "for each of the following" is the head of a list, and "Hence or
     // otherwise" is a permission; neither is a limit.
-    unit.conditions = unit.conditions.filter(c => !/^(?:for|in) each(?: of the following| case)?$|^hence(?:,)?(?: or otherwise)?,?$/i.test(c.display));
+    unit.conditions = unit.conditions.filter(c => !/^(?:for|in) each(?: of the following| case)?$|^hence(?:,)? or otherwise,?$/i.test(c.display));
   }
   // Nothing could be read: the printed question is the honest view.
   if (units.every(u => u.flags.includes('as-printed'))) return { ...base, reasons: ['command-missing'], cardRules };
@@ -2206,11 +2236,13 @@ export function planRowsFromKeyParts(kp: KeyPartsBreakdown): KeyPartPlanRow[] {
       }
       continue;
     }
+    // "Detail 1", "Detail 2": the label already says how many.
+    const countedSummary = n > 1 ? keyPartSummary({ ...unit, count: null }) : summary;
     for (let i = 1; i <= n; i += 1) {
       rows.push({
         id: `${unit.id}-${i}`, unitId: unit.id,
         label: n > 1 ? `${ref}${cap(noun)} ${i}` : `${ref}${cap(clip(verb || 'Answer'))}`,
-        summary,
+        summary: countedSummary,
         placeholder: n > 1 ? `Your ${ordinal(i)} ${noun}` : 'Your response to this part',
       });
     }
