@@ -287,6 +287,10 @@ const keyFor = (surface: string, following: string): string => {
 const QUANTITY = /^(?:(?:the|an?|its|their|his|her)\s+)?(?:[\p{L}-]+\s+){0,2}(?:values?|area|volume|length|distance|displacement|speed|velocity|time|mass|weight|force|angle|coordinates?|equations?|expression|roots?|derivative|gradient|slope|range|sum|product|probability|mean|median|mode|number|cost|price|rate|percentage|ratio|height|radius|diameter|perimeter|circumference|magnitude|acceleration|energy|power|resistance|current|voltage|concentration|moles?|yield|limit|integral|point|points|intersection|inverse|period|frequency|wavelength|work|momentum|tension|pressure|density|temperature|charge|capacitance|efficiency|profit|loss|interest|tax|amount|size|measure|dimensions?|centre|center|image|solution|solutions|matrix|determinant|modulus|argument|domain|breakeven|margin|elasticity|multiplier|output|surplus)\b|^[a-zA-Zθφλμ](?:\s*[=,)]|\s*$|\s+(?:and|if|when|such|in terms)\b)|^[\d(]|^\|/iu;
 
 const CALC_KEYS = new Set(['calculate', 'solve', 'convert', 'estimate']);
+/** How much a command asks for, to pick one gloss for two joined verbs. */
+const JOB_WEIGHT = (key: string) => (/^(?:state|name|label|identify|list|give|indicate|tick|choice|mark-answer|include)$/.test(key) ? 1
+  : /^(?:describe|outline|brief-describe|define|write|draw|sketch|complete|suggest)$/.test(key) ? 2
+    : /^(?:explain|explain-how|explain-why|discuss|analyse|evaluate|assess|compare|contrast|construct|calculate|solve|prove|derive|justify|account-of)$/.test(key) ? 3 : 2);
 
 // Imperatives the shared command lexicon lacks. Used only at a clause start,
 // so "locate" inside a sentence is never mistaken for an instruction.
@@ -585,7 +589,7 @@ const YOUR_SHOULD_COUNT = /\b((?:at least|at most|exactly|no more than|up to)\s+
 const WHOLE_SENTENCE = /^(?:\(?\s*Unless otherwise (?:stated|specified|indicated)\b|(?:Relevant |All )?(?:supporting )?(?:work(?:ings?)?|calculations) must be shown\b|You (?:may|can) (?:use|include|draw|refer)\b)/i;
 // A sentence that says how the answer must be given, not what to answer. It
 // limits the task before it ("Give your answer in its simplest form").
-const TAIL_CONDITION = /^(?:Indicate your (?:choice|sector|option|answer|chosen)\b|(?:Put|Place) a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b(?!\s+(?:one|two|three|four|five|six|[2-6])\b)|Note\s*:|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
+const TAIL_CONDITION = /^(?:Indicate your (?:choice|sector|option|answer|chosen)\b|(?:Put|Place) a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b(?!\s+(?:one|two|three|four|five|six|[2-6])\b)|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
 // "Name two." / "Give four details." after a question: how many, for that question.
 const COUNT_SENTENCE = /^(?:Give|Name|State|List|Mention|Identify|Write down)\s+(?:(?:any|at least)\s+)?(one|two|three|four|five|six)(?:\s+([\p{L}]+(?: of information)?))?\s*[.?!]?\s*$/iu;
 const DETAILS_SENTENCE = /^Give (?:full |more )?details\s*[.?!]?\s*$/i;
@@ -627,7 +631,10 @@ function clausesOf(raw: string, s: Piece): Clause[] {
       cmds.push({ demand: { surface: m[1], requiredAction: '', answerShape: '', commonTrap: '' }, index, end: index + m[1].length, match: m[1] });
     }
   }
-  for (const m of raw.slice(s.start, s.end).matchAll(SECOND_VERB)) {
+  // "The alkaline earth metals make up Group 2 and include …" is a statement:
+  // its "and include" is prose, not a second instruction.
+  const statement = /^\s*(?:The|A|An|This|These|Those|It|They|There|Its|Their|Some|Many|Most|All)\s/.test(raw.slice(s.start, s.end)) && !commandsIn(raw, s.start, s.end).length;
+  for (const m of statement ? [] : raw.slice(s.start, s.end).matchAll(SECOND_VERB)) {
     const word = m.slice(1).find(Boolean) as string;
     const index = s.start + (m.index ?? 0) + m[0].length - word.length;
     if (cmds.some(c => Math.abs(c.index - index) < 2)) continue;
@@ -1888,7 +1895,8 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         const text = q.slice(piece.start, piece.end).trim();
         if (!text) continue;
         const lastUnit = partUnits[partUnits.length - 1];
-        if (/\b(?:may|can) be (?:estimated|assumed|omitted|ignored)|\bneed not\b|\bare not (?:required|needed)\b/i.test(text) && /^(?:Note|Any|All|You)\b/.test(text)) {
+        if ((/\b(?:may|can) be (?:estimated|assumed|omitted|ignored|used|drawn|shown)|\bneed not\b|\bare not (?:required|needed)\b/i.test(text) && /^\(?\s*(?:Note|Any|All|You|The|Hidden|Construction|Dimensions|Fillets|Chamfers)\b/.test(text))
+          || /^\(?\s*Note\s*:/i.test(text) || /^\(?\s*Scale\s+\d+\s*:\s*\d+\b/i.test(text)) {
           const sp = spanOf('q', q, piece.start, piece.end);
           if (sp && !cardRules.some(r => r.display === sp.display)) cardRules.push(sp);
           continue;
@@ -2030,7 +2038,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           if (!lastStatement) break;
           const statement = spanOf('q', q, lastStatement.start, lastStatement.end);
           if (!statement) break;
-          if (!unit.focus && !/^(?:yes-no|either-or|true-false|justify-tail|illustrate-tail|as-printed)$/.test(unit.actionKey)) unit.focus = statement;
+          // "draw and label: the fixed costs … and the variable costs …": a
+          // command opening a list is about the list, not the statement.
+          const opensList = unit.action && /^\s*:/.test(q.slice(unit.action.end, unit.action.end + 3));
+          if (!unit.focus && !opensList && !/^(?:yes-no|either-or|true-false|justify-tail|illustrate-tail|as-printed)$/.test(unit.actionKey)) unit.focus = statement;
           else if (unit.focus && (STATEMENT_FOCUS.test(unit.focus.display) || /^(?:it|they|this|these|he|she|its|their)\b|\beach(?: of them)?$/i.test(unit.focus.display))) {
             unit.use.unshift({ ...statement, kind: 'material' });
           }
@@ -2078,7 +2089,12 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         if (!a.count && b.count) { a.count = b.count; a.countValue = b.countValue; a.countNoun = b.countNoun; }
         // Two commands on one object ("Identify and explain the benefits",
         // "Name and explain one method") are answered together.
-        if (/^\s+and\s+$/i.test(q.slice(a.action.end, b.action.start)) || (EXTENDED.has(a.actionKey.replace(/-.*/, '')) && EXTENDED.has(b.actionKey.replace(/-.*/, ''))) || (b.countValue ?? 0) > 1) a.jointWith = b.id;
+        if (/^\s+and\s+$/i.test(q.slice(a.action.end, b.action.start)) || (EXTENDED.has(a.actionKey.replace(/-.*/, '')) && EXTENDED.has(b.actionKey.replace(/-.*/, ''))) || (b.countValue ?? 0) > 1) {
+          a.jointWith = b.id;
+          // "Determine and indicate the true length": the shown gloss is the
+          // bigger of the two jobs, not the smaller.
+          if (JOB_WEIGHT(a.actionKey) > JOB_WEIGHT(b.actionKey)) { b.actionKey = a.actionKey; b.means = a.means; }
+        }
       }
       // "Identify three principles … and describe how each principle
       // identified …": the second job is done for each of the first's items.
@@ -2173,9 +2189,16 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           const lead = u.conditions.find(c => c.from === 'q' && c.start >= regionStart && /^\s*$/.test(q.slice(regionStart, c.start)));
           if (lead) { regionStart = lead.end + (/^[.!?]/.test(q.slice(lead.end, lead.end + 1)) ? 1 : 0); moved = true; }
         }
-        const limitAfter = u.conditions.filter(c => c.from === 'q' && c.start > regionStart).map(c => c.start);
+        const limitAfter = [...u.conditions, ...cardRules].filter(c => c.from === 'q' && c.start > regionStart).map(c => c.start);
         const listEnd = Math.min(regionEnd, partEnd, ...limitAfter);
         if (regionStart >= 0 && regionStart < listEnd) items = listItems(q, 'q', regionStart, listEnd, u.actionKey === 'true-false');
+        // "given the following data: • Speed 20 m/s • …": supplied values,
+        // not items to answer.
+        if (items.length && /\b(?:the following|these)\s+(?:data|details|information|motion|specifications?|dimensions|values|measurements|readings|costs|figures)(?=\s*(?::|below|shown|given|supplied|\(|$))/i.test(q.slice(u.action.start, regionStart))) {
+          for (const it of items) if (!u.use.some(x => x.display === it.display)) u.use.push({ ...it, kind: 'given' });
+          consumed.push([regionStart, listEnd]);
+          continue;
+        }
         if (regionStart >= 0 && items.length) {
           for (const m of q.slice(regionStart, listEnd).matchAll(LOCATOR_RE)) {
             const sp = spanOf('q', q, regionStart + (m.index ?? 0), regionStart + (m.index ?? 0) + m[0].length);
@@ -2398,12 +2421,14 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
   // Subject and card-wide readings of the command, givens, marks.
   const dcg = /^dcg-/.test(source.id) || /^dcg$|design (?:&|and) communication graphics/i.test(source.subjectLabel);
   const mathsSubject = /^(?:maths|mathematics|applied[- ]maths|physics|chemistry|engineering|construction[- ]studies|technology)$/i.test(source.subjectLabel.trim());
+  // Where "Show …" is a proof; elsewhere it is drawn or set out.
+  const proofSubject = /^(?:maths|mathematics|applied[- ]maths|physics|chemistry)$/i.test(source.subjectLabel.trim());
   const multipleChoice = cardRules.some(r => /A, B, C or D/.test(r.display));
   const underlined = /the underlined (?:term|word|phrase)s?\s+(?:is|are)\s+['‘"“]([^'’"”]{1,60})['’"”]/i.exec(stem);
   for (const unit of units) {
     // "Show" proves only in a mathematical subject. In a drawing subject it
     // puts the thing on the drawing; elsewhere it sets it out.
-    if (!mathsSubject && !dcg && unit.actionKey === 'prove' && /^(?:(?:clearly|also|now)\s+)?show\b/i.test(unit.action?.display ?? '') && !/^that\b/i.test(unit.focus?.display ?? '')) {
+    if (!proofSubject && !dcg && unit.actionKey === 'prove' && /^(?:(?:clearly|also|now)\s+)?show\b/i.test(unit.action?.display ?? '') && !/^that\b/i.test(unit.focus?.display ?? '')) {
       const drawn = /\b(?:sketch|sketches|drawing|drawings|draw|diagram|diagrams)\b/i.test(`${stem} ${q}`);
       unit.actionKey = drawn ? 'show-drawing' : 'describe';
       unit.means = MEANS[unit.actionKey];
@@ -2416,7 +2441,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       unit.means = MEANS.calculate;
     }
     const dcgVerb = (unit.action?.display ?? '').replace(/^(?:clearly|carefully|neatly|also|now|then|hence)\s+/i, '');
-    if (dcg && /^show\s*$/i.test(dcgVerb) && unit.focus && !/^(?:that|how|why)\b/i.test(unit.focus.display)) {
+    if (dcg && /^plot\s*$/i.test(dcgVerb)) {
+      unit.actionKey = 'construct';
+      unit.means = MEANS.construct;
+    } else if (dcg && /^show\s*$/i.test(dcgVerb) && unit.focus && !/^(?:that|how|why)\b/i.test(unit.focus.display)) {
       // "Clearly show all points of contact": put it on the drawing.
       unit.actionKey = 'on-drawing';
       unit.means = MEANS['on-drawing'];
@@ -2447,7 +2475,7 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       if (!unit.use.some(u => u.kind === 'given')) unit.flags.push('values-on-paper');
     }
     if (unit.use.some(u => u.kind === 'material' && VISUAL.test(u.display)) && !source.figure) unit.flags.push('needs-figure');
-    unit.marks = partMarks.get(unit.id) ?? (units.length === 1 ? totalMarks : null);
+    unit.marks = partMarks.get(unit.id) ?? (units.filter(u => !u.jointWith).length === 1 && !unit.jointWith ? totalMarks : null);
     if (unit.actionKey === 'wh-plain') {
       // A high tariff alone does not make "What do the following letters
       // stand for?" a developed answer; a question about a role, an impact or
