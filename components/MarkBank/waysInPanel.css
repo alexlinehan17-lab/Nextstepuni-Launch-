@@ -773,6 +773,25 @@
   font-style: normal;
 }
 
+.mb-wi-kp-setting {
+  margin: 0 0 12px;
+  color: var(--mb-ink-2);
+  font: 500 12.5px/1.5 'DM Sans', system-ui, sans-serif;
+}
+
+.mb-wi-kp-setting span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--mb-label);
+  font: 700 9px/1.5 'DM Sans', system-ui, sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.mb-wi-kp-setting p {
+  margin: 0 0 4px;
+}
+
 .mb-wi-kp-rules em + em::before {
   content: ' · ';
   color: var(--mb-label);
