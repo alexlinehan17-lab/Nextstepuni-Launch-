@@ -9345,6 +9345,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q6-a", topicId: "bio-2-4", conceptId: "endocrine-glands-produce-hormones",
     section: "A", questionRef: "2022 OL Q6(a)",
+    stem: "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case.",
     questionText: "Hormones are produced by endocrine glands.",
     tariffModel: {"kind":"fixed","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -9358,6 +9359,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q6-b", topicId: "bio-2-5", conceptId: "where-fertilisation-occurs",
     section: "A", questionRef: "2022 OL Q6(b)",
+    stem: "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case.",
     questionText: "Fertilisation usually occurs in the fallopian tube.",
     tariffModel: {"kind":"fixed","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -9371,6 +9373,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q6-c", topicId: "bio-2-6", conceptId: "which-organ-produces-hydrochloric-acid",
     section: "A", questionRef: "2022 OL Q6(c)",
+    stem: "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case.",
     questionText: "Hydrochloric acid is produced by the liver.",
     tariffModel: {"kind":"fixed","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -9384,6 +9387,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q6-d", topicId: "bio-2-6", conceptId: "which-organ-produces-bile",
     section: "A", questionRef: "2022 OL Q6(d)",
+    stem: "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case.",
     questionText: "Bile is produced by the kidney.",
     tariffModel: {"kind":"fixed","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -9397,6 +9401,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q6-e", topicId: "bio-2-4", conceptId: "nerve-cells-produce-neurotransmitters",
     section: "A", questionRef: "2022 OL Q6(e)",
+    stem: "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case.",
     questionText: "Neurotransmitters are produced by nerve cells.",
     tariffModel: {"kind":"fixed","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -9410,6 +9415,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q6-f", topicId: "bio-3-2", conceptId: "what-produces-antibiotics",
     section: "A", questionRef: "2022 OL Q6(f)",
+    stem: "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case.",
     questionText: "Antibiotics are produced by viruses.",
     tariffModel: {"kind":"fixed","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -9423,6 +9429,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q6-g", topicId: "bio-2-6", conceptId: "salivary-glands-produce-amylase",
     section: "A", questionRef: "2022 OL Q6(g)",
+    stem: "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case.",
     questionText: "Amylase is produced by the salivary glands.",
     tariffModel: {"kind":"fixed","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [

@@ -67,6 +67,48 @@
    "set": {
     "section": "C"
    }
+  },
+  "bio-2022-ol-q6-a": {
+   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
+   "set": {
+    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
+   }
+  },
+  "bio-2022-ol-q6-b": {
+   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
+   "set": {
+    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
+   }
+  },
+  "bio-2022-ol-q6-c": {
+   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
+   "set": {
+    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
+   }
+  },
+  "bio-2022-ol-q6-d": {
+   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
+   "set": {
+    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
+   }
+  },
+  "bio-2022-ol-q6-e": {
+   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
+   "set": {
+    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
+   }
+  },
+  "bio-2022-ol-q6-f": {
+   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
+   "set": {
+    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
+   }
+  },
+  "bio-2022-ol-q6-g": {
+   "reason": "Each statement card showed the bare statement with no instruction. Restored the question's printed instruction from the 2022 Ordinary Level paper (Sections A and B), page 7, Question 6, as the stem shared by every statement.",
+   "set": {
+    "stem": "State whether each of the following statements is true or false by putting a tick (✓) in the appropriate box in each case."
+   }
   }
  },
  "physics": {
@@ -1604,6 +1646,18 @@
     "questionRef": "2023 HL Paper 2 Q8(b)(ii)",
     "questionText": "In Ireland, players’ word-game scores are approximately normally distributed with a mean of 3·87 and a standard deviation of 0·36. A random sample of 64 Galway players has a mean score of 3·74. A local newspaper claims that Galway players have a different mean score to players in Ireland. Carry out a hypothesis test at the 5% level of significance to test this claim. State your null hypothesis, alternative hypothesis, conclusion, and a reason for your conclusion."
    }
+  },
+  "maths-2022-hl-p2-q10-c": {
+   "reason": "The question stopped after the printed context and lost the ask set in its own block beneath it. Restored from the 2022 Higher Level Paper 2, page 29, Q10(c), each block read through the same span-aware reader and joined in printed order.",
+   "set": {
+    "questionText": "20 relay teams took part in the competition. For any particular team, the probability that they drop the baton at some point during the competition is 0∙1. Find the probability that at most 2 teams drop the baton during the competition. Give your answer correct to 4 decimal places."
+   }
+  },
+  "maths-2024-hl-p1-q2-b": {
+   "reason": "The PDF text layer flattens the exponent and reads the i of \"a + bi\" as a second b. The glyph trace of the 2024 Higher Level Paper 1, page 6, Q2(b) prints a raised 9 after the bracket and glyph #1861 (the i of Q2(a)) after the b; this restores both and changes no word.",
+   "set": {
+    "questionText": "Use de Moivre’s theorem to write (1 −√3 i)⁹ in the form a+ bi, where a, b∈ℝ."
+   }
   }
  },
  "computer-science": {
@@ -1966,6 +2020,60 @@
    "reason": "The paper prints a standalone \"OR\" between the two branches of this part and paper.py drops it, so the regenerated question reads as two asks to answer rather than the choice the SEC set. Restored from the deck this card already shipped with, which carries the page's own word.",
    "set": {
     "questionText": "State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter."
+   }
+  }
+ },
+ "economics": {
+  "econ-2025-hl-q14-a-iii-agri": {
+   "reason": "The authored question reworded the paper (it dropped \"one other way\" and the printed context the ask depends on). Restored word for word from the 2025 Higher Level paper, page 26, Q14(a)(iii): the context sentence as the stem, the ask and the tick instruction as the question, and this card's own printed sector option.",
+   "set": {
+    "stem": "Online shopping shows how advances in technology can influence Ireland’s market economy.",
+    "questionText": "Outline one other way that changes in technology may affect how either of the following sectors operate. Indicate your sector by ticking (✓) the relevant box below and outline your answer.\nAgriculture"
+   }
+  },
+  "econ-2025-hl-q14-a-iii-sport": {
+   "reason": "The authored question reworded the paper (it dropped \"one other way\" and the printed context the ask depends on). Restored word for word from the 2025 Higher Level paper, page 26, Q14(a)(iii): the context sentence as the stem, the ask and the tick instruction as the question, and this card's own printed sector option.",
+   "set": {
+    "stem": "Online shopping shows how advances in technology can influence Ireland’s market economy.",
+    "questionText": "Outline one other way that changes in technology may affect how either of the following sectors operate. Indicate your sector by ticking (✓) the relevant box below and outline your answer.\nSports and fitness"
+   }
+  }
+ },
+ "applied-maths": {
+  "am-2021-ol-1-i": {
+   "reason": "The stem ran every sibling ask into one sentence and dropped the end of the motorbike paragraph. Rebuilt from the 2021 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader: the car scenario and the printed \"Calculate\" that governs (i)-(iv).",
+   "set": {
+    "stem": "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate"
+   }
+  },
+  "am-2021-ol-1-ii": {
+   "reason": "The stem ran every sibling ask into one sentence and dropped the end of the motorbike paragraph. Rebuilt from the 2021 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader: the car scenario and the printed \"Calculate\" that governs (i)-(iv).",
+   "set": {
+    "stem": "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate"
+   }
+  },
+  "am-2021-ol-1-iii": {
+   "reason": "The stem ran every sibling ask into one sentence and dropped the end of the motorbike paragraph. Rebuilt from the 2021 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader: the car scenario and the printed \"Calculate\" that governs (i)-(iv).",
+   "set": {
+    "stem": "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate"
+   }
+  },
+  "am-2021-ol-1-iv": {
+   "reason": "The stem ran every sibling ask into one sentence and dropped the end of the motorbike paragraph. Rebuilt from the 2021 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader: the car scenario and the printed \"Calculate\" that governs (i)-(iv).",
+   "set": {
+    "stem": "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate"
+   }
+  },
+  "am-2021-ol-1-v": {
+   "reason": "The stem ran every sibling ask into one sentence and cut the motorbike paragraph off before \"It continues at this speed until it passes Q. The motorbike takes one minute to travel from P to Q.\", which (v) and (vi) depend on. Rebuilt from the 2021 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader.",
+   "set": {
+    "stem": "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1). It continues at this speed until it passes Q. The motorbike takes one minute to travel from P to Q."
+   }
+  },
+  "am-2021-ol-1-vi": {
+   "reason": "The stem ran every sibling ask into one sentence and cut the motorbike paragraph off before \"It continues at this speed until it passes Q. The motorbike takes one minute to travel from P to Q.\", which (v) and (vi) depend on. Rebuilt from the 2021 Ordinary Level paper, page 2, Question 1, block by block through the same span-aware reader.",
+   "set": {
+    "stem": "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1). It continues at this speed until it passes Q. The motorbike takes one minute to travel from P to Q."
    }
   }
  }

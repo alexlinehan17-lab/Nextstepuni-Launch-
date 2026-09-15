@@ -4984,7 +4984,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
     id: "maths-2022-hl-p2-q10-c", topicId: "maths-1-2", conceptId: "relay-teams-took-part-competition-any",
     section: "B", questionRef: "2022 HL Paper 2 Q10(c)",
-    questionText: "20 relay teams took part in the competition. For any particular team, the probability that they drop the baton at some point during the competition is 0∙1",
+    questionText: "20 relay teams took part in the competition. For any particular team, the probability that they drop the baton at some point during the competition is 0∙1. Find the probability that at most 2 teams drop the baton during the competition. Give your answer correct to 4 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-hl-p2-q10-c-r1", kind: "anyN", verbatim: "1st line of solution\nFinds 0∙9", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["1st line of solution\nFinds 0∙9","Fully substituted formulae for two of P(0), P(1), and P(2)","Fully substituted formulae for P(0), P(1), and P(2)"],"perOptionSteps":[3,2,5]} },
@@ -7354,7 +7354,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p1-q2-b", topicId: "maths-4-4", conceptId: "moivre-theorem-write-form",
     section: "B", questionRef: "2024 HL Paper 1 Q2(b)",
-    questionText: "Use de Moivre’s theorem to write (1 −√3 i) 9 in the form a+ b, where a, b∈ℝ",
+    questionText: "Use de Moivre’s theorem to write (1 −√3 i)⁹ in the form a+ bi, where a, b∈ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p1-q2-b-r1", kind: "anyN", verbatim: "Work of merit in finding r or 𝜃", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit-1: Answer in the form 512(−1 + 0i). Note: Candidates must engage with polar form or de Moivre’s theorem in order to be awarded any credit. Consider the solution as involving 4 steps: 1. Finds r 2. Finds 𝜃 3. Applies de Moivre’s Theorem 4. Finishes (answer in rectangular form). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in finding r or 𝜃","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },

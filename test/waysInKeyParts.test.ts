@@ -107,6 +107,15 @@ describe('the parts a student meets most', () => {
     expect(kp.units.every(u => u.focus?.display === kp.units[1].focus?.display)).toBe(true);
   });
 
+  test('a second job done for each counted item shares its spaces', () => {
+    const kp = buildKeyParts(source('Name any two methods of vegetative propagation used by plants and for each named method, give one example of a plant that carries out that method of vegetative propagation.'));
+    const rows = planRowsFor(kp, { basis: 'flexible', prompts: [] });
+    expect(rows.map(r => r.label)).toEqual(['Method 1', 'Method 2']);
+    expect(rows[0].summary).toContain('methods of vegetative propagation used by plants');
+    expect(rows[0].summary).toContain('a plant that carries out that method');
+    expect(rows[0].summary).toContain('one example');
+  });
+
   test('a distinction names both sides', () => {
     const [unit] = buildKeyParts(source('Distinguish between artisan produce and a niche market.')).units;
     expect(unit.action?.display).toBe('Distinguish between');
