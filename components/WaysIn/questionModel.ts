@@ -296,6 +296,12 @@ const ADDITIONAL_COMMAND_GROUPS: Array<{
     commonTrap: 'Leaving the requested structure implicit or mixing separate stages together.',
   },
   {
+    surfaces: ['argue'],
+    requiredAction: 'Build the case for the side you are given, with reasons and evidence.',
+    answerShape: 'The position → reasons with evidence → a clear conclusion for that side.',
+    commonTrap: 'Arguing both sides when the question gives you one.',
+  },
+  {
     surfaces: ['redraw', 'reproduce'],
     requiredAction: 'Draw it again, accurately, with the features the question names.',
     answerShape: 'An accurate drawing → the named features added and labelled.',
@@ -729,10 +735,7 @@ export interface CommandMatch {
 }
 
 const NOUN_LIKE_COMMANDS = new Set(['label', 'list', 'name', 'outline', 'state']);
-const START_ONLY_COMMANDS = new Set([
-  'include', 'add', 'change', 'modify', 'extend', 'update', 'amend', 'edit', 'redraw', 'reproduce',
-  'tell', 'relate', 'recount', 'narrate', 'copy', 'review', 'reflect on', 'multiply out', 'point out',
-]);
+const START_ONLY_COMMANDS = new Set(['include', 'add', 'change', 'extend', 'update', 'edit', 'copy']);
 const QUESTION_COMMANDS = new Set([
   'how', 'how can', 'how does', 'how far', 'how would', 'in which', 'through which', 'to what extent',
   'to which', 'under what', 'what', 'what could', 'what does', 'what distinguishes', 'what is', 'what is meant by', 'what term',
@@ -850,10 +853,20 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
     return false;
   }
 
+  // A word quoted or defined is not an instruction: "A one-star rating means –
+  // Give it a Miss!", "a club called Study Together".
+  if (/\b(?:means|meaning|reads|says|said|called|titled|entitled|labelled|named)\s*[–—:-]?\s*[‘“"']?$/i.test(before.trimEnd() + ' ') || /\b(?:means|meaning|reads|says|called|titled|entitled)\s*[–—:-]\s*$/i.test(before)) return false;
+  // "time and place in which the novel is set": the noun, not "Place a tick".
+  if (key === 'place' && /^\s+(?:in which|where|of|and|,|\.)/i.test(after)) return false;
+
   // Everyday verbs the paper also uses in prose ("… and include the element")
   // are instructions only when they open the sentence.
+  // A lead-in comma ("In your account, include …") or an imperative earlier
+  // in the sentence ("Draw a sketch and include …") still makes it one.
   if (START_ONLY_COMMANDS.has(key) && prefix
-    && !/^(?:briefly|clearly|carefully|neatly|fully|now|then|also|finally|hence)$/i.test(prefix)) return false;
+    && !/^(?:briefly|clearly|carefully|neatly|fully|now|then|also|finally|hence)$/i.test(prefix)
+    && !/[,:;]\s*$/.test(clausePrefix)
+    && !/^(?:draw|sketch|name|describe|write|explain|outline|state|give|identify|list|label|complete|show|design|create|open|review|use|make|prepare|draft)\b/i.test(prefix)) return false;
 
   // Imperatives are accepted at the start of a printed sentence/part, after a
   // lead-in comma, or as an explicitly joined second instruction. Dictionary

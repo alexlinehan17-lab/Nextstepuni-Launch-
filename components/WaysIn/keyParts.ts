@@ -178,6 +178,7 @@ const MEANS: Record<string, string> = {
   'brief-comment': 'A short comment — a point or two, with a reason.',
   persuade: 'Win the reader over — a clear case, with reasons they will accept.',
   step: 'A step to carry out on the computer before the parts that earn marks.',
+  'brief-job': 'One of the things your piece must do — develop it in its own paragraph.',
   'show-drawing': 'Show it in a clear, labelled drawing, with notes where they help.',
   copy: 'Reproduce it accurately — the same labels, scale and features.',
   'as-printed': '',
@@ -287,6 +288,10 @@ const keyFor = (surface: string, following: string): string => {
 const QUANTITY = /^(?:(?:the|an?|its|their|his|her)\s+)?(?:[\p{L}-]+\s+){0,2}(?:values?|area|volume|length|distance|displacement|speed|velocity|time|mass|weight|force|angle|coordinates?|equations?|expression|roots?|derivative|gradient|slope|range|sum|product|probability|mean|median|mode|number|cost|price|rate|percentage|ratio|height|radius|diameter|perimeter|circumference|magnitude|acceleration|energy|power|resistance|current|voltage|concentration|moles?|yield|limit|integral|point|points|intersection|inverse|period|frequency|wavelength|work|momentum|tension|pressure|density|temperature|charge|capacitance|efficiency|profit|loss|interest|tax|amount|size|measure|dimensions?|centre|center|image|solution|solutions|matrix|determinant|modulus|argument|domain|breakeven|margin|elasticity|multiplier|output|surplus)\b|^[a-zA-Zθφλμ](?:\s*[=,)]|\s*$|\s+(?:and|if|when|such|in terms)\b)|^[\d(]|^\|/iu;
 
 const CALC_KEYS = new Set(['calculate', 'solve', 'convert', 'estimate']);
+/** How much a command asks for, to pick one gloss for two joined verbs. */
+const JOB_WEIGHT = (key: string) => (/^(?:state|name|label|identify|list|give|indicate|tick|choice|mark-answer|include)$/.test(key) ? 1
+  : /^(?:describe|outline|brief-describe|define|write|draw|sketch|complete|suggest)$/.test(key) ? 2
+    : /^(?:explain|explain-how|explain-why|discuss|analyse|evaluate|assess|compare|contrast|construct|calculate|solve|prove|derive|justify|account-of)$/.test(key) ? 3 : 2);
 
 // Imperatives the shared command lexicon lacks. Used only at a clause start,
 // so "locate" inside a sentence is never mistaken for an instruction.
@@ -360,7 +365,7 @@ const OPENS_TASK = /^\s+(?:Give|Write|Find|Calculate|Explain|Describe|Name|State
 function sentences(raw: string, start: number, end: number): Piece[] {
   const out: Piece[] = [];
   let s = start;
-  const re = /[.?!]\)?(?=\s+[\p{Lu}(“"‘\d•◆▪])|\n{1,}/gu;
+  const re = /[.?!][)”’"]*(?=\s+[\p{Lu}(“"‘\d•◆▪])|\n{1,}/gu;
   re.lastIndex = start;
   let m: RegExpExecArray | null;
   while ((m = re.exec(raw)) && m.index < end) {
@@ -468,7 +473,7 @@ const LEADING = /^(?:If\b[^,]{3,80},|Using (?:your knowledge of|notes and freeha
 const WH_FORMS = [
   'what information does this give about', 'to what extent do you agree or disagree with', 'to what extent',
   'what evidence is there', 'what evidence do you find', 'what do you consider', 'what do you think',
-  'do you think', 'do you agree', 'how would you best describe', 'what is the purpose of', 'what is meant by',
+  'do you agree or disagree with', 'do you agree or disagree that', 'do you agree or disagree', 'do you think', 'do you agree', 'how would you best describe', 'what is the purpose of', 'what is meant by',
   'what effect', 'what caused', 'what makes', 'what is', 'what are', 'what was', 'what were', 'what does', 'what did',
   'how does', 'how did', 'how do', 'how is', 'how are', 'how can', 'how would', 'how will', 'how could', 'how should', 'how might', 'how many', 'how much',
   'what will', 'what would', 'what could', 'what should', 'why would', 'why should', 'why might',
@@ -490,6 +495,7 @@ const COUNT_AFTER_CMD = /^(?:(any\s+(?:one|two|three|four|five|six)|at least\s+(
 
 // Each trigger begins a condition that runs to the next clause boundary.
 const CONDITION_TRIGGERS = [
+  '(?:developing|supporting|illustrating) your (?:response|answer|discussion|points?|views?|argument) (?:with|by) (?:close |detailed )?reference to',
   'with reference to', 'with specific reference to', 'with particular reference to', 'by reference to', 'in relation to', 'referring to',
   'making (?:detailed )?reference in your answer to',
   'in the context of', 'in the light of', 'according to', 'using evidence from', 'using your knowledge of', 'using the following',
@@ -502,10 +508,10 @@ const CONDITION_TRIGGERS = [
   'refer in your answer to', 'in your answer refer to', 'include discussion of', 'include reference to', 'refer to',
   'from the (?:text|passage|extract|article|poem|story|document|source|letter|interview|report)s?',
   'in Ireland', 'outside Ireland', 'in Europe', 'in the EU', 'in the European Union', 'on your drawing',
-  'if', 'unless', 'assuming', 'given that', 'either(?! of\\b)', 'where(?= [a-zA-Z](?:\\s*,|\\s*[∈=<>≤≥]))', 'in English', 'in Irish',
+  'if', 'unless', 'assuming', 'given that', 'where(?= [a-zA-Z](?:\\s*,|\\s*[∈=<>≤≥]))', 'in English', 'in Irish',
   'in the form', 'in its simplest form', 'in simplest form', 'as a fraction', 'as a decimal', 'as a percentage',
   'by ticking', 'with a tick', 'by placing a tick', 'placing a tick', 'by putting', 'giving your answer',
-  'you think', 'you consider',
+
   'when', 'whenever', 'available to', 'required to', 'required for', 'to a scale of', 'on your drawing', 'as part of',
   'for (?:a|an|the) (?:open |closed |irish |local |national |global )?(?:economy|business|home|workplace|farm|week|month|year|day|household|community|society|region|country|school|family|consumer|employee|employer)',
   'in (?:a|an|the) (?:workplace|business|home|farm|laboratory|region|circuit|economy|school|community)',
@@ -525,6 +531,11 @@ function triggersIn(raw: string, start: number, end: number, actionKey = ''): Re
   return [...raw.slice(start, end).matchAll(TRIGGER_RE)].filter(t => {
     const at = start + (t.index ?? 0);
     if (GERUND_TRIGGER.test(t[0]) && AFTER_PREPOSITION.test(raw.slice(Math.max(0, at - 12), at))) return false;
+    // "the number of people using the services …": a participle after a
+    // noun describes it. A limit is set off: ", using …", "Using …".
+    const agent = /\b(?:people|persons|customers|consumers|students|pupils|farmers|users|workers|employees|businesses|firms|companies|households|children|adults|patients|athletes|players|families|visitors|tourists|drivers|shoppers|individuals|those)\s+$/i;
+    if (/^(?:giving|stating|showing|including)$/i.test(t[0]) && !/(?:^|[,(;:–—]\s*|\b(?:and|or|by|when|while|before|after|without)\s+)$/i.test(raw.slice(Math.max(0, at - 12), at)) && at > start) return false;
+    if (/^using\b/i.test(t[0]) && agent.test(raw.slice(Math.max(0, at - 16), at))) return false;
     if (/^(?:wh-|explain-how|to-what-extent)/.test(actionKey) && QUESTION_TIME_TRIGGER.test(t[0])) return false;
     // "Describe what happens during the primary stage", "Outline two
     // challenges when starting a new business": the occasion is what the
@@ -563,7 +574,9 @@ const MATERIAL_ADJ = /\b(?:the|this|these)\s+(?:aerial|Ordnance Survey|OS|weathe
 const notMaterial = (text: string, index: number, match: string) =>
   (/^\S+\s+tables?$/i.test(match) && /\b(?:at|around|of|on|under|beside|across)\s+$/i.test(text.slice(Math.max(0, index - 12), index)))
   // The grid the answers go in: "Fill out the table".
-  || /\b(?:fill (?:out|in)|complete|copy)\s+$/i.test(text.slice(Math.max(0, index - 14), index));
+  || /\b(?:fill (?:out|in)|complete|copy)\s+$/i.test(text.slice(Math.max(0, index - 14), index))
+  // "Write the text of a talk", "the text for a podcast": the student's own writing.
+  || (/^the texts?$/i.test(match) && /^\s+(?:of|for)\s+(?:a|an|the|your)\s+(?:[\p{L}-]+\s+){0,2}(?:talk|speech|podcast|article|blog|letter|review|introduction|address|commentary|pitch|dialogue|report|radio|contribution|presentation|feature|editorial|diary|interview|announcement)/iu.test(text.slice(index + match.length, index + match.length + 60)));
 const NAMED_RE = /\b(?:Fig\.?\s*[A-Z]?-?\d+|Figure\s+[A-Z0-9]+|(?:Document|Source|Extract|Image|Photograph|Table|Text|TEXT|Graph|Diagram|Map)\s+[A-Z0-9]+(?:\s+on Paper\s+[A-Z])?)\b/g;
 const LOCATOR_RE = /\((?:para(?:graph)?|Par\.|section|lines?|Alt|Part|Abschnitt|Absatz|Zeile|párrafo|parágrafo|paragraphe|paragrafo|sezione|dalis|część|akapit|línea|ligne|riga|kappale|odsek|bekezdés)\s*[\d\s–-]+\)|\(\s*\d+\s+(?:dalis|bekezdés|odsek|kappale|rész)\s*\)|\bAlt\s+\d+\b|\b(?:paragraph|para\.?|Par\.|section)\s+\d+\b|\blines?\s+\d+\s*[–-]\s*\d+\b/gi;
 const OPTIONS_RE = /\[[^\]]*\/[^\]]*\]/g;
@@ -578,14 +591,14 @@ const SUPPORT_TAIL = /^(?:Support|Develop|Back up)\s+your\s+(?:answer|response|d
 // your response.": how many points, for the job before it.
 const POINTS_SENTENCE = /^(?:Develop|Make|Argue|Present|Offer|Discuss)\s+((?:at least|any)\s+)?(one|two|three|four|five|six)\s+((?:[\p{L}-]+\s+){0,2}?(?:points?|reasons?|examples?|ways?|arguments?|benefits?|recommendations?|features?|factors?|ideas?|aspects?))(?![\p{L}])/iu;
 // "Your plan should include at least four specific benefits."
-const YOUR_SHOULD = /^Your\s+[\p{L}-]+(?:\s+[\p{L}-]+)?\s+(?:should|must)\s+/iu;
+const YOUR_SHOULD = /^(?:Your\s+[\p{L}-]+(?:\s+[\p{L}-]+)?|The\s+[\p{L}-]+\s+you\s+(?:give|write|deliver|make|produce|present))\s+(?:should|must)\s+/iu;
 const YOUR_SHOULD_COUNT = /\b((?:at least|at most|exactly|no more than|up to)\s+)?(one|two|three|four|five|six|seven|eight)\s+((?:[\p{L}-]+\s+){0,2}?[\p{L}-]+s)(?![\p{L}])/iu;
 // Printed for the whole answer: drawing conventions, "work must be shown",
 // a permission.
 const WHOLE_SENTENCE = /^(?:\(?\s*Unless otherwise (?:stated|specified|indicated)\b|(?:Relevant |All )?(?:supporting )?(?:work(?:ings?)?|calculations) must be shown\b|You (?:may|can) (?:use|include|draw|refer)\b)/i;
 // A sentence that says how the answer must be given, not what to answer. It
 // limits the task before it ("Give your answer in its simplest form").
-const TAIL_CONDITION = /^(?:Indicate your (?:choice|sector|option|answer|chosen)\b|(?:Put|Place) a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b(?!\s+(?:one|two|three|four|five|six|[2-6])\b)|Note\s*:|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
+const TAIL_CONDITION = /^(?:Indicate your (?:choice|sector|option|answer|chosen)\b|(?:Put|Place) a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b(?!\s+(?:one|two|three|four|five|six|[2-6])\b)|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
 // "Name two." / "Give four details." after a question: how many, for that question.
 const COUNT_SENTENCE = /^(?:Give|Name|State|List|Mention|Identify|Write down)\s+(?:(?:any|at least)\s+)?(one|two|three|four|five|six)(?:\s+([\p{L}]+(?: of information)?))?\s*[.?!]?\s*$/iu;
 const DETAILS_SENTENCE = /^Give (?:full |more )?details\s*[.?!]?\s*$/i;
@@ -610,8 +623,9 @@ const SECOND_VERB = /(?:,\s*and|\s(?:and|then))\s+(?:briefly\s+|clearly\s+|fully
 
 // The jobs a composing task lists after "you should:" / "in which you:":
 // "promote your preferred theme …, impress the committee …, and nominate …".
+const JOB_LIST_MARK = 'job-list';
 const JOB_LIST_LEAD = /\b(?:you (?:should|must|will|need to|are asked to)|in which you|where you|in which they|which should)\s*:\s*/i;
-const JOB_VERBS = 'explore|introduce|provide|warn|urge|share|promote|impress|nominate|reflect on|reflect|recommend|offer|persuade|convince|encourage|invite|advise|inform|express|highlight|consider|celebrate|thank|welcome|challenge|propose|argue|give|state|outline|discuss|describe|explain|identify|name|list|include|mention|recall|imagine|tell|compare|evaluate|assess|examine|present|set out|respond to|respond|suggest|create|design|develop|make|select|choose|convey|capture|reveal|show|demonstrate|justify|comment on|speculate|predict|acknowledge|address|defend|criticise|praise|appeal|ask|answer|summarise|analyse|interpret|review|rank|rate|detail|pay tribute|apologise|remind|announce|question|call on';
+const JOB_VERBS = 'explore|introduce|provide|warn|urge|share|promote|impress|nominate|reflect on|reflect|recommend|offer|persuade|convince|encourage|invite|advise|inform|express|highlight|consider|celebrate|thank|welcome|challenge|propose|argue|give|state|outline|discuss|describe|explain|identify|name|list|include|mention|recall|imagine|tell|compare|evaluate|assess|examine|present|set out|respond to|respond|suggest|create|design|develop|make|select|choose|convey|capture|reveal|show|demonstrate|justify|comment on|speculate|predict|acknowledge|address|defend|criticise|praise|appeal|ask|answer|summarise|analyse|interpret|review|rank|rate|detail|pay tribute|apologise|remind|announce|question|call on|seek to|attempt to|try to|aim to';
 
 /** Split a task sentence into one clause per command ("Name … and explain …"). */
 function clausesOf(raw: string, s: Piece): Clause[] {
@@ -623,11 +637,16 @@ function clausesOf(raw: string, s: Piece): Clause[] {
     const verbAt = new RegExp(`(?:^(?:[-–•]\\s*)?|,\\s*(?:and\\s+)?|\\s+and\\s+|;\\s*(?:and\\s+)?|\\s[-–•]\\s+)(${JOB_VERBS})(?![\\p{L}])`, 'giu');
     for (const m of raw.slice(from, s.end).matchAll(verbAt)) {
       const index = from + (m.index ?? 0) + m[0].length - m[1].length;
-      if (cmds.some(c => Math.abs(c.index - index) < 2)) continue;
-      cmds.push({ demand: { surface: m[1], requiredAction: '', answerShape: '', commonTrap: '' }, index, end: index + m[1].length, match: m[1] });
+      const known = cmds.findIndex(c => Math.abs(c.index - index) < 2);
+      // Marked, so a short-answer gloss is not given to a job the piece develops.
+      if (known >= 0) { cmds[known] = { ...cmds[known], demand: { ...cmds[known].demand, commonTrap: JOB_LIST_MARK } }; continue; }
+      cmds.push({ demand: { surface: m[1], requiredAction: '', answerShape: '', commonTrap: JOB_LIST_MARK }, index, end: index + m[1].length, match: m[1] });
     }
   }
-  for (const m of raw.slice(s.start, s.end).matchAll(SECOND_VERB)) {
+  // "The alkaline earth metals make up Group 2 and include …" is a statement:
+  // its "and include" is prose, not a second instruction.
+  const statement = /^\s*(?:The|A|An|This|These|Those|It|They|There|Its|Their|Some|Many|Most|All)\s/.test(raw.slice(s.start, s.end)) && !commandsIn(raw, s.start, s.end).length;
+  for (const m of statement ? [] : raw.slice(s.start, s.end).matchAll(SECOND_VERB)) {
     const word = m.slice(1).find(Boolean) as string;
     const index = s.start + (m.index ?? 0) + m[0].length - word.length;
     if (cmds.some(c => Math.abs(c.index - index) < 2)) continue;
@@ -947,6 +966,9 @@ function buildUnit(
     actionKey = keyFor(raw.slice(henceStart >= 0 ? cmd.index : cur, aEnd), raw.slice(aEnd, end));
     // A verb the lexicon has no reading for gets no gloss rather than a wrong one.
     means = MEANS[actionKey] ?? (firstSentence(cmd.demand.requiredAction) || (actionKey === 'other' ? '' : MEANS.state));
+    // A job in a composing brief ("In your talk you should: give …") is
+    // developed in the piece, not answered in a line.
+    if (cmd.demand.commonTrap === JOB_LIST_MARK && /^(?:state|name|give|list|identify|other|tick|label)$/.test(actionKey)) means = MEANS['brief-job'];
     cur = aEnd;
   } else {
     // "By 1715, what was …?" / "Apart from ditches, what did …?": an opening
@@ -1192,7 +1214,7 @@ function buildUnit(
     const connector = /^\s+(?:of|for|in|on|about)(?![\p{L}])/iu.exec(raw.slice(cur, end));
     if (connector) cur += connector[0].length;
   } else {
-    const an = pronounOne ? null : /^(?:an?|one)\s+(example|reason|way|point|detail|use|fact|feature|advantage|disadvantage|benefit|effect|cause|method|function)(?![\p{L}])/iu.exec(afterAction);
+    const an = pronounOne ? null : /^(?:an?|one)\s+(example|reason|way|point|detail|use|fact|feature|advantage|disadvantage|benefit|effect|cause|method|function)(?![\p{L}])(?!\s+(?:article|film|story|writer|length|page|programme|documentary|piece|film|film-maker|report|magazine|book|poem)\b)/iu.exec(afterAction);
     if (an) {
       count = spanOf(from, raw, cur, cur + an[0].length);
       countNoun = an[1];
@@ -1361,7 +1383,7 @@ function buildUnit(
     const c2 = new RegExp(`(?<![\\p{L}\\p{N}])(one|two|three|four|five|six|[2-6])\\s+(?:(?:different|distinct|separate|possible|other|main|major|key)\\s+)?(?:${nouns})(?![\\p{L}])`, 'iu')
       .exec(clauseText);
     // Any plural noun counted in the clause: "Give an account of any two myths".
-    const c3 = /(?<![\p{L}\p{N}])(?:any\s+|at least\s+)?(two|three|four|five|six|[2-6])\s+(?:(?:different|distinct|separate|possible|other|main|major|key|named|specific|important)\s+)?([\p{L}-]{3,}s)(?![\p{L}])/iu.exec(clauseText);
+    const c3 = /(?<![\p{L}\p{N}])(?:any\s+|at least\s+)?(two|three|four|five|six|[2-6])\s+(?:(?:most|least)\s+[\p{L}-]+\s+)?(?:(?:different|distinct|separate|possible|other|main|major|key|named|specific|important)\s+)?([\p{L}-]{3,}s)(?![\p{L}])/iu.exec(clauseText);
     const hit = c2 && !pool(clause.start + c2.index) ? c2
       : c3 && !pool(clause.start + c3.index) && !/^(?:years|hours|minutes|seconds|marks|words|times|days|weeks|months|metres|pages|lines|sides|decimal|places)$/i.test(c3[2])
         && !new RegExp(`^(?:${MEANINGFUL_DATA_UNIT.source})$`, 'iu').test(c3[2]) ? c3 : null;
@@ -1443,7 +1465,7 @@ function buildUnit(
     const verbSplit = /\s+(?:differs?|is different|are different|compares?|contrasts?)\s+(?:from|with|to)\s+/i.exec(focus.text);
     // "the extent to which" joins no sides; the replacement keeps offsets.
     const ftext = focus.text.replace(/\bthe extent to which\b/gi, m => m.replace(/ /g, '_'));
-    const split = verbSplit ?? /\s+(?:and|with|from|to)\s+(?!the same\b|which\b|whom\b|what\b|how\b)/i.exec(ftext);
+    const split = verbSplit ?? /\s+(?:and|with|from|to)\s+(?!the same\b|which\b|whom\b|what\b|how\b|each\b|every\b|at least\b|both\b|one of\b)/i.exec(ftext);
     const last = verbSplit ? verbSplit.index : split ? ftext.lastIndexOf(split[0]) : -1;
     // Two sides are two short things ("artisan produce and a niche market"),
     // not the last "and" of a long clause ("social position and status").
@@ -1460,7 +1482,7 @@ function buildUnit(
   if (/\btrue or false\b/i.test(clauseText) && /^(?:state|identify|tick|other|wh-plain|write)$/.test(actionKey)) {
     actionKey = 'true-false';
     means = MEANS['true-false'];
-  } else if (/whether$/i.test(action.display) && focus && /\s(?:or)\s/i.test(focus.display)) {
+  } else if (/whether$/i.test(action.display) && !/^(?:explain|discuss|examine|consider|assess|evaluate|justify|comment)/i.test(action.display) && focus && /\s(?:or)\s/i.test(focus.display)) {
     actionKey = 'either-or';
     means = MEANS['either-or'];
   } else if (/^indicate/i.test(action.display) && /\btick|✓|\uF050|\bbox\b/i.test(clauseText)) {
@@ -1637,8 +1659,8 @@ const LOCATOR_ONLY = /^\(?(?:(?:para(?:graph)?|Par\.|section|lines?|Alt|Part|Abs
 function listItems(raw: string, from: 'q' | 'stem', start: number, end: number, bySentence = false): KPSpan[] {
   const body = raw.slice(start, end);
   if (!body.trim()) return [];
-  const strong = /[;\n•◆▪●]|(?:^|\s)(?:\d{1,2}\.|\([a-h]\)|\(\d{1,2}\))\s+\S/.test(body);
-  const sep = strong ? /\s*(?:[;\n•◆▪●]+|(?:^|\s)(?:\d{1,2}\.|\([a-h]\)|\(\d{1,2}\))(?=\s))\s*/g
+  const strong = /[;\n•◆▪●\uF0A7\uF0B7\uF0D8\uF076\uF0FC\uF06E]|(?:^|\s)(?:\d{1,2}\.|\([a-h]\)|\(\d{1,2}\))\s+\S/.test(body);
+  const sep = strong ? /\s*(?:[;\n•◆▪●\uF0A7\uF0B7\uF0D8\uF076\uF0FC\uF06E]+|(?:^|\s)(?:\d{1,2}\.|\([a-h]\)|\(\d{1,2}\))(?=\s))\s*/g
     : bySentence ? /(?<=[.?!])\s+/g
       : /\s*(?:,\s*(?:and\s+|or\s+)?|\s+and\s+)\s*/g;
   let ranges: Array<[number, number]> = [];
@@ -1796,7 +1818,8 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
   // Garbled or leak-prone text is never broken down: private-use glyphs, a
   // "headword= definition" line, or a column-interleaved paper where another
   // question's number lands mid-sentence ("length 2ℓabout an 8. its plane").
-  const privateUse = /[\uE000-\uF04F\uF051-\uF8FF]/.test(q);
+  // Symbol-font bullets (U+F0B7 and kin) are list marks, not garble.
+  const privateUse = /[\uE000-\uF04F\uF051-\uF8FF]/.test(q.replace(/[\uF0A7\uF0B7\uF0D8\uF076\uF0FC\uF06E\uF0A8\uF0AE]/g, ''));
   if (privateUse || /^\s*\S+\s*=\s*\S/.test(q) && !/[\d(]/.test(q.split('=')[0]) || /\p{Ll}\s+\d{1,2}\.\s+\p{Ll}/u.test(q)) {
     return { ...base, mode: 'blocked', reasons: ['garbled'] };
   }
@@ -1809,13 +1832,23 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       if (sp && !cardRules.some(r => r.display.toLowerCase() === sp.display.toLowerCase())) cardRules.push(sp);
     }
   }
+  // "Answer in English, giving TWO points and referring to the text.": the
+  // whole printed sentence is the rule, not just its language.
+  for (const [from, raw] of [['stem', stem], ['q', q]] as const) {
+    for (const m of raw.matchAll(/(?:^|(?<=[.?!]\s))Answer\b[^.?!\n]{0,40}?\bin (?:English|ENGLISH|Irish|IRISH)\b[^.?!\n]*/g)) {
+      const sp = spanOf(from, raw, m.index ?? 0, (m.index ?? 0) + m[0].length);
+      if (!sp) continue;
+      for (let i = cardRules.length - 1; i >= 0; i -= 1) if (cardRules[i].from === from && cardRules[i].start >= sp.start && cardRules[i].end <= sp.end) cardRules.splice(i, 1);
+      if (!cardRules.some(r => r.display.toLowerCase() === sp.display.toLowerCase())) cardRules.push(sp);
+    }
+  }
   // "Answer the following questions in ENGLISH." — words between "answer"
   // and the language.
   for (const [from, raw] of [['stem', stem], ['q', q]] as const) {
     for (const m of raw.matchAll(/\b[Aa]nswer\b[^.?!:]{0,60}?\b(in (?:English|ENGLISH|Irish|IRISH))\b/g)) {
       const at = (m.index ?? 0) + m[0].length - m[1].length;
       const sp = spanOf(from, raw, at, at + m[1].length);
-      if (sp && !cardRules.some(r => r.display.toLowerCase() === sp.display.toLowerCase())) cardRules.push(sp);
+      if (sp && !cardRules.some(r => r.display.toLowerCase() === sp.display.toLowerCase() || (r.from === sp.from && r.start <= sp.start && r.end >= sp.end))) cardRules.push(sp);
     }
   }
   const latin = (q.match(/[A-Za-zÀ-ÿ]/g) ?? []).length;
@@ -1888,7 +1921,8 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         const text = q.slice(piece.start, piece.end).trim();
         if (!text) continue;
         const lastUnit = partUnits[partUnits.length - 1];
-        if (/\b(?:may|can) be (?:estimated|assumed|omitted|ignored)|\bneed not\b|\bare not (?:required|needed)\b/i.test(text) && /^(?:Note|Any|All|You)\b/.test(text)) {
+        if ((/\b(?:may|can) be (?:estimated|assumed|omitted|ignored|used|drawn|shown)|\bneed not\b|\bare not (?:required|needed)\b/i.test(text) && /^\(?\s*(?:Note|Any|All|You|The|Hidden|Construction|Dimensions|Fillets|Chamfers)\b/.test(text))
+          || /^\(?\s*Note\s*:/i.test(text) || /^\(?\s*Scale\s+\d+\s*:\s*\d+\b/i.test(text)) {
           const sp = spanOf('q', q, piece.start, piece.end);
           if (sp && !cardRules.some(r => r.display === sp.display)) cardRules.push(sp);
           continue;
@@ -1910,6 +1944,13 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
             lastUnit.count = sp;
             lastUnit.countValue = NUMBER_WORDS[points[2].toLowerCase()];
             lastUnit.countNoun = singular(points[3].trim().split(/\s+/).pop()!.toLowerCase());
+            // "Make two points in your response, supporting them with …".
+            const rest = /,\s*((?:supporting|referring|using|drawing|developing|illustrating)\b[^.?!]*)/i.exec(q.slice(at, piece.end));
+            if (rest) {
+              const rs = at + rest.index + rest[0].length - rest[1].length;
+              const lim = spanOf('q', q, rs, rs + rest[1].length);
+              if (lim) lastUnit.conditions.push(lim);
+            }
           } else {
             const whole = spanOf('q', q, piece.start, piece.end);
             if (whole) lastUnit.conditions.push(whole);
@@ -2030,7 +2071,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           if (!lastStatement) break;
           const statement = spanOf('q', q, lastStatement.start, lastStatement.end);
           if (!statement) break;
-          if (!unit.focus && !/^(?:yes-no|either-or|true-false|justify-tail|illustrate-tail|as-printed)$/.test(unit.actionKey)) unit.focus = statement;
+          // "draw and label: the fixed costs … and the variable costs …": a
+          // command opening a list is about the list, not the statement.
+          const opensList = unit.action && /^\s*:/.test(q.slice(unit.action.end, unit.action.end + 3));
+          if (!unit.focus && !opensList && !/^(?:yes-no|either-or|true-false|justify-tail|illustrate-tail|as-printed)$/.test(unit.actionKey)) unit.focus = statement;
           else if (unit.focus && (STATEMENT_FOCUS.test(unit.focus.display) || /^(?:it|they|this|these|he|she|its|their)\b|\beach(?: of them)?$/i.test(unit.focus.display))) {
             unit.use.unshift({ ...statement, kind: 'material' });
           }
@@ -2078,7 +2122,12 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         if (!a.count && b.count) { a.count = b.count; a.countValue = b.countValue; a.countNoun = b.countNoun; }
         // Two commands on one object ("Identify and explain the benefits",
         // "Name and explain one method") are answered together.
-        if (/^\s+and\s+$/i.test(q.slice(a.action.end, b.action.start)) || (EXTENDED.has(a.actionKey.replace(/-.*/, '')) && EXTENDED.has(b.actionKey.replace(/-.*/, ''))) || (b.countValue ?? 0) > 1) a.jointWith = b.id;
+        if (/^\s+and\s+$/i.test(q.slice(a.action.end, b.action.start)) || (EXTENDED.has(a.actionKey.replace(/-.*/, '')) && EXTENDED.has(b.actionKey.replace(/-.*/, ''))) || (b.countValue ?? 0) > 1) {
+          a.jointWith = b.id;
+          // "Determine and indicate the true length": the shown gloss is the
+          // bigger of the two jobs, not the smaller.
+          if (JOB_WEIGHT(a.actionKey) > JOB_WEIGHT(b.actionKey)) { b.actionKey = a.actionKey; b.means = a.means; }
+        }
       }
       // "Identify three principles … and describe how each principle
       // identified …": the second job is done for each of the first's items.
@@ -2173,9 +2222,16 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           const lead = u.conditions.find(c => c.from === 'q' && c.start >= regionStart && /^\s*$/.test(q.slice(regionStart, c.start)));
           if (lead) { regionStart = lead.end + (/^[.!?]/.test(q.slice(lead.end, lead.end + 1)) ? 1 : 0); moved = true; }
         }
-        const limitAfter = u.conditions.filter(c => c.from === 'q' && c.start > regionStart).map(c => c.start);
+        const limitAfter = [...u.conditions, ...cardRules].filter(c => c.from === 'q' && c.start > regionStart).map(c => c.start);
         const listEnd = Math.min(regionEnd, partEnd, ...limitAfter);
         if (regionStart >= 0 && regionStart < listEnd) items = listItems(q, 'q', regionStart, listEnd, u.actionKey === 'true-false');
+        // "given the following data: • Speed 20 m/s • …": supplied values,
+        // not items to answer.
+        if (items.length && /\b(?:the following|these)\s+(?:data|details|information|motion|specifications?|dimensions|values|measurements|readings|costs|figures)(?=\s*(?::|below|shown|given|supplied|\(|$))/i.test(q.slice(u.action.start, regionStart))) {
+          for (const it of items) if (!u.use.some(x => x.display === it.display)) u.use.push({ ...it, kind: 'given' });
+          consumed.push([regionStart, listEnd]);
+          continue;
+        }
         if (regionStart >= 0 && items.length) {
           for (const m of q.slice(regionStart, listEnd).matchAll(LOCATOR_RE)) {
             const sp = spanOf('q', q, regionStart + (m.index ?? 0), regionStart + (m.index ?? 0) + m[0].length);
@@ -2398,12 +2454,14 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
   // Subject and card-wide readings of the command, givens, marks.
   const dcg = /^dcg-/.test(source.id) || /^dcg$|design (?:&|and) communication graphics/i.test(source.subjectLabel);
   const mathsSubject = /^(?:maths|mathematics|applied[- ]maths|physics|chemistry|engineering|construction[- ]studies|technology)$/i.test(source.subjectLabel.trim());
+  // Where "Show …" is a proof; elsewhere it is drawn or set out.
+  const proofSubject = /^(?:maths|mathematics|applied[- ]maths|physics|chemistry)$/i.test(source.subjectLabel.trim());
   const multipleChoice = cardRules.some(r => /A, B, C or D/.test(r.display));
   const underlined = /the underlined (?:term|word|phrase)s?\s+(?:is|are)\s+['‘"“]([^'’"”]{1,60})['’"”]/i.exec(stem);
   for (const unit of units) {
     // "Show" proves only in a mathematical subject. In a drawing subject it
     // puts the thing on the drawing; elsewhere it sets it out.
-    if (!mathsSubject && !dcg && unit.actionKey === 'prove' && /^(?:(?:clearly|also|now)\s+)?show\b/i.test(unit.action?.display ?? '') && !/^that\b/i.test(unit.focus?.display ?? '')) {
+    if (!proofSubject && !dcg && unit.actionKey === 'prove' && /^(?:(?:clearly|also|now)\s+)?show\b/i.test(unit.action?.display ?? '') && !/^that\b/i.test(unit.focus?.display ?? '')) {
       const drawn = /\b(?:sketch|sketches|drawing|drawings|draw|diagram|diagrams)\b/i.test(`${stem} ${q}`);
       unit.actionKey = drawn ? 'show-drawing' : 'describe';
       unit.means = MEANS[unit.actionKey];
@@ -2416,7 +2474,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       unit.means = MEANS.calculate;
     }
     const dcgVerb = (unit.action?.display ?? '').replace(/^(?:clearly|carefully|neatly|also|now|then|hence)\s+/i, '');
-    if (dcg && /^show\s*$/i.test(dcgVerb) && unit.focus && !/^(?:that|how|why)\b/i.test(unit.focus.display)) {
+    if (dcg && /^plot\s*$/i.test(dcgVerb)) {
+      unit.actionKey = 'construct';
+      unit.means = MEANS.construct;
+    } else if (dcg && /^show\s*$/i.test(dcgVerb) && unit.focus && !/^(?:that|how|why)\b/i.test(unit.focus.display)) {
       // "Clearly show all points of contact": put it on the drawing.
       unit.actionKey = 'on-drawing';
       unit.means = MEANS['on-drawing'];
@@ -2447,7 +2508,7 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       if (!unit.use.some(u => u.kind === 'given')) unit.flags.push('values-on-paper');
     }
     if (unit.use.some(u => u.kind === 'material' && VISUAL.test(u.display)) && !source.figure) unit.flags.push('needs-figure');
-    unit.marks = partMarks.get(unit.id) ?? (units.length === 1 ? totalMarks : null);
+    unit.marks = partMarks.get(unit.id) ?? (units.filter(u => !u.jointWith).length === 1 && !unit.jointWith ? totalMarks : null);
     if (unit.actionKey === 'wh-plain') {
       // A high tariff alone does not make "What do the following letters
       // stand for?" a developed answer; a question about a role, an impact or
@@ -2696,7 +2757,11 @@ function settingOf(q: string, contexts: Array<{ from: 'q' | 'stem'; raw: string;
   for (const ctx of contexts) {
     if (ctx.from !== 'q') continue;
     for (const piece of ctx.pieces) {
-      if (covered.some(([s, e]) => s < piece.end && e > piece.start)) continue;
+      // Shown already when a slot holds most of it; "In TEXT 2, the writer
+      // suggests …" is still set-up when only "TEXT 2" is in USE.
+      let inSlots = 0;
+      for (let i = piece.start; i < piece.end; i += 1) if (covered.some(([s, e]) => i >= s && i < e)) inSlots += 1;
+      if (inSlots > (piece.end - piece.start) * 0.4) continue;
       const sp = spanOf('q', q, piece.start, piece.end);
       if (!sp || out.some(o => o.start === sp.start)) continue;
       const words = sp.display.split(/\s+/);
@@ -2704,7 +2769,7 @@ function settingOf(q: string, contexts: Array<{ from: 'q' | 'stem'; raw: string;
       // A sentence, not a flattened table, an axis label or a rubric line.
       if (words.length < 4 || letters < sp.display.length * 0.6 || !/^[\p{Lu}“‘"'(]/u.test(sp.display)) continue;
       if (!/[.?!:)”’"']\s*$/.test(q.slice(piece.start, piece.end).trim()) && words.length < 8) continue;
-      if (RUBRIC.test(sp.display) || /^(?:Page \d|Question \d|\[?\d+ marks?\]?$)/i.test(sp.display)) continue;
+      if (RUBRIC.test(sp.display) || /^(?:Page \d|Question \d|\[?\d+ marks?\]?$|Answer\b)/i.test(sp.display)) continue;
       out.push(sp);
     }
   }
