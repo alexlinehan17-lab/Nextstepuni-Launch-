@@ -16,9 +16,13 @@ import { ChevronLeft, ChevronRight, Minus, Plus, Square, Volume2, X } from 'luci
 import type { SecCard } from '../../types/markBank';
 import { buildQuestionModel, splitQuestionLines } from '../WaysIn/questionModel';
 import { waysInSourceFromMarkBank } from '../WaysIn/sources';
+import {
+  buildKeyParts, planRowsFor,
+  type KeyPartsBreakdown, type KPFlag, type KPUnit,
+} from '../WaysIn/keyParts';
 import './waysInPanel.css';
 
-type Stage = 'read' | 'understand' | 'plan';
+type Stage = 'breakdown' | 'read' | 'plan';
 
 export interface WaysInWork {
   planNotes: string[];
@@ -68,9 +72,121 @@ const SpokenLine: React.FC<{
 };
 
 const stageLabels: Record<Stage, string> = {
+  breakdown: 'Break it down',
   read: 'Read',
-  understand: 'Understand',
   plan: 'Plan',
+};
+
+const FLAG_COPY: Record<KPFlag, string> = {
+  'needs-figure': 'Uses a figure printed on the paper.',
+  'values-on-paper': 'The values it needs are on the paper — in an earlier part or a table.',
+  'depends-on-earlier-part': 'Builds on your answer to an earlier part.',
+  'excludes-example': 'Not the example the paper already gives.',
+  'as-printed': 'Shown exactly as printed.',
+};
+
+const fallbackCopy = (kp: KeyPartsBreakdown): string => {
+  if (kp.mode === 'blocked') return 'This question did not come through cleanly here. Read it on the printed page.';
+  if (kp.reasons.includes('non-english')) return 'This question is in the exam language, so it stays exactly as printed.';
+  if (kp.reasons.includes('no-text')) return 'This question is printed as an image. Read it from the page.';
+  return 'This part gives information rather than an instruction. Read it as printed; the instruction is on the paper beside it.';
+};
+
+/** One unit of the question: the job, how many, what it is about, the limits. */
+const KeyPartUnit: React.FC<{ unit: KPUnit; partner?: KPUnit }> = ({ unit, partner }) => {
+  const verb = [partner?.action?.display, unit.action?.display].filter(Boolean).join(' and ');
+  const givens = unit.use.filter(u => u.kind === 'given');
+  const material = unit.use.filter(u => u.kind !== 'given');
+  const printed = unit.flags.includes('as-printed');
+  const flags = unit.flags.filter(f => f !== 'as-printed');
+  return (
+    <li className="mb-wi-kp-unit">
+      {(unit.ref || unit.altGroup || unit.marks != null) && (
+        <div className="mb-wi-kp-head">
+          {unit.ref && <span className="mb-wi-kp-ref">{unit.ref}</span>}
+          {unit.altGroup && <span className="mb-wi-kp-alt">{unit.altGroup === 'A' ? 'Option A' : 'Option B'}</span>}
+          {unit.marks != null && <span className="mb-wi-kp-marks">{unit.marks} marks</span>}
+        </div>
+      )}
+      {printed ? (
+        // A part the breakdown cannot read honestly is shown whole, never dropped.
+        <dl className="mb-wi-kp-slots">
+          <div>
+            <dt>Do</dt>
+            <dd><strong>Read it as printed</strong><span>{unit.means || 'This part could not be broken down here, so every word of it is shown.'}</span></dd>
+          </div>
+          {unit.focus && <div><dt>Printed</dt><dd className="mb-wi-kp-printed">{unit.focus.display}</dd></div>}
+        </dl>
+      ) : (
+      <dl className="mb-wi-kp-slots">
+        <div>
+          <dt>Do</dt>
+          <dd><strong className={verb.length > 56 ? 'mb-wi-kp-long' : undefined}>{verb.charAt(0).toUpperCase() + verb.slice(1)}</strong>{unit.means && <span>{unit.means}</span>}</dd>
+        </div>
+        {unit.item && <div><dt>Item</dt><dd className="mb-wi-kp-item">{unit.item.display}</dd></div>}
+        {unit.count && <div><dt>How many</dt><dd>{unit.count.display}</dd></div>}
+        {unit.sides && (
+          <div><dt>Compare</dt><dd>{unit.sides[0].display} <em>vs</em> {unit.sides[1].display}</dd></div>
+        )}
+        {/* A comparison keeps its About when the sides do not cover it:
+            "the indenters used in both the Brinell and the Vickers tests". */}
+        {unit.focus && (!unit.sides || (unit.sides[0].from === unit.focus.from && unit.sides[0].start > unit.focus.start + 2)) && (
+          <div>
+            <dt>About</dt>
+            <dd>
+              {unit.focus.display}
+              {unit.focusMore?.map(more => (
+                <React.Fragment key={`${more.start}-${more.from}`}>
+                  <span className="mb-wi-kp-gap" aria-hidden="true"> … </span>{more.display}
+                </React.Fragment>
+              ))}
+            </dd>
+          </div>
+        )}
+        {unit.conditions.length > 0 && (
+          <div><dt>Only counts if</dt><dd><ul>{unit.conditions.map(c => <li key={`${c.start}-${c.from}`}>{c.display}</li>)}</ul></dd></div>
+        )}
+        {givens.length > 0 && (
+          <div><dt>Given</dt><dd><ul>{givens.map(g => <li key={`${g.start}-${g.from}`}>{g.display}</li>)}</ul></dd></div>
+        )}
+        {material.length > 0 && (
+          <div><dt>Use</dt><dd className="mb-wi-kp-chips">{material.map(m => <span key={`${m.start}-${m.from}`}>{m.display}</span>)}</dd></div>
+        )}
+      </dl>
+      )}
+      {flags.length > 0 && (
+        <ul className="mb-wi-kp-flags">{flags.map(f => <li key={f}>{FLAG_COPY[f]}</li>)}</ul>
+      )}
+    </li>
+  );
+};
+
+const KeyPartsView: React.FC<{ kp: KeyPartsBreakdown; onRead: () => void }> = ({ kp, onRead }) => {
+  if (kp.mode === 'verbatim' || kp.mode === 'blocked') {
+    return (
+      <div className="mb-wi-kp-fallback">
+        <p>{fallbackCopy(kp)}</p>
+        {kp.mode !== 'blocked' && <button type="button" onClick={onRead}>Read it line by line</button>}
+      </div>
+    );
+  }
+  const shown = kp.units.filter(u => !u.jointWith);
+  return (
+    <div className="mb-wi-kp">
+      {kp.mode === 'glossed' && (
+        <p className="mb-wi-kp-note">This question is in the exam language. Its instruction words are explained here; the rest stays as printed.</p>
+      )}
+      {kp.banner && <p className="mb-wi-kp-note">The paper prints two options, marked OR. Answer one of them.</p>}
+      {kp.cardRules.length > 0 && (
+        <p className="mb-wi-kp-rules"><span>For the whole answer</span>{kp.cardRules.map(r => <em key={`${r.start}-${r.from}`}>{r.display}</em>)}</p>
+      )}
+      <ol className="mb-wi-kp-list" aria-label="Key parts of the question">
+        {shown.map(unit => (
+          <KeyPartUnit key={unit.id} unit={unit} partner={kp.units.find(p => p.jointWith === unit.id)} />
+        ))}
+      </ol>
+    </div>
+  );
 };
 
 const WaysInPanel: React.FC<WaysInPanelProps> = ({
@@ -84,12 +200,19 @@ const WaysInPanel: React.FC<WaysInPanelProps> = ({
 }) => {
   const source = useMemo(() => waysInSourceFromMarkBank(card, subjectLabel), [card, subjectLabel]);
   const model = useMemo(() => buildQuestionModel(source), [source]);
+  const keyParts = useMemo(() => buildKeyParts(source), [source]);
+  const kpRows = useMemo(
+    () => planRowsFor(keyParts, { basis: model.planShape.basis, prompts: model.planPrompts }),
+    [keyParts, model.planShape.basis, model.planPrompts],
+  );
+  const usesKeyPlan = kpRows.length > 0;
+  const planRowCount = usesKeyPlan ? kpRows.length : model.planPrompts.length;
   const readingLines = useMemo(() => [
     ...splitQuestionLines(source.stem ?? '').map(text => ({ text, kind: 'Paper instruction' })),
     ...(model.lines.length ? model.lines : [model.exactText].filter(Boolean))
       .map(text => ({ text, kind: 'Question' })),
   ], [model.exactText, model.lines, source.stem]);
-  const [stage, setStage] = useState<Stage>('read');
+  const [stage, setStage] = useState<Stage>('breakdown');
   const [lineIndex, setLineIndex] = useState(0);
   const [rate, setRate] = useState(0.9);
   const [speaking, setSpeaking] = useState(false);
@@ -101,18 +224,6 @@ const WaysInPanel: React.FC<WaysInPanelProps> = ({
   const speechSupported = typeof window !== 'undefined'
     && 'speechSynthesis' in window
     && typeof SpeechSynthesisUtterance !== 'undefined';
-  const commandGroups = useMemo(() => {
-    const grouped: Array<(typeof model.commands)[number] & { count: number }> = [];
-    for (const command of model.commands) {
-      const existing = grouped.find(item => (
-        item.surface.toLowerCase() === command.surface.toLowerCase()
-        && item.requiredAction === command.requiredAction
-      ));
-      if (existing) existing.count += 1;
-      else grouped.push({ ...command, count: 1 });
-    }
-    return grouped;
-  }, [model.commands]);
 
   const stopReading = useCallback(() => {
     // Invalidate callbacks before cancelling. Some engines dispatch a delayed
@@ -162,16 +273,16 @@ const WaysInPanel: React.FC<WaysInPanelProps> = ({
 
   useEffect(() => {
     setWork(current => {
-      if (current.planNotes.length >= model.planPrompts.length) return current;
+      if (current.planNotes.length >= planRowCount) return current;
       return {
         ...current,
         planNotes: [
           ...current.planNotes,
-          ...Array.from({ length: model.planPrompts.length - current.planNotes.length }, () => ''),
+          ...Array.from({ length: planRowCount - current.planNotes.length }, () => ''),
         ],
       };
     });
-  }, [model.planPrompts.length, setWork]);
+  }, [planRowCount, setWork]);
 
   const readAloud = useCallback((text: string) => {
     if (!speechSupported || !text.trim()) return;
@@ -222,7 +333,7 @@ const WaysInPanel: React.FC<WaysInPanelProps> = ({
     onClose();
   };
 
-  const minimumPlanLines = model.planPrompts.length;
+  const minimumPlanLines = planRowCount;
   const visiblePlanNotes = work.planNotes.length ? work.planNotes : [''];
   const updatePlanNote = (index: number, value: string) => {
     setWork(current => {
@@ -243,14 +354,16 @@ const WaysInPanel: React.FC<WaysInPanelProps> = ({
   };
   const wordCount = work.draft.trim() ? work.draft.trim().split(/\s+/).length : 0;
   const stageStatus = `${stageLabels[stage]} stage. ${
-    stage === 'read'
-      ? 'Work with one exact line at a time.'
-      : stage === 'understand'
-        ? 'The task map is now available.'
+    stage === 'breakdown'
+      ? 'The key parts of the question are shown.'
+      : stage === 'read'
+        ? 'Work with one exact line at a time.'
         : 'The planning frame is now available.'
   }`;
   const planEvidence = model.planShape.evidence?.replace(/(\d)\.(?=,|$)/g, '$1');
-  const planHeading = model.planKind === 'calculation'
+  const planHeading = usesKeyPlan
+    ? 'One space for each part'
+    : model.planKind === 'calculation'
     ? 'Set up the working'
     : model.planKind === 'procedure'
       ? 'Set out the sequence'
@@ -310,6 +423,15 @@ const WaysInPanel: React.FC<WaysInPanelProps> = ({
       </p>
 
       <div className="mb-wi-stage">
+        {stage === 'breakdown' && (
+          <section id="mb-wi-breakdown-panel" aria-labelledby="mb-wi-breakdown-title">
+            <p className="mb-wi-eyebrow">Break it down</p>
+            <h3 id="mb-wi-breakdown-title">What the question is asking</h3>
+            <p className="mb-wi-stage-intro">Every piece is taken from the printed question. The marking scheme stays closed.</p>
+            <KeyPartsView kp={keyParts} onRead={() => changeStage('read')} />
+          </section>
+        )}
+
         {stage === 'read' && (
           <section id="mb-wi-read-panel" aria-labelledby="mb-wi-read-title">
             <p className="mb-wi-eyebrow">Reduce what is on screen</p>
@@ -391,50 +513,15 @@ const WaysInPanel: React.FC<WaysInPanelProps> = ({
           </section>
         )}
 
-        {stage === 'understand' && (
-          <section id="mb-wi-understand-panel" aria-labelledby="mb-wi-understand-title">
-            <p className="mb-wi-eyebrow">Map the task</p>
-            <h3 id="mb-wi-understand-title">What the wording is doing</h3>
-            <p className="mb-wi-stage-intro">Separate the action from the information and limits around it.</p>
-
-            <dl className="mb-wi-task-map">
-              {commandGroups.length > 0 && <div>
-                <dt>Instruction</dt>
-                <dd className="mb-wi-instructions">
-                    {commandGroups.map((command, index) => (
-                      <div key={`${command.surface}-${index}`}>
-                        <strong>
-                          {commandGroups.length > 1 && <b>{String(index + 1).padStart(2, '0')}</b>}
-                          “{command.surface}”
-                        </strong>
-                        {command.count > 1 && <small>Used in {command.count} printed parts</small>}
-                        <span>{command.requiredAction}</span>
-                      </div>
-                    ))}
-                </dd>
-              </div>}
-              {model.constraints.length > 0 && <div>
-                <dt>Printed limits</dt>
-                <dd>
-                  <ul>{model.constraints.map(item => <li key={item}>{item}</li>)}</ul>
-                </dd>
-              </div>}
-              {model.givens.length > 0 && <div>
-                <dt>Information supplied</dt>
-                <dd>
-                  <ul>{model.givens.map(item => <li key={item}>{item}</li>)}</ul>
-                </dd>
-              </div>}
-            </dl>
-            <p className="mb-wi-method-note">This is a wording map, not a marking rule or a model answer.</p>
-          </section>
-        )}
-
         {stage === 'plan' && (
           <section id="mb-wi-plan-panel" aria-labelledby="mb-wi-plan-title">
             <p className="mb-wi-eyebrow">Externalise the next step</p>
             <h3 id="mb-wi-plan-title">{planHeading}</h3>
-            {model.planShape.basis === 'printed' ? (
+            {usesKeyPlan ? (
+              <p className="mb-wi-stage-intro">
+                Each space matches one part of the question{kpRows.some(r => /\d$/.test(r.label)) ? ', and a counted part gets one space per item' : ''}. Your ideas go in; nothing here is marked.
+              </p>
+            ) : model.planShape.basis === 'printed' ? (
               <p className="mb-wi-stage-intro">
                 {model.planShape.structure === 'parts'
                   ? `The paper separates this task into ${model.planShape.count} visible parts: ${planEvidence}.`
@@ -456,18 +543,18 @@ const WaysInPanel: React.FC<WaysInPanelProps> = ({
 
             <div className="mb-wi-plan-lines">
               {visiblePlanNotes.map((note, index) => (
-                <div className="mb-wi-plan-row" key={model.planPrompts[index]?.id ?? `extra-${index}`}>
+                <div className="mb-wi-plan-row" key={(usesKeyPlan ? kpRows[index]?.id : model.planPrompts[index]?.id) ?? `extra-${index}`}>
                   <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
                   <label>
-                    <strong>{model.planPrompts[index]?.label ?? 'Extra idea'}</strong>
-                    {model.planPrompts[index]?.sourceText && (
-                      <small>{model.planPrompts[index].sourceText}</small>
-                    )}
+                    <strong>{(usesKeyPlan ? kpRows[index]?.label : model.planPrompts[index]?.label) ?? 'Extra idea'}</strong>
+                    {usesKeyPlan
+                      ? kpRows[index]?.summary && <small>{kpRows[index].summary}</small>
+                      : model.planPrompts[index]?.sourceText && <small>{model.planPrompts[index].sourceText}</small>}
                     <input
                       value={note}
                       onChange={event => updatePlanNote(index, event.target.value)}
-                      placeholder={model.planPrompts[index]?.placeholder ?? 'Add another point if you need one'}
-                      aria-label={`Plan idea ${index + 1}: ${model.planPrompts[index]?.label ?? 'Extra idea'}`}
+                      placeholder={(usesKeyPlan ? kpRows[index]?.placeholder : model.planPrompts[index]?.placeholder) ?? 'Add another point if you need one'}
+                      aria-label={`Plan idea ${index + 1}: ${(usesKeyPlan ? kpRows[index]?.label : model.planPrompts[index]?.label) ?? 'Extra idea'}`}
                     />
                   </label>
                 </div>
@@ -513,7 +600,13 @@ export const WaysInAttemptReview: React.FC<{
 }> = ({ work, card, subjectLabel }) => {
   const source = useMemo(() => waysInSourceFromMarkBank(card, subjectLabel), [card, subjectLabel]);
   const model = useMemo(() => buildQuestionModel(source), [source]);
+  const kpRows = useMemo(
+    () => planRowsFor(buildKeyParts(source), { basis: model.planShape.basis, prompts: model.planPrompts }),
+    [source, model.planShape.basis, model.planPrompts],
+  );
   if (!hasWaysInWork(work)) return null;
+  const labelFor = (index: number) => (kpRows.length ? kpRows[index]?.label : model.planPrompts[index]?.label) ?? `Extra idea ${index + 1}`;
+  const summaryFor = (index: number) => kpRows.length ? kpRows[index]?.summary : model.planPrompts[index]?.sourceText;
   const notes = work.planNotes.flatMap((note, index) => note.trim() ? [{ note, index }] : []);
   return (
     <section className="mb-wi-attempt-review" aria-labelledby="mb-wi-attempt-review-title">
@@ -522,8 +615,8 @@ export const WaysInAttemptReview: React.FC<{
       {notes.length > 0 && (
         <ol>{notes.map(({ note, index }) => (
           <li key={`${index}-${note}`}>
-            <strong>{model.planPrompts[index]?.label ?? `Extra idea ${index + 1}`}</strong>
-            {model.planPrompts[index]?.sourceText && <small>{model.planPrompts[index].sourceText}</small>}
+            <strong>{labelFor(index)}</strong>
+            {summaryFor(index) && <small>{summaryFor(index)}</small>}
             <span>{note}</span>
           </li>
         ))}</ol>

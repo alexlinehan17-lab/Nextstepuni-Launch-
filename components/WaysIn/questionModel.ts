@@ -528,8 +528,8 @@ const PRINTED_PART_LABEL = /(?<!\S)(?:\((?:[a-h]|[ivx]+)\)|(?:\d+|[a-h])[.)])(?=
 const PRINTED_PART_REFERENCE = /\b(?:part|question|section)s?\s+(?:(?:\((?:[a-h]|[ivx]+)\)|(?:\d+|[a-h])[.)])\s*(?:(?:,|and|or)\s*)?)*$/i;
 const LEADING_PART_LABEL_TOKEN = /^(\((?:[a-h]|[ivx]+)\)|(?:\d+|[a-h])[.)])\s+/i;
 
-const DATA_TOKEN = /(?:€|£|\$)?\b\d+(?:[.,]\d+)?(?:\s*(?:m\s*s[−–-]?[1¹]?|km\s*h[−–-]?[1¹]?|m\/s|km\/h|seconds?|minutes?|hours?|mins?|mol|dm[³3]|cm[³3]|°(?:C|F)?|%|kg|mg|km|cm|mm|Pa|[gsmVAJWN]))?/gi;
-const MEANINGFUL_DATA_UNIT = /(?:€|£|\$|m\s*s[−–-]?[1¹]?|km\s*h[−–-]?[1¹]?|m\/s|km\/h|seconds?|minutes?|hours?|mins?|mol|dm[³3]|cm[³3]|°(?:C|F)?|%|kg|mg|km|cm|mm|Pa|\b[VAJWN]\b)/i;
+export const DATA_TOKEN = /(?:€|£|\$)?\b\d+(?:[.,]\d+)?(?:\s*(?:m\s*s[−–-]?[1¹]?|km\s*h[−–-]?[1¹]?|m\/s|km\/h|seconds?|minutes?|hours?|mins?|mol|dm[³3]|cm[³3]|°(?:C|F)?|%|kg|mg|km|cm|mm|Pa|[gsmVAJWN]))?/gi;
+export const MEANINGFUL_DATA_UNIT = /(?:€|£|\$|m\s*s[−–-]?[1¹]?|km\s*h[−–-]?[1¹]?|m\/s|km\/h|seconds?|minutes?|hours?|mins?|mol|dm[³3]|cm[³3]|°(?:C|F)?|%|kg|mg|km|cm|mm|Pa|\b[VAJWN]\b)/i;
 
 type PrintedPartStyle = 'parenthesised' | 'numbered' | 'bare-letter';
 
@@ -673,7 +673,7 @@ export function splitQuestionLines(text: string): string[] {
   return out;
 }
 
-interface CommandMatch {
+export interface CommandMatch {
   demand: CommandDemand;
   index: number;
   end: number;
@@ -815,7 +815,7 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
   return false;
 }
 
-function commandMatches(text: string): CommandMatch[] {
+export function commandMatches(text: string): CommandMatch[] {
   const candidates: CommandMatch[] = [];
   for (const demand of commandDemands) {
     // JavaScript's `\b` boundary is ASCII-only, so it cannot safely surround
