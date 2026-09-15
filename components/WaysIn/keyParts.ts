@@ -903,6 +903,9 @@ function buildUnit(
   // Answer-box labels ("Name of Myth 1: Location on temple:") are not
   // instructions; "For this cross, state:" is.
   if (/^\s+of\s+[^.?!:]{1,30}:/.test(raw.slice(cur, end)) || /^\s*:\s*\p{Lu}[\p{L} ]{0,30}:/u.test(raw.slice(cur, end))) return null;
+  // "Use or attempted use by an athlete …": a word the lexicon knows as a
+  // command, used as a noun.
+  if (/^\p{L}+$/u.test(action.display) && /^\s+or\s+(?:attempted|the|a|an|its|their|any)\b/i.test(raw.slice(cur, end))) return null;
   // A single command word followed by "of" is a noun: "Design of products".
   if (/^\p{L}+$/u.test(action.display) && !/^(?:account|details)/i.test(action.display) && !/^(?:wh-|explain-how|to-what-extent)/.test(actionKey)
     && !/^(?:which|what|who|whose|whom|how)$/i.test(action.display) && /^\s+of\s/i.test(raw.slice(cur, end))) return null;
@@ -2092,7 +2095,9 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       // stand for?" a developed answer; a question about a role, an impact or
       // the evidence does.
       const developed = /^(?:what|which|in what)\s+(?:role|roles|impact|impacts|effect|effects|evidence|contribution|influence|importance|significance|problems|challenges|changes|factors|reasons|methods|arguments|lessons|message|messages|view|views|attitude|attitudes|techniques|ways|features|qualities|themes?)\b/i
-        .test(`${unit.action?.display ?? ''} ${unit.focus?.display ?? ''}`);
+        .test(`${unit.action?.display ?? ''} ${unit.focus?.display ?? ''}`)
+        // "What do the other immortals think of …?" asks for views, developed.
+        || /\b(?:think|believe|feel|consider)\b/i.test(unit.focus?.display ?? '');
       if (multipleChoice) unit.means = MEANS.choice;
       else if ((unit.marks ?? 0) >= 10 && developed) unit.means = MEANS['wh-developed'];
     }

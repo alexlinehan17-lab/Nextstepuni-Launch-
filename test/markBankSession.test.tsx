@@ -468,6 +468,25 @@ describe('the question comes first and stays', () => {
     )).not.toThrow();
   });
 
+  test('names the printed item each part covers', () => {
+    renderSession([card({ questionText: 'Explain the following types of reward: Commission, Flexitime.' })]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+
+    const parts = screen.getByRole('list', { name: /Key parts of the question/i });
+    expect(within(parts).getAllByText('Item')).toHaveLength(2);
+    expect(within(parts).getByText('Commission')).toBeInTheDocument();
+    expect(within(parts).getByText('Flexitime')).toBeInTheDocument();
+  });
+
+  test('shows a part it cannot read exactly as printed, never drops it', () => {
+    renderSession([card({ questionText: '(i) Name the parts labelled A and B. (ii) Maslow / McGregor believed that once a need is satisfied it stops motivating.' })]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+
+    const parts = screen.getByRole('list', { name: /Key parts of the question/i });
+    expect(within(parts).getByText('Read it as printed')).toBeInTheDocument();
+    expect(within(parts).getByText(/Maslow \/ McGregor believed/)).toBeInTheDocument();
+  });
+
   test('opens on the key parts, announces stage changes and omits empty slots', () => {
     renderSession([card({ questionText: 'State one feature.' })]);
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
