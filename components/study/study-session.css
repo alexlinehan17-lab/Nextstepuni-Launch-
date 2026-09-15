@@ -19,7 +19,10 @@
 .ss-section-title > span { font-size: 11px; font-variant-numeric: tabular-nums; color: var(--ss-orange); }
 .ss-section-title h2 { margin: 0; color: var(--ss-ink); font: 600 25px/1.2 'Source Serif 4', Georgia, serif; letter-spacing: -.02em; }
 .ss-subjects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
-.ss-subjects button { display: flex; align-items: center; gap: 10px; min-height: 49px; border: 1px solid var(--ss-rule); border-radius: 7px; padding: 11px 13px; text-align: left; color: var(--ss-ink); background: var(--ss-paper); box-shadow: none; font-size: 13px; font-weight: 500; cursor: pointer; }
+.ss-subjects button { display: flex; align-items: center; gap: 15px; min-height: 96px; border: 1px solid var(--ss-rule); border-radius: 7px; padding: 14px 16px; text-align: left; color: var(--ss-ink); background: var(--ss-paper); box-shadow: none; font-size: 13px; font-weight: 500; cursor: pointer; }
+.ss-subjects .subject-avatar { width: 64px; height: 64px; }
+.ss-subject-name { min-width: 0; overflow-wrap: anywhere; }
+.ss-timetable .subject-avatar { width: 36px; height: 36px; }
 .ss-subjects button i, .ss-timetable i, .ss-timer-subject i { display: block; flex-shrink: 0; width: 8px; height: 8px; border-radius: 50%; }
 .ss-subjects button[aria-pressed=true], .ss-types button[aria-pressed=true], .ss-durations button[aria-pressed=true], .ss-custom-duration[data-selected] { border-color: var(--ss-ink); box-shadow: inset 0 0 0 1px var(--ss-ink); }
 .ss-subjects button:hover, .ss-types button:hover, .ss-durations button:hover { border-color: var(--ss-ink); }
@@ -53,7 +56,7 @@
 .ss-timetable { margin-top: 28px; }
 .ss-timetable h2 { margin: 0 0 12px; font: 600 21px/1.25 'Source Serif 4', Georgia, serif; color: var(--ss-ink); }
 .ss-timetable button { width: 100%; display: flex; align-items: center; gap: 11px; min-height: 70px; padding: 14px 0; border: 0; border-bottom: 1px solid var(--ss-rule); border-radius: 0; background: transparent; color: var(--ss-ink); text-align: left; box-shadow: none; cursor: pointer; }
-.ss-timetable button > span { flex: 1; min-width: 0; }
+.ss-timetable-copy { flex: 1; min-width: 0; }
 .ss-timetable strong { display: block; font-size: 13px; font-weight: 600; }
 .ss-timetable small { display: block; margin-top: 4px; color: var(--ss-muted); font-size: 11px; }
 .ss-timetable button:hover > svg { color: var(--ss-orange); }
@@ -103,7 +106,8 @@
   .ss-section-title { gap: 9px; margin-bottom: 14px; }
   .ss-section-title h2 { font-size: 23px; }
   .ss-subjects { gap: 8px; }
-  .ss-subjects button { min-height: 49px; padding: 10px; gap: 8px; font-size: 12px; }
+  .ss-subjects button { min-height: 86px; padding: 12px 10px; gap: 10px; font-size: 12px; }
+  .ss-subjects .subject-avatar { width: 44px; height: 44px; }
   .ss-last-note blockquote { font-size: 14px; }
   .ss-types button { padding: 12px; }
   .ss-types small { margin-top: 2px; }

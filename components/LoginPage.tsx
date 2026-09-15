@@ -32,6 +32,7 @@ import { createDemoStudentSession } from '../data/devStudent';
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 import Avatar from './Avatar';
+import { getAvatarName } from '../data/personalStarCrew';
 import { useModal } from '../hooks/useModal';
 import './account-entry.css';
 import './auth-paper.css';
@@ -136,7 +137,16 @@ const AuthWordmark = () => (
 );
 
 // ── Welcome artwork panel ──────────────────────────────────
-const WelcomeArtworkPanel = () => {
+const WelcomeArtworkPanel = ({ avatar, name = '' }: { avatar?: string; name?: string }) => {
+  if (avatar) return <div className="auth-paper-story auth-crew-story hidden md:flex md:flex-col w-1/2">
+    <p className="auth-paper-eyebrow">Your account. Your character.</p>
+    <h2>A little<br />more <em>you.</em></h2>
+    <p>Pick the one that feels like you. They’ll be right here as you find your way.</p>
+    <div className="auth-crew-selected">
+      <Avatar seed={avatar} className="auth-crew-portrait" />
+      <div><h3>{getAvatarName(avatar)}</h3><p>{name.trim().split(/\s+/)[0] || 'Your'}{name.trim() ? '’s' : ''} Star Crew character</p></div>
+    </div>
+  </div>;
   return (
     <div className="auth-paper-story hidden md:flex md:flex-col w-1/2 relative">
       {/* Brand strip */}
@@ -158,7 +168,7 @@ const WelcomeArtworkPanel = () => {
 // ── Responsive auth shell ────────────────────────────────────────
 // Desktop keeps the established split card. Mobile is deliberately a separate,
 // edge-to-edge app composition instead of shrinking that card into the viewport.
-const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode; view: string }> = ({ children, devButton, view }) => {
+const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode; view: string; avatar?: string; name?: string }> = ({ children, devButton, view, avatar, name }) => {
   const mobileAppDesign = useMobileAppDesign();
   return (
   <div data-view={view} className={`auth-paper ${mobileAppDesign ? 'account-entry' : 'theme-compat'} relative flex min-h-[100dvh] flex-col items-center justify-center overflow-x-hidden bg-[var(--surface-canvas)] [overflow-anchor:none] md:min-h-screen md:p-8`}>
@@ -168,7 +178,7 @@ const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNo
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className="account-card flex min-h-[100dvh] w-full md:min-h-[574px] md:max-w-5xl md:overflow-hidden"
     >
-      <WelcomeArtworkPanel />
+      <WelcomeArtworkPanel avatar={avatar} name={name} />
       <div className="account-form flex w-full flex-1 flex-col justify-start px-5 pb-[calc(24px+var(--sab,0px))] pt-[calc(20px+var(--sat,0px))] sm:px-8 md:w-1/2 md:flex-none md:justify-center md:px-14 md:py-12">
         <div className="mx-auto flex w-full max-w-[420px] flex-1 flex-col md:max-w-[380px] md:flex-none">
           {mobileAppDesign && <div className="account-wordmark"><AuthWordmark /></div>}
@@ -872,7 +882,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ═══════════════════════════════════════════════════════════
   return (
     <>
-      <LoginCard devButton={devButtons} view={view}>
+      <LoginCard devButton={devButtons} view={view} avatar={view === 'register' && registerStep === 3 ? selectedAvatar : undefined} name={name}>
         <AnimatePresence mode="wait" initial={false} custom={viewDirection}>
         <MotionDiv
           ref={authViewRef}
@@ -1360,21 +1370,18 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <MotionDiv key="step3" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
                     {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>}
                     <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
-                    <div className="mb-6 grid grid-cols-4 gap-3">
+                    <div className="auth-crew-picker mb-6 grid grid-cols-4 gap-3">
                       {AVATAR_SEEDS.map(seed => (
                         <button
                           key={seed}
                           type="button"
                           aria-pressed={selectedAvatar === seed}
-                          aria-label={`Choose ${seed} avatar`}
+                          aria-label={`Choose ${getAvatarName(seed)} avatar`}
                           onClick={() => setAvatar(seed)}
-                          className={`aspect-square overflow-hidden rounded-2xl border-2 bg-white transition-[border-color,box-shadow,transform] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)] active:scale-[0.97] ${
-                            selectedAvatar === seed
-                              ? 'border-[#F26B1F] shadow-[0_0_0_3px_rgba(242,107,31,0.22)]'
-                              : 'border-[#D0CDC8] hover:border-[#9E9186]'
-                          }`}
+                          className="auth-crew-choice"
                         >
-                          <Avatar seed={seed} alt="" className="block h-full w-full object-cover" />
+                          <Avatar seed={seed} alt="" className="auth-crew-option" />
+                          <span>{getAvatarName(seed)}</span>
                         </button>
                       ))}
                     </div>

@@ -1,0 +1,426 @@
+import type { StarCrewArtwork } from "./starCrewTypes";
+
+/** Approved artwork keyed by canonical subject ID. This is an asset index, not curriculum content. */
+export const SUBJECT_STAR_CREW: Record<string, StarCrewArtwork> = {
+  "accounting": {
+    "src": "/assets/star-crew/subjects/accounting.png",
+    "frame": {
+      "width": 109.901124,
+      "left": -5.739326,
+      "top": -3.110112
+    }
+  },
+  "agricultural-science": {
+    "src": "/assets/star-crew/subjects/agricultural-science.png",
+    "frame": {
+      "width": 106.54902,
+      "left": -2.594771,
+      "top": -2.764706
+    }
+  },
+  "ancient-greek": {
+    "src": "/assets/star-crew/subjects/ancient-greek-v4.png",
+    "frame": {
+      "width": 101.359585,
+      "left": -0.47772,
+      "top": 1.381347
+    }
+  },
+  "applied-mathematics": {
+    "src": "/assets/star-crew/subjects/applied-mathematics.png",
+    "frame": {
+      "width": 100.828562,
+      "left": -0.454484,
+      "top": 0.027949
+    }
+  },
+  "arabic": {
+    "src": "/assets/star-crew/subjects/arabic.png",
+    "frame": {
+      "width": 107.015317,
+      "left": -4.873085,
+      "top": -3.422319
+    }
+  },
+  "art": {
+    "src": "/assets/star-crew/subjects/art.png",
+    "frame": {
+      "width": 99.402439,
+      "left": -0.692073,
+      "top": 2.597561
+    }
+  },
+  "biology": {
+    "src": "/assets/star-crew/subjects/biology.png",
+    "frame": {
+      "width": 105.174194,
+      "left": -5.648387,
+      "top": -2.922581
+    }
+  },
+  "business": {
+    "src": "/assets/star-crew/subjects/business.png",
+    "frame": {
+      "width": 106.023817,
+      "left": -1.616858,
+      "top": -1.23639
+    }
+  },
+  "chemistry": {
+    "src": "/assets/star-crew/subjects/chemistry.png",
+    "frame": {
+      "width": 106.086768,
+      "left": -5.412148,
+      "top": -2.451193
+    }
+  },
+  "classical-studies": {
+    "src": "/assets/star-crew/subjects/classical-studies.png",
+    "frame": {
+      "width": 117.845783,
+      "left": -8.922892,
+      "top": -4.13012
+    }
+  },
+  "climate-action-and-sustainable-development": {
+    "src": "/assets/star-crew/subjects/climate-action-and-sustainable-development.png",
+    "frame": {
+      "width": 103.068493,
+      "left": -4.164384,
+      "top": -1.575342
+    }
+  },
+  "computer-science": {
+    "src": "/assets/star-crew/subjects/computer-science.png",
+    "frame": {
+      "width": 116.166271,
+      "left": -8.824228,
+      "top": -6.508314
+    }
+  },
+  "construction-studies": {
+    "src": "/assets/star-crew/subjects/construction-studies.png",
+    "frame": {
+      "width": 104.055319,
+      "left": -3.687234,
+      "top": -0.782979
+    }
+  },
+  "design-and-communication-graphics": {
+    "src": "/assets/star-crew/subjects/design-and-communication-graphics-v3.png",
+    "frame": {
+      "width": 99.181189,
+      "left": -2.042442,
+      "top": 0.409406
+    }
+  },
+  "drama-film-and-theatre-studies": {
+    "src": "/assets/star-crew/subjects/drama-film-and-theatre-studies.png",
+    "frame": {
+      "width": 114.266355,
+      "left": -6.632009,
+      "top": -5.037383
+    }
+  },
+  "economics": {
+    "src": "/assets/star-crew/subjects/economics.png",
+    "frame": {
+      "width": 110.864226,
+      "left": -6.050972,
+      "top": -2.868267
+    }
+  },
+  "engineering": {
+    "src": "/assets/star-crew/subjects/engineering.png",
+    "frame": {
+      "width": 115.480519,
+      "left": -9.213695,
+      "top": -5.94451
+    }
+  },
+  "english": {
+    "src": "/assets/star-crew/subjects/english.png",
+    "frame": {
+      "width": 110.797906,
+      "left": -6.768465,
+      "top": -5.045531
+    }
+  },
+  "french": {
+    "src": "/assets/star-crew/subjects/french.png",
+    "frame": {
+      "width": 108.80089,
+      "left": -4.400445,
+      "top": -2.448276
+    }
+  },
+  "geography": {
+    "src": "/assets/star-crew/subjects/geography.png",
+    "frame": {
+      "width": 108.80089,
+      "left": -4.617353,
+      "top": -2.535039
+    }
+  },
+  "german": {
+    "src": "/assets/star-crew/subjects/german.png",
+    "frame": {
+      "width": 112.169725,
+      "left": -9.215596,
+      "top": -4.65367
+    }
+  },
+  "hebrew-studies": {
+    "src": "/assets/star-crew/subjects/hebrew-studies.png",
+    "frame": {
+      "width": 103.834395,
+      "left": -3.035032,
+      "top": -1.503185
+    }
+  },
+  "history": {
+    "src": "/assets/star-crew/subjects/history.png",
+    "frame": {
+      "width": 105.742703,
+      "left": -2.871351,
+      "top": -2.829189
+    }
+  },
+  "home-economics": {
+    "src": "/assets/star-crew/subjects/home-economics.png",
+    "frame": {
+      "width": 109.777778,
+      "left": -5.851852,
+      "top": -3.356902
+    }
+  },
+  "irish": {
+    "src": "/assets/star-crew/subjects/irish-v3.png",
+    "frame": {
+      "width": 98.043173,
+      "left": 0.313847,
+      "top": 2.972114
+    }
+  },
+  "italian": {
+    "src": "/assets/star-crew/subjects/italian.png",
+    "frame": {
+      "width": 101.570093,
+      "left": 3.629283,
+      "top": -0.096573
+    }
+  },
+  "japanese": {
+    "src": "/assets/star-crew/subjects/japanese.png",
+    "frame": {
+      "width": 117.14012,
+      "left": -8.57006,
+      "top": -7.869461
+    }
+  },
+  "latin": {
+    "src": "/assets/star-crew/subjects/latin.png",
+    "frame": {
+      "width": 112.041237,
+      "left": -8.56701,
+      "top": -4.010309
+    }
+  },
+  "lcvp-link-modules": {
+    "src": "/assets/star-crew/subjects/lcvp-link-modules.png",
+    "frame": {
+      "width": 102.851735,
+      "left": 0.214511,
+      "top": -1.548896
+    }
+  },
+  "lithuanian": {
+    "src": "/assets/star-crew/subjects/lithuanian.png",
+    "frame": {
+      "width": 101.195152,
+      "left": -1.767695,
+      "top": -1.001065
+    }
+  },
+  "mandarin-chinese": {
+    "src": "/assets/star-crew/subjects/mandarin-chinese.png",
+    "frame": {
+      "width": 111.530217,
+      "left": -6.432155,
+      "top": -2.340935
+    }
+  },
+  "mathematics": {
+    "src": "/assets/star-crew/subjects/mathematics.png",
+    "frame": {
+      "width": 122.72522,
+      "left": -12.683814,
+      "top": -8.377666
+    }
+  },
+  "music": {
+    "src": "/assets/star-crew/subjects/music-v2.png",
+    "frame": {
+      "width": 105.174194,
+      "left": -2.251613,
+      "top": -1.496774
+    }
+  },
+  "physical-education": {
+    "src": "/assets/star-crew/subjects/physical-education.png",
+    "frame": {
+      "width": 105.061224,
+      "left": -2.32116,
+      "top": -0.477981
+    }
+  },
+  "physics": {
+    "src": "/assets/star-crew/subjects/physics.png",
+    "frame": {
+      "width": 118.130435,
+      "left": -11.278986,
+      "top": -8.782609
+    }
+  },
+  "physics-and-chemistry": {
+    "src": "/assets/star-crew/subjects/physics-and-chemistry.png",
+    "frame": {
+      "width": 120.309963,
+      "left": -12.073801,
+      "top": -7.516605
+    }
+  },
+  "polish": {
+    "src": "/assets/star-crew/subjects/polish.png",
+    "frame": {
+      "width": 100.941176,
+      "left": -5.380805,
+      "top": -0.108359
+    }
+  },
+  "politics-and-society": {
+    "src": "/assets/star-crew/subjects/politics-and-society.png",
+    "frame": {
+      "width": 110.024747,
+      "left": -6.021372,
+      "top": -3.389201
+    }
+  },
+  "portuguese": {
+    "src": "/assets/star-crew/subjects/portuguese.png",
+    "frame": {
+      "width": 107.068547,
+      "left": -3.534273,
+      "top": -2.424312
+    }
+  },
+  "religious-education": {
+    "src": "/assets/star-crew/subjects/religious-education-v3.png",
+    "frame": {
+      "width": 106.665213,
+      "left": -3.290076,
+      "top": -2.609597
+    }
+  },
+  "russian": {
+    "src": "/assets/star-crew/subjects/russian.png",
+    "frame": {
+      "width": 106.665213,
+      "left": -7.287895,
+      "top": -3.119956
+    }
+  },
+  "spanish": {
+    "src": "/assets/star-crew/subjects/spanish.png",
+    "frame": {
+      "width": 113.734884,
+      "left": -8.590698,
+      "top": -4.237209
+    }
+  },
+  "technology": {
+    "src": "/assets/star-crew/subjects/technology.png",
+    "frame": {
+      "width": 112.298507,
+      "left": -6.014925,
+      "top": -6.283582
+    }
+  }
+};
+
+const ARTWORK_ALIASES: Record<string, string> = {
+  "accounting": "accounting",
+  "agricultural science": "agricultural-science",
+  "ancient greek": "ancient-greek",
+  "applied mathematics": "applied-mathematics",
+  "arabic": "arabic",
+  "art": "art",
+  "biology": "biology",
+  "business": "business",
+  "chemistry": "chemistry",
+  "classical studies": "classical-studies",
+  "climate action and sustainable development": "climate-action-and-sustainable-development",
+  "computer science": "computer-science",
+  "construction studies": "construction-studies",
+  "design and communication graphics": "design-and-communication-graphics",
+  "drama film and theatre studies": "drama-film-and-theatre-studies",
+  "economics": "economics",
+  "engineering": "engineering",
+  "english": "english",
+  "french": "french",
+  "geography": "geography",
+  "german": "german",
+  "hebrew studies": "hebrew-studies",
+  "history": "history",
+  "home economics": "home-economics",
+  "irish": "irish",
+  "irish (gaeilge)": "irish",
+  "italian": "italian",
+  "japanese": "japanese",
+  "latin": "latin",
+  "lcvp link modules": "lcvp-link-modules",
+  "lcvp / life community and work": "lcvp-link-modules",
+  "lithuanian": "lithuanian",
+  "mandarin chinese": "mandarin-chinese",
+  "mathematics": "mathematics",
+  "music": "music",
+  "physical education": "physical-education",
+  "physics": "physics",
+  "physics and chemistry": "physics-and-chemistry",
+  "polish": "polish",
+  "politics and society": "politics-and-society",
+  "portuguese": "portuguese",
+  "religious education": "religious-education",
+  "russian": "russian",
+  "spanish": "spanish",
+  "technology": "technology",
+  "maths": "mathematics",
+  "math": "mathematics",
+  "applied maths": "applied-mathematics",
+  "bio": "biology",
+  "chem": "chemistry",
+  "phys": "physics",
+  "ag science": "agricultural-science",
+  "re": "religious-education",
+  "religion": "religious-education",
+  "religious studies": "religious-education",
+  "gaeilge": "irish",
+  "dcg": "design-and-communication-graphics",
+  "design communication graphics": "design-and-communication-graphics",
+  "applied graphics and design": "design-and-communication-graphics",
+  "computer studies": "computer-science",
+  "cs": "computer-science",
+  "home ec": "home-economics",
+  "lcpe": "physical-education",
+  "pe": "physical-education",
+  "construction technology": "construction-studies",
+  "life community and work": "lcvp-link-modules",
+  "lcvp": "lcvp-link-modules",
+  "link modules": "lcvp-link-modules",
+  "chemical and physical science": "physics-and-chemistry"
+};
+
+export function getSubjectStarCrew(subject: string): StarCrewArtwork | undefined {
+  const key = subject.trim().toLowerCase().replace(/&/g, " and ").replace(/[-,]/g, " ").replace(/\s+/g, " ");
+  return SUBJECT_STAR_CREW[ARTWORK_ALIASES[key]];
+}

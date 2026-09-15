@@ -54,8 +54,13 @@
 .setup-subject-hero[data-compact=true] img{width:64px;height:54px}
 .setup-subject-hero[data-compact=true] strong{font-size:32px}
 .setup-subject-hero p{font-size:13px;line-height:1.4;margin-top:5px;color:var(--setup-muted)}
-.setup-subject{flex-direction:row;justify-content:space-between;align-items:center;font-size:15px}
-.setup-subject>span:last-child{font-size:22px;font-weight:400}
+.setup-subject{flex-direction:row;justify-content:space-between;align-items:center;font-size:15px;min-height:82px}
+.setup-subject-name{display:flex;align-items:center;gap:12px;min-width:0}
+.setup-subject-name>span:last-child{min-width:0;overflow-wrap:anywhere}
+.setup-subject .subject-avatar{width:52px;height:52px}
+.setup-subject .setup-subject-state{font-size:11px;font-weight:600;flex-shrink:0;color:#626262}
+.setup-flow .setup-choice.setup-subject[aria-pressed=true]{background:#fff;color:#1a1a1a;border-color:#f26b1f;box-shadow:inset 0 0 0 1px #f26b1f}
+.setup-subject[aria-pressed=true] .setup-subject-state{color:#b94712}
 .setup-levels{display:flex;gap:8px}
 .setup-levels button{flex:1}
 .setup-grade-graphic{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:26px 0}

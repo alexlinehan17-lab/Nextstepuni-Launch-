@@ -18,7 +18,7 @@
 .home-section-heading h2{font:600 23px/1.3 'Source Serif 4',Georgia,serif;letter-spacing:-.5px}
 .home-section-heading button{display:flex;align-items:center;gap:8px;min-height:44px;font-size:13px;white-space:nowrap}
 .home-plan-row{display:flex;align-items:center;gap:14px;min-height:76px;width:100%;text-align:left;border-bottom:1px solid var(--outline-soft);padding:12px 0}
-.home-subject-code{display:grid;place-items:center;width:38px;height:38px;flex-shrink:0;border:1px solid var(--outline-strong);border-radius:9px;font-size:12px;font-weight:600}
+.home-plan-row .subject-avatar{width:44px;height:44px}
 .home-plan-copy{display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}
 .home-plan-copy strong{font-size:15px;font-weight:600;line-height:1.3}
 .home-plan-copy>span{font-size:13px;line-height:1.4;color:var(--ink-secondary)}
