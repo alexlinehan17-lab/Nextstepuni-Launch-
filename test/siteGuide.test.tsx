@@ -42,7 +42,8 @@ describe('SiteGuide', () => {
 
       await waitFor(() => {
         const capture = screen.getByRole('img', { name: `${title} — screenshot from the app` });
-        expect(capture).toHaveAttribute('src', `/assets/guide/2026-09-15/${mobile ? 'mobile' : 'desktop'}/${id}.webp`);
+        const filename = !mobile && id === 'home' ? 'home-full-height' : id;
+        expect(capture).toHaveAttribute('src', `/assets/guide/2026-09-15/${mobile ? 'mobile' : 'desktop'}/${filename}.webp`);
         expect(capture).toHaveAttribute('data-guide-capture', 'real-app');
         const file = readFileSync(resolve('public', capture.getAttribute('src')!.slice(1)));
         expect(file.subarray(0, 4).toString()).toBe('RIFF');
