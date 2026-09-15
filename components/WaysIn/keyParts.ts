@@ -201,6 +201,9 @@ const keyFor = (surface: string, following: string): string => {
   if (/^(?:to|under|in|from|on|at|by|for|with|of|during)\s+(?:what|which|whom|whose|how)\b/.test(bare)) return 'wh-plain';
   if (s.startsWith('briefly describe') || /^describe briefly/.test(s)) return 'brief-describe';
   const verb = bare.split(' ')[0];
+  // "Find the value of x" is a calculation; "find ten words related to
+  // 'Music'" is not.
+  if (/^(?:find|determine)$/.test(verb) && !QUANTITY.test(next)) return 'identify';
   const map: Record<string, string> = {
     state: 'state', name: 'name', identify: 'identify', list: 'list', define: 'define', explain: 'explain',
     describe: 'describe', outline: 'outline', discuss: 'discuss', examine: 'examine', analyse: 'analyse', analyze: 'analyse',
@@ -223,11 +226,13 @@ const keyFor = (surface: string, following: string): string => {
   return map[verb] ?? 'other';
 };
 
+const QUANTITY = /^(?:(?:the|an?|its|their|his|her)\s+)?(?:(?:exact|approximate|total|average|mean|maximum|minimum|new|final|initial|resultant|percentage|equivalent|effective)\s+)*(?:values?|area|volume|length|distance|displacement|speed|velocity|time|mass|weight|force|angle|coordinates?|equations?|expression|roots?|derivative|gradient|slope|range|sum|product|probability|mean|median|mode|number|cost|price|rate|percentage|ratio|height|radius|diameter|perimeter|circumference|magnitude|acceleration|energy|power|resistance|current|voltage|concentration|moles?|yield|limit|integral|point|points|intersection|inverse|period|frequency|wavelength|work|momentum|tension|pressure|density|temperature|charge|capacitance|efficiency|profit|loss|interest|tax|amount|size|measure|dimensions?|centre|center|image|solution|solutions|matrix|determinant|modulus|argument|domain|breakeven|margin|elasticity|multiplier|output|surplus)\b|^[a-zA-Zθφλμ](?:\s*[=,)]|\s*$|\s+(?:and|if|when|such|in terms)\b)|^[\d(]|^\|/i;
+
 const CALC_KEYS = new Set(['calculate', 'solve', 'convert', 'estimate']);
 
 // Imperatives the shared command lexicon lacks. Used only at a clause start,
 // so "locate" inside a sentence is never mistaken for an instruction.
-const EXTRA_VERBS = /^(?:hence(?:,| or otherwise,)?\s+)?(put a tick|place a tick|amend|update|modify|extend|replace|balance|apply|create|implement|edit|solve|work out|prove|verify|show that|find|evaluate|simplify|factorise|factorize|expand|express|write down|write out|write|obtain|derive|estimate|calculate|locate|scan|project|construct|determine|mention|fill in|complete|shade|mark|plot|insert|underline|circle|match|rewrite|arrange|rank|sketch|trace|investigate|recommend|propose|devise|design|plan|prepare|set out|show|indicate|specify|select|choose|tick|give|state|name|list)(?![\p{L}])/iu;
+const EXTRA_VERBS = /^(?:hence(?:,| or otherwise,)?\s+)?(identify|describe|explain|outline|discuss|suggest|analyse|analyze|evaluate|assess|compare|contrast|define|justify|classify|predict|interpret|summarise|summarize|examine|distinguish|illustrate|label|draw|put a tick|place a tick|amend|update|modify|extend|replace|balance|apply|create|implement|edit|solve|work out|prove|verify|show that|find|evaluate|simplify|factorise|factorize|expand|express|write down|write out|write|obtain|derive|estimate|calculate|locate|scan|project|construct|determine|mention|fill in|complete|shade|mark|plot|insert|underline|circle|match|rewrite|arrange|rank|sketch|trace|investigate|recommend|propose|devise|design|plan|prepare|set out|show|indicate|specify|select|choose|tick|give|state|name|list)(?![\p{L}])/iu;
 const EXTENDED = new Set(['describe', 'explain', 'discuss', 'examine', 'analyse']);
 
 // ---------------------------------------------------------------------------
@@ -684,7 +689,7 @@ function buildUnit(
     cur += quote[0].length;
   }
   // "From the list above identify two alkanes": an opener with no comma.
-  const bareOpener = /^((?:From|Using|In|On|Based on|According to) (?:the|this|these) [^,.?]{2,40}?(?:above|below|provided|given|shown))\s+(?=\p{Ll})/u.exec(raw.slice(cur, end));
+  const bareOpener = /^((?:From|Using|In|On|Based on|According to) (?:the|this|these) (?:[^,.?]{2,40}?(?:above|below|provided|given|shown)|(?:text|passage|extract|article|poem|story|document|diagram|table|graph|source|letter|advertisement)))\s+(?=\p{Ll})/u.exec(raw.slice(cur, end));
   const openerUse: KPUse[] = [];
   if (bareOpener && EXTRA_VERBS.test(raw.slice(cur + bareOpener[0].length, end))) {
     const sp = spanOf(from, raw, cur, cur + bareOpener[1].length);
@@ -747,7 +752,7 @@ function buildUnit(
   } else {
     // "By 1715, what was …?" / "Apart from ditches, what did …?": an opening
     // phrase before a question. The phrase is a condition.
-    const opener = /^([^,?]{3,70}),\s+(?=(?:what|which|how|why|where|when|who|in what|at what|to what|by how)\b[^?]*\?\s*$)/i.exec(raw.slice(cur, end))
+    const opener = /^([^,?]{3,70}),\s+(?=(?:(?:to|in|for|from|on|at|by|with|under|during|into|between)\s+)?(?:what|which|whom|whose|how|why|where|when|who)\b[^?]*\?\s*$)/i.exec(raw.slice(cur, end))
       ?? /^(According to [^,?]{3,80}?)\s+(?=(?:what|which|how|why|where|when|who)\b[^?]*\?\s*$)/i.exec(raw.slice(cur, end));
     if (opener) {
       const sp = spanOf(from, raw, cur, cur + opener[1].length);
@@ -782,7 +787,9 @@ function buildUnit(
         // What comes before a mid-sentence command is the set-up: for a
         // calculation it is where the values are, so it is kept as a given.
         const setup = spanOf(from, raw, cur, cur + mid.index);
-        if (setup) openerUse.push({ ...setup, kind: /=|\d/.test(setup.display) ? 'given' : 'material' });
+        if (setup && /=/.test(setup.display)) openerUse.push({ ...setup, kind: 'given' });
+        else if (setup && /\)$/.test(setup.display)) conditions.push(setup);
+        else if (setup) openerUse.push({ ...setup, kind: /\d/.test(setup.display) ? 'given' : 'material' });
         cur += mid.index + 1;
         verb = EXTRA_VERBS.exec(raw.slice(cur, end));
       }
@@ -820,7 +827,9 @@ function buildUnit(
     // "Do both documents give similar descriptions of …?" / "At the end of
     // the play did you feel any sympathy for Jason?"
     const yn = !action && /\?\s*$/.test(raw.slice(cur, end)) ? YES_NO.exec(raw.slice(cur, end)) : null;
-    if (yn) {
+    // A prefix that holds a question word is not a yes/no question's opener.
+    if (yn && yn[1] && /\b(?:what|which|whom|whose|how|why|where|when|who)\b/i.test(yn[1])) yn.splice(0, yn.length);
+    if (yn && yn.length) {
       if (yn[1]) {
         const sp = spanOf(from, raw, cur, cur + yn[1].length);
         if (sp) conditions.push(sp);
@@ -838,7 +847,8 @@ function buildUnit(
   // instructions; "For this cross, state:" is.
   if (/^\s+of\s+[^.?!:]{1,30}:/.test(raw.slice(cur, end)) || /^\s*:\s*\p{Lu}[\p{L} ]{0,30}:/u.test(raw.slice(cur, end))) return null;
   // A single command word followed by "of" is a noun: "Design of products".
-  if (/^\p{L}+$/u.test(action.display) && !/^(?:account|details)/i.test(action.display) && /^\s+of\s/i.test(raw.slice(cur, end))) return null;
+  if (/^\p{L}+$/u.test(action.display) && !/^(?:account|details)/i.test(action.display) && !/^(?:wh-|explain-how|to-what-extent)/.test(actionKey)
+    && !/^(?:which|what|who|whose|whom|how)$/i.test(action.display) && /^\s+of\s/i.test(raw.slice(cur, end))) return null;
   skipSpace();
 
   // "Discuss in detail, using notes and freehand sketches, three …": a
@@ -1549,9 +1559,18 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
         }
         MATERIAL_RE.lastIndex = 0;
         const made: KPUnit[] = [];
-        for (const clause of clausesOf(q, piece)) {
+        const clauses = clausesOf(q, piece);
+        for (const clause of clauses) {
           const unit = buildUnit(q, clause, { ref: part.ref, altGroup: part.altGroup, id: `${source.id}#${n + 1}`, from: 'q' });
-          if (unit) { n += 1; made.push(unit); unitPiece.set(unit.id, piece); }
+          if (unit) { n += 1; made.push(unit); unitPiece.set(unit.id, piece); continue; }
+          // A clause of a task sentence that holds an instruction the parser
+          // cannot read is shown as printed rather than dropped.
+          const sp = clauses.length > 1 ? spanOf('q', q, clause.start, clause.end) : null;
+          if (sp && sp.display.split(/\s+/).length >= 3 && /\b(?:find|list|name|identify|describe|explain|give|state|write|calculate|draw|label|outline|discuss|suggest|compare|show|complete|choose|select)\b/i.test(sp.display)) {
+            const u = asPrinted(nextId(), part.ref, part.altGroup, sp);
+            made.push(u);
+            unitPiece.set(u.id, piece);
+          }
         }
         // The statement a question is about: "Linda is well suited to the
         // work. Do you agree?" / "The narrator describes his colleague's
@@ -1596,10 +1615,13 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           }
         }
         if (!b.focus) continue;
-        // "Name and explain X": a command left without a focus shares the next one's.
+        // "Name and explain X": a command left without a focus shares the next
+        // one's. "Identify and describe two paintings": the count is shared
+        // too, and the two jobs are done together, one space per painting.
         a.focus = b.focus;
         if (!a.conditions.length) a.conditions = [...b.conditions];
-        if (EXTENDED.has(a.actionKey.replace(/-.*/, '')) && EXTENDED.has(b.actionKey.replace(/-.*/, ''))) a.jointWith = b.id;
+        if (!a.count && b.count) { a.count = b.count; a.countValue = b.countValue; a.countNoun = b.countNoun; }
+        if ((EXTENDED.has(a.actionKey.replace(/-.*/, '')) && EXTENDED.has(b.actionKey.replace(/-.*/, ''))) || (b.countValue ?? 0) > 1) a.jointWith = b.id;
       }
       for (const u of partUnits) if (u.action && !unitPiece.has(u.id)) unitPiece.set(u.id, pieces[0]);
 
