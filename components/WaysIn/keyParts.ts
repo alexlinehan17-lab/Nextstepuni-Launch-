@@ -643,6 +643,12 @@ function actionTail(raw: string, aEnd: number, end: number, verb: string): numbe
 /** "In what direction is …", "Which county has …": the noun belongs to the question word when a verb follows it. */
 function whNounEnd(raw: string, whStart: number, whEnd: number, end: number): number {
   const wh = raw.slice(whStart, whEnd).trim();
+  // "What is said about Talgo?", "What was done to …": the passive verb
+  // belongs to the question.
+  if (/\b(?:is|are|was|were|has|have|had)$/i.test(wh)) {
+    const participle = /^\s+(?:said|done|known|seen|made|given|taken|shown|meant|found|told|written|thought|felt|heard|described|mentioned|suggested|revealed|learned|learnt|discovered|decided|offered|planned|proposed|reported|expected|needed|required|used|achieved)\b/i.exec(raw.slice(whEnd, end));
+    if (participle) return whEnd + participle[0].length;
+  }
   if (!/^(?:what|which|whose|(?:to|under|in|into|from|on|at|by|for|with|of|during|between|about)\s+(?:what|which))$/i.test(wh)) return whEnd;
   const noun = /^\s+([\p{L}-]{3,})(?=(?:\s*\([^)]{1,30}\))?\s+(?:is|are|was|were|did|does|do|has|have|had|can|could|would|should|will|might|may|must)\b)/iu.exec(raw.slice(whEnd, end));
   return noun ? whEnd + noun[0].length : whEnd;
@@ -755,7 +761,7 @@ function buildUnit(
     let aEnd = actionTail(raw, cmd.end, end, cmd.match.replace(/^(?:briefly|clearly|carefully)\s+/i, '').split(/\s+/)[0]);
     // A question word from the lexicon takes its full printed form:
     // "How many", "What did", "Which".
-    if (/^(?:(?:at|in|by|for|to|from|on|with|under)\s+)?(?:what|which|how|why|where|when|who)$/i.test(cmd.match.trim())) {
+    if (/^(?:(?:at|in|by|for|to|from|on|with|under)\s+)?(?:what|which|how|why|where|when|who)(?:\s|$)/i.test(cmd.match.trim())) {
       const head = raw.slice(cur, end).toLowerCase();
       const wh = WH_FORMS.find(f => head.startsWith(f) && !/[\p{L}]/u.test(head[f.length] ?? ' '));
       if (wh && cur + wh.length > aEnd) aEnd = cur + wh.length;
