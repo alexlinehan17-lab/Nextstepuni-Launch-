@@ -365,7 +365,7 @@ const OPENS_TASK = /^\s+(?:Give|Write|Find|Calculate|Explain|Describe|Name|State
 function sentences(raw: string, start: number, end: number): Piece[] {
   const out: Piece[] = [];
   let s = start;
-  const re = /[.?!][)”’"]*(?=\s+[\p{Lu}(“"‘\d•◆▪])|\n{1,}/gu;
+  const re = /[.?!][)”’"“»]*(?=\s+[\p{Lu}(“"‘„«\d•◆▪])|\n{1,}/gu;
   re.lastIndex = start;
   let m: RegExpExecArray | null;
   while ((m = re.exec(raw)) && m.index < end) {
@@ -2631,6 +2631,14 @@ function examUnitsIn(raw: string, start: number, end: number, lex: ExamLexicon, 
   const limitLead = (before: string) => lex.conditions.some(c => norm(before).replace(/[,:]$/, '').trim() === norm(c.surface));
   const MARKS_TAIL = /\s*[([]\s*\d+\s*(?:marc|mharc|marks?|pts?|points?|punkt\w*|puntos?|pontos?|bod\w*|pisteet?|poäng|point)\s*[)\]]\s*[.]?\s*$/iu;
   for (const piece of pieces) {
+    // "Setzen Sie die fehlenden Konjunktionen … ein. Lena setzt sich …": once a
+    // gap-fill or rewrite instruction is given, what follows is its passage.
+    const filler = units.find(u => /^(?:fill-gap|complete|rewrite|translate|match)$/.test(u.actionKey));
+    if (filler) {
+      const sp = spanOf('q', raw, piece.start, end);
+      if (sp && !filler.item) filler.item = sp;
+      break;
+    }
     let s0 = piece.start;
     const marks = MARKS_TAIL.exec(raw.slice(s0, piece.end));
     if (marks) piece.end = s0 + marks.index;
@@ -2715,6 +2723,14 @@ function examUnitsIn(raw: string, start: number, end: number, lex: ExamLexicon, 
       // A limit at the end of the sentence ends what it is about.
       if (!raw.slice(at + m[0].length, loc.at).replace(/[\s.?!,;:]/g, '')) focusEnd = Math.min(focusEnd, at);
     }
+    // "Opišite, na temelju teksta, ali svojim riječima, kako …": limits that
+    // open the object are shown as limits, and what it is about starts after.
+    for (let moved = true; moved;) {
+      moved = false;
+      const lead = /^[\s,]*/.exec(raw.slice(cur, focusEnd))![0].length;
+      const hitLimit = unit.conditions.find(c => c.from === 'q' && c.start === cur + lead);
+      if (hitLimit) { cur = hitLimit.end; moved = true; while (cur < focusEnd && /[\s,;:]/.test(raw[cur])) cur += 1; if (/^(?:ali|mais|aber|pero|ma|men|maar|ale|bet|de|a)\s/i.test(raw.slice(cur, cur + 6))) cur = cur + raw.slice(cur).indexOf(' ') + 1; }
+    }
     // "… w tekście? przepisanie" — a word printed after the question mark is
     // the item it asks about; the question ends at its own full stop.
     const qmark = /[?？]\s*(?=\S)/u.exec(raw.slice(cur, focusEnd));
@@ -2724,6 +2740,13 @@ function examUnitsIn(raw: string, start: number, end: number, lex: ExamLexicon, 
     }
     const stop = /[.!](?=\s+[„“"«‘\p{Lu}])/u.exec(raw.slice(cur, focusEnd));
     if (stop && stop.index > 0) focusEnd = cur + stop.index;
+    // "Förklara dessa ord såsom de används i texten. ansåg (anse)": the
+    // printed word after the instruction's full stop is its item.
+    const tailItem = /\.\s+([^.?!]{1,60})$/u.exec(raw.slice(cur, focusEnd));
+    if (tailItem && !unit.item && tailItem[1].trim().split(/\s+/).length <= 6) {
+      const item = spanOf('q', raw, focusEnd - tailItem[1].length, focusEnd);
+      if (item) { unit.item = item; focusEnd = cur + tailItem.index; }
+    }
     // "…: kolidować z czymś" — the printed item after a colon.
     const colon = raw.slice(cur, focusEnd).indexOf(':');
     if (colon >= 0 && raw.slice(cur + colon + 1, focusEnd).trim()) {
