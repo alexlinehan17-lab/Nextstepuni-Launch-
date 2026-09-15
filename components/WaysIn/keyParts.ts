@@ -1746,6 +1746,11 @@ function spreadOver(unit: KPUnit, items: KPSpan[], raws: { q: string; stem: stri
     const sp = how ? spanOf(unit.focus.from, raws[unit.focus.from], unit.focus.start, unit.focus.start + how[0].length) : null;
     unit = { ...unit, focus: null, conditions: sp ? [sp, ...unit.conditions] : unit.conditions };
   }
+  // A card split per option prints fewer items than the choice count: the
+  // item is what this card answers, and "any two" does not multiply it.
+  if (isChoice(unit, raws) && (unit.countValue ?? 0) > items.length) {
+    unit = { ...unit, count: null, countValue: undefined, countNoun: undefined };
+  }
   if (items.length === 1) return [{ ...unit, item: items[0] }];
   const perList = unit.count && /\beach\b|\bthe following\b|^all\b|^both\b/i.test(unit.count.display);
   return items.map(item => ({
@@ -1824,7 +1829,14 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
     return { ...base, mode: 'blocked', reasons: ['garbled'] };
   }
 
-  const lang = englishRatio(`${stem} ${q}`);
+  // The question's own language decides: an English introduction in the
+  // stem does not make "Pourquoi Marie a-t-elle besoin de vacances ?" English.
+  const qLang = englishRatio(q);
+  // …unless the question is only the printed item an English instruction in
+  // the stem works on ("Explain in English the meaning of: … (line 9)").
+  const stemLang = englishRatio(stem);
+  const itemOfEnglishStem = stemLang.words >= 4 && stemLang.ratio >= 0.2 && commandMatches(stem).length > 0 && !/[?？]\s*(?:\([^)]*\))?\s*$/.test(q.trim());
+  const lang = qLang.words >= 5 && !itemOfEnglishStem ? qLang : englishRatio(`${stem} ${q}`);
   const cardRules: KPSpan[] = [];
   for (const [from, raw] of [['stem', stem], ['q', q]] as const) {
     for (const m of raw.matchAll(CARD_RULE)) {
