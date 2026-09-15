@@ -4,9 +4,9 @@
  */
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionP } from './Motion';
-import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound, BarChart3, ChevronRight, ExternalLink } from 'lucide-react';
+import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound, BarChart3, ChevronRight, ExternalLink, ArrowUpRight } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
@@ -38,6 +38,7 @@ import './account-entry.css';
 import './auth-paper.css';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import { WelcomeCharacter } from './WelcomeCharacter';
+import AccountCard, { AuthWordmark } from './AccountCard';
 
 /**
  * Did this visit start at the landing page? Read once, at module load, because
@@ -84,7 +85,7 @@ const SPRING_POP = { type: 'spring' as const, stiffness: 420, damping: 18 };
 // `custom={1}` slides forward (new view enters from right),
 // `custom={-1}` slides back (new view enters from left). Pure
 // tween easing keeps it crisp — no spring wobble.
-const SLIDE_DISTANCE = 56;
+const SLIDE_DISTANCE = 20;
 const SLIDE_EASE = [0.32, 0.72, 0, 1] as const;
 const slideTransition = { duration: 0.34, ease: SLIDE_EASE };
 const slideVariants = {
@@ -131,65 +132,6 @@ const AppleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
     <path d="M14.07 11.17c-.02-2.18 1.78-3.23 1.86-3.28-1.01-1.48-2.59-1.69-3.15-1.71-1.34-.14-2.61.79-3.29.79-.68 0-1.72-.77-2.83-.75-1.46.02-2.8.85-3.55 2.16-1.51 2.62-.39 6.5 1.09 8.62.72 1.04 1.58 2.21 2.71 2.17 1.09-.04 1.5-.7 2.82-.7 1.31 0 1.69.7 2.83.68 1.17-.02 1.91-1.06 2.62-2.1.83-1.21 1.17-2.38 1.19-2.44-.03-.01-2.28-.88-2.3-3.47zM11.9 4.56c.6-.73 1.01-1.74.9-2.75-.87.04-1.92.58-2.54 1.3-.55.64-1.04 1.67-.91 2.66.97.08 1.96-.49 2.55-1.21z" fill="#FFFFFF" />
   </svg>
 );
-
-const AuthWordmark = () => (
-  <span className="font-sans text-[26px] font-bold leading-none tracking-[-0.03em]">nextstepuni</span>
-);
-
-// ── Welcome artwork panel ──────────────────────────────────
-const WelcomeArtworkPanel = ({ avatar, name = '' }: { avatar?: string; name?: string }) => {
-  if (avatar) return <div className="auth-paper-story auth-crew-story hidden md:flex md:flex-col w-1/2">
-    <p className="auth-paper-eyebrow">Your account. Your character.</p>
-    <h2>A little<br />more <em>you.</em></h2>
-    <p>Pick the one that feels like you. They’ll be right here as you find your way.</p>
-    <div className="auth-crew-selected">
-      <Avatar seed={avatar} className="auth-crew-portrait" />
-      <div><h3>{getAvatarName(avatar)}</h3><p>{name.trim().split(/\s+/)[0] || 'Your'}{name.trim() ? '’s' : ''} Star Crew character</p></div>
-    </div>
-  </div>;
-  return (
-    <div className="auth-paper-story hidden md:flex md:flex-col w-1/2 relative">
-      {/* Brand strip */}
-      <div className="flex items-center gap-3">
-        <div style={{ color: '#1a1a1a' }}><AuthWordmark /></div>
-        <div style={{ flex: 1, height: 1, backgroundColor: 'rgba(26,26,26,0.12)' }} />
-      </div>
-
-      {/* Icon emblem + statement — grouped as one centred unit */}
-      <div className="flex-1 flex flex-col items-center justify-center text-center">
-        <WelcomeCharacter />
-        <h2 className="auth-paper-caption">Built around how you learn.</h2>
-        <p className="auth-paper-caption-detail">Personalised study, examiner-grounded.</p>
-      </div>
-    </div>
-  );
-};
-
-// ── Responsive auth shell ────────────────────────────────────────
-// Desktop keeps the established split card. Mobile is deliberately a separate,
-// edge-to-edge app composition instead of shrinking that card into the viewport.
-const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNode; view: string; avatar?: string; name?: string }> = ({ children, devButton, view, avatar, name }) => {
-  const mobileAppDesign = useMobileAppDesign();
-  return (
-  <div data-view={view} className={`auth-paper ${mobileAppDesign ? 'account-entry' : 'theme-compat'} relative flex min-h-[100dvh] flex-col items-center justify-center overflow-x-hidden bg-[var(--surface-canvas)] [overflow-anchor:none] md:min-h-screen md:p-8`}>
-    <MotionDiv
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="account-card flex min-h-[100dvh] w-full md:min-h-[574px] md:max-w-5xl md:overflow-hidden"
-    >
-      <WelcomeArtworkPanel avatar={avatar} name={name} />
-      <div className="account-form flex w-full flex-1 flex-col justify-start px-5 pb-[calc(24px+var(--sab,0px))] pt-[calc(20px+var(--sat,0px))] sm:px-8 md:w-1/2 md:flex-none md:justify-center md:px-14 md:py-12">
-        <div className="mx-auto flex w-full max-w-[420px] flex-1 flex-col md:max-w-[380px] md:flex-none">
-          {mobileAppDesign && <div className="account-wordmark"><AuthWordmark /></div>}
-          {children}
-        </div>
-      </div>
-    </MotionDiv>
-    {devButton}
-  </div>
-  );
-};
 
 /**
  * Copy for a registration failure, resolved at render rather than persisted.
@@ -247,6 +189,8 @@ async function writeUserDoc(
 
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const mobileAppDesign = useMobileAppDesign();
+  const reducedMotion = useReducedMotion();
+  const viewTransition = reducedMotion ? { duration: 0 } : slideTransition;
   // ── Top-level mode ──
   const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'forgot'>(() => mobileAppDesign ? 'login' : 'welcome');
 
@@ -307,6 +251,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const entryHelpRef = useRef<HTMLDivElement>(null);
   useModal(Boolean(entryHelp), () => setEntryHelp(null), entryHelpRef);
   const authViewRef = useRef<HTMLDivElement>(null);
+  const characterHeadingRef = useRef<HTMLHeadingElement>(null);
 
   // Direction tracking for view transitions. Computed synchronously on
   // each render so AnimatePresence sees the correct direction the moment
@@ -329,6 +274,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // Auth states are separate screens on mobile. Do not carry the keyboard's
   // previous document offset into the next screen or hide its back control.
   useEffect(() => {
+    if (window.matchMedia('(min-width: 768px)').matches) return;
     const resetAuthScroll = () => {
       const scrollRoot = document.scrollingElement ?? document.documentElement;
       scrollRoot.scrollTop = 0;
@@ -341,8 +287,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     // the previous screen instead of the new screen's header.
     const settledReset = window.setTimeout(() => {
       resetAuthScroll();
-      if (typeof authViewRef.current?.scrollIntoView === 'function') {
-        authViewRef.current.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'auto' });
+      // Registration's Back control lives in the shared card header.
+      const scrollTarget = view === 'register' ? authViewRef.current?.closest('.auth-paper') : authViewRef.current;
+      if (typeof scrollTarget?.scrollIntoView === 'function') {
+        scrollTarget.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'auto' });
       }
     }, 460);
     return () => window.clearTimeout(settledReset);
@@ -876,13 +824,17 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const selectedAvatar = avatar || defaultAvatar;
 
   // ═══════════════════════════════════════════════════════════
-  // Single LoginCard with view-level AnimatePresence so navigating
+  // Single AccountCard with view-level AnimatePresence so navigating
   // between Welcome / Login / GC / Forgot / Register actually
   // animates — was an instant render before.
   // ═══════════════════════════════════════════════════════════
   return (
     <>
-      <LoginCard devButton={devButtons} view={view} avatar={view === 'register' && registerStep === 3 ? selectedAvatar : undefined} name={name}>
+      <AccountCard devButton={devButtons} view={view} registerStep={registerStep} avatar={selectedAvatar} name={name}
+        onRegistrationBack={() => {
+          if (registerStep > 1) { setRegisterStep(s => s - 1); setError(''); }
+          else setView('welcome');
+        }}>
         <AnimatePresence mode="wait" initial={false} custom={viewDirection}>
         <MotionDiv
           ref={authViewRef}
@@ -892,7 +844,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           initial="enter"
           animate="center"
           exit="exit"
-          transition={slideTransition}
+          transition={viewTransition}
           className={mobileAppDesign ? (view === 'welcome' ? 'account-view flex flex-1 flex-col' : 'account-view w-full py-2 md:py-0') : (view === 'welcome' ? 'flex flex-1 flex-col md:block md:flex-none' : 'w-full py-2 md:py-0')}
         >
           {/* ── WELCOME ────────────────────────────────────── */}
@@ -1273,63 +1225,44 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           {/* ── REGISTER (multi-step) ───────────────────────── */}
           {view === 'register' && (
             <>
-              <div className="flex items-center justify-between mb-6">
-                <button type="button" onClick={() => {
-                  if (registerStep > 1) { setRegisterStep(s => s - 1); setError(''); }
-                  else setView('welcome');
-                }} className={backButtonClass} style={{ color: '#9e9186' }}>
-                  <ArrowLeft size={14} /> Back
-                </button>
-                <div className="flex items-center gap-1.5">
-                  {[1, 2, 3].map(s => (
-                    <MotionDiv
-                      key={s}
-                      className="h-1.5 rounded-full"
-                      animate={{
-                        width: s === registerStep ? 24 : 8,
-                        backgroundColor: s <= registerStep ? '#F26B1F' : '#d0cdc8',
-                      }}
-                      transition={SPRING_GENTLE}
-                    />
-                  ))}
-                </div>
-              </div>
-
               <AnimatePresence mode="wait" initial={false} custom={stepDirection}>
                 {registerStep === 1 && (
-                  <MotionDiv key="step1" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
-                    {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>}
+                  <MotionDiv key="step1" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={viewTransition} className="auth-registration-step">
+                    <p className="auth-paper-eyebrow">First, the essentials</p>
+                    <h1 className="auth-registration-title auth-registration-brand-heading">Let&apos;s get you set up</h1>
                     <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
-                    <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="space-y-4">
-                      <div>
-                        <label htmlFor="register-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                        <input id="register-email" name={mobileAppDesign ? "username" : undefined} type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
-                      </div>
-                      <div>
-                        <label htmlFor="register-name" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
-                        <input id="register-name" type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} autoComplete={mobileAppDesign ? "name" : "given-name"} autoCapitalize="words" autoCorrect="off" spellCheck={false} />
-                      </div>
-                      <div>
-                        <label htmlFor="register-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
-                        <div className="relative">
-                          <select id="register-school" value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
-                            <option value="" disabled>Select your school</option>
-                            {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
-                          </select>
-                          <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+                    <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="auth-registration-form space-y-4">
+                      <div className="auth-registration-fields">
+                        <div>
+                          <label htmlFor="register-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+                          <input id="register-email" name={mobileAppDesign ? "username" : undefined} type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                         </div>
-                      </div>
-                      <div>
-                        <label htmlFor="register-join-code" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School join code</label>
-                        <div className="relative">
-                          <input id="register-join-code" type="text" value={joinCode} onChange={e => { setJoinCode(e.target.value); setError(''); }} placeholder="From your school" className={`${inputClass} pr-10`} autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                          <KeyRound size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+                        <div>
+                          <label htmlFor="register-name" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
+                          <input id="register-name" type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} autoComplete={mobileAppDesign ? "name" : "given-name"} autoCapitalize="words" autoCorrect="off" spellCheck={false} />
                         </div>
-                        {mobileAppDesign ? <button type="button" className="account-help" onClick={() => setEntryHelp('code')}>Where do I find my join code?</button> : <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>Your school gives you this code. It confirms you belong to your school.</p>}
+                        <div>
+                          <label htmlFor="register-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
+                          <div className="relative">
+                            <select id="register-school" value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
+                              <option value="" disabled>Select your school</option>
+                              {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
+                            </select>
+                            <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+                          </div>
+                        </div>
+                        <div>
+                          <label htmlFor="register-join-code" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School join code</label>
+                          <div className="relative">
+                            <input id="register-join-code" type="text" value={joinCode} onChange={e => { setJoinCode(e.target.value); setError(''); }} placeholder="From your school" className={`${inputClass} pr-10`} autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
+                            <KeyRound size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
+                          </div>
+                          {mobileAppDesign ? <button type="button" className="account-help" onClick={() => setEntryHelp('code')}>Where do I find my join code?</button> : <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>Your school gives you this code. It confirms you belong to your school.</p>}
+                        </div>
                       </div>
                       <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                      <MotionButton type="submit" whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-                        <span className="flex items-center justify-center gap-2">Continue <ArrowRight size={16} /></span>
+                      <MotionButton type="submit" whileHover={reducedMotion ? undefined : { y: -1 }} whileTap={reducedMotion ? undefined : { y: 1 }} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
+                        <span className="flex items-center justify-between gap-2">Continue <ArrowUpRight size={22} aria-hidden="true" /></span>
                       </MotionButton>
                     </form>
                     <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
@@ -1339,10 +1272,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 )}
 
                 {registerStep === 2 && (
-                  <MotionDiv key="step2" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
-                    {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h2>}
+                  <MotionDiv key="step2" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={viewTransition} className="auth-registration-step">
+                    <p className="auth-paper-eyebrow">Just for you</p>
+                    <h1 className="auth-registration-title auth-registration-brand-heading">Create a password</h1>
                     <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Use at least {MIN_PASSWORD_LENGTH} characters. A short phrase is easier to remember and harder to guess.</p>
-                    <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="space-y-4">
+                    <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="auth-registration-form space-y-4">
                       <div>
                         <label htmlFor="register-password" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
                         <div className="relative">
@@ -1359,18 +1293,19 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                         )}
                       </div>
                       <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                      <MotionButton type="submit" whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-                        <span className="flex items-center justify-center gap-2">Continue <ArrowRight size={16} /></span>
+                      <MotionButton type="submit" whileHover={reducedMotion ? undefined : { y: -1 }} whileTap={reducedMotion ? undefined : { y: 1 }} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
+                        <span className="flex items-center justify-between gap-2">Continue <ArrowUpRight size={22} aria-hidden="true" /></span>
                       </MotionButton>
                     </form>
                   </MotionDiv>
                 )}
 
                 {registerStep === 3 && (
-                  <MotionDiv key="step3" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
-                    {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>}
-                    <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
-                    <div className="auth-crew-picker mb-6 grid grid-cols-4 gap-3">
+                  <MotionDiv key="step3" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={viewTransition} className="auth-registration-step" onAnimationComplete={(definition: string) => { if (definition === 'center') characterHeadingRef.current?.focus({ preventScroll: true }); }}>
+                    <p className="auth-paper-eyebrow">Meet the Star Crew</p>
+                    <h1 ref={characterHeadingRef} tabIndex={-1} className="auth-registration-title">Choose your character.</h1>
+                    <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Eight personalities. One that’s yours.</p>
+                    <div className="auth-crew-picker" role="group" aria-label="Choose your Star Crew character">
                       {AVATAR_SEEDS.map(seed => (
                         <button
                           key={seed}
@@ -1381,12 +1316,13 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                           className="auth-crew-choice"
                         >
                           <Avatar seed={seed} alt="" className="auth-crew-option" />
-                          <span>{getAvatarName(seed)}</span>
+                          <span>{getAvatarName(seed).replace(/^The /, '')}</span>
                         </button>
                       ))}
                     </div>
+                    <p className="auth-crew-change-hint">You can change your character any time in your profile.</p>
                     {/* B4 (audit 2026-06-01): privacy/terms acceptance gate */}
-                    <div className="mb-4 rounded-xl border-2 p-3.5" style={{ borderColor: '#e5e2dd' }}>
+                    <div className="auth-registration-consent">
                       <div className="flex items-start gap-2.5">
                         <button
                           type="button"
@@ -1415,9 +1351,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       </p>
                     </div>
                     <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                    <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterSubmit} disabled={isLoading || !agreedToTerms} className={primaryBtn} style={primaryBtnStyle}>
-                      {isLoading ? 'Creating your account...' : 'Create Account'}
+                    <MotionButton whileHover={reducedMotion ? undefined : { y: -1 }} whileTap={reducedMotion ? undefined : { y: 1 }} transition={SPRING_FAST} onClick={handleRegisterSubmit} disabled={isLoading || !agreedToTerms} className={primaryBtn} style={primaryBtnStyle}>
+                      <span className="flex items-center justify-between gap-2"><span>{isLoading ? 'Creating your account...' : 'Create Account'}</span><ArrowUpRight size={24} aria-hidden="true" /></span>
                     </MotionButton>
+                    <p className="auth-crew-selection-status" role="status">{getAvatarName(selectedAvatar)} selected</p>
                   </MotionDiv>
                 )}
               </AnimatePresence>
@@ -1427,7 +1364,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         </AnimatePresence>
         <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
         {entryHelp && <div className="fixed inset-0 z-[240] flex items-center justify-center bg-black/50 p-5"><div ref={entryHelpRef} className="account-help-dialog" role="dialog" aria-modal="true" aria-labelledby="entry-help-title"><h2 id="entry-help-title" className="text-2xl font-bold">{entryHelp === 'code' ? 'Let’s find your code.' : 'Still waiting?'}</h2>{entryHelp === 'code' ? <><p>Ask the teacher or guidance counsellor who introduced NextStepUni. They can confirm your school’s join code.</p><p>Check your school’s welcome message, too. Your entered details will stay here while you check.</p></> : <><p>Check your spam or junk folder, then confirm the email address you used for your account.</p><p>If you signed in with Apple or Google, go back and use the same sign-in option.</p><button type="button" className="account-help" onClick={() => { setEntryHelp(null); setResetSent(false); setResendCountdown(0); setError(''); }}>Check email address</button></>}<button type="button" className={primaryBtn} style={primaryBtnStyle} onClick={() => setEntryHelp(null)}>{entryHelp === 'code' ? 'Back to your details' : 'Back to password recovery'}</button></div></div>}
-      </LoginCard>
+      </AccountCard>
 
     </>
   );

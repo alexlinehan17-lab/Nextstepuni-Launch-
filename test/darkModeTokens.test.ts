@@ -132,7 +132,8 @@ describe('dark mode compatibility layer', () => {
 describe('screens opt into a dark treatment', () => {
   // Every screen here rendered white cards under near-white text before the fix.
   const needsCompat = [
-    'components/LoginPage.tsx',
+    // LoginPage's themed root is owned by its shared account card.
+    'components/AccountCard.tsx',
     'components/ResetPasswordPage.tsx',
     'components/AccreditationPage.tsx',
     'components/CutContentPage.tsx',
