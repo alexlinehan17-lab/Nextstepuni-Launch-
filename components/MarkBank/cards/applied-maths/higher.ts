@@ -2251,8 +2251,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
     id: "am-2025-hl-2", topicId: "applied-mathematics-3-3", conceptId: "using-chain-rule-use-calculus-derive",
     section: "B", questionRef: "2025 HL Q2",
-    stem: "A particle of mass m moves vertically upwards through the air with displacement s and velocity v. Its motion may first be modelled by ignoring air resistance, so that it has constant acceleration a. At time t = 0 the particle has velocity v₀ = 4 m s^(–1) and displacement s₀ = 0. dv (i) Using the chain rule, show that a = v dv/ds. ds. Use calculus to derive an expression for v in terms of a and s.",
-    questionText: "Using the chain rule, show that a=v dv ds. Use calculus to derive an expression for v in terms of a and s. Show that the upward motion can now be expressed by the differential equation: 2v/(v² + 392) dv = −1 20 ds (iv) Solve this differential equation to find an expression for v in terms of s. Solve this differential equation to find an expression for v in terms of s. Calculate the greatest height the particle will reach. By using a= dv dt solve a differential equation to find an expression that relates v and t",
+    stem: "A particle of mass m moves vertically upwards through the air with displacement s and velocity v. Its motion may first be modelled by ignoring air resistance, so that it has constant acceleration a. At time t = 0 the particle has velocity v₀ = 4 m s^(–1) and displacement s₀ = 0.",
+    questionText: "(i) Using the chain rule, show that a = v dv/ds. (ii) Use calculus to derive an expression for v in terms of a and s. The model may be improved by including the force due to air resistance as 1/40 mv². (iii) Show that the upward motion can now be expressed by the differential equation: 2v/(v² + 392) dv = −1/20 ds (iv) Solve this differential equation to find an expression for v in terms of s. (v) Calculate the greatest height the particle will reach. (vi) By using a = dv/dt solve a differential equation to find an expression that relates v and t.",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 45,
     rows: [
     { id: "am-2025-hl-2-r1", kind: "anyN", verbatim: "v = v(s(t)) v′ = a = dv/dt = dv/ds ∙ ds/dt = v dv/ds", marks: 45, contextNote: "The scheme prices this ask step by step: 5, 5, 5, 5, 5, 5, 5, 5, 5 — 45 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":9,"perOption":5,"options":["v = v(s(t)) v′ = a = dv/dt = dv/ds ∙ ds/dt = v dv/ds","vdv = ads","∫ vdv = ∫ ads, i.e. v²/2 = as + c v = 4 when s = 0 so c = 8 v = √2as + 16","Let u = v² + 392 so du = 2vdv∴ln u = ln(v² + 392)","= − s/20 + c","v = 4 when s = 0 so c = ln 408, i.e. (v² + 392)/408 = e^− s/20 v = 4 (when s = 0 so c)/s = ln 408, i.e. v² + 392 408 = e^− 20 v = √408e^− s/20 − 392","v = 0 so s = 20 ln 408/392 = 0.8 m","ma = −mg − 1/40 mv² i.e. a = dv/dt = −9.8 − v²/40 = − (392 + v²)/40 so 1/(v² + 392) dv = − 1/40 dt","1/14√2 tan−1 v/14√2 = − 1/40 t + c v = 4 when t = 0 so c = 1/14√2 tan−1 2/7√2"]} },
@@ -2572,7 +2572,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
     id: "am-2025-hl-7-b-i", topicId: "applied-mathematics-2-4", conceptId: "possible",
     section: "B", questionRef: "2025 HL Q7(b)(i)",
-    stem: "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal. The coefficient of restitution between the basketball and the wall is (iii) For the smaller value of 𝛼, calculate the horizontal distance between the wall and where the",
+    stem: "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal.",
     questionText: "Calculate the two possible values of 𝛼",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
@@ -2586,7 +2586,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
     id: "am-2025-hl-7-b-ii", topicId: "applied-mathematics-2-4", conceptId: "smaller-velocity-basketball-hits-wall",
     section: "B", questionRef: "2025 HL Q7(b)(ii)",
-    stem: "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal. The coefficient of restitution between the basketball and the wall is (iii) For the smaller value of 𝛼, calculate the horizontal distance between the wall and where the",
+    stem: "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal.",
     questionText: "For the smaller value of 𝛼, calculate the velocity of the basketball as it hits the wall",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -2600,7 +2600,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2025 Higher Level — © State Examinations Commission.",
     id: "am-2025-hl-7-b-iii", topicId: "applied-mathematics-2-4", conceptId: "smaller-horizontal-distance-between-wall-basketball",
     section: "B", questionRef: "2025 HL Q7(b)(iii)",
-    stem: "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal. The coefficient of restitution between the basketball and the wall is (iii) For the smaller value of 𝛼, calculate the horizontal distance between the wall and where the",
+    stem: "Chioma is throwing a basketball against a wall. The ball leaves her hands at chest height, 1.35 m above the ground. The ball hits the wall at a height of 2 m. Chioma is standing 3 m from the wall when she throws the basketball with an initial speed of 6.3 m s^(–1) at an angle 𝛼 to the horizontal. The coefficient of restitution between the basketball and the wall is 3/7.",
     questionText: "For the smaller value of 𝛼, calculate the horizontal distance between the wall and where the basketball lands on the ground for the first time",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [

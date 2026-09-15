@@ -629,7 +629,8 @@ function conditionEnd(raw: string, from: number, end: number, trigger = ''): num
 
 // "Use de Moivre's theorem to write …": the method is a limit; the job is the
 // verb after it.
-const METHOD = /^((?:Use|Using)\s+[^,.;?]{2,90}?)\s+to\s+(?=(?:write|find|show|prove|calculate|solve|express|verify|determine|work out|evaluate|estimate|draw|construct|explain|describe|identify|investigate|obtain|derive|sketch|plot|factorise|simplify|convert)\b)/i;
+// "By using a = dv/dt solve a differential equation …": the same, without "to".
+const METHOD = /^((?:Use|Using|By using)\s+[^,.;?]{2,90}?)\s+(?:to\s+)?(?=(?:write|find|show|prove|calculate|solve|express|verify|determine|work out|evaluate|estimate|draw|construct|explain|describe|identify|investigate|obtain|derive|sketch|plot|factorise|simplify|convert)\b)/i;
 // A manner limit straight after the command, with no commas round it:
 // "Describe with the aid of a labelled diagram the gold foil experiment".
 const MANNER = /^(?:with the aid of|using|by means of|with the help of|making use of)\s+(?:a |an |the )?(?:(?:labelled|clear|neat|suitable|annotated|freehand|fully labelled|well-labelled)\s+)*(?:diagrams?|sketch(?:es)?|drawings?|examples?|graphs?|notes(?: and (?:freehand )?sketches)?)(?:\s*\(s\))?\s*,?\s*/i;

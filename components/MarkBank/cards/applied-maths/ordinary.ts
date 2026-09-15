@@ -337,7 +337,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-6-a-i", topicId: "applied-mathematics-2-10", conceptId: "ask",
     section: "B", questionRef: "2021 OL Q6(a)(i)",
-    stem: "Particles of weight 3 N, 1 N, 4 N, and 2 N are placed at the points (p, q), (1, p), (q, 4), and (0, 3) respectively. The co‐ordinates of the centre of gravity of the system are (–0.5, 1.5). Find (i) the value of p",
+    stem: "Particles of weight 3 N, 1 N, 4 N, and 2 N are placed at the points (p, q), (1, p), (q, 4), and (0, 3) respectively. The co‐ordinates of the centre of gravity of the system are (–0.5, 1.5). Find",
     questionText: "the value of p",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
@@ -351,7 +351,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-6-a-ii", topicId: "applied-mathematics-2-10", conceptId: "ask",
     section: "B", questionRef: "2021 OL Q6(a)(ii)",
-    stem: "Particles of weight 3 N, 1 N, 4 N, and 2 N are placed at the points (p, q), (1, p), (q, 4), and (0, 3) respectively. The co‐ordinates of the centre of gravity of the system are (–0.5, 1.5). Find (i) the value of p",
+    stem: "Particles of weight 3 N, 1 N, 4 N, and 2 N are placed at the points (p, q), (1, p), (q, 4), and (0, 3) respectively. The co‐ordinates of the centre of gravity of the system are (–0.5, 1.5). Find",
     questionText: "the value of q",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -365,7 +365,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-7-a-i", topicId: "applied-mathematics-2-10", conceptId: "ask",
     section: "B", questionRef: "2021 OL Q7(a)(i)",
-    stem: "A uniform beam AB of length 5 m and weight 1000 N is held in a horizontal position by two vertical forces, F₁ and F₂, positioned at A and C respectively. C is 1 m from B. The beam is in equilibrium and stationary. F2 1 m F1 Find (i) the value of F1",
+    stem: "A uniform beam AB of length 5 m and weight 1000 N is held in a horizontal position by two vertical forces, F₁ and F₂, positioned at A and C respectively. C is 1 m from B. The beam is in equilibrium and stationary. Find",
     questionText: "the value of F₁",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -379,7 +379,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-7-a-ii", topicId: "applied-mathematics-2-10", conceptId: "ask",
     section: "B", questionRef: "2021 OL Q7(a)(ii)",
-    stem: "A uniform beam AB of length 5 m and weight 1000 N is held in a horizontal position by two vertical forces, F₁ and F₂, positioned at A and C respectively. C is 1 m from B. The beam is in equilibrium and stationary. F2 1 m F1 Find (i) the value of F1",
+    stem: "A uniform beam AB of length 5 m and weight 1000 N is held in a horizontal position by two vertical forces, F₁ and F₂, positioned at A and C respectively. C is 1 m from B. The beam is in equilibrium and stationary. Find",
     questionText: "the value of F₂",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -561,7 +561,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Ordinary Level — © State Examinations Commission.",
     id: "am-2022-ol-1-ii", topicId: "applied-mathematics-2-0", conceptId: "acceleration-car-during-first",
     section: "B", questionRef: "2022 OL Q1(ii)",
-    stem: "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time 1. of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s. Sketch a speed‐time graph of the motion of the car as it travels from P to Q. Calculate the acceleration of the car during the first 5 s. (iii) Calculate the distance travelled by the car during the first 5 s. (iv) Calculate the distance travelled by the car while decelerating from 20 m s^(–1) to 15 m s^(–1).",
+    stem: "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s.",
     questionText: "Calculate the acceleration of the car during the first 5 s",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -575,7 +575,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Ordinary Level — © State Examinations Commission.",
     id: "am-2022-ol-1-iii", topicId: "applied-mathematics-2-0", conceptId: "distance-travelled-car-during-first",
     section: "B", questionRef: "2022 OL Q1(iii)",
-    stem: "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time 1. of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s. Sketch a speed‐time graph of the motion of the car as it travels from P to Q. Calculate the acceleration of the car during the first 5 s. (iii) Calculate the distance travelled by the car during the first 5 s. (iv) Calculate the distance travelled by the car while decelerating from 20 m s^(–1) to 15 m s^(–1).",
+    stem: "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s.",
     questionText: "Calculate the distance travelled by the car during the first 5 s",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -589,7 +589,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Ordinary Level — © State Examinations Commission.",
     id: "am-2022-ol-1-iv", topicId: "applied-mathematics-2-0", conceptId: "distance-travelled-car-while-decelerating",
     section: "B", questionRef: "2022 OL Q1(iv)",
-    stem: "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time 1. of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s. Sketch a speed‐time graph of the motion of the car as it travels from P to Q. Calculate the acceleration of the car during the first 5 s. (iii) Calculate the distance travelled by the car during the first 5 s. (iv) Calculate the distance travelled by the car while decelerating from 20 m s^(–1) to 15 m s^(–1).",
+    stem: "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s.",
     questionText: "Calculate the distance travelled by the car while decelerating from 20 m s^(–1) to 15 m s^(–1)",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -603,7 +603,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Ordinary Level — © State Examinations Commission.",
     id: "am-2022-ol-1-v", topicId: "applied-mathematics-2-0", conceptId: "total-distance-between",
     section: "B", questionRef: "2022 OL Q1(v)",
-    stem: "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time 1. of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s. Sketch a speed‐time graph of the motion of the car as it travels from P to Q. Calculate the acceleration of the car during the first 5 s. (iii) Calculate the distance travelled by the car during the first 5 s. (iv) Calculate the distance travelled by the car while decelerating from 20 m s^(–1) to 15 m s^(–1).",
+    stem: "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s.",
     questionText: "Calculate the total distance between P and Q",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -617,7 +617,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2022 Ordinary Level — © State Examinations Commission.",
     id: "am-2022-ol-1-vi", topicId: "applied-mathematics-2-0", conceptId: "ask",
     section: "B", questionRef: "2022 OL Q1(vi)",
-    stem: "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time 1. of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s. Sketch a speed‐time graph of the motion of the car as it travels from P to Q. Calculate the acceleration of the car during the first 5 s. (iii) Calculate the distance travelled by the car during the first 5 s. (iv) Calculate the distance travelled by the car while decelerating from 20 m s^(–1) to 15 m s^(–1).",
+    stem: "A car starts from rest at point P and accelerates uniformly to a speed of 20 m s^(–1) in a time of 5 s. The car then decelerates to 15 m s^(–1) with a constant deceleration of 0.5 m s^(–2). It continues at this speed for a further 8 s. The car then decelerates with a different constant deceleration until it comes to rest at point Q. The total time for the journey from P to Q was 35 s. A motorcycle passes point P with a speed of u m s^(–1) at the same instant that the car starts from P. The motorcycle travels at speed u for 20 s before decelerating to rest so that it finishes at point Q at the same instant as the car.",
     questionText: "Find the value of u",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
