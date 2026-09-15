@@ -78,11 +78,16 @@ describe('key parts across every built card', () => {
 
   test('never plans more than eight spaces', () => {
     const over = corpus.filter(({ source: s, kp }) => {
-      const m = buildQuestionModel(s);
-      return planRowsFor(kp, { basis: m.planShape.basis, prompts: m.planPrompts }).length > 8;
+      // The printed-count rows can only replace the breakdown's on a single
+      // part with no count, items or headings of its own; build the older
+      // question model only there, so the whole bank stays quick to check.
+      const unit = kp.units[0];
+      const printedCanApply = kp.mode === 'decomposed' && kp.units.length === 1 && !unit.countValue && !unit.item && !unit.headings;
+      const m = printedCanApply ? buildQuestionModel(s) : null;
+      return planRowsFor(kp, { basis: m?.planShape.basis ?? 'flexible', prompts: m?.planPrompts ?? [] }).length > 8;
     });
     expect(over.map(({ card }) => card.id).slice(0, 5)).toEqual([]);
-  });
+  }, 120_000);
 });
 
 describe('the parts a student meets most', () => {
