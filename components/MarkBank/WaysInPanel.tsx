@@ -128,11 +128,16 @@ const KeyPartUnit: React.FC<{ unit: KPUnit; partner?: KPUnit }> = ({ unit, partn
         {unit.sides && (
           <div><dt>Compare</dt><dd>{unit.sides[0].display} <em>vs</em> {unit.sides[1].display}</dd></div>
         )}
+        {/* Two jobs done together on different objects: "Name any two methods
+            … and, for each named method, give one example of a plant …". */}
+        {partner?.focus && unit.focus && partner.focus.display !== unit.focus.display && (
+          <div><dt>About</dt><dd>{partner.focus.display}</dd></div>
+        )}
         {/* A comparison keeps its About when the sides do not cover it:
             "the indenters used in both the Brinell and the Vickers tests". */}
         {unit.focus && (!unit.sides || (unit.sides[0].from === unit.focus.from && unit.sides[0].start > unit.focus.start + 2)) && (
           <div>
-            <dt>About</dt>
+            <dt>{partner?.focus && partner.focus.display !== unit.focus.display ? 'Then' : 'About'}</dt>
             <dd>
               {unit.focus.display}
               {unit.focusMore?.map(more => (

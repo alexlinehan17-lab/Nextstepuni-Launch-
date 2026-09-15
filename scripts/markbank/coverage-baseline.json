@@ -31,7 +31,7 @@
   },
   "applied-maths": {
     "cards": 383,
-    "contentHash": "d843615d3644b279",
+    "contentHash": "8a0f9e0da2a78c0f",
     "coveragePct": 92.2,
     "covered": 408,
     "excluded": 51,
@@ -76,7 +76,7 @@
   },
   "biology": {
     "cards": 1359,
-    "contentHash": "c2a3c05984956b25",
+    "contentHash": "82e19e30fb563451",
     "coveragePct": 93.8,
     "covered": 1535,
     "excluded": 0,
@@ -256,7 +256,7 @@
   },
   "economics": {
     "cards": 697,
-    "contentHash": "e8c99dae50bd0cba",
+    "contentHash": "3604e6669170744a",
     "coveragePct": 100.0,
     "covered": 651,
     "excluded": 7,
@@ -556,7 +556,7 @@
   },
   "maths": {
     "cards": 833,
-    "contentHash": "b03ee0576c972395",
+    "contentHash": "b61c4876232906aa",
     "coveragePct": 95.3,
     "covered": 943,
     "excluded": 0,

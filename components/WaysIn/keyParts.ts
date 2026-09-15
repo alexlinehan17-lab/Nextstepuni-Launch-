@@ -434,7 +434,7 @@ const CONDITION_TRIGGERS = [
   'refer in your answer to', 'in your answer refer to', 'include discussion of', 'include reference to', 'refer to',
   'from the (?:text|passage|extract|article|poem|story|document|source|letter|interview|report)s?',
   'in Ireland', 'outside Ireland', 'in Europe', 'in the EU', 'in the European Union', 'on your drawing',
-  'if', 'unless', 'assuming', 'given that', 'either', 'where(?= [a-zA-Z](?:\\s*,|\\s*[∈=<>≤≥]))', 'in English', 'in Irish',
+  'if', 'unless', 'assuming', 'given that', 'either(?! of\\b)', 'where(?= [a-zA-Z](?:\\s*,|\\s*[∈=<>≤≥]))', 'in English', 'in Irish',
   'in the form', 'in its simplest form', 'in simplest form', 'as a fraction', 'as a decimal', 'as a percentage',
   'by ticking', 'with a tick', 'by placing a tick', 'placing a tick', 'by putting', 'giving your answer',
   'you can', 'you could', 'you would', 'you will', 'you might', 'you think', 'you consider',
@@ -494,7 +494,7 @@ const VISUAL = /diagram|graph|chart|photo|picture|image|map|cartoon|circuit|figu
 const TAIL_UNIT = /^(?:(?:Explain|Justify) your (?:answer|choice)|Give (?:a )?reasons? for your (?:answer|choice)|Support your answer|Illustrate your answer)/i;
 // A sentence that says how the answer must be given, not what to answer. It
 // limits the task before it ("Give your answer in its simplest form").
-const TAIL_CONDITION = /^(?:(?:Put|Place) a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b|Note\s*:|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
+const TAIL_CONDITION = /^(?:Indicate your (?:choice|sector|option|answer|chosen)\b|(?:Put|Place) a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b|Note\s*:|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
 // "Name two." / "Give four details." after a question: how many, for that question.
 const COUNT_SENTENCE = /^(?:Give|Name|State|List|Mention|Identify|Write down)\s+(?:(?:any|at least)\s+)?(one|two|three|four|five|six)(?:\s+([\p{L}]+(?: of information)?))?\s*[.?!]?\s*$/iu;
 const DETAILS_SENTENCE = /^Give (?:full |more )?details\s*[.?!]?\s*$/i;
@@ -577,7 +577,7 @@ const depthAt = (text: string, i: number) => {
 
 // A limit that introduces a list runs through its commas: "Refer in your
 // answer to space, function, layout and lighting".
-const LIST_TRIGGER = /(?:headings?|refer(?: in your answer)? to|include (?:discussion of|reference to))$/i;
+const LIST_TRIGGER = /(?:headings?|refer(?: in your answer)? to|include (?:discussion of|reference to)|^where)$/i;
 
 /**
  * Where a limit ends. Brackets belong to it — "(not in Ireland)" does not end
@@ -1173,7 +1173,9 @@ function buildUnit(
   }
   if (!count) {
     const nouns = COUNTED_ANSWER_NOUNS;
-    const pool = (at: number) => /\b(?:the|these|those|all|of|between)\s+$/i.test(raw.slice(Math.max(clause.start, at - 9), at));
+    // "the probability that at most 2 teams drop …" describes the event; it is
+    // not how many answers to give.
+    const pool = (at: number) => /\b(?:the|these|those|all|of|between|at most|at least|exactly|more than|fewer than|less than|up to)\s+$/i.test(raw.slice(Math.max(clause.start, at - 13), at));
     const c2 = new RegExp(`(?<![\\p{L}\\p{N}])(one|two|three|four|five|six|[2-6])\\s+(?:(?:different|distinct|separate|possible|other|main|major|key)\\s+)?(?:${nouns})(?![\\p{L}])`, 'iu')
       .exec(clauseText);
     // Any plural noun counted in the clause: "Give an account of any two myths".
@@ -1828,10 +1830,23 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
       for (let i = 1; i < partUnits.length; i += 1) {
         const a = partUnits[i - 1];
         const b = partUnits[i];
-        if (!a.action || !b.action || (b.count && !/^each$/i.test(b.count.display)) || !(a.countValue && a.countValue > 1) || a.jointWith) continue;
-        const eachRef = /\beach\b/i.test(`${b.focus?.display ?? ''} ${b.action.display} ${b.count?.display ?? ''}`)
-          || (a.countNoun ? [...a.conditions, ...b.conditions].some(c => new RegExp(`\\beach\\s+(?:[\\p{L}-]+\\s+)?${a.countNoun}`, 'iu').test(c.display)) : false);
-        if (!eachRef || !/\s+and\s+(?:then\s+)?$/i.test(q.slice(a.action.end, b.action.start))) continue;
+        if (!a.action || !b.action || !(a.countValue && a.countValue > 1) || a.jointWith) continue;
+        // "… and, for each named method, give one example": the limit that
+        // ties the second job to each of the first's items.
+        const perItem = a.countNoun
+          ? [...a.conditions, ...b.conditions].find(c => new RegExp(`\\beach\\s+(?:[\\p{L}-]+\\s+)?${a.countNoun}`, 'iu').test(c.display))
+          : undefined;
+        if (b.count && !/^each$/i.test(b.count.display) && !perItem) continue;
+        const eachRef = perItem || /\beach\b/i.test(`${b.focus?.display ?? ''} ${b.action.display} ${b.count?.display ?? ''}`);
+        if (!eachRef || !/\band\b[^.?!]*$/i.test(q.slice(a.action.end, b.action.start))) continue;
+        // One space per counted item holds both jobs. The second job's own
+        // count ("one example") is then a limit on each item, and the "for
+        // each" limit moves to the job it governs.
+        if (b.count && !/^each$/i.test(b.count.display)) b.conditions.unshift(b.count);
+        if (perItem && a.conditions.includes(perItem)) {
+          a.conditions = a.conditions.filter(c => c !== perItem);
+          b.conditions.splice(b.count && !/^each$/i.test(b.count.display) ? 1 : 0, 0, perItem);
+        }
         b.count = a.count;
         b.countValue = a.countValue;
         b.countNoun = a.countNoun;
@@ -2079,7 +2094,8 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           const item = spanOf('q', q, part.start, part.end);
           if (!item) continue;
           const keep = parts.length === 1 && !perList;
-          units.push({ ...lead, id: nextId(), ref: part.ref, item, count: keep ? lead.count : null, countValue: keep ? lead.countValue : undefined, countNoun: keep ? lead.countNoun : undefined, conditions: [...lead.conditions], use: [...lead.use] });
+          const judged = /^(?:true-false|tick)$/.test(lead.actionKey);
+          units.push({ ...lead, id: nextId(), ref: part.ref, item, focus: judged ? null : lead.focus, count: keep ? lead.count : null, countValue: keep ? lead.countValue : undefined, countNoun: keep ? lead.countNoun : undefined, conditions: [...lead.conditions], use: [...lead.use] });
         }
       }
     }
@@ -2203,7 +2219,10 @@ export function planRowsFromKeyParts(kp: KeyPartsBreakdown): KeyPartPlanRow[] {
     const partner = kp.units.find(u => u.id !== unit.id && u.jointWith === unit.id);
     const verb = [partner?.action?.display, unit.action?.display].filter(Boolean).join(' and ');
     const ref = unit.ref ? `${unit.ref} ` : '';
-    const summary = keyPartSummary(unit);
+    // "Name … methods … and give one example of a plant …": one space holds
+    // both jobs, so it names both objects.
+    const partnerFocus = partner?.focus && unit.focus && partner.focus.display !== unit.focus.display ? partner.focus.display : '';
+    const summary = [partnerFocus, keyPartSummary(unit)].filter(Boolean).join(' · ');
     if (unit.flags.includes('as-printed')) {
       rows.push({ id: `${unit.id}-1`, unitId: unit.id, label: `${ref}${clip(unit.focus?.display ?? 'This part', 50)}`, summary, placeholder: 'Your response to this part' });
       continue;
@@ -2237,7 +2256,7 @@ export function planRowsFromKeyParts(kp: KeyPartsBreakdown): KeyPartPlanRow[] {
       continue;
     }
     // "Detail 1", "Detail 2": the label already says how many.
-    const countedSummary = n > 1 ? keyPartSummary({ ...unit, count: null }) : summary;
+    const countedSummary = n > 1 ? [partnerFocus, keyPartSummary({ ...unit, count: null })].filter(Boolean).join(' · ') : summary;
     for (let i = 1; i <= n; i += 1) {
       rows.push({
         id: `${unit.id}-${i}`, unitId: unit.id,

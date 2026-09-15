@@ -35,7 +35,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-1-i", topicId: "applied-mathematics-2-0", conceptId: "speed",
     section: "B", questionRef: "2021 OL Q1(i)",
-    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate the speed v the distance travelled in the first 8 seconds (iii) the distance travelled in the next 18 seconds (iv) the total time it takes the car to travel from P to Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1).",
+    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate",
     questionText: "the speed v",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -49,7 +49,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-1-ii", topicId: "applied-mathematics-2-0", conceptId: "distance-travelled-first-seconds",
     section: "B", questionRef: "2021 OL Q1(ii)",
-    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate the speed v the distance travelled in the first 8 seconds (iii) the distance travelled in the next 18 seconds (iv) the total time it takes the car to travel from P to Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1).",
+    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate",
     questionText: "the distance travelled in the first 8 seconds",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -63,7 +63,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-1-iii", topicId: "applied-mathematics-2-0", conceptId: "distance-travelled-next-seconds",
     section: "B", questionRef: "2021 OL Q1(iii)",
-    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate the speed v the distance travelled in the first 8 seconds (iii) the distance travelled in the next 18 seconds (iv) the total time it takes the car to travel from P to Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1).",
+    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate",
     questionText: "the distance travelled in the next 18 seconds",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -77,7 +77,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-1-iv", topicId: "applied-mathematics-2-0", conceptId: "total-time-takes-car-travel",
     section: "B", questionRef: "2021 OL Q1(iv)",
-    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate the speed v the distance travelled in the first 8 seconds (iii) the distance travelled in the next 18 seconds (iv) the total time it takes the car to travel from P to Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1).",
+    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate",
     questionText: "the total time it takes the car to travel from P to Q",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
@@ -91,7 +91,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-1-v", topicId: "applied-mathematics-2-0", conceptId: "draw-speed-time-graph-motion-motorbike",
     section: "B", questionRef: "2021 OL Q1(v)",
-    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate the speed v the distance travelled in the first 8 seconds (iii) the distance travelled in the next 18 seconds (iv) the total time it takes the car to travel from P to Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1).",
+    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1). It continues at this speed until it passes Q. The motorbike takes one minute to travel from P to Q.",
     questionText: "Draw a speed‐time graph of the motion of the motorbike from P to Q",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -105,7 +105,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2021 Ordinary Level — © State Examinations Commission.",
     id: "am-2021-ol-1-vi", topicId: "applied-mathematics-2-0", conceptId: "ask",
     section: "B", questionRef: "2021 OL Q1(vi)",
-    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Calculate the speed v the distance travelled in the first 8 seconds (iii) the distance travelled in the next 18 seconds (iv) the total time it takes the car to travel from P to Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1).",
+    stem: "The points P and Q lie 1 km apart on a straight level road. A car passes P with a speed of 2 m s^(–1) and accelerates with a uniform acceleration of 2.5 m s^(–2) for 8 seconds to a speed of v m s^(–1). It then travels at this constant speed of v m s^(–1) for 18 seconds. Finally, the car decelerates uniformly to rest at Q. Later, a motorbike passes P with a speed of k m s^(–1) and continues at this speed for 10 seconds. It then accelerates uniformly for a further 2 seconds to a speed of 17 m s^(–1). It continues at this speed until it passes Q. The motorbike takes one minute to travel from P to Q.",
     questionText: "Find the value of k",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
