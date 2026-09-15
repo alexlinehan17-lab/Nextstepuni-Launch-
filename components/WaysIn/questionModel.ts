@@ -296,6 +296,24 @@ const ADDITIONAL_COMMAND_GROUPS: Array<{
     commonTrap: 'Leaving the requested structure implicit or mixing separate stages together.',
   },
   {
+    surfaces: ['redraw', 'reproduce'],
+    requiredAction: 'Draw it again, accurately, with the features the question names.',
+    answerShape: 'An accurate drawing → the named features added and labelled.',
+    commonTrap: 'A rough copy that leaves out the features the marks are for.',
+  },
+  {
+    surfaces: ['include'],
+    requiredAction: 'Put the named item into the answer or the drawing itself.',
+    answerShape: 'The item, shown or stated where the question says.',
+    commonTrap: 'Leaving out a required element that carries marks on its own.',
+  },
+  {
+    surfaces: ['add', 'change', 'modify', 'extend', 'update', 'amend', 'edit'],
+    requiredAction: 'Change what is there so it does what is asked, keeping the rest working.',
+    answerShape: 'The required change → the rest still working.',
+    commonTrap: 'Making the change but breaking something that worked before.',
+  },
+  {
     surfaces: ['tell', 'relate', 'recount', 'narrate'],
     requiredAction: 'Give an account of what happened, in order, with the key details.',
     answerShape: 'The events or story in sequence → the details that matter to the question.',
@@ -711,6 +729,10 @@ export interface CommandMatch {
 }
 
 const NOUN_LIKE_COMMANDS = new Set(['label', 'list', 'name', 'outline', 'state']);
+const START_ONLY_COMMANDS = new Set([
+  'include', 'add', 'change', 'modify', 'extend', 'update', 'amend', 'edit', 'redraw', 'reproduce',
+  'tell', 'relate', 'recount', 'narrate', 'copy', 'review', 'reflect on', 'multiply out', 'point out',
+]);
 const QUESTION_COMMANDS = new Set([
   'how', 'how can', 'how does', 'how far', 'how would', 'in which', 'through which', 'to what extent',
   'to which', 'under what', 'what', 'what could', 'what does', 'what distinguishes', 'what is', 'what is meant by', 'what term',
@@ -790,6 +812,8 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
   ) return false;
   if (key === 'list' && /^\s+(?:of\b|provided\b|above\b|below\b)/i.test(after)) return false;
   if (key === 'outline' && /^\s+(?:diagram|drawing|map)\b/i.test(after)) return false;
+  // "Using a large freehand sketch, …": a drawing named, not an instruction.
+  if (/^(?:sketch|draw|drawing|plan|design|model|list|outline|label)$/.test(key) && /\b(?:a|an|the|this|that|your|freehand|large|neat|labelled|simple|annotated|clear|quick|rough|detailed|separate|single|suitable)\s+(?:[\p{L}-]+\s+)?$/iu.test(before) && !/^(?:and|then)\b/i.test(before.trim().split(/\s+/).slice(-1)[0] ?? '')) return false;
   if (key === 'name' && /^\s+of\b/i.test(after)) return false;
   if (key === 'use' && /^\s*\)?\s+of\b/i.test(after)) return false;
   if (key === 'set out' && /^\s+(?:above|below)\b/i.test(after)) return false;
@@ -799,6 +823,8 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
     && /^\s+(?:agency|body|broadcaster|company|enterprise|examinations?|ownership|pension|sector|services?)\b/i.test(after)
   ) return false;
   if (NOUN_LIKE_COMMANDS.has(key) && /^\s*:/.test(after)) return false;
+  // "LIST A: ◆ CHRISTIANITY …": a printed heading, not an instruction.
+  if (NOUN_LIKE_COMMANDS.has(key) && (/^\s+[A-Z0-9]\s*:/.test(after) || (match.length > 2 && match === match.toUpperCase()))) return false;
 
   // A word boundary also exists inside a hyphenated compound. “solid-state”
   // is question content, not a new instruction beginning after a dash.
@@ -823,6 +849,11 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
     if (/^(?:as|if|when)\b[^,]{0,220},\s*$/i.test(prefix)) return true;
     return false;
   }
+
+  // Everyday verbs the paper also uses in prose ("… and include the element")
+  // are instructions only when they open the sentence.
+  if (START_ONLY_COMMANDS.has(key) && prefix
+    && !/^(?:briefly|clearly|carefully|neatly|fully|now|then|also|finally|hence)$/i.test(prefix)) return false;
 
   // Imperatives are accepted at the start of a printed sentence/part, after a
   // lead-in comma, or as an explicitly joined second instruction. Dictionary
