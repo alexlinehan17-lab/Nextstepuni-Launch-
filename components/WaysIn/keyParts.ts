@@ -598,7 +598,7 @@ const YOUR_SHOULD_COUNT = /\b((?:at least|at most|exactly|no more than|up to)\s+
 const WHOLE_SENTENCE = /^(?:\(?\s*Unless otherwise (?:stated|specified|indicated)\b|(?:Relevant |All )?(?:supporting )?(?:work(?:ings?)?|calculations) must be shown\b|You (?:may|can) (?:use|include|draw|refer)\b)/i;
 // A sentence that says how the answer must be given, not what to answer. It
 // limits the task before it ("Give your answer in its simplest form").
-const TAIL_CONDITION = /^(?:Indicate your (?:choice|sector|option|answer|chosen)\b|(?:Put|Place) a tick\b|Tick (?:the|one) (?:correct|appropriate)\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b(?!\s+(?:one|two|three|four|five|six|[2-6])\b)|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
+const TAIL_CONDITION = /^(?:Indicate your (?:choice|sector|option|answer|chosen)\b|(?:Put|Place) a tick\b|Tick\s*(?:\([^)]{1,4}\)\s*)?(?:the|one|a) (?:correct|appropriate|relevant)?\s*(?:box|boxes|answer|option)?\b|Show (?:all )?(?:your )?(?:workings?|work|calculations)\b|Use [^.]{0,60}\bto support your answer|Refer to the text in support of your answer|(?:Give|Write|Express|Leave|State|Show) (?:your|each|the|all|both) (?:final )?answers?\b|Write (?:your )?answers? (?:in|on)\b|(?:In your answer,? )?refer to\b|Refer in your answer to\b|Include\b(?!\s+(?:one|two|three|four|five|six|[2-6])\b)|N\.\s?B\.|You must\b|You should\b|Your answer (?:should|must)\b|Make (?:detailed )?reference to\b|Any omitted dimensions)/i;
 // "Name two." / "Give four details." after a question: how many, for that question.
 const COUNT_SENTENCE = /^(?:Give|Name|State|List|Mention|Identify|Write down)\s+(?:(?:any|at least)\s+)?(one|two|three|four|five|six)(?:\s+([\p{L}]+(?: of information)?))?\s*[.?!]?\s*$/iu;
 const DETAILS_SENTENCE = /^Give (?:full |more )?details\s*[.?!]?\s*$/i;
@@ -726,7 +726,9 @@ function conditionEnd(raw: string, from: number, end: number, trigger = ''): num
     if (depth > 0) continue;
     const boundary = i + 1 >= rest.length || /\s/.test(rest[i + 1]);
     if (!boundary || !/[,;.?!:]/.test(ch)) continue;
-    if (ch === ':' && (listy || /(?:headings?|following|refer(?: in your answer)? to)\s*$/i.test(rest.slice(0, i)))) {
+    // "with reference to one of the following: • Mining • …": the list after
+    // the colon is options, not the limit; a heading list runs on.
+    if (ch === ':' && (listy || /(?:headings?|refer(?: in your answer)? to)\s*$/i.test(rest.slice(0, i)))) {
       const stop = /[.?!](?=\s|$)/.exec(rest.slice(i));
       cut = stop ? from + i + stop.index : end;
       break;
@@ -1150,6 +1152,9 @@ function buildUnit(
       cur = phraseEnd + ofFollowing[0].length;
       const value = NUMBER_WORDS[word] ?? (/^[2-8]$/.test(word) ? Number(word) : undefined);
       if (value) countValue = value;
+      // "any two of the following terms" → Term 1; bare "the following" → Choice 1.
+      const listNoun = /^the following\s+([\p{L}-]+s)\b/iu.exec(raw.slice(cur, end));
+      countNoun = listNoun ? singular(listNoun[1]) : 'choice';
     } else if (!unitAhead && !/^(?:of)\b/i.test(noun) || /^each of the following|^each|^all|^both/.test(word)) {
       if (noun && GENERIC_UNIT_NOUNS.test(noun) && word !== 'all') {
         const cEnd = phraseEnd + nounMatch![0].length;
@@ -1295,12 +1300,8 @@ function buildUnit(
   if (focus && /,?\s+where$/i.test(focus.text)) focus = spanOf(from, raw, focus.start, focus.end - (/,?\s+where$/i.exec(focus.text)![0].length)) ?? focus;
   // Where/When/Why … "located" style questions: a trailing participle is
   // part of the question form, not the thing asked about.
-  if (focus && /^wh-(?:where|when|why)/.test(actionKey)) {
-    const trailing = /\s+[\p{L}]+ed\s*$/u.exec(focus.text);
-    if (trailing && focus.text.split(/\s+/).length > 2) {
-      focus = spanOf(from, raw, focus.start, focus.end - trailing[0].length) ?? focus;
-    }
-  }
+  // (A trailing participle stays: "Where were the families rehoused?" asks
+  // about the rehousing, not the families.)
 
   // CONDITIONS from the relative clause and every trigger in the remainder.
   if (relStart >= 0) {
@@ -1746,8 +1747,16 @@ function spreadOver(unit: KPUnit, items: KPSpan[], raws: { q: string; stem: stri
     const sp = how ? spanOf(unit.focus.from, raws[unit.focus.from], unit.focus.start, unit.focus.start + how[0].length) : null;
     unit = { ...unit, focus: null, conditions: sp ? [sp, ...unit.conditions] : unit.conditions };
   }
+  // A card split per option prints fewer items than the choice count: the
+  // item is what this card answers, and "any two" does not multiply it.
+  if (isChoice(unit, raws) && (unit.countValue ?? 0) > items.length) {
+    unit = { ...unit, count: null, countValue: undefined, countNoun: undefined };
+  }
   if (items.length === 1) return [{ ...unit, item: items[0] }];
-  const perList = unit.count && /\beach\b|\bthe following\b|^all\b|^both\b/i.test(unit.count.display);
+  const perList = unit.count && (/\beach\b|\bthe following\b|^all\b|^both\b/i.test(unit.count.display)
+    // "the following two factors: • Transport • Labour": the count is the list's.
+    || unit.countValue === items.length
+    || /\b(?:the following|these|those)\s+$/i.test(raws[unit.count.from].slice(Math.max(0, unit.count.start - 16), unit.count.start)));
   return items.map(item => ({
     ...unit, id: nextId(), item,
     count: perList ? null : unit.count, countValue: perList ? undefined : unit.countValue, countNoun: perList ? undefined : unit.countNoun,
@@ -1824,7 +1833,14 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
     return { ...base, mode: 'blocked', reasons: ['garbled'] };
   }
 
-  const lang = englishRatio(`${stem} ${q}`);
+  // The question's own language decides: an English introduction in the
+  // stem does not make "Pourquoi Marie a-t-elle besoin de vacances ?" English.
+  const qLang = englishRatio(q);
+  // …unless the question is only the printed item an English instruction in
+  // the stem works on ("Explain in English the meaning of: … (line 9)").
+  const stemLang = englishRatio(stem);
+  const itemOfEnglishStem = stemLang.words >= 4 && stemLang.ratio >= 0.2 && commandMatches(stem).length > 0 && !/[?？]\s*(?:\([^)]*\))?\s*$/.test(q.trim());
+  const lang = qLang.words >= 5 && !itemOfEnglishStem ? qLang : englishRatio(`${stem} ${q}`);
   const cardRules: KPSpan[] = [];
   for (const [from, raw] of [['stem', stem], ['q', q]] as const) {
     for (const m of raw.matchAll(CARD_RULE)) {
@@ -2127,6 +2143,9 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           // "Determine and indicate the true length": the shown gloss is the
           // bigger of the two jobs, not the smaller.
           if (JOB_WEIGHT(a.actionKey) > JOB_WEIGHT(b.actionKey)) { b.actionKey = a.actionKey; b.means = a.means; }
+          // "With reference to a region you have studied, describe and
+          // explain …": a limit on the first verb is on the joint job.
+          for (const c of a.conditions) if (!b.conditions.some(x => x.from === c.from && x.start === c.start)) b.conditions.unshift(c);
         }
       }
       // "Identify three principles … and describe how each principle
@@ -2300,8 +2319,19 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
           const aw = `${u.action.display} ${u.focus?.display ?? ''}`;
           const whichOf = /^(?:(?:identify|state|say|indicate)\s+)?(?:which|what)\b/i.test(aw) && /\bof the following\b/i.test(aw);
           const spread = spreadOver(u, items, { q, stem }, nextId, whichOf || (isChoice(u, { q, stem }) && (u.countValue ?? 0) < items.length));
-          partUnits.splice(i, 1, ...spread);
-          i += spread.length - 1;
+          // "Describe and explain any two of the following: • …": the joined
+          // first verb goes with the second into every item.
+          const partnerAt = partUnits.findIndex(p => p.jointWith === u.id);
+          if (partnerAt >= 0 && spread.length > 1 && spread[0].id !== u.id) {
+            const partner = partUnits[partnerAt];
+            const withPartners = spread.flatMap(x => [{ ...partner, id: nextId(), jointWith: x.id, item: x.item, conditions: [...partner.conditions], use: [...partner.use], flags: [...partner.flags] }, x]);
+            partUnits.splice(i, 1, ...withPartners);
+            partUnits.splice(partnerAt, 1);
+            i += withPartners.length - 2;
+          } else {
+            partUnits.splice(i, 1, ...spread);
+            i += spread.length - 1;
+          }
           if (regionStart >= 0) consumed.push([regionStart, regionEnd]);
         }
       }
@@ -2462,8 +2492,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
     // "Show" proves only in a mathematical subject. In a drawing subject it
     // puts the thing on the drawing; elsewhere it sets it out.
     if (!proofSubject && !dcg && unit.actionKey === 'prove' && /^(?:(?:clearly|also|now)\s+)?show\b/i.test(unit.action?.display ?? '') && !/^that\b/i.test(unit.focus?.display ?? '')) {
-      const drawn = /\b(?:sketch|sketches|drawing|drawings|draw|diagram|diagrams)\b/i.test(`${stem} ${q}`);
-      unit.actionKey = drawn ? 'show-drawing' : 'describe';
+      const drawn = /\b(?:sketch|sketches|drawing|drawings|draw|diagram|diagrams|map|maps|graph|grid|axes)\b/i.test(`${stem} ${q}`);
+      // "Show and label the following on the map": marked on the figure itself.
+      const onFigure = /\bon (?:the|your|this) (?:map|diagram|drawing|sketch|graph|grid|axes|figure|photograph)\b/i.test(`${unit.focus?.display ?? ''} ${unit.conditions.map(c => c.display).join(' ')}`);
+      unit.actionKey = onFigure ? 'on-drawing' : drawn ? 'show-drawing' : 'describe';
       unit.means = MEANS[unit.actionKey];
     }
     // In a mathematical subject "Find …" and "Determine …" ask for a value or
@@ -2509,6 +2541,10 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
     }
     if (unit.use.some(u => u.kind === 'material' && VISUAL.test(u.display)) && !source.figure) unit.flags.push('needs-figure');
     unit.marks = partMarks.get(unit.id) ?? (units.filter(u => !u.jointWith).length === 1 && !unit.jointWith ? totalMarks : null);
+    if (unit.actionKey === 'explain-how' && /^how (?:did|does|do|was|were|is|are)\b/i.test(unit.action?.display ?? '') && (unit.marks ?? 99) <= 4) {
+      unit.actionKey = 'wh-plain';
+      unit.means = MEANS['wh-plain'];
+    }
     if (unit.actionKey === 'wh-plain') {
       // A high tariff alone does not make "What do the following letters
       // stand for?" a developed answer; a question about a role, an impact or
@@ -2770,6 +2806,9 @@ function settingOf(q: string, contexts: Array<{ from: 'q' | 'stem'; raw: string;
       if (words.length < 4 || letters < sp.display.length * 0.6 || !/^[\p{Lu}“‘"'(]/u.test(sp.display)) continue;
       if (!/[.?!:)”’"']\s*$/.test(q.slice(piece.start, piece.end).trim()) && words.length < 8) continue;
       if (RUBRIC.test(sp.display) || /^(?:Page \d|Question \d|\[?\d+ marks?\]?$|Answer\b)/i.test(sp.display)) continue;
+      // A flattened table ("Oil/Gas exploitation Quarrying Mining …") is not a
+      // sentence the question tells you; a sentence has its small words.
+      if ((sp.display.match(/\b(?:is|are|was|were|has|have|had|will|would|can|could|the|a|an|to|of|in|on|for|with|by|and|that|this|you|your)\b/gi) ?? []).length < 2) continue;
       out.push(sp);
     }
   }
@@ -2801,7 +2840,9 @@ const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export function keyPartSummary(unit: KPUnit): string {
   if (unit.flags.includes('as-printed')) return '';
-  const about = unit.focus ? [unit.focus.display, ...(unit.focusMore ?? []).map(f => f.display)].join(' … ') : '';
+  const aboutRaw = unit.focus ? [unit.focus.display, ...(unit.focusMore ?? []).map(f => f.display)].join(' … ') : '';
+  // "the following" says nothing once the options are listed.
+  const about = /^the following(?:\s+[\p{L}-]+)?$/iu.test(aboutRaw) && unit.use.some(u => u.kind === 'options') ? '' : aboutRaw;
   // "two pyroclastic materials" · "pyroclastic materials that are …": the
   // noun is said once in a one-line summary.
   const countNoun = unit.count?.display.replace(/^(?:any|at least)?\s*\S+\s*/i, '') ?? '';
