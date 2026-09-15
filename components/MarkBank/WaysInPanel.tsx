@@ -182,6 +182,9 @@ const KeyPartsView: React.FC<{ kp: KeyPartsBreakdown; onRead: () => void }> = ({
         <p className="mb-wi-kp-note">This question is in the exam language. Its instruction words are explained here; the rest stays as printed.</p>
       )}
       {kp.banner && <p className="mb-wi-kp-note">The paper prints two options, marked OR. Answer one of them.</p>}
+      {kp.setting && kp.setting.length > 0 && (
+        <div className="mb-wi-kp-setting"><span>The question tells you</span>{kp.setting.map(s => <p key={`${s.start}-${s.from}`}>{s.display}</p>)}</div>
+      )}
       {kp.cardRules.length > 0 && (
         <p className="mb-wi-kp-rules"><span>For the whole answer</span>{kp.cardRules.map(r => <em key={`${r.start}-${r.from}`}>{r.display}</em>)}</p>
       )}
