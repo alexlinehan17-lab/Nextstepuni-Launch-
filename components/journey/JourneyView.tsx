@@ -16,6 +16,7 @@ interface CourseInfo {
   sectionsCount: number;
 }
 import Avatar from "../Avatar";
+import JourneyWelcome from "./JourneyWelcome";
 import { usePaperIsland } from "../../hooks/usePaperIsland";
 import {
   knownLandmarks,
@@ -47,6 +48,8 @@ import "./paper/paper.css";
 interface JourneyViewProps {
   onBack: () => void;
   user: SessionUser;
+  hasSeenWelcome: boolean;
+  onDismissWelcome: () => void;
   northStar: NorthStar | null;
   onOpenNorthStar: () => void;
   pointsBalance: number;
@@ -55,7 +58,7 @@ interface JourneyViewProps {
   allCourses?: CourseInfo[];
   subjects?: string[];
 }
-export default function JourneyView({ user, onBack }: JourneyViewProps) {
+export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWelcome }: JourneyViewProps) {
   const { island, balance, busy, error, execute } = usePaperIsland(user.uid);
   const [building, setBuilding] = useState(false),
     [chosen, setChosen] = useState<TileKind>("meadow"),
@@ -168,7 +171,7 @@ export default function JourneyView({ user, onBack }: JourneyViewProps) {
       className={`journey-paper island-views coast tone-pencilatlas ${building ? "is-building" : "is-viewing"}`}
     >
       <main className="student-app">
-        <header className="student-nav">
+        <header className="student-nav journey-nav-with-help">
           <button className="student-wordmark" onClick={onBack}>
             nextstepuni
           </button>
@@ -177,6 +180,7 @@ export default function JourneyView({ user, onBack }: JourneyViewProps) {
             <ArrowLeft size={15} /> Home
           </button>
           <div className="nav-spacer" />
+          <JourneyWelcome hasSeenWelcome={hasSeenWelcome} onDismissWelcome={onDismissWelcome} />
           <button
             className="island-wallet"
             aria-label={`Your balance: ${balance} Journey Points`}

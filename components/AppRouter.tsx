@@ -611,6 +611,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     return (
       <Suspense fallback={<LoadingSpinner />}>
         <JourneyView key={user.uid}
+          hasSeenWelcome={Boolean(dismissedGuides['journey-mode-welcome'])}
+          onDismissWelcome={() => { void handleDismissGuide('journey-mode-welcome'); }}
           onBack={handleBackToTree}
           user={user}
           northStar={northStar}

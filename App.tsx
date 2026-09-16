@@ -20,13 +20,13 @@ import { type YearGroup, type StudentSubject } from './components/subjectData';
 import { type PastJCData } from './types';
 import StudyPassportModal from './components/StudyPassportModal';
 import { db } from './firebase';
-import { doc, setDoc, arrayUnion, writeBatch, increment, runTransaction } from 'firebase/firestore';
+import { doc, setDoc, writeBatch } from 'firebase/firestore';
 import { type ModuleProgress, type NorthStar } from './types';
 import { createDirectionProfile } from './services/directionProfile';
 import { useToast } from './components/Toast';
 import { ALL_COURSES, categoryTitles } from './courseData';
 import { filterCoursesForStudent } from './utils/courseVisibility';
-import { awaitWriteOrTimeout, saveInBackground } from './utils/firestoreWrite';
+import { saveInBackground } from './utils/firestoreWrite';
 import { useSettings } from './hooks/useSettings';
 import { useTodaysFocus } from './hooks/useTodaysFocus';
 import { useStrategyMastery } from './hooks/useStrategyMastery';
@@ -144,7 +144,7 @@ const App: React.FC = () => {
     northStar, setNorthStar,
     timetableCompletions,
     pointsData, streak,
-    unlockedAvatarSeeds, setUnlockedAvatarSeeds,
+    setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     unlockedCardStyles, setUnlockedCardStyles,
     dismissedGuides, setDismissedGuides,
@@ -832,87 +832,6 @@ const App: React.FC = () => {
     }
   }, [user?.uid, showToast, updateDemoProgress]);
 
-  const handlePurchaseAvatar = useCallback(async (seed: string, price: number): Promise<boolean> => {
-    if (!user?.uid) return false;
-    if (unlockedAvatarSeeds.includes(seed)) return true;
-
-    if (pointsData.balance < price) {
-      showToast(`You need ${price - pointsData.balance} more JP to unlock this avatar.`, 'error');
-      return false;
-    }
-
-    if (user.uid === DEMO_STUDENT_UID) {
-      const nextSeeds = Array.from(new Set([...unlockedAvatarSeeds, seed]));
-      updateDemoProgress(current => ({
-        ...current,
-        pointsData: {
-          ...current.pointsData,
-          totalSpent: (current.pointsData?.totalSpent ?? 0) + price,
-        },
-        cosmeticUnlocks: {
-          ...current.cosmeticUnlocks,
-          avatarSeeds: nextSeeds,
-        },
-      }));
-      setUnlockedAvatarSeeds(nextSeeds);
-      showToast('Avatar unlocked and ready to use.', 'success');
-      return true;
-    }
-
-    try {
-      const progressRef = doc(db, 'progress', user.uid);
-      let transactionFailure: unknown;
-      const transactionWrite = runTransaction(db, async transaction => {
-        const snapshot = await transaction.get(progressRef);
-        const data = snapshot.data();
-        const alreadyUnlocked = (data?.cosmeticUnlocks?.avatarSeeds as string[] | undefined)?.includes(seed);
-        if (alreadyUnlocked) return;
-
-        const earned = Number(data?.pointsData?.totalEarned ?? 0);
-        const spent = Number(data?.pointsData?.totalSpent ?? 0);
-        if (earned - spent < price) throw new Error('INSUFFICIENT_JP');
-
-        transaction.set(progressRef, {
-          pointsData: { totalSpent: increment(price) },
-          cosmeticUnlocks: { avatarSeeds: arrayUnion(seed) },
-        }, { merge: true });
-      }).catch(error => {
-        transactionFailure = error;
-        throw error;
-      });
-
-      const outcome = await awaitWriteOrTimeout(transactionWrite, 'App.purchaseAvatar');
-      if (outcome === 'pending') {
-        showToast('Avatar purchase is waiting for a connection. Try again when you are online.', 'error');
-        pointsData.reload();
-        return false;
-      }
-      if (outcome === 'failed') {
-        if (transactionFailure instanceof Error && transactionFailure.message === 'INSUFFICIENT_JP') {
-          showToast('Your JP balance changed. Earn a little more and try again.', 'error');
-        } else {
-          showToast("Couldn't unlock that avatar — check your connection.", 'error');
-        }
-        pointsData.reload();
-        return false;
-      }
-
-      setUnlockedAvatarSeeds(Array.from(new Set([...unlockedAvatarSeeds, seed])));
-      pointsData.reload();
-      showToast('Avatar unlocked and ready to use.', 'success');
-      return true;
-    } catch (error) {
-      if (error instanceof Error && error.message === 'INSUFFICIENT_JP') {
-        showToast('Your JP balance changed. Earn a little more and try again.', 'error');
-      } else {
-        console.error('Failed to purchase avatar:', error);
-        showToast("Couldn't unlock that avatar — check your connection.", 'error');
-      }
-      pointsData.reload();
-      return false;
-    }
-  }, [pointsData, setUnlockedAvatarSeeds, showToast, unlockedAvatarSeeds, updateDemoProgress, user?.uid]);
-
   // AppRouter owns the progress-hydration loading state so the account-setup
   // animation stays mounted continuously from registration into onboarding.
   // Keep every piece of student chrome gated here: mounting counters against
@@ -1050,11 +969,6 @@ const App: React.FC = () => {
             onClose={() => setSettingsOpen(false)}
             settings={settings}
             updateSetting={updateSetting}
-            unlockedAvatarSeeds={unlockedAvatarSeeds}
-            pointsBalance={pointsData.balance}
-            onPurchaseAvatar={handlePurchaseAvatar}
-            unlockedThemes={unlockedThemes}
-            unlockedCardStyles={unlockedCardStyles}
             userName={user?.name}
             userSchool={user?.school}
             userYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}

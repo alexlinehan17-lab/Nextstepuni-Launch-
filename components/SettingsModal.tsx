@@ -7,7 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { X, Check, Lock, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText, Trash2 } from 'lucide-react';
+import { X, Check, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText, Trash2 } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 import { LegalModal, type LegalDoc } from './legal/LegalModal';
 import { DataRightsModal } from './account/DataRightsModal';
@@ -16,8 +16,6 @@ import { getAvatarName } from '../data/personalStarCrew';
 import { type YearGroup } from './subjectData';
 import Avatar from './Avatar';
 
-const EXTRA_AVATAR_SEEDS = ['Luna', 'Kai', 'Suki', 'Dara', 'Nico', 'Asha', 'Finn', 'Yuki'];
-const AVATAR_PRICE_JP = 120;
 import { type UserSettings } from '../types';
 
 interface SettingsModalProps {
@@ -25,11 +23,6 @@ interface SettingsModalProps {
   onClose: () => void;
   settings: UserSettings;
   updateSetting: <K extends keyof UserSettings>(key: K, value: UserSettings[K]) => void;
-  unlockedAvatarSeeds?: string[];
-  pointsBalance?: number;
-  onPurchaseAvatar?: (seed: string, price: number) => Promise<boolean>;
-  unlockedThemes?: string[];
-  unlockedCardStyles?: string[];
   userName?: string;
   userSchool?: string;
   hasStudyProfile?: boolean;
@@ -48,8 +41,6 @@ interface SettingsModalProps {
 
 const SettingsModal: React.FC<SettingsModalProps> = ({
   isOpen, onClose, settings, updateSetting,
-  unlockedAvatarSeeds = [], unlockedThemes: _unlockedThemes = [], unlockedCardStyles: _unlockedCardStyles = [],
-  pointsBalance = 0, onPurchaseAvatar,
   userName, userSchool, userYearGroup, hasStudyProfile = true, hasNorthStar = true,
   onStartProfileSetup, onChangeSubjects, onResetNorthStar, onAdvanceYear, onLogout,
 }) => {
@@ -59,7 +50,6 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   const [showSaved, setShowSaved] = useState(false);
   const [legalDoc, setLegalDoc] = useState<LegalDoc | null>(null);
   const [dataRightsOpen, setDataRightsOpen] = useState(false);
-  const [purchasingAvatar, setPurchasingAvatar] = useState<string | null>(null);
   const flashTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   useModal(isOpen, onClose, dialogRef);
@@ -168,11 +158,8 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
               <section>
                 <div className="mb-3 flex items-center justify-between">
                   <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-                    Avatar
+                    Your Star Crew character
                   </h3>
-                  <span className="font-mono text-[10px] font-bold text-[#B94712] dark:text-[#FF9A64]">
-                    {pointsBalance} JP available
-                  </span>
                 </div>
                 <div className="grid grid-cols-4 gap-2.5">
                   {AVATAR_SEEDS.map(seed => (
@@ -194,65 +181,6 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                       <Avatar seed={seed} alt="" className="w-full h-full" />
                     </button>
                   ))}
-                  {EXTRA_AVATAR_SEEDS.map(seed => {
-                    const isUnlocked = unlockedAvatarSeeds.includes(seed);
-                    const canAfford = pointsBalance >= AVATAR_PRICE_JP;
-                    const isPurchasing = purchasingAvatar === seed;
-                    return (
-                      <div key={seed} className="group relative" title={isUnlocked ? 'Unlocked avatar' : `${AVATAR_PRICE_JP} JP`}>
-                        <button
-                          onClick={async () => {
-                            if (isUnlocked) {
-                              updateSetting('avatar', seed);
-                              flash();
-                              return;
-                            }
-                            if (!onPurchaseAvatar || isPurchasing) return;
-                            setPurchasingAvatar(seed);
-                            try {
-                              const purchased = await onPurchaseAvatar(seed, AVATAR_PRICE_JP);
-                              if (purchased) {
-                                updateSetting('avatar', seed);
-                                flash();
-                              }
-                            } finally {
-                              setPurchasingAvatar(null);
-                            }
-                          }}
-                          aria-label={isUnlocked ? `Select avatar option ${AVATAR_SEEDS.length + EXTRA_AVATAR_SEEDS.indexOf(seed) + 1}` : `Unlock avatar option ${AVATAR_SEEDS.length + EXTRA_AVATAR_SEEDS.indexOf(seed) + 1} for ${AVATAR_PRICE_JP} JP`}
-                          disabled={isPurchasing}
-                          className={`w-full rounded-xl aspect-square p-1.5 transition-all ${
-                            isUnlocked
-                              ? settings.avatar === seed
-                                ? 'ring-2 ring-[var(--accent-hex)] bg-[rgba(var(--accent),0.1)]'
-                                : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
-                              : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-[#383838] focus-visible:ring-[#383838]'
-                          }`}
-                        >
-                          <Avatar
-                            seed={seed}
-                            alt=""
-                            className={`w-full h-full rounded-lg transition-all ${!isUnlocked ? 'grayscale opacity-35 group-hover:opacity-20 group-focus-within:opacity-20' : ''}`}
-                          />
-                          {!isUnlocked && (
-                            <span className="absolute inset-1.5 flex flex-col items-center justify-center rounded-lg bg-[#20201F]/90 text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">
-                              <span className="font-mono text-[11px] font-bold text-[#FF8A4C]">
-                                {isPurchasing ? 'BUYING…' : `${AVATAR_PRICE_JP} JP`}
-                              </span>
-                              <span className="mt-0.5 text-[9px] font-semibold">
-                                {canAfford ? 'Unlock' : `Need ${AVATAR_PRICE_JP - pointsBalance} more`}
-                              </span>
-                            </span>
-                          )}
-                        </button>
-                        {!isUnlocked && (
-                          <div className="pointer-events-none absolute bottom-0.5 right-0.5 flex h-5 w-5 items-center justify-center rounded-full border border-white bg-[#383838] transition-opacity group-hover:opacity-0 group-focus-within:opacity-0">
-                            <Lock size={8} className="text-white" />
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
                 </div>
               </section>
 
