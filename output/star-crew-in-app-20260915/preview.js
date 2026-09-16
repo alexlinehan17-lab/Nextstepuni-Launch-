@@ -70,7 +70,14 @@ function render(){
   document.getElementById('noteNumber').textContent=String(scenes.indexOf(s)+1).padStart(2,'0');document.getElementById('noteTitle').textContent=s.title;document.getElementById('noteCopy').textContent=s.copy;document.getElementById('noteSize').textContent=document.getElementById('preview').dataset.device==='mobile'?mobileSizes[s.id]:s.size;
   root.dataset.scene=state.scene;root.dataset.selectionStyle=state.selectionStyle;document.getElementById('selectionDirections').hidden=state.scene!=='subjects';document.querySelectorAll('[data-selection-style]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.selectionStyle===state.selectionStyle)));
   document.getElementById('previewStatus').textContent='Try the account choices, subject selection and existing study cards.';
-  root.innerHTML=({account,subjects:subjectSetup,grades:gradeSetup,home,study}[state.scene])();hydrate();history.replaceState(null,'','#'+state.scene);
+  switch(state.scene){
+    case 'subjects':root.innerHTML=subjectSetup();break;
+    case 'grades':root.innerHTML=gradeSetup();break;
+    case 'home':root.innerHTML=home();break;
+    case 'study':root.innerHTML=study();break;
+    default:root.innerHTML=account();break;
+  }
+  hydrate();history.replaceState(null,'','#'+state.scene);
 }
 function go(screen){if(!scenes.some(s=>s.id===screen))return;state.scene=screen;render();}
 window.addEventListener('hashchange',()=>{const screen=location.hash.slice(1);if(screen!==state.scene)go(screen);});
