@@ -116,6 +116,12 @@ export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<SessionUser | null>(null);
+  const profileRevision = useRef(0);
+  const applyLoadedUser = useCallback((loaded: SessionUser, revision: number) => {
+    setUser(previous => previous?.uid === loaded.uid && revision !== profileRevision.current
+      ? { ...loaded, name: previous.name, avatar: previous.avatar }
+      : loaded);
+  }, []);
   const [isLoadingAuth, setIsLoadingAuth] = useState(true);
   const [authResolved, setAuthResolved] = useState(false);
   const [userResolved, setUserResolved] = useState(false);
@@ -133,6 +139,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // (IndexedDB) before its first fire, so the first callback is always definitive.
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
+      // Signup and profile edits can finish while these reads are in flight.
+      // A stale or school-only profile must not replace the chosen identity.
+      // Role and school still come from the server-owned profile below.
+      const revision = profileRevision.current;
       setLoadedDataUid(null);
       setLoadedDataStatus('pending');
 
@@ -183,7 +193,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 .catch(err => console.error('Failed to backfill curriculumLevel:', err));
             }
 
-            setUser({
+            applyLoadedUser({
               uid: firebaseUser.uid,
               name: userData.name,
               avatar: userData.avatar || 'Charlie',
@@ -196,7 +206,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               yearGroup: userData.yearGroup,
               curriculumLevel,
               needsPasswordChange: userData.needsPasswordChange || false,
-            });
+            }, revision);
 
             if (progressData) {
               const pd = progressData;
@@ -229,12 +239,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             // screen. A neutral placeholder is the honest thing to show while the
             // document is missing.
             const fallbackName = firebaseUser.displayName || 'Student';
-            setUser({
+            applyLoadedUser({
               uid: firebaseUser.uid,
               name: fallbackName,
               avatar: 'Charlie',
               isAdmin: false,
-            });
+            }, revision);
             if (progressData) {
               const pd = progressData;
               setLoadedData({
@@ -261,12 +271,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             // screen. A neutral placeholder is the honest thing to show while the
             // document is missing.
             const fallbackName = firebaseUser.displayName || 'Student';
-          setUser({
+          applyLoadedUser({
             uid: firebaseUser.uid,
             name: fallbackName,
             avatar: 'Charlie',
             isAdmin: false,
-          });
+          }, revision);
           setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
         }
         setLoadedDataStatus(loadFailed ? 'failed' : 'loaded');
@@ -299,7 +309,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [applyLoadedUser]);
 
   const handleLoginSuccess = useCallback((loggedInUser: SessionUser, options?: LoginSuccessOptions) => {
     if (loggedInUser.uid === DEMO_STUDENT_UID) {
@@ -314,6 +324,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       // swaps the account-setup loader for "Loading your workspace".
       setLoadedData(previous => ({ ...previous, needsOnboarding: true }));
     }
+    profileRevision.current += 1;
     setUser(loggedInUser);
     setUserResolved(true);
   }, []);
@@ -351,6 +362,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const patchUser = useCallback((patch: Partial<SessionUser>) => {
+    profileRevision.current += 1;
     setUser(prev => (prev ? { ...prev, ...patch } : prev));
   }, []);
 

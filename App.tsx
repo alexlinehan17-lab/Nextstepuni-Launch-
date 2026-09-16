@@ -188,7 +188,8 @@ const App: React.FC = () => {
   const [mobileProfileOpen, setMobileProfileOpen] = useState(false);
   const [timetableBlockContext, setTimetableBlockContext] = useState<{ subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string } | null>(null);
   const [unreadNotificationCount, setUnreadNotificationCount] = useState(0);
-  const { settings, updateSetting, isLoaded: _settingsLoaded } = useSettings(user?.uid, user?.avatar);
+  const handleAvatarChange = useCallback((avatar: string) => patchUser({ avatar }), [patchUser]);
+  const { settings, updateSetting, isLoaded: _settingsLoaded } = useSettings(user?.uid, user?.avatar, handleAvatarChange);
   const { recommendation } = useTodaysFocus(userProgress, ALL_COURSES);
 
   // Gamification
