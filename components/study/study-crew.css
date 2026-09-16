@@ -1,5 +1,5 @@
 .study-finish,.study-break{background:#fff;color:#23251f;font-family:'DM Sans',sans-serif}
-.study-finish{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(35px,6vw,90px);align-items:start;max-width:1190px;margin:0 auto;padding:55px 32px 70px;min-height:75vh}
+.study-finish{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(35px,6vw,90px);align-items:start;max-width:1190px;margin:0 auto;padding:80px 32px 70px;min-height:75vh}
 .study-crew-eyebrow{font:11px/1.5 'Apercu Mono Pro',monospace;text-transform:uppercase;letter-spacing:.15em;color:#6a7164}
 .study-debrief h1{font:800 clamp(36px,4vw,58px)/1.08 'DM Sans',sans-serif;letter-spacing:-.045em;margin:24px 0}
 .study-crew-intro{font-size:16px;line-height:1.7;color:#6a7164;max-width:44ch}
@@ -60,7 +60,7 @@
 @keyframes study-receipt-arrive{from{opacity:0;translate:0 22px;rotate:-3deg}
 to{opacity:1;translate:0 0;rotate:0deg}
 }
-@media(max-width:800px){.study-finish{gap:30px;padding:30px 18px;grid-template-columns:minmax(0,1fr)}
+@media(max-width:800px){.study-finish{gap:30px;padding:65px 18px calc(105px + env(safe-area-inset-bottom));grid-template-columns:minmax(0,1fr)}
 .study-debrief{max-width:540px;margin:0 auto;width:100%}
 .study-receipt{max-width:420px;width:calc(100% - 16px);margin:15px auto 20px;transform:rotate(1deg)}
 .study-debrief h1{font-size:43px}

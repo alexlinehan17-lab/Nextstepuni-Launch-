@@ -125,7 +125,7 @@ const nextLeavingCertDate = (today: Date): string => {
 export const createDemoStudentSession = (): SessionUser => ({
   uid: DEMO_STUDENT_UID,
   name: 'Demo Student',
-  avatar: 'Maya Angelou',
+  avatar: 'star-crew:maker',
   role: 'student',
   isAdmin: false,
   yearGroup: '6th',
