@@ -61,7 +61,7 @@ describe('Journey introduction', () => {
 
 it('Settings offers only the eight Star Crew characters and saves the selected character', () => {
   const updateSetting = vi.fn();
-  const settings: UserSettings = { language: 'en', avatar: 'star-crew:reader', darkMode: false, defaultWorkMinutes: 25, showDashboard: false };
+  const settings: UserSettings = { language: 'en', avatar: 'star-crew:reader', darkMode: false, cardStyle: 'default', defaultWorkMinutes: 25, showDashboard: false };
   render(<SettingsModal isOpen onClose={vi.fn()} settings={settings} updateSetting={updateSetting} />);
   expect(screen.getAllByRole('button', { name: /^Select .* avatar$/ })).toHaveLength(8);
   expect(screen.queryByRole('button', { name: /Unlock avatar/ })).not.toBeInTheDocument();
