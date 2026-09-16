@@ -236,7 +236,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
             onClick={() => setSidebarOpen(!sidebarOpen)}
             className="flex items-center gap-3 px-3 py-3 w-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors shrink-0"
           >
-            <div className="w-9 h-9 rounded-lg overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
+            <div className="w-9 h-9 rounded-full overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
               {userAvatarSeed ? (
                 <Avatar seed={userAvatarSeed} alt="Avatar" className="w-full h-full object-cover" />
               ) : (

@@ -1,0 +1,51 @@
+.journey-welcome-help{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;background:#fff;color:#23251f;border:1px solid #c8cdc2;border-radius:999px;padding:8px 12px;font:600 12px 'DM Sans',sans-serif}
+.journey-welcome-help>span:first-child{display:grid;place-items:center;width:19px;height:19px;border:1px solid currentColor;border-radius:50%;font-size:12px}
+.journey-welcome-overlay{position:fixed;inset:0;z-index:210;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(25,29,23,.55);backdrop-filter:blur(5px);font-family:'DM Sans',sans-serif}
+.journey-welcome{width:min(940px,100%);max-height:calc(100dvh - 48px);overflow:auto;overscroll-behavior:contain;background:#fff;color:#23251f;border:1.5px solid #23251f;border-radius:22px;box-shadow:7px 7px 0 #23251f;outline:none;isolation:isolate}
+.journey-welcome-header{display:flex;justify-content:space-between;align-items:center;padding:22px 32px;border-bottom:1px solid #d8dbd2}
+.journey-welcome-brand{font-size:25px;font-weight:850;letter-spacing:-1.2px}
+.journey-welcome-header button{width:36px;height:36px;display:grid;place-items:center;border:1px solid #c8cdc2;border-radius:50%;background:#fff;color:#23251f}
+.journey-welcome-body{display:grid;grid-template-columns:1fr 1fr}
+.journey-welcome-story{padding:34px 34px 20px;border-right:1px solid #d8dbd2}
+.journey-welcome .journey-welcome-eyebrow{margin:0 0 20px;font:600 10px/1.5 'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.16em;color:#62695c}
+.journey-welcome h2{margin:0 0 22px;font:800 clamp(36px,4.5vw,52px)/1.02 'DM Sans',sans-serif;letter-spacing:-.055em}
+.journey-welcome-story>p:not(.journey-welcome-eyebrow){margin:0;max-width:34ch;font-size:15px;line-height:1.7;color:#62695c}
+.journey-welcome-art{display:flex;align-items:center;gap:12px;margin:18px 0 0}
+.journey-welcome-art .crew-illustration{width:160px;height:160px;flex-shrink:0;background:#fff;mix-blend-mode:multiply}
+.journey-welcome-art>span{font:italic 20px/1.35 Georgia,serif;color:#aa430c;transform:rotate(-5deg)}
+.journey-welcome-guide{padding:34px}
+.journey-welcome ol{list-style:none;margin:0;padding:0}
+.journey-welcome li{display:flex;gap:15px;padding:0 0 20px;margin-bottom:20px;border-bottom:1px solid #d8dbd2}
+.journey-welcome-number{font:500 12px/1.7 monospace;color:#aa430c}
+.journey-welcome h3{margin:0 0 7px;font:750 18px/1.25 'DM Sans',sans-serif;letter-spacing:-.035em}
+.journey-welcome li p{margin:0;color:#62695c;font-size:13px;line-height:1.7}
+.journey-welcome li strong{font-weight:650;color:#343a2e}
+.journey-welcome-note{margin:0 0 22px;font-size:13px;line-height:1.65;color:#62695c}
+.journey-welcome-start{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;padding:15px 18px;border:1.5px solid #23251f;border-radius:8px;background:#ff7911;color:#23251f;box-shadow:3px 3px 0 #23251f;font:750 14px 'DM Sans',sans-serif;transition:transform .16s,box-shadow .16s}
+.journey-welcome-start:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #23251f}
+.journey-welcome-reminder{margin:15px 0 0;color:#62695c;font-size:11px;line-height:1.6}
+.journey-welcome button:focus-visible,.journey-welcome-help:focus-visible{outline:3px solid #b94e12;outline-offset:4px}
+@media(max-width:700px){
+ .journey-welcome-help{width:34px;height:34px;padding:0;justify-content:center}
+ .journey-welcome-help>span:last-child{display:none}
+ .journey-welcome-overlay{padding:12px}
+ .journey-welcome{max-height:calc(100dvh - 24px);border-radius:18px;box-shadow:4px 4px 0 #23251f}
+ .journey-welcome-header{padding:16px 20px}
+ .journey-welcome-brand{font-size:22px}
+ .journey-welcome-body{grid-template-columns:1fr}
+ .journey-welcome-story{position:relative;padding:25px 23px 22px;border-right:0;border-bottom:1px solid #d8dbd2}
+ .journey-welcome h2{font-size:38px;max-width:7.5em;margin-bottom:17px}
+ .journey-welcome .journey-welcome-eyebrow{margin-bottom:17px;font-size:9px}
+ .journey-welcome-story>p:not(.journey-welcome-eyebrow){font-size:13px;max-width:none}
+ .journey-welcome-art{position:absolute;right:5px;top:55px;margin:0}
+ .journey-welcome-art .crew-illustration{width:110px;height:110px}
+ .journey-welcome-art>span{display:none}
+ .journey-welcome-guide{padding:25px 23px}
+ .journey-welcome li{padding-bottom:16px;margin-bottom:16px;gap:12px}
+ .journey-welcome h3{font-size:17px}
+}
+@media(max-width:420px){
+ .journey-paper .student-nav.journey-nav-with-help{gap:8px;padding:0 12px}
+ .journey-paper .journey-nav-with-help .student-wordmark{font-size:21px}
+}
+@media(prefers-reduced-motion:reduce){.journey-welcome-start{transition:none}}

@@ -142,7 +142,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           onClick={() => setSidebarOpen(!sidebarOpen)}
           className="flex items-center gap-3 px-3 py-4 w-full border-b border-[#DED9D3] hover:bg-[#F3EEE7] dark:border-zinc-700 dark:hover:bg-zinc-800 transition-colors"
         >
-          <div className="w-9 h-9 rounded-xl border-[1.5px] border-[#383838] overflow-hidden shrink-0 bg-white dark:bg-zinc-700 flex items-center justify-center">
+          <div className="w-9 h-9 rounded-full border-[1.5px] border-[#383838] overflow-hidden shrink-0 bg-white dark:bg-zinc-700 flex items-center justify-center">
             {userAvatarSeed ? (
               <Avatar seed={userAvatarSeed} alt="Avatar" className="w-full h-full object-cover" />
             ) : (
