@@ -1,0 +1,225 @@
+{
+  "method": "OpenAI built-in image generation",
+  "reference": "../star-crew-20260915/original-four.png",
+  "commonPrompt": "Use case: stylized-concept.\nAsset type: ONE individual full-body Star Crew avatar for a NextStepUni Leaving Certificate subject gallery.\nInput image 1 is a STYLE AND CHARACTER reference, not an edit target. Match it closely: faceless blank round white head, compact rounded white body, chunky pleasantly uneven black ink outlines, mitten hands, rounded feet, one chunky five-point orange star. Older-teen editorial mascot. Pure white background; black, white and warm orange #ff771c only. Each character has the same body proportions and bold stroke weight as the reference. No facial features on the main character, no realistic skin, no fingers, no shading, no gradients, no paper texture, no cast shadow, no decorative sparkles, no badge or border.\nComposition: square canvas, ONE centered character plus its star and the specified compact subject prop. The complete visible outline must fit within the central 76% of the square, with symmetrical white margins. Prioritise a simple silhouette that reads in a circular avatar at 48 pixels. The star stays clearly visible. No ground line, no scene, no second character. If a short text or character is explicitly specified below render exactly that; otherwise NO text, letters or numbers anywhere.\nSubject-specific direction: ",
+  "subjects": [
+    {
+      "id": "english",
+      "character": "The Storyteller",
+      "detail": "Seated sideways on the orange star, holding an open orange book in one mitten hand and a single large feather quill in the other. No writing. Calm storyteller pose."
+    },
+    {
+      "id": "irish",
+      "character": "An Scéalaí",
+      "detail": "Standing with one foot on the orange star, an orange knitted scarf and an open white book. A simple speech bubble close beside the head contains ONLY the exact word 'Dia'. Welcoming storytelling gesture."
+    },
+    {
+      "id": "french",
+      "character": "Le Lecteur",
+      "detail": "Seated on the orange star wearing a small orange beret, reading a compact white phrasebook. The book cover has the exact short text 'Salut'. Relaxed crossed ankles."
+    },
+    {
+      "id": "german",
+      "character": "Der Sprecher",
+      "detail": "Perched on the orange star wearing orange headphones, holding a large white vocabulary flashcard in front of the torso. Card reads ONLY 'Hallo'. One foot extended playfully."
+    },
+    {
+      "id": "spanish",
+      "character": "El Hablante",
+      "detail": "Standing beside the orange star with one foot resting on it, holding a simple orange handheld microphone and a small white speech bubble close above its free hand reading ONLY 'Hola'."
+    },
+    {
+      "id": "italian",
+      "character": "Il Narratore",
+      "detail": "Seated squarely on the orange star, both feet dangling, one mitten arm extending conversationally. A single large white speech bubble close beside their head reads ONLY 'Ciao'. Small orange neck scarf."
+    },
+    {
+      "id": "russian",
+      "character": "The Linguist",
+      "detail": "Sitting with bent knees on the orange star, orange earmuff-style headphones around the neck, holding a large white rectangular alphabet card tilted beside the torso. Card has ONLY three large Cyrillic capitals 'АБВ'. No other text."
+    },
+    {
+      "id": "japanese",
+      "character": "The Calligrapher",
+      "detail": "Kneeling comfortably on the orange star, holding a short broad orange calligraphy brush and a white square practice card at chest level with ONLY one large black hiragana character 'あ'. Simple minimal prop shapes."
+    },
+    {
+      "id": "mandarin-chinese",
+      "character": "The Wordsmith",
+      "detail": "Seated sideways on the orange star, holding a white upright practice board with ONLY one large black character '文', and a short orange writing brush in the other mitten. No costume or hat."
+    },
+    {
+      "id": "latin",
+      "character": "The Classicist",
+      "detail": "Standing with one rounded foot on the orange star, holding a curled white parchment scroll with ONLY the exact black text 'ABC', and a short orange stylus. Plain head, no costume, compact scholarly pose."
+    },
+    {
+      "id": "ancient-greek",
+      "character": "The Philosopher",
+      "detail": "Seated with ankles crossed on the orange star, holding a chunky white tablet marked ONLY with three large Greek capitals 'ΑΒΓ'. The free mitten rests thoughtfully beneath the blank head. No costume."
+    },
+    {
+      "id": "hebrew-studies",
+      "character": "The Scholar",
+      "detail": "Seated upright on the orange star reading a broad white unrolled scroll with two short orange end handles. Scroll carries ONLY three large Hebrew characters 'אבג'. Plain white body and blank head; no religious costume."
+    },
+    {
+      "id": "arabic",
+      "character": "The Scribe",
+      "detail": "Seated with folded legs on the orange star, holding a broad white calligraphy card with ONLY the single large black Arabic letter 'ع', plus a chunky orange reed pen. Plain white body and blank head; no costume."
+    },
+    {
+      "id": "classical-studies",
+      "character": "The Curator",
+      "detail": "Seated on the orange star cradling one small classical orange amphora with two clear curved handles. Head bent toward the vase as if studying its shape. No costume, no other antiquities."
+    },
+    {
+      "id": "lithuanian",
+      "character": "The Conversationalist",
+      "detail": "Standing on the ground beside an orange star, carrying a white phrasebook under one arm and raising one white speech card in the other hand, reading ONLY 'Labas'. Small orange scarf, friendly open pose."
+    },
+    {
+      "id": "polish",
+      "character": "The Translator",
+      "detail": "Sitting on the orange star with knees bent, holding one large white speech-bubble-shaped flashcard beside the head reading ONLY the exact word 'Cześć'. An orange pencil tucked under the other mitten. No costume."
+    },
+    {
+      "id": "portuguese",
+      "character": "The Communicator",
+      "detail": "Leaning casually against the single orange star, wearing orange headphones on the ears, holding a white phrase card reading ONLY 'Olá'. One rounded foot crossed over the other, plain white body."
+    },
+    {
+      "id": "mathematics",
+      "character": "The Problem Solver",
+      "detail": "Seated on the orange star, holding a large white triangular set square with an orange edge vertically next to the torso. Free hand resting against the chin as if thinking. No numbers or formulas."
+    },
+    {
+      "id": "applied-mathematics",
+      "character": "The Modeller",
+      "detail": "Kneeling beside the orange star, gently launching one small white ball up a short orange ramp supported on the star. Just one simple ramp and ball, playful compact practical mechanics experiment. No arrows or text."
+    },
+    {
+      "id": "physics",
+      "character": "The Experimenter",
+      "detail": "Seated on the orange star holding one chunky orange U-shaped horseshoe magnet, with two clearly separated white ends. Looking toward the magnet, free hand steadying it. No floating particles or diagrams."
+    },
+    {
+      "id": "chemistry",
+      "character": "The Chemist",
+      "detail": "Standing with one foot on the orange star and wearing simple clear safety goggles outlined in black. Holding one white conical flask with orange liquid in both mitten hands. No fumes, no extra flasks, no lab coat details."
+    },
+    {
+      "id": "physics-and-chemistry",
+      "character": "The Investigator",
+      "detail": "Seated on the orange star, holding a simple white test tube filled halfway with orange liquid in one mitten and a small orange U-shaped magnet in the other. Compact balanced composition, two very simple readable props."
+    },
+    {
+      "id": "biology",
+      "character": "The Biologist",
+      "detail": "Kneeling on the orange star, gently holding a single large orange potted seedling with two broad white leaves outlined in black. Examining one leaf with a simple orange-handled magnifying glass. Compact tender curious pose."
+    },
+    {
+      "id": "agricultural-science",
+      "character": "The Grower",
+      "detail": "Standing with one rounded foot on the orange star, wearing simple orange dungaree straps, holding a short orange watering can tilted toward a single broad two-leaf plant in a small white pot balanced on the star. No farm background."
+    },
+    {
+      "id": "computer-science",
+      "character": "The Coder",
+      "detail": "Seated on the orange star with a white open laptop balanced on the knees, tapping it with both mitten hands. The back of the laptop is plain except for one small orange square. Compact focused pose, no floating code."
+    },
+    {
+      "id": "accounting",
+      "character": "The Accountant",
+      "detail": "Seated upright on the orange star holding a large white calculator with an orange border and six chunky black keys. Free mitten points at one key. No tiny figures or receipts."
+    },
+    {
+      "id": "business",
+      "character": "The Entrepreneur",
+      "detail": "Standing confidently with one foot on the orange star, carrying one orange briefcase with a white handle in one mitten and resting the other hand on the hip. Plain white body, no suit or tie."
+    },
+    {
+      "id": "economics",
+      "character": "The Economist",
+      "detail": "Seated on the orange star holding a large white board showing ONLY three bold orange vertical bars increasing in height. One mitten gestures toward the bars. No axes, numbers, arrows or text."
+    },
+    {
+      "id": "geography",
+      "character": "The Explorer",
+      "detail": "Sitting on the orange star, holding a large simple white globe with a few chunky orange land shapes and black outline. No detailed map labels. A small orange backpack, feet dangling."
+    },
+    {
+      "id": "history",
+      "character": "The Historian",
+      "detail": "Kneeling on the orange star and examining one large orange-framed hourglass with a white interior. Holding it gently in two mitten hands, head tilted with curiosity. No extra props."
+    },
+    {
+      "id": "politics-and-society",
+      "character": "The Citizen",
+      "detail": "Standing with one foot on the orange star, lowering one plain white ballot paper into a compact white ballot box held at waist level. Box has an orange lid with a clear black slot. No party logos, flags or text."
+    },
+    {
+      "id": "religious-education",
+      "character": "The Thinker",
+      "detail": "Seated with legs crossed on the orange star, one mitten hand under the blank head in a thoughtful pose and the other holding a small open white book with orange covers. A single simple large question mark on the visible page. No faith-specific symbols or costume."
+    },
+    {
+      "id": "art",
+      "character": "The Artist",
+      "detail": "Seated on the orange star wearing a small orange artist beret, holding one large white oval paint palette with three orange paint blobs and a short orange brush. Both props clear, no extra easel."
+    },
+    {
+      "id": "design-and-communication-graphics",
+      "character": "The Designer",
+      "detail": "Seated on the orange star holding a large white technical drawing board on the knees. The board shows one single bold black isometric cube with an orange top face. Holding a short orange ruler against one edge. No text or tiny drawing details."
+    },
+    {
+      "id": "construction-studies",
+      "character": "The Builder",
+      "detail": "Standing with one rounded foot on the orange star wearing a simple orange hard hat, carrying a small white house-frame model in both mitten hands. Model has an orange pitched roof and no detailed interior."
+    },
+    {
+      "id": "engineering",
+      "character": "The Engineer",
+      "detail": "Sitting on the orange star, holding one large chunky white six-tooth cog with an orange centre and a short orange spanner. No intricate machine details, confident balanced pose."
+    },
+    {
+      "id": "technology",
+      "character": "The Inventor",
+      "detail": "Kneeling on the orange star holding a very simple small orange robot with a white rectangular body and two rounded feet. Robot has two black dot indicator lights, no smile. The main character retains its blank face. No wires or other parts."
+    },
+    {
+      "id": "physical-education",
+      "character": "The Athlete",
+      "detail": "In a relaxed athletic standing pose with one foot on the orange star, an orange sweatband around the blank head, holding one large white basketball with simple black seam lines against the hip. No jersey text."
+    },
+    {
+      "id": "lcvp-link-modules",
+      "character": "The Collaborator",
+      "detail": "Seated on the orange star, holding a large white clipboard with three bold black tick marks and orange clip. Small orange satchel at the side. Free mitten raised in a welcoming gesture, no written words."
+    },
+    {
+      "id": "home-economics",
+      "character": "The Home Maker",
+      "detail": "Seated on the orange star wearing a simple orange apron, holding one white mixing bowl with orange rim on their lap and stirring with a chunky orange spoon. No chef hat, ingredients or kitchen background."
+    },
+    {
+      "id": "climate-action-and-sustainable-development",
+      "character": "The Changemaker",
+      "detail": "Kneeling on the orange star and hugging a large simple white globe with orange land shapes and one bold white sprouting leaf outlined in black at its top. Warm protective pose, no extra nature scenery."
+    },
+    {
+      "id": "drama-film-and-theatre-studies",
+      "character": "The Director",
+      "detail": "Seated on the orange star holding one large white film clapperboard with a bold black-and-orange striped top held open. Plain blank head tilted confidently, free foot extended. No text, no theatre mask."
+    }
+  ],
+  "refinements": [
+    {
+      "id": "irish",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-ec00af71-1dbf-4e2a-bb3e-d5e3810a2e5d.png",
+      "asset": "irish-v2.png",
+      "prompt": "Use case: stylized-concept.\nAsset type: ONE individual full-body Star Crew avatar for a NextStepUni Leaving Certificate subject gallery.\nInput image 1 is a STYLE AND CHARACTER reference, not an edit target. Match it closely: faceless blank round white head, compact rounded white body, chunky pleasantly uneven black ink outlines, mitten hands, rounded feet, one chunky five-point orange star. Older-teen editorial mascot. Pure white background; black, white and warm orange #ff771c only. Each character has the same body proportions and bold stroke weight as the reference. No facial features on the main character, no realistic skin, no fingers, no shading, no gradients, no paper texture, no cast shadow, no decorative sparkles, no badge or border.\nComposition: square canvas, ONE centered character plus its star and the specified compact subject prop. The complete visible outline must fit within the central 76% of the square, with symmetrical white margins. Prioritise a simple silhouette that reads in a circular avatar at 48 pixels. The star stays clearly visible. No ground line, no scene, no second character. If a short text or character is explicitly specified below render exactly that; otherwise NO text, letters or numbers anywhere.\nSubject-specific direction: Standing with one foot on the orange star, an orange knitted scarf and an open white book. A simple speech bubble close beside the head contains ONLY the exact greeting 'Dia duit' (both words). Welcoming storytelling gesture."
+    }
+  ]
+}

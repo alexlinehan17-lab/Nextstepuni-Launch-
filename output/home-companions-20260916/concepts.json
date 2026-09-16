@@ -1,0 +1,62 @@
+[
+  {
+    "id": "lessons-a",
+    "code": "L1",
+    "name": "The Thinker",
+    "copy": "A quiet pause to understand how you learn."
+  },
+  {
+    "id": "lessons-b",
+    "code": "L2",
+    "name": "The Puzzle Solver",
+    "copy": "Making the next idea click into place."
+  },
+  {
+    "id": "lessons-c",
+    "code": "L3",
+    "name": "The Note-maker",
+    "copy": "Turning a new lesson into something of your own."
+  },
+  {
+    "id": "launchpad-a",
+    "code": "T1",
+    "name": "The Paper Pilot",
+    "copy": "A small idea, ready to take flight."
+  },
+  {
+    "id": "launchpad-b",
+    "code": "T2",
+    "name": "The Juggler",
+    "copy": "A few good tools. Plenty of possibilities."
+  },
+  {
+    "id": "launchpad-c",
+    "code": "T3",
+    "name": "The Card Dealer",
+    "copy": "The right practice, ready when you are."
+  },
+  {
+    "id": "journey-a",
+    "code": "J1",
+    "name": "The Grower",
+    "copy": "A little care today. Something bigger tomorrow."
+  },
+  {
+    "id": "journey-b",
+    "code": "J2",
+    "name": "The Islander",
+    "copy": "A little world that grows with your progress."
+  },
+  {
+    "id": "journey-c",
+    "code": "J3",
+    "name": "The World-builder",
+    "copy": "Build your island, one small piece at a time."
+  },
+  {
+    "id": "paths-a",
+    "code": "P1",
+    "name": "The Wayfinder",
+    "copy": "The same next step, in the original Star Crew shape."
+  }
+]

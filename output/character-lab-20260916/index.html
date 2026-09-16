@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A little more us. — nextstepuni character lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;650;700;750;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lab.css">
+</head>
+<body>
+  <header class="lab-header"><a class="wordmark" href="#">nextstepuni</a><span class="mono">THE CHARACTER LAB / 01</span><span class="preview-label">Interactive concepts</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">THE NEXT LITTLE THINGS</p><h1>A little more <span>us.</span></h1></div><p>We’ve found our characters.<br>Now let’s give them a world to belong to.</p></section>
+    <div class="gallery-toolbar"><div class="filters" role="group" aria-label="Filter concepts"><button data-filter="all" aria-pressed="true">All eight</button><button data-filter="site" aria-pressed="false">Public site <span>03</span></button><button data-filter="app" aria-pressed="false">Student app <span>05</span></button></div><button id="shortlistToggle" class="text-button">Your shortlist <span id="shortlistCount">0</span></button></div>
+    <nav id="conceptNav" aria-label="Choose a concept"></nav>
+    <section class="exploration" aria-label="Interactive concept preview">
+      <aside class="concept-notes"><div><p class="eyebrow" id="conceptLocation"></p><span class="concept-number" id="conceptNumber"></span><h2 id="conceptTitle"></h2><p id="conceptDescription"></p></div><div class="concept-bottom"><div class="try-note"><span class="mono">TRY THIS</span><p id="conceptTry"></p></div><button id="saveConcept" class="save-button" aria-pressed="false">Add to shortlist <span>+</span></button></div></aside>
+      <div class="preview-wrap"><div class="preview-bar"><span id="screenLabel"></span><div><button id="replay" class="text-button">Replay</button><button id="sizeToggle" class="text-button" aria-pressed="false">Phone view</button></div></div><div id="stage" class="stage"></div></div>
+    </section>
+    <div class="below-preview"><p id="placementNote"></p><div><button id="previous" aria-label="Previous concept">←</button><span id="position"></span><button id="next" aria-label="Next concept">→</button></div></div>
+    <section class="recommendation"><span class="mono">WHERE I’D START</span><p><button data-jump="subjects">Subject spotlights.</button> <button data-jump="receipt">Study receipts.</button> <button data-jump="empty">Helpful empty states.</button><br><span>Three small additions that make the artwork part of the experience.</span></p></section>
+    <footer class="lab-footer"><span>nextstepuni / ideas in motion</span><span>Concept preview · Illustrative student data</span><button id="motionToggle" class="text-button" aria-pressed="false">Reduce motion</button></footer>
+  </main>
+  <dialog id="shortlistDialog" aria-labelledby="shortlistTitle"><div class="dialog-head"><h2 id="shortlistTitle">The keepers.</h2><button id="closeShortlist" aria-label="Close shortlist">×</button></div><p>Your picks are saved in this browser.</p><div id="shortlistItems"></div><button id="copyShortlist" class="primary">Copy shortlist <span>↗</span></button><p id="copyStatus" role="status"></p></dialog>
+  <div id="liveStatus" class="sr-only" role="status" aria-live="polite"></div>
+  <script type="module" src="lab.js"></script>
+</body></html>

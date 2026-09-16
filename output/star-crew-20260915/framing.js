@@ -1,0 +1,233 @@
+/* global document, URL */
+export const frames = {
+  "05": {
+    "file": "05-skater.png",
+    "tile": null,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      324,
+      161,
+      930,
+      1056
+    ],
+    "scale": 1.092872,
+    "left": -4.643575,
+    "top": -3.031285,
+    "maxRadius": 0.4174
+  },
+  "06": {
+    "file": "06-daydreamer.png",
+    "tile": null,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      256,
+      206,
+      994,
+      1006
+    ],
+    "scale": 1.213955,
+    "left": -10.504161,
+    "top": -8.664835,
+    "maxRadius": 0.45
+  },
+  "07": {
+    "file": "07-maker.png",
+    "tile": null,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      315,
+      163,
+      949,
+      1058
+    ],
+    "scale": 1.092872,
+    "left": -5.07933,
+    "top": -3.205587,
+    "maxRadius": 0.4254
+  },
+  "08": {
+    "file": "08-stargazer.png",
+    "tile": null,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      316,
+      161,
+      947,
+      1043
+    ],
+    "scale": 1.10898,
+    "left": -5.846939,
+    "top": -3.238095,
+    "maxRadius": 0.4299
+  },
+  "09": {
+    "file": "09-hugger.png",
+    "tile": null,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      383,
+      152,
+      839,
+      1101
+    ],
+    "scale": 1.030685,
+    "left": -0.219178,
+    "top": -1.493151,
+    "maxRadius": 0.3958
+  },
+  "10": {
+    "file": "10-trailblazer.png",
+    "tile": null,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      327,
+      144,
+      961,
+      1060
+    ],
+    "scale": 1.067817,
+    "left": -4.838428,
+    "top": -1.262009,
+    "maxRadius": 0.4418
+  },
+  "11": {
+    "file": "11-snoozer.png",
+    "tile": null,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      310,
+      238,
+      951,
+      1017
+    ],
+    "scale": 1.25561,
+    "left": -13.130937,
+    "top": -12.830552,
+    "maxRadius": 0.4455
+  },
+  "12": {
+    "file": "12-wave.png",
+    "tile": null,
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "bounds": [
+      290,
+      148,
+      964,
+      1079
+    ],
+    "scale": 1.050612,
+    "left": -2.530612,
+    "top": -1.39957,
+    "maxRadius": 0.4252
+  },
+  "01": {
+    "file": "original-four.png",
+    "tile": 0,
+    "sourceSize": [
+      627,
+      627
+    ],
+    "bounds": [
+      178,
+      76,
+      539,
+      592
+    ],
+    "scale": 0.947791,
+    "left": -4.19186,
+    "top": -0.488372,
+    "maxRadius": 0.4436
+  },
+  "02": {
+    "file": "original-four.png",
+    "tile": 1,
+    "sourceSize": [
+      627,
+      627
+    ],
+    "bounds": [
+      136,
+      108,
+      465,
+      588
+    ],
+    "scale": 1.018875,
+    "left": 1.16875,
+    "top": -6.55,
+    "maxRadius": 0.437
+  },
+  "03": {
+    "file": "original-four.png",
+    "tile": 2,
+    "sourceSize": [
+      627,
+      627
+    ],
+    "bounds": [
+      147,
+      37,
+      542,
+      548
+    ],
+    "scale": 0.946415,
+    "left": -2.000005,
+    "top": 5.849053,
+    "maxRadius": 0.45
+  },
+  "04": {
+    "file": "original-four.png",
+    "tile": 3,
+    "sourceSize": [
+      627,
+      627
+    ],
+    "bounds": [
+      67,
+      44,
+      447,
+      537
+    ],
+    "scale": 0.992008,
+    "left": 9.338742,
+    "top": 4.03854,
+    "maxRadius": 0.4424
+  }
+};
+
+export function frameAvatar(el, id) {
+  const f = frames[id];
+  const ink = document.createElement('span');
+  ink.className = 'avatar-ink';
+  const assetUrl = new URL(f.file, import.meta.url).href;
+  ink.style.cssText = `position:absolute;display:block;overflow:hidden;pointer-events:none;width:${f.scale*100}%;height:${f.scale*100}%;left:${f.left}%;top:${f.top}%;background-image:url('${assetUrl}');background-repeat:no-repeat;`;
+  ink.style.backgroundSize = f.tile === null ? '100% 100%' : '200% 200%';
+  ink.style.backgroundPosition = f.tile === null ? 'center' : ['0% 0%','100% 0%','0% 100%','100% 100%'][f.tile];
+  el.style.position = 'relative';
+  el.style.overflow = 'hidden';
+  el.style.backgroundImage = 'none';
+  el.replaceChildren(ink);
+}
