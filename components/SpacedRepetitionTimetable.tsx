@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import CrewEmptyState from './CrewEmptyState';
 import React, { useState, useMemo, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
@@ -426,16 +427,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
 
   if (!profile || profile.subjects.length === 0) {
     return (
-      <div className="text-center py-16 space-y-4">
-        <div className="w-16 h-16 mx-auto flex items-center justify-center bg-white dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)', borderRadius: 12 }}>
-          <CalendarDays size={32} style={{ color: COLORS.accent }} />
-        </div>
-        <h3 className="text-lg font-bold text-zinc-800 dark:text-white">Your study plan, built around your life</h3>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto leading-relaxed">
-          A weekly timetable weighted by your weakest subjects, with rest days respected and spaced repetition built in.
-        </p>
-        <p className="text-xs text-zinc-400 dark:text-zinc-500">Complete your subject profile to generate your first timetable.</p>
-      </div>
+      <CrewEmptyState title="A little room for a plan." action="Choose your subjects" onAction={onOpenSettings}>Start with your subjects. We’ll help you shape a week with time to study, revisit and rest.</CrewEmptyState>
     );
   }
 

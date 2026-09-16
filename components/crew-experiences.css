@@ -1,0 +1,31 @@
+.crew-illustration.star-crew-avatar{display:inline-block;width:180px;height:180px;border:0;border-radius:0;background:transparent;mix-blend-mode:multiply}
+.crew-original{display:block;width:180px;height:180px;object-fit:contain}
+.crew-original.crew-original{background:transparent}
+.dark .crew-illustration{mix-blend-mode:normal;border-radius:50%;background:#fff}
+.crew-empty{display:flex;align-items:center;gap:24px;background:#fff;color:#23251f;padding:32px 0;text-align:left}
+.crew-empty-art{flex-shrink:0}
+.crew-empty-art .crew-illustration,.crew-empty-art .crew-original{width:170px;height:170px}
+.crew-empty h3{font:750 clamp(24px,3vw,34px)/1.13 'DM Sans',sans-serif;letter-spacing:-.045em;margin:8px 0 13px}
+.crew-empty p{font-size:14px;line-height:1.7;color:#656d5d;max-width:42ch}
+.crew-empty .crew-eyebrow{font:10px 'Apercu Mono Pro',monospace;letter-spacing:.13em}
+.crew-primary{display:inline-flex;justify-content:space-between;align-items:center;gap:25px;background:#f26b1f;color:#23251f;border:1.5px solid #23251f;border-radius:7px;box-shadow:3px 3px 0 #23251f;padding:13px 19px;font:700 14px 'DM Sans',sans-serif;transition:transform .16s,box-shadow .16s}
+.crew-primary:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #23251f}
+.crew-primary:disabled{opacity:.5;cursor:default}
+.crew-primary:focus-visible,.crew-link:focus-visible{outline:3px solid #a6440d;outline-offset:4px}
+.crew-empty .crew-primary{margin-top:22px}
+.crew-link{font:600 13px 'DM Sans',sans-serif;border-bottom:1px solid currentColor;padding:5px 0}
+.crew-home-character{display:flex;justify-content:center;align-items:center}
+.crew-home-character .crew-illustration,.crew-home-character .crew-original{width:min(100%,215px);height:auto;aspect-ratio:1;animation:crew-arrive .6s both}
+.crew-home-character .crew-illustration{transform:rotate(3deg)}
+@keyframes crew-arrive{from{opacity:0;translate:0 10px}
+to{opacity:1;translate:0 0}
+}
+@media(max-width:600px){.crew-empty{gap:15px;padding:22px 0}
+.crew-empty-art .crew-illustration,.crew-empty-art .crew-original{width:106px;height:106px}
+.crew-empty h3{font-size:25px}
+.crew-empty p{font-size:12px}
+.crew-empty .crew-primary{font-size:12px;padding:11px 13px}
+}
+@media(prefers-reduced-motion:reduce){.crew-home-character .crew-illustration,.crew-home-character .crew-original{animation:none}
+.crew-primary{transition:none}
+}

@@ -6,13 +6,13 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { BookOpen, Target, RotateCcw, Clock, Trophy, CalendarCheck, type LucideIcon } from 'lucide-react';
-import PrimaryActionButton from '../ui/PrimaryActionButton';
+import { BookOpen, Target, RotateCcw, type LucideIcon } from 'lucide-react';
 import StudySessionSetup from './StudySessionSetup';
 import StudySessionTimer from './StudySessionTimer';
+import StudyBreak from './StudyBreak';
+import StudySessionFinish from './StudySessionFinish';
 import { useStudyTimerAppearance } from '../../hooks/useStudyTimerAppearance';
 import { getSubjectFill } from '../../utils/subjectColors';
-import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
 import PointsExplainer from '../PointsExplainer';
 import { doc, updateDoc, arrayUnion, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
@@ -24,9 +24,7 @@ import { type CourseData } from '../Library';
 import { STRATEGY_REGISTRY } from '../../studySessionData';
 import { type StreakData } from '../../hooks/useStreak';
 import { MIN_STUDY_SESSION_MINUTES, useStudySession } from '../../hooks/useStudySession';
-import { getSubjectColor } from '../../studySessionData';
 import StrategyPickerStep from './StrategyPickerStep';
-import ReflectionModal from '../ReflectionModal';
 import { QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal';
 import StudyJournalModal from '../StudyJournalModal';
 import { type DebriefEntry } from '../StudyDebrief';
@@ -54,27 +52,6 @@ const confidenceLabelFromScore = (score: number): StudyConfidenceLabel => {
   if (score === 3) return 'okay';
   if (score === 4) return 'good';
   return 'confident';
-};
-
-// Animated count-up number for points
-const CountUpNumber: React.FC<{ value: number; delay?: number }> = ({ value, delay = 0 }) => {
-  const [display, setDisplay] = React.useState(0);
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      const duration = 800;
-      const start = performance.now();
-      const step = (now: number) => {
-        const elapsed = now - start;
-        const progress = Math.min(elapsed / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        setDisplay(Math.round(eased * value));
-        if (progress < 1) requestAnimationFrame(step);
-      };
-      requestAnimationFrame(step);
-    }, delay);
-    return () => clearTimeout(timer);
-  }, [value, delay]);
-  return <span className="text-3xl font-bold text-[var(--accent-hex)] tabular-nums">+{display}</span>;
 };
 
 const SESSION_TYPE_CONFIG: Record<string, { icon: LucideIcon; label: string }> = {
@@ -159,8 +136,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [pickerDone, setPickerDone] = useState(false);
   const [selectedStrategies, setSelectedStrategies] = useState<string[]>([]);
 
-  // Reflection modal
-  const [reflectionOpen, setReflectionOpen] = useState(false);
+  // Inline session debrief
   const [_debriefOpen, setDebriefOpen] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
 
@@ -295,7 +271,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   const handleSaveWithReflection = async (reflectionText: string) => {
     if (!session.canRecordSession) {
-      setReflectionOpen(false);
       session.cancelSession();
       return;
     }
@@ -351,12 +326,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       pointsReload();
       onStrategyMasteryRecompute?.();
       weeklyChallenge?.reload();
-      setReflectionOpen(false);
       setPickerDone(false);
       setSelectedStrategies([]);
       session.resetSession();
     } catch (error) {
       logError('StudySessionView.saveReflection', error);
+      throw error;
     } finally {
       setIsSaving(false);
     }
@@ -368,15 +343,17 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       return;
     }
     setIsSaving(true);
-    await session.saveSession(0, selectedStrategies);
-    completeTimetableBlock();
-    pointsReload();
-    onStrategyMasteryRecompute?.();
-    weeklyChallenge?.reload();
-    setIsSaving(false);
-    setPickerDone(false);
-    setSelectedStrategies([]);
-    session.resetSession();
+    try {
+      await session.saveSession(0, selectedStrategies);
+      completeTimetableBlock();
+      pointsReload();
+      onStrategyMasteryRecompute?.();
+      weeklyChallenge?.reload();
+      setPickerDone(false);
+      setSelectedStrategies([]);
+      session.resetSession();
+    } finally { setIsSaving(false); }
+
   };
 
   const _handleDebriefSubmit = async (entry: Omit<DebriefEntry, 'id' | 'date'>) => {
@@ -495,20 +472,20 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
     return (
       <div className="ss-timer-view">
-        <StudySessionTimer
+        {session.phase === 'paused' ? <StudyBreak subject={session.subject} elapsedSeconds={session.elapsedSeconds} onResume={session.resumeSession} onLeave={() => setConfirmQuit(true)} /> : <StudySessionTimer
           appearance={timerAppearance}
           subject={session.subject}
           subjectColor={subjectHex}
           type={typeConfig.label}
           totalSeconds={session.totalDuration}
           elapsedSeconds={session.elapsedSeconds}
-          paused={session.phase === 'paused'}
+          paused={false}
           onLeave={() => setConfirmQuit(true)}
-          onTogglePause={session.phase === 'active' ? session.pauseSession : session.resumeSession}
+          onTogglePause={session.pauseSession}
           prompt={session.currentPrompt}
           onCompletePrompt={session.completePrompt}
           onSkipPrompt={session.dismissPrompt}
-        />
+        />}
 
         <AnimatePresence>
           {confirmQuit && (
@@ -594,127 +571,14 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       );
     }
 
-    const subjectColors = getSubjectColor(session.subject);
-    const typeConfig = SESSION_TYPE_CONFIG[session.sessionType];
-    const actualMinutes = Math.round(session.elapsedSeconds / 60);
-    const isEarlyEnd = session.elapsedSeconds < session.totalDuration;
-
-    return (
-      <div className="ss-completion-view min-h-screen bg-white dark:bg-zinc-950 flex flex-col items-center justify-center px-4 py-12">
-        <MotionDiv
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="ss-completion-panel w-full max-w-lg space-y-6 rounded-[24px] border-[1.5px] border-[#383838] bg-white p-6 shadow-[5px_5px_0_0_#383838] sm:p-8"
-        >
-          {/* Header — points as hero */}
-          <div className="text-center">
-            <MotionDiv
-              initial={{ scale: 0.5, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className={`mx-auto mb-5 flex h-[76px] w-[76px] items-center justify-center rounded-full border-2 border-[#383838] shadow-[3px_3px_0_0_#383838] ${isEarlyEnd ? 'bg-[#FFF0E7] text-[#F26B1F]' : 'bg-[#E8F2EC] text-[#3A8D5F]'}`}
-            >
-              <svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                <path d="M10 20.5l6.5 6.5L30.5 13" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </MotionDiv>
-            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#9E9186] mb-1.5">{isEarlyEnd ? 'Session ended early' : 'Session complete'}</p>
-            <h2 className="font-serif text-[32px] leading-tight font-bold text-[#1A1A1A] dark:text-white mb-2">{isEarlyEnd ? 'The work still counts.' : 'Focused work, finished.'}</h2>
-            <p className="text-sm text-[#7A7068] mb-5">{isEarlyEnd ? `You studied for ${actualMinutes} minute${actualMinutes === 1 ? '' : 's'}. Take a moment to capture what was useful before you leave.` : 'Your study time has been recorded.'}</p>
-
-            {/* Big animated points */}
-            <MotionDiv
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="inline-flex items-baseline gap-1.5 rounded-xl border-[1.5px] border-[#383838] bg-white px-6 py-3 shadow-[2px_2px_0_0_#383838]"
-            >
-              <CountUpNumber value={session.basePointsEarned} delay={600} />
-              <span className="text-sm font-semibold text-[var(--accent-hex)] opacity-70">JP earned</span>
-            </MotionDiv>
-          </div>
-
-          {/* Session details — one aligned result surface. */}
-          <MotionDiv
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.4 }}
-            className="w-full"
-          >
-            <ResultStatGrid items={[
-              { label: 'Duration', value: `${actualMinutes} min`, icon: <Clock size={14} /> },
-              { label: 'Subject', value: session.subject, icon: <span className={`w-2.5 h-2.5 rounded-full ${subjectColors.dot}`} /> },
-              { label: 'Session', value: typeConfig.label, icon: React.createElement(typeConfig.icon, { size: 14 }) },
-            ]} />
-          </MotionDiv>
-
-          {/* Timetable block complete banner */}
-          {timetableBlock && !isEarlyEnd && (
-            <StatusNotice title="Timetable block complete" tone="success">
-              <span className="inline-flex items-center gap-2"><CalendarCheck size={14} /> {actualMinutes} min studied</span>
-            </StatusNotice>
-          )}
-
-          {/* Weekly Challenge nudge */}
-          {weeklyChallenge?.isLoaded && weeklyChallenge?.challenge && !weeklyChallenge?.isClaimed && (
-            <div className="flex items-center gap-3 p-3 rounded-xl bg-amber-50 dark:bg-amber-900/20 border border-amber-200/60 dark:border-amber-800/30">
-              <Trophy size={16} className="text-amber-500 shrink-0" />
-              <div className="flex-1 min-w-0">
-                <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 truncate">
-                  Weekly Challenge: {weeklyChallenge.challenge.title}
-                </p>
-                <div className="flex items-center gap-2 mt-1">
-                  <div className="flex-1 h-1.5 bg-amber-200 dark:bg-amber-800/40 rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-amber-500 rounded-full transition-all duration-500"
-                      style={{ width: `${Math.min(100, Math.round((weeklyChallenge.current / weeklyChallenge.challenge.target) * 100))}%` }}
-                    />
-                  </div>
-                  <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 tabular-nums">
-                    {weeklyChallenge.current}/{weeklyChallenge.challenge.target}
-                  </span>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Actions */}
-          <div className="space-y-3">
-            <PrimaryActionButton
-              label={`Quick debrief (+${QUICK_DEBRIEF_POINTS} JP)`}
-              onClick={() => { setReflectionMode('quick'); setReflectionOpen(true); }}
-              disabled={isSaving}
-              className="w-full"
-            />
-            <button
-              onClick={() => { setReflectionMode('full'); setReflectionOpen(true); }}
-              disabled={isSaving}
-              className="w-full py-3 rounded-xl text-sm font-semibold transition-all disabled:opacity-50 bg-white border border-[#D0CDC8] text-[#3A3530] hover:border-[#1A1A1A]"
-            >
-              Write a reflection (+{FULL_REFLECTION_POINTS} JP)
-            </button>
-            <button
-              onClick={handleSkipReflection}
-              disabled={isSaving}
-              className="w-full py-3 rounded-xl text-sm font-medium text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 transition-all disabled:opacity-50"
-            >
-              {isSaving ? 'Saving...' : 'Skip'}
-            </button>
-          </div>
-        </MotionDiv>
-
-        {/* Reflection Modal (quick or full mode) */}
-        <ReflectionModal
-          isOpen={reflectionOpen}
-          subjectName={session.subject}
-          sessionType={session.sessionType}
-          mode={reflectionMode}
-          onSubmit={(text) => handleSaveWithReflection(text)}
-          onCancel={() => setReflectionOpen(false)}
-        />
-      </div>
-    );
+    return <StudySessionFinish
+      subject={session.subject} elapsedSeconds={session.elapsedSeconds}
+      plannedSeconds={session.totalDuration} practice={SESSION_TYPE_CONFIG[session.sessionType].label}
+      character={user.avatar} basePoints={session.basePointsEarned}
+      strategies={[...new Set([...session.getTrackedStrategies(), ...selectedStrategies])].map(id => STRATEGY_REGISTRY.find(strategy => strategy.moduleId === id)?.strategyName ?? id)}
+      isSaving={isSaving} mode={reflectionMode} onModeChange={setReflectionMode}
+      onSave={handleSaveWithReflection} onSkip={handleSkipReflection}
+    />;
   }
 
   return null;

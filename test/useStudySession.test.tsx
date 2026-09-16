@@ -84,4 +84,23 @@ describe('useStudySession', () => {
     });
     expect(result.current.phase).toBe('complete');
   });
+
+  test('break time never counts as study and resuming retains the same session', () => {
+    vi.useFakeTimers();
+    const { result } = renderHook(() => useStudySession(DEMO_STUDENT_UID, {}, []));
+    act(() => { result.current.startSession('Irish', 'revision', 25); });
+    act(() => { vi.advanceTimersByTime(120_000); });
+    act(() => { result.current.pauseSession(); });
+    expect(result.current.elapsedSeconds).toBe(120);
+    act(() => { vi.advanceTimersByTime(600_000); });
+    expect(result.current.phase).toBe('paused');
+    expect(result.current.elapsedSeconds).toBe(120);
+    expect(result.current.canRecordSession).toBe(false);
+    expect(mocks.updateDemoProgress).not.toHaveBeenCalled();
+    act(() => { result.current.resumeSession(); });
+    act(() => { vi.advanceTimersByTime(180_000); });
+    expect(result.current.subject).toBe('Irish');
+    expect(result.current.elapsedSeconds).toBe(300);
+    expect(result.current.canRecordSession).toBe(true);
+  });
 });

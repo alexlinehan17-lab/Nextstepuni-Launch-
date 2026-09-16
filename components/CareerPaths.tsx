@@ -16,6 +16,7 @@
  */
 
 import { usePulse } from '../hooks/usePulse';
+import CrewEmptyState from './CrewEmptyState';
 import React, { useMemo, useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
@@ -435,7 +436,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
         <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: SERIF, color: INK }}>Your shortlist</h2>
         <p className="text-[13px] mb-4" style={{ color: MUTED }}>Careers you saved — bring these to your guidance counsellor.</p>
         {savedCards.length === 0 ? (
-          <p className="text-[14px]" style={{ color: MUTED }}>Nothing saved yet — swipe right or tap “Save to shortlist”.</p>
+          <CrewEmptyState character="star-crew:stargazer" eyebrow="Your possibilities" title="Nothing pinned. Plenty possible." action="Explore careers" onAction={() => setShowSaved(false)}>Something catch your eye? Save it to your shortlist. You don’t have to have it all figured out.</CrewEmptyState>
         ) : (
           <div className="space-y-3">
             {savedCards.map((c) => {

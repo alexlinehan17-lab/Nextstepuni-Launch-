@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import StudySessionView from '@/components/study/StudySessionView';
 import { createDemoStudentSession } from '@/data/devStudent';
@@ -13,7 +13,10 @@ const mocks = vi.hoisted(() => ({
   endSession: vi.fn(),
   cancelSession: vi.fn(),
   startSession: vi.fn(),
-  phase: 'active' as 'idle' | 'active',
+  phase: 'active' as 'idle' | 'active' | 'paused' | 'complete',
+  resumeSession: vi.fn(),
+  saveSession: vi.fn().mockResolvedValue(true),
+  resetSession: vi.fn(),
   canRecordSession: true,
   mobile: false,
 }));
@@ -35,7 +38,9 @@ vi.mock('@/hooks/useStudySession', () => ({
     basePointsEarned: 0,
     canRecordSession: mocks.canRecordSession,
     pauseSession: vi.fn(),
-    resumeSession: vi.fn(),
+    resumeSession: mocks.resumeSession,
+    saveSession: mocks.saveSession,
+    resetSession: mocks.resetSession,
     startSession: mocks.startSession,
     endSession: mocks.endSession,
     cancelSession: mocks.cancelSession,
@@ -68,9 +73,36 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     mocks.endSession.mockReset();
     mocks.cancelSession.mockReset();
     mocks.startSession.mockReset();
+    mocks.resumeSession.mockReset();
+    mocks.saveSession.mockClear();
+    mocks.resetSession.mockReset();
     localStorage.clear();
     mocks.phase = 'active';
     mocks.canRecordSession = true;
+  });
+
+  test('a paused session shows the break and resumes through the existing timer action', () => {
+    mocks.phase = 'paused';
+    renderActiveSession();
+    expect(screen.getByRole('heading', { name: 'Even stars take a moment.' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Back to study' }));
+    expect(mocks.resumeSession).toHaveBeenCalledOnce();
+    expect(mocks.saveSession).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole('button', { name: 'Finish for now' }));
+    expect(screen.getByRole('dialog', { name: 'End this study session?' })).toBeInTheDocument();
+  });
+
+  test('the receipt saves quick debrief metadata through the existing session handler', async () => {
+    mocks.phase = 'complete';
+    renderActiveSession();
+    fireEvent.click(screen.getByRole('button', { name: 'Skip this step' }));
+    expect(screen.getByRole('article', { name: 'Your study receipt' })).toHaveTextContent('Mathematics');
+    fireEvent.click(screen.getByRole('button', { name: 'Good', exact: true }));
+    fireEvent.click(screen.getByRole('button', { name: 'Keep this session' }));
+    await waitFor(() => expect(mocks.saveSession).toHaveBeenCalledWith(10, [], {
+      confidenceAfter: 4, confidenceLabel: 'good', reflectionMode: 'quick',
+    }));
+    expect(mocks.resetSession).toHaveBeenCalledOnce();
   });
 
   test('ending early enters the completion and debrief flow', () => {
@@ -125,6 +157,9 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     mocks.mobile = mobile;
     mocks.phase = 'idle';
     mocks.startSession.mockReset();
+    mocks.resumeSession.mockReset();
+    mocks.saveSession.mockClear();
+    mocks.resetSession.mockReset();
     localStorage.clear();
   });
 
