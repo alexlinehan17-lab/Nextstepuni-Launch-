@@ -879,6 +879,7 @@ const App: React.FC = () => {
                   onOpenProgress={handleGoToMilestones}
                   streak={streak}
                   pointsBalance={pointsData.balance}
+                  avatar={settings.avatar || user.avatar}
                 />
               )}
               <AchievementToast

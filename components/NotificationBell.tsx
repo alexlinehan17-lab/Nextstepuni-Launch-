@@ -3,34 +3,16 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useId } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { Bell, MessageSquare, Flame, TrendingUp, BookOpen, AlertTriangle, Megaphone, Heart, CheckCheck, type LucideIcon } from 'lucide-react';
+import { MotionDiv, useReducedMotion } from './Motion';
+import { X, ArrowUpRight } from 'lucide-react';
 import { getNotifications, markNotificationRead, markAllRead, STAFF_ORIGINATED, type AppNotification, type NotificationType } from './gc/gcNotifications';
 import { staffMessageText } from '../data/staffEncouragement';
 import { NOTIFICATION_PANEL_TOGGLE_EVENT } from '../utils/notificationPanel';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
 
-const ICON_MAP: Record<NotificationType, LucideIcon> = {
-  'gc-recommendation': BookOpen,
-  'gc-kudos': Heart,
-  'comeback': Flame,
-  'streak-milestone': TrendingUp,
-  'study-insight': MessageSquare,
-  'subject-neglect': AlertTriangle,
-  'gc-broadcast': Megaphone,
-};
-
-const ICON_COLOR_MAP: Record<NotificationType, string> = {
-  'gc-recommendation': 'text-indigo-500 bg-indigo-100 dark:bg-indigo-900/30',
-  'gc-kudos': 'text-emerald-500 bg-emerald-100 dark:bg-emerald-900/30',
-  'comeback': 'text-orange-500 bg-orange-100 dark:bg-orange-900/30',
-  'streak-milestone': 'text-amber-500 bg-amber-100 dark:bg-amber-900/30',
-  'study-insight': 'text-teal-500 bg-teal-100 dark:bg-teal-900/30',
-  'subject-neglect': 'text-rose-500 bg-rose-100 dark:bg-rose-900/30',
-  'gc-broadcast': 'text-purple-500 bg-purple-100 dark:bg-purple-900/30',
-};
+import './student-header.css';
 
 function relativeTime(ts: number): string {
   const diff = Math.floor((Date.now() - ts) / 1000);
@@ -52,6 +34,22 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
   const [isOpen, setIsOpen] = useState(false);
   const [notifications, setNotifications] = useState<AppNotification[]>([]);
   const panelRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const reducedMotion = useReducedMotion();
+  const panelId = useId();
+
+  useEffect(() => {
+    if (!isOpen) { setSelectedId(null); return; }
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+        triggerRef.current?.focus();
+      }
+    };
+    document.addEventListener('keydown', handleKey);
+    return () => document.removeEventListener('keydown', handleKey);
+  }, [isOpen]);
 
   const loadNotifications = useCallback(async () => {
     if (isDemo) {
@@ -117,87 +115,69 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
     if (!isDemo) void markAllRead(uid);
   };
 
+  const selected = notifications.find(item => item.id === selectedId);
+  const openItem = (item: AppNotification) => {
+    if (!item.read) handleMarkRead(item.id);
+    setSelectedId(item.id);
+  };
+
   return (
-    <div className={variant === 'menu' ? 'relative w-full' : 'relative'} ref={panelRef}>
+    <div className={`nsu-post ${variant === 'menu' ? 'nsu-post-menu' : ''}`} ref={panelRef}>
       <button
+        ref={triggerRef}
         data-notification-bell
         data-notification-toggle
         type="button"
         aria-label={isOpen ? 'Close notifications' : 'Open notifications'}
         aria-expanded={isOpen}
+        aria-controls={isOpen ? panelId : undefined}
+        title={unreadCount > 0 ? `${unreadCount} unread notifications` : 'Notifications'}
         onClick={() => setIsOpen(!isOpen)}
-        className={variant === 'menu'
-          ? 'relative flex min-h-14 w-full items-center gap-3 rounded-xl p-3 text-left text-zinc-700 transition-colors hover:bg-zinc-50 dark:text-zinc-300 dark:hover:bg-zinc-800/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]'
-          : 'relative flex h-11 w-11 items-center justify-center rounded-xl border-[1.5px] border-[#D0CDC8] bg-white text-zinc-600 shadow-none transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]'}
+        className={`nsu-post-toggle ${isOpen ? 'is-open' : ''}`}
       >
-        {variant === 'menu' ? (
-          <>
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-amber-50 dark:bg-amber-500/10">
-              <Bell size={16} strokeWidth={1.8} className="text-amber-500" aria-hidden="true" />
-            </span>
-            <span className="flex-1 text-sm font-medium">Notifications</span>
-            {unreadCount > 0 && <span className="rounded-full bg-rose-500 px-2 py-0.5 text-[10px] font-bold text-white">{unreadCount > 99 ? '99+' : unreadCount}</span>}
-          </>
-        ) : (
-          <Bell size={19} strokeWidth={1.8} aria-hidden="true" />
-        )}
-        {variant === 'icon' && unreadCount > 0 && (
-          <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center rounded-full bg-rose-500 text-white text-[10px] font-bold px-1">
-            {unreadCount > 99 ? '99+' : unreadCount}
-          </span>
-        )}
+        <span className="nsu-post-symbol" aria-hidden="true">
+          <span className="nsu-folded-note"><i /><i /></span>
+          {unreadCount > 0 && <span className="nsu-post-count">{unreadCount > 99 ? '99+' : unreadCount}</span>}
+        </span>
+        {variant === 'menu' && <span>Notifications</span>}
       </button>
 
       <AnimatePresence>
         {isOpen && (
           <MotionDiv
-            initial={{ opacity: 0, y: -8, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -8, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-            className={`${variant === 'menu' ? 'relative mt-2 w-full' : 'absolute right-0 top-full mt-2 w-80 sm:w-96'} z-50 overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl dark:border-zinc-800 dark:bg-zinc-900`}
+            id={panelId}
+            role="region"
+            aria-label="Notifications"
+            initial={reducedMotion ? false : { opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -8 }}
+            transition={{ duration: reducedMotion ? 0 : 0.2 }}
+            className="nsu-post-panel"
           >
-            {/* Header */}
-            <div className="flex items-center justify-between px-4 py-3 border-b border-zinc-100 dark:border-zinc-800">
-              <h3 className="text-sm font-semibold text-zinc-800 dark:text-white">Notifications</h3>
-              {unreadCount > 0 && (
-                <button
-                  onClick={handleMarkAllRead}
-                  className="flex items-center gap-1 text-[11px] font-medium text-[var(--accent-hex)] hover:opacity-80 transition-opacity"
-                >
-                  <CheckCheck size={12} /> Mark all read
-                </button>
-              )}
+            <div className="nsu-post-heading">
+              <div><p className="nsu-post-eyebrow">YOUR UPDATES</p><h3>You’ve got post.</h3></div>
+              <img src="/assets/star-crew/companions/listener-transparent.png" alt="" width="77" height="77" />
+              <button type="button" className="nsu-post-close" aria-label="Close updates" onClick={() => { setIsOpen(false); triggerRef.current?.focus(); }}><X size={17} /></button>
             </div>
-
-            {/* Body */}
-            <div className="max-h-[400px] overflow-y-auto">
-              {notifications.length === 0 ? (
-                <div className="py-7 text-center">
-                  <Bell size={24} className="mx-auto text-zinc-300 dark:text-zinc-600 mb-2" />
-                  <p className="text-sm text-zinc-400 dark:text-zinc-500">No notifications yet</p>
+            <div className="nsu-post-body">
+              {selected ? (
+                <div className="nsu-post-detail">
+                  <button type="button" className="nsu-post-back" onClick={() => setSelectedId(null)}>← All updates</button>
+                  <p className="nsu-post-eyebrow">{STAFF_ORIGINATED.has(selected.type) ? 'FROM YOUR SCHOOL' : 'FROM NEXTSTEPUNI'}</p>
+                  <h4>{displayTitle(selected)}</h4>
+                  <p className="nsu-post-message">{displayBody(selected)}</p>
+                  <p className="nsu-post-time">{relativeTime(selected.timestamp)} · Read</p>
                 </div>
+              ) : notifications.length === 0 ? (
+                <div className="nsu-post-empty"><strong>All quiet for now.</strong><p>Messages from your school and updates on your progress will arrive here.</p></div>
               ) : (
                 <>
-                  {newItems.length > 0 && (
-                    <div>
-                      <p className="px-4 pt-3 pb-1 text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">New</p>
-                      {newItems.map(item => (
-                        <NotificationItem key={item.id} item={item} onMarkRead={handleMarkRead} />
-                      ))}
-                    </div>
-                  )}
-                  {earlierItems.length > 0 && (
-                    <div>
-                      <p className="px-4 pt-3 pb-1 text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">Earlier</p>
-                      {earlierItems.map(item => (
-                        <NotificationItem key={item.id} item={item} onMarkRead={handleMarkRead} />
-                      ))}
-                    </div>
-                  )}
+                  {newItems.length > 0 && <section aria-label="New updates"><p className="nsu-post-section">New</p>{newItems.map(item => <NotificationItem key={item.id} item={item} onOpen={openItem} />)}</section>}
+                  {earlierItems.length > 0 && <section aria-label="Earlier updates"><p className="nsu-post-section">Earlier</p>{earlierItems.map(item => <NotificationItem key={item.id} item={item} onOpen={openItem} />)}</section>}
                 </>
               )}
             </div>
+            {!selected && unreadCount > 0 && <div className="nsu-post-footer"><button type="button" onClick={handleMarkAllRead}>Mark all as read</button></div>}
           </MotionDiv>
         )}
       </AnimatePresence>
@@ -205,8 +185,6 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
   );
 };
 
-const NotificationItem: React.FC<{ item: AppNotification; onMarkRead: (id: string) => void }> = ({ item, onMarkRead }) => {
-  const IconComp = ICON_MAP[item.type] || Bell;
   /**
  * Text to show a student for a notification.
  *
@@ -248,28 +226,17 @@ function displayTitle(item: AppNotification): string {
     : item.title;
 }
 
-const colorClasses = ICON_COLOR_MAP[item.type] || 'text-zinc-500 bg-zinc-100 dark:bg-zinc-800';
-
-  return (
-    <button
-      onClick={() => !item.read && onMarkRead(item.id)}
-      className={`w-full flex items-start gap-3 px-4 py-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors ${!item.read ? 'bg-[rgba(var(--accent),0.03)]' : ''}`}
-    >
-      <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 ${colorClasses}`}>
-        <IconComp size={14} />
-      </div>
-      <div className="flex-1 min-w-0">
-        <div className="flex items-start justify-between gap-2">
-          <p className={`text-sm leading-tight ${!item.read ? 'font-semibold text-zinc-800 dark:text-white' : 'font-medium text-zinc-600 dark:text-zinc-300'}`}>
-            {displayTitle(item)}
-          </p>
-          {!item.read && <div className="w-2 h-2 rounded-full bg-[var(--accent-hex)] shrink-0 mt-1.5" />}
-        </div>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 line-clamp-2">{displayBody(item)}</p>
-        <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-1">{relativeTime(item.timestamp)}</p>
-      </div>
-    </button>
-  );
-};
+const NotificationItem: React.FC<{ item: AppNotification; onOpen: (item: AppNotification) => void }> = ({ item, onOpen }) => (
+  <button type="button" onClick={() => onOpen(item)} className={`nsu-post-item ${item.read ? 'is-read' : ''}`}>
+    <span className="nsu-post-dot" aria-hidden="true" />
+    <span className="nsu-post-item-copy">
+      <span className="nsu-post-eyebrow">{STAFF_ORIGINATED.has(item.type) ? 'From your school' : 'Nextstepuni'}</span>
+      <strong>{displayTitle(item)}</strong>
+      <span className="nsu-post-excerpt">{displayBody(item)}</span>
+      <span className="nsu-post-time">{relativeTime(item.timestamp)}{!item.read && <span className="sr-only"> · Unread</span>}</span>
+    </span>
+    <ArrowUpRight size={17} aria-hidden="true" />
+  </button>
+);
 
 export default NotificationBell;
