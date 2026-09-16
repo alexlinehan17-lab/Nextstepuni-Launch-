@@ -2,60 +2,36 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  *
- * Section icons — one inline SVG per home-dashboard section.
- *
- * Each icon contains two layers:
- *   1. A soft "paint blob" (Bézier curves) at 0.75 opacity in the
- *      section's signature colour. The blob fills ~80% of the viewBox
- *      so the cream behind shows at the corners — gives the watercolour
- *      quality.
- *   2. A black-ink illustration (real objects: books, lightbulb,
- *      mountain, compass) drawn with stroke="#1a1a1a" at varied weights.
- *
- * Each blob has a slightly different Bézier path so the four don't read
- * as the same shape recoloured.
+ * Section artwork. The four home cards use the approved Star Crew
+ * companions; the remaining tool illustrations retain their own artwork.
  */
 
 import React from 'react';
 
-// ── Modules — sage blob, hand-drawn open door + terracotta mat ──────────
-
-export const ModulesIcon: React.FC = () => (
-  <svg viewBox="0 0 100 100" width="100%" height="100%">
-    <path
-      d="M 14 30 Q 8 50 16 70 Q 28 86 50 84 Q 76 82 82 64 Q 88 42 76 26 Q 60 14 38 18 Q 20 22 14 30 Z"
-      fill="#A8C9A0"
-      opacity="0.75"
-    />
-    <image
-      href="/assets/section-icons/modules.png"
-      x="0"
-      y="0"
-      width="100"
-      height="100"
-      preserveAspectRatio="xMidYMid meet"
-    />
-  </svg>
+// Decorative artwork: the surrounding card supplies the accessible name.
+const CompanionArtwork: React.FC<{ character: string }> = ({ character }) => (
+  <img
+    src={`/assets/star-crew/companions/${character}.png`}
+    alt=""
+    aria-hidden="true"
+    width="1254"
+    height="1254"
+    decoding="async"
+    draggable={false}
+    className="block h-full w-full object-contain"
+  />
 );
 
-// ── Launchpad — dusty pink blob, hand-drawn rocket ──────────────────────
+// ── Modules — The Thinker ────────────────────────────────────────────
+
+export const ModulesIcon: React.FC = () => (
+  <CompanionArtwork character="thinker" />
+);
+
+// ── Launchpad — The Card Dealer ──────────────────────────────────────
 
 export const InnovationZoneIcon: React.FC = () => (
-  <svg viewBox="0 0 100 100" width="100%" height="100%">
-    <path
-      d="M 12 28 Q 8 48 18 66 Q 30 84 52 82 Q 78 80 84 60 Q 88 38 74 22 Q 56 10 36 16 Q 18 22 12 28 Z"
-      fill="#D9A9C2"
-      opacity="0.75"
-    />
-    <image
-      href="/assets/section-icons/launchpad.png"
-      x="6"
-      y="-6"
-      width="88"
-      height="112"
-      preserveAspectRatio="xMidYMid meet"
-    />
-  </svg>
+  <CompanionArtwork character="card-dealer" />
 );
 
 // ── Ways In — lilac blob, several routes into one exact page ───────────
@@ -98,42 +74,14 @@ export const MyProgressIcon: React.FC = () => (
   </svg>
 );
 
-// ── Learning Paths — soft blue blob, hand-drawn map illustration ─────────
+// ── Learning Paths — The Wayfinder ───────────────────────────────────
 
 export const LearningPathsIcon: React.FC = () => (
-  <svg viewBox="0 0 100 100" width="100%" height="100%">
-    <path
-      d="M 14 28 Q 8 50 18 68 Q 30 86 52 82 Q 78 80 84 60 Q 88 36 74 22 Q 56 10 36 16 Q 18 22 14 28 Z"
-      fill="#9DB7CC"
-      opacity="0.75"
-    />
-    <image
-      href="/assets/section-icons/learning-paths.png"
-      x="10"
-      y="10"
-      width="80"
-      height="80"
-      preserveAspectRatio="xMidYMid meet"
-    />
-  </svg>
+  <CompanionArtwork character="wayfinder" />
 );
 
-// ── My Journey — sea-glass blob, buildable island + destination flag ───
+// ── My Journey — The Islander ────────────────────────────────────────
 
 export const MyJourneyIcon: React.FC = () => (
-  <svg viewBox="0 0 100 100" width="100%" height="100%">
-    <path
-      d="M 12 30 Q 9 49 17 68 Q 27 85 50 86 Q 72 84 84 66 Q 89 45 79 27 Q 62 13 40 16 Q 21 18 12 30 Z"
-      fill="#8FC8C0"
-      opacity="0.75"
-    />
-    <image
-      href="/assets/section-icons/my-journey.png"
-      x="-12"
-      y="-12"
-      width="124"
-      height="124"
-      preserveAspectRatio="xMidYMid meet"
-    />
-  </svg>
+  <CompanionArtwork character="islander" />
 );

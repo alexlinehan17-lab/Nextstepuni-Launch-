@@ -44,6 +44,15 @@ tmp/pdfs/deck_pages*/
 tmp/pdfs/qa_*/
 tmp/pdfs/rendered_*/
 
+# Local partnership documents contain commercial details and school access codes.
+output/pdf/NextStepUni_PwC_App_Pilot_Proposal_2026_27.pdf
+output/pdf/NextStepUni_Research_Partner_Guide.pdf
+output/pdf/Workshop Outline 2026:27.pdf
+tmp/pdfs/pwc-pilot/
+tmp/pdfs/research-guide/
+tmp/pdfs/workshop-programme/
+tmp/feedback-qa/
+
 # transient topic-tag pipeline scratch (root)
 /_*.json
 /_*.mjs

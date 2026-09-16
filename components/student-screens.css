@@ -44,6 +44,7 @@
 .sh-destinations {display:grid;grid-template-columns:1fr 1fr;gap:30px}
 .sh-destination {display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:27px;transition:transform .18s ease}
 .sh-destination-wide {grid-column:1 / -1}
+.sh-destination-wide .sh-art {width:132px;height:132px}
 .sh-destination:hover {transform:translateY(-3px)}
 .sh-destination h2 {font-size:29px;line-height:1.15;margin:0 0 16px}
 .sh-destination p {font-size:14px;line-height:1.65;color:var(--student-muted);margin:0 0 24px}
@@ -52,6 +53,7 @@
 @media(max-width:1100px) {.student-home{padding-inline:28px}.sh-hero{grid-template-columns:1.3fr .9fr;gap:32px}.sh-character{display:none}.sh-notebook{grid-template-columns:1fr 1.5fr;gap:22px}.sh-destinations{gap:22px}.sh-destination,.sh-next{padding:23px}.sh-destination h2{font-size:26px}.sh-section-heading p{display:none}}
 @media(max-width:700px) {.student-home{padding:22px 20px 110px}.sh-date>span:nth-child(2){display:none}.sh-profile{display:block;position:relative;flex-shrink:0;overflow:hidden;border:1.5px solid var(--student-ink);border-radius:50%}.sh-profile i{position:absolute;right:0;top:0;width:10px;height:10px;border-radius:50%;background:#ff7915}.sh-hero{grid-template-columns:1fr;padding:38px 0;gap:30px}.sh-greeting h1{font-size:54px}.sh-week{padding:20px 0}.sh-week>strong{font-size:38px;margin:15px 0 8px}.sh-week-days{max-width:350px}.sh-notebook{grid-template-columns:1fr}.sh-next{padding:26px}.sh-module-art{width:130px;height:130px;margin-block:22px}.sh-destinations{gap:18px}.sh-destination{padding:19px 15px}.sh-art:not(.sh-module-art){width:86px;height:86px;margin-bottom:18px}.sh-destination h2{font-size:24px}.sh-destination p{font-size:13px}.sh-card-action{font-size:12px;gap:8px}.sh-section-heading h2{font-size:29px}.sh-browse{font-size:13px;gap:18px}.sh-module-progress{padding-top:30px}}
 @media(prefers-reduced-motion:reduce) {.student-home *{transition:none!important;transform:none!important}}
+@media(max-width:700px) {.sh-destination-wide .sh-art{width:108px;height:108px}}
 .direction-navigation {max-width:1240px;margin:auto;padding:27px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--student-rule)}
 .direction-navigation>div {display:flex;align-items:center;gap:22px}
 .direction-navigation>div button {display:grid;place-items:center;width:44px;height:44px;border:1.5px solid var(--student-ink);border-radius:8px}

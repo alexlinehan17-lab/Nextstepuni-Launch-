@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff">
+  <title>Star Crew · Leaving Cert subjects · nextstepuni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="gallery.css" rel="stylesheet">
+</head>
+<body>
+  <header><a class="wordmark" href="../star-crew-20260915/index.html">nextstepuni</a><a class="back" href="../star-crew-20260915/index.html">Your original eight ↗</a></header>
+  <main>
+    <section class="intro"><div><div class="eyebrow">Star Crew / The subject collection</div><h1>A star for<br><em>every subject.</em></h1><p>Curious minds. Different talents. The same little crew.<br>Meet your Leaving Cert subjects, one character at a time.</p></div><div class="edition"><strong>43</strong><span>subjects & specialisms</span><p>One familiar star.</p></div></section>
+    <section class="controls" aria-label="Find a subject"><div class="control-row"><label class="search"><span>Find your subject</span><input id="search" type="search" placeholder="Try Biology, French or DCG…" autocomplete="off"></label><button class="surface" id="surface" type="button" aria-pressed="false">Try dark surface</button></div><div class="filters" id="filters" role="group" aria-label="Subject groups"></div></section>
+    <div class="results"><p id="count" role="status">Loading the crew…</p><span>Tap a character for a closer look.</span></div>
+    <section class="grid" id="grid" aria-label="Leaving Cert subject avatars"></section>
+    <p class="empty" id="empty" hidden>No subjects found. Try another name or choose All subjects.</p>
+    <footer><p>Star Crew / Leaving Certificate / September 2026</p><p>Subject names checked against <a href="https://www.curriculumonline.ie/senior-cycle/senior-cycle-subjects/" target="_blank" rel="noopener">Curriculum Online ↗</a><br><a href="README.md">Artwork notes & prompts</a></p></footer>
+  </main>
+  <dialog id="detail" aria-labelledby="detailSubject">
+    <div class="dialog-head"><span class="eyebrow" id="detailGroup"></span><button class="close" type="button" aria-label="Close avatar preview">Close ×</button></div>
+    <div class="detail-art"><div class="bubble large" id="detailArt" role="img"></div></div>
+    <div class="detail-copy"><div class="eyebrow" id="detailCharacter"></div><h2 id="detailSubject"></h2></div>
+    <div class="detail-samples" aria-label="Avatar sizes"><div><span class="bubble" data-sample style="width:32px"></span><small>32 · Drawer</small></div><div><span class="bubble" data-sample style="width:48px"></span><small>48 · Header</small></div><div><span class="bubble" data-sample style="width:64px"></span><small>64 · Profile</small></div></div>
+    <div class="dialog-foot"><button id="previous" type="button">← Previous</button><a id="download" download>Save PNG ↓</a><button id="next" type="button">Next →</button></div>
+  </dialog>
+  <script type="module" src="gallery.js"></script>
+</body>
+</html>

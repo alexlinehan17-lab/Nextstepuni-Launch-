@@ -1,0 +1,289 @@
+[
+  {
+    "id": "irish",
+    "name": "Irish (Gaeilge)",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "irish:current"
+  },
+  {
+    "id": "english",
+    "name": "English",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "english:outgoing"
+  },
+  {
+    "id": "french",
+    "name": "French",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "french:current"
+  },
+  {
+    "id": "german",
+    "name": "German",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "german:current"
+  },
+  {
+    "id": "spanish",
+    "name": "Spanish",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "spanish:current"
+  },
+  {
+    "id": "italian",
+    "name": "Italian",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "italian:current"
+  },
+  {
+    "id": "russian",
+    "name": "Russian",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "russian:current"
+  },
+  {
+    "id": "japanese",
+    "name": "Japanese",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "japanese:current"
+  },
+  {
+    "id": "mandarin-chinese",
+    "name": "Mandarin Chinese",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "mandarin-chinese:current"
+  },
+  {
+    "id": "latin",
+    "name": "Latin",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "latin:outgoing-2026"
+  },
+  {
+    "id": "ancient-greek",
+    "name": "Ancient Greek",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "ancient-greek:outgoing-2026"
+  },
+  {
+    "id": "hebrew-studies",
+    "name": "Hebrew Studies",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "hebrew-studies:current"
+  },
+  {
+    "id": "arabic",
+    "name": "Arabic",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "arabic:outgoing-2026"
+  },
+  {
+    "id": "classical-studies",
+    "name": "Classical Studies",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "classical-studies:current"
+  },
+  {
+    "id": "lithuanian",
+    "name": "Lithuanian (non-curricular EU language)",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "lithuanian:current"
+  },
+  {
+    "id": "polish",
+    "name": "Polish (non-curricular EU language)",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "polish:current"
+  },
+  {
+    "id": "portuguese",
+    "name": "Portuguese (non-curricular EU language)",
+    "category": "language",
+    "programme": "leaving-certificate-established",
+    "specificationId": "portuguese:current"
+  },
+  {
+    "id": "mathematics",
+    "name": "Mathematics",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "mathematics:2015"
+  },
+  {
+    "id": "applied-mathematics",
+    "name": "Applied Mathematics",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "applied-mathematics:current"
+  },
+  {
+    "id": "physics",
+    "name": "Physics",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "physics:2027"
+  },
+  {
+    "id": "chemistry",
+    "name": "Chemistry",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "chemistry:2027"
+  },
+  {
+    "id": "physics-and-chemistry",
+    "name": "Physics and Chemistry (combined)",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "physics-and-chemistry:current"
+  },
+  {
+    "id": "biology",
+    "name": "Biology",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "biology:2027"
+  },
+  {
+    "id": "agricultural-science",
+    "name": "Agricultural Science",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "agricultural-science:2021"
+  },
+  {
+    "id": "computer-science",
+    "name": "Computer Science",
+    "category": "stem",
+    "programme": "leaving-certificate-established",
+    "specificationId": "computer-science:2025"
+  },
+  {
+    "id": "accounting",
+    "name": "Accounting",
+    "category": "business",
+    "programme": "leaving-certificate-established",
+    "specificationId": "accounting:outgoing"
+  },
+  {
+    "id": "business",
+    "name": "Business",
+    "category": "business",
+    "programme": "leaving-certificate-established",
+    "specificationId": "business:2027"
+  },
+  {
+    "id": "economics",
+    "name": "Economics",
+    "category": "business",
+    "programme": "leaving-certificate-established",
+    "specificationId": "economics:current"
+  },
+  {
+    "id": "geography",
+    "name": "Geography",
+    "category": "social-environmental",
+    "programme": "leaving-certificate-established",
+    "specificationId": "geography:2028"
+  },
+  {
+    "id": "history",
+    "name": "History",
+    "category": "social-environmental",
+    "programme": "leaving-certificate-established",
+    "specificationId": "history:current"
+  },
+  {
+    "id": "politics-and-society",
+    "name": "Politics and Society",
+    "category": "social-environmental",
+    "programme": "leaving-certificate-established",
+    "specificationId": "politics-and-society:current"
+  },
+  {
+    "id": "religious-education",
+    "name": "Religious Education",
+    "category": "social-environmental",
+    "programme": "leaving-certificate-established",
+    "specificationId": "religious-education:2003"
+  },
+  {
+    "id": "art",
+    "name": "Art (including crafts / Visual Studies)",
+    "category": "arts",
+    "programme": "leaving-certificate-established",
+    "specificationId": "art:current"
+  },
+  {
+    "id": "music",
+    "name": "Music",
+    "category": "arts",
+    "programme": "leaving-certificate-established",
+    "specificationId": "music:current"
+  },
+  {
+    "id": "design-and-communication-graphics",
+    "name": "Design and Communication Graphics (DCG)",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "design-and-communication-graphics:current"
+  },
+  {
+    "id": "construction-studies",
+    "name": "Construction Technology",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "construction-technology:2028"
+  },
+  {
+    "id": "engineering",
+    "name": "Engineering",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "engineering:2028"
+  },
+  {
+    "id": "technology",
+    "name": "Technology",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "technology:current"
+  },
+  {
+    "id": "physical-education",
+    "name": "Physical Education",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "physical-education:2028"
+  },
+  {
+    "id": "lcvp-link-modules",
+    "name": "Life, Community and Work",
+    "category": "business",
+    "programme": "lcvp",
+    "specificationId": "lcvp-link-modules:2028"
+  },
+  {
+    "id": "home-economics",
+    "name": "Home Economics",
+    "category": "practical-applied",
+    "programme": "leaving-certificate-established",
+    "specificationId": "home-economics:current"
+  }
+]

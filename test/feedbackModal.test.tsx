@@ -25,11 +25,11 @@ describe('anonymous feedback modal', () => {
     callableMock.mockResolvedValue({ data: { success: true } });
   });
 
-  test('replaces the QR flow with a problem-first in-app form', () => {
+  test('opens the listening room with an idea selected and submission disabled', () => {
     render(<FeedbackModal open onClose={vi.fn()} />);
 
-    expect(screen.getByRole('heading', { name: 'What should we fix?' })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /Something is broken/ })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('heading', { name: 'What would make it better?' })).toBeInTheDocument();
+    expect(screen.getByRole('radio', { name: 'I have an idea' })).toBeChecked();
     expect(screen.getByRole('button', { name: 'Send anonymously' })).toBeDisabled();
     expect(screen.queryByAltText(/QR code/i)).not.toBeInTheDocument();
   });
@@ -38,7 +38,7 @@ describe('anonymous feedback modal', () => {
     const user = userEvent.setup();
     render(<FeedbackModal open onClose={vi.fn()} />);
 
-    const textarea = screen.getByLabelText('Tell us what happened');
+    const textarea = screen.getByLabelText('Your words. We’re listening.');
     await user.click(textarea);
     await user.keyboard('Every letter should stay in this box.');
 
@@ -55,8 +55,8 @@ describe('anonymous feedback modal', () => {
       />,
     );
 
-    fireEvent.click(screen.getByRole('button', { name: /Feature idea/ }));
-    fireEvent.change(screen.getByLabelText('Tell us what happened'), {
+    fireEvent.click(screen.getByRole('radio', { name: 'I have an idea' }));
+    fireEvent.change(screen.getByLabelText('Your words. We’re listening.'), {
       target: { value: 'Please add a way to bookmark a module section.' },
     });
     fireEvent.click(screen.getByRole('button', { name: 'Send anonymously' }));
@@ -73,6 +73,42 @@ describe('anonymous feedback modal', () => {
     expect(payload).not.toHaveProperty('email');
     expect(payload).not.toHaveProperty('school');
     expect(await screen.findByText('Sent without account details.')).toBeInTheDocument();
+  });
+
+  test('can leave out the app context and keeps the message when a send fails', async () => {
+    callableMock.mockRejectedValueOnce({ code: 'functions/unavailable' });
+    render(<FeedbackModal open onClose={vi.fn()} context={{ surface: 'home' }} />);
+    fireEvent.click(screen.getByRole('radio', { name: 'Something isn’t working' }));
+    const textarea = screen.getByLabelText('Your words. We’re listening.');
+    expect(textarea).toHaveAttribute('placeholder', 'What were you trying to do? What happened instead?');
+    fireEvent.change(textarea, { target: { value: 'The next card button stopped responding.' } });
+    fireEvent.click(screen.getByRole('checkbox', { name: /Include the page/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Send anonymously' }));
+    expect(await screen.findByRole('alert')).toHaveTextContent('That did not send.');
+    expect(textarea).toHaveValue('The next card button stopped responding.');
+    expect(screen.getByRole('button', { name: 'Send anonymously' })).toBeEnabled();
+    expect(callableMock).toHaveBeenCalledWith(expect.objectContaining({ category: 'broken', context: null }));
+    fireEvent.click(screen.getByRole('button', { name: 'Send anonymously' }));
+    expect(await screen.findByText('Sent without account details.')).toBeInTheDocument();
+  });
+
+  test('prevents a second submission or dismissal while sending', async () => {
+    let finishSend!: (value: unknown) => void;
+    callableMock.mockImplementationOnce(() => new Promise(resolve => { finishSend = resolve; }));
+    const onClose = vi.fn();
+    render(<FeedbackModal open onClose={onClose} />);
+    fireEvent.change(screen.getByLabelText('Your words. We’re listening.'), { target: { value: 'A useful suggestion about studying.' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Send anonymously' }));
+    expect(screen.getByRole('button', { name: 'Sending…' })).toBeDisabled();
+    expect(screen.getByRole('button', { name: 'Close' })).toBeDisabled();
+    fireEvent.keyDown(window, { key: 'Escape' });
+    expect(onClose).not.toHaveBeenCalled();
+    expect(callableMock).toHaveBeenCalledTimes(1);
+    finishSend({ data: { success: true } });
+    const thanks = await screen.findByRole('status');
+    await waitFor(() => expect(thanks).toHaveFocus());
+    fireEvent.click(screen.getByRole('button', { name: 'Back to my study' }));
+    expect(onClose).toHaveBeenCalledOnce();
   });
 
   test('explains the daily limit instead of blaming the connection', () => {

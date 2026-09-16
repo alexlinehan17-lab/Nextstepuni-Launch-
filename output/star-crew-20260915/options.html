@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Pick your Star Crew · nextstepuni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#262922;--muted:#717569;--line:#dedfd8;--orange:#ff771c;font-family:'DM Sans',sans-serif;color:var(--ink);background:white;font-synthesis:none}
+    *{box-sizing:border-box}body{margin:0}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #bd4b0e;outline-offset:5px}a{color:inherit}button:disabled{opacity:.4;cursor:default}
+    header{padding:22px 5vw;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);gap:20px}.wordmark{font-size:27px;font-weight:900;letter-spacing:-1.3px}.back{font-size:12px;text-decoration:none}.back:hover{text-decoration:underline}
+    main{max-width:1320px;margin:auto;padding:48px 36px 60px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}.intro{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:34px}h1{font:500 clamp(48px,6vw,76px)/1.02 'Source Serif 4',Georgia,serif;letter-spacing:-.05em;margin:13px 0 18px}h1 em{font-weight:500}.intro p{font-size:15px;line-height:1.7;color:var(--muted);margin:0;max-width:640px}.edition{font:500 17px/1.4 'Source Serif 4',Georgia,serif;text-align:right;white-space:nowrap}.edition span{display:block;color:var(--muted);font:11px/1.8 'DM Sans',sans-serif}
+    .selection-bar{position:sticky;top:0;z-index:10;background:white;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:16px 0;display:flex;align-items:center;gap:18px;margin-bottom:30px}.counter{font-size:14px;white-space:nowrap}.counter strong{font-size:24px;letter-spacing:-.05em;margin-right:4px}.counter span{color:var(--muted)}.picks{display:flex;gap:6px;flex:1;flex-wrap:wrap;min-width:0}.pick{width:29px;height:29px;border:1px dashed #c6c8bf;border-radius:50%;display:grid;place-items:center;font-size:10px;color:var(--muted)}.pick.filled{background:var(--ink);color:white;border-style:solid}.copy{background:var(--ink);color:white;border:1px solid var(--ink);border-radius:7px;padding:11px 15px;font-size:12px;font-weight:600;white-space:nowrap}.copy:hover:not(:disabled){background:#43473d}
+    .preview{display:flex;align-items:center;justify-content:space-between;gap:20px;border:1.5px solid var(--ink);border-radius:12px;padding:16px 22px;margin-bottom:34px;background:white;transition:background .15s}.identity{display:flex;gap:15px;align-items:center;min-width:210px}.avatar{aspect-ratio:1;display:block;flex:none;background-color:white;background-position:center;background-size:100% 100%;background-repeat:no-repeat}.avatar.original{background-size:200% 200%}.profile{width:76px;border-radius:50%;border:1px solid var(--line)}.identity h2{font-size:16px;margin:4px 0 0}.samples{display:flex;gap:25px;align-items:end}.sample{display:grid;justify-items:center;gap:5px}.sample .avatar{border:1px solid var(--line);border-radius:8px}.sample span{font-size:10px;color:var(--muted)}.surface{font-size:11px;background:transparent;border:1px solid #bfc2b7;border-radius:6px;padding:9px 12px}.preview.dark{background:var(--ink);color:white}.dark .eyebrow,.dark .sample span{color:#c4c7bc}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}.card{border:1.5px solid var(--ink);border-radius:15px;box-shadow:3px 4px 0 var(--ink);padding:16px;min-width:0;background:white;position:relative}.card.chosen{outline:3px solid var(--orange);outline-offset:4px}.card-top{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:var(--muted);height:18px}.number{font-weight:700;letter-spacing:.1em}.origin{font-size:9px;letter-spacing:.05em;text-transform:uppercase}.art-button{border:0;background:white;padding:0;display:block;width:100%;border-radius:9px;margin:7px 0 10px}.art-button .avatar{width:100%;transition:transform .16s}.art-button:hover .avatar{transform:translateY(-3px)}.card h2{font:600 25px/1.15 'Source Serif 4',Georgia,serif;letter-spacing:-.035em;margin:0 0 6px}.card p{font-size:11px;line-height:1.5;color:var(--muted);margin:0 0 17px;min-height:33px}.choose{display:block;width:100%;font-size:12px;font-weight:600;background:white;border:1px solid var(--ink);border-radius:6px;padding:10px 5px}.choose:hover{background:#f4f5f0}.choose[aria-pressed=true]{background:var(--ink);color:white}.card-preview{display:flex;align-items:center;justify-content:space-between;margin-top:11px}.card-preview a,.preview-label{font-size:10px;color:var(--muted);text-decoration:none}.card-preview a:hover{text-decoration:underline}.message{min-height:20px;margin:0 0 18px;font-size:12px;color:var(--muted)}.shortlist{margin-top:40px;border-top:1px solid var(--ink);padding-top:23px}.shortlist h2{font:500 29px/1.2 'Source Serif 4',Georgia,serif;letter-spacing:-.03em;margin:0 0 10px}.shortlist p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}.shortlist textarea{display:block;width:100%;min-height:165px;margin-top:15px;padding:14px;border:1px solid var(--line);border-radius:7px;font:13px/1.6 'DM Sans',sans-serif;color:var(--ink);resize:vertical}.shortlist textarea[hidden]{display:none}footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:22px;margin-top:35px;font-size:11px;line-height:1.6;color:var(--muted)}
+    @media(max-width:1050px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.edition{display:none}}
+    @media(max-width:780px){main{padding:32px 22px 50px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.preview{flex-wrap:wrap}.identity{flex:1}.samples{gap:15px}.sample:first-child{display:none}.selection-bar{gap:10px}.picks{gap:4px}.pick{width:25px;height:25px}.copy{padding:10px;font-size:11px}.counter strong{font-size:20px}.counter{font-size:12px}.card h2{font-size:24px}}
+    @media(max-width:490px){header{padding:18px 20px}.wordmark{font-size:24px}.back{font-size:10px}main{padding:28px 18px 45px}.intro p{font-size:13px}.selection-bar{flex-wrap:wrap;padding:12px 0}.counter{flex:1}.picks{order:3;flex-basis:100%;flex-wrap:nowrap;justify-content:space-between}.pick{width:29px;height:29px}.grid{gap:18px 14px}.card{padding:12px}.card h2{font-size:22px}.card p{min-height:47px;font-size:10px}.origin{font-size:8px}.preview{padding:14px}.identity{min-width:0;flex-basis:100%}.samples{flex:1}.sample:first-child{display:grid}.card-preview{gap:4px}.preview-label{font-size:9px}.profile{width:64px}.samples{gap:18px}footer{display:block}footer span{display:block;margin-top:8px}}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header><div class="wordmark">nextstepuni</div><a class="back" href="index.html">← Your final eight</a></header>
+  <main>
+    <section class="intro"><div><div class="eyebrow">Star Crew · The shortlist</div><h1>Pick your <em>people.</em></h1><p>Twelve little personalities. One familiar star.<br>Choose your favourite eight. Tap any illustration to try it at avatar size.</p></div><div class="edition">Four familiar faces.<br>Eight new arrivals.<span>Collection 01 / September 2026</span></div></section>
+    <section class="selection-bar" aria-label="Your selection"><div class="counter"><strong id="count">0</strong><span>/ 8 picked</span></div><div class="picks" id="picks" aria-label="Selected avatar numbers"></div><button class="copy" id="copy" disabled type="button">Copy my eight</button></section>
+    <section class="preview" aria-label="Avatar size preview"><div class="identity"><div class="avatar profile" id="profile" role="img"></div><div><div class="eyebrow">At avatar size</div><h2 id="previewName" aria-live="polite">01 · The Beanie</h2></div></div><div class="samples"><div class="sample"><div class="avatar" data-sample style="width:32px"></div><span>32 · Drawer</span></div><div class="sample"><div class="avatar" data-sample style="width:48px"></div><span>48 · Header</span></div><div class="sample"><div class="avatar" data-sample style="width:64px"></div><span>64 · Profile</span></div></div><button class="surface" id="surface" type="button" aria-pressed="false">Try dark surface</button></section>
+    <p class="message" id="message" role="status">The original four are first. Add or remove favourites whenever you like.</p>
+    <section class="grid" id="grid" aria-label="Twelve Star Crew avatars"></section>
+    <section class="shortlist"><h2>Your chosen crew</h2><p id="selectionSummary">Your picks will appear here.</p><textarea id="copyFallback" aria-label="Your eight favourites, ready to copy" readonly hidden></textarea></section>
+    <footer><span>Choose eight, then copy your list and send it in our chat.</span><span>Your choices stay in this page’s link when you refresh.</span></footer>
+  </main>
+  <script type="module">
+    import { frameAvatar } from './framing.js';
+    const crew = [
+      {id:'01',name:'The Beanie',description:'A cosy hat. A confident little stance.',file:'original-four.png',position:'0% 0%'},
+      {id:'02',name:'The Reader',description:'Headphones on. Lost in a good book.',file:'original-four.png',position:'100% 0%'},
+      {id:'03',name:'The Scholar',description:'A favourite book and a windswept scarf.',file:'original-four.png',position:'0% 100%'},
+      {id:'04',name:'The Wanderer',description:'A little satchel. Nowhere to rush.',file:'original-four.png',position:'100% 100%'},
+      {id:'05',name:'The Skater',description:'Taking a breather between adventures.',file:'05-skater.png'},
+      {id:'06',name:'The Daydreamer',description:'Feet up. Head in the clouds.',file:'06-daydreamer.png'},
+      {id:'07',name:'The Maker',description:'Always ready to draw something new.',file:'07-maker.png'},
+      {id:'08',name:'The Stargazer',description:'There’s always more to discover.',file:'08-stargazer.png'},
+      {id:'09',name:'The Hugger',description:'Holding on to something good.',file:'09-hugger.png'},
+      {id:'10',name:'The Trailblazer',description:'Packed and ready for the next step.',file:'10-trailblazer.png'},
+      {id:'11',name:'The Snoozer',description:'Even stars need a little rest.',file:'11-snoozer.png'},
+      {id:'12',name:'The Musician',description:'Headphones ready. Moving to their own beat.',file:'12-wave.png'}
+    ];
+    const picked = new Set();
+    const grid = document.querySelector('#grid');
+    const message = document.querySelector('#message');
+    function avatarStyle(c){return `background-image:url('${c.file}');background-position:${c.position || 'center'}`;}
+    for(const c of crew){
+      const card = document.createElement('article');
+      card.className='card';card.dataset.id=c.id;
+      card.innerHTML=`<div class="card-top"><span class="number">${c.id} /</span><span class="origin">${c.position?'Original crew':'New arrival'}</span></div><button class="art-button" type="button" aria-label="Preview ${c.id}, ${c.name}"><span class="avatar ${c.position?'original':''}" style="${avatarStyle(c)}"></span></button><h2>${c.name}</h2><p>${c.description}</p><button class="choose" type="button" aria-label="Choose ${c.id}, ${c.name}" aria-pressed="false">Choose this one</button><div class="card-preview"><span class="preview-label">Tap artwork to preview</span><a href="${c.file}" target="_blank" rel="noopener" aria-label="Open artwork for ${c.name}">Full size ↗</a></div>`;
+      card.querySelector('.art-button').addEventListener('click',()=>preview(c));
+      card.querySelector('.choose').addEventListener('click',()=>toggle(c));
+      frameAvatar(card.querySelector('.avatar'),c.id);grid.append(card);
+    }
+    function preview(c){
+      document.querySelector('#previewName').textContent=`${c.id} · ${c.name}`;
+      for(const el of document.querySelectorAll('#profile,[data-sample]')){frameAvatar(el,c.id);}
+      document.querySelector('#profile').setAttribute('aria-label',c.name);
+    }
+    function chosen(){return crew.filter(c=>picked.has(c.id));}
+    function render(){
+      document.querySelector('#count').textContent=picked.size;
+      const items=chosen();
+      document.querySelector('#picks').innerHTML=Array.from({length:8},(_,i)=>`<span class="pick ${items[i]?'filled':''}" ${items[i]?`title="${items[i].name}"`:''}>${items[i]?.id || '·'}</span>`).join('');
+      document.querySelector('#copy').disabled=picked.size!==8;
+      for(const card of grid.children){const active=picked.has(card.dataset.id);card.classList.toggle('chosen',active);const button=card.querySelector('.choose');button.setAttribute('aria-pressed',String(active));button.textContent=active?'✓ In my crew':'Choose this one';}
+      document.querySelector('#selectionSummary').textContent=items.length?items.map(c=>`${c.id} ${c.name}`).join(' · '):'Your picks will appear here.';
+      document.querySelector('#copyFallback').hidden=true;
+    }
+    function toggle(c){
+      if(picked.has(c.id)){picked.delete(c.id);message.textContent=`${c.name} removed. ${8-picked.size} more to choose.`;}
+      else if(picked.size===8){message.textContent='You have eight favourites. Remove one to make room for another.';return;}
+      else{picked.add(c.id);message.textContent=picked.size===8?'Your eight are ready. Copy your list and send it in our chat.':`${c.name} added. ${8-picked.size} more to choose.`;}
+      const hash=chosen().map(c=>c.id).join(',');history.replaceState(null,'',location.pathname+location.search+(hash?'#pick='+hash:''));render();
+    }
+    function restore(){picked.clear();const ids=new URLSearchParams(location.hash.slice(1)).get('pick')?.split(',') || ['01','02','05','07','08','09','11','12'];for(const id of ids){if(crew.some(c=>c.id===id)&&picked.size<8)picked.add(id);}render();}
+    document.querySelector('#surface').addEventListener('click',e=>{const dark=document.querySelector('.preview').classList.toggle('dark');e.currentTarget.setAttribute('aria-pressed',String(dark));e.currentTarget.textContent=dark?'Try light surface':'Try dark surface';});
+    document.querySelector('#copy').addEventListener('click',async()=>{if(picked.size!==8)return;const text='My favourite 8 Star Crew avatars:\n'+chosen().map(c=>`${c.id} — ${c.name}`).join('\n');try{await navigator.clipboard.writeText(text);message.textContent='Copied. Paste your eight favourites into our chat.';}catch{const field=document.querySelector('#copyFallback');field.value=text;field.hidden=false;field.focus();field.select();message.textContent='Your list is ready below. Copy it and paste it into our chat.';}});
+    addEventListener('hashchange',restore);restore();preview(crew[0]);
+  </script>
+</body>
+</html>

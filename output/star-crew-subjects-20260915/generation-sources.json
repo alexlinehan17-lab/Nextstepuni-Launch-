@@ -1,0 +1,324 @@
+{
+  "method": "OpenAI built-in image generation",
+  "prompts": "prompts.json",
+  "generated": [
+    {
+      "id": "english",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-a08599a4-b1f1-464a-873d-3e2e9bb9f40f.png",
+      "asset": "english.png"
+    },
+    {
+      "id": "mandarin-chinese",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-dcd149af-1b1d-485a-a46e-48382fc910c2.png",
+      "asset": "mandarin-chinese.png"
+    },
+    {
+      "id": "irish",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-39213633-160e-407a-a1e9-7a5a9a070fe7.png",
+      "asset": "irish.png"
+    },
+    {
+      "id": "latin",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-cba99daa-7b52-425c-bfe4-2d99b5214854.png",
+      "asset": "latin.png"
+    },
+    {
+      "id": "ancient-greek",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-7f8161e7-24c7-4c4f-9ffd-14f02295b796.png",
+      "asset": "ancient-greek.png"
+    },
+    {
+      "id": "german",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-a0f5d223-3b6f-4277-826a-61ad37ba7f4a.png",
+      "asset": "german.png"
+    },
+    {
+      "id": "arabic",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-e4714506-54e8-427a-9282-8879e85ba2a1.png",
+      "asset": "arabic.png"
+    },
+    {
+      "id": "french",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-20734d05-29c7-4299-a772-2e508012702e.png",
+      "asset": "french.png"
+    },
+    {
+      "id": "hebrew-studies",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-91fef951-b4aa-4e69-9783-2ab962b76fef.png",
+      "asset": "hebrew-studies.png"
+    },
+    {
+      "id": "classical-studies",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-a8d377c2-324e-46a7-b981-035429eb8348.png",
+      "asset": "classical-studies.png"
+    },
+    {
+      "id": "spanish",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-25ada661-94fd-4b35-8f19-91d67ed59709.png",
+      "asset": "spanish.png"
+    },
+    {
+      "id": "lithuanian",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-1e45066f-0867-4b08-bdff-f7ebfada5d03.png",
+      "asset": "lithuanian.png"
+    },
+    {
+      "id": "italian",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-e3adda5e-9976-4d6c-b16c-4e065af421a9.png",
+      "asset": "italian.png"
+    },
+    {
+      "id": "japanese",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-443099c4-889d-4f50-9084-b063bec580a3.png",
+      "asset": "japanese.png"
+    },
+    {
+      "id": "polish",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-e14483dd-6804-4e7e-9810-1be32e8fcb43.png",
+      "asset": "polish.png"
+    },
+    {
+      "id": "russian",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-bad6015a-1b57-4d36-b4c0-a9f1b606559b.png",
+      "asset": "russian.png"
+    },
+    {
+      "id": "portuguese",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-7244a539-6be6-42f5-bbd0-94e45cbdc471.png",
+      "asset": "portuguese.png"
+    },
+    {
+      "id": "applied-mathematics",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-254864f7-f008-470d-8829-f44bf437abf9.png",
+      "asset": "applied-mathematics.png"
+    },
+    {
+      "id": "physics-and-chemistry",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-8c45d403-e9fe-40e7-8bc3-afa6b1251448.png",
+      "asset": "physics-and-chemistry.png"
+    },
+    {
+      "id": "agricultural-science",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-eac5a6fa-bc4f-4341-b97e-517fdbb7bd85.png",
+      "asset": "agricultural-science.png"
+    },
+    {
+      "id": "accounting",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-c63b66ef-67da-49e9-a60b-7d4d16fa37c2.png",
+      "asset": "accounting.png"
+    },
+    {
+      "id": "business",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-2c874ec9-b432-47e4-8573-10744aad9002.png",
+      "asset": "business.png"
+    },
+    {
+      "id": "mathematics",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-6da9859f-9424-4c9c-bf1a-79ae45591ede.png",
+      "asset": "mathematics.png"
+    },
+    {
+      "id": "biology",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-a03ba6a1-d411-4c8b-9ee8-2bdef338ef3b.png",
+      "asset": "biology.png"
+    },
+    {
+      "id": "computer-science",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-7286f60d-1be4-49e1-a152-a91ad224d978.png",
+      "asset": "computer-science.png"
+    },
+    {
+      "id": "physics",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-6f52e7c4-49d0-4fc5-b4d2-fd569da246df.png",
+      "asset": "physics.png"
+    },
+    {
+      "id": "politics-and-society",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-d2d3b128-c6bb-494f-8040-5e8e09ac5861.png",
+      "asset": "politics-and-society.png"
+    },
+    {
+      "id": "geography",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-052fc00b-b3cc-4400-9f0b-b52ca083cdb6.png",
+      "asset": "geography.png"
+    },
+    {
+      "id": "chemistry",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-f02f7462-c82d-4503-863e-d99ae96fc39f.png",
+      "asset": "chemistry.png"
+    },
+    {
+      "id": "history",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-c22cd51b-7ec8-44e1-ae43-7abcf3107d51.png",
+      "asset": "history.png"
+    },
+    {
+      "id": "religious-education",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-734a3e9b-65e7-4b1a-9d5b-12c69f293d02.png",
+      "asset": "religious-education.png"
+    },
+    {
+      "id": "economics",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-81f13d12-5378-4b1a-bf7a-a8f37cd6100c.png",
+      "asset": "economics.png"
+    },
+    {
+      "id": "art",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-fd63c447-59fe-4353-b2e3-6ee5e8fdf72c.png",
+      "asset": "art.png"
+    },
+    {
+      "id": "physical-education",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-a736cdbb-c2ef-462b-973b-2a29e711e071.png",
+      "asset": "physical-education.png"
+    },
+    {
+      "id": "home-economics",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-78e21d50-8c9e-4636-95c4-9ddc0e08214e.png",
+      "asset": "home-economics.png"
+    },
+    {
+      "id": "engineering",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-6ab6a368-eef7-4786-aa7b-96242d9f9ab1.png",
+      "asset": "engineering.png"
+    },
+    {
+      "id": "technology",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-157da2fd-502e-42d3-b114-eec46a88bc5c.png",
+      "asset": "technology.png"
+    },
+    {
+      "id": "design-and-communication-graphics",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-c2a1b0b1-8237-4c73-951e-f0268b5b4323.png",
+      "asset": "design-and-communication-graphics.png"
+    },
+    {
+      "id": "climate-action-and-sustainable-development",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-a11d2fa1-66d4-4dcb-a944-1440208c608d.png",
+      "asset": "climate-action-and-sustainable-development.png"
+    },
+    {
+      "id": "construction-studies",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-0c974fec-78e3-493c-acf8-d7d560e0fd7d.png",
+      "asset": "construction-studies.png"
+    },
+    {
+      "id": "lcvp-link-modules",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-dac0c5e2-3873-4947-a32e-aa400ed2bab7.png",
+      "asset": "lcvp-link-modules.png"
+    },
+    {
+      "id": "drama-film-and-theatre-studies",
+      "ok": true,
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-dd3ca2c1-4a92-4740-b69e-955e7a8635cf.png",
+      "asset": "drama-film-and-theatre-studies.png"
+    }
+  ],
+  "reused": {
+    "id": "music",
+    "source": "../star-crew-20260915/12-wave.png",
+    "character": "The Musician",
+    "status": "Superseded by dedicated music-v2.png subject illustration; retained as history only"
+  },
+  "refinements": [
+    {
+      "id": "irish",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-ec00af71-1dbf-4e2a-bb3e-d5e3810a2e5d.png",
+      "asset": "irish-v2.png",
+      "prompt": "Use case: stylized-concept.\nAsset type: ONE individual full-body Star Crew avatar for a NextStepUni Leaving Certificate subject gallery.\nInput image 1 is a STYLE AND CHARACTER reference, not an edit target. Match it closely: faceless blank round white head, compact rounded white body, chunky pleasantly uneven black ink outlines, mitten hands, rounded feet, one chunky five-point orange star. Older-teen editorial mascot. Pure white background; black, white and warm orange #ff771c only. Each character has the same body proportions and bold stroke weight as the reference. No facial features on the main character, no realistic skin, no fingers, no shading, no gradients, no paper texture, no cast shadow, no decorative sparkles, no badge or border.\nComposition: square canvas, ONE centered character plus its star and the specified compact subject prop. The complete visible outline must fit within the central 76% of the square, with symmetrical white margins. Prioritise a simple silhouette that reads in a circular avatar at 48 pixels. The star stays clearly visible. No ground line, no scene, no second character. If a short text or character is explicitly specified below render exactly that; otherwise NO text, letters or numbers anywhere.\nSubject-specific direction: Standing with one foot on the orange star, an orange knitted scarf and an open white book. A simple speech bubble close beside the head contains ONLY the exact greeting 'Dia duit' (both words). Welcoming storytelling gesture."
+    }
+  ],
+  "feedbackRevisions": [
+    {
+      "id": "design-and-communication-graphics",
+      "file": "design-and-communication-graphics-v2.png",
+      "reference": "design-and-communication-graphics.png",
+      "character": "The Sketcher",
+      "detail": "Reimagine this DCG subject character as a lively designer absorbed in drawing. Keep exactly the Star Crew visual language, faceless white head, white rounded body, bold gently uneven black outline and one chunky orange star. Change the stiff presentation pose into a relaxed three-quarter sitting pose on the star, torso leaning forward a little and head tilted down. One large white sheet with softly curled corners rests at an angle across the lap; one hand steadies it and the other draws with a chunky orange pencil. On the sheet is a simple loose hand-sketched isometric cube, a few light black construction strokes and one small orange top face. Lines are confidently hand-drawn with slight natural wobble, NOT perfect rigid CAD geometry. No thick-framed board, no rigid ruler, no floating shapes, no labels or text. Keep the paper and pencil compact so the full figure and star remain prominent. Friendly relaxed flowing pose, readable at small size.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-eeabe9d9-ada8-4dbf-8a82-78e8a59fc74f.png",
+      "ok": true
+    },
+    {
+      "id": "ancient-greek",
+      "file": "ancient-greek-v2.png",
+      "reference": "ancient-greek.png",
+      "character": "The Philosopher",
+      "detail": "Change ONLY the three letters on the held tablet. Replace the existing uppercase ΑΒΓ with the exact LOWERCASE Greek sequence 'α β γ' (alpha, beta, gamma), large, clearly separated, bold black, with all three fully visible and no hand covering any letter. Alpha must be the recognisable looped Greek α, beta the lowercase β with its descender, gamma the lowercase γ with its descender. Preserve the character, thoughtful pose, proportions, white body, blank head, star, tablet, composition and black ink stroke exactly. No Latin a, B, Y and no extra text.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-5412e60b-2058-464f-a394-caf702e2490f.png",
+      "ok": true
+    },
+    {
+      "id": "irish",
+      "file": "irish-v3.png",
+      "reference": "irish-v2.png",
+      "character": "An Scéalaí",
+      "detail": "Replace ONLY the open book held against the body with a small clearly recognisable traditional Irish harp. The harp has a gracefully curved chunky orange frame, a white interior, and five simple black vertical strings, held under the same left arm in approximately the same space as the former book. Remove every trace of the book. Preserve the blank round head, pose, orange scarf, raised greeting hand, white body, star, black line style, and speech bubble in the same relative arrangement. Preserve exact speech bubble text 'Dia duit' on two lines. The harp must have an open triangular outline with a curved upper neck, not a guitar, book or lyre. No new props.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-f0bc2b3f-7c25-4312-a456-dc52c498958a.png",
+      "ok": true
+    },
+    {
+      "id": "music",
+      "file": "music-v2.png",
+      "reference": "music.png",
+      "character": "The Performer",
+      "detail": "Create a distinctly new Music SUBJECT avatar, using this image ONLY as the Star Crew style reference. The character now sits sideways on the single orange star and plays a small acoustic guitar with a rounded orange body, black round sound hole, white neck and a few simple black strings. One mitten supports the neck, the other strums at the sound hole. Relaxed bent knees, one foot tapping forward, head tilted toward the instrument to suggest singing and playing while the face stays completely blank. No raised waving arm and no headphones, so this is unmistakably a different character from the profile selection. Preserve the same white faceless person, rounded anatomy, thick black hand-drawn ink outlines, black/white/orange palette and friendly editorial style. Guitar neck stays inside the compact silhouette. No microphone, note symbols, text, stage, extra star or background scenery.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-8c832562-1f4b-40b4-ac81-5ed9a529f7dc.png",
+      "ok": true
+    },
+    {
+      "id": "religious-education",
+      "file": "religious-education-v2.png",
+      "reference": "religious-education.png",
+      "character": "The Seeker",
+      "detail": "Redesign this as a recognisable Religious Education / study-of-world-religions character. Keep the same faceless rounded white person, chunky orange five-point star, bold black ink and simple editorial style. The character is seated upright on the star thoughtfully studying a large OPEN white book with orange covers. The outward-facing pages show THREE large clean black symbols arranged clearly across the spread: a simple upright Latin cross, a crescent moon, and a six-point Star of David formed from TWO overlapping triangles. Each symbol must be complete, distinct, correct and unobstructed; use one cross on the left page and the crescent plus six-point star separated on the right page. No question mark and no written text. One mitten supports the lower edge of the book, the other points gently toward a page. The blank head tilts down toward the faith symbols. Give the book enough prominence to read as a world-religions study book, while keeping the star and both rounded feet visible. No costume, halo, lectern, floating symbols, scenery or extra props.",
+      "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-4d9da02b-4a7f-4d01-9b20-941694fa32cf.png",
+      "ok": true
+    }
+  ],
+  "greekSpacingRefinement": {
+    "source": "/Users/alexlinehan/.codex/generated_images/01a0a4c0-fae6-70b1-9d51-96483d9770f4/exec-cf04a460-9f51-462f-a7e9-badb50db0fd3.png",
+    "file": "ancient-greek-v3.png",
+    "prompt": "Edit this Star Crew avatar precisely. Keep the entire illustration exactly the same apart from lettering placement and the tablet-holding hand. The tablet must clearly display exactly the three LOWERCASE GREEK letters 'α β γ'. Currently the hand obscures the bottom of gamma. Make the lettering slightly smaller and move it toward the left/upper part of the tablet, leaving generous blank space on the right. Render the complete lowercase gamma γ with its distinctive descending stem fully visible BELOW the baseline: it must not look like Latin v or Greek nu ν. Move the hand that holds the tablet down to its bottom-right corner so it touches no letter. All three whole glyphs must be plainly visible and separated. Keep the blank face, pose, star, image composition, black/white/orange palette, smooth bold hand-drawn outlines, white background and no other text unchanged. Output one square PNG."
+  }
+}
