@@ -1,0 +1,35 @@
+.crew-achievements{background:#fff;color:#23251f;font-family:'DM Sans',sans-serif}
+.crew-achievement-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:15px}
+.crew-achievement-heading .crew-eyebrow{font:10px monospace;text-transform:uppercase;letter-spacing:.13em;color:#6a7164}
+.crew-achievement-heading h3{font:750 clamp(25px,3vw,36px)/1.1 'DM Sans',sans-serif;letter-spacing:-.04em;margin:9px 0 0}
+.crew-achievement-heading>span{font:11px monospace;white-space:nowrap}
+.crew-achievement-toolbar{display:flex;justify-content:space-between;gap:20px;align-items:center;margin:18px 0}
+.crew-achievement-toolbar p{font-size:12px;line-height:1.6;color:#6a7164}
+.crew-achievement-toolbar .crew-link{font-size:11px;flex-shrink:0}
+.crew-achievement-tabs{display:flex;gap:20px;overflow-x:auto;border-bottom:1px solid #d9ddd1;margin-bottom:22px}
+.crew-achievement-tabs button{background:transparent;border-bottom:2px solid transparent;white-space:nowrap;font-size:12px;color:#6a7164;padding:9px 0}
+.crew-achievement-tabs button[aria-pressed=true]{color:#23251f;border-color:#f26b1f;font-weight:700}
+.crew-achievement-tabs button:focus-visible{outline:2px solid #b34a07;outline-offset:-2px}
+.crew-stamp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.crew-stamp-card{display:flex;align-items:center;flex-direction:column;min-width:0;text-align:center;padding:17px 13px 21px;border:1px solid #d9ddd1;border-radius:3px;background:#fff}
+.crew-stamp-status{font:9px monospace;text-transform:uppercase;letter-spacing:.11em;color:#6a7164;margin-bottom:15px}
+.crew-stamp{border:1px solid #a94b11;outline:1px solid #a94b11;outline-offset:3px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding:3px;background:#fff;transform:rotate(-5deg)}
+.crew-stamp .crew-illustration,.crew-stamp .crew-original{width:100%;height:100%}
+.crew-stamp.is-upcoming{border-color:#c3c9b9;outline:1px dashed #c3c9b9;filter:grayscale(.65);opacity:.65;transform:rotate(4deg)}
+.crew-stamp-card .crew-stamp{padding:8px}
+.crew-stamp-card:nth-child(even) .crew-stamp{transform:rotate(5deg)}
+.crew-stamp-card h4{font-size:15px;line-height:1.25;font-weight:700;margin:20px 0 8px}
+.crew-stamp-card>p{font-size:11px;line-height:1.6;color:#6a7164;max-width:25ch;margin:0 0 15px}
+.crew-stamp-date{font:9px monospace;color:#7e8478;margin-top:auto}
+.crew-stamp-card.is-collected{border-color:#b3bd9f}
+.crew-stamp-card.is-collected .crew-stamp-status{color:#a94b11}
+.crew-achievement-caption{font-size:11px;line-height:1.6;color:#6a7164;margin-top:22px}
+.dark .crew-achievements,.dark .crew-stamp-card{background:#18181b;color:#fafafa}
+.dark .crew-achievement-tabs button[aria-pressed=true]{color:#fff}
+.dark .crew-stamp-card>p,.dark .crew-achievement-caption,.dark .crew-achievement-toolbar p{color:#b4baaa}
+@media(max-width:550px){.crew-stamp-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.crew-achievement-toolbar{align-items:flex-start;flex-direction:column;gap:10px}
+.crew-stamp-card{padding:15px 9px}
+.crew-stamp-card h4{font-size:13px}
+.crew-stamp-card>p{font-size:10px}
+}

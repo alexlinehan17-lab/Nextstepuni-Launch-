@@ -1,0 +1,73 @@
+.study-finish,.study-break{background:#fff;color:#23251f;font-family:'DM Sans',sans-serif}
+.study-finish{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(35px,6vw,90px);align-items:start;max-width:1190px;margin:0 auto;padding:80px 32px 70px;min-height:75vh}
+.study-crew-eyebrow{font:11px/1.5 'Apercu Mono Pro',monospace;text-transform:uppercase;letter-spacing:.15em;color:#6a7164}
+.study-debrief h1{font:800 clamp(36px,4vw,58px)/1.08 'DM Sans',sans-serif;letter-spacing:-.045em;margin:24px 0}
+.study-crew-intro{font-size:16px;line-height:1.7;color:#6a7164;max-width:44ch}
+.study-debrief form{margin-top:30px}
+.study-debrief fieldset{border:0;padding:0;min-width:0}
+.study-debrief legend{font-size:17px;font-weight:700;margin-bottom:17px}
+.study-debrief-modes{display:flex;gap:22px;margin-bottom:25px}
+.study-debrief-modes button{background:transparent;border-bottom:2px solid transparent;font-size:13px;padding:8px 0;text-align:left}
+.study-debrief-modes button[aria-pressed=true]{border-color:#f26b1f;font-weight:700}
+.study-debrief-modes span{display:block;font:10px monospace;color:#747b6f;margin-top:4px}
+.study-debrief #confidence-question{font-size:13px;margin:0 0 12px}
+.study-confidence{display:flex;flex-wrap:wrap;gap:7px}
+.study-confidence button{padding:9px 12px;border:1px solid #bdc4b5;border-radius:7px;background:#fff;font-size:12px}
+.study-confidence button[aria-pressed=true]{border-color:#23251f;background:#ff7913;box-shadow:2px 2px 0 #23251f}
+.study-confidence button:focus-visible,.study-debrief-modes button:focus-visible{outline:3px solid #a64208;outline-offset:3px}
+.study-reflection-label{display:grid;gap:10px;font-size:13px;margin-top:23px}
+.study-reflection-label textarea{padding:13px;border:1px solid #bcc4b2;border-radius:8px;resize:vertical;background:#fff;color:#23251f;line-height:1.6;width:100%}
+.study-reflection-label small{font-size:10px;color:#6a7164}
+.study-keep{margin-top:25px;width:100%;max-width:390px}
+.study-skip{display:block;margin-top:18px}
+.study-save-note{font-size:10px;color:#6a7164;line-height:1.6;max-width:43ch;margin-top:15px}
+.study-save-error{font-size:13px;color:#a83618;margin-top:16px}
+.study-receipt{padding:30px 28px 26px;position:relative;background:#fff;border:1px solid #e7e9e1;box-shadow:0 15px 38px #23251f12;transform:rotate(2deg);animation:study-receipt-arrive .65s cubic-bezier(.16,1,.3,1) both;min-width:0}
+.study-receipt::before,.study-receipt::after{content:'';position:absolute;left:-1px;right:-1px;height:9px;background:linear-gradient(135deg,#e9ebe5 25%,transparent 25%) -4px 0/14px 14px,linear-gradient(225deg,#e9ebe5 25%,transparent 25%) -4px 0/14px 14px;pointer-events:none}
+.study-receipt::before{top:-1px}
+.study-receipt::after{bottom:-1px;transform:rotate(180deg)}
+.study-receipt header{text-align:center}
+.study-receipt header>.study-crew-eyebrow{font-size:9px;color:#23251f;letter-spacing:.12em}
+.study-receipt .crew-illustration,.study-receipt .crew-original{width:145px;height:145px;margin:17px auto 6px}
+.study-receipt h2{font:750 clamp(22px,2.4vw,32px)/1.1 'DM Sans',sans-serif;letter-spacing:-.04em;margin:10px 0}
+.study-receipt header>p:last-child{font-size:12px;color:#6a7164;margin:14px 0 22px}
+.study-receipt dl{border-block:1px dashed #acb79d;padding:15px 0;margin:0}
+.study-receipt dl>div{display:flex;justify-content:space-between;align-items:baseline;gap:15px;font:11px/1.6 'Apercu Mono Pro',monospace;padding:3px 0}
+.study-receipt dt{text-transform:uppercase;flex-shrink:0}
+.study-receipt dd{text-align:right;overflow-wrap:anywhere;margin:0;max-width:65%}
+.study-receipt-confidence{text-transform:capitalize}
+.study-receipt-next{text-align:center;padding:20px 0;border-bottom:1px dashed #acb79d}
+.study-receipt-next>span{font-size:11px;color:#6a7164}
+.study-receipt-next>p{font-size:15px;font-weight:650;line-height:1.5;margin:8px 0;overflow-wrap:anywhere;white-space:pre-wrap;max-height:240px;overflow-y:auto}
+.study-receipt footer{display:flex;justify-content:space-between;padding:15px 0;font:10px monospace;text-transform:uppercase;border-bottom:1px dashed #acb79d}
+.study-receipt-signoff{text-align:center;font:italic 18px Georgia,serif;color:#a64208;margin:24px 0 4px}
+.study-break{max-width:750px;min-height:75vh;margin:auto;padding:42px 24px;text-align:center}
+.study-break-art{width:225px;margin:22px auto}
+.study-break-art .crew-illustration{width:225px;height:225px}
+.study-break h1{font:800 clamp(30px,4vw,49px)/1.1 'DM Sans',sans-serif;letter-spacing:-.045em;margin:20px 0}
+.study-break>p:not(.study-crew-eyebrow){color:#6a7164;font-size:14px;line-height:1.7}
+.study-break-context{display:grid;gap:7px;margin:27px 0 24px}
+.study-break-context strong{font-size:16px}
+.study-break-context span{font:11px monospace;color:#6a7164}
+.study-break .crew-primary{min-width:240px}
+.study-breathe-toggle{display:block;margin:24px auto 0}
+.study-breath-prompt{min-height:25px;margin:12px 0}
+.study-break-leave{color:#6a7164;font-size:11px;margin-top:12px}
+.study-break-art.is-breathing{animation:study-breathe 8s ease-in-out infinite}
+@keyframes study-breathe{0%,100%{transform:scale(.92)}
+50%{transform:scale(1.04)}
+}
+@keyframes study-receipt-arrive{from{opacity:0;translate:0 22px;rotate:-3deg}
+to{opacity:1;translate:0 0;rotate:0deg}
+}
+@media(max-width:800px){.study-finish{gap:30px;padding:65px 18px calc(105px + env(safe-area-inset-bottom));grid-template-columns:minmax(0,1fr)}
+.study-debrief{max-width:540px;margin:0 auto;width:100%}
+.study-receipt{max-width:420px;width:calc(100% - 16px);margin:15px auto 20px;transform:rotate(1deg)}
+.study-debrief h1{font-size:43px}
+.study-crew-intro{font-size:14px}
+.study-keep{max-width:none}
+.study-break{padding:28px 18px}
+.study-break-art,.study-break-art .crew-illustration{width:190px;height:190px}
+}
+@media(prefers-reduced-motion:reduce){.study-receipt,.study-break-art.is-breathing{animation:none}
+}

@@ -6,6 +6,7 @@ import { ModulesIcon, InnovationZoneIcon, LearningPathsIcon, MyJourneyIcon } fro
 import { getLastVisit } from './lastVisited';
 import { toDateKey } from './subjectData';
 import Avatar from './Avatar';
+import CrewIllustration from './CrewIllustration';
 import './student-screens.css';
 
 export interface StudentHomeContentProps {
@@ -53,7 +54,7 @@ export default function StudentHomeContent({ uid, userName, userAvatarSeed, hasU
     <div className="sh-date"><span className="student-eyebrow">{now.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' })}</span>{onOpenMobileProfile && <button type="button" className="sh-profile" onClick={onOpenMobileProfile} aria-label="Open profile and settings"><Avatar seed={userAvatarSeed || userName || 'student'} className="h-10 w-10" />{hasUnreadNotifications && <i aria-label="Unread notifications" />}</button>}</div>
     <section className="sh-hero" aria-label="Welcome home">
       <div className="sh-greeting"><h1>{greeting}{firstName ? ',' : '.'}{firstName && <><br /><em>{firstName}.</em></>}</h1><p>Make a little room for what comes next.</p>{onGoToStudy && <button type="button" className="student-primary" data-coach="study" onClick={onGoToStudy}>Start a study session <ArrowUpRight size={21} /></button>}{course && <button type="button" className="student-text-action" onClick={() => onSelectModule(course.id)}>Or continue your module <ArrowRight size={19} /></button>}</div>
-      <img className="sh-character" src="/assets/landing/starguy-door.png" alt="" />
+      <div className="sh-character crew-home-character"><CrewIllustration character={userAvatarSeed || 'star-crew:beanie'} /></div>
       <aside className="sh-week"><p className="student-eyebrow">Your week so far</p><strong>{sessions.length ? duration : 'A fresh start.'}</strong><p>{sessions.length ? `of focused study across ${sessions.length} session${sessions.length === 1 ? '' : 's'}` : 'Your record grows as you go.'}</p><div className="sh-week-days" aria-label="Study days this week">{days.map((day, index) => <span key={day} title={day}><i className={sessions.some(session => session.date === day) ? 'studied' : ''} aria-label={`${day}: ${sessions.some(session => session.date === day) ? 'studied' : 'no sessions'}`} /><small>{'MTWTFSS'[index]}</small></span>)}</div><button type="button" className="student-text-action" onClick={onGoToDashboard}>Your progress <ArrowUpRight size={19} /></button></aside>
     </section>
     <div className="sh-section-heading"><h2>Keep a good thing going.</h2><p>A chapter to finish. A world to explore.</p></div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import SubjectAvatar from './SubjectAvatar';
+import CrewEmptyState from './CrewEmptyState';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { type StudyBlock } from './subjectData';
 import { generateWeeklyGoals, getWeekNumber, type GamificationState } from '../gamificationConfig';
@@ -38,7 +39,7 @@ export default function HomeNextStep({ blocks, completions, hasProfile, ready = 
         })}
         {blocks.length > 4 && onPlan && <button type="button" className="home-text-action" onClick={onPlan}>See all {blocks.length} sessions</button>}
         {done === blocks.length && <p className="home-supporting">Your planned sessions are done. Leave some room to rest.</p>}
-      </> : <div className="home-empty-plan"><p>{hasProfile ? 'Room to breathe today.' : 'Make a little room for learning.'}</p><span>{hasProfile ? 'Nothing scheduled. Take the day off, or start a session when you’re ready.' : 'Add your subjects to build a plan that fits your week.'}</span>{(hasProfile ? onStudy : onPlan) && <button type="button" className="home-text-action" onClick={hasProfile ? onStudy : onPlan}>{hasProfile ? 'Start a session' : 'Set up your plan'} <ArrowRight size={15} aria-hidden="true" /></button>}</div>}
+      </> : <CrewEmptyState character={hasProfile ? 'star-crew:snoozer' : 'star-crew:maker'} eyebrow={hasProfile ? 'A little breathing room' : 'Your week starts here'} title={hasProfile ? 'Room to breathe today.' : 'Make a little room for learning.'} action={hasProfile ? 'Start a session' : 'Set up your plan'} onAction={hasProfile ? onStudy : onPlan}>{hasProfile ? 'Nothing scheduled. Take the day off, or start a session when you’re ready.' : 'Add your subjects to build a plan that fits your week.'}</CrewEmptyState>}
     </section>
     {goal && <section className="home-week" aria-label="Weekly study goal"><div className="home-section-heading"><span className="home-eyebrow">This week</span><button type="button" onClick={onProgress}>Progress <ArrowRight size={14} aria-hidden="true" /></button></div><h2>{remaining === 0 ? 'Your weekly goal, reached.' : `${remaining === 1 ? 'One more session' : `${remaining} more sessions`} to reach your goal.`}</h2><p className="home-supporting">{current} of {goal.target} sessions completed</p><div className="home-week-bars" role="progressbar" aria-label="Weekly study sessions" aria-valuemin={0} aria-valuemax={goal.target} aria-valuenow={Math.min(current, goal.target)}>{Array.from({ length: goal.target }, (_, index) => <span key={index} data-complete={index < current} />)}</div></section>}
   </>;
