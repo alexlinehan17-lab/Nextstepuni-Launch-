@@ -38,7 +38,7 @@ vi.mock('../paperTrailData', () => {
   };
 });
 
-const NOTICE = 'The paper archive is temporarily unavailable.';
+const NOTICE = 'Some papers may be temporarily unavailable.';
 const start = () => render(<PaperTrail studentSubjects={['Mathematics']} />);
 /** Let the probe's promise chain and any resulting state update settle. */
 const settle = () => act(() => new Promise<void>(resolve => setTimeout(resolve, 0)));
@@ -61,7 +61,7 @@ describe('Paper Trail archive-outage notice', () => {
     expect(await screen.findByText(NOTICE)).toBeInTheDocument();
     expect(fetchMock).toHaveBeenCalledTimes(1);
     expect(fetchMock.mock.calls[0][0]).toContain(encodeURIComponent('papers/lc/mathematics/2026/paper/one.pdf'));
-    expect(fetchMock.mock.calls[0][1]).toEqual({ headers: { Range: 'bytes=0-1' } });
+    expect(fetchMock.mock.calls[0][1]).toEqual({ headers: { Range: 'bytes=0-1' }, signal: expect.any(AbortSignal) });
 
     fireEvent.click(screen.getByRole('button', { name: /^Mathematics\s*Higher\s*level$/ }));
     expect(screen.getByRole('region', { name: 'Mathematics exam papers' })).toBeInTheDocument();

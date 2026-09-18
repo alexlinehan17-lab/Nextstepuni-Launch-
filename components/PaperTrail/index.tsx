@@ -225,9 +225,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   }, [uid]);
   const searchBoxRef = useRef<HTMLDivElement | null>(null);
 
-  // Archive outage banner — one tiny probe per page load; shown only on a
-  // CONFIRMED server-side refusal (billing/rules/outage), never on the
-  // student's own connection problems (see archiveHealth.ts).
+  // Sample availability without blocking browsing or reporting local network
+  // failures as an archive outage. A later visit can detect recovery.
   const [archiveDown, setArchiveDown] = useState(false);
   useEffect(() => {
     const subj = PAPER_TRAIL_SUBJECTS.find(s => (PAPER_TRAIL_INDEX[s.id] ?? []).some(e => e.papers.length > 0));
@@ -248,11 +247,10 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
    *  desktop the subject view IS the home screen). */
   const archiveDownBanner = archiveDown ? (
     <div className="pt-archive-alert" role="status">
-      <p className="pt-archive-alert-title">The paper archive is temporarily unavailable.</p>
+      <p className="pt-archive-alert-title">Some papers may be temporarily unavailable.</p>
       <p>
-        Papers and marking schemes won’t open right now — the problem is on our side, not your
-        connection. Your saved papers, progress and review decks are safe; please check back a
-        little later.
+        We couldn’t reach a document in the archive. You can keep browsing and try opening
+        your paper again later. Your study progress is unchanged.
       </p>
     </div>
   ) : null;

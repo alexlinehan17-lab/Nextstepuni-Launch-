@@ -20,8 +20,9 @@ describe('classifyProbe', () => {
     expect(classifyProbe(206)).toBe('ok');
   });
 
-  it('reads a missing object as ok — one 404 says nothing about the archive', () => {
-    expect(classifyProbe(404)).toBe('ok');
+  it('treats a missing object or malformed request as inconclusive', () => {
+    expect(classifyProbe(404)).toBe('unknown');
+    expect(classifyProbe(400)).toBe('unknown');
   });
 
   it('reads server-side refusals as down (402 billing, 403 rules, 5xx outage)', () => {
@@ -44,6 +45,7 @@ describe('archiveHealth', () => {
   });
   afterEach(() => {
     vi.unstubAllGlobals();
+    vi.useRealTimers();
   });
 
   it('probes with a 2-byte range request and caches a conclusive result', async () => {
@@ -52,7 +54,7 @@ describe('archiveHealth', () => {
     await expect(archiveHealth(URL)).resolves.toBe('down');
     await expect(archiveHealth(URL)).resolves.toBe('down');
     expect(fetchMock).toHaveBeenCalledTimes(1);
-    expect(fetchMock).toHaveBeenCalledWith(URL, { headers: { Range: 'bytes=0-1' } });
+    expect(fetchMock).toHaveBeenCalledWith(URL, { headers: { Range: 'bytes=0-1' }, signal: expect.any(AbortSignal) });
   });
 
   it('caches ok results too — one probe per page load', async () => {
@@ -72,5 +74,31 @@ describe('archiveHealth', () => {
     await expect(archiveHealth(URL)).resolves.toBe('unknown');
     await expect(archiveHealth(URL)).resolves.toBe('ok');
     expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+
+  it('checks again after a minute so a recovered archive does not stay down', async () => {
+    vi.useFakeTimers();
+    const fetchMock = vi.fn().mockResolvedValueOnce({ status: 503 }).mockResolvedValueOnce({ status: 206 });
+    vi.stubGlobal('fetch', fetchMock);
+    await expect(archiveHealth(URL)).resolves.toBe('down');
+    await vi.advanceTimersByTimeAsync(60_001);
+    await expect(archiveHealth(URL)).resolves.toBe('ok');
+  });
+
+  it('cancels a full response body when a server ignores the Range header', async () => {
+    const cancel = vi.fn().mockResolvedValue(undefined);
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ status: 200, body: { cancel } }));
+    await expect(archiveHealth(URL)).resolves.toBe('ok');
+    expect(cancel).toHaveBeenCalledTimes(1);
+  });
+
+  it('aborts a stalled request and allows a later retry', async () => {
+    vi.useFakeTimers();
+    vi.stubGlobal('fetch', vi.fn().mockImplementation((_url, { signal }) => new Promise((_resolve, reject) => {
+      signal.addEventListener('abort', () => reject(new Error('aborted')));
+    })));
+    const pending = archiveHealth(URL);
+    await vi.advanceTimersByTimeAsync(8_000);
+    await expect(pending).resolves.toBe('unknown');
   });
 });

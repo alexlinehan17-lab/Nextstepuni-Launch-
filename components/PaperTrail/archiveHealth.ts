@@ -1,57 +1,37 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- *
- * Paper Trail — archive health probe.
- *
- * When the Storage backend refuses media downloads wholesale (billing lapse →
- * HTTP 402, rules misdeploy → 403, provider outage → 5xx), every paper in the
- * tool fails one by one with no explanation. This module makes ONE tiny
- * range-request against a known corpus document and classifies the archive as
- * up or down, so the home screen can show a single honest banner instead of
- * letting students discover the outage paper by paper.
- *
- * The probe costs two bytes of billed download, runs at most once per page
- * load (module-level cache; an inconclusive network error is not cached so a
- * flaky connection can re-probe on the next mount), and NEVER blocks the UI —
- * callers render normally and only react to a confirmed 'down'.
- */
+/** @license SPDX-License-Identifier: Apache-2.0 */
 
 export type ArchiveHealth = 'ok' | 'down' | 'unknown';
 
-/** Classify a probe response status. Pure — unit-tested in
- *  test/ptArchiveHealth.test.ts.
- *  - 2xx (200 full / 206 partial) → the archive serves documents: ok.
- *  - 404 → THIS object is missing, which says nothing about the archive: ok.
- *  - any other 4xx/5xx (402 billing, 403 rules, 5xx outage) → down.
- *  - null (network error / no response) → unknown: the student's own
- *    connection may be at fault, so no banner is shown. */
+// A failed sample warns that papers may be unavailable; it does not prove
+// every document is down. Missing objects and client errors are inconclusive.
 export function classifyProbe(status: number | null): ArchiveHealth {
   if (status == null) return 'unknown';
   if (status >= 200 && status < 300) return 'ok';
-  if (status === 404) return 'ok';
-  if (status >= 400) return 'down';
+  if ([402, 403, 429].includes(status) || status >= 500) return 'down';
   return 'unknown';
 }
 
-let cached: Promise<ArchiveHealth> | null = null;
+let cached: { url: string; expires: number; result: Promise<ArchiveHealth> } | null = null;
 
-/** Probe the archive once per page load. `probeUrl` should be any real corpus
- *  document URL (the caller picks the first paper in the index). */
+/** Share concurrent probes, but check for recovery on a later visit. Cancel
+ * the body if a server ignores the two-byte range. */
 export function archiveHealth(probeUrl: string): Promise<ArchiveHealth> {
-  if (!cached) {
-    cached = fetch(probeUrl, { headers: { Range: 'bytes=0-1' } })
-      .then(r => classifyProbe(r.status))
-      .catch(() => 'unknown' as ArchiveHealth);
-    // An inconclusive probe must not stick for the rest of the session.
-    cached.then(h => {
-      if (h === 'unknown') cached = null;
-    });
-  }
-  return cached;
+  if (cached?.url === probeUrl && cached.expires > Date.now()) return cached.result;
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 8_000);
+  const result = fetch(probeUrl, {
+    headers: { Range: 'bytes=0-1' }, signal: controller.signal,
+  }).then(response => {
+    void response.body?.cancel().catch(() => {});
+    return classifyProbe(response.status);
+  }).catch(() => 'unknown' as ArchiveHealth).finally(() => clearTimeout(timeout));
+  cached = { url: probeUrl, expires: Date.now() + 60_000, result };
+  void result.then(health => {
+    if (health === 'unknown' && cached?.result === result) cached = null;
+  });
+  return result;
 }
 
-/** Test hook — resets the module cache between cases. */
 export function resetArchiveHealthForTests(): void {
   cached = null;
 }

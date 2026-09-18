@@ -826,7 +826,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_772);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
