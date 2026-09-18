@@ -82,6 +82,13 @@ export interface PaperTile {
   kind: TileKind;
   edge: { variant: (typeof PAPER_EDGES)[number]; seed: number };
   cost: number;
+  // Old installed clients can still draw the pond without knowing this sprite.
+  appearance?: "capybara";
+}
+export function paperTileKind(tile: Pick<PaperTile, "kind" | "appearance">): TileKind {
+  return tile.kind === "water" && tile.appearance === "capybara"
+    ? "capybara"
+    : tile.kind;
 }
 export interface PaperIsland {
   version: 1;
@@ -223,7 +230,8 @@ export function applyPaperCommand(
         id: command.requestId,
         q: command.q,
         r: command.r,
-        kind: command.kind,
+        kind: command.kind === "capybara" ? "water" : command.kind,
+        ...(command.kind === "capybara" ? { appearance: "capybara" as const } : {}),
         cost,
         edge: {
           variant: PAPER_EDGES[Math.min(3, Math.floor(random() * 4))],

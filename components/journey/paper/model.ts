@@ -70,6 +70,7 @@ export const shelfGroups = [
 export type ShelfGroup = (typeof shelfGroups)[number];
 const nature = new Set(["Terrain", "Landscapes"]);
 const first = [
+  "capybara",
   "meadow",
   "woodland",
   "water",
