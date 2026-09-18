@@ -6,6 +6,20 @@
   --ink-primary: #23251f;
   --ink-muted: #77756e;
   --outline-strong: #393b32;
+  /* The legacy inline-colour bridge in index.html reads these older tokens.
+     Keep that bridge on the same white-paper palette when an account has a
+     saved dark-mode preference, including on native iOS. */
+  --text-primary: #23251f;
+  --text-body: #494640;
+  --text-muted: #64615b;
+  --text-label: #69645b;
+  --bg-page: #fff;
+  --bg-card: #fff;
+  --bg-card-soft: #f9f9f7;
+  --bg-card-cream: #fff;
+  --border-strong: #393b32;
+  --border-soft: #d0cdc8;
+  --border-faint: rgba(0, 0, 0, .07);
   color: #23251f;
   background: #fff;
   color-scheme: light;
