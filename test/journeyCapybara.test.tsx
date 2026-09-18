@@ -6,7 +6,8 @@ import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 import { TileShelf } from '../components/journey/paper/MapControls';
 import { TilePortrait } from '../components/journey/paper/TileArt';
 import { vertices } from '../components/journey/paper/geometry';
-import { applyPaperCommand, createPaperIsland, type PaperProgress } from '../functions/src/paperIslandModel';
+import { applyPaperCommand, createPaperIsland, paperTileKind, type PaperProgress } from '../functions/src/paperIslandModel';
+import { catalogue } from '../functions/src/paperCatalogue';
 
 describe('The quiet capybara in Journey', () => {
   const scrollTo = HTMLElement.prototype.scrollTo;
@@ -33,13 +34,21 @@ describe('The quiet capybara in Journey', () => {
     const command = { action: 'place', kind: 'capybara', q: -2, r: 0, revision: 0, requestId: 'capybara-purchase-001' } as const;
     const placed = applyPaperCommand(account, command);
     expect(placed.totalSpent).toBe(120);
-    expect(placed.state.tiles.at(-1)).toMatchObject({ kind: 'capybara', q: -2, r: 0, cost: 120 });
+    expect(placed.state.tiles.at(-1)).toMatchObject({ kind: 'water', appearance: 'capybara', q: -2, r: 0, cost: 120 });
+    expect(paperTileKind(placed.state.tiles.at(-1)!)).toBe('capybara');
+    const legacyKinds = new Set(catalogue.filter(tile => tile.id !== 'capybara').map(tile => tile.id));
+    expect(placed.state.tiles.every(tile => legacyKinds.has(tile.kind as Exclude<typeof tile.kind, 'capybara'>))).toBe(true);
     const saved = { paperIsland: placed.state, pointsData: { totalEarned: placed.totalEarned, totalSpent: placed.totalSpent } };
     expect(applyPaperCommand(saved, command).totalSpent).toBe(120);
     expect(applyPaperCommand(saved, { action: 'open' }).state.tiles).toEqual(placed.state.tiles);
     const undo = applyPaperCommand(saved, { action: 'undo', revision: 1, requestId: 'capybara-undo-001' });
     expect(undo.totalSpent).toBe(0);
     expect(undo.state.tiles).toEqual(account.paperIsland!.tiles);
+  });
+
+  it('leaves ordinary ponds and earlier tiles unchanged', () => {
+    expect(paperTileKind({ kind: 'water' })).toBe('water');
+    for (const tile of createPaperIsland().tiles) expect(paperTileKind(tile)).toBe(tile.kind);
   });
 
   it('reduces the sprite and contains its base at the real tile edges without clipping its head', () => {
