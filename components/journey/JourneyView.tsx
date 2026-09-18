@@ -20,6 +20,7 @@ import JourneyWelcome from "./JourneyWelcome";
 import { usePaperIsland } from "../../hooks/usePaperIsland";
 import {
   knownLandmarks,
+  paperTileKind,
   PAPER_LANDMARKS,
   type PaperDiscoveryId,
 } from "../../functions/src/paperIslandModel";
@@ -76,7 +77,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     () =>
       island
         ? [
-            ...island.tiles.map((t) => piece(t.q, t.r, t.kind, t.edge)),
+            ...island.tiles.map((t) => piece(t.q, t.r, paperTileKind(t), t.edge)),
             ...knownLandmarks(island.tiles).map((t) => piece(t.q, t.r, t.kind)),
           ]
         : [],
@@ -91,7 +92,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
       log:
         island?.tiles
           .filter((t) => t.cost > 0)
-          .map((t) => ({ kind: t.kind, cost: t.cost })) ?? [],
+          .map((t) => ({ kind: paperTileKind(t), cost: t.cost })) ?? [],
     }),
     [placed, balance, island],
   );

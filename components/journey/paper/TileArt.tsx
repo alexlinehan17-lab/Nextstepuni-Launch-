@@ -8,6 +8,7 @@ import {
   boundaryEdges,
   PAPER_DEPTH,
   points,
+  vertices,
   type GroundCell,
 } from "./geometry";
 
@@ -26,6 +27,9 @@ export function Scenery({
   const id = useId(),
     spec = tileById[kind],
     size = 202 * spec.artScale,
+    offsetY = "artOffsetY" in spec ? spec.artOffsetY : 0,
+    containBase = "containBase" in spec && spec.containBase,
+    footprint = vertices(),
     folder = "/journey-art/tiles";
   return (
     <g
@@ -35,6 +39,17 @@ export function Scenery({
       data-scenery={kind}
     >
       <defs>
+        {containBase && (
+          <clipPath id={`${id}-base`}>
+            {/* Keep tall scenery visible above the tile, but contain its base
+                within the same side and front edges as the paper surface. */}
+            <polygon points={[
+              { x: footprint[5].x, y: -size },
+              { x: footprint[1].x, y: -size },
+              ...footprint.slice(2, 5),
+            ].map((p) => `${p.x},${p.y}`).join(" ")} />
+          </clipPath>
+        )}
         <filter id={id} colorInterpolationFilters="sRGB">
           <feColorMatrix
             type="matrix"
@@ -46,10 +61,11 @@ export function Scenery({
       <image
         href={`${folder}/${kind}.webp`}
         x={-size / 2}
-        y={-size * 0.77 + 14}
+        y={-size * 0.77 + 14 + offsetY}
         width={size}
         height={size}
         filter={`url(#${id})`}
+        clipPath={containBase ? `url(#${id}-base)` : undefined}
       />
     </g>
   );
