@@ -1,5 +1,16 @@
 import {expansion} from './paperExpansion';
 export const catalogue = [
+  {
+    "id": "capybara",
+    "name": "The quiet capybara",
+    "category": "Little places",
+    "price": 120,
+    "description": "A sleepy capybara, a cool little pool, and one perfectly balanced orange.",
+    "isNew": true,
+    "artScale": 0.76,
+    "artOffsetY": -14,
+    "containBase": true
+  },
   ...expansion,
   {
     "id": "treehouse",
