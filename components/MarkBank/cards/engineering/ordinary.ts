@@ -218,9 +218,12 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-ol-q3-b", topicId: "eng-2-6", conceptId: "how-carry-out-each-following-heat",
     section: "A", questionRef: "2021 OL Q3(b)",
     questionText: "Describe how to carry out each of the following heat treatment processes: (i) To harden the point of a centre punch. (ii) To temper the cutting edge of a cold chisel.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Point A of the centre punch is hardened by heating the point to approx.", marks: 16, accepts: ["800⁰C, i.e. a cherry red color, or until the point loses its magnetic properties.","The point is then immediately quenched in water or oil.","Following the hardening process, the cutting edge is reheated to a suitable temperature, which is below the reddening temperature and then cooled in oil or water. The correct temperature is often displayed by a colour i.e. blue / purple is a suitable indicator for the cutting edge of a chisel."] },
+    { id: "r-1", kind: "point", verbatim: "Point A of the centre punch is hardened by heating the point to approx.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "800⁰C, i.e. a cherry red color, or until the point loses its magnetic properties.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "The point is then immediately quenched in water or oil.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Following the hardening process, the cutting edge is reheated to a suitable temperature, which is below the reddening temperature and then cooled in oil or water. The correct temperature is often displayed by a colour i.e. blue / purple is a suitable indicator for the cutting edge of a chisel.", marks: null },
     ],
   } as SecCard,
   {
@@ -942,9 +945,11 @@ export const CARDS: SecCard[] = [
     id: "eng-2022-ol-q4-a-ii", topicId: "eng-2-10", conceptId: "any-flames-produced-when-using-oxy",
     section: "A", questionRef: "2022 OL Q4(a)(ii)",
     questionText: "Name any two flames which are produced when using an oxy-acetylene torch.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"orderedSplit","notation":"One part @ 3 marks; One part @ 2 marks"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Neutral flame Oxidising flame Carbursing flame", marks: 5 },
+    { id: "r-1", kind: "point", verbatim: "Neutral flame", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Oxidising flame", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Carbursing flame", marks: null },
     ],
   } as SecCard,
   {
@@ -1148,13 +1153,25 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q7-c-i", topicId: "eng-2-16", conceptId: "suitable-electronic-component-will-emit-light",
+    section: "A", questionRef: "2022 OL Q7(c)(i)",
+    questionText: "Name a suitable electronic component that will emit light.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Light bulb / L.E.D.", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q7-c-ii", topicId: "eng-2-16", conceptId: "suitable-electronic-component-used-adjust-speed",
     section: "A", questionRef: "2022 OL Q7(c)(ii)",
     questionText: "Name a suitable electronic component used to adjust the speed of a 9V DC motor.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Outside calipers - For gauging the outside diameter of round bars.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Variable resistor", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Variable resistor", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1165,11 +1182,9 @@ export const CARDS: SecCard[] = [
     id: "eng-2022-ol-q7-c-iii", topicId: "eng-2-16", conceptId: "suitable-electronic-component-used-start-stop",
     section: "A", questionRef: "2022 OL Q7(c)(iii)",
     questionText: "Name a suitable electronic component used to start and stop the flow of current in a circuit.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Digital Vernier calipers - Used for accurately measuring the diameter of round bars or internal diameter of holes.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Measurement can be read directly from a digital display.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Switch", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Switch", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1180,10 +1195,9 @@ export const CARDS: SecCard[] = [
     id: "eng-2022-ol-q7-c-iv", topicId: "eng-2-16", conceptId: "suitable-electronic-component-used-provide-electrical",
     section: "A", questionRef: "2022 OL Q7(c)(iv)",
     questionText: "Name a suitable electronic component used to provide electrical energy to a circuit.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Engineers protractor - Used for checking or accurately marking out angles on material.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Battery / PV Solar panel", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Battery / PV Solar panel", marks: 6 },
     ],
   } as SecCard,
   {
@@ -1484,9 +1498,9 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2023-ol-q3-d-i", topicId: "eng-3-8", conceptId: "toughness-areas-where-robotic-technology-used",
+    id: "eng-2023-ol-q3-d-i", topicId: "eng-3-8", conceptId: "toughness-or-areas-where-robotic-technology",
     section: "A", questionRef: "2023 OL Q3(d)(i)",
-    questionText: "Explain any two of the following metal properties: Toughness, Describe two areas where robotic technology is used in health care.",
+    questionText: "Explain any two of the following metal properties: Toughness, OR Describe two areas where robotic technology is used in health care.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.", marks: 6, accepts: ["Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.","Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."] },
@@ -1497,9 +1511,9 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2023-ol-q3-d-ii", topicId: "eng-3-8", conceptId: "ductility-ways-exoskeleton-suits-can-help",
+    id: "eng-2023-ol-q3-d-ii", topicId: "eng-3-8", conceptId: "ductility-or-ways-exoskeleton-suits-can",
     section: "A", questionRef: "2023 OL Q3(d)(ii)",
-    questionText: "Explain any two of the following metal properties: Ductility, State two ways in which exoskeleton suits can help the recovery process.",
+    questionText: "Explain any two of the following metal properties: Ductility, OR State two ways in which exoskeleton suits can help the recovery process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.", marks: 6, accepts: ["Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."] },
@@ -1787,12 +1801,12 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2023-ol-q6-c-i", topicId: "eng-2-10", conceptId: "lathe-processes-used-manufacture-thumbscrew-does",
+    id: "eng-2023-ol-q6-c-i", topicId: "eng-2-10", conceptId: "lathe-processes-used-manufacture-thumbscrew-or",
     section: "A", questionRef: "2023 OL Q6(c)(i)",
-    questionText: "Name two lathe processes used in the manufacture of the thumbscrew. What does CNC stand for?",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    questionText: "Name two lathe processes used in the manufacture of the thumbscrew. OR What does CNC stand for?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Knurling / Parting off.", marks: null },
+    { id: "r-1", kind: "alt", verbatim: "Knurling / Parting off.", marks: 6, accepts: ["CNC - Computer Numerical Control."] },
     ],
   } as SecCard,
   {
@@ -1802,7 +1816,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q6-c-ii", topicId: "eng-2-13", conceptId: "processes-named-you-6-c-i",
     section: "A", questionRef: "2023 OL Q6(c)(ii)",
-    questionText: "Describe one of the processes named by you, at 6(c)(i) above. Identify one other CNC process.",
+    questionText: "Describe one of the processes named by you, at 6(c)(i) above. OR Identify one other CNC process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "A knurling tool is set on centre and at 90° against a piece of round section bar. The lathe is set so that the chuck revolves at a low speed. The knurling tool is then pressed against the rotating steel bar and pressure is slowly increased until the tool produces a pattern on the bar.", marks: 6, accepts: ["Parting off Secure the parting off tool in the tool post, square to the workpiece. Check that the tool tip is in line with the centre of the workpiece. Align the tool tip outside of the line where you require to cut. Select a suitable cutting speed and direction and turn on the lathe. Engage the tool tip into the turning workpiece and cut in a continuous motion.","A CNC lathe / Lazer machine / Milling machine."] },
@@ -2243,10 +2257,9 @@ export const CARDS: SecCard[] = [
     id: "eng-2024-ol-q4-c-iii", topicId: "eng-2-10", conceptId: "reason-why-flux-required-when-soldering",
     section: "A", questionRef: "2024 OL Q4(c)(iii)",
     questionText: "State one reason why flux is required when soldering.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Flux helps to remove oxide layer which forms on the surface of metals being soldered. The flux increases the wetting ability of the solder, causing it to flow more uniformly over the surfaces being soldered, thus a better more successful joint is achieved.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "nylon insert", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Flux helps to remove oxide layer which forms on the surface of metals being soldered. The flux increases the wetting ability of the solder, causing it to flow more uniformly over the surfaces being soldered, thus a better more successful joint is achieved.", marks: 5 },
     ],
     questionFigure: {
           "candId": "engineering-2024-OL-paper-q4ci-art",
@@ -2484,7 +2497,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one advantage of using crocodile clips when assembling test circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.", marks: 6, accepts: ["Advantage of using crocodile clips Using crocodile clips helps to design the layout of circuits as components can be interchanged easily without the need for soldering."] },
+    { id: "r-1", kind: "anyN", verbatim: "Using crocodile clips helps to design the layout of circuits as components can be interchanged easily without the need for soldering.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -2675,27 +2688,6 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2025-ol-q2-c-i", topicId: "eng-3-14", conceptId: "suitable-material-each-parts-labelled-mini",
-    section: "A", questionRef: "2025 OL Q2(c)(i)",
-    questionText: "Name a suitable material for each of the parts labelled on the mini excavator.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Material: Vinyl", marks: 4 },
-    ],
-    questionFigure: {
-          "candId": "engineering-2025-OL-paper-q2ci-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q2ci-art.png",
-          "srcHash": "eca76676c9eba7ed94cabb28fa290dfe",
-          "alt": "The table or diagram printed with 2025 OL Q2(c)(i), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q2-c-ii", topicId: "eng-3-14", conceptId: "reason-selection-each-material-named",
     section: "A", questionRef: "2025 OL Q2(c)(ii)",
     questionText: "State one reason for the selection of each material named.",
@@ -2720,9 +2712,10 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q3-a", topicId: "eng-2-6", conceptId: "reason-why-each-following-heat-treatment",
     section: "A", questionRef: "2025 OL Q3(a)",
     questionText: "Explain the reason why each of the following heat treatment processes are carried out: (i) Normalising, (ii) Hardening.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 14,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.", marks: 14, accepts: ["When high carbon steel is heated to a cherry red it undergoes structural changes, and rapid cooling does not allow it to revert to its normal soft condition. The high carbon steel becomes hard resisting indentation, scratching and wear. The point of a centre punch is hardened to ensure it retains its point during use."] },
+    { id: "r-1", kind: "point", verbatim: "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "When high carbon steel is heated to a cherry red it undergoes structural changes, and rapid cooling does not allow it to revert to its normal soft condition. The high carbon steel becomes hard resisting indentation, scratching and wear. The point of a centre punch is hardened to ensure it retains its point during use.", marks: null },
     ],
   } as SecCard,
   {
@@ -2759,7 +2752,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q4-c-i", topicId: "eng-2-10", conceptId: "benefit-using-r-clip-shown",
     section: "A", questionRef: "2025 OL Q4(c)(i)",
     questionText: "Outline one benefit of using the R‐clip shown.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "R‐clips are similar in function to split pins and linchpins.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Compared to split pins, they are easier to remove and are re‐ usable. They are particularly common in automotive and construction applications, such as securing hitch pins in trailers or locking parts in place on equipment.", marks: null },
@@ -2781,9 +2774,9 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q4-c-ii", topicId: "eng-1-5", conceptId: "suggest-method-joining-sheet-aluminium",
     section: "A", questionRef: "2025 OL Q4(c)(ii)",
     questionText: "Suggest one method of joining sheet aluminium.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pop riveting / Machine screws.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Pop riveting / Machine screws.", marks: 5 },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q4civ-art",
@@ -2802,7 +2795,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q4-c-iii", topicId: "eng-2-10", conceptId: "reasons-why-flux-required-when-soldering",
     section: "A", questionRef: "2025 OL Q4(c)(iii)",
     questionText: "Give two reasons why flux is required when soldering.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flux cleans the surfaces and protects them from oxidation during the soldering process, ensuring better adhesion.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Flux enhances the wetting properties of the solder, allowing it to flow more easily and uniformly across the surfaces being joined.", marks: null },
@@ -2824,9 +2817,10 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q4-c-iv", topicId: "eng-2-10", conceptId: "tool-shown-opposite-use-tool",
     section: "A", questionRef: "2025 OL Q4(c)(iv)",
     questionText: "Name tool A shown opposite and give one use for this tool.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Name: Allen key Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.", marks: 8 },
+    { id: "r-1", kind: "point", verbatim: "Name: Allen key", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle.", marks: null },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q4civ-art",
@@ -2915,7 +2909,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name any two centre lathe processes used to manufacture the stunt bike pegs. OR Outline one advantage of using CAD in the design and manufacturing process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Knurling Drilling", marks: 6, accepts: ["CAD software enables developers to work more quickly, cut production costs and decrease errors."] },
+    { id: "r-1", kind: "alt", verbatim: "Knurling", marks: 6, accepts: ["Drilling","CAD software enables developers to work more quickly, cut production costs and decrease errors."] },
     ],
   } as SecCard,
   {
@@ -2928,7 +2922,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe any one of the processes named by you, at Q6(c)(i) above. OR Name one CNC machine commonly used in the engineering workshop.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Computer numerically controlled (CNC) lathes are commonly used in the engineering workshop.", marks: 6 },
+    { id: "r-1", kind: "alt", verbatim: "A knurling tool is fitted to the tool post and set at 90° to work. The centre lathe is then turned on at a very slow speed. The knurling tool is moved into the workpiece. Two opposing rollers which press into the piece are moved parallel to the axis of the work producing a diamond pattern on the surface of the material. A lubricant should be used on the workpiece and rollers to help reduce friction.", marks: 6, accepts: ["Computer numerically controlled (CNC) lathes are commonly used in the engineering workshop."] },
     ],
   } as SecCard,
   {
@@ -2941,7 +2935,20 @@ export const CARDS: SecCard[] = [
     questionText: "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A knurling tool is fitted to the tool post and set at 90° to work. The centre lathe is then turned on at a very slow speed. The knurling tool is moved into the workpiece. Two opposing rollers which press into the piece are moved parallel to the axis of the work producing a diamond pattern on the surface of the material. A lubricant should be used on the workpiece and rollers to help reduce friction.", marks: 8, accepts: ["Wear goggles.","Protective clothing i.e. gloves","High precision and capable of producing highly complex parts."] },
+    { id: "r-1", kind: "alt", verbatim: "Wear goggles.", marks: 8, accepts: ["Protective clothing i.e. gloves","High precision and capable of producing highly complex parts."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q7-a-i", topicId: "eng-3-12", conceptId: "type-fit-required-allows-axle-rotate",
+    section: "A", questionRef: "2025 OL Q7(a)(i)",
+    questionText: "Name the type of fit required, which allows the axle to rotate inside the axle bracket on the Model Off‐Road Sand Car shown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Clearance fit.", marks: 4 },
     ],
   } as SecCard,
   {
@@ -2954,7 +2961,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one advantage of using a Printed Circuit Board (PCB) for the assembly of circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes.", marks: 6, accepts: ["Measurements can be read directly from a digital display.","PCB Ensures the correct assembly of components as all component positions are identified on the PCB.","Quicker to assemble and ensures better circuit operation when complete."] },
+    { id: "r-1", kind: "alt", verbatim: "Ensures the correct assembly of components as all component positions are identified on the PCB.", marks: 6, accepts: ["Quicker to assemble and ensures better circuit operation when complete."] },
     ],
   } as SecCard,
   {
@@ -2967,7 +2974,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two examples where a Printed Circuit Board (PCB) may be used.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Used to check the diameter of twist drills.", marks: 6, accepts: ["Use Smart phones Computers"] },
+    { id: "r-1", kind: "alt", verbatim: "Smart phones", marks: 6, accepts: ["Computers"] },
     ],
   } as SecCard,
   {
@@ -2980,7 +2987,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the term microchip.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Micrometers are specially designed for the measurement of very small objects. They allow for the highly precise measurement of any item that fits between the anvil and spindle.", marks: 6, accepts: ["Microchip A microchip is an integrated circuit (IC) containing a set of micro‐ electronic circuits made up of transistors, resistors and capacitors and their interconnectors etched onto small pieces of semiconductor material."] },
+    { id: "r-1", kind: "anyN", verbatim: "A microchip is an integrated circuit (IC) containing a set of micro‐ electronic circuits made up of transistors, resistors and capacitors and their interconnectors etched onto small pieces of semiconductor material.", marks: 6 },
     ],
   } as SecCard,
 ];

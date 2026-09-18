@@ -556,9 +556,12 @@ export const CARDS: SecCard[] = [
     id: "eng-2021-hl-q4-b-i", topicId: "eng-1-3", conceptId: "identify-regions-b-c-d-shown",
     section: "A", questionRef: "2021 HL Q4(b)(i)",
     questionText: "Identify the regions A, B, C and D shown.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A = Austenite B = Austenite and Cementite C = Ferrite and Pearlite D = Pearlite and Cementite", marks: null },
+    { id: "r-1", kind: "point", verbatim: "A = Austenite", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B = Austenite and Cementite", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C = Ferrite and Pearlite", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "D = Pearlite and Cementite", marks: 2 },
     ],
     questionFigure: {
           "candId": "engineering-2021-HL-paper-q4bi-art",
@@ -1179,7 +1182,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q8-c-i", topicId: "eng-2-11", conceptId: "aid-diagram-s-precision-surface-grinding",
     section: "A", questionRef: "2021 HL Q8(c)(i)",
-    questionText: "Explain, with the aid of a diagram(s), the precision surface grinding process. Explain the term subtractive manufacturing in relation to CNC milling.",
+    questionText: "Explain, with the aid of a diagram(s), the precision surface grinding process. OR Explain the term subtractive manufacturing in relation to CNC milling.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A metal cutting process in which flat and extremely smooth surfaces are produced.", marks: null },
@@ -1280,7 +1283,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q9-c-i", topicId: "eng-2-15", conceptId: "aid-diagram-s-suitable-lifting-mechanism",
     section: "A", questionRef: "2021 HL Q9(c)(i)",
-    questionText: "Describe, with the aid of a diagram(s), a suitable lifting mechanism for the forklift. Describe, with the aid of a diagram(s), how turbines convert wind energy into electrical energy.",
+    questionText: "Describe, with the aid of a diagram(s), a suitable lifting mechanism for the forklift. OR Describe, with the aid of a diagram(s), how turbines convert wind energy into electrical energy.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The use of a rack and pinion mechanism would provide a drive mechanism for the platform to be raised and lowered.", marks: null },
@@ -1847,7 +1850,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A - 1120°C", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "A - 1120°C B - 1500°C", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B - 1500°C", marks: 2 },
     ],
   } as SecCard,
   {
@@ -1997,7 +2000,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q6-c-i", topicId: "eng-2-10", conceptId: "how-weld-cracks-slag-inclusions-may",
     section: "A", questionRef: "2022 HL Q6(c)(i)",
-    questionText: "Outline how weld cracks and slag inclusions may form on a weld. Explain the following terms in relation to the autonomous mobile robots (AMR): • Automatic charging zones; • 24-hour remote monitoring.",
+    questionText: "Outline how weld cracks and slag inclusions may form on a weld. OR Explain the following terms in relation to the autonomous mobile robots (AMR): • Automatic charging zones; • 24-hour remote monitoring.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Slag is a residue of the flux coating in MMA welding, it may become trapped in the weld when adjacent weld beads are deposited with inadequate overlap resulting in a void or impurities trapped in the weld. Slag inclusions result from faulty welding technique or improper access to the joint.", marks: null },
@@ -2283,7 +2286,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q8-c-i", topicId: "eng-2-11", conceptId: "safety-features-integrated-into-design-modern",
     section: "A", questionRef: "2022 HL Q8(c)(i)",
-    questionText: "Outline three safety features integrated into the design of a modern horizontal bandsaw. Explain, with the aid of a diagram, the term 3-axis CNC machining.",
+    questionText: "Outline three safety features integrated into the design of a modern horizontal bandsaw. OR Explain, with the aid of a diagram, the term 3-axis CNC machining.",
     tariffModel: {"kind":"orderedSplit","notation":"2 + 2 + 2"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The blade is guarded for most of its length.", marks: null },
@@ -2386,7 +2389,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q9-c-i", topicId: "eng-2-15", conceptId: "aid-diagram-suitable-variable-speed-drive",
     section: "A", questionRef: "2022 HL Q9(c)(i)",
-    questionText: "Describe, with the aid of a diagram, a suitable variable speed drive mechanism for the ATV. Describe the basic principles of wireless charging.",
+    questionText: "Describe, with the aid of a diagram, a suitable variable speed drive mechanism for the ATV. OR Describe the basic principles of wireless charging.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The use of a worm and worm wheel mechanism would provide a drive mechanism for the ATV. The drive motor is attached to the worm and the worm wheel and shaft is connected to the drive tracks on both sides. This also provides for speed reduction and increased torque. A variable resistor can be added to the circuit to vary the speed of the motor and in turn the output shaft.", marks: null },
@@ -2828,9 +2831,11 @@ export const CARDS: SecCard[] = [
     id: "eng-2023-hl-q4-b-i", topicId: "eng-1-3", conceptId: "transformation-boundary-lines-b-c-shown",
     section: "A", questionRef: "2023 HL Q4(b)(i)",
     questionText: "Name the transformation boundary lines A, B and C shown.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A = Liquidus line B = Solidus line C = Eutectoid line / Lower Critical Temperature (LCT) line", marks: null },
+    { id: "r-1", kind: "point", verbatim: "A = Liquidus line", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B = Solidus line", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C = Eutectoid line / Lower Critical Temperature (LCT) line", marks: 2 },
     ],
     questionFigure: {
           "candId": "engineering-2023-HL-paper-q4bi-art",
@@ -3113,7 +3118,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q6-c-i", topicId: "eng-2-10", conceptId: "aid-diagram-process-resistance-seam-welding",
     section: "A", questionRef: "2023 HL Q6(c)(i)",
-    questionText: "Describe, with the aid of a diagram, the process of resistance seam welding. Explain the basic difference between Visual SLAM and Laser SLAM for robot navigation.",
+    questionText: "Describe, with the aid of a diagram, the process of resistance seam welding. OR Explain the basic difference between Visual SLAM and Laser SLAM for robot navigation.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A form of resistance welding that uses copper roller electrodes to provide a continuous run of overlapping welds as the current is activated at set intervals. One of the electrodes may be driven by an electric motor.", marks: null },
@@ -3432,7 +3437,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q8-c-i", topicId: "eng-2-11", conceptId: "aid-diagram-s-precision-cylindrical-grinding",
     section: "A", questionRef: "2023 HL Q8(c)(i)",
-    questionText: "Explain, with the aid of a diagram(s), the precision cylindrical grinding process. Explain the difference between CAD and CAM in CNC laser cutting.",
+    questionText: "Explain, with the aid of a diagram(s), the precision cylindrical grinding process. OR Explain the difference between CAD and CAM in CNC laser cutting.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Cylindrical grinding: This is used to produce cylindrical objects. The workpiece is held in a chuck, or between centres, and set to rotate. Then a grinding wheel, when brought into contact with the workpiece, will produce a smooth accurate cylinder. Long workpieces can be ground as the table can reciprocate and the wheel head can move towards the workpiece. Tapered work can also be carried out. Clamped workpiece Wheel", marks: null },
@@ -3556,7 +3561,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q9-c-i", topicId: "eng-2-15", conceptId: "aid-diagram-s-suitable-mechanism-folding",
     section: "A", questionRef: "2023 HL Q9(c)(i)",
-    questionText: "Describe, with the aid of a diagram(s), a suitable mechanism for folding the scooter handle. Outline two advantages of using solar powered LED lights in an urban setting.",
+    questionText: "Describe, with the aid of a diagram(s), a suitable mechanism for folding the scooter handle. OR Outline two advantages of using solar powered LED lights in an urban setting.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The use of a universal joint inserted in the stem of the handle will allow the handle to fold.", marks: null },
@@ -4051,9 +4056,13 @@ export const CARDS: SecCard[] = [
     id: "eng-2024-hl-q4-b-i", topicId: "eng-1-3", conceptId: "identify-regions-labelled-b-c-d",
     section: "A", questionRef: "2024 HL Q4(b)(i)",
     questionText: "Identify the regions labelled A, B, C, D and E.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A = Austenite and Ferrite B = Austenite C = Austenite and Cementite D = Ferrite and Pearlite E = Pearlite and Cementite", marks: null },
+    { id: "r-1", kind: "point", verbatim: "A = Austenite and Ferrite", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "B = Austenite", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "C = Austenite and Cementite", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "D = Ferrite and Pearlite", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "E = Pearlite and Cementite", marks: 1 },
     ],
     figure: {
           "candId": "engineering-2024-HL-paper-q4bi-art",
@@ -4062,10 +4071,14 @@ export const CARDS: SecCard[] = [
           "alt": "The table or diagram printed with 2024 HL Q4(b)(i), as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Engineering 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": [
-                "A"
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
           ]
     },
-    labelKey: [{"letter":"A","meaning":"Austenite and Ferrite B = Austenite C = Austenite and Cementite D = Ferrite and Pearlite E = Pearlite and Cementite","askedInThisQuestion":true}],
+    labelKey: [{"letter":"A","meaning":"Austenite and Ferrite","askedInThisQuestion":true},{"letter":"B","meaning":"Austenite","askedInThisQuestion":true},{"letter":"C","meaning":"Austenite and Cementite","askedInThisQuestion":true},{"letter":"D","meaning":"Ferrite and Pearlite","askedInThisQuestion":true},{"letter":"E","meaning":"Pearlite and Cementite","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4200,7 +4213,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A - 270°C", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "A - 270°C B - 630°C", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B - 630°C", marks: 2 },
     ],
   } as SecCard,
   {
@@ -4843,7 +4856,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q9-c-i", topicId: "eng-2-16", conceptId: "essential-features-associated-design-safety-harness",
     section: "A", questionRef: "2024 HL Q9(c)(i)",
-    questionText: "Describe two essential features associated with the design of a safety harness for a racing car driver. State two benefits associated with the use of LED lights.",
+    questionText: "Describe two essential features associated with the design of a safety harness for a racing car driver. OR State two benefits associated with the use of LED lights.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Use materials that will withstand levels of stress and strain.", marks: null },
@@ -4994,6 +5007,22 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The tool coordinates are always referenced to a fixed point, usually the machine origin or a work offset.", marks: null },
     { id: "r-2", kind: "point", verbatim: "The tool coordinates are based on the previous position, and each move is a distance from the last point.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
+    id: "eng-2025-hl-q1-h", topicId: "eng-1-5", conceptId: "reasons-why-anodised-aluminum-suitable-manufacture",
+    section: "A", questionRef: "2025 HL Q1(h)",
+    stem: "Give brief answers to any ten of the following:",
+    questionText: "Outline two reasons why anodised aluminum is suitable for the manufacture of the climbing carabiner shown.",
+    tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Anodising offers enhanced corrosion resistance, improved hardness and resistance to wear/abrasion.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Aluminium has good strength-to-weight ratio, it will not rust, can be formed into the shape easily, etc.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Anodising offers a wide range of colour options and finishes.", marks: null },
     ],
   } as SecCard,
   {
@@ -5275,14 +5304,50 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
+    id: "eng-2025-hl-q4-a-i", topicId: "eng-2-6", conceptId: "reasons-surface-hardening-plough-point",
+    section: "A", questionRef: "2025 HL Q4(a)(i)",
+    questionText: "Outline two reasons for surface hardening the plough point.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ploughing conditions often cause excessive wear of agricultural machine parts.", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "Surface hardening of the plough points will increase the hardness of the outer surface while the core remains relatively soft. This results in the plough point having an increased resistance to both fatigue failure and abrasive wear.", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q4-a-ii", topicId: "eng-2-6", conceptId: "aid-diagram-s-heating-cooling-process",
     section: "A", questionRef: "2025 HL Q4(a)(ii)",
     questionText: "Describe, with the aid of a diagram(s), the heating and cooling process used during the induction hardening of the plough point.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Induction hardening is a method of quickly and selectively hardening the surface of a metal part. A copper coil carrying a significant level of alternating current is placed near (not touching) the part.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The workpiece is heated by a high frequency electric current passing through the copper coil to a high temperature (austenite zone) and then quenched with jets of water. The quenched metal undergoes a martensitic transformation, increasing the hardness of the outer surface while keeping the inner core tough.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
+    id: "eng-2025-hl-q4-b-i", topicId: "eng-2-6", conceptId: "transformation-line-transformation-line-b",
+    section: "A", questionRef: "2025 HL Q4(b)(i)",
+    questionText: "Name the transformation line A and the transformation line B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Induction hardening is a method of quickly and selectively hardening the surface of a metal part. A copper coil carrying a significant level of alternating current is placed near (not touching) the part.", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "The workpiece is heated by a high frequency electric current passing through the copper coil to a high temperature (austenite zone) and then quenched with jets of water. The quenched metal undergoes a martensitic transformation, increasing the hardness of the outer surface while keeping the inner core tough.", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "A = Upper Critical Temperature Line (UCT) – ferrite starts to form.", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B = Lower Critical Temperature Line (LCT) - Austenite and cementite to pearlite and cementite transformation, magnetic transformation temperature.", marks: 2 },
     ],
+    questionFigure: {
+          "candId": "engineering-2025-HL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q4bi-art.png",
+          "srcHash": "dcdad25df1b0feb60cd13b5ce6d25665",
+          "alt": "The table or diagram printed with 2025 HL Q4(b)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5872,7 +5937,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q8-c-i", topicId: "eng-2-11", conceptId: "identify-metal-cutting-chips-shown-b",
     section: "A", questionRef: "2025 HL Q8(c)(i)",
-    questionText: "Identify the metal cutting chips shown at A and B and distinguish clearly between them with reference to material properties. Describe each of the following in relation to robotic CNC milling technology: • Stepper motors • Feedback sensors.",
+    questionText: "Identify the metal cutting chips shown at A and B and distinguish clearly between them with reference to material properties. OR Describe each of the following in relation to robotic CNC milling technology: • Stepper motors • Feedback sensors.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Continuous chips are formed during metal machining in long ribbons without breakage. This chip formation is characterised by high cutting speeds and minimum friction between tool face and metal on ductile materials such as mild steel and aluminium.", marks: null },

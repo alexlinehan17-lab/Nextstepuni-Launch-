@@ -211,7 +211,7 @@ const keyFor = (surface: string, following: string): string => {
   if (/^(?:describe|show|explain|state) how$|^how (?:does|do|did|is|are|was|were)$/.test(bare) && /^[^.?]{0,80}\b(?:differs?|different|contrasts?)\b/.test(next)) return 'contrast';
   if (/^(?:describe|show|explain|state) how$|^how (?:does|do|did|is|are|was|were)$/.test(bare) && /^[^.?]{0,80}\bcompares?\b/.test(next)) return 'compare';
   if (/^choose\b/.test(bare) && /^(?:the|one|a) (?:term|word|option|answer|letter|number|phrase|statement|structure|name)s?\b|from the (?:list|following)/.test(next)) return 'choice';
-  if (/^give (?:full )?details$/.test(bare)) return 'give-details';
+  if (/^give (?:full |more )?details(?: (?:of|about|on))?$/.test(bare)) return 'give-details';
   if (/^illustrate your answer/.test(`${bare} ${next}`)) return 'illustrate-tail';
   if (/^(?:explain|justify) your answer|^give (?:a )?reasons? for your answer/.test(`${bare} ${next}`)) return 'justify-tail';
   if (/^how (?:did|do|would|will|should)$/.test(bare) && /^you\b/.test(next) && !/^you (?:think|feel|know|describe)\b/.test(next)) return 'describe-how';
@@ -232,7 +232,8 @@ const keyFor = (surface: string, following: string): string => {
   if (/^(?:distinguish|differentiate)/.test(bare)) return 'distinguish';
   if (/^account for/.test(bare)) return 'account';
   if (/^to what extent/.test(bare)) return 'to-what-extent';
-  if (/^(?:do you (?:think|agree)|what do you (?:think|consider))/.test(bare)) return 'wh-opinion';
+  if (/^(?:do you (?:think|agree|disagree)|what do you (?:think|consider))/.test(bare)) return 'wh-opinion';
+  if (/^explain what you understand by\b/.test(`${bare} ${next}`)) return 'define';
   if (/^what evidence/.test(bare)) return 'wh-evidence';
   if (/^what effect/.test(bare)) return 'wh-effect';
   if (/^how does .* feel|^how did .* feel/.test(`${bare} ${next}`) && /^how/.test(bare)) return 'wh-feel';
@@ -350,7 +351,7 @@ function englishRatio(text: string): { words: number; ratio: number } {
 
 // Sentence splitting that does not break after "Fig.", "e.g.", "No.", a
 // decimal or a single initial — the old splitter cut "Fig. C-5" in two.
-const NO_BREAK_AFTER = /(?:\b(?:Fig|Figs|No|Nos|Par|para|e\.g|i\.e|etc|c|ca|approx|vs|cf|St|Mr|Mrs|Ms|Dr|Prof|p|pp|vol|Q|Qs)|(?<![\d]\s?)\b[A-Z](?![\p{L}]))\.$/u;
+const NO_BREAK_AFTER = /(?:\b(?:Fig|Figs|No|Nos|Par|para|e\.g|i\.e|etc|c|ca|approx|vs|cf|St|Mr|Mrs|Ms|Dr|Prof|p|pp|vol|Q|Qs|Co|Ltd|Inc|Mt|Rd|Ave)|(?<![\d]\s?)\b[A-Z](?![\p{L}]))\.$/u;
 
 interface Piece { start: number; end: number }
 
@@ -365,7 +366,7 @@ const OPENS_TASK = /^\s+(?:Give|Write|Find|Calculate|Explain|Describe|Name|State
 function sentences(raw: string, start: number, end: number): Piece[] {
   const out: Piece[] = [];
   let s = start;
-  const re = /[.?!][)”’"]*(?=\s+[\p{Lu}(“"‘\d•◆▪])|\n{1,}/gu;
+  const re = /[.?!][)”’"“»]*(?=\s+[\p{Lu}(“"‘„«\d•◆▪])|\n{1,}/gu;
   re.lastIndex = start;
   let m: RegExpExecArray | null;
   while ((m = re.exec(raw)) && m.index < end) {
@@ -473,7 +474,7 @@ const LEADING = /^(?:If\b[^,]{3,80},|Using (?:your knowledge of|notes and freeha
 const WH_FORMS = [
   'what information does this give about', 'to what extent do you agree or disagree with', 'to what extent',
   'what evidence is there', 'what evidence do you find', 'what do you consider', 'what do you think',
-  'do you agree or disagree with', 'do you agree or disagree that', 'do you agree or disagree', 'do you think', 'do you agree', 'how would you best describe', 'what is the purpose of', 'what is meant by',
+  'do you agree or disagree with', 'do you agree or disagree that', 'do you agree or disagree', 'do you disagree with', 'do you disagree that', 'do you disagree', 'do you think', 'do you agree', 'how would you best describe', 'what is the purpose of', 'what is meant by',
   'what effect', 'what caused', 'what makes', 'what is', 'what are', 'what was', 'what were', 'what does', 'what did',
   'how does', 'how did', 'how do', 'how is', 'how are', 'how can', 'how would', 'how will', 'how could', 'how should', 'how might', 'how many', 'how much',
   'what will', 'what would', 'what could', 'what should', 'why would', 'why should', 'why might',
@@ -1384,7 +1385,7 @@ function buildUnit(
     const c2 = new RegExp(`(?<![\\p{L}\\p{N}])(one|two|three|four|five|six|[2-6])\\s+(?:(?:different|distinct|separate|possible|other|main|major|key)\\s+)?(?:${nouns})(?![\\p{L}])`, 'iu')
       .exec(clauseText);
     // Any plural noun counted in the clause: "Give an account of any two myths".
-    const c3 = /(?<![\p{L}\p{N}])(?:any\s+|at least\s+)?(two|three|four|five|six|[2-6])\s+(?:(?:most|least)\s+[\p{L}-]+\s+)?(?:(?:different|distinct|separate|possible|other|main|major|key|named|specific|important)\s+)?([\p{L}-]{3,}s)(?![\p{L}])/iu.exec(clauseText);
+    const c3 = /(?<![\p{L}\p{N}])(?:any\s+|at least\s+)?(two|three|four|five|six|[2-6])\s+(?:(?:most|least)\s+[\p{L}-]+\s+)?(?:(?:different|distinct|separate|possible|other|main|major|key|named|specific|important|contrasting|european|irish|non-european|developing|developed|urban|rural|physical|human)\s+){0,2}([\p{L}-]{3,}s)(?![\p{L}])/iu.exec(clauseText);
     const hit = c2 && !pool(clause.start + c2.index) ? c2
       : c3 && !pool(clause.start + c3.index) && !/^(?:years|hours|minutes|seconds|marks|words|times|days|weeks|months|metres|pages|lines|sides|decimal|places)$/i.test(c3[2])
         && !new RegExp(`^(?:${MEANINGFUL_DATA_UNIT.source})$`, 'iu').test(c3[2]) ? c3 : null;
@@ -1489,7 +1490,11 @@ function buildUnit(
   } else if (/^indicate/i.test(action.display) && /\btick|✓|\uF050|\bbox\b/i.test(clauseText)) {
     actionKey = 'tick';
     means = MEANS.tick;
-  } else if (actionKey === 'explain' && /^(?:each of )?(?:the )?(?:following\s+)?(?:[\p{L}-]+\s+){0,3}terms?\b/iu.test(`${count?.display ?? ''} ${focus?.display ?? ''}`.trim())) {
+  } else if (actionKey === 'explain' && /\b(?:difference|differences|distinction|distinguish)\b/i.test(focus?.display ?? '') && /\bterms?\b/i.test(focus?.display ?? '')) {
+    actionKey = 'distinguish';
+    means = MEANS.distinguish;
+  } else if (actionKey === 'explain' && (/^(?:each of )?(?:the )?(?:following\s+)?(?:[\p{L}-]+\s+){0,3}terms?\b/iu.test(`${count?.display ?? ''} ${focus?.display ?? ''}`.trim())
+    || /^(?:the )?(?:following\s+)?(?:[\p{L}-]+\s+){0,2}terms?\b/iu.test(focus?.display ?? ''))) {
     actionKey = 'define';
     means = MEANS.define;
   }
@@ -1778,7 +1783,7 @@ function headingsFrom(unit: KPUnit, raw: { q: string; stem: string }): KPSpan[] 
     const lead = HEADINGS_LEAD.exec(c.text);
     if (!lead) continue;
     const items = listItems(raw[c.from], c.from, c.start + lead[0].length, c.end);
-    if (items.length >= 2 && items.length <= 6 && items.every(i => i.display.split(/\s+/).length <= 4)) return items;
+    if (items.length >= 2 && items.length <= 6 && items.every(i => i.display.split(/\s+/).length <= 8)) return items;
   }
   return undefined;
 }
@@ -2101,6 +2106,13 @@ export function buildKeyParts(source: WaysInQuestionSource): KeyPartsBreakdown {
             // A question the breakdown cannot read is shown as printed, never dropped.
             const sp = spanOf('q', q, piece.start, piece.end);
             if (sp) { const u = asPrinted(nextId(), part.ref, part.altGroup, sp); partUnits.push(u); unitPiece.set(u.id, piece); }
+          } else if (lastUnit && !lastUnit.flags.includes('as-printed') && (text.match(/\b(?:is|are|was|were|has|have|had|will|would|can|could|the|a|an|to|of|in|on|for|with|by|and|that|this|you|your)\b/gi) ?? []).length < 2
+            && text.split(/\s+/).length >= 2 && !/^[•·▪‣◦\-–\uF0B7]/.test(text) && !/:\s*$/.test(q.slice(Math.max(0, piece.start - 3), piece.start))
+            && /\b(?:table|tick|box)\b/i.test(q.slice(lastUnit.action?.start ?? piece.start, piece.start))) {
+            // "… in the table below. Oil/Gas exploitation Quarrying Mining": a
+            // flattened table after the ask is what it chooses or matches from.
+            const sp = spanOf('q', q, piece.start, piece.end);
+            if (sp && !lastUnit.use.some(u => u.start === sp.start)) lastUnit.use.push({ ...sp, kind: 'options' });
           } else {
             ctxPieces.push(piece);
             lastStatement = piece;
@@ -2624,6 +2636,14 @@ function examUnitsIn(raw: string, start: number, end: number, lex: ExamLexicon, 
   const limitLead = (before: string) => lex.conditions.some(c => norm(before).replace(/[,:]$/, '').trim() === norm(c.surface));
   const MARKS_TAIL = /\s*[([]\s*\d+\s*(?:marc|mharc|marks?|pts?|points?|punkt\w*|puntos?|pontos?|bod\w*|pisteet?|poäng|point)\s*[)\]]\s*[.]?\s*$/iu;
   for (const piece of pieces) {
+    // "Setzen Sie die fehlenden Konjunktionen … ein. Lena setzt sich …": once a
+    // gap-fill or rewrite instruction is given, what follows is its passage.
+    const filler = units.find(u => /^(?:fill-gap|complete|rewrite|translate|match)$/.test(u.actionKey));
+    if (filler) {
+      const sp = spanOf('q', raw, piece.start, end);
+      if (sp && !filler.item) filler.item = sp;
+      break;
+    }
     let s0 = piece.start;
     const marks = MARKS_TAIL.exec(raw.slice(s0, piece.end));
     if (marks) piece.end = s0 + marks.index;
@@ -2708,6 +2728,14 @@ function examUnitsIn(raw: string, start: number, end: number, lex: ExamLexicon, 
       // A limit at the end of the sentence ends what it is about.
       if (!raw.slice(at + m[0].length, loc.at).replace(/[\s.?!,;:]/g, '')) focusEnd = Math.min(focusEnd, at);
     }
+    // "Opišite, na temelju teksta, ali svojim riječima, kako …": limits that
+    // open the object are shown as limits, and what it is about starts after.
+    for (let moved = true; moved;) {
+      moved = false;
+      const lead = /^[\s,]*/.exec(raw.slice(cur, focusEnd))![0].length;
+      const hitLimit = unit.conditions.find(c => c.from === 'q' && c.start === cur + lead);
+      if (hitLimit) { cur = hitLimit.end; moved = true; while (cur < focusEnd && /[\s,;:]/.test(raw[cur])) cur += 1; if (/^(?:ali|mais|aber|pero|ma|men|maar|ale|bet|de|a)\s/i.test(raw.slice(cur, cur + 6))) cur = cur + raw.slice(cur).indexOf(' ') + 1; }
+    }
     // "… w tekście? przepisanie" — a word printed after the question mark is
     // the item it asks about; the question ends at its own full stop.
     const qmark = /[?？]\s*(?=\S)/u.exec(raw.slice(cur, focusEnd));
@@ -2717,6 +2745,13 @@ function examUnitsIn(raw: string, start: number, end: number, lex: ExamLexicon, 
     }
     const stop = /[.!](?=\s+[„“"«‘\p{Lu}])/u.exec(raw.slice(cur, focusEnd));
     if (stop && stop.index > 0) focusEnd = cur + stop.index;
+    // "Förklara dessa ord såsom de används i texten. ansåg (anse)": the
+    // printed word after the instruction's full stop is its item.
+    const tailItem = /\.\s+([^.?!]{1,60})$/u.exec(raw.slice(cur, focusEnd));
+    if (tailItem && !unit.item && tailItem[1].trim().split(/\s+/).length <= 6) {
+      const item = spanOf('q', raw, focusEnd - tailItem[1].length, focusEnd);
+      if (item) { unit.item = item; focusEnd = cur + tailItem.index; }
+    }
     // "…: kolidować z czymś" — the printed item after a colon.
     const colon = raw.slice(cur, focusEnd).indexOf(':');
     if (colon >= 0 && raw.slice(cur + colon + 1, focusEnd).trim()) {

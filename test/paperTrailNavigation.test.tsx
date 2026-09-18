@@ -26,6 +26,9 @@ vi.mock('../components/PaperTrail/Viewer', () => ({ default: (props: ReaderProps
   </div>;
 } }));
 vi.mock('../components/PaperTrail/PaperCover', () => ({ default: () => <span>Cover</span> }));
+// The archive-outage probe would otherwise make a real network request (and a
+// live outage would add a second status region); it has its own tests.
+vi.mock('../components/PaperTrail/archiveHealth', () => ({ archiveHealth: () => Promise.resolve('ok') }));
 vi.mock('../firebase', () => ({ db: {} }));
 vi.mock('../contexts/ProgressContext', () => ({ useProgress: () => ({ updateDemoProgress: () => {} }) }));
 vi.mock('../hooks/useFreshProgress', () => ({ useFreshProgress: () => ({ loaded: true, doc: null }) }));

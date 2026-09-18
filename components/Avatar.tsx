@@ -25,7 +25,9 @@ const Avatar: React.FC<AvatarProps> = ({ seed, alt = '', className = '', style }
   useEffect(() => { setFailed(false); }, [seed]);
 
   const artwork = getPersonalStarCrew(seed);
-  if (artwork) return <StarCrewArtwork key={seed} artwork={artwork} alt={alt} className={className} style={style} fallback={<img className="star-crew-fallback" src={getAvatarFallback(seed)} alt="" />} />;
+  // Profile and picker portraits must be ready as the account sheet opens;
+  // lazy loading can leave an absolutely positioned portrait blank until tapped.
+  if (artwork) return <StarCrewArtwork key={seed} artwork={artwork} alt={alt} className={className} style={style} loading="eager" fallback={<img className="star-crew-fallback" src={getAvatarFallback(seed)} alt="" />} />;
 
   return (
     <img

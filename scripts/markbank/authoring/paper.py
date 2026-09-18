@@ -300,6 +300,41 @@ def _repair(text, subject):
 # the geometry: a marker-only block whose baseline overlaps the block to its
 # right, and which sits to the left of it, IS that block's marker.
 GUTTER_MARKERS = {'technology'}
+# Subjects whose papers set the part-level OR as the LAST LINE of the ask
+# above it rather than as a block of its own. Engineering centres the word
+# under the ask it closes, and the block segmentation takes it into that
+# block: 2023 Ordinary prints "(iii) Malleability. OR" and then a bare "(d)"
+# whose own (i) and (ii) are a different question, and "(iii) Name two items
+# of personal protective equipment (PPE) ... operating a lathe. OR" before a
+# second (c). Read as text, the word stayed on the first branch's last roman
+# and the second branch's romans welded onto the first's with nothing
+# between them -- "Toughness, Describe two areas where robotic technology is
+# used in health care." -- which is one ask with two halves, not the choice
+# the paper sets. Subject-gated, like GUTTER_MARKERS, because it is a claim
+# about how this subject's papers are typeset: no other subject's reading
+# may move because of it.
+TRAILING_OR = {'engineering'}
+_TRAILING_OR = re.compile(r'\s+OR\s*$')
+_BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
+
+
+def _before_trailing_or(text):
+    """The block without its trailing OR, or None if it carries none.
+
+    The word counts only after a closed sentence, or after a bare marker:
+    2024 Ordinary sets "(iv) OR" under the fourth of four instrument
+    photographs, whose markers carry no words of their own. A sentence that
+    merely ends on the word is not one.
+    """
+    m = _TRAILING_OR.search(text)
+    if not m:
+        return None
+    head = text[:m.start()].rstrip()
+    if head.endswith(('.', '?', '!')) or _BARE_MARKER.match(head):
+        return head
+    return None
+
+
 _MARKER_ONLY = re.compile(r'^\(?(\d{1,2}|[a-z]|[ivx]{1,4})[.)]?$')
 
 
@@ -453,6 +488,15 @@ class Paper:
         self.path = self.files[0]
 
         self.parts, self.stems = {}, {}
+        # Keys whose words arrive only AFTER a part-level OR: the first
+        # printing of the address named a thing and asked nothing -- 2025
+        # Ordinary Engineering sets "(i)", "(ii)", "(iii) (iv)" under four
+        # instruments, then OR, then "(c) (i) State one advantage of using a
+        # Printed Circuit Board (PCB)". The text is filed exactly as before;
+        # this only records which branch it came from, so that a reader of the
+        # SCHEME, which answers both branches at one key, can answer the ask
+        # from the branch that asked it. It changes no part's text.
+        self.after_or = set()
         q = letter = roman = None
         open_key = None          # the part a continuation block may extend
         or_pending = False       # a standalone OR announces a choice variant
@@ -514,7 +558,11 @@ class Paper:
                     continue
                 false_heads.add(a)
 
+        or_next = False          # a TRAILING OR, taking effect after its block
         for index, text in enumerate(blocks):
+            if or_next:
+                or_pending = or_part = True
+                or_next = False
             if index in contents:
                 continue
             if index in false_heads:
@@ -536,6 +584,20 @@ class Paper:
                 # weld onto their twins.
                 or_pending = or_part = True
                 continue
+            # The same OR set as the last line of the block above it (see
+            # TRAILING_OR). It announces the same choice wherever it is
+            # printed, and it is read as one only where a sentence has just
+            # closed or a bare marker stands in front of it, so a sentence
+            # that merely contains the word is left as it is. The block's own
+            # text is filed first, exactly as before -- the flag takes effect
+            # from the NEXT block, as a standalone OR printed there would --
+            # and everything after it is the alternative: or_part outlasts the
+            # (c) or (d) that re-opens the part, so its romans are separated
+            # from their twins too.
+            if self.subject in TRAILING_OR:
+                head = _before_trailing_or(text)
+                if head is not None:
+                    text, or_next = head, True
             if text.startswith('OR ') and QHEAD.match(text[3:]):
                 or_pending, text = True, text[3:]
             # 2025 HL Economics letterspaces a head as 'Question 1 2' — two
@@ -742,6 +804,8 @@ class Paper:
                     # and (ii). 2024 OL Q6(c)(ii) is the pair this fixes:
                     # "Explain the term CAD." and, past the OR, "…integrated
                     # into computer numerical control."
+                    if or_part and not self.parts[key]:
+                        self.after_or.add(key)
                     if or_part and self.parts[key] \
                             and self.parts[key][-1].strip() != 'OR':
                         self.parts[key].append('OR')

@@ -483,6 +483,19 @@ REJECTED = {
                                'the foot, and the scheme keys its answers to them',
     (2024, 'ol', 6, 'c', 'i'): 'shows the CNC branch, not the lathe part',
     (2025, 'ol', 4, 'c', 'i'): 'shows tool A, and (i) asks about the R-clip',
+    # Opened, and the three mechanisms are all there while their letters are
+    # not: A, B and C are printed four points under the images and only the
+    # tops of the glyphs are inside the box, so a crop the gate passes on its
+    # text layer shows a student three unlabelled pictures -- and the ask is
+    # "Name any two of the mechanisms A, B and C shown below". (From eng-e5.)
+    (2025, 'ol', 2, 'd', None): 'the A, B and C under the pictures are clipped',
+    # The flange itself, without either of the dimensions the ask is about:
+    # "flange: 50.00 +/- 0.50 mm" and "hole: 20.00 +/- 0.50 mm" are printed
+    # below the red arrows and outside the crop, so all of (b) is unanswerable
+    # from it. The one crop is shared by (ii), (iii) and (iv). (From eng-e5.)
+    (2025, 'ol', 7, 'b', 'ii'): 'the flange, with neither dimension it is about',
+    (2025, 'ol', 7, 'b', 'iii'): 'the flange, with neither dimension it is about',
+    (2025, 'ol', 7, 'b', 'iv'): 'the flange, with neither dimension it is about',
     (2025, 'hl', 5, 'c', 'i'): 'the last stages of the process are clipped off',
     (2025, 'hl', 5, 'c', 'ii'): 'the last stages of the process are clipped off',
     # A second pass over a much wider worklist. Every crop below was opened
