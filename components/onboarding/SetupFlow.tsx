@@ -533,7 +533,7 @@ export default function SetupFlow(props: OnboardingProps) {
                       A date to work towards. Check that this is the right one
                       for you.
                     </p>
-                    <label className="setup-field">
+                    <label className="setup-field setup-date-field">
                       <span>Your exam date</span>
                       <input
                         type="date"
