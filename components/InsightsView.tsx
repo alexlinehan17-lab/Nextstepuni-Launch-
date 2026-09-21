@@ -3,6 +3,8 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import type { StreakData } from '../hooks/useStreak';
 import type { StrategyMasteryMap } from '../types';
 import { useInsights, type Insight } from '../hooks/useInsights';
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import PageHeader from './ui/PageHeader';
 import StarGuide from './ui/StarGuide';
 
 export type InsightAction = 'study' | 'planner' | 'progress';
@@ -21,14 +23,16 @@ function nextAction(insight: Insight): { action: InsightAction; label: string } 
 }
 
 export default function InsightsView({ uid, streak, strategyMastery, onBack, onAction }: InsightsViewProps) {
+  const mobileAppDesign = useMobileAppDesign();
   const { insights, isLoaded } = useInsights(uid, streak, strategyMastery);
-  return <main className="min-h-screen bg-white px-5 pb-36 pt-16 text-zinc-900 dark:bg-zinc-950 dark:text-white md:pt-24">
+  return <main className={`${mobileAppDesign ? 'mobile-editorial insights-mobile ' : ''}min-h-screen bg-white px-5 pb-36 pt-16 text-zinc-900 dark:bg-zinc-950 dark:text-white md:pt-24`}>
     <div className="mx-auto max-w-2xl">
+      {mobileAppDesign ? <><PageHeader onBack={onBack} title="Your Insights" eyebrow="What your record says" compact /><p className="insights-intro">A pattern. A possibility. A next step.</p></> : <>
       <button onClick={onBack} className="mb-7 inline-flex min-h-11 items-center gap-2 rounded-lg pr-4 text-base font-semibold"><ArrowLeft size={20} aria-hidden="true" /> Home</button>
       <header className="mb-8 flex items-center justify-between gap-4">
         <div><p className="text-xs font-bold uppercase tracking-[0.16em] text-[#B54D14] dark:text-orange-400">Your next step</p><h1 className="mt-2 font-serif text-4xl font-bold tracking-tight">Your Insights</h1><p className="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">What your study record is telling you.</p></div>
         <StarGuide size={72} className="shrink-0" />
-      </header>
+      </header></>}
       {!isLoaded ? <p role="status" className="border-t border-zinc-200 py-8 dark:border-zinc-700">Reading your study record…</p> : insights.length === 0 ? <section className="rounded-2xl border border-zinc-300 p-6 dark:border-zinc-700">
         <h2 className="font-serif text-2xl font-semibold">Start with one session.</h2>
         <p className="mt-3 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">As you record study sessions and reflections, this page will show patterns in your timing, subjects and confidence.</p>

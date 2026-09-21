@@ -58,6 +58,7 @@ import { DEMO_STUDENT_UID } from './data/devStudent';
 import SiteGuide, { type GuideAction } from './components/SiteGuide';
 import FeedbackModal from './components/FeedbackModal';
 import { useMobileAppDesign } from './hooks/useMobileAppDesign';
+import './components/mobile-editorial.css';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
@@ -85,22 +86,23 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
   return createPortal(
     <nav
       aria-label={mobileAppDesign ? 'Main navigation' : undefined}
-      className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-white dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
+      className="editorial-bottom-nav fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-white dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
       style={{ paddingBottom: 'var(--sab, 0px)' }}
     >
       <div className="mx-auto flex h-16 max-w-md items-center justify-around px-1">
         {tabs.map((tab) => {
-          const isActive = tab.id === viewState || (tab.id === 'tree' && (mobileAppDesign ? ['category', 'modules', 'module', 'learning-paths'].includes(viewState) : viewState === 'category'));
+          const isActive = tab.id === viewState || (tab.id === 'dashboard' && viewState === 'insights') || (tab.id === 'tree' && (mobileAppDesign ? ['category', 'modules', 'module', 'learning-paths'].includes(viewState) : viewState === 'category'));
           return (
             <button
               key={tab.id}
               type="button"
-              aria-current={mobileAppDesign && isActive ? 'page' : undefined}
+              aria-current={isActive ? 'page' : undefined}
               data-coach={mobileAppDesign && tab.id === 'innovation-zone' ? 'launchpad' : undefined}
               onClick={tab.action}
-              className={`relative flex h-full min-w-0 flex-1 flex-col items-center justify-center gap-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[rgba(var(--accent),0.45)] ${isActive ? 'text-[#B94712] dark:text-[#FF9A64]' : 'text-zinc-500 dark:text-zinc-400'}`}
+              className={`relative flex h-full min-w-0 flex-1 flex-col items-center justify-center gap-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[rgba(var(--accent),0.45)] ${isActive ? 'text-zinc-900 dark:text-white' : 'text-zinc-500 dark:text-zinc-400'}`}
             >
-              <span className={`flex h-8 w-11 items-center justify-center rounded-xl border transition-colors ${isActive ? 'border-[#F26B1F] bg-[#FDEBDD] dark:border-orange-400 dark:bg-orange-950/60' : 'border-transparent'}`}>
+              {isActive && <span className="editorial-nav-rule" aria-hidden="true" />}
+              <span className="flex h-8 w-11 items-center justify-center">
                 <tab.icon size={20} strokeWidth={isActive ? 2 : 1.6} />
               </span>
               <span className="text-[10px] font-semibold tracking-tight">{tab.label}</span>

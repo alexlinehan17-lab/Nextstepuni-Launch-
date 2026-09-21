@@ -11,12 +11,13 @@
  * ranked by INTEREST FIT (Pearson correlation, O*NET's method), each annotated
  * with an independent points-REACH badge. Fit is never altered by points.
  */
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import ToolMasthead from './launchpad/ToolMasthead';
 import React, { useMemo, useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, Compass, X, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Compass, X, ArrowRight, Check } from 'lucide-react';
 import { COLORS } from '../design/tokens';
 
 import { useFutureFinderRevamped, type FutureFinderRevampedState } from '../hooks/useFutureFinderRevamped';
@@ -219,10 +220,30 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     });
   }, [savedPicks, persistResultsState]);
 
+  const mobileAppDesign = useMobileAppDesign();
+
   if (!isLoaded || (resultsOnly && phase !== 'results')) return <LoadingState label="Loading your future finder" />;
 
   // ── INTRO ─────────────────────────────────────────────────────
   if (phase === 'intro') {
+    if (mobileAppDesign) return <div className="future-editorial">
+      <section className="future-editorial-hero">
+        <p className="lp-eyebrow">Your next chapter</p>
+        <h2>You don’t need<br />the whole map.</h2>
+        <p>Just a little curiosity about what comes next.</p>
+        <img src="/assets/star-crew/companions/wayfinder.png" alt="" />
+      </section>
+      <div className="future-editorial-routes" role="group" aria-label="Discovery route">
+        {(['quick', 'full'] as const).map((route, index) => <button type="button" key={route} aria-pressed={length === route} onClick={() => setLength(route)}>
+          <span className="future-route-number">0{index + 1}</span>
+          <span className="future-route-copy"><small>{route === 'quick' ? '5 minutes · 42 taps' : '9 minutes · 72 taps'}</small><strong>{route === 'quick' ? 'Quick discovery' : 'The fuller picture'}</strong><span>{route === 'quick' ? 'A first look at what makes you, you.' : 'More room for your values and interests.'}</span></span>
+          <span className="future-route-check" aria-hidden="true">{length === route ? <Check size={16} /> : <ArrowRight size={16} />}</span>
+        </button>)}
+      </div>
+      <button type="button" className="future-editorial-start" onClick={() => { setIdx(0); setPhase('quiz'); }}>Explore my possibilities <ArrowRight size={20} /></button>
+      <p className="lp-body">Discover your interests. Explore courses. Compare your options.</p>
+      <p className="future-editorial-note">A snapshot, not a verdict. Use it alongside your guidance counsellor.</p>
+    </div>;
     return (
       <div>
         <ToolMasthead tool="future-finder-revamped" eyebrow="Start with you" title="Future Finder." subtitle="Find possibilities worth exploring." />

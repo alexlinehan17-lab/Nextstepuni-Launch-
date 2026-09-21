@@ -115,4 +115,19 @@ describe('student dashboard analytics', () => {
     expect(buildMasterySummary(mastery, 'Biology')).toEqual({ notStarted: 1, shaky: 0, solid: 1, total: 2 });
     expect(buildMasterySummary(mastery, 'all')).toEqual({ notStarted: 1, shaky: 1, solid: 1, total: 3 });
   });
+  test('joins readiness by canonical ID across Irish and Applied Maths aliases', () => {
+    const mastery: TopicMasteryV2 = {
+      schemaVersion: 2,
+      topics: {
+        'irish::oral': { subjectId: 'irish', subjectName: 'Irish (Gaeilge)', specificationId: 'irish', topicId: 'oral', topicName: 'Oral', confidence: 'solid', updatedAt: 1, source: 'manual' },
+        'applied::mechanics': { subjectId: 'applied-mathematics', subjectName: 'Applied Mathematics', specificationId: 'applied', topicId: 'mechanics', topicName: 'Mechanics', confidence: 'shaky', updatedAt: 1, source: 'manual' },
+      },
+      unresolved: { 'Irish (Gaeilge)': { Custom: { confidence: 'not-started', updatedAt: 1, source: 'import' } } },
+    };
+    expect(buildMasterySummary(mastery, 'Irish')).toEqual({ notStarted: 1, shaky: 0, solid: 1, total: 2 });
+    expect(buildMasterySummary(mastery, 'Applied Maths')).toEqual({ notStarted: 0, shaky: 1, solid: 0, total: 1 });
+    expect(buildMasterySummary(mastery, 'Politics & Society').total).toBe(0);
+    expect(buildMasterySummary(mastery, 'all').total).toBe(3);
+  });
+
 });

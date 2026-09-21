@@ -57,7 +57,7 @@ const AcademicJourneyGame = lazy(() => import('./AcademicJourneyGame'));
 import ToolErrorBoundary from './ToolErrorBoundary';
 import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
-import ToolMasthead, { ToolArtwork } from './launchpad/ToolMasthead';
+import ToolMasthead, { ToolArtwork, ToolIntroduction, ToolIntroductionContext } from './launchpad/ToolMasthead';
 import { ToolHeader } from './ToolHeader';
 import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
 import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
@@ -137,6 +137,15 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'oral-trainer':    { themeColor: '#4C8C5E', eyebrow: 'Technique · Speaking exam', subtitle: 'The one exam no app prepares you for — the oral. Rehearse it out loud, record yourself, and know exactly where you stand on every part.', showHeader: true },
   'examiners-chair': { themeColor: '#9E4A3E', eyebrow: 'Technique · Marking literacy', subtitle: 'Sit on the other side of the desk. Mark real-style scripts against the real SEC rules, and learn to see your own answers the way the examiner will.', showHeader: true },
 };
+
+const MOBILE_TOOL_TITLES: Record<string, string> = { 'mark-bank': 'The Mark Bank', planner: 'Your Planner' };
+const MOBILE_TOOL_EYEBROWS: Record<string, string> = {
+      'mark-bank': 'Work the real questions', planner: 'A little structure',
+      'points-passport': 'Your grades, made visible', 'future-finder-revamped': 'Start with you',
+      'paper-trail': 'Your exam archive',
+    };
+const MOBILE_TOOL_SUBTITLES: Record<string, string> = { 'mark-bank': 'Build your answer. See where the marks come from.', 'points-passport': 'Your current grades, your goal and the subjects that contribute.', 'future-finder-revamped': 'Find possibilities worth exploring.', 'paper-trail': 'Exam papers & marking schemes.', planner: 'A little structure, with room to study, revisit and rest.' };
+
 
 interface StudyNowBlock {
   subject: string;
@@ -858,10 +867,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     }, [recommendationStorageKey, mobileAppDesign]);
 
     const currentTool = tools.find(t => t.id === activeTool);
+    const toolTitle = currentTool ? MOBILE_TOOL_TITLES[currentTool.id] ?? currentTool.title : 'The Launchpad';
+    const toolEyebrow = currentTool ? MOBILE_TOOL_EYEBROWS[currentTool.id] ?? TOOL_CHROME[currentTool.id]?.eyebrow ?? 'Your next move' : 'Your next move';
+    const toolArtwork = (activeTool === 'syllabus-xray' ? 'war-room' : activeTool ?? 'meet-tools') as ToolIconKey;
 
   return (
     <div
-      className={`${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24`}
+      className={`${mobileAppDesign ? 'mobile-editorial ' : ''}${activeTool === 'paper-trail' ? 'paper-trail-host ' : ''}product-shell launchpad-shell min-h-screen bg-[var(--surface-canvas)] transition-colors duration-500 overflow-x-hidden relative flex flex-col items-center pb-36 md:pb-24`}
       // Fixed header at top is ~80px tall (back button + eyebrow + title) + safe-area-inset-top.
       // The journey/war-room tools historically had a smaller header offset (pt-14)
       // which left content peeking out behind the bar. Use the same generous offset
@@ -872,7 +884,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     >
 
       <header
-        className={`${activeTool === 'paper-trail' ? 'hidden md:block ' : ''}fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]`}
+        className={`lp-navigation-header ${activeTool === 'paper-trail' && !mobileAppDesign ? 'hidden md:block ' : ''}fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]`}
         style={{
           paddingTop: 'calc(16px + var(--sat, 0px))',
           paddingBottom: '16px',
@@ -887,11 +899,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             </MotionButton>
             <div className="hidden md:block h-10 w-px bg-[var(--outline-soft)]" />
             <div className="min-w-0">
-              <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Explore</p>
+              <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">{mobileAppDesign ? toolEyebrow : 'Explore'}</p>
               {activeTool ? (
-                <p className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</p>
+                mobileAppDesign ? <h1 className="lp-navigation-title font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white">{toolTitle}</h1> : <p className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</p>
               ) : (
-                <h1 className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</h1>
+                <h1 className="lp-navigation-title font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</h1>
               )}
             </div>
           </div>
@@ -899,7 +911,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
               A second settings action here sat underneath that fixed cluster and
               appeared as a stray button. Subject editing remains available from
               the profile/settings flow. */}
-          <div aria-hidden="true" />
+          <div aria-hidden="true">{mobileAppDesign && <ToolArtwork tool={toolArtwork} className="lp-navigation-art" />}</div>
         </div>
       </header>
 
@@ -920,8 +932,9 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     <PointsPanel open={showPointsPanel} onHide={hidePointsPanel} />
 
                     <div className="lp-catalogue-intro">
-                      <ToolMasthead mascot tool="meet-tools" eyebrow="Your next move" title="The Launchpad." subtitle="Find the right tool for the task in front of you." />
-                      {subjectProfile && <button className="lp-panel lp-resume" onClick={() => handleToolClick(toolRecommendation?.toolId ?? 'planner', true)}>
+                      {mobileAppDesign && <p className="lp-body">Find the right tool for the task.</p>}
+                      {!mobileAppDesign && <ToolMasthead mascot tool="meet-tools" eyebrow="Your next move" title="The Launchpad." subtitle="Find the right tool for the task in front of you." />}
+                      {!mobileAppDesign && subjectProfile && <button className="lp-panel lp-resume" onClick={() => handleToolClick(toolRecommendation?.toolId ?? 'planner', true)}>
                         <span className="lp-eyebrow">{toolRecommendation ? 'Your recommendation' : 'A place to start'}</span>
                         <strong className="lp-title">{toolRecommendation ? tools.find(t => t.id === toolRecommendation.toolId)?.title : 'Your plan for today'}</strong>
                         <span>Open {toolRecommendation ? 'this tool' : 'Planner'} <ArrowRight size={18} /></span>
@@ -1024,7 +1037,8 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 >
-                    {currentTool && TOOL_CHROME[currentTool.id]?.showHeader && (
+                    {mobileAppDesign && currentTool && <ToolIntroduction key={`${user?.uid}:${currentTool.id}`} uid={user?.uid} tool={toolArtwork} title={toolTitle} eyebrow={toolEyebrow} subtitle={MOBILE_TOOL_SUBTITLES[currentTool.id] ?? TOOL_CHROME[currentTool.id]?.subtitle ?? currentTool.description} />}
+                    {!mobileAppDesign && currentTool && TOOL_CHROME[currentTool.id]?.showHeader && (
                         <div className="mb-6">
                             {currentTool.id === 'journey' ? (
                             <ToolHeader
@@ -1043,6 +1057,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
 
                         </div>
                     )}
+                    <ToolIntroductionContext.Provider value={mobileAppDesign}>
                     <InnovationDataProvider uid={user?.uid} subjectProfile={subjectProfile}>
                         <ToolErrorBoundary
                             key={currentTool?.id}
@@ -1054,6 +1069,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                             </Suspense>
                         </ToolErrorBoundary>
                     </InnovationDataProvider>
+                    </ToolIntroductionContext.Provider>
                 </MotionDiv>
             )}
         </AnimatePresence>

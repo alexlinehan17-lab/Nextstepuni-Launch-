@@ -62,7 +62,9 @@ function countWithUnit(value: number, pluralUnit: string): string {
 export const ActivityChart: React.FC<{
   buckets: ActivityBucket[];
   metric: ActivityMetric;
-}> = ({ buckets, metric }) => {
+  variant?: 'line' | 'bar';
+}> = ({ buckets, metric, variant = 'line' }) => {
+  const chartHeight = variant === 'bar' ? 205 : CHART_HEIGHT;
   const { ref, width } = useChartWidth();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const values = buckets.map(bucket => bucket[metric]);
@@ -70,7 +72,7 @@ export const ActivityChart: React.FC<{
   const maxValue = niceMax(Math.max(...values, 0));
   const margin = { top: 18, right: 10, bottom: 38, left: width < 420 ? 34 : 42 };
   const plotWidth = Math.max(1, width - margin.left - margin.right);
-  const plotHeight = CHART_HEIGHT - margin.top - margin.bottom;
+  const plotHeight = chartHeight - margin.top - margin.bottom;
   const step = plotWidth / Math.max(1, buckets.length);
   const unit = metric === 'sessions' ? 'sessions' : 'minutes';
   const labelEvery = buckets.length > 20 ? (width < 480 ? 6 : 4) : (buckets.length > 10 && width < 480 ? 2 : 1);
@@ -116,8 +118,8 @@ export const ActivityChart: React.FC<{
     <div ref={ref} className="relative w-full">
       <svg
         width="100%"
-        height={CHART_HEIGHT}
-        viewBox={`0 0 ${width} ${CHART_HEIGHT}`}
+        height={chartHeight}
+        viewBox={`0 0 ${width} ${chartHeight}`}
         role="img"
         aria-label={`Study activity chart showing ${unit}`}
       >
@@ -133,7 +135,7 @@ export const ActivityChart: React.FC<{
           );
         })}
 
-        {hasData && steadyMean !== null && (
+        {variant === 'line' && hasData && steadyMean !== null && (
           <g aria-hidden="true">
             <rect
               x={margin.left}
@@ -145,7 +147,7 @@ export const ActivityChart: React.FC<{
             <text x={width - margin.right - 4} y={yFor(steadyMean * 1.35) + 12} textAnchor="end" fontSize="8.5" fontWeight="700" letterSpacing="1.5" fill="rgba(58, 141, 95, 0.75)">STEADY</text>
           </g>
         )}
-        {hasData && points.length > 1 && (
+        {variant === 'line' && hasData && points.length > 1 && (
           <g aria-hidden="true" pointerEvents="none">
             <path d={areaPath} fill="rgba(242, 107, 31, 0.13)" />
             <path d={smoothPath} fill="none" stroke="rgba(242, 107, 31, 0.8)" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
@@ -167,10 +169,16 @@ export const ActivityChart: React.FC<{
               onFocus={() => setActiveIndex(index)}
               onBlur={() => setActiveIndex(null)}
               onTouchStart={() => setActiveIndex(index)}
+              onClick={() => setActiveIndex(index)}
+              onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setActiveIndex(index); } }}
               className="outline-none"
             >
               <rect x={margin.left + (index * step)} y={margin.top} width={step} height={plotHeight + 24} fill="transparent" />
-              {value > 0 && (
+              {variant === 'bar' && value > 0 && <g aria-hidden="true">
+                <rect x={margin.left + index * step + step * .22} y={yFor(value)} width={step * .56} height={Math.max(0, plotHeight - (yFor(value) - margin.top))} rx="3" fill={isActive ? 'var(--ink-primary)' : 'var(--accent-hex)'} />
+                {buckets.length <= 7 && <text x={margin.left + index * step + step / 2} y={yFor(value) - 6} textAnchor="middle" fontSize="11" fill="var(--ink-primary)">{value}</text>}
+              </g>}
+              {variant === 'line' && value > 0 && (
                 <circle
                   cx={margin.left + (index * step) + (step / 2)}
                   cy={yFor(value)}
@@ -181,7 +189,7 @@ export const ActivityChart: React.FC<{
                 />
               )}
               {labelVisible && (
-                <text x={margin.left + (index * step) + (step / 2)} y={CHART_HEIGHT - 13} textAnchor="middle" fontSize="11" fill="var(--ink-muted)">
+                <text x={margin.left + (index * step) + (step / 2)} y={chartHeight - 13} textAnchor="middle" fontSize="11" fill="var(--ink-muted)">
                   {bucket.label}
                 </text>
               )}

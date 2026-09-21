@@ -19,6 +19,7 @@
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, Bookmark, Search } from 'lucide-react';
+import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import ToolMasthead from '../launchpad/ToolMasthead';
 import PaperSelection, { LEVEL_LABEL, paperLabel } from './PaperSelection';
 import './archive.css';
@@ -204,6 +205,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   onBack,
   initialView,
 }) => {
+  const mobileAppDesign = useMobileAppDesign();
   const { state, isLoaded, recordRecent, updatePage, setFilters, finishReading } = usePaperFinder(uid);
   const junior = studentCycle === 'junior-cycle';
 
@@ -909,7 +911,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   return <section className="pt-archive pt-home" aria-label="Paper Trail archive">
     {milestone && <MilestoneCelebration milestone={milestone} dateIso={new Date().toISOString().slice(0, 10)} onClose={dismissMilestone} />}
     <nav className="pt-toolbar" aria-label="Paper Trail">
-      <button className="pt-text-button" onClick={onBack}><ArrowLeft size={20} aria-hidden /> Tools</button>
+      {mobileAppDesign ? <p className="pt-page-intro">Exam papers & marking schemes.</p> : <button className="pt-text-button" onClick={onBack}><ArrowLeft size={20} aria-hidden /> Tools</button>}
       <button className="pt-text-button" onClick={() => setView({ v: 'saved' })}><Bookmark size={18} aria-hidden /> Saved</button>
     </nav>
     <ToolMasthead tool="paper-trail" eyebrow="Your exam archive" title="Paper Trail." subtitle="Exam papers & marking schemes." />
@@ -930,10 +932,10 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       <button className="pt-continue" onClick={() => openStoredRef(lastOpened)}>Continue <ArrowRight size={18} aria-hidden /></button>
     </div>}
     <HorizontalTabs
-      variant="pill"
+      variant={mobileAppDesign ? "underline" : "pill"}
       size="sm"
       label="Subject selection"
-      className="w-fit mb-3"
+      className={mobileAppDesign ? "editorial-tabs mb-3" : "w-fit mb-3"}
       value={scope}
       onChange={next => setScope(next as 'mine' | 'all')}
       options={[{ value: 'mine', label: 'My subjects' }, { value: 'all', label: 'All subjects' }]}
