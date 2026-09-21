@@ -1,6 +1,6 @@
 # Approved mobile design — 21 September 2026
 
-This is the working app, using its existing localhost demo account. Run `npm run dev -- --host 127.0.0.1 --port 5202`, open `/`, choose **Demo Account**, then open `/output/mobile-editorial-20260921/index.html` in the same tab. The same-origin development iframe activates the mobile design at 320, 390 or 430 CSS pixels. This preview is not part of the production build.
+This is the working app, using its existing localhost demo account. Run `npm run dev -- --host 127.0.0.1 --port 5202`, open `/output/mobile-editorial-20260921/index.html` directly. The preview automatically loads its sample account on every visit, refresh and screen change; no login is needed. The same-origin development iframe activates the mobile design at 320, 390 or 430 CSS pixels. This preview is not part of the production build.
 
 ## Applied choices
 

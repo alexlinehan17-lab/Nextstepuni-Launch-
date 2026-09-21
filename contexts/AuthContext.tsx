@@ -23,6 +23,7 @@ import {
 } from '../data/devStudent';
 import { isVerifiedAdminSession } from '../utils/adminIdentity';
 import { clearLocalSessionData } from '../utils/sessionPrivacy';
+import { isLocalDemoPreview } from '../utils/localDemoPreview';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -138,6 +139,20 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // Firebase guarantees onAuthStateChanged waits for the persistence layer
   // (IndexedDB) before its first fire, so the first callback is always definitive.
   useEffect(() => {
+    // The development review is self-contained: every iframe navigation gets
+    // sample data, without a saved login or any real-account auth subscription.
+    if (isLocalDemoPreview()) {
+      setUser(createDemoStudentSession());
+      setLoadedData(loadDemoStudentLoadedData());
+      setLoadedDataUid(DEMO_STUDENT_UID);
+      setLoadedDataStatus('loaded');
+      setIsLoadingAuth(false);
+      authResolvedRef.current = true;
+      setAuthResolved(true);
+      setUserResolved(true);
+      return;
+    }
+
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
       // Signup and profile edits can finish while these reads are in flight.
       // A stale or school-only profile must not replace the chosen identity.
