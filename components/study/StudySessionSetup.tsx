@@ -1,5 +1,6 @@
 import React, { useId } from 'react';
-import { ArrowLeft, ArrowRight, BookOpen, ChevronDown, Play } from 'lucide-react';
+import BackButton from '../ui/BackButton';
+import { ArrowRight, BookOpen, ChevronDown, Play } from 'lucide-react';
 import type { StudentSubjectProfile } from '../subjectData';
 import type { StrategyMasteryMap } from '../../types';
 import type { TimetableBlockContext } from './StudySessionView';
@@ -50,7 +51,7 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
     <div className="study-session-page">
       <div className="ss-shell">
         <nav className="ss-navigation" aria-label="Study navigation">
-          <button type="button" onClick={onBack} aria-label="Back"><ArrowLeft size={18} aria-hidden="true" /><span>Back</span></button>
+          <BackButton onClick={onBack} />
           <button type="button" onClick={onReflections}><BookOpen size={17} aria-hidden="true" />My reflections{reflectionCount > 0 ? ` (${reflectionCount})` : ''}</button>
         </nav>
         <header className="lp-masthead ss-masthead">

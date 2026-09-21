@@ -6,7 +6,7 @@
 import React, { useMemo, useState } from 'react';
 import './dashboard/dashboard-refined.css';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
-import { ArrowRight, Check, ChevronDown, Moon, Sun } from 'lucide-react';
+import { ArrowRight, Check, Moon, Sun } from 'lucide-react';
 import { MotionDiv } from './Motion';
 import PageHeader from './ui/PageHeader';
 import HorizontalTabs from './ui/HorizontalTabs';
@@ -61,6 +61,7 @@ import {
 import DashboardInsights, { InsightsToggle } from './dashboard/DashboardInsights';
 import StudyPassport from './dashboard/StudyPassport';
 import ConfidenceRecord from './dashboard/ConfidenceRecord';
+import ProgressSectionPicker from './dashboard/ProgressSectionPicker';
 import TermReviewCard from './dashboard/TermReviewCard';
 import {
   buildActivityInsights,
@@ -586,16 +587,10 @@ const DashboardView: React.FC<DashboardViewProps> = ({
           transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="dashboard-heading flex flex-col gap-6 border-b border-[var(--outline-strong)] pb-7 lg:flex-row lg:items-end lg:justify-between">
-            {mobileAppDesign ? <label className="dashboard-section-picker">
-              <span>Explore your record</span>
-              <select aria-label="Progress section" value={tab} onChange={event => {
-                const next = event.target.value as DashboardTab;
-                if (activeTab === undefined) setLocalTab(next);
-                onTabChange?.(next);
-              }}>{TABS.map(item => <option key={item.id} value={item.id}>{item.label}</option>)}</select>
-              <small aria-hidden="true">{TABS.findIndex(item => item.id === tab) + 1} / {TABS.length}</small>
-              <ChevronDown size={18} aria-hidden="true" />
-            </label> : <div className="max-w-3xl">
+            {mobileAppDesign ? <ProgressSectionPicker value={tab} options={TABS} onChange={next => {
+              if (activeTab === undefined) setLocalTab(next);
+              onTabChange?.(next);
+            }} /> : <div className="max-w-3xl">
               <div className="flex items-center gap-3">
                 <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent-hex)]">Your learning record</p>
                 <span className="h-px w-8 bg-[var(--outline-soft)]" aria-hidden="true" />
@@ -731,7 +726,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 </Panel>}
                 {programmePanel}
                 <Panel disclosure eyebrow="Learning methods" title="Techniques used" detail="Recorded prompts and self-reported study techniques." className="lg:col-span-6">
-                  <RankedBarChart values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
+                  <RankedBarChart editorial={mobileAppDesign} values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
                 </Panel>
                 {!mobileAppDesign && mockPanel}
                 {mobileAppDesign && <nav className="dashboard-section-links" aria-label="Explore your progress">{TABS.slice(1).map(item => <button type="button" key={item.id} onClick={() => { if (activeTab === undefined) setLocalTab(item.id); onTabChange?.(item.id); }}>{item.label}<ArrowRight size={17} /></button>)}</nav>}
@@ -750,11 +745,11 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 <Panel eyebrow="Time allocation" title="Subjects studied" detail="Focused minutes across the selected period." className="lg:col-span-5">
                   <RankedBarChart values={subjectAllocation} limit={mobileAppDesign ? subjectAllocation.length : 6} unit="min" emptyTitle="No subject split yet" emptyDetail="Log a study session and its subject will appear here." />
                 </Panel>
-                <Panel disclosure eyebrow="Session design" title="Learning mix" detail="How study time is being used." className="lg:col-span-6">
-                  <SessionMixChart values={sessionMix} />
+                <Panel disclosure eyebrow="Session design" title="Learning mix" detail="Your recorded sessions, by type." className="lg:col-span-6">
+                  <SessionMixChart values={sessionMix} editorial={mobileAppDesign} />
                 </Panel>
                 <Panel disclosure eyebrow="Learning methods" title="Techniques used" detail="Recorded prompts and self-reported study techniques." className="lg:col-span-6">
-                  <RankedBarChart values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
+                  <RankedBarChart editorial={mobileAppDesign} values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
                 </Panel>
               </>
             )}
@@ -763,9 +758,9 @@ const DashboardView: React.FC<DashboardViewProps> = ({
               <>
                 <div className="lg:col-span-12">{React.cloneElement(confidencePanel, { className: 'lg:col-span-12' })}</div>
                 <Panel eyebrow="Current picture" title="Topic readiness" detail="Current snapshot from War Room and study debriefs. The subject filter applies; the time range does not." className="lg:col-span-12">
-                  <MasteryBar summary={masterySummary} />
+                  <MasteryBar summary={masterySummary} editorial={mobileAppDesign} />
                 </Panel>
-                {programmePanel}
+                {!mobileAppDesign && programmePanel}
               </>
             )}
 
@@ -773,13 +768,13 @@ const DashboardView: React.FC<DashboardViewProps> = ({
               <>
                 {React.cloneElement(mockPanel, { className: 'lg:col-span-8' })}
                 <Panel disclosure eyebrow="Session design" title="Learning mix" detail="New learning, practice and revision in this period." className="lg:col-span-4">
-                  <SessionMixChart values={sessionMix} />
+                  <SessionMixChart values={sessionMix} editorial={mobileAppDesign} />
                 </Panel>
                 <Panel eyebrow="Topic readiness" title="What feels secure" detail="A current snapshot, filtered by subject when selected." className="lg:col-span-6">
-                  <MasteryBar summary={masterySummary} />
+                  <MasteryBar summary={masterySummary} editorial={mobileAppDesign} />
                 </Panel>
                 <Panel disclosure eyebrow="Methods in practice" title="Techniques used" detail="How often each learning method was recorded." className="lg:col-span-6">
-                  <RankedBarChart values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
+                  <RankedBarChart editorial={mobileAppDesign} values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
                 </Panel>
               </>
             )}

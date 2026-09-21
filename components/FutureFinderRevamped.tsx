@@ -13,11 +13,12 @@
  */
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import ToolMasthead from './launchpad/ToolMasthead';
+import BackButton from './ui/BackButton';
 import React, { useMemo, useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, Compass, X, ArrowRight, Check } from 'lucide-react';
+import { Compass, X, ArrowRight, Check } from 'lucide-react';
 import { COLORS } from '../design/tokens';
 
 import { useFutureFinderRevamped, type FutureFinderRevampedState } from '../hooks/useFutureFinderRevamped';
@@ -270,7 +271,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     return (
       <div className="w-full max-w-2xl mx-auto">
         <div className="flex items-center gap-3 mb-4">
-          <button onClick={() => (idx > 0 ? setIdx((i) => i - 1) : setPhase('intro'))} aria-label={idx > 0 ? 'Previous question' : 'Back to introduction'} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 dark:hover:bg-zinc-800 dark:hover:text-zinc-200"><ArrowLeft size={18} /></button>
+          <BackButton onClick={() => (idx > 0 ? setIdx((i) => i - 1) : setPhase('intro'))} label={idx > 0 ? 'Previous question' : 'Back to introduction'} />
           <div className="flex-1 h-2 rounded-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden"><div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: COLORS.accent, transition: 'width 0.45s cubic-bezier(0.22,1,0.36,1)' }} /></div>
           <span className="text-[12px] font-semibold text-zinc-400 shrink-0">{idx + 1}/{questions.length}</span>
         </div>

@@ -113,7 +113,7 @@ const TermReviewCard: React.FC<Props> = ({ sessions, streak }) => {
   };
 
   return (
-    <article className="lg:col-span-12 rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-5 py-4 sm:px-6 sm:py-5">
+    <article className="term-review-card lg:col-span-12 rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-5 py-4 sm:px-6 sm:py-5">
       <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
         <div className="min-w-0">
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Term in review · since {stats.startLabel}</p>
@@ -125,7 +125,7 @@ const TermReviewCard: React.FC<Props> = ({ sessions, streak }) => {
               { v: String(stats.bestStreak), l: 'Best streak' },
             ].map(cell => (
               <div key={cell.l} className="min-w-0">
-                <p className="truncate font-serif text-[26px] font-semibold leading-none tabular-nums text-[var(--ink-primary)]">{cell.v}</p>
+                <p className="font-serif text-[26px] font-semibold leading-snug break-words tabular-nums text-[var(--ink-primary)]">{cell.v}</p>
                 <p className="mt-1.5 text-[9px] font-bold uppercase tracking-[0.15em] text-[var(--ink-muted)]">{cell.l}</p>
               </div>
             ))}

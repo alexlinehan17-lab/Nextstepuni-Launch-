@@ -8,6 +8,10 @@ vi.mock('../hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => true }
 vi.mock('../components/MountainLandscape', () => ({ default: () => <div>Programme mountains</div> }));
 beforeEach(() => { vi.useFakeTimers(); vi.setSystemTime(new Date(2026, 8, 20, 12)); });
 afterEach(() => { cleanup(); vi.useRealTimers(); });
+function chooseSection(label: string) {
+  fireEvent.click(screen.getByRole('button', { name: 'Progress section' }));
+  fireEvent.click(screen.getByRole('option', { name: new RegExp(label) }));
+}
 function show() {
   const demo = createDemoStudentLoadedData(new Date());
   return render(<DashboardView userProgress={demo.userProgress} allCourses={ALL_COURSES} categoryTitles={{} as never}
@@ -19,30 +23,47 @@ function show() {
 }
 test('section changes preserve subject and range; milestones removes period controls', () => {
   show();
-  const section = screen.getByRole('combobox', { name: 'Progress section' });
-  expect(within(section).getAllByRole('option')).toHaveLength(5);
+  const section = screen.getByRole('button', { name: 'Progress section' });
+  fireEvent.click(section);
+  expect(within(screen.getByRole('listbox', { name: 'Progress sections' })).getAllByRole('option')).toHaveLength(5);
+  fireEvent.keyDown(screen.getByRole('listbox'), { key: 'Escape' });
   fireEvent.change(screen.getByRole('combobox', { name: 'Filter by subject' }), { target: { value: 'Irish' } });
   fireEvent.click(screen.getByRole('tab', { name: 'Month' }));
-  fireEvent.change(section, { target: { value: 'confidence' } });
+  chooseSection('Confidence');
   expect(screen.getByRole('combobox', { name: 'Filter by subject' })).toHaveValue('Irish');
   expect(screen.getByRole('tab', { name: 'Month' })).toHaveAttribute('aria-selected', 'true');
   expect(screen.getByRole('heading', { name: 'Topic readiness' })).toBeInTheDocument();
-  fireEvent.change(section, { target: { value: 'milestones' } });
+  chooseSection('Milestones');
   expect(screen.queryByRole('tablist', { name: 'Dashboard time range' })).not.toBeInTheDocument();
   expect(screen.queryByRole('combobox', { name: 'Filter by subject' })).not.toBeInTheDocument();
-  fireEvent.change(section, { target: { value: 'study' } });
+  chooseSection('Study');
   expect(screen.getByRole('combobox', { name: 'Filter by subject' })).toHaveValue('Irish');
 });
 test('all seven subjects remain visible and full mocks retain their all-subject evidence', () => {
   const { container } = show();
-  fireEvent.change(screen.getByRole('combobox', { name: 'Progress section' }), { target: { value: 'confidence' } });
+  chooseSection('Confidence');
   expect(container.querySelectorAll('.confidence-subject')).toHaveLength(7);
   fireEvent.change(screen.getByRole('combobox', { name: 'Filter by subject' }), { target: { value: 'Irish' } });
-  fireEvent.change(screen.getByRole('combobox', { name: 'Progress section' }), { target: { value: 'practice' } });
+  chooseSection('Practice');
   expect(screen.getByText(/Full mock totals stay all-subject/)).toBeInTheDocument();
   expect(container.querySelectorAll('.dashboard-mock-record')).toHaveLength(3);
   for (const record of container.querySelectorAll('.dashboard-mock-record')) {
     expect(record.textContent).toContain('Mathematics');
     expect(record.textContent).toContain('Irish');
   }
+});
+
+test('section menu supports keyboard selection and escape, and the programme belongs only to Overview', () => {
+  show();
+  const trigger = screen.getByRole('button', { name: 'Progress section' });
+  fireEvent.keyDown(trigger, { key: 'ArrowDown' });
+  expect(screen.getByRole('option', { name: /Overview/ })).toHaveFocus();
+  fireEvent.keyDown(screen.getByRole('listbox'), { key: 'End' });
+  expect(screen.getByRole('option', { name: /Milestones/ })).toHaveFocus();
+  fireEvent.keyDown(screen.getByRole('listbox'), { key: 'Escape' });
+  expect(trigger).toHaveFocus();
+  expect(trigger).toHaveAttribute('aria-expanded', 'false');
+  expect(screen.getByText('Five climbs, all your own.')).toBeInTheDocument();
+  chooseSection('Confidence');
+  expect(screen.queryByText('Five climbs, all your own.')).not.toBeInTheDocument();
 });

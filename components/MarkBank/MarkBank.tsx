@@ -20,6 +20,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { X } from 'lucide-react';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import ToolMasthead from '../launchpad/ToolMasthead';
 import SubjectPicker from '../launchpad/SubjectPicker';
@@ -163,6 +164,14 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
 
 const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => Date.now() }) => {
   const mobileAppDesign = useMobileAppDesign();
+  const overviewKey = `nsu:mark-bank-overview:${uid ?? 'guest'}`;
+  const [overviewDismissed, setOverviewDismissed] = useState(() => {
+    try { return localStorage.getItem(overviewKey) === 'dismissed'; } catch { return false; }
+  });
+  const changeOverview = (dismissed: boolean) => {
+    setOverviewDismissed(dismissed);
+    try { if (dismissed) localStorage.setItem(overviewKey, 'dismissed'); else localStorage.removeItem(overviewKey); } catch { /* In-memory state still works. */ }
+  };
   const canSelectSubject = useSubjectAccess();
   /* Read synchronously on mount. A Chemistry Ordinary student must never watch
      the tool open on Biology Higher and correct it — that is two clicks every
@@ -534,7 +543,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
           {!mobileAppDesign && topicFilters}
         </aside>
         <section className="min-w-0">
-          <div className="lp-panel lp-practice-entry"><p className="lp-eyebrow">{subject.title} · {LEVEL_LABEL[level]}</p><h2 className="lp-title">{dueCount > 0 ? 'Your next practice.' : 'Make a start today.'}</h2>
+          {mobileAppDesign && overviewDismissed && !cardsError && !levelUnbuilt ? <div className="mb-compact-practice">
+            <button type="button" className="lp-button" onClick={() => startSession()}>{dueCount > 0 ? `Start today's ${Math.min(dueCount, MARK_BANK_SESSION_SIZE)}` : 'Start a practice session'}</button>
+            <button type="button" onClick={() => changeOverview(false)}>Show overview</button>
+          </div> : <div className="lp-panel lp-practice-entry">
+          {mobileAppDesign && !cardsError && !levelUnbuilt && <button type="button" className="lp-introduction-close" aria-label="Dismiss practice overview" onClick={() => changeOverview(true)}><X size={18} /></button>}
+          <p className="lp-eyebrow">{subject.title} · {LEVEL_LABEL[level]}</p><h2 className="lp-title">{dueCount > 0 ? 'Your next practice.' : 'Make a start today.'}</h2>
           <div className="flex gap-8 text-sm mb-2"><span><strong className="block text-xl">{cards.length}</strong>question cards</span><span><strong className="block text-xl">{coveredTopics} / {totalTopics}</strong>topics with cards</span></div>
           {!online && (
             <StatusNotice title="Working offline" className="mt-[18px]">
@@ -603,8 +617,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
               )}
             </>
           )}
-          </div>
-          <h2 className="lp-title mt-7">Or choose a topic</h2>
+          </div>}
+          <h2 className="lp-title mt-7">Choose a topic</h2>
           {mobileAppDesign && topicFilters}
         {/* ---- the list: one card, aligned columns, hairlines not boxes ---- */}
         {!cardsError && !levelUnbuilt && (

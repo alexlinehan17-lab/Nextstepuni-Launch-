@@ -58,6 +58,8 @@ import ToolErrorBoundary from './ToolErrorBoundary';
 import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
 import ToolMasthead, { ToolArtwork, ToolIntroduction, ToolIntroductionContext } from './launchpad/ToolMasthead';
+import BackButton from './ui/BackButton';
+import { InnovationZoneIcon } from './sectionIcons';
 import { ToolHeader } from './ToolHeader';
 import ToolIconBlob, { type ToolIconKey } from './ToolIconBlob';
 import { isActiveSeniorYear, isLcaYear } from '../utils/authUtils';
@@ -892,6 +894,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
           paddingRight: 'calc(16px + var(--sar, 0px))',
         }}
       >
+        {mobileAppDesign ? <div className="lp-mobile-tool-header">
+          <BackButton label={activeTool ? 'Back to Launchpad' : 'Back to home'} onClick={activeTool ? () => nav.goBack() : onBack} />
+          <div className="lp-mobile-tool-title"><p>{toolEyebrow}</p><h1 className="lp-navigation-title">{toolTitle}</h1></div>
+          <div aria-hidden="true">{activeTool ? <ToolArtwork tool={toolArtwork} className="lp-navigation-art" /> : <div className="lp-navigation-art"><InnovationZoneIcon /></div>}</div>
+        </div> : (
         <div className="container mx-auto flex min-w-0 items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-3 md:gap-8">
             <MotionButton type="button" aria-label={activeTool ? 'Back to Launchpad' : 'Back to home'} whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={activeTool ? () => nav.goBack() : onBack} className={`p-2.5 rounded-xl bg-[var(--surface-paper)] border-[1.5px] border-[var(--outline-strong)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] ${mobileAppDesign ? 'min-h-11 min-w-11 shrink-0' : ''}`}>
@@ -913,6 +920,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
               the profile/settings flow. */}
           <div aria-hidden="true">{mobileAppDesign && <ToolArtwork tool={toolArtwork} className="lp-navigation-art" />}</div>
         </div>
+        )}
       </header>
 
       {/* Tools that lay out their own work surface. `max-w-4xl` gives 848px of

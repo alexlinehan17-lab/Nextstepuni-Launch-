@@ -5,8 +5,8 @@ This is the working app, using its existing localhost demo account. Run `npm run
 ## Applied choices
 
 - Editorial orange rule on Home, Progress, Study, Journey and Launch; existing Lucide icons.
-- Journey's DM Sans for mobile headings; original serif numbers and labels-above-number Progress stats.
-- Five-section Progress selector, outlined subject picker and underline Week/Month/Year tabs.
+- Journey's DM Sans for mobile headings; upright DM Sans numbers and labels-above-number Progress stats.
+- Compact five-section Progress menu, outlined subject picker and underline Week/Month/Year tabs.
 - Original Launchpad search and scrolling category controls, compact tool rows, original artwork (including the Future Finder telescope).
 - Compact tool name/artwork in the top bar. A dismissible introduction on the first visit, remembered per tool and account on this device. Nested tool mastheads no longer repeat it.
 - Mark Bank: stacked subject/level controls, practice entry, then searchable topic groups. No card/curriculum content changes.
@@ -15,7 +15,7 @@ This is the working app, using its existing localhost demo account. Run `npm run
 - Planner: Star Crew blocks, underline day/week controls, readable week agenda, expandable explanation; existing scheduling and actions.
 - Paper Trail: compact header, underline collection selector, original archive/search/saved-paper flows.
 - Insights: compact header and cohesive heading typography; existing evidence and actions.
-- Study timer, Year Plans, Learning Paths, Module list, Module worlds and Lesson reader unchanged apart from the shared bottom-navigation selection style.
+- Study timer, Year Plans, Learning Paths, Module list, Module worlds and Lesson reader retain their existing layouts, with shared bottom-navigation selection and back controls.
 
 ## Deeper Progress work
 
@@ -28,3 +28,9 @@ Readiness now joins canonical subject IDs through the curriculum registry. This 
 TypeScript application and test checks, ESLint and production build. Targeted analytics, mobile navigation, tool-introduction, Points Passport, Paper Trail, timetable and Mark Bank preservation tests. New regressions cover first-visit/dismissal/return/account isolation/storage failure, all-subject confidence, canonical readiness aliases and filter preservation across all five Progress sections.
 
 Browser checks use the local demo only, at 320/390/430 CSS pixels. JPEG screenshots in this folder are actual browser captures, not proposed mockups. They do not establish native iPhone behaviour. The earlier native exam-date alignment check remains outstanding.
+
+## Follow-up refinements
+
+Progress now uses illustrated session types, ink tally marks for technique use and a simple topic-readiness ledger. Five climbs appears only in Overview. Milestones uses an open, white record layout with space beneath the section menu. Numbers use upright DM Sans; term-review labels can wrap without clipping.
+
+Tool titles are centred between matching 44px back buttons and their artwork. Launchpad uses the approved card-dealer companion. Mark Bank’s mobile session header keeps the subject and current/total count; optional pool metadata remains on desktop. Its start overview can be dismissed and reopened, with practice still available.

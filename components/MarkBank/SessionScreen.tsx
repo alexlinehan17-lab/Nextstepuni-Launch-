@@ -33,6 +33,8 @@
  */
 
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import BackButton from '../ui/BackButton';
+import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
@@ -2189,6 +2191,7 @@ const useTwoPane = () => {
 const SessionScreen: React.FC<SessionScreenProps> = ({
   cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish,
 }) => {
+  const mobileAppDesign = useMobileAppDesign();
   const reduced = useReducedMotion() ?? false;
   const wide = useTwoPane();
   /* The scroller has to reserve exactly as much room as the action rail takes,
@@ -2555,6 +2558,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         position: 'sticky', top: 0, zIndex: 3,
         background: 'var(--mb-paper)', borderBottom: `1px solid ${HAIRLINE_2}`,
       }}>
+        {mobileAppDesign ? <div className="mb-mobile-session-header">
+          <BackButton ref={leaveButtonRef} label="Leave review" onClick={openExitConfirmation} />
+          <span>{subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}</span>
+          <strong aria-label={`${Math.min(distinctDone + 1, exerciseTotal)} of ${exerciseTotal} this review`}>{Math.min(distinctDone + 1, exerciseTotal)} <small>/ {exerciseTotal}</small></strong>
+        </div> : (
         <div style={{
           maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
           height: 58, display: 'flex', alignItems: 'center', gap: 14,
@@ -2612,6 +2620,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             </span>
           )}
         </div>
+        )}
         <ProgressRail total={exerciseTotal} done={distinctDone} current={distinctDone} />
       </div>
 
