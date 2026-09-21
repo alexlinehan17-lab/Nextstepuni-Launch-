@@ -3,6 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import CrewIllustration from './CrewIllustration';
 import CrewEmptyState from './CrewEmptyState';
 import React, { useState, useMemo, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
@@ -95,6 +97,7 @@ const StudyBlockCard: React.FC<{
   block: StudyBlock; completed?: boolean; skipped?: boolean; onToggle?: () => void;
   bargainPts?: number; strategyHint?: SubjectStrategyHint; isToday?: boolean; hasStudyFlow?: boolean; onStudyNow?: () => void;
 }> = ({ block, completed, skipped, onToggle, strategyHint, onStudyNow, hasStudyFlow }) => {
+  const mobileAppDesign = useMobileAppDesign();
   const config = SESSION_TYPE_CONFIG[block.sessionType];
   const colour = getSubjectHexColor(block.subjectName);
   return <article className="lp-study-card" data-completed={completed || undefined}>
@@ -102,6 +105,7 @@ const StudyBlockCard: React.FC<{
       <span>{config.label} · {block.durationMinutes} min</span><span>{skipped ? 'Skipped' : completed ? 'Completed' : 'Planned'}</span>
     </div>
     <div className="lp-study-card-body">
+      {mobileAppDesign && <CrewIllustration subject={block.subjectName} className="planner-subject-crew" />}
       <h3>{block.subjectName}</h3>
       {block.suggestedTopics?.length ? <p>{block.suggestedTopics.join(', ')}.</p> : <p>{config.label} at your own pace, one focused block at a time.</p>}
       {strategyHint && <p className="lp-study-hint">Try: {strategyHint.label}</p>}
@@ -421,6 +425,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   // "Next Up" -- first uncompleted session today
 
   // View mode: day-focused or week overview
+  const mobileAppDesign = useMobileAppDesign();
   const [viewMode, setViewMode] = useState<'day' | 'week'>('day');
   // Day-focused view: selected day for both mobile and desktop
   const [selectedDay, setSelectedDay] = useState<number>(isCurrentWeek ? todayDayIndex : 0);
@@ -438,7 +443,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   return (
     <div className="lp-planner space-y-5">
       <ToolMasthead tool="planner" eyebrow="The Planner" title="Your day, in order." subtitle={`${new Date().toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' })} · ${todayTotalCount} ${todayTotalCount === 1 ? 'block' : 'blocks'} today.`} />
-      <div className="lp-planner-layout"><section className="lp-planner-agenda space-y-5"><div className="flex items-center justify-between"><h2 className="lp-title">{selectedDay === todayDayIndex && isCurrentWeek ? 'Today' : DAYS_OF_WEEK[selectedDay]}</h2><button className="lp-button secondary" onClick={() => setShowPlanSettings(true)}><Settings size={15} /> Plan settings</button></div>
+      <div className="lp-planner-layout"><section className="lp-planner-agenda space-y-5"><div className="flex items-center justify-between"><h2 className="lp-title">{mobileAppDesign && viewMode === 'week' ? 'Your week' : selectedDay === todayDayIndex && isCurrentWeek ? 'Today' : DAYS_OF_WEEK[selectedDay]}</h2><button className="lp-button secondary" onClick={() => setShowPlanSettings(true)}><Settings size={15} /> Plan settings</button></div>
       <ModalFrame open={showPlanSettings} onClose={() => setShowPlanSettings(false)} title="Plan settings">
         <div className="p-5 space-y-5"><h3 className="lp-title">Make room for rest.</h3>
       {/* ── Rest day toggle (long-press hint) ── */}
@@ -474,8 +479,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </div>
       </ModalFrame>
       {/* ── Week navigation + view toggle ── */}
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
+      <div className="planner-date-controls flex items-center justify-between">
+        <div className="planner-date-range flex items-center gap-3">
           <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">
             {formatDateShort(weekStart)} — {formatDateShort(weekEnd)}
           </span>
@@ -501,7 +506,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         </div>
         {/* Day / Week toggle */}
         <HorizontalTabs
-          variant="pill"
+          variant={mobileAppDesign ? "underline" : "pill"}
+          className={mobileAppDesign ? "editorial-tabs planner-view-tabs" : ""}
           size="sm"
           label="Timetable view"
           value={viewMode}
@@ -513,7 +519,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       {/* ── DAY VIEW ── */}
       {viewMode === 'day' && (<>
       {/* ── Day Tabs (horizontal pill selector) ── */}
-      <div className="flex w-full items-center gap-1 overflow-x-auto rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1">
+      <div className="planner-day-strip flex w-full items-center gap-1 overflow-x-auto rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1">
         {DAY_SHORTS.map((day, i) => {
           const dayName = DAYS_OF_WEEK[i];
           const isDayRest = restDays.has(dayName);
@@ -524,6 +530,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           return (
             <button
               key={day}
+              aria-pressed={isActive}
+              aria-label={`${dayName} ${new Date(weekStart.getFullYear(), weekStart.getMonth(), weekStart.getDate() + i).getDate()}`}
               onClick={() => setSelectedDay(i)}
               className={`flex-1 min-w-0 min-h-9 whitespace-nowrap rounded-lg border px-1 py-1.5 text-center text-[13px] font-semibold transition-colors ${
                 isActive
@@ -533,7 +541,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             >
               <span className="block">
                 <span className="relative inline-block">
-                  {day}
+                  {mobileAppDesign ? dayName.slice(0, 3) : day}
                   {getEventsForDay(i).length > 0 && (
                     <span className="absolute -top-0.5 -right-1.5 w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#C4873B' }} />
                   )}
@@ -547,6 +555,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
         })}
       </div>
 
+      {mobileAppDesign && <p className="planner-day-summary">{selectedDayIsRest ? 'Rest day' : `${selectedDayBlocks.length} ${selectedDayBlocks.length === 1 ? 'block' : 'blocks'} · ${selectedDayBlocks.reduce((total, block) => total + block.durationMinutes, 0)} minutes planned`}</p>}
       {/* ── Day Content: Full-width block cards ── */}
       <AnimatePresence mode="wait">
         <MotionDiv
@@ -572,9 +581,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           {/* Blocks or rest state */}
           {selectedDayIsRest || selectedDayBlocks.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-12 space-y-3">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(0,0,0,0.03)' }}>
-                <CalendarOff size={24} className="text-[#A8A29E] dark:text-zinc-500" />
-              </div>
+              {mobileAppDesign ? <CrewIllustration character="star-crew:maker" className="planner-rest-crew" /> : <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'rgba(0,0,0,0.03)' }}><CalendarOff size={24} className="text-[#A8A29E] dark:text-zinc-500" /></div>}
               <p className="text-sm font-medium text-[#A8A29E] dark:text-zinc-500">Rest day — recharge for tomorrow</p>
             </div>
           ) : (
@@ -636,7 +643,18 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       </div>
 
       {/* ── WEEK VIEW ── */}
-      {viewMode === 'week' && (
+      {viewMode === 'week' && (mobileAppDesign ? <div className="planner-week-agenda" aria-label="Week agenda">
+        {DAYS_OF_WEEK.map((day, index) => {
+          const blocks = timetable[index]?.blocks ?? [];
+          const rest = restDays.has(day);
+          const minutes = blocks.reduce((total, block) => total + block.durationMinutes, 0);
+          const completed = blocks.filter((block, blockIndex) => isBlockCompleted(index, blockIndex, block)).length;
+          return <button type="button" key={day} onClick={() => { setSelectedDay(index); setViewMode('day'); }}>
+            <strong>{day.slice(0, 3)} {new Date(weekStart.getFullYear(), weekStart.getMonth(), weekStart.getDate() + index).getDate()}</strong>
+            <span>{rest ? 'Rest day' : `${blocks.length} ${blocks.length === 1 ? 'block' : 'blocks'} · ${minutes} min`}{completed > 0 && <small>{completed} completed</small>}</span><ChevronRight size={18} />
+          </button>;
+        })}
+      </div> : (
         <div className="overflow-x-auto">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 6 }}>
             {DAY_SHORTS.map((day, i) => {
@@ -706,10 +724,17 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             })}
           </div>
         </div>
-      )}
+      ))}
 
       </section>
       {/* ── Why this week looks like this ── */}
+      {mobileAppDesign ? <details className="planner-explanation">
+        <summary>How this plan works <span aria-hidden="true">+</span></summary>
+        <p>{totalSessions} focused blocks · {totalHours}h{remainingMins > 0 ? ` ${remainingMins}m` : ''} this week.</p>
+        <p>{weeklyTarget.explanation}</p>
+        <p>Practice is spread across your available days, with repeat sessions spaced apart and room for rest.</p>
+        <p>{isJunior ? 'Subjects furthest below your target band receive more practice; every subject still receives maintenance time.' : 'Subjects with the strongest combination of grade gap, achievable marks and shaky topics receive more time; every subject still receives maintenance time.'}</p>
+      </details> : (
       <div
         className="lp-planner-week lp-panel"
         style={{ backgroundColor: '#FFFFFF', border: '1px solid #D8D2CB' }}
@@ -735,6 +760,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           </p>
         </div>
       </div>
+      )}
 
       </div>
       <section className="lp-allocation" aria-labelledby="planner-allocation-title">

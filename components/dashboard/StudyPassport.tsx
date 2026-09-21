@@ -8,6 +8,8 @@
  * in the dashboard; it is an artifact, not a surface.
  */
 
+import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
+import CrewIllustration from '../CrewIllustration';
 import React, { useMemo } from 'react';
 import { type StreakData } from '../../hooks/useStreak';
 import { type StudySessionRecord } from '../../utils/strategyRegistry';
@@ -25,6 +27,7 @@ interface Props {
 }
 
 const StudyPassport: React.FC<Props> = ({ streak, sessions, totalXP, badgesEarned, badgesVisible }) => {
+  const mobileAppDesign = useMobileAppDesign();
   const record = useMemo(() => {
     let seconds = 0;
     let firstYear: number | null = null;
@@ -49,6 +52,12 @@ const StudyPassport: React.FC<Props> = ({ streak, sessions, totalXP, badgesEarne
     { v: totalXP.toLocaleString(), l: 'Total XP' },
     { v: `${badgesEarned}/${badgesVisible}`, l: 'Badges' },
   ];
+
+  if (mobileAppDesign) return <article className="study-record" aria-label="Study Passport — all-time record">
+    <p className="study-record-eyebrow">Your all-time record</p>
+    <div className="study-record-streak"><div><strong>{streak.currentStreak}<span> day streak</span></strong><p>Personal best · {streak.longestStreak} days</p></div><CrewIllustration character="star-crew:maker" /></div>
+    <dl>{cells.slice(2).map(cell => <div key={cell.l}><dt>{cell.l}</dt><dd>{cell.v}</dd></div>)}</dl>
+  </article>;
 
   return (
     <article

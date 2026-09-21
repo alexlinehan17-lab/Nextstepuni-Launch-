@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import CrewIllustration from '../CrewIllustration';
 import type { UnifiedMockResult } from '../../types';
 import {
   CONFIDENCE_LABELS,
@@ -62,7 +63,9 @@ function countWithUnit(value: number, pluralUnit: string): string {
 export const ActivityChart: React.FC<{
   buckets: ActivityBucket[];
   metric: ActivityMetric;
-}> = ({ buckets, metric }) => {
+  variant?: 'line' | 'bar';
+}> = ({ buckets, metric, variant = 'line' }) => {
+  const chartHeight = variant === 'bar' ? 205 : CHART_HEIGHT;
   const { ref, width } = useChartWidth();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const values = buckets.map(bucket => bucket[metric]);
@@ -70,7 +73,7 @@ export const ActivityChart: React.FC<{
   const maxValue = niceMax(Math.max(...values, 0));
   const margin = { top: 18, right: 10, bottom: 38, left: width < 420 ? 34 : 42 };
   const plotWidth = Math.max(1, width - margin.left - margin.right);
-  const plotHeight = CHART_HEIGHT - margin.top - margin.bottom;
+  const plotHeight = chartHeight - margin.top - margin.bottom;
   const step = plotWidth / Math.max(1, buckets.length);
   const unit = metric === 'sessions' ? 'sessions' : 'minutes';
   const labelEvery = buckets.length > 20 ? (width < 480 ? 6 : 4) : (buckets.length > 10 && width < 480 ? 2 : 1);
@@ -116,8 +119,8 @@ export const ActivityChart: React.FC<{
     <div ref={ref} className="relative w-full">
       <svg
         width="100%"
-        height={CHART_HEIGHT}
-        viewBox={`0 0 ${width} ${CHART_HEIGHT}`}
+        height={chartHeight}
+        viewBox={`0 0 ${width} ${chartHeight}`}
         role="img"
         aria-label={`Study activity chart showing ${unit}`}
       >
@@ -133,7 +136,7 @@ export const ActivityChart: React.FC<{
           );
         })}
 
-        {hasData && steadyMean !== null && (
+        {variant === 'line' && hasData && steadyMean !== null && (
           <g aria-hidden="true">
             <rect
               x={margin.left}
@@ -145,7 +148,7 @@ export const ActivityChart: React.FC<{
             <text x={width - margin.right - 4} y={yFor(steadyMean * 1.35) + 12} textAnchor="end" fontSize="8.5" fontWeight="700" letterSpacing="1.5" fill="rgba(58, 141, 95, 0.75)">STEADY</text>
           </g>
         )}
-        {hasData && points.length > 1 && (
+        {variant === 'line' && hasData && points.length > 1 && (
           <g aria-hidden="true" pointerEvents="none">
             <path d={areaPath} fill="rgba(242, 107, 31, 0.13)" />
             <path d={smoothPath} fill="none" stroke="rgba(242, 107, 31, 0.8)" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
@@ -167,10 +170,16 @@ export const ActivityChart: React.FC<{
               onFocus={() => setActiveIndex(index)}
               onBlur={() => setActiveIndex(null)}
               onTouchStart={() => setActiveIndex(index)}
+              onClick={() => setActiveIndex(index)}
+              onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); setActiveIndex(index); } }}
               className="outline-none"
             >
               <rect x={margin.left + (index * step)} y={margin.top} width={step} height={plotHeight + 24} fill="transparent" />
-              {value > 0 && (
+              {variant === 'bar' && value > 0 && <g aria-hidden="true">
+                <rect x={margin.left + index * step + step * .22} y={yFor(value)} width={step * .56} height={Math.max(0, plotHeight - (yFor(value) - margin.top))} rx="3" fill={isActive ? 'var(--ink-primary)' : 'var(--accent-hex)'} />
+                {buckets.length <= 7 && <text x={margin.left + index * step + step / 2} y={yFor(value) - 6} textAnchor="middle" fontSize="11" fill="var(--ink-primary)">{value}</text>}
+              </g>}
+              {variant === 'line' && value > 0 && (
                 <circle
                   cx={margin.left + (index * step) + (step / 2)}
                   cy={yFor(value)}
@@ -181,7 +190,7 @@ export const ActivityChart: React.FC<{
                 />
               )}
               {labelVisible && (
-                <text x={margin.left + (index * step) + (step / 2)} y={CHART_HEIGHT - 13} textAnchor="middle" fontSize="11" fill="var(--ink-muted)">
+                <text x={margin.left + (index * step) + (step / 2)} y={chartHeight - 13} textAnchor="middle" fontSize="11" fill="var(--ink-muted)">
                   {bucket.label}
                 </text>
               )}
@@ -356,10 +365,25 @@ export const RankedBarChart: React.FC<{
   emptyTitle: string;
   emptyDetail: string;
   limit?: number;
-}> = ({ values, unit, emptyTitle, emptyDetail, limit = 6 }) => {
+  editorial?: boolean;
+}> = ({ values, unit, emptyTitle, emptyDetail, limit = 6, editorial = false }) => {
   if (values.length === 0) return <ChartEmpty title={emptyTitle} detail={emptyDetail} />;
   const shown = values.slice(0, limit);
   const max = Math.max(...shown.map(item => item.value), 1);
+  if (editorial) return <ol className="technique-ledger" aria-label="Recorded techniques">
+    {shown.map((item, index) => <li key={item.id}>
+      <span className="technique-position" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+      <div><div className="technique-label"><span>{item.label}</span><strong>{item.value}<small> {unit}</small></strong></div>
+        <div className="technique-tallies" aria-hidden="true">{Array.from({ length: Math.ceil(Math.min(item.value, 30) / 5) }, (_, group) => {
+          const count = Math.min(5, item.value - group * 5);
+          return <svg key={group} width="27" height="18" viewBox="0 0 27 18">
+            {Array.from({ length: Math.min(count, 4) }, (_, mark) => <path key={mark} d={`M${4 + mark * 6} 3 l-1 12`} />)}
+            {count === 5 && <path d="M1 14 L25 4" />}
+          </svg>;
+        })}{item.value > 30 && <small>+{item.value - 30}</small>}</div>
+      </div>
+    </li>)}
+  </ol>;
   return (
     <div className="space-y-4 py-2" role="img" aria-label={`${unit} ranked bar chart`}>
       {shown.map((item, index) => (
@@ -384,9 +408,16 @@ export const RankedBarChart: React.FC<{
   );
 };
 
-export const SessionMixChart: React.FC<{ values: RankedValue[] }> = ({ values }) => {
+export const SessionMixChart: React.FC<{ values: RankedValue[]; editorial?: boolean }> = ({ values, editorial = false }) => {
   const total = values.reduce((sum, item) => sum + item.value, 0);
   if (total === 0) return <ChartEmpty title="No learning mix yet" detail="Session types will separate into new learning, practice and revision once you begin studying." />;
+  if (editorial) return <div className="learning-mix-ledger" aria-label="Session type allocation">
+    {values.map(item => <div key={item.id}>
+      {item.id === 'revision' ? <img src="/assets/star-crew/companions/thinker.png" alt="" /> : <CrewIllustration character={item.id === 'new-learning' ? 'star-crew:reader' : 'star-crew:maker'} />}
+      <div><strong>{item.label}</strong><small>{item.value} session{item.value === 1 ? '' : 's'}</small></div>
+      <b>{Math.round((item.value / total) * 100)}<span>%</span></b>
+    </div>)}
+  </div>;
   const colors = ['var(--dashboard-series-1)', 'var(--dashboard-series-2)', 'var(--dashboard-series-3)'];
   return (
     <div className="flex min-h-[210px] flex-col justify-center" role="img" aria-label="Session type allocation">
@@ -464,13 +495,24 @@ export const StudyRhythmChart: React.FC<{ weeks: RhythmDay[][] }> = ({ weeks }) 
   );
 };
 
-export const MasteryBar: React.FC<{ summary: MasterySummary }> = ({ summary }) => {
+export const MasteryBar: React.FC<{ summary: MasterySummary; editorial?: boolean }> = ({ summary, editorial = false }) => {
   if (summary.total === 0) return <ChartEmpty title="No topics rated yet" detail="Topic confidence from War Room and study debriefs will appear here as your readiness picture develops." />;
   const segments = [
     { label: 'Not started', value: summary.notStarted, color: 'var(--dashboard-track-strong)' },
     { label: 'Shaky', value: summary.shaky, color: 'var(--dashboard-series-3)' },
     { label: 'Solid', value: summary.solid, color: 'var(--dashboard-series-2)' },
   ];
+  if (editorial) return <div className="readiness-ledger" aria-label="Topic readiness breakdown">
+    {segments.map((segment, index) => <div key={segment.label}>
+      <svg viewBox="0 0 26 26" width="26" height="26" aria-hidden="true">
+        <circle cx="13" cy="13" r="10" fill={index === 2 ? '#23251f' : 'none'} stroke={index === 1 ? '#e76420' : '#23251f'} strokeWidth="1.5" />
+        {index === 1 && <path d="M13 3 A10 10 0 0 1 13 23 Z" fill="#e76420" />}
+        {index === 2 && <path d="m8 13 3 3 7-7" fill="none" stroke="white" strokeWidth="1.7" />}
+      </svg>
+      <strong>{segment.label}</strong><b>{segment.value}</b><small>{Math.round((segment.value / summary.total) * 100)}%</small>
+    </div>)}
+    <p>{summary.total} topics in this snapshot</p>
+  </div>;
   return (
     <div className="flex min-h-[210px] flex-col justify-center" role="img" aria-label="Topic readiness breakdown">
       <div className="flex h-5 overflow-hidden rounded-full bg-[var(--dashboard-track)]">

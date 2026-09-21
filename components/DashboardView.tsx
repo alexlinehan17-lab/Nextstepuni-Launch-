@@ -60,6 +60,8 @@ import {
 } from './dashboard/dashboardAnalytics';
 import DashboardInsights, { InsightsToggle } from './dashboard/DashboardInsights';
 import StudyPassport from './dashboard/StudyPassport';
+import ConfidenceRecord from './dashboard/ConfidenceRecord';
+import ProgressSectionPicker from './dashboard/ProgressSectionPicker';
 import TermReviewCard from './dashboard/TermReviewCard';
 import {
   buildActivityInsights,
@@ -190,8 +192,14 @@ const Panel: React.FC<{
   action?: React.ReactNode;
   className?: string;
   children: React.ReactNode;
-}> = ({ eyebrow, title, detail, action, className = '', children }) => {
+  disclosure?: boolean;
+}> = ({ eyebrow, title, detail, action, disclosure = false, className = '', children }) => {
   const mobileAppDesign = useMobileAppDesign();
+  if (mobileAppDesign && disclosure) return <details className={`dashboard-disclosure ${className}`}>
+    <summary>{title}<span aria-hidden="true">+</span></summary>
+    {detail && <p className="dashboard-disclosure-detail">{detail}</p>}
+    <div className="dashboard-disclosure-body">{children}</div>
+  </details>;
   return (
   <article className={`${mobileAppDesign ? `dashboard-section ${eyebrow === 'Programme progress' ? 'dashboard-programme' : ''}` : 'rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]'} ${className}`}>
     <div className="flex flex-wrap items-start justify-between gap-3 border-b border-[var(--outline-soft)] px-5 py-4 sm:px-6">
@@ -453,7 +461,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
           context={`${rangeBounds.label} · ${subjectLabel}`}
         />
       )}
-      <ActivityChart buckets={activityBuckets} metric={metric} />
+      <ActivityChart buckets={activityBuckets} metric={metric} variant={mobileAppDesign ? "bar" : "line"} />
       {mobileAppDesign && sessionsInRange.length === 0 && onStartStudy && <div className="border-t border-[var(--outline-soft)] pt-4"><p className="text-sm text-[var(--ink-secondary)]">No sessions recorded for {subjectLabel.toLowerCase()} in this period.</p><button type="button" onClick={onStartStudy} className="mt-2 min-h-11 text-sm font-semibold underline underline-offset-4">Plan your next session</button></div>}
     </Panel>
   );
@@ -461,8 +469,8 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   const confidencePanel = (
     <Panel
       eyebrow="Debrief signal"
-      title="Confidence over time"
-      detail={mobileAppDesign ? "Your own ratings after study sessions. A reflection signal, not a grade prediction." : "Each point is a confidence choice made after a completed study session."}
+      title={mobileAppDesign ? "Your self-ratings" : "Confidence over time"}
+      detail={mobileAppDesign ? "Open a subject to see its individual reflections." : "Each point is a confidence choice made after a completed study session."}
       action={
         <InsightsToggle
           controls="dashboard-confidence-insights"
@@ -484,10 +492,10 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             guidance: 'Choose a confidence rating after your next completed session and the subject trend will begin here.',
           }]}
           context={`${rangeBounds.label} · ${subjectLabel}`}
-          note="Confidence is self-reported. Use it as a reflection signal, not a grade prediction. The chart plots up to five subjects for readability; this reading includes every subject in the current filter."
+          note={mobileAppDesign ? "Confidence is self-reported, not a grade prediction. Every subject in the current filter is included; open a subject to see its individual reflections." : "Confidence is self-reported. Use it as a reflection signal, not a grade prediction. The chart plots up to five subjects for readability; this reading includes every subject in the current filter."}
         />
       )}
-      <ConfidenceChart observations={confidencePoints} bounds={rangeBounds} />
+      {mobileAppDesign ? <ConfidenceRecord observations={confidencePoints} subjects={subject === 'all' ? subjects : [subject]} /> : <ConfidenceChart observations={confidencePoints} bounds={rangeBounds} />}
     </Panel>
   );
 
@@ -519,11 +527,17 @@ const DashboardView: React.FC<DashboardViewProps> = ({
         />
       )}
       <MockTrajectoryChart mocks={mocks} />
+      {mobileAppDesign && mocks.slice().reverse().map(mock => <details className="dashboard-disclosure dashboard-mock-record" key={mock.id}>
+        <summary><time dateTime={mock.date}>{new Date(`${mock.date}T12:00:00`).toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })}</time><b>{mock.totalPoints} points</b><span aria-hidden="true">+</span></summary>
+        <p className="dashboard-disclosure-detail">{mock.label} · Full sitting, all subjects. Recorded result, not a forecast.</p>
+        <ul>{mock.entries.map(entry => <li key={entry.subjectName}><span>{entry.subjectName}</span><strong>{entry.grade}</strong></li>)}</ul>
+      </details>)}
     </Panel>
   );
 
   const programmePanel = (
     <Panel
+      disclosure
       eyebrow="Programme progress"
       title="Five climbs, all your own."
       detail={fiveWorldCompleted === 0
@@ -559,7 +573,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   );
 
   return (
-    <div className="product-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] transition-colors duration-300">
+    <div className={`${mobileAppDesign ? 'mobile-editorial dashboard-mobile ' : ''}product-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] transition-colors duration-300`}>
       <div className="sticky inset-x-0 top-0 z-40 border-b border-[var(--outline-soft)] bg-[color:var(--surface-canvas)]/95 px-4 pb-4 backdrop-blur-xl md:px-10" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
         <div className="mx-auto max-w-7xl">
           <PageHeader onBack={onBack} eyebrow="Student dashboard" title="My Progress" compact />
@@ -572,8 +586,11 @@ const DashboardView: React.FC<DashboardViewProps> = ({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="flex flex-col gap-6 border-b border-[var(--outline-strong)] pb-7 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-3xl">
+          <div className="dashboard-heading flex flex-col gap-6 border-b border-[var(--outline-strong)] pb-7 lg:flex-row lg:items-end lg:justify-between">
+            {mobileAppDesign ? <ProgressSectionPicker value={tab} options={TABS} onChange={next => {
+              if (activeTab === undefined) setLocalTab(next);
+              onTabChange?.(next);
+            }} /> : <div className="max-w-3xl">
               <div className="flex items-center gap-3">
                 <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent-hex)]">Your learning record</p>
                 <span className="h-px w-8 bg-[var(--outline-soft)]" aria-hidden="true" />
@@ -587,8 +604,9 @@ const DashboardView: React.FC<DashboardViewProps> = ({
               </p>
             </div>
 
+            }
             {tab !== 'milestones' && (
-              <div className="flex flex-wrap items-end gap-2 lg:max-w-md lg:justify-end">
+              <div className="dashboard-filters flex flex-wrap items-end gap-2 lg:max-w-md lg:justify-end">
                 <label className={mobileAppDesign ? "min-w-0 basis-full lg:min-w-[200px] lg:flex-1 lg:basis-auto" : "min-w-[160px] flex-1 lg:flex-none"}>
                   <span className="sr-only">Filter by subject</span>
                   <select
@@ -600,7 +618,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                     {subjects.map(item => <option key={item} value={item}>{item}</option>)}
                   </select>
                 </label>
-                <HorizontalTabs variant="pill" size="sm" label="Dashboard time range" value={range} options={RANGE_OPTIONS.map(item => ({ value: item.id, label: item.label }))} onChange={value => setRange(value as DashboardRange)} />
+                <HorizontalTabs className={mobileAppDesign ? "editorial-tabs w-full" : ""} variant={mobileAppDesign ? "underline" : "pill"} size="sm" label="Dashboard time range" value={range} options={RANGE_OPTIONS.map(item => ({ value: item.id, label: item.label }))} onChange={value => setRange(value as DashboardRange)} />
                 {onToggleTheme && (
                   <button
                     type="button"
@@ -617,15 +635,16 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             )}
           </div>
 
-          <div className="-mx-4 flex gap-5 overflow-x-auto border-b border-[var(--outline-soft)] px-4 py-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:grid sm:grid-cols-5 sm:gap-x-4 sm:overflow-visible sm:px-0 sm:py-6">
+          {(!mobileAppDesign || tab === 'overview' || tab === 'study') && <div className="dashboard-stats -mx-4 flex gap-5 overflow-x-auto border-b border-[var(--outline-soft)] px-4 py-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:grid sm:grid-cols-5 sm:gap-x-4 sm:overflow-visible sm:px-0 sm:py-6">
             <StatCell eyebrow="Sessions" value={String(sessionsInRange.length)} meta={`${activeDays} active day${activeDays === 1 ? '' : 's'}`} accent />
             <StatCell eyebrow="Focus time" value={formatMinutes(totalMinutes)} meta={rangeBounds.label} />
             <StatCell eyebrow="Confidence" value={avgConfidence === null ? '—' : avgConfidence.toFixed(1)} meta={avgConfidence === null ? 'awaiting debriefs' : 'average out of 5'} />
-            <StatCell eyebrow="Streak" value={String(streak.currentStreak)} meta={mobileAppDesign ? "days · all subjects" : "days running"} />
-            <StatCell eyebrow="Journey points" value={String(pointsEarned)} meta="earned to date" />
-          </div>
+            {!mobileAppDesign && <><StatCell eyebrow="Streak" value={String(streak.currentStreak)} meta={mobileAppDesign ? "days · all subjects" : "days running"} />
+            <StatCell eyebrow="Journey points" value={String(pointsEarned)} meta="earned to date" /></>}
+          </div>}
 
-          <HorizontalTabs
+          {mobileAppDesign && (tab === 'confidence' || tab === 'practice') && <p className="dashboard-period-scope">{rangeBounds.label} · {subjectLabel}</p>}
+          {!mobileAppDesign && <HorizontalTabs
             className="mb-5 mt-6"
             variant="pill"
             value={tab}
@@ -635,7 +654,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
               if (activeTab === undefined) setLocalTab(next);
               onTabChange?.(next);
             }}
-          />
+          />}
 
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
             {tab === 'overview' && (
@@ -701,15 +720,16 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                     </div>
                   </div>
                 </Panel>
-                {confidencePanel}
-                <Panel eyebrow="Time allocation" title="Subjects studied" detail="Focused minutes across the selected period." className="lg:col-span-5">
-                  <RankedBarChart values={subjectAllocation} unit="min" emptyTitle="No subject split yet" emptyDetail="Log a study session and its subject will appear here." />
-                </Panel>
+                {!mobileAppDesign && confidencePanel}
+                {!mobileAppDesign && <Panel eyebrow="Time allocation" title="Subjects studied" detail="Focused minutes across the selected period." className="lg:col-span-5">
+                  <RankedBarChart values={subjectAllocation} limit={mobileAppDesign ? subjectAllocation.length : 6} unit="min" emptyTitle="No subject split yet" emptyDetail="Log a study session and its subject will appear here." />
+                </Panel>}
                 {programmePanel}
-                <Panel eyebrow="Learning methods" title="Techniques used" detail="Recorded prompts and self-reported study techniques." className="lg:col-span-6">
-                  <RankedBarChart values={strategyUsage} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
+                <Panel disclosure eyebrow="Learning methods" title="Techniques used" detail="Recorded prompts and self-reported study techniques." className="lg:col-span-6">
+                  <RankedBarChart editorial={mobileAppDesign} values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
                 </Panel>
-                {mockPanel}
+                {!mobileAppDesign && mockPanel}
+                {mobileAppDesign && <nav className="dashboard-section-links" aria-label="Explore your progress">{TABS.slice(1).map(item => <button type="button" key={item.id} onClick={() => { if (activeTab === undefined) setLocalTab(item.id); onTabChange?.(item.id); }}>{item.label}<ArrowRight size={17} /></button>)}</nav>}
                   </>
                 )}
                 {!hasLearningEvidence && programmePanel}
@@ -719,17 +739,17 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             {tab === 'study' && (
               <>
                 <div className="lg:col-span-12">{React.cloneElement(activityPanel, { className: 'lg:col-span-12' })}</div>
-                <Panel eyebrow="Consistency" title="Study rhythm" detail="Thirteen weeks of recorded study activity." className="lg:col-span-7">
+                <Panel disclosure eyebrow="Consistency" title="Study rhythm" detail="Thirteen weeks of recorded study activity." className="lg:col-span-7">
                   <StudyRhythmChart weeks={rhythm} />
                 </Panel>
                 <Panel eyebrow="Time allocation" title="Subjects studied" detail="Focused minutes across the selected period." className="lg:col-span-5">
-                  <RankedBarChart values={subjectAllocation} unit="min" emptyTitle="No subject split yet" emptyDetail="Log a study session and its subject will appear here." />
+                  <RankedBarChart values={subjectAllocation} limit={mobileAppDesign ? subjectAllocation.length : 6} unit="min" emptyTitle="No subject split yet" emptyDetail="Log a study session and its subject will appear here." />
                 </Panel>
-                <Panel eyebrow="Session design" title="Learning mix" detail="How study time is being used." className="lg:col-span-6">
-                  <SessionMixChart values={sessionMix} />
+                <Panel disclosure eyebrow="Session design" title="Learning mix" detail="Your recorded sessions, by type." className="lg:col-span-6">
+                  <SessionMixChart values={sessionMix} editorial={mobileAppDesign} />
                 </Panel>
-                <Panel eyebrow="Learning methods" title="Techniques used" detail="Recorded prompts and self-reported study techniques." className="lg:col-span-6">
-                  <RankedBarChart values={strategyUsage} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
+                <Panel disclosure eyebrow="Learning methods" title="Techniques used" detail="Recorded prompts and self-reported study techniques." className="lg:col-span-6">
+                  <RankedBarChart editorial={mobileAppDesign} values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
                 </Panel>
               </>
             )}
@@ -737,24 +757,24 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             {tab === 'confidence' && (
               <>
                 <div className="lg:col-span-12">{React.cloneElement(confidencePanel, { className: 'lg:col-span-12' })}</div>
-                <Panel eyebrow="Current picture" title="Topic readiness" detail="Topic ratings from War Room and structured study debriefs." className="lg:col-span-12">
-                  <MasteryBar summary={masterySummary} />
+                <Panel eyebrow="Current picture" title="Topic readiness" detail="Current snapshot from War Room and study debriefs. The subject filter applies; the time range does not." className="lg:col-span-12">
+                  <MasteryBar summary={masterySummary} editorial={mobileAppDesign} />
                 </Panel>
-                {programmePanel}
+                {!mobileAppDesign && programmePanel}
               </>
             )}
 
             {tab === 'practice' && (
               <>
                 {React.cloneElement(mockPanel, { className: 'lg:col-span-8' })}
-                <Panel eyebrow="Session design" title="Learning mix" detail="New learning, practice and revision in this period." className="lg:col-span-4">
-                  <SessionMixChart values={sessionMix} />
+                <Panel disclosure eyebrow="Session design" title="Learning mix" detail="New learning, practice and revision in this period." className="lg:col-span-4">
+                  <SessionMixChart values={sessionMix} editorial={mobileAppDesign} />
                 </Panel>
                 <Panel eyebrow="Topic readiness" title="What feels secure" detail="A current snapshot, filtered by subject when selected." className="lg:col-span-6">
-                  <MasteryBar summary={masterySummary} />
+                  <MasteryBar summary={masterySummary} editorial={mobileAppDesign} />
                 </Panel>
-                <Panel eyebrow="Methods in practice" title="Techniques used" detail="How often each learning method was recorded." className="lg:col-span-6">
-                  <RankedBarChart values={strategyUsage} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
+                <Panel disclosure eyebrow="Methods in practice" title="Techniques used" detail="How often each learning method was recorded." className="lg:col-span-6">
+                  <RankedBarChart editorial={mobileAppDesign} values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
                 </Panel>
               </>
             )}
@@ -858,6 +878,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 </Panel>
 
                 <Panel
+                  disclosure
                   eyebrow="Learning methods"
                   title="Strategy milestones"
                   detail="How far learned techniques have travelled into real study sessions."
@@ -888,6 +909,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 </Panel>
 
                 <Panel
+                  disclosure
                   eyebrow="Personal records"
                   title="Best efforts"
                   detail="Your strongest recorded days and weeks—not a target you have to beat every time."

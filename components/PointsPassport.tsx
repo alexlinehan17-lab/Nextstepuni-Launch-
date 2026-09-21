@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import ToolMasthead from './launchpad/ToolMasthead';
 import LaunchpadSelect from './launchpad/LaunchpadSelect';
 import React, { useState, useMemo, useEffect } from 'react';
@@ -93,6 +94,7 @@ function getDot(name: string) { return SUBJECT_DOT[name] || 'bg-zinc-500'; }
 // ─── Component ───────────────────────────────────────────────────────────────
 
 const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSettings, onProfileChange, initialTab = 'overview', lockSimulatorOverview = false }) => {
+  const mobileAppDesign = useMobileAppDesign();
   const { showToast } = useToast();
   const { rawProgressDoc } = useProgress();
   const isDemo = uid === DEMO_STUDENT_UID;
@@ -325,7 +327,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
         </div>
       </div>}
       <div className="lp-passport-nav">
-        <HorizontalTabs variant="pill" value={['overview','planner','scenarios'].includes(activeTab) ? activeTab : ''} label="Points Passport sections" onChange={next => setActiveTab(next as PassportTab)} options={[{value:'overview',label:'My subjects'},{value:'planner',label:'What if?'},{value:'scenarios',label:'Scenarios'}]} />
+        <HorizontalTabs className={mobileAppDesign ? "editorial-tabs" : ""} variant={mobileAppDesign ? "underline" : "pill"} value={['overview','planner','scenarios'].includes(activeTab) ? activeTab : ''} label="Points Passport sections" onChange={next => setActiveTab(next as PassportTab)} options={[{value:'overview',label:'My subjects'},{value:'planner',label:'What if?'},{value:'scenarios',label:'Scenarios'}]} />
         <LaunchpadSelect aria-label="More Points Passport sections" value={['mocks','bargains'].includes(activeTab) ? activeTab : ''} onChange={e => {if(e.target.value) setActiveTab(e.target.value as PassportTab);}}><option value="" disabled>More</option><option value="mocks">Mock Tracker</option><option value="bargains">Best Moves</option></LaunchpadSelect>
       </div>
       {/* Tab content */}

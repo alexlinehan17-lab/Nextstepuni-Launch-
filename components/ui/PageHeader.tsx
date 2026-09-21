@@ -1,4 +1,5 @@
 import React from 'react';
+import BackButton from './BackButton';
 import { ArrowLeft } from 'lucide-react';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 
@@ -28,14 +29,14 @@ const PageHeader: React.FC<PageHeaderProps> = ({
   return (
   <header className={`flex items-start justify-between gap-4 ${className}`}>
     <div className="flex min-w-0 items-start gap-3 sm:gap-4">
-      <button
+      {mobileAppDesign ? <BackButton onClick={onBack} label={backLabel} /> : <button
         type="button"
         onClick={onBack}
         aria-label={backLabel}
         className={`flex ${mobileAppDesign ? 'h-11 w-11' : 'h-10 w-10'} shrink-0 items-center justify-center rounded-xl border-[1.5px] border-[#383838] bg-white text-[#1A1A1A] shadow-[2px_2px_0_0_#383838] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_#383838] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none dark:border-zinc-600 dark:bg-zinc-900 dark:text-white dark:shadow-[2px_2px_0_0_#52525B]`}
       >
         <ArrowLeft size={18} strokeWidth={1.8} />
-      </button>
+      </button>}
       <div className="hidden h-10 w-px shrink-0 bg-[#DDD8D2] sm:block dark:bg-zinc-700" aria-hidden="true" />
       <div className="min-w-0 pt-0.5">
         {eyebrow && (

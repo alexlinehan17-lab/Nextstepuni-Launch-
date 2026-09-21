@@ -11,12 +11,14 @@
  * ranked by INTEREST FIT (Pearson correlation, O*NET's method), each annotated
  * with an independent points-REACH badge. Fit is never altered by points.
  */
+import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import ToolMasthead from './launchpad/ToolMasthead';
+import BackButton from './ui/BackButton';
 import React, { useMemo, useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { ArrowLeft, Compass, X, ArrowRight } from 'lucide-react';
+import { Compass, X, ArrowRight, Check } from 'lucide-react';
 import { COLORS } from '../design/tokens';
 
 import { useFutureFinderRevamped, type FutureFinderRevampedState } from '../hooks/useFutureFinderRevamped';
@@ -219,10 +221,30 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     });
   }, [savedPicks, persistResultsState]);
 
+  const mobileAppDesign = useMobileAppDesign();
+
   if (!isLoaded || (resultsOnly && phase !== 'results')) return <LoadingState label="Loading your future finder" />;
 
   // ── INTRO ─────────────────────────────────────────────────────
   if (phase === 'intro') {
+    if (mobileAppDesign) return <div className="future-editorial">
+      <section className="future-editorial-hero">
+        <p className="lp-eyebrow">Your next chapter</p>
+        <h2>You don’t need<br />the whole map.</h2>
+        <p>Just a little curiosity about what comes next.</p>
+        <img src="/assets/star-crew/companions/wayfinder.png" alt="" />
+      </section>
+      <div className="future-editorial-routes" role="group" aria-label="Discovery route">
+        {(['quick', 'full'] as const).map((route, index) => <button type="button" key={route} aria-pressed={length === route} onClick={() => setLength(route)}>
+          <span className="future-route-number">0{index + 1}</span>
+          <span className="future-route-copy"><small>{route === 'quick' ? '5 minutes · 42 taps' : '9 minutes · 72 taps'}</small><strong>{route === 'quick' ? 'Quick discovery' : 'The fuller picture'}</strong><span>{route === 'quick' ? 'A first look at what makes you, you.' : 'More room for your values and interests.'}</span></span>
+          <span className="future-route-check" aria-hidden="true">{length === route ? <Check size={16} /> : <ArrowRight size={16} />}</span>
+        </button>)}
+      </div>
+      <button type="button" className="future-editorial-start" onClick={() => { setIdx(0); setPhase('quiz'); }}>Explore my possibilities <ArrowRight size={20} /></button>
+      <p className="lp-body">Discover your interests. Explore courses. Compare your options.</p>
+      <p className="future-editorial-note">A snapshot, not a verdict. Use it alongside your guidance counsellor.</p>
+    </div>;
     return (
       <div>
         <ToolMasthead tool="future-finder-revamped" eyebrow="Start with you" title="Future Finder." subtitle="Find possibilities worth exploring." />
@@ -249,7 +271,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     return (
       <div className="w-full max-w-2xl mx-auto">
         <div className="flex items-center gap-3 mb-4">
-          <button onClick={() => (idx > 0 ? setIdx((i) => i - 1) : setPhase('intro'))} aria-label={idx > 0 ? 'Previous question' : 'Back to introduction'} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 dark:hover:bg-zinc-800 dark:hover:text-zinc-200"><ArrowLeft size={18} /></button>
+          <BackButton onClick={() => (idx > 0 ? setIdx((i) => i - 1) : setPhase('intro'))} label={idx > 0 ? 'Previous question' : 'Back to introduction'} />
           <div className="flex-1 h-2 rounded-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden"><div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: COLORS.accent, transition: 'width 0.45s cubic-bezier(0.22,1,0.36,1)' }} /></div>
           <span className="text-[12px] font-semibold text-zinc-400 shrink-0">{idx + 1}/{questions.length}</span>
         </div>

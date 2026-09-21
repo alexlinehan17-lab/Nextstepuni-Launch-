@@ -5,6 +5,7 @@
  * testable and honest about what has actually been recorded.
  */
 
+import { resolveSubjectId } from '../../curriculumRegistry';
 import type { DebriefEntry } from '../StudyDebrief';
 import type { StudyConfidenceLabel, StudyReflection, TopicMasteryV2, UnifiedMockResult } from '../../types';
 import { STRATEGY_REGISTRY, type StudySessionRecord } from '../../utils/strategyRegistry';
@@ -419,12 +420,13 @@ export function buildMasterySummary(topicMastery: TopicMasteryV2 | undefined, su
     summary.total += 1;
   };
 
+  const subjectId = resolveSubjectId(subject);
   for (const entry of Object.values(topicMastery.topics)) {
-    if (subject !== 'all' && entry.subjectName !== subject) continue;
+    if (subject !== 'all' && (subjectId ? entry.subjectId !== subjectId : entry.subjectName !== subject)) continue;
     add(entry.confidence);
   }
   for (const [subjectName, topics] of Object.entries(topicMastery.unresolved)) {
-    if (subject !== 'all' && subjectName !== subject) continue;
+    if (subject !== 'all' && (subjectId ? resolveSubjectId(subjectName) !== subjectId : subjectName !== subject)) continue;
     for (const entry of Object.values(topics)) add(entry.confidence);
   }
   return summary;

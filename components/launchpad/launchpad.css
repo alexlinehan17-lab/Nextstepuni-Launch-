@@ -26,7 +26,7 @@
 .lp-masthead .lp-eyebrow {
   color: #ff8b4b;
 }
-.lp-masthead h1 {
+.lp-masthead :is(h1, h2) {
   font:
     600 clamp(29px, 3vw, 40px) / 1.12 'Source Serif 4',
     serif;
@@ -278,7 +278,7 @@
     margin-bottom: 22px;
     border-radius: 15px;
   }
-  .lp-masthead h1 {
+  .lp-masthead :is(h1, h2) {
     font-size: 29px;
   }
   .lp-masthead-subtitle {

@@ -20,6 +20,8 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { X } from 'lucide-react';
+import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import ToolMasthead from '../launchpad/ToolMasthead';
 import SubjectPicker from '../launchpad/SubjectPicker';
 import { useSubjectAccess } from '../launchpad/SubjectAccess';
@@ -161,6 +163,15 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
 }
 
 const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => Date.now() }) => {
+  const mobileAppDesign = useMobileAppDesign();
+  const overviewKey = `nsu:mark-bank-overview:${uid ?? 'guest'}`;
+  const [overviewDismissed, setOverviewDismissed] = useState(() => {
+    try { return localStorage.getItem(overviewKey) === 'dismissed'; } catch { return false; }
+  });
+  const changeOverview = (dismissed: boolean) => {
+    setOverviewDismissed(dismissed);
+    try { if (dismissed) localStorage.setItem(overviewKey, 'dismissed'); else localStorage.removeItem(overviewKey); } catch { /* In-memory state still works. */ }
+  };
   const canSelectSubject = useSubjectAccess();
   /* Read synchronously on mount. A Chemistry Ordinary student must never watch
      the tool open on Biology Higher and correct it — that is two clicks every
@@ -484,6 +495,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     ? `${elsewhere.map(d => d.label).join(', ').replace(/, ([^,]*)$/, ' and $1')} ${elsewhere.length === 1 ? 'is' : 'are'} ready now`
     : null;
 
+  const topicFilters = <div className="mb-topic-filters">
+    <label className="block mt-5"><span className="sr-only">Find a Mark Bank topic</span><input type="search" className="lp-search" placeholder="Find a topic" value={topicQuery} onChange={event => setTopicQuery(event.target.value)} /></label>
+    {mobileAppDesign ? <label className="mb-topic-group-picker"><span className="sr-only">Topic group</span><select aria-label="Topic group" value={strandFilter} onChange={event => setStrandFilter(event.target.value)}><option value="all">All topic groups</option>{strands.map(strand => <option key={strand.id} value={strand.id}>{strand.title}</option>)}</select></label> : <nav className="lp-mark-strands" aria-label="Topic groups"><button aria-pressed={strandFilter === 'all'} onClick={() => setStrandFilter('all')}>All {subject.title}</button>{strands.map(strand => <button key={strand.id} aria-pressed={strandFilter === strand.id} onClick={() => setStrandFilter(strand.id)}>{strand.title}</button>)}</nav>}
+  </div>;
+
   return (
     <div
       className={`mark-bank-theme ${launchingTopicId !== null ? 'mb-board-exit' : ''}`}
@@ -512,10 +528,10 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
               <div style={{ width: '100%' }}>
                 <div style={{ marginBottom: 6 }}><Eyebrow>Paper level</Eyebrow></div>
                 <HorizontalTabs
-                  variant="pill"
+                  variant={mobileAppDesign ? "underline" : "pill"}
                   size="sm"
                   label="Paper level"
-                  className="w-fit"
+                  className={mobileAppDesign ? "editorial-tabs" : "w-fit"}
                   value={level}
                   onChange={chooseLevel}
                   options={subjectLevels.map(l => ({ value: l, label: LEVEL_LABEL[l] }))}
@@ -524,11 +540,15 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
             )}
           </div>
 
-          <label className="block mt-5"><span className="sr-only">Find a Mark Bank topic</span><input type="search" className="lp-search" placeholder="Find a topic" value={topicQuery} onChange={event => setTopicQuery(event.target.value)} /></label>
-          <nav className="lp-mark-strands" aria-label="Topic groups"><button aria-pressed={strandFilter === 'all'} onClick={() => setStrandFilter('all')}>All {subject.title}</button>{strands.map(strand => <button key={strand.id} aria-pressed={strandFilter === strand.id} onClick={() => setStrandFilter(strand.id)}>{strand.title}</button>)}</nav>
+          {!mobileAppDesign && topicFilters}
         </aside>
         <section className="min-w-0">
-          <div className="lp-panel lp-practice-entry"><p className="lp-eyebrow">{subject.title} · {LEVEL_LABEL[level]}</p><h2 className="lp-title">{dueCount > 0 ? 'Your next practice.' : 'Make a start today.'}</h2>
+          {mobileAppDesign && overviewDismissed && !cardsError && !levelUnbuilt ? <div className="mb-compact-practice">
+            <button type="button" className="lp-button" onClick={() => startSession()}>{dueCount > 0 ? `Start today's ${Math.min(dueCount, MARK_BANK_SESSION_SIZE)}` : 'Start a practice session'}</button>
+            <button type="button" onClick={() => changeOverview(false)}>Show overview</button>
+          </div> : <div className="lp-panel lp-practice-entry">
+          {mobileAppDesign && !cardsError && !levelUnbuilt && <button type="button" className="lp-introduction-close" aria-label="Dismiss practice overview" onClick={() => changeOverview(true)}><X size={18} /></button>}
+          <p className="lp-eyebrow">{subject.title} · {LEVEL_LABEL[level]}</p><h2 className="lp-title">{dueCount > 0 ? 'Your next practice.' : 'Make a start today.'}</h2>
           <div className="flex gap-8 text-sm mb-2"><span><strong className="block text-xl">{cards.length}</strong>question cards</span><span><strong className="block text-xl">{coveredTopics} / {totalTopics}</strong>topics with cards</span></div>
           {!online && (
             <StatusNotice title="Working offline" className="mt-[18px]">
@@ -597,8 +617,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
               )}
             </>
           )}
-          </div>
-          <h2 className="lp-title mt-7">Or choose a topic</h2>
+          </div>}
+          <h2 className="lp-title mt-7">Choose a topic</h2>
+          {mobileAppDesign && topicFilters}
         {/* ---- the list: one card, aligned columns, hairlines not boxes ---- */}
         {!cardsError && !levelUnbuilt && (
           <div style={{
