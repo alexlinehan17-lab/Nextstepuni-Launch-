@@ -18,7 +18,7 @@ const CompanionArtwork: React.FC<{ character: string }> = ({ character }) => (
     height="1254"
     decoding="async"
     draggable={false}
-    className="block h-full w-full object-contain"
+    className="theme-ink-art block h-full w-full object-contain"
   />
 );
 

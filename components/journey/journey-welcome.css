@@ -49,3 +49,12 @@
  .journey-paper .journey-nav-with-help .student-wordmark{font-size:21px}
 }
 @media(prefers-reduced-motion:reduce){.journey-welcome-start{transition:none}}
+
+.dark :is(.journey-welcome, .journey-welcome-help, .journey-welcome-header button) { background: var(--surface-paper); color: var(--ink-primary); border-color: var(--outline-soft); }
+.dark .journey-welcome { box-shadow: 7px 7px 0 #0006; }
+.dark :is(.journey-welcome-header, .journey-welcome-story, .journey-welcome li) { border-color: var(--outline-soft); }
+.dark :is(.journey-welcome .journey-welcome-eyebrow, .journey-welcome-story > p:not(.journey-welcome-eyebrow), .journey-welcome li p, .journey-welcome-note, .journey-welcome-reminder) { color: var(--ink-muted); }
+.dark .journey-welcome li strong { color: var(--ink-secondary); }
+.dark :is(.journey-welcome-number, .journey-welcome-art > span) { color: var(--dashboard-series-1); }
+.dark .journey-welcome-art .crew-illustration { background: transparent; mix-blend-mode: normal; }
+.dark :is(.journey-welcome button, .journey-welcome-help):focus-visible { outline-color: var(--focus-ring); }

@@ -71,3 +71,15 @@ to{opacity:1;translate:0 0;rotate:0deg}
 }
 @media(prefers-reduced-motion:reduce){.study-receipt,.study-break-art.is-breathing{animation:none}
 }
+
+/* The break, debrief and receipt follow the timer's appearance. */
+.dark :is(.study-finish, .study-break, .study-receipt) { background: var(--surface-paper); color: var(--ink-primary); }
+.dark :is(.study-crew-eyebrow, .study-crew-intro, .study-debrief-modes span, .study-reflection-label small, .study-save-note, .study-receipt header > p:last-child, .study-receipt-next > span, .study-break > p:not(.study-crew-eyebrow), .study-break-context span, .study-break-leave) { color: var(--ink-muted); }
+.dark .study-receipt header > .study-crew-eyebrow { color: var(--ink-primary); }
+.dark :is(.study-confidence button, .study-reflection-label textarea) { background: var(--surface-soft); color: var(--ink-primary); border-color: var(--outline-soft); }
+.dark .study-confidence button[aria-pressed=true] { background: #ff7913; color: var(--ink-on-accent); border-color: var(--outline-strong); }
+.dark :is(.study-receipt, .study-receipt dl, .study-receipt-next, .study-receipt footer) { border-color: var(--outline-soft); }
+.dark .study-receipt::before, .dark .study-receipt::after { background: linear-gradient(135deg,var(--outline-soft) 25%,transparent 25%) -4px 0/14px 14px,linear-gradient(225deg,var(--outline-soft) 25%,transparent 25%) -4px 0/14px 14px; }
+.dark .study-receipt-signoff { color: var(--dashboard-series-1); }
+.dark .study-save-error { color: var(--danger-tint-ink); }
+.dark :is(.study-confidence button, .study-debrief-modes button):focus-visible { outline-color: var(--focus-ring); }

@@ -4,3 +4,6 @@
 .star-crew-frame > img { position: absolute; display: block; max-width: none; object-fit: fill; }
 .star-crew-initials { display: grid; place-items: center; width: 100%; height: 100%; color: #23251f; font: 600 12px/1 'DM Sans', sans-serif; }
 .star-crew-fallback { width: 100%; height: 100%; }
+.dark .star-crew-avatar { background: var(--surface-paper); border-color: var(--outline-soft); }
+.dark .star-crew-initials { color: var(--ink-primary); }
+.dark :is(.account-entry, .setup-flow, .landing-page) .star-crew-avatar:not(.crew-illustration) { background: #fff; border-color: #d4d8cc; }

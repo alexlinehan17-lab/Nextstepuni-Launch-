@@ -11,6 +11,7 @@ import { StatusBar, Style } from '@capacitor/status-bar';
 import './index.css';
 import { MotionConfig } from 'framer-motion';
 import App from './App';
+import IllustrationTheme from './components/IllustrationTheme';
 import ErrorBoundary from './components/ErrorBoundary';
 import { ToastProvider } from './components/Toast';
 import { AuthProvider } from './contexts/AuthContext';
@@ -67,6 +68,7 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
+    <IllustrationTheme />
     <ErrorBoundary>
       <ToastProvider>
         <AuthProvider>

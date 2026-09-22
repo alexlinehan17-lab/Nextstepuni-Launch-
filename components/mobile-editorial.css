@@ -228,3 +228,15 @@ button.editorial-back-button:active { transform: translate(1px, 1px); box-shadow
 .mobile-editorial .lp-practice-entry > .lp-eyebrow { padding-right: 24px; }
 .mb-compact-practice { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
 .mb-compact-practice > button:last-child { align-self: flex-end; min-height: 35px; font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+
+/* Shared controls inherit the same palette on every dark screen. */
+.dark button.editorial-back-button.editorial-back-button.editorial-back-button { background: var(--surface-paper); color: var(--ink-primary); border-color: var(--outline-strong); box-shadow: 2px 2px 0 var(--outline-strong); }
+.dark button.editorial-back-button:active { box-shadow: 1px 1px 0 var(--outline-strong); }
+.dark button.editorial-back-button:focus-visible { outline-color: var(--focus-ring); }
+.dark .dashboard-section-menu { background: var(--surface-raised); border-color: var(--outline-soft); }
+.dark .dashboard-section-menu > button { color: var(--ink-primary); }
+.dark .dashboard-section-menu > button > small { color: var(--ink-muted); }
+.dark .dashboard-section-menu > button[aria-selected='true'] { background: var(--surface-soft); }
+.dark .technique-tallies { color: var(--ink-secondary); }
+.dark .technique-ledger > li:first-child .technique-tallies { color: var(--dashboard-series-1); }
+.dark .future-editorial-hero img { mix-blend-mode: normal; }

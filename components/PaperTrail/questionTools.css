@@ -12,3 +12,10 @@
 .pt-question-empty{margin:0;padding:4px 0 6px;font-size:13px;line-height:1.5;color:#626262}
 .pt-question-tools button:focus-visible,.pt-question-select:focus-visible{outline:2px solid #b84a0c;outline-offset:2px}
 @media(max-height:500px){.pt-question-tools{max-height:42dvh}}
+
+.dark :is(.pt-question-tools, .pt-question-select) { background: var(--surface-paper); color: var(--ink-primary); border-color: var(--outline-soft); color-scheme: dark; }
+.dark :is(.pt-question-page, .pt-question-disclosure, .pt-question-empty) { color: var(--ink-muted); }
+.dark .pt-question-topic { color: var(--ink-primary); }
+.dark .pt-question-topic-link { color: var(--dashboard-series-1); }
+.dark .pt-question-answer { background: var(--surface-raised); color: var(--ink-primary); }
+.dark :is(.pt-question-tools button, .pt-question-select):focus-visible { outline-color: var(--focus-ring); }

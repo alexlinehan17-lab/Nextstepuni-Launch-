@@ -1,7 +1,7 @@
 .crew-illustration.star-crew-avatar{display:inline-block;width:180px;height:180px;border:0;border-radius:0;background:transparent;mix-blend-mode:multiply}
 .crew-original{display:block;width:180px;height:180px;object-fit:contain}
 .crew-original.crew-original{background:transparent}
-.dark .crew-illustration{mix-blend-mode:normal;border-radius:50%;background:#fff}
+.dark .crew-illustration.star-crew-avatar{mix-blend-mode:normal;border-radius:0;background:transparent}
 .crew-empty{display:flex;align-items:center;gap:24px;background:#fff;color:#23251f;padding:32px 0;text-align:left}
 .crew-empty-art{flex-shrink:0}
 .crew-empty-art .crew-illustration,.crew-empty-art .crew-original{width:170px;height:170px}
@@ -29,3 +29,7 @@ to{opacity:1;translate:0 0}
 @media(prefers-reduced-motion:reduce){.crew-home-character .crew-illustration,.crew-home-character .crew-original{animation:none}
 .crew-primary{transition:none}
 }
+
+.dark .crew-empty { background: var(--surface-paper); color: var(--ink-primary); }
+.dark .crew-empty p { color: var(--ink-muted); }
+.dark :is(.crew-primary, .crew-link):focus-visible { outline-color: var(--focus-ring); }
