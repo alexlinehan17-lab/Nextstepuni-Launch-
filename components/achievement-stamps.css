@@ -33,3 +33,8 @@
 .crew-stamp-card h4{font-size:13px}
 .crew-stamp-card>p{font-size:10px}
 }
+
+.dark :is(.crew-achievements, .crew-stamp-card, .crew-stamp) { background: var(--surface-paper); color: var(--ink-primary); }
+.dark :is(.crew-stamp-card, .crew-stamp-card.is-collected, .crew-achievement-tabs) { border-color: var(--outline-soft); }
+.dark :is(.crew-achievement-heading .crew-eyebrow, .crew-achievement-tabs button, .crew-stamp-status, .crew-stamp-date) { color: var(--ink-muted); }
+.dark .crew-stamp-card.is-collected .crew-stamp-status { color: var(--dashboard-series-1); }

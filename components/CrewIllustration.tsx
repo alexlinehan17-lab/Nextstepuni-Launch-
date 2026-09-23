@@ -9,6 +9,6 @@ export default function CrewIllustration({ character = 'star-crew:maker', subjec
   character?: string; subject?: string; className?: string; label?: string;
 }) {
   const artwork = subject ? getSubjectStarCrew(subject) : getPersonalStarCrew(character);
-  const fallback = <img src="/assets/landing/starguy-512.png" alt={label} className={`crew-original ${className}`} />;
+  const fallback = <img src="/assets/landing/starguy-512.png" alt={label} className={`crew-original theme-ink-art ${className}`} />;
   return artwork ? <StarCrewArtwork artwork={artwork} alt={label} className={`crew-illustration ${className}`} fallback={fallback} /> : fallback;
 }

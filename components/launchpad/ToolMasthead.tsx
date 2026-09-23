@@ -52,7 +52,7 @@ export function ToolArtwork({
         : tool;
   return (
     <svg
-      className={`lp-artwork ${className}`}
+      className={`lp-artwork ${dark ? '' : 'theme-ink-art'} ${className}`}
       viewBox="100 100 824 824"
       aria-hidden="true"
     >

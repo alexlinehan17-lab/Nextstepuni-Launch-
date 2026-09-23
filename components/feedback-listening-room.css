@@ -107,3 +107,11 @@
 @media (prefers-reduced-motion: reduce) {
   .feedback-listening-room *, .feedback-overlay { animation: none !important; transition: none !important; }
 }
+
+.dark .feedback-listening-room { --feedback-ink: var(--ink-primary); --feedback-muted: var(--ink-muted); --feedback-line: var(--outline-soft); background: var(--surface-paper); color-scheme: dark; box-shadow: 6px 7px 0 #0006; }
+.dark :is(.feedback-close, .feedback-form textarea) { background: var(--surface-paper); }
+.dark .feedback-form textarea::placeholder { color: var(--ink-muted); }
+.dark .feedback-listening-room .feedback-primary { color: var(--ink-on-accent); border-color: var(--outline-strong); }
+.dark .feedback-listening-room .feedback-primary:disabled { background: var(--surface-soft); color: var(--ink-muted); border-color: var(--outline-soft); box-shadow: 2px 3px 0 var(--outline-soft); }
+.dark .feedback-error { color: var(--danger-tint-ink); }
+.dark .feedback-thanks .feedback-eyebrow { color: var(--dashboard-series-1); }

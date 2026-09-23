@@ -232,7 +232,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
         <p className="lp-eyebrow">Your next chapter</p>
         <h2>You don’t need<br />the whole map.</h2>
         <p>Just a little curiosity about what comes next.</p>
-        <img src="/assets/star-crew/companions/wayfinder.png" alt="" />
+        <img className="theme-ink-art" src="/assets/star-crew/companions/wayfinder.png" alt="" />
       </section>
       <div className="future-editorial-routes" role="group" aria-label="Discovery route">
         {(['quick', 'full'] as const).map((route, index) => <button type="button" key={route} aria-pressed={length === route} onClick={() => setLength(route)}>

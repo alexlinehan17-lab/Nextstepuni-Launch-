@@ -1698,3 +1698,18 @@
   .journey-paper .island-dock .sticker-finder > span { display: none; }
   .journey-paper .island-dock .sticker-finder { min-width: 38px; justify-content: center; }
 }
+
+/* Theme the island's controls; the painted map keeps its authored colours. */
+.dark .journey-paper { --ink: var(--ink-primary); --muted: var(--ink-muted); --line: var(--outline-soft); --rust: var(--dashboard-series-1); background: var(--surface-paper); color: var(--ink-primary); }
+.dark .journey-paper :is(.student-nav, .quiet-action, .island-dock, .building-caption > button, .coast-build-tray, .placement-inspector, .shore-select select, .dialog-close, .painted-load-error, .paper-loading) { background: var(--surface-paper); color: var(--ink-primary); border-color: var(--outline-soft); }
+.dark .journey-paper .map-navigation > div { background: var(--surface-paper); color: var(--ink-primary); border-color: var(--outline-soft); }
+.dark .journey-paper .map-navigation button { border-color: var(--outline-soft); }
+.dark .journey-paper.island-dialog { border-color: var(--outline-soft); }
+.dark .journey-paper :is(.shelf-filters > select, .shelf-tile:hover, .primary-action:disabled) { background: var(--surface-soft); color: var(--ink-muted); border-color: var(--outline-soft); }
+.dark .journey-paper .shelf-tile[aria-pressed="true"] { background: var(--accent-tint); border-color: var(--dashboard-series-1); }
+.dark .journey-paper .jp-coin { background: var(--accent-tint); color: var(--accent-tint-ink); }
+.dark .journey-paper .tile-categories > button { color: var(--ink-muted); }
+.dark .journey-paper .tile-categories > button[aria-pressed="true"], .dark .journey-paper .shelf-tile > strong { color: var(--ink-primary); }
+.dark .journey-paper .shelf-tile > span:not(.shelf-portrait) { color: var(--ink-muted); }
+.dark .journey-paper .tile-search { border-color: var(--outline-soft); }
+.dark .journey-paper :is(button, a, input, select, [tabindex]):focus-visible { outline-color: var(--focus-ring); }
