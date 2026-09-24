@@ -73,6 +73,7 @@ import { type ProgressDocument } from '../services/progressRepository';
 import HorizontalTabs from './ui/HorizontalTabs';
 import { matchesToolSearch, PRACTICE_TOOL_IDS } from './launchpadSearch';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import { trackProgrammeEvent, trackProgrammeExposures } from '../utils/programmeAnalytics';
 
 // ── Editorial chrome registry ──────────────────────────────────────────
 //
@@ -415,8 +416,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         setTimetableCompletions(prev => {
             const updated = { ...prev };
             const dayArr = [...(updated[dateKey] ?? [])];
+            const wasCompleted = dayArr.includes(blockId);
             if (completed) {
-                if (!dayArr.includes(blockId)) dayArr.push(blockId);
+                if (!wasCompleted) {
+                    dayArr.push(blockId);
+                }
             } else {
                 const idx = dayArr.indexOf(blockId);
                 if (idx >= 0) dayArr.splice(idx, 1);
@@ -484,6 +488,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                 executeToggle(dateKey, blockId, true);
                 return;
             }
+            if (!isDemo) trackProgrammeEvent('plan_activity_completed', { source: 'timetable' });
             const ALREADY_STUDIED_POINTS = 5;
             setPointsData(prev => ({
                 ...prev,
@@ -502,7 +507,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         } else {
             executeToggle(dateKey, blockId, false);
         }
-    }, [executeToggle, pointsData, timetableCompletions]);
+    }, [executeToggle, isDemo, pointsData, timetableCompletions]);
 
     const handleToolClick = useCallback((toolId: string, needsProfile: boolean) => {
         if (needsProfile && !profileLoaded) return;
@@ -835,6 +840,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
       .filter(tool => !tool.needsProfile || Boolean(subjectProfile))
       .map(tool => tool.id);
     const recommendationAvailableToolIdsKey = recommendationAvailableToolIds.join('|');
+
+    useEffect(() => {
+      if (activeTool || isDemo) return;
+      trackProgrammeExposures(recommendationAvailableToolIds);
+    }, [activeTool, isDemo, recommendationAvailableToolIdsKey]);
 
     useEffect(() => {
       try {

@@ -40,6 +40,8 @@ interface CascadeReport {
   staffMembershipsDeleted: number;
   accessRecordsDeleted: number;
   rateLimitsDeleted: number;
+  analyticsEventsDeleted: number;
+  analyticsSubjectDeleted: number;
   authDeleted: boolean;
 }
 
@@ -55,13 +57,17 @@ async function deleteAll(
   db: FirebaseFirestore.Firestore,
   query: FirebaseFirestore.Query,
 ): Promise<number> {
-  const snap = await query.get();
-  for (let i = 0; i < snap.docs.length; i += 450) {
+  let deleted = 0;
+  while (true) {
+    const snap = await query.limit(450).get();
+    if (snap.empty) break;
     const batch = db.batch();
-    for (const d of snap.docs.slice(i, i + 450)) batch.delete(d.ref);
+    for (const d of snap.docs) batch.delete(d.ref);
     await batch.commit();
+    deleted += snap.size;
+    if (snap.size < 450) break;
   }
-  return snap.docs.length;
+  return deleted;
 }
 
 // Authorise the caller against the target. Read-only for export; erasure passes
@@ -118,7 +124,8 @@ async function cascadeDeleteUser(
     usersDeleted: 0, progressDeleted: 0, sessionsDeleted: 0, srsDeleted: 0, settingsDeleted: 0,
     responsesDeleted: 0, notificationsDeleted: 0, kudosDeleted: 0, giftsDeleted: 0,
     gcFlagsDeleted: 0, islandPublicDeleted: 0, staffMembershipsDeleted: 0,
-    accessRecordsDeleted: 0, rateLimitsDeleted: 0, authDeleted: false,
+    accessRecordsDeleted: 0, rateLimitsDeleted: 0, analyticsEventsDeleted: 0,
+    analyticsSubjectDeleted: 0, authDeleted: false,
   };
 
   // School is needed for the cohortTags path; read it before deleting the doc.
@@ -244,6 +251,28 @@ async function cascadeDeleteUser(
     db,
     db.collection("peerInteractionRateLimits").where("uid", "==", uid),
   );
+
+  // Programme events use a separate random analytics identifier. Resolve it
+  // through the server-only mapping, erase every event/rate bucket carrying it,
+  // then remove the mapping itself. Without this step an Article 17 request
+  // would leave a pseudonymous longitudinal record behind.
+  const analyticsSubjectRef = db.collection("analyticsSubjects").doc(uid);
+  const analyticsSubject = await analyticsSubjectRef.get();
+  const analyticsId = analyticsSubject.data()?.analyticsId;
+  if (typeof analyticsId === "string") {
+    r.analyticsEventsDeleted = await deleteAll(
+      db,
+      db.collection("programmeEvents").where("analyticsId", "==", analyticsId),
+    );
+    r.rateLimitsDeleted += await deleteAll(
+      db,
+      db.collection("programmeEventRateLimits").where("analyticsId", "==", analyticsId),
+    );
+  }
+  if (analyticsSubject.exists) {
+    await analyticsSubjectRef.delete();
+    r.analyticsSubjectDeleted = 1;
+  }
   for (const collectionName of ["staffAccessSecrets", "studentAccessSecrets"] as const) {
     const secretDocs = await db.collection(collectionName).get();
     for (const secret of secretDocs.docs) {
@@ -404,6 +433,16 @@ export const exportMyData = onCall(CALLABLE_OPTIONS, async (request) => {
   // it — an Article 15 export that omitted this would be incomplete.
   data.markBankMemory = (await db.collection("progress").doc(targetUid).collection("srs").get())
     .docs.map((d) => ({ deckId: d.id, ...d.data() }));
+
+  const analyticsSubject = await db.collection("analyticsSubjects").doc(targetUid).get();
+  const analyticsId = analyticsSubject.data()?.analyticsId;
+  data.programmeMeasurement = typeof analyticsId === "string"
+    ? {
+        analyticsId,
+        events: (await db.collection("programmeEvents").where("analyticsId", "==", analyticsId).get())
+          .docs.map(d => ({ id: d.id, ...d.data() })),
+      }
+    : null;
 
   data.kudosSent = (await db.collection("kudos").where("fromUid", "==", targetUid).get()).docs.map((d) => {
     const x = { ...d.data() }; if (x.toUid) x.toUid = peerHash(x.toUid); return x;

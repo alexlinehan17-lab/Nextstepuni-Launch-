@@ -24,6 +24,7 @@ import {
 import { isVerifiedAdminSession } from '../utils/adminIdentity';
 import { clearLocalSessionData } from '../utils/sessionPrivacy';
 import { isLocalDemoPreview } from '../utils/localDemoPreview';
+import { resetProgrammeAnalyticsSession, trackProgrammeSessionStarted } from '../utils/programmeAnalytics';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -222,6 +223,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               curriculumLevel,
               needsPasswordChange: userData.needsPasswordChange || false,
             }, revision);
+            if (!isSchoolStaff(userData.role)) trackProgrammeSessionStarted();
 
             if (progressData) {
               const pd = progressData;
@@ -260,6 +262,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               avatar: 'Charlie',
               isAdmin: false,
             }, revision);
+            trackProgrammeSessionStarted();
             if (progressData) {
               const pd = progressData;
               setLoadedData({
@@ -345,6 +348,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const handleLogout = useCallback(async () => {
+    resetProgrammeAnalyticsSession();
     if (user?.uid === DEMO_STUDENT_UID) {
       clearDemoSession();
       setUser(null);
