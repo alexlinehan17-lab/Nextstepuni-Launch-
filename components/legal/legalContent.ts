@@ -24,13 +24,11 @@
 // Bump PRIVACY_POLICY_VERSION whenever the substance of the notice changes.
 // Registration records the version a student accepted (users/{uid}.consent),
 // so a future re-consent prompt can detect an out-of-date acceptance.
-export const PRIVACY_POLICY_VERSION = '2026-08-13';
-// Bumped 18 August 2026 when the "Where our content comes from" section was
-// added to the Terms. PRIVACY_POLICY_VERSION is deliberately NOT bumped with it:
-// that constant is the key written to users/{uid}.consent, and the privacy
-// substance is unchanged, so bumping it would invalidate every recorded consent
-// and trigger a pointless re-consent prompt.
-export const LEGAL_LAST_UPDATED = '18 August 2026';
+export const PRIVACY_POLICY_VERSION = '2026-09-24';
+// Bumped with the first-party programme-measurement disclosure. The event
+// vocabulary, purpose, access boundary and 400-day retention are substantive
+// privacy information and must be visible in both the app and public notice.
+export const LEGAL_LAST_UPDATED = '24 September 2026';
 export const SUPPORT_EMAIL = 'nextstepuniinfo@gmail.com';
 
 // The lawful-basis model wired into the app (confirmed 2026-06-01):
@@ -81,6 +79,7 @@ export const PRIVACY_NOTICE: Section[] = [
       '• Your school and year group (for example, 5th or 6th Year).',
       '• Your study setup: the subjects and levels you take, your target grades, your exam start date, your rest days, and your “North Star” goal for after school.',
       '• Your activity: how far you’ve got in each module, your study sessions, points and achievements, mock exam results, and your topic confidence/mastery.',
+      '• Programme measurement: structured records of when the app is opened, which features are shown, started or completed, whether a planned activity, practice attempt or study session is completed, a broad self-marking band for practice, a broad time band for completed study sessions, and a 1-to-5 confidence response when you choose to provide one. These records use a separate random analytics identifier. They do not contain your name, email, written reflections, answers or exact study duration.',
       '• Your reflections: short notes you write after a study session, and free-text answers to module exercises.',
       '• Anonymous product feedback: if you choose to send feedback, we store your message, its category, the app page you chose to include, your platform, and app version. We do not automatically attach your name, email, school or account ID. Your message is stored as written, so it may contain personal information if you type it yourself.',
       '• Feedback spam protection: for up to 48 hours, we keep a one-way account marker and a daily submission count. This marker is stored separately from feedback messages and is never shown in the feedback inbox.',
@@ -94,14 +93,14 @@ export const PRIVACY_NOTICE: Section[] = [
       '• We do not ask for your date of birth or age.',
       '• We do not collect your location beyond the name of your school.',
       '• No biometric data, no advertising identifiers, and no advertising or tracking cookies.',
-      '• We do not use any analytics or tracking service.',
+      '• We do not use advertising analytics, cross-site tracking, session replay or third-party behavioural tracking. Programme measurement is stored first-party in NextStepUni’s Firebase project.',
       '• We do not send anything you type to any artificial-intelligence service.',
     ],
   },
   {
     heading: 'Why we use your information',
     body: [
-      'To run the study programme and show you the right content for your subjects and year; to track your progress, points and streaks; to let your school’s guidance counsellor support you; and to keep your account secure.',
+      'To run the study programme and show you the right content for your subjects and year; to track your progress, points and streaks; to let your school’s guidance counsellor support you; to report whether the programme is reaching and helping students; to identify features or flows that need improvement; and to keep your account secure.',
     ],
   },
   {
@@ -120,6 +119,7 @@ export const PRIVACY_NOTICE: Section[] = [
       '• Other students at your school can see a limited public version of your island (your first name, avatar, school, chosen goal category, and your island decorations and score), plus any kudos you choose to send. Your full name, study sessions, reflections, grades, points and purchases are never shown to other students.',
       '• NextStepUni staff do not routinely read your information by hand — only occasionally to fix a technical problem.',
       '• A NextStepUni administrator can read product feedback so we can identify problems and improve the app. Account details are not attached automatically, but the administrator will see any personal details you choose to type. Feedback is not shared with your school or other students.',
+      '• NextStepUni administrators can see programme measurement as totals and percentages by school, year group and time period. Very small groups are not reported separately. Raw measurement events and the identifier mapping are restricted to server processes and are not shown in the dashboard.',
     ],
   },
   {
@@ -137,6 +137,7 @@ export const PRIVACY_NOTICE: Section[] = [
       'We keep your information while you are in the programme, plus a period afterwards. Our intended policy is to keep it for 12 months after your Leaving Certificate, and then erase the details that identify you. This retention period is being finalised.',
       'Anonymous product feedback is automatically deleted after 12 months.',
       'The separate marker used to limit feedback spam is automatically deleted after 48 hours.',
+      'Raw pseudonymous programme-measurement events are automatically deleted after 400 days. Short-lived measurement rate-limit records are deleted after 48 hours. Account deletion also removes the analytics identifier and its linked raw events.',
     ],
   },
   {

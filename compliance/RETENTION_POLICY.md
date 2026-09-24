@@ -2,7 +2,7 @@
 
 NextStepUni Learning Lab — proposed retention policy and implementation gap
 
-Document status: PROPOSED — not yet implemented in code
+Document status: PARTIALLY IMPLEMENTED — account erasure and bounded TTL collections are live in code; the full end-of-programme lifecycle remains proposed
 Prepared by: NextStepUni Ltd
 Date: 2026-04-29
 
@@ -19,11 +19,10 @@ b. **What it should do** to satisfy GDPR Article 5(1)(e) "storage
    exhaustive set).
 c. **What code work is required** to move from (a) to (b).
 
-The policy text in Section 3 is **proposed**. No deletion code has been
-written or is to be written under Phase 1; Section 4 lists the work for a
-later phase. Until the deletion code is shipped, the application is in a
-state of *de facto* indefinite retention, which is not defensible under
-Article 5(1)(e).
+The policy text in Section 3 is **proposed**. Authenticated export and cascade
+erasure are implemented, as are TTLs for selected bounded collections. The
+automatic end-of-programme lifecycle for core student records remains future
+work, so those records otherwise persist until an authorised erasure request.
 
 ---
 
@@ -31,20 +30,26 @@ Article 5(1)(e).
 
 ### 2.1 Firestore TTL
 
-There is **no Firestore TTL policy** configured on any collection. `firebase.json` does not define one. No collection has an `expireAt`-equivalent field that Google's TTL system is configured to act on.
+`firestore.indexes.json` configures TTL for anonymous feedback (12 months),
+feedback rate limits (48 hours), pseudonymous `programmeEvents` (400 days) and
+programme-event rate limits (48 hours). These bounded collections are the
+implemented part of this policy. The general student-record lifecycle remains
+to be automated.
 
 ### 2.2 Scheduled deletions or cron jobs
 
-There are **no scheduled Cloud Functions** in `functions/src/index.ts`. The only Cloud Functions defined are `resetStudentPassword` and `changeOwnPassword` — neither performs any deletion or anonymisation.
+`retryFailedAccountDeletions` is scheduled to resume failed cascade-erasure
+requests. Firestore TTL handles the bounded collections listed above. There is
+still no scheduled end-of-programme purge for core student records.
 
 ### 2.3 In-product deletion paths
 
 | Path | Where | What it deletes | Cascade? |
 |---|---|---|---|
-| GC-initiated student deletion | GC dashboard (per `docs/firestore-audit.md`) | `deleteDoc` on `progress/{uid}` then on `users/{uid}` | **Partial.** Does **not** delete `settings/{uid}`, `responses/{uid}`, `notifications/{uid}`, `gcNotes/{schoolId}/students/{uid}`, kudos/gifts/teachbacks/flares authored by the student, or the Firebase Auth account itself. |
-| Admin-initiated student deletion | AdminDashboard (firestore.rules:40–41 grants delete on `users/{uid}` and `progress/{uid}` to `admin@nextstep.app`) | Same as GC | Same gaps |
-| Self-initiated account deletion | **Not implemented** | n/a | n/a |
-| Self-initiated data export (Article 15) | **Not implemented** | n/a | n/a |
+| GC-initiated student deletion | GC dashboard → `requestAccountDeletion` callable | Server-side cascade across account-linked collections and Firebase Auth | Implemented; failed requests are audited and retried. |
+| Admin-initiated student deletion | Admin dashboard → `requestAccountDeletion` callable | Same server-side cascade | Implemented. |
+| Self-initiated account deletion | Account data-rights modal → `requestAccountDeletion` | Same cascade after recent authentication | Implemented. |
+| Self-initiated data export (Article 15) | Account data-rights modal → `exportMyData` | Inline JSON export, including programme measurement when present | Implemented at pilot scale; Year-2 load test/asynchronous successor required before measurement enablement. |
 
 ### 2.4 Per-collection retention semantics observed in code
 
@@ -89,18 +94,19 @@ be reconciled against.
 
 ### 2.8 Summary
 
-The application today is **in effective indefinite retention**. The only
-exit path for a student's data is a manual GC- or admin-initiated deletion
-that leaves several derivative collections orphaned. There is no
-per-collection TTL, no scheduled purge, no inactivity-based anonymisation,
-and no documented retention period.
+The application now has student, GC and admin export/erasure paths with a
+server-side cascade and retry audit, plus TTL for the bounded collections in
+Section 2.1. Core records still have no automatic end-of-programme purge or
+inactivity-based anonymisation, so they remain until an authorised erasure
+request unless the policy below is implemented.
 
 ---
 
 ## 3. Proposed retention policy
 
-The policy below applies only after it is implemented in code (Section 4).
-Until then, it is the documented intent only.
+The policy below is implemented only where Section 2 says so. The remaining
+end-of-programme lifecycle is documented intent until its scheduled purge and
+backup rules are deployed.
 
 ### 3.1 Active student accounts
 

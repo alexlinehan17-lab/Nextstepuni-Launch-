@@ -61,6 +61,7 @@ import { DEMO_STUDENT_UID } from './data/devStudent';
 import SiteGuide, { type GuideAction } from './components/SiteGuide';
 import FeedbackModal from './components/FeedbackModal';
 import { useMobileAppDesign } from './hooks/useMobileAppDesign';
+import { trackProgrammeEvent } from './utils/programmeAnalytics';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
@@ -138,6 +139,7 @@ const App: React.FC = () => {
   const { viewState, currentCategory, currentModuleId, cameFromJourney: _cameFromJourney, activeTool } = nav.state;
   const [journeyResult, setJourneyResult] = useState<{ endingId: string; finalStats?: any } | null>(null);
   const { user, authResolved, needsOnboarding, handleLogout, markOnboardingComplete, markOnboardingNeeded, patchUser } = useAuth();
+  const lastMeasuredRouteRef = useRef<string | null>(null);
 
   // Progress state from context
   const progress = useProgress();
@@ -349,11 +351,28 @@ const App: React.FC = () => {
   // (e.g. Paper Trail's subject/year) overwrite with a richer record.
   useEffect(() => {
     if (!user || user.isAdmin || isSchoolStaff(user.role)) return;
+    let routeKey: string | null = null;
     if (viewState === 'module' && currentModuleId) {
       const course = ALL_COURSES.find(c => c.id === currentModuleId);
-      if (course) recordVisit(user.uid, { kind: 'module', id: course.id, label: course.title });
+      if (course) {
+        routeKey = `module:${course.id}`;
+        recordVisit(user.uid, { kind: 'module', id: course.id, label: course.title });
+      }
     } else if (viewState === 'innovation-zone' && activeTool && TOOL_TITLES[activeTool]) {
+      routeKey = `tool:${activeTool}`;
       recordVisit(user.uid, { kind: 'tool', id: activeTool, label: TOOL_TITLES[activeTool] });
+    }
+    if (!routeKey) {
+      lastMeasuredRouteRef.current = null;
+      return;
+    }
+    if (lastMeasuredRouteRef.current === routeKey) return;
+    lastMeasuredRouteRef.current = routeKey;
+    if (user.uid === DEMO_STUDENT_UID) return;
+    if (routeKey.startsWith('module:')) {
+      trackProgrammeEvent('module_started', { moduleId: routeKey.slice(7), source: 'module' });
+    } else {
+      trackProgrammeEvent('feature_started', { featureId: routeKey.slice(5), source: 'launchpad' });
     }
   }, [viewState, currentModuleId, activeTool, user]);
 
@@ -378,6 +397,9 @@ const App: React.FC = () => {
         if (course) {
           if (isModuleJustCompleted(newSection, course.sectionsCount) && !isModuleJustCompleted(prevSection, course.sectionsCount)) {
             pointsToAward += POINTS.MODULE_COMPLETE_BONUS;
+            if (user.uid !== DEMO_STUDENT_UID) {
+              trackProgrammeEvent('module_completed', { moduleId, source: 'module' });
+            }
           }
           const updatedProgress = { ...userProgress, [moduleId]: newProgress };
           if (isCategoryJustCompleted(moduleId, updatedProgress, ALL_COURSES)) {

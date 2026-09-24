@@ -19,6 +19,7 @@ import {
   PROMPT_INTERVAL_SECONDS,
   PROMPT_AUTO_DISMISS_SECONDS,
 } from '../studySessionData';
+import { analyticsDurationBucket, trackProgrammeEvent } from '../utils/programmeAnalytics';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -150,6 +151,9 @@ export function useStudySession(
     startTimeRef.current = now;
     expectedEndRef.current = now + minutes * 60 * 1000;
     setPhase('active');
+    if (uid && !isDemo) {
+      trackProgrammeEvent('study_session_started', { source: 'study', sessionType: type });
+    }
 
     // Show first prompt immediately
     showNextPrompt();
@@ -170,7 +174,7 @@ export function useStudySession(
         setPhase('complete');
       }
     }, 1000);
-  }, [buildPromptQueue, showNextPrompt, updatePrompt]);
+  }, [buildPromptQueue, showNextPrompt, updatePrompt, uid, isDemo]);
 
   // ── Pause ──
 
@@ -324,6 +328,17 @@ export function useStudySession(
     };
 
     const totalPoints = basePointsEarned + reflectionPoints;
+
+    if (!isDemo) {
+      trackProgrammeEvent('study_session_completed', {
+        source: 'study',
+        sessionType,
+        durationBucket: analyticsDurationBucket(elapsedSeconds),
+        ...(reflectionMetadata?.confidenceAfter
+          ? { confidenceScore: Math.max(1, Math.min(5, Math.round(reflectionMetadata.confidenceAfter))) }
+          : {}),
+      });
+    }
 
     // Update local state immediately (optimistic)
     setTodaySessions(prev => [...prev, record]);
