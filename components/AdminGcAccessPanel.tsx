@@ -143,8 +143,8 @@ const AdminGcAccessPanel: React.FC = () => {
   return (
     <section aria-label="School logins">
       <div className="mb-5">
-        <h2 className="font-serif text-xl font-semibold text-[#1A1A1A]">School logins</h2>
-        <p className="mt-1 max-w-2xl text-sm leading-relaxed text-[#7A7068]">
+        <h2 className="font-sans text-xl font-semibold text-[var(--admin-ink)]">School logins</h2>
+        <p className="mt-1 max-w-2xl text-sm leading-relaxed text-[var(--admin-muted)]">
           Each school has two shared logins: the guidance counsellor&apos;s and the staff room&apos;s.
           Both sign in with the school name and a password — there is no email inbox behind them, so
           the usual reset link cannot work. Setting a password here takes effect immediately and shows
@@ -153,19 +153,19 @@ const AdminGcAccessPanel: React.FC = () => {
       </div>
 
       {error && (
-        <p role="alert" className="mb-4 flex items-start gap-2 rounded-r-[10px] border-l-[3px] border-[#F26B1F] bg-[#FDEEDF] px-4 py-3 text-sm italic text-[#8C3A0E]">
+        <p role="alert" className="mb-4 flex items-start gap-2 rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] px-4 py-3 text-sm text-[var(--admin-accent)]">
           <TriangleAlert size={16} className="mt-0.5 shrink-0" />
           {error}
         </p>
       )}
 
       {pendingAdoption && (
-        <div role="alert" className="mb-5 rounded-r-[10px] border-l-[3px] border-[#F26B1F] bg-[#FDEEDF] p-5">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#8C3A0E]">
+        <div role="alert" className="mb-5 rounded-lg border border-[var(--admin-accent)] bg-[var(--admin-warning-bg)] p-5">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--admin-accent)]">
             This login already has an account
           </p>
-          <p className="mt-2 text-sm leading-relaxed text-[#8C3A0E]">{pendingAdoption.message}</p>
-          <p className="mt-2 text-sm leading-relaxed text-[#8C3A0E]">
+          <p className="mt-2 text-sm leading-relaxed text-[var(--admin-accent)]">{pendingAdoption.message}</p>
+          <p className="mt-2 text-sm leading-relaxed text-[var(--admin-accent)]">
             If you do not recognise it, someone else may have registered this address. Check it in the
             Firebase console before continuing — adopting it grants that account access to every student
             record in the school.
@@ -178,14 +178,14 @@ const AdminGcAccessPanel: React.FC = () => {
                 setPendingAdoption(null);
                 void reset(loginKey, password, true);
               }}
-              className="rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2 text-xs font-bold text-[#1A1A1A]"
+              className="rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold text-[var(--admin-ink)]"
             >
               I recognise it — adopt
             </button>
             <button
               type="button"
               onClick={() => setPendingAdoption(null)}
-              className="rounded-full border-2 border-[#1A1A1A] bg-[#1A1A1A] px-4 py-2 text-xs font-bold text-white"
+              className="rounded-full border border-[var(--admin-rule)] bg-[var(--admin-action)] px-4 py-2 text-xs font-bold text-[var(--admin-action-ink)]"
             >
               Stop
             </button>
@@ -194,24 +194,24 @@ const AdminGcAccessPanel: React.FC = () => {
       )}
 
       {result && (
-        <div role="status" className="mb-5 rounded-r-[10px] border-l-[3px] border-[#3A8D5F] bg-[#E8F2EC] p-5">
-          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#1F5F3E]">
+        <div role="status" className="mb-5 rounded-lg border border-[var(--admin-success)] bg-[var(--admin-success-bg)] p-5">
+          <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--admin-success)]">
             {result.generated ? 'New password for' : 'Password set for'} {result.email}
           </p>
           <div className="mt-2 flex flex-wrap items-center gap-3">
-            <code className="select-all rounded-lg border-2 border-[#1A1A1A] bg-white px-4 py-2 font-mono text-lg tracking-wider text-[#1A1A1A]">
+            <code className="select-all rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 font-mono text-lg tracking-wider text-[var(--admin-ink)]">
               {result.password}
             </code>
             <button
               type="button"
               onClick={() => void copy()}
-              className="flex items-center gap-1.5 rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2 text-xs font-bold text-[#1A1A1A]"
+              className="flex items-center gap-1.5 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold text-[var(--admin-ink)]"
             >
               {copied ? <Check size={14} /> : <Copy size={14} />}
               {copied ? 'Copied' : 'Copy'}
             </button>
           </div>
-          <p className="mt-3 text-xs leading-relaxed text-[#1F5F3E]">
+          <p className="mt-3 text-xs leading-relaxed text-[var(--admin-success)]">
             {result.generated
               ? 'Shown once and never stored — copy it now. '
               : 'Set as typed, and not stored anywhere. '}
@@ -225,21 +225,21 @@ const AdminGcAccessPanel: React.FC = () => {
         {SCHOOLS.flatMap(school => (['gc', 'staff'] as const).map(kind => ({ school, kind, key: `${kind}:${school.id}` }))).map(({ school, kind, key }) => (
           <li
             key={key}
-            className="flex flex-wrap items-center justify-between gap-3 rounded-xl border-2 border-[#1A1A1A] bg-white p-4"
+            className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] p-4"
           >
             <div className="min-w-0">
-              <p className="text-sm font-semibold text-[#1A1A1A]">
+              <p className="text-sm font-semibold text-[var(--admin-ink)]">
                 {school.name}
-                <span className="ml-2 text-xs font-medium text-[#7A7068]">{kind === 'gc' ? 'Guidance counsellor' : 'Staff room'}</span>
+                <span className="ml-2 text-xs font-medium text-[var(--admin-muted)]">{kind === 'gc' ? 'Guidance counsellor' : 'Staff room'}</span>
               </p>
-              <p className="truncate font-mono text-xs text-[#7A7068]">{kind}-{school.id}@nextstep.app</p>
+              <p className="truncate font-mono text-xs text-[var(--admin-muted)]">{kind}-{school.id}@nextstep.app</p>
             </div>
             <button
               type="button"
               onClick={() => (openSchool === key ? closeRow() : (closeRow(), setOpenSchool(key)))}
               disabled={busySchool !== null}
               aria-expanded={openSchool === key}
-              className="flex shrink-0 items-center gap-1.5 rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2 text-xs font-bold text-[#1A1A1A] disabled:opacity-40"
+              className="flex shrink-0 items-center gap-1.5 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2 text-xs font-bold text-[var(--admin-ink)] disabled:opacity-40"
             >
               {busySchool === key
                 ? <LoaderCircle size={14} className="animate-spin" />
@@ -250,10 +250,10 @@ const AdminGcAccessPanel: React.FC = () => {
             </button>
 
             {openSchool === key && (
-              <div className="w-full border-t border-[#DDD8D2] pt-4">
+              <div className="w-full border-t border-[var(--admin-rule)] pt-4">
                 {reauthMethodFor(auth.currentUser) === 'password' && (
                   <div className="mb-4">
-                    <label htmlFor={`current-pw-${key}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">
+                    <label htmlFor={`current-pw-${key}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--admin-muted)]">
                       Your current administrator password
                     </label>
                     <input
@@ -262,11 +262,11 @@ const AdminGcAccessPanel: React.FC = () => {
                       value={currentPassword}
                       onChange={event => setCurrentPassword(event.target.value)}
                       autoComplete="current-password"
-                      className="mt-2 w-full rounded-xl border-2 border-[#1A1A1A] bg-white px-4 py-2.5 text-sm text-[#1A1A1A] outline-none focus:ring-4 focus:ring-[#F26B1F]/15"
+                      className="mt-2 w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 text-sm text-[var(--admin-ink)] outline-none focus:ring-4 focus:ring-[#F26B1F]/15"
                     />
                   </div>
                 )}
-                <label htmlFor={`pw-${key}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">
+                <label htmlFor={`pw-${key}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--admin-muted)]">
                   Choose a password
                 </label>
                 <div className="mt-2 flex flex-wrap items-center gap-2">
@@ -278,13 +278,13 @@ const AdminGcAccessPanel: React.FC = () => {
                       onChange={event => setChosen(event.target.value)}
                       autoComplete="new-password"
                       placeholder={`At least ${MIN_SUPPLIED_PASSWORD_LENGTH} characters`}
-                      className="w-full rounded-xl border-2 border-[#1A1A1A] bg-white px-4 py-2.5 pr-11 font-mono text-sm text-[#1A1A1A] outline-none placeholder:font-sans placeholder:text-[#9E9186] focus:ring-4 focus:ring-[#F26B1F]/15"
+                      className="w-full rounded-lg border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 pr-11 font-mono text-sm text-[var(--admin-ink)] outline-none placeholder:font-sans placeholder:text-[var(--admin-muted)] focus:ring-4 focus:ring-[#F26B1F]/15"
                     />
                     <button
                       type="button"
                       onClick={() => setShowChosen(v => !v)}
                       aria-label={showChosen ? 'Hide password' : 'Show password'}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 text-[#7A7068]"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-[var(--admin-muted)]"
                     >
                       {showChosen ? <EyeOff size={16} /> : <Eye size={16} />}
                     </button>
@@ -293,7 +293,7 @@ const AdminGcAccessPanel: React.FC = () => {
                     type="button"
                     onClick={() => void reset(key, chosen)}
                     disabled={chosen.length < MIN_SUPPLIED_PASSWORD_LENGTH || busySchool !== null || (reauthMethodFor(auth.currentUser) === 'password' && !currentPassword)}
-                    className="shrink-0 rounded-full border-2 border-[#1A1A1A] bg-[#1A1A1A] px-4 py-2.5 text-xs font-bold text-white disabled:opacity-40"
+                    className="shrink-0 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-action)] px-4 py-2.5 text-xs font-bold text-[var(--admin-action-ink)] disabled:opacity-40"
                   >
                     Set password
                   </button>
@@ -301,13 +301,13 @@ const AdminGcAccessPanel: React.FC = () => {
                     type="button"
                     onClick={() => void reset(key)}
                     disabled={busySchool !== null || (reauthMethodFor(auth.currentUser) === 'password' && !currentPassword)}
-                    className="flex shrink-0 items-center gap-1.5 rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2.5 text-xs font-bold text-[#1A1A1A] disabled:opacity-40"
+                    className="flex shrink-0 items-center gap-1.5 rounded-full border border-[var(--admin-rule)] bg-[var(--admin-surface)] px-4 py-2.5 text-xs font-bold text-[var(--admin-ink)] disabled:opacity-40"
                   >
                     <Shuffle size={14} />
                     Generate one
                   </button>
                 </div>
-                <p className="mt-2 text-xs leading-relaxed text-[#7A7068]">
+                <p className="mt-2 text-xs leading-relaxed text-[var(--admin-muted)]">
                   Whichever you choose, the old password stops working immediately.
                 </p>
               </div>
