@@ -48,7 +48,8 @@ import type { SecCard } from '../../types/markBank';
 import HorizontalTabs from '../ui/HorizontalTabs';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
-
+import { trackProgrammeEvent } from '../../utils/programmeAnalytics';
+import { DEMO_STUDENT_UID } from '../../data/devStudent';
 
 const INK = 'var(--mb-ink)';
 const INK_2 = 'var(--mb-ink-2)';
@@ -334,8 +335,19 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     const before = memories[r.cardId] ?? NEW_CARD;
     const after = gradeCard(before, r.grade, t, retention);
     setDeck(commitReview(uid, deckId, r.cardId, after, t));
+    const card = cards.find(candidate => candidate.id === r.cardId);
+    if (uid && uid !== DEMO_STUDENT_UID && card) {
+      const ratio = r.marksAvailable > 0 ? r.marksClaimed / r.marksAvailable : 0;
+      const accuracyBand = ratio >= 1 ? 'full' : ratio >= 0.7 ? 'strong' : ratio > 0 ? 'partial' : 'none';
+      trackProgrammeEvent('practice_attempt_completed', {
+        source: 'practice',
+        subjectId: card.subjectId,
+        topicId: card.topicId,
+        accuracyBand,
+      });
+    }
     return intervalWords(r.cardId, after, t, retention);
-  }, [memories, uid, deckId, retention, now]);
+  }, [cards, memories, uid, deckId, retention, now]);
 
   /* ------------------------------------------------------------ session ---- */
 

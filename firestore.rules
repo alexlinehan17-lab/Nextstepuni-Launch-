@@ -494,6 +494,21 @@ service cloud.firestore {
       allow update, delete: if false;
     }
 
+    // First-party programme measurement. Raw events are written only by the
+    // recordProgrammeEvents callable, which replaces the account uid with a
+    // separate random analytics identifier and supplies trusted cohort fields.
+    // Even administrators receive aggregate summaries through a callable; raw
+    // rows and the uid-to-analytics-id mapping are never exposed to clients.
+    match /programmeEvents/{eventId} {
+      allow read, write: if false;
+    }
+    match /analyticsSubjects/{uid} {
+      allow read, write: if false;
+    }
+    match /programmeEventRateLimits/{bucketId} {
+      allow read, write: if false;
+    }
+
     // Default deny — no other collections are accessible
     match /{document=**} {
       allow read, write: if false;

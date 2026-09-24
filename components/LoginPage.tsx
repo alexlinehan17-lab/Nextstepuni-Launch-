@@ -19,6 +19,7 @@ import { type SessionUser, AVATAR_SEEDS } from '../utils/authUtils';
 import { awaitWriteOrTimeout, saveInBackground } from '../utils/firestoreWrite';
 import { logError } from '../utils/logError';
 import { trackFunnel } from '../utils/funnel';
+import { trackProgrammeEvent } from '../utils/programmeAnalytics';
 import { isReservedEmail, isVerifiedAdminSession } from '../utils/adminIdentity';
 import {
   beginRegistrationProvisioning,
@@ -690,6 +691,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         retryUserDoc,
       );
       trackFunnel('register_succeeded');
+      trackProgrammeEvent('account_registered', { source: 'registration' });
     } catch (err: any) {
       // A failed /users write must NEVER cost the student their account.
       //
@@ -708,6 +710,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // write itself, so it has already fired for THIS rejection. Retrying
         // again would just issue a duplicate setDoc.
         trackFunnel('register_succeeded');
+        trackProgrammeEvent('account_registered', { source: 'registration' });
         // Onboarding intent was published synchronously before the hold came
         // down, so this recovery path can keep that same visual handoff.
         setIsLoading(false);

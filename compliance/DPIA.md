@@ -31,7 +31,10 @@ The purposes of processing are:
 
 ### 1.2 Categories of personal data
 
-The Processor stores personal data across thirteen Cloud Firestore collections. The following inventory is exhaustive as of the current build (commit `0ac6be4`):
+The following inventory records the principal student-facing collections from
+the original assessment and the programme-measurement additions. It is no longer
+claimed as an exhaustive current-build inventory; a full collection audit is a
+release gate for the final Year-2 DPIA.
 
 **`users/{uid}`** — one document per authenticated user.
 
@@ -82,6 +85,16 @@ The Processor stores personal data across thirteen Cloud Firestore collections. 
 
 **`flares/{flareId}`** plus subcollection `flares/{flareId}/responses/{responseId}` — peer SOS questions and replies. The flare carries `{ senderUid, school, subject, question (≤500 chars), status, createdAt, expiresAt, responseCount }`. Responses carry `{ responderUid, text (≤1000 chars), helpful, createdAt }`.
 
+**`programmeEvents/{eventId}`** — time-limited pseudonymous, structured usage
+events described in `PROGRAMME_MEASUREMENT_REGISTER.md`; no name, email, free
+text, answer text or exact study duration. Client access is denied.
+
+**`analyticsSubjects/{uid}`** — server-only mapping from account UID to the
+separate random analytics identifier used in `programmeEvents`.
+
+**`programmeEventRateLimits/{bucketId}`** — server-only daily event count and
+48-hour expiry used to prevent event flooding.
+
 In addition, the Firebase Authentication subsystem holds, for every user: email address, hashed password, last-sign-in timestamp, account creation timestamp, and any provider linkage. The application uses the email-and-password provider only.
 
 ### 1.3 Categories of data subjects
@@ -124,16 +137,18 @@ GC browser ────────HTTPS───▶ same Firebase services
                               + can call Cloud Function resetStudentPassword
 ```
 
-The application makes no calls to any LLM, ML inference API, analytics SDK, advertising network, error-reporting service or third-party telemetry service. This was verified by source-tree search (no matches for `gemini`, `@google/gen`, `GoogleGenerativeAI`, `generateContent`, `Sentry`, `Mixpanel`, `analytics()`, `logEvent`). See AI_GOVERNANCE_SCHEDULE.md for detail.
+The application makes no calls to any LLM, ML inference API, third-party analytics SDK, advertising network, error-reporting service or third-party telemetry service. It does use a first-party, server-mediated programme-measurement stream described in `PROGRAMME_MEASUREMENT_REGISTER.md`: structured pseudonymous events are stored inside the same Firebase project, raw client access is denied, selected cohorts below five students are suppressed, and event TTL is 400 days. See AI_GOVERNANCE_SCHEDULE.md for AI detail.
 
 ### 1.6 Retention periods
 
-**This is a known gap.** No automated retention rule is configured anywhere in the application. Specifically:
+**This remains a broader known gap for core student records.** Automated TTL is configured for anonymous feedback/rate limits and first-party programme-measurement events/rate limits, but not yet for the full `progress`, `responses` and historical account-data lifecycle. Specifically:
 
-- No Firestore TTL policy is configured (no `expireAt` field, no Firestore TTL rule in `firebase.json`).
+- Firestore TTL field overrides exist for `anonymousFeedback`, its rate limits, `programmeEvents` (400 days) and `programmeEventRateLimits` (48 hours). Core student-progress retention is still governed by account erasure rather than an automatic end-of-programme schedule.
 - No Cloud Function or scheduled task purges old `progress`, `responses` or `studyDebriefs`.
 - The `flares` collection has an `expiresAt` field set 24 hours from creation (useFlares.ts), but **no process deletes flares once they expire**; the field is used only for client-side filtering of "active" flares.
-- Account deletion is partial (see Section 4 mitigation row M-RETN).
+- In-product export and cascade erasure are implemented, including programme
+  measurement. Automatic end-of-programme deletion for core records remains a
+  gap (see Section 4 mitigation row M-RETN).
 
 The Processor's intended retention policy is: **TBC — Alex to confirm intended retention period for student progress data after the student leaves school, and the retention period for free-text reflective content.** A common edtech default is to retain account data for the duration of the student's enrolment in the programme plus 12 months for support/audit, after which all personally identifying fields are erased. Until this is decided and *implemented*, the Processor is in effective indefinite retention, which is not defensible under Article 5(1)(e).
 
@@ -252,13 +267,18 @@ Risks are scored on likelihood × severity (Low / Medium / High) using the Irish
 - Overall risk: **Medium**.
 - Audit reference: `firebase.json`; cross-checked against the Firebase console. **TBC — Alex to confirm exact Firestore region from the Firebase console**, since the absence of a `location` key in `firebase.json` does not by itself prove the region is `us-central1`.
 
-### R9 — No data subject rights workflow
+### R9 — Data-subject rights workflow completeness and scale
 
-- Description: there is no in-app mechanism for a student to (a) export their data (Article 15), (b) request rectification (Article 16), (c) request erasure (Article 17), or (d) object to processing (Article 21). Account deletion exists only as a GC-initiated action via the GC dashboard, and that action does not delete the user's content in `responses`, `notifications`, `kudos`, `gifts`, `teachbacks`, `flares` or the responses subcollection.
-- Likelihood: **High** (any subject access request will land here).
-- Severity: **Medium** (legally required; absence is a process failure rather than a confidentiality breach).
+- Description: the app now provides authenticated JSON export and cascade
+  erasure for students, with GC/admin-authorised equivalents and retry audit
+  records. Rectification/objection routing remains organisational, and the
+  synchronous pilot export/erasure path must be replaced or load-tested before
+  high-volume programme measurement is enabled.
+- Likelihood: **Medium** until the Year-2 asynchronous workflow is complete.
+- Severity: **Medium**.
 - Overall risk: **Medium**.
-- Audit reference: codebase search; confirmed by absence of any `deleteUserData`, `exportUserData`, `dsar`-style endpoint.
+- Audit reference: `functions/src/dataRights.ts`,
+  `components/account/DataRightsModal.tsx`.
 
 ### R10 — Indefinite retention
 
@@ -281,6 +301,30 @@ Risks are scored on likelihood × severity (Low / Medium / High) using the Irish
 - Likelihood: **Low** (requires a user to find a hidden control).
 - Severity: **Low** (gamification-only; cannot grant role).
 - Overall risk: **Low**.
+
+### R13 — Re-identification or over-collection in programme measurement
+
+- Description: repeated behavioural events about a child can become identifying
+  or enable unfair profiling when joined with account, school, year-group or
+  free-text data. Small cohorts create an additional inference risk even when
+  names are absent.
+- Necessity: the bounded event set is required to report reach, activation,
+  sustained participation and flow quality, and to decide which student journeys
+  need improvement. Screen replay, raw text, exact location and cross-site data
+  are not necessary and are excluded.
+- Safeguards: a separate random analytics identifier; server-owned cohort
+  metadata; exact-schema validation; no names/email/text/answers/exact duration;
+  server-only raw collections; aggregate-only admin response; primary and
+  complementary small-cell suppression plus secondary cohort suppression;
+  300-event daily abuse cap; 400-day TTL; disabled-by-default client/server gate;
+  complete access/export and erasure coverage; purpose register and child-facing
+  disclosure.
+- Likelihood after safeguards: **Low**.
+- Severity: **Medium** (children and longitudinal behaviour remain involved).
+- Overall residual risk: **Low-Medium**.
+- Review trigger: any new event/field, individual score, equality characteristic,
+  verified grade/outcome linkage, retention increase or third-party analytics
+  integration requires a fresh assessment and controller approval.
 
 ---
 
@@ -305,7 +349,7 @@ Risks are scored on likelihood × severity (Low / Medium / High) using the Irish
 | T13 | Daily/weekly client-side rate limits on kudos, gifts and flares (3/day, 10/week) | useFlares.ts:82–86 (validation client-side; **note: not enforced in rules**) |
 | T14 | Static avatar seeds drawn from a fixed list (no free-text PII reaches DiceBear) | utils/authUtils.ts (`AVATAR_SEEDS`) |
 | T15 | PWA caching reduces external requests to DiceBear / Fonts to once per 30 days per asset | vite.config.ts:58–63 |
-| T16 | No analytics SDK, no error-tracking SDK, no LLM SDK present in the bundle | verified by source-tree grep |
+| T16 | No third-party analytics SDK, no error-tracking SDK, no LLM SDK present in the bundle; first-party measurement is schema-bounded and server-mediated | verified by source-tree grep; `PROGRAMME_MEASUREMENT_REGISTER.md` |
 
 ### 4.2 Technical mitigations required (not yet implemented)
 
@@ -318,7 +362,7 @@ Risks are scored on likelihood × severity (Low / Medium / High) using the Irish
 | T-NEW-5 | Move all GC-initiated notification writes to a Cloud Function and remove the rules-level `create` path on `notifications`. | R2 |
 | T-NEW-6 | Audit-log every password reset (who, when, target student) to a Firestore `audit` collection writable only by Cloud Functions. Notify the student by email immediately on reset. | R6 |
 | T-NEW-7 | Configure Firestore TTL on `flares` (`expiresAt` field) so expired flares are auto-deleted. Implement a scheduled Cloud Function (or app-level cron) to purge `studySessions` older than the agreed retention period. | R10 |
-| T-NEW-8 | Implement a `/dsar` Cloud Function endpoint that exports the user's `users`, `progress`, `settings`, `responses`, `notifications`, `kudos`, `gifts`, `teachbacks`, `flares` records as a single JSON file. Companion endpoint `/account/delete` to atomically purge the same set. | R9 |
+| T-NEW-8 | Replace or load-test the implemented synchronous JSON export/cascade-erasure functions for Year-2 event volume; use an asynchronous file/deletion job if limits are exceeded. | R9 |
 | T-NEW-9 | Configure or migrate to a Firestore database in `europe-west1` or another EEA region; document the resulting transfer position in DPA Schedule 6. | R8 |
 | T-NEW-10 | Server-side moderation pass on flares/teachbacks/responses (a simple keyword/regex filter is the floor; an LLM moderation pass would be appropriate but introduces R5 considerations). Notify GC when a flare contains language indicative of distress. | R11 |
 | T-NEW-11 | Enable Firebase App Check (reCAPTCHA Enterprise / DeviceCheck) on Firestore and Cloud Functions to prevent SDK-spoofed clients. | Multiple |
@@ -352,6 +396,7 @@ Assuming all T-NEW items in Section 4.2 are implemented and the organisational i
 | R10 indefinite retention | Medium | Low |
 | R11 free-text moderation | Medium-High | Medium (residual; moderation is best-effort) |
 | R12 DEV artefacts | Low | Negligible |
+| R13 programme-measurement re-identification/over-collection | Medium-High | Low-Medium |
 
 ---
 
