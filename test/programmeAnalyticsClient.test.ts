@@ -4,7 +4,7 @@
  */
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-const callable = vi.fn(() => Promise.resolve({ data: { accepted: 1 } }));
+const callable = vi.fn((_payload: unknown) => Promise.resolve({ data: { accepted: 1 } }));
 vi.mock('firebase/functions', () => ({
   getFunctions: () => ({}),
   httpsCallable: () => callable,
