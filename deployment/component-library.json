@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "bucket": "nextstepuni-app.firebasestorage.app",
+  "prefix": "private-builds/component-library/20260925-614f9c3411a270bbff9ef7e1051f8f6e8e4f97fbbc39a3321e01b24e6dd8613d",
+  "files": [
+    {
+      "path": "assets/calendar-uECGjP8C-DuOVvZ6U.js",
+      "size": 77977,
+      "sha256": "b4d535fccf49913a828660c5b94cfdb2ee64cbd24fdee1c53ea19044c321bfca"
+    },
+    {
+      "path": "assets/chart-preview-M6mW0LCZ-7EUlM_V6.js",
+      "size": 460061,
+      "sha256": "bf58a3990dca9f5ab2f783e015ca27d364e8c45a674558aea09030b42f386ee2"
+    },
+    {
+      "path": "assets/code-block-DJnV68Ks-CjtzLoPh.js",
+      "size": 524,
+      "sha256": "5254655dde5fd27369fdcf6bf63dd2bd7e4fa173a79580a8a7b532035a02ea24"
+    },
+    {
+      "path": "assets/code-block-gfsnxJxU-BmXSxkcr.js",
+      "size": 135988,
+      "sha256": "6e63e6661dfe06778b7c2158eb6526e13570e3a20e43fc439d65eac6ded7f7fd"
+    },
+    {
+      "path": "assets/drawer-CappFXy1-CGVy_Nmi.js",
+      "size": 71824,
+      "sha256": "0f52c10fe127658154c537aefd842cac70fe5c61392c772ff790c1ebb52497e5"
+    },
+    {
+      "path": "assets/file-diff-BKIUOtoi-CsiQXzmN.js",
+      "size": 3804,
+      "sha256": "dd804f84977948371f7c91adaf8c57ecdc2311ca619e974f3e4a90a12be5ff4f"
+    },
+    {
+      "path": "assets/form-Zp0kZ9e2-Cj0Yz5D_.js",
+      "size": 112520,
+      "sha256": "594155b2aea7ce426c27400db30d96a42de3a90b03964e0ad1e638894ee37ff4"
+    },
+    {
+      "path": "assets/gallery-L5rBzeqB.css",
+      "size": 10654,
+      "sha256": "f6f0c8c697628b64a44ed916b2620a3826aad595f12d316189435b55f2f53183"
+    },
+    {
+      "path": "assets/gallery-Uoex4_5D.js",
+      "size": 1182913,
+      "sha256": "7d7f3999ab3dabedf524f8ce41d015f0cfe4b50383753ecaeee38aae5d6f8378"
+    },
+    {
+      "path": "assets/liquidglass-Dw2iSKe--BZaJE_HR.js",
+      "size": 51456,
+      "sha256": "ece50ab4be953583c17863cb0fb27cb3752020b25f0d543fae18682e90978b65"
+    },
+    {
+      "path": "assets/liquidglass-L6NV62W4-BFipGF63-Csg0EvfL.js",
+      "size": 51442,
+      "sha256": "04109dfef6d9c85c6e9b0382b903344b30566220f9aa212b1da8077a14240e44"
+    },
+    {
+      "path": "assets/modulepreload-polyfill-B5Qt9EMX.js",
+      "size": 711,
+      "sha256": "d2a32840421496e872ade591618d2fa5c33797605d1aec04301717e5a90757d0"
+    },
+    {
+      "path": "assets/original-B1PqpaWS.js",
+      "size": 5355,
+      "sha256": "589b901fd9e458eaa3c23096b938c48a4f21a79f39d97ba73ba04ec3af281f89"
+    },
+    {
+      "path": "assets/original-BLJn-jee.css",
+      "size": 364269,
+      "sha256": "98e58bf464119fe94b23ecb88c94d6335c57314e72edbc677232d5e25af23dcb"
+    },
+    {
+      "path": "assets/resizable-DFhPskKm-DeB9eisH.js",
+      "size": 42103,
+      "sha256": "8f10b51d551b7e74eaf3e92c0f1d935bf264dc53cdd260cc7ca72efca2667f42"
+    },
+    {
+      "path": "assets/slider-DRK7cNeL-B1cYWBf-.js",
+      "size": 53165,
+      "sha256": "3eafc0e67df296b496897d9d09519952813eeeeaadf20829f772bc151fefe392"
+    },
+    {
+      "path": "assets/vendor-DKyNt3Ii.js",
+      "size": 670861,
+      "sha256": "76837479495854591a75ee937d7cdd91c958f0b08eb97764e68467ca652cb749"
+    },
+    {
+      "path": "assets/video-CDYqzVgb-2AZ8Z9oQ.js",
+      "size": 168383,
+      "sha256": "df8c383e6629fd13a4c2bd5d8dd2eb05263b290157ca77c060e94e47803ccdbc"
+    },
+    {
+      "path": "burst.json",
+      "size": 5,
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "path": "fonts/abc-diatype-bold.woff2",
+      "size": 36488,
+      "sha256": "25d0166b87c4ea38e2b41d2afd0784cf9c49cfe69cf7b110e41ec90e9ee593c8"
+    },
+    {
+      "path": "fonts/abc-diatype-regular.woff2",
+      "size": 34324,
+      "sha256": "752627ba3ce9aa2f7aa79c87e754eda1276693367696d1686ee96d1a3eb38276"
+    },
+    {
+      "path": "fonts/departure-mono.woff2",
+      "size": 22496,
+      "sha256": "5b4fed1daa90708aa9c6ee1190abca9dc22164a1c1def0020386e46b61038cfb"
+    },
+    {
+      "path": "images/carousel/1.webp",
+      "size": 41786,
+      "sha256": "7bea02c0050fd94cd797f397783234f3d0c2a50a25fedb24ecbec9c5d9471a59"
+    },
+    {
+      "path": "images/carousel/2.webp",
+      "size": 99892,
+      "sha256": "16c0e26e91be8eb80dfcda7cfd3505b6c53a5d927d9c03d796eb80dccf499087"
+    },
+    {
+      "path": "images/carousel/3.webp",
+      "size": 65686,
+      "sha256": "ee9e52173dda21ce0be0e84a3e8afe73375dd5b13f50ae5bdfac8181b68eaf89"
+    },
+    {
+      "path": "images/carousel/4.webp",
+      "size": 75058,
+      "sha256": "cc8faeb9ae0dad495dacfbbc58de29b819ed24f29c80feec1b5acad3c6a28514"
+    },
+    {
+      "path": "images/carousel/5.webp",
+      "size": 130010,
+      "sha256": "d1dacda2817bc3cae5fc6656ed3acd113eeb0d8942c87d29cd3db403dc1bd287"
+    },
+    {
+      "path": "images/halftone/bridge-backdrop.webp",
+      "size": 22320,
+      "sha256": "230e2107d0408d83f165cb27cae31a9b6e59507ef9dc1f21c24a5d6a869c3877"
+    },
+    {
+      "path": "images/halftone/bridge.webp",
+      "size": 43040,
+      "sha256": "fe344b03b7731920fac0db84aa2f93744a6dd4850425307475b5b199f6f14c78"
+    },
+    {
+      "path": "images/halftone/rocket-backdrop.webp",
+      "size": 10926,
+      "sha256": "4521312dca6cfa0e191d6f86769320d7afa7d143fc4f11d7a5e36ab85313eee4"
+    },
+    {
+      "path": "images/halftone/rocket.webp",
+      "size": 44810,
+      "sha256": "dd6e6cf8bb0f5ad8e135f97cf1bd3ea33e29a98d63f1fcf3bbb1077d83be8f1c"
+    },
+    {
+      "path": "images/halftone/servers-backdrop.webp",
+      "size": 16820,
+      "sha256": "44daece57b5daba6820563a3b276db24aa89fd8908d0cb8b2e93aa263876c362"
+    },
+    {
+      "path": "images/halftone/servers.webp",
+      "size": 38494,
+      "sha256": "15ad79383516197e96766ae8d5afc2ace95db2b1bc085022141d856d7e4a941d"
+    },
+    {
+      "path": "images/previews/click-me.png",
+      "size": 17739,
+      "sha256": "8e5cc8788a2eb8e359c51bbdac01f5dc03585189d76bf1678047a07bf6a4ebc9"
+    },
+    {
+      "path": "images/previews/filter.png",
+      "size": 25182,
+      "sha256": "bd2f655e7e2993e99ef9529a9c163973202be24bc7ac8cfc0e7c67186c71a105"
+    },
+    {
+      "path": "images/previews/florianapolis.webp",
+      "size": 147728,
+      "sha256": "63e0ee7fb960b9a71178e2ea4daac73bdd8844c0d8aea57df9e8042731b0434d"
+    },
+    {
+      "path": "images/previews/profile.webp",
+      "size": 12762,
+      "sha256": "c211c4ff70aebff04d8b3f4d840f9db9d4fcb1c3a932d6214378fd89974252da"
+    },
+    {
+      "path": "images/previews/reading-01.webp",
+      "size": 52406,
+      "sha256": "9347b043e38750aaa0fe5d6489c279b36c627ef735bae94def7043e862777137"
+    },
+    {
+      "path": "images/previews/reading-02.webp",
+      "size": 24264,
+      "sha256": "3e4bd387489a597497a14f18a69cd59c88cac08ec1664414cd97b886d1eedbad"
+    },
+    {
+      "path": "images/previews/select-some-text.png",
+      "size": 23827,
+      "sha256": "231b9f458d3ac6c8072df3944725175a14571c37dfc10ecf70b49d00682e2f88"
+    },
+    {
+      "path": "images/previews/turks-and-caicos-poster.webp",
+      "size": 89296,
+      "sha256": "5438cd04dc831c1ab89907b68dc97969eda9807c9926133d5c33fd78018c1534"
+    },
+    {
+      "path": "index.html",
+      "size": 826,
+      "sha256": "1713f594f03ae2c399cf1b881381aba06cf328b3119c75303228d0ef3021a11e"
+    },
+    {
+      "path": "logos/google-meet.svg",
+      "size": 4855,
+      "sha256": "1ab26279cd8fc9e773d496173ab5db9d28a8610b19f197340a94131e6477292e"
+    },
+    {
+      "path": "logos/linear.svg",
+      "size": 1049,
+      "sha256": "e8ab21cb0b703fa6b6c6da92087749665bf1a8345799ccbe5617a5c6f3e4f56b"
+    },
+    {
+      "path": "logos/vercel.png",
+      "size": 1361,
+      "sha256": "7bbab6407bc0abe1a23b7a6168641a00ede853107f45929c754b86d53f83bfd2"
+    },
+    {
+      "path": "media/turks-and-caicos-poster.webp",
+      "size": 89296,
+      "sha256": "5438cd04dc831c1ab89907b68dc97969eda9807c9926133d5c33fd78018c1534"
+    },
+    {
+      "path": "media/turks-and-caicos.webm",
+      "size": 290012891,
+      "sha256": "ac522f19a4a0d011a35918b217dc39876bdb872187b5ece645ecd4d2887b319a"
+    }
+  ]
+}
