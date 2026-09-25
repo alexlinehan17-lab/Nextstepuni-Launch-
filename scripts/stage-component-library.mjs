@@ -11,7 +11,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const MAX_FILE_BYTES = 320 * 1024 * 1024;
 const MAX_TOTAL_BYTES = 384 * 1024 * 1024;
-const ALLOWED_PATH = /^(?:index\.html|burst\.json|assets\/[\w.-]+\.(?:js|css)|fonts\/[\w.-]+\.woff2|images\/(?:carousel|halftone|previews)\/[\w.-]+\.(?:png|webp)|logos\/[\w.-]+\.(?:png|svg)|media\/[\w.-]+\.(?:webm|webp))$/;
+const ALLOWED_PATH = /^(?:index\.html|showcase\/index\.html|burst\.json|assets\/[\w.-]+\.(?:js|css)|fonts\/[\w.-]+\.woff2|images\/(?:carousel|halftone|previews)\/[\w.-]+\.(?:png|webp)|logos\/[\w.-]+\.(?:png|svg)|media\/[\w.-]+\.(?:webm|webp))$/;
 
 export function validateManifest(manifest) {
   if (manifest?.schemaVersion !== 1
@@ -38,7 +38,7 @@ export function validateManifest(manifest) {
     seen.add(file.path);
     totalBytes += file.size;
   }
-  if (!seen.has('index.html') || totalBytes > MAX_TOTAL_BYTES) {
+  if (!seen.has('index.html') || !seen.has('showcase/index.html') || totalBytes > MAX_TOTAL_BYTES) {
     throw new Error('Incomplete or oversized component library');
   }
   return manifest.files;
