@@ -33,6 +33,9 @@ jobs:
           distribution: temurin
           java-version: '21'
 
+      - name: Verify component library packaging
+        run: node --test scripts/stage-component-library.test.mjs
+
       - name: Lint
         run: npm run lint
 
@@ -160,6 +163,11 @@ jobs:
         with:
           name: web-dist
           path: dist
+
+      # Licensed component source remains outside this public repository. The
+      # pinned compiled gallery is checksum-verified before it is published.
+      - name: Add verified component library
+        run: node scripts/stage-component-library.mjs
 
       - name: Deploy verified build to Firebase Hosting
         run: npx --no-install firebase deploy --only hosting --project nextstepuni-app --non-interactive

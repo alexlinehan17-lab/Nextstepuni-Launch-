@@ -817,9 +817,19 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       {fromLanding ? 'Back to the landing page' : 'See the landing page'}
     </a>
   ) : null;
-  const devButtons = landingButton || demoButton ? (
+  const componentLibraryButton = !Capacitor.isNativePlatform() ? (
+    <a
+      href="/components/"
+      className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-[#1A1A1A] bg-white px-5 text-xs font-bold tracking-[0.01em] text-[#1A1A1A] shadow-sm transition-colors hover:bg-[#F4F4F5]"
+    >
+      <ExternalLink size={15} aria-hidden="true" />
+      Components
+    </a>
+  ) : null;
+  const devButtons = landingButton || componentLibraryButton || demoButton ? (
     <div className="flex flex-wrap items-center justify-center gap-3">
       {landingButton}
+      {componentLibraryButton}
       {demoButton}
     </div>
   ) : null;
