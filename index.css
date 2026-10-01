@@ -981,8 +981,7 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   opacity: 0.58;
 }
 
-/* Product workspaces share one field grammar. Feature colour remains available
-   for focus and selection, while the control itself stays recognisable. */
+/* Product fields share a calm charcoal focus edge; selection colours stay feature-owned. */
 .product-shell :where(input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='color']), select, textarea),
 .product-field {
   min-height: 44px;
@@ -997,8 +996,8 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 
 .product-shell :where(input:not([type='checkbox']):not([type='radio']):not([type='range']), select, textarea):focus,
 .product-field:focus {
-  border-color: #F26B1F !important;
-  box-shadow: 2px 2px 0 #383838 !important;
+  border-color: var(--ink-primary, #383838) !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ink-primary, #383838) 9%, transparent) !important;
   outline: none !important;
 }
 

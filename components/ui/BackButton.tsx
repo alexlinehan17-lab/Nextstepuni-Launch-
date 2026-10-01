@@ -1,12 +1,14 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
+import './controls.css';
 
-/** One mobile back control, including overlays and review sessions. */
+/** Parent or previous-step navigation. Workflow exits use a separate action. */
 const BackButton = React.forwardRef<HTMLButtonElement, {
-  onClick: () => void; label?: string;
-}>(({ onClick, label = 'Back' }, ref) => (
-  <button ref={ref} type="button" className="editorial-back-button" aria-label={label} onClick={onClick}>
+  onClick: () => void; label?: string; showLabel?: boolean;
+}>(({ onClick, label = 'Back', showLabel = false }, ref) => (
+  <button ref={ref} type="button" className={`product-back-button${showLabel ? ' product-back-button--label' : ''}`} aria-label={label} onClick={onClick}>
     <ArrowLeft size={18} strokeWidth={1.8} aria-hidden="true" />
+    {showLabel && <span>{label}</span>}
   </button>
 ));
 BackButton.displayName = 'BackButton';

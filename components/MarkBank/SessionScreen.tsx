@@ -33,7 +33,8 @@
  */
 
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import BackButton from '../ui/BackButton';
+import ActionButton from '../ui/ActionButton';
+import { LogOut } from 'lucide-react';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
@@ -2559,7 +2560,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         background: 'var(--mb-paper)', borderBottom: `1px solid ${HAIRLINE_2}`,
       }}>
         {mobileAppDesign ? <div className="mb-mobile-session-header">
-          <BackButton ref={leaveButtonRef} label="Leave review" onClick={openExitConfirmation} />
+          <ActionButton ref={leaveButtonRef} intent="quiet" aria-label="Leave review" onClick={openExitConfirmation}><LogOut size={18} aria-hidden="true" /></ActionButton>
           <span>{subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}</span>
           <strong aria-label={`${Math.min(distinctDone + 1, exerciseTotal)} of ${exerciseTotal} this review`}>{Math.min(distinctDone + 1, exerciseTotal)} <small>/ {exerciseTotal}</small></strong>
         </div> : (
@@ -2567,21 +2568,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '0 16px',
           height: 58, display: 'flex', alignItems: 'center', gap: 14,
         }}>
-          <button
-            ref={leaveButtonRef}
-            type="button" onClick={openExitConfirmation}
-            style={{
-              display: 'flex', alignItems: 'center', gap: 6,
-              background: 'var(--mb-raised)', border: `1px solid ${HAIRLINE_2}`, borderRadius: 10,
-              padding: '7px 10px', cursor: 'pointer',
-              color: INK, font: `600 12.5px/1.5 ${SANS}`,
-            }}
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            Leave
-          </button>
+          <ActionButton ref={leaveButtonRef} intent="secondary" onClick={openExitConfirmation}>
+            <LogOut size={16} aria-hidden="true" /> Leave review
+          </ActionButton>
 
           {/* One line where four stacked headings used to be. */}
           <span style={{
@@ -3249,19 +3238,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             padding: 20, background: 'rgba(26,26,26,.42)',
           }}
         >
-          <div style={{ width: '100%', maxWidth: 420, padding: '22px', borderRadius: 16, border: `1.5px solid ${MUTED_BORDER}`, background: 'var(--mb-paper)', boxShadow: 'var(--mb-shadow)' }}>
+          <div style={{ width: '100%', maxWidth: 420, padding: '24px', borderRadius: 14, border: `1.5px solid ${MUTED_BORDER}`, background: 'var(--mb-paper)', boxShadow: 'none' }}>
             <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>Leave session?</span>
             <h2 id="mark-bank-exit-title" style={{ margin: '6px 0 7px', font: `700 23px/1.2 ${SERIF}`, color: INK }}>Your completed cards are safe.</h2>
             <p style={{ margin: '0 0 18px', font: `400 13.5px/1.55 ${SANS}`, color: MUTED }}>
               You have finished {distinctDone} of {exerciseTotal}. This exercise will stay ungraded and return next time.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 9 }}>
-              <button ref={keepReviewButtonRef} type="button" autoFocus onClick={closeExitConfirmation} style={{ padding: '12px 16px', borderRadius: 11, border: '2px solid #1A1A1A', background: '#F26B1F', color: '#FFFFFF', boxShadow: '3px 3px 0 #1A1A1A', font: `650 13.5px/1 ${SANS}`, cursor: 'pointer' }}>
-                Keep reviewing
-              </button>
-              <button ref={leaveSessionButtonRef} type="button" onClick={onExit} style={{ padding: '11px 16px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}`, background: 'var(--mb-raised)', color: INK_2, font: `600 13px/1 ${SANS}`, cursor: 'pointer' }}>
-                Leave session
-              </button>
+              <ActionButton ref={keepReviewButtonRef} autoFocus onClick={closeExitConfirmation}>Keep reviewing</ActionButton>
+              <ActionButton ref={leaveSessionButtonRef} intent="secondary" onClick={onExit}>Leave review</ActionButton>
             </div>
           </div>
         </div>

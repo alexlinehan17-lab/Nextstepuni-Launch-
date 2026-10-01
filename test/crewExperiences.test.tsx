@@ -64,13 +64,13 @@ describe('session receipt and debrief', () => {
     render(<StudySessionFinish {...finishProps} mode="quick" onModeChange={vi.fn()} onSave={onSave} onSkip={vi.fn()} />);
     expect(screen.getByLabelText('Your study receipt')).toHaveTextContent('25 min 5 sec');
     expect(screen.getByText('Session ended early')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Keep this session' })).toBeDisabled();
+    expect(screen.getByRole('button', { name: 'Save session' })).toBeDisabled();
     fireEvent.click(screen.getByRole('button', { name: 'Good' }));
-    fireEvent.click(screen.getByRole('button', { name: 'Keep this session' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Save session' }));
     expect(screen.getByRole('button', { name: 'Save without a debrief' })).toBeDisabled();
     expect(onSave).toHaveBeenCalledExactlyOnceWith('good');
     release();
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Keep this session' })).toBeEnabled());
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Save session' })).toBeEnabled());
   });
   test('keeps a failed full reflection for retry and preserves its structured confidence', async () => {
     const onSave = vi.fn().mockRejectedValueOnce(new Error('offline')).mockResolvedValueOnce(undefined);
@@ -78,12 +78,12 @@ describe('session receipt and debrief', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Okay' }));
     const note = screen.getByRole('textbox');
     fireEvent.change(note, { target: { value: 'Short' } });
-    expect(screen.getByRole('button', { name: 'Keep this session' })).toBeDisabled();
+    expect(screen.getByRole('button', { name: 'Save session' })).toBeDisabled();
     fireEvent.change(note, { target: { value: 'Next time I will revisit the verbs.' } });
-    fireEvent.click(screen.getByRole('button', { name: 'Keep this session' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Save session' }));
     await screen.findByRole('alert');
     expect(note).toHaveValue('Next time I will revisit the verbs.');
-    fireEvent.click(screen.getByRole('button', { name: 'Keep this session' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Save session' }));
     await waitFor(() => expect(onSave).toHaveBeenCalledTimes(2));
     expect(onSave).toHaveBeenLastCalledWith('okay|Next time I will revisit the verbs.');
   });

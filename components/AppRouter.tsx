@@ -4,6 +4,7 @@
  */
 
 import React, { Suspense, lazy, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import BackButton from './ui/BackButton';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Eye, EyeOff, Check } from 'lucide-react';
 import { useNavigation } from '../contexts/NavigationContext';
@@ -317,8 +318,12 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     nav.navigateToModule(moduleId, viewState, currentCategory);
   };
 
-  const handleBackToTree = () => { nav.goBack(); };
-  const handleBackToCategory = () => { nav.goBack(); };
+  const handleBackToTree = () => { nav.navigateToTree(); };
+  const handleBackToCategory = () => {
+    if (cameFromJourney) nav.navigateToInnovationZone('journey');
+    else if (currentCategory) nav.navigateToCategory(currentCategory);
+    else nav.navigateToModules();
+  };
   const handleGoToModules = () => { nav.navigateToModules(); };
   const handleGoToInnovationZone = () => { nav.navigateToInnovationZone(); };
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
@@ -599,7 +604,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
       <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening this section" />}>
         <JCComingSoon
           fromCourseTitle={fromCourse?.title}
-          onBack={handleBackToTree}
+          onBack={handleGoToModules}
         />
       </Suspense>
     );
@@ -751,9 +756,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           {/* Header */}
           <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: `calc(${mobileAppDesign ? 12 : 16}px + var(--sat, 0px))`, paddingBottom: mobileAppDesign ? '12px' : '24px' }}>
             <div className="flex items-center gap-4">
-              <button onClick={handleBackToTree} aria-label="Back to modules" className={`${mobileAppDesign ? 'min-h-11 min-w-11 ' : ''}p-2.5 rounded-xl transition-colors hover:bg-white/60`} style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-              </button>
+              <BackButton label="Back to modules" onClick={handleGoToModules} showLabel={!mobileAppDesign} />
             </div>
           </header>
           {/* Showcase */}
@@ -777,7 +780,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
         title={categoryTitles[currentCategory]}
         courses={categoryCourses}
         onSelectCourse={handleSelectModule}
-        onBack={handleBackToTree}
+        onBack={handleGoToLearningPaths}
         userProgress={userProgress}
         northStar={northStar}
         studentProfile={studentProfile}

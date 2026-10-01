@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import SubjectAvatar from './SubjectAvatar';
@@ -55,7 +55,8 @@ interface ChangeSubjectsModalProps {
 // ─── Component ───────────────────────────────────────────────────────────────
 
 const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClose, onSave, currentProfile }) => {
-  useModal(isOpen, onClose);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  useModal(isOpen, onClose, dialogRef);
   const [step, setStep] = useState<1 | 2>(1);
 
   // Initialise from current profile
@@ -202,6 +203,11 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
         onClick={onClose}
       >
         <MotionDiv
+          ref={dialogRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Change subjects"
+          tabIndex={-1}
           initial={{ opacity: 0, y: 24, scale: 0.985 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 16, scale: 0.99 }}

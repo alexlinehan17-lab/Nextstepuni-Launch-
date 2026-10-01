@@ -74,18 +74,15 @@ const FeedbackModal: React.FC<Props> = ({ open, onClose, context = { surface: 'h
     if (isSent) successRef.current?.focus();
   }, [isSent]);
 
-  useEffect(() => {
-    if (!open) return;
-    setCategory('idea');
-    setMessage('');
-    setIncludeContext(true);
-    setIsSubmitting(false);
-    setIsSent(false);
-    setError('');
-  }, [open]);
-
   const close = () => {
-    if (!isSubmitting) onClose();
+    if (isSubmitting) return;
+    if (isSent) {
+      setCategory('idea');
+      setIncludeContext(true);
+      setIsSent(false);
+      setError('');
+    }
+    onClose();
   };
 
   const submit = async (event: React.FormEvent) => {
@@ -108,6 +105,7 @@ const FeedbackModal: React.FC<Props> = ({ open, onClose, context = { surface: 'h
         platform: getFeedbackPlatform(navigator.userAgent),
         appVersion: '0.0.0',
       });
+      setMessage('');
       setIsSent(true);
     } catch (submissionError) {
       console.error('Anonymous feedback submission failed:', submissionError);
@@ -134,8 +132,8 @@ const FeedbackModal: React.FC<Props> = ({ open, onClose, context = { surface: 'h
           <h3>Thanks for<br />having your say.</h3>
           <p>Ideas, frustrations and small fixes — they all help us decide what to improve next.</p>
           <p className="feedback-sent-note">Sent without account details.</p>
-          <button type="button" onClick={onClose} className="feedback-primary">
-            Back to my study <span aria-hidden="true">↗</span>
+          <button type="button" onClick={close} className="feedback-primary">
+            Close
           </button>
         </div>
       ) : (

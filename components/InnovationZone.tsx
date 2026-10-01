@@ -904,15 +904,13 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         }}
       >
         {mobileAppDesign ? <div className="lp-mobile-tool-header">
-          <BackButton label={activeTool ? 'Back to Launchpad' : 'Back to home'} onClick={activeTool ? () => nav.goBack() : onBack} />
+          <BackButton label={activeTool ? 'Back to Launchpad' : 'Back to home'} onClick={activeTool ? () => nav.navigateToInnovationZone() : onBack} />
           <div className="lp-mobile-tool-title"><p>{toolEyebrow}</p><h1 className="lp-navigation-title">{toolTitle}</h1></div>
           <div aria-hidden="true">{activeTool ? <ToolArtwork tool={toolArtwork} className="lp-navigation-art" /> : <div className="lp-navigation-art"><InnovationZoneIcon /></div>}</div>
         </div> : (
         <div className="container mx-auto flex min-w-0 items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-3 md:gap-8">
-            <MotionButton type="button" aria-label={activeTool ? 'Back to Launchpad' : 'Back to home'} whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={activeTool ? () => nav.goBack() : onBack} className={`p-2.5 rounded-xl bg-[var(--surface-paper)] border-[1.5px] border-[var(--outline-strong)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] ${mobileAppDesign ? 'min-h-11 min-w-11 shrink-0' : ''}`}>
-              <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
-            </MotionButton>
+            <BackButton label={activeTool ? 'Back to Launchpad' : 'Back to home'} showLabel onClick={activeTool ? () => nav.navigateToInnovationZone() : onBack} />
             <div className="hidden md:block h-10 w-px bg-[var(--outline-soft)]" />
             <div className="min-w-0">
               <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">{mobileAppDesign ? toolEyebrow : 'Explore'}</p>
@@ -1079,7 +1077,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                         <ToolErrorBoundary
                             key={currentTool?.id}
                             toolName={currentTool?.title ?? 'this tool'}
-                            onBack={() => nav.goBack()}
+                            onBack={() => nav.navigateToInnovationZone()}
                         >
                             <Suspense fallback={<LoadingSpinner variant="compact" placement="panel" label={getToolLoadingLabel(activeTool, user?.curriculumLevel)} />}>
                                 {currentTool?.component}

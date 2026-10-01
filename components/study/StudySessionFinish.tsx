@@ -49,7 +49,7 @@ export default function StudySessionFinish({ subject, elapsedSeconds, plannedSec
           {mode === 'full' && <label className="study-reflection-label">What worked, and what will you try next time?<textarea value={reflection} onChange={event => setReflection(event.target.value)} minLength={15} maxLength={2000} rows={3} placeholder="A thought worth keeping…" aria-describedby="reflection-help" /><small id="reflection-help">At least 15 characters. A sentence or two is enough.</small></label>}
         </fieldset>
         {error && <p role="alert" className="study-save-error">{error}</p>}
-        <button type="submit" className="crew-primary study-keep" disabled={busy || !valid}>{busy ? 'Saving your session…' : 'Keep this session'}<ArrowUpRight size={21} aria-hidden="true" /></button>
+        <button type="submit" className="crew-primary study-keep" disabled={busy || !valid}>{busy ? 'Saving your session…' : 'Save session'}<ArrowUpRight size={21} aria-hidden="true" /></button>
         <button type="button" className="crew-link study-skip" disabled={busy} onClick={() => void submit(true)}>Save without a debrief</button>
         <p className="study-save-note">Saved sessions appear in your progress. Your debrief stays in your study journal.</p>
       </form>

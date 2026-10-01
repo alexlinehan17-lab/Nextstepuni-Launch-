@@ -98,7 +98,7 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     fireEvent.click(screen.getByRole('button', { name: 'Skip this step' }));
     expect(screen.getByRole('article', { name: 'Your study receipt' })).toHaveTextContent('Mathematics');
     fireEvent.click(screen.getByRole('button', { name: 'Good' }));
-    fireEvent.click(screen.getByRole('button', { name: 'Keep this session' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Save session' }));
     await waitFor(() => expect(mocks.saveSession).toHaveBeenCalledWith(10, [], {
       confidenceAfter: 4, confidenceLabel: 'good', reflectionMode: 'quick',
     }));
