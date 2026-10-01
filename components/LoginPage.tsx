@@ -360,7 +360,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // valid join code is presented (security review H-2). The client is
         // forbidden from writing `school` by the /users create rule.
         const newName = cred.user.displayName || (cred.user.email?.split('@')[0]) || 'Student';
-        const newAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
+        const newAvatar = avatar || defaultAvatar;
         await writeUserDoc(setDoc(userRef, { name: newName, avatar: newAvatar, createdAt: new Date().toISOString() }), 'LoginPage.googleCreateUserDoc');
         handleLoginSuccess({
           uid: cred.user.uid,
@@ -425,7 +425,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // (same as Google); parental consent is captured at school enrolment
         // (basis = school-enrolment). See compliance/DPIA.md.
         const newName = appleName || cred.user.displayName || 'Student';
-        const newAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
+        const newAvatar = avatar || defaultAvatar;
         await writeUserDoc(setDoc(userRef, {
           name: newName,
           avatar: newAvatar,

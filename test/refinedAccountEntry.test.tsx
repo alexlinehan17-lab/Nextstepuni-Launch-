@@ -1,16 +1,18 @@
 import React from 'react';
 import type * as FirebaseAuth from 'firebase/auth';
+import type * as FirebaseFirestore from 'firebase/firestore';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import LoginPage from '../components/LoginPage';
 
-const { resetEmail, createAccount } = vi.hoisted(() => ({ resetEmail: vi.fn(), createAccount: vi.fn() }));
-vi.mock('firebase/auth', async importOriginal => ({ ...(await importOriginal<typeof FirebaseAuth>()), sendPasswordResetEmail: resetEmail, createUserWithEmailAndPassword: createAccount }));
+const { resetEmail, createAccount, googleSignIn, getUserDoc, writeUserDoc } = vi.hoisted(() => ({ resetEmail: vi.fn(), createAccount: vi.fn(), googleSignIn: vi.fn(), getUserDoc: vi.fn(), writeUserDoc: vi.fn() }));
+vi.mock('firebase/auth', async importOriginal => ({ ...(await importOriginal<typeof FirebaseAuth>()), sendPasswordResetEmail: resetEmail, createUserWithEmailAndPassword: createAccount, signInWithPopup: googleSignIn }));
+vi.mock('firebase/firestore', async importOriginal => ({ ...(await importOriginal<typeof FirebaseFirestore>()), doc: () => ({}), getDoc: getUserDoc, setDoc: writeUserDoc }));
 vi.mock('firebase/functions', () => ({ getFunctions: () => ({}), httpsCallable: () => vi.fn().mockRejectedValue(new Error('not signed in')) }));
 vi.mock('../utils/funnel', () => ({ trackFunnel: vi.fn() }));
 vi.mock('../hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => true }));
 
-beforeEach(() => { localStorage.clear(); sessionStorage.clear(); createAccount.mockReset(); resetEmail.mockReset(); resetEmail.mockResolvedValue(undefined); });
+beforeEach(() => { localStorage.clear(); sessionStorage.clear(); googleSignIn.mockReset(); getUserDoc.mockReset(); writeUserDoc.mockReset(); writeUserDoc.mockResolvedValue(undefined); createAccount.mockReset(); resetEmail.mockReset(); resetEmail.mockResolvedValue(undefined); });
 describe('account entry refinements', () => {
   it('uses password-manager semantics on the real sign-in form', () => {
     render(<LoginPage handleLoginSuccess={vi.fn()} />);
@@ -88,6 +90,21 @@ describe('account entry refinements', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Create an account' }));
     await screen.findByLabelText('Your Name');
     expect(screen.getByRole('button', { name: 'Change your Star Crew character' })).toBeInTheDocument();
+  });
+  it.each([false, true])('carries the chosen crew into a new Google account and preserves an existing profile (existing: %s)', async existing => {
+    googleSignIn.mockResolvedValue({ user: { uid: 'local-social-user', displayName: 'Aoife', email: 'aoife@example.com', getIdTokenResult: async () => ({ claims: {} }) } });
+    getUserDoc.mockResolvedValue({ exists: () => existing, data: () => ({ name: 'Aoife', avatar: 'star-crew:maker', role: 'student', school: 'marino' }) });
+    const success = vi.fn();
+    render(<LoginPage handleLoginSuccess={success} />);
+    fireEvent.click(screen.getByRole('button', { name: 'NextStepUni welcome' }));
+    await screen.findByRole('button', { name: 'Create an account' });
+    fireEvent.click(screen.getByRole('button', { name: 'Choose your Star Crew character' }));
+    fireEvent.click(within(screen.getByRole('dialog')).getByRole('button', { name: 'Choose The Reader avatar' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Continue with Google' }));
+    await waitFor(() => expect(success).toHaveBeenCalledOnce());
+    expect(success.mock.calls[0][0].avatar).toBe(existing ? 'star-crew:maker' : 'star-crew:reader');
+    if (existing) expect(writeUserDoc).not.toHaveBeenCalled();
+    else expect(writeUserDoc).toHaveBeenCalledWith(expect.anything(), expect.objectContaining({ avatar: 'star-crew:reader' }));
   });
   it('enforces each step, locks pending submission, and returns email errors to the details step', async () => {
     let rejectRegistration: (error: unknown) => void = () => {};
