@@ -52,6 +52,8 @@ describe('account entry refinements', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
     const picker = await screen.findByRole('radiogroup', { name: 'Choose your Star Crew character' });
     expect(within(picker).getAllByRole('radio')).toHaveLength(8);
+    expect(within(picker).getByRole('radio', { name: 'Beanie' })).toBeChecked();
+    expect(screen.getByRole('button', { name: 'Create my account' })).toBeDisabled();
     fireEvent.click(within(picker).getByRole('radio', { name: 'Maker' }));
     expect(within(picker).getAllByRole('radio', { checked: true })).toHaveLength(1);
     expect(screen.getByRole('button', { name: 'Create my account' })).toBeDisabled();
@@ -93,6 +95,15 @@ describe('account entry refinements', () => {
     await screen.findByLabelText('Your Name');
     expect(screen.getByRole('button', { name: 'Change your Star Crew character' })).toBeInTheDocument();
   });
+  it('can confirm the default Beanie without selecting a tile', async () => {
+    const user = userEvent.setup();
+    render(<LoginPage handleLoginSuccess={vi.fn()} />);
+    await user.click(screen.getByRole('button', { name: 'Choose your Star Crew character' }));
+    expect(within(screen.getByRole('dialog')).getByRole('radio', { name: 'Beanie' })).toBeChecked();
+    await user.click(within(screen.getByRole('dialog')).getByRole('button', { name: 'Choose Beanie' }));
+    await user.click(screen.getByRole('button', { name: 'Change your Star Crew character' }));
+    expect(within(screen.getByRole('dialog')).getByRole('radio', { name: 'Beanie' })).toBeChecked();
+  });
   it('lets the popup preview a character without committing it on Escape', async () => {
     const user = userEvent.setup();
     render(<LoginPage handleLoginSuccess={vi.fn()} />);
@@ -105,7 +116,7 @@ describe('account entry refinements', () => {
     expect(document.body.style.overflow).toBe(originalOverflow);
     expect(screen.getByRole('button', { name: 'Choose your Star Crew character' })).toHaveFocus();
     await user.click(screen.getByRole('button', { name: 'Choose your Star Crew character' }));
-    expect(within(screen.getByRole('dialog')).queryAllByRole('radio', { checked: true })).toHaveLength(0);
+    expect(within(screen.getByRole('dialog')).getByRole('radio', { name: 'Beanie' })).toBeChecked();
     await user.click(within(screen.getByRole('dialog')).getByRole('radio', { name: 'Maker' }));
     await user.click(within(screen.getByRole('dialog')).getByRole('button', { name: 'Choose Maker' }));
     expect(screen.getByRole('button', { name: 'Change your Star Crew character' })).toBeInTheDocument();
@@ -158,8 +169,10 @@ describe('account entry refinements', () => {
     fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'A memorable password phrase' } });
     fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
     await screen.findByRole('radiogroup', { name: 'Choose your Star Crew character' });
-    fireEvent.click(screen.getByRole('checkbox', { name: 'I have read the Privacy Notice and agree to the Terms of Use' }));
+    expect(screen.getByRole('radio', { name: 'Beanie' })).toBeChecked();
     expect(screen.getByRole('button', { name: 'Create my account' })).toBeDisabled();
+    fireEvent.click(screen.getByRole('checkbox', { name: 'I have read the Privacy Notice and agree to the Terms of Use' }));
+    expect(screen.getByRole('button', { name: 'Create my account' })).toBeEnabled();
     fireEvent.click(screen.getByRole('radio', { name: 'Maker' }));
     fireEvent.click(screen.getByRole('button', { name: 'Create my account' }));
     expect(createAccount).toHaveBeenCalledExactlyOnceWith(expect.anything(), 'aoife@example.com', 'A memorable password phrase');

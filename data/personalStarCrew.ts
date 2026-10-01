@@ -86,5 +86,7 @@ export const PERSONAL_STAR_CREW: (StarCrewArtwork & { id: string; name: string }
   }
 ];
 
+export const DEFAULT_PERSONAL_STAR_CREW_ID = 'star-crew:beanie';
+
 export const getPersonalStarCrew = (id: string) => PERSONAL_STAR_CREW.find(avatar => avatar.id === id);
 export const getAvatarName = (id: string) => getPersonalStarCrew(id)?.name ?? id;
