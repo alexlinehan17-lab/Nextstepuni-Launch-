@@ -1131,6 +1131,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                           <button
                             type="button"
                             key={seed}
+                            data-account-sound="save"
                             aria-label={`Choose ${getAvatarName(seed)} avatar`}
                             aria-pressed={avatar === seed}
                             onClick={() => {
@@ -1202,6 +1203,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     type="button"
                     className="auth-live-quiet"
                     disabled={isLoading}
+                    data-account-sound="skip"
                     onClick={registrationBack}
                   >
                     <ArrowLeft size={17} aria-hidden="true" />
@@ -1266,6 +1268,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     type="button"
                     className="auth-live-quiet"
                     disabled={isLoading}
+                    data-account-sound="skip"
                     onClick={() => navigate('welcome')}
                   >
                     <ArrowLeft size={17} aria-hidden="true" />
@@ -1329,6 +1332,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       type="button"
                       className="auth-live-quiet"
                       disabled={isLoading}
+                      data-account-sound="skip"
                       onClick={() => navigate('login')}
                     >
                       <ArrowLeft size={17} aria-hidden="true" />
@@ -1365,6 +1369,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       type="button"
                       className="auth-live-quiet"
                       disabled={isLoading}
+                      data-account-sound="skip"
                       onClick={() => navigate('login')}
                     >
                       <ArrowLeft size={17} aria-hidden="true" />
@@ -1473,6 +1478,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     type="button"
                     className="auth-live-quiet"
                     disabled={isLoading}
+                    data-account-sound="skip"
                     onClick={() => navigate('welcome')}
                   >
                     <ArrowLeft size={17} aria-hidden="true" />
