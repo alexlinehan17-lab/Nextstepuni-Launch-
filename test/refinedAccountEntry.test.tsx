@@ -107,11 +107,13 @@ describe('account entry refinements', () => {
   it('lets the popup preview a character without committing it on Escape', async () => {
     const user = userEvent.setup();
     render(<LoginPage handleLoginSuccess={vi.fn()} />);
+    const originalOverflow = document.body.style.overflow;
     await user.click(screen.getByRole('button', { name: 'Choose your Star Crew character' }));
     await user.click(within(screen.getByRole('dialog')).getByRole('radio', { name: 'Maker' }));
     expect(within(screen.getByRole('dialog')).getByRole('radio', { name: 'Maker' })).toBeChecked();
     await user.keyboard('{Escape}');
     expect(screen.queryByRole('dialog')).toBeNull();
+    expect(document.body.style.overflow).toBe(originalOverflow);
     expect(screen.getByRole('button', { name: 'Choose your Star Crew character' })).toHaveFocus();
     await user.click(screen.getByRole('button', { name: 'Choose your Star Crew character' }));
     expect(within(screen.getByRole('dialog')).getByRole('radio', { name: 'Beanie' })).toBeChecked();
@@ -143,13 +145,18 @@ describe('account entry refinements', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Create account' }));
     await screen.findByLabelText('Your Name');
     fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
-    expect(screen.getByRole('alert')).toHaveTextContent('Please enter your email');
+    expect(screen.getByRole('alert')).toHaveTextContent('Enter your name.');
+    await waitFor(() => expect(screen.getByLabelText('Your Name')).toHaveFocus());
+    expect(screen.getByLabelText('Your Name')).toHaveAccessibleDescription('Enter your name.');
     fireEvent.change(screen.getByLabelText('Your Name'), { target: { value: 'Aoife' } });
     fireEvent.change(screen.getByLabelText('Email'), { target: { value: 'aoife@example.com' } });
     fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
     await screen.findByLabelText('School');
     fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
-    expect(screen.getByRole('alert')).toHaveTextContent('Please select your school');
+    expect(screen.getByRole('alert')).toHaveTextContent('Choose your school.');
+    await waitFor(() => expect(screen.getByLabelText('School')).toHaveFocus());
+    expect(screen.getByLabelText('School')).toHaveAttribute('aria-invalid', 'true');
+    expect(screen.getByLabelText('School')).toHaveAccessibleDescription('Choose your school.');
     await userEvent.click(screen.getByLabelText('School'));
     await userEvent.click(await screen.findByRole('option', { name: /Marino/ }));
     fireEvent.change(screen.getByLabelText('School join code'), { target: { value: 'test-only' } });

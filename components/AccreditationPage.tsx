@@ -285,7 +285,7 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack, onOpenMod
         style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}
       >
         <div className="mx-auto max-w-7xl">
-          <PageHeader onBack={handlePageBack} eyebrow="Evidence library" title="References" backLabel="Go back" compact />
+          <PageHeader onBack={handlePageBack} eyebrow="Evidence library" title="References" backLabel={mobileDetail && window.innerWidth < 768 ? 'Back to references' : 'Back to home'} compact />
         </div>
       </div>
 

@@ -602,21 +602,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                 </p>
               )}
 
-              {dueCount > 0 ? (
-                <PrimaryActionButton
-                  label={`Start today's ${Math.min(dueCount, MARK_BANK_SESSION_SIZE)}`}
-                  onClick={() => startSession()}
-                  className={`w-full ${wide ? '' : 'max-w-80'} mt-3.5`}
-                />
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => startSession()}
-                  className="lp-button w-full mt-4"
-                >
-                  Start a practice session
-                </button>
-              )}
+              <PrimaryActionButton
+                label={dueCount > 0 ? `Start today's ${Math.min(dueCount, MARK_BANK_SESSION_SIZE)}` : 'Start a practice session'}
+                onClick={() => startSession()}
+                className={`w-full ${wide ? '' : 'max-w-80'} mt-3.5`}
+              />
 
               {cards.length > 0 && (
                 <p style={{ margin: '20px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: LABEL }}>

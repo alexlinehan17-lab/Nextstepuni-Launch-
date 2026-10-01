@@ -550,11 +550,11 @@ describe('the question comes first and stays', () => {
     fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
     expect(screen.getByRole('heading', { name: /Work with the wording/i })).toBeInTheDocument();
 
-    fireEvent.click(screen.getByRole('button', { name: /^Leave$/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^Leave review$/i }));
     const dialog = screen.getByRole('dialog', { name: /Your completed cards are safe/i });
     expect(screen.queryByRole('heading', { name: /Work with the wording/i })).not.toBeInTheDocument();
     const keepReviewing = screen.getByRole('button', { name: /Keep reviewing/i });
-    const leaveSession = screen.getByRole('button', { name: /Leave session/i });
+    const leaveSession = within(dialog).getByRole('button', { name: /^Leave review$/i });
     expect(keepReviewing).toHaveFocus();
 
     fireEvent.keyDown(dialog, { key: 'Tab', shiftKey: true });
@@ -563,7 +563,7 @@ describe('the question comes first and stays', () => {
     expect(keepReviewing).toHaveFocus();
 
     fireEvent.keyDown(dialog, { key: 'Escape' });
-    await waitFor(() => expect(screen.getByRole('button', { name: /^Leave$/i })).toHaveFocus());
+    await waitFor(() => expect(screen.getByRole('button', { name: /^Leave review$/i })).toHaveFocus());
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
   });
 
@@ -1039,9 +1039,9 @@ describe('grading', () => {
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
     expect(onGrade).toHaveBeenCalledTimes(1);
-    fireEvent.click(screen.getByRole('button', { name: /^Leave$/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^Leave review$/i }));
     expect(screen.getByRole('dialog', { name: /Your completed cards are safe/i })).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: /Leave session/i }));
+    fireEvent.click(within(screen.getByRole('dialog', { name: /Your completed cards are safe/i })).getByRole('button', { name: /^Leave review$/i }));
     expect(onExit).toHaveBeenCalled();
   });
 });

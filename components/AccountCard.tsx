@@ -105,12 +105,6 @@ export default function AccountCard({
     if (cue === 'off') return;
     play(cue === 'save' || cue === 'swipe' || cue === 'skip' ? cue : 'tap');
   };
-  useEffect(() => {
-    if (!pickerOpen) return;
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = previousOverflow; };
-  }, [pickerOpen]);
   const picker = useRef<HTMLDivElement>(null);
   useModal(pickerOpen, () => setPickerOpen(false), picker);
   return (

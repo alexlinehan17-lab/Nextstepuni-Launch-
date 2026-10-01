@@ -225,7 +225,7 @@ const CutContentPage: React.FC<CutContentPageProps> = ({ onBack }) => {
               onClick={onBack}
               className="p-2.5 rounded-xl transition-colors hover:bg-white print:hidden shrink-0"
               style={{ border: '1px solid rgba(0,0,0,0.08)', backgroundColor: 'white' }}
-              aria-label="Back"
+              aria-label="Back to home"
             >
               <ArrowLeft size={18} style={{ color: INK }} />
             </button>

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
@@ -30,7 +30,8 @@ interface StudyJournalModalProps {
 }
 
 const StudyJournalModal: React.FC<StudyJournalModalProps> = ({ isOpen, onClose, reflections }) => {
-  useModal(isOpen, onClose);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  useModal(isOpen, onClose, dialogRef);
   const [subjectFilter, setSubjectFilter] = useState<string | null>(null);
 
   const subjects = useMemo(() => {
@@ -75,6 +76,11 @@ const StudyJournalModal: React.FC<StudyJournalModalProps> = ({ isOpen, onClose, 
           onClick={onClose}
         >
           <MotionDiv
+          ref={dialogRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Study Journal"
+          tabIndex={-1}
             initial={{ scale: 0.96, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.96, opacity: 0 }}
