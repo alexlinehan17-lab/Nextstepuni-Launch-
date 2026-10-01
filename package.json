@@ -58,6 +58,9 @@
     "ts-fsrs": "^5.4.1"
   },
   "overrides": {
+    "get-uri": {
+      "basic-ftp": "6.2.1"
+    },
     "firebase-tools": {
       "@google-cloud/pubsub": "6.0.1"
     },
@@ -67,8 +70,7 @@
     "dompurify": "3.4.16",
     "protobufjs": "7.6.5",
     "websocket-driver": "0.7.5",
-    "@grpc/grpc-js": "1.14.5",
-    "basic-ftp": "6.2.1"
+    "@grpc/grpc-js": "1.14.5"
   },
   "devDependencies": {
     "@capacitor/cli": "8.4.2",
