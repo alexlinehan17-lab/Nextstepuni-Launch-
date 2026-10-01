@@ -194,3 +194,5 @@
 .ss-navigation button.product-back-button { min-width: 44px; min-height: 44px; padding: 10px; border: 1.5px solid var(--ss-ink); border-radius: 12px; background: var(--ss-paper); color: var(--ss-ink); }
 .ss-navigation button.product-back-button:hover { color: var(--ss-ink); }
 .ss-navigation button.product-back-button:focus-visible { outline-color: var(--ss-ink); }
+.ss-navigation button.ss-reflections-button { padding: 8px 13px; border: 1px solid var(--ss-rule); border-radius: 12px; background: var(--ss-paper); color: var(--ss-ink); }
+.ss-navigation button.ss-reflections-button:hover { border-color: var(--ss-ink); color: var(--ss-ink); }

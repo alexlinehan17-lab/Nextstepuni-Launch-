@@ -1,0 +1,81 @@
+.signature-card-overlay { position: fixed; inset: 0; z-index: 200; padding: 16px; background: #1a1a1a8c; display: flex; align-items: center; justify-content: center; }
+.signature-card { --sc-paper: #fff; --sc-ink: #1a1a1a; --sc-muted: #6f6861; --sc-line: #ddd8d2; --sc-outline: #383838; --sc-accent: #f26b1f; --sc-accent-text: #b54d14; display: flex; flex-direction: column; width: 100%; max-width: 530px; max-height: calc(100dvh - 32px); border: 1.5px solid var(--sc-outline); border-radius: 24px; background: var(--sc-paper); color: var(--sc-ink); box-shadow: 5px 5px 0 var(--sc-outline); font-family: 'DM Sans', sans-serif; }
+.dark .signature-card { --sc-paper: #191919; --sc-ink: #f4f2ef; --sc-muted: #beb9b3; --sc-line: #55514c; --sc-outline: #a7a39e; --sc-accent-text: #ffac77; }
+.signature-card--wide { max-width: 620px; }
+.signature-card:focus { outline: none; }
+.signature-card .sc-header { display: flex; align-items: flex-start; justify-content: space-between; flex-shrink: 0; gap: 20px; padding: 24px; border-bottom: 1px solid var(--sc-line); }
+.signature-card .sc-header > div { min-width: 0; flex: 1; }
+.signature-card .sc-header h2 { font-family: 'Source Serif 4', serif; font-weight: 600; font-size: 29px; line-height: 1.16; letter-spacing: -.7px; margin: 5px 0 0; }
+.signature-card .sc-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 1.4px; text-transform: uppercase; color: var(--sc-muted); margin: 0; }
+.signature-card .sc-description { font-size: 13px; line-height: 1.5; color: var(--sc-muted); margin: 8px 0 0; }
+.signature-card .sc-close { min-width: 44px; min-height: 44px; display: grid; place-items: center; flex-shrink: 0; border: 1px solid var(--sc-line); border-radius: 12px; background: var(--sc-paper); color: var(--sc-muted); transition: border-color 150ms, color 150ms; }
+.signature-card .sc-close:hover { color: var(--sc-ink); border-color: var(--sc-outline); }
+.signature-card .sc-close:focus-visible { outline: 2px solid var(--sc-ink); outline-offset: 3px; }
+.signature-card .sc-body { padding: 24px; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+.signature-card .sc-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; flex-shrink: 0; gap: 12px; padding: 18px 24px 22px; border-top: 1px solid var(--sc-line); }
+.signature-card .sc-small { font-size: 12px; line-height: 1.5; color: var(--sc-muted); }
+.signature-card .sc-muted { color: var(--sc-muted); }
+.signature-card .sc-note-label { display: block; margin-bottom: 10px; font-size: 14px; font-weight: 500; }
+.signature-card .sc-notes-editor { min-height: 184px; font-size: 16px; line-height: 1.6; resize: vertical; }
+.signature-card .sc-note-status { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
+.signature-card .sc-note-status::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--sc-ink); flex-shrink: 0; }
+.signature-card .sc-progress { display: flex; gap: 6px; margin-top: 16px; }
+.signature-card .sc-progress span { flex: 1; height: 4px; border-radius: 10px; background: var(--sc-line); }
+.signature-card .sc-progress [data-complete=true] { background: var(--sc-ink); }
+.signature-card .sc-welcome-list { display: grid; gap: 13px; margin-top: 23px; }
+.signature-card .sc-welcome-list > div { display: flex; gap: 16px; padding-bottom: 13px; border-bottom: 1px solid var(--sc-line); }
+.signature-card .sc-welcome-list span { color: var(--sc-accent-text); font-size: 12px; }
+.signature-card .sc-subject-group + .sc-subject-group { margin-top: 22px; }
+.signature-card .sc-subject-group > p { margin-bottom: 10px; }
+.signature-card .sc-subject-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+.signature-card .sc-subject { display: flex; align-items: center; gap: 10px; min-height: 64px; padding: 10px 12px; border: 1.5px solid var(--sc-line); border-radius: 12px; color: var(--sc-ink); background: var(--sc-paper); text-align: left; font-size: 14px; font-weight: 500; }
+.signature-card .sc-subject .subject-avatar { width: 38px; height: 38px; flex-shrink: 0; }
+.signature-card .sc-subject > span:nth-last-child(2) { min-width: 0; flex: 1; }
+.signature-card .sc-subject small { color: var(--sc-muted); font-size: 11px; font-weight: 400; }
+.signature-card .sc-subject[aria-pressed=true] { border-color: var(--sc-accent); }
+.signature-card .sc-subject[aria-pressed=true] small { color: var(--sc-accent-text); }
+.signature-card .sc-subject:hover { border-color: var(--sc-outline); }
+.signature-card :is(.sc-subject,.sc-grade,.sc-level,.sc-rest-day,.sc-filter):focus-visible { outline: 2px solid var(--sc-ink); outline-offset: 3px; }
+.signature-card .sc-grade-card { border: 1.5px solid var(--sc-outline); border-radius: 14px; padding: 16px; }
+.signature-card .sc-grade-card + .sc-grade-card { margin-top: 15px; }
+.signature-card .sc-grade-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
+.signature-card .sc-grade-header h3 { font-size: 16px; font-weight: 600; }
+.signature-card .sc-levels { display: flex; gap: 5px; }
+.signature-card .sc-level { min-height: 44px; border: 1px solid var(--sc-line); border-radius: 8px; padding: 7px 10px; background: var(--sc-paper); color: var(--sc-muted); font-size: 12px; }
+.signature-card .sc-level[aria-pressed=true] { border-color: var(--sc-ink); color: var(--sc-paper); background: var(--sc-ink); }
+.signature-card .sc-grade-label { display: block; margin: 14px 0 8px; font-size: 12px; color: var(--sc-muted); }
+.signature-card .sc-target-label { color: var(--sc-accent-text); }
+.signature-card .sc-grade-options { display: grid; grid-template-columns: repeat(8,minmax(0,1fr)); gap: 6px; }
+.signature-card .sc-grade { min-height: 44px; padding: 5px 0; border: 1px solid var(--sc-line); border-radius: 8px; background: var(--sc-paper); color: var(--sc-muted); font-size: 12px; }
+.signature-card .sc-grade[aria-pressed=true] { background: var(--sc-ink); border-color: var(--sc-ink); color: var(--sc-paper); }
+.signature-card .sc-grade--target[aria-pressed=true] { background: var(--sc-accent); border-color: var(--sc-accent); color: #1a1a1a; }
+.signature-card .sc-grade:disabled { opacity: .35; cursor: not-allowed; }
+.signature-card .sc-grade-result { display: flex; gap: 15px; justify-content: space-between; margin-top: 15px; font-size: 12px; color: var(--sc-muted); }
+.signature-card .sc-date-label { display: block; margin: 20px 0 10px; font-size: 14px; font-weight: 500; }
+.signature-card .sc-date { min-width: 0; font-size: 18px; }
+.signature-card .sc-countdown { display: flex; align-items: baseline; gap: 12px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--sc-line); }
+.signature-card .sc-countdown strong { font: 600 32px/1 'Source Serif 4', serif; }
+.signature-card .sc-rest-days { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 7px; margin: 23px 0 17px; }
+.signature-card .sc-rest-day { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; min-height: 72px; padding: 10px 0; border: 1.5px solid var(--sc-line); border-radius: 12px; background: var(--sc-paper); color: var(--sc-ink); font-size: 12px; }
+.signature-card .sc-rest-day[aria-pressed=true] { background: var(--sc-ink); color: var(--sc-paper); border-color: var(--sc-ink); }
+.signature-card .sc-review-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; padding: 16px 0; border-bottom: 1px solid var(--sc-line); }
+.signature-card .sc-review-row:first-child { padding-top: 0; }
+.signature-card .sc-review-row strong { font-size: 14px; font-weight: 500; }
+.signature-card .sc-review-row small { display: block; }
+.signature-card .sc-points-gain { display: flex; justify-content: space-between; gap: 15px; align-items: center; margin: 21px 0; }
+.signature-card .sc-points-gain strong { font: 600 29px/1 'Source Serif 4', serif; }
+.signature-card .sc-journal-empty { padding: 9px 0 13px; }
+.signature-card .sc-journal-empty .sc-eyebrow { margin-bottom: 16px; }
+.signature-card .sc-journal-empty h3 { font: 600 23px/1.2 'Source Serif 4', serif; margin-bottom: 12px; }
+.signature-card .sc-journal-empty > p:last-child { max-width: 370px; font-size: 14px; line-height: 1.6; color: var(--sc-muted); }
+.signature-card .sc-filters { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 21px; }
+.signature-card .sc-filter { min-height: 44px; border: 1px solid var(--sc-line); border-radius: 9px; background: var(--sc-paper); color: var(--sc-muted); padding: 6px 12px; font-size: 12px; }
+.signature-card .sc-filter[aria-pressed=true] { background: var(--sc-ink); color: var(--sc-paper); border-color: var(--sc-ink); }
+.signature-card .sc-journal-group + .sc-journal-group { margin-top: 22px; }
+.signature-card .sc-journal-group > .sc-eyebrow { margin-bottom: 10px; }
+.signature-card .sc-journal-entry { border-top: 1px solid var(--sc-line); padding: 17px 0; }
+.signature-card .sc-journal-entry header { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.signature-card .sc-journal-entry h3 { font-size: 15px; font-weight: 600; }
+.signature-card .sc-journal-entry > p { color: var(--sc-muted); font-size: 14px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+@media(max-width:580px) { .signature-card .sc-header,.signature-card .sc-body { padding: 20px; } .signature-card .sc-header { gap: 12px; } .signature-card .sc-footer { padding: 15px 20px 20px; } .signature-card .sc-header h2 { font-size: 26px; } .signature-card .sc-subject-grid { grid-template-columns: minmax(0,1fr); } .signature-card .sc-grade-options { grid-template-columns: repeat(4,minmax(0,1fr)); } .signature-card .sc-rest-days { grid-template-columns: repeat(4,minmax(0,1fr)); } .signature-card .sc-footer .product-action { max-width: 100%; } }
+@media(prefers-reduced-motion:reduce) { .signature-card .sc-close { transition: none; } }

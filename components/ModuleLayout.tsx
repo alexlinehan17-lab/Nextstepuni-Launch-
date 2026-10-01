@@ -17,6 +17,7 @@ import ModuleCompleteScreen from './ModuleCompleteScreen';
 import { useNavigation } from '../contexts/NavigationContext';
 import BackButton from './ui/BackButton';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import { ReaderNotes } from './learning/ReaderNotes';
 
 const CONFETTI_COLORS = ['#CC785C', '#f59e0b', '#3b82f6', '#10b981', '#8b5cf6', '#ef4444', '#ec4899'];
 const CONFETTI_COUNT = 60;
@@ -94,6 +95,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   const [desktopSidebarOpen, setDesktopSidebarOpen] = useState(true);
   const [mobileSectionsOpen, setMobileSectionsOpen] = useState(false);
   const [referencesOpen, setReferencesOpen] = useState(false);
+  const [notesOpen, setNotesOpen] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [showCelebration, setShowCelebration] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
@@ -281,6 +283,10 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
           <p className="text-[11px] font-semibold text-zinc-900 dark:text-white uppercase tracking-widest text-center">Progress</p>
         </div>
 
+        <button type="button" onClick={() => setNotesOpen(true)} className="w-full mt-4 flex items-center justify-center gap-2 p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors text-zinc-500 dark:text-zinc-400">
+          <BookOpen size={14} aria-hidden="true" /><span className="text-[10px] font-semibold uppercase tracking-widest">Notes</span>
+        </button>
+
         {/* References (verified peer-reviewed sources) */}
         {references && references.length > 0 && (
           <button onClick={() => setReferencesOpen(true)} className="w-full mt-4 flex items-center justify-center gap-2 p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors text-zinc-500 dark:text-zinc-400">
@@ -345,6 +351,9 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
           <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.15em] leading-none`} style={{ color: 'var(--accent-hex)' }}>Module {displayedModuleNumber}</p>
           <h1 className="text-sm font-semibold text-zinc-900 dark:text-white truncate">{moduleTitle}</h1>
         </div>
+        <button type="button" onClick={() => setNotesOpen(true)} aria-label="Open module notes" className="min-h-11 min-w-11 flex items-center justify-center rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0">
+          <BookOpen size={16} className="text-zinc-700 dark:text-zinc-300" aria-hidden="true" />
+        </button>
         <button onClick={() => setMobileSectionsOpen(true)} aria-label="Open module sections" aria-expanded={mobileSectionsOpen} className={`${mobileAppDesign ? 'min-h-11 min-w-11 ' : ''}p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]`}>
           <List size={16} className="text-zinc-700 dark:text-zinc-300" />
         </button>
@@ -453,6 +462,8 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
           </AnimatePresence>
         </div>
       </main>
+
+      {notesOpen && <ReaderNotes moduleId={navigation.state?.currentModuleId ?? moduleTitle} title={moduleTitle} open={notesOpen} onClose={() => setNotesOpen(false)} />}
 
       {references && references.length > 0 && (
         <ReferencesModal open={referencesOpen} onClose={() => setReferencesOpen(false)} references={references} />
