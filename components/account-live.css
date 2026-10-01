@@ -983,6 +983,7 @@
 .auth-live-heading :is(h1,h2){font-weight:500;text-wrap:balance}
 .auth-live-carry{margin-top:-7px;margin-bottom:24px;padding-bottom:18px}
 .auth-live-carry>.auth-live-carry-initial{flex:0 0 30px;height:30px;display:grid;place-items:center;border:1px solid var(--al-line);border-radius:9px;background:var(--al-soft);font-size:13px}
+.auth-live-carry>.account-school-crest{flex:0 0 30px;width:30px;height:30px}
 .auth-live-carry>span:nth-child(2){min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .auth-live-carry small{display:inline;margin-left:8px}
 .auth-live-carry>svg{color:var(--al-muted);flex-shrink:0}

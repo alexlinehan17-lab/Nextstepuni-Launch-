@@ -26,8 +26,8 @@ import {
   endRegistrationProvisioning,
   stashRegistrationError,
   takeRegistrationError,
-  type RegistrationErrorCode,
 } from '../utils/registrationProvisioning';
+import { getRegistrationErrorCode, registrationErrorField, registrationErrorMessage } from '../utils/registrationErrors';
 import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
@@ -38,6 +38,7 @@ import { useModal } from '../hooks/useModal';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import AccountCard from './AccountCard';
 import AccountSchoolPicker from './AccountSchoolPicker';
+import SchoolCrest from './SchoolCrest';
 import AccountCrewPicker from './AccountCrewPicker';
 import { Checkbox } from './account-ui-runtime';
 
@@ -121,24 +122,6 @@ const AppleIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
     <path d="M14.07 11.17c-.02-2.18 1.78-3.23 1.86-3.28-1.01-1.48-2.59-1.69-3.15-1.71-1.34-.14-2.61.79-3.29.79-.68 0-1.72-.77-2.83-.75-1.46.02-2.8.85-3.55 2.16-1.51 2.62-.39 6.5 1.09 8.62.72 1.04 1.58 2.21 2.71 2.17 1.09-.04 1.5-.7 2.82-.7 1.31 0 1.69.7 2.83.68 1.17-.02 1.91-1.06 2.62-2.1.83-1.21 1.17-2.38 1.19-2.44-.03-.01-2.28-.88-2.3-3.47zM11.9 4.56c.6-.73 1.01-1.74.9-2.75-.87.04-1.92.58-2.54 1.3-.55.64-1.04 1.67-.91 2.66.97.08 1.96-.49 2.55-1.21z" fill="#FFFFFF" />
   </svg>
 );
-
-/**
- * Copy for a registration failure, resolved at render rather than persisted.
- * Keeping the mapping here means the only thing that crosses the remount is a
- * code, so no rendered string — including one built from MIN_PASSWORD_LENGTH —
- * is ever written to storage.
- */
-function registrationErrorMessage(code: RegistrationErrorCode): string {
-  switch (code) {
-    case 'weak-password': return `Password must be at least ${MIN_PASSWORD_LENGTH} characters.`;
-    case 'email-in-use': return 'An account with this email already exists. Try signing in instead.';
-    case 'invalid-email': return 'Please enter a valid email address.';
-    case 'bad-join-code': return 'That school join code is not correct. Check the code from your school.';
-    case 'school-unconfigured': return 'Your school has not set up a join code yet. Ask your guidance counsellor for the current code.';
-    case 'too-many-attempts': return 'Too many attempts. Please wait a few minutes and try again.';
-    default: return 'Registration failed. Try again.';
-  }
-}
 
 interface LoginPageProps {
   handleLoginSuccess: (u: SessionUser, options?: LoginSuccessOptions) => void;
@@ -734,30 +717,19 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           await signOut(auth).catch(() => {});
         }
       }
-      const msg = String(err?.message || '');
       // If the account was reaped, this component is already unmounted and
-      // setError paints nothing -- so stash the message too. Whichever
-      // instance is alive shows it; takeRegistrationError clears it either way.
-      const report = (code: RegistrationErrorCode, step?: 1 | 2 | 3) => {
-        stashRegistrationError(code);
-        setError(registrationErrorMessage(code));
-        if (step) setRegisterStep(step);
-      };
-      if (err.code === 'auth/weak-password') {
-        report('weak-password', 3);
-      } else if (err.code === 'auth/email-already-in-use') {
-        report('email-in-use', 1);
-      } else if (err.code === 'auth/invalid-email') {
-        report('invalid-email', 1);
-      } else if (/join code is not correct/i.test(msg)) {
-        report('bad-join-code', 2);
-      } else if (/not been set up for this school/i.test(msg)) {
-        // The unprovisioned-school case: nothing the student can fix by retyping.
-        report('school-unconfigured', 2);
-      } else if (/Too many attempts/i.test(msg)) {
-        report('too-many-attempts', 2);
+      // setError paints nothing -- so pass only the reason code to the next
+      // instance. The rendered copy and any credentials stay out of storage.
+      const code = getRegistrationErrorCode(err);
+      const message = registrationErrorMessage(code);
+      const field = registrationErrorField(code);
+      stashRegistrationError(code);
+      if (field) {
+        setRegisterStep(field.step);
+        setFieldErrors({ [field.id]: message });
+        setError('');
       } else {
-        report('generic');
+        setError(message);
       }
     } finally {
       // Always release the hold: on success, on a handled failure, and on the
@@ -824,7 +796,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     if (registerStep > 1) setRegisterStep((step) => step - 1);
     else navigate('welcome');
   };
-  const schoolName = SCHOOLS.find((item) => item.id === school)?.name || '';
+  const selectedSchool = SCHOOLS.find((item) => item.id === school);
+  const schoolName = selectedSchool?.name || '';
   const errorMessage = error && (
     <p className="auth-live-error" role="alert" aria-live="assertive">
       {error}
@@ -932,8 +905,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     </div>
   );
   const focusHeading = (definition: string) => {
-    if (definition === 'center')
-      characterHeadingRef.current?.focus({ preventScroll: true });
+    if (definition === 'center') {
+      const invalidField = document.getElementById(Object.keys(fieldErrors)[0] || '');
+      (invalidField || characterHeadingRef.current)?.focus({ preventScroll: true });
+    }
   };
   const stepTitles = [
     'Let’s start with you.',
@@ -1057,7 +1032,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 <p>{stepDescriptions[registerStep - 1]}</p>
               </div>
               {registerStep > 1 && <div className="auth-live-carry">
-                <span className="auth-live-carry-initial" aria-hidden="true">{name.trim().slice(0, 1).toUpperCase()}</span>
+                {selectedSchool ? <SchoolCrest school={selectedSchool.id} /> :
+                  <span className="auth-live-carry-initial" aria-hidden="true">{name.trim().slice(0, 1).toUpperCase()}</span>}
                 <span>{name}{registerStep > 2 && schoolName && <small>{schoolName}</small>}</span>
                 <Check size={16} aria-hidden="true" />
               </div>}
