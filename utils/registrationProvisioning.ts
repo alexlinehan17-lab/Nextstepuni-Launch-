@@ -168,13 +168,22 @@ export type RegistrationErrorCode =
   | 'email-in-use'
   | 'invalid-email'
   | 'bad-join-code'
+  | 'invalid-school'
   | 'school-unconfigured'
   | 'too-many-attempts'
+  | 'network-error'
+  | 'timeout'
+  | 'service-unavailable'
+  | 'session-unverified'
+  | 'signup-unavailable'
+  | 'access-denied'
   | 'generic';
 
 const CODES: readonly RegistrationErrorCode[] = [
   'weak-password', 'email-in-use', 'invalid-email',
-  'bad-join-code', 'school-unconfigured', 'too-many-attempts', 'generic',
+  'bad-join-code', 'invalid-school', 'school-unconfigured', 'too-many-attempts',
+  'network-error', 'timeout', 'service-unavailable', 'session-unverified',
+  'signup-unavailable', 'access-denied', 'generic',
 ];
 
 /**
