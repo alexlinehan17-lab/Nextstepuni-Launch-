@@ -31,8 +31,8 @@ describe('onboarding loading handoff', () => {
     const router = readSource('components/AppRouter.tsx');
 
     expect(router).toContain('const ACCOUNT_SETUP_LOADING = (');
-    expect(router).toContain('<LoadingSpinner overlay kicker="One moment" label="Setting up your account" />');
-    expect(router).toContain('return needsOnboarding ? ACCOUNT_SETUP_LOADING : <LoadingSpinner />;');
+    expect(router).toContain('<LoadingSpinner overlay label="Setting up your account" />');
+    expect(router).toContain('return needsOnboarding ? ACCOUNT_SETUP_LOADING : <LoadingSpinner selection="random" label="Opening your space" />;');
     expect(router).toContain('<Suspense fallback={ACCOUNT_SETUP_LOADING}>');
   });
 

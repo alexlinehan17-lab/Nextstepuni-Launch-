@@ -24,11 +24,6 @@
 .account-entry .account-view p>button{min-height:44px;min-width:44px}
 .account-entry[data-view=welcome],.account-entry[data-view=welcome] .account-card{background:#f26b1f}
 .account-entry .account-reset-art{display:block;width:130px;height:110px;object-fit:contain;margin:16px 0}
-.account-launch{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:24px;background:#f26b1f;color:#1a1a1a;text-align:center}
-.account-launch img{display:block;object-fit:contain;margin:auto;max-width:100%;animation:account-arrive .9s cubic-bezier(.2,.7,.2,1)}
-.account-launch span{font:800 24px/1.4 'DM Sans',sans-serif;letter-spacing:-.6px}
-.account-launch p{font:400 13px/1.5 'DM Sans',sans-serif;margin-top:16px;color:#482c1e}
-@keyframes account-arrive{0%{transform:translateY(7px) rotate(-1deg);opacity:.7}50%{transform:translateY(-6px) rotate(.5deg)}100%{transform:none;opacity:1}}
 @media(min-width:768px){.account-entry .account-form{padding:40px}.account-entry[data-view=welcome]{background:#f4f2ed}.account-entry[data-view=welcome] .account-card{background:#fff}.account-entry .account-welcome{min-height:0}}
 @media(max-width:360px){.account-entry .account-form{padding-inline:18px}.account-entry .account-welcome-art{height:190px}}
-@media(prefers-reduced-motion:reduce){.account-launch img{animation:none}.account-entry *{scroll-behavior:auto!important}}
+@media(prefers-reduced-motion:reduce){.account-entry *{scroll-behavior:auto!important}}

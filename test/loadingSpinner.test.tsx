@@ -1,75 +1,78 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- *
- * The loading state is the screen a brand-new student stares at for the whole
- * of account provisioning, so its easy-to-break properties are pinned here:
- * the copy is caller-supplied (the default is a RETURNING-user message and is
- * wrong during signup), the visual remains decorative, and every instance is
- * portaled to the viewport so transformed route layouts cannot shift its centre.
- */
-import { render, screen } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
-
+import { fireEvent, render, screen } from '@testing-library/react';
+import { describe, expect, it, vi } from 'vitest';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
+import { LoadingCrewProvider } from '@/contexts/LoadingCrewContext';
+
+const character = () => screen.getByRole('status').getAttribute('data-loading-crew');
 
 describe('LoadingSpinner', () => {
-  it('defaults to the returning-user copy', () => {
-    render(<LoadingSpinner />);
-    expect(screen.getByText('Loading your workspace')).toBeTruthy();
-    expect(screen.getByText('Opening')).toBeTruthy();
-  });
-
-  it('lets the signup path replace copy that would be wrong for a new account', () => {
-    render(<LoadingSpinner kicker="One moment" label="Setting up your account" />);
-    expect(screen.getByText('Setting up your account')).toBeTruthy();
-    expect(screen.queryByText('Loading your workspace')).toBeNull();
-  });
-
-  it('announces itself once, and does not narrate the animation', () => {
-    const { baseElement } = render(<LoadingSpinner label="Setting up your account" />);
-    const status = screen.getByRole('status');
-    expect(status.getAttribute('aria-live')).toBe('polite');
-    // The miniature dashboard is decoration; the copy already carries the state.
-    expect(baseElement.querySelector('.nsu-dashboard-assembly')?.getAttribute('aria-hidden')).toBe('true');
+  it('announces the destination without narrating decorative artwork or fake progress', () => {
+    const { rerender, baseElement } = render(<LoadingSpinner />);
+    expect(screen.getByRole('status')).toHaveTextContent('Opening your space');
+    rerender(<LoadingSpinner overlay label="Setting up your account" />);
+    expect(screen.getByRole('status')).toHaveTextContent('Setting up your account');
+    expect(screen.getByRole('status')).toHaveAttribute('aria-live', 'polite');
+    expect(screen.getByRole('status')).toHaveAttribute('aria-atomic', 'true');
+    expect(baseElement.querySelector('.crew-loading-figure')).toHaveAttribute('aria-hidden', 'true');
     expect(screen.queryByRole('progressbar')).toBeNull();
+    expect(baseElement.querySelector('img[src*="star-person"]')).toBeNull();
   });
 
-  it('assembles the three product-specific dashboard cards', () => {
-    const { baseElement } = render(<LoadingSpinner />);
-    const cards = Array.from(baseElement.querySelectorAll('[data-loader-card]'));
-    expect(cards.map(card => card.getAttribute('data-loader-card'))).toEqual([
-      'course',
-      'calendar',
-      'progress',
-    ]);
-  });
-
-  it('centres every variant against the dynamic viewport', () => {
-    const { rerender } = render(<LoadingSpinner />);
+  it('escapes transformed route containers and can cover account chrome', () => {
+    const { rerender } = render(<div data-testid="route" style={{ transform: 'translateY(80px)' }}><LoadingSpinner /></div>);
     const status = screen.getByRole('status');
-    expect(status.className).toContain('fixed');
-    expect(status.className).toContain('inset-0');
+    expect(screen.getByTestId('route').contains(status)).toBe(false);
+    expect(status.parentElement).toBe(document.body);
+    expect(status).toHaveAttribute('data-loader-placement', 'viewport');
     expect(status.className).toContain('min-h-[100dvh]');
-    expect(status.className).toContain('items-center');
-    expect(status.className).toContain('justify-center');
     expect(status.className).toContain('z-[80]');
-
     rerender(<LoadingSpinner overlay />);
     expect(screen.getByRole('status').className).toContain('z-[200]');
   });
 
-  it('escapes transformed route containers before positioning', () => {
-    render(
-      <div data-testid="transformed-route" style={{ transform: 'translateY(80px)' }}>
-        <LoadingSpinner />
-      </div>,
-    );
+  it('keeps an existing tool header and back control available for panel waits', () => {
+    render(<section data-testid="tool"><button>Back to Launchpad</button><LoadingSpinner variant="compact" placement="panel" label="Opening your planner" /></section>);
+    expect(screen.getByTestId('tool').contains(screen.getByRole('status'))).toBe(true);
+    expect(screen.getByRole('status')).toHaveAttribute('data-loader-placement', 'panel');
+    expect(screen.getByRole('button', { name: 'Back to Launchpad' })).toBeEnabled();
+  });
 
-    const route = screen.getByTestId('transformed-route');
-    const status = screen.getByRole('status');
-    expect(route.contains(status)).toBe(false);
-    expect(status.parentElement).toBe(document.body);
-    expect(status.getAttribute('data-loader-placement')).toBe('viewport');
+  it('keeps the random character through rerenders and nested fallback remounts', () => {
+    const { rerender } = render(<LoadingCrewProvider transitionKey="student:planner"><LoadingSpinner key="outer" selection="random" /></LoadingCrewProvider>);
+    const first = character();
+    rerender(<LoadingCrewProvider transitionKey="student:planner"><LoadingSpinner key="inner" selection="random" placement="panel" label="Opening your planner" /></LoadingCrewProvider>);
+    expect(character()).toBe(first);
+    rerender(<LoadingCrewProvider transitionKey="student:planner"><LoadingSpinner key="inner" selection="random" label="Opening your planner" /></LoadingCrewProvider>);
+    expect(character()).toBe(first);
+  });
+
+  it('honours the selected crew but never carries Hugger into another account', () => {
+    const { rerender } = render(<LoadingCrewProvider transitionKey="alice:module" avatar="star-crew:hugger"><LoadingSpinner /></LoadingCrewProvider>);
+    expect(character()).toBe('star-crew:hugger');
+    rerender(<LoadingCrewProvider transitionKey="bob:module" avatar="Charlie"><LoadingSpinner /></LoadingCrewProvider>);
+    expect(character()).not.toBe('star-crew:hugger');
+    expect(character()).toMatch(/^star-crew:/);
+  });
+
+  it('draws afresh on navigation, without remounting the route subtree', () => {
+    const random = vi.spyOn(Math, 'random').mockReturnValue(0);
+    try {
+      const { rerender } = render(<LoadingCrewProvider transitionKey="a"><input defaultValue="kept" /><LoadingSpinner selection="random" /></LoadingCrewProvider>);
+      const input = screen.getByRole('textbox');
+      expect(character()).toBe('star-crew:beanie');
+      random.mockReturnValue(.99);
+      rerender(<LoadingCrewProvider transitionKey="b"><input defaultValue="kept" /><LoadingSpinner selection="random" /></LoadingCrewProvider>);
+      expect(character()).toBe('star-crew:musician');
+      expect(screen.getByRole('textbox')).toBe(input);
+    } finally { random.mockRestore(); }
+  });
+
+  it('handles failed artwork with one safe crew fallback and readable status', () => {
+    render(<LoadingCrewProvider transitionKey="a" avatar="star-crew:hugger"><LoadingSpinner /></LoadingCrewProvider>);
+    fireEvent.error(document.querySelector('.crew-loading img')!);
+    expect(document.querySelector('.crew-loading img')).toHaveAttribute('src', '/assets/star-crew/personal/05-skater.png');
+    fireEvent.error(document.querySelector('.crew-loading img')!);
+    expect(document.querySelector('.crew-loading img')).toBeNull();
+    expect(screen.getByRole('status')).toHaveTextContent('Opening your space');
   });
 });

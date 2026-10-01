@@ -77,6 +77,7 @@ vi.mock('@/contexts/ProgressContext', () => ({
   useProgress: () => ({ updateDemoProgress: vi.fn(), setTimetableCompletions: vi.fn(), progressLoaded: true, progressDataUid: authState.user?.uid ?? null }),
 }));
 vi.mock('@/utils/registrationProvisioning', () => ({
+  getRegistrationLoadingAvatar: () => undefined,
   isRegistrationProvisioning: () => false,
   registrationHoldRemainingMs: () => 0,
   subscribeToRegistrationProvisioning: () => () => {},

@@ -36,7 +36,7 @@ const ModalHarness: React.FC = () => {
 describe('app audit regressions', () => {
   test('shows an accessible loading state instead of a blank route', () => {
     render(<LoadingSpinner />);
-    expect(screen.getByRole('status')).toHaveTextContent('Loading your workspace');
+    expect(screen.getByRole('status')).toHaveTextContent('Opening your space');
   });
 
   test('moves focus into a modal, closes on Escape, and restores the trigger', async () => {
