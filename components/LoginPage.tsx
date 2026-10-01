@@ -5,8 +5,8 @@
 
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { AnimatePresence, useReducedMotion } from 'framer-motion';
-import { MotionButton, MotionDiv, MotionP } from './Motion';
-import { ArrowLeft, Eye, EyeOff, School, GraduationCap, ArrowRight, Check, KeyRound, BarChart3, ChevronRight, ExternalLink, ArrowUpRight } from 'lucide-react';
+import { MotionButton, MotionDiv } from './Motion';
+import { ArrowLeft, Eye, EyeOff, GraduationCap, ArrowRight, Check, LockKeyhole, UserRound, BarChart3, ExternalLink, X } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
@@ -35,11 +35,8 @@ import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from
 import Avatar from './Avatar';
 import { getAvatarName } from '../data/personalStarCrew';
 import { useModal } from '../hooks/useModal';
-import './account-entry.css';
-import './auth-paper.css';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
-import { WelcomeCharacter } from './WelcomeCharacter';
-import AccountCard, { AuthWordmark } from './AccountCard';
+import AccountCard from './AccountCard';
 
 /**
  * Did this visit start at the landing page? Read once, at module load, because
@@ -77,11 +74,6 @@ const SHOW_APPLE_SIGN_IN = Capacitor.getPlatform() === 'ios';
 // random nonce, then hand Firebase the *raw* nonce so it can verify the hash in
 // the returned identity token.
 
-// ── Shared animation tokens ──
-const SPRING_FAST = { type: 'spring' as const, stiffness: 500, damping: 28 };
-const SPRING_GENTLE = { type: 'spring' as const, stiffness: 340, damping: 30 };
-const SPRING_POP = { type: 'spring' as const, stiffness: 420, damping: 18 };
-
 // Slide-and-fade for view/step transitions. Direction-aware:
 // `custom={1}` slides forward (new view enters from right),
 // `custom={-1}` slides back (new view enters from left). Pure
@@ -105,13 +97,6 @@ const VIEW_DEPTH: Record<string, number> = {
   register: 1,
   gc: 1,
   forgot: 2,
-};
-
-const errorAnim = {
-  initial: { opacity: 0, y: -6, scale: 0.96 },
-  animate: { opacity: 1, y: 0, scale: 1 },
-  exit: { opacity: 0, y: -4, scale: 0.96 },
-  transition: SPRING_FAST,
 };
 
 const btnHover = { scale: 1.02, y: -1 };
@@ -219,7 +204,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     prewarmedRef.current = true;
     httpsCallable(getFunctions(app), 'claimStudentSchool')({}).catch(() => {});
   }, [view]);
-  const [registerStep, setRegisterStep] = useState(1); // 1: email+name+school, 2: password, 3: avatar
+  const [registerStep, setRegisterStep] = useState(1); // 1: details, 2: school, 3: password, 4: character + consent
 
   // ── Form state ──
   const [email, setEmail] = useState('');
@@ -288,8 +273,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     // the previous screen instead of the new screen's header.
     const settledReset = window.setTimeout(() => {
       resetAuthScroll();
-      // Registration's Back control lives in the shared card header.
-      const scrollTarget = view === 'register' ? authViewRef.current?.closest('.auth-paper') : authViewRef.current;
+      // Keep the form and its controls in view after changing steps.
+      const scrollTarget = view === 'register' ? authViewRef.current?.closest('.auth-live-card') : authViewRef.current;
       if (typeof scrollTarget?.scrollIntoView === 'function') {
         scrollTarget.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'auto' });
       }
@@ -304,18 +289,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     return () => clearTimeout(t);
   }, [resendCountdown]);
 
-  // Random default avatar for step 3
+  // Fallback for existing accounts without a saved avatar.
   const defaultAvatar = useMemo(() => AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)], []);
-
-  const resetForm = () => {
-    setEmail(''); setPassword(''); setName(''); setSchool(''); setJoinCode('');
-    setGcSchool(''); setSchoolRole('gc'); setAvatar(''); setError('');
-    setShowPassword(false); setRegisterStep(1); setResetSent(false);
-    setResendCountdown(0); setAgreedToTerms(false);
-  };
 
   // ── Login handler ──
   const handleLogin = async () => {
+    if (isLoading) return;
     if (!email.trim() || !password.trim()) { setError('Please enter your email and password.'); return; }
     setIsLoading(true); setError('');
     const input = email.trim().toLowerCase();
@@ -354,6 +333,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   // ── Google sign-in handler ──
   const handleGoogleSignIn = async () => {
+    if (isLoading) return;
     setIsLoading(true); setError('');
     try {
       const provider = new GoogleAuthProvider();
@@ -380,7 +360,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // valid join code is presented (security review H-2). The client is
         // forbidden from writing `school` by the /users create rule.
         const newName = cred.user.displayName || (cred.user.email?.split('@')[0]) || 'Student';
-        const newAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
+        const newAvatar = avatar || defaultAvatar;
         await writeUserDoc(setDoc(userRef, { name: newName, avatar: newAvatar, createdAt: new Date().toISOString() }), 'LoginPage.googleCreateUserDoc');
         handleLoginSuccess({
           uid: cred.user.uid,
@@ -410,6 +390,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   // ── Sign in with Apple handler (native iOS only) ──
   const handleAppleSignIn = async () => {
+    if (isLoading) return;
     setIsLoading(true); setError('');
     try {
       // Native Apple sign-in via AuthenticationServices (no third-party SDK).
@@ -444,7 +425,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // (same as Google); parental consent is captured at school enrolment
         // (basis = school-enrolment). See compliance/DPIA.md.
         const newName = appleName || cred.user.displayName || 'Student';
-        const newAvatar = AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)];
+        const newAvatar = avatar || defaultAvatar;
         await writeUserDoc(setDoc(userRef, {
           name: newName,
           avatar: newAvatar,
@@ -482,7 +463,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   // ── Forgot password handler ──
   const handleForgotPassword = async () => {
-    if (mobileAppDesign && (isLoading || resendCountdown > 0)) return;
+    if (isLoading || resendCountdown > 0) return;
     if (!email.trim()) { setError('Please enter your email address.'); return; }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
       setError('Please enter a valid email address.');
@@ -502,6 +483,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   // ── School login handler (guidance counsellor or staff room) ──
   const handleGCLogin = async () => {
+    if (isLoading) return;
     if (!gcSchool || !password.trim()) { setError('Please select your school and enter your password.'); return; }
     setIsLoading(true); setError('');
     try {
@@ -532,11 +514,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       const normalised = email.trim().toLowerCase();
       if (isReservedEmail(normalised)) { setError('This email is reserved.'); return false; }
       if (!name.trim()) { setError('Please enter your name.'); return false; }
+      return true;
+    }
+    if (registerStep === 2) {
       if (!school) { setError('Please select your school.'); return false; }
       if (!joinCode.trim()) { setError('Please enter your school join code.'); return false; }
       return true;
     }
-    if (registerStep === 2) {
+    if (registerStep === 3) {
       const passwordError = passwordLengthError(password);
       if (passwordError) { setError(passwordError); return false; }
       return true;
@@ -547,11 +532,13 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const handleRegisterNext = () => {
     setError('');
     if (!validateRegisterStep()) return;
-    if (registerStep < 3) setRegisterStep(s => s + 1);
+    if (registerStep < 4) setRegisterStep(s => s + 1);
   };
 
-  // ── Register submit (step 3) ──
+  // ── Register submit (step 4) ──
   const handleRegisterSubmit = async () => {
+    if (isLoading) return;
+    if (!avatar) { setError('Choose your Star Crew character to continue.'); return; }
     setIsLoading(true); setError('');
     const registrationEmail = email.trim().toLowerCase();
     if (isReservedEmail(registrationEmail)) {
@@ -734,24 +721,24 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // If the account was reaped, this component is already unmounted and
       // setError paints nothing -- so stash the message too. Whichever
       // instance is alive shows it; takeRegistrationError clears it either way.
-      const report = (code: RegistrationErrorCode, step?: 1 | 2) => {
+      const report = (code: RegistrationErrorCode, step?: 1 | 2 | 3) => {
         stashRegistrationError(code);
         setError(registrationErrorMessage(code));
         if (step) setRegisterStep(step);
       };
       if (err.code === 'auth/weak-password') {
-        report('weak-password', 2);
+        report('weak-password', 3);
       } else if (err.code === 'auth/email-already-in-use') {
         report('email-in-use', 1);
       } else if (err.code === 'auth/invalid-email') {
         report('invalid-email', 1);
       } else if (/join code is not correct/i.test(msg)) {
-        report('bad-join-code', 1);
+        report('bad-join-code', 2);
       } else if (/not been set up for this school/i.test(msg)) {
         // The unprovisioned-school case: nothing the student can fix by retyping.
-        report('school-unconfigured', 1);
+        report('school-unconfigured', 2);
       } else if (/Too many attempts/i.test(msg)) {
-        report('too-many-attempts', 1);
+        report('too-many-attempts', 2);
       } else {
         report('generic');
       }
@@ -763,22 +750,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     }
     setIsLoading(false);
   };
-
-  // ── Shared styles ──
-  const shouldAutoFocus = typeof window !== 'undefined'
-    && typeof window.matchMedia === 'function'
-    && window.matchMedia('(min-width: 768px)').matches;
-  // 16px on phones prevents iOS from zooming the whole web view when a field
-  // receives focus; desktop keeps the denser 14px treatment.
-  const inputClass = "min-h-[52px] w-full rounded-xl border-2 border-zinc-200 bg-white px-4 py-3 font-sans text-base text-zinc-800 outline-none transition-all placeholder:text-zinc-400 focus:border-[#F26B1F] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 md:text-sm";
-  // Password inputs need extra right padding so the show/hide eye toggle and
-  // iOS's own AutoFill / Strong-Password key icon don't visually collide
-  // inside the field.
-  const passwordInputClass = `${inputClass} pr-12`;
-  const primaryBtn = "account-primary min-h-[52px] w-full rounded-xl border-2 px-4 py-3 text-[15px] font-bold transition-all disabled:cursor-not-allowed disabled:opacity-50";
-  const primaryBtnStyle = { backgroundColor: 'var(--accent-hex)', color: 'var(--ink-on-accent)', borderColor: '#B94712' };
-  const backButtonClass = "-ml-2 inline-flex min-h-11 items-center gap-1.5 rounded-xl px-2 text-sm font-semibold transition-colors";
-  const passwordToggleClass = "absolute right-1 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-lg transition-colors";
 
   // Localhost Demo Account — a deterministic in-memory student story for
   // viewing dashboards and progress features. It has no Firebase auth token
@@ -824,552 +795,774 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     </div>
   ) : null;
 
-  const selectedAvatar = avatar || defaultAvatar;
-
-  // ═══════════════════════════════════════════════════════════
-  // Single AccountCard with view-level AnimatePresence so navigating
-  // between Welcome / Login / GC / Forgot / Register actually
-  // animates — was an instant render before.
-  // ═══════════════════════════════════════════════════════════
-  return (
+  const navigate = (next: typeof view) => {
+    if (isLoading) return;
+    if (view === 'gc' || next === 'gc') setPassword('');
+    setShowPassword(false);
+    setError('');
+    setView(next);
+  };
+  const registrationBack = () => {
+    setError('');
+    if (registerStep > 1) setRegisterStep((step) => step - 1);
+    else navigate('welcome');
+  };
+  const schoolName = SCHOOLS.find((item) => item.id === school)?.name || '';
+  const errorMessage = error && (
+    <p className="auth-live-error" role="alert" aria-live="assertive">
+      {error}
+    </p>
+  );
+  const providers = (
     <>
-      <AccountCard devButton={devButtons} view={view} registerStep={registerStep} avatar={selectedAvatar} name={name}
-        onRegistrationBack={() => {
-          if (registerStep > 1) { setRegisterStep(s => s - 1); setError(''); }
-          else setView('welcome');
-        }}>
-        <AnimatePresence mode="wait" initial={false} custom={viewDirection}>
+      {(SHOW_GOOGLE_SIGN_IN || SHOW_APPLE_SIGN_IN) && (
+        <div className="auth-live-divider">or</div>
+      )}
+      {SHOW_GOOGLE_SIGN_IN && (
+        <button
+          type="button"
+          onClick={handleGoogleSignIn}
+          disabled={isLoading}
+          className="auth-live-secondary auth-live-provider"
+        >
+          <GoogleIcon />
+          Continue with Google
+        </button>
+      )}
+      {SHOW_APPLE_SIGN_IN && (
+        <button
+          type="button"
+          onClick={handleAppleSignIn}
+          disabled={isLoading}
+          className="auth-live-secondary auth-live-provider auth-live-apple"
+        >
+          <AppleIcon />
+          Continue with Apple
+        </button>
+      )}
+    </>
+  );
+  const passwordField = (id: string, creating = false) => (
+    <div className="auth-live-field">
+      <label htmlFor={id}>Password</label>
+      <div className="auth-live-password">
+        <input
+          id={id}
+          type={showPassword ? 'text' : 'password'}
+          value={password}
+          onChange={(event) => {
+            setPassword(event.target.value);
+            setError('');
+          }}
+          placeholder={creating ? 'Create a password' : 'Your password'}
+          autoComplete={creating ? 'new-password' : 'current-password'}
+          autoCapitalize="off"
+          autoCorrect="off"
+          spellCheck={false}
+          minLength={creating ? MIN_PASSWORD_LENGTH : undefined}
+          maxLength={creating ? MAX_PASSWORD_LENGTH : undefined}
+          aria-describedby={creating ? 'account-password-rule' : undefined}
+        />
+        <button
+          type="button"
+          onClick={() => setShowPassword((value) => !value)}
+          aria-label={showPassword ? 'Hide password' : 'Show password'}
+          aria-pressed={showPassword}
+        >
+          {showPassword ? (
+            <EyeOff size={17} aria-hidden="true" />
+          ) : (
+            <Eye size={17} aria-hidden="true" />
+          )}
+        </button>
+      </div>
+      {creating && (
+        <small
+          id="account-password-rule"
+          className="auth-live-password-rule"
+          data-valid={password.length >= MIN_PASSWORD_LENGTH}
+        >
+          {password.length >= MIN_PASSWORD_LENGTH && (
+            <Check size={13} aria-hidden="true" />
+          )}
+          At least {MIN_PASSWORD_LENGTH} characters. Try a memorable phrase.
+        </small>
+      )}
+    </div>
+  );
+  const emailField = (id: string, signingIn = false) => (
+    <div className="auth-live-field">
+      <label htmlFor={id}>Email</label>
+      <input
+        id={id}
+        type={signingIn ? 'text' : 'email'}
+        inputMode="email"
+        autoComplete={signingIn ? 'username' : 'email'}
+        autoCapitalize="off"
+        autoCorrect="off"
+        spellCheck={false}
+        value={email}
+        placeholder="you@example.com"
+        onChange={(event) => {
+          setEmail(event.target.value);
+          setError('');
+        }}
+      />
+    </div>
+  );
+  const focusHeading = (definition: string) => {
+    if (definition === 'center')
+      characterHeadingRef.current?.focus({ preventScroll: true });
+  };
+  const stepTitles = [
+    'Let’s start with you.',
+    'Find your people.',
+    'Keep it yours.',
+    'Meet your study self.',
+  ];
+  const stepDescriptions = [
+    'Your name, your email. Then we’ll make it yours.',
+    'Your school is where it starts.',
+    'A password that’s just for you.',
+    'Eight personalities. One that’s yours.',
+  ];
+  const stepLabels = [
+    'Your details',
+    'Your school',
+    'Your password',
+    'Your Star Crew',
+  ];
+  const StepIcon =
+    registerStep === 2
+      ? GraduationCap
+      : registerStep === 3
+        ? LockKeyhole
+        : UserRound;
+
+  return (
+    <AccountCard
+      devButton={devButtons}
+      view={view}
+      registerStep={registerStep}
+      avatar={avatar}
+      name={name}
+      school={schoolName}
+      busy={isLoading}
+      onAvatarChange={setAvatar}
+      onWelcome={() => navigate('welcome')}
+      onSchoolAccess={() => navigate(view === 'gc' ? 'login' : 'gc')}
+    >
+      {(view === 'register' || view === 'login') && (
+        <div className="auth-live-switch" aria-label="Account options">
+          <button
+            type="button"
+            aria-pressed={view === 'register'}
+            disabled={isLoading}
+            onClick={() => navigate('register')}
+          >
+            Create account
+          </button>
+          <button
+            type="button"
+            aria-pressed={view === 'login'}
+            disabled={isLoading}
+            onClick={() => navigate('login')}
+          >
+            Log in
+          </button>
+        </div>
+      )}
+      <AnimatePresence
+        mode="wait"
+        initial={false}
+        custom={view === 'register' ? stepDirection : viewDirection}
+      >
         <MotionDiv
           ref={authViewRef}
-          key={view}
-          custom={viewDirection}
+          key={view === 'register' ? `register-${registerStep}` : view}
+          custom={view === 'register' ? stepDirection : viewDirection}
           variants={slideVariants}
           initial="enter"
           animate="center"
           exit="exit"
           transition={viewTransition}
-          className={mobileAppDesign ? (view === 'welcome' ? 'account-view flex flex-1 flex-col' : 'account-view w-full py-2 md:py-0') : (view === 'welcome' ? 'flex flex-1 flex-col md:block md:flex-none' : 'w-full py-2 md:py-0')}
+          onAnimationComplete={focusHeading}
+          aria-busy={isLoading}
         >
-          {/* ── WELCOME ────────────────────────────────────── */}
           {view === 'welcome' && (
-            mobileAppDesign ? (
-<div className="account-welcome">
-              <p className="account-eyebrow">Built around how you learn</p>
-              <h1>Your study.<br />Your way.</h1>
-              <div className="md:hidden"><WelcomeCharacter /></div>
-              <p>Your subjects. Your goals.<br />A study plan that fits you.</p>
-              <div className="account-welcome-actions">
-                <button type="button" onClick={() => { resetForm(); setView('register'); }} className="account-primary">Create your account</button>
-                <button type="button" onClick={() => { resetForm(); setView('login'); }} className="account-secondary">Log in</button>
-                {SHOW_GOOGLE_SIGN_IN && <button type="button" onClick={handleGoogleSignIn} disabled={isLoading} className="account-secondary flex items-center justify-center gap-3"><GoogleIcon />Continue with Google</button>}
-                {SHOW_APPLE_SIGN_IN && <button type="button" onClick={handleAppleSignIn} disabled={isLoading} className="flex items-center justify-center gap-3 bg-black text-white"><AppleIcon />Continue with Apple</button>}
-              </div>
-              <button type="button" onClick={() => { resetForm(); setView('gc'); }} className="mt-4 flex min-h-12 items-center justify-between border-t border-black/25 text-sm font-semibold">School access<ArrowRight size={17} aria-hidden="true" /></button>
-              {error && <p role="alert" className="mt-4 text-sm font-semibold">{error}</p>}
-            </div>
-            ) : (
-<>
-              {/* Mobile is a true app welcome screen: edge-to-edge, brand-led
-                  and focused on the two student decisions that matter. */}
-              <div className="flex flex-1 flex-col md:hidden">
-                <MotionDiv
-                  initial={{ opacity: 0, y: -5 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.35, ease: SLIDE_EASE }}
-                  className="flex items-center gap-3 border-b border-[var(--outline-soft)] pb-4"
-                >
-                  <AuthWordmark />
-                  <span aria-hidden="true" className="h-px flex-1 bg-[var(--outline-soft)]" />
-                </MotionDiv>
-
-                <div className="flex min-h-0 flex-1 flex-col items-center justify-center py-4 text-center">
-                  <MotionDiv
-                    initial={{ opacity: 0, y: 12, scale: 0.97 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    transition={{ duration: 0.46, delay: 0.04, ease: SLIDE_EASE }}
-                    className="flex w-full items-center justify-center"
-                  >
-                    <WelcomeCharacter />
-                  </MotionDiv>
-                  <MotionP
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.38, delay: 0.11, ease: SLIDE_EASE }}
-                    className="mb-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent-hex)]"
-                  >
-                    Built around how you learn
-                  </MotionP>
-                  <MotionDiv
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: 0.16, ease: SLIDE_EASE }}
-                  >
-                    <h1 className="auth-paper-title">
-                      Your study,<br />your way.
-                    </h1>
-                    <p className="mx-auto mt-4 max-w-[330px] text-[15px] leading-relaxed text-[var(--ink-muted)]">
-                      Study strategies shaped around your subjects, goals and exams.
-                    </p>
-                  </MotionDiv>
-                </div>
-
-                <MotionDiv
-                  initial={{ opacity: 0, y: 14 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.42, delay: 0.23, ease: SLIDE_EASE }}
-                  className="shrink-0"
-                >
-                  <div className="space-y-2.5">
-                    <MotionButton
-                      whileTap={btnTap}
-                      transition={SPRING_FAST}
-                      onClick={() => { resetForm(); setView('register'); }}
-                      className="account-primary flex min-h-14 w-full items-center justify-center rounded-2xl border-2 px-5 text-[15px] font-bold transition-all active:translate-y-0.5"
-                    >
-                      Create your account
-                    </MotionButton>
-                    <MotionButton
-                      whileTap={btnTap}
-                      transition={SPRING_FAST}
-                      onClick={() => { resetForm(); setView('login'); }}
-                      className="flex min-h-14 w-full items-center justify-center rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] px-5 text-[15px] font-bold text-[var(--ink-primary)] transition-colors"
-                    >
-                      Log in
-                    </MotionButton>
-                    {SHOW_GOOGLE_SIGN_IN && (
-                      <MotionButton
-                        whileTap={btnTap}
-                        transition={SPRING_FAST}
-                        onClick={handleGoogleSignIn}
-                        disabled={isLoading}
-                        className="flex min-h-14 w-full items-center justify-center gap-2.5 rounded-2xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-5 text-[15px] font-semibold text-[var(--ink-primary)] disabled:cursor-not-allowed disabled:opacity-50"
-                      >
-                        <GoogleIcon />
-                        Continue with Google
-                      </MotionButton>
-                    )}
-                    {SHOW_APPLE_SIGN_IN && (
-                      <MotionButton
-                        whileTap={btnTap}
-                        transition={SPRING_FAST}
-                        onClick={handleAppleSignIn}
-                        disabled={isLoading}
-                        className="flex min-h-14 w-full items-center justify-center gap-2.5 rounded-2xl bg-black px-5 text-[15px] font-semibold text-white disabled:cursor-not-allowed disabled:opacity-50 dark:border dark:border-zinc-700"
-                      >
-                        <AppleIcon />
-                        Continue with Apple
-                      </MotionButton>
-                    )}
-                  </div>
-
-                  <div className="mt-4 border-t border-[var(--outline-soft)] pt-2">
-                    <button
-                      type="button"
-                      onClick={() => { resetForm(); setView('gc'); }}
-                      className="flex min-h-11 w-full items-center gap-3 rounded-xl px-1 text-left text-sm font-semibold text-[var(--ink-secondary)]"
-                    >
-                      <School size={17} strokeWidth={1.7} aria-hidden="true" />
-                      <span className="flex-1">School access</span>
-                      <ChevronRight size={17} strokeWidth={1.7} aria-hidden="true" />
-                    </button>
-                  </div>
-                </MotionDiv>
-              </div>
-
-              <div className="auth-paper-welcome hidden text-center md:block">
-                <p className="auth-paper-eyebrow">Welcome</p>
-                <h1 className="auth-paper-title">
-                  Your study,<br />your way.
+            <>
+              <div className="auth-live-heading">
+                <h1 ref={characterHeadingRef} tabIndex={-1}>
+                  Your next step.
                 </h1>
-                <p className="auth-paper-subtitle">
-                  Science-backed study strategies personalised to your subjects, your goals, and your exam.
-                </p>
-
-                <div className="space-y-3">
-                  <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={() => { resetForm(); setView('register'); }} className={primaryBtn} style={primaryBtnStyle}>
-                    Create your account
-                  </MotionButton>
-                  <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={() => { resetForm(); setView('login'); }} className="auth-paper-secondary w-full rounded-xl border py-3.5 text-[14px] font-semibold transition-all">
-                    Log in
-                  </MotionButton>
-                  {SHOW_GOOGLE_SIGN_IN && (
-                    <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleGoogleSignIn} disabled={isLoading} className="flex w-full items-center justify-center gap-2.5 rounded-xl border-2 py-3.5 text-[15px] font-semibold transition-all disabled:cursor-not-allowed disabled:opacity-50" style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}>
-                      <GoogleIcon /> Continue with Google
-                    </MotionButton>
-                  )}
-                  {SHOW_APPLE_SIGN_IN && (
-                    <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleAppleSignIn} disabled={isLoading} className="flex w-full items-center justify-center gap-2.5 rounded-xl py-3.5 text-[15px] font-semibold transition-all disabled:cursor-not-allowed disabled:opacity-50" style={{ color: '#FFFFFF', backgroundColor: '#000000' }}>
-                      <AppleIcon /> Continue with Apple
-                    </MotionButton>
-                  )}
-                </div>
-
-                <div className="mt-8 flex items-center gap-4">
-                  <div className="h-px flex-1" style={{ backgroundColor: '#d0cdc8' }} />
-                  <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
-                  <div className="h-px flex-1" style={{ backgroundColor: '#d0cdc8' }} />
-                </div>
-                <button onClick={() => { resetForm(); setView('gc'); }} className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border-2 py-3 text-sm font-medium transition-all" style={{ color: '#7a7068', borderColor: '#d0cdc8', backgroundColor: 'white' }}>
-                  <GraduationCap size={16} /> School sign-in — counsellors &amp; staff
+                <p>A place for your subjects, your plans and what’s next.</p>
+              </div>
+              <div className="auth-live-welcome-actions">
+                <button
+                  type="button"
+                  className="auth-live-primary"
+                  disabled={isLoading}
+                  onClick={() => navigate('register')}
+                >
+                  Create an account
+                  <ArrowRight size={20} aria-hidden="true" />
+                </button>
+                <button
+                  type="button"
+                  className="auth-live-secondary"
+                  disabled={isLoading}
+                  onClick={() => navigate('login')}
+                >
+                  Log in
+                  <ArrowRight size={18} aria-hidden="true" />
                 </button>
               </div>
+              {providers}
+              {errorMessage}
             </>
-            )
           )}
-
-          {/* ── LOGIN ──────────────────────────────────────── */}
+          {view === 'register' && (
+            <>
+              <div className="auth-live-context">
+                <span>
+                  <StepIcon size={17} aria-hidden="true" />
+                </span>
+                <span>{stepLabels[registerStep - 1]}</span>
+              </div>
+              <div className="auth-live-heading">
+                <h1 ref={characterHeadingRef} tabIndex={-1}>
+                  {stepTitles[registerStep - 1]}
+                </h1>
+                <p>{stepDescriptions[registerStep - 1]}</p>
+              </div>
+              <form
+                noValidate
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  if (isLoading) return;
+                  if (registerStep < 4) handleRegisterNext();
+                  else void handleRegisterSubmit();
+                }}
+              >
+                <fieldset
+                  className="auth-live-fields"
+                  disabled={isLoading}
+                  aria-label={stepLabels[registerStep - 1]}
+                >
+                  {registerStep === 1 && (
+                    <>
+                      <div className="auth-live-field">
+                        <label htmlFor="register-name">Your Name</label>
+                        <input
+                          id="register-name"
+                          value={name}
+                          onChange={(event) => {
+                            setName(event.target.value);
+                            setError('');
+                          }}
+                          placeholder="First and last name"
+                          autoComplete="name"
+                        />
+                        {/* Name remains free-form for all naming conventions. */}
+                      </div>
+                      {emailField('register-email')}
+                    </>
+                  )}
+                  {registerStep === 2 && (
+                    <>
+                      <div className="auth-live-field">
+                        <label htmlFor="register-school">School</label>
+                        <select
+                          id="register-school"
+                          value={school}
+                          onChange={(event) => {
+                            setSchool(event.target.value);
+                            setJoinCode('');
+                            setError('');
+                          }}
+                        >
+                          <option value="" disabled>
+                            Select your school
+                          </option>
+                          {SCHOOLS.map((item) => (
+                            <option key={item.id} value={item.id}>
+                              {item.name}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className="auth-live-field">
+                        <label htmlFor="register-join-code">
+                          School join code
+                        </label>
+                        <input
+                          id="register-join-code"
+                          value={joinCode}
+                          onChange={(event) => {
+                            setJoinCode(event.target.value);
+                            setError('');
+                          }}
+                          placeholder="From your school"
+                          autoComplete="off"
+                          autoCapitalize="off"
+                          autoCorrect="off"
+                          spellCheck={false}
+                        />
+                        <button
+                          type="button"
+                          className="auth-live-link"
+                          onClick={() => setEntryHelp('code')}
+                        >
+                          Where do I find my join code?
+                        </button>
+                      </div>
+                    </>
+                  )}
+                  {registerStep === 3 &&
+                    passwordField('register-password', true)}
+                  {registerStep === 4 && (
+                    <div>
+                      <div
+                        className="auth-live-crew"
+                        role="group"
+                        aria-label="Choose your Star Crew character"
+                      >
+                        {AVATAR_SEEDS.map((seed) => (
+                          <button
+                            type="button"
+                            key={seed}
+                            aria-label={`Choose ${getAvatarName(seed)} avatar`}
+                            aria-pressed={avatar === seed}
+                            onClick={() => {
+                              setAvatar(seed);
+                              setError('');
+                            }}
+                          >
+                            <Avatar
+                              seed={seed}
+                              alt=""
+                              className="auth-live-crew-art"
+                            />
+                            <span>
+                              {getAvatarName(seed).replace(/^The /, '')}
+                            </span>
+                            {avatar === seed && (
+                              <Check size={13} aria-hidden="true" />
+                            )}
+                          </button>
+                        ))}
+                      </div>
+                      <p className="auth-live-selection" role="status">
+                        {avatar
+                          ? `${getAvatarName(avatar)} selected. You can change this later.`
+                          : 'Choose the character that feels like you.'}
+                      </p>
+                      <div className="auth-live-consent">
+                        <div>
+                          <input
+                            id="register-consent"
+                            type="checkbox"
+                            checked={agreedToTerms}
+                            onChange={(event) => {
+                              setAgreedToTerms(event.target.checked);
+                              setError('');
+                            }}
+                            aria-label="I have read the Privacy Notice and agree to the Terms of Use"
+                          />
+                          <span>
+                            I have read the{' '}
+                            <button
+                              type="button"
+                              onClick={() => setLegalDoc('privacy')}
+                            >
+                              Privacy Notice
+                            </button>{' '}
+                            and agree to the{' '}
+                            <button
+                              type="button"
+                              onClick={() => setLegalDoc('terms')}
+                            >
+                              Terms of Use
+                            </button>
+                            .
+                          </span>
+                        </div>
+                        <p>
+                          Your school provides NextStepUni with your parent or
+                          guardian’s permission as part of enrolment. The
+                          Privacy Notice explains how your information is used.
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </fieldset>
+                {errorMessage}
+                <div className="auth-live-actions">
+                  <button
+                    type="button"
+                    className="auth-live-quiet"
+                    disabled={isLoading}
+                    onClick={registrationBack}
+                  >
+                    <ArrowLeft size={17} aria-hidden="true" />
+                    Back
+                  </button>
+                  <button
+                    type="submit"
+                    className="auth-live-primary"
+                    disabled={
+                      isLoading ||
+                      (registerStep === 4 && (!avatar || !agreedToTerms))
+                    }
+                  >
+                    {isLoading
+                      ? 'Creating your account…'
+                      : registerStep === 4
+                        ? 'Create Account'
+                        : 'Continue'}
+                    <ArrowRight size={19} aria-hidden="true" />
+                  </button>
+                </div>
+                {registerStep < 4 && (
+                  <p className="auth-live-key-hint" aria-hidden="true">
+                    ↵ Press Enter to continue
+                  </p>
+                )}
+              </form>
+            </>
+          )}
           {view === 'login' && (
             <>
-              <button type="button" onClick={() => setView('welcome')} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
-                <ArrowLeft size={14} /> Back
-              </button>
-              {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Welcome<br />back.</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Welcome back</h2>}
-              <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Sign in with your email and password.</p>
-              <form onSubmit={e => { e.preventDefault(); handleLogin(); }} className="space-y-4">
-                <div>
-                  <label htmlFor="login-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                  <input id="login-email" name={mobileAppDesign ? "username" : undefined} type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete={mobileAppDesign ? "username" : "email"} autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+              <div className="auth-live-heading">
+                <h1 ref={characterHeadingRef} tabIndex={-1}>
+                  Good to see you.
+                </h1>
+                <p>Your space is right where you left it.</p>
+              </div>
+              <form
+                noValidate
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  void handleLogin();
+                }}
+              >
+                <fieldset className="auth-live-fields" disabled={isLoading}>
+                  {emailField('login-email', true)}
+                  {passwordField('login-password')}
+                  <button
+                    type="button"
+                    className="auth-live-link auth-live-forgot"
+                    onClick={() => {
+                      navigate('forgot');
+                      setResetSent(false);
+                    }}
+                  >
+                    Forgot password?
+                  </button>
+                </fieldset>
+                {errorMessage}
+                <div className="auth-live-actions">
+                  <button
+                    type="button"
+                    className="auth-live-quiet"
+                    disabled={isLoading}
+                    onClick={() => navigate('welcome')}
+                  >
+                    <ArrowLeft size={17} aria-hidden="true" />
+                    Back
+                  </button>
+                  <button
+                    type="submit"
+                    className="auth-live-primary"
+                    disabled={isLoading}
+                  >
+                    {isLoading ? 'Signing in…' : 'Sign in'}
+                    <ArrowRight size={19} aria-hidden="true" />
+                  </button>
                 </div>
-                <div>
-                  <div className="flex items-center justify-between mb-1.5">
-                    <label htmlFor="login-password" className="text-xs font-bold uppercase tracking-wider" style={{ color: '#9e9186' }}>Password</label>
-                    <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="relative text-xs font-semibold transition-colors after:absolute after:-inset-x-2 after:-inset-y-3 after:content-[''] hover:opacity-80" style={{ color: '#F26B1F' }}>{mobileAppDesign ? "Forgot password?" : "Forgot?"}</button>
-                  </div>
-                  <div className="relative">
-                    <input id="login-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className={passwordToggleClass} style={{ color: '#9e9186' }}>
-                      {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-                    </button>
-                  </div>
-                </div>
-                <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-                  {isLoading ? 'Signing in...' : 'Sign In'}
-                </MotionButton>
               </form>
-              {SHOW_GOOGLE_SIGN_IN && (
-                <>
-                  <div className="flex items-center gap-4 my-5">
-                    <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-                    <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
-                    <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-                  </div>
-                  <MotionButton
-                    whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-                    onClick={handleGoogleSignIn}
-                    disabled={isLoading}
-                    className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ color: '#1a1a1a', borderColor: '#d0cdc8', backgroundColor: 'white' }}
-                  >
-                    <GoogleIcon />
-                    Continue with Google
-                  </MotionButton>
-                </>
-              )}
-              {SHOW_APPLE_SIGN_IN && (
-                <>
-                  <div className="flex items-center gap-4 my-5">
-                    <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-                    <span className="text-[11px] font-medium" style={{ color: '#9e9186' }}>OR</span>
-                    <div className="flex-1 h-px" style={{ backgroundColor: '#d0cdc8' }} />
-                  </div>
-                  <MotionButton
-                    whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST}
-                    onClick={handleAppleSignIn}
-                    disabled={isLoading}
-                    className="w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ color: '#FFFFFF', backgroundColor: '#000000' }}
-                  >
-                    <AppleIcon />
-                    Continue with Apple
-                  </MotionButton>
-                </>
-              )}
-              <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
-                Don&apos;t have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('register'); }} className="relative font-semibold transition-colors after:absolute after:-inset-x-2 after:-inset-y-3 after:content-[''] hover:opacity-80" style={{ color: '#F26B1F' }}>Register</button>
-              </p>
+              {providers}
             </>
           )}
-
-          {/* ── GC LOGIN ───────────────────────────────────── */}
-          {view === 'gc' && (
-            <>
-              <button type="button" onClick={() => setView('welcome')} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
-                <ArrowLeft size={14} /> Back
-              </button>
-              <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>School sign-in</h2>
-              <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Select your school, choose your dashboard, and enter the password your school was given.</p>
-              <form onSubmit={e => { e.preventDefault(); handleGCLogin(); }} className="space-y-4">
-                <div role="radiogroup" aria-label="Which dashboard" className="grid grid-cols-2 gap-2">
-                  {([['gc', 'Guidance Counsellor'], ['staff', 'Staff room']] as const).map(([kind, label]) => (
-                    <button
-                      key={kind}
-                      type="button"
-                      role="radio"
-                      aria-checked={schoolRole === kind}
-                      onClick={() => { setSchoolRole(kind); setError(''); }}
-                      className="rounded-xl border-2 py-2.5 text-sm font-semibold transition-all"
-                      style={schoolRole === kind
-                        ? { borderColor: '#F26B1F', color: '#F26B1F', backgroundColor: 'rgba(242,107,31,0.06)' }
-                        : { borderColor: '#d0cdc8', color: '#7a7068', backgroundColor: 'white' }}
-                    >
-                      {label}
-                    </button>
-                  ))}
-                </div>
-                <div>
-                  <label htmlFor="gc-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
-                  <div className="relative">
-                    <select id="gc-school" value={gcSchool} onChange={e => { setGcSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!gcSchool ? 'text-zinc-400' : ''}`} autoFocus={shouldAutoFocus}>
-                      <option value="" disabled>Select your school</option>
-                      {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
-                    </select>
-                    <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="gc-password" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
-                  <div className="relative">
-                    <input id="gc-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className={passwordToggleClass} style={{ color: '#9e9186' }}>
-                      {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-                    </button>
-                  </div>
-                </div>
-                <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-                  {isLoading ? 'Signing in...' : 'Sign In'}
-                </MotionButton>
-              </form>
-            </>
-          )}
-
-          {/* ── FORGOT PASSWORD ─────────────────────────────── */}
           {view === 'forgot' && (
             <>
-              <button type="button" onClick={() => { setView('login'); setError(''); setResetSent(false); }} className={`${backButtonClass} mb-5`} style={{ color: '#9e9186' }}>
-                <ArrowLeft size={14} /> Back to sign in
-              </button>
-              {mobileAppDesign ? <h1 className="account-title mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h1> : <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Reset your password</h2>}
-              <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Enter your email and we&apos;ll send you a link to reset your password.</p>
+              <div className="auth-live-heading">
+                <h1 ref={characterHeadingRef} tabIndex={-1}>
+                  {resetSent ? 'Check your inbox.' : 'Let’s get you back in.'}
+                </h1>
+                <p>
+                  {resetSent
+                    ? `We sent a reset link to ${email.trim()}.`
+                    : 'Enter your email and we’ll send you a reset link.'}
+                </p>
+              </div>
               {resetSent ? (
-                <MotionDiv
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ ...SPRING_GENTLE, staggerChildren: 0.08, delayChildren: 0.05 }}
-                  className="text-center py-2"
-                >
-                  {mobileAppDesign ? <><img src="/icons/north-star/vision/results-day.png" className="account-reset-art" alt="" />
-
-                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE}>
-                    <p className="text-sm font-medium mb-1" style={{ color: '#1a1a1a' }}>Check your inbox</p>
-                    <p className="text-sm mb-2" style={{ color: '#7a7068' }}>If an account uses <span className="font-medium" style={{ color: '#1a1a1a' }}>{email}</span>, you’ll receive a password reset link.</p>
-                    <button type="button" className="account-help" onClick={() => { setResetSent(false); setResendCountdown(0); setError(''); }}>Change email address</button>
-                    <button type="button" className="account-help block" onClick={() => setEntryHelp('reset')}>Still need help?</button>
-                    {error && <p role="alert" className="my-3 text-sm text-red-700">{error}</p>}
-                  </MotionDiv></> : <><MotionDiv
-                    initial={{ scale: 0, rotate: -8 }}
-                    animate={{ scale: 1, rotate: 0 }}
-                    transition={SPRING_POP}
-                    className="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center"
-                    style={{ backgroundColor: '#FDEEDF' }}
-                  >
-                    <Check size={24} style={{ color: '#F26B1F' }} />
-                  </MotionDiv>
-                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE}>
-                    <p className="text-sm font-medium mb-1" style={{ color: '#1a1a1a' }}>Check your inbox</p>
-                    <p className="text-sm mb-2" style={{ color: '#7a7068' }}>We&apos;ve sent a password reset link to <span className="font-medium" style={{ color: '#1a1a1a' }}>{email}</span></p>
-                    <p className="text-xs mb-6" style={{ color: '#9e9186' }}>Can&apos;t find it? Check your spam folder.</p>
-                  </MotionDiv></>}
-
-                  <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE} className="space-y-2.5">
-                    <MotionButton
-                      onClick={() => { resetForm(); setView('login'); }}
-                      whileHover={btnHover}
-                      whileTap={btnTap}
-                      transition={SPRING_FAST}
-                      className={primaryBtn}
-                      style={primaryBtnStyle}
+                <>
+                  <p role="status" className="auth-live-sr">
+                    Password reset email sent.
+                  </p>
+                  <div className="auth-live-welcome-actions">
+                    <button
+                      type="button"
+                      className="auth-live-secondary"
+                      disabled={isLoading}
+                      onClick={() => {
+                        setResetSent(false);
+                        setResendCountdown(0);
+                        setError('');
+                      }}
                     >
-                      Back to sign in
-                    </MotionButton>
-                    <MotionButton
-                      onClick={handleForgotPassword}
-                      disabled={resendCountdown > 0 || isLoading}
-                      whileHover={resendCountdown > 0 ? {} : btnHover}
-                      whileTap={resendCountdown > 0 ? {} : btnTap}
-                      transition={SPRING_FAST}
-                      className="w-full py-3 rounded-xl text-[14px] font-medium transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                      style={{ color: '#F26B1F', borderColor: 'rgba(242,107,31,0.3)', backgroundColor: 'white' }}
+                      Change email address
+                    </button>
+                    <button
+                      type="button"
+                      className="auth-live-link"
+                      disabled={isLoading}
+                      onClick={() => setEntryHelp('reset')}
                     >
-                      {resendCountdown > 0
-                        ? `Resend in ${resendCountdown}s`
-                        : isLoading
-                        ? 'Sending…'
-                        : 'Resend email'}
-                    </MotionButton>
-                  </MotionDiv>
-                </MotionDiv>
-              ) : (
-                <form onSubmit={e => { e.preventDefault(); handleForgotPassword(); }} className="space-y-4">
-                  <div>
-                    <label htmlFor="reset-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                    <input id="reset-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                      Still waiting?
+                    </button>
                   </div>
-                <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                  <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-                    {isLoading ? 'Sending...' : 'Send Reset Link'}
-                  </MotionButton>
+                  {errorMessage}
+                  <div className="auth-live-actions">
+                    <button
+                      type="button"
+                      className="auth-live-quiet"
+                      disabled={isLoading}
+                      onClick={() => navigate('login')}
+                    >
+                      <ArrowLeft size={17} aria-hidden="true" />
+                      Back
+                    </button>
+                    <button
+                      type="button"
+                      className="auth-live-primary"
+                      disabled={isLoading || resendCountdown > 0}
+                      onClick={handleForgotPassword}
+                    >
+                      {isLoading
+                        ? 'Sending…'
+                        : resendCountdown > 0
+                          ? `Resend in ${resendCountdown}s`
+                          : 'Resend email'}
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <form
+                  noValidate
+                  onSubmit={(event) => {
+                    event.preventDefault();
+                    void handleForgotPassword();
+                  }}
+                >
+                  <fieldset className="auth-live-fields" disabled={isLoading}>
+                    {emailField('reset-email')}
+                  </fieldset>
+                  {errorMessage}
+                  <div className="auth-live-actions">
+                    <button
+                      type="button"
+                      className="auth-live-quiet"
+                      disabled={isLoading}
+                      onClick={() => navigate('login')}
+                    >
+                      <ArrowLeft size={17} aria-hidden="true" />
+                      Back
+                    </button>
+                    <button
+                      type="submit"
+                      className="auth-live-primary"
+                      disabled={isLoading || resendCountdown > 0}
+                    >
+                      {isLoading
+                        ? 'Sending…'
+                        : resendCountdown > 0
+                          ? `Resend in ${resendCountdown}s`
+                          : 'Send Reset Link'}
+                      <ArrowRight size={19} aria-hidden="true" />
+                    </button>
+                  </div>
                 </form>
               )}
             </>
           )}
-
-          {/* ── REGISTER (multi-step) ───────────────────────── */}
-          {view === 'register' && (
+          {view === 'gc' && (
             <>
-              <AnimatePresence mode="wait" initial={false} custom={stepDirection}>
-                {registerStep === 1 && (
-                  <MotionDiv key="step1" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={viewTransition} className="auth-registration-step">
-                    <p className="auth-paper-eyebrow">First, the essentials</p>
-                    <h1 className="auth-registration-title auth-registration-brand-heading">Let&apos;s get you set up</h1>
-                    <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
-                    <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="auth-registration-form space-y-4">
-                      <div className="auth-registration-fields">
-                        <div>
-                          <label htmlFor="register-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                          <input id="register-email" name={mobileAppDesign ? "username" : undefined} type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus={shouldAutoFocus} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
-                        </div>
-                        <div>
-                          <label htmlFor="register-name" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
-                          <input id="register-name" type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} autoComplete={mobileAppDesign ? "name" : "given-name"} autoCapitalize="words" autoCorrect="off" spellCheck={false} />
-                        </div>
-                        <div>
-                          <label htmlFor="register-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
-                          <div className="relative">
-                            <select id="register-school" value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
-                              <option value="" disabled>Select your school</option>
-                              {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
-                            </select>
-                            <School size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
-                          </div>
-                        </div>
-                        <div>
-                          <label htmlFor="register-join-code" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School join code</label>
-                          <div className="relative">
-                            <input id="register-join-code" type="text" value={joinCode} onChange={e => { setJoinCode(e.target.value); setError(''); }} placeholder="From your school" className={`${inputClass} pr-10`} autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                            <KeyRound size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
-                          </div>
-                          {mobileAppDesign ? <button type="button" className="account-help" onClick={() => setEntryHelp('code')}>Where do I find my join code?</button> : <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>Your school gives you this code. It confirms you belong to your school.</p>}
-                        </div>
-                      </div>
-                      <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                      <MotionButton type="submit" whileHover={reducedMotion ? undefined : { y: -1 }} whileTap={reducedMotion ? undefined : { y: 1 }} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-                        <span className="flex items-center justify-between gap-2">Continue <ArrowUpRight size={22} aria-hidden="true" /></span>
-                      </MotionButton>
-                    </form>
-                    <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
-                      Already have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('login'); }} className="relative font-semibold transition-colors after:absolute after:-inset-x-2 after:-inset-y-3 after:content-[''] hover:opacity-80" style={{ color: '#F26B1F' }}>Sign in</button>
-                    </p>
-                  </MotionDiv>
-                )}
-
-                {registerStep === 2 && (
-                  <MotionDiv key="step2" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={viewTransition} className="auth-registration-step">
-                    <p className="auth-paper-eyebrow">Just for you</p>
-                    <h1 className="auth-registration-title auth-registration-brand-heading">Create a password</h1>
-                    <p className="mb-6 text-sm md:mb-8" style={{ color: '#7a7068' }}>Use at least {MIN_PASSWORD_LENGTH} characters. A short phrase is easier to remember and harder to guess.</p>
-                    <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="auth-registration-form space-y-4">
-                      <div>
-                        <label htmlFor="register-password" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
-                        <div className="relative">
-                          <input id="register-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Create a password" minLength={MIN_PASSWORD_LENGTH} maxLength={MAX_PASSWORD_LENGTH} className={passwordInputClass} autoFocus={shouldAutoFocus} autoComplete="new-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                          <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className={passwordToggleClass} style={{ color: '#9e9186' }}>
-                            {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-                          </button>
-                        </div>
-                        {password.length > 0 && password.length < MIN_PASSWORD_LENGTH && (
-                          <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{MIN_PASSWORD_LENGTH - password.length} more character{MIN_PASSWORD_LENGTH - password.length !== 1 ? 's' : ''} needed</p>
-                        )}
-                        {password.length >= MIN_PASSWORD_LENGTH && password.length <= MAX_PASSWORD_LENGTH && (
-                          <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#F26B1F' }}><Check size={12} /> Looks good</p>
-                        )}
-                      </div>
-                      <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                      <MotionButton type="submit" whileHover={reducedMotion ? undefined : { y: -1 }} whileTap={reducedMotion ? undefined : { y: 1 }} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
-                        <span className="flex items-center justify-between gap-2">Continue <ArrowUpRight size={22} aria-hidden="true" /></span>
-                      </MotionButton>
-                    </form>
-                  </MotionDiv>
-                )}
-
-                {registerStep === 3 && (
-                  <MotionDiv key="step3" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={viewTransition} className="auth-registration-step" onAnimationComplete={(definition: string) => { if (definition === 'center') characterHeadingRef.current?.focus({ preventScroll: true }); }}>
-                    <p className="auth-paper-eyebrow">Meet the Star Crew</p>
-                    <h1 ref={characterHeadingRef} tabIndex={-1} className="auth-registration-title">Choose your character.</h1>
-                    <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Eight personalities. One that’s yours.</p>
-                    <div className="auth-crew-picker" role="group" aria-label="Choose your Star Crew character">
-                      {AVATAR_SEEDS.map(seed => (
-                        <button
-                          key={seed}
-                          type="button"
-                          aria-pressed={selectedAvatar === seed}
-                          aria-label={`Choose ${getAvatarName(seed)} avatar`}
-                          onClick={() => setAvatar(seed)}
-                          className="auth-crew-choice"
-                        >
-                          <Avatar seed={seed} alt="" className="auth-crew-option" />
-                          <span>{getAvatarName(seed).replace(/^The /, '')}</span>
-                        </button>
+              <div className="auth-live-context">
+                <span>
+                  <GraduationCap size={17} aria-hidden="true" />
+                </span>
+                <span>School access</span>
+              </div>
+              <div className="auth-live-heading">
+                <h1 ref={characterHeadingRef} tabIndex={-1}>
+                  Hello, school team.
+                </h1>
+                <p>Sign in to your school’s shared workspace.</p>
+              </div>
+              <form
+                noValidate
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  void handleGCLogin();
+                }}
+              >
+                <fieldset className="auth-live-fields" disabled={isLoading}>
+                  <div
+                    className="auth-live-role"
+                    role="group"
+                    aria-label="School role"
+                  >
+                    <label htmlFor="school-role-gc">
+                      <input
+                        id="school-role-gc"
+                        type="radio"
+                        name="school-role"
+                        value="gc"
+                        checked={schoolRole === 'gc'}
+                        onChange={() => {
+                          setSchoolRole('gc');
+                          setError('');
+                          setPassword('');
+                        }}
+                      />
+                      Guidance counsellor
+                    </label>
+                    <label htmlFor="school-role-staff">
+                      <input
+                        id="school-role-staff"
+                        type="radio"
+                        name="school-role"
+                        value="staff"
+                        checked={schoolRole === 'staff'}
+                        onChange={() => {
+                          setSchoolRole('staff');
+                          setError('');
+                          setPassword('');
+                        }}
+                      />
+                      Staff room
+                    </label>
+                  </div>
+                  <div className="auth-live-field">
+                    <label htmlFor="gc-school">School</label>
+                    <select
+                      id="gc-school"
+                      value={gcSchool}
+                      onChange={(event) => {
+                        setGcSchool(event.target.value);
+                        setError('');
+                      }}
+                    >
+                      <option value="" disabled>
+                        Select your school
+                      </option>
+                      {SCHOOLS.map((item) => (
+                        <option key={item.id} value={item.id}>
+                          {item.name}
+                        </option>
                       ))}
-                    </div>
-                    <p className="auth-crew-change-hint">You can change your character any time in your profile.</p>
-                    {/* B4 (audit 2026-06-01): privacy/terms acceptance gate */}
-                    <div className="auth-registration-consent">
-                      <div className="flex items-start gap-2.5">
-                        <button
-                          type="button"
-                          role="checkbox"
-                          aria-checked={agreedToTerms}
-                          aria-label="I have read the Privacy Notice and agree to the Terms of Use"
-                          onClick={() => { setAgreedToTerms(v => !v); setError(''); }}
-                          className="-m-3 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg"
-                        >
-                          <span
-                            className="flex h-5 w-5 items-center justify-center rounded-md border-2 transition-colors"
-                            style={agreedToTerms ? { backgroundColor: '#F26B1F', borderColor: '#F26B1F' } : { borderColor: '#d0cdc8' }}
-                          >
-                            {agreedToTerms && <Check size={13} className="text-white" strokeWidth={3} />}
-                          </span>
-                        </button>
-                        <span className="text-[13px] leading-snug" style={{ color: '#5a5550' }}>
-                          I have read the{' '}
-                          <button type="button" onClick={() => setLegalDoc('privacy')} className="font-semibold underline" style={{ color: '#F26B1F' }}>Privacy Notice</button>
-                          {' '}and agree to the{' '}
-                          <button type="button" onClick={() => setLegalDoc('terms')} className="font-semibold underline" style={{ color: '#F26B1F' }}>Terms of Use</button>.
-                        </span>
-                      </div>
-                      <p className={mobileAppDesign ? "text-[13px] leading-relaxed mt-2" : "text-[11px] leading-snug mt-2"} style={{ color: '#9e9186', paddingLeft: '30px' }}>
-                        Your school provides NextStepUni with your parent or guardian’s permission as part of enrolment. The Privacy Notice explains how your information is used.
-                      </p>
-                    </div>
-                    <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                    <MotionButton whileHover={reducedMotion ? undefined : { y: -1 }} whileTap={reducedMotion ? undefined : { y: 1 }} transition={SPRING_FAST} onClick={handleRegisterSubmit} disabled={isLoading || !agreedToTerms} className={primaryBtn} style={primaryBtnStyle}>
-                      <span className="flex items-center justify-between gap-2"><span>{isLoading ? 'Creating your account...' : 'Create Account'}</span><ArrowUpRight size={24} aria-hidden="true" /></span>
-                    </MotionButton>
-                    <p className="auth-crew-selection-status" role="status">{getAvatarName(selectedAvatar)} selected</p>
-                  </MotionDiv>
-                )}
-              </AnimatePresence>
+                    </select>
+                  </div>
+                  {passwordField('gc-password')}
+                </fieldset>
+                {errorMessage}
+                <div className="auth-live-actions">
+                  <button
+                    type="button"
+                    className="auth-live-quiet"
+                    disabled={isLoading}
+                    onClick={() => navigate('welcome')}
+                  >
+                    <ArrowLeft size={17} aria-hidden="true" />
+                    Back
+                  </button>
+                  <button
+                    type="submit"
+                    className="auth-live-primary"
+                    disabled={isLoading}
+                  >
+                    {isLoading ? 'Signing in…' : 'Sign in'}
+                    <ArrowRight size={19} aria-hidden="true" />
+                  </button>
+                </div>
+              </form>
             </>
           )}
         </MotionDiv>
-        </AnimatePresence>
-        <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
-        {entryHelp && <div className="fixed inset-0 z-[240] flex items-center justify-center bg-black/50 p-5"><div ref={entryHelpRef} className="account-help-dialog" role="dialog" aria-modal="true" aria-labelledby="entry-help-title"><h2 id="entry-help-title" className="text-2xl font-bold">{entryHelp === 'code' ? 'Let’s find your code.' : 'Still waiting?'}</h2>{entryHelp === 'code' ? <><p>Ask the teacher or guidance counsellor who introduced NextStepUni. They can confirm your school’s join code.</p><p>Check your school’s welcome message, too. Your entered details will stay here while you check.</p></> : <><p>Check your spam or junk folder, then confirm the email address you used for your account.</p><p>If you signed in with Apple or Google, go back and use the same sign-in option.</p><button type="button" className="account-help" onClick={() => { setEntryHelp(null); setResetSent(false); setResendCountdown(0); setError(''); }}>Check email address</button></>}<button type="button" className={primaryBtn} style={primaryBtnStyle} onClick={() => setEntryHelp(null)}>{entryHelp === 'code' ? 'Back to your details' : 'Back to password recovery'}</button></div></div>}
-      </AccountCard>
-
-    </>
+      </AnimatePresence>
+      <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
+      {entryHelp && (
+        <div className="auth-live-overlay">
+          <div
+            ref={entryHelpRef}
+            className="auth-live-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="entry-help-title"
+          >
+            <button
+              type="button"
+              className="auth-live-dialog-close"
+              aria-label="Close help"
+              onClick={() => setEntryHelp(null)}
+            >
+              <X size={19} aria-hidden="true" />
+            </button>
+            <h2 id="entry-help-title">
+              {entryHelp === 'code'
+                ? 'Let’s find your code.'
+                : 'Still waiting?'}
+            </h2>
+            {entryHelp === 'code' ? (
+              <>
+                <p>
+                  Ask the teacher or guidance counsellor who introduced
+                  NextStepUni. They can confirm your school’s join code.
+                </p>
+                <p>
+                  Check your school’s welcome message, too. Your entered details
+                  will stay here while you check.
+                </p>
+              </>
+            ) : (
+              <>
+                <p>
+                  Check your spam or junk folder, then confirm the email address
+                  you used for your account.
+                </p>
+                <p>
+                  If you signed in with Apple or Google, go back and use the
+                  same sign-in option.
+                </p>
+                <button
+                  type="button"
+                  className="auth-live-link"
+                  onClick={() => {
+                    setEntryHelp(null);
+                    setResetSent(false);
+                    setResendCountdown(0);
+                    setError('');
+                  }}
+                >
+                  Check email address
+                </button>
+              </>
+            )}
+            <button
+              type="button"
+              className="auth-live-primary"
+              onClick={() => setEntryHelp(null)}
+            >
+              {entryHelp === 'code'
+                ? 'Back to your details'
+                : 'Back to password recovery'}
+            </button>
+          </div>
+        </div>
+      )}
+    </AccountCard>
   );
 };
 

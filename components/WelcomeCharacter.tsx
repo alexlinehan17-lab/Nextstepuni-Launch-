@@ -1,9 +1,10 @@
 import React, { useRef, useState } from 'react';
 import { useReducedMotion } from 'framer-motion';
+import { Move } from 'lucide-react';
 import './welcome-character.css';
 
 /** A small, bounded interaction: drag the character, then let it settle home. */
-export function WelcomeCharacter() {
+export function WelcomeCharacter({ showCue = false }: { showCue?: boolean }) {
   const reducedMotion = useReducedMotion();
   const stage = useRef<HTMLDivElement>(null);
   const drag = useRef<{ id: number; x: number; y: number } | null>(null);
@@ -67,6 +68,7 @@ export function WelcomeCharacter() {
           </button>
         </div>
       </div>
+      {showCue && <span className="auth-live-play-cue"><Move size={13} aria-hidden="true"/><span className="auth-live-pointer-cue">Drag or tap</span><span className="auth-live-touch-cue">Tap to say hello</span></span>}
     </div>
   );
 }
