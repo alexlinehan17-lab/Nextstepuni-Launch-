@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { ArrowUpRight, X } from 'lucide-react';
@@ -19,12 +19,6 @@ export default function JourneyWelcome({ hasSeenWelcome, onDismissWelcome }: {
     if (!hasSeenWelcome) onDismissWelcome();
   };
   useModal(open, close, dialogRef);
-  useEffect(() => {
-    if (!open) return;
-    const overflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = overflow; };
-  }, [open]);
 
   return <>
     <button type="button" className="journey-welcome-help" onClick={() => setOpen(true)} aria-label="How Journey works">

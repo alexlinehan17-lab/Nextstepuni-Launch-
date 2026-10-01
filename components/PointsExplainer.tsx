@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-import React, { useEffect, useId, useRef } from 'react';
+import React, { useId, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
@@ -21,13 +21,6 @@ const PointsExplainer: React.FC<PointsExplainerProps> = ({ isOpen, onDismiss }) 
   const titleId = useId();
   const reduceMotion = useReducedMotion();
   useModal(isOpen, onDismiss, dialogRef);
-
-  useEffect(() => {
-    if (!isOpen) return;
-    const previous = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = previous; };
-  }, [isOpen]);
 
   return createPortal(
     <AnimatePresence>

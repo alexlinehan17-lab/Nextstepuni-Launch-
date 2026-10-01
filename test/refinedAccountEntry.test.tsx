@@ -96,11 +96,13 @@ describe('account entry refinements', () => {
   it('lets the popup preview a character without committing it on Escape', async () => {
     const user = userEvent.setup();
     render(<LoginPage handleLoginSuccess={vi.fn()} />);
+    const originalOverflow = document.body.style.overflow;
     await user.click(screen.getByRole('button', { name: 'Choose your Star Crew character' }));
     await user.click(within(screen.getByRole('dialog')).getByRole('radio', { name: 'Maker' }));
     expect(within(screen.getByRole('dialog')).getByRole('radio', { name: 'Maker' })).toBeChecked();
     await user.keyboard('{Escape}');
     expect(screen.queryByRole('dialog')).toBeNull();
+    expect(document.body.style.overflow).toBe(originalOverflow);
     expect(screen.getByRole('button', { name: 'Choose your Star Crew character' })).toHaveFocus();
     await user.click(screen.getByRole('button', { name: 'Choose your Star Crew character' }));
     expect(within(screen.getByRole('dialog')).queryAllByRole('radio', { checked: true })).toHaveLength(0);
