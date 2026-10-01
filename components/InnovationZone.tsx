@@ -24,6 +24,7 @@ import { computeStreak } from './timetableAlgorithm';
 import { type StudyReflection, type PointsData, type CosmeticUnlocks, type EarnedRest, type UserSettings } from '../types';
 import SubjectOnboarding from './SubjectOnboarding';
 import { LoadingSpinner } from './LoadingSpinner';
+import { getToolLoadingLabel } from '../utils/loadingLabels';
 // Tool components are code-split: each loads its own chunk only when the
 // student opens it (rendered inside <Suspense> below). This keeps the
 // InnovationZone shell light and, crucially, defers the heavy Three.js
@@ -192,8 +193,6 @@ function validatePointsData(raw: unknown): PointsData {
     };
 }
 
-/** Suspense fallback shown while a tool's code-split chunk loads. */
-const ToolLoadingFallback: React.FC = () => <LoadingSpinner />;
 const EMPTY_PROGRESS_DOC: ProgressDocument = {};
 const NOOP_DEMO_UPDATE: (updater: (current: ProgressDocument) => ProgressDocument) => void = () => {};
 
@@ -1082,7 +1081,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                             toolName={currentTool?.title ?? 'this tool'}
                             onBack={() => nav.goBack()}
                         >
-                            <Suspense fallback={<ToolLoadingFallback />}>
+                            <Suspense fallback={<LoadingSpinner variant="compact" placement="panel" label={getToolLoadingLabel(activeTool, user?.curriculumLevel)} />}>
                                 {currentTool?.component}
                             </Suspense>
                         </ToolErrorBoundary>

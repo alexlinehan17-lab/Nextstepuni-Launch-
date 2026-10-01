@@ -16,6 +16,7 @@ import { describe, expect, it, beforeEach } from 'vitest';
 
 import {
   beginRegistrationProvisioning,
+  getRegistrationLoadingAvatar,
   endRegistrationProvisioning,
   isRegistrationProvisioning,
   registrationHoldRemainingMs,
@@ -142,5 +143,29 @@ describe('registration error hand-off', () => {
     // Another build's code, or a hand-edited one, must not reach the UI.
     window.sessionStorage.setItem('nsu:registration-error', '<img src=x onerror=alert(1)>');
     expect(takeRegistrationError()).toBeNull();
+  });
+});
+
+
+describe('registration loading character', () => {
+  it('carries the explicit choice only for the current in-flight attempt', () => {
+    beginRegistrationProvisioning(1_000_000, 'star-crew:hugger');
+    expect(getRegistrationLoadingAvatar(1_010_000)).toBe('star-crew:hugger');
+    endRegistrationProvisioning();
+    expect(getRegistrationLoadingAvatar(1_010_000)).toBeUndefined();
+    beginRegistrationProvisioning(1_020_000);
+    expect(getRegistrationLoadingAvatar(1_020_000)).toBeUndefined();
+    endRegistrationProvisioning();
+  });
+
+  it('cannot leak a choice after expiry, storage clearing, or a different page context', () => {
+    beginRegistrationProvisioning(1_000_000, 'star-crew:hugger');
+    expect(getRegistrationLoadingAvatar(1_100_000)).toBeUndefined();
+    beginRegistrationProvisioning(1_000_000, 'star-crew:hugger');
+    window.sessionStorage.clear();
+    expect(getRegistrationLoadingAvatar(1_010_000)).toBeUndefined();
+    beginRegistrationProvisioning(1_000_000, 'star-crew:hugger');
+    window.sessionStorage.setItem(KEY, 'other-page:1000000');
+    expect(getRegistrationLoadingAvatar(1_010_000)).toBeUndefined();
   });
 });

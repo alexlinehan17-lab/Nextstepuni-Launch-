@@ -51,6 +51,8 @@
 
 const KEY = 'nsu:registration-provisioning';
 const CHANGE_EVENT = 'nsu:registration-provisioning-change';
+// Appearance only, held in memory for this attempt; never another user's cache.
+let loadingAvatar: string | undefined;
 
 /**
  * Notify React readers after the current stack has settled.
@@ -90,7 +92,8 @@ const MAX_AGE_MS = 90_000;
 const CONTEXT_ID = `${Math.random().toString(36).slice(2)}${Date.now().toString(36)}`;
 
 /** Mark that a student registration is in flight for this tab. */
-export function beginRegistrationProvisioning(now: number = Date.now()): void {
+export function beginRegistrationProvisioning(now: number = Date.now(), avatar?: string): void {
+  loadingAvatar = avatar;
   try {
     window.sessionStorage.setItem(KEY, `${CONTEXT_ID}:${now}`);
   } catch {
@@ -101,6 +104,7 @@ export function beginRegistrationProvisioning(now: number = Date.now()): void {
 
 /** Clear the marker: the registration finished, or failed and we are back on the form. */
 export function endRegistrationProvisioning(): void {
+  loadingAvatar = undefined;
   try {
     window.sessionStorage.removeItem(KEY);
   } catch {
@@ -200,4 +204,9 @@ export function takeRegistrationError(): RegistrationErrorCode | null {
   } catch {
     return null;
   }
+}
+
+/** The explicitly chosen crew survives LoginPage unmounting during provisioning. */
+export function getRegistrationLoadingAvatar(now: number = Date.now()): string | undefined {
+  return registrationHoldRemainingMs(now) > 0 ? loadingAvatar : undefined;
 }

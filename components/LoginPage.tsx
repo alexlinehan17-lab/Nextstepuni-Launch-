@@ -34,6 +34,7 @@ import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '.
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 import Avatar from './Avatar';
 import { getAvatarName } from '../data/personalStarCrew';
+import { pickLoadingCrew } from '../utils/loadingCrew';
 import { useModal } from '../hooks/useModal';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import AccountCard from './AccountCard';
@@ -290,7 +291,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   }, [resendCountdown]);
 
   // Fallback for existing accounts without a saved avatar.
-  const defaultAvatar = useMemo(() => AVATAR_SEEDS[Math.floor(Math.random() * AVATAR_SEEDS.length)], []);
+  const defaultAvatar = useMemo(() => pickLoadingCrew().id, []);
 
   // ── Login handler ──
   const handleLogin = async () => {
@@ -562,7 +563,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // signs the student in immediately, and AuthContext's no-user-doc fallback
       // then routes them into Onboarding ~1s later -- while the rollback below can
       // still delete the account underneath them. See utils/registrationProvisioning.
-      beginRegistrationProvisioning();
+      beginRegistrationProvisioning(Date.now(), selectedAvatar);
       // Warm the onboarding chunk while the account is being provisioned. Every
       // student who gets past this line lands in Onboarding, and AppRouter
       // lazy-loads it — so without this the 44KB fetch starts only once the

@@ -7,6 +7,11 @@ import React from 'react';
 export default function IllustrationTheme() {
   return <svg aria-hidden="true" width="0" height="0" className="illustration-theme-defs">
     <defs>
+      <filter id="nsu-paperless-illustration" colorInterpolationFilters="sRGB">
+        <feColorMatrix in="SourceGraphic" type="matrix"
+          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -4 -4 -4 0 10.8" result="withoutPaper" />
+        <feComposite in="withoutPaper" in2="SourceGraphic" operator="in" />
+      </filter>
       <filter id="nsu-dark-illustration" colorInterpolationFilters="sRGB">
         <feColorMatrix in="SourceGraphic" type="matrix"
           values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -4 -4 -4 0 10.8" result="withoutPaper" />
