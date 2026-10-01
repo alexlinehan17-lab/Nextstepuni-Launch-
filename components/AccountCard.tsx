@@ -1,56 +1,23 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
-import { AnimatePresence, useReducedMotion } from 'framer-motion';
-import { ArrowLeft } from 'lucide-react';
-import { MotionDiv } from './Motion';
+import React, { useRef, useState } from 'react';
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Check,
+  GraduationCap,
+  Plus,
+  X,
+} from 'lucide-react';
 import Avatar from './Avatar';
 import { WelcomeCharacter } from './WelcomeCharacter';
-import { getAvatarName } from '../data/personalStarCrew';
-import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import { PERSONAL_STAR_CREW } from '../data/personalStarCrew';
+import { useModal } from '../hooks/useModal';
+import './account-live.css';
 
 export const AuthWordmark = () => (
-  <span className="font-sans text-[26px] font-bold leading-none tracking-[-0.03em]">nextstepuni</span>
+  <span className="auth-live-wordmark">
+    nextstepuni<span>.</span>
+  </span>
 );
-
-function WelcomeArtworkPanel() {
-  return <div className="auth-paper-story hidden md:flex md:flex-col w-1/2 relative">
-    <div className="flex items-center gap-3">
-      <div style={{ color: '#1a1a1a' }}><AuthWordmark /></div>
-      <div style={{ flex: 1, height: 1, backgroundColor: 'rgba(26,26,26,0.12)' }} />
-    </div>
-    <div className="flex-1 flex flex-col items-center justify-center text-center">
-      <WelcomeCharacter />
-      <h2 className="auth-paper-caption">Built around how you learn.</h2>
-      <p className="auth-paper-caption-detail">Personalised study, examiner-grounded.</p>
-    </div>
-  </div>;
-}
-
-function RegistrationStory({ step, avatar, name }: { step: number; avatar: string; name: string }) {
-  const reducedMotion = useReducedMotion();
-  const transition = { duration: reducedMotion ? 0 : 0.24, ease: 'easeOut' };
-  return <aside className="auth-registration-story">
-    <AnimatePresence mode="wait" initial={false}>
-      <MotionDiv key={step} className="auth-registration-story-content"
-        initial={{ opacity: 0, y: reducedMotion ? 0 : 10 }} animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: reducedMotion ? 0 : -8 }} transition={transition}>
-        <p className="auth-paper-eyebrow">{step === 3 ? 'Your account. Your character.' : step === 2 ? 'Make yourself at home.' : 'Let’s make it personal.'}</p>
-        <h2 className={step < 3 ? 'auth-registration-brand-heading' : undefined}>{step === 3 ? <>A little<br />more<br /><em>you.</em></> : step === 2 ? <>A space<br />of your<br /><em>own.</em></> : <>Your next<br /><em>chapter.</em></>}</h2>
-        <p className="auth-registration-story-copy">{step === 3 ? 'Pick the one that feels like you. They’ll be right here as you find your way.' : step === 2 ? 'Your subjects, your progress, your plans. One place to make them yours.' : 'A few details to get started. Then we’ll make room for your subjects, your goals and you.'}</p>
-        {step === 3 ? <div className="auth-crew-selected">
-          <AnimatePresence mode="wait" initial={false}>
-            <MotionDiv key={avatar} className="auth-crew-selected-inner"
-              initial={{ opacity: 0, y: reducedMotion ? 0 : 6 }} animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: reducedMotion ? 0 : -4 }} transition={{ ...transition, duration: reducedMotion ? 0 : 0.14 }}>
-              <Avatar seed={avatar} alt="" className="auth-crew-portrait" />
-              <div><h3>{getAvatarName(avatar)}</h3><p>{name.trim().split(/\s+/)[0] || 'Your'}{name.trim() ? '’s' : ''} Star Crew character</p></div>
-            </MotionDiv>
-          </AnimatePresence>
-        </div> : <div className="auth-registration-illustration"><WelcomeCharacter /></div>}
-      </MotionDiv>
-    </AnimatePresence>
-  </aside>;
-}
-
 interface AccountCardProps {
   children: React.ReactNode;
   devButton?: React.ReactNode;
@@ -58,64 +25,195 @@ interface AccountCardProps {
   registerStep: number;
   avatar: string;
   name: string;
-  onRegistrationBack: () => void;
+  school: string;
+  busy: boolean;
+  onAvatarChange: (avatar: string) => void;
+  onWelcome: () => void;
+  onSchoolAccess: () => void;
 }
-
-export default function AccountCard({ children, devButton, view, registerStep, avatar, name, onRegistrationBack }: AccountCardProps) {
-  const mobileAppDesign = useMobileAppDesign();
-  const reducedMotion = useReducedMotion();
-  const registering = view === 'register';
-  const contentRef = useRef<HTMLDivElement>(null);
-  const [cardHeight, setCardHeight] = useState<number>();
-  const [desktop, setDesktop] = useState(false);
-
-  // Animate the box's real height so the text and artwork never stretch. The
-  // inner content remains naturally sized, including errors and text zoom.
-  // Phones retain normal document flow for scrolling with the keyboard open.
-  useLayoutEffect(() => {
-    const media = window.matchMedia('(min-width: 768px)');
-    const updateViewport = () => setDesktop(media.matches);
-    updateViewport();
-    media.addEventListener('change', updateViewport);
-    const measure = () => {
-      const content = contentRef.current;
-      const height = content?.getBoundingClientRect().height;
-      if (height && content?.parentElement) {
-        const style = getComputedStyle(content.parentElement);
-        setCardHeight(Math.ceil(height + parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth)));
-      }
-    };
-    measure();
-    const observer = new ResizeObserver(measure);
-    if (contentRef.current) observer.observe(contentRef.current);
-    return () => { observer.disconnect(); media.removeEventListener('change', updateViewport); };
-  }, []);
-
-  return <div data-view={view} className={`auth-paper ${mobileAppDesign ? 'account-entry' : 'theme-compat'} relative flex min-h-[100dvh] flex-col items-center justify-center overflow-x-hidden bg-[var(--surface-canvas)] [overflow-anchor:none] md:min-h-screen md:p-8`}>
-    <MotionDiv initial={{ opacity: 0, y: reducedMotion ? 0 : 20 }}
-      animate={{ opacity: 1, y: 0, height: desktop && cardHeight ? cardHeight : 'auto' }}
-      transition={{ duration: reducedMotion ? 0 : 0.55, ease: [0.22, 1, 0.36, 1] }}
-      className="account-card auth-adaptive-card w-full">
-      <div ref={contentRef}>
-        {registering && <header className="auth-registration-header">
-          <AuthWordmark />
-          <div>
-            <button type="button" className="auth-registration-back" onClick={onRegistrationBack}><ArrowLeft size={15} aria-hidden="true" /> Back</button>
-            <span className="auth-registration-tagline">A beginning, built around you.</span>
-            <span role="status" aria-label={`Account creation, step ${registerStep} of 3`}>0{registerStep} / 03</span>
-          </div>
-        </header>}
-        <div className="auth-card-body">
-          {registering ? <RegistrationStory step={registerStep} avatar={avatar} name={name} /> : <WelcomeArtworkPanel />}
-          <div className="account-form flex w-full flex-1 flex-col justify-start px-5 pb-[calc(24px+var(--sab,0px))] pt-[calc(20px+var(--sat,0px))] sm:px-8 md:w-1/2 md:flex-none md:justify-center md:px-14 md:py-12">
-            <div className="mx-auto flex w-full max-w-[420px] flex-1 flex-col md:max-w-[380px] md:flex-none">
-              {mobileAppDesign && !registering && <div className="account-wordmark"><AuthWordmark /></div>}
+export default function AccountCard({
+  children,
+  devButton,
+  view,
+  registerStep,
+  avatar,
+  name,
+  school,
+  busy,
+  onAvatarChange,
+  onWelcome,
+  onSchoolAccess,
+}: AccountCardProps) {
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const picker = useRef<HTMLDivElement>(null);
+  useModal(pickerOpen, () => setPickerOpen(false), picker);
+  return (
+    <main className="auth-live theme-compat" data-view={view}>
+      <section className="auth-live-shell" aria-label="NextStepUni account">
+        <header className="auth-live-brandbar">
+          <button
+            type="button"
+            onClick={onWelcome}
+            disabled={busy}
+            aria-label="NextStepUni welcome"
+          >
+            <AuthWordmark />
+          </button>
+          <button
+            type="button"
+            className="auth-live-quiet"
+            disabled={busy}
+            onClick={onSchoolAccess}
+          >
+            <GraduationCap size={17} aria-hidden="true" />
+            {view === 'gc' ? 'Student sign-in' : 'For schools'}
+            <ArrowUpRight size={15} aria-hidden="true" />
+          </button>
+        </header>
+        <div className="auth-live-layout">
+          <aside className="auth-live-identity">
+            <h2>
+              Built around
+              <br />
+              how you learn<span>.</span>
+            </h2>
+            <WelcomeCharacter showCue />
+            <div className="auth-live-pass">
+              <div className="auth-live-pass-top">
+                <span>YOUR SPACE</span>
+                <span>
+                  {avatar ? (
+                    <>
+                      <Check size={12} aria-hidden="true" />
+                      Your crew, chosen
+                    </>
+                  ) : name.trim() ? (
+                    'Taking shape'
+                  ) : (
+                    'Made for you'
+                  )}
+                </span>
+              </div>
+              <div className="auth-live-pass-person">
+                <button
+                  type="button"
+                  className="auth-live-avatar"
+                  disabled={busy}
+                  aria-label={
+                    avatar
+                      ? 'Change your Star Crew character'
+                      : 'Choose your Star Crew character'
+                  }
+                  onClick={() => setPickerOpen(true)}
+                >
+                  {avatar ? (
+                    <Avatar
+                      seed={avatar}
+                      alt=""
+                      className="auth-live-avatar-art"
+                    />
+                  ) : (
+                    <span className="auth-live-crew-waiting" aria-hidden="true">
+                      <i />
+                      <i />
+                      <span>
+                        <Plus size={19} />
+                      </span>
+                    </span>
+                  )}
+                </button>
+                <div>
+                  <strong>{name.trim() || 'Your name here'}</strong>
+                  <span>
+                    <GraduationCap size={14} aria-hidden="true" />
+                    {school || 'Your school. Your next step.'}
+                  </span>
+                </div>
+                <ArrowUpRight size={17} aria-hidden="true" />
+              </div>
+              <div className="auth-live-pass-bottom">
+                <span>Personalised study</span>
+                <span>Examiner-grounded</span>
+              </div>
+            </div>
+          </aside>
+          <div className="auth-live-deck">
+            <div className="auth-live-sheet" aria-hidden="true" />
+            <div
+              className="auth-live-sheet auth-live-sheet-two"
+              aria-hidden="true"
+            />
+            <div className="auth-live-card">
+              {view === 'register' && (
+                <span
+                  className="auth-live-sr"
+                  role="status"
+                  aria-label={`Account creation, step ${registerStep} of 4`}
+                >
+                  Step {registerStep} of 4
+                </span>
+              )}
               {children}
             </div>
           </div>
         </div>
-      </div>
-    </MotionDiv>
-    {devButton}
-  </div>;
+      </section>
+      {devButton && <div className="auth-live-footer">{devButton}</div>}
+      {pickerOpen && (
+        <div className="auth-live-overlay">
+          <div
+            ref={picker}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="auth-crew-title"
+            className="auth-live-dialog"
+          >
+            <button
+              type="button"
+              className="auth-live-dialog-close"
+              aria-label="Close character picker"
+              onClick={() => setPickerOpen(false)}
+            >
+              <X size={19} />
+            </button>
+            <h2 id="auth-crew-title">Meet your Star Crew.</h2>
+            <p>Choose a character to make this space yours.</p>
+            <div
+              className="auth-live-crew"
+              role="group"
+              aria-label="Your Star Crew character"
+            >
+              {PERSONAL_STAR_CREW.map((item) => (
+                <button
+                  type="button"
+                  key={item.id}
+                  aria-label={`Choose ${item.name} avatar`}
+                  aria-pressed={avatar === item.id}
+                  onClick={() => {
+                    onAvatarChange(item.id);
+                    setPickerOpen(false);
+                  }}
+                >
+                  <Avatar
+                    seed={item.id}
+                    alt=""
+                    className="auth-live-crew-art"
+                  />
+                  <span>{item.name.replace(/^The /, '')}</span>
+                  {avatar === item.id && <Check size={14} aria-hidden="true" />}
+                </button>
+              ))}
+            </div>
+            <button
+              type="button"
+              className="auth-live-quiet"
+              onClick={() => setPickerOpen(false)}
+            >
+              Back to your account <ArrowRight size={15} aria-hidden="true" />
+            </button>
+          </div>
+        </div>
+      )}
+    </main>
+  );
 }

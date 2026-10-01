@@ -50,16 +50,17 @@ describe('mobile/tablet-only design boundary', () => {
     native.enabled = true;
     expect(isMobileAppDesign()).toBe(true);
   });
-  it('keeps the original desktop welcome and sign-in form', async () => {
+  it('opens the approved welcome and password-manager-ready sign-in form', async () => {
     const { container } = render(<LoginPage handleLoginSuccess={vi.fn()} />);
     const login = screen.getAllByRole('button', { name: 'Log in' }).at(-1)!;
     expect(login).toBeInTheDocument();
-    expect(container.querySelector('.account-entry')).toBeNull();
+    expect(container.querySelector('.auth-live')).not.toBeNull();
+    expect(screen.queryByText('Welcome to NextStepUni')).toBeNull();
     expect(screen.queryByRole('textbox', { name: 'Email' })).toBeNull();
     fireEvent.click(login);
-    expect(await screen.findByRole('heading', { name: 'Welcome back', level: 2 })).toBeInTheDocument();
-    expect(screen.getByLabelText('Email')).toHaveAttribute('autocomplete', 'email');
-    expect(screen.getByRole('button', { name: 'Forgot?' })).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: 'Good to see you.', level: 1 })).toBeInTheDocument();
+    expect(screen.getByLabelText('Email')).toHaveAttribute('autocomplete', 'username');
+    expect(screen.getByRole('button', { name: 'Forgot password?' })).toBeInTheDocument();
   });
   it('mounts the approved desktop onboarding and saves its shared draft', () => {
     const { container } = render(<Onboarding userId="desktop-scope" userName="Alex" onComplete={vi.fn()} onSkip={vi.fn()} />);
