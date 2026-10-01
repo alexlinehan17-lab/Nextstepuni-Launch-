@@ -13,7 +13,7 @@ import Avatar from './Avatar';
 import { motion, useReducedMotion } from 'framer-motion';
 import { WelcomeCharacter } from './WelcomeCharacter';
 import AccountCrewPicker from './AccountCrewPicker';
-import { getPersonalStarCrew } from '../data/personalStarCrew';
+import { DEFAULT_PERSONAL_STAR_CREW_ID, getPersonalStarCrew } from '../data/personalStarCrew';
 import { useModal } from '../hooks/useModal';
 import { useDeckSound } from './immersiveDeck/useDeckSound';
 import './account-live.css';
@@ -50,7 +50,7 @@ export default function AccountCard({
   onSchoolAccess,
 }: AccountCardProps) {
   const [pickerOpen, setPickerOpen] = useState(false);
-  const [draftAvatar, setDraftAvatar] = useState(avatar);
+  const [draftAvatar, setDraftAvatar] = useState(avatar || DEFAULT_PERSONAL_STAR_CREW_ID);
   const draftCharacter = getPersonalStarCrew(draftAvatar);
   const reducedMotion = useReducedMotion();
   const measure = useRef<HTMLDivElement>(null);
@@ -165,7 +165,7 @@ export default function AccountCard({
               how you learn<span>.</span>
             </h2>
             <WelcomeCharacter showCue />
-            <div className="auth-live-pass">
+            {view !== 'gc' && <div className="auth-live-pass">
               <div className="auth-live-pass-top">
                 <span>YOUR SPACE</span>
                 <span>
@@ -192,7 +192,7 @@ export default function AccountCard({
                       ? 'Change your Star Crew character'
                       : 'Choose your Star Crew character'
                   }
-                  onClick={() => { setDraftAvatar(avatar); setPickerOpen(true); }}
+                  onClick={() => { setDraftAvatar(avatar || DEFAULT_PERSONAL_STAR_CREW_ID); setPickerOpen(true); }}
                 >
                   {avatar ? (
                     <Avatar
@@ -223,7 +223,7 @@ export default function AccountCard({
                 <span>Personalised study</span>
                 <span>Examiner-grounded</span>
               </div>
-            </div>
+            </div>}
           </aside>
           <div className="auth-live-deck">
             <div className="auth-live-sheet" aria-hidden="true" />

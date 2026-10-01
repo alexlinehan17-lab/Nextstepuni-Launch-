@@ -54,11 +54,6 @@
 .account-crew-grid>label[data-selected=true]{border-color:var(--foreground);box-shadow:inset 0 0 0 .5px var(--foreground);transform:none}
 .account-crew-grid>label:has(:focus-visible){outline:2px solid var(--ring);outline-offset:4px}
 .account-crew-grid>label:has([data-disabled]){opacity:.5;cursor:default}
-.account-crew-invitation{position:relative;width:100%;height:100%;display:grid;place-items:center}
-.account-crew-invitation>i,.account-crew-invitation>span{position:absolute;display:grid;place-items:center;width:70px;height:83px;border:1px solid var(--al-line,#dedede);border-radius:12px;background:var(--al-paper,#fff)}
-.account-crew-invitation>i:first-child{transform:translate(-13px,1px) rotate(-13deg)}
-.account-crew-invitation>i:nth-child(2){transform:translate(13px,1px) rotate(12deg)}
-.account-crew-invitation>span{background:var(--al-ink,#171717);color:var(--al-paper,#fff);font:400 40px 'Account Diatype',sans-serif;border-color:var(--al-ink,#171717)}
 @media(max-width:420px){.account-crew-feature>div{width:115px;height:115px}.account-crew-feature{min-height:125px;gap:10px}.account-crew-feature strong{font-size:20px}.account-crew-grid>label>.account-crew-illustration{width:72px;height:72px}.account-crew-grid>label{padding-inline:3px}.account-school-hint{display:none}}
 @media(prefers-reduced-motion:reduce){.account-crew-grid>label,.account-school-trigger>svg{transition:none}.account-crew-grid>label:hover,.account-crew-grid>label[data-selected=true]{transform:none}.account-school-popup[data-open]{animation:none}}
 

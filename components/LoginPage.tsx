@@ -32,6 +32,7 @@ import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
+import { DEFAULT_PERSONAL_STAR_CREW_ID } from '../data/personalStarCrew';
 import { pickLoadingCrew } from '../utils/loadingCrew';
 import { useModal } from '../hooks/useModal';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
@@ -534,6 +535,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const handleRegisterNext = () => {
     setError('');
     if (!validateRegisterStep()) return;
+    if (registerStep === 3) setAvatar(current => current || DEFAULT_PERSONAL_STAR_CREW_ID);
     if (registerStep < 4) setRegisterStep(s => s + 1);
   };
 
