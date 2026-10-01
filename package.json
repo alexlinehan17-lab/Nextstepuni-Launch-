@@ -58,6 +58,9 @@
     "ts-fsrs": "^5.4.1"
   },
   "overrides": {
+    "get-uri": {
+      "basic-ftp": "6.2.1"
+    },
     "firebase-tools": {
       "@google-cloud/pubsub": "6.0.1"
     },
