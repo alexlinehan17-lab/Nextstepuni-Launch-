@@ -59,7 +59,8 @@
   },
   "overrides": {
     "firebase-tools": {
-      "@google-cloud/pubsub": "6.0.1"
+      "@google-cloud/pubsub": "6.0.1",
+      "basic-ftp": "6.2.1"
     },
     "gaxios@6.7.1": {
       "uuid": "11.1.1"
