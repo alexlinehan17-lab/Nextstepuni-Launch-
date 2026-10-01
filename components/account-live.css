@@ -512,11 +512,11 @@
 .auth-live-error {
   font-size: 14px;
   line-height: 1.5;
-  color: #b42318;
+  color: var(--al-ink);
   margin-top: 16px;
 }
 .dark .auth-live-error {
-  color: #ffb3ac;
+  color: var(--al-ink);
 }
 .auth-live-key-hint {
   font-size: 12px;
@@ -998,3 +998,11 @@
 .auth-live-picker-actions .auth-live-quiet{font-size:12px;min-height:44px}
 .auth-live-picker-actions .auth-live-primary{font-size:14px;min-height:46px;gap:20px;padding-inline:16px}
 @media(max-width:420px){.auth-live-picker-actions{align-items:stretch;flex-direction:column-reverse;gap:9px}.auth-live-picker-actions .auth-live-primary{width:100%}}
+
+/* Calm field states: a thin charcoal edge, with no movement or orange box. */
+.auth-live .auth-live-field :is(input, select) { transition: border-color 150ms ease, box-shadow 150ms ease; }
+.auth-live .auth-live-field :is(input, select):hover { border-color: var(--al-muted); }
+.auth-live .auth-live-field :is(input, select):focus-visible { outline: none; border-color: var(--al-ink); box-shadow: 0 0 0 2px color-mix(in srgb, var(--al-ink) 9%, transparent); }
+.auth-live .auth-live-field :is(input, select)[aria-invalid=true] { border-color: var(--al-muted); }
+.auth-live-field .auth-live-field-error { display: block; margin-top: 8px; color: var(--al-ink); font-size: 13px; font-weight: 400; line-height: 1.5; }
+@media (prefers-reduced-motion: reduce) { .auth-live .auth-live-field :is(input, select) { transition: none; } }

@@ -5,87 +5,74 @@
 
 import { useEffect, useRef, type RefObject } from 'react';
 
-export function useModal(
-  isOpen: boolean,
-  onClose: () => void,
-  dialogRef?: RefObject<HTMLElement | null>,
-) {
-  const previousFocusRef = useRef<HTMLElement | null>(null);
-  const onCloseRef = useRef(onClose);
+interface ModalOptions {
+  closeDisabled?: boolean;
+  initialFocus?: 'first' | 'dialog';
+}
+const activeModals: symbol[] = [];
+let savedOverflow = '';
+const focusableSelector = 'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
-  useEffect(() => {
-    onCloseRef.current = onClose;
-  }, [onClose]);
-
+/** One focus owner, scroll lock and dismissal contract for every modal. */
+export function useModal(isOpen: boolean, onClose: () => void, dialogRef?: RefObject<HTMLElement | null>, options: ModalOptions = {}) {
+  const latest = useRef({ onClose, ...options });
+  latest.current = { onClose, ...options };
   useEffect(() => {
     if (!isOpen) return;
-
-    // Save current focus
-    previousFocusRef.current = document.activeElement as HTMLElement;
-
-    // Escape handler
-    const focusableSelector = [
-      'button:not([disabled])',
-      'a[href]',
-      'input:not([disabled])',
-      'select:not([disabled])',
-      'textarea:not([disabled])',
-      '[tabindex]:not([tabindex="-1"])',
-    ].join(',');
-
-    const getDialog = () => {
-      if (dialogRef?.current) return dialogRef.current;
-      const dialogs = Array.from(document.querySelectorAll<HTMLElement>('[role="dialog"][aria-modal="true"]'));
-      return dialogs.at(-1) ?? null;
-    };
-
-    // Portals wrapped in AnimatePresence may commit one frame after their
-    // owner effect. Resolve the dialog at focus time (not before it exists),
-    // then give the portal one additional frame before focusing its first
-    // control. This prevents focus remaining on the trigger until Tab is hit.
+    const token = Symbol('modal');
+    const previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    if (activeModals.length === 0) {
+      savedOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+    }
+    activeModals.push(token);
+    const isTop = () => activeModals.at(-1) === token;
+    const getDialog = () => dialogRef?.current ?? Array.from(document.querySelectorAll<HTMLElement>('[role="dialog"][aria-modal="true"]')).at(-1);
+    const controls = (dialog: HTMLElement) => Array.from(dialog.querySelectorAll<HTMLElement>(focusableSelector)).filter(el => {
+      const style = getComputedStyle(el);
+      return !el.closest('[hidden], [inert], [aria-hidden="true"]') && style.display !== 'none' && style.visibility !== 'hidden';
+    });
     let focusFrame = 0;
-    const portalFrame = window.requestAnimationFrame(() => {
-      focusFrame = window.requestAnimationFrame(() => {
+    const portalFrame = requestAnimationFrame(() => {
+      focusFrame = requestAnimationFrame(() => {
+        if (!isTop()) return;
         const dialog = getDialog();
-        const first = dialog?.querySelector<HTMLElement>(focusableSelector);
-        (first ?? dialog)?.focus();
+        if (dialog?.contains(document.activeElement)) return;
+        if (dialog) (latest.current.initialFocus === 'dialog' ? dialog : controls(dialog)[0] ?? dialog).focus();
       });
     });
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        e.stopPropagation();
-        onCloseRef.current();
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (!isTop() || event.defaultPrevented) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        event.stopPropagation();
+        if (!latest.current.closeDisabled) latest.current.onClose();
         return;
       }
+      if (event.key !== 'Tab') return;
       const dialog = getDialog();
-      if (e.key !== 'Tab' || !dialog) return;
-      const focusable = Array.from(dialog.querySelectorAll<HTMLElement>(focusableSelector))
-        .filter(element => !element.hasAttribute('hidden') && element.getAttribute('aria-hidden') !== 'true');
-      if (focusable.length === 0) {
-        e.preventDefault();
-        dialog.focus();
-        return;
-      }
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      if (e.shiftKey && (document.activeElement === first || !dialog.contains(document.activeElement))) {
-        e.preventDefault();
-        last.focus();
-      } else if (!e.shiftKey && (document.activeElement === last || !dialog.contains(document.activeElement))) {
-        e.preventDefault();
-        first.focus();
+      if (!dialog) return;
+      const focusable = controls(dialog);
+      if (!focusable.length) { event.preventDefault(); dialog.focus(); return; }
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      const active = document.activeElement;
+      if (active === dialog || !dialog.contains(active)) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (event.shiftKey && active === first) {
+        event.preventDefault(); last.focus();
+      } else if (!event.shiftKey && active === last) {
+        event.preventDefault(); first.focus();
       }
     };
-
-    document.addEventListener('keydown', handleKeyDown);
-
+    window.addEventListener('keydown', handleKeyDown);
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      window.cancelAnimationFrame(portalFrame);
-      if (focusFrame) window.cancelAnimationFrame(focusFrame);
-      // Restore focus
-      previousFocusRef.current?.focus();
+      const wasTop = isTop();
+      activeModals.splice(activeModals.indexOf(token), 1);
+      window.removeEventListener('keydown', handleKeyDown);
+      cancelAnimationFrame(portalFrame);
+      cancelAnimationFrame(focusFrame);
+      if (activeModals.length === 0) document.body.style.overflow = savedOverflow;
+      if (wasTop && previousFocus?.isConnected) previousFocus.focus();
     };
   }, [dialogRef, isOpen]);
 }

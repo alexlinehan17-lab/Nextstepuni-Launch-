@@ -228,6 +228,18 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     const code = takeRegistrationError();
     return code ? registrationErrorMessage(code) : '';
   });
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
+  const rejectField = (id: string, message: string) => {
+    setError('');
+    setFieldErrors({ [id]: message });
+    requestAnimationFrame(() => document.getElementById(id)?.focus());
+    return false;
+  };
+  const fieldValidation = (id: string) => ({
+    'aria-invalid': Boolean(fieldErrors[id]),
+    'aria-describedby': fieldErrors[id] ? `${id}-error` : undefined,
+  });
+  const fieldMessage = (id: string) => fieldErrors[id] && <small id={`${id}-error`} className="auth-live-field-error" role="alert">{fieldErrors[id]}</small>;
   const [isLoading, setIsLoading] = useState(false);
   const [resetSent, setResetSent] = useState(false);
   const [resendCountdown, setResendCountdown] = useState(0);
@@ -297,8 +309,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Login handler ──
   const handleLogin = async () => {
     if (isLoading) return;
-    if (!email.trim() || !password.trim()) { setError('Please enter your email and password.'); return; }
-    setIsLoading(true); setError('');
+    if (!email.trim()) { rejectField('login-email', 'Enter your email or username.'); return; }
+    if (!password.trim()) { rejectField('login-password', 'Enter your password.'); return; }
+    setIsLoading(true); setError(''); setFieldErrors({});
     const input = email.trim().toLowerCase();
     // Try as-is first (real email), then fall back to legacy @nextstep.app format
     const attempts = input.includes('@') ? [input] : [input, `${input}@nextstep.app`];
@@ -336,7 +349,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Google sign-in handler ──
   const handleGoogleSignIn = async () => {
     if (isLoading) return;
-    setIsLoading(true); setError('');
+    setIsLoading(true); setError(''); setFieldErrors({});
     try {
       const provider = new GoogleAuthProvider();
       const cred = await signInWithPopup(auth, provider);
@@ -393,7 +406,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Sign in with Apple handler (native iOS only) ──
   const handleAppleSignIn = async () => {
     if (isLoading) return;
-    setIsLoading(true); setError('');
+    setIsLoading(true); setError(''); setFieldErrors({});
     try {
       // Native Apple sign-in via AuthenticationServices (no third-party SDK).
       // The nonce pairing lives in utils/appleAuth so the deletion flow's
@@ -466,12 +479,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Forgot password handler ──
   const handleForgotPassword = async () => {
     if (isLoading || resendCountdown > 0) return;
-    if (!email.trim()) { setError('Please enter your email address.'); return; }
+    if (!email.trim()) { rejectField('reset-email', 'Enter your email address.'); return; }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
-      setError('Please enter a valid email address.');
+      rejectField('reset-email', 'Check the email address, for example you@example.com.');
       return;
     }
-    setIsLoading(true); setError('');
+    setIsLoading(true); setError(''); setFieldErrors({});
     try {
       await sendPasswordResetEmail(auth, email.trim().toLowerCase());
       setResetSent(true);
@@ -487,7 +500,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const handleGCLogin = async () => {
     if (isLoading) return;
     if (!gcSchool || !password.trim()) { setError('Please select your school and enter your password.'); return; }
-    setIsLoading(true); setError('');
+    setIsLoading(true); setError(''); setFieldErrors({});
     try {
       await signInWithEmailAndPassword(auth, `${schoolRole}-${gcSchool}@nextstep.app`, password);
     } catch (err: any) {
@@ -511,28 +524,28 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Register step validation ──
   const validateRegisterStep = (): boolean => {
     if (registerStep === 1) {
-      if (!email.trim()) { setError('Please enter your email.'); return false; }
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) { setError('Please enter a valid email address.'); return false; }
+      if (!name.trim()) { return rejectField('register-name', 'Enter your name.'); }
+      if (!email.trim()) { return rejectField('register-email', 'Enter your email address.'); }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) { return rejectField('register-email', 'Check the email address, for example you@example.com.'); }
       const normalised = email.trim().toLowerCase();
-      if (isReservedEmail(normalised)) { setError('This email is reserved.'); return false; }
-      if (!name.trim()) { setError('Please enter your name.'); return false; }
+      if (isReservedEmail(normalised)) { return rejectField('register-email', 'Use a different email address.'); }
       return true;
     }
     if (registerStep === 2) {
-      if (!school) { setError('Please select your school.'); return false; }
-      if (!joinCode.trim()) { setError('Please enter your school join code.'); return false; }
+      if (!school) { return rejectField('register-school', 'Choose your school.'); }
+      if (!joinCode.trim()) { return rejectField('register-join-code', 'Enter the join code from your school.'); }
       return true;
     }
     if (registerStep === 3) {
       const passwordError = passwordLengthError(password);
-      if (passwordError) { setError(passwordError); return false; }
+      if (passwordError) { return rejectField('register-password', passwordError); }
       return true;
     }
     return true;
   };
 
   const handleRegisterNext = () => {
-    setError('');
+    setError(''); setFieldErrors({});
     if (!validateRegisterStep()) return;
     if (registerStep < 4) setRegisterStep(s => s + 1);
   };
@@ -541,7 +554,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const handleRegisterSubmit = async () => {
     if (isLoading) return;
     if (!avatar) { setError('Choose your Star Crew character to continue.'); return; }
-    setIsLoading(true); setError('');
+    setIsLoading(true); setError(''); setFieldErrors({});
     const registrationEmail = email.trim().toLowerCase();
     if (isReservedEmail(registrationEmail)) {
       setError('This email is reserved.');
@@ -801,11 +814,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     if (isLoading) return;
     if (view === 'gc' || next === 'gc') setPassword('');
     setShowPassword(false);
-    setError('');
+    setError(''); setFieldErrors({});
     setView(next);
   };
   const registrationBack = () => {
-    setError('');
+    setError(''); setFieldErrors({});
     if (registerStep > 1) setRegisterStep((step) => step - 1);
     else navigate('welcome');
   };
@@ -850,11 +863,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       <div className="auth-live-password">
         <input
           id={id}
+          {...fieldValidation(id)}
           type={showPassword ? 'text' : 'password'}
           value={password}
           onChange={(event) => {
             setPassword(event.target.value);
-            setError('');
+            setError(''); setFieldErrors({});
           }}
           placeholder={creating ? 'Create a password' : 'Your password'}
           autoComplete={creating ? 'new-password' : 'current-password'}
@@ -863,7 +877,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           spellCheck={false}
           minLength={creating ? MIN_PASSWORD_LENGTH : undefined}
           maxLength={creating ? MAX_PASSWORD_LENGTH : undefined}
-          aria-describedby={creating ? 'account-password-rule' : undefined}
+          aria-describedby={[creating && 'account-password-rule', fieldErrors[id] && `${id}-error`].filter(Boolean).join(' ') || undefined}
         />
         <button
           type="button"
@@ -878,6 +892,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           )}
         </button>
       </div>
+      {fieldMessage(id)}
       {creating && (
         <small
           id="account-password-rule"
@@ -897,6 +912,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       <label htmlFor={id}>Email</label>
       <input
         id={id}
+        {...fieldValidation(id)}
         type={signingIn ? 'text' : 'email'}
         inputMode="email"
         autoComplete={signingIn ? 'username' : 'email'}
@@ -907,9 +923,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         placeholder="you@example.com"
         onChange={(event) => {
           setEmail(event.target.value);
-          setError('');
+          setError(''); setFieldErrors({});
         }}
       />
+      {fieldMessage(id)}
     </div>
   );
   const focusHeading = (definition: string) => {
@@ -1062,14 +1079,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                         <label htmlFor="register-name">Your Name</label>
                         <input
                           id="register-name"
+                          {...fieldValidation('register-name')}
                           value={name}
                           onChange={(event) => {
                             setName(event.target.value);
-                            setError('');
+                            setError(''); setFieldErrors({});
                           }}
                           placeholder="First and last name"
                           autoComplete="name"
                         />
+                        {fieldMessage('register-name')}
                         {/* Name remains free-form for all naming conventions. */}
                       </div>
                       {emailField('register-email')}
@@ -1079,9 +1098,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     <>
                       <div className="auth-live-field">
                         <label htmlFor="register-school">School</label>
-                        <AccountSchoolPicker id="register-school" value={school} disabled={isLoading} onChange={value => {
-                          setSchool(value); setJoinCode(''); setError('');
+                        <AccountSchoolPicker id="register-school" {...fieldValidation('register-school')} value={school} disabled={isLoading} onChange={value => {
+                          setSchool(value); setJoinCode(''); setError(''); setFieldErrors({});
                         }} />
+                        {fieldMessage('register-school')}
                       </div>
                       <div className="auth-live-field">
                         <label htmlFor="register-join-code">
@@ -1089,10 +1109,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                         </label>
                         <input
                           id="register-join-code"
+                          {...fieldValidation('register-join-code')}
                           value={joinCode}
                           onChange={(event) => {
                             setJoinCode(event.target.value);
-                            setError('');
+                            setError(''); setFieldErrors({});
                           }}
                           placeholder="From your school"
                           autoComplete="off"
@@ -1100,6 +1121,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                           autoCorrect="off"
                           spellCheck={false}
                         />
+                        {fieldMessage('register-join-code')}
                         <button
                           type="button"
                           className="auth-live-link"
@@ -1114,12 +1136,12 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     passwordField('register-password', true)}
                   {registerStep === 4 && (
                     <div>
-                      <AccountCrewPicker value={avatar} disabled={isLoading} onChange={value => { setAvatar(value); setError(''); }} />
+                      <AccountCrewPicker value={avatar} disabled={isLoading} onChange={value => { setAvatar(value); setError(''); setFieldErrors({}); }} />
                       <div className="auth-live-consent">
                         <div>
                           <span className="nsu-kobra account-consent-control">
                             <Checkbox id="register-consent" data-account-sound="tap" className="account-consent-box" checked={agreedToTerms} disabled={isLoading}
-                              onCheckedChange={checked => { setAgreedToTerms(checked); setError(''); }}
+                              onCheckedChange={checked => { setAgreedToTerms(checked); setError(''); setFieldErrors({}); }}
                               aria-label="I have read the Privacy Notice and agree to the Terms of Use" />
                           </span>
                           <span>
@@ -1264,7 +1286,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                       onClick={() => {
                         setResetSent(false);
                         setResendCountdown(0);
-                        setError('');
+                        setError(''); setFieldErrors({});
                       }}
                     >
                       Change email address
@@ -1380,7 +1402,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                         checked={schoolRole === 'gc'}
                         onChange={() => {
                           setSchoolRole('gc');
-                          setError('');
+                          setError(''); setFieldErrors({});
                           setPassword('');
                         }}
                       />
@@ -1395,7 +1417,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                         checked={schoolRole === 'staff'}
                         onChange={() => {
                           setSchoolRole('staff');
-                          setError('');
+                          setError(''); setFieldErrors({});
                           setPassword('');
                         }}
                       />
@@ -1404,7 +1426,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   </div>
                   <div className="auth-live-field">
                     <label htmlFor="gc-school">School</label>
-                    <AccountSchoolPicker id="gc-school" value={gcSchool} disabled={isLoading} onChange={value => { setGcSchool(value); setError(''); }} />
+                    <AccountSchoolPicker id="gc-school" value={gcSchool} disabled={isLoading} onChange={value => { setGcSchool(value); setError(''); setFieldErrors({}); }} />
                   </div>
                   {passwordField('gc-password')}
                 </fieldset>
@@ -1485,7 +1507,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     setEntryHelp(null);
                     setResetSent(false);
                     setResendCountdown(0);
-                    setError('');
+                    setError(''); setFieldErrors({});
                   }}
                 >
                   Check email address

@@ -190,3 +190,7 @@
 .ss-room-coaching .ss-timer-digits {font-size:clamp(82px,11vw,142px);margin-top:20px}
 .ss-room-coaching .ss-timer-status {margin-block:10px 16px}
 @media(max-width:700px) {.ss-room-coaching .ss-timer-digits{font-size:clamp(76px,23vw,115px)}.ss-room-coaching .ss-timer-main{min-height:310px}.ss-room-ink .ss-coaching,.ss-room-layers .ss-coaching{padding:18px}}
+
+.ss-navigation button.product-back-button { min-width: 44px; min-height: 44px; padding: 10px; border: 1.5px solid var(--ss-ink); border-radius: 12px; background: var(--ss-paper); color: var(--ss-ink); }
+.ss-navigation button.product-back-button:hover { color: var(--ss-ink); }
+.ss-navigation button.product-back-button:focus-visible { outline-color: var(--ss-ink); }

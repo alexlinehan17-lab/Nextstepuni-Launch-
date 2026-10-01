@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 
@@ -107,8 +107,25 @@ describe('anonymous feedback modal', () => {
     finishSend({ data: { success: true } });
     const thanks = await screen.findByRole('status');
     await waitFor(() => expect(thanks).toHaveFocus());
-    fireEvent.click(screen.getByRole('button', { name: 'Back to my study' }));
+    fireEvent.click(within(thanks).getByRole('button', { name: 'Close' }));
     expect(onClose).toHaveBeenCalledOnce();
+  });
+
+
+  test('retains the category, message and context choice after closing and reopening', async () => {
+    const onClose = vi.fn();
+    const { rerender } = render(<FeedbackModal open onClose={onClose} />);
+    fireEvent.click(screen.getByRole('radio', { name: 'Something isn’t working' }));
+    fireEvent.change(screen.getByLabelText('Your words. We’re listening.'), { target: { value: 'Please keep this draft while I check another screen.' } });
+    fireEvent.click(screen.getByRole('checkbox'));
+    fireEvent.keyDown(window, { key: 'Escape' });
+    expect(onClose).toHaveBeenCalledOnce();
+    rerender(<FeedbackModal open={false} onClose={onClose} />);
+    await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
+    rerender(<FeedbackModal open onClose={onClose} />);
+    expect(screen.getByLabelText('Your words. We’re listening.')).toHaveValue('Please keep this draft while I check another screen.');
+    expect(screen.getByRole('radio', { name: 'Something isn’t working' })).toBeChecked();
+    expect(screen.getByRole('checkbox')).not.toBeChecked();
   });
 
   test('explains the daily limit instead of blaming the connection', () => {

@@ -69,7 +69,7 @@ const MyDirection: React.FC<MyDirectionProps> = ({
 
   return (
     <main className="direction-page min-h-screen">
-      <header className="direction-navigation"><div><button type="button" onClick={onBack} aria-label="Back"><ArrowLeft size={21} /></button><h1>My Direction</h1></div><button type="button" className="student-secondary" onClick={onEditNorthStar}>Edit my direction <ArrowRight size={18} /></button></header>
+      <header className="direction-navigation"><div><button type="button" onClick={onBack} aria-label="Back to home"><ArrowLeft size={21} /></button><h1>My Direction</h1></div><button type="button" className="student-secondary" onClick={onEditNorthStar}>Edit my direction <ArrowRight size={18} /></button></header>
       <div className={`direction-body ${loaded ? '' : 'opacity-70'}`}>
         <section className="direction-north-star">
           <img src="/assets/training/north-star-compass.png" alt="" />

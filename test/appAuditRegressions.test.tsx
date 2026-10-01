@@ -93,7 +93,7 @@ describe('app audit regressions', () => {
     const profile = readFileSync(resolve(ROOT, 'components/UserProfileMenu.tsx'), 'utf8');
     const catchUp = readFileSync(resolve(ROOT, 'components/CatchUpLane/index.tsx'), 'utf8');
     const commandWords = readFileSync(resolve(ROOT, 'components/CommandWordReflex/index.tsx'), 'utf8');
-    expect(router).toContain('aria-label="Back to modules"');
+    expect(router).toContain('label="Back to modules"');
     expect(shop).toContain("'Close Island Shop'");
     expect(profile).toContain('aria-label="Close profile"');
     expect(catchUp).toContain('aria-label="Catch-Up level"');

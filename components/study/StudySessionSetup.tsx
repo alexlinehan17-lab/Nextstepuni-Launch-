@@ -51,7 +51,7 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
     <div className="study-session-page">
       <div className="ss-shell">
         <nav className="ss-navigation" aria-label="Study navigation">
-          <BackButton onClick={onBack} />
+          <BackButton onClick={onBack} label="Back to home" />
           <button type="button" onClick={onReflections}><BookOpen size={17} aria-hidden="true" />My reflections{reflectionCount > 0 ? ` (${reflectionCount})` : ''}</button>
         </nav>
         <header className="lp-masthead ss-masthead">

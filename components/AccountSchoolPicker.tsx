@@ -8,16 +8,16 @@ import './account-ui-runtime.css';
 import './account-controls.css';
 
 const schoolIds = SCHOOLS.map(school => school.id);
-export default function AccountSchoolPicker({ id, value, onChange, disabled = false }: {
+export default function AccountSchoolPicker({ id, value, onChange, disabled = false, ...validation }: {
   id: string; value: string; onChange: (value: string) => void; disabled?: boolean;
-}) {
+} & Pick<React.AriaAttributes, 'aria-invalid' | 'aria-describedby'>) {
   const [open, setOpen] = useState(false);
   const trigger = useRef<HTMLButtonElement>(null);
   return <div className="nsu-kobra account-school-field">
     <Combobox items={schoolIds} value={value || null} open={open} onOpenChange={setOpen} disabled={disabled}
       itemToStringLabel={school => `${getSchoolName(school)} ${SCHOOL_IDENTITY[school as SchoolId]?.fullName ?? ''}`}
       onValueChange={value => onChange(value || '')}>
-      <ComboboxTrigger id={id} ref={trigger} className="account-school-trigger" data-account-sound="tap">
+      <ComboboxTrigger id={id} ref={trigger} {...validation} className="account-school-trigger" data-account-sound="tap">
         <SchoolCrest school={value as SchoolId} />
         <span><small>{value ? 'Your school' : 'Find your school'}</small><ComboboxValue>{() => value ? getSchoolName(value) : 'Choose a school'}</ComboboxValue></span>
       </ComboboxTrigger>

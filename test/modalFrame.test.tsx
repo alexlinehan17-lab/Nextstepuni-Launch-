@@ -39,6 +39,31 @@ describe('ModalFrame focus management', () => {
     expect(last).toHaveFocus();
   });
 
+  test('blocks Escape and backdrop dismissal while saving', () => {
+    const onClose = vi.fn();
+    render(<ModalFrame open onClose={onClose} title="Saving" closeDisabled>Content</ModalFrame>);
+    fireEvent.keyDown(window, { key: 'Escape' });
+    fireEvent.mouseDown(screen.getByRole('dialog').parentElement!);
+    expect(screen.getByRole('button', { name: 'Close' })).toBeDisabled();
+    expect(onClose).not.toHaveBeenCalled();
+  });
+
+  test('gives a nested dialog sole ownership of Escape and retains the scroll lock', async () => {
+    const outerClose = vi.fn(), innerClose = vi.fn();
+    const { rerender } = render(<ModalFrame open onClose={outerClose} title="Outer"><button>Open inner</button></ModalFrame>);
+    const opener = screen.getByRole('button', { name: 'Open inner' });
+    await waitFor(() => expect(screen.getByRole('dialog')).toHaveFocus());
+    opener.focus();
+    rerender(<ModalFrame open onClose={outerClose} title="Outer"><button>Open inner</button><ModalFrame open onClose={innerClose} title="Inner">Nested</ModalFrame></ModalFrame>);
+    await waitFor(() => expect(screen.getByRole('dialog', { name: 'Inner' })).toHaveFocus());
+    fireEvent.keyDown(window, { key: 'Escape' });
+    expect(innerClose).toHaveBeenCalledOnce();
+    expect(outerClose).not.toHaveBeenCalled();
+    rerender(<ModalFrame open onClose={outerClose} title="Outer"><button>Open inner</button></ModalFrame>);
+    expect(document.body.style.overflow).toBe('hidden');
+    expect(opener).toHaveFocus();
+  });
+
   test('uses the latest close callback and restores focus when closed', async () => {
     const opener = document.createElement('button');
     document.body.appendChild(opener);
