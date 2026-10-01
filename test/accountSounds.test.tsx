@@ -1,6 +1,7 @@
 import React from 'react';
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import AccountCrewPicker from '../components/AccountCrewPicker';
 import AccountCard from '../components/AccountCard';
 
 const contexts: FakeAudioContext[] = [];
@@ -20,6 +21,7 @@ function Harness({ onPress = vi.fn() }: { onPress?: () => void }) {
     <button type="button" onClick={onPress}>Continue</button>
     <button type="button" data-account-sound="save">Choose character</button>
     <button type="button" disabled>Disabled action</button>
+    <AccountCrewPicker value="" onChange={vi.fn()} />
   </AccountCard>;
 }
 beforeEach(() => {
@@ -39,6 +41,14 @@ describe('account interaction sounds', () => {
     expect(contexts[0].createOscillator).toHaveBeenCalledOnce();
     unmount();
     expect(contexts[0].close).toHaveBeenCalledOnce();
+  });
+  it('plays one cue for a tile label and ignores its hidden forwarded input', () => {
+    const { container } = render(<Harness />);
+    fireEvent.click(screen.getByText('Maker', { selector: 'label > span' }));
+    expect(contexts).toHaveLength(1);
+    expect(contexts[0].createOscillator).toHaveBeenCalledOnce();
+    fireEvent.click(container.querySelector('input[value="star-crew:maker"]')!);
+    expect(contexts[0].createOscillator).toHaveBeenCalledOnce();
   });
   it('mutes current and queued cues, remembers the preference, and can be turned back on', () => {
     const { unmount } = render(<Harness />);
