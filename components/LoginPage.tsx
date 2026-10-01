@@ -38,6 +38,7 @@ import { useModal } from '../hooks/useModal';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import AccountCard from './AccountCard';
 import AccountSchoolPicker from './AccountSchoolPicker';
+import SchoolCrest from './SchoolCrest';
 import AccountCrewPicker from './AccountCrewPicker';
 import { Checkbox } from './account-ui-runtime';
 
@@ -824,7 +825,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     if (registerStep > 1) setRegisterStep((step) => step - 1);
     else navigate('welcome');
   };
-  const schoolName = SCHOOLS.find((item) => item.id === school)?.name || '';
+  const selectedSchool = SCHOOLS.find((item) => item.id === school);
+  const schoolName = selectedSchool?.name || '';
   const errorMessage = error && (
     <p className="auth-live-error" role="alert" aria-live="assertive">
       {error}
@@ -1057,7 +1059,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 <p>{stepDescriptions[registerStep - 1]}</p>
               </div>
               {registerStep > 1 && <div className="auth-live-carry">
-                <span className="auth-live-carry-initial" aria-hidden="true">{name.trim().slice(0, 1).toUpperCase()}</span>
+                {selectedSchool ? <SchoolCrest school={selectedSchool.id} /> :
+                  <span className="auth-live-carry-initial" aria-hidden="true">{name.trim().slice(0, 1).toUpperCase()}</span>}
                 <span>{name}{registerStep > 2 && schoolName && <small>{schoolName}</small>}</span>
                 <Check size={16} aria-hidden="true" />
               </div>}
