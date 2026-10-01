@@ -8,9 +8,8 @@ import { ArrowRight } from 'lucide-react';
 import React, { useState, useEffect, useCallback, useRef, lazy, Suspense } from 'react';
 import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
-import { MotionButton, MotionDiv } from './Motion';
+import { MotionDiv } from './Motion';
 import { FileSearch,
-    ArrowLeft,
     Lock, Compass, Target,
     CalendarDays, Calculator, GitBranch,
     Map, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints
