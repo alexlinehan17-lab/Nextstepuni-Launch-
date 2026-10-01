@@ -13,8 +13,8 @@ interface LaunchpadToolCardProps {
   onClick: () => void;
 }
 export default function LaunchpadToolCard({ tool, title, description, locked, pending, recommendation, onClick }: LaunchpadToolCardProps) {
-  return <button type="button" className="lp-tool-card" disabled={pending} aria-label={pending ? `Loading profile for ${title}` : locked ? `Set up profile to unlock ${title}` : `Open ${title}`} onClick={onClick}>
-    <ToolArtwork tool={tool} /><h3>{title}</h3><ArrowRight size={19} aria-hidden="true" /><p>{description}</p>
+  return <button type="button" className={`lp-tool-card${locked ? ' lp-tool-card--locked' : ''}`} disabled={pending} aria-label={pending ? `Loading profile for ${title}` : locked ? `Set up profile to unlock ${title}` : `Open ${title}`} onClick={onClick}>
+    <ToolArtwork tool={tool} /><h3>{title}</h3><ArrowRight className="lp-tool-arrow" size={19} aria-hidden="true" /><p>{description}</p>
     {(locked || pending) && <span className="lp-tool-status">{locked && <Lock size={13} aria-hidden="true" />}{pending ? 'Checking your profile…' : 'Add your subjects to unlock'}</span>}
     {recommendation && <p>Recommended by {recommendation}</p>}
   </button>;
