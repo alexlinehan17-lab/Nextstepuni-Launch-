@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import {
   ArrowRight,
   ArrowUpRight,
@@ -10,8 +10,10 @@ import {
   X,
 } from 'lucide-react';
 import Avatar from './Avatar';
+import { motion, useReducedMotion } from 'framer-motion';
 import { WelcomeCharacter } from './WelcomeCharacter';
-import { PERSONAL_STAR_CREW } from '../data/personalStarCrew';
+import AccountCrewPicker from './AccountCrewPicker';
+import { getPersonalStarCrew } from '../data/personalStarCrew';
 import { useModal } from '../hooks/useModal';
 import { useDeckSound } from './immersiveDeck/useDeckSound';
 import './account-live.css';
@@ -48,6 +50,23 @@ export default function AccountCard({
   onSchoolAccess,
 }: AccountCardProps) {
   const [pickerOpen, setPickerOpen] = useState(false);
+  const [draftAvatar, setDraftAvatar] = useState(avatar);
+  const draftCharacter = getPersonalStarCrew(draftAvatar);
+  const reducedMotion = useReducedMotion();
+  const measure = useRef<HTMLDivElement>(null);
+  const [contentHeight, setContentHeight] = useState<number>();
+  useLayoutEffect(() => {
+    const node = measure.current;
+    if (!node || typeof ResizeObserver === 'undefined') return;
+    const update = () => {
+      const height = Math.ceil(node.getBoundingClientRect().height);
+      if (height > 60) setContentHeight(height);
+    };
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
   const [soundEnabled, setSoundEnabled] = useState(() => {
     try {
       return localStorage.getItem('nextstepuni:account-sound') !== 'off';
@@ -71,18 +90,27 @@ export default function AccountCard({
     if (enabled) play('tap');
   };
   const playControlSound = (event: React.MouseEvent<HTMLElement>) => {
+    // Base UI forwards label clicks to its hidden native form input.
+    // The visible control has already played its cue.
+    if (event.target instanceof HTMLInputElement && event.target.getAttribute('aria-hidden') === 'true') return;
     const button =
-      event.target instanceof Element ? event.target.closest('button') : null;
+      event.target instanceof Element ? event.target.closest<HTMLElement>('button, [data-account-sound]') : null;
     if (
       !button ||
       !event.currentTarget.contains(button) ||
-      button.matches(':disabled')
+      button.matches(':disabled, [aria-disabled="true"], :has([data-disabled])')
     )
       return;
     const cue = button.dataset.accountSound;
     if (cue === 'off') return;
     play(cue === 'save' || cue === 'swipe' || cue === 'skip' ? cue : 'tap');
   };
+  useEffect(() => {
+    if (!pickerOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = previousOverflow; };
+  }, [pickerOpen]);
   const picker = useRef<HTMLDivElement>(null);
   useModal(pickerOpen, () => setPickerOpen(false), picker);
   return (
@@ -164,7 +192,7 @@ export default function AccountCard({
                       ? 'Change your Star Crew character'
                       : 'Choose your Star Crew character'
                   }
-                  onClick={() => setPickerOpen(true)}
+                  onClick={() => { setDraftAvatar(avatar); setPickerOpen(true); }}
                 >
                   {avatar ? (
                     <Avatar
@@ -213,14 +241,16 @@ export default function AccountCard({
                   Step {registerStep} of 4
                 </span>
               )}
-              {children}
+              <motion.div className="auth-live-card-pane" animate={{ height: contentHeight ?? 'auto' }} transition={{ duration: reducedMotion ? 0 : .4, ease: [.22, 1, .36, 1] }}>
+                <div ref={measure} className="auth-live-card-measure">{children}</div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
       {devButton && <div className="auth-live-footer">{devButton}</div>}
       {pickerOpen && (
-        <div className="auth-live-overlay">
+        <div className="auth-live-overlay" onClick={event => { if (event.target === event.currentTarget) setPickerOpen(false); }}>
           <div
             ref={picker}
             role="dialog"
@@ -238,40 +268,17 @@ export default function AccountCard({
             </button>
             <h2 id="auth-crew-title">Meet your Star Crew.</h2>
             <p>Choose a character to make this space yours.</p>
-            <div
-              className="auth-live-crew"
-              role="group"
-              aria-label="Your Star Crew character"
-            >
-              {PERSONAL_STAR_CREW.map((item) => (
-                <button
-                  type="button"
-                  key={item.id}
-                  data-account-sound="save"
-                  aria-label={`Choose ${item.name} avatar`}
-                  aria-pressed={avatar === item.id}
-                  onClick={() => {
-                    onAvatarChange(item.id);
-                    setPickerOpen(false);
-                  }}
-                >
-                  <Avatar
-                    seed={item.id}
-                    alt=""
-                    className="auth-live-crew-art"
-                  />
-                  <span>{item.name.replace(/^The /, '')}</span>
-                  {avatar === item.id && <Check size={14} aria-hidden="true" />}
-                </button>
-              ))}
+            <AccountCrewPicker value={draftAvatar} onChange={setDraftAvatar} disabled={busy} />
+            <div className="auth-live-picker-actions">
+              <button type="button" className="auth-live-quiet" onClick={() => setPickerOpen(false)}>
+                Back to your account
+              </button>
+              <button type="button" className="auth-live-primary" data-account-sound="save" disabled={!draftCharacter || busy}
+                onClick={() => { onAvatarChange(draftAvatar); setPickerOpen(false); }}>
+                {draftCharacter ? `Choose ${draftCharacter.name.replace(/^The /, '')}` : 'Choose your character'}
+                <ArrowRight size={17} aria-hidden="true" />
+              </button>
             </div>
-            <button
-              type="button"
-              className="auth-live-quiet"
-              onClick={() => setPickerOpen(false)}
-            >
-              Back to your account <ArrowRight size={15} aria-hidden="true" />
-            </button>
           </div>
         </div>
       )}

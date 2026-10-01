@@ -89,3 +89,6 @@ design-references/landing/*.mov
 figures-review*/
 tmp/waysin-audit.txt
 tmp/waysin-audit.json
+
+# Purchased editable Kobra originals stay local; app runtime is compiled.
+components/kobra/

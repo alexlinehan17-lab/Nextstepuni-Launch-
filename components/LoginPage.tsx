@@ -32,12 +32,13 @@ import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
-import Avatar from './Avatar';
-import { getAvatarName } from '../data/personalStarCrew';
 import { pickLoadingCrew } from '../utils/loadingCrew';
 import { useModal } from '../hooks/useModal';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import AccountCard from './AccountCard';
+import AccountSchoolPicker from './AccountSchoolPicker';
+import AccountCrewPicker from './AccountCrewPicker';
+import { Checkbox } from './account-ui-runtime';
 
 /**
  * Did this visit start at the landing page? Read once, at module load, because
@@ -923,9 +924,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   ];
   const stepDescriptions = [
     'Your name, your email. Then we’ll make it yours.',
-    'Your school is where it starts.',
+    'Connect your account to your school.',
     'A password that’s just for you.',
-    'Eight personalities. One that’s yours.',
+    'Pick the character that feels like you.',
   ];
   const stepLabels = [
     'Your details',
@@ -1036,6 +1037,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 </h1>
                 <p>{stepDescriptions[registerStep - 1]}</p>
               </div>
+              {registerStep > 1 && <div className="auth-live-carry">
+                <span className="auth-live-carry-initial" aria-hidden="true">{name.trim().slice(0, 1).toUpperCase()}</span>
+                <span>{name}{registerStep > 2 && schoolName && <small>{schoolName}</small>}</span>
+                <Check size={16} aria-hidden="true" />
+              </div>}
               <form
                 noValidate
                 onSubmit={(event) => {
@@ -1073,24 +1079,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     <>
                       <div className="auth-live-field">
                         <label htmlFor="register-school">School</label>
-                        <select
-                          id="register-school"
-                          value={school}
-                          onChange={(event) => {
-                            setSchool(event.target.value);
-                            setJoinCode('');
-                            setError('');
-                          }}
-                        >
-                          <option value="" disabled>
-                            Select your school
-                          </option>
-                          {SCHOOLS.map((item) => (
-                            <option key={item.id} value={item.id}>
-                              {item.name}
-                            </option>
-                          ))}
-                        </select>
+                        <AccountSchoolPicker id="register-school" value={school} disabled={isLoading} onChange={value => {
+                          setSchool(value); setJoinCode(''); setError('');
+                        }} />
                       </div>
                       <div className="auth-live-field">
                         <label htmlFor="register-join-code">
@@ -1123,54 +1114,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     passwordField('register-password', true)}
                   {registerStep === 4 && (
                     <div>
-                      <div
-                        className="auth-live-crew"
-                        role="group"
-                        aria-label="Choose your Star Crew character"
-                      >
-                        {AVATAR_SEEDS.map((seed) => (
-                          <button
-                            type="button"
-                            key={seed}
-                            data-account-sound="save"
-                            aria-label={`Choose ${getAvatarName(seed)} avatar`}
-                            aria-pressed={avatar === seed}
-                            onClick={() => {
-                              setAvatar(seed);
-                              setError('');
-                            }}
-                          >
-                            <Avatar
-                              seed={seed}
-                              alt=""
-                              className="auth-live-crew-art"
-                            />
-                            <span>
-                              {getAvatarName(seed).replace(/^The /, '')}
-                            </span>
-                            {avatar === seed && (
-                              <Check size={13} aria-hidden="true" />
-                            )}
-                          </button>
-                        ))}
-                      </div>
-                      <p className="auth-live-selection" role="status">
-                        {avatar
-                          ? `${getAvatarName(avatar)} selected. You can change this later.`
-                          : 'Choose the character that feels like you.'}
-                      </p>
+                      <AccountCrewPicker value={avatar} disabled={isLoading} onChange={value => { setAvatar(value); setError(''); }} />
                       <div className="auth-live-consent">
                         <div>
-                          <input
-                            id="register-consent"
-                            type="checkbox"
-                            checked={agreedToTerms}
-                            onChange={(event) => {
-                              setAgreedToTerms(event.target.checked);
-                              setError('');
-                            }}
-                            aria-label="I have read the Privacy Notice and agree to the Terms of Use"
-                          />
+                          <span className="nsu-kobra account-consent-control">
+                            <Checkbox id="register-consent" data-account-sound="tap" className="account-consent-box" checked={agreedToTerms} disabled={isLoading}
+                              onCheckedChange={checked => { setAgreedToTerms(checked); setError(''); }}
+                              aria-label="I have read the Privacy Notice and agree to the Terms of Use" />
+                          </span>
                           <span>
                             I have read the{' '}
                             <button
@@ -1221,7 +1172,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                     {isLoading
                       ? 'Creating your account…'
                       : registerStep === 4
-                        ? 'Create Account'
+                        ? 'Create my account'
                         : 'Continue'}
                     <ArrowRight size={19} aria-hidden="true" />
                   </button>
@@ -1453,23 +1404,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   </div>
                   <div className="auth-live-field">
                     <label htmlFor="gc-school">School</label>
-                    <select
-                      id="gc-school"
-                      value={gcSchool}
-                      onChange={(event) => {
-                        setGcSchool(event.target.value);
-                        setError('');
-                      }}
-                    >
-                      <option value="" disabled>
-                        Select your school
-                      </option>
-                      {SCHOOLS.map((item) => (
-                        <option key={item.id} value={item.id}>
-                          {item.name}
-                        </option>
-                      ))}
-                    </select>
+                    <AccountSchoolPicker id="gc-school" value={gcSchool} disabled={isLoading} onChange={value => { setGcSchool(value); setError(''); }} />
                   </div>
                   {passwordField('gc-password')}
                 </fieldset>
