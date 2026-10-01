@@ -10,7 +10,7 @@ import { useToast } from './Toast';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { FileSearch,
-    Lock, Compass, Target,
+    Compass, Target,
     CalendarDays, Calculator, GitBranch,
     Map, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints
 } from 'lucide-react';
@@ -58,6 +58,7 @@ import ToolErrorBoundary from './ToolErrorBoundary';
 import PointsPanel from './PointsPanel';
 import { useNavigation } from '../contexts/NavigationContext';
 import ToolMasthead, { ToolArtwork, ToolIntroduction, ToolIntroductionContext } from './launchpad/ToolMasthead';
+import LaunchpadToolCard from './launchpad/LaunchpadToolCard';
 import BackButton from './ui/BackButton';
 import { InnovationZoneIcon } from './sectionIcons';
 import { ToolHeader } from './ToolHeader';
@@ -1033,14 +1034,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                       {[...filteredTools].sort((a,b) => { const order = ['planner','paper-trail','future-finder-revamped','mark-bank','war-room','your-possible-life','comeback','points-passport','college-compass','catch-up-lane','topic-atlas','command-word-reflex','how-they-did-it','future-finder','journey']; return order.indexOf(a.id) - order.indexOf(b.id); }).map(tool => {
                         const pending = tool.needsProfile && !profileLoaded;
                         const locked = tool.needsProfile && profileLoaded && !subjectProfile;
-                        return <button key={tool.id} type="button" className="lp-tool-card" disabled={pending}
-                          aria-label={pending ? `Loading profile for ${tool.title}` : locked ? `Set up profile to unlock ${tool.title}` : `Open ${tool.title}`}
-                          onClick={() => handleToolClick(tool.id, tool.needsProfile)}>
-                          {locked || pending ? <Lock size={40} /> : <ToolArtwork tool={tool.id as ToolIconKey} />}
-                          <h3>{tool.title}</h3><ArrowRight size={19} aria-hidden="true" />
-                          <p>{pending ? 'Checking your profile…' : locked ? 'Add your subjects to get started.' : tool.description}</p>
-                          {gcRecommendations[tool.id] && <p>Recommended by {gcRecommendations[tool.id].fromName || 'your counsellor'}</p>}
-                        </button>;
+                        return <LaunchpadToolCard key={tool.id} tool={tool.id as ToolIconKey} title={tool.title} description={tool.description} pending={Boolean(pending)} locked={Boolean(locked)} recommendation={gcRecommendations[tool.id] ? gcRecommendations[tool.id].fromName || 'your counsellor' : undefined} onClick={() => handleToolClick(tool.id, tool.needsProfile)} />;
                       })}
                     </div>
                 </MotionDiv>

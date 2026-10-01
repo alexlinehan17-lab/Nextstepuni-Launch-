@@ -256,6 +256,8 @@
   color: var(--accent-text);
   align-self: center;
 }
+.lp-tool-card .lp-tool-status { grid-column: 1/-1; display: flex; align-items: center; gap: 7px; padding-top: 13px; margin-top: 8px; border-top: 1px solid var(--outline-soft); color: var(--ink-secondary); font-size: 12px; line-height: 1.5; }
+.lp-tool-card .lp-tool-status svg { flex-shrink: 0; }
 .launchpad-approved {
   max-width: 1140px !important;
   padding-top: 24px !important;
