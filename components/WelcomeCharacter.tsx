@@ -35,6 +35,7 @@ export function WelcomeCharacter({ showCue = false }: { showCue?: boolean }) {
           <button
             type="button"
             className="welcome-character"
+            data-account-sound="swipe"
             aria-label="Play with the star character"
             onPointerDown={event => {
               if (reducedMotion || !event.isPrimary || event.button !== 0 || drag.current) return;
