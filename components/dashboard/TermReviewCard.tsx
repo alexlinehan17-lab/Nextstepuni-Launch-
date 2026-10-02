@@ -113,32 +113,13 @@ const TermReviewCard: React.FC<Props> = ({ sessions, streak }) => {
   };
 
   return (
-    <article className="term-review-card lg:col-span-12 rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-5 py-4 sm:px-6 sm:py-5">
-      <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
-        <div className="min-w-0">
-          <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Term in review · since {stats.startLabel}</p>
-          <div className="mt-3 flex flex-wrap items-end gap-x-8 gap-y-3">
-            {[
-              { v: `${stats.hours}h`, l: 'Focused time' },
-              { v: String(stats.sessions), l: 'Sessions' },
-              { v: stats.topSubject, l: 'Top subject' },
-              { v: String(stats.bestStreak), l: 'Best streak' },
-            ].map(cell => (
-              <div key={cell.l} className="min-w-0">
-                <p className="font-serif text-[26px] font-semibold leading-snug break-words tabular-nums text-[var(--ink-primary)]">{cell.v}</p>
-                <p className="mt-1.5 text-[9px] font-bold uppercase tracking-[0.15em] text-[var(--ink-muted)]">{cell.l}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <button
-          onClick={saveImage}
-          disabled={saving || stats.sessions === 0}
-          className="inline-flex min-h-10 shrink-0 items-center gap-1.5 rounded-xl border border-[var(--outline-soft)] px-4 text-xs font-bold text-[var(--ink-secondary)] transition-colors hover:border-[var(--outline-strong)] disabled:opacity-40"
-        >
-          <Download size={13} /> Save as image
-        </button>
+    <article className="pr-paper pm-term">
+      <div><p className="pr-eyebrow">Since {stats.startLabel}</p><h2>A term taking shape.</h2>
+        <p><strong>{stats.hours}h</strong> focused · <strong>{stats.sessions}</strong> sessions · Most studied: <strong>{stats.topSubject}</strong></p>
       </div>
+      <button type="button" onClick={saveImage} disabled={saving || stats.sessions === 0}>
+        {saving ? 'Saving…' : 'Save term review'}<Download size={17} />
+      </button>
     </article>
   );
 };

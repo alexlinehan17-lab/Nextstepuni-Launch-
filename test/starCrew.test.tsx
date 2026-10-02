@@ -10,14 +10,15 @@ import StudySessionSetup from '../components/study/StudySessionSetup';
 import { PERSONAL_STAR_CREW } from '../data/personalStarCrew';
 import { SUBJECT_STAR_CREW, getSubjectStarCrew } from '../data/subjectStarCrew';
 import { getAvatarUrl } from '../utils/authUtils';
+import catalogue from '../components/landing/subjectShowcase.json';
 
 describe('approved Star Crew', () => {
-  it('offers exactly the selected eight and packages all 43 subject illustrations', () => {
+  it('offers exactly the selected eight and packages all 69 subject illustrations', () => {
     expect(PERSONAL_STAR_CREW.map(avatar => avatar.name)).toEqual([
       'The Beanie', 'The Reader', 'The Skater', 'The Maker',
       'The Stargazer', 'The Hugger', 'The Snoozer', 'The Musician',
     ]);
-    expect(Object.keys(SUBJECT_STAR_CREW)).toHaveLength(43);
+    expect(Object.keys(SUBJECT_STAR_CREW)).toHaveLength(69);
     for (const artwork of [...PERSONAL_STAR_CREW, ...Object.values(SUBJECT_STAR_CREW)]) {
       const path = resolve('public', artwork.src.slice(1));
       expect(existsSync(path), artwork.src).toBe(true);
@@ -27,6 +28,28 @@ describe('approved Star Crew', () => {
     expect(getSubjectStarCrew('DCG')?.src).toContain('graphics-v3.png');
     expect(getSubjectStarCrew('Religious Education')?.src).toContain('education-v3.png');
     expect(getSubjectStarCrew('Music')?.src).not.toBe(getAvatarUrl('star-crew:musician'));
+  });
+
+  it('gives every shipped subject appropriate artwork by both ID and displayed name', () => {
+    for (const subject of catalogue) {
+      const artwork = getSubjectStarCrew(subject.artworkSubject);
+      expect(artwork, subject.artworkSubject).toBeDefined();
+      expect(getSubjectStarCrew(subject.name), subject.name).toBe(artwork);
+      expect(artwork?.src).not.toContain('starguy');
+    }
+  });
+
+  it.each([
+    ['Wood Technology', 'wood-technology'],
+    ['Active Leisure Studies', 'active-leisure-studies'],
+    ['Estonian', 'estonian'],
+    ['Irish (T1)', 'irish'],
+    ['Gaeilge Chumarsáideach', 'irish'],
+    ['Information & Communication Tech.', 'computer-science'],
+    ['Childcare / Community Care', 'childcare-community-care'],
+    ['Graphics And Construction Studies', 'construction-studies'],
+  ])('resolves the designated character for %s', (label, id) => {
+    expect(getSubjectStarCrew(label)).toBe(SUBJECT_STAR_CREW[id]);
   });
 
   it.each([
@@ -57,9 +80,10 @@ describe('approved Star Crew', () => {
   });
 
   it('keeps unknown subjects readable without substituting unrelated artwork', () => {
-    const view = render(<SubjectAvatar subject="Science" />);
-    expect(getSubjectStarCrew('Science')).toBeUndefined();
-    expect(view.container).toHaveTextContent('SC');
+    const view = render(<SubjectAvatar subject="Unlisted subject" />);
+    expect(getSubjectStarCrew('Unlisted subject')).toBeUndefined();
+    expect(getSubjectStarCrew('__proto__')).toBeUndefined();
+    expect(view.container).toHaveTextContent('UN');
     expect(view.container.querySelector('img')).toBeNull();
   });
 
@@ -76,12 +100,12 @@ describe('approved Star Crew', () => {
     const onSubject = vi.fn(), onBlock = vi.fn();
     const block = { subject: 'Music', durationMinutes: 25, sessionType: 'practice' as const, blockId: 'music-1', dateKey: '2026-09-15' };
     const view = render(<StudySessionSetup subjects={[{ subjectName: 'Irish', level: 'higher' }, { subjectName: 'Music', level: 'higher' }]} selectedSubject="Irish" selectedType="practice" selectedMinutes={25} onSubject={onSubject} onBlock={onBlock} todayBlocks={[block]} onType={vi.fn()} onMinutes={vi.fn()} sessionCount={0} todayMinutes={0} reflectionCount={0} onReflections={vi.fn()} onBack={vi.fn()} onStart={vi.fn()} canStart startHint={null} />);
-    fireEvent.click(screen.getByRole('button', { name: 'Music' }));
+    fireEvent.click(screen.getByRole('radio', { name: 'Music' }));
     expect(onSubject).toHaveBeenCalledWith('Music');
     fireEvent.click(screen.getByRole('button', { name: 'Set up Music, 25 minutes' }));
     expect(onBlock).toHaveBeenCalledWith(block);
-    expect(view.container.querySelectorAll('.ss-subjects .subject-avatar')).toHaveLength(2);
-    expect(screen.getByRole('button', { name: 'Irish' })).toHaveAttribute('aria-pressed', 'true');
+    expect(view.container.querySelectorAll('[role="radiogroup"][aria-label="Your subject"] [role="radio"]')).toHaveLength(2);
+    expect(screen.getByRole('radio', { name: 'Irish' })).toHaveAttribute('aria-checked', 'true');
     expect(screen.getByRole('button', { name: 'Start Session' })).toBeEnabled();
   });
 });

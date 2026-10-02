@@ -1,6 +1,7 @@
 import React from "react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import Onboarding from "../components/Onboarding";
 import {
   draftKey,
@@ -39,6 +40,10 @@ function mount(draft?: SetupDraft, complete = vi.fn()) {
     />,
   );
 }
+async function choose(label: string, option: string) {
+  await userEvent.click(screen.getByRole("combobox", { name: label }));
+  await userEvent.click(await screen.findByRole("option", { name: option }));
+}
 beforeEach(() => {
   localStorage.clear();
   sessionStorage.clear();
@@ -57,20 +62,14 @@ describe("live desktop onboarding", () => {
       screen.queryByRole("complementary", { name: "Compare grade layouts" }),
     ).not.toBeInTheDocument();
   });
-  it("requires every level and lets students defer grades without inventing them", () => {
+  it("requires every level and lets students defer grades without inventing them", async () => {
     mount(grades());
     expect(
       screen.getByRole("button", { name: "Continue to schedule" }),
     ).toBeDisabled();
-    fireEvent.change(screen.getByLabelText("English level"), {
-      target: { value: "higher" },
-    });
-    fireEvent.change(screen.getByLabelText("Irish level"), {
-      target: { value: "ordinary" },
-    });
-    fireEvent.change(screen.getByLabelText("English current grade"), {
-      target: { value: "H3" },
-    });
+    await choose("English level", "Higher");
+    await choose("Irish level", "Ordinary");
+    await choose("English current grade", "H3");
     fireEvent.click(
       screen.getByRole("button", { name: "Leave unfilled grades for later" }),
     );
@@ -125,7 +124,7 @@ describe("live desktop onboarding", () => {
       "summary",
     );
   });
-  it("cancels bulk grade edits back to the committed review on reload", () => {
+  it("cancels bulk grade edits back to the committed review on reload", async () => {
     const draft = grades();
     draft.step = "summary";
     draft.configs = {
@@ -141,9 +140,7 @@ describe("live desktop onboarding", () => {
     fireEvent.click(
       screen.getByRole("button", { name: "Edit English grades" }),
     );
-    fireEvent.change(screen.getByLabelText("English target grade"), {
-      target: { value: "H2" },
-    });
+    await choose("English target grade", "H2");
     view.unmount();
     mount();
     expect(

@@ -2,6 +2,110 @@ import type { StarCrewArtwork } from "./starCrewTypes";
 
 /** Approved artwork keyed by canonical subject ID. This is an asset index, not curriculum content. */
 export const SUBJECT_STAR_CREW: Record<string, StarCrewArtwork> = {
+  "estonian": {
+    src: "/assets/star-crew/subjects/estonian.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "wood-technology": {
+    src: "/assets/star-crew/subjects/wood-technology.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "active-leisure-studies": {
+    src: "/assets/star-crew/subjects/active-leisure-studies.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "agricultural-economics": {
+    src: "/assets/star-crew/subjects/agricultural-economics.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "childcare-community-care": {
+    src: "/assets/star-crew/subjects/childcare-community-care.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "crafts-and-design": {
+    src: "/assets/star-crew/subjects/crafts-and-design.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "hair-and-beauty": {
+    src: "/assets/star-crew/subjects/hair-and-beauty.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "hotel-catering-and-tourism": {
+    src: "/assets/star-crew/subjects/hotel-catering-and-tourism.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "science": {
+    src: "/assets/star-crew/subjects/science.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "sign-language": {
+    src: "/assets/star-crew/subjects/sign-language.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "social-education": {
+    src: "/assets/star-crew/subjects/social-education.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "bulgarian": {
+    src: "/assets/star-crew/subjects/bulgarian.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "croatian": {
+    src: "/assets/star-crew/subjects/croatian.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "czech": {
+    src: "/assets/star-crew/subjects/czech.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "danish": {
+    src: "/assets/star-crew/subjects/danish.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "dutch": {
+    src: "/assets/star-crew/subjects/dutch.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "finnish": {
+    src: "/assets/star-crew/subjects/finnish.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "hungarian": {
+    src: "/assets/star-crew/subjects/hungarian.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "latvian": {
+    src: "/assets/star-crew/subjects/latvian.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "maltese": {
+    src: "/assets/star-crew/subjects/maltese.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "modern-greek": {
+    src: "/assets/star-crew/subjects/modern-greek.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "romanian": {
+    src: "/assets/star-crew/subjects/romanian.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "slovakian": {
+    src: "/assets/star-crew/subjects/slovakian.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "slovenian": {
+    src: "/assets/star-crew/subjects/slovenian.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "swedish": {
+    src: "/assets/star-crew/subjects/swedish.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
+  "ukrainian": {
+    src: "/assets/star-crew/subjects/ukrainian.png",
+    frame: { width: 100, left: 0, top: 0 },
+  },
   "accounting": {
     "src": "/assets/star-crew/subjects/accounting.png",
     "frame": {
@@ -349,6 +453,20 @@ export const SUBJECT_STAR_CREW: Record<string, StarCrewArtwork> = {
 };
 
 const ARTWORK_ALIASES: Record<string, string> = {
+  "agriculture horticulture": "agricultural-science",
+  "applied technology": "technology",
+  "business studies": "business",
+  "classics": "classical-studies",
+  "english and communications": "english",
+  "gaeilge chumarsaideach": "irish",
+  "graphics": "design-and-communication-graphics",
+  "graphics and construction studies": "construction-studies",
+  "history early modern": "history",
+  "information and communication tech": "computer-science",
+  "irish t1": "irish",
+  "jewish studies": "hebrew-studies",
+  "mathematical applications": "mathematics",
+  "office admin and customer": "business",
   "accounting": "accounting",
   "agricultural science": "agricultural-science",
   "ancient greek": "ancient-greek",
@@ -420,7 +538,19 @@ const ARTWORK_ALIASES: Record<string, string> = {
   "chemical and physical science": "physics-and-chemistry"
 };
 
+function artworkKey(subject: string): string {
+  return subject.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+    .replace(/&/g, ' and ').replace(/\./g, '').replace(/[-,()/]/g, ' ')
+    .replace(/\s+/g, ' ').trim().replace(/^(?:jc|lca) /, '');
+}
+
+// Artwork aliases are presentation-only; curriculum identities remain untouched.
+const artworkIds = new Map([
+  ...Object.keys(SUBJECT_STAR_CREW).map(id => [artworkKey(id), id] as const),
+  ...Object.entries(ARTWORK_ALIASES).map(([label, id]) => [artworkKey(label), id] as const),
+]);
+
 export function getSubjectStarCrew(subject: string): StarCrewArtwork | undefined {
-  const key = subject.trim().toLowerCase().replace(/&/g, " and ").replace(/[-,]/g, " ").replace(/\s+/g, " ");
-  return SUBJECT_STAR_CREW[ARTWORK_ALIASES[key]];
+  const id = artworkIds.get(artworkKey(subject));
+  return id ? SUBJECT_STAR_CREW[id] : undefined;
 }

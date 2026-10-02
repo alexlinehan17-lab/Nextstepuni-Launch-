@@ -13,6 +13,7 @@ import {
 import type { Level } from "../subjectData";
 import { getSubjectFill } from "../../utils/subjectColors";
 import "./grade-options.css";
+import SetupSelect from "./SetupSelect";
 
 export type GradeLayout = "sheet" | "buttons" | "sliders" | "single";
 export const gradeLayouts: {
@@ -110,24 +111,19 @@ export default function GradeOptions({
   const setLevel = (name: string, level: Level) =>
     onUpdate(name, { level, ...(junior ? {} : { current: "", target: "" }) });
   const levelControl = (name: string, config: SubjectChoice) => (
-    <label className="grade-level">
-      <span className="sr-only">{name} level</span>
+    <div className="grade-level">
       {config.level === "common" ? (
         <span>Common</span>
       ) : (
-        <select
-          aria-label={`${name} level`}
+        <SetupSelect
+          label={`${name} level`}
           value={config.level || ""}
-          onChange={(event) => setLevel(name, event.target.value as Level)}
-        >
-          <option value="" disabled>
-            Level
-          </option>
-          <option value="higher">Higher</option>
-          <option value="ordinary">Ordinary</option>
-        </select>
+          onChange={value => setLevel(name, value as Level)}
+          placeholder="Level"
+          options={[{ value: "higher", label: "Higher" }, { value: "ordinary", label: "Ordinary" }]}
+        />
       )}
-    </label>
+    </div>
   );
   const gradeControl = (
     name: string,
@@ -138,27 +134,16 @@ export default function GradeOptions({
     const accessible = `${name} ${field} ${junior ? "band" : "grade"}`;
     if (layout === "sheet")
       return (
-        <label className={`grade-value grade-value-${field}`}>
-          <span className="sr-only">{accessible}</span>
-          <select
-            aria-label={accessible}
+        <div className={`grade-value grade-value-${field}`}>
+          <SetupSelect
+            label={accessible}
             disabled={!config.level}
             value={config[field]}
-            onChange={(event) =>
-              onUpdate(name, { [field]: event.target.value as GradeChoice })
-            }
-          >
-            <option value="" disabled>
-              Choose
-            </option>
-            {grades.map((grade) => (
-              <option value={grade} key={grade}>
-                {grade}
-              </option>
-            ))}
-            <option value="later">Set later</option>
-          </select>
-        </label>
+            onChange={value => onUpdate(name, { [field]: value as GradeChoice })}
+            placeholder="Choose"
+            options={[...grades.map(grade => ({ value: grade, label: grade })), { value: "later", label: "Set later" }]}
+          />
+        </div>
       );
     if (layout === "buttons")
       return (

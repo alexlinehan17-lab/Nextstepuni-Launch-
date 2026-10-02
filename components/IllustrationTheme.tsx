@@ -21,6 +21,12 @@ export default function IllustrationTheme() {
         <feComposite in="whiteInk" in2="artwork" operator="in" result="ink" />
         <feMerge><feMergeNode in="artwork" /><feMergeNode in="ink" /></feMerge>
       </filter>
+      <filter id="nsu-filled-illustration" x="-5%" y="-5%" width="110%" height="110%" primitiveUnits="objectBoundingBox" colorInterpolationFilters="sRGB">
+        <feMorphology in="SourceAlpha" operator="dilate" radius="0.0065" result="silhouette" />
+        <feFlood floodColor="#f7f6f2" result="edgeColour" />
+        <feComposite in="edgeColour" in2="silhouette" operator="in" result="paleEdge" />
+        <feMerge><feMergeNode in="paleEdge" /><feMergeNode in="SourceGraphic" /></feMerge>
+      </filter>
     </defs>
   </svg>;
 }

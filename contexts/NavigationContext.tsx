@@ -438,7 +438,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
   const setDashboardSection = useCallback((section: DashboardSection) => {
     navigate({ type: 'SET_DASHBOARD_SECTION', section });
-    window.scrollTo(0, 0);
+    // Section tabs update this page in place; preserve the reader’s scroll position.
   }, [navigate]);
 
   const goBack = useCallback(() => {

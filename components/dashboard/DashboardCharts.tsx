@@ -1,3 +1,4 @@
+import ThemeArtwork from '../ThemeArtwork';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import CrewIllustration from '../CrewIllustration';
 import type { UnifiedMockResult } from '../../types';
@@ -413,7 +414,7 @@ export const SessionMixChart: React.FC<{ values: RankedValue[]; editorial?: bool
   if (total === 0) return <ChartEmpty title="No learning mix yet" detail="Session types will separate into new learning, practice and revision once you begin studying." />;
   if (editorial) return <div className="learning-mix-ledger" aria-label="Session type allocation">
     {values.map(item => <div key={item.id}>
-      {item.id === 'revision' ? <img className="theme-ink-art" src="/assets/star-crew/companions/thinker.png" alt="" /> : <CrewIllustration character={item.id === 'new-learning' ? 'star-crew:reader' : 'star-crew:maker'} />}
+      {item.id === 'revision' ? <ThemeArtwork className="theme-ink-art" src="/assets/star-crew/companions/thinker.png" alt="" /> : <CrewIllustration character={item.id === 'new-learning' ? 'star-crew:reader' : 'star-crew:maker'} />}
       <div><strong>{item.label}</strong><small>{item.value} session{item.value === 1 ? '' : 's'}</small></div>
       <b>{Math.round((item.value / total) * 100)}<span>%</span></b>
     </div>)}

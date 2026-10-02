@@ -8,6 +8,12 @@ vi.mock('../hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => true }
 vi.mock('../components/MountainLandscape', () => ({ default: () => <div>Programme mountains</div> }));
 beforeEach(() => { vi.useFakeTimers(); vi.setSystemTime(new Date(2026, 8, 20, 12)); });
 afterEach(() => { cleanup(); vi.useRealTimers(); });
+function chooseSubject(subject: string) {
+  fireEvent.click(screen.getByRole('button', { name: 'Filter by subject' }));
+  fireEvent.click(within(screen.getByRole('group', { name: 'Filter by subject' })).getByRole('checkbox', { name: subject }));
+  fireEvent.click(screen.getByRole('button', { name: 'Filter by subject' }));
+}
+
 function chooseSection(label: string) {
   fireEvent.click(screen.getByRole('button', { name: 'Progress section' }));
   fireEvent.click(screen.getByRole('option', { name: new RegExp(label) }));
@@ -27,25 +33,28 @@ test('section changes preserve subject and range; milestones removes period cont
   fireEvent.click(section);
   expect(within(screen.getByRole('listbox', { name: 'Progress sections' })).getAllByRole('option')).toHaveLength(5);
   fireEvent.keyDown(screen.getByRole('listbox'), { key: 'Escape' });
-  fireEvent.change(screen.getByRole('combobox', { name: 'Filter by subject' }), { target: { value: 'Irish' } });
+  chooseSubject('Irish');
   fireEvent.click(screen.getByRole('tab', { name: 'Month' }));
   chooseSection('Confidence');
-  expect(screen.getByRole('combobox', { name: 'Filter by subject' })).toHaveValue('Irish');
+  expect(screen.getByRole('button', { name: 'Filter by subject' })).toHaveTextContent('Irish');
   expect(screen.getByRole('tab', { name: 'Month' })).toHaveAttribute('aria-selected', 'true');
   expect(screen.getByRole('heading', { name: 'Topic readiness' })).toBeInTheDocument();
   chooseSection('Milestones');
   expect(screen.queryByRole('tablist', { name: 'Dashboard time range' })).not.toBeInTheDocument();
-  expect(screen.queryByRole('combobox', { name: 'Filter by subject' })).not.toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: 'Filter by subject' })).not.toBeInTheDocument();
   chooseSection('Study');
-  expect(screen.getByRole('combobox', { name: 'Filter by subject' })).toHaveValue('Irish');
+  expect(screen.getByRole('button', { name: 'Filter by subject' })).toHaveTextContent('Irish');
 });
 test('all seven subjects remain visible and full mocks retain their all-subject evidence', () => {
   const { container } = show();
   chooseSection('Confidence');
-  expect(container.querySelectorAll('.confidence-subject')).toHaveLength(7);
-  fireEvent.change(screen.getByRole('combobox', { name: 'Filter by subject' }), { target: { value: 'Irish' } });
+  expect(within(screen.getByRole('group', { name: 'Subjects to compare' })).getAllByRole('checkbox')).toHaveLength(7);
+  fireEvent.click(screen.getByRole('tab', { name: 'By subject' }));
+  expect(container.querySelectorAll('.pr-confidence-grid > article')).toHaveLength(7);
+  chooseSubject('Irish');
   chooseSection('Practice');
   expect(screen.getByText(/Full mock totals stay all-subject/)).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('tab', { name: 'The record' }));
   expect(container.querySelectorAll('.dashboard-mock-record')).toHaveLength(3);
   for (const record of container.querySelectorAll('.dashboard-mock-record')) {
     expect(record.textContent).toContain('Mathematics');

@@ -528,6 +528,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           onSelectModule={handleSelectModule}
           onBack={handleBackToTree}
           pointsEarned={pointsData.totalEarned}
+          pointsAvailable={pointsData.balance}
           studentProfile={studentProfile}
           studySessions={studySessions}
           studyDebriefs={studyDebriefs}

@@ -283,6 +283,7 @@ export const ToolIconBlob: React.FC<ToolIconBlobProps> = ({
         />
       ) : (
         <img
+          className="theme-filled-art"
           src={cfg.iconPath}
           alt=""
           style={{

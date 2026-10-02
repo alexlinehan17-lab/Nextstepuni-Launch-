@@ -77,3 +77,19 @@
 }
 .dark .nsu-training-pulse { background: transparent; }
 .dark .nsu-post-count { color: var(--ink-on-accent); border-color: var(--ink-on-accent); }
+
+/* Keep the shared account controls inside even the compact 72px page header.
+   Size the controls themselves so open menus keep their normal readable size. */
+.student-account-controls > div { min-height:48px; }
+.student-account-controls .nsu-training-pulse { gap:10px; }
+.student-account-controls .nsu-rank-orbit { width:48px; height:48px; padding:4px; }
+.student-account-controls .nsu-rank-orbit .nsu-rank-avatar { width:36px; height:36px; }
+.student-account-controls .nsu-rank-copy { min-width:80px; gap:3px; }
+.student-account-controls .nsu-rank-copy > strong { font-size:15px; }
+.student-account-controls .nsu-rank-stats { gap:16px; margin-left:2px; padding-left:16px; }
+.student-account-controls .nsu-rank-stats strong { font-size:14px; }
+.student-account-controls .nsu-post-toggle { min-width:44px; height:48px; }
+.student-account-controls .nsu-post-symbol { width:34px; height:42px; }
+.student-account-controls .nsu-folded-note { box-shadow:2px 2px 0 var(--header-ink); }
+.student-account-controls .nsu-folded-note i { left:6px; top:14px; width:13px; }
+.student-account-controls .nsu-folded-note i + i { top:19px; width:10px; }

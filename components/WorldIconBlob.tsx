@@ -151,6 +151,7 @@ export const WorldIconBlob: React.FC<WorldIconBlobProps> = ({
         <path d={config.blobPath} fill={config.blob} opacity="0.85" />
       </svg>
       <img
+        className="theme-filled-art"
         src={config.iconPath}
         alt=""
         style={{

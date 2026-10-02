@@ -13,6 +13,8 @@ import {
 } from "./useSetupFlow";
 export type { OnboardingProps } from "./useSetupFlow";
 import "./onboarding.css";
+import SetupSelect from "./SetupSelect";
+import SetupSoundToggle from "./SetupSoundToggle";
 
 export default function SetupFlow(props: OnboardingProps) {
   const {
@@ -81,10 +83,13 @@ export default function SetupFlow(props: OnboardingProps) {
         <div className="setup-shell">
           <header className="setup-brand">
             <span>nextstepuni</span>
-            <span>
-              {String(stage).padStart(2, "0")} /{" "}
-              {String(stages).padStart(2, "0")}
-            </span>
+            <div className="setup-header-tools">
+              <SetupSoundToggle />
+              <span className="setup-stage">
+                {String(stage).padStart(2, "0")} /{" "}
+                {String(stages).padStart(2, "0")}
+              </span>
+            </div>
           </header>
           <div
             className="setup-progress"
@@ -484,31 +489,20 @@ export default function SetupFlow(props: OnboardingProps) {
                   className={`setup-grade-pickers ${junior ? "setup-stack" : ""}`}
                 >
                   {(["current", "target"] as const).map((field) => (
-                    <label className="setup-field" key={field}>
+                    <div className="setup-field" key={field}>
                       <span>
                         {field === "current" ? "Current" : "Target"}{" "}
                         {junior ? "band" : "grade"}
                       </span>
-                      <select
+                      <SetupSelect
+                        label={`${field === "current" ? "Current" : "Target"} ${junior ? "band" : "grade"}`}
                         disabled={!config.level}
                         value={config[field]}
-                        onChange={(event) =>
-                          updateGrade({
-                            [field]: event.target.value as GradeChoice,
-                          })
-                        }
-                      >
-                        <option value="" disabled>
-                          Choose {junior ? "band" : "grade"}
-                        </option>
-                        {gradeChoices.map((grade) => (
-                          <option key={grade} value={grade}>
-                            {grade}
-                          </option>
-                        ))}
-                        <option value="later">I don’t know yet</option>
-                      </select>
-                    </label>
+                        onChange={value => updateGrade({ [field]: value as GradeChoice })}
+                        placeholder={`Choose ${junior ? "band" : "grade"}`}
+                        options={[...gradeChoices.map(grade => ({ value: grade, label: grade })), { value: "later", label: "I don’t know yet" }]}
+                      />
+                    </div>
                   ))}
                 </div>
                 <button

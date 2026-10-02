@@ -33,7 +33,7 @@ describe('module navigation sidebar', () => {
     window.scrollTo = vi.fn();
   });
 
-  test('collapses to a narrow focus rail and can be expanded again', () => {
+  test('expands the reading area without unmounting lesson content', () => {
     render(
       <ModuleLayout
         moduleNumber="10"
@@ -52,20 +52,20 @@ describe('module navigation sidebar', () => {
     expect(screen.getByRole('button', { name: 'Back to modules' })).toHaveAttribute('type', 'button');
     const collapse = screen.getByRole('button', { name: 'Collapse module navigation' });
     expect(collapse).toHaveAttribute('aria-expanded', 'true');
-    expect(navigation).toHaveClass('w-80');
+    expect(navigation).toHaveAttribute('aria-hidden', 'false');
 
     fireEvent.click(collapse);
 
     const expand = screen.getByRole('button', { name: 'Expand module navigation' });
     expect(expand).toHaveAttribute('aria-expanded', 'false');
-    expect(navigation).toHaveClass('w-[60px]');
+    expect(navigation).toHaveAttribute('aria-hidden', 'true');
     expect(document.getElementById('module-sidebar-content')).toHaveAttribute('inert');
     expect(screen.getByText('Module content')).toBeInTheDocument();
 
     fireEvent.click(expand);
 
     expect(screen.getByRole('button', { name: 'Collapse module navigation' })).toHaveAttribute('aria-expanded', 'true');
-    expect(navigation).toHaveClass('w-80');
+    expect(navigation).toHaveAttribute('aria-hidden', 'false');
     expect(document.getElementById('module-sidebar-content')).not.toHaveAttribute('inert');
   });
 

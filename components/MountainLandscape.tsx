@@ -11,7 +11,6 @@
  *   1. Warm sky gradient
  *   2. Three distant ridge silhouettes (low opacity, recede in fog)
  *   3. Faint ground line
- *   4. Sun glyph upper right
  *   5. Per mountain: wobbly silhouette → diagonal pencil shade on right
  *      half → progress fill → water-line dash → snow cap → outline stroke
  *      on top → flagpole → flag → world name
@@ -217,14 +216,6 @@ export const MountainLandscape: React.FC<MountainLandscapeProps> = ({ progress, 
       {/* SVG background is transparent — the cream tile beneath shows
           through, so the landscape blends with the card rather than
           reading as a separate coloured block. */}
-
-      {/* Sun upper-right (atmospheric, decorative) */}
-      <g opacity="0.4">
-        <circle cx="1030" cy="58" r="14" fill="none" stroke="var(--mountain-ink)" strokeWidth="1.1" />
-        <line x1="1030" y1="32" x2="1030" y2="38" stroke="var(--mountain-ink)" strokeWidth="1.1" strokeLinecap="round" />
-        <line x1="1054" y1="58" x2="1060" y2="58" stroke="var(--mountain-ink)" strokeWidth="1.1" strokeLinecap="round" />
-        <line x1="1006" y1="36" x2="1011" y2="42" stroke="var(--mountain-ink)" strokeWidth="1.1" strokeLinecap="round" />
-      </g>
 
       {/* Per-mountain stack — left to right; later peaks paint over
             earlier peaks in their overlap zones, producing a continuous

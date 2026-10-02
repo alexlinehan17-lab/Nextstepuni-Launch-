@@ -6,6 +6,12 @@
 .setup-shell{width:100%;max-width:530px;min-height:100%;margin:0 auto;display:flex;flex-direction:column;padding:calc(20px + env(safe-area-inset-top,0px)) 24px 12px}
 .setup-brand{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;font-size:19px;font-weight:800;letter-spacing:-.6px}
 .setup-brand>span:last-child{font-size:12px;font-weight:500;letter-spacing:.08em}
+.setup-header-tools{display:flex;align-items:center;gap:22px}
+.setup-stage{font-size:12px;font-weight:500;letter-spacing:.08em;white-space:nowrap}
+.setup-sound-toggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:44px;min-height:44px;padding:8px 10px;border:1px solid var(--setup-line);border-radius:9px;background:transparent;color:var(--setup-ink);font:500 12px/1.4 'DM Sans',sans-serif;letter-spacing:0;cursor:pointer}
+.setup-sound-toggle:hover{border-color:var(--setup-ink)}
+.setup-sound-toggle svg{flex-shrink:0}
+@media(max-width:600px){.setup-header-tools{gap:12px}.setup-sound-toggle>span{display:none}.setup-sound-toggle{padding:8px}}
 .setup-progress{display:flex;gap:5px;margin-bottom:30px}
 .setup-progress span{height:2px;flex:1;background:var(--setup-line)}
 .setup-progress [data-complete=true]{background:var(--setup-ink)}

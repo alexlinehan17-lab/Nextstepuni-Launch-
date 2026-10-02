@@ -1,0 +1,122 @@
+{
+  "KobraScope": [
+    "default"
+  ],
+  "lib/utils": [
+    "cn"
+  ],
+  "components/ui/button": [
+    "Button"
+  ],
+  "components/ui/toast": [
+    "Toasts",
+    "toast"
+  ],
+  "components/ui/dialog": [
+    "Dialog",
+    "DialogContent",
+    "DialogHeader",
+    "DialogTitle",
+    "DialogDescription",
+    "DialogFooter"
+  ],
+  "components/ui/command-menu": [
+    "CommandMenu",
+    "openCommandMenu"
+  ],
+  "components/ui/popover": [
+    "Popover",
+    "PopoverTrigger",
+    "PopoverContent"
+  ],
+  "components/ui/inline-citations": [
+    "Citation",
+    "CitationSource"
+  ],
+  "components/ui/input": [
+    "Input"
+  ],
+  "components/ui/switch": [
+    "Switch"
+  ],
+  "components/ui/radio-group": [
+    "RadioGroup",
+    "RadioGroupItem"
+  ],
+  "components/ui/plan-card": [
+    "PlanCard",
+    "PlanStep"
+  ],
+  "components/ui/sound": [
+    "setSoundMuted",
+    "useSoundMuted",
+    "SoundEffects"
+  ],
+  "components/ui/toggle-group": [
+    "ToggleGroup",
+    "ToggleGroupItem"
+  ],
+  "components/ui/select": [
+    "Select",
+    "SelectTrigger",
+    "SelectValue",
+    "SelectContent",
+    "SelectItem",
+    "SelectSeparator"
+  ],
+  "components/ui/tabs": [
+    "Tabs",
+    "TabsList",
+    "TabsTrigger",
+    "TabsContent"
+  ],
+  "components/ui/checkbox": [
+    "Checkbox"
+  ],
+  "components/ui/carousel": [
+    "Carousel",
+    "CarouselContent",
+    "CarouselItem",
+    "CarouselPrevious",
+    "CarouselNext",
+    "CarouselApi"
+  ],
+  "components/ui/card": [
+    "Card",
+    "CardContent"
+  ],
+  "components/ui/combobox": [
+    "Combobox",
+    "ComboboxInput",
+    "ComboboxContent",
+    "ComboboxList",
+    "ComboboxItem",
+    "ComboboxEmpty"
+  ],
+  "components/ui/attachment": [
+    "Attachment",
+    "AttachmentMedia",
+    "AttachmentContent",
+    "AttachmentTitle",
+    "AttachmentDescription",
+    "AttachmentActions",
+    "AttachmentTrigger"
+  ],
+  "components/ui/dropdown-menu": [
+    "DropdownMenu",
+    "DropdownMenuTrigger",
+    "DropdownMenuContent",
+    "DropdownMenuItem",
+    "DropdownMenuSeparator"
+  ],
+  "components/ui/chart": [
+    "ChartContainer",
+    "ChartTooltip",
+    "ChartTooltipContent"
+  ],
+  "components/ui/tooltip": [
+    "Tooltip",
+    "TooltipTrigger",
+    "TooltipContent"
+  ]
+}

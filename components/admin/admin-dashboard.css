@@ -55,12 +55,19 @@
 .admin-brand > span:first-child { font-size: 28px; line-height: 1.1; font-weight: 700; letter-spacing: -1.5px; }
 .admin-eyebrow { font-size: 10px; font-weight: 700; line-height: 1.5; text-transform: uppercase; letter-spacing: .15em; color: var(--admin-muted); }
 .admin-brand .admin-eyebrow { font-size: 8px; letter-spacing: .19em; }
-.admin-nav { display: flex; align-self: stretch; justify-content: center; gap: 2px; min-width: 0; }
-.admin-nav button { display: flex; align-items: center; gap: 7px; padding: 0 12px; min-height: 48px; border-bottom: 2px solid transparent; color: var(--admin-body); font-size: 12px; font-weight: 700; white-space: nowrap; }
+.admin-nav { position: relative; display: flex; align-self: stretch; justify-content: center; gap: 2px; min-width: 0; }
+.admin-nav button { display: flex; align-items: center; gap: 7px; padding: 0 12px; min-height: 48px; border-bottom: 2px solid transparent; background: transparent; color: var(--admin-muted); font-size: 12px; font-weight: 700; white-space: nowrap; }
 .admin-nav-number { font-size: 10px; font-weight: 400; color: var(--admin-muted); }
-.admin-nav button:hover { background: var(--admin-hover); color: var(--admin-ink); }
-.admin-nav button[aria-current='page'] { background: var(--admin-selected); border-bottom-color: #fa6c1b; color: var(--admin-ink); }
+.admin-nav button:is(:hover, [aria-current='page']) { color: var(--admin-ink); }
+.admin-nav button:not([aria-current='page']):hover .admin-nav-label { text-decoration: underline; text-decoration-color: var(--admin-control); text-decoration-thickness: 2px; text-underline-offset: 8px; }
 .admin-nav button[aria-current='page'] .admin-nav-number { color: var(--admin-accent); }
+.admin-nav:not([data-indicator-ready='true']) button[aria-current='page'] { border-bottom-color: #fa6c1b; }
+.admin-nav[data-indicator-ready='true']::after {
+  content: ''; position: absolute; pointer-events: none; height: 2px;
+  left: var(--admin-nav-line-left); top: var(--admin-nav-line-top); width: var(--admin-nav-line-width);
+  background: #fa6c1b;
+  transition: left 220ms cubic-bezier(.2,.7,.3,1), top 220ms cubic-bezier(.2,.7,.3,1), width 220ms cubic-bezier(.2,.7,.3,1);
+}
 .admin-logout { display: flex; align-items: center; justify-content: center; gap: 7px; min-height: 40px; padding: 0 10px; border: 1px solid var(--admin-control); border-radius: 5px; font-size: 11px; color: var(--admin-body); }
 .admin-logout:hover { background: var(--admin-hover); }
 .admin-main { max-width: 1512px; margin: auto; padding: 40px 32px 44px; }
@@ -126,7 +133,7 @@
 @media (max-width: 760px) {
   .admin-masthead-inner { padding: 0 20px; }
   .admin-nav { display: grid; grid-template-columns: repeat(4, 1fr); }
-  .admin-nav button { justify-content: center; padding: 0 6px; min-height: 42px; }
+  .admin-nav button { justify-content: center; padding: 0 6px; min-height: 50px; }
   .admin-nav-number { display: none; }
   .admin-brand > span:first-child { font-size: 25px; }
   .admin-brand .admin-eyebrow { display: none; }
