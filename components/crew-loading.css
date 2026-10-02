@@ -4,10 +4,8 @@
 .crew-loading-panel{display:flex;align-items:center;justify-content:center;width:100%;min-height:320px;padding:32px 24px;text-align:center}
 .crew-loading-content{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;max-width:560px;animation:crew-loading-enter .25s .18s both}
 .crew-loading-figure{width:270px;height:270px;position:relative;flex-shrink:0;display:grid;place-items:center}
-.crew-loading-art.star-crew-avatar{display:block;width:100%;height:100%;border:0;border-radius:0;background:transparent;mix-blend-mode:multiply}
-.crew-loading-art .star-crew-frame>img{filter:url(#nsu-paperless-illustration)}
-.dark .crew-loading-art .star-crew-frame>img{filter:url(#nsu-dark-illustration)}
-.dark .crew-loading-art.star-crew-avatar{background:transparent;mix-blend-mode:normal}
+.crew-loading-art.star-crew-avatar{display:block;width:100%;height:100%;border:0;border-radius:0;background:transparent;mix-blend-mode:normal}
+.dark .crew-loading-art.star-crew-avatar{background:transparent}
 .crew-loading-figure>.crew-loading-art{height:auto;aspect-ratio:1;transform-origin:50% 83%;animation:crew-loading-rock 3.3s ease-in-out infinite}
 .crew-loading-shadow{position:absolute;bottom:6px;left:35%;right:35%;height:7px;background:var(--ink-primary);opacity:.07;filter:blur(4px);border-radius:50%;animation:crew-loading-shadow 3.3s ease-in-out infinite}
 .crew-loading-copy p{margin:0;font-size:23px;line-height:1.4;letter-spacing:-.5px;overflow-wrap:anywhere}

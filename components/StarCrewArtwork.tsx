@@ -9,17 +9,19 @@ interface Props {
   className?: string;
   style?: React.CSSProperties;
   loading?: 'eager' | 'lazy';
+  /** Use the alpha cutout on light surfaces as well, preserving interior fills. */
+  transparentBackground?: boolean;
   fallback: React.ReactNode;
 }
 
 /** Preserve the original illustration while centring its ink inside the circle. */
-export default function StarCrewArtwork({ artwork, alt = '', className = '', style, fallback, loading = 'lazy' }: Props) {
+export default function StarCrewArtwork({ artwork, alt = '', className = '', style, fallback, loading = 'lazy', transparentBackground }: Props) {
   const [failedSource, setFailedSource] = useState<string>();
   const { frame } = artwork;
   const tiled = frame.tile !== undefined;
   return <span className={`star-crew-avatar ${className}`} style={style} role={alt ? 'img' : undefined} aria-label={alt || undefined} aria-hidden={alt ? undefined : true}>
     {failedSource === artwork.src ? fallback : <span className="star-crew-frame" style={{ width: `${frame.width}%`, height: `${frame.width}%`, left: `${frame.left}%`, top: `${frame.top}%` }}>
-      <ThemeArtwork src={artwork.src} transparentBackground={className.includes('crew-illustration')} alt="" loading={loading} decoding="async" draggable={false}
+      <ThemeArtwork src={artwork.src} transparentBackground={transparentBackground ?? className.includes('crew-illustration')} alt="" loading={loading} decoding="async" draggable={false}
         style={{ width: tiled ? '200%' : '100%', height: tiled ? '200%' : '100%', left: tiled && frame.tile! % 2 ? '-100%' : 0, top: tiled && frame.tile! > 1 ? '-100%' : 0 }}
         onError={() => setFailedSource(artwork.src)} />
     </span>}
