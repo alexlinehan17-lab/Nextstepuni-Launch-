@@ -1,0 +1,895 @@
+[
+  {
+    "source": "/assets/star-crew/companions/card-dealer.png",
+    "dark": "/assets/dark/star-crew/companions/card-dealer.png",
+    "sourceSha256": "747c698a8bea8550d971635519bd6eb870e8ddeb5d28c7d9b1077c4f9ee4b402",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      309,
+      169,
+      941,
+      1079
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/companions/islander.png",
+    "dark": "/assets/dark/star-crew/companions/islander.png",
+    "sourceSha256": "747779707e376b116b99f275c1d068e48399cdf28b1334ae38c50ae60dace496",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      247,
+      183,
+      1029,
+      1034
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/companions/listener.png",
+    "dark": "/assets/dark/star-crew/companions/listener.png",
+    "sourceSha256": "6acc1101b677c1f3d7b713cecb7fe92d6ac6a35370b07a54db4a4551c413b97f",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      304,
+      162,
+      1019,
+      1089
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/companions/thinker.png",
+    "dark": "/assets/dark/star-crew/companions/thinker.png",
+    "sourceSha256": "3e65ace2a4531e2a33e8c37fee7ca53820f1a1668ca4735b6ddf12e48c3ad6b8",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      307,
+      162,
+      947,
+      1060
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/companions/wayfinder.png",
+    "dark": "/assets/dark/star-crew/companions/wayfinder.png",
+    "sourceSha256": "be5eca87fcf2eeacd1d7fbf56bb95444f10f7376e8247f52e759fb4a2e4227c8",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      166,
+      221,
+      1128,
+      1019
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/personal/05-skater.png",
+    "dark": "/assets/dark/star-crew/personal/05-skater.png",
+    "sourceSha256": "66bbd679a6a379d61d781cba9ab254762564c792d1dbb162ecdea0ea50780172",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      324,
+      161,
+      930,
+      1057
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/personal/07-maker.png",
+    "dark": "/assets/dark/star-crew/personal/07-maker.png",
+    "sourceSha256": "e1ffe97f7649fac1cab36f72d0b5a2ba79c5310643836e735ae5c29c3a4042cb",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      315,
+      162,
+      949,
+      1058
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/personal/08-stargazer.png",
+    "dark": "/assets/dark/star-crew/personal/08-stargazer.png",
+    "sourceSha256": "cd2dafc061cf16fdeac83f08d4eb6b80609ff4bb68ea126583033ddb0fdc311d",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      316,
+      160,
+      947,
+      1043
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/personal/09-hugger.png",
+    "dark": "/assets/dark/star-crew/personal/09-hugger.png",
+    "sourceSha256": "c7c42732ca19c0497a805397bdd1bfb9647b91632ce14ba476339d77b4f8a8f5",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      383,
+      152,
+      839,
+      1102
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/personal/11-snoozer.png",
+    "dark": "/assets/dark/star-crew/personal/11-snoozer.png",
+    "sourceSha256": "4fec48a0a605d209be8811e0d0d024871a6a85609c16d6fadaae006e5d96604f",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      310,
+      237,
+      951,
+      1018
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/personal/12-musician.png",
+    "dark": "/assets/dark/star-crew/personal/12-musician.png",
+    "sourceSha256": "56861f1cf41faca0ad1c50fcb759ea1a89f19f5c57f4777898754296102b1342",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      290,
+      148,
+      964,
+      1080
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/personal/original-four.png",
+    "dark": "/assets/dark/star-crew/personal/original-four.png",
+    "sourceSha256": "c948855d300964fd9e084a6ac4db188fb1a20d8690eacad5598bc1b738873e3d",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      147,
+      76,
+      1093,
+      1175
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/accounting.png",
+    "dark": "/assets/dark/star-crew/subjects/accounting.png",
+    "sourceSha256": "3fb0c92d6f0bccf5d96284ca5504ff1d490975695e57a8c52cbc1b0b0dc60324",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      312,
+      161,
+      960,
+      1051
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/agricultural-science.png",
+    "dark": "/assets/dark/star-crew/subjects/agricultural-science.png",
+    "sourceSha256": "1b012f60ed5cdabcffa3a6a7ad4843dac7fd204b9404f6b7c7986d6c5f4cc5c9",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      295,
+      161,
+      942,
+      1080
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/ancient-greek-v4.png",
+    "dark": "/assets/dark/star-crew/subjects/ancient-greek-v4.png",
+    "sourceSha256": "4fe098ae404edea61c9aff76156d356bd79138d8478a20479525f8caee43f1a8",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      288,
+      119,
+      961,
+      1085
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/applied-mathematics.png",
+    "dark": "/assets/dark/star-crew/subjects/applied-mathematics.png",
+    "sourceSha256": "6acfc72b3b829d2154023a1343b8d95ef2085192b6793429100e7fe618ad6ec3",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      171,
+      238,
+      1083,
+      1004
+    ],
+    "reviewedGapSeeds": [
+      [
+        582,
+        698
+      ],
+      [
+        780,
+        748
+      ],
+      [
+        435,
+        812
+      ]
+    ]
+  },
+  {
+    "source": "/assets/star-crew/subjects/arabic.png",
+    "dark": "/assets/dark/star-crew/subjects/arabic.png",
+    "sourceSha256": "acbb5f6ee0e092f25c0cbe62e4968edf1ddf0a3f45f3e1eb966136d7377a2768",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      331,
+      169,
+      956,
+      1083
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/art.png",
+    "dark": "/assets/dark/star-crew/subjects/art.png",
+    "sourceSha256": "50cbe5470f03fff3b4a1acad04c05c296dc36da1b27c856248ff5338f08d4570",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      316,
+      105,
+      964,
+      1091
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/biology.png",
+    "dark": "/assets/dark/star-crew/subjects/biology.png",
+    "sourceSha256": "d243f2313b44fb9688b337bf04ae2fee65eee51b7c73b7311f9ad3a53bdf447c",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      367,
+      166,
+      960,
+      1096
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/business.png",
+    "dark": "/assets/dark/star-crew/subjects/business.png",
+    "sourceSha256": "7af10a3ded989da88dd3082579193553320b0ec9f4300c6139c5ef35f4985058",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      252,
+      148,
+      969,
+      1064
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/chemistry.png",
+    "dark": "/assets/dark/star-crew/subjects/chemistry.png",
+    "sourceSha256": "afdbc46a41f1d0db396465c0e7f15b588f84c601ebf7d686a28c8e00683cfd06",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      376,
+      159,
+      934,
+      1081
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/classical-studies.png",
+    "dark": "/assets/dark/star-crew/subjects/classical-studies.png",
+    "sourceSha256": "df5bddbab8face11a0470cca45a89f802ef79726bc1b53e1cf9c22100bdf3bf7",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      344,
+      160,
+      911,
+      992
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/climate-action-and-sustainable-development.png",
+    "dark": "/assets/dark/star-crew/subjects/climate-action-and-sustainable-development.png",
+    "sourceSha256": "04b6bf826339374a644a30034fb0db85a27682cd3ea531f40eced9e94715a4ea",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      340,
+      153,
+      978,
+      1103
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/computer-science.png",
+    "dark": "/assets/dark/star-crew/subjects/computer-science.png",
+    "sourceSha256": "713d6c4c830870b558894ccde128f6d6baf17e1172bfd5b32f6241ce70595d0f",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      345,
+      188,
+      925,
+      1031
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/construction-studies.png",
+    "dark": "/assets/dark/star-crew/subjects/construction-studies.png",
+    "sourceSha256": "86d62e3be27bfa0121e6dd717844bf5a06e213dc3227984bd72cd5c38e8cb831",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      384,
+      141,
+      911,
+      1082
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/design-and-communication-graphics-v3.png",
+    "dark": "/assets/dark/star-crew/subjects/design-and-communication-graphics-v3.png",
+    "sourceSha256": "92343335e9c26838b13ce4ad19377a431e865daf4c26f5164d57776ec4e4248d",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      205,
+      141,
+      1111,
+      1114
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/drama-film-and-theatre-studies.png",
+    "dark": "/assets/dark/star-crew/subjects/drama-film-and-theatre-studies.png",
+    "sourceSha256": "d2786e2e6f3f843de3cf37fbaf14deafb8a533f2eda7c5dd91a49912bad94976",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      313,
+      176,
+      930,
+      1032
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/economics.png",
+    "dark": "/assets/dark/star-crew/subjects/economics.png",
+    "sourceSha256": "149134a3cede5b04bb0114db42347848f7343d4bb66ba54290ff14890fb50c02",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      282,
+      162,
+      986,
+      1034
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/engineering.png",
+    "dark": "/assets/dark/star-crew/subjects/engineering.png",
+    "sourceSha256": "350e4ed98a893a5e58fcb215234bcabe9095f4a870f8d41ce302c473583b0b46",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      335,
+      184,
+      951,
+      1031
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/english.png",
+    "dark": "/assets/dark/star-crew/subjects/english.png",
+    "sourceSha256": "64330bb737e35aaa7d7896073305c6456badbe105035e650355f167a01cc6580",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      328,
+      212,
+      958,
+      1034
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/french.png",
+    "dark": "/assets/dark/star-crew/subjects/french.png",
+    "sourceSha256": "425e0ab05c8af920160d0d1e2b634cc7a38e3ae662c65d86216f0b9c17eb891d",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      338,
+      154,
+      916,
+      1054
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/geography.png",
+    "dark": "/assets/dark/star-crew/subjects/geography.png",
+    "sourceSha256": "5a0e083aabdb246b29b0450d3ff79cff2ccf3501bfef7973ced9846329e5a2f9",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      314,
+      156,
+      945,
+      1056
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/german.png",
+    "dark": "/assets/dark/star-crew/subjects/german.png",
+    "sourceSha256": "a1775074a5d2cad0715527a307f70f76670673bc5e9ae5ed6e22781b3629796d",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      358,
+      174,
+      965,
+      1048
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/hebrew-studies.png",
+    "dark": "/assets/dark/star-crew/subjects/hebrew-studies.png",
+    "sourceSha256": "98ffb0b45b05881d64463f117ae1bae952c5d39e249fb98f2fc22e99f292b86c",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      339,
+      150,
+      942,
+      1094
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/history.png",
+    "dark": "/assets/dark/star-crew/subjects/history.png",
+    "sourceSha256": "5a65da9cec3a2584db7d84fe0bc37b91cacfd4493338c444eb96bcdd7a8acfe2",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      297,
+      164,
+      957,
+      1089
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/home-economics.png",
+    "dark": "/assets/dark/star-crew/subjects/home-economics.png",
+    "sourceSha256": "939826aa1c44fc2d99fcc9f6428f6a0156b0d0b8cfc5133f2aa69d63778ce4de",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      315,
+      163,
+      962,
+      1055
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/irish-v3.png",
+    "dark": "/assets/dark/star-crew/subjects/irish-v3.png",
+    "sourceSha256": "e3a652aea5237a469ae782db7f5ede9075cc8d28f85a9b97158ec1c16fe260ca",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      241,
+      105,
+      1029,
+      1098
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/italian.png",
+    "dark": "/assets/dark/star-crew/subjects/italian.png",
+    "sourceSha256": "0d751af80b197c6e0abdd3bbcabca0c04cce82256732b20ecd477056988049a5",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      219,
+      137,
+      925,
+      1101
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/japanese.png",
+    "dark": "/assets/dark/star-crew/subjects/japanese.png",
+    "sourceSha256": "17bb9b43620c6847392229aba6d9155e55fef9724c9b455fb7cd107a3653fb0a",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      324,
+      201,
+      930,
+      1037
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/latin.png",
+    "dark": "/assets/dark/star-crew/subjects/latin.png",
+    "sourceSha256": "ef569c7303827d77d7772cc5bc458f3ea7c3a60d09ff0a85dbb92b00e2089bd5",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      327,
+      167,
+      983,
+      1041
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/lcvp-link-modules.png",
+    "dark": "/assets/dark/star-crew/subjects/lcvp-link-modules.png",
+    "sourceSha256": "413a5a9a3f40c731ee54d2efc544f50cfeef8def06efb7ff57910ee4c5f356db",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      267,
+      153,
+      947,
+      1105
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/lithuanian.png",
+    "dark": "/assets/dark/star-crew/subjects/lithuanian.png",
+    "sourceSha256": "2278fff7718c941225f39b93a9935ab27ed39d897f7d5e00417545029b40bd8b",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      242,
+      183,
+      1041,
+      1081
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/mandarin-chinese.png",
+    "dark": "/assets/dark/star-crew/subjects/mandarin-chinese.png",
+    "sourceSha256": "acd238d2b5a85fbaf945badefa8ff9c19dc71e3d02c99ddd78b9f9f834313845",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      317,
+      149,
+      952,
+      1027
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/mathematics.png",
+    "dark": "/assets/dark/star-crew/subjects/mathematics.png",
+    "sourceSha256": "db4e7305e04cf7a5d2f2ed4c9a9fd146da6417284ec9618502a2d53516a2850a",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      374,
+      198,
+      908,
+      996
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/music-v2.png",
+    "dark": "/assets/dark/star-crew/subjects/music-v2.png",
+    "sourceSha256": "497622ce5809af45312cd05126218b0fba08aa55c503b9efca41776fa813be8b",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      290,
+      148,
+      955,
+      1080
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/physical-education.png",
+    "dark": "/assets/dark/star-crew/subjects/physical-education.png",
+    "sourceSha256": "aad8aab6552e4e0027052e99afd4f811b84cf0b31f83c402f07035917e2018a8",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      320,
+      137,
+      929,
+      1068
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/physics-and-chemistry.png",
+    "dark": "/assets/dark/star-crew/subjects/physics-and-chemistry.png",
+    "sourceSha256": "ed1c74ba8a0cbb8d169b4c40711d3c7ad6c27db94034a5c8236f06a3eaec3a86",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      295,
+      193,
+      999,
+      1006
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/physics.png",
+    "dark": "/assets/dark/star-crew/subjects/physics.png",
+    "sourceSha256": "5d599805c81b5ae25de139195ce16df28b5a2702468c6859d95490df52320d5e",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      335,
+      210,
+      965,
+      1038
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/polish.png",
+    "dark": "/assets/dark/star-crew/subjects/polish.png",
+    "sourceSha256": "90d0e478f02f3b78a2ed8965f2d28c7b72dd64bdedd19ec5f5ea5460d386dbec",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      333,
+      137,
+      1043,
+      1108
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/politics-and-society.png",
+    "dark": "/assets/dark/star-crew/subjects/politics-and-society.png",
+    "sourceSha256": "899897bca8284144ee6c3772a58b01c8af37f58504b1199d15b11ac17cdff19d",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      391,
+      163,
+      886,
+      1053
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/portuguese.png",
+    "dark": "/assets/dark/star-crew/subjects/portuguese.png",
+    "sourceSha256": "75cb7737d4818742b4c6dea5f22d377a6e636851e14315f93c39804d7a5fb13d",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      233,
+      173,
+      1021,
+      1055
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/religious-education-v3.png",
+    "dark": "/assets/dark/star-crew/subjects/religious-education-v3.png",
+    "sourceSha256": "c64a52621c5b5a959bcd7ecd08d4b19e462f34f40e5ca6b74db7614b16257888",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      269,
+      160,
+      985,
+      1077
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/russian.png",
+    "dark": "/assets/dark/star-crew/subjects/russian.png",
+    "sourceSha256": "7f40cd6ab4796d34a33b9cb65bf45e87a9547d2906e872747638d1ac66032101",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      314,
+      166,
+      1033,
+      1083
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/spanish.png",
+    "dark": "/assets/dark/star-crew/subjects/spanish.png",
+    "sourceSha256": "0a5b0b309171e94800d85932e595f60eb378686ffa5ee8d2e0f96da04627793d",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      337,
+      168,
+      956,
+      1028
+    ],
+    "reviewedGapSeeds": []
+  },
+  {
+    "source": "/assets/star-crew/subjects/technology.png",
+    "dark": "/assets/dark/star-crew/subjects/technology.png",
+    "sourceSha256": "c45b0bc93a0da51b3cb3d5f6886959473a90345d23575cb53655e923366287e0",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "opaqueBounds": [
+      323,
+      193,
+      927,
+      1064
+    ],
+    "reviewedGapSeeds": []
+  }
+]

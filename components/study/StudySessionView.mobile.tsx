@@ -1,3 +1,4 @@
+import { readPlannerTodos } from '../launchpad/plannerTodos';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -8,6 +9,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
 import { BookOpen, Target, RotateCcw, type LucideIcon } from 'lucide-react';
 import StudySessionSetup from './StudySessionSetup';
+import type { PlanStep } from '../approved-ui-runtime';
 import StudySessionTimer from './StudySessionTimer';
 import StudyBreak from './StudyBreak';
 import StudySessionFinish from './StudySessionFinish';
@@ -117,6 +119,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   // Setup selections — pre-fill from timetable block if provided
   const [selectedSubject, setSelectedSubject] = useState(timetableBlock?.subject ?? '');
   const [selectedType, setSelectedType] = useState<'new-learning' | 'practice' | 'revision' | ''>(timetableBlock?.sessionType ?? '');
+  const [sessionTodos, setSessionTodos] = useState<PlanStep[] | null>(() => timetableBlock ? readPlannerTodos(user.uid, timetableBlock.dateKey, timetableBlock.blockId) : null);
   const [selectedMinutes, setSelectedMinutes] = useState<number>(timetableBlock?.durationMinutes ?? 0);
   const [_blockCompleteBanner, setBlockCompleteBanner] = useState<{ done: number; total: number } | null>(null);
   const [confirmQuit, setConfirmQuit] = useState(false);
@@ -129,6 +132,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       setSelectedSubject(timetableBlock.subject);
       setSelectedType(timetableBlock.sessionType);
       setSelectedMinutes(timetableBlock.durationMinutes);
+      setSessionTodos(readPlannerTodos(user.uid, timetableBlock.dateKey, timetableBlock.blockId));
     }
   }, [timetableBlock]);
 
@@ -403,6 +407,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     return (
       <div className="ss-view">
         <StudySessionSetup
+          todos={sessionTodos}
+          onTodosChange={setSessionTodos}
           colourfulTimer={timerAppearance === 'layers'}
           onColourfulTimerChange={value => setTimerAppearance(value ? 'layers' : 'ink')}
           subjects={subjects}

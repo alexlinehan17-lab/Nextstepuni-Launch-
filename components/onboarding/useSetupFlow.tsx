@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useReducedMotion } from "../Motion";
 import { useModal } from "../../hooks/useModal";
+import { useSettingsContext } from "../../contexts/SettingsContext";
 import {
   DAYS_OF_WEEK,
   type StudentSubjectProfile,
@@ -93,6 +94,7 @@ export function useSetupFlow(
   }: OnboardingProps,
   desktop = false,
 ) {
+  const settingsContext = useSettingsContext();
   const transition = mode === "transition-to-senior";
   // A guest's draft is tab-scoped and survives the unauthenticated-boot clear.
   const storage = guest ? guestStorage : localStorage;
@@ -168,7 +170,7 @@ export function useSetupFlow(
   const stages = transition ? route.length : lca ? 6 : 7;
   const surface =
     draft.step === "summary"
-      ? "ink"
+      ? draft.appearance === "light" ? "paper" : "ink"
       : ["welcome", "north", "schedule"].includes(draft.step)
         ? "orange"
         : "paper";
@@ -444,6 +446,9 @@ export function useSetupFlow(
       setSaving(true);
       setSaveError("");
       try {
+        // Save the displayed choice, including Dark when neither option was
+        // clicked, through the same account settings used by the app toggle.
+        settingsContext?.updateSetting("darkMode", draft.appearance === "dark");
         await onComplete(buildProfile(draft), buildNorthStar(draft), false);
         trackFunnel("onboarding_completed");
         // Keep this account-scoped draft for a delayed offline-write rollback.

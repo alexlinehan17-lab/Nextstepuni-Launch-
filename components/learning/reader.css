@@ -1,0 +1,33 @@
+.nsu-module-reader { padding-top:calc(4px + var(--sat, 0px)); }
+.nsu-module-reader .mr-topbar { padding-right:140px; }
+.nsu-module-reader .mr-lesson-heading h1 { font:500 clamp(34px,3.4vw,52px)/1.12 var(--rs-serif); letter-spacing:-1.3px; margin:0; max-width:22ch; }
+.nsu-module-reader .mr-prose { font-family:'DM Sans',sans-serif; }
+.nsu-module-reader .mr-prose > * + * { margin-top:24px; }
+.nsu-module-reader .mr-prose ul { list-style:disc; padding-left:24px; }
+.nsu-module-reader .mr-prose ol { list-style:decimal; padding-left:24px; }
+.nsu-module-reader .mr-small-beginning { border-top:1px solid var(--border); margin-top:32px; padding-top:28px; }
+.mr-small-beginning > header { display:flex; align-items:center; gap:14px; margin-bottom:22px; }
+.mr-small-beginning h3 { font:500 28px/1.2 var(--rs-serif); margin:0; }
+.mr-small-beginning > div { font-size:15px; line-height:1.8; }
+.nsu-kobra .mr-notes-editor { display:block; width:100%; min-height:240px; padding:18px; border:1px solid var(--border); border-radius:12px; background:var(--background); font:inherit; line-height:1.8; resize:vertical; }
+.mr-note-label { font-size:14px; }
+.mr-note-status { color:var(--muted-foreground); font-size:12px; margin:12px 0 0; }
+.mr-reference-list { list-style:none; padding:0; margin:0; }
+.mr-reference-list li { display:flex; gap:15px; padding:20px 0; border-bottom:1px solid var(--border); font-size:14px; line-height:1.7; }
+.mr-reference-list li > svg { flex-shrink:0; }
+.mr-reference-list p { margin:0 0 7px; color:var(--muted-foreground); }
+.mr-reference-list a { color:var(--foreground); text-decoration:underline; text-decoration-color:var(--rs-orange); text-underline-offset:4px; }
+.nsu-kobra .mr-citation { font-family:'DM Sans',sans-serif; vertical-align:baseline; max-width:150px; text-decoration:none; }
+.mr-progress-list button:disabled { opacity:.5; cursor:not-allowed; }
+.nsu-kobra .mr-contents-dialog { padding:22px; }
+.mr-contents-dialog .mr-contents-inner { box-shadow:none; }
+@media (max-width:900px) { .nsu-module-reader .mr-topbar { padding-right:0; padding-top:58px; } }
+@media (max-width:650px) { .mr-breadcrumb > span:last-child { display:none; } .mr-page-footer { gap:8px; flex-wrap:wrap; } .mr-page-footer > div { order:3; flex-basis:100%; } .mr-page-footer > button:last-child { margin-left:auto; } .nsu-module-reader .mr-lesson-heading h1 { font-size:32px; } }
+.mr-prose :where(h2,h3,h4) { font-family:var(--rs-serif); font-weight:500; line-height:1.25; margin-block:24px 12px; }
+.mr-prose :where(h2) { font-size:1.65em; }
+.mr-prose :where(h3) { font-size:1.4em; }
+.mr-prose :where(h4) { font-size:1.2em; }
+.mr-prose :where(table) { width:100%; border-collapse:collapse; }
+.mr-prose :where(th,td) { border-bottom:1px solid var(--border); padding:10px; text-align:left; }
+.mr-prose :where(blockquote) { font-family:var(--rs-serif); font-style:italic; border-block:1px solid var(--border); padding:20px 0; }
+.nsu-kobra .mr-term { font-weight:inherit; color:inherit; }

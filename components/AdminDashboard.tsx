@@ -4,6 +4,7 @@
  */
 
 import './admin/admin-dashboard.css';
+import { useSlidingNavIndicator } from './admin/useSlidingNavIndicator';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   AlertTriangle,
@@ -416,6 +417,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
   const [isDeleting, setIsDeleting] = useState(false);
   const [deleteVerificationPassword, setDeleteVerificationPassword] = useState('');
   const [activeView, setActiveView] = useState<AdminView>('overview');
+  const navRef = useRef<HTMLElement>(null);
+  useSlidingNavIndicator(navRef, activeView);
   const [schoolFilter, setSchoolFilter] = useState('all');
   const [yearFilter, setYearFilter] = useState('all');
   const deleteDialogRef = useRef<HTMLDivElement>(null);
@@ -657,7 +660,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
             <span>nextstepuni</span>
             <span className="admin-eyebrow">The programme desk</span>
           </div>
-          <nav className="admin-nav" aria-label="Admin dashboard">
+          <nav ref={navRef} className="admin-nav" aria-label="Admin dashboard">
             {NAV_ITEMS.map((item, index) => (
               <button
                 key={item.id}
@@ -666,7 +669,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
                 aria-current={activeView === item.id ? 'page' : undefined}
               >
                 <span className="admin-nav-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-                {item.label}
+                <span className="admin-nav-label">{item.label}</span>
               </button>
             ))}
           </nav>

@@ -67,6 +67,12 @@ function makeSession(id: string, subject: string, minutes: number, confidenceAft
   };
 }
 
+function chooseSubject(subject: string) {
+  fireEvent.click(screen.getByRole('button', { name: 'Filter by subject' }));
+  fireEvent.click(within(screen.getByRole('group', { name: 'Filter by subject' })).getByRole('checkbox', { name: subject }));
+  fireEvent.click(screen.getByRole('button', { name: 'Filter by subject' }));
+}
+
 describe('student analytics dashboard', () => {
   beforeEach(() => {
     vi.useFakeTimers();
@@ -93,11 +99,11 @@ describe('student analytics dashboard', () => {
       />,
     );
 
-    expect(screen.getByText('35m')).toBeInTheDocument();
+    expect(screen.getByText('35m', { selector: '.pr-focus-total' })).toBeInTheDocument();
     expect(screen.getByText('4.5')).toBeInTheDocument();
     expect(screen.getByTestId('five-climbs')).toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'Study activity chart showing sessions' })).toBeInTheDocument();
-    expect(screen.getByText('Active Recall')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Active Recall' })).toBeInTheDocument();
   });
 
   test('switches the activity measure and subject filter without changing the source data', () => {
@@ -121,8 +127,16 @@ describe('student analytics dashboard', () => {
     fireEvent.click(screen.getByRole('tab', { name: 'Minutes' }));
     expect(screen.getByRole('img', { name: 'Study activity chart showing minutes' })).toBeInTheDocument();
 
-    fireEvent.change(screen.getByRole('combobox', { name: 'Filter by subject' }), { target: { value: 'Biology' } });
-    expect(screen.getByText('25m')).toBeInTheDocument();
+    chooseSubject('Biology');
+    expect(screen.getByText('25m', { selector: '.pr-focus-total' })).toBeInTheDocument();
+    chooseSubject('English');
+    expect(screen.getByText('35m', { selector: '.pr-focus-total' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Filter by subject' })).toHaveTextContent('2 subjects selected');
+    fireEvent.click(screen.getByRole('button', { name: 'Remove Biology' }));
+    expect(screen.getByText('10m', { selector: '.pr-focus-total' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Remove English' }));
+    expect(screen.getByText('35m', { selector: '.pr-focus-total' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Filter by subject' })).toHaveTextContent('All subjects');
   });
 
   test('reveals confidence insights for the visible filters and keeps the chart in view', () => {
@@ -152,7 +166,7 @@ describe('student analytics dashboard', () => {
     );
 
     expect(screen.getAllByText('Insights')).toHaveLength(3);
-    const confidenceCard = screen.getByRole('heading', { name: 'Confidence over time' }).closest('article');
+    const confidenceCard = screen.getByRole('region', { name: 'Confidence over time' });
     expect(confidenceCard).not.toBeNull();
     const card = within(confidenceCard as HTMLElement);
     const toggle = card.getByRole('button', { name: 'Show confidence chart insights' });
@@ -160,9 +174,9 @@ describe('student analytics dashboard', () => {
     fireEvent.click(toggle);
 
     expect(toggle).toHaveAttribute('aria-expanded', 'true');
-    expect(card.getByRole('region', { name: 'Chart insights' })).toBeInTheDocument();
-    expect(card.getByRole('heading', { name: 'Biology' })).toBeInTheDocument();
-    expect(card.getByText('Trending upward')).toBeInTheDocument();
+    expect(screen.getByRole('region', { name: 'Chart insights' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Biology' })).toBeInTheDocument();
+    expect(screen.getByText('Trending upward')).toBeInTheDocument();
     expect(card.getByRole('img', { name: 'Confidence over time by subject' })).toBeInTheDocument();
   });
 
@@ -208,16 +222,21 @@ describe('student analytics dashboard', () => {
     const mockCardElement = screen.getByRole('heading', { name: 'Mock trajectory' }).closest('article');
     expect(mockCardElement).not.toBeNull();
     const mockCard = within(mockCardElement as HTMLElement);
-    expect(mockCard.getByRole('img', { name: 'Mock exam total points trajectory' }).querySelectorAll('[role="button"]')).toHaveLength(2);
+    expect(mockCard.getByRole('img', { name: 'Mock exam total points trajectory' })).toBeInTheDocument();
+    fireEvent.click(mockCard.getByRole('tab', { name: 'The record' }));
+    expect(mockCard.getByText('Full one')).toBeInTheDocument();
+    expect(mockCard.getByText('Full two')).toBeInTheDocument();
+    expect(mockCard.queryByText('Biology paper')).not.toBeInTheDocument();
 
     fireEvent.click(mockCard.getByRole('button', { name: 'Show mock trajectory insights' }));
-    expect(mockCard.getByRole('heading', { name: 'Total points' })).toBeInTheDocument();
-    expect(mockCard.getByText(/2 full mock sittings/)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Total points' })).toBeInTheDocument();
+    expect(screen.getByText(/2 full mock sittings/)).toBeInTheDocument();
 
-    fireEvent.change(screen.getByRole('combobox', { name: 'Filter by subject' }), { target: { value: 'Biology' } });
-    expect(mockCard.getByRole('heading', { name: 'Biology results' })).toBeInTheDocument();
-    expect(mockCard.queryByRole('heading', { name: 'Subject movement' })).not.toBeInTheDocument();
-    expect(mockCard.getByText(/3 results/)).toBeInTheDocument();
+    chooseSubject('Biology');
+    fireEvent.click(mockCard.getByRole('button', { name: 'Show mock trajectory insights' }));
+    expect(screen.getByRole('heading', { name: 'Biology results' })).toBeInTheDocument();
+    expect(screen.queryByRole('heading', { name: 'Subject movement' })).not.toBeInTheDocument();
+    expect(screen.getByText(/3 results/)).toBeInTheDocument();
   });
 
   test('lights up every analytics section with the localhost demo history', () => {
@@ -246,14 +265,14 @@ describe('student analytics dashboard', () => {
     expect(screen.getByRole('img', { name: 'Study activity chart showing sessions' })).toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'Confidence over time by subject' })).toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'Mock exam total points trajectory' })).toBeInTheDocument();
-    expect(screen.getByRole('img', { name: 'uses ranked bar chart' })).toBeInTheDocument();
+    expect(screen.getByRole('navigation', { name: 'Choose a method' })).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('tab', { name: 'Confidence' }));
-    expect(screen.getByRole('img', { name: 'Topic readiness breakdown' })).toBeInTheDocument();
+    expect(screen.getByRole('group', { name: 'Readiness levels' })).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('tab', { name: 'Study' }));
     expect(screen.getByRole('img', { name: /^Thirteen week study rhythm:/ })).toBeInTheDocument();
-    expect(screen.getByRole('img', { name: 'Session type allocation' })).toBeInTheDocument();
+    expect(screen.getByRole('group', { name: 'Session types' })).toBeInTheDocument();
   });
 
   test('keeps goals, rank, strategy milestones and achievements inside My Progress', () => {
@@ -280,11 +299,11 @@ describe('student analytics dashboard', () => {
     );
 
     expect(screen.getByRole('heading', { name: 'Beginner' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Three useful targets' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Strategy milestones' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Three useful targets.' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'From knowing to doing.' })).toBeInTheDocument();
     expect(screen.getByText('Active Recall')).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Best efforts' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Achievements' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Best efforts.' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Marks of progress.' })).toBeInTheDocument();
   });
 
   test('gives a new student one useful first action instead of empty analytics', () => {

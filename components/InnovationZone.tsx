@@ -98,7 +98,7 @@ interface ToolChrome {
  * reading column. `max-w-4xl` yields 848px of usable width, which is right for a
  * page of prose and wrong for a two-pane workspace.
  */
-const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life', 'war-room', 'journey']);
+const WIDE_TOOLS = new Set(['mark-bank', 'your-possible-life', 'war-room', 'journey', 'planner', 'paper-trail']);
 
 const TOOL_CHROME: Record<string, ToolChrome> = {
   'journey':         { themeColor: '#8B82B8', eyebrow: 'Track · Simulator',           subtitle: 'Navigate the choices of your final school year, then turn the outcome into a practical next step.', showHeader: true },
@@ -240,6 +240,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     const [reflections, setReflections] = useState<StudyReflection[]>([]);
     const [pointsData, setPointsData] = useState<PointsData>({ totalEarned: 0, totalSpent: 0 });
     const [cosmeticUnlocks, setCosmeticUnlocks] = useState<CosmeticUnlocks>({ avatarSeeds: [], themeColors: [], cardStyles: [] });
+    const [plannerSkippedBlocks, setPlannerSkippedBlocks] = useState<string[]>([]);
     const [earnedRest, setEarnedRest] = useState<EarnedRest>({ skippedSessions: [], restDayPasses: [] });
     const [schoolEvents, setSchoolEvents] = useState<SchoolEvent[]>([]);
     const [gcRecommendations, setGcRecommendations] = useState<Record<string, { fromName: string; message?: string }>>({});
@@ -298,6 +299,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             const data = rawProgressDoc;
             if (data.subjectProfile) setSubjectProfile({ restDays: [], ...data.subjectProfile });
             setTimetableCompletions(data.timetableCompletions ?? {});
+            setPlannerSkippedBlocks(Array.isArray(data.plannerSkippedBlocks) ? data.plannerSkippedBlocks.filter((id): id is string => typeof id === 'string') : []);
             if (data.timetableStreak) setTimetableStreak(data.timetableStreak);
             setReflections(data.reflections ?? []);
             setPointsData(validatePointsData(data.pointsData));
@@ -316,6 +318,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                 if (cancelled) return;
                 if (progressDoc.exists()) {
                     const data = progressDoc.data();
+                    setPlannerSkippedBlocks(Array.isArray(data.plannerSkippedBlocks) ? data.plannerSkippedBlocks.filter((id: unknown): id is string => typeof id === 'string') : []);
                     if (data.subjectProfile) {
                         setSubjectProfile({ restDays: [], ...data.subjectProfile } as StudentSubjectProfile);
                     }
@@ -508,6 +511,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         }
     }, [executeToggle, isDemo, pointsData, timetableCompletions]);
 
+    const handleSkipPlannerBlock = (dateKey: string, blockId: string, skipped: boolean) => {
+        const key = `${dateKey}|${blockId}`;
+        const previous = plannerSkippedBlocks;
+        const next = skipped ? [...new Set([...previous, key])] : previous.filter(id => id !== key);
+        setPlannerSkippedBlocks(next);
+        if (isDemo) updateDemoProgress(current => ({ ...current, plannerSkippedBlocks: next }));
+        else if (user?.uid) saveInBackground(setDoc(doc(db, 'progress', user.uid), { plannerSkippedBlocks: next }, { merge: true }), 'InnovationZone.savePlannerSkips', () => setPlannerSkippedBlocks(previous));
+    };
+
     const handleToolClick = useCallback((toolId: string, needsProfile: boolean) => {
         if (needsProfile && !profileLoaded) return;
         if (needsProfile && !subjectProfile) {
@@ -568,7 +580,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={(_s, _t, newDuration) => persistProfileUpdate({ ...subjectProfile, defaultBlockDuration: newDuration })} onRestDaysChange={(days) => persistProfileUpdate({ ...subjectProfile, restDays: days })} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} deferredBlocks={plannerSkippedBlocks} onSkipBlock={handleSkipPlannerBlock} onPlanSettingsChange={(restDays, defaultBlockDuration) => persistProfileUpdate({ ...subjectProfile, restDays, defaultBlockDuration })} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={(_s, _t, newDuration) => persistProfileUpdate({ ...subjectProfile, defaultBlockDuration: newDuration })} onRestDaysChange={(days) => persistProfileUpdate({ ...subjectProfile, restDays: days })} /> : null,
         },
         {
             id: 'war-room', title: 'War Room', description: 'Decide what needs your attention.', icon: Target, needsProfile: true,

@@ -1,0 +1,86 @@
+/* Grade setup is a paper surface, including when the device prefers dark mode.
+   Scope the portalled menu explicitly so it matches its trigger. */
+.nsu-kobra.setup-select-scope {
+  min-width: 0;
+  width: 100%;
+  background: transparent;
+  --background: #fff;
+  --foreground: #1a1a1a;
+  --focus-ring: #1a1a1a;
+  --muted-foreground: #6c6c6c;
+  --input: #d9d6d0;
+  color-scheme: light;
+}
+.setup-flow .setup-select-trigger {
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #c9c8c4;
+  border-radius: 9px;
+  background: #fff;
+  color: #1a1a1a;
+  font: 400 15px/1.4 'DM Sans', sans-serif;
+  box-shadow: none;
+  cursor: pointer;
+}
+.setup-flow .setup-select-trigger:hover:not(:disabled),
+.setup-flow .setup-select-trigger[data-popup-open] { border-color: #1a1a1a; background: #fff; }
+.setup-flow .setup-select-trigger:focus-visible { outline: 2px solid #1a1a1a; outline-offset: 3px; }
+.setup-flow .setup-select-trigger:disabled { opacity: .4; cursor: not-allowed; }
+.setup-flow .setup-select-trigger [data-slot=select-value] { overflow: hidden; text-overflow: ellipsis; }
+.setup-flow .setup-select-trigger svg { width: 16px; height: 16px; color: #626262; }
+.grade-workspace .grade-value-current .setup-select-trigger { border-bottom: 2px solid #1a1a1a; }
+.grade-workspace .grade-value-target .setup-select-trigger { border-bottom: 2px solid #f26b1f; }
+.grade-workspace .grade-level .setup-select-trigger { font-size: 14px; }
+.setup-field .setup-select-trigger { min-height: 52px; font-size: 16px; }
+.nsu-kobra .setup-select-menu {
+  --foreground: #1a1a1a;
+  --focus-ring: #1a1a1a;
+  --popover: #fff;
+  --popover-foreground: #1a1a1a;
+  --accent: #f1f1ef;
+  --accent-foreground: #1a1a1a;
+  --border: #e2e1de;
+  color-scheme: light;
+  width: max-content;
+  min-width: max(148px, var(--anchor-width));
+  max-width: calc(100vw - 24px);
+  max-height: min(420px, var(--available-height));
+  scrollbar-width: thin;
+  padding: 5px;
+  border: 1px solid #d7d6d2;
+  border-radius: 12px;
+  background: #fff;
+  color: #1a1a1a;
+  box-shadow: 0 3px 6px #00000008, 0 16px 32px -12px #00000030;
+  font: 400 15px/1.4 'DM Sans', sans-serif;
+}
+.nsu-kobra .setup-select-menu [data-slot=select-item] {
+  min-height: 40px;
+  padding: 9px 32px 9px 11px;
+  border-radius: 7px;
+  background: transparent;
+  color: #1a1a1a;
+  font: inherit;
+  cursor: pointer;
+}
+.nsu-kobra .setup-select-menu [data-slot=select-item]:is(:focus, [data-highlighted]) {
+  background: #f1f1ef;
+  color: #1a1a1a;
+}
+.nsu-kobra .setup-select-menu [data-slot=select-item] > span:first-child {
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.nsu-kobra .setup-select-menu [data-slot=select-item]:focus-visible {
+  outline: 1px solid #1a1a1a;
+  outline-offset: -1px;
+}
+.nsu-kobra .setup-select-menu [data-slot=select-separator] { margin: 5px 6px; background: #e2e1de; }
+.nsu-kobra .setup-select-menu [data-slot^=select-scroll] { background: #fff; color: #626262; }
+@media(pointer: coarse) {
+  .nsu-kobra .setup-select-menu [data-slot=select-item] { min-height: 44px; }
+}

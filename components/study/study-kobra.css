@@ -1,0 +1,520 @@
+.nsu-kobra.ks-page {
+  background: var(--background);
+  color: var(--foreground);
+  min-height: 80vh;
+  --ks-shadow: 0 2px 4px #00000004, 0 8px 18px -10px #00000024;
+}
+.ks-shell {
+  max-width: 1190px;
+  margin: auto;
+  padding: 25px 32px 70px;
+}
+.ks-navigation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+.ks-nav-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+.ks-masthead {
+  padding: 25px 0 26px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 28px;
+}
+.nsu-kobra .ks-eyebrow {
+  margin: 0 0 9px;
+  color: var(--muted-foreground);
+  font:
+    500 11px/1.6 'DM Sans',
+    sans-serif;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.ks-masthead h1 {
+  font: 500 clamp(36px, 4vw, 48px) / 1.08 var(--nsu-serif);
+  letter-spacing: -0.04em;
+  margin: 0 0 10px;
+}
+.ks-masthead h1 em {
+  font-weight: 400;
+}
+.ks-masthead > div > p:last-child {
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.ks-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.6fr);
+  gap: 36px;
+  align-items: start;
+}
+.ks-sections {
+  min-width: 0;
+}
+.ks-section {
+  margin-top: 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--border);
+}
+.ks-section:first-child {
+  margin-top: 0;
+}
+.ks-section:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.ks-section h2,
+.ks-session-intro h2 {
+  font: 500 clamp(25px, 2.6vw, 30px) / 1.15 var(--nsu-serif);
+  letter-spacing: -0.035em;
+  margin: 0 0 13px;
+}
+.ks-copy {
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+.ks-page .ks-appearance-choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0 0;
+  margin: 22px 0 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+  background: none;
+}
+.ks-page .ks-appearance-choice label {
+  color: var(--foreground);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.ks-page .ks-appearance-choice p {
+  color: var(--muted-foreground);
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 5px 0 0;
+}
+.ks-page .ks-appearance-choice [data-slot='switch'] {
+  flex-shrink: 0;
+}
+.ks-carousel {
+  width: 100%;
+  min-width: 0;
+}
+.ks-carousel-item {
+  flex-basis: 58%;
+}
+/* Leave room for the soft shadow inside Embla's clipped viewport. */
+.ks-carousel [data-slot='carousel-content'] {
+  padding-block: 6px 24px;
+  margin-block: -6px -24px;
+  mask-image: linear-gradient(to right, transparent, #000 14px, #000 calc(100% - 14px), transparent);
+}
+.nsu-kobra .ks-subject-card {
+  margin-block: 4px 12px;
+  border-radius: 16px;
+  box-shadow: var(--ks-shadow);
+}
+.nsu-kobra .ks-subject-card[data-selected='true'] {
+  border-color: var(--nsu-orange);
+  box-shadow:
+    0 0 0 1px var(--nsu-orange),
+    var(--ks-shadow);
+}
+.ks-subject-card [data-slot='card-content'] {
+  padding: 14px;
+}
+.ks-subject-card button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  min-height: 194px;
+  padding: 8px 0;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  color: var(--foreground);
+  text-align: center;
+}
+.ks-subject-art {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.ks-subject-card strong {
+  font: 500 24px/1.2 var(--nsu-serif);
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+.ks-subject-card button > span:last-child {
+  color: var(--muted-foreground);
+  font-size: 13px;
+}
+.ks-subject-card button:focus-visible {
+  outline: 2px solid var(--nsu-orange);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+.ks-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 6px 0 18px;
+}
+.ks-carousel-controls p {
+  font-size: 14px;
+  text-align: center;
+}
+.ks-carousel-controls > [data-slot='carousel-previous'],
+.ks-carousel-controls > [data-slot='carousel-next'] {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  transform: none;
+  width: 38px;
+  height: 38px;
+}
+.ks-subject-choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.ks-choice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  min-height: 52px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  min-width: 0;
+}
+.ks-subject-choices > .ks-choice:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+.ks-choice[data-selected='true'] {
+  border-color: var(--foreground);
+}
+.ks-choice > span {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.ks-choice > span > strong {
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+}
+.ks-choice small {
+  color: var(--muted-foreground);
+  font-size: 13px;
+  display: block;
+  margin-top: 3px;
+}
+.ks-methods {
+  gap: 8px;
+  margin-top: 16px;
+}
+.ks-methods .ks-choice > span:last-child {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.ks-methods small { text-align: right; margin: 0; }
+.ks-page .ss-durations {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(145px, 1.3fr);
+  gap: 8px;
+  margin: 16px 0 0;
+}
+.ks-page .ss-durations [data-slot='button'] {
+  min-width: 0;
+  min-height: 48px;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.ks-page .ss-durations [aria-pressed='true']::before {
+  border-color: var(--foreground);
+  box-shadow: inset 0 0 0 1px var(--foreground);
+}
+.ks-custom-duration {
+  display: grid;
+  grid-template-columns: 1fr minmax(3ch, 1fr) 1fr;
+  align-items: center;
+  gap: 7px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  min-width: 0;
+  font-size: 13px;
+}
+.ks-custom-duration[data-selected='true'], .ks-custom-duration:focus-within {
+  border-color: var(--foreground);
+}
+.nsu-kobra.ks-page .ks-custom-duration input {
+  min-width: 0;
+  width: 100%;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 16px;
+  background: transparent;
+  text-align: center;
+  appearance: textfield;
+}
+.ks-custom-duration input::-webkit-inner-spin-button,
+.ks-custom-duration input::-webkit-outer-spin-button { appearance: none; margin: 0; }
+.ks-custom-duration input:focus-visible { outline: none; box-shadow: none; }
+.ks-custom-duration > span:last-child { justify-self: end; color: var(--muted-foreground); font-size: 12px; }
+.ks-page .ss-duration-help {
+  font-size: 12px;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  margin-top: 12px;
+}
+.ks-sidebar {
+  min-width: 0;
+  position: sticky;
+  top: 35px;
+}
+.ks-session-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  padding: 0 0 20px;
+}
+.ks-session-intro > .ks-subject-art { width: 64px; height: 64px; }
+.ks-session-intro h2 {
+  font-size: 27px;
+  margin-bottom: 0;
+}
+.ks-page .nsu-plan-card {
+  max-width: none;
+  min-width: 0;
+  border-radius: 16px;
+  box-shadow: var(--ks-shadow);
+}
+.ks-page .nsu-plan-card h3 { min-width: 0; overflow-wrap: anywhere; }
+.ks-page .nsu-plan-card > p { font-size: 14px; }
+.ks-page .nsu-plan-card li span { white-space: normal; overflow-wrap: anywhere; }
+.ks-page .nsu-plan-card > div:last-child > span:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 0;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ks-page .nsu-plan-card > div:last-child button {
+  min-width: 0;
+  padding-inline: 12px;
+}
+.ks-page .nsu-plan-card [data-slot='kbd-group'] { display: none; }
+.ks-page .nsu-plan-card > div:last-child { background: var(--background); }
+
+.ks-start-hint,
+.ks-today-total {
+  color: var(--muted-foreground);
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 13px 0 0;
+}
+.ks-start-hint {
+  color: var(--foreground);
+}
+.ks-timetable {
+  margin-top: 32px;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+.ks-timetable h2 {
+  font: 500 25px/1.2 var(--nsu-serif);
+  margin: 0 0 16px;
+}
+.ks-timetable [data-slot='button'] {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  min-height: 80px;
+  height: auto;
+  white-space: normal;
+  border-radius: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+.ks-timetable .subject-avatar {
+  width: 40px;
+  height: 40px;
+}
+.ks-timetable button > span:not(.subject-avatar) {
+  flex: 1;
+  min-width: 0;
+}
+.ks-timetable button strong {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+}
+.ks-timetable button small {
+  display: block;
+  color: var(--muted-foreground);
+  font-size: 13px;
+  margin-top: 4px;
+}
+.ks-mastery {
+  margin-top: 45px;
+  border-top: 1px solid var(--border);
+  padding-top: 22px;
+}
+.ks-mastery summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+.ks-mastery > div > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 12px 0;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.ks-mastery > div > div > span:last-child {
+  color: var(--muted-foreground);
+}
+.ks-empty {
+  padding: 22px 0;
+}
+.ks-empty h3 {
+  font: 500 25px/1.2 var(--nsu-serif);
+  margin-bottom: 12px;
+}
+.ks-empty p {
+  margin-bottom: 18px;
+  color: var(--muted-foreground);
+}
+.nsu-kobra .ks-todo-dialog {
+  width: min(580px, calc(100% - 32px));
+  max-width: none;
+}
+.ks-todo-dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-width: 0;
+}
+.ks-todo-rows {
+  display: grid;
+  gap: 18px;
+  max-height: 48vh;
+  overflow-y: auto;
+  padding: 4px;
+}
+.ks-todo-row {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr) 36px;
+  gap: 12px;
+  align-items: end;
+}
+.ks-todo-row > [data-slot='checkbox'] {
+  margin-bottom: 10px;
+}
+.ks-todo-row label {
+  display: grid;
+  gap: 7px;
+  font-size: 14px;
+}
+.ks-todo-row input {
+  font-size: 16px;
+}
+.ks-todo-dialog form > button {
+  align-self: flex-start;
+}
+.nsu-kobra .ks-todo-dialog [data-slot='dialog-footer'] {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nsu-kobra .ks-todo-dialog [data-slot='dialog-footer'] > button {
+  height: 44px;
+  min-height: 44px;
+}
+.ks-todo-error {
+  color: var(--destructive);
+  font-size: 14px;
+}
+.ks-save-feedback {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+.ks-save-feedback .nsu-success-mark {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+}
+@media (max-width: 1000px) {
+  .ks-layout { gap: 24px; grid-template-columns: minmax(0, 1fr) 310px; }
+  .ks-shell { padding-inline: 24px; }
+  .ks-carousel-item { flex-basis: 76%; }
+  .ks-methods .ks-choice > span:last-child { display: block; }
+  .ks-methods small { text-align: left; margin-top: 3px; }
+  .ks-page .ss-durations { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .ks-custom-duration { grid-column: 1 / -1; }
+  .ks-session-intro h2 { font-size: 25px; }
+}
+@media (max-width: 800px) {
+  .ks-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .ks-shell { padding: 16px 20px calc(100px + env(safe-area-inset-bottom)); }
+  .ks-sidebar { position: static; }
+  .ks-masthead { padding-block: 22px; margin-bottom: 24px; }
+  .ks-masthead h1 { font-size: 39px; }
+  .ks-nav-actions { flex-basis: 100%; justify-content: space-between; margin: 0; }
+  .ks-section { margin-top: 24px; padding-bottom: 24px; }
+  .ks-carousel-item { flex-basis: 64%; }
+  .ks-methods .ks-choice > span:last-child { display: flex; }
+  .ks-methods small { text-align: right; margin: 0; }
+  .ks-session-summary { max-width: 520px; margin: auto; }
+  .ks-session-intro { justify-content: flex-start; text-align: left; padding-bottom: 18px; }
+}
+@media (max-width: 480px) {
+  .ks-shell { padding-inline: 16px; }
+  .ks-carousel-item { flex-basis: 78%; }
+  .ks-subject-art { width: 100px; height: 100px; }
+  .ks-subject-card button { min-height: 178px; }
+  .ks-subject-card strong { font-size: 23px; }
+  .ks-choice { padding: 12px; gap: 9px; }
+  .ks-subject-choices .ks-choice > span { font-size: 13px; }
+  .ks-methods small { max-width: 135px; }
+}

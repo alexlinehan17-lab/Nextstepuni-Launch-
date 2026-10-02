@@ -3,14 +3,17 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { Zap, Quote, Sparkles, ArrowRight, Heart } from 'lucide-react';
+import { Quote, ArrowRight, Heart } from 'lucide-react';
 import { type ModuleTheme } from '../types';
 import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { COLORS } from '../design/tokens';
+import { Artwork, Eyebrow } from './learning/shared';
+import { BrandBook } from './learning/BrandBook';
+import { Popover, PopoverTrigger, PopoverContent } from './approved-ui-runtime';
 
 /* ═══════════════════════════════════════════════════════
    Highlight — inline discovery tooltip
@@ -22,78 +25,12 @@ interface HighlightProps {
   theme: ModuleTheme;
 }
 
-export const Highlight = ({ children, description, theme: _theme }: HighlightProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const buttonRef = useRef<HTMLButtonElement>(null);
-  const tooltipRef = useRef<HTMLDivElement>(null);
-  const [tooltipStyle, setTooltipStyle] = useState<React.CSSProperties>({});
-
-  const repositionTooltip = useCallback(() => {
-    if (!buttonRef.current || !tooltipRef.current) return;
-    const buttonRect = buttonRef.current.getBoundingClientRect();
-    const tooltipRect = tooltipRef.current.getBoundingClientRect();
-    const viewportWidth = window.innerWidth;
-    const pad = 12;
-    let leftOffset = (buttonRect.width / 2) - (tooltipRect.width / 2);
-    const tooltipRight = buttonRect.left + leftOffset + tooltipRect.width;
-    if (tooltipRight > viewportWidth - pad) leftOffset -= (tooltipRight - viewportWidth + pad);
-    const tooltipLeft = buttonRect.left + leftOffset;
-    if (tooltipLeft < pad) leftOffset += (pad - tooltipLeft);
-    setTooltipStyle({ left: leftOffset });
-  }, []);
-
-  useEffect(() => {
-    if (isOpen) requestAnimationFrame(repositionTooltip);
-  }, [isOpen, repositionTooltip]);
-
-  return (
-    <span className="relative inline-block mx-0.5">
-      <button
-        ref={buttonRef}
-        onClick={(e) => { e.stopPropagation(); setIsOpen(!isOpen); }}
-        className="relative inline-flex items-center font-semibold cursor-help transition-all duration-200"
-        style={{
-          color: 'var(--accent-hex)',
-          backgroundImage: 'linear-gradient(to right, rgba(var(--accent),0.2), rgba(var(--accent),0.2))',
-          backgroundPosition: '0 100%',
-          backgroundSize: '100% 3px',
-          backgroundRepeat: 'no-repeat',
-          paddingBottom: 2,
-        }}
-      >
-        <span className="not-italic">{children}</span>
-      </button>
-      <AnimatePresence>
-        {isOpen && (
-          <>
-            <div className="fixed inset-0 z-[60]" onClick={() => setIsOpen(false)} />
-            <motion.div
-              ref={tooltipRef}
-              initial={{ opacity: 0, scale: 0.92, y: 8 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.92, y: 8 }}
-              transition={{ duration: 0.2, ease: [0.25, 1, 0.5, 1] }}
-              className="absolute z-[70] bottom-full mb-3 w-72 max-w-[calc(100vw-1.5rem)] p-5 bg-zinc-900 dark:bg-zinc-800 text-white rounded-2xl pointer-events-auto leading-relaxed whitespace-normal text-left"
-              style={{ ...tooltipStyle, transformOrigin: 'bottom center', boxShadow: '0 4px 20px rgba(0,0,0,0.25)' }}
-            >
-              <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 rotate-45 bg-zinc-900 dark:bg-zinc-800" />
-              <div className="relative">
-                <p className="font-sans font-bold uppercase tracking-wider text-[9px] mb-2 text-zinc-400">
-                  <Sparkles size={10} className="inline -mt-0.5 mr-1" />
-                  Key Insight
-                </p>
-                <p className="text-[13px] font-medium leading-relaxed text-zinc-100">{description}</p>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
-    </span>
-  );
-};
+export const Highlight = ({ children, description }: HighlightProps) => (
+  <Popover><PopoverTrigger className="mr-term">{children}</PopoverTrigger><PopoverContent className="mr-definition"><p>{description}</p></PopoverContent></Popover>
+);
 
 /* ═══════════════════════════════════════════════════════
-   ReadingSection — Headspace-inspired lesson page
+   ReadingSection — approved learning notebook
    ═══════════════════════════════════════════════════════ */
 
 interface ReadingSectionProps {
@@ -104,65 +41,15 @@ interface ReadingSectionProps {
   theme: ModuleTheme;
 }
 
-export const ReadingSection = ({ title, eyebrow, icon: Icon, children, theme: _theme }: ReadingSectionProps) => (
-  <article className="relative">
-    <header className="mb-14 relative">
-      <MotionDiv
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.05, ease: [0.25, 1, 0.5, 1] }}
-      >
-        <span
-          className="inline-flex items-center gap-2 rounded-lg border-[1.5px] px-3 py-1.5 text-[10px] font-bold tracking-wider uppercase mb-5"
-          style={{ backgroundColor: 'rgba(var(--accent),0.07)', borderColor: 'rgba(var(--accent),0.34)', color: 'var(--accent-hex)' }}
-        >
-          <Icon size={12} />
-          {eyebrow}
-        </span>
-      </MotionDiv>
-
-      <MotionDiv
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.12, ease: [0.25, 1, 0.5, 1] }}
-      >
-        <h2
-          className="font-serif font-bold leading-tight tracking-tight text-zinc-900 dark:text-white"
-          style={{ fontSize: 'clamp(30px, 7vw, 48px)', letterSpacing: '-0.025em' }}
-        >
-          {title}
-        </h2>
-      </MotionDiv>
-
-      <MotionDiv
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: 1 }}
-        transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 1, 0.5, 1] }}
-        className="mt-6 h-0.5 rounded-full origin-left"
-        style={{ backgroundColor: 'rgba(var(--accent),0.15)', maxWidth: 80 }}
-      />
-    </header>
-
-    <MotionDiv
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, delay: 0.25 }}
-    >
-      <div
-        className="prose prose-stone dark:prose-invert prose-lg max-w-none text-[var(--ink-secondary)] leading-[1.85] font-serif overflow-visible space-y-7"
-        // Reading comfort (ModuleLayout sets the variables from settings):
-        // scale multiplies the prose-lg base size; line height opens up in
-        // relaxed mode. Inline style so it wins over the utility classes.
-        style={{ fontSize: 'calc(1.125rem * var(--reading-scale, 1))', lineHeight: 'var(--reading-lh, 1.85)' }}
-      >
-        {children}
-      </div>
-    </MotionDiv>
-  </article>
+export const ReadingSection = ({ title, eyebrow, children }: ReadingSectionProps) => (
+  <section className="mr-lesson">
+    <header className="mr-lesson-heading"><div><Eyebrow>{eyebrow}</Eyebrow><h1 tabIndex={-1}>{title}</h1></div><Artwork src="/assets/star-crew/companions/thinker.png" size={124} /></header>
+    <div className="mr-prose" style={{ fontSize: 'calc(17px * var(--reading-scale, 1))', lineHeight: 'var(--reading-lh, 1.85)' }}>{children}</div>
+  </section>
 );
 
 /* ═══════════════════════════════════════════════════════
-   MicroCommitment — Chunky action card with hard shadow
+   MicroCommitment — a small beginning in the learning notebook
    ═══════════════════════════════════════════════════════ */
 
 interface MicroCommitmentProps {
@@ -171,46 +58,8 @@ interface MicroCommitmentProps {
   northStarNudge?: string;
 }
 
-export const MicroCommitment = ({ children, theme: _theme, northStarNudge }: MicroCommitmentProps) => (
-  <MotionDiv
-    initial={{ opacity: 0, y: 12 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, margin: '-40px' }}
-    transition={{ duration: 0.5, ease: [0.25, 1, 0.5, 1] }}
-    className="my-14"
-  >
-    <motion.div
-      className="rounded-2xl relative bg-[var(--surface-paper)] px-7 py-6 md:px-8 md:py-7"
-      style={{
-        border: `2.5px solid ${COLORS.accent}`,
-        boxShadow: `4px 4px 0px 0px ${COLORS.accentDark}`,
-        borderRadius: 18,
-      }}
-      whileHover={{ x: -2, y: -2, boxShadow: `6px 6px 0px 0px ${COLORS.accentDark}` }}
-      whileTap={{ x: 2, y: 2, boxShadow: `1px 1px 0px 0px ${COLORS.accentDark}` }}
-      transition={{ type: 'spring', stiffness: 400, damping: 25 }}
-    >
-      <div className="flex items-start gap-4">
-        <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: COLORS.accent }}>
-          <Zap size={18} style={{ color: '#fff' }} />
-        </div>
-        <div className="flex-1 min-w-0">
-          <p className="text-[10px] font-bold uppercase tracking-[0.15em] mb-2" style={{ color: COLORS.accent }}>
-            Quick Challenge
-          </p>
-          <div className="text-[15px] leading-relaxed font-sans text-zinc-700 dark:text-zinc-300">
-            {children}
-          </div>
-          {northStarNudge && (
-            <p className="text-xs mt-4 pt-3 text-zinc-400 dark:text-zinc-500" style={{ borderTop: '1px solid #E8E4DE' }}>
-              <Zap size={10} className="inline -mt-0.5 mr-1" style={{ color: COLORS.accent }} />
-              Remember: {northStarNudge}
-            </p>
-          )}
-        </div>
-      </div>
-    </motion.div>
-  </MotionDiv>
+export const MicroCommitment = ({ children, northStarNudge }: MicroCommitmentProps) => (
+  <section className="mr-small-beginning"><header><BrandBook size={30} /><h3>A small beginning.</h3></header><div>{children}</div>{northStarNudge && <p className="mr-note-status">Remember: {northStarNudge}</p>}</section>
 );
 
 /* ═══════════════════════════════════════════════════════

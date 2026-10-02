@@ -503,7 +503,7 @@ const TrainingHub: React.FC<TrainingHubProps> = ({
                     src="/assets/training/north-star-compass.png"
                     alt=""
                     aria-hidden="true"
-                    className="pointer-events-none absolute left-1/2 top-1/2 h-[120px] w-[120px] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain"
+                    className="theme-filled-art pointer-events-none absolute left-1/2 top-1/2 h-[120px] w-[120px] max-w-none -translate-x-1/2 -translate-y-1/2 object-contain"
                   />
                 </div>
 

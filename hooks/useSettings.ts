@@ -55,6 +55,7 @@ export function useSettings(uid?: string, userAvatar?: string, onAvatarChange?: 
   const [state, setState] = useState(() => ({ uid, settings: initialSettings(uid, userAvatar) }));
   const current = useRef(state);
   const preferredAvatar = useRef(userAvatar);
+  const changesDuringLoad = useRef<Partial<UserSettings>>({});
   const [isLoaded, setIsLoaded] = useState(false);
   const settings = state.uid === uid ? state.settings : initialSettings(uid, userAvatar);
 
@@ -75,6 +76,7 @@ export function useSettings(uid?: string, userAvatar?: string, onAvatarChange?: 
 
   useEffect(() => {
     let cancelled = false;
+    changesDuringLoad.current = {};
     replaceSettings(uid, initialSettings(uid, preferredAvatar.current));
     setIsLoaded(false);
     if (!uid || uid === DEMO_STUDENT_UID) {
@@ -91,6 +93,8 @@ export function useSettings(uid?: string, userAvatar?: string, onAvatarChange?: 
           const merged = {
             ...current.current.settings,
             ...firestoreSettings,
+            // A choice made while this older read was pending wins.
+            ...changesDuringLoad.current,
             // This ref also tracks a selection made while the read was pending.
             avatar: preferredAvatar.current || firestoreSettings.avatar || current.current.settings.avatar,
           };
@@ -124,6 +128,7 @@ export function useSettings(uid?: string, userAvatar?: string, onAvatarChange?: 
 
     const previous = current.current.uid === uid ? current.current.settings : initialSettings(uid, preferredAvatar.current);
     const next = { ...previous, [key]: value };
+    changesDuringLoad.current = { ...changesDuringLoad.current, [key]: value };
     if (key === 'avatar') preferredAvatar.current = value as string;
     replaceSettings(uid, next);
     writeLocalSettings(next, uid);

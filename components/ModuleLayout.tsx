@@ -4,20 +4,31 @@
  */
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, CheckCircle2, Lock, List, X, Palette, Sun, Moon, BookOpen, PanelLeft } from 'lucide-react';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
+import { ArrowLeft, ArrowRight, Search, Palette, Sun, Moon, PanelLeft, ArrowUpRight } from 'lucide-react';
 import { type ModuleProgress, type SectionDefinition, type ModuleTheme } from '../types';
-import { ActivityRing } from './ModuleShared';
-import { ReferencesModal } from './ModuleReferences';
+import { ReferencesModal, ModuleReferencesProvider } from './ModuleReferences';
 import { type Reference } from '../data/references/types';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { useModulePosition } from '../contexts/ModulePositionContext';
 import { COLORS } from '../design/tokens';
 import ModuleCompleteScreen from './ModuleCompleteScreen';
 import { useNavigation } from '../contexts/NavigationContext';
+import KobraScope from './approved-ui-runtime';
 import BackButton from './ui/BackButton';
-import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
+import { Button } from './approved-ui-runtime';
+import { Toasts, toast } from './approved-ui-runtime';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './approved-ui-runtime';
+import { CommandMenu, openCommandMenu } from './approved-ui-runtime';
+import { BrandBook } from './learning/BrandBook';
+import { CompletionMark } from './learning/CompletionMark';
+import { ReadingProgress } from './learning/ReadingProgress';
 import { ReaderNotes } from './learning/ReaderNotes';
+import { Eyebrow } from './learning/shared';
+import { requestedModuleSection, clearModuleSectionRequest } from './learning/data';
+import './learning/module-reader-preview.css';
+import './learning/sidebar-directions.css';
+import './learning/reader.css';
 
 const CONFETTI_COLORS = ['#CC785C', '#f59e0b', '#3b82f6', '#10b981', '#8b5cf6', '#ef4444', '#ec4899'];
 const CONFETTI_COUNT = 60;
@@ -53,9 +64,8 @@ interface ModuleLayoutProps {
   /** When essentials mode uses fewer sections, set this to the full section count
    *  so completion is reported correctly against courseData.sectionsCount */
   fullSectionsCount?: number;
-  /** Verified peer-reviewed sources behind the module. When provided, a
-   *  "References" button appears (desktop: by the progress wheel; mobile: top of
-   *  the Sections drawer) opening the references modal. */
+  /** Existing module sources feed inline Kobra citation bubbles and the
+   *  Sources & further reading list in Contents. */
   references?: Reference[];
   children: (activeSection: number) => React.ReactNode;
   // Celebration screen props (optional)
@@ -70,7 +80,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   moduleTitle,
   moduleSubtitle,
   moduleDescription,
-  theme,
+  theme: _theme,
   sections,
   onBack,
   progress,
@@ -86,11 +96,14 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
 }) => {
   const navigation = useNavigation();
   const settingsCtx = useSettingsContext();
-  const mobileAppDesign = useMobileAppDesign();
+  const reducedMotion = useReducedMotion();
+  const moduleId = navigation.state?.currentModuleId ?? moduleTitle;
+  const requestedSection = useRef(requestedModuleSection(moduleId));
+  const previousProgress = useRef({ unlocked: progress.unlockedSection, total: sections.length });
   const modulePosition = useModulePosition();
   const displayedModuleNumber = modulePosition?.displayNumber ?? moduleNumber;
   const [activeSection, setActiveSection] = useState(
-    progress.unlockedSection >= sections.length ? sections.length - 1 : progress.unlockedSection
+    Math.max(0, Math.min(requestedSection.current ?? progress.unlockedSection, progress.unlockedSection, sections.length - 1))
   );
   const [desktopSidebarOpen, setDesktopSidebarOpen] = useState(true);
   const [mobileSectionsOpen, setMobileSectionsOpen] = useState(false);
@@ -99,24 +112,17 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   const [showConfetti, setShowConfetti] = useState(false);
   const [showCelebration, setShowCelebration] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
-  const pickerRef = useRef<HTMLDivElement>(null);
   const isCompletingRef = useRef(false);
   const mainRef = useRef<HTMLElement>(null);
   const unlockedSection = progress.unlockedSection;
 
-  // Close picker on outside click
   useEffect(() => {
-    if (!pickerOpen) return;
-    const handleClick = (e: MouseEvent) => {
-      if (pickerRef.current && !pickerRef.current.contains(e.target as Node)) setPickerOpen(false);
-    };
-    document.addEventListener('mousedown', handleClick);
-    return () => document.removeEventListener('mousedown', handleClick);
-  }, [pickerOpen]);
-
-  useEffect(() => {
-    setActiveSection(progress.unlockedSection >= sections.length ? sections.length - 1 : progress.unlockedSection);
-  }, [progress.unlockedSection, sections.length]);
+    if (previousProgress.current.unlocked !== progress.unlockedSection || previousProgress.current.total !== sections.length) {
+      setActiveSection(Math.max(0, Math.min(progress.unlockedSection, sections.length - 1)));
+      previousProgress.current = { unlocked: progress.unlockedSection, total: sections.length };
+    }
+    clearModuleSectionRequest(moduleId);
+  }, [moduleId, progress.unlockedSection, sections.length]);
 
   // Scroll to top whenever the active section changes
   useEffect(() => {
@@ -138,12 +144,13 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
         ? fullSectionsCount
         : unlockedSection + 1;
       onProgressUpdate({ unlockedSection: reportedUnlocked });
+      if (!isLastSection) toast({ message: 'Another section complete.', state: 'success' });
     }
     if (!isLastSection) {
       setActiveSection(activeSection + 1);
     } else if (isNewCompletion) {
       // First-time module completion — show confetti + celebration screen
-      setShowConfetti(true);
+      setShowConfetti(!reducedMotion);
       setShowCelebration(true);
     } else {
       onBack();
@@ -171,7 +178,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     }
   };
 
-  const progressPercentage = sections.length > 0 ? (unlockedSection / sections.length) * 100 : 0;
+  const completedSections = Math.min(Math.max(0, unlockedSection), sections.length);
 
   // Reading comfort — ReadingSection (ModuleShared) consumes these variables.
   const readingScale = settingsCtx?.settings.readingScale ?? 1;
@@ -216,276 +223,62 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     </div>
   );
 
-  return (
-    <div
-      className="product-shell module-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] font-sans flex flex-col md:flex-row overflow-x-hidden transition-colors duration-500"
-      style={{ ['--reading-scale' as string]: String(readingScale), ['--reading-lh' as string]: readingRelaxed ? '2.15' : '1.85' }}
-    >
-
-      {/* ── Desktop Sidebar ── */}
-      <aside
-        aria-label="Module navigation"
-        className={`relative hidden md:flex shrink-0 bg-[var(--surface-paper)] border-r border-[var(--outline-soft)] sticky top-0 h-screen z-40 flex-col overflow-hidden py-8 transition-[width,padding] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none ${desktopSidebarOpen ? 'w-80 px-8' : 'w-[60px] px-2'}`}
-      >
-        <div className={`flex items-start transition-all duration-300 motion-reduce:transition-none ${desktopSidebarOpen ? 'gap-4 mb-12' : 'justify-center mb-4'}`}>
-          <motion.button type="button" aria-label="Back to modules" whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={onBack} className="p-2 rounded-lg transition-all border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none">
-            <ArrowLeft size={16} className="text-zinc-700 dark:text-zinc-300" />
-          </motion.button>
-          <div className={`min-w-0 overflow-hidden transition-all duration-200 motion-reduce:transition-none ${desktopSidebarOpen ? 'max-w-[210px] opacity-100' : 'max-w-0 opacity-0'}`}>
-            <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.2em] mb-0.5 underline`} style={{ color: 'var(--accent-hex)' }}>Module {displayedModuleNumber}</p>
-            <h1 className="font-serif font-semibold text-lg tracking-tight text-zinc-900 dark:text-white">{moduleTitle}</h1>
-          </div>
-        </div>
-
-        <div
-          id="module-sidebar-content"
-          aria-hidden={!desktopSidebarOpen}
-          inert={!desktopSidebarOpen}
-          className={`min-h-0 flex flex-1 flex-col transition-all duration-200 motion-reduce:transition-none ${desktopSidebarOpen ? 'translate-x-0 opacity-100' : '-translate-x-3 opacity-0 pointer-events-none'}`}
-        >
-          {(moduleSubtitle || moduleDescription) && (
-            <div className="mb-8 -mt-4">
-              {moduleSubtitle && <p className={`text-[11px] font-bold ${theme.sidebarActiveEyebrow} uppercase tracking-widest mb-1.5`} style={{ color: 'var(--accent-hex)' }}>{moduleSubtitle}</p>}
-              {moduleDescription && <p className="text-[11px] leading-relaxed text-zinc-400 dark:text-zinc-500">{moduleDescription}</p>}
-            </div>
-          )}
-
-        <div className="flex-grow overflow-y-auto no-scrollbar pr-2">
-          <div className="space-y-4 relative">
-            <div className="absolute left-[21px] top-[34px] bottom-[34px] w-0.5 bg-zinc-100 dark:bg-white/10 -z-0" />
-            <div className="absolute left-[21px] top-[34px] bottom-[34px] w-0.5">
-              <motion.div
-                className={`w-full ${theme.sidebarProgressBg} ${theme.sidebarProgressShadow}`}
-                style={{ height: `${progressPercentage}%`, backgroundColor: 'var(--accent-hex)', boxShadow: '0 0 10px rgba(var(--accent),0.5)' }}
-              />
-            </div>
-            {sections.map((section, idx) => {
-              const isUnlocked = idx <= unlockedSection;
-              const isActive = idx === activeSection;
-              const isCompleted = idx < unlockedSection;
-              return (
-                <button key={section.id} disabled={!isUnlocked} onClick={() => handleJumpToSection(idx)} className={`relative z-10 w-full flex items-center gap-4 p-3 rounded-xl transition-all duration-500 text-left group ${isActive ? `${theme.sidebarActiveBg} shadow-sm translate-x-2` : ''} ${!isUnlocked ? 'opacity-40 grayscale cursor-not-allowed' : 'hover:bg-zinc-50 dark:hover:bg-white/5'}`} style={isActive ? { backgroundColor: 'rgba(var(--accent),0.08)' } : undefined}>
-                  <div className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 border-2 transition-all duration-500 ${isCompleted ? `${theme.sidebarCompletedBg} ${theme.sidebarCompletedBorder} text-white shadow-lg` : isActive ? `bg-white dark:bg-zinc-800 ${theme.sidebarActiveBorder} ${theme.sidebarActiveText} shadow-xl rotate-12` : 'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-300 dark:text-zinc-600'}`} style={isCompleted ? { backgroundColor: 'var(--accent-hex)', borderColor: 'var(--accent-hex)' } : isActive ? { borderColor: 'var(--accent-hex)', color: 'var(--accent-hex)' } : undefined}>
-                    {isCompleted ? <CheckCircle2 size={18} /> : isActive ? <section.icon size={18} /> : <Lock size={16} />}
-                  </div>
-                  <div className="flex-grow">
-                    <p className={`text-[8px] font-semibold uppercase tracking-widest ${isActive ? theme.sidebarActiveEyebrow : 'text-zinc-400 dark:text-zinc-500'}`} style={isActive ? { color: 'var(--accent-hex)' } : undefined}>{section.eyebrow.split('// ')[1]}</p>
-                    <h4 className={`text-xs font-bold leading-tight ${isActive ? 'text-zinc-900 dark:text-white' : 'text-zinc-500 dark:text-zinc-400'}`}>{section.title}</h4>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="mt-8 border-t border-zinc-100 dark:border-zinc-800 pt-8 flex flex-col items-center">
-          <ActivityRing progress={progressPercentage} color={'var(--accent-hex)'} />
-          <p className="text-[11px] font-semibold text-zinc-900 dark:text-white uppercase tracking-widest text-center">Progress</p>
-        </div>
-
-        <button type="button" onClick={() => setNotesOpen(true)} className="w-full mt-4 flex items-center justify-center gap-2 p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors text-zinc-500 dark:text-zinc-400">
-          <BookOpen size={14} aria-hidden="true" /><span className="text-[10px] font-semibold uppercase tracking-widest">Notes</span>
-        </button>
-
-        {/* References (verified peer-reviewed sources) */}
-        {references && references.length > 0 && (
-          <button onClick={() => setReferencesOpen(true)} className="w-full mt-4 flex items-center justify-center gap-2 p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors text-zinc-500 dark:text-zinc-400">
-            <BookOpen size={14} />
-            <span className="text-[10px] font-semibold uppercase tracking-widest">References</span>
-          </button>
-        )}
-
-        {/* Floating theme and reading-comfort picker */}
-        {settingsCtx && (
-          <div className="relative mt-4" ref={pickerRef}>
-            <button onClick={() => setPickerOpen(!pickerOpen)} className="w-full flex items-center justify-center gap-2 p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors text-zinc-500 dark:text-zinc-400">
-              <Palette size={14} />
-              <span className="text-[10px] font-semibold uppercase tracking-widest">Theme</span>
-            </button>
-            <AnimatePresence>
-              {pickerOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 8 }}
-                  className="absolute bottom-full left-0 right-0 mb-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl shadow-xl p-4 z-50"
-                >
-                  {/* Dark mode toggle */}
-                  <button onClick={() => settingsCtx.updateSetting('darkMode', !settingsCtx.settings.darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5 mb-2">
-                    <span className="text-xs font-medium text-zinc-700 dark:text-zinc-300">{settingsCtx.settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</span>
-                    {settingsCtx.settings.darkMode ? <Sun size={14} className="text-amber-400" /> : <Moon size={14} className="text-zinc-600" />}
-                  </button>
-                  {/* Reading comfort — text size + line spacing */}
-                  {readingControls}
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
-        )}
-        </div>
-
-        <button
-          type="button"
-          onClick={() => setDesktopSidebarOpen(open => !open)}
-          aria-controls="module-sidebar-content"
-          aria-expanded={desktopSidebarOpen}
-          aria-label={desktopSidebarOpen ? 'Collapse module navigation' : 'Expand module navigation'}
-          title={desktopSidebarOpen ? undefined : 'Expand module navigation'}
-          className={`mt-4 flex min-h-10 items-center rounded-lg text-zinc-500 transition-colors hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] ${desktopSidebarOpen ? 'w-full justify-center gap-2 px-3' : 'w-10 justify-center self-center'}`}
-        >
-          <PanelLeft size={17} strokeWidth={1.6} className={`shrink-0 transition-transform duration-300 motion-reduce:transition-none ${desktopSidebarOpen ? '' : 'rotate-180'}`} aria-hidden="true" />
-          <span className={`overflow-hidden whitespace-nowrap text-xs font-medium transition-all duration-200 motion-reduce:transition-none ${desktopSidebarOpen ? 'max-w-24 opacity-100' : 'max-w-0 opacity-0'}`}>
-            Collapse
-          </span>
-        </button>
-      </aside>
-
-      {/* ── Mobile Top Bar ── */}
-      <div className="md:hidden fixed top-0 left-0 right-0 h-14 z-40 bg-[var(--surface-paper)] border-b border-[var(--outline-soft)] flex items-center gap-3 px-3" style={{ paddingTop: 'var(--sat, 0px)' }}>
-        {mobileAppDesign ? <BackButton onClick={onBack} label="Back to module library" /> : (
-        <button type="button" onClick={onBack} aria-label="Back to module library" className={`${mobileAppDesign ? 'min-h-11 min-w-11 ' : ''}p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]`}>
-          <ArrowLeft size={16} className="text-zinc-700 dark:text-zinc-300" />
-        </button>
-        )}
-        <div className="flex-1 min-w-0">
-          <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.15em] leading-none`} style={{ color: 'var(--accent-hex)' }}>Module {displayedModuleNumber}</p>
-          <h1 className="text-sm font-semibold text-zinc-900 dark:text-white truncate">{moduleTitle}</h1>
-        </div>
-        <button type="button" onClick={() => setNotesOpen(true)} aria-label="Open module notes" className="min-h-11 min-w-11 flex items-center justify-center rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0">
-          <BookOpen size={16} className="text-zinc-700 dark:text-zinc-300" aria-hidden="true" />
-        </button>
-        <button onClick={() => setMobileSectionsOpen(true)} aria-label="Open module sections" aria-expanded={mobileSectionsOpen} className={`${mobileAppDesign ? 'min-h-11 min-w-11 ' : ''}p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]`}>
-          <List size={16} className="text-zinc-700 dark:text-zinc-300" />
-        </button>
+  const contents = (
+    <div className="mr-contents-inner" data-sidebar="notebook">
+      <div className="mr-notebook-label"><BrandBook size={39} /><div><Eyebrow>{moduleSubtitle || `Module ${displayedModuleNumber}`}</Eyebrow><span>Your learning notebook</span></div></div>
+      <h2>{moduleTitle}</h2>
+      <ReadingProgress done={completedSections} total={sections.length} />
+      <nav className="mr-progress-list" aria-label="Module sections"><ol>
+        {sections.map((section, index) => <li key={section.id}><button type="button" disabled={index > unlockedSection} aria-label={`${section.title}. ${activeSection === index ? 'You’re here' : index < unlockedSection ? 'Read · Revisit anytime' : index === unlockedSection ? 'Ready when you are' : 'Coming next'}`} aria-current={activeSection === index ? 'step' : undefined} onClick={() => handleJumpToSection(index)}>
+          <CompletionMark number={index + 1} complete={index < unlockedSection} current={activeSection === index} />
+          <span><strong>{section.title}</strong><small>{activeSection === index ? 'You’re here' : index < unlockedSection ? 'Read · Revisit anytime' : index === unlockedSection ? 'Ready when you are' : 'Coming next'}</small></span>
+        </button></li>)}
+      </ol></nav>
+      <div className="mr-contents-foot"><Button variant="ghost" onClick={() => { setMobileSectionsOpen(false); openCommandMenu(); }}><Search />Find a section<kbd>⌘ K</kbd></Button>
+        {!!references?.length && <button className="mr-source-link" onClick={() => { setMobileSectionsOpen(false); setReferencesOpen(true); }}>Sources &amp; further reading<ArrowUpRight /></button>}
       </div>
-
-      {/* ── Mobile Sections Drawer ── */}
-      <AnimatePresence>
-        {mobileSectionsOpen && (
-          <>
-            <motion.div
-              key="sections-backdrop"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setMobileSectionsOpen(false)}
-              className="md:hidden fixed inset-0 z-[50] bg-black/40"
-            />
-            <motion.div
-              key="sections-sheet"
-              initial={{ y: '100%' }}
-              animate={{ y: 0 }}
-              exit={{ y: '100%' }}
-              transition={{ type: 'spring', damping: 28, stiffness: 300 }}
-              className="md:hidden fixed bottom-0 left-0 right-0 z-[51] bg-[var(--surface-paper)] rounded-t-2xl border-t-[1.5px] border-[var(--outline-strong)] max-h-[75vh] overflow-y-auto"
-              style={{ paddingBottom: 'var(--sab, 0px)' }}
-            >
-              {/* Drag handle */}
-              <div className="flex justify-center pt-3 pb-1">
-                <div className="w-10 h-1 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-              </div>
-              <div className="flex items-center justify-between px-5 pb-3">
-                <div className="flex items-center gap-3">
-                  <ActivityRing progress={progressPercentage} size={32} strokeWidth={3} color={'var(--accent-hex)'} />
-                  <p className="text-sm font-semibold text-zinc-900 dark:text-white">Sections</p>
-                </div>
-                <button onClick={() => setMobileSectionsOpen(false)} aria-label="Close module sections" className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
-                  <X size={16} className="text-zinc-400" />
-                </button>
-              </div>
-              {/* References button — below the header, above the steps */}
-              {references && references.length > 0 && (
-                <div className="px-5 pb-3">
-                  <button
-                    onClick={() => { setMobileSectionsOpen(false); setReferencesOpen(true); }}
-                    className="w-full flex items-center justify-center gap-2 p-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors text-zinc-600 dark:text-zinc-300"
-                  >
-                    <BookOpen size={15} />
-                    <span className="text-xs font-semibold uppercase tracking-widest">References</span>
-                  </button>
-                </div>
-              )}
-              {/* Reading comfort — mobile gets the same controls as the desktop picker */}
-              {readingControls && <div className="px-5 pb-3">{readingControls}</div>}
-              <div className="px-4 pb-6 space-y-1">
-                {sections.map((section, idx) => {
-                  const isUnlocked = idx <= unlockedSection;
-                  const isActive = idx === activeSection;
-                  const isCompleted = idx < unlockedSection;
-                  return (
-                    <button
-                      key={section.id}
-                      disabled={!isUnlocked}
-                      onClick={() => handleJumpToSection(idx)}
-                      className={`w-full flex items-center gap-3 p-3 rounded-xl text-left transition-colors ${isActive ? 'bg-zinc-100 dark:bg-zinc-800' : ''} ${!isUnlocked ? 'opacity-30 cursor-not-allowed' : 'hover:bg-zinc-50 dark:hover:bg-zinc-800/50'}`}
-                    >
-                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 border transition-colors ${isCompleted ? `${theme.sidebarCompletedBg} ${theme.sidebarCompletedBorder} text-white` : isActive ? `bg-white dark:bg-zinc-700 ${theme.sidebarActiveBorder} ${theme.sidebarActiveText}` : 'bg-zinc-100 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700 text-zinc-400'}`} style={isCompleted ? { backgroundColor: 'var(--accent-hex)', borderColor: 'var(--accent-hex)' } : isActive ? { borderColor: 'var(--accent-hex)', color: 'var(--accent-hex)' } : undefined}>
-                        {isCompleted ? <CheckCircle2 size={14} /> : isActive ? <section.icon size={14} /> : <Lock size={12} />}
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <p className={`text-[8px] font-semibold uppercase tracking-widest ${isActive ? theme.sidebarActiveEyebrow : 'text-zinc-400 dark:text-zinc-500'}`} style={isActive ? { color: 'var(--accent-hex)' } : undefined}>{section.eyebrow.split('// ')[1]}</p>
-                        <h4 className={`text-xs font-bold leading-tight truncate ${isActive ? 'text-zinc-900 dark:text-white' : 'text-zinc-500 dark:text-zinc-400'}`}>{section.title}</h4>
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
-
-      {/* ── Main Content ── */}
-      <main ref={mainRef} className="min-w-0 flex-grow flex flex-col items-center pt-20 md:pt-24 px-6 md:px-16 pb-24 md:pb-0 md:overflow-y-auto md:h-screen bg-[var(--surface-canvas)] transition-[width] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none">
-        <div className="w-full max-w-3xl">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeSection}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
-            >
-              {children(activeSection)}
-              <footer className="mt-16 flex items-end justify-between gap-4 pt-8 pb-6">
-                <button onClick={handlePrev} disabled={activeSection === 0} className={`flex items-center gap-3 bg-[#FEFDFB] dark:bg-zinc-800 text-zinc-600 dark:text-white px-6 py-3.5 rounded-xl font-semibold text-[11px] uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-[0.98] border border-[#EDEBE8] dark:border-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2 ${activeSection === 0 ? 'invisible' : ''}`}>
-                  <ArrowLeft size={16} /> Prev
-                </button>
-                <div className="flex flex-col items-end gap-2">
-                  <p className="max-w-[220px] text-right text-[10px] leading-relaxed text-zinc-400 dark:text-zinc-500">Activities are optional and can be revisited.</p>
-                  <button onClick={handleCompleteSection} aria-label={activeSection === sections.length - 1 ? finishButtonText : 'Continue to the next section'} className="flex items-center gap-3 bg-[#FEFDFB] dark:bg-zinc-800 text-zinc-600 dark:text-white px-6 py-3.5 rounded-xl font-semibold text-[11px] uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-[0.98] border border-[#EDEBE8] dark:border-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2">
-                    {activeSection === sections.length - 1 ? finishButtonText : 'Continue'} <ArrowRight size={16} />
-                  </button>
-                </div>
-              </footer>
-            </motion.div>
-          </AnimatePresence>
-        </div>
-      </main>
-
-      {notesOpen && <ReaderNotes moduleId={navigation.state?.currentModuleId ?? moduleTitle} title={moduleTitle} open={notesOpen} onClose={() => setNotesOpen(false)} />}
-
-      {references && references.length > 0 && (
-        <ReferencesModal open={referencesOpen} onClose={() => setReferencesOpen(false)} references={references} />
-      )}
-
-
-      {showConfetti && <ConfettiOverlay onDone={handleConfettiDone} />}
-
-      {/* Module completion celebration screen */}
-      <ModuleCompleteScreen
-        isOpen={showCelebration}
-        moduleTitle={moduleTitle}
-        moduleSubtitle={moduleSubtitle}
-        categoryColor={categoryColor || COLORS.accent}
-        modulesCompleted={modulesCompleted}
-        totalModules={totalModules}
-        sectionsCount={sections.length}
-        northStarStatement={northStarStatement}
-        onContinue={handleCelebrationContinue}
-        onPractice={() => { setShowCelebration(false); navigation.navigateToStudySession(); }}
-        onReview={() => { setShowCelebration(false); setActiveSection(0); }}
-      />
     </div>
+  );
+  return (
+    <KobraScope className="nsu-learning nsu-module-reader">
+      <div className="mr-main" data-sidebar="notebook" data-contents={desktopSidebarOpen} style={{ ['--reading-scale' as string]: String(readingScale), ['--reading-lh' as string]: readingRelaxed ? '2.15' : '1.85' }}>
+        <header className="mr-topbar">
+          <div className="mr-breadcrumb"><BackButton onClick={onBack} label="Back to modules" /><span>Module {displayedModuleNumber}</span><span>{moduleTitle}</span></div>
+          <div className="mr-tools">
+            <Button className="mr-desktop-contents" variant="outline" onClick={() => setDesktopSidebarOpen(value => !value)} aria-expanded={desktopSidebarOpen} aria-controls="module-sidebar-content" aria-label={desktopSidebarOpen ? 'Collapse module navigation' : 'Expand module navigation'}><PanelLeft />Contents</Button>
+            <Button className="mr-mobile-contents" variant="outline" onClick={() => setMobileSectionsOpen(true)} aria-label="Open module sections"><PanelLeft />Contents</Button>
+            <Button variant="ghost" onClick={() => setNotesOpen(true)}><BrandBook size={23} />Notes</Button>
+            {settingsCtx && <Button variant="ghost" size="icon" aria-label="Reading comfort" onClick={() => setPickerOpen(true)}><Palette /></Button>}
+          </div>
+        </header>
+        <div className="mr-layout">
+          <aside className="mr-contents" aria-label="Module navigation" id="module-sidebar-content" inert={!desktopSidebarOpen} aria-hidden={!desktopSidebarOpen}>{contents}</aside>
+          <main className="mr-reading-area" ref={mainRef}>
+            <div className="mr-running-head"><span>{moduleDescription || moduleSubtitle}</span><span>Section {String(activeSection + 1).padStart(2, '0')} / {String(sections.length).padStart(2, '0')}</span></div>
+            <article className="mr-paper">
+              <ModuleReferencesProvider value={references ?? []}>
+                <AnimatePresence mode="wait" initial={false}><motion.div key={sections[activeSection]?.id ?? activeSection} initial={{ opacity: 0, y: reducedMotion ? 0 : 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: reducedMotion ? 0 : .22 }} className="mr-page-content">
+                  {children(activeSection)}
+                  <div className="mr-page-signoff"><span>A little further than before.</span><span>{String(activeSection + 1).padStart(2, '0')}</span></div>
+                </motion.div></AnimatePresence>
+              </ModuleReferencesProvider>
+              <footer className="mr-page-footer">
+                <Button variant="ghost" onClick={handlePrev} disabled={activeSection === 0}><ArrowLeft />Previous</Button>
+                <div><small>Activities are optional and can be revisited.</small><span>{sections[activeSection + 1]?.title ?? 'Your last page. Yours to revisit.'}</span></div>
+                <Button variant="outline" className="nsu-ink-outline" onClick={handleCompleteSection} aria-label={activeSection === sections.length - 1 ? finishButtonText : 'Continue to the next section'}>{activeSection === sections.length - 1 ? finishButtonText : 'Continue'}<ArrowRight /></Button>
+              </footer>
+            </article>
+          </main>
+        </div>
+      </div>
+      <Dialog open={mobileSectionsOpen} onOpenChange={setMobileSectionsOpen}><DialogContent className="mr-contents-dialog"><DialogHeader><DialogTitle>Contents</DialogTitle><DialogDescription>{moduleTitle}</DialogDescription></DialogHeader>{contents}</DialogContent></Dialog>
+      <Dialog open={pickerOpen} onOpenChange={setPickerOpen}><DialogContent><DialogHeader><DialogTitle>Make yourself comfortable</DialogTitle><DialogDescription>Choose how you like to read.</DialogDescription></DialogHeader>{readingControls}{settingsCtx && <Button variant="outline" onClick={() => settingsCtx.updateSetting('darkMode', !settingsCtx.settings.darkMode)}>{settingsCtx.settings.darkMode ? <Sun /> : <Moon />}{settingsCtx.settings.darkMode ? 'Light mode' : 'Dark mode'}</Button>}</DialogContent></Dialog>
+      <Toasts position="bottom-center" />
+      {notesOpen && <ReaderNotes moduleId={moduleId} title={moduleTitle} open={notesOpen} onClose={() => setNotesOpen(false)} />}
+      <CommandMenu placeholder="Find a section…" actions={sections.map((section, index) => ({ id: section.id, label: section.title, hint: index < unlockedSection ? 'Read · Revisit anytime' : index === unlockedSection ? 'Up next' : 'Coming next', keywords: [section.eyebrow], disabled: index > unlockedSection, icon: <CompletionMark number={index + 1} complete={index < unlockedSection} current={index === activeSection} />, action: () => handleJumpToSection(index) }))} />
+      {!!references?.length && <ReferencesModal open={referencesOpen} onClose={() => setReferencesOpen(false)} references={references} />}
+      {showConfetti && <ConfettiOverlay onDone={handleConfettiDone} />}
+      <ModuleCompleteScreen isOpen={showCelebration} moduleTitle={moduleTitle} moduleSubtitle={moduleSubtitle} categoryColor={categoryColor || COLORS.accent} modulesCompleted={modulesCompleted} totalModules={totalModules} sectionsCount={sections.length} northStarStatement={northStarStatement} onContinue={handleCelebrationContinue} onPractice={() => { setShowCelebration(false); navigation.navigateToStudySession(); }} onReview={() => { setShowCelebration(false); setActiveSection(0); }} />
+    </KobraScope>
   );
 };

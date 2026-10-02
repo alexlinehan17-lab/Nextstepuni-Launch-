@@ -7,10 +7,11 @@
  */
 
 import React from 'react';
+import ThemeArtwork from './ThemeArtwork';
 
 // Decorative artwork: the surrounding card supplies the accessible name.
 const CompanionArtwork: React.FC<{ character: string }> = ({ character }) => (
-  <img
+  <ThemeArtwork
     src={`/assets/star-crew/companions/${character}.png`}
     alt=""
     aria-hidden="true"

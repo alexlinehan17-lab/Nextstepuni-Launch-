@@ -19,6 +19,7 @@ export interface SetupDraft {
   date: string;
   dateConfirmed: boolean;
   gradeSubject: string | null;
+  appearance: 'dark' | 'light';
 }
 export const draftKey = (uid: string, mode: string) => `nextstepuni:onboarding-draft:v2:${uid}:${mode}`;
 export const legacyDraftKey = (uid: string, mode: string) => `nextstepuni:onboarding-draft:v1:${uid}:${mode}`;
@@ -47,7 +48,7 @@ export function pointsFor(draft: SetupDraft) {
   return { count: known.length, current: sum('current'), target: sum('target') };
 }
 export function initialDraft(targetYear?: 'TY' | '5th'): SetupDraft {
-  return { version: 2, step: targetYear ? 'subjects' : 'welcome', year: targetYear ?? null, category: null, vision: [], subjects: [], configs: {}, rest: [...DAYS_OF_WEEK], date: getDefaultExamDate(), dateConfirmed: false, gradeSubject: null };
+  return { version: 2, step: targetYear ? 'subjects' : 'welcome', year: targetYear ?? null, category: null, vision: [], subjects: [], configs: {}, rest: [...DAYS_OF_WEEK], date: getDefaultExamDate(), dateConfirmed: false, gradeSubject: null, appearance: 'dark' };
 }
 /** Untrusted local storage is validated, including legacy drafts. Legacy auto-filled
  * grades are retained for review, never silently treated as confirmed answers. */
@@ -89,6 +90,7 @@ export function readDraft(uid: string, mode: string, targetYear?: 'TY' | '5th', 
     if (targetYear && ['welcome', 'year'].includes(step)) step = 'subjects';
     if (step === 'grades' && (!subjects.length || isLcaYear(year))) step = 'subjects';
     return { ...base, year, step, category, vision, subjects, configs,
+      appearance: saved.appearance === 'light' ? 'light' : 'dark',
       rest: DAYS_OF_WEEK.filter(day => (saved.rest ?? saved.restDays ?? base.rest).includes?.(day)),
       date: typeof (saved.date ?? saved.examDate) === 'string' ? saved.date ?? saved.examDate : base.date,
       dateConfirmed: raw ? saved.dateConfirmed === true : false,

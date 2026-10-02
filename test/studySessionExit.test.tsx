@@ -179,13 +179,13 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     );
     const colourSwitch = screen.getByRole('switch', { name: 'I want my timer to have more colour!' });
     const subjectsHeading = screen.getByRole('heading', { name: 'What are you studying?' });
-    expect(colourSwitch.compareDocumentPosition(subjectsHeading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(colourSwitch.compareDocumentPosition(subjectsHeading) & Node.DOCUMENT_POSITION_PRECEDING).toBeTruthy();
     fireEvent.click(colourSwitch);
     expect(colourSwitch).toHaveAttribute('aria-checked', 'true');
     expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
     fireEvent.click(screen.getByRole('button', { name: 'Set up Mathematics, 45 minutes' }));
     expect(screen.getByRole('button', { name: '45 min' })).toHaveAttribute('aria-pressed', 'true');
-    fireEvent.click(screen.getByRole('button', { name: 'Practice Work through questions' }));
+    fireEvent.click(screen.getByRole('radio', { name: 'Practice Work through questions' }));
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '3' } });
     expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '35' } });

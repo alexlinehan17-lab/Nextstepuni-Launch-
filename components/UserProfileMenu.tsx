@@ -54,8 +54,8 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <button onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] rounded-full">
-        <Avatar seed={displayAvatar} alt="User Avatar" className="w-12 h-12 rounded-full bg-zinc-200" />
+      <button onClick={() => setIsOpen(!isOpen)} aria-label="Open profile and settings" aria-expanded={isOpen} className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] rounded-full">
+        <Avatar seed={displayAvatar} alt="User Avatar" className="w-11 h-11 rounded-full bg-zinc-200" />
       </button>
       <AnimatePresence>
         {isOpen && (

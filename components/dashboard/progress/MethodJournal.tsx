@@ -1,0 +1,15 @@
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
+import { Button } from '../../approved-ui-runtime';
+import { BrandBook } from '../../learning/BrandBook';
+import CrewIllustration from '../../CrewIllustration';
+import { Surface, Eyebrow, Empty } from './shared';
+import type { MethodRecord } from './progressData';
+
+export function MethodJournal({ methods, period, className = '' }: { methods: MethodRecord[]; period: string; className?: string }) {
+  const [selected, setSelected] = useState<string>();
+  const current = methods.find(method => method.id === selected) ?? methods[0];
+  const prompts = current?.entries.filter(entry => entry.evidence === 'prompt').length ?? 0;
+  const reported = current?.entries.filter(entry => entry.evidence === 'reported').length ?? 0;
+  return <section className={`pr-study pr-method-section ${className}`} aria-label="Learning methods"><header className="pr-card-heading"><div><Eyebrow>Learning methods / {period}</Eyebrow><h2>The ways you showed up.</h2><p>{methods.length ? `${methods.length} ${methods.length === 1 ? 'method' : 'methods'} in your study record. Small choices worth noticing.` : 'Your recorded study methods will appear here.'}</p></div></header>{!current ? <Surface><Empty title="No techniques tracked yet">Complete a study session or record the methods you used in a debrief.</Empty></Surface> : <Surface className="pr-method-journal"><nav aria-label="Choose a method">{methods.map((method, index) => <Button variant="ghost" key={method.id} aria-pressed={current.id === method.id} onClick={() => setSelected(method.id)}><span className="pr-index">{String(index + 1).padStart(2, '0')}</span><span>{method.name}</span><small>{method.entries.length}</small></Button>)}</nav><AnimatePresence mode="wait"><motion.div key={current.id} initial={{ opacity: 0, x: 8 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }} transition={{ duration: .2 }}><div className="pr-method-record"><header><BrandBook size={54} /><div><Eyebrow>Your record</Eyebrow><h3>{current.name}</h3><p>{current.description}</p></div></header><div className="pr-method-total"><strong>{current.entries.length}</strong><span>recorded entries<br />{prompts} {prompts === 1 ? 'prompt' : 'prompts'} · {reported} self-reported</span></div>{current.entries.map(entry => <div className="pr-method-entry" key={entry.id}><CrewIllustration className="pr-subject-art" subject={entry.subject} /><div><strong>{entry.subject}</strong><p>{new Date(`${entry.date}T12:00:00`).toLocaleDateString('en-IE', { weekday: 'short', day: 'numeric', month: 'short' })} · {entry.sessionType === 'new-learning' ? 'New learning' : entry.sessionType === 'practice' ? 'Practice' : 'Revision'} · {entry.evidence === 'prompt' ? 'Prompt shown' : 'Self-reported use'}</p></div><span>{entry.minutes}<small>min</small></span></div>)}</div></motion.div></AnimatePresence></Surface>}<p className="pr-evidence-note">Prompts record exposure to an approach; debriefs record self-reported use. Neither count measures mastery.</p></section>;
+}

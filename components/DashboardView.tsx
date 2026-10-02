@@ -5,11 +5,23 @@
 
 import React, { useMemo, useState } from 'react';
 import './dashboard/dashboard-refined.css';
+import KobraScope from './approved-ui-runtime';
+import { Button } from './approved-ui-runtime';
+import { SubjectPicker } from './dashboard/progress/SubjectPicker';
+import { ProgressSummary } from './dashboard/progress/ProgressSummary';
+import { ProgressActivity, ProgressConfidence, ProgressSubjects, ProgressMocks } from './dashboard/progress/ProgressCharts';
+import { MethodJournal } from './dashboard/progress/MethodJournal';
+import { ProgressTabs } from './dashboard/progress/shared';
+import { buildMethodJournal, selectSubjects } from './dashboard/progress/progressData';
+import './dashboard/progress/progress.css';
+import './dashboard/progress/refinements.css';
+import { ProgressSections, ProgressBreakdown } from './dashboard/progress/ProgressRefinements';
+import { ProgressMilestones } from './dashboard/progress/ProgressMilestones';
+
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
-import { ArrowRight, Check, Moon, Sun } from 'lucide-react';
+import { ArrowRight, Moon, Sun } from 'lucide-react';
 import { MotionDiv } from './Motion';
 import PageHeader from './ui/PageHeader';
-import HorizontalTabs from './ui/HorizontalTabs';
 import { type CategoryType } from './KnowledgeTree';
 import { type CourseData } from './Library';
 import { type StreakData } from '../hooks/useStreak';
@@ -19,11 +31,10 @@ import { type StudentSubjectProfile } from './subjectData';
 import {
   type StudyReflection,
   type StrategyMasteryMap,
-  type MasteryTier,
   type TopicMasteryV2,
   type UnifiedMockResult,
 } from '../types';
-import { STRATEGY_REGISTRY, type StudySessionRecord } from '../utils/strategyRegistry';
+import { type StudySessionRecord } from '../utils/strategyRegistry';
 import MountainLandscape, { type WorldProgress } from './MountainLandscape';
 import { type WorldId } from './WorldIconBlob';
 import {
@@ -33,12 +44,6 @@ import {
   generateWeeklyTimetable,
 } from './timetableAlgorithm';
 import {
-  ActivityChart,
-  ConfidenceChart,
-  MasteryBar,
-  MockTrajectoryChart,
-  RankedBarChart,
-  SessionMixChart,
   StudyRhythmChart,
 } from './dashboard/DashboardCharts';
 import {
@@ -47,7 +52,6 @@ import {
   buildMasterySummary,
   buildMockSeries,
   buildSessionMix,
-  buildStrategyUsage,
   buildStudyRhythm,
   buildSubjectAllocation,
   collectConfidenceObservations,
@@ -58,11 +62,8 @@ import {
   type ActivityMetric,
   type DashboardRange,
 } from './dashboard/dashboardAnalytics';
-import DashboardInsights, { InsightsToggle } from './dashboard/DashboardInsights';
-import StudyPassport from './dashboard/StudyPassport';
-import ConfidenceRecord from './dashboard/ConfidenceRecord';
+import DashboardInsights from './dashboard/DashboardInsights';
 import ProgressSectionPicker from './dashboard/ProgressSectionPicker';
-import TermReviewCard from './dashboard/TermReviewCard';
 import {
   buildActivityInsights,
   buildConfidenceInsights,
@@ -70,20 +71,14 @@ import {
 } from './dashboard/dashboardInsightAnalytics';
 import { resolveMockResultKind } from '../services/mockResultsRepository';
 import {
-  generateWeeklyGoals,
-  getWeekNumber,
   type GamificationState,
 } from '../gamificationConfig';
 import { type WeeklyChallengeState } from '../hooks/useWeeklyChallenge';
-import AchievementGallery, { AchievementBadge } from './AchievementGallery';
-import { getAchievementById } from '../achievementData';
 import { type CurriculumLevel } from '../utils/authUtils';
-import { getAchievementsForCurriculum } from '../achievementData';
 import { type DashboardSection } from '../contexts/NavigationContext';
 
 type UserProgress = Record<string, { unlockedSection: number }>;
 type DashboardTab = DashboardSection;
-type InsightPanelId = 'activity' | 'confidence' | 'mock';
 
 interface QuestSummary {
   quest: { title: string; description: string; rewardPoints: number; target: number };
@@ -103,6 +98,7 @@ interface DashboardViewProps {
   onSelectModule: (moduleId: string) => void;
   onBack: () => void;
   pointsEarned: number;
+  pointsAvailable?: number;
   studentProfile?: StudentSubjectProfile | null;
   studySessions?: StudySessionRecord[];
   studyDebriefs?: DebriefEntry[];
@@ -149,41 +145,11 @@ const TABS: Array<{ id: DashboardTab; label: string }> = [
   { id: 'milestones', label: 'Milestones' },
 ];
 
-const MASTERY_TIER_LABELS: Record<MasteryTier, string> = {
-  none: 'Not started',
-  learned: 'Learned',
-  practiced: 'Practised',
-  applied: 'Applied',
-  habitual: 'Habitual',
-};
-
-const MASTERY_TIER_INDEX: Record<MasteryTier, number> = {
-  none: 0,
-  learned: 1,
-  practiced: 2,
-  applied: 3,
-  habitual: 4,
-};
-
-const PERSONAL_BESTS = [
-  { key: 'bestDayPoints', label: 'Points in one day' },
-  { key: 'bestDaySections', label: 'Sections in one day' },
-  { key: 'bestWeekPoints', label: 'Points in one week' },
-  { key: 'bestWeekSessions', label: 'Sessions in one week' },
-] as const;
-
 const RANGE_OPTIONS: Array<{ id: DashboardRange; label: string }> = [
   { id: 'week', label: 'Week' },
   { id: 'month', label: 'Month' },
   { id: 'year', label: 'Year' },
 ];
-
-const formatMinutes = (minutes: number) => {
-  if (minutes < 60) return `${minutes}m`;
-  const hours = Math.floor(minutes / 60);
-  const remainder = minutes % 60;
-  return remainder === 0 ? `${hours}h` : `${hours}h ${remainder}m`;
-};
 
 const Panel: React.FC<{
   eyebrow: string;
@@ -201,7 +167,7 @@ const Panel: React.FC<{
     <div className="dashboard-disclosure-body">{children}</div>
   </details>;
   return (
-  <article className={`${mobileAppDesign ? `dashboard-section ${eyebrow === 'Programme progress' ? 'dashboard-programme' : ''}` : 'rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]'} ${className}`}>
+  <article className={`pr-editorial-panel ${mobileAppDesign ? `dashboard-section ${eyebrow === 'Programme progress' ? 'dashboard-programme' : ''}` : 'rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]'} ${className}`}>
     <div className="flex flex-wrap items-start justify-between gap-3 border-b border-[var(--outline-soft)] px-5 py-4 sm:px-6">
       <div className="min-w-0">
         <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">{eyebrow}</p>
@@ -215,14 +181,6 @@ const Panel: React.FC<{
   );
 };
 
-const StatCell: React.FC<{ eyebrow: string; value: string; meta: string; accent?: boolean }> = ({ eyebrow, value, meta, accent }) => (
-  <div className="w-[112px] shrink-0 border-r border-[var(--outline-soft)] pr-4 last:border-r-0 sm:w-auto sm:border-r-0 sm:pr-0 lg:border-l lg:pl-5 lg:first:border-l-0 lg:first:pl-0">
-    <p className="truncate text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)] sm:text-[10px]">{eyebrow}</p>
-    <p className={`mt-2 truncate font-serif text-[clamp(24px,3vw,34px)] font-semibold leading-none tabular-nums ${accent ? 'text-[var(--accent-hex)]' : 'text-[var(--ink-primary)]'}`}>{value}</p>
-    <p className="mt-2 truncate text-[10px] text-[var(--ink-muted)] sm:text-[11px]">{meta}</p>
-  </div>
-);
-
 const DashboardView: React.FC<DashboardViewProps> = ({
   userProgress,
   allCourses,
@@ -232,6 +190,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   onSelectModule,
   onBack,
   pointsEarned,
+  pointsAvailable,
   studentProfile = null,
   studySessions = [],
   studyDebriefs = [],
@@ -257,13 +216,11 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   const tab = activeTab ?? localTab;
   const [range, setRange] = useState<DashboardRange>('week');
   const [metric, setMetric] = useState<ActivityMetric>('sessions');
-  const [subject, setSubject] = useState('all');
-  const [achievementsOpen, setAchievementsOpen] = useState(false);
-  const [openInsights, setOpenInsights] = useState<Record<InsightPanelId, boolean>>({
-    activity: false,
-    confidence: false,
-    mock: false,
-  });
+  const [selectedSubjects, setSelectedSubjects] = useState<string[]>([]);
+  const subject = selectedSubjects.length === 1 ? selectedSubjects[0] : 'all';
+  const scopedSessions = useMemo(() => selectSubjects(studySessions, selectedSubjects), [studySessions, selectedSubjects]);
+  const scopedDebriefs = useMemo(() => selectSubjects(studyDebriefs, selectedSubjects), [studyDebriefs, selectedSubjects]);
+
 
   const worldProgress = useMemo<Record<WorldId, WorldProgress>>(() => {
     const result = {} as Record<WorldId, WorldProgress>;
@@ -310,36 +267,41 @@ const DashboardView: React.FC<DashboardViewProps> = ({
     const values = new Set<string>();
     for (const item of studentProfile?.subjects ?? []) values.add(item.subjectName);
     for (const session of studySessions) if (session.subject) values.add(session.subject);
+    for (const debrief of studyDebriefs) if (debrief.subject) values.add(debrief.subject);
     for (const observation of allConfidence) if (observation.subject) values.add(observation.subject);
     for (const mock of mockResults) for (const entry of mock.entries) values.add(entry.subjectName);
     return [...values].sort((a, b) => a.localeCompare(b));
-  }, [studentProfile, studySessions, allConfidence, mockResults]);
+  }, [studentProfile, studySessions, studyDebriefs, allConfidence, mockResults]);
+
+  const visibleSubjects = useMemo(() => selectedSubjects.length ? subjects.filter(item => selectedSubjects.includes(item)) : subjects, [subjects, selectedSubjects]);
 
   const rangeBounds = useMemo(() => getRangeBounds(range), [range]);
   const todayKey = toLocalDateKey(new Date());
   const sessionsInRange = useMemo(
-    () => filterSessions(studySessions, range, subject),
-    [studySessions, range, subject],
+    () => filterSessions(scopedSessions, range),
+    [scopedSessions, range],
   );
   const confidencePoints = useMemo(
-    () => confidenceInRange(allConfidence, range, subject),
-    [allConfidence, range, subject],
+    () => confidenceInRange(selectSubjects(allConfidence, selectedSubjects), range),
+    [allConfidence, range, selectedSubjects],
   );
   const activityBuckets = useMemo(
-    () => buildActivityBuckets(studySessions, range, subject),
-    [studySessions, range, subject],
+    () => buildActivityBuckets(scopedSessions, range),
+    [scopedSessions, range],
   );
   const subjectAllocation = useMemo(
     () => buildSubjectAllocation(sessionsInRange),
     [sessionsInRange],
   );
-  const strategyUsage = useMemo(
-    () => buildStrategyUsage(studySessions, studyDebriefs, range, subject),
-    [studySessions, studyDebriefs, range, subject],
-  );
+  const methodRecords = useMemo(() => buildMethodJournal(scopedSessions, scopedDebriefs, range), [scopedSessions, scopedDebriefs, range]);
   const sessionMix = useMemo(() => buildSessionMix(sessionsInRange), [sessionsInRange]);
-  const rhythm = useMemo(() => buildStudyRhythm(subject === 'all' ? studySessions : studySessions.filter(item => item.subject === subject)), [studySessions, subject]);
-  const masterySummary = useMemo(() => buildMasterySummary(topicMastery, subject), [topicMastery, subject]);
+  const rhythm = useMemo(() => buildStudyRhythm(scopedSessions), [scopedSessions]);
+  const masterySummary = useMemo(() => selectedSubjects.length
+    ? selectedSubjects.map(item => buildMasterySummary(topicMastery, item)).reduce((total, item) => ({
+      notStarted: total.notStarted + item.notStarted, shaky: total.shaky + item.shaky,
+      solid: total.solid + item.solid, total: total.total + item.total,
+    }), { notStarted: 0, shaky: 0, solid: 0, total: 0 })
+    : buildMasterySummary(topicMastery), [topicMastery, selectedSubjects]);
   const mockRecordsInRange = useMemo(() => buildMockSeries(mockResults).filter(mock => {
     const timestamp = new Date(`${mock.date}T12:00:00`).getTime();
     return mock.date <= todayKey
@@ -358,18 +320,20 @@ const DashboardView: React.FC<DashboardViewProps> = ({
     || studyDebriefs.length > 0
     || studyReflections.length > 0
     || mockResults.length > 0;
-  const subjectLabel = subject === 'all' ? 'All subjects' : subject;
+  const subjectLabel = selectedSubjects.length ? selectedSubjects.join(' · ') : 'All subjects';
   const activityInsights = useMemo(
     () => buildActivityInsights(activityBuckets, metric, subjectLabel),
     [activityBuckets, metric, subjectLabel],
   );
   const confidenceInsights = useMemo(
-    () => buildConfidenceInsights(confidencePoints, subject === 'all' ? subjects : [subject]),
-    [confidencePoints, subject, subjects],
+    () => buildConfidenceInsights(confidencePoints, visibleSubjects),
+    [confidencePoints, visibleSubjects],
   );
   const mockInsights = useMemo(
-    () => buildMockInsights(mockRecordsInRange, subject, todayKey),
-    [mockRecordsInRange, subject, todayKey],
+    () => selectedSubjects.length > 1
+      ? selectedSubjects.flatMap(item => buildMockInsights(mockRecordsInRange, item, todayKey))
+      : buildMockInsights(mockRecordsInRange, subject, todayKey),
+    [mockRecordsInRange, selectedSubjects, subject, todayKey],
   );
   const todayLabel = useMemo(
     () => new Date().toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' }),
@@ -399,141 +363,20 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   const completedToday = timetableCompletions[todayKey]?.length ?? 0;
   const nextBlock = completedToday < todayPlan.length ? todayPlan[completedToday] : undefined;
 
-  const weeklyGoals = gamificationState
-    ? generateWeeklyGoals(gamificationState.currentRank.id, getWeekNumber())
-    : [];
-  const currentDay = new Date().getDay();
-  const daysUntilWeeklyReset = currentDay === 0 ? 1 : 8 - currentDay;
-  const strategyMilestones = useMemo(() => STRATEGY_REGISTRY
-    .map(strategy => ({
-      ...strategy,
-      record: strategyMastery[strategy.moduleId] ?? { tier: 'none' as const, sessionCount: 0, subjectsSeen: [] },
-    }))
-    .filter(item => item.record.tier !== 'none')
-    .sort((a, b) => MASTERY_TIER_INDEX[b.record.tier] - MASTERY_TIER_INDEX[a.record.tier]),
-  [strategyMastery]);
-  const personalBests = useMemo(() => PERSONAL_BESTS
-    .map(item => ({ ...item, value: gamificationState?.personalBests[item.key] ?? 0 }))
-    .filter(item => item.value > 0),
-  [gamificationState?.personalBests]);
-  const achievementSummary = useMemo(() => {
-    const available = getAchievementsForCurriculum(curriculumLevel);
-    const unlocked = new Set(gamificationState?.unlockedAchievements ?? []);
-    return {
-      unlocked: available.filter(item => unlocked.has(item.id)).length,
-      visible: available.filter(item => !item.isHidden || unlocked.has(item.id)).length,
-    };
-  }, [curriculumLevel, gamificationState?.unlockedAchievements]);
-
-  const toggleInsights = (panel: InsightPanelId) => {
-    setOpenInsights(current => ({ ...current, [panel]: !current[panel] }));
-  };
-
-  const activityPanel = (
-    <Panel
-      eyebrow="Study activity"
-      title={metric === 'sessions' ? 'Sessions logged' : 'Focused minutes'}
-      detail={`${rangeBounds.label}${subject === 'all' ? ' · all subjects' : ` · ${subject}`}`}
-      action={
-        <div className="flex flex-wrap justify-end gap-2">
-          <HorizontalTabs
-            variant="pill"
-            size="sm"
-            label="Study activity measure"
-            value={metric}
-            options={[{ value: 'sessions', label: 'Sessions' }, { value: 'minutes', label: 'Minutes' }]}
-            onChange={value => setMetric(value as ActivityMetric)}
-          />
-          <InsightsToggle
-            controls="dashboard-activity-insights"
-            expanded={openInsights.activity}
-            onToggle={() => toggleInsights('activity')}
-            chartLabel="study activity"
-          />
-        </div>
-      }
-      className="lg:col-span-8"
-    >
-      {openInsights.activity && (
-        <DashboardInsights
-          id="dashboard-activity-insights"
-          items={activityInsights}
-          context={`${rangeBounds.label} · ${subjectLabel}`}
-        />
-      )}
-      <ActivityChart buckets={activityBuckets} metric={metric} variant={mobileAppDesign ? "bar" : "line"} />
-      {mobileAppDesign && sessionsInRange.length === 0 && onStartStudy && <div className="border-t border-[var(--outline-soft)] pt-4"><p className="text-sm text-[var(--ink-secondary)]">No sessions recorded for {subjectLabel.toLowerCase()} in this period.</p><button type="button" onClick={onStartStudy} className="mt-2 min-h-11 text-sm font-semibold underline underline-offset-4">Plan your next session</button></div>}
-    </Panel>
-  );
-
-  const confidencePanel = (
-    <Panel
-      eyebrow="Debrief signal"
-      title={mobileAppDesign ? "Your self-ratings" : "Confidence over time"}
-      detail={mobileAppDesign ? "Open a subject to see its individual reflections." : "Each point is a confidence choice made after a completed study session."}
-      action={
-        <InsightsToggle
-          controls="dashboard-confidence-insights"
-          expanded={openInsights.confidence}
-          onToggle={() => toggleInsights('confidence')}
-          chartLabel="confidence chart"
-        />
-      }
-      className="lg:col-span-7"
-    >
-      {openInsights.confidence && (
-        <DashboardInsights
-          id="dashboard-confidence-insights"
-          items={confidenceInsights.length > 0 ? confidenceInsights : [{
-            id: 'confidence-empty',
-            title: subject === 'all' ? 'Confidence trend' : subject,
-            trend: 'building',
-            evidence: 'No confidence debriefs fall inside the selected period yet.',
-            guidance: 'Choose a confidence rating after your next completed session and the subject trend will begin here.',
-          }]}
-          context={`${rangeBounds.label} · ${subjectLabel}`}
-          note={mobileAppDesign ? "Confidence is self-reported, not a grade prediction. Every subject in the current filter is included; open a subject to see its individual reflections." : "Confidence is self-reported. Use it as a reflection signal, not a grade prediction. The chart plots up to five subjects for readability; this reading includes every subject in the current filter."}
-        />
-      )}
-      {mobileAppDesign ? <ConfidenceRecord observations={confidencePoints} subjects={subject === 'all' ? subjects : [subject]} /> : <ConfidenceChart observations={confidencePoints} bounds={rangeBounds} />}
-    </Panel>
-  );
-
-  const mockPanel = (
-    <Panel
-      eyebrow="Exam evidence"
-      title="Mock trajectory"
-      detail={subject === 'all'
-        ? 'Total points from full mock sittings in Points Passport.'
-        : `Full mock totals stay all-subject · insights focus on ${subject}.`}
-      action={
-        <InsightsToggle
-          controls="dashboard-mock-insights"
-          expanded={openInsights.mock}
-          onToggle={() => toggleInsights('mock')}
-          chartLabel="mock trajectory"
-        />
-      }
-      className="lg:col-span-6"
-    >
-      {openInsights.mock && (
-        <DashboardInsights
-          id="dashboard-mock-insights"
-          items={mockInsights}
-          context={`${rangeBounds.label} · ${subjectLabel}`}
-          note={subject === 'all'
-            ? 'Total-point trends use comparable full mock sittings only; single-subject results are kept out of the total. These are recorded results, not a prediction of final grades.'
-            : `${subject} insights use that subject’s grades from full mocks and single results. The chart remains full-sitting totals and is not a prediction of final grades.`}
-        />
-      )}
-      <MockTrajectoryChart mocks={mocks} />
-      {mobileAppDesign && mocks.slice().reverse().map(mock => <details className="dashboard-disclosure dashboard-mock-record" key={mock.id}>
-        <summary><time dateTime={mock.date}>{new Date(`${mock.date}T12:00:00`).toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })}</time><b>{mock.totalPoints} points</b><span aria-hidden="true">+</span></summary>
-        <p className="dashboard-disclosure-detail">{mock.label} · Full sitting, all subjects. Recorded result, not a forecast.</p>
-        <ul>{mock.entries.map(entry => <li key={entry.subjectName}><span>{entry.subjectName}</span><strong>{entry.grade}</strong></li>)}</ul>
-      </details>)}
-    </Panel>
-  );
+  const activityPanel = <ProgressActivity className="lg:col-span-8" buckets={activityBuckets} metric={metric}
+    onMetricChange={setMetric} period={rangeBounds.label} subjectLabel={subjectLabel} onStartStudy={onStartStudy}
+    insights={<DashboardInsights id="dashboard-activity-insights" items={activityInsights} context={`${rangeBounds.label} · ${subjectLabel}`} />} />;
+  const confidencePanel = <ProgressConfidence className="lg:col-span-12" observations={confidencePoints}
+    bounds={rangeBounds} subjects={visibleSubjects} universe={subjects}
+    insights={<DashboardInsights id="dashboard-confidence-insights" items={confidenceInsights.length ? confidenceInsights : [{
+      id: 'confidence-empty', title: 'Confidence trend', trend: 'building', evidence: 'No confidence debriefs fall inside the selected period yet.',
+      guidance: 'Choose a confidence rating after your next completed session and the subject trend will begin here.',
+    }]} context={`${rangeBounds.label} · ${subjectLabel}`} note="Confidence is self-reported, not a grade prediction. Every subject in the current filter is included." />} />;
+  const mockPanel = <ProgressMocks className="lg:col-span-12" mocks={mocks} period={rangeBounds.label} subjectLabel={subjectLabel}
+    insights={<DashboardInsights id="dashboard-mock-insights" items={mockInsights} context={`${rangeBounds.label} · ${subjectLabel}`}
+      note="Total-point trends use comparable full mock sittings only. Subject insights also include single-subject results. These are recorded results, not predictions of final grades." />} />;
+  const subjectPanel = <ProgressSubjects className="lg:col-span-12" values={subjectAllocation} period={rangeBounds.label} />;
+  const methodsPanel = <MethodJournal className="lg:col-span-12" methods={methodRecords} period={rangeBounds.label} />;
 
   const programmePanel = (
     <Panel
@@ -573,7 +416,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   );
 
   return (
-    <div className={`${mobileAppDesign ? 'mobile-editorial dashboard-mobile ' : ''}product-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] transition-colors duration-300`}>
+    <KobraScope className="nsu-progress"><div className={`${mobileAppDesign ? 'mobile-editorial dashboard-mobile ' : ''}product-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] transition-colors duration-300`}>
       <div className="sticky inset-x-0 top-0 z-40 border-b border-[var(--outline-soft)] bg-[color:var(--surface-canvas)]/95 px-4 pb-4 backdrop-blur-xl md:px-10" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
         <div className="mx-auto max-w-7xl">
           <PageHeader onBack={onBack} eyebrow="Student dashboard" title="My Progress" compact />
@@ -595,9 +438,21 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent-hex)]">Your learning record</p>
                 <span className="h-px w-8 bg-[var(--outline-soft)]" aria-hidden="true" />
                 <p className="text-xs text-[var(--ink-muted)]">{todayLabel}</p>
+                {onToggleTheme && (
+                  <button
+                    type="button"
+                    role="switch"
+                    aria-checked={darkMode}
+                    onClick={onToggleTheme}
+                    aria-label={darkMode ? 'Switch to light mode (Beta)' : 'Switch to dark mode (Beta)'}
+                    className="pr-theme-toggle hidden h-10 w-10 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] text-[var(--ink-secondary)] transition-colors hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)] sm:flex"
+                  >
+                    {darkMode ? <Sun size={17} /> : <Moon size={17} />}
+                  </button>
+                )}
               </div>
-              <h1 className="mt-3 max-w-2xl font-serif text-[clamp(34px,6vw,68px)] font-semibold leading-[0.97] tracking-[-0.045em] text-[var(--ink-primary)] sm:mt-4">
-                Your learning,<br />in motion.
+              <h1 className="pr-page-title">
+                Your learning, in motion.
               </h1>
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--ink-secondary)] sm:text-[15px]">
                 Study rhythm, confidence and practice evidence—connected in one clear view.
@@ -606,50 +461,23 @@ const DashboardView: React.FC<DashboardViewProps> = ({
 
             }
             {tab !== 'milestones' && (
-              <div className="dashboard-filters flex flex-wrap items-end gap-2 lg:max-w-md lg:justify-end">
-                <label className={mobileAppDesign ? "min-w-0 basis-full lg:min-w-[200px] lg:flex-1 lg:basis-auto" : "min-w-[160px] flex-1 lg:flex-none"}>
-                  <span className="sr-only">Filter by subject</span>
-                  <select
-                    value={subject}
-                    onChange={event => setSubject(event.target.value)}
-                    className={`${mobileAppDesign ? "min-h-12 text-base font-medium" : "h-10 text-xs font-semibold"} w-full rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-3 text-[var(--ink-secondary)] outline-none focus:border-[var(--accent-hex)]`}
-                  >
-                    <option value="all">All subjects</option>
-                    {subjects.map(item => <option key={item} value={item}>{item}</option>)}
-                  </select>
-                </label>
-                <HorizontalTabs className={mobileAppDesign ? "editorial-tabs w-full" : ""} variant={mobileAppDesign ? "underline" : "pill"} size="sm" label="Dashboard time range" value={range} options={RANGE_OPTIONS.map(item => ({ value: item.id, label: item.label }))} onChange={value => setRange(value as DashboardRange)} />
-                {onToggleTheme && (
-                  <button
-                    type="button"
-                    role="switch"
-                    aria-checked={darkMode}
-                    onClick={onToggleTheme}
-                    aria-label={darkMode ? 'Switch to light mode (Beta)' : 'Switch to dark mode (Beta)'}
-                    className="hidden h-10 w-10 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] text-[var(--ink-secondary)] transition-colors hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)] sm:flex"
-                  >
-                    {darkMode ? <Sun size={17} /> : <Moon size={17} />}
-                  </button>
-                )}
+              <div className="dashboard-filters">
+                <SubjectPicker subjects={subjects} value={selectedSubjects} onChange={setSelectedSubjects} />
+                <ProgressTabs label="Dashboard time range" value={range} options={RANGE_OPTIONS.map(item => ({ value: item.id, label: item.label }))} onChange={value => setRange(value as DashboardRange)} />
+
               </div>
             )}
           </div>
 
-          {(!mobileAppDesign || tab === 'overview' || tab === 'study') && <div className="dashboard-stats -mx-4 flex gap-5 overflow-x-auto border-b border-[var(--outline-soft)] px-4 py-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:grid sm:grid-cols-5 sm:gap-x-4 sm:overflow-visible sm:px-0 sm:py-6">
-            <StatCell eyebrow="Sessions" value={String(sessionsInRange.length)} meta={`${activeDays} active day${activeDays === 1 ? '' : 's'}`} accent />
-            <StatCell eyebrow="Focus time" value={formatMinutes(totalMinutes)} meta={rangeBounds.label} />
-            <StatCell eyebrow="Confidence" value={avgConfidence === null ? '—' : avgConfidence.toFixed(1)} meta={avgConfidence === null ? 'awaiting debriefs' : 'average out of 5'} />
-            {!mobileAppDesign && <><StatCell eyebrow="Streak" value={String(streak.currentStreak)} meta={mobileAppDesign ? "days · all subjects" : "days running"} />
-            <StatCell eyebrow="Journey points" value={String(pointsEarned)} meta="earned to date" /></>}
+          {tab !== 'milestones' && (!mobileAppDesign || tab === 'overview' || tab === 'study') && <div className="pr-summary-wrap">
+            <ProgressSummary period={rangeBounds.label} minutes={totalMinutes} sessions={sessionsInRange.length} activeDays={activeDays}
+              confidence={avgConfidence} streak={streak.currentStreak} pointsEarned={pointsEarned} pointsAvailable={pointsAvailable} buckets={activityBuckets} />
           </div>}
 
           {mobileAppDesign && (tab === 'confidence' || tab === 'practice') && <p className="dashboard-period-scope">{rangeBounds.label} · {subjectLabel}</p>}
-          {!mobileAppDesign && <HorizontalTabs
-            className="mb-5 mt-6"
-            variant="pill"
+          {!mobileAppDesign && <ProgressSections
             value={tab}
-            options={TABS.map(item => ({ value: item.id, label: item.label }))}
-            label="Dashboard sections"
+            options={TABS}
             onChange={next => {
               if (activeTab === undefined) setLocalTab(next);
               onTabChange?.(next);
@@ -673,10 +501,10 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 ) : (
                   <>
                 {activityPanel}
-                <Panel eyebrow="Today" title={nextBlock ? nextBlock.subjectName : 'Choose your next move'} detail={nextBlock ? `${nextBlock.durationMinutes} min · ${nextBlock.sessionType.replace('-', ' ')}` : 'Keep the momentum small and specific.'} className="lg:col-span-4">
-                  <div className="flex min-h-[244px] flex-col justify-between">
+                <Panel eyebrow="Today" title={nextBlock ? nextBlock.subjectName : 'Choose your next move'} detail={nextBlock ? `${nextBlock.durationMinutes} min · ${nextBlock.sessionType.replace('-', ' ')}` : 'Keep the momentum small and specific.'} className="pr-today lg:col-span-4">
+                  <div className="pr-today-body">
                     <div>
-                      <p className="font-serif text-3xl font-semibold leading-tight text-[var(--ink-primary)]">
+                      <p className="pr-today-message">
                         {recommendation?.reason === 'in-progress' ? 'Continue what you started.' : nextBlock ? 'One focused block is enough.' : 'Build evidence, one session at a time.'}
                       </p>
                       {questState && (
@@ -700,34 +528,30 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                             : 'Suggested because it’s the next module you haven’t opened.'}
                         </p>
                       )}
-                      <div className="flex flex-wrap gap-2">
+                      <div className="pr-today-actions">
                       {onStartStudy && (
-                        <button onClick={onStartStudy} className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-[var(--ink-primary)] px-4 text-xs font-bold text-[var(--surface-paper)] transition-transform hover:-translate-y-0.5">
+                        <Button onClick={onStartStudy} variant="outline" className="nsu-ink-outline">
                           Start studying <ArrowRight size={14} />
-                        </button>
+                        </Button>
                       )}
                       {recommendation && recommendation.reason !== 'all-complete' && (
-                        <button onClick={() => onSelectModule(recommendation.moduleId)} className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-[var(--outline-soft)] px-4 text-xs font-bold text-[var(--ink-secondary)] hover:border-[var(--outline-strong)]">
+                        <Button onClick={() => onSelectModule(recommendation.moduleId)} variant="ghost">
                           {recommendation.reason === 'in-progress' ? 'Continue' : 'Open'} {recommendation.title}
-                        </button>
+                        </Button>
                       )}
                       {questState?.isCompleted && !questState.isClaimed && onClaimQuestReward && (
-                        <button onClick={onClaimQuestReward} className="inline-flex min-h-11 items-center rounded-xl border border-[var(--accent-hex)] px-4 text-xs font-bold text-[var(--accent-hex)]">
+                        <Button onClick={onClaimQuestReward} variant="outline" className="nsu-ink-outline">
                           Claim {questState.quest.rewardPoints} JP
-                        </button>
+                        </Button>
                       )}
                       </div>
                     </div>
                   </div>
                 </Panel>
                 {!mobileAppDesign && confidencePanel}
-                {!mobileAppDesign && <Panel eyebrow="Time allocation" title="Subjects studied" detail="Focused minutes across the selected period." className="lg:col-span-5">
-                  <RankedBarChart values={subjectAllocation} limit={mobileAppDesign ? subjectAllocation.length : 6} unit="min" emptyTitle="No subject split yet" emptyDetail="Log a study session and its subject will appear here." />
-                </Panel>}
+                {!mobileAppDesign && subjectPanel}
                 {programmePanel}
-                <Panel disclosure eyebrow="Learning methods" title="Techniques used" detail="Recorded prompts and self-reported study techniques." className="lg:col-span-6">
-                  <RankedBarChart editorial={mobileAppDesign} values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
-                </Panel>
+                {methodsPanel}
                 {!mobileAppDesign && mockPanel}
                 {mobileAppDesign && <nav className="dashboard-section-links" aria-label="Explore your progress">{TABS.slice(1).map(item => <button type="button" key={item.id} onClick={() => { if (activeTab === undefined) setLocalTab(item.id); onTabChange?.(item.id); }}>{item.label}<ArrowRight size={17} /></button>)}</nav>}
                   </>
@@ -742,257 +566,32 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 <Panel disclosure eyebrow="Consistency" title="Study rhythm" detail="Thirteen weeks of recorded study activity." className="lg:col-span-7">
                   <StudyRhythmChart weeks={rhythm} />
                 </Panel>
-                <Panel eyebrow="Time allocation" title="Subjects studied" detail="Focused minutes across the selected period." className="lg:col-span-5">
-                  <RankedBarChart values={subjectAllocation} limit={mobileAppDesign ? subjectAllocation.length : 6} unit="min" emptyTitle="No subject split yet" emptyDetail="Log a study session and its subject will appear here." />
-                </Panel>
-                <Panel disclosure eyebrow="Session design" title="Learning mix" detail="Your recorded sessions, by type." className="lg:col-span-6">
-                  <SessionMixChart values={sessionMix} editorial={mobileAppDesign} />
-                </Panel>
-                <Panel disclosure eyebrow="Learning methods" title="Techniques used" detail="Recorded prompts and self-reported study techniques." className="lg:col-span-6">
-                  <RankedBarChart editorial={mobileAppDesign} values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
-                </Panel>
+                <ProgressBreakdown kind="mix" values={sessionMix} period={rangeBounds.label} className="lg:col-span-5" />
+                {subjectPanel}
+                {methodsPanel}
               </>
             )}
 
             {tab === 'confidence' && (
               <>
                 <div className="lg:col-span-12">{React.cloneElement(confidencePanel, { className: 'lg:col-span-12' })}</div>
-                <Panel eyebrow="Current picture" title="Topic readiness" detail="Current snapshot from War Room and study debriefs. The subject filter applies; the time range does not." className="lg:col-span-12">
-                  <MasteryBar summary={masterySummary} editorial={mobileAppDesign} />
-                </Panel>
+                <ProgressBreakdown kind="readiness" summary={masterySummary} className="lg:col-span-12" />
                 {!mobileAppDesign && programmePanel}
               </>
             )}
 
             {tab === 'practice' && (
               <>
-                {React.cloneElement(mockPanel, { className: 'lg:col-span-8' })}
-                <Panel disclosure eyebrow="Session design" title="Learning mix" detail="New learning, practice and revision in this period." className="lg:col-span-4">
-                  <SessionMixChart values={sessionMix} editorial={mobileAppDesign} />
-                </Panel>
-                <Panel eyebrow="Topic readiness" title="What feels secure" detail="A current snapshot, filtered by subject when selected." className="lg:col-span-6">
-                  <MasteryBar summary={masterySummary} editorial={mobileAppDesign} />
-                </Panel>
-                <Panel disclosure eyebrow="Methods in practice" title="Techniques used" detail="How often each learning method was recorded." className="lg:col-span-6">
-                  <RankedBarChart editorial={mobileAppDesign} values={strategyUsage} limit={mobileAppDesign ? strategyUsage.length : 6} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
-                </Panel>
+                {React.cloneElement(mockPanel, { className: 'lg:col-span-12' })}
+                <ProgressBreakdown kind="mix" values={sessionMix} period={rangeBounds.label} className="lg:col-span-6" />
+                <ProgressBreakdown kind="readiness" summary={masterySummary} className="lg:col-span-6" />
+                {methodsPanel}
               </>
             )}
 
             {tab === 'milestones' && (gamificationState ? (
-              <>
-                <StudyPassport
-                  streak={streak}
-                  sessions={studySessions}
-                  totalXP={gamificationState.totalPointsEarned}
-                  badgesEarned={achievementSummary.unlocked}
-                  badgesVisible={achievementSummary.visible}
-                />
-                <Panel
-                  eyebrow="Rank progress"
-                  title={gamificationState.currentRank.title}
-                  detail={gamificationState.nextRank
-                    ? `${Math.max(0, gamificationState.nextRank.minPoints - gamificationState.totalPointsEarned).toLocaleString()} XP to ${gamificationState.nextRank.title}`
-                    : 'Highest rank reached.'}
-                  className="lg:col-span-4"
-                >
-                  <div className="flex items-end justify-between gap-4">
-                    <div>
-                      <p className="font-serif text-4xl font-semibold tabular-nums text-[var(--ink-primary)]">
-                        {gamificationState.totalPointsEarned.toLocaleString()}
-                      </p>
-                      <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--ink-muted)]">Total XP</p>
-                    </div>
-                    <p className="font-serif text-2xl font-semibold tabular-nums text-[var(--accent-hex)]">{gamificationState.rankProgress}%</p>
-                  </div>
-                  <div className="mt-5 h-2 overflow-hidden rounded-full bg-[var(--dashboard-track)]" aria-label={`${gamificationState.rankProgress}% rank progress`}>
-                    <div className="h-full rounded-full bg-[var(--accent-hex)]" style={{ width: `${gamificationState.rankProgress}%` }} />
-                  </div>
-                  <div className="mt-5 border-t border-[var(--outline-soft)] pt-4 text-xs leading-relaxed text-[var(--ink-muted)]">
-                    <p><strong className="text-[var(--ink-secondary)]">XP</strong> is your lifetime activity score and sets your rank.</p>
-                    <p className="mt-2"><strong className="text-[var(--ink-secondary)]">JP</strong> is the spendable balance used to build My Journey.</p>
-                    <p className="mt-2"><strong className="text-[var(--ink-secondary)]">Passport stamps</strong> mark modules you have completed.</p>
-                  </div>
-                </Panel>
-
-                <Panel
-                  eyebrow="This week"
-                  title="Three useful targets"
-                  detail={`Resets in ${daysUntilWeeklyReset} day${daysUntilWeeklyReset === 1 ? '' : 's'}.`}
-                  className="lg:col-span-8"
-                >
-                  <div className="space-y-4">
-                    {weeklyGoals.map(goal => {
-                      const current = gamificationState.weeklyGoalProgress[goal.metric] ?? 0;
-                      const complete = current >= goal.target;
-                      const progress = Math.min(100, Math.round((current / goal.target) * 100));
-                      return (
-                        <div key={goal.id}>
-                          <div className="mb-1.5 flex items-center justify-between gap-4">
-                            <div className="flex min-w-0 items-center gap-2">
-                              {complete && <Check size={14} className="shrink-0 text-[var(--success-hex)]" aria-hidden="true" />}
-                              <p className={`truncate text-xs font-semibold ${complete ? 'text-[var(--success-hex)]' : 'text-[var(--ink-secondary)]'}`}>{goal.label}</p>
-                            </div>
-                            <p className="shrink-0 text-xs font-bold tabular-nums text-[var(--ink-muted)]">{Math.min(current, goal.target)}/{goal.target}</p>
-                          </div>
-                          <div className="h-1.5 overflow-hidden rounded-full bg-[var(--dashboard-track)]">
-                            <div
-                              className={`h-full rounded-full ${complete ? 'bg-[var(--success-hex)]' : 'bg-[var(--accent-hex)]'}`}
-                              style={{ width: `${progress}%` }}
-                            />
-                          </div>
-                        </div>
-                      );
-                    })}
-
-                    {weeklyChallenge?.isLoaded && weeklyChallenge.challenge && (
-                      <div className="border-t border-[var(--outline-soft)] pt-4">
-                        <div className="flex flex-wrap items-start justify-between gap-3">
-                          <div className="min-w-0">
-                            <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Weekly challenge</p>
-                            <p className="mt-1 text-sm font-semibold text-[var(--ink-primary)]">{weeklyChallenge.challenge.title}</p>
-                            <p className="mt-1 text-xs leading-relaxed text-[var(--ink-muted)]">{weeklyChallenge.challenge.description}</p>
-                          </div>
-                          {weeklyChallenge.isClaimed ? (
-                            <span className="inline-flex min-h-9 items-center gap-1.5 text-xs font-bold text-[var(--success-hex)]">
-                              <Check size={14} /> Reward claimed
-                            </span>
-                          ) : weeklyChallenge.isCompleted ? (
-                            <button
-                              type="button"
-                              onClick={async () => {
-                                await weeklyChallenge.claimReward();
-                                pointsReload?.();
-                              }}
-                              className="inline-flex min-h-9 items-center rounded-xl border border-[var(--accent-hex)] px-3 text-xs font-bold text-[var(--accent-hex)]"
-                            >
-                              Claim {weeklyChallenge.challenge.rewardPoints} JP
-                            </button>
-                          ) : (
-                            <span className="text-xs font-bold tabular-nums text-[var(--accent-hex)]">{weeklyChallenge.current}/{weeklyChallenge.challenge.target}</span>
-                          )}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </Panel>
-
-                <Panel
-                  disclosure
-                  eyebrow="Learning methods"
-                  title="Strategy milestones"
-                  detail="How far learned techniques have travelled into real study sessions."
-                  className="lg:col-span-7"
-                >
-                  {strategyMilestones.length > 0 ? (
-                    <div className="divide-y divide-[var(--outline-soft)]">
-                      {strategyMilestones.map(item => (
-                        <div key={item.moduleId} className="py-3 first:pt-0 last:pb-0">
-                          <div className="flex items-center justify-between gap-4">
-                            <p className="min-w-0 truncate text-sm font-semibold text-[var(--ink-primary)]">{item.strategyName}</p>
-                            <span className="shrink-0 text-[10px] font-bold uppercase tracking-[0.12em] text-[var(--accent-hex)]">{MASTERY_TIER_LABELS[item.record.tier]}</span>
-                          </div>
-                          <div className="mt-2 flex items-center gap-3">
-                            <div className="grid flex-1 grid-cols-4 gap-1" aria-label={`${MASTERY_TIER_LABELS[item.record.tier]} mastery`}>
-                              {[1, 2, 3, 4].map(level => (
-                                <span key={level} className={`h-1.5 rounded-full ${level <= MASTERY_TIER_INDEX[item.record.tier] ? 'bg-[var(--accent-hex)]' : 'bg-[var(--dashboard-track)]'}`} />
-                              ))}
-                            </div>
-                            <p className="shrink-0 text-[10px] text-[var(--ink-muted)]">{item.record.sessionCount} session{item.record.sessionCount === 1 ? '' : 's'}</p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <p className="text-sm leading-relaxed text-[var(--ink-muted)]">Complete a strategy module, then use that technique during a study session to begin tracking it here.</p>
-                  )}
-                </Panel>
-
-                <Panel
-                  disclosure
-                  eyebrow="Personal records"
-                  title="Best efforts"
-                  detail="Your strongest recorded days and weeks—not a target you have to beat every time."
-                  className="lg:col-span-5"
-                >
-                  {personalBests.length > 0 ? (
-                    <div className="grid grid-cols-2 gap-x-5 gap-y-6">
-                      {personalBests.map(item => (
-                        <div key={item.key}>
-                          <p className="font-serif text-3xl font-semibold tabular-nums text-[var(--ink-primary)]">{item.value.toLocaleString()}</p>
-                          <p className="mt-1 text-[10px] leading-snug text-[var(--ink-muted)]">{item.label}</p>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <p className="text-sm leading-relaxed text-[var(--ink-muted)]">Your first completed sessions and modules will establish personal records here.</p>
-                  )}
-                </Panel>
-
-                <Panel
-                  eyebrow="Recognition"
-                  title="Achievements"
-                  detail="Milestones earned across modules, study habits, reflection and your journey."
-                  action={
-                    <button
-                      type="button"
-                      aria-expanded={achievementsOpen}
-                      onClick={() => setAchievementsOpen(open => !open)}
-                      className="min-h-9 rounded-xl border border-[var(--outline-soft)] px-3 text-xs font-bold text-[var(--ink-secondary)] transition-colors hover:border-[var(--outline-strong)]"
-                    >
-                      {achievementsOpen ? 'Hide gallery' : 'View gallery'}
-                    </button>
-                  }
-                  className="lg:col-span-12"
-                >
-                  {achievementsOpen ? (
-                    <AchievementGallery
-                      unlockedAchievements={gamificationState.unlockedAchievements}
-                      achievementTimestamps={gamificationState.achievementTimestamps}
-                      curriculumLevel={curriculumLevel}
-                      showHeader={false}
-                    />
-                  ) : (
-                    <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
-                      <div className="flex items-end gap-8">
-                        <div>
-                          <p className="font-serif text-4xl font-semibold tabular-nums text-[var(--ink-primary)]">{achievementSummary.unlocked}</p>
-                          <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--ink-muted)]">Earned</p>
-                        </div>
-                        <div>
-                          <p className="font-serif text-2xl font-semibold tabular-nums text-[var(--ink-secondary)]">{achievementSummary.visible}</p>
-                          <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--ink-muted)]">Visible milestones</p>
-                        </div>
-                      </div>
-                      {(() => {
-                        // Surface the newest unlock — unlocks that predate
-                        // timestamps tie at 0, so the later array index wins.
-                        const ts = gamificationState.achievementTimestamps ?? {};
-                        const ids = gamificationState.unlockedAchievements;
-                        const latest = [...ids].sort((a, b) =>
-                          (ts[b] ?? 0) - (ts[a] ?? 0) || ids.indexOf(b) - ids.indexOf(a))[0];
-                        const def = latest ? getAchievementById(latest) : undefined;
-                        if (!latest || !def) return null;
-                        return (
-                          <div className="flex items-center gap-3">
-                            <AchievementBadge achievementId={latest} size={40} />
-                            <div className="min-w-0">
-                              <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">Latest badge</p>
-                              <p className="truncate font-serif text-[15px] font-semibold text-[var(--ink-primary)]">{def.title}</p>
-                              {ts[latest] ? (
-                                <p className="text-[11px] text-[var(--ink-muted)]">
-                                  Earned {new Date(ts[latest]).toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })}
-                                </p>
-                              ) : null}
-                            </div>
-                          </div>
-                        );
-                      })()}
-                    </div>
-                  )}
-                </Panel>
-                <TermReviewCard sessions={studySessions} streak={streak} />
-              </>
+              <ProgressMilestones state={gamificationState} streak={streak} sessions={studySessions} strategyMastery={strategyMastery}
+                weeklyChallenge={weeklyChallenge} pointsAvailable={pointsAvailable} pointsReload={pointsReload} curriculumLevel={curriculumLevel} />
             ) : (
               <Panel eyebrow="Milestones" title="Progress is loading" detail="Your goals and achievements will appear here." className="lg:col-span-12">
                 <div className="h-2 overflow-hidden rounded-full bg-[var(--dashboard-track)]">
@@ -1003,7 +602,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
           </div>
         </MotionDiv>
       </main>
-    </div>
+    </div></KobraScope>
   );
 };
 

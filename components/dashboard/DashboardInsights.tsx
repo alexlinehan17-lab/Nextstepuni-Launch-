@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import type { DashboardInsightItem, DashboardTrend } from './dashboardInsightAnalytics';
 
@@ -51,38 +51,23 @@ const DashboardInsights: React.FC<{
   items: DashboardInsightItem[];
   context: string;
   note?: string;
-}> = ({ id, items, context, note }) => (
-  <section id={id} aria-label="Chart insights" className="mb-5 border-b border-[var(--outline-soft)] pb-5">
-    <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-      <h3 className="font-serif text-lg font-semibold text-[var(--ink-primary)]">What the pattern suggests</h3>
-      <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--ink-muted)]">{context}</p>
-    </div>
-
-    <div className="mt-3 divide-y divide-[var(--outline-soft)] border-y border-[var(--outline-soft)]">
-      {items.map(item => {
-        const style = TREND_STYLE[item.trend];
-        return (
-          <article key={item.id} className="grid gap-2 py-4 sm:grid-cols-[minmax(140px,0.55fr)_minmax(0,1.45fr)] sm:gap-6">
-            <div>
-              <h4 className="text-sm font-semibold text-[var(--ink-primary)]">{item.title}</h4>
-              <p className={`mt-1 inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.12em] ${style.text}`}>
-                <span className={`h-1.5 w-1.5 rounded-full ${style.dot}`} aria-hidden="true" />
-                {TREND_LABEL[item.trend]}
-              </p>
-            </div>
-            <div>
-              <p className="text-xs leading-relaxed text-[var(--ink-secondary)]">{item.evidence}</p>
-              <p className="mt-1.5 text-xs leading-relaxed text-[var(--ink-primary)]">
-                <span className="font-semibold">Next move:</span> {item.guidance}
-              </p>
-            </div>
-          </article>
-        );
-      })}
-    </div>
-
-    {note && <p className="mt-3 text-[10px] leading-relaxed text-[var(--ink-muted)]">{note}</p>}
-  </section>
-);
+ }> = ({ id, items, context, note }) => {
+  const [selected, setSelected] = useState<string | null | undefined>(undefined);
+  const openId = selected === null ? null : items.some(item => item.id === selected) ? selected : items[0]?.id;
+  return <section id={id} aria-label="Chart insights" className="pr-insight-index">
+    <header><p>{context}</p><h3>What the pattern suggests</h3></header>
+    <div>{items.map(item => {
+      const open = openId === item.id;
+      const style = TREND_STYLE[item.trend];
+      return <article key={item.id}>
+        <h4 aria-label={item.title}><button type="button" aria-expanded={open} aria-controls={`${id}-${item.id}`} onClick={() => setSelected(open ? null : item.id)}>
+          <span><strong>{item.title}</strong><span className={`pr-insight-trend ${style.text}`}><i className={style.dot} aria-hidden="true" />{TREND_LABEL[item.trend]}</span></span><ChevronDown size={17} aria-hidden="true" />
+        </button></h4>
+        {open && <div id={`${id}-${item.id}`} className="pr-insight-reading"><p>{item.evidence}</p><div><strong>Try next</strong><p>{item.guidance}</p></div></div>}
+      </article>;
+    })}</div>
+    {note && <footer>{note}</footer>}
+  </section>;
+};
 
 export default DashboardInsights;

@@ -1,4 +1,5 @@
 import React from "react";
+import AppearanceChoice from "./AppearanceChoice";
 import SubjectAvatar from "../SubjectAvatar";
 import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
 import { DAYS_OF_WEEK, SUBJECT_GROUP_LABELS, type Level } from "../subjectData";
@@ -16,6 +17,8 @@ import "./desktop.css";
 import { getSubjectFill } from "../../utils/subjectColors";
 import GradeOptions from "./GradeOptions";
 import NorthStarArtwork from "./NorthStarArtwork";
+import SetupSelect from "./SetupSelect";
+import SetupSoundToggle from "./SetupSoundToggle";
 
 export default function DesktopSetup(props: OnboardingProps) {
   const {
@@ -90,10 +93,13 @@ export default function DesktopSetup(props: OnboardingProps) {
             <span className="desk-header-note">
               A beginning, built around you.
             </span>
-            <span>
-              {String(stage).padStart(2, "0")} /{" "}
-              {String(stages).padStart(2, "0")}
-            </span>
+            <div className="setup-header-tools">
+              <SetupSoundToggle />
+              <span className="setup-stage">
+                {String(stage).padStart(2, "0")} /{" "}
+                {String(stages).padStart(2, "0")}
+              </span>
+            </div>
           </header>
           <div
             className="setup-progress"
@@ -630,31 +636,20 @@ export default function DesktopSetup(props: OnboardingProps) {
                         className={`setup-grade-pickers ${junior ? "setup-stack" : ""}`}
                       >
                         {(["current", "target"] as const).map((field) => (
-                          <label className="setup-field" key={field}>
+                          <div className="setup-field" key={field}>
                             <span>
                               {field === "current" ? "Current" : "Target"}{" "}
                               {junior ? "band" : "grade"}
                             </span>
-                            <select
+                            <SetupSelect
+                              label={`${field === "current" ? "Current" : "Target"} ${junior ? "band" : "grade"}`}
                               disabled={!config.level}
                               value={config[field]}
-                              onChange={(event) =>
-                                updateGrade({
-                                  [field]: event.target.value as GradeChoice,
-                                })
-                              }
-                            >
-                              <option value="" disabled>
-                                Choose {junior ? "band" : "grade"}
-                              </option>
-                              {gradeChoices.map((grade) => (
-                                <option key={grade} value={grade}>
-                                  {grade}
-                                </option>
-                              ))}
-                              <option value="later">I don’t know yet</option>
-                            </select>
-                          </label>
+                              onChange={value => updateGrade({ [field]: value as GradeChoice })}
+                              placeholder={`Choose ${junior ? "band" : "grade"}`}
+                              options={[...gradeChoices.map(grade => ({ value: grade, label: grade })), { value: "later", label: "I don’t know yet" }]}
+                            />
+                          </div>
                         ))}
                       </div>
                       <button
@@ -860,6 +855,11 @@ export default function DesktopSetup(props: OnboardingProps) {
                             .join(" · ") || "Choose at least one idea."}
                         </p>
                       </section>
+                      <AppearanceChoice
+                        darkMode={draft.appearance === "dark"}
+                        onChange={(darkMode) => patch({ appearance: darkMode ? "dark" : "light" })}
+                        disabled={saving}
+                      />
                     </>
                   )}
                 </section>

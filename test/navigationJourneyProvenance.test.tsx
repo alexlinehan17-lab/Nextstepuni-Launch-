@@ -139,18 +139,21 @@ describe('module journey provenance', () => {
     pushState.mockRestore();
   });
 
-  test('replaces the current dashboard entry when changing sections', () => {
+  test('changes dashboard sections in place without resetting scroll or adding history', () => {
     render(<NavigationProvider><NavigationProbe /></NavigationProvider>);
     fireEvent.click(screen.getByRole('button', { name: 'Open progress' }));
     const pushState = vi.spyOn(window.history, 'pushState');
     const replaceState = vi.spyOn(window.history, 'replaceState');
+    const scrollTo = vi.spyOn(window, 'scrollTo');
 
     fireEvent.click(screen.getByRole('button', { name: 'Show milestones' }));
 
     expect(screen.getByTestId('dashboard-section')).toHaveTextContent('milestones');
     expect(window.location.search).toBe('?view=dashboard&section=milestones');
     expect(replaceState).toHaveBeenCalledOnce();
+    expect(scrollTo).not.toHaveBeenCalled();
     expect(pushState).not.toHaveBeenCalled();
+    scrollTo.mockRestore();
     replaceState.mockRestore();
     pushState.mockRestore();
   });

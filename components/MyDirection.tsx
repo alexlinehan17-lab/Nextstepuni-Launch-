@@ -72,7 +72,7 @@ const MyDirection: React.FC<MyDirectionProps> = ({
       <header className="direction-navigation"><div><button type="button" onClick={onBack} aria-label="Back to home"><ArrowLeft size={21} /></button><h1>My Direction</h1></div><button type="button" className="student-secondary" onClick={onEditNorthStar}>Edit my direction <ArrowRight size={18} /></button></header>
       <div className={`direction-body ${loaded ? '' : 'opacity-70'}`}>
         <section className="direction-north-star">
-          <img src="/assets/training/north-star-compass.png" alt="" />
+          <img className="theme-filled-art" src="/assets/training/north-star-compass.png" alt="" />
           <p className="student-eyebrow">Your North Star · {category?.label ?? 'Your next chapter'}</p>
           <h2>{hasStudentAuthoredNorthStar(northStar) ? `“${getNorthStarDisplayText(northStar)}”` : getNorthStarDisplayText(northStar)}</h2>
           <p>A direction to move towards. And room to change your mind.</p>

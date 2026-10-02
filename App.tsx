@@ -893,8 +893,8 @@ const App: React.FC = () => {
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
     <OfflineBanner />
     <div className="min-h-screen bg-white dark:bg-zinc-950">
-      {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
-        <div className={`fixed top-6 right-6 z-[100] ${viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
+      {user && userProgressReady && viewState !== 'study-session' && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
+        <div className={`student-account-controls fixed top-3 right-6 z-[100] ${viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
           <div className="flex items-center gap-2">
             <div>
               {gamification.isLoaded && (

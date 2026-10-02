@@ -6,9 +6,10 @@ import { loadPdfjs } from './pdfjsLoader';
 const covers = new Map<string, string>();
 
 /** The actual first page of this paper. A failed preview never blocks opening. */
-export default function PaperCover({ url, image = false }: { url: string; image?: boolean }) {
+export default function PaperCover({ url, image = false, renderWidth = 160 }: { url: string; image?: boolean; renderWidth?: number }) {
   const target = useRef<HTMLSpanElement>(null);
   const [cover, setCover] = useState<{ url: string; src: string } | null>(null);
+  const cacheKey = `${url}::${renderWidth}`;
 
   useEffect(() => {
     if (image || !target.current) return;
@@ -17,12 +18,12 @@ export default function PaperCover({ url, image = false }: { url: string; image?
     let render: RenderTask | undefined;
     let timeout: number | undefined;
     const load = async () => {
-      const cached = covers.get(url);
-      if (cached) { setCover({ url, src: cached }); return; }
+      const cached = covers.get(cacheKey);
+      if (cached) { setCover({ url: cacheKey, src: cached }); return; }
       try {
         const pdfjs = await loadPdfjs();
         if (disposed) return;
-        // Use range requests and disable prefetch: a 50px cover should not
+        // Use range requests and disable prefetch: a cover should not
         // download a whole multi-megabyte paper on a student's mobile data.
         task = pdfjs.getDocument({ url, disableAutoFetch: true, disableStream: true });
         timeout = window.setTimeout(() => { void task?.destroy().catch(() => {}); }, 15000);
@@ -30,7 +31,7 @@ export default function PaperCover({ url, image = false }: { url: string; image?
         if (disposed) return;
         const page = await pdf.getPage(1);
         if (disposed) return;
-        const viewport = page.getViewport({ scale: 100 / page.getViewport({ scale: 1 }).width });
+        const viewport = page.getViewport({ scale: renderWidth / page.getViewport({ scale: 1 }).width });
         const canvas = document.createElement('canvas');
         canvas.width = Math.ceil(viewport.width);
         canvas.height = Math.ceil(viewport.height);
@@ -39,8 +40,8 @@ export default function PaperCover({ url, image = false }: { url: string; image?
         if (disposed) return;
         const src = canvas.toDataURL('image/png');
         if (covers.size >= 48) covers.delete(covers.keys().next().value!);
-        covers.set(url, src);
-        setCover({ url, src });
+        covers.set(cacheKey, src);
+        setCover({ url: cacheKey, src });
       } catch {
         // Keep the neutral PDF label if offline or the preview is unavailable.
       } finally {
@@ -62,9 +63,9 @@ export default function PaperCover({ url, image = false }: { url: string; image?
       render?.cancel();
       void task?.destroy().catch(() => {});
     };
-  }, [url, image]);
+  }, [url, image, renderWidth, cacheKey]);
 
-  const src = image ? url : cover?.url === url ? cover.src : covers.get(url);
+  const src = image ? url : cover?.url === cacheKey ? cover.src : covers.get(cacheKey);
   return <span ref={target} className="pt-cover" aria-hidden="true">
     {src ? <img src={src} alt="" loading="lazy" /> : <span>PDF</span>}
   </span>;

@@ -1,6 +1,7 @@
-import React, { createContext, useContext, useEffect, useId, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import { X } from 'lucide-react';
 import type { ToolIconKey } from '../ToolIconBlob';
+import ThemeArtwork from '../ThemeArtwork';
 import './launchpad.css';
 
 /** The mobile shell owns the introduction, so nested tools don't repeat it. */
@@ -23,7 +24,7 @@ export function ToolIntroduction({ tool, title, eyebrow, subtitle, uid }: {
   </section> : null;
 }
 
-/** Original tool artwork, with white ink on dark surfaces. No backing disc. */
+/** Original filled tool artwork; dark surfaces add a fine pale silhouette. */
 export function ToolArtwork({
   tool,
   dark = false,
@@ -33,17 +34,6 @@ export function ToolArtwork({
   dark?: boolean;
   className?: string;
 }) {
-  const whiteInk =
-    dark &&
-    [
-      'planner',
-      'war-room',
-      'catch-up-lane',
-      'journey',
-      'meet-tools',
-      'future-finder',
-    ].includes(tool);
-  const filterId = `tool-ink-${useId().replace(/:/g, '')}`;
   const asset =
     tool === 'topic-atlas'
       ? 'paper-trail'
@@ -52,37 +42,14 @@ export function ToolArtwork({
         : tool;
   return (
     <svg
-      className={`lp-artwork ${dark ? '' : 'theme-ink-art'} ${className}`}
+      className={`lp-artwork theme-filled-art ${dark ? 'filled-art-on-dark' : ''} ${className}`}
       viewBox="100 100 824 824"
       aria-hidden="true"
     >
-      {whiteInk && (
-        <defs>
-          <filter id={filterId} colorInterpolationFilters="sRGB">
-            <feColorMatrix
-              in="SourceGraphic"
-              type="matrix"
-              values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  -4 0 0 0 1.5"
-              result="whiteInk"
-            />
-            <feComposite
-              in="whiteInk"
-              in2="SourceGraphic"
-              operator="in"
-              result="ink"
-            />
-            <feMerge>
-              <feMergeNode in="SourceGraphic" />
-              <feMergeNode in="ink" />
-            </feMerge>
-          </filter>
-        </defs>
-      )}
       <image
         href={`/assets/tools/${asset}.png`}
         width="1024"
         height="1024"
-        filter={whiteInk ? `url(#${filterId})` : undefined}
       />
     </svg>
   );
@@ -116,9 +83,10 @@ export default function ToolMasthead({
         {children}
       </div>
       {mascot ? (
-        <img
+        <ThemeArtwork
           src="/assets/landing/starguy-512.png"
           alt=""
+          darkSurface
           className="lp-artwork lp-mascot"
         />
       ) : (

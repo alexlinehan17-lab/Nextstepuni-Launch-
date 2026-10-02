@@ -1,6 +1,7 @@
 import React from 'react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import Onboarding from '../components/Onboarding';
 import { buildProfile, choiceReady, draftKey, emptyChoice, initialDraft, legacyDraftKey, pointsFor, readDraft, type SetupDraft } from '../components/onboarding/model';
 
@@ -146,18 +147,20 @@ describe('approved onboarding interactions', () => {
     expect(screen.getByRole('checkbox')).not.toBeChecked();
     expect(screen.getByRole('button', { name: 'Continue' })).toBeDisabled();
   });
-  it('cancel restores the review and does not persist provisional edits', () => {
+  it('cancel restores the review and does not persist provisional edits', async () => {
     const draft = reviewDraft(); mount(draft);
     fireEvent.click(screen.getByRole('button', { name: 'Edit English grades' }));
-    fireEvent.change(screen.getByLabelText('Target grade'), { target: { value: 'O3' } });
+    await userEvent.click(screen.getByRole('combobox', { name: 'Target grade' }));
+    await userEvent.click(await screen.findByRole('option', { name: 'O3' }));
     expect(JSON.parse(localStorage.getItem(key)!).configs.English.target).toBe('O1');
     fireEvent.click(screen.getByRole('button', { name: 'Cancel edits' }));
     expect(screen.getByText('O2 → O1')).toBeInTheDocument();
   });
-  it('saving an individual grade returns directly to review', () => {
+  it('saving an individual grade returns directly to review', async () => {
     mount(reviewDraft());
     fireEvent.click(screen.getByRole('button', { name: 'Edit English grades' }));
-    fireEvent.change(screen.getByLabelText('Target grade'), { target: { value: 'O3' } });
+    await userEvent.click(screen.getByRole('combobox', { name: 'Target grade' }));
+    await userEvent.click(await screen.findByRole('option', { name: 'O3' }));
     fireEvent.click(screen.getByRole('button', { name: 'Save and review' }));
     expect(screen.getByText('O2 → O3')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Start Learning' })).toBeEnabled();
