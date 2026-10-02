@@ -1,4 +1,5 @@
 import React from "react";
+import AppearanceChoice from "./AppearanceChoice";
 import SubjectAvatar from "../SubjectAvatar";
 import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
 import { DAYS_OF_WEEK, SUBJECT_GROUP_LABELS, type Level } from "../subjectData";
@@ -754,6 +755,11 @@ export default function SetupFlow(props: OnboardingProps) {
                       .join(" · ") || "Choose at least one idea."}
                   </p>
                 </section>
+                <AppearanceChoice
+                  darkMode={draft.appearance === "dark"}
+                  onChange={(darkMode) => patch({ appearance: darkMode ? "dark" : "light" })}
+                  disabled={saving}
+                />
               </>
             )}
           </main>
