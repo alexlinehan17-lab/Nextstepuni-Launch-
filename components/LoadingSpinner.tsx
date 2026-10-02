@@ -35,8 +35,8 @@ export const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
       ].join(' ')}>
       <div className={`crew-loading-content crew-loading-${variant}${calm ? ' crew-loading-calm' : ''}`}>
         <div className="crew-loading-figure" aria-hidden="true">
-          <StarCrewArtwork artwork={crew} className="crew-loading-art" loading="eager"
-            fallback={<StarCrewArtwork artwork={spare} className="crew-loading-art" loading="eager" fallback={null} />} />
+          <StarCrewArtwork artwork={crew} className="crew-loading-art" loading="eager" transparentBackground
+            fallback={<StarCrewArtwork artwork={spare} className="crew-loading-art" loading="eager" transparentBackground fallback={null} />} />
           <i className="crew-loading-shadow" />
         </div>
         <div className="crew-loading-copy">

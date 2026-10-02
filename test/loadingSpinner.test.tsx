@@ -1,9 +1,10 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
+import { act, fireEvent, render, screen } from '@testing-library/react';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
 import { LoadingCrewProvider } from '@/contexts/LoadingCrewContext';
 
 const character = () => screen.getByRole('status').getAttribute('data-loading-crew');
+afterEach(() => document.documentElement.classList.remove('dark'));
 
 describe('LoadingSpinner', () => {
   it('announces the destination without narrating decorative artwork or fake progress', () => {
@@ -67,8 +68,27 @@ describe('LoadingSpinner', () => {
     } finally { random.mockRestore(); }
   });
 
+  it('keeps filled alpha artwork for tiled and standalone characters across both appearances', async () => {
+    const { rerender } = render(<LoadingCrewProvider transitionKey="a" avatar="star-crew:reader"><LoadingSpinner /></LoadingCrewProvider>);
+    const image = () => document.querySelector('.crew-loading img')!;
+    expect(image()).toHaveAttribute('src', '/assets/dark/star-crew/personal/original-four.png');
+    expect(image()).toHaveAttribute('data-artwork-appearance', 'light');
+    await act(async () => { document.documentElement.classList.add('dark'); });
+    expect(image()).toHaveAttribute('src', '/assets/dark/star-crew/personal/original-four.png');
+    expect(image()).toHaveAttribute('data-artwork-appearance', 'dark');
+    rerender(<LoadingCrewProvider transitionKey="a" avatar="star-crew:skater"><LoadingSpinner variant="compact" placement="panel" /></LoadingCrewProvider>);
+    expect(image()).toHaveAttribute('src', '/assets/dark/star-crew/personal/05-skater.png');
+    await act(async () => { document.documentElement.classList.remove('dark'); });
+    expect(image()).toHaveAttribute('src', '/assets/dark/star-crew/personal/05-skater.png');
+    expect(image()).toHaveAttribute('data-artwork-appearance', 'light');
+  });
+
   it('handles failed artwork with one safe crew fallback and readable status', () => {
     render(<LoadingCrewProvider transitionKey="a" avatar="star-crew:hugger"><LoadingSpinner /></LoadingCrewProvider>);
+    fireEvent.error(document.querySelector('.crew-loading img')!);
+    expect(document.querySelector('.crew-loading img')).toHaveAttribute('src', '/assets/star-crew/personal/09-hugger.png');
+    fireEvent.error(document.querySelector('.crew-loading img')!);
+    expect(document.querySelector('.crew-loading img')).toHaveAttribute('src', '/assets/dark/star-crew/personal/05-skater.png');
     fireEvent.error(document.querySelector('.crew-loading img')!);
     expect(document.querySelector('.crew-loading img')).toHaveAttribute('src', '/assets/star-crew/personal/05-skater.png');
     fireEvent.error(document.querySelector('.crew-loading img')!);
