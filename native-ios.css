@@ -20,3 +20,9 @@
   .native-ios .student-home { padding-top: calc(22px + var(--sat, 0px)); }
   .native-ios .ss-timer-content:is(.ss-room-ink, .ss-room-layers) { padding-top: calc(20px + var(--sat, 0px)); }
 }
+
+/* Expanded practice fills the viewport, including the transparent status bar. */
+.native-ios .mb-live-session-dialog[data-expanded=true] .mb-paper-session-heading { padding-top: calc(28px + var(--sat, 0px)); }
+@media (max-width: 700px) {
+  .native-ios .mb-live-session-dialog[data-expanded=true] .mb-paper-session-heading { padding-top: calc(22px + var(--sat, 0px)); }
+}

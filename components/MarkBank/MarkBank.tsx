@@ -20,34 +20,28 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { X } from 'lucide-react';
-import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
-import ToolMasthead from '../launchpad/ToolMasthead';
-import SubjectPicker from '../launchpad/SubjectPicker';
+import { libraryCardsForTopic, libraryGroups } from './libraryGroups';
+import MarkBankLibrary from './MarkBankLibrary';
 import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
-  NEW_CARD, dueAt, grade as gradeCard, intervalWords,
-  isDue, retentionFor, retrievability,
+  NEW_CARD, grade as gradeCard, intervalWords, retentionFor,
 } from './scheduler';
 import {
-  MARK_BANK_SESSION_SIZE,
   listeningExerciseKey,
   nextSessionActionLabel,
   resolveSessionQueue,
   sessionExerciseCount,
-  topicSessionSummary,
 } from './sessionPlanning';
-import { LEVEL_LABEL, SUBJECTS, builtDecks, cardsForTopic, deckSize, levelsFor, loadCards, strandsFor, topicMarks, type Level } from './deck';
+import { SUBJECTS,  deckSize, levelsFor, loadCards,  type Level } from './deck';
 import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
   writeChoice, writeLocal, type DeckState,
 } from './store';
 import type { SecCard } from '../../types/markBank';
 
-import HorizontalTabs from '../ui/HorizontalTabs';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
-import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
+import { ResultStatGrid } from '../ui/ProductPatterns';
 import { trackProgrammeEvent } from '../../utils/programmeAnalytics';
 import { DEMO_STUDENT_UID } from '../../data/devStudent';
 
@@ -62,21 +56,10 @@ const SUCCESS_TEXT = 'var(--mb-success-text)';
 
 const SERIF = "'Source Serif 4', Georgia, serif";
 const SANS = "'DM Sans', system-ui, sans-serif";
-const MONO = "'Roboto Mono', ui-monospace, monospace";
 
 /** Accent means "this is the action / do this now". Never "correct". */
 const ACCENT = '#F26B1F';
 const HAIRLINE = 'var(--mb-hairline)';
-
-/* One work surface for the whole tool, at every window width above the split.
-   280 rail + 32 gutter + 780 list. It never grows: at 1920px the margins are
-   414px and that is correct — filling a wide window with rails is the instinct
-   that produced the layout this replaces. */
-const SURFACE = 1092;
-
-const TWO_PANE = 1200;
-/** Single-column width between the phone layout and the rail-plus-list split. */
-const COLUMN = 664;
 
 type Screen =
   | { name: 'board' }
@@ -110,32 +93,6 @@ const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) => (
  */
 
 
-/** Rail-plus-list above this, single column below. Same threshold as the review
- *  screen's split, so the tool changes shape once rather than twice. */
-const useWide = () => {
-  const [wide, setWide] = useState(
-    () => typeof window !== 'undefined' && window.matchMedia(`(min-width: ${TWO_PANE}px)`).matches,
-  );
-  useEffect(() => {
-    const mq = window.matchMedia(`(min-width: ${TWO_PANE}px)`);
-    const onChange = (e: MediaQueryListEvent) => setWide(e.matches);
-    mq.addEventListener('change', onChange);
-    return () => mq.removeEventListener('change', onChange);
-  }, []);
-  return wide;
-};
-
-/** Three-zone bar: secure, met-but-fading, not yet met. Never a percentage. */
-const MarkBar: React.FC<{ secure: number; met: number; total: number }> = ({ secure, met, total }) => {
-  const pct = (n: number) => (total > 0 ? Math.min(100, (n / total) * 100) : 0);
-  return (
-    <div style={{ height: 6, borderRadius: 4, background: 'var(--mb-hairline)', overflow: 'hidden', display: 'flex' }}>
-      <div style={{ width: `${pct(secure)}%`, background: SUCCESS }} />
-      <div style={{ width: `${pct(Math.max(0, met - secure))}%`, background: SUCCESS, opacity: 0.35 }} />
-    </div>
-  );
-};
-
 /* ------------------------------------------------------------------ tool ---- */
 
 const normaliseSubjectName = (name: string) => name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]/g, '');
@@ -164,15 +121,6 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
 }
 
 const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => Date.now() }) => {
-  const mobileAppDesign = useMobileAppDesign();
-  const overviewKey = `nsu:mark-bank-overview:${uid ?? 'guest'}`;
-  const [overviewDismissed, setOverviewDismissed] = useState(() => {
-    try { return localStorage.getItem(overviewKey) === 'dismissed'; } catch { return false; }
-  });
-  const changeOverview = (dismissed: boolean) => {
-    setOverviewDismissed(dismissed);
-    try { if (dismissed) localStorage.setItem(overviewKey, 'dismissed'); else localStorage.removeItem(overviewKey); } catch { /* In-memory state still works. */ }
-  };
   const canSelectSubject = useSubjectAccess();
   /* Read synchronously on mount. A Chemistry Ordinary student must never watch
      the tool open on Biology Higher and correct it — that is two clicks every
@@ -202,15 +150,11 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     setLevel(l);
     writeChoice(uid, { subjectId, level: l });
   }, [uid, subjectId]);
-  const wide = useWide();
   const subject = SUBJECTS.find(s => s.id === subjectId) ?? SUBJECTS[0];
-  const subjectLevels = levelsFor(subject.id);
   // One deck per subject AND level, so a student's Biology work is untouched by
   // anything they do in Chemistry, and dropping a level never disturbs either.
   const deckId = `${subjectId}-${level}`;
   const [deck, setDeck] = useState<DeckState>(() => readLocal(uid, deckId));
-  const [topicQuery, setTopicQuery] = useState('');
-  const [strandFilter, setStrandFilter] = useState('all');
   const [screen, setScreen] = useState<Screen>({ name: 'board' });
   const [loaded, setLoaded] = useState(false);
   const [online, setOnline] = useState(() => typeof navigator === 'undefined' ? true : navigator.onLine);
@@ -277,44 +221,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     if (launchTimerRef.current !== null) window.clearTimeout(launchTimerRef.current);
   }, []);
 
-  const levelUnbuilt = !cardsLoading && cards.length === 0;
   const memories = deck.cards;
   const retention = retentionFor(now(), deck.examTs);
 
-  const dueIds = useMemo(
-    () => cards.filter(c => {
-      const m = memories[c.id];
-      return m && m.last ? isDue(c.id, m, now(), retention) : false;
-    }).map(c => c.id),
-    [cards, memories, retention, now],
-  );
-
-  /**
-   * Marks on cards the scheduler predicts the student would still recall
-   * TOMORROW, and only for cards that have graduated out of learning.
-   *
-   * Measuring at this instant is meaningless: retrievability at zero elapsed time
-   * is exactly 1 whatever the stability, so a card graded "Missed it" counted its
-   * full marks as secure the moment it was failed.
-   */
-  const marksSecure = useCallback((subset: SecCard[]) =>
-    subset.reduce((n, c) => {
-      const m = memories[c.id];
-      if (!m?.last || m.state !== 2) return n;
-      return retrievability(m, now() + 86_400_000) >= 0.9 ? n + c.totalMarks : n;
-    }, 0), [memories, now]);
-
-  const marksMet = useCallback((subset: SecCard[]) =>
-    subset.reduce((n, c) => (memories[c.id]?.last ? n + c.totalMarks : n), 0), [memories]);
-  const examYears = useMemo(() => {
-    const years = [...new Set(cards.map(c => c.year))].sort();
-    if (!years.length) return '';
-    return years.length === 1 ? `${years[0]}` : `${years[0]}\u2013${years[years.length - 1]}`;
-  }, [cards]);
-
   const startSession = (topicId?: string, preparedQueue?: SecCard[]) => {
     if (launchingTopicId !== null) return;
-    const pool = topicId ? cards.filter(c => c.topicId === topicId) : cards;
+    const pool = topicId ? libraryCardsForTopic(topicId, cards) : cards;
     if (!pool.length) return;
     const queue = preparedQueue
       ?? resolveSessionQueue(pool, memories, now(), deck.examTs);
@@ -352,14 +264,15 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   /* ------------------------------------------------------------ session ---- */
 
   if (screen.name === 'session') {
-    const reviewPool = screen.topicId ? cardsForTopic(screen.topicId, cards) : cards;
+    const reviewPool = screen.topicId ? libraryCardsForTopic(screen.topicId, cards) : cards;
     const reviewPoolLabel = screen.topicId
-      ? strandsFor(subjectId)
+      ? libraryGroups(subjectId, cards)
         .flatMap(strand => strand.topics)
         .find(topic => topic.id === screen.topicId)?.title ?? 'this topic'
       : subject.title;
     return (
       <SessionScreen
+        paperLayout
         cards={screen.cards}
         subjectLabel={subject.title}
         reviewPoolTotal={reviewPool.length}
@@ -386,7 +299,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
       const resultCard = cards.find(card => card.id === result.cardId);
       return resultCard ? listeningExerciseKey(resultCard) ?? resultCard.id : result.cardId;
     })).size;
-    const nextPool = screen.topicId ? cardsForTopic(screen.topicId, cards) : cards;
+    const nextPool = screen.topicId ? libraryCardsForTopic(screen.topicId, cards) : cards;
     const nextQueue = resolveSessionQueue(nextPool, memories, now(), deck.examTs);
     const nextAction = nextSessionActionLabel(
       sessionExerciseCount(nextQueue),
@@ -466,296 +379,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     );
   }
 
-  /* -------------------------------------------------------------- board ---- */
-
-  /* The bank home and the topic board were two screens showing the same thing.
-     Once the subject and level are remembered, the home screen's whole job is one
-     readout and one button — that is a rail, not a screen. */
-  const dueCount = dueIds.length;
-  const strands = strandsFor(subjectId);
-  const coveredTopics = strands.flatMap(strand => strand.topics).filter(topic => cardsForTopic(topic.id, cards).length > 0).length;
-  const totalTopics = strands.reduce((sum, strand) => sum + strand.topics.length, 0);
-  // English is reconciled against every selectable response in all twenty
-  // 2021–2025 papers. Empty taxonomy rows there mean "not examined in this
-  // corpus", not "unfinished". Showing dozens of disabled poets and roll-up
-  // categories made a complete subject look half-built and buried the useful
-  // choices on mobile.
-  const completePaperCorpus = subjectId === 'english' || subjectId === 'irish';
-  const visibleStrands = completePaperCorpus
-    ? strands
-      .map(strand => ({
-        ...strand,
-        topics: strand.topics.filter(topic => cardsForTopic(topic.id, cards).length > 0),
-      }))
-      .filter(strand => strand.topics.length > 0)
-    : strands;
-  const dueTopics = strands.flatMap(s => s.topics).filter(t => {
-    const tc = cardsForTopic(t.id, cards);
-    return tc.some(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; });
-  }).length;
-  const dueMarks = cards
-    .filter(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; })
-    .reduce((n, c) => n + c.totalMarks, 0);
-
-  const nextReturn = cards
-    .map(c => (memories[c.id]?.last ? dueAt(c.id, memories[c.id], retention) : Infinity))
-    .filter(ts => ts > now() && Number.isFinite(ts))
-    .sort((a, b) => a - b)[0];
-
-  const elsewhere = builtDecks().filter(d => d.subjectId !== subjectId || d.level !== level);
-  const builtElsewhere = elsewhere.length
-    ? `${elsewhere.map(d => d.label).join(', ').replace(/, ([^,]*)$/, ' and $1')} ${elsewhere.length === 1 ? 'is' : 'are'} ready now`
-    : null;
-
-  const topicFilters = <div className="mb-topic-filters">
-    <label className="block mt-5"><span className="sr-only">Find a Mark Bank topic</span><input type="search" className="lp-search" placeholder="Find a topic" value={topicQuery} onChange={event => setTopicQuery(event.target.value)} /></label>
-    {mobileAppDesign ? <label className="mb-topic-group-picker"><span className="sr-only">Topic group</span><select aria-label="Topic group" value={strandFilter} onChange={event => setStrandFilter(event.target.value)}><option value="all">All topic groups</option>{strands.map(strand => <option key={strand.id} value={strand.id}>{strand.title}</option>)}</select></label> : <nav className="lp-mark-strands" aria-label="Topic groups"><button aria-pressed={strandFilter === 'all'} onClick={() => setStrandFilter('all')}>All {subject.title}</button>{strands.map(strand => <button key={strand.id} aria-pressed={strandFilter === strand.id} onClick={() => setStrandFilter(strand.id)}>{strand.title}</button>)}</nav>}
-  </div>;
-
-  return (
-    <div
-      className={`mark-bank-theme ${launchingTopicId !== null ? 'mb-board-exit' : ''}`}
-      aria-busy={launchingTopicId !== null}
-      style={{ fontFamily: SANS, padding: '0 0 72px', color: INK }}
-    >
-      <ToolMasthead tool="mark-bank" eyebrow="Work the real questions" title="The Mark Bank." subtitle="Build your answer. See where the marks come from." />
-      <div className="lp-mark-library">
-        {/* ---- the rail: what you sit, what is waiting, and the way in ---- */}
-        <aside className="lp-mark-rail">
-          {/* alignItems, or the pills stretch: a flex column stretches its
-              children by default, which overrides the Segment's own inline-flex
-              and leaves the options huddled at the left end of a 664px pill. */}
-          <div style={{
-            display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
-            gap: 14, margin: '18px 0 0', width: '100%',
-          }}>
-            <div style={{ width: '100%' }}>
-              <div style={{ marginBottom: 6 }}><Eyebrow>Subject</Eyebrow></div>
-              <SubjectPicker value={subjectId} options={SUBJECTS.map(s => ({ value:s.id, label:s.title }))} onChange={value => { chooseSubject(value); setTopicQuery(''); setStrandFilter('all'); }} />
-            </div>
-            {/* A subject examined at ONE level is offered no choice: showing
-                a Higher/Ordinary pill for LCVP would invite a student to pick
-                a paper the SEC does not set. */}
-            {subjectLevels.length > 1 && (
-              <div style={{ width: '100%' }}>
-                <div style={{ marginBottom: 6 }}><Eyebrow>Paper level</Eyebrow></div>
-                <HorizontalTabs
-                  variant={mobileAppDesign ? "underline" : "pill"}
-                  size="sm"
-                  label="Paper level"
-                  className={mobileAppDesign ? "editorial-tabs" : "w-fit"}
-                  value={level}
-                  onChange={chooseLevel}
-                  options={subjectLevels.map(l => ({ value: l, label: LEVEL_LABEL[l] }))}
-                />
-              </div>
-            )}
-          </div>
-
-          {!mobileAppDesign && topicFilters}
-        </aside>
-        <section className="min-w-0">
-          {mobileAppDesign && overviewDismissed && !cardsError && !levelUnbuilt ? <div className="mb-compact-practice">
-            <button type="button" className="lp-button" onClick={() => startSession()}>{dueCount > 0 ? `Start today's ${Math.min(dueCount, MARK_BANK_SESSION_SIZE)}` : 'Start a practice session'}</button>
-            <button type="button" onClick={() => changeOverview(false)}>Show overview</button>
-          </div> : <div className="lp-panel lp-practice-entry">
-          {mobileAppDesign && !cardsError && !levelUnbuilt && <button type="button" className="lp-introduction-close" aria-label="Dismiss practice overview" onClick={() => changeOverview(true)}><X size={18} /></button>}
-          <p className="lp-eyebrow">{subject.title} · {LEVEL_LABEL[level]}</p><h2 className="lp-title">{dueCount > 0 ? 'Your next practice.' : 'Make a start today.'}</h2>
-          <div className="flex gap-8 text-sm mb-2"><span><strong className="block text-xl">{cards.length}</strong>question cards</span><span><strong className="block text-xl">{coveredTopics} / {totalTopics}</strong>topics with cards</span></div>
-          {!online && (
-            <StatusNotice title="Working offline" className="mt-[18px]">
-              Reviews stay on this device and will sync when you reconnect.
-            </StatusNotice>
-          )}
-
-          {cardsError ? (
-            <StatusNotice
-              title="Couldn’t load questions"
-              tone="warning"
-              className="mt-[18px]"
-              action={{ label: 'Try again', onClick: () => setCardsAttempt(n => n + 1) }}
-            >
-              Your saved progress is safe. Check your connection and try loading this paper again.
-            </StatusNotice>
-          ) : levelUnbuilt ? (
-            <p style={{ margin: '18px 0 0', font: `400 13.5px/1.55 ${SANS}`, color: MUTED }}>
-              Cards are written one paper at a time, straight from the marking schemes.
-              This one is still being written — {builtElsewhere ?? 'try another subject or level in the meantime'}.
-            </p>
-          ) : (
-            <>
-              {/* Never a backlog. Today's work, and nothing about what was missed. */}
-              <p style={{
-                margin: '18px 0 0', font: `700 13px/1.5 ${MONO}`, color: dueCount > 0 ? INK : MUTED,
-                fontVariantNumeric: 'tabular-nums',
-              }}>
-                {dueCount > 0
-                  ? `${dueMarks} marks due · ${dueTopics} ${dueTopics === 1 ? 'topic' : 'topics'}`
-                  : 'Nothing due today'}
-              </p>
-              {dueCount === 0 && (
-                <p style={{ margin: '6px 0 0', font: `400 13px/1.5 ${SANS}`, color: MUTED }}>
-                  Choose a topic or start a fresh practice.
-                  {nextReturn && Number.isFinite(nextReturn) && (
-                    <> Next one back {new Date(nextReturn).toLocaleDateString('en-IE', { weekday: 'long' })}.</>
-                  )}
-                </p>
-              )}
-
-              <PrimaryActionButton
-                label={dueCount > 0 ? `Start today's ${Math.min(dueCount, MARK_BANK_SESSION_SIZE)}` : 'Start a practice session'}
-                onClick={() => startSession()}
-                className={`w-full ${wide ? '' : 'max-w-80'} mt-3.5`}
-              />
-
-              {cards.length > 0 && (
-                <p style={{ margin: '20px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: LABEL }}>
-                  {cards.length} questions from the {examYears} Leaving Certificate papers,
-                  each marked against the real State Examinations Commission scheme.
-                  {completePaperCorpus
-                    ? <> Every selectable response is included across {coveredTopics} examined syllabus topics.</>
-                    : <> Coverage currently spans {coveredTopics} of {totalTopics} syllabus topics.</>}
-                </p>
-              )}
-            </>
-          )}
-          </div>}
-          <h2 className="lp-title mt-7">Choose a topic</h2>
-          {mobileAppDesign && topicFilters}
-        {/* ---- the list: one card, aligned columns, hairlines not boxes ---- */}
-        {!cardsError && !levelUnbuilt && (
-          <div style={{
-            width: '100%', flex: '0 0 auto', maxWidth: '100%',
-            background: 'var(--mb-paper)', border: `1px solid ${MUTED_BORDER}`, borderRadius: 16, overflow: 'hidden',
-            boxShadow: '0 12px 34px rgba(38, 32, 27, .055)',
-          }}>
-            {cardsLoading ? (
-              <div aria-label="Loading questions" style={{ padding: '18px' }}>
-                <Eyebrow>Loading paper</Eyebrow>
-                {[0, 1, 2, 3, 4].map(i => (
-                  <div key={i} style={{ height: 54, display: 'flex', alignItems: 'center', gap: 14, borderTop: i ? `1px solid ${HAIRLINE}` : 'none' }}>
-                    <span style={{ width: 34, height: 22, borderRadius: 7, background: 'var(--mb-raised)' }} />
-                    <span style={{ width: `${52 + i * 6}%`, maxWidth: 310, height: 10, borderRadius: 999, background: 'var(--mb-raised)' }} />
-                  </div>
-                ))}
-              </div>
-            ) : visibleStrands.filter(strand => strandFilter === 'all' || strand.id === strandFilter).map(strand => ({ ...strand, topics: strand.topics.filter(topic => topic.title.toLowerCase().includes(topicQuery.trim().toLowerCase())) })).filter(strand => strand.topics.length > 0).map(strand => (
-              <section key={strand.id} id={`strand-${strand.id}`}>
-                <div className="mb-strand-header">
-                  <span className="mb-strand-title">{strand.title}</span>
-                  <span className="mb-strand-label">{strand.label}</span>
-                </div>
-
-                <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-                  {strand.topics.map((topic, ti) => {
-                    const topicCards = cardsForTopic(topic.id, cards);
-                    const total = topicMarks(topic.id, cards);
-                    const built = topicCards.length > 0;
-                    const due = topicCards.filter(c => {
-                      const m = memories[c.id];
-                      return m?.last ? isDue(c.id, m, now(), retention) : false;
-                    }).length;
-                    const tSecure = marksSecure(topicCards);
-                    const tMet = marksMet(topicCards);
-                    const dueHere = topicCards
-                      .filter(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; })
-                      .reduce((n, c) => n + c.totalMarks, 0);
-                    const nextTopicCount = built && due === 0 && tMet === 0
-                      ? sessionExerciseCount(resolveSessionQueue(topicCards, memories, now(), deck.examTs))
-                      : 0;
-                    const sessionSummary = topicSessionSummary(topicCards.length, nextTopicCount);
-
-                    return (
-                      <li key={topic.id} style={{ borderTop: ti === 0 ? 'none' : `1px solid ${HAIRLINE}` }}>
-                        <button
-                          type="button"
-                          disabled={!built}
-                          onClick={() => startSession(topic.id)}
-                          onMouseEnter={e => { if (built) e.currentTarget.style.background = 'var(--mb-raised)'; }}
-                          onMouseLeave={e => { e.currentTarget.style.background = launchingTopicId === topic.id ? 'var(--mb-raised)' : 'transparent'; }}
-                          style={{
-                            width: '100%', height: 56, display: 'flex', alignItems: 'center', gap: wide ? 16 : 12,
-                            padding: wide ? '0 18px' : '0 14px', textAlign: 'left',
-                            background: launchingTopicId === topic.id ? 'var(--mb-raised)' : 'transparent', border: 'none',
-                            cursor: built ? 'pointer' : 'default',
-                            transform: launchingTopicId === topic.id ? 'translateX(4px)' : 'translateX(0)',
-                            transition: 'background 140ms ease, transform 180ms cubic-bezier(.16, 1, .3, 1)',
-                          }}
-                        >
-                          <span style={{
-                            width: 34, height: 24, flex: '0 0 auto',
-                            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                            borderRadius: 7, background: 'var(--mb-raised)',
-                            fontFamily: SANS, fontSize: 11, fontWeight: 700,
-                            lineHeight: 'normal', letterSpacing: '.025em', color: MUTED,
-                          }}>
-                            {topic.code.replace(/^U(?=\d)/i, 'U.')}
-                          </span>
-                          <span style={{
-                            flex: 1, minWidth: 0,
-                            font: `500 14.5px/1.3 ${SANS}`, color: built ? INK : LABEL,
-                            overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
-                          }}>
-                            {topic.title}
-                          </span>
-
-                          {/* Every bar at the same x. Twenty bars scattered across
-                              twenty cards cannot be compared, which is the one
-                              thing a marks-based progress model exists to do. */}
-                          {wide && (
-                            <span style={{ width: 120, flex: '0 0 auto' }}>
-                              {built && tMet > 0 && <MarkBar secure={tSecure} met={tMet} total={total} />}
-                            </span>
-                          )}
-
-                          <span style={{
-                            width: wide ? 96 : 80, flex: '0 0 auto', textAlign: 'right',
-                            font: `700 11px/1.5 ${MONO}`, fontVariantNumeric: 'tabular-nums',
-                            // Orange is the ONE colour here, and it means "do this
-                            // now". It used to be the success green, so the same
-                            // green said "start here" and "you finished this".
-                            color: !built ? LABEL : due > 0 ? ACCENT : MUTED,
-                            whiteSpace: 'nowrap',
-                          }}>
-                            {!built
-                              ? 'Being built'
-                              : due > 0
-                                ? `${dueHere} due`
-                                : tMet > 0
-                                  ? `${tSecure} of ${total}`
-                                  /* Never a zero on a topic nobody has opened. A
-                                     first look at a subject must not be a column
-                                     of "0 of 104 marks secure". */
-                                  : (
-                                    <>
-                                      <span style={{ display: 'block' }}>{sessionSummary.primary}</span>
-                                      {sessionSummary.secondary && (
-                                        <span style={{ display: 'block', color: LABEL, fontSize: 10 }}>
-                                          {sessionSummary.secondary}
-                                        </span>
-                                      )}
-                                    </>
-                                  )}
-                          </span>
-                        </button>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </section>
-            ))}
-          </div>
-        )}
-        </section>
-      </div>
-
-      {!loaded && uid && (
-        <p style={{ maxWidth: wide ? SURFACE : COLUMN, margin: '14px auto 0', padding: '0 16px', font: `400 11.5px/1.4 ${SANS}`, color: LABEL }}>
-          Syncing your deck…
-        </p>
-      )}
-    </div>
-  );
+  return <MarkBankLibrary key={deckId} subjectId={subjectId} level={level} cards={cards} state={deck} now={now}
+    chooseSubject={chooseSubject} chooseLevel={chooseLevel} canSelectSubject={canSelectSubject}
+    onStart={startSession} busy={launchingTopicId!==null} ready={loaded&&!cardsLoading&&!cardsError}
+    loading={cardsLoading} error={cardsError} onRetry={()=>setCardsAttempt(value=>value+1)} online={online}/>;
 };
-
 export default MarkBank;

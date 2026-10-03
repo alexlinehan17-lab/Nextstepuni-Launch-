@@ -64,13 +64,13 @@ describe('Landing interactions', () => {
     expect(screen.getByRole('tab',{name:'Overview'})).toHaveAttribute('aria-selected','true');
   });
 
-  it('shows results-only on the landing page but retains Retake in the full app', async () => {
+  it('shows results-only on the landing page but retains restart in the full app', async () => {
     const view = render(<FutureFinderGlass active sub="" />);
-    await screen.findByRole('heading',{name:'Your Top Matches'});
-    expect(screen.queryByRole('button',{name:'Retake'})).not.toBeInTheDocument();
-    expect(screen.getByRole('button',{name:'How are these results calculated?'})).toBeInTheDocument();
+    await screen.findByRole('heading',{name:/^A few directions/});
+    expect(screen.queryByRole('button',{name:'Start again'})).not.toBeInTheDocument();
+    expect(screen.getByRole('button',{name:'How this works'})).toBeInTheDocument();
     view.unmount();
     render(<FutureFinderRevamped uid={DEMO_STUDENT_UID} profile={DEMO_PROFILE} />);
-    expect(await screen.findByRole('button',{name:'Retake'})).toBeInTheDocument();
+    expect(await screen.findByRole('button',{name:'Start again'})).toBeInTheDocument();
   });
 });

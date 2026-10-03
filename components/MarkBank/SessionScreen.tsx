@@ -34,7 +34,9 @@
 
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import ActionButton from '../ui/ActionButton';
-import { LogOut } from 'lucide-react';
+import { LogOut, Maximize2, Minimize2, X } from 'lucide-react';
+import KobraScope, { Button, Dialog, DialogContent, DialogTitle, DialogDescription } from '../approved-ui-runtime';
+import './mark-bank-session-paper.css';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
@@ -136,6 +138,8 @@ export interface SessionCardResult {
 }
 
 export interface SessionScreenProps {
+  /** Approved compact paper surface with a state-preserving full-screen view. */
+  paperLayout?: boolean;
   /** Resolved queue for this sitting. Snapshotted by the caller so it cannot
    *  shrink underneath the student mid-session. */
   cards: SecCard[];
@@ -2190,9 +2194,11 @@ const useTwoPane = () => {
 };
 
 const SessionScreen: React.FC<SessionScreenProps> = ({
-  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish,
+  cards, subjectLabel, reviewPoolTotal, reviewPoolLabel, onGrade, onExit, onFinish, paperLayout = false,
 }) => {
   const mobileAppDesign = useMobileAppDesign();
+  const [expanded, setExpanded] = useState(false);
+  const [drafts, setDrafts] = useState<Record<string,string>>({});
   const reduced = useReducedMotion() ?? false;
   const wide = useTwoPane();
   /* The scroller has to reserve exactly as much room as the action rail takes,
@@ -2531,7 +2537,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
      context — so a z-index of 70 on a descendant is resolved INSIDE that context
      and still loses to the app header's z-60. The takeover appeared correctly in
      the DOM and rendered underneath the header. Portalling escapes the context. */
-  return createPortal(
+  const surface = (
     /* A full-viewport takeover, not a page inside the tool shell. Review is one
        task with one action, and every mature reviewer treats it that way — Anki
        ships a fullscreen mode, RemNote drops its sidebar, Mochi dims the app.
@@ -2543,7 +2549,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
        fade whose failure mode is an invisible tool is not worth having; the
        transitions that earn their place are inside, where a stall costs one card
        rather than everything. */
-    <div className="mark-bank-theme" style={{
+    <div className={`mark-bank-theme ${paperLayout ? 'mb-paper-session' : ''}`} style={{
       /* Above the app's own z-100 chrome overlay. During a review the points
          chip and notification bell are exactly what should step aside — and the
          points chip is doubly wrong here, since Mark Bank is deliberately exempt
@@ -2555,7 +2561,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     }}>
       {/* Session bar. Full-bleed, so the work surface below reads as contained
           by a declared edge rather than adrift in a wide window. */}
-      <div style={{
+      {paperLayout ? <header className="mb-paper-session-heading">
+        <div><p className="mb-kicker">{subjectLabel} / {assessmentCard.questionRef}</p><DialogTitle>{reviewPoolLabel || subjectLabel}</DialogTitle><DialogDescription>{assessmentCard.totalMarks} marks · Question {Math.min(distinctDone+1,exerciseTotal)} of {exerciseTotal} in this review</DialogDescription></div>
+        <div><Button variant="outline" aria-label={expanded?'Contract to compact view':'Expand to full screen'} aria-pressed={expanded} onClick={()=>setExpanded(value=>!value)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}<span>{expanded?'Contract':'Expand'}</span></Button><Button ref={leaveButtonRef} variant="ghost" size="icon" aria-label="Close practice" onClick={openExitConfirmation}><X size={18}/></Button></div>
+      </header> : <div style={{
         position: 'sticky', top: 0, zIndex: 3,
         background: 'var(--mb-paper)', borderBottom: `1px solid ${HAIRLINE_2}`,
       }}>
@@ -2611,7 +2620,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         </div>
         )}
         <ProgressRail total={exerciseTotal} done={distinctDone} current={distinctDone} />
-      </div>
+      </div>}
 
       {/* The work surface. Two panes from the FIRST frame, never assembled at the
           moment of reveal — re-laying out exactly when the student starts reading
@@ -2627,7 +2636,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           which would silently kill the sticky question pane inside it. */}
       <div
         key={listeningKey ?? card.id}
-        className="mb-card-in"
+        className="mb-card-in mb-session-workspace"
+        data-focus={waysInFocusMode}
         style={{
           maxWidth: waysInFocusMode ? COLUMN : wide ? SURFACE : COLUMN,
           margin: '0 auto', padding: '38px 16px 0',
@@ -2670,7 +2680,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             reads as a fault. The rest of the screen keeps the system's 14–18px
             radii; this card alone is squared, because it is the one element
             that IS a printed exam paper. */}
-        <div style={{ position: 'relative' }}>
+        <div className="mb-session-paper" style={{ position: 'relative' }}>
           <div
             aria-hidden
             style={{
@@ -2739,7 +2749,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               />
             </>
           )}
-        <MotionDiv
+        <MotionDiv className="mb-question-sheet"
           layout={reduced ? false : true}
           transition={{ duration: 0.26, ease: EASE }}
           style={{
@@ -2819,6 +2829,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
+            {paperLayout && assessmentCard.paperFileid && <a className="mb-original-paper" href={`/?view=innovation-zone&tool=paper-trail&subject=${encodeURIComponent(assessmentCard.subjectId)}&year=${assessmentCard.year}&level=${assessmentCard.level}&lang=ev&paper=${encodeURIComponent(assessmentCard.paperFileid.endsWith('.pdf')?assessmentCard.paperFileid:assessmentCard.paperFileid+'.pdf')}`} target="_blank" rel="noopener noreferrer">Open original paper ↗</a>}
             {sourceMaterials.map((source, index) => {
               const sourceFileid = source.sourceFileid ?? assessmentCard.paperFileid;
               return sourceFileid ? (
@@ -2878,7 +2889,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       {/* The scheme pane. Present from the first frame so nothing moves on
           reveal — before it, it holds the tariff and the instruction; after, the
           marking points themselves. */}
-      <div style={{
+      <div className="mb-scheme-pane" style={{
         width: waysInFocusMode ? '100%' : wide ? SCHEME_W : '100%',
         maxWidth: '100%',
         flex: '0 0 auto',
@@ -2886,7 +2897,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
            below its sheet, so the margin allows for it in single-column mode. */
         marginTop: waysInFocusMode || wide ? 0 : 22,
       }}>
-        <MotionDiv
+        <MotionDiv className="mb-scheme-sheet"
           /* The pane still grows from the prompt to the marking points within a
              single card; `layout` eases that instead of snapping to the new size. */
           layout={reduced ? false : true}
@@ -2896,6 +2907,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             border: '1.5px solid #383838', boxShadow: '0 12px 28px rgba(38, 32, 27, .045)',
           }}
         >
+          {paperLayout && !waysInOpen && <div className="mb-paper-draft"><label htmlFor="mark-bank-draft">Your answer</label><textarea data-slot="textarea" id="mark-bank-draft" value={drafts[card.id] ?? ''} onChange={event=>setDrafts(previous=>({...previous,[card.id]:event.target.value}))} placeholder="Make a start. You can also work on paper."/></div>}
           {!revealed && !waysInOpen && (
             <div className="mb-wi-entry">
               <span>Before the scheme</span>
@@ -3251,9 +3263,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           </div>
         </div>
       )}
-    </div>,
-    document.body,
+    </div>
   );
+  return paperLayout ? <KobraScope><Dialog open onOpenChange={open=>{if(!open)openExitConfirmation();}}><DialogContent className="mb-live-session-dialog" data-expanded={expanded} showCloseButton={false} onKeyDownCapture={event=>{
+    if(event.key==='Escape' && expanded && !confirmExit && !waysInOpen){event.preventDefault();event.stopPropagation();setExpanded(false);}
+  }}>{surface}</DialogContent></Dialog></KobraScope> : createPortal(surface, document.body);
 };
 
 export default SessionScreen;

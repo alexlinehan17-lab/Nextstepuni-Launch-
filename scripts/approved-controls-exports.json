@@ -118,5 +118,9 @@
     "Tooltip",
     "TooltipTrigger",
     "TooltipContent"
+  ],
+  "components/ui/progress": [
+    "Progress",
+    "ProgressLabel"
   ]
 }

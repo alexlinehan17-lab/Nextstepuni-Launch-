@@ -19,10 +19,11 @@ describe('student Home navigation', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Continue learning' }));
     expect(select).toHaveBeenCalledWith(courses[1].id);
     expect(screen.queryByRole('button', { name: /My Direction/ })).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: /My Island/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Build your island' }));
     expect(island).toHaveBeenCalledOnce();
-    fireEvent.click(screen.getByRole('button', { name: /Launchpad/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Open your toolkit' }));
     expect(launchpad).toHaveBeenCalledOnce();
+    expect(screen.queryByRole('button', { name: 'Find a tool or task' })).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Browse all five module worlds' }));
     expect(browse).toHaveBeenCalledOnce();
   });

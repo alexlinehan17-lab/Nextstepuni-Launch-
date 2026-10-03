@@ -1,0 +1,55 @@
+.student-home .sh-learning { background:transparent; }
+.sh-learning .sh-learning-card { min-width:0; border:1px solid var(--nsu-edge); border-radius:20px; background:var(--nsu-surface); box-shadow:var(--home-card-shadow); color:var(--foreground); }
+.sh-learning .sh-continue { display:grid; grid-template-columns:115px minmax(0,1fr) 292px; column-gap:30px; row-gap:16px; align-items:center; padding:32px; }
+.sh-continue-art { grid-column:1; grid-row:1 / span 2; width:115px; height:115px; }
+.sh-learning .sh-continue-eyebrow { grid-column:2; grid-row:1; align-self:end; font-size:10px; letter-spacing:.13em; margin:0; }
+.sh-continue-copy { grid-column:2; grid-row:2; align-self:start; min-width:0; }
+.sh-learning .sh-continue-world { color:var(--muted-foreground); font-size:11px; margin:0 0 10px; }
+.sh-learning .sh-continue h2 { font:500 clamp(30px,3vw,40px)/1.13 var(--nsu-serif); letter-spacing:-.7px; margin:0 0 14px; }
+.sh-continue-subtitle { color:var(--muted-foreground); font-size:14px; line-height:1.55; margin:0; }
+.sh-continue-actions { grid-column:3; grid-row:1 / span 2; border-left:1px solid var(--border); padding-left:26px; display:flex; flex-direction:column; gap:8px; min-width:0; }
+.sh-continue-actions .mr-reading-progress { width:100%; margin:0 0 12px; }
+.sh-learning .sh-continue-actions > button { width:100%; min-height:44px; gap:10px; font-size:14px; white-space:normal; }
+.sh-learning .sh-continue-actions > .sh-worlds-action { font-size:12px; }
+.sh-learning .sh-continue-actions > button > svg { flex-shrink:0; }
+.sh-destination-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; margin-top:20px; }
+.sh-destination-card { display:grid; grid-template-columns:minmax(0,1fr) 65px; column-gap:12px; padding:23px; }
+.sh-destination-art { grid-column:2; grid-row:1; width:65px; height:65px; align-self:center; }
+.sh-destination-copy { grid-column:1; grid-row:1; min-width:0; }
+.sh-learning .sh-destination-copy h2 { font:500 27px/1.2 var(--nsu-serif); letter-spacing:-.4px; margin:0 0 9px; }
+.sh-destination-copy p { color:var(--muted-foreground); font-size:13px; line-height:1.6; margin:0; }
+.sh-learning .sh-destination-action { grid-column:1/-1; justify-content:space-between; border-top:1px solid var(--border); border-radius:0; padding:15px 0 0; margin-top:20px; min-height:44px; font-size:14px; white-space:normal; gap:12px; }
+.sh-learning .sh-destination-action > svg { flex-shrink:0; }
+/* Footer links stay on the card's paper, including the button's hover layer. */
+.student-home .sh-learning .sh-destination-action,
+.student-home .sh-learning .sh-destination-action::before { background:transparent; }
+.student-home .sh-learning .sh-destination-action:hover {
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:4px;
+}
+
+@media(max-width:1100px) {
+  .sh-learning .sh-continue { grid-template-columns:85px minmax(0,1fr) 265px; column-gap:22px; padding:26px; }
+  .sh-continue-art { width:85px; height:85px; }
+  .sh-continue-actions { padding-left:20px; }
+  .sh-destination-card { grid-template-columns:minmax(0,1fr) 48px; padding:20px; }
+  .sh-destination-art { width:48px; height:48px; }
+  .sh-learning .sh-destination-copy h2 { font-size:24px; }
+}
+@media(max-width:850px) {
+  .sh-learning .sh-continue { grid-template-columns:65px minmax(0,1fr); padding:24px; column-gap:20px; }
+  .sh-continue-art { width:65px; height:65px; }
+  .sh-continue-actions { grid-column:1/-1; grid-row:3; border-left:0; border-top:1px solid var(--border); padding:22px 0 0; }
+  .sh-continue-actions .mr-reading-progress { margin-bottom:8px; }
+  .sh-learning .sh-continue h2 { font-size:31px; }
+  .sh-destination-grid { grid-template-columns:1fr; gap:16px; }
+  .sh-destination-card { grid-template-columns:minmax(0,1fr) 66px; padding:22px; }
+  .sh-destination-art { width:66px; height:66px; }
+}
+@media(max-width:500px) {
+  .sh-learning .sh-continue { grid-template-columns:58px minmax(0,1fr); row-gap:22px; }
+  .sh-continue-art { grid-row:1; width:58px; height:58px; }
+  .sh-learning .sh-continue-eyebrow { align-self:center; font-size:9px; }
+  .sh-continue-copy { grid-column:1/-1; }
+}
