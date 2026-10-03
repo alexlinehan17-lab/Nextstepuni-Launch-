@@ -37,3 +37,16 @@ Practice retains its draft and reveal state when expanding/contracting. An expan
 practice heading measures 84px top padding with a 62px native safe area. Screenshot
 and check evidence is local in output/mobile-release/. The existing clean native
 simulator checks verify the transparent status bar in both appearances.
+
+## Release-check dependency repair
+
+CI found newly reviewed development-tool advisories. Functions now resolve the
+compatible @fastify/busboy 3.2.2 patch. Since braces has no published fix, a local
+MIT-licensed package pins the upstream proposed depth-guard fix at revision
+28d440b5dd449dbf1fe6f3506cf94ecca4d02660. Its provenance and replacement plan are
+in vendor/README.md. All 904 upstream tests and three repository security/glob
+regressions pass. Both dependency audits report zero vulnerabilities. The patch
+is confined to development tooling and is not bundled into the app.
+
+The signed iOS archive is valid; all 4,024 checked native files match production
+output. Apple lists 1.0.5 as Ready for Distribution; 1.0.6 (11) is uploading.
