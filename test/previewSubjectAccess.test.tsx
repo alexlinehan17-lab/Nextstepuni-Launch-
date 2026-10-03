@@ -37,6 +37,6 @@ describe('Landing subject access', () => {
   it('does not reopen a remembered locked Mark Bank subject in the preview', () => {
     localStorage.setItem('mb:choice:anon', JSON.stringify({subjectId:'chemistry',level:'higher'}));
     render(<SubjectAccessContext.Provider value={allowed}><MarkBank studentSubjects={[{subjectName:'Chemistry',level:'higher'}, {subjectName:'Biology',level:'higher'}]} /></SubjectAccessContext.Provider>);
-    expect(screen.getByRole('button', {name:'Choose a subject'})).toHaveTextContent('Biology');
+    expect(screen.getByRole('combobox', {name:'Choose subject'})).toHaveTextContent('Biology');
   });
 });

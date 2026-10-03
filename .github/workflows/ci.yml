@@ -36,6 +36,9 @@ jobs:
       - name: Verify component library packaging
         run: node --test scripts/stage-component-library.test.mjs
 
+      - name: Verify dependency depth guard
+        run: node --test scripts/braces-security.test.mjs
+
       - name: Lint
         run: npm run lint
 

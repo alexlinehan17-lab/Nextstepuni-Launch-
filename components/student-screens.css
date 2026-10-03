@@ -1,17 +1,17 @@
 .student-home,.direction-page,.module-completion {--student-ink:#383838;--student-paper:#fff;--student-muted:#74786d;--student-rule:#dedfd5;color:#252822;background:var(--student-paper)}
 .dark .student-home,.dark .direction-page,.dark .module-completion {--student-ink:#b4b7ac;--student-paper:#181b18;--student-muted:#b4b7ac;--student-rule:#44483f;color:#f6f5ec}
-.student-home {width:100%;max-width:1500px;margin:auto;padding:34px 42px 80px}
+.student-home {--home-card-shadow:0 2px 4px #00000005,0 8px 20px -8px #00000020;width:100%;max-width:1500px;margin:auto;padding:34px 42px 80px}
+.dark .student-home {--home-card-shadow:0 2px 4px #00000018,0 8px 20px -8px #00000050}
 .student-eyebrow {font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.19em;color:var(--student-muted)}
 .student-home h1,.student-home h2,.direction-page h1,.direction-page h2,.direction-page h3,.module-completion h1 {font-family:'Source Serif 4',Georgia,serif;font-weight:600;letter-spacing:-.035em}
 .student-home button,.direction-page button,.module-completion button {touch-action:manipulation}
 .student-home button:focus-visible,.direction-page :is(button,select):focus-visible,.module-completion button:focus-visible {outline:3px solid #b74b10;outline-offset:5px}
 .sh-date {display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--student-muted);font-size:12px}
 .sh-profile {display:none}
-.sh-hero {display:grid;grid-template-columns:1.35fr .65fr 1fr;gap:40px;align-items:center;padding:55px 0 72px}
+.sh-hero {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px;align-items:start;padding:99px 0 72px}
 .sh-greeting h1 {font-size:clamp(44px,5.5vw,84px);line-height:1.01;margin:0 0 25px}
 .sh-greeting h1 em {font-weight:500}
 .sh-greeting>p,.sh-week>p:not(.student-eyebrow) {font-size:15px;line-height:1.7;color:var(--student-muted);margin-bottom:26px}
-.sh-character {width:100%;max-width:200px;justify-self:center}
 .student-primary,.student-secondary {display:inline-flex;align-items:center;justify-content:space-between;gap:26px;min-height:54px;border:1.5px solid var(--student-ink);border-radius:8px;padding:14px 23px;font-size:15px;font-weight:600}
 .student-primary {background:#ff7915;color:#20231e;box-shadow:3px 3px 0 var(--student-ink)}
 .student-secondary {background:var(--student-paper);color:inherit}
