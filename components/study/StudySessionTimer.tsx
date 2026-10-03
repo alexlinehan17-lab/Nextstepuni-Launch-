@@ -4,6 +4,7 @@ import { MotionDiv, useReducedMotion } from '../Motion';
 import { PROMPT_AUTO_DISMISS_SECONDS, getSubjectHex } from '../../studySessionData';
 import './study-session.css';
 import type { StudyTimerAppearance } from '../../hooks/useStudyTimerAppearance';
+import { useNativeStatusBarAppearance } from '../../hooks/useNativeStatusBarAppearance';
 
 interface StudySessionTimerProps {
   appearance?: StudyTimerAppearance;
@@ -23,6 +24,7 @@ interface StudySessionTimerProps {
 const formatTime = (seconds: number) => `${Math.floor(seconds / 60).toString().padStart(2, '0')}:${Math.floor(seconds % 60).toString().padStart(2, '0')}`;
 
 export default function StudySessionTimer({ appearance = 'ink', subject, subjectColor, type, totalSeconds, elapsedSeconds, paused, onLeave, onTogglePause, prompt, onCompletePrompt, onSkipPrompt }: StudySessionTimerProps) {
+  useNativeStatusBarAppearance(appearance === 'ink' ? 'dark' : 'light');
   const remaining = Math.max(0, totalSeconds - elapsedSeconds);
   const progress = totalSeconds > 0 ? Math.min(100, elapsedSeconds / totalSeconds * 100) : 0;
   const reduceMotion = useReducedMotion();

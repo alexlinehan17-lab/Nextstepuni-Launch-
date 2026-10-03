@@ -4,19 +4,18 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import MarkBank from '../components/MarkBank/MarkBank';
 
 vi.mock('../hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => true }));
-beforeEach(() => localStorage.clear());
+beforeEach(() => { localStorage.clear(); Element.prototype.scrollIntoView = vi.fn(); });
 afterEach(() => { cleanup(); localStorage.clear(); });
 
-test('dismissing the overview keeps practice available and remembers the choice on return', async () => {
-  const props = { studentSubjects: [{ subjectName: 'Geography', level: 'higher' as const }] };
-  const first = render(<MarkBank {...props} />);
-  fireEvent.click(await screen.findByRole('button', { name: 'Dismiss practice overview' }));
-  expect(screen.queryByRole('heading', { name: 'Make a start today.' })).not.toBeInTheDocument();
-  expect(screen.getByRole('button', { name: 'Start a practice session' })).toBeEnabled();
-  first.unmount();
-  render(<MarkBank {...props} />);
-  expect(await screen.findByRole('button', { name: 'Show overview' })).toBeInTheDocument();
-  expect(screen.getByRole('button', { name: 'Start a practice session' })).toBeEnabled();
-  fireEvent.click(screen.getByRole('button', { name: 'Show overview' }));
-  expect(screen.getByRole('button', { name: 'Dismiss practice overview' })).toBeInTheDocument();
+test('the subject index keeps topic practice available without a dismissible overview', async () => {
+  render(<MarkBank studentSubjects={[{ subjectName: 'Geography', level: 'higher' }]} />);
+  const start = await screen.findByRole('button', { name: /^Start 6 questions$/ }, {timeout: 10000});
+  expect(start).toBeEnabled();
+  expect(screen.getByRole('navigation', { name: 'Subject units' })).toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: 'Dismiss practice overview' })).not.toBeInTheDocument();
+  fireEvent.change(screen.getByRole('textbox', { name: 'Search topics' }), { target: { value: 'Rock Cycle' } });
+  fireEvent.click(screen.getByRole('button', { name: /The Rock Cycle.*questions/ }));
+  fireEvent.click(screen.getByRole('button', { name: /^Start 6 questions$/ }));
+  expect(await screen.findByRole('button', { name: 'Expand to full screen' })).toBeInTheDocument();
+  expect(screen.getByRole('textbox', { name: 'Your answer' })).toBeInTheDocument();
 });

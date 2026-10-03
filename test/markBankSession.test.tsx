@@ -1124,3 +1124,19 @@ describe('a menu option claimed once cannot be claimed again', () => {
     expect(after[1].textContent).toMatch(/Already claimed above/);
   });
 });
+
+test('paper review keeps the draft and marking state across expand and contract', async () => {
+  const onGrade = vi.fn();
+  const onFinish = vi.fn();
+  render(<SessionScreen paperLayout cards={[card()]} subjectLabel="Biology" onGrade={onGrade} onFinish={onFinish} onExit={vi.fn()} />);
+  fireEvent.change(screen.getByRole('textbox', {name:'Your answer'}), {target:{value:'Oesophagus and stomach'}});
+  fireEvent.click(screen.getByRole('button', {name:'Expand to full screen'}));
+  expect(screen.getByRole('dialog')).toHaveAttribute('data-expanded', 'true');
+  fireEvent.click(screen.getByRole('button', {name:/Reveal the marking scheme/i}));
+  fireEvent.click(screen.getByRole('button', {name:'Contract to compact view'}));
+  expect(screen.getByRole('textbox', {name:'Your answer'})).toHaveValue('Oesophagus and stomach');
+  expect(screen.getByRole('dialog')).toHaveAttribute('data-expanded', 'false');
+  fireEvent.click(screen.getByRole('button', {name:'Got it'}));
+  expect(onGrade).toHaveBeenCalledOnce();
+  expect(onFinish).toHaveBeenCalledOnce();
+});

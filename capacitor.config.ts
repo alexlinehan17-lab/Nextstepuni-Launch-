@@ -4,6 +4,17 @@ const config: CapacitorConfig = {
   appId: 'com.nextstepuni.app',
   appName: 'NextStepUni',
   webDir: 'dist',
+  ios: {
+    backgroundColor: '#FFFFFF',
+    // The web app owns safe-area padding; native insets would apply it twice.
+    contentInset: 'never',
+  },
+  plugins: {
+    StatusBar: {
+      overlaysWebView: true,
+      style: 'LIGHT',
+    },
+  },
   experimental: {
     ios: {
       spm: {

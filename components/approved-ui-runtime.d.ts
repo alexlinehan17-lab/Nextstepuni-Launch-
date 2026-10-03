@@ -22,3 +22,4 @@ export { Attachment, AttachmentMedia, AttachmentContent, AttachmentTitle, Attach
 export { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator } from './approved-ui-types/components/ui/dropdown-menu';
 export { ChartContainer, ChartTooltip, ChartTooltipContent } from './approved-ui-types/components/ui/chart';
 export { Tooltip, TooltipTrigger, TooltipContent } from './approved-ui-types/components/ui/tooltip';
+export { Progress, ProgressLabel } from './approved-ui-types/components/ui/progress';

@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useReducedMotion } from "../Motion";
 import { useModal } from "../../hooks/useModal";
+import { useNativeStatusBarAppearance } from "../../hooks/useNativeStatusBarAppearance";
 import { useSettingsContext } from "../../contexts/SettingsContext";
 import {
   DAYS_OF_WEEK,
@@ -174,6 +175,7 @@ export function useSetupFlow(
       : ["welcome", "north", "schedule"].includes(draft.step)
         ? "orange"
         : "paper";
+  useNativeStatusBarAppearance(surface === "ink" ? "dark" : "light");
   const patch = (value: Partial<SetupDraft>) =>
     setDraft((prev) => ({ ...prev, ...value }));
 

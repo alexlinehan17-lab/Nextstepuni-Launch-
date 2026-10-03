@@ -9,6 +9,7 @@ import ReactDOM from 'react-dom/client';
 import { Capacitor } from '@capacitor/core';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import './index.css';
+import './native-ios.css';
 import { MotionConfig } from 'framer-motion';
 import App from './App';
 import IllustrationTheme from './components/IllustrationTheme';
@@ -22,17 +23,22 @@ import { ProgressProvider } from './contexts/ProgressContext';
 // class directly on <html>, so observing that class also covers theme changes
 // made after React has mounted (and the persisted preference loaded).
 if (Capacitor.isNativePlatform()) {
-  StatusBar.setOverlaysWebView({ overlay: false }).catch(() => {});
+  if (Capacitor.getPlatform() === 'ios') document.documentElement.classList.add('native-ios');
+  // The web app owns safe-area padding. Let its background reach
+  // behind the status bar instead of creating the plugin's default black strip.
+  StatusBar.setOverlaysWebView({ overlay: Capacitor.getPlatform() === 'ios' }).catch(() => {});
 
   const syncNativeStatusBar = () => {
-    const isDark = document.documentElement.classList.contains('dark');
-    StatusBar.setStyle({ style: isDark ? Style.Light : Style.Dark }).catch(() => {});
+    const appearance = document.documentElement.dataset.nativeStatusBarAppearance;
+    const isDark = appearance ? appearance === 'dark' : document.documentElement.classList.contains('dark');
+    // Capacitor names these after the background: Dark uses light text.
+    StatusBar.setStyle({ style: isDark ? Style.Dark : Style.Light }).catch(() => {});
   };
 
   syncNativeStatusBar();
   new MutationObserver(syncNativeStatusBar).observe(document.documentElement, {
     attributes: true,
-    attributeFilter: ['class'],
+    attributeFilter: ['class', 'data-native-status-bar-appearance'],
   });
 }
 
