@@ -1,3 +1,4 @@
+import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
 import { ArrowRight } from 'lucide-react';
 
 /**
@@ -589,7 +590,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-red-100 dark:bg-red-900/30', iconColor: 'text-red-600 dark:text-red-400',
             accentBarColor: 'bg-red-500', tagBg: 'bg-red-100 dark:bg-red-900/30', tagText: 'text-red-700 dark:text-red-400',
             hoverBorder: 'hover:border-red-400/50 dark:hover:border-red-500/40',
-            component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} /> : null,
+            component: subjectProfile ? <WarRoom onStudyTopic={selection => { queueTopicStudy(user!.uid, selection); nav.navigateToStudySession(); }} onPracticeTopic={(subjectId, topicId, level) => { queueTopicPractice(user!.uid, subjectId, topicId, level); setActiveTool('topic-atlas'); }} uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} /> : null,
         },
         {
             id: 'comeback', title: 'Comeback Engine', description: 'A realistic seven-day recovery plan built from your actual study pattern.', icon: Sunrise, needsProfile: true,
@@ -641,7 +642,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400',
             accentBarColor: 'bg-orange-500', tagBg: 'bg-orange-100 dark:bg-orange-900/30', tagText: 'text-orange-700 dark:text-orange-400',
             hoverBorder: 'hover:border-orange-400/50 dark:hover:border-orange-500/40',
-            component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} initialMode="review" initialReviewPanel="subjects" /> : null,
+            component: subjectProfile ? <WarRoom onStudyTopic={selection => { queueTopicStudy(user!.uid, selection); nav.navigateToStudySession(); }} onPracticeTopic={(subjectId, topicId, level) => { queueTopicPractice(user!.uid, subjectId, topicId, level); setActiveTool('topic-atlas'); }} uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} initialMode="review" initialReviewPanel="subjects" /> : null,
         },
         {
             id: 'points-passport', title: 'Points Passport', description: 'Your grades, points and possible next moves.', icon: Map, needsProfile: true,
@@ -682,7 +683,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-900 dark:text-emerald-300',
             accentBarColor: 'bg-emerald-800', tagBg: 'bg-emerald-100 dark:bg-emerald-900/30', tagText: 'text-emerald-900 dark:text-emerald-400',
             hoverBorder: 'hover:border-emerald-400/50 dark:hover:border-emerald-500/40',
-            component: <MarkBank uid={user?.uid} studentSubjects={subjectProfile?.subjects} />,
+            component: <MarkBank examDate={subjectProfile?.examStartDate} uid={user?.uid} studentSubjects={subjectProfile?.subjects} />,
         },
         {
             id: 'paper-trail', title: 'Paper Trail', description: 'Every SEC past paper and marking scheme — three taps away.', icon: FileSearch, needsProfile: false,

@@ -59,8 +59,8 @@ interface Props {
   subjectLabel: (id: string) => string;
   /** Re-open the feed at this subject/topic — set when returning from a
    *  "Full paper" round-trip (the parent carries it on the viewer view). */
-  restore?: { subjectId: string; subtopicId: string };
-  onOpenQuestion: (t: TopicSibling, origin: { subjectId: string; subtopicId: string }) => void;
+  restore?: { subjectId: string; subtopicId: string; level?: string };
+  onOpenQuestion: (t: TopicSibling, origin: { subjectId: string; subtopicId: string; level?: string }) => void;
   onBack: () => void;
 }
 
@@ -85,7 +85,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [subtopicId, setSubtopicId] = useState<string | null>(restore?.subjectId === subjectId ? restore.subtopicId : boot?.subjectId === subjectId ? boot.subtopicId ?? null : null);
   const [copied, pulseCopied, clearCopied] = usePulse(2000);
   const [sort, setSort] = useState<'reference' | 'busiest' | 'frequent'>('busiest');
-  const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
+  const [levelFilter, setLevelFilter] = useState<'all' | string>(restore?.subjectId === subjectId ? restore.level ?? 'all' : 'all');
   const [yearFilter, setYearFilter] = useState<'all' | number>('all');
   const [topicQuery, setTopicQuery] = useState('');
   const [revVer, setRevVer] = useState(0); // bump to re-read review-deck membership
@@ -112,7 +112,10 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
     prevLevel.current = level;
   }, [level]);
   // A new topic starts with fresh level + year filters.
-  useEffect(() => { setLevelFilter('all'); setYearFilter('all'); }, [subtopicId]);
+  useEffect(() => {
+    setLevelFilter(restore?.subjectId === subjectId && restore?.subtopicId === subtopicId ? restore.level ?? 'all' : 'all');
+    setYearFilter('all');
+  }, [subtopicId, subjectId, restore?.subjectId, restore?.subtopicId, restore?.level]);
   // Reset the topic search when switching subjects.
   useEffect(() => { setTopicQuery(''); }, [subjectId]);
   // Audited exam taxonomies have a deliberate reference order. Canonical
@@ -318,7 +321,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
                 sibling={q}
                 saved={saved}
                 onToggleReview={() => toggleReview(q)}
-                onOpenInPaper={() => onOpenQuestion(q, { subjectId, subtopicId })}
+                onOpenInPaper={() => onOpenQuestion(q, { subjectId, subtopicId, ...(levelFilter !== 'all' ? { level: levelFilter } : {}) })}
               />
             );
           })}

@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import type { StudyConfidenceLabel } from './types';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -16,23 +15,7 @@ export interface StrategyPrompt {
   prompt: string;
 }
 
-export interface StudySessionRecord {
-  id: string;
-  date: string; // YYYY-MM-DD
-  subject: string;
-  sessionType: 'new-learning' | 'practice' | 'revision';
-  plannedMinutes: number;
-  actualSeconds: number;
-  startedAt: number; // timestamp
-  completedAt: number; // timestamp
-  pointsEarned: number;
-  hadReflection: boolean;
-  strategiesShown?: string[]; // moduleIds of strategies used (auto-tracked + self-reported)
-  /** Structured debrief data used by the student dashboard. */
-  confidenceAfter?: number;
-  confidenceLabel?: StudyConfidenceLabel;
-  reflectionMode?: 'quick' | 'full';
-}
+export type { StudySessionRecord } from './utils/strategyRegistry';
 
 export interface StrategyDefinition {
   moduleId: string;

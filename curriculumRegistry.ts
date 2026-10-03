@@ -19,6 +19,7 @@ import {
   type CurriculumCategory,
   type CurriculumLevel,
 } from './curriculum';
+import { INTRODUCED_2025_SPECIFICATIONS } from './data/curriculum/introduced2025';
 import { SUBJECTS as MARK_BANK_SUBJECTS } from './components/MarkBank/deck';
 
 export type CurriculumAuthority = 'Curriculum Online' | 'NCCA' | 'SEC';
@@ -43,6 +44,8 @@ export interface CanonicalCurriculumTopic {
   code?: string;
   title: string;
   aliases?: string[];
+  /** Only restrict a topic when the official specification states a level boundary. */
+  levels?: CurriculumLevel[];
 }
 
 export interface CanonicalCurriculumGroup {
@@ -803,12 +806,12 @@ export const CURRICULUM_REDEVELOPMENT_TRANSITIONS: Record<string, CurriculumRede
     replacementName: 'History', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
   },
   'home-economics': {
-    introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
-    replacementName: 'Home Economics', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
+    introductionYear: 2028, firstExamYear: 2030, outgoingLastExamYear: 2029,
+    replacementName: 'Home Economics', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'not-before',
   },
   mathematics: {
-    introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
-    replacementName: 'Mathematics', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'confirmed',
+    introductionYear: 2028, firstExamYear: 2030, outgoingLastExamYear: 2029,
+    replacementName: 'Mathematics', sourceUrl: OFFICIAL.redevelopmentSchedule, timing: 'not-before',
   },
   music: {
     introductionYear: 2027, firstExamYear: 2029, outgoingLastExamYear: 2028,
@@ -2343,6 +2346,7 @@ function applyScheduledOutgoingBoundary(
 export const CURRICULUM_SPECIFICATIONS: CanonicalCurriculumSpecification[] = [
   ...legacySpecifications.map(patchLegacySpecification).map(applyScheduledOutgoingBoundary),
   ...redevelopedSpecifications,
+  ...INTRODUCED_2025_SPECIFICATIONS,
   business2027Specification,
   constructionTechnologySpecification,
   geography2028Specification,
@@ -2354,6 +2358,13 @@ export const CURRICULUM_SPECIFICATIONS: CanonicalCurriculumSpecification[] = [
 const normalise = (value: string) => value.trim().toLowerCase().replace(/\s+/g, ' ');
 
 const SUBJECT_ALIASES: Record<string, string> = {
+  'politics & society': 'politics-and-society',
+  'design & communication graphics': 'design-and-communication-graphics',
+  'design and communications graphics': 'design-and-communication-graphics',
+  'physics & chemistry': 'physics-and-chemistry',
+  'physics-chemistry': 'physics-and-chemistry',
+  'home-economics-s-and-s': 'home-economics',
+  'link-modules': 'lcvp-link-modules',
   maths: 'mathematics', math: 'mathematics',
   // Both spellings. Mark Bank's deck id is the hyphenated 'applied-maths' —
   // normalise() only collapses whitespace, so the spaced alias never matched
@@ -2375,7 +2386,7 @@ const SUBJECT_ALIASES: Record<string, string> = {
 export function resolveSubjectId(subject: string): string | undefined {
   const key = normalise(subject);
   const direct = CURRICULUM.find((entry) => normalise(entry.id) === key || normalise(entry.name) === key);
-  return direct?.id ?? SUBJECT_ALIASES[key];
+  return direct?.id ?? SUBJECT_ALIASES[key] ?? CURRICULUM_SPECIFICATIONS.find(spec => normalise(spec.subjectId) === key || normalise(spec.subjectName) === key)?.subjectId;
 }
 
 export function examinationYearFromDate(examDate?: string | null): number {

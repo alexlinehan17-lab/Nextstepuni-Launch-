@@ -6,6 +6,7 @@ import {
   findCanonicalTopic,
   getCurriculumCohortNotice,
   resolveCurriculumSpecification,
+  resolveSubjectId,
   specificationContainsId,
 } from '../curriculumRegistry';
 import {
@@ -60,7 +61,7 @@ describe('versioned curriculum registry', () => {
       expect(specification.lastExamYear).toBe(2026);
       expect(specification.groups[0].title).toBe(firstGroup);
       expect(specification.groups.some((group) => group.title.startsWith('Strand 1:'))).toBe(false);
-      expect(resolveCurriculumSpecification(subject, 2027)).toBeUndefined();
+      expect(resolveCurriculumSpecification(subject, 2027)?.id).toBe(`${subject === 'Ancient Greek' ? 'ancient-greek' : subject.toLowerCase()}:2027`);
     }
   });
 
@@ -193,9 +194,11 @@ describe('versioned curriculum registry', () => {
     }
 
     const mathematics = getCurriculumCohortNotice('Mathematics', 2028);
-    expect(mathematics?.title).toBe('Current specification — exams through 2028');
-    expect(mathematics?.message).toContain('first examined in 2029');
-    expect(resolveCurriculumSpecification('Mathematics', 2029)).toBeUndefined();
+    expect(mathematics?.title).toBe('Current specification — exams through 2029');
+    expect(mathematics?.message).toContain('earliest possible first examination year');
+    expect(resolveCurriculumSpecification('Mathematics', 2029)?.id).toBe('mathematics:2015');
+    expect(resolveCurriculumSpecification('Home Economics', 2029)?.id).toBe('home-economics:current');
+    expect(resolveCurriculumSpecification('Mathematics', 2030)).toBeUndefined();
 
     const english = getCurriculumCohortNotice('English', 2028);
     expect(english?.message).toContain('earliest possible first examination year');
@@ -271,15 +274,9 @@ describe('versioned curriculum registry', () => {
       for (const card of cards) {
         const subjectId = subjectForTopic.get(card.topicId);
         expect(subjectId, `${card.id}: no subject owns ${card.topicId}`).toBe(deck.subjectId);
-        // A subject whose syllabus is OUTGOING may have no record for the
-        // 2027 cohort at all, by design: Latin, Ancient Greek and Arabic are
-        // last examined in June 2026 and this registry refuses to guess the
-        // replacement taxonomy until it is verified — the classical-language
-        // test above asserts that 2027 resolves to nothing for all three. A
-        // deck built from those papers resolves against the syllabus its own
-        // papers were sat on, which is the record that exists.
-        const spec = resolveCurriculumSpecification(subjectId!, Math.max(2027, card.year))
-          ?? resolveCurriculumSpecification(subjectId!, card.year)!;
+        // Historical card metadata must remain reachable in the specification
+        // it belongs to; a new cohort must not erase original-paper identities.
+        const spec = CURRICULUM_SPECIFICATIONS.find(candidate => candidate.subjectId === resolveSubjectId(subjectId!) && findCanonicalTopic(candidate, card.topicId));
         expect(spec, `${card.id}: no specification for ${subjectId}`).toBeDefined();
         expect(findCanonicalTopic(spec, card.topicId), `${card.id}: ${card.topicId} absent from ${spec.id}`).toBeDefined();
       }

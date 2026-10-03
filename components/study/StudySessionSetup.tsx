@@ -24,6 +24,7 @@ import { PlanCard, type PlanStep } from '../approved-ui-runtime';
 import { setSoundMuted, useSoundMuted } from '../approved-ui-runtime';
 import StudySubjectPicker, { StudySubjectArtwork } from './StudySubjectPicker';
 import { SessionTodos } from './SessionTodos';
+import StudyTopicPicker from './StudyTopicPicker';
 import './study-kobra.css';
 
 type SessionType = 'new-learning' | 'practice' | 'revision';
@@ -38,6 +39,9 @@ interface StudySessionSetupProps {
   onTodosChange?: (steps: PlanStep[]) => void;
   colourfulTimer?: boolean;
   onColourfulTimerChange?: (value: boolean) => void;
+  examDate?: string | null;
+  topicIds?: string[];
+  onTopics?: (ids: string[]) => void;
   subjects: StudentSubjectProfile['subjects'];
   selectedSubject: string;
   selectedType: SessionType | '';
@@ -160,6 +164,7 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
                   )}
                 </div>
               )}
+              {props.onTopics && <StudyTopicPicker subject={selectedSubject} examDate={props.examDate} level={subjects.find(subject => subject.subjectName === selectedSubject)?.level} selected={props.topicIds ?? []} onChange={props.onTopics} />}
             </section>
             <section className="ks-section" aria-labelledby={`${id}-type`}>
               <p className="ks-eyebrow">02 / The study room</p>

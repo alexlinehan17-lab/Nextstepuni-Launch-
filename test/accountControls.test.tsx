@@ -30,8 +30,12 @@ describe('account Kobra controls', () => {
     expect(trigger).toHaveTextContent('Larkin');
     await waitFor(() => expect(trigger).toHaveFocus());
     await user.click(trigger);
+    await waitFor(() => expect(screen.getByRole('combobox', { name: 'Search schools' })).toHaveFocus());
     await user.keyboard('{Escape}');
-    expect(trigger).toHaveFocus();
+    await waitFor(() => {
+      expect(screen.queryByRole('listbox')).toBeNull();
+      expect(trigger).toHaveFocus();
+    });
     expect(screen.getByTestId('selected-school')).toHaveTextContent('larkin');
   });
   it('renames Grace Park while preserving the school account ID', async () => {

@@ -6,6 +6,8 @@
 import { act, renderHook } from '@testing-library/react';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { DEMO_STUDENT_UID } from '@/data/devStudent';
+import { studyTopicSelection } from '@/services/studyTopicHistory';
+import { resolveCurriculumSpecification } from '@/curriculumRegistry';
 import { MIN_RECORDABLE_SESSION_SECONDS, useStudySession } from '@/hooks/useStudySession';
 
 const mocks = vi.hoisted(() => ({
@@ -103,4 +105,23 @@ describe('useStudySession', () => {
     expect(result.current.elapsedSeconds).toBe(300);
     expect(result.current.canRecordSession).toBe(true);
   });
+  test('persists stable topic IDs and an exact editable split, rejecting invalid writes', async () => {
+    vi.useFakeTimers();
+    const spec = resolveCurriculumSpecification('Mathematics', 2027)!;
+    const ids = spec.groups.slice(0, 3).map(group => group.id);
+    const selection = studyTopicSelection('Mathematics', ids, '2027-06-02', 'Higher')!;
+    const { result } = renderHook(() => useStudySession(DEMO_STUDENT_UID, {}, []));
+    act(() => { result.current.startSession('Mathematics', 'revision', 30, selection); });
+    act(() => { vi.advanceTimersByTime(1_800_000); });
+    await act(async () => {
+      await expect(result.current.saveSession(0, undefined, undefined, ids.map(topicId => ({ topicId, seconds: 1800 })))).rejects.toThrow('Topic time');
+    });
+    expect(mocks.updateDemoProgress).not.toHaveBeenCalled();
+    const allocation = ids.map((topicId, index) => ({ topicId, seconds: [300, 600, 900][index] }));
+    await act(async () => { await result.current.saveSession(0, undefined, undefined, allocation); });
+    expect(result.current.todaySessions[0]).toMatchObject({ actualSeconds: 1800, subjectId: spec.subjectId, specificationId: spec.id, topicAllocations: allocation });
+    const persisted = mocks.updateDemoProgress.mock.calls[0][0]({ studySessions: [], pointsData: {} });
+    expect(persisted.studySessions[0].topicAllocations).toEqual(allocation);
+  });
+
 });

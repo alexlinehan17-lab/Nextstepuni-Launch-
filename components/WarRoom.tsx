@@ -1,3 +1,5 @@
+import type { TopicHistoryActions } from './topics/TopicDetailCard';
+import { recordedSubjectActivity } from '../services/studyTopicHistory';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -47,7 +49,7 @@ export interface WarRoomStudyBlock {
   blockId: string;
 }
 
-interface WarRoomProps {
+interface WarRoomProps extends TopicHistoryActions {
   uid: string;
   profile: StudentSubjectProfile;
   timetableCompletions: TimetableCompletions;
@@ -93,6 +95,7 @@ function calendarDayNumber(date: Date): number {
 
 const WarRoom: React.FC<WarRoomProps> = ({
   uid,
+  onStudyTopic, onPracticeTopic,
   profile,
   timetableCompletions,
   todayBlocks,
@@ -283,39 +286,9 @@ const WarRoom: React.FC<WarRoomProps> = ({
     return counts;
   }, [currentDate, studySessions, subjects, timetableCompletions]);
 
-  const hoursStudiedMap = useMemo(() => {
-    const recordedHours: Record<string, Record<string, number>> = {};
-    const timetableHours: Record<string, Record<string, number>> = {};
-    const dateKeys = new Set<string>();
-
-    for (const session of studySessions) {
-      const dateKey = session.date.slice(0, 10);
-      dateKeys.add(dateKey);
-      recordedHours[dateKey] = recordedHours[dateKey] ?? {};
-      recordedHours[dateKey][session.subject] = (recordedHours[dateKey][session.subject] ?? 0) + session.actualSeconds / 3600;
-    }
-    for (const [dateKey, blockIds] of Object.entries(timetableCompletions)) {
-      dateKeys.add(dateKey);
-      timetableHours[dateKey] = timetableHours[dateKey] ?? {};
-      for (const blockId of blockIds) {
-        const subject = blockId.split('|')[0];
-        if (subject) {
-          timetableHours[dateKey][subject] = (timetableHours[dateKey][subject] ?? 0) + blockDuration / 60;
-        }
-      }
-    }
-
-    const map: Record<string, number> = {};
-    for (const subject of subjects) {
-      map[subject.subjectName] = Array.from(dateKeys).reduce((total, dateKey) => (
-        total + Math.max(
-          recordedHours[dateKey]?.[subject.subjectName] ?? 0,
-          timetableHours[dateKey]?.[subject.subjectName] ?? 0,
-        )
-      ), 0);
-    }
-    return map;
-  }, [blockDuration, studySessions, subjects, timetableCompletions]);
+  const hoursStudiedMap = useMemo(() => Object.fromEntries(subjects.map(subject => [
+    subject.subjectName, recordedSubjectActivity(studySessions, subject.subjectName).seconds / 3600,
+  ])), [studySessions, subjects]);
 
   const reviewTabs = useMemo(() => ALL_REVIEW_TABS.filter(tab => {
     if (tab.id === 'trajectory') return hasGradeData;
@@ -520,6 +493,7 @@ const WarRoom: React.FC<WarRoomProps> = ({
                 >
                   {activeReviewPanel === 'subjects' && (
                     <CoveragePanel
+                      uid={uid} studySessions={studySessions} onStudyTopic={onStudyTopic} onPracticeTopic={onPracticeTopic}
                       subjects={subjects}
                       topicMastery={topicMastery}
                       debriefs={debriefs}

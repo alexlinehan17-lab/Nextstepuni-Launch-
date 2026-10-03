@@ -1,3 +1,5 @@
+import { markBankCurriculumMenu, cardsForCurriculumNode } from './curriculumMenu';
+import { resolveSubjectId } from '../../curriculumRegistry';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -38,7 +40,7 @@ import {
   sessionExerciseCount,
   topicSessionSummary,
 } from './sessionPlanning';
-import { LEVEL_LABEL, SUBJECTS, builtDecks, cardsForTopic, deckSize, levelsFor, loadCards, strandsFor, topicMarks, type Level } from './deck';
+import { LEVEL_LABEL, SUBJECTS, builtDecks, deckSize, levelsFor, loadCards, topicMarks, type Level } from './deck';
 import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
   writeChoice, writeLocal, type DeckState,
@@ -85,6 +87,7 @@ type Screen =
 
 export interface MarkBankProps {
   uid?: string;
+  examDate?: string | null;
   studentSubjects?: Array<{ subjectName: string; level?: string }>;
   /** Injected for tests. */
   now?: () => number;
@@ -150,8 +153,9 @@ const MARK_BANK_SUBJECT_ALIASES: Record<string, string> = {
 export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjects']): { subjectId: string; level: Level } | null {
   for (const profileSubject of studentSubjects ?? []) {
     const raw = normaliseSubjectName(profileSubject.subjectName);
+    const canonical = resolveSubjectId(profileSubject.subjectName);
     const wanted = MARK_BANK_SUBJECT_ALIASES[raw] ?? raw;
-    const subject = SUBJECTS.find(candidate => normaliseSubjectName(candidate.title) === wanted);
+    const subject = SUBJECTS.find(candidate => canonical ? resolveSubjectId(candidate.id) === canonical : normaliseSubjectName(candidate.title) === wanted);
     if (!subject) continue;
     // A common-level subject has no Higher/Ordinary to read off the profile,
     // and a profile that says "Higher" for one is saying nothing about it.
@@ -163,7 +167,7 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
   return null;
 }
 
-const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => Date.now() }) => {
+const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now = () => Date.now() }) => {
   const mobileAppDesign = useMobileAppDesign();
   const overviewKey = `nsu:mark-bank-overview:${uid ?? 'guest'}`;
   const [overviewDismissed, setOverviewDismissed] = useState(() => {
@@ -312,9 +316,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     return years.length === 1 ? `${years[0]}` : `${years[0]}\u2013${years[years.length - 1]}`;
   }, [cards]);
 
+  const cohortMenu = markBankCurriculumMenu(subjectId, level, examDate, cards);
+  const topicCardsFor = (id: string, pool: typeof cards) => cardsForCurriculumNode(id, pool, cohortMenu.spec);
+
   const startSession = (topicId?: string, preparedQueue?: SecCard[]) => {
     if (launchingTopicId !== null) return;
-    const pool = topicId ? cards.filter(c => c.topicId === topicId) : cards;
+    const pool = topicId ? topicCardsFor(topicId, cards) : cards;
     if (!pool.length) return;
     const queue = preparedQueue
       ?? resolveSessionQueue(pool, memories, now(), deck.examTs);
@@ -352,9 +359,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   /* ------------------------------------------------------------ session ---- */
 
   if (screen.name === 'session') {
-    const reviewPool = screen.topicId ? cardsForTopic(screen.topicId, cards) : cards;
+    const reviewPool = screen.topicId ? topicCardsFor(screen.topicId, cards) : cards;
     const reviewPoolLabel = screen.topicId
-      ? strandsFor(subjectId)
+      ? cohortMenu.strands
         .flatMap(strand => strand.topics)
         .find(topic => topic.id === screen.topicId)?.title ?? 'this topic'
       : subject.title;
@@ -386,7 +393,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
       const resultCard = cards.find(card => card.id === result.cardId);
       return resultCard ? listeningExerciseKey(resultCard) ?? resultCard.id : result.cardId;
     })).size;
-    const nextPool = screen.topicId ? cardsForTopic(screen.topicId, cards) : cards;
+    const nextPool = screen.topicId ? topicCardsFor(screen.topicId, cards) : cards;
     const nextQueue = resolveSessionQueue(nextPool, memories, now(), deck.examTs);
     const nextAction = nextSessionActionLabel(
       sessionExerciseCount(nextQueue),
@@ -472,8 +479,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
      Once the subject and level are remembered, the home screen's whole job is one
      readout and one button — that is a rail, not a screen. */
   const dueCount = dueIds.length;
-  const strands = strandsFor(subjectId);
-  const coveredTopics = strands.flatMap(strand => strand.topics).filter(topic => cardsForTopic(topic.id, cards).length > 0).length;
+  const strands = cohortMenu.strands;
+  const coveredTopics = strands.flatMap(strand => strand.topics).filter(topic => topicCardsFor(topic.id, cards).length > 0).length;
   const totalTopics = strands.reduce((sum, strand) => sum + strand.topics.length, 0);
   // English is reconciled against every selectable response in all twenty
   // 2021–2025 papers. Empty taxonomy rows there mean "not examined in this
@@ -485,12 +492,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     ? strands
       .map(strand => ({
         ...strand,
-        topics: strand.topics.filter(topic => cardsForTopic(topic.id, cards).length > 0),
+        topics: strand.topics.filter(topic => topicCardsFor(topic.id, cards).length > 0),
       }))
       .filter(strand => strand.topics.length > 0)
     : strands;
   const dueTopics = strands.flatMap(s => s.topics).filter(t => {
-    const tc = cardsForTopic(t.id, cards);
+    const tc = topicCardsFor(t.id, cards);
     return tc.some(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; });
   }).length;
   const dueMarks = cards
@@ -560,7 +567,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
             <button type="button" onClick={() => changeOverview(false)}>Show overview</button>
           </div> : <div className="lp-panel lp-practice-entry">
           {mobileAppDesign && !cardsError && !levelUnbuilt && <button type="button" className="lp-introduction-close" aria-label="Dismiss practice overview" onClick={() => changeOverview(true)}><X size={18} /></button>}
-          <p className="lp-eyebrow">{subject.title} · {LEVEL_LABEL[level]}</p><h2 className="lp-title">{dueCount > 0 ? 'Your next practice.' : 'Make a start today.'}</h2>
+          <p className="lp-eyebrow">{subject.title} · {LEVEL_LABEL[level]}</p><p className="mb-specification-note">{cohortMenu.current ? `Your syllabus: ${cohortMenu.spec?.title}.` : 'The current cohort map is being verified.'} Questions retain their original paper year. Original paper topics stay available below.</p><h2 className="lp-title">{dueCount > 0 ? 'Your next practice.' : 'Make a start today.'}</h2>
           <div className="flex gap-8 text-sm mb-2"><span><strong className="block text-xl">{cards.length}</strong>question cards</span><span><strong className="block text-xl">{coveredTopics} / {totalTopics}</strong>topics with cards</span></div>
           {!online && (
             <StatusNotice title="Working offline" className="mt-[18px]">
@@ -648,7 +655,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
 
                 <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
                   {strand.topics.map((topic, ti) => {
-                    const topicCards = cardsForTopic(topic.id, cards);
+                    const topicCards = topicCardsFor(topic.id, cards);
                     const total = topicMarks(topic.id, cards);
                     const built = topicCards.length > 0;
                     const due = topicCards.filter(c => {

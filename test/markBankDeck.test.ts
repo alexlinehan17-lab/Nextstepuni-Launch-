@@ -741,6 +741,10 @@ describe('the taxonomy is the redeveloped specification', () => {
       // Physical Education files its cards under the LCPE specification's own
       // two strands and its physical activity areas.
       'physical-education': 'physical-education-',
+      accounting: 'accounting-',
+      music: 'music-',
+      'politics-and-society': 'politics-and-society-',
+      'physics-and-chemistry': 'physics-and-chemistry-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

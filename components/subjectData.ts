@@ -121,11 +121,15 @@ export const LC_SUBJECTS: LCSubject[] = [
   { name: 'Spanish', group: 'languages' },
   { name: 'Italian', group: 'languages' },
   { name: 'Japanese', group: 'languages' },
+  { name: 'Latin', group: 'languages' },
+  { name: 'Ancient Greek', group: 'languages' },
+  { name: 'Arabic', group: 'languages' },
   // STEM
   { name: 'Mathematics', group: 'stem', isMaths: true },
   { name: 'Applied Maths', group: 'stem' },
   { name: 'Physics', group: 'stem' },
   { name: 'Chemistry', group: 'stem' },
+  { name: 'Physics & Chemistry', group: 'stem' },
   { name: 'Biology', group: 'stem' },
   { name: 'Computer Science', group: 'stem' },
   { name: 'Ag Science', group: 'stem' },
@@ -139,6 +143,7 @@ export const LC_SUBJECTS: LCSubject[] = [
   { name: 'Politics & Society', group: 'humanities' },
   { name: 'Religious Education', group: 'humanities' },
   { name: 'Classical Studies', group: 'humanities' },
+  { name: 'Climate Action and Sustainable Development', group: 'humanities' },
   // Practical
   { name: 'Home Economics', group: 'practical' },
   { name: 'Construction Studies', group: 'practical' },
@@ -148,7 +153,7 @@ export const LC_SUBJECTS: LCSubject[] = [
   // Creative
   { name: 'Art', group: 'creative' },
   { name: 'Music', group: 'creative' },
-  { name: 'Design & Communication Graphics', group: 'creative' },
+  { name: 'Drama, Film and Theatre Studies', group: 'creative' },
 ];
 
 export const SUBJECT_GROUP_LABELS: Record<LCSubject['group'], string> = {

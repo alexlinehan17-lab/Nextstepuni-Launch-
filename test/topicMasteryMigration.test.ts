@@ -1,5 +1,6 @@
 /** @license SPDX-License-Identifier: Apache-2.0 */
 import { describe, expect, it } from 'vitest';
+import { resolveCurriculumSpecification } from '../curriculumRegistry';
 import type { TopicMasteryMap } from '../types';
 import {
   migrateTopicMastery,
@@ -52,4 +53,13 @@ describe('topic mastery v2 migration', () => {
     expect(Object.values(merged.topics)[0].confidence).toBe('shaky');
     expect(merged.unresolved.Biology['My own revision topic']).toBeDefined();
   });
+  it('preserves individual-topic confidence through legacy projection and reload', () => {
+    const spec = resolveCurriculumSpecification('Politics & Society', 2027)!;
+    const topic = spec.groups[0].topics[0];
+    const updated = upsertCanonicalMastery(migrateTopicMastery(undefined), 'Politics & Society', topic.title, { confidence: 'solid', updatedAt: 40, source: 'manual' }, '2027-06-02', topic.id);
+    const reloaded = migrateTopicMastery(projectTopicMastery(updated), '2027-06-02');
+    expect(reloaded.topics).toEqual(updated.topics);
+    expect(reloaded.unresolved).toEqual({});
+  });
+
 });

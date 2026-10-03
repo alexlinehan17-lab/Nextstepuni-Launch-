@@ -7,6 +7,7 @@
  */
 
 import type { StudyConfidenceLabel } from '../types';
+import type { StudyTopicAllocation } from '../types/studyTopics';
 
 export interface StrategyDefinition {
   moduleId: string;
@@ -30,6 +31,9 @@ export interface StudySessionRecord {
   id: string;
   date: string;
   subject: string;
+  subjectId?: string;
+  specificationId?: string;
+  topicAllocations?: StudyTopicAllocation[];
   sessionType: 'new-learning' | 'practice' | 'revision';
   plannedMinutes: number;
   actualSeconds: number;
