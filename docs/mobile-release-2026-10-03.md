@@ -1,6 +1,6 @@
 # Mobile release reconciliation — 3 October 2026
 
-Candidate: iOS 1.0.6, build 11. Upload and submission are pending App Store Connect verification.
+Candidate: iOS 1.0.6, build 12. App Store submission is pending.
 
 The candidate includes main through 4859336b, including account/school registration,
 Signature cards, restored onboarding/learning/Progress/Planner/Study/Paper Trail,
@@ -49,4 +49,4 @@ regressions pass. Both dependency audits report zero vulnerabilities. The patch
 is confined to development tooling and is not bundled into the app.
 
 The signed iOS archive is valid; all 4,024 checked native files match production
-output. Apple lists 1.0.5 as Ready for Distribution; 1.0.6 (11) is uploading.
+output. Apple lists 1.0.5 as Ready for Distribution; Build 11 uploaded successfully, then a clean dependency installation changed generated chunk output. Build 12 supersedes it and is rebuilt from the final lockfile for submission.
