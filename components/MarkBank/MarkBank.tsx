@@ -1,3 +1,5 @@
+import { markBankCurriculumMenu, cardsForCurriculumNode } from './curriculumMenu';
+import { resolveSubjectId } from '../../curriculumRegistry';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -20,7 +22,6 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { libraryCardsForTopic, libraryGroups } from './libraryGroups';
 import MarkBankLibrary from './MarkBankLibrary';
 import { useSubjectAccess } from '../launchpad/SubjectAccess';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
@@ -68,6 +69,7 @@ type Screen =
 
 export interface MarkBankProps {
   uid?: string;
+  examDate?: string | null;
   studentSubjects?: Array<{ subjectName: string; level?: string }>;
   /** Injected for tests. */
   now?: () => number;
@@ -107,8 +109,9 @@ const MARK_BANK_SUBJECT_ALIASES: Record<string, string> = {
 export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjects']): { subjectId: string; level: Level } | null {
   for (const profileSubject of studentSubjects ?? []) {
     const raw = normaliseSubjectName(profileSubject.subjectName);
+    const canonical = resolveSubjectId(profileSubject.subjectName);
     const wanted = MARK_BANK_SUBJECT_ALIASES[raw] ?? raw;
-    const subject = SUBJECTS.find(candidate => normaliseSubjectName(candidate.title) === wanted);
+    const subject = SUBJECTS.find(candidate => canonical ? resolveSubjectId(candidate.id) === canonical : normaliseSubjectName(candidate.title) === wanted);
     if (!subject) continue;
     // A common-level subject has no Higher/Ordinary to read off the profile,
     // and a profile that says "Higher" for one is saying nothing about it.
@@ -120,7 +123,7 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
   return null;
 }
 
-const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => Date.now() }) => {
+const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, examDate, now = () => Date.now() }) => {
   const canSelectSubject = useSubjectAccess();
   /* Read synchronously on mount. A Chemistry Ordinary student must never watch
      the tool open on Biology Higher and correct it — that is two clicks every
@@ -224,9 +227,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   const memories = deck.cards;
   const retention = retentionFor(now(), deck.examTs);
 
+  const cohortMenu = useMemo(() => markBankCurriculumMenu(subjectId, level, examDate, cards), [subjectId, level, examDate, cards]);
+  const topicCardsFor = (id: string, pool: SecCard[]) => cardsForCurriculumNode(id, pool, cohortMenu.spec);
+
   const startSession = (topicId?: string, preparedQueue?: SecCard[]) => {
     if (launchingTopicId !== null) return;
-    const pool = topicId ? libraryCardsForTopic(topicId, cards) : cards;
+    const pool = topicId ? topicCardsFor(topicId, cards) : cards;
     if (!pool.length) return;
     const queue = preparedQueue
       ?? resolveSessionQueue(pool, memories, now(), deck.examTs);
@@ -264,9 +270,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   /* ------------------------------------------------------------ session ---- */
 
   if (screen.name === 'session') {
-    const reviewPool = screen.topicId ? libraryCardsForTopic(screen.topicId, cards) : cards;
+    const reviewPool = screen.topicId ? topicCardsFor(screen.topicId, cards) : cards;
     const reviewPoolLabel = screen.topicId
-      ? libraryGroups(subjectId, cards)
+      ? cohortMenu.strands
         .flatMap(strand => strand.topics)
         .find(topic => topic.id === screen.topicId)?.title ?? 'this topic'
       : subject.title;
@@ -299,7 +305,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
       const resultCard = cards.find(card => card.id === result.cardId);
       return resultCard ? listeningExerciseKey(resultCard) ?? resultCard.id : result.cardId;
     })).size;
-    const nextPool = screen.topicId ? libraryCardsForTopic(screen.topicId, cards) : cards;
+    const nextPool = screen.topicId ? topicCardsFor(screen.topicId, cards) : cards;
     const nextQueue = resolveSessionQueue(nextPool, memories, now(), deck.examTs);
     const nextAction = nextSessionActionLabel(
       sessionExerciseCount(nextQueue),
@@ -379,7 +385,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     );
   }
 
-  return <MarkBankLibrary key={deckId} subjectId={subjectId} level={level} cards={cards} state={deck} now={now}
+  return <MarkBankLibrary key={deckId} examDate={examDate} subjectId={subjectId} level={level} cards={cards} state={deck} now={now}
     chooseSubject={chooseSubject} chooseLevel={chooseLevel} canSelectSubject={canSelectSubject}
     onStart={startSession} busy={launchingTopicId!==null} ready={loaded&&!cardsLoading&&!cardsError}
     loading={cardsLoading} error={cardsError} onRetry={()=>setCardsAttempt(value=>value+1)} online={online}/>;

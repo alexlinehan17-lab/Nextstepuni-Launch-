@@ -1,9 +1,12 @@
+import type { StudySessionRecord } from '../../utils/strategyRegistry';
+import type { TopicHistoryActions } from '../topics/TopicDetailCard';
+import { getStudyTopicOptions } from '../../services/studyTopicHistory';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import {
   AlertTriangle,
   ExternalLink,
@@ -38,7 +41,11 @@ import {
   fieldStyle,
 } from './warRoomPrimitives';
 
-interface CoveragePanelProps {
+const TopicDetailCard = lazy(() => import('../topics/TopicDetailCard'));
+
+interface CoveragePanelProps extends TopicHistoryActions {
+  uid?: string;
+  studySessions?: StudySessionRecord[];
   subjects: StudentSubjectProfile['subjects'];
   topicMastery: ReturnType<typeof useTopicMastery>;
   debriefs?: DebriefEntry[];
@@ -171,8 +178,9 @@ const CoverageRing: React.FC<{ stats: CoverageStats; subject: string }> = ({ sta
   );
 };
 
-const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, debriefs, examDate }) => {
+const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, debriefs, examDate, uid, studySessions = [], onStudyTopic, onPracticeTopic }) => {
   const [selectedSubject, setSelectedSubject] = useState(subjects[0]?.subjectName ?? '');
+  const [detailTopic, setDetailTopic] = useState<string | null>(null);
   const [newTopicName, setNewTopicName] = useState('');
   const [filter, setFilter] = useState<CoverageFilter>('all');
   const [query, setQuery] = useState('');
@@ -195,8 +203,11 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
     : undefined;
   const cohortNotice = getCurriculumCohortNotice(selectedSubject, examYear);
   const syllabusRefs = useMemo(
-    () => getSyllabusTopicRefs(selectedSubject, examDate),
-    [selectedSubject, examDate],
+    () => {
+      const allowed = new Set(getStudyTopicOptions(selectedSubject, examDate, subjects.find(item => item.subjectName === selectedSubject)?.level).map(item => item.id));
+      return getSyllabusTopicRefs(selectedSubject, examDate).filter(ref => allowed.has(ref.id));
+    },
+    [selectedSubject, examDate, subjects],
   );
 
   const officialTopics = useMemo<TopicEntry[]>(() => {
@@ -230,7 +241,8 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
   const allTopics = useMemo(() => [...officialTopics, ...customTopics], [officialTopics, customTopics]);
 
   const allSubjectStats = useMemo(() => subjects.map(subject => {
-    const refs = getSyllabusTopicRefs(subject.subjectName, examDate);
+    const allowed = new Set(getStudyTopicOptions(subject.subjectName, examDate, subject.level).map(topic => topic.id));
+    const refs = getSyllabusTopicRefs(subject.subjectName, examDate).filter(ref => allowed.has(ref.id));
     const subjectTopics = topicMastery.getSubjectTopics(subject.subjectName);
     const canonical = topicMastery.getCanonicalSubjectTopics(subject.subjectName);
     const entries = refs.map(ref => {
@@ -485,6 +497,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
         </section>
       )}
 
+      {verifiedSpecification && <button type="button" className="text-xs underline underline-offset-4" onClick={() => setDetailTopic('')}>View subject learning record</button>}
       {cohortNotice && (
         <section
           className="rounded-[14px] border p-4 sm:p-5"
@@ -691,6 +704,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
                           </span>
                         </span>
                       </button>
+                      {!group.isCustom && <button type="button" className="px-4 pb-3 text-xs underline underline-offset-4" onClick={() => setDetailTopic(topic.id)}>View learning record</button>}
                       <button
                         type="button"
                         onClick={event => { event.stopPropagation(); resetTopic(topic.name); }}
@@ -752,6 +766,7 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
       <p className="border-t border-[var(--outline-soft)] pt-4 text-[10px] leading-4 text-[var(--ink-muted)]">
         Curriculum notice: this is a planning and confidence tool, not an official publication. Topic maps and published assessment percentages come from the cohort-specific NCCA / Curriculum Online specification. Prescribed texts, annual briefs, project instructions and temporary SEC assessment arrangements can change; confirm those with your teacher and the SEC for your exam year.
       </p>
+      {detailTopic !== null && <Suspense fallback={<p role="status">Opening your learning record…</p>}><TopicDetailCard uid={uid} subject={selectedSubject} nodeId={detailTopic} examDate={examDate} level={subjects.find(item => item.subjectName === selectedSubject)?.level} sessions={studySessions} mastery={topicMastery.canonicalMastery} onConfidence={(subject, name, confidence, id) => topicMastery.setTopicConfidence(subject, name, confidence, 'manual', id)} onStudyTopic={onStudyTopic} onPracticeTopic={onPracticeTopic} onClose={() => setDetailTopic(null)} /></Suspense>}
     </div>
   );
 };

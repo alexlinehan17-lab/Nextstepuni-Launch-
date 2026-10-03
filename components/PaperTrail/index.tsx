@@ -1,3 +1,4 @@
+import { peekTopicPractice, clearTopicPractice } from '../../utils/topicLaunch';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -146,7 +147,7 @@ let bootApplied = false;
 
 /** A Topic Vault feed launch origin — closing the viewer returns here instead
  *  of the subject paper list, so a "Full paper" round-trip keeps the feed. */
-type VaultOrigin = { subjectId: string; subtopicId: string };
+type VaultOrigin = { subjectId: string; subtopicId: string; level?: string };
 
 type View =
   | { v: 'home' }
@@ -213,7 +214,11 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const { state, isLoaded, recordRecent, updatePage, setFilters, finishReading } = usePaperFinder(uid);
   const junior = studentCycle === 'junior-cycle';
 
-  const [view, setView] = useState<View>(initialView === 'revise' ? { v: 'revise' } : { v: 'home' });
+  const [view, setView] = useState<View>(() => {
+    const launch = peekTopicPractice(uid);
+    return launch ? { v: 'revise', restore: launch } : initialView === 'revise' ? { v: 'revise' } : { v: 'home' };
+  });
+  useEffect(() => { clearTopicPractice(uid); }, [uid]);
   const [paperEntryPending, setPaperEntryPending] = useState(() => !bootApplied && !!getBootParam('paper'));
   const [level, setLevel] = useState<PaperLevel | null>(null);
   const [lang, setLang] = useState<PaperLang | null>(null);

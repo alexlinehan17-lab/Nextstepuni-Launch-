@@ -1,3 +1,4 @@
+import { queueTopicStudy, queueTopicPractice } from '../utils/topicLaunch';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -520,6 +521,9 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     return (
       <Suspense fallback={<LoadingSpinner variant="compact" label="Opening your progress" />}>
         <DashboardView
+          uid={user.uid}
+          onStudyTopic={selection => { queueTopicStudy(user.uid, selection); handleGoToStudy(); }}
+          onPracticeTopic={(subjectId, topicId, level) => { queueTopicPractice(user.uid, subjectId, topicId, level); nav.navigateToInnovationZone('topic-atlas'); }}
           userProgress={userProgress}
           allCourses={studentCourses}
           categoryTitles={categoryTitles}

@@ -1,0 +1,17 @@
+.topic-history-section { border-top: 1px solid var(--outline-soft); padding-top: 1.5rem; margin-top: 1.5rem; }
+.topic-history-section h3 { font: 600 1.45rem var(--font-serif, Georgia, serif); margin-bottom: .5rem; }
+.topic-history-section p { color: var(--ink-secondary); font-size: .875rem; line-height: 1.65; margin: .5rem 0; }
+.topic-history-total { display: block; font-size: 1.6rem; margin: .75rem 0; }
+.topic-history-section ul { list-style: none; padding: 0; }
+.topic-history-section li { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: space-between; padding: .85rem 0; border-bottom: 1px solid var(--outline-soft); font-size: .85rem; }
+.topic-confidence-options { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+.topic-confidence-options button { border: 1px solid var(--outline-soft); padding: .65rem 1rem; border-radius: .5rem; }
+.topic-confidence-options button[aria-pressed=true] { background: var(--ink-primary); color: var(--surface-paper); }
+.topic-practice-links button { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: space-between; width: 100%; text-align: left; }
+.topic-history-panel { padding: 1.5rem; border: 1px solid var(--outline-soft); border-radius: .75rem; background: var(--surface-paper); color: var(--ink-primary); }
+.topic-history-panel h3 { font: 600 1.5rem var(--font-serif, Georgia, serif); }
+.topic-history-panel label { display: grid; gap: .5rem; margin: 1rem 0; }
+.topic-history-panel select { padding: .75rem; border: 1px solid var(--outline-soft); background: var(--surface-paper); color: inherit; border-radius: .5rem; width: 100%; }
+
+.topic-record-picker { display: grid; gap: .5rem; font-size: .875rem; font-weight: 600; }
+.topic-record-picker select { width: 100%; border: 1px solid var(--outline-soft); border-radius: .5rem; background: var(--surface-paper); color: inherit; padding: .75rem; font-weight: 400; }

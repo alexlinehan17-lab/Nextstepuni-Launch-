@@ -1,10 +1,11 @@
+import { sameStudySubject } from '../../../services/studyTopicHistory';
 import { STRATEGY_REGISTRY, type StudySessionRecord } from '../../../utils/strategyRegistry';
 import type { DebriefEntry } from '../../StudyDebrief';
 import { filterSessions, getRangeBounds, parseDateKey, type DashboardRange, type ConfidenceObservation } from '../dashboardAnalytics';
 
 /** An empty selection means the entire record, including historical subjects. */
 export function selectSubjects<T extends { subject: string }>(records: T[], selected: string[]): T[] {
-  return selected.length ? records.filter(record => selected.includes(record.subject)) : records;
+  return selected.length ? records.filter(record => selected.some(subject => sameStudySubject(subject, record.subject))) : records;
 }
 
 export const subjectColours = ['#398a80', '#527fb6', '#eb692a', '#b08a35', '#bd6f89', '#9575bc', '#819199'];

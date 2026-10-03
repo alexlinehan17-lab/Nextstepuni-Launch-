@@ -1,11 +1,19 @@
 import React from 'react';
 import { afterEach, beforeEach, expect, test, vi } from 'vitest';
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import MarkBank from '../components/MarkBank/MarkBank';
 
 vi.mock('../hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => true }));
 beforeEach(() => { localStorage.clear(); Element.prototype.scrollIntoView = vi.fn(); });
 afterEach(() => { cleanup(); localStorage.clear(); });
+
+test('the mobile library uses the student cohort while keeping original paper topics labelled', async () => {
+  render(<MarkBank examDate="2027-06-02" studentSubjects={[{ subjectName: 'Latin', level: 'higher' }]} />);
+  expect(screen.getByText(/Your syllabus:.*Latin/)).toBeInTheDocument();
+  const index = screen.getByRole('navigation', { name: 'Subject units' });
+  await waitFor(() => expect(within(index).getAllByText('Original paper topics').length).toBeGreaterThan(0), { timeout: 10000 });
+  expect(within(index).getByRole('button', { name: /Latin Language/ })).toBeInTheDocument();
+});
 
 test('the subject index keeps topic practice available without a dismissible overview', async () => {
   render(<MarkBank studentSubjects={[{ subjectName: 'Geography', level: 'higher' }]} />);

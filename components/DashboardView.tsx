@@ -1,3 +1,6 @@
+import { sameStudySubject } from '../services/studyTopicHistory';
+import TopicHistoryPanel from './topics/TopicHistoryPanel';
+import type { TopicHistoryActions } from './topics/TopicDetailCard';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -89,7 +92,8 @@ interface QuestSummary {
   isOnboarding: boolean;
 }
 
-interface DashboardViewProps {
+interface DashboardViewProps extends TopicHistoryActions {
+  uid?: string;
   userProgress: UserProgress;
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
@@ -182,6 +186,7 @@ const Panel: React.FC<{
 };
 
 const DashboardView: React.FC<DashboardViewProps> = ({
+  uid, onStudyTopic, onPracticeTopic,
   userProgress,
   allCourses,
   categoryTitles: _categoryTitles,
@@ -270,7 +275,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
     for (const debrief of studyDebriefs) if (debrief.subject) values.add(debrief.subject);
     for (const observation of allConfidence) if (observation.subject) values.add(observation.subject);
     for (const mock of mockResults) for (const entry of mock.entries) values.add(entry.subjectName);
-    return [...values].sort((a, b) => a.localeCompare(b));
+    return [...values].filter((name, index, names) => names.findIndex(other => sameStudySubject(name, other)) === index).sort((a, b) => a.localeCompare(b));
   }, [studentProfile, studySessions, studyDebriefs, allConfidence, mockResults]);
 
   const visibleSubjects = useMemo(() => selectedSubjects.length ? subjects.filter(item => selectedSubjects.includes(item)) : subjects, [subjects, selectedSubjects]);
@@ -568,6 +573,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 </Panel>
                 <ProgressBreakdown kind="mix" values={sessionMix} period={rangeBounds.label} className="lg:col-span-5" />
                 {subjectPanel}
+                {uid && studentProfile && <TopicHistoryPanel uid={uid} profile={studentProfile} sessions={studySessions} onStudyTopic={onStudyTopic} onPracticeTopic={onPracticeTopic} />}
                 {methodsPanel}
               </>
             )}

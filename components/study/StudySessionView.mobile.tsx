@@ -1,3 +1,7 @@
+import { peekTopicStudy, clearTopicStudy } from '../../utils/topicLaunch';
+import { sameStudySubject, sessionTopicAllocations } from '../../services/studyTopicHistory';
+import type { StudyTopicAllocation } from '../../types/studyTopics';
+import { studyTopicSelection } from '../../services/studyTopicHistory';
 import { readPlannerTodos } from '../launchpad/plannerTodos';
 /**
  * @license
@@ -105,7 +109,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   dismissedGuides,
   onDismissGuide,
   weeklyChallenge,
-  timetableBlock,
+  timetableBlock: suppliedTimetableBlock,
   onTimetableBlockComplete,
   todayBlocks = [],
   onStudyBlock,
@@ -117,7 +121,17 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const isDemo = user.uid === DEMO_STUDENT_UID;
 
   // Setup selections — pre-fill from timetable block if provided
-  const [selectedSubject, setSelectedSubject] = useState(timetableBlock?.subject ?? '');
+  const [topicLaunch, setTopicLaunch] = useState(() => peekTopicStudy(user.uid));
+  const timetableBlock = topicLaunch ? null : suppliedTimetableBlock;
+  const launchSubject = studentProfile?.subjects.find(item => topicLaunch && sameStudySubject(item.subjectName, topicLaunch.subjectId));
+  const [selectedSubject, setSelectedSubject] = useState(launchSubject?.subjectName ?? timetableBlock?.subject ?? '');
+  const [selectedTopicIds, setSelectedTopicIds] = useState<string[]>(() => {
+    const selected = launchSubject && topicLaunch ? studyTopicSelection(launchSubject.subjectName, topicLaunch.topicIds, studentProfile?.examStartDate, launchSubject.level) : undefined;
+    return selected?.specificationId === topicLaunch?.specificationId ? selected?.topicIds ?? [] : [];
+  });
+  const previousSubject = useRef(selectedSubject);
+  useEffect(() => { if (previousSubject.current !== selectedSubject) setSelectedTopicIds([]); previousSubject.current = selectedSubject; }, [selectedSubject]);
+  useEffect(() => { clearTopicStudy(user.uid); }, [user.uid]);
   const [selectedType, setSelectedType] = useState<'new-learning' | 'practice' | 'revision' | ''>(timetableBlock?.sessionType ?? '');
   const [sessionTodos, setSessionTodos] = useState<PlanStep[] | null>(() => timetableBlock ? readPlannerTodos(user.uid, timetableBlock.dateKey, timetableBlock.blockId) : null);
   const [selectedMinutes, setSelectedMinutes] = useState<number>(timetableBlock?.durationMinutes ?? 0);
@@ -247,7 +261,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   const handleStart = () => {
     if (!canStart || !selectedType) return;
-    session.startSession(selectedSubject, selectedType, selectedMinutes);
+    session.startSession(selectedSubject, selectedType, selectedMinutes, studyTopicSelection(selectedSubject, selectedTopicIds, studentProfile?.examStartDate, subjects.find(subject => subject.subjectName === selectedSubject)?.level));
   };
 
   // Auto-complete timetable block after saving session
@@ -273,11 +287,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   const [reflectionMode, setReflectionMode] = useState<'quick' | 'full'>('quick');
 
-  const handleSaveWithReflection = async (reflectionText: string) => {
+  const handleSaveWithReflection = async (reflectionText: string, allocations?: StudyTopicAllocation[]) => {
     if (!session.canRecordSession) {
       session.cancelSession();
       return;
     }
+    sessionTopicAllocations(session.topicSelection, session.elapsedSeconds, allocations);
     const bonus = reflectionMode === 'quick' ? QUICK_DEBRIEF_POINTS : FULL_REFLECTION_POINTS;
     const timestamp = Date.now();
     const [confidence, ...reflectionParts] = reflectionText.split('|');
@@ -325,7 +340,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         confidenceAfter,
         confidenceLabel,
         reflectionMode,
-      });
+      }, allocations);
       completeTimetableBlock();
       pointsReload();
       onStrategyMasteryRecompute?.();
@@ -341,14 +356,14 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     }
   };
 
-  const handleSkipReflection = async () => {
+  const handleSkipReflection = async (allocations?: StudyTopicAllocation[]) => {
     if (!session.canRecordSession) {
       session.cancelSession();
       return;
     }
     setIsSaving(true);
     try {
-      await session.saveSession(0, selectedStrategies);
+      await session.saveSession(0, selectedStrategies, undefined, allocations);
       completeTimetableBlock();
       pointsReload();
       onStrategyMasteryRecompute?.();
@@ -413,6 +428,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           onColourfulTimerChange={value => setTimerAppearance(value ? 'layers' : 'ink')}
           subjects={subjects}
           selectedSubject={selectedSubject}
+          examDate={studentProfile?.examStartDate}
+          topicIds={selectedTopicIds}
+          onTopics={setSelectedTopicIds}
           selectedType={selectedType}
           selectedMinutes={selectedMinutes}
           onSubject={setSelectedSubject}
@@ -420,6 +438,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           onMinutes={setSelectedMinutes}
           todayBlocks={computedTodayBlocks}
           onBlock={block => {
+            setTopicLaunch(undefined);
             if (onStudyBlock) onStudyBlock(block);
             else {
               setSelectedSubject(block.subject);
@@ -578,6 +597,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     }
 
     return <StudySessionFinish
+      topicSelection={session.topicSelection}
       subject={session.subject} elapsedSeconds={session.elapsedSeconds}
       plannedSeconds={session.totalDuration} practice={SESSION_TYPE_CONFIG[session.sessionType].label}
       character={user.avatar} basePoints={session.basePointsEarned}

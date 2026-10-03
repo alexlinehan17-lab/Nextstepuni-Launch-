@@ -70,3 +70,5 @@
 .mb-live-route .mb-library{max-width:none;padding:0 0 40px}.mb-live-route .mb-search input{border:0;box-shadow:none;padding:0;height:auto}.mb-live-route .rs-art{object-fit:contain}.mb-live-route .mb-start{min-height:44px}
 
 .nsu-kobra.mb-live-route{background:transparent}.mb-live-route .mb-search input{background:transparent;color:var(--foreground)}
+
+.mb-contents nav button .mb-archive-label{display:block;font-size:9px;line-height:1.5;margin-top:3px;color:var(--mb-muted);font-weight:400}

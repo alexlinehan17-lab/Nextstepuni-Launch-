@@ -7,7 +7,11 @@ import React from 'react';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import StudySessionView from '@/components/study/StudySessionView';
-import { createDemoStudentSession } from '@/data/devStudent';
+import { createDemoStudentSession, createDemoStudentProfile } from '@/data/devStudent';
+import { resolveCurriculumSpecification } from '@/curriculumRegistry';
+import { studyTopicSelection } from '@/services/studyTopicHistory';
+import { queueTopicStudy, peekTopicStudy, clearTopicStudy } from '@/utils/topicLaunch';
+import type { StudyTopicSelection } from '@/types/studyTopics';
 
 const mocks = vi.hoisted(() => ({
   endSession: vi.fn(),
@@ -19,6 +23,8 @@ const mocks = vi.hoisted(() => ({
   resetSession: vi.fn(),
   canRecordSession: true,
   mobile: false,
+  elapsedSeconds: 60,
+  topicSelection: undefined as StudyTopicSelection | undefined,
 }));
 
 vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => mocks.mobile }));
@@ -30,7 +36,8 @@ vi.mock('@/hooks/useStudySession', () => ({
     subject: 'Mathematics',
     sessionType: 'revision',
     plannedMinutes: 25,
-    elapsedSeconds: 60,
+    elapsedSeconds: mocks.elapsedSeconds,
+    topicSelection: mocks.topicSelection,
     totalDuration: 1500,
     currentPrompt: null,
     promptShownAt: 0,
@@ -79,6 +86,9 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     localStorage.clear();
     mocks.phase = 'active';
     mocks.canRecordSession = true;
+    mocks.elapsedSeconds = 60;
+    mocks.topicSelection = undefined;
+    clearTopicStudy(createDemoStudentSession().uid);
   });
 
   test('a paused session shows the break and resumes through the existing timer action', () => {
@@ -101,7 +111,7 @@ describe.each([false, true])('study-session exit choices (mobile: %s)', mobile =
     fireEvent.click(screen.getByRole('button', { name: 'Save session' }));
     await waitFor(() => expect(mocks.saveSession).toHaveBeenCalledWith(10, [], {
       confidenceAfter: 4, confidenceLabel: 'good', reflectionMode: 'quick',
-    }));
+    }, undefined));
     expect(mocks.resetSession).toHaveBeenCalledOnce();
   });
 
@@ -160,6 +170,9 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     mocks.resumeSession.mockReset();
     mocks.saveSession.mockClear();
     mocks.resetSession.mockReset();
+    mocks.elapsedSeconds = 60;
+    mocks.topicSelection = undefined;
+    clearTopicStudy(createDemoStudentSession().uid);
     localStorage.clear();
   });
 
@@ -190,6 +203,43 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '35' } });
     fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
-    expect(mocks.startSession).toHaveBeenCalledWith('Mathematics', 'practice', 35);
+    expect(mocks.startSession).toHaveBeenCalledWith('Mathematics', 'practice', 35, expect.objectContaining({ subjectId: 'mathematics', topicIds: [] }));
+  });
+
+  test('keeps a topic launch through StrictMode and clears it when the subject changes', () => {
+    const user = createDemoStudentSession();
+    const profile = createDemoStudentProfile();
+    const spec = resolveCurriculumSpecification('Accounting', Number(profile.examStartDate!.slice(0, 4)))!;
+    const topic = spec.groups[0].topics[0];
+    const selection = studyTopicSelection('Accounting', [topic.id], profile.examStartDate, 'higher')!;
+    queueTopicStudy(user.uid, selection);
+    render(<React.StrictMode><StudySessionView user={user} studentProfile={profile} userProgress={{}} allCourses={[]} pointsReload={vi.fn()} streak={{ currentStreak: 0, longestStreak: 0, lastActiveDate: '' }} onBack={vi.fn()} dismissedGuides={{ 'points-explainer': 'seen' }} timetableBlock={{ subject: 'Mathematics', sessionType: 'practice', durationMinutes: 45, dateKey: '2026-10-03', blockId: 'old-block' }} /></React.StrictMode>);
+    expect(screen.getByRole('button', { name: 'Study Accounting' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: `Remove ${topic.title}` })).toBeInTheDocument();
+    expect(peekTopicStudy(user.uid)).toBeUndefined();
+    fireEvent.click(screen.getByRole('radio', { name: 'Revision Recall what you know' }));
+    fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '30' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
+    expect(mocks.startSession).toHaveBeenCalledWith('Accounting', 'revision', 30, selection);
+    fireEvent.click(screen.getByRole('button', { name: 'Study Mathematics' }));
+    expect(screen.queryByRole('button', { name: `Remove ${topic.title}` })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
+    expect(mocks.startSession).toHaveBeenLastCalledWith('Mathematics', 'revision', 30, expect.objectContaining({ subjectId: 'mathematics', topicIds: [] }));
+  });
+
+  test('does not mark a stale Planner block complete when a topic session is saved', async () => {
+    const user = createDemoStudentSession();
+    const profile = createDemoStudentProfile();
+    const selection = studyTopicSelection('Mathematics', [], profile.examStartDate, 'higher')!;
+    queueTopicStudy(user.uid, selection);
+    mocks.phase = 'complete';
+    mocks.elapsedSeconds = 1500;
+    mocks.topicSelection = selection;
+    const onTimetableBlockComplete = vi.fn();
+    render(<StudySessionView user={user} studentProfile={profile} userProgress={{}} allCourses={[]} pointsReload={vi.fn()} streak={{ currentStreak: 0, longestStreak: 0, lastActiveDate: '' }} onBack={vi.fn()} timetableBlock={{ subject: 'Mathematics', sessionType: 'revision', durationMinutes: 25, dateKey: '2026-10-03', blockId: 'old-block' }} onTimetableBlockComplete={onTimetableBlockComplete} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Skip this step' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Save without a debrief' }));
+    await waitFor(() => expect(mocks.saveSession).toHaveBeenCalled());
+    expect(onTimetableBlockComplete).not.toHaveBeenCalled();
   });
 });

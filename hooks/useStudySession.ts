@@ -19,6 +19,8 @@ import {
   PROMPT_INTERVAL_SECONDS,
   PROMPT_AUTO_DISMISS_SECONDS,
 } from '../studySessionData';
+import type { StudyTopicAllocation, StudyTopicSelection } from '../types/studyTopics';
+import { equalTopicAllocations, sameStudySubject, validTopicAllocations, sessionTopicAllocations } from '../services/studyTopicHistory';
 import { analyticsDurationBucket, trackProgrammeEvent } from '../utils/programmeAnalytics';
 
 // ── Types ──────────────────────────────────────────────────
@@ -61,6 +63,7 @@ export function useStudySession(
 
   const [phase, setPhase] = useState<SessionPhase>('idle');
   const [subject, setSubject] = useState('');
+  const [topicSelection, setTopicSelection] = useState<StudyTopicSelection | undefined>();
   const [sessionType, setSessionType] = useState<'new-learning' | 'practice' | 'revision'>('new-learning');
   const [plannedMinutes, setPlannedMinutes] = useState(25);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
@@ -137,7 +140,11 @@ export function useStudySession(
 
   // ── Start ──
 
-  const startSession = useCallback((subj: string, type: 'new-learning' | 'practice' | 'revision', minutes: number) => {
+  const startSession = useCallback((subj: string, type: 'new-learning' | 'practice' | 'revision', minutes: number, topics?: StudyTopicSelection) => {
+    if (topics && (!sameStudySubject(subj, topics.subjectId) || !validTopicAllocations(topics, equalTopicAllocations(topics.topicIds, 0), 0))) {
+      throw new Error('Choose topics from the selected subject.');
+    }
+    setTopicSelection(topics ? { ...topics, topicIds: [...topics.topicIds] } : undefined);
     setSubject(subj);
     setSessionType(type);
     setPlannedMinutes(minutes);
@@ -244,6 +251,7 @@ export function useStudySession(
     setCurrentPrompt(null);
     setPromptShownAt(0);
     setPhase('idle');
+    setTopicSelection(undefined);
   }, []);
 
   // ── Complete Prompt (user marked "Done") ──
@@ -301,8 +309,10 @@ export function useStudySession(
     reflectionPoints: number = 0,
     extraStrategies?: string[],
     reflectionMetadata?: SessionReflectionMetadata,
+    allocations?: StudyTopicAllocation[],
   ): Promise<boolean> => {
     if (!uid || elapsedSeconds < MIN_RECORDABLE_SESSION_SECONDS) return false;
+    const topicAllocations = sessionTopicAllocations(topicSelection, elapsedSeconds, allocations);
 
     const now = Date.now();
     // Merge auto-tracked (prompt "Done") with self-reported strategies, deduplicated
@@ -325,6 +335,7 @@ export function useStudySession(
       hadReflection: reflectionPoints > 0,
       ...(shownModuleIds.length > 0 ? { strategiesShown: shownModuleIds } : {}),
       ...(reflectionMetadata ?? {}),
+      ...(topicSelection ? { subjectId: topicSelection.subjectId, specificationId: topicSelection.specificationId, topicAllocations } : {}),
     };
 
     const totalPoints = basePointsEarned + reflectionPoints;
@@ -375,12 +386,13 @@ export function useStudySession(
       console.error('Failed to save study session:', err);
     }
     return true;
-  }, [uid, subject, sessionType, plannedMinutes, elapsedSeconds, basePointsEarned, isDemo, updateDemoProgress]);
+  }, [uid, subject, sessionType, plannedMinutes, elapsedSeconds, basePointsEarned, isDemo, updateDemoProgress, topicSelection]);
 
   // ── Reset to idle ──
 
   const resetSession = useCallback(() => {
     setPhase('idle');
+    setTopicSelection(undefined);
     setElapsedSeconds(0);
     setCurrentPrompt(null);
     setPromptShownAt(0);
@@ -411,6 +423,7 @@ export function useStudySession(
   return {
     phase,
     subject,
+    topicSelection,
     sessionType,
     plannedMinutes,
     elapsedSeconds,

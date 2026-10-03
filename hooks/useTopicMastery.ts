@@ -118,11 +118,12 @@ export function useTopicMastery(uid: string | undefined, examDate?: string | nul
     subject: string,
     topic: string,
     confidence: UnifiedConfidence,
-    source: TopicMasteryEntry['source'] = 'manual'
+    source: TopicMasteryEntry['source'] = 'manual',
+    canonicalTopicId?: string,
   ) => {
     if (!uid) return;
     const entry = { confidence, updatedAt: Date.now(), source };
-    persist(upsertCanonicalMastery(canonicalMastery, subject, topic, entry, examDate));
+    persist(upsertCanonicalMastery(canonicalMastery, subject, topic, entry, examDate, canonicalTopicId));
   }, [uid, canonicalMastery, examDate, persist]);
 
   const importSyllabusTopics = useCallback((subject: string, examDate?: string | null) => {

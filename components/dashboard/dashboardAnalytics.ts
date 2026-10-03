@@ -1,3 +1,5 @@
+import { sameStudySubject, uniqueStudySessions } from '../../services/studyTopicHistory';
+import { resolveSubjectId, CURRICULUM_SPECIFICATIONS } from '../../curriculumRegistry';
 /**
  * Pure analytics transforms for the student dashboard.
  *
@@ -5,7 +7,6 @@
  * testable and honest about what has actually been recorded.
  */
 
-import { resolveSubjectId } from '../../curriculumRegistry';
 import type { DebriefEntry } from '../StudyDebrief';
 import type { StudyConfidenceLabel, StudyReflection, TopicMasteryV2, UnifiedMockResult } from '../../types';
 import { STRATEGY_REGISTRY, type StudySessionRecord } from '../../utils/strategyRegistry';
@@ -143,9 +144,9 @@ export function filterSessions(
   now = new Date(),
 ): StudySessionRecord[] {
   const bounds = getRangeBounds(range, now);
-  return sessions.filter(session => (
+  return uniqueStudySessions(sessions).filter(session => (
     sessionIsInRange(session, bounds)
-    && (subject === 'all' || session.subject === subject)
+    && (subject === 'all' || sameStudySubject(session.subjectId ?? session.subject, subject))
   ));
 }
 
@@ -303,12 +304,15 @@ export function confidenceInRange(
 }
 
 export function buildSubjectAllocation(sessions: StudySessionRecord[]): RankedValue[] {
-  const totals = new Map<string, number>();
-  for (const session of sessions) {
-    totals.set(session.subject, (totals.get(session.subject) ?? 0) + Math.max(0, session.actualSeconds) / 60);
+  const totals = new Map<string, { label: string; seconds: number }>();
+  for (const session of uniqueStudySessions(sessions)) {
+    const id = resolveSubjectId(session.subjectId ?? session.subject) ?? session.subject;
+    const label = CURRICULUM_SPECIFICATIONS.find(spec => spec.subjectId === id)?.subjectName ?? session.subject;
+    const total = totals.get(id) ?? { label, seconds: 0 };
+    total.seconds += Math.max(0, session.actualSeconds);
+    totals.set(id, total);
   }
-  return [...totals.entries()]
-    .map(([label, value]) => ({ id: label, label, value: Math.round(value) }))
+  return [...totals.entries()].map(([id, total]) => ({ id, label: total.label, value: Math.round(total.seconds / 60) }))
     .sort((a, b) => b.value - a.value);
 }
 

@@ -5,7 +5,8 @@ import { Button } from '../approved-ui-runtime';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../approved-ui-runtime';
 import { Artwork } from '../learning/shared';
 import { StudySubjectArtwork } from '../study/StudySubjectPicker';
-import { libraryGroups, libraryTopicIds, libraryYearsLabel } from './libraryGroups';
+import { libraryTopicIds, libraryYearsLabel } from './libraryGroups';
+import { markBankCurriculumMenu } from './curriculumMenu';
 import { SUBJECTS, LEVEL_LABEL, levelsFor, type Level } from './deck';
 import { completeListeningExercises, resolveSessionQueue } from './sessionPlanning';
 import type { DeckState } from './store';
@@ -17,18 +18,19 @@ const shortTitle = (title:string)=>title;
 const unitTitle = (title:string)=>title.replace(/^(Core|Elective|Optional) Unit \d+:\s*/, '');
 
 interface Props {
- subjectId:string; level:Level; cards:SecCard[]; state:DeckState; now:()=>number;
+ examDate?:string|null; subjectId:string; level:Level; cards:SecCard[]; state:DeckState; now:()=>number;
  chooseSubject:(id:string)=>void; chooseLevel:(level:Level)=>void; canSelectSubject:(name:string)=>boolean;
  onStart:(topicId?:string,queue?:SecCard[])=>void; busy:boolean; ready:boolean; loading:boolean; error:boolean; onRetry:()=>void; online:boolean;
 }
-export default function MarkBankLibrary({subjectId,level,cards,state,now,chooseSubject,chooseLevel,canSelectSubject,onStart,busy,ready,loading,error,onRetry,online}:Props){
+export default function MarkBankLibrary({examDate,subjectId,level,cards,state,now,chooseSubject,chooseLevel,canSelectSubject,onStart,busy,ready,loading,error,onRetry,online}:Props){
  const base=SUBJECTS.find(item=>item.id===subjectId) ?? SUBJECTS[0];
- const groups=useMemo(()=>libraryGroups(subjectId,cards),[subjectId,cards]);
+ const menu=useMemo(()=>markBankCurriculumMenu(subjectId,level,examDate,cards),[subjectId,level,examDate,cards]);
+ const groups=menu.strands;
  const cardsByTopic=useMemo(()=>{
    const grouped=new Map<string,SecCard[]>();
-   for(const card of cards)for(const id of libraryTopicIds(card)){const list=grouped.get(id) ?? [];list.push(card);grouped.set(id,list);}
+   for(const card of cards)for(const id of libraryTopicIds(card,menu.spec)){const list=grouped.get(id) ?? [];list.push(card);grouped.set(id,list);}
    return grouped;
- },[cards]);
+ },[cards,menu.spec]);
  const subject={...base,groups};
  const availableSubjects=SUBJECTS.filter(item=>canSelectSubject(item.title));
  const subjectLevels=levelsFor(subjectId);
@@ -60,11 +62,12 @@ export default function MarkBankLibrary({subjectId,level,cards,state,now,chooseS
         <div className="mb-level-control"><span className="mb-kicker">PAPER LEVEL</span><div role="group" aria-label="Paper level">{subjectLevels.map(value => <button key={value} aria-pressed={level === value} onClick={() => chooseLevel(value)}>{LEVEL_LABEL[value]}</button>)}</div></div>
         <label className="mb-search"><Search size={19}/><input data-slot="input" ref={searchRef} placeholder={`Search ${subject.title.toLowerCase()} topics…`} aria-label="Search topics" value={query} onChange={event => setQuery(event.target.value)}/>{query ? <button type="button" onClick={() => setQuery('')} aria-label="Clear search"><X size={17}/></button> : <kbd>⌘ K</kbd>}</label>
       </div>
+      <p className="mb-source-note">{menu.current ? `Your syllabus: ${menu.spec?.title}.` : "Your cohort map is being verified."} Questions retain their original paper year. Archived topics are labelled in the index.</p>
       {loading && <p role="status">Loading this question bank…</p>}
       {error && <div role="alert"><p>The questions could not be loaded.</p><Button variant="outline" onClick={onRetry}>Try again</Button></div>}
       {!online && <p className="mb-source-note">You’re offline. Reviews save on this device and sync when your connection returns.</p>}
       <div className="mb-layout">
-        <aside className="mb-contents"><div className="mb-contents-title"><p className="mb-kicker">THE SUBJECT INDEX</p><span>{serial(subject.groups.length)}</span></div><nav aria-label="Subject units">{subject.groups.map((item, index) => <button key={item.id} onClick={() => {setGroupId(item.id);setQuery('');setSelectedId(item.topics.find(topic => deck.topics.some(data => data.id === topic.id && data.count > 0))?.id ?? item.topics[0].id);setAmount(6);}} aria-current={!query && group.id === item.id ? 'true' : undefined}><span>{serial(index + 1)}</span><strong>{unitTitle(item.title)}</strong>{group.id === item.id && !query && <ArrowRight size={15}/>}</button>)}</nav><div className="mb-index-note"><StudySubjectArtwork subject={subject.title} size={66}/><p><strong>{cards.length.toLocaleString()} questions</strong><span>Across {activeTopics} topics</span></p></div></aside>
+        <aside className="mb-contents"><div className="mb-contents-title"><p className="mb-kicker">THE SUBJECT INDEX</p><span>{serial(subject.groups.length)}</span></div><nav aria-label="Subject units">{subject.groups.map((item, index) => <button key={item.id} onClick={() => {setGroupId(item.id);setQuery('');setSelectedId(item.topics.find(topic => deck.topics.some(data => data.id === topic.id && data.count > 0))?.id ?? item.topics[0].id);setAmount(6);}} aria-current={!query && group.id === item.id ? 'true' : undefined}><span>{serial(index + 1)}</span><strong>{unitTitle(item.title)}{item.label === "Original paper topics" && <small className="mb-archive-label">Original paper topics</small>}</strong>{group.id === item.id && !query && <ArrowRight size={15}/>}</button>)}</nav><div className="mb-index-note"><StudySubjectArtwork subject={subject.title} size={66}/><p><strong>{cards.length.toLocaleString()} questions</strong><span>Across {activeTopics} topics</span></p></div></aside>
         <section className="mb-topics" aria-labelledby="mb-topics-heading">
           <div className="mb-section-heading"><p className="mb-kicker">{query ? 'SEARCH THE BANK' : `${serial(subject.groups.findIndex(item=>item.id===group.id)+1)} / ${group.label || 'SUBJECT UNIT'}`}</p><h2 id="mb-topics-heading">{query ? `Results for “${query}”` : unitTitle(group.title)}</h2><div><span>{query ? `${visible.length} matching topics` : `${group.topics.length} topics · ${groupCount} questions`}</span><button className="mb-availability" aria-pressed={availableOnly} onClick={() => setAvailableOnly(!availableOnly)}><span aria-hidden="true">{availableOnly && <Check size={12}/>}</span>Available only</button></div></div>
           <div className="mb-topic-list">{visible.map(topic => { const data = deck.topics.find(item => item.id === topic.id)!; return <div className="mb-topic-entry" key={topic.id}><button className="mb-topic-row" aria-pressed={selected.id === topic.id} onClick={() => chooseTopic(topic.id)}><span className="mb-topic-code">{topic.code || topic.id.split('-').slice(-2).join('.')}</span><span className="mb-topic-copy"><strong>{shortTitle(topic.title)}</strong><small>{data.count > 0 ? `${data.count} ${data.count === 1 ? 'question' : 'questions'}${data.years.length ? ` · ${libraryYearsLabel(data.years)}` : ''}` : 'No questions in this corpus'}</small></span><ArrowUpRight size={20}/></button></div>})}</div>
