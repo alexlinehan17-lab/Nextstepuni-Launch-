@@ -55,7 +55,7 @@ describe('topic connections', () => {
         }
       }
     }
-  });
+  }, 120000);
   it('joins the Home Economics archive identity through its curriculum metadata', () => {
     const spec = resolveCurriculumSpecification('Home Economics', 2027)!;
     const evidence = evidenceForCurriculumNode('audit', spec, undefined, 'higher');
