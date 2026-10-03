@@ -1,0 +1,22 @@
+/* Standalone screens have no shared safe-area header. Keep their controls below
+   the notch while their own background fills the transparent iOS status bar. */
+.native-ios .student-home { padding-top: calc(34px + var(--sat, 0px)); }
+.native-ios .ks-shell { padding-top: calc(25px + var(--sat, 0px)); }
+.native-ios .ss-timer-content { padding-top: calc(22px + var(--sat, 0px)); }
+.native-ios .ss-timer-content:is(.ss-room-ink, .ss-room-layers) { padding-top: calc(28px + var(--sat, 0px)); }
+.native-ios .study-finish { padding-top: calc(80px + var(--sat, 0px)); }
+.native-ios .study-break { padding-top: calc(42px + var(--sat, 0px)); }
+.native-ios .mb-mobile-session-header { padding-top: calc(12px + var(--sat, 0px)); }
+
+@media (max-width: 800px) {
+  .native-ios .ks-shell { padding-top: calc(16px + var(--sat, 0px)); }
+  .native-ios .study-finish { padding-top: calc(65px + var(--sat, 0px)); }
+  .native-ios .study-break { padding-top: calc(28px + var(--sat, 0px)); }
+}
+@media (max-width: 767px) {
+  .native-ios .ss-timer-content { padding-top: calc(16px + var(--sat, 0px)); }
+}
+@media (max-width: 700px) {
+  .native-ios .student-home { padding-top: calc(22px + var(--sat, 0px)); }
+  .native-ios .ss-timer-content:is(.ss-room-ink, .ss-room-layers) { padding-top: calc(20px + var(--sat, 0px)); }
+}
