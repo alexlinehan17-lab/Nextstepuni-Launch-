@@ -103,7 +103,12 @@ test('break starts only when shown, keeps actual studied time, and resumes expli
   expect(screen.getByText('5 min 1 sec studied · Timer paused')).toBeInTheDocument();
   expect(resume).not.toHaveBeenCalled();
   fireEvent.click(screen.getByRole('button', { name: 'Take a few slow breaths' }));
-  expect(screen.getByText('Breathe in, gently…')).toBeInTheDocument();
+  expect(screen.getByRole('dialog', { name: 'Take a moment.' })).toBeInTheDocument();
+  expect(screen.getByText(/^Breathe in/)).toBeInTheDocument();
+  expect(resume).not.toHaveBeenCalled();
+  fireEvent.click(screen.getByRole('button', { name: 'Back to your break' }));
+  expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  expect(screen.getByText('5 min 1 sec studied · Timer paused')).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button', { name: 'Back to study' }));
   expect(resume).toHaveBeenCalledOnce();
   fireEvent.click(screen.getByRole('button', { name: 'Finish for now' }));

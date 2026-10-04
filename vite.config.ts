@@ -174,6 +174,7 @@ export default defineConfig(() => {
             'icons/north-star-icon-192x192.png',
             'icons/north-star-icon-512x512.png',
             'fonts/*.otf',
+            'sounds/study-bloom-*.wav',
           ],
           manifest: {
             name: 'Nextstep Learning Lab',
