@@ -31,7 +31,8 @@ import { getRegistrationErrorCode, registrationErrorField, registrationErrorMess
 import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
-import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
+import { LegalModal, type LegalDoc } from './legal/LegalModal';
+import { rememberRegistrationAgreement } from '../services/legalAgreement';
 import { DEFAULT_PERSONAL_STAR_CREW_ID } from '../data/personalStarCrew';
 import { pickLoadingCrew } from '../utils/loadingCrew';
 import { useModal } from '../hooks/useModal';
@@ -417,12 +418,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           yearGroup: data.yearGroup,
         });
       } else {
-        // First-time Apple sign-in: create the user doc (school empty, set later
-        // in-app). Record the policy version under which the account was created,
-        // matching the email-registration flow. NOTE: the explicit in-app
-        // Privacy/Terms acceptance checkbox is not shown on the social path
-        // (same as Google); parental consent is captured at school enrolment
-        // (basis = school-enrolment). See compliance/DPIA.md.
+        // Sign-in creates a profile, not a legal agreement. The shared account
+        // gate records an explicit action before any private workspace opens.
         const newName = appleName || cred.user.displayName || 'Student';
         const newAvatar = avatar || defaultAvatar;
         await writeUserDoc(setDoc(userRef, {
@@ -434,11 +431,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           // reported it as "Could not sign in with Apple" on a sign-in that had
           // actually succeeded. The in-memory session passes school: '' itself.
           createdAt: new Date().toISOString(),
-          consent: {
-            policyVersion: PRIVACY_POLICY_VERSION,
-            acceptedAt: new Date().toISOString(),
-            basis: CONSENT_BASIS,
-          },
         }), 'LoginPage.appleCreateUserDoc');
         handleLoginSuccess(
           { uid: cred.user.uid, name: newName, avatar: newAvatar, school: '', role: 'student' },
@@ -614,14 +606,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // who skips onboarding never gets a subjectProfile, and without any
         // createdAt the GC's status classifier pinned them at "New" forever.
         createdAt: new Date().toISOString(),
-        // B4 (audit 2026-06-01): record acceptance of the transparency notice +
-        // terms. The Art 8 parental consent itself is captured at school
-        // enrolment (basis = school-enrolment); see compliance/DPIA.md.
-        consent: {
-          policyVersion: PRIVACY_POLICY_VERSION,
-          acceptedAt: new Date().toISOString(),
-          basis: CONSENT_BASIS,
-        },
       };
       // Late rejection: the /users write was still in flight when we stopped
       // waiting, and the answer — a rejection — arrives seconds later.
@@ -671,6 +655,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // connection), and making a student stare at a setup screen for that is
       // pointless when the account is already safe. The finally below still
       // clears the marker; this is just the earliest correct moment.
+      // The checkbox explicitly includes the programme's 16+ eligibility.
+      // The entry gate persists that action with a server timestamp; it never
+      // interprets an Auth account or the old consent field as agreement.
+      rememberRegistrationAgreement(createdUser.uid);
       endRegistrationProvisioning();
       await writeUserDoc(
         setDoc(doc(db, 'users', createdUser.uid), userDocPayload, { merge: true }),
@@ -1120,6 +1108,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                           <span className="nsu-kobra account-consent-control">
                             <Checkbox id="register-consent" data-account-sound="tap" className="account-consent-box" checked={agreedToTerms} disabled={isLoading}
                               onCheckedChange={checked => { setAgreedToTerms(checked); setError(''); setFieldErrors({}); }}
+                              aria-describedby="register-eligibility-note"
                               aria-label="I have read the Privacy Notice and agree to the Terms of Use" />
                           </span>
                           <span>
@@ -1140,10 +1129,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                             .
                           </span>
                         </div>
-                        <p>
-                          Your school provides NextStepUni with your parent or
-                          guardian’s permission as part of enrolment. The
-                          Privacy Notice explains how your information is used.
+                        <p id="register-eligibility-note">
+                          By ticking this box, I also confirm that I am aged 16
+                          or over and eligible for my school’s programme. This
+                          is not blanket consent to use my information.
                         </p>
                       </div>
                     </div>
@@ -1434,6 +1423,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           )}
         </MotionDiv>
       </AnimatePresence>
+      {(view !== 'register' || registerStep < 4) && <nav className="auth-live-legal" aria-label="Legal documents">
+        <button type="button" className="auth-live-link" onClick={() => setLegalDoc('privacy')}>Privacy Notice</button>
+        <button type="button" className="auth-live-link" onClick={() => setLegalDoc('terms')}>Terms of Use</button>
+      </nav>}
       <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} onDocumentChange={setLegalDoc} />
       {entryHelp && (
         <div className="auth-live-overlay">

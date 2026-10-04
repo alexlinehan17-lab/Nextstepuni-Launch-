@@ -21,7 +21,7 @@ describe('Standalone documents under an installed app worker', () => {
       expect(usesAppShell(`/landing-demo.html?view=${view}&ref=chapter`, origin)).toBe(false);
     }
   });
-  it.each(['/components', '/components/', '/components/index.html', '/landing', '/landing-dev.html', '/landing-demo.html', '/certle', '/certle/', '/certle.html', '/privacy', '/privacy.html', '/terms', '/terms.html'])('preserves %s with and without query parameters', path => {
+  it.each(['/components', '/components/', '/components/index.html', '/landing', '/landing-dev.html', '/landing-demo.html', '/certle', '/certle/', '/certle.html', '/privacy', '/privacy.html', '/terms', '/terms.html', '/legal/2026-09-24/privacy.html', '/legal/2026-09-24/terms.html'])('preserves %s with and without query parameters', path => {
     expect(usesAppShell(path)).toBe(false);
     expect(usesAppShell(`${path}?from=landing`)).toBe(false);
   });

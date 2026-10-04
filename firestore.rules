@@ -119,7 +119,7 @@ service cloud.firestore {
                      'needsPasswordChange', 'passwordResetAtSeconds',
                      'passwordResetExpiresAtSeconds', 'temporaryPasswordHash',
                      'passwordResetBy', 'sessionValidAfterSeconds',
-                     'accountDisabled'
+                     'accountDisabled', 'legalAcceptance'
                    ])
                    && request.resource.data.name is string
                    && request.resource.data.name.size() <= 50
@@ -149,7 +149,7 @@ service cloud.firestore {
                      'role', 'school', 'isAdmin', 'needsPasswordChange',
                      'passwordResetAtSeconds', 'passwordResetExpiresAtSeconds',
                      'temporaryPasswordHash', 'passwordResetBy',
-                     'sessionValidAfterSeconds', 'accountDisabled'
+                     'sessionValidAfterSeconds', 'accountDisabled', 'legalAcceptance'
                    ])
                    && (!('name' in request.resource.data)
                        || (request.resource.data.name is string && request.resource.data.name.size() <= 50))
@@ -162,6 +162,12 @@ service cloud.firestore {
       allow read: if request.auth != null
                   && isSchoolStaff()
                   && resource.data.school == callerSchool();
+    }
+
+    // Versioned agreement evidence is written only by the authenticated
+    // callable and included in account export/erasure. No client can forge it.
+    match /legalAgreementRecords/{recordId} {
+      allow read, write: if false;
     }
 
     // GC student-flagging: each GC owns gcFlags/{their-uid}/flaggedStudents/*.

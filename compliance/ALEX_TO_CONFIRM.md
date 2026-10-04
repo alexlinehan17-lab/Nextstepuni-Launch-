@@ -40,7 +40,7 @@ transfer to remain lawful. If the project is already in `europe-west1` or
 similar, several documents simplify (DPIA R8 can be marked as not
 applicable, DPA Schedule 6 is significantly shorter).
 
-**Your answer:** **`europe-west2` (London, EEA).** Surfaced 2026-04-30 during the deploy of `onProgressWritten` — the Eventarc trigger path explicitly contained `locations/europe-west2/...`. Cloud Functions are still in `us-central1` (existing project pattern); a future move of the function execution region to match the data is out of scope for Phase 1. See `compliance/REMEDIATION_LOG.md` (2026-04-30 finding entry). DPIA R8, Section 1.5, Section 6, DPA Schedule 6 to be updated in a later doc-only pass.
+**Your answer:** **`europe-west2` (London, UK; outside the EEA).** Surfaced 2026-04-30 during the deploy of `onProgressWritten` — the Eventarc trigger path explicitly contained `locations/europe-west2/...`. Cloud Functions are still in `us-central1` (existing project pattern); a future move of the function execution region to match the data is out of scope for Phase 1. See `compliance/REMEDIATION_LOG.md` (2026-04-30 finding entry). DPIA R8, Section 1.5, Section 6, DPA Schedule 6 to be updated in a later doc-only pass.
 
 ---
 
@@ -261,31 +261,26 @@ operational posture today.
 
 ---
 
-### Q16: Parental consent mechanism
+### Q16: Programme eligibility and lawful-basis evidence
 
-**Why it matters:** Article 8 requires verifiable parental consent for
-processing children's data on the basis of consent. DPIA Section 2.1
-asserts consent is collected at school enrolment. This question evidences
-the actual process.
+**Owner confirmation — 4 October 2026:** NextStepUni Limited, CRO 818010,
+contact address 75 Grange Park Road; participating schools have signed DPAs
+and approved the programme basis; student participants are aged 16 or over.
 
-**Your answer:**
-- Where is consent collected? (school enrolment form / Online via NextStepUni / other): _______
-- What does the consent text say? (attach or quote): _______
-- Where are the signed consents stored? _______
-- Is there a withdrawal flow? Y / N : _______
+The current app asks for explicit 16+ eligibility confirmation and separately
+records current notice acknowledgement and terms agreement with server time.
+Email, Google, Apple and restored sessions use the same account-entry check.
+Previous `school-enrolment` consent fields are historical evidence only and
+are not treated as current agreement or parental/GDPR consent.
 
-**Implementation note (2026-06-01, audit B4):** the *in-app* half of this is now
-built. Registration (`components/LoginPage.tsx`) requires the student to accept
-a reachable Privacy Notice + Terms of Use before an account is created, and
-records `users/{uid}.consent = { policyVersion, acceptedAt, basis:
-'school-enrolment' }`. The notice (`components/legal/LegalModal.tsx`, DRAFT
-pending counsel) states the Art 6(1)(e) + Art 8 school-enrolment basis and is
-also reachable from Settings. **Still outstanding (operational / for Alex +
-counsel):** the actual verifiable *parental* consent captured at school
-enrolment — the four questions above (where collected, exact text, where signed
-consents are stored, withdrawal flow) remain unanswered and are not evidenced in
-the app. A student-facing withdrawal/erasure flow is tracked separately (audit
-item 15 / DPIA T-NEW-8).
+**Evidence still to file:** the executed school DPAs and purpose-specific
+controller instructions/notices; the complete postal address; any required
+adult authorisation for contractual arrangements; Article 9 assessment for
+school support tags and incidental sensitive disclosures; operational
+retention review and NextStepUni's legitimate-interests assessments.
+
+Age 16 resolves the Irish Article 8 threshold only when consent is the relevant
+basis. It does not remove under-18 protection or resolve contractual capacity.
 
 ---
 
