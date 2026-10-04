@@ -1,0 +1,44 @@
+name: War Room browser layout
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    paths:
+      - 'components/WarRoom.tsx'
+      - 'components/war-room/**'
+      - 'components/approved-ui-runtime.*'
+      - 'output/war-room-implementation-20261004/**'
+      - 'scripts/verify-war-room-layout.mjs'
+      - '.github/workflows/war-room-layout.yml'
+
+jobs:
+  browser-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: 22
+          cache: 'npm'
+      - run: npm ci
+      - name: Install isolated browser test tools
+        run: |
+          npm install --prefix "$RUNNER_TEMP/war-room-browser" --no-package-lock --ignore-scripts playwright@1.63.0
+          node "$RUNNER_TEMP/war-room-browser/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Build actual War Room review
+        run: node output/war-room-implementation-20261004/build-review.mjs
+      - name: Verify desktop and phone layouts in both themes
+        run: node scripts/verify-war-room-layout.mjs
+        env:
+          PLAYWRIGHT_MODULE_PATH: ${{ runner.temp }}/war-room-browser/node_modules/playwright/index.mjs
+          WAR_ROOM_SCREENSHOTS: ${{ runner.temp }}/war-room-layout-review
+      - name: Upload rendered screenshots and geometry checks
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: war-room-layout-review
+          path: ${{ runner.temp }}/war-room-layout-review
+          if-no-files-found: warn
+          retention-days: 7

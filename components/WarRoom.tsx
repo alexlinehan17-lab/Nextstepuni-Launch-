@@ -330,7 +330,7 @@ const WarRoomWorkspace: React.FC<WarRoomProps> = ({
   return <KobraScope sound={false} className="war-room-workspace">
     <section aria-label="War Room strategy workspace">
       <ul className="wr-strategy-context" aria-label="Strategy context">{strategyFacts.map(fact => <li key={fact.label}><strong>{fact.value}</strong> {fact.label}</li>)}</ul>
-      <Tabs value={activePanel} onValueChange={value => { if (tabs.some(tab => tab.id === value)) setPanel(value as WarRoomPanel); }}>
+      <Tabs className="wr-tabs" value={activePanel} onValueChange={value => { if (tabs.some(tab => tab.id === value)) setPanel(value as WarRoomPanel); }}>
         <TabsList activateOnFocus variant="line" className="wr-nav" aria-label="War Room sections">{tabs.map(tab => <TabsTrigger key={tab.id} value={tab.id}>{tab.label}</TabsTrigger>)}</TabsList>
         <TabsContent value="today"><BriefingPanel subjects={subjects} topicMap={derivedTopicMap} mockResults={derivedMockResults} allocations={allocations} blockDuration={blockDuration} completedThisWeek={completedThisWeek} todayBlocks={actionableTodayBlocks} onStudyNow={onStudyNow} onReviewSubjects={() => setPanel('subjects')} onOpenRecord={openRecord} studySessions={studySessions} daysUntilExam={daysUntilExam} examDate={parsedExamDate} currentDate={currentDate} /></TabsContent>
         <TabsContent value="subjects"><SubjectBoardPanel profile={profile} sessions={studySessions} mastery={topicMastery} onOpenRecord={openRecord} onBrowseTopics={setCoverageSubject} onStudy={studySubject} canStudy={canStudy} /></TabsContent>
