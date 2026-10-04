@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-import React, { useId, useRef, useState } from 'react';
+import React, { useId, useLayoutEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 import { AnimatePresence, MotionDiv, useReducedMotion } from '../Motion';
@@ -44,6 +44,11 @@ function LegalReader({ doc, titleId, onDocumentChange }: {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeSection, setActiveSection] = useState(0);
   const reducedMotion = useReducedMotion();
+
+  useLayoutEffect(() => {
+    if (scrollRef.current) scrollRef.current.scrollTop = 0;
+    setActiveSection(0);
+  }, [doc]);
 
   const jumpToSection = (event: React.MouseEvent<HTMLAnchorElement>, index: number) => {
     event.preventDefault();
@@ -153,7 +158,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ doc, onClose, onDocument
               <p className="legal-wordmark">NextStep<span>Uni</span></p>
               <button className="legal-close" type="button" aria-label="Close legal document" onClick={onClose}><X size={18} strokeWidth={1.6} /></button>
             </div>
-            <LegalReader key={doc} doc={doc} titleId={titleId} onDocumentChange={onDocumentChange} />
+            <LegalReader doc={doc} titleId={titleId} onDocumentChange={onDocumentChange} />
           </MotionDiv>
         </MotionDiv>
       )}

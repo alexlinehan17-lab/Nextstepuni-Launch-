@@ -44,15 +44,21 @@ describe('Legal document readers', () => {
     expect(window.location.href).toBe(before);
   });
 
-  test('switching documents resets the reader and keeps a named dialog', () => {
+  test('switching documents resets the reader and retains keyboard focus', () => {
     function Reader() {
       const [doc, setDoc] = useState<LegalDoc>('privacy');
       return <LegalModal doc={doc} onClose={vi.fn()} onDocumentChange={setDoc} />;
     }
     render(<Reader />);
-    fireEvent.click(screen.getByRole('button', { name: 'Terms of Use' }));
+    const termsButton = screen.getByRole('button', { name: 'Terms of Use' });
+    termsButton.focus();
+    const scroll = document.querySelector<HTMLElement>('.legal-scroll')!;
+    scroll.scrollTop = 420;
+    fireEvent.click(termsButton);
     expect(screen.getByRole('dialog', { name: 'Terms of Use' })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Terms of Use' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: 'Terms of Use' })).toHaveFocus();
+    expect(document.querySelector('.legal-scroll')?.scrollTop).toBe(0);
     expect(document.querySelector('.legal-contents-desktop a[aria-current="location"]')).toHaveAttribute('href', '#terms-section-1');
   });
 
