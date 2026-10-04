@@ -160,6 +160,14 @@ body.legal-page { margin: 0; }
 .legal-dialog .legal-section h3 { font-size: 27px; }
 .legal-dialog .legal-contents { top: 24px; }
 .legal-dialog .legal-contents-desktop { max-height: min(744px, calc(92dvh - 132px)); }
+.dark .legal-dialog {
+  --legal-paper: #242720;
+  --legal-ink: #f5f1e5;
+  --legal-body: #d0d2c8;
+  --legal-muted: #a7aba0;
+  --legal-line: #464a40;
+  --legal-link: #ffab70;
+}
 
 @media (max-width: 800px) {
   .legal-page-wrap { padding: 0 28px; }
