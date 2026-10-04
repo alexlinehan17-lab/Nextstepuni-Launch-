@@ -4,108 +4,12 @@ import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import { standaloneDocumentRoutes } from './utils/pwaNavigation';
-import {
-  PRIVACY_NOTICE,
-  TERMS_OF_USE,
-  LEGAL_TITLES,
-  PRIVACY_POLICY_VERSION,
-  LEGAL_LAST_UPDATED,
-  SUPPORT_EMAIL,
-  LEGAL_URL_RE,
-  type LegalDoc,
-  type Section,
-} from './components/legal/legalContent';
+import { readFileSync } from 'node:fs';
+import type { LegalDoc } from './components/legal/legalContent';
+import { renderLegalPage } from './components/legal/legalPage';
 
-// ── Public legal pages ──────────────────────────────────────────────────────
-// Emit /privacy.html + /terms.html from the SAME source the in-app modal uses
-// (components/legal/legalContent.ts), so the published policy can never drift
-// from what students accept in-app. Apple App Review requires a publicly
-// reachable privacy-policy URL — Firebase Hosting serves these straight from
-// dist (canonical URL: <your-domain>/privacy.html).
-const escHtml = (s: string) =>
-  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-
-/** Escape first, then turn bare source URLs into anchors. Order matters: doing
- *  it the other way round would escape the markup we just generated. */
-const escHtmlLinked = (s: string) => {
-  LEGAL_URL_RE.lastIndex = 0;
-  return escHtml(s).replace(
-    LEGAL_URL_RE,
-    (url) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`,
-  );
-};
-
-function renderSections(sections: Section[]): string {
-  return sections
-    .map((section) => {
-      const parts: string[] = [];
-      let bullets: string[] = [];
-      const flush = () => {
-        if (bullets.length) {
-          parts.push(
-            `<ul>${bullets.map((b) => `<li>${escHtmlLinked(b.replace(/^•\s*/, ''))}</li>`).join('')}</ul>`,
-          );
-          bullets = [];
-        }
-      };
-      for (const line of section.body) {
-        if (line.startsWith('• ')) bullets.push(line);
-        else {
-          flush();
-          parts.push(`<p>${escHtmlLinked(line)}</p>`);
-        }
-      }
-      flush();
-      return `<section><h2>${escHtml(section.heading)}</h2>${parts.join('')}</section>`;
-    })
-    .join('\n');
-}
-
-function renderLegalPage(doc: LegalDoc): string {
-  const title = LEGAL_TITLES[doc];
-  const sections = doc === 'privacy' ? PRIVACY_NOTICE : TERMS_OF_USE;
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="index, follow" />
-<title>${escHtml(title)} · NextStepUni</title>
-<style>
-  :root { color-scheme: light; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: #FAFBF6; color: #1a1a1a; line-height: 1.6;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased; }
-  main { max-width: 720px; margin: 0 auto; padding: 48px 22px 80px; }
-  .brand { font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #7a7068; margin: 0 0 14px; }
-  h1 { font-family: Georgia, "Source Serif 4", serif; font-size: 30px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
-  .meta { color: #9e9186; font-size: 13px; margin: 0 0 36px; }
-  h2 { font-family: Georgia, "Source Serif 4", serif; font-size: 19px; font-weight: 600; margin: 32px 0 8px; }
-  p, li { color: #3a3530; font-size: 15px; }
-  p { margin: 0 0 10px; }
-  ul { margin: 0 0 10px; padding-left: 20px; }
-  li { margin: 0 0 6px; }
-  a { color: #F26B1F; }
-  footer { margin-top: 48px; padding-top: 22px; border-top: 1px solid #e5e2dd; color: #7a7068; font-size: 13px; }
-  footer p { color: #7a7068; font-size: 13px; margin: 0 0 6px; }
-</style>
-</head>
-<body>
-<main>
-  <p class="brand">NextStepUni</p>
-  <h1>${escHtml(title)}</h1>
-  <p class="meta">Version ${escHtml(PRIVACY_POLICY_VERSION)} · Last updated ${escHtml(LEGAL_LAST_UPDATED)}</p>
-  ${renderSections(sections)}
-  <footer>
-    <p>Questions? Contact <a href="mailto:${escHtml(SUPPORT_EMAIL)}">${escHtml(SUPPORT_EMAIL)}</a>.</p>
-    <p>NextStepUni Ltd</p>
-    <p><a href="/privacy.html">Privacy Notice</a> &middot; <a href="/terms.html">Terms of Use</a></p>
-  </footer>
-</main>
-</body>
-</html>`;
-}
+// The app and public documents share the same copy, renderer helpers and CSS.
+const legalStyles = () => readFileSync(new URL('./components/legal/legal-document.css', import.meta.url), 'utf8');
 
 /**
  * /landing is a Firebase hosting rewrite to /landing-dev.html (firebase.json).
@@ -141,12 +45,12 @@ function legalStaticPages(): Plugin {
         const doc = routes[url];
         if (!doc) return next();
         res.setHeader('Content-Type', 'text/html; charset=utf-8');
-        res.end(renderLegalPage(doc));
+        res.end(renderLegalPage(doc, legalStyles()));
       });
     },
     generateBundle() {
-      this.emitFile({ type: 'asset', fileName: 'privacy.html', source: renderLegalPage('privacy') });
-      this.emitFile({ type: 'asset', fileName: 'terms.html', source: renderLegalPage('terms') });
+      this.emitFile({ type: 'asset', fileName: 'privacy.html', source: renderLegalPage('privacy', legalStyles()) });
+      this.emitFile({ type: 'asset', fileName: 'terms.html', source: renderLegalPage('terms', legalStyles()) });
     },
   };
 }
@@ -174,6 +78,7 @@ export default defineConfig(() => {
             'icons/north-star-icon-192x192.png',
             'icons/north-star-icon-512x512.png',
             'fonts/*.otf',
+            'fonts/abc-diatype-*.woff2',
             'sounds/study-bloom-*.wav',
           ],
           manifest: {
