@@ -34,6 +34,7 @@ jobs:
         env:
           PLAYWRIGHT_MODULE_PATH: ${{ runner.temp }}/war-room-browser/node_modules/playwright/index.mjs
           WAR_ROOM_SCREENSHOTS: ${{ runner.temp }}/war-room-layout-review
+          WAR_ROOM_LOG_SCREENSHOTS: '1'
       - name: Upload rendered screenshots and geometry checks
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
