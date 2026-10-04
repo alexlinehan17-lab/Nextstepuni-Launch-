@@ -49,21 +49,32 @@ try {
         const label = `${theme} / ${width}px / ${tab}`;
         let passed = true;
         try {
-        // These assertions check actual rendered geometry, not CSS declarations.
-        assert.ok(geometry.panel.top >= geometry.navigation.bottom - 1, `${label}: panel must sit below the tabs`);
-        assert.ok(Math.abs(geometry.panel.left - geometry.root.left) < 2, `${label}: content must align with the tabs`);
-        assert.ok(Math.abs(geometry.panel.width - geometry.root.width) < 2, `${label}: content must use the available width`);
-        assert.ok(geometry.panel.right <= geometry.viewportWidth + 1, `${label}: content must stay inside the viewport`);
-        if (geometry.workspaceScrollWidth > geometry.workspaceWidth + 1) {
-          console.log(JSON.stringify({ label, geometry, overflow: await page.locator('.war-room-workspace').evaluate(workspace => [...workspace.querySelectorAll('*')].filter(element => element.getBoundingClientRect().right > workspace.getBoundingClientRect().right + 1).map(element => ({ tag: element.tagName, className: String(element.className).slice(0, 160), width: element.getBoundingClientRect().width, text: element.textContent.slice(0, 80) })).slice(0, 20)) }));
-        }
-        assert.ok(geometry.workspaceScrollWidth <= geometry.workspaceWidth + 1, `${label}: workspace must not overflow horizontally (${geometry.workspaceScrollWidth}/${geometry.workspaceWidth}px)`);
-        const underline = await page.getByRole('tab', { name: tab, exact: true }).evaluate(element => {
-          const style = getComputedStyle(element, '::after');
-          return { opacity: style.opacity, height: style.height };
-        });
-        assert.equal(underline.opacity, '1', `${label}: selected tab must have an underline`);
-        assert.equal(underline.height, '2px', `${label}: selected tab underline must be visible`);
+          // These assertions check actual rendered geometry, not CSS declarations.
+          assert.ok(geometry.panel.top >= geometry.navigation.bottom - 1, `${label}: panel must sit below the tabs`);
+          assert.ok(Math.abs(geometry.panel.left - geometry.root.left) < 2, `${label}: content must align with the tabs`);
+          assert.ok(Math.abs(geometry.panel.width - geometry.root.width) < 2, `${label}: content must use the available width`);
+          assert.ok(geometry.panel.right <= geometry.viewportWidth + 1, `${label}: content must stay inside the viewport`);
+          if (geometry.workspaceScrollWidth > geometry.workspaceWidth + 1) {
+            const overflow = await page.locator('.war-room-workspace').evaluate(workspace => {
+              const right = workspace.getBoundingClientRect().right;
+              return [...workspace.querySelectorAll('*')]
+                .filter(element => element.getBoundingClientRect().right > right + 1)
+                .map(element => ({
+                  tag: element.tagName,
+                  className: String(element.className).slice(0, 160),
+                  width: element.getBoundingClientRect().width,
+                  text: element.textContent.slice(0, 80),
+                })).slice(0, 20);
+            });
+            console.log(JSON.stringify({ label, geometry, overflow }));
+          }
+          assert.ok(geometry.workspaceScrollWidth <= geometry.workspaceWidth + 1, `${label}: workspace must not overflow horizontally (${geometry.workspaceScrollWidth}/${geometry.workspaceWidth}px)`);
+          const underline = await page.getByRole('tab', { name: tab, exact: true }).evaluate(element => {
+            const style = getComputedStyle(element, '::after');
+            return { opacity: style.opacity, height: style.height };
+          });
+          assert.equal(underline.opacity, '1', `${label}: selected tab must have an underline`);
+          assert.equal(underline.height, '2px', `${label}: selected tab underline must be visible`);
         } catch (error) {
           passed = false;
           failures.push({ label, error: error.message });

@@ -22,7 +22,7 @@ export default function SubjectBoardPanel({ profile, sessions, mastery, onOpenRe
   const [query, setQuery] = useState('');
   const subjects = profile.subjects.filter(subject => subject.subjectName.toLocaleLowerCase().includes(query.trim().toLocaleLowerCase()));
   return <>
-    <section className="wr-section-intro"><div><p className="wr-eyebrow">{profile.subjects.length} subjects / Your subject board</p><h2>Your subjects.<br /><em>Your next moves.</em></h2></div><p>Start a session, revisit a topic,<br />or see your learning record.</p></section>
+    <section className="wr-section-intro"><div><p className="wr-eyebrow">{profile.subjects.length} subjects / Your subject board</p><h2>Your subjects.<br /><em>Your next moves.</em></h2></div><p>Start a session, revisit a topic, <br />or see your learning record.</p></section>
     {profile.subjects.length > 0 && <label className="wr-board-search">Find a subject<Input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Search your subjects" /></label>}
     <div className="wr-subjects">{subjects.map((subject, index) => {
       const { activity, latest } = subjectLearningDetails(subject, profile.examStartDate, sessions, mastery);
