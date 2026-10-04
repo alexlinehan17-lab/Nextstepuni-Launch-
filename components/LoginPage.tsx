@@ -1434,7 +1434,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           )}
         </MotionDiv>
       </AnimatePresence>
-      <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
+      <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} onDocumentChange={setLegalDoc} />
       {entryHelp && (
         <div className="auth-live-overlay">
           <div
