@@ -10,6 +10,7 @@ await mkdir(destination, { recursive: true });
 const browser = await chromium.launch({ headless: true });
 const cases = [];
 const errors = [];
+const failures = [];
 let failure;
 try {
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
@@ -46,6 +47,8 @@ try {
           };
         });
         const label = `${theme} / ${width}px / ${tab}`;
+        let passed = true;
+        try {
         // These assertions check actual rendered geometry, not CSS declarations.
         assert.ok(geometry.panel.top >= geometry.navigation.bottom - 1, `${label}: panel must sit below the tabs`);
         assert.ok(Math.abs(geometry.panel.left - geometry.root.left) < 2, `${label}: content must align with the tabs`);
@@ -61,7 +64,12 @@ try {
         });
         assert.equal(underline.opacity, '1', `${label}: selected tab must have an underline`);
         assert.equal(underline.height, '2px', `${label}: selected tab underline must be visible`);
-        cases.push({ theme, width, tab, geometry });
+        } catch (error) {
+          passed = false;
+          failures.push({ label, error: error.message });
+          console.error(`${label}: ${error.message}`);
+        }
+        cases.push({ theme, width, tab, geometry, passed });
         if (width === 1440 || width === 390) {
           const filename = `${theme}-${width}-${tab.toLowerCase().replaceAll(' ', '-')}.png`;
           await page.locator('.review-product img').evaluateAll(async images => {
@@ -81,6 +89,7 @@ try {
     }
   }
   assert.deepEqual(errors, [], 'The implemented review must not throw browser errors');
+  assert.deepEqual(failures, [], 'All rendered War Room layouts must fit');
   console.log(`Passed ${cases.length} browser layout checks; captured 16 screenshots.`);
 } catch (error) {
   failure = String(error);
@@ -88,6 +97,6 @@ try {
   if (page) await page.screenshot({ path: resolve(destination, 'failure.png'), fullPage: true });
   throw error;
 } finally {
-  await writeFile(resolve(destination, 'results.json'), JSON.stringify({ cases, errors, failure }, null, 2));
+  await writeFile(resolve(destination, 'results.json'), JSON.stringify({ cases, errors, failures, failure }, null, 2));
   await browser.close();
 }
