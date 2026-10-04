@@ -1,15 +1,13 @@
 import type { TopicHistoryActions } from './topics/TopicDetailCard';
-import { recordedSubjectActivity } from '../services/studyTopicHistory';
+import { recordedSubjectActivity, sameStudySubject, studyTopicSelection } from '../services/studyTopicHistory';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import React, { useEffect, useMemo, useState } from 'react';
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
-import { MotionDiv } from './Motion';
 import {
   type StudentSubjectProfile,
   type TimetableCompletions,
@@ -36,6 +34,12 @@ import {
 import BriefingPanel from './war-room/BriefingPanel';
 import CountdownPanel from './war-room/CountdownPanel';
 import CoveragePanel from './war-room/CoveragePanel';
+import SubjectBoardPanel from './war-room/SubjectBoardPanel';
+import LearningLedgerPanel from './war-room/LearningLedgerPanel';
+import LearningRecordCard from './war-room/LearningRecordCard';
+import SignatureCard from './ui/SignatureCard';
+import KobraScope, { Button, Tabs, TabsContent, TabsList, TabsTrigger } from './approved-ui-runtime';
+import './war-room/war-room.css';
 import TrajectoryPanel from './war-room/TrajectoryPanel';
 import { useOptionalProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
@@ -64,15 +68,10 @@ interface WarRoomProps extends TopicHistoryActions {
 type WorkspaceMode = 'focus' | 'review';
 type ReviewPanelId = 'subjects' | 'trajectory' | 'time';
 
-const MODE_TABS: Array<{ id: WorkspaceMode; label: string }> = [
-  { id: 'focus', label: 'Focus' },
-  { id: 'review', label: 'Review' },
-];
-
-const ALL_REVIEW_TABS: Array<{ id: ReviewPanelId; label: string }> = [
-  { id: 'subjects', label: 'Subjects' },
-  { id: 'trajectory', label: 'Results' },
-  { id: 'time', label: 'Time plan' },
+type WarRoomPanel = 'today' | 'subjects' | 'record' | 'time';
+const PANELS: { id: WarRoomPanel; label: string }[] = [
+  { id: 'today', label: 'Today' }, { id: 'subjects', label: 'Subjects' },
+  { id: 'record', label: 'Learning record' }, { id: 'time', label: 'Time plan' },
 ];
 
 const EMPTY_STUDY_SESSIONS: StudySessionRecord[] = [];
@@ -93,7 +92,7 @@ function calendarDayNumber(date: Date): number {
   return Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) / 86400000;
 }
 
-const WarRoom: React.FC<WarRoomProps> = ({
+const WarRoomWorkspace: React.FC<WarRoomProps> = ({
   uid,
   onStudyTopic, onPracticeTopic,
   profile,
@@ -109,14 +108,14 @@ const WarRoom: React.FC<WarRoomProps> = ({
   const sharedDebriefs = progress?.studyDebriefs ?? EMPTY_DEBRIEFS;
   const rawProgressDoc = progress?.rawProgressDoc ?? EMPTY_PROGRESS_DOC;
   const isDemo = uid === DEMO_STUDENT_UID;
-  const [mode, setMode] = useState<WorkspaceMode>(initialMode);
-  const [reviewPanel, setReviewPanel] = useState<ReviewPanelId>(initialReviewPanel);
+  const [panel, setPanel] = useState<WarRoomPanel>(initialMode === 'focus' ? 'today' : initialReviewPanel === 'trajectory' ? 'record' : initialReviewPanel === 'time' ? 'time' : 'subjects');
+  const [detail, setDetail] = useState<{ subject: string; nodeId?: string }>();
+  const [coverageSubject, setCoverageSubject] = useState<string>();
+  const [resultsOpen, setResultsOpen] = useState(initialMode === 'review' && initialReviewPanel === 'trajectory');
   const [studySessions, setStudySessions] = useState<StudySessionRecord[]>([]);
   const [debriefs, setDebriefs] = useState<DebriefEntry[]>([]);
   const [sm2States, setSm2States] = useState<SubjectSM2State[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const modeTabRefs = useRef<Array<HTMLButtonElement | null>>([]);
-  const reviewTabRefs = useRef<Array<HTMLButtonElement | null>>([]);
 
   const { topicMastery, mockResults: mockResultsHook, futureFinderPicks } = useInnovationData();
   const targetCourse = futureFinderPicks[0] ?? null;
@@ -155,6 +154,8 @@ const WarRoom: React.FC<WarRoomProps> = ({
 
   useEffect(() => {
     if (!uid) {
+      setStudySessions([]);
+      setDebriefs([]);
       setSm2States([]);
       setIsLoading(false);
       return;
@@ -180,7 +181,7 @@ const WarRoom: React.FC<WarRoomProps> = ({
         setStudySessions(sessionsSnap.docs.map(result => result.data() as StudySessionRecord));
         const data = docSnap.data() || {};
         setSm2States((data.sm2States as SubjectSM2State[] | undefined) ?? []);
-        if (data.studyDebriefs) setDebriefs(data.studyDebriefs as DebriefEntry[]);
+        setDebriefs((data.studyDebriefs as DebriefEntry[] | undefined) ?? []);
       } catch (error) {
         console.error('Failed to load War Room data:', error);
       } finally {
@@ -290,67 +291,30 @@ const WarRoom: React.FC<WarRoomProps> = ({
     subject.subjectName, recordedSubjectActivity(studySessions, subject.subjectName).seconds / 3600,
   ])), [studySessions, subjects]);
 
-  const reviewTabs = useMemo(() => ALL_REVIEW_TABS.filter(tab => {
-    if (tab.id === 'trajectory') return hasGradeData;
-    if (tab.id === 'time') return parsedExamDate !== null;
-    return true;
-  }), [hasGradeData, parsedExamDate]);
-  const activeReviewPanel = reviewTabs.some(tab => tab.id === reviewPanel)
-    ? reviewPanel
-    : 'subjects';
-
-  useEffect(() => {
-    if (activeReviewPanel !== reviewPanel) setReviewPanel(activeReviewPanel);
-  }, [activeReviewPanel, reviewPanel]);
-
-  const selectMode = (nextMode: WorkspaceMode, focus = false) => {
-    setMode(nextMode);
-    if (focus) {
-      const index = MODE_TABS.findIndex(tab => tab.id === nextMode);
-      modeTabRefs.current[index]?.focus();
-    }
-  };
-
-  const handleModeKeyDown = (event: React.KeyboardEvent, index: number) => {
-    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-    event.preventDefault();
-    let nextIndex = index;
-    if (event.key === 'ArrowLeft') nextIndex = (index - 1 + MODE_TABS.length) % MODE_TABS.length;
-    if (event.key === 'ArrowRight') nextIndex = (index + 1) % MODE_TABS.length;
-    if (event.key === 'Home') nextIndex = 0;
-    if (event.key === 'End') nextIndex = MODE_TABS.length - 1;
-    selectMode(MODE_TABS[nextIndex].id, true);
-  };
-
-  const selectReviewPanel = (id: ReviewPanelId, focus = false) => {
-    setReviewPanel(id);
-    if (focus) {
-      const index = reviewTabs.findIndex(tab => tab.id === id);
-      reviewTabRefs.current[index]?.focus();
-    }
-  };
-
-  const handleReviewKeyDown = (event: React.KeyboardEvent, index: number) => {
-    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-    event.preventDefault();
-    let nextIndex = index;
-    if (event.key === 'ArrowLeft') nextIndex = (index - 1 + reviewTabs.length) % reviewTabs.length;
-    if (event.key === 'ArrowRight') nextIndex = (index + 1) % reviewTabs.length;
-    if (event.key === 'Home') nextIndex = 0;
-    if (event.key === 'End') nextIndex = reviewTabs.length - 1;
-    selectReviewPanel(reviewTabs[nextIndex].id, true);
-  };
-
-  const openSubjectReview = () => {
-    setReviewPanel('subjects');
-    setMode('review');
+  const tabs = PANELS.filter(tab => tab.id !== 'time' || parsedExamDate !== null);
+  const activePanel = tabs.some(tab => tab.id === panel) ? panel : 'subjects';
+  const coverageProfile = subjects.find(subject => subject.subjectName === coverageSubject);
+  useEffect(() => { if (activePanel !== panel) setPanel(activePanel); }, [activePanel, panel]);
+  useEffect(() => { if (coverageSubject && !coverageProfile) setCoverageSubject(undefined); }, [coverageProfile, coverageSubject]);
+  useEffect(() => { if (!hasGradeData) setResultsOpen(false); }, [hasGradeData]);
+  const openRecord = (subject: string, nodeId?: string) => setDetail({ subject, nodeId });
+  const canStudy = (subject: string) => Boolean(
+    (onStudyNow && actionableTodayBlocks.some(block => sameStudySubject(block.subject, subject))) ||
+    (onStudyTopic && studyTopicSelection(subject, [], profile.examStartDate, subjects.find(item => sameStudySubject(item.subjectName, subject))?.level))
+  );
+  const studySubject = (subject: string) => {
+    const block = actionableTodayBlocks.find(item => sameStudySubject(item.subject, subject));
+    if (block && onStudyNow) { onStudyNow(block); return; }
+    const selected = subjects.find(item => sameStudySubject(item.subjectName, subject));
+    const selection = studyTopicSelection(subject, [], profile.examStartDate, selected?.level);
+    if (selection) onStudyTopic?.(selection);
   };
 
   const dataStillLoading = isLoading
     || topicMastery.isLoaded === false
     || mockResultsHook.isLoaded === false;
   const strategyFacts = [
-    ...(daysUntilExam !== null ? [{ value: daysUntilExam, label: `${daysUntilExam === 1 ? 'day' : 'days'} to exams` }] : []),
+    ...(daysUntilExam !== null && activePanel !== 'today' ? [{ value: daysUntilExam, label: `${daysUntilExam === 1 ? 'day' : 'days'} to exams` }] : []),
     { value: plannedSessions, label: `${plannedSessions === 1 ? 'session' : 'sessions'} this week` },
     ...(hasGradeData ? [{ value: currentPoints, label: 'current points' }] : []),
   ];
@@ -363,172 +327,24 @@ const WarRoom: React.FC<WarRoomProps> = ({
     );
   }
 
-  return (
-    <section className="war-room-workspace pb-16" aria-label="War Room strategy workspace">
-      <div className="flex flex-col gap-3 border-y border-[var(--outline-soft)] py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:py-4">
-        <ul className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[var(--ink-secondary)]" aria-label="Strategy context">
-          {strategyFacts.map((fact, index) => (
-            <li key={fact.label} className="whitespace-nowrap">
-              {index > 0 && <span aria-hidden="true" className="mr-3 hidden text-[var(--outline-strong)] sm:inline">·</span>}
-              <span className="font-semibold text-[var(--ink-primary)]">{fact.value}</span> {fact.label}
-            </li>
-          ))}
-        </ul>
-
-        <div
-          role="tablist"
-          aria-label="War Room mode"
-          className="inline-grid w-full grid-cols-2 gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1 sm:w-[210px] sm:shrink-0"
-        >
-          {MODE_TABS.map((tab, index) => {
-            const selected = mode === tab.id;
-            return (
-              <button
-                key={tab.id}
-                ref={element => { modeTabRefs.current[index] = element; }}
-                id={`war-room-mode-tab-${tab.id}`}
-                type="button"
-                role="tab"
-                aria-selected={selected}
-                aria-controls={`war-room-mode-panel-${tab.id}`}
-                tabIndex={selected ? 0 : -1}
-                onClick={() => selectMode(tab.id)}
-                onKeyDown={event => handleModeKeyDown(event, index)}
-                className={`min-h-9 whitespace-nowrap rounded-lg border px-3 text-[13px] font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)] ${
-                  selected
-                    ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
-                    : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
-                }`}
-              >
-                {tab.label}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      <AnimatePresence mode="wait" initial={false}>
-        <MotionDiv
-          key={mode}
-          id={`war-room-mode-panel-${mode}`}
-          role="tabpanel"
-          aria-labelledby={`war-room-mode-tab-${mode}`}
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -5 }}
-          transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
-          className="pt-6 sm:pt-10"
-        >
-          {mode === 'focus' ? (
-            <BriefingPanel
-              subjects={subjects}
-              topicMap={derivedTopicMap}
-              mockResults={derivedMockResults}
-              allocations={allocations}
-              blockDuration={blockDuration}
-              completedThisWeek={completedThisWeek}
-              todayBlocks={actionableTodayBlocks}
-              onStudyNow={onStudyNow}
-              onReviewSubjects={openSubjectReview}
-            />
-          ) : (
-            <div>
-              <header className="max-w-2xl">
-                <h2 className="font-sans text-[24px] font-semibold leading-tight tracking-[-0.025em] text-[var(--ink-primary)] sm:text-[28px]">
-                  See the detail when you need it
-                </h2>
-                <p className="mt-2 max-w-xl text-sm leading-relaxed text-[var(--ink-secondary)]">
-                  Check coverage, results and the shape of your study plan without crowding the decision in front of you.
-                </p>
-              </header>
-
-              {reviewTabs.length > 1 && (
-                <div className="mt-6">
-                  <div
-                    role="tablist"
-                    aria-label="Review views"
-                    className="grid gap-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] p-1"
-                    style={{ gridTemplateColumns: `repeat(${reviewTabs.length}, minmax(0, 1fr))` }}
-                  >
-                    {reviewTabs.map((tab, index) => {
-                      const selected = activeReviewPanel === tab.id;
-                      return (
-                        <button
-                          key={tab.id}
-                          ref={element => { reviewTabRefs.current[index] = element; }}
-                          id={`war-room-review-tab-${tab.id}`}
-                          type="button"
-                          role="tab"
-                          aria-selected={selected}
-                          aria-controls={`war-room-review-panel-${tab.id}`}
-                          tabIndex={selected ? 0 : -1}
-                          onClick={() => selectReviewPanel(tab.id)}
-                          onKeyDown={event => handleReviewKeyDown(event, index)}
-                          className={`min-h-11 whitespace-nowrap rounded-lg border px-4 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--outline-strong)] ${
-                            selected
-                              ? 'border-[var(--outline-strong)] bg-[var(--surface-paper)] text-[var(--ink-primary)] shadow-sm'
-                              : 'border-transparent text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'
-                          }`}
-                        >
-                          {tab.label}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-
-              <AnimatePresence mode="wait" initial={false}>
-                <MotionDiv
-                  key={activeReviewPanel}
-                  id={`war-room-review-panel-${activeReviewPanel}`}
-                  role="tabpanel"
-                  aria-labelledby={reviewTabs.length > 1 ? `war-room-review-tab-${activeReviewPanel}` : undefined}
-                  aria-label={reviewTabs.length === 1 ? 'Subjects review' : undefined}
-                  initial={{ opacity: 0, y: 6 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -4 }}
-                  transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                  className="pt-8"
-                >
-                  {activeReviewPanel === 'subjects' && (
-                    <CoveragePanel
-                      uid={uid} studySessions={studySessions} onStudyTopic={onStudyTopic} onPracticeTopic={onPracticeTopic}
-                      subjects={subjects}
-                      topicMastery={topicMastery}
-                      debriefs={debriefs}
-                      examDate={profile.examStartDate}
-                    />
-                  )}
-                  {activeReviewPanel === 'trajectory' && hasGradeData && (
-                    <TrajectoryPanel
-                      subjects={subjects}
-                      mockResults={derivedMockResults}
-                      mockResultsHook={mockResultsHook}
-                      daysUntilExam={daysUntilExam ?? 0}
-                    />
-                  )}
-                  {activeReviewPanel === 'time' && daysUntilExam !== null && (
-                    <CountdownPanel
-                      daysUntilExam={daysUntilExam}
-                      subjects={subjects}
-                      allocations={allocations}
-                      weeksUntilExam={weeksUntilExam}
-                      hoursStudiedMap={hoursStudiedMap}
-                      blockDuration={blockDuration}
-                      mockResults={derivedMockResults}
-                      targetCourse={targetCourse}
-                      currentPoints={hasGradeData ? currentPoints : undefined}
-                    />
-                  )}
-                </MotionDiv>
-              </AnimatePresence>
-            </div>
-          )}
-        </MotionDiv>
-      </AnimatePresence>
+  return <KobraScope sound={false} className="war-room-workspace">
+    <section aria-label="War Room strategy workspace">
+      <ul className="wr-strategy-context" aria-label="Strategy context">{strategyFacts.map(fact => <li key={fact.label}><strong>{fact.value}</strong> {fact.label}</li>)}</ul>
+      <Tabs value={activePanel} onValueChange={value => { if (tabs.some(tab => tab.id === value)) setPanel(value as WarRoomPanel); }}>
+        <TabsList activateOnFocus variant="line" className="wr-nav" aria-label="War Room sections">{tabs.map(tab => <TabsTrigger key={tab.id} value={tab.id}>{tab.label}</TabsTrigger>)}</TabsList>
+        <TabsContent value="today"><BriefingPanel subjects={subjects} topicMap={derivedTopicMap} mockResults={derivedMockResults} allocations={allocations} blockDuration={blockDuration} completedThisWeek={completedThisWeek} todayBlocks={actionableTodayBlocks} onStudyNow={onStudyNow} onReviewSubjects={() => setPanel('subjects')} onOpenRecord={openRecord} studySessions={studySessions} daysUntilExam={daysUntilExam} examDate={parsedExamDate} currentDate={currentDate} /></TabsContent>
+        <TabsContent value="subjects"><SubjectBoardPanel profile={profile} sessions={studySessions} mastery={topicMastery} onOpenRecord={openRecord} onBrowseTopics={setCoverageSubject} onStudy={studySubject} canStudy={canStudy} /></TabsContent>
+        <TabsContent value="record"><LearningLedgerPanel uid={uid} profile={profile} sessions={studySessions} mastery={topicMastery} onOpenRecord={openRecord} onResults={hasGradeData ? () => setResultsOpen(true) : undefined} /></TabsContent>
+        {daysUntilExam !== null && <TabsContent value="time"><section className="wr-section-intro"><div><p className="wr-eyebrow">Your time plan / This week</p><h2>Build a week<br /><em>you can keep.</em></h2></div><p>Small sessions. Space to rest.<br />A plan that works around you.</p></section><CountdownPanel daysUntilExam={daysUntilExam} subjects={subjects} allocations={allocations} weeksUntilExam={weeksUntilExam} hoursStudiedMap={hoursStudiedMap} blockDuration={blockDuration} mockResults={derivedMockResults} targetCourse={targetCourse} /></TabsContent>}
+      </Tabs>
+      <footer className="wr-product-footer"><span>A beginning, built around you.</span>{activePanel !== 'today' && <Button variant="ghost" size="sm" onClick={() => setPanel('today')}>Daily brief</Button>}</footer>
     </section>
-  );
+    {detail && <LearningRecordCard key={`${detail.subject}:${profile.examStartDate}:${detail.nodeId}`} uid={uid} subject={detail.subject} nodeId={detail.nodeId} level={subjects.find(item => sameStudySubject(item.subjectName, detail.subject))?.level} examDate={profile.examStartDate} sessions={studySessions} mastery={topicMastery} onStudyTopic={onStudyTopic} onPracticeTopic={onPracticeTopic} onClose={() => setDetail(undefined)} />}
+    {coverageProfile && <SignatureCard open wide onClose={() => setCoverageSubject(undefined)} title="Your topics." eyebrow={`${coverageProfile.subjectName} / Your subject board`} footer={<KobraScope sound={false}><Button variant="outline" onClick={() => setCoverageSubject(undefined)}>Back to subjects</Button></KobraScope>}><CoveragePanel uid={uid} studySessions={studySessions} onStudyTopic={onStudyTopic} onPracticeTopic={onPracticeTopic} subjects={[coverageProfile]} topicMastery={topicMastery} debriefs={debriefs} examDate={profile.examStartDate} /></SignatureCard>}
+    {resultsOpen && hasGradeData && <SignatureCard open wide onClose={() => setResultsOpen(false)} title="Your results." eyebrow="Your grades / On record" footer={<KobraScope sound={false}><Button variant="outline" onClick={() => setResultsOpen(false)}>Back to learning record</Button></KobraScope>}><TrajectoryPanel subjects={subjects} mockResults={derivedMockResults} mockResultsHook={mockResultsHook} daysUntilExam={daysUntilExam ?? 0} /></SignatureCard>}
+  </KobraScope>;
 };
 
+// Account changes remount the workspace, including loaded records and open cards.
+const WarRoom: React.FC<WarRoomProps> = props => <WarRoomWorkspace key={props.uid} {...props} />;
 export default WarRoom;
