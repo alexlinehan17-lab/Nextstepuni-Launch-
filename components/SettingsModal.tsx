@@ -442,7 +442,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
         </MotionDiv>
       )}
     </AnimatePresence>
-    <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
+    <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} onDocumentChange={setLegalDoc} />
     <DataRightsModal
       open={dataRightsOpen}
       onClose={() => setDataRightsOpen(false)}
