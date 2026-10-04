@@ -28,6 +28,7 @@ const innovationState = vi.hoisted(() => ({
     totalPoints: number;
     timestamp: number;
   }>,
+  canonical: {} as Record<string, Record<string, { confidence: 'not-started' | 'shaky' | 'solid'; updatedAt: number; source: 'manual' | 'debrief' | 'import' }>>,
   importSyllabusTopics: vi.fn(),
   setTopicConfidence: vi.fn(),
   addMockResult: vi.fn(),
@@ -56,7 +57,7 @@ vi.mock('@/contexts/InnovationDataContext', () => ({
       isLoaded: true,
       importSyllabusTopics: innovationState.importSyllabusTopics,
       getSubjectTopics: (subject: string) => innovationState.mastery[subject] ?? {},
-      getCanonicalSubjectTopics: vi.fn(() => ({})),
+      getCanonicalSubjectTopics: (subject: string) => innovationState.canonical[subject] ?? {},
       getTopicConfidence: (subject: string, topic: string) => (
         innovationState.mastery[subject]?.[topic]?.confidence ?? 'not-started'
       ),
@@ -80,6 +81,7 @@ vi.mock('@/contexts/InnovationDataContext', () => ({
 }));
 
 import WarRoom, { type WarRoomStudyBlock } from '@/components/WarRoom';
+import { getStudyTopicOptions } from '@/services/studyTopicHistory';
 import { createDevStudentProfile } from '@/data/devStudent';
 import { DAYS_OF_WEEK, getBlockId } from '@/components/subjectData';
 import {
@@ -125,6 +127,7 @@ const renderWarRoom = ({
 describe('War Room minimalist workspace', () => {
   beforeEach(() => {
     innovationState.mastery = {};
+    innovationState.canonical = {};
     innovationState.mocks = [];
     firestoreState.sessions = [];
     firestoreState.progress = {};
@@ -140,7 +143,7 @@ describe('War Room minimalist workspace', () => {
     renderWarRoom({ onStudyNow });
 
     expect(await screen.findByRole('region', { name: 'War Room strategy workspace' })).toBeInTheDocument();
-    expect(screen.getByRole('tab', { name: 'Focus' })).toHaveAttribute('aria-selected', 'true');
+    expect(screen.getByRole('tab', { name: 'Today' })).toHaveAttribute('aria-selected', 'true');
     expect(screen.getByRole('heading', { name: 'Geography' })).toBeInTheDocument();
 
     const studyActions = screen.getAllByRole('button', { name: 'Start a 45-minute session' });
@@ -177,7 +180,7 @@ describe('War Room minimalist workspace', () => {
 
     renderWarRoom();
 
-    expect(await screen.findByText('Highest impact')).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: 'Geography' })).toBeInTheDocument();
     const disclosure = screen.getByRole('button', { name: 'Why this subject?' });
     expect(disclosure).toHaveAttribute('aria-expanded', 'false');
     expect(screen.queryByText('25% weighted coverage across 2 topics.')).not.toBeInTheDocument();
@@ -198,13 +201,10 @@ describe('War Room minimalist workspace', () => {
 
     renderWarRoom();
 
-    fireEvent.click(await screen.findByRole('tab', { name: 'Review' }));
+    fireEvent.click(await screen.findByRole('tab', { name: 'Subjects' }));
+    const geographyCard = screen.getByRole('article', { name: 'Geography subject card' });
+    fireEvent.click(within(geographyCard).getByRole('button', { name: 'Browse topics' }));
     expect(await screen.findByRole('heading', { name: 'Coverage and confidence' })).toBeInTheDocument();
-
-    const geography = screen.getByRole('button', { name: /Geography/ });
-    fireEvent.click(geography);
-    const selectedGeography = screen.getByRole('button', { name: /^Geography/, pressed: true });
-    expect(selectedGeography).toHaveAttribute('aria-pressed', 'true');
     expect(screen.getByRole('heading', { name: 'For 2027 exam candidates only' })).toBeInTheDocument();
     expect(screen.getByText(/first examined in 2028/)).toBeInTheDocument();
     expect(screen.queryByText(/exam frequency/i)).not.toBeInTheDocument();
@@ -229,11 +229,14 @@ describe('War Room minimalist workspace', () => {
       'manual',
     );
 
-    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Back to subjects' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Learning record' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Results and grades' }));
     expect(await screen.findByRole('heading', { name: 'Mock trajectory' })).toBeInTheDocument();
     expect(screen.getByText('No mock results yet')).toBeInTheDocument();
     expect(screen.queryByText('Track your mock exam trajectory')).not.toBeInTheDocument();
 
+    fireEvent.click(screen.getByRole('button', { name: 'Back to learning record' }));
     fireEvent.click(screen.getByRole('tab', { name: 'Time plan' }));
     expect(await screen.findByRole('heading', { name: 'A manageable week, repeated' })).toBeInTheDocument();
     expect(screen.queryByText('Exam runway')).not.toBeInTheDocument();
@@ -245,8 +248,8 @@ describe('War Room minimalist workspace', () => {
     vi.setSystemTime(new Date('2026-06-03T00:30:00+01:00'));
     renderWarRoom();
 
-    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
-    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Learning record' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Results and grades' }));
     fireEvent.click(screen.getByRole('button', { name: 'Single result' }));
 
     expect(screen.getByLabelText('Date')).toHaveValue('2026-06-03');
@@ -266,8 +269,8 @@ describe('War Room minimalist workspace', () => {
   test('validates and saves one exact single-result payload', () => {
     renderWarRoom();
 
-    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
-    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Learning record' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Results and grades' }));
     fireEvent.click(screen.getByRole('button', { name: 'Single result' }));
 
     fireEvent.change(screen.getByLabelText('Subject'), { target: { value: 'Geography' } });
@@ -299,8 +302,8 @@ describe('War Room minimalist workspace', () => {
   test('applies the Higher Maths CAO bonus to a single-result payload', () => {
     renderWarRoom();
 
-    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
-    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Learning record' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Results and grades' }));
     fireEvent.click(screen.getByRole('button', { name: 'Single result' }));
 
     fireEvent.change(screen.getByLabelText('Subject'), { target: { value: 'Mathematics' } });
@@ -326,8 +329,8 @@ describe('War Room minimalist workspace', () => {
       <WarRoom uid="" profile={profile} timetableCompletions={{}} />,
     );
 
-    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
-    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Learning record' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Results and grades' }));
     fireEvent.click(screen.getByRole('button', { name: 'Single result' }));
 
     expect(screen.getByLabelText('Subject')).toHaveValue('Politics & Society');
@@ -356,8 +359,8 @@ describe('War Room minimalist workspace', () => {
     }];
 
     renderWarRoom();
-    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
-    fireEvent.click(screen.getByRole('tab', { name: 'Results' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Learning record' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Results and grades' }));
 
     expect(screen.getByText('No mock results yet')).toBeInTheDocument();
     expect(screen.queryByRole('heading', { name: 'Performance over time' })).not.toBeInTheDocument();
@@ -390,18 +393,16 @@ describe('War Room minimalist workspace', () => {
 
     render(<WarRoom uid="" profile={profile} timetableCompletions={{}} />);
 
-    const context = screen.getByRole('list', { name: 'Strategy context' });
-    expect(within(context).getByText((_, element) => (
-      element?.tagName === 'LI' && element.textContent === '1 day to exams'
-    ))).toBeInTheDocument();
+    const context = screen.getByRole('group', { name: 'Exam countdown' });
+    expect(within(context).getByText('1')).toBeInTheDocument();
+    expect(within(context).getByText('day to your exams')).toBeInTheDocument();
 
     await act(async () => {
       vi.advanceTimersByTime(31_000);
     });
 
-    expect(within(context).getByText((_, element) => (
-      element?.tagName === 'LI' && element.textContent === '0 days to exams'
-    ))).toBeInTheDocument();
+    expect(within(context).getByText('0')).toBeInTheDocument();
+    expect(within(context).getByText('days to your exams')).toBeInTheDocument();
   });
 
   test('does not count an early-ended study record as a completed weekly session', async () => {
@@ -505,31 +506,24 @@ describe('War Room minimalist workspace', () => {
     expect(expectedPayloads).toContainEqual(onStudyNow.mock.calls[0][0]);
   });
 
-  test('supports keyboard navigation from Focus into every Review view', async () => {
+  test('supports keyboard navigation through every Kobra workspace tab', async () => {
     renderWarRoom();
-
-    const focusTab = await screen.findByRole('tab', { name: 'Focus' });
-    focusTab.focus();
-    fireEvent.keyDown(focusTab, { key: 'ArrowRight' });
-
-    expect(screen.getByRole('tab', { name: 'Review' })).toHaveAttribute('aria-selected', 'true');
-    expect(await screen.findByRole('heading', { name: 'Coverage and confidence' })).toBeInTheDocument();
-
-    const subjectsTab = screen.getByRole('tab', { name: 'Subjects' });
-    expect(subjectsTab).toHaveAttribute('aria-selected', 'true');
-    subjectsTab.focus();
-    fireEvent.keyDown(subjectsTab, { key: 'ArrowRight' });
-
-    const resultsTab = screen.getByRole('tab', { name: 'Results' });
-    expect(resultsTab).toHaveFocus();
-    expect(resultsTab).toHaveAttribute('aria-selected', 'true');
-    expect(await screen.findByRole('heading', { name: 'Mock trajectory' })).toBeInTheDocument();
-
-    fireEvent.keyDown(resultsTab, { key: 'ArrowRight' });
-
-    const timeTab = screen.getByRole('tab', { name: 'Time plan' });
-    expect(timeTab).toHaveFocus();
-    expect(timeTab).toHaveAttribute('aria-selected', 'true');
+    const today = await screen.findByRole('tab', { name: 'Today' });
+    today.focus();
+    fireEvent.keyDown(today, { key: 'ArrowRight' });
+    const subjects = screen.getByRole('tab', { name: 'Subjects' });
+    await waitFor(() => expect(subjects).toHaveFocus());
+    expect(subjects).toHaveAttribute('aria-selected', 'true');
+    expect(await screen.findByRole('heading', { name: /Your subjects.*Your next moves/ })).toBeInTheDocument();
+    fireEvent.keyDown(subjects, { key: 'ArrowRight' });
+    const record = screen.getByRole('tab', { name: 'Learning record' });
+    await waitFor(() => expect(record).toHaveFocus());
+    expect(record).toHaveAttribute('aria-selected', 'true');
+    expect(await screen.findByRole('heading', { name: /The small steps.*On record/ })).toBeInTheDocument();
+    fireEvent.keyDown(record, { key: 'ArrowRight' });
+    const time = screen.getByRole('tab', { name: 'Time plan' });
+    await waitFor(() => expect(time).toHaveFocus());
+    expect(time).toHaveAttribute('aria-selected', 'true');
     expect(await screen.findByRole('heading', { name: 'Where the time goes' })).toBeInTheDocument();
   });
 
@@ -553,10 +547,10 @@ describe('War Room minimalist workspace', () => {
     expect(screen.queryByText(/days to exams/i)).not.toBeInTheDocument();
     expect(screen.queryByText(/current points/i)).not.toBeInTheDocument();
 
-    fireEvent.click(screen.getByRole('tab', { name: 'Review' }));
-    expect(await screen.findByRole('heading', { name: 'Coverage and confidence' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('tab', { name: 'Subjects' }));
+    expect(await screen.findByRole('heading', { name: /Your subjects.*Your next moves/ })).toBeInTheDocument();
     expect(screen.queryByRole('tab', { name: 'Time plan' })).not.toBeInTheDocument();
-    expect(screen.queryByRole('tab', { name: 'Results' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Results and grades' })).not.toBeInTheDocument();
   });
 
   test('reconciles the active review and selected subject after settings edits', async () => {
@@ -565,7 +559,7 @@ describe('War Room minimalist workspace', () => {
       <WarRoom uid="" profile={profile} timetableCompletions={{}} />,
     );
 
-    fireEvent.click(await screen.findByRole('tab', { name: 'Review' }));
+    fireEvent.click(await screen.findByRole('tab', { name: 'Subjects' }));
     fireEvent.click(await screen.findByRole('tab', { name: 'Time plan' }));
     expect(await screen.findByRole('heading', { name: 'Where the time goes' })).toBeInTheDocument();
 
@@ -576,9 +570,118 @@ describe('War Room minimalist workspace', () => {
     };
     rerender(<WarRoom uid="" profile={updatedProfile} timetableCompletions={{}} />);
 
-    expect(await screen.findByRole('heading', { name: 'Coverage and confidence' })).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { name: /Your subjects.*Your next moves/ })).toBeInTheDocument();
     expect(screen.queryByRole('tab', { name: 'Time plan' })).not.toBeInTheDocument();
-    expect(screen.queryByRole('tab', { name: 'Results' })).not.toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Geography' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.queryByRole('button', { name: 'Results and grades' })).not.toBeInTheDocument();
+    expect(screen.getByRole('article', { name: 'Geography subject card' })).toBeInTheDocument();
+    expect(screen.queryByRole('article', { name: 'Politics & Society subject card' })).not.toBeInTheDocument();
   });
+  test('uses exact saved time, deduplicates records and keeps early sessions visible', async () => {
+    const early = { id: 'early', date: '2026-08-10', subject: 'Geography', sessionType: 'revision', plannedMinutes: 45, actualSeconds: 60, startedAt: 1, completedAt: 2, pointsEarned: 0, hadReflection: false };
+    firestoreState.sessions = [early, { ...early }, { ...early, id: 'maths', subject: 'Maths', actualSeconds: 2700, completedAt: 3 }];
+    renderWarRoom({ uid: 'saved-records' });
+    fireEvent.click(await screen.findByRole('tab', { name: 'Subjects' }));
+    const geography = screen.getByRole('article', { name: 'Geography subject card' });
+    expect(within(geography).getByText('1 minute')).toBeInTheDocument();
+    const maths = screen.getByRole('article', { name: 'Mathematics subject card' });
+    expect(within(maths).getByText('45 minutes')).toBeInTheDocument();
+    fireEvent.change(screen.getByRole('searchbox', { name: 'Find a subject' }), { target: { value: 'geo' } });
+    expect(screen.getAllByRole('article')).toHaveLength(1);
+    fireEvent.click(screen.getByRole('tab', { name: 'Learning record' }));
+    expect(screen.getByLabelText('46 minutes')).toHaveTextContent('46 min');
+    expect(screen.getByText('recorded study / 2 saved sessions')).toBeInTheDocument();
+    const rows = document.querySelectorAll('.wr-history-row');
+    expect(rows[0]).toHaveTextContent('Maths');
+    expect(rows[1]).toHaveTextContent('Geography');
+  });
+
+  test('opens the real Signature record, carries its topic selection and restores focus', async () => {
+    const onStudyTopic = vi.fn();
+    const profile = createDevStudentProfile(NOW);
+    render(<WarRoom uid="" profile={profile} timetableCompletions={{}} todayBlocks={[]} onStudyTopic={onStudyTopic} />);
+    fireEvent.click(await screen.findByRole('tab', { name: 'Subjects' }));
+    const card = screen.getByRole('article', { name: 'Geography subject card' });
+    const trigger = within(card).getByRole('button', { name: 'Learning record' });
+    trigger.focus();
+    fireEvent.click(trigger);
+    const dialog = await screen.findByRole('dialog', { name: 'The subject, on record.' }, { timeout: 15000 });
+    const topic = getStudyTopicOptions('Geography', profile.examStartDate, 'higher').find(item => item.kind === 'topic')!;
+    fireEvent.change(within(dialog).getByLabelText('Look at'), { target: { value: topic.id } });
+    fireEvent.click(within(dialog).getByRole('button', { name: 'Start studying' }));
+    expect(onStudyTopic).toHaveBeenCalledWith({ subjectId: 'geography', specificationId: topic.specificationId, topicIds: [topic.id] });
+    fireEvent.keyDown(document, { key: 'Escape' });
+    await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
+    await waitFor(() => expect(trigger).toHaveFocus());
+  }, 20000);
+
+  test('records confidence with the canonical curriculum ID in the ledger', async () => {
+    const profile = createDevStudentProfile(NOW);
+    render(<WarRoom uid="" profile={profile} timetableCompletions={{}} />);
+    fireEvent.click(await screen.findByRole('tab', { name: 'Learning record' }));
+    const topic = getStudyTopicOptions(profile.subjects[0].subjectName, profile.examStartDate, profile.subjects[0].level).find(item => item.kind === 'topic')!;
+    fireEvent.click(screen.getByRole('button', { name: 'Solid' }));
+    expect(innovationState.setTopicConfidence).toHaveBeenCalledWith(profile.subjects[0].subjectName, topic.name, 'solid', 'manual', topic.id);
+    expect(await screen.findByText('scored questions')).toBeInTheDocument();
+  });
+
+  test('does not carry loaded records or open cards between accounts', async () => {
+    const profile = createDevStudentProfile(NOW);
+    firestoreState.sessions = [{ id: 'previous', date: '2026-08-10', subject: 'Geography', sessionType: 'revision', plannedMinutes: 45, actualSeconds: 7200, startedAt: 1, completedAt: 2, pointsEarned: 0, hadReflection: false }];
+    const { rerender } = render(<WarRoom uid="previous" profile={profile} timetableCompletions={{}} todayBlocks={[TODAY_BLOCK]} />);
+    expect(await screen.findByLabelText('120 minutes')).toHaveTextContent('2 hr');
+    fireEvent.click(screen.getByRole('tab', { name: 'Learning record' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Results and grades' }));
+    expect(screen.getByRole('dialog')).toBeInTheDocument();
+    firestoreState.sessions = [];
+    rerender(<WarRoom uid="next" profile={profile} timetableCompletions={{}} todayBlocks={[TODAY_BLOCK]} />);
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(screen.queryByLabelText('120 minutes')).not.toBeInTheDocument();
+    expect(await screen.findByLabelText('0 minutes')).toHaveTextContent('0 min');
+  });
+
+  test('keeps an empty day honest and opens subject choices', async () => {
+    renderWarRoom({ todayBlocks: [] });
+    expect(await screen.findByText('No sessions left in today’s plan.')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Start a \d+-minute session/ })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Choose a subject' }));
+    expect(screen.getByRole('tab', { name: 'Subjects' })).toHaveAttribute('aria-selected', 'true');
+  });
+
+  test('shows the latest canonical topic confidence without guessing from display labels', async () => {
+    const profile = createDevStudentProfile(NOW);
+    const topic = getStudyTopicOptions('Geography', profile.examStartDate, 'higher').find(item => item.kind === 'topic')!;
+    innovationState.mastery = { Geography: { [topic.name]: { confidence: 'solid', updatedAt: 100, source: 'manual' } } };
+    const { rerender } = render(<WarRoom uid="" profile={profile} timetableCompletions={{}} initialMode="review" initialReviewPanel="subjects" />);
+    const card = screen.getByRole('article', { name: 'Geography subject card' });
+    expect(within(card).getByText('Not recorded')).toBeInTheDocument();
+    innovationState.canonical = { Geography: { [topic.id]: { confidence: 'shaky', updatedAt: 200, source: 'manual' } } };
+    rerender(<WarRoom uid="" profile={profile} timetableCompletions={{}} initialMode="review" initialReviewPanel="subjects" />);
+    expect(within(card).getByText('Shaky')).toBeInTheDocument();
+    expect(within(card).getByText(topic.name)).toBeInTheDocument();
+    expect(within(card).queryByText('Solid')).not.toBeInTheDocument();
+  });
+
+  test('retains records for subjects without a verified curriculum instead of opening an empty card', async () => {
+    const profile = { ...createDevStudentProfile(NOW), subjects: [{ subjectName: 'Study skills', level: 'higher' as const }] };
+    firestoreState.sessions = [{ id: 'unmapped', date: '2026-08-10', subject: 'Study skills', sessionType: 'revision', plannedMinutes: 45, actualSeconds: 125, startedAt: 1, completedAt: 2, pointsEarned: 0, hadReflection: false }];
+    render(<WarRoom uid="unmapped" profile={profile} timetableCompletions={{}} initialMode="review" />);
+    const card = await screen.findByRole('article', { name: 'Study skills subject card' });
+    fireEvent.click(within(card).getByRole('button', { name: 'Learning record' }));
+    const dialog = screen.getByRole('dialog', { name: 'The subject, on record.' });
+    expect(within(dialog).getAllByText('2 min 5 sec')).toHaveLength(2);
+    expect(within(dialog).getByText(/verified topic map is not available/)).toBeInTheDocument();
+  });
+
+  test('pages the dated record without dropping older sessions', async () => {
+    const profile = createDevStudentProfile(NOW);
+    firestoreState.sessions = Array.from({ length: 15 }, (_, index) => ({ id: `history-${index}`, date: '2026-08-10', subject: 'Geography', sessionType: 'revision', plannedMinutes: 45, actualSeconds: 60, startedAt: 1, completedAt: index + 2, pointsEarned: 0, hadReflection: false }));
+    render(<WarRoom uid="history" profile={profile} timetableCompletions={{}} />);
+    fireEvent.click(await screen.findByRole('tab', { name: 'Learning record' }));
+    expect(document.querySelectorAll('.wr-history-row')).toHaveLength(10);
+    expect(screen.getByText('recorded study / 15 saved sessions')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Show more sessions (5 remaining)' }));
+    expect(document.querySelectorAll('.wr-history-row')).toHaveLength(15);
+    expect(screen.queryByRole('button', { name: /Show more sessions/ })).not.toBeInTheDocument();
+  });
+
 });
