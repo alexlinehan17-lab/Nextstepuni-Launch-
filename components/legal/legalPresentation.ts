@@ -1,7 +1,7 @@
 /** Presentation shared by the app reader and the public legal documents. */
 import { PRIVACY_NOTICE, TERMS_OF_USE, type LegalDoc } from './legalContent';
 
-export const LEGAL_DRAFT_NOTE = 'Draft under legal review. The wording may change before final publication.';
+export const LEGAL_DOCUMENT_NOTE = 'Published documents · Clear information, fair terms and your rights.';
 
 export const legalSections = (doc: LegalDoc) => doc === 'privacy' ? PRIVACY_NOTICE : TERMS_OF_USE;
 export const legalSectionId = (doc: LegalDoc, index: number) => `${doc}-section-${index + 1}`;

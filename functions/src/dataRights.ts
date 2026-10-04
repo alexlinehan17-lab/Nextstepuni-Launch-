@@ -27,6 +27,7 @@ type ActorRole = "self" | "gc" | "admin";
 
 interface CascadeReport {
   usersDeleted: number;
+  legalAgreementRecordsDeleted: number;
   progressDeleted: number;
   sessionsDeleted: number;
   srsDeleted: number;
@@ -121,7 +122,7 @@ async function cascadeDeleteUser(
   uid: string,
 ): Promise<CascadeReport> {
   const r: CascadeReport = {
-    usersDeleted: 0, progressDeleted: 0, sessionsDeleted: 0, srsDeleted: 0, settingsDeleted: 0,
+    legalAgreementRecordsDeleted: 0, usersDeleted: 0, progressDeleted: 0, sessionsDeleted: 0, srsDeleted: 0, settingsDeleted: 0,
     responsesDeleted: 0, notificationsDeleted: 0, kudosDeleted: 0, giftsDeleted: 0,
     gcFlagsDeleted: 0, islandPublicDeleted: 0, staffMembershipsDeleted: 0,
     accessRecordsDeleted: 0, rateLimitsDeleted: 0, analyticsEventsDeleted: 0,
@@ -151,6 +152,8 @@ async function cascadeDeleteUser(
   } catch (err) {
     if ((err as { code?: string }).code !== "auth/user-not-found") throw err;
   }
+
+  r.legalAgreementRecordsDeleted = await deleteAll(db, db.collection("legalAgreementRecords").where("uid", "==", uid));
 
   // progress/{uid}/sessions/* subcollection
   r.sessionsDeleted = await deleteAll(db, db.collection("progress").doc(uid).collection("sessions"));
@@ -423,6 +426,8 @@ export const exportMyData = onCall(CALLABLE_OPTIONS, async (request) => {
 
   const data: Record<string, unknown> = {};
   data.profile = await get1("users");
+  data.legalAgreements = (await db.collection("legalAgreementRecords").where("uid", "==", targetUid).get())
+    .docs.map(record => ({ id: record.id, ...record.data() }));
   data.progress = await get1("progress");
   data.settings = await get1("settings");
   data.responses = await get1("responses");
@@ -487,7 +492,7 @@ export const exportMyData = onCall(CALLABLE_OPTIONS, async (request) => {
       schemaVersion: 1,
       requesterUid: targetUid,
       actorRole,
-      note: "Personal data held by NextStepUni Ltd (Processor) on behalf of your school (Controller). Identifiers belonging to other students are replaced with stable hashes. See the Privacy Notice for the categories, recipients, retention period and your rights.",
+      note: "School programme information is processed by NextStepUni Limited on your school's instructions. NextStepUni also controls limited information for its own purposes described in the Privacy Notice. Identifiers belonging to other students are replaced with stable hashes. See the notice for categories, recipients, retention criteria and your rights.",
     },
     data,
   };

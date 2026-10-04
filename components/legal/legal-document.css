@@ -139,6 +139,29 @@
 .legal-footer p + p { margin-top: 4px; }
 .legal-footer-links { display: flex; flex-wrap: wrap; gap: 22px; font-size: 13px; }
 
+.legal-agreement-screen { position: fixed; inset: 0; z-index: 290; overflow-y: auto; background: #fff; padding: 48px 24px; }
+.dark .legal-agreement-screen { background: #242720; }
+.legal-dialog.legal-agreement { max-width: 650px; max-height: none; margin: auto; padding: 20px 0; border: 0; border-radius: 0; box-shadow: none; overflow: visible; }
+.legal-agreement > .legal-label { margin-top: 54px; }
+.legal-agreement h1 { margin-top: 20px; font-size: clamp(44px, 7vw, 66px); line-height: 1.05; font-weight: 700; letter-spacing: -0.055em; }
+.legal-agreement h1 > span { color: var(--legal-orange); }
+.legal-agreement > p:not(.legal-label, .legal-wordmark) { margin-top: 20px; color: var(--legal-body); font-size: 17px; line-height: 1.6; }
+.legal-agreement-documents { margin: 30px 0; border-top: 1px solid var(--legal-line); }
+.legal-agreement-documents button { display: flex; width: 100%; justify-content: space-between; gap: 24px; padding: 20px 0; border: 0; border-bottom: 1px solid var(--legal-line); background: none; color: var(--legal-ink); font: inherit; font-size: 19px; cursor: pointer; text-align: left; }
+.legal-agreement-documents button > span { color: var(--legal-link); }
+.legal-agreement-check { display: flex; gap: 13px; align-items: flex-start; margin: 20px 0; color: var(--legal-ink); font-size: 16px; line-height: 1.5; cursor: pointer; }
+.legal-agreement-check input { flex: 0 0 20px; width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--legal-orange); }
+.legal-agreement-check input:focus-visible { outline: 2px solid var(--legal-link); outline-offset: 4px; }
+.legal-agreement-note { color: var(--legal-muted); font-size: 13px; line-height: 1.6; }
+.legal-agreement > .legal-agreement-note { font-size: 13px !important; }
+.legal-agreement-note a { color: var(--legal-link); text-underline-offset: 3px; }
+.legal-agreement [role='alert'] { color: var(--legal-link); margin: 16px 0; line-height: 1.6; }
+.legal-agreement-continue { display: flex; width: 100%; justify-content: space-between; gap: 24px; margin-top: 28px; padding: 18px 22px; border: 1.5px solid #242720; border-radius: 4px; box-shadow: 3px 3px 0 #242720; background: var(--legal-orange); color: #242720; font: inherit; font-size: 18px; font-weight: 700; cursor: pointer; }
+.legal-agreement-continue:disabled { opacity: 0.5; cursor: default; box-shadow: none; }
+.legal-agreement-exit { display: flex; justify-content: space-between; gap: 24px; padding-top: 36px; }
+.legal-agreement-exit button, .legal-agreement-exit a { padding: 0; border: 0; background: none; color: var(--legal-body); font: inherit; font-size: 14px; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+@media (max-width: 600px) { .legal-agreement-screen { padding: max(28px, env(safe-area-inset-top)) 22px max(32px, env(safe-area-inset-bottom)); } .legal-agreement > .legal-label { margin-top: 38px; } }
+
 /* The public document is a real page; the app uses the same paper inside a dialog. */
 body.legal-page { margin: 0; }
 .legal-page-wrap { max-width: 1184px; margin: auto; padding: 0 48px; }

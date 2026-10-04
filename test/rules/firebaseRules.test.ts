@@ -84,6 +84,18 @@ describe('Firestore ownership and staff boundaries', () => {
     await assertFails(updateDoc(doc(db, 'users/alice'), { school: 'school-b' }));
   });
 
+  it('keeps legal agreement evidence server-only on create, update and records', async () => {
+    const db = environment.authenticatedContext('alice', { auth_time: 1 }).firestore();
+    await assertFails(updateDoc(doc(db, 'users/alice'), { legalAcceptance: { acceptedAt: 'forged' } }));
+    await assertFails(setDoc(doc(db, 'legalAgreementRecords/alice_release'), { uid: 'alice', acceptedAt: 'forged' }));
+    const fresh = environment.authenticatedContext('fresh-agreement', { auth_time: 1 }).firestore();
+    await assertFails(setDoc(doc(fresh, 'users/fresh-agreement'), { name: 'Student', avatar: 'A', legalAcceptance: { acceptedAt: 'forged' } }));
+    await environment.withSecurityRulesDisabled(async context => {
+      await setDoc(doc(context.firestore(), 'legalAgreementRecords/alice_release'), { uid: 'alice', acceptedAt: 'server-record' });
+    });
+    await assertFails(getDoc(doc(db, 'legalAgreementRecords/alice_release')));
+  });
+
   it('keeps legacy isAdmin:false profiles writable without allowing escalation', async () => {
     const db = environment.authenticatedContext('legacy', { auth_time: 1 }).firestore();
     await assertSucceeds(updateDoc(doc(db, 'users/legacy'), { name: 'Updated legacy student' }));

@@ -278,7 +278,7 @@ The trade-off is a small operational increase (two Cloud Functions, one new coll
 
 ## 2026-04-30 — Finding: Firestore region is `europe-west2`, not `us-central1`
 
-While deploying the new `onProgressWritten` / `onUserWritten` Firestore-triggered Cloud Functions, the Firebase CLI surfaced the actual database region in the Eventarc trigger path (`projects/nextstepuni-app/locations/europe-west2/triggers/...`). DPIA Section 1.5, DPIA R8, DPA Schedule 6 and ALEX_TO_CONFIRM Q1 had recorded `us-central1` as the assumed region; the actual region is `europe-west2` (London, EEA). Compliance documents to be updated in a later pass; flagged today only.
+While deploying the new `onProgressWritten` / `onUserWritten` Firestore-triggered Cloud Functions, the Firebase CLI surfaced the actual database region in the Eventarc trigger path (`projects/nextstepuni-app/locations/europe-west2/triggers/...`). DPIA Section 1.5, DPIA R8, DPA Schedule 6 and ALEX_TO_CONFIRM Q1 had recorded `us-central1` as the assumed region; the actual region is `europe-west2` (London, United Kingdom, outside the EEA). The original entry incorrectly described London as EEA; corrected on 4 October 2026 alongside the public legal notices.
 
 ---
 
@@ -327,3 +327,44 @@ DPIA risk **R1**: **Closed 2026-04-30**. The cross-tenant exposure has been remo
 ---
 
 (Future entries appended below.)
+
+## 4 October 2026 — legal notice and explicit agreement publication
+
+Rewrote the public and in-app Privacy Notice and Terms of Use as version
+`2026-10-04`, retaining the approved legal-reader design. The owner confirmed
+NextStepUni Limited, CRO 818010, the supplied contact address, executed school
+DPAs/controller-approved lawful bases and a programme for students aged 16+.
+These are owner-confirmed facts, not independently inspected contracts or a
+solicitor certification.
+
+The published copy separates school-controller processing from NextStepUni's
+limited controller purposes; removes the unsupported school-enrolment consent
+and section 41/Article 9 education-exemption claims; identifies teaching-staff
+access and external network requests; and correctly identifies London as UK,
+outside the EEA, and Firebase Authentication as US processing. Retention text
+uses the actual school-instruction criteria and implemented bounded TTLs,
+rather than promising an unimplemented automatic end-of-programme purge.
+Terms preserve statutory rights, qualify under-18 capacity, describe fair
+suspension/review and material changes, and do not impose a student indemnity.
+
+All student and school-staff sign-in routes now use the same account agreement
+check. Email registration hands its actual checkbox action to an authenticated
+callable; social and returning accounts must act explicitly. The callable
+validates the separate published versions and required actions, uses server
+time, preserves first acceptance on retries, and atomically writes a current
+profile record plus versioned evidence. Rules prevent client-forged evidence.
+Records are included in data export and the existing erasure cascade. Users
+can read the documents before sign-in and request a copy/deletion by email
+without agreeing. Company operators, local demos and password recovery retain
+their existing access paths. The preceding published wording remains available
+as clearly marked, non-indexed historical documents, including in installed
+PWAs.
+
+Remaining evidence/operational work is recorded in ALEX_TO_CONFIRM and the DPIA:
+retain executed school agreements and the exact school statutory basis; assess
+any intentional special-category processing; document controller legitimate
+interests and retention instructions; implement the broader end-of-programme
+lifecycle; and obtain Irish solicitor review of under-18 contractual capacity
+and the final agreements. This publication does not resolve those by wording
+alone. The supplied address has not been represented as a verified registered
+office; a complete postal address/registered-office record should be retained.

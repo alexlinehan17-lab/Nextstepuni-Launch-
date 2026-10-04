@@ -1,5 +1,6 @@
-import { LEGAL_LAST_UPDATED, LEGAL_TITLES, LEGAL_URL_RE, PRIVACY_POLICY_VERSION, SUPPORT_EMAIL, type LegalDoc } from './legalContent';
-import { LEGAL_DRAFT_NOTE, legalBlocks, legalSections, legalSectionId, legalSectionNumber } from './legalPresentation';
+import { LEGAL_LAST_UPDATED, LEGAL_TITLES, LEGAL_URL_RE, PRIVACY_POLICY_VERSION, SUPPORT_EMAIL, TERMS_VERSION, COMPANY_NAME, COMPANY_NUMBER, COMPANY_ADDRESS, type LegalDoc } from './legalContent';
+import { ARCHIVED_PRIVACY_NOTICE, ARCHIVED_TERMS_OF_USE } from './legalArchive';
+import { LEGAL_DOCUMENT_NOTE, legalBlocks, legalSections, legalSectionId, legalSectionNumber } from './legalPresentation';
 
 const escapeHtml = (text: string) => text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 const linkedText = (text: string) => {
@@ -10,8 +11,11 @@ const linkedText = (text: string) => {
 };
 
 /** Standalone, indexable documents that remain fully usable without JavaScript. */
-export function renderLegalPage(doc: LegalDoc, stylesheet: string): string {
-  const sections = legalSections(doc);
+export function renderLegalPage(doc: LegalDoc, stylesheet: string, archived = false): string {
+  const sections = archived ? (doc === 'privacy' ? ARCHIVED_PRIVACY_NOTICE : ARCHIVED_TERMS_OF_USE) : legalSections(doc);
+  const version = archived ? '2026-09-24' : doc === 'privacy' ? PRIVACY_POLICY_VERSION : TERMS_VERSION;
+  const updated = archived ? '24 September 2026' : LEGAL_LAST_UPDATED;
+  const note = archived ? 'Archived version · Historical wording, superseded on 4 October 2026. The links above open the current documents.' : LEGAL_DOCUMENT_NOTE;
   const contents = `<ol>${sections.map((section, index) => `<li><a href="#${legalSectionId(doc, index)}"><span aria-hidden="true">${legalSectionNumber(index)}</span><span>${escapeHtml(section.heading)}</span></a></li>`).join('')}</ol>`;
   const documentLinks = (className: string) => `<nav class="${className}" aria-label="Legal documents">${(['privacy', 'terms'] as const).map(document => `<a href="/${document}.html"${doc === document ? ' aria-current="page"' : ''}>${LEGAL_TITLES[document]}</a>`).join('')}</nav>`;
 
@@ -20,7 +24,7 @@ export function renderLegalPage(doc: LegalDoc, stylesheet: string): string {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="${archived ? 'noindex, follow' : 'index, follow'}" />
   <title>${LEGAL_TITLES[doc]} · NextStepUni</title>
   <link rel="icon" href="/icons/north-star-favicon-32x32.png" />
   <link rel="preload" href="/fonts/abc-diatype-regular.woff2" as="font" type="font/woff2" crossorigin />
@@ -39,10 +43,10 @@ export function renderLegalPage(doc: LegalDoc, stylesheet: string): string {
         ${documentLinks('legal-switcher')}
         <h1 class="legal-title">${LEGAL_TITLES[doc]}<span aria-hidden="true">.</span></h1>
         <dl class="legal-meta">
-          <div><dt class="legal-label">Last updated</dt><dd>${LEGAL_LAST_UPDATED}</dd></div>
-          <div><dt class="legal-label">Version</dt><dd>${PRIVACY_POLICY_VERSION}</dd></div>
+          <div><dt class="legal-label">Last updated</dt><dd>${updated}</dd></div>
+          <div><dt class="legal-label">Version</dt><dd>${version}</dd></div>
         </dl>
-        <p class="legal-draft">${LEGAL_DRAFT_NOTE}</p>
+        <p class="legal-draft">${note}</p>
       </header>
       <div class="legal-layout">
         <aside class="legal-contents legal-contents-desktop"><nav aria-label="On this page"><p class="legal-label">On this page</p>${contents}</nav></aside>
@@ -56,8 +60,8 @@ export function renderLegalPage(doc: LegalDoc, stylesheet: string): string {
       </div>
     </main>
     <footer class="legal-footer">
-      <div><p>Questions? Contact <a href="mailto:${SUPPORT_EMAIL}">${SUPPORT_EMAIL}</a>.</p><p>NextStepUni Ltd</p></div>
-      ${documentLinks('legal-footer-links')}
+      <div><p>Questions? Contact <a href="mailto:${SUPPORT_EMAIL}">${SUPPORT_EMAIL}</a>.</p><p>${COMPANY_NAME} · Company ${COMPANY_NUMBER}</p><p>${COMPANY_ADDRESS}</p></div>
+      <div>${documentLinks('legal-footer-links')}${archived ? '' : `<p><a href="/legal/2026-09-24/${doc}.html">Previous version · 24 September 2026</a></p>`}</div>
     </footer>
   </div>
 </body>

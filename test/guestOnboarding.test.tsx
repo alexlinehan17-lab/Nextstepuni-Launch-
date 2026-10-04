@@ -83,6 +83,20 @@ vi.mock('@/utils/registrationProvisioning', () => ({
   subscribeToRegistrationProvisioning: () => () => {},
 }));
 vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => false }));
+// This router scenario concerns an existing, approved student account. The
+// agreement service is exercised separately, with missing/stale/save failures.
+vi.mock('@/services/legalAgreement', async () => {
+  const { PRIVACY_POLICY_VERSION, TERMS_VERSION } = await import('../functions/src/legalAgreementPolicy');
+  return {
+    watchLegalAcceptance: (_uid: string, onValue: (value: unknown) => void) => {
+      queueMicrotask(() => onValue({ privacyVersion: PRIVACY_POLICY_VERSION, termsVersion: TERMS_VERSION,
+        acceptedAt: 'server-test-time', method: 'explicit-checkbox', studentAgeConfirmed: true }));
+      return () => {};
+    },
+    recordLegalAcceptance: vi.fn(),
+    takeRegistrationAgreement: () => false,
+  };
+});
 
 // Heavy, irrelevant neighbours of the branch under test.
 vi.mock('@/components/KnowledgeTree', () => ({ KnowledgeTree: () => <div>KNOWLEDGE TREE</div> }));

@@ -158,13 +158,18 @@ The Processor's intended retention policy is: **TBC — Alex to confirm intended
 
 ### 2.1 Lawful basis
 
-The Processor's working position is that processing is carried out under:
+Publication update — 4 October 2026 (owner-confirmed facts; not a solicitor certification):
 
-- **Article 6(1)(e) — public interest task**: the school is the Controller, acting *in loco parentis* to deliver a state-curriculum-aligned educational service. **Reviewer note: this presumes the Department of Education / individual schools accept Controller status; legal counsel must confirm with at least one participating school's data protection lead before relying on this basis.**
-- combined with **parental consent at the point of school enrolment** in the programme, in line with Irish DPC guidance on processing children's data and Article 8 GDPR.
-- For Article 9 categories that may incidentally arise in free-text reflections (Section 1.4), **Article 9(2)(g) — substantial public interest (education)** is the proposed condition, supported by Section 41 of the Data Protection Act 2018. **Reviewer note: legal counsel to confirm.**
+- The owner confirms executed school data-processing agreements and school approval of the programme lawful basis. Schools control programme delivery; Article 6(1)(e) must be supported by each school's actual statutory educational/guidance functions and purpose-specific instructions. Obtain the executed agreements and school notice for the evidence file.
+- The owner confirms the student programme is 16+. The app records an explicit eligibility confirmation without collecting DOB. Article 8 parental authorisation is not an additional legal basis for public-task processing. Contractual capacity for 16–17-year-olds remains a separate question.
+- Delete the former claim that section 41 of the Data Protection Act 2018 supplies a general education condition under Article 9(2)(g). It does not. Schools must identify an appropriate Article 9 condition before intentional special-category processing, including any sensitive support tags; restrict/remove unnecessary incidental disclosures. This remains a purpose-specific legal/operational review item.
+- NextStepUni acts as controller for its own enquiries, feedback, service administration and legal/security purposes, as described in the published notice. Document its Article 6(1)(f) necessity and children's-rights balancing assessments; the school DPA does not itself authorise an independent company purpose.
+- The actual database is London, UK (outside the EEA). Firebase Authentication is US-only. Assess transfers service by service and retain the applicable provider terms/safeguards; a database region does not establish whole-platform residency.
+- New and returning student/school-staff accounts must have a current server-recorded agreement before private account use. Company operators, local demos and password recovery are outside that school-user agreement flow. The old `consent` field is historical and is not treated as either current terms agreement or GDPR consent. Version-specific records are included in export and erasure.
 
-The Processor (NextStepUni Ltd) acts under Article 28 as Processor on behalf of each participating school as Controller. PwC Ireland is a sponsor, not a Controller and not a Processor; PwC receives no student-level data.
+The published Privacy Notice and Terms use the company identity confirmed by the owner: NextStepUni Limited, CRO 818010, contact address 75 Grange Park Road. The company should complete its full postal details in the evidence register. Sponsor access remains limited to anonymised reporting, with no identifiable student records or account access.
+
+Retain the unresolved operational retention, special-category and school-specific transparency findings elsewhere in this DPIA; publication does not close them or stand in for executed contract review.
 
 ### 2.2 Data minimisation analysis
 

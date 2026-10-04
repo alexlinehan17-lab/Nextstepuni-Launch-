@@ -13,13 +13,13 @@ import {
   PRIVACY_POLICY_VERSION,
   LEGAL_LAST_UPDATED,
   LEGAL_URL_RE,
-  SUPPORT_EMAIL,
+  SUPPORT_EMAIL, TERMS_VERSION, COMPANY_NAME, COMPANY_NUMBER, COMPANY_ADDRESS,
 } from './legalContent';
-import { LEGAL_DRAFT_NOTE, legalBlocks, legalSections, legalSectionId, legalSectionNumber } from './legalPresentation';
+import { LEGAL_DOCUMENT_NOTE, legalBlocks, legalSections, legalSectionId, legalSectionNumber } from './legalPresentation';
 import './legal-document.css';
 
 // Keep existing registration/settings import paths and consent version stable.
-export { PRIVACY_POLICY_VERSION, LEGAL_LAST_UPDATED, SUPPORT_EMAIL, CONSENT_BASIS } from './legalContent';
+export { PRIVACY_POLICY_VERSION, LEGAL_LAST_UPDATED, SUPPORT_EMAIL, TERMS_VERSION, COMPANY_NAME, COMPANY_NUMBER, COMPANY_ADDRESS } from './legalContent';
 export type { LegalDoc } from './legalContent';
 
 interface LegalModalProps {
@@ -94,9 +94,9 @@ function LegalReader({ doc, titleId, onDocumentChange }: {
         <h2 className="legal-title" id={titleId}>{LEGAL_TITLES[doc]}<span aria-hidden="true">.</span></h2>
         <dl className="legal-meta">
           <div><dt className="legal-label">Last updated</dt><dd>{LEGAL_LAST_UPDATED}</dd></div>
-          <div><dt className="legal-label">Version</dt><dd>{PRIVACY_POLICY_VERSION}</dd></div>
+          <div><dt className="legal-label">Version</dt><dd>{doc === 'privacy' ? PRIVACY_POLICY_VERSION : TERMS_VERSION}</dd></div>
         </dl>
-        <p className="legal-draft">{LEGAL_DRAFT_NOTE}</p>
+        <p className="legal-draft">{LEGAL_DOCUMENT_NOTE}</p>
       </header>
       <div className="legal-layout">
         <aside className="legal-contents legal-contents-desktop">
@@ -123,7 +123,7 @@ function LegalReader({ doc, titleId, onDocumentChange }: {
         </div>
       </div>
       <footer className="legal-footer">
-        <div><p>Questions? Contact <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>.</p><p>NextStepUni Ltd</p></div>
+        <div><p>Questions? Contact <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>.</p><p>{COMPANY_NAME} · Company {COMPANY_NUMBER}</p><p>{COMPANY_ADDRESS}</p><p><a href={`/legal/2026-09-24/${doc}.html`} target="_blank" rel="noopener noreferrer">Previous version · 24 September 2026</a></p></div>
         <div className="legal-footer-links"><a href={`/${doc}.html`} target="_blank" rel="noopener noreferrer">Open full page ↗</a></div>
       </footer>
     </div>

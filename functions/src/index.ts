@@ -16,6 +16,7 @@ import {
 } from "./passwordResetPolicy";
 
 initializeApp();
+export { acceptLegalDocuments } from "./legalAgreements";
 export { updatePaperIsland } from './paperIsland';
 
 // GDPR Article 15 (export) + Article 17 (erasure) — see ./dataRights.ts.

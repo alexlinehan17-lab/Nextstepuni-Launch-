@@ -42,15 +42,17 @@ function legalStaticPages(): Plugin {
     configureServer(server) {
       server.middlewares.use((req: IncomingMessage, res: ServerResponse, next: () => void) => {
         const url = (req.url || '').split('?')[0];
-        const doc = routes[url];
+        const archive = url.match(/^\/legal\/2026-09-24\/(privacy|terms)\.html$/);
+        const doc = routes[url] || (archive?.[1] as LegalDoc | undefined);
         if (!doc) return next();
         res.setHeader('Content-Type', 'text/html; charset=utf-8');
-        res.end(renderLegalPage(doc, legalStyles()));
+        res.end(renderLegalPage(doc, legalStyles(), !!archive));
       });
     },
     generateBundle() {
       this.emitFile({ type: 'asset', fileName: 'privacy.html', source: renderLegalPage('privacy', legalStyles()) });
       this.emitFile({ type: 'asset', fileName: 'terms.html', source: renderLegalPage('terms', legalStyles()) });
+      for (const doc of ['privacy', 'terms'] as const) this.emitFile({ type: 'asset', fileName: `legal/2026-09-24/${doc}.html`, source: renderLegalPage(doc, legalStyles(), true) });
     },
   };
 }

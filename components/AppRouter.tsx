@@ -29,6 +29,7 @@ import { Library } from './Library';
 // is already lazy (moduleRegistry.ts).
 const ModuleShowcase = lazy(() => import('./ModuleShowcase'));
 import AppLaunch from './AppLaunch';
+import { LegalAgreementGate } from './legal/LegalAgreementGate';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import { toDateKey } from './subjectData';
 const LoginPage = lazy(() => import('./LoginPage'));
@@ -266,14 +267,24 @@ function useRegistrationHold(): boolean {
   return held;
 }
 
+function isPasswordResetRequest(): boolean {
+  if (typeof window === 'undefined') return false;
+  const params = new URLSearchParams(window.location.search);
+  const path = window.location.pathname;
+  return (params.get('mode') === 'resetPassword' && !!params.get('oobCode'))
+    || path === '/reset-password' || path.startsWith('/reset-password/');
+}
+
 const AppRouter: React.FC<AppRouterProps> = (props) => {
-  const { user, userResolved } = useAuth();
+  const { user, userResolved, handleLogout } = useAuth();
   const { state } = useNavigation();
   const registrationHeld = useRegistrationHold();
   const avatar = registrationHeld ? getRegistrationLoadingAvatar() : undefined;
   const transitionKey = [user?.uid ?? 'guest', state.viewState, state.currentCategory, state.currentModuleId, state.activeTool].join(':');
   return <LoadingCrewProvider avatar={avatar ?? (userResolved && user ? props.settings.avatar || user.avatar : undefined)} transitionKey={transitionKey}>
-    <AppRouterContent {...props} />
+    <LegalAgreementGate user={user} ready={userResolved && !registrationHeld && !isPasswordResetRequest()} onLogout={handleLogout}>
+      <AppRouterContent {...props} />
+    </LegalAgreementGate>
   </LoadingCrewProvider>;
 };
 
@@ -345,14 +356,8 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   // user can land here whether or not they're signed in. Triggered by either
   // the path /reset-password or the query params mode=resetPassword + oobCode
   // (the latter is what Firebase appends to the configured Action URL).
-  if (typeof window !== 'undefined') {
-    const params = new URLSearchParams(window.location.search);
-    const path = window.location.pathname;
-    const hasResetParams = params.get('mode') === 'resetPassword' && !!params.get('oobCode');
-    const isResetPath = path === '/reset-password' || path.startsWith('/reset-password/');
-    if (hasResetParams || isResetPath) {
-      return <Suspense fallback={<LoadingSpinner selection="random" label="Opening password reset" />}><ResetPasswordPage /></Suspense>;
-    }
+  if (isPasswordResetRequest()) {
+    return <Suspense fallback={<LoadingSpinner selection="random" label="Opening password reset" />}><ResetPasswordPage /></Suspense>;
   }
 
   // Auth gate: show branded loading until userResolved, then decide login vs app.
