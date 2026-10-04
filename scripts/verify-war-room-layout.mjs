@@ -10,6 +10,7 @@ await mkdir(destination, { recursive: true });
 const browser = await chromium.launch({ headless: true });
 const cases = [];
 const errors = [];
+let failure;
 try {
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
   page.on('pageerror', error => errors.push(error.message));
@@ -24,6 +25,10 @@ try {
         await page.getByRole('tab', { name: tab, exact: true }).click();
         const panel = page.locator('[data-slot=tabs-content]:visible');
         await panel.waitFor();
+        await page.waitForFunction(label => {
+          const selected = [...document.querySelectorAll('[role=tab]')].find(element => element.textContent === label);
+          return selected && getComputedStyle(selected, '::after').opacity === '1';
+        }, tab);
         const geometry = await page.locator('.wr-tabs').evaluate(root => {
           const bounds = element => {
             const rect = element.getBoundingClientRect();
@@ -56,6 +61,12 @@ try {
         cases.push({ theme, width, tab, geometry });
         if (width === 1440 || width === 390) {
           const filename = `${theme}-${width}-${tab.toLowerCase().replaceAll(' ', '-')}.png`;
+          await page.locator('.review-product img').evaluateAll(async images => {
+            await Promise.all(images.map(async image => {
+              image.loading = 'eager';
+              try { await image.decode(); } catch { /* Existing missing artwork uses its product fallback. */ }
+            }));
+          });
           await page.locator('.review-product').screenshot({ path: resolve(destination, filename), animations: 'disabled' });
         }
       }
@@ -63,7 +74,12 @@ try {
   }
   assert.deepEqual(errors, [], 'The implemented review must not throw browser errors');
   console.log(`Passed ${cases.length} browser layout checks; captured 16 screenshots.`);
+} catch (error) {
+  failure = String(error);
+  const page = browser.contexts()[0]?.pages()[0];
+  if (page) await page.screenshot({ path: resolve(destination, 'failure.png'), fullPage: true });
+  throw error;
 } finally {
-  await writeFile(resolve(destination, 'results.json'), JSON.stringify({ cases, errors }, null, 2));
+  await writeFile(resolve(destination, 'results.json'), JSON.stringify({ cases, errors, failure }, null, 2));
   await browser.close();
 }
