@@ -6,7 +6,7 @@ import './study-session.css';
 import type { StudyTimerAppearance } from '../../hooks/useStudyTimerAppearance';
 import { useNativeStatusBarAppearance } from '../../hooks/useNativeStatusBarAppearance';
 
-interface StudySessionTimerProps {
+export interface StudySessionTimerProps {
   appearance?: StudyTimerAppearance;
   subject: string;
   subjectColor: string;
@@ -15,7 +15,8 @@ interface StudySessionTimerProps {
   elapsedSeconds: number;
   paused: boolean;
   onLeave: () => void;
-  onTogglePause: () => void;
+  onTogglePause: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  soundControl?: React.ReactNode;
   prompt: { strategyName: string; prompt: string } | null;
   onCompletePrompt: () => void;
   onSkipPrompt: () => void;
@@ -23,8 +24,8 @@ interface StudySessionTimerProps {
 
 const formatTime = (seconds: number) => `${Math.floor(seconds / 60).toString().padStart(2, '0')}:${Math.floor(seconds % 60).toString().padStart(2, '0')}`;
 
-export default function StudySessionTimer({ appearance = 'ink', subject, subjectColor, type, totalSeconds, elapsedSeconds, paused, onLeave, onTogglePause, prompt, onCompletePrompt, onSkipPrompt }: StudySessionTimerProps) {
-  useNativeStatusBarAppearance(appearance === 'ink' ? 'dark' : 'light');
+export default function StudySessionTimer({ appearance = 'ink', subject, subjectColor, type, totalSeconds, elapsedSeconds, paused, onLeave, onTogglePause, soundControl, prompt, onCompletePrompt, onSkipPrompt }: StudySessionTimerProps) {
+  useNativeStatusBarAppearance(paused ? 'light' : appearance === 'ink' ? 'dark' : 'light');
   const remaining = Math.max(0, totalSeconds - elapsedSeconds);
   const progress = totalSeconds > 0 ? Math.min(100, elapsedSeconds / totalSeconds * 100) : 0;
   const reduceMotion = useReducedMotion();
@@ -34,13 +35,13 @@ export default function StudySessionTimer({ appearance = 'ink', subject, subject
   return (
     <div className={`ss-timer-content ss-room-${appearance} ${paused ? 'ss-room-paused' : ''} ${prompt ? 'ss-room-coaching' : ''}`} style={{ '--ss-subject': subjectColor, '--ss-landscape': subjectHex, '--ss-session-progress': `${progress}%` } as React.CSSProperties}>
       {appearance === 'layers' ? <div className="ss-colour-landscape" aria-hidden="true">{[0, 1, 2, 3, 4].map(band => <i key={band} style={{ '--band': band } as React.CSSProperties} />)}</div> : <div className="ss-ink-edge" aria-hidden="true"><i style={{ height: `${progress}%` }} /></div>}
-      <header className="ss-timer-navigation"><span className="ss-eyebrow">The study room</span><button type="button" onClick={onLeave} aria-label="Leave study session"><X size={20} aria-hidden="true" /></button></header>
+      <header className="ss-timer-navigation" data-study-arrive><span className="ss-eyebrow">The study room</span><div className="study-room-tools">{soundControl}<button type="button" onClick={onLeave} aria-label="Leave study session"><X size={20} aria-hidden="true" /></button></div></header>
       <main className="ss-timer-main">
-        <p className="ss-timer-subject"><i aria-hidden="true" />{subject}</p>
-        <p className="ss-timer-type">{type} · {Math.ceil(totalSeconds / 60)} min</p>
-        <p className="ss-timer-digits" role="timer" aria-label={`${formatTime(remaining)} remaining`}>{formatTime(remaining)}</p>
-        <p className="ss-timer-status">{paused ? 'Session paused' : 'Time remaining'}</p>
-        <button type="button" className="ss-timer-pause" onClick={onTogglePause} aria-label={paused ? 'Resume study session' : 'Pause study session'}>{paused ? <Play size={19} fill="currentColor" aria-hidden="true" /> : <Pause size={19} aria-hidden="true" />}{paused ? 'Resume' : 'Pause'}</button>
+        <p className="ss-timer-subject" data-study-arrive><i aria-hidden="true" />{subject}</p>
+        <p className="ss-timer-type" data-study-arrive>{type} · {Math.ceil(totalSeconds / 60)} min</p>
+        <p className="ss-timer-digits" data-study-arrive role="timer" aria-label={`${formatTime(remaining)} remaining`}>{formatTime(remaining)}</p>
+        <p className="ss-timer-status" data-study-arrive>{paused ? 'Session paused' : 'Time remaining'}</p>
+        <button type="button" data-study-arrive className="ss-timer-pause" onClick={onTogglePause} aria-label={paused ? 'Resume study session' : 'Pause study session'}>{paused ? <Play size={19} fill="currentColor" aria-hidden="true" /> : <Pause size={19} aria-hidden="true" />}{paused ? 'Resume' : 'Pause'}</button>
       </main>
       {prompt && <section className="ss-coaching" aria-label="Study strategy prompt" key={prompt.prompt}>
         <div className="ss-coaching-heading"><p className="ss-eyebrow">Put it into practice</p><span>{prompt.strategyName}</span></div>

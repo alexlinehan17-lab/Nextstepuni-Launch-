@@ -28,6 +28,7 @@ const mocks = vi.hoisted(() => ({
 }));
 
 vi.mock('@/hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => mocks.mobile }));
+vi.mock('@/hooks/useStudyTransitionSound', () => ({ useStudyTransitionSound: () => ({ play: vi.fn(), muted: false }) }));
 
 vi.mock('@/hooks/useStudySession', () => ({
   MIN_STUDY_SESSION_MINUTES: 5,

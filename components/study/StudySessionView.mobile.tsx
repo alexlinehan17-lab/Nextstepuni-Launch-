@@ -14,8 +14,7 @@ import { MotionDiv } from '../Motion';
 import { BookOpen, Target, RotateCcw, type LucideIcon } from 'lucide-react';
 import StudySessionSetup from './StudySessionSetup';
 import type { PlanStep } from '../approved-ui-runtime';
-import StudySessionTimer from './StudySessionTimer';
-import StudyBreak from './StudyBreak';
+import StudySessionRoom from './StudySessionRoom';
 import StudySessionFinish from './StudySessionFinish';
 import { useStudyTimerAppearance } from '../../hooks/useStudyTimerAppearance';
 import { getSubjectFill } from '../../utils/subjectColors';
@@ -497,20 +496,21 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
     return (
       <div className="ss-timer-view">
-        {session.phase === 'paused' ? <StudyBreak subject={session.subject} elapsedSeconds={session.elapsedSeconds} onResume={session.resumeSession} onLeave={() => setConfirmQuit(true)} /> : <StudySessionTimer
+        <StudySessionRoom
           appearance={timerAppearance}
           subject={session.subject}
           subjectColor={subjectHex}
           type={typeConfig.label}
           totalSeconds={session.totalDuration}
           elapsedSeconds={session.elapsedSeconds}
-          paused={false}
+          paused={session.phase === 'paused'}
           onLeave={() => setConfirmQuit(true)}
-          onTogglePause={session.pauseSession}
+          onPause={session.pauseSession}
+          onResume={session.resumeSession}
           prompt={session.currentPrompt}
           onCompletePrompt={session.completePrompt}
           onSkipPrompt={session.dismissPrompt}
-        />}
+        />
 
         <AnimatePresence>
           {confirmQuit && (
