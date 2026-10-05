@@ -25,6 +25,7 @@ await build({ configFile: false, root, publicDir: false, plugins: [react()],
   },
 });
 await cp(resolve(root, 'public/assets/star-crew'), resolve(destination, 'assets/star-crew'), { recursive: true });
+await cp(resolve(root, 'public/assets/dark/star-crew'), resolve(destination, 'assets/dark/star-crew'), { recursive: true });
 await cp(resolve(root, 'public/fonts'), resolve(destination, 'fonts'), { recursive: true });
 await cp(resolve(folder, 'index.html'), resolve(destination, 'index.html'));
 await writeFile(resolve(destination, 'nextstepuni-app.css'), (await readFile(resolve(destination, 'nextstepuni-app.css'), 'utf8')).replaceAll('/fonts/', './fonts/'));
