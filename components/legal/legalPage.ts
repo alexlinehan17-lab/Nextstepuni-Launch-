@@ -27,6 +27,7 @@ export function renderLegalPage(doc: LegalDoc, stylesheet: string, archived = fa
   <meta name="robots" content="${archived ? 'noindex, follow' : 'index, follow'}" />
   <title>${LEGAL_TITLES[doc]} · NextStepUni</title>
   <link rel="icon" href="/icons/north-star-favicon-32x32.png" />
+  <link rel="preload" href="/fonts/dm-sans-wordmark-bold.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/abc-diatype-regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/abc-diatype-bold.woff2" as="font" type="font/woff2" crossorigin />
   <style>${stylesheet}</style>
@@ -35,7 +36,7 @@ export function renderLegalPage(doc: LegalDoc, stylesheet: string, archived = fa
   <a href="#document" class="legal-skip">Skip to document</a>
   <div class="legal-page-wrap">
     <header class="legal-masthead">
-      <p class="legal-wordmark">NextStep<span>Uni</span></p>
+      <p class="legal-wordmark">nextstepuni</p>
       <a class="legal-home" href="/">Back to NextStepUni <span aria-hidden="true">↗</span></a>
     </header>
     <main id="document">

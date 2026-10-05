@@ -77,7 +77,7 @@ function AccountLegalReview({ user, onLogout, children }: {
     <div className="legal-agreement-screen" inert={!!doc} aria-hidden={doc ? true : undefined}>
       <section ref={dialogRef} tabIndex={-1}
         className="legal-document legal-dialog legal-agreement" role="dialog" aria-modal="true" aria-labelledby="legal-agreement-title" aria-describedby="legal-agreement-description">
-        <p className="legal-wordmark">NextStep<span>Uni</span></p>
+        <p className="legal-wordmark">nextstepuni</p>
         <p className="legal-label">Your account · Updated documents</p>
         <h1 id="legal-agreement-title">Before you begin<span>.</span></h1>
         <p id="legal-agreement-description">Review how your information is handled and the rules for using your school workspace.</p>

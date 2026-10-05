@@ -1,3 +1,11 @@
+/* The brand-sheet wordmark matches the landing page's DM Sans Bold. */
+@font-face {
+  font-family: LegalWordmark;
+  src: url('/fonts/dm-sans-wordmark-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: LegalDiatype;
   src: url('/fonts/abc-diatype-regular.woff2') format('woff2');
@@ -39,8 +47,7 @@
   border-radius: 2px;
 }
 .legal-document ::selection { background: #ffd6b5; color: #242720; }
-.legal-wordmark { font-size: 25px; font-weight: 700; line-height: 1; letter-spacing: -1.1px; }
-.legal-wordmark span { color: var(--legal-orange); }
+.legal-wordmark { font: 700 25px/1 LegalWordmark, 'DM Sans', system-ui, sans-serif; letter-spacing: -0.03em; color: #1a1a1a; }
 .legal-masthead {
   display: flex;
   align-items: center;
@@ -191,6 +198,7 @@ body.legal-page { margin: 0; }
   --legal-line: #464a40;
   --legal-link: #ffab70;
 }
+.dark .legal-dialog .legal-wordmark { color: var(--legal-ink); }
 
 @media (max-width: 800px) {
   .legal-page-wrap { padding: 0 28px; }

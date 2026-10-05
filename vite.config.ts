@@ -81,6 +81,7 @@ export default defineConfig(() => {
             'icons/north-star-icon-512x512.png',
             'fonts/*.otf',
             'fonts/abc-diatype-*.woff2',
+            'fonts/dm-sans-wordmark-bold.woff2',
             'sounds/study-bloom-*.wav',
           ],
           manifest: {
