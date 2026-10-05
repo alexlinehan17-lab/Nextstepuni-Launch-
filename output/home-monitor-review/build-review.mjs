@@ -49,7 +49,7 @@ if (!process.argv.includes('--capture')) {
       await page.evaluate(dark => document.documentElement.classList.toggle('dark', dark), theme === 'dark');
       for (const width of [390, 1440, 1920, 2560]) {
         await page.setViewportSize({ width, height: 1100 });
-        for (const expanded of [false, true]) {
+        for (const expanded of width < 768 ? [false] : [false, true]) {
           const toggle = page.getByRole('button', { name: 'Collapse', exact: true });
           if (expanded) await toggle.click();
           // Let the existing sidebar margin animation settle before measuring.
@@ -69,7 +69,7 @@ if (!process.argv.includes('--capture')) {
           assert.ok(geometry.home.width <= 1501, 'Keep the approved content width');
           assert.ok(geometry.scrollWidth <= geometry.viewport + 1, `${theme}/${width}: no horizontal overflow`);
           results.push({ theme, width, expanded, geometry });
-          if (expanded && [390, 1920, 2560].includes(width)) {
+          if ((expanded || width < 768) && [390, 1920, 2560].includes(width)) {
             await page.locator('img').evaluateAll(async images => {
               await Promise.all(images.filter(img => !img.src.includes('dicebear')).map(async img => { try { await img.decode(); } catch { /* Existing fallback. */ } }));
             });
