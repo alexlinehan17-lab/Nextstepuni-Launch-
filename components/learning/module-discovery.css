@@ -91,6 +91,7 @@
 .module-topic-rail [data-slot='tabs-trigger'] { flex: 0 0 auto; min-height: 42px; padding: 8px 10px; font-size: 13px; font-weight: 400; color: var(--ink-secondary); }
 .module-topic-rail [data-slot='tabs-trigger'][data-active] { color: var(--ink-primary); }
 .module-route-index { display: flex; gap: 24px; margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--outline-soft); }
+.module-route-index[hidden] { display: none; }
 .module-route-index>p { font-size: 12px; min-width: 100px; margin: 12px 0 0; }
 .module-route-index>div { flex: 1; display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; }
 .module-route-index [data-slot='button'] { justify-content: space-between; text-align: left; border-radius: 5px; padding: 10px 8px; font-size: 13px; font-weight: 400; border-bottom: 1px solid var(--outline-soft); }

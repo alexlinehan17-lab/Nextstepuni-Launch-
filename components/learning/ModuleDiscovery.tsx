@@ -1,4 +1,4 @@
-import { useEffect, useId, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { ArrowRight, BookOpen, ChevronDown, Search, X } from 'lucide-react';
 import type { CourseData } from '../Library';
 import type { UserProgress } from '../../types';
@@ -25,8 +25,8 @@ function entryRoutesPreview() {
 function initialDirection(): DiscoveryDirection {
   try {
     const direction = window.frameElement?.getAttribute('data-module-discovery-direction');
-    if (direction === 'rail' || direction === 'list') return direction;
-  } catch { /* Normal app surface uses the compact toolbar. */ }
+    if (entryRoutesPreview() && (direction === 'toolbar' || direction === 'rail' || direction === 'list')) return direction;
+  } catch { /* The app uses the collapsible index. */ }
   return 'list';
 }
 const ROUTE_LABELS: Record<string, { short: string; label: string }> = {
@@ -47,6 +47,7 @@ export function ModuleDiscovery({ courses, progress, onOpen }: { courses: Course
   const [pickerOpen, setPickerOpen] = useState(false);
   const [indexOpen, setIndexOpen] = useState(false);
   const indexId = useId();
+  const indexTrigger = useRef<HTMLButtonElement>(null);
   const [direction, setDirection] = useState<DiscoveryDirection>(initialDirection);
   const preview = entryRoutesPreview();
   const notebook = useModuleResponses(LEARNING_NOTEBOOK_NAMESPACE);
@@ -87,6 +88,7 @@ export function ModuleDiscovery({ courses, progress, onOpen }: { courses: Course
     setPickerOpen(false);
     setIndexOpen(false);
     setShowNotebook(false);
+    if (direction === 'list') indexTrigger.current?.focus();
   };
   const saved = available.flatMap(course => {
     const entry = notebookEntry(notebook.responses[course.id], course.title);
@@ -126,7 +128,7 @@ export function ModuleDiscovery({ courses, progress, onOpen }: { courses: Course
               </Button>)}</div>
             </PopoverContent>
           </Popover>}
-          {preview && direction === 'list' && <Button variant="ghost" className="module-route-trigger" aria-expanded={indexOpen} aria-controls={indexId} onClick={() => setIndexOpen(value => !value)}>
+          {direction === 'list' && <Button ref={indexTrigger} variant="ghost" className="module-route-trigger" aria-expanded={indexOpen} aria-controls={indexId} onClick={() => setIndexOpen(value => !value)}>
             {selectedRoute ? ROUTE_LABELS[selectedRoute.id].short : 'Find a starting point'}<ChevronDown aria-hidden="true" className={indexOpen ? 'module-index-chevron-open' : ''} />
           </Button>}
           <Button variant="ghost" aria-pressed={showNotebook} onClick={() => setShowNotebook(value => !value)}><BookOpen aria-hidden="true" />Notebook</Button>
@@ -140,7 +142,9 @@ export function ModuleDiscovery({ courses, progress, onOpen }: { courses: Course
         </TabsList>
       </Tabs>}
 
-      {preview && direction === 'list' && indexOpen && <div className="module-route-index" id={indexId}>
+      {direction === 'list' && <div className="module-route-index" id={indexId} hidden={!indexOpen} onKeyDown={event => {
+        if (event.key === 'Escape') { setIndexOpen(false); indexTrigger.current?.focus(); }
+      }}>
         <p>Choose a focus</p>
         <div>{routes.map(route => <Button variant="ghost" key={route.id} aria-pressed={route.id === routeId} onClick={() => chooseRoute(route.id)}>
           <span>{ROUTE_LABELS[route.id].label}</span><ArrowRight aria-hidden="true" />

@@ -28,7 +28,9 @@ try {
         await page.setViewportSize({ width, height: 1000 });
         for (const tab of scenario === 'reset' ? ['Today', 'Time plan'] : ['Today', 'Subjects', 'Learning record', 'Time plan']) {
           await page.getByRole('tab', { name: tab, exact: true }).click();
-          const panel = page.locator('[data-slot=tabs-content]:visible');
+          // Kobra retains the outgoing panel briefly for its exit animation.
+          // Only the non-inert panel is the active, accessible tab content.
+          const panel = page.locator('[data-slot=tabs-content]:not([inert])');
           await panel.waitFor();
           await page.waitForFunction(label => {
             const selected = [...document.querySelectorAll('[role=tab]')].find(element => element.textContent === label);
@@ -40,7 +42,7 @@ try {
               return { left: rect.left, right: rect.right, top: rect.top, bottom: rect.bottom, width: rect.width };
             };
             const workspace = root.closest('.war-room-workspace');
-            const current = [...root.querySelectorAll('[data-slot=tabs-content]')].find(element => element.getBoundingClientRect().width > 0);
+            const current = root.querySelector('[data-slot=tabs-content]:not([inert])');
             const meta = current.querySelector('.wr-session-meta');
             const action = current.querySelector('.wr-session-actions [data-slot=button]');
             return {

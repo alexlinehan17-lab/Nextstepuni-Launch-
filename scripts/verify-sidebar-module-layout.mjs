@@ -44,6 +44,8 @@ try {
     await frame.evaluate(() => document.fonts.ready);
     await frame.evaluate(dark => document.documentElement.classList.toggle('dark', dark), theme === 'dark');
     await page.waitForTimeout(400);
+    const tour = frame.getByRole('dialog', { name: 'Quick tour', exact: true });
+    if (await tour.isVisible()) await tour.getByRole('button', { name: 'Skip', exact: true }).click();
   }
   async function capture(name, width, theme, locator) {
     const geometry = await frame.evaluate(() => ({ viewport: window.innerWidth, scroll: document.documentElement.scrollWidth }));
@@ -65,6 +67,7 @@ try {
       await frame.getByRole('button', { name: 'Collapse sidebar', exact: true }).click();
       await frame.getByRole('button', { name: 'Expand sidebar', exact: true }).waitFor();
       await frame.getByRole('button', { name: 'Expand sidebar', exact: true }).click();
+      await capture('home', width, theme);
       await frame.getByRole('button', { name: 'Open account menu', exact: true }).click();
       await frame.getByRole('menuitem', { name: 'Account', exact: true }).waitFor();
       await capture('account-menu', width, theme);
