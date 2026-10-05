@@ -59,6 +59,11 @@ interface JourneyViewProps {
   allCourses?: CourseInfo[];
   subjects?: string[];
 }
+interface JourneyNotice {
+  id: string;
+  title: string;
+  detail: string;
+}
 export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWelcome }: JourneyViewProps) {
   const { island, balance, busy, error, execute } = usePaperIsland(user.uid);
   const [building, setBuilding] = useState(false),
@@ -66,7 +71,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     [candidate, setCandidate] = useState<string | null>(null),
     [camera, setCamera] = useState(defaultCamera),
     [group, setGroup] = useState<ShelfGroup>("All tiles"),
-    [notice, setNotice] = useState("");
+    [notice, setNotice] = useState<JourneyNotice | null>(null);
   const [panel, setPanel] = useState<
       "fieldbook" | "points" | "tile" | "discovery" | "treasure" | null
     >(null),
@@ -102,11 +107,11 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
   const changeMode = (value: boolean) => {
     setBuilding(value);
     setCandidate(null);
-    setNotice("");
+    setNotice(null);
   };
   const choose = (kind: TileKind) => {
     setChosen(kind);
-    setNotice("");
+    setNotice(null);
   };
   const build = async () => {
     if (!candidate || !island) return;
@@ -125,10 +130,14 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
       const found = visibleDiscoveries([...placed, piece(q, r, chosen)])
         .find(d => !seen.some(previous => previous.id === d.id));
       if (found) {
-        setNotice("");
+        setNotice(null);
         showDiscovery(found.id);
       } else {
-        setNotice(`${selected.name} added. A little more of the map is yours to explore.`);
+        setNotice({
+          id: crypto.randomUUID(),
+          title: `${selected.name} added.`,
+          detail: "A little more of the map is yours to explore.",
+        });
       }
     }
   };
@@ -142,7 +151,11 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
       })
     ) {
       setCandidate(null);
-      setNotice("Last tile returned, along with its points or earned tile.");
+      setNotice({
+        id: crypto.randomUUID(),
+        title: "Last tile returned.",
+        detail: "Your points or earned tile have been returned too.",
+      });
     }
   };
   const showDiscovery = (id: LegendId) => {
@@ -163,9 +176,13 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     setGroup("All tiles");
     setCandidate(next.key);
     setCamera({ x: next.x, y: next.y - 75, zoom: 1 });
-    setNotice(route.path.length === 1
-      ? "Place a tile in the highlighted corner to uncover a mythic sticker."
-      : `Start at the highlighted corner. A mythic sticker is ${route.path.length} placements away along this route.`);
+    setNotice({
+      id: crypto.randomUUID(),
+      title: "Your next discovery.",
+      detail: route.path.length === 1
+        ? "Place a tile in the highlighted corner to uncover a mythic sticker."
+        : `Start at the highlighted corner. A mythic sticker is ${route.path.length} placements away along this route.`,
+    });
   };
   return (
     <div
@@ -275,6 +292,24 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
             >
               Done <Check size={15} />
             </button>
+            {(notice || error) && (
+              <div
+                key={error || notice?.id}
+                className="island-notice"
+                role={error ? "alert" : "status"}
+                aria-atomic="true"
+              >
+                <div className="island-notice-copy">
+                  <strong>{error ? "Couldn’t update your island." : notice?.title}</strong>
+                  <p>{error || notice?.detail}</p>
+                </div>
+                {!error && (
+                  <button aria-label="Dismiss update" onClick={() => setNotice(null)}>
+                    <X size={16} />
+                  </button>
+                )}
+              </div>
+            )}
           </div>
           <div
             className="coast-build-tray"
@@ -301,16 +336,6 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
           </div>
         </div>
       </main>
-      {(notice || error) && (
-        <div className="island-notice" role={error ? "alert" : "status"}>
-          <span>{error || notice}</span>
-          {!error && (
-            <button aria-label="Dismiss update" onClick={() => setNotice("")}>
-              <X size={14} />
-            </button>
-          )}
-        </div>
-      )}
       {panel && (
         <Overlay
           title={
