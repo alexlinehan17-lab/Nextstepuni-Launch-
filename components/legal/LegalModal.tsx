@@ -155,7 +155,7 @@ export const LegalModal: React.FC<LegalModalProps> = ({ doc, onClose, onDocument
             onClick={(event: React.MouseEvent) => event.stopPropagation()}
           >
             <div className="legal-masthead">
-              <p className="legal-wordmark">NextStep<span>Uni</span></p>
+              <p className="legal-wordmark">nextstepuni</p>
               <button className="legal-close" type="button" aria-label="Close legal document" onClick={onClose}><X size={18} strokeWidth={1.6} /></button>
             </div>
             <LegalReader doc={doc} titleId={titleId} onDocumentChange={onDocumentChange} />
