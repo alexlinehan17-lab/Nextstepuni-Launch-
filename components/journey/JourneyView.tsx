@@ -410,6 +410,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
           }
           onClose={() => setPanel(null)}
           className={panel==="visitor"?"has-visitor":panel==="fieldbook"&&fieldbookSection!=="stories"?"has-visitors-book":""}
+          scrollKey={panel==="visitor"?`${visitor}:${visitorPage}`:panel==="fieldbook"?fieldbookSection:panel}
         >
           {panel === "fieldbook" && (
             <>

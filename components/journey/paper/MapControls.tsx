@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import {
   ArrowUpRight,
   Check,
@@ -520,16 +520,21 @@ export function Overlay({
   title,
   onClose,
   className="",
+  scrollKey,
 }: {
   children: React.ReactNode;
   title: string;
   onClose: () => void;
   className?: string;
+  scrollKey?: string;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   useEffect(() => {
     ref.current?.showModal();
   }, []);
+  useLayoutEffect(() => {
+    if (ref.current) ref.current.scrollTop=0;
+  }, [title,scrollKey]);
   return (
     <dialog
       className={`journey-paper island-dialog ${className}`}
