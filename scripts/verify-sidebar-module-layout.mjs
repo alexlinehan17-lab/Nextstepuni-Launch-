@@ -31,14 +31,20 @@ try {
   page.on('request', request => {
     if (/firestore\.googleapis\.com.*(?:Commit|Write|batchWrite)/i.test(request.url())) writes.push(request.url());
   });
+  // Set the review iframe's destination before it is created. Changing its
+  // src after loading Home can race the next evaluation with iframe navigation.
+  await page.route(`${origin}/__release-review*`, async route => {
+    const options = new URL(route.request().url()).searchParams;
+    const query = (options.get('target') ?? 'view=tree').replaceAll('&', '&amp;').replaceAll('"', '&quot;');
+    await route.fulfill({ contentType: 'text/html', body: `<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;width:100%;height:100%}iframe{display:block;width:100%;height:100%;border:0}</style></head><body><iframe src="/?${query}" title="Release review" data-demo-account="true" data-app-preview="${options.get('mobile') === '1' ? 'mobile' : 'desktop'}"></iframe></body></html>` });
+  });
   let frame;
   async function open(query, width, theme, selector, mobile = width < 768) {
     await page.setViewportSize({ width, height: 1100 });
-    await page.goto(`${origin}/sidebar-review.html`);
-    await page.locator('iframe').evaluate((iframe, options) => {
-      iframe.setAttribute('data-app-preview', options.mobile ? 'mobile' : 'desktop');
-      iframe.src = `/?${options.query}`;
-    }, { query, mobile });
+    const review = new URL('/__release-review', origin);
+    review.searchParams.set('target', query);
+    review.searchParams.set('mobile', mobile ? '1' : '0');
+    await page.goto(review.href);
     frame = await (await page.locator('iframe').elementHandle()).contentFrame();
     await frame.locator(selector).waitFor();
     await frame.evaluate(() => document.fonts.ready);
