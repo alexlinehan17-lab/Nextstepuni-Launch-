@@ -38,12 +38,13 @@ test('mobile tour finds visible help and keeps the caption bounded with touch-si
   expect(onFinish).toHaveBeenCalledOnce();
 });
 
-test('desktop retains its original tour copy and caption styling', () => {
+test('desktop points to help in the shared account menu and retains its caption styling', () => {
   device.mobile = false;
   renderTour();
   fireEvent.click(screen.getByRole('button', { name: 'Next →' }));
   fireEvent.click(screen.getByRole('button', { name: 'Next →' }));
-  const heading = screen.getByRole('heading', { name: 'Lost? Press this anytime' });
+  const heading = screen.getByRole('heading', { name: 'Help is always here' });
+  expect(screen.getByText(/Open your account menu, then Help/)).toBeInTheDocument();
   expect(heading.parentElement).not.toHaveClass('overflow-y-auto');
   expect(screen.getByRole('button', { name: 'Skip' })).not.toHaveClass('min-h-11');
 });

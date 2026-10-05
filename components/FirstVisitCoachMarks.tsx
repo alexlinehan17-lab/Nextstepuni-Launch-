@@ -19,7 +19,7 @@ const STEPS: { target: string; title: string; body: string }[] = [
   {
     target: 'modules',
     title: 'Your lessons live here',
-    body: 'Interactive modules that teach you how to learn — memory, focus, exam craft. They unlock section by section.',
+    body: 'Interactive modules that teach you how to learn — memory, focus, exam craft. Browse any section; your reading and activity drafts save as you go.',
   },
   {
     target: 'launchpad',
