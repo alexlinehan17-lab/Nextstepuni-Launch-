@@ -310,7 +310,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
       </aside>
 
       {/* The account drawer stays in its existing shell. */}
-      <div className={`flex-1 bg-white dark:bg-[#181b18] transition-[margin] duration-300 ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
+      <div className={`flex-1 bg-[var(--surface-canvas)] transition-[margin] duration-300 ${sidebarOpen ? 'md:ml-56' : 'md:ml-[60px]'}`}>
         <StudentHomeContent uid={uid} userName={userName} userAvatarSeed={userAvatarSeed} onOpenMobileProfile={onOpenMobileProfile} hasUnreadNotifications={hasUnreadNotifications} allCourses={allCourses} categoryTitles={categoryTitles} userProgress={userProgress} studySessions={studySessions} pointsBalance={pointsBalance} onSelectModule={onSelectModule} onGoToStudy={onGoToStudy} onGoToModules={onGoToModules} onGoToDashboard={onGoToDashboard} onGoToLearningPaths={onGoToLearningPaths} onGoToDirection={onGoToDirection} onGoToJourney={onGoToJourney} onGoToInnovationZone={onGoToInnovationZone} onOpenTool={onOpenTool} />
 
       </div>
