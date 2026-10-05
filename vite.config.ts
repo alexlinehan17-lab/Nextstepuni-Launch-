@@ -189,6 +189,12 @@ export default defineConfig(() => {
                 options: { cacheName: 'tool-icons-v1', expiration: { maxEntries: 60, maxAgeSeconds: 60 * 60 * 24 * 30 } },
               },
               // Static assets and 3D models — cache first
+              // Approved Journey sprites are versioned and cached only on use.
+              {
+                urlPattern: /\/journey-art\/visitors\/.*\.webp$/i,
+                handler: 'CacheFirst',
+                options: { cacheName: 'journey-visitors-v1', expiration: { maxEntries: 24, maxAgeSeconds: 60 * 60 * 24 * 90, purgeOnQuotaError: true } },
+              },
               {
                 urlPattern: /\/(assets|models)\/.*\.(glb|png|jpg|svg|webp|woff2?)$/i,
                 handler: 'CacheFirst',
