@@ -2360,6 +2360,7 @@ const normalise = (value: string) => value.trim().toLowerCase().replace(/\s+/g, 
 const SUBJECT_ALIASES: Record<string, string> = {
   'politics & society': 'politics-and-society',
   'design & communication graphics': 'design-and-communication-graphics',
+  'design and communication graphics': 'design-and-communication-graphics',
   'design and communications graphics': 'design-and-communication-graphics',
   'physics & chemistry': 'physics-and-chemistry',
   'physics-chemistry': 'physics-and-chemistry',

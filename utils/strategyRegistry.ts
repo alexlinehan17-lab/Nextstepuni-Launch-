@@ -42,6 +42,8 @@ export interface StudySessionRecord {
   pointsEarned: number;
   hadReflection: boolean;
   strategiesShown?: string[];
+  /** Student-confirmed use. Merely showing a prompt is exposure, not practice. */
+  strategiesUsed?: string[];
   confidenceAfter?: number;
   confidenceLabel?: StudyConfidenceLabel;
   reflectionMode?: 'quick' | 'full';

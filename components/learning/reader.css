@@ -1,5 +1,6 @@
 .nsu-module-reader { padding-top:calc(4px + var(--sat, 0px)); }
-.nsu-module-reader .mr-topbar { padding-right:140px; }
+.nsu-module-reader .mr-topbar { padding-right:0; }
+.nsu-module-reader .mr-running-head > span:last-child { flex-shrink:0; white-space:nowrap; }
 .nsu-module-reader .mr-lesson-heading h1 { font:500 clamp(34px,3.4vw,52px)/1.12 var(--rs-serif); letter-spacing:-1.3px; margin:0; max-width:22ch; }
 .nsu-module-reader .mr-prose { font-family:'DM Sans',sans-serif; }
 .nsu-module-reader .mr-prose > * + * { margin-top:24px; }
@@ -21,7 +22,7 @@
 .mr-progress-list button:disabled { opacity:.5; cursor:not-allowed; }
 .nsu-kobra .mr-contents-dialog { padding:22px; }
 .mr-contents-dialog .mr-contents-inner { box-shadow:none; }
-@media (max-width:900px) { .nsu-module-reader .mr-topbar { padding-right:0; padding-top:58px; } }
+@media (max-width:900px) { .nsu-module-reader .mr-topbar { padding-top:18px; } }
 @media (max-width:650px) { .mr-breadcrumb > span:last-child { display:none; } .mr-page-footer { gap:8px; flex-wrap:wrap; } .mr-page-footer > div { order:3; flex-basis:100%; } .mr-page-footer > button:last-child { margin-left:auto; } .nsu-module-reader .mr-lesson-heading h1 { font-size:32px; } }
 .mr-prose :where(h2,h3,h4) { font-family:var(--rs-serif); font-weight:500; line-height:1.25; margin-block:24px 12px; }
 .mr-prose :where(h2) { font-size:1.65em; }
@@ -31,3 +32,54 @@
 .mr-prose :where(th,td) { border-bottom:1px solid var(--border); padding:10px; text-align:left; }
 .mr-prose :where(blockquote) { font-family:var(--rs-serif); font-style:italic; border-block:1px solid var(--border); padding:20px 0; }
 .nsu-kobra .mr-term { font-weight:inherit; color:inherit; }
+
+/* One neutral reading palette for the notebook and its legacy activities.
+   The theme-compat boundary adapts authored paper/ink pairs inside every lesson. */
+.dark .nsu-module-reader {
+  --background:var(--surface-canvas);
+  --foreground:#f3f3f3;
+  --muted:#292929;
+  --muted-foreground:#b2b2b2;
+  --border:#414141;
+  --input:#555;
+  --surface-soft:#292929;
+  --outline-soft:#484848;
+  --ink-primary:#f3f3f3;
+  --ink-secondary:#d3d3d3;
+  --ink-muted:#b2b2b2;
+  --accent-text:#f58c4e;
+  --warning-text:#f1cd8e;
+  --nsu-edge:#414141;
+  --nsu-night-footer:#282828;
+}
+.dark .nsu-module-reader .mr-prose { color:#dedede; }
+.dark .nsu-module-reader .mr-contents-inner[data-sidebar='notebook'] .mr-progress-list button[aria-current='step'] {
+  background:#292929;
+  border-color:#6a6a6a;
+  box-shadow:none;
+}
+.dark .nsu-module-reader .mr-progress-list button:disabled { opacity:.72; }
+.dark .nsu-module-reader .module-tool-jump { border-color:var(--outline-soft); box-shadow:none !important; }
+.dark .nsu-module-reader :where(input:not([type='checkbox']):not([type='radio']):not([type='range']),textarea,select) {
+  color:var(--ink-primary);
+  background-color:var(--surface-canvas) !important;
+  border-color:#555 !important;
+  caret-color:var(--rs-orange);
+}
+.dark .nsu-module-reader :where(input,textarea)::placeholder { color:var(--ink-muted); opacity:1; }
+.dark .nsu-module-reader .mr-paper :where(button,input,textarea,select):focus-visible {
+  outline:2px solid var(--focus-ring);
+  outline-offset:3px;
+}
+.nsu-module-reader .mr-prose > :is(p,ul,ol) { max-width:72ch; }
+.nsu-module-reader .mr-citation,.nsu-module-reader .mr-page-footer small { color:var(--ink-muted); }
+
+/* The notebook is portalled outside the reader; identify it by its editor. */
+.dark .signature-card:has(.sc-notes-editor) {
+  --sc-paper:#202020;
+  --sc-ink:#f3f3f3;
+  --sc-muted:#b2b2b2;
+  --sc-line:#414141;
+  --sc-outline:#484848;
+  box-shadow:0 8px 32px #00000070;
+}

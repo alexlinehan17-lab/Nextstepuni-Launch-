@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { useModuleDraft } from '../hooks/useModuleDraft';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MotionDiv } from './Motion';
@@ -185,7 +186,7 @@ const IntentionGapComparison = () => {
 
 // 2. IF-THEN PLAN BUILDER
 const IfThenPlanBuilder = () => {
-  const [plans, setPlans] = useState([
+  const [plans, setPlans] = useModuleDraft('implementation-protocol', 'if-then-plans', [
     { ifText: '', thenText: '' },
     { ifText: '', thenText: '' },
     { ifText: '', thenText: '' },

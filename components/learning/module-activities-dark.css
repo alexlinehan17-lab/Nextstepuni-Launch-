@@ -1,0 +1,266 @@
+/* Legacy activity surfaces, paired with their ink. Scoped to lessons only. */
+
+/* Explicit action ink wins over the legacy dark-mode text remap. */
+.dark .nsu-module-reader .mr-paper :is([class~="bg-[#F26B1F]"],[style*="background-color: rgb(242, 107, 31)"]) { color:var(--ink-on-accent) !important; }
+.dark .nsu-module-reader .mr-paper :is(.text-success,.dark\:text-success) { color:#a6dec0 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(
+  [style*="background: rgb(229, 231, 235)"],
+  [style*="background-color: rgb(229, 231, 235)"],
+  [style*="background: rgb(228, 228, 231)"],
+  [style*="background-color: rgb(228, 228, 231)"],
+  [style*="background: rgb(208, 205, 200)"],
+  [style*="background-color: rgb(208, 205, 200)"],
+  [style*="background: rgb(243, 244, 246)"],
+  [style*="background-color: rgb(243, 244, 246)"],
+  [style*="background: rgb(224, 219, 212)"],
+  [style*="background-color: rgb(224, 219, 212)"],
+  [style*="background: rgb(214, 214, 212)"],
+  [style*="background-color: rgb(214, 214, 212)"],
+  [style*="background: rgb(250, 250, 250)"],
+  [style*="background-color: rgb(250, 250, 250)"],
+  [class~="bg-zinc-50"],
+  [class~="bg-zinc-100"],
+  [class~="bg-zinc-200"],
+  [class~="bg-gray-50"],
+  [class~="bg-gray-100"],
+  [class~="bg-gray-200"],
+  [class~="bg-slate-50"],
+  [class~="bg-slate-100"],
+  [class~="bg-slate-200"],
+  [class~="bg-stone-50"],
+  [class~="bg-stone-100"],
+  [class~="bg-stone-200"],
+  [class~="bg-neutral-50"],
+  [class~="bg-neutral-100"],
+  [class~="bg-neutral-200"]
+) { --module-tint-ink:#d3d3d3; background-color:#292929 !important; color:#d3d3d3 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(
+  [style*="background: rgb(219, 234, 254)"],
+  [style*="background-color: rgb(219, 234, 254)"],
+  [style*="background: rgb(239, 246, 255)"],
+  [style*="background-color: rgb(239, 246, 255)"],
+  [style*="background: rgb(147, 197, 253)"],
+  [style*="background-color: rgb(147, 197, 253)"],
+  [class~="bg-blue-50"],
+  [class~="bg-blue-100"],
+  [class~="bg-blue-200"],
+  [class~="bg-sky-50"],
+  [class~="bg-sky-100"],
+  [class~="bg-sky-200"]
+) { --module-tint-ink:#b8d4fc; background-color:#1c2b40 !important; color:#b8d4fc !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style*="background-color: rgb(147, 197, 253)"]) :not([style*="background"]):not([class*="bg-"]) { color:#b8d4fc !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-blue-600,.text-blue-700,.text-blue-800,.text-blue-900) { color:#b8d4fc !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-sky-600,.text-sky-700,.text-sky-800,.text-sky-900) { color:#b8d4fc !important; }
+
+.dark .nsu-module-reader .mr-paper :is(
+  [style*="background: rgb(209, 250, 229)"],
+  [style*="background-color: rgb(209, 250, 229)"],
+  [style*="background: rgb(236, 253, 245)"],
+  [style*="background-color: rgb(236, 253, 245)"],
+  [style*="background: rgb(110, 231, 183)"],
+  [style*="background-color: rgb(110, 231, 183)"],
+  [class~="bg-emerald-50"],
+  [class~="bg-emerald-100"],
+  [class~="bg-emerald-200"],
+  [class~="bg-green-50"],
+  [class~="bg-green-100"],
+  [class~="bg-green-200"],
+  [class~="bg-teal-50"],
+  [class~="bg-teal-100"],
+  [class~="bg-teal-200"]
+) { --module-tint-ink:#a6dec0; background-color:#1d3327 !important; color:#a6dec0 !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style*="background-color: rgb(110, 231, 183)"]) :not([style*="background"]):not([class*="bg-"]) { color:#a6dec0 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-emerald-600,.text-emerald-700,.text-emerald-800,.text-emerald-900) { color:#a6dec0 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-green-600,.text-green-700,.text-green-800,.text-green-900) { color:#a6dec0 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-teal-600,.text-teal-700,.text-teal-800,.text-teal-900) { color:#a6dec0 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(
+  [style*="background: rgb(254, 243, 199)"],
+  [style*="background-color: rgb(254, 243, 199)"],
+  [style*="background: rgb(255, 251, 235)"],
+  [style*="background-color: rgb(255, 251, 235)"],
+  [style*="background: rgb(252, 211, 77)"],
+  [style*="background-color: rgb(252, 211, 77)"],
+  [class~="bg-amber-50"],
+  [class~="bg-amber-100"],
+  [class~="bg-amber-200"],
+  [class~="bg-yellow-50"],
+  [class~="bg-yellow-100"],
+  [class~="bg-yellow-200"]
+) { --module-tint-ink:#f1cd8e; background-color:#382d1c !important; color:#f1cd8e !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style*="background-color: rgb(252, 211, 77)"]) :not([style*="background"]):not([class*="bg-"]) { color:#f1cd8e !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-amber-600,.text-amber-700,.text-amber-800,.text-amber-900) { color:#f1cd8e !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-yellow-600,.text-yellow-700,.text-yellow-800,.text-yellow-900) { color:#f1cd8e !important; }
+
+.dark .nsu-module-reader .mr-paper :is(
+  [style*="background: rgb(255, 237, 213)"],
+  [style*="background-color: rgb(255, 237, 213)"],
+  [style*="background: rgb(255, 247, 237)"],
+  [style*="background-color: rgb(255, 247, 237)"],
+  [style*="background: rgb(253, 186, 116)"],
+  [style*="background-color: rgb(253, 186, 116)"],
+  [class~="bg-orange-50"],
+  [class~="bg-orange-100"],
+  [class~="bg-orange-200"]
+) { --module-tint-ink:#f4be98; background-color:#3a281c !important; color:#f4be98 !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style*="background-color: rgb(253, 186, 116)"]) :not([style*="background"]):not([class*="bg-"]) { color:#f4be98 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-orange-600,.text-orange-700,.text-orange-800,.text-orange-900) { color:#f4be98 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(
+  [style*="background: rgb(254, 226, 226)"],
+  [style*="background-color: rgb(254, 226, 226)"],
+  [style*="background: rgb(254, 242, 242)"],
+  [style*="background-color: rgb(254, 242, 242)"],
+  [style*="background: rgb(255, 228, 230)"],
+  [style*="background-color: rgb(255, 228, 230)"],
+  [style*="background: rgb(255, 241, 242)"],
+  [style*="background-color: rgb(255, 241, 242)"],
+  [style*="background: rgb(252, 165, 165)"],
+  [style*="background-color: rgb(252, 165, 165)"],
+  [class~="bg-red-50"],
+  [class~="bg-red-100"],
+  [class~="bg-red-200"],
+  [class~="bg-rose-50"],
+  [class~="bg-rose-100"],
+  [class~="bg-rose-200"]
+) { --module-tint-ink:#f3b0b8; background-color:#3a2024 !important; color:#f3b0b8 !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style*="background-color: rgb(252, 165, 165)"]) :not([style*="background"]):not([class*="bg-"]) { color:#f3b0b8 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-red-600,.text-red-700,.text-red-800,.text-red-900) { color:#f3b0b8 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-rose-600,.text-rose-700,.text-rose-800,.text-rose-900) { color:#f3b0b8 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(
+  [style*="background: rgb(243, 232, 255)"],
+  [style*="background-color: rgb(243, 232, 255)"],
+  [style*="background: rgb(250, 245, 255)"],
+  [style*="background-color: rgb(250, 245, 255)"],
+  [style*="background: rgb(237, 233, 254)"],
+  [style*="background-color: rgb(237, 233, 254)"],
+  [style*="background: rgb(245, 243, 255)"],
+  [style*="background-color: rgb(245, 243, 255)"],
+  [class~="bg-purple-50"],
+  [class~="bg-purple-100"],
+  [class~="bg-purple-200"],
+  [class~="bg-violet-50"],
+  [class~="bg-violet-100"],
+  [class~="bg-violet-200"],
+  [class~="bg-fuchsia-50"],
+  [class~="bg-fuchsia-100"],
+  [class~="bg-fuchsia-200"]
+) { --module-tint-ink:#d1bcf7; background-color:#2d2340 !important; color:#d1bcf7 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-purple-600,.text-purple-700,.text-purple-800,.text-purple-900) { color:#d1bcf7 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-violet-600,.text-violet-700,.text-violet-800,.text-violet-900) { color:#d1bcf7 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-fuchsia-600,.text-fuchsia-700,.text-fuchsia-800,.text-fuchsia-900) { color:#d1bcf7 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(
+  [style*="background: rgb(224, 231, 255)"],
+  [style*="background-color: rgb(224, 231, 255)"],
+  [style*="background: rgb(238, 242, 255)"],
+  [style*="background-color: rgb(238, 242, 255)"],
+  [class~="bg-indigo-50"],
+  [class~="bg-indigo-100"],
+  [class~="bg-indigo-200"]
+) { --module-tint-ink:#bfc7fc; background-color:#252740 !important; color:#bfc7fc !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-indigo-600,.text-indigo-700,.text-indigo-800,.text-indigo-900) { color:#bfc7fc !important; }
+
+.dark .nsu-module-reader .mr-paper :is(
+  [style*="background: rgb(207, 250, 254)"],
+  [style*="background-color: rgb(207, 250, 254)"],
+  [style*="background: rgb(236, 254, 255)"],
+  [style*="background-color: rgb(236, 254, 255)"],
+  [class~="bg-cyan-50"],
+  [class~="bg-cyan-100"],
+  [class~="bg-cyan-200"]
+) { --module-tint-ink:#a4dce5; background-color:#1a3035 !important; color:#a4dce5 !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.text-cyan-600,.text-cyan-700,.text-cyan-800,.text-cyan-900) { color:#a4dce5 !important; }
+
+
+.dark .nsu-module-reader .mr-paper :is([style*="background: rgba(250, 250, 247"],[style*="background-color: rgba(250, 250, 247"]) { background-color:var(--surface-soft) !important; }
+.dark .nsu-module-reader .mr-paper :is(.bg-orange-500,.bg-amber-500,.bg-cyan-500) { color:var(--ink-on-accent) !important; }
+.dark .nsu-module-reader .mr-paper :is(.bg-orange-500,.bg-amber-500,.bg-cyan-500) :not([style*="background"]):not([class*="bg-"]) { color:var(--ink-on-accent) !important; }
+.dark .nsu-module-reader .mr-prose [style*="box-shadow"] { box-shadow:0 2px 6px #00000030 !important; }
+.dark .nsu-module-reader .mr-paper :is([style*="solid rgb(28, 25, 23)"],[style*="solid rgb(26, 26, 26)"],[style*="solid rgb(209, 213, 219)"],[style*="solid rgb(208, 205, 200)"]) { border-color:var(--outline-soft) !important; }
+
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(156, 163, 175)"], [style*="; color: rgb(156, 163, 175)"]) { color:var(--ink-muted) !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(179, 48, 48)"], [style*="; color: rgb(179, 48, 48)"]) { color:#f3b0b8 !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(59, 130, 246)"], [style*="; color: rgb(59, 130, 246)"]) { color:#9fc5fb !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(139, 92, 246)"], [style*="; color: rgb(139, 92, 246)"]) { color:#ccbaf1 !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(168, 116, 110)"], [style*="; color: rgb(168, 116, 110)"]) { color:#c3938e !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(79, 70, 229)"], [style*="; color: rgb(79, 70, 229)"]) { color:#bfc7fc !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(192, 38, 211)"], [style*="; color: rgb(192, 38, 211)"]) { color:#eab1f5 !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(127, 29, 29)"], [style*="; color: rgb(127, 29, 29)"]) { color:#f3b0b8 !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(30, 58, 138)"], [style*="; color: rgb(30, 58, 138)"]) { color:#b8d4fc !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(120, 53, 15)"], [style*="; color: rgb(120, 53, 15)"]) { color:#f1cd8e !important; }
+
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(6, 78, 59)"], [style*="; color: rgb(6, 78, 59)"]) { color:#a6dec0 !important; }
+
+/* Some authored controls include an accent only in their hover class. Keep
+   their idle ink tied to the actual dark surface, rather than that class. */
+.dark .nsu-module-reader .mr-paper button[class~="bg-white"][class~="dark:bg-zinc-800"] { color:var(--ink-primary) !important; }
+
+/* Deepen red and violet actions so their white labels work at rest and hover. */
+.dark .nsu-module-reader .mr-paper .bg-red-500 { background-color:#c83d3d !important; color:#fff !important; }
+.dark .nsu-module-reader .mr-paper .bg-red-500:hover { background-color:#b53434 !important; }
+.dark .nsu-module-reader .mr-paper .bg-violet-500 { background-color:#7451d0 !important; color:#fff !important; }
+.dark .nsu-module-reader .mr-paper .bg-violet-500:hover { background-color:#6542bd !important; }
+.dark .nsu-module-reader .mr-paper .bg-pink-500 { background-color:#be296a !important; color:#fff !important; }
+.dark .nsu-module-reader .mr-paper .bg-pink-500:hover { background-color:#a8225d !important; }
+.dark .nsu-module-reader .mr-paper :is(.bg-red-500,.bg-violet-500,.bg-pink-500) :not([style*="background"]):not([class*="bg-"]) { color:#fff !important; }
+
+.dark .nsu-module-reader .mr-paper :is(.dark\:text-zinc-500,.dark\:text-zinc-600) { color:var(--ink-muted) !important; }
+.dark .nsu-module-reader .mr-paper .text-rose-500 { color:#f3b0b8 !important; }
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(30, 64, 175)"],[style*="; color: rgb(30, 64, 175)"]) { color:#b8d4fc !important; }
+.dark .nsu-module-reader .mr-paper :is([style^="color: rgb(113, 113, 122)"],[style*="; color: rgb(113, 113, 122)"]) { color:var(--ink-muted) !important; }
+.dark .nsu-module-reader .mr-paper :is([style*="background-color: rgb(244, 244, 245)"]) { background-color:var(--surface-soft) !important; }
+.dark .nsu-module-reader .mr-paper .module-reframe-card { background-color:var(--surface-soft) !important; border-color:var(--outline-soft) !important; }
+.dark .nsu-module-reader .mr-paper .module-reframe-card[data-reframed="true"] { background-color:#1d3327 !important; border-color:#3d6b50 !important; }
+
+/* SVG labels do not inherit text colour utilities. Preserve plotted hues and
+   lift only their annotations and axis ink. */
+.dark .nsu-module-reader .mr-paper svg text:is([fill="#71717a"],[fill="#a1a1aa"],[fill="#9ca3af"]) { fill:var(--ink-muted); }
+.dark .nsu-module-reader .mr-paper svg text[fill="#7c3aed"] { fill:#d1bcf7; }
+
+/* Muted labels also appear on coloured feedback surfaces. */
+.dark .nsu-module-reader .mr-paper .text-zinc-400 { color:var(--ink-muted) !important; }
+.dark .nsu-module-reader .mr-paper :is(.text-successDarkText,[class~="text-[#3A8D5F]"]) { color:#a6dec0 !important; }
+.dark .nsu-module-reader .mr-paper .bg-successTint { background-color:#1d3327 !important; }
+.dark .nsu-module-reader .mr-paper .bg-success { background-color:#2f7a50 !important; color:#fff !important; }
+.dark .nsu-module-reader .mr-paper :is([style*="background-color: rgb(191, 219, 254)"]) { background-color:#1c2b40 !important; }
+.dark .nsu-module-reader .mr-paper :is([class*="bg-zinc-50/"],[class*="bg-zinc-100/"],[class*="bg-gray-50/"]) { background-color:var(--surface-soft) !important; }
+
+.dark .nsu-module-reader .mr-paper svg text { opacity:1; }
+.dark .nsu-module-reader .mr-paper svg text:is([fill="#5a5550"],[fill="#1a1a1a"],[fill="#1A1A1A"],[fill="#b0a898"],[fill="#9e9186"]) { fill:var(--ink-muted); }
+.dark .nsu-module-reader .mr-paper svg text:is([fill="#3A8D5F"],[fill="#3a8d5f"],[fill="#1F5F3E"],[fill="#1f5f3e"]) { fill:#a6dec0; }
+.dark .nsu-module-reader .mr-paper svg text:is([fill="#ef4444"],[fill="#dc2626"],[fill="#f43f5e"]) { fill:#f3b0b8; }
+.dark .nsu-module-reader .mr-paper svg text[fill="#d97706"] { fill:#f1cd8e; }

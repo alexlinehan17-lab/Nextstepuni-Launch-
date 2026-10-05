@@ -1,5 +1,7 @@
 .student-home,.direction-page,.module-completion {--student-ink:#383838;--student-paper:#fff;--student-muted:#74786d;--student-rule:#dedfd5;color:#252822;background:var(--student-paper)}
 .dark .student-home,.dark .direction-page,.dark .module-completion {--student-ink:#b4b7ac;--student-paper:#181b18;--student-muted:#b4b7ac;--student-rule:#44483f;color:#f6f5ec}
+/* The centred content and its exposed monitor gutters share the page canvas. */
+.student-home,.dark .student-home {--student-paper:var(--surface-canvas)}
 .student-home {--home-card-shadow:0 2px 4px #00000005,0 8px 20px -8px #00000020;width:100%;max-width:1500px;margin:auto;padding:34px 42px 80px}
 .dark .student-home {--home-card-shadow:0 2px 4px #00000018,0 8px 20px -8px #00000050}
 .student-eyebrow {font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.19em;color:var(--student-muted)}
@@ -82,6 +84,9 @@
 .completion-subtitle,.completion-north-star {font-size:14px;line-height:1.7;color:var(--student-muted);max-width:560px}
 .completion-record {display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:15px;border-block:1px solid var(--student-rule);padding:20px 5px;margin:6px 0;font-size:13px}
 .module-completion .student-text-action {min-height:40px}
+.dark .module-completion {--student-ink:#484848;--student-paper:var(--surface-canvas);--student-muted:#b2b2b2;--student-rule:#414141;color:#f3f3f3}
+.dark .module-completion .student-primary {box-shadow:0 2px 6px #00000040}
+.dark .module-completion button:focus-visible {outline-color:#f58c4e}
 @media(max-width:700px) {.direction-navigation{padding:20px;align-items:flex-start}.direction-navigation h1{font-size:22px}.direction-navigation>div{gap:12px}.direction-navigation .student-secondary{font-size:12px;padding:10px;min-height:44px;gap:8px}.direction-body{padding:0 22px 110px}.direction-north-star{margin:35px auto 50px}.direction-cards{grid-template-columns:1fr}.direction-next>div{grid-template-columns:1fr}.direction-vision>h2{font-size:30px}.completion-record{max-width:320px;gap:12px}.completion-record>span:last-child{width:100%}.module-completion{padding-block:32px}.completion-character{height:120px;width:120px}}
 /* The persistent account controls occupy the upper-right corner. */
 .direction-navigation {justify-content:flex-start}

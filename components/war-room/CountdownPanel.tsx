@@ -10,12 +10,9 @@ import {
   getPointsForGrade,
   LC_SUBJECTS,
 } from '../subjectData';
-import { getDistinctSubjectHex } from '../../studySessionData';
+import CrewIllustration from '../CrewIllustration';
 import { type CAOCourse } from '../futureFinderData';
-import {
-  type MockResult,
-  mutedSubjectHex,
-} from './warRoomShared';
+import type { MockResult } from './warRoomShared';
 import { MutedProgress } from './warRoomPrimitives';
 
 interface CountdownPanelProps {
@@ -88,7 +85,6 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({
       gap,
       gradeLabel,
       gradeAriaLabel,
-      color: mutedSubjectHex(getDistinctSubjectHex(subject.subjectName, index), 0.14),
     };
   }).sort((a, b) => {
     if (a.gap !== null && b.gap !== null && a.gap !== b.gap) return b.gap - a.gap;
@@ -105,35 +101,20 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({
   const roundedRemainingHours = Math.round(totalRemaining);
 
   return (
-    <div className="space-y-9">
-      <section aria-labelledby="war-room-time-summary">
-        <div className="max-w-2xl">
-          <h3 id="war-room-time-summary" className="text-xl font-semibold tracking-[-0.02em] text-[var(--ink-primary)]">
-            A manageable week, repeated
-          </h3>
+    <div className="wr-time-plan">
+      <section className="wr-time-summary" aria-labelledby="war-room-time-summary">
+        <h3 id="war-room-time-summary">A manageable week, repeated</h3>
+        <div className="wr-time-rhythm">
+          <div className="wr-time-week">
+            <p><strong>{weeklyHoursText}</strong> <span>hour{weeklyHours === 1 ? '' : 's'} a week.</span></p>
+            <p>{weeklySessions} session{weeklySessions === 1 ? '' : 's'} · {blockDuration} minute{blockDuration === 1 ? '' : 's'} each</p>
+          </div>
+          <div className="wr-time-horizon">
+            <p>About <strong>{roundedRemainingHours}</strong> focused hour{roundedRemainingHours === 1 ? '' : 's'} ahead.</p>
+            <p>{weeksUntilExam} study week{weeksUntilExam === 1 ? '' : 's'} between now and exams.</p>
+            <p className="wr-time-date">{daysUntilExam} day{daysUntilExam === 1 ? '' : 's'} to go.</p>
+          </div>
         </div>
-
-        <dl className="mt-5 grid border-y border-[var(--outline-soft)] sm:grid-cols-4 sm:divide-x sm:divide-[var(--outline-soft)]">
-          <div className="flex items-baseline justify-between gap-4 border-b border-[var(--outline-soft)] py-3 sm:block sm:border-b-0 sm:px-4 sm:first:pl-0">
-            <dt className="text-xs text-[var(--ink-muted)]">Until exams</dt>
-            <dd className="text-sm font-semibold text-[var(--ink-primary)] tabular-nums sm:mt-1">{daysUntilExam} day{daysUntilExam === 1 ? '' : 's'}</dd>
-          </div>
-          <div className="flex items-baseline justify-between gap-4 border-b border-[var(--outline-soft)] py-3 sm:block sm:border-b-0 sm:px-4">
-            <dt className="text-xs text-[var(--ink-muted)]">Each week</dt>
-            <dd className="text-sm font-semibold text-[var(--ink-primary)] tabular-nums sm:mt-1">{weeklySessions} session{weeklySessions === 1 ? '' : 's'}</dd>
-          </div>
-          <div className="flex items-baseline justify-between gap-4 border-b border-[var(--outline-soft)] py-3 sm:block sm:border-b-0 sm:px-4">
-            <dt className="text-xs text-[var(--ink-muted)]">Weekly time</dt>
-            <dd className="text-sm font-semibold text-[var(--ink-primary)] tabular-nums sm:mt-1">{weeklyHoursText} hour{weeklyHours === 1 ? '' : 's'}</dd>
-          </div>
-          <div className="flex items-baseline justify-between gap-4 py-3 sm:block sm:px-4 sm:last:pr-0">
-            <dt className="text-xs text-[var(--ink-muted)]">Focused time ahead</dt>
-            <dd className="text-sm font-semibold text-[var(--ink-primary)] tabular-nums sm:mt-1">About {roundedRemainingHours} hour{roundedRemainingHours === 1 ? '' : 's'}</dd>
-          </div>
-        </dl>
-        <p className="mt-3 text-xs text-[var(--ink-muted)]">
-          {weeksUntilExam} study week{weeksUntilExam === 1 ? '' : 's'} · {blockDuration} minute{blockDuration === 1 ? '' : 's'} per session
-        </p>
       </section>
 
       {targetCourse && currentPoints !== undefined && (
@@ -155,43 +136,28 @@ const CountdownPanel: React.FC<CountdownPanelProps> = ({
         </section>
       )}
 
-      <section aria-labelledby="war-room-time-allocation">
-        <div>
-          <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Weekly allocation</p>
-          <h3 id="war-room-time-allocation" className="mt-2 text-lg font-semibold tracking-[-0.01em] text-[var(--ink-primary)]">Where the time goes</h3>
-        </div>
-        <div className="mt-4 border-y border-[var(--outline-soft)]">
-          <div className="hidden grid-cols-[minmax(150px,1fr)_90px_90px_minmax(160px,1fr)] gap-4 border-b border-[var(--outline-soft)] py-3 text-[10px] font-bold uppercase tracking-[.14em] text-[var(--ink-muted)] sm:grid" aria-hidden="true">
-            <span>Subject</span><span>Grade path</span><span>Per week</span><span>Planned runway</span>
-          </div>
-          <ul>
-            {subjectBudgets.map(subject => (
-              <li
-                key={subject.subjectName}
-                className="grid gap-3 border-b border-[var(--outline-soft)] py-4 last:border-b-0 sm:grid-cols-[minmax(150px,1fr)_90px_90px_minmax(160px,1fr)] sm:items-center sm:gap-4"
-              >
-                <div className="flex min-w-0 items-center gap-3">
-                  <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: subject.color }} aria-hidden="true" />
-                  <span className="truncate text-sm font-semibold text-[var(--ink-primary)]">{subject.subjectName}</span>
+      <section className="wr-time-allocation" aria-labelledby="war-room-time-allocation">
+        <header><p className="wr-eyebrow">Weekly allocation</p><h3 id="war-room-time-allocation">Where the time goes</h3></header>
+        <ul className="wr-time-subjects">
+          {subjectBudgets.map(subject => (
+            <li key={subject.subjectName} className="wr-time-subject">
+              <div className="wr-time-subject-top">
+                <div className="wr-time-identity">
+                  <CrewIllustration subject={subject.subjectName} className="wr-time-art" />
+                  <div><h4>{subject.subjectName}</h4><p><span className="sr-only">{subject.gradeAriaLabel}</span><span aria-hidden="true">{subject.gradeLabel}</span></p></div>
                 </div>
-                <span className="text-xs text-[var(--ink-secondary)] tabular-nums">
-                  <span className="sr-only">{subject.gradeAriaLabel}</span>
-                  <span aria-hidden="true">{subject.gradeLabel}</span>
-                </span>
-                <span className="text-xs font-semibold text-[var(--ink-primary)]">
-                  <span className="sr-only">Per week: </span>{subject.sessionsPerWeek} session{subject.sessionsPerWeek === 1 ? '' : 's'}
-                </span>
+                <p className="wr-time-sessions"><strong>{subject.sessionsPerWeek}</strong> <span>session{subject.sessionsPerWeek === 1 ? '' : 's'} / week</span></p>
+              </div>
+              <div className="wr-time-runway">
                 <div>
-                  <div className="mb-1.5 flex items-center justify-between gap-3 text-[10px] text-[var(--ink-muted)] tabular-nums">
-                    <span>{Math.round(subject.hoursStudied)}h done</span>
-                    <span>{Math.round(subject.hoursRemaining)}h ahead</span>
-                  </div>
-                  <MutedProgress value={subject.progress} color={subject.color} height={3} />
+                  <span>{Math.round(subject.hoursStudied)}h recorded</span>
+                  <span>{Math.round(subject.hoursRemaining)}h ahead</span>
                 </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+                <MutedProgress value={subject.progress} color="var(--wr-orange)" height={3} />
+              </div>
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );

@@ -7,6 +7,15 @@ export type CardStyleId = 'default' | 'glass' | 'neon' | 'flat' | 'gradient';
 
 export type ModuleProgress = {
   unlockedSection: number;
+  /** Reading checkpoints, separate from evidence of using a study strategy.
+   * Legacy unlockedSection remains the compatible Passport/points counter. */
+  reading?: {
+    sectionsByMode: Record<string, string[]>;
+    lastSectionId: string;
+    lastSectionIndex: number;
+    lastMode: 'full' | 'essentials';
+    lastVisitedAt: string;
+  };
 };
 
 /** The five-point confidence scale captured after a study session. */
@@ -99,7 +108,7 @@ export interface UserSettings {
   defaultWorkMinutes: number;
   showDashboard?: boolean;
   essentialsMode?: boolean;
-  /** Reading comfort: multiplier on module reading text (0.9–1.2, default 1). */
+  /** Reading comfort: multiplier on module reading text (0.9–2, default 1). */
   readingScale?: number;
   /** Reading comfort: 'relaxed' opens up line spacing in module reading text. */
   readingSpacing?: 'normal' | 'relaxed';

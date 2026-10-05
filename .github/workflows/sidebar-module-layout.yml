@@ -1,0 +1,42 @@
+name: Sidebar and module browser review
+permissions:
+  contents: read
+on:
+  pull_request:
+    paths:
+      - 'App.tsx'
+      - 'components/**'
+      - 'hooks/useModule*.ts'
+      - 'hooks/usePrivateDeviceDraft.ts'
+      - 'services/moduleResponseStore.ts'
+      - 'utils/module*.ts'
+      - 'utils/courseVisibility.ts'
+      - 'scripts/verify-sidebar-module-layout.mjs'
+      - '.github/workflows/sidebar-module-layout.yml'
+jobs:
+  browser-integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Install isolated browser tools
+        run: |
+          npm install --prefix "$RUNNER_TEMP/sidebar-browser" --no-package-lock --ignore-scripts playwright@1.63.0
+          node "$RUNNER_TEMP/sidebar-browser/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Verify actual app navigation, modules and notebook cards
+        run: node scripts/verify-sidebar-module-layout.mjs
+        env:
+          PLAYWRIGHT_MODULE_PATH: ${{ runner.temp }}/sidebar-browser/node_modules/playwright/index.mjs
+          SIDEBAR_MODULE_SCREENSHOTS: ${{ runner.temp }}/sidebar-module-review
+      - name: Upload screenshots and checks
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: sidebar-module-review
+          path: ${{ runner.temp }}/sidebar-module-review
+          retention-days: 7

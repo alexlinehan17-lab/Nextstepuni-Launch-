@@ -339,7 +339,7 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
                       (
                         {
                           none: 'Not started',
-                          learned: 'Learned',
+                          learned: 'Read',
                           practiced: 'Practiced',
                           applied: 'Applied',
                           habitual: 'Habitual',

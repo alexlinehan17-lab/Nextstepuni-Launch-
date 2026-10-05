@@ -65,7 +65,7 @@ export function useStrategyMastery(
       }
 
       const relevantSessions = sessions.filter(
-        s => s.strategiesShown && s.strategiesShown.includes(moduleId)
+        s => s.strategiesUsed?.includes(moduleId)
       );
 
       const sessionCount = relevantSessions.length;

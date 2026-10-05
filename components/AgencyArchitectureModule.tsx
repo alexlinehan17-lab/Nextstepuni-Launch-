@@ -234,10 +234,13 @@ const AttributionReframeDrill = () => {
       <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click on a self-defeating thought to transform it into an empowering one.</p>
       <div className="space-y-3">
         {examples.map((ex) => (
-          <motion.div
+          <motion.button
             key={ex.id}
+            type="button"
+            aria-pressed={flipped.includes(ex.id)}
             onClick={() => handleFlip(ex.id)}
-            className="p-6 rounded-xl cursor-pointer border relative min-h-[100px] flex items-center justify-center transition-colors"
+            className="module-reframe-card w-full p-6 rounded-xl cursor-pointer border relative min-h-[100px] flex items-center justify-center transition-colors"
+            data-reframed={flipped.includes(ex.id)}
             animate={{
               backgroundColor: flipped.includes(ex.id) ? 'rgba(232, 242, 236, 1)' : 'rgba(250, 250, 247, 1)',
               borderColor: flipped.includes(ex.id) ? 'rgb(58 141 95)' : 'rgb(229 228 223)'
@@ -258,7 +261,7 @@ const AttributionReframeDrill = () => {
             <p className="absolute bottom-2.5 right-4 text-[9px] font-medium tracking-wider text-zinc-300 dark:text-zinc-600 uppercase">
               {flipped.includes(ex.id) ? 'Reframed' : 'Tap to reframe'}
             </p>
-          </motion.div>
+          </motion.button>
         ))}
       </div>
     </div>

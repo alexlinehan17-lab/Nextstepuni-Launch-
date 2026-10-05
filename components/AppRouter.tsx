@@ -44,6 +44,7 @@ const ModulesView = lazy(() => import('./ModulesView').then(m => ({ default: m.M
 import { moduleComponents, InnovationZone } from '../moduleRegistry';
 import { ALL_COURSES, categoryTitles } from '../courseData';
 import { ModulePositionProvider, resolveModulePosition } from '../contexts/ModulePositionContext';
+import { moduleAvailability } from '../utils/courseVisibility';
 import { type ModuleProgress, type UserProgress, type UserSettings, type NorthStar, type StudyReflection, type TopicMasteryV2, type UnifiedMockResult } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
@@ -327,6 +328,9 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   };
 
   const handleSelectModule = (moduleId: string) => {
+    const availability = moduleAvailability(ALL_COURSES.find(course => course.id === moduleId), user?.curriculumLevel, studentProfile);
+    if (availability === 'unavailable') return;
+    if (availability === 'coming-soon') { nav.navigateToJCComingSoon(moduleId); return; }
     nav.navigateToModule(moduleId, viewState, currentCategory);
   };
 
@@ -567,6 +571,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
       <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening your learning paths" />}>
         <LearningPathsView
           allCourses={studentCourses}
+          curriculumLevel={user?.curriculumLevel}
           userProgress={userProgress}
           onSelectModule={handleSelectModule}
           onBack={handleBackToTree}
@@ -764,7 +769,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           className="min-h-screen bg-white dark:bg-zinc-950"
         >
           {/* Header */}
-          <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: `calc(${mobileAppDesign ? 12 : 16}px + var(--sat, 0px))`, paddingBottom: mobileAppDesign ? '12px' : '24px' }}>
+          <header data-student-page-header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-white dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: `calc(${mobileAppDesign ? 12 : 16}px + var(--sat, 0px))`, paddingBottom: mobileAppDesign ? '12px' : '24px' }}>
             <div className="flex items-center gap-4">
               <BackButton label="Back to modules" onClick={handleGoToModules} showLabel={!mobileAppDesign} />
             </div>
@@ -821,11 +826,15 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   if (viewState === 'module' && currentModuleId) {
     const ModuleComponent = moduleComponents[currentModuleId];
     const modulePosition = resolveModulePosition(studentCourses, currentModuleId);
+    const availability = moduleAvailability(ALL_COURSES.find(course => course.id === currentModuleId), user?.curriculumLevel, studentProfile);
     // A registered module can still be outside this student's curriculum or
     // selected-subject catalogue. Do not let a manually entered URL bypass the
     // same visibility rules used by the selection screen.
-    if (ModuleComponent && !modulePosition) {
+    if (ModuleComponent && (!modulePosition || availability === 'unavailable')) {
       return <FallbackRedirect onRedirect={() => nav.navigateToTree()} />;
+    }
+    if (ModuleComponent && availability === 'coming-soon') {
+      return <FallbackRedirect onRedirect={() => nav.navigateToJCComingSoon(currentModuleId)} />;
     }
     if (ModuleComponent) {
       return (

@@ -54,8 +54,9 @@ describe('timer appearance preference', () => {
 it('keeps completion navigation separate from practice and review', () => {
   const practice = vi.fn(); const back = vi.fn(); const review = vi.fn();
   render(<ModuleCompleteScreen isOpen moduleTitle="The Driver’s Manual" categoryColor="#ff7915" sectionsCount={6} onContinue={back} onPractice={practice} onReview={review} />);
-  expect(screen.getByText('6 sections complete')).toBeInTheDocument();
-  fireEvent.click(screen.getByRole('button', { name: 'Put it into practice' }));
+  expect(screen.getByText('6 sections read')).toBeInTheDocument();
+  expect(screen.getByText('Reading introduces the idea. Practice is recorded when you try it yourself.')).toBeInTheDocument();
+  fireEvent.click(screen.getByRole('button', { name: 'Start a study session' }));
   expect(practice).toHaveBeenCalledOnce(); expect(back).not.toHaveBeenCalled();
   fireEvent.click(screen.getByRole('button', { name: 'Back to the programme' }));
   expect(back).toHaveBeenCalledOnce();
