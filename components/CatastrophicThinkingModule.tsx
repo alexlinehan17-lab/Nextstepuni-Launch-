@@ -3,6 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
+import { usePrivateDeviceDraft } from '../hooks/usePrivateDeviceDraft';
+import { PrivateDraftControls } from './learning/PrivateDraftControls';
 import React, { useState } from 'react';
 import { motion, AnimatePresence, Reorder } from 'framer-motion';
 import { MotionDiv } from './Motion';
@@ -22,15 +24,17 @@ const theme = slateTheme;
 // --- INTERACTIVE COMPONENTS ---
 
 const ThoughtRecord = () => {
-    const [step, setStep] = useState(0);
-    const [record, setRecord] = useState({ situation: '', emotion: '', intensity: 90, nat: '', evidenceFor: '', evidenceAgainst: '', alternative: '', reRate: 50});
-    const update = (field: string, value: any) => setRecord(prev => ({...prev, [field]: value}));
+    const draft = usePrivateDeviceDraft('thought-record', { step: 0, record: { situation: '', emotion: '', intensity: 90, nat: '', evidenceFor: '', evidenceAgainst: '', alternative: '', reRate: 50 } });
+    const { step, record } = draft.value;
+    const setStep = (value: React.SetStateAction<number>) => draft.update(previous => ({ ...previous, step: typeof value === 'function' ? value(previous.step) : value }));
+    const update = (field: string, value: string | number) => draft.update(previous => ({ ...previous, record: { ...previous.record, [field]: value } }));
 
     const steps = ['Situation', 'Emotion', 'Negative Thought', 'Evidence For', 'Evidence Against', 'Alternative', 'Re-Rate'];
 
     return (
         <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
              <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Thought Record</h4>
+             <PrivateDraftControls title="My thought record" retain={draft.retain} setRetain={draft.setRetain} onClear={draft.clear} error={draft.error} text={Object.entries(record).map(([key, value]) => `${key}: ${value}`).join('\n')} />
              <div className="flex justify-between my-4"><div className="w-full h-1 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-1 bg-slate-500 rounded-full" animate={{width: `${(step / (steps.length - 1)) * 100}%`}}/></div></div>
              <AnimatePresence mode="wait">
              <motion.div key={step} initial={{opacity:0, x:20}} animate={{opacity:1, x:0}} exit={{opacity:0, x:-20}} >
@@ -40,7 +44,7 @@ const ThoughtRecord = () => {
                 {step === 3 && <div><label className="font-bold">4. Evidence For:</label><textarea value={record.evidenceFor} onChange={e => update('evidenceFor', e.target.value)} placeholder="e.g., I got some dates wrong on last week's test." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
                 {step === 4 && <div><label className="font-bold">5. Evidence Against:</label><textarea value={record.evidenceAgainst} onChange={e => update('evidenceAgainst', e.target.value)} placeholder="e.g., I passed my last test. I have 3 months to study." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
                 {step === 5 && <div><label className="font-bold">6. Alternative Thought:</label><textarea value={record.alternative} onChange={e => update('alternative', e.target.value)} placeholder="e.g., History is hard, but if I use flashcards I can pass." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all mt-2 h-24" style={{ border: '1.5px solid #E7E5E4' }}/></div>}
-                {step === 6 && <div className="space-y-4"><label className="font-bold">7. Re-Rate Emotion:</label>{record.alternative && <div className="p-3 bg-successTint dark:bg-success/15 border border-success/30 dark:border-success/40 rounded-lg"><p className="text-[10px] font-bold uppercase tracking-wider text-success mb-1">Your Alternative Thought</p><p className="text-sm text-successDarkText dark:text-success">{record.alternative}</p></div>}<p className="text-sm">Initial Panic: <span className="font-bold text-rose-500">{record.intensity}%</span></p><label className="text-sm">New Panic Level: <span className="font-bold">{record.reRate}%</span></label><input type="range" value={record.reRate} onChange={e => update('reRate', e.target.value)} className="chunky-slider chunky-slider-coral"/>{Number(record.reRate) < Number(record.intensity) && <p className="text-xs text-success dark:text-success font-medium">Panic reduced by {Number(record.intensity) - Number(record.reRate)}%. The reframe is working.</p>}</div>}
+                {step === 6 && <div className="space-y-4"><label className="font-bold">7. Re-Rate Emotion:</label>{record.alternative && <div className="p-3 bg-successTint dark:bg-success/15 border border-success/30 dark:border-success/40 rounded-lg"><p className="text-[10px] font-bold uppercase tracking-wider text-success mb-1">Your Alternative Thought</p><p className="text-sm text-successDarkText dark:text-success">{record.alternative}</p></div>}<p className="text-sm">Initial Panic: <span className="font-bold text-rose-500">{record.intensity}%</span></p><label className="text-sm">New Panic Level: <span className="font-bold">{record.reRate}%</span></label><input type="range" value={record.reRate} onChange={e => update('reRate', e.target.value)} className="chunky-slider chunky-slider-coral"/>{Number(record.reRate) < Number(record.intensity) && <p className="text-xs text-success dark:text-success font-medium">You rated this feeling {Number(record.intensity) - Number(record.reRate)} points lower. Notice what helped; there is no required result.</p>}</div>}
              </motion.div>
              </AnimatePresence>
              <div className="flex justify-between mt-4">

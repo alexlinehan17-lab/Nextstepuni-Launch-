@@ -3,6 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
+import { usePrivateDeviceDraft } from '../hooks/usePrivateDeviceDraft';
+import { PrivateDraftControls } from './learning/PrivateDraftControls';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
@@ -680,9 +682,11 @@ const wrapSections: WRAPSection[] = [
 ];
 
 const WRAPBuilder = () => {
-    const [step, setStep] = useState(0); // 0-3 = sections, 4 = complete
-    const [selections, setSelections] = useState<string[][]>([[], [], [], []]);
-    const [customInputs, setCustomInputs] = useState(['', '', '', '']);
+    const draft = usePrivateDeviceDraft('exam-wrap', { step: 0, selections: [[], [], [], []] as string[][], customInputs: ['', '', '', ''] });
+    const { step, selections, customInputs } = draft.value;
+    const setStep = (value: React.SetStateAction<number>) => draft.update(previous => ({ ...previous, step: typeof value === 'function' ? value(previous.step) : value }));
+    const setSelections = (value: React.SetStateAction<string[][]>) => draft.update(previous => ({ ...previous, selections: typeof value === 'function' ? value(previous.selections) : value }));
+    const setCustomInputs = (value: React.SetStateAction<string[]>) => draft.update(previous => ({ ...previous, customInputs: typeof value === 'function' ? value(previous.customInputs) : value }));
 
     const toggleItem = (sectionIdx: number, item: string) => {
         setSelections(prev => {
@@ -724,6 +728,8 @@ const WRAPBuilder = () => {
         <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Build Your WRAP</h4>
             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">A personal crisis plan you write now, so you don't have to think under pressure.</p>
+
+            <PrivateDraftControls title="My WRAP" retain={draft.retain} setRetain={draft.setRetain} onClear={draft.clear} error={draft.error} text={wrapSections.map((section, index) => `${section.title}\n${selections[index].join('\n')}\n${customInputs[index]}`).join('\n\n')} />
 
             {/* Progress dots */}
             <div className="flex items-center justify-center gap-2 mb-8">
@@ -781,6 +787,8 @@ const WRAPBuilder = () => {
                                 return (
                                     <button
                                         key={item}
+                                        type="button"
+                                        aria-pressed={isSelected}
                                         onClick={() => toggleItem(step, item)}
                                         className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200 ${
                                             isSelected
@@ -810,6 +818,7 @@ const WRAPBuilder = () => {
                         <div className="flex gap-2 mb-6">
                             <input
                                 type="text"
+                                aria-label={`Your own ${section.title.toLowerCase()} item`}
                                 value={customInputs[step]}
                                 onChange={e => {
                                     const idx = step;

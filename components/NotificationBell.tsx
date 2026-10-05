@@ -26,10 +26,11 @@ function relativeTime(ts: number): string {
 interface NotificationBellProps {
   uid: string;
   onUnreadCountChange?: (count: number) => void;
-  variant?: 'icon' | 'menu';
+  variant?: 'icon' | 'menu' | 'sidebar';
+  returnFocusRef?: React.RefObject<HTMLButtonElement | null>;
 }
 
-const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountChange, variant = 'icon' }) => {
+const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountChange, variant = 'icon', returnFocusRef }) => {
   const isDemo = uid === DEMO_STUDENT_UID;
   const [isOpen, setIsOpen] = useState(false);
   const [notifications, setNotifications] = useState<AppNotification[]>([]);
@@ -44,12 +45,12 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
     const handleKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setIsOpen(false);
-        triggerRef.current?.focus();
+        (returnFocusRef?.current ?? triggerRef.current)?.focus();
       }
     };
     document.addEventListener('keydown', handleKey);
     return () => document.removeEventListener('keydown', handleKey);
-  }, [isOpen]);
+  }, [isOpen, returnFocusRef]);
 
   const loadNotifications = useCallback(async () => {
     if (isDemo) {
@@ -122,7 +123,7 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
   };
 
   return (
-    <div className={`nsu-post ${variant === 'menu' ? 'nsu-post-menu' : ''}`} ref={panelRef}>
+    <div className={`nsu-post ${variant === 'menu' ? 'nsu-post-menu' : variant === 'sidebar' ? 'nsu-post-sidebar' : ''}`} ref={panelRef}>
       <button
         ref={triggerRef}
         data-notification-bell
@@ -157,7 +158,7 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
             <div className="nsu-post-heading">
               <div><p className="nsu-post-eyebrow">YOUR UPDATES</p><h3>You’ve got post.</h3></div>
               <img src="/assets/star-crew/companions/listener-transparent.png" alt="" width="77" height="77" />
-              <button type="button" className="nsu-post-close" aria-label="Close updates" onClick={() => { setIsOpen(false); triggerRef.current?.focus(); }}><X size={17} /></button>
+              <button type="button" className="nsu-post-close" aria-label="Close updates" onClick={() => { setIsOpen(false); (returnFocusRef?.current ?? triggerRef.current)?.focus(); }}><X size={17} /></button>
             </div>
             <div className="nsu-post-body">
               {selected ? (

@@ -57,7 +57,7 @@ describe('module display position', () => {
     });
   });
 
-  test('numbers subject modules from the student-selected subject list', () => {
+  test('numbers subject guides alongside relevant strategies from the student-selected subject list', () => {
     const businessStudentModules = filterCoursesForStudent(ALL_COURSES, 'senior', {
       subjects: [{ subjectName: 'Business', level: 'higher' }],
       examStartDate: '2027-06-09',
@@ -67,10 +67,11 @@ describe('module display position', () => {
     });
 
     expect(resolveModulePosition(businessStudentModules, 'subject-business-protocol')).toMatchObject({
-      displayNumber: '01',
-      position: 1,
-      total: 1,
+      displayNumber: '02',
+      position: 2,
+      total: 2,
     });
+    expect(resolveModulePosition(businessStudentModules, 'mastering-business-protocol')).toMatchObject({ position: 1, total: 2 });
     expect(resolveModulePosition(businessStudentModules, 'subject-physics-protocol')).toBeNull();
   });
 });

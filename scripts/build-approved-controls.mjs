@@ -24,6 +24,13 @@ const result = await build({
   outfile: 'components/approved-ui-runtime.js',
   banner: { js: '/* Compiled purchased controls for NextStepUni. Editable originals remain local. */\nimport "./approved-ui-runtime.css";\nimport "./approved-ui-theme.css";' },
   plugins: [{ name: 'private-control-sources', setup(api) {
+    // Every Kobra scope shares the same sound runtime and listener ownership.
+    // The navigation runtime contains the current purchased sound patches.
+    api.onResolve({ filter: /(?:^|\/)sound$/ }, args => {
+      if (args.path.startsWith(vendor) || args.importer.startsWith(vendor)) {
+        return { path: './kobra-navigation-runtime', external: true };
+      }
+    });
     api.onResolve({ filter: /^@\/hooks\/useModal$/ }, () => ({ path: '../hooks/useModal', external: true }));
     api.onResolve({ filter: /^@\// }, args => {
       const base = path.join(sourceRoot, args.path.slice(2));

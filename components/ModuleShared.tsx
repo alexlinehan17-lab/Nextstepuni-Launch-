@@ -92,7 +92,7 @@ export const ToolJumpCard: React.FC<ToolJumpCardProps> = ({ toolId, title, descr
       <button
         type="button"
         onClick={() => nav.navigateToInnovationZone(toolId)}
-        className="w-full bg-[var(--surface-paper)] text-left text-[var(--ink-primary)]"
+        className="module-tool-jump w-full bg-[var(--surface-paper)] text-left text-[var(--ink-primary)]"
         style={{
           border: '2px solid var(--outline-strong)',
           borderRadius: 16,
@@ -102,11 +102,11 @@ export const ToolJumpCard: React.FC<ToolJumpCardProps> = ({ toolId, title, descr
         }}
         onMouseEnter={(e) => {
           (e.currentTarget as HTMLButtonElement).style.transform = 'translate(-2px, -2px)';
-          (e.currentTarget as HTMLButtonElement).style.boxShadow = '6px 6px 0px 0px #1a1a1a';
+          (e.currentTarget as HTMLButtonElement).style.boxShadow = '6px 6px 0px 0px var(--outline-strong)';
         }}
         onMouseLeave={(e) => {
           (e.currentTarget as HTMLButtonElement).style.transform = 'translate(0, 0)';
-          (e.currentTarget as HTMLButtonElement).style.boxShadow = '4px 4px 0px 0px #1a1a1a';
+          (e.currentTarget as HTMLButtonElement).style.boxShadow = '4px 4px 0px 0px var(--outline-strong)';
         }}
       >
         <div className="flex items-center gap-4">
@@ -170,7 +170,7 @@ export const PersonalStory = ({ children, name, role, junior }: PersonalStoryPro
     className="my-14"
   >
     <div className="relative rounded-2xl bg-white dark:bg-zinc-800/60 border border-zinc-200 dark:border-zinc-700 px-8 py-7 md:px-10 md:py-9">
-      <div className="absolute top-4 right-6 pointer-events-none" style={{ fontSize: 72, lineHeight: 1, fontFamily: 'Georgia, serif', color: 'rgba(0,0,0,0.04)' }}>
+      <div aria-hidden="true" className="absolute top-4 right-6 pointer-events-none" style={{ fontSize: 72, lineHeight: 1, fontFamily: 'Georgia, serif', color: 'rgba(0,0,0,0.04)' }}>
         &rdquo;
       </div>
       <div className="relative">
@@ -217,12 +217,12 @@ export const PersonalStory = ({ children, name, role, junior }: PersonalStoryPro
 export const SupportSignpost = ({ children }: { children?: React.ReactNode }) => (
   <div
     className="my-8 rounded-2xl px-5 py-4 flex gap-3.5 items-start"
-    style={{ backgroundColor: '#E8F2EC', border: '1px solid rgba(58,141,95,0.3)' }}
+    style={{ backgroundColor: 'var(--success-tint)', border: '1px solid var(--outline-soft)' }}
   >
     <div className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'rgba(58,141,95,0.15)' }}>
       <Heart size={15} style={{ color: '#3A8D5F' }} />
     </div>
-    <div className="text-[13.5px] leading-relaxed" style={{ color: '#1F5F3E' }}>
+    <div className="text-[13.5px] leading-relaxed" style={{ color: 'var(--success-tint-ink)' }}>
       {children ?? (
         <>
           <span className="font-semibold">These tools are for exam nerves.</span>{' '}
@@ -257,7 +257,7 @@ const chartToY = (f: number) => PAD_T + (1 - f) * CHART_H;
 function chartBuildArea(data: number[]): string { const pts = data.map((v, i) => ({ x: chartToX(i / (data.length - 1)), y: chartToY(v) })); let d = `M ${pts[0].x} ${chartToY(0)} L ${pts[0].x} ${pts[0].y}`; for (let i = 1; i < pts.length; i++) { const cx1 = pts[i-1].x + (pts[i].x - pts[i-1].x) * 0.4; const cx2 = pts[i-1].x + (pts[i].x - pts[i-1].x) * 0.6; d += ` C ${cx1} ${pts[i-1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`; } d += ` L ${pts[pts.length-1].x} ${chartToY(0)} Z`; return d; }
 function chartBuildLine(data: number[]): string { const pts = data.map((v, i) => ({ x: chartToX(i / (data.length - 1)), y: chartToY(v) })); let d = `M ${pts[0].x} ${pts[0].y}`; for (let i = 1; i < pts.length; i++) { const cx1 = pts[i-1].x + (pts[i].x - pts[i-1].x) * 0.4; const cx2 = pts[i-1].x + (pts[i].x - pts[i-1].x) * 0.6; d += ` C ${cx1} ${pts[i-1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`; } return d; }
 
-const DualChartSvg = ({ panel, xLabels, gradientId }: { panel: ChartPanelConfig; xLabels: string[]; gradientId: string }) => { const areaData = panel.areaSource === 'secondary' ? panel.secondary.data : panel.primary.data; const areaColor = panel.primary.color; const pLW = panel.primary.legendLabel.length * 5 + 20; const sLW = panel.secondary.legendLabel.length * 5 + 20; const legendStartX = SVG_W - PAD_R - pLW - sLW - 8; return (<svg viewBox={`0 0 ${SVG_W} ${SVG_H}`} className="w-full"><defs><linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor={areaColor} stopOpacity="0.5" /><stop offset="100%" stopColor={areaColor} stopOpacity="0.05" /></linearGradient></defs>{[0.25,0.5,0.75,1.0].map(v => <line key={v} x1={PAD_L} x2={SVG_W-PAD_R} y1={chartToY(v)} y2={chartToY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />)}<line x1={PAD_L} x2={SVG_W-PAD_R} y1={chartToY(0)} y2={chartToY(0)} stroke="#a1a1aa" strokeOpacity="0.3" /><motion.path d={chartBuildArea(areaData)} fill={`url(#${gradientId})`} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8}} /><motion.path d={chartBuildLine(panel.primary.data)} fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round" initial={{pathLength:0}} animate={{pathLength:1}} transition={{duration:1.2,ease:'easeOut'}} /><motion.path d={chartBuildLine(panel.secondary.data)} fill="none" stroke={panel.secondary.color} strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round" initial={{pathLength:0}} animate={{pathLength:1}} transition={{duration:1.2,ease:'easeOut',delay:0.3}} />{panel.primary.data.map((v,i) => <motion.circle key={i} cx={chartToX(i/(panel.primary.data.length-1))} cy={chartToY(v)} r="3.5" fill={areaColor} initial={{scale:0}} animate={{scale:1}} transition={{delay:0.2*i+0.3}} />)}<text x={PAD_L+2} y={chartToY(1.0)-4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text><text x={PAD_L+2} y={chartToY(0)-4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>{xLabels.map((m,i) => <text key={m} x={chartToX(i/(xLabels.length-1))} y={chartToY(0)+14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>)}{panel.phases?.map((p,i) => <text key={i} x={chartToX((p.x1+p.x2)/2)} y={chartToY(0)+28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>)}<text x={SVG_W/2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{panel.label}</text><line x1={legendStartX} x2={legendStartX+16} y1={14} y2={14} stroke={areaColor} strokeWidth="2" /><text x={legendStartX+20} y={17} fontSize="8" fill="#a1a1aa">{panel.primary.legendLabel}</text><line x1={legendStartX+pLW+4} x2={legendStartX+pLW+20} y1={14} y2={14} stroke={panel.secondary.color} strokeWidth="1.5" strokeDasharray="4 2" /><text x={legendStartX+pLW+24} y={17} fontSize="8" fill="#a1a1aa">{panel.secondary.legendLabel}</text></svg>); };
+const DualChartSvg = ({ panel, xLabels, gradientId }: { panel: ChartPanelConfig; xLabels: string[]; gradientId: string }) => { const areaData = panel.areaSource === 'secondary' ? panel.secondary.data : panel.primary.data; const areaColor = panel.primary.color; const pLW = panel.primary.legendLabel.length * 5 + 20; const sLW = panel.secondary.legendLabel.length * 5 + 20; const legendStartX = SVG_W - PAD_R - pLW - sLW - 8; return (<svg viewBox={`0 0 ${SVG_W} ${SVG_H}`} className="w-full"><defs><linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor={areaColor} stopOpacity="0.5" /><stop offset="100%" stopColor={areaColor} stopOpacity="0.05" /></linearGradient></defs>{[0.25,0.5,0.75,1.0].map(v => <line key={v} x1={PAD_L} x2={SVG_W-PAD_R} y1={chartToY(v)} y2={chartToY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />)}<line x1={PAD_L} x2={SVG_W-PAD_R} y1={chartToY(0)} y2={chartToY(0)} stroke="#a1a1aa" strokeOpacity="0.3" /><motion.path d={chartBuildArea(areaData)} fill={`url(#${gradientId})`} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8}} /><motion.path d={chartBuildLine(panel.primary.data)} fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round" initial={{pathLength:0}} animate={{pathLength:1}} transition={{duration:1.2,ease:'easeOut'}} /><motion.path d={chartBuildLine(panel.secondary.data)} fill="none" stroke={panel.secondary.color} strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round" initial={{pathLength:0}} animate={{pathLength:1}} transition={{duration:1.2,ease:'easeOut',delay:0.3}} />{panel.primary.data.map((v,i) => <motion.circle key={i} cx={chartToX(i/(panel.primary.data.length-1))} cy={chartToY(v)} r="3.5" fill={areaColor} initial={{scale:0}} animate={{scale:1}} transition={{delay:0.2*i+0.3}} />)}<text x={PAD_L+2} y={chartToY(1.0)-4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text><text x={PAD_L+2} y={chartToY(0)-4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>{xLabels.map((m,i) => <text key={m} x={chartToX(i/(xLabels.length-1))} y={chartToY(0)+14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>)}{panel.phases?.map((p,i) => <text key={i} x={chartToX((p.x1+p.x2)/2)} y={chartToY(0)+28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>)}<text x={SVG_W/2} y={14} fontSize="11" fill="var(--ink-muted)" textAnchor="middle" fontWeight="700">{panel.label}</text><line x1={legendStartX} x2={legendStartX+16} y1={14} y2={14} stroke={areaColor} strokeWidth="2" /><text x={legendStartX+20} y={17} fontSize="8" fill="#a1a1aa">{panel.primary.legendLabel}</text><line x1={legendStartX+pLW+4} x2={legendStartX+pLW+20} y1={14} y2={14} stroke={panel.secondary.color} strokeWidth="1.5" strokeDasharray="4 2" /><text x={legendStartX+pLW+24} y={17} fontSize="8" fill="#a1a1aa">{panel.secondary.legendLabel}</text></svg>); };
 
 export const DualChartComparison = ({ heading, subheading, xLabels, leftPanel, rightPanel, revealButtonText, revealButtonColor, revealButtonHover, teaserText, leftDescription, rightDescription, idPrefix }: DualChartComparisonProps) => { const [revealed, setRevealed] = useState(false); const lc = BORDER_COLORS[leftPanel.borderColor]; const rc = BORDER_COLORS[rightPanel.borderColor]; return (<div className="my-14 p-6 md:p-10 bg-white dark:bg-zinc-800/50 rounded-2xl border border-zinc-200 dark:border-zinc-700" style={{boxShadow:'0 1px 3px rgba(28,25,23,0.06), 0 4px 16px rgba(28,25,23,0.04)'}}><h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">{heading}</h4><p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">{subheading}</p>{!revealed ? (<div className="text-center"><p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">{teaserText}</p><button onClick={() => setRevealed(true)} className={`px-5 py-2.5 text-sm font-bold rounded-xl ${revealButtonColor} text-white ${revealButtonHover} transition-colors`}>{revealButtonText}</button></div>) : (<MotionDiv initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{duration:0.4}}><div className="grid md:grid-cols-2 gap-4 mb-5"><div className={`rounded-xl border ${lc.border} ${lc.bg} p-3`}><DualChartSvg panel={leftPanel} xLabels={xLabels} gradientId={`${idPrefix}-left-grad`} /></div><div className={`rounded-xl border ${rc.border} ${rc.bg} p-3`}><DualChartSvg panel={rightPanel} xLabels={xLabels} gradientId={`${idPrefix}-right-grad`} /></div></div><div className="grid md:grid-cols-2 gap-4 text-sm"><div className={`flex items-start gap-2.5 p-3 rounded-xl ${lc.descBg} border ${lc.descBorder}`}>{leftDescription}</div><div className={`flex items-start gap-2.5 p-3 rounded-xl ${rc.descBg} border ${rc.descBorder}`}>{rightDescription}</div></div></MotionDiv>)}</div>); };
 
@@ -294,22 +294,22 @@ export const ConceptCardGrid = ({ cards, columns = 2, accentNote }: ConceptCardG
           key={card.number}
           className="relative"
           style={{
-            backgroundColor: card.highlight ? COLORS.accentTint : '#FFFFFF',
-            border: card.highlight ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a',
+            backgroundColor: card.highlight ? 'var(--accent-tint)' : 'var(--surface-paper)',
+            border: card.highlight ? `2px solid ${COLORS.accent}` : '1.5px solid var(--outline-soft)',
             borderRadius: 14,
             padding: '18px 20px',
           }}
         >
           {card.highlight && (
-            <span className="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, borderRadius: 20, padding: '3px 8px' }}>
+            <span className="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider" style={{ backgroundColor: 'var(--accent-tint)', color: 'var(--accent-tint-ink)', borderRadius: 20, padding: '3px 8px' }}>
               Key Lever
             </span>
           )}
           <div className="w-9 h-9 rounded-full flex items-center justify-center mb-3" style={{ backgroundColor: COLORS.accent }}>
             <span className="font-serif font-bold text-base text-white">{card.number}</span>
           </div>
-          <p className="font-serif font-bold text-base mb-1" style={{ color: '#1a1a1a' }}>{card.term}</p>
-          <p className="text-[13px] leading-relaxed" style={{ color: '#5a5550' }}>{card.description}</p>
+          <p className="font-serif font-bold text-base mb-1" style={{ color: 'var(--ink-primary)' }}>{card.term}</p>
+          <p className="text-[13px] leading-relaxed" style={{ color: 'var(--ink-secondary)' }}>{card.description}</p>
         </div>
       ))}
     </div>
@@ -340,8 +340,8 @@ export const GlossaryGrid: React.FC<GlossaryGridProps> = ({ items }) => (
   <div className="my-8 not-prose" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
     {items.map((item, i) => (
       <div key={i} style={{
-        background: item.highlight ? COLORS.accentTint : 'white',
-        border: item.highlight ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a',
+        background: item.highlight ? 'var(--accent-tint)' : 'var(--surface-paper)',
+        border: item.highlight ? `2px solid ${COLORS.accent}` : '1.5px solid var(--outline-soft)',
         borderRadius: 14,
         padding: '16px 20px',
         display: 'flex',
@@ -349,24 +349,24 @@ export const GlossaryGrid: React.FC<GlossaryGridProps> = ({ items }) => (
         gap: 16,
       }}>
         <div style={{
-          background: item.highlight ? COLORS.accent : '#f0ece6',
-          border: item.highlight ? 'none' : '1.5px solid #d0cdc8',
+          background: item.highlight ? COLORS.accent : 'var(--surface-soft)',
+          border: item.highlight ? 'none' : '1px solid var(--outline-soft)',
           borderRadius: 10,
           padding: '6px 12px',
           flexShrink: 0,
           fontFamily: "'Source Serif 4', serif",
           fontSize: 15,
           fontWeight: 700,
-          color: item.highlight ? 'white' : '#1a1a1a',
+          color: item.highlight ? 'var(--ink-on-accent)' : 'var(--ink-primary)',
           whiteSpace: 'nowrap' as const,
         }}>
           &ldquo;{item.term}&rdquo;
         </div>
         <div style={{ flex: 1 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, color: item.highlight ? COLORS.accentDarkText : COLORS.accent, marginBottom: 4 }}>
+          <div style={{ fontSize: 13, fontWeight: 700, color: item.highlight ? 'var(--accent-tint-ink)' : 'var(--accent-text)', marginBottom: 4 }}>
             = {item.definition}
           </div>
-          <div style={{ fontSize: 14, color: '#5a5550', lineHeight: 1.5 }}>
+          <div style={{ fontSize: 14, color: 'var(--ink-secondary)', lineHeight: 1.5 }}>
             {item.explanation}
           </div>
         </div>

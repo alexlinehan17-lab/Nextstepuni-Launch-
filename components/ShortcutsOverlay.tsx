@@ -12,10 +12,16 @@ import ModalFrame from './ui/ModalFrame';
 
 const SHORTCUTS: { keys: string[]; what: string }[] = [
   { keys: ['⌘', 'K'], what: 'Jump to any module, tool or page' },
+  { keys: ['⌘', 'B'], what: 'Collapse or expand the desktop sidebar' },
+  { keys: ['⌘', '/'], what: 'Open keyboard shortcuts' },
   { keys: ['?'], what: 'Home: open the Site Guide · elsewhere: this card' },
   { keys: ['←', '→'], what: 'Move through Site Guide cards and Full Loop questions' },
   { keys: ['Esc'], what: 'Close any dialog or overlay' },
 ];
+
+export function openShortcutsOverlay() {
+  window.dispatchEvent(new Event('nextstepuni:open-shortcuts'));
+}
 
 interface Props {
   /** True on views where "?" is owned by something richer (the home page's Site Guide). */
@@ -26,14 +32,20 @@ const ShortcutsOverlay: React.FC<Props> = ({ suppressQuestionKey = false }) => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    const openFromMenu = () => setOpen(true);
     const onKey = (e: KeyboardEvent) => {
       const t = e.target as HTMLElement | null;
       if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
       if (e.key === 'Escape') { setOpen(false); return; }
+      if (e.key === '/' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); setOpen(v => !v); return; }
       if (e.key === '?' && !suppressQuestionKey) setOpen(v => !v);
     };
     window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
+    window.addEventListener('nextstepuni:open-shortcuts', openFromMenu);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      window.removeEventListener('nextstepuni:open-shortcuts', openFromMenu);
+    };
   }, [suppressQuestionKey]);
 
   // If the view changes to one that owns "?", drop the card rather than fight it.

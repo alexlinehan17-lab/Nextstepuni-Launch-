@@ -17,6 +17,6 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ['dist/**', 'node_modules/**', 'ios/**', 'android/**', '*.config.*', 'scripts/**', '*.py', 'functions/lib/**', 'docs/**', 'design-references/**', 'tmp/pdfs/**', 'tmp/feedback-qa/**', 'components/kobra/**', 'components/account-ui-runtime.js', 'components/approved-ui-runtime.js', 'components/approved-ui-types/**'],
+    ignores: ['dist/**', 'node_modules/**', 'ios/**', 'android/**', '*.config.*', 'scripts/**', '*.py', 'functions/lib/**', 'docs/**', 'design-references/**', 'tmp/pdfs/**', 'tmp/feedback-qa/**', 'components/kobra/**', 'components/account-ui-runtime.js', 'components/approved-ui-runtime.js', 'components/kobra-navigation-runtime.js', 'components/kobra-navigation-types/**', 'components/approved-ui-types/**'],
   }
 );

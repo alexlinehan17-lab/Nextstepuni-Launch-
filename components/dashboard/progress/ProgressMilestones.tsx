@@ -13,7 +13,7 @@ import TermReviewCard from '../TermReviewCard';
 import { Artwork, Eyebrow } from './shared';
 
 const tiers: Record<MasteryTier, { label: string; level: number }> = {
-  none: { label: 'Not started', level: 0 }, learned: { label: 'Learned', level: 1 },
+  none: { label: 'Not started', level: 0 }, learned: { label: 'Read', level: 1 },
   practiced: { label: 'Practised', level: 2 }, applied: { label: 'Applied', level: 3 }, habitual: { label: 'Habitual', level: 4 },
 };
 const recordGroups = [

@@ -1,5 +1,5 @@
 import type React from 'react';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { act, fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import Onboarding from '../components/Onboarding';
@@ -30,6 +30,13 @@ function mount() {
   return render(<Onboarding userId="sound-test" userName="Aoife" onComplete={vi.fn()} onSkip={vi.fn()} />);
 }
 
+// Kobra ignores synthetic pointer events to avoid Motion duplicating Enter's
+// cue. Exercise the real keyboard listener and each control's Enter behaviour.
+async function keyboardClick(element: HTMLElement) {
+  act(() => element.focus());
+  await userEvent.keyboard('{Enter}');
+}
+
 beforeEach(() => {
   localStorage.clear();
   audio.play.mockClear();
@@ -39,10 +46,10 @@ beforeEach(() => {
 afterEach(() => vi.unstubAllGlobals());
 
 describe('onboarding interface sound', () => {
-  it.each([false, true])('plays one cue per action in the %s mobile flow', async mobile => {
+  it.each([false, true])('plays one cue per keyboard action in the %s mobile flow', async mobile => {
     audio.mobile = mobile;
     const view = mount();
-    await userEvent.click(screen.getByRole('button', { name: 'Get Started' }));
+    await keyboardClick(screen.getByRole('button', { name: 'Get Started' }));
     expect(audio.play).toHaveBeenCalledTimes(1);
     expect(audio.play).toHaveBeenCalledWith('tap', expect.anything());
     view.unmount();
@@ -57,17 +64,17 @@ describe('onboarding interface sound', () => {
   it('honours the saved mute preference and shares changes through the existing setting', async () => {
     localStorage.setItem('kobra-sound-muted', '1');
     mount();
-    await userEvent.click(screen.getByRole('button', { name: 'Get Started' }));
+    await keyboardClick(screen.getByRole('button', { name: 'Get Started' }));
     expect(audio.play).not.toHaveBeenCalled();
     await userEvent.click(screen.getByRole('button', { name: 'Turn interface sound on' }));
     expect(localStorage.getItem('kobra-sound-muted')).toBe('0');
     audio.play.mockClear();
-    await userEvent.click(screen.getByRole('button', { name: 'Back' }));
+    await keyboardClick(screen.getByRole('button', { name: 'Back' }));
     expect(audio.play).toHaveBeenCalledTimes(1);
     await userEvent.click(screen.getByRole('button', { name: 'Turn interface sound off' }));
     expect(localStorage.getItem('kobra-sound-muted')).toBe('1');
     audio.play.mockClear();
-    await userEvent.click(screen.getByRole('button', { name: 'Get Started' }));
+    await keyboardClick(screen.getByRole('button', { name: 'Get Started' }));
     expect(audio.play).not.toHaveBeenCalled();
   });
 
@@ -77,10 +84,16 @@ describe('onboarding interface sound', () => {
       configs: { English: { level: 'higher', current: 'H3', target: 'H1', reviewed: true } },
     }));
     mount();
-    await userEvent.click(screen.getByRole('combobox', { name: 'English level' }));
+    await keyboardClick(screen.getByRole('combobox', { name: 'English level' }));
     expect(audio.play.mock.calls.map(([name]) => name)).toEqual(['open']);
-    await userEvent.click(await screen.findByRole('option', { name: 'Ordinary' }));
+    await keyboardClick(await screen.findByRole('option', { name: 'Ordinary' }));
     expect(audio.play.mock.calls.map(([name]) => name)).toEqual(['open', 'select']);
+  });
+
+  it('ignores synthetic pointer activation so keyboard and Motion do not duplicate cues', () => {
+    mount();
+    fireEvent.pointerDown(screen.getByRole('button', { name: 'Get Started' }), { button: 0 });
+    expect(audio.play).not.toHaveBeenCalled();
   });
 
   it('keeps setup available when the browser has no audio support', () => {

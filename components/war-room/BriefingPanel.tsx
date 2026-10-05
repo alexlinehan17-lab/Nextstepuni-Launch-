@@ -217,8 +217,10 @@ const BriefingPanel: React.FC<BriefingPanelProps> = ({
       <div className="wr-session-copy"><p className="wr-eyebrow">{focusBlock ? 'Next on your plan / 01' : 'A little room to reset / 01'}</p><h3 id="wr-next-subject">{focus.subject}</h3>
         <p className="wr-topic-name">{focus.action}</p>
         <div className="wr-session-meta">{focusBlock ? <><span><Clock3 size={15} />{duration} minutes</span><span>{sessionTypeLabel(focusBlock.sessionType)}</span></> : <span>No sessions left in today’s plan.</span>}</div>
-        {focusBlock && onStudyNow ? <Button className="wr-orange" size="lg" aria-label={`Start a ${duration}-minute session`} onClick={() => onStudyNow(focusBlock)}>Start studying <ArrowUpRight size={19} /></Button> : <Button variant="outline" className="nsu-ink-outline" onClick={onReviewSubjects}>Choose a subject <ArrowRight size={17} /></Button>}
-        <Button variant="link" className="wr-reason-toggle" aria-expanded={showReasoning} aria-controls="wr-session-reason" onClick={() => setShowReasoning(value => !value)}>Why this subject?</Button>
+        <div className="wr-session-actions">
+          {focusBlock && onStudyNow ? <Button className="wr-orange" size="lg" aria-label={`Start a ${duration}-minute session`} onClick={() => onStudyNow(focusBlock)}>Start studying <ArrowUpRight size={19} /></Button> : <Button variant="outline" className="nsu-ink-outline" onClick={onReviewSubjects}>Choose a subject <ArrowRight size={17} /></Button>}
+          <Button variant="link" className="wr-reason-toggle" aria-expanded={showReasoning} aria-controls="wr-session-reason" onClick={() => setShowReasoning(value => !value)}>Why this subject?</Button>
+        </div>
         {showReasoning && <div id="wr-session-reason" className="wr-session-reason"><p>{focus.reason}</p><p>{focus.evidenceSummary}</p>{focus.latestGrade && focus.targetGrade && <p>{focus.latestGrade} → {focus.targetGrade}</p>}</div>}
       </div><CrewIllustration subject={focus.subject} className="wr-session-art" />
     </section>

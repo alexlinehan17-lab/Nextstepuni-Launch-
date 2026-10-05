@@ -29,10 +29,9 @@ import { WorldIconBlob, type WorldId } from './WorldIconBlob';
 import PageHeader from './ui/PageHeader';
 import { useCompactLayout } from '../hooks/useCompactLayout';
 import { WORLD_TONES, useWorldTones, type WorldTones } from './worldPalette';
+import { ModuleDiscovery } from './learning/ModuleDiscovery';
+import type { UserProgress } from '../types';
 
-type UserProgress = {
-  [moduleId: string]: { unlockedSection: number };
-};
 
 interface ModulesViewProps {
   onBack: () => void;
@@ -405,7 +404,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
             </p>
 
             {/* Section preview */}
-            <div className="mt-5 md:mt-6 rounded-xl p-3.5" style={{ border: '1px solid #d0cdc8' }}>
+            <div className="world-section-preview mt-5 md:mt-6 rounded-xl p-3.5" style={{ border: '1px solid var(--outline-soft)' }}>
               <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em]" style={{ color: deep }}>
                 {nextUp.isContinue
                   ? `Up next · Section ${nextUp.sectionNumber} of ${nextUp.course.sectionsCount}`
@@ -422,7 +421,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
                   e.stopPropagation();
                   onContinue(nextUp.course.id);
                 }}
-                className="group/cta inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
+                className="world-primary-action group/cta inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
                 style={{
                   ...world.cta(config),
                   boxShadow: `0 6px 16px ${world.cta(config).background}55`,
@@ -556,7 +555,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
     return (
       <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
         <header
-          className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-3 dark:border-zinc-800 dark:bg-zinc-950"
+          data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-3 dark:border-zinc-800 dark:bg-zinc-950"
           style={{ paddingTop: 'calc(12px + var(--sat, 0px))' }}
         >
           <div className="mx-auto max-w-7xl">
@@ -569,6 +568,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
           style={{ paddingBottom: 'calc(104px + var(--sab, 0px))' }}
         >
           <div className="mx-auto max-w-xl">
+            <ModuleDiscovery courses={allCourses} progress={userProgress} onOpen={onSelectModule} />
             <div className="mb-5 flex items-end justify-between gap-4">
               <div>
                 <p className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
@@ -643,16 +643,15 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
 
   return (
     <div className="product-shell modules-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)]">
-      {/* Header — left side only. Right side intentionally empty so the
-          App-level top-right cluster (TrainingPulse + bell + profile)
-          owns that real estate without any leakage. */}
-      <header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
+      {/* The shared desktop sidebar owns navigation and account controls. */}
+      <header data-student-page-header className="fixed inset-x-0 top-0 z-40 border-b border-[#DDD8D2] bg-white px-4 pb-4 md:px-10 dark:border-zinc-800 dark:bg-zinc-950" style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}>
         <div className="mx-auto max-w-7xl"><PageHeader onBack={onBack} eyebrow="The Programme" title="Modules" compact /></div>
       </header>
 
       {/* Main */}
       <main className="pt-24 md:pt-28 pb-16 px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
+          <ModuleDiscovery courses={allCourses} progress={userProgress} onOpen={onSelectModule} />
           <LayoutGroup>
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-5 auto-rows-min">
               {ordered.map(cat => {

@@ -22,6 +22,7 @@ import {
   type TopicMasteryV2,
   type UnifiedMockResult,
   type UserProgress,
+  type ModuleProgress,
 } from '../types';
 
 export interface ProgressDocument {
@@ -93,7 +94,7 @@ export async function getStudySessions(uid: string): Promise<StudySessionRecord[
 export function saveModuleProgress(
   uid: string,
   moduleId: string,
-  progress: { unlockedSection: number },
+  progress: ModuleProgress,
   pointsToAward: number,
 ): Promise<void> {
   const patch: Record<string, unknown> = { [moduleId]: progress };
@@ -151,7 +152,7 @@ export function extractModuleProgress(data: ProgressDocument): UserProgress {
       && 'unlockedSection' in value
       && typeof value.unlockedSection === 'number'
     ) {
-      result[key] = { unlockedSection: value.unlockedSection };
+      result[key] = value as ModuleProgress;
     }
   }
   return result;

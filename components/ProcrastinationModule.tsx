@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
+import { useModuleDraft } from '../hooks/useModuleDraft';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -173,8 +174,8 @@ const ProcrastinationEquation = () => {
 };
 
 const IfThenAutopilot = () => {
-    const [ifText, setIfText] = useState('');
-    const [thenText, setThenText] = useState('');
+    const [ifText, setIfText] = useModuleDraft('procrastination-protocol', 'if-text', '');
+    const [thenText, setThenText] = useModuleDraft('procrastination-protocol', 'then-text', '');
     const [submitted, setSubmitted] = useState(false);
 
     const templates = [
@@ -463,7 +464,7 @@ const GuiltSpiralComparison = () => {
 };
 
 const CircuitBreaker = () => {
-    const [reframe, setReframe] = useState('');
+    const [reframe, setReframe] = useModuleDraft('procrastination-protocol', 'reframe', '');
     const lower = reframe.toLowerCase();
 
     const forgivenessWords = ['forgive', 'okay', "it's fine", "it's ok", "that's ok", 'human', 'everyone', 'normal', 'mistake'];

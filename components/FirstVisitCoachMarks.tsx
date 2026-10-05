@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  *
  * First-visit coach marks — three short spotlight steps on the home page:
- * the module tree, the Launchpad, then the "?" button, ending with the offer
+ * the module tree, the Launchpad, then the account menu, ending with the offer
  * to take the full Site Guide. Skippable at every step, shows exactly once
  * per account (localStorage). Targets are found by [data-coach="..."]; if a
  * target isn't visible (e.g. the collapsed mobile sidebar), the step renders
@@ -19,7 +19,7 @@ const STEPS: { target: string; title: string; body: string }[] = [
   {
     target: 'modules',
     title: 'Your lessons live here',
-    body: 'Interactive modules that teach you how to learn — memory, focus, exam craft. They unlock section by section.',
+    body: 'Interactive modules that teach you how to learn — memory, focus, exam craft. Browse any section; your reading and activity drafts save as you go.',
   },
   {
     target: 'launchpad',
@@ -28,8 +28,8 @@ const STEPS: { target: string; title: string; body: string }[] = [
   },
   {
     target: 'help',
-    title: 'Lost? Press this anytime',
-    body: 'The full guided tour of every core page lives behind the ? — with screenshots of exactly what each one does.',
+    title: 'Help is always here',
+    body: 'Open your account menu, then Help, for the full app guide. It walks through every core page with screenshots. You can also press ? from Home.',
   },
 ];
 

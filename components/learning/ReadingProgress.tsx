@@ -20,7 +20,7 @@ export function ReadingProgress({
     <div
       className="mr-reading-progress mr-progress-pencil"
       role="progressbar"
-      aria-label="Module completion"
+      aria-label="Reading progress"
       aria-valuemin={0}
       aria-valuemax={total}
       aria-valuenow={read}

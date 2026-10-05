@@ -1,6 +1,6 @@
 import React from 'react';
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
-import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { ReaderNotes } from '@/components/learning/ReaderNotes';
 import StudyJournalModal from '@/components/StudyJournalModal';
 import SubjectOnboarding from '@/components/SubjectOnboarding';
@@ -8,37 +8,54 @@ import ChangeSubjectsModal from '@/components/ChangeSubjectsModal';
 import LaunchpadToolCard from '@/components/launchpad/LaunchpadToolCard';
 import { createDevStudentProfile } from '@/data/devStudent';
 import type { StudyReflection } from '@/types';
+import { flushModuleResponses, forgetModuleResponseMemory, moduleResponseEntry, responseStorageKey } from '@/services/moduleResponseStore';
+import { LEARNING_NOTEBOOK_NAMESPACE } from '@/utils/learningNotebook';
 
 const account = vi.hoisted(() => ({ uid: 'notes-account-a' }));
+const storage = vi.hoisted(() => ({ getDoc: vi.fn(), setDoc: vi.fn(), auth: { currentUser: { uid: 'notes-account-a' } } }));
 vi.mock('@/contexts/AuthContext', () => ({ useAuth: () => ({ user: account }) }));
-beforeEach(() => { localStorage.clear(); account.uid = 'notes-account-a'; });
+vi.mock('@/firebase', () => ({ db: {}, auth: storage.auth }));
+vi.mock('firebase/firestore', () => ({ doc: (...parts: unknown[]) => parts, getDoc: storage.getDoc, setDoc: storage.setDoc, FieldPath: class { constructor(public parts: unknown, ...rest: unknown[]) { this.parts = [parts, ...rest]; } } }));
+beforeEach(() => {
+  forgetModuleResponseMemory(); localStorage.clear(); account.uid = 'notes-account-a'; storage.auth.currentUser.uid = account.uid;
+  storage.getDoc.mockReset(); storage.setDoc.mockReset();
+  storage.getDoc.mockResolvedValue({ exists: () => false }); storage.setDoc.mockResolvedValue(undefined);
+});
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 describe('approved Signature cards', () => {
-  test('keeps notebook notes under the existing account and module storage key', () => {
+  test('imports previous device notes without losing them and isolates private notebooks by account and module', async () => {
     const key = 'nextstepuni:learning-notes:notes-account-a:drivers-manual';
     localStorage.setItem(key,'A thought from the existing notebook.');
-    const props = { moduleId: 'drivers-manual', title: "The Driver’s Manual", open: true, onClose: vi.fn() };
+    const props = { moduleId: 'drivers-manual', title: "The Driver’s Manual", sectionTitle: 'Your first step', sectionIndex: 0, open: true, onClose: vi.fn() };
     const { rerender } = render(<ReaderNotes {...props} />);
+    await waitFor(() => expect(screen.getByRole('textbox',{ name: 'Your notes' })).toBeEnabled());
+    fireEvent.click(screen.getByRole('button',{ name: 'Import your previous device notes' }));
     expect(screen.getByRole('textbox',{ name: 'Your notes' })).toHaveValue('A thought from the existing notebook.');
     fireEvent.change(screen.getByRole('textbox',{ name: 'Your notes' }),{ target: { value: 'Choose one small action.' } });
-    expect(localStorage.getItem(key)).toBe('Choose one small action.');
+    expect(localStorage.getItem(key)).toBe('A thought from the existing notebook.');
+    expect(JSON.parse(localStorage.getItem(responseStorageKey(account.uid, LEARNING_NOTEBOOK_NAMESPACE))!).values['drivers-manual'].notes).toBe('Choose one small action.');
     account.uid = 'notes-account-b';
+    storage.auth.currentUser.uid = account.uid;
     rerender(<ReaderNotes {...props} />);
     expect(screen.getByRole('textbox',{ name: 'Your notes' })).toHaveValue('');
     account.uid = 'notes-account-a';
+    storage.auth.currentUser.uid = account.uid;
     rerender(<ReaderNotes {...props} moduleId="bimodal-brain" />);
     expect(screen.getByRole('textbox',{ name: 'Your notes' })).toHaveValue('');
     rerender(<ReaderNotes {...props} />);
     expect(screen.getByRole('textbox',{ name: 'Your notes' })).toHaveValue('Choose one small action.');
   });
 
-  test('keeps unsaved writing visible and reports storage failure', () => {
-    vi.spyOn(Storage.prototype,'setItem').mockImplementation(() => { throw new Error('Storage unavailable'); });
-    render(<ReaderNotes moduleId="drivers-manual" title="The Driver’s Manual" open onClose={vi.fn()} />);
+  test('keeps unsaved writing visible and reports an account save failure', async () => {
+    storage.setDoc.mockRejectedValue(new Error('Account save unavailable'));
+    render(<ReaderNotes moduleId="drivers-manual" title="The Driver’s Manual" sectionTitle="Your first step" sectionIndex={0} open onClose={vi.fn()} />);
+    await waitFor(() => expect(screen.getByRole('textbox',{ name: 'Your notes' })).toBeEnabled());
     fireEvent.change(screen.getByRole('textbox',{ name: 'Your notes' }),{ target: { value: 'Keep this copy.' } });
     expect(screen.getByRole('textbox',{ name: 'Your notes' })).toHaveValue('Keep this copy.');
-    expect(screen.getByRole('status')).toHaveTextContent('Could not save on this device. Keep a copy before leaving.');
+    await flushModuleResponses(moduleResponseEntry(account.uid, LEARNING_NOTEBOOK_NAMESPACE));
+    await waitFor(() => expect(screen.getByRole('status')).toHaveTextContent('Account save hasn’t completed. Keep a copy before signing out.'));
+    expect(screen.getByRole('button',{ name: 'Download a copy' })).toBeEnabled();
   });
 
   test('shows an empty journal as a dismissible card', () => {

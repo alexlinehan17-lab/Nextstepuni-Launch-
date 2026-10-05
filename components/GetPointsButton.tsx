@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Coins, LoaderCircle } from 'lucide-react';
 import { useOptionalProgress } from '../contexts/ProgressContext';
 import { useToast } from './Toast';
@@ -6,7 +6,7 @@ import { creditDrawerPoints, DRAWER_POINTS_CREDIT } from '../services/progressRe
 import { DEMO_STUDENT_UID } from '../data/devStudent';
 import { awaitWriteOrTimeout } from '../utils/firestoreWrite';
 
-export default function GetPointsButton({ uid, expanded }: { uid?: string; expanded: boolean }) {
+export default function GetPointsButton({ uid, expanded, icon, label = 'GET POINTS', sound }: { uid?: string; expanded: boolean; icon?: ReactNode; label?: string; sound?: 'chirp' }) {
   const progress = useOptionalProgress();
   const { showToast } = useToast();
   const [saving, setSaving] = useState(false);
@@ -67,18 +67,19 @@ export default function GetPointsButton({ uid, expanded }: { uid?: string; expan
   return (
     <button
       type="button"
+      data-sound={sound}
       onClick={() => { void addPoints(); }}
       disabled={saving}
-      aria-label="GET POINTS"
+      aria-label={label}
       aria-busy={saving}
       title="Add 100 JP to your bank"
       className="relative flex items-center gap-3 px-2.5 py-2.5 rounded-xl text-left hover:bg-[#F3EEE7] dark:hover:bg-zinc-800 transition-colors disabled:opacity-50 disabled:cursor-wait"
     >
       <span className="shrink-0 flex items-center justify-center w-[18px]">
-        <Icon size={18} strokeWidth={1.6} aria-hidden="true" className={`text-[#C35319] dark:text-orange-400 ${saving ? 'animate-spin motion-reduce:animate-none' : ''}`} />
+        {icon && !saving ? icon : <Icon size={18} strokeWidth={1.6} aria-hidden="true" className={`text-[#C35319] dark:text-orange-400 ${saving ? 'animate-spin motion-reduce:animate-none' : ''}`} />}
       </span>
       <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${expanded ? 'opacity-100' : 'opacity-0'}`}>
-        GET POINTS
+        {label}
       </span>
     </button>
   );

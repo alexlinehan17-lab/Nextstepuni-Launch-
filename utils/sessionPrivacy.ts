@@ -9,6 +9,7 @@ const isPublicGameKey = (key: string): boolean =>
 export async function clearLocalSessionData(
   { preservePublicGames = false }: { preservePublicGames?: boolean } = {},
 ): Promise<void> {
+  window.dispatchEvent(new Event('nextstepuni:session-cleared'));
   try {
     if (preservePublicGames) {
       const storage = window.localStorage;

@@ -34,7 +34,7 @@ const RANK_ICONS: Record<string, LucideIcon> = {
 };
 
 const _TIER_ORDER: MasteryTier[] = ['habitual', 'applied', 'practiced', 'learned'];
-const TIER_LABELS: Record<MasteryTier, string> = { none: '', learned: 'Learned', practiced: 'Practiced', applied: 'Applied', habitual: 'Habitual' };
+const TIER_LABELS: Record<MasteryTier, string> = { none: '', learned: 'Read', practiced: 'Practiced', applied: 'Applied', habitual: 'Habitual' };
 // `practiced` tier deliberately keeps the legacy teal #2A7D6F — this is the
 // mastery-tier data-viz colour, not brand accent. Preserved per the colour
 // pivot scope notes (data-viz preserve).

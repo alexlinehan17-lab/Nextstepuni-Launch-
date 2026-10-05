@@ -7,7 +7,8 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { Home, Compass, ChartNoAxesCombined, Timer, Mountain } from 'lucide-react';
-import { UserProfile, MobileProfileSheet } from './components/UserProfileMenu';
+import { MobileProfileSheet } from './components/UserProfileMenu';
+import NextStepUniSidebar from './components/navigation/NextStepUniSidebar';
 import { type CategoryType } from './components/KnowledgeTree';
 import AppRouter from './components/AppRouter';
 import OfflineBanner from './components/OfflineBanner';
@@ -34,7 +35,6 @@ import { useWeeklyChallenge } from './hooks/useWeeklyChallenge';
 import { useRecommendation } from './hooks/useRecommendation';
 import { useQuests } from './hooks/useQuests';
 import './utils/bootParams'; // eager URL snapshot for deep-link params (must run before NavigationContext rewrites the URL)
-import TrainingPulse from './components/TrainingPulse';
 import AchievementToast from './components/AchievementToast';
 import RankUpModal from './components/RankUpModal';
 import StreakCelebration from './components/StreakCelebration';
@@ -43,7 +43,6 @@ import { type AthleteRank, type AchievementDefinition } from './gamificationConf
 import { type StudentSubjectProfile } from './components/subjectData';
 import NorthStarEditModal from './components/NorthStarEditModal';
 import ChangeSubjectsModal from './components/ChangeSubjectsModal';
-import NotificationBell from './components/NotificationBell';
 import { POINTS, isModuleJustCompleted, isCategoryJustCompleted } from './journeyPointsConfig';
 import { SettingsContext } from './contexts/SettingsContext';
 import { useAuth } from './contexts/AuthContext';
@@ -400,6 +399,8 @@ const App: React.FC = () => {
         );
       }
 
+      // Resume-only checkpoints must not rerun rewards or mastery calculations.
+      if (newSection === prevSection) return;
       pointsData.reload();
 
       if (newSection > prevSection) {
@@ -442,7 +443,6 @@ const App: React.FC = () => {
   const handleGoToInnovationZone = () => { nav.navigateToInnovationZone(); };
 
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
-  const handleGoToMilestones = () => { nav.navigateToDashboard('milestones'); };
 
   const _handleGoToLearningPaths = () => { nav.navigateToLearningPaths(); };
 
@@ -893,35 +893,9 @@ const App: React.FC = () => {
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
     <OfflineBanner />
     <div className="min-h-screen bg-white dark:bg-zinc-950">
-      {user && userProgressReady && viewState !== 'study-session' && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
-        <div className={`student-account-controls fixed top-3 right-6 z-[100] ${viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
-          <div className="flex items-center gap-2">
-            <div>
-              {gamification.isLoaded && (
-                <TrainingPulse
-                  gamificationState={gamification.state}
-                  onOpenProgress={handleGoToMilestones}
-                  streak={streak}
-                  pointsBalance={pointsData.balance}
-                  avatar={settings.avatar || user.avatar}
-                />
-              )}
-              <AchievementToast
-                achievement={currentToast}
-                onDismiss={() => setCurrentToast(null)}
-              />
-            </div>
-            <NotificationBell uid={user.uid} onUnreadCountChange={setUnreadNotificationCount} />
-            <UserProfile user={user} onLogout={handleLogout} settings={settings} updateSetting={updateSetting} onOpenSettings={() => setSettingsOpen(true)} avatarOverride={settings.avatar} streak={streak} recommendation={recommendation} onSelectModule={handleSelectModule} onOpenPassport={() => setPassportOpen(true)} onGoToDashboard={handleGoToDashboard} completedCount={completedCount} totalCount={studentCourses.length} onOpenNorthStar={() => setNorthStarEditOpen(true)} hasNorthStar={northStar !== null} unlockedThemes={unlockedThemes} />
-          </div>
-        </div>
-      )}
-
-      {/* Mobile achievement toast — TrainingPulse removed on mobile per design feedback.
-          AchievementToast still needs a mount point on mobile so it appears
-          unobtrusively at top-left when a new achievement fires. */}
+      {/* Achievements remain available while account controls live in the sidebar. */}
       {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
-        <div className="fixed top-4 left-4 z-[100] md:hidden pointer-events-none">
+        <div className="fixed top-4 left-4 md:top-auto md:left-auto md:bottom-6 md:right-6 z-[150] pointer-events-none">
           <div className="pointer-events-auto">
             <AchievementToast
               achievement={currentToast}
@@ -931,7 +905,15 @@ const App: React.FC = () => {
         </div>
       )}
 
-      <AppRouter {...routerProps} />
+      {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin ? (
+        <NextStepUniSidebar user={user} settings={settings} updateSetting={updateSetting}
+          onLogout={handleLogout} onOpenSettings={() => setSettingsOpen(true)}
+          onOpenPassport={() => setPassportOpen(true)} onOpenSiteGuide={() => setSiteGuideOpen(true)}
+          onOpenFeedback={() => setFeedbackOpen(true)} onUnreadCountChange={setUnreadNotificationCount}
+          completedCount={completedCount} totalCount={studentCourses.length} unreadCount={unreadNotificationCount}>
+          <AppRouter {...routerProps} />
+        </NextStepUniSidebar>
+      ) : <AppRouter {...routerProps} />}
 
       {user && userProgressReady && !user.isAdmin && !isSchoolStaff(user.role) && (
         <>

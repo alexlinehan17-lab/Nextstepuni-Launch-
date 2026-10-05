@@ -907,7 +907,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
       }}
     >
 
-      <header
+      <header data-student-page-header
         className={`lp-navigation-header ${activeTool === 'paper-trail' && !mobileAppDesign ? 'hidden md:block ' : ''}fixed top-0 left-0 right-0 z-[60] bg-[var(--surface-paper)] md:px-10 border-b border-[var(--outline-soft)]`}
         style={{
           paddingTop: 'calc(16px + var(--sat, 0px))',

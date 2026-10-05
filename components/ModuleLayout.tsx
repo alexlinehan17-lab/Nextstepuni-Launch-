@@ -26,9 +26,15 @@ import { ReadingProgress } from './learning/ReadingProgress';
 import { ReaderNotes } from './learning/ReaderNotes';
 import { Eyebrow } from './learning/shared';
 import { requestedModuleSection, clearModuleSectionRequest } from './learning/data';
+import { readSectionIds, readingCheckpoint, resumeSection } from '../utils/moduleReadingProgress';
+import { useModuleResponses } from '../hooks/useModuleResponses';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { ResponseSaveStatus } from './learning/ResponseSaveStatus';
 import './learning/module-reader-preview.css';
 import './learning/sidebar-directions.css';
 import './learning/reader.css';
+import './learning/module-activities-dark.css';
+import './learning/module-discovery.css';
 
 const CONFETTI_COLORS = ['#CC785C', '#f59e0b', '#3b82f6', '#10b981', '#8b5cf6', '#ef4444', '#ec4899'];
 const CONFETTI_COUNT = 60;
@@ -98,12 +104,16 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   const settingsCtx = useSettingsContext();
   const reducedMotion = useReducedMotion();
   const moduleId = navigation.state?.currentModuleId ?? moduleTitle;
+  const moduleResponses = useModuleResponses(moduleId);
+  const essentials = useEssentialsMode();
+  const readingMode = essentials ? 'essentials' : 'full';
   const requestedSection = useRef(requestedModuleSection(moduleId));
-  const previousProgress = useRef({ unlocked: progress.unlockedSection, total: sections.length });
+  const previousMode = useRef(readingMode);
+  const focusRequested = useRef(false);
   const modulePosition = useModulePosition();
   const displayedModuleNumber = modulePosition?.displayNumber ?? moduleNumber;
   const [activeSection, setActiveSection] = useState(
-    Math.max(0, Math.min(requestedSection.current ?? progress.unlockedSection, progress.unlockedSection, sections.length - 1))
+    Math.max(0, Math.min(requestedSection.current ?? resumeSection(progress, sections, readingMode), sections.length - 1))
   );
   const [desktopSidebarOpen, setDesktopSidebarOpen] = useState(true);
   const [mobileSectionsOpen, setMobileSectionsOpen] = useState(false);
@@ -114,15 +124,15 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   const [pickerOpen, setPickerOpen] = useState(false);
   const isCompletingRef = useRef(false);
   const mainRef = useRef<HTMLElement>(null);
-  const unlockedSection = progress.unlockedSection;
+  const readIds = readSectionIds(progress, sections, readingMode);
 
   useEffect(() => {
-    if (previousProgress.current.unlocked !== progress.unlockedSection || previousProgress.current.total !== sections.length) {
-      setActiveSection(Math.max(0, Math.min(progress.unlockedSection, sections.length - 1)));
-      previousProgress.current = { unlocked: progress.unlockedSection, total: sections.length };
+    if (previousMode.current !== readingMode) {
+      setActiveSection(resumeSection(progress, sections, readingMode));
+      previousMode.current = readingMode;
     }
     clearModuleSectionRequest(moduleId);
-  }, [moduleId, progress.unlockedSection, sections.length]);
+  }, [moduleId, progress, sections, readingMode]);
 
   // Scroll to top whenever the active section changes
   useEffect(() => {
@@ -130,28 +140,35 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     if (mainRef.current) {
       mainRef.current.scrollTop = 0;
     }
-  }, [activeSection]);
+    if (!focusRequested.current) return;
+    const timer = setTimeout(() => {
+      mainRef.current?.querySelector<HTMLElement>('.mr-lesson-heading h1')?.focus({ preventScroll: true });
+      focusRequested.current = false;
+    }, reducedMotion ? 0 : 300);
+    return () => clearTimeout(timer);
+  }, [activeSection, reducedMotion]);
 
   const handleCompleteSection = () => {
     if (isCompletingRef.current) return;
     isCompletingRef.current = true;
     const isLastSection = activeSection === sections.length - 1;
-    const isNewCompletion = activeSection === unlockedSection && unlockedSection < sections.length;
+    const isNewCompletion = !readIds.has(sections[activeSection].id);
+    let checkpoint = readingCheckpoint(progress, sections, readingMode, activeSection, true, fullSectionsCount);
+    const allRead = readSectionIds(checkpoint, sections, readingMode).size === sections.length;
+    const nextIndex = isLastSection
+      ? sections.findIndex(section => !readSectionIds(checkpoint, sections, readingMode).has(section.id))
+      : activeSection + 1;
+    if (nextIndex >= 0 && !allRead) checkpoint = readingCheckpoint(checkpoint, sections, readingMode, nextIndex, false, fullSectionsCount);
+    onProgressUpdate(checkpoint);
     if (isNewCompletion) {
-      // When essentials mode uses fewer sections, report the full section count
-      // on the last section so courseData.sectionsCount considers it complete
-      const reportedUnlocked = (isLastSection && fullSectionsCount && fullSectionsCount > sections.length)
-        ? fullSectionsCount
-        : unlockedSection + 1;
-      onProgressUpdate({ unlockedSection: reportedUnlocked });
-      if (!isLastSection) toast({ message: 'Another section complete.', state: 'success' });
+      if (!allRead) toast({ message: 'Reading checkpoint saved.', state: 'success' });
     }
-    if (!isLastSection) {
-      setActiveSection(activeSection + 1);
-    } else if (isNewCompletion) {
-      // First-time module completion — show confetti + celebration screen
+    if (allRead && isNewCompletion) {
       setShowConfetti(!reducedMotion);
       setShowCelebration(true);
+    } else if (nextIndex >= 0) {
+      focusRequested.current = true;
+      setActiveSection(nextIndex);
     } else {
       onBack();
     }
@@ -166,24 +183,26 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   };
 
   const handleJumpToSection = (index: number) => {
-    if (index <= unlockedSection) {
+    if (index >= 0 && index < sections.length) {
+      focusRequested.current = true;
       setActiveSection(index);
       setMobileSectionsOpen(false);
+      onProgressUpdate(readingCheckpoint(progress, sections, readingMode, index, false, fullSectionsCount));
     }
   };
 
   const handlePrev = () => {
     if (activeSection > 0) {
-      setActiveSection(activeSection - 1);
+      handleJumpToSection(activeSection - 1);
     }
   };
 
-  const completedSections = Math.min(Math.max(0, unlockedSection), sections.length);
+  const completedSections = readIds.size;
 
   // Reading comfort — ReadingSection (ModuleShared) consumes these variables.
   const readingScale = settingsCtx?.settings.readingScale ?? 1;
   const readingRelaxed = settingsCtx?.settings.readingSpacing === 'relaxed';
-  const READING_SCALES = [0.9, 1, 1.1, 1.2];
+  const READING_SCALES = [0.9, 1, 1.1, 1.2, 1.4, 1.6, 1.8, 2];
   const stepReadingScale = (dir: 1 | -1) => {
     const idx = READING_SCALES.indexOf(readingScale);
     const next = READING_SCALES[Math.min(READING_SCALES.length - 1, Math.max(0, (idx === -1 ? 1 : idx) + dir))];
@@ -229,9 +248,9 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       <h2>{moduleTitle}</h2>
       <ReadingProgress done={completedSections} total={sections.length} />
       <nav className="mr-progress-list" aria-label="Module sections"><ol>
-        {sections.map((section, index) => <li key={section.id}><button type="button" disabled={index > unlockedSection} aria-label={`${section.title}. ${activeSection === index ? 'You’re here' : index < unlockedSection ? 'Read · Revisit anytime' : index === unlockedSection ? 'Ready when you are' : 'Coming next'}`} aria-current={activeSection === index ? 'step' : undefined} onClick={() => handleJumpToSection(index)}>
-          <CompletionMark number={index + 1} complete={index < unlockedSection} current={activeSection === index} />
-          <span><strong>{section.title}</strong><small>{activeSection === index ? 'You’re here' : index < unlockedSection ? 'Read · Revisit anytime' : index === unlockedSection ? 'Ready when you are' : 'Coming next'}</small></span>
+        {sections.map((section, index) => <li key={section.id}><button type="button" aria-label={`${section.title}. ${activeSection === index ? 'You’re here' : readIds.has(section.id) ? 'Read · Revisit anytime' : 'Open section'}`} aria-current={activeSection === index ? 'step' : undefined} onClick={() => handleJumpToSection(index)}>
+          <CompletionMark number={index + 1} complete={readIds.has(section.id)} current={activeSection === index} />
+          <span><strong>{section.title}</strong><small>{activeSection === index ? 'You’re here' : readIds.has(section.id) ? 'Read · Revisit anytime' : 'Open section'}</small></span>
         </button></li>)}
       </ol></nav>
       <div className="mr-contents-foot"><Button variant="ghost" onClick={() => { setMobileSectionsOpen(false); openCommandMenu(); }}><Search />Find a section<kbd>⌘ K</kbd></Button>
@@ -240,7 +259,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
     </div>
   );
   return (
-    <KobraScope className="nsu-learning nsu-module-reader">
+    <KobraScope className="nsu-learning nsu-module-reader theme-compat">
       <div className="mr-main" data-sidebar="notebook" data-contents={desktopSidebarOpen} style={{ ['--reading-scale' as string]: String(readingScale), ['--reading-lh' as string]: readingRelaxed ? '2.15' : '1.85' }}>
         <header className="mr-topbar">
           <div className="mr-breadcrumb"><BackButton onClick={onBack} label="Back to modules" /><span>Module {displayedModuleNumber}</span><span>{moduleTitle}</span></div>
@@ -258,13 +277,14 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
             <article className="mr-paper">
               <ModuleReferencesProvider value={references ?? []}>
                 <AnimatePresence mode="wait" initial={false}><motion.div key={sections[activeSection]?.id ?? activeSection} initial={{ opacity: 0, y: reducedMotion ? 0 : 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: reducedMotion ? 0 : .22 }} className="mr-page-content">
-                  {children(activeSection)}
+                  {moduleResponses.isLoaded ? children(activeSection) : <p role="status">Loading your saved drafts…</p>}
+                  <ResponseSaveStatus status={moduleResponses.saveStatus} onRetry={moduleResponses.retrySave} />
                   <div className="mr-page-signoff"><span>A little further than before.</span><span>{String(activeSection + 1).padStart(2, '0')}</span></div>
                 </motion.div></AnimatePresence>
               </ModuleReferencesProvider>
               <footer className="mr-page-footer">
                 <Button variant="ghost" onClick={handlePrev} disabled={activeSection === 0}><ArrowLeft />Previous</Button>
-                <div><small>Activities are optional and can be revisited.</small><span>{sections[activeSection + 1]?.title ?? 'Your last page. Yours to revisit.'}</span></div>
+                <div><small>This records reading, not practice. Activities are optional.</small><span>{sections[activeSection + 1]?.title ?? 'Your last page. Yours to revisit.'}</span></div>
                 <Button variant="outline" className="nsu-ink-outline" onClick={handleCompleteSection} aria-label={activeSection === sections.length - 1 ? finishButtonText : 'Continue to the next section'}>{activeSection === sections.length - 1 ? finishButtonText : 'Continue'}<ArrowRight /></Button>
               </footer>
             </article>
@@ -274,8 +294,8 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
       <Dialog open={mobileSectionsOpen} onOpenChange={setMobileSectionsOpen}><DialogContent className="mr-contents-dialog"><DialogHeader><DialogTitle>Contents</DialogTitle><DialogDescription>{moduleTitle}</DialogDescription></DialogHeader>{contents}</DialogContent></Dialog>
       <Dialog open={pickerOpen} onOpenChange={setPickerOpen}><DialogContent><DialogHeader><DialogTitle>Make yourself comfortable</DialogTitle><DialogDescription>Choose how you like to read.</DialogDescription></DialogHeader>{readingControls}{settingsCtx && <Button variant="outline" onClick={() => settingsCtx.updateSetting('darkMode', !settingsCtx.settings.darkMode)}>{settingsCtx.settings.darkMode ? <Sun /> : <Moon />}{settingsCtx.settings.darkMode ? 'Light mode' : 'Dark mode'}</Button>}</DialogContent></Dialog>
       <Toasts position="bottom-center" />
-      {notesOpen && <ReaderNotes moduleId={moduleId} title={moduleTitle} open={notesOpen} onClose={() => setNotesOpen(false)} />}
-      <CommandMenu placeholder="Find a section…" actions={sections.map((section, index) => ({ id: section.id, label: section.title, hint: index < unlockedSection ? 'Read · Revisit anytime' : index === unlockedSection ? 'Up next' : 'Coming next', keywords: [section.eyebrow], disabled: index > unlockedSection, icon: <CompletionMark number={index + 1} complete={index < unlockedSection} current={index === activeSection} />, action: () => handleJumpToSection(index) }))} />
+      {notesOpen && <ReaderNotes moduleId={moduleId} title={moduleTitle} sectionTitle={sections[activeSection]?.title ?? moduleTitle} sectionIndex={activeSection} open={notesOpen} onClose={() => setNotesOpen(false)} />}
+      <CommandMenu placeholder="Find a section…" actions={sections.map((section, index) => ({ id: section.id, label: section.title, hint: readIds.has(section.id) ? 'Read · Revisit anytime' : 'Open section', keywords: [section.eyebrow], icon: <CompletionMark number={index + 1} complete={readIds.has(section.id)} current={index === activeSection} />, action: () => handleJumpToSection(index) }))} />
       {!!references?.length && <ReferencesModal open={referencesOpen} onClose={() => setReferencesOpen(false)} references={references} />}
       {showConfetti && <ConfettiOverlay onDone={handleConfettiDone} />}
       <ModuleCompleteScreen isOpen={showCelebration} moduleTitle={moduleTitle} moduleSubtitle={moduleSubtitle} categoryColor={categoryColor || COLORS.accent} modulesCompleted={modulesCompleted} totalModules={totalModules} sectionsCount={sections.length} northStarStatement={northStarStatement} onContinue={handleCelebrationContinue} onPractice={() => { setShowCelebration(false); navigation.navigateToStudySession(); }} onReview={() => { setShowCelebration(false); setActiveSection(0); }} />
