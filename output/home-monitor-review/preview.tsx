@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { KnowledgeTree } from '../../components/KnowledgeTree.desktop';
+import IllustrationTheme from '../../components/IllustrationTheme';
 import type { CourseData } from '../../components/Library';
 import '../../index.css';
 
@@ -12,7 +13,7 @@ const course: CourseData = {
   title: 'Controlling the Controllables', subtitle: 'The Attribution Retraining Guide',
   description: '', sectionsCount: 5, tags: [], gradient: '', accentColor: '', pillBgColor: '',
 };
-createRoot(document.getElementById('root')!).render(<KnowledgeTree
+createRoot(document.getElementById('root')!).render(<><IllustrationTheme /><KnowledgeTree
   uid="home-monitor-review" userName="Demo Student" allCourses={[course]}
   userProgress={{ [course.id]: { unlockedSection: 3 } }}
   categoryTitles={{ 'architecture-mindset': 'The Architecture of your Mindset', 'science-growth': '', 'learning-cheat-codes': '', 'exam-zone': '', 'subject-specific-science': '' }}
@@ -21,4 +22,4 @@ createRoot(document.getElementById('root')!).render(<KnowledgeTree
   onSelectCategory={noop} onSelectModule={noop} onGoToModules={noop} onGoToStudy={noop}
   onGoToInnovationZone={noop} onGoToDashboard={noop} onGoToLearningPaths={noop} onGoToJourney={noop}
   onLogout={noop} onOpenSettings={noop} onOpenPassport={noop}
-/>);
+/></>);
