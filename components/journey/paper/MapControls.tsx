@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import {
   ArrowUpRight,
   Check,
@@ -27,6 +27,8 @@ import { PAPER_LANDMARKS } from "../../../functions/src/paperIslandModel";
 import { OpenCorners } from "./OpenCorners";
 import { legendById, stickerSrc, type LegendId } from "./collection";
 import { StickerRaster } from "./StickerArt";
+import { crewArt, crewById, type CrewId } from "../visitors/catalogue";
+import { WonderRaster, WonderTileArt } from "../visitors/VisitorArt";
 export const defaultCamera = { x: 0, y: -75, zoom: 1 };
 export type Camera = typeof defaultCamera;
 const bound = (camera: Camera): Camera => ({
@@ -38,22 +40,30 @@ export function IslandMap({
   world,
   building,
   chosen,
+  chosenWonder,
   candidate,
   onCandidate,
   onInspect,
   onDiscover,
   onTreasure,
+  onInspectWonder,
+  visitor,
+  onVisit,
   camera,
   setCamera,
 }: {
   world: IslandState;
   building: boolean;
   chosen: TileKind;
+  chosenWonder?: CrewId | null;
   candidate: string | null;
   onCandidate: (key: string) => void;
   onInspect: (kind: TileKind) => void;
   onDiscover: (id: LegendId) => void;
   onTreasure: (id: string) => void;
+  onInspectWonder?: (id: CrewId) => void;
+  visitor?: { id:CrewId; q:number; r:number };
+  onVisit?: (id:CrewId) => void;
   camera: Camera;
   setCamera: React.Dispatch<React.SetStateAction<Camera>>;
 }) {
@@ -75,10 +85,13 @@ export function IslandMap({
       py: number;
       scale: number;
     } | null>(null),
-    slots = frontier(world.placed),
+    movingWonder=chosenWonder?world.placed.find(cell=>cell.wonderId===chosenWonder):undefined,
+    slots = frontier(chosenWonder?world.placed.filter(cell=>cell.wonderId!==chosenWonder):world.placed)
+      .filter(slot=>slot.key!==movingWonder?.key),
     preview = building ? slots.find((c) => c.key === candidate) : undefined,
     seen = visibleDiscoveries(world.placed),
-    ghost = preview ? piece(preview.q, preview.r, chosen) : null;
+    ghost = preview ? piece(preview.q, preview.r, chosen,undefined,chosenWonder??undefined) : null;
+  const selectedName=chosenWonder?crewById[chosenWonder].wonder:tileById[chosen].name;
   const view = {
     x: camera.x - 920 / renderZoom,
     y: renderY - 620 / renderZoom,
@@ -150,7 +163,7 @@ export function IslandMap({
               data-open-corner={cell.key}
               role="button"
               tabIndex={0}
-              aria-label={`Preview ${tileById[chosen].name} at open corner ${index + 1}`}
+              aria-label={`Preview ${selectedName} at open corner ${index + 1}`}
               aria-pressed={candidate === cell.key}
               transform={`translate(${cell.x} ${cell.y})`}
               className={`map-placement-slot ${candidate === cell.key ? "selected" : ""}`}
@@ -183,10 +196,11 @@ export function IslandMap({
               data-island-tile={cell.key === ghost?.key ? undefined : cell.kind}
               data-cell={cell.key}
               data-ink-edge={cell.inkEdge.variant}
+              data-wonder-tile={cell.key===ghost?.key?undefined:cell.wonderId}
               pointerEvents={building ? "none" : undefined}
               opacity={cell.key === ghost?.key ? 0.68 : 1}
             >
-              <Scenery kind={cell.kind} x={cell.x} y={cell.y} />
+              {cell.wonderId?<WonderRaster id={cell.wonderId} x={cell.x} y={cell.y}/>:<Scenery kind={cell.kind} x={cell.x} y={cell.y} />}
             </g>
           ))}
         {!building &&
@@ -199,19 +213,21 @@ export function IslandMap({
               fill="transparent"
               role="button"
               tabIndex={0}
-              aria-label={`Inspect ${tileById[cell.kind].name}`}
+              aria-label={`Inspect ${cell.wonderId?crewById[cell.wonderId].wonder:tileById[cell.kind].name}`}
               onClick={() => {
                 const cache = PAPER_LANDMARKS.find(
                   (d) =>
                     d.q === cell.q && d.r === cell.r && d.kind === "treasure",
                 );
                 if (cache) onTreasure(cache.id);
+                else if (cell.wonderId) onInspectWonder?.(cell.wonderId);
                 else onInspect(cell.kind);
               }}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault();
-                  onInspect(cell.kind);
+                  if (cell.wonderId) onInspectWonder?.(cell.wonderId);
+                  else onInspect(cell.kind);
                 }
               }}
             />
@@ -256,6 +272,12 @@ export function IslandMap({
             </g>
           );
         })}
+        {!building&&visitor&&onVisit&&<g
+          className="map-visitor" data-map-control="visitor" data-visitor={visitor.id}
+          transform={`translate(${centre(visitor.q,visitor.r).x+70} ${centre(visitor.q,visitor.r).y-190})`}
+          role="button" tabIndex={0} aria-label={`Meet ${crewById[visitor.id].name}`}
+          onClick={()=>onVisit(visitor.id)} onKeyDown={event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();onVisit(visitor.id);}}}
+        ><image href={crewArt(visitor.id)} x="-52" y="-100" width="104" height="104"/><rect x="-54" y="7" width="108" height="29" rx="5"/><text y="27">{crewById[visitor.id].name}</text></g>}
       </svg>
       <div className="map-navigation">
         <span>
@@ -320,6 +342,9 @@ function ShelfPortrait({ kind }: { kind: TileKind }) {
 
 export function TileShelf({
   chosen,
+  chosenWonder,
+  wonders=[],
+  onChooseWonder,
   onChoose,
   balance,
   credits = 0,
@@ -328,6 +353,9 @@ export function TileShelf({
   orientation,
 }: {
   chosen: TileKind;
+  chosenWonder?: CrewId | null;
+  wonders?: CrewId[];
+  onChooseWonder?: (id:CrewId)=>void;
   onChoose: (kind: TileKind) => void;
   balance: number;
   credits?: number;
@@ -338,7 +366,7 @@ export function TileShelf({
   const scroller = useRef<HTMLDivElement>(null),
     items = buildable.filter(
       (t) => group === "All tiles" || groupFor(t.id) === group,
-    );
+    ),groups=wonders.length?[...shelfGroups,"Wonder tiles" as const]:shelfGroups;
   useEffect(() => {
     scroller.current?.scrollTo({ left: 0, top: 0, behavior: "instant" });
   }, [group]);
@@ -371,7 +399,7 @@ export function TileShelf({
     >
       <div className="category-heading">
         <nav className="tile-categories" aria-label="Tile categories">
-          {shelfGroups.map((name) => (
+          {groups.map((name) => (
             <button
               key={name}
               aria-pressed={group === name}
@@ -381,7 +409,7 @@ export function TileShelf({
             </button>
           ))}
         </nav>
-        <span>{items.length} tiles</span>
+        <span>{group==="Wonder tiles"?wonders.length:items.length} tiles</span>
       </div>
       <div className="student-tile-grid" ref={scroller}>
         {items.map((item) => {
@@ -394,7 +422,7 @@ export function TileShelf({
               className="shelf-tile"
               key={t.id}
               aria-label={`Choose ${t.name}`}
-              aria-pressed={chosen === t.id}
+              aria-pressed={!chosenWonder&&chosen === t.id}
               onClick={() => onChoose(t.id)}
             >
               <ShelfPortrait kind={t.id} />
@@ -407,6 +435,7 @@ export function TileShelf({
             </button>
           );
         })}
+        {group==="Wonder tiles"&&wonders.map(id=><button className="shelf-tile" key={id} aria-label={`Choose ${crewById[id].wonder}`} aria-pressed={chosenWonder===id} onClick={()=>onChooseWonder?.(id)}><span className="shelf-portrait"><WonderTileArt id={id} className="tile-portrait"/></span><strong>{crewById[id].wonder}</strong><span>Earned · yours to place</span></button>)}
       </div>
     </section>
   );
@@ -415,6 +444,7 @@ export function TileShelf({
 export function Placement({
   world,
   chosen,
+  chosenWonder,
   candidate,
   onPlace,
   onUndo,
@@ -423,16 +453,17 @@ export function Placement({
 }: {
   world: IslandState;
   chosen: TileKind;
+  chosenWonder?: CrewId | null;
   candidate: string | null;
   onPlace: () => void;
   onUndo: () => void;
   busy?: boolean;
   full?: boolean;
 }) {
-  const item = tileById[chosen],
+  const item = chosenWonder?{...tileById.meadow,name:crewById[chosenWonder].wonder,description:crewById[chosenWonder].wonderStory,price:0}:tileById[chosen],
     t = {
       ...item,
-      price: chosen === "meadow" && world.credits > 0 ? 0 : item.price,
+      price: chosenWonder||chosen === "meadow" && world.credits > 0 ? 0 : item.price,
     },
     canPay = world.balance >= t.price;
   return (
@@ -440,10 +471,10 @@ export function Placement({
       className={`placement-inspector ${full ? "full" : ""}`}
       aria-label="Your selected tile"
     >
-      {full && <TilePortrait kind={chosen} />}
+      {full && (chosenWonder?<WonderTileArt id={chosenWonder}/>:<TilePortrait kind={chosen} />)}
       <div className="placement-title">
         <h3>{t.name}</h3>
-        <span>{t.price} JP</span>
+        <span>{chosenWonder?"A visitor’s gift":`${t.price} JP`}</span>
       </div>
       {full && <p>{t.description}</p>}
       <button
@@ -456,7 +487,7 @@ export function Placement({
           : !canPay
             ? `Save ${t.price - world.balance} more JP`
             : candidate
-              ? "Place this tile"
+              ? chosenWonder?(world.placed.some(tile=>tile.wonderId===chosenWonder)?"Move this Wonder":"Place this Wonder"):"Place this tile"
               : "Select a spot on your island"}
         <span>
           {candidate && canPay ? (
@@ -469,7 +500,7 @@ export function Placement({
       <div className="placement-foot">
         <span>
           {candidate && canPay
-            ? `${world.balance - t.price} JP left after placing`
+            ? chosenWonder?"Your gift · no Journey Points needed":`${world.balance - t.price} JP left after placing`
             : ""}
         </span>
         <button
@@ -488,18 +519,25 @@ export function Overlay({
   children,
   title,
   onClose,
+  className="",
+  scrollKey,
 }: {
   children: React.ReactNode;
   title: string;
   onClose: () => void;
+  className?: string;
+  scrollKey?: string;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   useEffect(() => {
     ref.current?.showModal();
   }, []);
+  useLayoutEffect(() => {
+    if (ref.current) ref.current.scrollTop=0;
+  }, [title,scrollKey]);
   return (
     <dialog
-      className="journey-paper island-dialog"
+      className={`journey-paper island-dialog ${className}`}
       ref={ref}
       aria-label={title}
       onCancel={onClose}

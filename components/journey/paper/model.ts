@@ -67,7 +67,7 @@ export const shelfGroups = [
   "Buildings",
   "Little places",
 ] as const;
-export type ShelfGroup = (typeof shelfGroups)[number];
+export type ShelfGroup = (typeof shelfGroups)[number] | "Wonder tiles";
 const nature = new Set(["Terrain", "Landscapes"]);
 const first = [
   "capybara",

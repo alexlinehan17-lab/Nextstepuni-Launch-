@@ -80,6 +80,29 @@ describe('Journey callable session authorization', () => {
     expect(sdk.getUser).toHaveBeenCalledWith('journey-auth-test');
   });
 
+  it('validates and saves a visitor gift and Wonder placement through the authenticated transaction', async () => {
+    await updatePaperIsland.run(request({ action:'open' }));
+    const met=await updatePaperIsland.run(request({ action:'meetVisitor',id:'wisp',uid:'another-student' }));
+    expect(met.state.metVisitors).toEqual(['wisp']);
+    const writes=sdk.update.mock.calls.length;
+    await expect(updatePaperIsland.run(request({ action:'claimVisitor',id:'wisp' }))).rejects.toMatchObject({code:'failed-precondition'});
+    expect(sdk.update).toHaveBeenCalledTimes(writes);
+    const paired=await updatePaperIsland.run(request({ action:'place',kind:'water',q:-1,r:-1,revision:met.state.revision,requestId:'visitor-wish-place-001' }));
+    expect(paired.totalSpent).toBe(90);
+    const gift=await updatePaperIsland.run(request({ action:'claimVisitor',id:'wisp' }));
+    const retry=await updatePaperIsland.run(request({ action:'claimVisitor',id:'wisp' }));
+    expect(retry.state.claimedVisitors).toEqual(['wisp']);expect(retry.totalSpent).toBe(90);
+    const placed=await updatePaperIsland.run(request({ action:'placeWonder',id:'wisp',q:-2,r:-1,revision:gift.state.revision,requestId:'visitor-wonder-place-001' }));
+    expect(placed.state.tiles.filter(tile=>tile.wonderId==='wisp')).toHaveLength(1);
+    expect(placed.totalSpent).toBe(90);
+    expect(sdk.update.mock.calls.every(([ref])=>ref.path==='progress/journey-auth-test')).toBe(true);
+  });
+
+  it.each(['meetVisitor','claimVisitor','placeWonder'])('requires authentication for %s',async action=>{
+    await expect(updatePaperIsland.run({data:{action,id:'wisp',q:-2,r:-1,revision:0,requestId:'visitor-unauth-001'}} as Request)).rejects.toMatchObject({code:'unauthenticated'});
+    expect(sdk.transaction).not.toHaveBeenCalled();
+  });
+
   it('rejects signed-out requests without touching the island', async () => {
     await expect(updatePaperIsland.run({ data: { action: 'open' } } as Request))
       .rejects.toMatchObject({ code: 'unauthenticated' });

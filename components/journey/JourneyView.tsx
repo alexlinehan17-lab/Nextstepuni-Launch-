@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -20,6 +20,7 @@ import JourneyWelcome from "./JourneyWelcome";
 import { usePaperIsland } from "../../hooks/usePaperIsland";
 import {
   knownLandmarks,
+  axialDistance,
   paperTileKind,
   PAPER_LANDMARKS,
   type PaperDiscoveryId,
@@ -39,12 +40,19 @@ import {
   discoveryRoute,
   nextDiscovery,
   buildable,
+  frontier,
+  groupFor,
   type ShelfGroup,
 } from "./paper/model";
 import { coastalMap, legendById, type LegendId } from "./paper/collection";
 import { StickerArt } from "./paper/StickerArt";
 import { TilePortrait } from "./paper/TileArt";
+import { centre } from "./paper/geometry";
+import { crewArt, crewById, journeyCrew, visitorHasAnchor, visitorWishFulfilled, wishText, type CrewId } from "./visitors/catalogue";
+import { VisitorsBook, WondersBook } from "./visitors/VisitorsBook";
+import { VisitorPanel, type VisitorPage } from "./visitors/VisitorPanel";
 import "./paper/paper.css";
+import "./visitors/visitors.css";
 
 interface JourneyViewProps {
   onBack: () => void;
@@ -72,17 +80,22 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     [camera, setCamera] = useState(defaultCamera),
     [group, setGroup] = useState<ShelfGroup>("All tiles"),
     [notice, setNotice] = useState<JourneyNotice | null>(null);
+  const [chosenWonder,setChosenWonder]=useState<CrewId|null>(null);
+  const [fieldbookSection,setFieldbookSection]=useState<"stories"|"visitors"|"wonders">("stories");
+  const [visitor,setVisitor]=useState<CrewId>("luma"),[visitorPage,setVisitorPage]=useState<VisitorPage>("visit");
   const [panel, setPanel] = useState<
-      "fieldbook" | "points" | "tile" | "discovery" | "treasure" | null
+      "fieldbook" | "points" | "tile" | "discovery" | "treasure" | "visitor" | null
     >(null),
     [inspected, setInspected] = useState<TileKind>("meadow"),
     [discovery, setDiscovery] = useState<LegendId>("lantern-nautilus");
   const [treasure, setTreasure] = useState("");
+  const currentVisitor=useRef(visitor),currentPanel=useRef(panel);
+  currentVisitor.current=visitor;currentPanel.current=panel;
   const placed = useMemo(
     () =>
       island
         ? [
-            ...island.tiles.map((t) => piece(t.q, t.r, paperTileKind(t), t.edge)),
+            ...island.tiles.map((t) => piece(t.q, t.r, paperTileKind(t), t.edge, t.wonderId)),
             ...knownLandmarks(island.tiles).map((t) => piece(t.q, t.r, t.kind)),
           ]
         : [],
@@ -104,13 +117,20 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
   const seen = visibleDiscoveries(placed),
     selected = tileById[chosen],
     kept = island?.kept ?? [];
+  const claimedVisitors=island?.claimedVisitors??[];
+  const waitingVisitors=island?journeyCrew.filter(crew=>!claimedVisitors.includes(crew.id)&&((island.metVisitors??[]).includes(crew.id)||visitorHasAnchor(island.tiles,crew.id))):[];
+  const visiting=waitingVisitors.find(crew=>(island?.metVisitors??[]).includes(crew.id)&&visitorWishFulfilled(island!.tiles,crew.id))??waitingVisitors[0];
+  const visitorAnchor=visiting?island?.tiles.find(tile=>!tile.wonderId&&tile.kind===visiting.anchor):undefined;
+  const openVisitor=(id:CrewId,page:VisitorPage="visit")=>{setVisitor(id);setVisitorPage(page);setPanel("visitor");setNotice(null);};
   const changeMode = (value: boolean) => {
     setBuilding(value);
     setCandidate(null);
     setNotice(null);
+    if (!value) { setChosenWonder(null);if(group==="Wonder tiles")setGroup("All tiles"); }
   };
   const choose = (kind: TileKind) => {
     setChosen(kind);
+    setChosenWonder(null);
     setNotice(null);
   };
   const build = async () => {
@@ -118,8 +138,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     const [q, r] = candidate.split(",").map(Number);
     if (
       await execute({
-        action: "place",
-        kind: chosen,
+        ...(chosenWonder?{action:"placeWonder" as const,id:chosenWonder}:{action:"place" as const,kind:chosen}),
         q,
         r,
         requestId: crypto.randomUUID(),
@@ -127,9 +146,17 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
       })
     ) {
       setCandidate(null);
+      if (chosenWonder) {
+        setNotice({id:crypto.randomUUID(),title:`${crewById[chosenWonder].wonder} ${island.tiles.some(tile=>tile.wonderId===chosenWonder)?"moved":"added"}.`,detail:"A gift from a wanderer, now part of your world."});
+        return;
+      }
+      const nextTiles=[...island.tiles,{q,r,kind:chosen==="capybara"?"water" as const:chosen}];
+      const readyVisitor=journeyCrew.find(crew=>(island.metVisitors??[]).includes(crew.id)&&!claimedVisitors.includes(crew.id)&&!visitorWishFulfilled(island.tiles,crew.id)&&visitorWishFulfilled(nextTiles,crew.id));
       const found = visibleDiscoveries([...placed, piece(q, r, chosen)])
         .find(d => !seen.some(previous => previous.id === d.id));
-      if (found) {
+      if (readyVisitor) {
+        openVisitor(readyVisitor.id);
+      } else if (found) {
         setNotice(null);
         showDiscovery(found.id);
       } else {
@@ -162,6 +189,25 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     setDiscovery(id);
     setPanel("discovery");
   };
+  const chooseWonder=(id:CrewId)=>{
+    setChosenWonder(id);setChosen("meadow");setGroup("Wonder tiles");setCandidate(null);setNotice(null);setPanel(null);setBuilding(true);
+    const existing=island?.tiles.find(tile=>tile.wonderId===id);
+    if(existing) { const pos=centre(existing.q,existing.r);setCamera({...pos,y:pos.y-75,zoom:1}); }
+  };
+  const buildVisitorWish=(id:CrewId,anchorOnly=false)=>{
+    if(!island)return;
+    const crew=crewById[id],ordinary=island.tiles.filter(tile=>!tile.wonderId),slots=frontier(placed);
+    let kind=anchorOnly?crew.anchor:crew.tile;
+    let spot=slots.find(slot=>ordinary.some(tile=>tile.kind===(anchorOnly?crew.tile:crew.anchor)&&axialDistance(tile,slot)===1));
+    if(!spot&&!anchorOnly) {
+      kind=crew.anchor;
+      spot=slots.find(slot=>ordinary.some(tile=>tile.kind===crew.tile&&axialDistance(tile,slot)===1));
+    }
+    spot??=slots[0];
+    choose(kind);setGroup(groupFor(kind));setBuilding(true);setPanel(null);setCandidate(spot?.key??null);
+    if(spot)setCamera({x:spot.x,y:spot.y-75,zoom:1});
+    setNotice({id:crypto.randomUUID(),title:`${crew.name}’s little wish.`,detail:kind===crew.tile?wishText(id):`Add ${crew.anchorLabel.toLowerCase()} to make a little room for ${crew.name}.`});
+  };
   const findSticker = (id?: LegendId) => {
     const target = id ? discoveries.find(d => d.id === id) : undefined;
     const route = target
@@ -173,6 +219,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     setPanel(null);
     setBuilding(true);
     setChosen("meadow");
+    setChosenWonder(null);
     setGroup("All tiles");
     setCandidate(next.key);
     setCamera({ x: next.x, y: next.y - 75, zoom: 1 });
@@ -223,6 +270,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 world={world}
                 building={building}
                 chosen={chosen}
+                chosenWonder={chosenWonder}
                 candidate={candidate}
                 onCandidate={setCandidate}
                 onInspect={(kind) => {
@@ -230,6 +278,9 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                   setPanel("tile");
                 }}
                 onDiscover={showDiscovery}
+                onInspectWonder={id=>openVisitor(id,"wonder")}
+                visitor={visiting&&visitorAnchor?{id:visiting.id,q:visitorAnchor.q,r:visitorAnchor.r}:undefined}
+                onVisit={openVisitor}
                 onTreasure={(id) => {
                   setTreasure(id);
                   setPanel("treasure");
@@ -277,11 +328,13 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 >
                   <Compass size={18} /><span>Find a sticker</span>
                 </button>}
+                <button className="visitor-dock" aria-label="Wandering visitors" title="Wandering visitors" onClick={()=>{setFieldbookSection("visitors");setPanel("fieldbook");}}><img src={crewArt(visiting?.id??"luma")} alt="" width="35" height="35"/><span>Visitors</span>{waitingVisitors.length>0&&<small>{waitingVisitors.length}</small>}</button>
                 <button
                   className="primary-action"
+                  aria-label="Build your island"
                   onClick={() => changeMode(true)}
                 >
-                  <Hammer size={17} /> Build your island
+                  <Hammer size={17} /><span className="desktop-build-label">Build your island</span><span className="mobile-build-label">Build</span>
                 </button>
               </div>
             )}
@@ -318,6 +371,9 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
           >
             <TileShelf
               chosen={chosen}
+              chosenWonder={chosenWonder}
+              wonders={claimedVisitors}
+              onChooseWonder={chooseWonder}
               onChoose={choose}
               balance={balance}
               credits={world.credits}
@@ -328,6 +384,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
             <Placement
               world={world}
               chosen={chosen}
+              chosenWonder={chosenWonder}
               candidate={candidate}
               onPlace={() => void build()}
               onUndo={() => void undo()}
@@ -344,14 +401,21 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
               : panel === "points"
                 ? "Your Journey Points"
                 : panel === "tile"
-                  ? tileById[inspected].name
+                ? tileById[inspected].name
+                : panel === "visitor"
+                  ? `${crewById[visitor].name} · ${crewById[visitor].role}`
                   : panel === "treasure"
                     ? "A treasure, found"
                     : legendById[discovery].name
           }
           onClose={() => setPanel(null)}
+          className={panel==="visitor"?"has-visitor":panel==="fieldbook"&&fieldbookSection!=="stories"?"has-visitors-book":""}
+          scrollKey={panel==="visitor"?`${visitor}:${visitorPage}`:panel==="fieldbook"?fieldbookSection:panel}
         >
           {panel === "fieldbook" && (
+            <>
+            <nav className="fieldbook-tabs" aria-label="Fieldbook sections">{([['stories','Stories'],['visitors','Visitors'],['wonders','Wonder tiles']] as const).map(([section,label])=><button key={section} aria-pressed={fieldbookSection===section} onClick={()=>setFieldbookSection(section)}>{label}</button>)}</nav>
+            {fieldbookSection==="stories"&&(
             <div className="fieldbook-panel">
               <span className="eyebrow">YOUR FIELD NOTES</span>
               <h2>
@@ -398,8 +462,15 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                   );
                 })}
               </div>
-            </div>
+            </div>)}
+            {island&&fieldbookSection==="visitors"&&<VisitorsBook island={island} onVisit={openVisitor}/>}
+            {island&&fieldbookSection==="wonders"&&<WondersBook island={island} onWonder={id=>openVisitor(id,"wonder")}/>}
+            </>
           )}
+          {panel==="visitor"&&island&&<VisitorPanel id={visitor} page={visitorPage} island={island} busy={busy} error={error} onPage={setVisitorPage} onClose={()=>setPanel(null)} onBuildAnchor={()=>buildVisitorWish(visitor,true)} onBuildWish={()=>buildVisitorWish(visitor)} onPlaceWonder={()=>chooseWonder(visitor)}
+            onMeet={()=>void execute({action:"meetVisitor",id:visitor})}
+            onClaim={()=>{const id=visitor;void execute({action:"claimVisitor",id}).then(saved=>{if(saved&&currentVisitor.current===id&&currentPanel.current==="visitor")setVisitorPage("gift");});}}
+          />}
           {panel === "points" && (
             <div className="points-panel">
               <span className="eyebrow">YOUR JOURNEY POINTS</span>

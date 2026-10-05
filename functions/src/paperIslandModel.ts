@@ -1,16 +1,11 @@
 import { tileById, type TileKind } from "./paperCatalogue";
+import { NEIGHBOURS, axialDistance } from "./paperGeometry";
+import { isPaperVisitorId, visitorHasAnchor, visitorWishFulfilled, type PaperVisitorId } from "./paperVisitors";
+export { NEIGHBOURS, axialDistance } from "./paperGeometry";
 
 export const PAPER_ISLAND_VERSION = 1;
 // A sticker comes into view one placement sooner, while the wider atlas stays hidden.
 export const PAPER_DISCOVERY_RADIUS = 2;
-export const NEIGHBOURS = [
-  [1, 0],
-  [0, 1],
-  [-1, 1],
-  [-1, 0],
-  [0, -1],
-  [1, -1],
-] as const;
 export const PAPER_EDGES = [
   "long-nick",
   "twin-strokes",
@@ -84,6 +79,8 @@ export interface PaperTile {
   cost: number;
   // Old installed clients can still draw the pond without knowing this sprite.
   appearance?: "capybara";
+  // Older clients still draw the meadow beneath this earned Wonder.
+  wonderId?: PaperVisitorId;
 }
 export function paperTileKind(tile: Pick<PaperTile, "kind" | "appearance">): TileKind {
   return tile.kind === "water" && tile.appearance === "capybara"
@@ -95,8 +92,10 @@ export interface PaperIsland {
   revision: number;
   tiles: PaperTile[];
   kept: PaperDiscoveryId[];
-  undo: { tileId: string; cost: number; usedCredit: boolean } | null;
+  undo: { tileId: string; cost: number; usedCredit: boolean; previousTile?: PaperTile; previousIndex?: number } | null;
   claimedCaches?: string[];
+  metVisitors?: PaperVisitorId[];
+  claimedVisitors?: PaperVisitorId[];
   lastRequest: string;
   credits: number;
   rewardedRank: number;
@@ -112,6 +111,8 @@ export type PaperCommand =
       kind: TileKind;
     }
   | { action: "undo"; requestId: string; revision: number }
+  | { action: "placeWonder"; id: PaperVisitorId; q:number; r:number; requestId:string; revision:number }
+  | { action: "meetVisitor" | "claimVisitor"; id:PaperVisitorId }
   | { action: "keep"; id: PaperDiscoveryId }
   | { action: "claim"; id: string };
 export interface PaperProgress {
@@ -120,15 +121,6 @@ export interface PaperProgress {
   pointsData?: { totalEarned?: number; totalSpent?: number };
 }
 export class PaperIslandError extends Error {}
-export const axialDistance = (
-  a: { q: number; r: number },
-  b: { q: number; r: number },
-) =>
-  Math.max(
-    Math.abs(a.q - b.q),
-    Math.abs(a.r - b.r),
-    Math.abs(a.q + a.r - b.q - b.r),
-  );
 export function createPaperIsland(): PaperIsland {
   const starter: [number, number, TileKind][] = [
     [0, 0, "home"],
@@ -169,6 +161,22 @@ export function canBuildPaper(tiles: PaperTile[], q: number, r: number) {
     )
   );
 }
+
+// A Wonder can move, provided it is not the only bridge to another part of the island.
+export function paperIslandConnected(tiles: PaperTile[]) {
+  if (!tiles.length) return true;
+  const cells=new Map([...tiles,...knownLandmarks(tiles)].map(tile=>[`${tile.q},${tile.r}`,tile]));
+  const start=tiles.find(tile=>tile.kind==="home")??tiles[0];
+  const reached=new Set([`${start.q},${start.r}`]), queue:{q:number;r:number}[]=[start];
+  for (let i=0;i<queue.length;i++) {
+    const tile=queue[i];
+    for (const [dq,dr] of NEIGHBOURS) {
+      const key=`${tile.q+dq},${tile.r+dr}`, next=cells.get(key);
+      if (next&&!reached.has(key)) { reached.add(key);queue.push(next); }
+    }
+  }
+  return tiles.every(tile=>reached.has(`${tile.q},${tile.r}`));
+}
 // Server and demo share this reducer. The caller commits state and JP in one transaction.
 export function applyPaperCommand(
   progress: PaperProgress,
@@ -197,8 +205,8 @@ export function applyPaperCommand(
       credits: state.credits + 3 * (rank - state.rewardedRank),
       rewardedRank: rank,
     };
-  if (command.action === "place" || command.action === "undo") {
-    if (!/^[a-zA-Z0-9-]{12,80}$/.test(command.requestId))
+  if (command.action === "place" || command.action === "placeWonder" || command.action === "undo") {
+    if (typeof command.requestId!=="string" || !/^[a-zA-Z0-9-]{12,80}$/.test(command.requestId))
       throw new PaperIslandError("Please try that placement again.");
     if (state.lastRequest === command.requestId)
       return { state, totalEarned: earned, totalSpent: spent, migrated };
@@ -206,7 +214,29 @@ export function applyPaperCommand(
       throw new PaperIslandError(
         "Your island changed in another window. Please choose a spot again.",
       );
-    if (command.action === "place") {
+    if (command.action !== "undo" && state.tiles.some(tile=>tile.id===command.requestId))
+      throw new PaperIslandError("That placement was already saved. Please choose a spot again.");
+    if (command.action === "placeWonder") {
+      if (!isPaperVisitorId(command.id) || !(state.claimedVisitors??[]).includes(command.id))
+        throw new PaperIslandError("Fulfil this visitor’s wish to earn their Wonder Tile first.");
+      const previousIndex=state.tiles.findIndex(tile=>tile.wonderId===command.id);
+      const previous=state.tiles[previousIndex];
+      const tiles=state.tiles.filter(tile=>tile.wonderId!==command.id);
+      if (previous && !paperIslandConnected(tiles))
+        throw new PaperIslandError("This Wonder connects part of your island. Build another path before moving it.");
+      if (!canBuildPaper(tiles,command.q,command.r))
+        throw new PaperIslandError("Choose an empty spot next to your island. Creature spaces are reserved.");
+      if (!previous && tiles.length>=3000)
+        throw new PaperIslandError("This island has reached its tile limit.");
+      const tile:PaperTile={
+        id:command.requestId,q:command.q,r:command.r,kind:"meadow",wonderId:command.id,cost:0,
+        edge:previous?.edge??{
+          variant:PAPER_EDGES[Math.min(3,Math.floor(random()*4))],
+          seed:Math.floor(random()*0x100000000)>>>0,
+        },
+      };
+      state={...state,tiles:[...tiles,tile],undo:{tileId:tile.id,cost:0,usedCredit:false,...(previous?{previousTile:previous,previousIndex}:{})}};
+    } else if (command.action === "place") {
       if (
         !Object.prototype.hasOwnProperty.call(tileById, command.kind) ||
         command.kind === "home" ||
@@ -250,6 +280,8 @@ export function applyPaperCommand(
         throw new PaperIslandError("There is no placement to undo.");
       spent = Math.max(0, spent - state.undo.cost);
       const tiles = state.tiles.filter((t) => t.id !== state.undo?.tileId);
+      if (state.undo.previousTile)
+        tiles.splice(state.undo.previousIndex??tiles.length,0,state.undo.previousTile);
       state = {
         ...state,
         tiles,
@@ -271,6 +303,23 @@ export function applyPaperCommand(
       revision: state.revision + 1,
       lastRequest: command.requestId,
     };
+  } else if (command.action === "meetVisitor" || command.action === "claimVisitor") {
+    if (!isPaperVisitorId(command.id))
+      throw new PaperIslandError("Choose a visitor from your fieldbook.");
+    const met=state.metVisitors??[], claimed=state.claimedVisitors??[];
+    if (command.action==="meetVisitor") {
+      if (!met.includes(command.id)) {
+        if (!visitorHasAnchor(state.tiles,command.id))
+          throw new PaperIslandError("Add the tile this visitor follows to welcome them to your island.");
+        state={...state,metVisitors:[...met,command.id],revision:state.revision+1};
+      }
+    } else if (!claimed.includes(command.id)) {
+      if (!met.includes(command.id))
+        throw new PaperIslandError("Meet this visitor and hear their wish first.");
+      if (!visitorWishFulfilled(state.tiles,command.id))
+        throw new PaperIslandError("Their two requested tiles need to share an edge on your island.");
+      state={...state,claimedVisitors:[...claimed,command.id],undo:null,revision:state.revision+1};
+    }
   } else if (command.action === "claim") {
     const found = knownLandmarks(state.tiles).find(
       (d) => d.id === command.id && d.kind === "treasure",

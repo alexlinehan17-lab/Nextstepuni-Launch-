@@ -1,0 +1,119 @@
+.journey-paper .fieldbook-tabs { display:flex; gap:24px; padding:30px 40px 0; border-bottom:1px solid var(--line); }
+.journey-paper .fieldbook-tabs button { min-height:42px; padding:0 0 13px; color:var(--muted); font-size:12px; border-bottom:2px solid transparent; }
+.journey-paper .fieldbook-tabs button[aria-pressed="true"] { color:var(--ink); border-color:#ff8125; }
+.journey-paper.island-dialog.has-visitors-book { width:min(1040px,calc(100vw - 34px)); }
+.journey-paper.island-dialog.has-visitor { width:min(780px,calc(100vw - 34px)); border:2px solid #ff8125; border-radius:7px; box-shadow:4px 4px 0 #252720,0 18px 80px #25272026; background:#fff; }
+.journey-paper .visitors-book,.journey-paper .visitor-panel { background:#fff; color:#252720; --ink:#252720; --muted:#62685c; --orange:#ff8125; --line:#dfe2da; --rust:#7e5335; }
+.journey-paper .visitors-book { padding:34px 40px 40px; }
+.journey-paper .visitors-book-heading h2,.journey-paper .visitor-panel h2 { font:750 42px/1.07 "DM Sans",sans-serif; letter-spacing:-1.8px; margin-top:12px; text-wrap:balance; }
+.journey-paper .visitors-book-heading h2>span,.journey-paper .visitor-panel h2>span,.journey-paper .visitor-card-name>span,.journey-paper .visitor-letter-signature>span { color:#ff8125; }
+.journey-paper .visitors-book-heading>p { max-width:570px; margin-top:15px; font-size:13px; line-height:1.8; color:#62685c; }
+.journey-paper .visitors-book-count { display:block; margin-top:20px; font:11px/1.6 "Apercu Mono Pro",monospace; color:#62685c; }
+.journey-paper .visitors-card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:19px; margin-top:27px; }
+.journey-paper .visitor-collection-card { position:relative; display:flex; align-items:flex-start; flex-direction:column; min-width:0; padding:20px 20px 19px; background:#fff; border:2px solid #ff8125; border-radius:6px; box-shadow:3px 3px 0 #252720; text-align:left; transition:transform .18s ease,box-shadow .18s ease; }
+.journey-paper .visitor-collection-card:hover { transform:translate(-1px,-1px); box-shadow:4px 4px 0 #252720; }
+.journey-paper .visitor-collection-card>.journey-crew-art { align-self:center; width:100%; height:165px; object-fit:contain; margin-bottom:14px; }
+.journey-paper .visitor-card-name { display:block; font-size:27px; line-height:1.1; font-weight:750; letter-spacing:-.9px; }
+.journey-paper .visitor-card-role { display:block; margin-top:8px; font:9px/1.6 "Apercu Mono Pro",monospace; letter-spacing:.7px; text-transform:uppercase; color:#62685c; }
+.journey-paper .visitor-card-status { display:flex; align-items:center; gap:5px; padding-right:17px; margin-top:19px; color:#62685c; font-size:11px; line-height:1.5; }
+.journey-paper .visitor-card-arrow { position:absolute; right:17px; bottom:20px; color:#252720; }
+.journey-paper .visitors-book-foot { font-size:11px; line-height:1.8; color:#62685c; border-top:1px solid #dfe2da; padding-top:24px; margin-top:32px; }
+.journey-paper .wonder-card-art { display:block; width:100%; height:190px; margin-bottom:12px; }
+.journey-paper .wonder-card-art>.wonder-tile-art { width:100%; height:100%; }
+.journey-paper .wonder-collection-card>.visitor-card-name { font-size:23px; margin-top:9px; }
+.journey-paper .visitor-panel { padding:43px 40px 34px; }
+.journey-paper .visitor-introduction { display:grid; grid-template-columns:220px minmax(0,1fr); align-items:center; gap:36px; margin-top:14px; }
+.journey-paper .visitor-portrait { text-align:center; }
+.journey-paper .visitor-portrait>.journey-crew-art { display:block; width:220px; height:220px; object-fit:contain; }
+.journey-paper .visitor-portrait h2 { font-size:51px; margin-top:2px; }
+.journey-paper .visitor-role { display:block; margin-top:9px; color:#62685c; font:10px/1.6 "Apercu Mono Pro",monospace; text-transform:uppercase; letter-spacing:.8px; }
+.journey-paper .visitor-introduction-copy>p { font-size:13px; line-height:1.85; color:#62685c; }
+.journey-paper .visitor-introduction-copy>p+p { margin-top:22px; }
+.journey-paper .visitor-introduction-copy>.visitor-quote,.journey-paper .visitor-quote { font-size:19px; color:#252720; line-height:1.65; }
+.journey-paper .visitor-wish { margin-top:29px; padding:22px 0; border-top:1px solid #dfe2da; border-bottom:1px solid #dfe2da; }
+.journey-paper .visitor-wish-tiles { display:flex; justify-content:center; align-items:center; gap:17px; padding-top:10px; }
+.journey-paper .visitor-wish-tiles>div { text-align:center; }
+.journey-paper .visitor-wish-tiles .tile-portrait { display:block; width:105px; height:98px; }
+.journey-paper .visitor-wish-tiles>div>span { font-size:11px; color:#62685c; }
+.journey-paper .visitor-wish-plus { color:#62685c; font-size:22px; }
+.journey-paper .visitor-wish-check { color:#252720; }
+.journey-paper .visitor-wish>p { font-size:12px; line-height:1.6; text-align:center; margin-top:16px; }
+.journey-paper .visitor-wonder-preview { width:100%; display:flex; align-items:center; text-align:left; gap:19px; padding:12px 0; border-bottom:1px solid #dfe2da; }
+.journey-paper .visitor-wonder-preview>.wonder-tile-art { width:115px; height:132px; }
+.journey-paper .visitor-wonder-preview>span { flex:1; min-width:0; }
+.journey-paper .visitor-wonder-preview small { display:block; color:#62685c; font:8px/1.7 "Apercu Mono Pro",monospace; letter-spacing:.7px; }
+.journey-paper .visitor-wonder-preview strong { display:block; font-size:23px; font-weight:700; letter-spacing:-.7px; margin-top:6px; }
+.journey-paper .visitor-wonder-preview>span>span { display:block; font-size:11px; color:#62685c; line-height:1.7; margin-top:6px; }
+.journey-paper .visitor-panel-actions { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:20px; margin-top:26px; }
+.journey-paper .visitor-action { display:inline-flex; align-items:center; justify-content:space-between; gap:28px; min-height:48px; min-width:220px; background:#ff8125; color:#252720; border:2px solid #252720; border-radius:5px; box-shadow:3px 3px 0 #252720; padding:12px 20px; font-weight:650; font-size:14px; }
+.journey-paper .visitor-action:hover:not(:disabled) { transform:translate(1px,1px); box-shadow:2px 2px 0 #252720; }
+.journey-paper .visitor-text-action { padding:12px 0 9px; border-bottom:1px solid #62685c; font-size:12px; min-height:44px; }
+.journey-paper .visitor-saved-note { margin-top:23px; font-size:11px; line-height:1.8; color:#62685c; text-align:center; }
+.journey-paper .visitor-keepsakes { display:flex; justify-content:center; gap:24px; flex-wrap:wrap; margin-top:12px; }
+.journey-paper .visitor-save-error { font-size:12px; color:#9b3426; line-height:1.7; margin-top:20px; }
+.journey-paper .visitor-gift,.journey-paper .visitor-wonder-panel,.journey-paper .visitor-letter-panel,.journey-paper .visitor-sticker-panel { text-align:center; }
+.journey-paper .visitor-gift>.visitor-quote { margin-top:19px; font-size:17px; }
+.journey-paper .visitor-gift>.wonder-tile-art,.journey-paper .visitor-wonder-panel>.wonder-tile-art { display:block; width:min(330px,100%); height:345px; margin:20px auto 10px; }
+.journey-paper .visitor-gift>h3 { font-size:25px; font-weight:750; letter-spacing:-.7px; }
+.journey-paper .visitor-gift>p:not(.visitor-quote):not(.visitor-saved-note),.journey-paper .visitor-wonder-panel>p:not(.visitor-saved-note) { max-width:510px; margin:14px auto 0; font-size:13px; line-height:1.85; color:#62685c; }
+.journey-paper .visitor-gift-includes { display:flex; justify-content:center; align-items:center; gap:25px; margin-top:23px; padding:17px 0; border-top:1px solid #dfe2da; border-bottom:1px solid #dfe2da; font:9px/1.6 "Apercu Mono Pro",monospace; letter-spacing:.7px; }
+.journey-paper .visitor-letter-panel>.journey-crew-art { display:block; object-fit:contain; width:130px; height:130px; margin:25px auto 0; }
+.journey-paper .visitor-letter-panel>.visitor-letter { max-width:480px; margin:27px auto 0; font:400 24px/1.6 var(--serif); }
+.journey-paper .visitor-letter-signature { display:block; margin:23px 0 19px; font-size:23px; font-weight:700; }
+.journey-paper .crew-sticker { width:min(280px,100%); margin:30px auto 19px; padding:25px 23px; background:#fff; border:2px solid #ff8125; border-radius:8px; box-shadow:3px 3px 0 #252720; }
+.journey-paper .crew-sticker>.journey-crew-art { display:block; width:100%; height:230px; object-fit:contain; }
+.journey-paper .crew-sticker>span { display:block; font-size:43px; line-height:1.2; font-weight:750; letter-spacing:-1.6px; margin-top:15px; }
+.journey-paper .crew-sticker>small { display:block; margin-top:12px; font:8px/1.6 "Apercu Mono Pro",monospace; letter-spacing:1.4px; color:#62685c; }
+.journey-paper .visitor-sticker-panel>p { font-size:12px; line-height:1.8; color:#62685c; margin-bottom:18px; }
+.journey-paper .visitor-dock>img { object-fit:contain; width:35px; height:35px; }
+.journey-paper .map-visitor { cursor:pointer; }
+.journey-paper .map-visitor rect { fill:#fff; stroke:#ff8125; stroke-width:2; }
+.journey-paper .map-visitor text { fill:#252720; font:600 15px "DM Sans",sans-serif; text-anchor:middle; }
+.journey-paper .map-visitor:focus-visible { outline:none; }
+.journey-paper .map-visitor:focus-visible rect { stroke:#252720; stroke-width:4; }
+.journey-paper .mobile-build-label { display:none; }
+@media(max-width:700px) {
+  .journey-paper .fieldbook-tabs { padding:23px 21px 0; gap:19px; }
+  .journey-paper .fieldbook-tabs button { font-size:11px; }
+  .journey-paper .visitors-book { padding:27px 21px 30px; }
+  .journey-paper .visitors-book-heading h2 { font-size:32px; letter-spacing:-1.1px; }
+  .journey-paper .visitors-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+  .journey-paper .visitor-collection-card { padding:15px 12px; }
+  .journey-paper .visitor-collection-card>.journey-crew-art { height:122px; margin-bottom:12px; }
+  .journey-paper .visitor-card-name { font-size:23px; }
+  .journey-paper .visitor-card-role { font-size:8px; letter-spacing:.2px; }
+  .journey-paper .visitor-card-status { font-size:10px; }
+  .journey-paper .visitor-card-arrow { right:10px; bottom:17px; width:13px; }
+  .journey-paper .wonder-card-art { height:135px; }
+  .journey-paper .wonder-collection-card>.visitor-card-name { font-size:18px; letter-spacing:-.5px; }
+  .journey-paper .visitor-panel { padding:39px 22px 28px; }
+  .journey-paper .visitor-panel h2 { font-size:34px; letter-spacing:-1.2px; }
+  .journey-paper .visitor-introduction { grid-template-columns:1fr; gap:23px; }
+  .journey-paper .visitor-portrait>.journey-crew-art { margin:auto; width:205px; height:205px; }
+  .journey-paper .visitor-portrait h2 { font-size:45px; }
+  .journey-paper .visitor-introduction-copy { text-align:center; }
+  .journey-paper .visitor-introduction-copy>.visitor-quote { font-size:17px; }
+  .journey-paper .visitor-wonder-preview { gap:12px; }
+  .journey-paper .visitor-wonder-preview>.wonder-tile-art { width:87px; height:105px; }
+  .journey-paper .visitor-wonder-preview strong { font-size:20px; }
+  .journey-paper .visitor-action { width:100%; min-width:0; }
+  .journey-paper .visitor-keepsakes { gap:5px 18px; }
+  .journey-paper .visitor-gift>.wonder-tile-art,.journey-paper .visitor-wonder-panel>.wonder-tile-art { height:285px; }
+  .journey-paper .visitor-gift-includes { gap:16px; font-size:8px; }
+  .journey-paper .visitor-letter-panel>.visitor-letter { font-size:22px; }
+  .journey-paper .island-dock { gap:10px; padding:9px 10px; max-width:calc(100vw - 24px); }
+  .journey-paper .visitor-dock>span { display:none; }
+  .journey-paper .visitor-dock>img { width:28px; height:28px; }
+  .journey-paper .desktop-build-label { display:none; }
+  .journey-paper .mobile-build-label { display:inline; }
+}
+@media(max-width:360px) {
+  .journey-paper .island-dock>button>small { display:none; }
+  .journey-paper .island-dock { gap:8px; }
+  .journey-paper .visitors-card-grid { gap:12px; }
+  .journey-paper .visitor-card-role { font-size:7px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .journey-paper .visitor-collection-card { transition:none; }
+  .journey-paper .visitor-collection-card:hover,.journey-paper .visitor-action:hover:not(:disabled) { transform:none; }
+}
