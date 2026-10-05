@@ -11,6 +11,7 @@ import {
 } from '../kobra-navigation-runtime';
 import { NavigationIcon, type NavigationIconName } from './NavigationIcon';
 import { useNavigation } from '../../contexts/NavigationContext';
+import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import type { SessionUser } from '../../utils/authUtils';
 import type { UserSettings } from '../../types';
 import Avatar from '../Avatar';
@@ -47,6 +48,7 @@ const WIDTH_STORAGE_KEY = 'nextstepuni-sidebar-width';
 /** Uses the current purchased Kobra parts. Only the destinations/brand composition are ours. */
 export default function NextStepUniSidebar(props: Props) {
   const mobile = useIsMobile();
+  const mobileAppDesign = useMobileAppDesign();
   const nav = useNavigation();
   const [open, setOpen] = useState(() => {
     const saved = document.cookie.match(/(?:^|; )sidebar_state=(true|false)(?:;|$)/);
@@ -116,7 +118,7 @@ export default function NextStepUniSidebar(props: Props) {
   };
 
   // Mobile keeps its native bottom bar and profile sheet. No desktop sidebar shortcut is mounted.
-  if (mobile) return <>{props.children}<div className="hidden"><NotificationBell uid={props.user.uid} onUnreadCountChange={props.onUnreadCountChange} /></div></>;
+  if (mobile || mobileAppDesign) return <>{props.children}<div className="hidden"><NotificationBell uid={props.user.uid} onUnreadCountChange={props.onUnreadCountChange} /></div></>;
 
   const SoundScope = typeof globalThis.AudioContext === 'function' ? SoundEffects : Fragment;
   return <SoundScope><TooltipProvider>

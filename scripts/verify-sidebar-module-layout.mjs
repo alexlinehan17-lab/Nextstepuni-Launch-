@@ -32,13 +32,13 @@ try {
     if (/firestore\.googleapis\.com.*(?:Commit|Write|batchWrite)/i.test(request.url())) writes.push(request.url());
   });
   let frame;
-  async function open(query, width, theme, selector) {
+  async function open(query, width, theme, selector, mobile = width < 768) {
     await page.setViewportSize({ width, height: 1100 });
     await page.goto(`${origin}/sidebar-review.html`);
     await page.locator('iframe').evaluate((iframe, options) => {
-      iframe.setAttribute('data-app-preview', options.width < 768 ? 'mobile' : 'desktop');
+      iframe.setAttribute('data-app-preview', options.mobile ? 'mobile' : 'desktop');
       iframe.src = `/?${options.query}`;
-    }, { query, width });
+    }, { query, mobile });
     frame = await (await page.locator('iframe').elementHandle()).contentFrame();
     await frame.locator(selector).waitFor();
     await frame.evaluate(() => document.fonts.ready);
@@ -54,7 +54,11 @@ try {
       await Promise.all(images.filter(image => !image.src.includes('dicebear')).map(async image => { try { await image.decode(); } catch { /* Existing fallback. */ } }));
     });
     const filename = `${theme}-${width}-${name}.png`;
-    const bytes = await (locator ?? frame.locator('body')).screenshot({ path: resolve(destination, filename), animations: 'disabled' });
+    // A full-height iframe body capture clips content outside the iframe and
+    // produces blank strips. Capture the actual viewport, or the open card.
+    const bytes = locator
+      ? await locator.screenshot({ path: resolve(destination, filename), animations: 'disabled' })
+      : await page.screenshot({ path: resolve(destination, filename), animations: 'disabled' });
     console.log(`NSU_RELEASE_SCREENSHOT ${JSON.stringify({ filename, data: bytes.toString('base64') })}`);
     results.push({ name, width, theme, geometry });
   }
@@ -103,6 +107,9 @@ try {
     await open('view=innovation-zone&tool=war-room', width, theme, '.war-room-workspace');
     await capture('war-room', width, theme);
   }
+  await open('view=tree', 1024, 'dark', '.student-home', true);
+  assert.equal(await frame.locator('.student-sidebar-shell').count(), 0, 'Tablets keep the established mobile app navigation');
+  await capture('tablet-home', 1024, 'dark');
   assert.deepEqual(errors, [], 'No uncaught app errors');
   assert.deepEqual(writes, [], 'Sample account never writes to Firestore');
   console.log(`Passed ${results.length} integrated desktop/phone and theme checks.`);

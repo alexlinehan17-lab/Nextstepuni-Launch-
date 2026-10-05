@@ -28,6 +28,7 @@ import { Eyebrow } from './learning/shared';
 import { requestedModuleSection, clearModuleSectionRequest } from './learning/data';
 import { readSectionIds, readingCheckpoint, resumeSection } from '../utils/moduleReadingProgress';
 import { useModuleResponses } from '../hooks/useModuleResponses';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { ResponseSaveStatus } from './learning/ResponseSaveStatus';
 import './learning/module-reader-preview.css';
 import './learning/sidebar-directions.css';
@@ -104,7 +105,8 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
   const reducedMotion = useReducedMotion();
   const moduleId = navigation.state?.currentModuleId ?? moduleTitle;
   const moduleResponses = useModuleResponses(moduleId);
-  const readingMode = settingsCtx?.settings.essentialsMode ? 'essentials' : 'full';
+  const essentials = useEssentialsMode();
+  const readingMode = essentials ? 'essentials' : 'full';
   const requestedSection = useRef(requestedModuleSection(moduleId));
   const previousMode = useRef(readingMode);
   const focusRequested = useRef(false);
