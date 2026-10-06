@@ -4,22 +4,28 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
-  Link2, Brain, Wand2, Gamepad2, Briefcase, DraftingCompass, Wind, GraduationCap
+Brain,
+Briefcase,DraftingCompass,
+Gamepad2,
+GraduationCap,
+Link2,
+Wand2,
+Wind
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { roseTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ToolJumpCard } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { Cite } from './ModuleReferences';
+import React,{ useEffect,useState } from 'react';
 import { LINKING_STUDY_FUTURE_GOALS_REFERENCE_LIST } from '../data/references/linkingStudyFutureGoals';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useModuleResponses } from '../hooks/useModuleResponses';
 import { useNorthStar } from '../hooks/useNorthStar';
-import NorthStarCallout from './NorthStarCallout';
+import { roseTheme } from '../moduleThemes';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,PersonalStory,ReadingSection,ToolJumpCard } from './ModuleShared';
+import NorthStarCallout from './NorthStarCallout';
 
 const theme = roseTheme;
 
@@ -61,27 +67,27 @@ const WhyBotherAudit = ({ savedSubjects, savedRatings, onSave }: { savedSubjects
     const allRated = ratedSubjects.length === selected.size && selected.size > 0;
 
     const ratingLabels = [
-      { value: 1, label: 'None', desc: 'No connection to my future', color: 'bg-rose-500 text-white' },
-      { value: 2, label: 'Weak', desc: 'Vague connection at best', color: 'bg-amber-500 text-white' },
-      { value: 3, label: 'Some', desc: 'I can see a partial link', color: 'bg-yellow-400 text-zinc-800' },
-      { value: 4, label: 'Strong', desc: 'Clear link to my goals', color: 'bg-emerald-500 text-white' },
+      { value: 1, label: 'None', desc: 'No connection to my future', color: "bg-[var(--module-danger)] text-[var(--module-ink)]" },
+      { value: 2, label: 'Weak', desc: 'Vague connection at best', color: "bg-[var(--module-surface)] text-[var(--module-ink)]" },
+      { value: 3, label: 'Some', desc: 'I can see a partial link', color: "bg-[var(--module-surface)] text-[var(--module-ink)]" },
+      { value: 4, label: 'Strong', desc: 'Clear link to my goals', color: "bg-[var(--module-success)] text-[var(--module-ink)]" },
     ];
 
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Why Bother?" Audit</h4>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Select your subjects, then rate how connected each one feels to your future goals.</p>
+      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The "Why Bother?" Audit</h4>
+        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Select your subjects, then rate how connected each one feels to your future goals.</p>
 
         {/* Subject picker */}
         <div className="mb-6">
-          <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2">Select your subjects (up to 7)</p>
+          <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Select your subjects (up to 7)</p>
           <div className="flex flex-wrap gap-2">
             {subjects.map(s => (
               <button
                 key={s}
                 onClick={() => toggleSubject(s)}
                 className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all`}
-                style={selected.has(s) ? { backgroundColor: '#F43F5E', color: '#FFFFFF', border: '2.5px solid #BE123C', borderRadius: 10, boxShadow: '3px 3px 0px 0px #BE123C' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '3px 3px 0px 0px #1C1917' }}
+                style={selected.has(s) ? { backgroundColor: "var(--module-danger)", color: "var(--module-on-fill)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(selected.has(s))} data-tone="coral" aria-pressed={!!(selected.has(s))}
               >
                 {s}
               </button>
@@ -92,25 +98,25 @@ const WhyBotherAudit = ({ savedSubjects, savedRatings, onSave }: { savedSubjects
         {/* Rating cards */}
         {selected.size > 0 && (
           <div className="space-y-3 mb-6">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Rate each subject — how useful does it feel for your future?</p>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)]">Rate each subject — how useful does it feel for your future?</p>
             {Array.from(selected).map(s => (
               <div
                 key={s}
                 className={`p-4 rounded-xl border transition-all ${
                   ratings[s] !== undefined
                     ? ratings[s] <= 2
-                      ? 'bg-rose-50 dark:bg-rose-950/20 border-rose-200 dark:border-rose-800/40'
-                      : 'bg-emerald-50 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/40'
-                    : 'bg-zinc-50 dark:bg-zinc-900/30 border-zinc-200 dark:border-zinc-700'
+                      ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]"
+                      : "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]"
+                    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"
                 }`}
               >
                 <div className="flex items-center justify-between mb-2.5">
-                  <p className="text-sm font-bold text-zinc-800 dark:text-white">{s}</p>
+                  <p className="text-sm font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{s}</p>
                   {ratings[s] !== undefined && (
                     <motion.span
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      className={`text-[10px] font-bold ${ratings[s] <= 2 ? 'text-rose-500' : 'text-emerald-500'}`}
+                      className={`text-[10px] font-bold ${ratings[s] <= 2 ? "text-[var(--module-danger-text)]" : "text-[var(--module-success-text)]"}`}
                     >
                       {ratings[s] <= 2 ? 'Friction Point' : 'Connected'}
                     </motion.span>
@@ -124,8 +130,8 @@ const WhyBotherAudit = ({ savedSubjects, savedRatings, onSave }: { savedSubjects
                       className={`flex-1 py-1.5 text-[10px] font-bold rounded-lg border transition-all ${
                         ratings[s] === r.value
                           ? `${r.color} border-transparent`
-                          : 'bg-white dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-zinc-400'
-                      }`}
+                          : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-muted)] dark:text-[var(--module-muted)] border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)]"
+                      }`} data-wide-button="true"
                     >
                       {r.label}
                     </button>
@@ -141,21 +147,21 @@ const WhyBotherAudit = ({ savedSubjects, savedRatings, onSave }: { savedSubjects
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="p-5 rounded-xl" style={{ backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4' }}
+            className="p-5 rounded-xl" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)" }}
           >
             {frictionPoints.length > 0 ? (
               <>
-                <p className="text-sm font-semibold text-zinc-800 dark:text-white mb-1">
+                <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-1">
                   You have {frictionPoints.length} friction point{frictionPoints.length > 1 ? 's' : ''}: {frictionPoints.join(', ')}
                 </p>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">
                   These are the subjects where "why bother?" hits hardest. They feel pointless right now, which makes the effort feel unbearable. The rest of this module will help you change that.
                 </p>
               </>
             ) : (
               <>
-                <p className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 mb-1">No friction points detected.</p>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400">You already see strong connections between your subjects and your future. This module will help you strengthen and articulate those connections even further.</p>
+                <p className="text-sm font-semibold text-[var(--module-success-text)] dark:text-[var(--module-success-text)] mb-1">No friction points detected.</p>
+                <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">You already see strong connections between your subjects and your future. This module will help you strengthen and articulate those connections even further.</p>
               </>
             )}
           </motion.div>
@@ -175,22 +181,22 @@ const TransferableSkillsMatrix = () => {
     ];
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Transferable Skills Matrix</h4>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Transferable Skills Matrix</h4>
             <div className="mt-6 flow-root">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
                         <table className="min-w-full divide-y divide-zinc-200">
                             <thead>
                                 <tr>
-                                    <th className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-zinc-900">LC Activity</th>
-                                    <th className="px-3 py-3.5 text-left text-sm font-semibold text-zinc-900">Corporate/Life Skill</th>
-                                    <th className="px-3 py-3.5 text-left text-sm font-semibold text-zinc-900">Career Application</th>
+                                    <th className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-[var(--module-ink)]">LC Activity</th>
+                                    <th className="px-3 py-3.5 text-left text-sm font-semibold text-[var(--module-ink)]">Corporate/Life Skill</th>
+                                    <th className="px-3 py-3.5 text-left text-sm font-semibold text-[var(--module-ink)]">Career Application</th>
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-zinc-100">
                                 {skills.map(item => (
-                                    <tr key={item.activity} onMouseEnter={() => setActiveRow(item.activity)} onMouseLeave={() => setActiveRow(null)} className="hover:bg-rose-50 cursor-pointer">
+                                    <tr key={item.activity} onMouseEnter={() => setActiveRow(item.activity)} onMouseLeave={() => setActiveRow(null)} className="hover:bg-[var(--module-danger-soft)] cursor-pointer">
                                         <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium">{item.activity}</td>
                                         <td className="whitespace-nowrap px-3 py-4 text-sm font-medium">{item.skill}</td>
                                         <td className="whitespace-nowrap px-3 py-4 text-sm font-medium">{item.application}</td>
@@ -323,40 +329,40 @@ const LinkingStudyFutureGoalsModule: React.FC<{ onBack: () => void; progress: Mo
               </>) : (<>
               <p>You now have the tools to rebuild the connection between what you're doing today and where you want to be. This is the <strong>Purpose Protocol</strong> -- a 5-phase plan for building motivation that actually lasts.</p>
               </>)}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Phase 1: The Audit</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>For each subject, ask "Why am I doing this?" If the only answer is "points," that's a friction point. Do the Utility Value Writing exercise on it.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Phase 1: The Audit</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>For each subject, ask "Why am I doing this?" If the only answer is "points," that's a friction point. Do the Utility Value Writing exercise on it.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Phase 2: The Vision</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Spend 15 minutes writing a detailed picture of your "Best Possible Self" 5 years from now. Then pair that vision with your biggest real obstacle.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Phase 2: The Vision</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Spend 15 minutes writing a detailed picture of your "Best Possible Self" 5 years from now. Then pair that vision with your biggest real obstacle.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Phase 3: The Craft</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Find one assignment this week and "course craft" it -- put your own spin on it so it feels like yours.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Phase 3: The Craft</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Find one assignment this week and "course craft" it -- put your own spin on it so it feels like yours.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-success)" }}>4</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Phase 4: The Habit</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>Make starting so small it's impossible to fail. One page. One question. Just begin.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>Phase 4: The Habit</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-success-text)", opacity: 0.8 }}>Make starting so small it's impossible to fail. One page. One question. Just begin.</p>
                   </div>
                 </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>5</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>5</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Phase 5: Re-Authoring</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>If you feel stuck, step back from the problem ("The stress is visiting me, it's not who I am") and think about skills you use in other areas of your life -- gaming, sports, whatever -- and how they apply to your schoolwork.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Phase 5: Re-Authoring</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>If you feel stuck, step back from the problem ("The stress is visiting me, it's not who I am") and think about skills you use in other areas of your life -- gaming, sports, whatever -- and how they apply to your schoolwork.</p>
                   </div>
                 </div>
               </div>

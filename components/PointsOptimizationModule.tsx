@@ -3,21 +3,29 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { MotionDiv } from './Motion';
 import {
-  TrendingDown, Calculator, BarChart3, Scale, GitBranch, Layers, Target,
-  ChevronDown, AlertTriangle, CheckCircle2, Minus, Plus
+AlertTriangle,
+BarChart3,
+Calculator,
+CheckCircle2,
+ChevronDown,
+GitBranch,Layers,
+Minus,Plus,
+Scale,
+Target,
+TrendingDown
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
+import React,{ useEffect,useMemo,useState } from 'react';
+import { POINTS_OPTIMIZATION_REFERENCE_LIST } from '../data/references/pointsOptimization';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { useModuleResponses } from '../hooks/useModuleResponses';
 import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ToolJumpCard } from './ModuleShared';
+import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
-import { POINTS_OPTIMIZATION_REFERENCE_LIST } from '../data/references/pointsOptimization';
-import { useModuleResponses } from '../hooks/useModuleResponses';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { Highlight,MicroCommitment,PersonalStory,ReadingSection,ToolJumpCard } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = redTheme;
 
@@ -76,9 +84,9 @@ const GradeWaterfall = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Grade Waterfall Calculator</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Change the grades below and watch your points total respond. Notice how steep the H1→H2 cliff is.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Grade Waterfall Calculator</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Change the grades below and watch your points total respond. Notice how steep the H1→H2 cliff is.</p>
 
       <div className="space-y-3 mb-8">
         {defaultSubjects.map((subj, idx) => {
@@ -88,21 +96,21 @@ const GradeWaterfall = () => {
 
           return (
             <div key={subj} className="flex items-center gap-3">
-              <span className="w-28 text-xs font-semibold text-zinc-500 dark:text-zinc-400 shrink-0 truncate">{subj}{isMaths ? ' *' : ''}</span>
+              <span className="w-28 text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] shrink-0 truncate">{subj}{isMaths ? ' *' : ''}</span>
               <select
                 value={grades[idx]}
                 onChange={(e) => setGrade(idx, e.target.value)}
-                className="px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-sm font-medium text-zinc-900 dark:text-white"
+                className="px-3 py-2 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]"
               >
                 {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
               </select>
-              <div className="flex-grow h-8 bg-zinc-100 dark:bg-zinc-800 rounded-lg overflow-hidden relative">
+              <div className="flex-grow h-8 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg overflow-hidden relative">
                 <motion.div
-                  className={`h-full rounded-lg ${isH1 ? 'bg-emerald-500' : grades[idx] === 'H2' ? 'bg-amber-400' : 'bg-red-400'}`}
+                  className={`h-full rounded-lg ${isH1 ? "bg-[var(--module-success)]" : grades[idx] === 'H2' ? "bg-[var(--module-surface)]" : "bg-[var(--module-danger)]"}`}
                   animate={{ width: `${(pts / 125) * 100}%` }}
                   transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 />
-                <span className="absolute inset-0 flex items-center justify-end pr-3 text-xs font-bold text-zinc-700 dark:text-zinc-300">
+                <span className="absolute inset-0 flex items-center justify-end pr-3 text-xs font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)]">
                   {pts} pts{isMaths && grades[idx] !== 'H7' && grades[idx] !== 'H8' ? ' (incl. +25)' : ''}
                 </span>
               </div>
@@ -111,19 +119,19 @@ const GradeWaterfall = () => {
         })}
       </div>
 
-      <div className="flex items-center justify-between p-5 rounded-xl" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>
+      <div className="flex items-center justify-between p-5 rounded-xl" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", boxShadow: 'none', color: "var(--module-success-text)" }}>
         <div>
           <p className="text-[10px] font-semibold uppercase tracking-wider opacity-60">Best 6 Total</p>
           <p className="text-3xl font-bold font-mono">{total}<span className="text-lg opacity-50">/{maxTotal}</span></p>
         </div>
         <div className="text-right">
           <p className="text-[10px] font-semibold uppercase tracking-wider opacity-60">Points Lost</p>
-          <p className={`text-3xl font-bold font-mono ${total < maxTotal ? 'text-red-400' : 'text-emerald-400'}`}>
+          <p className={`text-3xl font-bold font-mono ${total < maxTotal ? "text-[var(--module-danger-text)]" : "text-[var(--module-success-text)]"}`}>
             {total < maxTotal ? `-${maxTotal - total}` : '0'}
           </p>
         </div>
       </div>
-      <p className="text-[10px] text-zinc-400 mt-3 text-center">* Mathematics includes the 25-point Higher Level bonus for grades H1–H6.</p>
+      <p className="text-[10px] text-[var(--module-muted)] mt-3 text-center">* Mathematics includes the 25-point Higher Level bonus for grades H1–H6.</p>
     </div>
   );
 };
@@ -138,19 +146,19 @@ const MathsBonusVisualizer = () => {
   const otherPts = GRADE_POINTS[otherGrade] || 0;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">The Maths Bonus Amplifier</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Compare HL Maths (with bonus) to any other subject. See how much difference the 25-point bonus actually makes.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Maths Bonus Amplifier</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Compare HL Maths (with bonus) to any other subject. See how much difference the 25-point bonus actually makes.</p>
 
       <div className="grid grid-cols-2 gap-6">
         <div className="text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 mb-3">HL Mathematics</p>
+          <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-3">HL Mathematics</p>
           <select value={mathsGrade} onChange={e => setMathsGrade(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-lg font-bold text-center text-zinc-900 dark:text-white mb-4">
+            className="w-full px-4 py-3 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-lg font-bold text-center text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-4">
             {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
           </select>
           <motion.div
-            className="mx-auto w-24 h-24 rounded-2xl bg-emerald-500 text-white flex flex-col items-center justify-center"
+            className="mx-auto w-24 h-24 rounded-2xl bg-[var(--module-success)] text-[var(--module-ink)] flex flex-col items-center justify-center"
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 0.3 }}
             key={mathsGrade}
@@ -158,27 +166,27 @@ const MathsBonusVisualizer = () => {
             <span className="text-2xl font-bold font-mono">{mathsPts}</span>
             <span className="text-[9px] font-semibold opacity-70">POINTS</span>
           </motion.div>
-          <p className="text-xs text-zinc-400 mt-3">{GRADE_POINTS[mathsGrade]}{['H1','H2','H3','H4','H5','H6'].includes(mathsGrade) ? ' + 25 bonus' : ''}</p>
+          <p className="text-xs text-[var(--module-muted)] mt-3">{GRADE_POINTS[mathsGrade]}{['H1','H2','H3','H4','H5','H6'].includes(mathsGrade) ? ' + 25 bonus' : ''}</p>
         </div>
 
         <div className="text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 mb-3">Any Other Subject</p>
+          <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-3">Any Other Subject</p>
           <select value={otherGrade} onChange={e => setOtherGrade(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-lg font-bold text-center text-zinc-900 dark:text-white mb-4">
+            className="w-full px-4 py-3 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-lg font-bold text-center text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-4">
             {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
           </select>
           <motion.div
-            className="mx-auto w-24 h-24 rounded-2xl bg-zinc-200 dark:bg-zinc-700 text-zinc-900 dark:text-white flex flex-col items-center justify-center"
+            className="mx-auto w-24 h-24 rounded-2xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] flex flex-col items-center justify-center"
             key={otherGrade}
           >
             <span className="text-2xl font-bold font-mono">{otherPts}</span>
             <span className="text-[9px] font-semibold opacity-70">POINTS</span>
           </motion.div>
-          <p className="text-xs text-zinc-400 mt-3">{GRADE_POINTS[otherGrade]} points (no bonus)</p>
+          <p className="text-xs text-[var(--module-muted)] mt-3">{GRADE_POINTS[otherGrade]} points (no bonus)</p>
         </div>
       </div>
 
-      <div className={`mt-6 p-4 rounded-xl text-center text-sm font-medium ${mathsPts >= otherPts ? 'bg-emerald-50 text-emerald-800 dark:bg-emerald-900/20 dark:text-emerald-300' : 'bg-red-50 text-red-800 dark:bg-red-900/20 dark:text-red-300'}`}>
+      <div className={`mt-6 p-4 rounded-xl text-center text-sm font-medium ${mathsPts >= otherPts ? "bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:bg-[var(--module-success-soft)] dark:text-[var(--module-success-text)]" : "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:bg-[var(--module-danger-soft)] dark:text-[var(--module-danger-text)]"}`}>
         {mathsPts >= otherPts
           ? `A ${mathsGrade} in Maths (${mathsPts} pts) is worth ${mathsPts - otherPts > 0 ? `${mathsPts - otherPts} points MORE than` : 'the same as'} a ${otherGrade} in any other subject (${otherPts} pts).`
           : `A ${otherGrade} in another subject (${otherPts} pts) beats a ${mathsGrade} in Maths (${mathsPts} pts) by ${otherPts - mathsPts} points.`
@@ -205,21 +213,21 @@ const H1RateDashboard = () => {
   const maxRate = Math.max(...SUBJECTS_DATA.map(s => s.h1Rate));
 
   const getRiskColor = (rate: number) => {
-    if (rate >= 15) return 'bg-emerald-500';
-    if (rate >= 10) return 'bg-amber-400';
-    return 'bg-red-400';
+    if (rate >= 15) return "bg-[var(--module-success)]";
+    if (rate >= 10) return "bg-[var(--module-surface)]";
+    return "bg-[var(--module-danger)]";
   };
 
   const getRiskLabel = (rate: number) => {
-    if (rate >= 15) return { text: 'High Yield', color: 'text-emerald-600 bg-emerald-50 dark:text-emerald-400 dark:bg-emerald-900/20' };
-    if (rate >= 10) return { text: 'Moderate', color: 'text-amber-600 bg-amber-50 dark:text-amber-400 dark:bg-amber-900/20' };
-    return { text: 'Low Yield', color: 'text-red-600 bg-red-50 dark:text-red-400 dark:bg-red-900/20' };
+    if (rate >= 15) return { text: 'High Yield', color: "text-[var(--module-success-text)] bg-[var(--module-success-soft)] dark:text-[var(--module-success-text)] dark:bg-[var(--module-success-soft)]" };
+    if (rate >= 10) return { text: 'Moderate', color: "text-[var(--module-ink)] bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:bg-[var(--module-surface)]" };
+    return { text: 'Low Yield', color: "text-[var(--module-danger-text)] bg-[var(--module-danger-soft)] dark:text-[var(--module-danger-text)] dark:bg-[var(--module-danger-soft)]" };
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Subject H1 Rate Dashboard</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Indicative H1 rates (illustrative, not official SEC figures). Sort to compare which subjects tend to have higher H1 rates.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Subject H1 Rate Dashboard</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Indicative H1 rates (illustrative, not official SEC figures). Sort to compare which subjects tend to have higher H1 rates.</p>
 
       <div className="flex justify-center gap-2 mb-6">
         {[
@@ -229,7 +237,7 @@ const H1RateDashboard = () => {
         ].map(opt => (
           <button key={opt.key} onClick={() => setSortBy(opt.key as any)}
             className="px-3 py-1.5 text-xs font-semibold transition-all"
-            style={sortBy === opt.key ? { backgroundColor: '#1C1917', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '2px 2px 0px 0px #44403C', color: '#FFFFFF' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '2px 2px 0px 0px #1C1917', color: '#1C1917' }}>
+            style={sortBy === opt.key ? { backgroundColor: "var(--module-solid)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none', color: "var(--module-on-fill)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true" data-selected={!!(sortBy === opt.key)} data-tone="orange" aria-pressed={!!(sortBy === opt.key)}>
             {opt.label}
           </button>
         ))}
@@ -246,15 +254,15 @@ const H1RateDashboard = () => {
               transition={{ delay: idx * 0.02 }}
               className="flex items-center gap-3 py-2"
             >
-              <span className="w-32 text-xs font-semibold text-zinc-700 dark:text-zinc-300 shrink-0 truncate">{subj.name}</span>
-              <div className="flex-grow h-6 bg-zinc-100 dark:bg-zinc-800 rounded-md overflow-hidden relative">
+              <span className="w-32 text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] shrink-0 truncate">{subj.name}</span>
+              <div className="flex-grow h-6 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-md overflow-hidden relative">
                 <motion.div
                   className={`h-full rounded-md ${getRiskColor(subj.h1Rate)}`}
                   initial={{ width: 0 }}
                   animate={{ width: `${(subj.h1Rate / maxRate) * 100}%` }}
                   transition={{ duration: 0.5, delay: idx * 0.02 }}
                 />
-                <span className="absolute inset-0 flex items-center pl-2 text-[11px] font-bold text-white mix-blend-difference">{subj.h1Rate}%</span>
+                <span className="absolute inset-0 flex items-center pl-2 text-[11px] font-bold text-[var(--module-ink)] mix-blend-difference">{subj.h1Rate}%</span>
               </div>
               <span className={`px-2 py-0.5 rounded text-[9px] font-semibold shrink-0 ${risk.color}`}>{risk.text}</span>
             </MotionDiv>
@@ -263,11 +271,11 @@ const H1RateDashboard = () => {
       </div>
 
       {!showAll && (
-        <button onClick={() => setShowAll(true)} className="mt-4 w-full py-2 text-xs font-semibold text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 flex items-center justify-center gap-1 transition-colors">
+        <button onClick={() => setShowAll(true)} className="mt-4 w-full py-2 text-xs font-semibold text-[var(--module-muted)] hover:text-[var(--module-ink)] dark:hover:text-[var(--module-muted)] flex items-center justify-center gap-1 transition-colors" data-wide-button="true">
           Show all {SUBJECTS_DATA.length} subjects <ChevronDown size={14} />
         </button>
       )}
-      <p className="text-[10px] text-zinc-400 mt-4 text-center leading-relaxed">Illustrative relative estimates of recent SEC Leaving Certificate (Higher Level) H1 rates — for ranking subjects, not official published figures. Rates vary a lot year to year (and rose sharply post-2020); check the current SEC examination statistics for exact numbers.</p>
+      <p className="text-[10px] text-[var(--module-muted)] mt-4 text-center leading-relaxed">Illustrative relative estimates of recent SEC Leaving Certificate (Higher Level) H1 rates — for ranking subjects, not official published figures. Rates vary a lot year to year (and rose sharply post-2020); check the current SEC examination statistics for exact numbers.</p>
     </div>
   );
 };
@@ -279,22 +287,22 @@ const ObjectivitySpectrum = () => {
   const sorted = [...SUBJECTS_DATA].sort((a, b) => b.objectivity - a.objectivity);
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">The Objectivity Spectrum</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Where does each subject fall between "right/wrong" and "examiner's discretion"?</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Objectivity Spectrum</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Where does each subject fall between "right/wrong" and "examiner's discretion"?</p>
 
       {!revealed ? (
         <div className="text-center py-8">
-          <p className="text-sm text-zinc-500 mb-4">Before you see the data — think about your own subjects. Which do you think have the most objective marking?</p>
+          <p className="text-sm text-[var(--module-muted)] mb-4">Before you see the data — think about your own subjects. Which do you think have the most objective marking?</p>
           <button onClick={() => setRevealed(true)}
             className="px-6 py-3 text-sm font-semibold transition-all"
-            style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>
+            style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true">
             Reveal the Spectrum
           </button>
         </div>
       ) : (
         <div className="space-y-1.5">
-          <div className="flex justify-between text-[9px] font-semibold uppercase tracking-wider text-zinc-400 mb-3 px-1">
+          <div className="flex justify-between text-[9px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-3 px-1">
             <span>Pure Objective (Right/Wrong)</span>
             <span>Pure Subjective (Discretion)</span>
           </div>
@@ -304,22 +312,22 @@ const ObjectivitySpectrum = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: idx * 0.03 }}
-              className="relative h-8 bg-zinc-100 dark:bg-zinc-800 rounded-md overflow-hidden"
+              className="relative h-8 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-md overflow-hidden"
             >
               <div className="absolute inset-0 flex items-center px-3 justify-between z-10">
-                <span className="text-[11px] font-semibold text-zinc-700 dark:text-zinc-300">{subj.name}</span>
-                <span className="text-[10px] font-bold text-zinc-500">{subj.objectivity}%</span>
+                <span className="text-[11px] font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{subj.name}</span>
+                <span className="text-[10px] font-bold text-[var(--module-muted)]">{subj.objectivity}%</span>
               </div>
               <motion.div
-                className="h-full bg-gradient-to-r from-emerald-400/30 to-transparent"
+                className="h-full bg-[var(--module-orange)] from-[var(--module-orange)] to-transparent"
                 initial={{ width: 0 }}
                 animate={{ width: `${subj.objectivity}%` }}
                 transition={{ duration: 0.6, delay: idx * 0.03 }}
               />
             </MotionDiv>
           ))}
-          <div className="mt-4 p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
-            <strong className="text-zinc-900 dark:text-white">The pattern is clear:</strong> STEM subjects and Maths sit at the objective end — a right answer gets full marks, no question. Humanities and Arts sit at the subjective end, where different examiners might give different marks. If you want to reduce surprise on exam day, having more objective subjects in your mix helps.
+          <div className="mt-4 p-4 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-xs text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-relaxed">
+            <strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">The pattern is clear:</strong> STEM subjects and Maths sit at the objective end — a right answer gets full marks, no question. Humanities and Arts sit at the subjective end, where different examiners might give different marks. If you want to reduce surprise on exam day, having more objective subjects in your mix helps.
           </div>
         </div>
       )}
@@ -365,33 +373,33 @@ const SynergyMap = ({ savedSubjects, onSave }: { savedSubjects?: string[]; onSav
   }, [selected]);
 
   const groupColors: Record<string, string> = {
-    'maths': 'bg-blue-100 text-blue-700 border-blue-200 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-800',
-    'stem': 'bg-emerald-100 text-emerald-700 border-emerald-200 dark:bg-emerald-900/20 dark:text-emerald-400 dark:border-emerald-800',
-    'life-science': 'bg-lime-100 text-lime-700 border-lime-200 dark:bg-lime-900/20 dark:text-lime-400 dark:border-lime-800',
-    'language': 'bg-purple-100 text-purple-700 border-purple-200 dark:bg-purple-900/20 dark:text-purple-400 dark:border-purple-800',
-    'business': 'bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-900/20 dark:text-amber-400 dark:border-amber-800',
-    'humanities': 'bg-rose-100 text-rose-700 border-rose-200 dark:bg-rose-900/20 dark:text-rose-400 dark:border-rose-800',
-    'practical': 'bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-900/20 dark:text-orange-400 dark:border-orange-800',
-    'creative': 'bg-pink-100 text-pink-700 border-pink-200 dark:bg-pink-900/20 dark:text-pink-400 dark:border-pink-800',
+    'maths': "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:border-[var(--module-line)]",
+    'stem': "bg-[var(--module-success-soft)] text-[var(--module-success-text)] border-[var(--module-line)] dark:bg-[var(--module-success-soft)] dark:text-[var(--module-success-text)] dark:border-[var(--module-line)]",
+    'life-science': "bg-[var(--module-success-soft)] text-[var(--module-success-text)] border-[var(--module-line)] dark:bg-[var(--module-success-soft)] dark:text-[var(--module-success-text)] dark:border-[var(--module-line)]",
+    'language': "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:border-[var(--module-line)]",
+    'business': "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:border-[var(--module-line)]",
+    'humanities': "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] border-[var(--module-line)] dark:bg-[var(--module-danger-soft)] dark:text-[var(--module-danger-text)] dark:border-[var(--module-line)]",
+    'practical': "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:border-[var(--module-line)]",
+    'creative': "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)] dark:border-[var(--module-line)]",
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Subject Overlap Map</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Select up to 7 subjects and see which share overlapping content — study one, benefit in another.</p>
-      <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-6">{selected.length}/7 selected</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Subject Overlap Map</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Select up to 7 subjects and see which share overlapping content — study one, benefit in another.</p>
+      <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">{selected.length}/7 selected</p>
 
       <div className="flex flex-wrap justify-center gap-2 mb-6">
         {SUBJECTS_DATA.map(subj => {
           const isSelected = selected.includes(subj.name);
-          const group = groupColors[subj.group] || 'bg-zinc-100 text-zinc-600 border-zinc-200';
+          const group = groupColors[subj.group] || "bg-[var(--module-surface)] text-[var(--module-ink)] border-[var(--module-line)]";
           return (
             <button
               key={subj.name}
               onClick={() => toggleSubject(subj.name)}
               className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition-all ${
-                isSelected ? group : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-500 border-zinc-200 dark:border-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600'
-              }`}
+                isSelected ? group : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-muted)] dark:text-[var(--module-muted)] border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)] dark:hover:border-[var(--module-line)]"
+              }`} data-wide-button="true"
             >
               {subj.name}{subj.isMaths ? ' *' : ''}
             </button>
@@ -400,25 +408,25 @@ const SynergyMap = ({ savedSubjects, onSave }: { savedSubjects?: string[]; onSav
       </div>
 
       {selected.length > 0 && (
-        <div className="p-5 rounded-xl bg-zinc-50 dark:bg-zinc-800">
+        <div className="p-5 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
           <div className="flex items-center justify-between mb-3">
-            <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">Overlapping Subjects</p>
-            <p className="text-sm font-bold text-zinc-900 dark:text-white">{activeSynergies.length} found</p>
+            <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)]">Overlapping Subjects</p>
+            <p className="text-sm font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{activeSynergies.length} found</p>
           </div>
           {activeSynergies.length > 0 ? (
             <div className="space-y-2">
               {activeSynergies.map((link, i) => (
                 <MotionDiv key={i} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.05 }}
                   className="flex items-center gap-2 text-sm">
-                  <span className="font-semibold text-zinc-700 dark:text-zinc-300">{link.from}</span>
-                  <span className="text-zinc-300 dark:text-zinc-600">↔</span>
-                  <span className="font-semibold text-zinc-700 dark:text-zinc-300">{link.to}</span>
-                  <CheckCircle2 size={14} className="text-emerald-500 ml-auto shrink-0" />
+                  <span className="font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{link.from}</span>
+                  <span className="text-[var(--module-muted)] dark:text-[var(--module-ink)]"></span>
+                  <span className="font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{link.to}</span>
+                  <CheckCircle2 size={14} className="text-[var(--module-success-text)] ml-auto shrink-0" />
                 </MotionDiv>
               ))}
             </div>
           ) : (
-            <p className="text-xs text-zinc-400 text-center py-4">No overlap between your selected subjects yet. Try adding STEM or language pairs.</p>
+            <p className="text-xs text-[var(--module-muted)] text-center py-4">No overlap between your selected subjects yet. Try adding STEM or language pairs.</p>
           )}
         </div>
       )}
@@ -438,69 +446,69 @@ const SurplusCalculator = () => {
   const safetyMargin = surplusPoints > 0 ? Math.round((surplusPoints / requiredPoints) * 100) : 0;
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">The Surplus Rule Calculator</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Marking schemes often accept more valid answers than the question needs. Calculate your safety margin.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Surplus Rule Calculator</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Marking schemes often accept more valid answers than the question needs. Calculate your safety margin.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div>
-          <label className="block text-[10px] font-semibold uppercase tracking-wider text-zinc-500 mb-2">Question Worth</label>
+          <label className="block text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-2">Question Worth</label>
           <div className="flex items-center gap-2">
-            <button aria-label="Decrease" onClick={() => setQuestionMarks(Math.max(5, questionMarks - 5))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Minus size={14} /></button>
-            <span className="text-2xl font-bold font-mono text-zinc-900 dark:text-white w-16 text-center">{questionMarks}</span>
-            <button aria-label="Increase" onClick={() => setQuestionMarks(Math.min(100, questionMarks + 5))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Plus size={14} /></button>
-            <span className="text-xs text-zinc-400">marks</span>
+            <button aria-label="Decrease" onClick={() => setQuestionMarks(Math.max(5, questionMarks - 5))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Minus size={14} /></button>
+            <span className="text-2xl font-bold font-mono text-[var(--module-ink)] dark:text-[var(--module-ink)] w-16 text-center">{questionMarks}</span>
+            <button aria-label="Increase" onClick={() => setQuestionMarks(Math.min(100, questionMarks + 5))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Plus size={14} /></button>
+            <span className="text-xs text-[var(--module-muted)]">marks</span>
           </div>
         </div>
         <div>
-          <label className="block text-[10px] font-semibold uppercase tracking-wider text-zinc-500 mb-2">Marks per Point</label>
+          <label className="block text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-2">Marks per Point</label>
           <div className="flex items-center gap-2">
-            <button aria-label="Decrease" onClick={() => setMarksPerPoint(Math.max(1, marksPerPoint - 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Minus size={14} /></button>
-            <span className="text-2xl font-bold font-mono text-zinc-900 dark:text-white w-16 text-center">{marksPerPoint}</span>
-            <button aria-label="Increase" onClick={() => setMarksPerPoint(Math.min(10, marksPerPoint + 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Plus size={14} /></button>
-            <span className="text-xs text-zinc-400">each</span>
+            <button aria-label="Decrease" onClick={() => setMarksPerPoint(Math.max(1, marksPerPoint - 1))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Minus size={14} /></button>
+            <span className="text-2xl font-bold font-mono text-[var(--module-ink)] dark:text-[var(--module-ink)] w-16 text-center">{marksPerPoint}</span>
+            <button aria-label="Increase" onClick={() => setMarksPerPoint(Math.min(10, marksPerPoint + 1))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Plus size={14} /></button>
+            <span className="text-xs text-[var(--module-muted)]">each</span>
           </div>
         </div>
         <div>
-          <label className="block text-[10px] font-semibold uppercase tracking-wider text-zinc-500 mb-2">Points You Write</label>
+          <label className="block text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-2">Points You Write</label>
           <div className="flex items-center gap-2">
-            <button aria-label="Decrease" onClick={() => setPointsWritten(Math.max(1, pointsWritten - 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Minus size={14} /></button>
-            <span className="text-2xl font-bold font-mono text-zinc-900 dark:text-white w-16 text-center">{pointsWritten}</span>
-            <button aria-label="Increase" onClick={() => setPointsWritten(Math.min(20, pointsWritten + 1))} className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800"><Plus size={14} /></button>
-            <span className="text-xs text-zinc-400">SRPs</span>
+            <button aria-label="Decrease" onClick={() => setPointsWritten(Math.max(1, pointsWritten - 1))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Minus size={14} /></button>
+            <span className="text-2xl font-bold font-mono text-[var(--module-ink)] dark:text-[var(--module-ink)] w-16 text-center">{pointsWritten}</span>
+            <button aria-label="Increase" onClick={() => setPointsWritten(Math.min(20, pointsWritten + 1))} className="p-2 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" data-wide-button="true"><Plus size={14} /></button>
+            <span className="text-xs text-[var(--module-muted)]">SRPs</span>
           </div>
         </div>
       </div>
 
       <div className="grid grid-cols-3 gap-4">
-        <div className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800 text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 mb-1">Required</p>
-          <p className="text-xl font-bold text-zinc-900 dark:text-white">{requiredPoints} SRPs</p>
+        <div className="p-4 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center">
+          <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-1">Required</p>
+          <p className="text-xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{requiredPoints} SRPs</p>
         </div>
-        <div className={`p-4 rounded-xl text-center ${surplusPoints > 0 ? 'bg-emerald-50 dark:bg-emerald-900/20' : 'bg-red-50 dark:bg-red-900/20'}`}>
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 mb-1">Surplus</p>
-          <p className={`text-xl font-bold ${surplusPoints > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-600 dark:text-red-400'}`}>
+        <div className={`p-4 rounded-xl text-center ${surplusPoints > 0 ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)]" : "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)]"}`}>
+          <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-1">Surplus</p>
+          <p className={`text-xl font-bold ${surplusPoints > 0 ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}>
             {surplusPoints > 0 ? `+${surplusPoints}` : surplusPoints}
           </p>
         </div>
-        <div className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-800 text-center">
-          <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 mb-1">Safety</p>
-          <p className="text-xl font-bold text-zinc-900 dark:text-white">{safetyMargin}%</p>
+        <div className="p-4 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center">
+          <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--module-muted)] mb-1">Safety</p>
+          <p className="text-xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{safetyMargin}%</p>
         </div>
       </div>
 
       {surplusPoints >= 2 && (
-        <p className="mt-4 text-xs text-emerald-600 dark:text-emerald-400 text-center font-medium">
+        <p className="mt-4 text-xs text-[var(--module-success-text)] dark:text-[var(--module-success-text)] text-center font-medium">
           Strong surplus. Even if {surplusPoints} of your points are rejected, you still get full marks.
         </p>
       )}
       {surplusPoints >= 0 && surplusPoints < 2 && (
-        <p className="mt-4 text-xs text-amber-600 dark:text-amber-400 text-center font-medium">
+        <p className="mt-4 text-xs text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center font-medium">
           Thin margin. Add {2 - surplusPoints} more points to build a safe buffer.
         </p>
       )}
       {surplusPoints < 0 && (
-        <p className="mt-4 text-xs text-red-600 dark:text-red-400 text-center font-medium">
+        <p className="mt-4 text-xs text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] text-center font-medium">
           You're writing fewer points than required. You will lose marks. Write at least {requiredPoints + 2} SRPs.
         </p>
       )}
@@ -570,21 +578,21 @@ const PortfolioOptimizer = ({ savedPortfolio, onSave }: { savedPortfolio?: { sub
   const availableSubjects = SUBJECTS_DATA.map(s => s.name);
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Your Portfolio Optimizer</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Enter your 7 subjects and your current realistic grade expectation. Get a personalized risk report.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Portfolio Optimizer</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Enter your 7 subjects and your current realistic grade expectation. Get a personalized risk report.</p>
 
       <div className="space-y-3 mb-8">
         {portfolio.map((item, idx) => (
           <div key={idx} className="flex items-center gap-3">
-            <span className="text-xs font-bold text-zinc-400 w-4 shrink-0">{idx + 1}</span>
+            <span className="text-xs font-bold text-[var(--module-muted)] w-4 shrink-0">{idx + 1}</span>
             <select value={item.subject} onChange={e => updateSubject(idx, e.target.value)}
-              className="flex-grow px-3 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-sm font-medium text-zinc-900 dark:text-white">
+              className="flex-grow px-3 py-2 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]">
               <option value="">Select subject...</option>
               {availableSubjects.map(s => <option key={s} value={s}>{s}{s === 'Mathematics' ? ' (+ bonus)' : ''}</option>)}
             </select>
             <select value={item.confidence} onChange={e => updateConfidence(idx, e.target.value)}
-              className="w-20 px-2 py-2 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-800 text-sm font-bold text-center text-zinc-900 dark:text-white">
+              className="w-20 px-2 py-2 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-sm font-bold text-center text-[var(--module-ink)] dark:text-[var(--module-ink)]">
               {GRADES.map(g => <option key={g} value={g}>{g}</option>)}
             </select>
           </div>
@@ -592,7 +600,7 @@ const PortfolioOptimizer = ({ savedPortfolio, onSave }: { savedPortfolio?: { sub
       </div>
 
       {analysis.filledCount >= 4 && (
-        <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="p-6 rounded-xl" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' }}>
+        <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="p-6 rounded-xl" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", boxShadow: 'none', color: "var(--module-success-text)" }}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
             <div className="text-center">
               <p className="text-[9px] font-semibold uppercase tracking-wider opacity-60">Projected Points</p>
@@ -608,15 +616,15 @@ const PortfolioOptimizer = ({ savedPortfolio, onSave }: { savedPortfolio?: { sub
             </div>
             <div className="text-center">
               <p className="text-[9px] font-semibold uppercase tracking-wider opacity-60">Gap to 625</p>
-              <p className={`text-2xl font-bold font-mono ${analysis.totalPts >= 625 ? 'text-emerald-400' : 'text-red-400'}`}>
+              <p className={`text-2xl font-bold font-mono ${analysis.totalPts >= 625 ? "text-[var(--module-success-text)]" : "text-[var(--module-danger-text)]"}`}>
                 {analysis.totalPts >= 625 ? '0' : `-${625 - analysis.totalPts}`}
               </p>
             </div>
           </div>
 
           {analysis.riskSubjects.length > 0 && (
-            <div className="flex items-start gap-2 p-3 rounded-lg bg-white/10 dark:bg-zinc-900/10">
-              <AlertTriangle size={16} className="shrink-0 mt-0.5 text-amber-400" />
+            <div className="flex items-start gap-2 p-3 rounded-lg bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+              <AlertTriangle size={16} className="shrink-0 mt-0.5 text-[var(--module-ink)]" />
               <p className="text-xs leading-relaxed opacity-80">
                 <strong>Watch out for these:</strong> {analysis.riskSubjects.map(s => s.subject).join(', ')}. These have subjective marking — your grade could depend on which examiner reads your paper. Put extra time into learning exactly what the marking scheme rewards for these subjects.
               </p>

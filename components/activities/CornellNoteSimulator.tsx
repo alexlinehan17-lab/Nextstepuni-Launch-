@@ -1,4 +1,4 @@
-import React, { useId, useState } from 'react';
+import { useId,useState } from 'react';
 
 export default function CornellNoteSimulator() {
   const fieldId = useId();
@@ -66,41 +66,41 @@ export default function CornellNoteSimulator() {
   const feedback = showFeedback ? getFeedback() : [];
   const allSuccess = feedback.length > 0 && feedback.every((f) => f.type === 'success');
 
-  const fieldClass = "mt-3 min-h-36 w-full resize-y rounded-lg border border-zinc-300 bg-white p-3 text-base leading-relaxed text-zinc-900 placeholder:text-zinc-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B54D14] dark:border-zinc-600 dark:bg-zinc-950 dark:text-white";
-  return <section className="my-10 font-sans text-zinc-900 dark:text-zinc-100" aria-labelledby={`${fieldId}-title`}>
-    <p className="mb-2 text-xs font-bold uppercase tracking-widest text-[#B54D14] dark:text-orange-400">Try it · Put notes to work</p>
+  const fieldClass = "mt-3 min-h-36 w-full resize-y rounded-lg border border-[var(--module-line)] bg-[var(--module-surface)] p-3 text-base leading-relaxed text-[var(--module-ink)] placeholder:text-[var(--module-muted)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B54D14] dark:border-[var(--module-line)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)]";
+  return <section className="my-10 font-sans text-[var(--module-ink)] dark:text-[var(--module-muted)]" aria-labelledby={`${fieldId}-title`}>
+    <p className="mb-2 text-xs font-bold uppercase tracking-widest text-[var(--module-danger-text)] dark:text-[var(--module-ink)]">Try it · Put notes to work</p>
     <h4 id={`${fieldId}-title`} className="font-serif text-3xl font-semibold">Cornell Note Simulator</h4>
-    <p className="mt-2 mb-6 text-base leading-relaxed text-zinc-600 dark:text-zinc-300">Practice the Cornell Method on a real concept. Paraphrase, question, summarise.</p>
-    <div className="mb-6 border-y border-zinc-300 py-5 dark:border-zinc-700">
-      <h5 className="mb-3 text-xs font-bold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">Original concept</h5>
+    <p className="mt-2 mb-6 text-base leading-relaxed text-[var(--module-ink)] dark:text-[var(--module-muted)]">Practice the Cornell Method on a real concept. Paraphrase, question, summarise.</p>
+    <div className="mb-6 border-y border-[var(--module-line)] py-5 dark:border-[var(--module-line)]">
+      <h5 className="mb-3 text-xs font-bold uppercase tracking-widest text-[var(--module-ink)] dark:text-[var(--module-muted)]">Original concept</h5>
       <p className="font-serif text-lg leading-relaxed">{originalConcept}</p>
     </div>
     <div className="grid grid-cols-1 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-      <div className="min-w-0 rounded-xl border border-zinc-300 p-4 dark:border-zinc-700 md:col-start-2 md:row-start-1">
+      <div className="min-w-0 rounded-xl border border-[var(--module-line)] p-4 dark:border-[var(--module-line)] md:col-start-2 md:row-start-1">
         <label htmlFor={`${fieldId}-notes`} className="block text-base font-bold">1. Main notes</label>
-        <p id={`${fieldId}-notes-help`} className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">Explain the concept in your own words.</p>
+        <p id={`${fieldId}-notes-help`} className="mt-1 text-sm leading-relaxed text-[var(--module-ink)] dark:text-[var(--module-muted)]">Explain the concept in your own words.</p>
         <textarea id={`${fieldId}-notes`} rows={5} aria-describedby={`${fieldId}-notes-help`} value={mainNotes} onChange={e => { setMainNotes(e.target.value); setShowFeedback(false); }} placeholder="Water moves from…" className={fieldClass} />
       </div>
-      <div className="min-w-0 rounded-xl border border-zinc-300 p-4 dark:border-zinc-700 md:col-start-1 md:row-start-1">
+      <div className="min-w-0 rounded-xl border border-[var(--module-line)] p-4 dark:border-[var(--module-line)] md:col-start-1 md:row-start-1">
         <label htmlFor={`${fieldId}-cues`} className="block text-base font-bold">2. Cue questions</label>
-        <p id={`${fieldId}-cues-help`} className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">Write 2–3 questions, one per line.</p>
+        <p id={`${fieldId}-cues-help`} className="mt-1 text-sm leading-relaxed text-[var(--module-ink)] dark:text-[var(--module-muted)]">Write 2–3 questions, one per line.</p>
         <textarea id={`${fieldId}-cues`} rows={5} aria-describedby={`${fieldId}-cues-help`} value={cueQuestions} onChange={e => { setCueQuestions(e.target.value); setShowFeedback(false); }} placeholder={"What is osmosis?\nWhy is no energy needed?"} className={fieldClass} />
       </div>
-      <div className="min-w-0 rounded-xl border border-zinc-300 p-4 dark:border-zinc-700 md:col-span-2">
+      <div className="min-w-0 rounded-xl border border-[var(--module-line)] p-4 dark:border-[var(--module-line)] md:col-span-2">
         <label htmlFor={`${fieldId}-summary`} className="block text-base font-bold">3. Summary</label>
-        <p id={`${fieldId}-summary-help`} className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">Capture the core idea in one sentence, up to 25 words.</p>
+        <p id={`${fieldId}-summary-help`} className="mt-1 text-sm leading-relaxed text-[var(--module-ink)] dark:text-[var(--module-muted)]">Capture the core idea in one sentence, up to 25 words.</p>
         <textarea id={`${fieldId}-summary`} rows={3} aria-describedby={`${fieldId}-summary-help`} value={summary} onChange={e => { setSummary(e.target.value); setShowFeedback(false); }} placeholder="The key idea is…" className={fieldClass.replace('min-h-36', 'min-h-24')} />
       </div>
     </div>
     <div className="my-5 flex flex-wrap gap-3">
-      <button onClick={handleCheck} className="min-h-12 flex-1 rounded-xl bg-[#F26B1F] px-5 py-3 text-base font-bold text-[#1A1A1A]">Check my notes</button>
-      <button onClick={handleReset} className="min-h-12 rounded-xl border border-zinc-300 px-5 py-3 text-base font-semibold dark:border-zinc-700">Reset</button>
+      <button onClick={handleCheck} className="min-h-12 flex-1 rounded-xl bg-[var(--module-danger)] px-5 py-3 text-base font-bold text-[var(--module-ink)]" data-wide-button="true">Check my notes</button>
+      <button onClick={handleReset} className="min-h-12 rounded-xl border border-[var(--module-line)] px-5 py-3 text-base font-semibold dark:border-[var(--module-line)]" data-wide-button="true">Reset</button>
     </div>
-    {showFeedback && <div role="status" className="border-t border-zinc-300 pt-4 dark:border-zinc-700">
+    {showFeedback && <div role="status" className="border-t border-[var(--module-line)] pt-4 dark:border-[var(--module-line)]">
       <h5 className="font-serif text-xl font-semibold">{allSuccess ? 'Ready to practise recall' : 'Review your notes'}</h5>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">This checks the structure of your notes. Compare the meaning with the original concept yourself.</p>
-      <ul className="mt-3 space-y-3">{feedback.map((item, index) => <li key={index} className="text-base leading-relaxed"><span className="mr-2 font-bold text-[#B54D14] dark:text-orange-400" aria-hidden="true">{item.type === 'success' ? '✓' : '→'}</span>{item.message}</li>)}</ul>
-      {allSuccess && <p className="mt-5 border-t border-zinc-200 pt-4 font-semibold leading-relaxed dark:border-zinc-700">Hide your main notes and summary, then test yourself using only your cue questions.</p>}
+      <p className="mt-2 text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]">This checks the structure of your notes. Compare the meaning with the original concept yourself.</p>
+      <ul className="mt-3 space-y-3">{feedback.map((item, index) => <li key={index} className="text-base leading-relaxed"><span className="mr-2 font-bold text-[var(--module-danger-text)] dark:text-[var(--module-ink)]" aria-hidden="true">{item.type === 'success' ? '✓' : '→'}</span>{item.message}</li>)}</ul>
+      {allSuccess && <p className="mt-5 border-t border-[var(--module-line)] pt-4 font-semibold leading-relaxed dark:border-[var(--module-line)]">Hide your main notes and summary, then test yourself using only your cue questions.</p>}
     </div>}
   </section>;
 }

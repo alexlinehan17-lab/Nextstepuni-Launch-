@@ -4,17 +4,23 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
 import {
-  Target, BarChart, PieChart, Gamepad2, Columns, CalendarClock, Star
+BarChart,
+CalendarClock,
+Columns,
+Gamepad2,
+PieChart,
+Star,
+Target
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { accentTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { Cite } from './ModuleReferences';
+import React,{ useState } from 'react';
 import { REFRAMING_PROGRESS_REFERENCE_LIST } from '../data/references/reframingProgress';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { accentTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 
 import KanbanBoard from './activities/KanbanBoard';
 
@@ -42,26 +48,24 @@ const RetrospectiveLog = () => {
         setNextTopic("Everything's Green! Review oldest topic.");
     };
 
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Retrospective Log</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Rate your confidence. Let the "Worst First" rule decide your next move.</p>
+    return <div className="wr-skin" data-wide="RetrospectiveLog"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Retrospective Log</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Rate your confidence. Let the "Worst First" rule decide your next move.</p>
             {topics.map(t => (
                 <div key={t.name} className="flex items-center justify-between p-2">
                     <span className="font-bold">{t.name}</span>
                     <div className="flex gap-1">
-                        <button aria-label="Mark as struggling (red)" onClick={() => updateStatus(t.name, 'red')} className={`w-6 h-6 rounded-full border ${t.status === 'red' ? 'bg-rose-500 border-rose-600' : 'bg-rose-200'}`} />
-                        <button aria-label="Mark as okay (amber)" onClick={() => updateStatus(t.name, 'amber')} className={`w-6 h-6 rounded-full border ${t.status === 'amber' ? 'bg-amber-500 border-amber-600' : 'bg-amber-200'}`} />
-                        <button aria-label="Mark as confident (green)" onClick={() => updateStatus(t.name, 'green')} className={`w-6 h-6 rounded-full border ${t.status === 'green' ? 'bg-emerald-500 border-emerald-600' : 'bg-emerald-200'}`} />
+                        <button aria-label="Mark as struggling (red)" onClick={() => updateStatus(t.name, 'red')} className={`w-6 h-6 rounded-full border ${t.status === 'red' ? "bg-[var(--module-danger)] border-[var(--module-line)]" : "bg-[var(--module-danger-soft)]"}`} data-wide-button="true" data-selected={t.status === 'red'} data-tone="coral" aria-pressed={t.status === 'red'} />
+                        <button aria-label="Mark as okay (amber)" onClick={() => updateStatus(t.name, 'amber')} className={`w-6 h-6 rounded-full border ${t.status === 'amber' ? "bg-[var(--module-surface)] border-[var(--module-line)]" : "bg-[var(--module-surface)]"}`} data-wide-button="true" data-selected={t.status === 'amber'} data-tone="orange" aria-pressed={t.status === 'amber'} />
+                        <button aria-label="Mark as confident (green)" onClick={() => updateStatus(t.name, 'green')} className={`w-6 h-6 rounded-full border ${t.status === 'green' ? "bg-[var(--module-success)] border-[var(--module-line)]" : "bg-[var(--module-success-soft)]"}`} data-wide-button="true" data-selected={t.status === 'green'} data-tone="mint" aria-pressed={t.status === 'green'} />
                     </div>
                 </div>
             ))}
              <div className="mt-6 text-center">
-                 <button onClick={findNext} className="px-4 py-2 bg-zinc-800 text-white text-xs font-bold rounded-lg">Find Next Task</button>
-                 <p className="mt-4 text-sm">Next up: <span className="font-bold text-[#F26B1F]">{nextTopic}</span></p>
+                 <button onClick={findNext} className="px-4 py-2 bg-[var(--module-surface)] text-[var(--module-ink)] text-xs font-bold rounded-lg" data-wide-button="true">Find Next Task</button>
+                 <p className="mt-4 text-sm">Next up: <span className="font-bold text-[var(--module-danger-text)]">{nextTopic}</span></p>
              </div>
-        </div>
-    );
+        </div></div>;
 };
 
 

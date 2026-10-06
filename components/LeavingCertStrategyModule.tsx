@@ -1,112 +1,32 @@
+import { BrandedClusters,BrandedGrades } from './learning/WideFeatures';
+import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { Calculator, Briefcase, Target, PenSquare, Eye, HeartPulse } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid, ToolJumpCard } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { Cite } from './ModuleReferences';
+import { AnimatePresence,motion } from 'framer-motion';
+import { Briefcase,Calculator,Eye,HeartPulse,PenSquare,Target } from 'lucide-react';
+import React,{ useEffect,useRef,useState } from 'react';
 import { LEAVING_CERT_STRATEGY_REFERENCE_LIST } from '../data/references/leavingCertStrategy';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
-import NorthStarCallout from './NorthStarCallout';
+import { redTheme } from '../moduleThemes';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection,ToolJumpCard } from './ModuleShared';
+import { MotionDiv } from './Motion';
+import NorthStarCallout from './NorthStarCallout';
 
 const theme = redTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
-const PointsCalculator = () => {
-    const grades = [
-        { grade: 'H1', hl: 100, ol: 56 }, { grade: 'H2', hl: 88, ol: 46 }, { grade: 'H3', hl: 77, ol: 37 },
-        { grade: 'H4', hl: 66, ol: 28 }, { grade: 'H5', hl: 56, ol: 20 }, { grade: 'H6', hl: 46, ol: 12 },
-        { grade: 'H7', hl: 37, ol: 0 }, { grade: 'H8', hl: 0, ol: 0 }
-    ];
-    const getPoints = (grade: string, level: 'hl' | 'ol', isMaths: boolean) => {
-        const g = grades.find(g => g.grade === grade);
-        if (!g) return 0;
-        let points = g[level];
-        if (isMaths && level === 'hl' && ['H1','H2','H3','H4','H5','H6'].includes(grade)) {
-            points += 25;
-        }
-        return points;
-    }
+const PointsCalculator = BrandedGrades;
 
-    const [subjects, setSubjects] = useState(Array(7).fill({grade: 'H4', level: 'hl'}));
-
-    const updateSubject = (index: number, field: string, value: string) => {
-        const newSubjects = [...subjects];
-        newSubjects[index] = {...newSubjects[index], [field]: value};
-        setSubjects(newSubjects);
-    };
-
-    const subjectPoints = subjects.map((s, i) => getPoints(s.grade, s.level, i === 0));
-    const totalPoints = [...subjectPoints].sort((a, b) => b - a).slice(0, 6).reduce((sum, p) => sum + p, 0);
-
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">CAO Points Calculator</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">See how the "Best Six" and Maths Bonus work in practice.</p>
-            <div className="space-y-3">
-                {subjects.map((s, i) => (
-                    <div key={i} className={`p-3 rounded-lg flex items-center gap-4 ${i === 0 ? 'bg-amber-50' : 'bg-zinc-50'}`}>
-                        <span className="font-bold text-sm w-24">{i === 0 ? 'Maths' : `Subject ${i+1}`}</span>
-                        <select value={s.level} onChange={e => updateSubject(i, 'level', e.target.value)} className="p-1 rounded-md bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700">
-                            <option value="hl">Higher</option>
-                            <option value="ol">Ordinary</option>
-                        </select>
-                        <select value={s.grade} onChange={e => updateSubject(i, 'grade', e.target.value)} className="p-1 rounded-md bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700">
-                            {grades.map(g => <option key={g.grade} value={g.grade}>{g.grade}</option>)}
-                        </select>
-                        <span className="ml-auto font-bold text-lg">{subjectPoints[i]}</span>
-                    </div>
-                ))}
-            </div>
-            <div className="mt-8 p-6 rounded-xl text-center" style={{ backgroundColor: '#D1FAE5', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' }}>
-                <p className="text-sm font-bold text-emerald-700">Total "Best Six" Points:</p>
-                <p className="text-5xl font-semibold text-zinc-900">{totalPoints}</p>
-            </div>
-        </div>
-    );
-};
-
-const SubjectClusterExplorer = () => {
-    const [activeCluster, setActiveCluster] = useState<string | null>(null);
-    const clusters = {
-        'Lab Science': ['Biology', 'Ag Science', 'Home Ec', 'Physics', 'Applied Maths'],
-        'Business': ['Business', 'Accounting', 'Economics'],
-    };
-
-    const isHighlighted = (subject: string) => activeCluster && clusters[activeCluster as keyof typeof clusters].includes(subject);
-
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Syllabus Overlap Explorer</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Click a cluster to see how subjects connect and reduce your workload.</p>
-            <div className="flex justify-center gap-3 mb-6">
-                <button onClick={() => setActiveCluster('Lab Science')} className={`px-4 py-2 text-sm font-bold rounded-lg border ${activeCluster === 'Lab Science' ? 'bg-emerald-500 text-white border-emerald-500' : 'bg-emerald-50 text-emerald-800 border-emerald-200'}`}>Lab Science</button>
-                <button onClick={() => setActiveCluster('Business')} className={`px-4 py-2 text-sm font-bold rounded-lg border ${activeCluster === 'Business' ? 'bg-sky-500 text-white border-sky-500' : 'bg-sky-50 text-sky-800 border-sky-200'}`}>Business</button>
-                <button onClick={() => setActiveCluster(null)} className="text-xs">Reset</button>
-            </div>
-            <div className="grid grid-cols-3 gap-3 text-center">
-                <div className={`p-3 rounded-lg border ${isHighlighted('Biology') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Biology</div>
-                <div className={`p-3 rounded-lg border ${isHighlighted('Ag Science') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Ag Science</div>
-                <div className={`p-3 rounded-lg border ${isHighlighted('Home Ec') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Home Ec</div>
-                <div className={`p-3 rounded-lg border ${isHighlighted('Physics') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Physics</div>
-                <div className={`p-3 rounded-lg border ${isHighlighted('Applied Maths') ? 'border-emerald-400 bg-emerald-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Applied Maths</div>
-                <div className={`p-3 rounded-lg border ${isHighlighted('Business') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Business</div>
-                <div className={`p-3 rounded-lg border ${isHighlighted('Accounting') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Accounting</div>
-                <div className={`p-3 rounded-lg border ${isHighlighted('Economics') ? 'border-sky-400 bg-sky-50' : 'border-zinc-200 dark:border-zinc-700'}`}>Economics</div>
-            </div>
-        </div>
-    );
-};
+const SubjectClusterExplorer = BrandedClusters;
 
 const CommandWordDecoder = () => {
     const words = [
@@ -118,11 +38,11 @@ const CommandWordDecoder = () => {
     const [selected, setSelected] = useState(words[0]);
 
     return (
-         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Command Word Decoder</h4>
-                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Misreading what this word is asking for is one of the most common ways students lose marks.</p>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Tool</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Command Word Decoder</h4>
+                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Misreading what this word is asking for is one of the most common ways students lose marks.</p>
             </div>
             <div className="flex justify-center flex-wrap gap-2 mb-6">
                 {words.map(w => (
@@ -130,28 +50,28 @@ const CommandWordDecoder = () => {
                         key={w.word}
                         onClick={() => setSelected(w)}
                         style={{
-                            backgroundColor: selected.word === w.word ? '#F26B1F' : '#FFFFFF',
-                            border: selected.word === w.word ? '2px solid #F26B1F' : '2px solid #d0cdc8',
+                            backgroundColor: moduleFill(selected.word === w.word ? "var(--module-danger)" : "var(--module-surface)"),
+                            border: selected.word === w.word ? "2px solid var(--module-line)" : "2px solid var(--module-line)",
                             borderRadius: 20,
                             padding: '10px 20px',
                             fontSize: 14,
                             fontWeight: selected.word === w.word ? 600 : 500,
-                            color: selected.word === w.word ? '#FFFFFF' : '#7a7068',
+                            color: moduleText(selected.word === w.word ? "var(--module-on-fill)" : "var(--module-muted)"),
                             cursor: 'pointer',
-                        }}
+                        }} data-wide-button="true" data-selected={!!(selected.word === w.word)} data-tone="coral" aria-pressed={!!(selected.word === w.word)}
                     >
                         {w.word}
                     </button>
                 ))}
             </div>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                 <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #F26B1F', borderRadius: 14, padding: '20px 22px' }}>
-                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#FDEEDF', color: '#8C3A0E', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Expectation</span>
-                    <p className="mt-3" style={{ fontSize: 15, color: '#1a1a1a' }}>{selected.expectation}</p>
+                 <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 22px' }}>
+                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Expectation</span>
+                    <p className="mt-3" style={{ fontSize: 15, color: "var(--module-ink)" }}>{selected.expectation}</p>
                  </div>
-                 <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 22px' }}>
-                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#F1F0ED', color: '#A8746E', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Common Pitfall</span>
-                    <p className="mt-3" style={{ fontSize: 15, color: '#1a1a1a' }}>{selected.pitfall}</p>
+                 <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 22px' }}>
+                    <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: "var(--module-surface)", color: "var(--module-ink)", borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Common Pitfall</span>
+                    <p className="mt-3" style={{ fontSize: 15, color: "var(--module-ink)" }}>{selected.pitfall}</p>
                  </div>
              </div>
         </div>
@@ -240,25 +160,25 @@ const ExamDayTimelineBuilder = () => {
     const totalMinutes = sequence.reduce((sum, a) => sum + a.time, 0);
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Preparation</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Exam Morning Planner</h4>
-                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Build your optimal exam morning routine. Order matters.</p>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Preparation</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Exam Morning Planner</h4>
+                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Build your optimal exam morning routine. Order matters.</p>
             </div>
 
             {/* Warning flash */}
             <AnimatePresence>
                 {flashWarning && (
-                    <MotionDiv initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="mb-6" style={{ borderLeft: '3px solid #A8746E', backgroundColor: '#F1F0ED', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
-                        <p className="text-sm italic" style={{ color: '#A8746E' }}>{flashWarning}</p>
+                    <MotionDiv initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="mb-6" style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '12px 16px' }}>
+                        <p className="text-sm italic" style={{ color: "var(--module-ink)" }}>{flashWarning}</p>
                     </MotionDiv>
                 )}
             </AnimatePresence>
 
             {/* Activity chips */}
             <div className="mb-8">
-                <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 12, textTransform: 'uppercase' as const }}>Click to add to your timeline:</p>
+                <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", marginBottom: 12, textTransform: 'uppercase' as const }}>Click to add to your timeline:</p>
                 <div className="flex flex-wrap gap-2">
                     {TIMELINE_ACTIVITIES.map(activity => {
                         const isSelected = selectedIds.has(activity.id);
@@ -270,15 +190,15 @@ const ExamDayTimelineBuilder = () => {
                                 className="inline-flex items-center gap-1.5 transition-all"
                                 style={
                                     isSelected
-                                        ? { backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#8C3A0E', opacity: 0.6, cursor: 'default' }
+                                        ? { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: "var(--module-danger-text)", opacity: 0.6, cursor: 'default' }
                                         : activity.isBad
-                                        ? { backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#9e9186', cursor: 'pointer' }
-                                        : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: '#1a1a1a', cursor: 'pointer' }
-                                }
+                                        ? { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: "var(--module-muted)", cursor: 'pointer' }
+                                        : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '8px 16px', fontSize: 13, fontWeight: 500, color: "var(--module-ink)", cursor: 'pointer' }
+                                } data-wide-button="true" data-selected={!!(isSelected)} data-tone="coral" aria-pressed={!!(isSelected)}
                             >
-                                {activity.isBad && !isSelected && <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#A8746E', flexShrink: 0 }} />}
+                                {activity.isBad && !isSelected && <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: "var(--module-solid)", flexShrink: 0 }} />}
                                 {activity.label}
-                                <span style={{ fontSize: 11, color: '#9e9186', marginLeft: 4 }}>{activity.time}m</span>
+                                <span style={{ fontSize: 11, color: "var(--module-muted)", marginLeft: 4 }}>{activity.time}m</span>
                             </button>
                         );
                     })}
@@ -288,34 +208,34 @@ const ExamDayTimelineBuilder = () => {
             {/* Timeline */}
             {sequence.length > 0 && (
                 <div className="mb-6">
-                    <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 12, textTransform: 'uppercase' as const }}>Your Morning Timeline:</p>
+                    <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", marginBottom: 12, textTransform: 'uppercase' as const }}>Your Morning Timeline:</p>
                     <div className="relative pl-16 space-y-0">
                         {sequence.map((activity, index) => {
                             const startMin = getRunningTime(index);
                             const timeLabel = formatTime(startMin);
                             return (
                                 <MotionDiv key={activity.id} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3 }} className="relative flex items-stretch">
-                                    <span className="absolute left-[-64px] top-3 text-right" style={{ fontSize: 12, fontWeight: 600, color: '#9e9186', width: 48 }}>{timeLabel}</span>
+                                    <span className="absolute left-[-64px] top-3 text-right" style={{ fontSize: 12, fontWeight: 600, color: "var(--module-muted)", width: 48 }}>{timeLabel}</span>
                                     {index < sequence.length - 1 && (
-                                        <div className="absolute top-6 bottom-0" style={{ left: -1, width: 2, backgroundColor: '#e0dbd4' }} />
+                                        <div className="absolute top-6 bottom-0" style={{ left: -1, width: 2, backgroundColor: "var(--module-surface)" }} />
                                     )}
-                                    <div className="absolute top-4 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: activity.isBad ? '#A8746E' : '#F26B1F' }} />
-                                    <div className="ml-4 mb-2 flex-1 flex items-center gap-2 bg-white dark:bg-zinc-900" style={{ border: activity.isBad ? '1.5px solid #A8746E' : '1.5px solid #d0cdc8', borderRadius: 12, padding: '14px 16px' }}>
+                                    <div className="absolute top-4 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: moduleFill(activity.isBad ? "var(--module-solid)" : "var(--module-danger)") }} />
+                                    <div className="ml-4 mb-2 flex-1 flex items-center gap-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: activity.isBad ? "1.5px solid var(--module-line)" : "1.5px solid var(--module-line)", borderRadius: 12, padding: '14px 16px' }}>
                                         {activity.isBad && (
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A8746E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--module-ink)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
                                                 <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
                                             </svg>
                                         )}
-                                        <span style={{ fontSize: 14, fontWeight: 500, color: activity.isBad ? '#A8746E' : '#1a1a1a' }}>{activity.label}</span>
-                                        <span style={{ marginLeft: 'auto', fontSize: 13, color: '#9e9186' }}>{activity.time} min</span>
+                                        <span style={{ fontSize: 14, fontWeight: 500, color: moduleText(activity.isBad ? "var(--module-ink)" : "var(--module-ink)") }}>{activity.label}</span>
+                                        <span style={{ marginLeft: 'auto', fontSize: 13, color: "var(--module-muted)" }}>{activity.time} min</span>
                                     </div>
                                 </MotionDiv>
                             );
                         })}
                         <div className="relative">
-                            <span className="absolute left-[-64px] top-0 text-right" style={{ fontSize: 12, fontWeight: 600, color: '#9e9186', width: 48 }}>{formatTime(totalMinutes)}</span>
-                            <div className="absolute top-1 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: '#d0cdc8' }} />
-                            <p className="ml-4" style={{ fontSize: 13, color: '#9e9186' }}>
+                            <span className="absolute left-[-64px] top-0 text-right" style={{ fontSize: 12, fontWeight: 600, color: "var(--module-muted)", width: 48 }}>{formatTime(totalMinutes)}</span>
+                            <div className="absolute top-1 rounded-full" style={{ left: -5, width: 8, height: 8, backgroundColor: "var(--module-surface)" }} />
+                            <p className="ml-4" style={{ fontSize: 13, color: "var(--module-muted)" }}>
                                 {totalMinutes > 140 ? `Total: ${totalMinutes} min — You may be cutting it close!` : `Total: ${totalMinutes} min`}
                             </p>
                         </div>
@@ -326,10 +246,10 @@ const ExamDayTimelineBuilder = () => {
             {/* Buttons */}
             {sequence.length > 0 && !showFeedback && (
                 <div className="flex justify-center items-center gap-4 mt-6">
-                    <motion.button onClick={handleCheckPlan} whileTap={{ y: 3 }} className="text-white font-semibold" style={{ backgroundColor: '#F26B1F', borderRadius: 100, padding: '13px 32px', fontSize: 15, borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}>
+                    <motion.button onClick={handleCheckPlan} whileTap={{ y: 3 }} className="text-[var(--module-ink)] font-semibold" style={{ backgroundColor: "var(--module-danger)", borderRadius: 100, padding: '13px 32px', fontSize: 15, borderBottom: "3px solid var(--module-line)", boxShadow: 'none' }} data-wide-button="true">
                         Check My Plan
                     </motion.button>
-                    <button onClick={handleReset} style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 100, padding: '13px 24px', fontSize: 14, fontWeight: 600, color: '#7a7068' }}>
+                    <button onClick={handleReset} style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 100, padding: '13px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-muted)" }} data-wide-button="true">
                         Start Over
                     </button>
                 </div>
@@ -340,36 +260,36 @@ const ExamDayTimelineBuilder = () => {
                 {showFeedback && (
                     <MotionDiv initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mt-8 space-y-4">
                         {hasBadChoices && (
-                            <div style={{ borderLeft: '3px solid #A8746E', backgroundColor: '#F1F0ED', borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                                <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: '#A8746E' }}>Bad choices detected:</p>
+                            <div style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
+                                <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: "var(--module-ink)" }}>Bad choices detected:</p>
                                 {sequence.filter(a => a.isBad).map(a => (
                                     <div key={a.id} className="flex items-start gap-2 mb-1">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A8746E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 3 }}>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--module-ink)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 3 }}>
                                             <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
                                         </svg>
-                                        <p style={{ fontSize: 14, color: '#A8746E' }}><strong>{a.label}</strong> — {a.warning}</p>
+                                        <p style={{ fontSize: 14, color: "var(--module-ink)" }}><strong>{a.label}</strong> — {a.warning}</p>
                                     </div>
                                 ))}
                             </div>
                         )}
 
-                        <div style={{ borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                            <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: '#8C3A0E' }}>Optimal morning sequence:</p>
+                        <div style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
+                            <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: "var(--module-danger-text)" }}>Optimal morning sequence:</p>
                             <ol className="list-decimal list-inside space-y-1">
                                 {optimalSequence.map(a => (
-                                    <li key={a.id} style={{ fontSize: 14, color: '#8C3A0E' }}>{a.label} <span style={{ color: '#9e9186' }}>({a.time} min)</span></li>
+                                    <li key={a.id} style={{ fontSize: 14, color: "var(--module-danger-text)" }}>{a.label} <span style={{ color: "var(--module-muted)" }}>({a.time} min)</span></li>
                                 ))}
                             </ol>
                         </div>
 
-                        <div style={{ borderLeft: '3px solid #d0cdc8', backgroundColor: '#f4f0eb', borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                            <p className="text-sm italic" style={{ color: '#5a5550' }}>
+                        <div style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
+                            <p className="text-sm italic" style={{ color: "var(--module-ink)" }}>
                                 "A calm, structured morning sets your brain up to perform at its best. A chaotic one sets it up for panic."
                             </p>
                         </div>
 
                         <div className="flex justify-center mt-4">
-                            <button onClick={handleReset} style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 100, padding: '13px 24px', fontSize: 14, fontWeight: 600, color: '#7a7068' }}>
+                            <button onClick={handleReset} style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 100, padding: '13px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-muted)" }} data-wide-button="true">
                                 Start Over
                             </button>
                         </div>

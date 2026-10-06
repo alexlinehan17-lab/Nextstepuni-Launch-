@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { motion, useReducedMotion } from 'motion/react';
-import { ArrowRight, RotateCcw } from 'lucide-react';
+import { ArrowRight,RotateCcw } from 'lucide-react';
+import { motion,useReducedMotion } from 'motion/react';
+import { useEffect,useState } from 'react';
 import { Button } from '../approved-ui-runtime';
-import { Artwork, Eyebrow } from './shared';
+import { Artwork,Eyebrow } from './shared';
 
 const focused = Array.from({ length: 20 }, (_, i) => [
   160 + (i % 5) * 39,
@@ -51,7 +51,7 @@ export function PinballExercise({
           variant="ghost"
           size="icon"
           aria-label="Replay the pinball illustration"
-          onClick={() => setReplay(replay + 1)}
+          onClick={() => setReplay(replay + 1)} data-wide-button="true"
         >
           <RotateCcw />
         </Button>
@@ -60,14 +60,14 @@ export function PinballExercise({
         <Button
           variant="outline"
           aria-pressed={mode === 'focused'}
-          onClick={() => setMode('focused')}
+          onClick={() => setMode('focused')} data-wide-button="true"
         >
           Focused mode
         </Button>
         <Button
           variant="outline"
           aria-pressed={mode === 'diffuse'}
-          onClick={() => setMode('diffuse')}
+          onClick={() => setMode('diffuse')} data-wide-button="true"
         >
           Diffuse mode
         </Button>
@@ -182,7 +182,7 @@ export function IncubationExercise() {
             {String(remaining).padStart(2, '0')}
             <small>s</small>
           </span>
-          <Button variant="outline" onClick={() => setPhase('return')}>
+          <Button variant="outline" onClick={() => setPhase('return')} data-wide-button="true">
             I’m ready to return <ArrowRight />
           </Button>
         </div>
@@ -191,7 +191,7 @@ export function IncubationExercise() {
           <h4>{phase === 'solved' ? 'There it is.' : 'The word was…'}</h4>
           <p className="mr-letters">{puzzles[puzzle].answer}</p>
           <p>Did returning to the problem feel any different?</p>
-          <Button variant="outline" onClick={reset}>
+          <Button variant="outline" onClick={reset} data-wide-button="true">
             Try another word <RotateCcw />
           </Button>
         </div>
@@ -233,7 +233,7 @@ export function IncubationExercise() {
                 }}
                 placeholder="Type your answer…"
               />
-              <Button variant="outline" type="submit" disabled={!answer.trim()}>
+              <Button variant="outline" type="submit" disabled={!answer.trim()} data-wide-button="true">
                 Try it <ArrowRight />
               </Button>
             </div>
@@ -249,15 +249,15 @@ export function IncubationExercise() {
               onClick={() => {
                 setRemaining(15);
                 setPhase('break');
-              }}
+              }} data-wide-button="true"
             >
               Take a 15-second break
             </Button>
-            <Button variant="ghost" onClick={() => setHint(!hint)} aria-expanded={hint}>
+            <Button variant="ghost" onClick={() => setHint(!hint)} aria-expanded={hint} data-wide-button="true">
               {hint ? 'Hide hint' : 'A little hint'}
             </Button>
             {phase === 'return' && (
-              <Button variant="ghost" onClick={() => setPhase('revealed')}>
+              <Button variant="ghost" onClick={() => setPhase('revealed')} data-wide-button="true">
                 Reveal word
               </Button>
             )}

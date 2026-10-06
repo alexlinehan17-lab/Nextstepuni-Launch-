@@ -4,18 +4,22 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
-  Layers, Shuffle, Brain, ListChecks, Wrench
+Brain,
+Layers,
+ListChecks,
+Shuffle,
+Wrench
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { purpleTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import React,{ useState } from 'react';
 import { INTERLEAVING_REFERENCE_LIST } from '../data/references/interleaving';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { purpleTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 
 const theme = purpleTheme;
 
@@ -27,12 +31,11 @@ const StudyPlannerInteractive = () => {
     const interleavedSchedule = { Mon: ['Maths', 'English', 'French'], Tue: ['English', 'Biology', 'History'], Wed: ['Biology', 'Maths', 'English'] };
     const schedule = planType === 'blocked' ? blockedSchedule : interleavedSchedule;
 
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Weekly Schedule Architect</h4>
-            <div className="flex justify-center gap-2 p-1 bg-zinc-100 dark:bg-zinc-800 rounded-full my-6 max-w-sm mx-auto">
-                <button onClick={() => setPlanType('blocked')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${planType === 'blocked' ? 'bg-white dark:bg-zinc-700 shadow' : ''}`}>Blocked Schedule</button>
-                <button onClick={() => setPlanType('interleaved')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${planType === 'interleaved' ? 'bg-white dark:bg-zinc-700 shadow' : ''}`}>Interleaved Schedule</button>
+    return <div className="wr-skin" data-wide="StudyPlannerInteractive"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Weekly Schedule Architect</h4>
+            <div className="flex justify-center gap-2 p-1 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full my-6 max-w-sm mx-auto">
+                <button onClick={() => setPlanType('blocked')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${planType === 'blocked' ? "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] shadow-none" : ''}`} data-wide-button="true" data-selected={!!(planType === 'blocked')} data-tone="orange" aria-pressed={!!(planType === 'blocked')}>Blocked Schedule</button>
+                <button onClick={() => setPlanType('interleaved')} className={`w-full px-4 py-2 text-xs font-bold rounded-full ${planType === 'interleaved' ? "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] shadow-none" : ''}`} data-wide-button="true" data-selected={!!(planType === 'interleaved')} data-tone="orange" aria-pressed={!!(planType === 'interleaved')}>Interleaved Schedule</button>
             </div>
             <div className="grid grid-cols-3 gap-2 text-center text-xs">
                 {Object.entries(schedule).map(([day, subjects]) => (
@@ -40,14 +43,13 @@ const StudyPlannerInteractive = () => {
                         <p className="font-bold mb-2">{day}</p>
                         <div className="space-y-1">
                             {subjects.map((sub, i) => (
-                                <motion.div key={`${day}-${i}`} layoutId={`${day}-${i}-${sub}`} className="p-2 bg-zinc-50 dark:bg-zinc-700/50 border border-zinc-200 dark:border-zinc-700 rounded-md">{sub}</motion.div>
+                                <motion.div key={`${day}-${i}`} layoutId={`${day}-${i}-${sub}`} className="p-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] rounded-md">{sub}</motion.div>
                             ))}
                         </div>
                     </div>
                 ))}
             </div>
-        </div>
-    );
+        </div></div>;
 };
 
 const ProblemTypeSpotter = () => {
@@ -78,29 +80,27 @@ const ProblemTypeSpotter = () => {
         setScore(0);
     };
 
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Problem Spotter</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">Calculus: Don't solve. Just identify the correct rule.</p>
-             <p className="text-center text-xs font-semibold text-purple-600 dark:text-purple-400 mb-8">Score: {score}/{problems.length}</p>
+    return <div className="wr-skin" data-wide="ProblemTypeSpotter"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Problem Spotter</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">Calculus: Don't solve. Just identify the correct rule.</p>
+             <p className="text-center text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-8">Score: {score}/{problems.length}</p>
              {problems.map(p => (
                 <div key={p.id} className="mb-4">
-                    <p className="text-center font-mono bg-zinc-100 dark:bg-zinc-800 p-4 rounded-xl mb-1">{p.text}</p>
-                    <p className="text-center text-[10px] text-zinc-400 dark:text-zinc-500 mb-2 italic">Hint: {p.hint}</p>
+                    <p className="text-center font-mono bg-[var(--module-surface)] dark:bg-[var(--module-surface)] p-4 rounded-xl mb-1">{p.text}</p>
+                    <p className="text-center text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2 italic">Hint: {p.hint}</p>
                     <div className="grid grid-cols-2 gap-2">
-                        <button onClick={() => handleChoice(p.id, 'chain')} className={`p-2 text-xs rounded-lg border ${choice[p.id] && (choice[p.id] === 'chain' && p.correct === 'chain' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'chain' ? 'bg-rose-100 border-rose-300' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700')}`}>Chain Rule</button>
-                        <button onClick={() => handleChoice(p.id, 'product')} className={`p-2 text-xs rounded-lg border ${choice[p.id] && (choice[p.id] === 'product' && p.correct === 'product' ? 'bg-emerald-100 border-emerald-300' : choice[p.id] === 'product' ? 'bg-rose-100 border-rose-300' : 'bg-zinc-100 border-zinc-200 dark:border-zinc-700')}`}>Product Rule</button>
+                        <button onClick={() => handleChoice(p.id, 'chain')} className={`p-2 text-xs rounded-lg border ${choice[p.id] && (choice[p.id] === 'chain' && p.correct === 'chain' ? "bg-[var(--module-success-soft)] border-[var(--module-line)]" : choice[p.id] === 'chain' ? "bg-[var(--module-danger-soft)] border-[var(--module-line)]" : "bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]")}`} data-wide-button="true" data-selected={choice[p.id] === 'chain'} data-tone={p.correct === 'chain' ? 'mint' : 'coral'} aria-pressed={choice[p.id] === 'chain'}>Chain Rule</button>
+                        <button onClick={() => handleChoice(p.id, 'product')} className={`p-2 text-xs rounded-lg border ${choice[p.id] && (choice[p.id] === 'product' && p.correct === 'product' ? "bg-[var(--module-success-soft)] border-[var(--module-line)]" : choice[p.id] === 'product' ? "bg-[var(--module-danger-soft)] border-[var(--module-line)]" : "bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]")}`} data-wide-button="true" data-selected={choice[p.id] === 'product'} data-tone={p.correct === 'product' ? 'mint' : 'coral'} aria-pressed={choice[p.id] === 'product'}>Product Rule</button>
                     </div>
                 </div>
              ))}
              {allAnswered && (
                 <div className="text-center mt-6">
-                    <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300 mb-3">You got {score} out of {problems.length} correct!</p>
-                    <button onClick={handleReset} className="px-5 py-2 bg-purple-500 hover:bg-purple-600 text-white text-sm font-bold rounded-lg transition-colors">Try Again</button>
+                    <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-3">You got {score} out of {problems.length} correct!</p>
+                    <button onClick={handleReset} className="px-5 py-2 bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] text-sm font-bold rounded-lg transition-colors" data-wide-button="true">Try Again</button>
                 </div>
              )}
-        </div>
-    );
+        </div></div>;
 };
 
 const RetrospectiveRevisionLog = () => {
@@ -131,28 +131,26 @@ const RetrospectiveRevisionLog = () => {
         setNextTopic(topics[0].name);
     }
 
-    return (
-         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Retrospective Revision Log</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Update your confidence after studying. The "Worst First" rule will guide you.</p>
+    return <div className="wr-skin" data-wide="RetrospectiveRevisionLog"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Retrospective Revision Log</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Update your confidence after studying. The "Worst First" rule will guide you.</p>
              <div className="space-y-3">
                 {topics.map(topic => (
-                    <div key={topic.name} className="p-3 rounded-lg flex justify-between items-center" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 10, boxShadow: '3px 3px 0px 0px #1C1917' }}>
+                    <div key={topic.name} className="p-3 rounded-lg flex justify-between items-center" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 10, boxShadow: 'none' }}>
                         <span className="font-bold text-sm">{topic.name}</span>
                         <div className="flex gap-1">
-                            <button aria-label="Mark as struggling (red)" onClick={() => updateStatus(topic.name, 'red')} className={`w-6 h-6 rounded-full border ${topic.status === 'red' ? 'bg-rose-500 border-rose-600' : 'bg-rose-200 border-rose-300'}`}></button>
-                            <button aria-label="Mark as okay (amber)" onClick={() => updateStatus(topic.name, 'amber')} className={`w-6 h-6 rounded-full border ${topic.status === 'amber' ? 'bg-amber-500 border-amber-600' : 'bg-amber-200 border-amber-300'}`}></button>
-                            <button aria-label="Mark as confident (green)" onClick={() => updateStatus(topic.name, 'green')} className={`w-6 h-6 rounded-full border ${topic.status === 'green' ? 'bg-emerald-500 border-emerald-600' : 'bg-emerald-200 border-emerald-300'}`}></button>
+                            <button aria-label="Mark as struggling (red)" onClick={() => updateStatus(topic.name, 'red')} className={`w-6 h-6 rounded-full border ${topic.status === 'red' ? "bg-[var(--module-danger)] border-[var(--module-line)]" : "bg-[var(--module-danger-soft)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(topic.status === 'red')} data-tone="coral" aria-pressed={!!(topic.status === 'red')}></button>
+                            <button aria-label="Mark as okay (amber)" onClick={() => updateStatus(topic.name, 'amber')} className={`w-6 h-6 rounded-full border ${topic.status === 'amber' ? "bg-[var(--module-surface)] border-[var(--module-line)]" : "bg-[var(--module-surface)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(topic.status === 'amber')} data-tone="orange" aria-pressed={!!(topic.status === 'amber')}></button>
+                            <button aria-label="Mark as confident (green)" onClick={() => updateStatus(topic.name, 'green')} className={`w-6 h-6 rounded-full border ${topic.status === 'green' ? "bg-[var(--module-success)] border-[var(--module-line)]" : "bg-[var(--module-success-soft)] border-[var(--module-line)]"}`} data-wide-button="true" data-selected={!!(topic.status === 'green')} data-tone="mint" aria-pressed={!!(topic.status === 'green')}></button>
                         </div>
                     </div>
                 ))}
              </div>
              <div className="mt-6 text-center">
-                 <button onClick={findNextTopic} className="px-4 py-2 bg-zinc-800 dark:bg-zinc-200 text-white dark:text-zinc-900 text-xs font-bold rounded-lg">Find Next Topic</button>
-                 <p className="mt-4 text-sm">Next up: <span className="font-bold text-purple-600">{nextTopic}</span></p>
+                 <button onClick={findNextTopic} className="px-4 py-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] text-xs font-bold rounded-lg" data-wide-button="true">Find Next Topic</button>
+                 <p className="mt-4 text-sm">Next up: <span className="font-bold text-[var(--module-ink)]">{nextTopic}</span></p>
              </div>
-        </div>
-    );
+        </div></div>;
 }
 
 // --- MODULE COMPONENT ---

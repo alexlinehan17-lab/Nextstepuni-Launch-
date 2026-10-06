@@ -1,23 +1,28 @@
+import { BrandedAgencyBalance } from './learning/WideFeatures';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
-  Feather, BookOpen, Scale, Award, FileText
+Award,
+BookOpen,
+Feather,
+FileText,
+Scale
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
+import React,{ useState } from 'react';
+import { STRATEGIC_ADVANTAGE_REFERENCE_LIST } from '../data/references/strategicAdvantage';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { useNorthStar } from '../hooks/useNorthStar';
 import { indigoTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
+import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
-import { STRATEGIC_ADVANTAGE_REFERENCE_LIST } from '../data/references/strategicAdvantage';
-import { useNorthStar } from '../hooks/useNorthStar';
+import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import NorthStarCallout from './NorthStarCallout';
-import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
 
 const theme = indigoTheme;
 
@@ -48,9 +53,9 @@ const NarrativeSwitcher = () => {
     };
 
     const toneStyles = {
-      neutral: 'bg-zinc-100 dark:bg-zinc-700/50 text-zinc-700 dark:text-zinc-300 border-zinc-200 dark:border-zinc-600',
-      bad: 'bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800/50',
-      good: 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/50',
+      neutral: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] border-[var(--module-line)] dark:border-[var(--module-line)]",
+      bad: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] border-[var(--module-line)] dark:border-[var(--module-line)]",
+      good: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] border-[var(--module-line)] dark:border-[var(--module-line)]",
     };
 
     const renderSequence = (steps: typeof contamination | typeof redemption, active: boolean) => (
@@ -61,7 +66,7 @@ const NarrativeSwitcher = () => {
             initial={active ? { opacity: 0, y: 10 } : { opacity: 0.3 }}
             animate={active ? { opacity: 1, y: 0 } : { opacity: 0.3 }}
             transition={active ? { delay: i * 0.4, duration: 0.4 } : { duration: 0.3 }}
-            className={`p-3 rounded-lg border text-sm font-medium ${active ? toneStyles[step.tone] : 'bg-zinc-50 dark:bg-zinc-800/30 text-zinc-300 dark:text-zinc-600 border-zinc-100 dark:border-zinc-800'}`}
+            className={`p-3 rounded-lg border text-sm font-medium ${active ? toneStyles[step.tone] : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-muted)] dark:text-[var(--module-ink)] border-[var(--module-line)] dark:border-[var(--module-line)]"}`}
           >
             {i > 0 && active && (
               <motion.span
@@ -79,68 +84,30 @@ const NarrativeSwitcher = () => {
       </div>
     );
 
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Narrative Switcher</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Pivotal Moment: You fail an important mock exam. Which story do you tell?</p>
+    return <div className="wr-skin" data-wide="NarrativeSwitcher"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Narrative Switcher</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Pivotal Moment: You fail an important mock exam. Which story do you tell?</p>
             <div className="flex justify-center gap-4 mb-8">
-                <button onClick={() => handleSelect('contamination')} className={`px-5 py-2.5 text-xs font-bold rounded-lg transition-all ${script === 'contamination' ? 'bg-rose-500 text-white shadow-lg shadow-rose-500/20' : 'bg-rose-100 text-rose-800 hover:bg-rose-200'}`}>Contamination Script</button>
-                <button onClick={() => handleSelect('redemption')} className={`px-5 py-2.5 text-xs font-bold rounded-lg transition-all ${script === 'redemption' ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-500/20' : 'bg-emerald-100 text-emerald-800 hover:bg-emerald-200'}`}>Redemption Script</button>
+                <button onClick={() => handleSelect('contamination')} className={`px-5 py-2.5 text-xs font-bold rounded-lg transition-all ${script === 'contamination' ? "bg-[var(--module-danger)] text-[var(--module-ink)] shadow-none shadow-none" : "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] hover:bg-[var(--module-danger-soft)]"}`} data-wide-button="true" data-selected={!!(script === 'contamination')} data-tone="coral" aria-pressed={!!(script === 'contamination')}>Contamination Script</button>
+                <button onClick={() => handleSelect('redemption')} className={`px-5 py-2.5 text-xs font-bold rounded-lg transition-all ${script === 'redemption' ? "bg-[var(--module-success)] text-[var(--module-ink)] shadow-none shadow-none" : "bg-[var(--module-success-soft)] text-[var(--module-success-text)] hover:bg-[var(--module-success-soft)]"}`} data-wide-button="true" data-selected={!!(script === 'redemption')} data-tone="mint" aria-pressed={!!(script === 'redemption')}>Redemption Script</button>
             </div>
             {script !== 'idle' && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${script === 'contamination' ? 'text-rose-500' : 'text-zinc-300 dark:text-zinc-600'}`}>Contamination Script</p>
+                  <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${script === 'contamination' ? "text-[var(--module-danger-text)]" : "text-[var(--module-muted)] dark:text-[var(--module-ink)]"}`}>Contamination Script</p>
                   {renderSequence(contamination, script === 'contamination')}
                 </div>
                 <div>
-                  <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${script === 'redemption' ? 'text-emerald-500' : 'text-zinc-300 dark:text-zinc-600'}`}>Redemption Script</p>
+                  <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${script === 'redemption' ? "text-[var(--module-success-text)]" : "text-[var(--module-muted)] dark:text-[var(--module-ink)]"}`}>Redemption Script</p>
                   {renderSequence(redemption, script === 'redemption')}
                 </div>
               </div>
             )}
-        </div>
-    );
+        </div></div>;
 };
 
 
-const AgencyCommunionBalancer = () => {
-    const [balance, setBalance] = useState(0); // -1 for Agency, 1 for Communion, 0 for balanced
-    return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Agency & Communion Balancer</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-12">Click the narrative statement that builds the most robust identity.</p>
-             <div className="h-40 flex justify-center items-center">
-                <motion.div animate={{rotate: balance * 15}} className="w-56 h-20 relative">
-                    <div className="w-full h-2 bg-zinc-300 dark:bg-zinc-600 absolute bottom-0 left-0" />
-                    <div className="w-2 h-4 bg-zinc-300 dark:bg-zinc-600 absolute bottom-0 left-1/2 -translate-x-1/2" />
-                    <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 rounded-md absolute -left-6 -bottom-1" />
-                    <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/40 rounded-md absolute -right-6 -bottom-1" />
-                </motion.div>
-             </div>
-             <div className="grid grid-cols-3 gap-2 mt-6">
-                <button
-                    onClick={() => setBalance(-1)}
-                    className={`p-2 text-xs border rounded-lg transition-all ${balance === -1 ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/30 dark:text-blue-300' : 'border-zinc-200 dark:border-zinc-700'}`}
-                >
-                    "I did it all myself." (Pure Agency)
-                </button>
-                <button
-                    onClick={() => setBalance(0)}
-                    className={`p-2 text-xs border rounded-lg transition-all ${balance === 0 ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-900/30 dark:text-indigo-300' : 'border-zinc-200 dark:border-zinc-700'}`}
-                >
-                    "I worked hard to honour my family's sacrifices." (Balanced)
-                </button>
-                <button
-                    onClick={() => setBalance(1)}
-                    className={`p-2 text-xs border rounded-lg transition-all ${balance === 1 ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-900/30 dark:text-emerald-300' : 'border-zinc-200 dark:border-zinc-700'}`}
-                >
-                    "I only survived because of others." (Pure Communion)
-                </button>
-             </div>
-        </div>
-    )
-};
+const AgencyCommunionBalancer = BrandedAgencyBalance;
 
 const DesirableDifficultyComparison = () => {
     const [revealed, setRevealed] = useState(false);
@@ -185,14 +152,14 @@ const DesirableDifficultyComparison = () => {
     };
 
     const easyPhases = [
-        { label: 'Feels productive', x1: 0, x2: 0.33, color: '#fca5a5' },
-        { label: 'Confidence high', x1: 0.33, x2: 0.66, color: '#f87171' },
-        { label: 'Exam shock', x1: 0.66, x2: 1, color: '#ef4444' },
+        { label: 'Feels productive', x1: 0, x2: 0.33, color: "var(--module-ink)" },
+        { label: 'Confidence high', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
+        { label: 'Exam shock', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
     ];
     const hardPhases = [
-        { label: 'Feels frustrating', x1: 0, x2: 0.33, color: '#6ee7b7' },
-        { label: 'Effort pays off', x1: 0.33, x2: 0.66, color: '#34d399' },
-        { label: 'Deeply encoded', x1: 0.66, x2: 1, color: '#10b981' },
+        { label: 'Feels frustrating', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
+        { label: 'Effort pays off', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
+        { label: 'Deeply encoded', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
     ];
 
     const Chart = ({ comfort, durability, phases, areaColor, areaId, areaData, label }: {
@@ -208,10 +175,10 @@ const DesirableDifficultyComparison = () => {
             </defs>
             {/* Grid lines */}
             {[0.25, 0.5, 0.75, 1.0].map(v => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
             ))}
             {/* Baseline */}
-            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
             {/* Area fill */}
             <motion.path
                 d={buildArea(areaData)}
@@ -230,7 +197,7 @@ const DesirableDifficultyComparison = () => {
             {/* Durability line (dashed) */}
             <motion.path
                 d={buildLine(durability)}
-                fill="none" stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
+                fill="none" stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
                 initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
                 transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
             />
@@ -241,58 +208,58 @@ const DesirableDifficultyComparison = () => {
                 />
             ))}
             {/* Y-axis labels */}
-            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
-            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
             {/* X-axis labels */}
             {xLabels.map((m, i) => (
-                <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+                <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
             ))}
             {/* Phase labels */}
             {phases.map((p, i) => (
                 <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
             ))}
             {/* Chart label */}
-            <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
+            <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
             {/* Legend */}
             <line x1={W - padR - 100} x2={W - padR - 84} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-            <text x={W - padR - 80} y={17} fontSize="8" fill="#a1a1aa">Comfort</text>
-            <line x1={W - padR - 50} x2={W - padR - 34} y1={14} y2={14} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="4 2" />
-            <text x={W - padR - 30} y={17} fontSize="8" fill="#a1a1aa">Durability</text>
+            <text x={W - padR - 80} y={17} fontSize="8" fill="var(--module-surface)">Comfort</text>
+            <line x1={W - padR - 50} x2={W - padR - 34} y1={14} y2={14} stroke="var(--module-ink)" strokeWidth="1.5" strokeDasharray="4 2" />
+            <text x={W - padR - 30} y={17} fontSize="8" fill="var(--module-surface)">Durability</text>
         </svg>
     );
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Difficulty Dividend</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">The study method that feels worst produces the best results.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Difficulty Dividend</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">The study method that feels worst produces the best results.</p>
 
             {!revealed ? (
                 <div className="text-center">
-                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">What happens to comfort and actual retention over 30 days for two very different study strategies?</p>
-                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-indigo-500 text-white hover:bg-indigo-600 transition-colors">
+                    <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">What happens to comfort and actual retention over 30 days for two very different study strategies?</p>
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-solid)] text-[var(--module-ink)] hover:bg-[var(--module-solid)] transition-colors" data-wide-button="true">
                         Reveal the Dividend
                     </button>
                 </div>
             ) : (
                 <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
                     <div className="grid md:grid-cols-2 gap-4 mb-5">
-                        <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
+                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
                             <Chart comfort={easyComfort} durability={easyDurability} phases={easyPhases}
-                                areaColor="#ef4444" areaId="easy-grad" areaData={easyComfort} label="The Easy Path" />
+                                areaColor="var(--module-danger-text)" areaId="easy-grad" areaData={easyComfort} label="The Easy Path" />
                         </div>
-                        <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
+                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] p-3">
                             <Chart comfort={hardComfort} durability={hardDurability} phases={hardPhases}
-                                areaColor="#10b981" areaId="hard-grad" areaData={hardDurability} label="The Hard Path" />
+                                areaColor="var(--module-success-text)" areaId="hard-grad" areaData={hardDurability} label="The Hard Path" />
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4 text-sm">
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
-                            <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Re-reading and highlighting</strong> feel smooth and satisfying. But ease of processing during study doesn't predict long-term retention. This is the fluency illusion.</p>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                            <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
+                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Re-reading and highlighting</strong> feel smooth and satisfying. But ease of processing during study doesn't predict long-term retention. This is the fluency illusion.</p>
                         </div>
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
-                            <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Testing yourself, spacing, and interleaving</strong> feel slower and harder. But that desirable difficulty forces deeper encoding. The struggle IS the learning signal.</p>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                            <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
+                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Testing yourself, spacing, and interleaving</strong> feel slower and harder. But that desirable difficulty forces deeper encoding. The struggle IS the learning signal.</p>
                         </div>
                     </div>
                 </motion.div>
@@ -367,16 +334,16 @@ const StrategicAdvantageModule: React.FC<{ onBack: () => void; progress: ModuleP
             <ReadingSection title="Your Redemption Script." eyebrow="Step 5" icon={FileText} theme={theme}>
               {essentials ? (<><p>You are the author of your story. Turn contamination into redemption. Balance self-reliance with connection. Reframe difficulty as advantage. Build your own "Failure Resume" below. Turn one past failure into an asset you can use.</p></>) : (<><p>You have the power to be the author of your own story. This module has given you the tools of narrative construction: the ability to turn contamination into redemption, to balance agency with communion, and to reframe difficulty as a desirable advantage. Now it's time to put it into practice.</p>
               <p>The final step is to build your own mini-"Failure Resume." By taking a past failure and actively converting it into an asset, you are practicing the core skill of resilient identity construction. You are forging your own redemption script, turning the lead of your past into the gold of your future.</p></>)}
-              <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">My Redemption Story</h4>
+              <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">My Redemption Story</h4>
                  <div className="mt-6 space-y-4">
                     <div>
-                        <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Failure (Pivotal Moment):</label>
-                        <select className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white outline-none" style={{ border: '1.5px solid #E7E5E4' }}><option>Failed a mock exam</option><option>Missed an assignment deadline</option><option>Didn't understand a topic in class</option></select>
+                        <label className="block text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] uppercase ml-4 mb-2">The Failure (Pivotal Moment):</label>
+                        <select className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] outline-none" style={{ border: "1.5px solid var(--module-line)" }}><option>Failed a mock exam</option><option>Missed an assignment deadline</option><option>Didn't understand a topic in class</option></select>
                     </div>
                      <div>
-                        <label className="block text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase ml-4 mb-2">The Lesson (Your Asset):</label>
-                        <textarea placeholder="What is the single most valuable lesson, skill, or piece of wisdom you gained from this experience?" className="w-full h-24 bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }}></textarea>
+                        <label className="block text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] uppercase ml-4 mb-2">The Lesson (Your Asset):</label>
+                        <textarea placeholder="What is the single most valuable lesson, skill, or piece of wisdom you gained from this experience?" className="w-full h-24 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }}></textarea>
                     </div>
                 </div>
               </div>

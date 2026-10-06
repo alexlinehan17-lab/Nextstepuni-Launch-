@@ -1,24 +1,29 @@
+import { ConceptSequence } from './learning/WideFeatures';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { } from 'react';
 import { motion } from 'framer-motion';
 import {
-  MapPin, BatteryWarning, Filter, Zap, ClipboardCheck
+BatteryWarning,
+ClipboardCheck,
+Filter,
+MapPin,
+Zap
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
+import React from 'react';
+import { BEST_POSSIBLE_SELF_REFERENCE_LIST } from '../data/references/bestPossibleSelf';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { useModuleResponses } from '../hooks/useModuleResponses';
+import { useNorthStar } from '../hooks/useNorthStar';
 import { blueTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
+import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
-import { BEST_POSSIBLE_SELF_REFERENCE_LIST } from '../data/references/bestPossibleSelf';
-import { useModuleResponses } from '../hooks/useModuleResponses';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { useNorthStar } from '../hooks/useNorthStar';
+import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 import NorthStarCallout from './NorthStarCallout';
-import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
 
 const theme = blueTheme;
 
@@ -31,50 +36,48 @@ const WOOPPlanner = ({ responses, saveResponse }: { responses: Record<string, an
     const plan = responses['woopPlan'] || '';
     const isComplete = wish.trim() && outcome.trim() && obstacle.trim() && plan.trim();
 
-    return(
-        <div className="my-10 max-w-xl mx-auto bg-white dark:bg-zinc-900 rounded-2xl p-8 md:p-10" style={{ border: '2.5px solid #1C1917', boxShadow: '4px 4px 0px 0px #1C1917' }}>
-            <h4 className="font-serif text-2xl md:text-3xl font-medium text-zinc-900 dark:text-white text-center mb-8">Your WOOP Blueprint</h4>
+    return<div className="wr-skin" data-wide="WOOPPlanner"><div className="my-10 max-w-xl mx-auto bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-2xl p-8 md:p-10" style={{ border: "2.5px solid var(--module-line)", boxShadow: 'none' }}>
+            <h4 className="font-serif text-2xl md:text-3xl font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center mb-8">Your WOOP Blueprint</h4>
             <div className="space-y-7">
                 {/* Wish */}
                 <div>
                     <div className="flex items-center gap-2.5 mb-2">
-                        <div className="w-8 h-8 flex items-center justify-center shrink-0 font-serif font-medium text-base" style={{ backgroundColor: '#FCD34D', border: '2px solid #D97706', borderRadius: 10, boxShadow: '2px 2px 0px 0px #D97706', color: '#78350F' }}>W</div>
-                        <span className="text-[13px] font-medium text-zinc-900 dark:text-white">Wish — your most important goal right now</span>
+                        <div className="w-8 h-8 flex items-center justify-center shrink-0 font-serif font-medium text-base" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 10, boxShadow: 'none', color: "var(--module-danger-text)" }}>W</div>
+                        <span className="text-[13px] font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]">Wish — your most important goal right now</span>
                     </div>
-                    <input value={wish} onChange={e => saveResponse('woopWish', e.target.value)} placeholder="e.g., Get a top grade in English" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-zinc-900 dark:text-white placeholder-zinc-400 outline-none border-b-2 border-zinc-200 dark:border-zinc-700 focus:border-amber-600" />
+                    <input value={wish} onChange={e => saveResponse('woopWish', e.target.value)} placeholder="e.g., Get a top grade in English" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none border-b-2 border-[var(--module-line)] dark:border-[var(--module-line)] focus:border-[var(--module-line)]" />
                 </div>
                 {/* Outcome */}
                 <div>
                     <div className="flex items-center gap-2.5 mb-2">
-                        <div className="w-8 h-8 flex items-center justify-center shrink-0 font-serif font-medium text-base" style={{ backgroundColor: '#93C5FD', border: '2px solid #2563EB', borderRadius: 10, boxShadow: '2px 2px 0px 0px #2563EB', color: '#1E3A8A' }}>O</div>
-                        <span className="text-[13px] font-medium text-zinc-900 dark:text-white">Outcome — the best thing that would happen</span>
+                        <div className="w-8 h-8 flex items-center justify-center shrink-0 font-serif font-medium text-base" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 10, boxShadow: 'none', color: "var(--module-ink)" }}>O</div>
+                        <span className="text-[13px] font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]">Outcome — the best thing that would happen</span>
                     </div>
-                    <input value={outcome} onChange={e => saveResponse('woopOutcome', e.target.value)} placeholder="e.g., I'd feel proud and ready for whatever I take on next" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-zinc-900 dark:text-white placeholder-zinc-400 outline-none border-b-2 border-zinc-200 dark:border-zinc-700 focus:border-blue-600" />
+                    <input value={outcome} onChange={e => saveResponse('woopOutcome', e.target.value)} placeholder="e.g., I'd feel proud and ready for whatever I take on next" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none border-b-2 border-[var(--module-line)] dark:border-[var(--module-line)] focus:border-[var(--module-line)]" />
                 </div>
                 {/* Obstacle */}
                 <div>
                     <div className="flex items-center gap-2.5 mb-2">
-                        <div className="w-8 h-8 flex items-center justify-center shrink-0 font-serif font-medium text-base" style={{ backgroundColor: '#FCA5A5', border: '2px solid #DC2626', borderRadius: 10, boxShadow: '2px 2px 0px 0px #DC2626', color: '#7F1D1D' }}>O</div>
-                        <span className="text-[13px] font-medium text-zinc-900 dark:text-white">Obstacle — the main thing inside you that gets in the way</span>
+                        <div className="w-8 h-8 flex items-center justify-center shrink-0 font-serif font-medium text-base" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 10, boxShadow: 'none', color: "var(--module-danger-text)" }}>O</div>
+                        <span className="text-[13px] font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]">Obstacle — the main thing inside you that gets in the way</span>
                     </div>
-                    <input value={obstacle} onChange={e => saveResponse('woopObstacle', e.target.value)} placeholder="e.g., I procrastinate when the essay feels overwhelming" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-zinc-900 dark:text-white placeholder-zinc-400 outline-none border-b-2 border-zinc-200 dark:border-zinc-700 focus:border-red-600" />
+                    <input value={obstacle} onChange={e => saveResponse('woopObstacle', e.target.value)} placeholder="e.g., I procrastinate when the essay feels overwhelming" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none border-b-2 border-[var(--module-line)] dark:border-[var(--module-line)] focus:border-[var(--module-line)]" />
                 </div>
                 {/* Plan */}
                 <div>
                     <div className="flex items-center gap-2.5 mb-2">
-                        <div className="w-8 h-8 flex items-center justify-center shrink-0 font-serif font-medium text-base" style={{ backgroundColor: '#6EE7B7', border: '2px solid #059669', borderRadius: 10, boxShadow: '2px 2px 0px 0px #059669', color: '#064E3B' }}>P</div>
-                        <span className="text-[13px] font-medium text-zinc-900 dark:text-white">Plan — "If [obstacle], then I will..."</span>
+                        <div className="w-8 h-8 flex items-center justify-center shrink-0 font-serif font-medium text-base" style={{ backgroundColor: "var(--module-success-soft)", border: "2px solid var(--module-line)", borderRadius: 10, boxShadow: 'none', color: "var(--module-success-text)" }}>P</div>
+                        <span className="text-[13px] font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)]">Plan — "If [obstacle], then I will..."</span>
                     </div>
-                    <input value={plan} onChange={e => saveResponse('woopPlan', e.target.value)} placeholder="e.g., If I feel overwhelmed, I'll just write the first paragraph" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-zinc-900 dark:text-white placeholder-zinc-400 outline-none border-b-2 border-zinc-200 dark:border-zinc-700 focus:border-emerald-600" />
+                    <input value={plan} onChange={e => saveResponse('woopPlan', e.target.value)} placeholder="e.g., If I feel overwhelmed, I'll just write the first paragraph" className="w-full bg-transparent py-2.5 px-0 text-[15px] text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none border-b-2 border-[var(--module-line)] dark:border-[var(--module-line)] focus:border-[var(--module-line)]" />
                 </div>
             </div>
             {isComplete && (
-                <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-8 p-4 rounded-xl text-center" style={{ backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', boxShadow: '3px 3px 0px 0px #3A8D5F' }}>
-                    <p className="text-sm font-bold" style={{ color: '#1F5F3E' }}>Blueprint complete. You've turned a wish into an actual plan.</p>
+                <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-8 p-4 rounded-xl text-center" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>Blueprint complete. You've turned a wish into an actual plan.</p>
                 </motion.div>
             )}
-        </div>
-    );
+        </div></div>;
 };
 
 // --- MODULE COMPONENT ---
@@ -156,36 +159,36 @@ const BestPossibleSelfModule: React.FC<{ onBack: () => void; progress: ModulePro
            {activeSection === 3 && (
             <ReadingSection title="The WOOP Method." eyebrow="Step 4" icon={Zap} theme={theme}>
                 <p>{essentials ? 'Combine dream + reality check into the' : 'Putting the dream and the reality check together gives you the'} <Highlight description="A four-step system: Wish (what you want), Outcome (why it matters), Obstacle (what's in the way), Plan (what you'll do about it). It turns vague wishes into concrete action." theme={theme}>WOOP Method</Highlight>{essentials ? ': Wish, Outcome, Obstacle, Plan.' : ' — a simple system for turning wishes into real plans:'}</p>
-                <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>W</div>
+                <ConceptSequence kind="woop">
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>W</div>
                     <div>
-                      <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Wish</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>What's the goal? Be specific.</p>
+                      <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Wish</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>What's the goal? Be specific.</p>
                     </div>
                   </div>
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>O</div>
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>O</div>
                     <div>
-                      <p className="text-sm font-bold" style={{ color: '#78350F' }}>Outcome</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>What's the best thing that happens if you achieve it? Feel it.</p>
+                      <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Outcome</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>What's the best thing that happens if you achieve it? Feel it.</p>
                     </div>
                   </div>
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>O</div>
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>O</div>
                     <div>
-                      <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Obstacle</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>What's the main thing *inside you* that could derail it?</p>
+                      <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Obstacle</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>What's the main thing *inside you* that could derail it?</p>
                     </div>
                   </div>
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>P</div>
+                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-success)" }}>P</div>
                     <div>
-                      <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Plan</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>"If [obstacle happens], then I will [specific action]."</p>
+                      <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>Plan</p>
+                      <p className="text-[13px] mt-0.5" style={{ color: "var(--module-success-text)", opacity: 0.8 }}>"If [obstacle happens], then I will [specific action]."</p>
                     </div>
                   </div>
-                </div>
+                </ConceptSequence>
                 <p>That last step is the key. The "if [obstacle], then I will [action]" plan is an implementation intention — it pre-loads a response so your brain doesn't have to figure it out in the moment.<Cite n={4} /> When the obstacle hits, you already know what to do.</p>
             </ReadingSection>
           )}

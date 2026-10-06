@@ -72,3 +72,38 @@
 - Never repeat the same label as both context and detail (for example, "Your
   current grades · your current grades"). Every phrase in a line must add new
   information.
+
+## Approved module review — 5–6 October 2026
+
+- Never use emojis. Use the established hand-drawn artwork, paper/charcoal
+  surfaces and orange accent. Scaffolding Your Focus and its A small beginning
+  prompt use the regular thinker sitting on the orange star, not a timer.
+- Controls must look clickable before hover. Selected answers need strong
+  orange, mint or coral faces with contrasting text in both themes. Keep locked
+  answers readable and triage choice/progress dots visible on selected fills.
+- Keep compact citation bubbles and their animation. Definitions stay compact,
+  bounded by the viewport, and only one remains open at a time.
+- Preserve the bridge animation, Thought Reframer circular switches, Kobra OTP,
+  flip interaction, flat orange activity ring, repeated-plan confirmation,
+  segmented study-session bar and blocked/interleaved schedule layout.
+- Bars use outlined tracks and coloured fills with aligned labels. Chart axes
+  and ticks use quiet type sized for the rendered chart, including phones.
+  Keep scales, units/context, grids and source data. Scale labels stay outside
+  rotating balance illustrations; ring scores are centred geometrically.
+- Correct Driver vs Passenger placements after the full sort. Backwards
+  planning supports mouse, touch, keyboard and visible move controls.
+- Yet examples describe skills that naturally accept "yet". Show instructions
+  once, separately from the exercise. Bring Program Your Destination closer
+  to A small beginning; centre the weekly location planner.
+- Reuse onboarding current/target grades. Remove the duplicate CAO input
+  calculator, Build Your WRAP exercise/section and the support-advice block.
+- Breathing instructions sit outside the animated ring with a separate Begin
+  button and clear timing.
+- Defer subject Mastering exercises. This review includes general active recall,
+  spacing and interleaving exercises explicitly reviewed by Alex.
+- Research figures must retain primary-source context. Roediger & Karpicke
+  (2006), Experiment 2 reports independent group averages of 40% and 61% of
+  passage ideas recalled after one week: four reading periods versus one
+  reading period plus three recall tests. Reading lasted 5 minutes per period;
+  tests lasted 10 minutes. Do not describe these as equal study time.
+- New instructions from Alex supersede these recorded decisions.

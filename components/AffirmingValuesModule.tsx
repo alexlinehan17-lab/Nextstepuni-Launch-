@@ -1,23 +1,26 @@
+import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { MotionDiv } from './Motion';
 import {
-  BrainCircuit, Shield, AlertTriangle, UserCheck
+AlertTriangle,
+BrainCircuit,Shield,
+UserCheck
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
+import React,{ useEffect,useRef,useState } from 'react';
+import { AFFIRMING_VALUES_REFERENCE_LIST } from '../data/references/affirmingValues';
+import { COLORS } from '../design/tokens';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { useModuleResponses } from '../hooks/useModuleResponses';
 import { blueTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
-import { AFFIRMING_VALUES_REFERENCE_LIST } from '../data/references/affirmingValues';
-import { useModuleResponses } from '../hooks/useModuleResponses';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { COLORS } from '../design/tokens';
+import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = blueTheme;
 
@@ -122,36 +125,36 @@ const WorkingMemoryGrid = () => {
   const intrusiveBlocks = blocks.filter(b => b.threatened);
   const showBar = phase === 'threatened' && !animating;
   // Semantic: 100% = success (green), <70 = danger (red), otherwise warning (amber).
-  const pctColor = percentage === 100 ? COLORS.success : percentage < 70 ? '#DC2626' : '#D97706';
+  const pctColor = percentage === 100 ? COLORS.success : percentage < 70 ? "var(--module-danger-text)" : "var(--module-danger-text)";
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+    <div data-success={phase === "restored" || undefined} className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">
         Working Memory Under Threat
       </h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">
         See how invisible pressure steals your brainpower — and how a simple exercise gives it back.
       </p>
 
       {/* Capacity meter */}
       <div className="max-w-md mx-auto mb-6">
         <div className="flex items-baseline justify-between mb-2">
-          <span className="text-xs font-medium tracking-wider uppercase text-zinc-500">Brain Capacity</span>
+          <span className="text-xs font-medium tracking-wider uppercase text-[var(--module-muted)]">Brain Capacity</span>
           <MotionDiv
             key={percentage}
             initial={{ scale: 1.3, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
             className="font-serif font-bold text-xl"
-            style={{ color: pctColor }}
+            style={{ color: moduleText(pctColor) }}
           >
             {percentage}%
           </MotionDiv>
         </div>
-        <div className="bg-white dark:bg-zinc-800" style={{ border: '2.5px solid #1C1917', borderRadius: 12, boxShadow: '3px 3px 0px 0px #1C1917', height: 20, overflow: 'hidden' }}>
+        <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2.5px solid var(--module-line)", borderRadius: 12, boxShadow: 'none', height: 20, overflow: 'hidden' }}>
           <MotionDiv
             className="h-full"
-            style={{ backgroundColor: pctColor }}
+            style={{ backgroundColor: moduleFill(pctColor) }}
             animate={{ width: `${percentage}%` }}
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           />
@@ -168,10 +171,10 @@ const WorkingMemoryGrid = () => {
               transition={{ type: 'spring', stiffness: 400, damping: 25 }}
               className="relative flex items-center justify-center h-16 text-center px-1"
               style={{
-                backgroundColor: block.threatened ? '#FCA5A5' : '#93C5FD',
-                border: '2.5px solid #1C1917',
+                backgroundColor: moduleFill(block.threatened ? 'var(--module-danger)' : 'var(--module-success)'),
+                border: "2.5px solid var(--module-line)",
                 borderRadius: 12,
-                boxShadow: '3px 3px 0px 0px #1C1917',
+                boxShadow: 'none',
               }}
             >
               <MotionDiv
@@ -180,7 +183,7 @@ const WorkingMemoryGrid = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 className="text-xs font-bold leading-tight"
-                style={{ color: block.threatened ? '#991B1B' : '#1E3A8A' }}
+                style={{ color: moduleText(block.threatened ? "var(--module-danger-text)" : "var(--module-ink)") }}
               >
                 {block.label}
               </MotionDiv>
@@ -197,17 +200,17 @@ const WorkingMemoryGrid = () => {
           transition={{ duration: 0.5 }}
           className="max-w-md mx-auto mb-8"
         >
-          <div className="flex" style={{ border: '2.5px solid #1C1917', borderRadius: 16, boxShadow: '4px 4px 0px 0px #1C1917', overflow: 'hidden', height: 80 }}>
+          <div className="flex" style={{ border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none', overflow: 'hidden', height: 80 }}>
             {/* Productive segment */}
-            <div className="flex flex-col items-center justify-center" style={{ flex: activeCount, backgroundColor: '#2563EB', borderRight: threatenedCount > 0 ? '2.5px solid #1C1917' : 'none' }}>
-              <span className="text-[11px] font-medium uppercase tracking-wider" style={{ color: 'rgba(255,255,255,0.6)' }}>Productive</span>
-              <span className="font-serif font-bold text-2xl text-white">{percentage}%</span>
+            <div className="flex flex-col items-center justify-center" style={{ flex: activeCount, backgroundColor: 'var(--module-success)', borderRight: threatenedCount > 0 ? "2.5px solid var(--module-line)" : 'none' }}>
+              <span className="text-[11px] font-medium uppercase tracking-wider" style={{ color: 'var(--module-ink)' }}>Productive</span>
+              <span className="font-serif font-bold text-2xl text-[var(--module-ink)]">{percentage}%</span>
             </div>
             {/* Intrusive segment */}
             {threatenedCount > 0 && (
-              <div className="flex flex-col items-center justify-center" style={{ flex: threatenedCount, backgroundColor: '#DC2626' }}>
-                <span className="text-[11px] font-medium uppercase tracking-wider" style={{ color: 'rgba(255,255,255,0.6)' }}>Intrusive</span>
-                <span className="font-serif font-bold text-2xl text-white">{100 - percentage}%</span>
+              <div className="flex flex-col items-center justify-center" style={{ flex: threatenedCount, backgroundColor: "var(--module-danger)" }}>
+                <span className="text-[11px] font-medium uppercase tracking-wider" style={{ color: 'var(--module-ink)' }}>Intrusive</span>
+                <span className="font-serif font-bold text-2xl text-[var(--module-ink)]">{100 - percentage}%</span>
               </div>
             )}
           </div>
@@ -216,12 +219,12 @@ const WorkingMemoryGrid = () => {
           <div className="flex gap-3 mt-3">
             <div className="flex flex-wrap gap-1.5" style={{ flex: activeCount }}>
               {productiveBlocks.map((b, i) => (
-                <span key={i} className="text-[11px] font-medium px-2.5 py-1" style={{ backgroundColor: '#EFF6FF', border: '1.5px solid #2563EB', borderRadius: 8, color: '#1E3A8A' }}>{b.label}</span>
+                <span key={i} className="text-[11px] font-medium px-2.5 py-1" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 8, color: "var(--module-ink)" }}>{b.label}</span>
               ))}
             </div>
             <div className="flex flex-wrap gap-1.5" style={{ flex: threatenedCount }}>
               {intrusiveBlocks.map((b, i) => (
-                <span key={i} className="text-[11px] font-medium px-2.5 py-1" style={{ backgroundColor: '#FEF2F2', border: '1.5px solid #DC2626', borderRadius: 8, color: '#7F1D1D' }}>{b.label}</span>
+                <span key={i} className="text-[11px] font-medium px-2.5 py-1" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 8, color: "var(--module-danger-text)" }}>{b.label}</span>
               ))}
             </div>
           </div>
@@ -232,28 +235,28 @@ const WorkingMemoryGrid = () => {
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
         {phase === 'full' && (
           <motion.button
-            onClick={handleSimulateThreat}
+            data-sound="warning" onClick={handleSimulateThreat}
             disabled={animating}
-            className="px-6 py-3 text-white font-bold text-sm disabled:opacity-50"
-            style={{ backgroundColor: '#DC2626', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '4px 4px 0px 0px #1C1917' }}
-            whileHover={{ x: -2, y: -2, boxShadow: '6px 6px 0px 0px #1C1917' }}
-            whileTap={{ x: 2, y: 2, boxShadow: '1px 1px 0px 0px #1C1917' }}
-            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+            className="px-6 py-3 text-[var(--module-ink)] font-bold text-sm disabled:opacity-50"
+            style={{ backgroundColor: "var(--module-danger)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }}
+            whileHover={{ x: -2, y: -2, boxShadow: 'none' }}
+            whileTap={{ x: 2, y: 2, boxShadow: 'none' }}
+            transition={{ type: 'spring', stiffness: 400, damping: 25 }} data-wide-button="true"
           >
             Simulate Exam Pressure
           </motion.button>
         )}
         {phase === 'threatened' && (
           <motion.button
-            onClick={handleActivateShield}
+            data-sound="select" onClick={handleActivateShield}
             disabled={animating}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="px-6 py-3 text-white font-bold text-sm disabled:opacity-50"
-            style={{ backgroundColor: COLORS.accent, border: `2.5px solid ${COLORS.accentDark}`, borderRadius: 14, boxShadow: `4px 4px 0px 0px ${COLORS.accentDark}` }}
-            whileHover={{ x: -2, y: -2, boxShadow: `6px 6px 0px 0px ${COLORS.accentDark}` }}
-            whileTap={{ x: 2, y: 2, boxShadow: `1px 1px 0px 0px ${COLORS.accentDark}` }}
-            transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+            className="px-6 py-3 text-[var(--module-ink)] font-bold text-sm disabled:opacity-50"
+            style={{ backgroundColor: moduleFill(COLORS.accent), border: `2.5px solid ${COLORS.accentDark}`, borderRadius: 14, boxShadow: 'none' }}
+            whileHover={{ x: -2, y: -2, boxShadow: 'none' }}
+            whileTap={{ x: 2, y: 2, boxShadow: 'none' }}
+            transition={{ type: 'spring', stiffness: 400, damping: 25 }} data-wide-button="true"
           >
             Activate Shield (Values Affirmation)
           </motion.button>
@@ -264,18 +267,18 @@ const WorkingMemoryGrid = () => {
             animate={{ opacity: 1, y: 0 }}
             className="flex flex-col items-center gap-3"
           >
-            <div className="p-4 rounded-xl text-center" style={{ backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', boxShadow: '3px 3px 0px 0px #3A8D5F' }}>
-              <p className="text-sm font-bold" style={{ color: '#1F5F3E' }}>
+            <div className="p-4 rounded-xl text-center" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}>
+              <p className="text-sm font-bold" style={{ color: "var(--module-success-text)" }}>
                 Full capacity restored. Affirming your values frees your working memory.
               </p>
             </div>
             <motion.button
               onClick={handleReset}
               className="px-5 py-2 font-bold text-sm"
-              style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}
-              whileHover={{ x: -1, y: -1, boxShadow: '4px 4px 0px 0px #1C1917' }}
-              whileTap={{ x: 1, y: 1, boxShadow: '1px 1px 0px 0px #1C1917' }}
-              transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+              style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }}
+              whileHover={{ x: -1, y: -1, boxShadow: 'none' }}
+              whileTap={{ x: 1, y: 1, boxShadow: 'none' }}
+              transition={{ type: 'spring', stiffness: 400, damping: 25 }} data-wide-button="true"
             >
               Reset Demo
             </motion.button>
@@ -308,17 +311,17 @@ const ValuesSelector = ({ savedValues, onSave }: { savedValues?: string[]; onSav
     };
 
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Core Values Audit</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Select your top 3 most important personal values.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Core Values Audit</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Select your top 3 most important personal values.</p>
              <div className="flex flex-wrap justify-center gap-3">
                 {values.map(value => (
                     <motion.button
                         key={value}
                         onClick={() => handleSelect(value)}
-                        className={`px-4 py-2 text-sm font-bold rounded-full transition-all ${selected.includes(value) ? 'bg-blue-500 text-white' : ''}`}
-                        style={selected.includes(value) ? { border: '2.5px solid #1D4ED8', boxShadow: '3px 3px 0px 0px #1D4ED8' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', boxShadow: '3px 3px 0px 0px #1C1917' }}
-                        whileHover={{y: -2}}
+                        className={`px-4 py-2 text-sm font-bold rounded-full transition-all ${selected.includes(value) ? "bg-[var(--module-solid)] text-[var(--module-ink)]" : ''}`}
+                        style={selected.includes(value) ? { border: "2.5px solid var(--module-line)", boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}
+                        whileHover={{y: -2}} data-wide-button="true" data-selected={!!(selected.includes(value))} data-tone="orange" aria-pressed={!!(selected.includes(value))}
                     >
                         {value}
                     </motion.button>
@@ -327,7 +330,7 @@ const ValuesSelector = ({ savedValues, onSave }: { savedValues?: string[]; onSav
              {selected.length === 3 && (
                 <div className="mt-8">
                     <h5 className="font-bold text-center">Your 15-Minute Writing Prompt:</h5>
-                    <p className="p-4 bg-zinc-100 dark:bg-zinc-800 rounded-xl mt-2 text-center text-sm">Choose ONE of these values: <span className="font-bold">{selected.join(', ')}</span>. Write for 15 minutes about why this value is important to you and describe a time when you lived up to it.</p>
+                    <p className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl mt-2 text-center text-sm">Choose ONE of these values: <span className="font-bold">{selected.join(', ')}</span>. Write for 15 minutes about why this value is important to you and describe a time when you lived up to it.</p>
                 </div>
              )}
         </div>

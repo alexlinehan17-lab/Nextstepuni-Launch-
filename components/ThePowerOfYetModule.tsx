@@ -1,3 +1,5 @@
+import { BrandedBridge,InstructionList } from './learning/BrandedFeatures';
+import { moduleFill } from './learning/brandTokens';
 
 
 /**
@@ -5,19 +7,21 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
+import { AnimatePresence,motion } from 'framer-motion';
 import {
-  Book, RotateCcw, Brain, Link, Wrench
+Book,
+Brain,Link,
+RotateCcw,
+Wrench
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { yellowTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { Cite } from './ModuleReferences';
+import React,{ useEffect,useRef,useState } from 'react';
 import { POWER_OF_YET_REFERENCE_LIST } from '../data/references/powerOfYet';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { yellowTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 
 const theme = yellowTheme;
 
@@ -25,9 +29,9 @@ const theme = yellowTheme;
 const YetReframe = () => {
     const statements = [
       { fixed: "I can't do Honours Maths", yet: "I can't do Honours Maths... yet", shift: "Difficulty = challenge to overcome" },
-      { fixed: "I'm terrible at Irish essays", yet: "I'm terrible at Irish essays... yet", shift: "Weakness = area of future growth" },
+      { fixed: "I can't write a strong Irish essay", yet: "I can't write a strong Irish essay... yet", shift: "Weakness = area of future growth" },
       { fixed: "I don't understand Chemistry", yet: "I don't understand Chemistry... yet", shift: "Confusion = starting point, not endpoint" },
-      { fixed: "I'll never get the grades I need", yet: "I'll never get the grades I need... yet", shift: "Gap = distance to close, not a wall" },
+      { fixed: "I haven't reached the grades I need", yet: "I haven't reached the grades I need... yet", shift: "Gap = distance to close, not a wall" },
     ];
 
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -50,20 +54,19 @@ const YetReframe = () => {
 
     const engagementPct = Math.round((reframed.size / statements.length) * 100);
 
-    return (
-      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The "Yet" Reframe</h4>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click each fixed statement to add "yet" and watch the cognitive shift.</p>
+    return <div className="wr-skin" data-wide="YetReframe"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The "Yet" Reframe</h4>
+        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Click each fixed statement to add "yet" and watch the cognitive shift.</p>
 
         {/* Engagement meter */}
         <div className="mb-6">
           <div className="flex items-center justify-between mb-1.5">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Brain Engagement</span>
-            <span className="text-[10px] font-bold text-yellow-600 dark:text-yellow-400">{engagementPct}%</span>
+            <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--module-muted)] dark:text-[var(--module-muted)]">Brain Engagement</span>
+            <span className="text-[10px] font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{engagementPct}%</span>
           </div>
-          <div className="w-full h-2.5 bg-zinc-100 dark:bg-zinc-900 rounded-full overflow-hidden">
+          <div className="w-full h-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full overflow-hidden">
             <motion.div
-              className="h-full rounded-full bg-gradient-to-r from-rose-400 via-yellow-400 to-emerald-400"
+              className="h-full rounded-full bg-[var(--module-orange)] from-[var(--module-orange)] via-[var(--module-orange)] to-[var(--module-orange)]"
               animate={{ width: `${engagementPct}%` }}
               transition={{ type: 'spring', stiffness: 80, damping: 15 }}
             />
@@ -81,14 +84,14 @@ const YetReframe = () => {
                 onClick={() => handleClick(i)}
                 disabled={isReframed}
                 className="w-full text-left p-4 rounded-xl transition-all"
-                style={isReframed ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}
-                layout
+                style={isReframed ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }}
+                layout data-wide-button="true" data-selected={!!(isReframed)} data-tone="mint" aria-pressed={!!(isReframed)}
               >
                 <div className="flex items-start gap-3">
                   {/* Status indicator */}
                   <motion.div
                     animate={{
-                      backgroundColor: isReframed ? '#3A8D5F' : '#e4e4e7',
+                      backgroundColor: moduleFill(isReframed ? "var(--module-success)" : "var(--module-surface)"),
                       scale: isAnimating ? [1, 1.3, 1] : 1,
                     }}
                     className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
@@ -123,16 +126,16 @@ const YetReframe = () => {
                           initial={{ opacity: 0, y: 4 }}
                           animate={{ opacity: 1, y: 0 }}
                         >
-                          <p className="font-semibold text-sm text-emerald-700 dark:text-emerald-300">{s.yet}</p>
-                          <p className="text-[11px] text-emerald-600/70 dark:text-emerald-400/60 mt-1">{s.shift}</p>
+                          <p className="font-semibold text-sm text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">{s.yet}</p>
+                          <p className="text-[11px] text-[var(--module-success-text)] dark:text-[var(--module-success-text)] mt-1">{s.shift}</p>
                         </motion.div>
                       ) : (
                         <motion.div key="fixed">
-                          <p className={`font-semibold text-sm ${isAnimating ? 'text-rose-500 line-through' : 'text-zinc-700 dark:text-zinc-300'}`}>
+                          <p className={`font-semibold text-sm ${isAnimating ? "text-[var(--module-danger-text)] line-through" : "text-[var(--module-ink)] dark:text-[var(--module-muted)]"}`}>
                             {s.fixed}
                           </p>
                           {!isAnimating && (
-                            <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-1">Tap to reframe</p>
+                            <p className="text-[11px] text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">Tap to reframe</p>
                           )}
                         </motion.div>
                       )}
@@ -148,18 +151,17 @@ const YetReframe = () => {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-6 p-4 bg-yellow-50 dark:bg-yellow-950/20 rounded-xl border border-yellow-200 dark:border-yellow-800/40 text-center"
+            className="mt-6 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] text-center"
           >
-            <p className="text-sm font-semibold text-yellow-700 dark:text-yellow-300">Every "I can't" is just an "I can't yet" waiting to be unlocked.</p>
-            <p className="text-xs text-yellow-600/70 dark:text-yellow-400/60 mt-1">That single word keeps your brain engaged with the error instead of shutting down.</p>
+            <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Every "I can't" is just an "I can't yet" waiting to be unlocked.</p>
+            <p className="text-xs text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-1">That single word keeps your brain engaged with the error instead of shutting down.</p>
           </motion.div>
         )}
 
         {reframed.size > 0 && reframed.size < statements.length && (
-          <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mt-4">{statements.length - reframed.size} more to go...</p>
+          <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-4">{statements.length - reframed.size} more to go...</p>
         )}
-      </div>
-    );
+      </div></div>;
 };
 
 const BRIDGE_SCENARIOS = [
@@ -207,281 +209,32 @@ const BRIDGE_SCENARIOS = [
   },
 ];
 
-const WEAK_FEEDBACK = [
-  "Too vague — what specifically will you do?",
-  "That's wishful thinking — name a concrete step.",
-  "Not a strategy — try something measurable.",
-];
-
-const BridgeBuilder = () => {
-  const [scenarioIdx, setScenarioIdx] = useState(0);
-  const [placedStrong, setPlacedStrong] = useState<string[]>([]);
-  const [usedWeak, setUsedWeak] = useState<Set<string>>(new Set());
-  const [feedback, setFeedback] = useState<string | null>(null);
-  const [wobbling, setWobbling] = useState<string | null>(null);
-  const weakTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  useEffect(() => {
-    return () => {
-      if (weakTimerRef.current) clearTimeout(weakTimerRef.current);
-    };
-  }, []);
-
-  const scenario = BRIDGE_SCENARIOS[scenarioIdx];
-  const bridgeComplete = placedStrong.length >= 3;
-
-  const [shuffled, setShuffled] = useState(() => shuffle(scenario.strong, scenario.weak));
-
-  function shuffle(strong: string[], weak: string[]) {
-    const arr = [...strong, ...weak];
-    for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    return arr;
-  }
-
-  const handleNewScenario = () => {
-    const next = (scenarioIdx + 1) % BRIDGE_SCENARIOS.length;
-    setScenarioIdx(next);
-    setPlacedStrong([]);
-    setUsedWeak(new Set());
-    setFeedback(null);
-    setWobbling(null);
-    const s = BRIDGE_SCENARIOS[next];
-    setShuffled(shuffle(s.strong, s.weak));
-  };
-
-  const handleAction = (action: string) => {
-    if (bridgeComplete) return;
-    if (placedStrong.includes(action) || usedWeak.has(action)) return;
-
-    const isStrong = scenario.strong.includes(action);
-
-    if (isStrong) {
-      setPlacedStrong(prev => [...prev, action]);
-      setFeedback(null);
-      setWobbling(null);
-    } else {
-      const weakIdx = scenario.weak.indexOf(action);
-      const msg = WEAK_FEEDBACK[weakIdx >= 0 && weakIdx < WEAK_FEEDBACK.length ? weakIdx : 0];
-      setWobbling(action);
-      setFeedback(msg);
-      weakTimerRef.current = setTimeout(() => {
-        setUsedWeak(prev => new Set(prev).add(action));
-        setWobbling(null);
-        setFeedback(null);
-      }, 1500);
-    }
-  };
-
-
-
-  return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      {/* Section chip + title */}
-      <div className="text-center mb-2">
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Growth Mindset Activity</span>
-        <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Bridge Builder</h4>
-        <p className="text-sm mt-1" style={{ color: '#7a7068' }}>
-          Build a bridge from "Yet" to your goal by choosing <strong>specific, concrete</strong> actions.
-        </p>
-      </div>
-
-      {/* Bridge strength chip */}
-      <div className="flex justify-center mb-8 mt-3">
-        <div className="inline-flex items-center gap-2" style={{ backgroundColor: '#FDEEDF', border: '1px solid rgba(242,107,31,0.2)', borderRadius: 20, padding: '5px 14px' }}>
-          <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.08em', color: '#9e9186', textTransform: 'uppercase' as const }}>Bridge Strength</span>
-          <span style={{ fontSize: 13, fontWeight: 600, color: '#8C3A0E' }}>{placedStrong.length} / 3 planks</span>
-        </div>
-      </div>
-
-      {/* Bridge Scene */}
-      <div className="relative flex items-stretch justify-center gap-0 mb-8 select-none" style={{ minHeight: 140 }}>
-        {/* Left — "Yet" card */}
-        <div className="flex items-center z-10 w-28 md:w-36 shrink-0">
-          <div className="w-full bg-white dark:bg-zinc-900 flex items-center justify-center px-3" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 16px' }}>
-            <p className="font-serif italic text-center leading-tight" style={{ fontSize: 15, color: '#5a5550' }}>
-              {scenario.yet}
-            </p>
-          </div>
-        </div>
-
-        {/* Bridge gap with planks */}
-        <div className="relative flex-1 max-w-[240px] md:max-w-[300px] flex items-center">
-          {/* Baseline */}
-          <div className="absolute bottom-1/2 left-0 right-0" style={{ height: 2, backgroundColor: '#d0cdc8' }} />
-
-          {/* Planks */}
-          <div className="relative w-full flex gap-2 justify-center items-center px-2">
-            {[0, 1, 2].map(i => {
-              const placed = i < placedStrong.length;
-              return (
-                <MotionDiv
-                  key={i}
-                  initial={placed ? { scale: 0.8, opacity: 0 } : {}}
-                  animate={placed ? { scale: 1, opacity: 1 } : { opacity: 1 }}
-                  transition={{ type: 'spring', stiffness: 200, damping: 18 }}
-                  className="flex items-center justify-center"
-                  style={{
-                    flex: 1,
-                    height: 48,
-                    borderRadius: 8,
-                    backgroundColor: placed ? '#F26B1F' : '#f4f0eb',
-                    border: placed ? '2px solid #B54D14' : '2px dashed #d0cdc8',
-                  }}
-                >
-                  {placed && (
-                    <span style={{ fontSize: 12, fontWeight: 600, color: '#FFFFFF' }}>Plank {i + 1}</span>
-                  )}
-                </MotionDiv>
-              );
-            })}
-          </div>
-
-          {/* Crack overlay */}
-          <AnimatePresence>
-            {wobbling && (
-              // Centre via the wrapper: the MotionDiv animates `x` (the shake),
-              // which writes an inline transform that would override any
-              // -translate-x/y centring on the element itself.
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <MotionDiv
-                  key="wobble"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1, x: [-4, 4, -4, 4, 0] }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="flex items-center justify-center"
-                  style={{ height: 48, width: '30%', borderRadius: 8, backgroundColor: '#F1F0ED', border: '2px solid #A8746E' }}
-                >
-                  <span style={{ fontSize: 12, fontWeight: 600, color: '#A8746E' }}>Crack!</span>
-                </MotionDiv>
-              </div>
-            )}
-          </AnimatePresence>
-        </div>
-
-        {/* Right — Goal card */}
-        <div className="flex items-center z-10 w-28 md:w-36 shrink-0">
-          <div className="w-full flex items-center justify-center px-3" style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 14, padding: '20px 16px' }}>
-            <p className="font-serif font-semibold text-center leading-tight" style={{ fontSize: 15, color: '#8C3A0E' }}>
-              {scenario.goal}
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Feedback callout */}
-      <AnimatePresence>
-        {feedback && (
-          <MotionDiv
-            key="feedback"
-            initial={{ opacity: 0, y: -6 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -6 }}
-            className="mb-4"
-            style={{ border: '1px solid #d0cdc8', backgroundColor: '#F1F0ED', borderRadius: 10, padding: '12px 16px' }}
-          >
-            <p className="text-sm italic" style={{ color: '#A8746E' }}>{feedback}</p>
-          </MotionDiv>
-        )}
-      </AnimatePresence>
-
-      {/* Completion */}
-      <AnimatePresence>
-        {bridgeComplete && (
-          <MotionDiv
-            key="celebrate"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="mb-4"
-            style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 16, padding: 24 }}
-          >
-            <p className="font-serif font-bold text-center" style={{ fontSize: 20, color: '#8C3A0E' }}>Bridge complete.</p>
-            <p className="text-center mt-1" style={{ fontSize: 14, color: '#F26B1F' }}>You turned "yet" into a concrete plan.</p>
-          </MotionDiv>
-        )}
-      </AnimatePresence>
-
-      {/* Action buttons */}
-      {!bridgeComplete && (
-        <div>
-          <p className="text-center mb-3" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>
-            Choose an action to place on the bridge
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-xl mx-auto">
-            {shuffled.map(action => {
-              const isPlaced = placedStrong.includes(action);
-              const isDiscarded = usedWeak.has(action);
-              const isWobbling = wobbling === action;
-              const disabled = isPlaced || isDiscarded || isWobbling;
-
-              return (
-                <MotionDiv
-                  key={action}
-                  whileHover={!disabled ? { scale: 1.02 } : {}}
-                  whileTap={!disabled ? { scale: 0.98 } : {}}
-                  onClick={() => !disabled && handleAction(action)}
-                  className="text-left text-sm transition-all"
-                  style={
-                    isPlaced
-                      ? { backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 14, padding: '16px 20px', color: '#8C3A0E', opacity: 0.7 }
-                      : isDiscarded
-                      ? { backgroundColor: '#fafaf8', border: '2px solid #e0dbd4', borderRadius: 14, padding: '16px 20px', color: '#b0a898', textDecoration: 'line-through', pointerEvents: 'none' as const }
-                      : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 14, padding: '16px 20px', color: '#1a1a1a', cursor: 'pointer' }
-                  }
-                >
-                  {action}
-                </MotionDiv>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* New Scenario */}
-      <div className="mt-6 text-center">
-        <button
-          onClick={handleNewScenario}
-          className="font-medium transition-colors"
-          style={{ fontSize: 13, color: '#9e9186', background: 'none', border: 'none' }}
-          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#F26B1F'; }}
-          onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#9e9186'; }}
-        >
-          New Scenario
-        </button>
-      </div>
-    </div>
-  );
-};
+const BridgeBuilder = () => <BrandedBridge scenarios={BRIDGE_SCENARIOS} />;
 
 const YetAudit = () => {
     const [block, setBlock] = useState('');
     const [action, setAction] = useState('');
 
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your "Yet" Audit</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Run your own block through the Identify-Append-Bridge protocol.</p>
+    return <div className="wr-skin" data-wide="YetAudit"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your "Yet" Audit</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Run your own block through the Identify-Append-Bridge protocol.</p>
             <div className="space-y-6 max-w-xl mx-auto">
                 <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-yellow-600 dark:text-yellow-400 mb-2">1. Identify the Block</p>
-                    <input value={block} onChange={e => setBlock(e.target.value)} placeholder="e.g., I can't write a good Irish essay" className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all" style={{ border: '1.5px solid #E7E5E4' }}/>
+                    <p className="text-xs font-bold uppercase tracking-widest text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">1. Identify the Block</p>
+                    <input aria-label="Identify the block" value={block} onChange={e => setBlock(e.target.value)} placeholder="e.g., I can't write a good Irish essay" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all" style={{ border: "1.5px solid var(--module-line)" }}/>
                 </div>
                 <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-yellow-600 dark:text-yellow-400 mb-2">2. Add "Yet"</p>
-                    <div className="p-3 rounded-lg text-sm min-h-[44px]" style={block ? { backgroundColor: '#6EE7B7', border: '2px solid #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '1.5px solid #E7E5E4', color: '#A1A1AA' }}>
+                    <p className="text-xs font-bold uppercase tracking-widest text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">2. Add "Yet"</p>
+                    <div role="status" aria-live="polite" data-filled={!!block} className="p-3 rounded-lg text-sm min-h-[44px]" style={block ? { backgroundColor: "var(--module-success-soft)", border: "2px solid var(--module-line)", color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", color: "var(--module-muted)" }}>
                         {block ? `${block}... yet.` : '...'}
                     </div>
                 </div>
                 <div>
-                    <p className="text-xs font-bold uppercase tracking-widest text-yellow-600 dark:text-yellow-400 mb-2">3. Bridge to Action</p>
-                    <input value={action} onChange={e => setAction(e.target.value)} placeholder="...so I will ask my teacher for one example tomorrow." className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none transition-all" style={{ border: '1.5px solid #E7E5E4' }}/>
+                    <p className="text-xs font-bold uppercase tracking-widest text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">3. Bridge to Action</p>
+                    <input aria-label="Bridge to action" value={action} onChange={e => setAction(e.target.value)} placeholder="...so I will ask my teacher for one example tomorrow." className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none transition-all" style={{ border: "1.5px solid var(--module-line)" }}/>
                 </div>
             </div>
-        </div>
-    );
+        </div></div>;
 }
 
 // --- MODULE COMPONENT ---
@@ -570,29 +323,7 @@ const ThePowerOfYetModule: React.FC<{ onBack: () => void; progress: ModuleProgre
                     <p>The full sentence isn't just "I can't do this yet." It's "I can't do this yet, *so I will*..." That extra bit stops "yet" from being an excuse and turns it into a starting point. The key is that the next step is specific and concrete: research on "implementation intentions" finds that naming exactly what you'll do (and when) makes you far more likely to actually do it than a vague "I'll try harder."<Cite n={2} /> Here's the full method:</p>
                   </>
                 )}
-                <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
-                    <div>
-                      <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Identify the Block</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Name the specific thing you're struggling with right now.</p>
-                    </div>
-                  </div>
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
-                    <div>
-                      <p className="text-sm font-bold" style={{ color: '#78350F' }}>Add "Yet"</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Turn your "I can't" into "I can't... yet." One word changes the whole meaning.</p>
-                    </div>
-                  </div>
-                  <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
-                    <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
-                    <div>
-                      <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Bridge to Action</p>
-                      <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Finish the sentence with "...so I will" and a specific, concrete next step.</p>
-                    </div>
-                  </div>
-                </div>
+                <InstructionList kind="yet" />
                 <BridgeBuilder />
                 <MicroCommitment theme={theme}>
                   <p>Think of your toughest subject. Your Block might be "I can't understand Topic X." Your Bridge could be "I will watch one YouTube video explaining it tonight."</p>
