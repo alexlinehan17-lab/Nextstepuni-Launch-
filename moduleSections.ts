@@ -243,8 +243,7 @@ export const MODULE_SECTIONS: Record<string, SectionInfo[]> = {
     { title: 'Protect Your Head After Exams', eyebrow: '03 // The Post-Exam Trap' },
     { title: 'Sleep: Your Secret Weapon', eyebrow: '04 // Sleep for Exams' },
     { title: 'Food and Focus', eyebrow: '05 // Eating for Exam Day' },
-    { title: 'Your Personal Crisis Plan', eyebrow: '06 // Plan Before Panic Hits' },
-    { title: 'The 7-Day Countdown', eyebrow: '07 // Your Final Week Plan' },
+    { title: 'The 7-Day Countdown', eyebrow: '06 // Your Final Week Plan' },
   ],
   'game-day-protocol': [
     { title: 'The Athlete Mindset', eyebrow: '01 // The Game Plan' },

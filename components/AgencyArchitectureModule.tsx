@@ -1,22 +1,27 @@
+import { ConceptSequence } from './learning/WideFeatures';
+import { moduleBorder,moduleFill } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
+import { AnimatePresence,motion } from 'framer-motion';
 import {
-  Code, SlidersHorizontal, UserX, Recycle, Flag
+Code,
+Flag,
+Recycle,
+SlidersHorizontal,UserX
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
+import React,{ useEffect,useState } from 'react';
+import { AGENCY_ARCHITECTURE_REFERENCE_LIST } from '../data/references/agencyArchitecture';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { useModuleResponses } from '../hooks/useModuleResponses';
 import { amberTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory } from './ModuleShared';
+import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
-import { AGENCY_ARCHITECTURE_REFERENCE_LIST } from '../data/references/agencyArchitecture';
-import { useModuleResponses } from '../hooks/useModuleResponses';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = amberTheme;
 
@@ -81,16 +86,16 @@ const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: num
   const label = getLabel();
 
   const labelBgClass = label.color === 'emerald'
-    ? 'bg-successTint dark:bg-success/15 text-successDarkText dark:text-success'
+    ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 text-[var(--module-success-text)] dark:text-[var(--module-success-text)]"
     : label.color === 'rose'
-    ? 'bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300'
-    : 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300';
+    ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"
+    : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)]";
 
   const borderClass = label.color === 'emerald'
-    ? 'border-success/30 dark:border-success/40'
+    ? "border-success/30 dark:border-success/40"
     : label.color === 'rose'
-    ? 'border-rose-200 dark:border-rose-700'
-    : 'border-amber-200 dark:border-amber-700';
+    ? "border-[var(--module-line)] dark:border-[var(--module-line)]"
+    : "border-[var(--module-line)] dark:border-[var(--module-line)]";
 
   const handleSliderChange = (dimension: 'locus' | 'stability' | 'controllability', value: number) => {
     const setters = { locus: setLocus, stability: setStability, controllability: setControllability };
@@ -132,20 +137,20 @@ const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: num
   const SLIDER_COLORS = ['chunky-slider-sky', 'chunky-slider-sunshine', 'chunky-slider-mint'];
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Attribution Mapper</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-10">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Attribution Mapper</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-10">
         Think of a recent setback or bad result. Map how you interpreted it:
       </p>
 
       <div className="space-y-8">
         {sliders.map((s, index) => (
           <div key={s.label}>
-            <p className="text-sm font-bold text-zinc-700 dark:text-zinc-200 mb-1 text-center">{s.label}</p>
+            <p className="text-sm font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-1 text-center">{s.label}</p>
             <div className="flex items-center gap-3">
               <div className="flex flex-col items-end w-28 shrink-0">
-                <span className="text-xs font-semibold text-zinc-600 dark:text-zinc-300">{s.leftLabel}</span>
-                <span className="text-[10px] text-zinc-400 dark:text-zinc-500 italic text-right">{s.leftExample}</span>
+                <span className="text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{s.leftLabel}</span>
+                <span className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] italic text-right">{s.leftExample}</span>
               </div>
               <input
                 type="range"
@@ -156,8 +161,8 @@ const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: num
                 className={`chunky-slider ${SLIDER_COLORS[index % 3]}`}
               />
               <div className="flex flex-col items-start w-28 shrink-0">
-                <span className="text-xs font-semibold text-zinc-600 dark:text-zinc-300">{s.rightLabel}</span>
-                <span className="text-[10px] text-zinc-400 dark:text-zinc-500 italic text-left">{s.rightExample}</span>
+                <span className="text-xs font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)]">{s.rightLabel}</span>
+                <span className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] italic text-left">{s.rightExample}</span>
               </div>
             </div>
           </div>
@@ -174,7 +179,7 @@ const AttributionMapper = ({ savedValues, onSave }: { savedValues?: { locus: num
         <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${labelBgClass}`}>
           {label.text}
         </span>
-        <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed">
+        <p className="mt-3 text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-relaxed">
           {getExplanation()}
         </p>
       </MotionDiv>
@@ -195,20 +200,18 @@ const AttributionSorter = ({ savedChoices, onSave }: { savedChoices?: { [key: st
       if (savedChoices) setChoice(savedChoices);
     }, [savedChoices]);
 
-    return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Control Panel</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Scenario: You fail a test. Which of these reasons are actually within your control?</p>
+    return<div className="wr-skin" data-wide="AttributionSorter"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Control Panel</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Scenario: You fail a test. Which of these reasons are actually within your control?</p>
             <div className="space-y-3">
                 {reasons.map(reason => (
-                    <button key={reason.text} onClick={() => { const next = {...choice, [reason.text]: !choice[reason.text]}; setChoice(next); onSave?.(next); }} className={`w-full p-4 rounded-xl text-left font-bold text-sm transition-all`} style={choice[reason.text] ? (reason.control ? { backgroundColor: '#E8F2EC', border: '2.5px solid #3A8D5F', borderRadius: 14, boxShadow: '3px 3px 0px 0px #3A8D5F' } : { backgroundColor: '#FEF2F2', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626' }) : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>
+                    <button key={reason.text} onClick={() => { const next = {...choice, [reason.text]: !choice[reason.text]}; setChoice(next); onSave?.(next); }} className={`w-full p-4 rounded-xl text-left font-bold text-sm transition-all`} style={choice[reason.text] ? (reason.control ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }) : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!choice[reason.text]} data-tone={reason.control ? 'mint' : 'coral'} aria-pressed={!!choice[reason.text]}>
                         {reason.text}
-                        {choice[reason.text] && <span className={`ml-2 font-semibold text-xs ${reason.control ? 'text-success' : 'text-rose-600'}`}>{reason.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)'}</span>}
+                        {choice[reason.text] && <span className={`ml-2 font-semibold text-xs ${reason.control ? "text-[var(--module-success-text)]" : "text-[var(--module-danger-text)]"}`}>{reason.control ? '(CONTROLLABLE)' : '(UNCONTROLLABLE)'}</span>}
                     </button>
                 ))}
             </div>
-        </div>
-    );
+        </div></div>;
 };
 
 const AttributionReframeDrill = () => {
@@ -229,9 +232,9 @@ const AttributionReframeDrill = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white text-center">Attribution Reframe Drill</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click on a self-defeating thought to transform it into an empowering one.</p>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Attribution Reframe Drill</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Click on a self-defeating thought to transform it into an empowering one.</p>
       <div className="space-y-3">
         {examples.map((ex) => (
           <motion.button
@@ -242,9 +245,9 @@ const AttributionReframeDrill = () => {
             className="module-reframe-card w-full p-6 rounded-xl cursor-pointer border relative min-h-[100px] flex items-center justify-center transition-colors"
             data-reframed={flipped.includes(ex.id)}
             animate={{
-              backgroundColor: flipped.includes(ex.id) ? 'rgba(232, 242, 236, 1)' : 'rgba(250, 250, 247, 1)',
-              borderColor: flipped.includes(ex.id) ? 'rgb(58 141 95)' : 'rgb(229 228 223)'
-            }}
+              backgroundColor: moduleFill(flipped.includes(ex.id) ? 'var(--module-surface)' : 'var(--module-surface)'),
+              borderColor: moduleBorder(flipped.includes(ex.id) ? 'rgb(58 141 95)' : 'rgb(229 228 223)')
+            }} data-wide-button="true"
           >
             <AnimatePresence mode="wait">
               <motion.p
@@ -253,12 +256,12 @@ const AttributionReframeDrill = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className={`text-sm text-center font-medium ${flipped.includes(ex.id) ? 'text-successDarkText' : 'text-zinc-600 dark:text-zinc-400'}`}
+                className={`text-sm text-center font-medium ${flipped.includes(ex.id) ? "text-[var(--module-success-text)]" : "text-[var(--module-ink)] dark:text-[var(--module-muted)]"}`}
               >
                 "{flipped.includes(ex.id) ? ex.adaptive : ex.maladaptive}"
               </motion.p>
             </AnimatePresence>
-            <p className="absolute bottom-2.5 right-4 text-[9px] font-medium tracking-wider text-zinc-300 dark:text-zinc-600 uppercase">
+            <p className="absolute bottom-2.5 right-4 text-[9px] font-medium tracking-wider text-[var(--module-muted)] dark:text-[var(--module-ink)] uppercase">
               {flipped.includes(ex.id) ? 'Reframed' : 'Tap to reframe'}
             </p>
           </motion.button>
@@ -320,32 +323,32 @@ const AgencyArchitectureModule: React.FC<{ onBack: () => void; progress: ModuleP
           {activeSection === 1 && (
             <ReadingSection title="The Three Dimensions." eyebrow="Step 2" icon={SlidersHorizontal} theme={theme}>
               <p>{essentials ? 'Your failure story has three parts. Each one changes how you feel.' : 'Every story you tell yourself about a failure can be broken down along three dimensions.'}<Cite n={1} /></p>
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+              <ConceptSequence kind="dimensions">
                 {/* Card 1 — Sky */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Locus of Control</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>Is the cause <Highlight description="You're saying the cause is something about you — like how much effort you put in or how you prepared." theme={theme}>Internal</Highlight> (about you) or <Highlight description="You're saying the cause is something outside of you — like the teacher, the exam, or bad luck." theme={theme}>External</Highlight> (about the world)?</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>Locus of Control</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>Is the cause <Highlight description="You're saying the cause is something about you — like how much effort you put in or how you prepared." theme={theme}>Internal</Highlight> (about you) or <Highlight description="You're saying the cause is something outside of you — like the teacher, the exam, or bad luck." theme={theme}>External</Highlight> (about the world)?</p>
                   </div>
                 </div>
                 {/* Card 2 — Sunshine */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Stability</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Is the cause <Highlight description="You're saying this is permanent — it's always been this way and always will be. Like thinking 'I'm just not a maths person.'" theme={theme}>Stable</Highlight> (permanent) or <Highlight description="You're saying this is temporary — it happened this time but it's not a forever thing. Like thinking 'I didn't study enough for this specific test.'" theme={theme}>Unstable</Highlight> (temporary)?</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Stability</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Is the cause <Highlight description="You're saying this is permanent — it's always been this way and always will be. Like thinking 'I'm just not a maths person.'" theme={theme}>Stable</Highlight> (permanent) or <Highlight description="You're saying this is temporary — it happened this time but it's not a forever thing. Like thinking 'I didn't study enough for this specific test.'" theme={theme}>Unstable</Highlight> (temporary)?</p>
                   </div>
                 </div>
                 {/* Card 3 — Peach */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Controllability</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Is the cause something you can change, or not?</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Controllability</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Is the cause something you can change, or not?</p>
                   </div>
                 </div>
-              </div>
+              </ConceptSequence>
               <AttributionMapper savedValues={responses['attribution-mapper']} onSave={(v) => saveResponse('attribution-mapper', v)} />
               <AttributionSorter savedChoices={responses['attribution-sorter']} onSave={(c) => saveResponse('attribution-sorter', c)} />
             </ReadingSection>

@@ -1,23 +1,27 @@
+import { BrandedForgettingView } from './learning/WideFeatures';
 
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { MotionDiv } from './Motion';
 import {
-  Clock, BarChart2, CalendarDays, RadioTower, Wrench, Brain
+BarChart2,
+Brain,
+CalendarDays,
+Clock,
+RadioTower,Wrench
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { skyTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, ToolJumpCard } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { COLORS } from '../design/tokens';
-import { Cite } from './ModuleReferences';
+import React,{ useEffect,useRef,useState } from 'react';
 import { SPACED_REPETITION_REFERENCE_LIST } from '../data/references/spacedRepetition';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { skyTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection,ToolJumpCard } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = skyTheme;
 
@@ -34,14 +38,6 @@ const ForgettingCurveVisualizer = () => {
     ];
 
     const totalDays = 30;
-
-    // Chart dimensions — extra padding for labels
-    const W = 400, H = 200;
-    const padL = 40, padR = 16, padT = 20, padB = 36;
-    const chartW = W - padL - padR;
-    const chartH = H - padT - padB;
-    const toX = (day: number) => padL + (day / totalDays) * chartW;
-    const toY = (pct: number) => padT + chartH - (pct / 100) * chartH;
 
     // Build retention data as segments between review points
     const buildCurvePoints = (numReviews: number): [number, number][] => {
@@ -82,7 +78,7 @@ const ForgettingCurveVisualizer = () => {
       }
 
       // If no reviews reach totalDays, add the base decay
-      if (breakpoints[breakpoints.length - 1] !== totalDays || breakpoints.length === 1) {
+      if (breakpoints[breakpoints.length - 1] !== totalDays) {
         addSegment(lastResetDay, totalDays, stability, retentionAtReset);
       }
 
@@ -92,176 +88,10 @@ const ForgettingCurveVisualizer = () => {
     const baselinePoints = buildCurvePoints(0);
     const activePoints = buildCurvePoints(reviewCount);
 
-    // Smooth cubic bezier path builder
-    const buildPath = (points: [number, number][]) => {
-      if (points.length < 2) return '';
-      const coords = points.map(([d, r]) => [toX(d), toY(r)]);
-      let path = `M ${coords[0][0]} ${coords[0][1]}`;
-
-      for (let i = 1; i < coords.length; i++) {
-        const [x, y] = coords[i];
-        const [px, py] = coords[i - 1];
-        // Detect vertical jump (review reset) — use straight line
-        if (Math.abs(x - px) < 1) {
-          path += ` L ${x} ${y}`;
-        } else {
-          // Smooth cubic bezier
-          const cpx1 = px + (x - px) * 0.4;
-          const cpx2 = px + (x - px) * 0.6;
-          path += ` C ${cpx1} ${py}, ${cpx2} ${y}, ${x} ${y}`;
-        }
-      }
-      return path;
-    };
-
-    const baselinePath = buildPath(baselinePoints);
-    const activePath = buildPath(activePoints);
-
     const finalRetention = Math.round(activePoints[activePoints.length - 1][1]);
     const baselineRetention = Math.round(baselinePoints[baselinePoints.length - 1][1]);
 
-    const dayMarkers = [0, 5, 10, 15, 20, 25, 30];
-    const retentionMarkers = [0, 25, 50, 75, 100];
-
-    return (
-      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <div className="text-center mb-6">
-          <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Memory Science</span>
-          <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Forgetting Curve</h4>
-          <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Each review doesn't just refresh the memory — it makes the decay slower. Add reviews one at a time.</p>
-        </div>
-
-        {/* Chart card */}
-        <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: '24px 20px 16px' }}>
-          {/* Header row */}
-          <div className="flex items-center justify-between mb-3 px-2">
-            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#f0ece6', color: '#9e9186', border: '1px solid #d0cdc8', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Retention over 30 days</span>
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-1.5">
-                <div style={{ width: 14, height: 2, backgroundColor: COLORS.accent, borderRadius: 2 }} />
-                <span style={{ fontSize: 11, color: '#5a5550' }}>With reviews</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <div style={{ width: 14, height: 0, borderTop: '2px dashed #d0cdc8' }} />
-                <span style={{ fontSize: 11, color: '#9e9186' }}>No reviews</span>
-              </div>
-            </div>
-          </div>
-
-          <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto">
-            <defs>
-              <linearGradient id="srActiveGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor={COLORS.accent} stopOpacity="0.08" />
-                <stop offset="100%" stopColor={COLORS.accent} stopOpacity="0" />
-              </linearGradient>
-            </defs>
-
-            {/* Grid */}
-            {retentionMarkers.map(pct => (
-              <g key={pct}>
-                <line x1={padL} y1={toY(pct)} x2={W - padR} y2={toY(pct)} stroke="#f0ece6" strokeWidth="1" />
-                <text x={padL - 5} y={toY(pct) + 3} textAnchor="end" fontSize="9" fill="#b0a898">{pct}%</text>
-              </g>
-            ))}
-            {dayMarkers.map(d => (
-              <g key={d}>
-                <line x1={toX(d)} y1={padT} x2={toX(d)} y2={H - padB} stroke="#f0ece6" strokeWidth="1" />
-                <text x={toX(d)} y={H - padB + 14} textAnchor="middle" fontSize="9" fill="#b0a898">{d === 0 ? 'Learn' : `${d}d`}</text>
-              </g>
-            ))}
-
-            <text x={padL + 2} y={padT - 6} textAnchor="start" fontSize="9" fontWeight="600" fill="#9e9186">Retention</text>
-            <text x={W - padR} y={H - 4} textAnchor="end" fontSize="9" fontWeight="600" fill="#9e9186">Days</text>
-
-            {/* Baseline (no reviews) */}
-            <path d={baselinePath} fill="none" stroke="#d0cdc8" strokeWidth="1.5" strokeDasharray="6 4" />
-
-            {/* Area fill */}
-            {reviewCount > 0 && (
-              <motion.path key={`fill-${reviewCount}`} d={`${activePath} L ${toX(totalDays)} ${toY(0)} L ${toX(0)} ${toY(0)} Z`} fill="url(#srActiveGrad)" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} />
-            )}
-
-            {/* Active curve — always teal */}
-            <motion.path key={`curve-${reviewCount}`} d={activePath} fill="none" stroke={COLORS.accent} strokeWidth="2.5" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, ease: 'easeOut' }} />
-
-            {/* Review markers — all teal */}
-            {reviewSchedule.slice(0, reviewCount).map((r, i) => (
-              <g key={i}>
-                <motion.circle cx={toX(r.day)} cy={toY(98)} r="5" fill={COLORS.accent} stroke="white" strokeWidth="2" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.3, type: 'spring' }} />
-                <motion.line x1={toX(r.day)} y1={padT} x2={toX(r.day)} y2={H - padB} stroke="rgba(242,107,31,0.2)" strokeWidth="1" strokeDasharray="4 3" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} />
-              </g>
-            ))}
-
-            {/* Endpoints */}
-            <circle cx={toX(totalDays)} cy={toY(baselineRetention)} r="3" fill="#d0cdc8" />
-            <motion.circle key={`end-${reviewCount}`} cx={toX(totalDays)} cy={toY(finalRetention)} r="5" fill={COLORS.accent} stroke="white" strokeWidth="2" initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.8 }} />
-          </svg>
-        </div>
-
-        {/* Review buttons */}
-        <div className="flex justify-center gap-2 flex-wrap my-5">
-          {reviewSchedule.map((r, i) => (
-            <button
-              key={i}
-              onClick={() => setReviewCount(i + 1)}
-              disabled={i + 1 <= reviewCount}
-              style={{
-                backgroundColor: i < reviewCount ? COLORS.accent : '#FFFFFF',
-                color: i < reviewCount ? '#FFFFFF' : i === reviewCount ? '#1a1a1a' : '#b0a898',
-                border: i < reviewCount ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a',
-                borderRadius: 20,
-                padding: '10px 18px',
-                fontSize: 13,
-                fontWeight: 600,
-                cursor: i <= reviewCount && i < reviewCount ? 'default' : i === reviewCount ? 'pointer' : 'not-allowed',
-                opacity: i > reviewCount ? 0.4 : 1,
-              }}
-            >
-              {i < reviewCount ? `✓ ${r.label}` : r.label}
-            </button>
-          ))}
-          {reviewCount > 0 && (
-            <button onClick={() => setReviewCount(0)} className="font-medium" style={{ fontSize: 13, color: '#9e9186', background: 'none', border: 'none' }}>
-              Reset
-            </button>
-          )}
-        </div>
-
-        {/* Stat cards */}
-        <div className="grid grid-cols-2 gap-3">
-          <div className="bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '18px 20px' }}>
-            <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 8, textTransform: 'uppercase' as const }}>No reviews — Day 30</p>
-            <p className="font-serif font-bold" style={{ fontSize: 40, color: '#9e9186', lineHeight: 1 }}>{baselineRetention}%</p>
-            <p style={{ fontSize: 12, color: '#9e9186', marginTop: 6 }}>retention without practice</p>
-          </div>
-          <div className="text-center" style={{ backgroundColor: reviewCount > 0 ? COLORS.accentTint : '#FFFFFF', border: reviewCount > 0 ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a', borderRadius: 14, padding: '18px 20px' }}>
-            <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: reviewCount > 0 ? COLORS.accentDarkText : '#9e9186', marginBottom: 8, textTransform: 'uppercase' as const }}>
-              {reviewCount > 0 ? `${reviewCount} review${reviewCount > 1 ? 's' : ''} — Day 30` : 'Add reviews'}
-            </p>
-            <p className="font-serif font-bold" style={{ fontSize: 40, color: reviewCount > 0 ? COLORS.accent : '#b0a898', lineHeight: 1 }}>{finalRetention}%</p>
-            <p style={{ fontSize: 12, color: reviewCount > 0 ? COLORS.accent : '#9e9186', marginTop: 6 }}>retention with spaced practice</p>
-          </div>
-        </div>
-
-        {/* Insight callout */}
-        {reviewCount > 0 && (
-          <motion.div
-            key={reviewCount}
-            initial={{ opacity: 0, y: 6 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mt-4"
-            style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: COLORS.accentTint, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
-          >
-            <p className="text-sm italic" style={{ color: COLORS.accentDarkText }}>
-              {reviewCount === 1 && 'After 1 review, the memory is slightly more stable — but still fragile.'}
-              {reviewCount === 2 && 'After 2 reviews, the decay is noticeably slower. The curve is flattening.'}
-              {reviewCount === 3 && 'After 3 reviews, the memory is becoming durable. Notice how much flatter the curve is.'}
-              {reviewCount === 4 && 'After 4 spaced reviews, retention at day 30 is dramatically higher. Each review made the memory progressively harder to forget.'}
-            </p>
-          </motion.div>
-        )}
-      </div>
-    );
+    return <BrandedForgettingView {...{baselinePoints,activePoints,reviewCount,setReviewCount,reviewSchedule,finalRetention,baselineRetention}} />;
 };
 
 const RetentionCurveComparison = () => {
@@ -306,14 +136,14 @@ const RetentionCurveComparison = () => {
     };
 
     const cramPhases = [
-        { label: 'Feels great', x1: 0, x2: 0.33, color: '#fca5a5' },
-        { label: 'Fading fast', x1: 0.33, x2: 0.66, color: '#f87171' },
-        { label: 'Gone', x1: 0.66, x2: 1, color: '#ef4444' },
+        { label: 'Feels great', x1: 0, x2: 0.33, color: "var(--module-ink)" },
+        { label: 'Fading fast', x1: 0.33, x2: 0.66, color: "var(--module-danger-text)" },
+        { label: 'Gone', x1: 0.66, x2: 1, color: "var(--module-danger-text)" },
     ];
     const spacerPhases = [
-        { label: 'Learn + review', x1: 0, x2: 0.33, color: '#3A8D5F' },
-        { label: 'Spaces widen', x1: 0.33, x2: 0.66, color: '#3A8D5F' },
-        { label: 'Locked in', x1: 0.66, x2: 1, color: '#3A8D5F' },
+        { label: 'Learn + review', x1: 0, x2: 0.33, color: "var(--module-success-text)" },
+        { label: 'Spaces widen', x1: 0.33, x2: 0.66, color: "var(--module-success-text)" },
+        { label: 'Locked in', x1: 0.66, x2: 1, color: "var(--module-success-text)" },
     ];
 
     const Chart = ({ effort, stress, phases, areaColor, areaId, stressColor, label }: {
@@ -329,10 +159,10 @@ const RetentionCurveComparison = () => {
             </defs>
             {/* Grid lines */}
             {[0.25, 0.5, 0.75, 1.0].map(v => (
-                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
+                <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="var(--module-muted)" strokeOpacity="0.15" strokeDasharray="3 3" />
             ))}
             {/* Baseline */}
-            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
+            <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="var(--module-muted)" strokeOpacity="0.3" />
             {/* Retention area */}
             <motion.path
                 d={buildArea(effort)}
@@ -362,58 +192,58 @@ const RetentionCurveComparison = () => {
                 />
             ))}
             {/* Y-axis labels */}
-            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
-            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
+            <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">High</text>
+            <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="var(--module-surface)" fontWeight="600">Low</text>
             {/* Day labels */}
             {days.map((m, i) => (
-                <text key={m} x={toX(i / (days.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
+                <text key={m} x={toX(i / (days.length - 1))} y={toY(0) + 14} fontSize="9" fill="var(--module-surface)" textAnchor="middle" fontWeight="600">{m}</text>
             ))}
             {/* Phase labels */}
             {phases.map((p, i) => (
                 <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
             ))}
             {/* Chart label */}
-            <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
+            <text x={W / 2} y={14} fontSize="11" fill="var(--module-muted)" textAnchor="middle" fontWeight="700">{label}</text>
             {/* Legend */}
             <line x1={W - padR - 100} x2={W - padR - 84} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-            <text x={W - padR - 80} y={17} fontSize="8" fill="#a1a1aa">Retention</text>
+            <text x={W - padR - 80} y={17} fontSize="8" fill="var(--module-surface)">Retention</text>
             <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke={stressColor} strokeWidth="1.5" strokeDasharray="4 2" />
-            <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Stress</text>
+            <text x={W - padR - 24} y={17} fontSize="8" fill="var(--module-surface)">Stress</text>
         </svg>
     );
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Retention Crossover</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Same material. Same student. Two different strategies.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Retention Crossover</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Same material. Same student. Two different strategies.</p>
 
             {!revealed ? (
                 <div className="text-center">
-                    <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Most students cram before exams. What does their retention actually look like over 30 days?</p>
-                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-sky-500 text-white hover:bg-sky-600 transition-colors">
+                    <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-4">Most students cram before exams. What does their retention actually look like over 30 days?</p>
+                    <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-[var(--module-surface)] text-[var(--module-ink)] hover:bg-[var(--module-surface)] transition-colors" data-wide-button="true">
                         Reveal the Crossover
                     </button>
                 </div>
             ) : (
                 <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
                     <div className="grid md:grid-cols-2 gap-4 mb-5">
-                        <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
+                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] p-3">
                             <Chart effort={cramRetention} stress={cramStress} phases={cramPhases}
-                                areaColor="#ef4444" areaId="cram-grad" stressColor="#f59e0b" label="The Crammer" />
+                                areaColor="var(--module-danger-text)" areaId="cram-grad" stressColor="var(--module-ink)" label="The Crammer" />
                         </div>
-                        <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
+                        <div className="rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] p-3">
                             <Chart effort={spacerRetention} stress={spacerStress} phases={spacerPhases}
-                                areaColor="#3A8D5F" areaId="spacer-grad" stressColor="#f59e0b" label="The Spacer" />
+                                areaColor="var(--module-success-text)" areaId="spacer-grad" stressColor="var(--module-ink)" label="The Spacer" />
                         </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4 text-sm">
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
-                            <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Cramming</strong> gives an illusion of mastery. Retention peaks immediately then collapses. By exam day, you're relearning from scratch.</p>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                            <span className="text-[var(--module-danger-text)] text-lg mt-0.5"></span>
+                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">Cramming</strong> gives an illusion of mastery. Retention peaks immediately then collapses. By exam day, you're relearning from scratch.</p>
                         </div>
-                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
-                            <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-                            <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Spacing</strong> feels slower, but each review makes the memory stronger. By exam day, you actually know the material properly.</p>
+                        <div className="flex items-start gap-2.5 p-3 rounded-lg bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                            <span className="text-[var(--module-success-text)] text-lg mt-0.5"></span>
+                            <p className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">Spacing</strong> feels slower, but each review makes the memory stronger. By exam day, you actually know the material properly.</p>
                         </div>
                     </div>
                 </motion.div>
@@ -485,34 +315,33 @@ const CrammingVsSpacingShowdown = () => {
 
   const barMaxH = 200;
 
-  return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+  return <div className="wr-skin" data-wide="CrammingVsSpacingShowdown"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">
         Cramming vs. Spacing Showdown
       </h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-2">
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-2">
         Two students study the same 6 hours total. Who remembers more?
       </p>
-      <p className="text-center text-xs text-zinc-400 dark:text-zinc-500 mb-8">
+      <p className="text-center text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">
         Run the experiment and watch what happens over time.
       </p>
 
       {/* Two lanes */}
       <div className="grid grid-cols-2 gap-4 md:gap-6 mb-6">
         {/* Crammer lane */}
-        <div className="p-4 md:p-6 bg-rose-50 dark:bg-rose-950/20 rounded-xl border border-rose-200 dark:border-rose-800/40 text-center">
-          <p className="font-bold text-rose-700 dark:text-rose-300 text-lg mb-1">Crammer</p>
-          <p className="text-xs text-rose-500 dark:text-rose-400 mb-6">6 hours the night before</p>
+        <div className="p-4 md:p-6 bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] text-center">
+          <p className="font-bold text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] text-lg mb-1">Crammer</p>
+          <p className="text-xs text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)] mb-6">6 hours the night before</p>
           <div className="flex justify-center items-end mb-3" style={{ height: barMaxH }}>
             <MotionDiv
-              className="w-16 md:w-20 rounded-t-lg bg-rose-400 dark:bg-rose-500 relative"
+              className="w-16 md:w-20 rounded-t-lg bg-[var(--module-danger)] dark:bg-[var(--module-danger)] relative"
               initial={{ height: 0 }}
               animate={{ height: (crammerScore / 100) * barMaxH }}
               transition={{ duration: 1, ease: 'easeOut' }}
             >
               {phase !== 'idle' && (
                 <MotionDiv
-                  className="absolute -top-7 left-0 right-0 text-center font-bold text-sm text-rose-700 dark:text-rose-300"
+                  className="absolute -top-7 left-0 right-0 text-center font-bold text-sm text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.8 }}
@@ -522,23 +351,23 @@ const CrammingVsSpacingShowdown = () => {
               )}
             </MotionDiv>
           </div>
-          <div className="h-1 bg-rose-200 dark:bg-rose-800/40 rounded-full" />
+          <div className="h-1 bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] rounded-full" />
         </div>
 
         {/* Spacer lane */}
-        <div className="p-4 md:p-6 bg-emerald-50 dark:bg-emerald-950/20 rounded-xl border border-emerald-200 dark:border-emerald-800/40 text-center">
-          <p className="font-bold text-emerald-700 dark:text-emerald-300 text-lg mb-1">Spacer</p>
-          <p className="text-xs text-emerald-500 dark:text-emerald-400 mb-6">1 hour across 6 different days</p>
+        <div className="p-4 md:p-6 bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] text-center">
+          <p className="font-bold text-[var(--module-success-text)] dark:text-[var(--module-success-text)] text-lg mb-1">Spacer</p>
+          <p className="text-xs text-[var(--module-success-text)] dark:text-[var(--module-success-text)] mb-6">1 hour across 6 different days</p>
           <div className="flex justify-center items-end mb-3" style={{ height: barMaxH }}>
             <MotionDiv
-              className="w-16 md:w-20 rounded-t-lg bg-emerald-400 dark:bg-emerald-500 relative"
+              className="w-16 md:w-20 rounded-t-lg bg-[var(--module-success)] dark:bg-[var(--module-success)] relative"
               initial={{ height: 0 }}
               animate={{ height: (spacerScore / 100) * barMaxH }}
               transition={{ duration: 1, ease: 'easeOut' }}
             >
               {phase !== 'idle' && (
                 <MotionDiv
-                  className="absolute -top-7 left-0 right-0 text-center font-bold text-sm text-emerald-700 dark:text-emerald-300"
+                  className="absolute -top-7 left-0 right-0 text-center font-bold text-sm text-[var(--module-success-text)] dark:text-[var(--module-success-text)]"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.8 }}
@@ -548,7 +377,7 @@ const CrammingVsSpacingShowdown = () => {
               )}
             </MotionDiv>
           </div>
-          <div className="h-1 bg-emerald-200 dark:bg-emerald-800/40 rounded-full" />
+          <div className="h-1 bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] rounded-full" />
         </div>
       </div>
 
@@ -556,7 +385,7 @@ const CrammingVsSpacingShowdown = () => {
       {transitionText && (
         <MotionDiv
           key={transitionText}
-          className="text-center text-lg font-serif font-semibold text-zinc-600 dark:text-zinc-300 mb-3"
+          className="text-center text-lg font-serif font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-3"
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -571,8 +400,8 @@ const CrammingVsSpacingShowdown = () => {
           key={phaseLabel}
           className={`text-center text-sm font-bold mb-6 ${
             phase === 'day1'
-              ? 'text-rose-600 dark:text-rose-400'
-              : 'text-emerald-600 dark:text-emerald-400'
+              ? "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"
+              : "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]"
           }`}
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -585,12 +414,12 @@ const CrammingVsSpacingShowdown = () => {
       {/* Final insight panel */}
       {phase === 'done' && (
         <MotionDiv
-          className="p-6 bg-sky-50 dark:bg-sky-950/20 rounded-xl border border-sky-200 dark:border-sky-800/40 text-center mb-6"
+          className="p-6 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] text-center mb-6"
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm text-sky-800 dark:text-sky-200 font-medium leading-relaxed">
+          <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-ink)] font-medium leading-relaxed">
             Same total study time. Completely different long-term results. Spacing works because every time you make your brain dig up a memory, it gets easier to find next time.
           </p>
         </MotionDiv>
@@ -601,7 +430,7 @@ const CrammingVsSpacingShowdown = () => {
         {phase === 'idle' && (
           <button
             onClick={runExperiment}
-            className="px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm rounded-xl transition-colors"
+            className="px-6 py-3 bg-[var(--module-surface)] hover:bg-[var(--module-surface)] text-[var(--module-ink)] font-bold text-sm rounded-xl transition-colors" data-wide-button="true"
           >
             Run Experiment
           </button>
@@ -609,14 +438,13 @@ const CrammingVsSpacingShowdown = () => {
         {(phase === 'done') && (
           <button
             onClick={reset}
-            className="px-5 py-2.5 text-sm font-bold rounded-xl text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 transition-colors"
+            className="px-5 py-2.5 text-sm font-bold rounded-xl text-[var(--module-muted)] dark:text-[var(--module-muted)] border border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)] transition-colors" data-wide-button="true"
           >
             Reset
           </button>
         )}
       </div>
-    </div>
-  );
+    </div></div>;
 };
 
 const OptimalScheduleCalculator = () => {
@@ -630,22 +458,22 @@ const OptimalScheduleCalculator = () => {
     };
 
     return(
-         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Optimal Schedule Calculator</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pick when your test is, and we'll tell you the best time to review.</p>
+         <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Optimal Schedule Calculator</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Pick when your test is, and we'll tell you the best time to review.</p>
              <div className="flex items-center justify-center gap-4">
                  <label className="font-bold">My test is in:</label>
-                 <select value={ri} onChange={e => setRi(e.target.value)} className="p-2 bg-zinc-100 dark:bg-zinc-800 rounded-lg">
+                 <select value={ri} onChange={e => setRi(e.target.value)} className="p-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg">
                     <option value="1_week">1 Week</option>
                     <option value="1_month">1 Month</option>
                     <option value="3_months">3 Months</option>
                     <option value="6_months">6 Months</option>
                  </select>
              </div>
-             <div className="mt-6 p-6 rounded-xl text-center" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669' }}>
-                <p className="text-sm font-semibold" style={{ color: '#064E3B' }}>Best gap between study sessions:</p>
-                <p className="font-bold text-2xl mt-1" style={{ color: '#064E3B' }}>{schedules[ri as keyof typeof schedules].gap}</p>
-                <p className="text-xs mt-4" style={{ color: '#064E3B' }}><strong>Actionable Advice:</strong> {schedules[ri as keyof typeof schedules].example}</p>
+             <div className="mt-6 p-6 rounded-xl text-center" style={{ backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", boxShadow: 'none' }}>
+                <p className="text-sm font-semibold" style={{ color: "var(--module-success-text)" }}>Best gap between study sessions:</p>
+                <p className="font-bold text-2xl mt-1" style={{ color: "var(--module-success-text)" }}>{schedules[ri as keyof typeof schedules].gap}</p>
+                <p className="text-xs mt-4" style={{ color: "var(--module-success-text)" }}><strong>Actionable Advice:</strong> {schedules[ri as keyof typeof schedules].example}</p>
              </div>
         </div>
     );
@@ -746,21 +574,21 @@ const MasteringSpacedRepetitionModule: React.FC<{ onBack: () => void; progress: 
               ) : (
                 <p>You now know how to beat the Forgetting Curve. When you study matters just as much as what you study. Here's a simple plan you can start using right now, even without any apps.</p>
               )}
-              <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Your Simple Review Plan</h4>
-                <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">For any test or exam, follow this simple schedule.</p>
+              <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Your Simple Review Plan</h4>
+                <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">For any test or exam, follow this simple schedule.</p>
                 <div className="grid grid-cols-3 gap-4 text-center">
-                    <div className="p-4 rounded-xl" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>
-                        <p className="font-bold text-zinc-800">Day 1: Learn</p>
-                        <p className="text-xs mt-1 text-zinc-600">First exposure to the material in class.</p>
+                    <div className="p-4 rounded-xl" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }}>
+                        <p className="font-bold text-[var(--module-ink)]">Day 1: Learn</p>
+                        <p className="text-xs mt-1 text-[var(--module-ink)]">First exposure to the material in class.</p>
                     </div>
-                     <div className="p-4 rounded-xl" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>
-                        <p className="font-bold text-zinc-800">Day 2-3: First Review</p>
-                        <p className="text-xs mt-1 text-zinc-600">Review by testing yourself (don't just re-read). This is the most important review.</p>
+                     <div className="p-4 rounded-xl" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }}>
+                        <p className="font-bold text-[var(--module-ink)]">Day 2-3: First Review</p>
+                        <p className="text-xs mt-1 text-[var(--module-ink)]">Review by testing yourself (don't just re-read). This is the most important review.</p>
                     </div>
-                     <div className="p-4 rounded-xl" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}>
-                        <p className="font-bold text-zinc-800">Day 7 (or before test): Final Review</p>
-                        <p className="text-xs mt-1 text-zinc-600">One last round of testing yourself to lock it in.</p>
+                     <div className="p-4 rounded-xl" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }}>
+                        <p className="font-bold text-[var(--module-ink)]">Day 7 (or before test): Final Review</p>
+                        <p className="text-xs mt-1 text-[var(--module-ink)]">One last round of testing yourself to lock it in.</p>
                     </div>
                 </div>
               </div>

@@ -1,20 +1,25 @@
+import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import {
-  BrainCircuit, Wrench, BookOpen, BarChart3, ClipboardCheck, ShieldCheck
+BarChart3,
+BookOpen,
+BrainCircuit,
+ClipboardCheck,ShieldCheck,
+Wrench
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { orangeTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import React,{ useCallback,useEffect,useRef,useState } from 'react';
 import { NEUROPLASTICITY_REFERENCE_LIST } from '../data/references/neuroplasticity';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { orangeTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 
 const theme = orangeTheme;
 
@@ -29,33 +34,33 @@ const JugglingStudyVisualizer = () => {
     const currentData = data[scan-1];
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Juggling Study</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Proof that learning physically changes the structure of your brain.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Juggling Study</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Proof that learning physically changes the structure of your brain.</p>
              <div className="w-full max-w-xs mx-auto h-48 flex justify-center items-end">
                 <motion.div
                     className="w-24 rounded-t-lg"
-                    style={{ backgroundColor: '#F26B1F' }}
+                    style={{ backgroundColor: "var(--module-danger)" }}
                     initial={{height: '50%'}}
                     animate={{height: `${currentData.value}%`}}
                     transition={{type: 'spring', damping: 15, stiffness: 100}}
                 />
              </div>
-             <p className="text-center font-bold mt-2 dark:text-zinc-300">{currentData.label}</p>
+             <p className="text-center font-bold mt-2 dark:text-[var(--module-muted)]">{currentData.label}</p>
              <div className="flex justify-center gap-2 mt-4">
                 {[1, 2, 3].map(n => (
                   <button
                     key={n}
                     onClick={() => setScan(n)}
                     style={{
-                      backgroundColor: scan === n ? '#F26B1F' : '#FFFFFF',
-                      border: scan === n ? '2px solid #F26B1F' : '2px solid #d0cdc8',
+                      backgroundColor: moduleFill(scan === n ? "var(--module-danger)" : "var(--module-surface)"),
+                      border: scan === n ? "2px solid var(--module-line)" : "2px solid var(--module-line)",
                       borderRadius: 100,
                       padding: '8px 20px',
                       fontSize: 13,
                       fontWeight: 600,
-                      color: scan === n ? '#FFFFFF' : '#7a7068',
-                    }}
+                      color: moduleText(scan === n ? "var(--module-on-fill)" : "var(--module-muted)"),
+                    }} data-wide-button="true" data-selected={!!(scan === n)} data-tone="coral" aria-pressed={!!(scan === n)}
                   >
                     Scan {n}
                   </button>
@@ -68,25 +73,25 @@ const JugglingStudyVisualizer = () => {
 const StudyMethodGrader = () => {
     const [method, setMethod] = useState<'passive' | 'active' | null>(null);
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Study Method Grader</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Which study method sends a stronger signal to build your brain?</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Study Method Grader</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Which study method sends a stronger signal to build your brain?</p>
              <div className="grid grid-cols-2 gap-4">
-                <button onClick={() => setMethod('passive')} className="p-4 rounded-xl text-center font-medium transition-all" style={method === 'passive' ? { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', borderRadius: 14, boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}><strong>Passive Re-reading:</strong> "I'll just read my notes again."</button>
-                <button onClick={() => setMethod('active')} className="p-4 rounded-xl text-center font-medium transition-all" style={method === 'active' ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 14, boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B' } : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }}><strong>Active Recall:</strong> "I'll try to explain this from memory."</button>
+                <button onClick={() => setMethod('passive')} className="p-4 rounded-xl text-center font-medium transition-all" style={method === 'passive' ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-danger-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(method === 'passive')} data-tone="coral" aria-pressed={!!(method === 'passive')}><strong>Passive Re-reading:</strong> "I'll just read my notes again."</button>
+                <button onClick={() => setMethod('active')} className="p-4 rounded-xl text-center font-medium transition-all" style={method === 'active' ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-success-text)" } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }} data-wide-button="true" data-selected={!!(method === 'active')} data-tone="mint" aria-pressed={!!(method === 'active')}><strong>Active Recall:</strong> "I'll try to explain this from memory."</button>
              </div>
              {method &&
              <motion.div initial={{opacity:0}} animate={{opacity:1}} className="mt-6">
                 <h5 className="font-bold text-center">Brain-Building Score:</h5>
-                <div className="w-full h-8 bg-zinc-100 dark:bg-zinc-800 rounded-full mt-2 overflow-hidden">
+                <div className="w-full h-8 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full mt-2 overflow-hidden">
                     <motion.div
-                        className={`h-full rounded-full ${method === 'active' ? 'bg-emerald-500' : 'bg-rose-500'}`}
+                        className={`h-full rounded-full ${method === 'active' ? "bg-[var(--module-success)]" : "bg-[var(--module-danger)]"}`}
                         initial={{width: '0%'}}
                         animate={{width: method === 'active' ? '95%' : '20%'}}
                         transition={{duration: 1}}
                     />
                 </div>
-                <p className="text-xs text-center mt-2 text-zinc-500 dark:text-zinc-400">{method === 'active' ? 'Strong signal sent. Your brain is actually changing.' : 'Weak signal. Not much is changing up there.'}</p>
+                <p className="text-xs text-center mt-2 text-[var(--module-muted)] dark:text-[var(--module-muted)]">{method === 'active' ? 'Strong signal sent. Your brain is actually changing.' : 'Weak signal. Not much is changing up there.'}</p>
              </motion.div>}
         </div>
     );
@@ -97,11 +102,11 @@ const GRID_ROWS = 8;
 const TOTAL_CELLS = GRID_COLS * GRID_ROWS;
 
 const getPathStyle = (walked: number): { bg: string; border: string } => {
-  if (walked <= 0) return { bg: '#f0ece6', border: '#ddd8d0' };
-  if (walked === 1) return { bg: '#c8e8e0', border: '#a0d4c8' };
-  if (walked === 2) return { bg: '#8ecfbf', border: '#6ab8a4' };
-  if (walked >= 3) return { bg: '#F26B1F', border: '#B54D14' };
-  return { bg: '#f0ece6', border: '#ddd8d0' };
+  if (walked <= 0) return { bg: "var(--module-on-fill)", border: "var(--module-line)" };
+  if (walked === 1) return { bg: "var(--module-ink)", border: "var(--module-line)" };
+  if (walked === 2) return { bg: "var(--module-success-text)", border: "var(--module-line)" };
+  if (walked >= 3) return { bg: "var(--module-danger-text)", border: "var(--module-line)" };
+  return { bg: "var(--module-on-fill)", border: "var(--module-line)" };
 };
 
 const DesirePathMaker = () => {
@@ -211,18 +216,18 @@ const DesirePathMaker = () => {
   };
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
       {/* Section chip + title */}
       <div className="text-center mb-8">
-        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E', border: '1px solid rgba(242,107,31,0.2)' }}>Interactive Simulation</span>
-        <h4 className="font-serif text-2xl font-bold" style={{ color: '#1a1a1a' }}>Desire Path Maker</h4>
-        <p className="text-sm mt-1" style={{ color: '#7a7068' }}>
+        <span className="inline-block px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", border: '1px solid rgba(242,107,31,0.2)' }}>Interactive Simulation</span>
+        <h4 className="font-serif text-2xl font-bold" style={{ color: "var(--module-ink)" }}>Desire Path Maker</h4>
+        <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>
           Click cells to walk on them. Repeat the same path to build strong connections — or scatter your effort and watch them fade.
         </p>
       </div>
 
       {/* Grid in bordered card */}
-      <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 20, maxWidth: 520, margin: '0 auto' }}>
+      <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 20, maxWidth: 520, margin: '0 auto' }}>
         <div
           style={{
             display: 'grid',
@@ -237,7 +242,7 @@ const DesirePathMaker = () => {
                 key={idx}
                 onClick={() => handleCellClick(idx)}
                 style={{
-                  backgroundColor: cs.bg,
+                  backgroundColor: moduleFill(cs.bg),
                   border: `1.5px solid ${cs.border}`,
                   aspectRatio: '1',
                   borderRadius: 8,
@@ -254,26 +259,26 @@ const DesirePathMaker = () => {
 
       {/* Stat card */}
       <div className="flex justify-center mt-4">
-        <div className="inline-flex items-center gap-3" style={{ backgroundColor: '#FDEEDF', border: '1.5px solid rgba(242,107,31,0.25)', borderRadius: 12, padding: '10px 20px' }}>
-          <span className="font-serif font-bold" style={{ fontSize: 28, color: '#F26B1F' }}>{strongPathCount(grid)}</span>
-          <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: '#9e9186', letterSpacing: '0.08em' }}>Strong paths<br/>built</span>
+        <div className="inline-flex items-center gap-3" style={{ backgroundColor: "var(--module-surface)", border: '1.5px solid rgba(242,107,31,0.25)', borderRadius: 12, padding: '10px 20px' }}>
+          <span className="font-serif font-bold" style={{ fontSize: 28, color: "var(--module-danger-text)" }}>{strongPathCount(grid)}</span>
+          <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: "var(--module-muted)", letterSpacing: '0.08em' }}>Strong paths<br/>built</span>
         </div>
       </div>
 
       {/* Controls */}
       <div className="flex flex-wrap justify-center gap-2 mt-6">
-        <button onClick={handleDaysPass} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#1a1a1a' }}>
+        <button onClick={handleDaysPass} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: "var(--module-ink)" }} data-wide-button="true">
           Days Pass (Decay)
         </button>
-        <button onClick={handleCramming} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#7a7068' }}>
-          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#A8746E', display: 'inline-block' }} />
+        <button onClick={handleCramming} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: "var(--module-muted)" }} data-wide-button="true">
+          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: "var(--module-solid)", display: 'inline-block' }} />
           Cramming Pattern
         </button>
-        <button onClick={handleSpacedRepetition} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#8C3A0E' }}>
-          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: '#F26B1F', display: 'inline-block' }} />
+        <button onClick={handleSpacedRepetition} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: "var(--module-danger-text)" }} data-wide-button="true">
+          <span style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: "var(--module-danger)", display: 'inline-block' }} />
           Spaced Repetition
         </button>
-        <button onClick={handleReset} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: '#b0a898' }}>
+        <button onClick={handleReset} disabled={isAnimating} className="inline-flex items-center gap-1.5 disabled:opacity-40 transition-colors" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 20, padding: '10px 20px', fontSize: 13, fontWeight: 600, color: "var(--module-muted)" }} data-wide-button="true">
           Reset
         </button>
       </div>
@@ -284,9 +289,9 @@ const DesirePathMaker = () => {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           className="mt-4 max-w-lg mx-auto"
-          style={{ borderLeft: '3px solid #F26B1F', backgroundColor: '#FDEEDF', borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+          style={{ borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
         >
-          <p className="text-sm italic" style={{ color: '#8C3A0E' }}>{resultMessage}</p>
+          <p className="text-sm italic" style={{ color: "var(--module-danger-text)" }}>{resultMessage}</p>
         </motion.div>
       )}
     </div>

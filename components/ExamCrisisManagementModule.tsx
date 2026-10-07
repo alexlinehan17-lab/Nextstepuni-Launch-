@@ -1,22 +1,22 @@
+import { BrandedBreathingView,BrandedCognitionView } from './learning/WideFeatures';
+import { moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import { usePrivateDeviceDraft } from '../hooks/usePrivateDeviceDraft';
-import { PrivateDraftControls } from './learning/PrivateDraftControls';
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { Cpu, Zap, Shield, Moon, Utensils, ClipboardList, Flag, Brain } from 'lucide-react';
-import { type ModuleProgress } from '../types';
+import { AnimatePresence } from 'framer-motion';
+import { Cpu,Flag,Moon,Shield,Utensils,Zap } from 'lucide-react';
+import React,{ useState } from 'react';
+import { EXAM_CRISIS_MANAGEMENT_REFERENCE_LIST } from '../data/references/examCrisisManagement';
+import { COLORS } from '../design/tokens';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { skyTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, SupportSignpost } from './ModuleShared';
+import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
-import { EXAM_CRISIS_MANAGEMENT_REFERENCE_LIST } from '../data/references/examCrisisManagement';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { COLORS } from '../design/tokens';
+import { Highlight,MicroCommitment,PersonalStory,ReadingSection,SupportSignpost } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = skyTheme;
 
@@ -32,152 +32,16 @@ const CognitionShiftVisualizer = () => {
     const amygPct = Math.max(5, Math.round((stress / 100) * 100));
 
     const stages = [
-        { min: 0, max: 15, label: 'Calm', desc: 'Too relaxed. You\'re chilled out but not switched on — not enough energy to perform.', color: COLORS.success, zone: 'low' as const },
-        { min: 15, max: 35, label: 'Focused', desc: 'A bit of stress is sharpening you up. Your thinking brain is fully in charge and your memory is working well.', color: COLORS.success, zone: 'good' as const },
-        { min: 35, max: 55, label: 'Optimal', desc: 'The sweet spot. Just the right amount of adrenaline — you\'re alert, fast, and accurate.', color: COLORS.success, zone: 'good' as const },
-        { min: 55, max: 72, label: 'Anxious', desc: 'Stress is tipping over. Your focus is narrowing. You re-read questions without taking them in.', color: '#9e9186', zone: 'past' as const },
-        { min: 72, max: 88, label: 'Panic', desc: 'Your alarm brain is taking over. Heart racing, shallow breathing. Your thinking brain is losing control.', color: '#E85D75', zone: 'danger' as const },
-        { min: 88, max: 101, label: 'Going Blank', desc: 'Full shutdown. You stare at the page and nothing comes. Your thinking brain has gone offline.', color: '#E85D75', zone: 'danger' as const },
+        { min: 0, max: 15, label: 'Calm', desc: 'Too relaxed. You\'re chilled out but not switched on — not enough energy to perform.', color: moduleText(COLORS.success), zone: 'low' as const },
+        { min: 15, max: 35, label: 'Focused', desc: 'A bit of stress is sharpening you up. Your thinking brain is fully in charge and your memory is working well.', color: moduleText(COLORS.success), zone: 'good' as const },
+        { min: 35, max: 55, label: 'Optimal', desc: 'The sweet spot. Just the right amount of adrenaline — you\'re alert, fast, and accurate.', color: moduleText(COLORS.success), zone: 'good' as const },
+        { min: 55, max: 72, label: 'Anxious', desc: 'Stress is tipping over. Your focus is narrowing. You re-read questions without taking them in.', color: "var(--module-muted)", zone: 'past' as const },
+        { min: 72, max: 88, label: 'Panic', desc: 'Your alarm brain is taking over. Heart racing, shallow breathing. Your thinking brain is losing control.', color: "var(--module-danger-text)", zone: 'danger' as const },
+        { min: 88, max: 101, label: 'Going Blank', desc: 'Full shutdown. You stare at the page and nothing comes. Your thinking brain has gone offline.', color: "var(--module-danger-text)", zone: 'danger' as const },
     ];
     const stage = stages.find(s => stress >= s.min && stress < s.max) || stages[stages.length - 1];
 
-    // SVG curve
-    const W = 420, H = 200;
-    const padL = 36, padR = 24, padT = 28, padB = 36;
-    const chartW = W - padL - padR, chartH = H - padT - padB;
-    const toX = (f: number) => padL + f * chartW;
-    const toY = (f: number) => padT + (1 - f) * chartH;
-
-    // Build Yerkes-Dodson curve
-    const curvePoints: { x: number; y: number }[] = [];
-    for (let i = 0; i <= 100; i += 2) {
-        const p = i <= 45
-            ? 0.15 + (i / 45) * 0.85
-            : Math.max(0.05, 1.0 - ((i - 45) / 55) * 1.1);
-        curvePoints.push({ x: toX(i / 100), y: toY(p) });
-    }
-    let curvePath = `M ${curvePoints[0].x} ${curvePoints[0].y}`;
-    for (let i = 1; i < curvePoints.length; i++) {
-        const prev = curvePoints[i - 1];
-        const cur = curvePoints[i];
-        const cx1 = prev.x + (cur.x - prev.x) * 0.4;
-        const cx2 = prev.x + (cur.x - prev.x) * 0.6;
-        curvePath += ` C ${cx1} ${prev.y}, ${cx2} ${cur.y}, ${cur.x} ${cur.y}`;
-    }
-    // Area path
-    const areaPath = curvePath + ` L ${curvePoints[curvePoints.length - 1].x} ${toY(0)} L ${curvePoints[0].x} ${toY(0)} Z`;
-
-    const dotX = toX(stress / 100);
-    const dotY = toY(perf);
-
-    const calloutStyle = stage.zone === 'good' || stage.zone === 'low'
-      ? { borderLeft: `3px solid ${COLORS.success}`, backgroundColor: COLORS.successTint, iconBg: COLORS.successTint, iconColor: COLORS.success, labelColor: COLORS.successDarkText, textColor: '#5a5550' }
-      : stage.zone === 'past'
-      ? { borderLeft: '3px solid #9e9186', backgroundColor: '#FFFFFF', iconBg: '#f0ece6', iconColor: '#9e9186', labelColor: '#5a5550', textColor: '#5a5550' }
-      : { borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', iconBg: '#fde4e4', iconColor: '#E85D75', labelColor: '#b33030', textColor: '#5a5550' };
-
-    // Peak is at index 22-23 (stress=44-46), which is ~45% of the 51 points
-    const _peakIdx = Math.round(22.5);
-
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <div className="text-center mb-5">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Hot vs. Cold Cognition</h4>
-                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Drag the slider to see how stress affects your brain during an exam.</p>
-            </div>
-
-            {/* Chart card */}
-            <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
-                <svg viewBox={`0 0 ${W} ${H}`} className="w-full mb-1">
-                    {/* Grid */}
-                    {[0.25, 0.5, 0.75, 1.0].map(v => (
-                        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#f0ece6" strokeWidth="1" />
-                    ))}
-                    <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#d0cdc8" strokeWidth="1.5" />
-                    <line x1={padL} y1={padT} x2={padL} y2={toY(0)} stroke="#d0cdc8" strokeWidth="1.5" />
-
-                    {/* Optimal zone */}
-                    <rect x={toX(0.30)} y={padT} width={toX(0.60) - toX(0.30)} height={chartH} fill="rgba(58,141,95,0.06)" rx="4" />
-                    <rect x={toX(0.30)} y={padT} width={toX(0.60) - toX(0.30)} height={chartH} fill="none" stroke="rgba(58,141,95,0.2)" strokeWidth="1" strokeDasharray="4 3" rx="4" />
-                    <text x={(toX(0.30) + toX(0.60)) / 2} y={toY(0) - 4} fontSize="10" fill={COLORS.successDarkText} textAnchor="middle" fontWeight="700" letterSpacing="0.08em">OPTIMAL ZONE</text>
-
-                    {/* Area fill — two-tone */}
-                    <clipPath id="left-clip"><rect x={padL} y={padT} width={toX(0.45) - padL} height={chartH} /></clipPath>
-                    <clipPath id="right-clip"><rect x={toX(0.45)} y={padT} width={W - padR - toX(0.45)} height={chartH} /></clipPath>
-                    <path d={areaPath} fill="rgba(58,141,95,0.08)" clipPath="url(#left-clip)" />
-                    <path d={areaPath} fill="rgba(232,93,117,0.07)" clipPath="url(#right-clip)" />
-
-                    {/* Curve — two-tone via clip paths */}
-                    <path d={curvePath} fill="none" stroke={COLORS.success} strokeWidth="3" strokeLinecap="round" clipPath="url(#left-clip)" />
-                    <path d={curvePath} fill="none" stroke="#E85D75" strokeWidth="3" strokeLinecap="round" clipPath="url(#right-clip)" />
-
-                    {/* Tracking line */}
-                    <line x1={dotX} x2={dotX} y1={dotY} y2={toY(0)} stroke={stress <= 55 ? 'rgba(58,141,95,0.3)' : 'rgba(232,93,117,0.3)'} strokeWidth="1" strokeDasharray="4 3" />
-
-                    {/* Dot */}
-                    <circle cx={dotX} cy={dotY} r="6" fill={stage.color} stroke="white" strokeWidth="2.5" />
-
-                    {/* Axes */}
-                    <text x={padL - 4} y={toY(1.0) + 3} fontSize="11" fill="#b0a898" textAnchor="end">High</text>
-                    <text x={padL - 4} y={toY(0) + 3} fontSize="11" fill="#b0a898" textAnchor="end">Low</text>
-                    <text x={padL - 4} y={toY(0.5) + 3} fontSize="9" fill="#b0a898" textAnchor="end">Med</text>
-                    <text x={toX(0)} y={toY(0) + 14} fontSize="11" fill="#b0a898" textAnchor="middle">Low</text>
-                    <text x={toX(0.5)} y={toY(0) + 14} fontSize="11" fill="#b0a898" textAnchor="middle">Moderate</text>
-                    <text x={toX(1)} y={toY(0) + 14} fontSize="11" fill="#b0a898" textAnchor="middle">Extreme</text>
-                    <text x={12} y={H / 2} fontSize="11" fill="#9e9186" textAnchor="middle" transform={`rotate(-90, 12, ${H / 2})`}>Performance</text>
-                    <text x={toX(0.5)} y={toY(0) + 28} fontSize="13" fill="#1a1a1a" textAnchor="middle" fontWeight="600">Stress Level</text>
-                </svg>
-
-                {/* Slider */}
-                <div className="px-2">
-                    <input type="range" min="0" max="100" value={stress} onChange={e => setStress(Number(e.target.value))} className="chunky-slider chunky-slider-accent" />
-                </div>
-            </div>
-
-            {/* Callout */}
-            <div className="mt-5 flex items-start gap-4" style={{ borderLeft: calloutStyle.borderLeft, backgroundColor: calloutStyle.backgroundColor, borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                <div className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center" style={{ backgroundColor: calloutStyle.iconBg }}>
-                    {stress < 55 ? (
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={calloutStyle.iconColor} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0018 8 6 6 0 006 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 018.91 14"/></svg>
-                    ) : (
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke={calloutStyle.iconColor} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                    )}
-                </div>
-                <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 mb-1">
-                        <span className="font-serif font-semibold" style={{ fontSize: 16, color: calloutStyle.labelColor }}>{stage.label}</span>
-                        <span style={{ fontSize: 13, color: '#9e9186' }}>Stress: {stress}%</span>
-                    </div>
-                    <p style={{ fontSize: 14, color: calloutStyle.textColor }}>{stage.desc}</p>
-                </div>
-            </div>
-
-            {/* PFC vs Amygdala */}
-            <div className="grid grid-cols-2 gap-3 mt-4">
-                <div className="bg-white dark:bg-zinc-900" style={{ border: '1.5px solid #d0cdc8', borderRadius: 12, padding: 12 }}>
-                    <div className="flex items-center justify-between mb-1.5">
-                        <span className="text-xs font-bold flex items-center gap-1" style={{ color: COLORS.success }}><Brain size={12} /> Thinking Brain</span>
-                        <span className="text-xs font-bold" style={{ color: '#9e9186' }}>{pfcPct}%</span>
-                    </div>
-                    <div style={{ height: 6, backgroundColor: '#e0dbd4', borderRadius: 3 }}>
-                        <motion.div style={{ height: '100%', backgroundColor: COLORS.success, borderRadius: 3 }} animate={{ width: `${pfcPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} />
-                    </div>
-                    <p className="text-xs mt-1" style={{ color: '#9e9186' }}>Logic, planning, working memory</p>
-                </div>
-                <div className="bg-white dark:bg-zinc-900" style={{ border: '1.5px solid #d0cdc8', borderRadius: 12, padding: 12 }}>
-                    <div className="flex items-center justify-between mb-1.5">
-                        <span className="text-xs font-bold flex items-center gap-1" style={{ color: '#E85D75' }}><Zap size={12} /> Alarm Brain</span>
-                        <span className="text-xs font-bold" style={{ color: '#9e9186' }}>{amygPct}%</span>
-                    </div>
-                    <div style={{ height: 6, backgroundColor: '#e0dbd4', borderRadius: 3 }}>
-                        <motion.div style={{ height: '100%', backgroundColor: '#E85D75', borderRadius: 3 }} animate={{ width: `${amygPct}%` }} transition={{ type: 'spring', stiffness: 120, damping: 20 }} />
-                    </div>
-                    <p className="text-xs mt-1" style={{ color: '#9e9186' }}>Fear, threat detection, survival mode</p>
-                </div>
-            </div>
-        </div>
-    );
+    return <BrandedCognitionView {...{stress,setStress,stage,perf,pfcPct,amygPct}} />;
 };
 
 const PhysiologicalSighGuide = () => {
@@ -216,107 +80,15 @@ const PhysiologicalSighGuide = () => {
     const reset = () => { setRunning(false); setPhase('idle'); setCycle(0); setProgress(0); };
 
     const phaseConfig = {
-        idle: { label: '', instruction: '', color: '#d0cdc8', scale: 0.45 },
-        inhale1: { label: 'Inhale', instruction: 'Breathe in through your nose', color: COLORS.success, scale: 0.45 + progress * 0.35 },
-        inhale2: { label: 'Inhale', instruction: 'Quick second sip of air', color: COLORS.success, scale: 0.8 + progress * 0.2 },
-        exhale: { label: 'Exhale', instruction: 'Slow exhale through your mouth', color: COLORS.success, scale: 1.0 - progress * 0.55 },
-        done: { label: '', instruction: '', color: COLORS.success, scale: 0.45 },
+        idle: { label: '', instruction: '', color: "var(--module-muted)", scale: 0.45 },
+        inhale1: { label: 'Inhale', instruction: 'Breathe in through your nose', color: moduleText(COLORS.success), scale: 0.45 + progress * 0.35 },
+        inhale2: { label: 'Inhale', instruction: 'Quick second sip of air', color: moduleText(COLORS.success), scale: 0.8 + progress * 0.2 },
+        exhale: { label: 'Exhale', instruction: 'Slow exhale through your mouth', color: moduleText(COLORS.success), scale: 1.0 - progress * 0.55 },
+        done: { label: '', instruction: '', color: moduleText(COLORS.success), scale: 0.45 },
     };
     const cfg = phaseConfig[phase];
 
-    // SVG breathing circle
-    const cx = 100, cy = 100, maxR = 80;
-    const r = maxR * cfg.scale;
-    const circumference = 2 * Math.PI * 44;
-
-    const isActive = phase !== 'idle' && phase !== 'done';
-    const phaseOrder = ['inhale1', 'inhale2', 'exhale'] as const;
-    const phaseIdx = phaseOrder.indexOf(phase as any);
-
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <div className="text-center mb-6">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Breathing Technique</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>The Physiological Sigh</h4>
-                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Your emergency brake for acute panic. Two quick inhales, one long exhale.</p>
-            </div>
-
-            <div className="flex flex-col items-center">
-                {/* Breathing circle */}
-                <div className="relative w-48 h-48 mb-4">
-                    <svg viewBox="0 0 200 200" className="w-full h-full">
-                        <circle cx={cx} cy={cy} r="44" fill="none" stroke="#e0dbd4" strokeWidth="8" />
-                        {isActive && (
-                            <circle cx={cx} cy={cy} r="44" fill="none" stroke={COLORS.success} strokeWidth="8" strokeLinecap="round" strokeDasharray={circumference} strokeDashoffset={circumference * (1 - progress)} transform={`rotate(-90 ${cx} ${cy})`} />
-                        )}
-                        {phase === 'done' && (
-                            <circle cx={cx} cy={cy} r="44" fill="none" stroke={COLORS.success} strokeWidth="8" strokeDasharray={circumference} strokeDashoffset={0} transform={`rotate(-90 ${cx} ${cy})`} />
-                        )}
-                        <motion.circle cx={cx} cy={cy} fill={COLORS.success} fillOpacity="0.1" animate={{ r }} transition={{ type: 'tween', ease: 'easeInOut', duration: 0.15 }} />
-                        <motion.circle cx={cx} cy={cy} fill={COLORS.success} fillOpacity="0.05" animate={{ r: r + 8 }} transition={{ type: 'tween', ease: 'easeInOut', duration: 0.15 }} />
-                    </svg>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center">
-                        {phase === 'idle' && (
-                            <button onClick={start} className="text-white font-semibold" style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14 }}>Begin</button>
-                        )}
-                        {phase === 'done' && (
-                            <div className="text-center">
-                                <p className="font-serif font-semibold mb-2" style={{ fontSize: 16, color: COLORS.successDarkText }}>Complete</p>
-                                <button onClick={reset} className="font-medium" style={{ fontSize: 13, color: '#9e9186' }}>Again</button>
-                            </div>
-                        )}
-                        {isActive && (
-                            <div className="text-center">
-                                <p className="font-serif font-semibold" style={{ fontSize: 24, color: COLORS.success }}>{cfg.label}</p>
-                                <p className="mt-0.5 max-w-[120px]" style={{ fontSize: 14, color: '#7a7068' }}>{cfg.instruction}</p>
-                            </div>
-                        )}
-                    </div>
-                </div>
-
-                {/* Cycle dots */}
-                <div className="flex items-center gap-2 mb-3">
-                    {Array.from({ length: totalCycles }).map((_, i) => (
-                        <div key={i} style={{ width: i === cycle && running ? 12 : 10, height: i === cycle && running ? 12 : 10, borderRadius: '50%', backgroundColor: i < cycle || phase === 'done' ? COLORS.success : i === cycle && running ? COLORS.success : '#d0cdc8', transition: 'all 0.3s' }} />
-                    ))}
-                    <span style={{ fontSize: 12, color: '#9e9186', marginLeft: 4 }}>{phase === 'done' ? '3/3' : running ? `${cycle + 1}/3` : '0/3'}</span>
-                </div>
-
-                {/* Phase labels */}
-                {running && phase !== 'done' && (
-                    <div className="flex items-center gap-1.5 text-xs font-bold">
-                        <span style={{ color: phaseIdx >= 0 ? COLORS.success : '#d0cdc8', fontWeight: phaseIdx === 0 ? 700 : 600 }}>Inhale 1</span>
-                        <span style={{ color: '#d0cdc8' }}>→</span>
-                        <span style={{ color: phaseIdx >= 1 ? COLORS.success : '#d0cdc8', fontWeight: phaseIdx === 1 ? 700 : 600 }}>Inhale 2</span>
-                        <span style={{ color: '#d0cdc8' }}>→</span>
-                        <span style={{ color: phaseIdx >= 2 ? COLORS.success : '#d0cdc8', fontWeight: phaseIdx === 2 ? 700 : 600 }}>Exhale</span>
-                    </div>
-                )}
-
-                {/* Step cards */}
-                <div className="mt-5 grid grid-cols-3 gap-3 w-full max-w-sm text-center">
-                    {[
-                        { label: 'Inhale 1', desc: 'Sharp nose breath', key: 'inhale1' },
-                        { label: 'Inhale 2', desc: 'Quick sip on top', key: 'inhale2' },
-                        { label: 'Exhale', desc: 'Long slow mouth', key: 'exhale' },
-                    ].map(step => {
-                        const isStepActive = phase === step.key;
-                        return (
-                            <div key={step.key} className="bg-white dark:bg-zinc-900" style={{
-                                border: isStepActive ? `2px solid ${COLORS.success}` : '1.5px solid #d0cdc8',
-                                borderRadius: 14,
-                                padding: '12px 8px',
-                                backgroundColor: isStepActive ? COLORS.successTint : '#FFFFFF',
-                            }}>
-                                <p className="font-serif font-semibold" style={{ fontSize: 15, color: isStepActive ? COLORS.successDarkText : '#9e9186' }}>{step.label}</p>
-                                <p style={{ fontSize: 13, color: isStepActive ? '#5a5550' : '#b0a898', marginTop: 2 }}>{step.desc}</p>
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
-        </div>
-    );
+    return <BrandedBreathingView {...{phase,cfg,progress,cycle,running,start,reset}} />;
 };
 
 type CrisisResponse = {
@@ -464,16 +236,15 @@ const CrisisScenarioTrainer = () => {
 
     const consequenceStyle = (quality: 'bad' | 'ok' | 'good') => {
         if (quality === 'good') return { bg: COLORS.successTint, border: COLORS.success, text: COLORS.successDarkText, label: COLORS.successDarkText };
-        if (quality === 'ok') return { bg: '#f4f0eb', border: '#9e9186', text: '#5a5550', label: '#5a5550' };
-        return { bg: '#fde4e4', border: '#E85D75', text: '#5a5550', label: '#b33030' };
+        if (quality === 'ok') return { bg: "var(--module-on-fill)", border: "var(--module-line)", text: "var(--module-ink)", label: "var(--module-ink)" };
+        return { bg: "var(--module-ink)", border: "var(--module-line)", text: "var(--module-ink)", label: "var(--module-danger-text)" };
     };
 
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+    return <div className="wr-skin" data-wide="CrisisScenarioTrainer"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Trainer</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: '#1a1a1a' }}>Crisis Scenario Trainer</h4>
-                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Your brain will default to its training. Build the right instincts now.</p>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Trainer</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 24, color: "var(--module-ink)" }}>Crisis Scenario Trainer</h4>
+                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Your brain will default to its training. Build the right instincts now.</p>
             </div>
 
             <AnimatePresence mode="wait">
@@ -481,22 +252,20 @@ const CrisisScenarioTrainer = () => {
                     <MotionDiv key={`scenario-${scenarioIndex}`} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.3 }}>
                         {/* Progress */}
                         <div className="flex items-center justify-between mb-6">
-                            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Scenario {scenarioIndex + 1}/4</span>
+                            <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Scenario {scenarioIndex + 1}/4</span>
                             <div className="flex gap-1.5">
                                 {crisisScenarios.map((_, i) => (
-                                    <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: i <= scenarioIndex ? COLORS.success : '#d0cdc8', transition: 'background-color 0.3s' }} />
+                                    <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: moduleFill(i <= scenarioIndex ? COLORS.success : "var(--module-surface)"), transition: 'background-color 0.3s' }} />
                                 ))}
                             </div>
                         </div>
 
                         {/* Scenario card */}
-                        <div className="bg-white dark:bg-zinc-900 mb-6 flex items-start gap-3" style={{ border: '2px solid #1a1a1a', borderRadius: 14, padding: '20px 24px' }}>
-                            <div className="flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center mt-0.5" style={{ backgroundColor: '#fde4e4' }}>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E85D75" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                            </div>
+                        <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] mb-6 flex items-start gap-3" style={{ border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 24px' }}>
+
                             <div>
-                                <span className="inline-block mb-2" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: '#fde4e4', color: '#b33030', borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Crisis Scenario</span>
-                                <p className="font-serif" style={{ fontSize: 17, color: '#1a1a1a', lineHeight: 1.5 }}>{scenario.situation}</p>
+                                <span className="inline-block mb-2" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', backgroundColor: "var(--module-surface)", color: "var(--module-danger-text)", borderRadius: 20, padding: '3px 10px', textTransform: 'uppercase' as const }}>Crisis Scenario</span>
+                                <p className="font-serif" style={{ fontSize: 17, color: "var(--module-ink)", lineHeight: 1.5 }}>{scenario.situation}</p>
                             </div>
                         </div>
 
@@ -513,32 +282,32 @@ const CrisisScenarioTrainer = () => {
                                             isRevealed
                                                 ? isChosen
                                                     ? response.quality === 'good'
-                                                        ? { backgroundColor: COLORS.successTint, border: `2px solid ${COLORS.success}`, borderRadius: 14 }
+                                                        ? { backgroundColor: moduleFill(COLORS.successTint), border: `2px solid ${COLORS.success}`, borderRadius: 14 }
                                                         : response.quality === 'bad'
-                                                            ? { backgroundColor: '#fde4e4', border: '2px solid #E85D75', borderRadius: 14 }
-                                                            : { backgroundColor: '#f4f0eb', border: '2px solid #9e9186', borderRadius: 14 }
-                                                    : { backgroundColor: '#FFFFFF', border: '2px solid #d0cdc8', borderRadius: 14, opacity: 0.4 }
-                                                : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 14, cursor: 'pointer' }
-                                        }>
+                                                            ? { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14 }
+                                                            : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14 }
+                                                    : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14, opacity: 0.4 }
+                                                : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14, cursor: 'pointer' }
+                                        } data-wide-button="true" data-selected={chosenIndex === idx} data-tone={response.quality === 'good' ? 'mint' : response.quality === 'bad' ? 'coral' : 'orange'} aria-pressed={chosenIndex === idx}>
                                             <div className="flex items-start gap-3">
-                                                <span className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold mt-0.5" style={{
-                                                    backgroundColor: isRevealed && isChosen
-                                                        ? response.quality === 'good' ? COLORS.success : response.quality === 'bad' ? '#E85D75' : '#9e9186'
-                                                        : '#f0ece6',
-                                                    color: isRevealed && isChosen ? '#FFFFFF' : '#9e9186',
+                                                <span className="wr-answer-letter flex-shrink-0" style={{
+                                                    backgroundColor: moduleFill(isRevealed && isChosen
+                                                        ? response.quality === 'good' ? COLORS.success : response.quality === 'bad' ? "var(--module-danger)" : "var(--module-muted)"
+                                                        : "var(--module-surface)"),
+                                                    color: moduleText(isRevealed && isChosen ? "var(--module-on-fill)" : "var(--module-muted)"),
                                                 }}>
                                                     {String.fromCharCode(65 + idx)}
                                                 </span>
-                                                <span style={{ fontSize: 14, fontWeight: 500, color: isRevealed && !isChosen ? '#b0a898' : '#1a1a1a' }}>{response.text}</span>
+                                                <span style={{ fontSize: 14, fontWeight: 500, color: moduleText(isRevealed && !isChosen ? "var(--module-muted)" : "var(--module-ink)") }}>{response.text}</span>
                                             </div>
                                         </button>
 
                                         <AnimatePresence>
                                             {isChosen && isRevealed && (
                                                 <MotionDiv initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.35, ease: 'easeOut' }} className="overflow-hidden">
-                                                    <div className="mt-2" style={{ borderLeft: `3px solid ${cs.border}`, backgroundColor: cs.bg, borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
-                                                        <p className="font-semibold text-sm mb-1" style={{ color: cs.label }}>{response.consequence}</p>
-                                                        <p className="text-sm leading-relaxed" style={{ color: cs.text }}>{response.explanation}</p>
+                                                    <div className="mt-2" style={{ borderLeft: `3px solid ${cs.border}`, backgroundColor: moduleFill(cs.bg), borderRadius: '0 10px 10px 0', padding: '16px 20px' }}>
+                                                        <p className="font-semibold text-sm mb-1" style={{ color: moduleText(cs.label) }}>{response.consequence}</p>
+                                                        <p className="text-sm leading-relaxed" style={{ color: moduleText(cs.text) }}>{response.explanation}</p>
                                                     </div>
                                                 </MotionDiv>
                                             )}
@@ -551,7 +320,7 @@ const CrisisScenarioTrainer = () => {
                         <AnimatePresence>
                             {chosenIndex !== null && (
                                 <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.25 }} className="flex justify-end mt-6">
-                                    <button onClick={handleNext} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>
+                                    <button onClick={handleNext} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">
                                         {scenarioIndex + 1 >= crisisScenarios.length ? 'See Results' : 'Next Scenario'}
                                     </button>
                                 </MotionDiv>
@@ -561,20 +330,20 @@ const CrisisScenarioTrainer = () => {
                 ) : (
                     <MotionDiv key="results" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -16 }} transition={{ duration: 0.35 }} className="text-center">
                         <div className="mb-6">
-                            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style={{ backgroundColor: COLORS.successTint }}>
-                                <span className="font-serif font-bold" style={{ fontSize: 28, color: COLORS.success }}>{optimalCount}/4</span>
+                            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-4" style={{ backgroundColor: moduleFill(COLORS.successTint) }}>
+                                <span className="font-serif font-bold" style={{ fontSize: 28, color: moduleText(COLORS.success) }}>{optimalCount}/4</span>
                             </div>
-                            <p className="font-serif font-semibold text-lg mb-1" style={{ color: '#1a1a1a' }}>{optimalCount}/4 optimal responses</p>
+                            <p className="font-serif font-semibold text-lg mb-1" style={{ color: "var(--module-ink)" }}>{optimalCount}/4 optimal responses</p>
                         </div>
 
                         <div className="mb-6" style={
                             optimalCount === 4
-                                ? { borderLeft: `3px solid ${COLORS.success}`, backgroundColor: COLORS.successTint, borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
+                                ? { borderLeft: `3px solid ${COLORS.success}`, backgroundColor: moduleFill(COLORS.successTint), borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
                                 : optimalCount >= 2
-                                    ? { borderLeft: '3px solid #9e9186', backgroundColor: '#f4f0eb', borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
-                                    : { borderLeft: '3px solid #E85D75', backgroundColor: '#fde4e4', borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
+                                    ? { borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
+                                    : { borderLeft: "3px solid var(--module-line)", backgroundColor: "var(--module-surface)", borderRadius: '0 10px 10px 0', padding: '16px 20px', textAlign: 'left' }
                         }>
-                            <p className="text-sm leading-relaxed" style={{ color: optimalCount === 4 ? COLORS.successDarkText : optimalCount >= 2 ? '#5a5550' : '#b33030' }}>
+                            <p className="text-sm leading-relaxed" style={{ color: moduleText(optimalCount === 4 ? COLORS.successDarkText : optimalCount >= 2 ? "var(--module-ink)" : "var(--module-danger-text)") }}>
                                 {optimalCount === 4 ? "You\u2019ve built exam-crisis muscle memory. When panic hits, your training will take over." : optimalCount >= 2 ? "Good instincts, but some panic responses slipped through. Review the scenarios where you chose poorly." : "Under pressure, your brain defaulted to panic. That\u2019s exactly why we practice. Run through these again."}
                             </p>
                         </div>
@@ -582,335 +351,17 @@ const CrisisScenarioTrainer = () => {
                         <div className="flex justify-center gap-2 mb-6">
                             {results.map((r, i) => (
                                 <div key={i} className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold" style={{
-                                    backgroundColor: r === 'good' ? COLORS.success : r === 'ok' ? '#9e9186' : '#E85D75',
-                                    color: '#FFFFFF',
+                                    backgroundColor: moduleFill(r === 'good' ? COLORS.success : r === 'ok' ? "var(--module-muted)" : "var(--module-danger)"),
+                                    color: "var(--module-on-fill)",
                                 }}>{i + 1}</div>
                             ))}
                         </div>
 
-                        <button onClick={handlePlayAgain} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Play Again</button>
+                        <button onClick={handlePlayAgain} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">Play Again</button>
                     </MotionDiv>
                 )}
             </AnimatePresence>
-        </div>
-    );
-};
-
-// --- WRAP BUILDER ---
-type WRAPSection = {
-    title: string;
-    prompt: string;
-    suggestions: string[];
-    accentColor: string;
-    accentBg: string;
-    accentBorder: string;
-    accentText: string;
-    accentRing: string;
-    accentPillBg: string;
-    accentPillBorder: string;
-    accentPillText: string;
-    accentPillSelectedBg: string;
-    accentPillSelectedText: string;
-    accentCardDot: string;
-};
-
-const wrapSections: WRAPSection[] = [
-    {
-        title: 'Daily Maintenance',
-        prompt: 'What do you need to do EVERY DAY to stay mentally well during exam season?',
-        suggestions: ['8 hours sleep', 'Exercise or walk', 'Eat 3 meals', 'Talk to someone', 'Take breaks', 'Limit social media'],
-        accentColor: '#10b981',
-        accentBg: 'bg-emerald-50 dark:bg-emerald-900/20',
-        accentBorder: 'border-emerald-200 dark:border-emerald-800',
-        accentText: 'text-emerald-600 dark:text-emerald-400',
-        accentRing: 'ring-emerald-500',
-        accentPillBg: 'bg-emerald-50 dark:bg-emerald-900/20',
-        accentPillBorder: 'border-emerald-300 dark:border-emerald-700',
-        accentPillText: 'text-emerald-700 dark:text-emerald-300',
-        accentPillSelectedBg: 'bg-emerald-500 dark:bg-emerald-600',
-        accentPillSelectedText: 'text-white',
-        accentCardDot: 'bg-emerald-500',
-    },
-    {
-        title: 'Triggers',
-        prompt: 'What situations or events tend to push you toward crisis?',
-        suggestions: ['Poor exam result', 'Comparing myself to others', 'Falling behind schedule', 'Sleep deprivation', 'Conflict with family/friends'],
-        accentColor: '#f59e0b',
-        accentBg: 'bg-amber-50 dark:bg-amber-900/20',
-        accentBorder: 'border-amber-200 dark:border-amber-800',
-        accentText: 'text-amber-600 dark:text-amber-400',
-        accentRing: 'ring-amber-500',
-        accentPillBg: 'bg-amber-50 dark:bg-amber-900/20',
-        accentPillBorder: 'border-amber-300 dark:border-amber-700',
-        accentPillText: 'text-amber-700 dark:text-amber-300',
-        accentPillSelectedBg: 'bg-amber-500 dark:bg-amber-600',
-        accentPillSelectedText: 'text-white',
-        accentCardDot: 'bg-amber-500',
-    },
-    {
-        title: 'Warning Signs',
-        prompt: 'What are the early signs that you\'re heading into crisis?',
-        suggestions: ['Can\'t concentrate', 'Not sleeping', 'Withdrawing from people', 'Irritability', 'Feeling hopeless'],
-        accentColor: '#f43f5e',
-        accentBg: 'bg-rose-50 dark:bg-rose-900/20',
-        accentBorder: 'border-rose-200 dark:border-rose-800',
-        accentText: 'text-rose-600 dark:text-rose-400',
-        accentRing: 'ring-rose-500',
-        accentPillBg: 'bg-rose-50 dark:bg-rose-900/20',
-        accentPillBorder: 'border-rose-300 dark:border-rose-700',
-        accentPillText: 'text-rose-700 dark:text-rose-300',
-        accentPillSelectedBg: 'bg-rose-500 dark:bg-rose-600',
-        accentPillSelectedText: 'text-white',
-        accentCardDot: 'bg-rose-500',
-    },
-    {
-        title: 'Crisis Plan',
-        prompt: 'When you\'re in crisis, what specific actions will you take?',
-        suggestions: ['Call a trusted person', 'Use physiological sigh breathing', 'Go for a walk outside', 'Take a full day off studying'],
-        accentColor: '#3b82f6',
-        accentBg: 'bg-blue-50 dark:bg-blue-900/20',
-        accentBorder: 'border-blue-200 dark:border-blue-800',
-        accentText: 'text-blue-600 dark:text-blue-400',
-        accentRing: 'ring-blue-500',
-        accentPillBg: 'bg-blue-50 dark:bg-blue-900/20',
-        accentPillBorder: 'border-blue-300 dark:border-blue-700',
-        accentPillText: 'text-blue-700 dark:text-blue-300',
-        accentPillSelectedBg: 'bg-blue-500 dark:bg-blue-600',
-        accentPillSelectedText: 'text-white',
-        accentCardDot: 'bg-blue-500',
-    },
-];
-
-const WRAPBuilder = () => {
-    const draft = usePrivateDeviceDraft('exam-wrap', { step: 0, selections: [[], [], [], []] as string[][], customInputs: ['', '', '', ''] });
-    const { step, selections, customInputs } = draft.value;
-    const setStep = (value: React.SetStateAction<number>) => draft.update(previous => ({ ...previous, step: typeof value === 'function' ? value(previous.step) : value }));
-    const setSelections = (value: React.SetStateAction<string[][]>) => draft.update(previous => ({ ...previous, selections: typeof value === 'function' ? value(previous.selections) : value }));
-    const setCustomInputs = (value: React.SetStateAction<string[]>) => draft.update(previous => ({ ...previous, customInputs: typeof value === 'function' ? value(previous.customInputs) : value }));
-
-    const toggleItem = (sectionIdx: number, item: string) => {
-        setSelections(prev => {
-            const updated = prev.map(s => [...s]);
-            const idx = updated[sectionIdx].indexOf(item);
-            if (idx >= 0) updated[sectionIdx].splice(idx, 1);
-            else updated[sectionIdx].push(item);
-            return updated;
-        });
-    };
-
-    const addCustom = (sectionIdx: number) => {
-        const val = customInputs[sectionIdx].trim();
-        if (!val) return;
-        if (!selections[sectionIdx].includes(val)) {
-            setSelections(prev => {
-                const updated = prev.map(s => [...s]);
-                updated[sectionIdx].push(val);
-                return updated;
-            });
-        }
-        setCustomInputs(prev => {
-            const updated = [...prev];
-            updated[sectionIdx] = '';
-            return updated;
-        });
-    };
-
-    const handleNext = () => {
-        if (step < 3) setStep(s => s + 1);
-        else setStep(4);
-    };
-
-    const handleEdit = () => setStep(0);
-
-    const section = step < 4 ? wrapSections[step] : null;
-
-    return (
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Build Your WRAP</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">A personal crisis plan you write now, so you don't have to think under pressure.</p>
-
-            <PrivateDraftControls title="My WRAP" retain={draft.retain} setRetain={draft.setRetain} onClear={draft.clear} error={draft.error} text={wrapSections.map((section, index) => `${section.title}\n${selections[index].join('\n')}\n${customInputs[index]}`).join('\n\n')} />
-
-            {/* Progress dots */}
-            <div className="flex items-center justify-center gap-2 mb-8">
-                {wrapSections.map((ws, i) => (
-                    <div key={i} className="flex items-center gap-2">
-                        <div
-                            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                                step === 4 || i < step
-                                    ? 'scale-100'
-                                    : i === step
-                                        ? 'scale-110 ring-2 ring-offset-2 ring-offset-white dark:ring-offset-zinc-800'
-                                        : 'bg-zinc-200 dark:bg-zinc-600'
-                            } ${i === step && step < 4 ? ws.accentRing : ''}`}
-                            style={{
-                                backgroundColor: step === 4 || i < step
-                                    ? wrapSections[i].accentColor
-                                    : i === step
-                                        ? wrapSections[i].accentColor
-                                        : undefined,
-                            }}
-                        />
-                        {i < 3 && (
-                            <div className={`w-6 h-0.5 rounded-full transition-colors ${
-                                step === 4 || i < step ? 'bg-zinc-300 dark:bg-zinc-600' : 'bg-zinc-200 dark:bg-zinc-700'
-                            }`} />
-                        )}
-                    </div>
-                ))}
-            </div>
-
-            <AnimatePresence mode="wait">
-                {step < 4 && section ? (
-                    <MotionDiv
-                        key={`wrap-step-${step}`}
-                        initial={{ opacity: 0, x: 24 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -24 }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        {/* Step label */}
-                        <div className="flex items-center gap-2 mb-3">
-                            <span className={`text-xs font-bold uppercase tracking-wider ${section.accentText}`}>
-                                {section.title}
-                            </span>
-                            <span className="text-xs text-zinc-400 dark:text-zinc-500">Step {step + 1} of 4</span>
-                        </div>
-
-                        {/* Prompt */}
-                        <p className="text-base font-medium text-zinc-700 dark:text-zinc-200 mb-5">{section.prompt}</p>
-
-                        {/* Toggleable pills */}
-                        <div className="flex flex-wrap gap-2 mb-5">
-                            {section.suggestions.map(item => {
-                                const isSelected = selections[step].includes(item);
-                                return (
-                                    <button
-                                        key={item}
-                                        type="button"
-                                        aria-pressed={isSelected}
-                                        onClick={() => toggleItem(step, item)}
-                                        className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200 ${
-                                            isSelected
-                                                ? `${section.accentPillSelectedBg} ${section.accentPillSelectedText} border-transparent`
-                                                : `${section.accentPillBg} ${section.accentPillBorder} ${section.accentPillText} hover:opacity-80`
-                                        }`}
-                                    >
-                                        {item}
-                                    </button>
-                                );
-                            })}
-                            {/* Show custom items as selected pills */}
-                            {selections[step]
-                                .filter(item => !section.suggestions.includes(item))
-                                .map(item => (
-                                    <button
-                                        key={item}
-                                        onClick={() => toggleItem(step, item)}
-                                        className={`px-4 py-2 rounded-full text-sm font-medium border transition-all duration-200 ${section.accentPillSelectedBg} ${section.accentPillSelectedText} border-transparent`}
-                                    >
-                                        {item} &times;
-                                    </button>
-                                ))}
-                        </div>
-
-                        {/* Custom input */}
-                        <div className="flex gap-2 mb-6">
-                            <input
-                                type="text"
-                                aria-label={`Your own ${section.title.toLowerCase()} item`}
-                                value={customInputs[step]}
-                                onChange={e => {
-                                    const idx = step;
-                                    setCustomInputs(prev => {
-                                        const updated = [...prev];
-                                        updated[idx] = e.target.value;
-                                        return updated;
-                                    });
-                                }}
-                                onKeyDown={e => { if (e.key === 'Enter') addCustom(step); }}
-                                placeholder="Add your own..."
-                                className="flex-1 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-600 bg-zinc-50 dark:bg-zinc-700/50 text-sm text-zinc-700 dark:text-zinc-200 placeholder-zinc-400 dark:placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-offset-1"
-                                style={{ '--tw-ring-color': section.accentColor } as React.CSSProperties}
-                            />
-                            <button
-                                onClick={() => addCustom(step)}
-                                className="px-4 py-2 rounded-lg text-sm font-bold text-white transition-colors"
-                                style={{ backgroundColor: section.accentColor }}
-                            >
-                                Add
-                            </button>
-                        </div>
-
-                        {/* Next button */}
-                        <div className="flex justify-end">
-                            <button
-                                onClick={handleNext}
-                                className="px-6 py-2.5 bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm rounded-lg transition-colors"
-                            >
-                                {step === 3 ? 'Complete My WRAP' : 'Next'}
-                            </button>
-                        </div>
-                    </MotionDiv>
-                ) : step === 4 ? (
-                    <MotionDiv
-                        key="wrap-complete"
-                        initial={{ opacity: 0, y: 16 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -16 }}
-                        transition={{ duration: 0.4 }}
-                    >
-                        {/* Completed WRAP card */}
-                        <div className="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-lg overflow-hidden">
-                            {/* Card header */}
-                            <div className="px-6 py-5 bg-zinc-50 dark:bg-zinc-800/80 border-b border-zinc-200 dark:border-zinc-700">
-                                <h5 className="font-serif text-xl font-bold text-zinc-800 dark:text-white text-center">My Wellness Recovery Action Plan</h5>
-                            </div>
-
-                            {/* Card sections */}
-                            <div className="p-6 space-y-6">
-                                {wrapSections.map((ws, i) => (
-                                    <div key={i} className="pl-4">
-                                        <div className="flex items-center gap-2 mb-2">
-                                            <span className={`w-2 h-2 rounded-full flex-shrink-0 ${ws.accentCardDot}`} />
-                                            <h6 className={`text-sm font-bold uppercase tracking-wider ${ws.accentText}`}>{ws.title}</h6>
-                                        </div>
-                                        {selections[i].length > 0 ? (
-                                            <ul className="space-y-1">
-                                                {selections[i].map((item, j) => (
-                                                    <li key={j} className="flex items-start gap-2 text-sm text-zinc-700 dark:text-zinc-300">
-                                                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: ws.accentColor }} />
-                                                        {item}
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        ) : (
-                                            <p className="text-sm text-zinc-400 dark:text-zinc-500 italic">No items added</p>
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* Summary text */}
-                        <p className="mt-6 text-sm text-zinc-600 dark:text-zinc-300 text-center leading-relaxed font-medium">
-                            Screenshot this plan. Pin it on your wall. When crisis hits, you won't need to think -- just follow your plan.
-                        </p>
-
-                        {/* Edit button */}
-                        <div className="flex justify-center mt-5">
-                            <button
-                                onClick={handleEdit}
-                                className="px-6 py-2.5 bg-zinc-200 dark:bg-zinc-600 hover:bg-zinc-300 dark:hover:bg-zinc-500 text-zinc-700 dark:text-zinc-200 font-bold text-sm rounded-lg transition-colors"
-                            >
-                                Edit My WRAP
-                            </button>
-                        </div>
-                    </MotionDiv>
-                ) : null}
-            </AnimatePresence>
-        </div>
-    );
+        </div></div>;
 };
 
 // --- MODULE COMPONENT ---
@@ -922,8 +373,7 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
     { id: 'social-containment', title: 'Protect Your Head After Exams', eyebrow: '03 // The Post-Exam Trap', icon: Shield },
     { id: 'cognitive-athlete-sleep', title: 'Sleep: Your Secret Weapon', eyebrow: '04 // Sleep for Exams', icon: Moon },
     { id: 'cognitive-athlete-nutrition', title: 'Food and Focus', eyebrow: '05 // Eating for Exam Day', icon: Utensils },
-    { id: 'crisis-planning', title: 'Your Personal Crisis Plan', eyebrow: '06 // Plan Before Panic Hits', icon: ClipboardList },
-    { id: 'implementation', title: 'The 7-Day Countdown', eyebrow: '07 // Your Final Week Plan', icon: Flag },
+        { id: 'implementation', title: 'The 7-Day Countdown', eyebrow: '06 // Your Final Week Plan', icon: Flag },
   ];
 
   return (
@@ -1014,50 +464,10 @@ const ExamCrisisManagementModule: React.FC<{ onBack: () => void; progress: Modul
             </ReadingSection>
           )}
           {activeSection === 5 && (
-            <ReadingSection title="Your Personal Crisis Plan." eyebrow="Step 6" icon={ClipboardList} theme={theme}>
-              {essentials ? (
-                <p>Build a crisis plan while you are calm. Your WRAP has four parts: daily maintenance habits, your personal triggers, early warning signs, and your specific crisis actions. Write it now so you do not have to think when you are panicking.</p>
-              ) : (
-                <>
-                  <p>The best time to make a plan for a crisis is before the crisis happens. The <Highlight description="A Wellness Recovery Action Plan. Basically, you write down what keeps you well, what stresses you out, and what you'll do if things go really wrong -- all while you're calm and thinking clearly." theme={theme}>WRAP</Highlight> is a tool for doing exactly that. Instead of panicking and making it up as you go, you follow a plan your calm self already wrote.</p>
-                  <p>Your WRAP has four parts:</p>
-                </>
-              )}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>Daily Maintenance</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>What do you need to do every day to stay well?</p>
-                  </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>Triggers</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>What external events throw you off?</p>
-                  </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Early Warning Signs</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>What are the first signs you're heading toward a bad place?</p>
-                  </div>
-                </div>
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#6EE7B7', border: '2.5px solid #059669', borderRadius: 16, boxShadow: '4px 4px 0px 0px #059669' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
-                  <div>
-                    <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Crisis Plan</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>Your "break glass" instructions for when things get really bad. By writing this down now, while you're calm, you don't have to make decisions when you're panicking.</p>
-                  </div>
-                </div>
-              </div>
-              <WRAPBuilder />
-            </ReadingSection>
+            <></>
           )}
-          {activeSection === 6 && (
-            <ReadingSection title="The 7-Day Countdown." eyebrow="Step 7" icon={Flag} theme={theme}>
+          {activeSection === 5 && (
+            <ReadingSection title="The 7-Day Countdown." eyebrow="Step 6" icon={Flag} theme={theme}>
               {essentials ? (
                 <p>7 days out: ease off energy drinks and fizzy drinks. 5 days out: fix your sleep to exam times. 3 days out: switch to steady-energy food. Day before: stop heavy study by 6pm. You are getting your brain ready to perform, not cramming more in.</p>
               ) : (

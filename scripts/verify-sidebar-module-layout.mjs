@@ -113,6 +113,56 @@ try {
     await open('view=innovation-zone&tool=war-room', width, theme, '.war-room-workspace');
     await capture('war-room', width, theme);
   }
+
+  async function selectSection(title) {
+    const mobile = frame.getByRole('button', { name: 'Open module sections', exact: true });
+    let scope = frame.locator('#module-sidebar-content');
+    if (await mobile.isVisible()) {
+      await mobile.click();
+      scope = frame.getByRole('dialog', { name: 'Contents', exact: true });
+    } else {
+      const expand = frame.getByRole('button', { name: 'Expand module navigation', exact: true });
+      if (await expand.isVisible()) await expand.click();
+    }
+    await scope.locator('.mr-progress-list button').filter({ hasText: title }).click();
+    await frame.locator('.mr-lesson-heading h1').filter({ hasText: title }).waitFor();
+  }
+  for (const theme of ['dark', 'light']) for (const width of [800, 390, 320]) {
+    await open('view=module&mod=procrastination-protocol', width, theme, '.mr-paper');
+    await selectSection('Scaffolding Your Focus');
+    const thinkers = frame.locator('.mr-lesson img[src*="star-crew/companions/thinker.png"]');
+    assert.equal(await thinkers.count(), 2, 'Focus header and small beginning use the regular thinker');
+    await capture('review-focus-thinker', width, theme);
+
+    await open('view=module&mod=effective-struggle-protocol', width, theme, '.mr-paper');
+    await selectSection('The Fallacy of Ease');
+    await frame.getByRole('button', { name: 'Reveal the results', exact: true }).click();
+    assert.deepEqual(await frame.locator('.wr-retention-bars output').allTextContents(), ['40%', '61%']);
+    const bars = await frame.locator('.wr-vertical-track').evaluateAll(elements => elements.map(e => ({ top:e.getBoundingClientRect().top, border:getComputedStyle(e).borderTopStyle })));
+    assert.ok(bars.every(b => b.border === 'solid'), 'Recall bars have outlined tracks');
+    assert.ok(Math.abs(bars[0].top-bars[1].top)<1, 'Recall tracks share a baseline');
+    await capture('review-recall-evidence', width, theme);
+
+    await open('view=module&mod=exam-hall-strategies-protocol', width, theme, '.mr-paper');
+    await selectSection('Reading Time Triage');
+    await frame.getByRole('button', { name:'Start Triage',exact:true }).click();
+    assert.equal(await frame.locator('[data-triage-progress]').count(),8);
+    assert.equal(await frame.locator('[data-triage-progress=pending]').count(),7);
+    await frame.getByRole('button',{name:'Do First',exact:true}).click();
+    const choices = await frame.locator('[data-triage-choice]').evaluateAll(buttons => buttons.map(b => ({opacity:getComputedStyle(b).opacity,selected:b.dataset.selected,marker:getComputedStyle(b.querySelector('[data-triage-choice-marker]')).borderTopWidth})));
+    assert.ok(choices.every(c => c.opacity === '1'), 'Locked triage buttons retain full opacity');
+    assert.ok(choices.filter(c => c.selected === 'true').every(c => c.marker === '2px'), 'Selected triage dots have a contrasting outline');
+    await capture('review-triage-selected', width, theme);
+
+    await open('view=module&mod=exam-crisis-management-protocol', width, theme, '.mr-paper');
+    await selectSection('Why You');
+    const type = await frame.locator('.wr-chart').evaluate(svg => ({width:svg.getBoundingClientRect().width,label:parseFloat(getComputedStyle(svg.querySelector('text')).fontSize)}));
+    assert.ok(Math.abs(type.label*type.width/640-(type.width<400?10:11))<.1,'Chart labels remain 10–11 rendered pixels');
+    await capture('review-quiet-chart', width, theme);
+    await selectSection('The 7-Day Countdown');
+    assert.equal(await frame.getByText('These tools are for exam nerves.',{exact:false}).count(),0,'Removed support advice stays absent');
+  }
+
   await open('view=tree', 1024, 'dark', '.student-home', true);
   assert.equal(await frame.locator('.student-sidebar-shell').count(), 0, 'Tablets keep the established mobile app navigation');
   await capture('tablet-home', 1024, 'dark');

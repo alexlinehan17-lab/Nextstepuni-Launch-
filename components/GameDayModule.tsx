@@ -3,20 +3,20 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { Target, Brain, SlidersHorizontal, Shield, Moon, Utensils, Zap, Wind, Leaf, Droplet, Coffee, X } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { amberTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ToolJumpCard } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { Cite } from './ModuleReferences';
+import { Brain,Coffee,Droplet,Leaf,Moon,Shield,SlidersHorizontal,Target,Utensils,Wind,X,Zap } from 'lucide-react';
+import React,{ useEffect,useState } from 'react';
 import { GAME_DAY_REFERENCE_LIST } from '../data/references/gameDay';
 import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { useNorthStar } from '../hooks/useNorthStar';
-import NorthStarCallout from './NorthStarCallout';
+import { amberTheme } from '../moduleThemes';
 import { COMPACT_CALLOUT_PLACEMENTS } from '../northStarData';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,PersonalStory,ReadingSection,ToolJumpCard } from './ModuleShared';
+import { MotionDiv } from './Motion';
+import NorthStarCallout from './NorthStarCallout';
 
 const theme = amberTheme;
 
@@ -26,20 +26,20 @@ const ChallengeThreatSimulator = () => {
     const isChallenge = resources >= 50;
 
     return (
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Challenge vs. Threat State</h4>
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Challenge vs. Threat State</h4>
              <div className="grid grid-cols-2 gap-8 items-center mt-8">
                 <div className="text-center">
                     <p className="font-bold text-sm">Demands (The Exam)</p>
-                    <div className="h-8 w-full bg-rose-200 rounded-full mt-2 border border-rose-300" />
+                    <div className="h-8 w-full bg-[var(--module-danger-soft)] rounded-full mt-2 border border-[var(--module-line)]" />
                 </div>
                 <div className="text-center">
                     <p className="font-bold text-sm">Your Resources</p>
-                    <div className="h-8 w-full bg-zinc-100 dark:bg-zinc-800 rounded-full mt-2"><motion.div className="h-full bg-emerald-400 rounded-full" animate={{width: `${resources}%`}} /></div>
+                    <div className="h-8 w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full mt-2"><motion.div className="h-full bg-[var(--module-success)] rounded-full" animate={{width: `${resources}%`}} /></div>
                 </div>
              </div>
              <div className="flex justify-center gap-2 mt-4"><span className="font-bold">Resource Level:</span><input type="range" value={resources} onChange={e => setResources(parseInt(e.target.value))} className="chunky-slider chunky-slider-sky" /></div>
-             <div className="mt-6 p-4 rounded-xl text-center font-bold" style={isChallenge ? { backgroundColor: '#6EE7B7', border: '2.5px solid #059669', boxShadow: '3px 3px 0px 0px #059669', color: '#064E3B', borderRadius: 14 } : { backgroundColor: '#FCA5A5', border: '2.5px solid #DC2626', boxShadow: '3px 3px 0px 0px #DC2626', color: '#7F1D1D', borderRadius: 14 }}>
+             <div className="mt-6 p-4 rounded-xl text-center font-bold" style={isChallenge ? { backgroundColor: "var(--module-success-soft)", border: "2.5px solid var(--module-line)", boxShadow: 'none', color: "var(--module-success-text)", borderRadius: 14 } : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", boxShadow: 'none', color: "var(--module-danger-text)", borderRadius: 14 }}>
                 {isChallenge ? "CHALLENGE STATE: You feel 'pumped'. More blood and oxygen flow to your brain. Go time." : "THREAT STATE: You feel 'scared'. Your brain tightens up, thinking gets foggy. 'Mind blanking' is likely."}
              </div>
         </div>
@@ -51,17 +51,17 @@ const CircadianShifter = () => {
     const shifts = Math.ceil(((wakeTime - 7) * 60) / 15);
 
     return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif font-bold text-center" style={{ fontSize: 22, color: '#1a1a1a' }}>Sleep Schedule Shifter</h4>
-             <p className="text-center text-sm mt-1 mb-6" style={{ color: '#7a7068' }}>Enter your current weekend wake-up time to get a 4-week plan for shifting it earlier.</p>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif font-bold text-center" style={{ fontSize: 22, color: "var(--module-ink)" }}>Sleep Schedule Shifter</h4>
+             <p className="text-center text-sm mt-1 mb-6" style={{ color: "var(--module-muted)" }}>Enter your current weekend wake-up time to get a 4-week plan for shifting it earlier.</p>
              <div className="flex flex-col items-center gap-2">
-                <label style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Current Wake-up Time</label>
-                <input type="time" value={`${String(Math.floor(wakeTime)).padStart(2,'0')}:${String((wakeTime % 1)*60).padStart(2,'0')}`} onChange={e => setWakeTime(parseInt(e.target.value.split(':')[0]) + parseInt(e.target.value.split(':')[1])/60)} className="outline-none" style={{ border: '1.5px solid #d0d8d4', borderRadius: 10, padding: '12px 16px', fontSize: 16, color: '#1a1a1a' }} onFocus={(e) => { e.currentTarget.style.borderColor = '#F26B1F'; }} onBlur={(e) => { e.currentTarget.style.borderColor = '#d0d8d4'; }} />
+                <label style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Current Wake-up Time</label>
+                <input type="time" value={`${String(Math.floor(wakeTime)).padStart(2,'0')}:${String((wakeTime % 1)*60).padStart(2,'0')}`} onChange={e => setWakeTime(parseInt(e.target.value.split(':')[0]) + parseInt(e.target.value.split(':')[1])/60)} className="outline-none" style={{ border: "1.5px solid var(--module-line)", borderRadius: 10, padding: '12px 16px', fontSize: 16, color: "var(--module-ink)" }} onFocus={(e) => { e.currentTarget.style.borderColor = "var(--module-danger-text)"; }} onBlur={(e) => { e.currentTarget.style.borderColor = "var(--module-muted)"; }} />
              </div>
              {wakeTime > 7 && (
-                <div className="mt-6 text-center" style={{ backgroundColor: '#FDEEDF', border: '2px solid #F26B1F', borderRadius: 14, padding: '20px 24px' }}>
-                    <p className="font-serif font-semibold" style={{ fontSize: 18, color: '#8C3A0E' }}>Your Plan:</p>
-                    <p className="mt-2" style={{ fontSize: 15, color: '#1a1a1a' }}>Shift your alarm back by 15 mins every <span className="font-bold" style={{ color: '#F26B1F' }}>3–4 days</span> for the next <span className="font-bold" style={{ color: '#F26B1F' }}>{shifts}</span> shifts to reach your 7:00 AM target.</p>
+                <div className="mt-6 text-center" style={{ backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 14, padding: '20px 24px' }}>
+                    <p className="font-serif font-semibold" style={{ fontSize: 18, color: "var(--module-danger-text)" }}>Your Plan:</p>
+                    <p className="mt-2" style={{ fontSize: 15, color: "var(--module-ink)" }}>Shift your alarm back by 15 mins every <span className="font-bold" style={{ color: "var(--module-danger-text)" }}>3–4 days</span> for the next <span className="font-bold" style={{ color: "var(--module-danger-text)" }}>{shifts}</span> shifts to reach your 7:00 AM target.</p>
                 </div>
              )}
         </div>
@@ -80,14 +80,14 @@ const TaperPlanner = () => {
     const currentData = taperData[day as keyof typeof taperData] || taperData[taperKey as unknown as keyof typeof taperData];
 
     return (
-        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Final Week Study Planner</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Move the slider to see how your study should change in the final week.</p>
+        <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Final Week Study Planner</h4>
+             <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Move the slider to see how your study should change in the final week.</p>
              <label className="font-bold">Days Before Exam: {day}</label>
              <input type="range" min="1" max="7" value={day} onChange={e => setDay(parseInt(e.target.value))} className="chunky-slider chunky-slider-sunshine" />
              <div className="grid grid-cols-3 gap-4 mt-4 text-center">
-                <div><p className="font-bold text-sm">Study Volume</p><div className="h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end mt-2"><motion.div className="w-full bg-blue-400 rounded-t-lg" animate={{height: `${currentData.volume}%`}} /></div></div>
-                <div><p className="font-bold text-sm">Intensity</p><div className="h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg flex items-end mt-2"><motion.div className="w-full bg-rose-400 rounded-t-lg" animate={{height: `${currentData.intensity}%`}} /></div></div>
+                <div><p className="font-bold text-sm">Study Volume</p><div className="h-24 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg flex items-end mt-2"><motion.div className="w-full bg-[var(--module-solid)] rounded-t-lg" animate={{height: `${currentData.volume}%`}} /></div></div>
+                <div><p className="font-bold text-sm">Intensity</p><div className="h-24 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg flex items-end mt-2"><motion.div className="w-full bg-[var(--module-danger)] rounded-t-lg" animate={{height: `${currentData.intensity}%`}} /></div></div>
                 <div><p className="font-bold text-sm">Activity</p><div className="h-24 flex items-center justify-center mt-2 font-bold">{currentData.activity}</div></div>
              </div>
         </div>
@@ -131,32 +131,32 @@ const FoodIcon = ({ category, size = 'md' }: { category: string; size?: 'sm' | '
 };
 
 const categoryBadgeClass = (category: string): string => {
-  if (category.includes('High-GI')) return 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300';
-  if (category === 'Low-GI') return 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300';
-  if (category === 'Protein') return 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300';
-  if (category === 'Caffeine') return 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300';
-  if (category === 'Hydration') return 'bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300';
-  return 'bg-zinc-100 text-zinc-600 dark:bg-zinc-700 dark:text-zinc-300';
+  if (category.includes('High-GI')) return "bg-[var(--module-danger-soft)] text-[var(--module-danger-text)] dark:bg-[var(--module-danger-soft)] dark:text-[var(--module-danger-text)]";
+  if (category === 'Low-GI') return "bg-[var(--module-success-soft)] text-[var(--module-success-text)] dark:bg-[var(--module-success-soft)] dark:text-[var(--module-success-text)]";
+  if (category === 'Protein') return "bg-[var(--module-surface)] text-[var(--module-ink)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)]";
+  if (category === 'Caffeine') return "bg-[var(--module-surface)] text-[var(--module-ink)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)]";
+  if (category === 'Hydration') return "bg-[var(--module-surface)] text-[var(--module-ink)] dark:bg-[var(--module-surface)] dark:text-[var(--module-ink)]";
+  return "bg-[var(--module-surface)] text-[var(--module-ink)] dark:bg-[var(--module-surface)] dark:text-[var(--module-muted)]";
 };
 
 const EnergyCurve = ({ level }: { level: 'high' | 'medium' | 'low' }) => {
   const curves = {
     high: {
       path: 'M 0 70 C 30 30, 60 25, 100 28 C 140 31, 200 30, 260 35 C 300 38, 340 40, 380 42',
-      color: '#10b981',
-      bg: 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800',
+      color: "var(--module-success-text)",
+      bg: "bg-[var(--module-success-soft)] dark:bg-[var(--module-success-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]",
       label: 'Sustained energy. Your brain has steady glucose for 3+ hours. No crash.',
     },
     medium: {
       path: 'M 0 60 C 30 25, 60 30, 120 50 C 160 60, 180 35, 220 55 C 260 65, 300 45, 380 60',
-      color: '#f59e0b',
-      bg: 'bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800',
+      color: "var(--module-ink)",
+      bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]",
       label: 'Decent, but some crash risk. Consider swapping high-GI items for complex carbs.',
     },
     low: {
       path: 'M 0 70 C 20 10, 50 5, 80 15 C 110 70, 140 85, 200 88 C 240 90, 300 90, 380 92',
-      color: '#ef4444',
-      bg: 'bg-rose-50 dark:bg-rose-900/20 border-rose-200 dark:border-rose-800',
+      color: "var(--module-danger-text)",
+      bg: "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]",
       label: 'Sugar spike followed by a crash at ~10:30am. Your working memory will suffer mid-exam.',
     },
   };
@@ -170,8 +170,8 @@ const EnergyCurve = ({ level }: { level: 'high' | 'medium' | 'low' }) => {
       transition={{ duration: 0.5 }}
       className={`mt-6 p-5 rounded-xl border ${c.bg}`}
     >
-      <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-200 mb-3">Energy Curve (Exam Morning)</p>
-      <div className="flex items-end gap-2 text-xs text-zinc-400 dark:text-zinc-500 mb-1">
+      <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-3">Energy Curve (Exam Morning)</p>
+      <div className="flex items-end gap-2 text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-1">
         <span>High</span>
       </div>
       <svg viewBox="0 0 380 80" className="w-full h-20" preserveAspectRatio="none">
@@ -193,16 +193,16 @@ const EnergyCurve = ({ level }: { level: 'high' | 'medium' | 'low' }) => {
           transition={{ duration: 1.2, ease: 'easeOut' }}
         />
       </svg>
-      <div className="flex justify-between text-xs text-zinc-400 dark:text-zinc-500 mt-1 px-1">
+      <div className="flex justify-between text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 px-1">
         <span>7am</span>
         <span>9:30am</span>
         <span>11:30am</span>
         <span>1pm</span>
       </div>
-      <div className="flex items-end gap-2 text-xs text-zinc-400 dark:text-zinc-500 mt-1">
+      <div className="flex items-end gap-2 text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1">
         <span>Low</span>
       </div>
-      <p className="mt-3 text-sm font-medium text-zinc-700 dark:text-zinc-300">{c.label}</p>
+      <p className="mt-3 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-muted)]">{c.label}</p>
     </MotionDiv>
   );
 };
@@ -235,11 +235,11 @@ const PreExamMealBuilder = () => {
   const selectedFoods = selected.map((id) => FOODS.find((f) => f.id === id)!);
 
   return (
-    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">
+    <div className="my-10 rounded-2xl p-8 md:p-12" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">
         Pre-Exam Meal Builder
       </h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-8">
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-8">
         Build your exam morning breakfast. Your brain needs the right fuel.
       </p>
 
@@ -257,19 +257,19 @@ const PreExamMealBuilder = () => {
               style={
                 scored
                   ? isSelected
-                    ? { backgroundColor: '#FDE68A', border: '2.5px solid #D97706', borderRadius: 14, boxShadow: '3px 3px 0px 0px #D97706' }
-                    : { backgroundColor: '#FFFFFF', border: '2.5px solid #D4D4D4', borderRadius: 14, opacity: 0.4 }
+                    ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }
+                    : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, opacity: 0.4 }
                   : isSelected
-                  ? { backgroundColor: '#FDE68A', border: '2.5px solid #D97706', borderRadius: 14, boxShadow: '3px 3px 0px 0px #D97706' }
+                  ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }
                   : isDisabled
-                  ? { backgroundColor: '#FFFFFF', border: '2.5px solid #D4D4D4', borderRadius: 14, opacity: 0.4, cursor: 'not-allowed' }
-                  : { backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917' }
+                  ? { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, opacity: 0.4, cursor: 'not-allowed' }
+                  : { backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none' }
               }
             >
               <div className="flex items-center gap-2">
                 <FoodIcon category={food.category} />
                 <div className="min-w-0">
-                  <p className="text-sm font-semibold text-zinc-800 dark:text-white leading-tight truncate">
+                  <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] leading-tight truncate">
                     {food.name}
                   </p>
                   <span
@@ -283,7 +283,7 @@ const PreExamMealBuilder = () => {
                 <MotionDiv
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  className="absolute top-1 right-1 w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center text-white text-xs font-bold"
+                  className="absolute top-1 right-1 w-5 h-5 rounded-full bg-[var(--module-surface)] flex items-center justify-center text-[var(--module-ink)] text-xs font-bold"
                 >
                   {selected.indexOf(food.id) + 1}
                 </MotionDiv>
@@ -298,9 +298,9 @@ const PreExamMealBuilder = () => {
         <MotionDiv
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-8 p-5 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-700"
+          className="mt-8 p-5 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)]"
         >
-          <p className="text-sm font-semibold text-zinc-600 dark:text-zinc-300 mb-3">
+          <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-muted)] mb-3">
             Your Plate ({selected.length}/5)
           </p>
           <div className="flex flex-wrap gap-2">
@@ -310,13 +310,13 @@ const PreExamMealBuilder = () => {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
-                className="flex items-center gap-1.5 bg-white dark:bg-zinc-800 px-3 py-1.5 rounded-full border border-zinc-200 dark:border-zinc-700 text-sm"
+                className="flex items-center gap-1.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] px-3 py-1.5 rounded-full border border-[var(--module-line)] dark:border-[var(--module-line)] text-sm"
               >
                 <FoodIcon category={food.category} size="sm" />
-                <span className="font-medium text-zinc-700 dark:text-zinc-200">{food.name}</span>
+                <span className="font-medium text-[var(--module-ink)] dark:text-[var(--module-muted)]">{food.name}</span>
                 {scored && (
                   <span
-                    className={`ml-1 font-bold ${food.score >= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}
+                    className={`ml-1 font-bold ${food.score >= 0 ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}
                   >
                     {food.score >= 0 ? '+' : ''}{food.score}
                   </span>
@@ -327,7 +327,7 @@ const PreExamMealBuilder = () => {
                       e.stopPropagation();
                       toggleFood(food.id);
                     }}
-                    className="ml-1 text-zinc-400 hover:text-rose-500 text-xs font-bold"
+                    className="ml-1 text-[var(--module-muted)] hover:text-[var(--module-danger-text)] text-xs font-bold" data-wide-button="true"
                   >
                     ×
                   </button>
@@ -343,7 +343,7 @@ const PreExamMealBuilder = () => {
         <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-6 text-center">
           <button
             onClick={() => setScored(true)}
-            className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl transition-colors"
+            className="px-6 py-3 bg-[var(--module-surface)] hover:bg-[var(--module-surface)] text-[var(--module-ink)] font-bold rounded-xl transition-colors" data-wide-button="true"
           >
             Score My Meal
           </button>
@@ -351,7 +351,7 @@ const PreExamMealBuilder = () => {
       )}
 
       {!scored && selected.length < 3 && selected.length > 0 && (
-        <p className="mt-4 text-center text-sm text-zinc-400 dark:text-zinc-500">
+        <p className="mt-4 text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)]">
           Select at least 3 items to score your meal.
         </p>
       )}
@@ -359,14 +359,14 @@ const PreExamMealBuilder = () => {
       {scored && (
         <MotionDiv initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
           <div className="mt-6 text-center">
-            <p className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">Total Score</p>
+            <p className="text-sm font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)]">Total Score</p>
             <p
               className={`text-4xl font-bold ${
                 totalScore >= 8
-                  ? 'text-emerald-600 dark:text-emerald-400'
+                  ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]"
                   : totalScore >= 3
-                  ? 'text-amber-600 dark:text-amber-400'
-                  : 'text-rose-600 dark:text-rose-400'
+                  ? "text-[var(--module-ink)] dark:text-[var(--module-ink)]"
+                  : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"
               }`}
             >
               {totalScore >= 0 ? '+' : ''}{totalScore}
@@ -378,12 +378,12 @@ const PreExamMealBuilder = () => {
           {/* Per-item breakdown */}
           <div className="mt-5 space-y-2">
             {selectedFoods.map((food) => (
-              <div key={food.id} className="flex items-center justify-between text-sm px-3 py-2 bg-zinc-50 dark:bg-zinc-900/50 rounded-lg">
-                <span className="flex items-center gap-1.5 text-zinc-700 dark:text-zinc-300">
+              <div key={food.id} className="flex items-center justify-between text-sm px-3 py-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg">
+                <span className="flex items-center gap-1.5 text-[var(--module-ink)] dark:text-[var(--module-muted)]">
                   <FoodIcon category={food.category} size="sm" /> {food.name}
                 </span>
                 <span
-                  className={`font-bold ${food.score >= 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}
+                  className={`font-bold ${food.score >= 0 ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}
                 >
                   {food.score >= 0 ? '+' : ''}{food.score}
                 </span>
@@ -394,7 +394,7 @@ const PreExamMealBuilder = () => {
           <div className="mt-6 text-center">
             <button
               onClick={reset}
-              className="px-5 py-2.5 bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-600 text-zinc-700 dark:text-zinc-200 font-semibold rounded-xl transition-colors"
+              className="px-5 py-2.5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] font-semibold rounded-xl transition-colors" data-wide-button="true"
             >
               Build Another Meal
             </button>
@@ -426,34 +426,34 @@ const CognitiveWarmup = () => {
 
     if(drill === 'math') {
         return (
-             <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Calculation Sprint</h4>
+             <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Calculation Sprint</h4>
                 <p>1. 15 x 12 = ?</p>
                 <p>2. What is 25% of 180?</p>
-                <button onClick={() => setDrill('none')} className="text-xs mt-4">Back</button>
+                <button onClick={() => setDrill('none')} className="text-xs mt-4" data-wide-button="true">Back</button>
              </div>
         );
     }
 
     if(drill === 'verbal') {
         return (
-            <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-                <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Verbal Fluency Drill</h4>
+            <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+                <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Verbal Fluency Drill</h4>
                 <p>For 60 seconds, list as many words as you can that start with the letter 'P'.</p>
                 <p className="text-4xl font-bold my-4">{time}</p>
-                <textarea value={words} onChange={e => setWords(e.target.value)} className="w-full h-24 bg-zinc-100 dark:bg-zinc-800 rounded-lg p-2" disabled={time === 0} />
-                <button onClick={resetVerbal} className="text-xs mt-4">Reset</button>
+                <textarea value={words} onChange={e => setWords(e.target.value)} className="w-full h-24 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg p-2" disabled={time === 0} />
+                <button onClick={resetVerbal} className="text-xs mt-4" data-wide-button="true">Reset</button>
             </div>
         );
     }
 
     return (
-        <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Brain Warm-Up</h4>
-             <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-6">Pick a quick drill to get your brain warmed up and ready.</p>
+        <div className="my-10 rounded-2xl p-8 md:p-12 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+             <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Brain Warm-Up</h4>
+             <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-6">Pick a quick drill to get your brain warmed up and ready.</p>
              <div className="flex justify-center gap-4">
-                <button onClick={() => resetVerbal()} className="p-4 font-bold text-sm transition-all" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Verbal Fluency</button>
-                <button onClick={() => setDrill('math')} className="p-4 font-bold text-sm transition-all" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 14, boxShadow: '3px 3px 0px 0px #1C1917', color: '#1C1917' }}>Math Sprint</button>
+                <button onClick={() => resetVerbal()} className="p-4 font-bold text-sm transition-all" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true">Verbal Fluency</button>
+                <button onClick={() => setDrill('math')} className="p-4 font-bold text-sm transition-all" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 14, boxShadow: 'none', color: "var(--module-ink)" }} data-wide-button="true">Math Sprint</button>
              </div>
         </div>
     );

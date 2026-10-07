@@ -1,184 +1,26 @@
+import { BrandedNoteComparison } from './learning/BrandedCharts';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import CornellNoteSimulator from './activities/CornellNoteSimulator';
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { FileText, SquarePen, Layers, GitBranch, Wrench } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { indigoTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import { FileText,GitBranch,Layers,SquarePen,Wrench } from 'lucide-react';
+import React from 'react';
 import { NOTE_TAKING_PARADOX_REFERENCE_LIST } from '../data/references/noteTakingParadox';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { indigoTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import CornellNoteSimulator from './activities/CornellNoteSimulator';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
 
 const theme = indigoTheme;
 
 // --- INTERACTIVE COMPONENTS ---
 
 // 1. NOTE-TAKING COMPARISON (Planning Paradox style dual-chart)
-const NoteTakingComparison = () => {
-  const [revealed, setRevealed] = useState(false);
-
-  const W = 440, H = 260;
-  const padL = 8, padR = 8, padT = 28, padB = 44;
-  const chartW = W - padL - padR, chartH = H - padT - padB;
-  const toX = (f: number) => padL + f * chartW;
-  const toY = (f: number) => padT + (1 - f) * chartH;
-
-  const xLabels = ['Lecture', 'Day 1', 'Day 3', 'Day 7', 'Day 14', 'Day 30'];
-
-  // Verbatim Notes: volume high, understanding crashes
-  const verbatimVolume = [0.90, 0.88, 0.85, 0.82, 0.78, 0.75];
-  const verbatimUnderstanding = [0.55, 0.42, 0.30, 0.22, 0.15, 0.10];
-
-  // Generative Notes: volume low, understanding holds and grows
-  const generativeVolume = [0.35, 0.38, 0.40, 0.42, 0.45, 0.48];
-  const generativeUnderstanding = [0.45, 0.50, 0.55, 0.60, 0.62, 0.65];
-
-  const buildArea = (data: number[]) => {
-    const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
-    let d = `M ${pts[0].x} ${toY(0)} L ${pts[0].x} ${pts[0].y}`;
-    for (let i = 1; i < pts.length; i++) {
-      const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
-      const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
-      d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
-    }
-    d += ` L ${pts[pts.length - 1].x} ${toY(0)} Z`;
-    return d;
-  };
-
-  const buildLine = (data: number[]) => {
-    const pts = data.map((v, i) => ({ x: toX(i / (data.length - 1)), y: toY(v) }));
-    let d = `M ${pts[0].x} ${pts[0].y}`;
-    for (let i = 1; i < pts.length; i++) {
-      const cx1 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.4;
-      const cx2 = pts[i - 1].x + (pts[i].x - pts[i - 1].x) * 0.6;
-      d += ` C ${cx1} ${pts[i - 1].y}, ${cx2} ${pts[i].y}, ${pts[i].x} ${pts[i].y}`;
-    }
-    return d;
-  };
-
-  const verbatimPhases = [
-    { label: 'Feels productive', x1: 0, x2: 0.33, color: '#fca5a5' },
-    { label: 'Confident', x1: 0.33, x2: 0.66, color: '#f87171' },
-    { label: 'Exam shock', x1: 0.66, x2: 1, color: '#ef4444' },
-  ];
-  const generativePhases = [
-    { label: 'Feels slow', x1: 0, x2: 0.33, color: '#6ee7b7' },
-    { label: 'Processing', x1: 0.33, x2: 0.66, color: '#34d399' },
-    { label: 'Locked in', x1: 0.66, x2: 1, color: '#3A8D5F' },
-  ];
-
-  const Chart = ({ volume, understanding, phases, areaColor, areaId, label }: {
-    volume: number[]; understanding: number[]; phases: { label: string; x1: number; x2: number; color: string }[];
-    areaColor: string; areaId: string; label: string;
-  }) => (
-    <svg viewBox={`0 0 ${W} ${H}`} className="w-full">
-      <defs>
-        <linearGradient id={areaId} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor={areaColor} stopOpacity="0.5" />
-          <stop offset="100%" stopColor={areaColor} stopOpacity="0.05" />
-        </linearGradient>
-      </defs>
-      {/* Grid lines */}
-      {[0.25, 0.5, 0.75, 1.0].map((v) => (
-        <line key={v} x1={padL} x2={W - padR} y1={toY(v)} y2={toY(v)} stroke="#a1a1aa" strokeOpacity="0.15" strokeDasharray="3 3" />
-      ))}
-      {/* Baseline */}
-      <line x1={padL} x2={W - padR} y1={toY(0)} y2={toY(0)} stroke="#a1a1aa" strokeOpacity="0.3" />
-      {/* Volume area */}
-      <motion.path
-        d={buildArea(volume)}
-        fill={`url(#${areaId})`}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      />
-      {/* Volume line (solid) */}
-      <motion.path
-        d={buildLine(volume)}
-        fill="none" stroke={areaColor} strokeWidth="2.5" strokeLinecap="round"
-        initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
-        transition={{ duration: 1.2, ease: 'easeOut' }}
-      />
-      {/* Understanding line (dashed) */}
-      <motion.path
-        d={buildLine(understanding)}
-        fill="none" stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="5 3" strokeLinecap="round"
-        initial={{ pathLength: 0 }} animate={{ pathLength: 1 }}
-        transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
-      />
-      {/* Volume dots */}
-      {volume.map((v, i) => (
-        <motion.circle key={i} cx={toX(i / (volume.length - 1))} cy={toY(v)} r="3.5" fill={areaColor}
-          initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 * i + 0.3 }}
-        />
-      ))}
-      {/* Y-axis labels */}
-      <text x={padL + 2} y={toY(1.0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">High</text>
-      <text x={padL + 2} y={toY(0) - 4} fontSize="9" fill="#a1a1aa" fontWeight="600">Low</text>
-      {/* X-axis labels */}
-      {xLabels.map((m, i) => (
-        <text key={m} x={toX(i / (xLabels.length - 1))} y={toY(0) + 14} fontSize="9" fill="#a1a1aa" textAnchor="middle" fontWeight="600">{m}</text>
-      ))}
-      {/* Phase labels */}
-      {phases.map((p, i) => (
-        <text key={i} x={toX((p.x1 + p.x2) / 2)} y={toY(0) + 28} fontSize="8" fill={p.color} textAnchor="middle" fontWeight="700">{p.label}</text>
-      ))}
-      {/* Chart label */}
-      <text x={W / 2} y={14} fontSize="11" fill="#71717a" textAnchor="middle" fontWeight="700">{label}</text>
-      {/* Legend */}
-      <line x1={W - padR - 110} x2={W - padR - 94} y1={14} y2={14} stroke={areaColor} strokeWidth="2" />
-      <text x={W - padR - 90} y={17} fontSize="8" fill="#a1a1aa">Note Volume</text>
-      <line x1={W - padR - 44} x2={W - padR - 28} y1={14} y2={14} stroke="#f59e0b" strokeWidth="1.5" strokeDasharray="4 2" />
-      <text x={W - padR - 24} y={17} fontSize="8" fill="#a1a1aa">Understanding</text>
-    </svg>
-  );
-
-  return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Note-Taking Paradox</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-6">Two students. Same lecture. Opposite strategies.</p>
-
-      {!revealed ? (
-        <div className="text-center">
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4">Most students try to capture every word. What does that actually do to understanding over time?</p>
-          <button onClick={() => setRevealed(true)} className="px-5 py-2.5 text-sm font-bold rounded-lg bg-indigo-500 text-white hover:bg-indigo-600 transition-colors">
-            Reveal the Paradox
-          </button>
-        </div>
-      ) : (
-        <MotionDiv initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-          <div className="grid md:grid-cols-2 gap-4 mb-5">
-            <div className="rounded-lg border border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 p-3">
-              <Chart volume={verbatimVolume} understanding={verbatimUnderstanding} phases={verbatimPhases}
-                areaColor="#ef4444" areaId="verb-grad" label="Verbatim Notes" />
-            </div>
-            <div className="rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-3">
-              <Chart volume={generativeVolume} understanding={generativeUnderstanding} phases={generativePhases}
-                areaColor="#3A8D5F" areaId="gen-grad" label="Generative Notes" />
-            </div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-4 text-sm">
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
-              <span className="text-rose-500 text-lg mt-0.5">&#x2716;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-rose-600 dark:text-rose-400">Verbatim</strong> feels productive but bypasses understanding. Your hand is busy, but your brain is on autopilot.</p>
-            </div>
-            <div className="flex items-start gap-2.5 p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
-              <span className="text-emerald-500 text-lg mt-0.5">&#x2714;</span>
-              <p className="text-zinc-600 dark:text-zinc-300"><strong className="text-emerald-600 dark:text-emerald-400">Generative</strong> feels slower but forces the processing that creates lasting knowledge. Less ink, more thinking.</p>
-            </div>
-          </div>
-        </MotionDiv>
-      )}
-    </div>
-  );
-};
+const NoteTakingComparison = BrandedNoteComparison;
 
 // 2. CORNELL NOTE SIMULATOR
 // --- MODULE COMPONENT ---

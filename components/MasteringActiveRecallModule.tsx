@@ -1,52 +1,34 @@
+import { BrandedStrengthMeter } from './learning/WideFeatures';
+import { moduleFill,moduleText } from './learning/brandTokens';
 
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence,motion } from 'framer-motion';
 import {
-  BarChart3, BrainCircuit, XCircle, Share2, HeartPulse, Wrench, Check, X
+BarChart3,BrainCircuit,
+Check,
+HeartPulse,
+Share2,
+Wrench,
+X,
+XCircle
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { indigoTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, ToolJumpCard } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import React,{ useState } from 'react';
 import { ACTIVE_RECALL_REFERENCE_LIST } from '../data/references/activeRecall';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { indigoTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection,ToolJumpCard } from './ModuleShared';
 
 const theme = indigoTheme;
 
 // --- INTERACTIVE COMPONENTS ---
-const StrengthMeter = () => {
-    const [method, setMethod] = useState<'passive'|'active'|null>(null);
-    let retrieval = 10, storage = 10;
-    if (method === 'passive') { retrieval = 90; storage = 15; }
-    if (method === 'active') { retrieval = 40; storage = 85; }
-
-    return(
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-             <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Storage vs. Retrieval Strength</h4>
-             <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Choose a study method to see its effect on your memory.</p>
-             <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="text-center">
-                    <p className="font-bold text-sm text-fuchsia-600 mb-2">Retrieval Strength (Feeling)</p>
-                    <div className="w-full h-6 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-fuchsia-500 rounded-full" initial={{width: "10%"}} animate={{width: `${retrieval}%`}} /></div>
-                </div>
-                <div className="text-center">
-                    <p className="font-bold text-sm text-indigo-600 mb-2">Storage Strength (Learning)</p>
-                    <div className="w-full h-6 bg-zinc-100 dark:bg-zinc-800 rounded-full"><motion.div className="h-full bg-indigo-500 rounded-full" initial={{width: "10%"}} animate={{width: `${storage}%`}} /></div>
-                </div>
-            </div>
-             <div className="flex justify-center gap-4">
-                <button onClick={() => setMethod('passive')} className="px-4 py-2 bg-fuchsia-100 text-fuchsia-800 text-xs font-bold rounded-lg">Passive Review</button>
-                <button onClick={() => setMethod('active')} className="px-4 py-2 bg-indigo-100 text-indigo-800 text-xs font-bold rounded-lg">Active Recall</button>
-             </div>
-        </div>
-    );
-};
+const StrengthMeter = BrandedStrengthMeter;
 
 const StudyMethodAuditor = () => {
     const methods = [
@@ -60,10 +42,9 @@ const StudyMethodAuditor = () => {
     const [selectedId, setSelectedId] = useState<number | null>(null);
     const selectedMethod = methods.find(m => m.id === selectedId);
 
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Study Method Auditor</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Click a study method to get your Active Recall rating.</p>
+    return <div className="wr-skin" data-wide="StudyMethodAuditor"><div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+            <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Study Method Auditor</h4>
+            <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">Click a study method to get your Active Recall rating.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {methods.map(method => (
                     <motion.button
@@ -73,12 +54,12 @@ const StudyMethodAuditor = () => {
                         whileTap={selectedId !== method.id ? { x: 2, y: 2 } : {}}
                         className="p-4 rounded-xl text-sm font-bold text-left transition-all"
                         style={{
-                            backgroundColor: selectedId === method.id ? (methods.find(m => m.id === method.id)?.type === 'active' ? '#6EE7B7' : '#FCA5A5') : '#FFFFFF',
-                            border: `2.5px solid ${selectedId === method.id ? (methods.find(m => m.id === method.id)?.type === 'active' ? '#059669' : '#DC2626') : '#1C1917'}`,
+                            backgroundColor: moduleFill(selectedId === method.id ? (methods.find(m => m.id === method.id)?.type === 'active' ? "var(--module-success-soft)" : "var(--module-surface)") : "var(--module-surface)"),
+                            border: `2.5px solid ${selectedId === method.id ? (methods.find(m => m.id === method.id)?.type === 'active' ? "var(--module-line)" : "var(--module-line)") : "var(--module-line)"}`,
                             borderRadius: 14,
-                            boxShadow: selectedId === method.id ? 'none' : '3px 3px 0px 0px #1C1917',
-                            color: selectedId === method.id ? (methods.find(m => m.id === method.id)?.type === 'active' ? '#064E3B' : '#7F1D1D') : '#1C1917',
-                        }}
+                            boxShadow: 'none',
+                            color: moduleText(selectedId === method.id ? (methods.find(m => m.id === method.id)?.type === 'active' ? "var(--module-success-text)" : "var(--module-danger-text)") : "var(--module-ink)"),
+                        }} data-wide-button="true" data-selected={selectedId === method.id} data-tone={method.type === 'active' ? 'mint' : 'coral'} aria-pressed={selectedId === method.id}
                     >
                         {method.name}
                     </motion.button>
@@ -92,17 +73,17 @@ const StudyMethodAuditor = () => {
                         exit={{ opacity: 0, y: 10 }}
                         className="mt-6 p-4 rounded-xl"
                         style={{
-                            backgroundColor: selectedMethod.type === 'active' ? '#6EE7B7' : '#FCA5A5',
-                            border: `2.5px solid ${selectedMethod.type === 'active' ? '#059669' : '#DC2626'}`,
-                            boxShadow: `3px 3px 0px 0px ${selectedMethod.type === 'active' ? '#059669' : '#DC2626'}`,
+                            backgroundColor: moduleFill(selectedMethod.type === 'active' ? "var(--module-success-soft)" : "var(--module-surface)"),
+                            border: `2.5px solid ${selectedMethod.type === 'active' ? "var(--module-line)" : "var(--module-line)"}`,
+                            boxShadow: 'none',
                         }}
                     >
                         <div className="flex items-center gap-3">
-                            <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white ${selectedMethod.type === 'active' ? 'bg-emerald-500' : 'bg-rose-500'}`}>
+                            <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white ${selectedMethod.type === 'active' ? "bg-[var(--module-success)]" : "bg-[var(--module-danger)]"}`}>
                                 {selectedMethod.type === 'active' ? <Check size={20}/> : <X size={20}/>}
                             </div>
                             <div>
-                                <h5 className={`font-bold ${selectedMethod.type === 'active' ? 'text-emerald-800' : 'text-rose-800'}`}>
+                                <h5 className={`font-bold ${selectedMethod.type === 'active' ? "text-[var(--module-success-text)]" : "text-[var(--module-danger-text)]"}`}>
                                     {selectedMethod.type === 'active' ? 'Active Recall' : 'Passive Review'}
                                 </h5>
                                 <p className="text-xs mt-1">{selectedMethod.explanation}</p>
@@ -111,8 +92,7 @@ const StudyMethodAuditor = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </div>
-    );
+        </div></div>;
 };
 
 
@@ -190,29 +170,29 @@ const MasteringActiveRecallModule: React.FC<{ onBack: () => void; progress: Modu
               </>) : (<>
               <p>You now get why this works. Active recall is the single most powerful tool you have for studying. To make the most of it, follow three simple rules — and take a look at how your current methods stack up.</p>
               </>)}
-              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+              <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
                 {/* Card 1 — Sky */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#2563EB' }}>1</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-solid)" }}>1</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#1E3A8A' }}>A Bit of Struggle Is the Point</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#1E3A8A', opacity: 0.8 }}>When recalling something takes real effort — but you can still manage it — that effort is what builds lasting memory (researchers call these &ldquo;desirable difficulties&rdquo;).<Cite n={2} /> If it feels completely effortless, it&apos;s probably not doing much.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-ink)" }}>A Bit of Struggle Is the Point</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-ink)", opacity: 0.8 }}>When recalling something takes real effort — but you can still manage it — that effort is what builds lasting memory (researchers call these &ldquo;desirable difficulties&rdquo;).<Cite n={2} /> If it feels completely effortless, it&apos;s probably not doing much.</p>
                   </div>
                 </div>
                 {/* Card 2 — Sunshine */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FCD34D', border: '2.5px solid #D97706', borderRadius: 16, boxShadow: '4px 4px 0px 0px #D97706' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#D97706' }}>2</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>2</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#78350F' }}>The "Book Closed" Rule</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#78350F', opacity: 0.8 }}>Never judge how well you know something with the book open. That's just familiarity, not real knowledge.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>The "Book Closed" Rule</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Never judge how well you know something with the book open. That's just familiarity, not real knowledge.</p>
                   </div>
                 </div>
                 {/* Card 3 — Peach */}
-                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#FDBA74', border: '2.5px solid #EA580C', borderRadius: 16, boxShadow: '4px 4px 0px 0px #EA580C' }}>
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#EA580C' }}>3</div>
+                <div className="p-4 flex items-start gap-4" style={{ backgroundColor: "var(--module-surface)", border: "2.5px solid var(--module-line)", borderRadius: 16, boxShadow: 'none' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-[var(--module-ink)]" style={{ backgroundColor: "var(--module-danger)" }}>3</div>
                   <div>
-                    <p className="text-sm font-bold" style={{ color: '#7C2D12' }}>Don't Stop After Getting It Right</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#7C2D12', opacity: 0.8 }}>Keep testing yourself on material even after you get it right once. That's what stops you from forgetting it.</p>
+                    <p className="text-sm font-bold" style={{ color: "var(--module-danger-text)" }}>Don't Stop After Getting It Right</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--module-danger-text)", opacity: 0.8 }}>Keep testing yourself on material even after you get it right once. That's what stops you from forgetting it.</p>
                   </div>
                 </div>
               </div>

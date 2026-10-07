@@ -1,20 +1,21 @@
+import { moduleBorder,moduleFill,moduleText } from './learning/brandTokens';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
-import { AlertTriangle, Layers, FlaskConical, BarChart2, LifeBuoy, Wrench, Target } from 'lucide-react';
-import { type ModuleProgress } from '../types';
+import { AnimatePresence,motion } from 'framer-motion';
+import { AlertTriangle,BarChart2,FlaskConical,Layers,LifeBuoy,Target,Wrench } from 'lucide-react';
+import React,{ useState } from 'react';
+import { ANSWER_ENGINEERING_REFERENCE_LIST } from '../data/references/answerEngineering';
+import { COLORS } from '../design/tokens';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
 import { redTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment, PersonalStory, ConceptCardGrid } from './ModuleShared';
+import { type ModuleProgress } from '../types';
 import { ModuleLayout } from './ModuleLayout';
 import { Cite } from './ModuleReferences';
-import { ANSWER_ENGINEERING_REFERENCE_LIST } from '../data/references/answerEngineering';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { COLORS } from '../design/tokens';
+import { ConceptCardGrid,Highlight,MicroCommitment,PersonalStory,ReadingSection } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = redTheme;
 
@@ -58,10 +59,10 @@ const peelExamples = [
 ];
 
 const peelLabels: Record<string, { label: string; color: string; bg: string; border: string; hex: string }> = {
-  P: { label: 'Point', color: 'text-blue-700 dark:text-blue-300', bg: 'bg-blue-100 dark:bg-blue-900/30', border: 'border-blue-300 dark:border-blue-700', hex: '#2563EB' },
-  E: { label: 'Evidence', color: 'text-amber-700 dark:text-amber-300', bg: 'bg-amber-100 dark:bg-amber-900/30', border: 'border-amber-300 dark:border-amber-700', hex: '#D97706' },
-  E2: { label: 'Explain', color: 'text-teal-700 dark:text-teal-300', bg: 'bg-teal-100 dark:bg-teal-900/30', border: 'border-teal-300 dark:border-teal-700', hex: '#059669' },
-  L: { label: 'Link', color: 'text-purple-700 dark:text-purple-300', bg: 'bg-purple-100 dark:bg-purple-900/30', border: 'border-purple-300 dark:border-purple-700', hex: '#7C3AED' },
+  P: { label: 'Point', color: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", hex: "var(--module-ink)" },
+  E: { label: 'Evidence', color: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", hex: "var(--module-danger-text)" },
+  E2: { label: 'Explain', color: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", hex: "var(--module-success-text)" },
+  L: { label: 'Link', color: "text-[var(--module-ink)] dark:text-[var(--module-ink)]", bg: "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]", border: "border-[var(--module-line)] dark:border-[var(--module-line)]", hex: "var(--module-ink)" },
 };
 
 const PEELBuilder = () => {
@@ -117,17 +118,17 @@ const PEELBuilder = () => {
   const allPlaced = placed.every(p => p !== null);
 
   return (
-    <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800">
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">PEEL Builder</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-2">Arrange the sentences in the correct PEEL order.</p>
+    <div className="my-10 p-6 md:p-10 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">PEEL Builder</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 mb-2">Arrange the sentences in the correct PEEL order.</p>
 
       {/* Subject tabs */}
       <div className="flex gap-2 mb-4 justify-center">
         {peelExamples.map((e, i) => (
           <button key={i} onClick={() => { if (phase === 'building') { setExampleIndex(i); setPlaced([null, null, null, null]); } }}
             className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${
-              exampleIndex === i ? 'bg-red-500 text-white' : 'bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-600'
-            }`}>
+              exampleIndex === i ? "bg-[var(--module-danger)] text-[var(--module-ink)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-muted)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)]"
+            }`} data-wide-button="true" data-selected={!!(exampleIndex === i)} data-tone="coral" aria-pressed={!!(exampleIndex === i)}>
             {e.subject}
           </button>
         ))}
@@ -135,8 +136,8 @@ const PEELBuilder = () => {
 
       {/* Question */}
       <div className="text-center mb-5">
-        <span className="text-xs font-bold uppercase tracking-wider text-zinc-400">{ex.subject}</span>
-        <p className="font-serif text-lg font-semibold text-zinc-800 dark:text-white mt-1">{ex.question}</p>
+        <span className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)]">{ex.subject}</span>
+        <p className="font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] mt-1">{ex.question}</p>
       </div>
 
       {/* Slots */}
@@ -147,18 +148,18 @@ const PEELBuilder = () => {
           const isCorrect = phase === 'result' && sentIdx === ex.correctOrder[slotIdx];
           const isWrong = phase === 'result' && sentIdx !== null && sentIdx !== ex.correctOrder[slotIdx];
           const correctSentIdx = phase === 'result' ? ex.correctOrder[slotIdx] : null;
-          const borderColor = isCorrect ? '#3A8D5F' : isWrong ? '#DC2626' : '#1C1917';
+          const borderColor = isCorrect ? "var(--module-success-text)" : isWrong ? "var(--module-danger-text)" : "var(--module-ink)";
 
           return (
             <div key={slotIdx}>
               <div
-                className="bg-white dark:bg-zinc-900 transition-all"
-                style={{ border: `2.5px solid ${borderColor}`, borderRadius: 18, boxShadow: `4px 4px 0px 0px ${borderColor}`, overflow: 'hidden' }}
+                className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)] transition-all"
+                style={{ border: `2.5px solid ${borderColor}`, borderRadius: 18, boxShadow: 'none', overflow: 'hidden' }}
               >
                 {/* Header bar */}
                 <div
-                  className="text-[13px] font-medium tracking-wider uppercase text-white text-center"
-                  style={{ backgroundColor: pl.hex, padding: '10px 16px', borderBottom: `2.5px solid ${borderColor}` }}
+                  className="text-[13px] font-medium tracking-wider uppercase text-[var(--module-ink)] text-center"
+                  style={{ backgroundColor: moduleFill(pl.hex), padding: '10px 16px', borderBottom: `2.5px solid ${borderColor}` }}
                 >
                   {slotIdx + 1}. {pl.label}
                 </div>
@@ -169,18 +170,18 @@ const PEELBuilder = () => {
                 >
                   {sentIdx !== null ? (
                     <div
-                      className="text-[13px] text-zinc-700 dark:text-zinc-200 w-full"
-                      style={{ backgroundColor: '#FFFFFF', border: `2px solid ${pl.hex}`, borderRadius: 12, boxShadow: `2px 2px 0px 0px ${pl.hex}`, padding: '8px 12px' }}
+                      className="text-[13px] text-[var(--module-ink)] dark:text-[var(--module-muted)] w-full"
+                      style={{ backgroundColor: "var(--module-surface)", border: `2px solid ${pl.hex}`, borderRadius: 12, boxShadow: 'none', padding: '8px 12px' }}
                     >
                       {ex.sentences[sentIdx].text}
                     </div>
                   ) : (
-                    <span className="text-sm text-zinc-400 dark:text-zinc-500 italic">Click a sentence below to place it here</span>
+                    <span className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] italic">Click a sentence below to place it here</span>
                   )}
                 </div>
               </div>
               {isWrong && correctSentIdx !== null && (
-                <div className="mt-1 ml-2 text-xs text-success dark:text-success italic">
+                <div className="mt-1 ml-2 text-xs text-[var(--module-success-text)] dark:text-[var(--module-success-text)] italic">
                   Correct: {ex.sentences[correctSentIdx].text.slice(0, 80)}...
                 </div>
               )}
@@ -192,11 +193,11 @@ const PEELBuilder = () => {
       {/* Available sentences */}
       {phase === 'building' && availableSentences.length > 0 && (
         <div className="space-y-2 mb-5">
-          <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">Available sentences</p>
+          <p className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)] mb-2">Available sentences</p>
           {availableSentences.map(i => (
             <button key={i} onClick={() => handlePlaceSentence(i)}
-              className="w-full text-left p-3 rounded-lg border border-zinc-200 dark:border-zinc-600 bg-white dark:bg-zinc-800 text-sm text-zinc-700 dark:text-zinc-200 hover:border-[#F26B1F]/60 dark:hover:border-[#F26B1F] hover:bg-[#FDEEDF] dark:hover:bg-[#F26B1F]/20 transition-all cursor-pointer"
-              style={{ borderColor: undefined }}>
+              className="w-full text-left p-3 rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] hover:border-[var(--module-line)] dark:hover:border-[var(--module-line)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-danger)] transition-all cursor-pointer"
+              style={{ borderColor: moduleBorder(undefined) }} data-wide-button="true">
               {ex.sentences[i].text}
             </button>
           ))}
@@ -206,24 +207,24 @@ const PEELBuilder = () => {
       {/* Actions */}
       <div className="text-center">
         {phase === 'building' && allPlaced && (
-          <button onClick={handleSubmit} className="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold text-sm rounded-lg transition-colors">
+          <button onClick={handleSubmit} className="px-6 py-3 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">
             Check Order
           </button>
         )}
         {phase === 'result' && (
           <MotionDiv initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
             <div className="flex justify-center my-4">
-              <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
-                <div className="text-2xl font-bold text-zinc-800 dark:text-white">{score}/4</div>
-                <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Correct</div>
+              <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+                <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{score}/4</div>
+                <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Correct</div>
               </div>
             </div>
             {exampleIndex < peelExamples.length - 1 ? (
-              <button onClick={handleNextExample} className="px-5 py-2.5 bg-red-500 hover:bg-red-600 text-white font-bold text-sm rounded-lg transition-colors">
+              <button onClick={handleNextExample} className="px-5 py-2.5 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">
                 Next Example
               </button>
             ) : (
-              <button onClick={handleReset} className="px-5 py-2.5 bg-red-500 hover:bg-red-600 text-white font-bold text-sm rounded-lg transition-colors">
+              <button onClick={handleReset} className="px-5 py-2.5 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">
                 Try Again
               </button>
             )}
@@ -317,26 +318,26 @@ const StackBuilder = () => {
 
   if (phase === 'ready') {
     return (
-      <div className="my-10 p-8 md:p-12 rounded-xl border border-zinc-200 dark:border-zinc-700 text-center bg-white dark:bg-zinc-800">
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">Stack Builder</h4>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-2 max-w-md mx-auto">Build a science answer step by step and see how marks accumulate.</p>
-        <div className="p-4 bg-white dark:bg-zinc-800 rounded-lg border border-zinc-200 dark:border-zinc-600 mb-5 max-w-md mx-auto">
-          <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-1">Physics Problem</p>
-          <p className="text-sm font-semibold text-zinc-800 dark:text-white">{stackProblem.question}</p>
+      <div className="my-10 p-8 md:p-12 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] text-center bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Stack Builder</h4>
+        <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-2 max-w-md mx-auto">Build a science answer step by step and see how marks accumulate.</p>
+        <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] mb-5 max-w-md mx-auto">
+          <p className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)] mb-1">Physics Problem</p>
+          <p className="text-sm font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{stackProblem.question}</p>
         </div>
-        <button onClick={startBuild} className="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold text-sm rounded-lg transition-colors">Start Building</button>
+        <button onClick={startBuild} className="px-6 py-3 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">Start Building</button>
       </div>
     );
   }
 
   if (phase === 'done') {
     return (
-      <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800">
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Stack Builder Results</h4>
+      <div className="my-10 p-6 md:p-10 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Stack Builder Results</h4>
         <div className="flex justify-center my-5">
-          <div className="text-center px-5 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-700">
-            <div className="text-2xl font-bold text-zinc-800 dark:text-white">{earnedMarks}/{stackProblem.totalMarks}</div>
-            <div className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 mt-0.5">Marks Earned</div>
+          <div className="text-center px-5 py-3 rounded-xl bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
+            <div className="text-2xl font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">{earnedMarks}/{stackProblem.totalMarks}</div>
+            <div className="text-xs font-semibold text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Marks Earned</div>
           </div>
         </div>
         <div className="space-y-2.5 mb-6">
@@ -344,22 +345,22 @@ const StackBuilder = () => {
             const got = choices[i];
             const correct = got === step.correct;
             return (
-              <div key={i} className={`p-3 rounded-lg border ${correct ? 'bg-successTint dark:bg-success/15 border-success/30 dark:border-success/40' : 'bg-rose-50 dark:bg-rose-900/20 border-rose-300 dark:border-rose-700'}`}>
+              <div key={i} className={`p-3 rounded-lg border ${correct ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border-success/30 dark:border-success/40" : "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]"}`}>
                 <div className="flex items-center justify-between mb-1">
-                  <span className="text-xs font-bold text-zinc-500">{step.label}</span>
-                  <span className={`text-xs font-bold ${correct ? 'text-success dark:text-success' : 'text-rose-600 dark:text-rose-400'}`}>
+                  <span className="text-xs font-bold text-[var(--module-muted)]">{step.label}</span>
+                  <span className={`text-xs font-bold ${correct ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}>
                     {correct ? `+${step.marks} marks` : '0 marks'}
                   </span>
                 </div>
-                <p className="text-sm font-mono text-zinc-700 dark:text-zinc-200">{got}</p>
+                <p className="text-sm font-mono text-[var(--module-ink)] dark:text-[var(--module-muted)]">{got}</p>
                 {!correct && (
-                  <p className="text-xs text-success dark:text-success mt-1 italic">Correct: {step.correct}</p>
+                  <p className="text-xs text-[var(--module-success-text)] dark:text-[var(--module-success-text)] mt-1 italic">Correct: {step.correct}</p>
                 )}
               </div>
             );
           })}
         </div>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 text-center mb-4 italic">
+        <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] text-center mb-4 italic">
           {earnedMarks === stackProblem.totalMarks
             ? 'Perfect! Every step earned its marks.'
             : earnedMarks >= stackProblem.totalMarks * 0.75
@@ -367,7 +368,7 @@ const StackBuilder = () => {
             : 'Notice how each correct step earns marks independently. Even with mistakes, the right steps still count.'}
         </p>
         <div className="text-center">
-          <button onClick={startBuild} className="px-5 py-2.5 bg-red-500 hover:bg-red-600 text-white font-bold text-sm rounded-lg transition-colors">Try Again</button>
+          <button onClick={startBuild} className="px-5 py-2.5 bg-[var(--module-danger)] hover:bg-[var(--module-danger)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">Try Again</button>
         </div>
       </div>
     );
@@ -378,44 +379,44 @@ const StackBuilder = () => {
   const isWrong = showStepFeedback && choices[stepIndex] !== step.correct;
 
   return (
-    <div className="my-10 p-6 md:p-10 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800">
+    <div className="my-10 p-6 md:p-10 rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)] bg-[var(--module-surface)] dark:bg-[var(--module-surface)]">
       <div className="flex items-center justify-between mb-2">
-        <h4 className="font-serif text-lg font-semibold text-zinc-800 dark:text-white">Stack Builder</h4>
-        <span className="text-xs font-bold text-zinc-400">Step {stepIndex + 1} / {stackProblem.steps.length}</span>
+        <h4 className="font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Stack Builder</h4>
+        <span className="text-xs font-bold text-[var(--module-muted)]">Step {stepIndex + 1} / {stackProblem.steps.length}</span>
       </div>
 
       {/* Question reminder */}
-      <div className="p-3 bg-white dark:bg-zinc-800 rounded-lg border border-zinc-200 dark:border-zinc-600 mb-4">
-        <p className="text-xs text-zinc-400 font-bold mb-0.5">Question</p>
-        <p className="text-sm text-zinc-700 dark:text-zinc-200">{stackProblem.question}</p>
+      <div className="p-3 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)] mb-4">
+        <p className="text-xs text-[var(--module-muted)] font-bold mb-0.5">Question</p>
+        <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]">{stackProblem.question}</p>
       </div>
 
       {/* Running marks */}
       <div className="flex items-center gap-2 mb-4">
-        <span className="text-xs font-bold text-zinc-400">Marks so far:</span>
-        <div className="flex-1 h-2 bg-zinc-200 dark:bg-zinc-600 rounded-full overflow-hidden">
+        <span className="text-xs font-bold text-[var(--module-muted)]">Marks so far:</span>
+        <div className="flex-1 h-2 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full overflow-hidden">
           <motion.div
-            className="h-full bg-[#3A8D5F] rounded-full"
+            className="h-full bg-[var(--module-success)] rounded-full"
             animate={{ width: `${(earnedMarks / stackProblem.totalMarks) * 100}%` }}
             transition={{ duration: 0.5 }}
           />
         </div>
-        <span className="text-xs font-bold text-[#3A8D5F]">{earnedMarks}/{stackProblem.totalMarks}</span>
+        <span className="text-xs font-bold text-[var(--module-success-text)]">{earnedMarks}/{stackProblem.totalMarks}</span>
       </div>
 
       {/* Step prompt */}
       <AnimatePresence mode="wait">
         <motion.div key={stepIndex} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
           className={`p-5 rounded-xl border mb-5 transition-colors ${
-            isCorrect ? 'bg-successTint dark:bg-success/15 border-success/30 dark:border-success/40' :
-            isWrong ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-300 dark:border-rose-700' :
-            'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-600'
+            isCorrect ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border-success/30 dark:border-success/40" :
+            isWrong ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
+            "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)]"
           }`}>
-          <p className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-2">{step.label}</p>
-          <p className="text-sm text-zinc-600 dark:text-zinc-300">Choose the correct step worth <strong>{step.marks} marks</strong>:</p>
+          <p className="text-xs font-bold uppercase tracking-wider text-[var(--module-muted)] mb-2">{step.label}</p>
+          <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]">Choose the correct step worth <strong>{step.marks} marks</strong>:</p>
           {showStepFeedback && (
             <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}
-              className={`text-xs mt-3 italic ${isCorrect ? 'text-success dark:text-success' : 'text-rose-600 dark:text-rose-400'}`}>
+              className={`text-xs mt-3 italic ${isCorrect ? "text-[var(--module-success-text)] dark:text-[var(--module-success-text)]" : "text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"}`}>
               {isCorrect ? `Correct! +${step.marks} marks` : `Not quite. The correct step was: ${step.correct}`}
             </motion.p>
           )}
@@ -430,10 +431,10 @@ const StackBuilder = () => {
           return (
             <button key={i} onClick={() => handleChoice(opt)} disabled={showStepFeedback}
               className={`w-full text-left p-3 rounded-xl font-mono text-sm border transition-all ${
-                isAnswer ? 'bg-successTint dark:bg-success/15 border-success dark:border-success ring-2 ring-success ring-offset-1' :
-                selected && !isAnswer ? 'bg-rose-50 dark:bg-rose-900/30 border-rose-400 dark:border-rose-600' :
-                'bg-white dark:bg-zinc-800 border-zinc-200 dark:border-zinc-600 hover:border-[#F26B1F]/60 dark:hover:border-[#F26B1F] hover:bg-[#FDEEDF] dark:hover:bg-[#F26B1F]/20'
-              } ${showStepFeedback ? 'cursor-default' : 'cursor-pointer'}`}>
+                isAnswer ? "bg-[var(--module-success-soft)] dark:bg-[var(--module-success)]/15 border-success dark:border-success ring-2 ring-success ring-offset-1" :
+                selected && !isAnswer ? "bg-[var(--module-danger-soft)] dark:bg-[var(--module-danger-soft)] border-[var(--module-line)] dark:border-[var(--module-line)]" :
+                "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border-[var(--module-line)] dark:border-[var(--module-line)] hover:border-[var(--module-line)] dark:hover:border-[var(--module-line)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-danger)]"
+              } ${showStepFeedback ? 'cursor-default' : 'cursor-pointer'}`} data-wide-button="true" data-selected={!!(isAnswer)} data-tone="mint" aria-pressed={!!(isAnswer)}>
               {opt}
             </button>
           );
@@ -444,8 +445,8 @@ const StackBuilder = () => {
       <div className="flex justify-center gap-1.5 mt-5">
         {stackProblem.steps.map((_, i) => (
           <div key={i} className={`w-2 h-2 rounded-full transition-colors ${
-            i < stepIndex ? (choices[i] === stackProblem.steps[i].correct ? 'bg-success' : 'bg-rose-500') :
-            i === stepIndex ? 'bg-red-500' : 'bg-zinc-200 dark:bg-zinc-600'
+            i < stepIndex ? (choices[i] === stackProblem.steps[i].correct ? "bg-[var(--module-success)]" : "bg-[var(--module-danger)]") :
+            i === stepIndex ? "bg-[var(--module-danger)]" : "bg-[var(--module-surface)] dark:bg-[var(--module-surface)]"
           }`} />
         ))}
       </div>
@@ -513,23 +514,23 @@ const ShapeQuiz = () => {
 
   if (phase === 'ready') {
     return (
-      <div className="my-10 bg-white dark:bg-zinc-900 text-center" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
-        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Quiz</span>
-        <h4 className="font-serif font-semibold" style={{ fontSize: 20, color: '#1a1a1a' }}>Shape Quiz</h4>
-        <p className="text-sm mt-2 mb-6 max-w-md mx-auto" style={{ color: '#7a7068' }}>Can you match the mark allocation to the right answer shape?</p>
-        <button onClick={startQuiz} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Start Quiz</button>
+      <div className="my-10 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-center" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 24 }}>
+        <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Exam Skills Quiz</span>
+        <h4 className="font-serif font-semibold" style={{ fontSize: 20, color: "var(--module-ink)" }}>Shape Quiz</h4>
+        <p className="text-sm mt-2 mb-6 max-w-md mx-auto" style={{ color: "var(--module-muted)" }}>Can you match the mark allocation to the right answer shape?</p>
+        <button onClick={startQuiz} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">Start Quiz</button>
       </div>
     );
   }
 
   if (phase === 'done') {
     return (
-      <div className="my-10 bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
-        <h4 className="font-serif font-semibold text-center" style={{ fontSize: 20, color: '#1a1a1a' }}>Shape Quiz Results</h4>
+      <div className="my-10 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 24 }}>
+        <h4 className="font-serif font-semibold text-center" style={{ fontSize: 20, color: "var(--module-ink)" }}>Shape Quiz Results</h4>
         <div className="flex justify-center my-5">
-          <div className="text-center" style={{ backgroundColor: COLORS.accentTint, border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '14px 20px' }}>
-            <div className="font-serif font-bold" style={{ fontSize: 28, color: COLORS.accent }}>{score}/{shapeQuestions.length}</div>
-            <div style={{ fontSize: 11, fontWeight: 600, color: '#9e9186' }}>Correct</div>
+          <div className="text-center" style={{ backgroundColor: moduleFill(COLORS.accentTint), border: `2px solid ${COLORS.accent}`, borderRadius: 14, padding: '14px 20px' }}>
+            <div className="font-serif font-bold" style={{ fontSize: 28, color: 'var(--module-accent-text)' }}>{score}/{shapeQuestions.length}</div>
+            <div style={{ fontSize: 11, fontWeight: 600, color: "var(--module-muted)" }}>Correct</div>
           </div>
         </div>
         <div className="space-y-2 mb-6">
@@ -537,19 +538,19 @@ const ShapeQuiz = () => {
             const got = choices[i];
             const correct = got === q.correct;
             return (
-              <div key={i} className="bg-white dark:bg-zinc-900" style={{ border: correct ? `2px solid ${COLORS.accent}` : '2px solid #1a1a1a', borderRadius: 14, padding: '14px 16px' }}>
+              <div key={i} className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: correct ? `2px solid ${COLORS.accent}` : "2px solid var(--module-line)", borderRadius: 14, padding: '14px 16px' }}>
                 <div className="flex items-center justify-between mb-1">
-                  <span className="font-serif font-bold" style={{ fontSize: 14, color: '#1a1a1a' }}>{q.marks}</span>
-                  <span style={{ fontSize: 12, fontWeight: 700, color: correct ? COLORS.accentDarkText : '#b33030' }}>{correct ? '✓ Correct' : '✗ Incorrect'}</span>
+                  <span className="font-serif font-bold" style={{ fontSize: 14, color: "var(--module-ink)" }}>{q.marks}</span>
+                  <span style={{ fontSize: 12, fontWeight: 700, color: moduleText(correct ? COLORS.accentDarkText : "var(--module-danger-text)") }}>{correct ? '✓ Correct' : '✗ Incorrect'}</span>
                 </div>
-                <p style={{ fontSize: 14, color: '#5a5550' }}>{q.correct}</p>
-                {!correct && got && <p className="italic mt-1" style={{ fontSize: 12, color: '#b33030' }}>You said: {got}</p>}
+                <p style={{ fontSize: 14, color: "var(--module-ink)" }}>{q.correct}</p>
+                {!correct && got && <p className="italic mt-1" style={{ fontSize: 12, color: "var(--module-danger-text)" }}>You said: {got}</p>}
               </div>
             );
           })}
         </div>
         <div className="text-center">
-          <button onClick={startQuiz} style={{ backgroundColor: COLORS.accent, borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: '#FFFFFF' }}>Try Again</button>
+          <button onClick={startQuiz} style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 20, padding: '12px 24px', fontSize: 14, fontWeight: 600, color: "var(--module-on-fill)" }} data-wide-button="true">Try Again</button>
         </div>
       </div>
     );
@@ -560,25 +561,25 @@ const ShapeQuiz = () => {
   const _isWrong = showFeedback && choices[qIndex] !== null && choices[qIndex] !== q.correct;
 
   return (
-    <div className="my-10 bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 24 }}>
+    <div className="my-10 bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 24 }}>
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)' }}>Exam Skills Quiz</span>
-          <h4 className="font-serif font-semibold" style={{ fontSize: 18, color: '#1a1a1a' }}>Shape Quiz</h4>
+          <span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)' }}>Exam Skills Quiz</span>
+          <h4 className="font-serif font-semibold" style={{ fontSize: 18, color: "var(--module-ink)" }}>Shape Quiz</h4>
         </div>
-        <span style={{ fontSize: 13, fontWeight: 600, color: '#9e9186', backgroundColor: '#f0ece6', border: '1px solid #d0cdc8', borderRadius: 20, padding: '3px 10px' }}>{qIndex + 1} / {shapeQuestions.length}</span>
+        <span style={{ fontSize: 13, fontWeight: 600, color: "var(--module-muted)", backgroundColor: "var(--module-surface)", border: "1px solid var(--module-line)", borderRadius: 20, padding: '3px 10px' }}>{qIndex + 1} / {shapeQuestions.length}</span>
       </div>
 
       {/* Mark allocation */}
       <AnimatePresence mode="wait">
         <motion.div key={qIndex} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }}
-          className="mb-5" style={{ backgroundColor: '#f4f0eb', border: '1.5px solid #d0cdc8', borderRadius: 12, padding: '14px 18px', minHeight: 80, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-          <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', marginBottom: 8, textTransform: 'uppercase' as const }}>Mark allocation</p>
+          className="mb-5" style={{ backgroundColor: "var(--module-surface)", border: "1.5px solid var(--module-line)", borderRadius: 12, padding: '14px 18px', minHeight: 80, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <p style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", marginBottom: 8, textTransform: 'uppercase' as const }}>Mark allocation</p>
           <p style={{ lineHeight: 1 }}>
-            <span className="font-serif font-bold" style={{ fontSize: 32, color: COLORS.accent }}>{q.marks.replace(/[()]/g, '')}</span>
+            <span className="font-serif font-bold" style={{ fontSize: 32, color: 'var(--module-accent-text)' }}>{q.marks.replace(/[()]/g, '')}</span>
           </p>
           {showFeedback && (
-            <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className="italic mt-3" style={{ fontSize: 13, color: isCorrect ? COLORS.accentDarkText : '#b33030' }}>
+            <motion.p initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} className="italic mt-3" style={{ fontSize: 13, color: moduleText(isCorrect ? COLORS.accentDarkText : "var(--module-danger-text)") }}>
               {isCorrect ? 'Correct! You can read the marks.' : `Not quite — the right shape is: ${q.correct}`}
             </motion.p>
           )}
@@ -593,13 +594,13 @@ const ShapeQuiz = () => {
           return (
             <button key={i} onClick={() => handleChoice(opt)} disabled={showFeedback} className="w-full text-left transition-all" style={
               isAnswer
-                ? { backgroundColor: COLORS.accentTint, border: `2px solid ${COLORS.accent}`, borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 600, color: COLORS.accentDarkText, cursor: 'default' }
+                ? { backgroundColor: moduleFill(COLORS.accentTint), border: `2px solid ${COLORS.accent}`, borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 600, color: moduleText(COLORS.accentDarkText), cursor: 'default' }
                 : selected && !isAnswer
-                ? { backgroundColor: '#F1F0ED', border: '2px solid #d0cdc8', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#7a7068', cursor: 'default' }
+                ? { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: "var(--module-muted)", cursor: 'default' }
                 : showFeedback
-                ? { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#1a1a1a', opacity: 0.5, cursor: 'not-allowed' }
-                : { backgroundColor: '#FFFFFF', border: '2px solid #1a1a1a', borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: '#1a1a1a', cursor: 'pointer' }
-            }>
+                ? { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: "var(--module-ink)", opacity: 0.5, cursor: 'not-allowed' }
+                : { backgroundColor: "var(--module-surface)", border: "2px solid var(--module-line)", borderRadius: 12, padding: '14px 18px', fontSize: 14, fontWeight: 500, color: "var(--module-ink)", cursor: 'pointer' }
+            } data-wide-button="true" data-selected={!!(isAnswer)} data-tone="orange" aria-pressed={!!(isAnswer)}>
               {isAnswer && '✓ '}{opt}
             </button>
           );
@@ -609,7 +610,7 @@ const ShapeQuiz = () => {
       {/* Progress dots */}
       <div className="flex justify-center gap-1.5 mt-5">
         {shapeQuestions.map((_, i) => (
-          <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: i <= qIndex ? COLORS.accent : '#d0cdc8', transition: 'background-color 0.3s' }} />
+          <div key={i} style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: moduleFill(i <= qIndex ? COLORS.accent : "var(--module-surface)"), transition: 'background-color 0.3s' }} />
         ))}
       </div>
     </div>
@@ -680,21 +681,21 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="The PEEL Framework." eyebrow="02 // The Essay Engine" icon={Layers} theme={theme}>
               <p>{essentials ? 'For essay questions, use' : 'For any essay-style question — English, History, Business, Geography, and more —'} <Highlight description="PEEL stands for Point, Evidence, Explain, Link. It gives you a paragraph skeleton that ensures every paragraph in your essay has a clear structure the examiner can follow and award marks to." theme={theme}>PEEL</Highlight>{essentials ? '. Each paragraph follows four steps:' : ' gives you a paragraph skeleton that ensures every paragraph earns its full marks:'}</p>
               <div className="my-6 space-y-3">
-                <div className="flex items-start gap-3 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-700 flex-shrink-0">P</span>
-                  <div><strong className="text-blue-700 dark:text-blue-300">Point</strong> — State your argument in one clear sentence. This tells the examiner exactly what this paragraph is about.</div>
+                <div className="flex items-start gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">P</span>
+                  <div><strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Point</strong> — State your argument in one clear sentence. This tells the examiner exactly what this paragraph is about.</div>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-800">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-amber-100 dark:bg-amber-800 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-700 flex-shrink-0">E</span>
-                  <div><strong className="text-amber-700 dark:text-amber-300">Evidence</strong> — Give a specific example, quote, or fact. Not a vague reference — something concrete.</div>
+                <div className="flex items-start gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">E</span>
+                  <div><strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Evidence</strong> — Give a specific example, quote, or fact. Not a vague reference — something concrete.</div>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border border-teal-200 dark:border-teal-800">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-teal-100 dark:bg-teal-800 text-teal-700 dark:text-teal-300 border border-teal-300 dark:border-teal-700 flex-shrink-0">E</span>
-                  <div><strong className="text-teal-700 dark:text-teal-300">Explain</strong> — Say WHY this evidence supports your point. This is the step most students skip, and it is where the real marks are.</div>
+                <div className="flex items-start gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">E</span>
+                  <div><strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Explain</strong> — Say WHY this evidence supports your point. This is the step most students skip, and it is where the real marks are.</div>
                 </div>
-                <div className="flex items-start gap-3 p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg border border-purple-200 dark:border-purple-800">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-700 flex-shrink-0">L</span>
-                  <div><strong className="text-purple-700 dark:text-purple-300">Link</strong> — Connect back to the question asked. This closes the loop and shows the examiner you are directly answering what was asked.</div>
+                <div className="flex items-start gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">L</span>
+                  <div><strong className="text-[var(--module-ink)] dark:text-[var(--module-ink)]">Link</strong> — Connect back to the question asked. This closes the loop and shows the examiner you are directly answering what was asked.</div>
                 </div>
               </div>
               {essentials ? (
@@ -742,40 +743,40 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="The Marks-Shape Connection." eyebrow="04 // The Decoder" icon={BarChart2} theme={theme}>
               <p>The marks beside a question tell you <em>exactly</em> what <Highlight description="The 'shape' of an answer means its length and structure. A 4-mark answer should look completely different from a 20-mark answer. The marks are a blueprint telling you exactly how much to write and how to organise it." theme={theme}>SHAPE</Highlight> your answer should be. Here is how to decode them:</p>
               <div className="my-6 space-y-2.5">
-                <div className="p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="font-mono font-bold text-zinc-800 dark:text-white">(4 marks)</span>
-                  <span className="text-zinc-500 dark:text-zinc-400 mx-2">=</span>
-                  <span className="text-zinc-600 dark:text-zinc-300">1-2 sentences. Name it and briefly explain.</span>
+                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(4 marks)</span>
+                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
+                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">1-2 sentences. Name it and briefly explain.</span>
                 </div>
-                <div className="p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="font-mono font-bold text-zinc-800 dark:text-white">(10 marks)</span>
-                  <span className="text-zinc-500 dark:text-zinc-400 mx-2">=</span>
-                  <span className="text-zinc-600 dark:text-zinc-300">A developed paragraph. Make a point, support it, explain it.</span>
+                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(10 marks)</span>
+                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
+                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">A developed paragraph. Make a point, support it, explain it.</span>
                 </div>
-                <div className="p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="font-mono font-bold text-zinc-800 dark:text-white">(15 marks)</span>
-                  <span className="text-zinc-500 dark:text-zinc-400 mx-2">=</span>
-                  <span className="text-zinc-600 dark:text-zinc-300">Two developed paragraphs OR one long one with multiple examples.</span>
+                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(15 marks)</span>
+                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
+                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">Two developed paragraphs OR one long one with multiple examples.</span>
                 </div>
-                <div className="p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="font-mono font-bold text-zinc-800 dark:text-white">(20-25 marks)</span>
-                  <span className="text-zinc-500 dark:text-zinc-400 mx-2">=</span>
-                  <span className="text-zinc-600 dark:text-zinc-300">A structured mini-essay. Introduction, 2-3 body paragraphs, brief conclusion.</span>
+                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(20-25 marks)</span>
+                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
+                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">A structured mini-essay. Introduction, 2-3 body paragraphs, brief conclusion.</span>
                 </div>
-                <div className="p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="font-mono font-bold text-zinc-800 dark:text-white">(30+ marks)</span>
-                  <span className="text-zinc-500 dark:text-zinc-400 mx-2">=</span>
-                  <span className="text-zinc-600 dark:text-zinc-300">Full essay structure. Every mark corresponds to roughly one strong sentence.</span>
+                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(30+ marks)</span>
+                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
+                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">Full essay structure. Every mark corresponds to roughly one strong sentence.</span>
                 </div>
-                <div className="p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="font-mono font-bold text-zinc-800 dark:text-white">(3 &times; 5 marks)</span>
-                  <span className="text-zinc-500 dark:text-zinc-400 mx-2">=</span>
-                  <span className="text-zinc-600 dark:text-zinc-300">Three SEPARATE short answers, not one long one. Examiners mark each independently.</span>
+                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(3 &times; 5 marks)</span>
+                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
+                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">Three SEPARATE short answers, not one long one. Examiners mark each independently.</span>
                 </div>
-                <div className="p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="font-mono font-bold text-zinc-800 dark:text-white">(2 &times; 10 marks)</span>
-                  <span className="text-zinc-500 dark:text-zinc-400 mx-2">=</span>
-                  <span className="text-zinc-600 dark:text-zinc-300">Two developed points. Give EXACTLY two, not three.</span>
+                <div className="p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="font-mono font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)]">(2 &times; 10 marks)</span>
+                  <span className="text-[var(--module-muted)] dark:text-[var(--module-muted)] mx-2">=</span>
+                  <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">Two developed points. Give EXACTLY two, not three.</span>
                 </div>
               </div>
               <p>The most common mistake is writing a <Highlight description="Writing too much for a small question wastes time. Writing too little for a big question loses marks. The mark allocation is the examiner's way of telling you exactly how much they expect." theme={theme}>4-mark answer for a 15-mark question</Highlight>, or a 15-mark answer for a 4-mark question. The marks tell you exactly how much to write. Reading them correctly is one of the simplest ways to improve your results.<Cite n={1} /></p>
@@ -807,29 +808,29 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
             <ReadingSection title="Subject-Specific Structures." eyebrow="06 // The Toolkit" icon={Wrench} theme={theme}>
               <p>Here is a quick reference for the dominant answer structure in each subject family. Keep this in mind as you practise past papers.</p>
               <div className="my-6 space-y-3">
-                <div className="p-5 bg-zinc-50 dark:bg-zinc-700/50 rounded-xl border border-zinc-200 dark:border-zinc-600">
-                  <h4 className="font-bold text-zinc-800 dark:text-white mb-2">Languages (English, Irish, French etc.)</h4>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-300"><strong>PEEL for essays</strong>, quote-integrate-analyse for poetry and prose. Always embed quotes rather than dropping them in. Every paragraph should have a clear topic sentence.</p>
+                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">Languages (English, Irish, French etc.)</h4>
+                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>PEEL for essays</strong>, quote-integrate-analyse for poetry and prose. Always embed quotes rather than dropping them in. Every paragraph should have a clear topic sentence.</p>
                 </div>
-                <div className="p-5 bg-zinc-50 dark:bg-zinc-700/50 rounded-xl border border-zinc-200 dark:border-zinc-600">
-                  <h4 className="font-bold text-zinc-800 dark:text-white mb-2">Sciences (Biology, Chemistry, Physics)</h4>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-300"><strong>S&sup3;S for calculations</strong>, "State-Explain-Example" for definitions, labelled diagrams everywhere. Every label on a diagram is a potential mark.</p>
+                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">Sciences (Biology, Chemistry, Physics)</h4>
+                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>S&sup3;S for calculations</strong>, "State-Explain-Example" for definitions, labelled diagrams everywhere. Every label on a diagram is a potential mark.</p>
                 </div>
-                <div className="p-5 bg-zinc-50 dark:bg-zinc-700/50 rounded-xl border border-zinc-200 dark:border-zinc-600">
-                  <h4 className="font-bold text-zinc-800 dark:text-white mb-2">Business Subjects</h4>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-300"><strong>Point-Explain-Example-Apply</strong> (the business PEEL variant). Always apply to a real business or the case study in the question.</p>
+                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">Business Subjects</h4>
+                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>Point-Explain-Example-Apply</strong> (the business PEEL variant). Always apply to a real business or the case study in the question.</p>
                 </div>
-                <div className="p-5 bg-zinc-50 dark:bg-zinc-700/50 rounded-xl border border-zinc-200 dark:border-zinc-600">
-                  <h4 className="font-bold text-zinc-800 dark:text-white mb-2">Maths</h4>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-300"><strong>Every line is a mark</strong> — never skip steps. Use the left column for working, right column for answers. Circle or underline final answers.</p>
+                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">Maths</h4>
+                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>Every line is a mark</strong> — never skip steps. Use the left column for working, right column for answers. Circle or underline final answers.</p>
                 </div>
-                <div className="p-5 bg-zinc-50 dark:bg-zinc-700/50 rounded-xl border border-zinc-200 dark:border-zinc-600">
-                  <h4 className="font-bold text-zinc-800 dark:text-white mb-2">History / Geography</h4>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-300"><strong>PEEL for essays</strong>, "Describe-Explain-Evaluate" for source analysis. Case Study structure for Geography — always name, locate, and describe the process.</p>
+                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">History / Geography</h4>
+                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>PEEL for essays</strong>, "Describe-Explain-Evaluate" for source analysis. Case Study structure for Geography — always name, locate, and describe the process.</p>
                 </div>
-                <div className="p-5 bg-zinc-50 dark:bg-zinc-700/50 rounded-xl border border-zinc-200 dark:border-zinc-600">
-                  <h4 className="font-bold text-zinc-800 dark:text-white mb-2">Practical Subjects</h4>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-300"><strong>Process documentation</strong> — materials, method, outcome, evaluation. Always explain <em>why</em> you chose a material or method, not just what you did.</p>
+                <div className="p-5 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <h4 className="font-bold text-[var(--module-ink)] dark:text-[var(--module-ink)] mb-2">Practical Subjects</h4>
+                  <p className="text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>Process documentation</strong> — materials, method, outcome, evaluation. Always explain <em>why</em> you chose a material or method, not just what you did.</p>
                 </div>
               </div>
               <p>These command-word structures mirror what the marking schemes and Chief Examiner reports reward — for example, Business answers that State, Explain, and Example a developed point rather than name it in one word.<Cite n={2} /> This is a reference card, not deep teaching. Bookmark this section and come back to it when you are practising past papers in a specific subject.</p>
@@ -844,27 +845,27 @@ const AnswerEngineeringModule: React.FC<{ onBack: () => void; progress: ModulePr
                 <p>You now have <strong>four frameworks</strong> for building better answers:</p>
               )}
               <div className="my-6 space-y-2.5">
-                <div className="flex items-center gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-700 flex-shrink-0">1</span>
-                  <div className="text-zinc-700 dark:text-zinc-200"><strong>PEEL</strong> for essay paragraphs</div>
+                <div className="flex items-center gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">1</span>
+                  <div className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>PEEL</strong> for essay paragraphs</div>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-amber-100 dark:bg-amber-800 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-700 flex-shrink-0">2</span>
-                  <div className="text-zinc-700 dark:text-zinc-200"><strong>S&sup3;S</strong> for science and maths calculations</div>
+                <div className="flex items-center gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">2</span>
+                  <div className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>S&sup3;S</strong> for science and maths calculations</div>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-teal-100 dark:bg-teal-800 text-teal-700 dark:text-teal-300 border border-teal-300 dark:border-teal-700 flex-shrink-0">3</span>
-                  <div className="text-zinc-700 dark:text-zinc-200"><strong>The marks-shape decoder</strong> for reading mark allocations</div>
+                <div className="flex items-center gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">3</span>
+                  <div className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>The marks-shape decoder</strong> for reading mark allocations</div>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-zinc-50 dark:bg-zinc-700/50 rounded-lg border border-zinc-200 dark:border-zinc-600">
-                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-700 flex-shrink-0">4</span>
-                  <div className="text-zinc-700 dark:text-zinc-200"><strong>The 60% rescue strategy</strong> for partial answers</div>
+                <div className="flex items-center gap-3 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-lg border border-[var(--module-line)] dark:border-[var(--module-line)]">
+                  <span className="px-2.5 py-1 rounded-lg text-xs font-bold bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] border border-[var(--module-line)] dark:border-[var(--module-line)] flex-shrink-0">4</span>
+                  <div className="text-[var(--module-ink)] dark:text-[var(--module-muted)]"><strong>The 60% rescue strategy</strong> for partial answers</div>
                 </div>
               </div>
               <MicroCommitment theme={theme}>
                 <p>Pick one past exam question from your <strong>strongest</strong> subject. Answer it using the right framework. Then pick one from your <strong>weakest</strong> subject. Compare how it feels — that is the difference structure makes.</p>
               </MicroCommitment>
-              <p className="mt-8 text-center font-serif text-lg font-semibold text-zinc-800 dark:text-white">Knowledge gets you in the door. Structure gets you the marks. You have always had the knowledge — now you have the engineering.</p>
+              <p className="mt-8 text-center font-serif text-lg font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Knowledge gets you in the door. Structure gets you the marks. You have always had the knowledge — now you have the engineering.</p>
             </ReadingSection>
           )}
         </>

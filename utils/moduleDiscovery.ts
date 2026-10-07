@@ -1,7 +1,7 @@
-import type { CourseData } from '../components/Library';
-import type { UserProgress } from '../types';
-import estimates from '../data/moduleReadingEstimates.json';
 import { sectionsFor } from '../components/learning/data';
+import type { CourseData } from '../components/Library';
+import estimates from '../data/moduleReadingEstimates.json';
+import type { UserProgress } from '../types';
 
 const OUTCOMES: Record<string, string> = {
   'agency-protocol': 'Choose one action you can take towards a goal that matters to you.',
@@ -32,7 +32,7 @@ const OUTCOMES: Record<string, string> = {
   'leaving-cert-strategy-protocol': 'Make a revision plan that accounts for your subjects and assessment.',
   'reverse-engineering-protocol': 'Work backwards from an exam date to a manageable weekly plan.',
   'exam-hall-strategies-protocol': 'Plan question selection, timing and checks for an exam paper.',
-  'exam-crisis-management-protocol': 'Prepare a personal plan for recovering when an exam feels overwhelming.',
+  'exam-crisis-management-protocol': 'Practise recovering focus when exam pressure interrupts your thinking.',
   'growth-mindset-protocol': 'Choose a different strategy after a setback, rather than label your ability.',
   'controllable-variables-protocol': 'Adjust one study or recovery habit and observe what happens.',
   'reframing-progress-protocol': 'Notice progress beyond a single grade and choose your next target.',

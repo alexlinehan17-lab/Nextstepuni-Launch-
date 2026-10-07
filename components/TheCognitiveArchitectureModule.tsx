@@ -1,22 +1,27 @@
+import { moduleBorder,moduleFill } from './learning/brandTokens';
 
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { MotionDiv } from './Motion';
+import { AnimatePresence,motion } from 'framer-motion';
 import {
-  Server, Filter, Archive, BrainCircuit, Moon, ClipboardCheck
+Archive,BrainCircuit,
+ClipboardCheck,
+Filter,
+Moon,
+Server
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { fuchsiaTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { Cite } from './ModuleReferences';
+import React,{ useEffect,useRef,useState } from 'react';
 import { HOW_MEMORY_WORKS_REFERENCE_LIST } from '../data/references/howMemoryWorks';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { fuchsiaTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
+import { MotionDiv } from './Motion';
 
 const theme = fuchsiaTheme;
 
@@ -29,9 +34,9 @@ const _MemoryFlowVisualizer = () => {
   const particles = Array.from({ length: particleCount }, (_, i) => i);
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">The Memory Pipeline</h4>
-      <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">
+    <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">The Memory Pipeline</h4>
+      <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mb-8">
         {attention
           ? 'Attention is ON — information flows all the way to Long-Term Memory.'
           : 'Without attention, information fades after Sensory Memory. Hit "Pay Attention" to see the difference.'}
@@ -44,13 +49,13 @@ const _MemoryFlowVisualizer = () => {
           <motion.div
             className="rounded-xl border-2 p-3 md:p-4 text-center"
             animate={{
-              borderColor: attention ? '#d946ef' : '#a1a1aa',
-              backgroundColor: attention ? 'rgba(217, 70, 239, 0.08)' : 'rgba(161, 161, 170, 0.05)',
+              borderColor: moduleBorder(attention ? "var(--module-line)" : "var(--module-line)"),
+              backgroundColor: moduleFill(attention ? 'var(--module-surface)' : 'var(--module-surface)'),
             }}
             transition={{ duration: 0.4 }}
           >
-            <p className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Sensory</p>
-            <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Split-second</p>
+            <p className="text-xs font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)]">Sensory</p>
+            <p className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Split-second</p>
           </motion.div>
         </div>
 
@@ -59,17 +64,17 @@ const _MemoryFlowVisualizer = () => {
           <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
             <defs>
               <marker id="mem-arrow1" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-                <polygon points="0 0, 8 3, 0 6" fill={attention ? '#d946ef' : '#a1a1aa'} />
+                <polygon points="0 0, 8 3, 0 6" fill={attention ? "var(--module-surface)" : "var(--module-surface)"} />
               </marker>
             </defs>
-            <line x1="0" y1="24" x2="100%" y2="24" stroke={attention ? '#d946ef' : '#a1a1aa'} strokeWidth="2" strokeDasharray="6 4" markerEnd="url(#mem-arrow1)" />
+            <line x1="0" y1="24" x2="100%" y2="24" stroke={attention ? "var(--module-ink)" : "var(--module-muted)"} strokeWidth="2" strokeDasharray="6 4" markerEnd="url(#mem-arrow1)" />
           </svg>
           <AnimatePresence>
             {particles.map(i => (
               <motion.div
                 key={`p1-${i}-${attention}`}
                 className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full"
-                style={{ backgroundColor: attention ? '#d946ef' : '#f472b6' }}
+                style={{ backgroundColor: moduleFill(attention ? "var(--module-surface)" : "var(--module-surface)") }}
                 initial={{ left: '-5%', opacity: 0, scale: 0.5 }}
                 animate={attention ? {
                   left: ['0%', '100%'],
@@ -94,7 +99,7 @@ const _MemoryFlowVisualizer = () => {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className="absolute right-0 -bottom-0.5 text-[9px] font-bold text-rose-400 dark:text-rose-500"
+              className="absolute right-0 -bottom-0.5 text-[9px] font-bold text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]"
             >
               Lost!
             </motion.p>
@@ -106,14 +111,14 @@ const _MemoryFlowVisualizer = () => {
           <motion.div
             className="rounded-xl border-2 p-3 md:p-4 text-center"
             animate={{
-              borderColor: attention ? '#d946ef' : '#52525b',
-              backgroundColor: attention ? 'rgba(217, 70, 239, 0.08)' : 'rgba(82, 82, 91, 0.05)',
+              borderColor: moduleBorder(attention ? "var(--module-line)" : "var(--module-line)"),
+              backgroundColor: moduleFill(attention ? 'var(--module-surface)' : 'var(--module-surface)'),
               opacity: attention ? 1 : 0.5,
             }}
             transition={{ duration: 0.4 }}
           >
-            <p className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Short-Term</p>
-            <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">15-30 sec</p>
+            <p className="text-xs font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)]">Short-Term</p>
+            <p className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">15-30 sec</p>
           </motion.div>
         </div>
 
@@ -122,16 +127,16 @@ const _MemoryFlowVisualizer = () => {
           <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
             <defs>
               <marker id="mem-arrow2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-                <polygon points="0 0, 8 3, 0 6" fill={attention ? '#d946ef' : '#a1a1aa'} />
+                <polygon points="0 0, 8 3, 0 6" fill={attention ? "var(--module-surface)" : "var(--module-surface)"} />
               </marker>
             </defs>
-            <line x1="0" y1="24" x2="100%" y2="24" stroke={attention ? '#d946ef' : '#a1a1aa'} strokeWidth="2" strokeDasharray="6 4" markerEnd="url(#mem-arrow2)" />
+            <line x1="0" y1="24" x2="100%" y2="24" stroke={attention ? "var(--module-ink)" : "var(--module-muted)"} strokeWidth="2" strokeDasharray="6 4" markerEnd="url(#mem-arrow2)" />
           </svg>
           <AnimatePresence>
             {attention && particles.map(i => (
               <motion.div
                 key={`p2-${i}`}
-                className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-fuchsia-500"
+                className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[var(--module-solid)]"
                 initial={{ left: '-5%', opacity: 0, scale: 0.5 }}
                 animate={{
                   left: ['0%', '100%'],
@@ -155,20 +160,20 @@ const _MemoryFlowVisualizer = () => {
           <motion.div
             className="rounded-xl border-2 p-3 md:p-4 text-center"
             animate={{
-              borderColor: attention ? '#10b981' : '#52525b',
-              backgroundColor: attention ? 'rgba(16, 185, 129, 0.08)' : 'rgba(82, 82, 91, 0.05)',
+              borderColor: moduleBorder(attention ? "var(--module-line)" : "var(--module-line)"),
+              backgroundColor: moduleFill(attention ? 'var(--module-surface)' : 'var(--module-surface)'),
               opacity: attention ? 1 : 0.4,
             }}
             transition={{ duration: 0.4 }}
           >
-            <p className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Long-Term</p>
-            <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">Permanent</p>
+            <p className="text-xs font-bold text-[var(--module-ink)] dark:text-[var(--module-muted)]">Long-Term</p>
+            <p className="text-[10px] text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-0.5">Permanent</p>
           </motion.div>
         </div>
       </div>
 
       {/* Status indicator */}
-      <p className={`text-center text-xs font-bold mb-6 ${attention ? 'text-emerald-500' : 'text-rose-400'}`}>
+      <p className={`text-center text-xs font-bold mb-6 ${attention ? "text-[var(--module-success-text)]" : "text-[var(--module-danger-text)]"}`}>
         {attention ? 'Information is being encoded into Long-Term Memory' : 'Information is decaying — nothing reaches Long-Term Memory'}
       </p>
 
@@ -176,9 +181,9 @@ const _MemoryFlowVisualizer = () => {
         <button onClick={() => setAttention(!attention)}
           className={`px-5 py-2.5 font-bold text-sm rounded-lg transition-colors ${
             attention
-              ? 'bg-zinc-200 dark:bg-zinc-700 text-zinc-800 dark:text-white hover:bg-zinc-300 dark:hover:bg-zinc-600'
-              : 'bg-fuchsia-500 hover:bg-fuchsia-600 text-white'
-          }`}
+              ? "bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] hover:bg-[var(--module-surface)] dark:hover:bg-[var(--module-surface)]"
+              : "bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)]"
+          }`} data-wide-button="true" data-selected={!!(attention)} data-tone="orange" aria-pressed={!!(attention)}
         >
           {attention ? 'De-Focus' : 'Pay Attention'}
         </button>
@@ -311,23 +316,23 @@ const ChunkingChallenge = () => {
   if (scoreR1 !== null && scoreR2 !== null) {
     const maxBar = 12;
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Results</h4>
-        <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-8">How did chunking change your recall?</p>
+      <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Results</h4>
+        <p className="text-center text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 mb-8">How did chunking change your recall?</p>
 
         <div className="space-y-6 max-w-md mx-auto">
           {/* Unchunked bar */}
           <div>
             <div className="flex justify-between text-sm font-semibold mb-1">
-              <span className="text-zinc-700 dark:text-zinc-300">Unchunked (Random)</span>
-              <span className="text-rose-600 dark:text-rose-400">{scoreR1}/12</span>
+              <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">Unchunked (Random)</span>
+              <span className="text-[var(--module-danger-text)] dark:text-[var(--module-danger-text)]">{scoreR1}/12</span>
             </div>
-            <div className="h-6 w-full bg-zinc-100 dark:bg-zinc-700 rounded-full overflow-hidden">
+            <div className="h-6 w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full overflow-hidden">
               <MotionDiv
                 initial={{ width: 0 }}
                 animate={{ width: `${(scoreR1 / maxBar) * 100}%` }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="h-full bg-rose-500 rounded-full"
+                className="h-full bg-[var(--module-danger)] rounded-full"
               />
             </div>
           </div>
@@ -335,26 +340,26 @@ const ChunkingChallenge = () => {
           {/* Chunked bar */}
           <div>
             <div className="flex justify-between text-sm font-semibold mb-1">
-              <span className="text-zinc-700 dark:text-zinc-300">Chunked (Acronyms)</span>
-              <span className="text-emerald-600 dark:text-emerald-400">{scoreR2}/12</span>
+              <span className="text-[var(--module-ink)] dark:text-[var(--module-muted)]">Chunked (Acronyms)</span>
+              <span className="text-[var(--module-success-text)] dark:text-[var(--module-success-text)]">{scoreR2}/12</span>
             </div>
-            <div className="h-6 w-full bg-zinc-100 dark:bg-zinc-700 rounded-full overflow-hidden">
+            <div className="h-6 w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-full overflow-hidden">
               <MotionDiv
                 initial={{ width: 0 }}
                 animate={{ width: `${(scoreR2 / maxBar) * 100}%` }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-                className="h-full bg-emerald-500 rounded-full"
+                className="h-full bg-[var(--module-success)] rounded-full"
               />
             </div>
           </div>
         </div>
 
-        <div className="mt-8 p-4 bg-fuchsia-50 dark:bg-fuchsia-900/20 border border-fuchsia-200 dark:border-fuchsia-800 rounded-lg text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
+        <div className="mt-8 p-4 bg-[var(--module-surface)] dark:bg-[var(--module-surface)] border border-[var(--module-line)] dark:border-[var(--module-line)] rounded-lg text-sm text-[var(--module-ink)] dark:text-[var(--module-muted)] leading-relaxed">
           <strong>Same number of letters.</strong> But grouping them turned 12 random items into 4 familiar acronyms — easy for your brain to hold. This is why organising information into meaningful groups makes such a huge difference when you're studying.
         </div>
 
         <div className="flex justify-center mt-6">
-          <button onClick={handleReset} className="px-5 py-2.5 bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold text-sm rounded-lg transition-colors">
+          <button onClick={handleReset} className="px-5 py-2.5 bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">
             Try Again
           </button>
         </div>
@@ -365,10 +370,10 @@ const ChunkingChallenge = () => {
   // --- Idle: prompt to start ---
   if (phase === 'idle') {
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">The Chunking Challenge</h4>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6 max-w-md mx-auto">Can you memorise 12 letters in 5 seconds? Two rounds will show you the power of chunking.</p>
-        <button onClick={handleStartRound1} className="px-5 py-2.5 bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold text-sm rounded-lg transition-colors">
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">The Chunking Challenge</h4>
+        <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-6 max-w-md mx-auto">Can you memorise 12 letters in 5 seconds? Two rounds will show you the power of chunking.</p>
+        <button onClick={handleStartRound1} className="px-5 py-2.5 bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">
           Start Round 1
         </button>
       </div>
@@ -378,22 +383,22 @@ const ChunkingChallenge = () => {
   // --- Memorise phase ---
   if (phase === 'memorise') {
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">
           {round === 1 ? 'Round 1: Random Letters' : 'Round 2: Chunked Letters'}
         </h4>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Memorise these letters!</p>
+        <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 mb-6">Memorise these letters!</p>
 
         <MotionDiv
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="text-3xl md:text-4xl font-mono tracking-widest text-zinc-800 dark:text-white py-4"
+          className="text-3xl md:text-4xl font-mono tracking-widest text-[var(--module-ink)] dark:text-[var(--module-ink)] py-4"
         >
           {displayLetters()}
         </MotionDiv>
 
         <div className="mt-6">
-          <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-fuchsia-100 dark:bg-fuchsia-900/40 text-fuchsia-600 dark:text-fuchsia-300 text-2xl font-bold">
+          <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] text-[var(--module-ink)] dark:text-[var(--module-ink)] text-2xl font-bold">
             {countdown}
           </span>
         </div>
@@ -404,24 +409,24 @@ const ChunkingChallenge = () => {
   // --- Recall phase ---
   if (phase === 'recall') {
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">
           {round === 1 ? 'Round 1: Recall' : 'Round 2: Recall'}
         </h4>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1 mb-6">Type the 12 letters you saw (no spaces needed).</p>
+        <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-1 mb-6">Type the 12 letters you saw (no spaces needed).</p>
         <input
           value={input}
           onChange={e => setInput(e.target.value)}
           placeholder="e.g. XKMBRF..."
           maxLength={24}
           autoFocus
-          className="w-full max-w-sm mx-auto block text-center text-lg font-mono tracking-widest bg-white dark:bg-zinc-800 rounded-xl px-5 py-3 text-zinc-800 dark:text-white outline-none"
-          style={{ border: '1.5px solid #E7E5E4' }}
+          className="w-full max-w-sm mx-auto block text-center text-lg font-mono tracking-widest bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3 text-[var(--module-ink)] dark:text-[var(--module-ink)] outline-none"
+          style={{ border: "1.5px solid var(--module-line)" }}
         />
         <button
           onClick={handleSubmit}
           disabled={input.trim().length === 0}
-          className="mt-4 px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 disabled:opacity-40 text-white font-bold text-sm rounded-lg transition-colors"
+          className="mt-4 px-5 py-2.5 bg-[var(--module-success)] hover:bg-[var(--module-success)] disabled:opacity-40 text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true"
         >
           Submit
         </button>
@@ -432,11 +437,11 @@ const ChunkingChallenge = () => {
   // --- Scored (between rounds) ---
   if (phase === 'scored' && round === 1) {
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white">Round 1 Score</h4>
-        <p className="text-4xl font-bold text-rose-500 mt-4">{scoreR1}/12</p>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 mb-6">Now let's try the same task — but with chunked letters.</p>
-        <button onClick={handleStartRound2} className="px-5 py-2.5 bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-bold text-sm rounded-lg transition-colors">
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)]">Round 1 Score</h4>
+        <p className="text-4xl font-bold text-[var(--module-danger-text)] mt-4">{scoreR1}/12</p>
+        <p className="text-sm text-[var(--module-muted)] dark:text-[var(--module-muted)] mt-2 mb-6">Now let's try the same task — but with chunked letters.</p>
+        <button onClick={handleStartRound2} className="px-5 py-2.5 bg-[var(--module-solid)] hover:bg-[var(--module-solid)] text-[var(--module-ink)] font-bold text-sm rounded-lg transition-colors" data-wide-button="true">
           Start Round 2
         </button>
       </div>
@@ -475,26 +480,26 @@ const WorkingMemorySimulator = () => {
 
   if (result !== null) {
     return (
-      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-        <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Results</h4>
+      <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+        <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Results</h4>
         <p>You correctly recalled {result} out of {items.length} items.</p>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400">The original items were: {items.join(', ')}</p>
-        <button onClick={startGame} className="mt-4 px-4 py-2 bg-fuchsia-500 text-white font-bold text-sm rounded-lg">Try Again</button>
+        <p className="text-xs text-[var(--module-muted)] dark:text-[var(--module-muted)]">The original items were: {items.join(', ')}</p>
+        <button onClick={startGame} className="mt-4 px-4 py-2 bg-[var(--module-solid)] text-[var(--module-ink)] font-bold text-sm rounded-lg" data-wide-button="true">Try Again</button>
       </div>
     );
   }
 
   return (
-    <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-      <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Short-Term Memory Test</h4>
-      {!showItems && items.length === 0 && <button onClick={startGame} className="px-4 py-2 bg-fuchsia-500 text-white font-bold text-sm rounded-lg">Start</button>}
+    <div className="my-10 rounded-2xl p-6 md:p-8 text-center" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
+      <h4 className="font-serif text-2xl font-semibold text-[var(--module-ink)] dark:text-[var(--module-ink)] text-center">Short-Term Memory Test</h4>
+      {!showItems && items.length === 0 && <button onClick={startGame} className="px-4 py-2 bg-[var(--module-solid)] text-[var(--module-ink)] font-bold text-sm rounded-lg" data-wide-button="true">Start</button>}
 
       {showItems && <p className="text-3xl font-mono tracking-widest">{items.join(' ')}</p>}
 
       {!showItems && items.length > 0 &&
         <div>
-          <input value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Type the numbers, separated by spaces" className="w-full bg-white dark:bg-zinc-800 rounded-xl px-5 py-3.5 text-sm font-medium text-zinc-800 dark:text-white placeholder-zinc-400 outline-none" style={{ border: '1.5px solid #E7E5E4' }} />
-          <button onClick={checkAnswer} className="mt-4 px-4 py-2 bg-emerald-500 text-white font-bold text-sm rounded-lg">Check Answer</button>
+          <input value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Type the numbers, separated by spaces" className="w-full bg-[var(--module-surface)] dark:bg-[var(--module-surface)] rounded-xl px-5 py-3.5 text-sm font-medium text-[var(--module-ink)] dark:text-[var(--module-ink)] placeholder-zinc-400 outline-none" style={{ border: "1.5px solid var(--module-line)" }} />
+          <button onClick={checkAnswer} className="mt-4 px-4 py-2 bg-[var(--module-success)] text-[var(--module-ink)] font-bold text-sm rounded-lg" data-wide-button="true">Check Answer</button>
         </div>
       }
     </div>

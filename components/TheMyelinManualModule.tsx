@@ -1,22 +1,28 @@
+import { BrandedPracticeSorter } from './learning/BrandedFeatures';
+import { moduleFill,moduleText } from './learning/brandTokens';
 
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
 
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
-  Cpu, Zap, SlidersHorizontal, Microscope, Construction
+Construction,
+Cpu,
+Microscope,
+SlidersHorizontal,
+Zap
 } from 'lucide-react';
-import { type ModuleProgress } from '../types';
-import { amberTheme } from '../moduleThemes';
-import { Highlight, ReadingSection, MicroCommitment } from './ModuleShared';
-import { ModuleLayout } from './ModuleLayout';
-import { useEssentialsMode } from '../hooks/useEssentialsMode';
-import { COLORS } from '../design/tokens';
-import { Cite } from './ModuleReferences';
+import React,{ useState } from 'react';
 import { MYELIN_MANUAL_REFERENCE_LIST } from '../data/references/myelinManual';
+import { COLORS } from '../design/tokens';
+import { useEssentialsMode } from '../hooks/useEssentialsMode';
+import { amberTheme } from '../moduleThemes';
+import { type ModuleProgress } from '../types';
+import { ModuleLayout } from './ModuleLayout';
+import { Cite } from './ModuleReferences';
+import { Highlight,MicroCommitment,ReadingSection } from './ModuleShared';
 
 const theme = amberTheme;
 
@@ -30,21 +36,21 @@ const MyelinWrapper = () => {
     const milestone = wraps === 1 ? 'First layer of myelin forming.' : wraps === 4 ? 'Halfway there — signal noticeably faster.' : wraps >= 8 ? 'Fully myelinated. Skill becoming automatic.' : null;
 
     return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
+        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: "var(--module-surface)", borderRadius: 18 }}>
             {/* Section chip + title */}
             <div className="text-center mb-8">
-                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: COLORS.accentTint, color: COLORS.accentDarkText, border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
-                <h4 className="font-serif font-bold" style={{ fontSize: 26, color: '#1a1a1a' }}>The Myelin Wrapper</h4>
-                <p className="text-sm mt-1" style={{ color: '#7a7068' }}>Each time you practice a skill, you add a layer of myelin, making the signal faster.</p>
+                <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase mb-3" style={{ backgroundColor: moduleFill(COLORS.accentTint), color: moduleText(COLORS.accentDarkText), border: '1px solid rgba(242,107,31,0.2)', letterSpacing: '0.06em' }}>Neuroscience Simulation</span>
+                <h4 className="font-serif font-bold" style={{ fontSize: 26, color: "var(--module-ink)" }}>The Myelin Wrapper</h4>
+                <p className="text-sm mt-1" style={{ color: "var(--module-muted)" }}>Each time you practice a skill, you add a layer of myelin, making the signal faster.</p>
             </div>
 
             {/* Nerve cross-section card */}
-            <div className="bg-white dark:bg-zinc-900" style={{ border: '2px solid #1a1a1a', borderRadius: 16, padding: 28, maxWidth: 320, margin: '0 auto' }}>
-                <p className="text-center mb-4" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: '#9e9186', textTransform: 'uppercase' as const }}>Nerve Cross-Section</p>
+            <div className="bg-[var(--module-surface)] dark:bg-[var(--module-surface)]" style={{ border: "2px solid var(--module-line)", borderRadius: 16, padding: 28, maxWidth: 320, margin: '0 auto' }}>
+                <p className="text-center mb-4" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.12em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Nerve Cross-Section</p>
 
                 <svg viewBox="0 0 220 220" width="220" height="220" style={{ display: 'block', margin: '0 auto' }}>
                     {/* Outer boundary */}
-                    <circle cx="110" cy="110" r="100" fill="#f4f0eb" stroke="#d0cdc8" strokeWidth="1.5"/>
+                    <circle cx="110" cy="110" r="100" fill="var(--module-surface)" stroke="var(--module-muted)" strokeWidth="1.5"/>
 
                     {/* Myelin rings — outside in */}
                     {Array.from({ length: ringCount }).map((_, i) => {
@@ -67,7 +73,7 @@ const MyelinWrapper = () => {
                                 ) : (
                                     <circle cx="110" cy="110" r={outerR} fill={i % 2 === 0 ? COLORS.accent : COLORS.accentDark} opacity={opacity} />
                                 )}
-                                <circle cx="110" cy="110" r={innerR} fill="#f4f0eb" />
+                                <circle cx="110" cy="110" r={innerR} fill="var(--module-surface)" />
                             </g>
                         );
                     })}
@@ -82,20 +88,20 @@ const MyelinWrapper = () => {
 
                     {/* Zero state label */}
                     {wraps === 0 && (
-                        <text x="110" y="115" textAnchor="middle" fontSize="11" fill="#9e9186" fontFamily="DM Sans, sans-serif">no myelin yet</text>
+                        <text x="110" y="115" textAnchor="middle" fontSize="11" fill="var(--module-muted)" fontFamily="DM Sans, sans-serif">no myelin yet</text>
                     )}
                 </svg>
 
                 {/* Layer count */}
-                <p className="text-center mt-3" style={{ fontSize: 12, color: '#9e9186' }}>{ringCount} / 8 myelin layers</p>
+                <p className="text-center mt-3" style={{ fontSize: 12, color: "var(--module-muted)" }}>{ringCount} / 8 myelin layers</p>
 
                 {/* Signal speed stat */}
-                <div className="text-center mt-4 pt-4" style={{ borderTop: '1px solid #e8e0d8' }}>
+                <div className="text-center mt-4 pt-4" style={{ borderTop: "1px solid var(--module-line)" }}>
                     <p style={{ lineHeight: 1 }}>
-                        <span className="font-serif font-bold" style={{ fontSize: 40, color: COLORS.accent }}>{speed}</span>
-                        <span className="font-sans" style={{ fontSize: 16, color: '#9e9186', marginLeft: 4 }}>m/s</span>
+                        <span className="font-serif font-bold" style={{ fontSize: 40, color: 'var(--module-accent-text)' }}>{speed}</span>
+                        <span className="font-sans" style={{ fontSize: 16, color: "var(--module-muted)", marginLeft: 4 }}>m/s</span>
                     </p>
-                    <p className="mt-1" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: '#9e9186', textTransform: 'uppercase' as const }}>Signal Speed</p>
+                    <p className="mt-1" style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.1em', color: "var(--module-muted)", textTransform: 'uppercase' as const }}>Signal Speed</p>
                 </div>
             </div>
 
@@ -106,9 +112,9 @@ const MyelinWrapper = () => {
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="mt-4 max-w-xs mx-auto"
-                    style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: COLORS.accentTint, borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
+                    style={{ borderLeft: `3px solid ${COLORS.accent}`, backgroundColor: moduleFill(COLORS.accentTint), borderRadius: '0 10px 10px 0', padding: '12px 16px' }}
                 >
-                    <p className="text-sm italic" style={{ color: COLORS.accentDarkText }}>{milestone}</p>
+                    <p className="text-sm italic" style={{ color: moduleText(COLORS.accentDarkText) }}>{milestone}</p>
                 </motion.div>
             )}
 
@@ -117,19 +123,19 @@ const MyelinWrapper = () => {
                 <motion.button
                     onClick={() => setWraps(w => Math.min(w + 1, maxWraps))}
                     whileTap={{ scale: 0.97 }}
-                    className="text-white font-semibold"
-                    style={{ backgroundColor: COLORS.accent, borderRadius: 100, padding: '14px 32px', fontSize: 15, border: 'none' }}
+                    className="text-[var(--module-ink)] font-semibold"
+                    style={{ backgroundColor: moduleFill(COLORS.accent), borderRadius: 100, padding: '14px 32px', fontSize: 15, border: 'none' }}
                     onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = COLORS.accentDark; }}
-                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = COLORS.accent; }}
+                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.backgroundColor = COLORS.accent; }} data-wide-button="true"
                 >
                     Practice Skill
                 </motion.button>
                 <button
                     onClick={() => setWraps(0)}
                     className="font-medium"
-                    style={{ fontSize: 13, color: '#9e9186', background: 'none', border: 'none' }}
-                    onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#5a5550'; }}
-                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = '#9e9186'; }}
+                    style={{ fontSize: 13, color: "var(--module-muted)", background: 'none', border: 'none' }}
+                    onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = "var(--module-ink)"; }}
+                    onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.color = "var(--module-muted)"; }} data-wide-button="true"
                 >
                     Reset
                 </button>
@@ -138,33 +144,7 @@ const MyelinWrapper = () => {
     )
 }
 
-const DeepPracticeSorter = () => {
-    const activities = [
-        { name: "Highlighting notes", type: "naive" },
-        { name: "Doing a past paper (timed)", type: "deep" },
-        { name: "Watching a video", type: "naive" },
-        { name: "Explaining a concept out loud", type: "deep" },
-    ];
-    const [choice, setChoice] = useState<{[key: string]: 'naive' | 'deep' | null}>({});
-
-    return (
-        <div className="my-10 rounded-2xl p-6 md:p-8" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
-            <h4 className="font-serif text-2xl font-semibold text-zinc-800 dark:text-white text-center">Deep vs. Naive Practice</h4>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mb-8">Which of these activities trigger myelin growth?</p>
-            <div className="space-y-4">
-                {activities.map(act => (
-                    <div key={act.name} className="p-4 rounded-lg flex justify-between items-center" style={{ backgroundColor: '#FFFFFF', border: '2.5px solid #1C1917', borderRadius: 12, boxShadow: '3px 3px 0px 0px #1C1917' }}>
-                        <span className="font-bold text-sm">{act.name}</span>
-                        <div className="flex gap-2">
-                           <button onClick={() => setChoice({...choice, [act.name]:'naive'})} className={`px-2 py-1 text-xs font-bold rounded ${choice[act.name] === 'naive' && act.type === 'naive' ? 'bg-emerald-200 text-emerald-800' : choice[act.name] === 'naive' && act.type === 'deep' ? 'bg-rose-200 text-rose-800' : 'bg-zinc-200'}`}>Naive</button>
-                           <button onClick={() => setChoice({...choice, [act.name]:'deep'})} className={`px-2 py-1 text-xs font-bold rounded ${choice[act.name] === 'deep' && act.type === 'deep' ? 'bg-emerald-200 text-emerald-800' : choice[act.name] === 'deep' && act.type === 'naive' ? 'bg-rose-200 text-rose-800' : 'bg-zinc-200'}`}>Deep</button>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    )
-};
+const DeepPracticeSorter = BrandedPracticeSorter;
 
 
 // --- MODULE COMPONENT ---
