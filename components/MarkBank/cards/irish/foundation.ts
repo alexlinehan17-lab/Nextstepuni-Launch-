@@ -4,8 +4,9 @@ import authored from './foundation-authored.json';
 import authored2024 from './foundation-2024-authored.json';
 import authored2023 from './foundation-2023-authored.json';
 import authored2022 from './foundation-2022-authored.json';
+import authored2021 from './foundation-2021-authored.json';
 
-export const CARDS: SecRubricCard[] = [authored2022, authored2023, authored2024, authored].flatMap(({ cards, review }) => cards.map((card): SecRubricCard => ({
+export const CARDS: SecRubricCard[] = [authored2021, authored2022, authored2023, authored2024, authored].flatMap(({ cards, review }) => cards.map((card): SecRubricCard => ({
   id: card.id,
   subjectId: 'irish',
   level: 'foundation',

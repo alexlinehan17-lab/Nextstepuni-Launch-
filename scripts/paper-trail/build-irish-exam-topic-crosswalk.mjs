@@ -698,7 +698,7 @@ for (const paper of papers) {
 
 // Reviewed task boundaries override generic section guesses for this exact
 // paper. Frozen baseline identities remain below; new parts/routes are additive.
-const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json']
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
 for (const card of foundationTasks.cards) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
@@ -789,7 +789,8 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
   }
 
   const foundationSchemeSections = {
-    '1': [3], '2': [4, 5, 6], '3': [7, 8, 9, 10, 11, 12, 13, 14, 15],
+    '1': [3], '2': [4, 5, 6],
+    '3': [...new Set([7, ...reviewedCards.filter(c => c.section === '3').flatMap(c => c.schemePages)])].sort((a,b) => a-b),
     'R-1': [4], 'R-2A': [5], 'R-2B': [5], 'R-2C': [5],
     'R-3A': [6], 'R-3B': [6], 'R-3C': [6], 'W-4B': [11, 12],
   };
