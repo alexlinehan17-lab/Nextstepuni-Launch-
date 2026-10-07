@@ -330,6 +330,11 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
                 <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-2 px-1" style={{ color: '#9e9186' }}>
                   Marking scheme — © State Examinations Commission
                 </p>
+                {state.s === 'ready' && state.q.schemeNote && (
+                  <p className="text-[13px] leading-relaxed mb-3 px-1" style={{ color: INK }}>
+                    {state.q.schemeNote}
+                  </p>
+                )}
                 {schemePdf && state.s === 'ready' ? (
                   <CropView pdf={schemePdf} region={schemeRegionFor(state.q)} />
                 ) : schemeFailed ? (

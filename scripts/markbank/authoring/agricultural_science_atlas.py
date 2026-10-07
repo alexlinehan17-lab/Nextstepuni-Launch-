@@ -76,6 +76,8 @@ def outputs():
                 'endP': paper_regions[-1]['p'], 'endY': paper_regions[-1]['r'][3],
                 'region': scheme_regions,
             }
+            if task.get('schemeNote'):
+                anchor['schemeNote'] = task['schemeNote']
             old = next((q for q in maps[key]['q'] if q['n'] == n), None)
             assert old is None or old == anchor, f'Review changed for {key} {n}; inspect before replacing'
             if old is None:
@@ -85,6 +87,21 @@ def outputs():
                 [topics.index(tid) for tid in task['examTopicIds']],
             ])
             runtime['markBankCards'].append({'cardId': cid, 'year': card['year'], 'fileid': fileid, 'n': n})
+    # Edition-specific source notes also accompany the preserved whole-question
+    # readers. A translation does not create a duplicate English Mark Bank card.
+    for paper in review['paperReviews']:
+        if not paper.get('sourceNotes'):
+            continue
+        key = (paper['year'], paper['paperFileid'])
+        if key not in maps:
+            path = ROOT / f'scripts/paper-trail/answers/{key[0]}/{key[1]}.json'
+            maps[key] = json.loads(path.read_text())
+        notes = {}
+        for note in paper['sourceNotes']:
+            notes.setdefault(note['questionN'], []).append(note['note'])
+        for n, values in notes.items():
+            anchor = next(q for q in maps[key]['q'] if q['n'] == n)
+            anchor['schemeNote'] = '\n\n'.join(values)
     result = {RUNTIME: runtime}
     for (year, fileid), answer_map in maps.items():
         for directory in ['scripts/paper-trail/answers', 'public/paper-answers']:

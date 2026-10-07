@@ -3,7 +3,7 @@
     "src": "/exam-figures/agricultural-science/markbank/agsci-2010-hl-scheme-p05-tooth.png",
     "md5": "85c2ad97b31e16ee1957df64d85517e1",
     "alt": "Official marking-scheme drawing of a longitudinal section through a tooth, showing the crown and root, outer enamel, dentin, pulp, gum, periodontium, cementum, bone, blood vessels and nerves. The diagram has a two-mark tariff; four correctly positioned labels earn two marks each.",
-    "attribution": "SEC Agricultural Science 2010 Higher Level marking scheme, PDF page 5 \u2014 \u00a9 State Examinations Commission. Diagram credited in the scheme to Virtualmedicalcentre.com.",
+    "attribution": "SEC Agricultural Science 2010 Higher Level marking scheme, PDF page 5 — © State Examinations Commission. Diagram credited in the scheme to Virtualmedicalcentre.com.",
     "solution": true,
     "sourcePdf": "paper-trail-corpus/markingschemes/2010/LC024ALP000EV.pdf",
     "sourceSha256": "120a5729e8e4d01ea5411df25c54e509c95ea099fb55cb52466f045c72909174",
@@ -20,7 +20,7 @@
     "src": "/exam-figures/agricultural-science/markbank/agsci-2010-hl-scheme-p11-punnett.png",
     "md5": "125b85c6c84bf94a3c2d08c04069e634",
     "alt": "Official Punnett square. The black parent contributes B or b and the brown parent contributes b. The two offspring cells are Bb, Black, and bb, Brown.",
-    "attribution": "SEC Agricultural Science 2010 Higher Level marking scheme, PDF page 11 \u2014 \u00a9 State Examinations Commission.",
+    "attribution": "SEC Agricultural Science 2010 Higher Level marking scheme, PDF page 11 — © State Examinations Commission.",
     "solution": true,
     "sourcePdf": "paper-trail-corpus/markingschemes/2010/LC024ALP000EV.pdf",
     "sourceSha256": "120a5729e8e4d01ea5411df25c54e509c95ea099fb55cb52466f045c72909174",
@@ -30,6 +30,74 @@
       0.356,
       0.468,
       0.45
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2010-ol-paper-cell": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-ol-paper-cell.png",
+    "md5": "737594a7057c53d7d9f228d8f2f1a1d0",
+    "alt": "Original plant-cell diagram, labelled A, B and C, with a chloroplast already named.",
+    "attribution": "SEC Agricultural Science 2010 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2010/LC024GLP000EV.pdf",
+    "sourceSha256": "4ee8be5bf23d55308b3d08007dad8c0a181c2e7a6cad0e501c4385272fa7e6f0",
+    "pdfPage": 5,
+    "cropRect": [
+      0.56,
+      0.128,
+      0.91,
+      0.334
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2010-ol-paper-heart": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-ol-paper-heart.png",
+    "md5": "57d0732161a44fc4ef74577593cb1577",
+    "alt": "Original sheep-heart diagram with labels A, B and C and their leader lines.",
+    "attribution": "SEC Agricultural Science 2010 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2010/LC024GLP000EV.pdf",
+    "sourceSha256": "4ee8be5bf23d55308b3d08007dad8c0a181c2e7a6cad0e501c4385272fa7e6f0",
+    "pdfPage": 8,
+    "cropRect": [
+      0.34,
+      0.1,
+      0.63,
+      0.292
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2010-ol-paper-reproductive": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-ol-paper-reproductive.png",
+    "md5": "4d2ab667df5a3da47a00b2e6ad3ca779",
+    "alt": "Original cow reproductive-system diagram with labels A, B and C; an oviduct is named.",
+    "attribution": "SEC Agricultural Science 2010 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2010/LC024GLP000EV.pdf",
+    "sourceSha256": "4ee8be5bf23d55308b3d08007dad8c0a181c2e7a6cad0e501c4385272fa7e6f0",
+    "pdfPage": 8,
+    "cropRect": [
+      0.359,
+      0.508,
+      0.688,
+      0.718
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2010-ol-paper-mitosis": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-ol-paper-mitosis.png",
+    "md5": "d82913925e042e2aee553754168b9c0b",
+    "alt": "Original metaphase diagram showing labels L and M and their leader lines.",
+    "attribution": "SEC Agricultural Science 2010 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2010/LC024GLP000EV.pdf",
+    "sourceSha256": "4ee8be5bf23d55308b3d08007dad8c0a181c2e7a6cad0e501c4385272fa7e6f0",
+    "pdfPage": 11,
+    "cropRect": [
+      0.3,
+      0.465,
+      0.735,
+      0.7
     ],
     "reviewedAt": "2026-10-07"
   }

@@ -2419,6 +2419,11 @@ const RevealContent: React.FC<{
         transition={{ delay: reduced ? 0 : 0.08, duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
         className="flex-1 overflow-auto overscroll-contain px-3 py-3 bg-zinc-100 dark:bg-zinc-950"
       >
+        {q.schemeNote && (
+          <p className="text-[13px] leading-relaxed text-zinc-800 dark:text-zinc-200 mb-3 px-1">
+            {q.schemeNote}
+          </p>
+        )}
         {q.mode === 'pagejump' ? (
           <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
             This question’s answer spans several scheme pages. Open the marking scheme to read it in full.

@@ -90,43 +90,48 @@
         "pages": 12
       },
       "authoredEnglishCardsForSitting": 62,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "1596f9b705b57549",
           "page": 2,
           "cue": "Freagair",
           "context": "Lch 2 de 8 SÉ CHEIST LE FREAGAIRT 1. Freagair sé cinn ar bith díobh seo a leanas: (a) Aithnítear plandaí áirithe mar speicis tháscacha. Mínigh an téarma speicis tháscacha. Mol dhá speiceas tháscacha agus na dálaí ina bhfaightear gach ceann díobh. (b) Tarraing léaráid lipéada",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1: select six separately priced tasks; all ten and the internal Q1(d) boundary correspond to the English ledger."
         },
         {
           "id": "8c8365cdbc2b1501",
           "page": 3,
           "cue": "dhá cheann",
           "context": "ar san earrach. (48 marc) 4. Déan cur síos ar mhodh saotharlainne nó ar mhodh páirce chun dhá cheann ar bith díobh seo a dhéanamh amach: (a) Uigeacht sampla ithreach atá fliuch. (b) Líon na gcuiteog i bhféarach. (c) Ráta trasghalaithe planda. (d) Díleáiteacht eorna rollta i gcomparáid le láneorna agus ba á mbeathú orthu. (48 mar",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4: select two independently priced experiments; all four are represented by the English ledger."
         },
         {
           "id": "d8d42a0d3d699fb6",
           "page": 4,
           "cue": "trí cinn",
           "context": " cur síos ar conas a ríomhfá an meáchan 1000 gráinne de ghránach. (48 marc) 7. (a) Mínigh trí cinn de na téarmaí seo a leanas: (i) riocht an tseascacháin (ii) déghnéasach (iii) roghnú saorga (iv) ainmhí ginealaigh. (b) I muca guine tá an ailléil don chóta dubh (D) ceannasach ar an ailléil don chóta donn (d). Saolaíodh ál ocht ",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q7(a): the same three-of-four genetics terms as English; four complete routes."
         },
         {
           "id": "df55007fddb4691c",
           "page": 5,
           "cue": "Freagair",
           "context": "Lch 5 de 8 8. Freagair dhá cheann ar bith díobh seo a leanas (a), (b), (c). (a) I gcomhthéacs táirgeadh uan ramhar, déan plé ar an ráiteas “déanann an chaora cúram den chainníocht agus déanann an reithe cúram den cháilíocht”. (b) Déan cur síos achomair",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8: select two independent 24-mark tasks. Q8(c) has its own internal three-of-four routes."
         },
         {
           "id": "4e757ccca4f2d193",
           "page": 5,
           "cue": "dhá cheann",
           "context": "Lch 5 de 8 8. Freagair dhá cheann ar bith díobh seo a leanas (a), (b), (c). (a) I gcomhthéacs táirgeadh uan ramhar, déan plé ar an ráiteas “déanann an chaora cúram den chainníocht agus déanann an reithe cúram den cháilíocht”. (b) Déan cur síos achomair ar na difr",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Second regex match within the same Q8 outer selection; it does not create an extra pool."
         }
       ]
     },
@@ -145,65 +150,73 @@
         "sha256": "42dbd3ca25728ba373226b63a9c1224137705d62fd62a8516faf261a76879ef6",
         "pages": 14
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 85,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "29def7c97b161e02",
           "page": 2,
           "cue": "any six",
           "context": "___________________________________________________________________ Instructions  Answer any six questions. Each question carries 20 marks.  Write your answers in the spaces provided.  Keep your answers short.  Write your examination number in the space provided on page 1. _________________________________________________",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One chooses six independent questions from seven. Keep every question and its separately marked tasks."
         },
         {
           "id": "9e05e2d781e4192b",
           "page": 2,
           "cue": "any two",
           "context": "____________________________ (b) Soil includes different types of mineral particles. List any two of these particle types. (i) __________________________________________________________________________ (ii) __________________________________________________________________________ (c) Give one example of an organism that is o",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q1(b) asks for two particle types without printing a finite response pool."
         },
         {
           "id": "096d6a8d92e9ae3a",
           "page": 3,
           "cue": "Choose",
           "context": "Page 3 of 12 Question 2. Many agricultural activities require the use of farm machinery. Choose a machine from the list below and match it to an activity listed in the table. The first one has been completed as an example. A. Elevator digger D. Subsoiler B. Combine drill E. Round baler C. Rotary tedder F. Combine harvester ",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q2 is a correct matching exercise, not permission to choose any machine for any activity. Each numbered activity has its own 4-mark boundary."
         },
         {
           "id": "084adf88d05ad6d7",
           "page": 3,
           "cue": "Choose",
           "context": "rvesting potatoes 5. Sowing seed 6. Breaking up compacted soil (20 marks) Question 3. (a) Choose two dairy breeds from the following list of cattle breeds: Charolais Friesian Simmental Jersey Hereford Dairy breed 1. _______________________________________________________________________ Dairy breed 2. _______________________",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q3(a) asks for dairy breeds, not arbitrary pairs. The scheme accepts Friesian, Jersey and Simmental; retain that accepted-answer menu, not incorrect pairs."
         },
         {
           "id": "4c69141559e88904",
           "page": 6,
           "cue": "any three",
           "context": "wo (180 marks) Instructions Write your answers to Section Two in your answer book. Answer any three questions. Each question carries 60 marks. ___________________________________ Question 8. (a) The following diagrams show two grazing systems used in Ireland. (i) Identify each grazing system. (ii) Explain how each of the grazin",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two chooses three independent questions from six. All six are reviewed."
         },
         {
           "id": "08cde5d09c3bc6a3",
           "page": 9,
           "cue": "any two",
           "context": "feeding mean? (ii) Give three advantages of creep feeding. (60 marks) Question 12. Answer any two parts from (a), (b), (c), (d) (30 marks, 30 marks) (a) A group of students carried out a survey of plants in an old pasture. (i) List two weeds they might find in the pasture. (ii) Name one piece of equipment that could be used i",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q12 chooses two separately priced parts from four. All published internal tasks remain independently practicable; pairs of unrelated exam responses are not new tasks."
         },
         {
           "id": "360c0ec99a2f2cf9",
           "page": 11,
           "cue": "One of",
           "context": "Page 11 of 12 (ii) One of the offspring of the above cross is then crossed with another pure-breeding pig with erect ears. Copy the following into your answerbook and complete the cross by filling in the spaces to show the possible gametes, genotypes and ",
-          "classification": "pending"
+          "classification": "not-selection",
+          "reason": "Q13(b)(ii): one of the offspring describes the cross, whose F1 offspring all have genotype Ee. It is not a finite answer-route choice."
         },
         {
           "id": "d5203138e657084c",
           "page": 11,
           "cue": "one of",
           "context": " offspring ( ) ( ) The phenotype of the offspring ____________________ (c) (i) Mitosis is one of the two types of cell division. Name the other type of cell division. (ii) The diagram shows the metaphase stage of mitosis. Name the parts of the diagram labelled L and M. (60 marks) L M",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q13(c)(i): identify the other type of cell division. This is not an optional choice of which type to discuss."
         }
       ]
     },
@@ -222,51 +235,57 @@
         "sha256": "41a9cc8a3f98ddebc0918c5e28fef44b11c19149f0151cca14931b87238e36e5",
         "pages": 13
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 85,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "89a886161f8fc6b4",
           "page": 2,
           "cue": "Freagair",
           "context": "Lch 2 de 12 Roinn a hAon (120 marc) Treoracha  Freagair sé cheist ar bith. Tá 20 marc ag gabháil le gach ceist.  Scríobh do chuid freagraí sna spásanna atá ann dóibh.  Bíodh do chuid freagraí gearr.  Scríobh do scrúduimhir sa spás atá ann di ar leathanach 1. _______________________",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One: six independent questions, all seven retained."
         },
         {
           "id": "fb4e129034265e1d",
           "page": 2,
           "cue": "dhá cheann",
           "context": "_________________ (b) Cuimsítear cineálacha éagsúla cáithníní mianraí in ithir. Liostaigh dhá cheann ar bith de na cineálacha cáithnín seo. (i) _____________________________________________________________________ (ii) _____________________________________________________________________ (c) Tabhair sampla amháin d’orgánach atá ",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q1(b): two mineral particle types, with no printed finite pool."
         },
         {
           "id": "b751aadca4f6be00",
           "page": 3,
           "cue": "Roghnaigh",
           "context": "Ceist 2. Bíonn innealra feirme riachtanach le haghaidh mórán gníomhaíochtaí talmhaíochta. Roghnaigh meaisín ón liosta thíos agus meaitseáil é le gníomhaíocht atá liostaithe sa tábla. Tá an chéad cheann comhlánaithe mar shampla. A. Bainteoir ardaithe D. Céachta fo-ithreach B. Druilire cumaisc E. Burlaire cornaí C. Suaiteoir roth",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q2: match each activity to an appropriate machine, not arbitrary machine-selection routes."
         },
         {
           "id": "263792c10f064029",
           "page": 3,
           "cue": "Roghnaigh",
           "context": " féir 4. Baint prátaí 5. Cur síl 6. Briseadh suas ithreach balctha (20 marc) Ceist 3. (a) Roghnaigh dhá phór déiríochta ón liosta seo a leanas de phóir eallaigh: Charolais Freaslannach Simmental Geirseog Hereford Pór déiríochta 1. ____________________________________________________________ Pór déiríochta 2. ___________________",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q3(a): identify two dairy breeds. The scheme accepts Friesian, Jersey and Simmental; incorrect breed pairs are not examination routes."
         },
         {
           "id": "1827828fcb1543d0",
           "page": 6,
           "cue": "Freagair",
           "context": "n a Dó (180 marc) Treoracha Scríobh do chuid freagraí ar Roinn a Dó i do fhreagarleabhar. Freagair trí cheist ar bith. Tá 60 marc ag gabháil le gach ceist. ___________________________________ Ceist 8. (a) Taispeántar dhá chóras féaraigh a mbaintear leas astu in Éirinn sna léaráidí seo a leanas. (i) Sainaithin gach córas féarai",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two: three independent 60-mark questions, all six retained."
         },
         {
           "id": "e3ccc0d05d6bfbed",
           "page": 9,
           "cue": "Freagair",
           "context": "rma beathú bacphoill? (ii) Luaigh trí bhuntáiste le beathú bacphoill. (60 marc) Ceist 12. Freagair dhá chuid ar bith de (a), (b), (c), (d). (30 marc, 30 marc) (a) Rinne grúpa daltaí suirbhé ar na plandaí i seanfhéarach. (i) Liostaigh dhá fhiaile a d’fhéadfaidís a fháil san fhéarach. (ii) Ainmnigh fearas amháin a d’fhéadfaí a ú",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q12: two of four separately priced parts; retain all published internal tasks, not pairs of unrelated exam responses."
         }
       ]
     },

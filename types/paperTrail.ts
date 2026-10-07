@@ -79,6 +79,9 @@ export interface PaperAnswerQuestion {
    *  this additive field lets a later audit remove collision spillover or
    *  point the UI at the card's actual answer without mutating that identity. */
   schemeRegion?: PaperAnswerSeg[];
+  /** Reviewed discrepancy in the original paper/scheme. Display only with the
+   * revealed scheme; never silently repair the source PDF or expose an answer. */
+  schemeNote?: string;
   mode: 'crop' | 'pagejump';
   /** Confidence 0..1 (1 = clean crop; lower = degraded to page-jump). */
   conf: number;

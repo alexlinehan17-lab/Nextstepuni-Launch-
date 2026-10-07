@@ -150,8 +150,9 @@ export interface MarkRow {
     perOption: number;
     options: string[];
     /**
-     * Descending per-option values, where the scheme does not pay the same for
-     * every option claimed.
+     * Ordered per-option values, where the scheme does not pay the same for
+     * every option claimed. Preserve their printed order: Agricultural Science
+     * 2010 OL Q7 explicitly awards five 1s followed by five 3s.
      *
      * Economics is built on this: "Discuss two economic consequences" prices the
      * first at 6 and the second at 4, and it is the commonest tariff on the

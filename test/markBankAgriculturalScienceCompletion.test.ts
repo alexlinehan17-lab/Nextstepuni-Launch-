@@ -81,7 +81,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('preserves both 2010 Q3 options and all 62 independently reviewed legacy tasks', () => {
-    const legacy = cards.filter(card => card.year === 2010);
+    const legacy = cards.filter(card => card.year === 2010 && card.level === 'higher');
     expect(legacy).toHaveLength(62);
     expect(legacy.filter(card => card.questionRef.includes('Q3 Option One'))).toHaveLength(6);
     expect(legacy.filter(card => card.questionRef.includes('Q3 Option Two'))).toHaveLength(7);
@@ -113,6 +113,76 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
         const claims = Object.fromEntries(card.rows.map(row => [row.id, [0, 1]]));
         expect(marksClaimed(card, {}, claims)).toBe(marks);
       }
+    }
+  });
+
+  it('retains the 85 Ordinary tasks and the published totals, including the English Q12 discrepancy', () => {
+    const legacy = ordinary.filter(card => card.year === 2010);
+    expect(legacy).toHaveLength(85);
+    const totals: Record<string, number> = {};
+    for (const card of legacy) {
+      const question = card.questionRef.match(/Q(\d+)/)![1];
+      totals[question] = (totals[question] ?? 0) + card.totalMarks;
+      const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
+      expect(card.specificationId).toBe(specification.id);
+      for (const id of card.curriculumNodeIds!) expect(findCanonicalTopic(specification, id)).toBeDefined();
+    }
+    // Q12 contains all four alternatives, not a candidate's two-part exam
+    // total. Its English part (d) prints 28 marks despite the paper's 30.
+    expect(totals).toEqual({ 1:20, 2:20, 3:20, 4:20, 5:20, 6:20, 7:20, 8:60, 9:60, 10:60, 11:60, 12:118, 13:60 });
+    expect(get('agsci-2010-ol-q12aiii').tariffModel.kind).toBe('questionTotal');
+    expect(get('agsci-2010-ol-q12aiii').rows[0].marks).toBeNull();
+    expect(get('agsci-2010-ol-q12aiii').rows[0].contextNote).toContain('Any three points');
+    expect(get('agsci-2010-ol-q12dii').totalMarks).toBe(18);
+    expect(get('agsci-2010-ol-q12dii').rows[0].contextNote).toContain('28');
+  });
+
+  it('scores the unusual Ordinary tariffs in the order the scheme prints', () => {
+    const tf = get('agsci-2010-ol-q7');
+    const expected = [0,1,2,3,4,5,8,11,14,17,20];
+    for (let n = 0; n <= 10; n++) {
+      expect(marksClaimed(tf, {}, { 'r-1': Array.from({ length:n }, (_,i) => 9-i) })).toBe(expected[n]);
+    }
+    const plants = get('agsci-2010-ol-q5');
+    expect(marksClaimed(plants, {}, { 'r-1':[1,2,3,4,5,6] })).toBe(18);
+    expect(marksClaimed(plants, {}, { 'r-1':[0,1,2,3,4,5,6] })).toBe(20);
+    const sand = get('agsci-2010-ol-q1b');
+    const effective = { ...sand, rows:sand.answerVariants!.find(v => v.id === 'sand')!.rows };
+    expect(marksClaimed(effective, { 'r-1':'yes' }, { 'r-3':[4] })).toBe(9);
+    expect(marksClaimed(effective, { 'r-1':'yes', 'r-2':'yes' }, { 'r-3':[4] })).toBe(12);
+  });
+
+  it('keeps Ordinary source diagrams, complete genetic crosses and open method menus', () => {
+    for (const id of ['q6a','q10ai','q10bi','q13cii']) {
+      const card = get(`agsci-2010-ol-${id}`);
+      expect(card.kind).toBe('diagram');
+      expect(card.figure?.solution).not.toBe(true);
+      if (card.kind !== 'diagram') throw new Error('Expected a diagram card');
+      expect(card.labelKey.length).toBe(id === 'q13cii' ? 2 : 3);
+      expect(readFileSync(resolve(__dirname, `../public${card.figure!.src}`)).length).toBeGreaterThan(1000);
+    }
+    expect(get('agsci-2010-ol-q13bi').totalMarks).toBe(12);
+    expect(get('agsci-2010-ol-q13bii').totalMarks).toBe(21);
+    expect(get('agsci-2010-ol-q13bii').sourceMaterial?.pages).toEqual([10,11]);
+    expect(get('agsci-2010-ol-q8c').answerVariants).toHaveLength(6);
+    expect(get('agsci-2010-ol-q3a').rows[0].group?.options).toEqual(['Friesian','Jersey','Simmental']);
+  });
+
+  it('records edition-specific defects beside the unchanged original schemes', () => {
+    expect(review.paperReviews).toHaveLength(4);
+    for (const paper of review.paperReviews) {
+      expect(paper.wholePaperVisualReview).toBe('reviewed');
+      expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
+    }
+    const readMap = (fileid: string): PaperAnswerMap => JSON.parse(readFileSync(resolve(__dirname, `../public/paper-answers/2010/${fileid}.json`),'utf8'));
+    expect(readMap('LC024ALP000IV.pdf').q.find(q => q.n === '7')?.schemeNote).toContain('D/d');
+    const irish = readMap('LC024GLP000IV.pdf');
+    expect(irish.q.find(q => q.n === '6')?.schemeNote).toContain('Clóraplast');
+    expect(irish.q.find(q => q.n === '9')?.schemeNote).toContain('62');
+    expect(irish.q.find(q => q.n === '13')?.schemeNote).toContain('C/c');
+    expect(readMap('LC024GLP000EV.pdf').q.find(q => q.n === '12')?.schemeNote).toContain('28');
+    for (const fileid of ['LC024ALP000IV.pdf','LC024GLP000IV.pdf']) {
+      expect(preferredAnswersUrl('agricultural-science',2010,fileid,'old-storage')).toBe(`/paper-answers/2010/${fileid}.json`);
     }
   });
 
@@ -167,7 +237,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(70);
+    expect(atlas.markBankCards).toHaveLength(155);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

@@ -12,12 +12,17 @@
       2010,
       2026
     ],
-    "selectionCuesPendingClassification": 752,
-    "fullPaperAndSchemeSweepsCompleted": 1
+    "selectionCuesPendingClassification": 733,
+    "fullPaperAndSchemeSweepsCompleted": 4,
+    "distinctEnglishPaperSweepsCompleted": 2,
+    "irishEditionComparisonsCompleted": 2
   },
   "completedBatch": {
     "reviewedPapers": [
-      "2010 Higher English edition: all 8 paper pages and 14 scheme pages"
+      "2010 Higher English: 8 paper pages and 14 scheme pages",
+      "2010 Higher Irish: 8 paper pages and 12 scheme pages",
+      "2010 Ordinary English: 12 paper pages and 14 scheme pages",
+      "2010 Ordinary Irish: 12 paper pages and 13 scheme pages"
     ],
     "previousReviewedTasks": [
       "2022 OL Q2(b)(ii)",
@@ -25,16 +30,16 @@
       "2023 HL Q18(a)(i)",
       "2025 OL Q8(b)"
     ],
-    "addedMarkBankCards": 69,
-    "addedThisBatch": 62,
+    "addedMarkBankCards": 154,
+    "addedThisBatch": 85,
     "correctedMarkBankCards": 1,
-    "markBankCardsNow": 938,
+    "markBankCardsNow": 1023,
     "higherCards": 504,
-    "ordinaryCards": 434,
+    "ordinaryCards": 519,
     "originalCardIdsPreserved": 869,
-    "atlasPracticeCardsAdded": 70,
-    "atlasCardsNow": 528,
-    "priorAnchorsPreservedThisBatch": 71,
+    "atlasPracticeCardsAdded": 155,
+    "atlasCardsNow": 613,
+    "priorAnchorsPreservedThisBatch": 35,
     "oldWholeQuestionAnchorsUnchanged": 63,
     "obsoleteExclusionsResolved": 4,
     "legacyRoutes": {
@@ -44,32 +49,41 @@
     },
     "sourceImagesAdded": [
       "tooth longitudinal section",
-      "Punnett square"
+      "Punnett square",
+      "plant cell",
+      "sheep heart",
+      "cow reproductive system",
+      "mitosis metaphase"
     ],
-    "curriculum": "2010 cards resolve the existing registry by examination year; current practice-topic filters remain separate. Mixed tasks are discoverable under their additional assessed topics."
+    "curriculum": "2010 cards resolve the existing registry by examination year; current practice-topic filters remain separate. Mixed tasks are discoverable under their additional assessed topics.",
+    "priorAuthoredCardsUnchangedThisBatch": 938,
+    "editionDiscrepancies": "Irish Higher D/d versus B/b; Irish Ordinary chloroplast/chlorophyll wording, pasture-method instructions, Q9(f) and Q12 tariffs, and C/c versus E/e. Notes accompany original revealed schemes; English Q12(a)(iii) uses an unscored rubric because its point-count wording is inconsistent."
   },
   "verification": {
-    "targetedTestsPassed": 266,
+    "targetedTestsPassed": 271,
     "sourceReaderOpenCloseTestPassed": true,
-    "renderedCropReview": "2010 HL: all 49 distinct paper/scheme crop pairs and 2 solution images inspected. Crops corrected for split lines, missing scheme endings, displaced tariff columns and neighbouring text. Previous 4 distinct modern crop pairs retained.",
-    "cardBuild": "938 built, zero dropped",
+    "renderedCropReview": "2010 Ordinary: all 38 distinct paper crops and 61 distinct scheme crops inspected and corrected, plus 4 original diagram images. Prior 2010 Higher 49 crop pairs and 2 solution images retained. Every new Ordinary marking claim matches its specific cropped scheme text.",
+    "cardBuild": "1023 built, zero dropped",
     "generationChecks": [
       "agricultural_science_completion.py --check",
       "agricultural_science_atlas.py --check",
       "agricultural_science_inventory.py --check"
     ],
-    "testTypecheck": "Only the same 3 pre-existing programmeAnalytics errors; no new errors",
-    "applicationTypecheck": "Passed"
+    "testTypecheck": "Only the same 3 pre-existing programmeAnalytics errors at programmeAnalyticsClient.test.ts:32/56 and programmeAnalytics.ts:50; no new errors.",
+    "applicationTypecheck": "Passed",
+    "targetedSuitesPassed": 9,
+    "schemeNoteRevealHideTestPassed": true
   },
   "remaining": [
-    "Visually sweep the remaining 33 English papers and matching schemes; check Irish editions for parity and all source changes. 2010 Higher English is reviewed; its Irish edition and phone/desktop runtime review remain open.",
-    "Author the remaining 2010 Ordinary, 2011\u20132020 and 2026 tasks; recheck all 2021\u20132025 boundaries, wording, marks, source context, topic assignments and finite choices.",
-    "Classify every raw selection directive, with mechanical expansion of genuine closed pools and written reasons for non-expansions.",
-    "Repair the generic legacy-paper census and reconcile the new 2010 HL manual boundaries before treating its provisional denominator as evidence. Original parser flags and 2021 OL Q17 orphan candidates remain; new legacy refs need explicit option-aware matching.",
-    "Extend reviewed task parity into Topic Atlas for the entire corpus and preserve all old identities and question crops.",
-    "Check the drawing/source-page experience for every affected task and perform final phone/desktop runtime QA.",
-    "Keep preservation hashes and coverage baseline frozen until independent sweep, zero-open/zero-orphan reconciliation and regression gates all pass.",
-    "Review changes for integration with the other terminals. No commit from this worktree has been merged or published."
+    "Independently sweep the remaining 32 English papers and matching schemes; compare the remaining 32 Irish editions. Four complete edition sweeps are recorded for 2010; this does not establish corpus-wide completeness.",
+    "Author 2011–2020 and 2026 tasks; recheck all 2021–2025 boundaries, wording, marks, source context, topic assignments and finite choices.",
+    "Classify all 733 pending raw selection directives, with mechanical expansion of genuine closed pools and written reasons for non-expansions.",
+    "Repair the generic legacy-paper census and reconcile the manual 2010 Higher and Ordinary task ledgers. Original parser flags and the 2021 OL Q17 orphan candidates remain; option-aware task joins are needed.",
+    "Bind the reviewed 2010 Irish practice tasks to their actual paper/scheme crops without duplicating English Mark Bank identities. Parent readers now show edition-specific source notes; Irish task-level Atlas mappings are still open.",
+    "Extend reviewed Mark Bank/Topic Atlas parity through the rest of the corpus and preserve all existing identities and crops.",
+    "Perform phone/desktop runtime QA of reviewed cards, figures, source readers, marking variants and source notes.",
+    "Keep preservation hashes and coverage baseline frozen until the independent sweep, zero-open/zero-orphan reconciliation and regression gates pass.",
+    "Review integration with the other terminals. Changes remain on the isolated branch; nothing is merged or published."
   ],
-  "nextAction": "Check 2010 Higher Irish-paper parity, then independently inspect the complete 2010 Ordinary paper and scheme before authoring. Repair reconciliation against the new 2010 HL manual task ledger. Keep the full goal active and the original preservation hashes frozen."
+  "nextAction": "Complete 2010 Irish task-level Atlas crop bindings and runtime QA; reconcile the 2010 manual ledgers, then independently sweep 2011 Higher. Keep the full goal active and the original preservation hashes frozen."
 }

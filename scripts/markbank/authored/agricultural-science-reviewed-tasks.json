@@ -70,7 +70,92 @@
     "agsci-2010-hl-q9b",
     "agsci-2010-hl-q9c",
     "agsci-2010-hl-q9d",
-    "agsci-2010-hl-q9e"
+    "agsci-2010-hl-q9e",
+    "agsci-2010-ol-q1a",
+    "agsci-2010-ol-q1b",
+    "agsci-2010-ol-q1c",
+    "agsci-2010-ol-q2-2",
+    "agsci-2010-ol-q2-3",
+    "agsci-2010-ol-q2-4",
+    "agsci-2010-ol-q2-5",
+    "agsci-2010-ol-q2-6",
+    "agsci-2010-ol-q3a",
+    "agsci-2010-ol-q3b",
+    "agsci-2010-ol-q3c-lactation",
+    "agsci-2010-ol-q3c-colostrum",
+    "agsci-2010-ol-q3d",
+    "agsci-2010-ol-q4-mastitis",
+    "agsci-2010-ol-q4-swine-fever",
+    "agsci-2010-ol-q4-brucellosis",
+    "agsci-2010-ol-q4-liver-fluke",
+    "agsci-2010-ol-q4-tuberculosis",
+    "agsci-2010-ol-q5",
+    "agsci-2010-ol-q6a",
+    "agsci-2010-ol-q6b",
+    "agsci-2010-ol-q6c",
+    "agsci-2010-ol-q7",
+    "agsci-2010-ol-q8ai",
+    "agsci-2010-ol-q8aii-strip",
+    "agsci-2010-ol-q8aii-paddock",
+    "agsci-2010-ol-q8aiii-strip-advantage",
+    "agsci-2010-ol-q8aiii-strip-disadvantage",
+    "agsci-2010-ol-q8aiii-paddock-advantage",
+    "agsci-2010-ol-q8aiii-paddock-disadvantage",
+    "agsci-2010-ol-q8aiv",
+    "agsci-2010-ol-q8bi",
+    "agsci-2010-ol-q8bii",
+    "agsci-2010-ol-q8c",
+    "agsci-2010-ol-q8d-tillering",
+    "agsci-2010-ol-q8d-topping",
+    "agsci-2010-ol-q9a",
+    "agsci-2010-ol-q9b",
+    "agsci-2010-ol-q9c",
+    "agsci-2010-ol-q9d",
+    "agsci-2010-ol-q9ei",
+    "agsci-2010-ol-q9eii",
+    "agsci-2010-ol-q9eiii",
+    "agsci-2010-ol-q9eiv",
+    "agsci-2010-ol-q9ev",
+    "agsci-2010-ol-q9evi",
+    "agsci-2010-ol-q9f",
+    "agsci-2010-ol-q10ai",
+    "agsci-2010-ol-q10aii",
+    "agsci-2010-ol-q10aiii",
+    "agsci-2010-ol-q10aiv",
+    "agsci-2010-ol-q10av",
+    "agsci-2010-ol-q10bi",
+    "agsci-2010-ol-q10bii",
+    "agsci-2010-ol-q10biii",
+    "agsci-2010-ol-q10biv",
+    "agsci-2010-ol-q10bv",
+    "agsci-2010-ol-q11ai",
+    "agsci-2010-ol-q11aii",
+    "agsci-2010-ol-q11aiii",
+    "agsci-2010-ol-q11aiv",
+    "agsci-2010-ol-q11bi",
+    "agsci-2010-ol-q11bii",
+    "agsci-2010-ol-q11biii-feeding",
+    "agsci-2010-ol-q11biii-management",
+    "agsci-2010-ol-q11ci",
+    "agsci-2010-ol-q11cii",
+    "agsci-2010-ol-q12ai",
+    "agsci-2010-ol-q12aii",
+    "agsci-2010-ol-q12aiii",
+    "agsci-2010-ol-q12bi",
+    "agsci-2010-ol-q12bii",
+    "agsci-2010-ol-q12biii",
+    "agsci-2010-ol-q12biv",
+    "agsci-2010-ol-q12ci",
+    "agsci-2010-ol-q12cii",
+    "agsci-2010-ol-q12ciii",
+    "agsci-2010-ol-q12di-germination",
+    "agsci-2010-ol-q12di-establishment",
+    "agsci-2010-ol-q12dii",
+    "agsci-2010-ol-q13a",
+    "agsci-2010-ol-q13bi",
+    "agsci-2010-ol-q13bii",
+    "agsci-2010-ol-q13ci",
+    "agsci-2010-ol-q13cii"
   ],
   "correctedCardIds": [
     "agsci-2025-ol-q8b"
@@ -2991,6 +3076,3981 @@
         "agricultural-science-higher-crop-production"
       ],
       "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 OL Q1(a)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.284,
+            1,
+            0.748
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.115,
+            1,
+            0.163
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q1a": "1001"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q1a"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q1(b)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.736,
+            1,
+            0.851
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.176,
+            1,
+            0.216
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q1b": "1002"
+      },
+      "selection": {
+        "kind": "open",
+        "reason": "No finite list of particle types is printed in the question."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q1b"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q1(c)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.875,
+            1,
+            0.951
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.23,
+            1,
+            0.264
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q1c": "1003"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q1c"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q2 — activity 2",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.38
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.311,
+            1,
+            0.456
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q2-2": "1004"
+      },
+      "selection": {
+        "kind": "answer-identification",
+        "reason": "One correct activity-machine match. The machine list is a bank of possible answers, not arbitrary permitted routes."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q2-2"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q2 — activity 3",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.38
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.311,
+            1,
+            0.456
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q2-3": "1005"
+      },
+      "selection": {
+        "kind": "answer-identification",
+        "reason": "One correct activity-machine match. The machine list is a bank of possible answers, not arbitrary permitted routes."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q2-3"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q2 — activity 4",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.38
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.311,
+            1,
+            0.456
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q2-4": "1006"
+      },
+      "selection": {
+        "kind": "answer-identification",
+        "reason": "One correct activity-machine match. The machine list is a bank of possible answers, not arbitrary permitted routes."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q2-4"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q2 — activity 5",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.38
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.311,
+            1,
+            0.456
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q2-5": "1007"
+      },
+      "selection": {
+        "kind": "answer-identification",
+        "reason": "One correct activity-machine match. The machine list is a bank of possible answers, not arbitrary permitted routes."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q2-5"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q2 — activity 6",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.38
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.311,
+            1,
+            0.456
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q2-6": "1008"
+      },
+      "selection": {
+        "kind": "answer-identification",
+        "reason": "One correct activity-machine match. The machine list is a bank of possible answers, not arbitrary permitted routes."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q2-6"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q3(a)",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.4,
+            1,
+            0.585
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.5,
+            1,
+            0.543
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q3a": "1009"
+      },
+      "selection": {
+        "kind": "answer-identification",
+        "reason": "Identify correct dairy breeds; incorrect pairs are not finite practice routes."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q3a"
+      ],
+      "marksPerRoute": 2,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q3(b)",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.61,
+            1,
+            0.732
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.543,
+            1,
+            0.634
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q3b": "1010"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q3b"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q3(c) — lactation",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.741,
+            1,
+            0.84
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.637,
+            1,
+            0.7
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q3c-lactation": "1011"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q3c-lactation"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q3(c) — colostrum",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.741,
+            1,
+            0.84
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.637,
+            1,
+            0.7
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q3c-colostrum": "1012"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q3c-colostrum"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q3(d)",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.84,
+            1,
+            0.922
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.71,
+            1,
+            0.742
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q3d": "1013"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q3d"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q4 — Mastitis",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.25
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.18
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q4-mastitis": "1014"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q4-mastitis"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q4 — Swine fever",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.25
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.18
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q4-swine-fever": "1015"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q4-swine-fever"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q4 — Brucellosis",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.25
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.18
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q4-brucellosis": "1016"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q4-brucellosis"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q4 — Liverfluke",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.25
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.18
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q4-liver-fluke": "1017"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q4-liver-fluke"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q4 — Tuberculosis (TB)",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.25
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.18
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q4-tuberculosis": "1018"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q4-tuberculosis"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q5",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.268,
+            1,
+            0.94
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.223,
+            1,
+            0.363
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q5": "1019"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q5"
+      ],
+      "marksPerRoute": 20,
+      "examTopicIds": [
+        "agricultural-science-ordinary-classification-of-organisms",
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q6(a)",
+      "paperPage": 5,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.057,
+            1,
+            0.336
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.397,
+            1,
+            0.499
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q6a": "1020"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q6a"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-ordinary-plant-physiology"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q6(b)",
+      "paperPage": 5,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.35,
+            1,
+            0.42
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.397,
+            1,
+            0.499
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q6b": "1021"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q6b"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-plant-physiology"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q6(c)",
+      "paperPage": 5,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.35,
+            1,
+            0.485
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.397,
+            1,
+            0.499
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q6c": "1022"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q6c"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-plant-physiology"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q7",
+      "paperPage": 5,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.488,
+            1,
+            0.946
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.535,
+            1,
+            0.868
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q7": "1023"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q7"
+      ],
+      "marksPerRoute": 20,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production",
+        "agricultural-science-ordinary-plant-physiology",
+        "agricultural-science-ordinary-animal-physiology",
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-animal-diseases",
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(a)(i)",
+      "paperPage": 6,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.086,
+            1,
+            0.167
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8ai": "1024"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8ai"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(a)(ii) — strip",
+      "paperPage": 6,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.173,
+            1,
+            0.235
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8aii-strip": "1025"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8aii-strip"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(a)(ii) — paddock",
+      "paperPage": 6,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.241,
+            1,
+            0.311
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8aii-paddock": "1026"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8aii-paddock"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(a)(iii) — strip advantage",
+      "paperPage": 6,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.313,
+            1,
+            0.395
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8aiii-strip-advantage": "1027"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8aiii-strip-advantage"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(a)(iii) — strip disadvantage",
+      "paperPage": 6,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.399,
+            1,
+            0.431
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8aiii-strip-disadvantage": "1028"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8aiii-strip-disadvantage"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(a)(iii) — paddock advantage",
+      "paperPage": 6,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.436,
+            1,
+            0.516
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8aiii-paddock-advantage": "1029"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8aiii-paddock-advantage"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(a)(iii) — paddock disadvantage",
+      "paperPage": 6,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.519,
+            1,
+            0.57
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8aiii-paddock-disadvantage": "1030"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8aiii-paddock-disadvantage"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(a)(iv)",
+      "paperPage": 6,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.574,
+            1,
+            0.625
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8aiv": "1031"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8aiv"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(b)(i)",
+      "paperPage": 6,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.691,
+            1,
+            0.744
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.685,
+            1,
+            0.72
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8bi": "1032"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8bi"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(b)(ii)",
+      "paperPage": 6,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.691,
+            1,
+            0.744
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.722,
+            1,
+            0.787
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8bii": "1033"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8bii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(c)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.756,
+            1,
+            0.793
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.048,
+            1,
+            0.348
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8c": "1034"
+      },
+      "selection": {
+        "kind": "open",
+        "reason": "The question names no finite method pool. The printed scheme methods are alternative marking menus on one practice task; the two slurry sequences stay separate."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8c"
+      ],
+      "marksPerRoute": 9,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(d) — tillering",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.805,
+            1,
+            0.87
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.38,
+            1,
+            0.417
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8d-tillering": "1035"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8d-tillering"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q8(d) — topping",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.805,
+            1,
+            0.87
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.414,
+            1,
+            0.467
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q8d-topping": "1036"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q8d-topping"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(a)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.166
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.051,
+            1,
+            0.106
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9a": "1037"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9a"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(b)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.184,
+            1,
+            0.215
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.105,
+            1,
+            0.168
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9b": "1038"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9b"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(c)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.265
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.176,
+            1,
+            0.203
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9c": "1039"
+      },
+      "selection": {
+        "kind": "open",
+        "reason": "Open crop categories. No finite pool of crop names is printed; examples are non-exhaustive."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9c"
+      ],
+      "marksPerRoute": 2,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(d)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.315
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.21,
+            1,
+            0.238
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9d": "1040"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9d"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production",
+        "agricultural-science-ordinary-fertilisers-pollution-the-environment"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(e)(i)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.265
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.331,
+            1,
+            0.51
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.241,
+            1,
+            0.273
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.276,
+            1,
+            0.307
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.601,
+            1,
+            0.629
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9ei": "1041"
+      },
+      "selection": {
+        "kind": "required-heading",
+        "reason": "One of six required, separately priced cultivation headings. Crop choice is open; scheme examples remain marking variants."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9ei"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(e)(ii)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.265
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.331,
+            1,
+            0.51
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.241,
+            1,
+            0.273
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.309,
+            1,
+            0.34
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.631,
+            1,
+            0.658
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9eii": "1042"
+      },
+      "selection": {
+        "kind": "required-heading",
+        "reason": "One of six required, separately priced cultivation headings. Crop choice is open; scheme examples remain marking variants."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9eii"
+      ],
+      "marksPerRoute": 2,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(e)(iii)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.265
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.331,
+            1,
+            0.51
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.241,
+            1,
+            0.273
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.343,
+            1,
+            0.374
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.66,
+            1,
+            0.687
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9eiii": "1043"
+      },
+      "selection": {
+        "kind": "required-heading",
+        "reason": "One of six required, separately priced cultivation headings. Crop choice is open; scheme examples remain marking variants."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9eiii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(e)(iv)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.265
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.331,
+            1,
+            0.51
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.241,
+            1,
+            0.273
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.377,
+            1,
+            0.408
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.69,
+            1,
+            0.717
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9eiv": "1044"
+      },
+      "selection": {
+        "kind": "required-heading",
+        "reason": "One of six required, separately priced cultivation headings. Crop choice is open; scheme examples remain marking variants."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9eiv"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(e)(v)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.265
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.331,
+            1,
+            0.51
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.241,
+            1,
+            0.273
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.411,
+            1,
+            0.472
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.719,
+            1,
+            0.746
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9ev": "1045"
+      },
+      "selection": {
+        "kind": "required-heading",
+        "reason": "One of six required, separately priced cultivation headings. Crop choice is open; scheme examples remain marking variants."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9ev"
+      ],
+      "marksPerRoute": 2,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(e)(vi)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.233,
+            1,
+            0.265
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.331,
+            1,
+            0.51
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.241,
+            1,
+            0.273
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.474,
+            1,
+            0.535
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.749,
+            1,
+            0.777
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9evi": "1046"
+      },
+      "selection": {
+        "kind": "required-heading",
+        "reason": "One of six required, separately priced cultivation headings. Crop choice is open; scheme examples remain marking variants."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9evi"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q9(f)",
+      "paperPage": 7,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.07,
+            1,
+            0.115
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.52,
+            1,
+            0.552
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.774,
+            1,
+            0.882
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q9f": "1047"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q9f"
+      ],
+      "marksPerRoute": 18,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science",
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q10(a)(i)",
+      "paperPage": 8,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.042,
+            1,
+            0.446
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.08
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.11,
+            1,
+            0.138
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q10ai": "1048"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q10ai"
+      ],
+      "marksPerRoute": 9,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q10(a)(ii)",
+      "paperPage": 8,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.042,
+            1,
+            0.446
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.08
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.14,
+            1,
+            0.167
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q10aii": "1049"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q10aii"
+      ],
+      "marksPerRoute": 9,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q10(a)(iii)",
+      "paperPage": 8,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.042,
+            1,
+            0.446
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.08
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.168,
+            1,
+            0.196
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q10aiii": "1050"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q10aiii"
+      ],
+      "marksPerRoute": 9,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q10(a)(iv)",
+      "paperPage": 8,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.042,
+            1,
+            0.446
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.08
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.198,
+            1,
+            0.225
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q10aiv": "1051"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q10aiv"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q10(a)(v)",
+      "paperPage": 8,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.042,
+            1,
+            0.446
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.08
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.227,
+            1,
+            0.255
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q10av": "1052"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q10av"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases",
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q10(b)(i)",
+      "paperPage": 8,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.449,
+            1,
+            0.925
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.08
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.257,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q10bi": "1053"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q10bi"
+      ],
+      "marksPerRoute": 9,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q10(b)(ii)",
+      "paperPage": 8,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.449,
+            1,
+            0.925
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.08
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.315,
+            1,
+            0.36
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q10bii": "1054"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q10bii"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q10(b)(iii)",
+      "paperPage": 8,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.449,
+            1,
+            0.925
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.08
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.362,
+            1,
+            0.429
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q10biii": "1055"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q10biii"
+      ],
+      "marksPerRoute": 9,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q10(b)(iv)",
+      "paperPage": 8,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.449,
+            1,
+            0.925
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.08
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.43,
+            1,
+            0.457
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q10biv": "1056"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q10biv"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-genetics"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q10(b)(v)",
+      "paperPage": 8,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.449,
+            1,
+            0.925
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.08
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.459,
+            1,
+            0.526
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q10bv": "1057"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q10bv"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-genetics"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q11(a)(i)",
+      "paperPage": 9,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.075,
+            1,
+            0.177
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.051,
+            1,
+            0.091
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q11ai": "1058"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q11ai"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q11(a)(ii)",
+      "paperPage": 9,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.075,
+            1,
+            0.177
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.098,
+            1,
+            0.163
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q11aii": "1059"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q11aii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q11(a)(iii)",
+      "paperPage": 9,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.075,
+            1,
+            0.177
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.174,
+            1,
+            0.199
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q11aiii": "1060"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q11aiii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q11(a)(iv)",
+      "paperPage": 9,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.075,
+            1,
+            0.177
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.21,
+            1,
+            0.266
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q11aiv": "1061"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q11aiv"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q11(b)(i)",
+      "paperPage": 9,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.276
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.299,
+            1,
+            0.524
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q11bi": "1062"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q11bi"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q11(b)(ii)",
+      "paperPage": 9,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.276
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.299,
+            1,
+            0.524
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q11bii": "1063"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q11bii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q11(b)(iii) — feeding",
+      "paperPage": 9,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.276
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.299,
+            1,
+            0.524
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q11biii-feeding": "1064"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q11biii-feeding"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q11(b)(iii) — management",
+      "paperPage": 9,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.276
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.299,
+            1,
+            0.524
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q11biii-management": "1065"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q11biii-management"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q11(c)(i)",
+      "paperPage": 9,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.283,
+            1,
+            0.36
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.564,
+            1,
+            0.67
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q11ci": "1066"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q11ci"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q11(c)(ii)",
+      "paperPage": 9,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.283,
+            1,
+            0.36
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.564,
+            1,
+            0.67
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q11cii": "1067"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q11cii"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(a)(i)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.45,
+            1,
+            0.552
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.049,
+            1,
+            0.108
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12ai": "1068"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12ai"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-ordinary-classification-of-organisms",
+        "agricultural-science-ordinary-grassland"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(a)(ii)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.45,
+            1,
+            0.552
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.12,
+            1,
+            0.143
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12aii": "1069"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12aii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(a)(iii)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.45,
+            1,
+            0.552
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.12,
+            1,
+            0.201
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12aiii": "1070"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12aiii"
+      ],
+      "marksPerRoute": 18,
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly.",
+      "schemeNote": "For Q12(a)(iii), the English scheme says “Any three points” but prints four awards, 4 + 4 + 4 + 6. The Irish scheme says four points. The printed total is 18; the English wording does not define an unambiguous automatic part-score."
+    },
+    {
+      "questionRef": "2010 OL Q12(b)(i)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.563,
+            1,
+            0.739
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.215,
+            1,
+            0.391
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12bi": "1071"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12bi"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(b)(ii)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.563,
+            1,
+            0.739
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.215,
+            1,
+            0.391
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12bii": "1072"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12bii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(b)(iii)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.563,
+            1,
+            0.739
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.215,
+            1,
+            0.391
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12biii": "1073"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12biii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(b)(iv)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.563,
+            1,
+            0.739
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.215,
+            1,
+            0.391
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12biv": "1074"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12biv"
+      ],
+      "marksPerRoute": 14,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(c)(i)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.745,
+            1,
+            0.834
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.42,
+            1,
+            0.586
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12ci": "1075"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12ci"
+      ],
+      "marksPerRoute": 14,
+      "examTopicIds": [
+        "agricultural-science-ordinary-fertilisers-pollution-the-environment"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(c)(ii)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.745,
+            1,
+            0.834
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.42,
+            1,
+            0.586
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12cii": "1076"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12cii"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-ordinary-fertilisers-pollution-the-environment"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(c)(iii)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.745,
+            1,
+            0.834
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.42,
+            1,
+            0.586
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12ciii": "1077"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12ciii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-fertilisers-pollution-the-environment"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(d)(i) — germination",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.84,
+            1,
+            0.916
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.607,
+            1,
+            0.758
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12di-germination": "1078"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12di-germination"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-plant-physiology"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(d)(i) — establishment",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.84,
+            1,
+            0.916
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.607,
+            1,
+            0.758
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12di-establishment": "1079"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12di-establishment"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-plant-physiology"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q12(d)(ii)",
+      "paperPage": 9,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.84,
+            1,
+            0.916
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.607,
+            1,
+            0.758
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q12dii": "1080"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q12dii"
+      ],
+      "marksPerRoute": 18,
+      "examTopicIds": [
+        "agricultural-science-ordinary-plant-physiology",
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly.",
+      "schemeNote": "For Q12(d)(ii), the English scheme prints 4 + 4 + 4 + 6 (18 marks), making its Q12(d) allocations total 28 despite the paper’s 30 marks. The Irish scheme instead prints 4 + 4 + 6 + 6 (20). This card retains the English scheme’s printed allocation."
+    },
+    {
+      "questionRef": "2010 OL Q13(a)",
+      "paperPage": 10,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.074,
+            1,
+            0.426
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.047,
+            1,
+            0.294
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q13a": "1081"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q13a"
+      ],
+      "marksPerRoute": 18,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q13(b)(i)",
+      "paperPage": 10,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.45,
+            1,
+            0.807
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.047,
+            1,
+            0.108
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.318,
+            1,
+            0.464
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q13bi": "1082"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q13bi"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q13(b)(ii)",
+      "paperPage": 10,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.574,
+            1,
+            0.604
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.04,
+            1,
+            0.306
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.047,
+            1,
+            0.108
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.318,
+            1,
+            0.464
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q13bii": "1083"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q13bii"
+      ],
+      "marksPerRoute": 21,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q13(c)(i)",
+      "paperPage": 11,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.35,
+            1,
+            0.389
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.047,
+            1,
+            0.108
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.484,
+            1,
+            0.561
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q13ci": "1084"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q13ci"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
+    },
+    {
+      "questionRef": "2010 OL Q13(c)(ii)",
+      "paperPage": 11,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.389,
+            1,
+            0.701
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.047,
+            1,
+            0.108
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.484,
+            1,
+            0.561
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-ol-q13cii": "1085"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "Required response; no finite optional pool is printed. Scheme alternatives are accepted answers."
+      },
+      "cardIds": [
+        "agsci-2010-ol-q13cii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "evidence": "Full 12-page paper and 14-page English scheme visually inspected, with all 12 Irish paper and 13 Irish scheme pages compared. Boundaries follow the published tariff; edition discrepancies are recorded explicitly."
     }
   ],
   "paperReviews": [
@@ -3133,8 +7193,435 @@
       },
       "independentBoundaryReview": "62 practice cards; all published tasks retained. Descending awards stay together. Internal finite choices use 2, 4 and 4 routes. Candidate examination totals must not sum all mutually exclusive routes.",
       "remaining": [
-        "Irish-language edition parity",
+        "Irish practice-task crop bindings",
         "Phone/desktop runtime review",
+        "Corpus-wide reconciliation"
+      ]
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "hashes": {
+        "exampapers": "4ee8be5bf23d55308b3d08007dad8c0a181c2e7a6cad0e501c4385272fa7e6f0",
+        "markingschemes": "42dbd3ca25728ba373226b63a9c1224137705d62fd62a8516faf261a76879ef6"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "selectionDirectives": [
+        {
+          "id": "29def7c97b161e02",
+          "page": 2,
+          "cue": "any six",
+          "context": "___________________________________________________________________ Instructions  Answer any six questions. Each question carries 20 marks.  Write your answers in the spaces provided.  Keep your answers short.  Write your examination number in the space provided on page 1. _________________________________________________",
+          "classification": "exam-selection",
+          "reason": "Section One chooses six independent questions from seven. Keep every question and its separately marked tasks."
+        },
+        {
+          "id": "9e05e2d781e4192b",
+          "page": 2,
+          "cue": "any two",
+          "context": "____________________________ (b) Soil includes different types of mineral particles. List any two of these particle types. (i) __________________________________________________________________________ (ii) __________________________________________________________________________ (c) Give one example of an organism that is o",
+          "classification": "open",
+          "reason": "Q1(b) asks for two particle types without printing a finite response pool."
+        },
+        {
+          "id": "096d6a8d92e9ae3a",
+          "page": 3,
+          "cue": "Choose",
+          "context": "Page 3 of 12 Question 2. Many agricultural activities require the use of farm machinery. Choose a machine from the list below and match it to an activity listed in the table. The first one has been completed as an example. A. Elevator digger D. Subsoiler B. Combine drill E. Round baler C. Rotary tedder F. Combine harvester ",
+          "classification": "answer-identification",
+          "reason": "Q2 is a correct matching exercise, not permission to choose any machine for any activity. Each numbered activity has its own 4-mark boundary."
+        },
+        {
+          "id": "084adf88d05ad6d7",
+          "page": 3,
+          "cue": "Choose",
+          "context": "rvesting potatoes 5. Sowing seed 6. Breaking up compacted soil (20 marks) Question 3. (a) Choose two dairy breeds from the following list of cattle breeds: Charolais Friesian Simmental Jersey Hereford Dairy breed 1. _______________________________________________________________________ Dairy breed 2. _______________________",
+          "classification": "answer-identification",
+          "reason": "Q3(a) asks for dairy breeds, not arbitrary pairs. The scheme accepts Friesian, Jersey and Simmental; retain that accepted-answer menu, not incorrect pairs."
+        },
+        {
+          "id": "4c69141559e88904",
+          "page": 6,
+          "cue": "any three",
+          "context": "wo (180 marks) Instructions Write your answers to Section Two in your answer book. Answer any three questions. Each question carries 60 marks. ___________________________________ Question 8. (a) The following diagrams show two grazing systems used in Ireland. (i) Identify each grazing system. (ii) Explain how each of the grazin",
+          "classification": "exam-selection",
+          "reason": "Section Two chooses three independent questions from six. All six are reviewed."
+        },
+        {
+          "id": "08cde5d09c3bc6a3",
+          "page": 9,
+          "cue": "any two",
+          "context": "feeding mean? (ii) Give three advantages of creep feeding. (60 marks) Question 12. Answer any two parts from (a), (b), (c), (d) (30 marks, 30 marks) (a) A group of students carried out a survey of plants in an old pasture. (i) List two weeds they might find in the pasture. (ii) Name one piece of equipment that could be used i",
+          "classification": "independent-task-selection",
+          "reason": "Q12 chooses two separately priced parts from four. All published internal tasks remain independently practicable; pairs of unrelated exam responses are not new tasks."
+        },
+        {
+          "id": "360c0ec99a2f2cf9",
+          "page": 11,
+          "cue": "One of",
+          "context": "Page 11 of 12 (ii) One of the offspring of the above cross is then crossed with another pure-breeding pig with erect ears. Copy the following into your answerbook and complete the cross by filling in the spaces to show the possible gametes, genotypes and ",
+          "classification": "not-selection",
+          "reason": "Q13(b)(ii): one of the offspring describes the cross, whose F1 offspring all have genotype Ee. It is not a finite answer-route choice."
+        },
+        {
+          "id": "d5203138e657084c",
+          "page": 11,
+          "cue": "one of",
+          "context": " offspring ( ) ( ) The phenotype of the offspring ____________________ (c) (i) Mitosis is one of the two types of cell division. Name the other type of cell division. (ii) The diagram shows the metaphase stage of mitosis. Name the parts of the diagram labelled L and M. (60 marks) L M",
+          "classification": "answer-identification",
+          "reason": "Q13(c)(i): identify the other type of cell division. This is not an optional choice of which type to discuss."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 7,
+          "wording": "a root crop or a cereal crop",
+          "classification": "open",
+          "reason": "Q9(c) offers open crop categories, not a finite list of named crops. Potato and barley are illustrative scheme routes, not mandatory answer choices."
+        },
+        {
+          "page": 7,
+          "wording": "under the following headings:",
+          "classification": "required-headings",
+          "reason": "All six cultivation headings are required. They split at their own published marks, without expanding combinations."
+        },
+        {
+          "page": 10,
+          "wording": "match the words from the list below",
+          "classification": "answer-identification",
+          "reason": "All six genetic terms must be correctly matched to the passage. Permuting them creates incorrect answers, not permitted examination routes."
+        },
+        {
+          "page": 5,
+          "wording": "TRUE or FALSE",
+          "classification": "answer-identification",
+          "reason": "Ten statements have definite answers. The shared 5(1)+5(3) tariff must remain together; it cannot be assigned to individual letters."
+        }
+      ],
+      "sourceNotes": [
+        {
+          "questionN": "12",
+          "questionRef": "Q12(a)(iii)",
+          "paperPage": 9,
+          "schemePage": 12,
+          "note": "For Q12(a)(iii), the English scheme says “Any three points” but prints four awards, 4 + 4 + 4 + 6. The Irish scheme says four points. The printed total is 18; the English wording does not define an unambiguous automatic part-score."
+        },
+        {
+          "questionN": "12",
+          "questionRef": "Q12(d)(ii)",
+          "paperPage": 9,
+          "schemePage": 12,
+          "note": "For Q12(d)(ii), the English scheme prints 4 + 4 + 4 + 6 (18 marks), making its Q12(d) allocations total 28 despite the paper’s 30 marks. The Irish scheme instead prints 4 + 4 + 6 + 6 (20). This card retains the English scheme’s printed allocation."
+        }
+      ],
+      "independentBoundaryReview": "All 13 questions read independently against the original scheme. Matching rows with separate activity labels are split; diagram-label sets remain one response. Shared Q5/Q7 tariffs stay together. Q12(a)(iii) has conflicting printed point-count instructions and retains a question-total rubric.",
+      "cropVisualReview": "All distinct paper and scheme crops rendered and inspected; source diagrams checked separately. Shared scheme blocks preserve close-set lines and common tariffs.",
+      "remaining": [
+        "Phone/desktop runtime review",
+        "Corpus-wide reconciliation"
+      ]
+    },
+    {
+      "year": 2010,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "hashes": {
+        "exampapers": "a70bf69bcd6b598cf3d258105870afeb54fa52c3ec637d8d8a0212f113837042",
+        "markingschemes": "461837ea374e65d3a33802131ba9b476dea93ec3d3e48a93753f27f3bf220248"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "selectionDirectives": [
+        {
+          "id": "1596f9b705b57549",
+          "page": 2,
+          "cue": "Freagair",
+          "context": "Lch 2 de 8 SÉ CHEIST LE FREAGAIRT 1. Freagair sé cinn ar bith díobh seo a leanas: (a) Aithnítear plandaí áirithe mar speicis tháscacha. Mínigh an téarma speicis tháscacha. Mol dhá speiceas tháscacha agus na dálaí ina bhfaightear gach ceann díobh. (b) Tarraing léaráid lipéada",
+          "classification": "independent-task-selection",
+          "reason": "Q1: select six separately priced tasks; all ten and the internal Q1(d) boundary correspond to the English ledger."
+        },
+        {
+          "id": "8c8365cdbc2b1501",
+          "page": 3,
+          "cue": "dhá cheann",
+          "context": "ar san earrach. (48 marc) 4. Déan cur síos ar mhodh saotharlainne nó ar mhodh páirce chun dhá cheann ar bith díobh seo a dhéanamh amach: (a) Uigeacht sampla ithreach atá fliuch. (b) Líon na gcuiteog i bhféarach. (c) Ráta trasghalaithe planda. (d) Díleáiteacht eorna rollta i gcomparáid le láneorna agus ba á mbeathú orthu. (48 mar",
+          "classification": "independent-task-selection",
+          "reason": "Q4: select two independently priced experiments; all four are represented by the English ledger."
+        },
+        {
+          "id": "d8d42a0d3d699fb6",
+          "page": 4,
+          "cue": "trí cinn",
+          "context": " cur síos ar conas a ríomhfá an meáchan 1000 gráinne de ghránach. (48 marc) 7. (a) Mínigh trí cinn de na téarmaí seo a leanas: (i) riocht an tseascacháin (ii) déghnéasach (iii) roghnú saorga (iv) ainmhí ginealaigh. (b) I muca guine tá an ailléil don chóta dubh (D) ceannasach ar an ailléil don chóta donn (d). Saolaíodh ál ocht ",
+          "classification": "closed",
+          "reason": "Q7(a): the same three-of-four genetics terms as English; four complete routes."
+        },
+        {
+          "id": "df55007fddb4691c",
+          "page": 5,
+          "cue": "Freagair",
+          "context": "Lch 5 de 8 8. Freagair dhá cheann ar bith díobh seo a leanas (a), (b), (c). (a) I gcomhthéacs táirgeadh uan ramhar, déan plé ar an ráiteas “déanann an chaora cúram den chainníocht agus déanann an reithe cúram den cháilíocht”. (b) Déan cur síos achomair",
+          "classification": "independent-task-selection",
+          "reason": "Q8: select two independent 24-mark tasks. Q8(c) has its own internal three-of-four routes."
+        },
+        {
+          "id": "4e757ccca4f2d193",
+          "page": 5,
+          "cue": "dhá cheann",
+          "context": "Lch 5 de 8 8. Freagair dhá cheann ar bith díobh seo a leanas (a), (b), (c). (a) I gcomhthéacs táirgeadh uan ramhar, déan plé ar an ráiteas “déanann an chaora cúram den chainníocht agus déanann an reithe cúram den cháilíocht”. (b) Déan cur síos achomair ar na difr",
+          "classification": "independent-task-selection",
+          "reason": "Second regex match within the same Q8 outer selection; it does not create an extra pool."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 2,
+          "wording": "SÉ CHEIST LE FREAGAIRT",
+          "classification": "exam-selection",
+          "reason": "Six examination questions, not a combined practice task."
+        },
+        {
+          "page": 3,
+          "wording": "NÓ Rogha a Dó",
+          "classification": "closed",
+          "reason": "Both Q3 options match the separately reviewed English tasks."
+        },
+        {
+          "page": 3,
+          "wording": "ceann amháin ar bith de na galair",
+          "classification": "closed",
+          "reason": "Q3 Option Two disease choice: hoose or grass tetany, two complete routes."
+        },
+        {
+          "page": 3,
+          "wording": "mhodh saotharlainne nó ar mhodh páirce",
+          "classification": "open",
+          "reason": "Laboratory/field are settings; no finite pool of named experimental responses."
+        },
+        {
+          "page": 5,
+          "wording": "dtrí cinn ar bith de na péirí",
+          "classification": "closed",
+          "reason": "Q8(c): choose three of four comparisons, four routes."
+        },
+        {
+          "page": 5,
+          "wording": "cheithre cinn ar bith",
+          "classification": "independent-task-selection",
+          "reason": "Q9: four separately priced explanations chosen from five, all five retained."
+        }
+      ],
+      "translationParity": "All original pages visually inspected. Printed tasks, diagrams and finite choices compared with English; source differences below prevent treating the schemes as identical.",
+      "sourceNotes": [
+        {
+          "questionN": "7",
+          "questionRef": "Q7(b)",
+          "paperPage": 4,
+          "schemePage": 10,
+          "note": "Source lettering differs: the Irish question uses D/d for black/brown coats, but its official scheme prints B/b. Read Bb and bb in the scheme as Dd and dd respectively when answering this Irish question."
+        }
+      ],
+      "remaining": [
+        "Irish practice-task crop bindings and reader QA",
+        "Corpus-wide reconciliation"
+      ]
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "hashes": {
+        "exampapers": "3fc25d232f647d8f69253fe013851c4af674a786fa5d77e84e5288d688710d2f",
+        "markingschemes": "41a9cc8a3f98ddebc0918c5e28fef44b11c19149f0151cca14931b87238e36e5"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "selectionDirectives": [
+        {
+          "id": "89a886161f8fc6b4",
+          "page": 2,
+          "cue": "Freagair",
+          "context": "Lch 2 de 12 Roinn a hAon (120 marc) Treoracha  Freagair sé cheist ar bith. Tá 20 marc ag gabháil le gach ceist.  Scríobh do chuid freagraí sna spásanna atá ann dóibh.  Bíodh do chuid freagraí gearr.  Scríobh do scrúduimhir sa spás atá ann di ar leathanach 1. _______________________",
+          "classification": "exam-selection",
+          "reason": "Section One: six independent questions, all seven retained."
+        },
+        {
+          "id": "fb4e129034265e1d",
+          "page": 2,
+          "cue": "dhá cheann",
+          "context": "_________________ (b) Cuimsítear cineálacha éagsúla cáithníní mianraí in ithir. Liostaigh dhá cheann ar bith de na cineálacha cáithnín seo. (i) _____________________________________________________________________ (ii) _____________________________________________________________________ (c) Tabhair sampla amháin d’orgánach atá ",
+          "classification": "open",
+          "reason": "Q1(b): two mineral particle types, with no printed finite pool."
+        },
+        {
+          "id": "b751aadca4f6be00",
+          "page": 3,
+          "cue": "Roghnaigh",
+          "context": "Ceist 2. Bíonn innealra feirme riachtanach le haghaidh mórán gníomhaíochtaí talmhaíochta. Roghnaigh meaisín ón liosta thíos agus meaitseáil é le gníomhaíocht atá liostaithe sa tábla. Tá an chéad cheann comhlánaithe mar shampla. A. Bainteoir ardaithe D. Céachta fo-ithreach B. Druilire cumaisc E. Burlaire cornaí C. Suaiteoir roth",
+          "classification": "answer-identification",
+          "reason": "Q2: match each activity to an appropriate machine, not arbitrary machine-selection routes."
+        },
+        {
+          "id": "263792c10f064029",
+          "page": 3,
+          "cue": "Roghnaigh",
+          "context": " féir 4. Baint prátaí 5. Cur síl 6. Briseadh suas ithreach balctha (20 marc) Ceist 3. (a) Roghnaigh dhá phór déiríochta ón liosta seo a leanas de phóir eallaigh: Charolais Freaslannach Simmental Geirseog Hereford Pór déiríochta 1. ____________________________________________________________ Pór déiríochta 2. ___________________",
+          "classification": "answer-identification",
+          "reason": "Q3(a): identify two dairy breeds. The scheme accepts Friesian, Jersey and Simmental; incorrect breed pairs are not examination routes."
+        },
+        {
+          "id": "1827828fcb1543d0",
+          "page": 6,
+          "cue": "Freagair",
+          "context": "n a Dó (180 marc) Treoracha Scríobh do chuid freagraí ar Roinn a Dó i do fhreagarleabhar. Freagair trí cheist ar bith. Tá 60 marc ag gabháil le gach ceist. ___________________________________ Ceist 8. (a) Taispeántar dhá chóras féaraigh a mbaintear leas astu in Éirinn sna léaráidí seo a leanas. (i) Sainaithin gach córas féarai",
+          "classification": "exam-selection",
+          "reason": "Section Two: three independent 60-mark questions, all six retained."
+        },
+        {
+          "id": "e3ccc0d05d6bfbed",
+          "page": 9,
+          "cue": "Freagair",
+          "context": "rma beathú bacphoill? (ii) Luaigh trí bhuntáiste le beathú bacphoill. (60 marc) Ceist 12. Freagair dhá chuid ar bith de (a), (b), (c), (d). (30 marc, 30 marc) (a) Rinne grúpa daltaí suirbhé ar na plandaí i seanfhéarach. (i) Liostaigh dhá fhiaile a d’fhéadfaidís a fháil san fhéarach. (ii) Ainmnigh fearas amháin a d’fhéadfaí a ú",
+          "classification": "independent-task-selection",
+          "reason": "Q12: two of four separately priced parts; retain all published internal tasks, not pairs of unrelated exam responses."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 7,
+          "wording": "Ainmnigh barr fréimhe nó barr gráin",
+          "classification": "open",
+          "reason": "Q9(c): name an appropriate crop; root/cereal are open categories, not a finite pool of crop names."
+        }
+      ],
+      "translationParity": "All original pages visually inspected. Printed tasks, diagrams and finite choices compared with English; source differences below prevent treating the schemes as identical.",
+      "sourceNotes": [
+        {
+          "questionN": "6",
+          "questionRef": "Q6(b)",
+          "paperPage": 5,
+          "schemePage": 5,
+          "note": "The Irish scheme prints “Clóraplast” for the green pigment. The English scheme for this same question gives “Chlorophyll”. The original Irish scheme is shown unchanged."
+        },
+        {
+          "questionN": "8",
+          "questionRef": "Q8(c)",
+          "paperPage": 6,
+          "schemePage": 7,
+          "note": "The Irish scheme explicitly describes a method name plus two matching points (3 × 3 marks). The English scheme allows the name to count as one of three points. Follow the instructions in the displayed edition."
+        },
+        {
+          "questionN": "9",
+          "questionRef": "Q9(f)",
+          "paperPage": 7,
+          "schemePage": 9,
+          "note": "The Irish scheme prints 4 + 4 + 6 + 6 for Q9(f), while the English scheme prints 4 + 4 + 4 + 6. The Irish allocations therefore total 62 for the printed 60-mark question. This source discrepancy is preserved."
+        },
+        {
+          "questionN": "12",
+          "questionRef": "Q12(a)(iii), Q12(d)(ii)",
+          "paperPage": 9,
+          "schemePage": 12,
+          "note": "For Q12(a)(iii), the Irish scheme says four points; the English scheme says three but prints four awards. For Q12(d)(ii), the Irish scheme prints 4 + 4 + 6 + 6 (20); the English scheme prints 4 + 4 + 4 + 6 (18). The Irish Q12(d) allocations total its printed 30 marks."
+        },
+        {
+          "questionN": "13",
+          "questionRef": "Q13(b)",
+          "paperPage": 10,
+          "schemePage": 13,
+          "note": "Source lettering differs: the Irish pig crosses use C/c, but the Irish scheme retains E/e. Read E, e, EE and Ee in that scheme as C, c, CC and Cc respectively. The pea passage also uses A/a where the English paper uses T/t."
+        }
+      ],
+      "remaining": [
+        "Irish practice-task crop bindings and reader QA",
         "Corpus-wide reconciliation"
       ]
     }
