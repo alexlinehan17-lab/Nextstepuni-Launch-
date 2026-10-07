@@ -8,6 +8,7 @@ import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
 import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
+import foundation2015 from '../scripts/markbank/mathematics/reviews/2015-foundation-p1.json';
 import foundation2016 from '../scripts/markbank/mathematics/reviews/2016-foundation-p1.json';
 import foundation2017 from '../scripts/markbank/mathematics/reviews/2017-foundation-p1.json';
 import foundation2018 from '../scripts/markbank/mathematics/reviews/2018-foundation-p1.json';
@@ -122,6 +123,7 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 
 
 describe.each([
+  { year: 2015, count: 35, offered: 300, review: foundation2015 },
   { year: 2016, count: 39, offered: 300, review: foundation2016 },
   { year: 2017, count: 34, offered: 300, review: foundation2017 },
   { year: 2018, count: 28, offered: 300, review: foundation2018 },
@@ -170,6 +172,21 @@ describe.each([
 
 describe('Foundation Mathematics marking boundaries and source context', () => {
   const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
+
+  it('pairs 2015 model solutions with separate credit notes and retains all grouped prompts', () => {
+    const journey = task(2015, 'p1-q3-b-i-ii-iii');
+    expect(journey.totalMarks).toBe(10);
+    expect(journey.questionText).toContain('(iii)');
+    expect('mathematicsScale' in journey && journey.mathematicsScale?.schemePages).toEqual([9, 25]);
+    const garden = task(2015, 'p1-q8-a-i');
+    expect(garden.stem).toContain('0·5 m');
+    expect('mathematicsScale' in garden && garden.mathematicsScale?.marks).toEqual([0, 7, 15]);
+    expect(task(2015, 'p1-q10-b-i').sourceMaterial?.measurementRequired).toBe(true);
+    expect(task(2015, 'p1-q10-b-iv').sourceMaterial?.pages).toEqual([16, 17]);
+    const comparison = task(2015, 'p1-q9-b');
+    expect('mathematicsScale' in comparison && comparison.mathematicsScale?.marks).toEqual([0, 10]);
+    expect(task(2015, 'p1-q9-d').questionText).toContain('company name');
+  });
 
   it('keeps the 2016 histogram group, measurement dependencies and unusual net scale', () => {
     const histogram = task(2016, 'p1-q4-b-ii-iii-iv');

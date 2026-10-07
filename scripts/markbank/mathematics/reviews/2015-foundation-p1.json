@@ -1,0 +1,1224 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2015,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003BLP100EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "38daa4146887166c843e0430e088e121c3020936d12627789bb29f1432cb202a",
+  "schemeSha256": "3db3b8b683bb2b94627308f4ca082fdc9e798e0e03f7d414f2018780f24c39b8",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and all 32 scheme PDF pages; model answers and separate detailed credit notes cross-checked against the summary on PDF page 23 (printed page 21).",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8": 25,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    22,
+    23
+  ],
+  "sourceNotes": [
+    "All ten questions are required. Candidate and offered totals are both 300 marks.",
+    "35 independently marked units. Q1(a)(i+ii), Q3(a)(i+ii), Q3(b)(i–iii), and Q5(b)(i+ii) are grouped at their published scale boundaries.",
+    "The model answers on PDF pages 7–21 are separate from the detailed marking notes on pages 24–29. Each task links both its model answer and its marking notes.",
+    "Question file LC003BLP100EV.pdf and scheme file LC003BLP000EV.pdf are distinct. Page references are PDF positions.",
+    "Q8 garden grid explicitly assigns 0.5 m to each grid square. Q10(b)(i) is a full-sized radius-6-cm construction and has the physical ruler.",
+    "Q10(b)(iii) model answer prints 84.857 cm², consistent with using π = 22/7; calculator π gives 84.823 cm². The original scheme remains visible and the quoted criteria do not imply a unique rounded model value. Its cost model continues with 84.857 and gives €1061.",
+    "2015 5B uses 0,3,5; 5C uses 0,2,4,5; 10C uses 0,4,8,10; 15C uses 0,6,12,15. Q9(b) is 10A.",
+    "General notes limit a rounding or units penalty to once in each section (a), (b), (c), etc.; the scheme notes are available in the reader."
+  ],
+  "cards": [
+    {
+      "id": "maths-2015-fl-p1-q1-a-i-ii",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        7,
+        24
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume",
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The diagram shows a cube with 7 cm sides.",
+      "questionText": "(i) Find the volume of the cube: 7³ = ___ cm³. (ii) Find the length of the diagonal [AC], correct to one decimal place: √(7² + 7²) = ___ cm.",
+      "solutionQuotes": [
+        "343 cm3",
+        "9·9 cm"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        7,
+        24
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "",
+      "questionText": "Which number in the list below does not have the same value as the other three numbers? Give a reason for your answer. The numbers are 0·25, 1/4, 2·5 and 25%.",
+      "solutionQuotes": [
+        "Correct answer with no reason or incorrect reason given",
+        "Meaningful attempt at a correct reason"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        7,
+        24
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Aoife buys an item on eBay for €45 and later sells it for €63.",
+      "questionText": "Calculate her profit as a percentage of the cost price.",
+      "solutionQuotes": [
+        "Profit = €63 ‒ €45 = €18",
+        "Calculates profit correctly"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        8,
+        24
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Conor earns €32 000 per year. He pays income tax at a rate of 20%. Conor has tax credits of €3300.",
+      "questionText": "Find the amount of income tax that Conor pays.",
+      "solutionQuotes": [
+        "20% of 32000 = 6400",
+        "Tax = 6400 ‒ 3300 = €3100"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        8,
+        24
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Coffee is sold in two different sized jars. Jar A contains 200 g and is sold at €5·80 per jar. Jar B contains 150 g and is sold at €4·65 per jar.",
+      "questionText": "Which jar is the best value for money? Give a reason for your answer.",
+      "solutionQuotes": [
+        "Answer: Jar A",
+        "Reason: Per gram the coffee is the cheaper"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q3-a-i-ii",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        12,
+        15
+      ],
+      "schemePages": [
+        9,
+        25
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "All of the digits 5, 3, 6, and 1 are used to write down a four-digit whole number. Each digit is used only once.",
+      "questionText": "(i) What is the biggest four-digit number that can be written? (ii) What is the smallest four-digit number that can be written?",
+      "solutionQuotes": [
+        "Any four digit number using the given digits in either part",
+        "One correct answer"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q3-b-i-ii-iii",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)",
+        "Q3(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        9,
+        25
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Shane is driving from Cavan to Belfast. The journey is estimated to be 162 km. He travels at an average speed of 72 km/h.",
+      "questionText": "(i) How long will it take him to get there? Give your answer in hours and minutes. (ii) Shane leaves Cavan at 2:55 p.m. What time should he expect to arrive in Belfast? (iii) Shane’s car uses 1 litre of petrol for every 15 km travelled. A litre of petrol costs 149·9 cent. Find the cost of the petrol used on the journey. Give your answer in euro and cent.",
+      "solutionQuotes": [
+        "2 hours and 15 minutes",
+        "2.55 +2.15=5.10 p.m.",
+        "€16·19"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        10,
+        25
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "A local park has two pitches; one for seniors, the other for juveniles. The senior pitch is an enlargement of the juvenile pitch. The scale factor is k (k > 1). The senior pitch is 138 m long and 81 m wide. The juvenile pitch is 92 m long and w metres wide, as shown in the diagram.",
+      "questionText": "Construct the centre of the enlargement on the diagram below and label it O.",
+      "solutionQuotes": [
+        "One correct ray",
+        "Two correct rays not extended"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        10,
+        25
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "A local park has two pitches; one for seniors, the other for juveniles. The senior pitch is an enlargement of the juvenile pitch. The scale factor is k (k > 1). The senior pitch is 138 m long and 81 m wide. The juvenile pitch is 92 m long and w metres wide, as shown in the diagram.",
+      "questionText": "Find k, the scale factor of the enlargement.",
+      "solutionQuotes": [
+        "Work of relevance"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        10,
+        25
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "A local park has two pitches; one for seniors, the other for juveniles. The senior pitch is an enlargement of the juvenile pitch. The scale factor is k (k > 1). The senior pitch is 138 m long and 81 m wide. The juvenile pitch is 92 m long and w metres wide, as shown in the diagram.",
+      "questionText": "Find the value of w, the width of the juvenile pitch.",
+      "solutionQuotes": [
+        "Work of relevance"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q4-d",
+      "printedParts": [
+        "Q4(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        10,
+        25
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry",
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A local park has two pitches; one for seniors, the other for juveniles. The senior pitch is an enlargement of the juvenile pitch. The scale factor is k (k > 1). The senior pitch is 138 m long and 81 m wide. The juvenile pitch is 92 m long and w metres wide, as shown in the diagram.",
+      "questionText": "Find the ratio: area of senior pitch / area of juvenile pitch.",
+      "solutionQuotes": [
+        "Calculates one area correctly or work of relevance",
+        "Calculates both areas correctly"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        11,
+        26
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Each of two fair spinners is divided into sections as shown. The first spinner has three equal sections numbered 2, 4 and 6; the second has two equal sections numbered 1 and 3. The spinners are spun at the same time and the scores are then added.",
+      "questionText": "Complete the table below to show all possible outcomes. Its columns are 2, 4, 6 and its rows are 1, 3; the outcome 7 for 4 + 3 is already given.",
+      "solutionQuotes": [
+        "One correct entry",
+        "Two correct entries"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q5-b-i-ii",
+      "printedParts": [
+        "Q5(b)(i)",
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        11,
+        26
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Each of two fair spinners is divided into sections as shown. The first spinner has three equal sections numbered 2, 4 and 6; the second has two equal sections numbered 1 and 3. The spinners are spun at the same time and the scores are then added.",
+      "questionText": "Find the probability of getting the following outcomes: (i) 3; (ii) 3 or 9.",
+      "solutionQuotes": [
+        "One numerator or denominator correct",
+        "Work of relevance in both parts"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        11,
+        26
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Each of two fair spinners is divided into sections as shown. The first spinner has three equal sections numbered 2, 4 and 6; the second has two equal sections numbered 1 and 3. The spinners are spun at the same time and the scores are then added.",
+      "questionText": "Caleb says “An outcome of 5 is as likely as an outcome of 7”. Is he correct? Give a reason for your answer.",
+      "solutionQuotes": [
+        "Answer: YES",
+        "Reason: Two out of 6 in each case"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        12,
+        26
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "In a survey, 18 students were asked how many children are in their family. The results are shown in the line plot below.",
+      "questionText": "What is the mode of the data?",
+      "solutionQuotes": [
+        "Mode = 3"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        12,
+        26
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "In a survey, 18 students were asked how many children are in their family. The results are shown in the line plot below.",
+      "questionText": "Find the total number of children in the 18 families.",
+      "solutionQuotes": [
+        "1(2) + 2(4) + 3(5) + 4(3) + 5(1) + 6(2) + 8(1) = 62"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        12,
+        26
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "In a survey, 18 students were asked how many children are in their family. The results are shown in the line plot below.",
+      "questionText": "Find the mean number of children per family, correct to one decimal place.",
+      "solutionQuotes": [
+        "Formulates fraction correctly"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        12,
+        26
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "In a survey, 18 students were asked how many children are in their family. The results are shown in the line plot below.",
+      "questionText": "Which of the two numbers, the mode or the mean, do you think is the best single number to describe this data? Give a reason for your answer.",
+      "solutionQuotes": [
+        "Mode",
+        "Because it is a whole number",
+        "Mean",
+        "Because it is got from all the families"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        13,
+        27
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Mary creates a pattern of numbers using the instructions in the table below: start with a number; multiply by 4; subtract 3 from your answer; record the outcome. The first number, 5, is filled in for you: 5 × 4, then 20 − 3, gives outcome 17.",
+      "questionText": "Complete the table for the next three starting numbers: 6, 7 and 8.",
+      "solutionQuotes": [
+        "One correct row or column"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        13,
+        27
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Mary creates a pattern of numbers using the instructions in the table below: start with a number; multiply by 4; subtract 3 from your answer; record the outcome. The first number, 5, is filled in for you: 5 × 4, then 20 − 3, gives outcome 17.",
+      "questionText": "Mary picks a starting number and using the instructions gets an outcome of 45. Find the number she picked.",
+      "solutionQuotes": [
+        "45 + 3 = 48",
+        "48/4 = 12"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        13,
+        27
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "A, B, and C are whole numbers. The numbers are placed in rows and added together as shown in the table. Row 1: A + A + A = 21. Row 2: A + A + B = 23. Row 3: A + B + C = 18.",
+      "questionText": "Find the value of A, of B, and of C.",
+      "solutionQuotes": [
+        "One correct answer",
+        "Two correct answers"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15B",
+      "permittedMarks": [
+        0,
+        7,
+        15
+      ],
+      "schemePages": [
+        14,
+        27
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Below is a scale diagram of the front garden of a house. The length of each square in the grid represents 0·5 m. The length of each side of the garden is 16 m. P shows the location of a post which is 6 metres from the hedge at H. A dog is tied to the post by a leash which is 7 m long.",
+      "questionText": "Use your compass to construct all the points in the garden which are 7 m from P.",
+      "solutionQuotes": [
+        "Any circle drawn"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        14,
+        27
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Below is a scale diagram of the front garden of a house. The length of each square in the grid represents 0·5 m. The length of each side of the garden is 16 m. P shows the location of a post which is 6 metres from the hedge at H. A dog is tied to the post by a leash which is 7 m long. Part (a)(i) asks you to construct all the points in the garden 7 m from P.",
+      "questionText": "A delivery man is worried about the dog but the house owner assures him that the dog cannot reach the path. Is the house owner correct? Give a reason for your answer.",
+      "solutionQuotes": [
+        "The line drawn with the compass doesn’t cut the path so the owner is correct."
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        15,
+        27
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "The diagram below shows the vertical post [PT] and the point H which is on the ground. The measurements are as shown: |PT| = 1·5 m and |PH| = 6 m, with a right angle at P. The angle α is at H. (Diagram not drawn to scale.)",
+      "questionText": "Find |∠α|, correct to the nearest degree.",
+      "solutionQuotes": [
+        "Formulates tan or work of relevance"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q9-a",
+      "printedParts": [
+        "Q9(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        12,
+        15
+      ],
+      "schemePages": [
+        16,
+        28
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Chris needed to repair the pump in his well. He telephoned two companies and asked them about their fees. The first company, Well Well Ltd., said they have a callout fee of €50 and a fee of €30 per hour after that. The second company, Well Mended Ltd., said they don’t have a callout fee, just a fee of €40 per hour. Both companies estimated that the work could take up to 8 hours.",
+      "questionText": "Complete the tables below showing the fees for each company for 0–8 hours. The first entries are given: Well Well Ltd. charges €50 for 0 hours and €80 for 1 hour; Well Mended Ltd. charges €0 for 0 hours and €40 for 1 hour.",
+      "solutionQuotes": [
+        "One correct entry in either table",
+        "One correct table"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10A",
+      "permittedMarks": [
+        0,
+        10
+      ],
+      "schemePages": [
+        16,
+        28
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Chris needed to repair the pump in his well. He telephoned two companies and asked them about their fees. The first company, Well Well Ltd., said they have a callout fee of €50 and a fee of €30 per hour after that. The second company, Well Mended Ltd., said they don’t have a callout fee, just a fee of €40 per hour. Both companies estimated that the work could take up to 8 hours.",
+      "questionText": "The job took 7 hours. Which company would have charged Chris the least amount of money?",
+      "solutionQuotes": [
+        "Well Well ltd"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        16,
+        28
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Chris needed to repair the pump in his well. He telephoned two companies and asked them about their fees. The first company, Well Well Ltd., said they have a callout fee of €50 and a fee of €30 per hour after that. The second company, Well Mended Ltd., said they don’t have a callout fee, just a fee of €40 per hour. Both companies estimated that the work could take up to 8 hours.",
+      "questionText": "Write down a formula to represent the fee to be paid to Well Well Ltd. for any given number of hours work. State clearly the meaning of any letters used in your formula.",
+      "solutionQuotes": [
+        "Effort at formula"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        17,
+        28
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Chris needed to repair the pump in his well. He telephoned two companies and asked them about their fees. The first company, Well Well Ltd., said they have a callout fee of €50 and a fee of €30 per hour after that. The second company, Well Mended Ltd., said they don’t have a callout fee, just a fee of €40 per hour. Both companies estimated that the work could take up to 8 hours.",
+      "questionText": "On the axes below, draw the graphs of the fees that each of the two companies charge, over the first 8 hours. (Put the relevant company name on each graph.)",
+      "solutionQuotes": [
+        "One company plotted correctly, ≥ 6 hours",
+        "Both companies plotted correctly, ≥ 6 hours for each company"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        17,
+        28
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Chris needed to repair the pump in his well. He telephoned two companies and asked them about their fees. The first company, Well Well Ltd., said they have a callout fee of €50 and a fee of €30 per hour after that. The second company, Well Mended Ltd., said they don’t have a callout fee, just a fee of €40 per hour. Both companies estimated that the work could take up to 8 hours. Part (d) asks you to draw the graphs of the fees charged by both companies over the first 8 hours.",
+      "questionText": "What are the co-ordinates of the point of intersection of your two graphs? Explain what each of the two numbers mean in the context of the question.",
+      "solutionQuotes": [
+        "(5, 200)",
+        "If the job takes 5 hours both companies will charge €200."
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        18,
+        29
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Geraldine’s company, TLC Ltd., makes rectangular cardboard boxes with lids. Two of the company’s boxes, Box A and Box B, with their dimensions given, are shown below. Box A is 7 cm by 6 cm by 2 cm. Box B is 8 cm by 4 cm by 3 cm. Geraldine has been told that both boxes have the same surface area.",
+      "questionText": "Show that both boxes have the same surface area.",
+      "solutionQuotes": [
+        "Calculates area of one side",
+        "Calculates area of one box"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        19,
+        29
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Geraldine’s company, TLC Ltd., makes rectangular cardboard boxes with lids. Two of the company’s boxes, Box A and Box B, with their dimensions given, are shown below. Box A is 7 cm by 6 cm by 2 cm. Box B is 8 cm by 4 cm by 3 cm. Geraldine has been told that both boxes have the same surface area.",
+      "questionText": "Geraldine wants to use the box with the greater volume. Find which box has the greater volume.",
+      "solutionQuotes": [
+        "Answer: Box B",
+        "Calculates volume of one box"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        12,
+        15
+      ],
+      "schemePages": [
+        20,
+        29
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The diagram below shows the logo for Geraldine’s company, TLC Ltd. Each letter is contained in a quarter circle of radius 6 cm.",
+      "questionText": "Construct the full sized logo in the grid below. (You do not need to include the letters.)",
+      "solutionQuotes": [
+        "Constructs a circle of radius 6 cm",
+        "Constructs one sector of radius 6 cm"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2015-fl-p1-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        21,
+        29
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below shows the logo for Geraldine’s company, TLC Ltd. Each letter is contained in a quarter circle of radius 6 cm.",
+      "questionText": "Find the length of the perimeter of this logo. Give your answer correct to the nearest whole number.",
+      "solutionQuotes": [
+        "Formula for perimeter of a circle or work of relevance",
+        "Calculates perimeter of a circle"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "schemePages": [
+        21,
+        29
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below shows the logo for Geraldine’s company, TLC Ltd. Each letter is contained in a quarter circle of radius 6 cm.",
+      "questionText": "Find the area of the logo. Give your answer correct to three decimal places.",
+      "solutionQuotes": [
+        "Formula for area of a circle",
+        "Calculates area of a circle"
+      ]
+    },
+    {
+      "id": "maths-2015-fl-p1-q10-b-iv",
+      "printedParts": [
+        "Q10(b)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        10
+      ],
+      "schemePages": [
+        21,
+        29
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic",
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below shows the logo for Geraldine’s company, TLC Ltd. Each letter is contained in a quarter circle of radius 6 cm.",
+      "questionText": "The material used to construct the logo costs €0·25 per cm². Find the cost of constructing 50 logos, correct to the nearest euro.",
+      "solutionQuotes": [
+        "Answer (iii) used in relevant calculation"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        8,
+        12,
+        15
+      ],
+      "classification": "answer-selection",
+      "reason": "Selecting the unequal number, better-value jar, suitable summary statistic, cheaper repair company or greater-volume box is the mathematical answer to a required evaluation. These are not alternative prompts. Q6(c) may accept a justified mode or mean; both are possible answers to the same judgment task."
+    },
+    {
+      "pages": [
+        5
+      ],
+      "classification": "mathematical-extremes",
+      "reason": "The four digits define the data for finding the largest and smallest numbers. The candidate is not choosing which number to practise."
+    },
+    {
+      "pages": [
+        7
+      ],
+      "classification": "probability-sample-space",
+      "reason": "The spinner outcomes and 3-or-9 event define random events. Both probabilities are required within one scale, with no optional route."
+    },
+    {
+      "pages": [
+        9
+      ],
+      "classification": "algebraic-unknown",
+      "reason": "Mary picks an unknown starting number within the scenario. The candidate solves for it rather than choosing a practice prompt."
+    }
+  ],
+  "selectionDecisions": {
+    "2:07f7c42ffd22193f": {
+      "classification": "all-questions-required",
+      "reason": "All ten questions are required, including all eight Section A questions. Every published marking unit is retained."
+    },
+    "3:227027904a18abbf": {
+      "classification": "all-questions-required",
+      "reason": "All ten questions are required, including all eight Section A questions. Every published marking unit is retained."
+    }
+  }
+}

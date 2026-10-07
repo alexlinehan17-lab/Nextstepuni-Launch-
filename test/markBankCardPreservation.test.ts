@@ -508,6 +508,12 @@ describe('Mark Bank card preservation', () => {
     expect(identityHash(added)).toBe('5223c2aaaec7268f26e8665576e86127f5e3d0d634a4c05af6ccf48ac0faddf5');
   });
 
+  it('retains all additional 2015 Foundation tasks without replacing another year', () => {
+    const added = MATHS_FOUNDATION.filter(card => card.year === 2015);
+    expect(added).toHaveLength(35);
+    expect(identityHash(added)).toBe('4a5d92dc658965c671b5a4a3e3420ec107690aa3ef608a0e900575f1e67aad97');
+  });
+
   it('protects the complete current bank', () => {
     expect(decks.reduce((total, [, cards]) => total + baselineCards(cards).length, 0)).toBe(10_495);
     const added = [...MATHS_HIGHER, ...MATHS_ORDINARY].filter(card => reviewedMathematicsAdditions.has(card.id));

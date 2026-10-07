@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2016–2024 and 2026",
-  "runtimeCards": 1266,
-  "reviewedTasks": 595,
+  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2015–2024 and 2026",
+  "runtimeCards": 1301,
+  "reviewedTasks": 630,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 178,
+  "targetedRegressionTests": 182,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -128,15 +128,15 @@
     "regressionWorkers": 1
   },
   "latestBatch": {
-    "paper": "2016 Foundation",
-    "independentlyReviewedTasks": 39,
-    "targetedRegressionTests": 178,
-    "previousRuntimeIdsRetained": 1227,
+    "paper": "2015 Foundation",
+    "independentlyReviewedTasks": 35,
+    "targetedRegressionTests": 182,
+    "previousRuntimeIdsRetained": 1266,
     "offeredMarks": 300,
     "candidateMarks": 300,
     "paperPagesInspected": 20,
-    "schemePagesInspected": 24,
-    "runtimeIdsSha256": "5223c2aaaec7268f26e8665576e86127f5e3d0d634a4c05af6ccf48ac0faddf5",
+    "schemePagesInspected": 32,
+    "runtimeIdsSha256": "4a5d92dc658965c671b5a4a3e3420ec107690aa3ef608a0e900575f1e67aad97",
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
@@ -224,6 +224,19 @@
     "paperPagesInspected": 20,
     "schemePagesInspected": 20,
     "runtimeIdsSha256": "a37858b0346d8f3ec1aeddf89137eb28602fbb871db79db7320e7be5eaf311c6",
+    "regressionWorkers": 1,
+    "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
+  },
+  "foundation2016": {
+    "paper": "2016 Foundation",
+    "independentlyReviewedTasks": 39,
+    "targetedRegressionTests": 178,
+    "previousRuntimeIdsRetained": 1227,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 20,
+    "schemePagesInspected": 24,
+    "runtimeIdsSha256": "5223c2aaaec7268f26e8665576e86127f5e3d0d634a4c05af6ccf48ac0faddf5",
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   }

@@ -11867,4 +11867,981 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q1-a-i-ii", topicId: "maths-3-4", conceptId: "p1-q1-a-i-ii",
+    section: "A", questionRef: "2015 FL Paper 1 Q1(a)(i), Q1(a)(ii)",
+    stem: "The diagram shows a cube with 7 cm sides.",
+    questionText: "(i) Find the volume of the cube: 7³ = ___ cm³. (ii) Find the length of the diagonal [AC], correct to one decimal place: √(7² + 7²) = ___ cm.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q1-a-i-ii-solution-1", kind: "point", verbatim: "343 cm3", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q1-a-i-ii-solution-2", kind: "point", verbatim: "9·9 cm", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7,24],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q1-b", topicId: "maths-3-1", conceptId: "p1-q1-b",
+    section: "A", questionRef: "2015 FL Paper 1 Q1(b)",
+    questionText: "Which number in the list below does not have the same value as the other three numbers? Give a reason for your answer. The numbers are 0·25, 1/4, 2·5 and 25%.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q1-b-solution-1", kind: "point", verbatim: "Correct answer with no reason or incorrect reason given", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q1-b-solution-2", kind: "point", verbatim: "Meaningful attempt at a correct reason", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7,24],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q1-c", topicId: "maths-3-3", conceptId: "p1-q1-c",
+    section: "A", questionRef: "2015 FL Paper 1 Q1(c)",
+    stem: "Aoife buys an item on eBay for €45 and later sells it for €63.",
+    questionText: "Calculate her profit as a percentage of the cost price.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q1-c-solution-1", kind: "point", verbatim: "Profit = €63 ‒ €45 = €18", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q1-c-solution-2", kind: "point", verbatim: "Calculates profit correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7,24],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q2-a", topicId: "maths-3-3", conceptId: "p1-q2-a",
+    section: "A", questionRef: "2015 FL Paper 1 Q2(a)",
+    stem: "Conor earns €32 000 per year. He pays income tax at a rate of 20%. Conor has tax credits of €3300.",
+    questionText: "Find the amount of income tax that Conor pays.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2015-fl-p1-q2-a-solution-1", kind: "point", verbatim: "20% of 32000 = 6400", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q2-a-solution-2", kind: "point", verbatim: "Tax = 6400 ‒ 3300 = €3100", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8,24],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q2-b", topicId: "maths-3-3", conceptId: "p1-q2-b",
+    section: "A", questionRef: "2015 FL Paper 1 Q2(b)",
+    stem: "Coffee is sold in two different sized jars. Jar A contains 200 g and is sold at €5·80 per jar. Jar B contains 150 g and is sold at €4·65 per jar.",
+    questionText: "Which jar is the best value for money? Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q2-b-solution-1", kind: "point", verbatim: "Answer: Jar A", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q2-b-solution-2", kind: "point", verbatim: "Reason: Per gram the coffee is the cheaper", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8,24],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q3-a-i-ii", topicId: "maths-3-1", conceptId: "p1-q3-a-i-ii",
+    section: "A", questionRef: "2015 FL Paper 1 Q3(a)(i), Q3(a)(ii)",
+    stem: "All of the digits 5, 3, 6, and 1 are used to write down a four-digit whole number. Each digit is used only once.",
+    questionText: "(i) What is the biggest four-digit number that can be written? (ii) What is the smallest four-digit number that can be written?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2015-fl-p1-q3-a-i-ii-solution-1", kind: "point", verbatim: "Any four digit number using the given digits in either part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q3-a-i-ii-solution-2", kind: "point", verbatim: "One correct answer", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,6,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[9,25],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q3-b-i-ii-iii", topicId: "maths-3-3", conceptId: "p1-q3-b-i-ii-iii",
+    section: "A", questionRef: "2015 FL Paper 1 Q3(b)(i), Q3(b)(ii), Q3(b)(iii)",
+    stem: "Shane is driving from Cavan to Belfast. The journey is estimated to be 162 km. He travels at an average speed of 72 km/h.",
+    questionText: "(i) How long will it take him to get there? Give your answer in hours and minutes. (ii) Shane leaves Cavan at 2:55 p.m. What time should he expect to arrive in Belfast? (iii) Shane’s car uses 1 litre of petrol for every 15 km travelled. A litre of petrol costs 149·9 cent. Find the cost of the petrol used on the journey. Give your answer in euro and cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q3-b-i-ii-iii-solution-1", kind: "point", verbatim: "2 hours and 15 minutes", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q3-b-i-ii-iii-solution-2", kind: "point", verbatim: "2.55 +2.15=5.10 p.m.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q3-b-i-ii-iii-solution-3", kind: "point", verbatim: "€16·19", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[9,25],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q4-a", topicId: "maths-2-4", conceptId: "p1-q4-a",
+    section: "A", questionRef: "2015 FL Paper 1 Q4(a)",
+    stem: "A local park has two pitches; one for seniors, the other for juveniles. The senior pitch is an enlargement of the juvenile pitch. The scale factor is k (k > 1). The senior pitch is 138 m long and 81 m wide. The juvenile pitch is 92 m long and w metres wide, as shown in the diagram.",
+    questionText: "Construct the centre of the enlargement on the diagram below and label it O.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q4-a-solution-1", kind: "point", verbatim: "One correct ray", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q4-a-solution-2", kind: "point", verbatim: "Two correct rays not extended", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[10,25],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q4-b", topicId: "maths-2-4", conceptId: "p1-q4-b",
+    section: "A", questionRef: "2015 FL Paper 1 Q4(b)",
+    stem: "A local park has two pitches; one for seniors, the other for juveniles. The senior pitch is an enlargement of the juvenile pitch. The scale factor is k (k > 1). The senior pitch is 138 m long and 81 m wide. The juvenile pitch is 92 m long and w metres wide, as shown in the diagram.",
+    questionText: "Find k, the scale factor of the enlargement.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q4-b-solution-1", kind: "point", verbatim: "Work of relevance", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[10,25],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q4-c", topicId: "maths-2-4", conceptId: "p1-q4-c",
+    section: "A", questionRef: "2015 FL Paper 1 Q4(c)",
+    stem: "A local park has two pitches; one for seniors, the other for juveniles. The senior pitch is an enlargement of the juvenile pitch. The scale factor is k (k > 1). The senior pitch is 138 m long and 81 m wide. The juvenile pitch is 92 m long and w metres wide, as shown in the diagram.",
+    questionText: "Find the value of w, the width of the juvenile pitch.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q4-c-solution-1", kind: "point", verbatim: "Work of relevance", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[10,25],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q4-d", topicId: "maths-2-4", conceptId: "p1-q4-d",
+    section: "A", questionRef: "2015 FL Paper 1 Q4(d)",
+    stem: "A local park has two pitches; one for seniors, the other for juveniles. The senior pitch is an enlargement of the juvenile pitch. The scale factor is k (k > 1). The senior pitch is 138 m long and 81 m wide. The juvenile pitch is 92 m long and w metres wide, as shown in the diagram.",
+    questionText: "Find the ratio: area of senior pitch / area of juvenile pitch.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q4-d-solution-1", kind: "point", verbatim: "Calculates one area correctly or work of relevance", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q4-d-solution-2", kind: "point", verbatim: "Calculates both areas correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[10,25],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q5-a", topicId: "maths-1-2", conceptId: "p1-q5-a",
+    section: "A", questionRef: "2015 FL Paper 1 Q5(a)",
+    stem: "Each of two fair spinners is divided into sections as shown. The first spinner has three equal sections numbered 2, 4 and 6; the second has two equal sections numbered 1 and 3. The spinners are spun at the same time and the scores are then added.",
+    questionText: "Complete the table below to show all possible outcomes. Its columns are 2, 4, 6 and its rows are 1, 3; the outcome 7 for 4 + 3 is already given.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q5-a-solution-1", kind: "point", verbatim: "One correct entry", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q5-a-solution-2", kind: "point", verbatim: "Two correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[11,26],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q5-b-i-ii", topicId: "maths-1-2", conceptId: "p1-q5-b-i-ii",
+    section: "A", questionRef: "2015 FL Paper 1 Q5(b)(i), Q5(b)(ii)",
+    stem: "Each of two fair spinners is divided into sections as shown. The first spinner has three equal sections numbered 2, 4 and 6; the second has two equal sections numbered 1 and 3. The spinners are spun at the same time and the scores are then added.",
+    questionText: "Find the probability of getting the following outcomes: (i) 3; (ii) 3 or 9.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q5-b-i-ii-solution-1", kind: "point", verbatim: "One numerator or denominator correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q5-b-i-ii-solution-2", kind: "point", verbatim: "Work of relevance in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[11,26],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q5-c", topicId: "maths-1-2", conceptId: "p1-q5-c",
+    section: "A", questionRef: "2015 FL Paper 1 Q5(c)",
+    stem: "Each of two fair spinners is divided into sections as shown. The first spinner has three equal sections numbered 2, 4 and 6; the second has two equal sections numbered 1 and 3. The spinners are spun at the same time and the scores are then added.",
+    questionText: "Caleb says “An outcome of 5 is as likely as an outcome of 7”. Is he correct? Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q5-c-solution-1", kind: "point", verbatim: "Answer: YES", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q5-c-solution-2", kind: "point", verbatim: "Reason: Two out of 6 in each case", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[11,26],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q6-a", topicId: "maths-1-6", conceptId: "p1-q6-a",
+    section: "A", questionRef: "2015 FL Paper 1 Q6(a)",
+    stem: "In a survey, 18 students were asked how many children are in their family. The results are shown in the line plot below.",
+    questionText: "What is the mode of the data?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q6-a-solution-1", kind: "point", verbatim: "Mode = 3", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12,26],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q6-b-i", topicId: "maths-1-6", conceptId: "p1-q6-b-i",
+    section: "A", questionRef: "2015 FL Paper 1 Q6(b)(i)",
+    stem: "In a survey, 18 students were asked how many children are in their family. The results are shown in the line plot below.",
+    questionText: "Find the total number of children in the 18 families.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q6-b-i-solution-1", kind: "point", verbatim: "1(2) + 2(4) + 3(5) + 4(3) + 5(1) + 6(2) + 8(1) = 62", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12,26],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q6-b-ii", topicId: "maths-1-6", conceptId: "p1-q6-b-ii",
+    section: "A", questionRef: "2015 FL Paper 1 Q6(b)(ii)",
+    stem: "In a survey, 18 students were asked how many children are in their family. The results are shown in the line plot below.",
+    questionText: "Find the mean number of children per family, correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q6-b-ii-solution-1", kind: "point", verbatim: "Formulates fraction correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12,26],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q6-c", topicId: "maths-1-6", conceptId: "p1-q6-c",
+    section: "A", questionRef: "2015 FL Paper 1 Q6(c)",
+    stem: "In a survey, 18 students were asked how many children are in their family. The results are shown in the line plot below.",
+    questionText: "Which of the two numbers, the mode or the mean, do you think is the best single number to describe this data? Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q6-c-solution-1", kind: "point", verbatim: "Mode", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q6-c-solution-2", kind: "point", verbatim: "Because it is a whole number", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q6-c-solution-3", kind: "point", verbatim: "Mean", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q6-c-solution-4", kind: "point", verbatim: "Because it is got from all the families", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12,26],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q7-a-i", topicId: "maths-4-2", conceptId: "p1-q7-a-i",
+    section: "A", questionRef: "2015 FL Paper 1 Q7(a)(i)",
+    stem: "Mary creates a pattern of numbers using the instructions in the table below: start with a number; multiply by 4; subtract 3 from your answer; record the outcome. The first number, 5, is filled in for you: 5 × 4, then 20 − 3, gives outcome 17.",
+    questionText: "Complete the table for the next three starting numbers: 6, 7 and 8.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q7-a-i-solution-1", kind: "point", verbatim: "One correct row or column", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13,27],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q7-a-ii", topicId: "maths-4-2", conceptId: "p1-q7-a-ii",
+    section: "A", questionRef: "2015 FL Paper 1 Q7(a)(ii)",
+    stem: "Mary creates a pattern of numbers using the instructions in the table below: start with a number; multiply by 4; subtract 3 from your answer; record the outcome. The first number, 5, is filled in for you: 5 × 4, then 20 − 3, gives outcome 17.",
+    questionText: "Mary picks a starting number and using the instructions gets an outcome of 45. Find the number she picked.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q7-a-ii-solution-1", kind: "point", verbatim: "45 + 3 = 48", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q7-a-ii-solution-2", kind: "point", verbatim: "48/4 = 12", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13,27],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q7-b", topicId: "maths-4-2", conceptId: "p1-q7-b",
+    section: "A", questionRef: "2015 FL Paper 1 Q7(b)",
+    stem: "A, B, and C are whole numbers. The numbers are placed in rows and added together as shown in the table. Row 1: A + A + A = 21. Row 2: A + A + B = 23. Row 3: A + B + C = 18.",
+    questionText: "Find the value of A, of B, and of C.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q7-b-solution-1", kind: "point", verbatim: "One correct answer", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q7-b-solution-2", kind: "point", verbatim: "Two correct answers", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13,27],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q8-a-i", topicId: "maths-2-1", conceptId: "p1-q8-a-i",
+    section: "A", questionRef: "2015 FL Paper 1 Q8(a)(i)",
+    stem: "Below is a scale diagram of the front garden of a house. The length of each square in the grid represents 0·5 m. The length of each side of the garden is 16 m. P shows the location of a post which is 6 metres from the hedge at H. A dog is tied to the post by a leash which is 7 m long.",
+    questionText: "Use your compass to construct all the points in the garden which are 7 m from P.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2015-fl-p1-q8-a-i-solution-1", kind: "point", verbatim: "Any circle drawn", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15B","marks":[0,7,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14,27],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q8-a-ii", topicId: "maths-2-1", conceptId: "p1-q8-a-ii",
+    section: "A", questionRef: "2015 FL Paper 1 Q8(a)(ii)",
+    stem: "Below is a scale diagram of the front garden of a house. The length of each square in the grid represents 0·5 m. The length of each side of the garden is 16 m. P shows the location of a post which is 6 metres from the hedge at H. A dog is tied to the post by a leash which is 7 m long. Part (a)(i) asks you to construct all the points in the garden 7 m from P.",
+    questionText: "A delivery man is worried about the dog but the house owner assures him that the dog cannot reach the path. Is the house owner correct? Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q8-a-ii-solution-1", kind: "point", verbatim: "The line drawn with the compass doesn’t cut the path so the owner is correct.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14,27],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q8-b", topicId: "maths-2-3", conceptId: "p1-q8-b",
+    section: "A", questionRef: "2015 FL Paper 1 Q8(b)",
+    stem: "The diagram below shows the vertical post [PT] and the point H which is on the ground. The measurements are as shown: |PT| = 1·5 m and |PH| = 6 m, with a right angle at P. The angle α is at H. (Diagram not drawn to scale.)",
+    questionText: "Find |∠α|, correct to the nearest degree.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q8-b-solution-1", kind: "point", verbatim: "Formulates tan or work of relevance", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15,27],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q9-a", topicId: "maths-5-1", conceptId: "p1-q9-a",
+    section: "B", questionRef: "2015 FL Paper 1 Q9(a)",
+    stem: "Chris needed to repair the pump in his well. He telephoned two companies and asked them about their fees. The first company, Well Well Ltd., said they have a callout fee of €50 and a fee of €30 per hour after that. The second company, Well Mended Ltd., said they don’t have a callout fee, just a fee of €40 per hour. Both companies estimated that the work could take up to 8 hours.",
+    questionText: "Complete the tables below showing the fees for each company for 0–8 hours. The first entries are given: Well Well Ltd. charges €50 for 0 hours and €80 for 1 hour; Well Mended Ltd. charges €0 for 0 hours and €40 for 1 hour.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2015-fl-p1-q9-a-solution-1", kind: "point", verbatim: "One correct entry in either table", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q9-a-solution-2", kind: "point", verbatim: "One correct table", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,6,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16,28],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q9-b", topicId: "maths-5-1", conceptId: "p1-q9-b",
+    section: "B", questionRef: "2015 FL Paper 1 Q9(b)",
+    stem: "Chris needed to repair the pump in his well. He telephoned two companies and asked them about their fees. The first company, Well Well Ltd., said they have a callout fee of €50 and a fee of €30 per hour after that. The second company, Well Mended Ltd., said they don’t have a callout fee, just a fee of €40 per hour. Both companies estimated that the work could take up to 8 hours.",
+    questionText: "The job took 7 hours. Which company would have charged Chris the least amount of money?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q9-b-solution-1", kind: "point", verbatim: "Well Well ltd", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10A","marks":[0,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16,28],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q9-c", topicId: "maths-5-1", conceptId: "p1-q9-c",
+    section: "B", questionRef: "2015 FL Paper 1 Q9(c)",
+    stem: "Chris needed to repair the pump in his well. He telephoned two companies and asked them about their fees. The first company, Well Well Ltd., said they have a callout fee of €50 and a fee of €30 per hour after that. The second company, Well Mended Ltd., said they don’t have a callout fee, just a fee of €40 per hour. Both companies estimated that the work could take up to 8 hours.",
+    questionText: "Write down a formula to represent the fee to be paid to Well Well Ltd. for any given number of hours work. State clearly the meaning of any letters used in your formula.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q9-c-solution-1", kind: "point", verbatim: "Effort at formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16,28],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q9-d", topicId: "maths-5-1", conceptId: "p1-q9-d",
+    section: "B", questionRef: "2015 FL Paper 1 Q9(d)",
+    stem: "Chris needed to repair the pump in his well. He telephoned two companies and asked them about their fees. The first company, Well Well Ltd., said they have a callout fee of €50 and a fee of €30 per hour after that. The second company, Well Mended Ltd., said they don’t have a callout fee, just a fee of €40 per hour. Both companies estimated that the work could take up to 8 hours.",
+    questionText: "On the axes below, draw the graphs of the fees that each of the two companies charge, over the first 8 hours. (Put the relevant company name on each graph.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2015-fl-p1-q9-d-solution-1", kind: "point", verbatim: "One company plotted correctly, ≥ 6 hours", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q9-d-solution-2", kind: "point", verbatim: "Both companies plotted correctly, ≥ 6 hours for each company", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17,28],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q9-e", topicId: "maths-5-1", conceptId: "p1-q9-e",
+    section: "B", questionRef: "2015 FL Paper 1 Q9(e)",
+    stem: "Chris needed to repair the pump in his well. He telephoned two companies and asked them about their fees. The first company, Well Well Ltd., said they have a callout fee of €50 and a fee of €30 per hour after that. The second company, Well Mended Ltd., said they don’t have a callout fee, just a fee of €40 per hour. Both companies estimated that the work could take up to 8 hours. Part (d) asks you to draw the graphs of the fees charged by both companies over the first 8 hours.",
+    questionText: "What are the co-ordinates of the point of intersection of your two graphs? Explain what each of the two numbers mean in the context of the question.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q9-e-solution-1", kind: "point", verbatim: "(5, 200)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q9-e-solution-2", kind: "point", verbatim: "If the job takes 5 hours both companies will charge €200.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17,28],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q10-a-i", topicId: "maths-3-4", conceptId: "p1-q10-a-i",
+    section: "B", questionRef: "2015 FL Paper 1 Q10(a)(i)",
+    stem: "Geraldine’s company, TLC Ltd., makes rectangular cardboard boxes with lids. Two of the company’s boxes, Box A and Box B, with their dimensions given, are shown below. Box A is 7 cm by 6 cm by 2 cm. Box B is 8 cm by 4 cm by 3 cm. Geraldine has been told that both boxes have the same surface area.",
+    questionText: "Show that both boxes have the same surface area.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q10-a-i-solution-1", kind: "point", verbatim: "Calculates area of one side", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q10-a-i-solution-2", kind: "point", verbatim: "Calculates area of one box", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[18,29],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q10-a-ii", topicId: "maths-3-4", conceptId: "p1-q10-a-ii",
+    section: "B", questionRef: "2015 FL Paper 1 Q10(a)(ii)",
+    stem: "Geraldine’s company, TLC Ltd., makes rectangular cardboard boxes with lids. Two of the company’s boxes, Box A and Box B, with their dimensions given, are shown below. Box A is 7 cm by 6 cm by 2 cm. Box B is 8 cm by 4 cm by 3 cm. Geraldine has been told that both boxes have the same surface area.",
+    questionText: "Geraldine wants to use the box with the greater volume. Find which box has the greater volume.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q10-a-ii-solution-1", kind: "point", verbatim: "Answer: Box B", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q10-a-ii-solution-2", kind: "point", verbatim: "Calculates volume of one box", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[19,29],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q10-b-i", topicId: "maths-2-1", conceptId: "p1-q10-b-i",
+    section: "B", questionRef: "2015 FL Paper 1 Q10(b)(i)",
+    stem: "The diagram below shows the logo for Geraldine’s company, TLC Ltd. Each letter is contained in a quarter circle of radius 6 cm.",
+    questionText: "Construct the full sized logo in the grid below. (You do not need to include the letters.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2015-fl-p1-q10-b-i-solution-1", kind: "point", verbatim: "Constructs a circle of radius 6 cm", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q10-b-i-solution-2", kind: "point", verbatim: "Constructs one sector of radius 6 cm", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,6,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[20,29],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "measurementRequired": true,
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q10-b-ii", topicId: "maths-3-4", conceptId: "p1-q10-b-ii",
+    section: "B", questionRef: "2015 FL Paper 1 Q10(b)(ii)",
+    stem: "The diagram below shows the logo for Geraldine’s company, TLC Ltd. Each letter is contained in a quarter circle of radius 6 cm.",
+    questionText: "Find the length of the perimeter of this logo. Give your answer correct to the nearest whole number.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q10-b-ii-solution-1", kind: "point", verbatim: "Formula for perimeter of a circle or work of relevance", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q10-b-ii-solution-2", kind: "point", verbatim: "Calculates perimeter of a circle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[21,29],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q10-b-iii", topicId: "maths-3-4", conceptId: "p1-q10-b-iii",
+    section: "B", questionRef: "2015 FL Paper 1 Q10(b)(iii)",
+    stem: "The diagram below shows the logo for Geraldine’s company, TLC Ltd. Each letter is contained in a quarter circle of radius 6 cm.",
+    questionText: "Find the area of the logo. Give your answer correct to three decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2015-fl-p1-q10-b-iii-solution-1", kind: "point", verbatim: "Formula for area of a circle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2015-fl-p1-q10-b-iii-solution-2", kind: "point", verbatim: "Calculates area of a circle", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[21,29],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2015, level: "foundation",
+    paperFileid: "LC003BLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
+    id: "maths-2015-fl-p1-q10-b-iv", topicId: "maths-3-3", conceptId: "p1-q10-b-iv",
+    section: "B", questionRef: "2015 FL Paper 1 Q10(b)(iv)",
+    stem: "The diagram below shows the logo for Geraldine’s company, TLC Ltd. Each letter is contained in a quarter circle of radius 6 cm.",
+    questionText: "The material used to construct the logo costs €0·25 per cm². Find the cost of constructing 50 logos, correct to the nearest euro.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2015-fl-p1-q10-b-iv-solution-1", kind: "point", verbatim: "Answer (iii) used in relevant calculation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[21,29],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003BLP100EV.pdf",
+          "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
 ];
