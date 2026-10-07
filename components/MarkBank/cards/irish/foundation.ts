@@ -2,8 +2,9 @@ import type { IrishCriterion, SecRubricCard } from '../../../../types/markBank';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 import authored from './foundation-authored.json';
 import authored2024 from './foundation-2024-authored.json';
+import authored2023 from './foundation-2023-authored.json';
 
-export const CARDS: SecRubricCard[] = [authored2024, authored].flatMap(({ cards, review }) => cards.map(card => ({
+export const CARDS: SecRubricCard[] = [authored2023, authored2024, authored].flatMap(({ cards, review }) => cards.map((card): SecRubricCard => ({
   id: card.id,
   subjectId: 'irish',
   level: 'foundation',

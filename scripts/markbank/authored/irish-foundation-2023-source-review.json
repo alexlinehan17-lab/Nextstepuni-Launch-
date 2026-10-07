@@ -6,7 +6,7 @@
   "paperSha256": "63e6c61769a22b1420822ff37a379ea8d9ccc7fc3b73fa42d34fae175528aaac",
   "schemeSha256": "329234acc3dd24894a9ed50c1ab163a9265e4cc11b6c3894c7fb6aacda7f7338",
   "reviewDate": "2026-10-07",
-  "status": "visual-sweep-complete-authoring-pending",
+  "status": "reviewed",
   "reviewedPaperPages": [
     1,
     2,
@@ -288,11 +288,21 @@
     "contentType": "audio/mpeg",
     "bytes": 54901250,
     "verified": "2026-10-07",
-    "browserPlayback": "pending"
+    "browserReadyState": 4,
+    "durationSeconds": 1715.664063,
+    "playbackAdvanced": true
   },
-  "remainingWork": [
-    "Author 70 tasks/routes with exact prompts, scheme criteria and source context.",
-    "Generalize the reviewed Foundation Atlas setup using the actual per-year letter/form and story/news classifications; preserve all preceding IDs and fields.",
-    "Run source selection guard, tariff/topic/preservation checks and mobile source/audio/scheme QA before adding this paper to full-review inventory."
-  ]
+  "remainingWork": [],
+  "runtimeVerification": {
+    "viewport": [
+      390,
+      844
+    ],
+    "sourceReaderRoutesChecked": 12,
+    "atlasRoutesChecked": 4,
+    "sourceReader": "All source formats rendered; next/last page navigation, close/focus return and horizontal overflow checks passed.",
+    "atlas": "All paper/scheme pages rendered, including two source pages and five scheme pages for the notice/letter pair.",
+    "audio": "Official SEC Foundation 2023 recording played in Bank and Atlas, readyState 4, duration 1715.664063 seconds.",
+    "browserErrors": []
+  }
 }

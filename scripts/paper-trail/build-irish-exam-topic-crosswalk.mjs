@@ -698,7 +698,7 @@ for (const paper of papers) {
 
 // Reviewed task boundaries override generic section guesses for this exact
 // paper. Frozen baseline identities remain below; new parts/routes are additive.
-const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json']
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
 for (const card of foundationTasks.cards) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
@@ -717,7 +717,7 @@ for (const card of foundationTasks.cards) {
   });
   paper.q.at(-1).reviewedSchemePages = card.schemePages;
   paper.q.at(-1).audioMaterial = card.audioMaterial;
-  if (card.year === 2024) paper.q.at(-1).practiceInstruction = 'Don chárta seo: ' + card.questionRef.replace(/^\d{4} FL /, '') + '.';
+  if (card.year <= 2024) paper.q.at(-1).practiceInstruction = 'Don chárta seo: ' + card.questionRef.replace(/^\d{4} FL /, '') + '.';
   paper.hasReviewedFoundationTasks = true;
 }
 for (const card of reviewedHigherTasks) {
@@ -760,9 +760,13 @@ for (const card of reviewedHigherTasks) {
   paper.hasReviewedHigherTasks = true;
 }
 for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks)) {
+  const reviewedCards = foundationTasks.cards.filter(c => c.year === reviewedFoundation.year);
+  const passage = reviewedCards.find(c => c.atlasQuestionId === 'R-2C-1');
+  const letterOrForm = reviewedCards.find(c => c.atlasQuestionId === 'W-4B' || c.atlasQuestionId.startsWith('W-4B-'));
+  const writingTopics = [...new Set(reviewedCards.filter(c => c.section === '3').flatMap(c => c.examTopicKeys.map(key => F[key])))];
   for (const [n, label, topics] of [
-    ['R-2C', 'Léamhthuiscint · Scéal', [F.extract]],
-    ['W-4B', 'Scríobh · Foirm Iarratais', [F.form]],
+    ['R-2C', passage.examTopicKeys.includes('news') ? 'Léamhthuiscint · Scéal Nuachta' : 'Léamhthuiscint · Scéal', passage.examTopicKeys.map(key => F[key])],
+    ['W-4B', letterOrForm.examTopicKeys.includes('letterWriting') ? 'Scríobh · Litir' : 'Scríobh · Foirm Iarratais', letterOrForm.examTopicKeys.map(key => F[key])],
   ]) {
     const q = reviewedFoundation.q.find(q => q.n === n);
     q.label = label;
@@ -771,6 +775,17 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
     const { secondary: ignored, ...previous } = q;
     Object.keys(q).forEach(key => delete q[key]);
     Object.assign(q, previous, canonicalForTopicIds(topics));
+  }
+
+  // Whole-section archive entries retain their identities, but only advertise
+  // writing formats actually printed in this reviewed year's four choices.
+  const writingSection = reviewedFoundation.q.find(q => q.n === '3');
+  writingSection.baseTopicIds = writingTopics;
+  writingSection.reviewedTopicIds = writingTopics;
+  const writingCanonical = [...new Set(writingTopics.flatMap(id => CURRICULUM_CROSSWALK[id]))];
+  if (!writingCanonical.includes(writingSection.primary)) {
+    delete writingSection.secondary;
+    Object.assign(writingSection, canonicalForTopicIds(writingTopics));
   }
 
   const foundationSchemeSections = {
