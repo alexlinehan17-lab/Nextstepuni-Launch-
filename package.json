@@ -54,7 +54,7 @@
     "matter-js": "^0.20.0",
     "motion": "12.43.0",
     "pdfjs-dist": "^6.2.108",
-    "react": "^19.2.0",
+    "react": "^19.3.0",
     "react-compare-slider": "^4.0.0",
     "react-dom": "^19.2.0",
     "react-rough-notation": "^1.0.8",
