@@ -8,6 +8,7 @@ import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
 import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
+import foundation2020 from '../scripts/markbank/mathematics/reviews/2020-foundation-single.json';
 import foundation2021 from '../scripts/markbank/mathematics/reviews/2021-foundation-single.json';
 import foundation2022 from '../scripts/markbank/mathematics/reviews/2022-foundation-single.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/maths/higher';
@@ -117,6 +118,7 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 
 
 describe.each([
+  { year: 2020, count: 34, offered: 300, review: foundation2020 },
   { year: 2021, count: 48, offered: 390, review: foundation2021 },
   { year: 2022, count: 53, offered: 390, review: foundation2022 },
   { year: 2023, count: 35, offered: 375, review: foundation2023 },
@@ -160,6 +162,23 @@ describe.each([
 
 describe('Foundation Mathematics marking boundaries and source context', () => {
   const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
+
+  it('retains the 2020 shared scales, year-specific marks and diagram dependencies', () => {
+    for (const suffix of ['q4-a-i-ii', 'q5-b-i-ii-iii', 'q10-a-i-ii-iii']) {
+      expect(task(2020, suffix).totalMarks).toBe(15);
+      expect(task(2020, suffix).questionText).toContain('(ii)');
+    }
+    const probability = task(2020, 'q3-b-ii');
+    expect(probability.sourceMaterial?.pages).toEqual([8, 9]);
+    expect(probability.stem).toContain('A girl is chosen');
+    expect(task(2020, 'q4-a-i-ii').sourceMaterial?.measurementRequired).toBe(true);
+    expect(task(2020, 'q4-b').sourceMaterial?.measurementRequired).toBe(true);
+    expect(task(2020, 'q10-c-i').sourceMaterial?.pages).toEqual([22, 23, 24]);
+    const percent = task(2020, 'q7-a-i');
+    expect('mathematicsScale' in percent && percent.mathematicsScale?.marks).toEqual([0, 3, 4, 5]);
+    const sum = task(2020, 'q1-a-i');
+    expect('mathematicsScale' in sum && sum.mathematicsScale?.marks).toEqual([0, 4, 8, 10]);
+  });
 
   it('keeps the 2021 cross-letter journey scale and all shared prompts with their dependencies', () => {
     const journey = task(2021, 'q9-d-e');

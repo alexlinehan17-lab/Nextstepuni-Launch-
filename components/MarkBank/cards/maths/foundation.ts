@@ -7163,4 +7163,952 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q1-a-i", topicId: "maths-3-3", conceptId: "q1-a-i",
+    section: "A", questionRef: "2020 FL Q1(a)(i)",
+    stem: "There are 3 prizes to be won in a raffle. The first prize is €2500. The second prize is €1000 and the third prize is €500. The total printing costs amount to €400.",
+    questionText: "Find the total cost of running this raffle.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q1-a-i-solution-1", kind: "point", verbatim: "2500 + 1000 + 500 + 400 = €4400", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[6],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q1-a-ii", topicId: "maths-3-3", conceptId: "q1-a-ii",
+    section: "A", questionRef: "2020 FL Q1(a)(ii)",
+    stem: "There are 3 prizes to be won in a raffle. The first prize is €2500. The second prize is €1000 and the third prize is €500. The total printing costs amount to €400. A ticket in the raffle costs €10.",
+    questionText: "Find the number of tickets that must be sold in order to make a profit of €5000.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q1-a-ii-solution-1", kind: "point", verbatim: "4400 + 5000 = €9400", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q1-a-ii-solution-2", kind: "point", verbatim: "No. of tickets: 9400 ÷ 10 = 940", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[6],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q1-b", topicId: "maths-3-3", conceptId: "q1-b",
+    section: "A", questionRef: "2020 FL Q1(b)",
+    stem: "Chris needs to buy oil for his lawnmower. In a shop there is a 2 litre container of Oil A for sale at €15·50. Also in the shop, a 0·5 litre container of Oil B sells at €4·49. This oil is on “Special Offer” so that, if he buys two 0·5 litre containers of oil, he will get a 15% discount.",
+    questionText: "What is the price per litre of the oil in each case?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q1-b-solution-1", kind: "point", verbatim: "Oil A: 15·50 ÷ 2 = €7·75", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q1-b-solution-2", kind: "point", verbatim: "Oil B: 4·49 × 2 = 8·98 – 15% = €7·63", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[6],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q2-a", topicId: "maths-3-4", conceptId: "q2-a",
+    section: "A", questionRef: "2020 FL Q2(a)",
+    stem: "Michelle wanted a metal sign, as in the diagram below, made for her shop. ABGH and GDEF are squares of sides 30 cm and 20 cm, respectively.",
+    questionText: "Find, in cm, the perimeter of the sign.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q2-a-solution-1", kind: "point", verbatim: "30 + 30 + 20 + 20 + 20 + 30 + 20 + 30", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q2-a-solution-2", kind: "point", verbatim: "= 200", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q2-b", topicId: "maths-3-4", conceptId: "q2-b",
+    section: "A", questionRef: "2020 FL Q2(b)",
+    stem: "Michelle wanted a metal sign, as in the diagram below, made for her shop. ABGH and GDEF are squares of sides 30 cm and 20 cm, respectively.",
+    questionText: "Find, in cm², the area of the sign.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q2-b-solution-1", kind: "point", verbatim: "30 × 30 + 20 × 20 + 30 × 20 =", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q2-b-solution-2", kind: "point", verbatim: "900 + 400 + 600 =", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6,
+                7
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q2-c", topicId: "maths-3-4", conceptId: "q2-c",
+    section: "A", questionRef: "2020 FL Q2(c)",
+    stem: "Michelle wanted a metal sign, as in the diagram below, made for her shop. ABGH and GDEF are squares of sides 30 cm and 20 cm, respectively. The sign was cut from a square sheet of metal, 50 cm × 50 cm.",
+    questionText: "What percentage of the square sheet was used?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q2-c-solution-1", kind: "point", verbatim: "50 × 50 = 2500", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q2-c-solution-2", kind: "point", verbatim: "= 76%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6,
+                7
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q3-a", topicId: "maths-1-6", conceptId: "q3-a",
+    section: "A", questionRef: "2020 FL Q3(a)",
+    stem: "There are 30 students in a class. Each student studies exactly one of the following languages: French, German, or Spanish. The table below shows some of the class data.",
+    questionText: "Complete the table.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2020-fl-q3-a-solution-1", kind: "point", verbatim: "At least 3 correct or consistent entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q3-b-i", topicId: "maths-1-2", conceptId: "q3-b-i",
+    section: "A", questionRef: "2020 FL Q3(b)(i)",
+    stem: "There are 30 students in a class. Each student studies exactly one of the following languages: French, German, or Spanish. The table below shows some of the class data. A student is chosen at random from the class.",
+    questionText: "What is the probability that the student studies Spanish?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q3-b-i-solution-1", kind: "point", verbatim: "correct denominator/ correct numerator as part of a fraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q3-b-ii", topicId: "maths-1-2", conceptId: "q3-b-ii",
+    section: "A", questionRef: "2020 FL Q3(b)(ii)",
+    stem: "There are 30 students in a class. Each student studies exactly one of the following languages: French, German, or Spanish. The table below shows some of the class data. A girl is chosen at random from the class.",
+    questionText: "What is the probability that she studies French?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q3-b-ii-solution-1", kind: "point", verbatim: "correct denominator / correct numerator as part of a fraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q4-a-i-ii", topicId: "maths-2-1", conceptId: "q4-a-i-ii",
+    section: "A", questionRef: "2020 FL Q4(a)(i), Q4(a)(ii)",
+    stem: "In the diagram on the next page, the points A, B, and C represent 3 towns. Town A is 30 km due west of Town B. The scale of the diagram is 1 cm = 5 km.",
+    questionText: "(i) C is a point due south of B. Find, in km, the distance from Town B to Town C. (ii) Use Pythagoras’ Theorem to find the distance from Town A to Town C. Give your answer in km.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2020-fl-q4-a-i-ii-solution-1", kind: "point", verbatim: "8 × 5 = 40", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q4-a-i-ii-solution-2", kind: "point", verbatim: "Must show evidence of Pythagoras for full credit.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "measurementRequired": true,
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q4-b", topicId: "maths-2-1", conceptId: "q4-b",
+    section: "A", questionRef: "2020 FL Q4(b)",
+    stem: "In the diagram on the next page, the points A, B, and C represent 3 towns. Town A is 30 km due west of Town B. The scale of the diagram is 1 cm = 5 km. Rory and Aoife want to build a house for themselves. Rory works in Town A and doesn’t want to live more than 30 km away from Town A. Aoife works in Town C and doesn’t want to live more than 30 km away from Town C.",
+    questionText: "On the diagram below, draw and shade in the region where it would be possible to build a house that satisfies both of these conditions.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q4-b-solution-1", kind: "point", verbatim: "Accept tolerance of ± one box", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q4-b-solution-2", kind: "point", verbatim: "1 correct arc drawn", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "measurementRequired": true,
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q5-a", topicId: "maths-4-2", conceptId: "q5-a",
+    section: "A", questionRef: "2020 FL Q5(a)",
+    stem: "Cliff has an aquarium (consisting of a tank, water and fish) at home. He needs to know the weight of the empty tank, but does not want to remove the fish. He weighs the tank when it is full of water and the weight is 11 kg. He then removes water from the tank until it is exactly half full. The weight is now 7 kg.",
+    questionText: "What is the weight of the empty tank? (The weight of the fish is very small and can be ignored.)",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q5-a-solution-1", kind: "point", verbatim: "Wt. of half tank water: 11 ‒ 7 = 4 kg", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q5-a-solution-2", kind: "point", verbatim: "Wt. of full tank of water: 4 × 2 = 8 kg", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q5-a-solution-3", kind: "point", verbatim: "Wt. of tank: 11 – 8 = 3 kg", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q5-b-i-ii-iii", topicId: "maths-2-4", conceptId: "q5-b-i-ii-iii",
+    section: "A", questionRef: "2020 FL Q5(b)(i), Q5(b)(ii), Q5(b)(iii)",
+    stem: "In the diagram below, △XYZ is the image of △ABC by an enlargement with a scale factor of 4. (The diagram is not to scale.)",
+    questionText: "(i) |AB| = 2 cm. What is |XY|? (ii) |∠CAB| = 60°. What is |∠ZXY|? (iii) The area of △ABC is 1·5 cm². What is the area of △XYZ?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2020-fl-q5-b-i-ii-iii-solution-1", kind: "point", verbatim: "2 × 4 = 8 cm", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q5-b-i-ii-iii-solution-2", kind: "point", verbatim: "1·5 × 16 = 24 cm2", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q6-a-i", topicId: "maths-3-4", conceptId: "q6-a-i",
+    section: "A", questionRef: "2020 FL Q6(a)(i)",
+    stem: "A sphere of radius 5 cm is shown in the diagram below.",
+    questionText: "Find the volume of the sphere correct to the nearest cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q6-a-i-solution-1", kind: "point", verbatim: "= 523∙59", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q6-a-i-solution-2", kind: "point", verbatim: "= 524", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q6-a-ii", topicId: "maths-3-4", conceptId: "q6-a-ii",
+    section: "A", questionRef: "2020 FL Q6(a)(ii)",
+    stem: "A sphere of radius 5 cm is shown in the diagram below.",
+    questionText: "Find the surface area of the sphere correct to the nearest cm².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q6-a-ii-solution-1", kind: "point", verbatim: "4 × 𝜋× 52= 314∙15", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q6-a-ii-solution-2", kind: "point", verbatim: "= 314", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q6-b", topicId: "maths-3-4", conceptId: "q6-b",
+    section: "A", questionRef: "2020 FL Q6(b)",
+    stem: "The bottle in the diagram below contains 600 cm³ of juice when it is full. The bottom portion (from A to B) is in the shape of a cylinder of diameter 7 cm. Carla pours some of the juice into a glass. The height of the juice remaining in the bottle is 11 cm, as shown.",
+    questionText: "How much juice did Carla pour into the glass? Give your answer correct to the nearest cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q6-b-solution-1", kind: "point", verbatim: "r = 3·5 cm", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q6-b-solution-2", kind: "point", verbatim: "600 – 423 = 177", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q7-a-i", topicId: "maths-3-3", conceptId: "q7-a-i",
+    section: "A", questionRef: "2020 FL Q7(a)(i)",
+    stem: "Valerie earns €635 each week. She pays income tax at the standard rate of 20%.",
+    questionText: "Find Valerie’s gross tax per week.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q7-a-i-solution-1", kind: "point", verbatim: "= €127", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q7-a-ii", topicId: "maths-3-3", conceptId: "q7-a-ii",
+    section: "A", questionRef: "2020 FL Q7(a)(ii)",
+    stem: "Valerie earns €635 each week. She pays income tax at the standard rate of 20%. She has a tax credit of €62 per week.",
+    questionText: "Find her net tax.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q7-a-ii-solution-1", kind: "point", verbatim: "127 – 62 = €65", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q7-a-iii", topicId: "maths-3-3", conceptId: "q7-a-iii",
+    section: "A", questionRef: "2020 FL Q7(a)(iii)",
+    stem: "Valerie earns €635 each week. She pays income tax at the standard rate of 20%. She has a tax credit of €62 per week. She also pays PRSI of €11·50 and USC of €18·80 per week.",
+    questionText: "Find Valerie’s weekly take-home pay.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q7-a-iii-solution-1", kind: "point", verbatim: "65 + 11·50 + 18·80 = 95·30", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q7-a-iii-solution-2", kind: "point", verbatim: "635 – 95·30 = €539·70", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q7-b", topicId: "maths-3-3", conceptId: "q7-b",
+    section: "A", questionRef: "2020 FL Q7(b)",
+    stem: "Sonya also earns €635 each week. Her take-home pay is €533·40.",
+    questionText: "What percentage (%) of €635 is her take-home pay?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q7-b-solution-1", kind: "point", verbatim: "× 100 = 84%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q8-a-i", topicId: "maths-1-6", conceptId: "q8-a-i",
+    section: "A", questionRef: "2020 FL Q8(a)(i)",
+    stem: "Students in a class did a survey on the distance (to the nearest km) that each student in the school travelled from their home to reach the school. The data is displayed in the histogram below. Note: 5 − 10 means 5 km or more, but less than 10 km, etc.",
+    questionText: "Use the data shown in the histogram to complete the table.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q8-a-i-solution-1", kind: "point", verbatim: "2 correct or consistent entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q8-a-ii", topicId: "maths-1-6", conceptId: "q8-a-ii",
+    section: "A", questionRef: "2020 FL Q8(a)(ii)",
+    stem: "Students in a class did a survey on the distance (to the nearest km) that each student in the school travelled from their home to reach the school. The data is displayed in the histogram below. Note: 5 − 10 means 5 km or more, but less than 10 km, etc.",
+    questionText: "How many students are in the school?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q8-a-ii-solution-1", kind: "point", verbatim: "Any relevant work with some table entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18,
+                19
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q8-a-iii", topicId: "maths-1-6", conceptId: "q8-a-iii",
+    section: "A", questionRef: "2020 FL Q8(a)(iii)",
+    stem: "Students in a class did a survey on the distance (to the nearest km) that each student in the school travelled from their home to reach the school. The data is displayed in the histogram below. Note: 5 − 10 means 5 km or more, but less than 10 km, etc.",
+    questionText: "What fraction of the students live between 5 km and 15 km from the school?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q8-a-iii-solution-1", kind: "point", verbatim: "160 + 90 = 250", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18,
+                19
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q8-b", topicId: "maths-1-6", conceptId: "q8-b",
+    section: "A", questionRef: "2020 FL Q8(b)",
+    stem: "Jamie did a quick survey among some of his classmates. He surveyed 7 students about the distance they travelled to school. They each gave different answers. He put the numbers in order in the boxes below. The median distance was 7 and the range was 15. The boxes in order are: 1, 5, [ ], [ ], 14, [ ], [ ].",
+    questionText: "Use this information to fill in the missing distances in the boxes below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q8-b-solution-1", kind: "point", verbatim: "Any relevant work on median or range", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q9-a", topicId: "maths-4-2", conceptId: "q9-a",
+    section: "B", questionRef: "2020 FL Q9(a)",
+    stem: "Laura lives in Sligo with her parents and twin brothers. The sum of the ages of Laura and her twin brothers is 44 years. In 6 years’ time each of the twins will be 20 years old.",
+    questionText: "What age will Laura be in 6 years’ time?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q9-a-solution-1", kind: "point", verbatim: "44 – (14 + 14) = 16 (Laura’s age now)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q9-a-solution-2", kind: "point", verbatim: "In 6 years: 16 + 6 = 22", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q9-b", topicId: "maths-1-1", conceptId: "q9-b",
+    section: "B", questionRef: "2020 FL Q9(b)",
+    stem: "Laura’s family plan to travel to Dublin for the day. Laura must decide what to wear. She can choose from 5 tops, 3 pairs of jeans, and 2 pairs of runners.",
+    questionText: "How many different outfits (a top and a pair of jeans and a pair of runners) can she choose for her trip?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q9-b-solution-1", kind: "point", verbatim: "5 × 3 × 2 = 30", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q9-c", topicId: "maths-3-3", conceptId: "q9-c",
+    section: "B", questionRef: "2020 FL Q9(c)",
+    stem: "The family leave their home at 7:20 am and arrive in Dublin at 9:50 am. The distance from Sligo to Dublin is 210 km.",
+    questionText: "What is their average speed, in km/h, for the journey?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q9-c-solution-1", kind: "point", verbatim: "9:50 – 7:20 = 2h 30 mins (2·5 hours)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q9-c-solution-2", kind: "point", verbatim: "= 84", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q9-d-i", topicId: "maths-3-4", conceptId: "q9-d-i",
+    section: "B", questionRef: "2020 FL Q9(d)(i)",
+    stem: "While in Dublin, they visit a small rectangular park with a circular pond in the centre. The pond is 20 m in diameter. The length of the diagonal [AC] (the straight line from A to C) is 130 m. The lines on the diagram below show all the paths in the park. Laura and her parents walk through the park from A to E, then around the pond from E to F and continue on to C.",
+    questionText: "How far did they have to walk? Give your answer correct to the nearest metre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2020-fl-q9-d-i-solution-1", kind: "point", verbatim: "Semicircle: r = 10;", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q9-d-i-solution-2", kind: "point", verbatim: "130 −20 + 31 = 141", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q9-d-ii", topicId: "maths-2-1", conceptId: "q9-d-ii",
+    section: "B", questionRef: "2020 FL Q9(d)(ii)",
+    stem: "While in Dublin, they visit a small rectangular park with a circular pond in the centre. The pond is 20 m in diameter. The length of the diagonal [AC] (the straight line from A to C) is 130 m. The lines on the diagram below show all the paths in the park. The distance from A to B is 120 m.",
+    questionText: "Find the distance from B to C.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q9-d-ii-solution-1", kind: "point", verbatim: "= 50 m", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q10-a-i-ii-iii", topicId: "maths-5-1", conceptId: "q10-a-i-ii-iii",
+    section: "B", questionRef: "2020 FL Q10(a)(i), Q10(a)(ii), Q10(a)(iii)",
+    stem: "There are 2 fuel tanks, Tank A and Tank B, on a factory site. In the diagram drawn on the next page, the line shows the amount of fuel in Tank A over a number of days. The tank is full at the beginning of day 0.",
+    questionText: "(i) How many litres of fuel are in Tank A when it is full? (ii) After how many days is Tank A empty? (iii) How many litres of fuel are used from Tank A each day?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2020-fl-q10-a-i-ii-iii-solution-1", kind: "point", verbatim: "Two parts correct or with answers consistent with previous work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2020-fl-q10-a-i-ii-iii-solution-2", kind: "point", verbatim: "= 37·5", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q10-b-i", topicId: "maths-5-1", conceptId: "q10-b-i",
+    section: "B", questionRef: "2020 FL Q10(b)(i)",
+    stem: "Tank B holds 800 litres, when full. This tank is also full at the beginning of day 0. Each day 100 litres of fuel from this tank are used.",
+    questionText: "Complete the table below to show the amount of fuel remaining in the tank at the beginning of each of the following 8 days.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q10-b-i-solution-1", kind: "point", verbatim: "Four correct or consistent entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q10-b-ii", topicId: "maths-5-1", conceptId: "q10-b-ii",
+    section: "B", questionRef: "2020 FL Q10(b)(ii)",
+    stem: "Tank B holds 800 litres, when full. This tank is also full at the beginning of day 0. Each day 100 litres of fuel from this tank are used.",
+    questionText: "Plot all the points from the table on the diagram below and join them with a line.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q10-b-ii-solution-1", kind: "point", verbatim: "Four correct plots from candidates table (un-joined or joined)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q10-c-i", topicId: "maths-3-1", conceptId: "q10-c-i",
+    section: "B", questionRef: "2020 FL Q10(c)(i)",
+    stem: "There are 2 fuel tanks, Tank A and Tank B, on a factory site. In the diagram drawn on the next page, the line shows the amount of fuel in Tank A over a number of days. The tank is full at the beginning of day 0. Tank B holds 800 litres, when full. This tank is also full at the beginning of day 0. Each day 100 litres of fuel from this tank are used. Each tank is refilled as soon as it is empty.",
+    questionText: "If both tanks are full on day 0, how many days will pass until both tanks are empty together?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2020-fl-q10-c-i-solution-1", kind: "point", verbatim: "Two relevant patterns used", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23,
+                24
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2020, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2020 Foundation Level — © State Examinations Commission.",
+    id: "maths-2020-fl-q10-c-ii", topicId: "maths-3-3", conceptId: "q10-c-ii",
+    section: "B", questionRef: "2020 FL Q10(c)(ii)",
+    stem: "A refill of fuel for Tank B costs €738 which includes VAT at 23%.",
+    questionText: "How much is the VAT?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2020-fl-q10-c-ii-solution-1", kind: "point", verbatim: "VAT: 738 – 600 = €138", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2020 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
 ];
