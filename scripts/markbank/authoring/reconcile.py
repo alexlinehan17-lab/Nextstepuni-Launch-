@@ -122,7 +122,7 @@ def shipped_cards(subject):
     "g-parent1") and paired each with the next card's citation, which
     invented five hundred phantom orphans in Business alone.
     """
-    if subject in ('english', 'irish', 'art', 'geography'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society'):
         # Paper-specific facts live in a reviewed generated manifest and are
         # converted to runtime cards by factory.ts; the tiny level exports do
         # not contain literal card objects for the ledger to parse.
@@ -456,7 +456,7 @@ def reconcile_subject(subject, census=None):
     census = census or census_subject(subject)
     if subject == 'geography':
         return reconcile_geography(census)
-    if subject in ('english', 'irish', 'art'):
+    if subject in ('english', 'irish', 'art', 'politics-and-society'):
         return reconcile_manifest(subject, census)
     sections_mode = census['mode'] == 'sections'
     idx = leaf_index(census)
@@ -599,7 +599,7 @@ def content_hash(subject):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if os.path.exists(path):
             h.update(open(path, 'rb').read())
-    if subject in ('english', 'irish', 'art', 'geography'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society'):
         # These corpora are data-driven, so the manifest and factory can
         # materially change a runtime card even when the tiny exports do not.
         for name in ('factory.ts', 'authored.json'):
@@ -612,7 +612,7 @@ def papers_inventory(subject):
     only (gitignored), so a deleted or swapped paper would silently shrink
     the census — this pins their names and sizes."""
     import hashlib
-    root = os.path.join(ROOT, 'examiner-reports', subject, 'papers')
+    root = os.path.join(ROOT, 'examiner-reports', 'politics-society' if subject == 'politics-and-society' else subject, 'papers')
     rows = sorted(f'{f}:{os.path.getsize(os.path.join(root, f))}'
                   for f in os.listdir(root) if f.endswith('.pdf'))
     return {'count': len(rows),
@@ -630,7 +630,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]
