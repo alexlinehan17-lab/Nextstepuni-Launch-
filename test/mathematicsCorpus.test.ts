@@ -8,6 +8,7 @@ import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
 import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
+import foundation2014p1 from '../scripts/markbank/mathematics/reviews/2014-foundation-p1-project.json';
 import foundation2015 from '../scripts/markbank/mathematics/reviews/2015-foundation-p1.json';
 import foundation2016 from '../scripts/markbank/mathematics/reviews/2016-foundation-p1.json';
 import foundation2017 from '../scripts/markbank/mathematics/reviews/2017-foundation-p1.json';
@@ -139,6 +140,7 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 
 
 describe.each([
+  { year: 2014, count: 36, offered: 300, review: foundation2014p1 },
   { year: 2015, count: 35, offered: 300, review: foundation2015 },
   { year: 2016, count: 39, offered: 300, review: foundation2016 },
   { year: 2017, count: 34, offered: 300, review: foundation2017 },
@@ -152,7 +154,7 @@ describe.each([
   { year: 2025, count: 42, offered: 375, review: foundation },
   { year: 2026, count: 42, offered: 375, review: foundation2026 },
 ])('$year Foundation Mathematics independent source review', ({ year, count, offered, review: census }) => {
-  const cards = FOUNDATION.filter(card => card.year === year);
+  const cards = FOUNDATION.filter(card => card.year === year && card.sourceMaterial?.sourceFileid === census.paperFileid);
 
   it('retains every published marking unit and all offered marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
@@ -188,6 +190,25 @@ describe.each([
 
 describe('Foundation Mathematics marking boundaries and source context', () => {
   const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
+
+  it('preserves the 2014 graph instructions and the complete average-speed sources', () => {
+    const speed = task(2014, 'p1-project-q10-d-i-ii');
+    expect(speed.sourceMaterial?.pages).toEqual([14, 15, 16]);
+    expect(speed.questionText).toContain('average speed');
+    expect('mathematicsScale' in speed && speed.mathematicsScale?.schemePages).toEqual([20, 29]);
+    for (const part of ['ii', 'iii', 'iv']) {
+      expect(task(2014, `p1-project-q8-b-${part}`).questionText).toContain('Show your work on the diagram');
+    }
+    expect(task(2014, 'p1-project-q7-b').topicId).toBe('maths-4-3');
+    expect(task(2014, 'p1-project-q6-a').topicId).toBe('maths-4-1');
+    expect(task(2014, 'p1-project-q6-b').topicId).toBe('maths-4-1');
+    expect(task(2014, 'p1-project-q2-a-i-ii').totalMarks).toBe(10);
+  });
+
+  it('places numerical substitution and expression tables under Expressions', () => {
+    expect(task(2015, 'p1-q7-a-i').topicId).toBe('maths-4-1');
+    expect(task(2017, 'p1-q8-a-iii').topicId).toBe('maths-4-1');
+  });
 
   it('pairs 2015 model solutions with separate credit notes and retains all grouped prompts', () => {
     const journey = task(2015, 'p1-q3-b-i-ii-iii');

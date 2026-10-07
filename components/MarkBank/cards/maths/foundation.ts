@@ -10449,7 +10449,7 @@ export const CARDS: SecCard[] = [
     year: 2017, level: "foundation",
     paperFileid: "LC003BLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2017 Foundation Level — © State Examinations Commission.",
-    id: "maths-2017-fl-p1-q8-a-iii", topicId: "maths-4-2", conceptId: "p1-q8-a-iii",
+    id: "maths-2017-fl-p1-q8-a-iii", topicId: "maths-4-1", conceptId: "p1-q8-a-iii",
     section: "A", questionRef: "2017 FL Paper 1 Q8(a)(iii)",
     stem: "The formula below shows the relationship between C, the temperature in °C (Celsius), and F, the temperature in °F (Fahrenheit): C = 5(F − 32)/9.",
     questionText: "Use the formula to show that 212°F is equivalent to 100°C.",
@@ -12374,7 +12374,7 @@ export const CARDS: SecCard[] = [
     year: 2015, level: "foundation",
     paperFileid: "LC003BLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2015 Foundation Level — © State Examinations Commission.",
-    id: "maths-2015-fl-p1-q7-a-i", topicId: "maths-4-2", conceptId: "p1-q7-a-i",
+    id: "maths-2015-fl-p1-q7-a-i", topicId: "maths-4-1", conceptId: "p1-q7-a-i",
     section: "A", questionRef: "2015 FL Paper 1 Q7(a)(i)",
     stem: "Mary creates a pattern of numbers using the instructions in the table below: start with a number; multiply by 4; subtract 3 from your answer; record the outcome. The first number, 5, is filled in for you: 5 × 4, then 20 − 3, gives outcome 17.",
     questionText: "Complete the table for the next three starting numbers: 6, 7 and 8.",
@@ -12841,6 +12841,996 @@ export const CARDS: SecCard[] = [
           ],
           "sourceFileid": "LC003BLP100EV.pdf",
           "attribution": "SEC Mathematics 2015 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q1-a-i-ii", topicId: "maths-3-1", conceptId: "p1-project-q1-a-i-ii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q1(a)(i), Q1(a)(ii)",
+    stem: "Use your calculator to answer the following.",
+    questionText: "(i) Find √(3 × 10⁵), correct to the nearest whole number. (ii) Find π/12, correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q1-a-i-ii-solution-1", kind: "point", verbatim: "Any work of merit in one part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q1-a-i-ii-solution-2", kind: "point", verbatim: "Some work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7,23],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q1-a-iii", topicId: "maths-3-1", conceptId: "p1-project-q1-a-iii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q1(a)(iii)",
+    stem: "Use your calculator to answer the following.",
+    questionText: "Find 8% of 910, correct to the nearest whole number.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q1-a-iii-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7,23],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q1-b", topicId: "maths-3-1", conceptId: "p1-project-q1-b",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q1(b)",
+    stem: "The population of China is 1·351 × 10⁹ people.",
+    questionText: "Write this as a whole number of people.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q1-b-solution-1", kind: "point", verbatim: "=1 351 000 000", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7,23],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q2-a-i-ii", topicId: "maths-3-2", conceptId: "p1-project-q2-a-i-ii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q2(a)(i), Q2(a)(ii)",
+    questionText: "(i) Write 125 as 5ⁿ, where n ∈ ℕ. (ii) Find 49^(1/2).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q2-a-i-ii-solution-1", kind: "point", verbatim: "Some work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8,23],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q2-b", topicId: "maths-3-2", conceptId: "p1-project-q2-b",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q2(b)",
+    questionText: "Simplify (a⁴)²/a⁵.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q2-b-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8,23],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q2-c-i-ii", topicId: "maths-4-1", conceptId: "p1-project-q2-c-i-ii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q2(c)(i), Q2(c)(ii)",
+    stem: "For each of the following sequences of numbers, use the pattern to continue the sequence for two more terms.",
+    questionText: "(i) 2, 6, 18, 54, ___, ___. (ii) 1, 3, 6, 10, ___, ___.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q2-c-i-ii-solution-1", kind: "point", verbatim: "2, 6, 18, 54, 162, 486", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q2-c-i-ii-solution-2", kind: "point", verbatim: "1, 3, 6, 10, 15, 21", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8,23],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q3-a-i-ii-iii", topicId: "maths-3-1", conceptId: "p1-project-q3-a-i-ii-iii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q3(a)(i), Q3(a)(ii), Q3(a)(iii)",
+    questionText: "(i) Write each of the numbers below correct to the nearest whole number: 1·8, 15·2, 4·9. (ii) Use your values from above to estimate the value of (1·8 × 15·2)/4·9. (iii) Use your calculator to find the actual value of (1·8 × 15·2)/4·9. Give your answer correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q3-a-i-ii-iii-solution-1", kind: "point", verbatim: "Part (i), (ii) or (iii) fully correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q3-a-i-ii-iii-solution-2", kind: "point", verbatim: "Two parts fully correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[9,24],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q3-b-i-ii", topicId: "maths-3-1", conceptId: "p1-project-q3-b-i-ii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q3(b)(i), Q3(b)(ii)",
+    stem: "Part (a) asks you to round 1·8, 15·2 and 4·9 to whole numbers, then use those values to estimate (1·8 × 15·2)/4·9, and use a calculator to find the actual value correct to one decimal place.",
+    questionText: "(i) Find the difference between the actual value and your estimated value in part (a)(ii). (ii) Find the percentage error in your estimate. Give your answer correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q3-b-i-ii-solution-1", kind: "point", verbatim: "6·0 – 5·6= 0·4", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q3-b-i-ii-solution-2", kind: "point", verbatim: "7·1%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[9,24],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q4-a", topicId: "maths-3-4", conceptId: "p1-project-q4-a",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q4(a)",
+    stem: "A surveyor needed to find the area of a small piece of land, bounded in part by two straight walls [AB] and [BC]. He divided [AB] into five equal parts. Each part is 3 m long. The distance to the boundary from each part is shown in the diagram below.",
+    questionText: "Use the Trapezoidal Rule to find the approximate area of the piece of land.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q4-a-solution-1", kind: "point", verbatim: "Correct substitution into formula and fails to finish.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q4-a-solution-2", kind: "point", verbatim: "One error in substitution into formula and finishes correctly.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[10,24],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q4-b-i-ii", topicId: "maths-3-4", conceptId: "p1-project-q4-b-i-ii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q4(b)(i), Q4(b)(ii)",
+    stem: "The diagrams show a shed with an end wall consisting of a rectangle 4 m wide and 2·8 m high topped by a triangle of base 4 m and height 2 m. The shed is 6 m long.",
+    questionText: "(i) Find the area of the end wall. (ii) Find the volume of the shed.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q4-b-i-ii-solution-1", kind: "point", verbatim: "One correct answer.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q4-b-i-ii-solution-2", kind: "point", verbatim: "Some work of merit in both parts.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[11,24],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q5-a-i-ii-iii", topicId: "maths-3-1", conceptId: "p1-project-q5-a-i-ii-iii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q5(a)(i), Q5(a)(ii), Q5(a)(iii)",
+    questionText: "In the spaces provided, write down: (i) 2 natural numbers; (ii) 2 negative integers; (iii) 2 prime numbers.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q5-a-i-ii-iii-solution-1", kind: "point", verbatim: "One correct entry", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q5-a-i-ii-iii-solution-2", kind: "point", verbatim: "Two or three correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q5-a-i-ii-iii-solution-3", kind: "point", verbatim: "Four or five correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12,25],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q5-b-i-ii", topicId: "maths-3-3", conceptId: "p1-project-q5-b-i-ii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q5(b)(i), Q5(b)(ii)",
+    stem: "A tractor depreciates in value at a rate of 15% per year.",
+    questionText: "(i) Write 15% as a decimal. (ii) The tractor was bought for €100 000. Find its value at the end of three years.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q5-b-i-ii-solution-1", kind: "point", verbatim: "0·15", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q5-b-i-ii-solution-2", kind: "point", verbatim: "= €61 412·50", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12,25],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q6-a", topicId: "maths-4-1", conceptId: "p1-project-q6-a",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q6(a)",
+    questionText: "Find the value of x² − 2x + 5 when x = −3.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q6-a-solution-1", kind: "point", verbatim: "9 – 2(–3) + 5", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q6-a-solution-2", kind: "point", verbatim: "= 20", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13,25],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q6-b", topicId: "maths-4-1", conceptId: "p1-project-q6-b",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q6(b)",
+    questionText: "Simplify 3(5a − 1) − 4(a − 2).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q6-b-solution-1", kind: "point", verbatim: "Multiplies out correctly but fails to finish.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13,25],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q6-c", topicId: "maths-4-2", conceptId: "p1-project-q6-c",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q6(c)",
+    questionText: "Solve the equation m² + 2m − 5 = 0. Give your answers correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q6-c-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13,25],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q7-a", topicId: "maths-4-2", conceptId: "p1-project-q7-a",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q7(a)",
+    questionText: "Solve the equation 3x − 1 = 2x + 5.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q7-a-solution-1", kind: "point", verbatim: "Correct solution verified by trial and improvement", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14,26],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q7-b", topicId: "maths-4-3", conceptId: "p1-project-q7-b",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q7(b)",
+    questionText: "Write down the natural numbers, x, which satisfy the inequality 9 − 2x > 1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q7-b-solution-1", kind: "point", verbatim: "{1, 2, 3}", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14,26],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q7-c-i-ii-iii", topicId: "maths-4-2", conceptId: "p1-project-q7-c-i-ii-iii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q7(c)(i), Q7(c)(ii), Q7(c)(iii)",
+    stem: "Ruairí is x years of age.",
+    questionText: "(i) Alex is 7 years older than Ruairí. Write down an expression in x for Alex’s age. (ii) Aideen is three times as old as Ruairí. Write down an expression in x for Aideen’s age. (iii) Aideen’s age added to Alex’s age is 47. How old is Ruairí?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q7-c-i-ii-iii-solution-1", kind: "point", verbatim: "One correct answer", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q7-c-i-ii-iii-solution-2", kind: "point", verbatim: "Work of merit in two or three parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14,26],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q8-a", topicId: "maths-5-1", conceptId: "p1-project-q8-a",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q8(a)",
+    stem: "The function f: x ↦ 3 − 2x is defined for all values of x ∈ ℝ.",
+    questionText: "Find the value of f(−3).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q8-a-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15,27],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q8-b-i", topicId: "maths-5-1", conceptId: "p1-project-q8-b-i",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q8(b)(i)",
+    stem: "The graphs of two functions are shown on the axes below. The functions are g(x) = x + 1, x ∈ ℝ and h(x) = x² − 2x − 3, x ∈ ℝ.",
+    questionText: "Identify the functions by writing g(x) or h(x) in the blank boxes on the diagram above.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q8-b-i-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15,27],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q8-b-ii", topicId: "maths-5-1", conceptId: "p1-project-q8-b-ii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q8(b)(ii)",
+    stem: "The graphs of two functions are shown on the axes below. The functions are g(x) = x + 1, x ∈ ℝ and h(x) = x² − 2x − 3, x ∈ ℝ.",
+    questionText: "Use the diagram to find the value of h(1·5). Show your work on the diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q8-b-ii-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15,27],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q8-b-iii", topicId: "maths-5-1", conceptId: "p1-project-q8-b-iii",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q8(b)(iii)",
+    stem: "The graphs of two functions are shown on the axes below. The functions are g(x) = x + 1, x ∈ ℝ and h(x) = x² − 2x − 3, x ∈ ℝ.",
+    questionText: "Use the diagram to find the value of x for which g(x) = 3. Show your work on the diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q8-b-iii-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15,27],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q8-b-iv", topicId: "maths-5-1", conceptId: "p1-project-q8-b-iv",
+    section: "A", questionRef: "2014 FL Paper 1 (Project Maths) Q8(b)(iv)",
+    stem: "The graphs of two functions are shown on the axes below. The functions are g(x) = x + 1, x ∈ ℝ and h(x) = x² − 2x − 3, x ∈ ℝ.",
+    questionText: "Use the diagram to find the values of x for which h(x) = g(x). Show your work on the diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q8-b-iv-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15,27],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q9-a-i", topicId: "maths-4-1", conceptId: "p1-project-q9-a-i",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q9(a)(i)",
+    stem: "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares.",
+    questionText: "Draw the next two rectangles in the pattern. Write the dimensions (i.e. 3 × 1, 4 × 2, etc.) under them.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q9-a-i-solution-1", kind: "point", verbatim: "Two correct sets of dimensions given", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q9-a-i-solution-2", kind: "point", verbatim: "Two correct rectangles drawn", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16,28],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q9-a-ii", topicId: "maths-4-1", conceptId: "p1-project-q9-a-ii",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q9(a)(ii)",
+    stem: "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares.",
+    questionText: "Complete the table below. It gives heights 1, 2, 3, 4 and 5, and asks for the number of small squares in each rectangle. The first two entries, 3 and 8, are already given.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q9-a-ii-solution-1", kind: "point", verbatim: "One correct answer", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q9-a-ii-solution-2", kind: "point", verbatim: "Two correct answers", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16,28],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q9-a-iii", topicId: "maths-5-1", conceptId: "p1-project-q9-a-iii",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q9(a)(iii)",
+    stem: "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares. Part (a)(ii) asks you to complete a table giving the number of small squares for rectangles of heights 1–5.",
+    questionText: "Plot the 5 points from your table ((1, 3), (2, 8), etc.) on the given axes.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q9-a-iii-solution-1", kind: "point", verbatim: "One point plotted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q9-a-iii-solution-2", kind: "point", verbatim: "Two or three points plotted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q9-a-iii-solution-3", kind: "point", verbatim: "Four points plotted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16,28],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q9-b-i", topicId: "maths-4-1", conceptId: "p1-project-q9-b-i",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q9(b)(i)",
+    stem: "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares. Part (a)(i) asks you to draw the next two rectangles.",
+    questionText: "The number of small squares in each rectangle in part (a) can be calculated by using one of the following three expressions, where h is the height of the rectangle: h² + h, h² + 2, h² + 2h. Which expression always gives the correct number of small squares? Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q9-b-i-solution-1", kind: "point", verbatim: "Correct expression without a reason", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17,28],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q9-b-ii", topicId: "maths-4-1", conceptId: "p1-project-q9-b-ii",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q9(b)(ii)",
+    stem: "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares. Part (a)(i) asks you to draw the next two rectangles, making five rectangles in all.",
+    questionText: "For each of the 5 rectangles above, shade in the biggest possible square that fits into that rectangle.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q9-b-ii-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17,28],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q9-b-iii", topicId: "maths-4-1", conceptId: "p1-project-q9-b-iii",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q9(b)(iii)",
+    stem: "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares. Part (a)(i) asks you to draw the next two rectangles. Part (b)(ii) asks you to shade in the biggest possible square that fits into each of the five rectangles.",
+    questionText: "For each of the 5 rectangles, write down the numbers of small squares that are not shaded.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q9-b-iii-solution-1", kind: "point", verbatim: "2, 4, 6, 8, 10", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17,28],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q9-b-iv", topicId: "maths-4-1", conceptId: "p1-project-q9-b-iv",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q9(b)(iv)",
+    stem: "A pattern of rectangles is shown in the diagram below. The first three have dimensions 3 × 1, 4 × 2 and 5 × 3, with heights 1, 2 and 3 respectively. The rectangles are made of small squares. Part (a)(i) asks you to draw the next two rectangles. Part (b)(ii) asks you to shade in the biggest possible square that fits into each of the five rectangles. Part (b)(iii) asks you to write the numbers of small squares not shaded in each rectangle.",
+    questionText: "Is there a pattern to be seen in the numbers in your answer to (iii) above? Give a reason for your answer.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q9-b-iv-solution-1", kind: "point", verbatim: "Reason: Pattern is 2n", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17,28],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12,
+                13
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q10-a-i-ii", topicId: "maths-3-3", conceptId: "p1-project-q10-a-i-ii",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q10(a)(i), Q10(a)(ii)",
+    stem: "The chart below shows the distances (in kilometres) between some of Ireland’s main towns. For example, the distance between Portlaoise and Galway is 150 km and the distance between Sligo and Belfast is 206 km (highlighted in the chart). Use the chart to answer the following questions.",
+    questionText: "(i) What is the distance between Sligo and Dublin? (ii) Carla has to go from Sligo to Dublin. She travels from Sligo to Portlaoise first and then on to Dublin. How many kilometres does this add to her journey?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q10-a-i-ii-solution-1", kind: "point", verbatim: "217 km", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q10-a-i-ii-solution-2", kind: "point", verbatim: "191 +84=275 km", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q10-a-i-ii-solution-3", kind: "point", verbatim: "275–217 = 58 km", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[18,29],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q10-b", topicId: "maths-3-3", conceptId: "p1-project-q10-b",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q10(b)",
+    stem: "The chart below shows the distances (in kilometres) between some of Ireland’s main towns. For example, the distance between Portlaoise and Galway is 150 km and the distance between Sligo and Belfast is 206 km (highlighted in the chart). Use the chart to answer the following questions.",
+    questionText: "Which two towns, shown in the chart, are furthest apart?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q10-b-solution-1", kind: "point", verbatim: "One town correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[18,29],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q10-c", topicId: "maths-5-1", conceptId: "p1-project-q10-c",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q10(c)",
+    stem: "Amanda travelled from Waterford to Belfast. The graph below shows the 5 stages of her journey. The stages are labelled 1, 2, 3, 4 and 5 on the graph.",
+    questionText: "There are five statements labelled A, B, C, D and E: A. She takes about 15 minutes to change the wheel. B. She drives steadily and arrives in Belfast around 16:15. C. She stops for lunch for about an hour. D. She sets out from Waterford at 11:00 and drives at a steady speed until lunchtime. E. She drives steadily for about 2 hours. In the table below, insert the letters A, B, C, D and E to match each one of the statements above with a stage of her journey.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q10-c-solution-1", kind: "point", verbatim: "One correct answer", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q10-c-solution-2", kind: "point", verbatim: "Two or three correct answers", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q10-c-solution-3", kind: "point", verbatim: "Four correct answers", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,2,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[19,29],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q10-d-i-ii", topicId: "maths-3-3", conceptId: "p1-project-q10-d-i-ii",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q10(d)(i), Q10(d)(ii)",
+    stem: "Amanda travelled from Waterford to Belfast. The graph below shows the 5 stages of her journey. The stages are labelled 1, 2, 3, 4 and 5 on the graph. The distance chart on page 14 includes the Waterford–Belfast distance.",
+    questionText: "(i) How long, in total, did it take Amanda to travel from Waterford to Belfast? (ii) Find Amanda’s average speed during her trip, in kilometres per hour. Give your answer correct to the nearest whole number.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q10-d-i-ii-solution-1", kind: "point", verbatim: "5 Hours 15 Min", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p1-project-q10-d-i-ii-solution-2", kind: "point", verbatim: "63 km/h", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[20,29],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15,
+                16
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q10-e", topicId: "maths-3-3", conceptId: "p1-project-q10-e",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q10(e)",
+    stem: "Amanda travelled from Waterford to Belfast. The graph below shows the 5 stages of her journey. The stages are labelled 1, 2, 3, 4 and 5 on the graph. The car was stopped for a total of one hour and fifteen minutes.",
+    questionText: "Find the amount of time the car was being driven during the journey.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q10-e-solution-1", kind: "point", verbatim: "5: 15 – 1: 15 = 4 hours", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[20,29],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15,
+                16
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP130EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p1-project-q10-f", topicId: "maths-3-3", conceptId: "p1-project-q10-f",
+    section: "B", questionRef: "2014 FL Paper 1 (Project Maths) Q10(f)",
+    stem: "Amanda changed some euro into sterling. She got £215. The exchange rate was €1 = £0·86.",
+    questionText: "How much did she have to pay, in euro?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p1-project-q10-f-solution-1", kind: "point", verbatim: "€250", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[20,29],"generalNotesPages":[21,22]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP130EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,

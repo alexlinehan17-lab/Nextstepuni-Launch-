@@ -514,6 +514,12 @@ describe('Mark Bank card preservation', () => {
     expect(identityHash(added)).toBe('4a5d92dc658965c671b5a4a3e3420ec107690aa3ef608a0e900575f1e67aad97');
   });
 
+  it('retains all 2014 Foundation Project Maths Paper 1 tasks under their exact booklet', () => {
+    const added = MATHS_FOUNDATION.filter(card => card.year === 2014 && card.paperFileid === 'LC003BLP130EV');
+    expect(added).toHaveLength(36);
+    expect(identityHash(added)).toBe('755a49f0ca28c45dd3ee5875d0ab7463f08fb9d0453d0ba4dfb4195f234d776e');
+  });
+
   it('protects the complete current bank', () => {
     expect(decks.reduce((total, [, cards]) => total + baselineCards(cards).length, 0)).toBe(10_495);
     const added = [...MATHS_HIGHER, ...MATHS_ORDINARY].filter(card => reviewedMathematicsAdditions.has(card.id));
