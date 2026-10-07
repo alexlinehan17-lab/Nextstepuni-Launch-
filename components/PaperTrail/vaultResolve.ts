@@ -47,6 +47,7 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
 export const HOSTED_ANSWER_OVERRIDES = new Set([
   'irish|2022|LC001ALP200IV.pdf',
   'irish|2024|LC001ALP200IV.pdf',
+  'irish|2017|LC001BLP000IV.pdf',
   'irish|2018|LC001BLP000IV.pdf',
   'irish|2019|LC001BLP000IV.pdf',
   'irish|2020|LC001BLP000IV.pdf',

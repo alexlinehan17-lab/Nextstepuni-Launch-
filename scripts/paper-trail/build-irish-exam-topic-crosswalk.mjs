@@ -698,7 +698,7 @@ for (const paper of papers) {
 
 // Reviewed task boundaries override generic section guesses for this exact
 // paper. Frozen baseline identities remain below; new parts/routes are additive.
-const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json']
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
 for (const card of foundationTasks.cards) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
@@ -816,6 +816,16 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
   for (const question of reviewedFoundation.q) {
     question.reviewedSchemePages ??= foundationSchemeSections[question.n];
     if (!question.reviewedSchemePages) throw new Error('Unreviewed Foundation scheme: ' + question.n);
+  }
+  // Carry a documented source/key mismatch into the atomic task, its passage,
+  // whole section and every mechanically generated route containing that task.
+  for (const issue of reviewedCards.filter(c => c.sourceDiscrepancyNotice)) {
+    const affected = new Set([issue.atlasQuestionId, issue.section, issue.atlasQuestionId.replace(/-\d+$/, '')]);
+    reviewedCards.filter(c => c.memberCardIds?.includes(issue.id)).forEach(c => affected.add(c.atlasQuestionId));
+    for (const question of reviewedFoundation.q.filter(q => affected.has(q.n))) {
+      question.practiceInstruction = (question.practiceInstruction ?? ('Don chárta seo: ' + question.label + '.'))
+        + ' ' + issue.sourceDiscrepancyNotice;
+    }
   }
   reviewedFoundation.q.find(q => q.n === '1').audioMaterial = {
     ...foundationTasks.cards.find(card => card.year === reviewedFoundation.year && card.audioMaterial).audioMaterial,
@@ -1122,6 +1132,7 @@ for (const paper of papers) {
         && paper.sidecar?.q.find(old => old.n === q.n);
       return previous
         ? { ...previous, ...(q.audioMaterial ? { audioMaterial: q.audioMaterial } : {}),
+            ...(!previous.practiceInstruction && q.practiceInstruction ? { practiceInstruction: q.practiceInstruction } : {}),
             paperRegion: q.paperRegion, schemeRegion: region, printOrder: q.printOrder }
         : { ...q, region, mode: 'crop', conf: 1 };
     });
