@@ -211,6 +211,16 @@ export const GEOGRAPHY_STRANDS: StrandRef[] = geographyCurriculum.strands.map(st
     })),
 }));
 
+/** Canonical legacy adapter at the registry/deck cycle boundary; the lazy
+ * card factory resolves and validates the specification for every exam year. */
+const politicsCurriculum = CURRICULUM.find(subject => subject.id === 'politics-and-society');
+if (!politicsCurriculum) throw new Error('Canonical Politics curriculum is missing');
+export const POLITICS_STRANDS: StrandRef[] = politicsCurriculum.strands.map((strand, index) => ({
+  id: strand.id, label: `Strand ${index + 1}`, title: strand.name,
+  topics: strand.subtopics.filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
+    .map(topic => ({ id: topic.id, code: topic.id.replace('politics-and-society-', ''), title: topic.name })),
+}));
+
 /** The redeveloped specification's own structure, verbatim from the spec. */
 export const STRANDS: StrandRef[] = [
   {
@@ -1714,6 +1724,7 @@ export const SUBJECTS = [
   { id: 'irish', title: 'Irish', strands: IRISH_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
   { id: 'art', title: 'Art', strands: ART_STRANDS, spec: 'Visual Studies specification' },
   { id: 'geography', title: 'Geography', strands: GEOGRAPHY_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
+  { id: 'politics-and-society', title: 'Politics and Society', strands: POLITICS_STRANDS, spec: 'Leaving Certificate specification' },
   { id: 'computer-science', title: 'Computer Science', strands: COMPUTER_SCIENCE_STRANDS, spec: 'specification examined from 2020' },
   { id: 'engineering', title: 'Engineering', strands: ENGINEERING_STRANDS, spec: 'Materials and Technology syllabus' },
   { id: 'religious-education', title: 'Religious Education', strands: RELIGIOUS_EDUCATION_STRANDS, spec: 'syllabus examined since 2003' },
@@ -1755,7 +1766,6 @@ export const SUBJECTS = [
   { id: 'dcg', title: 'Design and Communication Graphics', strands: DCG_STRANDS, spec: 'Leaving Certificate Design and Communication Graphics syllabus' },
   { id: 'accounting', title: 'Accounting', strands: legacyCatalogueStrands('accounting'), spec: 'Leaving Certificate Accounting syllabus' },
   { id: 'music', title: 'Music', strands: legacyCatalogueStrands('music'), spec: 'Leaving Certificate Music syllabus' },
-  { id: 'politics-and-society', title: 'Politics and Society', strands: legacyCatalogueStrands('politics-and-society'), spec: 'Leaving Certificate Politics and Society specification' },
   { id: 'physics-and-chemistry', title: 'Physics and Chemistry', strands: legacyCatalogueStrands('physics-and-chemistry'), spec: 'Leaving Certificate Physics and Chemistry syllabus' },
 ] as const;
 
@@ -2021,6 +2031,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   geography: {
     higher: () => import('./cards/geography/higher'),
     ordinary: () => import('./cards/geography/ordinary'),
+  },
+  'politics-and-society': {
+    higher: () => import('./cards/politics-and-society/higher'),
+    ordinary: () => import('./cards/politics-and-society/ordinary'),
   },
   'computer-science': {
     higher: () => import('./cards/computer-science/higher'),

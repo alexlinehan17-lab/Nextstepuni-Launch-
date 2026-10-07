@@ -68,6 +68,7 @@ import WaysInPanel, {
   type WaysInWork,
 } from './WaysInPanel';
 import SourceMaterialReader from './SourceMaterialReader';
+import PoliticsRubricPanel, { politicsMarks, type PoliticsScoreId } from './PoliticsRubricPanel';
 import AudioSourcePlayer from './AudioSourcePlayer';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 
@@ -289,7 +290,7 @@ export type PclmScores = Partial<Record<PclmScoreId, number>>;
 export type IrishScoreId = `irish:${string}`;
 export type ArtScoreId = `art:${string}`;
 export type GeographyScoreId = `geography:${string}`;
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -411,6 +412,7 @@ export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'irish') return irishMarks(card, scores);
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
+  if (card.rubric.system === 'politics') return politicsMarks(card, scores);
   return pclmMarks(card, scores as PclmScores);
 }
 
@@ -1614,6 +1616,11 @@ const RubricPanel: React.FC<{
   onScore: (id: RubricScoreId, marks: number) => void;
   onRequirement: (index: number) => void;
 }> = props => {
+  if (props.card.rubric.system === 'politics') {
+    return <PoliticsRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'politics' }>;
+    }} />;
+  }
   if (props.card.rubric.system === 'irish') {
     return <IrishRubricPanel {...props} card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'irish' }>;
@@ -2339,6 +2346,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const rubricLabel = assessmentCard && isRubricCard(assessmentCard)
     ? assessmentCard.rubric.system === 'pclm' ? 'PCLM'
       : assessmentCard.rubric.system === 'irish' ? 'Irish rubric'
+      : assessmentCard.rubric.system === 'politics' ? 'Politics and Society'
       : assessmentCard.rubric.system === 'art' ? 'Art descriptor' : 'Geography allocation'
     : 'rubric';
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;

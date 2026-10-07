@@ -126,6 +126,7 @@ SUBJECTS = {
     # B&C". It is three years wider than the bank's 2021-2025 default and it
     # includes 2026, whose scheme is published and on disk.
     'dcg': {'mode': 'sections', 'walker': 'dcg', 'from': 2019},
+    'politics-and-society': {'mode': 'politics'},
     'business': {'mode': 'sections'},
     # LCVP's Link Modules paper is COMMON level — one paper, sat by everyone,
     # filed under the level token 'cl'. Three sections that each restart at
@@ -2814,8 +2815,9 @@ def census_subject(subject):
                 'marksSum': None, 'marksQuestions': 0, 'flags': [],
             })
         return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
-    if cfg['mode'] == 'art':
-        path = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
+    if cfg['mode'] in ('art', 'politics'):
+        filename = 'politics-census.json' if cfg['mode'] == 'politics' else 'art-census.json'
+        path = os.path.join(ROOT, 'scripts', 'markbank', 'authored', filename)
         payload = json.load(open(path, encoding='utf-8'))
         papers = []
         for source in payload['papers']:
