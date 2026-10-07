@@ -3902,26 +3902,30 @@ for (const [
   );
 }
 
-// Irish spans three levels and four live paper slots. The generated join is
-// authoritative for all 979 local cards, including the frozen reading cards
-// and the two preservation-only archive shelves.
+// Irish's generated local joins are authoritative for the indexed paper slots.
+// Replace a matching language-neutral reference association as well: merging
+// it back would reintroduce known errors such as 2024 Foundation's form tagged
+// as a letter. The original factual headings remain in part-reference metadata.
 for (const [levelCode, langCode, yearOffset, paperKeyCode, n, topicIndexes] of irishRuntime.questionMappings) {
+  const topicIds = topicIndexes.map(topicIndex => {
+    const topicId = irishRuntime.topics[topicIndex]?.[0];
+    if (!topicId) throw new Error(`Unknown Irish runtime topic index: ${topicIndex}`);
+    return topicId;
+  });
+  const level = irishLevel(levelCode);
+  const year = yearOffset + 2000;
+  const paperKey = irishRuntimePaperKey(paperKeyCode);
   QUESTION_TOPICS.set(
-    questionKey(
-      irishRuntime.subjectId,
-      irishLevel(levelCode),
-      yearOffset + 2000,
-      'main',
-      n,
-      irishRuntimePaperKey(paperKeyCode),
-      langCode === 'e' ? 'ev' : 'iv',
-    ),
-    topicIndexes.map(topicIndex => {
-      const topicId = irishRuntime.topics[topicIndex]?.[0];
-      if (!topicId) throw new Error(`Unknown Irish runtime topic index: ${topicIndex}`);
-      return topicId;
-    }),
+    questionKey('irish', level, year, 'main', n, paperKey, langCode === 'e' ? 'ev' : 'iv'),
+    topicIds,
   );
+  const sharedKey = questionKey('irish', level, year, 'main', n, paperKey);
+  const shared = QUESTION_TOPICS.get(sharedKey);
+  if (shared) {
+    QUESTION_TOPICS.set(sharedKey, [...new Set([
+      ...shared.filter(id => topicIds.includes(id)), ...topicIds,
+    ])]);
+  }
 }
 
 // Italian has two level-specific menus over written and aural cards. The

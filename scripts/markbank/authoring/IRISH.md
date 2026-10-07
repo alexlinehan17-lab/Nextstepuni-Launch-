@@ -43,8 +43,8 @@ review: all sixteen paper pages and all applicable combined-scheme pages,
 Its 55 non-overlapping task/route cards cover both required passages, all six
 prose routes, four poetry responses and six additional-literature responses.
 The candidate answers 100 + 30 + 30 + 40 marks; alternative tariffs are not
-added together. The archive inventory now has two reviewed components and
-89 pending components. Seventy still have no Mark Bank cards.
+added together. The archive inventory now has three reviewed components and
+88 pending components. Sixty-nine still have no Mark Bank cards.
 
 `irish_foundation.py` adds the visually reviewed 2025 Foundation paper: fourteen
 listening parts, ten matching parts, thirty reading parts, six whole writing
@@ -52,6 +52,25 @@ routes, six paired reading routes, and twelve paired writing routes. The paired
 routes reproduce the printed choose-two instructions; their marks are not added
 to individual alternatives to infer the examination total. Source hashes and
 selection decisions are committed beside the cards in `foundation-authored.json`.
+
+`irish_foundation_2024.py` independently reviews all twenty 2024 Foundation
+paper pages and all twenty-four scheme pages. Its 78 cards cover fourteen
+listening parts, ten sign matches, thirty reading parts, six whole writing
+routes, six paired reading routes and twelve paired writing routes. The three
+interview dates are 25 June, 27 June and 3 July; each form remains 45 marks. The
+2024 length table differs from 2025 and is preserved exactly. Sixty individual
+tasks/routes plus eighteen overlapping paired routes represent the permitted
+practice choices; the examination total is 120 + 40 + 50 + 60 + 90 = 360.
+
+Every 2024 task joins to the correct Atlas topic with complete source and scheme
+pages. The external reference's letter association for the form is explicitly
+corrected against SEC page 15, while its original heading remains in the audit.
+The runtime registry filters incompatible reference tags against these local
+joins. All prior 529 Bank cards and 1125 Atlas identities remain. The original
+three Foundation section crops are preserved; corrected regions are additive.
+Mobile PDF rendering, source navigation, focus return and official audio playback
+passed. `foundation-2024-authored.json` pins source hashes, exact raw directive
+lines and boundary decisions; `irish-review.json` records runtime checks.
 
 ## Marking boundaries and selections
 
@@ -78,12 +97,12 @@ reader. A combined listening exercise must retain all its member source pages.
 Listening requires the actual recording; never expose the answer transcript.
 
 Higher/Ordinary use `LC001ZLP017IV.mp3`. Foundation has a different recording,
-`LC001BLP017IV.mp3`; the 2025 official SEC URL has been checked. These filenames
+`LC001BLP017IV.mp3`; the 2024 and 2025 official SEC URLs have been checked. These filenames
 must not be interchanged. The older Higher/Ordinary cards retain their playback
 mirrors until individually reviewed.
 
 Foundation task IDs join to exact year/level/file/question identities in the
-Irish exam-topic crosswalk builder. Reviewed 2025 anchors include both question
+Irish exam-topic crosswalk builder. Reviewed 2024/2025 anchors include both question
 pages and scheme pages. Canonical IDs come from the existing curriculum and
 exam-topic registry, never copied topic-name arrays. A mixed-topic selection
 retains all relevant curriculum nodes for Mark Bank filtering.
@@ -118,16 +137,18 @@ corpus symlink.
 ```sh
 python3 scripts/markbank/authoring/irish_cards.py --check
 python3 scripts/markbank/authoring/irish_foundation.py --check
+python3 scripts/markbank/authoring/irish_foundation_2024.py --check
 node scripts/paper-trail/build-irish-exam-topic-crosswalk.mjs
 node scripts/paper-trail/topic-tags/build-tags.mjs
 python3 scripts/markbank/authoring/irish_inventory.py --check
 npm run typecheck
-npx vitest run test/markBankIrish.test.ts test/markBankIrishReading.test.ts test/markBankIrishLiterature2024.test.ts test/markBankIrishHigherRoutes.test.ts test/markBankIrishFoundation.test.ts test/markBankSession.test.tsx test/markBankProfileDefaults.test.ts test/irishExamTopics.test.ts test/markBankCardPreservation.test.ts test/curriculumRegistry.test.ts test/markBankDeck.test.ts
+npx vitest run test/markBankIrish.test.ts test/markBankIrishReading.test.ts test/markBankIrishLiterature2024.test.ts test/markBankIrishHigherRoutes.test.ts test/markBankIrishFoundation.test.ts test/markBankIrishFoundation2024.test.ts test/markBankSession.test.tsx test/markBankProfileDefaults.test.ts test/irishExamTopics.test.ts test/markBankCardPreservation.test.ts test/curriculumRegistry.test.ts test/markBankDeck.test.ts
 ```
 
 The Foundation generator fails if the reviewed PDFs change, if an extracted
-selection directive occurs on an unclassified page, or if a selection decision
-no longer matches its page. The tests pin route IDs, wording, tariffs, source
+selection directive is unclassified, or if a selection decision no longer matches
+its source. The 2024 guard pins every exact directive line and rejects unknown
+additions even on already-reviewed pages. The tests pin route IDs, wording, tariffs, source
 pages, topics and scheme anchors. These guards support, and never replace, the
 required full visual paper/scheme sweep. Do not update preservation baselines to
 hide unfinished coverage.

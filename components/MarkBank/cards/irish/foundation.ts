@@ -1,8 +1,9 @@
 import type { IrishCriterion, SecRubricCard } from '../../../../types/markBank';
 import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 import authored from './foundation-authored.json';
+import authored2024 from './foundation-2024-authored.json';
 
-export const CARDS: SecRubricCard[] = authored.cards.map(card => ({
+export const CARDS: SecRubricCard[] = [authored2024, authored].flatMap(({ cards, review }) => cards.map(card => ({
   id: card.id,
   subjectId: 'irish',
   level: 'foundation',
@@ -27,7 +28,7 @@ export const CARDS: SecRubricCard[] = authored.cards.map(card => ({
   specVersion: resolveCurriculumSpecification('irish', card.year)!.id,
   qa: {
     gates: ['visual-paper-sweep', 'visual-scheme-sweep', 'published-mark-boundary', 'finite-route-expansion'],
-    humanReviewedBy: 'source-review', humanReviewedAt: authored.review.reviewDate,
+    humanReviewedBy: 'source-review', humanReviewedAt: review.reviewDate,
   },
   rubric: {
     system: 'irish',
@@ -35,4 +36,4 @@ export const CARDS: SecRubricCard[] = authored.cards.map(card => ({
     criteria: structuredClone(card.criteria) as IrishCriterion[],
     markingGuideNote: card.markingGuideNote,
   },
-}));
+})));

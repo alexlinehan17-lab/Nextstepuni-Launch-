@@ -698,7 +698,8 @@ for (const paper of papers) {
 
 // Reviewed task boundaries override generic section guesses for this exact
 // paper. Frozen baseline identities remain below; new parts/routes are additive.
-const foundationTasks = readJson(path.join(ROOT, 'components/MarkBank/cards/irish/foundation-authored.json'));
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json']
+  .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
 for (const card of foundationTasks.cards) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
   if (!paper) throw new Error('Unindexed reviewed Foundation task: ' + card.id);
@@ -707,7 +708,7 @@ for (const card of foundationTasks.cards) {
   if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
   addQuestion(paper, {
     n: card.atlasQuestionId,
-    label: card.questionRef.replace(/^2025 FL /, ''),
+    label: card.questionRef.replace(/^\d{4} FL /, ''),
     referenceSlots: existing?.referenceSlots ?? [],
     baseTopicIds: card.examTopicKeys.map(key => F[key]),
     anchor: { pP: card.sourceMaterial.pages[0], pY: [0, 1],
@@ -716,6 +717,8 @@ for (const card of foundationTasks.cards) {
   });
   paper.q.at(-1).reviewedSchemePages = card.schemePages;
   paper.q.at(-1).audioMaterial = card.audioMaterial;
+  if (card.year === 2024) paper.q.at(-1).practiceInstruction = 'Don chárta seo: ' + card.questionRef.replace(/^\d{4} FL /, '') + '.';
+  paper.hasReviewedFoundationTasks = true;
 }
 for (const card of reviewedHigherTasks) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
@@ -756,36 +759,38 @@ for (const card of reviewedHigherTasks) {
     + (card.selectedRoute ? ' Freagair (i), (ii) agus (iii).' : ''));
   paper.hasReviewedHigherTasks = true;
 }
-const reviewedFoundation = papers.find(p => p.year === 2025 && p.level === 'foundation');
-for (const [n, label, topics] of [
-  ['R-2C', 'Léamhthuiscint · Scéal', [F.extract]],
-  ['W-4B', 'Scríobh · Foirm Iarratais', [F.form]],
-]) {
-  const q = reviewedFoundation.q.find(q => q.n === n);
-  q.label = label;
-  q.baseTopicIds = topics;
-  const { secondary: ignored, ...previous } = q;
-  Object.keys(q).forEach(key => delete q[key]);
-  Object.assign(q, previous, canonicalForTopicIds(topics));
-}
+for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks)) {
+  for (const [n, label, topics] of [
+    ['R-2C', 'Léamhthuiscint · Scéal', [F.extract]],
+    ['W-4B', 'Scríobh · Foirm Iarratais', [F.form]],
+  ]) {
+    const q = reviewedFoundation.q.find(q => q.n === n);
+    q.label = label;
+    q.baseTopicIds = topics;
+    q.reviewedTopicIds = topics;
+    const { secondary: ignored, ...previous } = q;
+    Object.keys(q).forEach(key => delete q[key]);
+    Object.assign(q, previous, canonicalForTopicIds(topics));
+  }
 
-const foundationSchemeSections = {
-  '1': [3], '2': [4, 5, 6], '3': [7, 8, 9, 10, 11, 12, 13, 14, 15],
-  'R-1': [4], 'R-2A': [5], 'R-2B': [5], 'R-2C': [5],
-  'R-3A': [6], 'R-3B': [6], 'R-3C': [6], 'W-4B': [11, 12],
-};
-for (const [n, start, end] of [['1', 3, 5], ['2', 6, 12], ['3', 13, 17]]) {
-  reviewedFoundation.q.find(q => q.n === n).anchor.paperRegion =
-    Array.from({ length: end - start + 1 }, (_, i) => ({ p: start + i, r: [0, 0, 1, 1] }));
+  const foundationSchemeSections = {
+    '1': [3], '2': [4, 5, 6], '3': [7, 8, 9, 10, 11, 12, 13, 14, 15],
+    'R-1': [4], 'R-2A': [5], 'R-2B': [5], 'R-2C': [5],
+    'R-3A': [6], 'R-3B': [6], 'R-3C': [6], 'W-4B': [11, 12],
+  };
+  for (const [n, start, end] of [['1', 3, 5], ['2', 6, 12], ['3', 13, 17]]) {
+    reviewedFoundation.q.find(q => q.n === n).anchor.paperRegion =
+      Array.from({ length: end - start + 1 }, (_, i) => ({ p: start + i, r: [0, 0, 1, 1] }));
+  }
+  for (const question of reviewedFoundation.q) {
+    question.reviewedSchemePages ??= foundationSchemeSections[question.n];
+    if (!question.reviewedSchemePages) throw new Error('Unreviewed Foundation scheme: ' + question.n);
+  }
+  reviewedFoundation.q.find(q => q.n === '1').audioMaterial = {
+    ...foundationTasks.cards.find(card => card.year === reviewedFoundation.year && card.audioMaterial).audioMaterial,
+    label: 'Cluastuiscint · Ceisteanna 1–8',
+  };
 }
-for (const question of reviewedFoundation.q) {
-  question.reviewedSchemePages ??= foundationSchemeSections[question.n];
-  if (!question.reviewedSchemePages) throw new Error('Unreviewed Foundation scheme: ' + question.n);
-}
-reviewedFoundation.q.find(q => q.n === '1').audioMaterial = {
-  ...foundationTasks.cards.find(card => card.audioMaterial).audioMaterial,
-  label: 'Cluastuiscint · Ceisteanna 1–8',
-};
 
 let preservedBaselineCards = 0;
 for (const expected of preservationBaseline) {
@@ -965,7 +970,7 @@ for (const association of matched) {
 const localQuestionMappings = papers.flatMap(paper => paper.q.map(question => {
   const key = [paper.level, paper.year, paper.fileid, question.n].join('|');
   const referenced = referenceTopicsByLocalQuestion.get(key) ?? [];
-  const topicIds = [...new Set([...referenced, ...question.baseTopicIds])]
+  const topicIds = [...new Set(question.reviewedTopicIds ?? [...referenced, ...question.baseTopicIds])]
     .sort((a, b) => topicIndex.get(a) - topicIndex.get(b));
   if (!topicIds.length || topicIds.some(id => !topicById.has(id))) {
     throw new Error(paper.fileid + ' Q' + question.n + ': invalid Irish topic mapping');
@@ -982,6 +987,12 @@ const localQuestionMappings = papers.flatMap(paper => paper.q.map(question => {
     kind: paper.kind,
     n: question.n,
     topicIds,
+    ...(question.reviewedTopicIds && referenced.some(id => !topicIds.includes(id)) ? {
+      sourceTopicCorrection: {
+        excludedReferenceTopicIds: referenced.filter(id => !topicIds.includes(id)),
+        reason: `SEC ${paper.year} Foundation PDF page ${question.anchor.pP} identifies this task as ${question.label}; the retained external heading is mis-grouped.`,
+      },
+    } : {}),
     provenance: referenced.length
       ? question.baseTopicIds.some(id => !referenced.includes(id))
         ? 'reference+retained-local'
@@ -1035,7 +1046,7 @@ for (const paper of papers) {
     band: [1, 1],
     copyright: '© State Examinations Commission',
     paperOnly: 1,
-    ...(paper === reviewedFoundation ? { maxCropPages: 10 } : {}),
+    ...(paper.hasReviewedFoundationTasks ? { maxCropPages: 10 } : {}),
     q: paper.q.map(question => {
       const collision = anchorCounts.get(question.anchor.pP + '|' + question.anchor.pY[0]) > 1;
       return {
@@ -1063,17 +1074,19 @@ for (const paper of papers) {
   fs.mkdirSync(yearDir, { recursive: true });
   const outputPath = path.join(yearDir, paper.fileid + '.json');
   fs.writeFileSync(outputPath, JSON.stringify(artifact) + '\n');
-  if (paper === reviewedFoundation || paper.hasReviewedHigherTasks) {
+  if (paper.hasReviewedFoundationTasks || paper.hasReviewedHigherTasks) {
     const { paperOnly, ...answerMap } = artifact;
-    answerMap.schemeFileid = paper === reviewedFoundation ? paper.fileid : 'LC001ALP000IV.pdf';
-    answerMap.band = paper === reviewedFoundation ? [3, 16] : [27, 41];
+    answerMap.schemeFileid = paper.hasReviewedFoundationTasks ? paper.fileid : 'LC001ALP000IV.pdf';
+    answerMap.band = paper.hasReviewedFoundationTasks ? [3, 16] : [27, 41];
     answerMap.maxCropPages = 10;
     answerMap.q = artifact.q.filter(q => paper.q.find(question => question.n === q.n).reviewedSchemePages).map(q => {
       const question = paper.q.find(question => question.n === q.n);
       const region = question.reviewedSchemePages.map(p => ({ p, r: [0, 0, 1, 1] }));
-      const previous = question.baseline && paper.sidecar?.q.find(old => old.n === q.n);
+      const previous = (question.baseline || (paper.hasReviewedFoundationTasks && /^\d+$/.test(question.n)))
+        && paper.sidecar?.q.find(old => old.n === q.n);
       return previous
-        ? { ...previous, paperRegion: q.paperRegion, schemeRegion: region, printOrder: q.printOrder }
+        ? { ...previous, ...(q.audioMaterial ? { audioMaterial: q.audioMaterial } : {}),
+            paperRegion: q.paperRegion, schemeRegion: region, printOrder: q.printOrder }
         : { ...q, region, mode: 'crop', conf: 1 };
     });
     if (paper.hasReviewedHigherTasks) {

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
-import { CARDS } from '../components/MarkBank/cards/irish/foundation';
+import { CARDS as ALL_CARDS } from '../components/MarkBank/cards/irish/foundation';
 import authored from '../components/MarkBank/cards/irish/foundation-authored.json';
 import { builtDecks, cardsForTopic, loadCards } from '../components/MarkBank/deck';
 import { levelsForSubject } from '../components/MarkBank/levels';
@@ -10,9 +10,11 @@ import { examTopicIdsForQuestion, curriculumNodeIdsForExamTopic } from '../data/
 import { resolveCurriculumSpecification } from '../curriculumRegistry';
 import { tariffReconciles } from '../types/markBank';
 
+const CARDS = ALL_CARDS.filter(c => c.year === 2025);
+
 describe('reviewed 2025 Irish Foundation tasks', () => {
   it('loads and remembers Foundation without changing other subjects’ available levels', async () => {
-    expect(await loadCards('irish', 'foundation')).toHaveLength(78);
+    expect(await loadCards('irish', 'foundation')).toHaveLength(156);
     expect(builtDecks()).toContainEqual({ subjectId: 'irish', level: 'foundation', label: 'Irish Foundation' });
     expect(levelsForSubject('irish', 2025)).toEqual(['higher', 'ordinary', 'foundation']);
     expect(levelsForSubject('biology', 2025)).toEqual(['higher', 'ordinary']);
