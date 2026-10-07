@@ -1,10 +1,11 @@
 /** Emit Atlas's exact-booklet placement from independently reviewed tasks. */
 import { readFileSync, writeFileSync } from 'node:fs';
-import { mathematicsReviews } from './review.mjs';
+import { mathematicsReviews, validateMathematicsReviewSources } from './review.mjs';
 
 const target = new URL('../../../data/examTopics/mathematics-reviewed-question-runtime.json', import.meta.url);
 const taxonomy = JSON.parse(readFileSync(new URL('../../../data/examTopics/mathematics-runtime.json', import.meta.url), 'utf8'));
 const topicIds = taxonomy.topics.map(topic => topic[0]);
+validateMathematicsReviewSources();
 const mappings = [];
 for (const paper of mathematicsReviews()) {
   const questions = new Map();

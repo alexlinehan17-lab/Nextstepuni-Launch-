@@ -37,6 +37,40 @@ def selection_candidates(path):
     return result
 
 
+def validate_review_sources(reviews=None):
+    """Fail authoring before generation when a source or choice decision drifts."""
+    if reviews is None:
+        reviews = [json.loads(p.read_text()) for p in sorted((HERE / 'reviews').glob('*.json'))]
+    errors = []
+    for review in reviews:
+        identity = f"{review['year']}/{review['paperFileid']}"
+        paper = ROOT / 'paper-trail-corpus/exampapers' / str(review['year']) / review['paperFileid']
+        scheme = ROOT / 'paper-trail-corpus/markingschemes' / str(review['year']) / review['schemeFileid']
+        if not paper.is_file() or not scheme.is_file():
+            errors.append(f'{identity}: missing reviewed primary source')
+            continue
+        if sha(paper) != review['paperSha256'] or sha(scheme) != review['schemeSha256']:
+            errors.append(f'{identity}: source changed after visual review')
+        with fitz.open(paper) as pdf:
+            if review['paperPagesInspected'] != list(range(1, len(pdf) + 1)):
+                errors.append(f'{identity}: incomplete visual paper-page sweep')
+        with fitz.open(scheme) as pdf:
+            pages = review['schemePagesInspected']
+            required = set(review['generalNotesPages'])
+            for card in review['cards']:
+                required.update(card['schemePages'])
+            if not required.issubset(pages) or any(p < 1 or p > len(pdf) for p in pages):
+                errors.append(f'{identity}: uninspected or invalid scheme page')
+        decisions = review.get('selectionDecisions', {})
+        actual = {item['id'] for item in selection_candidates(paper)}
+        if set(decisions) != actual:
+            errors.append(f'{identity}: unclassified or stale raw selection directives')
+        for key, decision in decisions.items():
+            if not decision.get('classification') or not decision.get('reason', '').strip():
+                errors.append(f'{identity}: selection decision {key} lacks a written reason')
+    return errors
+
+
 def inventory():
     source = (ROOT / 'paperTrailData.ts').read_text()
     section = source.split('export const PAPER_TRAIL_INDEX')[1]
@@ -62,7 +96,15 @@ def runtime_cards():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, default=HERE / 'audit.json')
+    parser.add_argument('--check-reviewed', action='store_true')
     args = parser.parse_args()
+    if args.check_reviewed:
+        errors = validate_review_sources()
+        for error in errors:
+            print('ERROR', error)
+        if not errors:
+            print('Reviewed Mathematics source hashes, page sweeps and raw selection decisions agree.')
+        return bool(errors)
     reviews = [json.loads(p.read_text()) for p in sorted((HERE / 'reviews').glob('*.json'))]
     by_paper = {(r['year'], r['paperFileid']): r for r in reviews}
     authored = json.loads((ROOT / 'scripts/markbank/authored/maths.json').read_text())

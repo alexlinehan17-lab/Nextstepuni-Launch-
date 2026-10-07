@@ -29,6 +29,7 @@ const base = {
 export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -55,6 +56,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -82,6 +84,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -108,6 +111,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -135,6 +139,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -162,6 +167,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -190,6 +196,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -216,6 +223,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -243,6 +251,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -271,6 +280,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -297,6 +307,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -325,6 +336,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -353,6 +365,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -379,6 +392,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -406,6 +420,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -433,6 +448,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -461,6 +477,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -488,6 +505,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -515,6 +533,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -541,6 +560,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -571,6 +591,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -599,6 +620,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -625,6 +647,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -654,6 +677,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -681,6 +705,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -708,6 +733,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -736,6 +762,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -764,6 +791,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -791,6 +819,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -818,6 +847,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -844,6 +874,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -870,6 +901,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -896,6 +928,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -924,6 +957,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -951,6 +985,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -979,6 +1014,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -1006,6 +1042,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -1032,6 +1069,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -1059,6 +1097,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -1085,6 +1124,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -1112,6 +1152,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",
@@ -1139,6 +1180,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "foundation",
     paperFileid: "LC003BLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Foundation Level — © State Examinations Commission.",

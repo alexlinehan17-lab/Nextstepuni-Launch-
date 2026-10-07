@@ -34789,7 +34789,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q1(a)(i)",
-  "questionText": "One power bank costs €30 before VAT at 23% has been added. Find the cost of the power bank after VAT has been added",
+  "questionText": "One power bank costs €30 before VAT at 23% has been added. Find the cost of the power bank after VAT has been added.",
   "figureKey": "maths-2025-OL-paper-p006-i0",
   "labelKey": [],
   "tariffModel": {
@@ -34822,8 +34822,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q1-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q1-a-i",
+  "stem": "Seán is buying a power bank and a USB-C cable."
  },
  {
   "id": "maths-2025-ol-p1-q1-a-ii",
@@ -34834,7 +34835,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q1(a)(ii)",
-  "questionText": "Seán is going to buy a different power bank that costs €26, and a USB-C cable that costs €9. Seán sees a special offer to buy the power bank and USB-C cable together for €28",
+  "questionText": "Work out the percentage discount of this special offer.",
   "figureKey": "maths-2025-OL-paper-p006-i1",
   "labelKey": [],
   "tariffModel": {
@@ -34862,8 +34863,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q1-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q1-a-ii",
+  "stem": "Seán is going to buy a different power bank that costs €26, and a USB-C cable that costs €9. Seán sees a special offer to buy the power bank and USB-C cable together for €28."
  },
  {
   "id": "maths-2025-ol-p1-q1-b-i",
@@ -34874,7 +34876,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q1(b)(i), (ii)",
-  "questionText": "Máiréad and Diarmuid both start cleaning standard windows at the same time. They both finish cleaning a window at the same time",
+  "questionText": "(i) Máiréad and Diarmuid both start cleaning standard windows at the same time. They both finish cleaning a window at the same time. After how many minutes will this first happen? (ii) A building has 35 standard windows. Work out how long it would take Máiréad and Diarmuid to clean the 35 windows if they work together.",
   "figureKey": "maths-2025-OL-paper-p006-i2",
   "labelKey": [],
   "tariffModel": {
@@ -34909,8 +34911,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q1-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q1-b-i",
+  "stem": "Máiréad and Diarmuid own a window cleaning business. Máiréad can clean a standard window in 9 minutes. Diarmuid can clean a standard window in 12 minutes."
  },
  {
   "id": "maths-2025-ol-p1-q2-a-i",
@@ -34921,7 +34924,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q2(a)(i)",
-  "questionText": "The complex number z₁ is shown on the Argand diagram below. Plot and label z₂ and z₃ on the same Argand diagram",
+  "questionText": "The complex number z₁ is shown on the Argand diagram below. Plot and label z₂ and z₃ on the same Argand diagram.",
   "figureKey": "maths-2025-OL-paper-p007-i0",
   "labelKey": [],
   "tariffModel": {
@@ -34949,8 +34952,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q2-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q2-a-i",
+  "stem": "In this question, i² = −1. z₁, z₂ and z₃ are three complex numbers: z₁ = −1 + 2i, z₂ = 2 + 3i, z₃ = 4 − i."
  },
  {
   "id": "maths-2025-ol-p1-q2-a-ii",
@@ -34961,7 +34965,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q2(a)(ii), (iii)",
-  "questionText": "Work out the modulus of z₁. That is, find |z₁|. Give your answer in surd form",
+  "questionText": "(ii) Work out the modulus of z₁. That is, find |z₁|. Give your answer in surd form. (iii) z₄ is a complex number with |z₄| < |z₁|. Write down one possible value of z₄. Give your answer in the form a + bi, where a, b ∈ ℤ.",
   "figureKey": "maths-2025-OL-paper-p007-i1",
   "labelKey": [],
   "tariffModel": {
@@ -34996,8 +35000,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q2-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q2-a-ii",
+  "stem": "In this question, i² = −1. z₁, z₂ and z₃ are three complex numbers: z₁ = −1 + 2i, z₂ = 2 + 3i, z₃ = 4 − i."
  },
  {
   "id": "maths-2025-ol-p1-q2-b",
@@ -35008,7 +35013,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q2(b)",
-  "questionText": "u and v are two complex numbers. u= 4 −6i v= 1 + i Write u v in the form a+ b, where a, b∈ℤ",
+  "questionText": "Write u/v in the form a + bi, where a, b ∈ ℤ.",
   "figureKey": "maths-2025-OL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35043,8 +35048,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q2-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q2-b",
+  "stem": "u and v are two complex numbers. u = 4 − 6i, v = 1 + i."
  },
  {
   "id": "maths-2025-ol-p1-q3-a",
@@ -35055,7 +35061,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q3(a)",
-  "questionText": "Rickie is buying protein bars",
+  "questionText": "Which offer is cheaper per bar? Use calculations to support your answer. Cheaper offer: Offer A or Offer B. Tick one box only.",
   "figureKey": "maths-2025-OL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35083,8 +35089,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q3-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q3-a",
+  "stem": "Rickie is buying protein bars. The cost of a single protein bar is €3·30. A shop has the following two special offers: Offer A: 3 bars for the price of 2 bars. Offer B: 12 pack of the same bar for €29·99."
  },
  {
   "id": "maths-2025-ol-p1-q3-b",
@@ -35095,7 +35102,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q3(b)",
-  "questionText": "Solve the inequality for x∈ℝ: 2x + 4 ≥ 6x−8",
+  "questionText": "Solve the inequality for x ∈ ℝ: 2x + 4 ≥ 6x − 8.",
   "figureKey": "maths-2025-OL-paper-p009-i1",
   "labelKey": [],
   "tariffModel": {
@@ -35123,8 +35130,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q3-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q3-b",
+  "stem": ""
  },
  {
   "id": "maths-2025-ol-p1-q3-c-i",
@@ -35135,43 +35143,30 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q3(c)(i), (ii)",
-  "questionText": "Write down a possible value of k and the corresponding value of t",
+  "questionText": "(i) Write down a possible value of k and the corresponding value of t. (ii) Use your values for k and t from part c(i) to find the value of b in the equation below: (x + k)(x + t) = x² + bx + 12.",
   "figureKey": "maths-2025-OL-paper-p009-i2",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2025-ol-p1-q3-c-i-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit in (i), for example, one factor of 12 given\nWork of merit in (ii), for example, use of the answer from (i)",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Work of merit in (i), for example, one factor of 12 given\nWork of merit in (ii), for example, use of the answer from (i)",
-      "Work of merit in (i) AND (ii)\nPart (i) correct",
-      "Part (ii) correct\nPart (i) correct and work of merit in part (ii)"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2025-ol-p1-q3-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "k = 6 t = 2",
+    "marks": null
+   },
+   {
+    "id": "maths-2025-ol-p1-q3-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "(x + 6)(x + 2)",
+    "marks": null
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q3-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q3-c-i",
+  "stem": "k × t = 12, where k, t ∈ ℤ."
  },
  {
   "id": "maths-2025-ol-p1-q4-a",
@@ -35182,7 +35177,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q4(a)",
-  "questionText": "Solve the following equation in a∈ℝ: 5(a−3) = 2a + 7",
+  "questionText": "Solve the following equation in a ∈ ℝ: 5(a − 3) = 2a + 7.",
   "figureKey": "maths-2025-OL-paper-p010-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35215,8 +35210,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q4-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q4-a",
+  "stem": ""
  },
  {
   "id": "maths-2025-ol-p1-q4-b",
@@ -35227,7 +35223,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q4(b)",
-  "questionText": "The function f(x) is defined as f(x) = x³ −3x² + 4x−8, where x∈ℝ",
+  "questionText": "Find f′(x), the derivative of f(x). Hence, find the slope of the tangent to f(x) at the point (2, −4).",
   "figureKey": "maths-2025-OL-paper-p010-i1",
   "labelKey": [],
   "tariffModel": {
@@ -35262,8 +35258,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q4-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q4-b",
+  "stem": "The function f(x) is defined as f(x) = x³ − 3x² + 4x − 8, where x ∈ ℝ."
  },
  {
   "id": "maths-2025-ol-p1-q4-c-i",
@@ -35274,7 +35271,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q4(c)(i), (ii)",
-  "questionText": "Write each of the letters P, Q, and R in the correct place in the table so that each point matches the description of the derivative at that point, where g′(x) is the derivative of g(x)",
+  "questionText": "(i) Write each of the letters P, Q, and R in the correct place in the table so that each point matches the description of the derivative at that point, where g′(x) is the derivative of g(x). (ii) For the point that you matched to g′(x) = 0, give a reason for your answer.",
   "figureKey": "maths-2025-OL-paper-p010-i2",
   "labelKey": [],
   "tariffModel": {
@@ -35309,8 +35306,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q4-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q4-c-i",
+  "stem": "The diagram below shows the graph of a cubic function g(x). P, Q, and R are points on the graph of g."
  },
  {
   "id": "maths-2025-ol-p1-q5-a",
@@ -35321,7 +35319,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q5(a)",
-  "questionText": "Use algebra to solve the simultaneous equations: 3x + 2y = 11 x−4y = −1 x = y =",
+  "questionText": "Use algebra to solve the simultaneous equations: 3x + 2y = 11; x − 4y = −1.",
   "figureKey": "maths-2025-OL-paper-p011-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35356,8 +35354,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q5-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q5-a",
+  "stem": ""
  },
  {
   "id": "maths-2025-ol-p1-q5-b",
@@ -35368,7 +35367,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q5(b)",
-  "questionText": "Solve the following equation in x∈ℝ: 3x² −2x−4 = 0 Give each answer correct to 2 decimal places",
+  "questionText": "Solve the following equation in x ∈ ℝ: 3x² − 2x − 4 = 0. Give each answer correct to 2 decimal places.",
   "figureKey": "maths-2025-OL-paper-p011-i1",
   "labelKey": [],
   "tariffModel": {
@@ -35401,8 +35400,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q5-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q5-b",
+  "stem": ""
  },
  {
   "id": "maths-2025-ol-p1-q5-c-i",
@@ -35413,7 +35413,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q5(c)(i), (ii)",
-  "questionText": "Based on the graph, which of the following pairs of values of x is a possible set of roots of h(x), that is, values of x for which h(x) = 0?",
+  "questionText": "(i) Based on the graph, which of the following pairs of values of x is a possible set of roots of h(x), that is, values of x for which h(x) = 0? Tick one box only: x = 2 and x = 8; x = −2 and x = −8; x = −2 and x = 8; x = −8 and x = 2. (ii) Find the value of x, at which h(x) is a minimum.",
   "figureKey": "maths-2025-OL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35448,8 +35448,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q5-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q5-c-i",
+  "stem": "The graph of a quadratic function h(x) is shown in the diagram below (drawn to scale). The graph is symmetrical about a vertical line."
  },
  {
   "id": "maths-2025-ol-p1-q6-a-i",
@@ -35460,7 +35461,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q6(a)(i), (ii)",
-  "questionText": "Find the selling price of the coat",
+  "questionText": "(i) Find the selling price of the coat. (ii) The margin on the coat is the profit as a percentage of the selling price. Write down the profit for this coat and hence find the margin.",
   "figureKey": "maths-2025-OL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35495,8 +35496,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q6-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q6-a-i",
+  "stem": "Tara buys a coat for €90. She then sells the coat at a profit of 25%."
  },
  {
   "id": "maths-2025-ol-p1-q6-b",
@@ -35507,7 +35509,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q6(b)",
-  "questionText": "Write each of the following numbers in the form a × 10ⁿ, where 1 ≤ a < 10, n∈ℤ",
+  "questionText": "Write each of the following numbers in the form a × 10ⁿ, where 1 ≤ a < 10, n ∈ ℤ: 58 000; 0·036.",
   "figureKey": "maths-2025-OL-paper-p013-i1",
   "labelKey": [],
   "tariffModel": {
@@ -35540,8 +35542,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q6-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q6-b",
+  "stem": ""
  },
  {
   "id": "maths-2025-ol-p1-q6-c",
@@ -35552,7 +35555,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q6(c)",
-  "questionText": "Light travels at a speed of approximately 3 × 10⁵ km/second. A light year is the distance travelled by light in 1 year",
+  "questionText": "Find the distance travelled by light in 1 year. (You may assume there are 365 days in a year.) Give your answer, in km, in the form a × 10ⁿ, where 1 ≤ a < 10, n ∈ ℤ.",
   "figureKey": "maths-2025-OL-paper-p013-i2",
   "labelKey": [],
   "tariffModel": {
@@ -35585,8 +35588,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q6-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q6-c",
+  "stem": "Light travels at a speed of approximately 3 × 10⁵ km/second. A light year is the distance travelled by light in 1 year."
  },
  {
   "id": "maths-2025-ol-p1-q7-a-i",
@@ -35597,7 +35601,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q7(a)(i), (ii)",
-  "questionText": "Use the graph to estimate the value of one share on 1st March",
+  "questionText": "(i) Use the graph to estimate the value of one share on 1st March. (ii) Use the graph to identify the month during which the value of one share increased by the greatest amount.",
   "figureKey": "maths-2025-OL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35632,8 +35636,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q7-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q7-a-i",
+  "stem": "The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July."
  },
  {
   "id": "maths-2025-ol-p1-q7-b",
@@ -35644,7 +35649,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q7(b)",
-  "questionText": "On 1st August the value of one share was 15% lower than it was on 1st of July. By reading from the graph and doing calculations, estimate the value of one share on 1st of August as accurately as possible and hence plot that point on the diagram on the previous page",
+  "questionText": "On 1st August the value of one share was 15% lower than it was on 1st of July. By reading from the graph and doing calculations, estimate the value of one share on 1st of August as accurately as possible and hence plot that point on the diagram on the previous page.",
   "figureKey": "maths-2025-OL-paper-p014-i1",
   "labelKey": [],
   "tariffModel": {
@@ -35677,8 +35682,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q7-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q7-b",
+  "stem": "The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July."
  },
  {
   "id": "maths-2025-ol-p1-q7-c",
@@ -35689,7 +35695,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q7(c)",
-  "questionText": "Later in the year, Liam predicts the value of one share. The error in his prediction is €1∙50, which is a percentage error of 16∙3%",
+  "questionText": "Find the value of one share at this time. Give your answer correct to the nearest cent.",
   "figureKey": "maths-2025-OL-paper-p014-i2",
   "labelKey": [],
   "tariffModel": {
@@ -35722,8 +35728,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q7-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q7-c",
+  "stem": "Later in the year, Liam predicts the value of one share. The error in his prediction is €1·50, which is a percentage error of 16·3%."
  },
  {
   "id": "maths-2025-ol-p1-q7-d-i",
@@ -35734,7 +35741,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q7(d)(i), (ii)",
-  "questionText": "Complete the table below to show the values of P(m) for the given values of m. Give each value of P(m) correct to 2 decimal places where relevant",
+  "questionText": "(i) Complete the table below to show the values of P(m) for the given values of m. Give each value of P(m) correct to 2 decimal places where relevant. (ii) The graph of Company A is shown again below. On the same diagram, draw the graph of P(m), for 0 ≤ m ≤ 6, m ∈ ℝ.",
   "figureKey": "maths-2025-OL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35769,8 +35776,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q7-d-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q7-d-i",
+  "stem": "The value of one share for Company B can be modelled by the function P(m) = 2 × 1·29^m, where P(m) is the value of one share, in euro, and m is the time, in months, since 1st January, with 0 ≤ m ≤ 6, m ∈ ℝ."
  },
  {
   "id": "maths-2025-ol-p1-q7-d-iii",
@@ -35781,7 +35789,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q7(d)(iii)",
-  "questionText": "(iii) At only one point in the time period shown, the value of one share for Company A is equal to the value of one share for Company B, according to the function P(m). In which month must this have happened?",
+  "questionText": "At only one point in the time period shown, the value of one share for Company A is equal to the value of one share for Company B, according to the function P(m). In which month must this have happened?",
   "figureKey": "maths-2025-OL-paper-p015-i1",
   "labelKey": [],
   "tariffModel": {
@@ -35809,8 +35817,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q7-d-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q7-d-iii",
+  "stem": "The value of one share for Company B can be modelled by the function P(m) = 2 × 1·29^m, where P(m) is the value of one share, in euro, and m is the time, in months, since 1st January, with 0 ≤ m ≤ 6, m ∈ ℝ."
  },
  {
   "id": "maths-2025-ol-p1-q7-e-i",
@@ -35821,7 +35830,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q7(e)(i), (ii)",
-  "questionText": "Fill in the missing number in the box above to complete the expression for Q(n)",
+  "questionText": "(i) Fill in the missing number in the box above to complete the expression for Q(n). (ii) Using your expression, or otherwise, find how many months it takes for the value of one share for Company B to fall below its value on 1st January, according to the model. Remember that n ∈ ℕ.",
   "figureKey": "maths-2025-OL-paper-p015-i2",
   "labelKey": [],
   "tariffModel": {
@@ -35854,8 +35863,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q7-e-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q7-e-i",
+  "stem": "The value of one share for Company B can be modelled by the function P(m) = 2 × 1·29^m, where P(m) is the value of one share, in euro, and m is the time, in months, since 1st January, with 0 ≤ m ≤ 6, m ∈ ℝ. According to the model, the value of one share for Company B reaches its highest value on 1st July, and from then onwards it declines at a steady linear rate of 30 cent per month. A new function is created to model this decline, where Q(n) is the value of one share n months after the time the share reaches its highest value (n ∈ ℕ). Part of the function is shown below: Q(n) = [blank] − 0·3n."
  },
  {
   "id": "maths-2025-ol-p1-q8-a-i",
@@ -35866,7 +35876,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q8(a)(i)",
-  "questionText": "Find P(0) and explain what it means in the context of the question",
+  "questionText": "Find P(0) and explain what it means in the context of the question.",
   "figureKey": "maths-2025-OL-paper-p016-i0",
   "labelKey": [],
   "tariffModel": {
@@ -35899,8 +35909,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q8-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q8-a-i",
+  "stem": "A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ."
  },
  {
   "id": "maths-2025-ol-p1-q8-a-ii",
@@ -35911,7 +35922,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q8(a)(ii), (iii)",
-  "questionText": "Complete the table below to show the values of P(x) for the given values of x",
+  "questionText": "(ii) Complete the table below to show the values of P(x) for the given values of x. (iii) Draw the graph of P(x) on the axes below for 0 ≤ x ≤ 7, x ∈ ℝ.",
   "figureKey": "maths-2025-OL-paper-p016-i1",
   "labelKey": [],
   "tariffModel": {
@@ -35946,8 +35957,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q8-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q8-a-ii",
+  "stem": "A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ."
  },
  {
   "id": "maths-2025-ol-p1-q8-a-iv",
@@ -35958,7 +35970,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q8(a)(iv)",
-  "questionText": "(iv) Use your graph on the previous page to estimate the range of values of x for which the company will have a profit of at least €6 million. Show your work on the graph",
+  "questionText": "Use your graph on the previous page to estimate the range of values of x for which the company will have a profit of at least €6 million. Show your work on the graph.",
   "figureKey": "maths-2025-OL-paper-p016-i2",
   "labelKey": [],
   "tariffModel": {
@@ -35991,8 +36003,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q8-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q8-a-iv",
+  "stem": "A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ."
  },
  {
   "id": "maths-2025-ol-p1-q8-b-i",
@@ -36003,7 +36016,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q8(b)(i), (ii)",
-  "questionText": "Find Q′(x), and hence find the value of x which will give the maximum value of Q(x)",
+  "questionText": "(i) Find Q′(x), and hence find the value of x which will give the maximum value of Q(x). (ii) Hence, find the maximum value of Q(x).",
   "figureKey": "maths-2025-OL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -36038,8 +36051,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q8-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q8-b-i",
+  "stem": "The profit of the company for the second year can be modelled by the function Q(x) = −1·5x² + 9·6x − 3·5, where Q(x) is the profit for the second year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the second year, with 0 ≤ x ≤ 7, x ∈ ℝ."
  },
  {
   "id": "maths-2025-ol-p1-q8-c-i",
@@ -36050,7 +36064,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q8(c)(i), (ii)",
-  "questionText": "From the graph, estimate R(2) and hence work out the value of R(2) + 3",
+  "questionText": "(i) From the graph, estimate R(2) and hence work out the value of R(2) + 3. (ii) On the diagram above, draw the graph of y = R(x) + 3 for 0 ≤ x ≤ 6, x ∈ ℝ, using the same axes and scales.",
   "figureKey": "maths-2025-OL-paper-p017-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36085,8 +36099,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q8-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q8-c-i",
+  "stem": "The profit for the third year can be modelled by the function R(x), where R(x) is the profit for the third year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the third year, with x ∈ ℝ. The graph of R(x) is shown below for 0 ≤ x ≤ 6, x ∈ ℝ. At the start of the third year, the company receives €3 million in additional funding. As a result, the profit for the third year can actually be modelled by: Profit = R(x) + 3."
  },
  {
   "id": "maths-2025-ol-p1-q9-a-i",
@@ -36097,7 +36112,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q9(a)(i), (ii)",
-  "questionText": "Find how much money will be in the account after 1 year",
+  "questionText": "(i) Find how much money will be in the account after 1 year. (ii) Hence, or otherwise, find how much money will be in the account at the end of 3 years using the rate of 2·8% per annum compound interest. Give your answer correct to the nearest cent.",
   "figureKey": "maths-2025-OL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
@@ -36132,8 +36147,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q9-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q9-a-i",
+  "stem": "Evan has €4500 saved. He put this money in a savings account with a rate of 2·8% per annum compound interest."
  },
  {
   "id": "maths-2025-ol-p1-q9-b-i",
@@ -36144,7 +36160,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q9(b)(i)",
-  "questionText": "The dots for pattern 3 are drawn below. Complete pattern 3",
+  "questionText": "The dots for pattern 3 are drawn below. Complete pattern 3.",
   "figureKey": "maths-2025-OL-paper-p018-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36177,8 +36193,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q9-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q9-b-i",
+  "stem": "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence."
  },
  {
   "id": "maths-2025-ol-p1-q9-b-ii",
@@ -36189,7 +36206,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q9(b)(ii)",
-  "questionText": "Complete the table below to show the number of dots and line segments in the first five patterns of the sequence. The number of line segments in each pattern is in a quadratic sequence",
+  "questionText": "Complete the table below to show the number of dots and line segments in the first five patterns of the sequence. The number of line segments in each pattern is in a quadratic sequence.",
   "figureKey": "maths-2025-OL-paper-p018-i2",
   "labelKey": [],
   "tariffModel": {
@@ -36222,8 +36239,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q9-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q9-b-ii",
+  "stem": "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence."
  },
  {
   "id": "maths-2025-ol-p1-q9-b-iii",
@@ -36234,7 +36252,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q9(b)(iii)",
-  "questionText": "(iii) Write down the number of dots in the 1000th pattern",
+  "questionText": "Write down the number of dots in the 1000th pattern.",
   "figureKey": "maths-2025-OL-paper-p019-i0",
   "labelKey": [],
   "tariffModel": {
@@ -36262,8 +36280,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q9-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q9-b-iii",
+  "stem": "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence."
  },
  {
   "id": "maths-2025-ol-p1-q9-b-iv",
@@ -36274,7 +36293,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q9(b)(iv), (v)",
-  "questionText": "(iv) Sₙ is the total number of dots required to make the first n patterns, where n∈ℕ. Write Sₙ in terms of n",
+  "questionText": "(iv) Sₙ is the total number of dots required to make the first n patterns, where n ∈ ℕ. Write Sₙ in terms of n. (v) Hence, or otherwise, find the total number of complete patterns in the sequence that can be made using 740 dots.",
   "figureKey": "maths-2025-OL-paper-p019-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36309,8 +36328,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q9-b-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q9-b-iv",
+  "stem": "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence."
  },
  {
   "id": "maths-2025-ol-p1-q9-b-vi",
@@ -36321,7 +36341,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q9(b)(vi)",
-  "questionText": "(vi) The formula for the number of line segments in term n is of the form: T(n) = 0∙5n² + b Find the value of b, where b∈ℚ",
+  "questionText": "The formula for the number of line segments in term n is of the form: T(n) = 0·5n² + bn. Find the value of b, where b ∈ ℚ.",
   "figureKey": "maths-2025-OL-paper-p019-i2",
   "labelKey": [],
   "tariffModel": {
@@ -36354,8 +36374,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q9-b-vi"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q9-b-vi",
+  "stem": "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence."
  },
  {
   "id": "maths-2025-ol-p1-q10-a-i",
@@ -36366,7 +36387,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q10(a)(i)",
-  "questionText": "Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of each small square in the grid is 1 cm",
+  "questionText": "Draw a scaled diagram of a net of the box in the grid below. Use the scale 1:10. The length of each small square in the grid is 1 cm.",
   "figureKey": "maths-2025-OL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -36399,8 +36420,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q10-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q10-a-i",
+  "stem": "A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below: 70 cm, 30 cm and 20 cm."
  },
  {
   "id": "maths-2025-ol-p1-q10-a-ii",
@@ -36411,7 +36433,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q10(a)(ii)",
-  "questionText": "Work out the surface area of this box, in cm²",
+  "questionText": "Work out the surface area of this box, in cm².",
   "figureKey": "maths-2025-OL-paper-p020-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36444,8 +36466,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q10-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q10-a-ii",
+  "stem": "A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below: 70 cm, 30 cm and 20 cm."
  },
  {
   "id": "maths-2025-ol-p1-q10-a-iii",
@@ -36456,7 +36479,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q10(a)(iii)",
-  "questionText": "(iii) The factory owner buys a machine from China for making the boxes. The machine costs 353 819∙34 Chinese Yuan, including shipping. The factory owner must also pay €1890 in customs duty",
+  "questionText": "Using the exchange rate €1 = 7·61 Chinese Yuan, find the total cost of the machine, in euro, including the customs duty.",
   "figureKey": "maths-2025-OL-paper-p020-i2",
   "labelKey": [],
   "tariffModel": {
@@ -36489,8 +36512,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q10-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q10-a-iii",
+  "stem": "The factory owner buys a machine from China for making the boxes. The machine costs 353 819·34 Chinese Yuan, including shipping. The factory owner must also pay €1890 in customs duty."
  },
  {
   "id": "maths-2025-ol-p1-q10-b",
@@ -36501,7 +36525,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q10(b)",
-  "questionText": "Ciara gets paid a wage of €780 per week for working 40 hours. Ciara gets paid an hourly rate for any hours worked over the 40 hours. This rate is 50% more than the hourly rate for the first 40 hours",
+  "questionText": "On a particular week, Ciara works her regular 40 hours, plus an additional n hours. Her total wage is €1043·25. Work out the value of n.",
   "figureKey": "maths-2025-OL-paper-p021-i0",
   "labelKey": [],
   "tariffModel": {
@@ -36536,8 +36560,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q10-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q10-b",
+  "stem": "Ciara gets paid a wage of €780 per week for working 40 hours. Ciara gets paid an hourly rate for any hours worked over the 40 hours. This rate is 50% more than the hourly rate for the first 40 hours."
  },
  {
   "id": "maths-2025-ol-p1-q10-c-i",
@@ -36548,7 +36573,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q10(c)(i), (ii)",
-  "questionText": "Find the charge for a repair when it takes 3 hours to do the repair, the extra hourly charge, x, is 3∙5, and the discount rate, d, is 1∙1. Give your answer correct to 2 decimal places",
+  "questionText": "(i) Find the charge for a repair when it takes 3 hours to do the repair, the extra hourly charge, x, is 3·5, and the discount rate, d, is 1·1. Give your answer correct to 2 decimal places. (ii) Find the value of x when the charge for the repair is €76, the repair takes 4 hours, and the discount rate is 1·2.",
   "figureKey": "maths-2025-OL-paper-p021-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36583,8 +36608,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q10-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q10-c-i",
+  "stem": "A shop repairs clothes. The charge for a repair is given by the formula C = (20h + xh)/d, where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based on the level of difficulty of the work and d is a discount rate, with d ≥ 1."
  },
  {
   "id": "maths-2025-ol-p1-q10-c-iii",
@@ -36595,7 +36621,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q10(c)(iii)",
-  "questionText": "(iii) In the formula for C above, d ≥ 1. What impact would changing d, so that d < 1, have on the charge for a repair?",
+  "questionText": "In the formula for C above, d ≥ 1. What impact would changing d, so that d < 1, have on the charge for a repair?",
   "figureKey": "maths-2025-OL-paper-p021-i2",
   "labelKey": [],
   "tariffModel": {
@@ -36623,8 +36649,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p1-q10-c-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q10-c-iii",
+  "stem": "A shop repairs clothes. The charge for a repair is given by the formula C = (20h + xh)/d, where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based on the level of difficulty of the work and d is a discount rate, with d ≥ 1."
  },
  {
   "id": "maths-2025-ol-p2-q1-a-i",
@@ -36635,7 +36662,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q1(a)(i)",
-  "questionText": "The total rainfall in Athenry for June 2023 was 94 mm. The total rainfall in Athenry for June 2024 was 72 mm",
+  "questionText": "Find the percentage decrease in rainfall from June 2023 to June 2024. Give your answer correct to 1 decimal place.",
   "figureKey": "maths-2025-OL-paper-p026-i0",
   "labelKey": [],
   "tariffModel": {
@@ -36663,8 +36690,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q1-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q1-a-i",
+  "stem": "The total rainfall in Athenry for June 2023 was 94 mm. The total rainfall in Athenry for June 2024 was 72 mm."
  },
  {
   "id": "maths-2025-ol-p2-q1-a-ii",
@@ -36675,7 +36703,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q1(a)(ii)",
-  "questionText": "Work out the mean and the standard deviation of the total monthly rainfall for Athenry from the table above. Give both answers correct to the nearest whole number",
+  "questionText": "Work out the mean and the standard deviation of the total monthly rainfall for Athenry from the table above. Give both answers correct to the nearest whole number.",
   "figureKey": "maths-2025-OL-paper-p026-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36708,8 +36736,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q1-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q1-a-ii",
+  "stem": "The table below shows the total monthly rainfall for Athenry for 2023. Each value is rounded to the nearest mm."
  },
  {
   "id": "maths-2025-ol-p2-q1-b",
@@ -36720,7 +36749,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q1(b)",
-  "questionText": "The table below shows the same monthly rainfall values and is ranked from the lowest to the highest",
+  "questionText": "Find the value of the lower quartile (Q₁) and hence, work out the interquartile range of the total monthly rainfall for Athenry for 2023.",
   "figureKey": "maths-2025-OL-paper-p026-i2",
   "labelKey": [],
   "tariffModel": {
@@ -36748,8 +36777,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q1-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q1-b",
+  "stem": "The table below shows the same monthly rainfall values and is ranked from the lowest to the highest. The upper quartile (Q₃) of the data above is 183 mm."
  },
  {
   "id": "maths-2025-ol-p2-q2-a-i",
@@ -36760,7 +36790,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q2(a)(i)",
-  "questionText": "Show that the size of the angle A is 30°",
+  "questionText": "Show that the size of the angle A is 30°.",
   "figureKey": "maths-2025-OL-paper-p027-i0",
   "labelKey": [],
   "tariffModel": {
@@ -36788,8 +36818,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q2-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q2-a-i",
+  "stem": "There are two angles, A and 2A, in a right-angled triangle as shown in the diagram below."
  },
  {
   "id": "maths-2025-ol-p2-q2-a-ii",
@@ -36800,7 +36831,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q2(a)(ii)",
-  "questionText": "The lengths of two of the sides are x and 10 cm, as shown in the diagram above. Using A = 30°, find the value of x, correct to 2 decimal places",
+  "questionText": "The lengths of two of the sides are x and 10 cm, as shown in the diagram above. Using A = 30°, find the value of x, correct to 2 decimal places.",
   "figureKey": "maths-2025-OL-paper-p027-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36833,8 +36864,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q2-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q2-a-ii",
+  "stem": "There are two angles, A and 2A, in a right-angled triangle as shown in the diagram below."
  },
  {
   "id": "maths-2025-ol-p2-q2-b",
@@ -36845,7 +36877,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q2(b)",
-  "questionText": "The triangle P is shown below. Some of its measurements are also shown",
+  "questionText": "Work out the distance from P to R. Give your answer in cm, correct to 1 decimal place.",
   "figureKey": "maths-2025-OL-paper-p027-i2",
   "labelKey": [],
   "tariffModel": {
@@ -36880,8 +36912,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q2-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q2-b",
+  "stem": "The triangle PQR is shown below. Some of its measurements are also shown."
  },
  {
   "id": "maths-2025-ol-p2-q3-a",
@@ -36892,7 +36925,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q3(a)",
-  "questionText": "The diagram below shows three circles, labelled p, q, and r",
+  "questionText": "Write each of the letters p, q, and r in the correct place in the table so that each circle matches its equation.",
   "figureKey": "maths-2025-OL-paper-p028-i0",
   "labelKey": [],
   "tariffModel": {
@@ -36920,8 +36953,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q3-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q3-a",
+  "stem": "The diagram below shows three circles, labelled p, q, and r."
  },
  {
   "id": "maths-2025-ol-p2-q3-b",
@@ -36932,7 +36966,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q3(b)",
-  "questionText": "The circle c has centre (3, −4) and radius 7. Write down the equation of c",
+  "questionText": "Write down the equation of c.",
   "figureKey": "maths-2025-OL-paper-p028-i1",
   "labelKey": [],
   "tariffModel": {
@@ -36965,8 +36999,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q3-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q3-b",
+  "stem": "The circle c has centre (3, −4) and radius 7."
  },
  {
   "id": "maths-2025-ol-p2-q3-c-i",
@@ -36977,7 +37012,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q3(c)(i), (ii)",
-  "questionText": "Find the radius of the circle k",
+  "questionText": "(i) Find the radius of the circle k. (ii) Hence, or otherwise, write down the co-ordinates of two points that are on the circle k, other than (2, 7). Give your answers in the form (a, b) where a, b ∈ ℤ.",
   "figureKey": "maths-2025-OL-paper-p028-i2",
   "labelKey": [],
   "tariffModel": {
@@ -37012,8 +37047,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q3-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q3-c-i",
+  "stem": "The circle k has centre (−1, 3). The point (2, 7) is on the circle k, as shown in the diagram below."
  },
  {
   "id": "maths-2025-ol-p2-q4-a-i",
@@ -37024,7 +37060,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q4(a)(i)",
-  "questionText": "Find the slope of the line A",
+  "questionText": "Find the slope of the line AB.",
   "figureKey": "maths-2025-OL-paper-p029-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37057,8 +37093,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q4-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q4-a-i",
+  "stem": "A (−5, 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below."
  },
  {
   "id": "maths-2025-ol-p2-q4-a-ii",
@@ -37069,7 +37106,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q4(a)(ii)",
-  "questionText": "Hence, work out the equation of the line A. Give your answer in the form a + b + c = 0, where a, b, c∈ℤ",
+  "questionText": "Hence, work out the equation of the line AB. Give your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ.",
   "figureKey": "maths-2025-OL-paper-p029-i1",
   "labelKey": [],
   "tariffModel": {
@@ -37102,8 +37139,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q4-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q4-a-ii",
+  "stem": "A (−5, 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below."
  },
  {
   "id": "maths-2025-ol-p2-q4-a-iii",
@@ -37114,7 +37152,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q4(a)(iii)",
-  "questionText": "(iii) C (4, 3) is a third point on the co-ordinate plane",
+  "questionText": "C (4, 3) is a third point on the co-ordinate plane. Work out the area of the triangle ABC. Hint: the point C is plotted on the diagram on the previous page.",
   "figureKey": "maths-2025-OL-paper-p029-i2",
   "labelKey": [],
   "tariffModel": {
@@ -37147,8 +37185,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q4-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q4-a-iii",
+  "stem": "A (−5, 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below."
  },
  {
   "id": "maths-2025-ol-p2-q4-b",
@@ -37159,7 +37198,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q4(b)",
-  "questionText": "The lines l and k have the following equations: l: y = 2 3 x−5 k: 2x + 3y−7 = 0 Investigate if the lines l and k are parallel, perpendicular, or neither. Show working out to support your answer",
+  "questionText": "Investigate if the lines l and k are parallel, perpendicular, or neither. Show working out to support your answer. Tick one box only.",
   "figureKey": "maths-2025-OL-paper-p030-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37192,8 +37231,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q4-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q4-b",
+  "stem": "The lines l and k have the following equations: l: y = (2/3)x − 5; k: 2x + 3y − 7 = 0."
  },
  {
   "id": "maths-2025-ol-p2-q5-a",
@@ -37204,7 +37244,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q5(a)",
-  "questionText": "j and k are two parallel lines, as shown in the diagram below. The size of some angles are also shown",
+  "questionText": "Find the size of the angles A, B, and C.",
   "figureKey": "maths-2025-OL-paper-p031-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37237,8 +37277,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q5-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q5-a",
+  "stem": "j and k are two parallel lines, as shown in the diagram below. The size of some angles are also shown."
  },
  {
   "id": "maths-2025-ol-p2-q5-b-i",
@@ -37249,7 +37290,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q5(b)(i)",
-  "questionText": "Use the theorem of Pythagoras to work out the distance from A to D, that is, find |A|. Give your answer correct to 1 decimal place",
+  "questionText": "Use the theorem of Pythagoras to work out the distance from A to D, that is, find |AD|. Give your answer correct to 1 decimal place.",
   "figureKey": "maths-2025-OL-paper-p031-i1",
   "labelKey": [],
   "tariffModel": {
@@ -37284,8 +37325,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q5-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q5-b-i",
+  "stem": "The diagram below shows the isosceles triangle ABC, where |AB| = |AC|. D is the midpoint of [BC]. AD is perpendicular to BC. |AB| = 9 cm and |BD| = 5 cm."
  },
  {
   "id": "maths-2025-ol-p2-q5-b-ii",
@@ -37296,7 +37338,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q5(b)(ii)",
-  "questionText": "Show that the triangles A and A are congruent. Give a reason for any statement you make",
+  "questionText": "Show that the triangles ABD and ACD are congruent. Give a reason for any statement you make.",
   "figureKey": "maths-2025-OL-paper-p031-i2",
   "labelKey": [],
   "tariffModel": {
@@ -37329,8 +37371,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q5-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q5-b-ii",
+  "stem": "The diagram below shows the isosceles triangle ABC, where |AB| = |AC|. D is the midpoint of [BC]. AD is perpendicular to BC. |AB| = 9 cm and |BD| = 5 cm."
  },
  {
   "id": "maths-2025-ol-p2-q6-a-i",
@@ -37341,7 +37384,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q6(a)(i)",
-  "questionText": "Use the mean and standard deviation to fill in the missing numbers along the horizontal axis on the diagram below",
+  "questionText": "Use the mean and standard deviation to fill in the missing numbers along the horizontal axis on the diagram below.",
   "figureKey": "maths-2025-OL-paper-p032-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37374,8 +37417,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q6-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q6-a-i",
+  "stem": "The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii)."
  },
  {
   "id": "maths-2025-ol-p2-q6-a-ii",
@@ -37386,7 +37430,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q6(a)(ii), (iii)",
-  "questionText": "A student is chosen at random. Find the probability that this student had a mark between 34 and 90",
+  "questionText": "(ii) A student is chosen at random. Find the probability that this student had a mark between 34 and 90. (iii) 150 students sat the exam. Estimate the number of students who got marks between 48 and 76 in the exam.",
   "figureKey": "maths-2025-OL-paper-p032-i1",
   "labelKey": [],
   "tariffModel": {
@@ -37421,8 +37465,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q6-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q6-a-ii",
+  "stem": "The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii)."
  },
  {
   "id": "maths-2025-ol-p2-q6-b",
@@ -37433,7 +37478,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q6(b)",
-  "questionText": "Eoin writes down 5 positive whole numbers, from smallest to largest. For these 5 numbers: • the median is 9 • the mode is 6 • the range is 11 • the mean is 10",
+  "questionText": "Find the 5 numbers that Eoin writes down.",
   "figureKey": "maths-2025-OL-paper-p032-i2",
   "labelKey": [],
   "tariffModel": {
@@ -37468,8 +37513,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q6-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q6-b",
+  "stem": "Eoin writes down 5 positive whole numbers, from smallest to largest. For these 5 numbers: the median is 9; the mode is 6; the range is 11; the mean is 10."
  },
  {
   "id": "maths-2025-ol-p2-q7-a-i",
@@ -37480,7 +37526,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q7(a)(i), (ii)",
-  "questionText": "writing the probability associated with each branch of the tree diagram into the appropriate box and",
+  "questionText": "Use this information above to complete the tree diagram below by: (i) writing the probability associated with each branch of the tree diagram into the appropriate box and (ii) working out the probability for each outcome and writing it in the appropriate box in the final column.",
   "figureKey": "maths-2025-OL-paper-p033-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37515,8 +37561,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q7-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q7-a-i",
+  "stem": "Seán is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0·6 and the probability that he wins the second match is 0·7. The outcomes of the two matches are independent."
  },
  {
   "id": "maths-2025-ol-p2-q7-a-iii",
@@ -37527,7 +37574,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q7(a)(iii)",
-  "questionText": "(iii) Based on the tree diagram, what is the probability that Seán wins at least 1 match?",
+  "questionText": "Based on the tree diagram, what is the probability that Seán wins at least 1 match?",
   "figureKey": "maths-2025-OL-paper-p033-i1",
   "labelKey": [],
   "tariffModel": {
@@ -37555,8 +37602,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q7-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q7-a-iii",
+  "stem": "Seán is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0·6 and the probability that he wins the second match is 0·7. The outcomes of the two matches are independent."
  },
  {
   "id": "maths-2025-ol-p2-q7-b-i",
@@ -37567,7 +37615,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q7(b)(i), (ii)",
-  "questionText": "What is the probability that Sarah will lose her next service game (that is, that she won’t win her next service game)?",
+  "questionText": "(i) What is the probability that Sarah will lose her next service game (that is, that she won’t win her next service game)? (ii) What is the probability that the first service game that Sarah loses is her third service game? Give your answer correct to 3 decimal places.",
   "figureKey": "maths-2025-OL-paper-p034-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37602,8 +37650,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q7-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q7-b-i",
+  "stem": "Sarah also plays tennis. Each time that Sarah plays a service game, the probability that she wins is 0·78. Assume that winning each service game is independent."
  },
  {
   "id": "maths-2025-ol-p2-q7-c-i",
@@ -37614,7 +37663,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q7(c)(i)",
-  "questionText": "A child’s football is in the shape of a sphere and has a diameter of 18 cm. Find the volume of this ball. Give your answer, in cm³, in terms of 𝜋",
+  "questionText": "Find the volume of this ball. Give your answer, in cm³, in terms of π.",
   "figureKey": "maths-2025-OL-paper-p034-i1",
   "labelKey": [],
   "tariffModel": {
@@ -37647,8 +37696,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q7-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q7-c-i",
+  "stem": "A child’s football is in the shape of a sphere and has a diameter of 18 cm."
  },
  {
   "id": "maths-2025-ol-p2-q7-c-ii",
@@ -37659,7 +37709,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q7(c)(ii)",
-  "questionText": "An adult’s football is in the shape of a sphere and has a volume of 5424∙6 cm³",
+  "questionText": "Work out the radius of the adult’s football. Give your answer correct to 1 decimal place.",
   "figureKey": "maths-2025-OL-paper-p035-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37694,8 +37744,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q7-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q7-c-ii",
+  "stem": "An adult’s football is in the shape of a sphere and has a volume of 5424·6 cm³."
  },
  {
   "id": "maths-2025-ol-p2-q7-d",
@@ -37706,7 +37757,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q7(d)",
-  "questionText": "The Expected Goals (xG) is a method used to measure the probability that a particular type of shot will result in a goal. During a game, a team had 15 shots on goal. The statistician gave each shot a probability of resulting in a goal, as shown in the table below",
+  "questionText": "Use the information in the table to work out the Expected Goals of the team in this game, that is, the expected value of the number of goals that would be scored from these 15 shots.",
   "figureKey": "maths-2025-OL-paper-p035-i1",
   "labelKey": [],
   "tariffModel": {
@@ -37739,8 +37790,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q7-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q7-d",
+  "stem": "The Expected Goals (xG) is a method used to measure the probability that a particular type of shot will result in a goal. During a game, a team had 15 shots on goal. The statistician gave each shot a probability of resulting in a goal, as shown in the table below."
  },
  {
   "id": "maths-2025-ol-p2-q8-a-i",
@@ -37751,7 +37803,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q8(a)(i)",
-  "questionText": "Complete the table above by working out the two missing percentages for Diesel and for Hybrid and the size of the two missing angles for Diesel and Fully Electric",
+  "questionText": "Complete the table above by working out the two missing percentages for Diesel and for Hybrid and the size of the two missing angles for Diesel and Fully Electric. Give each percentage correct to 2 decimal places and give the size of each angle correct to the nearest degree.",
   "figureKey": "maths-2025-OL-paper-p036-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37784,8 +37836,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q8-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q8-a-i",
+  "stem": "The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places) and the size of the angle that would represent each fuel type in a pie chart."
  },
  {
   "id": "maths-2025-ol-p2-q8-a-ii",
@@ -37796,7 +37849,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q8(a)(ii)",
-  "questionText": "Use the information from the table on the previous page to complete the pie chart for Diesel, Fully Electric and Hybrid. Label each sector clearly with the fuel type",
+  "questionText": "Use the information from the table on the previous page to complete the pie chart for Diesel, Fully Electric and Hybrid. Label each sector clearly with the fuel type.",
   "figureKey": "maths-2025-OL-paper-p036-i1",
   "labelKey": [],
   "tariffModel": {
@@ -37829,8 +37882,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q8-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q8-a-ii",
+  "stem": "The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places) and the size of the angle that would represent each fuel type in a pie chart."
  },
  {
   "id": "maths-2025-ol-p2-q8-b-i",
@@ -37841,7 +37895,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q8(b)(i), (ii)",
-  "questionText": "There is a correlation between engine size and fuel efficiency",
+  "questionText": "(i) There is a correlation between engine size and fuel efficiency. Based on the diagram above, pick a description from the list below that best describes the correlation between engine size and fuel efficiency. Explain your choice in relation to fuel efficiency and engine size. Tick one box only: strong positive; strong negative; weak positive; weak negative. (ii) Tom says that the correlation coefficient for two sets of data is 5. Explain why this cannot be correct.",
   "figureKey": "maths-2025-OL-paper-p037-i0",
   "labelKey": [],
   "tariffModel": {
@@ -37876,8 +37930,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q8-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q8-b-i",
+  "stem": "The scatter plot below shows the fuel efficiency of ten popular petrol car types and their engine sizes."
  },
  {
   "id": "maths-2025-ol-p2-q8-c-i",
@@ -37888,7 +37943,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q8(c)(i)",
-  "questionText": "Show that, for this sample, the margin of error for a population proportion is 3∙5%, correct to 1 decimal place",
+  "questionText": "Show that, for this sample, the margin of error for a population proportion is 3·5%, correct to 1 decimal place.",
   "figureKey": "maths-2025-OL-paper-p037-i1",
   "labelKey": [],
   "tariffModel": {
@@ -37921,8 +37976,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q8-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q8-c-i",
+  "stem": "A random sample of 815 cars was picked from new cars in 2024."
  },
  {
   "id": "maths-2025-ol-p2-q8-c-ii",
@@ -37933,7 +37989,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q8(c)(ii)",
-  "questionText": "106 of the 815 new cars bought in 2024 were electric cars. Work out the percentage of new cars in this sample that were electric cars. Give your answer correct to the nearest percent",
+  "questionText": "106 of the 815 new cars bought in 2024 were electric cars. Work out the percentage of new cars in this sample that were electric cars. Give your answer correct to the nearest percent.",
   "figureKey": "maths-2025-OL-paper-p037-i2",
   "labelKey": [],
   "tariffModel": {
@@ -37966,8 +38022,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q8-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q8-c-ii",
+  "stem": "A random sample of 815 cars was picked from new cars in 2024."
  },
  {
   "id": "maths-2025-ol-p2-q8-c-iii",
@@ -37978,7 +38035,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q8(c)(iii)",
-  "questionText": "In 2023, 19∙2% of all new cars bought were electric. A reporter claimed that the proportion of new electric cars being bought in 2024 was different to 2023",
+  "questionText": "In 2023, 19·2% of all new cars bought were electric. A reporter claimed that the proportion of new electric cars being bought in 2024 was different to 2023. Use your answers to parts c(i) and c(ii) to test the claim that the percentage of new electric cars being bought in 2024 is different from that in 2023, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
   "figureKey": "maths-2025-OL-paper-p038-i0",
   "labelKey": [],
   "tariffModel": {
@@ -38011,8 +38068,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q8-c-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q8-c-iii",
+  "stem": "A random sample of 815 cars was picked from new cars in 2024. 106 of the 815 new cars bought in 2024 were electric cars."
  },
  {
   "id": "maths-2025-ol-p2-q9-a-i",
@@ -38023,7 +38081,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q9(a)(i), (ii)",
-  "questionText": "On the diagram below, construct the midpoint of the side [A]. Label this point D. (If using measurements and calculations, show all calculations clearly)",
+  "questionText": "(i) On the diagram below, construct the midpoint of the side [AB]. Label this point D. (If using measurements and calculations, show all calculations clearly.) (ii) Hence, construct the centroid of the triangle ABC. Label this point O.",
   "figureKey": "maths-2025-OL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
@@ -38058,8 +38116,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q9-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q9-a-i",
+  "stem": "Clodagh is making a wooden table for her woodwork class. The triangle ABC below is a scaled diagram of the table-top. The table-top is supported by one leg attached to the centroid, as shown in the diagram on the right."
  },
  {
   "id": "maths-2025-ol-p2-q9-b-i",
@@ -38070,7 +38129,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q9(b)(i), (ii)",
-  "questionText": "The longest side of the bigger table-top is 45 cm. The longest side of the smaller table-top is 36 cm",
+  "questionText": "(i) The longest side of the bigger table-top is 45 cm. The longest side of the smaller table-top is 36 cm. Show the scale factor k = 1·25. (ii) The shortest side of the smaller table-top is 25·5 cm. Work out the length of the shortest side of the bigger table-top, correct to 1 decimal place.",
   "figureKey": "maths-2025-OL-paper-p039-i1",
   "labelKey": [],
   "tariffModel": {
@@ -38105,8 +38164,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q9-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q9-b-i",
+  "stem": "Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k."
  },
  {
   "id": "maths-2025-ol-p2-q9-b-iii",
@@ -38117,7 +38177,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q9(b)(iii)",
-  "questionText": "The area of the bigger table-top is 724 cm². Use k = 1∙25 to find the area of the smaller table-top. Give your answer correct to the nearest cm²",
+  "questionText": "The area of the bigger table-top is 724 cm². Use k = 1·25 to find the area of the smaller table-top. Give your answer correct to the nearest cm².",
   "figureKey": "maths-2025-OL-paper-p040-i0",
   "labelKey": [],
   "tariffModel": {
@@ -38150,8 +38210,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q9-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q9-b-iii",
+  "stem": "Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k."
  },
  {
   "id": "maths-2025-ol-p2-q9-c-i",
@@ -38162,7 +38223,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q9(c)(i)",
-  "questionText": "The shaded area is the Work Section. It has a width of 40 cm. Work out the area of the Work Section. Give your answer correct to the nearest cm²",
+  "questionText": "The shaded area is the Work Section. It has a width of 40 cm. Work out the area of the Work Section. Give your answer correct to the nearest cm².",
   "figureKey": "maths-2025-OL-paper-p040-i1",
   "labelKey": [],
   "tariffModel": {
@@ -38197,8 +38258,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q9-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q9-c-i",
+  "stem": "A table used for a cookery demonstration is in the shape of a sector of a circle with a radius of 160 cm. The table has a Teacher Section, a Demonstration Section, and a Work Section for the participants as shown in the diagram below."
  },
  {
   "id": "maths-2025-ol-p2-q9-c-ii",
@@ -38209,7 +38271,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q9(c)(ii)",
-  "questionText": "Each participant attending the demonstration needs at least 60 cm along the outer circumference of the Work Section of the table to carry out the food preparation",
+  "questionText": "Each participant attending the demonstration needs at least 60 cm along the outer circumference of the Work Section of the table to carry out the food preparation. Find the maximum number of participants who can attend the demonstration.",
   "figureKey": "maths-2025-OL-paper-p040-i2",
   "labelKey": [],
   "tariffModel": {
@@ -38242,8 +38304,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q9-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q9-c-ii",
+  "stem": "A table used for a cookery demonstration is in the shape of a sector of a circle with a radius of 160 cm. The table has a Teacher Section, a Demonstration Section, and a Work Section for the participants as shown in the diagram below."
  },
  {
   "id": "maths-2025-ol-p2-q10-a-i",
@@ -38254,7 +38317,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q10(a)(i)",
-  "questionText": "Aoibhe swims from A to B, to C, to D, to E, to F, and back to A",
+  "questionText": "Aoibhe swims from A to B, to C, to D, to E, to F, and back to A. Find the total distance Aoibhe swims.",
   "figureKey": "maths-2025-OL-paper-p041-i0",
   "labelKey": [],
   "tariffModel": {
@@ -38282,8 +38345,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q10-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q10-a-i",
+  "stem": "Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled A, B, C, D, E, and F, as shown in the diagram below. ABCDEF is a six-sided shape where: AF is parallel to CD and AF is perpendicular to AC. |AB| = |CD| = |EF| = |FA| = 200 m, and |BC| = |DE| = 150 m."
  },
  {
   "id": "maths-2025-ol-p2-q10-a-ii",
@@ -38294,7 +38358,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q10(a)(ii)",
-  "questionText": "The size of the angle A is 110°. Work out the area, correct to the nearest m², of the triangle A, that is, the area of the shaded region in the diagram above",
+  "questionText": "The size of the angle ABC is 110°. Work out the area, correct to the nearest m², of the triangle ABC, that is, the area of the shaded region in the diagram above.",
   "figureKey": "maths-2025-OL-paper-p041-i1",
   "labelKey": [],
   "tariffModel": {
@@ -38327,8 +38391,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q10-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q10-a-ii",
+  "stem": "Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled A, B, C, D, E, and F, as shown in the diagram below. ABCDEF is a six-sided shape where: AF is parallel to CD and AF is perpendicular to AC. |AB| = |CD| = |EF| = |FA| = 200 m, and |BC| = |DE| = 150 m."
  },
  {
   "id": "maths-2025-ol-p2-q10-a-iii",
@@ -38339,7 +38404,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q10(a)(iii)",
-  "questionText": "(iii) Aoibhe swims straight from A to C. Use the cosine rule to work out the distance from A to C. Give your answer correct to the nearest metre",
+  "questionText": "Aoibhe swims straight from A to C. Use the cosine rule to work out the distance from A to C. Give your answer correct to the nearest metre.",
   "figureKey": "maths-2025-OL-paper-p041-i2",
   "labelKey": [],
   "tariffModel": {
@@ -38372,8 +38437,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q10-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q10-a-iii",
+  "stem": "Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled A, B, C, D, E, and F, as shown in the diagram below. ABCDEF is a six-sided shape where: AF is parallel to CD and AF is perpendicular to AC. |AB| = |CD| = |EF| = |FA| = 200 m, and |BC| = |DE| = 150 m. The size of the angle ABC is 110°."
  },
  {
   "id": "maths-2025-ol-p2-q10-a-iv",
@@ -38384,7 +38450,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q10(a)(iv)",
-  "questionText": "Hence, or otherwise, work out the total area of the water enclosed by the six markers",
+  "questionText": "Hence, or otherwise, work out the total area of the water enclosed by the six markers.",
   "figureKey": "maths-2025-OL-paper-p041-i3",
   "labelKey": [],
   "tariffModel": {
@@ -38417,8 +38483,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q10-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q10-a-iv",
+  "stem": "Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled A, B, C, D, E, and F, as shown in the diagram below. ABCDEF is a six-sided shape where: AF is parallel to CD and AF is perpendicular to AC. |AB| = |CD| = |EF| = |FA| = 200 m, and |BC| = |DE| = 150 m. The size of the angle ABC is 110°."
  },
  {
   "id": "maths-2025-ol-p2-q10-b-i",
@@ -38429,7 +38496,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q10(b)(i)",
-  "questionText": "Give another example of such a route Aoibhe could swim",
+  "questionText": "Give another example of such a route Aoibhe could swim.",
   "figureKey": "maths-2025-OL-paper-p042-i0",
   "labelKey": [],
   "tariffModel": {
@@ -38457,8 +38524,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q10-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q10-b-i",
+  "stem": "Point A is the nearest point to the shore and is the start and end point for all swims. Aoibhe wants to see how many routes she could swim, starting at A, by swimming to each of the five markers (B, C, D, E, and F) once and only once and finishing at A. For example, Aoibhe could swim the route: A, E, C, F, D, B, A."
  },
  {
   "id": "maths-2025-ol-p2-q10-b-ii",
@@ -38469,7 +38537,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q10(b)(ii), (iii)",
-  "questionText": "Work out how many such routes are possible",
+  "questionText": "(ii) Work out how many such routes are possible. (iii) On a particular day Aoibhe wants to start at A, swim to two markers other than A, and then return to A. For example, Aoibhe could swim the route: A, E, B, A. Work out how many such routes are possible.",
   "figureKey": "maths-2025-OL-paper-p042-i1",
   "labelKey": [],
   "tariffModel": {
@@ -38504,8 +38572,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2025-OL-ask-p2-q10-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2025 Ordinary paper on 2026-10-07; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2025-OL-ask-p2-q10-b-ii",
+  "stem": "Point A is the nearest point to the shore and is the start and end point for all swims. Aoibhe wants to see how many routes she could swim, starting at A, by swimming to each of the five markers (B, C, D, E, and F) once and only once and finishing at A. For example, Aoibhe could swim the route: A, E, C, F, D, B, A."
  },
  {
   "id": "maths-2025-hl-p2-q2-a-ii",

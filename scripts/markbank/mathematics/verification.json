@@ -1,17 +1,18 @@
 {
   "date": "2026-10-07",
-  "scope": "2025 Higher Papers 1 and 2 and Foundation single paper; shared source-reader and reviewed-scale interaction",
-  "runtimeCards": 880,
-  "reviewedTasks": 127,
+  "scope": "All five 2025 English-language Mathematics papers: Higher and Ordinary Papers 1 and 2, Foundation single paper; shared source reader and exact scale interaction",
+  "runtimeCards": 881,
+  "reviewedTasks": 210,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
     "maths-2025-hl-p2-q3-b",
     "maths-2025-hl-p2-q9-a-i",
     "maths-2025-hl-p2-q9-b",
-    "maths-2025-hl-p2-q9-d"
+    "maths-2025-hl-p2-q9-d",
+    "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 216,
+  "targetedRegressionTests": 222,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -53,6 +54,37 @@
     "originalQuestionAndSchemeRender": true,
     "schemeHiddenBeforeReveal": true,
     "exclusiveScaleAward": 7,
+    "escapeAndFocusReturn": true,
+    "pageErrors": []
+  },
+  "ordinary": {
+    "independentlyReviewedTaskCounts": {
+      "paper1": 41,
+      "paper2": 42
+    },
+    "offeredMarksPerPaper": 380,
+    "completeTextPromptsRestored": 83,
+    "restoredRuntimeTask": "maths-2025-ol-p1-q3-c-i",
+    "paper1Scale15D": [
+      0,
+      4,
+      8,
+      10,
+      15
+    ],
+    "paper2Scale15D": [
+      0,
+      6,
+      8,
+      10,
+      15
+    ],
+    "desktopAndMobileOriginalQuestionAndScheme": true,
+    "schemeHiddenBeforeReveal": true,
+    "exclusiveScaleAwardsTested": [
+      4,
+      6
+    ],
     "escapeAndFocusReturn": true,
     "pageErrors": []
   }

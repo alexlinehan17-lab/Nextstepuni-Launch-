@@ -10619,16 +10619,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q1-a-i", topicId: "maths-3-3", conceptId: "one-power-bank-costs-before-vat",
     section: "B", questionRef: "2025 OL Paper 1 Q1(a)(i)",
-    questionText: "One power bank costs €30 before VAT at 23% has been added. Find the cost of the power bank after VAT has been added",
+    stem: "Seán is buying a power bank and a USB-C cable.",
+    questionText: "One power bank costs €30 before VAT at 23% has been added. Find the cost of the power bank after VAT has been added.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q1-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, writes 0∙23 or 1∙23", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, writes 0∙23 or 1∙23","Finds 23% (6∙90)"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q1-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q1-a-i.png",
@@ -10649,21 +10663,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q1-a-ii", topicId: "maths-3-3", conceptId: "going-buy-different-power-bank-costs",
     section: "B", questionRef: "2025 OL Paper 1 Q1(a)(ii)",
-    questionText: "Seán is going to buy a different power bank that costs €26, and a USB-C cable that costs €9. Seán sees a special offer to buy the power bank and USB-C cable together for €28",
+    stem: "Seán is going to buy a different power bank that costs €26, and a USB-C cable that costs €9. Seán sees a special offer to buy the power bank and USB-C cable together for €28.",
+    questionText: "Work out the percentage discount of this special offer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q1-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 26 + 9 OR 7 written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, 26 + 9 OR 7 written"]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q1-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q1-a-ii.png",
           "srcHash": "2582b084b972348ff5fe2e5131d659ff",
-          "alt": "The question as printed on the paper — Seán is buying a power bank and a USB-C cable. Seán is going to buy a different power bank that costs €26, and a USB-C cable that costs €9. Seán sees a special offer to buy the power bank and USB-C cable together for… Full card prompt: Seán is going to buy a different power bank that costs €26, and a USB-C cable that costs €9. Seán sees a special offer to buy the power bank and USB-C cable together for €28",
+          "alt": "The question as printed on the paper — Seán is buying a power bank and a USB-C cable. Seán is going to buy a different power bank that costs €26, and a USB-C cable that costs €9. Seán sees a special offer to buy the power bank and USB-C cable together for… Full card prompt: Seán is going to buy a different power bank that costs €26, and a USB-C cable that costs €9. Seán sees a special offer to buy the power bank and USB-C cable together for €28. Work out the percentage discount of this special offer.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -10679,21 +10707,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q1-b-i", topicId: "maths-3-3", conceptId: "diarmuid-both-start-cleaning-standard-windows",
     section: "B", questionRef: "2025 OL Paper 1 Q1(b)(i), (ii)",
-    questionText: "Máiréad and Diarmuid both start cleaning standard windows at the same time. They both finish cleaning a window at the same time",
+    stem: "Máiréad and Diarmuid own a window cleaning business. Máiréad can clean a standard window in 9 minutes. Diarmuid can clean a standard window in 12 minutes.",
+    questionText: "(i) Máiréad and Diarmuid both start cleaning standard windows at the same time. They both finish cleaning a window at the same time. After how many minutes will this first happen? (ii) A building has 35 standard windows. Work out how long it would take Máiréad and Diarmuid to clean the 35 windows if they work together.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q1-b-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, some multiples of 9 or 12 written\nWork of merit in (ii), for example, relevant use of answer from (i) OR 7, 1/9 OR 1/12 written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: In (i) Accept correct answer without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, some multiples of 9 or 12 written\nWork of merit in (ii), for example, relevant use of answer from (i) OR 7, 1/9 OR 1/12 written","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q1-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q1-b-i.png",
           "srcHash": "4e63dfe76e67c875a43fe751af0f9058",
-          "alt": "The question as printed on the paper — Máiréad and Diarmuid own a window cleaning business. Máiréad can clean a standard window in 9 minutes Diarmuid can clean a standard window in 12 minutes. Máiréad and Diarmuid both start cleaning standard windows at the… Full card prompt: Máiréad and Diarmuid both start cleaning standard windows at the same time. They both finish cleaning a window at the same time",
+          "alt": "The question as printed on the paper — Máiréad and Diarmuid own a window cleaning business. Máiréad can clean a standard window in 9 minutes Diarmuid can clean a standard window in 12 minutes. Máiréad and Diarmuid both start cleaning standard windows at the… Full card prompt: Máiréad and Diarmuid own a window cleaning business. Máiréad can clean a standard window in 9 minutes. Diarmuid can clean a standard window in 12 minutes. (i) Máiréad and Diarmuid both start cleaning standard windows at the same time. They both finish cleaning a window at the same time. After how many minutes will this first happen? (ii) A building has 35 standard windows. Work out how long it would take Máiréad and Diarmuid to clean the 35 windows if they work together.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -10709,21 +10751,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q2-a-i", topicId: "maths-4-4", conceptId: "complex-number-shown-argand-diagram-plot",
+    id: "maths-2025-ol-p1-q2-a-i", topicId: "maths-3-1", conceptId: "complex-number-shown-argand-diagram-plot",
     section: "B", questionRef: "2025 OL Paper 1 Q2(a)(i)",
-    questionText: "The complex number z₁ is shown on the Argand diagram below. Plot and label z₂ and z₃ on the same Argand diagram",
+    stem: "In this question, i² = −1. z₁, z₂ and z₃ are three complex numbers: z₁ = −1 + 2i, z₂ = 2 + 3i, z₃ = 4 − i.",
+    questionText: "The complex number z₁ is shown on the Argand diagram below. Plot and label z₂ and z₃ on the same Argand diagram.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q2-a-i-r1", kind: "anyN", verbatim: "z₂ or z₃ plotted correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5. The full scale runs to 10. Full Credit -1: Both points plotted correctly but no or incorrect labels. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["z₂ or z₃ plotted correctly"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q2-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q2-a-i.png",
           "srcHash": "46b552c75811b7ca2706f4513a75a018",
-          "alt": "The question as printed on the paper — In this question, i² = −1. z₁, z₂ and z₃ are three complex numbers. z₁ = −1 + 2i z₂ = 2 + 3i z₃ = 4 −i The complex number z₁ is shown on the Argand diagram below. Plot and label z₂ and z₃ on the same Argand diagram. Im… Full card prompt: The complex number z₁ is shown on the Argand diagram below. Plot and label z₂ and z₃ on the same Argand diagram",
+          "alt": "The question as printed on the paper — In this question, i² = −1. z₁, z₂ and z₃ are three complex numbers. z₁ = −1 + 2i z₂ = 2 + 3i z₃ = 4 −i The complex number z₁ is shown on the Argand diagram below. Plot and label z₂ and z₃ on the same Argand diagram. Im… Full card prompt: In this question, i² = −1. z₁, z₂ and z₃ are three complex numbers: z₁ = −1 + 2i, z₂ = 2 + 3i, z₃ = 4 − i. The complex number z₁ is shown on the Argand diagram below. Plot and label z₂ and z₃ on the same Argand diagram.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -10739,16 +10795,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q2-a-ii", topicId: "maths-3-2", conceptId: "work-out-modulus-surd-form",
+    id: "maths-2025-ol-p1-q2-a-ii", topicId: "maths-3-1", conceptId: "work-out-modulus-surd-form",
     section: "B", questionRef: "2025 OL Paper 1 Q2(a)(ii), (iii)",
-    questionText: "Work out the modulus of z₁. That is, find |z₁|. Give your answer in surd form",
+    stem: "In this question, i² = −1. z₁, z₂ and z₃ are three complex numbers: z₁ = −1 + 2i, z₂ = 2 + 3i, z₃ = 4 − i.",
+    questionText: "(ii) Work out the modulus of z₁. That is, find |z₁|. Give your answer in surd form. (iii) z₄ is a complex number with |z₄| < |z₁|. Write down one possible value of z₄. Give your answer in the form a + bi, where a, b ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q2-a-ii-r1", kind: "anyN", verbatim: "Work of merit in (ii), for example, correct substitution\nWork point with of merit a modulus in (iii), for < example,/√5 plotted a and labelled z₄\nModulus formula written in (ii) OR (iii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: (ii) correct and (iii) not in correct form. Note: Accept correct answers without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (ii), for example, correct substitution\nWork point with of merit a modulus in (iii), for < example,/√5 plotted a and labelled z₄\nModulus formula written in (ii) OR (iii)","Work of merit in (ii) AND (iii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q2-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q2-a-ii.png",
@@ -10769,16 +10839,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q2-b", topicId: "maths-3-1", conceptId: "two-complex-numbers-write-form",
     section: "B", questionRef: "2025 OL Paper 1 Q2(b)",
-    questionText: "u and v are two complex numbers. u= 4 −6i v= 1 + i Write u v in the form a+ b, where a, b∈ℤ",
+    stem: "u and v are two complex numbers. u = 4 − 6i, v = 1 + i.",
+    questionText: "Write u/v in the form a + bi, where a, b ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q2-b-r1", kind: "anyN", verbatim: "Work of merit, for example, correct substitution OR correct conjugate written\nSome relevant correct multiplication", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full credit -1: Apply a * if in the form (−2−10i)/2. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, correct substitution OR correct conjugate written\nSome relevant correct multiplication","Correct substitution AND correct conjugate written\nCorrect substitution AND some correct multiplication by an incorrect conjugate","(4−6i)/(1 + i) × (1−i)/(1−i) with some correct multiplication"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q2-b.png",
@@ -10799,16 +10883,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q3-a", topicId: "maths-2-1", conceptId: "rickie-buying-protein-bars",
+    id: "maths-2025-ol-p1-q3-a", topicId: "maths-3-3", conceptId: "rickie-buying-protein-bars",
     section: "B", questionRef: "2025 OL Paper 1 Q3(a)",
-    questionText: "Rickie is buying protein bars",
+    stem: "Rickie is buying protein bars. The cost of a single protein bar is €3·30. A shop has the following two special offers: Offer A: 3 bars for the price of 2 bars. Offer B: 12 pack of the same bar for €29·99.",
+    questionText: "Which offer is cheaper per bar? Use calculations to support your answer. Cheaper offer: Offer A or Offer B. Tick one box only.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q3-a-r1", kind: "anyN", verbatim: "Correct box ticked\nWork of merit, for example, 6∙60 written or a correct calculation/setup, 6∙60/3 or similar High Partial :\nA full comparable calculation worked out, for example, 26∙40 or similar calculated OR the per unit cost of both\nCorrect box ticked and work of merit", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Correct box ticked\nWork of merit, for example, 6∙60 written or a correct calculation/setup, 6∙60/3 or similar High Partial :\nA full comparable calculation worked out, for example, 26∙40 or similar calculated OR the per unit cost of both\nCorrect box ticked and work of merit"]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q3-a.png",
@@ -10829,16 +10927,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q3-b", topicId: "maths-4-3", conceptId: "solve-inequality",
     section: "B", questionRef: "2025 OL Paper 1 Q3(b)",
-    questionText: "Solve the inequality for x∈ℝ: 2x + 4 ≥ 6x−8",
+    questionText: "Solve the inequality for x ∈ ℝ: 2x + 4 ≥ 6x − 8.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q3-b-r1", kind: "anyN", verbatim: "One correct transposition\nFully trial any value ≤ 3", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["One correct transposition\nFully trial any value ≤ 3"]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q3-b.png",
@@ -10859,16 +10970,74 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2025, level: "ordinary",
+    paperFileid: "LC003GLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-q3-c-i", topicId: "maths-4-1", conceptId: "write-down-possible-value-corresponding-value",
+    section: "B", questionRef: "2025 OL Paper 1 Q3(c)(i), (ii)",
+    stem: "k × t = 12, where k, t ∈ ℤ.",
+    questionText: "(i) Write down a possible value of k and the corresponding value of t. (ii) Use your values for k and t from part c(i) to find the value of b in the equation below: (x + k)(x + t) = x² + bx + 12.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-q3-c-i-solution-1", kind: "point", verbatim: "k = 6 t = 2", marks: null },
+    { id: "maths-2025-ol-p1-q3-c-i-solution-2", kind: "point", verbatim: "(x + 6)(x + 2)", marks: null },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-OL-ask-p1-q3-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q3-c-i.png",
+          "srcHash": "c88e335b6631e269ffa0c0cc99024c5d",
+          "alt": "The question as printed on the paper — k × t = 12, where k, t∈ℤ. Write down a possible value of k and the corresponding value of t. k = t = Use your values for k and t from part (c)(i) to find the value of b in the equation below. (x + k)(x + t) = x² + b +… Full card prompt: k × t = 12, where k, t ∈ ℤ. (i) Write down a possible value of k and the corresponding value of t. (ii) Use your values for k and t from part c(i) to find the value of b in the equation below: (x + k)(x + t) = x² + bx + 12.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-OL-paper-p009-i2",
+          "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p009-i2.png",
+          "srcHash": "f90232e807e74e05f795101071686c2a",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q3(c)(i), typeset as the State Examinations Commission set it. It reads: k = 6 t = 2 Or similar (x + 6)(x + 2) [x² + ] 8x [+12] Or similar",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q4-a", topicId: "maths-4-2", conceptId: "solve-equation",
     section: "B", questionRef: "2025 OL Paper 1 Q4(a)",
-    questionText: "Solve the following equation in a∈ℝ: 5(a−3) = 2a + 7",
+    questionText: "Solve the following equation in a ∈ ℝ: 5(a − 3) = 2a + 7.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p1-q4-a-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct operation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Three steps involved in solution: 1. Distribution of 5 2. Transposing 3. Solves. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, one correct operation","Two steps correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q4-a",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q4-a.png",
@@ -10889,16 +11058,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q4-b", topicId: "maths-3-1", conceptId: "function-defined",
+    id: "maths-2025-ol-p1-q4-b", topicId: "maths-5-2", conceptId: "function-defined",
     section: "B", questionRef: "2025 OL Paper 1 Q4(b)",
-    questionText: "The function f(x) is defined as f(x) = x³ −3x² + 4x−8, where x∈ℝ",
+    stem: "The function f(x) is defined as f(x) = x³ − 3x² + 4x − 8, where x ∈ ℝ.",
+    questionText: "Find f′(x), the derivative of f(x). Hence, find the slope of the tangent to f(x) at the point (2, −4).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q4-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Three steps involved in solution: 1. Correct differentiation 2. Substitutes x = 2 into f′(x) 3. Finds the slope. Note: zero credit for substituting 2 into f. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct differentiation","One step correct","Two steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q4-b.png",
@@ -10919,16 +11102,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q4-c-i", topicId: "maths-5-2", conceptId: "write-each-letters-correct-place-table",
     section: "B", questionRef: "2025 OL Paper 1 Q4(c)(i), (ii)",
-    questionText: "Write each of the letters P, Q, and R in the correct place in the table so that each point matches the description of the derivative at that point, where g′(x) is the derivative of g(x)",
+    stem: "The diagram below shows the graph of a cubic function g(x). P, Q, and R are points on the graph of g.",
+    questionText: "(i) Write each of the letters P, Q, and R in the correct place in the table so that each point matches the description of the derivative at that point, where g′(x) is the derivative of g(x). (ii) For the point that you matched to g′(x) = 0, give a reason for your answer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-ol-p1-q4-c-i-r1", kind: "anyN", verbatim: "Work of merit on the diagram\nOne item correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 10. The full scale runs to 15. Note: Four items involved in solution: 1. Q 2. P 3. R 4. Reason. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit on the diagram\nOne item correct","Two items correct","Three items correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q4-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q4-c-i.png",
@@ -10949,16 +11146,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q5-a", topicId: "maths-4-2", conceptId: "algebra-solve-simultaneous-equations",
     section: "B", questionRef: "2025 OL Paper 1 Q5(a)",
-    questionText: "Use algebra to solve the simultaneous equations: 3x + 2y = 11 x−4y = −1 x = y =",
+    questionText: "Use algebra to solve the simultaneous equations: 3x + 2y = 11; x − 4y = −1.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q5-a-r1", kind: "anyN", verbatim: "Some work of merit, for example, correct relevant work in isolating one variable in one equation OR indicates multiplying one equation by a constant OR finds a correct matching x and y value for either equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Four steps involved in solution. 1. Multiplies equation(s) so that one variable will cancel / express one variable in terms of the other 2. Equation in one variable 3. Solves to find the value of one variable 4. Finds the value of the second variable. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some work of merit, for example, correct relevant work in isolating one variable in one equation OR indicates multiplying one equation by a constant OR finds a correct matching x and y value for either equation","Two steps correct","Three steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q5-a.png",
@@ -10979,16 +11189,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q5-b", topicId: "maths-4-2", conceptId: "solve-equation-each-correct-decimal-places",
     section: "B", questionRef: "2025 OL Paper 1 Q5(b)",
-    questionText: "Solve the following equation in x∈ℝ: 3x² −2x−4 = 0 Give each answer correct to 2 decimal places",
+    questionText: "Solve the following equation in x ∈ ℝ: 3x² − 2x − 4 = 0. Give each answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q5-b-r1", kind: "anyN", verbatim: "Quadratic formula written\nWork of merit, for example, identifies one of a, b, or c OR some correct substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: Apply a * for no or incorrect rounding. Note: Three steps involved in solution: 1. Identifies a, b, and c 2. Fully substituted formula 3. Both correctly evaluated. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Quadratic formula written\nWork of merit, for example, identifies one of a, b, or c OR some correct substitution","Two steps correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q5-b.png",
@@ -11009,21 +11232,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q5-c-i", topicId: "maths-4-2", conceptId: "based-graph-which-pairs-values-possible",
+    id: "maths-2025-ol-p1-q5-c-i", topicId: "maths-5-1", conceptId: "based-graph-which-pairs-values-possible",
     section: "B", questionRef: "2025 OL Paper 1 Q5(c)(i), (ii)",
-    questionText: "Based on the graph, which of the following pairs of values of x is a possible set of roots of h(x), that is, values of x for which h(x) = 0?",
+    stem: "The graph of a quadratic function h(x) is shown in the diagram below (drawn to scale). The graph is symmetrical about a vertical line.",
+    questionText: "(i) Based on the graph, which of the following pairs of values of x is a possible set of roots of h(x), that is, values of x for which h(x) = 0? Tick one box only: x = 2 and x = 8; x = −2 and x = −8; x = −2 and x = 8; x = −8 and x = 2. (ii) Find the value of x, at which h(x) is a minimum.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q5-c-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, some correct work on the graph\nWork of merit in (ii), for example, minimum point indicated on the graph OR work with the roots towards finding the minimum OR h′(x) = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answers without work. Note: Correct answer without work in (ii) must be consistent with answer from (i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, some correct work on the graph\nWork of merit in (ii), for example, minimum point indicated on the graph OR work with the roots towards finding the minimum OR h′(x) = 0","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q5-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q5-c-i.png",
           "srcHash": "5e367682b3ceffdbd6a1fc6624601cd4",
-          "alt": "The question as printed on the paper — The graph of a quadratic function h(x) is shown in the diagram below (drawn to scale). The graph is symmetrical about a vertical line. y h(x) x Based on the graph, which of the following pairs of values of x is a… Full card prompt: Based on the graph, which of the following pairs of values of x is a possible set of roots of h(x), that is, values of x for which h(x) = 0?",
+          "alt": "The question as printed on the paper — The graph of a quadratic function h(x) is shown in the diagram below (drawn to scale). The graph is symmetrical about a vertical line. y h(x) x Based on the graph, which of the following pairs of values of x is a… Full card prompt: The graph of a quadratic function h(x) is shown in the diagram below (drawn to scale). The graph is symmetrical about a vertical line. (i) Based on the graph, which of the following pairs of values of x is a possible set of roots of h(x), that is, values of x for which h(x) = 0? Tick one box only: x = 2 and x = 8; x = −2 and x = −8; x = −2 and x = 8; x = −8 and x = 2. (ii) Find the value of x, at which h(x) is a minimum.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11039,21 +11276,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q6-a-i", topicId: "maths-3-3", conceptId: "selling-price-coat",
     section: "B", questionRef: "2025 OL Paper 1 Q6(a)(i), (ii)",
-    questionText: "Find the selling price of the coat",
+    stem: "Tara buys a coat for €90. She then sells the coat at a profit of 25%.",
+    questionText: "(i) Find the selling price of the coat. (ii) The margin on the coat is the profit as a percentage of the selling price. Write down the profit for this coat and hence find the margin.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q6-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, writes 0∙25 or 1∙25\nWork of merit in (ii), for example, relevant use of answer from (i) OR writes down the profit\nProfit (22∙50) written in (i) OR (ii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer without work for (i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, writes 0∙25 or 1∙25\nWork of merit in (ii), for example, relevant use of answer from (i) OR writes down the profit\nProfit (22∙50) written in (i) OR (ii)","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q6-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q6-a-i.png",
           "srcHash": "6c32701a8562f616b688112dfece9051",
-          "alt": "The question as printed on the paper — Tara buys a coat for €90. She then sells the coat at a profit of 25%. Find the selling price of the coat. The margin on the coat is the profit as a percentage of the selling price. Write down the profit for this coat… Full card prompt: Find the selling price of the coat",
+          "alt": "The question as printed on the paper — Tara buys a coat for €90. She then sells the coat at a profit of 25%. Find the selling price of the coat. The margin on the coat is the profit as a percentage of the selling price. Write down the profit for this coat… Full card prompt: Tara buys a coat for €90. She then sells the coat at a profit of 25%. (i) Find the selling price of the coat. (ii) The margin on the coat is the profit as a percentage of the selling price. Write down the profit for this coat and hence find the margin.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11069,16 +11320,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q6-b", topicId: "maths-3-1", conceptId: "write-each-numbers-form",
+    id: "maths-2025-ol-p1-q6-b", topicId: "maths-3-2", conceptId: "write-each-numbers-form",
     section: "B", questionRef: "2025 OL Paper 1 Q6(b)",
-    questionText: "Write each of the following numbers in the form a × 10ⁿ, where 1 ≤ a < 10, n∈ℤ",
+    questionText: "Write each of the following numbers in the form a × 10ⁿ, where 1 ≤ a < 10, n ∈ ℤ: 58 000; 0·036.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q6-b-r1", kind: "anyN", verbatim: "Work of merit, for example, 5∙8 OR 3∙6 written OR shows some understanding of scientific notation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, 5∙8 OR 3∙6 written OR shows some understanding of scientific notation","One correct answer"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q6-b.png",
@@ -11099,16 +11363,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q6-c", topicId: "maths-3-3", conceptId: "light-travels-speed-approximately-second-light",
+    id: "maths-2025-ol-p1-q6-c", topicId: "maths-3-2", conceptId: "light-travels-speed-approximately-second-light",
     section: "B", questionRef: "2025 OL Paper 1 Q6(c)",
-    questionText: "Light travels at a speed of approximately 3 × 10⁵ km/second. A light year is the distance travelled by light in 1 year",
+    stem: "Light travels at a speed of approximately 3 × 10⁵ km/second. A light year is the distance travelled by light in 1 year.",
+    questionText: "Find the distance travelled by light in 1 year. (You may assume there are 365 days in a year.) Give your answer, in km, in the form a × 10ⁿ, where 1 ≤ a < 10, n ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q6-c-r1", kind: "anyN", verbatim: "Work of merit, for example, D = S × T, 24, 60 written OR one relevant multiplication, for example 60 × 365\nFinds total number of seconds (31 536 000)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, D = S × T, 24, 60 written OR one relevant multiplication, for example 60 × 365\nFinds total number of seconds (31 536 000)","Distance formula fully substituted"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q6-c",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q6-c.png",
@@ -11129,16 +11407,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q7-a-i", topicId: "maths-3-3", conceptId: "graph-estimate-value-one-share-1st",
+    id: "maths-2025-ol-p1-q7-a-i", topicId: "maths-5-1", conceptId: "graph-estimate-value-one-share-1st",
     section: "B", questionRef: "2025 OL Paper 1 Q7(a)(i), (ii)",
-    questionText: "Use the graph to estimate the value of one share on 1st March",
+    stem: "The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July.",
+    questionText: "(i) Use the graph to estimate the value of one share on 1st March. (ii) Use the graph to identify the month during which the value of one share increased by the greatest amount.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q7-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, relevant work on the graph\nWork of merit in (ii), for example, relevant work on the graph", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answers without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, relevant work on the graph\nWork of merit in (ii), for example, relevant work on the graph","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q7-a-i.png",
@@ -11159,16 +11451,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q7-b", topicId: "maths-3-3", conceptId: "1st-august-value-one-share-was",
     section: "B", questionRef: "2025 OL Paper 1 Q7(b)",
-    questionText: "On 1st August the value of one share was 15% lower than it was on 1st of July. By reading from the graph and doing calculations, estimate the value of one share on 1st of August as accurately as possible and hence plot that point on the diagram on the previous page",
+    stem: "The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July.",
+    questionText: "On 1st August the value of one share was 15% lower than it was on 1st of July. By reading from the graph and doing calculations, estimate the value of one share on 1st of August as accurately as possible and hence plot that point on the diagram on the previous page.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p1-q7-b-r1", kind: "anyN", verbatim: "Work of merit, for example, work on the diagram, 8 written, 0∙85 written OR 0∙15 written\nPoint plotted on graph without calculations", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, work on the diagram, 8 written, 0∙85 written OR 0∙15 written\nPoint plotted on graph without calculations","€6∙80 written but no plotting on the diagram"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q7-b.png",
@@ -11189,16 +11496,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q7-c", topicId: "maths-3-3", conceptId: "later-year-liam-predicts-value-one",
     section: "B", questionRef: "2025 OL Paper 1 Q7(c)",
-    questionText: "Later in the year, Liam predicts the value of one share. The error in his prediction is €1∙50, which is a percentage error of 16∙3%",
+    stem: "Later in the year, Liam predicts the value of one share. The error in his prediction is €1·50, which is a percentage error of 16·3%.",
+    questionText: "Find the value of one share at this time. Give your answer correct to the nearest cent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q7-c-r1", kind: "anyN", verbatim: "Work of merit, for example, correct formula or 0∙163 written\nAccept values from 9∙18 to 9∙23 inclusive as the correct answer", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, correct formula or 0∙163 written\nAccept values from 9∙18 to 9∙23 inclusive as the correct answer","Correct equation created"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q7-c.png",
@@ -11219,16 +11540,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q7-d-i", topicId: "maths-3-3", conceptId: "complete-table-values-given-values-each",
+    id: "maths-2025-ol-p1-q7-d-i", topicId: "maths-5-1", conceptId: "complete-table-values-given-values-each",
     section: "B", questionRef: "2025 OL Paper 1 Q7(d)(i), (ii)",
-    questionText: "Complete the table below to show the values of P(m) for the given values of m. Give each value of P(m) correct to 2 decimal places where relevant",
+    stem: "The value of one share for Company B can be modelled by the function P(m) = 2 × 1·29^m, where P(m) is the value of one share, in euro, and m is the time, in months, since 1st January, with 0 ≤ m ≤ 6, m ∈ ℝ.",
+    questionText: "(i) Complete the table below to show the values of P(m) for the given values of m. Give each value of P(m) correct to 2 decimal places where relevant. (ii) The graph of Company A is shown again below. On the same diagram, draw the graph of P(m), for 0 ≤ m ≤ 6, m ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q7-d-i-r1", kind: "anyN", verbatim: "1 to 3 items correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Apply a * if 11 items correct. Note: Solution requires 12 items, 4 values in table, 7 points plotted and joined. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["1 to 3 items correct","4 to 7 items correct","8 to 10 items correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q7-d-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q7-d-i.png",
@@ -11249,16 +11584,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q7-d-iii", topicId: "maths-2-3", conceptId: "iii-only-one-point-time-period",
+    id: "maths-2025-ol-p1-q7-d-iii", topicId: "maths-5-1", conceptId: "iii-only-one-point-time-period",
     section: "B", questionRef: "2025 OL Paper 1 Q7(d)(iii)",
-    questionText: "(iii) At only one point in the time period shown, the value of one share for Company A is equal to the value of one share for Company B, according to the function P(m). In which month must this have happened?",
+    stem: "The value of one share for Company B can be modelled by the function P(m) = 2 × 1·29^m, where P(m) is the value of one share, in euro, and m is the time, in months, since 1st January, with 0 ≤ m ≤ 6, m ∈ ℝ.",
+    questionText: "At only one point in the time period shown, the value of one share for Company A is equal to the value of one share for Company B, according to the function P(m). In which month must this have happened?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p1-q7-d-iii-r1", kind: "anyN", verbatim: "Relevant work on the graph", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Relevant work on the graph"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q7-d-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q7-d-iii.png",
@@ -11279,16 +11628,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q7-e-i", topicId: "maths-4-1", conceptId: "fill-missing-number-box-complete-expression",
+    id: "maths-2025-ol-p1-q7-e-i", topicId: "maths-5-1", conceptId: "fill-missing-number-box-complete-expression",
     section: "B", questionRef: "2025 OL Paper 1 Q7(e)(i), (ii)",
-    questionText: "Fill in the missing number in the box above to complete the expression for Q(n)",
+    stem: "The value of one share for Company B can be modelled by the function P(m) = 2 × 1·29^m, where P(m) is the value of one share, in euro, and m is the time, in months, since 1st January, with 0 ≤ m ≤ 6, m ∈ ℝ. According to the model, the value of one share for Company B reaches its highest value on 1st July, and from then onwards it declines at a steady linear rate of 30 cent per month. A new function is created to model this decline, where Q(n) is the value of one share n months after the time the share reaches its highest value (n ∈ ℕ). Part of the function is shown below: Q(n) = [blank] − 0·3n.",
+    questionText: "(i) Fill in the missing number in the box above to complete the expression for Q(n). (ii) Using your expression, or otherwise, find how many months it takes for the value of one share for Company B to fall below its value on 1st January, according to the model. Remember that n ∈ ℕ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q7-e-i-r1", kind: "anyN", verbatim: "(i) correct\nWork of merit in (ii), for example, indicates subtraction of 0∙3 OR relevant use of equation from (i)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: (i) correct and answer to (ii) given as n = 24. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["(i) correct\nWork of merit in (ii), for example, indicates subtraction of 0∙3 OR relevant use of equation from (i)","(i) correct and work of merit in (ii)\n(ii) correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18,
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q7-e-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q7-e-i.png",
@@ -11309,16 +11673,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q8-a-i", topicId: "maths-3-3", conceptId: "explain-what-means-context-question",
+    id: "maths-2025-ol-p1-q8-a-i", topicId: "maths-5-1", conceptId: "explain-what-means-context-question",
     section: "B", questionRef: "2025 OL Paper 1 Q8(a)(i)",
-    questionText: "Find P(0) and explain what it means in the context of the question",
+    stem: "A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ.",
+    questionText: "Find P(0) and explain what it means in the context of the question.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p1-q8-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, x = 0 written, some relevant substitution\nWork of merit in the explanation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, x = 0 written, some relevant substitution\nWork of merit in the explanation","P(0) found"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q8-a-i.png",
@@ -11339,21 +11717,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q8-a-ii", topicId: "maths-3-3", conceptId: "complete-table-values-given-values",
+    id: "maths-2025-ol-p1-q8-a-ii", topicId: "maths-5-1", conceptId: "complete-table-values-given-values",
     section: "B", questionRef: "2025 OL Paper 1 Q8(a)(ii), (iii)",
-    questionText: "Complete the table below to show the values of P(x) for the given values of x",
+    stem: "A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ.",
+    questionText: "(ii) Complete the table below to show the values of P(x) for the given values of x. (iii) Draw the graph of P(x) on the axes below for 0 ≤ x ≤ 7, x ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q8-a-ii-r1", kind: "anyN", verbatim: "1 to 3 items correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Apply a * if 14 items correct. Note: Solution requires 15 items, 6 values in table, 8 points plotted and the curve −4. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["1 to 3 items correct","4 to 8 items correct","9 to 13 items correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q8-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q8-a-ii.png",
           "srcHash": "7ca49e87f9930fe23d3752dca6391b42",
-          "alt": "The question as printed on the paper — A company launches a new phone. The company’s profit each year will depend on the number of phones it produces, x. The company’s profit for the first year can be modelled by the function: P(x) = −1∙5x² + 10∙5x−4 where… Full card prompt: Complete the table below to show the values of P(x) for the given values of x",
+          "alt": "The question as printed on the paper — A company launches a new phone. The company’s profit each year will depend on the number of phones it produces, x. The company’s profit for the first year can be modelled by the function: P(x) = −1∙5x² + 10∙5x−4 where… Full card prompt: A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ. (ii) Complete the table below to show the values of P(x) for the given values of x. (iii) Draw the graph of P(x) on the axes below for 0 ≤ x ≤ 7, x ∈ ℝ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11369,21 +11761,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q8-a-iv", topicId: "maths-3-3", conceptId: "graph-previous-page-estimate-range-values",
+    id: "maths-2025-ol-p1-q8-a-iv", topicId: "maths-5-1", conceptId: "graph-previous-page-estimate-range-values",
     section: "B", questionRef: "2025 OL Paper 1 Q8(a)(iv)",
-    questionText: "(iv) Use your graph on the previous page to estimate the range of values of x for which the company will have a profit of at least €6 million. Show your work on the graph",
+    stem: "A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ.",
+    questionText: "Use your graph on the previous page to estimate the range of values of x for which the company will have a profit of at least €6 million. Show your work on the graph.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p1-q8-a-iv-r1", kind: "anyN", verbatim: "Some correct work on graph\n1∙2 OR 5∙8 written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some correct work on graph\n1∙2 OR 5∙8 written","1∙2 AND 5∙8 written in the answer grid OR on the graph\n1∙2 ≤ x ≤ 5∙8 but no work on the graph"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q8-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q8-a-iv.png",
           "srcHash": "335eab1e5b645b0d82675b07cf6290d5",
-          "alt": "The question as printed on the paper — A company launches a new phone. The company’s profit each year will depend on the number of phones it produces, x. The company’s profit for the first year can be modelled by the function: P(x) = −1∙5x² + 10∙5x−4 where… Full card prompt: (iv) Use your graph on the previous page to estimate the range of values of x for which the company will have a profit of at least €6 million. Show your work on the graph",
+          "alt": "The question as printed on the paper — A company launches a new phone. The company’s profit each year will depend on the number of phones it produces, x. The company’s profit for the first year can be modelled by the function: P(x) = −1∙5x² + 10∙5x−4 where… Full card prompt: A company launches a new phone. The company’s profit each year will depend on the number of phones, x, it produces. The company’s profit for the first year can be modelled by the function P(x) = −1·5x² + 10·5x − 4, where P(x) is the profit for the first year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the first year, with 0 ≤ x ≤ 7, x ∈ ℝ. Use your graph on the previous page to estimate the range of values of x for which the company will have a profit of at least €6 million. Show your work on the graph.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11399,21 +11806,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q8-b-i", topicId: "maths-5-2", conceptId: "value-which-will-maximum-value",
     section: "B", questionRef: "2025 OL Paper 1 Q8(b)(i), (ii)",
-    questionText: "Find Q′(x), and hence find the value of x which will give the maximum value of Q(x)",
+    stem: "The profit of the company for the second year can be modelled by the function Q(x) = −1·5x² + 9·6x − 3·5, where Q(x) is the profit for the second year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the second year, with 0 ≤ x ≤ 7, x ∈ ℝ.",
+    questionText: "(i) Find Q′(x), and hence find the value of x which will give the maximum value of Q(x). (ii) Hence, find the maximum value of Q(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-ol-p1-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, some correct differentiation OR Q′(x) = 0 written\nWork of merit in (ii), for example, some relevant substitution into Q(x)\nOne step correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 10. The full scale runs to 15. Note: Four steps involved in solution: 1. Correct differentiation 2. Equates derivative to zero 3. Solves for x 4. Finds the maximum value. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in (i), for example, some correct differentiation OR Q′(x) = 0 written\nWork of merit in (ii), for example, some relevant substitution into Q(x)\nOne step correct","Two steps correct","Three steps correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q8-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q8-b-i.png",
           "srcHash": "5009f914ff6c568c9e1f487766f76b03",
-          "alt": "The question as printed on the paper — A company launches a new phone. The company’s profit each year will depend on the number of phones it produces, x. The company’s profit for the first year can be modelled by the function: P(x) = −1∙5x² + 10∙5x−4 where… Full card prompt: Find Q′(x), and hence find the value of x which will give the maximum value of Q(x)",
+          "alt": "The question as printed on the paper — A company launches a new phone. The company’s profit each year will depend on the number of phones it produces, x. The company’s profit for the first year can be modelled by the function: P(x) = −1∙5x² + 10∙5x−4 where… Full card prompt: The profit of the company for the second year can be modelled by the function Q(x) = −1·5x² + 9·6x − 3·5, where Q(x) is the profit for the second year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the second year, with 0 ≤ x ≤ 7, x ∈ ℝ. (i) Find Q′(x), and hence find the value of x which will give the maximum value of Q(x). (ii) Hence, find the maximum value of Q(x).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11429,21 +11850,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q8-c-i", topicId: "maths-3-3", conceptId: "graph-estimate-work-out-value",
+    id: "maths-2025-ol-p1-q8-c-i", topicId: "maths-5-1", conceptId: "graph-estimate-work-out-value",
     section: "B", questionRef: "2025 OL Paper 1 Q8(c)(i), (ii)",
-    questionText: "From the graph, estimate R(2) and hence work out the value of R(2) + 3",
+    stem: "The profit for the third year can be modelled by the function R(x), where R(x) is the profit for the third year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the third year, with x ∈ ℝ. The graph of R(x) is shown below for 0 ≤ x ≤ 6, x ∈ ℝ. At the start of the third year, the company receives €3 million in additional funding. As a result, the profit for the third year can actually be modelled by: Profit = R(x) + 3.",
+    questionText: "(i) From the graph, estimate R(2) and hence work out the value of R(2) + 3. (ii) On the diagram above, draw the graph of y = R(x) + 3 for 0 ≤ x ≤ 6, x ∈ ℝ, using the same axes and scales.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-ol-p1-q8-c-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, work on diagram OR R(2) found\nWork of merit in (ii), for example, a correct point plotted", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 10. The full scale runs to 15. Full Credit -1: Apply a * if one point plotted incorrectly or incorrect or no joining. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in (i), for example, work on diagram OR R(2) found\nWork of merit in (ii), for example, a correct point plotted","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q8-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q8-c-i.png",
           "srcHash": "632fd936f8ddc90b98a4302fa312638c",
-          "alt": "The question as printed on the paper — A company launches a new phone. The company’s profit each year will depend on the number of phones it produces, x. The company’s profit for the first year can be modelled by the function: P(x) = −1∙5x² + 10∙5x−4 where… Full card prompt: From the graph, estimate R(2) and hence work out the value of R(2) + 3",
+          "alt": "The question as printed on the paper — A company launches a new phone. The company’s profit each year will depend on the number of phones it produces, x. The company’s profit for the first year can be modelled by the function: P(x) = −1∙5x² + 10∙5x−4 where… Full card prompt: The profit for the third year can be modelled by the function R(x), where R(x) is the profit for the third year (in millions of euro) and x is the number of phones (in tens of thousands) it produces in the third year, with x ∈ ℝ. The graph of R(x) is shown below for 0 ≤ x ≤ 6, x ∈ ℝ. At the start of the third year, the company receives €3 million in additional funding. As a result, the profit for the third year can actually be modelled by: Profit = R(x) + 3. (i) From the graph, estimate R(2) and hence work out the value of R(2) + 3. (ii) On the diagram above, draw the graph of y = R(x) + 3 for 0 ≤ x ≤ 6, x ∈ ℝ, using the same axes and scales.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11459,21 +11894,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q9-a-i", topicId: "maths-3-1", conceptId: "how-much-money-will-account-after",
+    id: "maths-2025-ol-p1-q9-a-i", topicId: "maths-3-3", conceptId: "how-much-money-will-account-after",
     section: "B", questionRef: "2025 OL Paper 1 Q9(a)(i), (ii)",
-    questionText: "Find how much money will be in the account after 1 year",
+    stem: "Evan has €4500 saved. He put this money in a savings account with a rate of 2·8% per annum compound interest.",
+    questionText: "(i) Find how much money will be in the account after 1 year. (ii) Hence, or otherwise, find how much money will be in the account at the end of 3 years using the rate of 2·8% per annum compound interest. Give your answer correct to the nearest cent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example 0∙028 OR 1∙028 OR 126 written\nWork of merit in (ii), for example, uses answer from (i)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer without work for (i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example 0∙028 OR 1∙028 OR 126 written\nWork of merit in (ii), for example, uses answer from (i)","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q9-a-i.png",
           "srcHash": "362f0b266a3048c507486b4b520040ac",
-          "alt": "The question as printed on the paper — Evan has €4500 saved. He put this money in a savings account with a rate of 2∙8% per annum compound interest. Find how much money will be in the account after 1 year. Hence, or otherwise, find how much money will be in… Full card prompt: Find how much money will be in the account after 1 year",
+          "alt": "The question as printed on the paper — Evan has €4500 saved. He put this money in a savings account with a rate of 2∙8% per annum compound interest. Find how much money will be in the account after 1 year. Hence, or otherwise, find how much money will be in… Full card prompt: Evan has €4500 saved. He put this money in a savings account with a rate of 2·8% per annum compound interest. (i) Find how much money will be in the account after 1 year. (ii) Hence, or otherwise, find how much money will be in the account at the end of 3 years using the rate of 2·8% per annum compound interest. Give your answer correct to the nearest cent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11489,16 +11938,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q9-b-i", topicId: "maths-4-1", conceptId: "dots-pattern-drawn-complete-pattern",
     section: "B", questionRef: "2025 OL Paper 1 Q9(b)(i)",
-    questionText: "The dots for pattern 3 are drawn below. Complete pattern 3",
+    stem: "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence.",
+    questionText: "The dots for pattern 3 are drawn below. Complete pattern 3.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q9-b-i-r1", kind: "anyN", verbatim: "One correct line segment drawn", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["One correct line segment drawn","Four correct line segments drawn"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q9-b-i.png",
@@ -11519,16 +11982,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q9-b-ii", topicId: "maths-4-2", conceptId: "complete-table-number-dots-line-segments",
+    id: "maths-2025-ol-p1-q9-b-ii", topicId: "maths-4-1", conceptId: "complete-table-number-dots-line-segments",
     section: "B", questionRef: "2025 OL Paper 1 Q9(b)(ii)",
-    questionText: "Complete the table below to show the number of dots and line segments in the first five patterns of the sequence. The number of line segments in each pattern is in a quadratic sequence",
+    stem: "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence.",
+    questionText: "Complete the table below to show the number of dots and line segments in the first five patterns of the sequence. The number of line segments in each pattern is in a quadratic sequence.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q9-b-ii-r1", kind: "anyN", verbatim: "One correct entry", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["One correct entry","Four correct entries"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q9-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q9-b-ii.png",
@@ -11549,16 +12026,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q9-b-iii", topicId: "maths-4-1", conceptId: "iii-write-down-number-dots-1000th",
     section: "B", questionRef: "2025 OL Paper 1 Q9(b)(iii)",
-    questionText: "(iii) Write down the number of dots in the 1000th pattern",
+    stem: "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence.",
+    questionText: "Write down the number of dots in the 1000th pattern.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p1-q9-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, finds the next term OR correct formula OR a or d identified", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, finds the next term OR correct formula OR a or d identified"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q9-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q9-b-iii.png",
@@ -11579,16 +12070,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q9-b-iv", topicId: "maths-3-1", conceptId: "total-number-dots-required-make-first",
+    id: "maths-2025-ol-p1-q9-b-iv", topicId: "maths-4-1", conceptId: "total-number-dots-required-make-first",
     section: "B", questionRef: "2025 OL Paper 1 Q9(b)(iv), (v)",
-    questionText: "(iv) Sₙ is the total number of dots required to make the first n patterns, where n∈ℕ. Write Sₙ in terms of n",
+    stem: "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence.",
+    questionText: "(iv) Sₙ is the total number of dots required to make the first n patterns, where n ∈ ℕ. Write Sₙ in terms of n. (v) Hence, or otherwise, find the total number of complete patterns in the sequence that can be made using 740 dots.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q9-b-iv-r1", kind: "anyN", verbatim: "Work of merit in (iv), for example, correct formula OR a or d identified\nWork of merit in (v), for example answer from (iv) let equal to 740 OR more than one value of n trialled", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (iv), for example, correct formula OR a or d identified\nWork of merit in (v), for example answer from (iv) let equal to 740 OR more than one value of n trialled","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q9-b-iv",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q9-b-iv.png",
@@ -11609,16 +12115,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q9-b-vi", topicId: "maths-3-1", conceptId: "formula-number-line-segments-term-form",
+    id: "maths-2025-ol-p1-q9-b-vi", topicId: "maths-4-1", conceptId: "formula-number-line-segments-term-form",
     section: "B", questionRef: "2025 OL Paper 1 Q9(b)(vi)",
-    questionText: "(vi) The formula for the number of line segments in term n is of the form: T(n) = 0∙5n² + b Find the value of b, where b∈ℚ",
+    stem: "A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has one more dot than the previous pattern. The diagram below shows pattern 1, pattern 2 and pattern 4 in the sequence.",
+    questionText: "The formula for the number of line segments in term n is of the form: T(n) = 0·5n² + bn. Find the value of b, where b ∈ ℚ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p1-q9-b-vi-r1", kind: "anyN", verbatim: "Work of merit, for example, some relevant substitution into T(n)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some relevant substitution into T(n)","Equation fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q9-b-vi",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q9-b-vi.png",
@@ -11639,21 +12160,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q10-a-i", topicId: "maths-3-3", conceptId: "draw-scaled-diagram-net-box-grid",
+    id: "maths-2025-ol-p1-q10-a-i", topicId: "maths-3-4", conceptId: "draw-scaled-diagram-net-box-grid",
     section: "B", questionRef: "2025 OL Paper 1 Q10(a)(i)",
-    questionText: "Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of each small square in the grid is 1 cm",
+    stem: "A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below: 70 cm, 30 cm and 20 cm.",
+    questionText: "Draw a scaled diagram of a net of the box in the grid below. Use the scale 1:10. The length of each small square in the grid is 1 cm.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct face OR sketch with at least five faces OR correct scaled measurement written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one correct face OR sketch with at least five faces OR correct scaled measurement written","Four correct faces\nCorrect net with excess faces"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-a-i.png",
           "srcHash": "bc7845bacb34913f530fd40e583d4dfb",
-          "alt": "The question as printed on the paper — A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length… Full card prompt: Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of each small square in the grid is 1 cm",
+          "alt": "The question as printed on the paper — A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length… Full card prompt: A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below: 70 cm, 30 cm and 20 cm. Draw a scaled diagram of a net of the box in the grid below. Use the scale 1:10. The length of each small square in the grid is 1 cm.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11669,16 +12204,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q10-a-ii", topicId: "maths-3-4", conceptId: "work-out-surface-area-box",
     section: "B", questionRef: "2025 OL Paper 1 Q10(a)(ii)",
-    questionText: "Work out the surface area of this box, in cm²",
+    stem: "A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below: 70 cm, 30 cm and 20 cm.",
+    questionText: "Work out the surface area of this box, in cm².",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q10-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, two relevant lengths multiplied OR relevant formula (l × w)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, two relevant lengths multiplied OR relevant formula (l × w)","Three relevant areas found No credit:\nFinds the volume"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-a-ii.png",
@@ -11699,21 +12249,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q10-a-iii", topicId: "maths-3-3", conceptId: "iii-factory-owner-buys-machine-china",
     section: "B", questionRef: "2025 OL Paper 1 Q10(a)(iii)",
-    questionText: "(iii) The factory owner buys a machine from China for making the boxes. The machine costs 353 819∙34 Chinese Yuan, including shipping. The factory owner must also pay €1890 in customs duty",
+    stem: "The factory owner buys a machine from China for making the boxes. The machine costs 353 819·34 Chinese Yuan, including shipping. The factory owner must also pay €1890 in customs duty.",
+    questionText: "Using the exchange rate €1 = 7·61 Chinese Yuan, find the total cost of the machine, in euro, including the customs duty.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p1-q10-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant fraction created OR addition of 1890", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, relevant fraction created OR addition of 1890","Cost of machine in euro found (46 494)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q10-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-a-iii.png",
           "srcHash": "ce7e152a0609c45d561ad2d23421f735",
-          "alt": "The question as printed on the paper — A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length… Full card prompt: (iii) The factory owner buys a machine from China for making the boxes. The machine costs 353 819∙34 Chinese Yuan, including shipping. The factory owner must also pay €1890 in customs duty",
+          "alt": "The question as printed on the paper — A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length… Full card prompt: The factory owner buys a machine from China for making the boxes. The machine costs 353 819·34 Chinese Yuan, including shipping. The factory owner must also pay €1890 in customs duty. Using the exchange rate €1 = 7·61 Chinese Yuan, find the total cost of the machine, in euro, including the customs duty.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11729,21 +12293,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p1-q10-b", topicId: "maths-3-3", conceptId: "ciara-gets-paid-wage-780-per",
     section: "B", questionRef: "2025 OL Paper 1 Q10(b)",
-    questionText: "Ciara gets paid a wage of €780 per week for working 40 hours. Ciara gets paid an hourly rate for any hours worked over the 40 hours. This rate is 50% more than the hourly rate for the first 40 hours",
+    stem: "Ciara gets paid a wage of €780 per week for working 40 hours. Ciara gets paid an hourly rate for any hours worked over the 40 hours. This rate is 50% more than the hourly rate for the first 40 hours.",
+    questionText: "On a particular week, Ciara works her regular 40 hours, plus an additional n hours. Her total wage is €1043·25. Work out the value of n.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant addition or multiplication\nOne step correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Four steps involved in solution: 1. Find hourly pay (19∙5) 2. Find hourly pay for overtime (29∙25) 3. Find pay for overtime (263∙25) 4. Solves for n. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, relevant addition or multiplication\nOne step correct","Two steps correct","Three steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-b.png",
           "srcHash": "be3797f0428970fab1570380a2096c3d",
-          "alt": "The question as printed on the paper — Ciara gets paid a wage of €780 per week for working 40 hours. Ciara gets paid an hourly rate for any hours worked over the 40 hours. This rate is 50% more than the hourly rate for the first 40 hours. On a particular… Full card prompt: Ciara gets paid a wage of €780 per week for working 40 hours. Ciara gets paid an hourly rate for any hours worked over the 40 hours. This rate is 50% more than the hourly rate for the first 40 hours",
+          "alt": "The question as printed on the paper — Ciara gets paid a wage of €780 per week for working 40 hours. Ciara gets paid an hourly rate for any hours worked over the 40 hours. This rate is 50% more than the hourly rate for the first 40 hours. On a particular… Full card prompt: Ciara gets paid a wage of €780 per week for working 40 hours. Ciara gets paid an hourly rate for any hours worked over the 40 hours. This rate is 50% more than the hourly rate for the first 40 hours. On a particular week, Ciara works her regular 40 hours, plus an additional n hours. Her total wage is €1043·25. Work out the value of n.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11759,21 +12337,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q10-c-i", topicId: "maths-3-3", conceptId: "charge-repair-when-takes-hours-repair",
+    id: "maths-2025-ol-p1-q10-c-i", topicId: "maths-4-2", conceptId: "charge-repair-when-takes-hours-repair",
     section: "B", questionRef: "2025 OL Paper 1 Q10(c)(i), (ii)",
-    questionText: "Find the charge for a repair when it takes 3 hours to do the repair, the extra hourly charge, x, is 3∙5, and the discount rate, d, is 1∙1. Give your answer correct to 2 decimal places",
+    stem: "A shop repairs clothes. The charge for a repair is given by the formula C = (20h + xh)/d, where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based on the level of difficulty of the work and d is a discount rate, with d ≥ 1.",
+    questionText: "(i) Find the charge for a repair when it takes 3 hours to do the repair, the extra hourly charge, x, is 3·5, and the discount rate, d, is 1·1. Give your answer correct to 2 decimal places. (ii) Find the value of x when the charge for the repair is €76, the repair takes 4 hours, and the discount rate is 1·2.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p1-q10-c-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, some correct substitution\nWork of merit in (ii), for example, some correct substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, some correct substitution\nWork of merit in (ii), for example, some correct substitution","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-c-i.png",
           "srcHash": "9da71d407b6a306b0c56388da2bb689f",
-          "alt": "The question as printed on the paper — A shop repairs clothes. The charge for a repair is given by the formula: C = 20h + xh where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based… Full card prompt: Find the charge for a repair when it takes 3 hours to do the repair, the extra hourly charge, x, is 3∙5, and the discount rate, d, is 1∙1. Give your answer correct to 2 decimal places",
+          "alt": "The question as printed on the paper — A shop repairs clothes. The charge for a repair is given by the formula: C = 20h + xh where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based… Full card prompt: A shop repairs clothes. The charge for a repair is given by the formula C = (20h + xh)/d, where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based on the level of difficulty of the work and d is a discount rate, with d ≥ 1. (i) Find the charge for a repair when it takes 3 hours to do the repair, the extra hourly charge, x, is 3·5, and the discount rate, d, is 1·1. Give your answer correct to 2 decimal places. (ii) Find the value of x when the charge for the repair is €76, the repair takes 4 hours, and the discount rate is 1·2.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11789,21 +12381,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q10-c-iii", topicId: "maths-3-3", conceptId: "iii-formula-what-impact-would-changing",
+    id: "maths-2025-ol-p1-q10-c-iii", topicId: "maths-4-1", conceptId: "iii-formula-what-impact-would-changing",
     section: "B", questionRef: "2025 OL Paper 1 Q10(c)(iii)",
-    questionText: "(iii) In the formula for C above, d ≥ 1. What impact would changing d, so that d < 1, have on the charge for a repair?",
+    stem: "A shop repairs clothes. The charge for a repair is given by the formula C = (20h + xh)/d, where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based on the level of difficulty of the work and d is a discount rate, with d ≥ 1.",
+    questionText: "In the formula for C above, d ≥ 1. What impact would changing d, so that d < 1, have on the charge for a repair?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p1-q10-c-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, trialling a value of d < 1", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, trialling a value of d < 1"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q10-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-c-iii.png",
           "srcHash": "f65aa2e4c70d3ae5d7c2836460895b53",
-          "alt": "The question as printed on the paper — A shop repairs clothes. The charge for a repair is given by the formula: C = 20h + xh where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based… Full card prompt: (iii) In the formula for C above, d ≥ 1. What impact would changing d, so that d < 1, have on the charge for a repair?",
+          "alt": "The question as printed on the paper — A shop repairs clothes. The charge for a repair is given by the formula: C = 20h + xh where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based… Full card prompt: A shop repairs clothes. The charge for a repair is given by the formula C = (20h + xh)/d, where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based on the level of difficulty of the work and d is a discount rate, with d ≥ 1. In the formula for C above, d ≥ 1. What impact would changing d, so that d < 1, have on the charge for a repair?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11819,21 +12425,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q1-a-i", topicId: "maths-1-6", conceptId: "total-rainfall-athenry-june-2023-was",
+    id: "maths-2025-ol-p2-q1-a-i", topicId: "maths-3-3", conceptId: "total-rainfall-athenry-june-2023-was",
     section: "B", questionRef: "2025 OL Paper 2 Q1(a)(i)",
-    questionText: "The total rainfall in Athenry for June 2023 was 94 mm. The total rainfall in Athenry for June 2024 was 72 mm",
+    stem: "The total rainfall in Athenry for June 2023 was 94 mm. The total rainfall in Athenry for June 2024 was 72 mm.",
+    questionText: "Find the percentage decrease in rainfall from June 2023 to June 2024. Give your answer correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q1-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, 94 −72 or a relevant numerator or denominator", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, 94 −72 or a relevant numerator or denominator"]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q1-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q1-a-i.png",
           "srcHash": "d81bdec06d72b7d5aa0229e3201cab22",
-          "alt": "The question as printed on the paper — The table below shows the total monthly rainfall for Athenry for 2023. Each value is rounded to the nearest mm. Month Jan Feb Mar Apr May Jun Jul Aug Sept Oct Nov Dec Total rainfall 114 42 186 93 64 94 224 129 148 180… Full card prompt: The total rainfall in Athenry for June 2023 was 94 mm. The total rainfall in Athenry for June 2024 was 72 mm",
+          "alt": "The question as printed on the paper — The table below shows the total monthly rainfall for Athenry for 2023. Each value is rounded to the nearest mm. Month Jan Feb Mar Apr May Jun Jul Aug Sept Oct Nov Dec Total rainfall 114 42 186 93 64 94 224 129 148 180… Full card prompt: The total rainfall in Athenry for June 2023 was 94 mm. The total rainfall in Athenry for June 2024 was 72 mm. Find the percentage decrease in rainfall from June 2023 to June 2024. Give your answer correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11849,21 +12469,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q1-a-ii", topicId: "maths-1-6", conceptId: "work-out-mean-standard-deviation-total",
     section: "B", questionRef: "2025 OL Paper 2 Q1(a)(ii)",
-    questionText: "Work out the mean and the standard deviation of the total monthly rainfall for Athenry from the table above. Give both answers correct to the nearest whole number",
+    stem: "The table below shows the total monthly rainfall for Athenry for 2023. Each value is rounded to the nearest mm.",
+    questionText: "Work out the mean and the standard deviation of the total monthly rainfall for Athenry from the table above. Give both answers correct to the nearest whole number.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q1-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, effort at calculating mean or correct relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept correct answers without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, effort at calculating mean or correct relevant formula","One correct formula fully substituted\nOne correct answer Full Credit (-1):\nApply a * for no or incorrect rounding\nApply a * for no units"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q1-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q1-a-ii.png",
           "srcHash": "79b10ad5094069490f3238bf787ebae8",
-          "alt": "The question as printed on the paper — The table below shows the total monthly rainfall for Athenry for 2023. Each value is rounded to the nearest mm. Month Jan Feb Mar Apr May Jun Jul Aug Sept Oct Nov Dec Total rainfall 114 42 186 93 64 94 224 129 148 180… Full card prompt: Work out the mean and the standard deviation of the total monthly rainfall for Athenry from the table above. Give both answers correct to the nearest whole number",
+          "alt": "The question as printed on the paper — The table below shows the total monthly rainfall for Athenry for 2023. Each value is rounded to the nearest mm. Month Jan Feb Mar Apr May Jun Jul Aug Sept Oct Nov Dec Total rainfall 114 42 186 93 64 94 224 129 148 180… Full card prompt: The table below shows the total monthly rainfall for Athenry for 2023. Each value is rounded to the nearest mm. Work out the mean and the standard deviation of the total monthly rainfall for Athenry from the table above. Give both answers correct to the nearest whole number.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11879,21 +12513,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q1-b", topicId: "maths-1-6", conceptId: "table-shows-same-monthly-rainfall-values",
     section: "B", questionRef: "2025 OL Paper 2 Q1(b)",
-    questionText: "The table below shows the same monthly rainfall values and is ranked from the lowest to the highest",
+    stem: "The table below shows the same monthly rainfall values and is ranked from the lowest to the highest. The upper quartile (Q₃) of the data above is 183 mm.",
+    questionText: "Find the value of the lower quartile (Q₁) and hence, work out the interquartile range of the total monthly rainfall for Athenry for 2023.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q1-b-r1", kind: "anyN", verbatim: "Work of merit, for example, shows understanding of IQR\nRelevant work towards finding Q₁\nRelevant work on the table", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Note: Accept correct answers without work. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, shows understanding of IQR\nRelevant work towards finding Q₁\nRelevant work on the table"]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q1-b.png",
           "srcHash": "360d160587ee4e12eb4c865f85541e7a",
-          "alt": "The question as printed on the paper — The table below shows the same monthly rainfall values and is ranked from the lowest to the highest. Total rainfall (mm) 42 64 93 94 114 114 129 148 180 186 203 224 The upper quartile (Q₃) of the data above is 183 mm.… Full card prompt: The table below shows the same monthly rainfall values and is ranked from the lowest to the highest",
+          "alt": "The question as printed on the paper — The table below shows the same monthly rainfall values and is ranked from the lowest to the highest. Total rainfall (mm) 42 64 93 94 114 114 129 148 180 186 203 224 The upper quartile (Q₃) of the data above is 183 mm.… Full card prompt: The table below shows the same monthly rainfall values and is ranked from the lowest to the highest. The upper quartile (Q₃) of the data above is 183 mm. Find the value of the lower quartile (Q₁) and hence, work out the interquartile range of the total monthly rainfall for Athenry for 2023.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11909,16 +12557,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q2-a-i", topicId: "maths-2-3", conceptId: "size-angle",
+    id: "maths-2025-ol-p2-q2-a-i", topicId: "maths-2-1", conceptId: "size-angle",
     section: "B", questionRef: "2025 OL Paper 2 Q2(a)(i)",
-    questionText: "Show that the size of the angle A is 30°",
+    stem: "There are two angles, A and 2A, in a right-angled triangle as shown in the diagram below.",
+    questionText: "Show that the size of the angle A is 30°.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q2-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, 3A, 180°, 60°, or 90° written\n2A + A = 90°", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, 3A, 180°, 60°, or 90° written\n2A + A = 90°"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[28],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q2-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q2-a-i.png",
@@ -11939,21 +12601,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q2-a-ii", topicId: "maths-2-3", conceptId: "lengths-two-sides-shown-diagram-using",
     section: "B", questionRef: "2025 OL Paper 2 Q2(a)(ii)",
-    questionText: "The lengths of two of the sides are x and 10 cm, as shown in the diagram above. Using A = 30°, find the value of x, correct to 2 decimal places",
+    stem: "There are two angles, A and 2A, in a right-angled triangle as shown in the diagram below.",
+    questionText: "The lengths of two of the sides are x and 10 cm, as shown in the diagram above. Using A = 30°, find the value of x, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q2-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some understanding of trigonometric ratios or sine rule formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some understanding of trigonometric ratios or sine rule formula","tan 30 = x/10 or similar Full Credit (-1):\nApply a * for no or incorrect rounding\nApply a * for no units"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[28],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q2-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q2-a-ii.png",
           "srcHash": "d1c615c30b1863679844cc3058e2bed9",
-          "alt": "The question as printed on the paper — There are two angles, A and 2A, in a right-angled triangle as shown in the diagram below. 2A x 10 cm Show that the size of the angle A is 30°. The lengths of two of the sides are x and 10 cm, as shown in the diagram… Full card prompt: The lengths of two of the sides are x and 10 cm, as shown in the diagram above. Using A = 30°, find the value of x, correct to 2 decimal places",
+          "alt": "The question as printed on the paper — There are two angles, A and 2A, in a right-angled triangle as shown in the diagram below. 2A x 10 cm Show that the size of the angle A is 30°. The lengths of two of the sides are x and 10 cm, as shown in the diagram… Full card prompt: There are two angles, A and 2A, in a right-angled triangle as shown in the diagram below. The lengths of two of the sides are x and 10 cm, as shown in the diagram above. Using A = 30°, find the value of x, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11969,16 +12645,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q2-b", topicId: "maths-2-3", conceptId: "triangle-shown-some-its-measurements-also",
     section: "B", questionRef: "2025 OL Paper 2 Q2(b)",
-    questionText: "The triangle P is shown below. Some of its measurements are also shown",
+    stem: "The triangle PQR is shown below. Some of its measurements are also shown.",
+    questionText: "Work out the distance from P to R. Give your answer in cm, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-ol-p2-q2-b-r1", kind: "anyN", verbatim: "Work of merit, for example, sine rule formula or work towards finding |∠PQR|", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8, three parts for 10. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Work of merit, for example, sine rule formula or work towards finding |∠PQR|","Some correct substitution into the formula","Sine rule correctly substituted Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[6,2,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,6,8,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[28],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q2-b.png",
@@ -11999,21 +12689,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q3-a", topicId: "maths-2-2", conceptId: "diagram-shows-three-circles-labelled",
     section: "B", questionRef: "2025 OL Paper 2 Q3(a)",
-    questionText: "The diagram below shows three circles, labelled p, q, and r",
+    stem: "The diagram below shows three circles, labelled p, q, and r.",
+    questionText: "Write each of the letters p, q, and r in the correct place in the table so that each circle matches its equation.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q3-a-r1", kind: "anyN", verbatim: "One equation correct\nOne correct radius or centre written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5. The full scale runs to 10. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["One equation correct\nOne correct radius or centre written"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[29],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q3-a.png",
           "srcHash": "26febc917d819934084027784b879459",
-          "alt": "The question as printed on the paper — The diagram below shows three circles, labelled p, q, and r. Write each of the letters p, q, and r in the correct place in the table so that each circle matches its equation. y 4 3 q r 2 p 1 x -4 -3 -2 -1 1 2 3 4 5 6 7… Full card prompt: The diagram below shows three circles, labelled p, q, and r",
+          "alt": "The question as printed on the paper — The diagram below shows three circles, labelled p, q, and r. Write each of the letters p, q, and r in the correct place in the table so that each circle matches its equation. y 4 3 q r 2 p 1 x -4 -3 -2 -1 1 2 3 4 5 6 7… Full card prompt: The diagram below shows three circles, labelled p, q, and r. Write each of the letters p, q, and r in the correct place in the table so that each circle matches its equation.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12029,16 +12733,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q3-b", topicId: "maths-2-2", conceptId: "circle-has-centre-radius-write-down",
     section: "B", questionRef: "2025 OL Paper 2 Q3(b)",
-    questionText: "The circle c has centre (3, −4) and radius 7. Write down the equation of c",
+    stem: "The circle c has centre (3, −4) and radius 7.",
+    questionText: "Write down the equation of c.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q3-b-r1", kind: "anyN", verbatim: "Work of merit, for example, a relevant formula\nh, k, or r identified", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, a relevant formula\nh, k, or r identified","Two elements substituted correctly"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[29],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q3-b.png",
@@ -12059,21 +12777,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q3-c-i", topicId: "maths-2-2", conceptId: "radius-circle",
     section: "B", questionRef: "2025 OL Paper 2 Q3(c)(i), (ii)",
-    questionText: "Find the radius of the circle k",
+    stem: "The circle k has centre (−1, 3). The point (2, 7) is on the circle k, as shown in the diagram below.",
+    questionText: "(i) Find the radius of the circle k. (ii) Hence, or otherwise, write down the co-ordinates of two points that are on the circle k, other than (2, 7). Give your answers in the form (a, b) where a, b ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q3-c-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, relevant formula\nWork of merit in (ii), for example, relevant work on the diagram or use of answer from (i) or one correct x or y value\nRelevant labelling in (i) OR (ii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Zero credit: Points (2,7), (−1,3), or (0,0) written in (ii). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, relevant formula\nWork of merit in (ii), for example, relevant work on the diagram or use of answer from (i) or one correct x or y value\nRelevant labelling in (i) OR (ii)","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[29],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q3-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q3-c-i.png",
           "srcHash": "108eb0961f1482a3daf05e3cc99c4277",
-          "alt": "The question as printed on the paper — The circle k has centre (−1, 3). The point (2, 7) is on the circle k, as shown in the diagram below. y (2, 7) k (−1, 3) x Find the radius of the circle k. Hence, or otherwise, write down the co-ordinates of two points… Full card prompt: Find the radius of the circle k",
+          "alt": "The question as printed on the paper — The circle k has centre (−1, 3). The point (2, 7) is on the circle k, as shown in the diagram below. y (2, 7) k (−1, 3) x Find the radius of the circle k. Hence, or otherwise, write down the co-ordinates of two points… Full card prompt: The circle k has centre (−1, 3). The point (2, 7) is on the circle k, as shown in the diagram below. (i) Find the radius of the circle k. (ii) Hence, or otherwise, write down the co-ordinates of two points that are on the circle k, other than (2, 7). Give your answers in the form (a, b) where a, b ∈ ℤ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12089,16 +12821,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q4-a-i", topicId: "maths-2-2", conceptId: "slope-line",
     section: "B", questionRef: "2025 OL Paper 2 Q4(a)(i)",
-    questionText: "Find the slope of the line A",
+    stem: "A (−5, 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below.",
+    questionText: "Find the slope of the line AB.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q4-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant formula OR a point labelled for substitution\nRise/Run", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, relevant formula OR a point labelled for substitution\nRise/Run","Correct formula fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[30],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q4-a-i.png",
@@ -12119,21 +12865,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q4-a-ii", topicId: "maths-2-2", conceptId: "work-out-equation-line-form",
     section: "B", questionRef: "2025 OL Paper 2 Q4(a)(ii)",
-    questionText: "Hence, work out the equation of the line A. Give your answer in the form a + b + c = 0, where a, b, c∈ℤ",
+    stem: "A (−5, 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below.",
+    questionText: "Hence, work out the equation of the line AB. Give your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q4-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, equation of a line formula\nAnswer from (i) written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Award HPC at most if using an integer value as the slope from (a)(i). Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, equation of a line formula\nAnswer from (i) written","Equation of a line formula fully substituted Full Credit (-1):\nApply a * for answer given as 3x + 7y = 6 or similar"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[30],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q4-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q4-a-ii.png",
           "srcHash": "21a59fb2cb1548b8395027daf500bf85",
-          "alt": "The question as printed on the paper — A (−5 , 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. y 4 3 2 1 x -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 Find the slope of the line A. Hence, work out the equation of the line A. Give… Full card prompt: Hence, work out the equation of the line A. Give your answer in the form a + b + c = 0, where a, b, c∈ℤ",
+          "alt": "The question as printed on the paper — A (−5 , 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. y 4 3 2 1 x -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 Find the slope of the line A. Hence, work out the equation of the line A. Give… Full card prompt: A (−5, 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. Hence, work out the equation of the line AB. Give your answer in the form ax + by + c = 0, where a, b, c ∈ ℤ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12149,21 +12909,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q4-a-iii", topicId: "maths-2-2", conceptId: "iii-third-point-ordinate-plane",
     section: "B", questionRef: "2025 OL Paper 2 Q4(a)(iii)",
-    questionText: "(iii) C (4, 3) is a third point on the co-ordinate plane",
+    stem: "A (−5, 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below.",
+    questionText: "C (4, 3) is a third point on the co-ordinate plane. Work out the area of the triangle ABC. Hint: the point C is plotted on the diagram on the previous page.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q4-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant work on diagram OR relevant formula\nSome correct work on translating a point", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, relevant work on diagram OR relevant formula\nSome correct work on translating a point","Correct formula fully substituted Full Credit (-1):\nApply a * for no units"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[30],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q4-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q4-a-iii.png",
           "srcHash": "39008d3cb36b9767cb4568247306ede5",
-          "alt": "The question as printed on the paper — A (−5 , 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. y 4 3 2 1 x -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 Find the slope of the line A. Hence, work out the equation of the line A. Give… Full card prompt: (iii) C (4, 3) is a third point on the co-ordinate plane",
+          "alt": "The question as printed on the paper — A (−5 , 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. y 4 3 2 1 x -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 Find the slope of the line A. Hence, work out the equation of the line A. Give… Full card prompt: A (−5, 3) and B (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. C (4, 3) is a third point on the co-ordinate plane. Work out the area of the triangle ABC. Hint: the point C is plotted on the diagram on the previous page.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12179,21 +12954,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q4-b", topicId: "maths-2-2", conceptId: "lines-have-equations-investigate-lines-parallel",
     section: "B", questionRef: "2025 OL Paper 2 Q4(b)",
-    questionText: "The lines l and k have the following equations: l: y = 2 3 x−5 k: 2x + 3y−7 = 0 Investigate if the lines l and k are parallel, perpendicular, or neither. Show working out to support your answer",
+    stem: "The lines l and k have the following equations: l: y = (2/3)x − 5; k: 2x + 3y − 7 = 0.",
+    questionText: "Investigate if the lines l and k are parallel, perpendicular, or neither. Show working out to support your answer. Tick one box only.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q4-b-r1", kind: "anyN", verbatim: "a\nWork of merit, − b or y = m + c\nOne item correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Three items involved in solution: 1. Correct box ticked 2. Slope of l 3. Slope of k. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["a\nWork of merit, − b or y = m + c\nOne item correct","Two items correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[31],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q4-b.png",
           "srcHash": "bb2783328b765d3d6959dd0e0dd1ff78",
-          "alt": "The question as printed on the paper — The lines l and k have the following equations: 2/3 xx − 5 x−5 l: y = k: 2x + 3y−7 = 0 Investigate if the lines l and k are parallel, perpendicular, or neither. Show working out to support your answer. l and k are:… Full card prompt: The lines l and k have the following equations: l: y = 2 3 x−5 k: 2x + 3y−7 = 0 Investigate if the lines l and k are parallel, perpendicular, or neither. Show working out to support your answer",
+          "alt": "The question as printed on the paper — The lines l and k have the following equations: 2/3 xx − 5 x−5 l: y = k: 2x + 3y−7 = 0 Investigate if the lines l and k are parallel, perpendicular, or neither. Show working out to support your answer. l and k are:… Full card prompt: The lines l and k have the following equations: l: y = (2/3)x − 5; k: 2x + 3y − 7 = 0. Investigate if the lines l and k are parallel, perpendicular, or neither. Show working out to support your answer. Tick one box only.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12209,16 +12998,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q5-a", topicId: "maths-2-1", conceptId: "two-parallel-lines-shown-diagram-size",
     section: "B", questionRef: "2025 OL Paper 2 Q5(a)",
-    questionText: "j and k are two parallel lines, as shown in the diagram below. The size of some angles are also shown",
+    stem: "j and k are two parallel lines, as shown in the diagram below. The size of some angles are also shown.",
+    questionText: "Find the size of the angles A, B, and C.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q5-a-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant work on diagram, 180 written\nOne angle correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept correct answers without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, relevant work on diagram, 180 written\nOne angle correct","Two angles correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[32],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q5-a.png",
@@ -12239,16 +13042,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q5-b-i", topicId: "maths-2-1", conceptId: "theorem-pythagoras-work-out-distance-correct",
     section: "B", questionRef: "2025 OL Paper 2 Q5(b)(i)",
-    questionText: "Use the theorem of Pythagoras to work out the distance from A to D, that is, find |A|. Give your answer correct to 1 decimal place",
+    stem: "The diagram below shows the isosceles triangle ABC, where |AB| = |AC|. D is the midpoint of [BC]. AD is perpendicular to BC. |AB| = 9 cm and |BD| = 5 cm.",
+    questionText: "Use the theorem of Pythagoras to work out the distance from A to D, that is, find |AD|. Give your answer correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q5-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, correct formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, correct formula","Some correct substitution into the formula","Correct formula fully substituted Full Credit (-1):\nApply a * for no or incorrect rounding\nApply a * for no units"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[32],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q5-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q5-b-i.png",
@@ -12269,16 +13086,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q5-b-ii", topicId: "maths-2-1", conceptId: "triangles-congruent-reason-any-statement-you",
     section: "B", questionRef: "2025 OL Paper 2 Q5(b)(ii)",
-    questionText: "Show that the triangles A and A are congruent. Give a reason for any statement you make",
+    stem: "The diagram below shows the isosceles triangle ABC, where |AB| = |AC|. D is the midpoint of [BC]. AD is perpendicular to BC. |AB| = 9 cm and |BD| = 5 cm.",
+    questionText: "Show that the triangles ABD and ACD are congruent. Give a reason for any statement you make.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-ol-p2-q5-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some understanding of congruency or relevant markings on the diagram or one element of proof written, for example, |AD| = |AD|", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. The full scale runs to 15. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Work of merit, for example, some understanding of congruency or relevant markings on the diagram or one element of proof written, for example, |AD| = |AD|","Two elements of proof written Full Credit (-1):\nApply a * for no reasons\nApply a * for no conclusion"],"perOptionSteps":[5,10]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[32],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q5-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q5-b-ii.png",
@@ -12299,21 +13130,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q6-a-i", topicId: "maths-1-6", conceptId: "mean-standard-deviation-fill-missing-numbers",
+    id: "maths-2025-ol-p2-q6-a-i", topicId: "maths-1-3", conceptId: "mean-standard-deviation-fill-missing-numbers",
     section: "B", questionRef: "2025 OL Paper 2 Q6(a)(i)",
-    questionText: "Use the mean and standard deviation to fill in the missing numbers along the horizontal axis on the diagram below",
+    stem: "The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii).",
+    questionText: "Use the mean and standard deviation to fill in the missing numbers along the horizontal axis on the diagram below.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q6-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct entry or relevant addition", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept correct answers without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one correct entry or relevant addition","Three entries correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q6-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q6-a-i.png",
           "srcHash": "25e4a9977393451b6a790b719567fce2",
-          "alt": "The question as printed on the paper — The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii). Use the mean and… Full card prompt: Use the mean and standard deviation to fill in the missing numbers along the horizontal axis on the diagram below",
+          "alt": "The question as printed on the paper — The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii). Use the mean and… Full card prompt: The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii). Use the mean and standard deviation to fill in the missing numbers along the horizontal axis on the diagram below.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12329,21 +13174,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q6-a-ii", topicId: "maths-1-2", conceptId: "student-chosen-random-probability-student-had",
+    id: "maths-2025-ol-p2-q6-a-ii", topicId: "maths-1-3", conceptId: "student-chosen-random-probability-student-had",
     section: "B", questionRef: "2025 OL Paper 2 Q6(a)(ii), (iii)",
-    questionText: "A student is chosen at random. Find the probability that this student had a mark between 34 and 90",
+    stem: "The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii).",
+    questionText: "(ii) A student is chosen at random. Find the probability that this student had a mark between 34 and 90. (iii) 150 students sat the exam. Estimate the number of students who got marks between 48 and 76 in the exam.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q6-a-ii-r1", kind: "anyN", verbatim: "Some understanding of the empirical rule in (ii) OR (iii)\nWork of merit in (iii), for example, p × 150", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some understanding of the empirical rule in (ii) OR (iii)\nWork of merit in (iii), for example, p × 150","Work of merit in (ii) AND (iii)\nOne part correct","One part correct and additional work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q6-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q6-a-ii.png",
           "srcHash": "e89e41bb4518e48557e66dcc70aecc3a",
-          "alt": "The question as printed on the paper — The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii). Use the mean and… Full card prompt: A student is chosen at random. Find the probability that this student had a mark between 34 and 90",
+          "alt": "The question as printed on the paper — The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii). Use the mean and… Full card prompt: The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii). (ii) A student is chosen at random. Find the probability that this student had a mark between 34 and 90. (iii) 150 students sat the exam. Estimate the number of students who got marks between 48 and 76 in the exam.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12359,16 +13218,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q6-b", topicId: "maths-1-6", conceptId: "eoin-writes-down-positive-whole-numbers",
     section: "B", questionRef: "2025 OL Paper 2 Q6(b)",
-    questionText: "Eoin writes down 5 positive whole numbers, from smallest to largest. For these 5 numbers: • the median is 9 • the mode is 6 • the range is 11 • the mean is 10",
+    stem: "Eoin writes down 5 positive whole numbers, from smallest to largest. For these 5 numbers: the median is 9; the mode is 6; the range is 11; the mean is 10.",
+    questionText: "Find the 5 numbers that Eoin writes down.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q6-b-r1", kind: "anyN", verbatim: "Work of merit, for example, displays some knowledge of mean or median or range or mode\nOne item correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Four items involved in solution: 1. Median of 9 2. Mode of 6 , 6 3. Range of 11 4. Mean of 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, displays some knowledge of mean or median or range or mode\nOne item correct","Two items correct","Three items correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q6-b.png",
@@ -12389,21 +13262,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q7-a-i", topicId: "maths-1-2", conceptId: "writing-probability-associated-each-branch-tree",
     section: "B", questionRef: "2025 OL Paper 2 Q7(a)(i), (ii)",
-    questionText: "writing the probability associated with each branch of the tree diagram into the appropriate box and",
+    stem: "Seán is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0·6 and the probability that he wins the second match is 0·7. The outcomes of the two matches are independent.",
+    questionText: "Use this information above to complete the tree diagram below by: (i) writing the probability associated with each branch of the tree diagram into the appropriate box and (ii) working out the probability for each outcome and writing it in the appropriate box in the final column.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q7-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant addition or subtraction\nOne entry correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, relevant addition or subtraction\nOne entry correct","Two or three entries correct","Four entries correct 0∙42 = Win = Lose 0∙18 Win = 0∙28 0∙12 = Lose"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[34],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q7-a-i.png",
           "srcHash": "7f5e781e9e2f6c68272c2b7a92476a9b",
-          "alt": "The question as printed on the paper — Seán is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0∙6 and the probability that he wins the second match is 0∙7. The outcomes of the two matches are… Full card prompt: writing the probability associated with each branch of the tree diagram into the appropriate box and",
+          "alt": "The question as printed on the paper — Seán is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0∙6 and the probability that he wins the second match is 0∙7. The outcomes of the two matches are… Full card prompt: Seán is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0·6 and the probability that he wins the second match is 0·7. The outcomes of the two matches are independent. Use this information above to complete the tree diagram below by: (i) writing the probability associated with each branch of the tree diagram into the appropriate box and (ii) working out the probability for each outcome and writing it in the appropriate box in the final column.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12419,21 +13306,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q7-a-iii", topicId: "maths-1-2", conceptId: "iii-based-tree-diagram-what-probability",
     section: "B", questionRef: "2025 OL Paper 2 Q7(a)(iii)",
-    questionText: "(iii) Based on the tree diagram, what is the probability that Seán wins at least 1 match?",
+    stem: "Seán is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0·6 and the probability that he wins the second match is 0·7. The outcomes of the two matches are independent.",
+    questionText: "Based on the tree diagram, what is the probability that Seán wins at least 1 match?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q7-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant addition or subtraction or relevant outcome written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5. The full scale runs to 10. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, relevant addition or subtraction or relevant outcome written"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[34],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q7-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q7-a-iii.png",
           "srcHash": "a3d1b000ae996c09d95f1512efafed6d",
-          "alt": "The question as printed on the paper — Seán is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0∙6 and the probability that he wins the second match is 0∙7. The outcomes of the two matches are… Full card prompt: (iii) Based on the tree diagram, what is the probability that Seán wins at least 1 match?",
+          "alt": "The question as printed on the paper — Seán is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0∙6 and the probability that he wins the second match is 0∙7. The outcomes of the two matches are… Full card prompt: Seán is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0·6 and the probability that he wins the second match is 0·7. The outcomes of the two matches are independent. Based on the tree diagram, what is the probability that Seán wins at least 1 match?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12449,21 +13351,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q7-b-i", topicId: "maths-1-2", conceptId: "what-probability-sarah-will-lose-her",
     section: "B", questionRef: "2025 OL Paper 2 Q7(b)(i), (ii)",
-    questionText: "What is the probability that Sarah will lose her next service game (that is, that she won’t win her next service game)?",
+    stem: "Sarah also plays tennis. Each time that Sarah plays a service game, the probability that she wins is 0·78. Assume that winning each service game is independent.",
+    questionText: "(i) What is the probability that Sarah will lose her next service game (that is, that she won’t win her next service game)? (ii) What is the probability that the first service game that Sarah loses is her third service game? Give your answer correct to 3 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q7-b-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, mentions 1\nWork of merit in (ii), for example, Win, Win, Lose written OR two relevant probabilities multiplied", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer without work in (i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, mentions 1\nWork of merit in (ii), for example, Win, Win, Lose written OR two relevant probabilities multiplied","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q7-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q7-b-i.png",
           "srcHash": "434cf873c70a9630294fa87652b8fba5",
-          "alt": "The question as printed on the paper — Sarah also plays tennis. Each time that Sarah plays a service game, the probability that she wins is 0∙78. Assume that winning each service game is independent. What is the probability that Sarah will lose her next… Full card prompt: What is the probability that Sarah will lose her next service game (that is, that she won’t win her next service game)?",
+          "alt": "The question as printed on the paper — Sarah also plays tennis. Each time that Sarah plays a service game, the probability that she wins is 0∙78. Assume that winning each service game is independent. What is the probability that Sarah will lose her next… Full card prompt: Sarah also plays tennis. Each time that Sarah plays a service game, the probability that she wins is 0·78. Assume that winning each service game is independent. (i) What is the probability that Sarah will lose her next service game (that is, that she won’t win her next service game)? (ii) What is the probability that the first service game that Sarah loses is her third service game? Give your answer correct to 3 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12479,16 +13395,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q7-c-i", topicId: "maths-3-4", conceptId: "child-football-shape-sphere-has-diameter",
     section: "B", questionRef: "2025 OL Paper 2 Q7(c)(i)",
-    questionText: "A child’s football is in the shape of a sphere and has a diameter of 18 cm. Find the volume of this ball. Give your answer, in cm³, in terms of 𝜋",
+    stem: "A child’s football is in the shape of a sphere and has a diameter of 18 cm.",
+    questionText: "Find the volume of this ball. Give your answer, in cm³, in terms of π.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q7-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, volume of sphere formula OR radius identified as 9", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, volume of sphere formula OR radius identified as 9","Correct formula fully substituted Full Credit (-1):\nApply a * for answer not in terms of 𝜋"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q7-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q7-c-i.png",
@@ -12509,16 +13439,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q7-c-ii", topicId: "maths-3-4", conceptId: "adult-football-shape-sphere-has-volume",
     section: "B", questionRef: "2025 OL Paper 2 Q7(c)(ii)",
-    questionText: "An adult’s football is in the shape of a sphere and has a volume of 5424∙6 cm³",
+    stem: "An adult’s football is in the shape of a sphere and has a volume of 5424·6 cm³.",
+    questionText: "Work out the radius of the adult’s football. Give your answer correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q7-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, volume of sphere formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, volume of sphere formula","4/3 𝜋 r³ = 5424∙6","r³ isolated Full Credit (-1):\nApply a * for no or incorrect rounding\nApply a * for no units"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q7-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q7-c-ii.png",
@@ -12539,21 +13483,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q7-d", topicId: "maths-1-2", conceptId: "expected-goals-method-used-measure-probability",
+    id: "maths-2025-ol-p2-q7-d", topicId: "maths-1-3", conceptId: "expected-goals-method-used-measure-probability",
     section: "B", questionRef: "2025 OL Paper 2 Q7(d)",
-    questionText: "The Expected Goals (xG) is a method used to measure the probability that a particular type of shot will result in a goal. During a game, a team had 15 shots on goal. The statistician gave each shot a probability of resulting in a goal, as shown in the table below",
+    stem: "The Expected Goals (xG) is a method used to measure the probability that a particular type of shot will result in a goal. During a game, a team had 15 shots on goal. The statistician gave each shot a probability of resulting in a goal, as shown in the table below.",
+    questionText: "Use the information in the table to work out the Expected Goals of the team in this game, that is, the expected value of the number of goals that would be scored from these 15 shots.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q7-d-r1", kind: "anyN", verbatim: "Work of merit, correct relevant formula\nOne correct term or operation indicated, for example, 6(0∙1) or similar", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, correct relevant formula\nOne correct term or operation indicated, for example, 6(0∙1) or similar","Two correct terms indicated"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q7-d",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q7-d.png",
           "srcHash": "97f8b37ab4bd0042795269ba2b560e37",
-          "alt": "The question as printed on the paper — The Expected Goals (xG) is a method used to measure the probability that a particular type of shot will result in a goal. During a game, a team had 15 shots on goal. The statistician gave each shot a probability of… Full card prompt: The Expected Goals (xG) is a method used to measure the probability that a particular type of shot will result in a goal. During a game, a team had 15 shots on goal. The statistician gave each shot a probability of resulting in a goal, as shown in the table below",
+          "alt": "The question as printed on the paper — The Expected Goals (xG) is a method used to measure the probability that a particular type of shot will result in a goal. During a game, a team had 15 shots on goal. The statistician gave each shot a probability of… Full card prompt: The Expected Goals (xG) is a method used to measure the probability that a particular type of shot will result in a goal. During a game, a team had 15 shots on goal. The statistician gave each shot a probability of resulting in a goal, as shown in the table below. Use the information in the table to work out the Expected Goals of the team in this game, that is, the expected value of the number of goals that would be scored from these 15 shots.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12569,21 +13527,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q8-a-i", topicId: "maths-3-3", conceptId: "complete-table-working-out-two-missing",
+    id: "maths-2025-ol-p2-q8-a-i", topicId: "maths-1-6", conceptId: "complete-table-working-out-two-missing",
     section: "B", questionRef: "2025 OL Paper 2 Q8(a)(i)",
-    questionText: "Complete the table above by working out the two missing percentages for Diesel and for Hybrid and the size of the two missing angles for Diesel and Fully Electric",
+    stem: "The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places) and the size of the angle that would represent each fuel type in a pie chart.",
+    questionText: "Complete the table above by working out the two missing percentages for Diesel and for Hybrid and the size of the two missing angles for Diesel and Fully Electric. Give each percentage correct to 2 decimal places and give the size of each angle correct to the nearest degree.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q8-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, a relevant fraction\nOne correct entry", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answers without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, a relevant fraction\nOne correct entry","Two or three correct entries Full Credit (-1):\nApply a * for no or incorrect rounding in percentage\nApply a * for no or incorrect rounding in degree"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[37],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q8-a-i.png",
           "srcHash": "0b862eadc5bcf858292d0a096444bc2c",
-          "alt": "The question as printed on the paper — The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places)… Full card prompt: Complete the table above by working out the two missing percentages for Diesel and for Hybrid and the size of the two missing angles for Diesel and Fully Electric",
+          "alt": "The question as printed on the paper — The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places)… Full card prompt: The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places) and the size of the angle that would represent each fuel type in a pie chart. Complete the table above by working out the two missing percentages for Diesel and for Hybrid and the size of the two missing angles for Diesel and Fully Electric. Give each percentage correct to 2 decimal places and give the size of each angle correct to the nearest degree.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12599,21 +13571,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q8-a-ii", topicId: "maths-3-3", conceptId: "information-table-previous-page-complete-pie",
+    id: "maths-2025-ol-p2-q8-a-ii", topicId: "maths-1-6", conceptId: "information-table-previous-page-complete-pie",
     section: "B", questionRef: "2025 OL Paper 2 Q8(a)(ii)",
-    questionText: "Use the information from the table on the previous page to complete the pie chart for Diesel, Fully Electric and Hybrid. Label each sector clearly with the fuel type",
+    stem: "The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places) and the size of the angle that would represent each fuel type in a pie chart.",
+    questionText: "Use the information from the table on the previous page to complete the pie chart for Diesel, Fully Electric and Hybrid. Label each sector clearly with the fuel type.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-ol-p2-q8-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, three sectors drawn but not correct angles", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. The full scale runs to 15. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Work of merit, for example, three sectors drawn but not correct angles","One sector correct Full Credit (-1):\nPie chart not fully labelled"],"perOptionSteps":[5,10]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,5,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[37],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q8-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q8-a-ii.png",
           "srcHash": "6f8788a6445638a73c7b655ab418ef55",
-          "alt": "The question as printed on the paper — The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places)… Full card prompt: Use the information from the table on the previous page to complete the pie chart for Diesel, Fully Electric and Hybrid. Label each sector clearly with the fuel type",
+          "alt": "The question as printed on the paper — The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places)… Full card prompt: The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places) and the size of the angle that would represent each fuel type in a pie chart. Use the information from the table on the previous page to complete the pie chart for Diesel, Fully Electric and Hybrid. Label each sector clearly with the fuel type.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12629,16 +13616,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q8-b-i", topicId: "maths-1-7", conceptId: "there-correlation-between-engine-size-fuel",
+    id: "maths-2025-ol-p2-q8-b-i", topicId: "maths-1-6", conceptId: "there-correlation-between-engine-size-fuel",
     section: "B", questionRef: "2025 OL Paper 2 Q8(b)(i), (ii)",
-    questionText: "There is a correlation between engine size and fuel efficiency",
+    stem: "The scatter plot below shows the fuel efficiency of ten popular petrol car types and their engine sizes.",
+    questionText: "(i) There is a correlation between engine size and fuel efficiency. Based on the diagram above, pick a description from the list below that best describes the correlation between engine size and fuel efficiency. Explain your choice in relation to fuel efficiency and engine size. Tick one box only: strong positive; strong negative; weak positive; weak negative. (ii) Tom says that the correlation coefficient for two sets of data is 5. Explain why this cannot be correct.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-ol-p2-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, correct box ticked, or some merit in the explanation\nWork of merit in (ii), for example, some merit in the explanation", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8, three parts for 10. The full scale runs to 15. Note: In this case, accept answer to (ii) based on the diagram. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Work of merit in (i), for example, correct box ticked, or some merit in the explanation\nWork of merit in (ii), for example, some merit in the explanation","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[6,2,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,6,8,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q8-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q8-b-i.png",
@@ -12659,16 +13660,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q8-c-i", topicId: "maths-1-7", conceptId: "sample-margin-error-population-proportion-correct",
     section: "B", questionRef: "2025 OL Paper 2 Q8(c)(i)",
-    questionText: "Show that, for this sample, the margin of error for a population proportion is 3∙5%, correct to 1 decimal place",
+    stem: "A random sample of 815 cars was picked from new cars in 2024.",
+    questionText: "Show that, for this sample, the margin of error for a population proportion is 3·5%, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q8-c-i-r1", kind: "anyN", verbatim: "Work of merit for example n = 815, × 100\nCorrect relevant formula ( 1/√n)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit for example n = 815, × 100\nCorrect relevant formula ( 1/√n)","Correct formula fully substituted Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q8-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q8-c-i.png",
@@ -12689,21 +13704,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q8-c-ii", topicId: "maths-3-3", conceptId: "106-815-new-cars-bought-2024",
     section: "B", questionRef: "2025 OL Paper 2 Q8(c)(ii)",
-    questionText: "106 of the 815 new cars bought in 2024 were electric cars. Work out the percentage of new cars in this sample that were electric cars. Give your answer correct to the nearest percent",
+    stem: "A random sample of 815 cars was picked from new cars in 2024.",
+    questionText: "106 of the 815 new cars bought in 2024 were electric cars. Work out the percentage of new cars in this sample that were electric cars. Give your answer correct to the nearest percent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q8-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 106/815 OR × 100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 106/815 OR × 100","106/815 × 100 OR 0∙13006 … Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q8-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q8-c-ii.png",
           "srcHash": "c6a3fa3b65d13d691f8a1f1b8c4651e2",
-          "alt": "The question as printed on the paper — A random sample of 815 cars was picked from new cars in 2024. Show that, for this sample, the margin of error for a population proportion is 3∙5%, correct to 1 decimal place. 106 of the 815 new cars bought in 2024 were… Full card prompt: 106 of the 815 new cars bought in 2024 were electric cars. Work out the percentage of new cars in this sample that were electric cars. Give your answer correct to the nearest percent",
+          "alt": "The question as printed on the paper — A random sample of 815 cars was picked from new cars in 2024. Show that, for this sample, the margin of error for a population proportion is 3∙5%, correct to 1 decimal place. 106 of the 815 new cars bought in 2024 were… Full card prompt: A random sample of 815 cars was picked from new cars in 2024. 106 of the 815 new cars bought in 2024 were electric cars. Work out the percentage of new cars in this sample that were electric cars. Give your answer correct to the nearest percent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12719,21 +13748,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q8-c-iii", topicId: "maths-3-3", conceptId: "2023-all-new-cars-bought-were",
+    id: "maths-2025-ol-p2-q8-c-iii", topicId: "maths-1-7", conceptId: "2023-all-new-cars-bought-were",
     section: "B", questionRef: "2025 OL Paper 2 Q8(c)(iii)",
-    questionText: "In 2023, 19∙2% of all new cars bought were electric. A reporter claimed that the proportion of new electric cars being bought in 2024 was different to 2023",
+    stem: "A random sample of 815 cars was picked from new cars in 2024. 106 of the 815 new cars bought in 2024 were electric cars.",
+    questionText: "In 2023, 19·2% of all new cars bought were electric. A reporter claimed that the proportion of new electric cars being bought in 2024 was different to 2023. Use your answers to parts c(i) and c(ii) to test the claim that the percentage of new electric cars being bought in 2024 is different from that in 2023, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q8-c-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes answer from (c)(i) or (c)(ii) in this part\np̂ ± 1/√n", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, writes answer from (c)(i) or (c)(ii) in this part\np̂ ± 1/√n","Relevant boundary formed: 13 + 3∙5 but no conclusion and reason Full Credit (-1):\nEither conclusion OR reason missing OR incorrect"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q8-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q8-c-iii.png",
           "srcHash": "4e79f4254cea501fa2093a33c250187e",
-          "alt": "The question as printed on the paper — A random sample of 815 cars was picked from new cars in 2024. Show that, for this sample, the margin of error for a population proportion is 3∙5%, correct to 1 decimal place. 106 of the 815 new cars bought in 2024 were… Full card prompt: In 2023, 19∙2% of all new cars bought were electric. A reporter claimed that the proportion of new electric cars being bought in 2024 was different to 2023",
+          "alt": "The question as printed on the paper — A random sample of 815 cars was picked from new cars in 2024. Show that, for this sample, the margin of error for a population proportion is 3∙5%, correct to 1 decimal place. 106 of the 815 new cars bought in 2024 were… Full card prompt: A random sample of 815 cars was picked from new cars in 2024. 106 of the 815 new cars bought in 2024 were electric cars. In 2023, 19·2% of all new cars bought were electric. A reporter claimed that the proportion of new electric cars being bought in 2024 was different to 2023. Use your answers to parts c(i) and c(ii) to test the claim that the percentage of new electric cars being bought in 2024 is different from that in 2023, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12749,21 +13792,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q9-a-i", topicId: "maths-2-2", conceptId: "diagram-construct-midpoint-side-label-point",
+    id: "maths-2025-ol-p2-q9-a-i", topicId: "maths-2-1", conceptId: "diagram-construct-midpoint-side-label-point",
     section: "B", questionRef: "2025 OL Paper 2 Q9(a)(i), (ii)",
-    questionText: "On the diagram below, construct the midpoint of the side [A]. Label this point D. (If using measurements and calculations, show all calculations clearly)",
+    stem: "Clodagh is making a wooden table for her woodwork class. The triangle ABC below is a scaled diagram of the table-top. The table-top is supported by one leg attached to the centroid, as shown in the diagram on the right.",
+    questionText: "(i) On the diagram below, construct the midpoint of the side [AB]. Label this point D. (If using measurements and calculations, show all calculations clearly.) (ii) Hence, construct the centroid of the triangle ABC. Label this point O.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-ol-p2-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, a relevant work on diagram or a relevant measurement written (15 cm or 7∙5 cm)\nWork of merit in (ii), for example, shows some understanding of centroid, relevant work on the diagram or a relevant measurement written (10 cm, 5 cm, 12 cm, or 6 cm).", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8, three parts for 10. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Work of merit in (i), for example, a relevant work on diagram or a relevant measurement written (15 cm or 7∙5 cm)\nWork of merit in (ii), for example, shows some understanding of centroid, relevant work on the diagram or a relevant measurement written (10 cm, 5 cm, 12 cm, or 6 cm).","(i) correct\nWork of merit in (i) AND (ii)\nA relevant arc in (i) AND an additional arc in (ii)","(i) correct and work of merit in (ii) Full Credit (-1):\nD and/or O not labelled"],"perOptionSteps":[6,2,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,6,8,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[40],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "measurementRequired": true,
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q9-a-i.png",
           "srcHash": "9445123ee1c6269defa4b66be073dca2",
-          "alt": "The question as printed on the paper — Clodagh is making a wooden table for her woodwork class. The triangle A below is a scaled diagram of the table-top. The table-top is supported by one leg attached to the centroid, as shown in the diagram on the right.… Full card prompt: On the diagram below, construct the midpoint of the side [A]. Label this point D. (If using measurements and calculations, show all calculations clearly)",
+          "alt": "The question as printed on the paper — Clodagh is making a wooden table for her woodwork class. The triangle A below is a scaled diagram of the table-top. The table-top is supported by one leg attached to the centroid, as shown in the diagram on the right.… Full card prompt: Clodagh is making a wooden table for her woodwork class. The triangle ABC below is a scaled diagram of the table-top. The table-top is supported by one leg attached to the centroid, as shown in the diagram on the right. (i) On the diagram below, construct the midpoint of the side [AB]. Label this point D. (If using measurements and calculations, show all calculations clearly.) (ii) Hence, construct the centroid of the triangle ABC. Label this point O.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12779,21 +13837,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q9-b-i", topicId: "maths-3-4", conceptId: "longest-side-bigger-table-top-longest",
+    id: "maths-2025-ol-p2-q9-b-i", topicId: "maths-2-4", conceptId: "longest-side-bigger-table-top-longest",
     section: "B", questionRef: "2025 OL Paper 2 Q9(b)(i), (ii)",
-    questionText: "The longest side of the bigger table-top is 45 cm. The longest side of the smaller table-top is 36 cm",
+    stem: "Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k.",
+    questionText: "(i) The longest side of the bigger table-top is 45 cm. The longest side of the smaller table-top is 36 cm. Show the scale factor k = 1·25. (ii) The shortest side of the smaller table-top is 25·5 cm. Work out the length of the shortest side of the bigger table-top, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q9-b-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, relevant numerator or denominator\nWork of merit in (ii), for example, use of 25∙5 and 1∙25", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, relevant numerator or denominator\nWork of merit in (ii), for example, use of 25∙5 and 1∙25","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part Full Credit (-1):\nApply a * for no or incorrect rounding\nApply a * for no units"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[40],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q9-b-i.png",
           "srcHash": "353635b3512f614f2c5c20ab2a6c7223",
-          "alt": "The question as printed on the paper — Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k. The longest side of the bigger table-top… Full card prompt: The longest side of the bigger table-top is 45 cm. The longest side of the smaller table-top is 36 cm",
+          "alt": "The question as printed on the paper — Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k. The longest side of the bigger table-top… Full card prompt: Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k. (i) The longest side of the bigger table-top is 45 cm. The longest side of the smaller table-top is 36 cm. Show the scale factor k = 1·25. (ii) The shortest side of the smaller table-top is 25·5 cm. Work out the length of the shortest side of the bigger table-top, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12809,21 +13881,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q9-b-iii", topicId: "maths-3-4", conceptId: "area-bigger-table-top-724-area",
+    id: "maths-2025-ol-p2-q9-b-iii", topicId: "maths-2-4", conceptId: "area-bigger-table-top-724-area",
     section: "B", questionRef: "2025 OL Paper 2 Q9(b)(iii)",
-    questionText: "The area of the bigger table-top is 724 cm². Use k = 1∙25 to find the area of the smaller table-top. Give your answer correct to the nearest cm²",
+    stem: "Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k.",
+    questionText: "The area of the bigger table-top is 724 cm². Use k = 1·25 to find the area of the smaller table-top. Give your answer correct to the nearest cm².",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q9-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into formula or k² written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some correct substitution into formula or k² written","724 = 1∙25² × Area Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q9-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q9-b-iii.png",
           "srcHash": "2c3f5cda8b7f51568c5d1c188a3afd18",
-          "alt": "The question as printed on the paper — Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k. The longest side of the bigger table-top… Full card prompt: The area of the bigger table-top is 724 cm². Use k = 1∙25 to find the area of the smaller table-top. Give your answer correct to the nearest cm²",
+          "alt": "The question as printed on the paper — Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k. The longest side of the bigger table-top… Full card prompt: Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k. The area of the bigger table-top is 724 cm². Use k = 1·25 to find the area of the smaller table-top. Give your answer correct to the nearest cm².",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -12839,16 +13925,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q9-c-i", topicId: "maths-3-4", conceptId: "shaded-area-work-section-has-width",
     section: "B", questionRef: "2025 OL Paper 2 Q9(c)(i)",
-    questionText: "The shaded area is the Work Section. It has a width of 40 cm. Work out the area of the Work Section. Give your answer correct to the nearest cm²",
+    stem: "A table used for a cookery demonstration is in the shape of a sector of a circle with a radius of 160 cm. The table has a Teacher Section, a Demonstration Section, and a Work Section for the participants as shown in the diagram below.",
+    questionText: "The shaded area is the Work Section. It has a width of 40 cm. Work out the area of the Work Section. Give your answer correct to the nearest cm².",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q9-c-i-r1", kind: "anyN", verbatim: "Some work of merit in any step, for example, area of a circle formula written, 250/360 or 120 written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Three steps involved in solution: 1. Area of larger sector (55 850∙5 …) 2. Area of smaller sector (31 415∙9 …) 3. Subtract both areas. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some work of merit in any step, for example, area of a circle formula written, 250/360 or 120 written","One step correct\nArea of a relevant sector found","Two steps correct Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q9-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q9-c-i.png",
@@ -12869,16 +13969,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q9-c-ii", topicId: "maths-3-4", conceptId: "each-participant-attending-demonstration-needs-least",
     section: "B", questionRef: "2025 OL Paper 2 Q9(c)(ii)",
-    questionText: "Each participant attending the demonstration needs at least 60 cm along the outer circumference of the Work Section of the table to carry out the food preparation",
+    stem: "A table used for a cookery demonstration is in the shape of a sector of a circle with a radius of 160 cm. The table has a Teacher Section, a Demonstration Section, and a Work Section for the participants as shown in the diagram below.",
+    questionText: "Each participant attending the demonstration needs at least 60 cm along the outer circumference of the Work Section of the table to carry out the food preparation. Find the maximum number of participants who can attend the demonstration.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q9-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, circumference of a circle formula written or 250/360 or division by 60", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, circumference of a circle formula written or 250/360 or division by 60","Correct formula fully substituted\nLength of arc found (698∙1 …) Full Credit (-1):\nApply a * for answer given as 12"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q9-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q9-c-ii.png",
@@ -12899,16 +14014,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q10-a-i", topicId: "maths-2-3", conceptId: "aoibhe-swims-back",
+    id: "maths-2025-ol-p2-q10-a-i", topicId: "maths-3-4", conceptId: "aoibhe-swims-back",
     section: "B", questionRef: "2025 OL Paper 2 Q10(a)(i)",
-    questionText: "Aoibhe swims from A to B, to C, to D, to E, to F, and back to A",
+    stem: "Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled A, B, C, D, E, and F, as shown in the diagram below. ABCDEF is a six-sided shape where: AF is parallel to CD and AF is perpendicular to AC. |AB| = |CD| = |EF| = |FA| = 200 m, and |BC| = |DE| = 150 m.",
+    questionText: "Aoibhe swims from A to B, to C, to D, to E, to F, and back to A. Find the total distance Aoibhe swims.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant addition Full Credit (-1):\nApply a * for no units", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, relevant addition Full Credit (-1):\nApply a * for no units"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q10-a-i.png",
@@ -12929,16 +14058,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q10-a-ii", topicId: "maths-2-3", conceptId: "size-angle-110-work-out-area",
     section: "B", questionRef: "2025 OL Paper 2 Q10(a)(ii)",
-    questionText: "The size of the angle A is 110°. Work out the area, correct to the nearest m², of the triangle A, that is, the area of the shaded region in the diagram above",
+    stem: "Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled A, B, C, D, E, and F, as shown in the diagram below. ABCDEF is a six-sided shape where: AF is parallel to CD and AF is perpendicular to AC. |AB| = |CD| = |EF| = |FA| = 200 m, and |BC| = |DE| = 150 m.",
+    questionText: "The size of the angle ABC is 110°. Work out the area, correct to the nearest m², of the triangle ABC, that is, the area of the shaded region in the diagram above.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q10-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, correct relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, correct relevant formula","Correct formula fully substituted Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q10-a-ii.png",
@@ -12959,16 +14102,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q10-a-iii", topicId: "maths-2-3", conceptId: "iii-aoibhe-swims-straight-cosine-rule",
     section: "B", questionRef: "2025 OL Paper 2 Q10(a)(iii)",
-    questionText: "(iii) Aoibhe swims straight from A to C. Use the cosine rule to work out the distance from A to C. Give your answer correct to the nearest metre",
+    stem: "Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled A, B, C, D, E, and F, as shown in the diagram below. ABCDEF is a six-sided shape where: AF is parallel to CD and AF is perpendicular to AC. |AB| = |CD| = |EF| = |FA| = 200 m, and |BC| = |DE| = 150 m. The size of the angle ABC is 110°.",
+    questionText: "Aoibhe swims straight from A to C. Use the cosine rule to work out the distance from A to C. Give your answer correct to the nearest metre.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q10-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, cosine rule formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, cosine rule formula","Correct formula fully substituted Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q10-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q10-a-iii.png",
@@ -12989,16 +14147,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q10-a-iv", topicId: "maths-3-4", conceptId: "otherwise-work-out-total-area-water",
     section: "B", questionRef: "2025 OL Paper 2 Q10(a)(iv)",
-    questionText: "Hence, or otherwise, work out the total area of the water enclosed by the six markers",
+    stem: "Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled A, B, C, D, E, and F, as shown in the diagram below. ABCDEF is a six-sided shape where: AF is parallel to CD and AF is perpendicular to AC. |AB| = |CD| = |EF| = |FA| = 200 m, and |BC| = |DE| = 150 m. The size of the angle ABC is 110°.",
+    questionText: "Hence, or otherwise, work out the total area of the water enclosed by the six markers.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q10-a-iv-r1", kind: "anyN", verbatim: "Work of merit, for example, answer from (ii) or (iii) written or relevant work on the diagram or relevant area formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, answer from (ii) or (iii) written or relevant work on the diagram or relevant area formula","2(14 095) + (200 × 288) Full Credit (-1):\nApply a * for no units"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q10-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q10-a-iv.png",
@@ -13019,16 +14192,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q10-b-i", topicId: "maths-2-3", conceptId: "another-example-such-route-aoibhe-could",
+    id: "maths-2025-ol-p2-q10-b-i", topicId: "maths-1-1", conceptId: "another-example-such-route-aoibhe-could",
     section: "B", questionRef: "2025 OL Paper 2 Q10(b)(i)",
-    questionText: "Give another example of such a route Aoibhe could swim",
+    stem: "Point A is the nearest point to the shore and is the start and end point for all swims. Aoibhe wants to see how many routes she could swim, starting at A, by swimming to each of the five markers (B, C, D, E, and F) once and only once and finishing at A. For example, Aoibhe could swim the route: A, E, C, F, D, B, A.",
+    questionText: "Give another example of such a route Aoibhe could swim.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-ol-p2-q10-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, writes a letter other than A", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5. The full scale runs to 10. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, writes a letter other than A"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[43],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q10-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q10-b-i.png",
@@ -13049,16 +14236,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q10-b-ii", topicId: "maths-2-3", conceptId: "work-out-how-many-such-routes",
+    id: "maths-2025-ol-p2-q10-b-ii", topicId: "maths-1-1", conceptId: "work-out-how-many-such-routes",
     section: "B", questionRef: "2025 OL Paper 2 Q10(b)(ii), (iii)",
-    questionText: "Work out how many such routes are possible",
+    stem: "Point A is the nearest point to the shore and is the start and end point for all swims. Aoibhe wants to see how many routes she could swim, starting at A, by swimming to each of the five markers (B, C, D, E, and F) once and only once and finishing at A. For example, Aoibhe could swim the route: A, E, C, F, D, B, A.",
+    questionText: "(ii) Work out how many such routes are possible. (iii) On a particular day Aoibhe wants to start at A, swim to two markers other than A, and then return to A. For example, Aoibhe could swim the route: A, E, B, A. Work out how many such routes are possible.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-ol-p2-q10-b-ii-r1", kind: "anyN", verbatim: "Work of merit in (ii), for example, writing a different route or some relevant multiplication\nWork of merit in (iii), for example, writing a different route or 5, 4, or 2 written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: Accept correct answers without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit in (ii), for example, writing a different route or some relevant multiplication\nWork of merit in (iii), for example, writing a different route or 5, 4, or 2 written","Work of merit in (ii) AND (iii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[43],"generalNotesPages":[24,25,26]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q10-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q10-b-ii.png",

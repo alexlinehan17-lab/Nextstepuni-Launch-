@@ -1,3 +1,6 @@
+import { CARDS as ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
+import ordinary1 from '../scripts/markbank/mathematics/reviews/2025-ordinary-p1.json';
+import ordinary2 from '../scripts/markbank/mathematics/reviews/2025-ordinary-p2.json';
 import { describe, expect, it } from 'vitest';
 import { logicalQuestionIdentity } from '../components/PaperTrail/topics';
 import { CARDS as FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
@@ -141,4 +144,45 @@ describe('2025 Foundation Mathematics independent source review', () => {
     const card = cards.find(card => card.id === 'maths-2025-fl-q7-c-d')!;
     expect('mathematicsScale' in card && card.mathematicsScale?.marks).toEqual([0, 4, 5, 7, 10]);
   });
+});
+
+
+describe.each([{ number: 1, count: 41, review: ordinary1 }, { number: 2, count: 42, review: ordinary2 }])(
+  '2025 Ordinary Mathematics Paper $number independent source review', ({ number, count, review: census }) => {
+    const cards = ORDINARY.filter(card => card.year === 2025 && card.questionRef.includes(`Paper ${number}`));
+    it('retains every independently marked task and all 380 offered marks', () => {
+      expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
+      expect(cards).toHaveLength(count);
+      expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(380);
+      for (const [question, marks] of Object.entries(census.printedQuestionMarks)) {
+        expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
+          .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
+      }
+    });
+    it('carries the entire reviewed prompt, source pages, paper-specific scale and both topic placements', () => {
+      const specification = resolveCurriculumSpecification('mathematics', 2025)!;
+      for (const task of census.cards) {
+        const card = cards.find(candidate => candidate.id === task.id)!;
+        expect(card.stem ?? '', card.id).toBe(task.stem);
+        expect(card.questionText, card.id).toBe(task.questionText);
+        expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
+        expect(card.sourceMaterial?.sourceFileid, card.id).toBe(census.paperFileid);
+        expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
+        expect(card.topicId, card.id).toBe(task.topicId);
+        expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
+        const question = task.printedParts[0].match(/^Q(\d+)/)![1];
+        expect(examTopicIdsForQuestion('mathematics', 'ordinary', 2025, 'main', question, `p${number}`, 'ev', census.paperFileid), card.id)
+          .toEqual(expect.arrayContaining(task.examTopicIds));
+      }
+    });
+  },
+);
+
+it('restores omitted Ordinary subparts and symbols without changing their card identities', () => {
+  const card = (id: string) => ORDINARY.find(candidate => candidate.id === `maths-2025-ol-${id}`)!;
+  expect(card('p1-q3-c-i').questionText).toContain('(x + k)(x + t) = x² + bx + 12');
+  expect(card('p1-q9-b-vi').questionText).toContain('T(n) = 0·5n² + bn');
+  expect(card('p2-q4-a-ii').questionText).toContain('ax + by + c = 0');
+  expect(card('p2-q5-b-ii').questionText).toContain('triangles ABD and ACD');
+  expect(card('p2-q10-b-ii').questionText).toContain('(iii)');
 });

@@ -29,7 +29,7 @@ import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
-import { applyMathematicsReview } from './mathematics/review.mjs';
+import { applyMathematicsReview, validateMathematicsReviewSources, assertReviewedMathematicsCards } from './mathematics/review.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -313,6 +313,7 @@ if (subjectIds.length !== 1) {
   process.exit(1);
 }
 const SUBJECT_ID = subjectIds[0];
+if (SUBJECT_ID === 'maths') validateMathematicsReviewSources();
 const SUBJECT = SUBJECTS[SUBJECT_ID];
 if (!SUBJECT) {
   console.error(`unknown subject "${SUBJECT_ID}" — add it to SUBJECTS in this script`);
@@ -869,8 +870,8 @@ for (const c of cards) {
   const fileid = resolvePaperFileid(SUBJECT_ID, year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
-  out.push({ level, code: `  {
-    ...base, kind: ${q(labelKey ? 'diagram' : 'question')},
+  out.push({ id: c.id, level, code: `  {
+    ...base, kind: ${q(labelKey ? 'diagram' : 'question')},${c.qa ? `\n    qa: ${JSON.stringify(c.qa)},` : ''}
     year: ${year}, level: ${q(level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
     schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level — © State Examinations Commission.`)},
@@ -884,11 +885,14 @@ ${rows}
   } as SecCard,` });
 }
 
+if (SUBJECT_ID === 'maths') assertReviewedMathematicsCards(out.map(card => card.id));
+
 process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
 /* Every build ends with the paper-anchored ledger, so nobody can ship a deck
  * without the coverage number in front of them — the class of failure where
  * "64 cards" was reported for a subject whose papers print 500 asks. Best
  * effort: a machine without python3 still builds. */
+if (SUBJECT_ID !== 'maths') {
 try {
   const { execSync } = await import('node:child_process');
   const led = execSync(
@@ -900,6 +904,7 @@ try {
   process.stderr.write(first
     ? `LEDGER ${first}\n`
     : 'LEDGER unavailable (python3 missing?) — run reconcile.py by hand\n');
+}
 }
 for (const d of dropped) process.stderr.write(`  DROPPED ${d}\n`);
 for (const c of appliedCorrections) process.stderr.write(`  CORRECTED ${c}\n`);
@@ -972,3 +977,16 @@ for (const level of (SUBJECT_ID === 'maths' ? ['higher', 'ordinary', 'foundation
 const MANIFEST_OUT = resolve(ROOT, 'components/MarkBank/cards/sizes.json');
 const existing = existsSync(MANIFEST_OUT) ? JSON.parse(readFileSync(MANIFEST_OUT, 'utf8')) : {};
 writeFileSync(MANIFEST_OUT, `${JSON.stringify({ ...existing, [SUBJECT_ID]: sizes }, null, 1)}\n`);
+
+
+// Mathematics reconciles the just-written modules against the full Paper Trail
+// inventory, including Foundation. The legacy ledger counts only two levels
+// and runs before the files are written, so it cannot report this build.
+if (SUBJECT_ID === 'maths') {
+  const { execFileSync } = await import('node:child_process');
+  try {
+    process.stderr.write(execFileSync('python3', [resolve(ROOT, 'scripts/markbank/mathematics/audit.py')], { encoding: 'utf8' }));
+  } catch (error) {
+    process.stderr.write(String(error.stdout ?? error.message));
+  }
+}

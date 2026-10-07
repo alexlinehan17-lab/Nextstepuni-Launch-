@@ -9569,6 +9569,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -9611,6 +9612,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -9653,6 +9655,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -9695,6 +9698,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -9737,6 +9741,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -9779,6 +9784,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -9821,6 +9827,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -9863,6 +9870,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -9905,6 +9913,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -9947,6 +9956,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -9989,6 +9999,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10031,6 +10042,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10074,6 +10086,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10116,6 +10129,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10158,6 +10172,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10200,6 +10215,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10242,6 +10258,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10284,6 +10301,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10326,6 +10344,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10368,6 +10387,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10411,6 +10431,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10454,6 +10475,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10497,6 +10519,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10539,6 +10562,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10581,6 +10605,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10623,6 +10648,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10665,6 +10691,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10707,6 +10734,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10749,6 +10777,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10792,6 +10821,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10835,6 +10865,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10877,6 +10908,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10920,6 +10952,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -10963,6 +10996,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11006,6 +11040,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11048,6 +11083,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11091,6 +11127,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11133,6 +11170,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11176,6 +11214,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11218,6 +11257,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11260,6 +11300,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11302,6 +11343,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11345,6 +11387,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11387,6 +11430,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11429,6 +11473,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11471,6 +11516,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11513,6 +11559,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11555,6 +11602,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11597,6 +11645,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11639,6 +11688,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11682,6 +11732,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11725,6 +11776,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11767,6 +11819,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11809,6 +11862,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11851,6 +11905,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11893,6 +11948,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11935,6 +11991,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -11977,6 +12034,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12019,6 +12077,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12061,6 +12120,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12103,6 +12163,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12146,6 +12207,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12188,6 +12250,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12230,6 +12293,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12273,6 +12337,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12316,6 +12381,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12359,6 +12425,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12401,6 +12468,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12443,6 +12511,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12486,6 +12555,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12528,6 +12598,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12571,6 +12642,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12614,6 +12686,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12657,6 +12730,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12699,6 +12773,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12741,6 +12816,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12783,6 +12859,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12826,6 +12903,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12868,6 +12946,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12910,6 +12989,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12953,6 +13033,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -12997,6 +13078,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -13040,6 +13122,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -13083,6 +13166,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
@@ -13109,6 +13193,7 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",

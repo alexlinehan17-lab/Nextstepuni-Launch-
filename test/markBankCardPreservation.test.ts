@@ -426,6 +426,7 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
 const reviewedMathematicsAdditions = new Set([
   'maths-2025-hl-p2-q2-a-ii', 'maths-2025-hl-p2-q3-b',
   'maths-2025-hl-p2-q9-a-i', 'maths-2025-hl-p2-q9-b', 'maths-2025-hl-p2-q9-d',
+  'maths-2025-ol-p1-q3-c-i',
 ]);
 const baselineCards = <T extends { id: string }>(cards: readonly T[]) =>
   cards.filter(card => !reviewedMathematicsAdditions.has(card.id));
@@ -447,7 +448,7 @@ describe('Mark Bank card preservation', () => {
 
   it('protects the complete current bank', () => {
     expect(decks.reduce((total, [, cards]) => total + baselineCards(cards).length, 0)).toBe(10_495);
-    const added = MATHS_HIGHER.filter(card => reviewedMathematicsAdditions.has(card.id));
+    const added = [...MATHS_HIGHER, ...MATHS_ORDINARY].filter(card => reviewedMathematicsAdditions.has(card.id));
     expect(new Set(added.map(card => card.id))).toEqual(reviewedMathematicsAdditions);
   });
 

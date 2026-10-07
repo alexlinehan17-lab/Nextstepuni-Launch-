@@ -1,5 +1,7 @@
 /** Reviewed SEC Mathematics boundaries and placement, shared by both tools. */
 import { readFileSync, readdirSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 
 export function mathematicsReviews() {
   const directory = new URL('./reviews/', import.meta.url);
@@ -24,7 +26,12 @@ export function applyMathematicsReview(authored) {
       || authored.totalMarks !== card.totalMarks) {
     throw new Error(`${authored.id}: authored card disagrees with the reviewed SEC boundary`);
   }
+  if (card.questionText !== undefined && (authored.questionText !== card.questionText
+      || (authored.stem ?? '') !== (card.stem ?? ''))) {
+    throw new Error(`${authored.id}: prompt disagrees with the independently reviewed text`);
+  }
   if (!/^[0-9]+[ABCD]$/.test(card.scale)
+      || card.permittedMarks.length !== 'ABCD'.indexOf(card.scale.at(-1)) + 2
       || Number.parseInt(card.scale, 10) !== card.totalMarks
       || card.permittedMarks[0] !== 0
       || card.permittedMarks.at(-1) !== card.totalMarks
@@ -38,6 +45,7 @@ export function applyMathematicsReview(authored) {
   return {
     ...authored,
     topicId: card.topicId,
+    qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: paper.reviewedAt },
     mathematicsScale: {
       code: card.scale,
       marks: card.permittedMarks,
@@ -57,4 +65,16 @@ export function applyMathematicsReview(authored) {
       presentationNote: 'Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer.',
     },
   };
+}
+
+/** Authoring requires the exact visually reviewed originals on disk. */
+export function validateMathematicsReviewSources() {
+  execFileSync('python3', [fileURLToPath(new URL('./audit.py', import.meta.url)), '--check-reviewed'], { stdio: 'inherit' });
+}
+
+/** A reviewed task must never disappear as a side effect of a build guard. */
+export function assertReviewedMathematicsCards(outputIds) {
+  const emitted = new Set(outputIds);
+  const missing = [...reviewedCards.keys()].filter(id => !emitted.has(id));
+  if (missing.length) throw new Error(`Reviewed Mathematics tasks rejected by generation: ${missing.join(', ')}`);
 }

@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import SessionScreen, { marksClaimed, showsRowMarks } from '../components/MarkBank/SessionScreen';
 import { mathematicsScaleMarks, type MathematicsScaleCard } from '../components/MarkBank/MathematicsScalePanel';
+import { CARDS as ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
 import { CARDS as FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
 import { CARDS } from '../components/MarkBank/cards/maths/higher';
 import { vaultPdf } from '../components/PaperTrail/vaultDocs';
@@ -20,6 +21,17 @@ describe('Mathematics published credit scale', () => {
     for (const mark of [-1, 1, 3, 5, 7, 8, 11]) expect(mathematicsScaleMarks(card, mark)).toBe(0);
     expect(showsRowMarks(card)).toBe(false);
     expect(marksClaimed(card, {}, { [card.rows[0].id]: [0, 1, 2] })).toBe(0);
+  });
+
+  it('uses the different Ordinary 15D scales printed in Papers 1 and 2', () => {
+    const first = ORDINARY.find(c => c.id === 'maths-2025-ol-p1-q4-c-i')! as MathematicsScaleCard;
+    const second = ORDINARY.find(c => c.id === 'maths-2025-ol-p2-q2-b')! as MathematicsScaleCard;
+    expect(first.mathematicsScale.marks).toEqual([0, 4, 8, 10, 15]);
+    expect(second.mathematicsScale.marks).toEqual([0, 6, 8, 10, 15]);
+    expect(mathematicsScaleMarks(first, 6)).toBe(0);
+    expect(mathematicsScaleMarks(second, 4)).toBe(0);
+    expect(mathematicsScaleMarks(first, 4)).toBe(4);
+    expect(mathematicsScaleMarks(second, 6)).toBe(6);
   });
 
   it('uses Foundation scale marks and labels in a real review session', () => {
