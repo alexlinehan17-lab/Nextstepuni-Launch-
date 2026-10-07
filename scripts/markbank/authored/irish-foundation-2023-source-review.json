@@ -1,0 +1,298 @@
+{
+  "year": 2023,
+  "level": "foundation",
+  "paperFileid": "LC001BLP000IV.pdf",
+  "schemeFileid": "LC001BLP000IV.pdf",
+  "paperSha256": "63e6c61769a22b1420822ff37a379ea8d9ccc7fc3b73fa42d34fae175528aaac",
+  "schemeSha256": "329234acc3dd24894a9ed50c1ab163a9265e4cc11b6c3894c7fb6aacda7f7338",
+  "reviewDate": "2026-10-07",
+  "status": "visual-sweep-complete-authoring-pending",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "reviewMethod": "Visual inspection of every paired rendered page, including covers, blank pages, general guidance, modified scheme and audio transcript; cross-checked extracted text.",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "Freagair gach ceist.",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 2,
+      "raw": "Freagair gach ceist (1, 2 agus 3).",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 2,
+      "raw": "Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4(a), 4(b), 5(a) nó 5(b).",
+      "decision": "Closed choose-two of four writing tasks: 4A+4B, 4A+5A, 4A+5B, 4B+5A, 4B+5B, 5A+5B. Each pair is 90 marks. There is no form/interview-date choice in this year."
+    },
+    {
+      "page": 2,
+      "raw": "Scríobh do chuid freagraí le peann gorm nó le peann dubh. Ná húsáid peann luaidhe.",
+      "decision": "Pen colour instruction, not a response route."
+    },
+    {
+      "page": 3,
+      "raw": "Freagair gach ceist. Tá na treoracha don chuid seo ar an dlúthdhiosca.",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 3,
+      "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+      "decision": "Select the correct answer/position; distractors are not separate valid task routes."
+    },
+    {
+      "page": 4,
+      "raw": "Cá bhfuil an mheánscoil? (Cuir tic () sa bhosca ceart.)",
+      "decision": "Select the correct answer/position; distractors are not separate valid task routes."
+    },
+    {
+      "page": 5,
+      "raw": "Nuair a bheidh an Chluastuiscint críochnaithe agat lean ar aghaidh agus freagair na ceisteanna",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 6,
+      "raw": "FREAGAIR GACH CEIST (1, 2 agus 3).",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 7,
+      "raw": "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Closed choose-two of A/B/C. Generate AB, AC, BC with all ten answers and both source pages; 50 marks for Q2, 60 for Q3."
+    },
+    {
+      "page": 7,
+      "raw": "Léigh an litir atá anseo thíos agus freagair na ceisteanna ar fad atá fúithi.",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 8,
+      "raw": "Léigh an bróisiúr atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 9,
+      "raw": "Léigh an scéal nuachta atá anseo thíos agus freagair na ceisteanna ar fad atá faoi. (25 marc)",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 10,
+      "raw": "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Closed choose-two of A/B/C. Generate AB, AC, BC with all ten answers and both source pages; 50 marks for Q2, 60 for Q3."
+    },
+    {
+      "page": 10,
+      "raw": "Léigh an t-alt atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 10,
+      "raw": "5. Luaigh tréith amháin atá i nGearóid Hegarty.",
+      "decision": "Retrieve one trait from the source passage. The printed task does not enumerate alternative prompts; the scheme supplies accepted answers, not separate task routes."
+    },
+    {
+      "page": 11,
+      "raw": "(b) Léigh an giota seo a leanas agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 11,
+      "raw": "nó ar WhatsApp in ionad na daoine teacht isteach sa seomra nuachta.",
+      "decision": "Article narrative about interview software, not a task choice."
+    },
+    {
+      "page": 12,
+      "raw": "(c) Léigh na véarsaí seo a leanas agus freagair na ceisteanna ar fad atá fúthu.",
+      "decision": "Required answers within the selected section/passage; no new finite task menu."
+    },
+    {
+      "page": 13,
+      "raw": "Freagair dhá cheist ar bith as na ceithre cinn seo a leanas:",
+      "decision": "Closed choose-two of four writing tasks: 4A+4B, 4A+5A, 4A+5B, 4B+5A, 4B+5B, 5A+5B. Each pair is 90 marks. There is no form/interview-date choice in this year."
+    },
+    {
+      "page": 13,
+      "raw": "4(a), 4(b), 5(a) nó 5(b)",
+      "decision": "Closed choose-two of four writing tasks: 4A+4B, 4A+5A, 4A+5B, 4B+5A, 4B+5B, 5A+5B. Each pair is 90 marks. There is no form/interview-date choice in this year."
+    },
+    {
+      "page": 14,
+      "raw": "Freagair dhá cheist ar bith as na ceithre cinn seo a leanas: 4(a), 4(b), 5(a) nó 5(b).",
+      "decision": "Closed choose-two of four writing tasks: 4A+4B, 4A+5A, 4A+5B, 4B+5A, 4B+5B, 5A+5B. Each pair is 90 marks. There is no form/interview-date choice in this year."
+    },
+    {
+      "page": 15,
+      "raw": "Faoin óstán a raibh tú ag obair ann (dhá phointe eolais)",
+      "decision": "Two information points about this required picture/topic. These are open content choices; the four picture instructions are all compulsory in one letter with shared language marks."
+    },
+    {
+      "page": 15,
+      "raw": "Faoi na daoine a bhíonn san óstán (dhá phointe eolais)",
+      "decision": "Two information points about this required picture/topic. These are open content choices; the four picture instructions are all compulsory in one letter with shared language marks."
+    },
+    {
+      "page": 15,
+      "raw": "Faoin obair a rinne tú san óstán (dhá phointe eolais)",
+      "decision": "Two information points about this required picture/topic. These are open content choices; the four picture instructions are all compulsory in one letter with shared language marks."
+    },
+    {
+      "page": 15,
+      "raw": "Faoi na rudaí a rinne tú nuair a bhíodh lá saor agat (dhá phointe eolais)",
+      "decision": "Two information points about this required picture/topic. These are open content choices; the four picture instructions are all compulsory in one letter with shared language marks."
+    },
+    {
+      "page": 20,
+      "raw": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+      "decision": "Copyright statement, not a task."
+    }
+  ],
+  "boundaries": {
+    "listening": {
+      "tasks": 14,
+      "marks": 120,
+      "paperPages": [
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        3
+      ]
+    },
+    "matching": {
+      "tasks": 10,
+      "marks": 40,
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        4
+      ],
+      "answers": "IDBGHJFCEA"
+    },
+    "readingQ2": {
+      "tasks": 15,
+      "marksPerTask": 5,
+      "pairedRoutes": 3,
+      "marksPerPair": 50,
+      "paperPages": [
+        7,
+        8,
+        9
+      ],
+      "schemePages": [
+        5
+      ]
+    },
+    "readingQ3": {
+      "tasks": 15,
+      "marksPerTask": 6,
+      "pairedRoutes": 3,
+      "marksPerPair": 60,
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        6
+      ]
+    },
+    "writing": {
+      "wholeResponses": 4,
+      "marksPerResponse": 45,
+      "pairedRoutes": 6,
+      "marksPerPair": 90,
+      "paperPages": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "schemePages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "expectedCardsAfterAuthoring": 70,
+    "candidateExamMarks": 360
+  },
+  "sourceFindings": [
+    "Q5(b) listening accepts 23 céim Celsius OR 29 céim Celsius; both are explicitly accepted by the SEC. Keep one eight-mark task with both answers.",
+    "Q6(a) listening accepts Fuair sí fáinne cluaise eile OR Tá fáinne ina srón aici. Keep one ten-mark task with both answers.",
+    "Q3A(5) accepts sciliúil/láidir/tapa/cabhrach/cairdiúil. Q3B(5) accepts travel-related alternatives. These are source answers, not closed printed task menus.",
+    "4A is the Grease musical notice with Ryan Tubridy and Trócaire. Allocations: layout 1; picture 1 10; picture 2 13; picture 3 5; picture 4 5; shared Gaeilge 11. Picture 3 guidance is on scheme page 9, picture 4 on page 10.",
+    "4B is a letter to a friend about a hotel job, not an application form. Layout: address 2/date 1/greeting 1/closing 2; each of four pictures 7 (two points at 4+3); shared Gaeilge 11. Keep the entire response together.",
+    "5A is the camping holiday and 5B the match at Páirc an Chrócaigh. Each is one response: communication 34 and shared Gaeilge 11, with the published length table 80–90:0, 60–79:−2, 30–59:−3, <30:−4.",
+    "The 5A/5B scheme headings show Tagairt NR/-12; their prose separately specifies −4 per missing reference and communication ceilings 34,30,26,22,18,14. Preserve both verbatim; do not invent an additional automatic deduction from that abbreviated heading.",
+    "The scheme page 7 writing header says 45 marks, but the paper explicitly requires two 45-mark answers (90). The four question schemes and paper instructions determine the candidate total.",
+    "Every full poem, passage, sign grid, map and four-picture writing sequence must remain accessible. Scheme transcript pages 17–19 are answer material, never listening source prompts."
+  ],
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2023/LC001BLP017IV.mp3",
+    "httpStatus": 200,
+    "contentType": "audio/mpeg",
+    "bytes": 54901250,
+    "verified": "2026-10-07",
+    "browserPlayback": "pending"
+  },
+  "remainingWork": [
+    "Author 70 tasks/routes with exact prompts, scheme criteria and source context.",
+    "Generalize the reviewed Foundation Atlas setup using the actual per-year letter/form and story/news classifications; preserve all preceding IDs and fields.",
+    "Run source selection guard, tariff/topic/preservation checks and mobile source/audio/scheme QA before adding this paper to full-review inventory."
+  ]
+}
