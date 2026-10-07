@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers: Higher and Ordinary Papers 1 and 2, Foundation single paper; shared source reader and exact scale interaction",
-  "runtimeCards": 881,
-  "reviewedTasks": 210,
+  "scope": "All five 2025 English-language Mathematics papers and 2026 Foundation; shared source reader and exact scale interaction",
+  "runtimeCards": 923,
+  "reviewedTasks": 252,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed",
+  "productionBuild": "running after the 2026 Foundation addition; previous 2025 build passed",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -87,5 +87,19 @@
     ],
     "escapeAndFocusReturn": true,
     "pageErrors": []
+  },
+  "latestBatch": {
+    "paper": "2026 Foundation",
+    "independentlyReviewedTasks": 42,
+    "targetedRegressionTests": 141,
+    "previousRuntimeIdsRetained": 881,
+    "offeredMarks": 375,
+    "candidateMarks": 300,
+    "desktopAndMobileOriginalQuestionAndScheme": true,
+    "schemeHiddenBeforeReveal": true,
+    "exclusiveScaleAward": 7,
+    "escapeAndFocusReturn": true,
+    "pageErrors": [],
+    "runtimeIdsSha256": "e5c585bc9aac2ce41213a0ec7b9a90f7b4ae91f61f47847a5cf72d9da1abf874"
   }
 }

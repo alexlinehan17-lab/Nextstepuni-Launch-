@@ -39977,5 +39977,1251 @@
    }
   ],
   "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q1-a-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q1-a-i-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q1(a)(i), Q1(a)(ii)",
+  "stem": "In a survey, 60 senior cycle students and 80 junior cycle students were asked which sport they would prefer to have in their school: tag rugby or pickleball.",
+  "questionText": "(i) Find the total number of students in the survey. (ii) 70% of the 60 senior cycle students chose tag rugby. Find the number of senior cycle students who chose tag rugby.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q1-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "60 + 80 = 140",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q1-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "0·7 × 60 = 42",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q1-a-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "q1-a-iii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q1(a)(iii)",
+  "stem": "In a survey, 60 senior cycle students and 80 junior cycle students were asked which sport they would prefer to have in their school: tag rugby or pickleball.",
+  "questionText": "3/5 of the 80 junior cycle students chose pickleball. Find the number of junior cycle students who did not choose pickleball.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q1-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "80 − 48 = 32",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q1-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q1-b",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q1(b)(i), Q1(b)(ii)",
+  "stem": "Patrick had to do the following calculation: (7·35 + 2·53)/4·6.",
+  "questionText": "(i) First, he made an estimate of what the answer should be. To do this, he wrote each number correct to the nearest whole number. Fill in the boxes below to find Patrick’s estimate. (ii) Patrick then used his calculator and got 7·9 as his answer. He knows from his estimate that this is incorrect. Patrick keyed the following buttons into his calculator: 7·35 + 2·53 ÷ 4·6 =. What should Patrick key into his calculator to get the correct answer?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "(7·35 + 2·53) ÷ 4·6 =",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q2-a",
+  "topicId": "maths-1-6",
+  "conceptId": "q2-a",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q2(a)(i), Q2(a)(ii)",
+  "stem": "Olivia is buying strawberries and cream. Olivia buys 6 punnets of strawberries. The number of strawberries in each punnet is given below: 14, 15, 16, 15, 11, 13.",
+  "questionText": "(i) Find the mode of the data. (ii) Find the mean of the data.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Mode = 15",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q2-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q2-b",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q2(b)",
+  "stem": "A 200 ml container of cream costs €2·49. The cream is on special offer, where you get 3 containers for the price of 2.",
+  "questionText": "Find the total cost of 1200 ml of cream, using this special offer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "1200 ÷ 200 = 6",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "2·49 × 4",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q2-c",
+  "topicId": "maths-3-3",
+  "conceptId": "q2-c",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q2(c)",
+  "stem": "The supermarket sells punnets of strawberries in two sizes, large and small. Large punnet: 500 grams, €5·50. Small punnet: 300 grams, €2·95.",
+  "questionText": "Which punnet works out better value for money, the large punnet or the small punnet? Use calculations to support your answer. Tick one box only.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: Small Punnet",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q3-a-i-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "q3-a-i-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q3(a)(i), Q3(a)(ii)",
+  "stem": "A group of students carry out an experiment to see how exercise affects their heart rates. 10 students measure their heart rates before exercise. The results are shown in the stem and leaf diagram below.",
+  "questionText": "(i) Find the median of the data. (ii) Find the range of the data.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q3-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Range = 88 − 64 = 24",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q3-a-iii",
+  "topicId": "maths-1-7",
+  "conceptId": "q3-a-iii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q3(a)(iii)",
+  "stem": "A group of students carry out an experiment to see how exercise affects their heart rates. 10 students measure their heart rates before exercise. The results are shown in the stem and leaf diagram below.",
+  "questionText": "The same 10 students measure their heart rates again after exercise. The median heart rate after exercise is 102. The range of the heart rates after exercise is 24. Describe how exercise affects the students’ heart rates. Use the information from both the median and the range in your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q3-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "The hearts rates have increased but the spread is the same.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q3-b",
+  "topicId": "maths-1-2",
+  "conceptId": "q3-b",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q3(b)(i), Q3(b)(ii)",
+  "stem": "Ben rolls a fair, six-sided die numbered 1 to 6. The three events A, B, and C are listed below: A: Ben rolls an even number. B: Ben rolls a number less than 7. C: Ben rolls a 3.",
+  "questionText": "(i) Write each of the letters A, B, and C into the correct box on the probability scale below, to show the probability of each event. (ii) Another event, D, is marked on the probability scale above. Give an example of an event that has the same probability as event D.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Ben rolls a 7",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q4-a",
+  "topicId": "maths-4-1",
+  "conceptId": "q4-a",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q4(a)",
+  "stem": "Jarlath makes a sequence using squares in his maths copy. The first three patterns in the sequence are shown below.",
+  "questionText": "Draw pattern 4 of the sequence.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Some work of merit, for example one or more extra box added to pattern 3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q4-b-c",
+  "topicId": "maths-4-1",
+  "conceptId": "q4-b-c",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q4(b), Q4(c)",
+  "stem": "Jarlath makes a sequence using squares in his maths copy. The first three patterns in the sequence are shown below.",
+  "questionText": "(b) Complete the table below to show the number of squares in each of the first six patterns. (c) What type of sequence is made by the number of squares in each pattern? Give a reason for your answer. Type of sequence: Linear or Non-linear. Tick one box only.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q4-b-c-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: Linear",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q4-b-c-solution-2",
+    "kind": "point",
+    "verbatim": "It’s increasing by 4 each term",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q4-d",
+  "topicId": "maths-4-2",
+  "conceptId": "q4-d",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q4(d)(i), Q4(d)(ii)",
+  "stem": "The number of squares in pattern n of the sequence can be found using the formula: Number of squares = 4n − 3.",
+  "questionText": "(i) How many squares are in pattern 63 of the sequence? (ii) Pattern k has exactly 373 squares. Find the value of k.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q4-d-solution-1",
+    "kind": "point",
+    "verbatim": "4(63) − 3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q4-d-solution-2",
+    "kind": "point",
+    "verbatim": "4k − 3 = 373",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q4-d-solution-3",
+    "kind": "point",
+    "verbatim": "k = 94",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q5-a-b",
+  "topicId": "maths-5-1",
+  "conceptId": "q5-a-b",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q5(a)(i), Q5(a)(ii), Q5(b)",
+  "stem": "Norma walked from her home to the shop. The distance-time graph below shows her distance from home, along the route travelled, for her walk. Three stages of the graph are labelled A, B, and C. Use the graph to answer parts (a), (b), and (c).",
+  "questionText": "(a) During stage B, Norma stopped to check her phone. (i) How far had Norma walked when she stopped to check her phone? Give your answer in metres. (ii) For how many seconds was Norma stopped during stage B? (b) In which of the two stages, A or C, did Norma walk the fastest? Give a reason for your answer, based on the graph. Tick one box only.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q5-a-b-solution-1",
+    "kind": "point",
+    "verbatim": "40 [m]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q5-a-b-solution-2",
+    "kind": "point",
+    "verbatim": "30 [seconds]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q5-a-b-solution-3",
+    "kind": "point",
+    "verbatim": "Answer: C",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q5-a-b-solution-4",
+    "kind": "point",
+    "verbatim": "It’s steeper",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q5-c-i",
+  "topicId": "maths-5-1",
+  "conceptId": "q5-c-i",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q5(c)(i)",
+  "stem": "Norma walked from her home to the shop. The distance-time graph below shows her distance from home, along the route travelled, for her walk. Three stages of the graph are labelled A, B, and C. Use the graph to answer parts (a), (b), and (c). Norma spent 90 seconds in the shop before returning home. It took her 120 seconds to walk home at a steady speed without stopping.",
+  "questionText": "Continue the graph on the previous page to show this information.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q5-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "One correct stage constructed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q5-c-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q5-c-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q5(c)(ii)",
+  "stem": "Norma walked from her home to the shop. The distance-time graph below shows her distance from home, along the route travelled, for her walk. Three stages of the graph are labelled A, B, and C. Use the graph to answer parts (a), (b), and (c). Norma spent 90 seconds in the shop before returning home. It took her 120 seconds to walk home at a steady speed without stopping.",
+  "questionText": "Find Norma’s average speed, in metres/second, on her walk home. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q5-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "1·33",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q6-a",
+  "topicId": "maths-5-1",
+  "conceptId": "q6-a",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q6(a)(i), Q6(a)(ii)",
+  "stem": "Barry charges his phone for 90 minutes. The graph below shows the battery charge on his phone from when the charging starts (t = 0) until it is unplugged (t = 90). A battery charge of 100 means that the battery is fully charged.",
+  "questionText": "Use the graph to answer parts (a)(i) and (a)(ii): (i) Complete the following sentence: “Barry’s phone has a battery charge of [blank] when the charging starts, and it increases by [blank] every 10 minutes.” (ii) The slope of the graph changes at 50 minutes. Explain why this happens in the context of the question.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "His phone was fully charged",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q6-b-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "q6-b-i-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q6(b)(i), Q6(b)(ii)",
+  "stem": "Barry charges his phone for 90 minutes. The graph below shows the battery charge on his phone from when the charging starts (t = 0) until it is unplugged (t = 90). A battery charge of 100 means that the battery is fully charged. Alice has a battery charge of 85 on her phone when Barry starts charging his phone. Alice watches a film on her phone for the 90 minutes and her battery charge decreases by 5 every 10 minutes.",
+  "questionText": "(i) Complete the table below to show the battery charge on Alice’s phone every 10 minutes for the first 60 minutes. (ii) Use the values from the table above to draw a graph of the battery charge on Alice’s phone on the diagram on the previous page, from t = 0 to t = 90, for t ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q6-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "in (i), 1 correct entry in table",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q6-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "in (ii), 1 point correctly graphed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q6-b-iii",
+  "topicId": "maths-4-1",
+  "conceptId": "q6-b-iii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q6(b)(iii)",
+  "stem": "Barry charges his phone for 90 minutes. The graph below shows the battery charge on his phone from when the charging starts (t = 0) until it is unplugged (t = 90). A battery charge of 100 means that the battery is fully charged. Alice has a battery charge of 85 on her phone when Barry starts charging his phone. Alice watches a film on her phone for the 90 minutes and her battery charge decreases by 5 every 10 minutes.",
+  "questionText": "The numbers in the table in part (b)(i) follow a pattern where C is the battery charge on Alice’s phone, and t is the time in minutes since the charging started. Which one of the following formulae shows the pattern in the table? Justify your answer. C = 85 + 0·5t; C = 0·5 − 85t; C = 85 − 0·5t. Tick one box only.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q6-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "C = 85 − 0·5t",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q7-a-b",
+  "topicId": "maths-1-6",
+  "conceptId": "q7-a-b",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q7(a), Q7(b)",
+  "stem": "In a survey, 30 students were asked the average time they spend doing maths homework. Some of the results are shown in the table below. (Note: 10 − 20 means 10 minutes or more, but less than 20 minutes, and so on.)",
+  "questionText": "(a) Complete the table above by filling in the missing value. Remember that there are 30 students in total. (b) Complete the histogram below to show the information in the table. One bar has been done for you.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q7-a-b-solution-1",
+    "kind": "point",
+    "verbatim": "30 − 23 = 7",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q7-c-d",
+  "topicId": "maths-1-6",
+  "conceptId": "q7-c-d",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q7(c), Q7(d)",
+  "stem": "In a survey, 30 students were asked the average time they spend doing maths homework. Some of the results are shown in the table below. (Note: 10 − 20 means 10 minutes or more, but less than 20 minutes, and so on.)",
+  "questionText": "(c) What is the greatest number of students who could spend less than 15 minutes on average doing maths homework? (d) Find the percentage of students who spend 40 minutes or more on average doing maths homework. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q7-c-d-solution-1",
+    "kind": "point",
+    "verbatim": "2 + 5 = 7",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q7-c-d-solution-2",
+    "kind": "point",
+    "verbatim": "13·3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q7-e",
+  "topicId": "maths-1-6",
+  "conceptId": "q7-e",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q7(e)",
+  "stem": "In a survey, 30 students were asked the average time they spend doing maths homework. Some of the results are shown in the table below. (Note: 10 − 20 means 10 minutes or more, but less than 20 minutes, and so on.)",
+  "questionText": "In which interval does the median of the data lie? Justify your answer. Tick one box only: 0 − 10; 10 − 20; 20 − 30; 30 − 40; 40 − 50.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q7-e-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: 30 − 40",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q7-e-solution-2",
+    "kind": "point",
+    "verbatim": "Median is the centre of the 15th and 16th person",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q8-a-i-ii",
+  "topicId": "maths-2-4",
+  "conceptId": "q8-a-i-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q8(a)(i), Q8(a)(ii)",
+  "stem": "Sima is designing a logo formed by two quadrilaterals. The quadrilateral PQRS is an enlargement of the quadrilateral ABCD, as shown below. The enlargement has a scale factor of 2.",
+  "questionText": "(i) The length of the side [AD] is 5 cm. Find the length of the side [PS]. (ii) The area of the smaller quadrilateral ABCD is 42 cm². Find the area, in cm², of the bigger quadrilateral PQRS.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q8-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "5 × 2 = 10 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q8-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "42 × 2² = 168",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q8-a-iii",
+  "topicId": "maths-2-4",
+  "conceptId": "q8-a-iii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q8(a)(iii)",
+  "stem": "Sima is designing a logo formed by two quadrilaterals. The quadrilateral PQRS is an enlargement of the quadrilateral ABCD, as shown below. The enlargement has a scale factor of 2.",
+  "questionText": "Construct the centre of enlargement on the diagram above, and label it O.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q8-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Two correct lines constructed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q8-b",
+  "topicId": "maths-2-3",
+  "conceptId": "q8-b",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 FL Q8(b)(i), Q8(b)(ii), Q8(b)(iii)",
+  "stem": "Sima makes a skateboard ramp. The ramp is in the shape of a right-angled triangle. A diagram of the ramp is shown below. The lengths of two sides of the triangle are shown. The angle A is marked.",
+  "questionText": "(i) Fill in the table below to show the length of the side opposite the angle A and the length of the side adjacent to the angle A. (ii) Use the lengths from part (b)(i) to write down the value of tan A as a fraction. (iii) Hence, find the size of the angle A. Give your answer correct to the nearest degree.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "Opposite = 50",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q8-b-solution-2",
+    "kind": "point",
+    "verbatim": "Adjacent = 160",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q9-a",
+  "topicId": "maths-1-1",
+  "conceptId": "q9-a",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q9(a)(i), Q9(a)(ii)",
+  "stem": "Debbie owns a bus hire company. Debbie wants to buy a new bus. She must choose a bus size, an engine type, and a colour from the table below. Bus size: Minibus, Coach, Double-decker. Engine type: Electric, Diesel. Colour: White, Blue, Green, Red.",
+  "questionText": "(i) Find how many different choices of bus are possible. For example, one possible choice is minibus, electric engine and white. (ii) Debbie does not want a bus that is double-decker or has an electric engine. How many different choices of bus are now possible?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q9-a-solution-1",
+    "kind": "point",
+    "verbatim": "3 × 2 × 4 = 24",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q9-a-solution-2",
+    "kind": "point",
+    "verbatim": "2 × 1 × 4 = 8",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q9-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-b",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q9(b)",
+  "stem": "Debbie buys 370 litres of diesel. The cost of diesel excluding VAT is €1·75 per litre. VAT is charged at 13·5%.",
+  "questionText": "Work out the total cost of Debbie’s diesel including VAT. Give your answer correct to the nearest cent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "370 × 1·75 = 647·50",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q9-b-solution-2",
+    "kind": "point",
+    "verbatim": "734·91",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q9-c",
+  "topicId": "maths-3-4",
+  "conceptId": "q9-c",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q9(c)",
+  "stem": "The fuel tank of the diesel engine is in the shape of a rectangular solid that is 100 cm long, 75 cm wide and 65 cm high, as shown in the diagram below.",
+  "questionText": "Find the volume of the fuel tank in litres. Note: 1 litre = 1000 cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "487500 ÷ 1000 = 487·50",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q9-d-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-d-i",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q9(d)(i)",
+  "stem": "Debbie brings a school group from Sligo to Galway. Debbie leaves Sligo at 08:45. The journey takes 2 hours and 38 minutes.",
+  "questionText": "What time does she arrive in Galway?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q9-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "08:45 + 2:38 = 11:23",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q9-d-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-d-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q9(d)(ii)",
+  "stem": "There are 54 passengers on the bus, made up of teachers and students. The ratio of teachers to students is 1:8.",
+  "questionText": "Work out how many students are on the bus.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q9-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "6 × 8 = 48",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q9-e",
+  "topicId": "maths-5-1",
+  "conceptId": "q9-e",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q9(e)",
+  "stem": "The oil tank of a bus is shown below. It has a large cylindrical section on the bottom with a narrower cylindrical section on top. Oil is poured into the empty tank at a steady rate until it is full.",
+  "questionText": "Which of the graphs above shows the height of the oil in the tank after time (t)? Give a reason for your answer. Tick one box only: Graph A, Graph B, Graph C.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q9-e-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: Graph B",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q9-e-solution-2",
+    "kind": "point",
+    "verbatim": "Slow and then fast",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q10-a-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-a-i-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q10(a)(i), Q10(a)(ii)",
+  "stem": "Anthony works in a shop. His basic rate of pay is €15·80 per hour, for the first 35 hours he works in a week.",
+  "questionText": "(i) Find Anthony’s gross pay for a week if he works 35 hours. (ii) Anthony gets paid 50% extra for each overtime hour, that is, for every extra hour he works over the 35 hours. Find the amount Anthony gets paid for 1 overtime hour.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q10-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "15·80 × 35",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q10-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "15·80 × 1·5 = 23·70",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q10-a-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-a-iii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q10(a)(iii)",
+  "stem": "Anthony works in a shop. His basic rate of pay is €15·80 per hour, for the first 35 hours he works in a week. Anthony gets paid 50% extra for each overtime hour, that is, for every extra hour he works over the 35 hours.",
+  "questionText": "Anthony’s gross pay for last week was €671·50. Using your answers from parts (a)(i) and (a)(ii), find how many overtime hours Anthony worked last week.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q10-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "671·50 − 553 = 118·50",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q10-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "118·50 ÷ 23·70 = 5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q10-b-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-b-i-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q10(b)(i), Q10(b)(ii)",
+  "stem": "In 2025, Anthony’s gross income was €35 000.",
+  "questionText": "(i) He paid income tax at a rate of 20%. Find Anthony’s gross tax for the year. (ii) Anthony had an annual tax credit of €4000. Find Anthony’s net tax for the year.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q10-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "35000 × 0·2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q10-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "7000 − 4000",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q10-b-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-b-iii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q10(b)(iii)",
+  "stem": "In 2025, Anthony’s gross income was €35 000. He paid income tax at a rate of 20%. Anthony had an annual tax credit of €4000.",
+  "questionText": "Anthony also paid a total of €1445 in PRSI and a total of €596 in USC. Find Anthony’s net annual income after deductions of income tax, PRSI, and USC.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q10-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "35 000 − (3000 + 1445 + 596)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q10-c-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-c-i",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q10(c)(i)",
+  "stem": "Anthony saves €50 per week.",
+  "questionText": "How much does he save in one year? (You may assume there are 52 weeks in a year.)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q10-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "50 × 52",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q10-c-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-c-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q10(c)(ii)",
+  "stem": "Anthony puts €2000 in a savings account. The interest rate is 3% compound interest per year. At the end of the first year Anthony puts another €1000 into the account.",
+  "questionText": "Find how much is in Anthony’s savings account after 2 years?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q10-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "2000 × 0·03 = 60",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q10-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "3060 × 0·03 = 91·80",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q11-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "q11-a-i",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q11(a)(i)",
+  "stem": "The diagram below shows the floor plan of Síle’s room.",
+  "questionText": "Find the perimeter of Síle’s room, in metres.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q11-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "6·5 + 4 + 3·5 + 5 = 19",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q11-a-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "q11-a-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q11(a)(ii)",
+  "stem": "The diagram below shows the floor plan of Síle’s room.",
+  "questionText": "Find the area of Síle’s room, in m². Hint: It might help to find the area of a rectangle and a triangle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q11-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "(0·5 × 3 × 4) + (3·5 × 4)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q11-b-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-b-i",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q11(b)(i)",
+  "stem": "Síle is buying 28 m² of carpet. The cost, per m², of two different brands are shown in the table below. Brand A: £20 sterling per m². Brand B: €26 per m²; Sale: 15% discount.",
+  "questionText": "Find the total cost of 28 m² of carpet from each brand. Include the discount for Brand B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q11-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "20 × 28 = £560",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q11-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "728 × 0·85",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q11-b-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-b-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q11(b)(ii)",
+  "stem": "Síle is buying 28 m² of carpet. The cost, per m², of two different brands are shown in the table below. Brand A: £20 sterling per m². Brand B: €26 per m²; Sale: 15% discount.",
+  "questionText": "The exchange rate is €1 = £0·87 sterling. Work out which brand is cheaper. Use calculations to support your answer. Tick one box only: Brand A or Brand B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q11-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: Brand B",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q11-c-i-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "q11-c-i-ii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q11(c)(i), Q11(c)(ii)",
+  "stem": "Síle buys a mirror. The mirror is in the shape of a circle with a diameter of 100 cm, as shown in the diagram on the right.",
+  "questionText": "(i) Find the radius of the mirror, in cm. (ii) Show that the area of the mirror is 7854 cm², correct to the nearest cm².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q11-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "50 [cm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-fl-q11-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "π × 50²",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-fl-q11-c-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-c-iii",
+  "level": "foundation",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 FL Q11(c)(iii)",
+  "stem": "Síle buys a mirror. The mirror is in the shape of a circle with a diameter of 100 cm, as shown in the diagram on the right.",
+  "questionText": "Síle puts an anti-scratch coating on the mirror. The coating costs 2 cent per cm², plus an additional charge of €20. Work out the total cost of the coating.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-fl-q11-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "157·08 + 20",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
  }
 ]

@@ -18,7 +18,7 @@ describe('Mark Bank profile defaults', () => {
     expect(levelsForSubject('maths')).toEqual(['higher', 'ordinary', 'foundation']);
     expect(levelsForSubject('biology')).toEqual(['higher', 'ordinary']);
     expect(builtDecks()).toContainEqual({ subjectId: 'maths', level: 'foundation', label: 'Mathematics Foundation' });
-    expect(await loadCards('maths', 'foundation')).toHaveLength(42);
+    expect(await loadCards('maths', 'foundation')).toHaveLength(84);
     writeChoice('foundation-default-test', { subjectId: 'maths', level: 'foundation' });
     expect(readChoice('foundation-default-test')).toEqual({ subjectId: 'maths', level: 'foundation' });
     localStorage.removeItem('mb:choice:foundation-default-test');

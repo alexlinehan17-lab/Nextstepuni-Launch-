@@ -440,10 +440,18 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('retains the independently reviewed Foundation deck added on 2026-10-07', () => {
-    expect(MATHS_FOUNDATION).toHaveLength(42);
-    expect(identityHash(MATHS_FOUNDATION)).toBe('3decd62c6721adfb132845b3b3988f4167d2174940240894c722c0827c5e11ff');
+    const original = MATHS_FOUNDATION.filter(card => card.year === 2025);
+    expect(original).toHaveLength(42);
+    expect(identityHash(original)).toBe('3decd62c6721adfb132845b3b3988f4167d2174940240894c722c0827c5e11ff');
     const oldIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
     expect(MATHS_FOUNDATION.some(card => oldIds.has(card.id))).toBe(false);
+  });
+
+  it('retains all additional 2026 Foundation tasks without replacing a 2025 card', () => {
+    const added = MATHS_FOUNDATION.filter(card => card.year === 2026);
+    expect(added).toHaveLength(42);
+    expect(identityHash(added)).toBe('e5c585bc9aac2ce41213a0ec7b9a90f7b4ae91f61f47847a5cf72d9da1abf874');
+    expect(new Set(MATHS_FOUNDATION.map(card => card.id)).size).toBe(MATHS_FOUNDATION.length);
   });
 
   it('protects the complete current bank', () => {
