@@ -1,0 +1,83 @@
+{
+  "subjectId": "politics-and-society",
+  "reviewedAt": "2026-10-07",
+  "scope": {
+    "authority": "scripts/markbank/paperIndex.mjs",
+    "paperSchemePairs": 17,
+    "years": "2018–2026",
+    "levels": [
+      "higher",
+      "ordinary"
+    ],
+    "note": "Every indexed English-language Politics paper. The index contains 2020 Higher only; historical sample/deferred reference headings remain available but are outside this indexed paper corpus."
+  },
+  "coverage": {
+    "covered": 1086,
+    "denominator": 1086,
+    "higher": 272,
+    "ordinary": 814,
+    "open": 0,
+    "orphan": 0,
+    "unparsed": 0,
+    "censusFlags": 0,
+    "excluded": 0
+  },
+  "review": {
+    "paperPages": 464,
+    "schemePages": 325,
+    "method": "Every page visually swept; paper boundaries checked against scheme allocations. Independently handwritten printed-boundary inventory and reviewed task census. Paper/scheme alignment uses wording and order, not matching labels. All earlier card identities preserved.",
+    "selectionScan": "Every paper page scanned before task parsing; 610 raw signals on 186 pages pinned with written dispositions. Newly introduced or stale directives fail production generation.",
+    "routeExamples": {
+      "2021 OL Q1(l)": "126 routes: choose 5 of 9 acronyms",
+      "2023 OL Q2(d)": "286 routes: choose 3 of 13 chart causes; row references keep answers hidden",
+      "2025 OL Q2(d)": "3 country-column routes; published 2+8 tariff"
+    },
+    "boundaryDecisions": "scripts/markbank/authoring/politics_reviewed.py",
+    "sourceHashes": "scripts/markbank/authored/politics-reconciliation.json",
+    "independentCensus": "scripts/markbank/authored/politics-census.json",
+    "rawSelectionLedger": "scripts/markbank/authored/politics-selection-review.json"
+  },
+  "validation": {
+    "fullSuite": {
+      "filesPassed": 304,
+      "testsPassed": 6136,
+      "testsSkipped": 3
+    },
+    "afterFinalTopicCorrections": {
+      "curriculumCorpusPreservationDeckTestsPassed": 119,
+      "coverageTopicRubricTestsPassed": 60
+    },
+    "sessionAndRubricTestsPassed": 78,
+    "lint": "passed",
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "baseline": "Politics-only remeasurement/check passed; every other subject baseline retained. Global remeasurement requires the other ignored PDF corpora.",
+    "browser": [
+      "Demo Mark Bank session and correct Politics score footer",
+      "Original paper and marking-scheme PDF rendering from live Paper Trail storage",
+      "Escape close and source-page navigation",
+      "2026 HL Q2(g) map on a 390px viewport; no horizontal overflow",
+      "2023 OL Q2(d): 286 routes, guidance reveal, pagination from 20 to 40",
+      "2026 HL Q3(a): six criterion placements total 100/100; selected marks remain orange in Topic Atlas"
+    ],
+    "visualEvidence": "Local tmp/politics-audit/browser-*.png; browser script and logs retained locally.",
+    "testTypecheck": "passed",
+    "packagingAndDependencyGuardTestsPassed": 7,
+    "integration": {
+      "baseCommit": "144cc19a4f91f72d9b23a51dde8629310b7f255a",
+      "priorBankCards": 19328,
+      "combinedBankCards": 20414,
+      "note": "Rebased onto current main. Every other subject card baseline and coverage record retained. The generated subject-showcase count now includes Politics. Browser QA repeated in the current practice-library dialog and mobile Atlas."
+    }
+  },
+  "reproduce": {
+    "sourceFetch": "python3 scripts/markbank/fetch-corpus.py politics-society --schemes --from 2018 --to 2026",
+    "commands": [
+      "python3 scripts/markbank/authoring/politics_corpus.py",
+      "python3 scripts/markbank/authoring/politics_author.py",
+      "python3 scripts/markbank/authoring/reconcile.py politics-and-society --open",
+      "python3 scripts/markbank/authoring/reconcile.py politics-and-society --baseline check"
+    ],
+    "dependencies": "Python with PyMuPDF; project Node dependencies. PDFs are ignored source material, not committed. Production never rewrites the frozen census or raw-selection ledger."
+  }
+}

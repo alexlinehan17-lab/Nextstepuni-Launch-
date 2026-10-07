@@ -778,5 +778,20 @@
       "hash": "8cb689ef44820e29"
     },
     "refsHash": "ced75cb491569d9f"
+  },
+  "politics-and-society": {
+    "cards": 1086,
+    "contentHash": "437847dfb43e3f66",
+    "coveragePct": 100.0,
+    "covered": 1086,
+    "excluded": 0,
+    "leaves": 1086,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "6c53167dc5584a52"
+    },
+    "refsHash": "3cf17ae794dc92b8"
   }
 }

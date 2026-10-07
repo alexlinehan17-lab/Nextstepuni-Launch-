@@ -83,6 +83,8 @@ import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
+import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
+import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
 import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
@@ -102,6 +104,11 @@ import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
 import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
 const decks = [
+  // 2026-10-07: new Politics corpus, 17 paper/scheme pairs visually reviewed.
+  // No prior Politics IDs existed. All prior subject preservation checks and
+  // zero-open/zero-orphan Politics reconciliation passed before this addition.
+  ['politics-and-society:higher', POLITICS_HIGHER, 272, '2f2f922139088966fafe1f23d06528cca406c61e00e4a78c90cf81b2d9f5ebe7'],
+  ['politics-and-society:ordinary', POLITICS_ORDINARY, 814, '0a275116d0957b98225c44628398cbcce75bf1371d8c3a6054f74cb8e3a6304c'],
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
@@ -767,7 +774,8 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328);
+    // Politics adds 1,086 tasks; all previous subjects retain their IDs.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(20_414);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -824,7 +832,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('swedish:')
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
-        && !name.startsWith('physical-education:'))
+        && !name.startsWith('physical-education:')
+        && !name.startsWith('politics-and-society:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });

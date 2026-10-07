@@ -54,6 +54,8 @@ import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
+import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
+import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
 import { CARDS as CS_HIGHER } from '../components/MarkBank/cards/computer-science/higher';
 import { CARDS as CS_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENG_HIGHER } from '../components/MarkBank/cards/engineering/higher';
@@ -537,6 +539,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['art', 'ordinary', ART_ORDINARY],
     ['geography', 'higher', GEOGRAPHY_HIGHER],
     ['geography', 'ordinary', GEOGRAPHY_ORDINARY],
+    ['politics-and-society', 'higher', POLITICS_HIGHER],
+    ['politics-and-society', 'ordinary', POLITICS_ORDINARY],
     ['computer-science', 'higher', CS_HIGHER],
     ['computer-science', 'ordinary', CS_ORDINARY],
     ['engineering', 'higher', ENG_HIGHER],
