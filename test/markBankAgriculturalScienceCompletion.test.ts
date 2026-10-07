@@ -14,6 +14,7 @@ import { paperRegionFor } from '../components/PaperTrail/paperRegion';
 import type { PaperAnswerMap } from '../types/paperTrail';
 import { findCanonicalTopic, resolveCurriculumSpecification } from '../curriculumRegistry';
 import { cardsForTopic } from '../components/MarkBank/deck';
+import census from '../scripts/markbank/authored/agricultural-science-census.json';
 
 const cards = [...higher, ...ordinary];
 const get = (id: string) => {
@@ -23,6 +24,21 @@ const get = (id: string) => {
 };
 
 describe('Agricultural Science reviewed additions (full audit still in progress)', () => {
+  it('matches the independent source census exactly, including option addresses, routes and published marks', () => {
+    for (const paper of census.papers) {
+      const actual = cards.filter(card => card.year === paper.year && card.level === paper.level);
+      const expected = paper.baseTasks.flatMap(task => task.routes.map(ref => ({ ref, marks:task.marksPerResponse })));
+      expect(actual.map(card => card.questionRef).sort()).toEqual(expected.map(task => task.ref).sort());
+      for (const task of expected) {
+        expect(actual.find(card => card.questionRef === task.ref)?.totalMarks,task.ref).toBe(task.marks);
+      }
+    }
+    expect(census.status).toBe('in-progress');
+    expect(census.editionStatus).toHaveLength(68);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(65);
+    expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(1);
+  });
+
   it('expands every three-of-four udder-labelling route at the published three-mark tariff', () => {
     const routes = cards.filter(c => c.id.startsWith('agsci-2023-hl-q18ai-route-'));
     expect(routes.map(c => c.id.split('-').at(-1)).sort()).toEqual(['abc', 'abd', 'acd', 'bcd']);
@@ -137,6 +153,71 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(get('agsci-2010-ol-q12dii').rows[0].contextNote).toContain('28');
   });
 
+  it('retains all 70 2011 Higher routes and separates shared genetic-cross marks from the three outcomes', () => {
+    const legacy = higher.filter(card => card.year === 2011);
+    expect(legacy).toHaveLength(70);
+    const cross = get('agsci-2011-hl-q7b-cross');
+    expect(cross.totalMarks).toBe(12);
+    expect(cross.figure?.solution).toBe(true);
+    expect(marksClaimed(cross, {'r-1':'yes','r-2':'yes'}, {'r-3':[0,1,2,3],'r-4':[0,1,2,3]})).toBe(12);
+    for (const key of ['i','ii','iii']) expect(get(`agsci-2011-hl-q7b${key}`).totalMarks).toBe(4);
+    expect(get('agsci-2011-hl-q7bi').rows[0].verbatim).toBe('12/16');
+    expect(get('agsci-2011-hl-q7bii').rows[0].verbatim).toBe('4/16');
+    expect(get('agsci-2011-hl-q7biii').rows[0].verbatim).toBe('3/16');
+    const routes = legacy.filter(card => card.id.startsWith('agsci-2011-hl-q8c-route-'));
+    expect(routes.map(card => card.id.split('-route-')[1])).toEqual(['i-ii-iii','i-ii-iv','i-iii-iv','ii-iii-iv']);
+    for (const candidate of routes) {
+      const card = get(candidate.id);
+      expect(card.totalMarks).toBe(24);
+      expect(card.rows).toHaveLength(6);
+      expect(marksClaimed(card,Object.fromEntries(card.rows.map(row => [row.id,'yes'])),{})).toBe(24);
+    }
+  });
+
+  it('keeps the heart image under circulatory physiology and preserves the cereal drawing’s partial award', () => {
+    for (const part of ['i','ii','iii']) {
+      const card = get(`agsci-2011-hl-q5b${part}`);
+      expect(card.kind).toBe('diagram');
+      expect(card.topicId).toBe('agsci-4-1');
+      expect(card.figure?.solution).not.toBe(true);
+      const task = review.tasks.find(task => task.cardIds.includes(card.id))!;
+      expect(task.examTopicIds).toEqual(['agricultural-science-higher-animal-physiology-circulatory-system']);
+    }
+    const drawing = get('agsci-2011-hl-q6c');
+    expect(drawing.tariffModel.kind).toBe('questionTotal');
+    expect(drawing.totalMarks).toBe(8);
+    expect(drawing.rows.every(row => row.marks === null)).toBe(true);
+    expect(drawing.rows[0].contextNote).toContain('4, 2 or 0');
+    expect(drawing.rows[1].contextNote).toContain('up to four');
+  });
+
+  it('preserves minimum coverage in 2011 germination and establishment without fixing the eight marks to one topic', () => {
+    const card = get('agsci-2011-hl-q1e');
+    expect(card.answerVariants).toHaveLength(4);
+    for (const variant of card.answerVariants!) {
+      const effective = {...card,rows:variant.rows};
+      const claims = Object.fromEntries(variant.rows.map(row => [row.id,Array.from({length:row.group!.claimMax},(_,i)=>i)]));
+      expect(marksClaimed(effective,{},claims)).toBe(10);
+      for (const row of variant.rows) expect(marksClaimed(effective,{},{[row.id]:claims[row.id]})).toBeLessThan(10);
+    }
+  });
+
+  it('awards the first correct immunity and vegetative-propagation point three marks in either order', () => {
+    for (const id of ['agsci-2011-hl-q1c','agsci-2011-hl-q1j']) {
+      const card = get(id);
+      expect(card.rows).toHaveLength(2);
+      for (const row of card.rows) {
+        expect(marksClaimed(card,{},{[row.id]:[0]})).toBe(3);
+        expect(marksClaimed(card,{},{[row.id]:[1]})).toBe(3);
+        expect(marksClaimed(card,{},{[row.id]:[1,0]})).toBe(5);
+      }
+    }
+    const yeast = get('agsci-2011-hl-q9a');
+    expect(yeast.tariffModel.kind).toBe('questionTotal');
+    expect(yeast.totalMarks).toBe(12);
+    expect(yeast.rows[0].contextNote).toContain('At least one point must concern brewing');
+  });
+
   it('scores the unusual Ordinary tariffs in the order the scheme prints', () => {
     const tf = get('agsci-2010-ol-q7');
     const expected = [0,1,2,3,4,5,8,11,14,17,20];
@@ -169,7 +250,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(4);
+    expect(review.paperReviews).toHaveLength(6);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -184,6 +265,11 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const fileid of ['LC024ALP000IV.pdf','LC024GLP000IV.pdf']) {
       expect(preferredAnswersUrl('agricultural-science',2010,fileid,'old-storage')).toBe(`/paper-answers/2010/${fileid}.json`);
     }
+    const irish2011: PaperAnswerMap = JSON.parse(readFileSync(resolve(__dirname, '../public/paper-answers/2011/LC024ALP000IV.pdf.json'),'utf8'));
+    expect(irish2011.q.find(q => q.n === '1')?.schemeNote).toContain('2.5–3.5');
+    expect(irish2011.q.find(q => q.n === '6')?.schemeNote).toContain('high protein');
+    expect(irish2011.q.find(q => q.n === '7')?.schemeNote).toContain('CcFf');
+    expect(preferredAnswersUrl('agricultural-science',2011,'LC024ALP000IV.pdf','old-storage')).toBe('/paper-answers/2011/LC024ALP000IV.pdf.json');
   });
 
   it('awards 2010 first-correct marks independently of the named instrument', () => {
@@ -237,7 +323,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(155);
+    expect(atlas.markBankCards).toHaveLength(225);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;
@@ -260,8 +346,8 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
-  it('finds all 147 translated tasks under the same topics and practice identities', () => {
-    expect(atlas.translatedMarkBankCards).toHaveLength(147);
+  it('finds all 217 translated tasks under the same topics and practice identities', () => {
+    expect(atlas.translatedMarkBankCards).toHaveLength(217);
     for (const join of atlas.translatedMarkBankCards) {
       const card = get(join.cardId);
       const english = atlas.markBankCards.find(candidate => candidate.cardId === join.cardId)!;

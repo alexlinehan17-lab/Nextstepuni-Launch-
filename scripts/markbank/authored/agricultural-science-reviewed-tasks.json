@@ -155,7 +155,77 @@
     "agsci-2010-ol-q13bi",
     "agsci-2010-ol-q13bii",
     "agsci-2010-ol-q13ci",
-    "agsci-2010-ol-q13cii"
+    "agsci-2010-ol-q13cii",
+    "agsci-2011-hl-q1a",
+    "agsci-2011-hl-q1bi",
+    "agsci-2011-hl-q1bii",
+    "agsci-2011-hl-q1c",
+    "agsci-2011-hl-q1d",
+    "agsci-2011-hl-q1e",
+    "agsci-2011-hl-q1f",
+    "agsci-2011-hl-q1gi",
+    "agsci-2011-hl-q1gii",
+    "agsci-2011-hl-q1hi",
+    "agsci-2011-hl-q1hii",
+    "agsci-2011-hl-q1i",
+    "agsci-2011-hl-q1j",
+    "agsci-2011-hl-q2ai",
+    "agsci-2011-hl-q2aii",
+    "agsci-2011-hl-q2aiii",
+    "agsci-2011-hl-q2aiv",
+    "agsci-2011-hl-q2bi",
+    "agsci-2011-hl-q2bii",
+    "agsci-2011-hl-q2c",
+    "agsci-2011-hl-q3o1a",
+    "agsci-2011-hl-q3o1b",
+    "agsci-2011-hl-q3o1ci",
+    "agsci-2011-hl-q3o1cii",
+    "agsci-2011-hl-q3o1ciii",
+    "agsci-2011-hl-q3o2a",
+    "agsci-2011-hl-q3o2bi",
+    "agsci-2011-hl-q3o2bii",
+    "agsci-2011-hl-q3o2ci",
+    "agsci-2011-hl-q3o2cii-advantages",
+    "agsci-2011-hl-q3o2cii-disadvantages",
+    "agsci-2011-hl-q4a",
+    "agsci-2011-hl-q4b",
+    "agsci-2011-hl-q4c",
+    "agsci-2011-hl-q4d",
+    "agsci-2011-hl-q5ai",
+    "agsci-2011-hl-q5aii",
+    "agsci-2011-hl-q5aiii",
+    "agsci-2011-hl-q5bi",
+    "agsci-2011-hl-q5bii",
+    "agsci-2011-hl-q5biii",
+    "agsci-2011-hl-q5c",
+    "agsci-2011-hl-q6a",
+    "agsci-2011-hl-q6bi",
+    "agsci-2011-hl-q6bii",
+    "agsci-2011-hl-q6biii",
+    "agsci-2011-hl-q6biv",
+    "agsci-2011-hl-q6c",
+    "agsci-2011-hl-q7ai",
+    "agsci-2011-hl-q7aii",
+    "agsci-2011-hl-q7aiii",
+    "agsci-2011-hl-q7b-cross",
+    "agsci-2011-hl-q7bi",
+    "agsci-2011-hl-q7bii",
+    "agsci-2011-hl-q7biii",
+    "agsci-2011-hl-q7c",
+    "agsci-2011-hl-q8a",
+    "agsci-2011-hl-q8bi",
+    "agsci-2011-hl-q8bii",
+    "agsci-2011-hl-q8biii",
+    "agsci-2011-hl-q8biv",
+    "agsci-2011-hl-q8c-route-i-ii-iii",
+    "agsci-2011-hl-q8c-route-i-ii-iv",
+    "agsci-2011-hl-q8c-route-i-iii-iv",
+    "agsci-2011-hl-q8c-route-ii-iii-iv",
+    "agsci-2011-hl-q9a",
+    "agsci-2011-hl-q9b",
+    "agsci-2011-hl-q9c",
+    "agsci-2011-hl-q9d",
+    "agsci-2011-hl-q9e"
   ],
   "correctedCardIds": [
     "agsci-2025-ol-q8b"
@@ -11904,6 +11974,5504 @@
           "marksPerRoute": 6
         }
       ]
+    },
+    {
+      "questionRef": "2011 HL Q1(a)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.082,
+            1,
+            0.12
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.114,
+            1,
+            0.209
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1a": "1001"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1a"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(a)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.09,
+                1,
+                0.127
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.112,
+                1,
+                0.206
+              ]
+            }
+          ],
+          "marksPerRoute": 10
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(b)(i)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.131,
+            1,
+            0.165
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.208,
+            1,
+            0.282
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1bi": "1002"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1bi"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(b)(i)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.135,
+                1,
+                0.172
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.207,
+                1,
+                0.237
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(b)(ii)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.131,
+            1,
+            0.165
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.208,
+            1,
+            0.282
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1bii": "1003"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1bii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(b)(ii)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.135,
+                1,
+                0.172
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.207,
+                1,
+                0.237
+              ]
+            }
+          ],
+          "marksPerRoute": 6,
+          "schemeNote": "The Irish scheme gives 2.5–3 for the dairy cow’s condition score at calving; the English scheme gives 2.5–3.5. Both give 2–3 at service. The original edition-specific ranges are preserved."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(c)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.176,
+            1,
+            0.21
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.282,
+            1,
+            0.361
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1c": "1004"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1c"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(c)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.18,
+                1,
+                0.217
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.238,
+                1,
+                0.313
+              ]
+            }
+          ],
+          "marksPerRoute": 10
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(d)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.222,
+            1,
+            0.241
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.361,
+            1,
+            0.409
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1d": "1005"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1d"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(d)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.225,
+                1,
+                0.248
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.314,
+                1,
+                0.343
+              ]
+            }
+          ],
+          "marksPerRoute": 10
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(e)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.25,
+            1,
+            0.27
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.409,
+            1,
+            0.519
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1e": "1006"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1e"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(e)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.255,
+                1,
+                0.278
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.344,
+                1,
+                0.464
+              ]
+            }
+          ],
+          "marksPerRoute": 10
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(f)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.28,
+            1,
+            0.316
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.515,
+            1,
+            0.571
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1f": "1007"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1f"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(f)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.285,
+                1,
+                0.323
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.465,
+                1,
+                0.51
+              ]
+            }
+          ],
+          "marksPerRoute": 10
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(g)(i)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.324,
+            1,
+            0.344
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.573,
+            1,
+            0.618
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1gi": "1008"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1gi"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(g)(i)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.33,
+                1,
+                0.383
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.51,
+                1,
+                0.54
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(g)(ii)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.324,
+            1,
+            0.363
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.62,
+            1,
+            0.683
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1gii": "1009"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1gii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(g)(ii)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.33,
+                1,
+                0.383
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.541,
+                1,
+                0.587
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(h)(i)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.371,
+            1,
+            0.404
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.685,
+            1,
+            0.765
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1hi": "1010"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1hi"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(h)(i)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.39,
+                1,
+                0.428
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.587,
+                1,
+                0.663
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(h)(ii)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.371,
+            1,
+            0.404
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.685,
+            1,
+            0.765
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1hii": "1011"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1hii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants",
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(h)(ii)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.39,
+                1,
+                0.428
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.587,
+                1,
+                0.663
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(i)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.414,
+            1,
+            0.435
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.766,
+            1,
+            0.795
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1i": "1012"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1i"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(i)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.435,
+                1,
+                0.458
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.663,
+                1,
+                0.694
+              ]
+            }
+          ],
+          "marksPerRoute": 10
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q1(j)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.444,
+            1,
+            0.479
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.796,
+            1,
+            0.9
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q1j": "1013"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q1j"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 1(j)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.465,
+                1,
+                0.518
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.694,
+                1,
+                0.787
+              ]
+            }
+          ],
+          "marksPerRoute": 10
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q2(a)(i)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.565,
+            1,
+            0.631
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.114
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q2ai": "1014"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q2ai"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 2(a)(i)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.593,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.086,
+                1,
+                0.102
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q2(a)(ii)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.565,
+            1,
+            0.631
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.114,
+            1,
+            0.18
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q2aii": "1015"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q2aii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 2(a)(ii)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.593,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.102,
+                1,
+                0.148
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q2(a)(iii)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.565,
+            1,
+            0.631
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.18,
+            1,
+            0.227
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q2aiii": "1016"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q2aiii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 2(a)(iii)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.593,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.148,
+                1,
+                0.194
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q2(a)(iv)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.565,
+            1,
+            0.631
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.226,
+            1,
+            0.275
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q2aiv": "1017"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q2aiv"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 2(a)(iv)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.593,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.194,
+                1,
+                0.24
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q2(b)(i)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.639,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.27,
+            1,
+            0.362
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q2bi": "1018"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q2bi"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 2(b)(i)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.669,
+                1,
+                0.707
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.239,
+                1,
+                0.3
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q2(b)(ii)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.639,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.363,
+            1,
+            0.444
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q2bii": "1019"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q2bii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 2(b)(ii)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.669,
+                1,
+                0.707
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.3,
+                1,
+                0.361
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q2(c)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.686,
+            1,
+            0.721
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.445,
+            1,
+            0.526
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q2c": "1020"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q2c"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 2(c)",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.714,
+                1,
+                0.752
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.361,
+                1,
+                0.439
+              ]
+            }
+          ],
+          "marksPerRoute": 16
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option One (a)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.031,
+            1,
+            0.08
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.244
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o1a": "1021"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o1a"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a hAon (a)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.063,
+                1,
+                0.151
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.084,
+                1,
+                0.224
+              ]
+            }
+          ],
+          "marksPerRoute": 16
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option One (b)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.091,
+            1,
+            0.111
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.244,
+            1,
+            0.343
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o1b": "1022"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o1b"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a hAon (b)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.158,
+                1,
+                0.196
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.223,
+                1,
+                0.3
+              ]
+            }
+          ],
+          "marksPerRoute": 16
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option One (c)(i)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.12,
+            1,
+            0.218
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.34,
+            1,
+            0.4
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o1ci": "1023"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o1ci"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a hAon (c)(i)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.203,
+                1,
+                0.316
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.299,
+                1,
+                0.36
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option One (c)(ii)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.12,
+            1,
+            0.218
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.403,
+            1,
+            0.483
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o1cii": "1024"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o1cii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a hAon (c)(ii)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.203,
+                1,
+                0.316
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.36,
+                1,
+                0.421
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option One (c)(iii)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.12,
+            1,
+            0.218
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.485,
+            1,
+            0.548
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o1ciii": "1025"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o1ciii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a hAon (c)(iii)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.203,
+                1,
+                0.316
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.42,
+                1,
+                0.468
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option Two (a)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.27,
+            1,
+            0.325
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.582,
+            1,
+            0.695
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o2a": "1026"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o2a"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a Dó (a)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.356,
+                1,
+                0.445
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.479,
+                1,
+                0.558
+              ]
+            }
+          ],
+          "marksPerRoute": 16
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option Two (b)(i)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.33,
+            1,
+            0.37
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.695,
+            1,
+            0.782
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o2bi": "1027"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o2bi"
+      ],
+      "marksPerRoute": 2,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a Dó (b)(i)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.452,
+                1,
+                0.49
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.558,
+                1,
+                0.603
+              ]
+            }
+          ],
+          "marksPerRoute": 2
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option Two (b)(ii)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.33,
+            1,
+            0.37
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.695,
+            1,
+            0.782
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o2bii": "1028"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o2bii"
+      ],
+      "marksPerRoute": 14,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a Dó (b)(ii)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.452,
+                1,
+                0.49
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.558,
+                1,
+                0.603
+              ]
+            }
+          ],
+          "marksPerRoute": 14
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option Two (c)(i)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.375,
+            1,
+            0.443
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.778,
+            1,
+            0.9
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o2ci": "1029"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o2ci"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a Dó (c)(i)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.497,
+                1,
+                0.565
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.603,
+                1,
+                0.727
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option Two (c)(ii) — advantages",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.375,
+            1,
+            0.443
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.778,
+            1,
+            0.9
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o2cii-advantages": "1030"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o2cii-advantages"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-sheep"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a Dó (c)(ii) — buntáistí",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.497,
+                1,
+                0.565
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.603,
+                1,
+                0.727
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q3 Option Two (c)(ii) — disadvantages",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.375,
+            1,
+            0.443
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.778,
+            1,
+            0.9
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q3o2cii-disadvantages": "1031"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q3o2cii-disadvantages"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-sheep"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 3 Rogha a Dó (c)(ii) — míbhuntáistí",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.497,
+                1,
+                0.565
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.603,
+                1,
+                0.727
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q4(a)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.495,
+            1,
+            0.52
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.525,
+            1,
+            0.55
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.11,
+            1,
+            0.212
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q4a": "1032"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q4a"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 4(a)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.623,
+                1,
+                0.647
+              ]
+            },
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.654,
+                1,
+                0.677
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.04,
+                1,
+                0.148
+              ]
+            }
+          ],
+          "marksPerRoute": 24
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q4(b)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.495,
+            1,
+            0.52
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.555,
+            1,
+            0.581
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.212,
+            1,
+            0.327
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.77,
+            0.109,
+            0.95,
+            0.135
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q4b": "1033"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q4b"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 4(b)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.623,
+                1,
+                0.647
+              ]
+            },
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.684,
+                1,
+                0.707
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.148,
+                1,
+                0.284
+              ]
+            },
+            {
+              "p": 7,
+              "r": [
+                0.77,
+                0.04,
+                0.87,
+                0.058
+              ]
+            }
+          ],
+          "marksPerRoute": 24
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q4(c)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.495,
+            1,
+            0.52
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.585,
+            1,
+            0.611
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.327,
+            1,
+            0.409
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.77,
+            0.109,
+            0.95,
+            0.135
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q4c": "1034"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q4c"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 4(c)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.623,
+                1,
+                0.647
+              ]
+            },
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.714,
+                1,
+                0.737
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.284,
+                1,
+                0.36
+              ]
+            },
+            {
+              "p": 7,
+              "r": [
+                0.77,
+                0.04,
+                0.87,
+                0.058
+              ]
+            }
+          ],
+          "marksPerRoute": 24
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q4(d)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.495,
+            1,
+            0.52
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.615,
+            1,
+            0.655
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.409,
+            1,
+            0.508
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.77,
+            0.109,
+            0.95,
+            0.135
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q4d": "1035"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q4d"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 4(d)",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.623,
+                1,
+                0.647
+              ]
+            },
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.744,
+                1,
+                0.782
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.36,
+                1,
+                0.468
+              ]
+            },
+            {
+              "p": 7,
+              "r": [
+                0.77,
+                0.04,
+                0.87,
+                0.058
+              ]
+            }
+          ],
+          "marksPerRoute": 24
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q5(a)(i)",
+      "paperPage": 4,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.101
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.535,
+            1,
+            0.566
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q5ai": "1036"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q5ai"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 5(a)(i)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.047,
+                1,
+                0.101
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.509,
+                1,
+                0.527
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q5(a)(ii)",
+      "paperPage": 4,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.101
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.566,
+            1,
+            0.614
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q5aii": "1037"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q5aii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 5(a)(ii)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.047,
+                1,
+                0.101
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.526,
+                1,
+                0.558
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q5(a)(iii)",
+      "paperPage": 4,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.101
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.614,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q5aiii": "1038"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q5aiii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 5(a)(iii)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.047,
+                1,
+                0.101
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.557,
+                1,
+                0.618
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q5(b)(i)",
+      "paperPage": 4,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.108,
+            1,
+            0.388
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.468,
+            1,
+            0.487
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.675,
+            1,
+            0.818
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q5bi": "1039"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q5bi"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-circulatory-system"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 5(b)(i)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.107,
+                1,
+                0.425
+              ]
+            },
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.45,
+                1,
+                0.564
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.618,
+                1,
+                0.694
+              ]
+            }
+          ],
+          "marksPerRoute": 16
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q5(b)(ii)",
+      "paperPage": 4,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.108,
+            1,
+            0.388
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.484,
+            1,
+            0.532
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.675,
+            1,
+            0.818
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q5bii": "1040"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q5bii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-circulatory-system"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 5(b)(ii)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.107,
+                1,
+                0.425
+              ]
+            },
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.45,
+                1,
+                0.564
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.618,
+                1,
+                0.694
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q5(b)(iii)",
+      "paperPage": 4,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.108,
+            1,
+            0.388
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.53,
+            1,
+            0.578
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.675,
+            1,
+            0.818
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q5biii": "1041"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q5biii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-circulatory-system"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 5(b)(iii)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.107,
+                1,
+                0.425
+              ]
+            },
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.45,
+                1,
+                0.564
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.618,
+                1,
+                0.694
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q5(c)",
+      "paperPage": 4,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.6,
+            1,
+            0.649
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.823,
+            1,
+            0.855
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q5c": "1042"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q5c"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 5(c)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.585,
+                1,
+                0.655
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.694,
+                1,
+                0.728
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q6(a)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.742,
+            1,
+            0.763
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.085,
+            1,
+            0.15
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q6a": "1043"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q6a"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 6(a)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.695,
+                1,
+                0.718
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.084,
+                1,
+                0.148
+              ]
+            }
+          ],
+          "marksPerRoute": 16
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q6(b)(i)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.766,
+            1,
+            0.852
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.147,
+            1,
+            0.382
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q6bi": "1044"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q6bi"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 6(b)(i)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.725,
+                1,
+                0.808
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.148,
+                1,
+                0.374
+              ]
+            }
+          ],
+          "marksPerRoute": 6,
+          "schemeNote": "In the Irish scheme, the roman numerals beside Q6(b) do not align with the four question headings. Follow the named headings: soil type, rotation, fertiliser regime and end use, each worth 4 + 2. Under fertiliser regime, the Irish text says high protein for malting barley; the English scheme says low protein. The original Irish wording is shown unchanged."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q6(b)(ii)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.766,
+            1,
+            0.852
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.147,
+            1,
+            0.382
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q6bii": "1045"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q6bii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 6(b)(ii)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.725,
+                1,
+                0.808
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.148,
+                1,
+                0.374
+              ]
+            }
+          ],
+          "marksPerRoute": 6,
+          "schemeNote": "In the Irish scheme, the roman numerals beside Q6(b) do not align with the four question headings. Follow the named headings: soil type, rotation, fertiliser regime and end use, each worth 4 + 2. Under fertiliser regime, the Irish text says high protein for malting barley; the English scheme says low protein. The original Irish wording is shown unchanged."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q6(b)(iii)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.766,
+            1,
+            0.852
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.147,
+            1,
+            0.382
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q6biii": "1046"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q6biii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 6(b)(iii)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.725,
+                1,
+                0.808
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.148,
+                1,
+                0.374
+              ]
+            }
+          ],
+          "marksPerRoute": 6,
+          "schemeNote": "In the Irish scheme, the roman numerals beside Q6(b) do not align with the four question headings. Follow the named headings: soil type, rotation, fertiliser regime and end use, each worth 4 + 2. Under fertiliser regime, the Irish text says high protein for malting barley; the English scheme says low protein. The original Irish wording is shown unchanged."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q6(b)(iv)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.766,
+            1,
+            0.852
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.147,
+            1,
+            0.382
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q6biv": "1047"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q6biv"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 6(b)(iv)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.725,
+                1,
+                0.808
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.148,
+                1,
+                0.374
+              ]
+            }
+          ],
+          "marksPerRoute": 6,
+          "schemeNote": "In the Irish scheme, the roman numerals beside Q6(b) do not align with the four question headings. Follow the named headings: soil type, rotation, fertiliser regime and end use, each worth 4 + 2. Under fertiliser regime, the Irish text says high protein for malting barley; the English scheme says low protein. The original Irish wording is shown unchanged."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q6(c)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.856,
+            1,
+            0.893
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.387,
+            1,
+            0.467
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q6c": "1048"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q6c"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology",
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 6(c)",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.815,
+                1,
+                0.869
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.374,
+                1,
+                0.422
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q7(a)(i)",
+      "paperPage": 5,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.03,
+            1,
+            0.114
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.083,
+            1,
+            0.236
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q7ai": "1049"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q7ai"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "schemeNote": "The historical scheme calls interphase a resting stage and includes the interval between meiotic divisions. Interphase is active: cells grow and replicate DNA before division. DNA does not replicate again between meiosis I and meiosis II.",
+      "scientificContext": {
+        "source": "https://openstax.org/books/biology/pages/11-1-the-process-of-meiosis",
+        "checkedAt": "2026-10-07",
+        "treatment": "Retain the historical quotation and tariff; explain the scientific distinction."
+      },
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 7(a)(i)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.046,
+                1,
+                0.131
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.447,
+                1,
+                0.556
+              ]
+            }
+          ],
+          "marksPerRoute": 4,
+          "schemeNote": "The historical scheme calls interphase a resting stage and includes the interval between meiotic divisions. Interphase is active: cells grow and replicate DNA before division. DNA does not replicate again between meiosis I and meiosis II."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q7(a)(ii)",
+      "paperPage": 5,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.03,
+            1,
+            0.114
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.083,
+            1,
+            0.236
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q7aii": "1050"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q7aii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 7(a)(ii)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.046,
+                1,
+                0.131
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.447,
+                1,
+                0.556
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q7(a)(iii)",
+      "paperPage": 5,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.03,
+            1,
+            0.114
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.083,
+            1,
+            0.236
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q7aiii": "1051"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q7aiii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 7(a)(iii)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.046,
+                1,
+                0.131
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.447,
+                1,
+                0.556
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q7(b) — cross",
+      "paperPage": 5,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.12,
+            1,
+            0.235
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.441
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q7b-cross": "1052"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q7b-cross"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 7(b) — crosáil",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.138,
+                1,
+                0.251
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.556,
+                1,
+                0.677
+              ]
+            }
+          ],
+          "marksPerRoute": 12,
+          "schemeNote": "This Irish edition uses C/c for tassel type and F/f for anther length. Its cross is CcFf × CcFf. The corresponding English edition uses H/h and L/l. The tasks have the same outcomes and tariffs; use the letters in the displayed edition."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q7(b)(i)",
+      "paperPage": 5,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.12,
+            1,
+            0.235
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.444,
+            1,
+            0.526
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q7bi": "1053"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q7bi"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 7(b)(i)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.138,
+                1,
+                0.251
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.556,
+                1,
+                0.758
+              ]
+            }
+          ],
+          "marksPerRoute": 4,
+          "schemeNote": "This Irish edition uses C/c for tassel type and F/f for anther length. Its cross is CcFf × CcFf. The corresponding English edition uses H/h and L/l. The tasks have the same outcomes and tariffs; use the letters in the displayed edition."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q7(b)(ii)",
+      "paperPage": 5,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.12,
+            1,
+            0.235
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.444,
+            1,
+            0.526
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q7bii": "1054"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q7bii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 7(b)(ii)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.138,
+                1,
+                0.251
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.556,
+                1,
+                0.758
+              ]
+            }
+          ],
+          "marksPerRoute": 4,
+          "schemeNote": "This Irish edition uses C/c for tassel type and F/f for anther length. Its cross is CcFf × CcFf. The corresponding English edition uses H/h and L/l. The tasks have the same outcomes and tariffs; use the letters in the displayed edition."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q7(b)(iii)",
+      "paperPage": 5,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.12,
+            1,
+            0.235
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.444,
+            1,
+            0.526
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q7biii": "1055"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q7biii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 7(b)(iii)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.138,
+                1,
+                0.251
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.556,
+                1,
+                0.758
+              ]
+            }
+          ],
+          "marksPerRoute": 4,
+          "schemeNote": "This Irish edition uses C/c for tassel type and F/f for anther length. Its cross is CcFf × CcFf. The corresponding English edition uses H/h and L/l. The tasks have the same outcomes and tariffs; use the letters in the displayed edition."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q7(c)",
+      "paperPage": 5,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.24,
+            1,
+            0.295
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.54,
+            1,
+            0.591
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q7c": "1056"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q7c"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "schemeNote": "The original paper calls roan coat colour incomplete dominance. Red and white hairs in roan cattle are described as codominance. The printed cross and its 12-mark tariff are retained.",
+      "scientificContext": {
+        "source": "https://extension.okstate.edu/fact-sheets/color-patterns-in-crossbred-beef-cattle",
+        "checkedAt": "2026-10-07",
+        "treatment": "Retain the historical quotation and tariff; explain the scientific distinction."
+      },
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 7(c)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.258,
+                1,
+                0.327
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.766,
+                1,
+                0.802
+              ]
+            }
+          ],
+          "marksPerRoute": 12,
+          "schemeNote": "The original paper calls roan coat colour incomplete dominance. Red and white hairs in roan cattle are described as codominance. The printed cross and its 12-mark tariff are retained."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q8(a)",
+      "paperPage": 5,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.36,
+            1,
+            0.431
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.11,
+            1,
+            0.197
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q8a": "1057"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q8a"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 8(a)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.428,
+                1,
+                0.467
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.084,
+                1,
+                0.182
+              ]
+            }
+          ],
+          "marksPerRoute": 24
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q8(b)(i)",
+      "paperPage": 5,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.435,
+            1,
+            0.505
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.197,
+            1,
+            0.28
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q8bi": "1058"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q8bi"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 8(b)(i)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.474,
+                1,
+                0.557
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.192,
+                1,
+                0.255
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q8(b)(ii)",
+      "paperPage": 5,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.435,
+            1,
+            0.505
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.28,
+            1,
+            0.308
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q8bii": "1059"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q8bii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 8(b)(ii)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.474,
+                1,
+                0.557
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.255,
+                1,
+                0.285
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q8(b)(iii)",
+      "paperPage": 5,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.435,
+            1,
+            0.505
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.308,
+            1,
+            0.356
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q8biii": "1060"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q8biii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 8(b)(iii)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.474,
+                1,
+                0.557
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.285,
+                1,
+                0.331
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q8(b)(iv)",
+      "paperPage": 5,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.435,
+            1,
+            0.505
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.356,
+            1,
+            0.507
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q8biv": "1061"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q8biv"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 8(b)(iv)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.474,
+                1,
+                0.557
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.331,
+                1,
+                0.485
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q8(c) — i, ii, iii",
+      "paperPage": 5,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.611
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.506,
+            1,
+            0.898
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q8c-route-i-ii-iii": "1062"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "ii",
+          "iii"
+        ]
+      },
+      "cardIds": [
+        "agsci-2011-hl-q8c-route-i-ii-iii"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-classification-of-animals-plants",
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "schemeNote": "The historical scheme includes “not needed for growth” for non-essential amino acids. These amino acids are needed to make proteins; non-essential means the body can synthesise them. The original scheme remains visible for this examination.",
+      "scientificContext": {
+        "source": "https://www.ncbi.nlm.nih.gov/books/NBK234922/",
+        "checkedAt": "2026-10-07",
+        "treatment": "Retain the historical quotation and tariff; explain the scientific distinction."
+      },
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 8(c) — i, ii, iii",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.564,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.495,
+                1,
+                0.895
+              ]
+            }
+          ],
+          "marksPerRoute": 24,
+          "schemeNote": "The historical scheme includes “not needed for growth” for non-essential amino acids. These amino acids are needed to make proteins; non-essential means the body can synthesise them. The original scheme remains visible for this examination."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q8(c) — i, ii, iv",
+      "paperPage": 5,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.611
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.506,
+            1,
+            0.898
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q8c-route-i-ii-iv": "1063"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "ii",
+          "iv"
+        ]
+      },
+      "cardIds": [
+        "agsci-2011-hl-q8c-route-i-ii-iv"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-classification-of-animals-plants",
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "schemeNote": "The historical scheme includes “not needed for growth” for non-essential amino acids. These amino acids are needed to make proteins; non-essential means the body can synthesise them. The original scheme remains visible for this examination.",
+      "scientificContext": {
+        "source": "https://www.ncbi.nlm.nih.gov/books/NBK234922/",
+        "checkedAt": "2026-10-07",
+        "treatment": "Retain the historical quotation and tariff; explain the scientific distinction."
+      },
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 8(c) — i, ii, iv",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.564,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.495,
+                1,
+                0.895
+              ]
+            }
+          ],
+          "marksPerRoute": 24,
+          "schemeNote": "The historical scheme includes “not needed for growth” for non-essential amino acids. These amino acids are needed to make proteins; non-essential means the body can synthesise them. The original scheme remains visible for this examination."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q8(c) — i, iii, iv",
+      "paperPage": 5,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.611
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.506,
+            1,
+            0.898
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q8c-route-i-iii-iv": "1064"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "iii",
+          "iv"
+        ]
+      },
+      "cardIds": [
+        "agsci-2011-hl-q8c-route-i-iii-iv"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "schemeNote": "The historical scheme includes “not needed for growth” for non-essential amino acids. These amino acids are needed to make proteins; non-essential means the body can synthesise them. The original scheme remains visible for this examination.",
+      "scientificContext": {
+        "source": "https://www.ncbi.nlm.nih.gov/books/NBK234922/",
+        "checkedAt": "2026-10-07",
+        "treatment": "Retain the historical quotation and tariff; explain the scientific distinction."
+      },
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 8(c) — i, iii, iv",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.564,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.495,
+                1,
+                0.895
+              ]
+            }
+          ],
+          "marksPerRoute": 24,
+          "schemeNote": "The historical scheme includes “not needed for growth” for non-essential amino acids. These amino acids are needed to make proteins; non-essential means the body can synthesise them. The original scheme remains visible for this examination."
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q8(c) — ii, iii, iv",
+      "paperPage": 5,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.611
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.506,
+            1,
+            0.898
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q8c-route-ii-iii-iv": "1065"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "ii",
+          "iii",
+          "iv"
+        ]
+      },
+      "cardIds": [
+        "agsci-2011-hl-q8c-route-ii-iii-iv"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants",
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 8(c) — ii, iii, iv",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.564,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.495,
+                1,
+                0.895
+              ]
+            }
+          ],
+          "marksPerRoute": 24
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q9(a)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.645,
+            1,
+            0.672
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.675,
+            1,
+            0.701
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.204
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q9a": "1066"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q9a"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 9(a)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.686,
+                1,
+                0.71
+              ]
+            },
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.717,
+                1,
+                0.74
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.097,
+                1,
+                0.178
+              ]
+            }
+          ],
+          "marksPerRoute": 12
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q9(b)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.645,
+            1,
+            0.672
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.705,
+            1,
+            0.731
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.234,
+            1,
+            0.347
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.75,
+            0.111,
+            0.96,
+            0.137
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q9b": "1067"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q9b"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics",
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 9(b)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.686,
+                1,
+                0.71
+              ]
+            },
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.747,
+                1,
+                0.77
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.188,
+                1,
+                0.282
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0.75,
+                0.097,
+                0.86,
+                0.115
+              ]
+            }
+          ],
+          "marksPerRoute": 12
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q9(c)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.645,
+            1,
+            0.672
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.735,
+            1,
+            0.761
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.35,
+            1,
+            0.429
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.75,
+            0.111,
+            0.96,
+            0.137
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q9c": "1068"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q9c"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 9(c)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.686,
+                1,
+                0.71
+              ]
+            },
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.777,
+                1,
+                0.8
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.282,
+                1,
+                0.343
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0.75,
+                0.097,
+                0.86,
+                0.115
+              ]
+            }
+          ],
+          "marksPerRoute": 12
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q9(d)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.645,
+            1,
+            0.672
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.765,
+            1,
+            0.791
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.431,
+            1,
+            0.528
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.75,
+            0.111,
+            0.96,
+            0.137
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q9d": "1069"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q9d"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles",
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 9(d)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.686,
+                1,
+                0.71
+              ]
+            },
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.807,
+                1,
+                0.83
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.342,
+                1,
+                0.434
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0.75,
+                0.097,
+                0.86,
+                0.115
+              ]
+            }
+          ],
+          "marksPerRoute": 12
+        }
+      ]
+    },
+    {
+      "questionRef": "2011 HL Q9(e)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.645,
+            1,
+            0.672
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.795,
+            1,
+            0.851
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.53,
+            1,
+            0.61
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.75,
+            0.111,
+            0.96,
+            0.137
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-hl-q9e": "1070"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "No finite response choice. Open named examples and scheme alternatives remain marking menus."
+      },
+      "cardIds": [
+        "agsci-2011-hl-q9e"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs"
+      ],
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published boundaries and tariffs checked; no automatic question-parser denominator.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024ALP000IV.pdf",
+          "label": "Ceist 9(e)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.686,
+                1,
+                0.71
+              ]
+            },
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.837,
+                1,
+                0.891
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.433,
+                1,
+                0.511
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0.75,
+                0.097,
+                0.86,
+                0.115
+              ]
+            }
+          ],
+          "marksPerRoute": 12
+        }
+      ]
     }
   ],
   "paperReviews": [
@@ -12046,8 +17614,7 @@
       },
       "independentBoundaryReview": "62 practice cards; all published tasks retained. Descending awards stay together. Internal finite choices use 2, 4 and 4 routes. Candidate examination totals must not sum all mutually exclusive routes.",
       "remaining": [
-        "Irish practice-task crop bindings",
-        "Phone/desktop runtime review",
+        "Full application phone/desktop runtime review",
         "Corpus-wide reconciliation"
       ]
     },
@@ -12497,6 +18064,273 @@
         "distinctPaperCropSets": 48,
         "distinctSchemeCropSets": 64,
         "evidence": "Every distinct crop rendered and visually inspected, including shared stems, figures, pooled tariffs and continuation pages. Clipped text and missing shared instructions corrected and re-rendered. Same practice identities as English; edition-specific schemes and source notes retained."
+      }
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "hashes": {
+        "exampapers": "19975eb5d04e868becd63819eb5a3325929f6c774cff8e6abd4b72a1d3fb4ed9",
+        "markingschemes": "9979d05e915b789dd55e9ac742066987f4b26c75820485b15b1436ed5d06e9ba"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "selectionDirectives": [
+        {
+          "id": "ec78d4ad8f7de622",
+          "page": 2,
+          "cue": "any six",
+          "context": "Page 2 of 8 1. Answer any six of the parts (a) – (j). (a) Compare the structure of the flowers of named examples from the Rosaceae and the Cruciferae families. (b) (i) What is meant by condition scoring in cows? (ii) Give the recommended condition scores for ",
+          "classification": "independent-task-selection",
+          "reason": "Q1 selects six of ten independently marked lettered parts. Every part is retained; (b), (g) and (h) split at fixed roman-part awards. No exam-submission bundles."
+        },
+        {
+          "id": "07570960ab2faac4",
+          "page": 3,
+          "cue": "any two",
+          "context": "ing of fodder roots to sheep. (48 marks) 4. Describe a laboratory or field experiment for any two of the following: (a) to determine the dry matter content of different potato varieties (b) to determine the hygienic quality of milk (c) to demonstrate soil flocculation (d) to demonstrate the effects of grazing on the botanical",
+          "classification": "independent-task-selection",
+          "reason": "Q4 selects two independently priced 24-mark experiments. All four are separate practice tasks; open methods are marking menus, not a finite printed pool."
+        },
+        {
+          "id": "2843749efe6a5ae7",
+          "page": 5,
+          "cue": "any two",
+          "context": "a cross to show how roan coat colour arises from homozygous parents. (48 marks) 8. Answer any two parts of (a), (b), (c). (a) Describe the husbandry practices involved in preparing a sow at the end of gestation for transfer from the dry-sow house to the farrowing house. (b) (i) Explain the meaning of the term B.O.D. (ii) Name",
+          "classification": "independent-task-selection",
+          "reason": "Q8 selects two 24-mark parts. All are retained, including the internal closed pool in (c)."
+        },
+        {
+          "id": "91da40e393d25b3c",
+          "page": 5,
+          "cue": "any three",
+          "context": "rategy for the named pollutant. (c) Highlight the main differences between the members of any three of the following pairs: (i) Essential and non-essential amino acids (ii) Annual and biennial plants (iii) Drainage and irrigation (iv) Eelworms and wireworms. (48 marks) 9. Give a scientific explanation for any four of the follow",
+          "classification": "closed",
+          "reason": "Q8(c) prints four comparison pairs and asks for three. All four combinations retain three complete eight-mark comparisons."
+        },
+        {
+          "id": "29f5b0a7725b0396",
+          "page": 5,
+          "cue": "any four",
+          "context": "d irrigation (iv) Eelworms and wireworms. (48 marks) 9. Give a scientific explanation for any four of the following: (a) The action of yeast in brewing and baking. (b) Progeny testing of A.I. bulls. (c) The use of systemic chemicals to control aphids. (d) Trace element deficiencies in crop production. (e) The fact that the cre",
+          "classification": "independent-task-selection",
+          "reason": "Q9 selects four independently marked twelve-mark explanations. All five are retained."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 1,
+          "wording": "SIX QUESTIONS TO BE ANSWERED",
+          "classification": "exam-selection",
+          "reason": "Outer exam selection; do not combine unrelated tasks into new cards."
+        },
+        {
+          "page": 3,
+          "wording": "OR Option Two",
+          "classification": "closed",
+          "reason": "Both Q3 options are retained with distinct addresses and their own task boundaries."
+        },
+        {
+          "page": 3,
+          "wording": "laboratory or field experiment",
+          "classification": "open",
+          "reason": "An experimental setting, not a finite list of experiments beyond the four separately priced parts."
+        },
+        {
+          "page": 5,
+          "wording": "Explain each of the following terms:",
+          "classification": "required-headings",
+          "reason": "Q7(a) requires all three terms, each separately awarded four marks; no choose-three route."
+        }
+      ],
+      "taskCountsByQuestion": {
+        "Q1": 13,
+        "Q2": 7,
+        "Q3 Option One": 5,
+        "Q3 Option Two": 6,
+        "Q4": 4,
+        "Q5": 7,
+        "Q6": 6,
+        "Q7": 8,
+        "Q8": 9,
+        "Q9": 5
+      },
+      "independentBoundaryReview": "67 base tasks, 70 finite routes. Q7(b) has 12 marks for the shared cross and three separate 4-mark ratios. Diagram labels remain one exercise. Q3 Option Two (c)(ii) has separately priced advantages and disadvantages.",
+      "remaining": [
+        "Full application navigation review",
+        "Corpus-wide reconciliation"
+      ]
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "hashes": {
+        "exampapers": "4dcb2bc61efb3cc1935b99a960d952d328755b9fcc1326cf234cdb8a7320d70f",
+        "markingschemes": "ed9678a1028e2a0cc6ab4dfe47b87c2d4d8f6a163196194e9a2f44d23570e1d8"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "selectionDirectives": [
+        {
+          "id": "ddb9da0d53cb49db",
+          "page": 2,
+          "cue": "Freagair",
+          "context": "Lch 2 de 8 1. Freagair sé pháirt ar bith as (a) – (j). (a) Déan comparáid idir struchtúr na mbláthanna de shamplaí ainmnithe as na finte Rosaceae agus Cruciferae. (b) (i) Céard a chiallaíonn bailscóráil maidir le ba? (ii) Tabhair na bailscóir a mholtar",
+          "classification": "independent-task-selection",
+          "reason": "Q1 selects six of ten lettered parts; all are retained with (b), (g) and (h) split at their fixed roman-part awards."
+        },
+        {
+          "id": "1c2016923410dbd5",
+          "page": 5,
+          "cue": "Freagair",
+          "context": "peáint cén chaoi a n-éiríonn cóta gríséadach ó thuismitheoirí homaisigeacha. (48 marc) 8. Freagair dhá cheann ar bith díobh seo a leanas (a), (b), (c). (a) Déan cur síos ar na cleachtais riartha a bhíonn i gceist agus cráin á hullmhú le haistriú ón teach cráin seisce gó dtí an teach breithe ag deireadh na tréimhse iompair. (b)",
+          "classification": "independent-task-selection",
+          "reason": "Q8 selects two independently priced 24-mark parts; all are retained. The internal Q8(c) choice expands separately."
+        },
+        {
+          "id": "a041d276a945e12b",
+          "page": 5,
+          "cue": "dhá cheann",
+          "context": "n chaoi a n-éiríonn cóta gríséadach ó thuismitheoirí homaisigeacha. (48 marc) 8. Freagair dhá cheann ar bith díobh seo a leanas (a), (b), (c). (a) Déan cur síos ar na cleachtais riartha a bhíonn i gceist agus cráin á hullmhú le haistriú ón teach cráin seisce gó dtí an teach breithe ag deireadh na tréimhse iompair. (b) (i) Mínigh",
+          "classification": "independent-task-selection",
+          "reason": "Second match inside the same Q8 outer selection, not another choice pool."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 1,
+          "wording": "SÉ CHEIST LE FREAGAIRT",
+          "classification": "exam-selection",
+          "reason": "Six whole examination questions, not combined practice responses."
+        },
+        {
+          "page": 3,
+          "wording": "NÓ Rogha a Dó",
+          "classification": "closed",
+          "reason": "Both Q3 options are retained with distinct task addresses."
+        },
+        {
+          "page": 3,
+          "wording": "haon dá cheann díobh seo a leanas",
+          "classification": "independent-task-selection",
+          "reason": "Q4 selects two separate 24-mark experiments; all four are available for practice."
+        },
+        {
+          "page": 3,
+          "wording": "saotharlainne nó páirce",
+          "classification": "open",
+          "reason": "Laboratory or field are experiment settings, not a finite printed pool of named methods."
+        },
+        {
+          "page": 5,
+          "wording": "Mínigh gach aon cheann de na téarmaí",
+          "classification": "required-headings",
+          "reason": "All three Q7(a) definitions are required, each worth four marks."
+        },
+        {
+          "page": 5,
+          "wording": "thrí cinn ar bith de na péirí",
+          "classification": "closed",
+          "reason": "Q8(c) selects three of four comparison pairs, yielding four complete 24-mark routes."
+        },
+        {
+          "page": 5,
+          "wording": "cheithre cinn ar bith díobh seo a leanas",
+          "classification": "independent-task-selection",
+          "reason": "Q9 selects four independent twelve-mark explanations; all five are retained."
+        }
+      ],
+      "translationParity": "All original pages visually inspected. The 67 base tasks, 70 routes and all published mark boundaries match the English edition. Source-specific answer ranges, numbering and genetic symbols are retained.",
+      "sourceNotes": [
+        {
+          "questionN": "1",
+          "questionRef": "Q1(b)(ii)",
+          "paperPage": 2,
+          "schemePage": 4,
+          "note": "The Irish scheme gives 2.5–3 for the dairy cow’s condition score at calving; the English scheme gives 2.5–3.5. Both give 2–3 at service. The original edition-specific ranges are preserved."
+        },
+        {
+          "questionN": "6",
+          "questionRef": "Q6(b)",
+          "paperPage": 4,
+          "schemePage": 8,
+          "note": "In the Irish scheme, the roman numerals beside Q6(b) do not align with the four question headings. Follow the named headings: soil type, rotation, fertiliser regime and end use, each worth 4 + 2. Under fertiliser regime, the Irish text says high protein for malting barley; the English scheme says low protein. The original Irish wording is shown unchanged."
+        },
+        {
+          "questionN": "7",
+          "questionRef": "Q7(b)",
+          "paperPage": 5,
+          "schemePage": 8,
+          "note": "This Irish edition uses C/c for tassel type and F/f for anther length. Its cross is CcFf × CcFf. The corresponding English edition uses H/h and L/l. The tasks have the same outcomes and tariffs; use the letters in the displayed edition."
+        }
+      ],
+      "remaining": [
+        "Independent Irish source census",
+        "Full application navigation review",
+        "Corpus-wide reconciliation"
+      ],
+      "practiceTaskCropReview": {
+        "status": "reviewed",
+        "taskBindings": 70,
+        "distinctPaperCropSets": 40,
+        "distinctSchemeCropSets": 53,
+        "evidence": "All distinct paper/scheme pairs rendered and visually inspected. Shared tariff columns, heart labels and genetic symbols retained. Final heart and ratio crop corrections re-rendered and inspected."
       }
     }
   ]

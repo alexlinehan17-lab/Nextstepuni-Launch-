@@ -640,7 +640,7 @@ const MarkRowView: React.FC<{
         aria-pressed={claimed}
         style={{
           width: '100%', textAlign: 'left', display: 'grid',
-          gridTemplateColumns: '20px 1fr auto', gap: 10, alignItems: 'start',
+          gridTemplateColumns: '20px minmax(0, 1fr) auto', gap: 10, alignItems: 'start',
           padding: '11px 12px', borderRadius: 12,
           border: `1.5px solid ${claimed ? SUCCESS : MUTED_BORDER}`,
           background: claimed ? SUCCESS_TINT : 'var(--mb-paper)',
@@ -672,7 +672,7 @@ const MarkRowView: React.FC<{
           )}
         </MotionSpan>
 
-        <span>
+        <span style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
           <span style={{ color: claimed ? SUCCESS_TEXT : INK_2 }}>
             {row.verbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
@@ -2306,7 +2306,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       // "false · false · false" name nothing; there the label is the content.
       .map(r => {
         const tail = r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim;
-        return (tail.trim().length <= 6 ? r.verbatim : tail).toLowerCase();
+        // Case is scientific content in genotypes and chemical symbols.
+        return tail.trim().length <= 6 ? r.verbatim : tail;
       });
   }, [assessmentCard, rowClaims]);
   /* Three names fit the band; beyond that the count carries it. Naming all six
@@ -2967,7 +2968,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           Select the points you actually got.
                         </p>
                         <p style={{ margin: '5px 0 0', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
-                          Tap every point that appeared in your answer. This gives you a mark-based suggestion; you can still choose your own grade below.
+                          {showsRowMarks(assessmentCard)
+                            ? 'Tap every point that appeared in your answer. This gives you a mark-based suggestion; you can still choose your own grade below.'
+                            : 'Check your answer against the criteria and marking instructions below, then choose your grade.'}
                         </p>
                       </div>
 
@@ -3005,21 +3008,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       )}
                       {assessmentCard.tariffModel.kind === 'questionTotal' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
-                          The paper prices this question at {assessmentCard.totalMarks} marks in total,
-                          but the scheme does not divide those marks between its parts — so no invented
-                          per-point values are shown.
+                          Use the marking instructions above to judge your answer against the {assessmentCard.totalMarks}-mark total.
                         </p>
                       )}
                       {assessmentCard.tariffModel.kind === 'bestNofParts' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                           Answer any {assessmentCard.tariffModel.answer} of these {assessmentCard.tariffModel.ofParts} —
                           {' '}{assessmentCard.tariffModel.perPart} marks each.
-                        </p>
-                      )}
-                      {assessmentCard.tariffModel.kind === 'questionTotal' && (
-                        <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
-                          The scheme prices this question as a whole — {assessmentCard.totalMarks} marks —
-                          without saying what each part is worth.
                         </p>
                       )}
                     </>
@@ -3158,7 +3153,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               {(
                 <MotionDiv key="grades" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.18 }}>
                   <p id="mark-bank-grade-guidance" style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
-                    {!schemeInteracted
+                    {isPointCard(assessmentCard) && assessmentCard.tariffModel.kind === 'questionTotal'
+                      ? <>Use the published criteria to judge your answer, then choose your grade.</>
+                      : !schemeInteracted
                       ? isRubricCard(assessmentCard)
                         ? <>No {rubricLabel} placement selected yet. Use the SEC grid above for a mark-based suggestion, or choose your own grade now.</>
                         : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
@@ -3175,7 +3172,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       360px hit area and makes the rail read as a toolbar. */}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 168px))', gap: 8 }}>
                     {(['missed', 'shaky', 'got'] as MarkBankGrade[]).map(g => {
-                      const isSuggested = schemeInteracted && g === suggested;
+                      const isSuggested = !(isPointCard(assessmentCard) && assessmentCard.tariffModel.kind === 'questionTotal') && schemeInteracted && g === suggested;
                       return (
                         <button
                           key={g}

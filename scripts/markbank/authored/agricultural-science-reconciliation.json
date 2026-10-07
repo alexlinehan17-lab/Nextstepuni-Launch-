@@ -1,0 +1,490 @@
+{
+  "status": "in-progress",
+  "shippedCardCount": 1093,
+  "reviewedRoutesChecked": 217,
+  "reviewedBatchIssues": [],
+  "papers": [
+    {
+      "year": 2010,
+      "level": "higher",
+      "expectedRoutes": 62,
+      "shippedRoutes": 62,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "expectedRoutes": 85,
+      "shippedRoutes": 85,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "expectedRoutes": 70,
+      "shippedRoutes": 70,
+      "missing": [],
+      "unmatched": []
+    }
+  ],
+  "independentCensusEditionsOpen": [
+    {
+      "year": 2010,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    }
+  ],
+  "limitation": "2010 Higher/Ordinary and 2011 Higher English boundaries and all 217 corresponding Atlas bindings reconciled exactly, plus 217 translated bindings. Remaining sitting boundaries and independent Irish censuses remain open. This partial result cannot establish corpus completeness."
+}

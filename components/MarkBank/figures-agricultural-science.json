@@ -100,5 +100,39 @@
       0.7
     ],
     "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-hl-paper-heart": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-hl-paper-heart.png",
+    "md5": "e7c3a633de3020ddf2df61f1de14d7b8",
+    "alt": "Original dissected mammalian-heart diagram with labels A, B, C, D, X and Y and their leader lines.",
+    "attribution": "SEC Agricultural Science 2011 Higher Level exampapers, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024ALP000EV.pdf",
+    "sourceSha256": "19975eb5d04e868becd63819eb5a3325929f6c774cff8e6abd4b72a1d3fb4ed9",
+    "pdfPage": 4,
+    "cropRect": [
+      0.177,
+      0.153,
+      0.56,
+      0.383
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-hl-scheme-p10-punnett": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-hl-scheme-p10-punnett.png",
+    "md5": "5c3a1312e3b1d4bcd4668cb82066cf13",
+    "alt": "Official four-by-four Punnett square for HhLl crossed with HhLl. Both parents form HL, Hl, hL and hl gametes; all sixteen offspring genotypes are shown.",
+    "attribution": "SEC Agricultural Science 2011 Higher Level markingschemes, PDF page 10 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2011/LC024ALP000EV.pdf",
+    "sourceSha256": "9979d05e915b789dd55e9ac742066987f4b26c75820485b15b1436ed5d06e9ba",
+    "pdfPage": 10,
+    "cropRect": [
+      0.25,
+      0.245,
+      0.774,
+      0.441
+    ],
+    "reviewedAt": "2026-10-07"
   }
 }

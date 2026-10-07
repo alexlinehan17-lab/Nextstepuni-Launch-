@@ -66,8 +66,10 @@ LETTERS = 'abcdefghijkl'
 def shipped_cards(subject):
     """[(id, questionRef)] straight out of the deck files that actually ship.
 
-    Split on the literal every emitted card opens with — "...base, kind:" —
-    and read the FIRST id in each chunk, which the emitter always writes
+    Split on the base spread every emitted card opens with. QA metadata and
+    the exam-year curriculum spread may occur before `kind`; requiring those
+    two properties to be adjacent silently discarded all reviewed additions.
+    Read the FIRST id in each chunk, which the emitter always writes
     before the rows. Scanning for every id: also caught the ROW ids ("r-3",
     "g-parent1") and paired each with the next card's citation, which
     invented five hundred phantom orphans in Business alone.
@@ -90,7 +92,7 @@ def shipped_cards(subject):
         if not os.path.exists(path):
             continue
         text = open(path, encoding='utf-8').read()
-        for chunk in re.split(r'\.\.\.base,\s*kind:', text)[1:]:
+        for chunk in re.split(r'^\s*\.\.\.base,', text, flags=re.M)[1:]:
             cid = re.search(r'\bid: "([^"]+)"', chunk)
             ref = re.search(r'questionRef: "([^"]+)"', chunk)
             if cid and ref:

@@ -304,44 +304,49 @@
         "sha256": "9979d05e915b789dd55e9ac742066987f4b26c75820485b15b1436ed5d06e9ba",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 70,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "ec78d4ad8f7de622",
           "page": 2,
           "cue": "any six",
           "context": "Page 2 of 8 1. Answer any six of the parts (a) – (j). (a) Compare the structure of the flowers of named examples from the Rosaceae and the Cruciferae families. (b) (i) What is meant by condition scoring in cows? (ii) Give the recommended condition scores for ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1 selects six of ten independently marked lettered parts. Every part is retained; (b), (g) and (h) split at fixed roman-part awards. No exam-submission bundles."
         },
         {
           "id": "07570960ab2faac4",
           "page": 3,
           "cue": "any two",
           "context": "ing of fodder roots to sheep. (48 marks) 4. Describe a laboratory or field experiment for any two of the following: (a) to determine the dry matter content of different potato varieties (b) to determine the hygienic quality of milk (c) to demonstrate soil flocculation (d) to demonstrate the effects of grazing on the botanical",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4 selects two independently priced 24-mark experiments. All four are separate practice tasks; open methods are marking menus, not a finite printed pool."
         },
         {
           "id": "2843749efe6a5ae7",
           "page": 5,
           "cue": "any two",
           "context": "a cross to show how roan coat colour arises from homozygous parents. (48 marks) 8. Answer any two parts of (a), (b), (c). (a) Describe the husbandry practices involved in preparing a sow at the end of gestation for transfer from the dry-sow house to the farrowing house. (b) (i) Explain the meaning of the term B.O.D. (ii) Name",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8 selects two 24-mark parts. All are retained, including the internal closed pool in (c)."
         },
         {
           "id": "91da40e393d25b3c",
           "page": 5,
           "cue": "any three",
           "context": "rategy for the named pollutant. (c) Highlight the main differences between the members of any three of the following pairs: (i) Essential and non-essential amino acids (ii) Annual and biennial plants (iii) Drainage and irrigation (iv) Eelworms and wireworms. (48 marks) 9. Give a scientific explanation for any four of the follow",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c) prints four comparison pairs and asks for three. All four combinations retain three complete eight-mark comparisons."
         },
         {
           "id": "29f5b0a7725b0396",
           "page": 5,
           "cue": "any four",
           "context": "d irrigation (iv) Eelworms and wireworms. (48 marks) 9. Give a scientific explanation for any four of the following: (a) The action of yeast in brewing and baking. (b) Progeny testing of A.I. bulls. (c) The use of systemic chemicals to control aphids. (d) Trace element deficiencies in crop production. (e) The fact that the cre",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 selects four independently marked twelve-mark explanations. All five are retained."
         }
       ]
     },
@@ -360,30 +365,33 @@
         "sha256": "ed9678a1028e2a0cc6ab4dfe47b87c2d4d8f6a163196194e9a2f44d23570e1d8",
         "pages": 12
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 70,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "ddb9da0d53cb49db",
           "page": 2,
           "cue": "Freagair",
           "context": "Lch 2 de 8 1. Freagair sé pháirt ar bith as (a) – (j). (a) Déan comparáid idir struchtúr na mbláthanna de shamplaí ainmnithe as na finte Rosaceae agus Cruciferae. (b) (i) Céard a chiallaíonn bailscóráil maidir le ba? (ii) Tabhair na bailscóir a mholtar",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1 selects six of ten lettered parts; all are retained with (b), (g) and (h) split at their fixed roman-part awards."
         },
         {
           "id": "1c2016923410dbd5",
           "page": 5,
           "cue": "Freagair",
           "context": "peáint cén chaoi a n-éiríonn cóta gríséadach ó thuismitheoirí homaisigeacha. (48 marc) 8. Freagair dhá cheann ar bith díobh seo a leanas (a), (b), (c). (a) Déan cur síos ar na cleachtais riartha a bhíonn i gceist agus cráin á hullmhú le haistriú ón teach cráin seisce gó dtí an teach breithe ag deireadh na tréimhse iompair. (b)",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8 selects two independently priced 24-mark parts; all are retained. The internal Q8(c) choice expands separately."
         },
         {
           "id": "a041d276a945e12b",
           "page": 5,
           "cue": "dhá cheann",
           "context": "n chaoi a n-éiríonn cóta gríséadach ó thuismitheoirí homaisigeacha. (48 marc) 8. Freagair dhá cheann ar bith díobh seo a leanas (a), (b), (c). (a) Déan cur síos ar na cleachtais riartha a bhíonn i gceist agus cráin á hullmhú le haistriú ón teach cráin seisce gó dtí an teach breithe ag deireadh na tréimhse iompair. (b) (i) Mínigh",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Second match inside the same Q8 outer selection, not another choice pool."
         }
       ]
     },

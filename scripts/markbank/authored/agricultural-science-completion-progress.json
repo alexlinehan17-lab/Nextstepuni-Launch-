@@ -12,17 +12,21 @@
       2010,
       2026
     ],
-    "selectionCuesPendingClassification": 733,
-    "fullPaperAndSchemeSweepsCompleted": 4,
-    "distinctEnglishPaperSweepsCompleted": 2,
-    "irishEditionComparisonsCompleted": 2
+    "selectionCuesPendingClassification": 725,
+    "fullPaperAndSchemeSweepsCompleted": 6,
+    "distinctEnglishPaperSweepsCompleted": 3,
+    "irishEditionComparisonsCompleted": 3,
+    "independentSourceCensusEditionsCompleted": 3,
+    "independentSourceCensusEditionsOpen": 65
   },
   "completedBatch": {
     "reviewedPapers": [
       "2010 Higher English: 8 paper pages and 14 scheme pages",
       "2010 Higher Irish: 8 paper pages and 12 scheme pages",
       "2010 Ordinary English: 12 paper pages and 14 scheme pages",
-      "2010 Ordinary Irish: 12 paper pages and 13 scheme pages"
+      "2010 Ordinary Irish: 12 paper pages and 13 scheme pages",
+      "2011 Higher English: 8 paper pages and 16 scheme pages",
+      "2011 Higher Irish: 8 paper pages and 12 scheme pages"
     ],
     "previousReviewedTasks": [
       "2022 OL Q2(b)(ii)",
@@ -30,17 +34,16 @@
       "2023 HL Q18(a)(i)",
       "2025 OL Q8(b)"
     ],
-    "addedMarkBankCards": 154,
-    "addedThisBatch": 0,
+    "addedMarkBankCards": 224,
+    "addedThisBatch": 70,
     "correctedMarkBankCards": 1,
-    "markBankCardsNow": 1023,
-    "higherCards": 504,
+    "markBankCardsNow": 1093,
+    "higherCards": 574,
     "ordinaryCards": 519,
     "originalCardIdsPreserved": 869,
-    "atlasPracticeCardsAdded": 155,
-    "atlasCardsNow": 613,
-    "priorAnchorsPreservedThisBatch": 22,
-    "oldWholeQuestionAnchorsUnchanged": 63,
+    "atlasPracticeCardsAdded": 225,
+    "atlasCardsNow": 683,
+    "priorAnchorsPreservedThisBatch": 18,
     "obsoleteExclusionsResolved": 4,
     "legacyRoutes": {
       "disease": 2,
@@ -53,22 +56,40 @@
       "plant cell",
       "sheep heart",
       "cow reproductive system",
-      "mitosis metaphase"
+      "mitosis metaphase",
+      "2011 mammalian heart",
+      "2011 maize Punnett square"
     ],
-    "curriculum": "2010 cards resolve the existing registry by examination year; current practice-topic filters remain separate. Mixed tasks are discoverable under their additional assessed topics.",
+    "curriculum": "Reviewed legacy cards resolve the existing registry by examination year. Added the SEC-derived Higher circulatory-system Atlas topic, crosswalked to the registered Animal Physiology node. Mixed tasks retain all assessed topics.",
     "priorAuthoredCardsUnchangedThisBatch": 1023,
-    "editionDiscrepancies": "Irish Higher D/d versus B/b and rolled versus unrolled barley result; Irish Ordinary chloroplast/chlorophyll wording, pasture-method instructions, Q9(f) and Q12 tariffs, and C/c versus E/e. Notes accompany the parent and relevant task schemes. The Irish Q9(f) and Q12(d)(ii) joins retain 20 marks; English cards retain 18.",
-    "translatedAtlasPracticeBindings": 147
+    "editionDiscrepancies": "Irish Higher D/d versus B/b and rolled versus unrolled barley result; Irish Ordinary chloroplast/chlorophyll wording, pasture-method instructions, Q9(f) and Q12 tariffs, and C/c versus E/e. Notes accompany the parent and relevant task schemes. The Irish Q9(f) and Q12(d)(ii) joins retain 20 marks; English cards retain 18. 2011 Irish: calving score 2.5–3 versus English 2.5–3.5; misaligned barley heading numerals and high-versus-low malting protein wording; C/c and F/f maize symbols versus H/h and L/l. Relevant parent/task notes preserve original sources.",
+    "translatedAtlasPracticeBindings": 217,
+    "originalWholeQuestionIdentitiesRetained": 458,
+    "independentReconciliation": {
+      "reviewedEnglishRoutes": 217,
+      "translatedBindings": 217,
+      "reviewedBatchIssues": 0,
+      "remainingIndependentCensusEditions": 65,
+      "scope": "2010 Higher, 2010 Ordinary, 2011 Higher. Irish task parity and crop reviews do not silently close the separate independent census queue."
+    },
+    "readerCorrections": [
+      "Deck census now reads cards with QA/curriculum spreads between base and kind.",
+      "Long scheme text wraps inside phone marking controls.",
+      "Genotype and chemical-symbol case is retained in unclaimed summaries.",
+      "Question-total criteria use student judgement and do not invent automatic numeric grade suggestions."
+    ]
   },
   "verification": {
-    "targetedTestsPassed": 156,
+    "targetedTestsPassed": 225,
     "sourceReaderOpenCloseTestPassed": true,
-    "renderedCropReview": "2010 Ordinary: all 38 distinct paper crops and 61 distinct scheme crops inspected and corrected, plus 4 original diagram images. Prior 2010 Higher 49 crop pairs and 2 solution images retained. Every new Ordinary marking claim matches its specific cropped scheme text. Irish Higher: all 43 distinct paper and 44 scheme crop sets inspected. Irish Ordinary: all 48 paper and 64 scheme crop sets inspected. Final fixes re-rendered and inspected.",
-    "cardBuild": "1023 built, zero dropped",
+    "renderedCropReview": "2010 Ordinary: all 38 distinct paper crops and 61 distinct scheme crops inspected and corrected, plus 4 original diagram images. Prior 2010 Higher 49 crop pairs and 2 solution images retained. Every new Ordinary marking claim matches its specific cropped scheme text. Irish Higher: all 43 distinct paper and 44 scheme crop sets inspected. Irish Ordinary: all 48 paper and 64 scheme crop sets inspected. Final fixes re-rendered and inspected. 2011 Higher: all 55 distinct English paper/scheme pairs and all 53 distinct Irish pairs inspected. Irish bindings comprise 40 paper crop sets and 53 scheme crop sets; final heart and ratio crop corrections re-rendered. Both new source images inspected.",
+    "cardBuild": "1093 built, zero dropped",
     "generationChecks": [
       "agricultural_science_completion.py --check",
       "agricultural_science_atlas.py --check",
-      "agricultural_science_inventory.py --check"
+      "agricultural_science_inventory.py --check",
+      "agricultural_science_census.py --check",
+      "agricultural_science_reconcile.py --write --check-reviewed"
     ],
     "testTypecheck": "Only the same 3 pre-existing programmeAnalytics errors at programmeAnalyticsClient.test.ts:32/56 and programmeAnalytics.ts:50; no new errors.",
     "applicationTypecheck": "Passed",
@@ -87,17 +108,28 @@
       "pageErrors": 0,
       "scope": "Actual VaultQuestionCard and PDF.js with the original local SEC PDFs. Nine representative tasks at each width: paper and scheme canvas counts, nonblank crops, no canvas overflow, source notes shown only after reveal and hidden again. All nine phone screenshots inspected; desktop genetics and pigment notes also inspected.",
       "limitation": "Isolated component harness; full application reader navigation and Mark Bank sessions remain to be checked. Phone PDF thumbnails are small; verify full-reader zoom and return before the final corpus sign-off."
-    }
+    },
+    "currentBatchRuntimeQA": {
+      "casesPassed": 32,
+      "viewportWidths": [
+        1200,
+        390
+      ],
+      "pageErrors": 0,
+      "scope": "Actual VaultQuestionCard, Viewer, SessionScreen and PDF.js in an integrated component harness, with original local SEC PDFs. English/2010 controls: 16 cases; new Irish 2011 controls: 16 cases. Full-reader zoom, paper/scheme toggle, close and selection return; scheme-note reveal/hide; Mark Bank answer-route selection and reveal; no marking-button overflow. Representative phone and desktop screenshots inspected.",
+      "limitation": "This checks the production components together; signed-in full-application navigation remains open."
+    },
+    "frozenCoverageRatchets": "The Agricultural Science coverage count/hash assertions remain intentionally frozen at the original 869-card baseline until the entire independent corpus reconciliation is zero-open/zero-orphan. The citation grammar check passes."
   },
   "remaining": [
-    "Independently sweep the remaining 32 English papers and matching schemes; compare the remaining 32 Irish editions. Four complete edition sweeps are recorded for 2010; this does not establish corpus-wide completeness.",
-    "Author 2011–2020 and 2026 tasks; recheck all 2021–2025 boundaries, wording, marks, source context, topic assignments and finite choices.",
-    "Classify all 733 pending raw selection directives, with mechanical expansion of genuine closed pools and written reasons for non-expansions.",
-    "Repair the generic legacy-paper census and reconcile the manual 2010 Higher and Ordinary task ledgers. Original parser flags and the 2021 OL Q17 orphan candidates remain; option-aware task joins are needed.",
-    "Extend reviewed Mark Bank/Topic Atlas parity through the rest of the corpus and preserve all existing identities and crops.",
-    "Perform phone/desktop runtime QA of reviewed cards, figures, source readers, marking variants and source notes.",
-    "Keep preservation hashes and coverage baseline frozen until the independent sweep, zero-open/zero-orphan reconciliation and regression gates pass.",
-    "Review integration with the other terminals. Changes remain on the isolated branch; nothing is merged or published."
+    "Independently sweep the remaining 31 English papers and matching schemes; compare the remaining 31 Irish editions. Six complete edition sweeps do not establish corpus-wide completeness.",
+    "Author 2011 Ordinary, 2012–2020 and 2026 tasks; recheck every 2021–2025 boundary, stem, tariff, figure, topic and finite choice.",
+    "Classify all 725 pending raw selection directives. Expand genuine closed pools mechanically and retain written reasons for non-expansions.",
+    "Extend the independent source census beyond the three reviewed English editions, including independent Irish denominators. Resolve the generic parser’s 60 flags and legacy option/shared-award mismatches; do not treat its percentages as completion evidence.",
+    "Extend exact Mark Bank/Topic Atlas reconciliation through every remaining sitting, including modern orphan candidates, while preserving all existing identities and crops.",
+    "Check signed-in full-application navigation as well as the component reader/session QA already completed.",
+    "Keep coverage and original preservation baselines frozen until the whole-corpus zero-open/zero-orphan reconciliation and regression gates pass.",
+    "Review integration with other terminals. Changes remain on the isolated branch; nothing is merged or published."
   ],
-  "nextAction": "Reconcile 2010 Higher and Ordinary manual task ledgers with an independent, option-aware source census; verify full-reader zoom/return and Mark Bank sessions, then independently sweep 2011 Higher. Keep the full goal active and original preservation hashes frozen."
+  "nextAction": "Independently sweep 2011 Ordinary English paper and scheme, transcribe its task/selection denominator, author all routes and link them to Topic Atlas, then compare the Irish edition. Keep the full goal active; the 2011 Higher checkpoint is not corpus completion."
 }

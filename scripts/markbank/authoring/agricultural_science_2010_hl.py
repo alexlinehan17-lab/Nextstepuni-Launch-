@@ -85,7 +85,7 @@ def paper_review():
         'supplementarySelections':[{'page':p,'wording':w,'classification':k,'reason':r} for p,w,k,r in supplementary],
         'taskCountsByQuestion':{'Q1':11,'Q2':3,'Q3 Option One':6,'Q3 Option Two':7,'Q4':4,'Q5':5,'Q6':5,'Q7':10,'Q8':6,'Q9':5},
         'independentBoundaryReview':'62 practice cards; all published tasks retained. Descending awards stay together. Internal finite choices use 2, 4 and 4 routes. Candidate examination totals must not sum all mutually exclusive routes.',
-        'remaining':['Irish practice-task crop bindings','Phone/desktop runtime review','Corpus-wide reconciliation'],
+        'remaining':['Full application phone/desktop runtime review','Corpus-wide reconciliation'],
     }
 
 

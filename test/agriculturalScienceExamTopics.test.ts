@@ -20,6 +20,7 @@ import {
 
 const higherLabels = [
   'Animal Diseases',
+  'Animal Physiology - Circulatory System',
   'Animal Physiology - Digestive System',
   'Animal Physiology - Reproductive Systems',
   'Beef Cattle',
@@ -72,12 +73,12 @@ describe('Agricultural Science exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('agricultural-science')!;
   const baseline = agriculturalScienceBaselineJson as Baseline;
 
-  it('pins the exact 19 Higher and 16 Ordinary reference topics', () => {
+  it('retains the reference topics and adds the SEC-derived Higher circulatory-system topic', () => {
     expect(taxonomy).not.toBeNull();
     expect(taxonomy.groups.map(group => group.label)).toEqual(['Higher Level', 'Ordinary Level']);
     expect(taxonomy.topics.filter(topic => topic.level === 'higher').map(topic => topic.label)).toEqual(higherLabels);
     expect(taxonomy.topics.filter(topic => topic.level === 'ordinary').map(topic => topic.label)).toEqual(ordinaryLabels);
-    expect(topicsForSubject('agricultural-science')).toHaveLength(35);
+    expect(topicsForSubject('agricultural-science')).toHaveLength(36);
   });
 
   it('crosswalks every browse topic to existing official-curriculum nodes', () => {
@@ -157,8 +158,8 @@ describe('Agricultural Science exam-topic registry', () => {
 
   it('adds the previously untagged anchored papers without inflating translations', () => {
     expect(subjectAtlasStats('agricultural-science')).toMatchObject({
-      questions: 458 + 155,
-      topics: 35,
+      questions: 458 + 225,
+      topics: 36,
       yearMin: 2010,
       yearMax: 2026,
     });

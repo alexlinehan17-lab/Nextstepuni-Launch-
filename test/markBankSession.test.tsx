@@ -884,10 +884,33 @@ describe('grading', () => {
     expect(screen.getByRole('button', { name: 'Shaky' })).toHaveAttribute('data-suggested');
   });
 
+  test('preserves dominant and recessive allele symbols in the unclaimed-points summary', () => {
+    renderSession([card({ totalMarks: 2, rows: [row({ verbatim: 'HhLl', marks: 2 })] })]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    const strip = screen.getByText(/Not claimed yet/i).parentElement!;
+    expect(strip).toHaveTextContent('HhLl');
+    expect(strip).not.toHaveTextContent('hhll');
+  });
+
   test('says the decision is the student\'s', () => {
     renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByText(/You decide\. Tap any of the three\./)).toBeInTheDocument();
+  });
+
+  test('leaves a question-total grade to the student when checkboxes cannot reproduce the published bands', () => {
+    renderSession([card({
+      tariffModel: { kind: 'questionTotal' }, totalMarks: 8,
+      rows: [row({ kind: 'criterion', marks: null, verbatim: 'Diagram: 4, 2 or 0; four labels at one mark each.' })],
+    })]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    fireEvent.click(screen.getByRole('button', { name: /I had them all/i }));
+    expect(screen.getByText(/Use the published criteria to judge your answer/)).toBeInTheDocument();
+    expect(screen.queryByText(/that looks like/i)).not.toBeInTheDocument();
+    for (const label of ['Missed it', 'Shaky', 'Got it']) {
+      expect(screen.getByRole('button', { name: label })).not.toHaveAttribute('data-suggested');
+      expect(screen.getByRole('button', { name: label })).toBeEnabled();
+    }
   });
 
   test('recommends point selection without blocking a student who chooses Got it', () => {
