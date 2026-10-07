@@ -1,0 +1,1300 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2024,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "single",
+  "paperFileid": "LC003BLP000EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "a886180db7838c215bc02331bda7b2fd63a05cf6e0823a26fb09abb45e4bc637",
+  "schemeSha256": "ad568384c881bf0bece817a006fb9e88551c4c1e6581c45713993917436d7e71",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 32 paper pages and all 24 scheme pages; task boundaries and scales cross-checked against every detailed marking block and the summary on scheme page 5.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 30,
+    "8": 30,
+    "9": 45,
+    "10": 45,
+    "11": 45
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5,
+    6
+  ],
+  "sourceNotes": [
+    "All 38 published marking units retained. Q8(a)(i)–(iii), Q10(a)(i)–(iii), Q11(a)(i)–(iii) and Q11(d)(i)–(iii) each share one scale.",
+    "2024 Foundation credit bands are transcribed from this scheme, including 15D=(0,3,5,7,15) and 20D=(0,6,8,10,20).",
+    "The enlargement diagram in Q8(a) uses a labelled unit grid. Lengths are read from grid units rather than the physical display size."
+  ],
+  "cards": [
+    {
+      "id": "maths-2024-fl-q1-a",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        15
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Darek wants to hang wallpaper in some rooms in his house. He has estimated that he will need 10 rolls of wallpaper. A single roll of wallpaper costs €14·50.",
+      "questionText": "(i) Find the cost of 10 rolls of wallpaper. (ii) Darek can also buy wallpaper in packs of 5 rolls. One pack of five rolls costs €65. Find how much Darek will save if he buys the 10 rolls of wallpaper in packs of 5 instead of single rolls of wallpaper.",
+      "solutionQuotes": [
+        "14 · 50 × 10 = 145",
+        "145 − 130 = [€]15"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q1-b",
+      "printedParts": [
+        "Q1(b)(i)",
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        15
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "",
+      "questionText": "(i) On Monday Gráinne drove 40 km at 80 km/hour. Find how long it took Gráinne to drive this distance. (ii) On Tuesday Gráinne drove 190 km. It took her 2 hours to drive this distance. Calculate her average speed in km/hour.",
+      "solutionQuotes": [
+        "0 · 5 [hours] or 30 mins",
+        "95 [km/hour]"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Orla is playing a game. In this game she picks a counter at random from four counters: Blue (B), Yellow (Y), Red (R) or Purple (P), and flips an unbiased coin and gets heads (H) or tails (T).",
+      "questionText": "Complete the table below to list all the possible outcomes. Two are already done for you. For example, BH means that Orla picks a blue counter and gets heads on the coin.",
+      "solutionQuotes": [
+        "1 to 3 correct outcomes",
+        "4 or 5 correct outcomes"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Orla is playing a game. In this game she picks a counter at random from four counters: Blue (B), Yellow (Y), Red (R) or Purple (P), and flips an unbiased coin and gets heads (H) or tails (T). Each outcome in the table is equally likely.",
+      "questionText": "What is the probability that the outcome of the game is RT? (That is, that a red counter is picked and tails is the result of flipping the coin.)",
+      "solutionQuotes": [
+        "Number of favourable outcomes correct",
+        "Total number of outcomes correct"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q2-b",
+      "printedParts": [
+        "Q2(b)(i)",
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        15
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "A cinema offers four different flavours of popcorn: Toffee, Salty, Plain, and Sweet. The pie chart below shows the different flavours of popcorn that people bought. The size of three of the angles are shown in the diagram above.",
+      "questionText": "(i) Work out the size of the angle for Toffee. Show your working out. (ii) 30 people bought Plain popcorn. Work out how many people bought Sweet popcorn.",
+      "solutionQuotes": [
+        "360 − (180 + 54 + 48) = 78"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Ethan bought a car for €40 000 at the start of 2018. On the diagram below, the line shows how the value of the car has decreased over 6 years, from the start of 2018 (t = 0) to the start of 2024 (t = 6). The value of the car is measured in thousands of euro.",
+      "questionText": "Use the graph to estimate the value of the car at the start of 2020 (t = 2).",
+      "solutionQuotes": [
+        "[€]34 000"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q3-b-i-ii",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        15
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Ethan bought a car for €40 000 at the start of 2018. On the diagram below, the line shows how the value of the car has decreased over 6 years, from the start of 2018 (t = 0) to the start of 2024 (t = 6). The value of the car is measured in thousands of euro. Ethan also bought a site (a plot of land) at the start of 2018 for €24 000. The site has increased in value by €1000 each year since 2018.",
+      "questionText": "(i) Complete the table below to show the value of the site, in thousands of euro. (ii) Use the values from the table above to draw a graph of the value of the site on the diagram on the previous page, from t = 0 to t = 6, for t ∈ ℝ.",
+      "solutionQuotes": [
+        "1 correct entry in table"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q3-b-iii",
+      "printedParts": [
+        "Q3(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Ethan bought a car for €40 000 at the start of 2018. On the diagram below, the line shows how the value of the car has decreased over 6 years, from the start of 2018 (t = 0) to the start of 2024 (t = 6). The value of the car is measured in thousands of euro. Ethan also bought a site (a plot of land) at the start of 2018 for €24 000. The site has increased in value by €1000 each year since 2018.",
+      "questionText": "After how many years (value of t) do the car and the site have the same value? Show your work on the diagram on the previous page.",
+      "solutionQuotes": [
+        "Relevant indication on graph",
+        "28000"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q3-b-iv",
+      "printedParts": [
+        "Q3(b)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Ethan bought a site at the start of 2018 for €24 000. Its value has increased by €1000 each year since 2018. The numbers in the table in part (b)(i) follow a pattern, where V is the value of the site, in thousands, and t is the number of years after it was bought.",
+      "questionText": "Which one of the following formulae shows the pattern in the table? Give a reason for your answer. Tick one box only: V = 24 + t; V = 24 − t; V = 30 + t.",
+      "solutionQuotes": [
+        "Shows formula works for 2 values"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q4-a",
+      "printedParts": [
+        "Q4(a)(i)",
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Molly is holding auditions for the school musical. In total, 6 boys and 5 girls auditioned. All students have an equal chance of getting the lead role.",
+      "questionText": "(i) What is the probability that a boy will get the lead role? (ii) 2 of the boys were from junior cycle and 3 of the girls were from junior cycle. All other students were from senior cycle. How many senior cycle students auditioned?",
+      "solutionQuotes": [
+        "11 − (3 + 2) = 6"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q4-b",
+      "printedParts": [
+        "Q4(b)(i)",
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The ages (in years) of the boys who auditioned are given below: 15, 16, 17, 14, 17, 17.",
+      "questionText": "(i) Find the mode of the data. (ii) Find the mean of the data.",
+      "solutionQuotes": [
+        "15 + 16 + 17 + 14 + 17 + 17"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15B",
+      "permittedMarks": [
+        0,
+        5,
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Molly wrote out the ages of the girls who auditioned and circled the number in the middle as shown below: 17, 16, 15 (circled), 13, 16. Molly says the median is 15.",
+      "questionText": "Is Molly correct? Give a reason for your answer. Tick one box only: Yes or No.",
+      "solutionQuotes": [
+        "The numbers are not ranked",
+        "The median is 16"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Amira and Kevin did a survey. They wrote down the ages in years of all the people under 50 living on their street. The results are shown in the table below. Age (years): 0 − 10, 10 − 20, 20 − 30, 30 − 40, 40 − 50. Number of people: 12, 16, 14, 20, 18, respectively. (Note: 10 − 20 means 10 years or more, but less than 20 years, and so on.)",
+      "questionText": "Complete the histogram below to show the information in the table. One bar has been done for you.",
+      "solutionQuotes": [
+        "One correct interval graphed",
+        "Two or three correct intervals graphed"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q5-a-ii-iii",
+      "printedParts": [
+        "Q5(a)(ii)",
+        "Q5(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Amira and Kevin did a survey. They wrote down the ages in years of all the people under 50 living on their street. The results are shown in the table below. Age (years): 0 − 10, 10 − 20, 20 − 30, 30 − 40, 40 − 50. Number of people: 12, 16, 14, 20, 18, respectively. (Note: 10 − 20 means 10 years or more, but less than 20 years, and so on.)",
+      "questionText": "(ii) Find the total number of people under 50 living on the street. (iii) What is the greatest number of people that could be under 18 years old?",
+      "solutionQuotes": [
+        "12 + 16 + 14 + 20 + 18 = 80",
+        "12 + 16 = 28"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q5-a-iv",
+      "printedParts": [
+        "Q5(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Amira and Kevin did a survey. They wrote down the ages in years of all the people under 50 living on their street. The results are shown in the table below. Age (years): 0 − 10, 10 − 20, 20 − 30, 30 − 40, 40 − 50. Number of people: 12, 16, 14, 20, 18, respectively. (Note: 10 − 20 means 10 years or more, but less than 20 years, and so on.)",
+      "questionText": "Work out the percentage of people from the survey that are 30 years old or older.",
+      "solutionQuotes": [
+        "Some correct work with percentages"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Amira and Kevin started collecting their data at 7:30 p.m. They spent 1 hour 45 minutes collecting the data.",
+      "questionText": "At what time did they finish?",
+      "solutionQuotes": [
+        "7: 30 + 1: 45 = 9: 15 [pm]"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Ciara is redesigning her bedroom. Her bedroom floor is a rectangle with a length of 4 m and a width of 2·8 m.",
+      "questionText": "Find the area of Ciara’s bedroom floor, in m².",
+      "solutionQuotes": [
+        "4 × 2 · 8 = 11 · 2"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Ciara draws the scaled co-ordinate diagram of her bedroom shown below. Some of her furniture is shown in the diagram. The door opening is also shown.",
+      "questionText": "Write down the co-ordinates of the point A from the diagram.",
+      "solutionQuotes": [
+        "A = (14, 2)"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "Ciara draws the scaled co-ordinate diagram of her bedroom shown below. Some of her furniture is shown in the diagram. The door opening is also shown. Ciara’s bed is a rectangle which is 5 units wide and 10 units long.",
+      "questionText": "Draw the bed in a position on the diagram on the previous page so that it does not overlap with any of the given furniture or with the door opening in the room.",
+      "solutionQuotes": [
+        "Rectangle constructed with two correct sides, that is, 5 units or 10 units"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Ciara draws the scaled co-ordinate diagram of her bedroom shown below. Some of her furniture is shown in the diagram. The door opening is also shown. Ciara uses the following scale for her co-ordinate diagram: 1 unit in Ciara’s co-ordinate diagram is equal to 20 cm in reality. On the diagram, Ciara’s desk is 6 units long.",
+      "questionText": "How long is Ciara’s desk in reality?",
+      "solutionQuotes": [
+        "6 units = 120 [cm]"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Rory is designing a sports kit. The colours available are shown in the table below. Jersey: Red, Blue, Green, Yellow. Shorts: White, Black, Red. Socks: Black, White.",
+      "questionText": "Find how many different choices of kit are possible if he must choose a colour for the jersey, a colour for the shorts and a colour for the socks.",
+      "solutionQuotes": [
+        "4 × 3 × 2 = 24"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        7,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A sliotar is a ball used for the game of hurling. It is in the shape of a sphere.",
+      "questionText": "Work out the volume of a spherical sliotar with a radius of 3·5 cm. Give your answer correct to the nearest cm³.",
+      "solutionQuotes": [
+        "180 [cm³]"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q7-c",
+      "printedParts": [
+        "Q7(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The co-ordinate diagram below shows a picture of a hurley, labelled A. It also shows three transformations of A, labelled X, Y and Z.",
+      "questionText": "Complete the table below by writing the correct letter (X, Y or Z) to show the image of A under each transformation: Axial symmetry in the x-axis; 90° rotation anticlockwise about (0, 0); Central symmetry through the point (0, 0).",
+      "solutionQuotes": [
+        "One or two correct entries"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q8-a",
+      "printedParts": [
+        "Q8(a)(i)",
+        "Q8(a)(ii)",
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        10,
+        20
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "A company has a logo formed by two triangles. One triangle (ABC) is an enlargement of the other triangle (DEF) as shown in the diagram below. The side of each small square in the grid is 1 cm.",
+      "questionText": "(i) Write down the lengths, in cm, of [BC] and [EF]. (ii) Use your answers to part (a)(i) to work out the value of k, the scale factor of the enlargement. (iii) Construct the centre of enlargement on the diagram above, and label it O.",
+      "solutionQuotes": [
+        "6 ÷ 3 = 2"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A different company has a logo in the shape of a triangle, with a base of 6 cm and a height of 4 cm, as shown in the diagram below.",
+      "questionText": "Find the area of the triangle.",
+      "solutionQuotes": [
+        "12 cm²"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Sheila is making a rectangular jigsaw, with length 72 cm and width 54 cm, as shown in the diagram below.",
+      "questionText": "Find, in cm, the perimeter of the jigsaw.",
+      "solutionQuotes": [
+        "2(54 + 72) = 252 [cm]"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Sheila is making a rectangular jigsaw, with length 72 cm and width 54 cm, as shown in the diagram below.",
+      "questionText": "Use Pythagoras’ Theorem to show that the length of the diagonal of the jigsaw is 90 cm.",
+      "solutionQuotes": [
+        "ℎ² = 54² + 72²\nℎ² = 8100\nℎ = 90 [cm]"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q9-b",
+      "printedParts": [
+        "Q9(b)(i)",
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        15
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Sheila is making a rectangular jigsaw, with length 72 cm and width 54 cm, as shown in the diagram below. The jigsaw is being made on a circular table where all four corners of the jigsaw are on the edge of the table, as shown in the diagram below.",
+      "questionText": "(i) Write down the radius of the circular table. Remember the diameter is 90 cm. (ii) Hence, work out the area of the circular table. Give your answer correct to the nearest cm².",
+      "solutionQuotes": [
+        "45 [cm]",
+        "6362 [cm²]"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Natalie was in America and she bought a jigsaw for $20. The exchange rate was €1 = $1·07.",
+      "questionText": "Find how much the jigsaw cost in euro. Give your answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "18.69"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q9-d",
+      "printedParts": [
+        "Q9(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Paul is making a jigsaw. In the first hour he makes 1/8 of the jigsaw. In the second hour he makes 15·3% of the jigsaw. In the third hour he makes 0·162 of the jigsaw.",
+      "questionText": "Find what percentage of the jigsaw he has made after three hours.",
+      "solutionQuotes": [
+        "All three numbers written as either fractions, decimals or percentages"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q9-e",
+      "printedParts": [
+        "Q9(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Rían is making a different jigsaw. It has 500 pieces. He knows that, on average, he can put together 24 pieces in 10 minutes.",
+      "questionText": "Work out how long it will take him to complete the jigsaw. Give your answer in hours, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "24 × 6 = 144",
+        "3 · 5 [hours]"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q10-a",
+      "printedParts": [
+        "Q10(a)(i)",
+        "Q10(a)(ii)",
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        15
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Marko works in a restaurant. He gets paid at a rate of €14 per hour from Monday to Saturday. In general, Marko works an 8-hour shift.",
+      "questionText": "(i) Work out how much Marko gets paid in total for an 8-hour shift. (ii) Marko gets paid 50% extra on a Sunday. Find how much he gets paid per hour when he works on a Sunday. (iii) One week, Marko works four 8-hour shifts from Monday to Thursday, and one 6-hour shift on a Sunday. Work out how much he earns for this week.",
+      "solutionQuotes": [
+        "14 × 8 = [€]112",
+        "(4 × 112) + (6 × 21) = [€]574"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q10-b",
+      "printedParts": [
+        "Q10(b)(i)",
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        10,
+        20
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "On a different week, Marko earns a gross income of €609. He pays income tax at the standard rate of 20%.",
+      "questionText": "(i) Find Marko’s gross tax for the week. (ii) He has a tax credit of €68·27 per week. Find his net pay for the week.",
+      "solutionQuotes": [
+        "609 × 0 · 2 = 121.80",
+        "609 − 53.53 = [€]555.47"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q10-c",
+      "printedParts": [
+        "Q10(c)(i)",
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Margaret is trying to estimate how much money she should give as a tip in the restaurant. She ordered a starter, a main course and a dessert. The cost of each course is given below: Starter = €10·70; Main course = €18·95; Dessert = €6·20. She rounds the cost of each course to the nearest euro and adds them together.",
+      "questionText": "(i) By rounding each to the nearest euro, work out the total Margaret gets. (ii) Margaret decides to give a tip of 15% of the total from part (c)(i). Find how much Margaret gives as a tip.",
+      "solutionQuotes": [
+        "11 + 19 + 6 = [€]36",
+        "36 × 0 · 15 = [€]5.40"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q11-a",
+      "printedParts": [
+        "Q11(a)(i)",
+        "Q11(a)(ii)",
+        "Q11(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        15
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "Donagh has three new combination locks. Each lock has a four-digit code. He sets a different four-digit code to open each of the locks.",
+      "questionText": "(i) The first code is the factors of 6 from the lowest to the highest. Write the code into the boxes provided. (ii) The second code is the first two positive multiples of 27. Write the code into the boxes provided. (iii) The final code is the value of 19³. Write the code into the boxes provided.",
+      "solutionQuotes": [
+        "1, 2, 3, 6",
+        "27, 54",
+        "one correct factor in (i), one correct multiple in (ii) or 19 x 19 written in (iii)"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q11-b",
+      "printedParts": [
+        "Q11(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "Nadia puts an ice pack in a freezer. The temperature of the freezer is −19°C. The temperature of the ice pack now is 17°C. The temperature of the ice pack will decrease by 9°C per hour.",
+      "questionText": "Work out how many hours it will take for the temperature of the ice pack to reach −19°C.",
+      "solutionQuotes": [
+        "17 − (−19) = 36",
+        "36 ÷ 9 = 4 [hours]"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q11-c",
+      "printedParts": [
+        "Q11(c)(i)",
+        "Q11(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Aaron is playing in a game where a new scoring system is being trialled. In the new scoring system you can either score a goal for G points or a behind for B points. Aaron scored 3 goals and 2 behinds in the game. He wrote his score as: 3G + 2B.",
+      "questionText": "(i) Tom scored 2 goals and 5 behinds in the game. Write Tom’s score in terms of G and B. (ii) A goal (G) is worth 7 points and a behind (B) is worth 2 points. Work out who scored more points in the game, Aaron or Tom. Use calculations to support your answer. Tick one box only: Aaron or Tom.",
+      "solutionQuotes": [
+        "Aaron: 3(7) + 2(2) = 25",
+        "Tom: 2(7) + 5(2) = 24"
+      ]
+    },
+    {
+      "id": "maths-2024-fl-q11-d",
+      "printedParts": [
+        "Q11(d)(i)",
+        "Q11(d)(ii)",
+        "Q11(d)(iii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        6,
+        8,
+        10,
+        20
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "Miah is kicking a ball where she is aiming at the point G. Some lengths are shown in the diagram. The angle X is also shown.",
+      "questionText": "(i) Miah wants to find the size of the angle X. Fill in the table to show which length is opposite to the angle X and which length is adjacent to the angle X. Lengths: 16 m or 4 m. (ii) Use the lengths from part (d)(i) to find the value of tan X. (iii) Hence, find the size of the angle X. Give your answer correct to the nearest degree.",
+      "solutionQuotes": [
+        "4 or 16 correct in (i), tan-1 written in (iii)"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        9,
+        11,
+        28
+      ],
+      "classification": "answer-selection",
+      "reason": "Checkbox alternatives are competing answers to one mathematical problem (a formula, the correctness of a median, or the higher score), not alternative prompts."
+    },
+    {
+      "pages": [
+        16
+      ],
+      "classification": "mathematical-counting",
+      "reason": "The jersey/shorts/socks colour table is the sample space to count. It does not instruct the student to select an examination prompt."
+    },
+    {
+      "pages": [
+        15
+      ],
+      "classification": "open-construction",
+      "reason": "The bed may be drawn at any valid unoccupied position; the diagram does not supply a finite pool of practice prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:1896bd7d9c4fd46c": {
+      "classification": "exam-level-selection",
+      "reason": "The candidate selects seven Section A and two Section B questions; every separately marked task is retained for practice."
+    },
+    "4:cac42c09ec0e09c8": {
+      "classification": "exam-level-selection",
+      "reason": "The candidate selects seven Section A and two Section B questions; every separately marked task is retained for practice."
+    },
+    "9:50d0c17f762c1e5c": {
+      "classification": "answer-selection",
+      "reason": "Checkbox alternatives are competing answers to one mathematical problem (a formula, the correctness of a median, or the higher score), not alternative prompts."
+    },
+    "16:2b84761ff9e8616d": {
+      "classification": "mathematical-counting",
+      "reason": "The jersey/shorts/socks colour table is the sample space to count. It does not instruct the student to select an examination prompt."
+    },
+    "20:767b2628537e312a": {
+      "classification": "exam-level-selection",
+      "reason": "The candidate selects seven Section A and two Section B questions; every separately marked task is retained for practice."
+    },
+    "28:ddf9d2910901e32c": {
+      "classification": "mathematical-context",
+      "reason": "Either describes the two scoring events in the game. Both G and B must be used in the same algebra problem; this is not a prompt choice."
+    }
+  }
+}

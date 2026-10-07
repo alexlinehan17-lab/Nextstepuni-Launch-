@@ -41223,5 +41223,1112 @@
    }
   ],
   "notes": "Independently visually checked against the 2026 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q1-a",
+  "topicId": "maths-3-3",
+  "conceptId": "q1-a",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q1(a)(i), Q1(a)(ii)",
+  "stem": "Darek wants to hang wallpaper in some rooms in his house. He has estimated that he will need 10 rolls of wallpaper. A single roll of wallpaper costs €14·50.",
+  "questionText": "(i) Find the cost of 10 rolls of wallpaper. (ii) Darek can also buy wallpaper in packs of 5 rolls. One pack of five rolls costs €65. Find how much Darek will save if he buys the 10 rolls of wallpaper in packs of 5 instead of single rolls of wallpaper.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "14 · 50 × 10 = 145",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "145 − 130 = [€]15",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q1-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q1-b",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q1(b)(i), Q1(b)(ii)",
+  "stem": "",
+  "questionText": "(i) On Monday Gráinne drove 40 km at 80 km/hour. Find how long it took Gráinne to drive this distance. (ii) On Tuesday Gráinne drove 190 km. It took her 2 hours to drive this distance. Calculate her average speed in km/hour.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "0 · 5 [hours] or 30 mins",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "95 [km/hour]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q2-a-i",
+  "topicId": "maths-1-1",
+  "conceptId": "q2-a-i",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q2(a)(i)",
+  "stem": "Orla is playing a game. In this game she picks a counter at random from four counters: Blue (B), Yellow (Y), Red (R) or Purple (P), and flips an unbiased coin and gets heads (H) or tails (T).",
+  "questionText": "Complete the table below to list all the possible outcomes. Two are already done for you. For example, BH means that Orla picks a blue counter and gets heads on the coin.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q2-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "1 to 3 correct outcomes",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q2-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "4 or 5 correct outcomes",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q2-a-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "q2-a-ii",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q2(a)(ii)",
+  "stem": "Orla is playing a game. In this game she picks a counter at random from four counters: Blue (B), Yellow (Y), Red (R) or Purple (P), and flips an unbiased coin and gets heads (H) or tails (T). Each outcome in the table is equally likely.",
+  "questionText": "What is the probability that the outcome of the game is RT? (That is, that a red counter is picked and tails is the result of flipping the coin.)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q2-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Number of favourable outcomes correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q2-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Total number of outcomes correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q2-b",
+  "topicId": "maths-1-6",
+  "conceptId": "q2-b",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q2(b)(i), Q2(b)(ii)",
+  "stem": "A cinema offers four different flavours of popcorn: Toffee, Salty, Plain, and Sweet. The pie chart below shows the different flavours of popcorn that people bought. The size of three of the angles are shown in the diagram above.",
+  "questionText": "(i) Work out the size of the angle for Toffee. Show your working out. (ii) 30 people bought Plain popcorn. Work out how many people bought Sweet popcorn.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "360 − (180 + 54 + 48) = 78",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q3-a",
+  "topicId": "maths-5-1",
+  "conceptId": "q3-a",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q3(a)",
+  "stem": "Ethan bought a car for €40 000 at the start of 2018. On the diagram below, the line shows how the value of the car has decreased over 6 years, from the start of 2018 (t = 0) to the start of 2024 (t = 6). The value of the car is measured in thousands of euro.",
+  "questionText": "Use the graph to estimate the value of the car at the start of 2020 (t = 2).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "[€]34 000",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q3-b-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "q3-b-i-ii",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q3(b)(i), Q3(b)(ii)",
+  "stem": "Ethan bought a car for €40 000 at the start of 2018. On the diagram below, the line shows how the value of the car has decreased over 6 years, from the start of 2018 (t = 0) to the start of 2024 (t = 6). The value of the car is measured in thousands of euro. Ethan also bought a site (a plot of land) at the start of 2018 for €24 000. The site has increased in value by €1000 each year since 2018.",
+  "questionText": "(i) Complete the table below to show the value of the site, in thousands of euro. (ii) Use the values from the table above to draw a graph of the value of the site on the diagram on the previous page, from t = 0 to t = 6, for t ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q3-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "1 correct entry in table",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q3-b-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "q3-b-iii",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q3(b)(iii)",
+  "stem": "Ethan bought a car for €40 000 at the start of 2018. On the diagram below, the line shows how the value of the car has decreased over 6 years, from the start of 2018 (t = 0) to the start of 2024 (t = 6). The value of the car is measured in thousands of euro. Ethan also bought a site (a plot of land) at the start of 2018 for €24 000. The site has increased in value by €1000 each year since 2018.",
+  "questionText": "After how many years (value of t) do the car and the site have the same value? Show your work on the diagram on the previous page.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q3-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Relevant indication on graph",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q3-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "28000",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q3-b-iv",
+  "topicId": "maths-4-1",
+  "conceptId": "q3-b-iv",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q3(b)(iv)",
+  "stem": "Ethan bought a site at the start of 2018 for €24 000. Its value has increased by €1000 each year since 2018. The numbers in the table in part (b)(i) follow a pattern, where V is the value of the site, in thousands, and t is the number of years after it was bought.",
+  "questionText": "Which one of the following formulae shows the pattern in the table? Give a reason for your answer. Tick one box only: V = 24 + t; V = 24 − t; V = 30 + t.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q3-b-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Shows formula works for 2 values",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q4-a",
+  "topicId": "maths-1-2",
+  "conceptId": "q4-a",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q4(a)(i), Q4(a)(ii)",
+  "stem": "Molly is holding auditions for the school musical. In total, 6 boys and 5 girls auditioned. All students have an equal chance of getting the lead role.",
+  "questionText": "(i) What is the probability that a boy will get the lead role? (ii) 2 of the boys were from junior cycle and 3 of the girls were from junior cycle. All other students were from senior cycle. How many senior cycle students auditioned?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "11 − (3 + 2) = 6",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q4-b",
+  "topicId": "maths-1-6",
+  "conceptId": "q4-b",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q4(b)(i), Q4(b)(ii)",
+  "stem": "The ages (in years) of the boys who auditioned are given below: 15, 16, 17, 14, 17, 17.",
+  "questionText": "(i) Find the mode of the data. (ii) Find the mean of the data.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "15 + 16 + 17 + 14 + 17 + 17",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q4-c",
+  "topicId": "maths-1-6",
+  "conceptId": "q4-c",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q4(c)",
+  "stem": "Molly wrote out the ages of the girls who auditioned and circled the number in the middle as shown below: 17, 16, 15 (circled), 13, 16. Molly says the median is 15.",
+  "questionText": "Is Molly correct? Give a reason for your answer. Tick one box only: Yes or No.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q4-c-solution-1",
+    "kind": "point",
+    "verbatim": "The numbers are not ranked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q4-c-solution-2",
+    "kind": "point",
+    "verbatim": "The median is 16",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q5-a-i",
+  "topicId": "maths-1-6",
+  "conceptId": "q5-a-i",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q5(a)(i)",
+  "stem": "Amira and Kevin did a survey. They wrote down the ages in years of all the people under 50 living on their street. The results are shown in the table below. Age (years): 0 − 10, 10 − 20, 20 − 30, 30 − 40, 40 − 50. Number of people: 12, 16, 14, 20, 18, respectively. (Note: 10 − 20 means 10 years or more, but less than 20 years, and so on.)",
+  "questionText": "Complete the histogram below to show the information in the table. One bar has been done for you.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "One correct interval graphed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Two or three correct intervals graphed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q5-a-ii-iii",
+  "topicId": "maths-1-6",
+  "conceptId": "q5-a-ii-iii",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q5(a)(ii), Q5(a)(iii)",
+  "stem": "Amira and Kevin did a survey. They wrote down the ages in years of all the people under 50 living on their street. The results are shown in the table below. Age (years): 0 − 10, 10 − 20, 20 − 30, 30 − 40, 40 − 50. Number of people: 12, 16, 14, 20, 18, respectively. (Note: 10 − 20 means 10 years or more, but less than 20 years, and so on.)",
+  "questionText": "(ii) Find the total number of people under 50 living on the street. (iii) What is the greatest number of people that could be under 18 years old?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q5-a-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "12 + 16 + 14 + 20 + 18 = 80",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q5-a-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "12 + 16 = 28",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q5-a-iv",
+  "topicId": "maths-1-6",
+  "conceptId": "q5-a-iv",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q5(a)(iv)",
+  "stem": "Amira and Kevin did a survey. They wrote down the ages in years of all the people under 50 living on their street. The results are shown in the table below. Age (years): 0 − 10, 10 − 20, 20 − 30, 30 − 40, 40 − 50. Number of people: 12, 16, 14, 20, 18, respectively. (Note: 10 − 20 means 10 years or more, but less than 20 years, and so on.)",
+  "questionText": "Work out the percentage of people from the survey that are 30 years old or older.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q5-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Some correct work with percentages",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q5-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q5-b",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q5(b)",
+  "stem": "Amira and Kevin started collecting their data at 7:30 p.m. They spent 1 hour 45 minutes collecting the data.",
+  "questionText": "At what time did they finish?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "7: 30 + 1: 45 = 9: 15 [pm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q6-a",
+  "topicId": "maths-3-4",
+  "conceptId": "q6-a",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q6(a)",
+  "stem": "Ciara is redesigning her bedroom. Her bedroom floor is a rectangle with a length of 4 m and a width of 2·8 m.",
+  "questionText": "Find the area of Ciara’s bedroom floor, in m².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "4 × 2 · 8 = 11 · 2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q6-b-i",
+  "topicId": "maths-2-2",
+  "conceptId": "q6-b-i",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q6(b)(i)",
+  "stem": "Ciara draws the scaled co-ordinate diagram of her bedroom shown below. Some of her furniture is shown in the diagram. The door opening is also shown.",
+  "questionText": "Write down the co-ordinates of the point A from the diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q6-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "A = (14, 2)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q6-b-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "q6-b-ii",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q6(b)(ii)",
+  "stem": "Ciara draws the scaled co-ordinate diagram of her bedroom shown below. Some of her furniture is shown in the diagram. The door opening is also shown. Ciara’s bed is a rectangle which is 5 units wide and 10 units long.",
+  "questionText": "Draw the bed in a position on the diagram on the previous page so that it does not overlap with any of the given furniture or with the door opening in the room.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q6-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Rectangle constructed with two correct sides, that is, 5 units or 10 units",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q6-b-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "q6-b-iii",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q6(b)(iii)",
+  "stem": "Ciara draws the scaled co-ordinate diagram of her bedroom shown below. Some of her furniture is shown in the diagram. The door opening is also shown. Ciara uses the following scale for her co-ordinate diagram: 1 unit in Ciara’s co-ordinate diagram is equal to 20 cm in reality. On the diagram, Ciara’s desk is 6 units long.",
+  "questionText": "How long is Ciara’s desk in reality?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q6-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "6 units = 120 [cm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q7-a",
+  "topicId": "maths-1-1",
+  "conceptId": "q7-a",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q7(a)",
+  "stem": "Rory is designing a sports kit. The colours available are shown in the table below. Jersey: Red, Blue, Green, Yellow. Shorts: White, Black, Red. Socks: Black, White.",
+  "questionText": "Find how many different choices of kit are possible if he must choose a colour for the jersey, a colour for the shorts and a colour for the socks.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "4 × 3 × 2 = 24",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q7-b",
+  "topicId": "maths-3-4",
+  "conceptId": "q7-b",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q7(b)",
+  "stem": "A sliotar is a ball used for the game of hurling. It is in the shape of a sphere.",
+  "questionText": "Work out the volume of a spherical sliotar with a radius of 3·5 cm. Give your answer correct to the nearest cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "180 [cm³]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q7-c",
+  "topicId": "maths-2-4",
+  "conceptId": "q7-c",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q7(c)",
+  "stem": "The co-ordinate diagram below shows a picture of a hurley, labelled A. It also shows three transformations of A, labelled X, Y and Z.",
+  "questionText": "Complete the table below by writing the correct letter (X, Y or Z) to show the image of A under each transformation: Axial symmetry in the x-axis; 90° rotation anticlockwise about (0, 0); Central symmetry through the point (0, 0).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q7-c-solution-1",
+    "kind": "point",
+    "verbatim": "One or two correct entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q8-a",
+  "topicId": "maths-2-4",
+  "conceptId": "q8-a",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q8(a)(i), Q8(a)(ii), Q8(a)(iii)",
+  "stem": "A company has a logo formed by two triangles. One triangle (ABC) is an enlargement of the other triangle (DEF) as shown in the diagram below. The side of each small square in the grid is 1 cm.",
+  "questionText": "(i) Write down the lengths, in cm, of [BC] and [EF]. (ii) Use your answers to part (a)(i) to work out the value of k, the scale factor of the enlargement. (iii) Construct the centre of enlargement on the diagram above, and label it O.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q8-a-solution-1",
+    "kind": "point",
+    "verbatim": "6 ÷ 3 = 2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q8-b",
+  "topicId": "maths-3-4",
+  "conceptId": "q8-b",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2024 FL Q8(b)",
+  "stem": "A different company has a logo in the shape of a triangle, with a base of 6 cm and a height of 4 cm, as shown in the diagram below.",
+  "questionText": "Find the area of the triangle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "12 cm²",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q9-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "q9-a-i",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q9(a)(i)",
+  "stem": "Sheila is making a rectangular jigsaw, with length 72 cm and width 54 cm, as shown in the diagram below.",
+  "questionText": "Find, in cm, the perimeter of the jigsaw.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "2(54 + 72) = 252 [cm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q9-a-ii",
+  "topicId": "maths-2-1",
+  "conceptId": "q9-a-ii",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q9(a)(ii)",
+  "stem": "Sheila is making a rectangular jigsaw, with length 72 cm and width 54 cm, as shown in the diagram below.",
+  "questionText": "Use Pythagoras’ Theorem to show that the length of the diagonal of the jigsaw is 90 cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q9-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "ℎ² = 54² + 72²\nℎ² = 8100\nℎ = 90 [cm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q9-b",
+  "topicId": "maths-3-4",
+  "conceptId": "q9-b",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q9(b)(i), Q9(b)(ii)",
+  "stem": "Sheila is making a rectangular jigsaw, with length 72 cm and width 54 cm, as shown in the diagram below. The jigsaw is being made on a circular table where all four corners of the jigsaw are on the edge of the table, as shown in the diagram below.",
+  "questionText": "(i) Write down the radius of the circular table. Remember the diameter is 90 cm. (ii) Hence, work out the area of the circular table. Give your answer correct to the nearest cm².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "45 [cm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q9-b-solution-2",
+    "kind": "point",
+    "verbatim": "6362 [cm²]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q9-c",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-c",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q9(c)",
+  "stem": "Natalie was in America and she bought a jigsaw for $20. The exchange rate was €1 = $1·07.",
+  "questionText": "Find how much the jigsaw cost in euro. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "18.69",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q9-d",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-d",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q9(d)",
+  "stem": "Paul is making a jigsaw. In the first hour he makes 1/8 of the jigsaw. In the second hour he makes 15·3% of the jigsaw. In the third hour he makes 0·162 of the jigsaw.",
+  "questionText": "Find what percentage of the jigsaw he has made after three hours.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "All three numbers written as either fractions, decimals or percentages",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q9-e",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-e",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q9(e)",
+  "stem": "Rían is making a different jigsaw. It has 500 pieces. He knows that, on average, he can put together 24 pieces in 10 minutes.",
+  "questionText": "Work out how long it will take him to complete the jigsaw. Give your answer in hours, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q9-e-solution-1",
+    "kind": "point",
+    "verbatim": "24 × 6 = 144",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q9-e-solution-2",
+    "kind": "point",
+    "verbatim": "3 · 5 [hours]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q10-a",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-a",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q10(a)(i), Q10(a)(ii), Q10(a)(iii)",
+  "stem": "Marko works in a restaurant. He gets paid at a rate of €14 per hour from Monday to Saturday. In general, Marko works an 8-hour shift.",
+  "questionText": "(i) Work out how much Marko gets paid in total for an 8-hour shift. (ii) Marko gets paid 50% extra on a Sunday. Find how much he gets paid per hour when he works on a Sunday. (iii) One week, Marko works four 8-hour shifts from Monday to Thursday, and one 6-hour shift on a Sunday. Work out how much he earns for this week.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q10-a-solution-1",
+    "kind": "point",
+    "verbatim": "14 × 8 = [€]112",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q10-a-solution-2",
+    "kind": "point",
+    "verbatim": "(4 × 112) + (6 × 21) = [€]574",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q10-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-b",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q10(b)(i), Q10(b)(ii)",
+  "stem": "On a different week, Marko earns a gross income of €609. He pays income tax at the standard rate of 20%.",
+  "questionText": "(i) Find Marko’s gross tax for the week. (ii) He has a tax credit of €68·27 per week. Find his net pay for the week.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q10-b-solution-1",
+    "kind": "point",
+    "verbatim": "609 × 0 · 2 = 121.80",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q10-b-solution-2",
+    "kind": "point",
+    "verbatim": "609 − 53.53 = [€]555.47",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q10-c",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-c",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q10(c)(i), Q10(c)(ii)",
+  "stem": "Margaret is trying to estimate how much money she should give as a tip in the restaurant. She ordered a starter, a main course and a dessert. The cost of each course is given below: Starter = €10·70; Main course = €18·95; Dessert = €6·20. She rounds the cost of each course to the nearest euro and adds them together.",
+  "questionText": "(i) By rounding each to the nearest euro, work out the total Margaret gets. (ii) Margaret decides to give a tip of 15% of the total from part (c)(i). Find how much Margaret gives as a tip.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q10-c-solution-1",
+    "kind": "point",
+    "verbatim": "11 + 19 + 6 = [€]36",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q10-c-solution-2",
+    "kind": "point",
+    "verbatim": "36 × 0 · 15 = [€]5.40",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q11-a",
+  "topicId": "maths-3-1",
+  "conceptId": "q11-a",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q11(a)(i), Q11(a)(ii), Q11(a)(iii)",
+  "stem": "Donagh has three new combination locks. Each lock has a four-digit code. He sets a different four-digit code to open each of the locks.",
+  "questionText": "(i) The first code is the factors of 6 from the lowest to the highest. Write the code into the boxes provided. (ii) The second code is the first two positive multiples of 27. Write the code into the boxes provided. (iii) The final code is the value of 19³. Write the code into the boxes provided.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q11-a-solution-1",
+    "kind": "point",
+    "verbatim": "1, 2, 3, 6",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q11-a-solution-2",
+    "kind": "point",
+    "verbatim": "27, 54",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q11-a-solution-3",
+    "kind": "point",
+    "verbatim": "one correct factor in (i), one correct multiple in (ii) or 19 x 19 written in (iii)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q11-b",
+  "topicId": "maths-3-1",
+  "conceptId": "q11-b",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q11(b)",
+  "stem": "Nadia puts an ice pack in a freezer. The temperature of the freezer is −19°C. The temperature of the ice pack now is 17°C. The temperature of the ice pack will decrease by 9°C per hour.",
+  "questionText": "Work out how many hours it will take for the temperature of the ice pack to reach −19°C.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q11-b-solution-1",
+    "kind": "point",
+    "verbatim": "17 − (−19) = 36",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q11-b-solution-2",
+    "kind": "point",
+    "verbatim": "36 ÷ 9 = 4 [hours]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q11-c",
+  "topicId": "maths-4-1",
+  "conceptId": "q11-c",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q11(c)(i), Q11(c)(ii)",
+  "stem": "Aaron is playing in a game where a new scoring system is being trialled. In the new scoring system you can either score a goal for G points or a behind for B points. Aaron scored 3 goals and 2 behinds in the game. He wrote his score as: 3G + 2B.",
+  "questionText": "(i) Tom scored 2 goals and 5 behinds in the game. Write Tom’s score in terms of G and B. (ii) A goal (G) is worth 7 points and a behind (B) is worth 2 points. Work out who scored more points in the game, Aaron or Tom. Use calculations to support your answer. Tick one box only: Aaron or Tom.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q11-c-solution-1",
+    "kind": "point",
+    "verbatim": "Aaron: 3(7) + 2(2) = 25",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-fl-q11-c-solution-2",
+    "kind": "point",
+    "verbatim": "Tom: 2(7) + 5(2) = 24",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2024-fl-q11-d",
+  "topicId": "maths-2-3",
+  "conceptId": "q11-d",
+  "level": "foundation",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 FL Q11(d)(i), Q11(d)(ii), Q11(d)(iii)",
+  "stem": "Miah is kicking a ball where she is aiming at the point G. Some lengths are shown in the diagram. The angle X is also shown.",
+  "questionText": "(i) Miah wants to find the size of the angle X. Fill in the table to show which length is opposite to the angle X and which length is adjacent to the angle X. Lengths: 16 m or 4 m. (ii) Use the lengths from part (d)(i) to find the value of tan X. (iii) Hence, find the size of the angle X. Give your answer correct to the nearest degree.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2024-fl-q11-d-solution-1",
+    "kind": "point",
+    "verbatim": "4 or 16 correct in (i), tan-1 written in (iii)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2024 Foundation paper and scheme on 2026-10-07."
  }
 ]

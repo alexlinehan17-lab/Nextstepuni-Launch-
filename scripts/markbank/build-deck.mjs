@@ -885,7 +885,7 @@ ${rows}
   } as SecCard,` });
 }
 
-if (SUBJECT_ID === 'maths') assertReviewedMathematicsCards(out.map(card => card.id));
+if (SUBJECT_ID === 'maths') assertReviewedMathematicsCards(out.map(card => card.id), dropped);
 
 process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
 /* Every build ends with the paper-anchored ledger, so nobody can ship a deck

@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers and 2026 Foundation; shared source reader and exact scale interaction",
-  "runtimeCards": 923,
-  "reviewedTasks": 252,
+  "scope": "All five 2025 English-language Mathematics papers plus 2024 and 2026 Foundation",
+  "runtimeCards": 961,
+  "reviewedTasks": 290,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "running after the 2026 Foundation addition; previous 2025 build passed",
+  "productionBuild": "passed through the 2026 Foundation addition; 2024 data passed generation and regression tests",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -55,7 +55,8 @@
     "schemeHiddenBeforeReveal": true,
     "exclusiveScaleAward": 7,
     "escapeAndFocusReturn": true,
-    "pageErrors": []
+    "pageErrors": [],
+    "year": 2025
   },
   "ordinary": {
     "independentlyReviewedTaskCounts": {
@@ -88,7 +89,7 @@
     "escapeAndFocusReturn": true,
     "pageErrors": []
   },
-  "latestBatch": {
+  "foundation2026": {
     "paper": "2026 Foundation",
     "independentlyReviewedTasks": 42,
     "targetedRegressionTests": 141,
@@ -101,5 +102,17 @@
     "escapeAndFocusReturn": true,
     "pageErrors": [],
     "runtimeIdsSha256": "e5c585bc9aac2ce41213a0ec7b9a90f7b4ae91f61f47847a5cf72d9da1abf874"
+  },
+  "latestBatch": {
+    "paper": "2024 Foundation",
+    "independentlyReviewedTasks": 38,
+    "targetedRegressionTests": 145,
+    "previousRuntimeIdsRetained": 923,
+    "offeredMarks": 375,
+    "candidateMarks": 300,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 24,
+    "runtimeIdsSha256": "4c8d8054bc23ff51ab9db0cf540b3b8f120522d62a46a7ad11b1dd79fd44d55b",
+    "testNote": "Two registry/provenance tests initially timed out while concurrent subject builds competed for resources; both passed with one worker in the retry."
   }
 }

@@ -73,8 +73,11 @@ export function validateMathematicsReviewSources() {
 }
 
 /** A reviewed task must never disappear as a side effect of a build guard. */
-export function assertReviewedMathematicsCards(outputIds) {
+export function assertReviewedMathematicsCards(outputIds, rejectionReasons = []) {
   const emitted = new Set(outputIds);
   const missing = [...reviewedCards.keys()].filter(id => !emitted.has(id));
-  if (missing.length) throw new Error(`Reviewed Mathematics tasks rejected by generation: ${missing.join(', ')}`);
+  if (missing.length) {
+    const reasons = rejectionReasons.filter(reason => missing.some(id => reason.startsWith(`${id}:`)));
+    throw new Error(`Reviewed Mathematics tasks rejected by generation: ${missing.join(', ')}\n${reasons.join('\n')}`);
+  }
 }
