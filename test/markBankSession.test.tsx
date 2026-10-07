@@ -294,6 +294,27 @@ describe('the question comes first and stays', () => {
     expect(original).not.toHaveAttribute('href', expect.stringContaining('LC014ALP000EV.pdf'));
   });
 
+  test('keeps every Irish additional-poetry part when opening and closing both printed versions', () => {
+    const irish = IRISH_HIGHER.find(entry => entry.id === 'irish-2025-hl-p2-literature-4-f')!;
+    renderSession([irish]);
+    const prompt = screen.getByTestId('mark-bank-question-text');
+    expect(prompt).toHaveTextContent('Tabhair sampla amháin');
+    expect(prompt).toHaveTextContent('Scríobh síos tréith amháin');
+    fireEvent.click(screen.getByRole('button', { name: /Read Litríocht Bhreise/i }));
+    expect(screen.getByRole('dialog', { name: /Caoineadh Airt Uí Laoghaire/i })).toBeInTheDocument();
+    expect(screen.getByText('Printed page 13')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Next source page/i }));
+    expect(screen.getByText('Printed page 14')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Close source text/i }));
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(prompt).toHaveTextContent('Scríobh síos tréith amháin');
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    for (const [label, marks] of [['(i) Eolas', 17], ['(ii) Eolas', 9], ['(iii) Eolas', 9], ['Gaeilge', 5]] as const) {
+      fireEvent.click(screen.getByRole('button', { name: `Set ${label} to ${marks} marks` }));
+    }
+    expect(screen.getByText('40 / 40')).toBeInTheDocument();
+  });
+
   test('renders and scores the published Art descriptor bands', () => {
     const art = ART_HIGHER.find(entry => entry.id === 'art-2025-hl-q8')!;
     renderSession([art]);
@@ -363,8 +384,8 @@ describe('the question comes first and stays', () => {
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     const firstScheme = screen.getByText('Fógra a hAon · Tuiscint / Eolas').closest('section')!;
     const secondScheme = screen.getByText('Fógra a Dó · Tuiscint / Eolas').closest('section')!;
-    fireEvent.click(within(firstScheme).getByRole('button', { name: '10' }));
-    fireEvent.click(within(secondScheme).getByRole('button', { name: '8' }));
+    fireEvent.click(within(firstScheme).getByRole('button', { name: 'Set Fógra a hAon · Tuiscint / Eolas to 10 marks' }));
+    fireEvent.click(within(secondScheme).getByRole('button', { name: 'Set Fógra a Dó · Tuiscint / Eolas to 8 marks' }));
     expect(screen.getByText('18 / 18')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: /^Got it/i }));
     expect(onGrade).toHaveBeenCalledTimes(2);

@@ -1,6 +1,8 @@
 {
   "subject": "irish",
   "scope": "Leaving Certificate Higher and Ordinary Level, 2021–2025",
+  "coverageStatus": "not-established",
+  "coverageNote": "This ledger counts generated cards, not independently reviewed paper tasks. Zero queued cards does not mean zero missing questions. See irish-archive-inventory.json and irish-review.json.",
   "definition": "One independently selectable response; compulsory linked parts remain together.",
   "paperCount": 20,
   "cardUnitCount": 400,

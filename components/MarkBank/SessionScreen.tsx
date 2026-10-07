@@ -1061,6 +1061,7 @@ const IrishRubricPanel: React.FC<{
                 key={mark}
                 type="button"
                 aria-pressed={active}
+                aria-label={`Set ${criterion.label} to ${mark} marks`}
                 onClick={() => onScore(id, mark)}
                 style={{
                   minWidth: 34, height: 32, padding: '0 8px', borderRadius: 8,
@@ -1108,7 +1109,7 @@ const IrishRubricPanel: React.FC<{
               key={mark}
               type="button"
               onClick={() => onScore(id, mark)}
-              aria-label={`Set ${criterion.label} to ${mark}`}
+              aria-label={`Set ${criterion.label} to ${mark} marks`}
               style={{
                 border: 0, background: 'none', padding: '2px 0', color: LABEL,
                 font: `650 9.5px/1 ${MONO}`, cursor: 'pointer',

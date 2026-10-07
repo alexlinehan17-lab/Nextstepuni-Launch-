@@ -30,6 +30,7 @@ interface AuthoredIrishCard {
   conceptId: string;
   paperFileid: string;
   schemePage: number;
+  schemePages?: number[];
   taskRequirements: string[];
   criteria: IrishCriterion[];
   markingGuideNote: string;
@@ -64,7 +65,9 @@ const makeCard = (card: AuthoredIrishCard): SecRubricCard => ({
   totalMarks: card.totalMarks,
   schemeCitation:
     `SEC Gaeilge ${card.level === 'higher' ? 'Ardleibhéal' : 'Gnáthleibhéal'} ` +
-    `marking scheme ${card.year}, p.${card.schemePage} — © State Examinations Commission.`,
+    `marking scheme ${card.year}, p.${card.schemePage}` +
+    (card.schemePages && card.schemePages.length > 1 ? `–${card.schemePages.at(-1)}` : '') +
+    ' — © State Examinations Commission.',
   specVersion: 'irish:outgoing',
   qa: {
     gates: [

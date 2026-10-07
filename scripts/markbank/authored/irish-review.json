@@ -1,0 +1,208 @@
+{
+  "subject": "irish",
+  "status": "in-progress",
+  "fullCorpusComplete": false,
+  "worktree": "Nextstepuni-Irish-Completion-20261007",
+  "branch": "codex/irish-corpus-completion-20261007",
+  "baseCommit": "8deb273f",
+  "scope": "All 91 Irish Paper Trail components, 2010–2026, Higher/Ordinary/Foundation, every independently practicable marked task and every finite answer route, with matching Topic Atlas tasks and required media.",
+  "reviewedCorrections": [
+    {
+      "cardId": "irish-2021-hl-p2-literature-4-f",
+      "reviewDate": "2026-10-07",
+      "reviewMethod": "Codex visual inspection of rendered paper and complete Q4F scheme pages, cross-checked against extracted text",
+      "scope": "Q4F only; not a full-paper completion review",
+      "paper": {
+        "fileid": "LC001ALP200IV.pdf",
+        "sha256": "4c2a95b59493aed0bef9ca4298116de2757008bf5c148f84d631b4d18b58e239",
+        "questionPages": [
+          12
+        ]
+      },
+      "scheme": {
+        "fileid": "LC001ALP000IV.pdf",
+        "sha256": "7482066da1b9dbe0494b79c1d769008484c9e28f106d83f3858bf02a310bc337",
+        "pages": [
+          46,
+          47,
+          48,
+          49
+        ]
+      },
+      "correction": "Restored omitted compulsory parts (ii) and (iii), including quoted lines. Replaced the single 35-mark knowledge slider with the three published allocations. Retained the existing card ID and poem source pages.",
+      "knowledgeMarks": [
+        19,
+        7,
+        9
+      ],
+      "sharedLanguageMarks": 5,
+      "totalMarks": 40,
+      "boundaryDecision": "Retain one response because the scheme applies one shared five-mark Gaeilge award to all three compulsory parts. Expose the knowledge allocations separately; do not invent a language split.",
+      "selectionDecisions": [
+        "Requests for a theme, trait, atmosphere or supporting points are open choices, not a finite printed pool."
+      ]
+    },
+    {
+      "cardId": "irish-2022-hl-p2-literature-4-f",
+      "reviewDate": "2026-10-07",
+      "reviewMethod": "Codex visual inspection of rendered paper and complete Q4F scheme pages, cross-checked against extracted text",
+      "scope": "Q4F only; not a full-paper completion review",
+      "paper": {
+        "fileid": "LC001ALP200IV.pdf",
+        "sha256": "e29b5862e8650455db716de7c58c1c81d7f09f169f482d53d5831027b5637d58",
+        "questionPages": [
+          13
+        ]
+      },
+      "scheme": {
+        "fileid": "LC001ALP000IV.pdf",
+        "sha256": "600bdfd6f0a8499687c09a98873aa32915415299e83885186dd1a7ca251ca92c",
+        "pages": [
+          48,
+          49,
+          50
+        ]
+      },
+      "correction": "Restored omitted compulsory parts (ii) and (iii), including quoted lines. Replaced the single 35-mark knowledge slider with the three published allocations. Retained the existing card ID and poem source pages.",
+      "knowledgeMarks": [
+        19,
+        8,
+        8
+      ],
+      "sharedLanguageMarks": 5,
+      "totalMarks": 40,
+      "boundaryDecision": "Retain one response because the scheme applies one shared five-mark Gaeilge award to all three compulsory parts. Expose the knowledge allocations separately; do not invent a language split.",
+      "selectionDecisions": [
+        "Requests for a theme, trait, atmosphere or supporting points are open choices, not a finite printed pool.",
+        "Leagan 1 and Leagan 2 are printed versions of the same poem for the same questions and tariff; both remain available in the source reader."
+      ]
+    },
+    {
+      "cardId": "irish-2023-hl-p2-literature-4-f",
+      "reviewDate": "2026-10-07",
+      "reviewMethod": "Codex visual inspection of rendered paper and complete Q4F scheme pages, cross-checked against extracted text",
+      "scope": "Q4F only; not a full-paper completion review",
+      "paper": {
+        "fileid": "LC001ALP200IV.pdf",
+        "sha256": "24ef3ff77f567f5e72773a1df97d3dbb64bdbf8307673eeb14022d6363012e23",
+        "questionPages": [
+          12
+        ]
+      },
+      "scheme": {
+        "fileid": "LC001ALP000IV.pdf",
+        "sha256": "4088eb120e0d61d9e4ad1ab54f80829b55d89dc5ef57bdcb58129ee58dce5089",
+        "pages": [
+          47,
+          48,
+          49
+        ]
+      },
+      "correction": "Restored omitted compulsory parts (ii) and (iii), including quoted lines. Replaced the single 35-mark knowledge slider with the three published allocations. Retained the existing card ID and poem source pages.",
+      "knowledgeMarks": [
+        19,
+        7,
+        9
+      ],
+      "sharedLanguageMarks": 5,
+      "totalMarks": 40,
+      "boundaryDecision": "Retain one response because the scheme applies one shared five-mark Gaeilge award to all three compulsory parts. Expose the knowledge allocations separately; do not invent a language split.",
+      "selectionDecisions": [
+        "Requests for a theme, trait, atmosphere or supporting points are open choices, not a finite printed pool."
+      ]
+    },
+    {
+      "cardId": "irish-2024-hl-p2-literature-4-f",
+      "reviewDate": "2026-10-07",
+      "reviewMethod": "Codex visual inspection of rendered paper and complete Q4F scheme pages, cross-checked against extracted text",
+      "scope": "Q4F only; not a full-paper completion review",
+      "paper": {
+        "fileid": "LC001ALP200IV.pdf",
+        "sha256": "5302117a0e3dbbf46d0e635680fd78ceb00d46d89e54cc3a04d4f7d9506cd2ca",
+        "questionPages": [
+          12
+        ]
+      },
+      "scheme": {
+        "fileid": "LC001ALP000IV.pdf",
+        "sha256": "c2d30b98b2a6e6b2747b8479b9df527609652b52ce5e352f356fab9bdac1c27e",
+        "pages": [
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      "correction": "Restored omitted compulsory parts (ii) and (iii), including quoted lines. Replaced the single 35-mark knowledge slider with the three published allocations. Retained the existing card ID and poem source pages.",
+      "knowledgeMarks": [
+        19,
+        7,
+        9
+      ],
+      "sharedLanguageMarks": 5,
+      "totalMarks": 40,
+      "boundaryDecision": "Retain one response because the scheme applies one shared five-mark Gaeilge award to all three compulsory parts. Expose the knowledge allocations separately; do not invent a language split.",
+      "selectionDecisions": [
+        "Requests for a theme, trait, atmosphere or supporting points are open choices, not a finite printed pool."
+      ]
+    },
+    {
+      "cardId": "irish-2025-hl-p2-literature-4-f",
+      "reviewDate": "2026-10-07",
+      "reviewMethod": "Codex visual inspection of rendered paper and complete Q4F scheme pages, cross-checked against extracted text",
+      "scope": "Q4F only; not a full-paper completion review",
+      "paper": {
+        "fileid": "LC001ALP200IV.pdf",
+        "sha256": "156b8550e26eeb1d870fe84538c6fac9d0eb15f65776a54673b4ce05756bfb15",
+        "questionPages": [
+          12
+        ]
+      },
+      "scheme": {
+        "fileid": "LC001ALP000IV.pdf",
+        "sha256": "2b4f503260b2bcb3704a3f428bee88bbcccd8746b2a2b58208142cf7e6ff1550",
+        "pages": [
+          45,
+          46,
+          47
+        ]
+      },
+      "correction": "Restored omitted compulsory parts (ii) and (iii), including quoted lines. Replaced the single 35-mark knowledge slider with the three published allocations. Retained the existing card ID and poem source pages.",
+      "knowledgeMarks": [
+        17,
+        9,
+        9
+      ],
+      "sharedLanguageMarks": 5,
+      "totalMarks": 40,
+      "boundaryDecision": "Retain one response because the scheme applies one shared five-mark Gaeilge award to all three compulsory parts. Expose the knowledge allocations separately; do not invent a language split.",
+      "selectionDecisions": [
+        "Requests for a theme, trait, atmosphere or supporting points are open choices, not a finite printed pool.",
+        "Leagan 1 and Leagan 2 are printed versions of the same poem for the same questions and tariff; both remain available in the source reader."
+      ]
+    }
+  ],
+  "confirmedRemainingWork": [
+    "71 indexed paper components currently have no Mark Bank cards. The other 20 also need full independent task and selection review; generated counts are not coverage proof.",
+    "2022 and 2024 HL Paper 2 Q2A(a) omit the An Lasair Choille alternative after the first Cáca Milis tariff. Q2B(a) also omits its alternative drama route. Paper page 8 visually reviewed for both years; 2022 Q2B(a) continues on page 9 and still needs visual/scheme verification.",
+    "2022 HL Paper 2 Q3B(a)(i), paper page 12, prints a closed choice among images, contrast and emotions. It needs three explicit routes and its complete shared marking treatment.",
+    "The current card and deck types support only higher/ordinary. MarkBank profileDeckChoice wrongly maps Foundation profile labels to Higher. Foundation requires proper types, deck loading, persisted selection and level labels before its cards can be used.",
+    "Topic Atlas currently has 979 coarse physical/question anchors. This is not proof of parity with every independently practicable Mark Bank task. Reconcile exact parts/topics and preserve existing Atlas entries.",
+    "Irish 2010 HL/OL and 2011 Foundation have papers but no indexed marking scheme (eight paper components). Find authoritative schemes rather than inventing marks.",
+    "Listening recordings must be verified for each year and level; Foundation uses different recordings. Preserve passages, poems, signs, forms and picture sequences using the existing open/close source reader.",
+    "Full visual paper/scheme sweeps, raw selection-directive classification, preservation and zero-open/zero-orphan checks remain required before any completion claim or coverage-baseline change."
+  ],
+  "validation": {
+    "existingCardIdsPreserved": 400,
+    "idsRemoved": [],
+    "idsAdded": [],
+    "baselineFilesChanged": false,
+    "typecheck": "passed",
+    "targetedDataAndInteractionTests": "212 passed across markBankSession, markBankIrish, markBankCardPreservation, curriculumRegistry, markBankDeck and irishExamTopics",
+    "productionBuild": "passed",
+    "generatedFilesCheck": "passed",
+    "archiveInventoryCheck": "passed",
+    "testTypecheck": "Fails with the same three pre-existing programmeAnalytics errors reproduced on unchanged base checkout: test/programmeAnalyticsClient.test.ts lines 32 and 56 (TS2493); utils/programmeAnalytics.ts line 50 (TS2339).",
+    "browserVisualQA": "Not yet performed; source-reader interaction tested with PDF loading mocked. Source paper/scheme pages for Q4F were rendered and visually inspected."
+  }
+}

@@ -3765,24 +3765,24 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2021 HL Paper 2 Literature 4(f)",
-      "questionText": "(f) 4F. Dánta Breise – Éiceolaí Freagair (i), (ii) agus (iii) thíos. (i) Cad é príomhthéama an dáin Éiceolaí (thall), dar leat? Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. (20 marc)",
+      "questionText": "(f) 4F. Dánta Breise – Éiceolaí Freagair (i), (ii) agus (iii) thíos. (i) Cad é príomhthéama an dáin Éiceolaí (thall), dar leat? Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. (20 marc) (ii) A bhfuil i gceist leis na línte seo a mhíniú: Beireann sí deimheas ag an uile rud a fhásann. Ní maith léi fiántas. Ní fhoighníonn le galar ná smál ná féileacán bán ná piast ag piastáil is ní maith léi an bláth a ligfeadh a phiotail ar lár. (10 marc) (iii) Cén t-atmaisféar atá sa dán seo, dar leat? Tabhair dhá phointe eolais faoin atmaisféar sin. Bíodh tagairtí cruinne agat do théacs an dáin i do fhreagra. (10 marc)",
       "totalMarks": 40,
       "topicId": "irish-6-10",
       "conceptId": "irish-literature-4-irish-6-10",
       "paperPage": 12,
-      "paperTraceScore": 32200,
+      "paperTraceScore": 113608,
       "schemePage": 46,
-      "schemeTraceScore": 21095,
+      "schemeTraceScore": 25154,
       "taskRequirements": [
         "Freagair gach fochuid atá priontáilte sa rogha seo.",
         "Úsáid eolas cruinn agus samplaí ábhartha ón téacs."
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "eolas-i",
+          "label": "(i) Eolas",
           "kind": "award",
-          "maxMarks": 35,
+          "maxMarks": 19,
           "permittedMarks": [
             0,
             1,
@@ -3803,28 +3803,59 @@
             16,
             17,
             18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35
+            19
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "4F. Dánta Breise – Éiceolaí Freagair (i), (ii) agus (iii) thíos. (i) Cad é príomhthéama an dáin Éiceolaí, dar leat? Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin.",
-            "Eolas = 19 marc Príomhthéama a ainmniú = 2 mharc Forbairt an phríomhthéama = 17 marc Treoir: An príomhthéama a lua agus plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin mar aon le tagairtí cruinne téagartha do théacs an dáin atá ag teastáil sa fhreagra."
+            "Cad é príomhthéama an dáin Éiceolaí, dar leat? Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. Eolas = 19 marc Príomhthéama a ainmniú = 2 mharc Forbairt an phríomhthéama = 17 marc Treoir: An príomhthéama a lua agus plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin mar aon le tagairtí cruinne téagartha do théacs an dáin atá ag teastáil sa fhreagra. Nótaí tacaíochta An príomhthéama: an dearcadh difriúil atá ag an mbeirt bhan ar an timpeallacht/ar an nádúr/ar an dúlra… An fhorbairt a dhéantar ar an bpríomhthéama:",
+            " Is bean smachtúil néata láidir fhoirfe í an bhean béal dorais a choimeádann smacht ar a teach, ar a fear agus ar a mac…  Tá sí mífhoighneach agus lorgaíonn sí foirfeacht i ngach rud a dhéanann sí…  Ba mhaith léi freisin smacht iomlán a choimeád ar a gairdín féin toisc nach bhfuil suim dá laghad aici san fhiántas…ní maith léi nuair a fhásann an nádúr ó smacht ina gairdín…  Gearrann sí gach rud a fhásann le deimheas agus is fuath léi aicídí sa ghairdín…  Níl aon ghrá aici don fhéileacán bán ná don phéist ag tochailt sa talamh…  Is fuath léi nuair a thiteann na peitil ar an talamh…  Lorgaíonn an bhean béal dorais timpeallacht fhoirfe…",
+            " Is léir nach bhfuil an dearcadh céanna i leith na timpeallachta ag an bhfile…  Is duine réchúiseach í an file a thugann cead don nádúr fás go fiáin ina gairdín féin…  Is cuma léi faoi néatacht agus rudaí a choimeád glan…  Ní choimeádann sí ord agus eagar ar an nádúr ina gairdín…  Fásann feochadáin i ngairdín an fhile agus ligeann an file do na seilidí óna gairdín féin imeacht isteach i ngairdín na comharsan…itheann na seilidí leitís na mná in aice léi…  Fásann driseacha fiáine ó ghairdín an fhile isteach faoin gclaí i ngairdín na comharsan…",
+            " Titeann ‘cuileanna glasa’ ón gcrann caorthainn atá ag fás i ngairdín an fhile isteach ar an bhféar i ngairdín na comharsan…  Ba mhaith leis an bhfile deireadh a chur le pleananna na mná sa teach in aice léi an gairdín a choimeád faoi smacht… Catagóir Eolas (17 marc) Sármhaith Plé an-chuimsitheach ar fhorbairt an phríomhthéama Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don dán Smaointe forbartha go sármhaith 15-17 An-mhaith Plé cuimsitheach ar fhorbairt an phríomhthéama Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don dán Smaointe forbartha go han-mhaith 12-14 Maith",
+            "Achoimre ar an dán Insint lom ar an dán sna pointí eolais 9-11 Measartha Iarracht ar achoimre Eolas bearnach nó míchruinn nó lochtach 6-8 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-5"
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "A bhfuil i gceist leis na línte seo a mhíniú. Míniú = 7 marc Míniú Tá deimheas aici/ag an mbean béal dorais agus gearrann sí gach aon rud a fheiceann sí ag fás ina gairdín…ní thaitníonn rudaí fiáine a fhásann ó smacht léi…níl aon fhoighne aici agus tá an ghráin aici ar aicídí/ar ghalair…ní maith léi an féileacán bán agus an phéist ag tochailt sa ghairdín…ní thaitníonn aon bhláth léi má thiteann na peitil ar an bhféar…"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Cén t-atmaisféar atá sa dán seo, dar leat? Tabhair dhá phointe eolais faoin atmaisféar sin. Bíodh tagairtí cruinne agat do théacs an dáin i do fhreagra. Eolas = 9 marc Pointe Eolais 1 = 5 mharc Pointe Eolais 2 = 4 mharc Sampla féideartha  Atmaisféar greannmhar…tugtar íomhánna greannmhara soiléire dúinn den bheirt bhan agus an dearcadh atá acu i leith na timpeallachta…is féidir liom í a shamhlú sa ghairdín ag iarraidh an ruaig a chur ar an bpéist agus ar an bhféileacán bán agus na peitil ag titim ar an talamh…  An íomhá ghreannmhar den fhile agus í breá sásta go bhfuil na feochadáin ag séideadh isteach i ngairdín na comharsan…",
+            " Tá greann ag baint leis na seilidí ag dul isteach i ngairdín na comharsan ag ithe a cuid leitíse…  Baineann an file sult as na driseacha ag fás isteach i ngairdín na comharsan…  Ceapaim go bhfuil deireadh an dáin thar a bheith éifeachtach agus greannmhar nuair atá an file ag iarraidh deireadh a chur le dóchas na mná a chónaíonn in aice léi… Nóta: Caithfidh an Scrúdaitheoir an marc as 35 (Eolas) agus as 5 (Gaeilge) a thaispeáint go soiléir sa fhreagarleabhar. Eolas (35) = Gaeilge (5) = Ceist 4F (40) = Catagóir Marc as 7 Sár-mhaith 6-7 An-mhaith Maith Measartha Lag/An-lag 0-2 Catagóir Marc as 5 Marc as 4 Sármhaith An-mhaith Maith Measartha",
+            "Lag/An-lag 0-1"
           ]
         },
         {
@@ -3857,6 +3888,12 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
+      "schemePages": [
+        46,
+        47,
+        48,
+        49
+      ],
       "paperFileid": "LC001ALP200IV"
     },
     {
@@ -10414,12 +10451,12 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2022 HL Paper 2 Literature 4(f)",
-      "questionText": "(f) 4F. Dánta Breise – Caoineadh Airt Uí Laoghaire Freagair (i), (ii) agus (iii) thíos. Nóta: Bain úsáid as Leagan 1 nó as Leagan 2 (lgh 14-15 thall) den dán i do fhreagraí. (i) Tugtar léiriú dúinn ar ghrá Eibhlín d’Art Ó Laoghaire agus ar a croíbhriseadh tar éis a bháis sa dán Caoineadh Airt Uí Laoghaire. É sin a phlé. (20 marc)",
+      "questionText": "(f) 4F. Dánta Breise – Caoineadh Airt Uí Laoghaire Freagair (i), (ii) agus (iii) thíos. Nóta: Bain úsáid as Leagan 1 nó as Leagan 2 (lgh 14-15 thall) den dán i do fhreagraí. (i) Tugtar léiriú dúinn ar ghrá Eibhlín d’Art Ó Laoghaire agus ar a croíbhriseadh tar éis a bháis sa dán Caoineadh Airt Uí Laoghaire. É sin a phlé. (20 marc) (ii) Déan cur síos, i d’fhocail féin, ar an íomhá (ar an bpictiúr) d’Art a chuirtear romhainn sna línte 19-29 den dán. (Is leor dhá phointe eolais.) (10 marc) (iii) Cén mheadaracht atá sa dán seo? Scríobh pointe amháin eolais faoin meadaracht seo agus léirigh do fhreagra le sampla cruinn as an dán. (10 marc)",
       "totalMarks": 40,
       "topicId": "irish-6-6",
       "conceptId": "irish-literature-4-irish-6-6",
       "paperPage": 13,
-      "paperTraceScore": 57307,
+      "paperTraceScore": 115599,
       "schemePage": 48,
       "schemeTraceScore": 28145,
       "taskRequirements": [
@@ -10428,10 +10465,10 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "eolas-i",
+          "label": "(i) Eolas",
           "kind": "award",
-          "maxMarks": 35,
+          "maxMarks": 19,
           "permittedMarks": [
             0,
             1,
@@ -10452,28 +10489,58 @@
             16,
             17,
             18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35
+            19
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "4F. Dánta Breise – Caoineadh Airt Uí Laoghaire Freagair (i), (ii) agus (iii) thíos. (i) Tugtar léiriú dúinn ar ghrá Eibhlín d’Art Ó Laoghaire agus ar a croíbhriseadh tar éis a bháis sa dán Caoineadh Airt Uí Laoghaire. É sin a phlé.",
-            "Eolas = 19 marc Catagóir Eolas (19 marc) Sármhaith Plé an-chuimsitheach ar ghrá Eibhlín d’Art agus ar a croíbhriseadh tar éis a bháis Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don dán Smaointe forbartha go sármhaith 17-19 An-mhaith Plé cuimsitheach ar ghrá Eibhlín d’Art agus ar a croíbhriseadh tar éis a bháis Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don dán Smaointe forbartha go han-mhaith 14-16 Maith Achoimre ar an dán Insint lom ar an dán sna pointí eolais 11-13 Measartha Iarracht ar achoimre Eolas bearnach nó míchruinn nó lochtach 8-10 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-7"
+            "Tugtar léiriú dúinn ar ghrá Eibhlín d’Art Ó Laoghaire agus ar a croíbhriseadh tar éis a bháis sa dán Caoineadh Airt Uí Laoghaire. É sin a phlé. Eolas = 19 marc Catagóir Eolas (19 marc) Sármhaith Plé an-chuimsitheach ar ghrá Eibhlín d’Art agus ar a croíbhriseadh tar éis a bháis Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don dán Smaointe forbartha go sármhaith 17-19 An-mhaith Plé cuimsitheach ar ghrá Eibhlín d’Art agus ar a croíbhriseadh tar éis a bháis Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don dán Smaointe forbartha go han-mhaith 14-16 Maith Achoimre ar an dán",
+            "Insint lom ar an dán sna pointí eolais 11-13 Measartha Iarracht ar achoimre Eolas bearnach nó míchruinn nó lochtach 8-10 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-7 Treoir: Grá Eibhlín d’Art agus an léiriú ar a croíbhriseadh tar éis a bháis mar aon le tagairtí cruinne téagartha do théacs an dáin atá ag teastáil sa fhreagra. Nótaí tacaíochta  Tá grá fíochmhar paiseanta mar aon le brón agus crá croí na baintrí le brath go láidir ó thús an dáin…  Labhraíonn Eibhlín go díreach le corp a fir mhairbh ‘mo ghrá go daingean tu…’ ag cur a grá dó",
+            "in iúl agus í ag iarraidh a tocht bróin a chur di…oscailt spleodrach phaiseanta…neart a grá dó…  Smaoiníonn sí go grámhar ar an lá agus ar an áit a bhfaca sí é den chéad uair…deir sí gur thit sí i ngrá leis ar an bpointe boise…  Déanann sí cur síos ar cé chomh sásta is a bhí sí sa phósadh agus ar fhlaithiúlacht Airt…chaith sé go fial léi – seomraí a phéinteáil, neart le hithe agus ‘codladh i gclúmh lachan dom’… Bíonn athrá na nathanna mar ‘mo chara thú go daingean’ ag dearbhú a grá dó arís is arís… Molann sí a uaisleacht agus a phearsantacht…bhí sé dathúil agus cróga agus misniúil…laoch",
+            "a bhí ann di…glaonn sí ainmneacha ceana air go minic – ‘a mhuirnín mh’anama’, ‘mo chara’, ‘mo rún’, ‘mo chuid’…  Tá truamhéil agus dianbhrón ann nuair a thagraíonn sí do na páistí ag glaoch air gan freagra a fháil…  Éiríonn an dán níos drámatúla agus níos cumasaí ón bpointe a insíonn sí faoi chapall Airt ag filleadh abhaile…bhí a fhios ag Eibhlín láithreach go raibh tubaiste tar éis titim amach…  Bhí Eibhlín cosúil le bean mhire….a croíbhriseadh anois de bharr a bháis anabaí…  Tá briseadh croí agus éadóchas Eibhlín le feiceáil go háirithe sna línte a léiríonn go bhfuil an saol",
+            "ag dul ar aghaidh…ach ní féidir le hEibhlín dul ar aghaidh mar tá cumha doleigheasta ar a croí…"
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Déan cur síos, i d’fhocail féin, ar an íomhá (ar an bpictiúr) d’Art a chuirtear romhainn sna línte 19-29 den dán. (Is leor dhá phointe eolais.) Eolas = 8 marc  Léiríonn Eibhlín íomhá d’Art mar fhear fíordhathúil, rómánsúil, mealltach, fearúil, misniúil… Tugann sí suntas don tslí a raibh sé gléasta an chéad uair a chonaic sí é; mheas sí gur oir an hata a bhí á chaitheamh aige dó – hata péacach le ribín óir timpeall air…fear díomasach, gáifeach ba ea é…  Bhí ‘claíomh cinn airgid’ aige a léirigh a chrógacht, a ghaisciúlacht agus an eagla a chuir sé ar a naimhde…léirigh sé bród agus mórtas lena ‘lámh dheas chalma’… ",
+            "Bhí ‘rompsáil bhagarthach’ar siúl aige – geáitsíocht bhagrach d’fhonn eagla a chur ar a naimhde…bhí siadsan ag géilleadh dó agus eagla orthu roimhe…bhí sé réidh chun troda – ní raibh eagla air féin roimh a naimhde…bhí sé dána, meargánta, dúshlánach…  Bhí saibhreas Airt feiceálach – níor cheil sé é…bhí capall breá aige ag pramsáil timpeall…claíomh cinn airgid agus éadaí galánta… Catagóir Pointe eolais 1 (4 mharc) Pointe eolais 2 (4 mharc) Sár-mhaith An-mhaith Maith Measartha Lag/An-lag"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Cén mheadaracht atá sa dán seo? Scríobh pointe amháin eolais faoin meadaracht seo agus léirigh do fhreagra le sampla cruinn as an dán. Eolas = 8 marc An mheadaracht a ainmniú = 2 mharc Pointe amháin eolais = 4 mharc Sampla cruinn = 2 mharc An mheadaracht a ainmniú: meadaracht an amhráin/Rosc/véarsaíocht aiceanta Pointe amháin eolais: línte gearra le dhá nó trí bhéim iontu…an guta aiceanta céanna ann ag deireadh gach líne…línte aiceanta…uaim…comhfhuaim… Sampla cruinn ábhartha as an dán chun an ghné a luaitear sa phointe eolais a léiriú = 2 mharc"
           ]
         },
         {
@@ -10507,6 +10574,11 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
+      "schemePages": [
+        48,
+        49,
+        50
+      ],
       "paperFileid": "LC001ALP200IV"
     },
     {
@@ -17076,24 +17148,24 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2023 HL Paper 2 Literature 4(f)",
-      "questionText": "(f) 4F. Dánta Breise – A Chlann Freagair (i), (ii) agus (iii) thíos. (i) ‘Tugtar léiriú dúinn ar ghrá na máthar dá páistí agus ar an bhfonn atá uirthi iad a chosaint sa dán A Chlann.’ Déan plé ar an ráiteas sin. (20 marc)",
+      "questionText": "(f) 4F. Dánta Breise – A Chlann Freagair (i), (ii) agus (iii) thíos. (i) ‘Tugtar léiriú dúinn ar ghrá na máthar dá páistí agus ar an bhfonn atá uirthi iad a chosaint sa dán A Chlann.’ Déan plé ar an ráiteas sin. (20 marc) (ii) A bhfuil i gceist leis na línte seo a mhíniú: (10 marc) Chloífinn fuath is díoltas Dá dtiocfaidís bhúr ngaor, Thiocfainn eadar sibh is fearg Dé! (iii) Is í an mháthair atá ag caint go díreach lena páistí féin sa dán seo. Cén éifeacht a bhaineann leis an teicníc fhileata sin sa dán, dar leat? Is leor dhá phointe eolais. Bíodh tagairtí cruinne agat do théacs an dáin i do fhreagra. (10 marc)",
       "totalMarks": 40,
       "topicId": "irish-6-8",
       "conceptId": "irish-literature-4-irish-6-8",
       "paperPage": 12,
-      "paperTraceScore": 36199,
+      "paperTraceScore": 110580,
       "schemePage": 47,
-      "schemeTraceScore": 33192,
+      "schemeTraceScore": 39128,
       "taskRequirements": [
         "Freagair gach fochuid atá priontáilte sa rogha seo.",
         "Úsáid eolas cruinn agus samplaí ábhartha ón téacs."
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "eolas-i",
+          "label": "(i) Eolas",
           "kind": "award",
-          "maxMarks": 35,
+          "maxMarks": 19,
           "permittedMarks": [
             0,
             1,
@@ -17114,29 +17186,60 @@
             16,
             17,
             18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35
+            19
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "4F. Dánta Breise – A Chlann Freagair (i), (ii) agus (iii) thíos. (i) Tugtar léiriú dúinn ar ghrá na máthar dá páistí agus ar an bhfonn atá uirthi iad a chosaint sa dán A Chlann. Déan plé ar an ráiteas sin.",
-            "Eolas = 19 marc Nótaí tacaíochta • Is rud nádúrtha é do mháthair a bheith buartha nó imníoch faoi na deacrachtaí a bheidh ag a páistí sa saol…tá an mháthair sásta rud ar bith a dhéanamh chun a páistí a chosaint ó chruatan an tsaoil… • Is cosúil go bhfuil creideamh láidir ag an máthair;",
-            "baineann sí úsáid as íomhá d’aingeal ag coinneáil súil ar na páistí… • Ba mhaith léi na páistí a chosaint ón bhfuath, ón díoltas agus fiú ó ‘fhearg Dé’ – tá sí sásta aon íobairt a dhéanamh ar son na bpáistí… • Ba mhaith léi go mbeadh saol deas, réidh, taitneamhach ag a páistí…baineann sí úsáid as dhá mheafar chun é seo a chur in iúl: ‘Bhúr sléibhte ’na maolchnoic mhíne/Bhúr bhfarraigí gléghorm’…seasann na sléibhte do dhúshláin an tsaoil agus na farraigí don saol féin… • Labhraíonn sí faoina croí féin mar ché – áit shlán shábháilte do na páistí agus iad ag fás aníos…ach anois, tá siad fásta aníos ‘d’fhág sibh cé mo chroí’ agus níl smacht aici a thuilleadh ar na drochrudaí a d’fhéadfadh a tharlú dóibh… • Léiríonn sí grá arís nuair a deir sí go ndéanfadh sí rud dóibh nach ndearna sí riamh di féin…is grá neamhleithleach é…grá gan choinníoll, grá doshrianta atá aici dóibh – tá sí sásta gach peaca a mhaitheamh dóibh…ba mhaith léi gach pian a leigheas dóibh… • Baineann sí úsáid as an Modh Coinníollach mar tuigeann sí nach bhfuil ina cuid focal ach mianta agus guíonna…dá mbeadh sé ar a cumas, dhéanfadh sí saol deas compordach dóibh, ach tuigeann sí ina croí istigh nach bhfuil an smacht sin aici ar a saolta… • Sa tríú véarsa glacann sí leis go bhfágfaidh a páistí í lá"
+            "Tugtar léiriú dúinn ar ghrá na máthar dá páistí agus ar an bhfonn atá uirthi iad a chosaint sa dán A Chlann. Déan plé ar an ráiteas sin. Eolas = 19 marc Nótaí tacaíochta • Is rud nádúrtha é do mháthair a bheith buartha nó imníoch faoi na deacrachtaí a bheidh ag a páistí sa saol…tá an mháthair sásta rud ar bith a dhéanamh chun a páistí a chosaint ó chruatan an tsaoil… • Is cosúil go bhfuil creideamh láidir ag an máthair; baineann sí úsáid as íomhá d’aingeal ag coinneáil súil ar na páistí… • Ba mhaith léi na páistí a chosaint ón bhfuath, ón díoltas agus fiú ó ‘fhearg Dé’ – tá sí sásta aon íobairt a dhéanamh ar son na bpáistí… •",
+            "Ba mhaith léi go mbeadh saol deas, réidh, taitneamhach ag a páistí…baineann sí úsáid as dhá mheafar chun é seo a chur in iúl: ‘Bhúr sléibhte ’na maolchnoic mhíne/Bhúr bhfarraigí gléghorm’…seasann na sléibhte do dhúshláin an tsaoil agus na farraigí don saol féin… • Labhraíonn sí faoina croí féin mar ché – áit shlán shábháilte do na páistí agus iad ag fás aníos…ach anois, tá siad fásta aníos ‘d’fhág sibh cé mo chroí’ agus níl smacht aici a thuilleadh ar na drochrudaí a d’fhéadfadh a tharlú dóibh… • Léiríonn sí grá arís nuair a deir sí go ndéanfadh sí rud dóibh nach ndearna sí riamh di féin…is grá",
+            "neamhleithleach é…grá gan choinníoll, grá doshrianta atá aici dóibh – tá sí sásta gach peaca a mhaitheamh dóibh…ba mhaith léi gach pian a leigheas dóibh… • Baineann sí úsáid as an Modh Coinníollach mar tuigeann sí nach bhfuil ina cuid focal ach mianta agus guíonna…dá mbeadh sé ar a cumas, dhéanfadh sí saol deas compordach dóibh, ach tuigeann sí ina croí istigh nach bhfuil an smacht sin aici ar a saolta… • Sa tríú véarsa glacann sí leis go bhfágfaidh a páistí í lá éigin chun a slí féin a dhéanamh sa saol… Déanfaidh siad a gcinntí féin: ‘Fada uaim a ghluaisfidh sibh/Ar bhúr mbealach féin’… Catagóir Eolas (19 marc) Sármhaith",
+            "Plé an-chuimsitheach ar an ráiteas Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don dán Smaointe forbartha go sármhaith 17-19 An-mhaith Plé cuimsitheach ar an ráiteas Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don dán Smaointe forbartha go han-mhaith 14-16 Maith Plé maith ar an ráiteas le tagairtí ábhartha don dán Tagairtí téagartha don dán 11-13 Measartha Plé measartha ar an ráiteas Eolas bearnach, míchruinn agus lochtach 8-10 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-7 •",
+            "Glacann sí leis go bhfuil a dtuairimí féin ag a páistí agus go bhfuil siad neamhspleách; níl baint aici lena roghanna saoil…léiríonn sí grá anseo freisin sa mhéid is go nglacann sí leis gur cheart a saoirse a thabhairt dá clann chun a rogha rud a dhéanamh… • Ag deireadh an dáin, géilleann sí nach bhfuil ach rud amháin gur féidir léi a dhéanamh agus is é sin guí ar son a páistí: ‘Níl rogha agam i bhúr dtodhchaí/Níl agam ach guí’…"
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "A bhfuil i gceist leis na línte seo a mhíniú: Eolas = 7 marc Chloífinn fuath is díoltas Dá dtiocfaidís bhúr ngaor, Thiocfainn eadar sibh is fearg Dé! Míniú: Gheobhadh an mháthair an lámh in uachtar ar an ngráin agus ar an naimhdeas dá mbeadh siad i ngiorracht dá páistí…dhéanfadh sí a dícheall chun a páistí a choimeád slán sábháilte ó olc Dé…tá an mháthair ag rá go ndéanfadh sí aon rud ar bith chun a páistí a chosaint ó olc an tsaoil agus go bhfuil sí sásta aon íobairt a dhéanamh ar a son…"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Is í an mháthair atá ag caint go díreach lena páistí féin sa dán seo. Cén éifeacht a bhaineann leis an teicníc fhileata sin, dar leat? Eolas = 9 marc Is leor dhá phointe eolais. Bíodh tagairtí cruinne agat do théacs an dáin i do fhreagra. Pointe Eolais 1 = 5 mharc Pointe Eolais 2 = 4 mharc Nótaí tacaíochta • An mháthair atá ag caint sa dán…íobairtí na máthar ina cuid focal féin…géilliúlacht na máthar sa véarsa deireanach…an t-athrú a thagann ar a dearcadh…í spíonta, tuirseach…a racht curtha di…tagann sí ar an tuiscint nach féidir léi a páistí a smachtú go hiomlán…is léir gur mhaith léi iad",
+            "a bheith ina cuideachta go deo ach pé rud a dhéanfaidh siad amach anseo, fágann sí a beannacht phearsanta orthu…mianta na máthar…glacann sí leis go toilteanach leis na roghanna atá déanta ag a páistí…téama uilíoch ach cás faoi leith…an Tuiseal Gairmeach…í ag caint leo…músclaítear trua ionainn don mháthair/tá bá againn leis an máthair…mothaíonn muid a croíbhriseadh ó d’fhás a clann suas agus ó d’imigh siad uaithi…is féidir le go leor daoine ionannú le cás na máthar seo… í ag cur síos ar a cás féin…spreagtar trua ionainn don mháthair nuair a thuigeann sí go gcaithfidh sí géilleadh agus ligean dá páistí a mbealaigh a dhéanamh tríd an saol…",
+            "Catagóir Marc as 7 Sár-mhaith 6-7 An-mhaith Maith Measartha Lag/An-lag 0-2 Catagóir Marc as 5 Marc as 4 Sármhaith An-mhaith Maith Measartha Lag/An-lag 0-1 • Cothaítear bá ionainn leis an máthair…mothaímid an bhuairt agus an t-uaigneas atá uirthi… tuigeann sí gach ‘bearna baoil’ a bheidh roimh a páistí agus tá sí buartha fúthu…braithimid go mothaíonn an mháthair nach féidir léi tada a dhéanamh chun a chinntiú go mbeidh a páistí slán sa saol atá amach rompu… • Tugann an chaint dhíreach blas pearsanta dáiríre don dán…tuigimid go bhfuil an mháthair ag labhairt óna croí istigh agus go bhfuil grá mór aici dá páistí… •",
+            "Tá éifeacht na paidre ag an dán mar tá an mháthair ag guí go sollúnta go mbeidh saol sábháilte ag a clann mar tá a fhios aici nach féidir léi féin a páistí a chosaint agus iad amuigh sa saol…"
           ]
         },
         {
@@ -17169,6 +17272,11 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
+      "schemePages": [
+        47,
+        48,
+        49
+      ],
       "paperFileid": "LC001ALP200IV"
     },
     {
@@ -23734,24 +23842,24 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2024 HL Paper 2 Literature 4(f)",
-      "questionText": "(f) 4F. Dánta Breise – Fill Arís Freagair (i), (ii) agus (iii) thíos. (i) Cad é príomhthéama an dáin Fill Arís (thall), dar leat? Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. (20 marc)",
+      "questionText": "(f) 4F. Dánta Breise – Fill Arís Freagair (i), (ii) agus (iii) thíos. (i) Cad é príomhthéama an dáin Fill Arís (thall), dar leat? Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. (20 marc) (ii) A bhfuil i gceist leis na línte seo a mhíniú: Sin é do dhoras, Dún Chaoin fé sholas an tráthnóna, Buail is osclófar D’intinn féin is do chló ceart. (10 marc) (iii) Tá an dán seo lán le horduithe. Cén éifeacht a bhaineann leis an Modh Ordaitheach a bheith á úsáid sa dán, dar leat? Is leor dhá phointe eolais. Bíodh tagairtí cruinne agat do théacs an dáin i do fhreagra. (10 marc)",
       "totalMarks": 40,
       "topicId": "irish-6-7",
       "conceptId": "irish-literature-4-irish-6-7",
       "paperPage": 12,
-      "paperTraceScore": 34202,
+      "paperTraceScore": 109570,
       "schemePage": 47,
-      "schemeTraceScore": 15095,
+      "schemeTraceScore": 50206,
       "taskRequirements": [
         "Freagair gach fochuid atá priontáilte sa rogha seo.",
         "Úsáid eolas cruinn agus samplaí ábhartha ón téacs."
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "eolas-i",
+          "label": "(i) Eolas",
           "kind": "award",
-          "maxMarks": 35,
+          "maxMarks": 19,
           "permittedMarks": [
             0,
             1,
@@ -23772,27 +23880,61 @@
             16,
             17,
             18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35
+            19
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "4F. Dánta Breise – Fill Arís Freagair (i), (ii) agus (iii). (i) Cad é príomhthéama an dáin Fill Arís, dar leat? Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. Eolas = 19 marc An príomhthéama a ainmniú = 2 mharc Plé ar fhorbairt an phríomhthéama = 17 marc"
+            "Cad é príomhthéama an dáin Fill Arís, dar leat? Déan plé ar an bhforbairt a dhéantar ar an bpríomhthéama sin ó thús deireadh an dáin. Eolas = 19 marc An príomhthéama a ainmniú = 2 mharc Plé ar fhorbairt an phríomhthéama = 17 marc Nótaí tacaíochta Príomhthéama(í) • Filleadh ar dhúchas agus an tslí is fearr chun é sin a dhéanamh… • Chun teacht ar do nádúr fíreannach, caithfidh tú filleadh go hiomlán ar do dhúchas féin… • An deighilt idir cultúr agus teanga an Bhéarla agus meon dúchasach na Gaeilge… • An choimhlint in aigne an fhile idir an Ghaeilge agus an Béarla… •",
+            "Grá an fhile don Ghaeilge agus an dochar, dar leis, a dhéanann tréigean na Gaeilge don Éireannach… • Is iad an Ghaeltacht agus an Ghaeilge croílár an chultúir Ghaelaigh… • Tá an duine iomlán le fáil i measc a mhuintire féin ag labhairt a theanga dhúchais… Forbairt • Baineann an file feidhm as teicnící áirithe chun an príomhthéama a fhorbairt. • Tá siombail an aistir sa dán…is aistear spioradálta é ón gcultúr gallda go torthúlacht an chultúir Ghaelaigh…fágann sé Gleann na nGealt (an teorainn idir an Ghaeltacht agus an Ghalltacht) ina dhiaidh agus tugann sé aghaidh ar Ghaeltacht Chorca Dhuibhne…is meafar é Gleann na nGealt",
+            "don teorainn idir cultúr na Gaeilge agus cultúr an Bhéarla… • Baineann an Ríordánach úsáid as an stair ag tús an dáin…is siombail é Cath Chionn tSáile den chor cinniúna a tharla don Ghaeilge mar thosaigh sí ag meath as sin amach… • Mar sin caithfidh na Gaeil dul ar an aistear seo siar go dtí an Ghaeltacht chun teacht ar a gcultúr is ar a meon ceart, dar leis…ní féidir leis an bhfile é féin a léiriú i gceart i saol an Bhéarla… • Baineann sé feidhm as meafair i rith an aistir…beidh ‘an t-ualach trom’ is ‘an bóthar fada’… beidh sé deacair cultúr an Bhéarla a chaitheamh díot agus do chultúr féin a athaimsiú…",
+            "Beidh ort ‘srathar shiabhaltacht an Bhéarla’ a scaoileadh de d’aigne…sé sin le rá go bhfuil tú faoi smacht ag cultúr an Bhéarla agus caithfidh tú tú féin a shaoradh uaidh sin…caithfidh tú filleadh ar ‘do chuid’ – an cultúr is dual nó is nádúrtha duit…caithfidh tú d’aigne is do theanga a ghlanadh de na struchtúir theanga nach n-oireann di mar tá do theanga tar éis dul i bhfostú ‘i gcomhréiribh ‘bhí bunoscionn le d’éirim’…nílimid in ann sinn féin a chur in iúl i gceart i mBéarla, dar leis an bhfile…feictear don Ríordánach gur peaca í do mhuintir na hÉireann cúl a thabhairt dá ndúchas Catagóir Eolas (17 marc) Sármhaith",
+            "Plé an-chuimsitheach ar fhorbairt an phríomhthéama Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don dán Smaointe forbartha go sármhaith 15-17 An-mhaith Plé cuimsitheach ar fhorbairt an phríomhthéama Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha don dán Smaointe forbartha go han-mhaith 12-14 Maith Plé maith ar fhorbairt an phríomhthéama Tuiscint léirithe sna pointí eolais Tagairtí ábhartha, téagartha don dán 9-11 Measartha Plé measartha ar fhorbairt an phríomhthéama Eolas bearnach, míchruinn agus lochtach 6-8 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-5",
+            "agus dá dteanga…mar sin, caithfidh siad faoistin a dhéanamh chun síocháin a dhéanamh lena gcultúr féin…ordaíonn sé dúinn dul ‘faobhar na faille siar’ go Corca Dhuibhne…tá an Ghaeilge imeallaithe sna háiteanna Gaeltachta in iarthar na tíre… • Cruthaíonn an file íomhánna rómánsacha den Ghaeltacht ‘tráthnóna gréine go Corca Dhuibhne’, ‘bun na spéire’ agus ‘Dún Chaoin fé sholas an tráthnóna’…tá sé ag iarraidh sinn a mhealladh siar go dtí an áit is ansa leis féin, Corca Dhuibhne… • Má ghlacaimid lena chomhairle, beidh rath ar an nGaeilge arís…beidh sí á labhairt go forleathan agus gramadach na teanga ‘ag ráthaíocht’ mar scoil iasc… •",
+            "Seasann an meafar deireanach sa dán, ‘do dhoras’ don bhealach isteach atá ag an Éireannach chun teacht ar an bhfíor-Éireannach ann féin, ‘do chló ceart’…"
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "A bhfuil i gceist leis na línte seo a mhíniú: Eolas = 7 marc Sin é do dhoras, Dún Chaoin fé sholas an tráthnóna, Buail is osclófar D’intinn féin is do chló ceart. Míniú: Is é dul siar go Corca Dhuibhne an eochair go dtí do chultúr féin…ní gá duit ach dul ann agus tiocfaidh tú ar do chruth ceart fírinneach…beidh tú dílis duit féin agus i do dhuine comhlíonta mar beidh tú ag cleachtadh do chultúir agus do theanga féin…"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Tá an dán seo lán le horduithe. Cén éifeacht a bhaineann leis an Modh Ordaitheach a bheith á úsáid sa dán, dar leat? Is leor dhá phointe eolais. Bíodh tagairtí cruinne agat do théacs an dáin i do fhreagra. Eolas = 9 marc Is leor dhá phointe eolais. Bíodh tagairtí cruinne agat do théacs an dáin i do fhreagra. Pointe Eolais 1 (an pointe eolais is fearr) = 5 mharc Pointe Eolais 2 = 4 mharc Catagóir Marc as 7 Sármhaith 6-7 An-mhaith Maith Measartha Lag/An-lag 0-2 Catagóir Marc as 5 Marc as 4 Sármhaith An-mhaith Maith Measartha Lag/An-lag 0-1 Nótaí tacaíochta •",
+            "Tá an Modh Ordaitheach le feiceáil tríd an dán ar fad, fiú sa teideal ‘Fill Arís’. Gríosaíonn an file sinn le ‘fág’, ‘dún’, ‘nigh’, ‘dein faoistin’, ‘ná tréig’, ‘téir’, ‘buail’…is briathra láidre iad agus déanann siad teachtaireacht an dáin níos láidre agus níos pearsanta… • Tugann an Modh Ordaitheach le tuiscint nach dtugtar rogha dúinn…tá an file diongbháilte go gcaithfimid dúiseacht ón gcultúr gallda agus filleadh ar ár ndúchas…cuireann an Modh Ordaitheach práinn in iúl…impíonn sé orainn glacadh lena chomhairle gan mhoill… • Léiríonn na horduithe seo go bhfuil an file paiseanta i dtaobh na Gaeilge…‘dein síocháin led ghiniúin",
+            "féinig/Is led thigh-se féin is ná tréig iad’ agus dímheasúil i leith an Bhéarla…‘Dún d’intinn ar ar tharla /Ó buaileadh Cath Chionn tSáile’… • Cuireann na braithra sa Mhodh Ordaitheach ina luí orainn go mba chóir dúinn teanga na Gaeilge a aimsiú…"
           ]
         },
         {
@@ -23825,6 +23967,12 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
+      "schemePages": [
+        47,
+        48,
+        49,
+        50
+      ],
       "paperFileid": "LC001ALP200IV"
     },
     {
@@ -30402,12 +30550,12 @@
       "paper": 2,
       "section": "2",
       "questionRef": "2025 HL Paper 2 Literature 4(f)",
-      "questionText": "(f) 4F. Dánta Breise – Caoineadh Airt Uí Laoghaire Freagair (i), (ii) agus (iii) thíos. Nóta: Bain úsáid as Leagan 1 nó Leagan 2 (lgh 13-14 thall) den dán i do fhreagraí. (i) Sa dán Caoineadh Airt Uí Laoghaire, tugtar léiriú dúinn ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás siúd uirthi féin agus ar a mbeirt mhac. É sin a phlé. (20 marc)",
+      "questionText": "(f) 4F. Dánta Breise – Caoineadh Airt Uí Laoghaire Freagair (i), (ii) agus (iii) thíos. Nóta: Bain úsáid as Leagan 1 nó Leagan 2 (lgh 13-14 thall) den dán i do fhreagraí. (i) Sa dán Caoineadh Airt Uí Laoghaire, tugtar léiriú dúinn ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás siúd uirthi féin agus ar a mbeirt mhac. É sin a phlé. (20 marc) (ii) Tabhair sampla amháin, i d’fhocail féin, den atmaisféar drámatúil sa dán. Is leor dhá phointe eolais as an dán faoin sampla sin. (10 marc) (iii) Scríobh síos tréith amháin de chuid Airt. Tabhair dhá phointe eolais as an dán faoin tréith sin. (10 marc)",
       "totalMarks": 40,
       "topicId": "irish-6-6",
       "conceptId": "irish-literature-4-irish-6-6",
       "paperPage": 12,
-      "paperTraceScore": 65350,
+      "paperTraceScore": 111593,
       "schemePage": 45,
       "schemeTraceScore": 36191,
       "taskRequirements": [
@@ -30416,10 +30564,10 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "eolas-i",
+          "label": "(i) Eolas",
           "kind": "award",
-          "maxMarks": 35,
+          "maxMarks": 17,
           "permittedMarks": [
             0,
             1,
@@ -30438,30 +30586,63 @@
             14,
             15,
             16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35
+            17
           ],
           "guidanceKind": "indicative",
           "guidance": [
-            "4F. Dánta Breise – Caoineadh Airt Uí Laoghaire Freagair (i), (ii) agus (iii). (i) Sa dán Caoineadh Airt Uí Laoghaire, tugtar léiriú dúinn ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás siúd uirthi féin agus ar a mbeirt mhac.’ É sin a phlé.",
-            "Eolas = 17 marc Catagóir Eolas (17 marc) Sármhaith Plé an-chuimsitheach ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás uirthi féin agus ar a mbeirt mhac Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don dán Smaointe forbartha go sármhaith 15-17 An-mhaith Plé cuimsitheach ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás uirthi féin agus ar a mbeirt mhac Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha an-mhaith don dán Smaointe forbartha go han-mhaith 12-14 Maith Plé maith ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás uirthi féin agus ar a mbeirt mhac Tuiscint mhaith léirithe sna pointí eolais Tagairtí ábhartha, téagartha maithe don dán 9-11 Measartha Plé measartha ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás uirthi féin agus ar a mbeirt mhac Eolas bearnach, míchruinn agus lochtach 6-8 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-5"
+            "Sa dán Caoineadh Airt Uí Laoghaire, tugtar léiriú dúinn ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás siúd uirthi féin agus ar a mbeirt mhac.’ É sin a phlé. Eolas = 17 marc Catagóir Eolas (17 marc) Sármhaith Plé an-chuimsitheach ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás uirthi féin agus ar a mbeirt mhac Tuiscint an-shoiléir léirithe sna pointí eolais Tagairtí sármhaithe, sárthéagartha don dán Smaointe forbartha go sármhaith 15-17 An-mhaith Plé cuimsitheach ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás uirthi féin agus ar a mbeirt mhac",
+            "Tuiscint shoiléir léirithe sna pointí eolais Tagairtí an-téagartha an-mhaith don dán Smaointe forbartha go han-mhaith 12-14 Maith Plé maith ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás uirthi féin agus ar a mbeirt mhac Tuiscint mhaith léirithe sna pointí eolais Tagairtí ábhartha, téagartha maithe don dán 9-11 Measartha Plé measartha ar ghrá Eibhlín d’Art Ó Laoghaire agus ar an mbuille tubaisteach a bhuail a bhás uirthi féin agus ar a mbeirt mhac Eolas bearnach, míchruinn agus lochtach 6-8 Lag/An-lag Eolas an-bhearnach, an-mhíchruinn agus an-lochtach 0-5 Nótaí tacaíochta",
+            "• Tá dianghrá Eibhlín d’Art soiléir sa dán…glaonn sí ainmneacha ceana air mar shampla…Mo ghrá go daingean tú/Mo chara go daingean tú/A mhuirnín mh’anama… • Bhí sí dúnta i ngrá leis ón gcéad lá a chonaic sí é…is cuimhin léi é go beacht – bhí sé ag ‘ceann tí an mhargaidh’…thit sí i ngrá leis láithreach agus bhí sí sásta a clann agus a cairde a fhágáil chun éalú leis i bhfad ó bhaile… • Fógraíonn sí go hoscailte nach raibh aiféala uirthi faoina rogha fir…chaith Art go fial léi…mhaisigh sé an teach di…flúirse bia aici…leaba chompordach clúdaithe le clúmh lachan aici…ní raibh aon bhrú",
+            "uirthi éirí go luath…bhí Art go maith as agus ní raibh aon cheal orthu… • Cuimhníonn sí ar dhathúlacht Airt…é gléasta suas go péacach le hata a raibh ribín óir air…bhíodh sé ag dul timpeall go bagrach ar a chapall agus ag cur eagla ar a naimhde…d’iompair sé claíomh agus scanraigh sé daoine lena chuid geáitsí…ba ghalánta an radharc é agus bhíodh fiú na Sasanaigh ag umhlú síos go talamh dó… • Tá an cur síos ar conas a inseoidh sí dá mbeirt mhac go bhfuil a n-athair marbh an-truamhéalach …beidh na buachaillí beaga ag fiafraí di cár fhág sí a n-athair agus beidh uirthi a rá leo faoi bhrón",
+            "gur fhág sí é i gCill na Martar…briseadh croí na mac sna línte Glaofaidh siad ar a n-athair/Is ní bheidh sé acu le freagairt… • Toisc go raibh Eibhlín chomh mór i ngrá le hArt, chreid sí go raibh sé dochloíte…níor chreid sí é nuair a chonaic sí a chapall ag filleadh abhaile fuilsmeartha gan a mharcach... • Bhí Eibhlín cosúil le bean mhire agus thóg si trí léim ar mhuin a capaill ag brostú chun na háite ina raibh a fear céile ina luí marbh…chuir sé uafás uirthi go bhfuair sé bás gan sagart…d’ól sí fuil Airt ionas go mbeadh cuid di i gcónaí aici mar bhí grá chomh mór sin aici d’Art…labhraíonn Eibhlín go díreach",
+            "le corp a fir mhairbh ag cur a grá in iúl agus í ag iarraidh a tocht bróin a chur di…"
+          ]
+        },
+        {
+          "id": "eolas-ii",
+          "label": "(ii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Tabhair sampla amháin, i d’fhocail féin, den atmaisféar drámatúil sa dán. Is leor dhá phointe eolais as an dán faoin sampla sin. Eolas = 9 marc Sampla den atmaisféar drámatúil = 1 mharc Pointe eolais 1 = 4 mharc Pointe eolais 2 = 4 mharc Samplaí • Tá drámatúlacht sna línte ina bhfuil cur síos ar an gcéad uair a chonaic Eibhlín Art…ba chosúil gur thit sí i ngrá leis láithreach…d’éalaigh sí óna muintir agus óna cairde féin chun Art a phósadh… b’éigean di íobairtí a dhéanamh agus dul i bhfad ó bhaile leis… • Tá an cur síos ar Art agus ar a gheáitsí drámatúil…‘Rompsáil bhagartach’...na Sasanaigh ag umhlú síos",
+            "go talamh dó…ba ghalánta an duine é…is féidir é a shamhlú ag marcaíocht timpeall go mórtasach ag cur oilc ar a naimhde… • Tá na línte a chuireann síos ar an tslí a bhfuair Eibhlín amach go raibh Art marbh drámatúil…an cur síos cumasach ar chapall Airt ag filleadh abhaile fuilsmeartha gan a mharcach… • Tá drámatúlacht ag baint leis an tslí a labhraíonn Eibhlín go díreach le hArt faoi mar dá mbeadh sé fós beo... • Tá an cur síos ar fhreagairt Eibhlín ar fheiceáil chapall Airt ag filleadh gan marcach an-drámatúil… Catagóir Marc as 4 Sármhaith An-mhaith Maith Measartha Lag/An-lag",
+            "bhí a fhios aici láithreach cad a bhí tar éis tarlú agus tháinig líonrith uirthi…thug sí léim go tairseach, an dara léim go geata agus an tríú léim ar an gcapall chun go dtabharfadh sé chuig Art í…Eibhlín ag ól fhuil an duine mhairbh thar a bheith drámatúil…"
+          ]
+        },
+        {
+          "id": "eolas-iii",
+          "label": "(iii) Eolas",
+          "kind": "award",
+          "maxMarks": 9,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "Scríobh síos tréith amháin de chuid Airt. Tabhair dhá phointe eolais as an dán faoin tréith sin. Eolas = 9 marc An tréith a lua = 1 mharc Dhá phointe eolais = 4 mharc + 4 mharc Nótaí tacaíochta • Fear fíordhathúil, rómánsúil, mealltach…an tslí a raibh sé gléasta an chéad uair a chonaic Eibhlín é… • Fear díomasach/sotalach/gáifeach/uaibhreach/uasal ba ea é…hata péacach le ribín óir air… • Fear flaithiúil ba ea é…chaith sé go fial le hEibhlín…seomraí a phéinteáil, neart le hithe aici… • Bhí ‘claíomh cinn airgid’ aige a léirigh a chrógacht, a ghaisciúlacht agus an eagla a chuir sé",
+            "ar a naimhde…léirigh sé bród agus mórtas lena ‘lámh dheas chalma’… • Bhí sé dána/meargánta/misniúil/fearúil…bhí ‘rompsáil bhagarthach’ar siúl aige…geáitsíocht bhagrach d’fhonn eagla a chur ar a naimhde…bhí a naimhde ag géilleadh dó agus bhí eagla orthu roimhe… • Bhí saibhreas Airt feiceálach…níor cheil sé é…bhí capall breá aige ag pramsáil timpeall…claíomh cinn airgid agus éadaí galánta… • Duine dílis, grámhar ba ea é… Catagóir Marc as 4 Sármhaith An-mhaith Maith Measartha Lag/An-lag"
           ]
         },
         {
@@ -30495,6 +30676,11 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
+      "schemePages": [
+        45,
+        46,
+        47
+      ],
       "paperFileid": "LC001ALP200IV"
     },
     {

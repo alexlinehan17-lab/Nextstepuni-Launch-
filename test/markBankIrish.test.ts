@@ -89,8 +89,8 @@ const family = (card: { id: string }) => {
   return 'literature';
 };
 
-describe('Irish all-question census', () => {
-  it('accounts for every selectable response on all twenty written papers', () => {
+describe('Irish legacy generated-card ledger (not a completeness audit)', () => {
+  it('accounts for the generated cards on twenty recent written papers', () => {
     expect(census.paperCount).toBe(20);
     expect(census.cardUnitCount).toBe(400);
     expect(census.authoredCount).toBe(400);
@@ -101,7 +101,7 @@ describe('Irish all-question census', () => {
       paper.cardUnits === paper.authored + paper.queued)).toBe(true);
   });
 
-  it('pins the independently audited count for every paper', () => {
+  it('pins the legacy output count for each paper while the independent audit proceeds', () => {
     const expected = new Map([
       ['hl-1', 17], ['hl-2', 26], ['ol-1', 15], ['ol-2', 22],
     ]);
@@ -224,6 +224,33 @@ describe('Irish prompt, paper and source integrity', () => {
       /Cuid\s+[ABC]\s+ar\s+leanúint|Freagair\s+do\s+rogha\s+ceann\s+amháin\s+as\s*$/i
         .test(card.questionText));
     expect(furniture.map(card => card.id)).toEqual([]);
+  });
+
+  it('retains all compulsory Q4F parts and their published allocations, including cross-page scheme guidance', () => {
+    const reviewed = [
+      [2021, [19, 7, 9], [46, 49], 'Cén t-atmaisféar'],
+      [2022, [19, 8, 8], [48, 50], 'Cén mheadaracht'],
+      [2023, [19, 7, 9], [47, 49], 'Chloífinn fuath is díoltas'],
+      [2024, [19, 7, 9], [47, 50], 'Sin é do dhoras'],
+      [2025, [17, 9, 9], [45, 47], 'Scríobh síos tréith amháin'],
+    ] as const;
+    for (const [year, knowledge, pages, essentialText] of reviewed) {
+      const card = byId.get(`irish-${year}-hl-p2-literature-4-f`)!;
+      expect(card.questionText).toMatch(/\(i\).*\(ii\).*\(iii\)/);
+      expect(card.questionText).toContain(essentialText);
+      expect(card.questionText.match(/\(\d+ mh?arc\)/g)).toEqual([
+        '(20 marc)', '(10 marc)', '(10 marc)',
+      ]);
+      expect(card.totalMarks).toBe(40);
+      expect(irishRubric(card).criteria.map(c => [c.id, c.maxMarks])).toEqual([
+        ['eolas-i', knowledge[0]], ['eolas-ii', knowledge[1]],
+        ['eolas-iii', knowledge[2]], ['gaeilge', 5],
+      ]);
+      expect(card.schemeCitation).toContain(`p.${pages[0]}–${pages[1]}`);
+      expect(card.sourceMaterial?.pages.length).toBeGreaterThan(0);
+      expect(irishMarks(card, Object.fromEntries(irishRubric(card).criteria
+        .map(c => [irishScoreId(c.id), c.maxMarks])))).toBe(40);
+    }
   });
 
   it('puts the official listening recording on every listening card and nowhere else', () => {
