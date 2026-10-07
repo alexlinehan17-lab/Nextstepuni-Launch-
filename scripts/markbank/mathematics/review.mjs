@@ -17,6 +17,16 @@ for (const paper of mathematicsReviews()) {
   }
 }
 
+/** Only independent review records can supply an exact booklet identity. */
+export function reviewedMathematicsSource(cardId) {
+  const paper = reviewedCards.get(cardId)?.paper;
+  return paper && {
+    paperFileid: paper.paperFileid,
+    schemeFileid: paper.schemeFileid,
+    lang: paper.lang,
+  };
+}
+
 /** Metadata-only correction: existing identities and answer content survive. */
 export function applyMathematicsReview(authored) {
   const review = reviewedCards.get(authored.id);

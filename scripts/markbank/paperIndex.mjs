@@ -106,6 +106,23 @@ const labelCovers = (label) => {
 
 const stripPdf = (f) => (f ? String(f).replace(/\.pdf$/, '') : null);
 
+/** Resolve a visually reviewed question/scheme pair against the actual index.
+ * Older Mathematics sittings contain standard and Project Maths booklets with
+ * identical paper numbers. A label match alone cannot identify those sources.
+ */
+export function resolveIndexedPaperFileid(subjectId, year, level, source) {
+  const matches = (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
+    .filter(entry => entry.year === year && entry.level === level
+      && entry.lang === (source.lang ?? (subjectId === 'irish' ? 'iv' : 'ev')))
+    .flatMap(entry => entry.papers ?? [])
+    .filter(paper => paper.doc?.f === source.paperFileid
+      && paper.scheme?.f === source.schemeFileid);
+  if (matches.length !== 1) {
+    throw new Error(`No unique indexed question/scheme pair for ${subjectId} ${year} ${level}: ${source.paperFileid} / ${source.schemeFileid}`);
+  }
+  return stripPdf(matches[0].doc.f);
+}
+
 /**
  * The file id of the QUESTION PAPER holding a card's section, or null.
  *

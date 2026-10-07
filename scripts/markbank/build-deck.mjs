@@ -24,12 +24,12 @@ import { createHash } from 'node:crypto';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { resolvePaperFileid } from './paperIndex.mjs';
+import { resolvePaperFileid, resolveIndexedPaperFileid } from './paperIndex.mjs';
 import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
-import { applyMathematicsReview, validateMathematicsReviewSources, assertReviewedMathematicsCards } from './mathematics/review.mjs';
+import { applyMathematicsReview, validateMathematicsReviewSources, assertReviewedMathematicsCards, reviewedMathematicsSource } from './mathematics/review.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -677,13 +677,19 @@ function relabelDistractors(c) {
  * answered without seeing which diagram is meant. Where two cards claim the same
  * question, the one carrying a figure wins.
  */
+// A repeated printed reference in two distinct Mathematics booklets is two
+// tasks. Preserve ordinary duplicate resolution within each exact booklet.
+const questionIdentity = c => SUBJECT_ID === 'maths'
+  ? JSON.stringify([reviewedMathematicsSource(c.id)?.paperFileid ?? null, c.questionRef])
+  : c.questionRef;
 const byQuestion = new Map();
 for (const c of cards) {
-  const prev = byQuestion.get(c.questionRef);
-  if (!prev) { byQuestion.set(c.questionRef, c); continue; }
+  const key = questionIdentity(c);
+  const prev = byQuestion.get(key);
+  if (!prev) { byQuestion.set(key, c); continue; }
   const prevHasFigure = Boolean(prev.figureKey);
   const thisHasFigure = Boolean(c.figureKey);
-  if (thisHasFigure && !prevHasFigure) byQuestion.set(c.questionRef, c);
+  if (thisHasFigure && !prevHasFigure) byQuestion.set(key, c);
 }
 
 const out = [];
@@ -695,7 +701,7 @@ const seenHash = new Map();
 let unresolvedPapers = 0;
 
 for (const c of cards) {
-  if (byQuestion.get(c.questionRef) !== c) {
+  if (byQuestion.get(questionIdentity(c)) !== c) {
     dropped.push(`${c.id}: superseded for ${c.questionRef} by a card carrying its figure`);
     continue;
   }
@@ -775,9 +781,9 @@ for (const c of cards) {
   // Not merely "has a figure": a question about labelled parts needs those
   // labels DECODED, so it must be a full diagram card with a label key.
   // Reviewed Mathematics tasks use the original graph with its printed labels.
-  const reviewedMathematicsSource = SUBJECT_ID === 'maths' && c.mathematicsScale
+  const hasReviewedMathematicsSource = SUBJECT_ID === 'maths' && c.mathematicsScale
     && c.sourceMaterial?.kind === 'source-question' && c.sourceMaterial.pages?.length;
-  if (namesLetters && !reviewedMathematicsSource && !(c.figureKey && Array.isArray(c.labelKey) && c.labelKey.length)) {
+  if (namesLetters && !hasReviewedMathematicsSource && !(c.figureKey && Array.isArray(c.labelKey) && c.labelKey.length)) {
     dropped.push(`${c.id}: names lettered parts but carries no labelled figure`);
     continue;
   }
@@ -867,7 +873,10 @@ for (const c of cards) {
   const paperSection = SUBJECT_ID === 'maths'
     ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
     : c.section;
-  const fileid = resolvePaperFileid(SUBJECT_ID, year, level, paperSection);
+  const reviewedSource = SUBJECT_ID === 'maths' ? reviewedMathematicsSource(c.id) : undefined;
+  const fileid = reviewedSource
+    ? resolveIndexedPaperFileid(SUBJECT_ID, year, level, reviewedSource)
+    : resolvePaperFileid(SUBJECT_ID, year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
   out.push({ id: c.id, level, code: `  {

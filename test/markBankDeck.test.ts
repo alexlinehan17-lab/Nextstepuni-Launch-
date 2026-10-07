@@ -395,7 +395,7 @@ describe('every card points at the question paper it came from', () => {
   });
 
   test('and at the paper holding its own section', async () => {
-    const { resolvePaperFileid } = await import('../scripts/markbank/paperIndex.mjs');
+    const { resolvePaperFileid, resolveIndexedPaperFileid } = await import('../scripts/markbank/paperIndex.mjs');
     const bad = SAMPLE_CARDS
       .filter(c => {
         // Maths uses A/B for marking-scheme tariff sections, while the source
@@ -404,8 +404,14 @@ describe('every card points at the question paper it came from', () => {
         const sourceSection = c.subjectId === 'maths'
           ? c.questionRef.match(/\bPaper\s+([12])\b/i)?.[1] ?? c.section
           : c.section;
-        return c.paperFileid !== null
-          && c.paperFileid !== resolvePaperFileid(c.subjectId, c.year, c.level, sourceSection);
+        const source = c.subjectId === 'maths' && 'mathematicsScale' in c
+          && c.mathematicsScale && c.sourceMaterial?.sourceFileid
+          ? { paperFileid: c.sourceMaterial.sourceFileid, schemeFileid: c.mathematicsScale.schemeFileid }
+          : undefined;
+        const expected = source
+          ? resolveIndexedPaperFileid(c.subjectId, c.year, c.level, source)
+          : resolvePaperFileid(c.subjectId, c.year, c.level, sourceSection);
+        return c.paperFileid !== null && c.paperFileid !== expected;
       })
       .map(c => `${c.questionRef} (Section ${c.section}) -> ${c.paperFileid}`);
     expect(bad, show(bad)).toEqual([]);

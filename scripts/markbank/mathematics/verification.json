@@ -239,5 +239,12 @@
     "runtimeIdsSha256": "5223c2aaaec7268f26e8665576e86127f5e3d0d634a4c05af6ccf48ac0faddf5",
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
+  },
+  "bookletBinding": {
+    "indexedQuestionAndSchemePair": true,
+    "standardAndProjectMathsDisambiguated": true,
+    "reviewedQuestionDeduplicationIncludesBooklet": true,
+    "targetedRegressionTests": 183,
+    "typecheck": "passed"
   }
 }

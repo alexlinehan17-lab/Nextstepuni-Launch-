@@ -39,6 +39,22 @@ describe('Mathematics booklet identities', () => {
       ...question, fileid: 'LC003ALP100IV.pdf',
     }));
   });
+
+  it('resolves the exact standard or Project Maths question/scheme pair', async () => {
+    const { resolveIndexedPaperFileid } = await import('../scripts/markbank/paperIndex.mjs');
+    const standard = { paperFileid: 'LC003BLP100EV.pdf', schemeFileid: 'LC003BLP000EV.pdf' };
+    const project = { paperFileid: 'LC003BLP130EV.pdf', schemeFileid: 'LC003BLP030EV.pdf' };
+    expect(resolveIndexedPaperFileid('maths', 2013, 'foundation', standard)).toBe('LC003BLP100EV');
+    expect(resolveIndexedPaperFileid('maths', 2013, 'foundation', project)).toBe('LC003BLP130EV');
+    expect(() => resolveIndexedPaperFileid('maths', 2013, 'foundation', {
+      ...project, schemeFileid: standard.schemeFileid,
+    })).toThrow('No unique indexed question/scheme pair');
+    expect(() => resolveIndexedPaperFileid('maths', 2013, 'foundation', {
+      ...standard, paperFileid: standard.schemeFileid,
+    })).toThrow('No unique indexed question/scheme pair');
+    expect(() => resolveIndexedPaperFileid('maths', 2013, 'higher', project))
+      .toThrow('No unique indexed question/scheme pair');
+  });
 });
 
 describe('2025 Higher Mathematics Paper 2 independent source review', () => {
