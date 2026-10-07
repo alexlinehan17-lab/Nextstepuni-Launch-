@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2022, 2023, 2024 and 2026",
-  "runtimeCards": 1049,
-  "reviewedTasks": 378,
+  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2021, 2022, 2023, 2024 and 2026",
+  "runtimeCards": 1097,
+  "reviewedTasks": 426,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed through Foundation 2023\u20132026; 2022 data passed generation, typecheck and regression tests",
+  "productionBuild": "passed through Foundation 2023\u20132026; 2021\u20132022 data passed generation, typecheck and regression tests",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -128,6 +128,18 @@
     "regressionWorkers": 1
   },
   "latestBatch": {
+    "paper": "2021 Foundation",
+    "independentlyReviewedTasks": 48,
+    "targetedRegressionTests": 158,
+    "previousRuntimeIdsRetained": 1049,
+    "offeredMarks": 390,
+    "candidateMarks": 230,
+    "paperPagesInspected": 28,
+    "schemePagesInspected": 28,
+    "runtimeIdsSha256": "3d8e4c2706be3d84d3306a922eaaeb7574f29291fd6deaf83ce260816ca18a43",
+    "regressionWorkers": 1
+  },
+  "foundation2022": {
     "paper": "2022 Foundation",
     "independentlyReviewedTasks": 53,
     "targetedRegressionTests": 154,

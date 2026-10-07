@@ -44821,5 +44821,1407 @@
    }
   ],
   "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q1-a-i-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-a-i-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q1(a)(i), Q1(a)(ii)",
+  "stem": "Below is a set of nine numbers: 1, 2, 2, 3, 3, 3, 4, 5, 13.",
+  "questionText": "(i) Find the mean of the nine numbers. (ii) What is the mode of the numbers?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q1-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Mean fully correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q1-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Mode: 3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q1-b-i",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-b-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q1(b)(i)",
+  "stem": "Two students in a maths class did a project to test the battery life of 2 different battery brands, Brand A and Brand B. They recorded how long 11 of each brand of battery lasted. The results are shown in the stem-and-leaf diagrams below.",
+  "questionText": "What is the median battery life of each type?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q1-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Brand A: 45 hours",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q1-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Brand B: 48 hours",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q1-b-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-b-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q1(b)(ii)",
+  "stem": "Two students in a maths class did a project to test the battery life of 2 different battery brands, Brand A and Brand B. They recorded how long 11 of each brand of battery lasted. The results are shown in the stem-and-leaf diagrams below.",
+  "questionText": "What is the range of each type?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q1-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Brand A: 61 – 30 = 31 hours",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q1-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Brand B: 62 – 34 = 28 hours",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q1-b-iii",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-b-iii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q1(b)(iii)",
+  "stem": "Two students in a maths class did a project to test the battery life of 2 different battery brands, Brand A and Brand B. They recorded how long 11 of each brand of battery lasted. The results are shown in the stem-and-leaf diagrams below.",
+  "questionText": "Based on the students’ tests, which brand do you think is longer lasting? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q1-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Brand B",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q1-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Reason: Median value is higher, or any reasonable explanation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q2-a",
+  "topicId": "maths-2-1",
+  "conceptId": "q2-a",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q2(a)",
+  "stem": "",
+  "questionText": "Construct the triangle XYZ where |XY| = 8·5 cm, |∠XYZ| = 90° and |YZ| = 5·3 cm. The point X is marked in for you in the space below.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Tolerance lines: ± 0·2 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Three elements correct but triangle not complete",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q2-b",
+  "topicId": "maths-2-1",
+  "conceptId": "q2-b",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q2(b)",
+  "stem": "The triangle XYZ has |XY| = 8·5 cm, |∠XYZ| = 90° and |YZ| = 5·3 cm.",
+  "questionText": "Use Pythagoras’ Theorem to find the length of [XZ]. Give your answer correct to the nearest cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "= 10 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q2-c",
+  "topicId": "maths-3-3",
+  "conceptId": "q2-c",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q2(c)",
+  "stem": "The triangle XYZ has |XY| = 8·5 cm, |∠XYZ| = 90° and |YZ| = 5·3 cm. X, Y, and Z represent the position of 3 towns on a map. The scale on the map is 1 cm = 5 km.",
+  "questionText": "Find the distance between Town X and Town Y.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "8·5 × 5 = 42·5 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q2-d-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q2-d-i-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q2(d)(i), Q2(d)(ii)",
+  "stem": "The triangle XYZ has |XY| = 8·5 cm, |∠XYZ| = 90° and |YZ| = 5·3 cm. X, Y, and Z represent the position of 3 towns on a map. The scale on the map is 1 cm = 5 km. John was raising money for a local charity. He got sponsorship for a charity cycle ride. One friend promised to give John 70 cent for each km he cycled. John cycled from Town X to Town Y and back again to Town X.",
+  "questionText": "(i) How many km did John cycle? (ii) How much money, in total, did John’s friend promise to give him?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q2-d-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "42·5 × 2 = 85 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q2-d-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "85 × 70 = 5950 cent",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q3-a",
+  "topicId": "maths-3-1",
+  "conceptId": "q3-a",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q3(a)",
+  "stem": "",
+  "questionText": "Put the following numbers in order, starting with the lowest: 40%, 5/12, 0·45, 3/8.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Fractions correctly expressed as decimals",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q3-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q3-b",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q3(b)",
+  "stem": "Viggo is 9 years old and his sister Wren is 6 years old. €75 is divided between them in the ratio of their ages.",
+  "questionText": "How much money does Viggo get?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "9 + 6 = 15 [or 3 + 2 = 5 etc]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "= €45",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q3-c-i-ii",
+  "topicId": "maths-3-1",
+  "conceptId": "q3-c-i-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q3(c)(i), Q3(c)(ii)",
+  "stem": "A student was asked to use a calculator to find the answer to (2·4 × 5)². The student pressed the following buttons on the calculator: 2 · 4 × 5 x² =.",
+  "questionText": "(i) What answer did the student get? (ii) The correct answer to (2·4 × 5)² is 144. Explain the steps the student should have taken to get the correct answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q3-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Add bracket before 2 and after 5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q4-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q4-a-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q4(a)(i)",
+  "stem": "Frankie wanted to buy a particular bicycle. He checked its price in 2 bicycle shops. Firstly, in Buy-Cycles, the price of the bicycle before VAT was included was €215. The VAT rate was 20%. Next, in Bikes-4-All, the normal price including VAT was €330, but there was a sale with a 25% reduction on the normal price.",
+  "questionText": "Find the price Frankie would have to pay for the bicycle in each shop.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q4-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "€215 + 20% of €215 = €215 + €43 = €258",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q4-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "= €247·50",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q4-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q4-a-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q4(a)(ii)",
+  "stem": "Frankie wanted to buy a particular bicycle. He checked its price in 2 bicycle shops. Firstly, in Buy-Cycles, the price of the bicycle before VAT was included was €215. The VAT rate was 20%. Next, in Bikes-4-All, the normal price including VAT was €330, but there was a sale with a 25% reduction on the normal price.",
+  "questionText": "How much would Frankie save by buying the cheaper bicycle?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q4-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "258 – 247·50 = €10·50",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q4-b-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q4-b-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q4(b)(i)",
+  "stem": "Frankie’s aunt Breda lives in New York. Breda has to fly to Moscow on a business trip. Before her flight, she changes 1200 US dollars to Russian roubles. The exchange rate is 1 US dollar = 70·59 roubles.",
+  "questionText": "How many roubles does she get?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q4-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "70·59 × 1200 = 84708 roubles",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q4-b-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q4-b-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q4(b)(ii)",
+  "stem": "New York time is 7 hours behind Moscow time. Breda’s flight leaves New York on Wednesday at 11.00 a.m. The flight takes 12 hours.",
+  "questionText": "What time and day will it be in Moscow when she arrives?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q4-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 6.00 am Thursday Moscow time",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q5-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q5-a-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q5(a)(i)",
+  "stem": "Alice thinks that taking a shower should not use as much water as taking a bath. She measures the rate of flow from the shower to be 11·5 litres per minute at a certain setting and says that 9 minutes is the average time for a shower.",
+  "questionText": "How many litres of water, on average, does taking a shower use?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "11·5 × 9 = 103·5 litres",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q5-a-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "q5-a-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q5(a)(ii)",
+  "stem": "Alice estimates the shape of the bath to be a rectangular tank. The length of the bath is 130 cm, the width is 50 cm and the depth of the water is 28 cm.",
+  "questionText": "Find the volume of the water in the bath. Give your answer in litres. (1000 cm³ = 1 litre).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q5-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "130 × 50 × 28 = 182000",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q5-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "182000 ÷ 1000 = 182 litres",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q5-b-i",
+  "topicId": "maths-3-4",
+  "conceptId": "q5-b-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q5(b)(i)",
+  "stem": "The rectangle XYZW is the image of the rectangle ABCD by an enlargement of scale factor k = 3, as shown below. |AB| = 5 cm and the area of ABCD is 12·5 cm².",
+  "questionText": "Find |AD|.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q5-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "= 2·5 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q5-b-ii",
+  "topicId": "maths-2-4",
+  "conceptId": "q5-b-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q5(b)(ii)",
+  "stem": "The rectangle XYZW is the image of the rectangle ABCD by an enlargement of scale factor k = 3, as shown below. |AB| = 5 cm and the area of ABCD is 12·5 cm².",
+  "questionText": "Find the area of XYZW.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q5-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "5 × 3 = 15",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q5-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "2·5 × 3 = 7·5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q5-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "15 × 7·5 = 112·5 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q5-b-iii",
+  "topicId": "maths-2-4",
+  "conceptId": "q5-b-iii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q5(b)(iii)",
+  "stem": "The rectangle XYZW is the image of the rectangle ABCD by an enlargement of scale factor k = 3, as shown below. |AB| = 5 cm and the area of ABCD is 12·5 cm².",
+  "questionText": "Construct the centre of the enlargement on the diagram at the top of the page.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q5-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "2 correct construction lines drawn but not intersecting",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q6-a-i-ii",
+  "topicId": "maths-2-4",
+  "conceptId": "q6-a-i-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q6(a)(i), Q6(a)(ii)",
+  "stem": "A(−3, 5), B(3, 5), C(3, −5), and D(−3, −5) are 4 points, as shown on the grid below.",
+  "questionText": "Answer the following. The answer in each case is A, B, C, or D. (i) The image of A by the central symmetry in the origin is ____. (ii) The image of C by the axial symmetry in the y-axis is ____.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q6-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Both symmetries drawn correctly on diagram but not labelled",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q6-b",
+  "topicId": "maths-3-4",
+  "conceptId": "q6-b",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q6(b)",
+  "stem": "A(−3, 5), B(3, 5), C(3, −5), and D(−3, −5) are 4 points, as shown on the grid below.",
+  "questionText": "Find the area of △ABC, in cm², given that each small square box is 0·5 cm × 0·5 cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "|𝐴𝐵| = 12 × 0·5 = 6 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "|𝐵𝐶| = 20 × 0·5 = 10 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q6-c-i",
+  "topicId": "maths-2-3",
+  "conceptId": "q6-c-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q6(c)(i)",
+  "stem": "The diagram below shows the path of an aeroplane taking off from a runway at an angle of A° to the horizontal. The plane leaves the runway at the point X. The remaining length of the runway when the plane leaves the ground is 1650 m. The height of the aeroplane when it is over the end of the runway is 350 metres.",
+  "questionText": "From the triangle in the diagram, write down tan A.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q6-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "𝟑𝟓𝟎\n𝟏𝟔𝟓𝟎",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q6-c-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "q6-c-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q6(c)(ii)",
+  "stem": "The diagram below shows the path of an aeroplane taking off from a runway at an angle of A° to the horizontal. The plane leaves the runway at the point X. The remaining length of the runway when the plane leaves the ground is 1650 m. The height of the aeroplane when it is over the end of the runway is 350 metres.",
+  "questionText": "Use your answer to part (i) to find the size of the angle A. Give your answer correct to the nearest degree.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q6-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 12°",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q7-a-i",
+  "topicId": "maths-1-1",
+  "conceptId": "q7-a-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q7(a)(i)",
+  "stem": "Eilinóir is choosing subjects to study for her Leaving Certificate. She has three subjects left to choose: one language, one science subject, and one business subject. She has to choose from the table below. Language: French, German, Italian, Spanish. Science: Agricultural Science, Biology, Chemistry, Physics. Business: Accounting, Business, Economics.",
+  "questionText": "In how many different ways can Eilinóir choose her three subjects?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "4 × 4 × 3 = 48 ways",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q7-a-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "q7-a-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q7(a)(ii)",
+  "stem": "Eilinóir is choosing subjects to study for her Leaving Certificate. She has three subjects left to choose: one language, one science subject, and one business subject. She has to choose from the table below. Language: French, German, Italian, Spanish. Science: Agricultural Science, Biology, Chemistry, Physics. Business: Accounting, Business, Economics. Her friend, Noah, also has to choose subjects from the same list. He will not choose Italian in the language section. He must choose Agricultural Science or Biology from the Science section.",
+  "questionText": "In how many different ways can Noah choose his three subjects?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "3 × 2 × 3 = 18 ways",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q7-b-i-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "q7-b-i-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q7(b)(i), Q7(b)(ii)",
+  "stem": "Each student in Eilinóir’s year plays one, and only one, of the three sports: Volleyball, Basketball and Football. The probability of a student playing a particular sport has been calculated using the number of students playing each sport. Some of the probabilities are shown in the table below: Volleyball 0·2, Basketball [blank], Football 0·5.",
+  "questionText": "(i) One student is selected at random from the year. What is the probability that the student plays basketball? (ii) One student is selected at random. What is the probability that the student plays Volleyball or Football?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q7-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "1 – (0·2 + 0·5) = 0·3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q7-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "0·2 + 0·5 = 0·7",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q7-b-iii",
+  "topicId": "maths-1-2",
+  "conceptId": "q7-b-iii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q7(b)(iii)",
+  "stem": "Each student in Eilinóir’s year plays one, and only one, of the three sports: Volleyball, Basketball and Football. The probability of a student playing a particular sport has been calculated using the number of students playing each sport. Some of the probabilities are shown in the table below: Volleyball 0·2, Basketball [blank], Football 0·5. There are 120 students in Eilinoir’s year.",
+  "questionText": "How many of these students play volleyball?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q7-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "120 × 0·2 = 24 students",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q8-a-i",
+  "topicId": "maths-4-1",
+  "conceptId": "q8-a-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q8(a)(i)",
+  "stem": "Orla creates a pattern of numbers. To do this she follows the instructions in the table below: take a starting number, multiply by 5, then subtract 2 from the answer to obtain the outcome. The first row has starting number 1, calculation 1 × 5 then 5 − 2, and outcome 3. The other starting numbers are 2, 3 and 4.",
+  "questionText": "Complete the table. (The first row is done for you.)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "3 correct outcomes but rest of table not filled in",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q8-a-ii",
+  "topicId": "maths-4-2",
+  "conceptId": "q8-a-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q8(a)(ii)",
+  "stem": "Orla creates a pattern of numbers. To do this she follows the instructions in the table below: take a starting number, multiply by 5, then subtract 2 from the answer to obtain the outcome. The first row has starting number 1, calculation 1 × 5 then 5 − 2, and outcome 3. The other starting numbers are 2, 3 and 4.",
+  "questionText": "What starting number will give an outcome of 53?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "53 + 2 = 55",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "55 ÷ 5 = 11",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q8-b-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q8-b-i-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q8(b)(i), Q8(b)(ii)",
+  "stem": "Alex did a test. There were two sections in the test: Section A (80 marks) and Section B (120 marks). He got 55% in Section A and 75% in Section B.",
+  "questionText": "(i) How many marks did Alex get in section A of the test? (ii) How many marks did Alex get in total in the test?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q8-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "44 + 90 = 134 marks",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q8-b-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "q8-b-iii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2021 FL Q8(b)(iii)",
+  "stem": "Alex did a test. There were two sections in the test: Section A (80 marks) and Section B (120 marks). He got 55% in Section A and 75% in Section B.",
+  "questionText": "What was Alex’s overall percentage in the test?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q8-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "80 + 120 = 200 (total marks)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q8-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "= 67%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q9-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "q9-a-i-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q9(a)(i), Q9(a)(ii)",
+  "stem": "A family living in Dublin went on a trip to Galway, leaving at 10:00 a.m. They returned home later that day. On the way the family stopped for a break in Athlone. The Distance-Time graph shows part of the family’s journey, the journey as far as Galway.",
+  "questionText": "Use the graph to answer the following. (i) How long did the family spend in Athlone? (ii) What is the distance from Dublin to Galway?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q9-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "210 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q9-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Tolerance time = ± 10 mins",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q9-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-b",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q9(b)",
+  "stem": "A family living in Dublin went on a trip to Galway, leaving at 10:00 a.m. They returned home later that day. On the way the family stopped for a break in Athlone. The Distance-Time graph shows part of the family’s journey, the journey as far as Galway.",
+  "questionText": "The family left Dublin at 10.00 a.m. At what time did the family arrive in Galway?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "= 13:30 or 1.30",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q9-c-i",
+  "topicId": "maths-5-1",
+  "conceptId": "q9-c-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q9(c)(i)",
+  "stem": "A family living in Dublin went on a trip to Galway, leaving at 10:00 a.m. They returned home later that day. On the way the family stopped for a break in Athlone. The Distance-Time graph shows part of the family’s journey, the journey as far as Galway. The family stayed in Galway for four hours and then returned home to Dublin. The return journey took 3½ hours at a steady speed, without any break.",
+  "questionText": "Show this information on the Distance-Time graph on the previous page.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q9-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "One addition to graph correct and one outside tolerance (± ¼ hour)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q9-c-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-c-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q9(c)(ii)",
+  "stem": "A family living in Dublin went on a trip to Galway, leaving at 10:00 a.m. They returned home later that day. On the way the family stopped for a break in Athlone. The Distance-Time graph shows part of the family’s journey, the journey as far as Galway. The family stayed in Galway for four hours and then returned home to Dublin. The return journey took 3½ hours at a steady speed, without any break.",
+  "questionText": "What was the average speed on the return journey?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q9-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 60 km/h",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q9-d-e",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-d-e",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q9(d), Q9(e)",
+  "stem": "A family living in Dublin went on a trip to Galway, leaving at 10:00 a.m. They returned home later that day. On the way the family stopped for a break in Athlone. The Distance-Time graph shows part of the family’s journey, the journey as far as Galway. The family stayed in Galway for four hours and then returned home to Dublin. The return journey took 3½ hours at a steady speed, without any break.",
+  "questionText": "(d) The cost of fuel used by the car for the day trip was €40. What was the average cost, per km, of the fuel? Give your answer correct to the nearest cent. (e) What time was it when the family arrived home?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q9-d-e-solution-1",
+    "kind": "point",
+    "verbatim": "Distance: 210 × 2 = 420 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q9-d-e-solution-2",
+    "kind": "point",
+    "verbatim": "= 10 cent",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q9-d-e-solution-3",
+    "kind": "point",
+    "verbatim": "= 9.00 pm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q10-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-a-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q10(a)(i)",
+  "stem": "Jack must varnish a large solid wooden rectangular door, as shown in the diagram below. The door is 2·4 m high and 1·2 m wide.",
+  "questionText": "Show that the area of the door is 2·88 m².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "1·2 × 2·4 = 2·88 m2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q10-a-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-a-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q10(a)(ii)",
+  "stem": "Jack must varnish a large solid wooden rectangular door, as shown in the diagram below. The door is 2·4 m high and 1·2 m wide. The varnish is to be applied to both sides of the door. Each side needs 2 coats of varnish. One can of varnish will cover 4·5 m².",
+  "questionText": "How many cans of varnish does Jack need to buy?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q10-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Area: 2·88 × 2 × 2 = 11·52 m2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q10-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "3 cans",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q10-a-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-a-iii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q10(a)(iii)",
+  "stem": "Jack must varnish a large solid wooden rectangular door, as shown in the diagram below. The door is 2·4 m high and 1·2 m wide. The varnish is to be applied to both sides of the door. Each side needs 2 coats of varnish. One can of varnish will cover 4·5 m².",
+  "questionText": "Each can of varnish costs €14·50. Find how much Jack pays for the varnish.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q10-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "14·5 × 3 = €43·50",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q10-a-iv",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-a-iv",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q10(a)(iv)",
+  "stem": "Jack must varnish a large solid wooden rectangular door, as shown in the diagram below. The door is 2·4 m high and 1·2 m wide. Jack must also attach a draft excluder around the edge of the door.",
+  "questionText": "Find, in metres, the perimeter of the door.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q10-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "1·2 + 2·4 + 1·2 + 2·4 = 7·2 m",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q10-b-i",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-b-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q10(b)(i)",
+  "stem": "The formula for calculating BMI (Body Mass Index) is BMI = Weight/(Height)², where weight is measured in Kilograms (kg) and height is measured in metres (m). Jack’s height is 177 cm and his weight is 73 kg.",
+  "questionText": "Write 177 cm in metres.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q10-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "1·77 m",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q10-b-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "q10-b-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q10(b)(ii)",
+  "stem": "The formula for calculating BMI (Body Mass Index) is BMI = Weight/(Height)², where weight is measured in Kilograms (kg) and height is measured in metres (m). Jack’s height is 177 cm and his weight is 73 kg.",
+  "questionText": "Complete the calculation below to find Jack’s BMI: Jack’s BMI = Weight/(Height)² = [ ]/( )² = ____. Give your answer correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q10-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Both figures correctly inserted but calculation incorrect or not completed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q11-a-i",
+  "topicId": "maths-1-6",
+  "conceptId": "q11-a-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q11(a)(i)",
+  "stem": "The bar chart below shows data on the gross income per household in Ireland in 2016 (CSO). Note: 20 − 40 means 20 and over but less than 40.",
+  "questionText": "What percentage of households had an income less than €60 000?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q11-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "17 + 26 + 18 = 61%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q11-a-ii-iii",
+  "topicId": "maths-1-6",
+  "conceptId": "q11-a-ii-iii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q11(a)(ii), Q11(a)(iii)",
+  "stem": "The bar chart below shows data on the gross income per household in Ireland in 2016 (CSO). Note: 20 − 40 means 20 and over but less than 40.",
+  "questionText": "(ii) If a household was chosen at random, what was the probability that the income was €120 000 or greater than €120 000? (iii) In which income group does the median of the data lie?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q11-a-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "3 + 8 = 11%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q11-a-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "in 40 – 60 thousand income group",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q11-b-i-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "q11-b-i-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q11(b)(i), Q11(b)(ii)",
+  "stem": "The pie chart below shows the annual expenditure of the Palmer household. The angle sizes for some of the items are given in the table below: Housing 90°, Transport 54°, Food 72°, Clothes/Footwear 18°, Fuel/Lighting 18°, Services, Goods, Other Expenditure [blank].",
+  "questionText": "(i) Complete the table. (ii) What percentage of the annual expenditure was spent on food?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q11-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "360 – (90 + 54 + 72 + 18 + 18)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q11-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "= 20%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q11-c-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-c-i",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q11(c)(i)",
+  "stem": "Shane and Amanda are a married couple with two children. They both work and have a combined gross income of €42 000 per year. They pay tax at the standard rate of 20%. Their tax credit is €3300.",
+  "questionText": "Find the amount of income tax they pay.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q11-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "8400 – 3300 = €5100",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2021-fl-q11-c-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-c-ii",
+  "level": "foundation",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 FL Q11(c)(ii)",
+  "stem": "Shane and Amanda are a married couple with two children. They both work and have a combined gross income of €42 000 per year. They pay tax at the standard rate of 20%. Their tax credit is €3300. Shane and Amanda also pay total PRSI of €1680 and total USC of €1190.",
+  "questionText": "Find their annual take-home pay after the deductions of income tax, PRSI and USC.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-fl-q11-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Deductions: 5100 + 1680 + 1190 =7970",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2021-fl-q11-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Take-home pay: 42000 – 7970 = €34030",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2021 Foundation paper and scheme on 2026-10-07."
  }
 ]

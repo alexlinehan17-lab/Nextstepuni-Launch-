@@ -1,0 +1,1615 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2021,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "single",
+  "paperFileid": "LC003BLP000EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "26ca2e3155a686aa63690cebc120d03479e78d04a833fd6f640d35684a359d17",
+  "schemeSha256": "1e4cc8ae7b0bcf3666f8efbc854166fd34b7cedd66f30a6dc22cdc5b284820f6",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 28 paper pages and all 28 scheme pages; each detailed allocation checked against the scheme summary on page 7.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 30,
+    "8": 30,
+    "9": 50,
+    "10": 50,
+    "11": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    6,
+    7,
+    8
+  ],
+  "sourceNotes": [
+    "2021 candidate total is 230 marks: six Section A questions at 30 and one Section B question at 50. All offered questions total 390 marks.",
+    "48 separately marked units. All shared scales retain every printed component, including Q9(d)/(e), Q11(a)(ii)/(iii) and Q11(b)(i)/(ii).",
+    "Q2(a) physical triangle construction includes the scale-aware ruler. Q6(b) uses the explicitly labelled 0·5 cm grid; coordinates do not replace the printed grid scale.",
+    "Original graphs, stem-and-leaf diagrams, construction workspaces and full scheme solutions are available through the page reader."
+  ],
+  "cards": [
+    {
+      "id": "maths-2021-fl-q1-a-i-ii",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Below is a set of nine numbers: 1, 2, 2, 3, 3, 3, 4, 5, 13.",
+      "questionText": "(i) Find the mean of the nine numbers. (ii) What is the mode of the numbers?",
+      "solutionQuotes": [
+        "Mean fully correct",
+        "Mode: 3"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Two students in a maths class did a project to test the battery life of 2 different battery brands, Brand A and Brand B. They recorded how long 11 of each brand of battery lasted. The results are shown in the stem-and-leaf diagrams below.",
+      "questionText": "What is the median battery life of each type?",
+      "solutionQuotes": [
+        "Brand A: 45 hours",
+        "Brand B: 48 hours"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Two students in a maths class did a project to test the battery life of 2 different battery brands, Brand A and Brand B. They recorded how long 11 of each brand of battery lasted. The results are shown in the stem-and-leaf diagrams below.",
+      "questionText": "What is the range of each type?",
+      "solutionQuotes": [
+        "Brand A: 61 – 30 = 31 hours",
+        "Brand B: 62 – 34 = 28 hours"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q1-b-iii",
+      "printedParts": [
+        "Q1(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Two students in a maths class did a project to test the battery life of 2 different battery brands, Brand A and Brand B. They recorded how long 11 of each brand of battery lasted. The results are shown in the stem-and-leaf diagrams below.",
+      "questionText": "Based on the students’ tests, which brand do you think is longer lasting? Give a reason for your answer.",
+      "solutionQuotes": [
+        "Brand B",
+        "Reason: Median value is higher, or any reasonable explanation"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "",
+      "questionText": "Construct the triangle XYZ where |XY| = 8·5 cm, |∠XYZ| = 90° and |YZ| = 5·3 cm. The point X is marked in for you in the space below.",
+      "solutionQuotes": [
+        "Tolerance lines: ± 0·2 cm",
+        "Three elements correct but triangle not complete"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2021-fl-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The triangle XYZ has |XY| = 8·5 cm, |∠XYZ| = 90° and |YZ| = 5·3 cm.",
+      "questionText": "Use Pythagoras’ Theorem to find the length of [XZ]. Give your answer correct to the nearest cm.",
+      "solutionQuotes": [
+        "= 10 cm"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The triangle XYZ has |XY| = 8·5 cm, |∠XYZ| = 90° and |YZ| = 5·3 cm. X, Y, and Z represent the position of 3 towns on a map. The scale on the map is 1 cm = 5 km.",
+      "questionText": "Find the distance between Town X and Town Y.",
+      "solutionQuotes": [
+        "8·5 × 5 = 42·5 km"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q2-d-i-ii",
+      "printedParts": [
+        "Q2(d)(i)",
+        "Q2(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The triangle XYZ has |XY| = 8·5 cm, |∠XYZ| = 90° and |YZ| = 5·3 cm. X, Y, and Z represent the position of 3 towns on a map. The scale on the map is 1 cm = 5 km. John was raising money for a local charity. He got sponsorship for a charity cycle ride. One friend promised to give John 70 cent for each km he cycled. John cycled from Town X to Town Y and back again to Town X.",
+      "questionText": "(i) How many km did John cycle? (ii) How much money, in total, did John’s friend promise to give him?",
+      "solutionQuotes": [
+        "42·5 × 2 = 85 km",
+        "85 × 70 = 5950 cent"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "",
+      "questionText": "Put the following numbers in order, starting with the lowest: 40%, 5/12, 0·45, 3/8.",
+      "solutionQuotes": [
+        "Fractions correctly expressed as decimals"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Viggo is 9 years old and his sister Wren is 6 years old. €75 is divided between them in the ratio of their ages.",
+      "questionText": "How much money does Viggo get?",
+      "solutionQuotes": [
+        "9 + 6 = 15 [or 3 + 2 = 5 etc]",
+        "= €45"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q3-c-i-ii",
+      "printedParts": [
+        "Q3(c)(i)",
+        "Q3(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "A student was asked to use a calculator to find the answer to (2·4 × 5)². The student pressed the following buttons on the calculator: 2 · 4 × 5 x² =.",
+      "questionText": "(i) What answer did the student get? (ii) The correct answer to (2·4 × 5)² is 144. Explain the steps the student should have taken to get the correct answer.",
+      "solutionQuotes": [
+        "Add bracket before 2 and after 5"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Frankie wanted to buy a particular bicycle. He checked its price in 2 bicycle shops. Firstly, in Buy-Cycles, the price of the bicycle before VAT was included was €215. The VAT rate was 20%. Next, in Bikes-4-All, the normal price including VAT was €330, but there was a sale with a 25% reduction on the normal price.",
+      "questionText": "Find the price Frankie would have to pay for the bicycle in each shop.",
+      "solutionQuotes": [
+        "€215 + 20% of €215 = €215 + €43 = €258",
+        "= €247·50"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Frankie wanted to buy a particular bicycle. He checked its price in 2 bicycle shops. Firstly, in Buy-Cycles, the price of the bicycle before VAT was included was €215. The VAT rate was 20%. Next, in Bikes-4-All, the normal price including VAT was €330, but there was a sale with a 25% reduction on the normal price.",
+      "questionText": "How much would Frankie save by buying the cheaper bicycle?",
+      "solutionQuotes": [
+        "258 – 247·50 = €10·50"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Frankie’s aunt Breda lives in New York. Breda has to fly to Moscow on a business trip. Before her flight, she changes 1200 US dollars to Russian roubles. The exchange rate is 1 US dollar = 70·59 roubles.",
+      "questionText": "How many roubles does she get?",
+      "solutionQuotes": [
+        "70·59 × 1200 = 84708 roubles"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "New York time is 7 hours behind Moscow time. Breda’s flight leaves New York on Wednesday at 11.00 a.m. The flight takes 12 hours.",
+      "questionText": "What time and day will it be in Moscow when she arrives?",
+      "solutionQuotes": [
+        "= 6.00 am Thursday Moscow time"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Alice thinks that taking a shower should not use as much water as taking a bath. She measures the rate of flow from the shower to be 11·5 litres per minute at a certain setting and says that 9 minutes is the average time for a shower.",
+      "questionText": "How many litres of water, on average, does taking a shower use?",
+      "solutionQuotes": [
+        "11·5 × 9 = 103·5 litres"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Alice estimates the shape of the bath to be a rectangular tank. The length of the bath is 130 cm, the width is 50 cm and the depth of the water is 28 cm.",
+      "questionText": "Find the volume of the water in the bath. Give your answer in litres. (1000 cm³ = 1 litre).",
+      "solutionQuotes": [
+        "130 × 50 × 28 = 182000",
+        "182000 ÷ 1000 = 182 litres"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The rectangle XYZW is the image of the rectangle ABCD by an enlargement of scale factor k = 3, as shown below. |AB| = 5 cm and the area of ABCD is 12·5 cm².",
+      "questionText": "Find |AD|.",
+      "solutionQuotes": [
+        "= 2·5 cm"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry",
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The rectangle XYZW is the image of the rectangle ABCD by an enlargement of scale factor k = 3, as shown below. |AB| = 5 cm and the area of ABCD is 12·5 cm².",
+      "questionText": "Find the area of XYZW.",
+      "solutionQuotes": [
+        "5 × 3 = 15",
+        "2·5 × 3 = 7·5",
+        "15 × 7·5 = 112·5 cm2"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q5-b-iii",
+      "printedParts": [
+        "Q5(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The rectangle XYZW is the image of the rectangle ABCD by an enlargement of scale factor k = 3, as shown below. |AB| = 5 cm and the area of ABCD is 12·5 cm².",
+      "questionText": "Construct the centre of the enlargement on the diagram at the top of the page.",
+      "solutionQuotes": [
+        "2 correct construction lines drawn but not intersecting"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q6-a-i-ii",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "A(−3, 5), B(3, 5), C(3, −5), and D(−3, −5) are 4 points, as shown on the grid below.",
+      "questionText": "Answer the following. The answer in each case is A, B, C, or D. (i) The image of A by the central symmetry in the origin is ____. (ii) The image of C by the axial symmetry in the y-axis is ____.",
+      "solutionQuotes": [
+        "Both symmetries drawn correctly on diagram but not labelled"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A(−3, 5), B(3, 5), C(3, −5), and D(−3, −5) are 4 points, as shown on the grid below.",
+      "questionText": "Find the area of △ABC, in cm², given that each small square box is 0·5 cm × 0·5 cm.",
+      "solutionQuotes": [
+        "|𝐴𝐵| = 12 × 0·5 = 6 cm",
+        "|𝐵𝐶| = 20 × 0·5 = 10 cm"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q6-c-i",
+      "printedParts": [
+        "Q6(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "The diagram below shows the path of an aeroplane taking off from a runway at an angle of A° to the horizontal. The plane leaves the runway at the point X. The remaining length of the runway when the plane leaves the ground is 1650 m. The height of the aeroplane when it is over the end of the runway is 350 metres.",
+      "questionText": "From the triangle in the diagram, write down tan A.",
+      "solutionQuotes": [
+        "𝟑𝟓𝟎\n𝟏𝟔𝟓𝟎"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q6-c-ii",
+      "printedParts": [
+        "Q6(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "The diagram below shows the path of an aeroplane taking off from a runway at an angle of A° to the horizontal. The plane leaves the runway at the point X. The remaining length of the runway when the plane leaves the ground is 1650 m. The height of the aeroplane when it is over the end of the runway is 350 metres.",
+      "questionText": "Use your answer to part (i) to find the size of the angle A. Give your answer correct to the nearest degree.",
+      "solutionQuotes": [
+        "= 12°"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Eilinóir is choosing subjects to study for her Leaving Certificate. She has three subjects left to choose: one language, one science subject, and one business subject. She has to choose from the table below. Language: French, German, Italian, Spanish. Science: Agricultural Science, Biology, Chemistry, Physics. Business: Accounting, Business, Economics.",
+      "questionText": "In how many different ways can Eilinóir choose her three subjects?",
+      "solutionQuotes": [
+        "4 × 4 × 3 = 48 ways"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Eilinóir is choosing subjects to study for her Leaving Certificate. She has three subjects left to choose: one language, one science subject, and one business subject. She has to choose from the table below. Language: French, German, Italian, Spanish. Science: Agricultural Science, Biology, Chemistry, Physics. Business: Accounting, Business, Economics. Her friend, Noah, also has to choose subjects from the same list. He will not choose Italian in the language section. He must choose Agricultural Science or Biology from the Science section.",
+      "questionText": "In how many different ways can Noah choose his three subjects?",
+      "solutionQuotes": [
+        "3 × 2 × 3 = 18 ways"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q7-b-i-ii",
+      "printedParts": [
+        "Q7(b)(i)",
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Each student in Eilinóir’s year plays one, and only one, of the three sports: Volleyball, Basketball and Football. The probability of a student playing a particular sport has been calculated using the number of students playing each sport. Some of the probabilities are shown in the table below: Volleyball 0·2, Basketball [blank], Football 0·5.",
+      "questionText": "(i) One student is selected at random from the year. What is the probability that the student plays basketball? (ii) One student is selected at random. What is the probability that the student plays Volleyball or Football?",
+      "solutionQuotes": [
+        "1 – (0·2 + 0·5) = 0·3",
+        "0·2 + 0·5 = 0·7"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Each student in Eilinóir’s year plays one, and only one, of the three sports: Volleyball, Basketball and Football. The probability of a student playing a particular sport has been calculated using the number of students playing each sport. Some of the probabilities are shown in the table below: Volleyball 0·2, Basketball [blank], Football 0·5. There are 120 students in Eilinoir’s year.",
+      "questionText": "How many of these students play volleyball?",
+      "solutionQuotes": [
+        "120 × 0·2 = 24 students"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Orla creates a pattern of numbers. To do this she follows the instructions in the table below: take a starting number, multiply by 5, then subtract 2 from the answer to obtain the outcome. The first row has starting number 1, calculation 1 × 5 then 5 − 2, and outcome 3. The other starting numbers are 2, 3 and 4.",
+      "questionText": "Complete the table. (The first row is done for you.)",
+      "solutionQuotes": [
+        "3 correct outcomes but rest of table not filled in"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Orla creates a pattern of numbers. To do this she follows the instructions in the table below: take a starting number, multiply by 5, then subtract 2 from the answer to obtain the outcome. The first row has starting number 1, calculation 1 × 5 then 5 − 2, and outcome 3. The other starting numbers are 2, 3 and 4.",
+      "questionText": "What starting number will give an outcome of 53?",
+      "solutionQuotes": [
+        "53 + 2 = 55",
+        "55 ÷ 5 = 11"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q8-b-i-ii",
+      "printedParts": [
+        "Q8(b)(i)",
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Alex did a test. There were two sections in the test: Section A (80 marks) and Section B (120 marks). He got 55% in Section A and 75% in Section B.",
+      "questionText": "(i) How many marks did Alex get in section A of the test? (ii) How many marks did Alex get in total in the test?",
+      "solutionQuotes": [
+        "44 + 90 = 134 marks"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Alex did a test. There were two sections in the test: Section A (80 marks) and Section B (120 marks). He got 55% in Section A and 75% in Section B.",
+      "questionText": "What was Alex’s overall percentage in the test?",
+      "solutionQuotes": [
+        "80 + 120 = 200 (total marks)",
+        "= 67%"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q9-a-i-ii",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "A family living in Dublin went on a trip to Galway, leaving at 10:00 a.m. They returned home later that day. On the way the family stopped for a break in Athlone. The Distance-Time graph shows part of the family’s journey, the journey as far as Galway.",
+      "questionText": "Use the graph to answer the following. (i) How long did the family spend in Athlone? (ii) What is the distance from Dublin to Galway?",
+      "solutionQuotes": [
+        "210 km",
+        "Tolerance time = ± 10 mins"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic",
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "A family living in Dublin went on a trip to Galway, leaving at 10:00 a.m. They returned home later that day. On the way the family stopped for a break in Athlone. The Distance-Time graph shows part of the family’s journey, the journey as far as Galway.",
+      "questionText": "The family left Dublin at 10.00 a.m. At what time did the family arrive in Galway?",
+      "solutionQuotes": [
+        "= 13:30 or 1.30"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "A family living in Dublin went on a trip to Galway, leaving at 10:00 a.m. They returned home later that day. On the way the family stopped for a break in Athlone. The Distance-Time graph shows part of the family’s journey, the journey as far as Galway. The family stayed in Galway for four hours and then returned home to Dublin. The return journey took 3½ hours at a steady speed, without any break.",
+      "questionText": "Show this information on the Distance-Time graph on the previous page.",
+      "solutionQuotes": [
+        "One addition to graph correct and one outside tolerance (± ¼ hour)"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic",
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "A family living in Dublin went on a trip to Galway, leaving at 10:00 a.m. They returned home later that day. On the way the family stopped for a break in Athlone. The Distance-Time graph shows part of the family’s journey, the journey as far as Galway. The family stayed in Galway for four hours and then returned home to Dublin. The return journey took 3½ hours at a steady speed, without any break.",
+      "questionText": "What was the average speed on the return journey?",
+      "solutionQuotes": [
+        "= 60 km/h"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q9-d-e",
+      "printedParts": [
+        "Q9(d)",
+        "Q9(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic",
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "A family living in Dublin went on a trip to Galway, leaving at 10:00 a.m. They returned home later that day. On the way the family stopped for a break in Athlone. The Distance-Time graph shows part of the family’s journey, the journey as far as Galway. The family stayed in Galway for four hours and then returned home to Dublin. The return journey took 3½ hours at a steady speed, without any break.",
+      "questionText": "(d) The cost of fuel used by the car for the day trip was €40. What was the average cost, per km, of the fuel? Give your answer correct to the nearest cent. (e) What time was it when the family arrived home?",
+      "solutionQuotes": [
+        "Distance: 210 × 2 = 420 km",
+        "= 10 cent",
+        "= 9.00 pm"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Jack must varnish a large solid wooden rectangular door, as shown in the diagram below. The door is 2·4 m high and 1·2 m wide.",
+      "questionText": "Show that the area of the door is 2·88 m².",
+      "solutionQuotes": [
+        "1·2 × 2·4 = 2·88 m2"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Jack must varnish a large solid wooden rectangular door, as shown in the diagram below. The door is 2·4 m high and 1·2 m wide. The varnish is to be applied to both sides of the door. Each side needs 2 coats of varnish. One can of varnish will cover 4·5 m².",
+      "questionText": "How many cans of varnish does Jack need to buy?",
+      "solutionQuotes": [
+        "Area: 2·88 × 2 × 2 = 11·52 m2",
+        "3 cans"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Jack must varnish a large solid wooden rectangular door, as shown in the diagram below. The door is 2·4 m high and 1·2 m wide. The varnish is to be applied to both sides of the door. Each side needs 2 coats of varnish. One can of varnish will cover 4·5 m².",
+      "questionText": "Each can of varnish costs €14·50. Find how much Jack pays for the varnish.",
+      "solutionQuotes": [
+        "14·5 × 3 = €43·50"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q10-a-iv",
+      "printedParts": [
+        "Q10(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Jack must varnish a large solid wooden rectangular door, as shown in the diagram below. The door is 2·4 m high and 1·2 m wide. Jack must also attach a draft excluder around the edge of the door.",
+      "questionText": "Find, in metres, the perimeter of the door.",
+      "solutionQuotes": [
+        "1·2 + 2·4 + 1·2 + 2·4 = 7·2 m"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The formula for calculating BMI (Body Mass Index) is BMI = Weight/(Height)², where weight is measured in Kilograms (kg) and height is measured in metres (m). Jack’s height is 177 cm and his weight is 73 kg.",
+      "questionText": "Write 177 cm in metres.",
+      "solutionQuotes": [
+        "1·77 m"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The formula for calculating BMI (Body Mass Index) is BMI = Weight/(Height)², where weight is measured in Kilograms (kg) and height is measured in metres (m). Jack’s height is 177 cm and his weight is 73 kg.",
+      "questionText": "Complete the calculation below to find Jack’s BMI: Jack’s BMI = Weight/(Height)² = [ ]/( )² = ____. Give your answer correct to the nearest whole number.",
+      "solutionQuotes": [
+        "Both figures correctly inserted but calculation incorrect or not completed"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q11-a-i",
+      "printedParts": [
+        "Q11(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The bar chart below shows data on the gross income per household in Ireland in 2016 (CSO). Note: 20 − 40 means 20 and over but less than 40.",
+      "questionText": "What percentage of households had an income less than €60 000?",
+      "solutionQuotes": [
+        "17 + 26 + 18 = 61%"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q11-a-ii-iii",
+      "printedParts": [
+        "Q11(a)(ii)",
+        "Q11(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics",
+        "mathematics-foundation-probability"
+      ],
+      "stem": "The bar chart below shows data on the gross income per household in Ireland in 2016 (CSO). Note: 20 − 40 means 20 and over but less than 40.",
+      "questionText": "(ii) If a household was chosen at random, what was the probability that the income was €120 000 or greater than €120 000? (iii) In which income group does the median of the data lie?",
+      "solutionQuotes": [
+        "3 + 8 = 11%",
+        "in 40 – 60 thousand income group"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q11-b-i-ii",
+      "printedParts": [
+        "Q11(b)(i)",
+        "Q11(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The pie chart below shows the annual expenditure of the Palmer household. The angle sizes for some of the items are given in the table below: Housing 90°, Transport 54°, Food 72°, Clothes/Footwear 18°, Fuel/Lighting 18°, Services, Goods, Other Expenditure [blank].",
+      "questionText": "(i) Complete the table. (ii) What percentage of the annual expenditure was spent on food?",
+      "solutionQuotes": [
+        "360 – (90 + 54 + 72 + 18 + 18)",
+        "= 20%"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q11-c-i",
+      "printedParts": [
+        "Q11(c)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Shane and Amanda are a married couple with two children. They both work and have a combined gross income of €42 000 per year. They pay tax at the standard rate of 20%. Their tax credit is €3300.",
+      "questionText": "Find the amount of income tax they pay.",
+      "solutionQuotes": [
+        "8400 – 3300 = €5100"
+      ]
+    },
+    {
+      "id": "maths-2021-fl-q11-c-ii",
+      "printedParts": [
+        "Q11(c)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Shane and Amanda are a married couple with two children. They both work and have a combined gross income of €42 000 per year. They pay tax at the standard rate of 20%. Their tax credit is €3300. Shane and Amanda also pay total PRSI of €1680 and total USC of €1190.",
+      "questionText": "Find their annual take-home pay after the deductions of income tax, PRSI and USC.",
+      "solutionQuotes": [
+        "Deductions: 5100 + 1680 + 1190 =7970",
+        "Take-home pay: 42000 – 7970 = €34030"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        5
+      ],
+      "classification": "answer-selection",
+      "reason": "The student compares the battery brands and justifies a choice of answer. Both brands remain the single data-comparison prompt."
+    },
+    {
+      "pages": [
+        14
+      ],
+      "classification": "answer-selection",
+      "reason": "A, B, C and D are possible mathematical answers to the two symmetry questions, not alternative practice prompts."
+    },
+    {
+      "pages": [
+        16
+      ],
+      "classification": "mathematical-counting",
+      "reason": "The subject menu and Noah’s restrictions define the sample spaces to be counted. The characters choose subjects; the candidate answers both separately marked counting tasks."
+    },
+    {
+      "pages": [
+        17,
+        24
+      ],
+      "classification": "probability-sample-space",
+      "reason": "Random student or household selection is part of a probability experiment, not a prompt-choice instruction."
+    }
+  ],
+  "selectionDecisions": {
+    "3:f1713f7429cb3cac": {
+      "classification": "exam-level-selection",
+      "reason": "The exam asks candidates to choose six Section A questions and one Section B question. All separately marked tasks are kept for practice."
+    },
+    "3:296da6a9c4228391": {
+      "classification": "exam-level-selection",
+      "reason": "The exam asks candidates to choose six Section A questions and one Section B question. All separately marked tasks are kept for practice."
+    },
+    "4:6e551eed7324d47e": {
+      "classification": "exam-level-selection",
+      "reason": "The exam asks candidates to choose six Section A questions and one Section B question. All separately marked tasks are kept for practice."
+    },
+    "16:eb7465f0febef8e1": {
+      "classification": "mathematical-counting",
+      "reason": "The subject menu and Noah’s restrictions define the sample spaces to be counted. The characters choose subjects; the candidate answers both separately marked counting tasks."
+    },
+    "16:7b5ccf43c6a2851b": {
+      "classification": "mathematical-counting",
+      "reason": "The subject menu and Noah’s restrictions define the sample spaces to be counted. The characters choose subjects; the candidate answers both separately marked counting tasks."
+    },
+    "16:6b1b5886479b49a4": {
+      "classification": "mathematical-counting",
+      "reason": "The subject menu and Noah’s restrictions define the sample spaces to be counted. The characters choose subjects; the candidate answers both separately marked counting tasks."
+    },
+    "16:bc4118f5cf8e3f72": {
+      "classification": "mathematical-counting",
+      "reason": "The subject menu and Noah’s restrictions define the sample spaces to be counted. The characters choose subjects; the candidate answers both separately marked counting tasks."
+    },
+    "16:afcf199702e83028": {
+      "classification": "mathematical-counting",
+      "reason": "The subject menu and Noah’s restrictions define the sample spaces to be counted. The characters choose subjects; the candidate answers both separately marked counting tasks."
+    },
+    "16:dcca51a98da01e43": {
+      "classification": "mathematical-counting",
+      "reason": "The subject menu and Noah’s restrictions define the sample spaces to be counted. The characters choose subjects; the candidate answers both separately marked counting tasks."
+    },
+    "16:65717365b48aa57e": {
+      "classification": "mathematical-counting",
+      "reason": "The subject menu and Noah’s restrictions define the sample spaces to be counted. The characters choose subjects; the candidate answers both separately marked counting tasks."
+    },
+    "16:451c4f16234baa98": {
+      "classification": "mathematical-counting",
+      "reason": "The subject menu and Noah’s restrictions define the sample spaces to be counted. The characters choose subjects; the candidate answers both separately marked counting tasks."
+    },
+    "20:4f1be8ad4523312d": {
+      "classification": "exam-level-selection",
+      "reason": "The exam asks candidates to choose six Section A questions and one Section B question. All separately marked tasks are kept for practice."
+    }
+  }
+}

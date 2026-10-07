@@ -8,6 +8,7 @@ import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
 import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
+import foundation2021 from '../scripts/markbank/mathematics/reviews/2021-foundation-single.json';
 import foundation2022 from '../scripts/markbank/mathematics/reviews/2022-foundation-single.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/maths/higher';
 import { resolveCurriculumSpecification, findCanonicalTopic } from '../curriculumRegistry';
@@ -116,6 +117,7 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 
 
 describe.each([
+  { year: 2021, count: 48, offered: 390, review: foundation2021 },
   { year: 2022, count: 53, offered: 390, review: foundation2022 },
   { year: 2023, count: 35, offered: 375, review: foundation2023 },
   { year: 2024, count: 38, offered: 375, review: foundation2024 },
@@ -158,6 +160,20 @@ describe.each([
 
 describe('Foundation Mathematics marking boundaries and source context', () => {
   const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
+
+  it('keeps the 2021 cross-letter journey scale and all shared prompts with their dependencies', () => {
+    const journey = task(2021, 'q9-d-e');
+    expect(journey.totalMarks).toBe(10);
+    expect(journey.questionText).toContain('(d)');
+    expect(journey.questionText).toContain('(e)');
+    expect(journey.sourceMaterial?.pages).toEqual([20, 21]);
+    expect(journey.stem).toContain('four hours');
+    expect(task(2021, 'q6-b').questionText).toContain('0·5 cm × 0·5 cm');
+    expect(task(2021, 'q2-a').sourceMaterial?.measurementRequired).toBe(true);
+    expect(task(2021, 'q10-a-iii').stem).toContain('2 coats');
+    expect(task(2021, 'q11-a-ii-iii').questionText).toContain('(iii)');
+    expect(task(2021, 'q7-a-ii').stem).toContain('Agricultural Science or Biology');
+  });
 
   it('retains all 2022 long-question marks and the paired scales without hiding component prompts', () => {
     for (const suffix of ['q6-a-ii-iii', 'q9-a-i-ii', 'q11-a-i-ii']) {
