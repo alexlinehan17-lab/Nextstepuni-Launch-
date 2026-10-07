@@ -260,8 +260,36 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
+  it('finds all 147 translated tasks under the same topics and practice identities', () => {
+    expect(atlas.translatedMarkBankCards).toHaveLength(147);
+    for (const join of atlas.translatedMarkBankCards) {
+      const card = get(join.cardId);
+      const english = atlas.markBankCards.find(candidate => candidate.cardId === join.cardId)!;
+      const task = review.tasks.find(candidate => candidate.cardIds.includes(join.cardId))!;
+      expect(join.n).toBe(english.n);
+      const ids = examTopicIdsForQuestion('agricultural-science', card.level, join.year, 'main', join.n, 'single', 'iv', join.fileid);
+      expect(ids).toEqual(task.examTopicIds);
+      for (const topic of ids) {
+        expect(siblingsFor('agricultural-science', topic).some(sibling =>
+          sibling.lang === 'iv' && sibling.year === join.year && sibling.fileid === join.fileid && sibling.n === join.n)).toBe(true);
+      }
+      const map = JSON.parse(readFileSync(resolve(__dirname, `../public/paper-answers/${join.year}/${join.fileid}.json`), 'utf8')) as PaperAnswerMap;
+      const anchor = map.q.find(question => question.n === join.n)!;
+      expect(anchor.parentN).toBe(card.questionRef.match(/Q(\d+)/)?.[1]);
+      expect(anchor.paperRegion?.length).toBeGreaterThan(0);
+      expect(anchor.region.length).toBeGreaterThan(0);
+      // Edition-specific tariffs must not overwrite the English Mark Bank.
+      const differs = ['agsci-2010-ol-q9f', 'agsci-2010-ol-q12dii'].includes(join.cardId);
+      expect(join.marksPerRoute).toBe(differs ? 20 : card.totalMarks);
+      if (differs) {
+        expect(card.totalMarks).toBe(18);
+        expect(anchor.schemeNote).toContain('4 + 4 + 6 + 6');
+      }
+    }
+  });
+
   it('does not shorten whole-question crops when independently selectable parts are appended', () => {
-    for (const join of atlas.markBankCards) {
+    for (const join of [...atlas.markBankCards, ...atlas.translatedMarkBankCards]) {
       const map = JSON.parse(readFileSync(resolve(__dirname, `../public/paper-answers/${join.year}/${join.fileid}.json`), 'utf8')) as PaperAnswerMap;
       const old = map.q.filter(question => !question.parentN);
       for (const question of old) {

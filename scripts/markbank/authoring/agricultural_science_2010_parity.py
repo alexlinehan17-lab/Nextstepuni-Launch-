@@ -51,6 +51,8 @@ def paper_reviews():
             (5,'dtrí cinn ar bith de na péirí','closed','Q8(c): choose three of four comparisons, four routes.'),
             (5,'cheithre cinn ar bith','independent-task-selection','Q9: four separately priced explanations chosen from five, all five retained.'),
         ], [
+            {'questionN':'4','questionRef':'Q4(d)','paperPage':3,'schemePage':8,
+             'note':'The Irish scheme says the cow fed rolled barley passes more undigested grains. The English scheme says unrolled barley. The original Irish wording is preserved; the two editions differ on this experimental result.'},
             {'questionN':'7','questionRef':'Q7(b)','paperPage':4,'schemePage':10,
              'note':'Source lettering differs: the Irish question uses D/d for black/brown coats, but its official scheme prints B/b. Read Bb and bb in the scheme as Dd and dd respectively when answering this Irish question.'},
         ]),
@@ -89,6 +91,6 @@ def paper_reviews():
             'selectionDirectives':observed,'supplementarySelections':supplementary,
             'translationParity':'All original pages visually inspected. Printed tasks, diagrams and finite choices compared with English; source differences below prevent treating the schemes as identical.',
             'sourceNotes':notes,
-            'remaining':['Irish practice-task crop bindings and reader QA','Corpus-wide reconciliation'],
+            'remaining':['Irish practice-task reader QA','Corpus-wide reconciliation'],
         })
     return result

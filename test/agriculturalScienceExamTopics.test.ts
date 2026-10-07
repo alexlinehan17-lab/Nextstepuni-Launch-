@@ -148,7 +148,7 @@ describe('Agricultural Science exam-topic registry', () => {
       expect(live, `${expected.level}|${expected.lang}|${expected.year}|${expected.fileid}`).not.toBeNull();
       // Frozen whole-question baseline remains exact; newly reviewed parts
       // append stable identities without renumbering an existing question.
-      const additions = new Set(agriculturalSciencePractice.markBankCards
+      const additions = new Set([...agriculturalSciencePractice.markBankCards, ...agriculturalSciencePractice.translatedMarkBankCards]
         .filter(card => card.year === expected.year && card.fileid === expected.fileid)
         .map(card => card.n));
       expect(live!.q.filter(question => !additions.has(question.n)).map(question => question.n)).toEqual(expected.questions);

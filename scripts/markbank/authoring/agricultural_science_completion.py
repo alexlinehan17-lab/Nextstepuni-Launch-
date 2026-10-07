@@ -16,6 +16,7 @@ from pathlib import Path
 from agricultural_science_2010_hl import reviewed_tasks as reviewed_2010_hl, paper_review
 from agricultural_science_2010_ol import reviewed_tasks as reviewed_2010_ol, paper_review as ordinary_2010_review
 from agricultural_science_2010_parity import paper_reviews as irish_2010_reviews
+from agricultural_science_2010_irish_crops import attach_sources
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -128,13 +129,15 @@ def reviewed_tasks():
     ordinary_cards, ordinary_reviews = reviewed_2010_ol()
     cards.extend(ordinary_cards)
     reviews.extend(ordinary_reviews)
+    paper_reviews = [paper_review(), ordinary_2010_review(), *irish_2010_reviews()]
+    attach_sources(reviews, paper_reviews)
     for reviewed in cards:
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
                           'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':'2026-10-07'}
     return cards, {'status': 'in-progress', 'reviewedAt': '2026-10-07',
                    'addedCardIds': [c['id'] for c in cards if c['id'] != 'agsci-2025-ol-q8b'],
                    'correctedCardIds': ['agsci-2025-ol-q8b'], 'tasks': reviews,
-                   'paperReviews': [paper_review(), ordinary_2010_review(), *irish_2010_reviews()]}
+                   'paperReviews': paper_reviews}
 
 
 def main():

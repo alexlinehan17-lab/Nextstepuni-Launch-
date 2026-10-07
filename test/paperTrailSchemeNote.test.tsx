@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import VaultQuestionCard from '../components/PaperTrail/VaultQuestionCard';
 import answerMap from '../public/paper-answers/2010/LC024ALP000IV.pdf.json';
+import atlas from '../data/examTopics/agricultural-science-question-runtime.json';
 
 vi.mock('../components/PaperTrail/vaultDocs', () => ({ vaultPdf: vi.fn(async () => ({})) }));
 vi.mock('../components/PaperTrail/CropView', () => ({ default: () => <div>Original PDF crop</div> }));
@@ -14,10 +15,10 @@ beforeEach(() => {
 });
 
 describe('reviewed source discrepancies', () => {
-  it('reveals the actual Irish genetics source note with the scheme and hides it again', async () => {
-    const note = answerMap.q.find(q => q.n === '7')!.schemeNote!;
+  it.each(['7', atlas.translatedMarkBankCards.find(join => join.cardId === 'agsci-2010-hl-q7bii')!.n])('reveals the Irish genetics source note for question %s and hides it again', async n => {
+    const note = answerMap.q.find(q => q.n === n)!.schemeNote!;
     render(<VaultQuestionCard
-      sibling={{ subjectId:'agricultural-science',year:2010,level:'higher',lang:'iv',fileid:'LC024ALP000IV.pdf',paperKey:'single',n:'7' }}
+      sibling={{ subjectId:'agricultural-science',year:2010,level:'higher',lang:'iv',fileid:'LC024ALP000IV.pdf',paperKey:'single',n }}
       saved={false} onToggleReview={vi.fn()} onOpenInPaper={vi.fn()}
     />);
     const toggle = await screen.findByRole('button', { name:'Show the marking scheme' });

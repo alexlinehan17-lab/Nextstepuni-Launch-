@@ -44,7 +44,7 @@ def outputs():
     ], cwd=ROOT, text=True))
     topics = sorted({tid for task in review['tasks'] for tid in task['examTopicIds']})
     runtime = {'schemaVersion': 1, 'subjectId': 'agricultural-science', 'topicIds': topics,
-               'questionMappings': [], 'markBankCards': []}
+               'questionMappings': [], 'markBankCards': [], 'translatedMarkBankCards': []}
     maps = {}
     for task in review['tasks']:
         for cid in task['cardIds']:
@@ -87,6 +87,38 @@ def outputs():
                 [topics.index(tid) for tid in task['examTopicIds']],
             ])
             runtime['markBankCards'].append({'cardId': cid, 'year': card['year'], 'fileid': fileid, 'n': n})
+            for source in task.get('translatedSources', []):
+                translated_fileid = source['paperFileid']
+                translated_key = (card['year'], translated_fileid)
+                translated_entry = next(e for e in index if e['year']==card['year'] and e['level']==card['level'] and e['lang']==source['lang'])
+                assert translated_entry['papers'][0]['doc']['f'] == translated_fileid
+                if translated_key not in maps:
+                    path = ROOT / f'scripts/paper-trail/answers/{card["year"]}/{translated_fileid}.json'
+                    maps[translated_key] = json.loads(path.read_text())
+                translated_paper, translated_scheme = source['paperRegions'], source['schemeRegions']
+                translated_anchor = {
+                    'n': n, 'label': source['label'], 'conf': 1.0, 'mode': 'crop',
+                    'parentN': anchor['parentN'],
+                    'pP': translated_paper[0]['p'],
+                    'pY': [translated_paper[0]['r'][1], translated_paper[-1]['r'][3]],
+                    'paperRegion': translated_paper,
+                    'endP': translated_paper[-1]['p'], 'endY': translated_paper[-1]['r'][3],
+                    'region': translated_scheme,
+                }
+                if source.get('schemeNote'):
+                    translated_anchor['schemeNote'] = source['schemeNote']
+                old = next((q for q in maps[translated_key]['q'] if q['n']==n), None)
+                assert old is None or old==translated_anchor, f'Review changed for {translated_key} {n}; inspect before replacing'
+                if old is None:
+                    maps[translated_key]['q'].append(translated_anchor)
+                runtime['questionMappings'].append([
+                    'h' if card['level']=='higher' else 'o', 'i', card['year'], 'single', translated_fileid, n,
+                    [topics.index(tid) for tid in task['examTopicIds']],
+                ])
+                runtime['translatedMarkBankCards'].append({
+                    'cardId':cid,'year':card['year'],'lang':source['lang'],'fileid':translated_fileid,
+                    'n':n,'marksPerRoute':source['marksPerRoute'],
+                })
     # Edition-specific source notes also accompany the preserved whole-question
     # readers. A translation does not create a duplicate English Mark Bank card.
     for paper in review['paperReviews']:
