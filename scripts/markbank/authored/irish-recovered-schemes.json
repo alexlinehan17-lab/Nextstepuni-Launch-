@@ -1,0 +1,41 @@
+[
+  {
+    "year": 2010,
+    "level": "higher",
+    "fileid": "LC001ALP000EV.pdf",
+    "url": "https://www.examinations.ie/archive/markingschemes/2010/LC001ALP000EV.pdf",
+    "httpStatus": 200,
+    "contentType": "application/pdf",
+    "bytes": 262014,
+    "sha256": "e304dd29af73f46d972385ce1f625bce88a47a20010e63e2853c92ad3fbe0be5",
+    "pages": 32,
+    "localStagingPath": "tmp/irish-audit/verified-schemes/2010-LC001ALP000EV.pdf",
+    "status": "Downloaded from SEC and cover visually verified for year/subject/level; not yet integrated into Paper Trail index/corpus"
+  },
+  {
+    "year": 2010,
+    "level": "ordinary",
+    "fileid": "LC001GLP000EV.pdf",
+    "url": "https://www.examinations.ie/archive/markingschemes/2010/LC001GLP000EV.pdf",
+    "httpStatus": 200,
+    "contentType": "application/pdf",
+    "bytes": 144804,
+    "sha256": "5dbf2d23c447f46e35a9704197612a59f99c11fb8c559e509e3e794d03e08081",
+    "pages": 12,
+    "localStagingPath": "tmp/irish-audit/verified-schemes/2010-LC001GLP000EV.pdf",
+    "status": "Downloaded from SEC and cover visually verified for year/subject/level; not yet integrated into Paper Trail index/corpus"
+  },
+  {
+    "year": 2011,
+    "level": "foundation",
+    "fileid": "LC001BLP000EV.pdf",
+    "url": "https://www.examinations.ie/archive/markingschemes/2011/LC001BLP000EV.pdf",
+    "httpStatus": 200,
+    "contentType": "application/pdf",
+    "bytes": 338784,
+    "sha256": "9d661961f601757d5de357b5d53485b16d92ebfa19a01409ea722e0b1c22c37c",
+    "pages": 20,
+    "localStagingPath": "tmp/irish-audit/verified-schemes/2011-LC001BLP000EV.pdf",
+    "status": "Downloaded from SEC and cover visually verified for year/subject/level; not yet integrated into Paper Trail index/corpus"
+  }
+]

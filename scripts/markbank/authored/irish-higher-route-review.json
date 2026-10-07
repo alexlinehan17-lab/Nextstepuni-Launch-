@@ -157,7 +157,7 @@
     "paperSha256": "5302117a0e3dbbf46d0e635680fd78ceb00d46d89e54cc3a04d4f7d9506cd2ca",
     "schemeSha256": "c2d30b98b2a6e6b2747b8479b9df527609652b52ce5e352f356fab9bdac1c27e",
     "reviewDate": "2026-10-07",
-    "scope": "Q2 and Q3B only; full paper review remains pending",
+    "scope": "Q2 and Q3B only; full-paper status is recorded separately in irish-paper-reviews.json.",
     "reviewedPaperPages": [
       8,
       11

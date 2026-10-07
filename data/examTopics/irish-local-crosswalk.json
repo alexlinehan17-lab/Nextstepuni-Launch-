@@ -6,13 +6,13 @@
     "matchedSource": "Entitled local State Examinations Commission corpus only.",
     "excludedContent": "No commercial mock question, solution, note, question text, StudyClix image or StudyClix-hosted PDF is copied.",
     "restoredCards": "Missing listening, composition, literature and Foundation choices use section/page boundaries checked in the official SEC booklets.",
-    "preservationExtensions": "Two explicitly labelled local archive topics retain Higher additional literature and Foundation listening omitted by the reference menu.",
+    "preservationExtensions": "Explicit local archive topics retain Higher additional literature, Foundation listening and reviewed prescribed prose/poetry omitted by the reference menu.",
     "referenceOmissions": "Valid local tasks omitted or mis-grouped by the reference retain truthful Irish curriculum tags and retained-local provenance."
   },
   "summary": {
     "referenceTopics": 62,
-    "preservationExtensionTopics": 3,
-    "runtimeTopics": 65,
+    "preservationExtensionTopics": 4,
+    "runtimeTopics": 66,
     "referenceReportedAssociations": 1481,
     "referenceOfficialAssociations": 842,
     "referenceMockAssociations": 563,
@@ -27,15 +27,15 @@
     },
     "matchedLocalCardLinks": 744,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 1117,
-    "distinctStudentFacingQuestions": 1117,
+    "localPhysicalMappings": 1125,
+    "distinctStudentFacingQuestions": 1125,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 431,
+    "retainedLocalQuestions": 439,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 831,
+    "newlyAddedPhysicalMappings": 839,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -96,6 +96,18 @@
       "label": "Prescribed Prose (NextStepUni archive)",
       "level": "higher",
       "sourcePath": "/nextstepuni-preservation/irish/higher/prescribed-prose",
+      "reportedQuestionCount": 0,
+      "officialQuestionHeadings": [],
+      "mockQuestionCount": 0,
+      "providerSampleQuestionCount": 0,
+      "extractedQuestionCount": 0,
+      "referenceTopic": false
+    },
+    {
+      "id": "irish-higher-prescribed-poetry-archive",
+      "label": "Prescribed Poetry (NextStepUni archive)",
+      "level": "higher",
+      "sourcePath": "/nextstepuni-preservation/irish/higher/prescribed-poetry",
       "reportedQuestionCount": 0,
       "officialQuestionHeadings": [],
       "mockQuestionCount": 0,
@@ -25127,6 +25139,32 @@
       "fileid": "LC001ALP200IV.pdf",
       "paperKey": "p2",
       "kind": "p2",
+      "n": "F-3A-a",
+      "topicIds": [
+        "irish-higher-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3A-b",
+      "topicIds": [
+        "irish-higher-prescribed-poetry-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
       "n": "F-3B-a",
       "topicIds": [
         "irish-higher-studied-poetry-filiocht-roghnach"
@@ -25143,6 +25181,85 @@
       "n": "F-3B-b",
       "topicIds": [
         "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4A",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4B",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4C",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4D",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4E",
+      "topicIds": [
+        "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "X-4F",
+      "topicIds": [
+        "irish-higher-danta-breise",
+        "irish-higher-historic-additional-literature"
       ],
       "provenance": "retained-local"
     },

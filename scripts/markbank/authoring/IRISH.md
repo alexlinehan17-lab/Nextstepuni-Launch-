@@ -18,7 +18,8 @@ whole responses. Twelve existing responses receive verified prompt/rubric
 corrections. Each poetry card exposes 13/5/7 knowledge marks and one shared
 five-mark Gaeilge award. Nineteen exact Bank/Atlas task identities, source
 hashes and raw selection decisions are recorded in `irish-higher-route-review.json`.
-This is a partial review: neither Higher paper is certified complete.
+The Q2/Q3B review alone is partial. The combined reviews now complete 2024
+Higher Paper 2; the rest of 2022 Higher Paper 2 remains pending.
 
 `irish_reading.py` reviews all 100 reading marks in 2024 Higher Paper 2. It adds
 44 practice cards and repairs the twelve retained whole-question rubrics, with
@@ -27,7 +28,23 @@ retained whole questions and complete subparts overlap these tasks. Grammar
 pairs stay together at 0/2/3 because the first correct item earns two marks.
 A6(b) retains the shared opinion condition; B6(b) exposes both six-mark insights.
 Every task includes both passage pages. `irish-reading-review.json` pins the
-boundaries, hashes and raw selection decisions; this is not a full-paper review.
+boundaries, hashes and raw selection decisions.
+
+`irish_literature_2024.py` restores the complete Q3A and Q4 scheme guidance and
+classifies every selection-directive line in the full 2024 paper, including
+source narrative. Two adjectives retrieved from the printed poem are answers
+to one interpretation task, not an enumerated task menu; the scheme examples
+are expressly non-exhaustive. The named poet condition, one-adjective cap and
+incomplete-essay caps remain with their respective awards.
+
+`irish-paper-reviews.json` records the independent full 2024 Higher Paper 2
+review: all sixteen paper pages and all applicable combined-scheme pages,
+72 exact Bank/Atlas joins, no open issues, and mobile source/scheme checks.
+Its 55 non-overlapping task/route cards cover both required passages, all six
+prose routes, four poetry responses and six additional-literature responses.
+The candidate answers 100 + 30 + 30 + 40 marks; alternative tariffs are not
+added together. The archive inventory now has two reviewed components and
+89 pending components. Seventy still have no Mark Bank cards.
 
 `irish_foundation.py` adds the visually reviewed 2025 Foundation paper: fourteen
 listening parts, ten matching parts, thirty reading parts, six whole writing
@@ -72,12 +89,16 @@ exam-topic registry, never copied topic-name arrays. A mixed-topic selection
 retains all relevant curriculum nodes for Mark Bank filtering.
 
 Reviewed Higher routes also carry question and scheme pages. Their Atlas route
-instruction remains visible above the paper on phones. Prescribed prose has an
-archive shelf linked to the reviewed works' existing canonical nodes; it is not
-filed as optional prose. Existing Atlas identities and the twelve original
+instruction remains visible above the paper on phones. Prescribed prose and poetry have
+archive shelves linked to the reviewed works' existing canonical nodes. Existing Atlas identities and the twelve original
 reading-answer records in each Higher sidecar retain their original fields.
 Reviewed reading display regions are additive: they show the full passage and
 all relevant scheme pages without changing frozen identities or original crops.
+
+Three legacy schemes missing from the index have been recovered from the SEC:
+2010 Higher/Ordinary and 2011 Foundation use `EV` filenames despite their Irish
+content. `irish-recovered-schemes.json` pins URLs, hashes and staging paths.
+Index integration remains pending; do not claim these eight components reviewed.
 
 ## Rebuild and verification
 
@@ -93,7 +114,7 @@ node scripts/paper-trail/build-irish-exam-topic-crosswalk.mjs
 node scripts/paper-trail/topic-tags/build-tags.mjs
 python3 scripts/markbank/authoring/irish_inventory.py --check
 npm run typecheck
-npx vitest run test/markBankIrish.test.ts test/markBankIrishReading.test.ts test/markBankIrishHigherRoutes.test.ts test/markBankIrishFoundation.test.ts test/markBankSession.test.tsx test/markBankProfileDefaults.test.ts test/irishExamTopics.test.ts test/markBankCardPreservation.test.ts test/curriculumRegistry.test.ts test/markBankDeck.test.ts
+npx vitest run test/markBankIrish.test.ts test/markBankIrishReading.test.ts test/markBankIrishLiterature2024.test.ts test/markBankIrishHigherRoutes.test.ts test/markBankIrishFoundation.test.ts test/markBankSession.test.tsx test/markBankProfileDefaults.test.ts test/irishExamTopics.test.ts test/markBankCardPreservation.test.ts test/curriculumRegistry.test.ts test/markBankDeck.test.ts
 ```
 
 The Foundation generator fails if the reviewed PDFs change, if an extracted

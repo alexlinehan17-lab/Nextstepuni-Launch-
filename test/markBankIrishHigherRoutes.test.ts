@@ -115,12 +115,12 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       expect(createHash('sha256').update(JSON.stringify(legacy)).digest('hex')).toBe(year === 2022
         ? '1e563fe88d83be836a4a4d3d02b9fa50d8db754d0f2e59218720173f5c47fdef'
         : '59c189047fa108b5f2e66888a2557ae388efc65e48fda35fd7cd44070ccf589e');
-      expect(map.q.filter((q: { n: string }) => /^[PF]-/.test(q.n))).toHaveLength(year === 2022 ? 11 : 8);
+      expect(map.q.filter((q: { n: string }) => /^[PF]-/.test(q.n))).toHaveLength(year === 2022 ? 11 : 10);
       expect(map.q.some((q: { n: string }) => q.n === 'R-A')).toBe(false);
       const anchors = JSON.parse(readFileSync(`public/paper-anchors/${year}/LC001ALP200IV.pdf.json`,'utf8'));
       expect(anchors.paperOnly).toBe(1);
       expect(anchors.q.length).toBeGreaterThan(map.q.length);
-      expect(reviews.find(r => r.year === year)?.scope).toContain('full paper review remains pending');
+      expect(reviews.find(r => r.year === year)?.scope).toContain(year === 2022 ? 'full paper review remains pending' : 'full-paper status is recorded separately');
     }
   });
 });

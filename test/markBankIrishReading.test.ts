@@ -49,7 +49,7 @@ describe('2024 Higher Irish reading: independently reviewed paper/scheme boundar
     expect(review.addedCardIds).toHaveLength(44);
     expect(new Set(review.cardIds).size).toBe(56);
     expect(cardFor('b-q6-b').totalMarks).toBe(12);
-    expect(review.scope).toContain('full-paper completion remain pending');
+    expect(review.scope).toContain('full-paper status is recorded separately');
   });
 
   it('keeps grammar as a paired 0/2/3 task under the canonical grammar topic', () => {

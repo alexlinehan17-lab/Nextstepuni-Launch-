@@ -78,6 +78,18 @@ const EXTENSIONS = [
     extractedQuestionCount: 0,
     referenceTopic: false,
   },
+  {
+    id: 'irish-higher-prescribed-poetry-archive',
+    label: 'Prescribed Poetry (NextStepUni archive)',
+    level: 'higher',
+    sourcePath: '/nextstepuni-preservation/irish/higher/prescribed-poetry',
+    reportedQuestionCount: 0,
+    officialQuestionHeadings: [],
+    mockQuestionCount: 0,
+    providerSampleQuestionCount: 0,
+    extractedQuestionCount: 0,
+    referenceTopic: false,
+  },
 ];
 const allTopics = [...referenceTopics, ...EXTENSIONS];
 const topicById = new Map(allTopics.map(topic => [topic.id, topic]));
@@ -105,6 +117,7 @@ const H = {
   essay: topicId('higher', 'Write an Essay..'),
   historic: EXTENSIONS[0].id,
   prescribedProse: EXTENSIONS[2].id,
+  prescribedPoetry: EXTENSIONS[3].id,
 };
 const O = {
   conversation: topicId('ordinary', 'AURAL - Comhrá (Conversation)'),
@@ -159,7 +172,8 @@ const setCurriculum = (id, nodes) => { CURRICULUM_CROSSWALK[id] = nodes; };
 setCurriculum(H.conversation, ['irish-1-1', 'irish-1-3']);
 setCurriculum(H.announcement, ['irish-1-0', 'irish-1-3']);
 setCurriculum(H.news, ['irish-1-2', 'irish-1-3']);
-setCurriculum(H.extraPoetry, ['irish-6-5']);
+setCurriculum(H.extraPoetry, [...new Set(['irish-6-5', ...reviewedHigherTasks
+  .filter(card => card.atlasQuestionId === 'X-4F').map(card => card.topicId)])]);
 setCurriculum(H.grammar, ['irish-3-3', 'irish-8-4']);
 setCurriculum(H.oral, ['irish-0-0', 'irish-0-1', 'irish-0-2', 'irish-0-3', 'irish-0-4', 'irish-0-5', 'irish-0-6']);
 setCurriculum(H.reading, ['irish-3-0', 'irish-3-1', 'irish-3-2']);
@@ -169,6 +183,8 @@ setCurriculum(H.prose, ['irish-4-7', 'irish-7-0']);
 // not define a second syllabus or relabel prescribed works as optional prose.
 setCurriculum(H.prescribedProse, [...new Set(reviewedHigherTasks
   .filter(card => card.atlasQuestionId.startsWith('P-2A-')).map(card => card.topicId))].sort());
+setCurriculum(H.prescribedPoetry, [...new Set(reviewedHigherTasks
+  .filter(card => card.atlasQuestionId.startsWith('F-3A-')).map(card => card.topicId))].sort());
 setCurriculum(H.debate, ['irish-2-4', 'irish-2-5']);
 setCurriculum(H.article, ['irish-2-1']);
 setCurriculum(H.story, ['irish-2-3']);
@@ -708,7 +724,10 @@ for (const card of reviewedHigherTasks) {
   const baseTopicIds = card.id.includes('-reading-')
     ? card.topicId === 'irish-3-3' ? [H.grammar]
       : (card.additionalTopicIds ?? []).includes('irish-3-3') ? [H.reading,H.grammar] : [H.reading]
-    : [card.atlasQuestionId.startsWith('P-2A-') ? H.prescribedProse
+    : card.atlasQuestionId === 'X-4F' ? [H.extraPoetry,H.historic]
+    : [card.atlasQuestionId.startsWith('X-') ? H.historic
+      : card.atlasQuestionId.startsWith('F-3A-') ? H.prescribedPoetry
+      : card.atlasQuestionId.startsWith('P-2A-') ? H.prescribedProse
       : card.atlasQuestionId.startsWith('P-') ? H.prose : H.poetry];
   if (existing?.baseline) {
     // Frozen reading identities/tags remain. The additive regions restore the
@@ -1114,7 +1133,7 @@ const output = {
     matchedSource: 'Entitled local State Examinations Commission corpus only.',
     excludedContent: 'No commercial mock question, solution, note, question text, StudyClix image or StudyClix-hosted PDF is copied.',
     restoredCards: 'Missing listening, composition, literature and Foundation choices use section/page boundaries checked in the official SEC booklets.',
-    preservationExtensions: 'Two explicitly labelled local archive topics retain Higher additional literature and Foundation listening omitted by the reference menu.',
+    preservationExtensions: 'Explicit local archive topics retain Higher additional literature, Foundation listening and reviewed prescribed prose/poetry omitted by the reference menu.',
     referenceOmissions: 'Valid local tasks omitted or mis-grouped by the reference retain truthful Irish curriculum tags and retained-local provenance.',
   },
   summary,

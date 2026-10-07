@@ -22,7 +22,7 @@
     24,
     25
   ],
-  "scope": "Complete reading-section boundary review only; literature and full-paper completion remain pending.",
+  "scope": "Complete reading-section boundary review only; full-paper status is recorded separately in irish-paper-reviews.json.",
   "selectionDecisions": [
     {
       "key": "A1a",

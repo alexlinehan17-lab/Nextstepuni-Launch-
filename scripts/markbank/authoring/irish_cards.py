@@ -38,6 +38,7 @@ from typing import Iterable, Sequence
 import fitz
 from irish_higher_routes import apply_review
 from irish_reading import apply_reading_review
+from irish_literature_2024 import apply_literature_review
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -1301,6 +1302,7 @@ def main() -> int:
     args = parser.parse_args()
     cards, route_reviews = apply_review(build_corpus())
     cards, reading_review = apply_reading_review(cards)
+    cards, literature_review = apply_literature_review(cards)
     manifest = serialise(cards)
     ledger = json.dumps(census(cards), ensure_ascii=False, indent=2) + '\n'
     schemes = scheme_text_exports()
@@ -1308,6 +1310,8 @@ def main() -> int:
         route_reviews, ensure_ascii=False, indent=2) + '\n'
     schemes[os.path.join(ROOT, 'scripts/markbank/authored/irish-reading-review.json')] = json.dumps(
         reading_review, ensure_ascii=False, indent=2) + '\n'
+    schemes[os.path.join(ROOT, 'scripts/markbank/authored/irish-literature-2024-review.json')] = json.dumps(
+        literature_review, ensure_ascii=False, indent=2) + '\n'
     if args.check:
         existing_manifest = open(OUT, encoding='utf-8').read() if os.path.exists(OUT) else ''
         existing_census = open(CENSUS_OUT, encoding='utf-8').read() if os.path.exists(CENSUS_OUT) else ''

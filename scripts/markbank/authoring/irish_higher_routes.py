@@ -210,7 +210,8 @@ def apply_review(cards):
                     template=original['id'], route=choice)
         reviews.append(dict(year=year,level='higher',paperFileid='LC001ALP200IV.pdf',
                             paperSha256=paper_hash,schemeSha256=scheme_hash,reviewDate='2026-10-07',
-                            scope='Q2 and Q3B only; full paper review remains pending',
+                            scope=('Q2 and Q3B only; full paper review remains pending' if year==2022 else
+                                   'Q2 and Q3B only; full-paper status is recorded separately in irish-paper-reviews.json.'),
                             reviewedPaperPages=paper_pages,
                             reviewedSchemePages=list(range(27,33))+list(range(37 if year==2022 else 38,41)),
                             cardIds=reviewed_ids,selectionDecisions=decisions))

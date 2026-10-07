@@ -1,0 +1,381 @@
+{
+  "year": 2024,
+  "level": "higher",
+  "paperFileid": "LC001ALP200IV.pdf",
+  "paperSha256": "5302117a0e3dbbf46d0e635680fd78ceb00d46d89e54cc3a04d4f7d9506cd2ca",
+  "schemeSha256": "c2d30b98b2a6e6b2747b8479b9df527609652b52ce5e352f356fab9bdac1c27e",
+  "reviewDate": "2026-10-07",
+  "scope": "Q3A and Q4 source review; combine with reading and Higher route reviews for full paper reconciliation.",
+  "reviewedPaperPages": [
+    3,
+    9,
+    10,
+    12,
+    13
+  ],
+  "reviewedSchemePages": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "cardIds": [
+    "irish-2024-hl-p2-poetry-3a-a",
+    "irish-2024-hl-p2-poetry-3a-b",
+    "irish-2024-hl-p2-literature-4-a",
+    "irish-2024-hl-p2-literature-4-b",
+    "irish-2024-hl-p2-literature-4-c",
+    "irish-2024-hl-p2-literature-4-d",
+    "irish-2024-hl-p2-literature-4-e",
+    "irish-2024-hl-p2-literature-4-f"
+  ],
+  "selectionDecisions": [
+    {
+      "page": 3,
+      "quote": "Tá Ceist 1 - 5 ar aon mharc. Glacfar le freagraí i d’fhocail féin nó",
+      "reason": "Source wording or own wording are acceptable answer styles, not different tasks."
+    },
+    {
+      "page": 3,
+      "quote": "Freagair Ceist 2A (30 marc) nó Ceist 2B (30 marc).",
+      "reason": "All six prose routes are present, including both film/drama alternatives."
+    },
+    {
+      "page": 3,
+      "quote": "Freagair ceist amháin as do rogha de 2A (a) nó 2A (b).",
+      "reason": "Three prescribed prose routes after expanding the film/drama choice."
+    },
+    {
+      "page": 3,
+      "quote": "nó",
+      "reason": "Repeated separator for the prescribed/optional families."
+    },
+    {
+      "page": 3,
+      "quote": "Freagair ceist amháin as do rogha de 2B (a) nó 2B (b).",
+      "reason": "Three optional prose routes after expanding the film/drama choice."
+    },
+    {
+      "page": 3,
+      "quote": "Freagair Ceist 3A (30 marc) nó Ceist 3B (30 marc).",
+      "reason": "All four prescribed/optional poetry responses are present."
+    },
+    {
+      "page": 3,
+      "quote": "Freagair ceist amháin as do rogha de 3A (a) nó 3A (b).",
+      "reason": "Both prescribed poems are separate whole thirty-mark responses."
+    },
+    {
+      "page": 3,
+      "quote": "nó",
+      "reason": "Repeated separator for the prescribed/optional families."
+    },
+    {
+      "page": 3,
+      "quote": "Freagair ceist amháin as do rogha de 3B (a) nó 3B (b).",
+      "reason": "Both optional-poem prompts are separate whole thirty-mark responses."
+    },
+    {
+      "page": 3,
+      "quote": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F).",
+      "reason": "Six complete forty-mark responses, one for each printed A–F option."
+    },
+    {
+      "page": 4,
+      "quote": "le droichead nó le cabhsa, agus nach bhfuil faoi",
+      "reason": "Passage narrative: bridges/causeways, remaining/moving, and available choices describe islands; no candidate task choice."
+    },
+    {
+      "page": 4,
+      "quote": "chun fanacht ar na hoileáin nó chun bogadh",
+      "reason": "Passage narrative: bridges/causeways, remaining/moving, and available choices describe islands; no candidate task choice."
+    },
+    {
+      "page": 4,
+      "quote": "go mbeadh teacht acu ar rogha leathan",
+      "reason": "Passage narrative: bridges/causeways, remaining/moving, and available choices describe islands; no candidate task choice."
+    },
+    {
+      "page": 5,
+      "quote": "1. (a) Scríobh síos dhá shaintréith ar leith atá ag baint le gach ceann de na trí oileán is fiche amach",
+      "reason": "Reading task A1a: source retrieval or open supporting points, classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 5,
+      "quote": "(b) (i) Luaigh beart amháin atá sa pholasaí maidir le cúrsaí fostaíochta ar na hoileáin. (Alt 2)",
+      "reason": "Reading task A2bi: source retrieval or open supporting points, classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 5,
+      "quote": "3. (a) Scríobh síos dhá dhúshlán a bhaineann le soláthar cuí tithíochta ar na hoileáin a luadh le linn",
+      "reason": "Reading task A3a: source retrieval or open supporting points, classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 5,
+      "quote": "(b) (i) Luaigh moladh amháin atá sa pholasaí nua chun cúrsaí tithíochta a fheabhsú ar na hoileáin.",
+      "reason": "Reading task A3bi: source retrieval or open supporting points, classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 5,
+      "quote": "(ii) Scríobh síos beart amháin atá sa pholasaí a chinnteoidh go mbeidh áiseanna cuí oideachais",
+      "reason": "Reading task A3bii: source retrieval or open supporting points, classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 5,
+      "quote": "4. (a) Tabhair dhá chúis a mealltar a lán turasóirí go dtí na hoileáin. (Alt 4)",
+      "reason": "Reading task A4a: source retrieval or open supporting points, classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 5,
+      "quote": "(b) (i) Scríobh síos aidhm amháin a bheidh leis an bhfeachtas margaíochta a fhorbróidh Fáilte",
+      "reason": "Reading task A4bi: source retrieval or open supporting points, classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 5,
+      "quote": "5. (a) Scríobh síos dhá ghealltanas atá tugtha sa pholasaí nua maidir le seirbhísí iompair farraige",
+      "reason": "Reading task A5a: source retrieval or open supporting points, classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 5,
+      "quote": "(b) (i) Luaigh cuspóir amháin atá ag an rialtas sa pholasaí seo chun seirbhísí sláinte a fheabhsú",
+      "reason": "Reading task A5bi: source retrieval or open supporting points, classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 5,
+      "quote": "Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra.",
+      "reason": "Reading task A6b: source retrieval or open supporting points, classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 6,
+      "quote": "na linne seo. Roghnaigh an foilsitheoir foclóirí",
+      "reason": "Passage narrative about dictionary selection, technology uses, time and behaviour; no candidate task choice."
+    },
+    {
+      "page": 6,
+      "quote": "a gcuntais meán sóisialta nó nuair a labhraíonn",
+      "reason": "Passage narrative about dictionary selection, technology uses, time and behaviour; no candidate task choice."
+    },
+    {
+      "page": 6,
+      "quote": "siad tuarthéacs nó nuair a bhíonn siad ag",
+      "reason": "Passage narrative about dictionary selection, technology uses, time and behaviour; no candidate task choice."
+    },
+    {
+      "page": 6,
+      "quote": "taobh istigh de dhá mhí agus is é an feidhmchlár",
+      "reason": "Passage narrative about dictionary selection, technology uses, time and behaviour; no candidate task choice."
+    },
+    {
+      "page": 6,
+      "quote": "ar iompraíocht an duine nó nach mbeadh.",
+      "reason": "Passage narrative about dictionary selection, technology uses, time and behaviour; no candidate task choice."
+    },
+    {
+      "page": 7,
+      "quote": "nó nach bhfuil cuid den eolas iontu cruinn",
+      "reason": "Passage narrative: reliability of generated information."
+    },
+    {
+      "page": 7,
+      "quote": "1. (a) Tabhair dhá chúis ar roghnaigh an foilsitheoir foclóirí Collins an téarma ‘intleacht shaorga’",
+      "reason": "Reading task B1a: classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 7,
+      "quote": "(b) (i) Luaigh dhá shampla den úsáid a bhaineann daoine as an intleacht shaorga gach lá. (Alt 1)",
+      "reason": "Reading task B1bi: classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 7,
+      "quote": "3. (a) Scríobh síos dhá dheis a bhaineann leis an intleacht shaorga i dtionscal an ghnó agus",
+      "reason": "Reading task B3a: classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 7,
+      "quote": "(b) (i) Tabhair dhá dhúshlán atá ag baint leis an intleacht shaorga don duine aonair. (Alt 4)",
+      "reason": "Reading task B4bi: classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 7,
+      "quote": "(ii) Scríobh síos dhá chúis a bhfuil amhras léirithe maidir leis na buntéacsanna a mbaineann",
+      "reason": "Reading task B4bii: classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 7,
+      "quote": "(ii) Scríobh síos dhá cheist a ardaítear i ndíospóireachtaí faoi thodhchaí na hintleachta saorga.",
+      "reason": "Reading task B5bii: classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 7,
+      "quote": "(b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga.",
+      "reason": "Reading task B6b: classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 7,
+      "quote": "Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas",
+      "reason": "Reading task B6b: classified with its exact whole prompt and published allocation in irish-reading-review.json."
+    },
+    {
+      "page": 8,
+      "quote": "Freagair Ceist 2A (Prós Ainmnithe) nó Ceist 2B (Prós Roghnach).",
+      "reason": "Prose family choice: all six routes retained."
+    },
+    {
+      "page": 8,
+      "quote": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+      "reason": "Prescribed prose outer choice: three routes after internal film/drama expansion."
+    },
+    {
+      "page": 8,
+      "quote": "Freagair an cheist thíos ar an scannán Cáca Milis nó ar an dráma An Lasair Choille.",
+      "reason": "Closed film/drama choice: Cáca Milis and An Lasair Choille both present."
+    },
+    {
+      "page": 8,
+      "quote": "nó",
+      "reason": "Separator for classified alternatives."
+    },
+    {
+      "page": 8,
+      "quote": "nó",
+      "reason": "Separator for classified alternatives."
+    },
+    {
+      "page": 8,
+      "quote": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+      "reason": "Optional prose outer choice: three routes after internal film/drama expansion."
+    },
+    {
+      "page": 8,
+      "quote": "Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.",
+      "reason": "Closed genre choice: optional film and optional drama both present."
+    },
+    {
+      "page": 8,
+      "quote": "nó",
+      "reason": "Separator for classified alternatives."
+    },
+    {
+      "page": 8,
+      "quote": "nó",
+      "reason": "Separator for classified alternatives."
+    },
+    {
+      "page": 8,
+      "quote": "Maidir le gearrscéal roghnach a ndearna tú staidéar air le linn do chúrsa, roghnaigh duine",
+      "reason": "Character comes from a student-chosen story; open choice, not a finite printed pool."
+    },
+    {
+      "page": 8,
+      "quote": "PRÓS AINMNITHE nó PRÓS ROGHNACH 30 marc",
+      "reason": "Repeated prescribed/optional section heading."
+    },
+    {
+      "page": 9,
+      "quote": "Freagair Ceist 3A (Filíocht Ainmnithe) nó Ceist 3B (Filíocht Roghnach).",
+      "reason": "All four responses are present; prescribed poetry has its own archive topic."
+    },
+    {
+      "page": 9,
+      "quote": "Freagair do rogha ceann amháin de (a) nó (b).",
+      "reason": "Two complete prescribed responses with shared Gaeilge."
+    },
+    {
+      "page": 9,
+      "quote": "‘Tugtar léiriú dúinn sa dán Géibheann (thíos) ar an gcodarsnacht idir dhá thréimhse éagsúla i saol",
+      "reason": "Both periods are required comparison content, not selectable alternatives."
+    },
+    {
+      "page": 9,
+      "quote": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+      "reason": "One open supporting point; no printed finite menu."
+    },
+    {
+      "page": 9,
+      "quote": "FILÍOCHT AINMNITHE nó FILÍOCHT ROGHNACH 30 marc",
+      "reason": "Repeated section heading, already expanded above."
+    },
+    {
+      "page": 10,
+      "quote": "nó",
+      "reason": "Separator before the second prescribed poem."
+    },
+    {
+      "page": 10,
+      "quote": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+      "reason": "One open supporting point; no printed finite menu."
+    },
+    {
+      "page": 10,
+      "quote": "(iii) Roghnaigh dhá cheann de na haidiachtaí a úsáideann an file sa dán. Déan plé ar an tábhacht",
+      "reason": "Retrieve two adjectives from the source and interpret their importance. These are candidate answers to one retrieval/interpretation task, not an enumerated menu of task prompts. The scheme explicitly labels its words as examples, accepts other valid content on merit, and marks the discussion together. Do not turn its illustrative list into a closed exhaustive pool or leak those answers into the prompt."
+    },
+    {
+      "page": 10,
+      "quote": "Cliabh dhá dhroim,",
+      "reason": "Poem text, not a candidate selection directive."
+    },
+    {
+      "page": 11,
+      "quote": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+      "reason": "Two whole optional poetry prompts, both retained."
+    },
+    {
+      "page": 11,
+      "quote": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+      "reason": "One open supporting point."
+    },
+    {
+      "page": 11,
+      "quote": "nó",
+      "reason": "Separator between the two whole responses."
+    },
+    {
+      "page": 11,
+      "quote": "(Is leor pointe amháin eolais as an dán mar thacaíocht le do fhreagra.)",
+      "reason": "One open supporting point."
+    },
+    {
+      "page": 11,
+      "quote": "Tabhair dhá phointe eolais as an dán faoin teicníc sin.",
+      "reason": "Two open supporting points about a stated technique, not a finite printed menu."
+    },
+    {
+      "page": 12,
+      "quote": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F) thíos.",
+      "reason": "Six whole forty-mark responses generated mechanically from the printed A–F headings."
+    },
+    {
+      "page": 12,
+      "quote": "á úsáid sa dán, dar leat? Is leor dhá phointe eolais. Bíodh tagairtí cruinne agat do théacs an",
+      "reason": "Two open supporting points about the imperative, not a finite printed menu. The better point earns five and the other four; keep the nine-mark award together."
+    },
+    {
+      "page": 16,
+      "quote": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe",
+      "reason": "Copyright notice, not a candidate instruction."
+    },
+    {
+      "page": 16,
+      "quote": "Chóipcheart agus Cearta Gaolmhara, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin",
+      "reason": "Copyright notice, not a candidate instruction."
+    }
+  ],
+  "boundaries": [
+    "Two complete prescribed poems: 13/5/7 Eolas plus one shared 5 Gaeilge.",
+    "Five whole additional-literature essays: 35 Eolas plus one shared 5 Gaeilge; incomplete required coverage caps Eolas at 25.",
+    "Q4F stays whole: 19/7/9 Eolas and one shared 5 Gaeilge; best imperative point earns 5, other 4."
+  ],
+  "preservation": "All eight existing IDs and full question prompts unchanged; published rubric conditions and complete scheme regions restored."
+}

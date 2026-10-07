@@ -44,7 +44,7 @@
       "2010|ordinary|LC001GLPA00IV.pdf"
     ],
     "missingLocalSchemes": [],
-    "papersPendingFullReview": 90
+    "papersPendingFullReview": 89
   },
   "papers": [
     {
@@ -809,8 +809,16 @@
         "P-2A-b",
         "P-2B-a-scannan",
         "P-2B-b",
+        "F-3A-a",
+        "F-3A-b",
         "F-3B-a",
         "F-3B-b",
+        "X-4A",
+        "X-4B",
+        "X-4C",
+        "X-4D",
+        "X-4E",
+        "X-4F",
         "P-2A-a-an-lasair-choille",
         "P-2B-a-drama",
         "R-A-1-a",
@@ -858,10 +866,10 @@
         "R-B-6-b-1",
         "R-B-6-b-2"
       ],
-      "questionCoverage": "unverified",
-      "fullVisualReview": "pending",
-      "partAndSelectionReconciliation": "pending",
-      "bankAtlasTaskParity": "pending"
+      "questionCoverage": "reviewed",
+      "fullVisualReview": "complete",
+      "partAndSelectionReconciliation": "complete",
+      "bankAtlasTaskParity": "complete"
     },
     {
       "key": "2024|ordinary|LC001GLP100IV.pdf",

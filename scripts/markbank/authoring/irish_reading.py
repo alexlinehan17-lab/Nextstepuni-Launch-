@@ -174,7 +174,7 @@ def apply_reading_review(cards):
     return cards,dict(year=2024,level='higher',paperFileid='LC001ALP200IV.pdf',
                       paperSha256=HASHES[2024][0],schemeSha256=HASHES[2024][1],
                       reviewDate='2026-10-07',reviewedPaperPages=[3,4,5,6,7],reviewedSchemePages=list(range(18,26)),
-                      scope='Complete reading-section boundary review only; literature and full-paper completion remain pending.',
+                      scope='Complete reading-section boundary review only; full-paper status is recorded separately in irish-paper-reviews.json.',
                       selectionDecisions=decisions,cardIds=reviewed,addedCardIds=added,atomicCardIds=atomic,
                       retainedWholeQuestionMembers=questions,
                       boundaries=['30 printed (a)/(b)(i)/(b)(ii) tasks; four two-answer tasks also expose eight independent one-mark slots.',

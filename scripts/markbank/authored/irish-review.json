@@ -183,11 +183,11 @@
     }
   ],
   "confirmedRemainingWork": [
-    "70 indexed paper components still have no Mark Bank cards. The 20 legacy components also need full independent task and selection review. Foundation 2025 has completed its paper/scheme sweep and 78-task Bank/Atlas reconciliation; 90 components remain pending full review.",
-    "2024 Higher Paper 2: all 16 paper pages visually swept. Reading Q1 now has its complete 100-mark boundary review, 44 added practice cards and 56 exact Bank/Atlas joins. Q3A and Q4 still require full boundary/selection/topic reconciliation before this paper is complete. Q3A(b)(iii) asks for two adjectives from An tEarrach Thiar; classify source retrieval versus a closed printed task menu using the actual instruction, not the illustrative scheme list.",
-    "Review all other Higher/Ordinary internal options (including 2021/2023/2025), expand published task boundaries across older years and reconcile their Atlas topics and source/scheme regions. Prescribed prose has an archive shelf; prescribed poetry placement still requires review.",
-    "Topic Atlas currently has 1117 section/task/route anchors, including 75 additive reviewed Foundation entries, 19 Higher literature entries and 44 Higher reading entries. This is not proof of parity with every independently practicable Mark Bank task. Reconcile exact parts/topics and preserve existing Atlas entries.",
-    "Irish 2010 HL/OL and 2011 Foundation have papers but no indexed marking scheme (eight paper components). Find authoritative schemes rather than inventing marks.",
+    "70 indexed paper components still have no Mark Bank cards. Foundation 2025 and Higher 2024 Paper 2 have completed their visual paper/applicable-scheme sweeps and exact task reconciliation. 89 components remain pending full review.",
+    "2024 Higher Paper 2 is fully reviewed: 72 exact Bank/Atlas joins, 39 atomic reading tasks covering 100 marks, six prose routes, four poetry responses and six additional-literature responses. The paper is 200 marks with one response from each literature family. Preserved overlapping whole questions are not counted twice. Review evidence is in irish-paper-reviews.json and its linked source-review files.",
+    "Review remaining Higher/Ordinary papers, including 2022 reading/Q3A/Q4 and all 2021/2023/2025 internal options. Expand published task boundaries across older years and reconcile exact Atlas topics and source/scheme regions. Prescribed prose and poetry now have archive shelves linked to existing canonical nodes.",
+    "Topic Atlas currently has 1125 section/task/route anchors, including the eight latest prescribed-poetry/additional-literature entries. This is not proof of complete archive coverage. Reconcile every remaining paper and retain established IDs.",
+    "The three official SEC schemes covering the eight unindexed 2010 Higher/Ordinary and 2011 Foundation components have been located, downloaded and their covers verified. They use EV filenames despite Irish content. Next integrate their exact filenames into the Paper Trail index and local source resolver without writing through the shared corpus symlink; evidence is in irish-recovered-schemes.json.",
     "Listening recordings must be verified for each year and level; Foundation uses different recordings. Preserve passages, poems, signs, forms and picture sequences using the existing open/close source reader.",
     "Full visual paper/scheme sweeps, raw selection-directive classification, preservation and zero-open/zero-orphan checks remain required before any completion claim or coverage-baseline change."
   ],
@@ -326,15 +326,15 @@
       "irish-2024-hl-p2-reading-b-q6-b-2"
     ],
     "typecheck": "passed",
-    "targetedDataAndInteractionTests": "269 tests passed across eleven suites: 186 reading/Higher/data/preservation/curriculum/deck/anchor tests and 83 Foundation/session tests.",
-    "productionBuild": "passed (56.70s Vite plus service-worker generation; existing chunk-size/import warnings)",
+    "targetedDataAndInteractionTests": "Latest literature/full-paper batch: 150 tests passed across eight data/preservation/curriculum/deck suites; 90 tests passed across literature, Foundation, session and profile suites (four literature tests rerun after adding the full-paper record). Previous reading batch had 269 passing targeted tests.",
+    "productionBuild": "passed (1m21s Vite plus service-worker generation; existing chunk-size/import warnings)",
     "generatedFilesCheck": "Higher/Ordinary, Foundation and inventory checks passed; Atlas regeneration idempotent. Unknown and stale raw-selection negative probes rejected.",
     "archiveInventoryCheck": "passed",
     "testTypecheck": "Fails with the same three pre-existing programmeAnalytics errors reproduced on unchanged base checkout: test/programmeAnalyticsClient.test.ts lines 32 and 56 (TS2493); utils/programmeAnalytics.ts line 50 (TS2339).",
-    "browserVisualQA": "2024 Higher reading verified at 390 × 844: five Mark Bank tasks opened both passage pages, navigated to page two and returned focus on close; five Atlas tasks (including retained question 6) rendered full paper/scheme pages. No uncaught errors or horizontal overflow. Foundation and Higher literature verification retained from previous batches.",
+    "browserVisualQA": "390 × 844 real-PDF checks pass for three Mark Bank poems (Géibheann, An tEarrach Thiar, Fill Arís) and five new Atlas literature entries. Full sources, scheme show/hide, visible task instructions and focus restoration work; no uncaught page errors or horizontal overflow. Reading and Foundation checks retained from their verified batches.",
     "otherSubjectTopicData": "Unchanged, compared structurally and as decoded runtime records and labels with previous HEAD.",
-    "legacyIrishCards": "All 400 original IDs and all 85 previously added IDs retained. This batch adds 44 reading tasks and changes only the twelve 2024 Higher whole-reading records; their original prompts and IDs are unchanged.",
-    "previousBatchIdsPreserved": 485,
+    "legacyIrishCards": "All 400 original IDs and all 129 added IDs retained. Since reading commit 381ede8f, exactly eight 2024 literature records changed; every prior prompt is unchanged.",
+    "previousBatchIdsPreserved": 529,
     "preservationBaselineCountsAndHashesChanged": false
   },
   "reviewedFoundationPapers": [
@@ -572,7 +572,7 @@
       24,
       25
     ],
-    "status": "Complete reading-section boundary review authored and verified; full paper review remains pending.",
+    "status": "Reading review complete and incorporated into the completed 2024 Higher Paper 2 review.",
     "findings": [
       "Both passages are compulsory: 50 marks each. Questions 1–5 divide into (a)=3, (b)(i)=2 and (b)(ii)=2. Retain both pages of the respective passage with every part.",
       "Where two facts share 3 marks, the first correct fact earns 2 and the second 1. This is not a fixed 2/1 split by printed answer position. Keep the two-fact response whole.",
@@ -584,7 +584,7 @@
   },
   "reviewedReading": {
     "reviewFile": "irish-reading-review.json",
-    "scope": "Complete reading-section boundary review only; literature and full-paper completion remain pending.",
+    "scope": "Complete reading-section review incorporated into the completed 2024 Higher Paper 2 review.",
     "addedTasks": 44,
     "reviewedCards": 56,
     "nonOverlappingTasks": 39,
@@ -618,5 +618,18 @@
       "uncaughtBrowserErrors": [],
       "horizontalOverflow": false
     }
-  }
+  },
+  "reviewedHigherPapers": [
+    {
+      "reviewFile": "irish-paper-reviews.json",
+      "year": 2024,
+      "level": "higher",
+      "paperFileid": "LC001ALP200IV.pdf",
+      "fullPaperAndApplicableSchemeVisualSweep": true,
+      "cardCount": 72,
+      "nonOverlappingPracticeTasksAndRoutes": 55,
+      "matchedAtlasTasks": 72,
+      "openIssues": []
+    }
+  ]
 }

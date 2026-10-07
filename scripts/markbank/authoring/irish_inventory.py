@@ -43,7 +43,10 @@ def inventory(corpus: Path) -> dict:
     entries = json.loads(result.stdout)
     cards = [c for name in ['authored.json', 'foundation-authored.json']
              for c in json.loads((ROOT / 'components/MarkBank/cards/irish' / name).read_text())['cards']]
-    reviewed = json.loads((ROOT / 'components/MarkBank/cards/irish/foundation-authored.json').read_text())['review']
+    foundation = json.loads((ROOT / 'components/MarkBank/cards/irish/foundation-authored.json').read_text())
+    reviews = [dict(foundation['review'], cardIds=[c['id'] for c in foundation['cards']])]
+    reviews += json.loads((ROOT / 'scripts/markbank/authored/irish-paper-reviews.json').read_text())
+    assert len({(r['year'],r['level'],r['paperFileid']) for r in reviews})==len(reviews)
     tags = json.loads((ROOT / 'scripts/paper-trail/topic-tags/tags/irish.json').read_text())
     rows = []
     seen_cards = set()
@@ -56,7 +59,11 @@ def inventory(corpus: Path) -> dict:
             atlas = [t for t in tags if t['year'] == entry['year']
                      and t['level'] == entry['level'] and t['fileid'] == fileid]
             seen_cards.update(c['id'] for c in subset)
-            paper_reviewed = entry['year'] == reviewed['year'] and entry['level'] == reviewed['level'] and fileid == reviewed['paperFileid']
+            reviewed = next((r for r in reviews if entry['year']==r['year'] and entry['level']==r['level'] and fileid==r['paperFileid']),None)
+            paper_reviewed = reviewed is not None
+            if reviewed:
+                assert {c['id'] for c in subset}==set(reviewed['cardIds']), 'Reconcile changed reviewed-paper cards'
+                assert reviewed.get('reviewDate') and all(c.get('atlasQuestionId') for c in subset), 'Missing review metadata'
             atlas_ids = {q['n'] for t in atlas for q in t['q']}
             parity = paper_reviewed and all(c['atlasQuestionId'] in atlas_ids for c in subset)
             rows.append({
@@ -73,9 +80,10 @@ def inventory(corpus: Path) -> dict:
                 'partAndSelectionReconciliation': 'complete' if paper_reviewed else 'pending',
                 'bankAtlasTaskParity': 'complete' if parity else 'pending',
             })
-    reviewed_row = next(r for r in rows if r['fullVisualReview'] == 'complete')
-    assert reviewed_row['paper']['sha256'] == reviewed['paperSha256']
-    assert reviewed_row['scheme']['sha256'] == reviewed['schemeSha256']
+            if reviewed:
+                assert rows[-1]['paper']['sha256']==reviewed['paperSha256']
+                assert rows[-1]['scheme']['sha256']==reviewed['schemeSha256']
+                assert parity, 'Reviewed paper lost Bank/Atlas task parity'
     return {
         'subject': 'irish',
         'scope': 'Every Irish paper component in PAPER_TRAIL_INDEX, all years and levels',
