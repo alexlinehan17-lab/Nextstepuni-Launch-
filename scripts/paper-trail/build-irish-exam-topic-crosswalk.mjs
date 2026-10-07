@@ -661,6 +661,58 @@ for (const paper of papers) {
   }
 }
 
+// Reviewed task boundaries override generic section guesses for this exact
+// paper. Frozen baseline identities remain below; new parts/routes are additive.
+const foundationTasks = readJson(path.join(ROOT, 'components/MarkBank/cards/irish/foundation-authored.json'));
+for (const card of foundationTasks.cards) {
+  const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
+  if (!paper) throw new Error('Unindexed reviewed Foundation task: ' + card.id);
+  const existing = paper.q.find(q => q.n === card.atlasQuestionId);
+  if (existing?.baseline) throw new Error('Reviewed task collides with frozen identity: ' + card.id);
+  if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
+  addQuestion(paper, {
+    n: card.atlasQuestionId,
+    label: card.questionRef.replace(/^2025 FL /, ''),
+    referenceSlots: existing?.referenceSlots ?? [],
+    baseTopicIds: card.examTopicKeys.map(key => F[key]),
+    anchor: { pP: card.sourceMaterial.pages[0], pY: [0, 1],
+      paperRegion: card.sourceMaterial.pages.map(p => ({ p, r: [0, 0, 1, 1] })),
+    },
+  });
+  paper.q.at(-1).reviewedSchemePages = card.schemePages;
+  paper.q.at(-1).audioMaterial = card.audioMaterial;
+}
+const reviewedFoundation = papers.find(p => p.year === 2025 && p.level === 'foundation');
+for (const [n, label, topics] of [
+  ['R-2C', 'Léamhthuiscint · Scéal', [F.extract]],
+  ['W-4B', 'Scríobh · Foirm Iarratais', [F.form]],
+]) {
+  const q = reviewedFoundation.q.find(q => q.n === n);
+  q.label = label;
+  q.baseTopicIds = topics;
+  const { secondary: ignored, ...previous } = q;
+  Object.keys(q).forEach(key => delete q[key]);
+  Object.assign(q, previous, canonicalForTopicIds(topics));
+}
+
+const foundationSchemeSections = {
+  '1': [3], '2': [4, 5, 6], '3': [7, 8, 9, 10, 11, 12, 13, 14, 15],
+  'R-1': [4], 'R-2A': [5], 'R-2B': [5], 'R-2C': [5],
+  'R-3A': [6], 'R-3B': [6], 'R-3C': [6], 'W-4B': [11, 12],
+};
+for (const [n, start, end] of [['1', 3, 5], ['2', 6, 12], ['3', 13, 17]]) {
+  reviewedFoundation.q.find(q => q.n === n).anchor.paperRegion =
+    Array.from({ length: end - start + 1 }, (_, i) => ({ p: start + i, r: [0, 0, 1, 1] }));
+}
+for (const question of reviewedFoundation.q) {
+  question.reviewedSchemePages ??= foundationSchemeSections[question.n];
+  if (!question.reviewedSchemePages) throw new Error('Unreviewed Foundation scheme: ' + question.n);
+}
+reviewedFoundation.q.find(q => q.n === '1').audioMaterial = {
+  ...foundationTasks.cards.find(card => card.audioMaterial).audioMaterial,
+  label: 'Cluastuiscint · Ceisteanna 1–8',
+};
+
 let preservedBaselineCards = 0;
 for (const expected of preservationBaseline) {
   const paper = papers.find(candidate => candidate.year === expected.year && candidate.fileid === expected.fileid);
@@ -909,6 +961,7 @@ for (const paper of papers) {
     band: [1, 1],
     copyright: '© State Examinations Commission',
     paperOnly: 1,
+    ...(paper === reviewedFoundation ? { maxCropPages: 10 } : {}),
     q: paper.q.map(question => {
       const collision = anchorCounts.get(question.anchor.pP + '|' + question.anchor.pY[0]) > 1;
       return {
@@ -917,6 +970,7 @@ for (const paper of papers) {
         printOrder: printOrder.get(question),
         pP: question.anchor.pP,
         pY: question.anchor.pY,
+        ...(question.audioMaterial ? { audioMaterial: question.audioMaterial } : {}),
         ...(question.anchor.paperRegion
           ? { paperRegion: question.anchor.paperRegion }
           : collision
@@ -934,6 +988,21 @@ for (const paper of papers) {
   fs.mkdirSync(yearDir, { recursive: true });
   const outputPath = path.join(yearDir, paper.fileid + '.json');
   fs.writeFileSync(outputPath, JSON.stringify(artifact) + '\n');
+  if (paper === reviewedFoundation) {
+    const { paperOnly, ...answerMap } = artifact;
+    answerMap.schemeFileid = paper.fileid;
+    answerMap.band = [3, 16];
+    answerMap.maxCropPages = 10;
+    answerMap.q = artifact.q.map(q => ({ ...q,
+      region: paper.q.find(question => question.n === q.n).reviewedSchemePages.map(p => ({ p, r: [0, 0, 1, 1] })),
+      mode: 'crop', conf: 1,
+    }));
+    for (const folder of [ANSWERS_ROOT, path.join(ROOT, 'public/paper-answers')]) {
+      const directory = path.join(folder, String(paper.year));
+      fs.mkdirSync(directory, { recursive: true });
+      fs.writeFileSync(path.join(directory, paper.fileid + '.json'), JSON.stringify(answerMap) + '\n');
+    }
+  }
   hostedAnchorMaps.push(path.relative(ROOT, outputPath));
 }
 

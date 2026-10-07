@@ -27,6 +27,7 @@ import {
 } from './vaultResolve';
 import { type TopicSibling } from './topics';
 import { lensFor } from '../../data/markingLens';
+import AudioSourcePlayer from '../MarkBank/AudioSourcePlayer';
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -230,6 +231,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
         // Stays light in dark mode too — the card itself is forced white
         // (design system), so a zinc-950 strip here read as a black band.
         <div className="px-3 pt-3 pb-1 bg-[#fafafa]">
+          {state.q.audioMaterial && <AudioSourcePlayer source={state.q.audioMaterial} />}
           <CropView
             pdf={state.pdf}
             region={state.region}

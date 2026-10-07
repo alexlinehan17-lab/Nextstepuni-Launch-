@@ -41,7 +41,9 @@ def inventory(corpus: Path) -> dict:
         'process.stdout.write(JSON.stringify(paperIndex.irish));',
     ], cwd=ROOT, capture_output=True, text=True, check=True)
     entries = json.loads(result.stdout)
-    cards = json.loads((ROOT / 'components/MarkBank/cards/irish/authored.json').read_text())['cards']
+    cards = [c for name in ['authored.json', 'foundation-authored.json']
+             for c in json.loads((ROOT / 'components/MarkBank/cards/irish' / name).read_text())['cards']]
+    reviewed = json.loads((ROOT / 'components/MarkBank/cards/irish/foundation-authored.json').read_text())['review']
     tags = json.loads((ROOT / 'scripts/paper-trail/topic-tags/tags/irish.json').read_text())
     rows = []
     seen_cards = set()
@@ -54,6 +56,9 @@ def inventory(corpus: Path) -> dict:
             atlas = [t for t in tags if t['year'] == entry['year']
                      and t['level'] == entry['level'] and t['fileid'] == fileid]
             seen_cards.update(c['id'] for c in subset)
+            paper_reviewed = entry['year'] == reviewed['year'] and entry['level'] == reviewed['level'] and fileid == reviewed['paperFileid']
+            atlas_ids = {q['n'] for t in atlas for q in t['q']}
+            parity = paper_reviewed and all(c['atlasQuestionId'] in atlas_ids for c in subset)
             rows.append({
                 'key': f"{entry['year']}|{entry['level']}|{fileid}",
                 'year': entry['year'], 'level': entry['level'],
@@ -63,11 +68,14 @@ def inventory(corpus: Path) -> dict:
                                    paper.get('scheme', {}).get('f')),
                 'markBankCardIds': [c['id'] for c in subset],
                 'atlasQuestionIds': [q['n'] for t in atlas for q in t['q']],
-                'questionCoverage': 'unverified' if subset else 'missing-from-mark-bank',
-                'fullVisualReview': 'pending',
-                'partAndSelectionReconciliation': 'pending',
-                'bankAtlasTaskParity': 'pending',
+                'questionCoverage': 'reviewed' if parity else 'unverified' if subset else 'missing-from-mark-bank',
+                'fullVisualReview': 'complete' if paper_reviewed else 'pending',
+                'partAndSelectionReconciliation': 'complete' if paper_reviewed else 'pending',
+                'bankAtlasTaskParity': 'complete' if parity else 'pending',
             })
+    reviewed_row = next(r for r in rows if r['fullVisualReview'] == 'complete')
+    assert reviewed_row['paper']['sha256'] == reviewed['paperSha256']
+    assert reviewed_row['scheme']['sha256'] == reviewed['schemeSha256']
     return {
         'subject': 'irish',
         'scope': 'Every Irish paper component in PAPER_TRAIL_INDEX, all years and levels',
@@ -84,7 +92,7 @@ def inventory(corpus: Path) -> dict:
             'papersWithoutIndexedScheme': [r['key'] for r in rows if r['scheme'] is None],
             'missingLocalSchemes': [r['key'] for r in rows
                                     if r['scheme'] and not r['scheme']['availableLocally']],
-            'papersPendingFullReview': len(rows),
+            'papersPendingFullReview': sum(r['fullVisualReview'] != 'complete' for r in rows),
         },
         'papers': rows,
     }

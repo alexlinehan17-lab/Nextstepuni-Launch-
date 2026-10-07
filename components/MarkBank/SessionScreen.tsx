@@ -37,6 +37,8 @@ import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
 import {
+  MARK_BANK_LEVEL_LABELS,
+  MARK_BANK_LEVEL_SHORT_LABELS,
   groupMarks,
   isPointCard,
   isRubricCard,
@@ -44,6 +46,7 @@ import {
   type ArtCriterion,
   type ArtRubric,
   type CardAudioMaterial,
+  type CardSourceMaterial,
   type GeographyCriterion,
   type GeographyRubric,
   type IrishCriterion,
@@ -369,8 +372,15 @@ export const irishScoreId = (criterionId: string) =>
 /** Awards add to the Irish mark; the scheme's explicit language penalties subtract. */
 export function irishMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system !== 'irish') return 0;
-  const total = card.rubric.criteria.reduce((sum, criterion) => {
+  const criteria = card.rubric.criteria;
+  const total = criteria.reduce((sum, criterion) => {
     const value = scores[irishScoreId(criterion.id)] ?? 0;
+    if (criterion.kind === 'deduction' && criterion.deductFrom) return sum;
+    if (criterion.kind === 'award') {
+      const penalty = criteria.filter(item => item.kind === 'deduction' && item.deductFrom === criterion.id)
+        .reduce((amount, item) => amount + (scores[irishScoreId(item.id)] ?? 0), 0);
+      return sum + Math.max(0, value - penalty);
+    }
     return criterion.kind === 'deduction' ? sum - value : sum + value;
   }, 0);
   return Math.max(0, Math.min(card.totalMarks, total));
@@ -2107,13 +2117,27 @@ const listeningCriterionId = (cardId: string, criterionId: string) =>
  * extracts which both use `eolas` can be placed independently on one screen.
  * This object is presentation-only; the commit path still writes every real id.
  */
-const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListeningCard => {
+export const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListeningCard => {
   const first = cards[0];
+  const sourceDocuments = new Map<string, CardSourceMaterial>();
+  for (const card of cards) {
+    for (const source of [card.sourceMaterial, ...(card.additionalSourceMaterials ?? [])]) {
+      if (!source) continue;
+      const key = source.sourceFileid ?? card.paperFileid ?? '';
+      const existing = sourceDocuments.get(key);
+      sourceDocuments.set(key, { ...source,
+        pages: [...new Set([...(existing?.pages ?? []), ...source.pages])].sort((a, b) => a - b),
+      });
+    }
+  }
+  const sources = [...sourceDocuments.values()];
   const questionRef = sharedListeningLabel(cards.map(card => card.questionRef)) || first.questionRef;
   const audioLabel = sharedListeningLabel(cards.map(card => card.audioMaterial.label))
     || first.audioMaterial.label;
   return {
     ...first,
+    sourceMaterial: sources[0] ? { ...sources[0], label: audioLabel, title: first.audioMaterial.title } : undefined,
+    additionalSourceMaterials: sources.slice(1),
     questionRef,
     questionText: cards
       .map(card => `${listeningSectionLabel(card)}\n${card.questionText}`)
@@ -2131,6 +2155,7 @@ const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListenin
       criteria: cards.flatMap(card => card.rubric.criteria.map(criterion => ({
         ...criterion,
         id: listeningCriterionId(card.id, criterion.id),
+        ...(criterion.deductFrom ? { deductFrom: listeningCriterionId(card.id, criterion.deductFrom) } : {}),
         label: `${listeningSectionLabel(card)} · ${criterion.label}`,
       }))),
       markingGuideNote: [...new Set(cards.map(card => card.rubric.markingGuideNote))].join(' '),
@@ -2498,7 +2523,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   if (!card || !assessmentCard) return null;
 
-  const levelLabel = assessmentCard.level === 'higher' ? 'HIGHER LEVEL' : 'ORDINARY LEVEL';
+  const levelLabel = `${MARK_BANK_LEVEL_LABELS[assessmentCard.level].toUpperCase()} LEVEL`;
   const figure = 'figure' in assessmentCard ? assessmentCard.figure : undefined;
   const questionFigure = 'questionFigure' in assessmentCard ? assessmentCard.questionFigure : undefined;
   const sourceMaterial = assessmentCard.sourceMaterial;
@@ -2506,6 +2531,18 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     ...(sourceMaterial ? [sourceMaterial] : []),
     ...(assessmentCard.additionalSourceMaterials ?? []),
   ];
+  const sourceReaders = sourceMaterials.map((source, index) => {
+    const sourceFileid = source.sourceFileid ?? assessmentCard.paperFileid;
+    return sourceFileid ? (
+      <SourceMaterialReader
+        key={`${sourceFileid}-${source.label}-${index}`}
+        source={source}
+        subjectId={assessmentCard.subjectId}
+        year={assessmentCard.year}
+        paperFileid={sourceFileid}
+      />
+    ) : null;
+  });
   const audioMaterial = assessmentCard.audioMaterial;
   const labelKey = assessmentCard.kind === 'diagram' ? assessmentCard.labelKey : undefined;
 
@@ -2575,7 +2612,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             flexShrink: 0,
           }}>
             <span aria-hidden="true" style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', background: subjectColour, marginRight: 7 }} />
-            {subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : 'OL'}
+            {subjectLabel} · {MARK_BANK_LEVEL_SHORT_LABELS[assessmentCard.level]}
           </span>
 
           <span style={{ flex: 1 }} />
@@ -2747,7 +2784,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em',
                 textTransform: 'uppercase', color: LABEL,
               }}>
-                {subjectLabel} · {levelLabel} · {assessmentCard.year} · {assessmentCard.questionRef.replace(/^\d{4}\s+(HL|OL)\s+/, '')}
+                {subjectLabel} · {levelLabel} · {assessmentCard.year} · {assessmentCard.questionRef.replace(/^\d{4}\s+(HL|OL|FL)\s+/, '')}
               </span>
               {/* Inverted chip: ink as the fill. The text must flip WITH it --
                   --mb-ink goes near-white in dark mode, so hard-coded white
@@ -2783,6 +2820,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             {!questionFigure && (audioMaterial ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
+                {sourceReaders}
                 <ListeningQuestionSet cards={listeningCards} />
               </>
             ) : <QuestionText text={assessmentCard.questionText} />)}
@@ -2811,18 +2849,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
-            {sourceMaterials.map((source, index) => {
-              const sourceFileid = source.sourceFileid ?? assessmentCard.paperFileid;
-              return sourceFileid ? (
-                <SourceMaterialReader
-                  key={`${sourceFileid}-${source.label}-${index}`}
-                  source={source}
-                  subjectId={assessmentCard.subjectId}
-                  year={assessmentCard.year}
-                  paperFileid={sourceFileid}
-                />
-              ) : null;
-            })}
+            {!audioMaterial && sourceReaders}
 
             {answerVariants.length > 0 && (
               <fieldset style={{

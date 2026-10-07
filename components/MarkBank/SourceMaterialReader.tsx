@@ -74,6 +74,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const closeRef = useRef<HTMLButtonElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
   const scrollFrame = useRef<number | null>(null);
+  const requestedPage = useRef<number | null>(null);
   const swipeStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
 
   const url = useMemo(() => paperUrl(paperStoragePath(
@@ -94,6 +95,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, []);
 
   const show = useCallback(() => {
+    requestedPage.current = null;
     setPageIndex(0);
     setZoom(1);
     setOpen(true);
@@ -123,6 +125,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   const goTo = useCallback((next: number) => {
     const index = clamp(next, source.pages.length - 1);
+    requestedPage.current = index;
     setPageIndex(index);
     const slide = trackRef.current?.children[index] as HTMLElement | undefined;
     if (slide && typeof slide.scrollIntoView === 'function') {
@@ -135,12 +138,18 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     scrollFrame.current = requestAnimationFrame(() => {
       const track = trackRef.current;
       if (!track || track.clientWidth === 0) return;
+      // Intermediate smooth-scroll positions must not undo a second Next click.
+      if (requestedPage.current !== null) {
+        if (Math.abs(track.scrollLeft - requestedPage.current * track.clientWidth) > 1) return;
+        requestedPage.current = null;
+      }
       setPageIndex(clamp(Math.round(track.scrollLeft / track.clientWidth), source.pages.length - 1));
     });
   }, [source.pages.length]);
 
   const swipeStarted = useCallback((event: React.PointerEvent<HTMLDivElement>) => {
     if (zoom !== 1 || event.isPrimary === false) return;
+    requestedPage.current = null;
     swipeStart.current = { x: event.clientX, y: event.clientY, pointerId: event.pointerId };
     try { event.currentTarget.setPointerCapture?.(event.pointerId); } catch { /* capture is an enhancement */ }
   }, [zoom]);
@@ -168,6 +177,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   // also makes a desktop click-and-drag feel like the same physical reader.
   const mouseSwipeStarted = useCallback((event: React.MouseEvent<HTMLDivElement>) => {
     if (zoom !== 1 || event.button !== 0) return;
+    requestedPage.current = null;
     swipeStart.current = { x: event.clientX, y: event.clientY, pointerId: -1 };
   }, [zoom]);
 
@@ -181,6 +191,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   // has historically been inconsistent during nested overflow scrolling.
   const touchSwipeStarted = useCallback((event: React.TouchEvent<HTMLDivElement>) => {
     if (zoom !== 1 || event.touches.length !== 1) return;
+    requestedPage.current = null;
     const touch = event.touches[0];
     swipeStart.current = { x: touch.clientX, y: touch.clientY, pointerId: -2 };
   }, [zoom]);

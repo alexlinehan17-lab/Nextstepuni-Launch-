@@ -67,10 +67,10 @@ describe('audited hosted answer maps', () => {
   });
 
   it('ships every override and keeps it byte-identical to the reviewed source map', () => {
-    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(23);
+    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(24);
     for (const key of HOSTED_ANSWER_OVERRIDES) {
       const [subjectId, year, fileid] = key.split('|');
-      expect(['art', 'physics']).toContain(subjectId);
+      expect(['art', 'physics', 'irish']).toContain(subjectId);
       const hosted = path.join(HOSTED_ANSWERS_DIR, year, `${fileid}.json`);
       const source = path.join(SOURCE_ANSWERS_DIR, year, `${fileid}.json`);
       expect(existsSync(hosted), hosted).toBe(true);

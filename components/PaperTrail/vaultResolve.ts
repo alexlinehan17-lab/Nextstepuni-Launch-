@@ -45,6 +45,7 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
  * Storage object is live, an entry can be removed without changing callers.
  */
 export const HOSTED_ANSWER_OVERRIDES = new Set([
+  'irish|2025|LC001BLP000IV.pdf',
   'physics|2012|LC021ALP000EV.pdf',
   'physics|2024|LC021ALP000EV.pdf',
   'physics|2024|LC021ALP000IV.pdf',
@@ -217,6 +218,7 @@ export function mergePaperAnchorMetadata(
     ...(paperQuestion.endY !== undefined ? { endY: paperQuestion.endY } : {}),
     ...(paperQuestion.printOrder !== undefined ? { printOrder: paperQuestion.printOrder } : {}),
     ...(paperQuestion.label ? { label: paperQuestion.label } : {}),
+    ...(paperQuestion.audioMaterial ? { audioMaterial: paperQuestion.audioMaterial } : {}),
   };
   const maxCropPages = Math.max(
     answerMap.maxCropPages ?? 0,
@@ -256,7 +258,8 @@ export function resolveSibling(t: TopicSibling): ResolvedSibling | null {
         ),
         anchorsUrl: hostedAnchorsUrl(t.year, item.doc.f),
         paperLabel: item.label,
-        preferAnchors: VAULT_PREFER_ANCHORS.get(t.subjectId)?.(item.doc.f) ?? false,
+        preferAnchors: !HOSTED_ANSWER_OVERRIDES.has(`${t.subjectId}|${t.year}|${item.doc.f}`)
+          && (VAULT_PREFER_ANCHORS.get(t.subjectId)?.(item.doc.f) ?? false),
       }
     : null;
   memo.set(key, out);

@@ -3,6 +3,10 @@ import { describe, expect, it } from 'vitest';
 import { profileDeckChoice } from '../components/MarkBank/MarkBank';
 
 describe('Mark Bank profile defaults', () => {
+  it('keeps the Foundation level selected in an Irish profile', () => {
+    expect(profileDeckChoice([{ subjectName: 'Irish', level: 'Foundation' }]))
+      .toEqual({ subjectId: 'irish', level: 'foundation' });
+  });
   it('opens on the first supported subject and saved level in the student profile', () => {
     expect(profileDeckChoice([
       { subjectName: 'English', level: 'higher' },

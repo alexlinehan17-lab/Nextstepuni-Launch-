@@ -1,65 +1,77 @@
 # Irish Mark Bank authoring
 
-Irish is a complete written-paper corpus, not a sample deck. It covers every
-independently selectable response on the 2021–2025 Higher and Ordinary Level
-papers. Compulsory linked subparts remain on one card. The oral examination and
-Foundation Level are outside this corpus.
+The required scope is all 91 Irish Paper Trail components from 2010–2026 at
+Higher, Ordinary and Foundation Level. The archive is **not complete**.
+`scripts/markbank/authored/irish-archive-inventory.json` records the paper-level
+backlog; card presence is never proof that every part or answer route is covered.
 
-## Census
+The legacy generator retains 400 Higher/Ordinary cards from 2021–2025. Its
+`irish-census.json` is a generated ledger, not an independent completeness audit.
+Known omitted alternatives and unsplit reading tasks still require review. The
+five additional-poetry Q4F cards have separately documented source corrections.
 
-| Level | Paper 1 per year | Paper 2 per year | Five-year total |
-|---|---:|---:|---:|
-| Higher | 17 | 26 | 215 |
-| Ordinary | 15 | 22 | 185 |
-| **All** |  |  | **400** |
+`irish_foundation.py` adds the visually reviewed 2025 Foundation paper: fourteen
+listening parts, ten matching parts, thirty reading parts, six whole writing
+routes, six paired reading routes, and twelve paired writing routes. The paired
+routes reproduce the printed choose-two instructions; their marks are not added
+to individual alternatives to infer the examination total. Source hashes and
+selection decisions are committed beside the cards in `foundation-authored.json`.
 
-The generated ledger is
-`scripts/markbank/authored/irish-census.json`. A successful build must report
-20 papers, 400 unique card units, 400 authored and zero queued.
-Searchable scheme extracts are generated alongside it in
-`examiner-reports/irish/schemes/`; they are the review surface used by the
-shared paper/citation guards and must remain in sync with `authored.json`.
+## Marking boundaries and selections
 
-## Marking grammar
+Use the actual year's scheme. Separately marked reading and listening parts can
+be practised independently. A whole written response with one shared language
+award stays whole; show its published content allocations inside the rubric.
 
-Irish does not use English PCLM. Cards reproduce the scheme family actually
-printed for the response:
+Expand closed task choices, including choices inside a task. The 2025 form has
+three interview dates, which produce three 45-mark routes. Combining it with
+another writing task therefore expands each relevant pair into three 90-mark
+routes. Multiple-choice distractors are answers to one task, not alternative
+valid tasks. Required headings, indicative examples and open choices such as
+school subjects or hobbies are not finite task pools.
 
-- Listening and reading use question-specific exact answers and tariffs.
-- Higher composition uses Stíl (5), Ábhar (15) and Cumas Gaeilge (80).
-- Ordinary composition uses Tasc (2), Ábhar (8) and Cumas agus Cruinneas
-  Gaeilge (40), with the published even-numbered language placements.
-- Higher literature awards Eolas (25 or 35) and Gaeilge (5).
-- Ordinary literature awards Eolas (25) and applies the printed 0–4 Gaeilge
-  deduction. A deduction is never presented as an award.
-- Literature supporting points are explicitly non-exhaustive; alternatives are
-  judged on their merits.
+Penalties scoped to an award use `deductFrom`. They cannot reduce a different
+response or its language award. Do not invent unprinted word-count thresholds:
+the 2025 Foundation form names a maximum length deduction of three marks, but
+its explicit table only supplies zero and minus one placements.
 
-## Required material
+## Material and topic parity
 
-Reading passages and printed poems are attached as page references to the real
-Paper Trail PDF. Multi-page texts open in the swipeable source reader. Listening
-cards carry the official SEC recording identity and a verified Educateplus
-playback mirror; a transcript is never shown because it would reveal answers.
+Attach every required passage, poem, form, map and picture page to the source
+reader. A combined listening exercise must retain all its member source pages.
+Listening requires the actual recording; never expose the answer transcript.
 
-The canonical audio filename is `LC001ZLP017IV.mp3`. The 2021 mirror is split by
-Cuid A/B/C; later years use the full annual recording. If a mirror changes,
-update playback URLs without changing the SEC identity or card IDs.
+Higher/Ordinary use `LC001ZLP017IV.mp3`. Foundation has a different recording,
+`LC001BLP017IV.mp3`; the 2025 official SEC URL has been checked. These filenames
+must not be interchanged. The older Higher/Ordinary cards retain their playback
+mirrors until individually reviewed.
 
-## Rebuild and verify
+Foundation task IDs join to exact year/level/file/question identities in the
+Irish exam-topic crosswalk builder. Reviewed 2025 anchors include both question
+pages and scheme pages. Canonical IDs come from the existing curriculum and
+exam-topic registry, never copied topic-name arrays. A mixed-topic selection
+retains all relevant curriculum nodes for Mark Bank filtering.
 
-The source PDFs live in `examiner-reports/irish/papers/` and are intentionally
-gitignored. Generated data is committed.
+## Rebuild and verification
+
+The complete source PDFs live under `paper-trail-corpus/`; the legacy generator
+also uses its local `examiner-reports/irish/papers/` inputs. Generated data and
+searchable scheme extracts are committed. Never write through another checkout's
+corpus symlink.
 
 ```sh
-python3 scripts/markbank/authoring/irish_cards.py
 python3 scripts/markbank/authoring/irish_cards.py --check
-python3 scripts/markbank/authoring/reconcile.py irish --open
-python3 scripts/markbank/authoring/reconcile.py irish --baseline check
+python3 scripts/markbank/authoring/irish_foundation.py --check
+node scripts/paper-trail/build-irish-exam-topic-crosswalk.mjs
+node scripts/paper-trail/topic-tags/build-tags.mjs
+python3 scripts/markbank/authoring/irish_inventory.py --check
 npm run typecheck
-npx vitest run test/markBankIrish.test.ts
+npx vitest run test/markBankIrish.test.ts test/markBankIrishFoundation.test.ts test/markBankSession.test.tsx test/markBankProfileDefaults.test.ts test/irishExamTopics.test.ts test/markBankCardPreservation.test.ts test/curriculumRegistry.test.ts test/markBankDeck.test.ts
 ```
 
-The generator fails on a missing paper section, a wrong per-paper count, a
-duplicate ID, unreconciled marking criteria, an implausibly short prompt, source
-page disorder, or question/scheme furniture leaking into a card.
+The Foundation generator fails if the reviewed PDFs change, if an extracted
+selection directive occurs on an unclassified page, or if a selection decision
+no longer matches its page. The tests pin route IDs, wording, tariffs, source
+pages, topics and scheme anchors. These guards support, and never replace, the
+required full visual paper/scheme sweep. Do not update preservation baselines to
+hide unfinished coverage.

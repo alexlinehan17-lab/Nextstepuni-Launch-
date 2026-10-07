@@ -38,7 +38,8 @@ import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
   writeChoice, writeLocal, type DeckState,
 } from './store';
-import type { SecCard } from '../../types/markBank';
+import { MARK_BANK_LEVEL_LABELS, MARK_BANK_LEVEL_SHORT_LABELS, type SecCard } from '../../types/markBank';
+import { levelsForSubject } from './levels';
 import ChoiceControl from '../ui/ChoiceControl';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
@@ -213,7 +214,8 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
     const wanted = MARK_BANK_SUBJECT_ALIASES[raw] ?? raw;
     const subject = SUBJECTS.find(candidate => normaliseSubjectName(candidate.title) === wanted);
     if (!subject) continue;
-    const level: Level = profileSubject.level?.toLowerCase().startsWith('ordinary') ? 'ordinary' : 'higher';
+    const rawLevel = profileSubject.level?.toLowerCase();
+    const level: Level = rawLevel?.startsWith('foundation') ? 'foundation' : rawLevel?.startsWith('ordinary') ? 'ordinary' : 'higher';
     if (deckSize(subject.id, level) > 0) return { subjectId: subject.id, level };
   }
   return null;
@@ -234,8 +236,10 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   const [subjectId, setSubjectId] = useState<string>(initialChoice.subjectId);
   const [level, setLevel] = useState<Level>(initialChoice.level);
   const chooseSubject = useCallback((id: string) => {
+    const nextLevel = levelsForSubject(id).includes(level) ? level : 'higher';
     setSubjectId(id);
-    writeChoice(uid, { subjectId: id, level });
+    setLevel(nextLevel);
+    writeChoice(uid, { subjectId: id, level: nextLevel });
   }, [uid, level]);
   const chooseLevel = useCallback((l: Level) => {
     setLevel(l);
@@ -455,7 +459,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
             {left === 0 ? 'Every mark banked.' : 'Good work. Keep building.'}
           </h2>
           <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED, margin: '0 0 28px' }}>
-            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {level === 'higher' ? 'Higher level' : 'Ordinary level'}
+            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {MARK_BANK_LEVEL_LABELS[level]} level
           </p>
 
           <ResultStatGrid items={[
@@ -508,7 +512,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
      Once the subject and level are remembered, the home screen's whole job is one
      readout and one button — that is a rail, not a screen. */
   const dueCount = dueIds.length;
-  const strands = strandsFor(subjectId);
+  const strands = strandsFor(subjectId).map(strand => subjectId === 'irish' && level === 'foundation'
+    ? { ...strand, label: 'Bonnleibhéal' } : strand);
   const coveredTopics = strands.flatMap(strand => strand.topics).filter(topic => cardsForTopic(topic.id, cards).length > 0).length;
   const totalTopics = strands.reduce((sum, strand) => sum + strand.topics.length, 0);
   // English is reconciled against every selectable response in all twenty
@@ -516,8 +521,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   // corpus", not "unfinished". Showing dozens of disabled poets and roll-up
   // categories made a complete subject look half-built and buried the useful
   // choices on mobile.
-  const completePaperCorpus = subjectId === 'english' || subjectId === 'irish';
-  const visibleStrands = completePaperCorpus
+  // Show authored topics without implying that the archive is complete.
+  const showAuthoredTopics = subjectId === 'english' || subjectId === 'irish';
+  const visibleStrands = showAuthoredTopics
     ? strands
       .map(strand => ({
         ...strand,
@@ -565,7 +571,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
           <h2 style={{ font: `700 24px/1.15 ${SERIF}`, color: INK, margin: '0 0 3px' }}>
             {subject.title}
           </h2>
-          <Eyebrow>{level === 'higher' ? 'Higher level' : 'Ordinary level'} · {subject.spec}</Eyebrow>
+          <Eyebrow>{MARK_BANK_LEVEL_LABELS[level]} level · {subject.spec}</Eyebrow>
 
           {/* alignItems, or the pills stretch: a flex column stretches its
               children by default, which overrides the Segment's own inline-flex
@@ -581,7 +587,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                 options={SUBJECTS.map(s => ({
                   value: s.id,
                   label: s.title,
-                  empty: deckSize(s.id, level) === 0,
+                  empty: deckSize(s.id, levelsForSubject(s.id).includes(level) ? level : 'higher') === 0,
                   markerColor: getSubjectHex(s.title),
                 }))}
                 value={subjectId}
@@ -591,9 +597,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
             <div style={{ width: '100%' }}>
               <div style={{ marginBottom: 6 }}><Eyebrow>Paper level</Eyebrow></div>
               <Segment
-                options={(['higher', 'ordinary'] as Level[]).map(l => ({
-                  value: l, label: l === 'higher' ? 'Higher' : 'Ordinary',
-                  shortLabel: l === 'higher' ? 'HL' : 'OL',
+                options={levelsForSubject(subjectId).map(l => ({
+                  value: l, label: MARK_BANK_LEVEL_LABELS[l],
+                  shortLabel: MARK_BANK_LEVEL_SHORT_LABELS[l],
                   empty: deckSize(subjectId, l) === 0,
                 }))}
                 value={level}
@@ -664,9 +670,10 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                 <p style={{ margin: '20px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: LABEL }}>
                   {cards.length} questions from the {examYears} Leaving Certificate papers,
                   each marked against the real State Examinations Commission scheme.
-                  {completePaperCorpus
+                  {subjectId === 'english'
                     ? <> Every selectable response is included across {coveredTopics} examined syllabus topics.</>
-                    : <> Coverage currently spans {coveredTopics} of {totalTopics} syllabus topics.</>}
+                    : subjectId === 'irish' ? <> Practice is available in {coveredTopics} topics.</>
+                      : <> Coverage currently spans {coveredTopics} of {totalTopics} syllabus topics.</>}
                 </p>
               )}
             </>

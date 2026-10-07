@@ -50,6 +50,7 @@ import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/hi
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import { CARDS as IRISH_FOUNDATION } from '../components/MarkBank/cards/irish/foundation';
 import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
@@ -73,7 +74,7 @@ const SAMPLE_CARDS = [
   ...BUS_HIGHER, ...BUS_ORDINARY, ...HE_HIGHER, ...HE_ORDINARY,
   ...ECON_HIGHER, ...ECON_ORDINARY, ...CONS_HIGHER, ...CONS_ORDINARY,
   ...MATHS_HIGHER, ...MATHS_ORDINARY, ...ENGLISH_HIGHER, ...ENGLISH_ORDINARY,
-  ...IRISH_HIGHER, ...IRISH_ORDINARY,
+  ...IRISH_HIGHER, ...IRISH_ORDINARY, ...IRISH_FOUNDATION,
   ...ART_HIGHER, ...ART_ORDINARY,
   ...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY,
   ...CS_HIGHER, ...CS_ORDINARY, ...ENG_HIGHER, ...ENG_ORDINARY,
@@ -115,7 +116,7 @@ const comparable = (text: string) => comparableScheme(text);
 
 const schemeFor = (card: { year: number; level: string; subjectId: string }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}.md`);
+    `${card.year}-${card.level === 'higher' ? 'hl' : card.level === 'foundation' ? 'fl' : 'ol'}.md`);
 
 const schemeCache = new Map<string, string>();
 const schemeText = (card: { year: number; level: string; subjectId: string }) => {
@@ -439,6 +440,7 @@ describe('the size manifest matches the decks it describes', () => {
     ['english', 'ordinary', ENGLISH_ORDINARY],
     ['irish', 'higher', IRISH_HIGHER],
     ['irish', 'ordinary', IRISH_ORDINARY],
+    ['irish', 'foundation', IRISH_FOUNDATION],
     ['art', 'higher', ART_HIGHER],
     ['art', 'ordinary', ART_ORDINARY],
     ['geography', 'higher', GEOGRAPHY_HIGHER],

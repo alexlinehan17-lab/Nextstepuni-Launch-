@@ -282,6 +282,26 @@ describe('the question comes first and stays', () => {
     expect(screen.getByRole('button', { name: /Reveal the marking scheme/i })).toBeInTheDocument();
   });
 
+  test('does not lose a rapid Next click to an intermediate source-page scroll', async () => {
+    renderSession([card({ sourceMaterial: {
+      kind: 'source-text', label: 'Listening pictures', title: 'Three printed pages',
+      pages: [3, 4, 5], attribution: 'SEC', presentationNote: 'Original pages.',
+    } })]);
+    fireEvent.click(screen.getByRole('button', { name: /Read Listening pictures/i }));
+    const track = screen.getByLabelText('Listening pictures pages');
+    Object.defineProperty(track, 'clientWidth', { value: 390 });
+    fireEvent.click(screen.getByRole('button', { name: 'Next source page' }));
+    track.scrollLeft = 40;
+    await act(async () => {
+      fireEvent.scroll(track);
+      await new Promise(resolve => requestAnimationFrame(resolve));
+    });
+    expect(screen.getByLabelText('Page 2 of 3')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Next source page' }));
+    expect(screen.getByLabelText('Page 3 of 3')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'Open the original paper' })).toHaveAttribute('href', expect.stringContaining('#page=5'));
+  });
+
   test('opens Art imagery from the companion booklet, not the question paper', () => {
     const art = ART_HIGHER.find(entry => entry.id === 'art-2025-hl-q1-a')!;
     renderSession([art]);

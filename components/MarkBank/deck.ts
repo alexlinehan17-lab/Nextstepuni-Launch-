@@ -20,7 +20,7 @@
  * so there is no cohort left for whom the old taxonomy is correct.
  */
 
-import type { SecCard, SecDiagramCard } from '../../types/markBank';
+import { MARK_BANK_LEVEL_LABELS, type MarkBankLevel, type SecCard, type SecDiagramCard } from '../../types/markBank';
 import { CURRICULUM } from '../../curriculum';
 import DECK_SIZES from './cards/sizes.json';
 
@@ -80,14 +80,14 @@ export const ENGLISH_STRANDS: StrandRef[] = [...englishCurriculum.strands]
   }));
 
 /**
- * The 2021–2025 Irish papers use the outgoing syllabus.  Keep the canonical
- * Gaeilge names and taxonomy; Mark Bank hides oral and 2027+ rows because this
- * completed written-paper corpus contains no card against them.
+ * Keep the canonical Gaeilge names and taxonomy. The board shows authored
+ * topics for the selected level; a hidden empty row makes no claim that the
+ * historical archive is complete.
  */
 export const IRISH_STRANDS: StrandRef[] = irishCurriculum.strands.map(strand => ({
   id: strand.id,
   label: strand.id === 'irish-1' || strand.id === 'irish-2' ? 'Páipéar 1' :
-    strand.id === 'irish-0' ? 'Béaltriail' : 'Páipéar 2',
+    strand.id === 'irish-0' ? 'Béaltriail' : strand.id === 'irish-9' ? 'Bonnleibhéal' : 'Páipéar 2',
   title: strand.name,
   topics: strand.subtopics
     .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
@@ -1102,7 +1102,7 @@ const HAND_BUILT: SecCard[] = [
  * bundler has to see each one to split it; a computed specifier either fails to
  * resolve or drags every deck into one chunk, which is the thing this avoids.
  */
-const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> = {
+const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard[] }>>>> = {
   biology: {
     higher: () => import('./cards/biology/higher'),
     ordinary: () => import('./cards/biology/ordinary'),
@@ -1150,6 +1150,7 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   irish: {
     higher: () => import('./cards/irish/higher'),
     ordinary: () => import('./cards/irish/ordinary'),
+    foundation: () => import('./cards/irish/foundation'),
   },
   art: {
     higher: () => import('./cards/art/higher'),
@@ -1169,7 +1170,7 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   },
 };
 
-export type Level = 'higher' | 'ordinary';
+export type Level = MarkBankLevel;
 
 /**
  * How many cards each deck holds, written by the build script.
@@ -1184,9 +1185,9 @@ export const deckSize = (subjectId: string, level: Level): number =>
 
 /** Decks with cards in them, as "Biology Higher"-style labels. */
 export const builtDecks = (): { subjectId: string; level: Level; label: string }[] =>
-  SUBJECTS.flatMap(s => (['higher', 'ordinary'] as Level[])
+  SUBJECTS.flatMap(s => (Object.keys(DECKS[s.id] ?? {}) as Level[])
     .filter(l => deckSize(s.id, l) > 0)
-    .map(l => ({ subjectId: s.id, level: l, label: `${s.title} ${l === 'higher' ? 'Higher' : 'Ordinary'}` })));
+    .map(l => ({ subjectId: s.id, level: l, label: `${s.title} ${MARK_BANK_LEVEL_LABELS[l]}` })));
 
 export async function loadCards(subjectId: string, level: Level): Promise<SecCard[]> {
   const load = DECKS[subjectId]?.[level];
@@ -1201,7 +1202,7 @@ export async function loadCards(subjectId: string, level: Level): Promise<SecCar
 }
 
 export const cardsForTopic = (topicId: string, cards: SecCard[]) =>
-  cards.filter(c => c.topicId === topicId);
+  cards.filter(c => c.topicId === topicId || c.additionalTopicIds?.includes(topicId));
 
 /** Total marks available in a topic — the denominator for "marks secure". */
 export const topicMarks = (topicId: string, cards: SecCard[]) =>
