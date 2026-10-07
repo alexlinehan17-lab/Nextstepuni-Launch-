@@ -1,0 +1,57 @@
+{
+  "status": "in-progress",
+  "previousGoalTurn": "progress",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Agricultural-Science-Completion-20261007",
+  "branch": "codex/agricultural-science-completion-20261007",
+  "baseCommit": "8deb273f",
+  "scope": "Every separately practicable task and finite printed answer route in all Agricultural Science Paper Trail documents, correctly classified in Mark Bank and Topic Atlas with required original source material.",
+  "inventory": {
+    "indexedEditions": 68,
+    "distinctEnglishPapers": 34,
+    "years": [
+      2010,
+      2026
+    ],
+    "selectionCuesPendingClassification": 758,
+    "fullPaperAndSchemeSweepsCompleted": 0
+  },
+  "completedBatch": {
+    "reviewedTasks": [
+      "2022 OL Q2(b)(ii)",
+      "2022 OL Q13(b)(i)",
+      "2023 HL Q18(a)(i)",
+      "2025 OL Q8(b)"
+    ],
+    "addedMarkBankCards": 7,
+    "correctedMarkBankCards": 1,
+    "markBankCardsNow": 876,
+    "originalCardIdsPreserved": 869,
+    "atlasPracticeCardsAdded": 8,
+    "oldWholeQuestionAnchorsUnchanged": 54,
+    "obsoleteExclusionsResolved": 4
+  },
+  "verification": {
+    "targetedTestsPassed": 142,
+    "sourceReaderOpenCloseTestPassed": true,
+    "renderedCropReview": "All 4 distinct paper/scheme crop pairs reviewed. Field crop tightened after detecting next-part bleed. Final field crop inspected.",
+    "cardBuild": "876 built, zero dropped",
+    "generationChecks": [
+      "agricultural_science_completion.py --check",
+      "agricultural_science_atlas.py --check",
+      "agricultural_science_inventory.py --check"
+    ],
+    "testTypecheck": "3 pre-existing programmeAnalytics errors reproduced on base worktree; no Agricultural Science errors",
+    "applicationTypecheck": "Passed"
+  },
+  "remaining": [
+    "Visually sweep all 34 English papers and matching schemes; check Irish editions for parity and all source changes. No full-paper sweep has yet been signed off.",
+    "Author 2010–2020 and 2026 tasks; recheck all 2021–2025 card boundaries, wording, marks, source context, topic assignments and finite choices.",
+    "Classify every raw selection directive, with mechanical expansion of genuine closed pools and written reasons for non-expansions.",
+    "Repair the generic legacy-paper census before treating its provisional 2456 asks as a reliable denominator: 60 flags and two apparent 2021 OL Q17 orphans remain. Never infer completeness from this parser.",
+    "Extend reviewed task parity into Topic Atlas for the entire corpus and preserve all old identities and question crops.",
+    "Check the drawing/source-page experience for every affected task and perform final phone/desktop runtime QA.",
+    "Keep preservation hashes and coverage baseline frozen until independent sweep, zero-open/zero-orphan reconciliation and regression gates all pass.",
+    "Review changes for integration with the other terminals. No commit from this worktree has been merged or published."
+  ],
+  "nextAction": "Begin the independent 2010 Higher paper/scheme visual sweep and establish its real mark boundaries, including the alternative Question 3. Use Paper Trail PDFs, not the generic census, as the source of truth."
+}

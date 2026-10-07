@@ -7835,4 +7835,108 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "To transport minerals", marks: 2, accepts: ["to provide water for photosynthesis","to cool the plant"] },
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q18ai-route-abc", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2023 HL Q18(a)(i) — A, B, C",
+    stem: "Practice choice: label A, B, C on the official udder diagram.",
+    questionText: "Label any three parts of the structure of the udder.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "label-a", kind: "point", verbatim: "Teat", marks: 1, contextNote: "Label A." },
+    { id: "label-b", kind: "point", verbatim: "Median suspensory ligament", marks: 1, contextNote: "Label B." },
+    { id: "label-c", kind: "point", verbatim: "Connective tissue / fine membrane", marks: 1, contextNote: "Label C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Udder structure",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q18ai-route-abd", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2023 HL Q18(a)(i) — A, B, D",
+    stem: "Practice choice: label A, B, D on the official udder diagram.",
+    questionText: "Label any three parts of the structure of the udder.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "label-a", kind: "point", verbatim: "Teat", marks: 1, contextNote: "Label A." },
+    { id: "label-b", kind: "point", verbatim: "Median suspensory ligament", marks: 1, contextNote: "Label B." },
+    { id: "label-d", kind: "point", verbatim: "Epidermis / hind quarter / outer wall", marks: 1, contextNote: "Label D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Udder structure",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q18ai-route-acd", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2023 HL Q18(a)(i) — A, C, D",
+    stem: "Practice choice: label A, C, D on the official udder diagram.",
+    questionText: "Label any three parts of the structure of the udder.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "label-a", kind: "point", verbatim: "Teat", marks: 1, contextNote: "Label A." },
+    { id: "label-c", kind: "point", verbatim: "Connective tissue / fine membrane", marks: 1, contextNote: "Label C." },
+    { id: "label-d", kind: "point", verbatim: "Epidermis / hind quarter / outer wall", marks: 1, contextNote: "Label D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Udder structure",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q18ai-route-bcd", topicId: "agsci-4-1", conceptId: "udder-structure",
+    section: "B", questionRef: "2023 HL Q18(a)(i) — B, C, D",
+    stem: "Practice choice: label B, C, D on the official udder diagram.",
+    questionText: "Label any three parts of the structure of the udder.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "label-b", kind: "point", verbatim: "Median suspensory ligament", marks: 1, contextNote: "Label B." },
+    { id: "label-c", kind: "point", verbatim: "Connective tissue / fine membrane", marks: 1, contextNote: "Label C." },
+    { id: "label-d", kind: "point", verbatim: "Epidermis / hind quarter / outer wall", marks: 1, contextNote: "Label D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Udder structure",
+          "pages": [
+                37
+          ],
+          "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+    },
+  } as SecCard,
 ];

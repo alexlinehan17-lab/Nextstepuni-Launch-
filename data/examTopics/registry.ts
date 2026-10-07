@@ -15,6 +15,7 @@ import type { PaperLang, PaperLevel } from '../../types/paperTrail';
 import { PAPER_TOPIC_TAGS } from '../paperTrail/topicTags';
 import accountingAuditJson from './accounting.json';
 import agriculturalScienceAuditJson from './agricultural-science.json';
+import agriculturalScienceQuestionRuntimeJson from './agricultural-science-question-runtime.json';
 import appliedMathematicsAuditJson from './applied-mathematics.json';
 import artRuntimeJson from './art-runtime.json';
 import biologyRuntimeJson from './biology-runtime.json';
@@ -564,6 +565,7 @@ interface DirectQuestionRuntime {
 
 const accountingAudit = accountingAuditJson as AccountingAudit;
 const agriculturalScienceAudit = agriculturalScienceAuditJson as AppliedMathematicsAudit;
+const agriculturalScienceQuestionRuntime = agriculturalScienceQuestionRuntimeJson as unknown as BrowserQuestionRuntime;
 const appliedMathematicsAudit = appliedMathematicsAuditJson as AppliedMathematicsAudit;
 const artRuntime = artRuntimeJson as unknown as ArtRuntime;
 const biologyRuntime = biologyRuntimeJson as unknown as BiologyRuntime;
@@ -3510,6 +3512,7 @@ const registerBrowserQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
   }
 };
 
+registerBrowserQuestionRuntime(agriculturalScienceQuestionRuntime);
 registerBrowserQuestionRuntime(englishQuestionRuntime);
 registerBrowserQuestionRuntime(geographyQuestionRuntime);
 registerBrowserQuestionRuntime(homeEconomicsQuestionRuntime);

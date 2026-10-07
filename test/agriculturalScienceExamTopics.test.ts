@@ -8,6 +8,7 @@
 import { describe, expect, it } from 'vitest';
 import { CURRICULUM } from '../curriculum';
 import agriculturalScienceBaselineJson from './fixtures/agriculturalScienceTopicQuestionBaseline.json';
+import agriculturalSciencePractice from '../data/examTopics/agricultural-science-question-runtime.json';
 import { subjectAtlasStats, topicsForPaper, topicsForSubject } from '../components/PaperTrail/topics';
 import {
   curriculumNodeIdsForExamTopic,
@@ -145,13 +146,18 @@ describe('Agricultural Science exam-topic registry', () => {
         expected.fileid,
       );
       expect(live, `${expected.level}|${expected.lang}|${expected.year}|${expected.fileid}`).not.toBeNull();
-      expect(live!.q.map(question => question.n)).toEqual(expected.questions);
+      // Frozen whole-question baseline remains exact; newly reviewed parts
+      // append stable identities without renumbering an existing question.
+      const additions = new Set(agriculturalSciencePractice.markBankCards
+        .filter(card => card.year === expected.year && card.fileid === expected.fileid)
+        .map(card => card.n));
+      expect(live!.q.filter(question => !additions.has(question.n)).map(question => question.n)).toEqual(expected.questions);
     }
   });
 
   it('adds the previously untagged anchored papers without inflating translations', () => {
     expect(subjectAtlasStats('agricultural-science')).toMatchObject({
-      questions: 458,
+      questions: 458 + 8,
       topics: 35,
       yearMin: 2010,
       yearMax: 2026,

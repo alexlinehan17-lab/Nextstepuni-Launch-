@@ -119,7 +119,10 @@ export function paperRegionFor(
     return segs;
   }
 
-  const next = ordered[i + 1];
+  // Reviewed sub-tasks have independent practice identities and explicit
+  // crops. Their starts are inside a whole question, so they cannot become
+  // the next-question boundary and cut its required context off.
+  const next = ordered.slice(i + 1).find(candidate => !candidate.parentN);
 
   // Last anchored question — trust its own band; if the band is degenerate,
   // run to the bottom of the page (the composition/essay tail is rarely

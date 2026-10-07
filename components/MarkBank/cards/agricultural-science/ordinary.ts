@@ -7795,28 +7795,6 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q8b", topicId: "agsci-1-5", conceptId: "reading-fertiliser-hazard-symbols",
-    section: "A", questionRef: "2025 OL Q8(b)",
-    stem: "The photograph shows a farmer pouring fertiliser into a fertiliser spreader. Analyse the photograph and answer the questions that follow.",
-    questionText: "Orla noticed two warning signs on the fertiliser bags which identified it as an eye irritant and a fire risk. Choose the two warning signs by placing a tick (✓) in the correct boxes to identify these signs.",
-    tariffModel: {"kind":"fixed","notation":"3+2"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Symbols 2 and 3", marks: 5 },
-    ],
-    figure: {
-          "candId": "agricultural-science-2025-OL-paper-p09-i1",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p09-i1.png",
-          "srcHash": "3f21230c26985a5ecd3804e48cff5ce3",
-          "alt": "Row of four hazard warning pictograms for Question 8(b), each drawn as a red diamond outline on a white square with a black symbol inside. Left to right: (1) a dead leafless tree beside a dead fish lying on its side — the environmental hazard sign; (2) a large exclamation mark; (3) a flame burning on top of a circle above a horizontal bar — the oxidiser sign; (4) a skull above two crossed bones. The four signs sit in the cells of a bordered table, with a second empty row of tick boxes directly beneath them. Two lines of the question are visible above: 'Choose the two warning signs by placing a tick in the correct boxes to identify these signs.'",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2025-ol-q9bii", topicId: "agsci-1-3", conceptId: "what-falling-input-prices-mean",
     section: "A", questionRef: "2025 OL Q9(b)(ii)",
     stem: "Electricity down 22% Cereals down 31% Fertilisers down 40% Feedstuffs down 21% Milk down 5% Sheep up 30% Changes in Agricultural Input Price Changes in Agricultural Output Price Costs less to produce Cost the same to produce Costs more to produce Increased profit Increased cost",
@@ -7999,6 +7977,101 @@ export const CARDS: SecCard[] = [
           "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
           "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q2bii-route-e", topicId: "agsci-4-3-2", conceptId: "selecting-a-ram-for-replacement-ewes",
+    section: "A", questionRef: "2022 OL Q2(b)(ii) — breed E",
+    stem: "Practice choice: breed E. Jessica is looking to buy a ram to breed replacements with her Suffolk cross ewes.",
+    questionText: "Jessica could choose either breed E or F to cross with her Suffolk cross ewes for replacements in her flock. Advise Jessica with reasons which breed to choose.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "reasons", kind: "anyN", verbatim: "good milk production / prolific / easy lambing / good mothers / hardy or good survival rate / good growth rate / calm or easy to handle / maternal sire", marks: 4, contextNote: "Use the scheme’s reasons for breed E. Credit two distinct reasons; synonymous descriptions of the same trait count once. The first correct reason earns 3 marks and the second earns 1.", group: {"claimMax":2,"perOption":3,"perOptionSteps":[3,1],"options":["good milk production","prolific","easy lambing","good mothers","hardy or good survival rate","good growth rate","calm or easy to handle","maternal sire"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Ram photographs E and F",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q2bii-route-f", topicId: "agsci-4-3-2", conceptId: "selecting-a-ram-for-replacement-ewes",
+    section: "A", questionRef: "2022 OL Q2(b)(ii) — breed F",
+    stem: "Practice choice: breed F. Jessica is looking to buy a ram to breed replacements with her Suffolk cross ewes.",
+    questionText: "Jessica could choose either breed E or F to cross with her Suffolk cross ewes for replacements in her flock. Advise Jessica with reasons which breed to choose.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "reasons", kind: "anyN", verbatim: "hardy or good survival rate / prolific / good mothers / good growth rate / excellent conformation", marks: 4, contextNote: "Use the scheme’s reasons for breed F. Credit two distinct reasons; synonymous descriptions of the same trait count once. The first correct reason earns 3 marks and the second earns 1.", group: {"claimMax":2,"perOption":3,"perOptionSteps":[3,1],"options":["hardy or good survival rate","prolific","good mothers","good growth rate","excellent conformation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Ram photographs E and F",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q13bi", topicId: "agsci-2-3", conceptId: "soil-sampling-pattern",
+    section: "B", questionRef: "2022 OL Q13(b)(i)",
+    stem: "The photograph shows a grassland field where a farmer wants to carry out soil analysis. Use the official page for your sketch.",
+    questionText: "Sketch onto the photograph of field A below, the pattern the farmer would use when taking a number of soil samples. (Please use your pen).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "sampling-pattern", kind: "criterion", verbatim: "W shape on photograph", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Field A: soil sampling",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q8b", topicId: "agsci-1-5", conceptId: "reading-fertiliser-hazard-symbols",
+    section: "A", questionRef: "2025 OL Q8(b)",
+    questionText: "Orla noticed two warning signs on the fertiliser bags which identified it as an eye irritant and a fire risk. Choose the two warning signs by placing a tick (✓) in the correct boxes to identify these signs.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "warning-signs", kind: "anyN", verbatim: "Symbols 2 and 3", marks: 5, contextNote: "The symbols are numbered from left to right. The scheme awards 3 marks for the first correct symbol and 2 for the second.", group: {"claimMax":2,"perOption":3,"perOptionSteps":[3,2],"options":["2","3"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Fertiliser warning signs",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
     },
   } as SecCard,
 ];

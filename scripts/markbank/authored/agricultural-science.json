@@ -35457,33 +35457,6 @@
   "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
  },
  {
-  "id": "agsci-2025-ol-q8b",
-  "topicId": "agsci-1-5",
-  "conceptId": "reading-fertiliser-hazard-symbols",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 OL Q8(b)",
-  "questionText": "Orla noticed two warning signs on the fertiliser bags which identified it as an eye irritant and a fire risk. Choose the two warning signs by placing a tick () in the correct boxes to identify these signs.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "3+2"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Symbols 2 and 3",
-    "marks": 5
-   }
-  ],
-  "stem": "The photograph shows a farmer pouring fertiliser into a fertiliser spreader. Analyse the photograph and answer the questions that follow.",
-  "notes": "Four hazard pictograms run left to right and the scheme numbers them in that order: 1 environmental hazard, 2 exclamation mark, 3 flame over a circle, 4 skull and crossbones. The two the question describes are the irritant and the fire risk.",
-  "figureKey": "agricultural-science-2025-OL-paper-p09-i1"
- },
- {
   "id": "agsci-2025-ol-q9bii",
   "topicId": "agsci-1-3",
   "conceptId": "what-falling-input-prices-mean",
@@ -35784,5 +35757,384 @@
   "stem": "Jersey Holstein Friesian Charolais Limousin Or",
   "notes": "Either of the two beef breeds in the plate scores; the other two are dairy.",
   "figureKey": "agricultural-science-2025-OL-paper-p03-art"
+ },
+ {
+  "id": "agsci-2022-ol-q2bii-route-e",
+  "subjectId": "agricultural-science",
+  "year": 2022,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2022 OL Q2(b)(ii) — breed E",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "selecting-a-ram-for-replacement-ewes",
+  "questionText": "Jessica could choose either breed E or F to cross with her Suffolk cross ewes for replacements in her flock. Advise Jessica with reasons which breed to choose.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "reasons",
+    "kind": "anyN",
+    "verbatim": "good milk production / prolific / easy lambing / good mothers / hardy or good survival rate / good growth rate / calm or easy to handle / maternal sire",
+    "marks": 4,
+    "contextNote": "Use the scheme’s reasons for breed E. Credit two distinct reasons; synonymous descriptions of the same trait count once. The first correct reason earns 3 marks and the second earns 1.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "perOptionSteps": [
+      3,
+      1
+     ],
+     "options": [
+      "good milk production",
+      "prolific",
+      "easy lambing",
+      "good mothers",
+      "hardy or good survival rate",
+      "good growth rate",
+      "calm or easy to handle",
+      "maternal sire"
+     ]
+    }
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Ram photographs E and F",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+  },
+  "stem": "Practice choice: breed E. Jessica is looking to buy a ram to breed replacements with her Suffolk cross ewes."
+ },
+ {
+  "id": "agsci-2022-ol-q2bii-route-f",
+  "subjectId": "agricultural-science",
+  "year": 2022,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2022 OL Q2(b)(ii) — breed F",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "selecting-a-ram-for-replacement-ewes",
+  "questionText": "Jessica could choose either breed E or F to cross with her Suffolk cross ewes for replacements in her flock. Advise Jessica with reasons which breed to choose.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "reasons",
+    "kind": "anyN",
+    "verbatim": "hardy or good survival rate / prolific / good mothers / good growth rate / excellent conformation",
+    "marks": 4,
+    "contextNote": "Use the scheme’s reasons for breed F. Credit two distinct reasons; synonymous descriptions of the same trait count once. The first correct reason earns 3 marks and the second earns 1.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "perOptionSteps": [
+      3,
+      1
+     ],
+     "options": [
+      "hardy or good survival rate",
+      "prolific",
+      "good mothers",
+      "good growth rate",
+      "excellent conformation"
+     ]
+    }
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Ram photographs E and F",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+  },
+  "stem": "Practice choice: breed F. Jessica is looking to buy a ram to breed replacements with her Suffolk cross ewes."
+ },
+ {
+  "id": "agsci-2023-hl-q18ai-route-abc",
+  "subjectId": "agricultural-science",
+  "year": 2023,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2023 HL Q18(a)(i) — A, B, C",
+  "topicId": "agsci-4-1",
+  "conceptId": "udder-structure",
+  "questionText": "Label any three parts of the structure of the udder.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "label-a",
+    "kind": "point",
+    "verbatim": "Teat",
+    "marks": 1,
+    "contextNote": "Label A."
+   },
+   {
+    "id": "label-b",
+    "kind": "point",
+    "verbatim": "Median suspensory ligament",
+    "marks": 1,
+    "contextNote": "Label B."
+   },
+   {
+    "id": "label-c",
+    "kind": "point",
+    "verbatim": "Connective tissue / fine membrane",
+    "marks": 1,
+    "contextNote": "Label C."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Udder structure",
+   "pages": [
+    37
+   ],
+   "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+  },
+  "stem": "Practice choice: label A, B, C on the official udder diagram."
+ },
+ {
+  "id": "agsci-2023-hl-q18ai-route-abd",
+  "subjectId": "agricultural-science",
+  "year": 2023,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2023 HL Q18(a)(i) — A, B, D",
+  "topicId": "agsci-4-1",
+  "conceptId": "udder-structure",
+  "questionText": "Label any three parts of the structure of the udder.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "label-a",
+    "kind": "point",
+    "verbatim": "Teat",
+    "marks": 1,
+    "contextNote": "Label A."
+   },
+   {
+    "id": "label-b",
+    "kind": "point",
+    "verbatim": "Median suspensory ligament",
+    "marks": 1,
+    "contextNote": "Label B."
+   },
+   {
+    "id": "label-d",
+    "kind": "point",
+    "verbatim": "Epidermis / hind quarter / outer wall",
+    "marks": 1,
+    "contextNote": "Label D."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Udder structure",
+   "pages": [
+    37
+   ],
+   "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+  },
+  "stem": "Practice choice: label A, B, D on the official udder diagram."
+ },
+ {
+  "id": "agsci-2023-hl-q18ai-route-acd",
+  "subjectId": "agricultural-science",
+  "year": 2023,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2023 HL Q18(a)(i) — A, C, D",
+  "topicId": "agsci-4-1",
+  "conceptId": "udder-structure",
+  "questionText": "Label any three parts of the structure of the udder.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "label-a",
+    "kind": "point",
+    "verbatim": "Teat",
+    "marks": 1,
+    "contextNote": "Label A."
+   },
+   {
+    "id": "label-c",
+    "kind": "point",
+    "verbatim": "Connective tissue / fine membrane",
+    "marks": 1,
+    "contextNote": "Label C."
+   },
+   {
+    "id": "label-d",
+    "kind": "point",
+    "verbatim": "Epidermis / hind quarter / outer wall",
+    "marks": 1,
+    "contextNote": "Label D."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Udder structure",
+   "pages": [
+    37
+   ],
+   "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+  },
+  "stem": "Practice choice: label A, C, D on the official udder diagram."
+ },
+ {
+  "id": "agsci-2023-hl-q18ai-route-bcd",
+  "subjectId": "agricultural-science",
+  "year": 2023,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2023 HL Q18(a)(i) — B, C, D",
+  "topicId": "agsci-4-1",
+  "conceptId": "udder-structure",
+  "questionText": "Label any three parts of the structure of the udder.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "label-b",
+    "kind": "point",
+    "verbatim": "Median suspensory ligament",
+    "marks": 1,
+    "contextNote": "Label B."
+   },
+   {
+    "id": "label-c",
+    "kind": "point",
+    "verbatim": "Connective tissue / fine membrane",
+    "marks": 1,
+    "contextNote": "Label C."
+   },
+   {
+    "id": "label-d",
+    "kind": "point",
+    "verbatim": "Epidermis / hind quarter / outer wall",
+    "marks": 1,
+    "contextNote": "Label D."
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Udder structure",
+   "pages": [
+    37
+   ],
+   "attribution": "SEC Agricultural Science 2023 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+  },
+  "stem": "Practice choice: label B, C, D on the official udder diagram."
+ },
+ {
+  "id": "agsci-2022-ol-q13bi",
+  "subjectId": "agricultural-science",
+  "year": 2022,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2022 OL Q13(b)(i)",
+  "topicId": "agsci-2-3",
+  "conceptId": "soil-sampling-pattern",
+  "questionText": "Sketch onto the photograph of field A below, the pattern the farmer would use when taking a number of soil samples. (Please use your pen).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "sampling-pattern",
+    "kind": "criterion",
+    "verbatim": "W shape on photograph",
+    "marks": 4
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Field A: soil sampling",
+   "pages": [
+    22
+   ],
+   "attribution": "SEC Agricultural Science 2022 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+  },
+  "stem": "The photograph shows a grassland field where a farmer wants to carry out soil analysis. Use the official page for your sketch."
+ },
+ {
+  "id": "agsci-2025-ol-q8b",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q8(b)",
+  "topicId": "agsci-1-5",
+  "conceptId": "reading-fertiliser-hazard-symbols",
+  "questionText": "Orla noticed two warning signs on the fertiliser bags which identified it as an eye irritant and a fire risk. Choose the two warning signs by placing a tick (✓) in the correct boxes to identify these signs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "warning-signs",
+    "kind": "anyN",
+    "verbatim": "Symbols 2 and 3",
+    "marks": 5,
+    "contextNote": "The symbols are numbered from left to right. The scheme awards 3 marks for the first correct symbol and 2 for the second.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "perOptionSteps": [
+      3,
+      2
+     ],
+     "options": [
+      "2",
+      "3"
+     ]
+    }
+   }
+  ],
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Fertiliser warning signs",
+   "pages": [
+    9
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published photograph, diagram or answer space."
+  }
  }
 ]

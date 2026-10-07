@@ -44,6 +44,7 @@ import { CARDS as COMPUTER_SCIENCE_ORDINARY } from '../components/MarkBank/cards
 import { CARDS as ENGINEERING_HIGHER } from '../components/MarkBank/cards/engineering/higher';
 import { CARDS as ENGINEERING_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
+import agriculturalReview from '../scripts/markbank/authored/agricultural-science-reviewed-tasks.json';
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
@@ -421,14 +422,24 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
   .digest('hex');
 
 describe('Mark Bank card preservation', () => {
+  // Keep the pre-audit count/hash frozen until the full paper/scheme sweep is
+  // complete. Reviewed additive work is checked separately; the original 869
+  // Agricultural Science identities must still produce their exact old hash.
+  const additions = new Set(agriculturalReview.addedCardIds);
+  const baselineCards = (cards: { id: string }[]) => cards.filter(card => !additions.has(card.id));
+
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    expect(cards.length, `${name}: card count changed`).toBe(count);
-    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(count);
-    expect(identityHash(cards), `${name}: a card ID was removed or replaced`).toBe(hash);
+    const preserved = baselineCards(cards);
+    expect(preserved.length, `${name}: original card count changed`).toBe(count);
+    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
+    expect(identityHash(preserved), `${name}: a card ID was removed or replaced`).toBe(hash);
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_495);
+    expect(additions.size).toBe(7);
+    const live = decks.flatMap(([, cards]) => cards);
+    expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
+    expect(baselineCards(live).length).toBe(10_495);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -441,7 +452,7 @@ describe('Mark Bank card preservation', () => {
     const preNewSubjectCards = decks
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:'))
-      .reduce((total, [, cards]) => total + cards.length, 0);
+      .reduce((total, [, cards]) => total + baselineCards(cards).length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });
 

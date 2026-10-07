@@ -1,0 +1,100 @@
+{
+  "status": "in-progress",
+  "reviewedAt": "2026-10-07",
+  "addedCardIds": [
+    "agsci-2022-ol-q2bii-route-e",
+    "agsci-2022-ol-q2bii-route-f",
+    "agsci-2023-hl-q18ai-route-abc",
+    "agsci-2023-hl-q18ai-route-abd",
+    "agsci-2023-hl-q18ai-route-acd",
+    "agsci-2023-hl-q18ai-route-bcd",
+    "agsci-2022-ol-q13bi"
+  ],
+  "correctedCardIds": [
+    "agsci-2025-ol-q8b"
+  ],
+  "tasks": [
+    {
+      "questionRef": "2022 OL Q2(b)(ii)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "E",
+          "F"
+        ]
+      },
+      "cardIds": [
+        "agsci-2022-ol-q2bii-route-e",
+        "agsci-2022-ol-q2bii-route-f"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "evidence": "Paper and scheme visually inspected. The scheme separates E and F reason pools, each with 3+1. All eight E entries and all five F entries are retained. These are accepted answers, not a printed finite pool of reason choices."
+    },
+    {
+      "questionRef": "2023 HL Q18(a)(i)",
+      "paperPage": 37,
+      "schemePage": 27,
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "cardIds": [
+        "agsci-2023-hl-q18ai-route-abc",
+        "agsci-2023-hl-q18ai-route-abd",
+        "agsci-2023-hl-q18ai-route-acd",
+        "agsci-2023-hl-q18ai-route-bcd"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "evidence": "Paper and scheme visually inspected. Four labelled structures, any three at 1 mark each: all four combinations. B is the complete phrase Median suspensory ligament, present in the scheme’s block-order extraction."
+    },
+    {
+      "questionRef": "2022 OL Q13(b)(i)",
+      "paperPage": 22,
+      "schemePage": 21,
+      "selection": {
+        "kind": "none",
+        "reason": "One drawing, marked as a single 4-mark criterion."
+      },
+      "cardIds": [
+        "agsci-2022-ol-q13bi"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "evidence": "Paper and scheme visually inspected. The field boundary and gate are retained in the source reader. The published answer is W shape on photograph, 4 marks; no invented partial drawing bands."
+    },
+    {
+      "questionRef": "2025 OL Q8(b)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "selection": {
+        "kind": "answer-identification",
+        "reason": "Select the two correct answers, not any two permitted examination routes. Expanding six pairs would create four knowingly incorrect tasks."
+      },
+      "cardIds": [
+        "agsci-2025-ol-q8b"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-health-safety"
+      ],
+      "evidence": "Paper and scheme visually inspected. Scheme PDF page 14 explicitly prints Symbols 2 and 3 and 3+2. A two-option marking group represents partial credit without forcing an all-or-nothing five-mark tick."
+    }
+  ]
+}
