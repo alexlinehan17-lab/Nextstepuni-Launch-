@@ -36,11 +36,17 @@ def reconcile():
     atlas = json.loads((ROOT / 'data/examTopics/agricultural-science-question-runtime.json').read_text())
     issues, papers = [], []
     checked = 0
+    translated_checked = 0
     for paper in census['papers']:
         tag = 'HL' if paper['level']=='higher' else 'OL'
         prefix = f'{paper["year"]} {tag} '
         expected = {ref:task['marksPerResponse'] for task in paper['baseTasks'] for ref in task['routes']}
         actual = {ref for _,ref in shipped if ref.startswith(prefix)}
+        if paper['lang']=='iv':
+            shipped_by_id = dict(shipped)
+            actual = {shipped_by_id.get(join['cardId'],'unknown:'+join['cardId'])
+                      for join in atlas['translatedMarkBankCards']
+                      if join['year']==paper['year'] and join['fileid']==paper['paperFileid']}
         for ref in sorted(actual-expected.keys()):
             issues.append(f'Unmatched reviewed-sitting card: {ref}')
         for ref,tariff in expected.items():
@@ -49,10 +55,12 @@ def reconcile():
                 issues.append(f'Expected exactly one card for {ref}: {ids}')
                 continue
             cid = ids[0]
-            if marks[cid]!=tariff:
+            if paper['lang']=='ev' and marks[cid]!=tariff:
                 issues.append(f'Marks differ for {ref}: shipped {marks[cid]}, source {tariff}')
             editions = [('ev','markBankCards')]
-            if paper['year']==2010 or (paper['year']==2011 and paper['level']=='higher'):
+            if paper['lang']=='iv':
+                editions = [('iv','translatedMarkBankCards')]
+            elif paper['year'] in [2010,2011]:
                 editions.append(('iv','translatedMarkBankCards'))
             for lang,field in editions:
                 joins = [j for j in atlas[field] if j['cardId']==cid]
@@ -73,16 +81,19 @@ def reconcile():
                 anchors = [q for q in answer_map['q'] if q['n']==join['n']]
                 if len(anchors)!=1 or not anchors[0].get('paperRegion') or not anchors[0].get('region'):
                     issues.append(f'Missing source crops: {ref} {lang}')
-            checked += 1
-        papers.append({'year':paper['year'],'level':paper['level'],'expectedRoutes':len(expected),
+            if paper['lang']=='ev':
+                checked += 1
+            else:
+                translated_checked += 1
+        papers.append({'year':paper['year'],'level':paper['level'],'lang':paper['lang'],'expectedRoutes':len(expected),
                        'shippedRoutes':len(actual),'missing':sorted(expected.keys()-actual),
                        'unmatched':sorted(actual-expected.keys())})
     pending = [p for p in census['editionStatus'] if p['independentCensus']=='open']
     return {'status':'in-progress' if issues or pending else 'complete',
-            'shippedCardCount':len(shipped),'reviewedRoutesChecked':checked,
+            'shippedCardCount':len(shipped),'reviewedRoutesChecked':checked,'independentlyReviewedTranslatedRoutes':translated_checked,
             'reviewedBatchIssues':issues,'papers':papers,
             'independentCensusEditionsOpen':pending,
-            'limitation':'2010 and 2011 Higher/Ordinary English boundaries and all 298 corresponding Atlas bindings reconciled exactly, plus 217 translated bindings for 2010 and 2011 Higher. The 2011 Ordinary Irish comparison, remaining sitting boundaries and independent Irish censuses remain open. This partial result cannot establish corpus completeness.'}
+            'limitation':'2010 and 2011 Higher/Ordinary English boundaries and all 298 corresponding Atlas bindings reconciled exactly, plus all 298 translated bindings for those sittings. The Irish 2011 Ordinary independent source denominator also reconciles exactly at 81 routes. Remaining sitting boundaries and the other independent Irish censuses remain open. This partial result cannot establish corpus completeness.'}
 
 
 def main():

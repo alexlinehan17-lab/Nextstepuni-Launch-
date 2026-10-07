@@ -464,29 +464,32 @@
         "pages": 16
       },
       "authoredEnglishCardsForSitting": 81,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "e4905f4e8326b2f8",
           "page": 2,
           "cue": "Freagair",
           "context": "Lch 2 de 12 Roinn a hAon (120 marc) Treoracha  Freagair sé cheist ar bith. Tá 20 marc ag gabháil le gach ceist.  Scríobh do chuid freagraí sna spásanna atá ann dóibh.  Bíodh do chuid freagraí gearr.  Scríobh do scrúduimhir sa spás atá ann di ar leathanach 1. _______________________",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One selects six separately priced questions; all seven are retained."
         },
         {
           "id": "b8652464d31bdfdf",
           "page": 6,
           "cue": "Freagair",
           "context": "N A DÓ (180 MARC) Treoracha Scríobh do chuid freagraí ar Roinn a Dó i do fhreagarleabhar. Freagair trí cheist ar bith. Tá 60 marc ag gabháil le gach ceist. Ceist 8. (a) Scríobh nóta ar gach ceann de na cleachtais seo a leanas a chuirtear ar siúl i dtáirgeadh caorach: (i) Sciotadh eireabaill (ii) Bearradh (iii) Breasal a chur a",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two selects three separately priced questions; all six are retained."
         },
         {
           "id": "a7b0bf09d83d2b21",
           "page": 8,
           "cue": "Freagair",
           "context": "aidí (v) Baint – modh agus am (vi) Táirgeadh in aghaidh an heicteáir. (60 marc) Ceist 12. Freagair dhá chuid ar bith de (a), (b), (c) agus (d). (30 marc, 30 marc) (a) Tarraing léaráid lipéadaithe den chóras díleá in ainmhí monagastrach ainmnithe. Déan cur síos ar thurgnamh chun iniúchadh a dhéanamh ar ghníomhaíocht einsíme díl",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q12 selects two separately priced 30-mark parts. Retain all thirteen published internal tasks, not pairings of unrelated responses."
         }
       ]
     },

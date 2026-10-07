@@ -2,11 +2,13 @@
   "status": "in-progress",
   "shippedCardCount": 1174,
   "reviewedRoutesChecked": 298,
+  "independentlyReviewedTranslatedRoutes": 81,
   "reviewedBatchIssues": [],
   "papers": [
     {
       "year": 2010,
       "level": "higher",
+      "lang": "ev",
       "expectedRoutes": 62,
       "shippedRoutes": 62,
       "missing": [],
@@ -15,6 +17,7 @@
     {
       "year": 2010,
       "level": "ordinary",
+      "lang": "ev",
       "expectedRoutes": 85,
       "shippedRoutes": 85,
       "missing": [],
@@ -23,6 +26,7 @@
     {
       "year": 2011,
       "level": "higher",
+      "lang": "ev",
       "expectedRoutes": 70,
       "shippedRoutes": 70,
       "missing": [],
@@ -31,6 +35,16 @@
     {
       "year": 2011,
       "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 81,
+      "shippedRoutes": 81,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "lang": "iv",
       "expectedRoutes": 81,
       "shippedRoutes": 81,
       "missing": [],
@@ -60,13 +74,6 @@
       "independentCensus": "open"
     },
     {
-      "year": 2011,
-      "level": "ordinary",
-      "lang": "iv",
-      "paperFileid": "LC024GLP000IV.pdf",
-      "independentCensus": "open"
-    },
-    {
       "year": 2012,
       "level": "higher",
       "lang": "ev",
@@ -487,5 +494,5 @@
       "independentCensus": "open"
     }
   ],
-  "limitation": "2010 and 2011 Higher/Ordinary English boundaries and all 298 corresponding Atlas bindings reconciled exactly, plus 217 translated bindings for 2010 and 2011 Higher. The 2011 Ordinary Irish comparison, remaining sitting boundaries and independent Irish censuses remain open. This partial result cannot establish corpus completeness."
+  "limitation": "2010 and 2011 Higher/Ordinary English boundaries and all 298 corresponding Atlas bindings reconciled exactly, plus all 298 translated bindings for those sittings. The Irish 2011 Ordinary independent source denominator also reconciles exactly at 81 routes. Remaining sitting boundaries and the other independent Irish censuses remain open. This partial result cannot establish corpus completeness."
 }

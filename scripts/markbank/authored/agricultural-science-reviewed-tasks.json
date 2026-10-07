@@ -17594,7 +17594,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 1",
+          "paperRegions": [
+            {
+              "p": 2,
+              "r": [
+                0,
+                0.28,
+                1,
+                0.908
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.2,
+                1,
+                0.396
+              ]
+            }
+          ],
+          "marksPerRoute": 20
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q2",
@@ -17636,7 +17666,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 2",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.042,
+                1,
+                0.626
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.463,
+                1,
+                0.725
+              ]
+            }
+          ],
+          "marksPerRoute": 20
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q3",
@@ -17678,7 +17738,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 3",
+          "paperRegions": [
+            {
+              "p": 3,
+              "r": [
+                0,
+                0.65,
+                1,
+                0.946
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.084,
+                1,
+                0.329
+              ]
+            }
+          ],
+          "marksPerRoute": 20
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q4",
@@ -17721,7 +17811,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 4",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.042,
+                1,
+                0.466
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.38,
+                1,
+                0.747
+              ]
+            }
+          ],
+          "marksPerRoute": 20
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q5 — bullock",
@@ -17763,7 +17883,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 5 — Bullán",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.51,
+                1,
+                0.796
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.084,
+                1,
+                0.301
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q5 — gilt",
@@ -17805,7 +17955,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 5 — Céis",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.51,
+                1,
+                0.796
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.084,
+                1,
+                0.301
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q5 — draft ewe",
@@ -17847,7 +18027,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 5 — Caora dhealaithe",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.51,
+                1,
+                0.796
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.084,
+                1,
+                0.301
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q5 — broiler",
@@ -17889,7 +18099,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 5 — Sicín grísce",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.51,
+                1,
+                0.796
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.084,
+                1,
+                0.301
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q5 — suckler calf",
@@ -17931,7 +18171,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 5 — Lao diúil",
+          "paperRegions": [
+            {
+              "p": 4,
+              "r": [
+                0,
+                0.51,
+                1,
+                0.796
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.084,
+                1,
+                0.301
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q6(a)",
@@ -17973,7 +18243,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 6(a)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.042,
+                1,
+                0.587
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.38,
+                1,
+                0.417
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q6(b)",
@@ -18015,7 +18315,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 6(b)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.042,
+                1,
+                0.587
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.425,
+                1,
+                0.497
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q6(c)",
@@ -18057,7 +18387,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 6(c)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.042,
+                1,
+                0.587
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.507,
+                1,
+                0.527
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q6(d)",
@@ -18099,7 +18459,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 6(d)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.042,
+                1,
+                0.587
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.535,
+                1,
+                0.614
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q7(a)",
@@ -18141,7 +18531,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 7(a)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.643,
+                1,
+                0.706
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.685,
+                1,
+                0.734
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q7(b)",
@@ -18184,7 +18604,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 7(b)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.726,
+                1,
+                0.814
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.744,
+                1,
+                0.782
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q7(c)",
@@ -18232,7 +18682,38 @@
         "source": "https://www.apsnet.org/edcenter/Pages/IntroOomycetes.aspx",
         "checkedAt": "2026-10-07",
         "treatment": "Retain historical scheme and explain the scientific distinction."
-      }
+      },
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 7(c)",
+          "paperRegions": [
+            {
+              "p": 5,
+              "r": [
+                0,
+                0.838,
+                1,
+                0.865
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.792,
+                1,
+                0.816
+              ]
+            }
+          ],
+          "marksPerRoute": 4,
+          "schemeNote": "The 2011 scheme accepts “fungus” for potato blight. Phytophthora infestans is classified as an oomycete, a fungus-like organism. The historical wording and four-mark tariff are preserved."
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q8(a)(i)",
@@ -18275,7 +18756,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 8(a)(i)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.2,
+                1,
+                0.35
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.171,
+                1,
+                0.224
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q8(a)(ii)",
@@ -18318,7 +18829,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 8(a)(ii)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.2,
+                1,
+                0.35
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.234,
+                1,
+                0.287
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q8(a)(iii)",
@@ -18361,7 +18902,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 8(a)(iii)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.2,
+                1,
+                0.35
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.297,
+                1,
+                0.359
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q8(a)(iv)",
@@ -18404,7 +18975,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 8(a)(iv)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.2,
+                1,
+                0.35
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.359,
+                1,
+                0.413
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q8(a)(v)",
@@ -18447,7 +19048,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 8(a)(v)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.2,
+                1,
+                0.35
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.422,
+                1,
+                0.495
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q8(b)(i)",
@@ -18489,7 +19120,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 8(b)(i)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.365,
+                1,
+                0.51
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.534,
+                1,
+                0.585
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q8(b)(ii)",
@@ -18531,7 +19192,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 8(b)(ii)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.365,
+                1,
+                0.51
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.598,
+                1,
+                0.65
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q8(b)(iii)",
@@ -18573,7 +19264,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 8(b)(iii)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.365,
+                1,
+                0.51
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.662,
+                1,
+                0.714
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q8(b)(iv)",
@@ -18615,7 +19336,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 8(b)(iv)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.365,
+                1,
+                0.51
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.725,
+                1,
+                0.776
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q8(b)(v)",
@@ -18657,7 +19408,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 8(b)(v)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.365,
+                1,
+                0.51
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.788,
+                1,
+                0.826
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q9(a)(i)",
@@ -18699,7 +19480,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 9(a)(i)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.554,
+                1,
+                0.613
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.141,
+                1,
+                0.178
+              ]
+            }
+          ],
+          "marksPerRoute": 10
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q9(a)(ii)",
@@ -18741,7 +19552,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 9(a)(ii)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.554,
+                1,
+                0.613
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.188,
+                1,
+                0.225
+              ]
+            }
+          ],
+          "marksPerRoute": 10
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q9(b) — ley",
@@ -18783,7 +19624,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 9(b) — bán",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.624,
+                1,
+                0.696
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.293,
+                1,
+                0.345
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q9(b) — establishment",
@@ -18825,7 +19696,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 9(b) — bunú",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.624,
+                1,
+                0.696
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.356,
+                1,
+                0.407
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q9(b) — heading out",
@@ -18867,7 +19768,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 9(b) — ag teacht i gcraobh",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.624,
+                1,
+                0.696
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.419,
+                1,
+                0.471
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q9(c)(i)",
@@ -18909,7 +19840,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 9(c)(i)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.706,
+                1,
+                0.825
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.504,
+                1,
+                0.574
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q9(c)(ii)",
@@ -18951,7 +19912,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 9(c)(ii)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.706,
+                1,
+                0.825
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.504,
+                1,
+                0.574
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q9(d)(i)",
@@ -18999,7 +19990,38 @@
         "source": "https://teagasc.ie/news--events/daily/taking-advantage-of-growth-rates/",
         "checkedAt": "2026-10-07",
         "treatment": "Retain historical scheme and explain the scientific distinction."
-      }
+      },
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 9(d)(i)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.837,
+                1,
+                0.907
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.652,
+                1,
+                0.705
+              ]
+            }
+          ],
+          "marksPerRoute": 5,
+          "schemeNote": "The historical scheme describes dry matter as retained or assimilated. DMD measures the percentage of consumed dry matter digested by the animal; it is not the percentage ultimately retained as body tissue."
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q9(d)(ii)",
@@ -19041,7 +20063,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 9(d)(ii)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.837,
+                1,
+                0.907
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.716,
+                1,
+                0.737
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q9(d)(iii)",
@@ -19083,7 +20135,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 9(d)(iii)",
+          "paperRegions": [
+            {
+              "p": 6,
+              "r": [
+                0,
+                0.837,
+                1,
+                0.907
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.745,
+                1,
+                0.782
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q10(a)",
@@ -19125,7 +20207,37 @@
         "kind": "answer-identification",
         "reason": "All six numbered spaces have correct answers; permuting the word list is not a set of permitted examination routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 10(a)",
+          "paperRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.042,
+                1,
+                0.277
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.11,
+                1,
+                0.247
+              ]
+            }
+          ],
+          "marksPerRoute": 24
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q10(b)(i)",
@@ -19167,7 +20279,46 @@
         "kind": "open",
         "reason": "Rock class is required; the paper does not print a closed list of rock examples. Menus preserve matched scheme examples."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 10(b)(i)",
+          "paperRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.294,
+                1,
+                0.382
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.249,
+                1,
+                0.336
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.326,
+                1,
+                0.393
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q10(b)(ii)",
@@ -19209,7 +20360,46 @@
         "kind": "open",
         "reason": "Rock class is required; the paper does not print a closed list of rock examples. Menus preserve matched scheme examples."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 10(b)(ii)",
+          "paperRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.294,
+                1,
+                0.382
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.249,
+                1,
+                0.336
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.389,
+                1,
+                0.554
+              ]
+            }
+          ],
+          "marksPerRoute": 5
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q10(b)(iii)",
@@ -19257,7 +20447,47 @@
         "source": "https://gsi.geodata.gov.ie/downloads/Geoheritage/Reports/KK007_Archersgrove_Quarry.pdf",
         "checkedAt": "2026-10-07",
         "treatment": "Retain historical scheme and explain the scientific distinction."
-      }
+      },
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 10(b)(iii)",
+          "paperRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.294,
+                1,
+                0.382
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.249,
+                1,
+                0.336
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.546,
+                1,
+                0.696
+              ]
+            }
+          ],
+          "marksPerRoute": 5,
+          "schemeNote": "The historical scheme lists Kilkenny for marble. Kilkenny Black Marble is a commercial name for limestone, a sedimentary rock. Connemara marble is a suitable metamorphic example. The original scheme remains visible."
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q10(c)",
@@ -19299,7 +20529,37 @@
         "kind": "open",
         "reason": "No finite list of weathering methods is printed in the question."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 10(c)",
+          "paperRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.39,
+                1,
+                0.443
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.72,
+                1,
+                0.815
+              ]
+            }
+          ],
+          "marksPerRoute": 9
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q10(d) — soil A",
@@ -19341,7 +20601,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 10(d) — ithir A",
+          "paperRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.452,
+                1,
+                0.955
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.835,
+                1,
+                0.91
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q10(d) — soil B",
@@ -19383,7 +20673,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 10(d) — ithir B",
+          "paperRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.452,
+                1,
+                0.955
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.835,
+                1,
+                0.91
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q10(d) — soil C",
@@ -19425,7 +20745,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 10(d) — ithir C",
+          "paperRegions": [
+            {
+              "p": 7,
+              "r": [
+                0,
+                0.452,
+                1,
+                0.955
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 10,
+              "r": [
+                0,
+                0.835,
+                1,
+                0.91
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(a)(i)",
@@ -19467,7 +20817,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(a)(i)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.075,
+                1,
+                0.159
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.11,
+                1,
+                0.197
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(a)(ii)",
@@ -19510,7 +20890,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(a)(ii)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.075,
+                1,
+                0.159
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.11,
+                1,
+                0.197
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(a)(iii)",
@@ -19553,7 +20963,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(a)(iii)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.075,
+                1,
+                0.159
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.202,
+                1,
+                0.253
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(b)",
@@ -19595,7 +21035,37 @@
         "kind": "open",
         "reason": "A named insect is an open choice. The scheme’s two lifecycle types are accepted examples, not two finite examination routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(b)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.171,
+                1,
+                0.197
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.263,
+                1,
+                0.447
+              ]
+            }
+          ],
+          "marksPerRoute": 12
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(c)(i)",
@@ -19646,7 +21116,64 @@
         "kind": "open",
         "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(c)(i)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.204,
+                1,
+                0.323
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.462,
+                1,
+                0.496
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.506,
+                1,
+                0.539
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.131,
+                1,
+                0.147
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.162,
+                1,
+                0.221
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(c)(ii) — date",
@@ -19715,7 +21242,64 @@
         "kind": "open",
         "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(c)(ii) — dáta",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.204,
+                1,
+                0.323
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.462,
+                1,
+                0.496
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.548,
+                1,
+                0.62
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.131,
+                1,
+                0.147
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.248,
+                1,
+                0.315
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(c)(ii) — method",
@@ -19784,7 +21368,64 @@
         "kind": "open",
         "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(c)(ii) — modh",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.204,
+                1,
+                0.323
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.462,
+                1,
+                0.496
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.548,
+                1,
+                0.62
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.131,
+                1,
+                0.147
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.248,
+                1,
+                0.315
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(c)(iii)",
@@ -19853,7 +21494,64 @@
         "kind": "open",
         "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(c)(iii)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.204,
+                1,
+                0.323
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.462,
+                1,
+                0.496
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.628,
+                1,
+                0.696
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.131,
+                1,
+                0.147
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.337,
+                1,
+                0.379
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(c)(iv)",
@@ -19922,7 +21620,64 @@
         "kind": "open",
         "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(c)(iv)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.204,
+                1,
+                0.323
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.462,
+                1,
+                0.496
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.704,
+                1,
+                0.755
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.131,
+                1,
+                0.147
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.4,
+                1,
+                0.434
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(c)(v) — method",
@@ -19991,7 +21746,64 @@
         "kind": "open",
         "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(c)(v) — modh",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.204,
+                1,
+                0.323
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.462,
+                1,
+                0.496
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.759,
+                1,
+                0.847
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.131,
+                1,
+                0.147
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.458,
+                1,
+                0.575
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(c)(v) — time",
@@ -20060,7 +21872,64 @@
         "kind": "open",
         "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(c)(v) — am",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.204,
+                1,
+                0.323
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.462,
+                1,
+                0.496
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.759,
+                1,
+                0.847
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.131,
+                1,
+                0.147
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.458,
+                1,
+                0.575
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q11(c)(vi)",
@@ -20129,7 +21998,64 @@
         "kind": "open",
         "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 11(c)(vi)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.204,
+                1,
+                0.323
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.462,
+                1,
+                0.496
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0,
+                0.854,
+                1,
+                0.889
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.131,
+                1,
+                0.147
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0,
+                0.585,
+                1,
+                0.616
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(a) — digestive system",
@@ -20171,7 +22097,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(a) — córas díleá",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.45,
+                1,
+                0.506
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.114,
+                1,
+                0.133
+              ]
+            }
+          ],
+          "marksPerRoute": 15
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(a) — enzyme experiment",
@@ -20214,7 +22170,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(a) — turgnamh einsíme",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.45,
+                1,
+                0.506
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.145,
+                1,
+                0.222
+              ]
+            }
+          ],
+          "marksPerRoute": 15
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(b)(i)",
@@ -20256,7 +22242,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(b)(i)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.517,
+                1,
+                0.62
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.231,
+                1,
+                0.271
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(b)(ii)",
@@ -20298,7 +22314,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(b)(ii)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.517,
+                1,
+                0.62
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.28,
+                1,
+                0.314
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(b)(iii)",
@@ -20340,7 +22386,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(b)(iii)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.517,
+                1,
+                0.62
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.326,
+                1,
+                0.387
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(b)(iv)",
@@ -20382,7 +22458,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(b)(iv)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.517,
+                1,
+                0.62
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.398,
+                1,
+                0.431
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(b)(v)",
@@ -20424,7 +22530,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(b)(v)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.517,
+                1,
+                0.62
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.442,
+                1,
+                0.522
+              ]
+            }
+          ],
+          "marksPerRoute": 6
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(c)(i)",
@@ -20466,7 +22602,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(c)(i)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.632,
+                1,
+                0.734
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.535,
+                1,
+                0.583
+              ]
+            }
+          ],
+          "marksPerRoute": 9
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(c)(ii)",
@@ -20509,7 +22675,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(c)(ii)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.632,
+                1,
+                0.734
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.594,
+                1,
+                0.643
+              ]
+            }
+          ],
+          "marksPerRoute": 12
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(c)(iii)",
@@ -20551,7 +22747,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(c)(iii)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.632,
+                1,
+                0.734
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.655,
+                1,
+                0.734
+              ]
+            }
+          ],
+          "marksPerRoute": 9
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(d)(i)",
@@ -20593,7 +22819,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(d)(i)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.744,
+                1,
+                0.85
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.745,
+                1,
+                0.778
+              ]
+            }
+          ],
+          "marksPerRoute": 12
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(d)(ii)",
@@ -20636,7 +22892,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(d)(ii)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.744,
+                1,
+                0.85
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.79,
+                1,
+                0.838
+              ]
+            }
+          ],
+          "marksPerRoute": 15
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q12(d)(iii)",
@@ -20678,7 +22964,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 12(d)(iii)",
+          "paperRegions": [
+            {
+              "p": 8,
+              "r": [
+                0,
+                0.744,
+                1,
+                0.85
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 13,
+              "r": [
+                0,
+                0.853,
+                1,
+                0.872
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(a)(i)",
@@ -20720,7 +23036,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(a)(i)",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.041,
+                1,
+                0.097
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.114,
+                1,
+                0.15
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(a)(ii)",
@@ -20762,7 +23108,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(a)(ii)",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.041,
+                1,
+                0.097
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.157,
+                1,
+                0.21
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(a)(iii)",
@@ -20804,7 +23180,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(a)(iii)",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.041,
+                1,
+                0.097
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.218,
+                1,
+                0.251
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(b) — F1",
@@ -20846,7 +23252,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(b) — F1",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.104,
+                1,
+                0.327
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.279,
+                1,
+                0.372
+              ]
+            }
+          ],
+          "marksPerRoute": 8
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(b) — F2",
@@ -20897,7 +23333,46 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(b) — F2",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.104,
+                1,
+                0.211
+              ]
+            },
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.352,
+                1,
+                0.457
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.382,
+                1,
+                0.506
+              ]
+            }
+          ],
+          "marksPerRoute": 22
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(c)(i)",
@@ -20948,7 +23423,46 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(c)(i)",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.104,
+                1,
+                0.211
+              ]
+            },
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.467,
+                1,
+                0.571
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.533,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "marksPerRoute": 2
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(c)(ii)",
@@ -20999,7 +23513,46 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(c)(ii)",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.104,
+                1,
+                0.211
+              ]
+            },
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.467,
+                1,
+                0.571
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.533,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(c)(iii)",
@@ -21050,7 +23603,46 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(c)(iii)",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.104,
+                1,
+                0.211
+              ]
+            },
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.467,
+                1,
+                0.571
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.533,
+                1,
+                0.662
+              ]
+            }
+          ],
+          "marksPerRoute": 4
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(d)(i)",
@@ -21092,7 +23684,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(d)(i)",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.579,
+                1,
+                0.911
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.686,
+                1,
+                0.779
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(d)(ii)",
@@ -21134,7 +23756,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(d)(ii)",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.579,
+                1,
+                0.911
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.686,
+                1,
+                0.779
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(d)(iii)",
@@ -21176,7 +23828,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(d)(iii)",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.579,
+                1,
+                0.911
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.686,
+                1,
+                0.779
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     },
     {
       "questionRef": "2011 OL Q13(d)(iv)",
@@ -21218,7 +23900,37 @@
         "kind": "none",
         "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
       },
-      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "translatedSources": [
+        {
+          "lang": "iv",
+          "paperFileid": "LC024GLP000IV.pdf",
+          "label": "Ceist 13(d)(iv)",
+          "paperRegions": [
+            {
+              "p": 9,
+              "r": [
+                0,
+                0.579,
+                1,
+                0.911
+              ]
+            }
+          ],
+          "schemeRegions": [
+            {
+              "p": 14,
+              "r": [
+                0,
+                0.686,
+                1,
+                0.779
+              ]
+            }
+          ],
+          "marksPerRoute": 3
+        }
+      ]
     }
   ],
   "paperReviews": [
@@ -22234,6 +24946,164 @@
         "Phone/desktop runtime review",
         "Corpus-wide reconciliation"
       ]
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "hashes": {
+        "exampapers": "0d32fbdb30e5d13ca15b792d48f6cfd9744869bc0d26099188548ebc77e51377",
+        "markingschemes": "79f95dcf8bcf49c50251496711d020ebcfd4c40bfba83720089e27f28258a837"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "selectionDirectives": [
+        {
+          "id": "e4905f4e8326b2f8",
+          "page": 2,
+          "cue": "Freagair",
+          "context": "Lch 2 de 12 Roinn a hAon (120 marc) Treoracha  Freagair sé cheist ar bith. Tá 20 marc ag gabháil le gach ceist.  Scríobh do chuid freagraí sna spásanna atá ann dóibh.  Bíodh do chuid freagraí gearr.  Scríobh do scrúduimhir sa spás atá ann di ar leathanach 1. _______________________",
+          "classification": "exam-selection",
+          "reason": "Section One selects six separately priced questions; all seven are retained."
+        },
+        {
+          "id": "b8652464d31bdfdf",
+          "page": 6,
+          "cue": "Freagair",
+          "context": "N A DÓ (180 MARC) Treoracha Scríobh do chuid freagraí ar Roinn a Dó i do fhreagarleabhar. Freagair trí cheist ar bith. Tá 60 marc ag gabháil le gach ceist. Ceist 8. (a) Scríobh nóta ar gach ceann de na cleachtais seo a leanas a chuirtear ar siúl i dtáirgeadh caorach: (i) Sciotadh eireabaill (ii) Bearradh (iii) Breasal a chur a",
+          "classification": "exam-selection",
+          "reason": "Section Two selects three separately priced questions; all six are retained."
+        },
+        {
+          "id": "a7b0bf09d83d2b21",
+          "page": 8,
+          "cue": "Freagair",
+          "context": "aidí (v) Baint – modh agus am (vi) Táirgeadh in aghaidh an heicteáir. (60 marc) Ceist 12. Freagair dhá chuid ar bith de (a), (b), (c) agus (d). (30 marc, 30 marc) (a) Tarraing léaráid lipéadaithe den chóras díleá in ainmhí monagastrach ainmnithe. Déan cur síos ar thurgnamh chun iniúchadh a dhéanamh ar ghníomhaíocht einsíme díl",
+          "classification": "independent-task-selection",
+          "reason": "Q12 selects two separately priced 30-mark parts. Retain all thirteen published internal tasks, not pairings of unrelated responses."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 1,
+          "wording": "Ní mór sé cheist a fhreagairt.",
+          "classification": "exam-selection",
+          "reason": "Cover repeats Section One selection."
+        },
+        {
+          "page": 1,
+          "wording": "Ní mór trí cheist a fhreagairt.",
+          "classification": "exam-selection",
+          "reason": "Cover repeats Section Two selection."
+        },
+        {
+          "page": 7,
+          "wording": "meaitseáil na focail ón liosta",
+          "classification": "answer-identification",
+          "reason": "Q10(a) requires six matches in a single dependent paragraph. Word permutations are not optional answer routes."
+        },
+        {
+          "page": 7,
+          "wording": "thrí bhealach ar bith",
+          "classification": "open",
+          "reason": "Q10(c) asks for three weathering processes without a finite printed pool."
+        },
+        {
+          "page": 8,
+          "wording": "gránach nó barr fréimhe",
+          "classification": "open",
+          "reason": "Q11(c) permits open crop categories. Barley and potatoes are scheme examples, not a printed closed pool."
+        },
+        {
+          "page": 8,
+          "wording": "faoi na ceannteidil seo a leanas",
+          "classification": "required-headings",
+          "reason": "Q11(c) requires all headings. Date and method split at their separately printed awards."
+        },
+        {
+          "page": 8,
+          "wording": "feithide ainmnithe",
+          "classification": "open",
+          "reason": "Q11(b) permits a suitable insect; complete and incomplete metamorphosis are scheme menus."
+        },
+        {
+          "page": 8,
+          "wording": "einsíme díleáiche ainmnithe",
+          "classification": "open",
+          "reason": "Q12(a) permits an appropriate digestive enzyme and matching experiment."
+        },
+        {
+          "page": 8,
+          "wording": "comhpháirt ainmnithe amháin",
+          "classification": "open",
+          "reason": "Q12(c)(ii) permits a suitable milk component and matching investigation."
+        }
+      ],
+      "translationParity": "All original pages visually inspected. All 81 task boundaries, marks, open choices, diagrams, pooled first-correct scales and genetic asterisks match the English tasks. Original Irish answer examples and wording are retained in the displayed source.",
+      "sourceNotes": [
+        {
+          "questionN": "7",
+          "questionRef": "Q7(c)",
+          "note": "The 2011 scheme accepts “fungus” for potato blight. Phytophthora infestans is classified as an oomycete, a fungus-like organism. The historical wording and four-mark tariff are preserved.",
+          "source": "https://www.apsnet.org/edcenter/Pages/IntroOomycetes.aspx"
+        },
+        {
+          "questionN": "9",
+          "questionRef": "Q9(d)(i)",
+          "note": "The historical scheme describes dry matter as retained or assimilated. DMD measures the percentage of consumed dry matter digested by the animal; it is not the percentage ultimately retained as body tissue.",
+          "source": "https://teagasc.ie/news--events/daily/taking-advantage-of-growth-rates/"
+        },
+        {
+          "questionN": "10",
+          "questionRef": "Q10(b)(iii)",
+          "note": "The historical scheme lists Kilkenny for marble. Kilkenny Black Marble is a commercial name for limestone, a sedimentary rock. Connemara marble is a suitable metamorphic example. The original scheme remains visible.",
+          "source": "https://gsi.geodata.gov.ie/downloads/Geoheritage/Reports/KK007_Archersgrove_Quarry.pdf"
+        }
+      ],
+      "remaining": [
+        "Full application navigation review",
+        "Corpus-wide reconciliation"
+      ],
+      "practiceTaskCropReview": {
+        "status": "reviewed",
+        "taskBindings": 81,
+        "distinctPaperCropSets": 31,
+        "distinctSchemeCropSets": 66,
+        "evidence": "All 66 distinct paper/scheme pairs rendered and visually inspected. Missing blight wording, cropped answer lines and adjacent tariff fragments corrected; all changed crop pairs re-rendered and inspected. Original diagrams, full genetic stems and crop-name headings retained."
+      }
     }
   ]
 }

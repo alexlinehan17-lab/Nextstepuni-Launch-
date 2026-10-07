@@ -26,7 +26,10 @@ const get = (id: string) => {
 describe('Agricultural Science reviewed additions (full audit still in progress)', () => {
   it('matches the independent source census exactly, including option addresses, routes and published marks', () => {
     for (const paper of census.papers) {
-      const actual = cards.filter(card => card.year === paper.year && card.level === paper.level);
+      const actual = paper.lang === 'iv'
+        ? atlas.translatedMarkBankCards.filter(join => join.year === paper.year && join.fileid === paper.paperFileid)
+            .map(join => ({ questionRef:get(join.cardId).questionRef, totalMarks:join.marksPerRoute }))
+        : cards.filter(card => card.year === paper.year && card.level === paper.level);
       const expected = paper.baseTasks.flatMap(task => task.routes.map(ref => ({ ref, marks:task.marksPerResponse })));
       expect(actual.map(card => card.questionRef).sort()).toEqual(expected.map(task => task.ref).sort());
       for (const task of expected) {
@@ -35,7 +38,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(64);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(63);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(1);
   });
 
@@ -305,7 +308,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(7);
+    expect(review.paperReviews).toHaveLength(8);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -401,8 +404,8 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
-  it('finds all 217 translated tasks under the same topics and practice identities', () => {
-    expect(atlas.translatedMarkBankCards).toHaveLength(217);
+  it('finds all 298 translated tasks under the same topics and practice identities', () => {
+    expect(atlas.translatedMarkBankCards).toHaveLength(298);
     for (const join of atlas.translatedMarkBankCards) {
       const card = get(join.cardId);
       const english = atlas.markBankCards.find(candidate => candidate.cardId === join.cardId)!;

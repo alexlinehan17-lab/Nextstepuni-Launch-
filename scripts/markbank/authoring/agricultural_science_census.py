@@ -319,6 +319,92 @@ Q13(d)(iii)|3|9|14|Haploid –
 Q13(d)(iv)|3|9|14|Ovary /testis/sex organs/gonads
 '''
 
+# Irish boundaries independently transcribed from the visually reviewed Irish
+# source; canonical English addresses join the same practice identities.
+ORDINARY_2011_IRISH = '''
+Q1|20|2|5|2(7m) + 1(2m) + 4(1m)
+Q2|20|3|5|2(7m) + 2(2m) + 2(1m)
+Q3|20|3|6|2(7m) + 3(2m)
+Q4|20|4|6|2(6m) + 2(2m) + 4(1m)
+Q5 — bullock|4|4|7|Lao fireann atá coillte
+Q5 — gilt|4|4|7|Muc bhaineann nach raibh ál aici
+Q5 — draft ewe|4|4|7|Caora a dhealaítear ón tréad agus a dhíoltar
+Q5 — broiler|4|4|7|Sicín a thógtar le haghaidh marú
+Q5 — suckler calf|4|4|7|Lao (i mbólacht na mairteola)
+Q6(a)|5|5|7|Uainíocht na mbarr:
+Q6(b)|5|5|7|Síol deimhnithe a chur:
+Q6(c)|5|5|7|Luibhicíd roghnaíoch a leathadh:
+Q6(d)|5|5|7|Cineálacha geimhridh de ghránaigh a phlandú:
+Q7(a)|8|5|7|Eitinn/niúmóine/maistíteas
+Q7(b)|8|5|7|Táirgeadh sadhlais/táirgeadh táirgí déiríochta
+Q7(c)|4|5|7|Fungas/Phytophthora infestans
+Q8(a)(i)|6|6|8|Sciotadh eireaball :
+Q8(a)(ii)|6|6|8|Bearradh :
+Q8(a)(iii)|6|6|8|Breasal a chur ar reithe:
+Q8(a)(iv)|6|6|8|Tumadh caorach:
+Q8(a)(v)|6|6|8|An tréada a chur ag siúl trí fholcadán crúb:
+Q8(b)(i)|6|6|8|Pionna aonraithe:
+Q8(b)(ii)|6|6|8|Lampa infridhearg:
+Q8(b)(iii)|6|6|8|Beathaitheoir bacphoill:
+Q8(b)(iv)|6|6|8|Gabhlach:
+Q8(b)(v)|6|6|8|Cliathbhosca breithe:
+Q9(a)(i)|10|6|9|Fosú nítrigine/saibhir i bpróitéin
+Q9(a)(ii)|10|6|9|Níos blasta/táirgeadh níos airde
+Q9(b) — ley|5|6|9|Bán: Talamh féaraigh curtha ag feirmeoir
+Q9(b) — establishment|5|6|9|Bunú: Ag éirí ina phlanda
+Q9(b) — heading out|5|6|9|Ag teacht i gcraobh (i ndias):
+Q9(c)(i)|5|6|9|Fo-chur
+Q9(c)(ii)|5|6|9|Druileáil dhíreach/fuáil isteach
+Q9(d)(i)|5|6|9|DMD: Comhréir
+Q9(d)(ii)|5|6|9|70%-80%
+Q9(d)(iii)|5|6|9|Táirgiúlacht níos ísle nó táirgeadh íseal
+Q10(a)|24|7|10|1: báisteach
+Q10(b)(i)|5|7|10|Bruthach Eibhear nó Basalt
+Q10(b)(ii)|5|7|10|Dríodrach Aolchloch nó
+Q10(b)(iii)|5|7|10|Meiteamorfach Marmar nó
+Q10(c)|9|7|10|Síonchaitheamh: Gníomh seaca
+Q10(d) — soil A|4|7|10|Ithir A : Cré
+Q10(d) — soil B|4|7|10|Ithir B : Dúrabhán
+Q10(d) — soil C|4|7|10|Ithir C : Dúrabhán gainmheach
+Q11(a)(i)|6|8|11|Orgánach atá á chothú
+Q11(a)(ii)|3|8|11|Eiseamláir seadáin (paraisíte)
+Q11(a)(iii)|3|8|11|Modh bainte
+Q11(b)|12|8|11|Saolré feithide
+Q11(c)(i)|8|8|11|Ithir dhúrabháin (ghainmheach)
+Q11(c)(ii) — date|4|8|11|Dáta síolchuir : Meán Fómhair-Samhain
+Q11(c)(ii) — method|4|8|11|Modh : curtha le comhdhruilire
+Q11(c)(iii)|4|8|11|10 : 10 : 20/N,P, K
+Q11(c)(iv)|4|8|11|Síol deimhnithe/cóireáil síl
+Q11(c)(v) — method|4|8|11|Modh : Comhbhuainteoir
+Q11(c)(v) — time|4|8|11|Am : Eorna gheimhridh
+Q11(c)(vi)|4|8|11|Táirgeadh : Eorna gheimhridh
+Q12(a) — digestive system|15|8|13|Ainm ainmhí mhonagastraigh
+Q12(a) — enzyme experiment|15|8|13|Einsím ainmnithe/substráit chomhfhreagrach
+Q12(b)(i)|6|8|13|Leathbhá/malartú gáis
+Q12(b)(ii)|6|8|13|Saibhir in antasubstaintí
+Q12(b)(iii)|6|8|13|Gnáthóg le haghaidh fiadhúlra
+Q12(b)(iv)|6|8|13|Dálaí barrmhaitheasa le haghaidh stórála
+Q12(b)(v)|6|8|13|Baintear na crainn is measa
+Q12(c)(i)|9|8|13|Uisce 87.5%
+Q12(c)(ii)|12|8|13|Comhpháirt ainmnithe
+Q12(c)(iii)|9|8|13|Nigh úthanna agus siní
+Q12(d)(i)|12|8|13|Táirgeoir ainmnithe/tomhaltóir tosaigh ainmnithe
+Q12(d)(ii)|15|8|13|Cuadraí/caith go randamach
+Q12(d)(iii)|3|8|13|Bithéagsúlacht: Éagsúlacht na n-orgánach
+Q13(a)(i)|3|9|14|Ailléilí –
+Q13(a)(ii)|3|9|14|Clón –
+Q13(a)(iii)|3|9|14|Fuinneamh Hibrideach –
+Q13(b) — F1|8|9|14|4* x 2m
+Q13(b) — F2|22|9|14|11* x 2m
+Q13(c)(i)|2|9|14|Géinitíopaí na dtuismitheoirí ss* X Ss*
+Q13(c)(ii)|3|9|14|Géinitíopaí na ngaiméití s* S* s*
+Q13(c)(iii)|4|9|14|Géinitíopaí an tsleachta Ss* ss*
+Q13(d)(i)|3|9|14|(i) B (3m)
+Q13(d)(ii)|3|9|14|(ii) B (3m)
+Q13(d)(iii)|3|9|14|Haplóideach –
+Q13(d)(iv)|3|9|14|Ubhagán/uirí/gnéasorgáin/gónaid
+'''
+
 SOURCES = [
     (2010, 'higher', 'A', HIGHER_2010,
                'fa917bba0b9350bb15cfe355789fa3002515bb6b28561f46ac47acfc1e7fa408',
@@ -337,8 +423,11 @@ SOURCES = [
 
 def source_tasks():
     papers = []
-    for year,level,letter,table,paper_hash,scheme_hash in SOURCES:
-        fileid = f'LC024{letter}LP000EV.pdf'
+    editions = [(*source,'ev') for source in SOURCES] + [(2011,'ordinary','G',ORDINARY_2011_IRISH,
+        '0d32fbdb30e5d13ca15b792d48f6cfd9744869bc0d26099188548ebc77e51377',
+        '79f95dcf8bcf49c50251496711d020ebcfd4c40bfba83720089e27f28258a837','iv')]
+    for year,level,letter,table,paper_hash,scheme_hash,lang in editions:
+        fileid = f'LC024{letter}LP000{lang.upper()}.pdf'
         pages = {}
         for kind,digest in [('exampapers',paper_hash),('markingschemes',scheme_hash)]:
             path = ROOT / f'paper-trail-corpus/{kind}/{year}/{fileid}'
@@ -369,7 +458,7 @@ def source_tasks():
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
         assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81}[(year,level)]
-        papers.append({'year':year,'level':level,'lang':'ev','paperFileid':fileid,
+        papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
     return papers
@@ -381,7 +470,7 @@ def build():
     # All indexed editions remain visible; a reviewed English denominator does
     # not silently declare the Irish edition or another sitting complete.
     return {'subjectId':'agricultural-science','status':'in-progress',
-            'method':'Independent 2010 and 2011 Higher/Ordinary paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.',
+            'method':'Independent English 2010 and 2011 Higher/Ordinary, plus Irish 2011 Ordinary, paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.',
             'papers':papers,
             'boundaryRules':[
                 'A diagram labelling exercise stays one task with all required labels and its figure; labels are answer fields, not printed alternative routes.',
@@ -434,7 +523,7 @@ def question_mark_checks(papers):
                 units[unit] = units.get(unit,0)+task['marksPerResponse']
             totals = sorted({sum(values) for values in itertools.combinations(units.values(),choose or 1)})
             expected = (60 if question=='Q1' else 48) if higher else (20 if int(question[1:])<=7 else 60)
-            discrepancy = paper['year']==2010 and not higher and question=='Q12'
+            discrepancy = paper['year']==2010 and paper['lang']=='ev' and not higher and question=='Q12'
             assert totals==([58,60] if discrepancy else [expected]), (paper['level'],question,totals)
             checks.append({'year':paper['year'],'level':paper['level'],'lang':paper['lang'],
                            'question':question,'units':units,'choose':choose or 1,
@@ -453,7 +542,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary 81. Remaining editions stay open.')
+    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81. Remaining editions stay open.')
 
 
 if __name__=='__main__':

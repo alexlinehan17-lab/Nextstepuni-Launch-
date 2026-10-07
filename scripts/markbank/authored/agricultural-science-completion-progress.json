@@ -12,12 +12,12 @@
       2010,
       2026
     ],
-    "selectionCuesPendingClassification": 721,
-    "fullPaperAndSchemeSweepsCompleted": 7,
+    "selectionCuesPendingClassification": 718,
+    "fullPaperAndSchemeSweepsCompleted": 8,
     "distinctEnglishPaperSweepsCompleted": 4,
-    "irishEditionComparisonsCompleted": 3,
-    "independentSourceCensusEditionsCompleted": 4,
-    "independentSourceCensusEditionsOpen": 64
+    "irishEditionComparisonsCompleted": 4,
+    "independentSourceCensusEditionsCompleted": 5,
+    "independentSourceCensusEditionsOpen": 63
   },
   "completedBatch": {
     "reviewedPapers": [
@@ -27,7 +27,8 @@
       "2010 Ordinary Irish: 12 paper pages and 13 scheme pages",
       "2011 Higher English: 8 paper pages and 16 scheme pages",
       "2011 Higher Irish: 8 paper pages and 12 scheme pages",
-      "2011 Ordinary English: 12 paper pages and 16 scheme pages"
+      "2011 Ordinary English: 12 paper pages and 16 scheme pages",
+      "2011 Ordinary Irish: 12 paper pages and 16 scheme pages"
     ],
     "previousReviewedTasks": [
       "2022 OL Q2(b)(ii)",
@@ -36,7 +37,7 @@
       "2025 OL Q8(b)"
     ],
     "addedMarkBankCards": 305,
-    "addedThisBatch": 81,
+    "addedThisBatch": 0,
     "correctedMarkBankCards": 1,
     "markBankCardsNow": 1174,
     "higherCards": 574,
@@ -44,7 +45,7 @@
     "originalCardIdsPreserved": 869,
     "atlasPracticeCardsAdded": 306,
     "atlasCardsNow": 764,
-    "priorAnchorsPreservedThisBatch": 0,
+    "priorAnchorsPreservedThisBatch": 13,
     "obsoleteExclusionsResolved": 4,
     "legacyRoutes": {
       "disease": 2,
@@ -67,16 +68,17 @@
       "2011 cell division"
     ],
     "curriculum": "Reviewed legacy cards resolve the existing registry by examination year. Added the SEC-derived Higher circulatory-system Atlas topic, crosswalked to the registered Animal Physiology node. Mixed tasks retain all assessed topics.",
-    "priorAuthoredCardsUnchangedThisBatch": 1093,
-    "editionDiscrepancies": "Irish Higher D/d versus B/b and rolled versus unrolled barley result; Irish Ordinary chloroplast/chlorophyll wording, pasture-method instructions, Q9(f) and Q12 tariffs, and C/c versus E/e. Notes accompany the parent and relevant task schemes. The Irish Q9(f) and Q12(d)(ii) joins retain 20 marks; English cards retain 18. 2011 Irish: calving score 2.5–3 versus English 2.5–3.5; misaligned barley heading numerals and high-versus-low malting protein wording; C/c and F/f maize symbols versus H/h and L/l. Relevant parent/task notes preserve original sources.",
-    "translatedAtlasPracticeBindings": 217,
+    "priorAuthoredCardsUnchangedThisBatch": 1174,
+    "editionDiscrepancies": "Irish Higher D/d versus B/b and rolled versus unrolled barley result; Irish Ordinary chloroplast/chlorophyll wording, pasture-method instructions, Q9(f) and Q12 tariffs, and C/c versus E/e. Notes accompany the parent and relevant task schemes. The Irish Q9(f) and Q12(d)(ii) joins retain 20 marks; English cards retain 18. 2011 Irish: calving score 2.5–3 versus English 2.5–3.5; misaligned barley heading numerals and high-versus-low malting protein wording; C/c and F/f maize symbols versus H/h and L/l. Relevant parent/task notes preserve original sources. 2011 Ordinary Irish: all 81 boundaries and tariffs, diagrams and genetic asterisks match English; original Irish wording and answer examples are retained. The same three historical scheme context notes accompany affected parent/task readers.",
+    "translatedAtlasPracticeBindings": 298,
     "originalWholeQuestionIdentitiesRetained": 458,
     "independentReconciliation": {
       "reviewedEnglishRoutes": 298,
-      "translatedBindings": 217,
+      "translatedBindings": 298,
       "reviewedBatchIssues": 0,
-      "remainingIndependentCensusEditions": 64,
-      "scope": "2010 Higher, 2010 Ordinary, 2011 Higher and 2011 Ordinary English. Irish task parity and crop reviews do not silently close the separate independent census queue."
+      "remainingIndependentCensusEditions": 63,
+      "scope": "2010 and 2011 Higher/Ordinary English source denominators (298 routes), all matching Irish Atlas links (298), and the independently transcribed 2011 Ordinary Irish source denominator (81). Other Irish censuses remain open.",
+      "independentlyReviewedTranslatedRoutes": 81
     },
     "readerCorrections": [
       "Deck census now reads cards with QA/curriculum spreads between base and kind.",
@@ -90,7 +92,7 @@
   "verification": {
     "targetedTestsPassed": 159,
     "sourceReaderOpenCloseTestPassed": true,
-    "renderedCropReview": "2010 Ordinary: all 38 distinct paper crops and 61 distinct scheme crops inspected and corrected, plus 4 original diagram images. Prior 2010 Higher 49 crop pairs and 2 solution images retained. Every new Ordinary marking claim matches its specific cropped scheme text. Irish Higher: all 43 distinct paper and 44 scheme crop sets inspected. Irish Ordinary: all 48 paper and 64 scheme crop sets inspected. Final fixes re-rendered and inspected. 2011 Higher: all 55 distinct English paper/scheme pairs and all 53 distinct Irish pairs inspected. Irish bindings comprise 40 paper crop sets and 53 scheme crop sets; final heart and ratio crop corrections re-rendered. Both new source images inspected. 2011 Ordinary English: all 65 distinct paper/scheme pairs and five source diagrams visually inspected; final clipped tariffs and table borders corrected and inspected again.",
+    "renderedCropReview": "2010 Ordinary: all 38 distinct paper crops and 61 distinct scheme crops inspected and corrected, plus 4 original diagram images. Prior 2010 Higher 49 crop pairs and 2 solution images retained. Every new Ordinary marking claim matches its specific cropped scheme text. Irish Higher: all 43 distinct paper and 44 scheme crop sets inspected. Irish Ordinary: all 48 paper and 64 scheme crop sets inspected. Final fixes re-rendered and inspected. 2011 Higher: all 55 distinct English paper/scheme pairs and all 53 distinct Irish pairs inspected. Irish bindings comprise 40 paper crop sets and 53 scheme crop sets; final heart and ratio crop corrections re-rendered. Both new source images inspected. 2011 Ordinary English: all 65 distinct paper/scheme pairs and five source diagrams visually inspected; final clipped tariffs and table borders corrected and inspected again. 2011 Ordinary Irish: all 66 distinct crop pairs inspected (31 paper crop sets, 66 scheme sets), corrected missing/clipped lines re-rendered, including the final fertiliser note margin. All 28 original PDF pages inspected.",
     "cardBuild": "1174 built, zero dropped",
     "generationChecks": [
       "agricultural_science_completion.py --check",
@@ -124,20 +126,20 @@
         390
       ],
       "pageErrors": 0,
-      "scope": "Actual VaultQuestionCard, Viewer, SessionScreen and PDF.js with original SEC PDFs. Fifteen 2011 Ordinary tasks at desktop and phone widths: full-reader zoom, paper/scheme toggle, close and selection return, scheme-note reveal/hide, answer variant selection and reveal, no marking-button overflow. The revised F2 marking groups passed two additional focused cases. Representative screenshots inspected.",
+      "scope": "2011 Ordinary Irish: fifteen representative tasks at each of 1200px and 390px, using actual VaultQuestionCard, Viewer and PDF.js with local SEC PDFs. Full-reader zoom, paper/scheme toggle, close and selection return, nonblank canvases, no overflow, and scheme-note reveal/hide passed. Representative soil, F2 and crop-menu screenshots inspected. English Mark Bank runtime checks remain recorded in the preceding checkpoint.",
       "limitation": "This checks the production components together; signed-in full-application navigation remains open."
     },
     "frozenCoverageRatchets": "The Agricultural Science coverage count/hash assertions remain intentionally frozen at the original 869-card baseline until the entire independent corpus reconciliation is zero-open/zero-orphan. The citation grammar check passes."
   },
   "remaining": [
-    "Independently sweep the remaining 30 English papers and matching schemes; compare the remaining 31 Irish editions. Seven complete edition sweeps do not establish corpus-wide completeness.",
-    "Compare 2011 Ordinary Irish; author 2012–2020 and 2026 tasks; recheck every 2021–2025 boundary, stem, tariff, figure, topic and finite choice.",
-    "Classify all 721 pending raw selection directives. Expand genuine closed pools mechanically and retain written reasons for non-expansions.",
-    "Extend the independent source census beyond the four reviewed English editions, including independent Irish denominators. Resolve the generic parser’s 60 flags and legacy option/shared-award mismatches; do not treat its percentages as completion evidence.",
+    "Independently sweep the remaining 30 English papers and matching schemes; compare the remaining 30 Irish editions. Eight complete edition sweeps do not establish corpus-wide completeness.",
+    "Author 2012–2020 and 2026 tasks; recheck every 2021–2025 boundary, stem, tariff, figure, topic and finite choice.",
+    "Classify all 718 pending raw selection directives. Expand genuine closed pools mechanically and retain written reasons for non-expansions.",
+    "Extend the independent source census beyond the five reviewed editions, including the other Irish denominators. Resolve the generic parser’s 60 flags and legacy option/shared-award mismatches; do not treat its percentages as completion evidence.",
     "Extend exact Mark Bank/Topic Atlas reconciliation through every remaining sitting, including modern orphan candidates, while preserving all existing identities and crops.",
     "Check signed-in full-application navigation as well as the component reader/session QA already completed.",
     "Keep coverage and original preservation baselines frozen until the whole-corpus zero-open/zero-orphan reconciliation and regression gates pass.",
     "Review integration with other terminals. Changes remain on the isolated branch; nothing is merged or published."
   ],
-  "nextAction": "Compare all 2011 Ordinary Irish paper and scheme pages, record edition differences, attach all verified task sources to Topic Atlas and inspect every distinct crop. Continue the remaining corpus; this English checkpoint is not corpus completion."
+  "nextAction": "Independently sweep 2012 Higher English paper and scheme, transcribe its task/selection denominator, author and inspect all routes, then compare Irish. The 2011 Ordinary checkpoint is not corpus completion."
 }
