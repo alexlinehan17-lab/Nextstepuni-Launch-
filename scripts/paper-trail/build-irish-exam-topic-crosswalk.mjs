@@ -698,7 +698,7 @@ for (const paper of papers) {
 
 // Reviewed task boundaries override generic section guesses for this exact
 // paper. Frozen baseline identities remain below; new parts/routes are additive.
-const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json']
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
 for (const card of foundationTasks.cards) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
@@ -761,6 +761,17 @@ for (const card of reviewedHigherTasks) {
 }
 for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks)) {
   const reviewedCards = foundationTasks.cards.filter(c => c.year === reviewedFoundation.year);
+  // Older papers may never have had an answer sidecar. Add their reviewed
+  // whole-section entries before attaching the complete paper/scheme regions.
+  for (const [n, label] of [['2', 'Léamhthuiscint'], ['3', 'Scríbhneoireacht']]) {
+    if (reviewedFoundation.q.some(q => q.n === n)) continue;
+    const sectionCards = reviewedCards.filter(c => c.section === n);
+    addQuestion(reviewedFoundation, {
+      n, label,
+      baseTopicIds: [...new Set(sectionCards.flatMap(c => c.examTopicKeys.map(key => F[key])))],
+      fallbackPage: Math.min(...sectionCards.flatMap(c => c.sourceMaterial.pages)) - (n === '3' ? 1 : 0),
+    });
+  }
   const passage = reviewedCards.find(c => c.atlasQuestionId === 'R-2C-1');
   const letterOrForm = reviewedCards.find(c => c.atlasQuestionId === 'W-4B' || c.atlasQuestionId.startsWith('W-4B-'));
   const writingTopics = [...new Set(reviewedCards.filter(c => c.section === '3').flatMap(c => c.examTopicKeys.map(key => F[key])))];
