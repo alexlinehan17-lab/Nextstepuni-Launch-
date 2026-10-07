@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-07",
+  "scope": "2025 Higher Mathematics Papers 1 and 2 plus shared source-reader and reviewed-scale interaction",
+  "runtimeCards": 838,
+  "reviewedTasks": 85,
+  "previousRuntimeIdsRetained": 833,
+  "addedRuntimeCards": [
+    "maths-2025-hl-p2-q2-a-ii",
+    "maths-2025-hl-p2-q3-b",
+    "maths-2025-hl-p2-q9-a-i",
+    "maths-2025-hl-p2-q9-b",
+    "maths-2025-hl-p2-q9-d"
+  ],
+  "targetedRegressionTests": 208,
+  "browser": {
+    "engine": "Chrome via Playwright",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "questionPageRender": true,
+    "nextPage": true,
+    "zoom": true,
+    "escapeAndFocusReturn": true,
+    "schemeHiddenBeforeReveal": true,
+    "exclusiveScaleAward": 6,
+    "schemeDirectoryCorrect": true,
+    "rulerKnownPrintedLengthCm": 10,
+    "rulerReadingsCm": {
+      "desktop100": 10.01,
+      "desktop125": 9.99,
+      "mobile100": 9.98,
+      "mobile125": 10.01
+    },
+    "pageErrors": []
+  },
+  "wholeSubjectComplete": false,
+  "typecheck": "passed",
+  "productionBuild": "passed"
+}

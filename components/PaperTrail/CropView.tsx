@@ -26,7 +26,9 @@ const CropView: React.FC<{
   ariaLabel?: (page: number) => string;
   /** Shown when rendering fails. */
   failText?: string;
-}> = ({ pdf, region, ariaLabel, failText }) => {
+  /** Full-page readers may enlarge beyond the default question-crop width. */
+  maxWidth?: number;
+}> = ({ pdf, region, ariaLabel, failText, maxWidth = 900 }) => {
   const hostRef = useRef<HTMLDivElement | null>(null);
   const [failed, setFailed] = useState(false);
 
@@ -39,7 +41,7 @@ const CropView: React.FC<{
     setFailed(false);
     (async () => {
       try {
-        const cssWidth = Math.min(host.clientWidth || 320, 900);
+        const cssWidth = Math.min(host.clientWidth || 320, maxWidth);
         const dpr = Math.min(window.devicePixelRatio || 1, 2);
         for (const seg of region) {
           if (cancelled) return;
@@ -93,11 +95,11 @@ const CropView: React.FC<{
       cancelled = true;
       task?.cancel();
     };
-  }, [pdf, region, ariaLabel]);
+  }, [pdf, region, ariaLabel, maxWidth]);
 
   return (
     <div>
-      <div ref={hostRef} className="mx-auto max-w-[900px]" />
+      <div ref={hostRef} className="mx-auto" style={{ maxWidth }} />
       {failed && (
         <p className="text-[12px] text-zinc-500 text-center py-4">
           {failText ?? 'Couldn’t render this region — open the full scheme.'}

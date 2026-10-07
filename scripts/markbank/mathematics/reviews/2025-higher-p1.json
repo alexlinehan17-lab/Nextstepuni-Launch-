@@ -1,0 +1,1241 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2025,
+  "level": "higher",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003ALP100EV.pdf",
+  "schemeFileid": "LC003ALP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "3c15ee1315f9ba1361beb82828fa41fdad72ca36b5dc28105fd5f7c1e1179b2a",
+  "schemeSha256": "c929568eaab7745c3601b9c694059a019b3c80319f398604f6960e9b7ef8fae2",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Visual reading of every paper page and each published marking boundary, independent of the card parser.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; all questions are retained. No combined multi-question practice cards."
+    },
+    {
+      "pages": [
+        11
+      ],
+      "wording": "find two values of z",
+      "classification": "mathematical-answer",
+      "reason": "The paper does not offer a choice of prompts. Any two correct roots satisfy the same mathematical task and published 15-mark scale."
+    },
+    {
+      "pages": [
+        21
+      ],
+      "wording": "which one of the following graphs could represent T(x)",
+      "classification": "answer-selection",
+      "reason": "A single correct graph and justification are required; the distractors are not alternative examinable tasks."
+    },
+    {
+      "pages": [
+        17
+      ],
+      "wording": "or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative solution methods for the same task; no finite printed prompt pool."
+    }
+  ],
+  "sourceNotes": [
+    "The Q10 scheme headers say 40 marks, but its six independently published scales total 50, matching the paper. Use the scales, not the erroneous running heading.",
+    "Each task uses one exclusive published credit scale. Full Credit −1 follows the conditions printed on scheme page 5; it is not an additional mark or a freely chosen deduction."
+  ],
+  "cards": [
+    {
+      "id": "maths-2025-hl-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-inequalities"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-cubics"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q2-a-ii",
+      "printedParts": [
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)",
+        "Q2(b)(ii)",
+        "Q2(b)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-differentiation-applications"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-differentiation-applications"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers",
+        "mathematics-higher-trigonometry-functions-identities"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-4",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-higher-complex-numbers"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics",
+        "mathematics-higher-algebra-expressions-factorising"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-higher-indices-and-logs"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-simultaneous-equations"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q6-a",
+      "printedParts": [
+        "Q6(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-quadratics"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)",
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q7-a-iv",
+      "printedParts": [
+        "Q7(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q7-a-v",
+      "printedParts": [
+        "Q7(a)(v)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-algebra-quadratics"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)",
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        15
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-higher-financial-maths"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q8-c",
+      "printedParts": [
+        "Q8(c)",
+        "Q8(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-trigonometry-triangles"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q8-e-i",
+      "printedParts": [
+        "Q8(e)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions",
+        "mathematics-higher-trigonometry-triangles"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q8-e-ii",
+      "printedParts": [
+        "Q8(e)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-solving-equations",
+        "mathematics-higher-differentiation-applications"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q8-e-iii",
+      "printedParts": [
+        "Q8(e)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications",
+        "mathematics-higher-functions"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)",
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules",
+        "mathematics-higher-differentiation-applications"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-rules"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q9-a-v",
+      "printedParts": [
+        "Q9(a)(v)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-higher-differentiation-applications"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)",
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-higher-integration"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q10-a",
+      "printedParts": [
+        "Q10(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q10-b",
+      "printedParts": [
+        "Q10(b)",
+        "Q10(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-higher-sequences-series",
+        "mathematics-higher-co-ordinate-geometry-of-the-line"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q10-d-i",
+      "printedParts": [
+        "Q10(d)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q10-d-ii",
+      "printedParts": [
+        "Q10(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-algebra-expressions-factorising"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q10-d-iii",
+      "printedParts": [
+        "Q10(d)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-higher-functions"
+      ]
+    },
+    {
+      "id": "maths-2025-hl-p1-q10-e-i",
+      "printedParts": [
+        "Q10(e)(i)",
+        "Q10(e)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10,
+        15
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        26,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-higher-induction",
+        "mathematics-higher-sequences-series"
+      ]
+    }
+  ],
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:e0060bb1342418a2": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "13:2f6750acec0126da": {
+      "classification": "given-mathematical-fact",
+      "reason": "One solution lies on the y-axis; this is supplied information, not a choice of tasks."
+    },
+    "16:6eb7b7b28d412db3": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "17:67ec912d23d816fa": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "17:04aae7a69ebd8a8e": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "21:3b5fb43bc4ec1316": {
+      "classification": "answer-selection",
+      "reason": "Choose the correct graph and justify it. The distractors are not alternative practice prompts."
+    }
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5
+  ]
+}

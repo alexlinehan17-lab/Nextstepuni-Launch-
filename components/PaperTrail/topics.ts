@@ -36,7 +36,8 @@ export const paperKeyOf = (label: string): string =>
 
 /** One printed-question identity with translated editions collapsed. Art and
  * Music have independently selectable components that restart at Q1; legacy
- * Spanish uses one paper slot for both written and aural cards. Their
+ * Spanish uses one paper slot for both written and aural cards. Mathematics
+ * has standard and Project Maths booklets in the same paper slot. Their
  * normalised booklet id must therefore remain in the logical key to prevent
  * false deduplication. */
 export const logicalQuestionIdentity = (question: Pick<
@@ -47,7 +48,7 @@ export const logicalQuestionIdentity = (question: Pick<
   question.level,
   question.year,
   question.paperKey,
-  question.subjectId === 'art' || question.subjectId === 'music' || question.subjectId === 'spanish'
+  ['art', 'music', 'spanish', 'mathematics'].includes(question.subjectId)
     ? question.fileid.replace(/(?:EV|IV)(?=\.pdf$)/i, 'BV')
     : '',
   question.n,

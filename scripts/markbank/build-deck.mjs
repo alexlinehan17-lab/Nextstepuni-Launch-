@@ -29,6 +29,7 @@ import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
+import { applyMathematicsReview } from './mathematics/review.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -419,7 +420,7 @@ for (const raw of rawCards) {
     if (!Array.isArray(binding) && binding.questionText) card.questionText = binding.questionText;
     appliedCorrections.push(`${raw.id}: attached its inspected official question-page source`);
   }
-  cards.push(card);
+  cards.push(SUBJECT_ID === 'maths' ? applyMathematicsReview(card) : card);
   if (correction) appliedCorrections.push(`${raw.id}: ${correction.reason}`);
 }
 
@@ -586,8 +587,8 @@ function groupFault(c) {
 
 function sourceMaterialFault(source, field = 'sourceMaterial') {
   if (!source || typeof source !== 'object') return `${field} is not an object`;
-  if (!['source-text', 'source-illustration'].includes(source.kind)) {
-    return `${field}.kind must be source-text or source-illustration`;
+  if (!['source-text', 'source-illustration', 'source-question'].includes(source.kind)) {
+    return `${field}.kind must be source-text, source-illustration or source-question`;
   }
   for (const key of ['label', 'title', 'attribution', 'presentationNote']) {
     if (!String(source[key] ?? '').trim()) return `${field}.${key} is empty`;
@@ -876,7 +877,7 @@ for (const c of cards) {
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
     rows: [
 ${rows}
-    ],${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${c.mathematicsScale ? `\n    mathematicsScale: ${JSON.stringify(c.mathematicsScale)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,` });
 }
 

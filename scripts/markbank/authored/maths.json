@@ -33317,42 +33317,23 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q3(b)",
-  "questionText": "Two of the 240 people are picked at random",
+  "questionText": "Two of the 240 people are picked at random. Find the probability that one of them had been to all three countries, and the other had been to none of the three countries. Give your answer as a fraction in its simplest form.",
   "figureKey": "maths-2025-HL-paper-p049-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 7, 10, 15)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 15,
   "rows": [
    {
-    "id": "maths-2025-hl-p2-q3-b-r1",
-    "kind": "anyN",
-    "verbatim": "Finds one relevant probability, for example, 6/240 1 ), (240 1), (67\nWrites one of (6 2 )\n67/240 × 6/240 not evaluated",
-    "marks": 15,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 4,
-     "options": [
-      "Finds one relevant probability, for example, 6/240 1 ), (240 1), (67\nWrites one of (6 2 )\n67/240 × 6/240 not evaluated",
-      "239 or similar not evaluated 240 ×\n2 ( 67/240 × 6/240) not evaluated\n1)/(240 ) (6 or 1/(240 ) (67 )",
-      "2 (( 6/240) × ( 67/239)) (6 1)(67\n1/(240 )"
-     ],
-     "perOptionSteps": [
-      4,
-      3,
-      8
-     ]
-    }
+    "id": "maths-2025-hl-p2-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "67/4780",
+    "marks": null,
+    "contextNote": "Read the original worked solution and marking notes. The Mathematics credit scale awards the response as a whole."
    }
   ],
-  "notes": "",
+  "notes": "Independently corrected after visual review of the 2025 Higher Paper 2 question paper and scheme on 2026-10-07. Previous extracted credit-band strings were corrupt. Original pages preserve every accepted method and credit condition.",
   "questionFigureKey": "maths-2025-HL-ask-p2-q3-b"
  },
  {
@@ -34383,42 +34364,23 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q9(b)",
-  "questionText": "5 people are picked at random from the people in Ireland",
+  "questionText": "5 people are picked at random from the people in Ireland. Assuming that 6·7% of people in Ireland have diabetes, work out the probability that 2 or more of these 5 people have diabetes.",
   "figureKey": "maths-2025-HL-paper-p065-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 4, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2025-hl-p2-q9-b-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, P(2) + P(3) + P(4) + P(5), or 1 −0∙067 , or (⁵ 0)",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: For this part, “term” is taken to mean each of P(0), P(1), ..., P(5). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "Work of merit, for example, P(2) + P(3) + P(4) + P(5), or 1 −0∙067 , or (⁵ 0)",
-      "One term fully correct\nOne aspect of two terms correct (binomial coefficient, power of 0∙933, power of 0∙067)",
-      "Indicates how to find P(2 or more) and work indicated for MPC also present\nFinds sufficient terms to find P(2 or more), but error(s) in finishing"
-     ],
-     "perOptionSteps": [
-      2,
-      1,
-      2
-     ]
-    }
+    "id": "maths-2025-hl-p2-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "0·0392",
+    "marks": null,
+    "contextNote": "Read the original worked solution and marking notes. The Mathematics credit scale awards the response as a whole."
    }
   ],
-  "notes": "",
+  "notes": "Independently corrected after visual review of the 2025 Higher Paper 2 question paper and scheme on 2026-10-07. Previous extracted credit-band strings were corrupt. Original pages preserve every accepted method and credit condition.",
   "questionFigureKey": "maths-2025-HL-ask-p2-q9-b"
  },
  {
@@ -34510,40 +34472,30 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q9(d)",
-  "questionText": "In a different clinical trial, 24 people are split into two groups, X and Y. 8 people are in group X and 16 people are in group Y",
+  "questionText": "In a different clinical trial, 24 people are split into two groups, X and Y. 8 people are in group X and 16 people are in group Y. Each person in group X is paired with two people in group Y, so that everyone in group Y is in exactly one of these pairings. How many different sets of such pairings can be made? Give your answer in the form a × 10ⁿ where 1 ≤ a < 10, n ∈ ℕ, and a is correct to 3 decimal places.",
   "figureKey": "maths-2025-HL-paper-p067-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 6, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2025-hl-p2-q9-d-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, (24 16), or (16 8 ), or (24 2 ), or 8!, or diagram\n24P₈ or similar",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 4,
-     "options": [
-      "Work of merit, for example, (24 16), or (16 8 ), or (24 2 ), or 8!, or diagram\n24P₈ or similar",
-      "Two relevant terms multiplied, for 8 )(16 example, (²⁴ 2 ), or 15 × 13, 2 )(14 or (16 2 )\n16!/2⁸"
-     ],
-     "perOptionSteps": [
-      4,
-      6
-     ]
-    }
+    "id": "maths-2025-hl-p2-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "8·173 × 10¹⁰",
+    "marks": null,
+    "contextNote": "Read the original worked solution and marking notes. The Mathematics credit scale awards the response as a whole."
+   },
+   {
+    "id": "maths-2025-hl-p2-q9-d-solution-2",
+    "kind": "point",
+    "verbatim": "6·011 × 10¹⁶",
+    "marks": null,
+    "contextNote": "Read the original worked solution and marking notes. The Mathematics credit scale awards the response as a whole."
    }
   ],
-  "notes": "",
+  "notes": "Independently corrected after visual review of the 2025 Higher Paper 2 question paper and scheme on 2026-10-07. Previous extracted credit-band strings were corrupt. Original pages preserve every accepted method and credit condition.",
   "questionFigureKey": "maths-2025-HL-ask-p2-q9-d"
  },
  {
@@ -38554,5 +38506,91 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2025-OL-ask-p2-q10-b-ii"
+ },
+ {
+  "id": "maths-2025-hl-p2-q2-a-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "tangent-to-circle",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 HL Paper 2 Q2(a)(ii)",
+  "stem": "A circle s has the equation (x − 4)² + (y + 2)² = 45.",
+  "questionText": "Find the equation of the tangent to s at the point (−2, −5). Write your answer in the form y = mx + c, where m, c ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p2-q2-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "y = −2x −9",
+    "marks": null
+   }
+  ],
+  "notes": "Manually authored after independent visual review of the paper and marking boundary on 2026-10-07. The official question and scheme readers retain diagram, context, worked methods and all credit notes."
+ },
+ {
+  "id": "maths-2025-hl-p2-q9-a-i",
+  "topicId": "maths-1-2",
+  "conceptId": "diabetes-probability-tree",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 2 Q9(a)(i), (ii)",
+  "stem": "Assume that 6·7% of people in Ireland have diabetes. For a particular test for diabetes, each person tests either positive or negative. The probability that someone who has diabetes gets a correct positive result is 99%. However, the probability that someone who does not have diabetes gets an incorrect positive result is 7·8%.",
+  "questionText": "One person is picked at random from the people in Ireland, and is tested for diabetes using this test. Use the information above to complete the tree diagram below, by: (i) writing the proportion associated with each branch of the tree diagram into the appropriate box and (ii) working out the probability for each outcome and writing it in the appropriate box in the final column. Some values are already filled in. They have been given correct to 4 decimal places, where relevant.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p2-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "0·99",
+    "marks": null
+   },
+   {
+    "id": "maths-2025-hl-p2-q9-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "0·01",
+    "marks": null
+   },
+   {
+    "id": "maths-2025-hl-p2-q9-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "0·933",
+    "marks": null
+   },
+   {
+    "id": "maths-2025-hl-p2-q9-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "0·922",
+    "marks": null
+   },
+   {
+    "id": "maths-2025-hl-p2-q9-a-i-solution-5",
+    "kind": "point",
+    "verbatim": "0·0007",
+    "marks": null
+   },
+   {
+    "id": "maths-2025-hl-p2-q9-a-i-solution-6",
+    "kind": "point",
+    "verbatim": "0·0728",
+    "marks": null
+   },
+   {
+    "id": "maths-2025-hl-p2-q9-a-i-solution-7",
+    "kind": "point",
+    "verbatim": "0·8602",
+    "marks": null
+   }
+  ],
+  "notes": "Manually authored after independent visual review of the paper and marking boundary on 2026-10-07. The official question and scheme readers retain diagram, context, worked methods and all credit notes."
  }
 ]

@@ -207,7 +207,11 @@ export interface CardFigure {
  * passage, no fabricated facsimile, and no second copy bundled into the app.
  */
 export interface CardSourceMaterial {
-  kind: 'source-text' | 'source-illustration';
+  kind: 'source-text' | 'source-illustration' | 'source-question' | 'source-scheme';
+  /** Schemes occupy a distinct storage directory, even when file IDs match. */
+  documentKind?: 'paper' | 'scheme';
+  /** A printed-scale measurement task needs the calibrated PDF ruler. */
+  measurementRequired?: boolean;
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
@@ -339,6 +343,16 @@ export interface SecCardBase extends CardBase {
  */
 export interface SecPointCardBase extends SecCardBase {
   tariffModel: TariffModel;
+  /** One exclusive SEC credit scale, verified against the original scheme.
+   * Legacy rows are preserved as source content but are not additive claims. */
+  mathematicsScale?: {
+    code: string;
+    marks: number[];
+    fullCreditMinusOne: boolean;
+    schemeFileid: string;
+    schemePages: number[];
+    generalNotesPages: number[];
+  };
   /** Capped at five REQUIRED rows: it keeps one card close to one memory, forces
    *  dependency splitting, and is what makes the card fit a 360px phone.
    *
@@ -836,6 +850,16 @@ export function tariffReconciles(card: SecCard): boolean {
         && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
   }
   const { tariffModel: t, rows, totalMarks } = card;
+  if (card.mathematicsScale) {
+    const scale = card.mathematicsScale;
+    return /^\d+[ABCD]$/.test(scale.code)
+      && Number.parseInt(scale.code, 10) === totalMarks
+      && scale.marks[0] === 0 && scale.marks.at(-1) === totalMarks
+      && scale.marks.every((mark, index) => Number.isInteger(mark)
+        && (index === 0 || mark > scale.marks[index - 1]))
+      && typeof scale.fullCreditMinusOne === 'boolean'
+      && scale.schemePages.length > 0 && scale.generalNotesPages.length > 0;
+  }
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   // The scheme never printed a split, so a row carrying its own marks is a
   // value the card invented — the tariff lives on the question alone.

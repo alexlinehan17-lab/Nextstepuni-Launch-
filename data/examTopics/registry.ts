@@ -43,6 +43,7 @@ import japaneseRuntimeJson from './japanese-runtime.json';
 import linkModulesAuditJson from './link-modules.json';
 import mathematicsQuestionRuntimeJson from './mathematics-question-runtime.json';
 import mathematicsRuntimeJson from './mathematics-runtime.json';
+import mathematicsReviewedQuestionRuntimeJson from './mathematics-reviewed-question-runtime.json';
 import musicRuntimeJson from './music-runtime.json';
 import physicalEducationQuestionRuntimeJson from './physical-education-question-runtime.json';
 import physicalEducationRuntimeJson from './physical-education-runtime.json';
@@ -3582,6 +3583,10 @@ registerCanonicalTagBridge(GEOGRAPHY_TAXONOMY);
 registerCanonicalTagBridge(HOME_ECONOMICS_TAXONOMY);
 registerCanonicalTagBridge(MATHEMATICS_TAXONOMY);
 registerCanonicalTagBridge(PHYSICAL_EDUCATION_TAXONOMY);
+
+// Primary-paper reviews resolve individual marked tasks before aggregating
+// them onto the Atlas's full-question card. Exact booklet identities survive.
+registerBrowserQuestionRuntime(mathematicsReviewedQuestionRuntimeJson as unknown as BrowserQuestionRuntime);
 
 // History keeps the StudyClix-equivalent Later Modern hierarchy level-aware,
 // while this generated join covers every English and Irish SEC card—including

@@ -22,6 +22,7 @@ import { createPortal } from 'react-dom';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import type { CardSourceMaterial } from '../../types/markBank';
 import CropView from '../PaperTrail/CropView';
+import PdfRuler from './PdfRuler';
 import { paperStoragePath, paperUrl } from '../PaperTrail/storage';
 import { vaultPdf } from '../PaperTrail/vaultDocs';
 
@@ -64,12 +65,16 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   source, subjectId, year, paperFileid,
 }) => {
   const isIllustration = source.kind === 'source-illustration';
-  const materialLabel = isIllustration ? 'illustration sheet' : 'source text';
+  const isMathematicsPage = source.kind === 'source-question' || source.kind === 'source-scheme';
+  const materialLabel = source.kind === 'source-scheme' ? 'marking scheme'
+    : source.kind === 'source-question' ? 'question pages' : isIllustration ? 'illustration sheet' : 'source text';
   const [open, setOpen] = useState(false);
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
   const [failed, setFailed] = useState(false);
   const [pageIndex, setPageIndex] = useState(0);
   const [zoom, setZoom] = useState(1);
+  const [measuring, setMeasuring] = useState(false);
+  const [measurement, setMeasurement] = useState<number | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   const closeRef = useRef<HTMLButtonElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
@@ -77,8 +82,11 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const swipeStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
 
   const url = useMemo(() => paperUrl(paperStoragePath(
-    'lc', subjectId, year, 'paper', withPdfExtension(paperFileid),
-  )), [paperFileid, subjectId, year]);
+    // Mark Bank's historic deck ID is `maths`; the SEC corpus uses the
+    // canonical Paper Trail ID. The correct filename alone cannot fix the path.
+    'lc', subjectId === 'maths' ? 'mathematics' : subjectId,
+    year, source.documentKind ?? 'paper', withPdfExtension(source.sourceFileid ?? paperFileid),
+  )), [paperFileid, source.sourceFileid, source.documentKind, subjectId, year]);
   const regions = useMemo(
     () => source.pages.map(page => [{ p: page }]),
     [source.pages],
@@ -96,6 +104,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const show = useCallback(() => {
     setPageIndex(0);
     setZoom(1);
+    setMeasuring(false);
+    setMeasurement(null);
     setOpen(true);
   }, []);
 
@@ -124,9 +134,9 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const goTo = useCallback((next: number) => {
     const index = clamp(next, source.pages.length - 1);
     setPageIndex(index);
-    const slide = trackRef.current?.children[index] as HTMLElement | undefined;
-    if (slide && typeof slide.scrollIntoView === 'function') {
-      slide.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    const track = trackRef.current;
+    if (track && typeof track.scrollTo === 'function') {
+      track.scrollTo({ left: index * track.clientWidth, behavior: 'smooth' });
     }
   }, [source.pages.length]);
 
@@ -140,14 +150,14 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, [source.pages.length]);
 
   const swipeStarted = useCallback((event: React.PointerEvent<HTMLDivElement>) => {
-    if (zoom !== 1 || event.isPrimary === false) return;
+    if (measuring || zoom !== 1 || event.isPrimary === false) return;
     swipeStart.current = { x: event.clientX, y: event.clientY, pointerId: event.pointerId };
     try { event.currentTarget.setPointerCapture?.(event.pointerId); } catch { /* capture is an enhancement */ }
-  }, [zoom]);
+  }, [measuring, zoom]);
 
   const completeSwipe = useCallback((x: number, y: number, pointerId: number) => {
     const start = swipeStart.current;
-    if (!start || start.pointerId !== pointerId || zoom !== 1) return;
+    if (measuring || !start || start.pointerId !== pointerId || zoom !== 1) return;
     swipeStart.current = null;
     const dx = x - start.x;
     const dy = y - start.y;
@@ -157,7 +167,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     // desktop trackpad or tablet.
     if (Math.abs(dx) < 54 || Math.abs(dx) < Math.abs(dy) * 1.15) return;
     goTo(pageIndex + (dx < 0 ? 1 : -1));
-  }, [goTo, pageIndex, zoom]);
+  }, [goTo, measuring, pageIndex, zoom]);
 
   const swipeFinished = useCallback((event: React.PointerEvent<HTMLDivElement>) => {
     completeSwipe(event.clientX, event.clientY, event.pointerId);
@@ -167,9 +177,9 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   // PointerEvent sequence. Real touch uses the pointer path above; this fallback
   // also makes a desktop click-and-drag feel like the same physical reader.
   const mouseSwipeStarted = useCallback((event: React.MouseEvent<HTMLDivElement>) => {
-    if (zoom !== 1 || event.button !== 0) return;
+    if (measuring || zoom !== 1 || event.button !== 0) return;
     swipeStart.current = { x: event.clientX, y: event.clientY, pointerId: -1 };
-  }, [zoom]);
+  }, [measuring, zoom]);
 
   const mouseSwipeFinished = useCallback((event: React.MouseEvent<HTMLDivElement>) => {
     if (swipeStart.current?.pointerId !== -1) return;
@@ -180,10 +190,10 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   // older WKWebView shells, where touch events are present but pointer capture
   // has historically been inconsistent during nested overflow scrolling.
   const touchSwipeStarted = useCallback((event: React.TouchEvent<HTMLDivElement>) => {
-    if (zoom !== 1 || event.touches.length !== 1) return;
+    if (measuring || zoom !== 1 || event.touches.length !== 1) return;
     const touch = event.touches[0];
     swipeStart.current = { x: touch.clientX, y: touch.clientY, pointerId: -2 };
-  }, [zoom]);
+  }, [measuring, zoom]);
 
   const touchSwipeFinished = useCallback((event: React.TouchEvent<HTMLDivElement>) => {
     const touch = event.changedTouches[0];
@@ -220,7 +230,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const modal = open && typeof document !== 'undefined' ? createPortal(
     <div className="mark-bank-theme mb-source-reader-overlay">
       <div
-        className="mb-source-reader-dialog"
+        className={`mb-source-reader-dialog${isMathematicsPage ? ' mb-source-reader-question' : ''}`}
         role="dialog"
         aria-modal="true"
         aria-labelledby="mb-source-reader-title"
@@ -228,8 +238,18 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       >
         <header className="mb-source-reader-header">
           <div className="mb-source-reader-heading">
-            <span>{source.label} · {materialLabel}</span>
+            <span>{isMathematicsPage ? source.label : `${source.label} · ${materialLabel}`}</span>
             <h2 id="mb-source-reader-title">{source.title}</h2>
+            {source.measurementRequired && (
+              <div className="mb-source-reader-measure">
+                <button type="button" aria-pressed={measuring} onClick={() => { setMeasuring(value => !value); setMeasurement(null); }}>
+                  {measuring ? 'Finish measuring' : 'Measure in cm'}
+                </button>
+                <span aria-live="polite">{measuring
+                  ? measurement === null ? 'Select two endpoints on the page.' : `${measurement.toFixed(2)} cm on the printed page`
+                  : 'Uses the original printed scale at any zoom.'}</span>
+              </div>
+            )}
           </div>
           <div className="mb-source-reader-tools" aria-label="Page display controls">
             <button
@@ -287,13 +307,19 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
                   style={{ width: `${zoom * 100}%` }}
                 >
                   {pdf ? (
-                    <CropView
-                      key={`${page}-${zoom}`}
-                      pdf={pdf}
-                      region={regions[index]}
-                      ariaLabel={pageAriaLabel}
-                      failText="This printed page could not be rendered. Open the original paper below."
-                    />
+                    <div style={{ position: 'relative' }}>
+                      <CropView
+                        key={`${page}-${zoom}`}
+                        pdf={pdf}
+                        region={regions[index]}
+                        ariaLabel={pageAriaLabel}
+                        maxWidth={isMathematicsPage ? 2400 : undefined}
+                        failText="This printed page could not be rendered. Open the original paper below."
+                      />
+                      {measuring && source.measurementRequired && pageIndex === index && (
+                        <PdfRuler pdf={pdf} page={page} onMeasure={setMeasurement} />
+                      )}
+                    </div>
                   ) : failed ? (
                     <div className="mb-source-reader-failed">
                       <strong>That page did not load.</strong>
@@ -321,7 +347,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
             <strong>{source.attribution}</strong>
             <span>{source.presentationNote}</span>
             <a href={`${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
-              Open the original {isIllustration ? 'illustration sheet' : 'paper'}
+              Open the original {source.documentKind === 'scheme' ? 'marking scheme' : isIllustration ? 'illustration sheet' : 'paper'}
             </a>
           </div>
           <div className="mb-source-reader-navigation">
@@ -360,10 +386,10 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       <button type="button" ref={triggerRef} className="mb-source-material-trigger" onClick={show}>
         <span className="mb-source-material-icon"><PageStackIcon /></span>
         <span className="mb-source-material-copy">
-          <span>Read {source.label}</span>
+          <span>{isMathematicsPage ? `Open ${materialLabel}` : `Read ${source.label}`}</span>
           <strong>{source.title}</strong>
           <small>
-            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {isIllustration ? 'official examination imagery' : 'exact examination text'}
+            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {isMathematicsPage ? 'original examination layout' : isIllustration ? 'official examination imagery' : 'exact examination text'}
           </small>
         </span>
         <span className="mb-source-material-open" aria-hidden="true">

@@ -420,15 +420,27 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
   .update(cards.map((card) => card.id).sort().join('\n'))
   .digest('hex');
 
+// Keep the historical baseline unchanged. These additions have their own
+// paper-and-scheme census in mathematicsCorpus.test.ts; none replaces an old ID.
+const reviewedMathematicsAdditions = new Set([
+  'maths-2025-hl-p2-q2-a-ii', 'maths-2025-hl-p2-q3-b',
+  'maths-2025-hl-p2-q9-a-i', 'maths-2025-hl-p2-q9-b', 'maths-2025-hl-p2-q9-d',
+]);
+const baselineCards = <T extends { id: string }>(cards: readonly T[]) =>
+  cards.filter(card => !reviewedMathematicsAdditions.has(card.id));
+
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    expect(cards.length, `${name}: card count changed`).toBe(count);
-    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(count);
-    expect(identityHash(cards), `${name}: a card ID was removed or replaced`).toBe(hash);
+    const original = baselineCards(cards);
+    expect(original.length, `${name}: historical card count changed`).toBe(count);
+    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
+    expect(identityHash(original), `${name}: a card ID was removed or replaced`).toBe(hash);
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_495);
+    expect(decks.reduce((total, [, cards]) => total + baselineCards(cards).length, 0)).toBe(10_495);
+    const added = MATHS_HIGHER.filter(card => reviewedMathematicsAdditions.has(card.id));
+    expect(new Set(added.map(card => card.id))).toEqual(reviewedMathematicsAdditions);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -441,7 +453,7 @@ describe('Mark Bank card preservation', () => {
     const preNewSubjectCards = decks
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:'))
-      .reduce((total, [, cards]) => total + cards.length, 0);
+      .reduce((total, [, cards]) => total + baselineCards(cards).length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_727);
   });
 

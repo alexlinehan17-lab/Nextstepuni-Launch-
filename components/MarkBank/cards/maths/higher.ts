@@ -9579,6 +9579,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q1-a-r1", kind: "anyN", verbatim: "Work of merit, for example, writes x−3 = −12, or indicates squaring\nRelevant effort at plotting y = |x−3|, for example, plots the line y = x−3\nPlots the line y = 12", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Full Credit –1: Apply a * once if strict inequality / inequalities is used; and or ∩ is not included in Method 1. Note: Accept correct answer without work. Note: Accept: x ≤ 15 and x ≥ −9. Note: Accept: x ≤ 15 ∩x ≥ −9. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, writes x−3 = −12, or indicates squaring\nRelevant effort at plotting y = |x−3|, for example, plots the line y = x−3\nPlots the line y = 12","Finds x = 15 or x = −9\nQuadratic equation/inequality (0 on RHS)","Finds x = 15 and x = −9"],"perOptionSteps":[2,2,6]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q1-a.png",
@@ -9609,6 +9621,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q1-b-r1", kind: "anyN", verbatim: "Work of merit, for example some correct work in distributing the terms\nCorrect answers without supporting work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: In the last two lines, there are 9 terms (6 in the penultimate line and 3 in the last line) to be checked. For LPC and HPC, excess terms can be ignored. For FC, there should be no excess terms. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example some correct work in distributing the terms\nCorrect answers without supporting work","6 of the 9 terms in the last two lines correct (ignoring excess terms)\n8y⁴ −78y² + 70y (Method 2)"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q1-b.png",
@@ -9639,6 +9663,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q1-c-r1", kind: "anyN", verbatim: "Sets up long division / array/product", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Note: Consider solution as consisting of 5 steps: Step 1. Sets up long division / array/product Step 2. Finds first term in quotient (2x² or 10) Step 3. Finds 2x² −9x + 10 Step 4. Factorises 2x² −9x + 10 / fully substituted quadratic formula Step 5. Finds 3 values of x. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 5.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Sets up long division / array/product","Finds first term in quotient (2x² or 10)","Finds 2x² −9x + 10","Factorises 2x² −9x + 10 / fully","Finds 3 values of x"],"perOptionSteps":[2,2,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q1-c.png",
@@ -9669,6 +9705,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q2-a-i-r1", kind: "anyN", verbatim: "Some correct differentiation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some correct differentiation","One error in differentiating sin 4x, otherwise correct, for example, mishandles the 4, or gets −4 cos 4x\nsin 4x differentiated correctly"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q2-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q2-a-i.png",
@@ -9699,6 +9747,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q2-a-ii-r1", kind: "anyN", verbatim: "Finds slope of tangent when x = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Note: Consider solution as consisting of 4 steps: Step 1. Finds slope of tangent when x = 0 Step 2. Finds y-value when x = 0 Step 3. Substitutes into equation of line formula Step 4. Solution in required form Steps 1 and 2 can be done in either order. Both Steps 1 and 2 need to be done (though may have errors) to get credit in Step 3. A value for the slope of the tangent is required to get credit in Step 4. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Finds slope of tangent when x = 0","Finds y-value when x = 0","Substitutes into equation of line","Solution in required form"],"perOptionSteps":[2,2,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q2-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q2-a-ii.png",
@@ -9722,13 +9782,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q2-b-i", topicId: "maths-5-2", conceptId: "state-range-values-which",
+    id: "maths-2025-hl-p1-q2-b-i", topicId: "maths-5-1", conceptId: "state-range-values-which",
     section: "B", questionRef: "2025 HL Paper 1 Q2(b)(i)–(iii)",
     questionText: "State the range of values of x for which g′(x) > 2",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-hl-p1-q2-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, in (i), indicates that g′(x) is slope; range g(x) within 3 ≤ x ≤ 4 in (ii), finds g(3) or relevant work on the diagram; in (iii), draws y = x, or point (1, 3) plotted", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. The full scale runs to 15. Full Credit -1: Apply a * if answer in (ii) is within the interval [ 1/5 , 2/5] \\ 1/3; Apply a * if work not shown on the diagram in part (ii); Apply a * if the graph of g^(−1)(x) is not labelled in part (iii). Note: Accept 3 ≤ x ≤ 4 in part (i). Note: Accept [3, 4] or (3, 4) in part (i). Note: Accept x ≥ 3 in part (i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, in (i), indicates that g′(x) is slope; range g(x) within 3 ≤ x ≤ 4 in (ii), finds g(3) or relevant work on the diagram; in (iii), draws y = x, or point (1, 3) plotted","1 part correct\nWork of merit in all 3 parts","2 parts correct x"],"perOptionSteps":[4,3,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q2-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q2-b-i.png",
@@ -9759,6 +9831,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q3-a-r1", kind: "anyN", verbatim: "Work of merit, for example, correctly deals with the power of 28, or some correct differentiation of 3x⁵", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept correct answer without work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, correctly deals with the power of 28, or some correct differentiation of 3x⁵"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q3-a.png",
@@ -9789,6 +9873,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q3-b-r1", kind: "anyN", verbatim: "Unsimplified expression for g′(x)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Note: If quotient rule or chain rule not used award low partial credit at most Consider solution as consisting of 3 steps: Step 1. Unsimplified expression for g′(x) Step 2. Simplified expression for g′(x) Step 3. Explanation. Marked in order: Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Unsimplified expression for g′(x)","Simplified expression for g′(x)","Explanation"],"perOptionSteps":[2,2,6]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q3-b.png",
@@ -9819,6 +9915,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q3-c-r1", kind: "anyN", verbatim: "Integrates e^(5x)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. The full scale runs to 15. Full Credit -1: k given in decimal form, rounded correctly. Note: Consider solution as consisting of 4 steps: Step 1. Integrates e^(5x) Step 2. Substitutes in limits Step 3. Isolates e^(5k) Step 4. Finds k. Marked in order: Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Integrates e^(5x)","Substitutes in limits","Isolates e^(5k)"],"perOptionSteps":[4,3,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q3-c",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q3-c.png",
@@ -9849,6 +9957,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q4-a-r1", kind: "anyN", verbatim: "Indicates multiplication of top", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Full Credit –1: −7 + 22i. Note: Accept: aa = − 7/41 , bb = 22/41 Consider solution as consisting of 4 steps: Method 1: Step 1. Indicates multiplication of top and bottom by conjugate of denominator Step 2. Expands top line Step 3. Expands bottom line Step 4. Writes in the form a + b Method 2: Step 1.2 + 3i = 4a + 4b−5a−5bi² Step 2. Sets Re = Re and Im = Im Step 3. Solves for 1 variable (a or b) Step 4. Solves for 2nd variable Method 3: Step 1. Writes 2 + 3i in polar form Step 2. Writes 4 −5i in polar form Step 3. Evaluates (2 + 3ii)/(4−5ii) in polar form Step 4. Writes in the form a + b. Note: If the argument is approximated using decimals, then High Partial Credit at most. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 1; Step 2; Step 3; Step 4; Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Indicates multiplication of top","Expands top line","Expands bottom line","Writes in the form a + b","2 + 3i = 4a + 4b−5a−5bi²","Sets Re = Re and Im = Im","Solves for 1 variable (a or b)","Solves for 2nd variable","Writes 2 + 3i in polar form","Writes 4 −5i in polar form","Evaluates (2 + 3ii)/(4−5ii) in polar form","Writes in the form a + b"],"perOptionSteps":[2,1,1,1]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q4-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q4-a.png",
@@ -9879,6 +9999,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q4-b-r1", kind: "anyN", verbatim: "Work of merit, for example, (cos 𝜃+ i sin𝜃)² = (cos 𝜃+ isin 𝜃)(cos 𝜃+ isin 𝜃)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, (cos 𝜃+ i sin𝜃)² = (cos 𝜃+ isin 𝜃)(cos 𝜃+ isin 𝜃)","cos² 𝜃+ 2icos 𝜃sin𝜃+ i² sin² 𝜃"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q4-b.png",
@@ -9909,6 +10041,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q4-c-r1", kind: "anyN", verbatim: "1 root evaluated using De Moivre’s", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 15. Full Credit –1: Roots found correctly, but one or both in polar form with argument simplified, or one or both in decimal form. Note: Polar form must be used to achieve any credit. Note: Accept correct polar form without work (i.e., finding r and 𝜽). General polar form is not required to find the roots. As the function z⁶ is even, award FC if one root 1/6 is found, and the second root is minus 1 times the first. Consider solution as consisting of 4 steps: Step 1. Finds 𝜃 Step 2. Finds r Step 3. 1 root evaluated using De Moivre’s Theorem Step 4. 2nd root found. Marked in order: Step 3; Step 4.", openList: true, group: {"claimMax":2,"perOption":4,"options":["1 root evaluated using De Moivre’s","2nd root found"],"perOptionSteps":[4,11]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q4-c",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q4-c.png",
@@ -9932,13 +10077,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q5-a", topicId: "maths-3-1", conceptId: "function-defined-20x-write-form-constants",
+    id: "maths-2025-hl-p1-q5-a", topicId: "maths-4-1", conceptId: "function-defined-20x-write-form-constants",
     section: "B", questionRef: "2025 HL Paper 1 Q5(a)",
     questionText: "The function g(x) is defined for x∈ℝ by: g(x) = 5x² + 20x−12 Write g(x) in the following form, where a, h, k∈ℤ are constants: g(x) = a(x + h)² + k g(x) =",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p1-q5-a-r1", kind: "anyN", verbatim: "Work of merit, for example, factors out 5 from two terms, or squares out (x + h)²\nSome correct differentiation\nFinds a", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, factors out 5 from two terms, or squares out (x + h)²\nSome correct differentiation\nFinds a","Find h or k\nFinds the turning point","Finds or identifies any two of a, h or k\nFinds the turning point and identifies a"],"perOptionSteps":[2,2,6]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q5-a.png",
@@ -9969,6 +10126,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q5-b-r1", kind: "anyN", verbatim: "Deals with power of 5", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Note: Method 1 Consider solution as consisting of 3 steps: Step 1. Deals with power of 5 Step 2. Splits up e³p Step 3. Finishes Method 2 Consider solution as consisting of 3 steps: Step 1. Splits up e¹⁵p⁵ Step 2. Deals with powers Step 3. Finishes. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Deals with power of 5","Splits up e³p","Finishes","Splits up e¹⁵p⁵","Deals with powers","Finishes"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q5-b.png",
@@ -9999,6 +10168,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q5-c-r1", kind: "anyN", verbatim: "States x = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Note: Method 1 Consider solution as consisting of 4 steps: Step 1. States x = 0 Step 2. Finds y when x = 0 Step 3. Substitutes (0, −7) into the curve Step 4. Finds n Method 2 Consider solution as consisting of 4 steps: Step 1. Writes y in terms of x Step 2. Substitutes the expression for y into the curve Step 3. Substitutes x = 0 Step 4. Finds n. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":4,"perOption":2,"options":["States x = 0","Finds y when x = 0","Substitutes (0, −7) into the curve","Writes y in terms of x","Substitutes the expression for y into","Substitutes x = 0"],"perOptionSteps":[2,2,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q5-c",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q5-c.png",
@@ -10029,6 +10210,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q6-a-r1", kind: "anyN", verbatim: "Work of merit, for example, one binomial coefficient correct, or writes (2p)⁷,\nWrites (2p + 3)(2p + 3) or similar", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, one binomial coefficient correct, or writes (2p)⁷,\nWrites (2p + 3)(2p + 3) or similar","1 of the first three relevant terms found correctly\nPart of 2 relevant terms correct (binomial coefficient, (2p)^k, or 3^k)","(2p + 3)⁷ expanded correctly but relevant three terms not identified\nFirst 3 terms in ascending powers of p simplified\n1 error, otherwise correct (note that the error could be, for example, consistent mishandling of (2p), or powers adding to the wrong number in each term)"],"perOptionSteps":[2,2,6]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q6-a.png",
@@ -10059,6 +10252,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q6-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, b² −4a = 0 or some correct substitution in the quadratic formula\nProduct of the roots = 54mm/6mm\nSubstitutes 9m for r into the equation and solves to show 1 root only", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, b² −4a = 0 or some correct substitution in the quadratic formula\nProduct of the roots = 54mm/6mm\nSubstitutes 9m for r into the equation and solves to show 1 root only","(−4r)² −4(6m)(54m) = 0\nIdentifies roots as ±3","16r² −1296m² = 0\n4rr/6mm = 6"],"perOptionSteps":[2,2,6]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q6-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q6-b-i.png",
@@ -10089,6 +10294,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q6-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, (−bb)/2aa or states h′(x) = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: The supporting work for (b)(ii) may appear in the box for (b)(i). Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, (−bb)/2aa or states h′(x) = 0","4(9mm)/2(6mm) (Method 1)\n(x−3)² = 0 or equivalent (Method 2)\n12m−36m = 0 (Method 3)\n54mm/6mm (Method 4)"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q6-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q6-b-ii.png",
@@ -10119,6 +10336,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q7-a-i-r1", kind: "anyN", verbatim: "Shows A(2) = 22 or A(3) correct.\n22 shown on the table and no further work", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit -1: Values for A(2) and A(3) not shown on the table. Note: To find A(3), it cannot be assumed that A(n) is arithmetic. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Shows A(2) = 22 or A(3) correct.\n22 shown on the table and no further work"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q7-a-i.png",
@@ -10142,13 +10371,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q7-a-ii", topicId: "maths-3-1", conceptId: "expression",
+    id: "maths-2025-hl-p1-q7-a-ii", topicId: "maths-4-1", conceptId: "expression",
     section: "B", questionRef: "2025 HL Paper 1 Q7(a)(ii), (iii)",
     questionText: "Find an expression in n for A(n), where n∈ℕ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p1-q7-a-ii-r1", kind: "anyN", verbatim: "Work of merit in one part, for example, in (ii), indicates common difference or identifies a; in (iii), finds A(4) (in (iii), must involve moving beyond A(3) in order to qualify as work of merit)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Note: For parts (ii) and (iii) allow full credit correct answers presented in either grid. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit in one part, for example, in (ii), indicates common difference or identifies a; in (iii), finds A(4) (in (iii), must involve moving beyond A(3) in order to qualify as work of merit)","1 part correct\nWork of merit in both parts","1 part correct and work of merit in the other part."],"perOptionSteps":[2,2,6]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q7-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q7-a-ii.png",
@@ -10172,13 +10414,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q7-a-iv", topicId: "maths-3-1", conceptId: "total-length-silk-needed-make-stage",
+    id: "maths-2025-hl-p1-q7-a-iv", topicId: "maths-4-1", conceptId: "total-length-silk-needed-make-stage",
     section: "B", questionRef: "2025 HL Paper 1 Q7(a)(iv)",
     questionText: "(iv) S(n) is the total length of silk needed to make Stage n of the web, where n∈ℕ. By using the formula for the sum of an arithmetic series, or otherwise, show that: S(n) = 3∙1n² + 12∙7n",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p1-q7-a-iv-r1", kind: "anyN", verbatim: "Formula for the sum or an arithmetic series, with some relevant substitution\nStates Tₙ = Sₙ−Sₙ₋₁\nA(1) + A(2) found", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Formula for the sum or an arithmetic series, with some relevant substitution\nStates Tₙ = Sₙ−Sₙ₋₁\nA(1) + A(2) found","Fully substituted formula\nSₙ−Sₙ₋₁ in terms of n\nTwo of a, b or c found\nVerifies any two of S(1), S(2) or S(3)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q7-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q7-a-iv.png",
@@ -10209,6 +10464,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q7-a-v-r1", kind: "anyN", verbatim: "Sets up quadratic equation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Note: Consider solution as consisting of 4 steps: Step 1. Sets up quadratic equation Step 2. Fully substitutes quadratic formula Step 3. Solves the equation Step 4. Finds the value of k Note that incorrect rounding is effectively treated as an error instead of as a *, as it means Step 4 is not completed. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Sets up quadratic equation","Fully substitutes quadratic formula","Solves the equation","Finds the value of k"],"perOptionSteps":[2,1,1,1]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q7-a-v",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q7-a-v.png",
@@ -10232,13 +10500,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q7-b-i", topicId: "maths-3-1", conceptId: "length",
+    id: "maths-2025-hl-p1-q7-b-i", topicId: "maths-4-1", conceptId: "length",
     section: "B", questionRef: "2025 HL Paper 1 Q7(b)(i), (ii)",
     questionText: "Find the length of O₃",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p1-q7-b-i-r1", kind: "anyN", verbatim: "Work of merit in some part, for example, in (i), 0∙53/0·5 , or in (ii), some correct substitution in Sₙ formula.", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Note: Accept (0·5(1·06ⁿⁿ−1))/(1·06−1) for full credit in Part (ii). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit in some part, for example, in (i), 0∙53/0·5 , or in (ii), some correct substitution in Sₙ formula.","1 part correct\nWork of merit in both parts","1 part correct and work of merit in the other part."],"perOptionSteps":[2,2,6]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q7-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q7-b-ii.png",
@@ -10262,13 +10542,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q7-b-iii", topicId: "maths-3-1", conceptId: "iii-there-exactly-orbitals-each-lap",
+    id: "maths-2025-hl-p1-q7-b-iii", topicId: "maths-4-1", conceptId: "iii-there-exactly-orbitals-each-lap",
     section: "B", questionRef: "2025 HL Paper 1 Q7(b)(iii)",
     questionText: "(iii) There are exactly 18 orbitals in each lap of the web. Write an expression in k for the total length of the first k laps, where k∈ℕ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-hl-p1-q7-b-iii-r1", kind: "anyN", verbatim: "Some relevant substitution into Sₙ formula\nkS₁₈", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8. The full scale runs to 15. Note: In Method 2 award High Partial Credit at most if S₁₈ or S₃₆ are approximated as decimals. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Some relevant substitution into Sₙ formula\nkS₁₈","SS₁₈_k_k = (0·5(1·06¹⁸^k^k−1))/(1·06−1)\nS_k not simplified (Method 2)"],"perOptionSteps":[4,11]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,4,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q7-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q7-b-iii.png",
@@ -10299,6 +10591,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q8-a-r1", kind: "anyN", verbatim: "Finds a relevant percentage of 870 (15% o 10%)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Finds a relevant percentage of 870 (15% o 10%)","870 × 0·85 × 0·9 indicated\nFinds 85% or 90% of 870"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q8-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q8-a.png",
@@ -10329,6 +10633,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q8-b-r1", kind: "anyN", verbatim: "Finds cost that Jacob thinks (in €)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Full Credit -1: Apply a * for no rounding or incorrect rounding. Note: Consider solution as consisting of 3 steps: Method 1 Step 1. Finds cost that Jacob thinks (in €) Step 2. Finds actual cost (in €) Step 3. Finds actual rate Method 2 Step 1. Sets up equation in d Step 2. Simplifies to an equation without denominators Step 3. Solves for d. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Finds cost that Jacob thinks (in €)","Finds actual cost (in €)","Finds actual rate","Sets up equation in d","Simplifies to an equation without","Solves for d"],"perOptionSteps":[2,2,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q8-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q8-b.png",
@@ -10359,6 +10675,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q8-c-r1", kind: "anyN", verbatim: "Work of merit, for example, in (c), one correct time found; or, in (d), some correct substitution into Pythagoras’ Theorem", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. The full scale runs to 15. Full Credit –1: Incorrect rounding, otherwise correct; Incorrect or no units in (c). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, in (c), one correct time found; or, in (d), some correct substitution into Pythagoras’ Theorem","1 part correct\nWork of merit in both parts","(d) correct and work of merit in (c)\n(c) correct and answer to (d) given in hours only"],"perOptionSteps":[4,3,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q8-c",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q8-c.png",
@@ -10382,13 +10710,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q8-e-i", topicId: "maths-4-1", conceptId: "expression-total-time-hours-will-take",
+    id: "maths-2025-hl-p1-q8-e-i", topicId: "maths-5-1", conceptId: "expression-total-time-hours-will-take",
     section: "B", questionRef: "2025 HL Paper 1 Q8(e)(i)",
     questionText: "Find an expression in x for T, the total time, in hours, that it will take Jacob to get from S to B to F",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p1-q8-e-i-r1", kind: "anyN", verbatim: "Finds time to travel |S|", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Consider solution as consisting of 4 steps: Step 1. Finds |S| Step 2. Finds time to travel |S| Step 3. Finds |B| Step 4. Finds total time taken. Marked in order: Step 2; Step 4.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Finds time to travel |S|","Finds total time taken"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q8-e-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q8-e-i.png",
@@ -10412,13 +10752,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q8-e-ii", topicId: "maths-5-2", conceptId: "jacob-knows-there-one-value-which",
+    id: "maths-2025-hl-p1-q8-e-ii", topicId: "maths-4-2", conceptId: "jacob-knows-there-one-value-which",
     section: "B", questionRef: "2025 HL Paper 1 Q8(e)(ii)",
     questionText: "Jacob knows that there is one value of x for which T(x) is a minimum (0 ≤ x ≤ 8). Solve the following equation to find this value of x, correct to 3 decimal places: x − 1 12 = 0 T′(x) = 6√x² + 4",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p1-q8-e-ii-r1", kind: "anyN", verbatim: "Gets rid of fractions", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Full Credit -1: Incorrect or no rounding; 2/√3 2/√3 or equivalent. Note: Consider solution as consisting of 4 steps: Step 1. Gets rid of fractions Step 2. Squares both sides Step 3. Finds the correct quadratic equation with one term in x², for example, 3x² = 4 or 108x² = 144 Step 4. Finds x. Marked in order: Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Gets rid of fractions","Squares both sides","Finds the correct quadratic equation with"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q8-e-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q8-e-ii.png",
@@ -10449,6 +10802,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q8-e-iii-r1", kind: "anyN", verbatim: "Correct answer\nWork of merit in justification, for example, states “one turning point” or similar", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct answer\nWork of merit in justification, for example, states “one turning point” or similar","States “one turning point”, and states C or D\nStates “T(0) < T(8)”, and states B or D\nSufficient justification to support the correct answer, but doesn’t give correct answer"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q8-e-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q8-e-iii.png",
@@ -10472,13 +10838,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q9-a-i", topicId: "maths-5-2", conceptId: "there-difference-between-fuel-consumption-when",
+    id: "maths-2025-hl-p1-q9-a-i", topicId: "maths-5-1", conceptId: "there-difference-between-fuel-consumption-when",
     section: "B", questionRef: "2025 HL Paper 1 Q9(a)(i)",
     questionText: "Show that there is no difference between the fuel consumption (F) when Dani’s car is travelling at 60 km/hour and when it is travelling at 110 km/hour",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p1-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, substitutes in 60 or 110 for c, or finds F′(c)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, substitutes in 60 or 110 for c, or finds F′(c)","Evaluates F(60) or F(110)\nFinds c = 85 when F′(c) = 0"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[29],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q9-a-i.png",
@@ -10509,6 +10887,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q9-a-ii-r1", kind: "anyN", verbatim: "(ii) correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Full Credit –1: Apply a * for Incorrect rounding. Note: Consider solution as consisting of 4 steps: Step 1. (ii) correct Step 2. In (iii), subs t = 7 into c Step 3. In (iii), subs cc (with tt = 7) into dddd/dddd Step 4. In (iii), evaluates dddd/dddd If c is evaluated at t = 7 and this value is subbed into dddd/dddd , and the resulting expression is evaluated, then consider all the evaluating as comprising Step 4. So, if there are errors in evaluating both cc and dddd/dddd these are both treated as errors in Step 4, and up to HPC can still be awarded for 3 steps correct. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":2,"options":["(ii) correct","In (iii), subs t = 7 into c","In (iii), subs cc (with tt = 7) into dddd/dddd","In (iii), evaluates dddd/dddd"],"perOptionSteps":[2,2,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[30],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q9-a-ii.png",
@@ -10539,6 +10930,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q9-a-iv-r1", kind: "anyN", verbatim: "Some correct differentiation, for example, 1/tt²\nc = 78 + 18 ln t", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some correct differentiation, for example, 1/tt²\nc = 78 + 18 ln t"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[30],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q9-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q9-a-iv.png",
@@ -10569,6 +10973,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q9-a-v-r1", kind: "anyN", verbatim: "dddd/dddd = dddd/dddd × dddd/dddd", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Note: Accept correct answer without unit Consider solution as consisting of 4 steps: Step 1. dddd/dddd = dddd/dddd × dddd/dddd Step 2. Fills in value for dddd/dddd and expression for dddd/dddd Step 3. Fills in tt = 7 in dddd/dddd Step 4. Evaluates dddd/dddd Steps can happen in different orders. Step 1 does not need to be explicitly stated. As in (a)(iii), all evaluating is considered to be part of Step 4, and all errors in evaluating are considered to be restricted to Step 4. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":2,"options":["dddd/dddd = dddd/dddd × dddd/dddd","Fills in value for dddd/dddd and expression","Fills in tt = 7 in dddd/dddd","Evaluates dddd/dddd"],"perOptionSteps":[2,2,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[31],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q9-a-v",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q9-a-v.png",
@@ -10592,13 +11009,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q9-b-i", topicId: "maths-5-2", conceptId: "fill-table-values-given-values-each",
+    id: "maths-2025-hl-p1-q9-b-i", topicId: "maths-5-1", conceptId: "fill-table-values-given-values-each",
     section: "B", questionRef: "2025 HL Paper 1 Q9(b)(i), (ii)",
     questionText: "Fill in the table below to show the values of v(t) for the given values of t, up to t = 8. Give each value correct to 1 decimal place, where appropriate",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p1-q9-b-i-r1", kind: "anyN", verbatim: "2 parts correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Full Credit –1: Apply a * once for incorrect rounding of v(1) and/or v(3); Fully correct apart from 1 part (excluding rounding error). Note: Consider solution as consisting of 14 parts: 4 parts: the 4 values in the table in (i) 9 parts: 9 points plotted from the values in the table 1 part: points joined appropriately. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["2 parts correct","7 parts correct","12 parts correct"],"perOptionSteps":[2,2,6]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[32],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q9-b-i.png",
@@ -10629,6 +11058,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q9-b-iii-r1", kind: "anyN", verbatim: "1/(8−4) [∫ 4 8 vv(tt)dddd ]", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Full Credit -1: Apply a * for incorrect rounding; 4 < l l ≤ 5, otherwise correct. Note: Indication of integration is required to be awarded any credit Some correct integration needed to go beyond Low Partial Credit ⎤. Note: Accept correct answer without unit. ⎥ ⎥ ⎥ Consider solution as consisting of 4 steps: Step 1. 1/(8−4) [∫ 4 8 vv(tt)dddd ] Step 2. Integrates correctly Step 3. Subs in limits Step 4. Evaluates correctly If 11/44 is omitted, treat Step 1 as not fully correct, but all other steps can be accepted as correct. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":2,"options":["1/(8−4) [∫ 4 8 vv(tt)dddd ]","Integrates correctly","Subs in limits","Evaluates correctly"],"perOptionSteps":[2,2,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[33],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q9-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q9-b-iii.png",
@@ -10659,6 +11101,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q10-a-r1", kind: "anyN", verbatim: "5 correct points (ignoring excess points)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: 1 point missing, or 1 incorrect points plotted, otherwise fully correct. Note: If there are more than three excess points, award low partial credit at most. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["5 correct points (ignoring excess points)","12 correct points (at most 3 excess points)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[34],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q10-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q10-a.png",
@@ -10689,6 +11143,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, in (b), one point given with 2000 as one of the co-ordinates; in (c), draws some of pattern for a value of n where n > 4\nShows (4, 4) on any one of the diagrams", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, in (b), one point given with 2000 as one of the co-ordinates; in (c), draws some of pattern for a value of n where n > 4\nShows (4, 4) on any one of the diagrams","1 part correct\nWork of merit in both parts","1 part correct and work of merit in the other part"],"perOptionSteps":[2,2,6]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,2,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[34],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q10-b.png",
@@ -10719,6 +11186,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q10-d-i-r1", kind: "anyN", verbatim: "Work of merit, for example, t−1 = 2n", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, t−1 = 2n"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[34],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q10-d-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q10-d-i.png",
@@ -10749,6 +11228,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q10-d-ii-r1", kind: "anyN", verbatim: "(d) (ii) QQ(nn) = ((nn + 1)²)/((2nn + 1)²)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["(d) (ii) QQ(nn) = ((nn + 1)²)/((2nn + 1)²)","((tt−1)/2 + 1) 2","= 2/2","(2(t−1","2 ) + 1)","((tt−1 + 2)/2 ) 2","(t−1 + 1)²","((t + 1)2","= 22/tt² )","t² + 2t + 1"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[35],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q10-d-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q10-d-ii.png",
@@ -10772,13 +11263,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q10-d-iii", topicId: "maths-4-1", conceptId: "value-which-given-lim-4t2",
+    id: "maths-2025-hl-p1-q10-d-iii", topicId: "maths-5-2", conceptId: "value-which-given-lim-4t2",
     section: "B", questionRef: "2025 HL Paper 1 Q10(d)(iii)",
     questionText: "Find the value of Q ∞ which is given by: Q ∞= lim t→∞ t2 + 2t+ 1 4t2 4",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p1-q10-d-iii-r1", kind: "anyN", verbatim: "Splits in 3 fractions / divides top", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Note: Accept correct answer without work Consider solution as consisting of 3 steps: Step 1. Splits in 3 fractions / divides top and bottom by t² Step 2. Simplifies (before taking limits) Step 3. Takes limits. Marked in order: Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Splits in 3 fractions / divides top","Simplifies (before taking limits)","Takes limits"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[36],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q10-d-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q10-d-iii.png",
@@ -10809,6 +11312,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p1-q10-e-i-r1", kind: "anyN", verbatim: "H(1) identified in (i) and", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10, four parts for 15. Full Credit –1: Omits part or all of conclusion but otherwise correct. Conclusion has three parts; these do not all have to come at the end of the proof: o P(1) true o P(k) true implies P(k + 1) true o P(n) true for all n∈ℕ. Note: Consider solution to (i) and (ii) combined as consisting of 4 steps: Step 1. H(1) identified in (i) and P(1) verified in (ii) Step 2. P(k) stated Step 3. P(k + 1) stated and H(k + 1) = H(k) + 2 + 3 Step 4. P(k + 1) proved Steps 1 and 2 can be in any order. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":4,"options":["H(1) identified in (i) and","P(k) stated","P(k + 1) stated and","P(k + 1) proved"],"perOptionSteps":[4,3,3,5]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[37],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q10-e-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q10-e-i.png",
@@ -10839,6 +11355,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q1-a-r1", kind: "anyN", verbatim: "Work of merit, for example, 5 subbed in for y, or p subbed in for x\nRelevant work to isolate p\nFinds the slope of the line or another point on the line", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: If equation is not solved algebraically, “supporting work” would be, for example, (−6, 5) subbed into the equation and fully verified. Note: Accept x used in place of p If 5 is substituted for x and p for y, award High Partial Credit at most. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 5 subbed in for y, or p subbed in for x\nRelevant work to isolate p\nFinds the slope of the line or another point on the line","One error, otherwise correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[42],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q1-a.png",
@@ -10869,6 +11397,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q1-b-r1", kind: "anyN", verbatim: "Finds m_l", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Full Credit –1: Finds both acute and obtuse angles, doesn’t specify which is the answer; Apply a * for incorrect rounding. Note: Accept correct answer without unit. Consider solution as consisting of 4 steps: Method 1. Note: For Step 3, accept substitution without ± Step 1. Finds m_l Step 2. Finds m_h Step 3. Subs in formula Step 4. Finds 𝜃 Method 2 Step 1. Finds m_l Step 2. Finds m_h Step 3. Finds 161 ∙56 …⁰ and 21 ∙8 …⁰ Step 4. Finds 𝜃 Method 3 Step 1. Finds m_l Step 2. Finds m_h Step 3. 𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5 Step 4. Finds 𝜃. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds m_l","Finds m_h","Subs in formula","Finds m_l","Finds m_h","Finds 161 ∙56 …⁰ and 21 ∙8 …⁰","Finds m_l","Finds m_h","𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5"],"perOptionSteps":[3,2,2,3]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[43],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q1-b.png",
@@ -10892,13 +11432,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q1-c", topicId: "maths-3-1", conceptId: "line-cuts-axis-point-axis",
+    id: "maths-2025-hl-p2-q1-c", topicId: "maths-2-2", conceptId: "line-cuts-axis-point-axis",
     section: "B", questionRef: "2025 HL Paper 2 Q1(c)",
     questionText: "A line cuts the x-axis at the point A(a, 0) and the y-axis at B(0, b), where a, b ∈ℤ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-hl-p2-q1-c-r1", kind: "anyN", verbatim: "Finds area for one set of a and b (not a", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10, four parts for 15. Note: If both the slope and the area are not used to find a and b, then no credit can be awarded for finding the equations of the lines. Consider the solution as consisting of 4 steps: Method 1 If Step 2 is done, consider Step 1 to be done as well. Step 1. Finds area for one set of a and b (not a solution) Step 2. Finds area for a correct set of values of a and b Step 3. Finds one equation Step 4. Finds second equation Method 2 Step 1. 1 equation in a and b Step 2. Second equation in a and b Step 3.Finds a or b Step 4. Finds equations of 2 lines. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Finds area for one set of a and b (not a","Finds area for a correct set of values of","Finds one equation","Finds second equation","1 equation in a and b","Second equation in a and b","Finds a or b","Finds equations of 2 lines"],"perOptionSteps":[4,3,3,5]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[44],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q1-c.png",
@@ -10929,6 +11481,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q2-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, identifies h, k, or r²\n(−4, 2) and no further work", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit -1: Radius given as a decimal, otherwise correct. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, identifies h, k, or r²\n(−4, 2) and no further work","Centre or radius correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[45],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q2-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q2-a-i.png",
@@ -10952,13 +11516,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q2-b", topicId: "maths-3-1", conceptId: "circle-has-equation-constant-28x-46y",
+    id: "maths-2025-hl-p2-q2-b", topicId: "maths-2-2", conceptId: "circle-has-equation-constant-28x-46y",
     section: "B", questionRef: "2025 HL Paper 2 Q2(b)",
     questionText: "The circle t has the following equation, where k∈ℝ is a constant: x² + y² + 28x−46y + k = 0 The horizontal line y = k is a tangent to the circle t. Find the two possible values of k",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-hl-p2-q2-b-r1", kind: "anyN", verbatim: "Finds in terms of k, point of tangency", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10, four parts for 15. Note: Consider solution as consisting of 4 steps: Method 1 Step 1. Finds in terms of k, point of tangency Step 2. Equation in k (• in solution) Step 3. Quadratic equation in the form k² −45k−196 = 0 or equivalent. Step 4. Finds k Method 2 Step 1. Finds centre and radius Step 2. Equation in k (• in solution) Step 3. Quadratic equation in form k² −45k−196 = 0 or equivalent. Step 4. Finds k Method 3 Step Step 1. 2. Finds 23 + (centre and)/(√725 − kk) or radius 23 − √725 − kk Step 3. Quadratic equation in form k² −45k−196 = 0 or equivalent. Step 4. Finds k. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3; Step 3.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Finds in terms of k, point of tangency","Equation in k (• in solution)","Quadratic equation in the form","Finds centre and radius","Equation in k (• in solution)","Quadratic equation in form","Quadratic equation in form"],"perOptionSteps":[4,3,3,5]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[47],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q2-b.png",
@@ -10989,6 +11565,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q3-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, finds one relevant probability, such as, 23/240; or adds relevant numbers, for example, 23 + 18 (but with no irrelevant numbers added)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit -1: 60/240 and stops. Note: Accept 60/240 = 1/4 for full credit. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, finds one relevant probability, such as, 23/240; or adds relevant numbers, for example, 23 + 18 (but with no irrelevant numbers added)"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[48],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q3-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q3-a-i.png",
@@ -11019,6 +11607,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q3-a-ii-r1", kind: "anyN", verbatim: "Find P(A∪C)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Note: Consider solution as requiring 4 steps: Step 1. Find P(A∪C) Step 2. Find P(C) Step 3. Find P(A∩C) Step 4. Substitute in P(A) + P(C) −P(A∩C). Marked in order: Step 1; Step 3; Step 4.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Find P(A∪C)","Find P(A∩C)","Substitute in P(A) + P(C) −P(A∩C)"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[48],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q3-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q3-a-ii.png",
@@ -11049,6 +11649,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q3-a-iii-r1", kind: "anyN", verbatim: "Answer correct\nWork of merit in justification, for example, states a relevant condition, or finds a relevant probability", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Answer correct\nWork of merit in justification, for example, states a relevant condition, or finds a relevant probability","Answer correct and work of merit in justification\nIncorrect or no answer, but substantial work of merit in justification, for example, states a relevant condition and finds 2 relevant probabilities","Answer correct and substantial work of merit in justification, for example, states a relevant condition and finds 2 relevant probabilities\nJustification sufficient to support the correct answer, but no or incorrect answer"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[49],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q3-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q3-a-iii.png",
@@ -11072,6 +11685,49 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-q3-b", topicId: "maths-1-2", conceptId: "two-240-people-picked-random",
+    section: "B", questionRef: "2025 HL Paper 2 Q3(b)",
+    questionText: "Two of the 240 people are picked at random. Find the probability that one of them had been to all three countries, and the other had been to none of the three countries. Give your answer as a fraction in its simplest form.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p2-q3-b-solution-1", kind: "point", verbatim: "67/4780", marks: null, contextNote: "Read the original worked solution and marking notes. The Mathematics credit scale awards the response as a whole." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[50],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-HL-ask-p2-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q3-b.png",
+          "srcHash": "151a79b1f6efa647d7b0fe1ba57a7a9f",
+          "alt": "The question as printed on the paper — Two of the 240 people are picked at random. Find the probability that one of them had been to all three countries, and the other had been to none of the three countries. Give your answer as a fraction in its simplest… Full card prompt: Two of the 240 people are picked at random. Find the probability that one of them had been to all three countries, and the other had been to none of the three countries. Give your answer as a fraction in its simplest form.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-HL-paper-p049-i0",
+          "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p049-i0.png",
+          "srcHash": "feaac89f7cb52bfc67c67cb8162e7d09",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q3(b), typeset as the State Examinations Commission set it. It reads: Method 1 PP(AA ∩ BB ∩ CC) = 6/240 PP(none) = 67/240 PP(both) = 2 [( 6/240) × ( 67/239)] = 402/28680 = [ 67/4780] Method 2 (1) 1)/(240 ) (6 (67 ) = 67/4780",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
     id: "maths-2025-hl-p2-q4-a-i", topicId: "maths-1-6", conceptId: "median-age-value",
     section: "B", questionRef: "2025 HL Paper 2 Q4(a)(i), (ii)",
     questionText: "The median age is 17∙5. Find the value of x",
@@ -11079,6 +11735,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q4-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, for (i), shows median as middle number in the list, or, for (ii), states I = Q₃ −Q₁ or work towards finding Q₃\nRelevant work on the diagram", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. The full scale runs to 15. Note: Accept correct answer without work in (i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, for (i), shows median as middle number in the list, or, for (ii), states I = Q₃ −Q₁ or work towards finding Q₃\nRelevant work on the diagram","1 part correct\nWork of merit in both parts","1 part correct and work of merit in the other part"],"perOptionSteps":[4,3,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[51],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q4-a-i.png",
@@ -11109,6 +11777,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q4-b-r1", kind: "anyN", verbatim: "Answer correct\nJustification shows understanding of effect on median or mean", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Apply a * if the justification is a particular example rather than a more general justification. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Answer correct\nJustification shows understanding of effect on median or mean","Answer correct and justification correct regarding one of the statistics (median or mean)\nJustification sufficient to support the correct answer, but no or incorrect answer"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[51],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q4-b.png",
@@ -11132,13 +11812,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q4-c", topicId: "maths-3-1", conceptId: "frequency-table-shows-ages-people-another",
+    id: "maths-2025-hl-p2-q4-c", topicId: "maths-1-6", conceptId: "frequency-table-shows-ages-people-another",
     section: "B", questionRef: "2025 HL Paper 2 Q4(c)",
     questionText: "The frequency table below shows the ages of the people in another class, where k∈ℕ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p2-q4-c-r1", kind: "anyN", verbatim: "Finds mid-interval values", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Full Credit -1: Apply a * for one incorrect MIV, otherwise correct. Note: If k does not appear in both the numerator and denominator, then Mid Partial Credit at most No penalty if data is assumed to be integer- valued, i.e., intervals treated as 24 −29, 30 −35, and so on Consider solution as consisting of 4 steps: Step 1. Finds mid-interval values Step 2. Finds a correct expression in k for either the numerator or denominator Step 3. Writes an equation in k Step 4. Solves for k. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds mid-interval values","Finds a correct expression in k for","Writes an equation in k","Solves for k"],"perOptionSteps":[3,2,2,3]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[52],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q4-c",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q4-c.png",
@@ -11162,13 +11854,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q5-a", topicId: "maths-2-2", conceptId: "diagram-shows-two-triangles-midpoint-parallel",
+    id: "maths-2025-hl-p2-q5-a", topicId: "maths-2-1", conceptId: "diagram-shows-two-triangles-midpoint-parallel",
     section: "B", questionRef: "2025 HL Paper 2 Q5(a)",
     questionText: "The diagram shows two triangles, A and B. C is the midpoint of [A]. A is parallel to E, and the point C lies on D",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-hl-p2-q5-a-r1", kind: "anyN", verbatim: "Work of merit, for example, a relevant fact indicated (text or on diagram)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10, four parts for 15. Full Credit -1: If AAS is established, accept S4 if ASA or AAS given as reason. Note: For S1 – S3, accept 2 correct reasons. Work indicated on the diagram is generally taken as a statement without a reason. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Work of merit, for example, a relevant fact indicated (text or on diagram)","2 statements from S1, S2, S3 (reasons not required)","3 statements with reasons","4 statements with reasons."],"perOptionSteps":[4,3,3,5]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[53],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q5-a.png",
@@ -11192,13 +11896,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q5-b-i", topicId: "maths-2-2", conceptId: "part",
+    id: "maths-2025-hl-p2-q5-b-i", topicId: "maths-2-4", conceptId: "part",
     section: "B", questionRef: "2025 HL Paper 2 Q5(b)(i)",
     questionText: "|XQ| = 8 cm and |Q′| = 4 cm",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p2-q5-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, states kk = |XXQQ′|/|XXXX| or finds |XXQQ′|", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, states kk = |XXQQ′|/|XXXX| or finds |XXQQ′|"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[53],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q5-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q5-b-i.png",
@@ -11222,13 +11938,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q5-b-ii", topicId: "maths-2-2", conceptId: "shown-again-diagram-right",
+    id: "maths-2025-hl-p2-q5-b-ii", topicId: "maths-2-4", conceptId: "shown-again-diagram-right",
     section: "B", questionRef: "2025 HL Paper 2 Q5(b)(ii)",
     questionText: "P and P′Q′R′S′ are shown again in the diagram on the right",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p2-q5-b-ii-r1", kind: "anyN", verbatim: "Finds one relevant length", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Note: Accept correct answer without unit. Consider solution as consisting of 4 steps: Methods 1&2: Step 1. Finds one relevant length Step 2. Finds |P′Q| Step 3. Indicates |PP′QQ|/|PPPP| Step 4. Finds area Method 3: Step 1. Finds one relevant length Step 2. Finds |P′| Step 3. Shows |P| s(∠ S) = 4 or equivalent Step 4. Finds area. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 1; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds one relevant length","Finds |P′Q|","Indicates |PP′QQ|/|PPPP|","Finds area","Finds one relevant length","Shows |P| s(∠ S) = 4","Finds area"],"perOptionSteps":[3,2,2,3]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[54],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q5-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q5-b-ii.png",
@@ -11259,6 +11987,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q6-a-r1", kind: "anyN", verbatim: "Finds reference angle", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Full Credit –1: Apply a * once for excess values; Apply a * once for one or more values given in radians. Note: Accept correct answers without work Consider solution as consisting of 4 steps: Step 1. Finds reference angle Step 2. Finds 2nd angle in first revolution Step 3. Finds values < 0° Step 4. Finds values > 360°. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Finds reference angle","Finds 2nd angle in first revolution","Finds values < 0°","Finds values > 360°"],"perOptionSteps":[2,1,1,1]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[55],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q6-a.png",
@@ -11282,13 +12022,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q6-b", topicId: "maths-2-3", conceptId: "function-radians-sin-part-graph-shown",
+    id: "maths-2025-hl-p2-q6-b", topicId: "maths-5-1", conceptId: "function-radians-sin-part-graph-shown",
     section: "B", questionRef: "2025 HL Paper 2 Q6(b)",
     questionText: "f(x) is the following function, where x∈ℝ is in radians: f(x) = |4 sin x| −1 Part of the graph of y = f(x) is shown below. Write down the period and range of f(x)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-hl-p2-q6-b-r1", kind: "anyN", verbatim: "Work of merit, for example, for period, mentions 2𝜋, or, for range, indicates correct y-value on the graph (−1 or 3)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. The full scale runs to 15. Full Credit -1: Period given in degrees. Note: Accept correct answers without work. Note: Accept correct period without unit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, for period, mentions 2𝜋, or, for range, indicates correct y-value on the graph (−1 or 3)","Period or range correct\nWork of merit for both","Period or range correct and work of merit for the other."],"perOptionSteps":[4,3,8]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[55],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q6-b.png",
@@ -11319,6 +12071,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q6-c-r1", kind: "anyN", verbatim: "Fills in cosine rule", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Consider the solution as consisting of 3 steps: Step 1. Fills in cosine rule Step 2. Finds c∠C Step 3. Finds t∠C The theorem of Pythagoras must be used in Step 3, for Step 3 to be considered correct. Marked in order: Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Fills in cosine rule","Finds c∠C","Finds t∠C"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[56],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q6-c",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q6-c.png",
@@ -11342,13 +12106,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q7-a-i", topicId: "maths-2-3", conceptId: "measure-lengths-labelled-diagram-write-length",
+    id: "maths-2025-hl-p2-q7-a-i", topicId: "maths-3-4", conceptId: "measure-lengths-labelled-diagram-write-length",
     section: "B", questionRef: "2025 HL Paper 2 Q7(a)(i), (ii)",
     questionText: "Measure the lengths labelled r, d, and h on the diagram above. Write the length of each, correct to the nearest cm, in the table below",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p2-q7-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, in (i), 1 value correct, or in (ii), finds 14", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit –1: Apply a * once for early rounding in (ii) (uses 6∙4 to find the other two lengths). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, in (i), 1 value correct, or in (ii), finds 14","1 part correct ((i) or (ii))","1 part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[57],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "measurementRequired": true,
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q7-a-i.png",
@@ -11379,6 +12156,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q7-b-r1", kind: "anyN", verbatim: "x correctly filled into one relevant formula (including volume of a sphere)\nEquation in x", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: x found correctly and no further work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["x correctly filled into one relevant formula (including volume of a sphere)\nEquation in x","Isolates x³"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[57],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q7-b.png",
@@ -11409,6 +12198,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q7-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, in (i), identifies centre or radius, or, in (ii), some correct substitution into the equation of the circle", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, in (i), identifies centre or radius, or, in (ii), some correct substitution into the equation of the circle","1 part correct ((i) or (ii))\nWork of merit in both parts","1 part correct and work of merit in the other part\nCircle k is used instead of s, otherwise correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[58],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q7-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q7-c-i.png",
@@ -11432,13 +12233,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q7-c-iii", topicId: "maths-2-3", conceptId: "iii-using-area-triangle",
+    id: "maths-2025-hl-p2-q7-c-iii", topicId: "maths-2-2", conceptId: "iii-using-area-triangle",
     section: "B", questionRef: "2025 HL Paper 2 Q7(c)(iii)",
     questionText: "(iii) By using C(7, 3) and D(7, −3), find the area of the triangle D, in km²",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p2-q7-c-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into the formula for the area of a triangle, or indicates a relevant translation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without unit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct substitution into the formula for the area of a triangle, or indicates a relevant translation","Fully substituted formula"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[58],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18,
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q7-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q7-c-iii.png",
@@ -11469,6 +12283,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q7-c-iv-r1", kind: "anyN", verbatim: "Work of merit, for example, identifies opposite or adjacent\nSome correct substitution in the formula, AA = 1/2 aaaa sin CC\nSome correct substitution in the cosine rule formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Apply a * for calculator in an incorrect mode; Apply a * for incorrect rounding. Note: Accept correct answer without unit. Note: Lengths indicated on the diagram are not awarded credit in this part. (They may be awarded credit in earlier parts.). Note: If an incorrect answer in (c)(iii) produces an invalid triangle, then correct work in this part will lead to a contradiction (s∠C > 1). This can be awarded High Partial Credit at most. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, identifies opposite or adjacent\nSome correct substitution in the formula, AA = 1/2 aaaa sin CC\nSome correct substitution in the cosine rule formula","Finds |∠C| (half of required angle)\n2 tan^−¹ ( 3/13)\nsin BB = 78/178\ncos ∠CCCCCC = 320/356"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[59],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18,
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q7-c-iv",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q7-c-iv.png",
@@ -11492,13 +12319,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q7-c-v", topicId: "maths-2-3", conceptId: "area-sector-circle-4837-correct-decimal",
+    id: "maths-2025-hl-p2-q7-c-v", topicId: "maths-3-4", conceptId: "area-sector-circle-4837-correct-decimal",
     section: "B", questionRef: "2025 HL Paper 2 Q7(c)(v)",
     questionText: "The area of the sector A of the circle k is 23∙4837 km², correct to 4 decimal places. The area of the triangle A is 21 km²",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p2-q7-c-v-r1", kind: "anyN", verbatim: "Fills in formula for sector C", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Note: Consider the solution as requiring 4 steps: Step 1. Fills in formula for sector C Step 2. Finds area of sector C Step 3. Finds one area (sector – triangle) or sums areas of sectors or sums areas of triangles Step 4. Finds required area. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Fills in formula for sector C","Finds area of sector C","Finds one area (sector – triangle)","Finds required area"],"perOptionSteps":[3,2,2,3]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[60],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18,
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q7-c-v",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q7-c-v.png",
@@ -11529,6 +12369,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q8-a-i-r1", kind: "anyN", verbatim: "Work of merit in one part, for example, correct substitution into Pythagoras’ Theorem or finds |O| without using Pythagoras", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit –1: Apply a * for incorrect or no unit in |O|. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in one part, for example, correct substitution into Pythagoras’ Theorem or finds |O| without using Pythagoras","1 part correct (|O| or |O|)\nWork of merit in both parts","1 part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[61],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q8-a-i.png",
@@ -11552,13 +12404,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q8-a-ii", topicId: "maths-2-3", conceptId: "triangular-face-size-correct-decimal-place",
+    id: "maths-2025-hl-p2-q8-a-ii", topicId: "maths-3-4", conceptId: "triangular-face-size-correct-decimal-place",
     section: "B", questionRef: "2025 HL Paper 2 Q8(a)(ii)",
     questionText: "(ii) On the triangular face PAB, the size of ∠PAB is 74·2°, correct to 1 decimal place. Using this, or otherwise, work out the total area of the four triangular faces of the roof. Give your answer correct to the nearest m².",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p2-q8-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, diagram drawn with at least 2 correct values filled in", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, diagram drawn with at least 2 correct values filled in","Finds area of 1 face\nOne error in finding area of 1 face, but finishes correctly\n4 × ( 1/2) (11)(11)(sin 31·6) or equivalent"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[61],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q8-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q8-a-ii.png",
@@ -11582,13 +12446,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q8-a-iii", topicId: "maths-2-3", conceptId: "iii-diagram-shows-part-scaled-diagram",
+    id: "maths-2025-hl-p2-q8-a-iii", topicId: "maths-2-1", conceptId: "iii-diagram-shows-part-scaled-diagram",
     section: "B", questionRef: "2025 HL Paper 2 Q8(a)(iii)",
     questionText: "(iii) The diagram below shows part of a scaled diagram of the net of this pyramid. The diagram shows the square base and two of the triangular sides. Construct the rest of the scaled diagram of the net of the pyramid. Show all construction lines clearly.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p2-q8-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, a sketch drawn of one triangle in the correct position", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit -1: Construction lines missing, otherwise correct. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, a sketch drawn of one triangle in the correct position","1 triangle constructed correctly (construction lines visible)"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[62],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q8-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q8-a-iii.png",
@@ -11619,6 +12496,18 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q8-b-r1", kind: "anyN", verbatim: "Work of merit, for example, opposite and adjacent identified on the diagram\nEither A or % Error calculated correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit-1: Calculator in an incorrect mode, otherwise correct; Incorrect or no rounding. Note: The % error may be calculated correctly based on an incorrect A. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, opposite and adjacent identified on the diagram\nEither A or % Error calculated correctly","A correct and work of merit in calculating % Error\n% Error correct and work of merit in calculating A\nAnswer not given as a percentage"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[62],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q8-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q8-b.png",
@@ -11649,6 +12538,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q8-c-i-r1", kind: "anyN", verbatim: "Finds angle opposite 10 m", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Full Credit -1: Calculator in an incorrect mode. Note: Consider the solution as consisting of 4 steps: Step 1. Finds angle opposite 10 m Step 2. Finds angle opposite x Step 3. Sine Rule fully substituted Step 4. Shows x = 25 ∙5. Note: If substitutions in Step 3 oversimplify the work, then Step 4 is not considered correct. Note: If x ≠ 25.5 in Step 4, then a statement stating that x ≠ 25.5 is required. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds angle opposite 10 m","Finds angle opposite x","Sine Rule fully substituted","Shows x = 25 ∙5"],"perOptionSteps":[3,2,2,3]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[63],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q8-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q8-c-i.png",
@@ -11679,6 +12581,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q8-c-ii-r1", kind: "anyN", verbatim: "Sets up equation in y [h−1∙25]", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 10. Full Credit -1: Incorrect or no rounding. Note: Accept correct answer without unit. Consider solution as consisting of 3 steps: Step 1. Sets up equation in y [h−1∙25] Step 2. Finds y Step 3. Finds h Step 3 is not considered correct, if no work is presented on Step 2. Marked in order: Step 1.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Sets up equation in y [h−1∙25]"]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[64],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q8-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q8-c-ii.png",
@@ -11709,6 +12624,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "maths-2025-hl-p2-q9-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, in (iii), one value correct; or in (iv), top or bottom line correct\n1 part correct\nWork of merit in both parts", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, in (iii), one value correct; or in (iv), top or bottom line correct\n1 part correct\nWork of merit in both parts","1 part correct and work of merit in the other"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[66],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q9-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q9-a-iii.png",
@@ -11732,13 +12660,67 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q9-c-i", topicId: "maths-1-2", conceptId: "how-many-different-combinations-people-can",
+    id: "maths-2025-hl-p2-q9-b", topicId: "maths-1-3", conceptId: "people-picked-random-people-ireland",
+    section: "B", questionRef: "2025 HL Paper 2 Q9(b)",
+    questionText: "5 people are picked at random from the people in Ireland. Assuming that 6·7% of people in Ireland have diabetes, work out the probability that 2 or more of these 5 people have diabetes.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-hl-p2-q9-b-solution-1", kind: "point", verbatim: "0·0392", marks: null, contextNote: "Read the original worked solution and marking notes. The Mathematics credit scale awards the response as a whole." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[66],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-HL-ask-p2-q9-b",
+          "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q9-b.png",
+          "srcHash": "2424af00e110f68eb873c0ae4a08bc5c",
+          "alt": "The question as printed on the paper — 5 people are picked at random from the people in Ireland. Assuming that 6∙7% of people in Ireland have diabetes, work out the probability that 2 or more of these 5 people have diabetes.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-HL-paper-p065-i1",
+          "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p065-i1.png",
+          "srcHash": "e96959b0bf6e295bf45bec252027b8e0",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q9(b), typeset as the State Examinations Commission set it. It reads: Method 1 P(not having diabetes) = 1 −0∙067 = 0 ∙933 P(0) = (5 0)(0∙933)⁵ = 0 ∙706981 … P(1) = (5 1)(0∙933)⁴(0∙067) = 0 ∙253846 … P(2 or more) = 1 −(0 ∙706981 … + 0 ∙253846 … ) = 1 −0 ∙960828 … = 0 ∙03917 … = 0 ∙0392 [4 D. P. ] Method 2 P(not having diabetes) = 1 −0∙067 = 0 ∙933 P(2) = (5 2)(0∙067)²(0∙933)³ P(3) = (5 3)(0∙067)³(0∙933)² P(4) = (5 4)(0∙067)⁴(0∙933) P(5) = (5 5)(0∙067)⁵ P(2) + P(3) + P(4) + P(5) = 0 ∙039",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-q9-c-i", topicId: "maths-1-1", conceptId: "how-many-different-combinations-people-can",
     section: "B", questionRef: "2025 HL Paper 2 Q9(c)(i)",
     questionText: "How many different combinations of 10 people can be picked to be in group A?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p2-q9-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, finds 20_P₁₀, 20! or 10!", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept ( ²⁰ 10 ), 20_P_P10 ÷ 10!, or 20!/10!10!. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, finds 20_P₁₀, 20! or 10!"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[67],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q9-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q9-c-i.png",
@@ -11762,13 +12744,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q9-c-ii", topicId: "maths-1-2", conceptId: "each-person-group-now-paired-person",
+    id: "maths-2025-hl-p2-q9-c-ii", topicId: "maths-1-1", conceptId: "each-person-group-now-paired-person",
     section: "B", questionRef: "2025 HL Paper 2 Q9(c)(ii)",
     questionText: "Each person in group A is now paired with a person in group B, making 10 pairs. How many different sets of 10 pairs can be made?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p2-q9-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, ( ²⁰ 10 ) , or relevant diagram\n( ¹⁰ 1 )", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept 10! or ( ²⁰ 10 )(10!). Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, ( ²⁰ 10 ) , or relevant diagram\n( ¹⁰ 1 )"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[67],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q9-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q9-c-ii.png",
@@ -11792,13 +12786,68 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q10-a-i", topicId: "maths-1-2", conceptId: "scaled-diagram-shows-distribution-scores-test",
+    id: "maths-2025-hl-p2-q9-d", topicId: "maths-1-1", conceptId: "different-clinical-trial-people-split-into",
+    section: "B", questionRef: "2025 HL Paper 2 Q9(d)",
+    questionText: "In a different clinical trial, 24 people are split into two groups, X and Y. 8 people are in group X and 16 people are in group Y. Each person in group X is paired with two people in group Y, so that everyone in group Y is in exactly one of these pairings. How many different sets of such pairings can be made? Give your answer in the form a × 10ⁿ where 1 ≤ a < 10, n ∈ ℕ, and a is correct to 3 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-q9-d-solution-1", kind: "point", verbatim: "8·173 × 10¹⁰", marks: null, contextNote: "Read the original worked solution and marking notes. The Mathematics credit scale awards the response as a whole." },
+    { id: "maths-2025-hl-p2-q9-d-solution-2", kind: "point", verbatim: "6·011 × 10¹⁶", marks: null, contextNote: "Read the original worked solution and marking notes. The Mathematics credit scale awards the response as a whole." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[68],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2025-HL-ask-p2-q9-d",
+          "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q9-d.png",
+          "srcHash": "72d0a0b35ebdd488af0c61dc4c4af9e3",
+          "alt": "The question as printed on the paper — In a different clinical trial, 24 people are split into two groups, X and Y. 8 people are in group X and 16 people are in group Y. Each person in group X is paired with two people in group Y, so that everyone in group Y",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-HL-paper-p067-i0",
+          "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p067-i0.png",
+          "srcHash": "31597e808362bb77a14f8255432b1a57",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q9(d), typeset as the State Examinations Commission set it. It reads: Accept a solution that counts one combination of people in X, or a solution that counts all possible combinations for the people in X. One combination: Method 1 (16 2 )(12 2 )(14 2 )… (² 2) = 8∙1729 … × 10¹⁰ = 8∙173 × 10¹⁰ [3 D.P.] Method 2 16!/28 = 8∙173 × 10¹⁰ [3 D.P.] Method 3 15 × 13 × 11 × … × 3 × 1 × (8!) = 8∙173 × 10¹⁰ [3 D.P.] All possible combinations: Method 1 (24 2 )(12 2 )(14 2 )… (² 8 )(16 2) = 6∙0109 … ",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-q10-a-i", topicId: "maths-1-3", conceptId: "scaled-diagram-shows-distribution-scores-test",
     section: "B", questionRef: "2025 HL Paper 2 Q10(a)(i)",
     questionText: "The scaled diagram below shows the distribution of scores on this test. Use the empirical rule to fill in the four missing values in the diagram",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p2-q10-a-i-r1", kind: "anyN", verbatim: "1 correct entry\nIdentifies 𝜇 or 𝜎", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["1 correct entry\nIdentifies 𝜇 or 𝜎","2 correct entries","3 correct entries"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[69],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-a-i.png",
@@ -11822,13 +12871,25 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q10-a-ii", topicId: "maths-1-2", conceptId: "normal-distribution-work-out-proportion-students",
+    id: "maths-2025-hl-p2-q10-a-ii", topicId: "maths-1-3", conceptId: "normal-distribution-work-out-proportion-students",
     section: "B", questionRef: "2025 HL Paper 2 Q10(a)(ii)",
     questionText: "Use the normal distribution to work out the proportion of students worldwide who would score above 420 on the test. Give your answer correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p2-q10-a-ii-r1", kind: "anyN", verbatim: "Finds z-score", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Consider solution as consisting of 3 steps: Step 1. Finds z-score Step 2. Find P(z < a) Step 3. Find required probability. Marked in order: Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Finds z-score","Find P(z < a)","Find required probability"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[69],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-a-ii.png",
@@ -11852,13 +12913,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q10-b", topicId: "maths-1-6", conceptId: "using-values-table-construct-confidence-interval",
+    id: "maths-2025-hl-p2-q10-b", topicId: "maths-1-7", conceptId: "using-values-table-construct-confidence-interval",
     section: "B", questionRef: "2025 HL Paper 2 Q10(b)",
     questionText: "Using values from the table, construct a 95% confidence interval for the population mean score of country X. Give each value correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p2-q10-b-r1", kind: "anyN", verbatim: "Finds ss/√nn", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Full Credit -1: 387 ± 2.8. Note: Two endpoints must be found for FC. Consider solution as consisting of 3 steps: Step 1. Finds ss/√nn ss/√nn Step 2. Finds 1∙96 × s/√n s/√n Step 3. 387 ± 1∙96 ( 66∙2/√2161) 66∙2/√2161) Step 4. Finds C.I. Marked in order: Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Finds ss/√nn","Finds 1∙96 × s/√n","387 ± 1∙96 ( 66∙2/√2161)","Finds C.I."],"perOptionSteps":[2,1,1,1]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[70],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27,
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-b.png",
@@ -11882,13 +12956,27 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q10-c-i", topicId: "maths-1-6", conceptId: "using-values-table-work-out-test",
+    id: "maths-2025-hl-p2-q10-c-i", topicId: "maths-1-7", conceptId: "using-values-table-work-out-test",
     section: "B", questionRef: "2025 HL Paper 2 Q10(c)(i), (ii)",
     questionText: "Using values from the table, work out the test statistic (z-score) of the sample mean for country Y for this test. Give your answer correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2025-hl-p2-q10-c-i-r1", kind: "anyN", verbatim: "zz = (403 − 400)/(70 ∙ 6)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Full Credit -1: If the context is not mentioned in conclusion. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["zz = (403 − 400)/(70 ∙ 6)","(70 ∙ 6)/√2724 (70 ∙ 6)/√2724","= 2∙217 …","= 2 ∙22 [2 D. P. ]","p-value:","P(z < 2∙22) = 0∙9868","p = 2(1 −0∙9868)","= 0.0264","Conclusion: the mean score for country Y is","significantly different to 400"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[70],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27,
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-c-i.png",
@@ -11912,13 +13000,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q10-d", topicId: "maths-1-2", conceptId: "country-all-students-have-pet-their",
+    id: "maths-2025-hl-p2-q10-d", topicId: "maths-1-4", conceptId: "country-all-students-have-pet-their",
     section: "B", questionRef: "2025 HL Paper 2 Q10(d)",
     questionText: "In country Z, 50% of all students have a pet in their home and 50% do not",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2025-hl-p2-q10-d-r1", kind: "anyN", verbatim: "Work of merit, for example, a general explanation of how to carry out stratified random sampling\n1 part correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit -1: Random selection not mentioned, otherwise correct. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, a general explanation of how to carry out stratified random sampling\n1 part correct"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[71],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q10-d",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-d.png",
@@ -11942,13 +13043,26 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p2-q10-e", topicId: "maths-1-2", conceptId: "one-questions-test-students-given-mark",
+    id: "maths-2025-hl-p2-q10-e", topicId: "maths-1-3", conceptId: "one-questions-test-students-given-mark",
     section: "B", questionRef: "2025 HL Paper 2 Q10(e)",
     questionText: "(e) For one of the questions on the test, students are given a mark of 0, 1, 2, or 3. The proportion receiving each mark is 0·19, p, 2r, and r, respectively, where p, r ∈ ℝ and p, r ≥ 0. A student is picked at random. The expected value of their mark will depend on p and r. Find the largest value that the expected value could be.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2025-hl-p2-q10-e-r1", kind: "anyN", verbatim: "Sets sum of probabilities = 1", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 15. Note: Consider solution as consisting of 4 steps: Step 1. Sets p = 0 Step 2. Sets sum of probabilities = 1 Step 3. Finds r Step 4. Finds E[X]. Marked in order: Step 2; Step 4.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Sets sum of probabilities = 1","Finds E[X]"],"perOptionSteps":[4,11]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[71],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27,
+                30
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q10-e",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-e.png",
@@ -11965,6 +13079,64 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-q2-a-ii", topicId: "maths-2-2", conceptId: "tangent-to-circle",
+    section: "A", questionRef: "2025 HL Paper 2 Q2(a)(ii)",
+    stem: "A circle s has the equation (x − 4)² + (y + 2)² = 45.",
+    questionText: "Find the equation of the tangent to s at the point (−2, −5). Write your answer in the form y = mx + c, where m, c ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-q2-a-ii-solution-1", kind: "point", verbatim: "y = −2x −9", marks: null },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[46],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-q9-a-i", topicId: "maths-1-2", conceptId: "diabetes-probability-tree",
+    section: "B", questionRef: "2025 HL Paper 2 Q9(a)(i), (ii)",
+    stem: "Assume that 6·7% of people in Ireland have diabetes. For a particular test for diabetes, each person tests either positive or negative. The probability that someone who has diabetes gets a correct positive result is 99%. However, the probability that someone who does not have diabetes gets an incorrect positive result is 7·8%.",
+    questionText: "One person is picked at random from the people in Ireland, and is tested for diabetes using this test. Use the information above to complete the tree diagram below, by: (i) writing the proportion associated with each branch of the tree diagram into the appropriate box and (ii) working out the probability for each outcome and writing it in the appropriate box in the final column. Some values are already filled in. They have been given correct to 4 decimal places, where relevant.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2025-hl-p2-q9-a-i-solution-1", kind: "point", verbatim: "0·99", marks: null },
+    { id: "maths-2025-hl-p2-q9-a-i-solution-2", kind: "point", verbatim: "0·01", marks: null },
+    { id: "maths-2025-hl-p2-q9-a-i-solution-3", kind: "point", verbatim: "0·933", marks: null },
+    { id: "maths-2025-hl-p2-q9-a-i-solution-4", kind: "point", verbatim: "0·922", marks: null },
+    { id: "maths-2025-hl-p2-q9-a-i-solution-5", kind: "point", verbatim: "0·0007", marks: null },
+    { id: "maths-2025-hl-p2-q9-a-i-solution-6", kind: "point", verbatim: "0·0728", marks: null },
+    { id: "maths-2025-hl-p2-q9-a-i-solution-7", kind: "point", verbatim: "0·8602", marks: null },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[65],"generalNotesPages":[39,40,41]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2025 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,
 ];
