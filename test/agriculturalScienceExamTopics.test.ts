@@ -158,7 +158,7 @@ describe('Agricultural Science exam-topic registry', () => {
 
   it('adds the previously untagged anchored papers without inflating translations', () => {
     expect(subjectAtlasStats('agricultural-science')).toMatchObject({
-      questions: 458 + 225,
+      questions: 458 + 306,
       topics: 36,
       yearMin: 2010,
       yearMax: 2026,

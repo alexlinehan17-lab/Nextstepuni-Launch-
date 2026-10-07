@@ -82,7 +82,7 @@ def reconcile():
             'shippedCardCount':len(shipped),'reviewedRoutesChecked':checked,
             'reviewedBatchIssues':issues,'papers':papers,
             'independentCensusEditionsOpen':pending,
-            'limitation':'2010 Higher/Ordinary and 2011 Higher English boundaries and all 217 corresponding Atlas bindings reconciled exactly, plus 217 translated bindings. Remaining sitting boundaries and independent Irish censuses remain open. This partial result cannot establish corpus completeness.'}
+            'limitation':'2010 and 2011 Higher/Ordinary English boundaries and all 298 corresponding Atlas bindings reconciled exactly, plus 217 translated bindings for 2010 and 2011 Higher. The 2011 Ordinary Irish comparison, remaining sitting boundaries and independent Irish censuses remain open. This partial result cannot establish corpus completeness.'}
 
 
 def main():

@@ -410,37 +410,41 @@
         "sha256": "3b7c1edf3a79a4862bf8fdb65d017c5b770c1b0d25c10df0bb8a22453280834f",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 81,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "e071cf9679a673b6",
           "page": 2,
           "cue": "Answer six",
           "context": "__________________________________________________________________________ Instructions  Answer six questions. Each question carries 20 marks.  Write your answers in the spaces provided.  Keep your answers short.  Write your examination number in the space provided on page 1. _________________________________________________",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One selects six independent 20-mark questions; all seven are retained."
         },
         {
           "id": "730586d08013e726",
           "page": 6,
           "cue": "any three",
           "context": "WO (180 marks) Instructions Write your answers to Section Two in your answer book. Answer any three questions. Each question carries 60 marks. Question 8. (a) Write a note on each of the following practices carried out in sheep production: (i) Tail docking (ii) Shearing (iii) Raddling a ram (iv) Dipping (v) Walking the flock th",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two selects three independent 60-mark questions; all six are retained."
         },
         {
           "id": "e778e922af95b4e0",
           "page": 7,
           "cue": "any three",
           "context": "y physical or chemical means. Weathering breaks rock into soil particles. Give details of any three ways in which rock can be weathered. (d) The diagram below shows a soil texture triangle. Soil Samples Sand % Silt % Clay % Soil A 10 35 55 Soil B 40 45 15 Soil C 60 25 15 Use the soil texture triangle to identify the textures of",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q10(c) asks for three weathering processes but prints no finite list. The scheme is an accepted-answer menu."
         },
         {
           "id": "d9bd22c89ac31be4",
           "page": 8,
           "cue": "any two",
           "context": "s (v) Harvesting – method and time (vi) Yield per hectare. (60 marks) Question 12. Answer any two parts of (a), (b), (c) and (d). (30 marks, 30 marks) (a) Draw a labelled diagram of the digestive system of a named monogastric animal. Describe an experiment to investigate the action of one named digestive enzyme. (b) Give a sc",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q12 selects two separately priced 30-mark parts. Each published internal task is retained; bundles of unrelated responses are not new practice identities."
         }
       ]
     },
@@ -459,7 +463,7 @@
         "sha256": "79f95dcf8bcf49c50251496711d020ebcfd4c40bfba83720089e27f28258a837",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 81,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

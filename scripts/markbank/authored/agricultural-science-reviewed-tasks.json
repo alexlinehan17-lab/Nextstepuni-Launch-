@@ -225,7 +225,88 @@
     "agsci-2011-hl-q9b",
     "agsci-2011-hl-q9c",
     "agsci-2011-hl-q9d",
-    "agsci-2011-hl-q9e"
+    "agsci-2011-hl-q9e",
+    "agsci-2011-ol-q1",
+    "agsci-2011-ol-q2",
+    "agsci-2011-ol-q3",
+    "agsci-2011-ol-q4",
+    "agsci-2011-ol-q5-bullock",
+    "agsci-2011-ol-q5-gilt",
+    "agsci-2011-ol-q5-draft-ewe",
+    "agsci-2011-ol-q5-broiler",
+    "agsci-2011-ol-q5-suckler-calf",
+    "agsci-2011-ol-q6a",
+    "agsci-2011-ol-q6b",
+    "agsci-2011-ol-q6c",
+    "agsci-2011-ol-q6d",
+    "agsci-2011-ol-q7a",
+    "agsci-2011-ol-q7b",
+    "agsci-2011-ol-q7c",
+    "agsci-2011-ol-q8ai",
+    "agsci-2011-ol-q8aii",
+    "agsci-2011-ol-q8aiii",
+    "agsci-2011-ol-q8aiv",
+    "agsci-2011-ol-q8av",
+    "agsci-2011-ol-q8bi",
+    "agsci-2011-ol-q8bii",
+    "agsci-2011-ol-q8biii",
+    "agsci-2011-ol-q8biv",
+    "agsci-2011-ol-q8bv",
+    "agsci-2011-ol-q9ai",
+    "agsci-2011-ol-q9aii",
+    "agsci-2011-ol-q9b-ley",
+    "agsci-2011-ol-q9b-establishment",
+    "agsci-2011-ol-q9b-heading-out",
+    "agsci-2011-ol-q9ci",
+    "agsci-2011-ol-q9cii",
+    "agsci-2011-ol-q9di",
+    "agsci-2011-ol-q9dii",
+    "agsci-2011-ol-q9diii",
+    "agsci-2011-ol-q10a",
+    "agsci-2011-ol-q10bi",
+    "agsci-2011-ol-q10bii",
+    "agsci-2011-ol-q10biii",
+    "agsci-2011-ol-q10c",
+    "agsci-2011-ol-q10d-a",
+    "agsci-2011-ol-q10d-b",
+    "agsci-2011-ol-q10d-c",
+    "agsci-2011-ol-q11ai",
+    "agsci-2011-ol-q11aii",
+    "agsci-2011-ol-q11aiii",
+    "agsci-2011-ol-q11b",
+    "agsci-2011-ol-q11ci",
+    "agsci-2011-ol-q11cii-date",
+    "agsci-2011-ol-q11cii-method",
+    "agsci-2011-ol-q11ciii",
+    "agsci-2011-ol-q11civ",
+    "agsci-2011-ol-q11cv-method",
+    "agsci-2011-ol-q11cv-time",
+    "agsci-2011-ol-q11cvi",
+    "agsci-2011-ol-q12a-system",
+    "agsci-2011-ol-q12a-enzyme",
+    "agsci-2011-ol-q12bi",
+    "agsci-2011-ol-q12bii",
+    "agsci-2011-ol-q12biii",
+    "agsci-2011-ol-q12biv",
+    "agsci-2011-ol-q12bv",
+    "agsci-2011-ol-q12ci",
+    "agsci-2011-ol-q12cii",
+    "agsci-2011-ol-q12ciii",
+    "agsci-2011-ol-q12di",
+    "agsci-2011-ol-q12dii",
+    "agsci-2011-ol-q12diii",
+    "agsci-2011-ol-q13ai",
+    "agsci-2011-ol-q13aii",
+    "agsci-2011-ol-q13aiii",
+    "agsci-2011-ol-q13b-f1",
+    "agsci-2011-ol-q13b-f2",
+    "agsci-2011-ol-q13ci",
+    "agsci-2011-ol-q13cii",
+    "agsci-2011-ol-q13ciii",
+    "agsci-2011-ol-q13di",
+    "agsci-2011-ol-q13dii",
+    "agsci-2011-ol-q13diii",
+    "agsci-2011-ol-q13div"
   ],
   "correctedCardIds": [
     "agsci-2025-ol-q8b"
@@ -17472,6 +17553,3672 @@
           "marksPerRoute": 12
         }
       ]
+    },
+    {
+      "questionRef": "2011 OL Q1",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.27,
+            1,
+            0.886
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.187,
+            1,
+            0.386
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q1": "1001"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q1"
+      ],
+      "marksPerRoute": 20,
+      "examTopicIds": [
+        "agricultural-science-ordinary-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q2",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.038,
+            1,
+            0.628
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.418,
+            1,
+            0.639
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q2": "1002"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q2"
+      ],
+      "marksPerRoute": 20,
+      "examTopicIds": [
+        "agricultural-science-ordinary-fertilisers-pollution-the-environment"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q3",
+      "paperPage": 3,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.646,
+            1,
+            0.955
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.671,
+            1,
+            0.925
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q3": "1003"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q3"
+      ],
+      "marksPerRoute": 20,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q4",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.038,
+            1,
+            0.479
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.08,
+            1,
+            0.492
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q4": "1004"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q4"
+      ],
+      "marksPerRoute": 20,
+      "examTopicIds": [
+        "agricultural-science-ordinary-classification-of-organisms",
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q5 — bullock",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.811
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.499,
+            1,
+            0.704
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q5-bullock": "1005"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q5-bullock"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q5 — gilt",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.811
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.499,
+            1,
+            0.704
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q5-gilt": "1006"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q5-gilt"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q5 — draft ewe",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.811
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.499,
+            1,
+            0.704
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q5-draft-ewe": "1007"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q5-draft-ewe"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q5 — broiler",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.811
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.499,
+            1,
+            0.704
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q5-broiler": "1008"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q5-broiler"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q5 — suckler calf",
+      "paperPage": 4,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.51,
+            1,
+            0.811
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.499,
+            1,
+            0.704
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q5-suckler-calf": "1009"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q5-suckler-calf"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q6(a)",
+      "paperPage": 5,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.57
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.109,
+            1,
+            0.153
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q6a": "1010"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q6a"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q6(b)",
+      "paperPage": 5,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.57
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.156,
+            1,
+            0.235
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q6b": "1011"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q6b"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q6(c)",
+      "paperPage": 5,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.57
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.237,
+            1,
+            0.263
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q6c": "1012"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q6c"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q6(d)",
+      "paperPage": 5,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.57
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.266,
+            1,
+            0.344
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q6d": "1013"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q6d"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q7(a)",
+      "paperPage": 5,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.591,
+            1,
+            0.692
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.391,
+            1,
+            0.464
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q7a": "1014"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q7a"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q7(b)",
+      "paperPage": 5,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.705,
+            1,
+            0.799
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.467,
+            1,
+            0.51
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q7b": "1015"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q7b"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science",
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q7(c)",
+      "paperPage": 5,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.82,
+            1,
+            0.85
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.513,
+            1,
+            0.54
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q7c": "1016"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q7c"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "schemeNote": "The 2011 scheme accepts “fungus” for potato blight. Phytophthora infestans is classified as an oomycete, a fungus-like organism. The historical wording and four-mark tariff are preserved.",
+      "scientificContext": {
+        "source": "https://www.apsnet.org/edcenter/Pages/IntroOomycetes.aspx",
+        "checkedAt": "2026-10-07",
+        "treatment": "Retain historical scheme and explain the scientific distinction."
+      }
+    },
+    {
+      "questionRef": "2011 OL Q8(a)(i)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.193,
+            1,
+            0.337
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.196,
+            1,
+            0.241
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q8ai": "1017"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q8ai"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q8(a)(ii)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.193,
+            1,
+            0.337
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.243,
+            1,
+            0.305
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q8aii": "1018"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q8aii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q8(a)(iii)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.193,
+            1,
+            0.337
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.307,
+            1,
+            0.369
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q8aiii": "1019"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q8aiii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q8(a)(iv)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.193,
+            1,
+            0.337
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.37,
+            1,
+            0.432
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q8aiv": "1020"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q8aiv"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q8(a)(v)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.193,
+            1,
+            0.337
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.434,
+            1,
+            0.496
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q8av": "1021"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q8av"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production",
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q8(b)(i)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.356,
+            1,
+            0.503
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.556,
+            1,
+            0.602
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q8bi": "1022"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q8bi"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q8(b)(ii)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.356,
+            1,
+            0.503
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.603,
+            1,
+            0.711
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q8bii": "1023"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q8bii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q8(b)(iii)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.356,
+            1,
+            0.503
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.603,
+            1,
+            0.711
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q8biii": "1024"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q8biii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q8(b)(iv)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.356,
+            1,
+            0.503
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.712,
+            1,
+            0.758
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q8biv": "1025"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q8biv"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q8(b)(v)",
+      "paperPage": 6,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.356,
+            1,
+            0.503
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.758,
+            1,
+            0.803
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q8bv": "1026"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q8bv"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q9(a)(i)",
+      "paperPage": 6,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.505,
+            1,
+            0.601
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.108,
+            1,
+            0.183
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q9ai": "1027"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q9ai"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q9(a)(ii)",
+      "paperPage": 6,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.537,
+            1,
+            0.601
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.184,
+            1,
+            0.229
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q9aii": "1028"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q9aii"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q9(b) — ley",
+      "paperPage": 6,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.604,
+            1,
+            0.659
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.26,
+            1,
+            0.346
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q9b-ley": "1029"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q9b-ley"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q9(b) — establishment",
+      "paperPage": 6,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.604,
+            1,
+            0.659
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.342,
+            1,
+            0.383
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q9b-establishment": "1030"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q9b-establishment"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q9(b) — heading out",
+      "paperPage": 6,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.604,
+            1,
+            0.659
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.379,
+            1,
+            0.443
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q9b-heading-out": "1031"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q9b-heading-out"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q9(c)(i)",
+      "paperPage": 6,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.669,
+            1,
+            0.765
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.467,
+            1,
+            0.553
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q9ci": "1032"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q9ci"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q9(c)(ii)",
+      "paperPage": 6,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.669,
+            1,
+            0.765
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.467,
+            1,
+            0.553
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q9cii": "1033"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q9cii"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q9(d)(i)",
+      "paperPage": 6,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.768,
+            1,
+            0.846
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.584,
+            1,
+            0.675
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q9di": "1034"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q9di"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "schemeNote": "The historical scheme describes dry matter as retained or assimilated. DMD measures the percentage of consumed dry matter digested by the animal; it is not the percentage ultimately retained as body tissue.",
+      "scientificContext": {
+        "source": "https://teagasc.ie/news--events/daily/taking-advantage-of-growth-rates/",
+        "checkedAt": "2026-10-07",
+        "treatment": "Retain historical scheme and explain the scientific distinction."
+      }
+    },
+    {
+      "questionRef": "2011 OL Q9(d)(ii)",
+      "paperPage": 6,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.768,
+            1,
+            0.846
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.677,
+            1,
+            0.704
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q9dii": "1035"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q9dii"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q9(d)(iii)",
+      "paperPage": 6,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.768,
+            1,
+            0.846
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.706,
+            1,
+            0.751
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q9diii": "1036"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q9diii"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q10(a)",
+      "paperPage": 7,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.038,
+            1,
+            0.287
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.079,
+            1,
+            0.26
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q10a": "1037"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q10a"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "answer-identification",
+        "reason": "All six numbered spaces have correct answers; permuting the word list is not a set of permitted examination routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q10(b)(i)",
+      "paperPage": 7,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.299,
+            1,
+            0.388
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.261,
+            1,
+            0.663
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q10bi": "1038"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q10bi"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "Rock class is required; the paper does not print a closed list of rock examples. Menus preserve matched scheme examples."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q10(b)(ii)",
+      "paperPage": 7,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.299,
+            1,
+            0.388
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.261,
+            1,
+            0.663
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q10bii": "1039"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q10bii"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "Rock class is required; the paper does not print a closed list of rock examples. Menus preserve matched scheme examples."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q10(b)(iii)",
+      "paperPage": 7,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.299,
+            1,
+            0.388
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.261,
+            1,
+            0.663
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q10biii": "1040"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q10biii"
+      ],
+      "marksPerRoute": 5,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "Rock class is required; the paper does not print a closed list of rock examples. Menus preserve matched scheme examples."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser.",
+      "schemeNote": "The historical scheme lists Kilkenny for marble. Kilkenny Black Marble is a commercial name for limestone, a sedimentary rock. Connemara marble is a suitable metamorphic example. The original scheme remains visible.",
+      "scientificContext": {
+        "source": "https://gsi.geodata.gov.ie/downloads/Geoheritage/Reports/KK007_Archersgrove_Quarry.pdf",
+        "checkedAt": "2026-10-07",
+        "treatment": "Retain historical scheme and explain the scientific distinction."
+      }
+    },
+    {
+      "questionRef": "2011 OL Q10(c)",
+      "paperPage": 7,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.398,
+            1,
+            0.437
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.677,
+            1,
+            0.785
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q10c": "1041"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q10c"
+      ],
+      "marksPerRoute": 9,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "No finite list of weathering methods is printed in the question."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q10(d) — soil A",
+      "paperPage": 7,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.447,
+            1,
+            0.939
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.787,
+            1,
+            0.888
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q10d-a": "1042"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q10d-a"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q10(d) — soil B",
+      "paperPage": 7,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.447,
+            1,
+            0.939
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.787,
+            1,
+            0.888
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q10d-b": "1043"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q10d-b"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q10(d) — soil C",
+      "paperPage": 7,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.447,
+            1,
+            0.939
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.787,
+            1,
+            0.888
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q10d-c": "1044"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q10d-c"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(a)(i)",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.038,
+            1,
+            0.145
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.079,
+            1,
+            0.137
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11ai": "1045"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11ai"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(a)(ii)",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.071,
+            1,
+            0.145
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.138,
+            1,
+            0.203
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11aii": "1046"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11aii"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases",
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(a)(iii)",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.071,
+            1,
+            0.145
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.2,
+            1,
+            0.254
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11aiii": "1047"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11aiii"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-diseases",
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(b)",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.151,
+            1,
+            0.183
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.255,
+            1,
+            0.581
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11b": "1048"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11b"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-ordinary-classification-of-organisms"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "A named insect is an open choice. The scheme’s two lifecycle types are accepted examples, not two finite examination routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(c)(i)",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.611,
+            1,
+            0.697
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.251,
+            1,
+            0.333
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11ci": "1049"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11ci"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(c)(ii) — date",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.611,
+            1,
+            0.638
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.699,
+            1,
+            0.755
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.25,
+            1,
+            0.277
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.335,
+            1,
+            0.356
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11cii-date": "1050"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11cii-date"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(c)(ii) — method",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.611,
+            1,
+            0.638
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.757,
+            1,
+            0.784
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.25,
+            1,
+            0.277
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.335,
+            1,
+            0.393
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11cii-method": "1051"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11cii-method"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(c)(iii)",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.611,
+            1,
+            0.638
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.786,
+            1,
+            0.862
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.25,
+            1,
+            0.277
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.395,
+            1,
+            0.453
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11ciii": "1052"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11ciii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(c)(iv)",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.611,
+            1,
+            0.638
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.864,
+            1,
+            0.909
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.25,
+            1,
+            0.277
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.457,
+            1,
+            0.514
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11civ": "1053"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11civ"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(c)(v) — method",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.611,
+            1,
+            0.638
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.079,
+            1,
+            0.107
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.25,
+            1,
+            0.277
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.517,
+            1,
+            0.575
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11cv-method": "1054"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11cv-method"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(c)(v) — time",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.611,
+            1,
+            0.638
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.109,
+            1,
+            0.168
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.25,
+            1,
+            0.277
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.577,
+            1,
+            0.635
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11cv-time": "1055"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11cv-time"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q11(c)(vi)",
+      "paperPage": 8,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.611,
+            1,
+            0.638
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.17,
+            1,
+            0.21
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.25,
+            1,
+            0.277
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.637,
+            1,
+            0.68
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q11cvi": "1056"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q11cvi"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "The paper permits open crop categories. Published barley and potato examples are matched marking menus on one task."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(a) — digestive system",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.448,
+            1,
+            0.493
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.108,
+            1,
+            0.137
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12a-system": "1057"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12a-system"
+      ],
+      "marksPerRoute": 15,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(a) — enzyme experiment",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.448,
+            1,
+            0.493
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.139,
+            1,
+            0.234
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12a-enzyme": "1058"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12a-enzyme"
+      ],
+      "marksPerRoute": 15,
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(b)(i)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.497,
+            1,
+            0.608
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.257,
+            1,
+            0.284
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12bi": "1059"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12bi"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(b)(ii)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.497,
+            1,
+            0.608
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.286,
+            1,
+            0.331
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12bii": "1060"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12bii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(b)(iii)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.497,
+            1,
+            0.608
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.331,
+            1,
+            0.391
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12biii": "1061"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12biii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-fertilisers-pollution-the-environment"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(b)(iv)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.497,
+            1,
+            0.608
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.391,
+            1,
+            0.436
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12biv": "1062"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12biv"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(b)(v)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.497,
+            1,
+            0.608
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.436,
+            1,
+            0.511
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12bv": "1063"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12bv"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-ordinary-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(c)(i)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.612,
+            1,
+            0.6827
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.511,
+            1,
+            0.572
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12ci": "1064"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12ci"
+      ],
+      "marksPerRoute": 9,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(c)(ii)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.612,
+            1,
+            0.6998
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.571,
+            1,
+            0.631
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12cii": "1065"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12cii"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-animal-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(c)(iii)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.612,
+            1,
+            0.6998
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.631,
+            1,
+            0.707
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12ciii": "1066"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12ciii"
+      ],
+      "marksPerRoute": 9,
+      "examTopicIds": [
+        "agricultural-science-ordinary-animal-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(d)(i)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.71,
+            1,
+            0.82
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.706,
+            1,
+            0.78
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12di": "1067"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12di"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-ordinary-classification-of-organisms"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(d)(ii)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.71,
+            1,
+            0.82
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.706,
+            1,
+            0.78
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12dii": "1068"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12dii"
+      ],
+      "marksPerRoute": 15,
+      "examTopicIds": [
+        "agricultural-science-ordinary-scientific-practices-experiments-investigations",
+        "agricultural-science-ordinary-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q12(d)(iii)",
+      "paperPage": 8,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.71,
+            1,
+            0.82
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.783,
+            1,
+            0.809
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q12diii": "1069"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q12diii"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-classification-of-organisms"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(a)(i)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.102
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.109,
+            1,
+            0.139
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13ai": "1070"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13ai"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(a)(ii)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.102
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.139,
+            1,
+            0.198
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13aii": "1071"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13aii"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(a)(iii)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.039,
+            1,
+            0.102
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.199,
+            1,
+            0.244
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13aiii": "1072"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13aiii"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(b) — F1",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.103,
+            1,
+            0.323
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.274,
+            1,
+            0.362
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13b-f1": "1073"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13b-f1"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(b) — F2",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.103,
+            1,
+            0.21
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.329,
+            1,
+            0.455
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.37,
+            1,
+            0.5
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13b-f2": "1074"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13b-f2"
+      ],
+      "marksPerRoute": 22,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(c)(i)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.103,
+            1,
+            0.21
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.463,
+            1,
+            0.574
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.53,
+            1,
+            0.663
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13ci": "1075"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13ci"
+      ],
+      "marksPerRoute": 2,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(c)(ii)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.103,
+            1,
+            0.21
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.463,
+            1,
+            0.574
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.53,
+            1,
+            0.663
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13cii": "1076"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13cii"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(c)(iii)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.103,
+            1,
+            0.21
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.463,
+            1,
+            0.574
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.53,
+            1,
+            0.663
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13ciii": "1077"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13ciii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(d)(i)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.578,
+            1,
+            0.942
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.695,
+            1,
+            0.815
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13di": "1078"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13di"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(d)(ii)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.578,
+            1,
+            0.942
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.695,
+            1,
+            0.815
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13dii": "1079"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13dii"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(d)(iii)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.578,
+            1,
+            0.942
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.695,
+            1,
+            0.815
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13diii": "1080"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13diii"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
+    },
+    {
+      "questionRef": "2011 OL Q13(d)(iv)",
+      "paperPage": 9,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.578,
+            1,
+            0.942
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.695,
+            1,
+            0.815
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2011-ol-q13div": "1081"
+      },
+      "cardIds": [
+        "agsci-2011-ol-q13div"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-ordinary-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives are marking menus, not finite printed choice routes."
+      },
+      "evidence": "All 12 paper and 16 scheme pages visually inspected. Task boundaries and tariffs transcribed from the original sources independently of the legacy parser."
     }
   ],
   "paperReviews": [
@@ -18332,6 +22079,161 @@
         "distinctSchemeCropSets": 53,
         "evidence": "All distinct paper/scheme pairs rendered and visually inspected. Shared tariff columns, heart labels and genetic symbols retained. Final heart and ratio crop corrections re-rendered and inspected."
       }
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "hashes": {
+        "exampapers": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+        "markingschemes": "3b7c1edf3a79a4862bf8fdb65d017c5b770c1b0d25c10df0bb8a22453280834f"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "selectionDirectives": [
+        {
+          "id": "e071cf9679a673b6",
+          "page": 2,
+          "cue": "Answer six",
+          "context": "__________________________________________________________________________ Instructions  Answer six questions. Each question carries 20 marks.  Write your answers in the spaces provided.  Keep your answers short.  Write your examination number in the space provided on page 1. _________________________________________________",
+          "classification": "exam-selection",
+          "reason": "Section One selects six independent 20-mark questions; all seven are retained."
+        },
+        {
+          "id": "730586d08013e726",
+          "page": 6,
+          "cue": "any three",
+          "context": "WO (180 marks) Instructions Write your answers to Section Two in your answer book. Answer any three questions. Each question carries 60 marks. Question 8. (a) Write a note on each of the following practices carried out in sheep production: (i) Tail docking (ii) Shearing (iii) Raddling a ram (iv) Dipping (v) Walking the flock th",
+          "classification": "exam-selection",
+          "reason": "Section Two selects three independent 60-mark questions; all six are retained."
+        },
+        {
+          "id": "e778e922af95b4e0",
+          "page": 7,
+          "cue": "any three",
+          "context": "y physical or chemical means. Weathering breaks rock into soil particles. Give details of any three ways in which rock can be weathered. (d) The diagram below shows a soil texture triangle. Soil Samples Sand % Silt % Clay % Soil A 10 35 55 Soil B 40 45 15 Soil C 60 25 15 Use the soil texture triangle to identify the textures of",
+          "classification": "open",
+          "reason": "Q10(c) asks for three weathering processes but prints no finite list. The scheme is an accepted-answer menu."
+        },
+        {
+          "id": "d9bd22c89ac31be4",
+          "page": 8,
+          "cue": "any two",
+          "context": "s (v) Harvesting – method and time (vi) Yield per hectare. (60 marks) Question 12. Answer any two parts of (a), (b), (c) and (d). (30 marks, 30 marks) (a) Draw a labelled diagram of the digestive system of a named monogastric animal. Describe an experiment to investigate the action of one named digestive enzyme. (b) Give a sc",
+          "classification": "independent-task-selection",
+          "reason": "Q12 selects two separately priced 30-mark parts. Each published internal task is retained; bundles of unrelated responses are not new practice identities."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 1,
+          "wording": "Six questions must be answered.",
+          "classification": "exam-selection",
+          "reason": "Cover repeats the six-of-seven Section One selection."
+        },
+        {
+          "page": 1,
+          "wording": "Three questions must be answered.",
+          "classification": "exam-selection",
+          "reason": "Cover repeats the three-of-six Section Two selection."
+        },
+        {
+          "page": 7,
+          "wording": "match the words from the list below",
+          "classification": "answer-identification",
+          "reason": "Q10(a) requires six correct matches in one paragraph, not arbitrary choices or permutations."
+        },
+        {
+          "page": 8,
+          "wording": "a cereal or a root crop",
+          "classification": "open",
+          "reason": "Q11(c) names open crop categories. Barley and potato are scheme examples, not a closed pool of named crops."
+        },
+        {
+          "page": 8,
+          "wording": "under the following headings:",
+          "classification": "required-headings",
+          "reason": "Q11(c) requires all headings. Date and method split only where the scheme prices them separately."
+        },
+        {
+          "page": 8,
+          "wording": "a named insect",
+          "classification": "open",
+          "reason": "Q11(b) permits any suitable named insect; the two scheme lifecycle types are marking examples."
+        },
+        {
+          "page": 8,
+          "wording": "one named digestive enzyme",
+          "classification": "open",
+          "reason": "Q12(a) permits a suitable digestive enzyme and matching experiment, not a finite list."
+        },
+        {
+          "page": 8,
+          "wording": "one named component",
+          "classification": "open",
+          "reason": "Q12(c)(ii) permits a suitable milk component and matching investigation, not a finite list."
+        }
+      ],
+      "sourceNotes": [
+        {
+          "questionN": "7",
+          "questionRef": "Q7(c)",
+          "note": "The 2011 scheme accepts “fungus” for potato blight. Phytophthora infestans is classified as an oomycete, a fungus-like organism. The historical wording and four-mark tariff are preserved.",
+          "source": "https://www.apsnet.org/edcenter/Pages/IntroOomycetes.aspx"
+        },
+        {
+          "questionN": "9",
+          "questionRef": "Q9(d)(i)",
+          "note": "The historical scheme describes dry matter as retained or assimilated. DMD measures the percentage of consumed dry matter digested by the animal; it is not the percentage ultimately retained as body tissue.",
+          "source": "https://teagasc.ie/news--events/daily/taking-advantage-of-growth-rates/"
+        },
+        {
+          "questionN": "10",
+          "questionRef": "Q10(b)(iii)",
+          "note": "The historical scheme lists Kilkenny for marble. Kilkenny Black Marble is a commercial name for limestone, a sedimentary rock. Connemara marble is a suitable metamorphic example. The original scheme remains visible.",
+          "source": "https://gsi.geodata.gov.ie/downloads/Geoheritage/Reports/KK007_Archersgrove_Quarry.pdf"
+        }
+      ],
+      "independentBoundaryReview": "All paper and scheme pages inspected. Four shared descending scales remain whole. Separately priced definitions, scenarios, crop headings and genetic-cross fields split without duplicating marks. No internal closed optional pool is printed.",
+      "cropVisualReview": "All 65 distinct paper/scheme crop pairs rendered and inspected. Clipped continuation lines, shared crop-name headings, genetic stems and the biodiversity crop corrected and re-rendered. All five original figure assets inspected.",
+      "remaining": [
+        "Irish edition comparison",
+        "Phone/desktop runtime review",
+        "Corpus-wide reconciliation"
+      ]
     }
   ]
 }

@@ -35,7 +35,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(65);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(64);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(1);
   });
 
@@ -249,8 +249,63 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(get('agsci-2010-ol-q3a').rows[0].group?.options).toEqual(['Friesian','Jersey','Simmental']);
   });
 
+  it('keeps 2011 Ordinary pooled tariffs whole and caps the two open dispersal answers', () => {
+    const year = ordinary.filter(card => card.year === 2011);
+    expect(year).toHaveLength(81);
+    const tariffs = [[7,7,2,1,1,1,1], [7,7,2,2,1,1], [7,7,2,2,2], [6,6,2,2,1,1,1,1]];
+    for (const [index, steps] of tariffs.entries()) {
+      const card = get(`agsci-2011-ol-q${index + 1}`);
+      expect(card.totalMarks).toBe(20);
+      expect(card.rows[0].group?.perOptionSteps).toEqual(steps);
+      let total = 0;
+      for (let n = 1; n <= steps.length; n++) {
+        total += steps[n - 1];
+        expect(marksClaimed(card, {}, { 'r-1': Array.from({ length:n }, (_,i) => i) })).toBe(total);
+      }
+    }
+    const bean = get('agsci-2011-ol-q1');
+    expect(bean.answerVariants).toHaveLength(6);
+    const pairs = bean.answerVariants!.map(variant => variant.rows[0].group!.options.slice(-2));
+    expect(new Set(pairs.map(pair => [...pair].sort().join('|'))).size).toBe(6);
+    for (const variant of bean.answerVariants!) {
+      expect(variant.rows[0].group?.options).toHaveLength(7);
+      expect(tariffReconciles({ ...bean, rows:variant.rows })).toBe(true);
+    }
+  });
+
+  it('preserves the 2011 barley asterisks without charging twice for repeated gametes or phenotypes', () => {
+    expect(get('agsci-2011-ol-q13b-f1').totalMarks).toBe(8);
+    const f2 = get('agsci-2011-ol-q13b-f2');
+    expect(f2.totalMarks).toBe(22);
+    const points = Object.fromEntries(f2.rows.filter(row => !row.group).map(row => [row.id,'yes' as const]));
+    const groups = Object.fromEntries(f2.rows.filter(row => row.group).map(row => [row.id,Array.from({length:row.group!.claimMax},(_,i)=>i)]));
+    expect(marksClaimed(f2, points, groups)).toBe(22);
+    expect(f2.rows[0].group?.options).toEqual(['Ss','Ss']);
+    expect(f2.rows[2].group?.options).toEqual(['SS','Ss','Ss','ss']);
+    expect(marksClaimed(f2, {}, { 'r-3':[1,2] })).toBe(4);
+    expect(f2.rows[0].contextNote).toContain('only one parent');
+    expect(['i','ii','iii'].map(part => get(`agsci-2011-ol-q13c${part}`).totalMarks)).toEqual([2,3,4]);
+  });
+
+  it('keeps open examples as marking menus and retains judgement-based experimental criteria', () => {
+    expect(get('agsci-2011-ol-q11b').answerVariants).toHaveLength(2);
+    expect(get('agsci-2011-ol-q11ciii').answerVariants?.map(variant => variant.id)).toEqual(['barley','potatoes']);
+    for (const [id, marks] of [['q12a-system',15],['q12a-enzyme',15],['q12cii',12]] as const) {
+      const card = get(`agsci-2011-ol-${id}`);
+      expect(card.totalMarks).toBe(marks);
+      expect(card.tariffModel.kind).toBe('questionTotal');
+      expect(card.rows.every(row => row.kind === 'criterion' && row.marks === null)).toBe(true);
+    }
+    for (const sample of ['a','b','c']) {
+      const card = get(`agsci-2011-ol-q10d-${sample}`);
+      expect(card.totalMarks).toBe(4);
+      expect(card.figure?.src).toContain('soil-triangle');
+      expect(card.stem).toContain('Soil C: 60%, 25%, 15%');
+    }
+  });
+
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(6);
+    expect(review.paperReviews).toHaveLength(7);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -323,7 +378,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(225);
+    expect(atlas.markBankCards).toHaveLength(306);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

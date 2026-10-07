@@ -1,7 +1,7 @@
 {
   "status": "in-progress",
-  "shippedCardCount": 1093,
-  "reviewedRoutesChecked": 217,
+  "shippedCardCount": 1174,
+  "reviewedRoutesChecked": 298,
   "reviewedBatchIssues": [],
   "papers": [
     {
@@ -25,6 +25,14 @@
       "level": "higher",
       "expectedRoutes": 70,
       "shippedRoutes": 70,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "expectedRoutes": 81,
+      "shippedRoutes": 81,
       "missing": [],
       "unmatched": []
     }
@@ -54,13 +62,6 @@
     {
       "year": 2011,
       "level": "ordinary",
-      "lang": "ev",
-      "paperFileid": "LC024GLP000EV.pdf",
-      "independentCensus": "open"
-    },
-    {
-      "year": 2011,
-      "level": "ordinary",
       "lang": "iv",
       "paperFileid": "LC024GLP000IV.pdf",
       "independentCensus": "open"
@@ -486,5 +487,5 @@
       "independentCensus": "open"
     }
   ],
-  "limitation": "2010 Higher/Ordinary and 2011 Higher English boundaries and all 217 corresponding Atlas bindings reconciled exactly, plus 217 translated bindings. Remaining sitting boundaries and independent Irish censuses remain open. This partial result cannot establish corpus completeness."
+  "limitation": "2010 and 2011 Higher/Ordinary English boundaries and all 298 corresponding Atlas bindings reconciled exactly, plus 217 translated bindings for 2010 and 2011 Higher. The 2011 Ordinary Irish comparison, remaining sitting boundaries and independent Irish censuses remain open. This partial result cannot establish corpus completeness."
 }

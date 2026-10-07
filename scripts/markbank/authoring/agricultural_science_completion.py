@@ -19,6 +19,7 @@ from agricultural_science_2010_parity import paper_reviews as irish_2010_reviews
 from agricultural_science_2010_irish_crops import attach_sources
 from agricultural_science_2011_hl import reviewed_tasks as reviewed_2011_hl, paper_review as higher_2011_review
 from agricultural_science_2011_irish import paper_review as irish_2011_review, attach_sources as attach_2011_sources
+from agricultural_science_2011_ol import reviewed_tasks as reviewed_2011_ol, paper_review as ordinary_2011_review
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -140,6 +141,10 @@ def reviewed_tasks():
     translated_2011_review = irish_2011_review()
     attach_2011_sources(reviews, translated_2011_review)
     paper_reviews.append(translated_2011_review)
+    ordinary_2011_cards, ordinary_2011_tasks = reviewed_2011_ol()
+    cards.extend(ordinary_2011_cards)
+    reviews.extend(ordinary_2011_tasks)
+    paper_reviews.append(ordinary_2011_review())
     for reviewed in cards:
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
                           'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':'2026-10-07'}

@@ -10721,4 +10721,2845 @@ export const CARDS: SecCard[] = [
     },
     labelKey: [{"letter":"L","meaning":"Spindle fibre","askedInThisQuestion":true},{"letter":"M","meaning":"Chromatid / chromosome","askedInThisQuestion":true}],
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-0"]), kind: "diagram",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q1", topicId: "agsci-3-1", conceptId: "bean-germination-and-dispersal",
+    section: "A", questionRef: "2011 OL Q1",
+    questionText: "(a) The diagram shows a germinating broad bean seed. Identify the parts labelled A and B. (b) List the three conditions necessary for seed germination. (c) State two ways in which plants disperse their seeds.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A: Plumule / B: Radicle / Suitable temperature or warmth / Water or moisture / Oxygen or air / Wind / water", marks: 20, contextNote: "Section One uses the published first-correct scale across the whole question. Surplus wrong answers cancel correct answers under the scheme’s general instructions; account for any such deduction when recording your mark. Claim no more than two distinct dispersal ways; a relevant description is accepted.", group: {"claimMax":7,"perOption":7,"options":["A: Plumule","B: Radicle","Suitable temperature or warmth","Water or moisture","Oxygen or air","Wind","water"],"perOptionSteps":[7,7,2,1,1,1,1]} },
+    ],
+    answerVariants: [
+          {
+                "id": "dispersal-1",
+                "label": "Wind + water",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "A: Plumule / B: Radicle / Suitable temperature or warmth / Water or moisture / Oxygen or air / Wind / water",
+                            "marks": 20,
+                            "contextNote": "Section One uses the published first-correct scale across the whole question. Surplus wrong answers cancel correct answers under the scheme’s general instructions; account for any such deduction when recording your mark. Select the pair of distinct dispersal ways you answered. Relevant descriptions are accepted; a germination condition and a dispersal method answer separate fields.",
+                            "group": {
+                                  "claimMax": 7,
+                                  "perOption": 7,
+                                  "options": [
+                                        "A: Plumule",
+                                        "B: Radicle",
+                                        "Suitable temperature or warmth",
+                                        "Water or moisture",
+                                        "Oxygen or air",
+                                        "Wind",
+                                        "water"
+                                  ],
+                                  "perOptionSteps": [
+                                        7,
+                                        7,
+                                        2,
+                                        1,
+                                        1,
+                                        1,
+                                        1
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "dispersal-2",
+                "label": "Wind + animal",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "A: Plumule / B: Radicle / Suitable temperature or warmth / Water or moisture / Oxygen or air / Wind / animal",
+                            "marks": 20,
+                            "contextNote": "Section One uses the published first-correct scale across the whole question. Surplus wrong answers cancel correct answers under the scheme’s general instructions; account for any such deduction when recording your mark. Select the pair of distinct dispersal ways you answered. Relevant descriptions are accepted; a germination condition and a dispersal method answer separate fields.",
+                            "group": {
+                                  "claimMax": 7,
+                                  "perOption": 7,
+                                  "options": [
+                                        "A: Plumule",
+                                        "B: Radicle",
+                                        "Suitable temperature or warmth",
+                                        "Water or moisture",
+                                        "Oxygen or air",
+                                        "Wind",
+                                        "animal"
+                                  ],
+                                  "perOptionSteps": [
+                                        7,
+                                        7,
+                                        2,
+                                        1,
+                                        1,
+                                        1,
+                                        1
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "dispersal-3",
+                "label": "Wind + self dispersal",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "A: Plumule / B: Radicle / Suitable temperature or warmth / Water or moisture / Oxygen or air / Wind / self dispersal",
+                            "marks": 20,
+                            "contextNote": "Section One uses the published first-correct scale across the whole question. Surplus wrong answers cancel correct answers under the scheme’s general instructions; account for any such deduction when recording your mark. Select the pair of distinct dispersal ways you answered. Relevant descriptions are accepted; a germination condition and a dispersal method answer separate fields.",
+                            "group": {
+                                  "claimMax": 7,
+                                  "perOption": 7,
+                                  "options": [
+                                        "A: Plumule",
+                                        "B: Radicle",
+                                        "Suitable temperature or warmth",
+                                        "Water or moisture",
+                                        "Oxygen or air",
+                                        "Wind",
+                                        "self dispersal"
+                                  ],
+                                  "perOptionSteps": [
+                                        7,
+                                        7,
+                                        2,
+                                        1,
+                                        1,
+                                        1,
+                                        1
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "dispersal-4",
+                "label": "water + animal",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "A: Plumule / B: Radicle / Suitable temperature or warmth / Water or moisture / Oxygen or air / water / animal",
+                            "marks": 20,
+                            "contextNote": "Section One uses the published first-correct scale across the whole question. Surplus wrong answers cancel correct answers under the scheme’s general instructions; account for any such deduction when recording your mark. Select the pair of distinct dispersal ways you answered. Relevant descriptions are accepted; a germination condition and a dispersal method answer separate fields.",
+                            "group": {
+                                  "claimMax": 7,
+                                  "perOption": 7,
+                                  "options": [
+                                        "A: Plumule",
+                                        "B: Radicle",
+                                        "Suitable temperature or warmth",
+                                        "Water or moisture",
+                                        "Oxygen or air",
+                                        "water",
+                                        "animal"
+                                  ],
+                                  "perOptionSteps": [
+                                        7,
+                                        7,
+                                        2,
+                                        1,
+                                        1,
+                                        1,
+                                        1
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "dispersal-5",
+                "label": "water + self dispersal",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "A: Plumule / B: Radicle / Suitable temperature or warmth / Water or moisture / Oxygen or air / water / self dispersal",
+                            "marks": 20,
+                            "contextNote": "Section One uses the published first-correct scale across the whole question. Surplus wrong answers cancel correct answers under the scheme’s general instructions; account for any such deduction when recording your mark. Select the pair of distinct dispersal ways you answered. Relevant descriptions are accepted; a germination condition and a dispersal method answer separate fields.",
+                            "group": {
+                                  "claimMax": 7,
+                                  "perOption": 7,
+                                  "options": [
+                                        "A: Plumule",
+                                        "B: Radicle",
+                                        "Suitable temperature or warmth",
+                                        "Water or moisture",
+                                        "Oxygen or air",
+                                        "water",
+                                        "self dispersal"
+                                  ],
+                                  "perOptionSteps": [
+                                        7,
+                                        7,
+                                        2,
+                                        1,
+                                        1,
+                                        1,
+                                        1
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "dispersal-6",
+                "label": "animal + self dispersal",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "A: Plumule / B: Radicle / Suitable temperature or warmth / Water or moisture / Oxygen or air / animal / self dispersal",
+                            "marks": 20,
+                            "contextNote": "Section One uses the published first-correct scale across the whole question. Surplus wrong answers cancel correct answers under the scheme’s general instructions; account for any such deduction when recording your mark. Select the pair of distinct dispersal ways you answered. Relevant descriptions are accepted; a germination condition and a dispersal method answer separate fields.",
+                            "group": {
+                                  "claimMax": 7,
+                                  "perOption": 7,
+                                  "options": [
+                                        "A: Plumule",
+                                        "B: Radicle",
+                                        "Suitable temperature or warmth",
+                                        "Water or moisture",
+                                        "Oxygen or air",
+                                        "animal",
+                                        "self dispersal"
+                                  ],
+                                  "perOptionSteps": [
+                                        7,
+                                        7,
+                                        2,
+                                        1,
+                                        1,
+                                        1,
+                                        1
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+    figure: {
+          "candId": "agsci-2011-ol-paper-bean",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-bean.png",
+          "srcHash": "a8e1d5d6baaec1a6d7fe1d73812ab090",
+          "alt": "Original germinating broad-bean seed diagram with labels A and B and both leader lines.",
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Plumule","askedInThisQuestion":true},{"letter":"B","meaning":"Radicle","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q2", topicId: "agsci-2-3", conceptId: "compound-fertiliser-and-manure",
+    section: "A", questionRef: "2011 OL Q2",
+    stem: "The illustrated compound fertilizer is 16-4-8.",
+    questionText: "(a) State one difference between a compound fertilizer and manure. In your answer mention one point about each. (b) The photograph shows a bag of compound fertilizer. The numbers on the front represent the major elements in the fertilizer. Name these three elements. (c) Other than the fertilizer shown, name another fertilizer used in agriculture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Manure: plant waste / animal waste / organic material / improves soil structure / Fertilizer: artificial material / manmade / inorganic material / does not improve soil structure / Nitrogen / Phosphorus / Potassium / 10:10:20 / 18:6:12 / CAN / Urea / Ground Rock Phosphate / Sulphate of Ammonia / any other fertilizer", marks: 20, contextNote: "Section One uses the published first-correct scale across the whole question. Surplus wrong answers cancel correct answers under the scheme’s general instructions; account for any such deduction when recording your mark. N, P and K may be given in any order; each appears at most once.", group: {"claimMax":6,"perOption":7,"options":["Manure: plant waste / animal waste / organic material / improves soil structure","Fertilizer: artificial material / manmade / inorganic material / does not improve soil structure","Nitrogen","Phosphorus","Potassium","10:10:20 / 18:6:12 / CAN / Urea / Ground Rock Phosphate / Sulphate of Ammonia / any other fertilizer"],"perOptionSteps":[7,7,2,2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+    figure: {
+          "candId": "agsci-2011-ol-paper-fertiliser",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-fertiliser.png",
+          "srcHash": "f56d46c0a0b36ac9628e959270d642d7",
+          "alt": "Original photograph of a compound fertilizer bag marked 16-4-8.",
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-0"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q3", topicId: "agsci-4-1", conceptId: "mammalian-body-part-locations",
+    section: "A", questionRef: "2011 OL Q3",
+    questionText: "State the location of each of the following in the body of a mammal: (i) Left ventricle, (ii) Femur, (iii) Bronchiole, (iv) Testis, (v) Cerebrum. The completed example is villi: small intestine.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Left ventricle: Heart / Femur: Thigh or (hind) leg / Bronchiole: Lung / Testis: Scrotum / Cerebrum: Brain or head or skull", marks: 20, contextNote: "Section One uses the published first-correct scale across the whole question. Surplus wrong answers cancel correct answers under the scheme’s general instructions; account for any such deduction when recording your mark. The completed villi example earns no marks.", group: {"claimMax":5,"perOption":7,"options":["Left ventricle: Heart","Femur: Thigh or (hind) leg","Bronchiole: Lung","Testis: Scrotum","Cerebrum: Brain or head or skull"],"perOptionSteps":[7,7,2,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-1"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q4", topicId: "agsci-4-2", additionalTopicIds: ["agsci-4-3-3"], conceptId: "liverfluke-and-snail-classification",
+    section: "A", questionRef: "2011 OL Q4",
+    questionText: "Complete the table in relation to the organisms shown in the photographs. For each organism give (i) its name, (ii) its phylum, (iii) one characteristic of a member of the phylum, and (iv) its importance in agriculture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Liverfluke / fluke / Fasciola (hepatica) / Snail / mudsnail / watersnail / garden snail / Lymnaea / Platyhelminthes / Mollusca / Triploblastic / bilaterally symmetrical / hermaphrodite / dorsoventrally flattened or flat bodied [Accept characteristic(s) of liverfluke if given e.g. cuticle / (oral) sucker] / Shell / radula / muscular foot / soft bodied / produces slime / (Internal) parasite of cattle (and sheep) / unsaleable livers / reduced weight gains / depressed milk yields / loss of wool / weight loss / Host of liverfluke / eats or causes damage to plant (foliage)", marks: 20, contextNote: "Section One uses the published first-correct scale across the whole question. Surplus wrong answers cancel correct answers under the scheme’s general instructions; account for any such deduction when recording your mark. Options follow the table in pairs: left/right organism names, left/right phyla, left/right characteristics, left/right agricultural importance. Claim one answer per field; alternatives within a field cannot earn additional awards.", group: {"claimMax":8,"perOption":6,"options":["Liverfluke / fluke / Fasciola (hepatica)","Snail / mudsnail / watersnail / garden snail / Lymnaea","Platyhelminthes","Mollusca","Triploblastic / bilaterally symmetrical / hermaphrodite / dorsoventrally flattened or flat bodied [Accept characteristic(s) of liverfluke if given e.g. cuticle / (oral) sucker]","Shell / radula / muscular foot / soft bodied / produces slime","(Internal) parasite of cattle (and sheep) / unsaleable livers / reduced weight gains / depressed milk yields / loss of wool / weight loss","Host of liverfluke / eats or causes damage to plant (foliage)"],"perOptionSteps":[6,6,2,2,1,1,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+    figure: {
+          "candId": "agsci-2011-ol-paper-organisms",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-organisms.png",
+          "srcHash": "0386441da253995a35785585a281b01b",
+          "alt": "Original two photographs from Question 4, preserving the left and right organisms in their printed order.",
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q5-bullock", topicId: "agsci-4-3-1", conceptId: "livestock-term-bullock",
+    section: "A", questionRef: "2011 OL Q5 — bullock",
+    questionText: "Give a definition for the following term used in animal production: Bullock (or steer).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A male calf that has been castrated", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q5 — bullock",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q5-gilt", topicId: "agsci-4-3-1", conceptId: "livestock-term-gilt",
+    section: "A", questionRef: "2011 OL Q5 — gilt",
+    questionText: "Give a definition for the following term used in animal production: Gilt.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A female pig that has not had a litter", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q5 — gilt",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q5-draft-ewe", topicId: "agsci-4-3-1", conceptId: "livestock-term-draft-ewe",
+    section: "A", questionRef: "2011 OL Q5 — draft ewe",
+    questionText: "Give a definition for the following term used in animal production: Draft or cast ewe.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A ewe that is culled from the flock and sold", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q5 — draft ewe",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q5-broiler", topicId: "agsci-4-3-1", conceptId: "livestock-term-broiler",
+    section: "A", questionRef: "2011 OL Q5 — broiler",
+    questionText: "Give a definition for the following term used in animal production: Broiler.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A chicken that is reared for slaughter or reared for meat", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q5 — broiler",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q5-suckler-calf", topicId: "agsci-4-3-1", conceptId: "livestock-term-suckler-calf",
+    section: "A", questionRef: "2011 OL Q5 — suckler calf",
+    questionText: "Give a definition for the following term used in animal production: Suckler calf.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A calf (in the beef herd) that sucks milk from its mother", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q5 — suckler calf",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-4"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q6a", topicId: "agsci-3-3-2", conceptId: "tillage-practice-a",
+    section: "A", questionRef: "2011 OL Q6(a)",
+    questionText: "Give a scientific explanation for the following practice carried out on tillage farms: Crop rotation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prevents pests / prevents diseases / more balanced uptake of nutrients / weed control / improves organic matter content in soil", marks: 5, contextNote: "Any one point." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q6(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q6b", topicId: "agsci-3-3-1", conceptId: "tillage-practice-b",
+    section: "A", questionRef: "2011 OL Q6(b)",
+    questionText: "Give a scientific explanation for the following practice carried out on tillage farms: Sowing certified seed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "high percentage purity / high germination rate / lower disease risk / potentially lower seeding rates / no weeds or wild oat / doesn’t have to be dressed / traceability / virus free potato seed / access to new varieties / tubers are graded for size / higher yields / treated for diseases", marks: 5, contextNote: "Any one point." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q6(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-4"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q6c", topicId: "agsci-3-3-2", conceptId: "tillage-practice-c",
+    section: "A", questionRef: "2011 OL Q6(c)",
+    questionText: "Give a scientific explanation for the following practice carried out on tillage farms: Applying selective herbicide.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "removal of weeds without killing crop", marks: 5, contextNote: "Any one point." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q6(c)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q6d", topicId: "agsci-3-3-1", conceptId: "tillage-practice-d",
+    section: "A", questionRef: "2011 OL Q6(d)",
+    questionText: "Give a scientific explanation for the following practice carried out on tillage farms: Planting winter varieties of cereals.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Survive winter frosts / longer growing season / greater yield capacity / earlier harvesting / lessens labour load in spring on mixed farms / allows earlier sowing of catch crops on mixed farms / better weather at sowing time / better weather at harvest time", marks: 5, contextNote: "Any one point." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q6(d)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q7a", topicId: "agsci-4-3-3", conceptId: "bacterial-livestock-diseases",
+    section: "A", questionRef: "2011 OL Q7(a)",
+    questionText: "Name two diseases of livestock that are caused by bacteria.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "TB / pneumonia / mastitis / brucellosis / scour / navel-ill / Clostridial disease(s) or named clostridial disease e.g. blackleg / footrot / farrowing fever / any other disease", marks: 8, contextNote: "Two distinct bacterial diseases; the generic scheme names refer to bacterial forms.", group: {"claimMax":2,"perOption":4,"options":["TB","pneumonia","mastitis","brucellosis","scour","navel-ill","Clostridial disease(s) or named clostridial disease e.g. blackleg","footrot","farrowing fever","any other disease"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q7(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-4","agricultural-science-2-5","agricultural-science-3-0"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q7b", topicId: "agsci-2-2-3", additionalTopicIds: ["agsci-3-3-3","agsci-4-1"], conceptId: "beneficial-agricultural-bacteria",
+    section: "A", questionRef: "2011 OL Q7(b)",
+    questionText: "Give two benefits of bacteria in agriculture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Silage production / production of dairy products (cheese, yoghurt) / digestion in ruminant / nitrogen fixation / breakdown of organic material in soil / any other benefits", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Silage production","production of dairy products (cheese, yoghurt)","digestion in ruminant","nitrogen fixation","breakdown of organic material in soil","any other benefits"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q7(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-4"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q7c", topicId: "agsci-3-3-2", conceptId: "potato-blight-pathogen",
+    section: "A", questionRef: "2011 OL Q7(c)",
+    questionText: "Which type of organism is the cause of potato blight?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fungus / Phytophthora infestans / parasite", marks: 4, contextNote: "The 2011 scheme accepts “fungus” for potato blight. Phytophthora infestans is classified as an oomycete, a fungus-like organism. The historical wording and four-mark tariff are preserved." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q7(c)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q8ai", topicId: "agsci-4-3-3", conceptId: "sheep-management-i",
+    section: "B", questionRef: "2011 OL Q8(a)(i)",
+    questionText: "Write a note on the following practice carried out in sheep production: Tail docking.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "removal of tails in new born lambs / use of ring or knife / reduces risk of maggot infestation or flystrike / facilitates mating / keeps fleece clean", marks: 6, contextNote: "Two distinct points from the 2011 scheme. Synonymous descriptions of the same benefit count once.", group: {"claimMax":2,"perOption":3,"options":["removal of tails in new born lambs","use of ring or knife","reduces risk of maggot infestation or flystrike","facilitates mating","keeps fleece clean"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q8(a)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q8aii", topicId: "agsci-4-3-3", conceptId: "sheep-management-ii",
+    section: "B", questionRef: "2011 OL Q8(a)(ii)",
+    questionText: "Write a note on the following practice carried out in sheep production: Shearing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Removal of fleece or wool from sheep / keeps sheep cool in summer / sale of wool / reduced risk of maggots or flystrike / increase mobility of sheep / more space at housing / heavier lambs", marks: 6, contextNote: "Two distinct points from the 2011 scheme. Synonymous descriptions of the same benefit count once.", group: {"claimMax":2,"perOption":3,"options":["Removal of fleece or wool from sheep","keeps sheep cool in summer","sale of wool","reduced risk of maggots or flystrike","increase mobility of sheep","more space at housing","heavier lambs"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q8(a)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q8aiii", topicId: "agsci-4-3-3", conceptId: "sheep-management-iii",
+    section: "B", questionRef: "2011 OL Q8(a)(iii)",
+    questionText: "Write a note on the following practice carried out in sheep production: Raddling a ram.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Raddle (harness) attached to ram’s chest / raddle contains dye / dye left on ewe’s wool when mounted by ram / shows which ewes have been served by ram / changed every 14 days / shows repeats / shows ram infertility / allows lambing dates to be predicted", marks: 6, contextNote: "Two distinct points from the 2011 scheme. Synonymous descriptions of the same benefit count once.", group: {"claimMax":2,"perOption":3,"options":["Raddle (harness) attached to ram’s chest","raddle contains dye","dye left on ewe’s wool when mounted by ram","shows which ewes have been served by ram","changed every 14 days","shows repeats","shows ram infertility","allows lambing dates to be predicted"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q8(a)(iii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q8aiv", topicId: "agsci-4-3-3", conceptId: "sheep-management-iv",
+    section: "B", questionRef: "2011 OL Q8(a)(iv)",
+    questionText: "Write a note on the following practice carried out in sheep production: Dipping.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Sheep immersed in tank containing insecticide / Summer dip insecticide prevents flystrike / Winter dip prevents infection by parasites / 7-14 weeks protection / immerse sheep for 1 minute", marks: 6, contextNote: "Two distinct points from the 2011 scheme. Synonymous descriptions of the same benefit count once.", group: {"claimMax":2,"perOption":3,"options":["Sheep immersed in tank containing insecticide","Summer dip insecticide prevents flystrike","Winter dip prevents infection by parasites","7-14 weeks protection","immerse sheep for 1 minute"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q8(a)(iv)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q8av", topicId: "agsci-4-3-3", conceptId: "sheep-management-v",
+    section: "B", questionRef: "2011 OL Q8(a)(v)",
+    questionText: "Write a note on the following practice carried out in sheep production: Walking the flock through a footbath.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "prevents bacterial infection / foot rot / prevents spread of foot and mouth disease / solution of copper sulphate or formalin or zinc sulphate / repeated throughout year if necessary / carried out after feet are pared", marks: 6, contextNote: "Two distinct points from the 2011 scheme. Synonymous descriptions of the same benefit count once.", group: {"claimMax":2,"perOption":3,"options":["prevents bacterial infection","foot rot","prevents spread of foot and mouth disease","solution of copper sulphate or formalin or zinc sulphate","repeated throughout year if necessary","carried out after feet are pared"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q8(a)(v)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q8bi", topicId: "agsci-4-3-1", conceptId: "livestock-equipment-i",
+    section: "B", questionRef: "2011 OL Q8(b)(i)",
+    questionText: "Several pieces of equipment and housing units are used to ensure good farm management. Explain the use of the following on farms involved in livestock production: Isolation pen.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Housing sick animals / disease can be treated / prevent spread of disease to other animals / used to house bulls / important if buying in animals", marks: 6, contextNote: "Two distinct points; expand a description where required by the scheme.", group: {"claimMax":2,"perOption":3,"options":["Housing sick animals","disease can be treated","prevent spread of disease to other animals","used to house bulls","important if buying in animals"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q8(b)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q8bii", topicId: "agsci-4-3-1", conceptId: "livestock-equipment-ii",
+    section: "B", questionRef: "2011 OL Q8(b)(ii)",
+    questionText: "Several pieces of equipment and housing units are used to ensure good farm management. Explain the use of the following on farms involved in livestock production: Infrared lamp.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Keeps new born lambs or piglets (bonhams) warm / located in lambing pen or farrowing crate / used to treat lambs suffering from chill / temperature of 27°C - 30°C", marks: 6, contextNote: "Two distinct points; expand a description where required by the scheme.", group: {"claimMax":2,"perOption":3,"options":["Keeps new born lambs or piglets (bonhams) warm","located in lambing pen or farrowing crate","used to treat lambs suffering from chill","temperature of 27°C - 30°C"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q8(b)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q8biii", topicId: "agsci-4-3-1", conceptId: "livestock-equipment-iii",
+    section: "B", questionRef: "2011 OL Q8(b)(iii)",
+    questionText: "Several pieces of equipment and housing units are used to ensure good farm management. Explain the use of the following on farms involved in livestock production: Creep feeder.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Allows lambs or calves to feed but prevents older animals from feeding / creep feeder described / lamb or calf gets used to eating solid food / higher weight gains / higher weights at weaning", marks: 6, contextNote: "Two distinct points; expand a description where required by the scheme.", group: {"claimMax":2,"perOption":3,"options":["Allows lambs or calves to feed but prevents older animals from feeding","creep feeder described","lamb or calf gets used to eating solid food","higher weight gains","higher weights at weaning"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q8(b)(iii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q8biv", topicId: "agsci-4-3-1", conceptId: "livestock-equipment-iv",
+    section: "B", questionRef: "2011 OL Q8(b)(iv)",
+    questionText: "Several pieces of equipment and housing units are used to ensure good farm management. Explain the use of the following on farms involved in livestock production: Crush.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Pen for holding livestock / restricts movement of animal / treated or examined by farmer or vet / prevents injury to animal or farmer / used at calving time", marks: 6, contextNote: "Two distinct points; expand a description where required by the scheme.", group: {"claimMax":2,"perOption":3,"options":["Pen for holding livestock","restricts movement of animal","treated or examined by farmer or vet","prevents injury to animal or farmer","used at calving time"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q8(b)(iv)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q8bv", topicId: "agsci-4-3-1", conceptId: "livestock-equipment-v",
+    section: "B", questionRef: "2011 OL Q8(b)(v)",
+    questionText: "Several pieces of equipment and housing units are used to ensure good farm management. Explain the use of the following on farms involved in livestock production: Farrowing crate.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Located in farrowing house / 20°C / sow gives birth to bonhams / crate allows bonhams to suck without being crushed", marks: 6, contextNote: "Two distinct points; expand a description where required by the scheme.", group: {"claimMax":2,"perOption":3,"options":["Located in farrowing house","20°C","sow gives birth to bonhams","crate allows bonhams to suck without being crushed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q8(b)(v)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q9ai", topicId: "agsci-3-3-2", conceptId: "clover-seed-mixture-benefits",
+    section: "B", questionRef: "2011 OL Q9(a)(i)",
+    stem: "Clover and perennial ryegrass are often used in seed mixtures for grazing.",
+    questionText: "State three advantages of using clover in seed mixtures.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Nitrogen fixation / rich in protein / weed control / palatable / high productivity / cheaper than fertilizer / reduced need for N fertilizer / rich in minerals", marks: 10, group: {"claimMax":3,"perOption":4,"options":["Nitrogen fixation","rich in protein","weed control","palatable","high productivity","cheaper than fertilizer","reduced need for N fertilizer","rich in minerals"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q9(a)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q9aii", topicId: "agsci-3-3-2", conceptId: "perennial-ryegrass-benefits",
+    section: "B", questionRef: "2011 OL Q9(a)(ii)",
+    stem: "Clover and perennial ryegrass are often used in seed mixtures for grazing.",
+    questionText: "Give two reasons why perennial ryegrass is considered to be a superior grass.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "More palatable / higher yield or more productive / high DMD or high digestibility / persistent / aggressive", marks: 10, group: {"claimMax":2,"perOption":5,"options":["More palatable","higher yield or more productive","high DMD or high digestibility","persistent","aggressive"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q9(a)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q9b-ley", topicId: "agsci-3-3-2", conceptId: "grassland-term-ley",
+    section: "B", questionRef: "2011 OL Q9(b) — ley",
+    stem: "Farmers often sow a mixture of seed varieties in their leys. The seeds germinate and undergo establishment even though the varieties have different heading out dates.",
+    questionText: "Explain the underlined term: Ley.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Grassland sown by farmer / high production level / usually only one or two grasses present or fewer weeds / temporary grassland / grassland that is used as part of a rotation system or used as a “grass break”", marks: 5, contextNote: "Any one point." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q9(b) — ley",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q9b-establishment", topicId: "agsci-3-1", conceptId: "grassland-term-establishment",
+    section: "B", questionRef: "2011 OL Q9(b) — establishment",
+    stem: "Farmers often sow a mixture of seed varieties in their leys. The seeds germinate and undergo establishment even though the varieties have different heading out dates.",
+    questionText: "Explain the underlined term: Establishment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Becoming a totally independent plant / plants form a thick sward / grass tillers / new plant puts down roots / new plant begins to photosynthesise", marks: 5, contextNote: "Any one point." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q9(b) — establishment",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q9b-heading-out", topicId: "agsci-3-1", conceptId: "grassland-term-heading-out",
+    section: "B", questionRef: "2011 OL Q9(b) — heading out",
+    stem: "Farmers often sow a mixture of seed varieties in their leys. The seeds germinate and undergo establishment even though the varieties have different heading out dates.",
+    questionText: "Explain the underlined term: Heading out.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Stage when grass flowers / stage when 50% of grass plants begin to show their seed heads / carbohydrates begin to turn to fibre / stage of growth that is ideal for cutting for silage", marks: 5, contextNote: "Any one point." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q9(b) — heading out",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-3","agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q9ci", topicId: "agsci-3-3-1", conceptId: "grass-sowing-scenario-i",
+    section: "B", questionRef: "2011 OL Q9(c)(i)",
+    questionText: "Different methods may be used when sowing grass seed. State the most suitable method in this situation: A farmer wants to plant barley but also to have grass available for grazing when the barley is harvested.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Undersowing", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q9(c)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-3","agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q9cii", topicId: "agsci-3-3-1", conceptId: "grass-sowing-scenario-ii",
+    section: "B", questionRef: "2011 OL Q9(c)(ii)",
+    questionText: "Different methods may be used when sowing grass seed. State the most suitable method in this situation: A farmer wants to sow grass seed on land which is shallow or not easily ploughed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Direct drilling / stitching-in (slit-seeding)", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q9(c)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-5","agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q9di", topicId: "agsci-3-3-3", conceptId: "silage-quality-i",
+    section: "B", questionRef: "2011 OL Q9(d)(i)",
+    questionText: "What does the term Dry Matter Digestibility (DMD) mean?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The proportion (expressed as a %) of the dry matter of a feedstuff which is retained in the animal’s system following digestion / degree to which the dry matter is retained and assimilated by the animal’s body / the % of the food that is kept and used by the animal", marks: 5, contextNote: "Any one point. The historical scheme describes dry matter as retained or assimilated. DMD measures the percentage of consumed dry matter digested by the animal; it is not the percentage ultimately retained as body tissue." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q9(d)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-5","agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q9dii", topicId: "agsci-3-3-3", conceptId: "silage-quality-ii",
+    section: "B", questionRef: "2011 OL Q9(d)(ii)",
+    questionText: "What approximate DMD value should high quality silage be?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "70% - 80%", marks: 5, contextNote: "Any one point." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q9(d)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-5","agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q9diii", topicId: "agsci-3-3-3", conceptId: "silage-quality-iii",
+    section: "B", questionRef: "2011 OL Q9(d)(iii)",
+    questionText: "Explain why old, poorly managed grassland is unsuitable for the production of good-quality silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Less productivity or low yield / low DMD or low digestibility / stemmy / more weeds or named grassland weed(s) / grass is less palatable", marks: 5, contextNote: "Any one point." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q9(d)(iii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-1"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q10a", topicId: "agsci-2-1", conceptId: "peat-formation-passage",
+    section: "B", questionRef: "2011 OL Q10(a)",
+    stem: "Word list: waterlogging; 1-2m; 8-10m; evaporation; rainfall; acidity. Blanket peats are formed in areas of high ___1___ and low ___2___. They are normally ___3___ in depth. ___4___ is a common characteristic of blanket peat. Basin peats are normally ___5___ in depth. They are formed in valleys and depressions as a result of ___6___.",
+    questionText: "Read the paragraph on the formation of peat bogs and match the words from the list with the numbered spaces. Write your answers in your answer book.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "rainfall (accept waterlogging)", marks: 4, contextNote: "Space 1" },
+    { id: "r-2", kind: "point", verbatim: "evaporation", marks: 4, contextNote: "Space 2" },
+    { id: "r-3", kind: "point", verbatim: "1-2m", marks: 4, contextNote: "Space 3" },
+    { id: "r-4", kind: "point", verbatim: "Acidity (accept waterlogging)", marks: 4, contextNote: "Space 4" },
+    { id: "r-5", kind: "point", verbatim: "8-10m", marks: 4, contextNote: "Space 5" },
+    { id: "r-6", kind: "point", verbatim: "waterlogging (accept rainfall)", marks: 4, contextNote: "Space 6" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q10(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-0"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q10bi", topicId: "agsci-2-1", conceptId: "rock-type-igneous",
+    section: "B", questionRef: "2011 OL Q10(b)(i)",
+    questionText: "Give an example of an igneous rock. Mention an area or county on the island of Ireland where it is commonly found.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Granite", marks: 3, contextNote: "Rock example" },
+    { id: "r-2", kind: "point", verbatim: "Wicklow / Donegal", marks: 2, contextNote: "County/region must match this rock." },
+    ],
+    answerVariants: [
+          {
+                "id": "granite",
+                "label": "Granite",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Granite",
+                            "marks": 3,
+                            "contextNote": "Rock example",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Wicklow / Donegal",
+                            "marks": 2,
+                            "contextNote": "County/region must match this rock.",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "basalt",
+                "label": "Basalt",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Basalt",
+                            "marks": 3,
+                            "contextNote": "Rock example",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Antrim / Giant’s Causeway",
+                            "marks": 2,
+                            "contextNote": "County/region must match this rock.",
+                            "id": "r-2"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q10(b)(i)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-0"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q10bii", topicId: "agsci-2-1", conceptId: "rock-type-sedimentary",
+    section: "B", questionRef: "2011 OL Q10(b)(ii)",
+    questionText: "Give an example of a sedimentary rock. Mention an area or county on the island of Ireland where it is commonly found.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Limestone", marks: 3, contextNote: "Rock example" },
+    { id: "r-2", kind: "point", verbatim: "Central plain of Ireland (or named county in central plain) / midlands / Burren / (N.) Clare / (S.W.) Wexford", marks: 2, contextNote: "County/region must match this rock." },
+    ],
+    answerVariants: [
+          {
+                "id": "limestone",
+                "label": "Limestone",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Limestone",
+                            "marks": 3,
+                            "contextNote": "Rock example",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Central plain of Ireland (or named county in central plain) / midlands / Burren / (N.) Clare / (S.W.) Wexford",
+                            "marks": 2,
+                            "contextNote": "County/region must match this rock.",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "sandstone",
+                "label": "Sandstone",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Sandstone",
+                            "marks": 3,
+                            "contextNote": "Rock example",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Cork / Kerry / Waterford",
+                            "marks": 2,
+                            "contextNote": "County/region must match this rock.",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "shale",
+                "label": "Shale",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Shale",
+                            "marks": 3,
+                            "contextNote": "Rock example",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Kerry / Limerick / Clare / Leitrim / Fermanagh / Kilkenny",
+                            "marks": 2,
+                            "contextNote": "County/region must match this rock.",
+                            "id": "r-2"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q10(b)(ii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-0"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q10biii", topicId: "agsci-2-1", conceptId: "rock-type-metamorphic",
+    section: "B", questionRef: "2011 OL Q10(b)(iii)",
+    questionText: "Give an example of a metamorphic rock. Mention an area or county on the island of Ireland where it is commonly found.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Marble", marks: 3, contextNote: "Rock example The historical scheme lists Kilkenny for marble. Kilkenny Black Marble is a commercial name for limestone, a sedimentary rock. Connemara marble is a suitable metamorphic example. The original scheme remains visible." },
+    { id: "r-2", kind: "point", verbatim: "Kilkenny / Galway / Connemara", marks: 2, contextNote: "County/region must match this rock." },
+    ],
+    answerVariants: [
+          {
+                "id": "marble",
+                "label": "Marble",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Marble",
+                            "marks": 3,
+                            "contextNote": "Rock example The historical scheme lists Kilkenny for marble. Kilkenny Black Marble is a commercial name for limestone, a sedimentary rock. Connemara marble is a suitable metamorphic example. The original scheme remains visible.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Kilkenny / Galway / Connemara",
+                            "marks": 2,
+                            "contextNote": "County/region must match this rock.",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "schist",
+                "label": "Schist",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Schist",
+                            "marks": 3,
+                            "contextNote": "Rock example The historical scheme lists Kilkenny for marble. Kilkenny Black Marble is a commercial name for limestone, a sedimentary rock. Connemara marble is a suitable metamorphic example. The original scheme remains visible.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Galway / Mayo / Donegal / Tyrone / Derry",
+                            "marks": 2,
+                            "contextNote": "County/region must match this rock.",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "gneiss",
+                "label": "Gneiss",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Gneiss",
+                            "marks": 3,
+                            "contextNote": "Rock example The historical scheme lists Kilkenny for marble. Kilkenny Black Marble is a commercial name for limestone, a sedimentary rock. Connemara marble is a suitable metamorphic example. The original scheme remains visible.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Galway / Mayo / Donegal / Tyrone / Derry",
+                            "marks": 2,
+                            "contextNote": "County/region must match this rock.",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "quartzite",
+                "label": "Quartzite",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Quartzite",
+                            "marks": 3,
+                            "contextNote": "Rock example The historical scheme lists Kilkenny for marble. Kilkenny Black Marble is a commercial name for limestone, a sedimentary rock. Connemara marble is a suitable metamorphic example. The original scheme remains visible.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Galway / Mayo / Donegal / Tyrone / Derry",
+                            "marks": 2,
+                            "contextNote": "County/region must match this rock.",
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "slate",
+                "label": "Slate",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Slate",
+                            "marks": 3,
+                            "contextNote": "Rock example The historical scheme lists Kilkenny for marble. Kilkenny Black Marble is a commercial name for limestone, a sedimentary rock. Connemara marble is a suitable metamorphic example. The original scheme remains visible.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Down / Armagh / Monaghan / Cavan / Meath / Louth / Wicklow / Wexford / Kildare",
+                            "marks": 2,
+                            "contextNote": "County/region must match this rock.",
+                            "id": "r-2"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q10(b)(iii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-0"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q10c", topicId: "agsci-2-1", conceptId: "rock-weathering-processes",
+    section: "B", questionRef: "2011 OL Q10(c)",
+    questionText: "Parent rock material may be weathered by physical or chemical means. Weathering breaks rock into soil particles. Give details of any three ways in which rock can be weathered.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Frost action or freezing and thawing / heating and cooling or onion weathering / plant action or example of plant action described / animal action or example of animal action described / wind erosion / water erosion / gravity / pressure due to moving ice or glaciers / solution / carbonation or acid rain / hydrolysis / hydration / oxidation-reduction", marks: 9, group: {"claimMax":3,"perOption":3,"options":["Frost action or freezing and thawing","heating and cooling or onion weathering","plant action or example of plant action described","animal action or example of animal action described","wind erosion","water erosion","gravity","pressure due to moving ice or glaciers","solution","carbonation or acid rain","hydrolysis","hydration","oxidation-reduction"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q10(c)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q10d-a", topicId: "agsci-2-2-2", conceptId: "soil-texture-sample-a",
+    section: "B", questionRef: "2011 OL Q10(d) — soil A",
+    stem: "The table lists sand, silt and clay respectively: Soil A: 10%, 35%, 55%; Soil B: 40%, 45%, 15%; Soil C: 60%, 25%, 15%. Use the original triangle shown with the table.",
+    questionText: "Use the soil texture triangle to identify the texture of soil sample A. Write your answer in your answer book.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Clay", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q10(d) — soil A",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+    figure: {
+          "candId": "agsci-2011-ol-paper-soil-triangle",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-soil-triangle.png",
+          "srcHash": "017a9d9a514652c9420c956ad7668e11",
+          "alt": "Original soil texture triangle with all percentage axes and the table of sand, silt and clay percentages for samples A, B and C.",
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q10d-b", topicId: "agsci-2-2-2", conceptId: "soil-texture-sample-b",
+    section: "B", questionRef: "2011 OL Q10(d) — soil B",
+    stem: "The table lists sand, silt and clay respectively: Soil A: 10%, 35%, 55%; Soil B: 40%, 45%, 15%; Soil C: 60%, 25%, 15%. Use the original triangle shown with the table.",
+    questionText: "Use the soil texture triangle to identify the texture of soil sample B. Write your answer in your answer book.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Loam", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q10(d) — soil B",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+    figure: {
+          "candId": "agsci-2011-ol-paper-soil-triangle",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-soil-triangle.png",
+          "srcHash": "017a9d9a514652c9420c956ad7668e11",
+          "alt": "Original soil texture triangle with all percentage axes and the table of sand, silt and clay percentages for samples A, B and C.",
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q10d-c", topicId: "agsci-2-2-2", conceptId: "soil-texture-sample-c",
+    section: "B", questionRef: "2011 OL Q10(d) — soil C",
+    stem: "The table lists sand, silt and clay respectively: Soil A: 10%, 35%, 55%; Soil B: 40%, 45%, 15%; Soil C: 60%, 25%, 15%. Use the original triangle shown with the table.",
+    questionText: "Use the soil texture triangle to identify the texture of soil sample C. Write your answer in your answer book.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sandy Loam", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q10(d) — soil C",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+    figure: {
+          "candId": "agsci-2011-ol-paper-soil-triangle",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-soil-triangle.png",
+          "srcHash": "017a9d9a514652c9420c956ad7668e11",
+          "alt": "Original soil texture triangle with all percentage axes and the table of sand, silt and clay percentages for samples A, B and C.",
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11ai", topicId: "agsci-4-3-3", conceptId: "parasite-definition",
+    section: "B", questionRef: "2011 OL Q11(a)(i)",
+    stem: "Parasites are a common occurrence in agriculture.",
+    questionText: "What is a parasite?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An organism that lives in or on or off another (living) organism (host)", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "causing it harm", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(a)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11aii", topicId: "agsci-4-3-3", conceptId: "parasite-host-example",
+    section: "B", questionRef: "2011 OL Q11(a)(ii)",
+    stem: "Parasites are a common occurrence in agriculture.",
+    questionText: "Give an example of a parasite of a named crop or livestock that you have studied.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Liverfluke - sheep / lice - cattle / aphid - barley / any other parasite", marks: 3, contextNote: "Award only if the named parasite and named host match." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(a)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11aiii", topicId: "agsci-4-3-3", conceptId: "parasite-control-matching",
+    section: "B", questionRef: "2011 OL Q11(a)(iii)",
+    stem: "Parasites are a common occurrence in agriculture. Name a parasite and its crop or livestock host before giving a suitable control; naming marks belong to part (ii).",
+    questionText: "State one way to get rid of the parasite you have named.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Dosing / spray / fungicide / pesticide / insecticide / antibiotics / drainage / biological control", marks: 3, contextNote: "Method of removal must match your named parasite; the options are not interchangeable." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(a)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-1"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11b", topicId: "agsci-4-2", conceptId: "insect-life-cycle",
+    section: "B", questionRef: "2011 OL Q11(b)",
+    questionText: "With the aid of a labelled diagram, describe the life cycle of a named insect.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Cabbage white) butterfly / clickbeetle / cranefly / (house)fly", marks: 3, contextNote: "Name an insect appropriate to the cycle." },
+    { id: "r-2", kind: "criterion", verbatim: "Diagram", marks: 3, contextNote: "Award 3 or 0; the lifecycle stages must be in an acceptable sequence." },
+    { id: "r-3", kind: "anyN", verbatim: "Egg / larva or named larva / pupa or chrysalis or cocoon / adult or imago", marks: 6, contextNote: "Any three correct labels.", group: {"claimMax":3,"perOption":2,"options":["Egg","larva or named larva","pupa or chrysalis or cocoon","adult or imago"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "complete",
+                "label": "Complete metamorphosis",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "(Cabbage white) butterfly / clickbeetle / cranefly / (house)fly",
+                            "marks": 3,
+                            "contextNote": "Name an insect appropriate to the cycle.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "criterion",
+                            "verbatim": "Diagram",
+                            "marks": 3,
+                            "contextNote": "Award 3 or 0; the lifecycle stages must be in an acceptable sequence.",
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Egg / larva or named larva / pupa or chrysalis or cocoon / adult or imago",
+                            "marks": 6,
+                            "contextNote": "Any three correct labels.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 2,
+                                  "options": [
+                                        "Egg",
+                                        "larva or named larva",
+                                        "pupa or chrysalis or cocoon",
+                                        "adult or imago"
+                                  ]
+                            },
+                            "id": "r-3"
+                      }
+                ]
+          },
+          {
+                "id": "incomplete",
+                "label": "Incomplete metamorphosis",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Greenfly or aphid / locust",
+                            "marks": 3,
+                            "contextNote": "Name an insect appropriate to this cycle.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "criterion",
+                            "verbatim": "Diagram",
+                            "marks": 3,
+                            "contextNote": "Award 3 or 0 only if all stages are in an acceptable sequence.",
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Egg",
+                            "marks": 2,
+                            "contextNote": "Label",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "nymph",
+                            "marks": 2,
+                            "contextNote": "Label",
+                            "id": "r-4"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "adult",
+                            "marks": 2,
+                            "contextNote": "Label",
+                            "id": "r-5"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(b)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11ci", topicId: "agsci-3-3-1", conceptId: "crop-i",
+    section: "B", questionRef: "2011 OL Q11(c)(i)",
+    stem: "Name the cereal or root crop whose cultivation you are describing.",
+    questionText: "Describe the cultivation of a cereal or a root crop under this heading: Soil suitability.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(Sandy) loam soil / brown earth or grey-brown podzolic / good drainage / good aeration / pH 6.0-6.5 / crumb structure / fertile", marks: 8, contextNote: "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.", group: {"claimMax":2,"perOption":4,"options":["(Sandy) loam soil","brown earth or grey-brown podzolic","good drainage","good aeration","pH 6.0-6.5","crumb structure","fertile"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "barley",
+                "label": "Barley",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "(Sandy) loam soil / brown earth or grey-brown podzolic / good drainage / good aeration / pH 6.0-6.5 / crumb structure / fertile",
+                            "marks": 8,
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 4,
+                                  "options": [
+                                        "(Sandy) loam soil",
+                                        "brown earth or grey-brown podzolic",
+                                        "good drainage",
+                                        "good aeration",
+                                        "pH 6.0-6.5",
+                                        "crumb structure",
+                                        "fertile"
+                                  ]
+                            },
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "potatoes",
+                "label": "Potatoes",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Deep soil / (medium) loam / well drained / good aeration / free from stones / pH 5.0-5.5 / brown earth or grey-brown podzolic / fertile / grow in wide range of soils",
+                            "marks": 8,
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Deep soil",
+                                        "(medium) loam",
+                                        "well drained",
+                                        "good aeration",
+                                        "free from stones",
+                                        "pH 5.0-5.5",
+                                        "brown earth or grey-brown podzolic",
+                                        "fertile",
+                                        "grow in wide range of soils"
+                                  ]
+                            },
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(c)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11cii-date", topicId: "agsci-3-3-1", conceptId: "crop-ii-date",
+    section: "B", questionRef: "2011 OL Q11(c)(ii) — date",
+    stem: "Name the cereal or root crop whose cultivation you are describing.",
+    questionText: "Describe the cultivation of a cereal or a root crop under this heading: Sowing date.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "September - November (Winter barley) or February - April (Spring barley)", marks: 4, contextNote: "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted." },
+    ],
+    answerVariants: [
+          {
+                "id": "barley",
+                "label": "Barley",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "September - November (Winter barley) or February - April (Spring barley)",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "potatoes",
+                "label": "Potatoes",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Jan - May",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(c)(ii) — date",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-3"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11cii-method", topicId: "agsci-3-3-1", conceptId: "crop-ii-method",
+    section: "B", questionRef: "2011 OL Q11(c)(ii) — method",
+    stem: "Name the cereal or root crop whose cultivation you are describing.",
+    questionText: "Describe the cultivation of a cereal or a root crop under this heading: Sowing method.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sown with a combine drill / seed drill / one pass", marks: 4, contextNote: "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted." },
+    ],
+    answerVariants: [
+          {
+                "id": "barley",
+                "label": "Barley",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "sown with a combine drill / seed drill / one pass",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "potatoes",
+                "label": "Potatoes",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Potato planter / sow (plant) in drills or ridges / grow-bags / plant with spade",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(c)(ii) — method",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11ciii", topicId: "agsci-2-3", conceptId: "crop-iii",
+    section: "B", questionRef: "2011 OL Q11(c)(iii)",
+    stem: "Name the cereal or root crop whose cultivation you are describing.",
+    questionText: "Describe the cultivation of a cereal or a root crop under this heading: Fertilizer used.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "10:10:20 / N,P,K / apply N fertilizer in spring / split application of N", marks: 4, contextNote: "Accept farmyard manure, slurry or relevant organic fertiliser if method and time of incorporation are given, e.g. ploughed into soil in autumn. Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted." },
+    ],
+    answerVariants: [
+          {
+                "id": "barley",
+                "label": "Barley",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "10:10:20 / N,P,K / apply N fertilizer in spring / split application of N",
+                            "marks": 4,
+                            "contextNote": "Accept farmyard manure, slurry or relevant organic fertiliser if method and time of incorporation are given, e.g. ploughed into soil in autumn. Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "potatoes",
+                "label": "Potatoes",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "10-10-20 / 7-6-17 / N,P,K / (farmyard) manure",
+                            "marks": 4,
+                            "contextNote": "Other relevant organic fertiliser accepted if method of incorporation into soil is given. Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(c)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-4"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11civ", topicId: "agsci-3-3-2", conceptId: "crop-iv",
+    section: "B", questionRef: "2011 OL Q11(c)(iv)",
+    stem: "Name the cereal or root crop whose cultivation you are describing.",
+    questionText: "Describe the cultivation of a cereal or a root crop under this heading: Control of pests.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Certified seed / seed treatment / spray / fungicide / pesticide / resistant varieties / biological control / Autumn ploughing / rotation", marks: 4, contextNote: "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted." },
+    ],
+    answerVariants: [
+          {
+                "id": "barley",
+                "label": "Barley",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Certified seed / seed treatment / spray / fungicide / pesticide / resistant varieties / biological control / Autumn ploughing / rotation",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "potatoes",
+                "label": "Potatoes",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "(1 in 4) rotation / spray / pesticide / fungicide / slug pellets / earthing up / resistant varieties / certified seed",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(c)(iv)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11cv-method", topicId: "agsci-3-3-3", conceptId: "crop-v-method",
+    section: "B", questionRef: "2011 OL Q11(c)(v) — method",
+    stem: "Name the cereal or root crop whose cultivation you are describing.",
+    questionText: "Describe the cultivation of a cereal or a root crop under this heading: Harvesting method.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Combine harvester", marks: 4, contextNote: "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted." },
+    ],
+    answerVariants: [
+          {
+                "id": "barley",
+                "label": "Barley",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Combine harvester",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "potatoes",
+                "label": "Potatoes",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Kill off haulms (with herbicide) / elevator digger / complete potato harvester / dig up with spade (and gather by hand)",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(c)(v) — method",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11cv-time", topicId: "agsci-3-3-3", conceptId: "crop-v-time",
+    section: "B", questionRef: "2011 OL Q11(c)(v) — time",
+    stem: "Name the cereal or root crop whose cultivation you are describing.",
+    questionText: "Describe the cultivation of a cereal or a root crop under this heading: Harvesting time.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Winter barley: July or Spring barley: August - September", marks: 4, contextNote: "Accept signs of ripeness, e.g. grain gets hard or stems turn yellow. Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted." },
+    ],
+    answerVariants: [
+          {
+                "id": "barley",
+                "label": "Barley",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Winter barley: July or Spring barley: August - September",
+                            "marks": 4,
+                            "contextNote": "Accept signs of ripeness, e.g. grain gets hard or stems turn yellow. Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "potatoes",
+                "label": "Potatoes",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "First earlies: May - June / Second earlies: July / Maincrop: August - November",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(c)(v) — time",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q11cvi", topicId: "agsci-3-3-3", conceptId: "crop-vi",
+    section: "B", questionRef: "2011 OL Q11(c)(vi)",
+    stem: "Name the cereal or root crop whose cultivation you are describing.",
+    questionText: "Describe the cultivation of a cereal or a root crop under this heading: Yield per hectare.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Winter barley: 7-9 tonnes/ha or Spring barley: 5-7 tonnes/ha", marks: 4, contextNote: "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted." },
+    ],
+    answerVariants: [
+          {
+                "id": "barley",
+                "label": "Barley",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Winter barley: 7-9 tonnes/ha or Spring barley: 5-7 tonnes/ha",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "potatoes",
+                "label": "Potatoes",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Earlies: 7-10 tonnes/ha or Maincrop: 30-40 tonnes/ha",
+                            "marks": 4,
+                            "contextNote": "Match the named crop and its type. Barley and potatoes are scheme examples; other appropriate cereal or root crops remain permitted.",
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q11(c)(vi)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-0"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12a-system", topicId: "agsci-4-1", conceptId: "monogastric-digestive-system",
+    section: "B", questionRef: "2011 OL Q12(a) — digestive system",
+    questionText: "Draw a labelled diagram of the digestive system of a named monogastric animal.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Name of monogastric animal", marks: null, contextNote: "3 marks for an appropriate named animal." },
+    { id: "r-2", kind: "criterion", verbatim: "Diagram", marks: null, contextNote: "4, 2 or 0 marks. Judge the drawing against the original scheme." },
+    { id: "r-3", kind: "criterion", verbatim: "Labels", marks: null, contextNote: "Four correct labels at 2 marks each. Judge all three criteria and record a total out of 15." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(a) — digestive system",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-0-1","agricultural-science-3-0"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12a-enzyme", topicId: "agsci-1-2", conceptId: "digestive-enzyme-experiment",
+    section: "B", questionRef: "2011 OL Q12(a) — enzyme experiment",
+    questionText: "Describe an experiment to investigate the action of one named digestive enzyme.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Named enzyme / matching substrate / suitable temperature / water-bath / named product / test for product / mention of control / control explained / result / conclusion", marks: null, contextNote: "Name of enzyme: 3 marks, plus four other relevant points at 3 marks each. All points must form a valid matching experiment. An unlabelled relevant diagram earns at most 3 marks. Use the source criteria to judge the response and record the total." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(a) — enzyme experiment",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-4"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12bi", topicId: "agsci-2-2-3", conceptId: "scientific-explanation-i",
+    section: "B", questionRef: "2011 OL Q12(b)(i)",
+    questionText: "Give a scientific explanation for the following: The appearance of earthworms on the surface of a soil following heavy rain.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Waterlogging / gas exchange or explained / respiration or explained", marks: 6, contextNote: "Two distinct points; equivalent descriptions count once.", group: {"claimMax":2,"perOption":3,"options":["Waterlogging","gas exchange or explained","respiration or explained"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(b)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12bii", topicId: "agsci-4-3-3", conceptId: "scientific-explanation-ii",
+    section: "B", questionRef: "2011 OL Q12(b)(ii)",
+    questionText: "Give a scientific explanation for the following: The feeding of colostrum to a calf in the hours immediately after birth.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Rich in antibodies / highly digestible nutrients or rich in protein and minerals / laxative effect / disease resistance / warms calf", marks: 6, contextNote: "Two distinct points; equivalent descriptions count once.", group: {"claimMax":2,"perOption":3,"options":["Rich in antibodies","highly digestible nutrients or rich in protein and minerals","laxative effect","disease resistance","warms calf"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(b)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-1-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12biii", topicId: "agsci-3-3-2", conceptId: "scientific-explanation-iii",
+    section: "B", questionRef: "2011 OL Q12(b)(iii)",
+    questionText: "Give a scientific explanation for the following: The conservation of hedgerows.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Habitat for wildlife / shelter for farm animals / food source for wildlife / microclimate for crops / absorb carbon dioxide / produce oxygen / biodiversity / wildlife corridors / boundaries or fences / reduces spread of diseases (in livestock) / REPs / noise reduction", marks: 6, contextNote: "Two distinct points; equivalent descriptions count once.", group: {"claimMax":2,"perOption":3,"options":["Habitat for wildlife","shelter for farm animals","food source for wildlife","microclimate for crops","absorb carbon dioxide","produce oxygen","biodiversity","wildlife corridors","boundaries or fences","reduces spread of diseases (in livestock)","REPs","noise reduction"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(b)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12biv", topicId: "agsci-3-3-3", conceptId: "scientific-explanation-iv",
+    section: "B", questionRef: "2011 OL Q12(b)(iv)",
+    questionText: "Give a scientific explanation for the following: The proper storage of hay immediately after drying.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Optimum conditions for storage explained / prevents overheating / prevents rotting", marks: 6, contextNote: "Two distinct points; equivalent descriptions count once.", group: {"claimMax":2,"perOption":3,"options":["Optimum conditions for storage explained","prevents overheating","prevents rotting"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(b)(iv)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-4"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12bv", topicId: "agsci-3-3-2", conceptId: "scientific-explanation-v",
+    section: "B", questionRef: "2011 OL Q12(b)(v)",
+    questionText: "Give a scientific explanation for the following: The thinning of trees in forest tree production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Poorest trees removed leaving better trees / remaining trees grow at increased rate / remaining trees grow straighter / remaining trees of better quality e.g. fewer knots in timber / less competition for water or for nutrients or for light / improved access / thinnings used to make useful product(s) or named product", marks: 6, contextNote: "Two distinct points; equivalent descriptions count once.", group: {"claimMax":2,"perOption":3,"options":["Poorest trees removed leaving better trees","remaining trees grow at increased rate","remaining trees grow straighter","remaining trees of better quality e.g. fewer knots in timber","less competition for water or for nutrients or for light","improved access","thinnings used to make useful product(s) or named product"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(b)(v)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-0"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12ci", topicId: "agsci-4-1", conceptId: "fresh-milk-composition",
+    section: "B", questionRef: "2011 OL Q12(c)(i)",
+    stem: "Milk is considered to be a basic food requirement for young calves.",
+    questionText: "State the average composition of fresh milk.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Water 87.5% (87–88%) / total solids 12.5% (12–13%) / butterfat or fat 3.8% (3.5–4%) / SNF 8.7% / Protein 3.1% (3.0–3.5%) / lactose 4.6% (4–5%) / minerals + vitamins 0.8% (0.7–1.0%)", marks: 9, contextNote: "Any three composition points, each with its percentage.", group: {"claimMax":3,"perOption":3,"options":["Water 87.5% (87–88%)","total solids 12.5% (12–13%)","butterfat or fat 3.8% (3.5–4%)","SNF 8.7%","Protein 3.1% (3.0–3.5%)","lactose 4.6% (4–5%)","minerals + vitamins 0.8% (0.7–1.0%)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(c)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-0-1","agricultural-science-3-0"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12cii", topicId: "agsci-1-2", conceptId: "milk-component-investigation",
+    section: "B", questionRef: "2011 OL Q12(c)(ii)",
+    stem: "Milk is considered to be a basic food requirement for young calves.",
+    questionText: "Describe a laboratory investigation to show the presence of one named component of fresh milk.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Named component", marks: null, contextNote: "3 marks for the component investigated." },
+    { id: "r-2", kind: "criterion", verbatim: "Named reagent / procedural point one / procedural point two / mention of control / control explained / result / conclusion", marks: null, contextNote: "Named component: 3 marks, plus any three matching investigation points at 3 marks each. These are assessment criteria, not a model experimental answer. Judge a valid investigation for the named component and record its total." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(c)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-5"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12ciii", topicId: "agsci-4-3-3", conceptId: "milking-parlour-hygiene",
+    section: "B", questionRef: "2011 OL Q12(c)(iii)",
+    stem: "Milk is considered to be a basic food requirement for young calves.",
+    questionText: "How can the dairy farmer prevent contamination of milk in the milking parlour?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Wash udders and teats before milking / parlour hygiene / milker hygiene / check teats for mastitis (using strip cup) / iodine teat dip or spray / wash clusters and milk line / use of filter to remove dirt particles / wash bulk tank / keep milk at a suitable temperature / milk cows with mastitis separately to rest of herd / fly screens", marks: 9, group: {"claimMax":3,"perOption":3,"options":["Wash udders and teats before milking","parlour hygiene","milker hygiene","check teats for mastitis (using strip cup)","iodine teat dip or spray","wash clusters and milk line","use of filter to remove dirt particles","wash bulk tank","keep milk at a suitable temperature","milk cows with mastitis separately to rest of herd","fly screens"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(c)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-1"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12di", topicId: "agsci-3-2", conceptId: "farm-food-chain",
+    section: "B", questionRef: "2011 OL Q12(d)(i)",
+    questionText: "Describe, with the aid of a labelled diagram, a simple food chain as it occurs on a farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Named producer", marks: 3, contextNote: "A correctly named producer in your farm chain." },
+    { id: "r-2", kind: "criterion", verbatim: "named primary consumer", marks: 3, contextNote: "Must feed on the named producer." },
+    { id: "r-3", kind: "criterion", verbatim: "named secondary consumer", marks: 3, contextNote: "Must feed on the named primary consumer." },
+    { id: "r-4", kind: "criterion", verbatim: "arrows", marks: 3, contextNote: "Arrows must show the direction of transfer along the valid chain." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(d)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-0-1","agricultural-science-2-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12dii", topicId: "agsci-1-2", conceptId: "pasture-botanical-composition",
+    section: "B", questionRef: "2011 OL Q12(d)(ii)",
+    questionText: "Describe a field investigation to determine the botanical composition of an old permanent pasture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Quadrat / throw at random / how random / identification of plant species / how identified / repeat / record plants found / graph / conclusion", marks: 15, contextNote: "The quadrat is the scheme example. Explain the procedural details and appropriate results; headings such as “graph” or “conclusion” alone are not a described investigation.", group: {"claimMax":5,"perOption":3,"options":["Quadrat","throw at random","how random","identification of plant species","how identified","repeat","record plants found","graph","conclusion"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(d)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-2-1"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q12diii", topicId: "agsci-3-2", conceptId: "biodiversity-definition",
+    section: "B", questionRef: "2011 OL Q12(d)(iii)",
+    stem: "2010 was designated by the United Nations as the International Year of Biodiversity.",
+    questionText: "Explain the term biodiversity.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The variety of organisms found in a habitat", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q12(d)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13ai", topicId: "agsci-4-3-2", conceptId: "genetics-term-i",
+    section: "B", questionRef: "2011 OL Q13(a)(i)",
+    questionText: "Explain the following term: Alleles.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Different forms of the same gene", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(a)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13aii", topicId: "agsci-4-3-2", conceptId: "genetics-term-ii",
+    section: "B", questionRef: "2011 OL Q13(a)(ii)",
+    questionText: "Explain the following term: Clone.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A clone is a group of cells or organisms that are genetically identical / individual member of such a group / identical genotype / exact copy of cell or organism", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(a)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13aiii", topicId: "agsci-4-3-2", conceptId: "genetics-term-iii",
+    section: "B", questionRef: "2011 OL Q13(a)(iii)",
+    questionText: "Explain the following term: Hybrid vigour.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Characteristic shown in the superior offspring of a cross between two (dissimilar) parents", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(a)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13b-f1", topicId: "agsci-4-3-2", conceptId: "barley-f1-cross",
+    section: "B", questionRef: "2011 OL Q13(b) — F1",
+    stem: "In barley, six-row ear type (S) is dominant over two-row ear type (s). A homozygous six-row plant (SS) is crossed with a homozygous two-row plant (ss). The F1 offspring are heterozygous. These offspring are crossed by self pollination to produce F2. Use genotypes in brackets and phenotypes on lines.",
+    questionText: "Copy and complete the first cross: gametes produced by each original parent, genotype of F1 offspring and phenotype of F1 offspring.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "S", marks: 2, contextNote: "Gamete from SS" },
+    { id: "r-2", kind: "point", verbatim: "s", marks: 2, contextNote: "Gamete from ss" },
+    { id: "r-3", kind: "point", verbatim: "Ss", marks: 2, contextNote: "F1 genotype" },
+    { id: "r-4", kind: "point", verbatim: "six-row ear type", marks: 2, contextNote: "F1 phenotype" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(b) — F1",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13b-f2", topicId: "agsci-4-3-2", conceptId: "barley-f2-cross",
+    section: "B", questionRef: "2011 OL Q13(b) — F2",
+    stem: "In barley, six-row ear type (S) is dominant over two-row ear type (s). A homozygous six-row plant (SS) is crossed with a homozygous two-row plant (ss). The F1 offspring are heterozygous. These offspring are crossed by self pollination to produce F2. Use genotypes in brackets and phenotypes on lines.",
+    questionText: "Copy and complete the second cross: genotypes of the second-generation parents, gametes produced by each parent, F2 genotypes and F2 phenotypes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 22,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ss / Ss", marks: 4, contextNote: "First checkbox: first parent. Second checkbox: second parent. Both genotypes are required. Complete both parents’ S and s gametes, but the scheme stars and pays only one parent’s two gamete entries. Total: eleven starred entries at two marks each.", group: {"claimMax":2,"perOption":2,"options":["Ss","Ss"]} },
+    { id: "r-2", kind: "anyN", verbatim: "S / s", marks: 4, contextNote: "First parent’s two gametes. Complete the second parent’s gametes too; they are unstarred and carry no separate marks.", group: {"claimMax":2,"perOption":2,"options":["S","s"]} },
+    { id: "r-3", kind: "anyN", verbatim: "SS / Ss / Ss / ss", marks: 8, contextNote: "The four checkboxes correspond to the four F2 genotype spaces, in printed order. Both separate Ss entries are starred.", group: {"claimMax":4,"perOption":2,"options":["SS","Ss","Ss","ss"]} },
+    { id: "r-4", kind: "anyN", verbatim: "Six-row / Six-row / Two-row", marks: 6, contextNote: "The three starred phenotype entries correspond to SS, Ss and ss. Complete both repeated Ss phenotype spaces, but only one is starred and paid.", group: {"claimMax":3,"perOption":2,"options":["Six-row","Six-row","Two-row"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(b) — F2",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13ci", topicId: "agsci-4-3-2", conceptId: "barley-testcross-i",
+    section: "B", questionRef: "2011 OL Q13(c)(i)",
+    stem: "Show a cross between a two-row barley parent (ss) and an F1 individual (Ss) from SS × ss. Six-row ear type (S) is dominant over two-row ear type (s).",
+    questionText: "In your cross show the genotypes of the parents.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ss", marks: 1, contextNote: "Two-row parent" },
+    { id: "r-2", kind: "point", verbatim: "Ss", marks: 1, contextNote: "F1 individual" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(c)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13cii", topicId: "agsci-4-3-2", conceptId: "barley-testcross-ii",
+    section: "B", questionRef: "2011 OL Q13(c)(ii)",
+    stem: "Show a cross between a two-row barley parent (ss) and an F1 individual (Ss) from SS × ss. Six-row ear type (S) is dominant over two-row ear type (s).",
+    questionText: "In your cross show the genotypes of the gametes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "s", marks: 1, contextNote: "Gamete from ss parent" },
+    { id: "r-2", kind: "point", verbatim: "S", marks: 1, contextNote: "One gamete from Ss parent" },
+    { id: "r-3", kind: "point", verbatim: "s", marks: 1, contextNote: "Other gamete from Ss parent" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(c)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13ciii", topicId: "agsci-4-3-2", conceptId: "barley-testcross-iii",
+    section: "B", questionRef: "2011 OL Q13(c)(iii)",
+    stem: "Show a cross between a two-row barley parent (ss) and an F1 individual (Ss) from SS × ss. Six-row ear type (S) is dominant over two-row ear type (s).",
+    questionText: "In your cross show the genotypes and the phenotypes of the offspring of the cross.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ss", marks: 1, contextNote: "First offspring genotype" },
+    { id: "r-2", kind: "point", verbatim: "ss", marks: 1, contextNote: "Second offspring genotype" },
+    { id: "r-3", kind: "point", verbatim: "Six-row", marks: 1, contextNote: "Ss phenotype" },
+    { id: "r-4", kind: "point", verbatim: "Two-row", marks: 1, contextNote: "ss phenotype" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(c)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13di", topicId: "agsci-4-3-2", conceptId: "cell-division-i",
+    section: "B", questionRef: "2011 OL Q13(d)(i)",
+    stem: "Mitosis and meiosis are two types of cell division presented in diagrams A and B on the official page.",
+    questionText: "Which diagram, A or B, represents meiosis?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(d)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+    figure: {
+          "candId": "agsci-2011-ol-paper-cell-division",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-cell-division.png",
+          "srcHash": "6618a3719ef8229ce73f2b63f1639227",
+          "alt": "Original cell-division diagrams A and B, including parent-cell labels, DNA-replication arrows and daughter cells.",
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13dii", topicId: "agsci-4-3-2", conceptId: "cell-division-ii",
+    section: "B", questionRef: "2011 OL Q13(d)(ii)",
+    stem: "Mitosis and meiosis are two types of cell division presented in diagrams A and B on the official page.",
+    questionText: "Which diagram has haploid cells?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(d)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+    figure: {
+          "candId": "agsci-2011-ol-paper-cell-division",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-cell-division.png",
+          "srcHash": "6618a3719ef8229ce73f2b63f1639227",
+          "alt": "Original cell-division diagrams A and B, including parent-cell labels, DNA-replication arrows and daughter cells.",
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13diii", topicId: "agsci-4-3-2", conceptId: "cell-division-iii",
+    section: "B", questionRef: "2011 OL Q13(d)(iii)",
+    stem: "Mitosis and meiosis are two types of cell division presented in diagrams A and B on the official page.",
+    questionText: "What is the main difference between a haploid cell and a diploid cell?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Haploid: half the number of chromosomes / n / chromosomes that exist singly; Diploid: pairs of chromosomes / 2n", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(d)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+    figure: {
+          "candId": "agsci-2011-ol-paper-cell-division",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-cell-division.png",
+          "srcHash": "6618a3719ef8229ce73f2b63f1639227",
+          "alt": "Original cell-division diagrams A and B, including parent-cell labels, DNA-replication arrows and daughter cells.",
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2011, ["agricultural-science-3-6"]), kind: "question",
+    year: 2011, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2011 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2011-ol-q13div", topicId: "agsci-4-3-2", conceptId: "cell-division-iv",
+    section: "B", questionRef: "2011 OL Q13(d)(iv)",
+    stem: "Mitosis and meiosis are two types of cell division presented in diagrams A and B on the official page.",
+    questionText: "Where in an animal’s body would you expect to find haploid cells?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Ovary / testis / sex organs / gonads", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2011 Ordinary — Q13(d)(iv)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published diagrams, wording and answer spaces."
+    },
+    figure: {
+          "candId": "agsci-2011-ol-paper-cell-division",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-cell-division.png",
+          "srcHash": "6618a3719ef8229ce73f2b63f1639227",
+          "alt": "Original cell-division diagrams A and B, including parent-cell labels, DNA-replication arrows and daughter cells.",
+          "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

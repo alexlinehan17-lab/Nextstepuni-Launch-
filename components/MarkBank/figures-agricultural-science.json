@@ -134,5 +134,90 @@
       0.441
     ],
     "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-ol-paper-bean": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-bean.png",
+    "md5": "a8e1d5d6baaec1a6d7fe1d73812ab090",
+    "alt": "Original germinating broad-bean seed diagram with labels A and B and both leader lines.",
+    "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024GLP000EV.pdf",
+    "sourceSha256": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+    "pdfPage": 2,
+    "cropRect": [
+      0.629,
+      0.318,
+      0.875,
+      0.557
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-ol-paper-fertiliser": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-fertiliser.png",
+    "md5": "f56d46c0a0b36ac9628e959270d642d7",
+    "alt": "Original photograph of a compound fertilizer bag marked 16-4-8.",
+    "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024GLP000EV.pdf",
+    "sourceSha256": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+    "pdfPage": 3,
+    "cropRect": [
+      0.58,
+      0.29,
+      0.875,
+      0.51
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-ol-paper-organisms": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-organisms.png",
+    "md5": "0386441da253995a35785585a281b01b",
+    "alt": "Original two photographs from Question 4, preserving the left and right organisms in their printed order.",
+    "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024GLP000EV.pdf",
+    "sourceSha256": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+    "pdfPage": 4,
+    "cropRect": [
+      0.314,
+      0.108,
+      0.928,
+      0.23
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-ol-paper-soil-triangle": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-soil-triangle.png",
+    "md5": "017a9d9a514652c9420c956ad7668e11",
+    "alt": "Original soil texture triangle with all percentage axes and the table of sand, silt and clay percentages for samples A, B and C.",
+    "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024GLP000EV.pdf",
+    "sourceSha256": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+    "pdfPage": 7,
+    "cropRect": [
+      0.09,
+      0.47,
+      0.919,
+      0.894
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2011-ol-paper-cell-division": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2011-ol-paper-cell-division.png",
+    "md5": "6618a3719ef8229ce73f2b63f1639227",
+    "alt": "Original cell-division diagrams A and B, including parent-cell labels, DNA-replication arrows and daughter cells.",
+    "attribution": "SEC Agricultural Science 2011 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2011/LC024GLP000EV.pdf",
+    "sourceSha256": "b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748",
+    "pdfPage": 9,
+    "cropRect": [
+      0.289,
+      0.619,
+      0.737,
+      0.829
+    ],
+    "reviewedAt": "2026-10-07"
   }
 }

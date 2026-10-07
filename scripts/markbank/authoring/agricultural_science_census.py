@@ -235,6 +235,90 @@ Q9(d)|12|5|12|Caused by wrong soil type
 Q9(e)|12|5|12|To attract bonhams away from sow
 '''
 
+ORDINARY_2011 = '''
+Q1|20|2|5|2(7m) + 1(2m) + 4(1m)
+Q2|20|3|5|2(7m) + 2(2m) + 2(1m)
+Q3|20|3|5|2(7m) + 3(2m)
+Q4|20|4|6|2(6m) + 2(2m) + 4(1m)
+Q5 — bullock|4|4|6|A male calf that has been castrated
+Q5 — gilt|4|4|6|A female pig that has not had a litter
+Q5 — draft ewe|4|4|6|A ewe that is culled from the flock and sold
+Q5 — broiler|4|4|6|A chicken that is reared for slaughter
+Q5 — suckler calf|4|4|6|A calf (in the beef herd) that sucks milk from its mother
+Q6(a)|5|5|7|Crop Rotation:
+Q6(b)|5|5|7|Sowing certified seed:
+Q6(c)|5|5|7|Applying selective herbicide:
+Q6(d)|5|5|7|Planting winter varieties of cereals:
+Q7(a)|8|5|7|TB/ pneumonia/ mastitis
+Q7(b)|8|5|7|Silage production/ production of dairy products
+Q7(c)|4|5|7|Fungus/Phytophthora infestans
+Q8(a)(i)|6|6|8|Tail docking : removal of tails
+Q8(a)(ii)|6|6|8|Shearing : Removal of fleece
+Q8(a)(iii)|6|6|8|Raddling a ram:
+Q8(a)(iv)|6|6|8|Dipping sheep:
+Q8(a)(v)|6|6|8|Walking the flock through a footbath:
+Q8(b)(i)|6|6|8|Isolation pen:
+Q8(b)(ii)|6|6|8|Infrared lamp:
+Q8(b)(iii)|6|6|8|Creep feeder:
+Q8(b)(iv)|6|6|8|Crush:
+Q8(b)(v)|6|6|8|Farrowing crate:
+Q9(a)(i)|10|6|9|Nitrogen fixation/ rich in protein
+Q9(a)(ii)|10|6|9|More palatable/higher yield
+Q9(b) — ley|5|6|9|Ley: Grassland sown by farmer
+Q9(b) — establishment|5|6|9|Establishment: Becoming a totally independent plant
+Q9(b) — heading out|5|6|9|Heading out: Stage when grass flowers
+Q9(c)(i)|5|6|9|Undersowing
+Q9(c)(ii)|5|6|9|Direct drilling/ stitching- in
+Q9(d)(i)|5|6|9|DMD : The proportion
+Q9(d)(ii)|5|6|9|70% - 80%
+Q9(d)(iii)|5|6|9|Less productivity or low yield
+Q10(a)|24|7|10|1: rainfall
+Q10(b)(i)|5|7|10|Igneous Granite or Basalt
+Q10(b)(ii)|5|7|10|Sedimentary Limestone or Sandstone
+Q10(b)(iii)|5|7|10|Metamorphic Marble or
+Q10(c)|9|7|10|Weathering: Frost action
+Q10(d) — soil A|4|7|10|Soil A : Clay
+Q10(d) — soil B|4|7|10|Soil B : Loam
+Q10(d) — soil C|4|7|10|Soil C : Sandy Loam
+Q11(a)(i)|6|8|11|An organism that lives in or on
+Q11(a)(ii)|3|8|11|Example of parasite:
+Q11(a)(iii)|3|8|11|Method of removal
+Q11(b)|12|8|11|Life cycle of insect
+Q11(c)(i)|8|8|11|(Sandy) loam soil
+Q11(c)(ii) — date|4|8|11|Sowing date : September - November
+Q11(c)(ii) — method|4|8|11|Method : sown with a combine drill
+Q11(c)(iii)|4|8|11|10 : 10 : 20/ N,P, K
+Q11(c)(iv)|4|8|11|Certified seed/ seed treatment
+Q11(c)(v) — method|4|8|12|Method : Combine harvester
+Q11(c)(v) — time|4|8|12|Time : Winter barley
+Q11(c)(vi)|4|8|12|Yield : Winter barley
+Q12(a) — digestive system|15|8|13|Name of monogastric animal
+Q12(a) — enzyme experiment|15|8|13|Named enzyme / matching substrate
+Q12(b)(i)|6|8|13|Waterlogging /gas exchange
+Q12(b)(ii)|6|8|13|Rich in antibodies
+Q12(b)(iii)|6|8|13|Habitat for wildlife
+Q12(b)(iv)|6|8|13|Optimum conditions for storage
+Q12(b)(v)|6|8|13|Poorest trees removed
+Q12(c)(i)|9|8|13|Water 87.5%
+Q12(c)(ii)|12|8|13|Named component:
+Q12(c)(iii)|9|8|13|Wash udders and teats
+Q12(d)(i)|12|8|13|Named producer /named primary consumer
+Q12(d)(ii)|15|8|13|Quadrat/ throw at random
+Q12(d)(iii)|3|8|13|The variety of organisms found in a habitat
+Q13(a)(i)|3|9|14|Alleles -
+Q13(a)(ii)|3|9|14|Clone -
+Q13(a)(iii)|3|9|14|Hybrid Vigour –
+Q13(b) — F1|8|9|14|4* x 2m
+Q13(b) — F2|22|9|14|11* x 2m
+Q13(c)(i)|2|9|14|9* x 1m
+Q13(c)(ii)|3|9|14|9* x 1m
+Q13(c)(iii)|4|9|14|9* x 1m
+Q13(d)(i)|3|9|14|(i) B (3m)
+Q13(d)(ii)|3|9|14|(ii) B (3m)
+Q13(d)(iii)|3|9|14|Haploid –
+Q13(d)(iv)|3|9|14|Ovary /testis/sex organs/gonads
+'''
+
 SOURCES = [
     (2010, 'higher', 'A', HIGHER_2010,
                'fa917bba0b9350bb15cfe355789fa3002515bb6b28561f46ac47acfc1e7fa408',
@@ -245,6 +329,9 @@ SOURCES = [
     (2011, 'higher', 'A', HIGHER_2011,
      '19975eb5d04e868becd63819eb5a3325929f6c774cff8e6abd4b72a1d3fb4ed9',
      '9979d05e915b789dd55e9ac742066987f4b26c75820485b15b1436ed5d06e9ba'),
+    (2011, 'ordinary', 'G', ORDINARY_2011,
+     'b7b85bb61a0e55572f8d576f7ad7cdc45d7311496297cf37b8c4b146b5fba748',
+     '3b7c1edf3a79a4862bf8fdb65d017c5b770c1b0d25c10df0bb8a22453280834f'),
 ]
 
 
@@ -281,7 +368,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81}[(year,level)]
         papers.append({'year':year,'level':level,'lang':'ev','paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -294,7 +381,7 @@ def build():
     # All indexed editions remain visible; a reviewed English denominator does
     # not silently declare the Irish edition or another sitting complete.
     return {'subjectId':'agricultural-science','status':'in-progress',
-            'method':'Independent 2010 Higher/Ordinary and 2011 Higher paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.',
+            'method':'Independent 2010 and 2011 Higher/Ordinary paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.',
             'papers':papers,
             'boundaryRules':[
                 'A diagram labelling exercise stays one task with all required labels and its figure; labels are answer fields, not printed alternative routes.',
@@ -307,6 +394,10 @@ def build():
                 'Ordinary Q12(a)(iii) has inconsistent point-count wording: retain 18 marks and a non-automatic part-score. Q12(d) totals 28 in English versus 30 printed; disclose the discrepancy, never add fictitious marks.',
                 '2011 Higher Q7(b): the shared cross receives 2+2 for parents and 8x1 for gametes; three separate offspring proportions receive four marks each. Never duplicate the shared 12 marks into each ratio task.',
                 '2011 Higher Q7(a) requires each of three definitions, individually marked at four. Q8(c) alone has a closed three-of-four pool. Q6(c) preserves the 4/2/0 diagram band and four one-mark labels through manual total scoring.',
+                '2011 Ordinary Q1–Q4 each have a pooled first-correct tariff across all answer fields and stay whole. Q5 and Q6 split at fixed row awards. Q10(a) is one dependent passage-completion exercise; its word bank is answer identification, not a route pool.',
+                '2011 Ordinary Q10(d) has three separately specified soil samples, each with its own four-mark interpretation. Each task carries the common triangle and percentage table; these are independent cases rather than labels of one object.',
+                '2011 Ordinary Q11(b/c) and Q12(a/c/d) permit open named insects, crops, animals and investigations. Scheme examples are not a finite question pool. Q11(c) sowing and harvesting each split at the separately published date/method awards.',
+                '2011 Ordinary Q13(b) has separate eight-mark F1 and twenty-two-mark F2 completions. Q13(c) splits by its three required headings and printed one-mark asterisks: parents two, gametes three, offspring four. No shared award is repeated.',
             ],
             'inventoryEditionCount':len(inventory['papers']),
             'editionStatus':[
@@ -343,7 +434,7 @@ def question_mark_checks(papers):
                 units[unit] = units.get(unit,0)+task['marksPerResponse']
             totals = sorted({sum(values) for values in itertools.combinations(units.values(),choose or 1)})
             expected = (60 if question=='Q1' else 48) if higher else (20 if int(question[1:])<=7 else 60)
-            discrepancy = not higher and question=='Q12'
+            discrepancy = paper['year']==2010 and not higher and question=='Q12'
             assert totals==([58,60] if discrepancy else [expected]), (paper['level'],question,totals)
             checks.append({'year':paper['year'],'level':paper['level'],'lang':paper['lang'],
                            'question':question,'units':units,'choose':choose or 1,
@@ -362,7 +453,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70. Remaining editions stay open.')
+    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary 81. Remaining editions stay open.')
 
 
 if __name__=='__main__':
