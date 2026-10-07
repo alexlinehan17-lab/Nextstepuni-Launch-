@@ -8,7 +8,69 @@
     "agsci-2023-hl-q18ai-route-abd",
     "agsci-2023-hl-q18ai-route-acd",
     "agsci-2023-hl-q18ai-route-bcd",
-    "agsci-2022-ol-q13bi"
+    "agsci-2022-ol-q13bi",
+    "agsci-2010-hl-q1a",
+    "agsci-2010-hl-q1b",
+    "agsci-2010-hl-q1c",
+    "agsci-2010-hl-q1di",
+    "agsci-2010-hl-q1dii",
+    "agsci-2010-hl-q1e",
+    "agsci-2010-hl-q1f",
+    "agsci-2010-hl-q1g",
+    "agsci-2010-hl-q1h",
+    "agsci-2010-hl-q1i",
+    "agsci-2010-hl-q1j",
+    "agsci-2010-hl-q2a",
+    "agsci-2010-hl-q2b",
+    "agsci-2010-hl-q2c",
+    "agsci-2010-hl-q3o1ai",
+    "agsci-2010-hl-q3o1aii",
+    "agsci-2010-hl-q3o1aiii",
+    "agsci-2010-hl-q3o1aiv",
+    "agsci-2010-hl-q3o1b",
+    "agsci-2010-hl-q3o1c",
+    "agsci-2010-hl-q3o2ai",
+    "agsci-2010-hl-q3o2aii",
+    "agsci-2010-hl-q3o2b-parasitic",
+    "agsci-2010-hl-q3o2b-deficiency",
+    "agsci-2010-hl-q3o2b-route-hoose",
+    "agsci-2010-hl-q3o2b-route-grass-tetany",
+    "agsci-2010-hl-q3o2c",
+    "agsci-2010-hl-q4a",
+    "agsci-2010-hl-q4b",
+    "agsci-2010-hl-q4c",
+    "agsci-2010-hl-q4d",
+    "agsci-2010-hl-q5ai",
+    "agsci-2010-hl-q5aii",
+    "agsci-2010-hl-q5bi",
+    "agsci-2010-hl-q5bii",
+    "agsci-2010-hl-q5c",
+    "agsci-2010-hl-q6a",
+    "agsci-2010-hl-q6b",
+    "agsci-2010-hl-q6ci",
+    "agsci-2010-hl-q6cii",
+    "agsci-2010-hl-q6d",
+    "agsci-2010-hl-q7a-route-i-ii-iii",
+    "agsci-2010-hl-q7a-route-i-ii-iv",
+    "agsci-2010-hl-q7a-route-i-iii-iv",
+    "agsci-2010-hl-q7a-route-ii-iii-iv",
+    "agsci-2010-hl-q7bi",
+    "agsci-2010-hl-q7bii",
+    "agsci-2010-hl-q7biii",
+    "agsci-2010-hl-q7ci",
+    "agsci-2010-hl-q7cii",
+    "agsci-2010-hl-q7d",
+    "agsci-2010-hl-q8a",
+    "agsci-2010-hl-q8b",
+    "agsci-2010-hl-q8c-route-i-ii-iii",
+    "agsci-2010-hl-q8c-route-i-ii-iv",
+    "agsci-2010-hl-q8c-route-i-iii-iv",
+    "agsci-2010-hl-q8c-route-ii-iii-iv",
+    "agsci-2010-hl-q9a",
+    "agsci-2010-hl-q9b",
+    "agsci-2010-hl-q9c",
+    "agsci-2010-hl-q9d",
+    "agsci-2010-hl-q9e"
   ],
   "correctedCardIds": [
     "agsci-2025-ol-q8b"
@@ -95,6 +157,2986 @@
         "agricultural-science-ordinary-health-safety"
       ],
       "evidence": "Paper and scheme visually inspected. Scheme PDF page 14 explicitly prints Symbols 2 and 3 and 3+2. A two-option marking group represents partial credit without forcing an all-or-nothing five-mark tick."
+    },
+    {
+      "questionRef": "2010 HL Q1(a)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.123,
+            1,
+            0.16
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.093,
+            1,
+            0.193
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1a": "1001"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1a"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants",
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q1(b)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.168,
+            1,
+            0.192
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.193,
+            1,
+            0.356
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1b": "1002"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1b"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q1(c)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.198,
+            1,
+            0.222
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.356,
+            1,
+            0.44
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1c": "1003"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1c"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production",
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q1(d)(i)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.228,
+            1,
+            0.247
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.44,
+            1,
+            0.473
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1di": "1004"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1di"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q1(d)(ii)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.245,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.473,
+            1,
+            0.491
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1dii": "1005"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1dii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q1(e)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.318,
+            1,
+            0.388
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.491,
+            1,
+            0.556
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1e": "1006"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1e"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q1(f)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.393,
+            1,
+            0.464
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.5565,
+            1,
+            0.6062
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1f": "1007"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1f"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q1(g)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.468,
+            1,
+            0.524
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.6062,
+            1,
+            0.671
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1g": "1008"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1g"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-animal-physiology-reproductive-systems"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q1(h)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.529,
+            1,
+            0.551
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.671,
+            1,
+            0.721
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1h": "1009"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1h"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q1(i)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.559,
+            1,
+            0.6
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.7222,
+            1,
+            0.7883
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1i": "1010"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1i"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q1(j)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.604,
+            1,
+            0.67
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.788,
+            1,
+            0.872
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q1j": "1011"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q1j"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q2(a)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.769,
+            1,
+            0.794
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.199
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q2a": "1012"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q2a"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q2(b)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.799,
+            1,
+            0.825
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.203,
+            1,
+            0.388
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q2b": "1013"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q2b"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q2(c)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.829,
+            1,
+            0.85
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.388,
+            1,
+            0.489
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q2c": "1014"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q2c"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option One (a)(i)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.049,
+            1,
+            0.205
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.24
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o1ai": "1015"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o1ai"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option One (a)(ii)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.049,
+            1,
+            0.205
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.24
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o1aii": "1016"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o1aii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option One (a)(iii)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.049,
+            1,
+            0.205
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.24
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o1aiii": "1017"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o1aiii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option One (a)(iv)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.049,
+            1,
+            0.205
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.24
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o1aiv": "1018"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o1aiv"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option One (b)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.212,
+            1,
+            0.238
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.238,
+            1,
+            0.404
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o1b": "1019"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o1b"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts.",
+      "scientificContext": {
+        "source": "https://fieldreport.caes.uga.edu/publications/B1543/the-importance-of-stripping-foremilk-on-milk-letdown-milk-quality-and-mastitis-detection/",
+        "checkedAt": "2026-10-07",
+        "treatment": "Preserve the historical SEC quotation and tariff; visibly explain the scientific correction in the marking row context."
+      }
+    },
+    {
+      "questionRef": "2010 HL Q3 Option One (c)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.242,
+            1,
+            0.278
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.404,
+            1,
+            0.607
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o1c": "1020"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o1c"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option Two (a)(i)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.332,
+            1,
+            0.418
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.102,
+            1,
+            0.139
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o2ai": "1021"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o2ai"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option Two (a)(ii)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.332,
+            1,
+            0.418
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.106,
+            1,
+            0.189
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o2aii": "1022"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o2aii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option Two (b) — parasitic disease",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.422,
+            1,
+            0.479
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.1883,
+            0.377,
+            0.305
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.725,
+            0.1883,
+            0.95,
+            0.224
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o2b-parasitic": "1023"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o2b-parasitic"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option Two (b) — deficiency disease",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.422,
+            1,
+            0.479
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.1883,
+            0.377,
+            0.305
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.725,
+            0.1883,
+            0.95,
+            0.224
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o2b-deficiency": "1024"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o2b-deficiency"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option Two (b) — Hoose",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.422,
+            1,
+            0.479
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0.38,
+            0.235,
+            1,
+            0.648
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o2b-route-hoose": "1025"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Hoose",
+          "grass-tetany"
+        ],
+        "route": "Hoose"
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o2b-route-hoose"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option Two (b) — grass-tetany",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.422,
+            1,
+            0.479
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0.38,
+            0.235,
+            1,
+            0.648
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o2b-route-grass-tetany": "1026"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 1,
+        "options": [
+          "Hoose",
+          "grass-tetany"
+        ],
+        "route": "grass-tetany"
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o2b-route-grass-tetany"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q3 Option Two (c)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.482,
+            1,
+            0.5
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.6478,
+            1,
+            0.751
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q3o2c": "1027"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q3o2c"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q4(a)",
+      "paperPage": 3,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.602,
+            1,
+            0.66
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.159
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q4a": "1028"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q4a"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q4(b)",
+      "paperPage": 3,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.602,
+            1,
+            0.626
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.663,
+            1,
+            0.69
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.157,
+            1,
+            0.208
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q4b": "1029"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q4b"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q4(c)",
+      "paperPage": 3,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.602,
+            1,
+            0.626
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.693,
+            1,
+            0.72
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.207,
+            1,
+            0.258
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q4c": "1030"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q4c"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q4(d)",
+      "paperPage": 3,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.602,
+            1,
+            0.626
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.723,
+            1,
+            0.741
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.2578,
+            1,
+            0.373
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q4d": "1031"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q4d"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q5(a)(i)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.031,
+            1,
+            0.084
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.414,
+            1,
+            0.51
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q5ai": "1032"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q5ai"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-sheep"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q5(a)(ii)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.031,
+            1,
+            0.084
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.516,
+            1,
+            0.5708
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q5aii": "1033"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q5aii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-sheep",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts.",
+      "scientificContext": {
+        "source": "https://pir.sa.gov.au/animal-management/animal-health/species/sheep/footrot/causes_symptoms_diagnosis",
+        "checkedAt": "2026-10-07",
+        "treatment": "Preserve the historical SEC quotation and tariff; visibly explain the scientific correction in the marking row context."
+      }
+    },
+    {
+      "questionRef": "2010 HL Q5(b)(i)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.091,
+            1,
+            0.123
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.5708,
+            1,
+            0.686
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q5bi": "1034"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q5bi"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q5(b)(ii)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.124,
+            1,
+            0.147
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.5708,
+            1,
+            0.686
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q5bii": "1035"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q5bii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q5(c)",
+      "paperPage": 4,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.153,
+            1,
+            0.171
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.685,
+            1,
+            0.752
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q5c": "1036"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q5c"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q6(a)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.273,
+            1,
+            0.298
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.143
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q6a": "1037"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q6a"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q6(b)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.303,
+            1,
+            0.345
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.141,
+            1,
+            0.225
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q6b": "1038"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q6b"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q6(c)(i)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.348,
+            1,
+            0.401
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.2247,
+            1,
+            0.3236
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q6ci": "1039"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q6ci"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q6(c)(ii)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.348,
+            1,
+            0.401
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.2247,
+            1,
+            0.3236
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q6cii": "1040"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q6cii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts.",
+      "scientificContext": {
+        "source": "https://www.extension.umd.edu/resource/soil-health-fs-2025-0754",
+        "checkedAt": "2026-10-07",
+        "treatment": "Preserve the historical SEC quotation and tariff; visibly explain the scientific correction in the marking row context."
+      }
+    },
+    {
+      "questionRef": "2010 HL Q6(d)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.408,
+            1,
+            0.427
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.3236,
+            1,
+            0.393
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q6d": "1041"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q6d"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q7(a) — i, ii, iii",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.529,
+            1,
+            0.617
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.306
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q7a-route-i-ii-iii": "1042"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "ii",
+          "iii"
+        ]
+      },
+      "cardIds": [
+        "agsci-2010-hl-q7a-route-i-ii-iii"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q7(a) — i, ii, iv",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.529,
+            1,
+            0.617
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.306
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q7a-route-i-ii-iv": "1043"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "ii",
+          "iv"
+        ]
+      },
+      "cardIds": [
+        "agsci-2010-hl-q7a-route-i-ii-iv"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q7(a) — i, iii, iv",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.529,
+            1,
+            0.617
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.306
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q7a-route-i-iii-iv": "1044"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "iii",
+          "iv"
+        ]
+      },
+      "cardIds": [
+        "agsci-2010-hl-q7a-route-i-iii-iv"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q7(a) — ii, iii, iv",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.529,
+            1,
+            0.617
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.05,
+            1,
+            0.306
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q7a-route-ii-iii-iv": "1045"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "ii",
+          "iii",
+          "iv"
+        ]
+      },
+      "cardIds": [
+        "agsci-2010-hl-q7a-route-ii-iii-iv"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q7(b)(i)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.619,
+            1,
+            0.703
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.305,
+            1,
+            0.357
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q7bi": "1046"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q7bi"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q7(b)(ii)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.619,
+            1,
+            0.703
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.3551,
+            1,
+            0.55
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q7bii": "1047"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q7bii"
+      ],
+      "marksPerRoute": 9,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q7(b)(iii)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.619,
+            1,
+            0.703
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.563,
+            1,
+            0.615
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q7biii": "1048"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q7biii"
+      ],
+      "marksPerRoute": 3,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q7(c)(i)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.709,
+            1,
+            0.747
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.6174,
+            1,
+            0.781
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q7ci": "1049"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q7ci"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q7(c)(ii)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.709,
+            1,
+            0.747
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.6174,
+            1,
+            0.781
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q7cii": "1050"
+      },
+      "selection": {
+        "kind": "open",
+        "reason": "The paper asks for one type without printing a finite pool. Triploid and tetraploid are scheme examples, exposed as separate marking menus to preserve type/example matching."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q7cii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q7(d)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.754,
+            1,
+            0.772
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.781,
+            1,
+            0.868
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q7d": "1051"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q7d"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics",
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q8(a)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.061,
+            1,
+            0.099
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.124,
+            1,
+            0.255
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q8a": "1052"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q8a"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-sheep"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q8(b)",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.106,
+            1,
+            0.13
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.254,
+            1,
+            0.373
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q8b": "1053"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q8b"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q8(c) — i, ii, iii",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.136,
+            1,
+            0.214
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.372,
+            1,
+            0.853
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q8c-route-i-ii-iii": "1054"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "ii",
+          "iii"
+        ]
+      },
+      "cardIds": [
+        "agsci-2010-hl-q8c-route-i-ii-iii"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q8(c) — i, ii, iv",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.136,
+            1,
+            0.214
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.372,
+            1,
+            0.853
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q8c-route-i-ii-iv": "1055"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "ii",
+          "iv"
+        ]
+      },
+      "cardIds": [
+        "agsci-2010-hl-q8c-route-i-ii-iv"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q8(c) — i, iii, iv",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.136,
+            1,
+            0.214
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.372,
+            1,
+            0.853
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q8c-route-i-iii-iv": "1056"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "iii",
+          "iv"
+        ]
+      },
+      "cardIds": [
+        "agsci-2010-hl-q8c-route-i-iii-iv"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q8(c) — ii, iii, iv",
+      "paperPage": 5,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.136,
+            1,
+            0.214
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.372,
+            1,
+            0.853
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q8c-route-ii-iii-iv": "1057"
+      },
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "ii",
+          "iii",
+          "iv"
+        ]
+      },
+      "cardIds": [
+        "agsci-2010-hl-q8c-route-ii-iii-iv"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q9(a)",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.316,
+            1,
+            0.34
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.347,
+            1,
+            0.386
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.124,
+            1,
+            0.224
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q9a": "1058"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q9a"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q9(b)",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.316,
+            1,
+            0.34
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.391,
+            1,
+            0.416
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.222,
+            1,
+            0.291
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q9b": "1059"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q9b"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q9(c)",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.316,
+            1,
+            0.34
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.422,
+            1,
+            0.448
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.289,
+            1,
+            0.34
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q9c": "1060"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q9c"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q9(d)",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.316,
+            1,
+            0.34
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.452,
+            1,
+            0.478
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.338,
+            1,
+            0.406
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q9d": "1061"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q9d"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    },
+    {
+      "questionRef": "2010 HL Q9(e)",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.316,
+            1,
+            0.34
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.482,
+            1,
+            0.5
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.404,
+            1,
+            0.475
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2010-hl-q9e": "1062"
+      },
+      "selection": {
+        "kind": "none",
+        "reason": "The printed task has no finite choice of responses. Scheme alternatives are accepted answers, not a printed answer-route pool."
+      },
+      "cardIds": [
+        "agsci-2010-hl-q9e"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "evidence": "Full 8-page paper and 14-page scheme visually inspected. Task boundary, wording and marks checked against the original pages. First-correct descending tariffs remain one group; they are not assigned to named subparts."
+    }
+  ],
+  "paperReviews": [
+    {
+      "year": 2010,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "hashes": {
+        "exampapers": "fa917bba0b9350bb15cfe355789fa3002515bb6b28561f46ac47acfc1e7fa408",
+        "markingschemes": "120a5729e8e4d01ea5411df25c54e509c95ea099fb55cb52466f045c72909174"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "selectionDirectives": [
+        {
+          "id": "822d395310352400",
+          "page": 2,
+          "cue": "any six",
+          "context": "Page 2 of 8 SIX QUESTIONS TO BE ANSWERED 1. Answer any six of the following: (a) Certain plants are known as indicator species. Explain the term indicator species. Suggest two indicator species and the conditions in which each occurs. (b) Draw a labelled diagram of a longitudinal section",
+          "classification": "independent-task-selection",
+          "reason": "Q1 selects six separately priced (a)–(j) tasks. All ten are represented, with (d) split at its 4/6 boundary. Combining six unrelated tasks would represent a candidate exam selection, not a practice task."
+        },
+        {
+          "id": "9449f3af55f635a7",
+          "page": 3,
+          "cue": "either",
+          "context": " while grass-tetany is a deficiency disease. Explain the underlined terms. In the case of either disease state the cause, a symptom and a method of control or treatment. (c) Give three reasons for a low rate of seedling establishment in a spring-sown crop. (48 marks) 4. Describe a laboratory or field method to determine any ",
+          "classification": "closed",
+          "reason": "Q3 Option Two (b): one of two diseases. Both complete 12-mark routes are expanded; the two separately priced definitions remain common tasks."
+        },
+        {
+          "id": "8523a40fc570893c",
+          "page": 3,
+          "cue": "any two",
+          "context": "t in a spring-sown crop. (48 marks) 4. Describe a laboratory or field method to determine any two of the following: (a) The texture of a sample of wet soil. (b) The number of earthworms in a pasture. (c) The rate of transpiration of a plant. (d) The digestibility of rolled barley versus whole barley when fed to cows. (48 mark",
+          "classification": "independent-task-selection",
+          "reason": "Q4 selects two of four separately marked 24-mark experimental methods. Each method is independently practicable and represented. Laboratory/field are open methods, not named finite responses."
+        },
+        {
+          "id": "18ccf05d5ed0e5de",
+          "page": 5,
+          "cue": "any two",
+          "context": "Page 5 of 8 8. Answer any two of the following (a), (b), (c). (a) In the context of fat lamb production, discuss the statement “the ewe looks after quantity while the ram looks after quality”. (b) Outline the differences between photosynthesis and respiration",
+          "classification": "independent-task-selection",
+          "reason": "Q8 selects two independent 24-mark parts. Parts (a), (b) and every internal route of (c) are represented. Exam-level pairs do not create a new practice task."
+        },
+        {
+          "id": "095797ddc519af1c",
+          "page": 5,
+          "cue": "any three",
+          "context": "esis and respiration in plants. (c) Highlight the main differences between the members of any three of the following pairs: (i) farrowing house and fattening house in pig production (ii) zero grazing and creep grazing (iii) bull-beef production and heifer-beef production (iv) ectoparasites and endoparasites. (48 marks) 9. Give ",
+          "classification": "closed",
+          "reason": "Q8(c): choose three of four printed comparisons. All four combinations retain six 4-mark groups, totalling 24 marks each."
+        },
+        {
+          "id": "7fc0c6ebf51e3c05",
+          "page": 5,
+          "cue": "any four",
+          "context": "tion (iv) ectoparasites and endoparasites. (48 marks) 9. Give scientific explanations for any four of the following: (a) The practice in abbatoirs of fasting animals before slaughter and of allowing the carcasses to hang for some days before sale. (b) The increase in the number of fish kills in rivers and lakes in summer. (c) ",
+          "classification": "independent-task-selection",
+          "reason": "Q9 selects four independently marked 12-mark explanations. All five tasks are represented, without bundling unrelated responses into an exam submission."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 2,
+          "wording": "SIX QUESTIONS TO BE ANSWERED",
+          "classification": "exam-selection",
+          "reason": "The examination instruction is not one practice task. All numbered questions, including both Q3 options, are represented."
+        },
+        {
+          "page": 3,
+          "wording": "OR Option Two",
+          "classification": "closed",
+          "reason": "Both Question 3 options are retained under distinct IDs, split only at their own published mark boundaries."
+        },
+        {
+          "page": 3,
+          "wording": "laboratory or field method",
+          "classification": "open",
+          "reason": "Two settings for a method, not two named finite responses. Complete official method menus are retained."
+        },
+        {
+          "page": 3,
+          "wording": "control or treatment",
+          "classification": "open",
+          "reason": "Open methods of dealing with the chosen disease. Scheme alternatives are accepted answers; no fixed response pool is printed."
+        },
+        {
+          "page": 4,
+          "wording": "Explain three of the following terms:",
+          "classification": "closed",
+          "reason": "Q7(a) choose three of four terms: all four combinations, 12 marks each."
+        },
+        {
+          "page": 4,
+          "wording": "one type of polyploidy",
+          "classification": "open",
+          "reason": "No finite pool is printed. Scheme examples use matching type/example marking menus on one card."
+        }
+      ],
+      "taskCountsByQuestion": {
+        "Q1": 11,
+        "Q2": 3,
+        "Q3 Option One": 6,
+        "Q3 Option Two": 7,
+        "Q4": 4,
+        "Q5": 5,
+        "Q6": 5,
+        "Q7": 10,
+        "Q8": 6,
+        "Q9": 5
+      },
+      "independentBoundaryReview": "62 practice cards; all published tasks retained. Descending awards stay together. Internal finite choices use 2, 4 and 4 routes. Candidate examination totals must not sum all mutually exclusive routes.",
+      "remaining": [
+        "Irish-language edition parity",
+        "Phone/desktop runtime review",
+        "Corpus-wide reconciliation"
+      ]
     }
   ]
 }

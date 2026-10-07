@@ -223,8 +223,8 @@ describe('card variants', () => {
     );
   });
 
-  it('caps rows at five so one card stays one memory and fits a phone', () => {
-    expect(MAX_ROWS).toBe(5);
+  it('allows the six marking groups in a complete three-comparison route', () => {
+    expect(MAX_ROWS).toBe(6);
     expect(secCard().rows.length).toBeLessThanOrEqual(MAX_ROWS);
   });
 

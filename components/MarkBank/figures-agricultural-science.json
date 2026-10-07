@@ -1,0 +1,36 @@
+{
+  "agsci-2010-hl-scheme-p05-tooth": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-hl-scheme-p05-tooth.png",
+    "md5": "85c2ad97b31e16ee1957df64d85517e1",
+    "alt": "Official marking-scheme drawing of a longitudinal section through a tooth, showing the crown and root, outer enamel, dentin, pulp, gum, periodontium, cementum, bone, blood vessels and nerves. The diagram has a two-mark tariff; four correctly positioned labels earn two marks each.",
+    "attribution": "SEC Agricultural Science 2010 Higher Level marking scheme, PDF page 5 \u2014 \u00a9 State Examinations Commission. Diagram credited in the scheme to Virtualmedicalcentre.com.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2010/LC024ALP000EV.pdf",
+    "sourceSha256": "120a5729e8e4d01ea5411df25c54e509c95ea099fb55cb52466f045c72909174",
+    "pdfPage": 5,
+    "cropRect": [
+      0.18,
+      0.214,
+      0.406,
+      0.33
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2010-hl-scheme-p11-punnett": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2010-hl-scheme-p11-punnett.png",
+    "md5": "125b85c6c84bf94a3c2d08c04069e634",
+    "alt": "Official Punnett square. The black parent contributes B or b and the brown parent contributes b. The two offspring cells are Bb, Black, and bb, Brown.",
+    "attribution": "SEC Agricultural Science 2010 Higher Level marking scheme, PDF page 11 \u2014 \u00a9 State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2010/LC024ALP000EV.pdf",
+    "sourceSha256": "120a5729e8e4d01ea5411df25c54e509c95ea099fb55cb52466f045c72909174",
+    "pdfPage": 11,
+    "cropRect": [
+      0.15,
+      0.356,
+      0.468,
+      0.45
+    ],
+    "reviewedAt": "2026-10-07"
+  }
+}

@@ -264,6 +264,8 @@ interface CardBase {
    *  different topics, and inheriting would file bread mould under the
    *  breathing system. */
   topicId: string;
+  /** Other current topics genuinely assessed by an inseparable mixed task. */
+  additionalTopicIds?: string[];
   /**
    * Level-independent concept identity, shared by an HL card and its OL sibling.
    * Costs one field now and cannot be retrofitted. Students drop from Higher to
@@ -325,6 +327,9 @@ export interface SecCardBase extends CardBase {
    *  is labelled and cited separately. */
   authored?: { sources: string[]; author: string; reviewedAt: string };
   specVersion: string;
+  /** Exam-year registry identity; topicId remains the current practice filter. */
+  specificationId?: string;
+  curriculumNodeIds?: string[];
   qa: { gates: string[]; humanReviewedBy: string; humanReviewedAt: string };
 }
 
@@ -339,8 +344,8 @@ export interface SecCardBase extends CardBase {
  */
 export interface SecPointCardBase extends SecCardBase {
   tariffModel: TariffModel;
-  /** Capped at five REQUIRED rows: it keeps one card close to one memory, forces
-   *  dependency splitting, and is what makes the card fit a 360px phone.
+  /** Capped at six REQUIRED rows. Keep separately marked tasks split, while
+   *  retaining all six marking groups in a published three-comparison route.
    *
    *  Menu-class tariffs are the exception — see rowCapFor. A best-N-of-M card
    *  is capped at MAX_OPTION_ROWS: its extra rows are a menu the student
@@ -625,7 +630,9 @@ export const isDiagramCard = (c: MarkBankCard): c is SecDiagramCard =>
   c.source === 'sec' && c.kind === 'diagram';
 
 /** Max rows on one card when every row is required. See the note on `rows`. */
-export const MAX_ROWS = 5;
+// Agricultural Science 2010 HL Q8(c): three comparisons with two separately
+// priced marking groups each. Six rows preserve the full printed route.
+export const MAX_ROWS = 6;
 
 /**
  * Max rows on a best-N-of-M card, where the surplus rows are options rather
@@ -646,15 +653,15 @@ export const MAX_OPTION_ROWS = 8;
  * menu that omits answers the scheme states is misrepresenting the marking,
  * which is the one thing this tool exists not to do.
  *
- * Still bounded. Sixteen is the ceiling because 2017 Construction Studies HL
- * Q4(a) prints sixteen distinct functional requirements. The bound follows the
+ * Still bounded. Seventeen is the ceiling because Agricultural Science 2010 HL
+ * Q5(a)(ii) prints seventeen accepted footrot points. The bound follows the
  * largest verified SEC menu rather than deleting correct answers for neatness.
  */
-export const MAX_LONG_OPTION_ROWS = 16;
+export const MAX_LONG_OPTION_ROWS = 17;
 
 /** The row cap that actually applies to a card, given its tariff.
  *
- * The five-row cap is for REQUIRED recall — a list the student must produce in
+ * The six-row cap is for REQUIRED recall — a list the student must produce in
  * full. An orderedSplit or questionTotal card's rows are a different thing:
  * the scheme's own printed candidate points, where what a student claims is
  * bounded by the notation or the question's total rather than by the row

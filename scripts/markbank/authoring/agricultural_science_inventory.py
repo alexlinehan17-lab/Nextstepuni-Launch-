@@ -30,6 +30,7 @@ def inventory():
         'import {paperIndex} from "./scripts/markbank/paperIndex.mjs"; console.log(JSON.stringify(paperIndex["agricultural-science"]));',
     ], cwd=ROOT, text=True))
     authored = json.loads((ROOT / 'scripts/markbank/authored/agricultural-science.json').read_text())
+    reviews = json.loads((ROOT / 'scripts/markbank/authored/agricultural-science-reviewed-tasks.json').read_text()).get('paperReviews', [])
     papers = []
     for entry in sorted(entries, key=lambda e: (e['year'], e['level'], e['lang'])):
         for booklet in entry['papers']:
@@ -57,6 +58,14 @@ def inventory():
                 'wholePaperVisualReview': 'pending', 'schemeBoundaryReview': 'pending',
                 'selectionDirectives': directives,
             })
+            reviewed = next((r for r in reviews if (r['year'],r['level'],r['lang'],r['paperFileid']) ==
+                             (entry['year'],entry['level'],entry['lang'],files['doc']['fileid'])), None)
+            if reviewed:
+                assert reviewed['hashes'] == {kind:files[prop]['sha256'] for kind,prop in [('exampapers','doc'),('markingschemes','scheme')]}, 'Reviewed source changed'
+                classified = {cue['id']:cue for cue in reviewed['selectionDirectives']}
+                assert set(classified) == {cue['id'] for cue in directives}, 'Stale/unclassified raw selection'
+                papers[-1].update({key:reviewed[key] for key in ['wholePaperVisualReview','schemeBoundaryReview']})
+                papers[-1]['selectionDirectives'] = [classified[cue['id']] for cue in directives]
     return {'subjectId': 'agricultural-science', 'status': 'in-progress',
             'source': 'paperTrailData.ts PAPER_TRAIL_INDEX', 'booklets': len(papers),
             'warning': 'This is an inventory and review queue. It does not prove complete question coverage.',
@@ -74,7 +83,7 @@ def main():
     elif args.check:
         assert json.loads(OUT.read_text()) == data, 'Inventory stale: source corpus or authored cards changed'
     print(f'{data["booklets"]} indexed booklets and matching schemes; '
-          f'{sum(len(p["selectionDirectives"]) for p in data["papers"])} selection cues pending classification')
+          f'{sum(c["classification"] == "pending" for p in data["papers"] for c in p["selectionDirectives"])} selection cues pending classification')
 
 
 if __name__ == '__main__':

@@ -12,6 +12,8 @@ import { siblingsFor } from '../components/PaperTrail/topics';
 import { preferredAnswersUrl } from '../components/PaperTrail/vaultResolve';
 import { paperRegionFor } from '../components/PaperTrail/paperRegion';
 import type { PaperAnswerMap } from '../types/paperTrail';
+import { findCanonicalTopic, resolveCurriculumSpecification } from '../curriculumRegistry';
+import { cardsForTopic } from '../components/MarkBank/deck';
 
 const cards = [...higher, ...ordinary];
 const get = (id: string) => {
@@ -78,8 +80,94 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
+  it('preserves both 2010 Q3 options and all 62 independently reviewed legacy tasks', () => {
+    const legacy = cards.filter(card => card.year === 2010);
+    expect(legacy).toHaveLength(62);
+    expect(legacy.filter(card => card.questionRef.includes('Q3 Option One'))).toHaveLength(6);
+    expect(legacy.filter(card => card.questionRef.includes('Q3 Option Two'))).toHaveLength(7);
+    const diseaseRoutes = legacy.filter(card => card.id.startsWith('agsci-2010-hl-q3o2b-route-'));
+    expect(diseaseRoutes.map(card => card.id).sort()).toEqual([
+      'agsci-2010-hl-q3o2b-route-grass-tetany', 'agsci-2010-hl-q3o2b-route-hoose',
+    ]);
+    expect(diseaseRoutes.map(card => card.totalMarks)).toEqual([12, 12]);
+    for (const card of legacy) {
+      const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
+      expect(card.specificationId).toBe(specification.id);
+      expect(card.specVersion).toBe(specification.id);
+      expect(card.specificationId).toBe('agricultural-science:legacy-current');
+      expect(card.curriculumNodeIds?.length).toBeGreaterThan(0);
+      for (const id of card.curriculumNodeIds!) expect(findCanonicalTopic(specification, id)).toBeDefined();
+    }
+  });
+
+  it('expands both 2010 three-of-four tasks with their complete wording and tariffs', () => {
+    const combinations = ['i-ii-iii', 'i-ii-iv', 'i-iii-iv', 'ii-iii-iv'];
+    for (const [question, marks, rowCount] of [['q7a', 12, 3], ['q8c', 24, 6]] as const) {
+      const routes = cards.filter(card => card.id.startsWith(`agsci-2010-hl-${question}-route-`));
+      expect(routes.map(card => card.id.split('-route-')[1])).toEqual(combinations);
+      expect(new Set(routes.map(card => card.questionText)).size).toBe(1);
+      for (const candidate of routes) {
+        const card = get(candidate.id);
+        expect(card.totalMarks).toBe(marks);
+        expect(card.rows).toHaveLength(rowCount);
+        const claims = Object.fromEntries(card.rows.map(row => [row.id, [0, 1]]));
+        expect(marksClaimed(card, {}, claims)).toBe(marks);
+      }
+    }
+  });
+
+  it('awards 2010 first-correct marks independently of the named instrument', () => {
+    const card = get('agsci-2010-hl-q1e');
+    for (const first of [0, 1, 2]) expect(marksClaimed(card, {}, { 'r-1': [first] })).toBe(6);
+    expect(marksClaimed(card, {}, { 'r-1': [1, 2] })).toBe(8);
+    expect(marksClaimed(card, {}, { 'r-1': [0, 1, 2] })).toBe(10);
+  });
+
+  it('keeps the minimum ewe/ram and fasting/hanging coverage in every marking allocation', () => {
+    for (const [id, allocations] of [['agsci-2010-hl-q8a', 3], ['agsci-2010-hl-q9a', 2]] as const) {
+      const card = get(id);
+      expect(card.answerVariants).toHaveLength(allocations);
+      for (const variant of card.answerVariants!) {
+        expect(variant.rows).toHaveLength(2);
+        expect(variant.rows.every(row => row.group!.claimMax >= 1)).toBe(true);
+        const effective = { ...card, rows: variant.rows };
+        expect(tariffReconciles(effective)).toBe(true);
+        const claims = Object.fromEntries(variant.rows.map(row => [row.id, Array.from({ length: row.group!.claimMax }, (_, i) => i)]));
+        expect(marksClaimed(effective, {}, claims)).toBe(card.totalMarks);
+        expect(marksClaimed(effective, {}, { 'r-1': claims['r-1'] })).toBeLessThan(card.totalMarks);
+      }
+    }
+  });
+
+  it('requires the compulsory nitrogen-fixation point for full marks without inventing a zero-score gate', () => {
+    const card = get('agsci-2010-hl-q6cii');
+    expect(marksClaimed(card, { 'r-1': 'yes' }, {})).toBe(3);
+    expect(marksClaimed(card, {}, { 'r-2': [0] })).toBe(3);
+    expect(marksClaimed(card, { 'r-1': 'yes' }, { 'r-2': [0] })).toBe(6);
+  });
+
+  it('keeps mixed comparisons discoverable under each assessed current topic without duplicating cards', () => {
+    const card = get('agsci-2010-hl-q8c-route-i-ii-iv');
+    for (const topic of ['agsci-4-3-1', 'agsci-3-3-2', 'agsci-4-3-3']) {
+      expect(cardsForTopic(topic, cards).filter(candidate => candidate.id === card.id)).toHaveLength(1);
+      expect(findCanonicalTopic(resolveCurriculumSpecification('agricultural-science', 2026)!, topic)).toBeDefined();
+    }
+  });
+
+  it('keeps complete legacy method menus and official drawing solutions', () => {
+    expect(get('agsci-2010-hl-q4a').answerVariants).toHaveLength(3);
+    expect(get('agsci-2010-hl-q4d').answerVariants).toHaveLength(2);
+    expect(get('agsci-2010-hl-q5aii').rows[0].group?.options).toHaveLength(17);
+    for (const id of ['agsci-2010-hl-q1b', 'agsci-2010-hl-q7bii']) {
+      const card = get(id);
+      expect(card.figure?.solution).toBe(true);
+      expect(card.figure?.alt).toBeTruthy();
+      expect(readFileSync(resolve(__dirname, `../public${card.figure!.src}`)).length).toBeGreaterThan(1000);
+    }
+  });
+
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(8);
+    expect(atlas.markBankCards).toHaveLength(70);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;
@@ -95,6 +183,8 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
       const anchor = map.q.find((q: { n: string }) => q.n === join.n);
       expect(anchor.paperRegion[0].p).toBe(task.paperPage);
       expect(anchor.region[0].p).toBe(task.schemePage);
+      if ('paperRegions' in task) expect(anchor.paperRegion).toEqual(task.paperRegions);
+      if ('schemeRegions' in task) expect(anchor.region).toEqual(task.schemeRegions);
       expect(anchor.mode).toBe('crop');
       expect(anchor.parentN).toBe(card.questionRef.match(/Q(\d+)/)?.[1]);
     }

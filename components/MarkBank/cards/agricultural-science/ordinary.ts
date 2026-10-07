@@ -13,11 +13,12 @@
  * script — never typed — because both historical figure corruptions in this repo
  * entered through a hand-transcribed path.
  *
- * Cards are tagged to the strands of the specification the papers were actually sat
- * under: this one has been the examined specification since 2021.
+ * Current practice topics and the examined curriculum are distinct. Reviewed
+ * historical cards resolve their specification through the exam-year registry.
  */
 
 import type { SecCard } from '../../../../types/markBank';
+
 
 const base = {
   source: 'sec' as const,
@@ -7980,7 +7981,7 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"}, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
@@ -8004,7 +8005,7 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"}, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
@@ -8028,7 +8029,7 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"}, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
@@ -8052,7 +8053,7 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"}, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",

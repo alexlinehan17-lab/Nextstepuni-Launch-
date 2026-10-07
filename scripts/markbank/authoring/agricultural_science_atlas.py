@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Publish reviewed practice tasks in Topic Atlas, preserving whole-question IDs.
 
-These eight crops were inspected against the PDF pages. The rest of the corpus
+Each reviewed crop was inspected against the PDF pages. The rest of the corpus
 is intentionally not labelled complete. IDs 1001+ are additive, stable practice
 identities; the existing 1–18 question cards and their saved progress survive.
 """
 import argparse
 import json
+import re
 import subprocess
 from pathlib import Path
 
@@ -53,17 +54,27 @@ def outputs():
             fileid = entry['papers'][0]['doc']['f']
             key = (card['year'], fileid)
             if key not in maps:
-                maps[key] = json.loads((ROOT / f'scripts/paper-trail/answers/{card["year"]}/{fileid}.json').read_text())
-            paper_rect, scheme_rect = next(regions for prefix, regions in REGIONS.items() if cid.startswith(prefix))
-            n = NUMBERS[cid]
+                path = ROOT / f'scripts/paper-trail/answers/{card["year"]}/{fileid}.json'
+                maps[key] = json.loads(path.read_text()) if path.exists() else {
+                    'v': 1, 'paperFileid': fileid, 'schemeFileid': entry['papers'][0]['scheme']['f'],
+                    'component': '', 'copyright': '© State Examinations Commission', 'q': [],
+                }
+            if 'paperRegions' in task:
+                paper_regions, scheme_regions = task['paperRegions'], task['schemeRegions']
+                n = task['atlasNumbers'][cid]
+            else:
+                paper_rect, scheme_rect = next(regions for prefix, regions in REGIONS.items() if cid.startswith(prefix))
+                paper_regions = [{'p': task['paperPage'], 'r': paper_rect}]
+                scheme_regions = [{'p': task['schemePage'], 'r': scheme_rect}]
+                n = NUMBERS[cid]
             label = card['questionRef'].split(' Q', 1)[1]
             anchor = {
                 'n': n, 'label': f'Question {label}', 'conf': 1.0, 'mode': 'crop',
-                'parentN': card['questionRef'].split('Q', 1)[1].split('(', 1)[0],
-                'pP': task['paperPage'], 'pY': [paper_rect[1], paper_rect[3]],
-                'paperRegion': [{'p': task['paperPage'], 'r': paper_rect}],
-                'endP': task['paperPage'], 'endY': paper_rect[3],
-                'region': [{'p': task['schemePage'], 'r': scheme_rect}],
+                'parentN': re.search(r'Q(\d+)', card['questionRef']).group(1),
+                'pP': paper_regions[0]['p'], 'pY': [paper_regions[0]['r'][1], paper_regions[-1]['r'][3]],
+                'paperRegion': paper_regions,
+                'endP': paper_regions[-1]['p'], 'endY': paper_regions[-1]['r'][3],
+                'region': scheme_regions,
             }
             old = next((q for q in maps[key]['q'] if q['n'] == n), None)
             assert old is None or old == anchor, f'Review changed for {key} {n}; inspect before replacing'
@@ -92,7 +103,7 @@ def main():
             path.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':'))+'\n')
         elif args.check:
             assert path.exists() and json.loads(path.read_text()) == data, f'Stale: {path}'
-    print('8 reviewed practice tasks mapped to Topic Atlas; prior whole-question identities retained')
+    print('Reviewed practice tasks mapped to Topic Atlas; prior whole-question identities retained')
 
 
 if __name__ == '__main__':

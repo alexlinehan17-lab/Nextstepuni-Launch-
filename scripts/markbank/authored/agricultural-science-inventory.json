@@ -20,51 +20,57 @@
         "sha256": "120a5729e8e4d01ea5411df25c54e509c95ea099fb55cb52466f045c72909174",
         "pages": 14
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 62,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "822d395310352400",
           "page": 2,
           "cue": "any six",
           "context": "Page 2 of 8 SIX QUESTIONS TO BE ANSWERED 1. Answer any six of the following: (a) Certain plants are known as indicator species. Explain the term indicator species. Suggest two indicator species and the conditions in which each occurs. (b) Draw a labelled diagram of a longitudinal section",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1 selects six separately priced (a)–(j) tasks. All ten are represented, with (d) split at its 4/6 boundary. Combining six unrelated tasks would represent a candidate exam selection, not a practice task."
         },
         {
           "id": "9449f3af55f635a7",
           "page": 3,
           "cue": "either",
           "context": " while grass-tetany is a deficiency disease. Explain the underlined terms. In the case of either disease state the cause, a symptom and a method of control or treatment. (c) Give three reasons for a low rate of seedling establishment in a spring-sown crop. (48 marks) 4. Describe a laboratory or field method to determine any ",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q3 Option Two (b): one of two diseases. Both complete 12-mark routes are expanded; the two separately priced definitions remain common tasks."
         },
         {
           "id": "8523a40fc570893c",
           "page": 3,
           "cue": "any two",
           "context": "t in a spring-sown crop. (48 marks) 4. Describe a laboratory or field method to determine any two of the following: (a) The texture of a sample of wet soil. (b) The number of earthworms in a pasture. (c) The rate of transpiration of a plant. (d) The digestibility of rolled barley versus whole barley when fed to cows. (48 mark",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4 selects two of four separately marked 24-mark experimental methods. Each method is independently practicable and represented. Laboratory/field are open methods, not named finite responses."
         },
         {
           "id": "18ccf05d5ed0e5de",
           "page": 5,
           "cue": "any two",
           "context": "Page 5 of 8 8. Answer any two of the following (a), (b), (c). (a) In the context of fat lamb production, discuss the statement “the ewe looks after quantity while the ram looks after quality”. (b) Outline the differences between photosynthesis and respiration",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8 selects two independent 24-mark parts. Parts (a), (b) and every internal route of (c) are represented. Exam-level pairs do not create a new practice task."
         },
         {
           "id": "095797ddc519af1c",
           "page": 5,
           "cue": "any three",
           "context": "esis and respiration in plants. (c) Highlight the main differences between the members of any three of the following pairs: (i) farrowing house and fattening house in pig production (ii) zero grazing and creep grazing (iii) bull-beef production and heifer-beef production (iv) ectoparasites and endoparasites. (48 marks) 9. Give ",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c): choose three of four printed comparisons. All four combinations retain six 4-mark groups, totalling 24 marks each."
         },
         {
           "id": "7fc0c6ebf51e3c05",
           "page": 5,
           "cue": "any four",
           "context": "tion (iv) ectoparasites and endoparasites. (48 marks) 9. Give scientific explanations for any four of the following: (a) The practice in abbatoirs of fasting animals before slaughter and of allowing the carcasses to hang for some days before sale. (b) The increase in the number of fish kills in rivers and lakes in summer. (c) ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 selects four independently marked 12-mark explanations. All five tasks are represented, without bundling unrelated responses into an exam submission."
         }
       ]
     },
@@ -83,7 +89,7 @@
         "sha256": "461837ea374e65d3a33802131ba9b476dea93ec3d3e48a93753f27f3bf220248",
         "pages": 12
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 62,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

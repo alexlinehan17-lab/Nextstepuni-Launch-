@@ -1201,7 +1201,7 @@ export async function loadCards(subjectId: string, level: Level): Promise<SecCar
 }
 
 export const cardsForTopic = (topicId: string, cards: SecCard[]) =>
-  cards.filter(c => c.topicId === topicId);
+  cards.filter(c => c.topicId === topicId || c.additionalTopicIds?.includes(topicId));
 
 /** Total marks available in a topic — the denominator for "marks secure". */
 export const topicMarks = (topicId: string, cards: SecCard[]) =>

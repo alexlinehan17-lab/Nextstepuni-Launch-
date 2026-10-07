@@ -13,6 +13,7 @@ import argparse
 import itertools
 import json
 from pathlib import Path
+from agricultural_science_2010_hl import reviewed_tasks as reviewed_2010_hl, paper_review
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -119,9 +120,15 @@ def reviewed_tasks():
         'examTopicIds': ['agricultural-science-ordinary-health-safety'],
         'evidence': 'Paper and scheme visually inspected. Scheme PDF page 14 explicitly prints Symbols 2 and 3 and 3+2. A two-option marking group represents partial credit without forcing an all-or-nothing five-mark tick.',
     })
+    legacy_cards, legacy_reviews = reviewed_2010_hl()
+    cards.extend(legacy_cards)
+    reviews.extend(legacy_reviews)
+    for reviewed in cards:
+        reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
+                          'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':'2026-10-07'}
     return cards, {'status': 'in-progress', 'reviewedAt': '2026-10-07',
                    'addedCardIds': [c['id'] for c in cards if c['id'] != 'agsci-2025-ol-q8b'],
-                   'correctedCardIds': ['agsci-2025-ol-q8b'], 'tasks': reviews}
+                   'correctedCardIds': ['agsci-2025-ol-q8b'], 'tasks': reviews, 'paperReviews': [paper_review()]}
 
 
 def main():

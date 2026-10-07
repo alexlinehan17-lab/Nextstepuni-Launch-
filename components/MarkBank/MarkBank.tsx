@@ -350,7 +350,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
 
   const startSession = (topicId?: string, preparedQueue?: SecCard[]) => {
     if (launchingTopicId !== null) return;
-    const pool = topicId ? cards.filter(c => c.topicId === topicId) : cards;
+    const pool = topicId ? cardsForTopic(topicId, cards) : cards;
     if (!pool.length) return;
     const queue = preparedQueue
       ?? resolveSessionQueue(pool, memories, now(), deck.examTs);
