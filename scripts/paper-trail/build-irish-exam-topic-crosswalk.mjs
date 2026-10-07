@@ -698,7 +698,7 @@ for (const paper of papers) {
 
 // Reviewed task boundaries override generic section guesses for this exact
 // paper. Frozen baseline identities remain below; new parts/routes are additive.
-const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json']
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
 for (const card of foundationTasks.cards) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
@@ -766,7 +766,7 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
   const writingTopics = [...new Set(reviewedCards.filter(c => c.section === '3').flatMap(c => c.examTopicKeys.map(key => F[key])))];
   for (const [n, label, topics] of [
     ['R-2C', passage.examTopicKeys.includes('news') ? 'Léamhthuiscint · Scéal Nuachta' : 'Léamhthuiscint · Scéal', passage.examTopicKeys.map(key => F[key])],
-    ['W-4B', letterOrForm.examTopicKeys.includes('letterWriting') ? 'Scríobh · Litir' : 'Scríobh · Foirm Iarratais', letterOrForm.examTopicKeys.map(key => F[key])],
+    ['W-4B', letterOrForm.taskFormatLabel ? 'Scríobh · ' + letterOrForm.taskFormatLabel : letterOrForm.examTopicKeys.includes('letterWriting') ? 'Scríobh · Litir' : 'Scríobh · Foirm Iarratais', letterOrForm.examTopicKeys.map(key => F[key])],
   ]) {
     const q = reviewedFoundation.q.find(q => q.n === n);
     q.label = label;
