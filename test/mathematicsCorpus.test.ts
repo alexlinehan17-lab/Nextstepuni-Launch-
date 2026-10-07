@@ -8,6 +8,7 @@ import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
 import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
+import foundation2017 from '../scripts/markbank/mathematics/reviews/2017-foundation-p1.json';
 import foundation2018 from '../scripts/markbank/mathematics/reviews/2018-foundation-p1.json';
 import foundation2019 from '../scripts/markbank/mathematics/reviews/2019-foundation-single.json';
 import foundation2020 from '../scripts/markbank/mathematics/reviews/2020-foundation-single.json';
@@ -120,6 +121,7 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 
 
 describe.each([
+  { year: 2017, count: 34, offered: 300, review: foundation2017 },
   { year: 2018, count: 28, offered: 300, review: foundation2018 },
   { year: 2019, count: 34, offered: 300, review: foundation2019 },
   { year: 2020, count: 34, offered: 300, review: foundation2020 },
@@ -166,6 +168,22 @@ describe.each([
 
 describe('Foundation Mathematics marking boundaries and source context', () => {
   const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
+
+  it('keeps the 2017 grouped scales and complete map and pattern dependencies', () => {
+    const probability = task(2017, 'p1-q7-a-b-c');
+    expect(probability.totalMarks).toBe(15);
+    expect(probability.questionText).toContain('(c)');
+    expect('mathematicsScale' in probability && probability.mathematicsScale?.marks).toEqual([0, 4, 7, 11, 15]);
+    const yard = task(2017, 'p1-q9-a-i-ii-iii');
+    expect(yard.totalMarks).toBe(20);
+    expect('mathematicsScale' in yard && yard.mathematicsScale?.marks).toEqual([0, 5, 10, 15, 20]);
+    const map = task(2017, 'p1-q8-b');
+    expect(map.sourceMaterial?.measurementRequired).toBe(true);
+    expect('mathematicsScale' in map && map.mathematicsScale?.schemePages).toEqual([15, 16]);
+    expect(task(2017, 'p1-q10-d-e').sourceMaterial?.pages).toEqual([16, 17, 18]);
+    expect(task(2017, 'p1-q10-d-e').questionText).toContain('54 chairs');
+    expect(task(2017, 'p1-q6-b').totalMarks).toBe(5);
+  });
 
   it('keeps the 2018 question and scheme file identities separate and groups all published components', () => {
     const price = task(2018, 'p1-q5-a-b-c');

@@ -1,0 +1,1157 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2017,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003BLP100EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "f5b13d8e633368fd8df1fee8fa947f51380a2c46578b08c7c3445436a9a66120",
+  "schemeSha256": "e6760035ff910f74b2ce52089b45ebfc088ef18bfc0454f5bcd51647570ce6e1",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 20 question-paper pages and all 20 scheme PDF pages; detailed allocations checked against the summary on PDF page 7 (printed page 4).",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "printedQuestionMarks": {
+    "1": 25,
+    "2": 25,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8": 25,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    6,
+    7,
+    8
+  ],
+  "sourceNotes": [
+    "All ten questions are required. Candidate and offered totals are both 300 marks.",
+    "34 independently marked units. Q1(a+b), Q1(c)(i+ii), Q5(a)(i+ii), Q7(a+b+c), Q8(a)(i+ii), Q9(a)(i+ii+iii), Q9(a)(iv+v) and Q10(d+e) each retain the scheme’s single grouped scale.",
+    "Question file LC003BLP100EV.pdf and scheme file LC003BLP000EV.pdf are distinct. Page references are PDF positions.",
+    "Q8(b) requires physical compass measurements. The source reader retains the map and printed scale with a ruler; scheme pages 15–16 include both criteria and the shaded solution.",
+    "Q10 later tasks retain the original diagram and all intervening prompt pages needed for their own question.",
+    "2017 20D uses 0,5,10,15,20 and 15D uses 0,4,7,11,15. Q6(b) is 5C, present at the foot of the summary’s left column and confirmed by the detailed scheme."
+  ],
+  "cards": [
+    {
+      "id": "maths-2017-fl-p1-q1-a-b",
+      "printedParts": [
+        "Q1(a)",
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Dáithí is planning a new garden. The garden has a rectangular planting area, surrounded by a path. The planting area is 20 m long and 12 m wide. The path is 1 m wide. A diagram of the garden is drawn below.",
+      "questionText": "(a) Find the perimeter of the planting area: Perimeter = 12 + 20 + 12 + 20 = ___ m. (b) Find the area of the planting area: Area = 12 × 20 = ___ m².",
+      "solutionQuotes": [
+        "Any work of relevance in either part",
+        "One part correct"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q1-c-i-ii",
+      "printedParts": [
+        "Q1(c)(i)",
+        "Q1(c)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        3
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Dáithí is planning a new garden. The garden has a rectangular planting area, surrounded by a path. The planting area is 20 m long and 12 m wide. The path is 1 m wide. A diagram of the garden is drawn below.",
+      "questionText": "(i) Find the total area of the garden including the path. (ii) Hence, or otherwise, find the area of the path.",
+      "solutionQuotes": [
+        "22 × 14 = 308 m2",
+        "308 – 240 = 68 m2"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Here is a list of the ages, in years, of 11 children on a school soccer team: 10, 12, 9, 11, 12, 12, 10, 9, 11, 12, 10.",
+      "questionText": "Find the mean age of the children. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Sum or count completed"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Here is a list of the ages, in years, of 11 children on a school soccer team: 10, 12, 9, 11, 12, 12, 10, 9, 11, 12, 10.",
+      "questionText": "Find the range of the children’s ages.",
+      "solutionQuotes": [
+        "12 – 9 = 3"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Here is a list of the ages, in years, of 11 children on a school soccer team: 10, 12, 9, 11, 12, 12, 10, 9, 11, 12, 10.",
+      "questionText": "Use the data in the list above to complete the table (ages 9, 10, 11, 12; number of children) and then draw a bar chart of the data using the axes provided.",
+      "solutionQuotes": [
+        "2 or more correct entries in table",
+        "1 relevant bar on correctly labelled graph"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Laoise earns €26 000 per year. She pays tax at the standard rate of 20%.",
+      "questionText": "Find Laoise’s gross tax.",
+      "solutionQuotes": [
+        "= € 5200"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Laoise earns €26 000 per year. She pays tax at the standard rate of 20%.",
+      "questionText": "Laoise has a tax credit of €3300. Find her net tax.",
+      "solutionQuotes": [
+        "5200 – 3300 = €1900"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Laoise earns €26 000 per year. She pays tax at the standard rate of 20%. Laoise has a tax credit of €3300.",
+      "questionText": "Laoise also pays PRSI of €1040 and USC of €723. Find her take-home pay.",
+      "solutionQuotes": [
+        "1900 + 1040 + 723 = 3663",
+        "26 000 – 3663 = €22 337"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Geraldine left home at 1:45 p.m. and drove to Longford. That took her 55 minutes. She stopped for a 15-minute break in Longford and then drove on to Westport.",
+      "questionText": "At what time did she leave Longford?",
+      "solutionQuotes": [
+        "1:45 + 70 mins (or + 1h 10 min) = 2:55 p.m."
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Geraldine drove from Longford to Westport. The distance from Longford to Westport is 135 km. Her average speed for this part of the journey was 75 km/h.",
+      "questionText": "How long did it take her to go from Longford to Westport? Give your answer in hours and minutes.",
+      "solutionQuotes": [
+        "= 1∙8 hours = 1h 48 min"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Later, Geraldine drove 135 km back to Longford. She stopped for a break when she had travelled 3/5 of the way.",
+      "questionText": "How many kilometres had she travelled when she took her break?",
+      "solutionQuotes": [
+        "= 81 km"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q5-a-i-ii",
+      "printedParts": [
+        "Q5(a)(i)",
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A circular disc is cut out of a square piece of metal as shown below. The disc has a radius of 3 cm.",
+      "questionText": "(i) Find the area of the disc. Give your answer correct to 1 decimal place. (ii) Find the area of metal left after the disc has been removed. Give your answer in cm², correct to 1 decimal place.",
+      "solutionQuotes": [
+        "πr2 = π(3)2 =28∙27… = 28∙3 cm2",
+        "36 – 28∙3 = 7∙7 cm2"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Conor has an oil tank in the shape of a cylinder. The length of the cylinder is 205 cm and the radius is 50 cm, as shown. (Note: 1000 cm³ = 1 litre.)",
+      "questionText": "Find the capacity (volume) of the cylinder. Give your answer in litres, correct to the nearest litre.",
+      "solutionQuotes": [
+        "πr2h = π(50)2(205)",
+        "= 1610 litres"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Conor has an oil tank in the shape of a cylinder. The length of the cylinder is 205 cm and the radius is 50 cm, as shown. (Note: 1000 cm³ = 1 litre.)",
+      "questionText": "Conor wants to fill his tank with oil. Oil costs 59 cent per litre. How much does it cost to fill the tank with oil? Give your answer correct to the nearest euro.",
+      "solutionQuotes": [
+        "1610 × 59 = 94990 cent = (€949∙90)",
+        "= €950"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Shane surveyed 240 people. He asked them what their favourite Olympic sport was. He then drew the pie chart shown, based on his results. The angles shown are Athletics 126°, Gymnastics 72°, Boxing 54°, and Other x°.",
+      "questionText": "Find the value of x°, the missing angle. Show all your working out.",
+      "solutionQuotes": [
+        "360 – (126+72+54) = 108"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Shane surveyed 240 people. He asked them what their favourite Olympic sport was. He then drew the pie chart shown, based on his results. The angles shown are Athletics 126°, Gymnastics 72°, Boxing 54°, and Other x°.",
+      "questionText": "How many people said that gymnastics was their favourite sport?",
+      "solutionQuotes": [
+        "= 48 people"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q6-a-iii",
+      "printedParts": [
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Shane surveyed 240 people. He asked them what their favourite Olympic sport was. He then drew the pie chart shown, based on his results. The angles shown are Athletics 126°, Gymnastics 72°, Boxing 54°, and Other x°.",
+      "questionText": "What percentage of people said boxing was their favourite sport?",
+      "solutionQuotes": [
+        "Indication of 54 or 360 or 100"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Lena is three years older than Rory. In 5 years’ time their ages added together will be 49 years.",
+      "questionText": "What age is Rory now?",
+      "solutionQuotes": [
+        "(49 – 3) ÷2 = 23",
+        "23 – 5 = 18"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q7-a-b-c",
+      "printedParts": [
+        "Q7(a)",
+        "Q7(b)",
+        "Q7(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Aisling has a stack of 10 cards with a number printed on one side of each card. The numbers used are 1, 2, 2, 2, 3, 4, 4, 5, 5, 6. She shuffles the cards, places them on a table with the number side down, and asks Joe to pick a card at random.",
+      "questionText": "(a) Find the probability that the number Joe picks is a 2. (b) Find the probability that the number Joe picks is an even number. (c) Find the probability that the number Joe picks is a 4 or a 5.",
+      "solutionQuotes": [
+        "One part correct",
+        "Two parts correct"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Aisling has a stack of 10 cards with a number printed on one side of each card. The numbers used are 1, 2, 2, 2, 3, 4, 4, 5, 5, 6. She shuffles the cards, places them on a table with the number side down, and asks Joe to pick a card at random.",
+      "questionText": "Aisling says: “The probability of picking an odd number is greater than the probability of picking an even number.” Do you agree with Aisling? Give a reason for your answer.",
+      "solutionQuotes": [
+        "4 odd numbers",
+        "6 even numbers"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q7-e",
+      "printedParts": [
+        "Q7(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Aisling has a stack of 10 cards with a number printed on one side of each card. The numbers used are 1, 2, 2, 2, 3, 4, 4, 5, 5, 6. She shuffles the cards, places them on a table with the number side down, and asks Joe to pick a card at random.",
+      "questionText": "A card is picked from the stack and not put back. It is a 4. A second card is then picked at random from the remaining cards. What is the probability that this second card is a 4?",
+      "solutionQuotes": [
+        "1/9"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q8-a-i-ii",
+      "printedParts": [
+        "Q8(a)(i)",
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "The graph below shows the relationship between C, the temperature in °C (Celsius) and F, the temperature in °F (Fahrenheit).",
+      "questionText": "(i) Use the graph to find the value of 60°C in °F. (ii) Use the graph to find the value of 50°F in °C.",
+      "solutionQuotes": [
+        "140℉",
+        "10℃"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The formula below shows the relationship between C, the temperature in °C (Celsius), and F, the temperature in °F (Fahrenheit): C = 5(F − 32)/9.",
+      "questionText": "Use the formula to show that 212°F is equivalent to 100°C.",
+      "solutionQuotes": [
+        "212 in formula and stops",
+        "100 = 100"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        15,
+        16
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The map below shows 2 villages, A and B, in a part of a country in Africa. An Irish aid organisation wants to build a warehouse from which to serve the two villages. The warehouse should be less than 60 km from A and less than 80 km from B. The scale is 1 cm represents 10 km.",
+      "questionText": "Using your compass, draw and shade in the region on the map where the warehouse could be built.",
+      "solutionQuotes": [
+        "Scale: 60 km = 6 cm; 80 km = 8 cm",
+        "One correct arc drawn"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2017-fl-p1-q9-a-i-ii-iii",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)",
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry",
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below shows a plan of part of a yard. The triangle OXY is the image of the right-angled triangle OAB by an enlargement of centre O and scale factor k = 2·5. The right angle is at A.",
+      "questionText": "(i) Given that |OA| = 8 m, find |OX|. (ii) Given that |AB| = 6 m, use Pythagoras’ Theorem to calculate |OB|. (iii) Find the area of the triangle OAB.",
+      "solutionQuotes": [
+        "Area = ½ × 8 × 6 = 24 m2"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q9-a-iv-v",
+      "printedParts": [
+        "Q9(a)(iv)",
+        "Q9(a)(v)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        11,
+        15
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry",
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below shows a plan of part of a yard. The triangle OXY is the image of the right-angled triangle OAB by an enlargement of centre O and scale factor k = 2·5. The right angle is at A. |OA| = 8 m and |AB| = 6 m.",
+      "questionText": "(iv) Find the area of the triangle OXY. (v) Hence, or otherwise, find the area of the shape AXYB.",
+      "solutionQuotes": [
+        "24 × (2∙5)2 = 150 m2",
+        "150 – 24 = 126 m2"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "One sheet of paper is 0·0085 cm thick.",
+      "questionText": "Write 0·0085 in the form a × 10ⁿ, where 1 ≤ a < 10 and n ∈ ℤ.",
+      "solutionQuotes": [
+        "8∙5 × 10-3"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "One sheet of paper is 0·0085 cm thick. Carla wants to put 500 sheets of this paper into the paper tray of a printer. The tray is 4 cm deep.",
+      "questionText": "Is the tray deep enough to hold all 500 sheets of paper? Give a reason for your answer.",
+      "solutionQuotes": [
+        "0∙0085 × 500 = 4∙25 cm",
+        "4∙25 > 4"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q10-a",
+      "printedParts": [
+        "Q10(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair.",
+      "questionText": "Draw the 4th pattern in the sequence.",
+      "solutionQuotes": [
+        "Relevant drawing but incomplete or incorrect"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair.",
+      "questionText": "Complete the table below to show the number of chairs in each of the first 6 patterns. The table lists 1, 2, 3, 4, 5 and 6 tables; the entry of 6 chairs for 1 table is already given.",
+      "solutionQuotes": [
+        "Shows recognition of pattern",
+        "3 correct new entries"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair. Part (b) asks for the number of chairs in each of the first 6 patterns.",
+      "questionText": "Use your data from part (b) to graph the relationship between the number of tables and the number of chairs.",
+      "solutionQuotes": [
+        "1 correct plot from table",
+        "4 correct plots"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q10-d-e",
+      "printedParts": [
+        "Q10(d)",
+        "Q10(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        17,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair.",
+      "questionText": "(d) How many chairs are there in the 10th pattern? (e) There are exactly 54 chairs in one of the patterns. How many tables are in that pattern?",
+      "solutionQuotes": [
+        "42 chairs",
+        "13 tables"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q10-f",
+      "printedParts": [
+        "Q10(f)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair.",
+      "questionText": "How many chairs, in total, are there in the first 7 patterns?",
+      "solutionQuotes": [
+        "126 chairs"
+      ]
+    },
+    {
+      "id": "maths-2017-fl-p1-q10-g",
+      "printedParts": [
+        "Q10(g)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair.",
+      "questionText": "Write a formula (in words) that shows the relationship between the number of chairs and the number of tables in any given pattern.",
+      "solutionQuotes": [
+        "4 times number of tables + 2"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        15
+      ],
+      "classification": "alternative-method",
+      "reason": "Hence/or otherwise permits another method for the same area calculation; it does not create selectable prompts."
+    },
+    {
+      "pages": [
+        11
+      ],
+      "classification": "probability-sample-space",
+      "reason": "Picking cards and the event 4 or 5 describe random outcomes, not choices of practice prompts. All probability parts remain required."
+    },
+    {
+      "pages": [
+        18
+      ],
+      "classification": "algebraic-unknown",
+      "reason": "One of the patterns identifies the unknown pattern containing 54 chairs; the candidate solves for its table count."
+    }
+  ],
+  "selectionDecisions": {
+    "2:07f7c42ffd22193f": {
+      "classification": "all-questions-required",
+      "reason": "All ten questions are required, including all eight Section A questions. All published scale units are retained."
+    },
+    "3:7dfdff40f01d285c": {
+      "classification": "all-questions-required",
+      "reason": "All ten questions are required, including all eight Section A questions. All published scale units are retained."
+    },
+    "3:d35774e2fde3ef89": {
+      "classification": "alternative-method",
+      "reason": "Hence/or otherwise permits another method for the same area calculation; it does not create selectable prompts."
+    },
+    "15:87ca7d4e4b609ea3": {
+      "classification": "alternative-method",
+      "reason": "Hence/or otherwise permits another method for the same area calculation; it does not create selectable prompts."
+    },
+    "18:261c99af07b2840c": {
+      "classification": "algebraic-unknown",
+      "reason": "One of the patterns identifies the unknown pattern containing 54 chairs; the candidate solves for its table count."
+    }
+  }
+}

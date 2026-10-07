@@ -49167,5 +49167,1015 @@
    }
   ],
   "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q1-a-b",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q1-a-b",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q1(a), Q1(b)",
+  "stem": "Dáithí is planning a new garden. The garden has a rectangular planting area, surrounded by a path. The planting area is 20 m long and 12 m wide. The path is 1 m wide. A diagram of the garden is drawn below.",
+  "questionText": "(a) Find the perimeter of the planting area: Perimeter = 12 + 20 + 12 + 20 = ___ m. (b) Find the area of the planting area: Area = 12 × 20 = ___ m².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q1-a-b-solution-1",
+    "kind": "point",
+    "verbatim": "Any work of relevance in either part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q1-a-b-solution-2",
+    "kind": "point",
+    "verbatim": "One part correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q1-c-i-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q1-c-i-ii",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q1(c)(i), Q1(c)(ii)",
+  "stem": "Dáithí is planning a new garden. The garden has a rectangular planting area, surrounded by a path. The planting area is 20 m long and 12 m wide. The path is 1 m wide. A diagram of the garden is drawn below.",
+  "questionText": "(i) Find the total area of the garden including the path. (ii) Hence, or otherwise, find the area of the path.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q1-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "22 × 14 = 308 m2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q1-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "308 – 240 = 68 m2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q2-a",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q2-a",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q2(a)",
+  "stem": "Here is a list of the ages, in years, of 11 children on a school soccer team: 10, 12, 9, 11, 12, 12, 10, 9, 11, 12, 10.",
+  "questionText": "Find the mean age of the children. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Sum or count completed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q2-b",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q2-b",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q2(b)",
+  "stem": "Here is a list of the ages, in years, of 11 children on a school soccer team: 10, 12, 9, 11, 12, 12, 10, 9, 11, 12, 10.",
+  "questionText": "Find the range of the children’s ages.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "12 – 9 = 3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q2-c",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q2-c",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q2(c)",
+  "stem": "Here is a list of the ages, in years, of 11 children on a school soccer team: 10, 12, 9, 11, 12, 12, 10, 9, 11, 12, 10.",
+  "questionText": "Use the data in the list above to complete the table (ages 9, 10, 11, 12; number of children) and then draw a bar chart of the data using the axes provided.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "2 or more correct entries in table",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "1 relevant bar on correctly labelled graph",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q3-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q3-a",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q3(a)",
+  "stem": "Laoise earns €26 000 per year. She pays tax at the standard rate of 20%.",
+  "questionText": "Find Laoise’s gross tax.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "= € 5200",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q3-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q3-b",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q3(b)",
+  "stem": "Laoise earns €26 000 per year. She pays tax at the standard rate of 20%.",
+  "questionText": "Laoise has a tax credit of €3300. Find her net tax.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "5200 – 3300 = €1900",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q3-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q3-c",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q3(c)",
+  "stem": "Laoise earns €26 000 per year. She pays tax at the standard rate of 20%. Laoise has a tax credit of €3300.",
+  "questionText": "Laoise also pays PRSI of €1040 and USC of €723. Find her take-home pay.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "1900 + 1040 + 723 = 3663",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q3-c-solution-2",
+    "kind": "point",
+    "verbatim": "26 000 – 3663 = €22 337",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q4-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q4-a",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q4(a)",
+  "stem": "Geraldine left home at 1:45 p.m. and drove to Longford. That took her 55 minutes. She stopped for a 15-minute break in Longford and then drove on to Westport.",
+  "questionText": "At what time did she leave Longford?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "1:45 + 70 mins (or + 1h 10 min) = 2:55 p.m.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q4-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q4-b",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q4(b)",
+  "stem": "Geraldine drove from Longford to Westport. The distance from Longford to Westport is 135 km. Her average speed for this part of the journey was 75 km/h.",
+  "questionText": "How long did it take her to go from Longford to Westport? Give your answer in hours and minutes.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "= 1∙8 hours = 1h 48 min",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q4-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q4-c",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q4(c)",
+  "stem": "Later, Geraldine drove 135 km back to Longford. She stopped for a break when she had travelled 3/5 of the way.",
+  "questionText": "How many kilometres had she travelled when she took her break?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q4-c-solution-1",
+    "kind": "point",
+    "verbatim": "= 81 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q5-a-i-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q5-a-i-ii",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q5(a)(i), Q5(a)(ii)",
+  "stem": "A circular disc is cut out of a square piece of metal as shown below. The disc has a radius of 3 cm.",
+  "questionText": "(i) Find the area of the disc. Give your answer correct to 1 decimal place. (ii) Find the area of metal left after the disc has been removed. Give your answer in cm², correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q5-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "πr2 = π(3)2 =28∙27… = 28∙3 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q5-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "36 – 28∙3 = 7∙7 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q5-b-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q5-b-i",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q5(b)(i)",
+  "stem": "Conor has an oil tank in the shape of a cylinder. The length of the cylinder is 205 cm and the radius is 50 cm, as shown. (Note: 1000 cm³ = 1 litre.)",
+  "questionText": "Find the capacity (volume) of the cylinder. Give your answer in litres, correct to the nearest litre.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q5-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "πr2h = π(50)2(205)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q5-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "= 1610 litres",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q5-b-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q5-b-ii",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q5(b)(ii)",
+  "stem": "Conor has an oil tank in the shape of a cylinder. The length of the cylinder is 205 cm and the radius is 50 cm, as shown. (Note: 1000 cm³ = 1 litre.)",
+  "questionText": "Conor wants to fill his tank with oil. Oil costs 59 cent per litre. How much does it cost to fill the tank with oil? Give your answer correct to the nearest euro.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q5-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "1610 × 59 = 94990 cent = (€949∙90)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q5-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "= €950",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q6-a-i",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q6-a-i",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q6(a)(i)",
+  "stem": "Shane surveyed 240 people. He asked them what their favourite Olympic sport was. He then drew the pie chart shown, based on his results. The angles shown are Athletics 126°, Gymnastics 72°, Boxing 54°, and Other x°.",
+  "questionText": "Find the value of x°, the missing angle. Show all your working out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q6-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "360 – (126+72+54) = 108",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q6-a-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q6-a-ii",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q6(a)(ii)",
+  "stem": "Shane surveyed 240 people. He asked them what their favourite Olympic sport was. He then drew the pie chart shown, based on his results. The angles shown are Athletics 126°, Gymnastics 72°, Boxing 54°, and Other x°.",
+  "questionText": "How many people said that gymnastics was their favourite sport?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q6-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 48 people",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q6-a-iii",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q6-a-iii",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q6(a)(iii)",
+  "stem": "Shane surveyed 240 people. He asked them what their favourite Olympic sport was. He then drew the pie chart shown, based on his results. The angles shown are Athletics 126°, Gymnastics 72°, Boxing 54°, and Other x°.",
+  "questionText": "What percentage of people said boxing was their favourite sport?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q6-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Indication of 54 or 360 or 100",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q6-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q6-b",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q6(b)",
+  "stem": "Lena is three years older than Rory. In 5 years’ time their ages added together will be 49 years.",
+  "questionText": "What age is Rory now?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "(49 – 3) ÷2 = 23",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "23 – 5 = 18",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q7-a-b-c",
+  "topicId": "maths-1-2",
+  "conceptId": "p1-q7-a-b-c",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q7(a), Q7(b), Q7(c)",
+  "stem": "Aisling has a stack of 10 cards with a number printed on one side of each card. The numbers used are 1, 2, 2, 2, 3, 4, 4, 5, 5, 6. She shuffles the cards, places them on a table with the number side down, and asks Joe to pick a card at random.",
+  "questionText": "(a) Find the probability that the number Joe picks is a 2. (b) Find the probability that the number Joe picks is an even number. (c) Find the probability that the number Joe picks is a 4 or a 5.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q7-a-b-c-solution-1",
+    "kind": "point",
+    "verbatim": "One part correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q7-a-b-c-solution-2",
+    "kind": "point",
+    "verbatim": "Two parts correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q7-d",
+  "topicId": "maths-1-2",
+  "conceptId": "p1-q7-d",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q7(d)",
+  "stem": "Aisling has a stack of 10 cards with a number printed on one side of each card. The numbers used are 1, 2, 2, 2, 3, 4, 4, 5, 5, 6. She shuffles the cards, places them on a table with the number side down, and asks Joe to pick a card at random.",
+  "questionText": "Aisling says: “The probability of picking an odd number is greater than the probability of picking an even number.” Do you agree with Aisling? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "4 odd numbers",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q7-d-solution-2",
+    "kind": "point",
+    "verbatim": "6 even numbers",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q7-e",
+  "topicId": "maths-1-2",
+  "conceptId": "p1-q7-e",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q7(e)",
+  "stem": "Aisling has a stack of 10 cards with a number printed on one side of each card. The numbers used are 1, 2, 2, 2, 3, 4, 4, 5, 5, 6. She shuffles the cards, places them on a table with the number side down, and asks Joe to pick a card at random.",
+  "questionText": "A card is picked from the stack and not put back. It is a 4. A second card is then picked at random from the remaining cards. What is the probability that this second card is a 4?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q7-e-solution-1",
+    "kind": "point",
+    "verbatim": "1/9",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q8-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-a-i-ii",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q8(a)(i), Q8(a)(ii)",
+  "stem": "The graph below shows the relationship between C, the temperature in °C (Celsius) and F, the temperature in °F (Fahrenheit).",
+  "questionText": "(i) Use the graph to find the value of 60°C in °F. (ii) Use the graph to find the value of 50°F in °C.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q8-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "140℉",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q8-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "10℃",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q8-a-iii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q8-a-iii",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q8(a)(iii)",
+  "stem": "The formula below shows the relationship between C, the temperature in °C (Celsius), and F, the temperature in °F (Fahrenheit): C = 5(F − 32)/9.",
+  "questionText": "Use the formula to show that 212°F is equivalent to 100°C.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q8-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "212 in formula and stops",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q8-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "100 = 100",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q8-b",
+  "topicId": "maths-2-1",
+  "conceptId": "p1-q8-b",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2017 FL Paper 1 Q8(b)",
+  "stem": "The map below shows 2 villages, A and B, in a part of a country in Africa. An Irish aid organisation wants to build a warehouse from which to serve the two villages. The warehouse should be less than 60 km from A and less than 80 km from B. The scale is 1 cm represents 10 km.",
+  "questionText": "Using your compass, draw and shade in the region on the map where the warehouse could be built.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "Scale: 60 km = 6 cm; 80 km = 8 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q8-b-solution-2",
+    "kind": "point",
+    "verbatim": "One correct arc drawn",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q9-a-i-ii-iii",
+  "topicId": "maths-2-4",
+  "conceptId": "p1-q9-a-i-ii-iii",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 FL Paper 1 Q9(a)(i), Q9(a)(ii), Q9(a)(iii)",
+  "stem": "The diagram below shows a plan of part of a yard. The triangle OXY is the image of the right-angled triangle OAB by an enlargement of centre O and scale factor k = 2·5. The right angle is at A.",
+  "questionText": "(i) Given that |OA| = 8 m, find |OX|. (ii) Given that |AB| = 6 m, use Pythagoras’ Theorem to calculate |OB|. (iii) Find the area of the triangle OAB.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q9-a-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Area = ½ × 8 × 6 = 24 m2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q9-a-iv-v",
+  "topicId": "maths-2-4",
+  "conceptId": "p1-q9-a-iv-v",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 FL Paper 1 Q9(a)(iv), Q9(a)(v)",
+  "stem": "The diagram below shows a plan of part of a yard. The triangle OXY is the image of the right-angled triangle OAB by an enlargement of centre O and scale factor k = 2·5. The right angle is at A. |OA| = 8 m and |AB| = 6 m.",
+  "questionText": "(iv) Find the area of the triangle OXY. (v) Hence, or otherwise, find the area of the shape AXYB.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q9-a-iv-v-solution-1",
+    "kind": "point",
+    "verbatim": "24 × (2∙5)2 = 150 m2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q9-a-iv-v-solution-2",
+    "kind": "point",
+    "verbatim": "150 – 24 = 126 m2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q9-b-i",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q9-b-i",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 FL Paper 1 Q9(b)(i)",
+  "stem": "One sheet of paper is 0·0085 cm thick.",
+  "questionText": "Write 0·0085 in the form a × 10ⁿ, where 1 ≤ a < 10 and n ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "8∙5 × 10-3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q9-b-ii",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q9-b-ii",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 FL Paper 1 Q9(b)(ii)",
+  "stem": "One sheet of paper is 0·0085 cm thick. Carla wants to put 500 sheets of this paper into the paper tray of a printer. The tray is 4 cm deep.",
+  "questionText": "Is the tray deep enough to hold all 500 sheets of paper? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "0∙0085 × 500 = 4∙25 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q9-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "4∙25 > 4",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q10-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q10-a",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 FL Paper 1 Q10(a)",
+  "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair.",
+  "questionText": "Draw the 4th pattern in the sequence.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q10-a-solution-1",
+    "kind": "point",
+    "verbatim": "Relevant drawing but incomplete or incorrect",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q10-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q10-b",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 FL Paper 1 Q10(b)",
+  "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair.",
+  "questionText": "Complete the table below to show the number of chairs in each of the first 6 patterns. The table lists 1, 2, 3, 4, 5 and 6 tables; the entry of 6 chairs for 1 table is already given.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q10-b-solution-1",
+    "kind": "point",
+    "verbatim": "Shows recognition of pattern",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q10-b-solution-2",
+    "kind": "point",
+    "verbatim": "3 correct new entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q10-c",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q10-c",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 FL Paper 1 Q10(c)",
+  "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair. Part (b) asks for the number of chairs in each of the first 6 patterns.",
+  "questionText": "Use your data from part (b) to graph the relationship between the number of tables and the number of chairs.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q10-c-solution-1",
+    "kind": "point",
+    "verbatim": "1 correct plot from table",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q10-c-solution-2",
+    "kind": "point",
+    "verbatim": "4 correct plots",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q10-d-e",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q10-d-e",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 FL Paper 1 Q10(d), Q10(e)",
+  "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair.",
+  "questionText": "(d) How many chairs are there in the 10th pattern? (e) There are exactly 54 chairs in one of the patterns. How many tables are in that pattern?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q10-d-e-solution-1",
+    "kind": "point",
+    "verbatim": "42 chairs",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2017-fl-p1-q10-d-e-solution-2",
+    "kind": "point",
+    "verbatim": "13 tables",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q10-f",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q10-f",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 FL Paper 1 Q10(f)",
+  "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair.",
+  "questionText": "How many chairs, in total, are there in the first 7 patterns?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q10-f-solution-1",
+    "kind": "point",
+    "verbatim": "126 chairs",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2017-fl-p1-q10-g",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q10-g",
+  "level": "foundation",
+  "year": 2017,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2017 FL Paper 1 Q10(g)",
+  "stem": "The following diagram shows an arrangement of tables and chairs in a sequence of patterns. The first three patterns have 1, 2 and 3 tables respectively, with 6, 10 and 14 chairs. A rectangle represents a table and a filled circle represents a chair.",
+  "questionText": "Write a formula (in words) that shows the relationship between the number of chairs and the number of tables in any given pattern.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2017-fl-p1-q10-g-solution-1",
+    "kind": "point",
+    "verbatim": "4 times number of tables + 2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
  }
 ]
