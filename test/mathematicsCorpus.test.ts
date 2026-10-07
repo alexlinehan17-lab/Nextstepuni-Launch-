@@ -8,6 +8,7 @@ import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
 import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
+import foundation2019 from '../scripts/markbank/mathematics/reviews/2019-foundation-single.json';
 import foundation2020 from '../scripts/markbank/mathematics/reviews/2020-foundation-single.json';
 import foundation2021 from '../scripts/markbank/mathematics/reviews/2021-foundation-single.json';
 import foundation2022 from '../scripts/markbank/mathematics/reviews/2022-foundation-single.json';
@@ -118,6 +119,7 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 
 
 describe.each([
+  { year: 2019, count: 34, offered: 300, review: foundation2019 },
   { year: 2020, count: 34, offered: 300, review: foundation2020 },
   { year: 2021, count: 48, offered: 390, review: foundation2021 },
   { year: 2022, count: 53, offered: 390, review: foundation2022 },
@@ -162,6 +164,20 @@ describe.each([
 
 describe('Foundation Mathematics marking boundaries and source context', () => {
   const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
+
+  it('retains the 2019 whole probability task, graph instructions and 45/55-mark long questions', () => {
+    expect(foundation2019.printedQuestionMarks['9']).toBe(45);
+    expect(foundation2019.printedQuestionMarks['10']).toBe(55);
+    const probability = task(2019, 'q2-b-i-ii-iii-iv');
+    expect(probability.totalMarks).toBe(15);
+    expect(probability.questionText).toContain('(iv)');
+    expect('mathematicsScale' in probability && probability.mathematicsScale?.marks).toEqual([0, 3, 6, 9, 15]);
+    expect(task(2019, 'q5-a-b-c').questionText).toContain('(c)');
+    expect(task(2019, 'q5-d').stem).toContain('show relevant work on the graph');
+    expect(task(2019, 'q7-b-c').questionText).toContain('10 cm');
+    expect(task(2019, 'q9-d').sourceMaterial?.pages).toEqual([14, 15]);
+    expect(task(2019, 'q9-d').sourceMaterial?.measurementRequired).toBe(true);
+  });
 
   it('retains the 2020 shared scales, year-specific marks and diagram dependencies', () => {
     for (const suffix of ['q4-a-i-ii', 'q5-b-i-ii-iii', 'q10-a-i-ii-iii']) {

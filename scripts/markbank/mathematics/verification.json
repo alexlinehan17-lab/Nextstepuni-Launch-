@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2020, 2021, 2022, 2023, 2024 and 2026",
-  "runtimeCards": 1131,
-  "reviewedTasks": 460,
+  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2019, 2020, 2021, 2022, 2023, 2024 and 2026",
+  "runtimeCards": 1165,
+  "reviewedTasks": 494,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed through Foundation 2023\u20132026; 2020\u20132022 data passed generation, typecheck and regression tests",
+  "productionBuild": "passed through Foundation 2023\u20132026; 2019\u20132022 data passed generation, typecheck and regression tests; broader build running",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -128,28 +128,16 @@
     "regressionWorkers": 1
   },
   "latestBatch": {
-    "paper": "2020 Foundation",
+    "paper": "2019 Foundation",
     "independentlyReviewedTasks": 34,
-    "targetedRegressionTests": 162,
-    "previousRuntimeIdsRetained": 1097,
+    "targetedRegressionTests": 166,
+    "previousRuntimeIdsRetained": 1131,
     "offeredMarks": 300,
     "candidateMarks": 300,
-    "paperPagesInspected": 28,
+    "paperPagesInspected": 20,
     "schemePagesInspected": 20,
-    "runtimeIdsSha256": "edbf4509208164ca1c928da5d34e54a2d622883841ec7544db1acd10311a4f38",
-    "regressionWorkers": 1,
-    "desktopAndMobileOriginalQuestionAndScheme": true,
-    "schemeHiddenBeforeReveal": true,
-    "exclusiveScaleAward": 7,
-    "escapeAndFocusReturn": true,
-    "rulerKnownPrintedLengthCm": 8,
-    "rulerReadingsCm": {
-      "desktop100": 7.99,
-      "desktop125": 7.98,
-      "mobile100": 7.97,
-      "mobile125": 7.99
-    },
-    "pageErrors": []
+    "runtimeIdsSha256": "fe46152b697dbc3172abba1834cc7b7c011fbd5cdd8d37f8fff20809e69a1e55",
+    "regressionWorkers": 1
   },
   "foundation2022": {
     "paper": "2022 Foundation",
@@ -174,5 +162,29 @@
     "schemePagesInspected": 28,
     "runtimeIdsSha256": "3d8e4c2706be3d84d3306a922eaaeb7574f29291fd6deaf83ce260816ca18a43",
     "regressionWorkers": 1
+  },
+  "foundation2020": {
+    "paper": "2020 Foundation",
+    "independentlyReviewedTasks": 34,
+    "targetedRegressionTests": 162,
+    "previousRuntimeIdsRetained": 1097,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 28,
+    "schemePagesInspected": 20,
+    "runtimeIdsSha256": "edbf4509208164ca1c928da5d34e54a2d622883841ec7544db1acd10311a4f38",
+    "regressionWorkers": 1,
+    "desktopAndMobileOriginalQuestionAndScheme": true,
+    "schemeHiddenBeforeReveal": true,
+    "exclusiveScaleAward": 7,
+    "escapeAndFocusReturn": true,
+    "rulerKnownPrintedLengthCm": 8,
+    "rulerReadingsCm": {
+      "desktop100": 7.99,
+      "desktop125": 7.98,
+      "mobile100": 7.97,
+      "mobile125": 7.99
+    },
+    "pageErrors": []
   }
 }
