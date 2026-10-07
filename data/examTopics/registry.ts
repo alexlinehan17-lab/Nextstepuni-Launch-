@@ -845,6 +845,7 @@ const AGRICULTURAL_SCIENCE_CURRICULUM_CROSSWALK: Record<string, string[]> = {
   'agricultural-science-higher-animal-diseases': ['agricultural-science-3-5'],
   'agricultural-science-higher-animal-physiology-digestive-system': ['agricultural-science-3-0'],
   'agricultural-science-higher-animal-physiology-circulatory-system': ['agricultural-science-3-0'],
+  'agricultural-science-higher-animal-physiology-respiratory-system': ['agricultural-science-3-0'],
   'agricultural-science-higher-animal-physiology-reproductive-systems': ['agricultural-science-3-0', 'agricultural-science-3-6'],
   'agricultural-science-higher-beef-cattle': ['agricultural-science-3-2', 'agricultural-science-3-3', 'agricultural-science-3-4', 'agricultural-science-3-5', 'agricultural-science-3-6'],
   'agricultural-science-higher-classification-of-animals-plants': ['agricultural-science-2-1', 'agricultural-science-3-1'],

@@ -508,79 +508,89 @@
         "sha256": "eb8f1a690343c38320680ed8425bdf0365e4ea1e4afe240d478026bf8909fdc1",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 62,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "f3a498902a4ead71",
           "page": 1,
           "cue": "any six",
           "context": "_______________ THURSDAY, 21 JUNE – MORNING, 9.30 – 12.00 ________________________ Answer any six questions. Question 1 carries 60 marks. All other questions carry 48 marks each. Write all your answers in the answer book. Total marks: 300 marks. [OVER",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Six independent examination questions are selected; every question is retained."
         },
         {
           "id": "ce3e4e1d0e60ccd9",
           "page": 2,
           "cue": "any six",
           "context": "Page 2 of 8 1. Answer any six of the parts (a) – (j). (a) (i) Name one monocot plant and one dicot plant. (ii) List two differences between monocot plants and dicot plants. (b) Give three characteristics of members of the class Mammalia. (c) (i) Mention two m",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1 selects six separately priced lettered parts. All are retained, splitting only at published internal awards."
         },
         {
           "id": "0edb5bbb1e0254c2",
           "page": 3,
           "cue": "any two",
           "context": " (b) (i) List four factors that can cause changes in milk composition. (ii) Fully explain any two of the factors referred to above. (c) Contamination of milk is a problem in milk processing. (i) List three contaminants of milk. (ii) Describe an experiment to test the hygienic quality of milk. (48 marks) OR 3. Option Two (a) D",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q3 Option One (b)(ii) selects two factors from the student’s own preceding answer; no finite pool is printed."
         },
         {
           "id": "a64eef37127d491b",
           "page": 3,
           "cue": "any two",
           "context": " with steaming-up as feeding strategies in sheep production. (48 marks) 4. In the case of any two of the following, describe a laboratory or field method: (a) To assess the quality of grass silage. (b) To prepare a sample of plant cells for examination under a microscope. (c) To show that carbon dioxide is necessary for photo",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4 selects two independently priced 24-mark methods. All four are retained."
         },
         {
           "id": "341e437d57edf3c6",
           "page": 4,
           "cue": "any one",
           "context": "ble mastitis-prevention programme in a spring-calving dairy herd. (c) Outline the role of any one hormone in milk production in a lactating cow. (48 marks) 7. (a) Explain any three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission. (b) In cereal tria",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q6(c) asks for one hormone without a printed finite pool. Scheme examples are coherent answer menus."
         },
         {
           "id": "0e1658b6d9ac7f04",
           "page": 4,
           "cue": "any three",
           "context": " role of any one hormone in milk production in a lactating cow. (48 marks) 7. (a) Explain any three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission. (b) In cereal trials for oats, the pure-breeding variety Barra, with a straw length of approximately ",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q7(a) prints four terms and asks for three. All four combinations are retained."
         },
         {
           "id": "2400d5f4cae0b778",
           "page": 4,
           "cue": "two of",
           "context": "uitable method, show the genotypes and matching phenotypes resulting from a cross between two of the new hybrids. (c) Describe one natural method of vegetative reproduction in plants. (d) Identify two reasons why male animals are castrated on farms. (48 marks)",
-          "classification": "pending"
+          "classification": "required-condition",
+          "reason": "Q7(b)(ii) crosses two of the new hybrids, both BE. This is a required parent condition, not a finite response selection."
         },
         {
           "id": "3514ced833fb6e33",
           "page": 5,
           "cue": "any two",
           "context": "Page 5 of 8 8. Answer any two of the parts (a), (b), (c). (a) Describe, with the aid of a labelled diagram, how the element nitrogen is recycled in nature. (b) “There will always be a role for hay in Irish farming.” (i) Defend this statement. (ii) Outline thr",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8 selects two independently priced parts. All internal tasks and finite comparison routes are retained."
         },
         {
           "id": "b8d6b839e57eec1c",
           "page": 5,
           "cue": "any three",
           "context": "eps in conserving grass as hay. (c) Highlight the main differences between the members of any three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores. (48 marks) 9. Give scientific explanations for any four of the following: (a)",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c) prints four comparison pairs and asks for three. All four complete combinations are retained."
         },
         {
           "id": "7f8409467c8fcc41",
           "page": 5,
           "cue": "any four",
           "context": "d nurse crop. (iv) Zoonoses and zoospores. (48 marks) 9. Give scientific explanations for any four of the following: (a) The importance of pollination in plants. (b) A greater demand for energy by animals kept outdoors over the winter. (c) The occurrence of bare patches of ground in a recently sown cereal crop. (d) The benefit",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 selects four independently marked twelve-mark explanations. All five are retained."
         }
       ]
     },
@@ -599,7 +609,7 @@
         "sha256": "1918e89a2642b7e03baecec7975d204d04e6029cc433a1a65a13f60951308aad",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 62,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

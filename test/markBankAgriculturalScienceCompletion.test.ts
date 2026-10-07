@@ -38,7 +38,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(63);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(62);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(1);
   });
 
@@ -307,8 +307,90 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
   });
 
+
+  it('expands both 2012 three-of-four pools without summing alternative-route tariffs', () => {
+    for (const [prefix,total,rows] of [['q7a',12,3],['q8c',24,6]] as const) {
+      const routes = higher.filter(card => card.id.startsWith(`agsci-2012-hl-${prefix}-route-`));
+      expect(routes.map(card => card.id.split('-route-')[1])).toEqual(['i-ii-iii','i-ii-iv','i-iii-iv','ii-iii-iv']);
+      for (const candidate of routes) {
+        const card = get(candidate.id);
+        expect(card.totalMarks).toBe(total);
+        expect(card.rows).toHaveLength(rows);
+        expect(card.questionText).toContain('three');
+        expect(card.stem).toContain('Practice choice:');
+        const task = review.tasks.find(task => task.cardIds.includes(card.id))!;
+        expect(task.selection.kind).toBe('closed');
+        if (prefix === 'q8c') {
+          const claims = Object.fromEntries(card.rows.map(row => [row.id,[0,1]]));
+          expect(marksClaimed(card,{},claims)).toBe(24);
+          expect(marksClaimed(card,{},Object.fromEntries(card.rows.map(row => [row.id,[0]])))).toBe(12);
+        } else {
+          expect(marksClaimed(card,Object.fromEntries(card.rows.map(row => [row.id,'yes'])),{})).toBe(12);
+        }
+      }
+    }
+  });
+
+  it('preserves the 2012 pooled first-correct scales and repeated answer fields', () => {
+    const tissues = get('agsci-2012-hl-q1d');
+    for (let n=0;n<=6;n++) {
+      expect(marksClaimed(tissues,{}, {'r-1':Array.from({length:n},(_,i)=>i)})).toBe([0,2,4,6,8,9,10][n]);
+    }
+    const meiosis = get('agsci-2012-hl-q1h');
+    expect(meiosis.rows[0].group?.options).toHaveLength(3);
+    expect(marksClaimed(meiosis,{}, {'r-1':[2]})).toBe(4);
+    expect(marksClaimed(meiosis,{}, {'r-1':[0,1,2]})).toBe(10);
+    const tramlines = get('agsci-2012-hl-q1f');
+    expect(tramlines.answerVariants).toHaveLength(6);
+    for (const variant of tramlines.answerVariants!) {
+      const effective = {...tramlines,rows:variant.rows};
+      expect(variant.rows[0].group?.options).toHaveLength(3);
+      expect(marksClaimed(effective,{}, {'r-1':[2]})).toBe(4);
+      expect(marksClaimed(effective,{}, {'r-1':[0,1,2]})).toBe(10);
+    }
+  });
+
+  it('keeps partial drawing bands and the full nitrogen pool under manual marking', () => {
+    for (const [key,total] of [['q1aii',6],['q2aii',10],['q3o1a',11],['q6ai',10],['q8a',24]] as const) {
+      const card = get(`agsci-2012-hl-${key}`);
+      expect(card.tariffModel.kind).toBe('questionTotal');
+      expect(card.totalMarks).toBe(total);
+      expect(card.rows.every(row => row.kind === 'criterion' && row.marks === null)).toBe(true);
+    }
+    expect(get('agsci-2012-hl-q2aii').rows[0].contextNote).toContain('4, 2 or 0');
+    expect(get('agsci-2012-hl-q6ai').rows[1].contextNote).toContain('6, 3 or 0');
+    expect(get('agsci-2012-hl-q8a').rows[1].verbatim).toContain('addition of artificial fertilisers');
+    for (const key of ['q6ai','q6aii','q7bii']) expect(get(`agsci-2012-hl-${key}`).figure?.solution).toBe(true);
+  });
+
+  it('does not award extra marks for the repeated heterozygous oat offspring', () => {
+    const card = get('agsci-2012-hl-q7bii');
+    expect(card.rows.map(row => row.marks)).toEqual([2,2,3,3]);
+    expect(card.rows[2].group?.options).toEqual(['BB','BE','EE']);
+    expect(card.rows[3].group?.options).toEqual(['500mm (BB)','650mm (BE)','800mm (EE)']);
+    expect(marksClaimed(card,{'r-1':'yes','r-2':'yes'}, {'r-3':[0,1,2],'r-4':[0,1,2]})).toBe(10);
+    expect(marksClaimed(card,{}, {'r-3':[1],'r-4':[1]})).toBe(2);
+    expect(card.stem).toContain('500 mm');
+    expect(card.stem).toContain('800 mm');
+    expect(card.rows[0].contextNote).toContain('F2');
+  });
+
+  it('retains open answer context and distinguishes source defects from scoring', () => {
+    expect(get('agsci-2012-hl-q3o1bii').stem).toContain('First list four factors');
+    expect(get('agsci-2012-hl-q3o2biii').stem).toContain('two breeds');
+    expect(get('agsci-2012-hl-q2b').answerVariants).toHaveLength(3);
+    expect(get('agsci-2012-hl-q7c').answerVariants).toHaveLength(7);
+    expect(get('agsci-2012-hl-q3o1cii').answerVariants?.every(v=>v.rows[0].verbatim.includes('37°C'))).toBe(true);
+    const map:PaperAnswerMap=JSON.parse(readFileSync(resolve(__dirname,'../public/paper-answers/2012/LC024ALP000EV.pdf.json'),'utf8'));
+    expect(map.q.find(q=>q.n==='4')?.schemeNote).toContain('yellow-orange precipitate');
+    expect(map.q.find(q=>q.n==='5')?.schemeNote).toContain('Earthing-up');
+    expect(map.q.find(q=>q.n==='8')?.schemeNote).toContain('moisture content');
+    const tissues=review.tasks.find(task=>task.cardIds.includes('agsci-2012-hl-q1d'))!;
+    expect(tissues.examTopicIds).toContain('agricultural-science-higher-animal-physiology-respiratory-system');
+  });
+
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(8);
+    expect(review.paperReviews).toHaveLength(9);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -381,7 +463,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(306);
+    expect(atlas.markBankCards).toHaveLength(368);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

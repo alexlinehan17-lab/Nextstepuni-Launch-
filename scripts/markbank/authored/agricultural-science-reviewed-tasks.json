@@ -306,7 +306,69 @@
     "agsci-2011-ol-q13di",
     "agsci-2011-ol-q13dii",
     "agsci-2011-ol-q13diii",
-    "agsci-2011-ol-q13div"
+    "agsci-2011-ol-q13div",
+    "agsci-2012-hl-q1ai",
+    "agsci-2012-hl-q1aii",
+    "agsci-2012-hl-q1b",
+    "agsci-2012-hl-q1ci",
+    "agsci-2012-hl-q1cii",
+    "agsci-2012-hl-q1d",
+    "agsci-2012-hl-q1e",
+    "agsci-2012-hl-q1f",
+    "agsci-2012-hl-q1g",
+    "agsci-2012-hl-q1h",
+    "agsci-2012-hl-q1i",
+    "agsci-2012-hl-q1ji",
+    "agsci-2012-hl-q1jii",
+    "agsci-2012-hl-q2ai",
+    "agsci-2012-hl-q2aii",
+    "agsci-2012-hl-q2b",
+    "agsci-2012-hl-q2c",
+    "agsci-2012-hl-q3o1a",
+    "agsci-2012-hl-q3o1bi",
+    "agsci-2012-hl-q3o1bii",
+    "agsci-2012-hl-q3o1ci",
+    "agsci-2012-hl-q3o1cii",
+    "agsci-2012-hl-q3o2a",
+    "agsci-2012-hl-q3o2bi",
+    "agsci-2012-hl-q3o2bii",
+    "agsci-2012-hl-q3o2biii",
+    "agsci-2012-hl-q3o2c",
+    "agsci-2012-hl-q4a",
+    "agsci-2012-hl-q4b",
+    "agsci-2012-hl-q4c",
+    "agsci-2012-hl-q4d",
+    "agsci-2012-hl-q5a",
+    "agsci-2012-hl-q5bi",
+    "agsci-2012-hl-q5bii",
+    "agsci-2012-hl-q5biii",
+    "agsci-2012-hl-q5biv",
+    "agsci-2012-hl-q5c",
+    "agsci-2012-hl-q6ai",
+    "agsci-2012-hl-q6aii",
+    "agsci-2012-hl-q6aiii",
+    "agsci-2012-hl-q6b",
+    "agsci-2012-hl-q6c",
+    "agsci-2012-hl-q7a-route-i-ii-iii",
+    "agsci-2012-hl-q7a-route-i-ii-iv",
+    "agsci-2012-hl-q7a-route-i-iii-iv",
+    "agsci-2012-hl-q7a-route-ii-iii-iv",
+    "agsci-2012-hl-q7bi",
+    "agsci-2012-hl-q7bii",
+    "agsci-2012-hl-q7c",
+    "agsci-2012-hl-q7d",
+    "agsci-2012-hl-q8a",
+    "agsci-2012-hl-q8bi",
+    "agsci-2012-hl-q8bii",
+    "agsci-2012-hl-q8c-route-i-ii-iii",
+    "agsci-2012-hl-q8c-route-i-ii-iv",
+    "agsci-2012-hl-q8c-route-i-iii-iv",
+    "agsci-2012-hl-q8c-route-ii-iii-iv",
+    "agsci-2012-hl-q9a",
+    "agsci-2012-hl-q9b",
+    "agsci-2012-hl-q9c",
+    "agsci-2012-hl-q9d",
+    "agsci-2012-hl-q9e"
   ],
   "correctedCardIds": [
     "agsci-2025-ol-q8b"
@@ -23931,6 +23993,2941 @@
           "marksPerRoute": 3
         }
       ]
+    },
+    {
+      "questionRef": "2012 HL Q1(a)(i)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.071,
+            1,
+            0.091
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.139,
+            1,
+            0.175
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1ai": "1001"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1ai"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(a)(ii)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.092,
+            1,
+            0.11
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.177,
+            1,
+            0.276
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1aii": "1002"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1aii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(b)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.116,
+            1,
+            0.139
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.276,
+            1,
+            0.325
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1b": "1003"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1b"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-classification-of-animals-plants"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(c)(i)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.146,
+            1,
+            0.167
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.325,
+            1,
+            0.34
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1ci": "1004"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1ci"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(c)(ii)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.146,
+            1,
+            0.184
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.34,
+            1,
+            0.417
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1cii": "1005"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1cii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(d)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.191,
+            1,
+            0.259
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.416,
+            1,
+            0.477
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1d": "1006"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1d"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system",
+        "agricultural-science-higher-animal-physiology-respiratory-system"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(e)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.266,
+            1,
+            0.334
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.476,
+            1,
+            0.526
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1e": "1007"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1e"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle",
+        "agricultural-science-higher-animal-physiology-digestive-system"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(f)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.341,
+            1,
+            0.364
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.526,
+            1,
+            0.593
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1f": "1008"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1f"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(g)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.371,
+            1,
+            0.394
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.592,
+            1,
+            0.669
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1g": "1009"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1g"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(h)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.401,
+            1,
+            0.469
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.668,
+            1,
+            0.719
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1h": "1010"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1h"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(i)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.476,
+            1,
+            0.544
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.718,
+            1,
+            0.794
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1i": "1011"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1i"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(j)(i)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.552,
+            1,
+            0.587
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.794,
+            1,
+            0.827
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1ji": "1012"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1ji"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q1(j)(ii)",
+      "paperPage": 2,
+      "schemePage": 5,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.584,
+            1,
+            0.619
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.827,
+            1,
+            0.88
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q1jii": "1013"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q1jii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q2(a)(i)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.717,
+            1,
+            0.768
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.143,
+            1,
+            0.181
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q2ai": "1014"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q2ai"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q2(a)(ii)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.717,
+            1,
+            0.751
+          ]
+        },
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.767,
+            1,
+            0.785
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.18,
+            1,
+            0.247
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q2aii": "1015"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q2aii"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q2(b)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.792,
+            1,
+            0.86
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.246,
+            1,
+            0.575
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q2b": "1016"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q2b"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q2(c)",
+      "paperPage": 2,
+      "schemePage": 6,
+      "paperRegions": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0.867,
+            1,
+            0.89
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0.571,
+            1,
+            0.725
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q2c": "1017"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q2c"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q3 Option One (a)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.045,
+            1,
+            0.098
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.184
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q3o1a": "1018"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q3o1a"
+      ],
+      "marksPerRoute": 11,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q3 Option One (b)(i)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.105,
+            1,
+            0.124
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.182,
+            1,
+            0.248
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q3o1bi": "1019"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q3o1bi"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q3 Option One (b)(ii)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.105,
+            1,
+            0.143
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.182,
+            1,
+            0.462
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q3o1bii": "1020"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q3o1bii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "open",
+        "reason": "Selection from student-generated answers; no finite source list."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q3 Option One (c)(i)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.15,
+            1,
+            0.184
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.458,
+            1,
+            0.496
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q3o1ci": "1021"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q3o1ci"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q3 Option One (c)(ii)",
+      "paperPage": 3,
+      "schemePage": 7,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.15,
+            1,
+            0.17
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.184,
+            1,
+            0.199
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0.494,
+            1,
+            0.743
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q3o1cii": "1022"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q3o1cii"
+      ],
+      "marksPerRoute": 15,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q3 Option Two (a)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.285,
+            1,
+            0.338
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.167
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q3o2a": "1023"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q3o2a"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q3 Option Two (b)(i)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.346,
+            1,
+            0.367
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.166,
+            1,
+            0.231
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q3o2bi": "1024"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q3o2bi"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q3 Option Two (b)(ii)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.346,
+            1,
+            0.379
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.232,
+            1,
+            0.267
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q3o2bii": "1025"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q3o2bii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q3 Option Two (b)(iii)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.346,
+            1,
+            0.398
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.276,
+            1,
+            0.43
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q3o2biii": "1026"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q3o2biii"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q3 Option Two (c)",
+      "paperPage": 3,
+      "schemePage": 8,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.404,
+            1,
+            0.423
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0.429,
+            1,
+            0.628
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q3o2c": "1027"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q3o2c"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-sheep"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q4(a)",
+      "paperPage": 3,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.539,
+            1,
+            0.562
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.57,
+            1,
+            0.592
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.066,
+            1,
+            0.336
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q4a": "1028"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q4a"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q4(b)",
+      "paperPage": 3,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.539,
+            1,
+            0.562
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.6,
+            1,
+            0.622
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.066,
+            1,
+            0.334
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.331,
+            1,
+            0.402
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q4b": "1029"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q4b"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q4(c)",
+      "paperPage": 3,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.539,
+            1,
+            0.562
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.63,
+            1,
+            0.652
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.066,
+            1,
+            0.334
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.397,
+            1,
+            0.517
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q4c": "1030"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q4c"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q4(d)",
+      "paperPage": 3,
+      "schemePage": 9,
+      "paperRegions": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.539,
+            1,
+            0.562
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0.66,
+            1,
+            0.678
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.066,
+            1,
+            0.334
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0.512,
+            1,
+            0.651
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q4d": "1031"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q4d"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-soil-science",
+        "agricultural-science-higher-scientific-practices-experiments-investigations"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring.",
+      "schemeNote": "The historical scheme prints “sodium cobalt nitrate” and a purple potassium result. The sodium cobaltinitrite test produces a yellow-orange precipitate; violet/purple is associated with the potassium flame test. WHO, Oral Rehydration Salts: Production of the new ORS (2006), section 4.3.6.1. The original wording and tariff remain visible.",
+      "scientificContext": {
+        "source": "https://files.givewell.org/files/DWDA%202009/Interventions/ORS/WHO_Oral_rehydration_salts_report_2006.pdf",
+        "checkedAt": "2026-10-07",
+        "treatment": "Retain historical wording and tariff with a source-grounded clarification."
+      }
+    },
+    {
+      "questionRef": "2012 HL Q5(a)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.06,
+            1,
+            0.098
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.126,
+            1,
+            0.247
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q5a": "1032"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q5a"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q5(b)(i)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.121,
+            1,
+            0.139
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.14,
+            1,
+            0.154
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.245,
+            1,
+            0.28
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q5bi": "1033"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q5bi"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q5(b)(ii)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.121,
+            1,
+            0.139
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.155,
+            1,
+            0.169
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.279,
+            1,
+            0.313
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q5bii": "1034"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q5bii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q5(b)(iii)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.121,
+            1,
+            0.139
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.17,
+            1,
+            0.184
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.312,
+            1,
+            0.362
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q5biii": "1035"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q5biii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring.",
+      "schemeNote": "The examination paper repeats (ii) beside Earthing-up. The scheme correctly numbers this third practice (iii); this task uses (iii) and retains the original paper crop."
+    },
+    {
+      "questionRef": "2012 HL Q5(b)(iv)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.121,
+            1,
+            0.139
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.185,
+            1,
+            0.2
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.363,
+            1,
+            0.396
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q5biv": "1036"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q5biv"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q5(c)",
+      "paperPage": 4,
+      "schemePage": 10,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.227,
+            1,
+            0.245
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0.391,
+            1,
+            0.447
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q5c": "1037"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q5c"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q6(a)(i)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.332,
+            1,
+            0.354
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.373
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q6ai": "1038"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q6ai"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q6(a)(ii)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.332,
+            1,
+            0.429
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.444
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q6aii": "1039"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q6aii"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q6(a)(iii)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.332,
+            1,
+            0.354
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.437,
+            1,
+            0.46
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.442,
+            1,
+            0.494
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q6aiii": "1040"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q6aiii"
+      ],
+      "marksPerRoute": 4,
+      "examTopicIds": [
+        "agricultural-science-higher-beef-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q6(b)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.482,
+            1,
+            0.505
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.506,
+            1,
+            0.626
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q6b": "1041"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q6b"
+      ],
+      "marksPerRoute": 16,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle",
+        "agricultural-science-higher-animal-diseases"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q6(c)",
+      "paperPage": 4,
+      "schemePage": 11,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.512,
+            1,
+            0.531
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0.622,
+            1,
+            0.726
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q6c": "1042"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q6c"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-dairy-cattle"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q7(a) — i, ii, iii",
+      "paperPage": 4,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.617,
+            1,
+            0.7
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.266
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q7a-route-i-ii-iii": "1043"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q7a-route-i-ii-iii"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "ii",
+          "iii"
+        ]
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q7(a) — i, ii, iv",
+      "paperPage": 4,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.617,
+            1,
+            0.7
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.266
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q7a-route-i-ii-iv": "1044"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q7a-route-i-ii-iv"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "ii",
+          "iv"
+        ]
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q7(a) — i, iii, iv",
+      "paperPage": 4,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.617,
+            1,
+            0.7
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.266
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q7a-route-i-iii-iv": "1045"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q7a-route-i-iii-iv"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "iii",
+          "iv"
+        ]
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q7(a) — ii, iii, iv",
+      "paperPage": 4,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.617,
+            1,
+            0.7
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.266
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q7a-route-ii-iii-iv": "1046"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q7a-route-ii-iii-iv"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "ii",
+          "iii",
+          "iv"
+        ]
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q7(b)(i)",
+      "paperPage": 4,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.722,
+            1,
+            0.816
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.264,
+            1,
+            0.295
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q7bi": "1047"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q7bi"
+      ],
+      "marksPerRoute": 6,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q7(b)(ii)",
+      "paperPage": 4,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.722,
+            1,
+            0.85
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.293,
+            1,
+            0.498
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q7bii": "1048"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q7bii"
+      ],
+      "marksPerRoute": 10,
+      "examTopicIds": [
+        "agricultural-science-higher-genetics"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring.",
+      "schemeNote": "The scheme labels the hybrid intercross offspring F1. Relative to the original Barra × Evita cross, these are the F2 generation. Parents BE × BE and the original genotypes, phenotypes and ten-mark tariff are unchanged."
+    },
+    {
+      "questionRef": "2012 HL Q7(c)",
+      "paperPage": 4,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.858,
+            1,
+            0.88
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.494,
+            1,
+            0.729
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q7c": "1049"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q7c"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q7(d)",
+      "paperPage": 4,
+      "schemePage": 12,
+      "paperRegions": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0.888,
+            1,
+            0.906
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0.73,
+            1,
+            0.797
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q7d": "1050"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q7d"
+      ],
+      "marksPerRoute": 8,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-reproductive-systems"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q8(a)",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.075,
+            1,
+            0.098
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.133,
+            1,
+            0.285
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q8a": "1051"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q8a"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-fertilisers-pollution-environment-cycles"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q8(b)(i)",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.105,
+            1,
+            0.139
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.284,
+            1,
+            0.346
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q8bi": "1052"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q8bi"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q8(b)(ii)",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.14,
+            1,
+            0.158
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.345,
+            1,
+            0.437
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q8bii": "1053"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q8bii"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-grassland"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring.",
+      "schemeNote": "The scheme’s “dry to 20%” refers to moisture content, not dry matter. FAO’s Haymaking chapter describes reducing moisture to 12–20% before storage, depending on the crop and storage conditions.",
+      "scientificContext": {
+        "source": "https://www.fao.org/4/x7660e/x7660e06.htm",
+        "checkedAt": "2026-10-07",
+        "treatment": "Retain historical wording and tariff with a source-grounded clarification."
+      }
+    },
+    {
+      "questionRef": "2012 HL Q8(c) — i, ii, iii",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.165,
+            1,
+            0.304
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.436,
+            1,
+            0.801
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q8c-route-i-ii-iii": "1054"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q8c-route-i-ii-iii"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases",
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "ii",
+          "iii"
+        ]
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring.",
+      "schemeNote": "The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper."
+    },
+    {
+      "questionRef": "2012 HL Q8(c) — i, ii, iv",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.165,
+            1,
+            0.304
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.436,
+            1,
+            0.801
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q8c-route-i-ii-iv": "1055"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q8c-route-i-ii-iv"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases",
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "ii",
+          "iv"
+        ]
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring.",
+      "schemeNote": "The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper."
+    },
+    {
+      "questionRef": "2012 HL Q8(c) — i, iii, iv",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.165,
+            1,
+            0.304
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.436,
+            1,
+            0.801
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q8c-route-i-iii-iv": "1056"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q8c-route-i-iii-iv"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-diseases",
+        "agricultural-science-higher-crop-production",
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "i",
+          "iii",
+          "iv"
+        ]
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring.",
+      "schemeNote": "The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper."
+    },
+    {
+      "questionRef": "2012 HL Q8(c) — ii, iii, iv",
+      "paperPage": 5,
+      "schemePage": 13,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.165,
+            1,
+            0.304
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0.436,
+            1,
+            0.801
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q8c-route-ii-iii-iv": "1057"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q8c-route-ii-iii-iv"
+      ],
+      "marksPerRoute": 24,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs",
+        "agricultural-science-higher-crop-production",
+        "agricultural-science-higher-animal-diseases",
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "closed",
+        "choose": 3,
+        "options": [
+          "i",
+          "ii",
+          "iii",
+          "iv"
+        ],
+        "route": [
+          "ii",
+          "iii",
+          "iv"
+        ]
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring.",
+      "schemeNote": "The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper."
+    },
+    {
+      "questionRef": "2012 HL Q9(a)",
+      "paperPage": 5,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.406,
+            1,
+            0.428
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.436,
+            1,
+            0.458
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.195
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q9a": "1058"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q9a"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-plant-physiology"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q9(b)",
+      "paperPage": 5,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.406,
+            1,
+            0.428
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.466,
+            1,
+            0.488
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.195
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.195,
+            0.193,
+            0.96,
+            0.261
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q9b": "1059"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q9b"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-animal-physiology-digestive-system"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q9(c)",
+      "paperPage": 5,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.406,
+            1,
+            0.428
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.496,
+            1,
+            0.518
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.195
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.195,
+            0.255,
+            0.96,
+            0.327
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q9c": "1060"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q9c"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q9(d)",
+      "paperPage": 5,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.406,
+            1,
+            0.428
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.526,
+            1,
+            0.548
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.195
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.195,
+            0.326,
+            0.96,
+            0.391
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q9d": "1061"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q9d"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-crop-production"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
+    },
+    {
+      "questionRef": "2012 HL Q9(e)",
+      "paperPage": 5,
+      "schemePage": 14,
+      "paperRegions": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.406,
+            1,
+            0.428
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0.556,
+            1,
+            0.574
+          ]
+        }
+      ],
+      "schemeRegions": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0.111,
+            1,
+            0.195
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.195,
+            0.392,
+            0.96,
+            0.444
+          ]
+        }
+      ],
+      "atlasNumbers": {
+        "agsci-2012-hl-q9e": "1062"
+      },
+      "cardIds": [
+        "agsci-2012-hl-q9e"
+      ],
+      "marksPerRoute": 12,
+      "examTopicIds": [
+        "agricultural-science-higher-pigs"
+      ],
+      "selection": {
+        "kind": "none",
+        "reason": "Required response. Open examples and scheme alternatives remain marking menus, not finite printed routes."
+      },
+      "evidence": "All 8 paper and 16 scheme pages visually inspected. Published task boundaries and awards independently transcribed before authoring."
     }
   ],
   "paperReviews": [
@@ -25104,6 +28101,203 @@
         "distinctSchemeCropSets": 66,
         "evidence": "All 66 distinct paper/scheme pairs rendered and visually inspected. Missing blight wording, cropped answer lines and adjacent tariff fragments corrected; all changed crop pairs re-rendered and inspected. Original diagrams, full genetic stems and crop-name headings retained."
       }
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "hashes": {
+        "exampapers": "9c36dd32194d49ccb00554ebfe7960cc6be0d95e4c2e3e26c9e60df5164b571d",
+        "markingschemes": "eb8f1a690343c38320680ed8425bdf0365e4ea1e4afe240d478026bf8909fdc1"
+      },
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
+      "paperPagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "schemePagesInspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "selectionDirectives": [
+        {
+          "id": "f3a498902a4ead71",
+          "page": 1,
+          "cue": "any six",
+          "context": "_______________ THURSDAY, 21 JUNE – MORNING, 9.30 – 12.00 ________________________ Answer any six questions. Question 1 carries 60 marks. All other questions carry 48 marks each. Write all your answers in the answer book. Total marks: 300 marks. [OVER",
+          "classification": "exam-selection",
+          "reason": "Six independent examination questions are selected; every question is retained."
+        },
+        {
+          "id": "ce3e4e1d0e60ccd9",
+          "page": 2,
+          "cue": "any six",
+          "context": "Page 2 of 8 1. Answer any six of the parts (a) – (j). (a) (i) Name one monocot plant and one dicot plant. (ii) List two differences between monocot plants and dicot plants. (b) Give three characteristics of members of the class Mammalia. (c) (i) Mention two m",
+          "classification": "independent-task-selection",
+          "reason": "Q1 selects six separately priced lettered parts. All are retained, splitting only at published internal awards."
+        },
+        {
+          "id": "0edb5bbb1e0254c2",
+          "page": 3,
+          "cue": "any two",
+          "context": " (b) (i) List four factors that can cause changes in milk composition. (ii) Fully explain any two of the factors referred to above. (c) Contamination of milk is a problem in milk processing. (i) List three contaminants of milk. (ii) Describe an experiment to test the hygienic quality of milk. (48 marks) OR 3. Option Two (a) D",
+          "classification": "open",
+          "reason": "Q3 Option One (b)(ii) selects two factors from the student’s own preceding answer; no finite pool is printed."
+        },
+        {
+          "id": "a64eef37127d491b",
+          "page": 3,
+          "cue": "any two",
+          "context": " with steaming-up as feeding strategies in sheep production. (48 marks) 4. In the case of any two of the following, describe a laboratory or field method: (a) To assess the quality of grass silage. (b) To prepare a sample of plant cells for examination under a microscope. (c) To show that carbon dioxide is necessary for photo",
+          "classification": "independent-task-selection",
+          "reason": "Q4 selects two independently priced 24-mark methods. All four are retained."
+        },
+        {
+          "id": "341e437d57edf3c6",
+          "page": 4,
+          "cue": "any one",
+          "context": "ble mastitis-prevention programme in a spring-calving dairy herd. (c) Outline the role of any one hormone in milk production in a lactating cow. (48 marks) 7. (a) Explain any three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission. (b) In cereal tria",
+          "classification": "open",
+          "reason": "Q6(c) asks for one hormone without a printed finite pool. Scheme examples are coherent answer menus."
+        },
+        {
+          "id": "0e1658b6d9ac7f04",
+          "page": 4,
+          "cue": "any three",
+          "context": " role of any one hormone in milk production in a lactating cow. (48 marks) 7. (a) Explain any three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission. (b) In cereal trials for oats, the pure-breeding variety Barra, with a straw length of approximately ",
+          "classification": "closed",
+          "reason": "Q7(a) prints four terms and asks for three. All four combinations are retained."
+        },
+        {
+          "id": "2400d5f4cae0b778",
+          "page": 4,
+          "cue": "two of",
+          "context": "uitable method, show the genotypes and matching phenotypes resulting from a cross between two of the new hybrids. (c) Describe one natural method of vegetative reproduction in plants. (d) Identify two reasons why male animals are castrated on farms. (48 marks)",
+          "classification": "required-condition",
+          "reason": "Q7(b)(ii) crosses two of the new hybrids, both BE. This is a required parent condition, not a finite response selection."
+        },
+        {
+          "id": "3514ced833fb6e33",
+          "page": 5,
+          "cue": "any two",
+          "context": "Page 5 of 8 8. Answer any two of the parts (a), (b), (c). (a) Describe, with the aid of a labelled diagram, how the element nitrogen is recycled in nature. (b) “There will always be a role for hay in Irish farming.” (i) Defend this statement. (ii) Outline thr",
+          "classification": "independent-task-selection",
+          "reason": "Q8 selects two independently priced parts. All internal tasks and finite comparison routes are retained."
+        },
+        {
+          "id": "b8d6b839e57eec1c",
+          "page": 5,
+          "cue": "any three",
+          "context": "eps in conserving grass as hay. (c) Highlight the main differences between the members of any three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores. (48 marks) 9. Give scientific explanations for any four of the following: (a)",
+          "classification": "closed",
+          "reason": "Q8(c) prints four comparison pairs and asks for three. All four complete combinations are retained."
+        },
+        {
+          "id": "7f8409467c8fcc41",
+          "page": 5,
+          "cue": "any four",
+          "context": "d nurse crop. (iv) Zoonoses and zoospores. (48 marks) 9. Give scientific explanations for any four of the following: (a) The importance of pollination in plants. (b) A greater demand for energy by animals kept outdoors over the winter. (c) The occurrence of bare patches of ground in a recently sown cereal crop. (d) The benefit",
+          "classification": "independent-task-selection",
+          "reason": "Q9 selects four independently marked twelve-mark explanations. All five are retained."
+        }
+      ],
+      "supplementarySelections": [
+        {
+          "page": 3,
+          "wording": "OR 3. Option Two",
+          "classification": "closed",
+          "reason": "Both alternative Q3 options are retained at their distinct task addresses."
+        },
+        {
+          "page": 3,
+          "wording": "a laboratory or field method",
+          "classification": "open",
+          "reason": "Setting and method are open; each of the four required outcomes is a separately marked task."
+        },
+        {
+          "page": 2,
+          "wording": "a named soil texture",
+          "classification": "open",
+          "reason": "The student names a texture and explains its three linked effects. No finite named pool is printed."
+        },
+        {
+          "page": 4,
+          "wording": "one natural method of vegetative reproduction",
+          "classification": "open",
+          "reason": "The scheme lists examples; the paper prints no finite choice list."
+        },
+        {
+          "page": 4,
+          "wording": "a Punnett square or other suitable method",
+          "classification": "equivalent-presentation",
+          "reason": "Equivalent representations of the same cross do not create separate practice responses."
+        },
+        {
+          "page": 3,
+          "wording": "a table or a pie-chart",
+          "classification": "equivalent-presentation",
+          "reason": "Equivalent presentations share the same composition and presentation tariff."
+        }
+      ],
+      "sourceNotes": [
+        {
+          "questionN": "5",
+          "questionRef": "Q5(b)(iii)",
+          "note": "The examination paper repeats (ii) beside Earthing-up. The scheme correctly numbers this third practice (iii); this task uses (iii) and retains the original paper crop."
+        },
+        {
+          "questionN": "7",
+          "questionRef": "Q7(b)(ii)",
+          "note": "The scheme labels the hybrid intercross offspring F1. Relative to the original Barra × Evita cross, these are the F2 generation. Parents BE × BE and the original genotypes, phenotypes and ten-mark tariff are unchanged."
+        },
+        {
+          "questionN": "8",
+          "questionRef": "Q8(c)",
+          "note": "The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper."
+        },
+        {
+          "questionN": "4",
+          "questionRef": "Q4(d)",
+          "note": "The historical scheme prints “sodium cobalt nitrate” and a purple potassium result. The sodium cobaltinitrite test produces a yellow-orange precipitate; violet/purple is associated with the potassium flame test. WHO, Oral Rehydration Salts: Production of the new ORS (2006), section 4.3.6.1. The original wording and tariff remain visible.",
+          "source": "https://files.givewell.org/files/DWDA%202009/Interventions/ORS/WHO_Oral_rehydration_salts_report_2006.pdf"
+        },
+        {
+          "questionN": "8",
+          "questionRef": "Q8(b)(ii)",
+          "note": "The scheme’s “dry to 20%” refers to moisture content, not dry matter. FAO’s Haymaking chapter describes reducing moisture to 12–20% before storage, depending on the crop and storage conditions.",
+          "source": "https://www.fao.org/4/x7660e/x7660e06.htm"
+        }
+      ],
+      "independentBoundaryReview": "56 base tasks and 62 routes. Shared first-correct scales remain whole. Two printed three-of-four pools expand to four routes each. Milk composition, soil profile and growth-curve drawing retain the published partial bands under manual question-total marking.",
+      "cropVisualReview": "All 56 distinct crop pairs inspected. Clipped scheme continuation, growth-curve axis, neighbouring-line fragments and shared Q4/Q9 tariffs corrected and re-rendered. Both original solution images inspected.",
+      "runtimeReview": "42 integrated production-component cases at 1200px and 390px: source reveal/hide, nonblank crops, full-reader zoom/toggle/return, marking menus, manual question-total grading and solution images; no page errors. Signed-in full-app navigation remains open.",
+      "remaining": [
+        "Irish edition comparison",
+        "Full application navigation review",
+        "Corpus-wide reconciliation"
+      ]
     }
   ]
 }

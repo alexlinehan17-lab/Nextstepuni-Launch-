@@ -405,7 +405,69 @@ Q13(d)(iii)|3|9|14|Haplóideach –
 Q13(d)(iv)|3|9|14|Ubhagán/uirí/gnéasorgáin/gónaid
 '''
 
+HIGHER_2012 = '''
+Q1(a)(i)|4|2|5|Grass/ barley/ correct example
+Q1(a)(ii)|6|2|5|Monocot: one cotyledon
+Q1(b)|10|2|5|Mammalia: Body covered
+Q1(c)(i)|4|2|5|Wind/ animals/ water/ self/ farming activity
+Q1(c)(ii)|6|2|5|Wind: Dandelion/ thistle
+Q1(d)|10|2|5|4 x 2 + 2 x 1
+Q1(e)|10|2|5|To develop rumen/ scratch factor
+Q1(f)|10|2|5|Tramlines: Parallel unsown tracks
+Q1(g)|10|2|5|Limestone: Alkaline
+Q1(h)|10|2|5|Meiosis (reduction division)
+Q1(i)|10|2|5|Xylem: Transports water
+Q1(j)(i)|6|2|5|Average litter size: 11.5
+Q1(j)(ii)|4|2|5|Dose/ vaccinate/ inject with iron
+Q2(a)(i)|6|2|6|Deep soil/ naturally fertile
+Q2(a)(ii)|10|2|6|Diagram: Deep A horizon
+Q2(b)|8|2|6|Name: Sandy/ clay/ loam
+Q2(c)|24|2|6|Two flasks/ two (suitable) plants
+Q3 Option One (a)|11|3|7|Composition: Water 87.8%
+Q3 Option One (b)(i)|8|3|7|Health (disease)/ age
+Q3 Option One (b)(ii)|8|3|7|Health: mastitis reduces fat and protein
+Q3 Option One (c)(i)|6|3|7|Antibiotics/ bacteria/ somatic cells
+Q3 Option One (c)(ii)|15|3|7|Two sterile test tubes
+Q3 Option Two (a)|12|3|8|Used to find if ewe is pregnant
+Q3 Option Two (b)(i)|8|3|8|Terminal Sire: Ram used
+Q3 Option Two (b)(ii)|4|3|8|Suffolk/ Texel/ Charollais/ Belclare
+Q3 Option Two (b)(iii)|8|3|8|Suffolk: Good carcass quality
+Q3 Option Two (c)|16|3|8|Flushing: Ewes placed in low plane
+Q4(a)|24|3|9|(Leaf to stem ratio)
+Q4(b)|24|3|9|Get a clean glass slide
+Q4(c)|24|3|9|Get two potted plants
+Q4(d)|24|3|9|Sample of sieved soil
+Q5(a)|16|4|10|Barley: grows well in Irish climate
+Q5(b)(i)|4|4|10|Speeds up growth
+Q5(b)(ii)|4|4|10|Makes harvesting easier
+Q5(b)(iii)|4|4|10|Prevents ‘greening’ of tubers
+Q5(b)(iv)|4|4|10|Free of disease/ better yield
+Q5(c)|16|4|10|Overheating/ sprouting/ rotting
+Q6(a)(i)|10|4|11|Labelled axes
+Q6(a)(ii)|6|4|11|First winter housing: 200 kg
+Q6(a)(iii)|4|4|11|1st winter:
+Q6(b)|16|4|11|Hygiene in housing
+Q6(c)|12|4|11|Oxytocin/ pituitary gland
+Q7(a)|12|4|12|Where a gene (for a non-reproductive trait)
+Q7(b)(i)|6|4|12|BB x EE = BE
+Q7(b)(ii)|10|4|12|Parents BE x BE
+Q7(c)|12|4|12|Stem tubers/ for food storage
+Q7(d)|8|4|12|Males are aggressive
+Q8(a)|24|5|13|Nitrogen gas/ nitrogen fixation
+Q8(b)(i)|12|5|13|Good dry matter source
+Q8(b)(ii)|12|5|13|Close off field 6 weeks before cutting
+Q8(c)|24|5|13|LUNGWORM Nematode
+Q9(a)|12|5|14|Necessary for (sexual) reproduction
+Q9(b)|12|5|14|Colder outdoors/ wetter
+Q9(c)|12|5|14|Seeding rate is too low
+Q9(d)|12|5|14|Protection for animals
+Q9(e)|12|5|14|Presence of boar stimulates
+'''
+
 SOURCES = [
+    (2012, 'higher', 'A', HIGHER_2012,
+     '9c36dd32194d49ccb00554ebfe7960cc6be0d95e4c2e3e26c9e60df5164b571d',
+     'eb8f1a690343c38320680ed8425bdf0365e4ea1e4afe240d478026bf8909fdc1'),
     (2010, 'higher', 'A', HIGHER_2010,
                'fa917bba0b9350bb15cfe355789fa3002515bb6b28561f46ac47acfc1e7fa408',
                '120a5729e8e4d01ea5411df25c54e509c95ea099fb55cb52466f045c72909174'),
@@ -447,7 +509,7 @@ def source_tasks():
             if year==2010 and level=='higher' and ref=='Q3 Option Two (b)':
                 routes = [ref+' — Hoose',ref+' — grass-tetany']
                 selection = {'kind':'closed','choose':1,'options':['Hoose','grass-tetany']}
-            elif level=='higher' and (ref=='Q8(c)' or year==2010 and ref=='Q7(a)'):
+            elif level=='higher' and (ref=='Q8(c)' or year in (2010,2012) and ref=='Q7(a)'):
                 choices = ['i','ii','iii','iv']
                 routes = [ref+' — '+', '.join(parts) for parts in itertools.combinations(choices,3)]
                 selection = {'kind':'closed','choose':3,'options':choices}
@@ -457,7 +519,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -470,7 +532,7 @@ def build():
     # All indexed editions remain visible; a reviewed English denominator does
     # not silently declare the Irish edition or another sitting complete.
     return {'subjectId':'agricultural-science','status':'in-progress',
-            'method':'Independent English 2010 and 2011 Higher/Ordinary, plus Irish 2011 Ordinary, paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.',
+            'method':'Independent English 2010 and 2011 Higher/Ordinary, English 2012 Higher, plus Irish 2011 Ordinary, paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.',
             'papers':papers,
             'boundaryRules':[
                 'A diagram labelling exercise stays one task with all required labels and its figure; labels are answer fields, not printed alternative routes.',
@@ -542,7 +604,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81. Remaining editions stay open.')
+    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62. Remaining editions stay open.')
 
 
 if __name__=='__main__':

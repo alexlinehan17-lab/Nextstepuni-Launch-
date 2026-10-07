@@ -12299,4 +12299,2240 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original page for the published wording, diagrams and examination context."
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-1"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1ai", topicId: "agsci-3-2", conceptId: "monocot-dicot-examples",
+    section: "A", questionRef: "2012 HL Q1(a)(i)",
+    questionText: "Name one monocot plant and one dicot plant.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Grass/ barley/ correct example", marks: 2, contextNote: "Monocot." },
+    { id: "r-2", kind: "point", verbatim: "Dock/ dandelion/ correct example.", marks: 2, contextNote: "Dicot." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(a)(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-1"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1aii", topicId: "agsci-3-2", conceptId: "monocot-dicot-differences",
+    section: "A", questionRef: "2012 HL Q1(a)(ii)",
+    questionText: "List two differences between monocot plants and dicot plants.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Monocot: one cotyledon in seed/ parallel veins in leaves/ vascular bundles scattered in stem/ flower parts in 3s/ fibrous roots/ correct feature.", marks: null, contextNote: "The published scheme allocates three marks to the monocot side. Compare two matching features across both plant groups." },
+    { id: "r-2", kind: "criterion", verbatim: "Dicot: Two cotyledons in seed/ reticulate veins in leaf/ vascular bundles in a circle in stem/ flower parts in 4s or 5s/ tap roots/ correct feature.", marks: null, contextNote: "Three marks for the dicot side. The paper requests two differences; do not award the full six for only one complete contrast." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(a)(ii)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-1"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1b", topicId: "agsci-4-2", conceptId: "mammalian-characteristics",
+    section: "A", questionRef: "2012 HL Q1(b)",
+    questionText: "Give three characteristics of members of the class Mammalia.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Body covered in hair or wool or fur / sweat glands present / mammary glands in female (produce milk) / embryo develops internally / placenta present", marks: 10, group: {"claimMax":3,"perOption":4,"options":["Body covered in hair or wool or fur","sweat glands present","mammary glands in female (produce milk)","embryo develops internally","placenta present"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(b)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1ci", topicId: "agsci-3-1", conceptId: "weed-seed-dispersal-methods",
+    section: "A", questionRef: "2012 HL Q1(c)(i)",
+    questionText: "Mention two methods by which weed seeds are dispersed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Wind / animals / water / self / farming activity", marks: 4, group: {"claimMax":2,"perOption":2,"options":["Wind","animals","water","self","farming activity"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(c)(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1cii", topicId: "agsci-3-1", conceptId: "weed-seed-dispersal-examples",
+    section: "A", questionRef: "2012 HL Q1(c)(ii)",
+    stem: "Mention two methods by which weed seeds are dispersed, then give one matching weed for each.",
+    questionText: "For each method, name a common weed that uses this method of dispersal.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Wind: Dandelion/ thistle/ correct example. / Animals: Burdock/ blackberry/ correct example. / Water: Water lily/ alder/ correct example. / Self: Vetch/ furze/ correct example. / Farming activity: Docks in slurry/ correct example.", marks: 6, contextNote: "One matching weed for each of your two distinct methods. Methods themselves are awarded in part (i).", group: {"claimMax":2,"perOption":3,"options":["Wind: Dandelion/ thistle/ correct example.","Animals: Burdock/ blackberry/ correct example.","Water: Water lily/ alder/ correct example.","Self: Vetch/ furze/ correct example.","Farming activity: Docks in slurry/ correct example."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(c)(ii)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1d", topicId: "agsci-4-1", conceptId: "animal-tissue-locations-and-functions",
+    section: "A", questionRef: "2012 HL Q1(d)",
+    questionText: "State the precise location and function of (i) alveolus, (ii) adipose tissue and (iii) abomasum in the body of a farm animal.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(End of bronchioles) in lungs / gas exchange / Under the dermis(skin) / correct function. / Chamber in ruminant stomach (or named ruminant) / correct function.", marks: 10, contextNote: "The six entries follow location/function for alveolus, adipose tissue and abomasum. The scheme leaves the last two functions open; judge adipose storage/insulation and the abomasum’s digestive function appropriately. The first four correct fields earn two marks each, then one each.", group: {"claimMax":6,"perOption":2,"options":["(End of bronchioles) in lungs","gas exchange","Under the dermis(skin)","correct function.","Chamber in ruminant stomach (or named ruminant)","correct function."],"perOptionSteps":[2,2,2,2,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(d)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1e", topicId: "agsci-4-1", conceptId: "calf-roughage",
+    section: "A", questionRef: "2012 HL Q1(e)",
+    stem: "Roughage must be included in the diet of a calf.",
+    questionText: "(i) Suggest a reason for including roughage. (ii) When is roughage introduced? (iii) Name a suitable food that could be used as roughage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "To develop rumen/ scratch factor. / After 7 days. / Hay/ straw/ haylage", marks: 10, contextNote: "One answer per field; the first correct field earns four marks.", group: {"claimMax":3,"perOption":4,"options":["To develop rumen/ scratch factor.","After 7 days.","Hay/ straw/ haylage"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(e)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1f", topicId: "agsci-3-3-1", conceptId: "tramlines",
+    section: "A", questionRef: "2012 HL Q1(f)",
+    questionText: "Explain the agricultural term tramlines and give two reasons for their use.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Parallel unsown tracks in a field of cereal. / Access for machinery for spraying / fertilising", marks: 10, contextNote: "Definition and two distinct reasons share the first-correct scale. Choose the two reasons you answered; the reasons are an open marking menu, not new practice identities.", group: {"claimMax":3,"perOption":4,"options":["Parallel unsown tracks in a field of cereal.","Access for machinery for spraying","fertilising"],"perOptionSteps":[4,3,3]} },
+    ],
+    answerVariants: [
+          {
+                "id": "reasons-1",
+                "label": "Access for machinery for spraying + fertilising",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Parallel unsown tracks in a field of cereal. / Access for machinery for spraying / fertilising",
+                            "marks": 10,
+                            "contextNote": "Definition and two distinct reasons share the first-correct scale. Choose the two reasons you answered; the reasons are an open marking menu, not new practice identities.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Parallel unsown tracks in a field of cereal.",
+                                        "Access for machinery for spraying",
+                                        "fertilising"
+                                  ],
+                                  "perOptionSteps": [
+                                        4,
+                                        3,
+                                        3
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "reasons-2",
+                "label": "Access for machinery for spraying + prevents trampling of crop",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Parallel unsown tracks in a field of cereal. / Access for machinery for spraying / prevents trampling of crop",
+                            "marks": 10,
+                            "contextNote": "Definition and two distinct reasons share the first-correct scale. Choose the two reasons you answered; the reasons are an open marking menu, not new practice identities.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Parallel unsown tracks in a field of cereal.",
+                                        "Access for machinery for spraying",
+                                        "prevents trampling of crop"
+                                  ],
+                                  "perOptionSteps": [
+                                        4,
+                                        3,
+                                        3
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "reasons-3",
+                "label": "Access for machinery for spraying + prevents attack from crows or pigeons",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Parallel unsown tracks in a field of cereal. / Access for machinery for spraying / prevents attack from crows or pigeons",
+                            "marks": 10,
+                            "contextNote": "Definition and two distinct reasons share the first-correct scale. Choose the two reasons you answered; the reasons are an open marking menu, not new practice identities.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Parallel unsown tracks in a field of cereal.",
+                                        "Access for machinery for spraying",
+                                        "prevents attack from crows or pigeons"
+                                  ],
+                                  "perOptionSteps": [
+                                        4,
+                                        3,
+                                        3
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "reasons-4",
+                "label": "fertilising + prevents trampling of crop",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Parallel unsown tracks in a field of cereal. / fertilising / prevents trampling of crop",
+                            "marks": 10,
+                            "contextNote": "Definition and two distinct reasons share the first-correct scale. Choose the two reasons you answered; the reasons are an open marking menu, not new practice identities.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Parallel unsown tracks in a field of cereal.",
+                                        "fertilising",
+                                        "prevents trampling of crop"
+                                  ],
+                                  "perOptionSteps": [
+                                        4,
+                                        3,
+                                        3
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "reasons-5",
+                "label": "fertilising + prevents attack from crows or pigeons",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Parallel unsown tracks in a field of cereal. / fertilising / prevents attack from crows or pigeons",
+                            "marks": 10,
+                            "contextNote": "Definition and two distinct reasons share the first-correct scale. Choose the two reasons you answered; the reasons are an open marking menu, not new practice identities.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Parallel unsown tracks in a field of cereal.",
+                                        "fertilising",
+                                        "prevents attack from crows or pigeons"
+                                  ],
+                                  "perOptionSteps": [
+                                        4,
+                                        3,
+                                        3
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "reasons-6",
+                "label": "prevents trampling of crop + prevents attack from crows or pigeons",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Parallel unsown tracks in a field of cereal. / prevents trampling of crop / prevents attack from crows or pigeons",
+                            "marks": 10,
+                            "contextNote": "Definition and two distinct reasons share the first-correct scale. Choose the two reasons you answered; the reasons are an open marking menu, not new practice identities.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Parallel unsown tracks in a field of cereal.",
+                                        "prevents trampling of crop",
+                                        "prevents attack from crows or pigeons"
+                                  ],
+                                  "perOptionSteps": [
+                                        4,
+                                        3,
+                                        3
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(f)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1g", topicId: "agsci-2-1", conceptId: "limestone-granite-soils",
+    section: "A", questionRef: "2012 HL Q1(g)",
+    questionText: "Compare limestone and granite as parent materials in soil formation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Alkaline (high pH) / better structure / contains calcium / good drainage / best pH for absorption of mineral / intermediate texture / better ion exchange", marks: 5, contextNote: "Limestone: two distinct points.", group: {"claimMax":2,"perOption":3,"options":["Alkaline (high pH)","better structure","contains calcium","good drainage","best pH for absorption of mineral","intermediate texture","better ion exchange"],"perOptionSteps":[3,2]} },
+    { id: "r-2", kind: "anyN", verbatim: "Acidic soil / more leaching / infertile / could lead to podzol formation / coarse texture / poorer ion exchange", marks: 5, contextNote: "Granite: two distinct points.", group: {"claimMax":2,"perOption":3,"options":["Acidic soil","more leaching","infertile","could lead to podzol formation","coarse texture","poorer ion exchange"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(g)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1h", topicId: "agsci-4-3-2", conceptId: "meiosis-scenarios",
+    section: "A", questionRef: "2012 HL Q1(h)",
+    questionText: "Name the type of cell division (i) that produces four daughter cells from one mother cell, (ii) that always produces haploid daughter cells, and (iii) during which crossing over occurs.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Meiosis (reduction division) / Meiosis (reduction division) / Meiosis (reduction division)", marks: 10, contextNote: "The three entries mark the three separate scenarios in order; the same answer is required in each. Apply the first-correct scale across the three fields.", group: {"claimMax":3,"perOption":4,"options":["Meiosis (reduction division)","Meiosis (reduction division)","Meiosis (reduction division)"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(h)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1i", topicId: "agsci-3-1", conceptId: "plant-tissue-functions",
+    section: "A", questionRef: "2012 HL Q1(i)",
+    questionText: "State the function of (i) xylem, (ii) meristem and (iii) palisade.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Xylem: Transports water/ minerals/ strengthens plant. / Meristem: Actively divides/ undergoes mitosis/ gives new growth/ gives rise to secondary tissue. / Palisade: Absorbs light/ contains chloroplasts/ carries out photosynthesis.", marks: 10, contextNote: "One function per tissue; alternatives within a tissue earn no extra marks.", group: {"claimMax":3,"perOption":4,"options":["Xylem: Transports water/ minerals/ strengthens plant.","Meristem: Actively divides/ undergoes mitosis/ gives new growth/ gives rise to secondary tissue.","Palisade: Absorbs light/ contains chloroplasts/ carries out photosynthesis."],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1ji", topicId: "agsci-4-3-1", conceptId: "sow-litter-and-weaning-targets",
+    section: "A", questionRef: "2012 HL Q1(j)(i)",
+    questionText: "Indicate the average litter size and the target number of bonhams weaned per annum for a sow.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Average litter size: 11.5 (10-12)", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Target number: 23-29.", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(j)(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q1jii", topicId: "agsci-4-3-1", conceptId: "improving-bonham-survival",
+    section: "A", questionRef: "2012 HL Q1(j)(ii)",
+    questionText: "Suggest two ways by which the number of bonhams weaned per annum could be increased.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Dose / vaccinate / inject with iron / correct housing / correct temperature / use farrowing crate / feed correct concentrate / feed lysine / contact vet / breed(prolific)", marks: 4, group: {"claimMax":2,"perOption":2,"options":["Dose","vaccinate","inject with iron","correct housing","correct temperature","use farrowing crate","feed correct concentrate","feed lysine","contact vet","breed(prolific)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q1(j)(ii)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q2ai", topicId: "agsci-2-1", conceptId: "brown-earth-tillage",
+    section: "B", questionRef: "2012 HL Q2(a)(i)",
+    questionText: "Suggest two reasons why brown earth soils are suited to tillage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Deep soil / naturally fertile / well drained / easily worked / suitable pH / aeration", marks: 6, group: {"claimMax":2,"perOption":3,"options":["Deep soil","naturally fertile","well drained","easily worked","suitable pH","aeration"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q2(a)(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q2aii", topicId: "agsci-2-1", conceptId: "brown-earth-profile",
+    section: "B", questionRef: "2012 HL Q2(a)(ii)",
+    questionText: "Draw a large labelled diagram of a brown earth soil profile.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Diagram: Deep A horizon/ little banding or layers/ gradual lightening of colour from A to B horizon.", marks: null, contextNote: "Diagram earns 4, 2 or 0 marks; compare the complete profile with the published features." },
+    { id: "r-2", kind: "criterion", verbatim: "Labels: Three correct.", marks: null, contextNote: "Three correct labels at two marks each. Add these to the diagram award for a maximum of ten." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q2(a)(ii)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-3","agricultural-science-1-2"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q2b", topicId: "agsci-2-2-2", conceptId: "soil-texture-effects",
+    section: "B", questionRef: "2012 HL Q2(b)",
+    questionText: "Explain how a named soil texture influences (i) pore spaces, (ii) water movement and (iii) fertility.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sandy", marks: 2, contextNote: "Name one texture; keep all three explanations consistent with it." },
+    { id: "r-2", kind: "point", verbatim: "Large pore spaces.", marks: 2, contextNote: "Pore spaces." },
+    { id: "r-3", kind: "point", verbatim: "Good drainage/ poor capillarity.", marks: 2, contextNote: "Water movement." },
+    { id: "r-4", kind: "point", verbatim: "Infertile/ more leaching", marks: 2, contextNote: "Fertility." },
+    ],
+    answerVariants: [
+          {
+                "id": "sandy",
+                "label": "Sandy",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Sandy",
+                            "marks": 2,
+                            "contextNote": "Name one texture; keep all three explanations consistent with it.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Large pore spaces.",
+                            "marks": 2,
+                            "contextNote": "Pore spaces.",
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Good drainage/ poor capillarity.",
+                            "marks": 2,
+                            "contextNote": "Water movement.",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Infertile/ more leaching",
+                            "marks": 2,
+                            "contextNote": "Fertility.",
+                            "id": "r-4"
+                      }
+                ]
+          },
+          {
+                "id": "clay",
+                "label": "Clay",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Clay",
+                            "marks": 2,
+                            "contextNote": "Name one texture; keep all three explanations consistent with it.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Small pore spaces.",
+                            "marks": 2,
+                            "contextNote": "Pore spaces.",
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Poor drainage/ waterlogging/ good capillarity.",
+                            "marks": 2,
+                            "contextNote": "Water movement.",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Naturally fertile/ little leaching",
+                            "marks": 2,
+                            "contextNote": "Fertility.",
+                            "id": "r-4"
+                      }
+                ]
+          },
+          {
+                "id": "loam",
+                "label": "Loam",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Loam",
+                            "marks": 2,
+                            "contextNote": "Name one texture; keep all three explanations consistent with it.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Some small and some large pores.",
+                            "marks": 2,
+                            "contextNote": "Pore spaces.",
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Good drainage/ good capillarity.",
+                            "marks": 2,
+                            "contextNote": "Water movement.",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Fertile/ not as fertile as clay.",
+                            "marks": 2,
+                            "contextNote": "Fertility.",
+                            "id": "r-4"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q2(b)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q2c", topicId: "agsci-2-3", conceptId: "phosphate-deficiency-experiment",
+    section: "B", questionRef: "2012 HL Q2(c)",
+    questionText: "Describe a laboratory experiment to show the effect of phosphate deficiency in a plant.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two flasks / two (suitable) plants / Sacch’s solution / make up solutions / distilled water / one is complete control / one solution minus phosphate / supply oxygen / equal volume of solution in each flask / plant placed in solution / cover flasks with black paper / leave for a number of weeks / in sunlight / compare with control / blue colour on edge of leaves deficient in phosphate or poor root growth", marks: 24, group: {"claimMax":6,"perOption":4,"options":["Two flasks","two (suitable) plants","Sacch’s solution","make up solutions","distilled water","one is complete control","one solution minus phosphate","supply oxygen","equal volume of solution in each flask","plant placed in solution","cover flasks with black paper","leave for a number of weeks","in sunlight","compare with control","blue colour on edge of leaves deficient in phosphate or poor root growth"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q2(c)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q3o1a", topicId: "agsci-4-1", conceptId: "milk-composition",
+    section: "B", questionRef: "2012 HL Q3 Option One (a)",
+    questionText: "Using a table or a pie-chart, show the composition of cow’s milk.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 11,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Table/ pie-chart", marks: null, contextNote: "Presentation earns 3, 1 or 0 marks." },
+    { id: "r-2", kind: "criterion", verbatim: "Composition: Water 87.8%; Butterfat 3.5%; Protein 3.2%; Lactose 4.7%; Minerals(or ash or named mineral) 0.8%", marks: null, contextNote: "Award up to four component names at one mark each and four correct matching percentages at one mark each. Five components are listed as acceptable answers, but only four names and four percentages are paid. Maximum eleven including presentation." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q3 Option One (a)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q3o1bi", topicId: "agsci-4-3-1", conceptId: "milk-composition-factors",
+    section: "B", questionRef: "2012 HL Q3 Option One (b)(i)",
+    questionText: "List four factors that can cause changes in milk composition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Health (disease) / age / stage of lactation / diet / breed / milking interval / morning or evening milk / stage of milking (strippings)", marks: 8, contextNote: "Four distinct factors; avoid crediting two descriptions of the same milking-interval effect.", group: {"claimMax":4,"perOption":2,"options":["Health (disease)","age","stage of lactation","diet","breed","milking interval","morning or evening milk","stage of milking (strippings)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q3 Option One (b)(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q3o1bii", topicId: "agsci-4-3-1", conceptId: "explaining-milk-composition",
+    section: "B", questionRef: "2012 HL Q3 Option One (b)(ii)",
+    stem: "First list four factors that can cause changes in milk composition. Choose two of your listed factors to explain; listing marks belong to part (i).",
+    questionText: "Fully explain any two of the factors referred to above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Health: mastitis reduces fat and protein/ lameness reduces food intake and reduce protein and fat. / Age: Butterfat and protein decline with age. / Stage of lactation: Protein and butterfat increase during the lactation. / Diet: High fibre diet increases butterfat/ high protein diet (leafy grass) increase protein. / Breed: Jersey has higher butterfat (than Holstein)/ Jersey has higher protein (than Holstein). / Milking Interval: Cows milk more in the morning and milk has reduced butterfat.", marks: 8, contextNote: "Explain two distinct factors from your own preceding list. Each factor earns at most four marks; the scheme examples do not form a printed closed choice pool.", group: {"claimMax":2,"perOption":4,"options":["Health: mastitis reduces fat and protein/ lameness reduces food intake and reduce protein and fat.","Age: Butterfat and protein decline with age.","Stage of lactation: Protein and butterfat increase during the lactation.","Diet: High fibre diet increases butterfat/ high protein diet (leafy grass) increase protein.","Breed: Jersey has higher butterfat (than Holstein)/ Jersey has higher protein (than Holstein).","Milking Interval: Cows milk more in the morning and milk has reduced butterfat."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q3 Option One (b)(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q3o1ci", topicId: "agsci-4-3-1", conceptId: "milk-contaminants",
+    section: "B", questionRef: "2012 HL Q3 Option One (c)(i)",
+    stem: "Contamination of milk is a problem in milk processing.",
+    questionText: "List three contaminants of milk.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Antibiotics / bacteria / somatic cells / excess water / sediment (soil particles)", marks: 6, group: {"claimMax":3,"perOption":2,"options":["Antibiotics","bacteria","somatic cells","excess water","sediment (soil particles)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q3 Option One (c)(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q3o1cii", topicId: "agsci-4-3-1", conceptId: "milk-hygienic-quality",
+    section: "B", questionRef: "2012 HL Q3 Option One (c)(ii)",
+    questionText: "Describe an experiment to test the hygienic quality of milk.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two sterile test tubes / two milk samples / one is a control / add (10cm3) milk to each test tube / add (1 cm3 of) Resazurin (or methylene blue) to the milk samples / keep at 37°C / for 10 to 15 minutes / blue is best / white is worst / pink or mauve or lilac (better than white, worse than blue) / control stays blue.", marks: 15, contextNote: "Five points from one coherent experimental method. The printed 37°C uses a raised zero in the source text layer.", group: {"claimMax":5,"perOption":3,"options":["Two sterile test tubes","two milk samples","one is a control","add (10cm3) milk to each test tube","add (1 cm3 of) Resazurin (or methylene blue) to the milk samples","keep at 37°C","for 10 to 15 minutes","blue is best","white is worst","pink or mauve or lilac (better than white, worse than blue)","control stays blue."]} },
+    ],
+    answerVariants: [
+          {
+                "id": "dye",
+                "label": "Resazurin or methylene blue",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Two sterile test tubes / two milk samples / one is a control / add (10cm3) milk to each test tube / add (1 cm3 of) Resazurin (or methylene blue) to the milk samples / keep at 37°C / for 10 to 15 minutes / blue is best / white is worst / pink or mauve or lilac (better than white, worse than blue) / control stays blue.",
+                            "marks": 15,
+                            "contextNote": "Five points from one coherent experimental method. The printed 37°C uses a raised zero in the source text layer.",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Two sterile test tubes",
+                                        "two milk samples",
+                                        "one is a control",
+                                        "add (10cm3) milk to each test tube",
+                                        "add (1 cm3 of) Resazurin (or methylene blue) to the milk samples",
+                                        "keep at 37°C",
+                                        "for 10 to 15 minutes",
+                                        "blue is best",
+                                        "white is worst",
+                                        "pink or mauve or lilac (better than white, worse than blue)",
+                                        "control stays blue."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "agar",
+                "label": "Nutrient agar",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Two sterile petri dishes / nutrient agar in each / one is a control / inoculate one with milk / using a sterile (inoculating) loop / seal each Petri dish / incubate at 37°C / invert / for 24 hours / compare with control / colonies of bacteria in petri dish with milk / control is clear.",
+                            "marks": 15,
+                            "contextNote": "Five points from one coherent experimental method. The printed 37°C uses a raised zero in the source text layer.",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Two sterile petri dishes",
+                                        "nutrient agar in each",
+                                        "one is a control",
+                                        "inoculate one with milk",
+                                        "using a sterile (inoculating) loop",
+                                        "seal each Petri dish",
+                                        "incubate at 37°C",
+                                        "invert",
+                                        "for 24 hours",
+                                        "compare with control",
+                                        "colonies of bacteria in petri dish with milk",
+                                        "control is clear."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q3 Option One (c)(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q3o2a", topicId: "agsci-4-3-1", conceptId: "ewe-pregnancy-scanning",
+    section: "B", questionRef: "2012 HL Q3 Option Two (a)",
+    questionText: "Discuss the role of scanning in sheep production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Used to find if ewe is pregnant or barren / single or multiple lambs / determines feeding regime / possible culling", marks: 12, group: {"claimMax":3,"perOption":4,"options":["Used to find if ewe is pregnant or barren","single or multiple lambs","determines feeding regime","possible culling"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q3 Option Two (a)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q3o2bi", topicId: "agsci-4-3-2", conceptId: "terminal-sire",
+    section: "B", questionRef: "2012 HL Q3 Option Two (b)(i)",
+    questionText: "Explain the term terminal sire as it applies in sheep breeding.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ram used to produce lambs with high growth rates / good quality carcass / for slaughter / and good meat quality / good conformation", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Ram used to produce lambs with high growth rates","good quality carcass","for slaughter","and good meat quality","good conformation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q3 Option Two (b)(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q3o2bii", topicId: "agsci-4-3-2", conceptId: "terminal-sire-breeds",
+    section: "B", questionRef: "2012 HL Q3 Option Two (b)(ii)",
+    questionText: "Suggest two breeds that could be used as terminal sires.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Suffolk / Texel / Charollais / Belclare / any valid breed", marks: 4, contextNote: "Two distinct suitable breeds; a valid unlisted breed earns the same award.", group: {"claimMax":2,"perOption":2,"options":["Suffolk","Texel","Charollais","Belclare","any valid breed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q3 Option Two (b)(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q3o2biii", topicId: "agsci-4-3-2", conceptId: "terminal-sire-breed-reasons",
+    section: "B", questionRef: "2012 HL Q3 Option Two (b)(iii)",
+    stem: "Suggest two breeds that could be used as terminal sires, then justify each choice. Breed-naming marks belong to part (ii).",
+    questionText: "Give a reason for each of your choices in part (ii).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Suffolk: Good carcass quality/ excellent conformation/ fast growth rate. / Texel: Good carcass quality/ lean meat/ good conformation. / Charollais: Good weight gain/ large hind quarters/ fast growth rate/ lean lamb/ less lambing difficulty / Belclare: Excellent carcass quality/ good weight gain.", marks: 8, contextNote: "One valid matching reason for each of your two distinct breeds; several reasons for one breed still earn only four marks. The preceding naming part accepts any valid breed.", group: {"claimMax":2,"perOption":4,"options":["Suffolk: Good carcass quality/ excellent conformation/ fast growth rate.","Texel: Good carcass quality/ lean meat/ good conformation.","Charollais: Good weight gain/ large hind quarters/ fast growth rate/ lean lamb/ less lambing difficulty","Belclare: Excellent carcass quality/ good weight gain."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q3 Option Two (b)(iii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q3o2c", topicId: "agsci-4-3-1", conceptId: "flushing-steaming-up",
+    section: "B", questionRef: "2012 HL Q3 Option Two (c)",
+    questionText: "Compare flushing with steaming-up as feeding strategies in sheep production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ewes placed in low plane of nutrition / followed by a high plane of nutrition / prior to mating / increases ovulation or better conception rates / better attachment of embryos / greater litter size / more regular heats", marks: 8, contextNote: "Flushing: two points.", group: {"claimMax":2,"perOption":4,"options":["Ewes placed in low plane of nutrition","followed by a high plane of nutrition","prior to mating","increases ovulation or better conception rates","better attachment of embryos","greater litter size","more regular heats"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Increased concentrates / 0.25kg to 0.75kg extra per day / in last six weeks of pregnancy / most foetal growth occurs at this time / prevents twin-lamb disease / healthier lambs / more colostrums (milk) / improve condition score or correct figure", marks: 8, contextNote: "Steaming-up: two points.", group: {"claimMax":2,"perOption":4,"options":["Increased concentrates","0.25kg to 0.75kg extra per day","in last six weeks of pregnancy","most foetal growth occurs at this time","prevents twin-lamb disease","healthier lambs","more colostrums (milk)","improve condition score or correct figure"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q3 Option Two (c)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q4a", topicId: "agsci-3-3-2", conceptId: "silage-quality-experiment",
+    section: "B", questionRef: "2012 HL Q4(a)",
+    questionText: "Describe a laboratory or field method to assess the quality of grass silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "weigh sample of silage / separate the leaves from the stems / take two dishes / weigh them / put leaves in one and stems in other / weigh / get ratio of leaf to stem / correct conclusion.", marks: 24, contextNote: "Six points from one coherent method; do not combine separate experimental versions. Physical-quality brackets describe poor-quality comparisons.", group: {"claimMax":6,"perOption":4,"options":["weigh sample of silage","separate the leaves from the stems","take two dishes","weigh them","put leaves in one and stems in other","weigh","get ratio of leaf to stem","correct conclusion."]} },
+    ],
+    answerVariants: [
+          {
+                "id": "leaf-stem",
+                "label": "Leaf-to-stem ratio",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "weigh sample of silage / separate the leaves from the stems / take two dishes / weigh them / put leaves in one and stems in other / weigh / get ratio of leaf to stem / correct conclusion.",
+                            "marks": 24,
+                            "contextNote": "Six points from one coherent method; do not combine separate experimental versions. Physical-quality brackets describe poor-quality comparisons.",
+                            "group": {
+                                  "claimMax": 6,
+                                  "perOption": 4,
+                                  "options": [
+                                        "weigh sample of silage",
+                                        "separate the leaves from the stems",
+                                        "take two dishes",
+                                        "weigh them",
+                                        "put leaves in one and stems in other",
+                                        "weigh",
+                                        "get ratio of leaf to stem",
+                                        "correct conclusion."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "ph",
+                "label": "pH test",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "squeeze sample of silage / collect liquid / add distilled water / test for pH / record the colour / compare with colour chart / correct conclusion.",
+                            "marks": 24,
+                            "contextNote": "Six points from one coherent method; do not combine separate experimental versions. Physical-quality brackets describe poor-quality comparisons.",
+                            "group": {
+                                  "claimMax": 6,
+                                  "perOption": 4,
+                                  "options": [
+                                        "squeeze sample of silage",
+                                        "collect liquid",
+                                        "add distilled water",
+                                        "test for pH",
+                                        "record the colour",
+                                        "compare with colour chart",
+                                        "correct conclusion."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "dm",
+                "label": "Dry-matter content",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "weigh a sample of silage / record / dry sample in an oven / at 100°C / repeat weighing until mass is constant / record final mass / calculate % DM / correct conclusion (16-20% DM).",
+                            "marks": 24,
+                            "contextNote": "Six points from one coherent method; do not combine separate experimental versions. Physical-quality brackets describe poor-quality comparisons.",
+                            "group": {
+                                  "claimMax": 6,
+                                  "perOption": 4,
+                                  "options": [
+                                        "weigh a sample of silage",
+                                        "record",
+                                        "dry sample in an oven",
+                                        "at 100°C",
+                                        "repeat weighing until mass is constant",
+                                        "record final mass",
+                                        "calculate % DM",
+                                        "correct conclusion (16-20% DM)."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "sensory",
+                "label": "Physical quality",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "colour / yellow green (black-brown) / smell / slight or sharp (sweet or sour) / taste / sharp acidic (not sharp acidic) / feel / firm (mushy) / squeeze with two hands / releases a small amount of liquid or none (liquid released with one hand).",
+                            "marks": 24,
+                            "contextNote": "Six points from one coherent method; do not combine separate experimental versions. Physical-quality brackets describe poor-quality comparisons.",
+                            "group": {
+                                  "claimMax": 6,
+                                  "perOption": 4,
+                                  "options": [
+                                        "colour",
+                                        "yellow green (black-brown)",
+                                        "smell",
+                                        "slight or sharp (sweet or sour)",
+                                        "taste",
+                                        "sharp acidic (not sharp acidic)",
+                                        "feel",
+                                        "firm (mushy)",
+                                        "squeeze with two hands",
+                                        "releases a small amount of liquid or none (liquid released with one hand)."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q4(a)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q4b", topicId: "agsci-3-1", conceptId: "plant-cell-slide",
+    section: "B", questionRef: "2012 HL Q4(b)",
+    questionText: "Describe a laboratory or field method to prepare a sample of plant cells for examination under a microscope.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Get a clean glass slide / wet it / remove a piece of plant tissue / using a scalpel or blade / place on the slide / correct method of applying / stain with iodine solution / leave for a few minutes / coverslip / drain excess stain", marks: 24, group: {"claimMax":6,"perOption":4,"options":["Get a clean glass slide","wet it","remove a piece of plant tissue","using a scalpel or blade","place on the slide","correct method of applying","stain with iodine solution","leave for a few minutes","coverslip","drain excess stain"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q4(b)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q4c", topicId: "agsci-3-1", conceptId: "carbon-dioxide-photosynthesis",
+    section: "B", questionRef: "2012 HL Q4(c)",
+    questionText: "Describe a laboratory or field method to show that carbon dioxide is necessary for photosynthesis.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Get two potted plants of similar size / label them (A and B) / destarch the plants / place a dish of soda lime or sodium hydroxide under plant A / to absorb CO2 / place a dish of sodium hydrogencarbonate under plant B / control / to supply CO2 / cover both plants with clear plastic bags / leave in light / test a leaf from each plant for starch / result: plant A has no starch (B has starch)", marks: 24, group: {"claimMax":6,"perOption":4,"options":["Get two potted plants of similar size","label them (A and B)","destarch the plants","place a dish of soda lime or sodium hydroxide under plant A","to absorb CO2","place a dish of sodium hydrogencarbonate under plant B","control","to supply CO2","cover both plants with clear plastic bags","leave in light","test a leaf from each plant for starch","result: plant A has no starch (B has starch)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q4(c)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q4d", topicId: "agsci-2-3", conceptId: "cation-exchange-experiment",
+    section: "B", questionRef: "2012 HL Q4(d)",
+    questionText: "Describe a laboratory or field method to demonstrate cation exchange in a soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Sample of sieved soil or soil with a high pH or calcium rich or high clay / in filter paper / in a funnel / add (1%) KCl solution or potassium solution / test leachate for calcium / using ammonium oxalate / white ppt. indicates presence of calcium / add distilled water / to wash KCl from soil / test for potassium / by adding sodium cobalt nitrate and a few drops of ethanol / purple indicates presence of potassium / potassium has replaced calcium", marks: 24, contextNote: "The historical scheme prints “sodium cobalt nitrate” and a purple potassium result. The sodium cobaltinitrite test produces a yellow-orange precipitate; violet/purple is associated with the potassium flame test. WHO, Oral Rehydration Salts: Production of the new ORS (2006), section 4.3.6.1. The original wording and tariff remain visible.", group: {"claimMax":6,"perOption":4,"options":["Sample of sieved soil or soil with a high pH or calcium rich or high clay","in filter paper","in a funnel","add (1%) KCl solution or potassium solution","test leachate for calcium","using ammonium oxalate","white ppt. indicates presence of calcium","add distilled water","to wash KCl from soil","test for potassium","by adding sodium cobalt nitrate and a few drops of ethanol","purple indicates presence of potassium","potassium has replaced calcium"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q4(d)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q5a", topicId: "agsci-3-3-1", conceptId: "wheat-barley-cultivation",
+    section: "B", questionRef: "2012 HL Q5(a)",
+    questionText: "Give four reasons why the area under wheat cultivation is much less than the area under barley cultivation in Ireland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "grows well in Irish climate / more valuable for animal feed / higher in protein / higher in fibre / straw can be fed to cattle / malting barley is used in brewing (and distilling) industry / price in Ireland is poor / wheat grain not suitable for flour / lack of suitable varieties / more prone to disease / greater fertiliser requirement", marks: 16, contextNote: "The first six entries refer to barley; the remaining five to wheat. Credit at most one climate point. These are the historical 2012 scheme reasons.", group: {"claimMax":4,"perOption":4,"options":["grows well in Irish climate","more valuable for animal feed","higher in protein","higher in fibre","straw can be fed to cattle","malting barley is used in brewing (and distilling) industry","price in Ireland is poor","wheat grain not suitable for flour","lack of suitable varieties","more prone to disease","greater fertiliser requirement"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q5(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q5bi", topicId: "agsci-3-3-1", conceptId: "potato-practice-i",
+    section: "B", questionRef: "2012 HL Q5(b)(i)",
+    questionText: "Give a reason for the following practice in potato cultivation: Sprouting.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Speeds up growth/ increases yield/ for early potato production.", marks: 4, contextNote: "One reason." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q5(b)(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-4"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q5bii", topicId: "agsci-3-3-2", conceptId: "potato-practice-ii",
+    section: "B", questionRef: "2012 HL Q5(b)(ii)",
+    questionText: "Give a reason for the following practice in potato cultivation: Burning-off the haulms.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Makes harvesting easier/ prevents spread of blight to tubers/ to toughen the skin.", marks: 4, contextNote: "One reason." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q5(b)(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-4"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q5biii", topicId: "agsci-3-3-2", conceptId: "potato-practice-iii",
+    section: "B", questionRef: "2012 HL Q5(b)(iii)",
+    questionText: "Give a reason for the following practice in potato cultivation: Earthing-up.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Prevents ‘greening’ of tubers/ prevents spread of blight to tubers/ weed control/ pest control/ increases yield/ supports stem.", marks: 4, contextNote: "One reason. The examination paper repeats (ii) beside Earthing-up. The scheme correctly numbers this third practice (iii); this task uses (iii) and retains the original paper crop." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q5(b)(iii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q5biv", topicId: "agsci-3-3-1", conceptId: "potato-practice-iv",
+    section: "B", questionRef: "2012 HL Q5(b)(iv)",
+    questionText: "Give a reason for the following practice in potato cultivation: Using certified seed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Free of disease/ better yield/ true to type/ higher germination/ pest-free.", marks: 4, contextNote: "One reason." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q5(b)(iv)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-5"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q5c", topicId: "agsci-3-3-3", conceptId: "potato-storage-losses",
+    section: "B", questionRef: "2012 HL Q5(c)",
+    questionText: "Outline four reasons for losses occurring in potatoes during storage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Overheating / sprouting / rotting / frost damage / damage by pests / disease / damaged during harvesting / harvested when wet / poor ventilation", marks: 16, group: {"claimMax":4,"perOption":4,"options":["Overheating","sprouting","rotting","frost damage","damage by pests","disease","damaged during harvesting","harvested when wet","poor ventilation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q5(c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q6ai", topicId: "agsci-4-3-1", conceptId: "calf-to-beef-growth-curve",
+    section: "B", questionRef: "2012 HL Q6(a)(i)",
+    questionText: "Construct the typical growth curve graph for the two-year calf-to-beef production system.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Labelled axes", marks: null, contextNote: "Two axes at two marks each: liveweight and age. Consult the official graph." },
+    { id: "r-2", kind: "criterion", verbatim: "Growth curve", marks: null, contextNote: "Curve earns 6, 3 or 0 marks. Add the axis marks for a maximum of ten; use the published curve as the comparison." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q6(a)(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+    figure: {
+          "candId": "agsci-2012-hl-scheme-growth-curve",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2012-hl-scheme-growth-curve.png",
+          "srcHash": "0df2fb4c488e90fee80e44c49f463144",
+          "alt": "Official calf-to-beef growth curve. Weight in kg on the vertical axis and time on the horizontal; first winter 200 kg, second winter 460 kg, and compensatory growth indicated by an arrow.",
+          "attribution": "SEC Agricultural Science 2012 Higher Level marking scheme, PDF page 11 — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q6aii", topicId: "agsci-4-3-1", conceptId: "winter-weights-compensatory-growth",
+    section: "B", questionRef: "2012 HL Q6(a)(ii)",
+    stem: "Construct the typical growth curve graph for the two-year calf-to-beef production system.",
+    questionText: "On your graph show clearly: 1. Target weights at first winter housing and second winter housing. 2. Where compensatory growth begins.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "First winter housing: 200 kg (190-210 kg)", marks: 2, contextNote: "Show on the graph." },
+    { id: "r-2", kind: "point", verbatim: "Second winter housing: 460 kg (450-470 kg)", marks: 2, contextNote: "Show on the graph." },
+    { id: "r-3", kind: "criterion", verbatim: "Compensatory growth (all shown on graph)", marks: 2, contextNote: "Mark where the accelerated spring growth begins after the first winter; compare the official graph." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q6(a)(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+    figure: {
+          "candId": "agsci-2012-hl-scheme-growth-curve",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2012-hl-scheme-growth-curve.png",
+          "srcHash": "0df2fb4c488e90fee80e44c49f463144",
+          "alt": "Official calf-to-beef growth curve. Weight in kg on the vertical axis and time on the horizontal; first winter 200 kg, second winter 460 kg, and compensatory growth indicated by an arrow.",
+          "attribution": "SEC Agricultural Science 2012 Higher Level marking scheme, PDF page 11 — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q6aiii", topicId: "agsci-4-3-1", conceptId: "winter-beef-diets",
+    section: "B", questionRef: "2012 HL Q6(a)(iii)",
+    stem: "Two-year calf-to-beef production system.",
+    questionText: "Suggest a suitable diet for the beef cattle in the first and second winter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(Good quality) silage and concentrates", marks: 2, contextNote: "First winter." },
+    { id: "r-2", kind: "point", verbatim: "(Good quality) silage and concentrates", marks: 2, contextNote: "Second winter." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q6(a)(iii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-5"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q6b", topicId: "agsci-4-3-3", conceptId: "mastitis-prevention",
+    section: "B", questionRef: "2012 HL Q6(b)",
+    questionText: "Suggest a suitable mastitis-prevention programme in a spring-calving dairy herd.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Hygiene in housing / washing udders and teats (before milking) / clean milking machine / service milking machine / hygiene in the dairy / teat dips / treat sores on teats / treat infected cows with antibiotics / insect control / milk separately / cull cows prone to disease / dry cow treatment / do not over-milk or under-milk", marks: 16, group: {"claimMax":4,"perOption":4,"options":["Hygiene in housing","washing udders and teats (before milking)","clean milking machine","service milking machine","hygiene in the dairy","teat dips","treat sores on teats","treat infected cows with antibiotics","insect control","milk separately","cull cows prone to disease","dry cow treatment","do not over-milk or under-milk"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q6(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q6c", topicId: "agsci-4-1", conceptId: "milk-hormones",
+    section: "B", questionRef: "2012 HL Q6(c)",
+    questionText: "Outline the role of any one hormone in milk production in a lactating cow.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Oxytocin / pituitary gland / causes (muscles of) alveoli or milk secreting tissue / to contract / forcing milk into the teat (cisterns) / resulting in milk letdown.", marks: 12, contextNote: "Three points about the one hormone you selected.", group: {"claimMax":3,"perOption":4,"options":["Oxytocin","pituitary gland","causes (muscles of) alveoli or milk secreting tissue","to contract","forcing milk into the teat (cisterns)","resulting in milk letdown."]} },
+    ],
+    answerVariants: [
+          {
+                "id": "oxytocin",
+                "label": "Oxytocin",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Oxytocin / pituitary gland / causes (muscles of) alveoli or milk secreting tissue / to contract / forcing milk into the teat (cisterns) / resulting in milk letdown.",
+                            "marks": 12,
+                            "contextNote": "Three points about the one hormone you selected.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Oxytocin",
+                                        "pituitary gland",
+                                        "causes (muscles of) alveoli or milk secreting tissue",
+                                        "to contract",
+                                        "forcing milk into the teat (cisterns)",
+                                        "resulting in milk letdown."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "prolactin",
+                "label": "Prolactin",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Prolactin / pituitary gland / stimulates production of milk / in mammary glands / maintains lactation.",
+                            "marks": 12,
+                            "contextNote": "Three points about the one hormone you selected.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Prolactin",
+                                        "pituitary gland",
+                                        "stimulates production of milk",
+                                        "in mammary glands",
+                                        "maintains lactation."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q6(c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q7a-route-i-ii-iii", topicId: "agsci-4-3-2", conceptId: "genetics-terms",
+    section: "B", questionRef: "2012 HL Q7(a) — i, ii, iii",
+    stem: "Practice choice: Sex linkage, Continuous variation, Genetically modified (GM) crops.",
+    questionText: "Explain three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Where a gene (for a non-reproductive trait) is carried on the sex (or X) chromosome", marks: 4, contextNote: "Sex linkage." },
+    { id: "r-2", kind: "point", verbatim: "Where there is a range of phenotypes between two extremes or controlled by a number of genes (interacting with each other)", marks: 4, contextNote: "Continuous variation." },
+    { id: "r-3", kind: "point", verbatim: "Where the genotype of a crop is altered (to produce an improved variety).", marks: 4, contextNote: "Genetically modified (GM) crops." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q7(a) — i, ii, iii",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q7a-route-i-ii-iv", topicId: "agsci-4-3-2", conceptId: "genetics-terms",
+    section: "B", questionRef: "2012 HL Q7(a) — i, ii, iv",
+    stem: "Practice choice: Sex linkage, Continuous variation, Binary fission.",
+    questionText: "Explain three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Where a gene (for a non-reproductive trait) is carried on the sex (or X) chromosome", marks: 4, contextNote: "Sex linkage." },
+    { id: "r-2", kind: "point", verbatim: "Where there is a range of phenotypes between two extremes or controlled by a number of genes (interacting with each other)", marks: 4, contextNote: "Continuous variation." },
+    { id: "r-3", kind: "point", verbatim: "Division of a cell into two or type of (asexual) reproduction in unicellular organisms or named.", marks: 4, contextNote: "Binary fission." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q7(a) — i, ii, iv",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q7a-route-i-iii-iv", topicId: "agsci-4-3-2", conceptId: "genetics-terms",
+    section: "B", questionRef: "2012 HL Q7(a) — i, iii, iv",
+    stem: "Practice choice: Sex linkage, Genetically modified (GM) crops, Binary fission.",
+    questionText: "Explain three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Where a gene (for a non-reproductive trait) is carried on the sex (or X) chromosome", marks: 4, contextNote: "Sex linkage." },
+    { id: "r-2", kind: "point", verbatim: "Where the genotype of a crop is altered (to produce an improved variety).", marks: 4, contextNote: "Genetically modified (GM) crops." },
+    { id: "r-3", kind: "point", verbatim: "Division of a cell into two or type of (asexual) reproduction in unicellular organisms or named.", marks: 4, contextNote: "Binary fission." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q7(a) — i, iii, iv",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q7a-route-ii-iii-iv", topicId: "agsci-4-3-2", conceptId: "genetics-terms",
+    section: "B", questionRef: "2012 HL Q7(a) — ii, iii, iv",
+    stem: "Practice choice: Continuous variation, Genetically modified (GM) crops, Binary fission.",
+    questionText: "Explain three of the following terms: (i) Sex linkage. (ii) Continuous variation. (iii) Genetically modified (GM) crops. (iv) Binary fission.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Where there is a range of phenotypes between two extremes or controlled by a number of genes (interacting with each other)", marks: 4, contextNote: "Continuous variation." },
+    { id: "r-2", kind: "point", verbatim: "Where the genotype of a crop is altered (to produce an improved variety).", marks: 4, contextNote: "Genetically modified (GM) crops." },
+    { id: "r-3", kind: "point", verbatim: "Division of a cell into two or type of (asexual) reproduction in unicellular organisms or named.", marks: 4, contextNote: "Binary fission." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q7(a) — ii, iii, iv",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q7bi", topicId: "agsci-4-3-2", conceptId: "oat-incomplete-dominance",
+    section: "B", questionRef: "2012 HL Q7(b)(i)",
+    stem: "In cereal trials for oats, pure-breeding Barra (approximately 500 mm straw length) was crossed with pure-breeding Evita (approximately 800 mm). The hybrid had an approximate straw length of 650 mm. Use B for the 500 mm gene and E for the 800 mm gene.",
+    questionText: "Show how this hybrid result arose.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "BB", marks: 2, contextNote: "Pure-breeding Barra parent." },
+    { id: "r-2", kind: "point", verbatim: "EE", marks: 2, contextNote: "Pure-breeding Evita parent." },
+    { id: "r-3", kind: "point", verbatim: "BE", marks: 2, contextNote: "Hybrid offspring, explaining the 650 mm result." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q7(b)(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q7bii", topicId: "agsci-4-3-2", conceptId: "oat-hybrid-intercross",
+    section: "B", questionRef: "2012 HL Q7(b)(ii)",
+    stem: "In cereal trials for oats, pure-breeding Barra (approximately 500 mm straw length) was crossed with pure-breeding Evita (approximately 800 mm). The hybrid had an approximate straw length of 650 mm. Use B for the 500 mm gene and E for the 800 mm gene.",
+    questionText: "Using a Punnett square or other suitable method, show the genotypes and matching phenotypes resulting from a cross between two of the new hybrids.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Parents BE x BE", marks: 2, contextNote: "The scheme labels the hybrid intercross offspring F1. Relative to the original Barra × Evita cross, these are the F2 generation. Parents BE × BE and the original genotypes, phenotypes and ten-mark tariff are unchanged." },
+    { id: "r-2", kind: "criterion", verbatim: "Layout of cross", marks: 2, contextNote: "A complete correctly arranged cross; no separate gamete award is printed." },
+    { id: "r-3", kind: "anyN", verbatim: "BB / BE / EE", marks: 3, contextNote: "The three distinct offspring genotypes, correctly derived. The two BE cells represent one genotype award.", group: {"claimMax":3,"perOption":1,"options":["BB","BE","EE"]} },
+    { id: "r-4", kind: "anyN", verbatim: "500mm (BB) / 650mm (BE) / 800mm (EE)", marks: 3, contextNote: "Each phenotype must match its genotype; the repeated BE phenotype earns no extra mark.", group: {"claimMax":3,"perOption":1,"options":["500mm (BB)","650mm (BE)","800mm (EE)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q7(b)(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+    figure: {
+          "candId": "agsci-2012-hl-scheme-oat-cross",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2012-hl-scheme-oat-cross.png",
+          "srcHash": "5047eec381a38646ee1f01be44f0b77a",
+          "alt": "Official hybrid oat cross: BE × BE, gametes B and E from each parent, offspring BB, BE, BE and EE, with matching straw lengths 500 mm, 650 mm and 800 mm. The source labels the intercross offspring F1; the accompanying note explains the generation label.",
+          "attribution": "SEC Agricultural Science 2012 Higher Level marking scheme, PDF page 12 — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q7c", topicId: "agsci-3-1", conceptId: "natural-vegetative-reproduction",
+    section: "B", questionRef: "2012 HL Q7(c)",
+    questionText: "Describe one natural method of vegetative reproduction in plants.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Stem tubers / for food storage (in potatoes) / aerial parts die away in winter / new growth from tubers in spring.", marks: 12, contextNote: "Three points describing one coherent method. The scheme examples are not a finite printed response pool.", group: {"claimMax":3,"perOption":4,"options":["Stem tubers","for food storage (in potatoes)","aerial parts die away in winter","new growth from tubers in spring."]} },
+    ],
+    answerVariants: [
+          {
+                "id": "tuber",
+                "label": "Stem tubers",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Stem tubers / for food storage (in potatoes) / aerial parts die away in winter / new growth from tubers in spring.",
+                            "marks": 12,
+                            "contextNote": "Three points describing one coherent method. The scheme examples are not a finite printed response pool.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Stem tubers",
+                                        "for food storage (in potatoes)",
+                                        "aerial parts die away in winter",
+                                        "new growth from tubers in spring."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "rhizome",
+                "label": "Rhizomes",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Rhizomes / underground stem / grow horizontally / produce adventitious roots / new shoots",
+                            "marks": 12,
+                            "contextNote": "Three points describing one coherent method. The scheme examples are not a finite printed response pool.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Rhizomes",
+                                        "underground stem",
+                                        "grow horizontally",
+                                        "produce adventitious roots",
+                                        "new shoots"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "runner",
+                "label": "Runners",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Runners / young shoots grow out from the stem / roots develop at points along the stem / new plants grow from these",
+                            "marks": 12,
+                            "contextNote": "Three points describing one coherent method. The scheme examples are not a finite printed response pool.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Runners",
+                                        "young shoots grow out from the stem",
+                                        "roots develop at points along the stem",
+                                        "new plants grow from these"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "corm",
+                "label": "Corms",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Corms / swollen underground stems / produce new growth from buds",
+                            "marks": 12,
+                            "contextNote": "Three points describing one coherent method. The scheme examples are not a finite printed response pool.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Corms",
+                                        "swollen underground stems",
+                                        "produce new growth from buds"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "bulb",
+                "label": "Bulbs",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Bulbs / food stored in swollen leave / side buds produce new growth",
+                            "marks": 12,
+                            "contextNote": "Three points describing one coherent method. The scheme examples are not a finite printed response pool.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Bulbs",
+                                        "food stored in swollen leave",
+                                        "side buds produce new growth"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "root-tuber",
+                "label": "Root tubers",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Root tubers / swollen fibrous roots / store food / new growth from buds at base of old stem.",
+                            "marks": 12,
+                            "contextNote": "Three points describing one coherent method. The scheme examples are not a finite printed response pool.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Root tubers",
+                                        "swollen fibrous roots",
+                                        "store food",
+                                        "new growth from buds at base of old stem."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "stolon",
+                "label": "Stolon",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Stolon / overground stem / touches the ground / produces new roots at point of contact / grows new shoot.",
+                            "marks": 12,
+                            "contextNote": "Three points describing one coherent method. The scheme examples are not a finite printed response pool.",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Stolon",
+                                        "overground stem",
+                                        "touches the ground",
+                                        "produces new roots at point of contact",
+                                        "grows new shoot."
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q7(c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q7d", topicId: "agsci-4-3-1", conceptId: "castration-reasons",
+    section: "B", questionRef: "2012 HL Q7(d)",
+    questionText: "Identify two reasons why male animals are castrated on farms.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Males are aggressive / danger to the farmer / a lot of fencing required / meat not as marketable / interfere with breeding programme", marks: 8, group: {"claimMax":2,"perOption":4,"options":["Males are aggressive","danger to the farmer","a lot of fencing required","meat not as marketable","interfere with breeding programme"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q7(d)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q8a", topicId: "agsci-2-3", conceptId: "nitrogen-cycle",
+    section: "B", questionRef: "2012 HL Q8(a)",
+    questionText: "Describe, with the aid of a labelled diagram, how the element nitrogen is recycled in nature.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Diagram.", marks: null, contextNote: "A correct labelled nitrogen-cycle diagram." },
+    { id: "r-2", kind: "criterion", verbatim: "Nitrogen gas / nitrogen fixation / lightning / in root nodules of clover (legumes) / by rhizobium / nitrogen converted to nitrates / plant protein / animal protein / animal and plant manures provide soil organic matter / undergoes mineralisation (decomposition) to produce ammonium ions / nitrification to nitrites / by nitrosomonas / nitrification to nitrates / by nitrobacter / nitrates provide protein to soil organisms (fungi or bacteria) / nitrates leached from soil / denitrification to nitrogen gas / anaerobic / volatilisation / addition of artificial fertilisers", marks: null, contextNote: "Five distinct correctly linked points at four marks each; add the four-mark diagram award for a maximum of twenty-four. Use the original scheme to record partial credit. Biological nitrogen fixation produces ammonia/ammonium; nitrification subsequently produces nitrite and nitrate. Keep those stages distinct when using the scheme’s abbreviated wording." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q8(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-6"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q8bi", topicId: "agsci-3-3-2", conceptId: "hay-in-farming",
+    section: "B", questionRef: "2012 HL Q8(b)(i)",
+    questionText: "Defend the statement: “There will always be a role for hay in Irish farming.”",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good dry matter source for livestock / can be fed to cattle, sheep and horses / does not cause pollution / lower cost / no plastic waste / no preservatives needed / develops rumen in calves (scratch factor) / convenience", marks: 12, group: {"claimMax":3,"perOption":4,"options":["Good dry matter source for livestock","can be fed to cattle, sheep and horses","does not cause pollution","lower cost","no plastic waste","no preservatives needed","develops rumen in calves (scratch factor)","convenience"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q8(b)(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-5"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q8bii", topicId: "agsci-3-3-3", conceptId: "hay-conservation",
+    section: "B", questionRef: "2012 HL Q8(b)(ii)",
+    questionText: "Outline three principal steps in conserving grass as hay.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Close off field 6 weeks before cutting / cut when stemmy (or heading out or correct growth stage) / when a prolonged period of dry weather is expected / (rotary) mower is used to cut grass / (rotary) tedder shakes grass to speed up the drying process / dry to 20% / baler collects the grass and bales it / bales are secured by baling twine / store under cover", marks: 12, contextNote: "The scheme’s “dry to 20%” refers to moisture content, not dry matter. FAO’s Haymaking chapter describes reducing moisture to 12–20% before storage, depending on the crop and storage conditions.", group: {"claimMax":3,"perOption":4,"options":["Close off field 6 weeks before cutting","cut when stemmy (or heading out or correct growth stage)","when a prolonged period of dry weather is expected","(rotary) mower is used to cut grass","(rotary) tedder shakes grass to speed up the drying process","dry to 20%","baler collects the grass and bales it","bales are secured by baling twine","store under cover"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q8(b)(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3","agricultural-science-2-4","agricultural-science-3-5"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q8c-route-i-ii-iii", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "agricultural-comparisons",
+    section: "B", questionRef: "2012 HL Q8(c) — i, ii, iii",
+    stem: "Practice choice: Lungworm and ringworm, Breeding unit and finishing unit, Catch crop and nurse crop.",
+    questionText: "Highlight the main differences between the members of three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Nematode / endoparasite / affects respiratory tract (lungs) / causes hoose / not a zoonosis.", marks: 4, contextNote: "Lungworm: two points. The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper.", group: {"claimMax":2,"perOption":2,"options":["Nematode","endoparasite","affects respiratory tract (lungs)","causes hoose","not a zoonosis."]} },
+    { id: "r-2", kind: "anyN", verbatim: "Fungus (fungal disease) / ectoparasite / affects skin and hair on neck and head / zoonosis.", marks: 4, contextNote: "ringworm: two points.", group: {"claimMax":2,"perOption":2,"options":["Fungus (fungal disease)","ectoparasite","affects skin and hair on neck and head","zoonosis."]} },
+    { id: "r-3", kind: "anyN", verbatim: "Pigs weigh less than 32Kg / dry sow house / farrowing house / 20°C / farrowing crate / weaner house 24°C / age range birth to 12 weeks / with sow for first 5 weeks until weaned / boar present.", marks: 4, contextNote: "Breeding unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh less than 32Kg","dry sow house","farrowing house","20°C","farrowing crate","weaner house 24°C","age range birth to 12 weeks","with sow for first 5 weeks until weaned","boar present."]} },
+    { id: "r-4", kind: "anyN", verbatim: "Pigs weigh more than 32 kg / pigs reared for slaughter / 22°C / age range 3-6 months / slaughter 82 kg.", marks: 4, contextNote: "finishing unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh more than 32 kg","pigs reared for slaughter","22°C","age range 3-6 months","slaughter 82 kg."]} },
+    { id: "r-5", kind: "anyN", verbatim: "Grown between two main crops / sown after maincrop / fast growing crop (2-3 months) / prevents leaching / prevents soil erosion / high yield / break between grass and cereal / mainly fodder crops / e.g. turnips", marks: 4, contextNote: "Catch crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Grown between two main crops","sown after maincrop","fast growing crop (2-3 months)","prevents leaching","prevents soil erosion","high yield","break between grass and cereal","mainly fodder crops","e.g. turnips"]} },
+    { id: "r-6", kind: "anyN", verbatim: "Crop with 1 year life cycle / sown with perennial crop / annual crop is harvested leaving the perennial crop / reduces weeds / prevents soil erosion / used to establish perennial crop / e.g. grass sown with spring barley or peas", marks: 4, contextNote: "nurse crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Crop with 1 year life cycle","sown with perennial crop","annual crop is harvested leaving the perennial crop","reduces weeds","prevents soil erosion","used to establish perennial crop","e.g. grass sown with spring barley or peas"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q8(c) — i, ii, iii",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3","agricultural-science-2-4","agricultural-science-3-5"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q8c-route-i-ii-iv", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "agricultural-comparisons",
+    section: "B", questionRef: "2012 HL Q8(c) — i, ii, iv",
+    stem: "Practice choice: Lungworm and ringworm, Breeding unit and finishing unit, Zoonoses and zoospores.",
+    questionText: "Highlight the main differences between the members of three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Nematode / endoparasite / affects respiratory tract (lungs) / causes hoose / not a zoonosis.", marks: 4, contextNote: "Lungworm: two points. The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper.", group: {"claimMax":2,"perOption":2,"options":["Nematode","endoparasite","affects respiratory tract (lungs)","causes hoose","not a zoonosis."]} },
+    { id: "r-2", kind: "anyN", verbatim: "Fungus (fungal disease) / ectoparasite / affects skin and hair on neck and head / zoonosis.", marks: 4, contextNote: "ringworm: two points.", group: {"claimMax":2,"perOption":2,"options":["Fungus (fungal disease)","ectoparasite","affects skin and hair on neck and head","zoonosis."]} },
+    { id: "r-3", kind: "anyN", verbatim: "Pigs weigh less than 32Kg / dry sow house / farrowing house / 20°C / farrowing crate / weaner house 24°C / age range birth to 12 weeks / with sow for first 5 weeks until weaned / boar present.", marks: 4, contextNote: "Breeding unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh less than 32Kg","dry sow house","farrowing house","20°C","farrowing crate","weaner house 24°C","age range birth to 12 weeks","with sow for first 5 weeks until weaned","boar present."]} },
+    { id: "r-4", kind: "anyN", verbatim: "Pigs weigh more than 32 kg / pigs reared for slaughter / 22°C / age range 3-6 months / slaughter 82 kg.", marks: 4, contextNote: "finishing unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh more than 32 kg","pigs reared for slaughter","22°C","age range 3-6 months","slaughter 82 kg."]} },
+    { id: "r-5", kind: "anyN", verbatim: "Disease(s) / can be transmitted from animal to human / spread by direct contact (insects eating flesh of infected animals, drinking contaminated water) / e.g. anthrax, brucellosis", marks: 4, contextNote: "Zoonoses: two points.", group: {"claimMax":2,"perOption":2,"options":["Disease(s)","can be transmitted from animal to human","spread by direct contact (insects eating flesh of infected animals, drinking contaminated water)","e.g. anthrax, brucellosis"]} },
+    { id: "r-6", kind: "anyN", verbatim: "Asexual reproductive cell / method of propagation in algae (bacteria, fungi) / no cell wall / flagellum for movement / mobile spore / e.g. Phytophthora infestans (potato blight)", marks: 4, contextNote: "zoospores: two points.", group: {"claimMax":2,"perOption":2,"options":["Asexual reproductive cell","method of propagation in algae (bacteria, fungi)","no cell wall","flagellum for movement","mobile spore","e.g. Phytophthora infestans (potato blight)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q8(c) — i, ii, iv",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3","agricultural-science-2-4","agricultural-science-3-5"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q8c-route-i-iii-iv", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "agricultural-comparisons",
+    section: "B", questionRef: "2012 HL Q8(c) — i, iii, iv",
+    stem: "Practice choice: Lungworm and ringworm, Catch crop and nurse crop, Zoonoses and zoospores.",
+    questionText: "Highlight the main differences between the members of three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Nematode / endoparasite / affects respiratory tract (lungs) / causes hoose / not a zoonosis.", marks: 4, contextNote: "Lungworm: two points. The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper.", group: {"claimMax":2,"perOption":2,"options":["Nematode","endoparasite","affects respiratory tract (lungs)","causes hoose","not a zoonosis."]} },
+    { id: "r-2", kind: "anyN", verbatim: "Fungus (fungal disease) / ectoparasite / affects skin and hair on neck and head / zoonosis.", marks: 4, contextNote: "ringworm: two points.", group: {"claimMax":2,"perOption":2,"options":["Fungus (fungal disease)","ectoparasite","affects skin and hair on neck and head","zoonosis."]} },
+    { id: "r-3", kind: "anyN", verbatim: "Grown between two main crops / sown after maincrop / fast growing crop (2-3 months) / prevents leaching / prevents soil erosion / high yield / break between grass and cereal / mainly fodder crops / e.g. turnips", marks: 4, contextNote: "Catch crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Grown between two main crops","sown after maincrop","fast growing crop (2-3 months)","prevents leaching","prevents soil erosion","high yield","break between grass and cereal","mainly fodder crops","e.g. turnips"]} },
+    { id: "r-4", kind: "anyN", verbatim: "Crop with 1 year life cycle / sown with perennial crop / annual crop is harvested leaving the perennial crop / reduces weeds / prevents soil erosion / used to establish perennial crop / e.g. grass sown with spring barley or peas", marks: 4, contextNote: "nurse crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Crop with 1 year life cycle","sown with perennial crop","annual crop is harvested leaving the perennial crop","reduces weeds","prevents soil erosion","used to establish perennial crop","e.g. grass sown with spring barley or peas"]} },
+    { id: "r-5", kind: "anyN", verbatim: "Disease(s) / can be transmitted from animal to human / spread by direct contact (insects eating flesh of infected animals, drinking contaminated water) / e.g. anthrax, brucellosis", marks: 4, contextNote: "Zoonoses: two points.", group: {"claimMax":2,"perOption":2,"options":["Disease(s)","can be transmitted from animal to human","spread by direct contact (insects eating flesh of infected animals, drinking contaminated water)","e.g. anthrax, brucellosis"]} },
+    { id: "r-6", kind: "anyN", verbatim: "Asexual reproductive cell / method of propagation in algae (bacteria, fungi) / no cell wall / flagellum for movement / mobile spore / e.g. Phytophthora infestans (potato blight)", marks: 4, contextNote: "zoospores: two points.", group: {"claimMax":2,"perOption":2,"options":["Asexual reproductive cell","method of propagation in algae (bacteria, fungi)","no cell wall","flagellum for movement","mobile spore","e.g. Phytophthora infestans (potato blight)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q8(c) — i, iii, iv",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3","agricultural-science-2-4","agricultural-science-3-5"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q8c-route-ii-iii-iv", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-3-3","agsci-3-3-2"], conceptId: "agricultural-comparisons",
+    section: "B", questionRef: "2012 HL Q8(c) — ii, iii, iv",
+    stem: "Practice choice: Breeding unit and finishing unit, Catch crop and nurse crop, Zoonoses and zoospores.",
+    questionText: "Highlight the main differences between the members of three of the following pairs: (i) Lungworm and ringworm. (ii) Breeding unit and finishing unit. (iii) Catch crop and nurse crop. (iv) Zoonoses and zoospores.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Pigs weigh less than 32Kg / dry sow house / farrowing house / 20°C / farrowing crate / weaner house 24°C / age range birth to 12 weeks / with sow for first 5 weeks until weaned / boar present.", marks: 4, contextNote: "Breeding unit: two points. The scheme repeats (ii) beside catch crop and nurse crop. The examination paper correctly labels that pair (iii); the practice routes follow the paper.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh less than 32Kg","dry sow house","farrowing house","20°C","farrowing crate","weaner house 24°C","age range birth to 12 weeks","with sow for first 5 weeks until weaned","boar present."]} },
+    { id: "r-2", kind: "anyN", verbatim: "Pigs weigh more than 32 kg / pigs reared for slaughter / 22°C / age range 3-6 months / slaughter 82 kg.", marks: 4, contextNote: "finishing unit: two points.", group: {"claimMax":2,"perOption":2,"options":["Pigs weigh more than 32 kg","pigs reared for slaughter","22°C","age range 3-6 months","slaughter 82 kg."]} },
+    { id: "r-3", kind: "anyN", verbatim: "Grown between two main crops / sown after maincrop / fast growing crop (2-3 months) / prevents leaching / prevents soil erosion / high yield / break between grass and cereal / mainly fodder crops / e.g. turnips", marks: 4, contextNote: "Catch crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Grown between two main crops","sown after maincrop","fast growing crop (2-3 months)","prevents leaching","prevents soil erosion","high yield","break between grass and cereal","mainly fodder crops","e.g. turnips"]} },
+    { id: "r-4", kind: "anyN", verbatim: "Crop with 1 year life cycle / sown with perennial crop / annual crop is harvested leaving the perennial crop / reduces weeds / prevents soil erosion / used to establish perennial crop / e.g. grass sown with spring barley or peas", marks: 4, contextNote: "nurse crop: two points.", group: {"claimMax":2,"perOption":2,"options":["Crop with 1 year life cycle","sown with perennial crop","annual crop is harvested leaving the perennial crop","reduces weeds","prevents soil erosion","used to establish perennial crop","e.g. grass sown with spring barley or peas"]} },
+    { id: "r-5", kind: "anyN", verbatim: "Disease(s) / can be transmitted from animal to human / spread by direct contact (insects eating flesh of infected animals, drinking contaminated water) / e.g. anthrax, brucellosis", marks: 4, contextNote: "Zoonoses: two points.", group: {"claimMax":2,"perOption":2,"options":["Disease(s)","can be transmitted from animal to human","spread by direct contact (insects eating flesh of infected animals, drinking contaminated water)","e.g. anthrax, brucellosis"]} },
+    { id: "r-6", kind: "anyN", verbatim: "Asexual reproductive cell / method of propagation in algae (bacteria, fungi) / no cell wall / flagellum for movement / mobile spore / e.g. Phytophthora infestans (potato blight)", marks: 4, contextNote: "zoospores: two points.", group: {"claimMax":2,"perOption":2,"options":["Asexual reproductive cell","method of propagation in algae (bacteria, fungi)","no cell wall","flagellum for movement","mobile spore","e.g. Phytophthora infestans (potato blight)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q8(c) — ii, iii, iv",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q9a", topicId: "agsci-3-1", conceptId: "scientific-explanation-a",
+    section: "B", questionRef: "2012 HL Q9(a)",
+    questionText: "Give a scientific explanation for: The importance of pollination in plants.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Necessary for (sexual) reproduction of flowering plants / allows for genetic variation / production of seeds / fruits / which are food for animals / part of the food chain / biodiversity-maintains a balance in the ecosystem.", marks: 12, contextNote: "Three distinct points in a coherent explanation; synonymous descriptions earn only one award.", group: {"claimMax":3,"perOption":4,"options":["Necessary for (sexual) reproduction of flowering plants","allows for genetic variation","production of seeds","fruits","which are food for animals","part of the food chain","biodiversity-maintains a balance in the ecosystem."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q9(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-0"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q9b", topicId: "agsci-4-1", conceptId: "scientific-explanation-b",
+    section: "B", questionRef: "2012 HL Q9(b)",
+    questionText: "Give a scientific explanation for: A greater demand for energy by animals kept outdoors over the winter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Colder outdoors / wetter / animals use energy for heat (respiration) / greater energy demand to maintain critical temperature / animals move around and use energy / thermoregulation (maintain body temperature)", marks: 12, contextNote: "Three distinct points in a coherent explanation; synonymous descriptions earn only one award.", group: {"claimMax":3,"perOption":4,"options":["Colder outdoors","wetter","animals use energy for heat (respiration)","greater energy demand to maintain critical temperature","animals move around and use energy","thermoregulation (maintain body temperature)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q9(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q9c", topicId: "agsci-3-3-1", conceptId: "scientific-explanation-c",
+    section: "B", questionRef: "2012 HL Q9(c)",
+    questionText: "Give a scientific explanation for: The occurrence of bare patches of ground in a recently sown cereal crop.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Seeding rate is too low / winter kill (frost etc.) may leave bare patches / disease / Rhizoctonia / damping-off / pests eating seed / not using certified seed / poor seedbed preparation / waterlogging.", marks: 12, contextNote: "Three distinct points in a coherent explanation; synonymous descriptions earn only one award.", group: {"claimMax":3,"perOption":4,"options":["Seeding rate is too low","winter kill (frost etc.) may leave bare patches","disease","Rhizoctonia","damping-off","pests eating seed","not using certified seed","poor seedbed preparation","waterlogging."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q9(c)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-4"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q9d", topicId: "agsci-3-3-2", conceptId: "scientific-explanation-d",
+    section: "B", questionRef: "2012 HL Q9(d)",
+    questionText: "Give a scientific explanation for: The benefits arising from shelter-belts on exposed farms.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Protection for animals / protection for plants (crops) / reduce wind damage / increase soil temperature / air temperature / protection for buildings / habitat for wildlife / aesthetic purpose.", marks: 12, contextNote: "Three distinct points in a coherent explanation; synonymous descriptions earn only one award.", group: {"claimMax":3,"perOption":4,"options":["Protection for animals","protection for plants (crops)","reduce wind damage","increase soil temperature","air temperature","protection for buildings","habitat for wildlife","aesthetic purpose."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q9(d)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-07"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Higher Level — © State Examinations Commission.",
+    id: "agsci-2012-hl-q9e", topicId: "agsci-4-3-1", conceptId: "scientific-explanation-e",
+    section: "B", questionRef: "2012 HL Q9(e)",
+    questionText: "Give a scientific explanation for: The locating of boars in dry sow houses.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Presence of boar stimulates sow’s oestrous cycle / used to detect sows in heat / can detect pheromones / used for double serving.", marks: 12, contextNote: "Three distinct points in a coherent explanation; synonymous descriptions earn only one award.", group: {"claimMax":3,"perOption":4,"options":["Presence of boar stimulates sow’s oestrous cycle","used to detect sows in heat","can detect pheromones","used for double serving."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Higher — Q9(e)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording and examination context."
+    },
+  } as SecCard,
 ];

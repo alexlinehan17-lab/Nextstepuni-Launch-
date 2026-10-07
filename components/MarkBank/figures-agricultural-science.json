@@ -219,5 +219,39 @@
       0.829
     ],
     "reviewedAt": "2026-10-07"
+  },
+  "agsci-2012-hl-scheme-growth-curve": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2012-hl-scheme-growth-curve.png",
+    "md5": "0df2fb4c488e90fee80e44c49f463144",
+    "alt": "Official calf-to-beef growth curve. Weight in kg on the vertical axis and time on the horizontal; first winter 200 kg, second winter 460 kg, and compensatory growth indicated by an arrow.",
+    "attribution": "SEC Agricultural Science 2012 Higher Level marking scheme, PDF page 11 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2012/LC024ALP000EV.pdf",
+    "sourceSha256": "eb8f1a690343c38320680ed8425bdf0365e4ea1e4afe240d478026bf8909fdc1",
+    "pdfPage": 11,
+    "cropRect": [
+      0.33,
+      0.2,
+      0.78,
+      0.373
+    ],
+    "reviewedAt": "2026-10-07"
+  },
+  "agsci-2012-hl-scheme-oat-cross": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2012-hl-scheme-oat-cross.png",
+    "md5": "5047eec381a38646ee1f01be44f0b77a",
+    "alt": "Official hybrid oat cross: BE × BE, gametes B and E from each parent, offspring BB, BE, BE and EE, with matching straw lengths 500 mm, 650 mm and 800 mm. The source labels the intercross offspring F1; the accompanying note explains the generation label.",
+    "attribution": "SEC Agricultural Science 2012 Higher Level marking scheme, PDF page 12 — © State Examinations Commission.",
+    "solution": true,
+    "sourcePdf": "paper-trail-corpus/markingschemes/2012/LC024ALP000EV.pdf",
+    "sourceSha256": "eb8f1a690343c38320680ed8425bdf0365e4ea1e4afe240d478026bf8909fdc1",
+    "pdfPage": 12,
+    "cropRect": [
+      0.265,
+      0.292,
+      0.93,
+      0.497
+    ],
+    "reviewedAt": "2026-10-07"
   }
 }
