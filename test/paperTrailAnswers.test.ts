@@ -56,8 +56,14 @@ describe('Paper Trail answer sidecars — shape', () => {
       expect(map.q.length).toBeGreaterThan(0);
 
       const nums = map.q.map(q => Number(q.n));
-      // question numbers strictly increasing (monotonic, no dupes)
-      for (let i = 1; i < nums.length; i++) expect(nums[i]).toBeGreaterThan(nums[i - 1]);
+      expect(new Set(map.q.map(q => q.n)).size, 'unique task identities').toBe(map.q.length);
+      // Numbered maps retain their numeric-order gate. Reviewed split tasks
+      // also have lettered IDs and must supply explicit physical print order.
+      if (nums.every(Number.isFinite)) {
+        for (let i = 1; i < nums.length; i++) expect(nums[i]).toBeGreaterThan(nums[i - 1]);
+      } else {
+        expect(map.q.every(q => Number.isInteger(q.printOrder)), 'lettered tasks require print order').toBe(true);
+      }
 
       // PRINT-ORDER gate. paperRegion.ts derives a question's crop by sorting
       // the anchors into print order (page, then y) and running each one to the
@@ -79,10 +85,11 @@ describe('Paper Trail answer sidecars — shape', () => {
       }
       const byPage = new Map<number, number[]>();
       for (const q of map.q) {
-        const list = byPage.get(q.pP);
+        const page = q.paperRegion?.[0]?.p ?? q.pP;
+        const list = byPage.get(page);
         const printRank = q.printOrder ?? Number(q.n);
         if (list) list.push(printRank);
-        else byPage.set(q.pP, [printRank]);
+        else byPage.set(page, [printRank]);
       }
       let priorPagesMax = 0;
       for (const page of [...byPage.keys()].sort((a, b) => a - b)) {
@@ -102,8 +109,9 @@ describe('Paper Trail answer sidecars — shape', () => {
         expect(q.pY[0]).toBeGreaterThanOrEqual(0);
         expect(q.pY[1]).toBeLessThanOrEqual(1);
         expect(q.region.length).toBeGreaterThan(0);
-        const pages = q.region.map(s => s.p);
-        for (const seg of q.region) {
+        const displayedRegion = q.schemeRegion ?? q.region;
+        const pages = displayedRegion.map(s => s.p);
+        for (const seg of displayedRegion) {
           // EVERY region page inside the paper's own band (the P1/P2 guard)
           expect(seg.p >= lo && seg.p < hi, `${file} Q${q.n} page ${seg.p} in [${lo},${hi})`).toBe(true);
           if (seg.r) {

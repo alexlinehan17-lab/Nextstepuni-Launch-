@@ -33,16 +33,7 @@
     "indexedCards": 529,
     "orphanCardIds": [],
     "missingLocalPapers": [],
-    "papersWithoutIndexedScheme": [
-      "2011|foundation|LC001BLP100IV.pdf",
-      "2011|foundation|LC001BLPA00IV.pdf",
-      "2010|higher|LC001ALP100IV.pdf",
-      "2010|higher|LC001ALP200IV.pdf",
-      "2010|higher|LC001ALPA00IV.pdf",
-      "2010|ordinary|LC001GLP100IV.pdf",
-      "2010|ordinary|LC001GLP200IV.pdf",
-      "2010|ordinary|LC001GLPA00IV.pdf"
-    ],
+    "papersWithoutIndexedScheme": [],
     "missingLocalSchemes": [],
     "papersPendingFullReview": 89
   },
@@ -3681,7 +3672,12 @@
         "pages": 16,
         "sha256": "8cbf542bdf3937dbe1121737d750a11b7e0ba23c5812e11ea27102b2b24a23ca"
       },
-      "scheme": null,
+      "scheme": {
+        "fileid": "LC001BLP000EV.pdf",
+        "availableLocally": true,
+        "pages": 20,
+        "sha256": "9d661961f601757d5de357b5d53485b16d92ebfa19a01409ea722e0b1c22c37c"
+      },
       "markBankCardIds": [],
       "atlasQuestionIds": [
         "R-1",
@@ -3714,7 +3710,12 @@
         "pages": 8,
         "sha256": "2d4997a9c4399b63edf4ffd152c64700151b6beba165b1b5f5f27cb843ef35c6"
       },
-      "scheme": null,
+      "scheme": {
+        "fileid": "LC001BLP000EV.pdf",
+        "availableLocally": true,
+        "pages": 20,
+        "sha256": "9d661961f601757d5de357b5d53485b16d92ebfa19a01409ea722e0b1c22c37c"
+      },
       "markBankCardIds": [],
       "atlasQuestionIds": [
         "1",
@@ -3746,7 +3747,12 @@
         "pages": 8,
         "sha256": "b73d0b52a8f60a4bf73232fab181e203dbdf944a7bd525dad6b0c53e6876b618"
       },
-      "scheme": null,
+      "scheme": {
+        "fileid": "LC001ALP000EV.pdf",
+        "availableLocally": true,
+        "pages": 32,
+        "sha256": "e304dd29af73f46d972385ce1f625bce88a47a20010e63e2853c92ad3fbe0be5"
+      },
       "markBankCardIds": [],
       "atlasQuestionIds": [
         "R-A",
@@ -3772,7 +3778,12 @@
         "pages": 16,
         "sha256": "c3ecba9e2accb4fffddac01ff59068ed2807d7bc616e35caa886138edfcc44f0"
       },
-      "scheme": null,
+      "scheme": {
+        "fileid": "LC001ALP000EV.pdf",
+        "availableLocally": true,
+        "pages": 32,
+        "sha256": "e304dd29af73f46d972385ce1f625bce88a47a20010e63e2853c92ad3fbe0be5"
+      },
       "markBankCardIds": [],
       "atlasQuestionIds": [
         "P-A",
@@ -3797,7 +3808,12 @@
         "pages": 8,
         "sha256": "2213e17cb61f09072b3aece14a98a6dd1de7781c9eb46814915f277cfd141f6f"
       },
-      "scheme": null,
+      "scheme": {
+        "fileid": "LC001ALP000EV.pdf",
+        "availableLocally": true,
+        "pages": 32,
+        "sha256": "e304dd29af73f46d972385ce1f625bce88a47a20010e63e2853c92ad3fbe0be5"
+      },
       "markBankCardIds": [],
       "atlasQuestionIds": [
         "1",
@@ -3820,7 +3836,12 @@
         "pages": 8,
         "sha256": "0893ef63546910af7e38afae234819002284e2a7692b6272e71be9122baa6ceb"
       },
-      "scheme": null,
+      "scheme": {
+        "fileid": "LC001GLP000EV.pdf",
+        "availableLocally": true,
+        "pages": 12,
+        "sha256": "5dbf2d23c447f46e35a9704197612a59f99c11fb8c559e509e3e794d03e08081"
+      },
       "markBankCardIds": [],
       "atlasQuestionIds": [
         "R-A",
@@ -3846,7 +3867,12 @@
         "pages": 8,
         "sha256": "101e8324e9c748700c8ec041aef9b647e7c25c15187b9c70e34a525c1644efd2"
       },
-      "scheme": null,
+      "scheme": {
+        "fileid": "LC001GLP000EV.pdf",
+        "availableLocally": true,
+        "pages": 12,
+        "sha256": "5dbf2d23c447f46e35a9704197612a59f99c11fb8c559e509e3e794d03e08081"
+      },
       "markBankCardIds": [],
       "atlasQuestionIds": [
         "P-A",
@@ -3870,7 +3896,12 @@
         "pages": 4,
         "sha256": "ec1458dce528897d862339bdcee11df79330fd6c2cb15a1b33e819507ef3412c"
       },
-      "scheme": null,
+      "scheme": {
+        "fileid": "LC001GLP000EV.pdf",
+        "availableLocally": true,
+        "pages": 12,
+        "sha256": "5dbf2d23c447f46e35a9704197612a59f99c11fb8c559e509e3e794d03e08081"
+      },
       "markBankCardIds": [],
       "atlasQuestionIds": [
         "1",

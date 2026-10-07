@@ -97,8 +97,16 @@ all relevant scheme pages without changing frozen identities or original crops.
 
 Three legacy schemes missing from the index have been recovered from the SEC:
 2010 Higher/Ordinary and 2011 Foundation use `EV` filenames despite their Irish
-content. `irish-recovered-schemes.json` pins URLs, hashes and staging paths.
-Index integration remains pending; do not claim these eight components reviewed.
+content. `irish-recovered-schemes.json` pins their URLs, hashes and local/hosted
+paths. Exact year/file overrides now pair all eight affected components to those
+schemes. The three verified PDFs are bundled with Hosting and available in an
+isolated corpus overlay; the original shared corpus is untouched. All 91 indexed
+components now have local papers and paired schemes. Source availability does
+not establish task completeness: these eight components still await review.
+
+Reviewed answer maps use explicit physical print order for lettered task IDs and
+effective scheme regions to bound the full answer range, including the final
+2024 Higher literature pages. Existing IDs and frozen crop fields are preserved.
 
 ## Rebuild and verification
 

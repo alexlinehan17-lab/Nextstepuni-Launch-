@@ -187,7 +187,7 @@
     "2024 Higher Paper 2 is fully reviewed: 72 exact Bank/Atlas joins, 39 atomic reading tasks covering 100 marks, six prose routes, four poetry responses and six additional-literature responses. The paper is 200 marks with one response from each literature family. Preserved overlapping whole questions are not counted twice. Review evidence is in irish-paper-reviews.json and its linked source-review files.",
     "Review remaining Higher/Ordinary papers, including 2022 reading/Q3A/Q4 and all 2021/2023/2025 internal options. Expand published task boundaries across older years and reconcile exact Atlas topics and source/scheme regions. Prescribed prose and poetry now have archive shelves linked to existing canonical nodes.",
     "Topic Atlas currently has 1125 section/task/route anchors, including the eight latest prescribed-poetry/additional-literature entries. This is not proof of complete archive coverage. Reconcile every remaining paper and retain established IDs.",
-    "The three official SEC schemes covering the eight unindexed 2010 Higher/Ordinary and 2011 Foundation components have been located, downloaded and their covers verified. They use EV filenames despite Irish content. Next integrate their exact filenames into the Paper Trail index and local source resolver without writing through the shared corpus symlink; evidence is in irish-recovered-schemes.json.",
+    "All 91 indexed components now have local papers and paired schemes. The three recovered SEC EV-named schemes are integrated through exact year/file language overrides and bundled verified PDFs, covering eight 2010 Higher/Ordinary and 2011 Foundation components. The original shared corpus is untouched. These components still require full task review; evidence is in irish-recovered-schemes.json.",
     "Listening recordings must be verified for each year and level; Foundation uses different recordings. Preserve passages, poems, signs, forms and picture sequences using the existing open/close source reader.",
     "Full visual paper/scheme sweeps, raw selection-directive classification, preservation and zero-open/zero-orphan checks remain required before any completion claim or coverage-baseline change."
   ],
@@ -335,7 +335,26 @@
     "otherSubjectTopicData": "Unchanged, compared structurally and as decoded runtime records and labels with previous HEAD.",
     "legacyIrishCards": "All 400 original IDs and all 129 added IDs retained. Since reading commit 381ede8f, exactly eight 2024 literature records changed; every prior prompt is unchanged.",
     "previousBatchIdsPreserved": 529,
-    "preservationBaselineCountsAndHashesChanged": false
+    "preservationBaselineCountsAndHashesChanged": false,
+    "recoveredSchemes": {
+      "documents": 3,
+      "pairedComponents": 8,
+      "allIndexedComponentsHaveLocalSchemes": true,
+      "mobilePdfChecks": {
+        "viewport": [
+          390,
+          844
+        ],
+        "decodedPageCounts": [
+          32,
+          12,
+          20
+        ],
+        "canvasesPerDocument": 2,
+        "browserErrors": []
+      },
+      "answerMapChecks": "3344 tests passed across Irish recovered schemes, Paper Trail index/answers and Irish exam topics; 3335 task/answer-map checks passed; typecheck passed."
+    }
   },
   "reviewedFoundationPapers": [
     {

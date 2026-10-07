@@ -1083,6 +1083,12 @@ for (const paper of papers) {
       answerMap.q = [...(paper.sidecar?.q ?? []).filter(q => !reviewedIds.has(q.n)), ...answerMap.q];
       answerMap.band = [Math.min(paper.sidecar?.band?.[0] ?? 27, 27), Math.max(paper.sidecar?.band?.[1] ?? 41, 41)];
     }
+    // Mixed numeric/lettered task identities use explicit physical order.
+    // The band must include every reviewed scheme page, including Q4's tail.
+    const orderFor = new Map(artifact.q.map(q => [q.n,q.printOrder]));
+    answerMap.q = answerMap.q.map(q => ({...q,printOrder:orderFor.get(q.n)}));
+    const schemePages = answerMap.q.flatMap(q => (q.schemeRegion ?? q.region).map(r => r.p));
+    answerMap.band = [Math.min(...schemePages),Math.max(...schemePages)+1];
     for (const folder of [ANSWERS_ROOT, path.join(ROOT, 'public/paper-answers')]) {
       const directory = path.join(folder, String(paper.year));
       fs.mkdirSync(directory, { recursive: true });

@@ -62,6 +62,25 @@ describe('Paper Trail subject registry', () => {
 });
 
 describe('Paper Trail index entries', () => {
+  it('pairs the three mislabeled EV Irish schemes with all eight IV paper components', () => {
+    const expected: Array<[number,string,string,number,number]> = [
+      [2010,'higher','LC001ALP000EV.pdf',262014,3],
+      [2010,'ordinary','LC001GLP000EV.pdf',144804,3],
+      [2011,'foundation','LC001BLP000EV.pdf',338784,2],
+    ];
+    for(const [year,level,file,bytes,count] of expected) {
+      const entry=PAPER_TRAIL_INDEX.irish.find(e=>e.year===year && e.level===level && e.lang==='iv')!;
+      expect(entry.papers).toHaveLength(count);
+      for(const paper of entry.papers) {
+        expect(paper.doc.f).toMatch(/IV\.pdf$/);
+        expect(paper.scheme).toEqual({f:file,b:bytes});
+        // Recovered whole schemes do not imply reviewed per-question crops.
+        expect(paper.answers).toBeUndefined();
+      }
+    }
+    expect(PAPER_TRAIL_INDEX.irish.flatMap(e=>e.papers).filter(p=>!p.scheme)).toEqual([]);
+  });
+
   it('indexes the complete 2026 Geography paper and companion set', () => {
     const entries = PAPER_TRAIL_INDEX.geography.filter(entry =>
       entry.year === 2026 && entry.lang === 'ev');
