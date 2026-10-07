@@ -208,6 +208,7 @@ html[data-version=after] .mr-definition p{font:inherit!important;margin:0!import
 .nsu-module-reader [data-triage-progress]{display:block;width:10px;height:10px;flex-shrink:0;border:1px solid var(--module-control-line);border-radius:50%;box-sizing:border-box}
 .nsu-module-reader [data-triage-progress=current]{border-color:var(--module-base-ink)}
 .nsu-module-reader [data-triage-progress=pending]{background:transparent}
+@media(max-width:400px){.nsu-module-reader [data-triage-choice]{padding-inline:4px!important;min-width:0}}
 .wr-recall-condition,.wr-recall-unit{display:block;color:var(--module-base-muted);font:12px/1.5 'DM Sans',sans-serif}
 .wr-recall-condition{margin:0;max-width:210px}.wr-recall-unit{margin:0}.wr-retention-bars{grid-template-rows:repeat(5,auto)}.wr-retention-bars>div{grid-row:span 5;grid-template-rows:subgrid}
 
