@@ -3,6 +3,7 @@ import type { IncomingMessage, ServerResponse } from 'http';
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
+import { pdfjsAssets } from './scripts/vite/pdfjsAssets';
 import {
   PRIVACY_NOTICE,
   TERMS_OF_USE,
@@ -139,6 +140,7 @@ export default defineConfig(() => {
       },
       plugins: [
         react(),
+        pdfjsAssets(),
         legalStaticPages(),
         VitePWA({
           registerType: 'autoUpdate',
@@ -199,6 +201,7 @@ export default defineConfig(() => {
         // every deploy. Bad trade; they are runtime-cached instead.
         globIgnores: [
           '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
+          '**/pdfjs-*/**',
           '**/higher-*.js', '**/ordinary-*.js',
           '**/catchUpLaneData*.js', '**/commandWordData*.js',
           '**/vendor-three*.js',
@@ -258,7 +261,7 @@ export default defineConfig(() => {
               },
               // Static assets and 3D models — cache first
               {
-                urlPattern: /\/(assets|models)\/.*\.(glb|png|jpg|svg|webp|woff2?)$/i,
+                urlPattern: /\/(assets|models)\/.*\.(glb|png|jpg|svg|webp|woff2?|wasm)$/i,
                 handler: 'CacheFirst',
                 options: { cacheName: 'app-assets', expiration: { maxAgeSeconds: 60 * 60 * 24 * 30 } },
               },

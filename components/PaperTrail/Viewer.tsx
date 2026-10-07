@@ -61,6 +61,7 @@ import type { PaperAnswerMap, PaperAnswerQuestion } from '../../types/paperTrail
 import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
 // pdf.js lazy singleton + region renderer — shared with the Topic Vault.
 import { loadPdfjs, type PdfjsModule } from './pdfjsLoader';
+import { pdfjsDocumentOptions } from './pdfjsAssets';
 import CropView from './CropView';
 import { questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
@@ -418,8 +419,8 @@ const Viewer: React.FC<ViewerProps> = ({
         );
         if (!mountedRef.current) return;
         const task = bytes
-          ? pdfjs.getDocument({ data: new Uint8Array(bytes) })
-          : pdfjs.getDocument({ url: target.url });
+          ? pdfjs.getDocument({ ...pdfjsDocumentOptions(), data: new Uint8Array(bytes) })
+          : pdfjs.getDocument({ ...pdfjsDocumentOptions(), url: target.url });
         s.task = task;
         const pdf = await withTimeout(task.promise, LOAD_TIMEOUT_MS);
         if (!mountedRef.current) {
