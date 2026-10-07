@@ -50177,5 +50177,1194 @@
    }
   ],
   "notes": "Independently visually checked against the 2017 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q1-a-i-ii-iii",
+  "topicId": "maths-1-2",
+  "conceptId": "p1-q1-a-i-ii-iii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q1(a)(i), Q1(a)(ii), Q1(a)(iii)",
+  "stem": "A bag contains 6 yellow discs, 7 blue discs and 14 red discs.",
+  "questionText": "(i) What is the total number of discs in the bag? (ii) A disc is picked at random from the bag. What is the probability that the disc is red? (iii) A disc is picked at random from the bag. What is the probability that the disc is yellow or blue?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q1-a-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "6 + 7 + 14 = 27",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q1-a-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "14/27",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q1-a-i-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "13/27",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q1-b-i-ii-iii",
+  "topicId": "maths-1-2",
+  "conceptId": "p1-q1-b-i-ii-iii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q1(b)(i), Q1(b)(ii), Q1(b)(iii)",
+  "stem": "There are girls and boys in a class. 16 of the students in the class are girls. 9 of these girls play hockey.",
+  "questionText": "(i) A girl is selected at random from the class. What is the probability that this girl plays hockey? (ii) There are 28 students in the class. The remaining students are boys and 8 of these boys play hockey. A boy is selected at random from the class. What is the probability that this boy plays hockey? (iii) A student is selected at random from the class. What is the probability that this student does not play hockey?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q1-b-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "9/16",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q1-b-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "8/12",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q1-b-i-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "28 – (9 + 8) = 11",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q1-b-i-ii-iii-solution-4",
+    "kind": "point",
+    "verbatim": "11/28",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q2-a-i-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q2-a-i-ii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q2(a)(i), Q2(a)(ii)",
+  "stem": "The side of a square is 8 cm.",
+  "questionText": "(i) Six of these squares have been put together to form the shape shown in the diagram. Find the length of the perimeter of the shape. (ii) The six squares are re-arranged as shown. Find the length of the perimeter of this new shape.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q2-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "8 × 10 = 80 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q2-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "8 × 14 = 112 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q2-b-i-ii-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q2-b-i-ii-iii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q2(b)(i), Q2(b)(ii), Q2(b)(iii)",
+  "stem": "The surface area of a sphere is given by the formula A = 4πr², where r is the radius of the sphere.",
+  "questionText": "(i) Taking π as 3 and r as 2 cm, estimate the surface area of the sphere in the diagram: A = 4 × 3 × 2² = ___. (ii) The actual radius of the sphere in the diagram is 1·9 cm. Taking π as 3·142 and r as 1·9 cm find a more accurate estimate for the surface area of the sphere. Give your answer correct to one decimal place. (iii) Find the difference between your answers in part b(i) and part b(ii) above.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q2-b-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "= 48 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q2-b-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "= 45·37 = 45·4 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q2-b-i-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "48 – 45·4 = 2·6 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q3-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q3-a-i-ii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q3(a)(i), Q3(a)(ii)",
+  "stem": "Carla left home at 12 noon for a bicycle ride. The graph represents part of her journey.",
+  "questionText": "(i) At 12.45 p.m., Carla stopped for a rest. After the rest she continued her journey. How long did she stop for? (ii) How far from home was she at 1.30 p.m.?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q3-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "15 min",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q3-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "30 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q3-a-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q3-a-iii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q3(a)(iii)",
+  "stem": "Carla left home at 12 noon for a bicycle ride. The graph represents part of her journey.",
+  "questionText": "Carla stopped at 2 p.m. and rested for one hour. She then cycled for 2 hours at a steady speed until she arrived back at her home. Use this information to complete the graph above.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q3-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "One correct interval marked on graph",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q3-b-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q3-b-i-ii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q3(b)(i), Q3(b)(ii)",
+  "stem": "A, B, and C are towns. The town B lies on the road from A to C, as shown. The distance from A to C is 42 km. Aideen drives from A to C and then back to A. She completes this return journey 4 times each week.",
+  "questionText": "(i) What distance does Aideen travel in one week? (ii) Brian drives from B to C and back to B. He completes this return journey 5 times each week. Overall, each week, Brian drives 14 km more than Aideen. Find the distance from A to B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q3-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "42 × 2 × 4 = 336 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q3-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "A to B: 42 – 35 = 7 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q4-a-i",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q4-a-i",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q4(a)(i)",
+  "stem": "A local supermarket had punnets of blackberries for sale. John counted the number of blackberries in each of 19 punnets. The stem-and-leaf diagram below shows the results. Key: 2|5 = 25 blackberries.",
+  "questionText": "What is the median of the data?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q4-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Shows knowledge of relevance of middle term",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q4-a-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q4-a-ii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q4(a)(ii)",
+  "stem": "A local supermarket had punnets of blackberries for sale. John counted the number of blackberries in each of 19 punnets. The stem-and-leaf diagram below shows the results. Key: 2|5 = 25 blackberries.",
+  "questionText": "What is the range of the data?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q4-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "34 – 18 = 16",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q4-b-i",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q4-b-i",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q4(b)(i)",
+  "stem": "The histogram below shows how much time people spent in a supermarket on a particular morning. The intervals are 0–10, 10–20, 20–30, 30–40 and 40–50 minutes. (10–20 means 10 or more but less than 20, etc.)",
+  "questionText": "Use the data shown in the histogram to complete the table. The first entry, 30 people for 0–10 minutes, is already given.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q4-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "One correct new entry",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q4-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Two or three correct new entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q4-b-ii-iii-iv",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q4-b-ii-iii-iv",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q4(b)(ii), Q4(b)(iii), Q4(b)(iv)",
+  "stem": "The histogram below shows how much time people spent in a supermarket on a particular morning. The intervals are 0–10, 10–20, 20–30, 30–40 and 40–50 minutes. (10–20 means 10 or more but less than 20, etc.)",
+  "questionText": "(ii) How many people were in the supermarket on that morning? (iii) What percentage of people spent 30 minutes or more in the supermarket? Give your answer correct to the nearest percent. (iv) What is the maximum number of people who could have spent 25 minutes or less in the supermarket?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q4-b-ii-iii-iv-solution-1",
+    "kind": "point",
+    "verbatim": "30 + 60 + 45 + 20 + 15 = 170",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q4-b-ii-iii-iv-solution-2",
+    "kind": "point",
+    "verbatim": "= 21%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q4-b-ii-iii-iv-solution-3",
+    "kind": "point",
+    "verbatim": "30 + 60 + 45 = 135",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q5-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q5-a",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q5(a)",
+  "stem": "Rena wants to buy a new car. She intends to trade in her old car. She has found three different options, A, B, and C.",
+  "questionText": "Option A: The new car will cost €20 100. In exchange for her old car, she will get a discount of 1/3 on this price. How much will she have to pay?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "20 100 – 6700 = €13400",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q5-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q5-b",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q5(b)",
+  "stem": "Rena wants to buy a new car. She intends to trade in her old car. She has found three different options, A, B, and C.",
+  "questionText": "Option B: The new car will cost €21 500. In exchange for her old car, she will get a 40% discount on this price. How much will she have to pay?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "21 500 – 8600 = €12900",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q5-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q5-c",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q5(c)",
+  "stem": "Rena wants to buy a new car. She intends to trade in her old car. She has found three different options, A, B, and C.",
+  "questionText": "Option C: She trades in her old car. The new car will then cost €272·50 per month for 4 years. How much will she have to pay?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q5-c-solution-1",
+    "kind": "point",
+    "verbatim": "272·50 × 12 × 4 = €13080",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q5-d",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q5-d",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q5(d)",
+  "stem": "Rena wants to buy a new car. She intends to trade in her old car. She has found three different options, A, B, and C. Option A: €20 100 less a discount of 1/3. Option B: €21 500 less a 40% discount. Option C: €272·50 per month for 4 years. Each option includes trading in her old car.",
+  "questionText": "Which option should Rena choose if she wants to spend the least amount of money overall?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q5-d-solution-1",
+    "kind": "point",
+    "verbatim": "Option B",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q6-a",
+  "topicId": "maths-2-1",
+  "conceptId": "p1-q6-a",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q6(a)",
+  "stem": "",
+  "questionText": "Construct a triangle ABC, where |AB| = 5 cm, |∠ABC| = 90° and |AC| = 8 cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "One line and angle correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Two lines correct but wrong angle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q6-b",
+  "topicId": "maths-2-1",
+  "conceptId": "p1-q6-b",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q6(b)",
+  "stem": "Triangle ABC has |AB| = 5 cm, |∠ABC| = 90° and |AC| = 8 cm. Part (a) asks you to construct this triangle.",
+  "questionText": "Measure ∠BAC on your diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "51°",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "May have correct answer based on candidate’s diagram",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q6-c",
+  "topicId": "maths-2-1",
+  "conceptId": "p1-q6-c",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q6(c)",
+  "stem": "Triangle ABC has |AB| = 5 cm, |∠ABC| = 90° and |AC| = 8 cm.",
+  "questionText": "Use Pythagoras’ Theorem to find the length of [BC]. Give your answer correct to one decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q6-c-solution-1",
+    "kind": "point",
+    "verbatim": "= 6·24… = 6·2 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q7-a",
+  "topicId": "maths-2-4",
+  "conceptId": "p1-q7-a",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q7(a)",
+  "stem": "The triangle ADE is the image of the triangle ABC by an enlargement with centre A, as shown in the diagram.",
+  "questionText": "Measure the length of [AB] and the length of [AD].",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "|AB| = 3·3 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q7-a-solution-2",
+    "kind": "point",
+    "verbatim": "|AD| = 6·6 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q7-b",
+  "topicId": "maths-2-4",
+  "conceptId": "p1-q7-b",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q7(b)",
+  "stem": "The triangle ADE is the image of the triangle ABC by an enlargement with centre A, as shown in the diagram. Part (a) asks you to measure the lengths of [AB] and [AD].",
+  "questionText": "Hence, or otherwise, find the scale factor of the enlargement.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "6·6/3·3 = 2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q7-c",
+  "topicId": "maths-2-4",
+  "conceptId": "p1-q7-c",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q7(c)",
+  "stem": "The triangle ADE is the image of the triangle ABC by an enlargement with centre A, as shown in the diagram.",
+  "questionText": "The area of triangle ABC is 3 square units. Find the area of triangle ADE.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q7-c-solution-1",
+    "kind": "point",
+    "verbatim": "3 × 22 = 12 sq units",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q7-d",
+  "topicId": "maths-2-4",
+  "conceptId": "p1-q7-d",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q7(d)",
+  "stem": "The triangle ADE is the image of the triangle ABC by an enlargement with centre A, as shown in the diagram.",
+  "questionText": "On the diagram above, draw the image of triangle ABC under an enlargement, with centre A and a scale factor of 3.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "Some relevant construction",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q8-a-i",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q8-a-i",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q8(a)(i)",
+  "stem": "",
+  "questionText": "Find the value of (12 − 2) × (3 + 1).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "40",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q8-a-ii",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q8-a-ii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q8(a)(ii)",
+  "stem": "",
+  "questionText": "Find the value of 12 − 2 × 3 + 1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "7",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q8-a-iii",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q8-a-iii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q8(a)(iii)",
+  "stem": "",
+  "questionText": "Add brackets to make the statement in the box below correct: 12 − 2 × 3 + 1 = 4.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q8-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "12 − 2 × (3 + 1) = 4",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q8-b-i-ii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q8-b-i-ii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 FL Paper 1 Q8(b)(i), Q8(b)(ii)",
+  "stem": "A computer game costs €55. If Chris and Ruairí put their money together, they would need another €12 to buy the computer game.",
+  "questionText": "(i) How much money do they have between them? (ii) Ruairí has €7 more than Chris. How much money does Chris have?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q8-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "55 – 12 = €43",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q8-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "36 ÷ 2 = €18",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q9-a-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-a-i",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q9(a)(i)",
+  "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work.",
+  "questionText": "What is the callout charge?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "€40",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q9-a-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-a-ii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q9(a)(ii)",
+  "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work.",
+  "questionText": "If the company fits valves to 6 radiators what will Áine have to pay?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q9-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "€280",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q9-a-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-a-iii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q9(a)(iii)",
+  "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work.",
+  "questionText": "How many valves would the company fit for €160?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q9-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "3 valves",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q9-a-iv",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-a-iv",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q9(a)(iv)",
+  "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work.",
+  "questionText": "If the company fits 8 valves, what will Áine have to pay?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q9-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "€360",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q9-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-b-i",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q9(b)(i)",
+  "stem": "Another company, Fixrad, has no callout charge. Fixrad charges €60 per radiator.",
+  "questionText": "Complete the table to show the amounts charged by Fixrad for 0, 1, 2, 3, 4, 5 and 6 radiators. The entry of €60 for 1 radiator is already given.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "one correct entry",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q9-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "three correct entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q9-b-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-b-ii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q9(b)(ii)",
+  "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work. Another company, Fixrad, has no callout charge. Fixrad charges €60 per radiator. Part (b)(i) asks you to tabulate Fixrad’s charges for 0–6 radiators.",
+  "questionText": "Plot the Fixrad charges on the diagram in part (a).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "One point plotted correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q9-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Two points plotted correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q9-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Five points plotted correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q9-b-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-b-iii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q9(b)(iii)",
+  "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work. Another company, Fixrad, has no callout charge. Fixrad charges €60 per radiator. Part (b)(ii) asks you to plot the Fixrad charges on the same diagram.",
+  "questionText": "What is the point of intersection of the two graphs?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q9-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "( 2, 120 )",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q9-b-iv",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-b-iv",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q9(b)(iv)",
+  "stem": "Áine is planning to fit new thermostatic valves to some of the radiators in her house. The graph shows the callout charge and the fixed rate charged per radiator by one company, Thermolok, for this work. Another company, Fixrad, has no callout charge. Fixrad charges €60 per radiator.",
+  "questionText": "Áine decides to fit valves to 5 radiators. Which company should she choose if she wants to pay the least amount of money? Justify your answer by finding the amount she would save.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q9-b-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Thermolok",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q9-b-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Amount saved: 300 – 240 = €60",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q10-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q10-a-i",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q10(a)(i)",
+  "stem": "A rectangular block with dimensions 4 cm, 2 cm, and 3 cm is shown below.",
+  "questionText": "Draw a net of the block on the grid below. Mark in the dimensions on your net.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Any line of correct length drawn",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q10-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "6 correct sides drawn but not net of the given block",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q10-a-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q10-a-ii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q10(a)(ii)",
+  "stem": "A rectangular block with dimensions 4 cm, 2 cm, and 3 cm is shown below. Part (a)(i) asks you to draw and label a net of the block.",
+  "questionText": "Hence, or otherwise, find the surface area of the block.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q10-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "24 + 12 + 16 = 52 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q10-a-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q10-a-iii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q10(a)(iii)",
+  "stem": "A rectangular block with dimensions 4 cm, 2 cm, and 3 cm is shown below.",
+  "questionText": "Find the volume of the block.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q10-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "2 × 4 × 3 = 24 cm3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q10-b-i-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q10-b-i-ii",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q10(b)(i), Q10(b)(ii)",
+  "stem": "A tube of toothpaste is in the shape of a cylinder with radius 1·6 cm and length 12 cm.",
+  "questionText": "(i) Find the volume of toothpaste in the tube, correct to one decimal place. (ii) Each time Mary brushes her teeth she pumps approximately 0·5 cm³ of toothpaste onto her toothbrush. How many times can Mary expect to brush her teeth from this tube of toothpaste?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q10-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 96·5 cm3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q10-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "96·5 ÷ 0·5 = 193",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2016-fl-p1-q10-c",
+  "topicId": "maths-2-3",
+  "conceptId": "p1-q10-c",
+  "level": "foundation",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 FL Paper 1 Q10(c)",
+  "stem": "A ladder is 4 metres long. It rests against a wall. The base of the ladder is 1 metre from the base of the wall as shown in the diagram. Safety regulations state that the angle (A) between the ladder and the ground should be approximately 76°.",
+  "questionText": "Is it safe to use this ladder in the position shown in the diagram? Use Trigonometry to justify your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-fl-p1-q10-c-solution-1",
+    "kind": "point",
+    "verbatim": "Yes",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q10-c-solution-2",
+    "kind": "point",
+    "verbatim": "cos A = 1/4",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2016-fl-p1-q10-c-solution-3",
+    "kind": "point",
+    "verbatim": "A = 75·5°",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2016 Foundation paper and scheme on 2026-10-07."
  }
 ]

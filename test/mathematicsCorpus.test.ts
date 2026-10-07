@@ -8,6 +8,7 @@ import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
 import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
+import foundation2016 from '../scripts/markbank/mathematics/reviews/2016-foundation-p1.json';
 import foundation2017 from '../scripts/markbank/mathematics/reviews/2017-foundation-p1.json';
 import foundation2018 from '../scripts/markbank/mathematics/reviews/2018-foundation-p1.json';
 import foundation2019 from '../scripts/markbank/mathematics/reviews/2019-foundation-single.json';
@@ -121,6 +122,7 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 
 
 describe.each([
+  { year: 2016, count: 39, offered: 300, review: foundation2016 },
   { year: 2017, count: 34, offered: 300, review: foundation2017 },
   { year: 2018, count: 28, offered: 300, review: foundation2018 },
   { year: 2019, count: 34, offered: 300, review: foundation2019 },
@@ -168,6 +170,22 @@ describe.each([
 
 describe('Foundation Mathematics marking boundaries and source context', () => {
   const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
+
+  it('keeps the 2016 histogram group, measurement dependencies and unusual net scale', () => {
+    const histogram = task(2016, 'p1-q4-b-ii-iii-iv');
+    expect(histogram.totalMarks).toBe(10);
+    expect(histogram.questionText).toContain('(iv)');
+    expect(task(2016, 'p1-q7-b').sourceMaterial?.measurementRequired).toBe(true);
+    expect(task(2016, 'p1-q7-c').sourceMaterial?.measurementRequired).toBe(true);
+    const net = task(2016, 'p1-q10-a-i');
+    expect('mathematicsScale' in net && net.mathematicsScale?.marks).toEqual([0, 2, 3, 4, 5]);
+    const price = task(2016, 'p1-q9-b-iv');
+    expect(price.sourceMaterial?.pages).toEqual([14, 15]);
+    expect(price.stem).toContain('€60 per radiator');
+    expect(task(2016, 'p1-q8-a-iii').questionText).toContain('12 − 2 × 3 + 1 = 4');
+    expect(task(2016, 'p1-q10-b-i-ii').stem).toContain('radius 1·6 cm');
+    expect(foundation2016.schemeVisualTranscriptions.find(page => page.page === 19)?.quotes).toContain('96·5 ÷ 0·5 = 193');
+  });
 
   it('keeps the 2017 grouped scales and complete map and pattern dependencies', () => {
     const probability = task(2017, 'p1-q7-a-b-c');
