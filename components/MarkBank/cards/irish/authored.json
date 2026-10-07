@@ -1,7 +1,7 @@
 {
   "subject": "irish",
   "scope": "2021–2025 Higher and Ordinary Level",
-  "cardCount": 407,
+  "cardCount": 451,
   "cards": [
     {
       "id": "irish-2021-hl-p1-listening-a-f1",
@@ -22096,29 +22096,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "a",
+          "label": "Freagra (a)",
           "kind": "award",
-          "maxMarks": 7,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "1. (a) Scríobh síos dhá shaintréith ar leith atá ag baint le gach ceann de na trí oileán is fiche amach ó chósta na hÉireann ar a bhfuil an polasaí Ár nOileáin Bheo dírithe. (Alt 1) (Dhá shaintréith) {3 mharc: 2 mharc + 1 mharc} An chéad saintréith atá ceart = 2 mharc;",
-            "an dara saintréith atá ceart = 1 mharc • Na hoileáin a bhfuil cónaí buan orthu (ar feadh na bliana) • Nach bhfuil ceangailte leis an mórthír (le droichead nó le cabhsa) • Nach bhfuil faoi úinéireacht phríobháideach (b) (i) Cén aidhm atá leis an bpolasaí nua seo, Ár nOileáin Bheo? {2 mharc} • A chinntiú go gcothófar pobail bheoga, inbhuanaithe ar na hoileáin agus go mbeidh saol faoi rath acu go ceann blianta fada = 2 mharc • A chinntiú go gcothófar pobail bheoga, inbhuanaithe ar na hoileáin = 2 mharc (ii) Conas a chuirfear bearta an pholasaí i gcrích, dar leis an Aire Humphreys?",
-            "(Alt 1) {2 mharc} • Trí infheistíocht = 2 mharc • Trí thacaíochtaí = 2 mharc • Trí phlé leanúnach idir pobail na n-oileán, ranna rialtais, na húdaráis áitiúla agus na páirtithe leasmhara = 2 mharc"
+            "(a) Scríobh síos dhá shaintréith ar leith atá ag baint le gach ceann de na trí oileán is fiche amach ó chósta na hÉireann ar a bhfuil an polasaí Ár nOileáin Bheo dírithe. (Alt 1) (Dhá shaintréith) {3 mharc: 2 mharc + 1 mharc} An chéad saintréith atá ceart = 2 mharc; an dara saintréith atá ceart = 1 mharc • Na hoileáin a bhfuil cónaí buan orthu (ar feadh na bliana) • Nach bhfuil ceangailte leis an mórthír (le droichead nó le cabhsa) • Nach bhfuil faoi úinéireacht phríobháideach"
+          ]
+        },
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Cén aidhm atá leis an bpolasaí nua seo, Ár nOileáin Bheo? {2 mharc} • A chinntiú go gcothófar pobail bheoga, inbhuanaithe ar na hoileáin agus go mbeidh saol faoi rath acu go ceann blianta fada = 2 mharc • A chinntiú go gcothófar pobail bheoga, inbhuanaithe ar na hoileáin = 2 mharc"
+          ]
+        },
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Conas a chuirfear bearta an pholasaí i gcrích, dar leis an Aire Humphreys? (Alt 1) {2 mharc} • Trí infheistíocht = 2 mharc • Trí thacaíochtaí = 2 mharc • Trí phlé leanúnach idir pobail na n-oileán, ranna rialtais, na húdaráis áitiúla agus na páirtithe leasmhara = 2 mharc"
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint A",
@@ -22130,7 +22154,16 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "1"
     },
     {
       "id": "irish-2024-hl-p2-reading-a-q2",
@@ -22154,29 +22187,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "a",
+          "label": "Freagra (a)",
           "kind": "award",
-          "maxMarks": 7,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "2. (a) Cad é an chéad chuspóir atá ag an rialtas sa pholasaí Ár nOileáin Bheo? (Alt 2) {3 mharc} • Stop a chur le meath an daonra ar na hoileáin trí na coinníollacha a chruthú a spreagfaidh daoine chun fanacht ar na hoileáin/chun bogadh chucu = 3 mharc • Stop a chur le meath an daonra (ar na hoileáin) = 2 mharc (b) (i) Luaigh beart amháin atá sa pholasaí maidir le cúrsaí fostaíochta ar na hoileáin.",
-            "(Alt 2) {2 mharc} • Fostaíocht a chruthú i réimsí nua atá ag teacht chun cinn = 2 mharc • Fostaíocht a chruthú i dtionscadail a bhaineann le foinsí in-athnuaite fuinnimh amach ón gcósta = 2 mharc • Déanfar iarrachtaí fiontair agus gnólachtaí nua a mhealladh chun lonnú ar na hoileáin = 2 mharc • Fostaíocht a chruthú = 1 mharc (ii) Cad a thabharfaidh deis do dhaoine cianobair a dhéanamh ar go leor de na hoileáin?",
-            "(Alt 2) {2 mharc} • Nasc leathanbhanda ardluais = 2 mharc • Leathanbhanda ardluais = 2 mharc"
+            "(a) Cad é an chéad chuspóir atá ag an rialtas sa pholasaí Ár nOileáin Bheo? (Alt 2) {3 mharc} • Stop a chur le meath an daonra ar na hoileáin trí na coinníollacha a chruthú a spreagfaidh daoine chun fanacht ar na hoileáin/chun bogadh chucu = 3 mharc • Stop a chur le meath an daonra (ar na hoileáin) = 2 mharc"
+          ]
+        },
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Luaigh beart amháin atá sa pholasaí maidir le cúrsaí fostaíochta ar na hoileáin. (Alt 2) {2 mharc} • Fostaíocht a chruthú i réimsí nua atá ag teacht chun cinn = 2 mharc • Fostaíocht a chruthú i dtionscadail a bhaineann le foinsí in-athnuaite fuinnimh amach ón gcósta = 2 mharc • Déanfar iarrachtaí fiontair agus gnólachtaí nua a mhealladh chun lonnú ar na hoileáin = 2 mharc • Fostaíocht a chruthú = 1 mharc"
+          ]
+        },
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cad a thabharfaidh deis do dhaoine cianobair a dhéanamh ar go leor de na hoileáin? (Alt 2) {2 mharc} • Nasc leathanbhanda ardluais = 2 mharc • Leathanbhanda ardluais = 2 mharc"
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint A",
@@ -22188,7 +22245,16 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "2"
     },
     {
       "id": "irish-2024-hl-p2-reading-a-q3",
@@ -22212,30 +22278,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "a",
+          "label": "Freagra (a)",
           "kind": "award",
-          "maxMarks": 7,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "3. (a) Scríobh síos dhá dhúshlán a bhaineann le soláthar cuí tithíochta ar na hoileáin a luadh le linn an phróisis comhairliúcháin. (Alt 3) (Dhá dhúshlán) {3 mharc: 2 mharc + 1 mharc} An chéad dúshlán atá ceart = 2 mharc;",
-            "an dara dúshlán atá ceart = 1 mharc • Go bhfuil tithe ar an gcuid is mó de na hoileáin atá tréigthe agus a bhfuil drochbhail orthu = 2 mharc + 1 mharc • Tithe saoire nach mbíonn cónaí iontu go buan • Costais tógála níos airde ar na hoileáin (ná ar an mórthír) (b) (i) Luaigh moladh amháin atá sa pholasaí nua chun cúrsaí tithíochta a fheabhsú ar na hoileáin.",
-            "(Alt 3) {2 mharc} • Cuirfear deontais ar fáil chun tithe tréigthe a athchóiriú = 2 mharc • Tabharfar maoiniú do na húdaráis áitiúla chun scéimeanna tithe sóisialta a sholáthar = 2 mharc (ii) Scríobh síos beart amháin atá sa pholasaí a chinnteoidh go mbeidh áiseanna cuí oideachais ar fáil do phobail na n-oileán.",
-            "(Alt 3) {2 mharc} • Coimeádfar scoileanna na n-oileán ar oscailt • Ceadófar múinteoirí breise ag brath ar chúinsí na scoile • Leis an gcóras leathanbhanda ardluais atá ar fáil sna scoileanna, beidh deiseanna cianfhoghlama ann • Leis an gcóras leathanbhanda ardluais atá ar fáil sna scoileanna, beidh fáil ag na scoláirí dara leibhéal ar raon níos leithne ábhar"
+            "(a) Scríobh síos dhá dhúshlán a bhaineann le soláthar cuí tithíochta ar na hoileáin a luadh le linn an phróisis comhairliúcháin. (Alt 3) (Dhá dhúshlán) {3 mharc: 2 mharc + 1 mharc} An chéad dúshlán atá ceart = 2 mharc; an dara dúshlán atá ceart = 1 mharc • Go bhfuil tithe ar an gcuid is mó de na hoileáin atá tréigthe agus a bhfuil drochbhail orthu = 2 mharc + 1 mharc • Tithe saoire nach mbíonn cónaí iontu go buan • Costais tógála níos airde ar na hoileáin (ná ar an mórthír)"
+          ]
+        },
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Luaigh moladh amháin atá sa pholasaí nua chun cúrsaí tithíochta a fheabhsú ar na hoileáin. (Alt 3) {2 mharc} • Cuirfear deontais ar fáil chun tithe tréigthe a athchóiriú = 2 mharc • Tabharfar maoiniú do na húdaráis áitiúla chun scéimeanna tithe sóisialta a sholáthar = 2 mharc"
+          ]
+        },
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Scríobh síos beart amháin atá sa pholasaí a chinnteoidh go mbeidh áiseanna cuí oideachais ar fáil do phobail na n-oileán. (Alt 3) {2 mharc} • Coimeádfar scoileanna na n-oileán ar oscailt • Ceadófar múinteoirí breise ag brath ar chúinsí na scoile • Leis an gcóras leathanbhanda ardluais atá ar fáil sna scoileanna, beidh deiseanna cianfhoghlama ann • Leis an gcóras leathanbhanda ardluais atá ar fáil sna scoileanna, beidh fáil ag na scoláirí dara leibhéal ar raon níos leithne ábhar"
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint A",
@@ -22247,7 +22336,16 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "3"
     },
     {
       "id": "irish-2024-hl-p2-reading-a-q4",
@@ -22271,29 +22369,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "a",
+          "label": "Freagra (a)",
           "kind": "award",
-          "maxMarks": 7,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "4. (a) Tabhair dhá chúis a mealltar a lán turasóirí go dtí na hoileáin. (Alt 4) (Dhá chúis) {3 mharc: 2 mharc + 1 mharc} An chéad chúis atá ceart = 2 mharc;",
-            "an dara cúis atá ceart = 1 mharc • Na suíomhanna seandálaíochta • An tírdhreach álainn • An oidhreacht dhúchasach • Tugann go leor daoine cuairt ar na hoileáin Ghaeltachta chun blaiseadh a fháil de shaibhreas na Gaeilge agus den chultúr Gaelach (dhá chúis = 2 mharc + 1 mharc) • Tugann go leor daoine cuairt ar na hoileáin Ghaeltachta chun blaiseadh a fháil de shaibhreas na Gaeilge • Tugann go leor daoine cuairt ar na hoileáin Ghaeltachta chun blaiseadh a fháil den chultúr Gaelach (b) (i) Scríobh síos aidhm amháin a bheidh leis an bhfeachtas margaíochta a fhorbróidh Fáilte Éireann do na hoileáin.",
-            "(Alt 4) {2 mharc} • Chun na hoileáin a chur chun cinn ar bhealach níos forleithne mar ionaid saoire uathúla • Chun séasúr na turasóireachta ar na hoileáin a shíneadh amach níos faide"
+            "(a) Tabhair dhá chúis a mealltar a lán turasóirí go dtí na hoileáin. (Alt 4) (Dhá chúis) {3 mharc: 2 mharc + 1 mharc} An chéad chúis atá ceart = 2 mharc; an dara cúis atá ceart = 1 mharc • Na suíomhanna seandálaíochta • An tírdhreach álainn • An oidhreacht dhúchasach • Tugann go leor daoine cuairt ar na hoileáin Ghaeltachta chun blaiseadh a fháil de shaibhreas na Gaeilge agus den chultúr Gaelach (dhá chúis = 2 mharc + 1 mharc) • Tugann go leor daoine cuairt ar na hoileáin Ghaeltachta chun blaiseadh a fháil de shaibhreas na Gaeilge • Tugann go leor daoine cuairt ar na hoileáin Ghaeltachta chun blaiseadh a fháil den chultúr Gaelach"
+          ]
+        },
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Scríobh síos aidhm amháin a bheidh leis an bhfeachtas margaíochta a fhorbróidh Fáilte Éireann do na hoileáin. (Alt 4) {2 mharc} • Chun na hoileáin a chur chun cinn ar bhealach níos forleithne mar ionaid saoire uathúla • Chun séasúr na turasóireachta ar na hoileáin a shíneadh amach níos faide"
+          ]
+        },
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén fáth a bhfuil sé tábhachtach go mbeadh dea-chórais maidir le bainistíocht dramhaíola ar gach ceann de na hoileáin? (Alt 4) {2 mharc} • Ar mhaithe le sláinte an phobail = 2 mharc • Leis an gcomhshaol a chaomhnú = 2 mharc"
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint A",
@@ -22305,7 +22427,17 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        20,
+        21
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "4"
     },
     {
       "id": "irish-2024-hl-p2-reading-a-q5",
@@ -22329,30 +22461,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "a",
+          "label": "Freagra (a)",
           "kind": "award",
-          "maxMarks": 7,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "5. (a) Scríobh síos dhá ghealltanas atá tugtha sa pholasaí nua maidir le seirbhísí iompair farraige agus aeir chuig na hoileáin.",
-            "(Alt 5) (Dhá ghealltanas) {3 mharc: 2 mharc + 1 mharc} Glac le gealltanas amháin bainteach le seirbhísí iompair farraige agus an gealltanas eile bainteach le seirbhísí iompair aeir Seirbhísí iompair farraige • Go leanfar ar aghaidh ag cur tacaíocht airgid ar fáil do sheirbhísí rialta farantóireachta • Cuirfear deontais ar fáil chun sábháilteacht na gcéanna a fheabhsú Seirbhísí iompair aeir • Go leanfar ar aghaidh ag cur tacaíocht airgid ar fáil do sheirbhísí rialta aerthaistil • Cuirfear deontais ar fáil chun sábháilteacht na n-aerstráicí a fheabhsú (b) (i) Luaigh cuspóir amháin atá ag an rialtas sa pholasaí seo chun seirbhísí sláinte a fheabhsú do phobail na n-oileán.",
-            "(Alt 5) {2 mharc} • Cur le líon na ndochtúirí teaghlaigh ar gach ceann de na hoileáin = 2 mharc • Cur le líon na ndochtúirí teaghlaigh = 1 mharc • Níos mó coinní sláinte a chur ar fáil ar líne = 2 mharc (ii) Cén deis a bheidh ag daoine óga agus cinntí á ndéanamh?",
-            "(Alt 5) {2 mharc} • Beidh deis acu tuairimí a thabhairt faoi cheisteanna atá ábhartha dá saol ar na hoileáin = 2 mharc • Beidh deis acu tuairimí a thabhairt faoi cheisteanna atá ábhartha dá saol = 1 mharc"
+            "(a) Scríobh síos dhá ghealltanas atá tugtha sa pholasaí nua maidir le seirbhísí iompair farraige agus aeir chuig na hoileáin. (Alt 5) (Dhá ghealltanas) {3 mharc: 2 mharc + 1 mharc} Glac le gealltanas amháin bainteach le seirbhísí iompair farraige agus an gealltanas eile bainteach le seirbhísí iompair aeir Seirbhísí iompair farraige • Go leanfar ar aghaidh ag cur tacaíocht airgid ar fáil do sheirbhísí rialta farantóireachta • Cuirfear deontais ar fáil chun sábháilteacht na gcéanna a fheabhsú Seirbhísí iompair aeir • Go leanfar ar aghaidh ag cur tacaíocht airgid ar fáil do sheirbhísí rialta aerthaistil • Cuirfear deontais ar fáil chun sábháilteacht na n-aerstráicí a fheabhsú"
+          ]
+        },
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Luaigh cuspóir amháin atá ag an rialtas sa pholasaí seo chun seirbhísí sláinte a fheabhsú do phobail na n-oileán. (Alt 5) {2 mharc} • Cur le líon na ndochtúirí teaghlaigh ar gach ceann de na hoileáin = 2 mharc • Cur le líon na ndochtúirí teaghlaigh = 1 mharc • Níos mó coinní sláinte a chur ar fáil ar líne = 2 mharc"
+          ]
+        },
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén deis a bheidh ag daoine óga agus cinntí á ndéanamh? (Alt 5) {2 mharc} • Beidh deis acu tuairimí a thabhairt faoi cheisteanna atá ábhartha dá saol ar na hoileáin = 2 mharc • Beidh deis acu tuairimí a thabhairt faoi cheisteanna atá ábhartha dá saol = 1 mharc"
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint A",
@@ -22364,7 +22519,16 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        21
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "5"
     },
     {
       "id": "irish-2024-hl-p2-reading-a-q6",
@@ -22388,10 +22552,25 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "grammar",
+          "label": "An dá mhír ghramadaí",
           "kind": "award",
-          "maxMarks": 15,
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Aimsigh sampla den bhriathar saor san Aimsir Fháistineach in Alt 3 agus sampla de bhreischéim na haidiachta in Alt 4. {3 mharc: 2 mharc + 1 mharc} Tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Sampla den bhriathar saor san Aimsir Fháistineach in Alt 3: cuirfear; tabharfar; coimeádfar; ceadófar Sampla de bhreischéim na haidiachta in Alt 4: (níos) forleithne; (níos) faide"
+          ]
+        },
+        {
+          "id": "opinion",
+          "label": "Tuairim agus dhá phointe tacaíochta",
+          "kind": "award",
+          "maxMarks": 12,
           "permittedMarks": [
             0,
             1,
@@ -22405,20 +22584,15 @@
             9,
             10,
             11,
-            12,
-            13,
-            14,
-            15
+            12
           ],
-          "guidanceKind": "exact",
+          "guidanceKind": "indicative",
           "guidance": [
-            "6. (a) Aimsigh sampla den bhriathar saor san Aimsir Fháistineach in Alt 3 agus sampla de bhreischéim na haidiachta in Alt 4. {3 mharc: 2 mharc + 1 mharc} Tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Sampla den bhriathar saor san Aimsir Fháistineach in Alt 3: cuirfear; tabharfar; coimeádfar;",
-            "ceadófar Sampla de bhreischéim na haidiachta in Alt 4: (níos) forleithne; (níos) faide (b) Bunaithe ar an eolas sa sliocht thuas, an dóigh leat gur polasaí maith é Ár nOileáin Bheo? Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra.",
-            "(Is leor 60 focal.) {6 mharc + 6 mharc} Tuairim (T) = 2 mharc (glac le tuairim atá dearfach nó diúltach) Dhá phointe eolais = 5 mharc + 5 mharc Pointe eolais 1 = eolas cruinn, i d’fhocail féin, bunaithe ar an sliocht ag tacú le do thuairim = 5 mharc Pointe eolais 2 = eolas cruinn, i d’fhocail féin, bunaithe ar an sliocht ag tacú le do thuairim = 5 mharc"
+            "(b) Bunaithe ar an eolas sa sliocht thuas, an dóigh leat gur polasaí maith é Ár nOileáin Bheo? Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra. (Is leor 60 focal.) {6 mharc + 6 mharc} Tuairim (T) = 2 mharc (glac le tuairim atá dearfach nó diúltach) Dhá phointe eolais = 5 mharc + 5 mharc Pointe eolais 1 = eolas cruinn, i d’fhocail féin, bunaithe ar an sliocht ag tacú le do thuairim = 5 mharc Pointe eolais 2 = eolas cruinn, i d’fhocail féin, bunaithe ar an sliocht ag tacú le do thuairim = 5 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan tuairim luaite, ní féidir glacadh leis an bpointe eolais/na pointí eolais. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. Pointí eolais féideartha: Deiseanna fostaíochta…tionscadail nua…an daonra a mhéadú…tithe breise…tacaíochtaí…cúrsaí oideachais a fheabhsú…turasóirí breise…pleananna don bhainistiú níos fearr dramhaíola…cúrsaí taistil feabhsaithe…córais iompair feabhsaithe…na hoileáin níos tarraingtí…na bunseirbhísí feabhsaithe… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar thréithe eile agus ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint A",
@@ -22430,7 +22604,20 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        21,
+        22
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "6",
+      "additionalTopicIds": [
+        "irish-3-3"
+      ]
     },
     {
       "id": "irish-2024-hl-p2-reading-b-q1",
@@ -22454,30 +22641,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "a",
+          "label": "Freagra (a)",
           "kind": "award",
-          "maxMarks": 7,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "1. (a) Tabhair dhá chúis ar roghnaigh an foilsitheoir foclóirí Collins an téarma ‘intleacht shaorga’ mar théarma na bliana in 2023. (Alt 1) (Dhá chúis) {3 mharc: 2 mharc + 1 mharc} An chéad chúis atá ceart = 2 mharc;",
-            "an dara cúis atá ceart = 1 mharc • An t-ábhar cainte ba mhó a bhí i mbéal an phobail • Bhí luas ollmhór faoi fhorbairtí na hintleachta saorga • Cuardaíodh an téarma níos minice ná aon téarma eile san fhoclóir (b) (i) Luaigh dhá shampla den úsáid a bhaineann daoine as an intleacht shaorga gach lá.",
-            "(Alt 1) (Dhá shampla) {2 mharc: 1 mharc + 1 mharc} • Nuair a sheiceálann siad a gcuntais meán sóisialta • Nuair a labhraíonn siad le Alexa • Nuair a lorgaíonn siad eolas ar na hinnill chuardaigh idirlín • Nuair a úsáideann siad tuarthéacs • Nuair a bhíonn siad ag scrolláil trí mholtaí do scannáin ar Netflix (ii) Cad a léiríonn go raibh an-tóir ar an mbota comhrá ChatGPT ón tús?",
-            "(Alt 1) {2 mharc} • Bhí céad milliún úsáideoir ag an mbota comhrá ChatGPT taobh istigh de dhá mhí = 2 mharc • Is é an feidhmchlár tomhaltóra is mó fás riamh é = 2 mharc • Bhí céad milliún úsáideoir ag an mbota comhrá ChatGPT = 1 mharc"
+            "(a) Tabhair dhá chúis ar roghnaigh an foilsitheoir foclóirí Collins an téarma ‘intleacht shaorga’ mar théarma na bliana in 2023. (Alt 1) (Dhá chúis) {3 mharc: 2 mharc + 1 mharc} An chéad chúis atá ceart = 2 mharc; an dara cúis atá ceart = 1 mharc • An t-ábhar cainte ba mhó a bhí i mbéal an phobail • Bhí luas ollmhór faoi fhorbairtí na hintleachta saorga • Cuardaíodh an téarma níos minice ná aon téarma eile san fhoclóir"
+          ]
+        },
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Luaigh dhá shampla den úsáid a bhaineann daoine as an intleacht shaorga gach lá. (Alt 1) (Dhá shampla) {2 mharc: 1 mharc + 1 mharc} • Nuair a sheiceálann siad a gcuntais meán sóisialta • Nuair a labhraíonn siad le Alexa • Nuair a lorgaíonn siad eolas ar na hinnill chuardaigh idirlín • Nuair a úsáideann siad tuarthéacs • Nuair a bhíonn siad ag scrolláil trí mholtaí do scannáin ar Netflix"
+          ]
+        },
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cad a léiríonn go raibh an-tóir ar an mbota comhrá ChatGPT ón tús? (Alt 1) {2 mharc} • Bhí céad milliún úsáideoir ag an mbota comhrá ChatGPT taobh istigh de dhá mhí = 2 mharc • Is é an feidhmchlár tomhaltóra is mó fás riamh é = 2 mharc • Bhí céad milliún úsáideoir ag an mbota comhrá ChatGPT = 1 mharc"
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",
@@ -22489,7 +22699,16 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "7"
     },
     {
       "id": "irish-2024-hl-p2-reading-b-q2",
@@ -22504,7 +22723,7 @@
       "conceptId": "irish-reading-b-q2",
       "paperPage": 7,
       "paperTraceScore": 37217,
-      "schemePage": 23,
+      "schemePage": 22,
       "schemeTraceScore": 14103,
       "taskRequirements": [
         "Léigh an sliocht oifigiúil a ghabhann leis an gceist.",
@@ -22513,32 +22732,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "a",
+          "label": "Freagra (a)",
           "kind": "award",
-          "maxMarks": 7,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "(b) (i) Cén fáth ar forbraíodh Tástáil Turing? (Alt 2) {2 mharc} • Chun cinneadh a dhéanamh cé acu a bheadh ríomhairí ábalta aithris a dhéanamh ar iompraíocht an duine (nó nach mbeadh) = 2 mharc (ii) Cén t-éacht ceannródaíoch a rinne an ríomhaire speisialta fichille Deep Blue sa bhliain 1997? (Alt 2) {2 mharc} • D’éirigh leis an ríomhaire sin an lámh in uachtar a fháil ar churadh fichille an domhain/Garry Kasparov = 2 mharc 3.",
-            "(a) Scríobh síos dhá dheis a bhaineann leis an intleacht shaorga i dtionscal an ghnó agus na déantúsaíochta. (Alt 3) (Dhá dheis) {3 mharc: 2 mharc + 1 mharc} An chéad deis atá ceart = 2 mharc;",
-            "an dara deis atá ceart = 1 mharc • Táirgí atá ann cheana féin a fheabhsú • Earraí nua a fhorbairt • Cur le díolacháin • Seirbhís do chustaiméirí a fheabhsú • Cuirfear deiseanna fostaíochta nua ar fáil (b) (i) Cén tairbhe a bhaintear as an intleacht shaorga a úsáid sa chóras leighis?",
-            "(Alt 3) {2 mharc} • Cúram sláinte feabhsaithe = 2 mharc • Íomhánna leighis le mioneolas ar an othar a sholáthar laistigh de chúpla nóiméad = 2 mharc • Galair a aithint níos luaithe = 2 mharc • Tá dul chun cinn mór déanta i bhforbairt drugaí nua = 2 mharc • Tá dul chun cinn mór déanta i bhforbairt vacsaíní nua = 2 mharc (ii) Conas a chabhróidh na múnlaí feabhsaithe aimsire bunaithe ar an intleacht shaorga leis na heolaithe aimsire in Met Éireann?",
-            "(Alt 3) {2 mharc} • (Go mbeidh na heolaithe aimsire in Met Éireann in ann) réamhaisnéis aimsire níos cruinne a chur ar fáil = 2 mharc 4.",
-            "(a) Cén fáth ar éirigh an t-eolaí ríomhaireachta Geoffrey Hinton as a phost le Google i mí na Bealtaine 2023? {3 mharc} • Chun go mbeadh saoirse aige labhairt amach faoi na contúirtí a bhaineann leis an intleacht shaorga agus faoin luas ag a bhfuil teicneolaíochtaí nua na hintleachta saorga á bhforbai"
+            "(a) Cén míniú a thugtar ar an téarma ‘intleacht shaorga’? (Alt 2) {3 mharc} • Córais mheaisín-bhunaithe atá in ann tascanna cliste a dhéanamh mar a dhéanann daoine (de ghnáth) = 3 mharc • Córais mheaisín-bhunaithe atá in ann tascanna cliste a dhéanamh = 2 mharc"
+          ]
+        },
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Cén fáth ar forbraíodh Tástáil Turing? (Alt 2) {2 mharc} • Chun cinneadh a dhéanamh cé acu a bheadh ríomhairí ábalta aithris a dhéanamh ar iompraíocht an duine (nó nach mbeadh) = 2 mharc"
+          ]
+        },
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén t-éacht ceannródaíoch a rinne an ríomhaire speisialta fichille Deep Blue sa bhliain 1997? (Alt 2) {2 mharc} • D’éirigh leis an ríomhaire sin an lámh in uachtar a fháil ar churadh fichille an domhain/Garry Kasparov = 2 mharc"
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",
@@ -22550,7 +22790,17 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        22,
+        23
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "8"
     },
     {
       "id": "irish-2024-hl-p2-reading-b-q3",
@@ -22574,30 +22824,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "a",
+          "label": "Freagra (a)",
           "kind": "award",
-          "maxMarks": 7,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "3. (a) Scríobh síos dhá dheis a bhaineann leis an intleacht shaorga i dtionscal an ghnó agus na déantúsaíochta. (Alt 3) (Dhá dheis) {3 mharc: 2 mharc + 1 mharc} An chéad deis atá ceart = 2 mharc;",
-            "an dara deis atá ceart = 1 mharc • Táirgí atá ann cheana féin a fheabhsú • Earraí nua a fhorbairt • Cur le díolacháin • Seirbhís do chustaiméirí a fheabhsú • Cuirfear deiseanna fostaíochta nua ar fáil (b) (i) Cén tairbhe a bhaintear as an intleacht shaorga a úsáid sa chóras leighis?",
-            "(Alt 3) {2 mharc} • Cúram sláinte feabhsaithe = 2 mharc • Íomhánna leighis le mioneolas ar an othar a sholáthar laistigh de chúpla nóiméad = 2 mharc • Galair a aithint níos luaithe = 2 mharc • Tá dul chun cinn mór déanta i bhforbairt drugaí nua = 2 mharc • Tá dul chun cinn mór déanta i bhforbairt vacsaíní nua = 2 mharc (ii) Conas a chabhróidh na múnlaí feabhsaithe aimsire bunaithe ar an intleacht shaorga leis na heolaithe aimsire in Met Éireann?",
-            "(Alt 3) {2 mharc} • (Go mbeidh na heolaithe aimsire in Met Éireann in ann) réamhaisnéis aimsire níos cruinne a chur ar fáil = 2 mharc"
+            "(a) Scríobh síos dhá dheis a bhaineann leis an intleacht shaorga i dtionscal an ghnó agus na déantúsaíochta. (Alt 3) (Dhá dheis) {3 mharc: 2 mharc + 1 mharc} An chéad deis atá ceart = 2 mharc; an dara deis atá ceart = 1 mharc • Táirgí atá ann cheana féin a fheabhsú • Earraí nua a fhorbairt • Cur le díolacháin • Seirbhís do chustaiméirí a fheabhsú • Cuirfear deiseanna fostaíochta nua ar fáil"
+          ]
+        },
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Cén tairbhe a bhaintear as an intleacht shaorga a úsáid sa chóras leighis? (Alt 3) {2 mharc} • Cúram sláinte feabhsaithe = 2 mharc • Íomhánna leighis le mioneolas ar an othar a sholáthar laistigh de chúpla nóiméad = 2 mharc • Galair a aithint níos luaithe = 2 mharc • Tá dul chun cinn mór déanta i bhforbairt drugaí nua = 2 mharc • Tá dul chun cinn mór déanta i bhforbairt vacsaíní nua = 2 mharc"
+          ]
+        },
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Conas a chabhróidh na múnlaí feabhsaithe aimsire bunaithe ar an intleacht shaorga leis na heolaithe aimsire in Met Éireann? (Alt 3) {2 mharc} • (Go mbeidh na heolaithe aimsire in Met Éireann in ann) réamhaisnéis aimsire níos cruinne a chur ar fáil = 2 mharc"
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",
@@ -22609,7 +22882,16 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "9"
     },
     {
       "id": "irish-2024-hl-p2-reading-b-q4",
@@ -22633,29 +22915,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "a",
+          "label": "Freagra (a)",
           "kind": "award",
-          "maxMarks": 7,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "4.",
-            "(a) Cén fáth ar éirigh an t-eolaí ríomhaireachta Geoffrey Hinton as a phost le Google i mí na Bealtaine 2023? {3 mharc} • Chun go mbeadh saoirse aige labhairt amach faoi na contúirtí a bhaineann leis an intleacht shaorga agus faoin luas ag a bhfuil teicneolaíochtaí nua na hintleachta saorga á bhforbairt = 3 mharc • Chun go mbeadh saoirse aige labhairt amach faoi na contúirtí a bhaineann leis an intleacht shaorga = 2 mharc • Chun go mbeadh saoirse aige labhairt amach faoin luas ag a bhfuil teicneolaíochtaí nua na hintleachta saorga á bhforbairt = 2 mharc • Chun go mbeadh saoirse aige labhairt amach = 1 mharc (b) (i) Tabhair dhá dhúshlán atá ag baint leis an intleacht shaorga don duine aonair.",
-            "(Alt 4) (Dhá dhúshlán) {2 mharc: 1 mharc + 1 mharc} • Scaiptear bréageolas agus ábhar díobhálach = 1 mharc + 1 mharc"
+            "(a) Cén fáth ar éirigh an t-eolaí ríomhaireachta Geoffrey Hinton as a phost le Google i mí na Bealtaine 2023? {3 mharc} • Chun go mbeadh saoirse aige labhairt amach faoi na contúirtí a bhaineann leis an intleacht shaorga agus faoin luas ag a bhfuil teicneolaíochtaí nua na hintleachta saorga á bhforbairt = 3 mharc • Chun go mbeadh saoirse aige labhairt amach faoi na contúirtí a bhaineann leis an intleacht shaorga = 2 mharc • Chun go mbeadh saoirse aige labhairt amach faoin luas ag a bhfuil teicneolaíochtaí nua na hintleachta saorga á bhforbairt = 2 mharc • Chun go mbeadh saoirse aige labhairt amach = 1 mharc"
+          ]
+        },
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Tabhair dhá dhúshlán atá ag baint leis an intleacht shaorga don duine aonair. (Alt 4) (Dhá dhúshlán) {2 mharc: 1 mharc + 1 mharc} • Scaiptear bréageolas agus ábhar díobhálach = 1 mharc + 1 mharc • Tá baol ann do chearta an duine aonair chun príobháideachais • Tá baol ann do chearta an duine aonair chun sonraí a chosaint • Má bhíonn duine ag brath an iomad ar áiseanna intleachta saorga, d’fhéadfadh sé go gcuirfeadh siad bac ar chumas smaointeoireachta an duine"
+          ]
+        },
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Scríobh síos dhá chúis a bhfuil amhras léirithe maidir leis na buntéacsanna a mbaineann an bota comhrá ChatGPT úsáid astu. (Alt 4) (Dhá chúis) {2 mharc: 1 mharc + 1 mharc} • Go bhfuil tuairimí claonta sna buntéacsanna = 1 mharc • Nach bhfuil cuid den eolas iontu cruinn = 1 mharc • Nach bhfuil cuid den eolas iontu iontaofa = 1 mharc • Tá ceist eile ann maidir le sárú an chóipchirt = 1 mharc"
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",
@@ -22667,7 +22973,17 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23,
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "10"
     },
     {
       "id": "irish-2024-hl-p2-reading-b-q5",
@@ -22691,30 +23007,53 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "a",
+          "label": "Freagra (a)",
           "kind": "award",
-          "maxMarks": 7,
+          "maxMarks": 3,
           "permittedMarks": [
             0,
             1,
             2,
-            3,
-            4,
-            5,
-            6,
-            7
+            3
           ],
           "guidanceKind": "exact",
           "guidance": [
-            "5. (a) Cén fáth a bhfuil Dearbhú Bletchley sínithe ag ocht dtír is fiche?",
-            "(Alt 5) {3 mharc} • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga a fhorbairt agus a úsáid go freagrach agus go sábháilte ar fud an domhain = 3 mharc • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga a fhorbairt agus a úsáid go freagrach agus go sábháilte = 2 mharc • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga • a fhorbairt agus a úsáid go freagrach ar fud an domhain = 2 mharc • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga • a fhorbairt agus a úsáid go sábháilte ar fud an domhain = 2 mharc (b) (i) Cad atá leagtha amach ag rialtas na hÉireann sa Straitéis Náisiúnta um Intleacht Shaorga?",
-            "(Alt 5) {2 mharc} • Leagtar amach na slite ar féidir an intleacht shaorga a úsáid ar bhealach a rachaidh chun leas gheilleagar agus shochaí na tíre = 2 mharc (ii) Scríobh síos dhá cheist a ardaítear i ndíospóireachtaí faoi thodhchaí na hintleachta saorga.",
-            "(Alt 5) (Dhá cheist) {2 mharc: 1 mharc + 1 mharc} • An éireoidh le réabhlóid na hintleachta saorga? = 1 mharc • An leanfaidh luas na bhforbairtí san intleacht shaorga ar aghaidh go tapa? = 1 mharc • Cad a tharlóidh má éiríonn an intleacht shaorga níos cliste ná an duine daonna? = 1 mharc"
+            "(a) Cén fáth a bhfuil Dearbhú Bletchley sínithe ag ocht dtír is fiche? (Alt 5) {3 mharc} • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga a fhorbairt agus a úsáid go freagrach agus go sábháilte ar fud an domhain = 3 mharc • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga a fhorbairt agus a úsáid go freagrach agus go sábháilte = 2 mharc • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga • a fhorbairt agus a úsáid go freagrach ar fud an domhain = 2 mharc • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga • a fhorbairt agus a úsáid go sábháilte ar fud an domhain = 2 mharc"
+          ]
+        },
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Cad atá leagtha amach ag rialtas na hÉireann sa Straitéis Náisiúnta um Intleacht Shaorga? (Alt 5) {2 mharc} • Leagtar amach na slite ar féidir an intleacht shaorga a úsáid ar bhealach a rachaidh chun leas gheilleagar agus shochaí na tíre = 2 mharc"
+          ]
+        },
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Scríobh síos dhá cheist a ardaítear i ndíospóireachtaí faoi thodhchaí na hintleachta saorga. (Alt 5) (Dhá cheist) {2 mharc: 1 mharc + 1 mharc} • An éireoidh le réabhlóid na hintleachta saorga? = 1 mharc • An leanfaidh luas na bhforbairtí san intleacht shaorga ar aghaidh go tapa? = 1 mharc • Cad a tharlóidh má éiríonn an intleacht shaorga níos cliste ná an duine daonna? = 1 mharc"
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",
@@ -22726,7 +23065,16 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "11"
     },
     {
       "id": "irish-2024-hl-p2-reading-b-q6",
@@ -22750,10 +23098,25 @@
       ],
       "criteria": [
         {
-          "id": "eolas",
-          "label": "Eolas",
+          "id": "grammar",
+          "label": "An dá mhír ghramadaí",
           "kind": "award",
-          "maxMarks": 15,
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Aimsigh sampla de bhriathar sa Mhodh Coinníollach in Alt 2 agus sampla den bhriathar saor san Aimsir Láithreach in Alt 5. {3 mharc: 2 mharc + 1 mharc} Tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Sampla de bhriathar sa Mhodh Coinníollach in Alt 2: a bheadh; nach mbeadh, beadh Sampla den bhriathar saor san Aimsir Láithreach in Alt 5: (go) (n)déantar; leagtar; aithnítear"
+          ]
+        },
+        {
+          "id": "insight-1",
+          "label": "Léargas 1",
+          "kind": "award",
+          "maxMarks": 6,
           "permittedMarks": [
             0,
             1,
@@ -22761,25 +23124,34 @@
             3,
             4,
             5,
-            6,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
+            6
           ],
-          "guidanceKind": "exact",
+          "guidanceKind": "indicative",
           "guidance": [
-            "6. (a) Aimsigh sampla de bhriathar sa Mhodh Coinníollach in Alt 2 agus sampla den bhriathar saor san Aimsir Láithreach in Alt 5. {3 mharc: 2 mharc + 1 mharc} Tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Sampla de bhriathar sa Mhodh Coinníollach in Alt 2: a bheadh;",
-            "nach mbeadh, beadh Sampla den bhriathar saor san Aimsir Láithreach in Alt 5: (go) (n)déantar; leagtar; aithnítear (b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.)"
+            "An léargas seo = 2 mharc; míniú i d’fhocail féin le sampla cruinn = 4 mharc. Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla. (b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.) Dhá léargas = 6 mharc + 6 mharc Léargas 1 (L1) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Léargas 2 (L2) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla/na samplaí. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. Léargais fhéideartha: Déantar cur síos ar an úsáid a bhaintear as IS sa ghnáthshaol laethúil inniu…foghlaimím faoi ChatGPT agus an t-éileamh a bhí air ón tús…tá léiriú ar chúlra agus ar stair na hintleachta saorga…tugtar léargas ar an ríomhaire Deep Blue ag fáil an lámh in uachtar ar laoch fichille an domhain…luaitear buntáistí na hintleachta saorga i dtionscail éagsúla…tugtar eolas faoi dhainséar/faoi chontúirt na hintleachta saorga…tá sé soiléir dom go bhfuil tábhacht ag baint le cosaint agus le reachtaíocht chun an intleacht shaorga a choimeád faoi smacht agus chun cearta daoine a chosaint… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        },
+        {
+          "id": "insight-2",
+          "label": "Léargas 2",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "An léargas seo = 2 mharc; míniú i d’fhocail féin le sampla cruinn = 4 mharc. Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla. (b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.) Dhá léargas = 6 mharc + 6 mharc Léargas 1 (L1) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Léargas 2 (L2) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla/na samplaí. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. Léargais fhéideartha: Déantar cur síos ar an úsáid a bhaintear as IS sa ghnáthshaol laethúil inniu…foghlaimím faoi ChatGPT agus an t-éileamh a bhí air ón tús…tá léiriú ar chúlra agus ar stair na hintleachta saorga…tugtar léargas ar an ríomhaire Deep Blue ag fáil an lámh in uachtar ar laoch fichille an domhain…luaitear buntáistí na hintleachta saorga i dtionscail éagsúla…tugtar eolas faoi dhainséar/faoi chontúirt na hintleachta saorga…tá sé soiléir dom go bhfuil tábhacht ag baint le cosaint agus le reachtaíocht chun an intleacht shaorga a choimeád faoi smacht agus chun cearta daoine a chosaint… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
           ]
         }
       ],
-      "markingGuideNote": "These are the question-specific answers and tariffs printed by the SEC. Equivalent answers remain valid where the scheme says they are acceptable.",
+      "markingGuideNote": "Retained complete printed question. Score each published part separately using these SEC allocations. Two-answer grammar is one 0/2/3 placement; opinion and insight conditions remain inside their respective response awards.",
       "sourceMaterial": {
         "kind": "source-text",
         "label": "Léamhthuiscint B",
@@ -22791,7 +23163,20 @@
         "attribution": "Official source as printed in the State Examinations Commission question paper.",
         "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
       },
-      "paperFileid": "LC001ALP200IV"
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24,
+        25
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "12",
+      "additionalTopicIds": [
+        "irish-3-3"
+      ]
     },
     {
       "id": "irish-2024-hl-p2-prose-2a-a",
@@ -34413,6 +34798,2702 @@
         8
       ],
       "reviewedAt": "2026-10-07"
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q1-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 1(a)",
+      "questionText": "1(a) Scríobh síos dhá shaintréith ar leith atá ag baint le gach ceann de na trí oileán is fiche amach ó chósta na hÉireann ar a bhfuil an polasaí Ár nOileáin Bheo dírithe. (Alt 1)",
+      "totalMarks": 3,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q1-a",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 19,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra (a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Scríobh síos dhá shaintréith ar leith atá ag baint le gach ceann de na trí oileán is fiche amach ó chósta na hÉireann ar a bhfuil an polasaí Ár nOileáin Bheo dírithe. (Alt 1) (Dhá shaintréith) {3 mharc: 2 mharc + 1 mharc} An chéad saintréith atá ceart = 2 mharc; an dara saintréith atá ceart = 1 mharc • Na hoileáin a bhfuil cónaí buan orthu (ar feadh na bliana) • Nach bhfuil ceangailte leis an mórthír (le droichead nó le cabhsa) • Nach bhfuil faoi úinéireacht phríobháideach"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-1-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 1(a)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q1-bi",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 1(b)(i)",
+      "questionText": "1(b)(i) Cén aidhm atá leis an bpolasaí nua seo, Ár nOileáin Bheo? (Alt 1)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q1-bi",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 19,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Cén aidhm atá leis an bpolasaí nua seo, Ár nOileáin Bheo? {2 mharc} • A chinntiú go gcothófar pobail bheoga, inbhuanaithe ar na hoileáin agus go mbeidh saol faoi rath acu go ceann blianta fada = 2 mharc • A chinntiú go gcothófar pobail bheoga, inbhuanaithe ar na hoileáin = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-1-bi",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 1(b)(i)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q1-bii",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 1(b)(ii)",
+      "questionText": "1(b)(ii) Conas a chuirfear bearta an pholasaí i gcrích, dar leis an Aire Humphreys? (Alt 1)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q1-bii",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 19,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Conas a chuirfear bearta an pholasaí i gcrích, dar leis an Aire Humphreys? (Alt 1) {2 mharc} • Trí infheistíocht = 2 mharc • Trí thacaíochtaí = 2 mharc • Trí phlé leanúnach idir pobail na n-oileán, ranna rialtais, na húdaráis áitiúla agus na páirtithe leasmhara = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-1-bii",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 1(b)(ii)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q2-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 2(a)",
+      "questionText": "2(a) Cad é an chéad chuspóir atá ag an rialtas sa pholasaí Ár nOileáin Bheo? (Alt 2)",
+      "totalMarks": 3,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q2-a",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 19,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra (a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Cad é an chéad chuspóir atá ag an rialtas sa pholasaí Ár nOileáin Bheo? (Alt 2) {3 mharc} • Stop a chur le meath an daonra ar na hoileáin trí na coinníollacha a chruthú a spreagfaidh daoine chun fanacht ar na hoileáin/chun bogadh chucu = 3 mharc • Stop a chur le meath an daonra (ar na hoileáin) = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-2-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 2(a)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q2-bi",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 2(b)(i)",
+      "questionText": "2(b)(i) Luaigh beart amháin atá sa pholasaí maidir le cúrsaí fostaíochta ar na hoileáin. (Alt 2)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q2-bi",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 19,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Luaigh beart amháin atá sa pholasaí maidir le cúrsaí fostaíochta ar na hoileáin. (Alt 2) {2 mharc} • Fostaíocht a chruthú i réimsí nua atá ag teacht chun cinn = 2 mharc • Fostaíocht a chruthú i dtionscadail a bhaineann le foinsí in-athnuaite fuinnimh amach ón gcósta = 2 mharc • Déanfar iarrachtaí fiontair agus gnólachtaí nua a mhealladh chun lonnú ar na hoileáin = 2 mharc • Fostaíocht a chruthú = 1 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-2-bi",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 2(b)(i)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q2-bii",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 2(b)(ii)",
+      "questionText": "2(b)(ii) Cad a thabharfaidh deis do dhaoine cianobair a dhéanamh ar go leor de na hoileáin? (Alt 2)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q2-bii",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 19,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cad a thabharfaidh deis do dhaoine cianobair a dhéanamh ar go leor de na hoileáin? (Alt 2) {2 mharc} • Nasc leathanbhanda ardluais = 2 mharc • Leathanbhanda ardluais = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        19
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-2-bii",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 2(b)(ii)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q3-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 3(a)",
+      "questionText": "3(a) Scríobh síos dhá dhúshlán a bhaineann le soláthar cuí tithíochta ar na hoileáin a luadh le linn an phróisis comhairliúcháin. (Alt 3)",
+      "totalMarks": 3,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q3-a",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 20,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra (a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Scríobh síos dhá dhúshlán a bhaineann le soláthar cuí tithíochta ar na hoileáin a luadh le linn an phróisis comhairliúcháin. (Alt 3) (Dhá dhúshlán) {3 mharc: 2 mharc + 1 mharc} An chéad dúshlán atá ceart = 2 mharc; an dara dúshlán atá ceart = 1 mharc • Go bhfuil tithe ar an gcuid is mó de na hoileáin atá tréigthe agus a bhfuil drochbhail orthu = 2 mharc + 1 mharc • Tithe saoire nach mbíonn cónaí iontu go buan • Costais tógála níos airde ar na hoileáin (ná ar an mórthír)"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-3-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 3(a)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q3-bi",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 3(b)(i)",
+      "questionText": "3(b)(i) Luaigh moladh amháin atá sa pholasaí nua chun cúrsaí tithíochta a fheabhsú ar na hoileáin. (Alt 3)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q3-bi",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 20,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Luaigh moladh amháin atá sa pholasaí nua chun cúrsaí tithíochta a fheabhsú ar na hoileáin. (Alt 3) {2 mharc} • Cuirfear deontais ar fáil chun tithe tréigthe a athchóiriú = 2 mharc • Tabharfar maoiniú do na húdaráis áitiúla chun scéimeanna tithe sóisialta a sholáthar = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-3-bi",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 3(b)(i)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q3-bii",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 3(b)(ii)",
+      "questionText": "3(b)(ii) Scríobh síos beart amháin atá sa pholasaí a chinnteoidh go mbeidh áiseanna cuí oideachais ar fáil do phobail na n-oileán. (Alt 3)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q3-bii",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 20,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Scríobh síos beart amháin atá sa pholasaí a chinnteoidh go mbeidh áiseanna cuí oideachais ar fáil do phobail na n-oileán. (Alt 3) {2 mharc} • Coimeádfar scoileanna na n-oileán ar oscailt • Ceadófar múinteoirí breise ag brath ar chúinsí na scoile • Leis an gcóras leathanbhanda ardluais atá ar fáil sna scoileanna, beidh deiseanna cianfhoghlama ann • Leis an gcóras leathanbhanda ardluais atá ar fáil sna scoileanna, beidh fáil ag na scoláirí dara leibhéal ar raon níos leithne ábhar"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-3-bii",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 3(b)(ii)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q4-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 4(a)",
+      "questionText": "4(a) Tabhair dhá chúis a mealltar a lán turasóirí go dtí na hoileáin. (Alt 4)",
+      "totalMarks": 3,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q4-a",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 20,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra (a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Tabhair dhá chúis a mealltar a lán turasóirí go dtí na hoileáin. (Alt 4) (Dhá chúis) {3 mharc: 2 mharc + 1 mharc} An chéad chúis atá ceart = 2 mharc; an dara cúis atá ceart = 1 mharc • Na suíomhanna seandálaíochta • An tírdhreach álainn • An oidhreacht dhúchasach • Tugann go leor daoine cuairt ar na hoileáin Ghaeltachta chun blaiseadh a fháil de shaibhreas na Gaeilge agus den chultúr Gaelach (dhá chúis = 2 mharc + 1 mharc) • Tugann go leor daoine cuairt ar na hoileáin Ghaeltachta chun blaiseadh a fháil de shaibhreas na Gaeilge • Tugann go leor daoine cuairt ar na hoileáin Ghaeltachta chun blaiseadh a fháil den chultúr Gaelach"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-4-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 4(a)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q4-bi",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 4(b)(i)",
+      "questionText": "4(b)(i) Scríobh síos aidhm amháin a bheidh leis an bhfeachtas margaíochta a fhorbróidh Fáilte Éireann do na hoileáin. (Alt 4)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q4-bi",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 20,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Scríobh síos aidhm amháin a bheidh leis an bhfeachtas margaíochta a fhorbróidh Fáilte Éireann do na hoileáin. (Alt 4) {2 mharc} • Chun na hoileáin a chur chun cinn ar bhealach níos forleithne mar ionaid saoire uathúla • Chun séasúr na turasóireachta ar na hoileáin a shíneadh amach níos faide"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        20
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-4-bi",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 4(b)(i)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q4-bii",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 4(b)(ii)",
+      "questionText": "4(b)(ii) Cén fáth a bhfuil sé tábhachtach go mbeadh dea-chórais maidir le bainistíocht dramhaíola ar gach ceann de na hoileáin? (Alt 4)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q4-bii",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 21,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén fáth a bhfuil sé tábhachtach go mbeadh dea-chórais maidir le bainistíocht dramhaíola ar gach ceann de na hoileáin? (Alt 4) {2 mharc} • Ar mhaithe le sláinte an phobail = 2 mharc • Leis an gcomhshaol a chaomhnú = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        21
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-4-bii",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 4(b)(ii)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q5-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 5(a)",
+      "questionText": "5(a) Scríobh síos dhá ghealltanas atá tugtha sa pholasaí nua maidir le seirbhísí iompair farraige agus aeir chuig na hoileáin. (Alt 5)",
+      "totalMarks": 3,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q5-a",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 21,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra (a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Scríobh síos dhá ghealltanas atá tugtha sa pholasaí nua maidir le seirbhísí iompair farraige agus aeir chuig na hoileáin. (Alt 5) (Dhá ghealltanas) {3 mharc: 2 mharc + 1 mharc} Glac le gealltanas amháin bainteach le seirbhísí iompair farraige agus an gealltanas eile bainteach le seirbhísí iompair aeir Seirbhísí iompair farraige • Go leanfar ar aghaidh ag cur tacaíocht airgid ar fáil do sheirbhísí rialta farantóireachta • Cuirfear deontais ar fáil chun sábháilteacht na gcéanna a fheabhsú Seirbhísí iompair aeir • Go leanfar ar aghaidh ag cur tacaíocht airgid ar fáil do sheirbhísí rialta aerthaistil • Cuirfear deontais ar fáil chun sábháilteacht na n-aerstráicí a fheabhsú"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        21
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-5-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 5(a)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q5-bi",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 5(b)(i)",
+      "questionText": "5(b)(i) Luaigh cuspóir amháin atá ag an rialtas sa pholasaí seo chun seirbhísí sláinte a fheabhsú do phobail na n-oileán. (Alt 5)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q5-bi",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 21,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Luaigh cuspóir amháin atá ag an rialtas sa pholasaí seo chun seirbhísí sláinte a fheabhsú do phobail na n-oileán. (Alt 5) {2 mharc} • Cur le líon na ndochtúirí teaghlaigh ar gach ceann de na hoileáin = 2 mharc • Cur le líon na ndochtúirí teaghlaigh = 1 mharc • Níos mó coinní sláinte a chur ar fáil ar líne = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        21
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-5-bi",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 5(b)(i)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q5-bii",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 5(b)(ii)",
+      "questionText": "5(b)(ii) Cén deis a bheidh ag daoine óga agus cinntí á ndéanamh? (Alt 5)",
+      "totalMarks": 2,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q5-bii",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 21,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén deis a bheidh ag daoine óga agus cinntí á ndéanamh? (Alt 5) {2 mharc} • Beidh deis acu tuairimí a thabhairt faoi cheisteanna atá ábhartha dá saol ar na hoileáin = 2 mharc • Beidh deis acu tuairimí a thabhairt faoi cheisteanna atá ábhartha dá saol = 1 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        21
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-5-bii",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 5(b)(ii)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q6-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 6(a)",
+      "questionText": "6(a) Aimsigh sampla den bhriathar saor san Aimsir Fháistineach in Alt 3 agus sampla de bhreischéim na haidiachta in Alt 4.",
+      "totalMarks": 3,
+      "topicId": "irish-3-3",
+      "conceptId": "irish-reading-a-q6-a",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 21,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "grammar",
+          "label": "An dá mhír ghramadaí",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Aimsigh sampla den bhriathar saor san Aimsir Fháistineach in Alt 3 agus sampla de bhreischéim na haidiachta in Alt 4. {3 mharc: 2 mharc + 1 mharc} Tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Sampla den bhriathar saor san Aimsir Fháistineach in Alt 3: cuirfear; tabharfar; coimeádfar; ceadófar Sampla de bhreischéim na haidiachta in Alt 4: (níos) forleithne; (níos) faide"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        21
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-6-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 6(a).",
+      "additionalTopicIds": [
+        "irish-3-0"
+      ]
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-a-q6-b",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint A · Ceist 6(b)",
+      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, an dóigh leat gur polasaí maith é Ár nOileáin Bheo? Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra. (Is leor 60 focal.)",
+      "totalMarks": 12,
+      "topicId": "irish-3-0",
+      "conceptId": "irish-reading-a-q6-b",
+      "paperPage": 5,
+      "paperTraceScore": 1,
+      "schemePage": 21,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "opinion",
+          "label": "Tuairim agus dhá phointe tacaíochta",
+          "kind": "award",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "(b) Bunaithe ar an eolas sa sliocht thuas, an dóigh leat gur polasaí maith é Ár nOileáin Bheo? Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra. (Is leor 60 focal.) {6 mharc + 6 mharc} Tuairim (T) = 2 mharc (glac le tuairim atá dearfach nó diúltach) Dhá phointe eolais = 5 mharc + 5 mharc Pointe eolais 1 = eolas cruinn, i d’fhocail féin, bunaithe ar an sliocht ag tacú le do thuairim = 5 mharc Pointe eolais 2 = eolas cruinn, i d’fhocail féin, bunaithe ar an sliocht ag tacú le do thuairim = 5 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan tuairim luaite, ní féidir glacadh leis an bpointe eolais/na pointí eolais. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. Pointí eolais féideartha: Deiseanna fostaíochta…tionscadail nua…an daonra a mhéadú…tithe breise…tacaíochtaí…cúrsaí oideachais a fheabhsú…turasóirí breise…pleananna don bhainistiú níos fearr dramhaíola…cúrsaí taistil feabhsaithe…córais iompair feabhsaithe…na hoileáin níos tarraingtí…na bunseirbhísí feabhsaithe… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar thréithe eile agus ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint A",
+        "title": "Ár nOileáin Bheo: Polasaí Náisiúnta na nOileán agus Plean Gníomhaíochta",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        21,
+        22
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        4,
+        5
+      ],
+      "atlasQuestionId": "R-A-6-b",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint A · Ceist 6(b)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q1-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 1(a)",
+      "questionText": "1(a) Tabhair dhá chúis ar roghnaigh an foilsitheoir foclóirí Collins an téarma ‘intleacht shaorga’ mar théarma na bliana in 2023. (Alt 1)",
+      "totalMarks": 3,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q1-a",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 22,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra (a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Tabhair dhá chúis ar roghnaigh an foilsitheoir foclóirí Collins an téarma ‘intleacht shaorga’ mar théarma na bliana in 2023. (Alt 1) (Dhá chúis) {3 mharc: 2 mharc + 1 mharc} An chéad chúis atá ceart = 2 mharc; an dara cúis atá ceart = 1 mharc • An t-ábhar cainte ba mhó a bhí i mbéal an phobail • Bhí luas ollmhór faoi fhorbairtí na hintleachta saorga • Cuardaíodh an téarma níos minice ná aon téarma eile san fhoclóir"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-1-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 1(a)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q1-bi",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(i)",
+      "questionText": "1(b)(i) Luaigh dhá shampla den úsáid a bhaineann daoine as an intleacht shaorga gach lá. (Alt 1)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q1-bi",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 22,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Luaigh dhá shampla den úsáid a bhaineann daoine as an intleacht shaorga gach lá. (Alt 1) (Dhá shampla) {2 mharc: 1 mharc + 1 mharc} • Nuair a sheiceálann siad a gcuntais meán sóisialta • Nuair a labhraíonn siad le Alexa • Nuair a lorgaíonn siad eolas ar na hinnill chuardaigh idirlín • Nuair a úsáideann siad tuarthéacs • Nuair a bhíonn siad ag scrolláil trí mholtaí do scannáin ar Netflix"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-1-bi",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 1(b)(i)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q1-bi-1",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(i) · Sampla 1",
+      "questionText": "1(b)(i) Luaigh dhá shampla den úsáid a bhaineann daoine as an intleacht shaorga gach lá. (Alt 1) Don chárta seo: tabhair freagra amháin don chuid seo (sampla 1, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q1-bi-1",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 22,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi-1",
+          "label": "Sampla 1",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Luaigh dhá shampla den úsáid a bhaineann daoine as an intleacht shaorga gach lá. (Alt 1) (Dhá shampla) {2 mharc: 1 mharc + 1 mharc} • Nuair a sheiceálann siad a gcuntais meán sóisialta • Nuair a labhraíonn siad le Alexa • Nuair a lorgaíonn siad eolas ar na hinnill chuardaigh idirlín • Nuair a úsáideann siad tuarthéacs • Nuair a bhíonn siad ag scrolláil trí mholtaí do scannáin ar Netflix"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-1-bi-1",
+      "practiceInstruction": "Don chárta seo: tabhair freagra amháin don chuid seo (sampla 1, 1 mharc)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q1-bi-2",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(i) · Sampla 2",
+      "questionText": "1(b)(i) Luaigh dhá shampla den úsáid a bhaineann daoine as an intleacht shaorga gach lá. (Alt 1) Don chárta seo: tabhair freagra amháin don chuid seo (sampla 2, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q1-bi-2",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 22,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi-2",
+          "label": "Sampla 2",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Luaigh dhá shampla den úsáid a bhaineann daoine as an intleacht shaorga gach lá. (Alt 1) (Dhá shampla) {2 mharc: 1 mharc + 1 mharc} • Nuair a sheiceálann siad a gcuntais meán sóisialta • Nuair a labhraíonn siad le Alexa • Nuair a lorgaíonn siad eolas ar na hinnill chuardaigh idirlín • Nuair a úsáideann siad tuarthéacs • Nuair a bhíonn siad ag scrolláil trí mholtaí do scannáin ar Netflix"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-1-bi-2",
+      "practiceInstruction": "Don chárta seo: tabhair freagra amháin don chuid seo (sampla 2, 1 mharc)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q1-bii",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 1(b)(ii)",
+      "questionText": "1(b)(ii) Cad a léiríonn go raibh an-tóir ar an mbota comhrá ChatGPT ón tús? (Alt 1)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q1-bii",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 22,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cad a léiríonn go raibh an-tóir ar an mbota comhrá ChatGPT ón tús? (Alt 1) {2 mharc} • Bhí céad milliún úsáideoir ag an mbota comhrá ChatGPT taobh istigh de dhá mhí = 2 mharc • Is é an feidhmchlár tomhaltóra is mó fás riamh é = 2 mharc • Bhí céad milliún úsáideoir ag an mbota comhrá ChatGPT = 1 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-1-bii",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 1(b)(ii)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q2-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 2(a)",
+      "questionText": "2(a) Cén míniú a thugtar ar an téarma ‘intleacht shaorga’? (Alt 2)",
+      "totalMarks": 3,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q2-a",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 22,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra (a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Cén míniú a thugtar ar an téarma ‘intleacht shaorga’? (Alt 2) {3 mharc} • Córais mheaisín-bhunaithe atá in ann tascanna cliste a dhéanamh mar a dhéanann daoine (de ghnáth) = 3 mharc • Córais mheaisín-bhunaithe atá in ann tascanna cliste a dhéanamh = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        22
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-2-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 2(a)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q2-bi",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(i)",
+      "questionText": "2(b)(i) Cén fáth ar forbraíodh Tástáil Turing? (Alt 2)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q2-bi",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 23,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Cén fáth ar forbraíodh Tástáil Turing? (Alt 2) {2 mharc} • Chun cinneadh a dhéanamh cé acu a bheadh ríomhairí ábalta aithris a dhéanamh ar iompraíocht an duine (nó nach mbeadh) = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-2-bi",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 2(b)(i)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q2-bii",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 2(b)(ii)",
+      "questionText": "2(b)(ii) Cén t-éacht ceannródaíoch a rinne an ríomhaire speisialta fichille Deep Blue sa bhliain 1997? (Alt 2)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q2-bii",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 23,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Cén t-éacht ceannródaíoch a rinne an ríomhaire speisialta fichille Deep Blue sa bhliain 1997? (Alt 2) {2 mharc} • D’éirigh leis an ríomhaire sin an lámh in uachtar a fháil ar churadh fichille an domhain/Garry Kasparov = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-2-bii",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 2(b)(ii)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q3-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 3(a)",
+      "questionText": "3(a) Scríobh síos dhá dheis a bhaineann leis an intleacht shaorga i dtionscal an ghnó agus na déantúsaíochta. (Alt 3)",
+      "totalMarks": 3,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q3-a",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 23,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra (a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Scríobh síos dhá dheis a bhaineann leis an intleacht shaorga i dtionscal an ghnó agus na déantúsaíochta. (Alt 3) (Dhá dheis) {3 mharc: 2 mharc + 1 mharc} An chéad deis atá ceart = 2 mharc; an dara deis atá ceart = 1 mharc • Táirgí atá ann cheana féin a fheabhsú • Earraí nua a fhorbairt • Cur le díolacháin • Seirbhís do chustaiméirí a fheabhsú • Cuirfear deiseanna fostaíochta nua ar fáil"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-3-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 3(a)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q3-bi",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(i)",
+      "questionText": "3(b)(i) Cén tairbhe a bhaintear as an intleacht shaorga a úsáid sa chóras leighis? (Alt 3)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q3-bi",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 23,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Cén tairbhe a bhaintear as an intleacht shaorga a úsáid sa chóras leighis? (Alt 3) {2 mharc} • Cúram sláinte feabhsaithe = 2 mharc • Íomhánna leighis le mioneolas ar an othar a sholáthar laistigh de chúpla nóiméad = 2 mharc • Galair a aithint níos luaithe = 2 mharc • Tá dul chun cinn mór déanta i bhforbairt drugaí nua = 2 mharc • Tá dul chun cinn mór déanta i bhforbairt vacsaíní nua = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-3-bi",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 3(b)(i)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q3-bii",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 3(b)(ii)",
+      "questionText": "3(b)(ii) Conas a chabhróidh na múnlaí feabhsaithe aimsire bunaithe ar an intleacht shaorga leis na heolaithe aimsire in Met Éireann? (Alt 3)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q3-bii",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 23,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Conas a chabhróidh na múnlaí feabhsaithe aimsire bunaithe ar an intleacht shaorga leis na heolaithe aimsire in Met Éireann? (Alt 3) {2 mharc} • (Go mbeidh na heolaithe aimsire in Met Éireann in ann) réamhaisnéis aimsire níos cruinne a chur ar fáil = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-3-bii",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 3(b)(ii)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(a)",
+      "questionText": "4(a) Cén fáth ar éirigh an t-eolaí ríomhaireachta Geoffrey Hinton as a phost le Google i mí na Bealtaine 2023? (Alt 4)",
+      "totalMarks": 3,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q4-a",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 23,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra (a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Cén fáth ar éirigh an t-eolaí ríomhaireachta Geoffrey Hinton as a phost le Google i mí na Bealtaine 2023? {3 mharc} • Chun go mbeadh saoirse aige labhairt amach faoi na contúirtí a bhaineann leis an intleacht shaorga agus faoin luas ag a bhfuil teicneolaíochtaí nua na hintleachta saorga á bhforbairt = 3 mharc • Chun go mbeadh saoirse aige labhairt amach faoi na contúirtí a bhaineann leis an intleacht shaorga = 2 mharc • Chun go mbeadh saoirse aige labhairt amach faoin luas ag a bhfuil teicneolaíochtaí nua na hintleachta saorga á bhforbairt = 2 mharc • Chun go mbeadh saoirse aige labhairt amach = 1 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-4-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 4(a)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bi",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(i)",
+      "questionText": "4(b)(i) Tabhair dhá dhúshlán atá ag baint leis an intleacht shaorga don duine aonair. (Alt 4)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q4-bi",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 23,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Tabhair dhá dhúshlán atá ag baint leis an intleacht shaorga don duine aonair. (Alt 4) (Dhá dhúshlán) {2 mharc: 1 mharc + 1 mharc} • Scaiptear bréageolas agus ábhar díobhálach = 1 mharc + 1 mharc • Tá baol ann do chearta an duine aonair chun príobháideachais • Tá baol ann do chearta an duine aonair chun sonraí a chosaint • Má bhíonn duine ag brath an iomad ar áiseanna intleachta saorga, d’fhéadfadh sé go gcuirfeadh siad bac ar chumas smaointeoireachta an duine"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23,
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-4-bi",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 4(b)(i)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bi-1",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(i) · Dúshlán 1",
+      "questionText": "4(b)(i) Tabhair dhá dhúshlán atá ag baint leis an intleacht shaorga don duine aonair. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (dúshlán 1, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q4-bi-1",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 23,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi-1",
+          "label": "Dúshlán 1",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Tabhair dhá dhúshlán atá ag baint leis an intleacht shaorga don duine aonair. (Alt 4) (Dhá dhúshlán) {2 mharc: 1 mharc + 1 mharc} • Scaiptear bréageolas agus ábhar díobhálach = 1 mharc + 1 mharc • Tá baol ann do chearta an duine aonair chun príobháideachais • Tá baol ann do chearta an duine aonair chun sonraí a chosaint • Má bhíonn duine ag brath an iomad ar áiseanna intleachta saorga, d’fhéadfadh sé go gcuirfeadh siad bac ar chumas smaointeoireachta an duine"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23,
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-4-bi-1",
+      "practiceInstruction": "Don chárta seo: tabhair freagra amháin don chuid seo (dúshlán 1, 1 mharc)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bi-2",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(i) · Dúshlán 2",
+      "questionText": "4(b)(i) Tabhair dhá dhúshlán atá ag baint leis an intleacht shaorga don duine aonair. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (dúshlán 2, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q4-bi-2",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 23,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi-2",
+          "label": "Dúshlán 2",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (b) (i) Tabhair dhá dhúshlán atá ag baint leis an intleacht shaorga don duine aonair. (Alt 4) (Dhá dhúshlán) {2 mharc: 1 mharc + 1 mharc} • Scaiptear bréageolas agus ábhar díobhálach = 1 mharc + 1 mharc • Tá baol ann do chearta an duine aonair chun príobháideachais • Tá baol ann do chearta an duine aonair chun sonraí a chosaint • Má bhíonn duine ag brath an iomad ar áiseanna intleachta saorga, d’fhéadfadh sé go gcuirfeadh siad bac ar chumas smaointeoireachta an duine"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        23,
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-4-bi-2",
+      "practiceInstruction": "Don chárta seo: tabhair freagra amháin don chuid seo (dúshlán 2, 1 mharc)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bii",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(ii)",
+      "questionText": "4(b)(ii) Scríobh síos dhá chúis a bhfuil amhras léirithe maidir leis na buntéacsanna a mbaineann an bota comhrá ChatGPT úsáid astu. (Alt 4)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q4-bii",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Scríobh síos dhá chúis a bhfuil amhras léirithe maidir leis na buntéacsanna a mbaineann an bota comhrá ChatGPT úsáid astu. (Alt 4) (Dhá chúis) {2 mharc: 1 mharc + 1 mharc} • Go bhfuil tuairimí claonta sna buntéacsanna = 1 mharc • Nach bhfuil cuid den eolas iontu cruinn = 1 mharc • Nach bhfuil cuid den eolas iontu iontaofa = 1 mharc • Tá ceist eile ann maidir le sárú an chóipchirt = 1 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-4-bii",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 4(b)(ii)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bii-1",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(ii) · Cúis 1",
+      "questionText": "4(b)(ii) Scríobh síos dhá chúis a bhfuil amhras léirithe maidir leis na buntéacsanna a mbaineann an bota comhrá ChatGPT úsáid astu. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (cúis 1, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q4-bii-1",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii-1",
+          "label": "Cúis 1",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Scríobh síos dhá chúis a bhfuil amhras léirithe maidir leis na buntéacsanna a mbaineann an bota comhrá ChatGPT úsáid astu. (Alt 4) (Dhá chúis) {2 mharc: 1 mharc + 1 mharc} • Go bhfuil tuairimí claonta sna buntéacsanna = 1 mharc • Nach bhfuil cuid den eolas iontu cruinn = 1 mharc • Nach bhfuil cuid den eolas iontu iontaofa = 1 mharc • Tá ceist eile ann maidir le sárú an chóipchirt = 1 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-4-bii-1",
+      "practiceInstruction": "Don chárta seo: tabhair freagra amháin don chuid seo (cúis 1, 1 mharc)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q4-bii-2",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 4(b)(ii) · Cúis 2",
+      "questionText": "4(b)(ii) Scríobh síos dhá chúis a bhfuil amhras léirithe maidir leis na buntéacsanna a mbaineann an bota comhrá ChatGPT úsáid astu. (Alt 4) Don chárta seo: tabhair freagra amháin don chuid seo (cúis 2, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q4-bii-2",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii-2",
+          "label": "Cúis 2",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Scríobh síos dhá chúis a bhfuil amhras léirithe maidir leis na buntéacsanna a mbaineann an bota comhrá ChatGPT úsáid astu. (Alt 4) (Dhá chúis) {2 mharc: 1 mharc + 1 mharc} • Go bhfuil tuairimí claonta sna buntéacsanna = 1 mharc • Nach bhfuil cuid den eolas iontu cruinn = 1 mharc • Nach bhfuil cuid den eolas iontu iontaofa = 1 mharc • Tá ceist eile ann maidir le sárú an chóipchirt = 1 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-4-bii-2",
+      "practiceInstruction": "Don chárta seo: tabhair freagra amháin don chuid seo (cúis 2, 1 mharc)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q5-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 5(a)",
+      "questionText": "5(a) Cén fáth a bhfuil Dearbhú Bletchley sínithe ag ocht dtír is fiche? (Alt 5)",
+      "totalMarks": 3,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q5-a",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "a",
+          "label": "Freagra (a)",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Cén fáth a bhfuil Dearbhú Bletchley sínithe ag ocht dtír is fiche? (Alt 5) {3 mharc} • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga a fhorbairt agus a úsáid go freagrach agus go sábháilte ar fud an domhain = 3 mharc • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga a fhorbairt agus a úsáid go freagrach agus go sábháilte = 2 mharc • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga • a fhorbairt agus a úsáid go freagrach ar fud an domhain = 2 mharc • Chun creat a bhunú a chinnteoidh go ndéantar teicneolaíochtaí na hintleachta saorga • a fhorbairt agus a úsáid go sábháilte ar fud an domhain = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-5-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 5(a)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q5-bi",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(i)",
+      "questionText": "5(b)(i) Cad atá leagtha amach ag rialtas na hÉireann sa Straitéis Náisiúnta um Intleacht Shaorga? (Alt 5)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q5-bi",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bi",
+          "label": "Freagra (b)(i)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(b) (i) Cad atá leagtha amach ag rialtas na hÉireann sa Straitéis Náisiúnta um Intleacht Shaorga? (Alt 5) {2 mharc} • Leagtar amach na slite ar féidir an intleacht shaorga a úsáid ar bhealach a rachaidh chun leas gheilleagar agus shochaí na tíre = 2 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-5-bi",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 5(b)(i)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q5-bii",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(ii)",
+      "questionText": "5(b)(ii) Scríobh síos dhá cheist a ardaítear i ndíospóireachtaí faoi thodhchaí na hintleachta saorga. (Alt 5)",
+      "totalMarks": 2,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q5-bii",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii",
+          "label": "Freagra (b)(ii)",
+          "kind": "award",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(ii) Scríobh síos dhá cheist a ardaítear i ndíospóireachtaí faoi thodhchaí na hintleachta saorga. (Alt 5) (Dhá cheist) {2 mharc: 1 mharc + 1 mharc} • An éireoidh le réabhlóid na hintleachta saorga? = 1 mharc • An leanfaidh luas na bhforbairtí san intleacht shaorga ar aghaidh go tapa? = 1 mharc • Cad a tharlóidh má éiríonn an intleacht shaorga níos cliste ná an duine daonna? = 1 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-5-bii",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 5(b)(ii)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q5-bii-1",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(ii) · Ceist 1",
+      "questionText": "5(b)(ii) Scríobh síos dhá cheist a ardaítear i ndíospóireachtaí faoi thodhchaí na hintleachta saorga. (Alt 5) Don chárta seo: tabhair freagra amháin don chuid seo (ceist 1, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q5-bii-1",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii-1",
+          "label": "Ceist 1",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Scríobh síos dhá cheist a ardaítear i ndíospóireachtaí faoi thodhchaí na hintleachta saorga. (Alt 5) (Dhá cheist) {2 mharc: 1 mharc + 1 mharc} • An éireoidh le réabhlóid na hintleachta saorga? = 1 mharc • An leanfaidh luas na bhforbairtí san intleacht shaorga ar aghaidh go tapa? = 1 mharc • Cad a tharlóidh má éiríonn an intleacht shaorga níos cliste ná an duine daonna? = 1 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-5-bii-1",
+      "practiceInstruction": "Don chárta seo: tabhair freagra amháin don chuid seo (ceist 1, 1 mharc)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q5-bii-2",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 5(b)(ii) · Ceist 2",
+      "questionText": "5(b)(ii) Scríobh síos dhá cheist a ardaítear i ndíospóireachtaí faoi thodhchaí na hintleachta saorga. (Alt 5) Don chárta seo: tabhair freagra amháin don chuid seo (ceist 2, 1 mharc).",
+      "totalMarks": 1,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q5-bii-2",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "bii-2",
+          "label": "Ceist 2",
+          "kind": "award",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Aon fhreagra ceart don chuid seo = 1 mharc. Ní féidir an freagra céanna a áireamh faoi dhó. (ii) Scríobh síos dhá cheist a ardaítear i ndíospóireachtaí faoi thodhchaí na hintleachta saorga. (Alt 5) (Dhá cheist) {2 mharc: 1 mharc + 1 mharc} • An éireoidh le réabhlóid na hintleachta saorga? = 1 mharc • An leanfaidh luas na bhforbairtí san intleacht shaorga ar aghaidh go tapa? = 1 mharc • Cad a tharlóidh má éiríonn an intleacht shaorga níos cliste ná an duine daonna? = 1 mharc"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-5-bii-2",
+      "practiceInstruction": "Don chárta seo: tabhair freagra amháin don chuid seo (ceist 2, 1 mharc)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q6-a",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 6(a)",
+      "questionText": "6(a) Aimsigh sampla de bhriathar sa Mhodh Coinníollach in Alt 2 agus sampla den bhriathar saor san Aimsir Láithreach in Alt 5.",
+      "totalMarks": 3,
+      "topicId": "irish-3-3",
+      "conceptId": "irish-reading-b-q6-a",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "grammar",
+          "label": "An dá mhír ghramadaí",
+          "kind": "award",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(a) Aimsigh sampla de bhriathar sa Mhodh Coinníollach in Alt 2 agus sampla den bhriathar saor san Aimsir Láithreach in Alt 5. {3 mharc: 2 mharc + 1 mharc} Tá trí mharc ag gabháil leis an gceist seo: tabharfar dhá mharc ar an gcéad mhír ghramadaí atá ceart agus marc amháin ar an gceann eile. Sampla de bhriathar sa Mhodh Coinníollach in Alt 2: a bheadh; nach mbeadh, beadh Sampla den bhriathar saor san Aimsir Láithreach in Alt 5: (go) (n)déantar; leagtar; aithnítear"
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-6-a",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 6(a).",
+      "additionalTopicIds": [
+        "irish-3-1"
+      ]
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q6-b",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 6(b)",
+      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.)",
+      "totalMarks": 12,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q6-b",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "insight-1",
+          "label": "Léargas 1",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "An léargas seo = 2 mharc; míniú i d’fhocail féin le sampla cruinn = 4 mharc. Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla. (b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.) Dhá léargas = 6 mharc + 6 mharc Léargas 1 (L1) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Léargas 2 (L2) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla/na samplaí. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. Léargais fhéideartha: Déantar cur síos ar an úsáid a bhaintear as IS sa ghnáthshaol laethúil inniu…foghlaimím faoi ChatGPT agus an t-éileamh a bhí air ón tús…tá léiriú ar chúlra agus ar stair na hintleachta saorga…tugtar léargas ar an ríomhaire Deep Blue ag fáil an lámh in uachtar ar laoch fichille an domhain…luaitear buntáistí na hintleachta saorga i dtionscail éagsúla…tugtar eolas faoi dhainséar/faoi chontúirt na hintleachta saorga…tá sé soiléir dom go bhfuil tábhacht ag baint le cosaint agus le reachtaíocht chun an intleacht shaorga a choimeád faoi smacht agus chun cearta daoine a chosaint… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        },
+        {
+          "id": "insight-2",
+          "label": "Léargas 2",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "An léargas seo = 2 mharc; míniú i d’fhocail féin le sampla cruinn = 4 mharc. Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla. (b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.) Dhá léargas = 6 mharc + 6 mharc Léargas 1 (L1) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Léargas 2 (L2) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla/na samplaí. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. Léargais fhéideartha: Déantar cur síos ar an úsáid a bhaintear as IS sa ghnáthshaol laethúil inniu…foghlaimím faoi ChatGPT agus an t-éileamh a bhí air ón tús…tá léiriú ar chúlra agus ar stair na hintleachta saorga…tugtar léargas ar an ríomhaire Deep Blue ag fáil an lámh in uachtar ar laoch fichille an domhain…luaitear buntáistí na hintleachta saorga i dtionscail éagsúla…tugtar eolas faoi dhainséar/faoi chontúirt na hintleachta saorga…tá sé soiléir dom go bhfuil tábhacht ag baint le cosaint agus le reachtaíocht chun an intleacht shaorga a choimeád faoi smacht agus chun cearta daoine a chosaint… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24,
+        25
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-6-b",
+      "practiceInstruction": "Don chárta seo: Léamhthuiscint B · Ceist 6(b)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q6-b-1",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 6(b) · Léargas 1",
+      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.) Don chárta seo: mínigh léargas amháin agus tabhair sampla cruinn as an sliocht i d’fhocail féin (6 mharc).",
+      "totalMarks": 6,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q6-b-1",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "insight-1",
+          "label": "Léargas 1",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "An léargas seo = 2 mharc; míniú i d’fhocail féin le sampla cruinn = 4 mharc. Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla. (b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.) Dhá léargas = 6 mharc + 6 mharc Léargas 1 (L1) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Léargas 2 (L2) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla/na samplaí. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. Léargais fhéideartha: Déantar cur síos ar an úsáid a bhaintear as IS sa ghnáthshaol laethúil inniu…foghlaimím faoi ChatGPT agus an t-éileamh a bhí air ón tús…tá léiriú ar chúlra agus ar stair na hintleachta saorga…tugtar léargas ar an ríomhaire Deep Blue ag fáil an lámh in uachtar ar laoch fichille an domhain…luaitear buntáistí na hintleachta saorga i dtionscail éagsúla…tugtar eolas faoi dhainséar/faoi chontúirt na hintleachta saorga…tá sé soiléir dom go bhfuil tábhacht ag baint le cosaint agus le reachtaíocht chun an intleacht shaorga a choimeád faoi smacht agus chun cearta daoine a chosaint… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24,
+        25
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-6-b-1",
+      "practiceInstruction": "Don chárta seo: mínigh léargas amháin agus tabhair sampla cruinn as an sliocht i d’fhocail féin (6 mharc)."
+    },
+    {
+      "id": "irish-2024-hl-p2-reading-b-q6-b-2",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "section": "2",
+      "questionRef": "2024 HL Paper 2 Léamhthuiscint B · Ceist 6(b) · Léargas 2",
+      "questionText": "6(b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.) Don chárta seo: mínigh léargas amháin agus tabhair sampla cruinn as an sliocht i d’fhocail féin (6 mharc).",
+      "totalMarks": 6,
+      "topicId": "irish-3-1",
+      "conceptId": "irish-reading-b-q6-b-2",
+      "paperPage": 7,
+      "paperTraceScore": 1,
+      "schemePage": 24,
+      "schemeTraceScore": 1,
+      "taskRequirements": [
+        "Léigh an sliocht iomlán a ghabhann leis an gceist. Freagair an chuid atá luaite ar an gcárta.",
+        "Úsáid an t-alt a luaitear. Glacfar le focail an tsleachta nó le do chuid focal féin, ach ní mór 6(b) a fhreagairt i d’fhocail féin."
+      ],
+      "criteria": [
+        {
+          "id": "insight-2",
+          "label": "Léargas 2",
+          "kind": "award",
+          "maxMarks": 6,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "guidanceKind": "indicative",
+          "guidance": [
+            "An léargas seo = 2 mharc; míniú i d’fhocail féin le sampla cruinn = 4 mharc. Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla. (b) Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.) Dhá léargas = 6 mharc + 6 mharc Léargas 1 (L1) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Léargas 2 (L2) = 2 mharc + míniú ar an léargas, i d’fhocail féin, le sampla cruinn as an sliocht mar thacú leis = 4 mharc Treoir: Tá ‘bunaithe ar an eolas sa sliocht’ agus ‘i d’fhocail féin’ luaite sa cheist seo. Dá bharr sin, ní mór do na hiarrthóirí an cheist a fhreagairt ina gcuid focal féin agus ní thabharfar creidiúint ar bith d’eolas nach bhfuil sa sliocht. (Ní mór Ceist 6 (b) a fhreagairt i d’fhocail féin = an treoir ar leathanach 3 den scrúdpháipéar) Gan léargas luaite/intuigthe, ní féidir glacadh leis an sampla/na samplaí. Cuir lúibíní cearnacha thart ar abairtí sa fhreagra a thógtar díreach as an sliocht. Léargais fhéideartha: Déantar cur síos ar an úsáid a bhaintear as IS sa ghnáthshaol laethúil inniu…foghlaimím faoi ChatGPT agus an t-éileamh a bhí air ón tús…tá léiriú ar chúlra agus ar stair na hintleachta saorga…tugtar léargas ar an ríomhaire Deep Blue ag fáil an lámh in uachtar ar laoch fichille an domhain…luaitear buntáistí na hintleachta saorga i dtionscail éagsúla…tugtar eolas faoi dhainséar/faoi chontúirt na hintleachta saorga…tá sé soiléir dom go bhfuil tábhacht ag baint le cosaint agus le reachtaíocht chun an intleacht shaorga a choimeád faoi smacht agus chun cearta daoine a chosaint… Nóta: Níl sé i gceist a chur in iúl go bhfuil na freagraí thuasluaite uileghabhálach ná eisiach. Is samplaí de fhreagraí féideartha atá iontu; déanfaidh na scrúdaitheoirí tuillteanas gach freagra a mheas agus bronnfar marcanna ar phointí bailí eolais eile a chuirfidh na hiarrthóirí i láthair de réir a bhfiúntais."
+          ]
+        }
+      ],
+      "markingGuideNote": "SEC allocation for this task. Alternative correct answers in the scheme are answers to one task, not extra task routes. Retained whole questions and their practice parts are overlapping exercises; their marks are not added to infer the paper total.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Léamhthuiscint B",
+        "title": "An Intleacht Shaorga - na deiseanna agus na dúshláin a bhaineann léi",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "Official source as printed in the State Examinations Commission question paper.",
+        "presentationNote": "Shown page-for-page from the official examination paper; swipe to move between pages."
+      },
+      "paperFileid": "LC001ALP200IV",
+      "schemePages": [
+        24,
+        25
+      ],
+      "reviewedAt": "2026-10-07",
+      "reviewedPaperPages": [
+        6,
+        7
+      ],
+      "atlasQuestionId": "R-B-6-b-2",
+      "practiceInstruction": "Don chárta seo: mínigh léargas amháin agus tabhair sampla cruinn as an sliocht i d’fhocail féin (6 mharc)."
     }
   ]
 }

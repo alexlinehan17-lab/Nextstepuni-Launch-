@@ -6,7 +6,7 @@ Higher, Ordinary and Foundation Level. The archive is **not complete**.
 backlog; card presence is never proof that every part or answer route is covered.
 
 The legacy generator retains all 400 Higher/Ordinary card identities from 2021–2025
-and adds seven reviewed Higher routes (407 cards). Its
+and adds seven reviewed Higher literature routes plus 44 reading tasks (451 cards). Its
 `irish-census.json` is a generated ledger, not an independent completeness audit.
 Known omitted alternatives and unsplit reading tasks still require review. The
 five additional-poetry Q4F cards have separately documented source corrections.
@@ -19,6 +19,15 @@ corrections. Each poetry card exposes 13/5/7 knowledge marks and one shared
 five-mark Gaeilge award. Nineteen exact Bank/Atlas task identities, source
 hashes and raw selection decisions are recorded in `irish-higher-route-review.json`.
 This is a partial review: neither Higher paper is certified complete.
+
+`irish_reading.py` reviews all 100 reading marks in 2024 Higher Paper 2. It adds
+44 practice cards and repairs the twelve retained whole-question rubrics, with
+56 exact Bank/Atlas joins. Thirty-nine non-overlapping tasks cover the section;
+retained whole questions and complete subparts overlap these tasks. Grammar
+pairs stay together at 0/2/3 because the first correct item earns two marks.
+A6(b) retains the shared opinion condition; B6(b) exposes both six-mark insights.
+Every task includes both passage pages. `irish-reading-review.json` pins the
+boundaries, hashes and raw selection decisions; this is not a full-paper review.
 
 `irish_foundation.py` adds the visually reviewed 2025 Foundation paper: fourteen
 listening parts, ten matching parts, thirty reading parts, six whole writing
@@ -66,7 +75,9 @@ Reviewed Higher routes also carry question and scheme pages. Their Atlas route
 instruction remains visible above the paper on phones. Prescribed prose has an
 archive shelf linked to the reviewed works' existing canonical nodes; it is not
 filed as optional prose. Existing Atlas identities and the twelve original
-reading-answer records in each Higher sidecar remain intact.
+reading-answer records in each Higher sidecar retain their original fields.
+Reviewed reading display regions are additive: they show the full passage and
+all relevant scheme pages without changing frozen identities or original crops.
 
 ## Rebuild and verification
 
@@ -82,7 +93,7 @@ node scripts/paper-trail/build-irish-exam-topic-crosswalk.mjs
 node scripts/paper-trail/topic-tags/build-tags.mjs
 python3 scripts/markbank/authoring/irish_inventory.py --check
 npm run typecheck
-npx vitest run test/markBankIrish.test.ts test/markBankIrishHigherRoutes.test.ts test/markBankIrishFoundation.test.ts test/markBankSession.test.tsx test/markBankProfileDefaults.test.ts test/irishExamTopics.test.ts test/markBankCardPreservation.test.ts test/curriculumRegistry.test.ts test/markBankDeck.test.ts
+npx vitest run test/markBankIrish.test.ts test/markBankIrishReading.test.ts test/markBankIrishHigherRoutes.test.ts test/markBankIrishFoundation.test.ts test/markBankSession.test.tsx test/markBankProfileDefaults.test.ts test/irishExamTopics.test.ts test/markBankCardPreservation.test.ts test/curriculumRegistry.test.ts test/markBankDeck.test.ts
 ```
 
 The Foundation generator fails if the reviewed PDFs change, if an extracted

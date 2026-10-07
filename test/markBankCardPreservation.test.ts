@@ -55,6 +55,11 @@ const addedIrishRoutes = new Set([
   'irish-2022-hl-p2-poetry-3b-a-mothuchain',
   'irish-2024-hl-p2-prose-2a-a-an-lasair-choille',
   'irish-2024-hl-p2-prose-2b-a-drama',
+  ...['a','b'].flatMap(passage => [1,2,3,4,5].flatMap(number =>
+    ['a','bi','bii'].map(part => `irish-2024-hl-p2-reading-${passage}-q${number}-${part}`))),
+  ...['a','b'].flatMap(passage => ['a','b'].map(part => `irish-2024-hl-p2-reading-${passage}-q6-${part}`)),
+  ...['1-bi','4-bi','4-bii','5-bii'].flatMap(key => [1,2].map(slot => `irish-2024-hl-p2-reading-b-q${key}-${slot}`)),
+  ...[1,2].map(slot => `irish-2024-hl-p2-reading-b-q6-b-${slot}`),
 ]);
 
 const decks = [

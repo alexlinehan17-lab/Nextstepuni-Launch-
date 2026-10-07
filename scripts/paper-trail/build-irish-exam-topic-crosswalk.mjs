@@ -705,13 +705,26 @@ for (const card of reviewedHigherTasks) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
   if (!paper) throw new Error('Unindexed reviewed Higher task: ' + card.id);
   const existing = paper.q.find(q => q.n === card.atlasQuestionId);
-  if (existing?.baseline) throw new Error('Reviewed task collides with frozen identity: ' + card.id);
+  const baseTopicIds = card.id.includes('-reading-')
+    ? card.topicId === 'irish-3-3' ? [H.grammar]
+      : (card.additionalTopicIds ?? []).includes('irish-3-3') ? [H.reading,H.grammar] : [H.reading]
+    : [card.atlasQuestionId.startsWith('P-2A-') ? H.prescribedProse
+      : card.atlasQuestionId.startsWith('P-') ? H.prose : H.poetry];
+  if (existing?.baseline) {
+    // Frozen reading identities/tags remain. The additive regions restore the
+    // entire passage and the reviewed scheme without renumbering the question.
+    if (!card.id.includes('-reading-')) throw new Error('Reviewed task collides with frozen identity: ' + card.id);
+    existing.anchor.paperRegion = card.reviewedPaperPages.map(p => ({p,r:[0,0,1,1]}));
+    existing.reviewedSchemePages = card.schemePages;
+    existing.baseTopicIds = [...new Set([...existing.baseTopicIds,...baseTopicIds])];
+    paper.hasReviewedHigherTasks = true;
+    continue;
+  }
   if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
   addQuestion(paper, {
     n: card.atlasQuestionId,
     label: card.questionRef.replace(/^\d{4} HL Paper 2 /, ''),
-    baseTopicIds: [card.atlasQuestionId.startsWith('P-2A-') ? H.prescribedProse
-      : card.atlasQuestionId.startsWith('P-') ? H.prose : H.poetry],
+    baseTopicIds,
     anchor: { pP: card.reviewedPaperPages[0], pY: [0, 1],
       paperRegion: card.reviewedPaperPages.map(p => ({ p, r: [0, 0, 1, 1] })),
     },
@@ -720,8 +733,8 @@ for (const card of reviewedHigherTasks) {
   question.primary = card.topicId;
   delete question.secondary;
   question.reviewedSchemePages = card.schemePages;
-  question.practiceInstruction = 'Don chárta seo: ' + question.label + '.'
-    + (card.selectedRoute ? ' Freagair (i), (ii) agus (iii).' : '');
+  question.practiceInstruction = card.practiceInstruction ?? ('Don chárta seo: ' + question.label + '.'
+    + (card.selectedRoute ? ' Freagair (i), (ii) agus (iii).' : ''));
   paper.hasReviewedHigherTasks = true;
 }
 const reviewedFoundation = papers.find(p => p.year === 2025 && p.level === 'foundation');
@@ -1036,13 +1049,17 @@ for (const paper of papers) {
     answerMap.schemeFileid = paper === reviewedFoundation ? paper.fileid : 'LC001ALP000IV.pdf';
     answerMap.band = paper === reviewedFoundation ? [3, 16] : [27, 41];
     answerMap.maxCropPages = 10;
-    answerMap.q = artifact.q.filter(q => paper.q.find(question => question.n === q.n).reviewedSchemePages).map(q => ({ ...q,
-      region: paper.q.find(question => question.n === q.n).reviewedSchemePages.map(p => ({ p, r: [0, 0, 1, 1] })),
-      mode: 'crop', conf: 1,
-    }));
+    answerMap.q = artifact.q.filter(q => paper.q.find(question => question.n === q.n).reviewedSchemePages).map(q => {
+      const question = paper.q.find(question => question.n === q.n);
+      const region = question.reviewedSchemePages.map(p => ({ p, r: [0, 0, 1, 1] }));
+      const previous = question.baseline && paper.sidecar?.q.find(old => old.n === q.n);
+      return previous
+        ? { ...previous, paperRegion: q.paperRegion, schemeRegion: region, printOrder: q.printOrder }
+        : { ...q, region, mode: 'crop', conf: 1 };
+    });
     if (paper.hasReviewedHigherTasks) {
-      // Preserve the prior reading-answer identities and regions verbatim.
-      // Only the literature routes above receive this batch's new review.
+      // Preserve every prior answer identity. Frozen fields remain intact;
+      // reviewed display corrections use the additive region fields above.
       const reviewedIds = new Set(answerMap.q.map(q => q.n));
       answerMap.q = [...(paper.sidecar?.q ?? []).filter(q => !reviewedIds.has(q.n)), ...answerMap.q];
       answerMap.band = [Math.min(paper.sidecar?.band?.[0] ?? 27, 27), Math.max(paper.sidecar?.band?.[1] ?? 41, 41)];

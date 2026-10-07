@@ -9,14 +9,14 @@ real SEC recording, never a transcript that would reveal the answers.
     python3 scripts/markbank/authoring/irish_cards.py
     python3 scripts/markbank/authoring/irish_cards.py --check
 
-This generator currently emits 407 cards across twenty papers; that is NOT a
+This generator currently emits 451 cards across twenty papers; that is NOT a
 source-independent completeness claim. The October 2026 review found omitted
 internal alternatives and truncated compulsory parts. See irish_inventory.py
 for the full Paper Trail scope, including older papers and Foundation Level.
 
 The existing output counts are:
 
-  * 222 Higher Level (215 legacy identities + seven reviewed internal routes)
+  * 266 Higher Level (215 legacy identities + 51 reviewed routes/reading tasks)
   * 185 Ordinary Level (15 Paper 1 + 22 Paper 2 per year)
 
 The generated runtime JSON and the census ledger are committed because the
@@ -37,6 +37,7 @@ from typing import Iterable, Sequence
 
 import fitz
 from irish_higher_routes import apply_review
+from irish_reading import apply_reading_review
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -1299,11 +1300,14 @@ def main() -> int:
     parser.add_argument('--check', action='store_true')
     args = parser.parse_args()
     cards, route_reviews = apply_review(build_corpus())
+    cards, reading_review = apply_reading_review(cards)
     manifest = serialise(cards)
     ledger = json.dumps(census(cards), ensure_ascii=False, indent=2) + '\n'
     schemes = scheme_text_exports()
     schemes[os.path.join(ROOT, 'scripts/markbank/authored/irish-higher-route-review.json')] = json.dumps(
         route_reviews, ensure_ascii=False, indent=2) + '\n'
+    schemes[os.path.join(ROOT, 'scripts/markbank/authored/irish-reading-review.json')] = json.dumps(
+        reading_review, ensure_ascii=False, indent=2) + '\n'
     if args.check:
         existing_manifest = open(OUT, encoding='utf-8').read() if os.path.exists(OUT) else ''
         existing_census = open(CENSUS_OUT, encoding='utf-8').read() if os.path.exists(CENSUS_OUT) else ''

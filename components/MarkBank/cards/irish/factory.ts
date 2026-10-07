@@ -28,6 +28,7 @@ interface AuthoredIrishCard {
   questionText: string;
   totalMarks: number;
   topicId: string;
+  additionalTopicIds?: string[];
   conceptId: string;
   paperFileid: string;
   schemePage: number;
@@ -54,6 +55,7 @@ const makeCard = (card: AuthoredIrishCard): SecRubricCard => ({
   subjectId: 'irish',
   level: card.level,
   topicId: card.topicId,
+  additionalTopicIds: card.additionalTopicIds ? [...card.additionalTopicIds] : undefined,
   conceptId: card.conceptId,
   source: 'sec',
   kind: 'rubric',

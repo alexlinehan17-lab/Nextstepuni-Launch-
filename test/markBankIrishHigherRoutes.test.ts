@@ -12,7 +12,8 @@ import { resolveSibling, answerMapUrls } from '../components/PaperTrail/vaultRes
 import { tariffReconciles } from '../types/markBank';
 
 const byId = new Map(CARDS.map(card => [card.id,card]));
-const reviewed = authored.cards.filter(card => 'atlasQuestionId' in card);
+const routeIds = new Set(reviews.flatMap(review => review.cardIds));
+const reviewed = authored.cards.filter(card => routeIds.has(card.id));
 
 describe('visually reviewed Higher Irish prose and optional poetry routes', () => {
   it('retains both prescribed works and both optional genres with their own full prompts and tariffs', () => {
@@ -108,7 +109,8 @@ describe('visually reviewed Higher Irish prose and optional poetry routes', () =
       const resolved = resolveSibling({subjectId:'irish',year,level:'higher',lang:'iv',paperKey:'p2',fileid:'LC001ALP200IV.pdf',n:'P-2A-a-an-lasair-choille'})!;
       expect(answerMapUrls(resolved)[0]).toBe(`/paper-answers/${year}/LC001ALP200IV.pdf.json`);
       const map = JSON.parse(readFileSync(`public/paper-answers/${year}/LC001ALP200IV.pdf.json`,'utf8'));
-      const legacy = map.q.filter((q: { n: string }) => /^\d+$/.test(q.n));
+      const legacy = map.q.filter((q: { n: string }) => /^\d+$/.test(q.n))
+        .map(({paperRegion,schemeRegion,printOrder,...original}: Record<string, unknown>) => original);
       expect(legacy).toHaveLength(12);
       expect(createHash('sha256').update(JSON.stringify(legacy)).digest('hex')).toBe(year === 2022
         ? '1e563fe88d83be836a4a4d3d02b9fa50d8db754d0f2e59218720173f5c47fdef'

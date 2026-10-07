@@ -1,0 +1,326 @@
+{
+  "year": 2024,
+  "level": "higher",
+  "paperFileid": "LC001ALP200IV.pdf",
+  "paperSha256": "5302117a0e3dbbf46d0e635680fd78ceb00d46d89e54cc3a04d4f7d9506cd2ca",
+  "schemeSha256": "c2d30b98b2a6e6b2747b8479b9df527609652b52ce5e352f356fab9bdac1c27e",
+  "reviewDate": "2026-10-07",
+  "reviewedPaperPages": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "reviewedSchemePages": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "scope": "Complete reading-section boundary review only; literature and full-paper completion remain pending.",
+  "selectionDecisions": [
+    {
+      "key": "A1a",
+      "quote": "Scríobh síos dhá shaintréith ar leith atá ag baint le gach ceann de na trí oileán is fiche amach ó chósta na hÉireann ar a bhfuil an polasaí Ár nOileáin Bheo dírithe. (Alt 1)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position."
+    },
+    {
+      "key": "A2bi",
+      "quote": "Luaigh beart amháin atá sa pholasaí maidir le cúrsaí fostaíochta ar na hoileáin. (Alt 2)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position."
+    },
+    {
+      "key": "A3a",
+      "quote": "Scríobh síos dhá dhúshlán a bhaineann le soláthar cuí tithíochta ar na hoileáin a luadh le linn an phróisis comhairliúcháin. (Alt 3)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position."
+    },
+    {
+      "key": "A3bi",
+      "quote": "Luaigh moladh amháin atá sa pholasaí nua chun cúrsaí tithíochta a fheabhsú ar na hoileáin. (Alt 3)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position."
+    },
+    {
+      "key": "A3bii",
+      "quote": "Scríobh síos beart amháin atá sa pholasaí a chinnteoidh go mbeidh áiseanna cuí oideachais ar fáil do phobail na n-oileán. (Alt 3)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position."
+    },
+    {
+      "key": "A4a",
+      "quote": "Tabhair dhá chúis a mealltar a lán turasóirí go dtí na hoileáin. (Alt 4)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position."
+    },
+    {
+      "key": "A4bi",
+      "quote": "Scríobh síos aidhm amháin a bheidh leis an bhfeachtas margaíochta a fhorbróidh Fáilte Éireann do na hoileáin. (Alt 4)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position."
+    },
+    {
+      "key": "A5a",
+      "quote": "Scríobh síos dhá ghealltanas atá tugtha sa pholasaí nua maidir le seirbhísí iompair farraige agus aeir chuig na hoileáin. (Alt 5)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position."
+    },
+    {
+      "key": "A5bi",
+      "quote": "Luaigh cuspóir amháin atá ag an rialtas sa pholasaí seo chun seirbhísí sláinte a fheabhsú do phobail na n-oileán. (Alt 5)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position."
+    },
+    {
+      "key": "A6b",
+      "quote": "Bunaithe ar an eolas sa sliocht thuas, an dóigh leat gur polasaí maith é Ár nOileáin Bheo? Tabhair dhá phointe eolais, i d’fhocail féin, as an sliocht, mar thacaíocht le do fhreagra. (Is leor 60 focal.)",
+      "reason": "Two own-word supporting points depend on one shared opinion; keep the full 12-mark response."
+    },
+    {
+      "key": "B1a",
+      "quote": "Tabhair dhá chúis ar roghnaigh an foilsitheoir foclóirí Collins an téarma ‘intleacht shaorga’ mar théarma na bliana in 2023. (Alt 1)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position. “roghnaigh” refers to the dictionary publisher’s action, not a choice offered to the candidate."
+    },
+    {
+      "key": "B1bi",
+      "quote": "Luaigh dhá shampla den úsáid a bhaineann daoine as an intleacht shaorga gach lá. (Alt 1)",
+      "reason": "Two required open answers, each priced at one mark. Add both one-mark practice slots; retain the complete two-answer part."
+    },
+    {
+      "key": "B3a",
+      "quote": "Scríobh síos dhá dheis a bhaineann leis an intleacht shaorga i dtionscal an ghnó agus na déantúsaíochta. (Alt 3)",
+      "reason": "A source-retrieval instruction, not a printed finite menu of different tasks. Accepted scheme answers are examples/alternatives to this same task. Two-answer three-mark allocations stay together because two marks go to the first correct answer, not a fixed printed position."
+    },
+    {
+      "key": "B4bi",
+      "quote": "Tabhair dhá dhúshlán atá ag baint leis an intleacht shaorga don duine aonair. (Alt 4)",
+      "reason": "Two required open answers, each priced at one mark. Add both one-mark practice slots; retain the complete two-answer part."
+    },
+    {
+      "key": "B4bii",
+      "quote": "Scríobh síos dhá chúis a bhfuil amhras léirithe maidir leis na buntéacsanna a mbaineann an bota comhrá ChatGPT úsáid astu. (Alt 4)",
+      "reason": "Two required open answers, each priced at one mark. Add both one-mark practice slots; retain the complete two-answer part."
+    },
+    {
+      "key": "B5bii",
+      "quote": "Scríobh síos dhá cheist a ardaítear i ndíospóireachtaí faoi thodhchaí na hintleachta saorga. (Alt 5)",
+      "reason": "Two required open answers, each priced at one mark. Add both one-mark practice slots; retain the complete two-answer part."
+    },
+    {
+      "key": "B6b",
+      "quote": "Bunaithe ar an eolas sa sliocht thuas, mínigh dhá léargas a fhaigheann tú ar an intleacht shaorga. Bíodh sampla amháin as an sliocht agat, i d’fhocail féin, ag tacú le gach ceann den dá léargas a luann tú i do fhreagra. (Is leor 60 focal.)",
+      "reason": "Two open insights, independently priced at six each; retain both one-insight practice slots and the complete response."
+    }
+  ],
+  "cardIds": [
+    "irish-2024-hl-p2-reading-a-q1-a",
+    "irish-2024-hl-p2-reading-a-q1-bi",
+    "irish-2024-hl-p2-reading-a-q1-bii",
+    "irish-2024-hl-p2-reading-a-q1",
+    "irish-2024-hl-p2-reading-a-q2-a",
+    "irish-2024-hl-p2-reading-a-q2-bi",
+    "irish-2024-hl-p2-reading-a-q2-bii",
+    "irish-2024-hl-p2-reading-a-q2",
+    "irish-2024-hl-p2-reading-a-q3-a",
+    "irish-2024-hl-p2-reading-a-q3-bi",
+    "irish-2024-hl-p2-reading-a-q3-bii",
+    "irish-2024-hl-p2-reading-a-q3",
+    "irish-2024-hl-p2-reading-a-q4-a",
+    "irish-2024-hl-p2-reading-a-q4-bi",
+    "irish-2024-hl-p2-reading-a-q4-bii",
+    "irish-2024-hl-p2-reading-a-q4",
+    "irish-2024-hl-p2-reading-a-q5-a",
+    "irish-2024-hl-p2-reading-a-q5-bi",
+    "irish-2024-hl-p2-reading-a-q5-bii",
+    "irish-2024-hl-p2-reading-a-q5",
+    "irish-2024-hl-p2-reading-a-q6-a",
+    "irish-2024-hl-p2-reading-a-q6-b",
+    "irish-2024-hl-p2-reading-a-q6",
+    "irish-2024-hl-p2-reading-b-q1-a",
+    "irish-2024-hl-p2-reading-b-q1-bi",
+    "irish-2024-hl-p2-reading-b-q1-bi-1",
+    "irish-2024-hl-p2-reading-b-q1-bi-2",
+    "irish-2024-hl-p2-reading-b-q1-bii",
+    "irish-2024-hl-p2-reading-b-q1",
+    "irish-2024-hl-p2-reading-b-q2-a",
+    "irish-2024-hl-p2-reading-b-q2-bi",
+    "irish-2024-hl-p2-reading-b-q2-bii",
+    "irish-2024-hl-p2-reading-b-q2",
+    "irish-2024-hl-p2-reading-b-q3-a",
+    "irish-2024-hl-p2-reading-b-q3-bi",
+    "irish-2024-hl-p2-reading-b-q3-bii",
+    "irish-2024-hl-p2-reading-b-q3",
+    "irish-2024-hl-p2-reading-b-q4-a",
+    "irish-2024-hl-p2-reading-b-q4-bi",
+    "irish-2024-hl-p2-reading-b-q4-bi-1",
+    "irish-2024-hl-p2-reading-b-q4-bi-2",
+    "irish-2024-hl-p2-reading-b-q4-bii",
+    "irish-2024-hl-p2-reading-b-q4-bii-1",
+    "irish-2024-hl-p2-reading-b-q4-bii-2",
+    "irish-2024-hl-p2-reading-b-q4",
+    "irish-2024-hl-p2-reading-b-q5-a",
+    "irish-2024-hl-p2-reading-b-q5-bi",
+    "irish-2024-hl-p2-reading-b-q5-bii",
+    "irish-2024-hl-p2-reading-b-q5-bii-1",
+    "irish-2024-hl-p2-reading-b-q5-bii-2",
+    "irish-2024-hl-p2-reading-b-q5",
+    "irish-2024-hl-p2-reading-b-q6-a",
+    "irish-2024-hl-p2-reading-b-q6-b",
+    "irish-2024-hl-p2-reading-b-q6-b-1",
+    "irish-2024-hl-p2-reading-b-q6-b-2",
+    "irish-2024-hl-p2-reading-b-q6"
+  ],
+  "addedCardIds": [
+    "irish-2024-hl-p2-reading-a-q1-a",
+    "irish-2024-hl-p2-reading-a-q1-bi",
+    "irish-2024-hl-p2-reading-a-q1-bii",
+    "irish-2024-hl-p2-reading-a-q2-a",
+    "irish-2024-hl-p2-reading-a-q2-bi",
+    "irish-2024-hl-p2-reading-a-q2-bii",
+    "irish-2024-hl-p2-reading-a-q3-a",
+    "irish-2024-hl-p2-reading-a-q3-bi",
+    "irish-2024-hl-p2-reading-a-q3-bii",
+    "irish-2024-hl-p2-reading-a-q4-a",
+    "irish-2024-hl-p2-reading-a-q4-bi",
+    "irish-2024-hl-p2-reading-a-q4-bii",
+    "irish-2024-hl-p2-reading-a-q5-a",
+    "irish-2024-hl-p2-reading-a-q5-bi",
+    "irish-2024-hl-p2-reading-a-q5-bii",
+    "irish-2024-hl-p2-reading-a-q6-a",
+    "irish-2024-hl-p2-reading-a-q6-b",
+    "irish-2024-hl-p2-reading-b-q1-a",
+    "irish-2024-hl-p2-reading-b-q1-bi",
+    "irish-2024-hl-p2-reading-b-q1-bi-1",
+    "irish-2024-hl-p2-reading-b-q1-bi-2",
+    "irish-2024-hl-p2-reading-b-q1-bii",
+    "irish-2024-hl-p2-reading-b-q2-a",
+    "irish-2024-hl-p2-reading-b-q2-bi",
+    "irish-2024-hl-p2-reading-b-q2-bii",
+    "irish-2024-hl-p2-reading-b-q3-a",
+    "irish-2024-hl-p2-reading-b-q3-bi",
+    "irish-2024-hl-p2-reading-b-q3-bii",
+    "irish-2024-hl-p2-reading-b-q4-a",
+    "irish-2024-hl-p2-reading-b-q4-bi",
+    "irish-2024-hl-p2-reading-b-q4-bi-1",
+    "irish-2024-hl-p2-reading-b-q4-bi-2",
+    "irish-2024-hl-p2-reading-b-q4-bii",
+    "irish-2024-hl-p2-reading-b-q4-bii-1",
+    "irish-2024-hl-p2-reading-b-q4-bii-2",
+    "irish-2024-hl-p2-reading-b-q5-a",
+    "irish-2024-hl-p2-reading-b-q5-bi",
+    "irish-2024-hl-p2-reading-b-q5-bii",
+    "irish-2024-hl-p2-reading-b-q5-bii-1",
+    "irish-2024-hl-p2-reading-b-q5-bii-2",
+    "irish-2024-hl-p2-reading-b-q6-a",
+    "irish-2024-hl-p2-reading-b-q6-b",
+    "irish-2024-hl-p2-reading-b-q6-b-1",
+    "irish-2024-hl-p2-reading-b-q6-b-2"
+  ],
+  "atomicCardIds": [
+    "irish-2024-hl-p2-reading-a-q1-a",
+    "irish-2024-hl-p2-reading-a-q1-bi",
+    "irish-2024-hl-p2-reading-a-q1-bii",
+    "irish-2024-hl-p2-reading-a-q2-a",
+    "irish-2024-hl-p2-reading-a-q2-bi",
+    "irish-2024-hl-p2-reading-a-q2-bii",
+    "irish-2024-hl-p2-reading-a-q3-a",
+    "irish-2024-hl-p2-reading-a-q3-bi",
+    "irish-2024-hl-p2-reading-a-q3-bii",
+    "irish-2024-hl-p2-reading-a-q4-a",
+    "irish-2024-hl-p2-reading-a-q4-bi",
+    "irish-2024-hl-p2-reading-a-q4-bii",
+    "irish-2024-hl-p2-reading-a-q5-a",
+    "irish-2024-hl-p2-reading-a-q5-bi",
+    "irish-2024-hl-p2-reading-a-q5-bii",
+    "irish-2024-hl-p2-reading-a-q6-a",
+    "irish-2024-hl-p2-reading-a-q6-b",
+    "irish-2024-hl-p2-reading-b-q1-a",
+    "irish-2024-hl-p2-reading-b-q1-bi-1",
+    "irish-2024-hl-p2-reading-b-q1-bi-2",
+    "irish-2024-hl-p2-reading-b-q1-bii",
+    "irish-2024-hl-p2-reading-b-q2-a",
+    "irish-2024-hl-p2-reading-b-q2-bi",
+    "irish-2024-hl-p2-reading-b-q2-bii",
+    "irish-2024-hl-p2-reading-b-q3-a",
+    "irish-2024-hl-p2-reading-b-q3-bi",
+    "irish-2024-hl-p2-reading-b-q3-bii",
+    "irish-2024-hl-p2-reading-b-q4-a",
+    "irish-2024-hl-p2-reading-b-q4-bi-1",
+    "irish-2024-hl-p2-reading-b-q4-bi-2",
+    "irish-2024-hl-p2-reading-b-q4-bii-1",
+    "irish-2024-hl-p2-reading-b-q4-bii-2",
+    "irish-2024-hl-p2-reading-b-q5-a",
+    "irish-2024-hl-p2-reading-b-q5-bi",
+    "irish-2024-hl-p2-reading-b-q5-bii-1",
+    "irish-2024-hl-p2-reading-b-q5-bii-2",
+    "irish-2024-hl-p2-reading-b-q6-a",
+    "irish-2024-hl-p2-reading-b-q6-b-1",
+    "irish-2024-hl-p2-reading-b-q6-b-2"
+  ],
+  "retainedWholeQuestionMembers": {
+    "A1": [
+      "irish-2024-hl-p2-reading-a-q1-a",
+      "irish-2024-hl-p2-reading-a-q1-bi",
+      "irish-2024-hl-p2-reading-a-q1-bii"
+    ],
+    "A2": [
+      "irish-2024-hl-p2-reading-a-q2-a",
+      "irish-2024-hl-p2-reading-a-q2-bi",
+      "irish-2024-hl-p2-reading-a-q2-bii"
+    ],
+    "A3": [
+      "irish-2024-hl-p2-reading-a-q3-a",
+      "irish-2024-hl-p2-reading-a-q3-bi",
+      "irish-2024-hl-p2-reading-a-q3-bii"
+    ],
+    "A4": [
+      "irish-2024-hl-p2-reading-a-q4-a",
+      "irish-2024-hl-p2-reading-a-q4-bi",
+      "irish-2024-hl-p2-reading-a-q4-bii"
+    ],
+    "A5": [
+      "irish-2024-hl-p2-reading-a-q5-a",
+      "irish-2024-hl-p2-reading-a-q5-bi",
+      "irish-2024-hl-p2-reading-a-q5-bii"
+    ],
+    "A6": [
+      "irish-2024-hl-p2-reading-a-q6-a",
+      "irish-2024-hl-p2-reading-a-q6-b"
+    ],
+    "B1": [
+      "irish-2024-hl-p2-reading-b-q1-a",
+      "irish-2024-hl-p2-reading-b-q1-bi",
+      "irish-2024-hl-p2-reading-b-q1-bii"
+    ],
+    "B2": [
+      "irish-2024-hl-p2-reading-b-q2-a",
+      "irish-2024-hl-p2-reading-b-q2-bi",
+      "irish-2024-hl-p2-reading-b-q2-bii"
+    ],
+    "B3": [
+      "irish-2024-hl-p2-reading-b-q3-a",
+      "irish-2024-hl-p2-reading-b-q3-bi",
+      "irish-2024-hl-p2-reading-b-q3-bii"
+    ],
+    "B4": [
+      "irish-2024-hl-p2-reading-b-q4-a",
+      "irish-2024-hl-p2-reading-b-q4-bi",
+      "irish-2024-hl-p2-reading-b-q4-bii"
+    ],
+    "B5": [
+      "irish-2024-hl-p2-reading-b-q5-a",
+      "irish-2024-hl-p2-reading-b-q5-bi",
+      "irish-2024-hl-p2-reading-b-q5-bii"
+    ],
+    "B6": [
+      "irish-2024-hl-p2-reading-b-q6-a",
+      "irish-2024-hl-p2-reading-b-q6-b"
+    ]
+  },
+  "boundaries": [
+    "30 printed (a)/(b)(i)/(b)(ii) tasks; four two-answer tasks also expose eight independent one-mark slots.",
+    "Two grammar pairs stay whole at 3 marks: 0/2/3, with no invented fixed first/second tariff.",
+    "A6(b) stays whole: shared opinion=2 plus supporting points=5+5; no opinion means no supporting-point credit.",
+    "B6(b) has two independent six-mark insights and a retained complete twelve-mark response.",
+    "39 non-overlapping atomic tasks total 100 marks. The 12 historical whole questions and five complete subparts overlap these practice tasks."
+  ],
+  "sourcePolicy": "Every task includes both complete passage pages. The original full-response sixty-word guidance is retained; no per-insight word limit is invented."
+}
