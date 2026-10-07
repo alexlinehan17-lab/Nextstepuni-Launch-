@@ -30,11 +30,11 @@
       "higher",
       "ordinary"
     ],
-    "runtimeCards": 996,
-    "authoredCards": 1009,
+    "runtimeCards": 1049,
+    "authoredCards": 1062,
     "authoredNotInRuntime": 13,
-    "reviewedPaperEditions": 8,
-    "reviewedMarkedTasks": 325
+    "reviewedPaperEditions": 9,
+    "reviewedMarkedTasks": 378
   },
   "authoredNotInRuntime": [
     "maths-2021-ol-p1-q2-b",
@@ -404,6 +404,11 @@
       "reviewedTaskCount": 42,
       "selectionCandidates": [
         {
+          "id": "3:79a0a4e7ab83698c",
+          "page": 3,
+          "context": "uestions Answer questions as follows: • any seven questions from Section A • any two questions from Section B Write your Examination Number"
+        },
+        {
           "id": "3:10caa142a6918730",
           "page": 3,
           "context": " • any seven questions from Section A • any two questions from Section B Write your Examination Number in the box on the front cover. Wri"
@@ -753,6 +758,11 @@
       "reviewed": true,
       "reviewedTaskCount": 42,
       "selectionCandidates": [
+        {
+          "id": "3:79a0a4e7ab83698c",
+          "page": 3,
+          "context": "uestions Answer questions as follows: • any seven questions from Section A • any two questions from Section B Write your Examination Number"
+        },
         {
           "id": "3:10caa142a6918730",
           "page": 3,
@@ -1114,6 +1124,11 @@
       "reviewedTaskCount": 38,
       "selectionCandidates": [
         {
+          "id": "3:79a0a4e7ab83698c",
+          "page": 3,
+          "context": "uestions Answer questions as follows: • any seven questions from Section A • any two questions from Section B Write your Examination Number"
+        },
+        {
           "id": "3:1896bd7d9c4fd46c",
           "page": 3,
           "context": " • any seven questions from Section A • any two questions from Section B Write your Examination Number into the box on the front cover. W"
@@ -1414,6 +1429,11 @@
       "reviewedTaskCount": 35,
       "selectionCandidates": [
         {
+          "id": "3:79a0a4e7ab83698c",
+          "page": 3,
+          "context": "uestions Answer questions as follows: • any seven questions from Section A • any two questions from Section B Write your Examination Number"
+        },
+        {
           "id": "3:1896bd7d9c4fd46c",
           "page": 3,
           "context": " • any seven questions from Section A • any two questions from Section B Write your Examination Number into the box on the front cover. W"
@@ -1705,8 +1725,8 @@
       "schemeAvailable": true,
       "paperPages": 32,
       "answerSidecarAvailable": true,
-      "reviewed": false,
-      "reviewedTaskCount": 0,
+      "reviewed": true,
+      "reviewedTaskCount": 53,
       "selectionCandidates": [
         {
           "id": "3:f1713f7429cb3cac",

@@ -43366,5 +43366,1460 @@
    }
   ],
   "notes": "Independently visually checked against the 2023 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q1-a-i",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-a-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q1(a)(i)",
+  "stem": "Eleven customers were asked how long, to the nearest minute, they had spent in a particular shop. Their answers are shown in the stem and leaf diagram below.",
+  "questionText": "Write down the mode of the data.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q1-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Mode = 10 [minutes]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q1-a-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-a-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q1(a)(ii)",
+  "stem": "Eleven customers were asked how long, to the nearest minute, they had spent in a particular shop. Their answers are shown in the stem and leaf diagram below.",
+  "questionText": "Work out the range of the data.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q1-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Range = 30 − 6 = 24 [minutes]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q1-a-iii",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-a-iii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q1(a)(iii)",
+  "stem": "Eleven customers were asked how long, to the nearest minute, they had spent in a particular shop. Their answers are shown in the stem and leaf diagram below.",
+  "questionText": "Write down the median of the data.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q1-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "6th term = 15 [minutes]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q1-b-i",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-b-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q1(b)(i)",
+  "stem": "Eleven customers were asked how long, to the nearest minute, they had spent in a particular shop. Their answers are shown in the stem and leaf diagram below. Another customer was in the shop for 34 minutes.",
+  "questionText": "Complete the stem and leaf diagram to show this customer’s time correctly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q1-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "34 entered into stem and leaf correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q1-b-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-b-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q1(b)(ii)",
+  "stem": "Eleven customers were asked how long, to the nearest minute, they had spent in a particular shop. Their answers are shown in the stem and leaf diagram below. Another customer was in the shop for 34 minutes. 16 minutes was the mean of the original data, excluding 34 minutes.",
+  "questionText": "Find the mean of the data, including 34 minutes.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q1-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "16 × 11 = 176",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q1-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "176 + 34 = 210",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q2-a",
+  "topicId": "maths-3-3",
+  "conceptId": "q2-a",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q2(a)",
+  "stem": "There are 600 students in a school, in total. 40% of these students are boys. 15% of the boys are red-haired.",
+  "questionText": "Work out how many red-haired boys are in the school.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "0·4 × 600 = 240",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "0·15 × 240 = 36",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q2-b-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q2-b-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q2(b)(i)",
+  "stem": "In a survey, 200 men and 160 women were asked if they walked to work. Altogether, 2/5 of the people in the survey said they walked to work.",
+  "questionText": "Work out the total number of people in the survey.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q2-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "200 + 160 = 360",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q2-b-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q2-b-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q2(b)(ii)",
+  "stem": "In a survey, 200 men and 160 women were asked if they walked to work. Altogether, 2/5 of the people in the survey said they walked to work.",
+  "questionText": "Work out the total number of people in the survey who said they walked to work.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q2-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, 0.4",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q2-b-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "q2-b-iii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q2(b)(iii)",
+  "stem": "In a survey, 200 men and 160 women were asked if they walked to work. Altogether, 2/5 of the people in the survey said they walked to work. 3/10 of the men in the survey said they walked to work.",
+  "questionText": "Work out how many of the women in the survey said they walked to work.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q2-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "144 − 60 = 84",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q3-a",
+  "topicId": "maths-3-4",
+  "conceptId": "q3-a",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q3(a)",
+  "stem": "A shop has a number of hand sanitiser dispensers. The shape of each dispenser is a cuboid with length 12·5 cm, width 8 cm and height 19·6 cm.",
+  "questionText": "Work out the volume of a dispenser, in cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "12·5 × 8 × 19·6",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "1960 [cm³]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q3-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q3-b",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q3(b)",
+  "stem": "A shop has a number of hand sanitiser dispensers. The shape of each dispenser is a cuboid with length 12·5 cm, width 8 cm and height 19·6 cm. Each time someone uses a dispenser, 2·5 cm³ of hand sanitiser comes out.",
+  "questionText": "Work out how many times a full dispenser can be used, before it becomes empty.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "1960 ÷ 2·5 = 784",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q3-c",
+  "topicId": "maths-3-3",
+  "conceptId": "q3-c",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q3(c)",
+  "stem": "Each time someone uses a dispenser, 2·5 cm³ of hand sanitiser comes out. On a particular day the shop manager fills the dispenser that is at the entrance to the shop. Each customer uses this dispenser once. 16 customers come into the shop each hour, on average. The shop is open for 14 hours that day.",
+  "questionText": "How much sanitiser is used from the dispenser during that day? Give your answer in cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "16 × 14 × 2·5 = 560 [cm³]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q3-d",
+  "topicId": "maths-3-3",
+  "conceptId": "q3-d",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q3(d)",
+  "stem": "The shop manager buys some hand sanitiser for £35. The conversion rate is £1 = €1·17.",
+  "questionText": "Work out the cost of this hand sanitiser in euro.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q3-d-solution-1",
+    "kind": "point",
+    "verbatim": "35 × 1·17 = [€]40·95",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q4-a",
+  "topicId": "maths-3-3",
+  "conceptId": "q4-a",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q4(a)",
+  "stem": "Jakub was asked to buy tea bags when he went shopping. There were two different sizes of packets in the shop. Packet A costs €2·99 and contains 80 tea bags. Packet B costs €6·99 and contains 220 tea bags.",
+  "questionText": "Work out which packet offers better value for money, A or B. Justify your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: B",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q4-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q4-b",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q4(b)",
+  "stem": "Jakub’s shopping came to a total of €40. Jakub had a voucher that gave him €5 off his shopping bill.",
+  "questionText": "Work out the percentage discount that Jakub got by using the voucher.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "12.5%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q4-c",
+  "topicId": "maths-3-1",
+  "conceptId": "q4-c",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q4(c)",
+  "stem": "Emily is a teacher. The number of children in her class is a multiple of 5. When she divides her class into groups of 3, she has 1 child left over. When she divides her class into groups of 4, she also has 1 child left over. There are less than 30 children in the class.",
+  "questionText": "Work out how many children are in the class. Show your working out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q4-c-solution-1",
+    "kind": "point",
+    "verbatim": "Answer = 25 students",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q5-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q5-a-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q5(a)(i)",
+  "stem": "When Aisha and Finn got married, they borrowed €15 000. The interest rate was 8% per year. They did not make any repayments during the first year.",
+  "questionText": "Work out the amount of money that they owed at the end of the first year.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "€15000 × 0·08 = €1200",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "€15000 + €1200 = €16200",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q5-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q5-a-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q5(a)(ii)",
+  "stem": "When Aisha and Finn got married, they borrowed €15 000. The interest rate was 8% per year. They did not make any repayments during the first year. After the first year, Aisha and Finn paid back €10 000. They did not make any repayments during the second year.",
+  "questionText": "Work out how much they would have to pay at the end of the second year to pay off the rest of the loan.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q5-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "€16200 − €10000 = €6200",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q5-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "€6200 × 1·08 = €6696",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q5-b-i",
+  "topicId": "maths-3-4",
+  "conceptId": "q5-b-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q5(b)(i)",
+  "stem": "The diagram below shows two small squares, A and B, inside a large square. Square A has an area of 36 cm² and square B has an area of 9 cm², as shown in the diagram.",
+  "questionText": "Work out the length of the sides of square A and square B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q5-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Calculates one side correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q5-b-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "q5-b-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q5(b)(ii)",
+  "stem": "The diagram below shows two small squares, A and B, inside a large square. Square A has an area of 36 cm² and square B has an area of 9 cm², as shown in the diagram.",
+  "questionText": "Work out the perimeter of the large square, in cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q5-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "9 × 4 = 36 [cm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q6-a-i",
+  "topicId": "maths-1-1",
+  "conceptId": "q6-a-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q6(a)(i)",
+  "stem": "Manuela plays a game using the two fair spinners, A and B, shown below. The first spinner is divided into 3 equal sectors, labelled 1, 2, and 3. The second spinner is divided into 4 equal sectors, labelled 1, 2, 3, and 4.",
+  "questionText": "Complete the table below to list all the possible outcomes. Three are already given. For example, (1, 2) means that Manuela got a 1 on spinner A and a 2 on spinner B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q6-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "5 correct entries (accept if they have the order reversed)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q6-a-ii-iii",
+  "topicId": "maths-1-2",
+  "conceptId": "q6-a-ii-iii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q6(a)(ii), Q6(a)(iii)",
+  "stem": "Manuela plays a game using the two fair spinners, A and B, shown below. The first spinner is divided into 3 equal sectors, labelled 1, 2, and 3. The second spinner is divided into 4 equal sectors, labelled 1, 2, 3, and 4. Manuela spins the two spinners. Each outcome in the table above is equally likely.",
+  "questionText": "(ii) What is the probability that Manuela gets the same number on each spinner? (iii) What is the probability that the sum of the two numbers is at least 5?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q6-a-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "correct numerator or correct denominator as part of a fraction",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q6-b",
+  "topicId": "maths-1-2",
+  "conceptId": "q6-b",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q6(b)",
+  "stem": "Manuela plays another game with a pile of 48 cards. 40 of these cards are grey, and 8 are white. Manuela picks 4 cards at random from the pile, without replacement. 3 of her cards are grey, and 1 is white. Manuela is going to pick one more card at random from the remaining cards in the pile.",
+  "questionText": "Find the probability that this last card will be grey.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "Finds 37 and 44",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q7-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "q7-a-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q7(a)(i)",
+  "stem": "Grainne wants to design a small projector. The diagram below shows part of her design. The side of each small square in the diagram is 1 cm in length. The light source is at the point O. The light hits the picture D and projects it onto a wall, so that O is the centre of an enlargement of D.",
+  "questionText": "Find the area of the rectangle D, in cm².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Area = 2 × 1 = 2 [cm²]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q7-a-ii",
+  "topicId": "maths-2-4",
+  "conceptId": "q7-a-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q7(a)(ii)",
+  "stem": "Grainne wants to design a small projector. The diagram below shows part of her design. The side of each small square in the diagram is 1 cm in length. The light source is at the point O. The light hits the picture D and projects it onto a wall, so that O is the centre of an enlargement of D.",
+  "questionText": "On the diagram above, draw the image of the rectangle, D, under an enlargement with centre O and a scale factor of 3. One side of the image is drawn for you.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Any one correct construction line drawn",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q7-a-iii",
+  "topicId": "maths-2-4",
+  "conceptId": "q7-a-iii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q7(a)(iii)",
+  "stem": "Grainne wants to design a small projector. The diagram below shows part of her design. The side of each small square in the diagram is 1 cm in length. The light source is at the point O. The light hits the picture D and projects it onto a wall, so that O is the centre of an enlargement of D. The enlargement has centre O and a scale factor of 3.",
+  "questionText": "Find the ratio of the area of the rectangle D to the area of the enlarged rectangle. Give your answer in the form 1:n, where n ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q7-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Ratio is 2: 18 = 1: 9",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q7-b-i",
+  "topicId": "maths-2-3",
+  "conceptId": "q7-b-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q7(b)(i)",
+  "stem": "Brian went on a boat tour to see the Sliabh Liag cliffs in Donegal. The height of the cliffs is 600 metres. The boat stopped 200 metres from the base of the cliffs, as shown in the diagram below. A was the angle of elevation from the boat to the top of the cliffs, as shown in the diagram.",
+  "questionText": "Use the diagram to find the value of tan A.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q7-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "600/200 (or equivalent)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q7-b-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "q7-b-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q7(b)(ii)",
+  "stem": "Brian went on a boat tour to see the Sliabh Liag cliffs in Donegal. The height of the cliffs is 600 metres. The boat stopped 200 metres from the base of the cliffs, as shown in the diagram below. A was the angle of elevation from the boat to the top of the cliffs, as shown in the diagram.",
+  "questionText": "Use your answer to part (b)(i) to find the size of the angle A. Give your answer correct to the nearest degree.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q7-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "A = 72[°] [nearest degree]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q8-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q8-a-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q8(a)(i)",
+  "stem": "Paudge drives to and from work in his car each day, for 5 days a week. The distance from his home to his work is 54 km.",
+  "questionText": "Work out the total distance Paudge travels to and from work each week.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "54 × 5 × 2 = 540 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q8-a-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q8-a-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q8(a)(ii)",
+  "stem": "Paudge drives to and from work in his car each day, for 5 days a week. The distance from his home to his work is 54 km. Paudge’s car drives 12·5 km for each litre of fuel, on average. A litre of fuel costs €1·70.",
+  "questionText": "Work out the total cost of the fuel used for Paudge’s journeys to and from work over 5 days.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "€73·44",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q8-b",
+  "topicId": "maths-3-1",
+  "conceptId": "q8-b",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2022 FL Q8(b)",
+  "stem": "Most modern bikes have back rings and front rings. The number of gears in each bike is the number of back rings multiplied by the number of front rings. For example, a bike with 5 back rings and 2 front rings would have 5 × 2 = 10 gears.",
+  "questionText": "Fill in the missing values in the table below, to show the number of back rings, front rings, and gears for each bike. There are no missing values for the first bike. Each bike has more than one back ring, and more than one front ring.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "Three correct entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q9-a-i-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "q9-a-i-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q9(a)(i), Q9(a)(ii)",
+  "stem": "A small group of people are testing a video game. They have to try to unlock a door in the game in less than 12 minutes. The histogram and frequency table below show how long it took people to unlock the door, for those who did it in less than 12 minutes. Some of the bars and some of the values are missing. (Note: 2 − 4 means 2 minutes or more, but less than 4 minutes, and so on.)",
+  "questionText": "(i) Use the data in the table to draw in the two missing bars in the histogram. (ii) Use the data in the histogram to fill in the three missing values in the table.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q9-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "one value / bar correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q9-a-iii",
+  "topicId": "maths-1-6",
+  "conceptId": "q9-a-iii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q9(a)(iii)",
+  "stem": "A small group of people are testing a video game. They have to try to unlock a door in the game in less than 12 minutes. The histogram and frequency table below show how long it took people to unlock the door, for those who did it in less than 12 minutes. Some of the bars and some of the values are missing. (Note: 2 − 4 means 2 minutes or more, but less than 4 minutes, and so on.)",
+  "questionText": "What is the greatest number of people who could have unlocked the door in less than 5 minutes?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q9-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "3 + 7 + 11 = 21",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q9-a-iv",
+  "topicId": "maths-1-6",
+  "conceptId": "q9-a-iv",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q9(a)(iv)",
+  "stem": "A small group of people are testing a video game. They have to try to unlock a door in the game in less than 12 minutes. The histogram and frequency table below show how long it took people to unlock the door, for those who did it in less than 12 minutes. Some of the bars and some of the values are missing. (Note: 2 − 4 means 2 minutes or more, but less than 4 minutes, and so on.) 11 other people in the group did not unlock the door in less than 12 minutes. These people’s times are not shown on the histogram.",
+  "questionText": "Work out the percentage of the group that did unlock the door in less than 12 minutes.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q9-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "(3 + 7 + 11 + 12 + 4 + 2) + 11",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q9-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "39 + 11 = 50",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q9-b-i",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-b-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q9(b)(i)",
+  "stem": "Evie sells ice cream cones. One afternoon, she drives to a beach to sell the ice cream cones. The journey takes 20 minutes. Her average speed is 75 km/h.",
+  "questionText": "Work out the distance that she travels.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q9-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "D = 25 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q9-b-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "q9-b-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q9(b)(ii)",
+  "stem": "Customers can choose from 3 different types of cone and from 4 different flavours of ice cream, as shown in the following table. Cone: Plain Cone, Chocolate Cone, Waffle Cone. Flavour: Vanilla, Strawberry, Mint Chocolate, Banana.",
+  "questionText": "Work out how many different choices of ice cream cones are possible. For example, one possible choice is a Plain Cone with Vanilla flavoured ice cream.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "3 × 4 = 12",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q9-b-iii",
+  "topicId": "maths-1-6",
+  "conceptId": "q9-b-iii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q9(b)(iii)",
+  "stem": "Part of the pie chart of Evie’s sales of ice cream cones that afternoon is shown below. The size of the angle for Mint Chocolate is shown. The same number of Strawberry, Banana, and Vanilla flavours were sold.",
+  "questionText": "Use this information to complete the pie chart above. Show your working out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q9-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "360 − 120 = 240",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q9-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "240 ÷ 3 = 80°",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q9-b-iv",
+  "topicId": "maths-1-6",
+  "conceptId": "q9-b-iv",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q9(b)(iv)",
+  "stem": "Part of the pie chart of Evie’s sales of ice cream cones that afternoon is shown below. The size of the angle for Mint Chocolate is shown. Evie sells 150 ice cream cones in total that afternoon.",
+  "questionText": "Work out the number of Mint Chocolate ice cream cones that she sells.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q9-b-iv-solution-1",
+    "kind": "point",
+    "verbatim": "A pair of numbers with correct operation, that is, 120 × 150",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q10-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-a-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q10(a)(i)",
+  "stem": "Colm is making a sign for his house. He is making it from two pieces of material: one in the shape of a rectangle, and the other in the shape of a circular disc. The rectangle has a length of 24 cm, and has an area of 288 cm².",
+  "questionText": "Work out the width of the rectangle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q10-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "288 ÷ 24 = 12 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q10-a-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-a-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q10(a)(ii)",
+  "stem": "Colm is making a sign for his house. He is making it from two pieces of material: one in the shape of a rectangle, and the other in the shape of a circular disc. The disc has a diameter of 14 cm.",
+  "questionText": "Show that the length (circumference) of the disc is 44 cm, correct to the nearest cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q10-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "44 [cm] [nearest cm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q10-a-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-a-iii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q10(a)(iii)",
+  "stem": "Colm is making a sign for his house. He is making it from two pieces of material: one in the shape of a rectangle, and the other in the shape of a circular disc. The rectangle has a length of 24 cm and an area of 288 cm². The disc has a diameter of 14 cm and a circumference of 44 cm, correct to the nearest cm. Colm is going to make his sign using half the disc and all of the rectangle. He will put a narrow border all around the outside of the sign, as shown in the diagram below.",
+  "questionText": "Work out the length of the border around the sign. Give your answer correct to the nearest cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q10-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "24 + 12 + 12 + 10 + 22",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q10-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "80 [cm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q10-a-iv",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-a-iv",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q10(a)(iv)",
+  "stem": "Colm is making a sign for his house. He is making it from two pieces of material: one in the shape of a rectangle, and the other in the shape of a circular disc. The rectangle has a length of 24 cm and an area of 288 cm². The disc has a diameter of 14 cm and a circumference of 44 cm, correct to the nearest cm. Colm is going to make his sign using half the disc and all of the rectangle.",
+  "questionText": "Work out the area of the sign. Give your answer correct to the nearest cm².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q10-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "288 + 77 = 365 [cm²]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q10-b-i",
+  "topicId": "maths-2-1",
+  "conceptId": "q10-b-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q10(b)(i)",
+  "stem": "Colm is making a different sign in the shape of a triangle. He makes a scale drawing of the triangle. In his diagram, the sides of the triangle are 6 cm, 4·5 cm, and 7·5 cm.",
+  "questionText": "Construct this triangle in the space below. The side of length 6 cm is already given.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q10-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Two arcs correctly drawn but triangle not completed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q10-b-ii",
+  "topicId": "maths-2-1",
+  "conceptId": "q10-b-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q10(b)(ii)",
+  "stem": "Colm is making a different sign in the shape of a triangle. He makes a scale drawing of the triangle. In his diagram, the sides of the triangle are 6 cm, 4·5 cm, and 7·5 cm.",
+  "questionText": "Use Pythagoras’ Theorem to show that this triangle is a right-angled triangle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q10-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "56.25 = 20.25 + 36",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q10-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "56.25 = 56.25",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q10-b-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-b-iii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q10(b)(iii)",
+  "stem": "Colm is making a different sign in the shape of a triangle. He makes a scale drawing of the triangle. In his diagram, the sides of the triangle are 6 cm, 4·5 cm, and 7·5 cm.",
+  "questionText": "Work out the area of the triangle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q10-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "A = 13.5 cm²",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q11-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "q11-a-i-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q11(a)(i), Q11(a)(ii)",
+  "stem": "Ellie and Kabir are friends at college. They each have a savings account. At the end of every month, they each withdraw a fixed amount from their account. Kabir has €1920 in his savings account at the start of the term (Month 0). The graph below shows the total amount of money in Kabir’s account at the end of each month.",
+  "questionText": "Use the graph to answer the following questions. (i) How much money has Kabir in his account after 6 months? (ii) After how many months will Kabir have no money left in his account?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q11-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "€480",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q11-a-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "q11-a-iii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q11(a)(iii)",
+  "stem": "Ellie and Kabir are friends at college. They each have a savings account. At the end of every month, they each withdraw a fixed amount from their account. Kabir has €1920 in his savings account at the start of the term (Month 0). The graph below shows the total amount of money in Kabir’s account at the end of each month.",
+  "questionText": "Use the graph to answer the following question. How much money does Kabir withdraw from his account each month?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q11-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "1920 ÷ 8 = €240",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q11-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "q11-b-i",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q11(b)(i)",
+  "stem": "Ellie has €1600 in her savings account at the start of the term (Month 0). She withdraws €160 at the end of each month.",
+  "questionText": "Complete the table to show the amount of money left in Ellie’s account at the end of each month, for the first 6 months.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q11-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "2 terms correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q11-b-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "q11-b-ii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q11(b)(ii)",
+  "stem": "Ellie and Kabir are friends at college. They each have a savings account. At the end of every month, they each withdraw a fixed amount from their account. Kabir has €1920 in his savings account at the start of the term (Month 0). The graph below shows the total amount of money in Kabir’s account at the end of each month. Ellie has €1600 in her savings account at the start of the term (Month 0). She withdraws €160 at the end of each month.",
+  "questionText": "Plot all of the points from the table onto the graph on the previous page. Join the points with a line.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q11-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "3, 4, or 5 points correctly plotted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q11-b-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "q11-b-iii",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q11(b)(iii)",
+  "stem": "Ellie and Kabir are friends at college. They each have a savings account. At the end of every month, they each withdraw a fixed amount from their account. Kabir has €1920 in his savings account at the start of the term (Month 0). The graph below shows the total amount of money in Kabir’s account at the end of each month. Ellie has €1600 in her savings account at the start of the term (Month 0). She withdraws €160 at the end of each month.",
+  "questionText": "At the end of which month will there be the same amount of money in Kabir’s account and in Ellie’s account?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q11-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "highlighted on graph",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q11-c",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-c",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q11(c)",
+  "stem": "The following year, Kabir starts with €2100 in his savings account. He withdraws €300 at the end of each month. Ellie starts with €1540 in her savings account. Each month, she withdraws a fixed amount of money. Both accounts run out of money at the same time.",
+  "questionText": "Work out how much money Ellie withdraws each month.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q11-c-solution-1",
+    "kind": "point",
+    "verbatim": "2100 ÷ 300 = 7 months",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q11-c-solution-2",
+    "kind": "point",
+    "verbatim": "1540 ÷ 7 = €220",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q11-d",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-d",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q11(d)",
+  "stem": "Ellie and Kabir go for a meal one evening. The total cost of the meal is €45. They get a 15% student discount on this price.",
+  "questionText": "What is the final cost of the meal, after the discount is applied?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q11-d-solution-1",
+    "kind": "point",
+    "verbatim": "45 − 6.75 = €38.25",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2022-fl-q11-e",
+  "topicId": "maths-3-1",
+  "conceptId": "q11-e",
+  "level": "foundation",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 FL Q11(e)",
+  "stem": "Ellie and Kabir are studying in different rooms in the college. They both start studying at 9 a.m. Ellie takes a break every 40 minutes (so, for example, at 9:40, at 10:20, and so on). Kabir takes a break every 50 minutes.",
+  "questionText": "What time will it be when they both first take a break at the same time?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-fl-q11-e-solution-1",
+    "kind": "point",
+    "verbatim": "200 mins = 3 hrs and 20 mins",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2022-fl-q11-e-solution-2",
+    "kind": "point",
+    "verbatim": "Answer: 12:20",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2022 Foundation paper and scheme on 2026-10-07."
  }
 ]

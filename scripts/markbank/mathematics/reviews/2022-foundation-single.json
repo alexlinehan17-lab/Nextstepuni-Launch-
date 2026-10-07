@@ -1,0 +1,1698 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2022,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "single",
+  "paperFileid": "LC003BLP000EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "a12a51e477e1929c5f9f9d75934220b23458798268bd16f73a39060fa5d448b5",
+  "schemeSha256": "a785fcbc44dfc8bb803aae76d7d5c98f27f0549a2cd698a44f6c6c47a1e6b8be",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of all 32 paper pages and all 24 scheme pages; each detailed allocation checked against the scheme summary on page 4.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 30,
+    "8": 30,
+    "9": 50,
+    "10": 50,
+    "11": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "sourceNotes": [
+    "2022 candidate total is 230 marks: six Section A questions at 30 and one Section B question at 50. All offered questions total 390 marks.",
+    "53 separately marked units. Shared allocations Q6(a)(ii)/(iii), Q9(a)(i)/(ii), and Q11(a)(i)/(ii) remain grouped.",
+    "Scheme page 6 specifically accepts correct answers without supporting work unless the question explicitly asks for working; original general notes are included in the solution reader.",
+    "Q10(b)(i) triangle construction includes the physical-scale ruler. The Q7 enlargement uses a labelled 1 cm grid."
+  ],
+  "cards": [
+    {
+      "id": "maths-2022-fl-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Eleven customers were asked how long, to the nearest minute, they had spent in a particular shop. Their answers are shown in the stem and leaf diagram below.",
+      "questionText": "Write down the mode of the data.",
+      "solutionQuotes": [
+        "Mode = 10 [minutes]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Eleven customers were asked how long, to the nearest minute, they had spent in a particular shop. Their answers are shown in the stem and leaf diagram below.",
+      "questionText": "Work out the range of the data.",
+      "solutionQuotes": [
+        "Range = 30 − 6 = 24 [minutes]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q1-a-iii",
+      "printedParts": [
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Eleven customers were asked how long, to the nearest minute, they had spent in a particular shop. Their answers are shown in the stem and leaf diagram below.",
+      "questionText": "Write down the median of the data.",
+      "solutionQuotes": [
+        "6th term = 15 [minutes]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Eleven customers were asked how long, to the nearest minute, they had spent in a particular shop. Their answers are shown in the stem and leaf diagram below. Another customer was in the shop for 34 minutes.",
+      "questionText": "Complete the stem and leaf diagram to show this customer’s time correctly.",
+      "solutionQuotes": [
+        "34 entered into stem and leaf correctly"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Eleven customers were asked how long, to the nearest minute, they had spent in a particular shop. Their answers are shown in the stem and leaf diagram below. Another customer was in the shop for 34 minutes. 16 minutes was the mean of the original data, excluding 34 minutes.",
+      "questionText": "Find the mean of the data, including 34 minutes.",
+      "solutionQuotes": [
+        "16 × 11 = 176",
+        "176 + 34 = 210"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "There are 600 students in a school, in total. 40% of these students are boys. 15% of the boys are red-haired.",
+      "questionText": "Work out how many red-haired boys are in the school.",
+      "solutionQuotes": [
+        "0·4 × 600 = 240",
+        "0·15 × 240 = 36"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "In a survey, 200 men and 160 women were asked if they walked to work. Altogether, 2/5 of the people in the survey said they walked to work.",
+      "questionText": "Work out the total number of people in the survey.",
+      "solutionQuotes": [
+        "200 + 160 = 360"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "In a survey, 200 men and 160 women were asked if they walked to work. Altogether, 2/5 of the people in the survey said they walked to work.",
+      "questionText": "Work out the total number of people in the survey who said they walked to work.",
+      "solutionQuotes": [
+        "Work of merit, for example, 0.4"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q2-b-iii",
+      "printedParts": [
+        "Q2(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "In a survey, 200 men and 160 women were asked if they walked to work. Altogether, 2/5 of the people in the survey said they walked to work. 3/10 of the men in the survey said they walked to work.",
+      "questionText": "Work out how many of the women in the survey said they walked to work.",
+      "solutionQuotes": [
+        "144 − 60 = 84"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "A shop has a number of hand sanitiser dispensers. The shape of each dispenser is a cuboid with length 12·5 cm, width 8 cm and height 19·6 cm.",
+      "questionText": "Work out the volume of a dispenser, in cm³.",
+      "solutionQuotes": [
+        "12·5 × 8 × 19·6",
+        "1960 [cm³]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "A shop has a number of hand sanitiser dispensers. The shape of each dispenser is a cuboid with length 12·5 cm, width 8 cm and height 19·6 cm. Each time someone uses a dispenser, 2·5 cm³ of hand sanitiser comes out.",
+      "questionText": "Work out how many times a full dispenser can be used, before it becomes empty.",
+      "solutionQuotes": [
+        "1960 ÷ 2·5 = 784"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Each time someone uses a dispenser, 2·5 cm³ of hand sanitiser comes out. On a particular day the shop manager fills the dispenser that is at the entrance to the shop. Each customer uses this dispenser once. 16 customers come into the shop each hour, on average. The shop is open for 14 hours that day.",
+      "questionText": "How much sanitiser is used from the dispenser during that day? Give your answer in cm³.",
+      "solutionQuotes": [
+        "16 × 14 × 2·5 = 560 [cm³]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q3-d",
+      "printedParts": [
+        "Q3(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The shop manager buys some hand sanitiser for £35. The conversion rate is £1 = €1·17.",
+      "questionText": "Work out the cost of this hand sanitiser in euro.",
+      "solutionQuotes": [
+        "35 × 1·17 = [€]40·95"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Jakub was asked to buy tea bags when he went shopping. There were two different sizes of packets in the shop. Packet A costs €2·99 and contains 80 tea bags. Packet B costs €6·99 and contains 220 tea bags.",
+      "questionText": "Work out which packet offers better value for money, A or B. Justify your answer.",
+      "solutionQuotes": [
+        "Answer: B"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Jakub’s shopping came to a total of €40. Jakub had a voucher that gave him €5 off his shopping bill.",
+      "questionText": "Work out the percentage discount that Jakub got by using the voucher.",
+      "solutionQuotes": [
+        "12.5%"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "Emily is a teacher. The number of children in her class is a multiple of 5. When she divides her class into groups of 3, she has 1 child left over. When she divides her class into groups of 4, she also has 1 child left over. There are less than 30 children in the class.",
+      "questionText": "Work out how many children are in the class. Show your working out.",
+      "solutionQuotes": [
+        "Answer = 25 students"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "When Aisha and Finn got married, they borrowed €15 000. The interest rate was 8% per year. They did not make any repayments during the first year.",
+      "questionText": "Work out the amount of money that they owed at the end of the first year.",
+      "solutionQuotes": [
+        "€15000 × 0·08 = €1200",
+        "€15000 + €1200 = €16200"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "When Aisha and Finn got married, they borrowed €15 000. The interest rate was 8% per year. They did not make any repayments during the first year. After the first year, Aisha and Finn paid back €10 000. They did not make any repayments during the second year.",
+      "questionText": "Work out how much they would have to pay at the end of the second year to pay off the rest of the loan.",
+      "solutionQuotes": [
+        "€16200 − €10000 = €6200",
+        "€6200 × 1·08 = €6696"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below shows two small squares, A and B, inside a large square. Square A has an area of 36 cm² and square B has an area of 9 cm², as shown in the diagram.",
+      "questionText": "Work out the length of the sides of square A and square B.",
+      "solutionQuotes": [
+        "Calculates one side correctly"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below shows two small squares, A and B, inside a large square. Square A has an area of 36 cm² and square B has an area of 9 cm², as shown in the diagram.",
+      "questionText": "Work out the perimeter of the large square, in cm.",
+      "solutionQuotes": [
+        "9 × 4 = 36 [cm]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Manuela plays a game using the two fair spinners, A and B, shown below. The first spinner is divided into 3 equal sectors, labelled 1, 2, and 3. The second spinner is divided into 4 equal sectors, labelled 1, 2, 3, and 4.",
+      "questionText": "Complete the table below to list all the possible outcomes. Three are already given. For example, (1, 2) means that Manuela got a 1 on spinner A and a 2 on spinner B.",
+      "solutionQuotes": [
+        "5 correct entries (accept if they have the order reversed)"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q6-a-ii-iii",
+      "printedParts": [
+        "Q6(a)(ii)",
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Manuela plays a game using the two fair spinners, A and B, shown below. The first spinner is divided into 3 equal sectors, labelled 1, 2, and 3. The second spinner is divided into 4 equal sectors, labelled 1, 2, 3, and 4. Manuela spins the two spinners. Each outcome in the table above is equally likely.",
+      "questionText": "(ii) What is the probability that Manuela gets the same number on each spinner? (iii) What is the probability that the sum of the two numbers is at least 5?",
+      "solutionQuotes": [
+        "correct numerator or correct denominator as part of a fraction"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Manuela plays another game with a pile of 48 cards. 40 of these cards are grey, and 8 are white. Manuela picks 4 cards at random from the pile, without replacement. 3 of her cards are grey, and 1 is white. Manuela is going to pick one more card at random from the remaining cards in the pile.",
+      "questionText": "Find the probability that this last card will be grey.",
+      "solutionQuotes": [
+        "Finds 37 and 44"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Grainne wants to design a small projector. The diagram below shows part of her design. The side of each small square in the diagram is 1 cm in length. The light source is at the point O. The light hits the picture D and projects it onto a wall, so that O is the centre of an enlargement of D.",
+      "questionText": "Find the area of the rectangle D, in cm².",
+      "solutionQuotes": [
+        "Area = 2 × 1 = 2 [cm²]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Grainne wants to design a small projector. The diagram below shows part of her design. The side of each small square in the diagram is 1 cm in length. The light source is at the point O. The light hits the picture D and projects it onto a wall, so that O is the centre of an enlargement of D.",
+      "questionText": "On the diagram above, draw the image of the rectangle, D, under an enlargement with centre O and a scale factor of 3. One side of the image is drawn for you.",
+      "solutionQuotes": [
+        "Any one correct construction line drawn"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Grainne wants to design a small projector. The diagram below shows part of her design. The side of each small square in the diagram is 1 cm in length. The light source is at the point O. The light hits the picture D and projects it onto a wall, so that O is the centre of an enlargement of D. The enlargement has centre O and a scale factor of 3.",
+      "questionText": "Find the ratio of the area of the rectangle D to the area of the enlarged rectangle. Give your answer in the form 1:n, where n ∈ ℕ.",
+      "solutionQuotes": [
+        "Ratio is 2: 18 = 1: 9"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "Brian went on a boat tour to see the Sliabh Liag cliffs in Donegal. The height of the cliffs is 600 metres. The boat stopped 200 metres from the base of the cliffs, as shown in the diagram below. A was the angle of elevation from the boat to the top of the cliffs, as shown in the diagram.",
+      "questionText": "Use the diagram to find the value of tan A.",
+      "solutionQuotes": [
+        "600/200 (or equivalent)"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-trigonometry"
+      ],
+      "stem": "Brian went on a boat tour to see the Sliabh Liag cliffs in Donegal. The height of the cliffs is 600 metres. The boat stopped 200 metres from the base of the cliffs, as shown in the diagram below. A was the angle of elevation from the boat to the top of the cliffs, as shown in the diagram.",
+      "questionText": "Use your answer to part (b)(i) to find the size of the angle A. Give your answer correct to the nearest degree.",
+      "solutionQuotes": [
+        "A = 72[°] [nearest degree]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Paudge drives to and from work in his car each day, for 5 days a week. The distance from his home to his work is 54 km.",
+      "questionText": "Work out the total distance Paudge travels to and from work each week.",
+      "solutionQuotes": [
+        "54 × 5 × 2 = 540 km"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Paudge drives to and from work in his car each day, for 5 days a week. The distance from his home to his work is 54 km. Paudge’s car drives 12·5 km for each litre of fuel, on average. A litre of fuel costs €1·70.",
+      "questionText": "Work out the total cost of the fuel used for Paudge’s journeys to and from work over 5 days.",
+      "solutionQuotes": [
+        "€73·44"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "Most modern bikes have back rings and front rings. The number of gears in each bike is the number of back rings multiplied by the number of front rings. For example, a bike with 5 back rings and 2 front rings would have 5 × 2 = 10 gears.",
+      "questionText": "Fill in the missing values in the table below, to show the number of back rings, front rings, and gears for each bike. There are no missing values for the first bike. Each bike has more than one back ring, and more than one front ring.",
+      "solutionQuotes": [
+        "Three correct entries"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q9-a-i-ii",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "A small group of people are testing a video game. They have to try to unlock a door in the game in less than 12 minutes. The histogram and frequency table below show how long it took people to unlock the door, for those who did it in less than 12 minutes. Some of the bars and some of the values are missing. (Note: 2 − 4 means 2 minutes or more, but less than 4 minutes, and so on.)",
+      "questionText": "(i) Use the data in the table to draw in the two missing bars in the histogram. (ii) Use the data in the histogram to fill in the three missing values in the table.",
+      "solutionQuotes": [
+        "one value / bar correct"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "A small group of people are testing a video game. They have to try to unlock a door in the game in less than 12 minutes. The histogram and frequency table below show how long it took people to unlock the door, for those who did it in less than 12 minutes. Some of the bars and some of the values are missing. (Note: 2 − 4 means 2 minutes or more, but less than 4 minutes, and so on.)",
+      "questionText": "What is the greatest number of people who could have unlocked the door in less than 5 minutes?",
+      "solutionQuotes": [
+        "3 + 7 + 11 = 21"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "A small group of people are testing a video game. They have to try to unlock a door in the game in less than 12 minutes. The histogram and frequency table below show how long it took people to unlock the door, for those who did it in less than 12 minutes. Some of the bars and some of the values are missing. (Note: 2 − 4 means 2 minutes or more, but less than 4 minutes, and so on.) 11 other people in the group did not unlock the door in less than 12 minutes. These people’s times are not shown on the histogram.",
+      "questionText": "Work out the percentage of the group that did unlock the door in less than 12 minutes.",
+      "solutionQuotes": [
+        "(3 + 7 + 11 + 12 + 4 + 2) + 11",
+        "39 + 11 = 50"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Evie sells ice cream cones. One afternoon, she drives to a beach to sell the ice cream cones. The journey takes 20 minutes. Her average speed is 75 km/h.",
+      "questionText": "Work out the distance that she travels.",
+      "solutionQuotes": [
+        "D = 25 km"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "Customers can choose from 3 different types of cone and from 4 different flavours of ice cream, as shown in the following table. Cone: Plain Cone, Chocolate Cone, Waffle Cone. Flavour: Vanilla, Strawberry, Mint Chocolate, Banana.",
+      "questionText": "Work out how many different choices of ice cream cones are possible. For example, one possible choice is a Plain Cone with Vanilla flavoured ice cream.",
+      "solutionQuotes": [
+        "3 × 4 = 12"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Part of the pie chart of Evie’s sales of ice cream cones that afternoon is shown below. The size of the angle for Mint Chocolate is shown. The same number of Strawberry, Banana, and Vanilla flavours were sold.",
+      "questionText": "Use this information to complete the pie chart above. Show your working out.",
+      "solutionQuotes": [
+        "360 − 120 = 240",
+        "240 ÷ 3 = 80°"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q9-b-iv",
+      "printedParts": [
+        "Q9(b)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "Part of the pie chart of Evie’s sales of ice cream cones that afternoon is shown below. The size of the angle for Mint Chocolate is shown. Evie sells 150 ice cream cones in total that afternoon.",
+      "questionText": "Work out the number of Mint Chocolate ice cream cones that she sells.",
+      "solutionQuotes": [
+        "A pair of numbers with correct operation, that is, 120 × 150"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Colm is making a sign for his house. He is making it from two pieces of material: one in the shape of a rectangle, and the other in the shape of a circular disc. The rectangle has a length of 24 cm, and has an area of 288 cm².",
+      "questionText": "Work out the width of the rectangle.",
+      "solutionQuotes": [
+        "288 ÷ 24 = 12 cm"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Colm is making a sign for his house. He is making it from two pieces of material: one in the shape of a rectangle, and the other in the shape of a circular disc. The disc has a diameter of 14 cm.",
+      "questionText": "Show that the length (circumference) of the disc is 44 cm, correct to the nearest cm.",
+      "solutionQuotes": [
+        "44 [cm] [nearest cm]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q10-a-iii",
+      "printedParts": [
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Colm is making a sign for his house. He is making it from two pieces of material: one in the shape of a rectangle, and the other in the shape of a circular disc. The rectangle has a length of 24 cm and an area of 288 cm². The disc has a diameter of 14 cm and a circumference of 44 cm, correct to the nearest cm. Colm is going to make his sign using half the disc and all of the rectangle. He will put a narrow border all around the outside of the sign, as shown in the diagram below.",
+      "questionText": "Work out the length of the border around the sign. Give your answer correct to the nearest cm.",
+      "solutionQuotes": [
+        "24 + 12 + 12 + 10 + 22",
+        "80 [cm]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q10-a-iv",
+      "printedParts": [
+        "Q10(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Colm is making a sign for his house. He is making it from two pieces of material: one in the shape of a rectangle, and the other in the shape of a circular disc. The rectangle has a length of 24 cm and an area of 288 cm². The disc has a diameter of 14 cm and a circumference of 44 cm, correct to the nearest cm. Colm is going to make his sign using half the disc and all of the rectangle.",
+      "questionText": "Work out the area of the sign. Give your answer correct to the nearest cm².",
+      "solutionQuotes": [
+        "288 + 77 = 365 [cm²]"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Colm is making a different sign in the shape of a triangle. He makes a scale drawing of the triangle. In his diagram, the sides of the triangle are 6 cm, 4·5 cm, and 7·5 cm.",
+      "questionText": "Construct this triangle in the space below. The side of length 6 cm is already given.",
+      "solutionQuotes": [
+        "Two arcs correctly drawn but triangle not completed"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2022-fl-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "Colm is making a different sign in the shape of a triangle. He makes a scale drawing of the triangle. In his diagram, the sides of the triangle are 6 cm, 4·5 cm, and 7·5 cm.",
+      "questionText": "Use Pythagoras’ Theorem to show that this triangle is a right-angled triangle.",
+      "solutionQuotes": [
+        "56.25 = 20.25 + 36",
+        "56.25 = 56.25"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Colm is making a different sign in the shape of a triangle. He makes a scale drawing of the triangle. In his diagram, the sides of the triangle are 6 cm, 4·5 cm, and 7·5 cm.",
+      "questionText": "Work out the area of the triangle.",
+      "solutionQuotes": [
+        "A = 13.5 cm²"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q11-a-i-ii",
+      "printedParts": [
+        "Q11(a)(i)",
+        "Q11(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Ellie and Kabir are friends at college. They each have a savings account. At the end of every month, they each withdraw a fixed amount from their account. Kabir has €1920 in his savings account at the start of the term (Month 0). The graph below shows the total amount of money in Kabir’s account at the end of each month.",
+      "questionText": "Use the graph to answer the following questions. (i) How much money has Kabir in his account after 6 months? (ii) After how many months will Kabir have no money left in his account?",
+      "solutionQuotes": [
+        "€480"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q11-a-iii",
+      "printedParts": [
+        "Q11(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Ellie and Kabir are friends at college. They each have a savings account. At the end of every month, they each withdraw a fixed amount from their account. Kabir has €1920 in his savings account at the start of the term (Month 0). The graph below shows the total amount of money in Kabir’s account at the end of each month.",
+      "questionText": "Use the graph to answer the following question. How much money does Kabir withdraw from his account each month?",
+      "solutionQuotes": [
+        "1920 ÷ 8 = €240"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q11-b-i",
+      "printedParts": [
+        "Q11(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Ellie has €1600 in her savings account at the start of the term (Month 0). She withdraws €160 at the end of each month.",
+      "questionText": "Complete the table to show the amount of money left in Ellie’s account at the end of each month, for the first 6 months.",
+      "solutionQuotes": [
+        "2 terms correct"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q11-b-ii",
+      "printedParts": [
+        "Q11(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Ellie and Kabir are friends at college. They each have a savings account. At the end of every month, they each withdraw a fixed amount from their account. Kabir has €1920 in his savings account at the start of the term (Month 0). The graph below shows the total amount of money in Kabir’s account at the end of each month. Ellie has €1600 in her savings account at the start of the term (Month 0). She withdraws €160 at the end of each month.",
+      "questionText": "Plot all of the points from the table onto the graph on the previous page. Join the points with a line.",
+      "solutionQuotes": [
+        "3, 4, or 5 points correctly plotted"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q11-b-iii",
+      "printedParts": [
+        "Q11(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Ellie and Kabir are friends at college. They each have a savings account. At the end of every month, they each withdraw a fixed amount from their account. Kabir has €1920 in his savings account at the start of the term (Month 0). The graph below shows the total amount of money in Kabir’s account at the end of each month. Ellie has €1600 in her savings account at the start of the term (Month 0). She withdraws €160 at the end of each month.",
+      "questionText": "At the end of which month will there be the same amount of money in Kabir’s account and in Ellie’s account?",
+      "solutionQuotes": [
+        "highlighted on graph"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q11-c",
+      "printedParts": [
+        "Q11(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The following year, Kabir starts with €2100 in his savings account. He withdraws €300 at the end of each month. Ellie starts with €1540 in her savings account. Each month, she withdraws a fixed amount of money. Both accounts run out of money at the same time.",
+      "questionText": "Work out how much money Ellie withdraws each month.",
+      "solutionQuotes": [
+        "2100 ÷ 300 = 7 months",
+        "1540 ÷ 7 = €220"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q11-d",
+      "printedParts": [
+        "Q11(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Ellie and Kabir go for a meal one evening. The total cost of the meal is €45. They get a 15% student discount on this price.",
+      "questionText": "What is the final cost of the meal, after the discount is applied?",
+      "solutionQuotes": [
+        "45 − 6.75 = €38.25"
+      ]
+    },
+    {
+      "id": "maths-2022-fl-q11-e",
+      "printedParts": [
+        "Q11(e)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-number-systems"
+      ],
+      "stem": "Ellie and Kabir are studying in different rooms in the college. They both start studying at 9 a.m. Ellie takes a break every 40 minutes (so, for example, at 9:40, at 10:20, and so on). Kabir takes a break every 50 minutes.",
+      "questionText": "What time will it be when they both first take a break at the same time?",
+      "solutionQuotes": [
+        "200 mins = 3 hrs and 20 mins",
+        "Answer: 12:20"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        10
+      ],
+      "classification": "answer-selection",
+      "reason": "Packets A and B are competing answers to the value comparison. Both must be considered; this is not a choice of practice prompt."
+    },
+    {
+      "pages": [
+        22
+      ],
+      "classification": "mathematical-counting",
+      "reason": "The cone/flavour menu supplies the mathematical sample space to be counted. Customers make choices in the scenario; students have one counting task."
+    },
+    {
+      "pages": [
+        19
+      ],
+      "classification": "answer-construction",
+      "reason": "The missing gear factors admit equivalent correct entries; these are mathematical solutions, not alternative printed prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:f1713f7429cb3cac": {
+      "classification": "exam-level-selection",
+      "reason": "The 2022 exam asks candidates to choose six Section A questions and one Section B question. All separately marked tasks are kept for practice."
+    },
+    "3:1dd3404430d7ab27": {
+      "classification": "exam-level-selection",
+      "reason": "The 2022 exam asks candidates to choose six Section A questions and one Section B question. All separately marked tasks are kept for practice."
+    },
+    "22:09d8437eaf91bdb8": {
+      "classification": "mathematical-counting",
+      "reason": "The cone/flavour menu supplies the mathematical sample space to be counted. Customers make choices in the scenario; students have one counting task."
+    }
+  }
+}

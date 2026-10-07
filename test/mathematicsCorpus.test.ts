@@ -8,6 +8,7 @@ import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
 import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
+import foundation2022 from '../scripts/markbank/mathematics/reviews/2022-foundation-single.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/maths/higher';
 import { resolveCurriculumSpecification, findCanonicalTopic } from '../curriculumRegistry';
 import { examTopicIdsForQuestion } from '../data/examTopics/registry';
@@ -115,18 +116,19 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 
 
 describe.each([
-  { year: 2023, count: 35, review: foundation2023 },
-  { year: 2024, count: 38, review: foundation2024 },
-  { year: 2025, count: 42, review: foundation },
-  { year: 2026, count: 42, review: foundation2026 },
-])('$year Foundation Mathematics independent source review', ({ year, count, review: census }) => {
+  { year: 2022, count: 53, offered: 390, review: foundation2022 },
+  { year: 2023, count: 35, offered: 375, review: foundation2023 },
+  { year: 2024, count: 38, offered: 375, review: foundation2024 },
+  { year: 2025, count: 42, offered: 375, review: foundation },
+  { year: 2026, count: 42, offered: 375, review: foundation2026 },
+])('$year Foundation Mathematics independent source review', ({ year, count, offered, review: census }) => {
   const cards = FOUNDATION.filter(card => card.year === year);
 
-  it('retains every published marking unit and all 375 offered marks', () => {
+  it('retains every published marking unit and all offered marks', () => {
     expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
     expect(cards).toHaveLength(count);
     expect(new Set(cards.map(card => card.id)).size).toBe(count);
-    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(375);
+    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(offered);
     for (const [question, marks] of Object.entries(census.printedQuestionMarks)) {
       expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
         .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
@@ -156,6 +158,18 @@ describe.each([
 
 describe('Foundation Mathematics marking boundaries and source context', () => {
   const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
+
+  it('retains all 2022 long-question marks and the paired scales without hiding component prompts', () => {
+    for (const suffix of ['q6-a-ii-iii', 'q9-a-i-ii', 'q11-a-i-ii']) {
+      const card = task(2022, suffix);
+      expect(card.totalMarks).toBe(10);
+      expect(card.questionText).toContain('(ii)');
+    }
+    expect(task(2022, 'q11-b-ii').sourceMaterial?.pages).toEqual([28, 29]);
+    expect(task(2022, 'q11-b-iii').stem).toContain('€160');
+    expect(task(2022, 'q10-b-i').sourceMaterial?.measurementRequired).toBe(true);
+    expect(task(2022, 'q3-c').stem).toContain('2·5 cm³');
+  });
 
   it('uses the different credit bands in 2025 and 2026', () => {
     const prior = task(2025, 'q7-c-d');

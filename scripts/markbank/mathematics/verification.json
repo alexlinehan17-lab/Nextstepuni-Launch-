@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2023, 2024 and 2026",
-  "runtimeCards": 996,
-  "reviewedTasks": 325,
+  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2022, 2023, 2024 and 2026",
+  "runtimeCards": 1049,
+  "reviewedTasks": 378,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed",
+  "productionBuild": "passed through Foundation 2023\u20132026; 2022 data passed generation, typecheck and regression tests",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -115,7 +115,7 @@
     "runtimeIdsSha256": "4c8d8054bc23ff51ab9db0cf540b3b8f120522d62a46a7ad11b1dd79fd44d55b",
     "testNote": "Two registry/provenance tests initially timed out while concurrent subject builds competed for resources; both passed with one worker in the retry."
   },
-  "latestBatch": {
+  "foundation2023": {
     "paper": "2023 Foundation",
     "independentlyReviewedTasks": 35,
     "targetedRegressionTests": 150,
@@ -125,6 +125,18 @@
     "paperPagesInspected": 32,
     "schemePagesInspected": 20,
     "runtimeIdsSha256": "7dafb251bb020e8148edef424447fa8d2316737c5202a4982ffc26e0fef1e3a9",
+    "regressionWorkers": 1
+  },
+  "latestBatch": {
+    "paper": "2022 Foundation",
+    "independentlyReviewedTasks": 53,
+    "targetedRegressionTests": 154,
+    "previousRuntimeIdsRetained": 996,
+    "offeredMarks": 390,
+    "candidateMarks": 230,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 24,
+    "runtimeIdsSha256": "b283a080590c4c4bdfbb9b4eec6812fb741933a521a99fd249aa9c3bb7943a6a",
     "regressionWorkers": 1
   }
 }
