@@ -698,7 +698,7 @@ for (const paper of papers) {
 
 // Reviewed task boundaries override generic section guesses for this exact
 // paper. Frozen baseline identities remain below; new parts/routes are additive.
-const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json']
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
 for (const card of foundationTasks.cards) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
@@ -799,11 +799,15 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
     Object.assign(writingSection, canonicalForTopicIds(writingTopics));
   }
 
+  const reviewedSchemeUnion = predicate => [...new Set(reviewedCards.filter(predicate).flatMap(c => c.schemePages))].sort((a,b) => a-b);
+  const writingSchemePages = reviewedSchemeUnion(c => c.section === '3');
   const foundationSchemeSections = {
-    '1': [3], '2': [4, 5, 6],
-    '3': [...new Set([7, ...reviewedCards.filter(c => c.section === '3').flatMap(c => c.schemePages)])].sort((a,b) => a-b),
-    'R-1': [4], 'R-2A': [5], 'R-2B': [5], 'R-2C': [5],
-    'R-3A': [6], 'R-3B': [6], 'R-3C': [6], 'W-4B': [11, 12],
+    '1': reviewedSchemeUnion(c => c.section === '1'),
+    '2': reviewedSchemeUnion(c => c.section === '2'),
+    // Standard writing guidance precedes the first writing-task scheme page.
+    '3': [writingSchemePages[0] - 1, ...writingSchemePages],
+    ...Object.fromEntries(['R-1', 'R-2A', 'R-2B', 'R-2C', 'R-3A', 'R-3B', 'R-3C', 'W-4B']
+      .map(n => [n, reviewedSchemeUnion(c => !c.memberCardIds && (c.atlasQuestionId === n || c.atlasQuestionId.startsWith(n + '-')))])),
   };
   for (const n of ['1', '2', '3']) {
     const sourcePages = [...new Set(reviewedCards.filter(c => c.section === n).flatMap(c => c.sourceMaterial.pages))].sort((a,b) => a-b);

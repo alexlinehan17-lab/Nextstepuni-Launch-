@@ -1,0 +1,217 @@
+{
+  "year": 2016,
+  "level": "foundation",
+  "paperFileid": "LC001BLP000IV.pdf",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "fullPaperAndApplicableSchemeVisualSweep": true,
+  "reviewDate": "2026-10-07",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "Freagair gach ceist. Tá na treoracha don chuid seo ar an dlúthdhiosca.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 2,
+      "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+      "decision": "Correct-answer/map-box selection. Distractors are answers to one task, not alternative valid task routes."
+    },
+    {
+      "page": 3,
+      "raw": "Cá bhfuil stáisiún na ngardaí? (Cuir tic () sa bhosca ceart.)",
+      "decision": "Correct-answer/map-box selection. Distractors are answers to one task, not alternative valid task routes."
+    },
+    {
+      "page": 4,
+      "raw": "Nuair a bheidh an Chluastuiscint críochnaithe agat lean ar aghaidh agus freagair na ceisteanna eile",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 5,
+      "raw": "FREAGAIR GACH CEIST (1, 2 agus 3).",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 6,
+      "raw": "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Choose two of A/B/C: mechanically expand AB,AC,BC with complete sources and ten answers. Q2=50,Q3=60."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an litir atá anseo thíos agus freagair na ceisteanna ar fad atá fúithi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 7,
+      "raw": "Léigh an bróisiúr atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 7,
+      "raw": "Is iomaí ceantar Gaeltachta atá suite cois trá nó ar oileán. Ní mar sin atá Cúil Aodha, baile",
+      "decision": "Source narrative/poem or source-retrieval question, not a candidate task-choice menu."
+    },
+    {
+      "page": 8,
+      "raw": "Léigh an scéal nuachta atá anseo thíos agus freagair na ceisteanna ar fad atá faoi. (25 marc)",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 9,
+      "raw": "Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Choose two of A/B/C: mechanically expand AB,AC,BC with complete sources and ten answers. Q2=50,Q3=60."
+    },
+    {
+      "page": 9,
+      "raw": "Léigh an t-alt atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 10,
+      "raw": "Léigh an giota seo a leanas agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 10,
+      "raw": "banaltra nó ina ceoltóir nó ina múinteoir bunscoile. Ach ar deireadh, sa bhliain 2005, shocraigh sí ar bheith",
+      "decision": "Source narrative/poem or source-retrieval question, not a candidate task-choice menu."
+    },
+    {
+      "page": 10,
+      "raw": "Cén tslí bheatha a roghnaigh Úna sa bhliain 2005?",
+      "decision": "Source narrative/poem or source-retrieval question, not a candidate task-choice menu."
+    },
+    {
+      "page": 11,
+      "raw": "Léigh na véarsaí seo a leanas agus freagair na ceisteanna ar fad atá fúthu. (30 marc)",
+      "decision": "Required answers within section or selected passage; no additional selection."
+    },
+    {
+      "page": 11,
+      "raw": "Sceallóga nó sicín nó fiú uachtar reoite",
+      "decision": "Source narrative/poem or source-retrieval question, not a candidate task-choice menu."
+    },
+    {
+      "page": 13,
+      "raw": "FREAGAIR GACH CEIST (4 AGUS 5)",
+      "decision": "Both Q4 and Q5 required; one A/B in each. Four Q4 routes including three form jobs times two stories gives eight writing products, each90."
+    },
+    {
+      "page": 14,
+      "raw": "Freagair (a) NÓ (b).",
+      "decision": "Both Q4 and Q5 required; one A/B in each. Four Q4 routes including three form jobs times two stories gives eight writing products, each90."
+    },
+    {
+      "page": 15,
+      "raw": "NÓ",
+      "decision": "Both Q4 and Q5 required; one A/B in each. Four Q4 routes including three form jobs times two stories gives eight writing products, each90."
+    },
+    {
+      "page": 15,
+      "raw": "Ainmnigh cúig ábhar scoile a rinne tú sa scrúdú sin: ……………………………………………………..",
+      "decision": "Five school subjects / three hobbies are open content requests without a printed finite menu; keep within the whole form."
+    },
+    {
+      "page": 15,
+      "raw": "Luaigh trí chaitheamh aimsire atá agat: ………………......…………………..…………………………..",
+      "decision": "Five school subjects / three hobbies are open content requests without a printed finite menu; keep within the whole form."
+    },
+    {
+      "page": 15,
+      "raw": "Cén post ba mhaith leat? Cuir tic le ceann amháin (): Glantóir Garraíodóir Freastalaí",
+      "decision": "Closed choose-one job pool: Glantóir, Garraíodóir, Freastalaí. Generate three whole40-mark forms and pair each with both50-mark stories."
+    },
+    {
+      "page": 16,
+      "raw": "Freagair (a) NÓ (b).",
+      "decision": "Both Q4 and Q5 required; one A/B in each. Four Q4 routes including three form jobs times two stories gives eight writing products, each90."
+    },
+    {
+      "page": 17,
+      "raw": "NÓ",
+      "decision": "Both Q4 and Q5 required; one A/B in each. Four Q4 routes including three form jobs times two stories gives eight writing products, each90."
+    }
+  ],
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2016/LC001BLP017IV.mp3",
+    "httpStatus": 200,
+    "contentType": "audio/mpeg",
+    "bytes": 7762980,
+    "verified": "2026-10-07",
+    "browserReadyState": 4,
+    "durationSeconds": 1624.882708,
+    "playbackAdvanced": true
+  },
+  "sourceFindings": [
+    "Full20 paper/24 scheme pages swept. Total360=120aural+40matching+50Q2+60Q3+40Q4+50Q5. One Q4 and one Q5 required. Three form jobs generate eight writing products.",
+    "Listening14 exact0/full tasks, map top-left; matching CHEGJIABFD. Original pictures and recording retained.",
+    "Q2 An tIonad Turasóireachta letter, Cuireadh ó Chúil Aodha brochure, Oíche na Stoirme Móire news. Q3 Rí na hIománaíochta (Henry Shefflin), Úna–Ceoltóir agus Moltóir, Sionnach na Cathrach (all three stanzas and original illustration). Q3C schemePDF7, unlike Q3A/B PDF6.",
+    "Q3A4 partial scores0/2/3/4/5/6 with every published variant; Q3B4 scores0/2/3/6, bare Amhránaí0; Q3C3 scores0/4/6, including published third-verse-in-full4. All inherited by reading pairs.",
+    "NoticePDF14/scheme9–11: concert in hall, Paul O’Connell, Peataí ar Strae. Layout1+pictures8(4+4),13(4+3+3+3),4,4+language10. Activity4/2/0, venue4/3/2/1/0. Numeric date−1, month-only−1,3ú–5ú withoutmonth1;fee−2;barePaulO’Connell−3/contextpartial−2. Animal-charity awards4/3/2/1 with context/stray reference rules.",
+    "FormPDF15/scheme12–13: Tadhg de Brún, Cumann Gailf na Cille, An Cabhán. Jobs Glantóir/Garraíodóir/Freastalaí are three finite routes. Questions15, paragraph15, sharedlanguage10. Doubled30-point fields summed then divided2, roundedup once:21÷2=11. No individual half-mark rounding. Subjects5/hobbies3/yes-no personalanswers stay open content.",
+    "Form paragraph40words: adrem15, no golf-club-job/work reference ceiling8, off-topic5. Proportional shortlength deduction from paragraph award only;30words deduct25%. Sharedlanguage across whole form remains separate. No later fixed-length table.",
+    "5A Cóisir Lá Breithe schemePDF14;5B missed train with friend PDF15–16. Communication37+language13, five references,5B allfour pictures+oneextra. Missingreference reducescommunicationceiling by5. Proportional wholeawardedmark length adjustment (45of90words deduct50%). Whole50-mark criterion keeps adjustment confined when paired.",
+    "General standardwritingPDF8; SMM-only languagebandsPDF17, not standard rubric. Transcripts18–21;22–23blank;24cover. Private Symbol bullet/arrow/division sign normalized for readable extractedguidance."
+  ],
+  "remainingWork": [],
+  "runtimeVerification": {
+    "viewport": [
+      390,
+      844
+    ],
+    "sourceReaderRoutesChecked": 17,
+    "atlasRoutesChecked": 11,
+    "sourceReader": "All source formats, three form jobs and paired routes rendered. Navigation, close/focus return and horizontal overflow passed.",
+    "atlas": "All expected paper and scheme pages rendered including full reading/writing sections, complete poem with its separate scheme page and three form choices.",
+    "audio": "Official 2016 recording played in Bank and Atlas; readyState4, duration1624.882708seconds.",
+    "browserErrors": []
+  }
+}
