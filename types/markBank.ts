@@ -262,7 +262,7 @@ interface CardBase {
    *  map keys in `updateDoc` paths. Enforced by `isValidCardId`. */
   id: string;
   subjectId: string;
-  level: 'higher' | 'ordinary';
+  level: 'higher' | 'ordinary' | 'foundation';
   /** PART-level curriculum id. A card may never inherit its parent question's
    *  tag — the alternative parts of one Section C question routinely span
    *  different topics, and inheriting would file bread mould under the

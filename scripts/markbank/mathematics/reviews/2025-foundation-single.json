@@ -1,0 +1,1463 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2025,
+  "level": "foundation",
+  "lang": "ev",
+  "paperKey": "single",
+  "paperFileid": "LC003BLP000EV.pdf",
+  "schemeFileid": "LC003BLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "f3fc247f41a9db18814b230777beb2f24e8600e5423d17926636a04840a38f72",
+  "schemeSha256": "4058b676021b54d13aff5f81bb1a19f86d70fc81563cc8b38ab69d05bc23c53c",
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual reading of every question-paper and marking-scheme page; task boundaries transcribed from the separate published scale blocks.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 30,
+    "8": 30,
+    "9": 45,
+    "10": 45,
+    "11": 45
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5,
+    6
+  ],
+  "sourceNotes": [
+    "Foundation scales differ from Higher: 5B=(0,3,5), 10D=(0,4,5,7,10), 15D=(0,4,7,8,15). Use this scheme’s published marks.",
+    "Q11(b) has an apparently misplaced Full Credit −1 note referring to extra hours compared to Week 2. The printed note remains visible; it must not be rewritten as a net-pay rule.",
+    "Grouped parts share a single published scale. All required context and diagrams are provided through original page readers."
+  ],
+  "cards": [
+    {
+      "id": "maths-2025-fl-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        9,
+        15
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The table below is a list of the ages (in years) of a group of 14 people: 13, 15, 17, 18, 21, 23, 26, 29, 29, 30, 34, 36, 44, 46.",
+      "questionText": "Complete the stem and leaf diagram below to show the information in the table.",
+      "solutionQuotes": [
+        "Seven correct entries"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q1-b-c",
+      "printedParts": [
+        "Q1(b)",
+        "Q1(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "The table below is a list of the ages (in years) of a group of 14 people: 13, 15, 17, 18, 21, 23, 26, 29, 29, 30, 34, 36, 44, 46.",
+      "questionText": "(b) Find the range of the ages of the people in the group. (c) Find the mode of the ages of the people in the group.",
+      "solutionQuotes": [
+        "Range = 46 − 13 = 33",
+        "Mode = 29"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q1-d",
+      "printedParts": [
+        "Q1(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "",
+      "questionText": "Find the mean age of the five oldest people (30, 34, 36, 44, 46) in the group.",
+      "solutionQuotes": [
+        "190",
+        "38"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q2-a",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        8,
+        15
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "A certain cereal is sold in 500 gram boxes and 750 gram boxes.",
+      "questionText": "(i) A group, going on a camping holiday, buy 3 of the 500 gram boxes. Find the total weight of these boxes, in grams. (ii) They also buy a number of the 750 gram boxes. In total, the group buy 4500 grams of the cereal. Find how many of the 750 gram boxes they bought.",
+      "solutionQuotes": [
+        "1500",
+        "3000 ÷ 750 = 4"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "John and Mary divide €300 between them in the ratio 5:7. Mary gets the larger amount.",
+      "questionText": "Find how much money Mary gets.",
+      "solutionQuotes": [
+        "€25 × 7",
+        "175"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q2-c",
+      "printedParts": [
+        "Q2(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "Tom, Jack, and Michael went shopping and spent a total of €200. Jack spent €3 more than Tom. Michael spent €8 more than Tom.",
+      "questionText": "Find how much each of them spent.",
+      "solutionQuotes": [
+        "Tom = €63",
+        "Jack = €66",
+        "Michael = €71"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "A restaurant offers a three-course ‘lunch special’, where a customer chooses one starter, one main course, and one dessert from the menu below. Starter: Soup, Salad. Main Course: Roast Chicken, Grilled Fish, Steak, Vegetarian Salad. Dessert: Apple Crumble, Ice Cream, Chocolate Cake.",
+      "questionText": "Give one example of a ‘lunch special’ that a customer could choose.",
+      "solutionQuotes": [
+        "Any combination of one starter, one main and one dessert."
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q3-a-ii-iii",
+      "printedParts": [
+        "Q3(a)(ii)",
+        "Q3(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "A restaurant offers a three-course ‘lunch special’, where a customer chooses one starter, one main course, and one dessert from the menu below. Starter: Soup, Salad. Main Course: Roast Chicken, Grilled Fish, Steak, Vegetarian Salad. Dessert: Apple Crumble, Ice Cream, Chocolate Cake.",
+      "questionText": "(ii) How many different choices of ‘lunch special’ are available? (iii) A particular customer does not choose soup nor chocolate cake. How many different choices of ‘lunch special’ are available to that customer if they still choose three courses?",
+      "solutionQuotes": [
+        "2 × 4 × 3 = 24",
+        "1 × 4 × 2 = 8"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q3-b",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-probability"
+      ],
+      "stem": "In a survey, 42 people were asked to select their favourite exercise from walking, running, and cycling. The table below shows the results of the survey.",
+      "questionText": "(i) Complete the table above by filling in the 2 missing values. (ii) A person is chosen at random from the group of 42 in the table above. What is the probability that the person chosen is a female?",
+      "solutionQuotes": [
+        "8 + 5 + 10 = 23",
+        "19 − (4 + 8) = 19 − 12 = 7",
+        "19/42"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q4-a",
+      "printedParts": [
+        "Q4(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Mary has just received her electricity bill. The bill covers a 58 day billing period. Some of the data (A, B, C, D, and E) in the bill needs to be filled in.",
+      "questionText": "Find the value of A, the number of electricity units used.",
+      "solutionQuotes": [
+        "80 877 − 80 455 = 422"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q4-b-c",
+      "printedParts": [
+        "Q4(b)",
+        "Q4(c)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        8,
+        15
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Mary has just received her electricity bill. The bill covers a 58 day billing period. Some of the data (A, B, C, D, and E) in the bill needs to be filled in. In each of the next four parts give your answer in euro, correct to 2 decimal places.",
+      "questionText": "(b) Find the value of B, the standing charge for this 58 day period. (c) The electricity units cost €167·53 and there is also a PSO levy of €6·46. Find the value of C, the total excluding VAT.",
+      "solutionQuotes": [
+        "44·16",
+        "218·15"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q4-d-e",
+      "printedParts": [
+        "Q4(d)",
+        "Q4(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Mary has just received her electricity bill. The bill covers a 58 day billing period. Some of the data (A, B, C, D, and E) in the bill needs to be filled in. In each of the next four parts give your answer in euro, correct to 2 decimal places.",
+      "questionText": "(d) VAT is charged at 9% on the total. Find the value of D, how much VAT Mary must pay. (e) Find the value of E, the total including VAT.",
+      "solutionQuotes": [
+        "19·63",
+        "237·78"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q5-a",
+      "printedParts": [
+        "Q5(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Jackie travelled to England to go to a Premier League match. The exchange rate at the time of her trip was €1 = £0·88 sterling. Jackie changed €400 spending money into pounds sterling before she travelled.",
+      "questionText": "How much sterling did she get?",
+      "solutionQuotes": [
+        "352"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q5-b",
+      "printedParts": [
+        "Q5(b)(i)",
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        8,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The other costs associated with Jackie’s trip are listed below: Flights - £150; Accommodation - £110; Match ticket - £60; Train fare - £45.",
+      "questionText": "(i) Find the total (in pounds sterling) of these other costs. (ii) Find the total of these other costs in euro. Use the exchange rate €1 = £0·88 sterling. Give your answer correct to the nearest euro.",
+      "solutionQuotes": [
+        "365",
+        "415"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q5-c",
+      "printedParts": [
+        "Q5(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Jackie’s home in Ireland is 20 km from the airport. Her hotel in England is 15 miles from the stadium.",
+      "questionText": "Which of these is the shorter distance? Use the fact that 5 miles is approximately the same distance as 8 km. Show the calculations you made to come to your answer.",
+      "solutionQuotes": [
+        "Answer: 20 km",
+        "15 miles = 24 km"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q6-a-i-ii",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The diagram below shows a square tile. The pattern on the tile is made up of two right-angled triangles and a parallelogram. Three lengths are given on the diagram.",
+      "questionText": "(i) What is the size of the angle marked A on the diagram. (ii) Find the length marked x and the length marked y on the diagram.",
+      "solutionQuotes": [
+        "A = 90°",
+        "One step correct",
+        "Two steps correct"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q6-a-iii",
+      "printedParts": [
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        9,
+        15
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below shows a square tile. The pattern on the tile is made up of two right-angled triangles and a parallelogram. Three lengths are given on the diagram.",
+      "questionText": "Lily uses 14 of these tiles to tile the floor of her bathroom. Find the total area of 14 of these tiles. Give your answer in cm².",
+      "solutionQuotes": [
+        "6776"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The diagram below shows the location of two towns, X and Y. The scale on the diagram is 1 cm = 10 km. Each small square on the grid below has sides of length 1 cm. The circle below shows the region that is within 30 km of town X. A supermarket is to be built between the two towns such that it will be within 30 km of town X and also within 50 km of town Y.",
+      "questionText": "Draw a suitable circle of radius 5 cm on the diagram below and shade the region on the diagram where the supermarket could be built.",
+      "solutionQuotes": [
+        "Correct radius indicated",
+        "Correct circle drawn with no shading"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q7-a",
+      "printedParts": [
+        "Q7(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The diagram below shows the first 3 patterns in a sequence of patterns of dots.",
+      "questionText": "Draw pattern 4 of the sequence in the grid below.",
+      "solutionQuotes": [
+        "Some work of merit"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q7-b",
+      "printedParts": [
+        "Q7(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The diagram below shows the first 3 patterns in a sequence of patterns of dots.",
+      "questionText": "The table below shows the number of dots in some of the patterns in the sequence. Complete the table.",
+      "solutionQuotes": [
+        "Pattern 3",
+        "10",
+        "13",
+        "16",
+        "19"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q7-c-d",
+      "printedParts": [
+        "Q7(c)",
+        "Q7(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-algebra"
+      ],
+      "stem": "The number of dots in pattern k of the sequence can be found by using the formula: Number of dots = 3k + 1.",
+      "questionText": "(c) How many dots are in pattern 42 of the sequence? (d) Pattern m in the sequence has 154 dots. Find the value of m.",
+      "solutionQuotes": [
+        "127",
+        "51"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows the design used to make a company logo. It shows the triangle ABC, where: A = (2, 1), B = (4, 1), C = (2, 3). It also shows the triangle BDE.",
+      "questionText": "Write down the co-ordinates of the point E.",
+      "solutionQuotes": [
+        "E = (4, 7)"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q8-b",
+      "printedParts": [
+        "Q8(b)(i)",
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The diagram below shows the design used to make a company logo. It shows the triangle ABC, where: A = (2, 1), B = (4, 1), C = (2, 3). It also shows the triangle BDE. The triangle BDE is the image of the triangle ABC by an enlargement of scale factor k.",
+      "questionText": "(i) Write down the lengths of [AB] and [BD]. (ii) Use your answers to part (b)(i) to work out the value of k, the scale factor of the enlargement.",
+      "solutionQuotes": [
+        "2 [units]",
+        "6 [units]",
+        "Scale factor"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry",
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "The diagram below shows the design used to make a company logo. It shows the triangle ABC, where: A = (2, 1), B = (4, 1), C = (2, 3). It also shows the triangle BDE.",
+      "questionText": "The area of the triangle ABC is 2 square units. Using this, or otherwise, find the area of the triangle BDE.",
+      "solutionQuotes": [
+        "18"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-geometry"
+      ],
+      "stem": "The diagram below shows the design used to make a company logo. It shows the triangle ABC, where: A = (2, 1), B = (4, 1), C = (2, 3). It also shows the triangle BDE.",
+      "questionText": "Use the Theorem of Pythagoras, or otherwise, to find the distance from B to C. That is, find |BC|. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "2·8"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q9-a-i-ii",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Aoife drove from her home to a town 80 km away to visit a friend. After the visit Aoife drove home without stopping. The distance-time graph below represents her journey. Use the information from the graph to answer the following questions.",
+      "questionText": "(i) What time did Aoife start her journey? (ii) What do you think might have happened during the part of her journey labelled A?",
+      "solutionQuotes": [
+        "11:30",
+        "She stopped for a break/shop"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q9-a-iii-iv",
+      "printedParts": [
+        "Q9(a)(iii)",
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Aoife drove from her home to a town 80 km away to visit a friend. After the visit Aoife drove home without stopping. The distance-time graph below represents her journey. Use the information from the graph to answer the following questions.",
+      "questionText": "(iii) How long did Aoife stay with her friend? (iv) Find the total distance travelled by Aoife, in km.",
+      "solutionQuotes": [
+        "1 hour /60 mins",
+        "80 + 80 = 160"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q9-a-v",
+      "printedParts": [
+        "Q9(a)(v)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        9,
+        15
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic",
+        "mathematics-foundation-graphs-of-functions"
+      ],
+      "stem": "Aoife drove from her home to a town 80 km away to visit a friend. After the visit Aoife drove home without stopping. The distance-time graph below represents her journey. Use the information from the graph to answer the following questions.",
+      "questionText": "Find Aoife’s average speed, in km/hour, on the journey home. Give your answer correct to the nearest whole number.",
+      "solutionQuotes": [
+        "53"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "In a survey, 120 people in Dublin Airport were asked to name the country that they were flying to. The results of the survey are shown in the table below. Destination: Greece, France, Portugal, Spain. Number of People: 10, 35, 30, 45.",
+      "questionText": "On the grid below, draw a bar chart to represent the information in the table.",
+      "solutionQuotes": [
+        "One bar correct",
+        "Two bars correct"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic",
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "In a survey, 120 people in Dublin Airport were asked to name the country that they were flying to. The results of the survey are shown in the table below. Destination: Greece, France, Portugal, Spain. Number of People: 10, 35, 30, 45.",
+      "questionText": "Find the percentage of the 120 people surveyed who were flying to Spain.",
+      "solutionQuotes": [
+        "37·5%"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-data-statistics"
+      ],
+      "stem": "One week later the survey was repeated on a different group of 120 people. The results of this new survey are shown in the pie chart below.",
+      "questionText": "Use the pie chart to work out the number of people who were flying to Portugal.",
+      "solutionQuotes": [
+        "24"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q10-a",
+      "printedParts": [
+        "Q10(a)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Amanda is buying solar panels. The solar panels are rectangular in shape. They are 98 cm wide and 172 cm long.",
+      "questionText": "Find the area of one solar panel, in cm².",
+      "solutionQuotes": [
+        "172 × 98 = 16 856"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q10-b-i-ii",
+      "printedParts": [
+        "Q10(b)(i)",
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Assume that, on average, one of these solar panels will produce 0·4 units of electricity per hour for 5 hours each day.",
+      "questionText": "(i) Find the number of units of electricity that this solar panel will produce on average per day. (ii) Find the number of units of electricity that 4 of these solar panels will produce in one year (365 days).",
+      "solutionQuotes": [
+        "0·4 × 5 = 2",
+        "2 × 4 × 365 = 2920"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Assume that, on average, one of these solar panels will produce 0·4 units of electricity per hour for 5 hours each day. Amanda has just installed 4 of these solar panels on her roof. She will use 95% of the units of electricity that they produce. She is currently paying €0·3970 for each unit of electricity she uses.",
+      "questionText": "Using your answer from part b(ii), find how much she will save in 1 year because of the panels. Give your answer correct to 2 decimal places.",
+      "solutionQuotes": [
+        "1101·28"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q10-c-i-ii",
+      "printedParts": [
+        "Q10(c)(i)",
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Tom has designed a concrete table for the garden. The design, shown below, has a rectangular table top on two supporting cylindrical columns. The table top is in the shape of a rectangular solid that is 1·5 m long, 0·8 m wide and 14 cm high, as shown in the diagram below.",
+      "questionText": "(i) Convert 1·5 m and 0·8 m to cm. (ii) Find the volume of concrete needed to make the rectangular table top. Give your answer in cm³.",
+      "solutionQuotes": [
+        "150 cm",
+        "80 cm",
+        "168 000"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q10-c-iii",
+      "printedParts": [
+        "Q10(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-area-volume"
+      ],
+      "stem": "Tom has designed a concrete table for the garden. The design, shown below, has a rectangular table top on two supporting cylindrical columns. The table top is in the shape of a rectangular solid that is 1·5 m long, 0·8 m wide and 14 cm high, as shown in the diagram below.",
+      "questionText": "Each cylindrical column has a radius of 10 cm and a height of 90 cm. Find the volume of concrete needed to make the 2 columns. Give your answer correct to the nearest cm³.",
+      "solutionQuotes": [
+        "56 549"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q10-c-iv",
+      "printedParts": [
+        "Q10(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The total volume of concrete needed to make the table is 225 litres. A litre of concrete weighs 2·24 kg.",
+      "questionText": "Find the total weight of the table, in kg.",
+      "solutionQuotes": [
+        "225 × 2·24 = 504 kg"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q11-a-i-ii",
+      "printedParts": [
+        "Q11(a)(i)",
+        "Q11(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Jacinta starts a new job. Each week she is paid €11·30 per hour for the first 30 hours she works. She is paid €16·95 for every extra hour that she works beyond the 30 hours.",
+      "questionText": "(i) In Week 1, Jacinta works 30 hours. Find Jacinta’s gross pay for Week 1. (ii) In Week 2, Jacinta works 38 hours. Find Jacinta’s gross pay for Week 2.",
+      "solutionQuotes": [
+        "339",
+        "474·60"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q11-a-iii",
+      "printedParts": [
+        "Q11(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Jacinta starts a new job. Each week she is paid €11·30 per hour for the first 30 hours she works. She is paid €16·95 for every extra hour that she works beyond the 30 hours.",
+      "questionText": "In Week 3, Jacinta’s gross pay is €525·45. Find how many extra hours Jacinta worked in Week 3 compared to Week 1.",
+      "solutionQuotes": [
+        "11 [hours]"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q11-b",
+      "printedParts": [
+        "Q11(b)(i)",
+        "Q11(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "In Week 4, Jacinta’s gross pay is €508·50. She pays tax at a rate of 20% on her gross pay.",
+      "questionText": "(i) Find Jacinta’s gross tax for Week 4. (ii) Her weekly tax credit for Week 4 is €76·92. Find Jacinta’s net pay for Week 4.",
+      "solutionQuotes": [
+        "101·70",
+        "483·72"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q11-c",
+      "printedParts": [
+        "Q11(c)(i)",
+        "Q11(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "Jacinta drives for 222 km. Her car uses 1 litre of petrol for every 18·5 km that it travels.",
+      "questionText": "(i) Find the number of litres of petrol used on her drive. (ii) The petrol used on this journey costs €1·73 per litre. Find the cost of the petrol used on her drive.",
+      "solutionQuotes": [
+        "222 ÷ 18·5 = 12 litres",
+        "20·76"
+      ]
+    },
+    {
+      "id": "maths-2025-fl-q11-d",
+      "printedParts": [
+        "Q11(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        8,
+        15
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-foundation-arithmetic"
+      ],
+      "stem": "The value of Jacinta’s car decreases (depreciates) by 10% each year. She paid €23 000 for her car exactly 2 years ago.",
+      "questionText": "Find the value of the car today.",
+      "solutionQuotes": [
+        "18 630"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        8
+      ],
+      "wording": "give one example of a lunch special",
+      "classification": "mathematical-answer-construction",
+      "reason": "The menu is the mathematical sample space. The task asks for one valid outcome, then separately asks for the number of outcomes. The 24 meals are possible answers to one question, not a pool of differently worded practice prompts; expanding them would supply the answer in each prompt."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "Which is shorter? Tick one box only",
+      "classification": "answer-selection",
+      "reason": "The two boxes are competing answers to one comparison, not alternative examination tasks."
+    },
+    {
+      "pages": [
+        19
+      ],
+      "wording": "or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same geometry task and share its scale."
+    }
+  ],
+  "selectionDecisions": {
+    "3:10caa142a6918730": {
+      "classification": "exam-level-selection",
+      "reason": "Retain every independently marked question; examination-level question selection does not combine tasks."
+    },
+    "4:df8507815d44c1c5": {
+      "classification": "exam-level-selection",
+      "reason": "Retain every independently marked question; examination-level question selection does not combine tasks."
+    },
+    "8:5a6e87cb8865a95c": {
+      "classification": "mathematical-answer-construction",
+      "reason": "The menu is the mathematical sample space. The task asks for one valid outcome, then separately asks for the number of outcomes. The 24 meals are possible answers to one question, not a pool of differently worded practice prompts; expanding them would supply the answer in each prompt."
+    },
+    "8:b7b565a648e55345": {
+      "classification": "mathematical-answer-construction",
+      "reason": "The menu is the mathematical sample space. The task asks for one valid outcome, then separately asks for the number of outcomes. The 24 meals are possible answers to one question, not a pool of differently worded practice prompts; expanding them would supply the answer in each prompt."
+    },
+    "8:5d6335a003061c34": {
+      "classification": "mathematical-answer-construction",
+      "reason": "The menu is the mathematical sample space. The task asks for one valid outcome, then separately asks for the number of outcomes. The 24 meals are possible answers to one question, not a pool of differently worded practice prompts; expanding them would supply the answer in each prompt."
+    },
+    "8:7945e2df1487bd12": {
+      "classification": "mathematical-answer-construction",
+      "reason": "The menu is the mathematical sample space. The task asks for one valid outcome, then separately asks for the number of outcomes. The 24 meals are possible answers to one question, not a pool of differently worded practice prompts; expanding them would supply the answer in each prompt."
+    },
+    "19:7c2eca7290603cbc": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same geometry task and share its scale."
+    },
+    "19:10ceabab4cbe4a43": {
+      "classification": "method-choice",
+      "reason": "Alternative methods solve the same geometry task and share its scale."
+    },
+    "20:6d541d1c3f922848": {
+      "classification": "exam-level-selection",
+      "reason": "Retain every independently marked question; examination-level question selection does not combine tasks."
+    },
+    "24:6a26f8682acc7e1b": {
+      "classification": "mathematical-context",
+      "reason": "The wording describes data, random selection or an answer to the mathematical problem, not a choice between printed prompts."
+    }
+  }
+}

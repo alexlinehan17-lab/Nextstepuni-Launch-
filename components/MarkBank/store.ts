@@ -34,6 +34,7 @@
  * silently.
  */
 
+import type { Level } from './levels';
 import { doc as fsDoc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../../firebase';
 import { saveInBackground } from '../../utils/firestoreWrite';
@@ -87,7 +88,7 @@ export function readLocal(uid: string | undefined, deckId: DeckId): DeckState {
  * Ordinary should never watch the tool open on Biology Higher and correct it,
  * which is two clicks every single session forever.
  */
-export interface DeckChoice { subjectId: string; level: 'higher' | 'ordinary' }
+export interface DeckChoice { subjectId: string; level: Level }
 
 const choiceKey = (uid: string | undefined) => `mb:choice:${uid || 'anon'}`;
 
@@ -97,7 +98,7 @@ export function readChoice(uid: string | undefined): DeckChoice | null {
     if (!raw) return null;
     const parsed = JSON.parse(raw) as DeckChoice;
     if (!parsed?.subjectId) return null;
-    return parsed.level === 'ordinary' || parsed.level === 'higher' ? parsed : null;
+    return parsed.level === 'ordinary' || parsed.level === 'higher' || parsed.level === 'foundation' ? parsed : null;
   } catch {
     return null;
   }

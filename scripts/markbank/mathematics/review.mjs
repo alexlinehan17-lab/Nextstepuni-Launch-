@@ -53,7 +53,7 @@ export function applyMathematicsReview(authored) {
       pages: card.sourcePages,
       sourceFileid: paper.paperFileid,
       ...(card.measurementRequired ? { measurementRequired: true } : {}),
-      attribution: `SEC Mathematics ${paper.year} ${paper.level === 'higher' ? 'Higher' : 'Ordinary'} Level examination paper — © State Examinations Commission.`,
+      attribution: `SEC Mathematics ${paper.year} ${({ higher: 'Higher', ordinary: 'Ordinary', foundation: 'Foundation' })[paper.level]} Level examination paper — © State Examinations Commission.`,
       presentationNote: 'Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer.',
     },
   };

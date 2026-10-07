@@ -45,6 +45,7 @@ import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/o
 import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-studies/higher';
 import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
 import { CARDS as MATHS_HIGHER } from '../components/MarkBank/cards/maths/higher';
+import { CARDS as MATHS_FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
 import { CARDS as MATHS_ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
 import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/higher';
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
@@ -72,7 +73,7 @@ const SAMPLE_CARDS = [
   ...PHYS_HIGHER, ...PHYS_ORDINARY, ...AGSCI_HIGHER, ...AGSCI_ORDINARY,
   ...BUS_HIGHER, ...BUS_ORDINARY, ...HE_HIGHER, ...HE_ORDINARY,
   ...ECON_HIGHER, ...ECON_ORDINARY, ...CONS_HIGHER, ...CONS_ORDINARY,
-  ...MATHS_HIGHER, ...MATHS_ORDINARY, ...ENGLISH_HIGHER, ...ENGLISH_ORDINARY,
+  ...MATHS_HIGHER, ...MATHS_ORDINARY, ...MATHS_FOUNDATION, ...ENGLISH_HIGHER, ...ENGLISH_ORDINARY,
   ...IRISH_HIGHER, ...IRISH_ORDINARY,
   ...ART_HIGHER, ...ART_ORDINARY,
   ...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY,
@@ -115,7 +116,7 @@ const comparable = (text: string) => comparableScheme(text);
 
 const schemeFor = (card: { year: number; level: string; subjectId: string }) =>
   resolve(ROOT, 'examiner-reports', card.subjectId, 'schemes',
-    `${card.year}-${card.level === 'higher' ? 'hl' : 'ol'}.md`);
+    `${card.year}-${({ higher: 'hl', ordinary: 'ol', foundation: 'fl' } as Record<string, string>)[card.level]}.md`);
 
 const schemeCache = new Map<string, string>();
 const schemeText = (card: { year: number; level: string; subjectId: string }) => {

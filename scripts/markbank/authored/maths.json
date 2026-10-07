@@ -38592,5 +38592,1321 @@
    }
   ],
   "notes": "Manually authored after independent visual review of the paper and marking boundary on 2026-10-07. The official question and scheme readers retain diagram, context, worked methods and all credit notes."
+ },
+ {
+  "id": "maths-2025-fl-q1-a",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-a",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q1(a)",
+  "stem": "The table below is a list of the ages (in years) of a group of 14 people: 13, 15, 17, 18, 21, 23, 26, 29, 29, 30, 34, 36, 44, 46.",
+  "questionText": "Complete the stem and leaf diagram below to show the information in the table.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q1-a-solution-1",
+    "kind": "criterion",
+    "verbatim": "Seven correct entries",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q1-b-c",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-b-c",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q1(b), Q1(c)",
+  "stem": "The table below is a list of the ages (in years) of a group of 14 people: 13, 15, 17, 18, 21, 23, 26, 29, 29, 30, 34, 36, 44, 46.",
+  "questionText": "(b) Find the range of the ages of the people in the group. (c) Find the mode of the ages of the people in the group.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q1-b-c-solution-1",
+    "kind": "point",
+    "verbatim": "Range = 46 − 13 = 33",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q1-b-c-solution-2",
+    "kind": "point",
+    "verbatim": "Mode = 29",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q1-d",
+  "topicId": "maths-1-6",
+  "conceptId": "q1-d",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q1(d)",
+  "stem": "",
+  "questionText": "Find the mean age of the five oldest people (30, 34, 36, 44, 46) in the group.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q1-d-solution-1",
+    "kind": "point",
+    "verbatim": "190",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q1-d-solution-2",
+    "kind": "point",
+    "verbatim": "38",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q2-a",
+  "topicId": "maths-3-3",
+  "conceptId": "q2-a",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q2(a)(i), Q2(a)(ii)",
+  "stem": "A certain cereal is sold in 500 gram boxes and 750 gram boxes.",
+  "questionText": "(i) A group, going on a camping holiday, buy 3 of the 500 gram boxes. Find the total weight of these boxes, in grams. (ii) They also buy a number of the 750 gram boxes. In total, the group buy 4500 grams of the cereal. Find how many of the 750 gram boxes they bought.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "1500",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "3000 ÷ 750 = 4",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q2-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q2-b",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q2(b)",
+  "stem": "John and Mary divide €300 between them in the ratio 5:7. Mary gets the larger amount.",
+  "questionText": "Find how much money Mary gets.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "€25 × 7",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "175",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q2-c",
+  "topicId": "maths-4-2",
+  "conceptId": "q2-c",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q2(c)",
+  "stem": "Tom, Jack, and Michael went shopping and spent a total of €200. Jack spent €3 more than Tom. Michael spent €8 more than Tom.",
+  "questionText": "Find how much each of them spent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "Tom = €63",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "Jack = €66",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q2-c-solution-3",
+    "kind": "point",
+    "verbatim": "Michael = €71",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q3-a-i",
+  "topicId": "maths-1-1",
+  "conceptId": "q3-a-i",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q3(a)(i)",
+  "stem": "A restaurant offers a three-course ‘lunch special’, where a customer chooses one starter, one main course, and one dessert from the menu below. Starter: Soup, Salad. Main Course: Roast Chicken, Grilled Fish, Steak, Vegetarian Salad. Dessert: Apple Crumble, Ice Cream, Chocolate Cake.",
+  "questionText": "Give one example of a ‘lunch special’ that a customer could choose.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q3-a-i-solution-1",
+    "kind": "criterion",
+    "verbatim": "Any combination of one starter, one main and one dessert.",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q3-a-ii-iii",
+  "topicId": "maths-1-1",
+  "conceptId": "q3-a-ii-iii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q3(a)(ii), Q3(a)(iii)",
+  "stem": "A restaurant offers a three-course ‘lunch special’, where a customer chooses one starter, one main course, and one dessert from the menu below. Starter: Soup, Salad. Main Course: Roast Chicken, Grilled Fish, Steak, Vegetarian Salad. Dessert: Apple Crumble, Ice Cream, Chocolate Cake.",
+  "questionText": "(ii) How many different choices of ‘lunch special’ are available? (iii) A particular customer does not choose soup nor chocolate cake. How many different choices of ‘lunch special’ are available to that customer if they still choose three courses?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q3-a-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "2 × 4 × 3 = 24",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q3-a-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "1 × 4 × 2 = 8",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q3-b",
+  "topicId": "maths-1-2",
+  "conceptId": "q3-b",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q3(b)(i), Q3(b)(ii)",
+  "stem": "In a survey, 42 people were asked to select their favourite exercise from walking, running, and cycling. The table below shows the results of the survey.",
+  "questionText": "(i) Complete the table above by filling in the 2 missing values. (ii) A person is chosen at random from the group of 42 in the table above. What is the probability that the person chosen is a female?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "8 + 5 + 10 = 23",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "19 − (4 + 8) = 19 − 12 = 7",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "19/42",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q4-a",
+  "topicId": "maths-3-3",
+  "conceptId": "q4-a",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q4(a)",
+  "stem": "Mary has just received her electricity bill. The bill covers a 58 day billing period. Some of the data (A, B, C, D, and E) in the bill needs to be filled in.",
+  "questionText": "Find the value of A, the number of electricity units used.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "80 877 − 80 455 = 422",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q4-b-c",
+  "topicId": "maths-3-3",
+  "conceptId": "q4-b-c",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q4(b), Q4(c)",
+  "stem": "Mary has just received her electricity bill. The bill covers a 58 day billing period. Some of the data (A, B, C, D, and E) in the bill needs to be filled in. In each of the next four parts give your answer in euro, correct to 2 decimal places.",
+  "questionText": "(b) Find the value of B, the standing charge for this 58 day period. (c) The electricity units cost €167·53 and there is also a PSO levy of €6·46. Find the value of C, the total excluding VAT.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q4-b-c-solution-1",
+    "kind": "point",
+    "verbatim": "44·16",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q4-b-c-solution-2",
+    "kind": "point",
+    "verbatim": "218·15",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q4-d-e",
+  "topicId": "maths-3-3",
+  "conceptId": "q4-d-e",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q4(d), Q4(e)",
+  "stem": "Mary has just received her electricity bill. The bill covers a 58 day billing period. Some of the data (A, B, C, D, and E) in the bill needs to be filled in. In each of the next four parts give your answer in euro, correct to 2 decimal places.",
+  "questionText": "(d) VAT is charged at 9% on the total. Find the value of D, how much VAT Mary must pay. (e) Find the value of E, the total including VAT.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q4-d-e-solution-1",
+    "kind": "point",
+    "verbatim": "19·63",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q4-d-e-solution-2",
+    "kind": "point",
+    "verbatim": "237·78",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q5-a",
+  "topicId": "maths-3-3",
+  "conceptId": "q5-a",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q5(a)",
+  "stem": "Jackie travelled to England to go to a Premier League match. The exchange rate at the time of her trip was €1 = £0·88 sterling. Jackie changed €400 spending money into pounds sterling before she travelled.",
+  "questionText": "How much sterling did she get?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "352",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q5-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q5-b",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q5(b)(i), Q5(b)(ii)",
+  "stem": "The other costs associated with Jackie’s trip are listed below: Flights - £150; Accommodation - £110; Match ticket - £60; Train fare - £45.",
+  "questionText": "(i) Find the total (in pounds sterling) of these other costs. (ii) Find the total of these other costs in euro. Use the exchange rate €1 = £0·88 sterling. Give your answer correct to the nearest euro.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "365",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "415",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q5-c",
+  "topicId": "maths-3-3",
+  "conceptId": "q5-c",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q5(c)",
+  "stem": "Jackie’s home in Ireland is 20 km from the airport. Her hotel in England is 15 miles from the stadium.",
+  "questionText": "Which of these is the shorter distance? Use the fact that 5 miles is approximately the same distance as 8 km. Show the calculations you made to come to your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q5-c-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: 20 km",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q5-c-solution-2",
+    "kind": "point",
+    "verbatim": "15 miles = 24 km",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q6-a-i-ii",
+  "topicId": "maths-2-1",
+  "conceptId": "q6-a-i-ii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q6(a)(i), Q6(a)(ii)",
+  "stem": "The diagram below shows a square tile. The pattern on the tile is made up of two right-angled triangles and a parallelogram. Three lengths are given on the diagram.",
+  "questionText": "(i) What is the size of the angle marked A on the diagram. (ii) Find the length marked x and the length marked y on the diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q6-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "A = 90°",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q6-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "One step correct",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q6-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Two steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q6-a-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "q6-a-iii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q6(a)(iii)",
+  "stem": "The diagram below shows a square tile. The pattern on the tile is made up of two right-angled triangles and a parallelogram. Three lengths are given on the diagram.",
+  "questionText": "Lily uses 14 of these tiles to tile the floor of her bathroom. Find the total area of 14 of these tiles. Give your answer in cm².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q6-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "6776",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q6-b",
+  "topicId": "maths-2-1",
+  "conceptId": "q6-b",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q6(b)",
+  "stem": "The diagram below shows the location of two towns, X and Y. The scale on the diagram is 1 cm = 10 km. Each small square on the grid below has sides of length 1 cm. The circle below shows the region that is within 30 km of town X. A supermarket is to be built between the two towns such that it will be within 30 km of town X and also within 50 km of town Y.",
+  "questionText": "Draw a suitable circle of radius 5 cm on the diagram below and shade the region on the diagram where the supermarket could be built.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q6-b-solution-1",
+    "kind": "criterion",
+    "verbatim": "Correct radius indicated",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q6-b-solution-2",
+    "kind": "criterion",
+    "verbatim": "Correct circle drawn with no shading",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q7-a",
+  "topicId": "maths-4-1",
+  "conceptId": "q7-a",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q7(a)",
+  "stem": "The diagram below shows the first 3 patterns in a sequence of patterns of dots.",
+  "questionText": "Draw pattern 4 of the sequence in the grid below.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q7-a-solution-1",
+    "kind": "criterion",
+    "verbatim": "Some work of merit",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q7-b",
+  "topicId": "maths-4-1",
+  "conceptId": "q7-b",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q7(b)",
+  "stem": "The diagram below shows the first 3 patterns in a sequence of patterns of dots.",
+  "questionText": "The table below shows the number of dots in some of the patterns in the sequence. Complete the table.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "Pattern 3",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q7-b-solution-2",
+    "kind": "point",
+    "verbatim": "10",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q7-b-solution-3",
+    "kind": "point",
+    "verbatim": "13",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q7-b-solution-4",
+    "kind": "point",
+    "verbatim": "16",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q7-b-solution-5",
+    "kind": "point",
+    "verbatim": "19",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q7-c-d",
+  "topicId": "maths-4-2",
+  "conceptId": "q7-c-d",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q7(c), Q7(d)",
+  "stem": "The number of dots in pattern k of the sequence can be found by using the formula: Number of dots = 3k + 1.",
+  "questionText": "(c) How many dots are in pattern 42 of the sequence? (d) Pattern m in the sequence has 154 dots. Find the value of m.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q7-c-d-solution-1",
+    "kind": "point",
+    "verbatim": "127",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q7-c-d-solution-2",
+    "kind": "point",
+    "verbatim": "51",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q8-a",
+  "topicId": "maths-2-2",
+  "conceptId": "q8-a",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q8(a)",
+  "stem": "The diagram below shows the design used to make a company logo. It shows the triangle ABC, where: A = (2, 1), B = (4, 1), C = (2, 3). It also shows the triangle BDE.",
+  "questionText": "Write down the co-ordinates of the point E.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q8-a-solution-1",
+    "kind": "point",
+    "verbatim": "E = (4, 7)",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q8-b",
+  "topicId": "maths-2-4",
+  "conceptId": "q8-b",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q8(b)(i), Q8(b)(ii)",
+  "stem": "The diagram below shows the design used to make a company logo. It shows the triangle ABC, where: A = (2, 1), B = (4, 1), C = (2, 3). It also shows the triangle BDE. The triangle BDE is the image of the triangle ABC by an enlargement of scale factor k.",
+  "questionText": "(i) Write down the lengths of [AB] and [BD]. (ii) Use your answers to part (b)(i) to work out the value of k, the scale factor of the enlargement.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "2 [units]",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q8-b-solution-2",
+    "kind": "point",
+    "verbatim": "6 [units]",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q8-b-solution-3",
+    "kind": "point",
+    "verbatim": "Scale factor",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q8-c",
+  "topicId": "maths-2-4",
+  "conceptId": "q8-c",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q8(c)",
+  "stem": "The diagram below shows the design used to make a company logo. It shows the triangle ABC, where: A = (2, 1), B = (4, 1), C = (2, 3). It also shows the triangle BDE.",
+  "questionText": "The area of the triangle ABC is 2 square units. Using this, or otherwise, find the area of the triangle BDE.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q8-c-solution-1",
+    "kind": "point",
+    "verbatim": "18",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q8-d",
+  "topicId": "maths-2-1",
+  "conceptId": "q8-d",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2025 FL Q8(d)",
+  "stem": "The diagram below shows the design used to make a company logo. It shows the triangle ABC, where: A = (2, 1), B = (4, 1), C = (2, 3). It also shows the triangle BDE.",
+  "questionText": "Use the Theorem of Pythagoras, or otherwise, to find the distance from B to C. That is, find |BC|. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q8-d-solution-1",
+    "kind": "point",
+    "verbatim": "2·8",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q9-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "q9-a-i-ii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q9(a)(i), Q9(a)(ii)",
+  "stem": "Aoife drove from her home to a town 80 km away to visit a friend. After the visit Aoife drove home without stopping. The distance-time graph below represents her journey. Use the information from the graph to answer the following questions.",
+  "questionText": "(i) What time did Aoife start her journey? (ii) What do you think might have happened during the part of her journey labelled A?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q9-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "11:30",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q9-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "She stopped for a break/shop",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q9-a-iii-iv",
+  "topicId": "maths-5-1",
+  "conceptId": "q9-a-iii-iv",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q9(a)(iii), Q9(a)(iv)",
+  "stem": "Aoife drove from her home to a town 80 km away to visit a friend. After the visit Aoife drove home without stopping. The distance-time graph below represents her journey. Use the information from the graph to answer the following questions.",
+  "questionText": "(iii) How long did Aoife stay with her friend? (iv) Find the total distance travelled by Aoife, in km.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q9-a-iii-iv-solution-1",
+    "kind": "point",
+    "verbatim": "1 hour /60 mins",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q9-a-iii-iv-solution-2",
+    "kind": "point",
+    "verbatim": "80 + 80 = 160",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q9-a-v",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-a-v",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q9(a)(v)",
+  "stem": "Aoife drove from her home to a town 80 km away to visit a friend. After the visit Aoife drove home without stopping. The distance-time graph below represents her journey. Use the information from the graph to answer the following questions.",
+  "questionText": "Find Aoife’s average speed, in km/hour, on the journey home. Give your answer correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q9-a-v-solution-1",
+    "kind": "point",
+    "verbatim": "53",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q9-b-i",
+  "topicId": "maths-1-6",
+  "conceptId": "q9-b-i",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q9(b)(i)",
+  "stem": "In a survey, 120 people in Dublin Airport were asked to name the country that they were flying to. The results of the survey are shown in the table below. Destination: Greece, France, Portugal, Spain. Number of People: 10, 35, 30, 45.",
+  "questionText": "On the grid below, draw a bar chart to represent the information in the table.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q9-b-i-solution-1",
+    "kind": "criterion",
+    "verbatim": "One bar correct",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q9-b-i-solution-2",
+    "kind": "criterion",
+    "verbatim": "Two bars correct",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q9-b-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q9-b-ii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q9(b)(ii)",
+  "stem": "In a survey, 120 people in Dublin Airport were asked to name the country that they were flying to. The results of the survey are shown in the table below. Destination: Greece, France, Portugal, Spain. Number of People: 10, 35, 30, 45.",
+  "questionText": "Find the percentage of the 120 people surveyed who were flying to Spain.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q9-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "37·5%",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q9-b-iii",
+  "topicId": "maths-1-6",
+  "conceptId": "q9-b-iii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q9(b)(iii)",
+  "stem": "One week later the survey was repeated on a different group of 120 people. The results of this new survey are shown in the pie chart below.",
+  "questionText": "Use the pie chart to work out the number of people who were flying to Portugal.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q9-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "24",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q10-a",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-a",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q10(a)",
+  "stem": "Amanda is buying solar panels. The solar panels are rectangular in shape. They are 98 cm wide and 172 cm long.",
+  "questionText": "Find the area of one solar panel, in cm².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q10-a-solution-1",
+    "kind": "point",
+    "verbatim": "172 × 98 = 16 856",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q10-b-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-b-i-ii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q10(b)(i), Q10(b)(ii)",
+  "stem": "Assume that, on average, one of these solar panels will produce 0·4 units of electricity per hour for 5 hours each day.",
+  "questionText": "(i) Find the number of units of electricity that this solar panel will produce on average per day. (ii) Find the number of units of electricity that 4 of these solar panels will produce in one year (365 days).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q10-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "0·4 × 5 = 2",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q10-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "2 × 4 × 365 = 2920",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q10-b-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-b-iii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q10(b)(iii)",
+  "stem": "Assume that, on average, one of these solar panels will produce 0·4 units of electricity per hour for 5 hours each day. Amanda has just installed 4 of these solar panels on her roof. She will use 95% of the units of electricity that they produce. She is currently paying €0·3970 for each unit of electricity she uses.",
+  "questionText": "Using your answer from part b(ii), find how much she will save in 1 year because of the panels. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q10-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "1101·28",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q10-c-i-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-c-i-ii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q10(c)(i), Q10(c)(ii)",
+  "stem": "Tom has designed a concrete table for the garden. The design, shown below, has a rectangular table top on two supporting cylindrical columns. The table top is in the shape of a rectangular solid that is 1·5 m long, 0·8 m wide and 14 cm high, as shown in the diagram below.",
+  "questionText": "(i) Convert 1·5 m and 0·8 m to cm. (ii) Find the volume of concrete needed to make the rectangular table top. Give your answer in cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q10-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "150 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q10-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "80 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q10-c-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "168 000",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q10-c-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "q10-c-iii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q10(c)(iii)",
+  "stem": "Tom has designed a concrete table for the garden. The design, shown below, has a rectangular table top on two supporting cylindrical columns. The table top is in the shape of a rectangular solid that is 1·5 m long, 0·8 m wide and 14 cm high, as shown in the diagram below.",
+  "questionText": "Each cylindrical column has a radius of 10 cm and a height of 90 cm. Find the volume of concrete needed to make the 2 columns. Give your answer correct to the nearest cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q10-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "56 549",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q10-c-iv",
+  "topicId": "maths-3-3",
+  "conceptId": "q10-c-iv",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q10(c)(iv)",
+  "stem": "The total volume of concrete needed to make the table is 225 litres. A litre of concrete weighs 2·24 kg.",
+  "questionText": "Find the total weight of the table, in kg.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q10-c-iv-solution-1",
+    "kind": "point",
+    "verbatim": "225 × 2·24 = 504 kg",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q11-a-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-a-i-ii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q11(a)(i), Q11(a)(ii)",
+  "stem": "Jacinta starts a new job. Each week she is paid €11·30 per hour for the first 30 hours she works. She is paid €16·95 for every extra hour that she works beyond the 30 hours.",
+  "questionText": "(i) In Week 1, Jacinta works 30 hours. Find Jacinta’s gross pay for Week 1. (ii) In Week 2, Jacinta works 38 hours. Find Jacinta’s gross pay for Week 2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q11-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "339",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q11-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "474·60",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q11-a-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-a-iii",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q11(a)(iii)",
+  "stem": "Jacinta starts a new job. Each week she is paid €11·30 per hour for the first 30 hours she works. She is paid €16·95 for every extra hour that she works beyond the 30 hours.",
+  "questionText": "In Week 3, Jacinta’s gross pay is €525·45. Find how many extra hours Jacinta worked in Week 3 compared to Week 1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q11-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "11 [hours]",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q11-b",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-b",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q11(b)(i), Q11(b)(ii)",
+  "stem": "In Week 4, Jacinta’s gross pay is €508·50. She pays tax at a rate of 20% on her gross pay.",
+  "questionText": "(i) Find Jacinta’s gross tax for Week 4. (ii) Her weekly tax credit for Week 4 is €76·92. Find Jacinta’s net pay for Week 4.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q11-b-solution-1",
+    "kind": "point",
+    "verbatim": "101·70",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q11-b-solution-2",
+    "kind": "point",
+    "verbatim": "483·72",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q11-c",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-c",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q11(c)(i), Q11(c)(ii)",
+  "stem": "Jacinta drives for 222 km. Her car uses 1 litre of petrol for every 18·5 km that it travels.",
+  "questionText": "(i) Find the number of litres of petrol used on her drive. (ii) The petrol used on this journey costs €1·73 per litre. Find the cost of the petrol used on her drive.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q11-c-solution-1",
+    "kind": "point",
+    "verbatim": "222 ÷ 18·5 = 12 litres",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   },
+   {
+    "id": "maths-2025-fl-q11-c-solution-2",
+    "kind": "point",
+    "verbatim": "20·76",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2025-fl-q11-d",
+  "topicId": "maths-3-3",
+  "conceptId": "q11-d",
+  "level": "foundation",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 FL Q11(d)",
+  "stem": "The value of Jacinta’s car decreases (depreciates) by 10% each year. She paid €23 000 for her car exactly 2 years ago.",
+  "questionText": "Find the value of the car today.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-fl-q11-d-solution-1",
+    "kind": "point",
+    "verbatim": "18 630",
+    "marks": null,
+    "contextNote": "The original scheme reader carries the complete worked solution and all scale notes, including drawn answers."
+   }
+  ],
+  "notes": "Independently visually checked against the 2025 Foundation paper and scheme on 2026-10-07."
  }
 ]

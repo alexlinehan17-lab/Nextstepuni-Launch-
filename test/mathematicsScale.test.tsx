@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import SessionScreen, { marksClaimed, showsRowMarks } from '../components/MarkBank/SessionScreen';
 import { mathematicsScaleMarks, type MathematicsScaleCard } from '../components/MarkBank/MathematicsScalePanel';
+import { CARDS as FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
 import { CARDS } from '../components/MarkBank/cards/maths/higher';
 import { vaultPdf } from '../components/PaperTrail/vaultDocs';
 
@@ -19,6 +20,21 @@ describe('Mathematics published credit scale', () => {
     for (const mark of [-1, 1, 3, 5, 7, 8, 11]) expect(mathematicsScaleMarks(card, mark)).toBe(0);
     expect(showsRowMarks(card)).toBe(false);
     expect(marksClaimed(card, {}, { [card.rows[0].id]: [0, 1, 2] })).toBe(0);
+  });
+
+  it('uses Foundation scale marks and labels in a real review session', () => {
+    const foundation = FOUNDATION.find(c => c.id === 'maths-2025-fl-q7-c-d')!;
+    const onGrade = vi.fn();
+    render(<SessionScreen cards={[foundation]} subjectLabel="Mathematics"
+      onGrade={onGrade} onExit={vi.fn()} onFinish={vi.fn()} />);
+    expect(screen.getByText(/FOUNDATION LEVEL/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
+    expect(screen.queryByRole('radio', { name: 'High partial credit, 6 of 10 marks' })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('radio', { name: 'High partial credit, 7 of 10 marks' }));
+    fireEvent.click(screen.getByRole('button', { name: /^Shaky/ }));
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({
+      cardId: foundation.id, marksClaimed: 7, marksAvailable: 10, grade: 'shaky',
+    }));
   });
 
   it('keeps the scheme hidden until reveal, replaces the selected award and saves it', async () => {

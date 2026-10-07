@@ -28,6 +28,7 @@ import { CARDS as HOME_EC_ORDINARY } from '../components/MarkBank/cards/home-eco
 import { CARDS as ECON_HIGHER } from '../components/MarkBank/cards/economics/higher';
 import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/ordinary';
 import { CARDS as MATHS_HIGHER } from '../components/MarkBank/cards/maths/higher';
+import { CARDS as MATHS_FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
 import { CARDS as MATHS_ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
 import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-studies/higher';
 import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
@@ -435,6 +436,13 @@ describe('Mark Bank card preservation', () => {
     expect(original.length, `${name}: historical card count changed`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
     expect(identityHash(original), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it('retains the independently reviewed Foundation deck added on 2026-10-07', () => {
+    expect(MATHS_FOUNDATION).toHaveLength(42);
+    expect(identityHash(MATHS_FOUNDATION)).toBe('3decd62c6721adfb132845b3b3988f4167d2174940240894c722c0827c5e11ff');
+    const oldIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
+    expect(MATHS_FOUNDATION.some(card => oldIds.has(card.id))).toBe(false);
   });
 
   it('protects the complete current bank', () => {

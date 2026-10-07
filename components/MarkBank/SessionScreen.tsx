@@ -32,6 +32,7 @@
  * share a surface. `test/markBankSession.test.tsx` asserts it.
  */
 
+import { levelName, levelAbbreviation } from './levels';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
@@ -2503,7 +2504,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   if (!card || !assessmentCard) return null;
 
-  const levelLabel = assessmentCard.level === 'higher' ? 'HIGHER LEVEL' : 'ORDINARY LEVEL';
+  const levelLabel = `${levelName[assessmentCard.level].toUpperCase()} LEVEL`;
   const figure = 'figure' in assessmentCard ? assessmentCard.figure : undefined;
   const questionFigure = 'questionFigure' in assessmentCard ? assessmentCard.questionFigure : undefined;
   const sourceMaterial = assessmentCard.sourceMaterial;
@@ -2580,7 +2581,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             flexShrink: 0,
           }}>
             <span aria-hidden="true" style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', background: subjectColour, marginRight: 7 }} />
-            {subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : 'OL'}
+            {subjectLabel} · {levelAbbreviation[assessmentCard.level]}
           </span>
 
           <span style={{ flex: 1 }} />
@@ -2752,7 +2753,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.11em',
                 textTransform: 'uppercase', color: LABEL,
               }}>
-                {subjectLabel} · {levelLabel} · {assessmentCard.year} · {assessmentCard.questionRef.replace(/^\d{4}\s+(HL|OL)\s+/, '')}
+                {subjectLabel} · {levelLabel} · {assessmentCard.year} · {assessmentCard.questionRef.replace(/^\d{4}\s+(HL|OL|FL)\s+/, '')}
               </span>
               {/* Inverted chip: ink as the fill. The text must flip WITH it --
                   --mb-ink goes near-white in dark mode, so hard-coded white

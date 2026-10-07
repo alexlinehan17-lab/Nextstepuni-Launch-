@@ -3,10 +3,21 @@ import { describe, expect, it } from 'vitest';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/maths/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
 
-const ALL = [...HIGHER, ...ORDINARY];
+import { CARDS as FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
+
+const ALL = [...HIGHER, ...ORDINARY, ...FOUNDATION];
 const byId = new Map(ALL.map(card => [card.id, card]));
 
 describe('Maths question presentation', () => {
+  it('provides every Foundation task with its original diagram, graph or working space', () => {
+    for (const card of FOUNDATION) {
+      expect(card.sourceMaterial?.kind, card.id).toBe('source-question');
+      expect(card.sourceMaterial?.pages.length, card.id).toBeGreaterThan(0);
+      expect(card.sourceMaterial?.attribution, card.id).toContain('Foundation');
+      expect(card.questionText.length, card.id).toBeGreaterThan(15);
+    }
+  });
+
   it('never ships the old hard-cut question-crop description', () => {
     const figures = ALL.flatMap(card =>
       'questionFigure' in card && card.questionFigure

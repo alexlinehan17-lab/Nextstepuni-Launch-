@@ -19,6 +19,7 @@
  * open this and find it forgiving, not accusatory.
  */
 
+import { levelName, levelAbbreviation } from './levels';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import SessionScreen, { type SessionCardResult } from './SessionScreen';
 import {
@@ -33,7 +34,7 @@ import {
   sessionExerciseCount,
   topicSessionSummary,
 } from './sessionPlanning';
-import { SUBJECTS, builtDecks, cardsForTopic, deckSize, loadCards, strandsFor, topicMarks, type Level } from './deck';
+import { SUBJECTS, builtDecks, cardsForTopic, deckSize, loadCards, levelsForSubject, strandsFor, topicMarks, type Level } from './deck';
 import {
   commitReview, ensureDeck, fetchDeck, mergeDecks, readChoice, readLocal,
   writeChoice, writeLocal, type DeckState,
@@ -213,7 +214,9 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
     const wanted = MARK_BANK_SUBJECT_ALIASES[raw] ?? raw;
     const subject = SUBJECTS.find(candidate => normaliseSubjectName(candidate.title) === wanted);
     if (!subject) continue;
-    const level: Level = profileSubject.level?.toLowerCase().startsWith('ordinary') ? 'ordinary' : 'higher';
+    const profileLevel = profileSubject.level?.toLowerCase();
+    const level: Level = profileLevel?.startsWith('foundation') ? 'foundation'
+      : profileLevel?.startsWith('ordinary') ? 'ordinary' : 'higher';
     if (deckSize(subject.id, level) > 0) return { subjectId: subject.id, level };
   }
   return null;
@@ -234,8 +237,12 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   const [subjectId, setSubjectId] = useState<string>(initialChoice.subjectId);
   const [level, setLevel] = useState<Level>(initialChoice.level);
   const chooseSubject = useCallback((id: string) => {
+    const availableLevels = levelsForSubject(id);
+    const nextLevel = availableLevels.includes(level) ? level
+      : availableLevels.includes('ordinary') ? 'ordinary' : availableLevels[0];
     setSubjectId(id);
-    writeChoice(uid, { subjectId: id, level });
+    setLevel(nextLevel);
+    writeChoice(uid, { subjectId: id, level: nextLevel });
   }, [uid, level]);
   const chooseLevel = useCallback((l: Level) => {
     setLevel(l);
@@ -455,7 +462,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
             {left === 0 ? 'Every mark banked.' : 'Good work. Keep building.'}
           </h2>
           <p style={{ font: `400 14px/1.5 ${SANS}`, color: MUTED, margin: '0 0 28px' }}>
-            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {level === 'higher' ? 'Higher level' : 'Ordinary level'}
+            {distinct} {distinct === 1 ? 'question' : 'questions'} reviewed · {subject.title} · {levelName[level]} level
           </p>
 
           <ResultStatGrid items={[
@@ -565,7 +572,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
           <h2 style={{ font: `700 24px/1.15 ${SERIF}`, color: INK, margin: '0 0 3px' }}>
             {subject.title}
           </h2>
-          <Eyebrow>{level === 'higher' ? 'Higher level' : 'Ordinary level'} · {subject.spec}</Eyebrow>
+          <Eyebrow>{levelName[level]} level · {subject.spec}</Eyebrow>
 
           {/* alignItems, or the pills stretch: a flex column stretches its
               children by default, which overrides the Segment's own inline-flex
@@ -581,7 +588,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                 options={SUBJECTS.map(s => ({
                   value: s.id,
                   label: s.title,
-                  empty: deckSize(s.id, level) === 0,
+                  empty: !levelsForSubject(s.id).some(candidate => deckSize(s.id, candidate) > 0),
                   markerColor: getSubjectHex(s.title),
                 }))}
                 value={subjectId}
@@ -591,9 +598,10 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
             <div style={{ width: '100%' }}>
               <div style={{ marginBottom: 6 }}><Eyebrow>Paper level</Eyebrow></div>
               <Segment
-                options={(['higher', 'ordinary'] as Level[]).map(l => ({
-                  value: l, label: l === 'higher' ? 'Higher' : 'Ordinary',
-                  shortLabel: l === 'higher' ? 'HL' : 'OL',
+                wrap
+                options={levelsForSubject(subjectId).map(l => ({
+                  value: l, label: levelName[l],
+                  shortLabel: levelAbbreviation[l],
                   empty: deckSize(subjectId, l) === 0,
                 }))}
                 value={level}

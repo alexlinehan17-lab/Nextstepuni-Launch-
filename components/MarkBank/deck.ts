@@ -20,6 +20,8 @@
  * so there is no cohort left for whom the old taxonomy is correct.
  */
 
+import { levelName, type Level } from './levels';
+export type { Level } from './levels';
 import type { SecCard, SecDiagramCard } from '../../types/markBank';
 import { CURRICULUM } from '../../curriculum';
 import DECK_SIZES from './cards/sizes.json';
@@ -1102,7 +1104,7 @@ const HAND_BUILT: SecCard[] = [
  * bundler has to see each one to split it; a computed specifier either fails to
  * resolve or drags every deck into one chunk, which is the thing this avoids.
  */
-const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> = {
+const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard[] }>>>> = {
   biology: {
     higher: () => import('./cards/biology/higher'),
     ordinary: () => import('./cards/biology/ordinary'),
@@ -1142,6 +1144,7 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   maths: {
     higher: () => import('./cards/maths/higher'),
     ordinary: () => import('./cards/maths/ordinary'),
+    foundation: () => import('./cards/maths/foundation'),
   },
   english: {
     higher: () => import('./cards/english/higher'),
@@ -1169,7 +1172,8 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   },
 };
 
-export type Level = 'higher' | 'ordinary';
+export const levelsForSubject = (subjectId: string): Level[] =>
+  DECKS[subjectId] ? Object.keys(DECKS[subjectId]) as Level[] : ['higher', 'ordinary'];
 
 /**
  * How many cards each deck holds, written by the build script.
@@ -1184,9 +1188,9 @@ export const deckSize = (subjectId: string, level: Level): number =>
 
 /** Decks with cards in them, as "Biology Higher"-style labels. */
 export const builtDecks = (): { subjectId: string; level: Level; label: string }[] =>
-  SUBJECTS.flatMap(s => (['higher', 'ordinary'] as Level[])
+  SUBJECTS.flatMap(s => levelsForSubject(s.id)
     .filter(l => deckSize(s.id, l) > 0)
-    .map(l => ({ subjectId: s.id, level: l, label: `${s.title} ${l === 'higher' ? 'Higher' : 'Ordinary'}` })));
+    .map(l => ({ subjectId: s.id, level: l, label: `${s.title} ${levelName[l]}` })));
 
 export async function loadCards(subjectId: string, level: Level): Promise<SecCard[]> {
   const load = DECKS[subjectId]?.[level];

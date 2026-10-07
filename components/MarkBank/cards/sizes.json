@@ -33,7 +33,8 @@
  },
  "maths": {
   "higher": 403,
-  "ordinary": 435
+  "ordinary": 435,
+  "foundation": 42
  },
  "english": {
   "higher": 210,
