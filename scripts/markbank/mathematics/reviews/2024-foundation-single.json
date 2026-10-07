@@ -1295,6 +1295,10 @@
     "28:ddf9d2910901e32c": {
       "classification": "mathematical-context",
       "reason": "Either describes the two scoring events in the game. Both G and B must be used in the same algebra problem; this is not a prompt choice."
+    },
+    "3:79a0a4e7ab83698c": {
+      "classification": "exam-level-selection",
+      "reason": "The cover instructions require seven of the eight Section A questions. Every separately marked task is retained for practice; combinations of whole exam selections do not become distinct cards."
     }
   }
 }

@@ -3417,4 +3417,972 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q1-a", topicId: "maths-1-6", conceptId: "q1-a",
+    section: "A", questionRef: "2023 FL Q1(a)(i), Q1(a)(ii)",
+    stem: "31 matches were played in the UEFA Women’s EURO 2022 finals. The number of goals in each of the matches is shown below: 1, 5, 5, 4, 4, 2, 2, 6; 2, 8, 1, 2, 3, 5, 2, 3; 5, 1, 3, 1, 5, 5, 2, 1; 3, 2, 1, 1, 4, 3, 3.",
+    questionText: "(i) Complete the table below to show how many matches had 1 goal, 2 goals, etc. (ii) In the line plot below, each match is represented by a dot. Complete the line plot. Two columns are filled in.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2023-fl-q1-a-solution-1", kind: "point", verbatim: "7, 7, 6, 3, 6, 1, 0, 1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q1-b-c", topicId: "maths-1-6", conceptId: "q1-b-c",
+    section: "A", questionRef: "2023 FL Q1(b)(i), Q1(b)(ii), Q1(c)",
+    stem: "31 matches were played in the UEFA Women’s EURO 2022 finals. The number of goals in each of the matches is shown below: 1, 5, 5, 4, 4, 2, 2, 6; 2, 8, 1, 2, 3, 5, 2, 3; 5, 1, 3, 1, 5, 5, 2, 1; 3, 2, 1, 1, 4, 3, 3.",
+    questionText: "(b)(i) In how many matches was exactly 1 goal scored? (ii) In how many matches were 4 goals or more scored? (c) Work out the percentage of the matches in which less than 3 goals were scored. Give your answer correct to the nearest percent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q1-b-c-solution-1", kind: "point", verbatim: "3 + 6 + 1 + 1 = 11", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q1-b-c-solution-2", kind: "point", verbatim: "45% to nearest percent", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q2-a-i", topicId: "maths-2-1", conceptId: "q2-a-i",
+    section: "A", questionRef: "2023 FL Q2(a)(i)",
+    stem: "Pádraig is designing a small plaque as part of a class project. Part of the plaque will be in the shape of a rectangle ABCD with length |AB| = 9 cm and width |BC| = 5 cm, and with a groove along the diagonal [AC]. Pádraig drew a sketch first (not to scale) as shown below.",
+    questionText: "Construct the rectangle ABCD, including the diagonal [AC], in the space below. The side [AB] is already given.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q2-a-i-solution-1", kind: "point", verbatim: "3 lines constructed correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "measurementRequired": true,
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q2-a-ii", topicId: "maths-2-1", conceptId: "q2-a-ii",
+    section: "A", questionRef: "2023 FL Q2(a)(ii)",
+    stem: "Pádraig is designing a small plaque as part of a class project. Part of the plaque will be in the shape of a rectangle ABCD with length |AB| = 9 cm and width |BC| = 5 cm, and with a groove along the diagonal [AC]. Pádraig drew a sketch first (not to scale) as shown below.",
+    questionText: "Use Pythagoras’ Theorem to find the length of the diagonal [AC]. Give your answer in cm, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q2-a-ii-solution-1", kind: "point", verbatim: "10·30 cm", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6,
+                7
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q2-b", topicId: "maths-2-3", conceptId: "q2-b",
+    section: "A", questionRef: "2023 FL Q2(b)(i), Q2(b)(ii)",
+    stem: "Pádraig is designing a small plaque as part of a class project. Part of the plaque will be in the shape of a rectangle ABCD with length |AB| = 9 cm and width |BC| = 5 cm, and with a groove along the diagonal [AC]. Pádraig drew a sketch first (not to scale) as shown below. Pádraig marked the angle CAB as X in his sketch.",
+    questionText: "(i) Tick which of the following is correct. Tick one box only: sin X = 5/7; cos X = 5/9; tan X = 5/9; tan X = 9/5. (ii) Hence, use your calculator to work out the size of angle X. Give your answer correct to the nearest degree.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q2-b-solution-1", kind: "point", verbatim: "identifies opposite/adjacent/hypotenuse", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6,
+                7
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q3-a-i-ii", topicId: "maths-3-3", conceptId: "q3-a-i-ii",
+    section: "A", questionRef: "2023 FL Q3(a)(i), Q3(a)(ii)",
+    stem: "Nyura wants to buy breakfast cereal. The cereal she likes comes in two different box sizes: Box A and Box B. In the local shop, both boxes are on “special offer” as shown: Box A, usual price €5 for 400 g, special offer 20% off marked price. Box B, usual price €6 for 600 g, special offer 10% extra free.",
+    questionText: "(i) Box A contains 400 g and usually costs €5. The special offer has 20% off this price. Work out the “special offer” price of Box A. (ii) Box B usually has 600 g. The special offer has an extra 10% free. Work out the “special offer” number of grams of cereal in Box B.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q3-a-i-ii-solution-1", kind: "point", verbatim: "5 × 0·8 = €4", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q3-a-i-ii-solution-2", kind: "point", verbatim: "600 × 1·1 = 660 g", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q3-a-iii", topicId: "maths-3-3", conceptId: "q3-a-iii",
+    section: "A", questionRef: "2023 FL Q3(a)(iii)",
+    stem: "Nyura wants to buy breakfast cereal. The cereal she likes comes in two different box sizes: Box A and Box B. In the local shop, both boxes are on “special offer” as shown: Box A, usual price €5 for 400 g, special offer 20% off marked price. Box B, usual price €6 for 600 g, special offer 10% extra free.",
+    questionText: "Work out which box offers the better value for money. Justify your answer with calculations. Answer A or B.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-fl-q3-a-iii-solution-1", kind: "point", verbatim: "Answer: B (more grams per euro)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q3-b", topicId: "maths-3-3", conceptId: "q3-b",
+    section: "A", questionRef: "2023 FL Q3(b)(i), Q3(b)(ii)",
+    stem: "Fionn had to do the following calculation: 107·97/(12·2 − 3·05).",
+    questionText: "(i) First, he made an estimate of what the answer should be. To do this, he wrote each number correct to the nearest whole number. By writing each number correct to the nearest whole number, use the boxes below to work out Fionn’s estimate. (ii) Use a calculator to find the actual value of 107·97/(12·2 − 3·05).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-fl-q3-b-solution-1", kind: "point", verbatim: "one or both numbers rounded off correctly in (i)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q4-a-b", topicId: "maths-1-2", conceptId: "q4-a-b",
+    section: "A", questionRef: "2023 FL Q4(a), Q4(b)",
+    questionText: "(a) A fair spinner is shown in the diagram. Seán spins it. What is the probability that the arrow lands on a number greater than 5? (b) Below is a list of numbers, some of which could be probabilities: 0·79, 1, 0·2, −0·4. Complete the table below by writing the correct probabilities from the list above next to the corresponding description: Likely, Unlikely, Certain. You do not need to use all the numbers given.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q4-a-b-solution-1", kind: "point", verbatim: "Likely: 0·79", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q4-a-b-solution-2", kind: "point", verbatim: "Unlikely: 0·2", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q4-a-b-solution-3", kind: "point", verbatim: "Certain: 1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q4-c-i", topicId: "maths-1-6", conceptId: "q4-c-i",
+    section: "A", questionRef: "2023 FL Q4(c)(i)",
+    stem: "In a school all students, boys and girls, study either French or German. No student studies both subjects. There are 240 boys in the school. 96 of the boys study French. 50 of the girls study German. 60 more girls study French than study German.",
+    questionText: "Complete the table below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q4-c-i-solution-1", kind: "point", verbatim: "240 – 96 and fails to finish correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q4-c-ii-iii", topicId: "maths-1-2", conceptId: "q4-c-ii-iii",
+    section: "A", questionRef: "2023 FL Q4(c)(ii), Q4(c)(iii)",
+    stem: "In a school all students, boys and girls, study either French or German. No student studies both subjects. There are 240 boys in the school. 96 of the boys study French. 50 of the girls study German. 60 more girls study French than study German.",
+    questionText: "(ii) A boy is chosen at random from the school. Find the probability that he studies French. (iii) A student is chosen at random from the school. Find the probability that the student is a girl.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q4-c-ii-iii-solution-1", kind: "point", verbatim: "Correct numerator or denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q5-a", topicId: "maths-1-6", conceptId: "q5-a",
+    section: "A", questionRef: "2023 FL Q5(a)(i), Q5(a)(ii)",
+    stem: "The students in a class were surveyed about their hair colour. The results are shown in the table below. Hair colour: Brown, Red, Blonde, Black, Other. Number of students: 12, 3, 4, 8, 3, respectively.",
+    questionText: "(i) Work out the total number of students in the class. (ii) Draw a bar chart on the grid below to show the information in the table.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2023-fl-q5-a-solution-1", kind: "point", verbatim: "12 + 3 + 4 + 8 + 3 = 30", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q5-b-c", topicId: "maths-1-6", conceptId: "q5-b-c",
+    section: "A", questionRef: "2023 FL Q5(b), Q5(c)",
+    questionText: "(b) A list of numbers is shown below. The numbers are written in increasing order. Two of the numbers are missing: 1, 2, 4, [blank], 10, 14, [blank]. Fill in the two missing numbers so that the median of the list of numbers is 9 and the range of the list of numbers is 17. (c) The mode of 3 numbers is 4. The mean of the same 3 numbers is 5. Write the 3 numbers into the 3 boxes below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q5-b-c-solution-1", kind: "point", verbatim: "1, 2, 4, 9, 10, 14, 18", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q5-b-c-solution-2", kind: "point", verbatim: "4, 4, 7", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q6-a", topicId: "maths-2-4", conceptId: "q6-a",
+    section: "A", questionRef: "2023 FL Q6(a)(i), Q6(a)(ii)",
+    stem: "Four points, A, B, C, and D are shown on the co-ordinate diagram below.",
+    questionText: "(i) Write down the coordinates of point A. (ii) Complete the table below, by filling in the correct image of the point A under each of the given transformations: Axial symmetry in x-axis; Axial symmetry in y-axis; Central symmetry in the point (0, 0). Image of point A: B, C, or D.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q6-a-solution-1", kind: "point", verbatim: "Axial symmetry in x-axis: D or (3, -4)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q6-b-i-ii", topicId: "maths-5-1", conceptId: "q6-b-i-ii",
+    section: "A", questionRef: "2023 FL Q6(b)(i), Q6(b)(ii)",
+    stem: "John travelled to the cinema to watch a film. The distance-time graph below shows his distance travelled from home, to the cinema and home again.",
+    questionText: "(i) On the way to the cinema John stopped at a shop to buy sweets. How long did he spend in the shop? (ii) How far was the cinema from John’s house?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-fl-q6-b-i-ii-solution-1", kind: "point", verbatim: "10 minutes", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q6-b-i-ii-solution-2", kind: "point", verbatim: "16 km", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q6-b-iii", topicId: "maths-5-1", conceptId: "q6-b-iii",
+    section: "A", questionRef: "2023 FL Q6(b)(iii)",
+    stem: "John travelled to the cinema to watch a film. The distance-time graph below shows his distance travelled from home, to the cinema and home again.",
+    questionText: "Three parts of the graph are labelled a, b, and c. In which of the three parts a, b, or c was John travelling slowest? Give a reason for your answer, based on the graph.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-fl-q6-b-iii-solution-1", kind: "point", verbatim: "The slope of the line is less steep than a or b", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q7-a", topicId: "maths-3-3", conceptId: "q7-a",
+    section: "A", questionRef: "2023 FL Q7(a)(i), Q7(a)(ii)",
+    stem: "Kinga is buying a computer online. The price, excluding VAT, is €500. She must pay VAT at 23%.",
+    questionText: "(i) Work out how much VAT Kinga must pay. (ii) She must also pay a delivery charge of €40. The delivery charge is added after the VAT at 23%. Work out how much Kinga pays in total for the computer, including the VAT and delivery charge.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-fl-q7-a-solution-1", kind: "point", verbatim: "500 × 0·23 = €115", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q7-a-solution-2", kind: "point", verbatim: "500 + 115 + 40 = €655", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q7-b", topicId: "maths-3-3", conceptId: "q7-b",
+    section: "A", questionRef: "2023 FL Q7(b)",
+    stem: "The distance from the Earth to the Moon is approximately 384 000 kilometres. An unmanned space ship travels at a speed of 12 kilometres per second.",
+    questionText: "Work out how long it would take to travel from the Earth to the Moon. Give your answer in minutes, correct to the nearest minute.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-fl-q7-b-solution-1", kind: "point", verbatim: "384 000 ÷ 12 = 32 000 seconds", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q7-c", topicId: "maths-1-1", conceptId: "q7-c",
+    section: "A", questionRef: "2023 FL Q7(c)(i), Q7(c)(ii), Q7(c)(iii)",
+    stem: "A 4-digit PIN code uses the digits 0 to 9 inclusive. An example of a 4-digit PIN code is 0 3 3 1.",
+    questionText: "(i) Write down an example of a 4-digit PIN code ending in an even number. (ii) Kinga has a 4-digit PIN code for her bank card. How many possible codes are there? (iii) Kinga remembers her PIN code as two 2-digit numbers. The first 2-digit number is between 20 and 29. The second 2-digit number is twice the first one. Each of the 4 digits is different. Write a possible 4-digit code for Kinga’s bank card in the boxes below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q7-c-solution-1", kind: "point", verbatim: "10 × 10 × 10 × 10 = 10 000", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q7-c-solution-2", kind: "point", verbatim: "2 3 4 6 or other correct answer", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q8-a-i", topicId: "maths-3-3", conceptId: "q8-a-i",
+    section: "A", questionRef: "2023 FL Q8(a)(i)",
+    stem: "The diagram below shows some steps (not to scale). The total height of the steps is 30 cm and the total length is 120 cm, as shown. Each individual step has a height of 10 cm and a length of l cm.",
+    questionText: "Find the value of l. Give your answer in cm.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q8-a-i-solution-1", kind: "point", verbatim: "120 ÷ 3 = 40 cm", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,4,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q8-a-ii", topicId: "maths-3-4", conceptId: "q8-a-ii",
+    section: "A", questionRef: "2023 FL Q8(a)(ii)",
+    stem: "The diagram below shows some steps (not to scale). The total height of the steps is 30 cm and the total length is 120 cm, as shown. Each individual step has a height of 10 cm and a length of l cm.",
+    questionText: "Find, in cm², the area of the shape above.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q8-a-ii-solution-1", kind: "point", verbatim: "10 × 40 = 400 cm²", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q8-a-ii-solution-2", kind: "point", verbatim: "400 × 6 = 2400 cm²", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q8-b", topicId: "maths-3-4", conceptId: "q8-b",
+    section: "A", questionRef: "2023 FL Q8(b)(i), Q8(b)(ii)",
+    stem: "Christian is filling glasses with orange juice. Each glass is roughly in the shape of a cylinder with a radius of 3 cm and a height of 14 cm, as shown in the diagram.",
+    questionText: "(i) Work out the volume of each glass, correct to the nearest cm³. (ii) Christian has four 1 litre containers of orange juice. He fills glasses with 360 cm³ of orange juice. Work out how many glasses Christian can fill, using the juice from these four containers. Note: 1 litre = 1000 cm³.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q8-b-solution-1", kind: "point", verbatim: "396 cm³ to the nearest cm³", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q8-b-solution-2", kind: "point", verbatim: "11 full glasses", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q9-a", topicId: "maths-3-4", conceptId: "q9-a",
+    section: "B", questionRef: "2023 FL Q9(a)(i), Q9(a)(ii)",
+    stem: "Janusz and Sophia have a rectangular garden. It has a pond and a shed, as shown in the diagram below (not to scale). The pond has a radius of 1·5 m. A concrete path around the pond has a width of 0·5 m. The size of the shed is 3 m × 2 m.",
+    questionText: "(i) Work out the area of the shed. (ii) Show that the area of the pond and concrete path together is 12·57 m², correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q9-a-solution-1", kind: "point", verbatim: "2 × 3 = 6 m²", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q9-a-solution-2", kind: "point", verbatim: "Radius of pond + path = 2", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q9-b", topicId: "maths-3-4", conceptId: "q9-b",
+    section: "B", questionRef: "2023 FL Q9(b)(i), Q9(b)(ii)",
+    stem: "Janusz and Sophia have a rectangular garden. It has a pond and a shed, as shown in the diagram below (not to scale). The pond has a radius of 1·5 m. A concrete path around the pond has a width of 0·5 m. The size of the shed is 3 m × 2 m. The total area of the garden is 96 m². Janusz decides to plant all of the garden, except the area covered by the shed, the pond and the path, with wildflowers. It is recommended that the wildflower seeds be sown at the rate of 2·4 g/m².",
+    questionText: "(i) Find the area of the garden to be sown with the wildflower seeds. Give your answer, in m², correct to the nearest whole number. (ii) Work out how many grams of wildflower seeds will be needed, to the nearest gram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q9-b-solution-1", kind: "point", verbatim: "77 × 2·4 = 184·8 = 185 g", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q9-c", topicId: "maths-5-1", conceptId: "q9-c",
+    section: "B", questionRef: "2023 FL Q9(c)(i), Q9(c)(ii)",
+    stem: "Their two children, Ronan and Maja, have been to the market, where they each bought a plant. The graph below shows the growth of Ronan’s plant over a number of weeks. Week 0 is when they buy their plants.",
+    questionText: "(i) What height was Ronan’s plant when he bought it? (ii) How much did his plant grow by each week?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q9-c-solution-1", kind: "point", verbatim: "15 cm", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q9-c-solution-2", kind: "point", verbatim: "17 – 15 = 2 cm per week", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q9-d-i", topicId: "maths-5-1", conceptId: "q9-d-i",
+    section: "B", questionRef: "2023 FL Q9(d)(i)",
+    stem: "Maja’s plant was 10 cm high when she bought it. Maja’s plant grew at the rate of 3 cm a week.",
+    questionText: "Complete the table below to show the height of her plant after each of the first 6 weeks.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q9-d-i-solution-1", kind: "point", verbatim: "3 or 4 correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q9-d-ii-iii", topicId: "maths-5-1", conceptId: "q9-d-ii-iii",
+    section: "B", questionRef: "2023 FL Q9(d)(ii), Q9(d)(iii)",
+    stem: "Their two children, Ronan and Maja, have been to the market, where they each bought a plant. The graph below shows the growth of Ronan’s plant over a number of weeks. Week 0 is when they buy their plants. Maja’s plant was 10 cm high when she bought it. Maja’s plant grew at the rate of 3 cm a week.",
+    questionText: "(ii) On the diagram on the previous page, draw a graph to show the height of Maja’s plant over the first 6 weeks. Use the same axes and scales as the graph of Ronan’s plant. (iii) Using your graph, write down the co-ordinates of the point of intersection of the two graphs and explain what each co-ordinate means in the context of the heights of the two plants.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-fl-q9-d-ii-iii-solution-1", kind: "point", verbatim: "After 5 weeks both plants are 25 cm tall", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q10-a", topicId: "maths-1-1", conceptId: "q10-a",
+    section: "B", questionRef: "2023 FL Q10(a)(i), Q10(a)(ii)",
+    stem: "There is a canteen in Gráinne’s school. Students who get a Lunch Special pick one sandwich, one drink, and one piece of fruit. The table below shows the options. Sandwich: Tuna, Egg, Ham, Salad. Drink: Water, Milk, Fruit Juice. Fruit: Apple, Banana. Gráinne selects a sandwich, a drink, and a piece of fruit.",
+    questionText: "(i) How many different Lunch Specials are possible? For example, one Lunch Special is a ham sandwich, milk, and an apple. (ii) Gráinne does not pick ham or tuna. She also does not pick a banana. How many different Lunch Specials can Gráinne pick?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q10-a-solution-1", kind: "point", verbatim: "4 × 3 × 2 = 24", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q10-a-solution-2", kind: "point", verbatim: "2 × 3 × 1 = 6", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q10-b", topicId: "maths-3-3", conceptId: "q10-b",
+    section: "B", questionRef: "2023 FL Q10(b)",
+    stem: "Students pay €4·00 for a Lunch Special. The school is donating 20% of the sales of all Lunch Specials to a local charity.",
+    questionText: "Work out how many Lunch Specials need to be sold if the charity is to get €500.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-fl-q10-b-solution-1", kind: "point", verbatim: "500 ÷ 0·8 = 625", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q10-c", topicId: "maths-1-2", conceptId: "q10-c",
+    section: "B", questionRef: "2023 FL Q10(c)(i), Q10(c)(ii)",
+    stem: "Gráinne has a bag of mixed sweets. There are 4 red and 6 green sweets in the bag. She picks one sweet at random from the bag.",
+    questionText: "(i) What is the probability that Gráinne picks a green sweet? (ii) Gráinne eats a green sweet. She then picks another sweet at random from the bag. What is the probability that the second sweet that Gráinne picks is green?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-fl-q10-c-solution-1", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q10-d", topicId: "maths-3-4", conceptId: "q10-d",
+    section: "B", questionRef: "2023 FL Q10(d)(i), Q10(d)(ii)",
+    stem: "There is a park near Gráinne’s home. A path goes around the park. The path consists of two parallel sections that are joined by quarter circular ends, of radius 40 m, as shown in the diagram. The parallel sections are each 140 m long. The perpendicular distance between them is 40 m.",
+    questionText: "(i) Work out the length of one lap of the path. Give your answer to the nearest metre. (ii) Every day, Gráinne goes for a run on the path. Work out the number of full laps she must run in order to cover a distance of at least 5 km.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-fl-q10-d-solution-1", kind: "point", verbatim: "140 + 140 + 40π = 405·66", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q10-d-solution-2", kind: "point", verbatim: "13 laps", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,7,11,15],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q11-a-b-c", topicId: "maths-3-3", conceptId: "q11-a-b-c",
+    section: "B", questionRef: "2023 FL Q11(a), Q11(b), Q11(c)",
+    stem: "Aidan and Briana live near Charlestown in Co. Mayo. They decide to go on holidays to Orlando in Florida. They will fly out from Dublin Airport.",
+    questionText: "(a) They will travel from their home to the airport, a distance of 200 km. The journey will take 2½ hours. Work out the average speed for the journey. (b) Their flight is due to leave the airport at 14:50. They want to arrive at the airport 3½ hours before their flight is due to leave. What is the latest time that they should leave their home? (c) The local time in Dublin is 5 hours ahead of the time in Orlando. For example, 11:00 in Dublin is 06:00 in Orlando. The time taken for the flight is 8 hours and 35 minutes. What will the local time in Orlando be when they land? Remember their flight is due to leave the airport at 14:50.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2023-fl-q11-a-b-c-solution-1", kind: "point", verbatim: "80 km/hour", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q11-a-b-c-solution-2", kind: "point", verbatim: "14:50 – 3:30 – 2:30 = 08:50", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27,
+                28
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q11-d", topicId: "maths-3-3", conceptId: "q11-d",
+    section: "B", questionRef: "2023 FL Q11(d)",
+    stem: "Aidan and Briana live near Charlestown in Co. Mayo. They decide to go on holidays to Orlando in Florida. They will fly out from Dublin Airport. On arrival in Orlando, they decide to get some US Dollars. The exchange rate is $1 = €0·97. They change €500 into Dollars.",
+    questionText: "How many US Dollars will they get? Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-fl-q11-d-solution-1", kind: "point", verbatim: "500 ÷ 0·97 = $515·46", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q11-e", topicId: "maths-3-3", conceptId: "q11-e",
+    section: "B", questionRef: "2023 FL Q11(e)",
+    stem: "Aidan and Briana borrowed €5000 for the holiday. The interest rate is 6% compound interest per year. At the end of the first year they will pay back €2000.",
+    questionText: "Work out how much they will have to pay back at the end of the second year in order to clear the loan.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q11-e-solution-1", kind: "point", verbatim: "5000 × 1·06 = 5300", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q11-e-solution-2", kind: "point", verbatim: "5300 – 2000 = 3300", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q11-e-solution-3", kind: "point", verbatim: "3300 × 1·06 = €3498", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2023, level: "foundation",
+    paperFileid: "LC003BLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Foundation Level — © State Examinations Commission.",
+    id: "maths-2023-fl-q11-f", topicId: "maths-3-3", conceptId: "q11-f",
+    section: "B", questionRef: "2023 FL Q11(f)",
+    stem: "The distance from Dublin to Orlando is approximately 6535 km. There are 450 passengers booked on the flight. It is estimated that this flight will produce, on average, 102 grams of CO₂ per passenger per km.",
+    questionText: "Work out how much CO₂ the flight to Orlando will produce in total. Give your answer in kilograms (kg).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-fl-q11-f-solution-1", kind: "point", verbatim: "102 × 450 × 6535", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-fl-q11-f-solution-2", kind: "point", verbatim: "299,956·5 kg", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,3,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5,6]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003BLP000EV.pdf",
+          "attribution": "SEC Mathematics 2023 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
 ];

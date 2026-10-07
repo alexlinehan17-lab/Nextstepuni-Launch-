@@ -1432,6 +1432,10 @@
     "20:5c1ffc193ab876ff": {
       "classification": "mathematical-counting",
       "reason": "The bus size/engine/colour menu is the sample space whose outcomes must be counted in Q9(a). Selecting a bus is part of the scenario, not an examination prompt choice; expanding buses into separate cards would change the mathematical problem."
+    },
+    "3:79a0a4e7ab83698c": {
+      "classification": "exam-level-selection",
+      "reason": "The cover instructions require seven of the eight Section A questions. Every separately marked task is retained for practice; combinations of whole exam selections do not become distinct cards."
     }
   }
 }

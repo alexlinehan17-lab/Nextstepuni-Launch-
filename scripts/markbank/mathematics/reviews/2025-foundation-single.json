@@ -1458,6 +1458,10 @@
     "24:6a26f8682acc7e1b": {
       "classification": "mathematical-context",
       "reason": "The wording describes data, random selection or an answer to the mathematical problem, not a choice between printed prompts."
+    },
+    "3:79a0a4e7ab83698c": {
+      "classification": "exam-level-selection",
+      "reason": "The cover instructions require seven of the eight Section A questions. Every separately marked task is retained for practice; combinations of whole exam selections do not become distinct cards."
     }
   }
 }

@@ -17,7 +17,7 @@ import fitz
 ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
 SELECTION = re.compile(
-    r'\b(?:choos\w*|one of|any (?:one|two|three|four|five|six|\d+)|either|'
+    r'\b(?:choos\w*|one of|any (?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|\d+)|either|'
     r'or otherwise|answer (?:all|any))\b', re.I)
 
 

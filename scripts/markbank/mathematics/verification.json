@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers plus 2024 and 2026 Foundation",
-  "runtimeCards": 961,
-  "reviewedTasks": 290,
+  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2023, 2024 and 2026",
+  "runtimeCards": 996,
+  "reviewedTasks": 325,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed through the 2026 Foundation addition; 2024 data passed generation and regression tests",
+  "productionBuild": "passed",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -103,7 +103,7 @@
     "pageErrors": [],
     "runtimeIdsSha256": "e5c585bc9aac2ce41213a0ec7b9a90f7b4ae91f61f47847a5cf72d9da1abf874"
   },
-  "latestBatch": {
+  "foundation2024": {
     "paper": "2024 Foundation",
     "independentlyReviewedTasks": 38,
     "targetedRegressionTests": 145,
@@ -114,5 +114,17 @@
     "schemePagesInspected": 24,
     "runtimeIdsSha256": "4c8d8054bc23ff51ab9db0cf540b3b8f120522d62a46a7ad11b1dd79fd44d55b",
     "testNote": "Two registry/provenance tests initially timed out while concurrent subject builds competed for resources; both passed with one worker in the retry."
+  },
+  "latestBatch": {
+    "paper": "2023 Foundation",
+    "independentlyReviewedTasks": 35,
+    "targetedRegressionTests": 150,
+    "previousRuntimeIdsRetained": 961,
+    "offeredMarks": 375,
+    "candidateMarks": 300,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 20,
+    "runtimeIdsSha256": "7dafb251bb020e8148edef424447fa8d2316737c5202a4982ffc26e0fef1e3a9",
+    "regressionWorkers": 1
   }
 }

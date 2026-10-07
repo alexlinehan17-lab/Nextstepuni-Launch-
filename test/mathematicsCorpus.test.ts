@@ -7,6 +7,7 @@ import { CARDS as FOUNDATION } from '../components/MarkBank/cards/maths/foundati
 import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-single.json';
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
+import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/maths/higher';
 import { resolveCurriculumSpecification, findCanonicalTopic } from '../curriculumRegistry';
 import { examTopicIdsForQuestion } from '../data/examTopics/registry';
@@ -113,124 +114,85 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 });
 
 
-describe('2025 Foundation Mathematics independent source review', () => {
-  const cards = FOUNDATION.filter(card => card.year === 2025);
+describe.each([
+  { year: 2023, count: 35, review: foundation2023 },
+  { year: 2024, count: 38, review: foundation2024 },
+  { year: 2025, count: 42, review: foundation },
+  { year: 2026, count: 42, review: foundation2026 },
+])('$year Foundation Mathematics independent source review', ({ year, count, review: census }) => {
+  const cards = FOUNDATION.filter(card => card.year === year);
 
-  it('has every one of the 42 separately marked tasks, with no orphan or duplicate', () => {
-    expect(cards.map(card => card.id).sort()).toEqual(foundation.cards.map(card => card.id).sort());
-    expect(cards).toHaveLength(42);
-    expect(new Set(cards.map(card => card.id)).size).toBe(42);
+  it('retains every published marking unit and all 375 offered marks', () => {
+    expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
+    expect(cards).toHaveLength(count);
+    expect(new Set(cards.map(card => card.id)).size).toBe(count);
     expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(375);
-    for (const [question, marks] of Object.entries(foundation.printedQuestionMarks)) {
+    for (const [question, marks] of Object.entries(census.printedQuestionMarks)) {
       expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
         .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
     }
   });
 
-  it('retains the level-specific scale values, original pages and both topic placements', () => {
-    const specification = resolveCurriculumSpecification('mathematics', 2025)!;
-    for (const task of foundation.cards) {
+  it('carries complete prompts, original pages, exact credit bands and both topic placements', () => {
+    const specification = resolveCurriculumSpecification('mathematics', year)!;
+    for (const task of census.cards) {
       const card = cards.find(candidate => candidate.id === task.id)!;
       expect(card.level, card.id).toBe('foundation');
+      expect(card.stem ?? '', card.id).toBe(task.stem);
+      expect(card.questionText, card.id).toBe(task.questionText);
       expect(card.paperFileid, card.id).toBe('LC003BLP000EV');
       expect(card.schemeCitation, card.id).toContain('Foundation Level');
       expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
-      expect(card.sourceMaterial?.sourceFileid, card.id).toBe(foundation.paperFileid);
+      expect(card.sourceMaterial?.sourceFileid, card.id).toBe(census.paperFileid);
       expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
       expect(card.topicId, card.id).toBe(task.topicId);
       expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
       const question = task.printedParts[0].match(/^Q(\d+)/)![1];
-      expect(examTopicIdsForQuestion('mathematics', 'foundation', 2025, 'main', question, 'single', 'ev', foundation.paperFileid), card.id)
+      expect(examTopicIdsForQuestion('mathematics', 'foundation', year, 'main', question, 'single', 'ev', census.paperFileid), card.id)
         .toEqual(expect.arrayContaining(task.examTopicIds));
     }
-    const card = cards.find(card => card.id === 'maths-2025-fl-q7-c-d')!;
-    expect('mathematicsScale' in card && card.mathematicsScale?.marks).toEqual([0, 4, 5, 7, 10]);
   });
 });
 
-describe('2026 Foundation Mathematics independent source review', () => {
-  const cards = FOUNDATION.filter(card => card.year === 2026);
+describe('Foundation Mathematics marking boundaries and source context', () => {
+  const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
 
-  it('retains all 42 published marking units and their 375 offered marks', () => {
-    expect(cards.map(card => card.id).sort()).toEqual(foundation2026.cards.map(card => card.id).sort());
-    expect(cards).toHaveLength(42);
-    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(375);
-    for (const [question, marks] of Object.entries(foundation2026.printedQuestionMarks)) {
-      expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
-        .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
-    }
+  it('uses the different credit bands in 2025 and 2026', () => {
+    const prior = task(2025, 'q7-c-d');
+    const current = task(2026, 'q7-c-d');
+    expect('mathematicsScale' in prior && prior.mathematicsScale?.marks).toEqual([0, 4, 5, 7, 10]);
+    expect('mathematicsScale' in current && current.mathematicsScale?.marks).toEqual([0, 4, 6, 8, 10]);
   });
 
-  it('carries complete prompts, source pages, year-specific scales and both topic placements', () => {
-    const specification = resolveCurriculumSpecification('mathematics', 2026)!;
-    for (const task of foundation2026.cards) {
-      const card = cards.find(candidate => candidate.id === task.id)!;
-      expect(card.stem ?? '', card.id).toBe(task.stem);
-      expect(card.questionText, card.id).toBe(task.questionText);
-      expect(card.paperFileid, card.id).toBe('LC003BLP000EV');
-      expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
-      expect(card.sourceMaterial?.sourceFileid, card.id).toBe(foundation2026.paperFileid);
-      expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
-      expect(card.topicId, card.id).toBe(task.topicId);
-      expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
-      const question = task.printedParts[0].match(/^Q(\d+)/)![1];
-      expect(examTopicIdsForQuestion('mathematics', 'foundation', 2026, 'main', question, 'single', 'ev', foundation2026.paperFileid), card.id)
-        .toEqual(expect.arrayContaining(task.examTopicIds));
-    }
+  it('keeps the 2026 walking graph and its cross-letter allocation together', () => {
+    const walking = task(2026, 'q5-a-b');
+    expect(walking.totalMarks).toBe(15);
+    expect(walking.sourceMaterial?.pages).toEqual([12, 13]);
+    expect(walking.questionText).toContain('(b)');
   });
 
-  it('keeps cross-part allocations together and uses the changed 2026 credit bands', () => {
-    const task = (id: string) => cards.find(card => card.id === `maths-2026-fl-${id}`)!;
-    expect(task('q5-a-b').totalMarks).toBe(15);
-    expect(task('q5-a-b').sourceMaterial?.pages).toEqual([12, 13]);
-    expect(task('q5-a-b').questionText).toContain('(b)');
-    const award = task('q7-c-d');
-    expect('mathematicsScale' in award && award.mathematicsScale?.marks).toEqual([0, 4, 6, 8, 10]);
-  });
-});
-
-describe('2024 Foundation Mathematics independent source review', () => {
-  const cards = FOUNDATION.filter(card => card.year === 2024);
-
-  it('retains all 38 published marking units and their 375 offered marks', () => {
-    expect(cards.map(card => card.id).sort()).toEqual(foundation2024.cards.map(card => card.id).sort());
-    expect(cards).toHaveLength(38);
-    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(375);
-    for (const [question, marks] of Object.entries(foundation2024.printedQuestionMarks)) {
-      expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
-        .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
-    }
-  });
-
-  it('retains complete prompts, diagrams, year-specific scales and both topic placements', () => {
-    const specification = resolveCurriculumSpecification('mathematics', 2024)!;
-    for (const task of foundation2024.cards) {
-      const card = cards.find(candidate => candidate.id === task.id)!;
-      expect(card.stem ?? '', card.id).toBe(task.stem);
-      expect(card.questionText, card.id).toBe(task.questionText);
-      expect(card.paperFileid, card.id).toBe('LC003BLP000EV');
-      expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
-      expect(card.sourceMaterial?.sourceFileid, card.id).toBe(foundation2024.paperFileid);
-      expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
-      expect(card.topicId, card.id).toBe(task.topicId);
-      expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
-      const question = task.printedParts[0].match(/^Q(\d+)/)![1];
-      expect(examTopicIdsForQuestion('mathematics', 'foundation', 2024, 'main', question, 'single', 'ev', foundation2024.paperFileid), card.id)
-        .toEqual(expect.arrayContaining(task.examTopicIds));
-    }
-  });
-
-  it('preserves three-part holistic tasks, including the complete enlargement and trigonometry asks', () => {
+  it('retains the complete 2024 enlargement, trigonometry and intersecting graph asks', () => {
     for (const suffix of ['q8-a', 'q11-d']) {
-      const card = cards.find(card => card.id === `maths-2024-fl-${suffix}`)!;
+      const card = task(2024, suffix);
       expect(card.totalMarks).toBe(20);
       expect(card.questionText).toContain('(iii)');
       expect('mathematicsScale' in card && card.mathematicsScale?.marks).toEqual([0, 6, 8, 10, 20]);
     }
-    const graphs = cards.find(card => card.id === 'maths-2024-fl-q3-b-i-ii')!;
+    const graphs = task(2024, 'q3-b-i-ii');
     expect(graphs.sourceMaterial?.pages).toEqual([8, 9]);
     expect(graphs.stem).toContain('value of the car');
     expect(graphs.stem).toContain('plot of land');
+  });
+
+  it('retains the 2023 travel task across three letters and supplies the construction ruler', () => {
+    const travel = task(2023, 'q11-a-b-c');
+    expect(travel.totalMarks).toBe(20);
+    expect(travel.questionText).toContain('(a)');
+    expect(travel.questionText).toContain('(b)');
+    expect(travel.questionText).toContain('(c)');
+    expect(travel.sourceMaterial?.pages).toEqual([27, 28]);
+    expect(task(2023, 'q2-a-i').sourceMaterial?.measurementRequired).toBe(true);
+    expect(task(2023, 'q9-d-ii-iii').sourceMaterial?.pages).toEqual([22, 23]);
   });
 });
 
