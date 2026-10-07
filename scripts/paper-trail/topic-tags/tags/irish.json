@@ -1172,6 +1172,38 @@
         "n": "X",
         "primary": "irish-6-0",
         "secondary": "irish-6-1"
+      },
+      {
+        "n": "P-2A-a-caca-milis",
+        "primary": "irish-4-6"
+      },
+      {
+        "n": "P-2A-b",
+        "primary": "irish-4-4"
+      },
+      {
+        "n": "P-2B-a-scannan",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-2B-b",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "F-3B-a",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-3B-b",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "P-2A-a-an-lasair-choille",
+        "primary": "irish-4-8"
+      },
+      {
+        "n": "P-2B-a-drama",
+        "primary": "irish-4-7"
       }
     ]
   },
@@ -1819,6 +1851,50 @@
         "n": "X",
         "primary": "irish-6-0",
         "secondary": "irish-6-1"
+      },
+      {
+        "n": "P-2A-a-caca-milis",
+        "primary": "irish-4-6"
+      },
+      {
+        "n": "P-2A-b",
+        "primary": "irish-4-5"
+      },
+      {
+        "n": "P-2B-a-scannan",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "P-2B-b",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "F-3B-a",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-3B-b",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "P-2A-a-an-lasair-choille",
+        "primary": "irish-4-8"
+      },
+      {
+        "n": "P-2B-a-drama",
+        "primary": "irish-4-7"
+      },
+      {
+        "n": "F-3B-a-iomhanna",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-3B-a-codarsnacht",
+        "primary": "irish-5-6"
+      },
+      {
+        "n": "F-3B-a-mothuchain",
+        "primary": "irish-5-6"
       }
     ]
   },

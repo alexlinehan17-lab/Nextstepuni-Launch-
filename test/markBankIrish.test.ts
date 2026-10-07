@@ -92,11 +92,11 @@ const family = (card: { id: string }) => {
 describe('Irish legacy generated-card ledger (not a completeness audit)', () => {
   it('accounts for the generated cards on twenty recent written papers', () => {
     expect(census.paperCount).toBe(20);
-    expect(census.cardUnitCount).toBe(400);
-    expect(census.authoredCount).toBe(400);
+    expect(census.cardUnitCount).toBe(407);
+    expect(census.authoredCount).toBe(407);
     expect(census.queuedCount).toBe(0);
-    expect(census.asks).toHaveLength(400);
-    expect(new Set(census.asks.map(ask => ask.id)).size).toBe(400);
+    expect(census.asks).toHaveLength(407);
+    expect(new Set(census.asks.map(ask => ask.id)).size).toBe(407);
     expect(census.papers.every(paper =>
       paper.cardUnits === paper.authored + paper.queued)).toBe(true);
   });
@@ -110,17 +110,17 @@ describe('Irish legacy generated-card ledger (not a completeness audit)', () => 
         const [level, paper] = key.split('-');
         expect(census.asks.filter(ask => ask.year === year
           && ask.level === level && ask.paper === Number(paper)), `${year} ${key}`)
-          .toHaveLength(count);
+          .toHaveLength(count + (key === 'hl-2' ? year === 2022 ? 5 : year === 2024 ? 2 : 0 : 0));
       }
     }
   });
 
   it('maps the census and generated manifest one-to-one to the live decks', () => {
-    expect(HIGHER).toHaveLength(215);
+    expect(HIGHER).toHaveLength(222);
     expect(ORDINARY).toHaveLength(185);
-    expect(ALL).toHaveLength(400);
-    expect(manifest.cardCount).toBe(400);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(400);
+    expect(ALL).toHaveLength(407);
+    expect(manifest.cardCount).toBe(407);
+    expect(new Set(ALL.map(card => card.id)).size).toBe(407);
     expect(ALL.map(card => card.id).sort()).toEqual(census.asks.map(ask => ask.id).sort());
     expect(manifest.cards.map(card => card.id).sort())
       .toEqual(census.asks.map(ask => ask.id).sort());
@@ -326,11 +326,11 @@ describe('Irish marking grammar', () => {
     }
 
     const literature = ALL.filter(card => family(card) === 'literature');
-    expect(literature).toHaveLength(130);
+    expect(literature).toHaveLength(137);
     expect(literature.every(card => irishRubric(card).criteria[0].guidanceKind === 'indicative'))
       .toBe(true);
     expect(literature.every(card =>
-      irishRubric(card).markingGuideNote.includes('indicative rather than exhaustive')))
+      /indicative(?: rather than exhaustive|;)/.test(irishRubric(card).markingGuideNote)))
       .toBe(true);
   });
 
@@ -360,7 +360,7 @@ describe('Irish marking grammar', () => {
   it('awards Higher literature language marks but subtracts the Ordinary penalty', () => {
     const higher = HIGHER.filter(card => family(card) === 'literature');
     const ordinary = ORDINARY.filter(card => family(card) === 'literature');
-    expect(higher).toHaveLength(70);
+    expect(higher).toHaveLength(77);
     expect(ordinary).toHaveLength(60);
     expect(higher.every(card => irishRubric(card).criteria.at(-1)?.kind === 'award'))
       .toBe(true);

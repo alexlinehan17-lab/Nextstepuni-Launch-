@@ -45,6 +45,8 @@ export const hostedAnchorsUrl = (year: number, fileid: string) =>
  * Storage object is live, an entry can be removed without changing callers.
  */
 export const HOSTED_ANSWER_OVERRIDES = new Set([
+  'irish|2022|LC001ALP200IV.pdf',
+  'irish|2024|LC001ALP200IV.pdf',
   'irish|2025|LC001BLP000IV.pdf',
   'physics|2012|LC021ALP000EV.pdf',
   'physics|2024|LC021ALP000EV.pdf',
@@ -219,6 +221,7 @@ export function mergePaperAnchorMetadata(
     ...(paperQuestion.printOrder !== undefined ? { printOrder: paperQuestion.printOrder } : {}),
     ...(paperQuestion.label ? { label: paperQuestion.label } : {}),
     ...(paperQuestion.audioMaterial ? { audioMaterial: paperQuestion.audioMaterial } : {}),
+    ...(paperQuestion.practiceInstruction ? { practiceInstruction: paperQuestion.practiceInstruction } : {}),
   };
   const maxCropPages = Math.max(
     answerMap.maxCropPages ?? 0,

@@ -71,6 +71,8 @@ export interface PaperAnswerQuestion {
   paperRegion?: PaperAnswerSeg[];
   /** Verified recording required to answer this listening task. */
   audioMaterial?: CardAudioMaterial;
+  /** Visible route instruction when several practice tasks share a paper page. */
+  practiceInstruction?: string;
   /** Marking-scheme region: ordered page crops (mode 'crop') or a single
    *  jump target (mode 'pagejump'). */
   region: PaperAnswerSeg[];

@@ -232,6 +232,7 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
         // (design system), so a zinc-950 strip here read as a black band.
         <div className="px-3 pt-3 pb-1 bg-[#fafafa]">
           {state.q.audioMaterial && <AudioSourcePlayer source={state.q.audioMaterial} />}
+          {state.q.practiceInstruction && <p className="mb-3 text-sm font-semibold text-[#2a2520]">{state.q.practiceInstruction}</p>}
           <CropView
             pdf={state.pdf}
             region={state.region}

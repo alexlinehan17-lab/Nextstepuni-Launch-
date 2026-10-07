@@ -30,7 +30,7 @@
     ],
     "papersWithCards": 21,
     "papersWithoutCards": 70,
-    "indexedCards": 478,
+    "indexedCards": 485,
     "orphanCardIds": [],
     "missingLocalPapers": [],
     "papersWithoutIndexedScheme": [
@@ -739,7 +739,9 @@
         "irish-2024-hl-p2-literature-4-c",
         "irish-2024-hl-p2-literature-4-d",
         "irish-2024-hl-p2-literature-4-e",
-        "irish-2024-hl-p2-literature-4-f"
+        "irish-2024-hl-p2-literature-4-f",
+        "irish-2024-hl-p2-prose-2a-a-an-lasair-choille",
+        "irish-2024-hl-p2-prose-2b-a-drama"
       ],
       "atlasQuestionIds": [
         "1",
@@ -758,7 +760,15 @@
         "P-B",
         "F-A",
         "F-B",
-        "X"
+        "X",
+        "P-2A-a-caca-milis",
+        "P-2A-b",
+        "P-2B-a-scannan",
+        "P-2B-b",
+        "F-3B-a",
+        "F-3B-b",
+        "P-2A-a-an-lasair-choille",
+        "P-2B-a-drama"
       ],
       "questionCoverage": "unverified",
       "fullVisualReview": "pending",
@@ -1277,7 +1287,12 @@
         "irish-2022-hl-p2-literature-4-c",
         "irish-2022-hl-p2-literature-4-d",
         "irish-2022-hl-p2-literature-4-e",
-        "irish-2022-hl-p2-literature-4-f"
+        "irish-2022-hl-p2-literature-4-f",
+        "irish-2022-hl-p2-prose-2a-a-an-lasair-choille",
+        "irish-2022-hl-p2-prose-2b-a-drama",
+        "irish-2022-hl-p2-poetry-3b-a-iomhanna",
+        "irish-2022-hl-p2-poetry-3b-a-codarsnacht",
+        "irish-2022-hl-p2-poetry-3b-a-mothuchain"
       ],
       "atlasQuestionIds": [
         "1",
@@ -1296,7 +1311,18 @@
         "P-B",
         "F-A",
         "F-B",
-        "X"
+        "X",
+        "P-2A-a-caca-milis",
+        "P-2A-b",
+        "P-2B-a-scannan",
+        "P-2B-b",
+        "F-3B-a",
+        "F-3B-b",
+        "P-2A-a-an-lasair-choille",
+        "P-2B-a-drama",
+        "F-3B-a-iomhanna",
+        "F-3B-a-codarsnacht",
+        "F-3B-a-mothuchain"
       ],
       "questionCoverage": "unverified",
       "fullVisualReview": "pending",

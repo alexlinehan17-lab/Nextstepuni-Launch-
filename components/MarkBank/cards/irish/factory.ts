@@ -14,6 +14,7 @@ import type {
   SecRubricCard,
 } from '../../../../types/markBank';
 import authored from './authored.json';
+import { resolveCurriculumSpecification } from '../../../../curriculumRegistry';
 
 type IrishLevel = 'higher' | 'ordinary';
 
@@ -31,6 +32,7 @@ interface AuthoredIrishCard {
   paperFileid: string;
   schemePage: number;
   schemePages?: number[];
+  reviewedAt?: string;
   taskRequirements: string[];
   criteria: IrishCriterion[];
   markingGuideNote: string;
@@ -68,7 +70,7 @@ const makeCard = (card: AuthoredIrishCard): SecRubricCard => ({
     `marking scheme ${card.year}, p.${card.schemePage}` +
     (card.schemePages && card.schemePages.length > 1 ? `–${card.schemePages.at(-1)}` : '') +
     ' — © State Examinations Commission.',
-  specVersion: 'irish:outgoing',
+  specVersion: resolveCurriculumSpecification('irish', card.year)!.id,
   qa: {
     gates: [
       'verbatim-paper-prompt',
@@ -77,7 +79,7 @@ const makeCard = (card: AuthoredIrishCard): SecRubricCard => ({
       'paper-census',
     ],
     humanReviewedBy: 'corpus-verified',
-    humanReviewedAt: '2026-08-30',
+    humanReviewedAt: card.reviewedAt ?? '2026-08-30',
   },
   rubric: {
     system: 'irish',

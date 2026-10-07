@@ -45,6 +45,18 @@ import { CARDS as ENGINEERING_HIGHER } from '../components/MarkBank/cards/engine
 import { CARDS as ENGINEERING_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
+// Additive partial-review routes are checked separately while the original
+// Irish 215-ID hash stays frozen. Do not refresh it during the archive audit.
+const addedIrishRoutes = new Set([
+  'irish-2022-hl-p2-prose-2a-a-an-lasair-choille',
+  'irish-2022-hl-p2-prose-2b-a-drama',
+  'irish-2022-hl-p2-poetry-3b-a-iomhanna',
+  'irish-2022-hl-p2-poetry-3b-a-codarsnacht',
+  'irish-2022-hl-p2-poetry-3b-a-mothuchain',
+  'irish-2024-hl-p2-prose-2a-a-an-lasair-choille',
+  'irish-2024-hl-p2-prose-2b-a-drama',
+]);
+
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
@@ -385,10 +397,9 @@ const decks = [
    * 205 cards open the real paper passage or poem in the source reader. */
   ['english:higher', ENGLISH_HIGHER, 210, '231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0'],
   ['english:ordinary', ENGLISH_ORDINARY, 440, '9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f'],
-  /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
-   * responses across 2021–2025 Higher and Ordinary are present, including
-   * listening audio and the real PDF pages for passages and printed poems. */
-  ['irish:higher', IRISH_HIGHER, 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
+  /* Original 400 Irish identities. Their presence does not establish coverage
+   * of every task or route; the full 2010–2026 review remains in progress. */
+  ['irish:higher', IRISH_HIGHER.filter(card => !addedIrishRoutes.has(card.id)), 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
   ['irish:ordinary', IRISH_ORDINARY, 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
   /* 2026-08-30: complete Art written-paper launch. All 462 separately marked
    * tasks and finite printed answer routes across 2021–2025 are present. This
@@ -427,8 +438,14 @@ describe('Mark Bank card preservation', () => {
     expect(identityHash(cards), `${name}: a card ID was removed or replaced`).toBe(hash);
   });
 
-  it('protects the complete current bank', () => {
+  it('protects the frozen bank identities', () => {
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(10_495);
+  });
+
+  it('adds the reviewed Irish internal routes alongside the frozen 215-card Higher baseline', () => {
+    expect(IRISH_HIGHER.filter(card => addedIrishRoutes.has(card.id)).map(card => card.id).sort())
+      .toEqual([...addedIrishRoutes].sort());
+    expect(IRISH_HIGHER).toHaveLength(215 + addedIrishRoutes.size);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {

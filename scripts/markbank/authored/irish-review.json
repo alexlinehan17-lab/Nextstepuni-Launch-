@@ -184,9 +184,9 @@
   ],
   "confirmedRemainingWork": [
     "70 indexed paper components still have no Mark Bank cards. The 20 legacy components also need full independent task and selection review. Foundation 2025 has completed its paper/scheme sweep and 78-task Bank/Atlas reconciliation; 90 components remain pending full review.",
-    "2022 and 2024 HL Paper 2 Q2A(a) omit the An Lasair Choille alternative after the first Cáca Milis tariff. Q2B(a) also omits its alternative drama route. Paper page 8 visually reviewed for both years; 2022 Q2B(a) continues on page 9 and still needs visual/scheme verification.",
-    "2022 HL Paper 2 Q3B(a)(i), paper page 12, prints a closed choice among images, contrast and emotions. It needs three explicit routes and its complete shared marking treatment.",
-    "Topic Atlas currently has 1054 section/task/route anchors, including the 75 additive reviewed Foundation 2025 entries. This is not proof of parity with every independently practicable Mark Bank task. Reconcile exact parts/topics and preserve existing Atlas entries.",
+    "2024 Higher Paper 2: all 16 paper pages visually swept; reading Q1 separately marked parts and grammar tasks still need authoring, and Q3A/Q4 require full boundary/selection reconciliation. Q3A(b)(iii) asks for two adjectives from An tEarrach Thiar; scheme p.37 supplies illustrative, not exhaustive, examples. Resolve its source-bounded selection carefully rather than treating the examples as a closed complete list.",
+    "Review all other Higher/Ordinary internal options (including 2021/2023/2025), expand published task boundaries across older years and reconcile their Atlas topics and source/scheme regions. Prescribed prose has an archive shelf; prescribed poetry placement still requires review.",
+    "Topic Atlas currently has 1073 section/task/route anchors, including 75 additive reviewed Foundation entries and 19 Higher task entries. This is not proof of parity with every independently practicable Mark Bank task. Reconcile exact parts/topics and preserve existing Atlas entries.",
     "Irish 2010 HL/OL and 2011 Foundation have papers but no indexed marking scheme (eight paper components). Find authoritative schemes rather than inventing marks.",
     "Listening recordings must be verified for each year and level; Foundation uses different recordings. Preserve passages, poems, signs, forms and picture sequences using the existing open/close source reader.",
     "Full visual paper/scheme sweeps, raw selection-directive classification, preservation and zero-open/zero-orphan checks remain required before any completion claim or coverage-baseline change."
@@ -272,18 +272,26 @@
       "irish-2025-fl-w-4b-5b-16-aibrean",
       "irish-2025-fl-w-4b-5b-5-bealtaine",
       "irish-2025-fl-w-4b-5b-10-meitheamh",
-      "irish-2025-fl-w-5a-5b"
+      "irish-2025-fl-w-5a-5b",
+      "irish-2022-hl-p2-prose-2a-a-an-lasair-choille",
+      "irish-2022-hl-p2-prose-2b-a-drama",
+      "irish-2022-hl-p2-poetry-3b-a-iomhanna",
+      "irish-2022-hl-p2-poetry-3b-a-codarsnacht",
+      "irish-2022-hl-p2-poetry-3b-a-mothuchain",
+      "irish-2024-hl-p2-prose-2a-a-an-lasair-choille",
+      "irish-2024-hl-p2-prose-2b-a-drama"
     ],
-    "baselineFilesChanged": false,
     "typecheck": "passed",
-    "targetedDataAndInteractionTests": "263 passed across ten suites including Foundation route/marks/material tests, profile defaults, reader interaction, deck and curriculum preservation, Atlas anchors and paper regions",
-    "productionBuild": "passed",
-    "generatedFilesCheck": "passed",
+    "targetedDataAndInteractionTests": "268 tests passed across eleven suites. After final prompt-boundary/context repairs, the 132 tests covering Higher routes, Irish data, preservation, curriculum and deck were rerun. A transient curriculum test timeout passed on isolated rerun.",
+    "productionBuild": "passed (5m12s; existing chunk-size/import warnings)",
+    "generatedFilesCheck": "Higher/Ordinary, Foundation and inventory checks passed; Atlas regeneration idempotent. Unknown and stale raw-selection negative probes rejected.",
     "archiveInventoryCheck": "passed",
     "testTypecheck": "Fails with the same three pre-existing programmeAnalytics errors reproduced on unchanged base checkout: test/programmeAnalyticsClient.test.ts lines 32 and 56 (TS2493); utils/programmeAnalytics.ts line 50 (TS2339).",
-    "browserVisualQA": "Passed for the new Foundation 2025 picker, source reader, audio and representative Topic Atlas cards in a real Chromium browser. No uncaught page errors; source pages were fetched from live Paper Trail storage, not mocked.",
-    "otherSubjectTopicData": "Unchanged, compared structurally with HEAD before this batch",
-    "legacyIrishCards": "All 400 legacy card records unchanged by the Foundation batch"
+    "browserVisualQA": "Foundation verification retained from its batch. Higher 390px verification passed for imagery, prescribed drama and optional drama Mark Bank cards; Atlas contrast, prescribed drama, optional drama and retained reading Q1 rendered real PDFs and revealed/closed their schemes. No uncaught page errors or horizontal overflow.",
+    "otherSubjectTopicData": "Unchanged, compared structurally and as decoded runtime records and labels with previous HEAD.",
+    "legacyIrishCards": "All 400 original IDs retained. 388 records unchanged; twelve Q2/Q3B responses corrected after source review. Seven Higher routes added alongside all 78 Foundation cards.",
+    "previousBatchIdsPreserved": 478,
+    "preservationBaselineCountsAndHashesChanged": false
   },
   "reviewedFoundationPapers": [
     {
@@ -455,5 +463,79 @@
         "browserErrors": []
       }
     }
-  ]
+  ],
+  "reviewedHigherRoutes": {
+    "reviewFile": "irish-higher-route-review.json",
+    "scope": "2022 and 2024 Higher Q2 and Q3B only",
+    "newRoutes": 7,
+    "correctedExistingResponses": 12,
+    "matchedAtlasTasks": 19,
+    "preservation": "All 400 legacy Mark Bank IDs, 78 Foundation IDs and existing Atlas IDs retained. Original Higher 215-ID hash unchanged; additive routes checked separately. Twelve existing reading-answer records per Higher sidecar preserved verbatim.",
+    "boundaries": "Whole 30-mark responses with one shared 5-mark Gaeilge award. Poetry knowledge criteria 13/5/7. 2024 optional film/drama knowledge criteria 2/23. All three 2022 Q3B(a) finite technique routes retain compulsory (ii)/(iii).",
+    "selectionGuard": "Full raw extraction on reviewed question pages; rejects unknown directives, stale decision text and changed paper/scheme hashes. Unknown/stale negative probes passed.",
+    "runtimeVerification": {
+      "viewport": "390 × 844",
+      "markBank": [
+        "irish-2022-hl-p2-poetry-3b-a-iomhanna",
+        "irish-2024-hl-p2-prose-2a-a-an-lasair-choille",
+        "irish-2024-hl-p2-prose-2b-a-drama"
+      ],
+      "atlas": [
+        {
+          "year": 2022,
+          "question": "F-3B-a-codarsnacht",
+          "renderedPaperAndSchemeCanvases": 3
+        },
+        {
+          "year": 2024,
+          "question": "P-2A-a-an-lasair-choille",
+          "renderedPaperAndSchemeCanvases": 4
+        },
+        {
+          "year": 2024,
+          "question": "P-2B-a-drama",
+          "renderedPaperAndSchemeCanvases": 3
+        },
+        {
+          "year": 2024,
+          "question": "1",
+          "renderedPaperAndSchemeCanvases": 2
+        }
+      ],
+      "visibleRouteInstruction": true,
+      "uncaughtBrowserErrors": [],
+      "horizontalOverflow": false,
+      "source": "Live Paper Trail PDFs, not mocked"
+    }
+  },
+  "nextReadingReview": {
+    "year": 2024,
+    "level": "higher",
+    "paperFileid": "LC001ALP200IV.pdf",
+    "visuallyReviewedPaperPages": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "visuallyReviewedSchemePages": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "status": "Source review started; no atomic reading cards authored in this batch. Full paper review remains pending.",
+    "findings": [
+      "Both passages are compulsory: 50 marks each. Questions 1–5 divide into (a)=3, (b)(i)=2 and (b)(ii)=2. Retain both pages of the respective passage with every part.",
+      "Where two facts share 3 marks, the first correct fact earns 2 and the second 1. This is not a fixed 2/1 split by printed answer position. Keep the two-fact response whole.",
+      "Each 6(a) grammar task similarly awards 2 for the first correct grammar item and 1 for the other: retain one 3-mark task, with 0/2/3 placements, rather than inventing fixed independent 2/1 tariffs. A asks future passive (Alt 3) plus comparative adjective (Alt 4); B asks conditional (Alt 2) plus present passive (Alt 5).",
+      "A6(b): whole 12 marks, opinion=2 and two supporting own-word points=5+5. No opinion means supporting points cannot be credited. Preserve the 60-word guidance and source-based own-word requirement.",
+      "B6(b): two independently marked insights=6+6. Each insight=2 plus own-word explanation and accurate passage example=4. Without a stated/implied insight the example cannot earn marks. Preserve the original full-response 60-word guidance without inventing per-part word limits.",
+      "Scheme examples are indicative, not exhaustive answer-route pools. The source word/fact retrieval options are acceptable answers to the same task, not different tasks."
+    ]
+  }
 }

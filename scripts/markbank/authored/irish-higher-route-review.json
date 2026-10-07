@@ -1,0 +1,289 @@
+[
+  {
+    "year": 2022,
+    "level": "higher",
+    "paperFileid": "LC001ALP200IV.pdf",
+    "paperSha256": "e29b5862e8650455db716de7c58c1c81d7f09f169f482d53d5831027b5637d58",
+    "schemeSha256": "600bdfd6f0a8499687c09a98873aa32915415299e83885186dd1a7ca251ca92c",
+    "reviewDate": "2026-10-07",
+    "scope": "Q2 and Q3B only; full paper review remains pending",
+    "reviewedPaperPages": [
+      8,
+      9,
+      12
+    ],
+    "reviewedSchemePages": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      37,
+      38,
+      39,
+      40
+    ],
+    "cardIds": [
+      "irish-2022-hl-p2-prose-2a-a",
+      "irish-2022-hl-p2-prose-2a-a-an-lasair-choille",
+      "irish-2022-hl-p2-prose-2a-b",
+      "irish-2022-hl-p2-prose-2b-a",
+      "irish-2022-hl-p2-prose-2b-a-drama",
+      "irish-2022-hl-p2-prose-2b-b",
+      "irish-2022-hl-p2-poetry-3b-a",
+      "irish-2022-hl-p2-poetry-3b-b",
+      "irish-2022-hl-p2-poetry-3b-a-iomhanna",
+      "irish-2022-hl-p2-poetry-3b-a-codarsnacht",
+      "irish-2022-hl-p2-poetry-3b-a-mothuchain"
+    ],
+    "selectionDecisions": [
+      {
+        "key": "prose-family",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "Freagair Ceist 2A (Prós Ainmnithe) nó Ceist 2B (Prós Roghnach).",
+            "reason": "Choose prescribed or optional prose. Each has three explicit 30-mark routes after its film/drama choice."
+          }
+        ]
+      },
+      {
+        "key": "outer-option",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+            "reason": "Each printed (a)/(b) response is retained; internal choices are expanded separately."
+          },
+          {
+            "page": 9,
+            "quote": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+            "reason": "Each printed (a)/(b) response is retained; internal choices are expanded separately."
+          },
+          {
+            "page": 12,
+            "quote": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+            "reason": "Each printed (a)/(b) response is retained; internal choices are expanded separately."
+          }
+        ]
+      },
+      {
+        "key": "prescribed-film-drama",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "Freagair an cheist thíos ar an scannán Cáca Milis nó ar an dráma An Lasair Choille.",
+            "reason": "Two 30-mark routes: Cáca Milis and An Lasair Choille. Each keeps 25 Eolas plus one shared 5 Gaeilge."
+          }
+        ]
+      },
+      {
+        "key": "optional-film-drama",
+        "occurrences": [
+          {
+            "page": 9,
+            "quote": "Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.",
+            "reason": "Two 30-mark genre routes. The studied work, author and character/theme remain open choices."
+          }
+        ]
+      },
+      {
+        "key": "prose-heading",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "PRÓS AINMNITHE nó PRÓS ROGHNACH",
+            "reason": "Repeated heading for the already classified prescribed/optional choice."
+          }
+        ]
+      },
+      {
+        "key": "alternative-separator",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "nó",
+            "reason": "Printed separator between the alternatives classified above; not an additional task."
+          },
+          {
+            "page": 8,
+            "quote": "nó",
+            "reason": "Printed separator between the alternatives classified above; not an additional task."
+          },
+          {
+            "page": 9,
+            "quote": "nó",
+            "reason": "Printed separator between the alternatives classified above; not an additional task."
+          },
+          {
+            "page": 9,
+            "quote": "nó",
+            "reason": "Printed separator between the alternatives classified above; not an additional task."
+          },
+          {
+            "page": 12,
+            "quote": "nó",
+            "reason": "Printed separator between the alternatives classified above; not an additional task."
+          }
+        ]
+      },
+      {
+        "key": "prose-or-poetry",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "Freagair Ceist 2 (Prós) nó Ceist 3 (Filíocht).",
+            "reason": "2022 outer exam choice. Both response families remain available for independent practice."
+          }
+        ]
+      },
+      {
+        "key": "poetry-technique",
+        "occurrences": [
+          {
+            "page": 12,
+            "quote": "Déan plé ar an úsáid a bhaineann an file as do rogha ceann amháin díobh seo a leanas chun an príomhthéama sin a chur in iúl: íomhánna, codarsnacht nó mothúcháin.",
+            "reason": "Closed choose-one pool: three complete 30-mark routes, each retaining compulsory (ii)/(iii) and shared Gaeilge."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "level": "higher",
+    "paperFileid": "LC001ALP200IV.pdf",
+    "paperSha256": "5302117a0e3dbbf46d0e635680fd78ceb00d46d89e54cc3a04d4f7d9506cd2ca",
+    "schemeSha256": "c2d30b98b2a6e6b2747b8479b9df527609652b52ce5e352f356fab9bdac1c27e",
+    "reviewDate": "2026-10-07",
+    "scope": "Q2 and Q3B only; full paper review remains pending",
+    "reviewedPaperPages": [
+      8,
+      11
+    ],
+    "reviewedSchemePages": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      38,
+      39,
+      40
+    ],
+    "cardIds": [
+      "irish-2024-hl-p2-prose-2a-a",
+      "irish-2024-hl-p2-prose-2a-a-an-lasair-choille",
+      "irish-2024-hl-p2-prose-2a-b",
+      "irish-2024-hl-p2-prose-2b-a",
+      "irish-2024-hl-p2-prose-2b-a-drama",
+      "irish-2024-hl-p2-prose-2b-b",
+      "irish-2024-hl-p2-poetry-3b-a",
+      "irish-2024-hl-p2-poetry-3b-b"
+    ],
+    "selectionDecisions": [
+      {
+        "key": "prose-family",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "Freagair Ceist 2A (Prós Ainmnithe) nó Ceist 2B (Prós Roghnach).",
+            "reason": "Choose prescribed or optional prose. Each has three explicit 30-mark routes after its film/drama choice."
+          }
+        ]
+      },
+      {
+        "key": "outer-option",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+            "reason": "Each printed (a)/(b) response is retained; internal choices are expanded separately."
+          },
+          {
+            "page": 8,
+            "quote": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+            "reason": "Each printed (a)/(b) response is retained; internal choices are expanded separately."
+          },
+          {
+            "page": 11,
+            "quote": "Freagair do rogha ceann amháin de (a) nó (b) thíos.",
+            "reason": "Each printed (a)/(b) response is retained; internal choices are expanded separately."
+          }
+        ]
+      },
+      {
+        "key": "prescribed-film-drama",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "Freagair an cheist thíos ar an scannán Cáca Milis nó ar an dráma An Lasair Choille.",
+            "reason": "Two 30-mark routes: Cáca Milis and An Lasair Choille. Each keeps 25 Eolas plus one shared 5 Gaeilge."
+          }
+        ]
+      },
+      {
+        "key": "optional-film-drama",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "Freagair an cheist thíos ar an scannán roghnach nó ar an dráma roghnach.",
+            "reason": "Two 30-mark genre routes. The studied work, author and character/theme remain open choices."
+          }
+        ]
+      },
+      {
+        "key": "prose-heading",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "PRÓS AINMNITHE nó PRÓS ROGHNACH",
+            "reason": "Repeated heading for the already classified prescribed/optional choice."
+          }
+        ]
+      },
+      {
+        "key": "alternative-separator",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "nó",
+            "reason": "Printed separator between the alternatives classified above; not an additional task."
+          },
+          {
+            "page": 8,
+            "quote": "nó",
+            "reason": "Printed separator between the alternatives classified above; not an additional task."
+          },
+          {
+            "page": 8,
+            "quote": "nó",
+            "reason": "Printed separator between the alternatives classified above; not an additional task."
+          },
+          {
+            "page": 8,
+            "quote": "nó",
+            "reason": "Printed separator between the alternatives classified above; not an additional task."
+          },
+          {
+            "page": 11,
+            "quote": "nó",
+            "reason": "Printed separator between the alternatives classified above; not an additional task."
+          }
+        ]
+      },
+      {
+        "key": "open-character",
+        "occurrences": [
+          {
+            "page": 8,
+            "quote": "roghnaigh duine de na carachtair (na pearsana) sa ghearrscéal sin.",
+            "reason": "Open choice from the student’s independently chosen short story, not a finite printed character pool."
+          }
+        ]
+      }
+    ]
+  }
+]

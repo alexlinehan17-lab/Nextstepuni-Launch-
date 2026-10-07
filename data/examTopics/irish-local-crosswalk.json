@@ -11,8 +11,8 @@
   },
   "summary": {
     "referenceTopics": 62,
-    "preservationExtensionTopics": 2,
-    "runtimeTopics": 64,
+    "preservationExtensionTopics": 3,
+    "runtimeTopics": 65,
     "referenceReportedAssociations": 1481,
     "referenceOfficialAssociations": 842,
     "referenceMockAssociations": 563,
@@ -27,15 +27,15 @@
     },
     "matchedLocalCardLinks": 744,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 1054,
-    "distinctStudentFacingQuestions": 1054,
+    "localPhysicalMappings": 1073,
+    "distinctStudentFacingQuestions": 1073,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 368,
+    "retainedLocalQuestions": 387,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 768,
+    "newlyAddedPhysicalMappings": 787,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -84,6 +84,18 @@
       "label": "Cluastuiscint (NextStepUni archive)",
       "level": "foundation",
       "sourcePath": "/nextstepuni-preservation/irish/foundation/cluastuiscint",
+      "reportedQuestionCount": 0,
+      "officialQuestionHeadings": [],
+      "mockQuestionCount": 0,
+      "providerSampleQuestionCount": 0,
+      "extractedQuestionCount": 0,
+      "referenceTopic": false
+    },
+    {
+      "id": "irish-higher-prescribed-prose-archive",
+      "label": "Prescribed Prose (NextStepUni archive)",
+      "level": "higher",
+      "sourcePath": "/nextstepuni-preservation/irish/higher/prescribed-prose",
       "reportedQuestionCount": 0,
       "officialQuestionHeadings": [],
       "mockQuestionCount": 0,
@@ -23311,6 +23323,149 @@
       "provenance": "retained-local"
     },
     {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-a-caca-milis",
+      "topicIds": [
+        "irish-higher-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-b",
+      "topicIds": [
+        "irish-higher-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-a-scannan",
+      "topicIds": [
+        "irish-higher-studied-prose-pros-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-b",
+      "topicIds": [
+        "irish-higher-studied-prose-pros-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-a",
+      "topicIds": [
+        "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-b",
+      "topicIds": [
+        "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-a-an-lasair-choille",
+      "topicIds": [
+        "irish-higher-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-a-drama",
+      "topicIds": [
+        "irish-higher-studied-prose-pros-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-a-iomhanna",
+      "topicIds": [
+        "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-a-codarsnacht",
+      "topicIds": [
+        "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2022,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-a-mothuchain",
+      "topicIds": [
+        "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
       "level": "foundation",
       "lang": "iv",
       "year": 2022,
@@ -24910,6 +25065,110 @@
       "n": "X",
       "topicIds": [
         "irish-higher-historic-additional-literature"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-a-caca-milis",
+      "topicIds": [
+        "irish-higher-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-b",
+      "topicIds": [
+        "irish-higher-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-a-scannan",
+      "topicIds": [
+        "irish-higher-studied-prose-pros-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-b",
+      "topicIds": [
+        "irish-higher-studied-prose-pros-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-a",
+      "topicIds": [
+        "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "F-3B-b",
+      "topicIds": [
+        "irish-higher-studied-poetry-filiocht-roghnach"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2A-a-an-lasair-choille",
+      "topicIds": [
+        "irish-higher-prescribed-prose-archive"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "higher",
+      "lang": "iv",
+      "year": 2024,
+      "fileid": "LC001ALP200IV.pdf",
+      "paperKey": "p2",
+      "kind": "p2",
+      "n": "P-2B-a-drama",
+      "topicIds": [
+        "irish-higher-studied-prose-pros-roghnach"
       ],
       "provenance": "retained-local"
     },

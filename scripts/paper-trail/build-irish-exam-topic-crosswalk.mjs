@@ -30,6 +30,8 @@ const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/irish-runtime.json');
 const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/irish-curriculum-crosswalk.json');
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
+const reviewedHigherTasks = readJson(path.join(ROOT, 'components/MarkBank/cards/irish/authored.json'))
+  .cards.filter(card => card.reviewedAt && card.atlasQuestionId);
 const reference = readJson(REFERENCE_PATH);
 const preservationBaseline = readJson(BASELINE_PATH);
 const referenceTopics = Object.entries(reference.variants).flatMap(([level, variant]) => (
@@ -64,6 +66,18 @@ const EXTENSIONS = [
     extractedQuestionCount: 0,
     referenceTopic: false,
   },
+  {
+    id: 'irish-higher-prescribed-prose-archive',
+    label: 'Prescribed Prose (NextStepUni archive)',
+    level: 'higher',
+    sourcePath: '/nextstepuni-preservation/irish/higher/prescribed-prose',
+    reportedQuestionCount: 0,
+    officialQuestionHeadings: [],
+    mockQuestionCount: 0,
+    providerSampleQuestionCount: 0,
+    extractedQuestionCount: 0,
+    referenceTopic: false,
+  },
 ];
 const allTopics = [...referenceTopics, ...EXTENSIONS];
 const topicById = new Map(allTopics.map(topic => [topic.id, topic]));
@@ -90,6 +104,7 @@ const H = {
   story: topicId('higher', 'Write a Story..'),
   essay: topicId('higher', 'Write an Essay..'),
   historic: EXTENSIONS[0].id,
+  prescribedProse: EXTENSIONS[2].id,
 };
 const O = {
   conversation: topicId('ordinary', 'AURAL - Comhrá (Conversation)'),
@@ -150,6 +165,10 @@ setCurriculum(H.oral, ['irish-0-0', 'irish-0-1', 'irish-0-2', 'irish-0-3', 'iris
 setCurriculum(H.reading, ['irish-3-0', 'irish-3-1', 'irish-3-2']);
 setCurriculum(H.poetry, ['irish-5-6', 'irish-7-0']);
 setCurriculum(H.prose, ['irish-4-7', 'irish-7-0']);
+// Reuse the reviewed cards' existing canonical nodes; this archive shelf does
+// not define a second syllabus or relabel prescribed works as optional prose.
+setCurriculum(H.prescribedProse, [...new Set(reviewedHigherTasks
+  .filter(card => card.atlasQuestionId.startsWith('P-2A-')).map(card => card.topicId))].sort());
 setCurriculum(H.debate, ['irish-2-4', 'irish-2-5']);
 setCurriculum(H.article, ['irish-2-1']);
 setCurriculum(H.story, ['irish-2-3']);
@@ -682,6 +701,29 @@ for (const card of foundationTasks.cards) {
   paper.q.at(-1).reviewedSchemePages = card.schemePages;
   paper.q.at(-1).audioMaterial = card.audioMaterial;
 }
+for (const card of reviewedHigherTasks) {
+  const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
+  if (!paper) throw new Error('Unindexed reviewed Higher task: ' + card.id);
+  const existing = paper.q.find(q => q.n === card.atlasQuestionId);
+  if (existing?.baseline) throw new Error('Reviewed task collides with frozen identity: ' + card.id);
+  if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
+  addQuestion(paper, {
+    n: card.atlasQuestionId,
+    label: card.questionRef.replace(/^\d{4} HL Paper 2 /, ''),
+    baseTopicIds: [card.atlasQuestionId.startsWith('P-2A-') ? H.prescribedProse
+      : card.atlasQuestionId.startsWith('P-') ? H.prose : H.poetry],
+    anchor: { pP: card.reviewedPaperPages[0], pY: [0, 1],
+      paperRegion: card.reviewedPaperPages.map(p => ({ p, r: [0, 0, 1, 1] })),
+    },
+  });
+  const question = paper.q.at(-1);
+  question.primary = card.topicId;
+  delete question.secondary;
+  question.reviewedSchemePages = card.schemePages;
+  question.practiceInstruction = 'Don chárta seo: ' + question.label + '.'
+    + (card.selectedRoute ? ' Freagair (i), (ii) agus (iii).' : '');
+  paper.hasReviewedHigherTasks = true;
+}
 const reviewedFoundation = papers.find(p => p.year === 2025 && p.level === 'foundation');
 for (const [n, label, topics] of [
   ['R-2C', 'Léamhthuiscint · Scéal', [F.extract]],
@@ -971,6 +1013,7 @@ for (const paper of papers) {
         pP: question.anchor.pP,
         pY: question.anchor.pY,
         ...(question.audioMaterial ? { audioMaterial: question.audioMaterial } : {}),
+        ...(question.practiceInstruction ? { practiceInstruction: question.practiceInstruction } : {}),
         ...(question.anchor.paperRegion
           ? { paperRegion: question.anchor.paperRegion }
           : collision
@@ -988,15 +1031,22 @@ for (const paper of papers) {
   fs.mkdirSync(yearDir, { recursive: true });
   const outputPath = path.join(yearDir, paper.fileid + '.json');
   fs.writeFileSync(outputPath, JSON.stringify(artifact) + '\n');
-  if (paper === reviewedFoundation) {
+  if (paper === reviewedFoundation || paper.hasReviewedHigherTasks) {
     const { paperOnly, ...answerMap } = artifact;
-    answerMap.schemeFileid = paper.fileid;
-    answerMap.band = [3, 16];
+    answerMap.schemeFileid = paper === reviewedFoundation ? paper.fileid : 'LC001ALP000IV.pdf';
+    answerMap.band = paper === reviewedFoundation ? [3, 16] : [27, 41];
     answerMap.maxCropPages = 10;
-    answerMap.q = artifact.q.map(q => ({ ...q,
+    answerMap.q = artifact.q.filter(q => paper.q.find(question => question.n === q.n).reviewedSchemePages).map(q => ({ ...q,
       region: paper.q.find(question => question.n === q.n).reviewedSchemePages.map(p => ({ p, r: [0, 0, 1, 1] })),
       mode: 'crop', conf: 1,
     }));
+    if (paper.hasReviewedHigherTasks) {
+      // Preserve the prior reading-answer identities and regions verbatim.
+      // Only the literature routes above receive this batch's new review.
+      const reviewedIds = new Set(answerMap.q.map(q => q.n));
+      answerMap.q = [...(paper.sidecar?.q ?? []).filter(q => !reviewedIds.has(q.n)), ...answerMap.q];
+      answerMap.band = [Math.min(paper.sidecar?.band?.[0] ?? 27, 27), Math.max(paper.sidecar?.band?.[1] ?? 41, 41)];
+    }
     for (const folder of [ANSWERS_ROOT, path.join(ROOT, 'public/paper-answers')]) {
       const directory = path.join(folder, String(paper.year));
       fs.mkdirSync(directory, { recursive: true });

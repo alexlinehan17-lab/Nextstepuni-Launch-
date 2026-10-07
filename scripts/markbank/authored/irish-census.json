@@ -5,8 +5,8 @@
   "coverageNote": "This ledger counts generated cards, not independently reviewed paper tasks. Zero queued cards does not mean zero missing questions. See irish-archive-inventory.json and irish-review.json.",
   "definition": "One independently selectable response; compulsory linked parts remain together.",
   "paperCount": 20,
-  "cardUnitCount": 400,
-  "authoredCount": 400,
+  "cardUnitCount": 407,
+  "authoredCount": 407,
   "queuedCount": 0,
   "papers": [
     {
@@ -53,8 +53,8 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "cardUnits": 26,
-      "authored": 26,
+      "cardUnits": 31,
+      "authored": 31,
       "queued": 0
     },
     {
@@ -117,8 +117,8 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "cardUnits": 26,
-      "authored": 26,
+      "cardUnits": 28,
+      "authored": 28,
       "queued": 0
     },
     {
@@ -1048,7 +1048,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Prose 2A(a)",
+      "questionRef": "2022 HL Paper 2 Prós 2A(a) · Cáca Milis",
       "status": "authored"
     },
     {
@@ -1056,7 +1056,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Prose 2A(b)",
+      "questionRef": "2022 HL Paper 2 Prós 2A(b) · Hurlamaboc",
       "status": "authored"
     },
     {
@@ -1064,7 +1064,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Prose 2B(a)",
+      "questionRef": "2022 HL Paper 2 Prós 2B(a) · Scannán roghnach",
       "status": "authored"
     },
     {
@@ -1072,7 +1072,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Prose 2B(b)",
+      "questionRef": "2022 HL Paper 2 Prós 2B(b) · Úrscéal roghnach",
       "status": "authored"
     },
     {
@@ -1096,7 +1096,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Poetry 3B(a)",
+      "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · Dán roghnach",
       "status": "authored"
     },
     {
@@ -1104,7 +1104,7 @@
       "year": 2022,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2022 HL Paper 2 Poetry 3B(b)",
+      "questionRef": "2022 HL Paper 2 Filíocht 3B(b) · Dán roghnach",
       "status": "authored"
     },
     {
@@ -2328,7 +2328,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Prose 2A(a)",
+      "questionRef": "2024 HL Paper 2 Prós 2A(a) · Cáca Milis",
       "status": "authored"
     },
     {
@@ -2336,7 +2336,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Prose 2A(b)",
+      "questionRef": "2024 HL Paper 2 Prós 2A(b) · Dís",
       "status": "authored"
     },
     {
@@ -2344,7 +2344,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Prose 2B(a)",
+      "questionRef": "2024 HL Paper 2 Prós 2B(a) · Scannán roghnach",
       "status": "authored"
     },
     {
@@ -2352,7 +2352,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Prose 2B(b)",
+      "questionRef": "2024 HL Paper 2 Prós 2B(b) · Gearrscéal roghnach",
       "status": "authored"
     },
     {
@@ -2376,7 +2376,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Poetry 3B(a)",
+      "questionRef": "2024 HL Paper 2 Filíocht 3B(a) · Dán roghnach",
       "status": "authored"
     },
     {
@@ -2384,7 +2384,7 @@
       "year": 2024,
       "level": "hl",
       "paper": 2,
-      "questionRef": "2024 HL Paper 2 Poetry 3B(b)",
+      "questionRef": "2024 HL Paper 2 Filíocht 3B(b) · Dán roghnach",
       "status": "authored"
     },
     {
@@ -3369,6 +3369,62 @@
       "level": "ol",
       "paper": 2,
       "questionRef": "2025 OL Paper 2 Poetry 3B(c)",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2022-hl-p2-prose-2a-a-an-lasair-choille",
+      "year": 2022,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2022 HL Paper 2 Prós 2A(a) · An Lasair Choille",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2022-hl-p2-prose-2b-a-drama",
+      "year": 2022,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2022 HL Paper 2 Prós 2B(a) · Dráma roghnach",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2022-hl-p2-poetry-3b-a-iomhanna",
+      "year": 2022,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · íomhánna",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2022-hl-p2-poetry-3b-a-codarsnacht",
+      "year": 2022,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · codarsnacht",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2022-hl-p2-poetry-3b-a-mothuchain",
+      "year": 2022,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2022 HL Paper 2 Filíocht 3B(a) · mothúcháin",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-prose-2a-a-an-lasair-choille",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Prós 2A(a) · An Lasair Choille",
+      "status": "authored"
+    },
+    {
+      "id": "irish-2024-hl-p2-prose-2b-a-drama",
+      "year": 2024,
+      "level": "hl",
+      "paper": 2,
+      "questionRef": "2024 HL Paper 2 Prós 2B(a) · Dráma roghnach",
       "status": "authored"
     }
   ]

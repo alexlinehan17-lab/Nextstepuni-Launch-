@@ -5,10 +5,20 @@ Higher, Ordinary and Foundation Level. The archive is **not complete**.
 `scripts/markbank/authored/irish-archive-inventory.json` records the paper-level
 backlog; card presence is never proof that every part or answer route is covered.
 
-The legacy generator retains 400 Higher/Ordinary cards from 2021–2025. Its
+The legacy generator retains all 400 Higher/Ordinary card identities from 2021–2025
+and adds seven reviewed Higher routes (407 cards). Its
 `irish-census.json` is a generated ledger, not an independent completeness audit.
 Known omitted alternatives and unsplit reading tasks still require review. The
 five additional-poetry Q4F cards have separately documented source corrections.
+
+`irish_higher_routes.py`, called by the legacy generator, reviews Q2 and Q3B of
+2022 and 2024 Higher Paper 2. It restores the two omitted drama routes per year
+and expands the 2022 optional-poetry images/contrast/emotions choice into three
+whole responses. Twelve existing responses receive verified prompt/rubric
+corrections. Each poetry card exposes 13/5/7 knowledge marks and one shared
+five-mark Gaeilge award. Nineteen exact Bank/Atlas task identities, source
+hashes and raw selection decisions are recorded in `irish-higher-route-review.json`.
+This is a partial review: neither Higher paper is certified complete.
 
 `irish_foundation.py` adds the visually reviewed 2025 Foundation paper: fourteen
 listening parts, ten matching parts, thirty reading parts, six whole writing
@@ -52,6 +62,12 @@ pages and scheme pages. Canonical IDs come from the existing curriculum and
 exam-topic registry, never copied topic-name arrays. A mixed-topic selection
 retains all relevant curriculum nodes for Mark Bank filtering.
 
+Reviewed Higher routes also carry question and scheme pages. Their Atlas route
+instruction remains visible above the paper on phones. Prescribed prose has an
+archive shelf linked to the reviewed works' existing canonical nodes; it is not
+filed as optional prose. Existing Atlas identities and the twelve original
+reading-answer records in each Higher sidecar remain intact.
+
 ## Rebuild and verification
 
 The complete source PDFs live under `paper-trail-corpus/`; the legacy generator
@@ -66,7 +82,7 @@ node scripts/paper-trail/build-irish-exam-topic-crosswalk.mjs
 node scripts/paper-trail/topic-tags/build-tags.mjs
 python3 scripts/markbank/authoring/irish_inventory.py --check
 npm run typecheck
-npx vitest run test/markBankIrish.test.ts test/markBankIrishFoundation.test.ts test/markBankSession.test.tsx test/markBankProfileDefaults.test.ts test/irishExamTopics.test.ts test/markBankCardPreservation.test.ts test/curriculumRegistry.test.ts test/markBankDeck.test.ts
+npx vitest run test/markBankIrish.test.ts test/markBankIrishHigherRoutes.test.ts test/markBankIrishFoundation.test.ts test/markBankSession.test.tsx test/markBankProfileDefaults.test.ts test/irishExamTopics.test.ts test/markBankCardPreservation.test.ts test/curriculumRegistry.test.ts test/markBankDeck.test.ts
 ```
 
 The Foundation generator fails if the reviewed PDFs change, if an extracted
