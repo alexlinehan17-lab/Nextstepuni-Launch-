@@ -165,18 +165,18 @@ describe('Irish exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(irishCrosswalk.summary).toMatchObject({
       localPaperVariants: 91,
-      localPhysicalMappings: 1266,
-      distinctStudentFacingQuestions: 1266,
+      localPhysicalMappings: 1328,
+      distinctStudentFacingQuestions: 1328,
       referenceMappedLocalQuestions: 686,
-      retainedLocalQuestions: 580,
+      retainedLocalQuestions: 642,
       hostedPaperAnchorMaps: 91,
       preservedBaselineVariants: 26,
       preservedBaselineCards: 286,
       newlyAddedPaperVariants: 65,
-      newlyAddedPhysicalMappings: 980,
+      newlyAddedPhysicalMappings: 1042,
     });
     expect(papers).toHaveLength(91);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1266);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(1328);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
     const indexPapers = PAPER_TRAIL_INDEX.irish.flatMap(entry => entry.papers);
@@ -194,7 +194,7 @@ describe('Irish exam-topic registry', () => {
     const topics = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(examQuestionTopicMappingsForSubject('irish').filter(mapping => mapping.lang === 'iv'))
-      .toHaveLength(1266);
+      .toHaveLength(1328);
     for (const paper of papers) {
       for (const question of paper.q) {
         const ids = browseTopicIdsForQuestion(paper, question);
@@ -239,7 +239,7 @@ describe('Irish exam-topic registry', () => {
     ]);
   });
 
-  it('ships a finite paper-only fallback for all 1266 cards', () => {
+  it('ships a finite paper-only fallback for all 1328 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(VAULT_PREFER_ANCHORS.get('irish')?.('LC001ALP100IV.pdf')).toBe(true);
     for (const paper of papers) {
@@ -261,9 +261,9 @@ describe('Irish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 1266 questions while keeping provider-only and oral buckets visibly empty', () => {
+  it('surfaces all 1328 questions while keeping provider-only and oral buckets visibly empty', () => {
     expect(subjectAtlasStats('irish')).toMatchObject({
-      questions: 1266,
+      questions: 1328,
       topics: 66,
       yearMin: 2010,
       yearMax: 2026,

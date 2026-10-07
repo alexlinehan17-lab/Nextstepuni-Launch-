@@ -41,10 +41,10 @@ def inventory(corpus: Path) -> dict:
         'process.stdout.write(JSON.stringify(paperIndex.irish));',
     ], cwd=ROOT, capture_output=True, text=True, check=True)
     entries = json.loads(result.stdout)
-    cards = [c for name in ['authored.json', 'foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json']
+    cards = [c for name in ['authored.json', 'foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json']
              for c in json.loads((ROOT / 'components/MarkBank/cards/irish' / name).read_text())['cards']]
     foundations = [json.loads((ROOT / 'components/MarkBank/cards/irish' / name).read_text())
-                   for name in ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json']]
+                   for name in ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json']]
     reviews = [dict(f['review'], cardIds=[c['id'] for c in f['cards']]) for f in foundations]
     reviews += json.loads((ROOT / 'scripts/markbank/authored/irish-paper-reviews.json').read_text())
     assert len({(r['year'],r['level'],r['paperFileid']) for r in reviews})==len(reviews)

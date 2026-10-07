@@ -698,7 +698,7 @@ for (const paper of papers) {
 
 // Reviewed task boundaries override generic section guesses for this exact
 // paper. Frozen baseline identities remain below; new parts/routes are additive.
-const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json']
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
 for (const card of foundationTasks.cards) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
@@ -793,9 +793,13 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
     'R-1': [4], 'R-2A': [5], 'R-2B': [5], 'R-2C': [5],
     'R-3A': [6], 'R-3B': [6], 'R-3C': [6], 'W-4B': [11, 12],
   };
-  for (const [n, start, end] of [['1', 3, 5], ['2', 6, 12], ['3', 13, 17]]) {
+  for (const n of ['1', '2', '3']) {
+    const sourcePages = [...new Set(reviewedCards.filter(c => c.section === n).flatMap(c => c.sourceMaterial.pages))].sort((a,b) => a-b);
+    // The writing choice instruction occupies the preceding page in these
+    // reviewed papers. Listening/reading start one page earlier in 2022.
+    if (n === '3') sourcePages.unshift(sourcePages[0] - 1);
     reviewedFoundation.q.find(q => q.n === n).anchor.paperRegion =
-      Array.from({ length: end - start + 1 }, (_, i) => ({ p: start + i, r: [0, 0, 1, 1] }));
+      sourcePages.map(p => ({ p, r: [0, 0, 1, 1] }));
   }
   for (const question of reviewedFoundation.q) {
     question.reviewedSchemePages ??= foundationSchemeSections[question.n];
@@ -1042,8 +1046,13 @@ fs.writeFileSync(TAGS_PATH, JSON.stringify(tagPapers, null, 2) + '\n');
 
 const hostedAnchorMaps = [];
 for (const paper of papers) {
+  // Reviewed Foundation regions override older section anchors that sometimes
+  // matched a numbered answer inside a reading passage (2022 writing section).
+  // Keep those frozen crop fields, but order using the actual displayed page.
+  const pageForOrder = q => paper.hasReviewedFoundationTasks
+    ? (q.anchor.paperRegion?.[0]?.p ?? q.anchor.pP) : q.anchor.pP;
   const physicalOrder = [...paper.q].sort((a, b) => (
-    a.anchor.pP - b.anchor.pP
+    pageForOrder(a) - pageForOrder(b)
     || a.anchor.pY[0] - b.anchor.pY[0]
     || paper.q.indexOf(a) - paper.q.indexOf(b)
   ));

@@ -183,10 +183,10 @@
     }
   ],
   "confirmedRemainingWork": [
-    "68 indexed paper components still have no Mark Bank cards. Foundation 2023/2024/2025 and Higher 2024 Paper 2 have completed their visual paper/applicable-scheme sweeps and exact task reconciliation. 87 components remain pending full review.",
+    "67 indexed paper components still have no Mark Bank cards. Foundation 2022/2023/2024/2025 and Higher 2024 Paper 2 have completed their visual paper/applicable-scheme sweeps and exact task reconciliation. 86 components remain pending full review.",
     "2024 Higher Paper 2 is fully reviewed: 72 exact Bank/Atlas joins, 39 atomic reading tasks covering 100 marks, six prose routes, four poetry responses and six additional-literature responses. The paper is 200 marks with one response from each literature family. Preserved overlapping whole questions are not counted twice. Review evidence is in irish-paper-reviews.json and its linked source-review files.",
     "Review remaining Higher/Ordinary papers, including 2022 reading/Q3A/Q4 and all 2021/2023/2025 internal options. Expand published task boundaries across older years and reconcile exact Atlas topics and source/scheme regions. Prescribed prose and poetry now have archive shelves linked to existing canonical nodes.",
-    "Topic Atlas currently has 1266 section/task/route anchors, including 70 exact 2023 Foundation task joins. This is not proof of complete archive coverage. Reconcile every remaining paper and retain established IDs.",
+    "Topic Atlas currently has 1328 section/task/route anchors, including 65 exact 2022 Foundation task joins. This is not proof of complete archive coverage. Reconcile every remaining paper and retain established IDs.",
     "All 91 indexed components now have local papers and paired schemes. The three recovered SEC EV-named schemes are integrated through exact year/file language overrides and bundled verified PDFs, covering eight 2010 Higher/Ordinary and 2011 Foundation components. The original shared corpus is untouched. These components still require full task review; evidence is in irish-recovered-schemes.json.",
     "Listening recordings must be verified for each year and level; Foundation uses different recordings. Preserve passages, poems, signs, forms and picture sequences using the existing open/close source reader.",
     "Full visual paper/scheme sweeps, raw selection-directive classification, preservation and zero-open/zero-orphan checks remain required before any completion claim or coverage-baseline change."
@@ -471,7 +471,72 @@
       "irish-2023-fl-w-4a-5b",
       "irish-2023-fl-w-4b-5a",
       "irish-2023-fl-w-4b-5b",
-      "irish-2023-fl-w-5a-5b"
+      "irish-2023-fl-w-5a-5b",
+      "irish-2022-fl-a-1a",
+      "irish-2022-fl-a-1b",
+      "irish-2022-fl-a-2a",
+      "irish-2022-fl-a-2b",
+      "irish-2022-fl-a-3",
+      "irish-2022-fl-a-4",
+      "irish-2022-fl-a-5a",
+      "irish-2022-fl-a-5b",
+      "irish-2022-fl-a-6a",
+      "irish-2022-fl-a-6b",
+      "irish-2022-fl-a-7a",
+      "irish-2022-fl-a-7b",
+      "irish-2022-fl-a-8a",
+      "irish-2022-fl-a-8b",
+      "irish-2022-fl-r-1-1",
+      "irish-2022-fl-r-1-2",
+      "irish-2022-fl-r-1-3",
+      "irish-2022-fl-r-1-4",
+      "irish-2022-fl-r-1-5",
+      "irish-2022-fl-r-1-6",
+      "irish-2022-fl-r-1-7",
+      "irish-2022-fl-r-1-8",
+      "irish-2022-fl-r-1-9",
+      "irish-2022-fl-r-1-10",
+      "irish-2022-fl-r-2a-1",
+      "irish-2022-fl-r-2a-2",
+      "irish-2022-fl-r-2a-3",
+      "irish-2022-fl-r-2a-4",
+      "irish-2022-fl-r-2a-5",
+      "irish-2022-fl-r-2b-1",
+      "irish-2022-fl-r-2b-2",
+      "irish-2022-fl-r-2b-3",
+      "irish-2022-fl-r-2b-4",
+      "irish-2022-fl-r-2b-5",
+      "irish-2022-fl-r-2c-1",
+      "irish-2022-fl-r-2c-2",
+      "irish-2022-fl-r-2c-3",
+      "irish-2022-fl-r-2c-4",
+      "irish-2022-fl-r-2c-5",
+      "irish-2022-fl-r-3a-1",
+      "irish-2022-fl-r-3a-2",
+      "irish-2022-fl-r-3a-3",
+      "irish-2022-fl-r-3a-4",
+      "irish-2022-fl-r-3a-5",
+      "irish-2022-fl-r-3b-1",
+      "irish-2022-fl-r-3b-2",
+      "irish-2022-fl-r-3b-3",
+      "irish-2022-fl-r-3b-4",
+      "irish-2022-fl-r-3b-5",
+      "irish-2022-fl-r-3c-1",
+      "irish-2022-fl-r-3c-2",
+      "irish-2022-fl-r-3c-3",
+      "irish-2022-fl-r-3c-4",
+      "irish-2022-fl-r-3c-5",
+      "irish-2022-fl-r-2-ab",
+      "irish-2022-fl-r-2-ac",
+      "irish-2022-fl-r-2-bc",
+      "irish-2022-fl-r-3-ab",
+      "irish-2022-fl-r-3-ac",
+      "irish-2022-fl-r-3-bc",
+      "irish-2022-fl-w-4a",
+      "irish-2022-fl-w-4b-aintin",
+      "irish-2022-fl-w-4b-uncail",
+      "irish-2022-fl-w-5a",
+      "irish-2022-fl-w-5b"
     ],
     "typecheck": "passed",
     "targetedDataAndInteractionTests": "Latest literature/full-paper batch: 150 tests passed across eight data/preservation/curriculum/deck suites; 90 tests passed across literature, Foundation, session and profile suites (four literature tests rerun after adding the full-paper record). Previous reading batch had 269 passing targeted tests.",
@@ -481,8 +546,8 @@
     "testTypecheck": "Fails with the same three pre-existing programmeAnalytics errors reproduced on unchanged base checkout: test/programmeAnalyticsClient.test.ts lines 32 and 56 (TS2493); utils/programmeAnalytics.ts line 50 (TS2339).",
     "browserVisualQA": "390 × 844 real-PDF checks pass for three Mark Bank poems (Géibheann, An tEarrach Thiar, Fill Arís) and five new Atlas literature entries. Full sources, scheme show/hide, visible task instructions and focus restoration work; no uncaught page errors or horizontal overflow. Reading and Foundation checks retained from their verified batches.",
     "otherSubjectTopicData": "Unchanged, compared structurally and as decoded runtime records and labels with previous HEAD.",
-    "legacyIrishCards": "All 607 previous cards byte-for-byte unchanged; 70 new 2023 Foundation task/route cards added.",
-    "previousBatchIdsPreserved": 607,
+    "legacyIrishCards": "All 677 previous cards byte-for-byte unchanged; 65 new 2022 Foundation task/route cards added.",
+    "previousBatchIdsPreserved": 677,
     "preservationBaselineCountsAndHashesChanged": false,
     "recoveredSchemes": {
       "documents": 3,
@@ -1443,6 +1508,341 @@
       "typecheck": "passed",
       "productionBuild": "passed; 2m16s plus service-worker generation",
       "generatedOutputs": "Atlas/topic output regeneration idempotent; Foundation 2023 and inventory --check passed",
+      "otherSubjects": "structural topic data and decoded runtime records unchanged",
+      "cardIdsRemoved": [],
+      "atlasIdsRemoved": []
+    }
+  },
+  "foundation2022": {
+    "year": 2022,
+    "level": "foundation",
+    "paperFileid": "LC001BLP000IV.pdf",
+    "paperSha256": "9b931da007adf04cf65c1dda4bca322eb53860c0f974f6a92370030218fc6a52",
+    "schemeSha256": "1187a66bd529189eda5fbcd4d6ea21a5e3f4656c198c4ce01ffef78ac9a609de",
+    "reviewedPaperPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "reviewedSchemePages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "reviewDate": "2026-10-07",
+    "status": "reviewed",
+    "selectionDecisions": [
+      {
+        "page": 2,
+        "raw": "Freagair gach ceist. Tá na treoracha don chuid seo ar an dlúthdhiosca.",
+        "decision": "Required answers within the section or selected passage; no additional task selection."
+      },
+      {
+        "page": 2,
+        "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+        "decision": "Choose the correct answer or map box. Distractors are not alternative tasks; use the scheme’s explicit full/partial credit."
+      },
+      {
+        "page": 3,
+        "raw": "Cá bhfuil an siopa éadaí? (Cuir tic () sa bhosca ceart.)",
+        "decision": "Choose the correct answer or map box. Distractors are not alternative tasks; use the scheme’s explicit full/partial credit."
+      },
+      {
+        "page": 4,
+        "raw": "A uncail",
+        "decision": "Listening MCQ distractor, not an independently valid task route."
+      },
+      {
+        "page": 4,
+        "raw": "Nuair a bheidh an Chluastuiscint críochnaithe agat lean ar aghaidh agus freagair na ceisteanna",
+        "decision": "Required answers within the section or selected passage; no additional task selection."
+      },
+      {
+        "page": 5,
+        "raw": "FREAGAIR GACH CEIST (1, 2 agus 3).",
+        "decision": "Required answers within the section or selected passage; no additional task selection."
+      },
+      {
+        "page": 6,
+        "raw": "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+        "decision": "Choose two of A/B/C: AB, AC, BC. Each pair retains both source pages and ten marked answers; Q2 is 50 marks, Q3 is 60."
+      },
+      {
+        "page": 6,
+        "raw": "Léigh an litir atá anseo thíos agus freagair na ceisteanna ar fad atá fúithi.",
+        "decision": "Required answers within the section or selected passage; no additional task selection."
+      },
+      {
+        "page": 7,
+        "raw": "Léigh an bróisiúr atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+        "decision": "Required answers within the section or selected passage; no additional task selection."
+      },
+      {
+        "page": 7,
+        "raw": "thar lear nó ar shaoire cois trá. Caith seachtain ag bádóireacht ar Abhainn na Sionainne,",
+        "decision": "Source-passage narrative, not a task choice."
+      },
+      {
+        "page": 7,
+        "raw": "i gCora Droma Rúisc i gContae Liatroma nó i bPort Omna i gContae na Gaillimhe.",
+        "decision": "Source-passage narrative, not a task choice."
+      },
+      {
+        "page": 8,
+        "raw": "Léigh an scéal nuachta atá anseo thíos agus freagair na ceisteanna ar fad atá faoi. (25 marc)",
+        "decision": "Required answers within the section or selected passage; no additional task selection."
+      },
+      {
+        "page": 9,
+        "raw": "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+        "decision": "Choose two of A/B/C: AB, AC, BC. Each pair retains both source pages and ten marked answers; Q2 is 50 marks, Q3 is 60."
+      },
+      {
+        "page": 9,
+        "raw": "Léigh an t-alt atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+        "decision": "Required answers within the section or selected passage; no additional task selection."
+      },
+      {
+        "page": 10,
+        "raw": "(b) Léigh an giota seo a leanas agus freagair na ceisteanna ar fad atá faoi.",
+        "decision": "Required answers within the section or selected passage; no additional task selection."
+      },
+      {
+        "page": 11,
+        "raw": "Léigh na véarsaí seo a leanas agus freagair na ceisteanna ar fad atá fúthu.",
+        "decision": "Required answers within the section or selected passage; no additional task selection."
+      },
+      {
+        "page": 13,
+        "raw": "Freagair ceann amháin as na ceithre cinn seo a leanas:",
+        "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+      },
+      {
+        "page": 13,
+        "raw": "4(a), 4(b), 5(a) nó 5(b)",
+        "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+      },
+      {
+        "page": 14,
+        "raw": "Freagair ceann amháin as na ceithre cinn seo a leanas: 4(a), 4(b), 5(a) nó 5(b).",
+        "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+      },
+      {
+        "page": 15,
+        "raw": "NÓ",
+        "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+      },
+      {
+        "page": 15,
+        "raw": "Scríobh litir chuig d’aintín / d’uncail i Meiriceá ag insint dó / di:",
+        "decision": "Closed recipient alternatives: aunt or uncle. Generate two whole letter routes; each keeps all four pictures, six layout marks, 28 content marks and one shared eleven-mark language award. The matching dó/di pronoun is not a second independent pool."
+      },
+      {
+        "page": 15,
+        "raw": "Faoin bpóstaer a chonaic tú (dhá phointe eolais)",
+        "decision": "Two open information points about this compulsory picture; no enumerated menu of tasks."
+      },
+      {
+        "page": 15,
+        "raw": "Faoin turas go dtí an cheolchoirm (dhá phointe eolais)",
+        "decision": "Two open information points about this compulsory picture; no enumerated menu of tasks."
+      },
+      {
+        "page": 15,
+        "raw": "Faoin gceolchoirm (dhá phointe eolais)",
+        "decision": "Two open information points about this compulsory picture; no enumerated menu of tasks."
+      },
+      {
+        "page": 15,
+        "raw": "Faoi na rudaí a rinne tú nuair a bhí an cheolchoirm thart (dhá phointe eolais)",
+        "decision": "Two open information points about this compulsory picture; no enumerated menu of tasks."
+      },
+      {
+        "page": 16,
+        "raw": "NÓ",
+        "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+      },
+      {
+        "page": 17,
+        "raw": "NÓ",
+        "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+      },
+      {
+        "page": 20,
+        "raw": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+        "decision": "Copyright statement, not a task."
+      }
+    ],
+    "fullPaperAndApplicableSchemeVisualSweep": true,
+    "atomicPracticeCardIds": [
+      "irish-2022-fl-a-1a",
+      "irish-2022-fl-a-1b",
+      "irish-2022-fl-a-2a",
+      "irish-2022-fl-a-2b",
+      "irish-2022-fl-a-3",
+      "irish-2022-fl-a-4",
+      "irish-2022-fl-a-5a",
+      "irish-2022-fl-a-5b",
+      "irish-2022-fl-a-6a",
+      "irish-2022-fl-a-6b",
+      "irish-2022-fl-a-7a",
+      "irish-2022-fl-a-7b",
+      "irish-2022-fl-a-8a",
+      "irish-2022-fl-a-8b",
+      "irish-2022-fl-r-1-1",
+      "irish-2022-fl-r-1-2",
+      "irish-2022-fl-r-1-3",
+      "irish-2022-fl-r-1-4",
+      "irish-2022-fl-r-1-5",
+      "irish-2022-fl-r-1-6",
+      "irish-2022-fl-r-1-7",
+      "irish-2022-fl-r-1-8",
+      "irish-2022-fl-r-1-9",
+      "irish-2022-fl-r-1-10",
+      "irish-2022-fl-r-2a-1",
+      "irish-2022-fl-r-2a-2",
+      "irish-2022-fl-r-2a-3",
+      "irish-2022-fl-r-2a-4",
+      "irish-2022-fl-r-2a-5",
+      "irish-2022-fl-r-2b-1",
+      "irish-2022-fl-r-2b-2",
+      "irish-2022-fl-r-2b-3",
+      "irish-2022-fl-r-2b-4",
+      "irish-2022-fl-r-2b-5",
+      "irish-2022-fl-r-2c-1",
+      "irish-2022-fl-r-2c-2",
+      "irish-2022-fl-r-2c-3",
+      "irish-2022-fl-r-2c-4",
+      "irish-2022-fl-r-2c-5",
+      "irish-2022-fl-r-3a-1",
+      "irish-2022-fl-r-3a-2",
+      "irish-2022-fl-r-3a-3",
+      "irish-2022-fl-r-3a-4",
+      "irish-2022-fl-r-3a-5",
+      "irish-2022-fl-r-3b-1",
+      "irish-2022-fl-r-3b-2",
+      "irish-2022-fl-r-3b-3",
+      "irish-2022-fl-r-3b-4",
+      "irish-2022-fl-r-3b-5",
+      "irish-2022-fl-r-3c-1",
+      "irish-2022-fl-r-3c-2",
+      "irish-2022-fl-r-3c-3",
+      "irish-2022-fl-r-3c-4",
+      "irish-2022-fl-r-3c-5",
+      "irish-2022-fl-w-4a",
+      "irish-2022-fl-w-4b-aintin",
+      "irish-2022-fl-w-4b-uncail",
+      "irish-2022-fl-w-5a",
+      "irish-2022-fl-w-5b"
+    ],
+    "pairedRouteCardIds": [
+      "irish-2022-fl-r-2-ab",
+      "irish-2022-fl-r-2-ac",
+      "irish-2022-fl-r-2-bc",
+      "irish-2022-fl-r-3-ab",
+      "irish-2022-fl-r-3-ac",
+      "irish-2022-fl-r-3-bc"
+    ],
+    "examStructure": {
+      "listening": 120,
+      "matching": 40,
+      "readingQ2": 50,
+      "readingQ3": 60,
+      "writing": 45,
+      "total": 315
+    },
+    "nonPoolDecisions": [
+      "MCQ distractors and map boxes are answers to one task, not independently valid task routes.",
+      "All notice headings and letter picture instructions are compulsory context. One language award covers each whole response; the two printed letter recipients are separately expanded.",
+      "The two information points in each letter picture and source-retrieval answers are content choices, not enumerated task prompts.",
+      "The five story references are a communication criterion, with non-exhaustive examples, not a printed choose-five menu.",
+      "The modified marking scheme changes assessment for eligible candidates, not the printed task or answer route."
+    ],
+    "openIssues": [],
+    "audio": {
+      "url": "https://www.examinations.ie/archive/exampapers/2022/LC001BLP017IV.mp3",
+      "httpStatus": 200,
+      "contentType": "audio/mpeg",
+      "bytes": 57850470,
+      "verified": "2026-10-07",
+      "browserReadyState": 4,
+      "durationSeconds": 1807.827188,
+      "playbackAdvanced": true
+    },
+    "boundaries": "14 listening parts; 10 matching parts; 30 reading parts; 5 whole writing routes including two letter recipients; 6 paired reading routes; no paired writing routes.",
+    "caveats": [
+      "2022 requires one of four writing responses; the paper total is 315 (120+40+50+60+45). Scheme PDF page 15 describes a separate 45-mark adjustment using an examiner spreadsheet. That is not an extra task or a second writing response.",
+      "Listening 1(b): Páirt i scannáin mhóra earns 7; Páirt i Ros na Rún earns 5. Listening 5(b): 28 Celsius earns 8; 22 Celsius earns 6. Preserve permitted scores [0,5,7] and [0,6,8].",
+      "The poem is Seán is a Chaitín Bán by Peadar Ó hAnnracháin. Keep all five stanzas; the answer to 3C(5) can be ar fán or i measc cat na gcomharsan.",
+      "4A is the sports-day notice, Kellie Harrington and a new sports hall. Layout 1, pictures 10/13/5/5 and shared Gaeilge 11. The SEC gives partial credit for peil and cluiche peile, date/currency deductions and name-only guest deduction; preserve page 9 guidance.",
+      "4B is a concert letter to an aunt or uncle in America. Expand the two recipient routes. The four picture instructions each require two open information points (4+3), with layout 6 and shared Gaeilge 11. No length deduction is published for this letter.",
+      "2022 language bands differ from 2023+: Sármhaith 9–11, An-mhaith 7–8, Maith 5–6, Lag 2–4, An-lag 1, Easnamhach 0.",
+      "5A is Saoire Cois Farraige; 5B is a dumping incident. Both require about 90 words, communication 34 and shared Gaeilge 11, length deductions 80–90:0,60–79:-2,30–59:-3,<30:-4.",
+      "The 5B scheme conflicts internally: its main bullet deducts 4 per missing reference and lists caps 34,30,26,22,18, but a later line says Pionós -5. Both 5A/5B also show Tagairt /-12. Preserve the published text and explain the conflict; no invented automatic reference deduction.",
+      "Scheme examples are open content possibilities, not printed selection menus. Audio transcripts on PDF pages 17–19 remain answer material."
+    ],
+    "bankAtlasTaskJoins": 65,
+    "cardsAdded": 65,
+    "totalIrishBankCards": 742,
+    "preservation": "All preceding 677 cards byte-for-byte unchanged; all preceding 1266 Atlas identities retained; all prior 2022–2025 Foundation answer record fields retained. No baseline changes.",
+    "runtimeVerification": {
+      "viewport": [
+        390,
+        844
+      ],
+      "sourceReaderRoutesChecked": 14,
+      "atlasRoutesChecked": 5,
+      "sourceReader": "All source formats, both letter recipients and paired reading pages rendered. Navigation, close/focus return and horizontal overflow checks passed.",
+      "atlas": "All source and scheme pages rendered; both recipient selections visible.",
+      "audio": "Official SEC Foundation 2022 recording played in Bank and Atlas, readyState 4, duration 1807.827188 seconds.",
+      "browserErrors": []
+    },
+    "sourceTopicCorrection": "2022 Q2C is a news story; 4B is a letter with two recipient routes. The writing section requires one response. Full-section source regions use the earlier 2022 listening/reading page numbers. Reviewed print ordering corrects a previous writing anchor on a reading page without overwriting it.",
+    "validation": {
+      "targetedTests": 3592,
+      "suites": 13,
+      "finalPostOrderingTests": 3364,
+      "typecheck": "passed",
+      "productionBuild": "passed; Vite and service-worker generation",
+      "generatedOutputs": "Atlas/topic output regeneration idempotent; Foundation 2022 and inventory --check passed",
       "otherSubjects": "structural topic data and decoded runtime records unchanged",
       "cardIdsRemoved": [],
       "atlasIdsRemoved": []

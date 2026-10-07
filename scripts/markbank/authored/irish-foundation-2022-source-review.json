@@ -1,0 +1,317 @@
+{
+  "year": 2022,
+  "level": "foundation",
+  "paperFileid": "LC001BLP000IV.pdf",
+  "schemeFileid": "LC001BLP000IV.pdf",
+  "paperSha256": "9b931da007adf04cf65c1dda4bca322eb53860c0f974f6a92370030218fc6a52",
+  "schemeSha256": "1187a66bd529189eda5fbcd4d6ea21a5e3f4656c198c4ce01ffef78ac9a609de",
+  "reviewDate": "2026-10-07",
+  "status": "reviewed",
+  "reviewedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "reviewedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "reviewMethod": "Visual inspection of every paired rendered page, including covers, blanks, general and modified scheme, adjustment note and audio transcript; cross-checked extracted text.",
+  "selectionDecisions": [
+    {
+      "page": 2,
+      "raw": "Freagair gach ceist. Tá na treoracha don chuid seo ar an dlúthdhiosca.",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 2,
+      "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+      "decision": "Choose the correct answer or map box. Distractors are not alternative tasks; use the scheme’s explicit full/partial credit."
+    },
+    {
+      "page": 3,
+      "raw": "Cá bhfuil an siopa éadaí? (Cuir tic () sa bhosca ceart.)",
+      "decision": "Choose the correct answer or map box. Distractors are not alternative tasks; use the scheme’s explicit full/partial credit."
+    },
+    {
+      "page": 4,
+      "raw": "A uncail",
+      "decision": "Listening MCQ distractor, not an independently valid task route."
+    },
+    {
+      "page": 4,
+      "raw": "Nuair a bheidh an Chluastuiscint críochnaithe agat lean ar aghaidh agus freagair na ceisteanna",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 5,
+      "raw": "FREAGAIR GACH CEIST (1, 2 agus 3).",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 6,
+      "raw": "Ceist 2 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Choose two of A/B/C: AB, AC, BC. Each pair retains both source pages and ten marked answers; Q2 is 50 marks, Q3 is 60."
+    },
+    {
+      "page": 6,
+      "raw": "Léigh an litir atá anseo thíos agus freagair na ceisteanna ar fad atá fúithi.",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 7,
+      "raw": "Léigh an bróisiúr atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 7,
+      "raw": "thar lear nó ar shaoire cois trá. Caith seachtain ag bádóireacht ar Abhainn na Sionainne,",
+      "decision": "Source-passage narrative, not a task choice."
+    },
+    {
+      "page": 7,
+      "raw": "i gCora Droma Rúisc i gContae Liatroma nó i bPort Omna i gContae na Gaillimhe.",
+      "decision": "Source-passage narrative, not a task choice."
+    },
+    {
+      "page": 8,
+      "raw": "Léigh an scéal nuachta atá anseo thíos agus freagair na ceisteanna ar fad atá faoi. (25 marc)",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 9,
+      "raw": "Ceist 3 Freagair do rogha dhá cheann de (a), (b), (c) anseo thíos.",
+      "decision": "Choose two of A/B/C: AB, AC, BC. Each pair retains both source pages and ten marked answers; Q2 is 50 marks, Q3 is 60."
+    },
+    {
+      "page": 9,
+      "raw": "Léigh an t-alt atá anseo thíos agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 10,
+      "raw": "(b) Léigh an giota seo a leanas agus freagair na ceisteanna ar fad atá faoi.",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 11,
+      "raw": "Léigh na véarsaí seo a leanas agus freagair na ceisteanna ar fad atá fúthu.",
+      "decision": "Required answers within the section or selected passage; no additional task selection."
+    },
+    {
+      "page": 13,
+      "raw": "Freagair ceann amháin as na ceithre cinn seo a leanas:",
+      "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+    },
+    {
+      "page": 13,
+      "raw": "4(a), 4(b), 5(a) nó 5(b)",
+      "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+    },
+    {
+      "page": 14,
+      "raw": "Freagair ceann amháin as na ceithre cinn seo a leanas: 4(a), 4(b), 5(a) nó 5(b).",
+      "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+    },
+    {
+      "page": 15,
+      "raw": "NÓ",
+      "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+    },
+    {
+      "page": 15,
+      "raw": "Scríobh litir chuig d’aintín / d’uncail i Meiriceá ag insint dó / di:",
+      "decision": "Closed recipient alternatives: aunt or uncle. Generate two whole letter routes; each keeps all four pictures, six layout marks, 28 content marks and one shared eleven-mark language award. The matching dó/di pronoun is not a second independent pool."
+    },
+    {
+      "page": 15,
+      "raw": "Faoin bpóstaer a chonaic tú (dhá phointe eolais)",
+      "decision": "Two open information points about this compulsory picture; no enumerated menu of tasks."
+    },
+    {
+      "page": 15,
+      "raw": "Faoin turas go dtí an cheolchoirm (dhá phointe eolais)",
+      "decision": "Two open information points about this compulsory picture; no enumerated menu of tasks."
+    },
+    {
+      "page": 15,
+      "raw": "Faoin gceolchoirm (dhá phointe eolais)",
+      "decision": "Two open information points about this compulsory picture; no enumerated menu of tasks."
+    },
+    {
+      "page": 15,
+      "raw": "Faoi na rudaí a rinne tú nuair a bhí an cheolchoirm thart (dhá phointe eolais)",
+      "decision": "Two open information points about this compulsory picture; no enumerated menu of tasks."
+    },
+    {
+      "page": 16,
+      "raw": "NÓ",
+      "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+    },
+    {
+      "page": 17,
+      "raw": "NÓ",
+      "decision": "Choose one of 4A, 4B, 5A, 5B. Four whole response types, with 4B expanded to its two recipient alternatives; each route is 45 marks. Do not generate writing pairs for 2022."
+    },
+    {
+      "page": 20,
+      "raw": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+      "decision": "Copyright statement, not a task."
+    }
+  ],
+  "boundaries": {
+    "listening": {
+      "tasks": 14,
+      "marks": 120,
+      "paperPages": [
+        2,
+        3,
+        4
+      ],
+      "schemePages": [
+        3
+      ]
+    },
+    "matching": {
+      "tasks": 10,
+      "marks": 40,
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        4
+      ],
+      "answers": "CEDGJBIFAH"
+    },
+    "readingQ2": {
+      "tasks": 15,
+      "marksPerTask": 5,
+      "pairedRoutes": 3,
+      "marksPerPair": 50,
+      "paperPages": [
+        6,
+        7,
+        8
+      ],
+      "schemePages": [
+        5
+      ]
+    },
+    "readingQ3": {
+      "tasks": 15,
+      "marksPerTask": 6,
+      "pairedRoutes": 3,
+      "marksPerPair": 60,
+      "paperPages": [
+        9,
+        10,
+        11
+      ],
+      "schemePages": [
+        6
+      ]
+    },
+    "writing": {
+      "wholeResponseTypes": 4,
+      "wholeResponseRoutes": 5,
+      "marksPerResponse": 45,
+      "recipientChoices": [
+        "aintín",
+        "uncail"
+      ],
+      "pairedRoutes": 0,
+      "paperPages": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "schemePages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "expectedCardsAfterAuthoring": 65,
+    "candidateExamMarks": 315
+  },
+  "sourceFindings": [
+    "2022 requires one of four writing responses; the paper total is 315 (120+40+50+60+45). Scheme PDF page 15 describes a separate 45-mark adjustment using an examiner spreadsheet. That is not an extra task or a second writing response.",
+    "Listening 1(b): Páirt i scannáin mhóra earns 7; Páirt i Ros na Rún earns 5. Listening 5(b): 28 Celsius earns 8; 22 Celsius earns 6. Preserve permitted scores [0,5,7] and [0,6,8].",
+    "The poem is Seán is a Chaitín Bán by Peadar Ó hAnnracháin. Keep all five stanzas; the answer to 3C(5) can be ar fán or i measc cat na gcomharsan.",
+    "4A is the sports-day notice, Kellie Harrington and a new sports hall. Layout 1, pictures 10/13/5/5 and shared Gaeilge 11. The SEC gives partial credit for peil and cluiche peile, date/currency deductions and name-only guest deduction; preserve page 9 guidance.",
+    "4B is a concert letter to an aunt or uncle in America. Expand the two recipient routes. The four picture instructions each require two open information points (4+3), with layout 6 and shared Gaeilge 11. No length deduction is published for this letter.",
+    "2022 language bands differ from 2023+: Sármhaith 9–11, An-mhaith 7–8, Maith 5–6, Lag 2–4, An-lag 1, Easnamhach 0.",
+    "5A is Saoire Cois Farraige; 5B is a dumping incident. Both require about 90 words, communication 34 and shared Gaeilge 11, length deductions 80–90:0,60–79:-2,30–59:-3,<30:-4.",
+    "The 5B scheme conflicts internally: its main bullet deducts 4 per missing reference and lists caps 34,30,26,22,18, but a later line says Pionós -5. Both 5A/5B also show Tagairt /-12. Preserve the published text and explain the conflict; no invented automatic reference deduction.",
+    "Scheme examples are open content possibilities, not printed selection menus. Audio transcripts on PDF pages 17–19 remain answer material."
+  ],
+  "audio": {
+    "url": "https://www.examinations.ie/archive/exampapers/2022/LC001BLP017IV.mp3",
+    "httpStatus": 200,
+    "contentType": "audio/mpeg",
+    "bytes": 57850470,
+    "verified": "2026-10-07",
+    "browserReadyState": 4,
+    "durationSeconds": 1807.827188,
+    "playbackAdvanced": true
+  },
+  "remainingWork": [],
+  "runtimeVerification": {
+    "viewport": [
+      390,
+      844
+    ],
+    "sourceReaderRoutesChecked": 14,
+    "atlasRoutesChecked": 5,
+    "sourceReader": "All source formats, both letter recipients and paired reading pages rendered. Navigation, close/focus return and horizontal overflow checks passed.",
+    "atlas": "All source and scheme pages rendered; both recipient selections visible.",
+    "audio": "Official SEC Foundation 2022 recording played in Bank and Atlas, readyState 4, duration 1807.827188 seconds.",
+    "browserErrors": []
+  }
+}
