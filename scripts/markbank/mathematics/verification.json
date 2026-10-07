@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2019, 2020, 2021, 2022, 2023, 2024 and 2026",
-  "runtimeCards": 1165,
-  "reviewedTasks": 494,
+  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2018–2024 and 2026",
+  "runtimeCards": 1193,
+  "reviewedTasks": 522,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 222,
+  "targetedRegressionTests": 246,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed through Foundation 2023\u20132026; 2019\u20132022 data passed generation, typecheck and regression tests; broader build running",
+  "productionBuild": "passed through all reviewed Foundation 2019–2026 and all five 2025 English papers",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -128,16 +128,17 @@
     "regressionWorkers": 1
   },
   "latestBatch": {
-    "paper": "2019 Foundation",
-    "independentlyReviewedTasks": 34,
-    "targetedRegressionTests": 166,
-    "previousRuntimeIdsRetained": 1131,
+    "paper": "2018 Foundation",
+    "independentlyReviewedTasks": 28,
+    "targetedRegressionTests": 246,
+    "previousRuntimeIdsRetained": 1165,
     "offeredMarks": 300,
     "candidateMarks": 300,
     "paperPagesInspected": 20,
     "schemePagesInspected": 20,
-    "runtimeIdsSha256": "fe46152b697dbc3172abba1834cc7b7c011fbd5cdd8d37f8fff20809e69a1e55",
-    "regressionWorkers": 1
+    "runtimeIdsSha256": "5a99cbb7083011d00ccf453f55161a6d859fe109f07e142324922f0d4caf41b5",
+    "regressionWorkers": 1,
+    "validation": "Deck and Atlas generation, typecheck, eight regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
   },
   "foundation2022": {
     "paper": "2022 Foundation",
@@ -186,5 +187,18 @@
       "mobile125": 7.99
     },
     "pageErrors": []
+  },
+  "foundation2019": {
+    "paper": "2019 Foundation",
+    "independentlyReviewedTasks": 34,
+    "targetedRegressionTests": 166,
+    "previousRuntimeIdsRetained": 1131,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 20,
+    "schemePagesInspected": 20,
+    "runtimeIdsSha256": "fe46152b697dbc3172abba1834cc7b7c011fbd5cdd8d37f8fff20809e69a1e55",
+    "regressionWorkers": 1,
+    "productionBuildSeconds": 151
   }
 }

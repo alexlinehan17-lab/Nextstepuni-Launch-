@@ -48271,5 +48271,901 @@
    }
   ],
   "notes": "Independently visually checked against the 2019 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q1-a",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q1-a",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q1(a)",
+  "stem": "The line plot below shows the ages (in years) of a group of children.",
+  "questionText": "Find the total number of children in the group.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Indication of counting",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q1-b",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q1-b",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q1(b)",
+  "stem": "The line plot below shows the ages (in years) of a group of children.",
+  "questionText": "Find the mean (average) age of the children in the group.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "= 90/15",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "= 6",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q1-c",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q1-c",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q1(c)",
+  "stem": "The line plot below shows the ages (in years) of a group of children.",
+  "questionText": "Write down the range of the ages of the children in the group.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "12 – 2 = 10",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q1-d",
+  "topicId": "maths-1-6",
+  "conceptId": "p1-q1-d",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q1(d)",
+  "stem": "The line plot below shows the ages (in years) of a group of children.",
+  "questionText": "What percentage of the children in the group are aged 7 years or older?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q1-d-solution-1",
+    "kind": "point",
+    "verbatim": "Percentage formulated correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q2-a-i-ii-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q2-a-i-ii-iii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q2(a)(i), Q2(a)(ii), Q2(a)(iii)",
+  "stem": "Figure 1 below shows a rectangular tile which is 8 cm long and 3 cm wide.",
+  "questionText": "(i) Find the area of the tile. (ii) Eight of these tiles are joined to make a rectangular shape, as shown in Figure 2. Find the value of L and the value of W. Hence find the area of the rectangular shape that includes the tiles. (iii) Hence, or otherwise, find the area of the white rectangle in the centre of Figure 2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q2-a-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "3 × 8 = 24 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q2-a-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "L = 24 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q2-a-i-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "W = 14 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q2-a-i-ii-iii-solution-4",
+    "kind": "point",
+    "verbatim": "336 – 8(24) = 144 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q2-b",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q2-b",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q2(b)",
+  "stem": "Ruairí needs to bring at least 1000 cm³ of water from a well near his home to his school science class. Ruairí has a cylindrical container with the measurements shown in the diagram below: radius 5 cm and height 15 cm.",
+  "questionText": "Will this container be large enough? Justify your answer by finding the volume of the container.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "= 1178·09 cm3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "Answer: Yes. 1178 > 1000",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q3-a-i-ii-iii",
+  "topicId": "maths-1-2",
+  "conceptId": "p1-q3-a-i-ii-iii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q3(a)(i), Q3(a)(ii), Q3(a)(iii)",
+  "stem": "Two identical fair spinners are divided into three equal sections as shown. The sections are coloured Black (B), Grey (G) and White (W). The spinners are spun at the same time and the colours in which the pointers end up are noted.",
+  "questionText": "(i) Complete the table below to list all the possible outcomes. One is already done and G, B means Grey on the first spinner and Black on the second spinner. (ii) Find the probability of getting the same colour on each spinner. (iii) Find the probability that the colour on one of the spinners is black and the colour on the other spinner is white.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q3-a-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Black, Black",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q3-a-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Grey, Grey",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q3-a-i-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "White, White",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q3-b-i-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "p1-q3-b-i-ii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q3(b)(i), Q3(b)(ii)",
+  "stem": "Gráinne is choosing her activities for Transition Year. She must choose 1 activity from each of the groups below. For example, she might choose Swimming, Bridge, and Art. Group 1: Swimming, Basketball, Hurling. Group 2: Chess, Bridge. Group 3: Creative Writing, Drama, Art.",
+  "questionText": "(i) How many different combinations of activities does Gráinne have? (ii) Because of an injury, Gráinne cannot take part in basketball or hurling. How many different combinations of activities does she have now?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q3-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "3× 2 ×3 = 18",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q3-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "1× 2× 3 = 6",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q4-a-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q4-a-i-ii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q4(a)(i), Q4(a)(ii)",
+  "stem": "",
+  "questionText": "(i) Fiachra invests €10 000 for 3 years at 3·25% per annum compound interest. How much does his investment amount to at the end of the 3 years? Give your answer correct to the nearest cent. (ii) Caoimhe also invests €10 000 for 3 years. At the end of the 3 years she gets a one-off interest payment of 10%. Who gets the most return on his/her investment and what is the difference between their final amounts?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q4-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= €11007·03",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q4-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Fiachra.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q4-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Difference: 11007·03 – 11000 = €7·03",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q4-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q4-b",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q4(b)",
+  "stem": "Amanda exchanges £150 sterling for euro. The exchange rate is €1 = £0·916.",
+  "questionText": "How much does she get? Give your answer correct to the nearest cent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "= €163·76",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q5-a-b-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q5-a-b-c",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q5(a), Q5(b), Q5(c)",
+  "stem": "Jamil is planning to buy a new television. The model he has chosen can be bought in three different shops.",
+  "questionText": "Find how much the television would cost Jamil in each of the three shops. (a) Shop 1: He would pay a deposit of €200 plus €25 per month for 12 months. (b) Shop B: The usual price is €600. There is a sale with a reduction of 20% off the usual price. (c) Shop C: Jamil would pay €22 per month for 2 years.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q5-a-b-c-solution-1",
+    "kind": "point",
+    "verbatim": "200 + 12(25) = €500",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q5-a-b-c-solution-2",
+    "kind": "point",
+    "verbatim": "600-120 = €480",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q5-a-b-c-solution-3",
+    "kind": "point",
+    "verbatim": "24(22) = €528",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q5-d",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q5-d",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q5(d)",
+  "stem": "Jamil is planning to buy a new television. The model he has chosen can be bought in three different shops. Shop 1: a deposit of €200 plus €25 per month for 12 months. Shop B: the usual price is €600 with a sale reduction of 20%. Shop C: €22 per month for 2 years.",
+  "questionText": "From which shop should Jamil buy the television if he wants to spend the least amount of money overall?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q5-d-solution-1",
+    "kind": "point",
+    "verbatim": "Shop B",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q6-a-i-ii",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q6-a-i-ii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q6(a)(i), Q6(a)(ii)",
+  "stem": "Sinead creates a pattern of numbers using the instructions in the table below. The first number, 10, is filled in for you: multiply by 3, then add 12 to your answer, giving 10 × 3, 30 + 12, outcome 42. The other starting numbers are 11 and 12.",
+  "questionText": "(i) Fill in the missing numbers in the table. (ii) Sinead picks a new starting number and gets an outcome of 60. Find the number she picked.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q6-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "60 – 12 = 48",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q6-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "48 ÷ 3 = 16",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q6-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q6-b",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q6(b)",
+  "stem": "A number of 4-legged stools and 3-legged stools has a total of 17 legs between them.",
+  "questionText": "How many 4-legged stools are there?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "8 + 9 = 17",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "There are 2 4-legged stools",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q7-a",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q7-a",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q7(a)",
+  "stem": "",
+  "questionText": "Write the following numbers in order, starting with the smallest: 73%, 3/4, 0·7, 4/5.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "All entries in a single number format",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q7-b-i-ii",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q7-b-i-ii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q7(b)(i), Q7(b)(ii)",
+  "stem": "The population of India is estimated to be about 1 343 000 000 people.",
+  "questionText": "(i) Write this number in the form a × 10ⁿ, where 1 ≤ a < 10 and n ∈ ℤ. (ii) Mary is taking a trip to India and is texting a friend about the population of that country. Write the number 1 343 000 000 in words.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q7-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "1·343 ×109",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q7-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "One billion three hundred and forty three million",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q7-c-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-c-i-ii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q7(c)(i), Q7(c)(ii)",
+  "stem": "There are 60 people at a party. The ratio of adults to children is 1:5.",
+  "questionText": "(i) How many adults are at the party? (ii) 8 more adults join the party and none of the children leave. What is the ratio of adults to children now?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q7-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Now 10 + 8 =18 adults and 50 children.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q7-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Ratio: 18 : 50 or 9 : 25",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q8-a",
+  "topicId": "maths-2-1",
+  "conceptId": "p1-q8-a",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q8(a)",
+  "stem": "Sully’s back garden is in the shape of the rectangle ABCD shown in the scaled diagram below. In the diagram 1 cm represents 1 m. [AD] is the back wall of the house. There is a tree (T) near the end of the garden, as shown in the diagram. Sully wants to put up a bird table in the garden. The table has to be at least 3 m from the house and at least 4 m from the tree.",
+  "questionText": "Using your ruler and compass, draw and shade in the region of the garden where the bird table could be placed.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q8-a-solution-1",
+    "kind": "point",
+    "verbatim": "Line 3 cm from house drawn",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q8-a-solution-2",
+    "kind": "point",
+    "verbatim": "Any line and correct circle (radius = 4, centre T) drawn",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q8-b-i-ii-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "p1-q8-b-i-ii-iii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2018 FL Paper 1 Q8(b)(i), Q8(b)(ii), Q8(b)(iii)",
+  "stem": "A square board with a circular disc drawn on it is shown in the diagram below. The square has a side length of 20 cm.",
+  "questionText": "(i) Find, in cm², the area of the square. (ii) Find the area of the disc. Give your answer correct to the nearest cm². (iii) Write the area of the disc as a percentage of the total area of the square.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q8-b-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "20 × 20 = 400 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q8-b-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "πr2 = π(10)2 = 314 cm2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q8-b-i-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "= 78·5%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q9-a-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p1-q9-a-i",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 FL Paper 1 Q9(a)(i)",
+  "stem": "The triangle PQR is shown in the diagram below, where P = (3, 4), Q = (11, 4), and R = (3, 10).",
+  "questionText": "Draw the triangle ABC on the same diagram, where A = (1·5, 2), B = (5·5, 2), and C = (1·5, 5). Note: the point C is already marked in for you.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "A and B correctly plotted but no triangle drawn",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q9-a-ii-iii-iv",
+  "topicId": "maths-2-4",
+  "conceptId": "p1-q9-a-ii-iii-iv",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 FL Paper 1 Q9(a)(ii), Q9(a)(iii), Q9(a)(iv)",
+  "stem": "The triangle PQR is shown in the diagram below, where P = (3, 4), Q = (11, 4), and R = (3, 10). Triangle ABC has vertices A = (1·5, 2), B = (5·5, 2), and C = (1·5, 5).",
+  "questionText": "(ii) The triangle PQR is the image of the triangle ABC by an enlargement of scale factor k and using (0, 0) as the centre of the enlargement. Use the lengths of [PR] and [AC] to find k, the scale factor of the enlargement. (iii) The triangle PQR has a right angle at P. Use the Theorem of Pythagoras to find the length of [QR]. (iv) Use your answers to part (a)(ii) and part (a)(iii) to find the length of [BC].",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q9-a-ii-iii-iv-solution-1",
+    "kind": "point",
+    "verbatim": "k = 6 ÷ 3 = 2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q9-a-ii-iii-iv-solution-2",
+    "kind": "point",
+    "verbatim": "10 ÷ 2 = 5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q9-a-v",
+  "topicId": "maths-2-4",
+  "conceptId": "p1-q9-a-v",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 FL Paper 1 Q9(a)(v)",
+  "stem": "The triangle PQR is shown in the diagram below, where P = (3, 4), Q = (11, 4), and R = (3, 10). Triangle ABC has vertices A = (1·5, 2), B = (5·5, 2), and C = (1·5, 5). The triangle PQR is an enlargement of triangle ABC with centre (0, 0). The area of the triangle ABC is 6 square units.",
+  "questionText": "Using this, or otherwise, find the area of the triangle PQR.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q9-a-v-solution-1",
+    "kind": "point",
+    "verbatim": "6 × (2)2 = 24 units2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q9-b-i-ii-iii",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q9-b-i-ii-iii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 FL Paper 1 Q9(b)(i), Q9(b)(ii), Q9(b)(iii)",
+  "stem": "Frankie had to do the following calculation: (251·32 + 39·14)/10·3.",
+  "questionText": "(i) To begin, he makes an estimate of what the answer should be. By writing each number correct to the nearest whole number, use the boxes below to find the number that Frankie gets as his estimate. (ii) Next Frankie uses his calculator and gets 255·12 for his answer. Because of his estimate, he knows this answer is not correct. Frankie gets his incorrect answer of 255·12 by keying 251·32 + 39·14 ÷ 10·3 = into the calculator. Explain why this does not give the correct answer to the calculation. (iii) Use your calculator to find the actual value of (251·32 + 39·14)/10·3.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q9-b-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Should have used brackets on the first two numbers",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q9-b-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "28·2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q10-a-i-ii-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q10-a-i-ii-iii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 FL Paper 1 Q10(a)(i), Q10(a)(ii), Q10(a)(iii)",
+  "stem": "Brian had to drive from his house to Cork for a job interview. He drove at an average speed of 80 km per hour for the first ½ hour.",
+  "questionText": "(i) Find the distance, in km, driven by Brian in the first ½ hour. (ii) It then took him 1½ hours to drive the remaining 117 km to Cork. At what average speed, in km/h, did Brian drive the remaining 117 km? (iii) Using the total distance travelled and the total time taken, what was Brian’s average speed for the journey from his house to Cork?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q10-a-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Total distance: 40 + 117 = 157",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q10-a-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "½ + 1½ = 2 hours",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q10-a-i-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "= 78·5 km/h",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q10-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q10-b-i",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 FL Paper 1 Q10(b)(i)",
+  "stem": "After the interview, Brian was offered a job as a car salesperson. He could choose between 2 different contracts: Contract A and Contract B. Each contract had a basic wage and a commission for each car sold. Table 1 shows the details of each contract. Contract A: basic wage €400 per week, commission €100 per car. Contract B: basic wage €600 per week, commission €50 per car. The graph on the grid below shows the total weekly wages for Contract A for up to 6 cars sold per week.",
+  "questionText": "Use the graph to find Brian’s total weekly wage if he were to sell 3 cars in a particular week on Contract A.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q10-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "€700",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q10-b-ii-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q10-b-ii-iii",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 FL Paper 1 Q10(b)(ii), Q10(b)(iii)",
+  "stem": "After the interview, Brian was offered a job as a car salesperson. He could choose between 2 different contracts: Contract A and Contract B. Each contract had a basic wage and a commission for each car sold. Table 1 shows the details of each contract. Contract A: basic wage €400 per week, commission €100 per car. Contract B: basic wage €600 per week, commission €50 per car. The graph on the grid below shows the total weekly wages for Contract A for up to 6 cars sold per week.",
+  "questionText": "(ii) Table 2 below shows the total wages for Contract B for up to 6 cars sold per week. Complete the table. (iii) Use the values from Table 2 to plot the graph of the total weekly wages for Contract B on the grid on page 18.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q10-b-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "5 plots correct from correct table",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q10-b-iv",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q10-b-iv",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 FL Paper 1 Q10(b)(iv)",
+  "stem": "After the interview, Brian was offered a job as a car salesperson. He could choose between 2 different contracts: Contract A and Contract B. Each contract had a basic wage and a commission for each car sold. Table 1 shows the details of each contract. Contract A: basic wage €400 per week, commission €100 per car. Contract B: basic wage €600 per week, commission €50 per car. The graph on the grid below shows the total weekly wages for Contract A for up to 6 cars sold per week. The second graph plots the values from Table 2, showing total weekly wages for Contract B for up to 6 cars sold per week.",
+  "questionText": "Write down the point of intersection of the two graphs. Explain what each number means in the context of the question.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q10-b-iv-solution-1",
+    "kind": "point",
+    "verbatim": "(4, 800)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2018-fl-p1-q10-b-iv-solution-2",
+    "kind": "point",
+    "verbatim": "4 cars sold per week will give a weekly wage of €800 on both contracts.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2018-fl-p1-q10-b-v",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q10-b-v",
+  "level": "foundation",
+  "year": 2018,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2018 FL Paper 1 Q10(b)(v)",
+  "stem": "After the interview, Brian was offered a job as a car salesperson. He could choose between 2 different contracts: Contract A and Contract B. Each contract had a basic wage and a commission for each car sold. Table 1 shows the details of each contract. Contract A: basic wage €400 per week, commission €100 per car. Contract B: basic wage €600 per week, commission €50 per car. The graph on the grid below shows the total weekly wages for Contract A for up to 6 cars sold per week. Brian thinks he can sell an average of 5 cars per week.",
+  "questionText": "Which contract do you think he should choose? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2018-fl-p1-q10-b-v-solution-1",
+    "kind": "point",
+    "verbatim": "Contract A: He would get€ 900 /week on contract A but €850/week on contract B",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2018 Foundation paper and scheme on 2026-10-07."
  }
 ]

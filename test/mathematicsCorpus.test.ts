@@ -8,6 +8,7 @@ import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
 import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
+import foundation2018 from '../scripts/markbank/mathematics/reviews/2018-foundation-p1.json';
 import foundation2019 from '../scripts/markbank/mathematics/reviews/2019-foundation-single.json';
 import foundation2020 from '../scripts/markbank/mathematics/reviews/2020-foundation-single.json';
 import foundation2021 from '../scripts/markbank/mathematics/reviews/2021-foundation-single.json';
@@ -119,6 +120,7 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 
 
 describe.each([
+  { year: 2018, count: 28, offered: 300, review: foundation2018 },
   { year: 2019, count: 34, offered: 300, review: foundation2019 },
   { year: 2020, count: 34, offered: 300, review: foundation2020 },
   { year: 2021, count: 48, offered: 390, review: foundation2021 },
@@ -148,7 +150,7 @@ describe.each([
       expect(card.level, card.id).toBe('foundation');
       expect(card.stem ?? '', card.id).toBe(task.stem);
       expect(card.questionText, card.id).toBe(task.questionText);
-      expect(card.paperFileid, card.id).toBe('LC003BLP000EV');
+      expect(card.paperFileid, card.id).toBe(census.paperFileid.replace(/\.pdf$/, ''));
       expect(card.schemeCitation, card.id).toContain('Foundation Level');
       expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
       expect(card.sourceMaterial?.sourceFileid, card.id).toBe(census.paperFileid);
@@ -156,7 +158,7 @@ describe.each([
       expect(card.topicId, card.id).toBe(task.topicId);
       expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
       const question = task.printedParts[0].match(/^Q(\d+)/)![1];
-      expect(examTopicIdsForQuestion('mathematics', 'foundation', year, 'main', question, 'single', 'ev', census.paperFileid), card.id)
+      expect(examTopicIdsForQuestion('mathematics', 'foundation', year, 'main', question, census.paperKey, 'ev', census.paperFileid), card.id)
         .toEqual(expect.arrayContaining(task.examTopicIds));
     }
   });
@@ -164,6 +166,19 @@ describe.each([
 
 describe('Foundation Mathematics marking boundaries and source context', () => {
   const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
+
+  it('keeps the 2018 question and scheme file identities separate and groups all published components', () => {
+    const price = task(2018, 'p1-q5-a-b-c');
+    expect(price.totalMarks).toBe(20);
+    expect(price.questionText).toContain('(c)');
+    expect(price.paperFileid).toBe('LC003BLP100EV');
+    expect('mathematicsScale' in price && price.mathematicsScale?.schemeFileid).toBe('LC003BLP000EV.pdf');
+    expect('mathematicsScale' in price && price.mathematicsScale?.marks).toEqual([0, 5, 11, 16, 20]);
+    expect(task(2018, 'p1-q9-a-ii-iii-iv').questionText).toContain('(iv)');
+    expect(task(2018, 'p1-q9-b-i-ii-iii').questionText).toContain('(251·32 + 39·14)/10·3');
+    expect(task(2018, 'p1-q10-b-ii-iii').sourceMaterial?.pages).toEqual([18, 19]);
+    expect(task(2018, 'p1-q8-a').sourceMaterial?.measurementRequired).toBe(true);
+  });
 
   it('retains the 2019 whole probability task, graph instructions and 45/55-mark long questions', () => {
     expect(foundation2019.printedQuestionMarks['9']).toBe(45);
