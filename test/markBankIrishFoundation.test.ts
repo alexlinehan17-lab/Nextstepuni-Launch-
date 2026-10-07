@@ -14,7 +14,7 @@ const CARDS = ALL_CARDS.filter(c => c.year === 2025);
 
 describe('reviewed 2025 Irish Foundation tasks', () => {
   it('loads and remembers Foundation without changing other subjects’ available levels', async () => {
-    expect(await loadCards('irish', 'foundation')).toHaveLength(853);
+    expect(await loadCards('irish', 'foundation')).toHaveLength(921);
     expect(builtDecks()).toContainEqual({ subjectId: 'irish', level: 'foundation', label: 'Irish Foundation' });
     expect(levelsForSubject('irish', 2025)).toEqual(['higher', 'ordinary', 'foundation']);
     expect(levelsForSubject('biology', 2025)).toEqual(['higher', 'ordinary']);
