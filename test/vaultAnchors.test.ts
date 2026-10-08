@@ -67,7 +67,7 @@ describe('audited hosted answer maps', () => {
   });
 
   it('ships every override and keeps it byte-identical to the reviewed source map', () => {
-    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(39);
+    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(41);
     for (const key of HOSTED_ANSWER_OVERRIDES) {
       const [subjectId, year, fileid] = key.split('|');
       expect(['art', 'physics', 'irish']).toContain(subjectId);

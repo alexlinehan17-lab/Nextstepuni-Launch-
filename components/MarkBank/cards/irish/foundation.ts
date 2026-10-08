@@ -8,6 +8,8 @@ import authored2021 from './foundation-2021-authored.json';
 import authored2020 from './foundation-2020-authored.json';
 import authored2019 from './foundation-2019-authored.json';
 import authored2018 from './foundation-2018-authored.json';
+import authored2011 from './foundation-2011-authored.json';
+import authored2011Aural from './foundation-2011-aural-authored.json';
 import authored2012 from './foundation-2012-authored.json';
 import authored2013 from './foundation-2013-authored.json';
 import authored2014 from './foundation-2014-authored.json';
@@ -15,7 +17,7 @@ import authored2015 from './foundation-2015-authored.json';
 import authored2016 from './foundation-2016-authored.json';
 import authored2017 from './foundation-2017-authored.json';
 
-export const CARDS: SecRubricCard[] = [authored2012, authored2013, authored2014, authored2015, authored2016, authored2017, authored2018, authored2019, authored2020, authored2021, authored2022, authored2023, authored2024, authored].flatMap(({ cards, review }) => cards.map((card): SecRubricCard => ({
+export const CARDS: SecRubricCard[] = [authored2011, authored2011Aural, authored2012, authored2013, authored2014, authored2015, authored2016, authored2017, authored2018, authored2019, authored2020, authored2021, authored2022, authored2023, authored2024, authored].flatMap(({ cards, review }) => cards.map((card): SecRubricCard => ({
   id: card.id,
   subjectId: 'irish',
   level: 'foundation',
@@ -36,7 +38,7 @@ export const CARDS: SecRubricCard[] = [authored2012, authored2013, authored2014,
   schemeCitation: `SEC Gaeilge Bonnleibhéal ${card.year}, PDF p.${card.schemePage}` +
     (card.schemePages.length > 1 ? `–${card.schemePages.at(-1)}` : '') +
     ' — © State Examinations Commission.',
-  schemeRegion: { schemeFileid: `${card.paperFileid}.pdf`, p: card.schemePage, r: [0, 0, 1, 1] },
+  schemeRegion: { schemeFileid: `${'schemeFileid' in card ? card.schemeFileid : card.paperFileid}.pdf`, p: card.schemePage, r: [0, 0, 1, 1] },
   specVersion: resolveCurriculumSpecification('irish', card.year)!.id,
   qa: {
     gates: ['visual-paper-sweep', 'visual-scheme-sweep', 'published-mark-boundary', 'finite-route-expansion'],

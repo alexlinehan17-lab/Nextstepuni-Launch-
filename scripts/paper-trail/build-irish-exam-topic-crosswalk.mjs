@@ -698,7 +698,7 @@ for (const paper of papers) {
 
 // Reviewed task boundaries override generic section guesses for this exact
 // paper. Frozen baseline identities remain below; new parts/routes are additive.
-const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json']
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
 for (const card of foundationTasks.cards) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
@@ -719,6 +719,7 @@ for (const card of foundationTasks.cards) {
   paper.q.at(-1).audioMaterial = card.audioMaterial;
   if (card.year <= 2024) paper.q.at(-1).practiceInstruction = 'Don chárta seo: ' + card.questionRef.replace(/^\d{4} FL /, '') + '.';
   paper.hasReviewedFoundationTasks = true;
+  paper.reviewedFoundationSchemeFileid = (card.schemeFileid ?? card.paperFileid) + '.pdf';
 }
 for (const card of reviewedHigherTasks) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
@@ -760,7 +761,22 @@ for (const card of reviewedHigherTasks) {
   paper.hasReviewedHigherTasks = true;
 }
 for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks)) {
-  const reviewedCards = foundationTasks.cards.filter(c => c.year === reviewedFoundation.year);
+  const reviewedCards = foundationTasks.cards.filter(c => c.year === reviewedFoundation.year && c.paperFileid + '.pdf' === reviewedFoundation.fileid);
+  if (reviewedFoundation.kind === 'foundation-aural') {
+    // Retain the twelve frozen whole-question identities alongside each newly
+    // reviewed mark boundary, all linked to this separate aural paper.
+    for (const question of reviewedFoundation.q) {
+      if (/^\d+$/.test(question.n)) {
+        const parts = reviewedCards.filter(c => new RegExp('^A-' + question.n + '[ab]?$').test(c.atlasQuestionId));
+        if (!parts.length) throw new Error('Unreviewed Foundation listening question: ' + question.n);
+        question.reviewedSchemePages = [...new Set(parts.flatMap(c => c.schemePages))].sort((a,b) => a-b);
+        question.anchor.paperRegion = [...new Set(parts.flatMap(c => c.sourceMaterial.pages))].sort((a,b) => a-b).map(p => ({ p, r: [0,0,1,1] }));
+        question.audioMaterial = { ...parts[0].audioMaterial, label: 'Cluastuiscint · Ceist ' + question.n };
+      }
+      if (!question.reviewedSchemePages) throw new Error('Unreviewed Foundation aural scheme: ' + question.n);
+    }
+    continue;
+  }
   // Older papers may never have had an answer sidecar. Add their reviewed
   // whole-section entries before attaching the complete paper/scheme regions.
   for (const [n, label] of [['2', 'Léamhthuiscint'], ['3', 'Scríbhneoireacht']]) {
@@ -773,11 +789,12 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
     });
   }
   const passage = reviewedCards.find(c => c.atlasQuestionId === 'R-2C-1');
-  const letterOrForm = reviewedCards.find(c => c.atlasQuestionId === 'W-4B' || c.atlasQuestionId.startsWith('W-4B-'));
+  const formSlot = reviewedFoundation.year <= 2011 ? 'W-5B' : 'W-4B';
+  const letterOrForm = reviewedCards.find(c => c.atlasQuestionId === formSlot || c.atlasQuestionId.startsWith(formSlot + '-'));
   const writingTopics = [...new Set(reviewedCards.filter(c => c.section === '3').flatMap(c => c.examTopicKeys.map(key => F[key])))];
   for (const [n, label, topics] of [
     ['R-2C', passage.examTopicKeys.includes('news') ? 'Léamhthuiscint · Scéal Nuachta' : 'Léamhthuiscint · Scéal', passage.examTopicKeys.map(key => F[key])],
-    ['W-4B', letterOrForm.taskFormatLabel ? 'Scríobh · ' + letterOrForm.taskFormatLabel : letterOrForm.examTopicKeys.includes('letterWriting') ? 'Scríobh · Litir' : 'Scríobh · Foirm Iarratais', letterOrForm.examTopicKeys.map(key => F[key])],
+    [formSlot, letterOrForm.taskFormatLabel ? 'Scríobh · ' + letterOrForm.taskFormatLabel : letterOrForm.examTopicKeys.includes('letterWriting') ? 'Scríobh · Litir' : 'Scríobh · Foirm Iarratais', letterOrForm.examTopicKeys.map(key => F[key])],
   ]) {
     const q = reviewedFoundation.q.find(q => q.n === n);
     q.label = label;
@@ -806,10 +823,10 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
     '2': reviewedSchemeUnion(c => c.section === '2'),
     // Standard writing guidance precedes the first writing-task scheme page.
     '3': [writingSchemePages[0] - 1, ...writingSchemePages],
-    ...Object.fromEntries(['R-1', 'R-2A', 'R-2B', 'R-2C', 'R-3A', 'R-3B', 'R-3C', 'W-4B']
+    ...Object.fromEntries(['R-1', 'R-2A', 'R-2B', 'R-2C', 'R-3A', 'R-3B', 'R-3C', formSlot]
       .map(n => [n, reviewedSchemeUnion(c => !c.memberCardIds && (c.atlasQuestionId === n || c.atlasQuestionId.startsWith(n + '-')))])),
   };
-  for (const n of ['1', '2', '3']) {
+  for (const n of ['1', '2', '3'].filter(n => reviewedCards.some(c => c.section === n))) {
     const sourcePages = [...new Set(reviewedCards.filter(c => c.section === n).flatMap(c => c.sourceMaterial.pages))].sort((a,b) => a-b);
     // The writing choice instruction occupies the preceding page in these
     // reviewed papers. Listening/reading start one page earlier in 2022.
@@ -824,16 +841,18 @@ for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks
   // Carry a documented source/key mismatch into the atomic task, its passage,
   // whole section and every mechanically generated route containing that task.
   for (const issue of reviewedCards.filter(c => c.sourceDiscrepancyNotice)) {
-    const affected = new Set([issue.atlasQuestionId, issue.section, issue.atlasQuestionId.replace(/-\d+$/, '')]);
+    const affected = new Set([issue.atlasQuestionId, issue.section, issue.atlasQuestionId.replace(/-\d+$/, ''), issue.atlasQuestionId.replace(/^(W-\d+[A-Z])-.*/, '$1')]);
     reviewedCards.filter(c => c.memberCardIds?.includes(issue.id)).forEach(c => affected.add(c.atlasQuestionId));
     for (const question of reviewedFoundation.q.filter(q => affected.has(q.n))) {
-      question.practiceInstruction = (question.practiceInstruction ?? ('Don chárta seo: ' + question.label + '.'))
-        + ' ' + issue.sourceDiscrepancyNotice;
+      if (!question.practiceInstruction?.includes(issue.sourceDiscrepancyNotice)) {
+        question.practiceInstruction = (question.practiceInstruction ?? ('Don chárta seo: ' + question.label + '.'))
+          + ' ' + issue.sourceDiscrepancyNotice;
+      }
     }
   }
-  reviewedFoundation.q.find(q => q.n === '1').audioMaterial = {
-    ...foundationTasks.cards.find(card => card.year === reviewedFoundation.year && card.audioMaterial).audioMaterial,
-    label: 'Cluastuiscint · Ceisteanna 1–8',
+  const listeningCard = reviewedCards.find(card => card.audioMaterial);
+  if (listeningCard) reviewedFoundation.q.find(q => q.n === '1').audioMaterial = {
+    ...listeningCard.audioMaterial, label: 'Cluastuiscint · Ceisteanna 1–8',
   };
 }
 
@@ -1126,7 +1145,7 @@ for (const paper of papers) {
   fs.writeFileSync(outputPath, JSON.stringify(artifact) + '\n');
   if (paper.hasReviewedFoundationTasks || paper.hasReviewedHigherTasks) {
     const { paperOnly, ...answerMap } = artifact;
-    answerMap.schemeFileid = paper.hasReviewedFoundationTasks ? paper.fileid : 'LC001ALP000IV.pdf';
+    answerMap.schemeFileid = paper.hasReviewedFoundationTasks ? paper.reviewedFoundationSchemeFileid : 'LC001ALP000IV.pdf';
     answerMap.band = paper.hasReviewedFoundationTasks ? [3, 16] : [27, 41];
     answerMap.maxCropPages = 10;
     answerMap.q = artifact.q.filter(q => paper.q.find(question => question.n === q.n).reviewedSchemePages).map(q => {

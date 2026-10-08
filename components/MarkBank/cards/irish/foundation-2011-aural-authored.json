@@ -1,0 +1,1508 @@
+{
+  "review": {
+    "year": 2011,
+    "level": "foundation",
+    "paperFileid": "LC001BLPA00IV.pdf",
+    "schemeFileid": "LC001BLP000EV.pdf",
+    "paperSha256": "2d4997a9c4399b63edf4ffd152c64700151b6beba165b1b5f5f27cb843ef35c6",
+    "schemeSha256": "9d661961f601757d5de357b5d53485b16d92ebfa19a01409ea722e0b1c22c37c",
+    "reviewedPaperPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reviewedSchemePages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "reviewDate": "2026-10-07",
+    "status": "reviewed",
+    "fullPaperAndApplicableSchemeVisualSweep": true,
+    "selectionDecisions": [
+      {
+        "paperFileid": "LC001BLPA00IV.pdf",
+        "page": 2,
+        "raw": "Freagair gach ceist. Tá na treoracha don Roinn seo ar an dlúthdhiosca.",
+        "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+      },
+      {
+        "paperFileid": "LC001BLPA00IV.pdf",
+        "page": 2,
+        "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+        "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+      },
+      {
+        "paperFileid": "LC001BLPA00IV.pdf",
+        "page": 3,
+        "raw": "Cá bhfuil an banc suite? (Cuir tic () sa bhosca ceart.)",
+        "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+      }
+    ],
+    "spatialSelectionDecisions": [
+      {
+        "paperFileid": "LC001BLPA00IV.pdf",
+        "page": 2,
+        "raw": "Freagair gach ceist. Tá na treoracha don Roinn seo ar an dlúthdhiosca.",
+        "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+      },
+      {
+        "paperFileid": "LC001BLPA00IV.pdf",
+        "page": 2,
+        "raw": "Cuir tic () leis an bhfreagra ceart i ngach cás.",
+        "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+      },
+      {
+        "paperFileid": "LC001BLPA00IV.pdf",
+        "page": 3,
+        "raw": "Ceist 5 Cá bhfuil an banc suite? (Cuir tic () sa bhosca ceart.)",
+        "decision": "Every listening answer required. Tick/map instructions select a correct answer, not alternative tasks."
+      }
+    ],
+    "atomicPracticeCardIds": [
+      "irish-2011-fl-a-1a",
+      "irish-2011-fl-a-1b",
+      "irish-2011-fl-a-2a",
+      "irish-2011-fl-a-2b",
+      "irish-2011-fl-a-3a",
+      "irish-2011-fl-a-3b",
+      "irish-2011-fl-a-4",
+      "irish-2011-fl-a-5",
+      "irish-2011-fl-a-6a",
+      "irish-2011-fl-a-6b",
+      "irish-2011-fl-a-7a",
+      "irish-2011-fl-a-7b",
+      "irish-2011-fl-a-8a",
+      "irish-2011-fl-a-8b",
+      "irish-2011-fl-a-9a",
+      "irish-2011-fl-a-9b",
+      "irish-2011-fl-a-10a",
+      "irish-2011-fl-a-10b",
+      "irish-2011-fl-a-11a",
+      "irish-2011-fl-a-11b",
+      "irish-2011-fl-a-12a",
+      "irish-2011-fl-a-12b"
+    ],
+    "pairedRouteCardIds": [],
+    "examStructure": {
+      "listening": 180,
+      "total": 180
+    },
+    "nonPoolDecisions": [
+      "MCQ distractors and map boxes are candidate answers to one question, not independently valid task routes.",
+      "Notice headings, all invitation details to requiredÚna, letter content and form fields are compulsory. Openfriend/dó/di is flexible wording.",
+      "Five schoolsubjects and three hobbies are open content; three explicitly printed interviewdates are a finite selection.",
+      "Story five-reference requirement and scheme example lists are not a choose-five finite menu.2011 prints no fixed missing-reference penalty.",
+      "Reasonable-accommodation guidance changes marking for eligible candidates, not task selection."
+    ],
+    "openIssues": [],
+    "caveats": [
+      "Fullvisualsweep:16written+8listening+20scheme pages, including blanks/covers. Written270=40matching+50Q2+60Q3+30Q4+40Q5+50Q6; independentlistening180.92cards:22aural +70written(48atomic+6readingpairs+16writingproducts).",
+      "Original2011paper duplicates glyphs at fragment boundaries on severalpages. A spatial extractor removes only identicalglyphs within0.12point at the samebaseline; repeatedletters atdifferentpositions remain. Raw and spatial selection scans both fail unknown/stale directives. OriginalPDFs unchanged.",
+      "Aural22parts onPDF2–6,scheme3. Q1–3a/b7each,Q4/5seven,Q6–9a/b8each,Q10–12a/b10each. Mapbottomleft. Correctofficialaudiofile verified fromSECmanifest. WrittenmatchingEJAHDIFCGB onPDF2/scheme4; no later alternative-numbering rule.",
+      "Q2 BordGáisletter,FeirmChinnSléibhebrochure,SeanfhearClisteCróganews onPDF3/4/5. Q3 DáithíDraíochta,WillieClancy,AnSionnachagusanPréachán onPDF6/7/8. Poemfullthree stanzas20lines andfox/crow/cheeseimages retained.",
+      "Q2B2publishedmismatch:scheme4RangannaCéilí is absent frompassage/options; paper4saysTrághainmheachoppositehouse. Explicitnoticepropagatesatomic,pairs,passage,wholeReading. No inventedSECacceptance.",
+      "Q3A2/B4/C2specialnotesPDF6:6markacceptedanswers inclbutcher/workhistory,WilliereturnedClare/home,andpoemoneortwolines. Extrasentences−2/−4/−6. SchemeB4acceptedtwosentenceexampleprints“mílte”wherepaperhas“céadta”; originalsandwordingretained.",
+      "NoticePDF10/scheme8–10whole30:layout1+pics6/9/3/3+language8. Generalinappropriatetense−1; venue3/2/1,day3/2/1/0,date2/1/0,time2or0,fee2or0,malehost3/2,childrenhospitalcontext3/2/0. No2012tariffimport.",
+      "InvitationPDF11/scheme11–12whole30:greeting2/invitation1/signature1,pics12/2/2/2,language8. NamedrecipientÚna. PDF12dayblockcontradicts itself:innéappearsin2markexamplesandexplicit0row. Visibleconflictnotice,noinventedresolution.",
+      "GarageletterPDF12/scheme13–15whole40:layout6+pics4/12/4/4+language10. Paperanddetailedguide requiretwopointsforpic3despiteoverview1×4;keepgrouptotal4andexplicit2references. PDF15workedlabelsCum22/Cr8conflictcorrectactual30/10;preservedandflagged.",
+      "TescoformPDF13/scheme15–16Phil deRóiste,dates15/17/19Lúnasa. Fields15 doubled30÷2rounduponce. Undoubledhobbyrow2conflictsdouble6andsum15;useexplicitdoubledmethodwithvisibleconflict. Relevantparagraph15/offtopic5;20wordshalf,32words−1/5paragraphawardonly;sharedlanguage10. No2012DOB/spellinglistimport.",
+      "Stories6AChristmasclubpartyPDF14/scheme16;6BcyclingriverrescuePDF15/scheme17. Communication37adjustproportionallyforlength,language13separate. Fivereferencesrequired,6Boneperpicture+fifth. No fixed5markmissingreferencepenaltyorworked2012examplesprinted. Generalstandardlanguage8;reasonableaccommodation18,no4pointconversiontable;19blank,20cover. No audio transcript inthisscheme."
+    ],
+    "boundaries": "22 individually marked listening parts.",
+    "audio": {
+      "url": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+      "verification": "HTTP 200 audio/mpeg, 29851366 bytes. Bank and Atlas mobile playback verified, readyState 4, duration 1865.613063 seconds.",
+      "contentLength": 29851366,
+      "contentType": "audio/mpeg"
+    }
+  },
+  "cards": [
+    {
+      "id": "irish-2011-fl-a-1a",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-1a",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 1(a)",
+      "questionText": "1. (a) Cén post atá ag Breandán?",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-1a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Leictreoir = an tríú pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 1(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 1(a)",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 1(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-1b",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-1b",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 1(b)",
+      "questionText": "1. (b) Cá háit a bhfuil Breandán ina chónaí faoi láthair?\n\nDroichead Átha\nDún Dealgan\nFaoin tuath",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-1b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Faoin tuath"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 1(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 1(b)",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 1(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-2a",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-2a",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 2(a)",
+      "questionText": "2. (a) Cá bhfuil Deirdre ag obair anois?",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-2a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "In oifig thaistil = an ceathrú pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 2(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 2(a)",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 2(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-2b",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-2b",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 2(b)",
+      "questionText": "2. (b) Cén áit a rachaidh Deirdre an bhliain seo chugainn?\n\nAn Eoraip\nAn tSín\nMeiriceá",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-2b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "An tSín"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 2(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 2(b)",
+        "pages": [
+          2
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 2(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-3a",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-3a",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 3(a)",
+      "questionText": "3. (a) Cén spórt nach maith le hEoin?",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-3a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Galf = an dara pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 3(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 3(a)",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 3(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-3b",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-3b",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 3(b)",
+      "questionText": "3. (b) Cé mhéad oíche a bhíonn Eoin ag snámh gach seachtain?\n\nTrí oíche\nCúig oíche\nSeacht n-oíche",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-3b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Trí oíche"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 3(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 3(b)",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 3(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-4",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-4",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 4",
+      "questionText": "4. Cá bhfuil an bhean ag dul?",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-4",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Siopa troscáin = an ceathrú pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 4",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 4",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 4",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-5",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-5",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 5",
+      "questionText": "5. Cá bhfuil an banc suite? (Cuir tic (✓) sa bhosca ceart.)",
+      "totalMarks": 7,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-5",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 7,
+          "permittedMarks": [
+            0,
+            7
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "An bosca ag an mbun ar clé (tic nó saighead)"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 5",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 5",
+        "pages": [
+          3
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 5",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-6a",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-6a",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 6(a)",
+      "questionText": "6. (a) Cén sórt aimsire a bheidh ann i Loch Garman Dé Sathairn?",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-6a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Grianmhar = an ceathrú pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 6(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 6(a)",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 6(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-6b",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-6b",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 6(b)",
+      "questionText": "6. (b) Conas mar a bheidh an aimsir Dé Domhnaigh?\n\nTirim\nGaofar\nTe",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-6b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Tirim"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 6(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 6(b)",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 6(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-7a",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-7a",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 7(a)",
+      "questionText": "7. (a) Cad a bheidh ar siúl Dé hAoine i halla na scoile?",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-7a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Dráma = an chéad phictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 7(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 7(a)",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 7(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-7b",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-7b",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 7(b)",
+      "questionText": "7. (b) Cén t-am a thosóidh an dráma?\n\nA cúig a chlog\nA seacht a chlog\nA hocht a chlog",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-7b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "A hocht a chlog"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 7(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 7(b)",
+        "pages": [
+          4
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 7(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-8a",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-8a",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 8(a)",
+      "questionText": "8. (a) Cad a bheidh ar siúl i halla na scoile Dé Sathairn?",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-8a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Dioscó = an dara pictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 8(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 8(a)",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 8(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-8b",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-8b",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 8(b)",
+      "questionText": "8. (b) Cad a bheidh ar díol laistigh den halla?\n\nGuma coganta\nSólaistí agus deochanna\nTicéid",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-8b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Sólaistí agus deochanna"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 8(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 8(b)",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 8(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-9a",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-9a",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 9(a)",
+      "questionText": "9. (a) Cén spórt a imríonn Katie Taylor?",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-9a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Dornálaíocht = an chéad phictiúr"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 9(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 9(a)",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 9(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-9b",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-9b",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 9(b)",
+      "questionText": "9. (b) Cén bhliain a bunaíodh an Club Óige i gCromghlinn?\n\n1950\n1961\n2011",
+      "totalMarks": 8,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-9b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            8
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "1961"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 9(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 9(b)",
+        "pages": [
+          5
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 9(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-10a",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-10a",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 10(a)",
+      "questionText": "10. (a) Cad a bhí ag Maidhc ar a ghlúin?\n\nBindealán\nClogad\nPlástar",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-10a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Bindealán"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 10(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 10(a)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 10(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-10b",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-10b",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 10(b)",
+      "questionText": "10. (b) Cé a rith amach ar an mbóthar taobh amuigh den siopa?\n\nSiopadóir\nCailín óg\nBuachaill óg",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-10b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Buachaill óg"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 10(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 10(b)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 10(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-11a",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-11a",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 11(a)",
+      "questionText": "11. (a) Cé mhéad airgid a fuair Bríd óna hAintín?\n\n€200\n€300\n€500",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-11a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "€200"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 11(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 11(a)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 11(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-11b",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-11b",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 11(b)",
+      "questionText": "11. (b) Cad is féidir a fháil go héasca ón gComhar Creidmheasa?\n\nSeic\nIasacht airgid\nIasacht leabhair",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-11b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Iasacht airgid"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 11(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 11(b)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 11(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-12a",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-12a",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 12(a)",
+      "questionText": "12. (a) Cén cluiche a d’imir Oisín ar an Domhnach?\n\nCluiche iománaíochta\nCluiche rugbaí\nCluiche sacair",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-12a",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "Cluiche Sacair"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 12(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 12(a)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 12(a)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    },
+    {
+      "id": "irish-2011-fl-a-12b",
+      "year": 2011,
+      "level": "foundation",
+      "paper": 1,
+      "section": "1",
+      "atlasQuestionId": "A-12b",
+      "questionRef": "2011 FL Cluastuiscint · Ceist 12(b)",
+      "questionText": "12. (b) Cé a fuair an cárta dearg ón réiteoir?\n\nAn cúl báire\nAn lántosaí\nOisín",
+      "totalMarks": 10,
+      "topicId": "irish-1-3",
+      "examTopicKeys": [
+        "aural"
+      ],
+      "conceptId": "irish-foundation-a-12b",
+      "paperFileid": "LC001BLPA00IV",
+      "schemeFileid": "LC001BLP000EV",
+      "schemePage": 3,
+      "schemePages": [
+        3
+      ],
+      "taskRequirements": [
+        "Éist leis an taifeadadh. Úsáid na pictiúir ar an leathanach nuair is gá."
+      ],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Freagra",
+          "kind": "award",
+          "maxMarks": 10,
+          "permittedMarks": [
+            0,
+            10
+          ],
+          "guidanceKind": "exact-answer",
+          "guidance": [
+            "An cúl báire"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the answer and tariff published by the SEC for this part.",
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "Cluastuiscint · Ceist 12(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · Cluastuiscint · Ceist 12(b)",
+        "pages": [
+          6
+        ],
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Original examination pages, including every required picture or passage."
+      },
+      "audioMaterial": {
+        "kind": "source-audio",
+        "label": "Cluastuiscint · Ceist 12(b)",
+        "title": "Gaeilge Bonnleibhéal 2011 · An Chluastuiscint",
+        "playbackUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "secFileid": "LC001BLP017IV.mp3",
+        "canonicalUrl": "https://www.examinations.ie/archive/exampapers/2011/LC001BLP017IV.mp3",
+        "attribution": "© State Examinations Commission.",
+        "presentationNote": "Official Foundation Level recording. Answer the question shown using its printed options."
+      }
+    }
+  ]
+}

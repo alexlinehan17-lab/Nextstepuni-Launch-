@@ -117,6 +117,18 @@ export function resolvePaperFileid(subjectId, year, level, section) {
   if (!entry?.papers?.length) return null;
   // One paper for the year means there is nothing to choose between.
   if (entry.papers.length === 1) return stripPdf(entry.papers[0].doc?.f);
+  // The older Foundation Irish sitting separates listening from the written
+  // paper. Bank sections remain 1=listening, 2=reading, 3=writing; "Paper One"
+  // therefore holds sections 2 and 3. Require the exact indexed pair so an
+  // unfamiliar multi-paper structure cannot silently inherit this mapping.
+  if (subjectId === 'irish' && level === 'foundation') {
+    const aural = entry.papers.filter(p => /^Aural Paper$/i.test(p.label));
+    const written = entry.papers.filter(p => /^Paper One$/i.test(p.label));
+    if (entry.papers.length === 2 && aural.length === 1 && written.length === 1) {
+      return section === '1' ? stripPdf(aural[0].doc?.f)
+        : ['2', '3'].includes(section) ? stripPdf(written[0].doc?.f) : null;
+    }
+  }
   // Art's separate illustration booklet is indexed as a second "paper" even
   // though every written section lives in the document explicitly labelled
   // Exam Paper. Treating both documents as section candidates made every Art
