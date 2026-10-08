@@ -1,0 +1,314 @@
+{
+  "format": "split-git-bundle",
+  "created": "2026-10-08",
+  "bytes": 2536121550,
+  "sha256": "83783e4ecaae2a7b80cad5ebeb09294f23ebbe0e4466a416115fc291aa48261a",
+  "prerequisiteMain": "4c53706d75931fc45158866aa805446a2ab4b059",
+  "parts": [
+    {
+      "path": "archive/checkpoint.bundle.part-001",
+      "bytes": 41943040,
+      "sha256": "254937f8eb3f512034ada3716eb6f4ad9a442237e06c4b98bbc14774087b0902"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-002",
+      "bytes": 41943040,
+      "sha256": "4a3b41c64dfe004db6930b1b9158b32bc00bca41b16710062a47ff322836833f"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-003",
+      "bytes": 41943040,
+      "sha256": "93e8e91b97ed4900ffad0d6e37d35bbf892c2446009d8283da43e7ab59a7dd57"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-004",
+      "bytes": 41943040,
+      "sha256": "47bbdcdfe4b7b31a5568150c7d8ee4e45db52e0d2ff54337f66593c2af5ea031"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-005",
+      "bytes": 41943040,
+      "sha256": "84fb65add6b050c06dcd246459db9f267334dc5e5b46d454f868c6178d5b776e"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-006",
+      "bytes": 41943040,
+      "sha256": "2aeebf5bffeb2ce97ab4c796e2f4e021ace236eb44f18aaf1b7d7cf26fb32fa5"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-007",
+      "bytes": 41943040,
+      "sha256": "721f728f83a4988df0359ff9df82d4eda6dbab38044a27803e97b114da3a44d2"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-008",
+      "bytes": 41943040,
+      "sha256": "d8085b1b587c89ec53f11822695bb827911c2c797ebcbeec2bafac65843f499a"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-009",
+      "bytes": 41943040,
+      "sha256": "af2be3b423d959a3ee476133287ae5f1385c158237def27746e7222d9a5256bd"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-010",
+      "bytes": 41943040,
+      "sha256": "d06b4aafaca84a4726d4f264f55f457e2327a2c485a6d98e4819efad6faa07fe"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-011",
+      "bytes": 41943040,
+      "sha256": "bf97413d9428f8bb2c32cbd71df20d873243a5e4420ff391bf37121c8683854f"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-012",
+      "bytes": 41943040,
+      "sha256": "4472680b61fb70297029ae83c2f749a4b448fc55dad7f361fc4169a013ab3418"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-013",
+      "bytes": 41943040,
+      "sha256": "f2782d2fc4e0095d608a2e376de118a4e222cffd780d323008bcf8be5b12ff18"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-014",
+      "bytes": 41943040,
+      "sha256": "2a4765dd7cc6a2799ef6bd997852572078acb431b133780fdb96107bbceeb5a0"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-015",
+      "bytes": 41943040,
+      "sha256": "255799d6d34f5a014d550f80273728c68e40dee3a4fccf33a8df52d3e8e0b9cd"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-016",
+      "bytes": 41943040,
+      "sha256": "6bdddd87aa5bb0ebc6cf64c89b1575de1881bb6d02dc0b03819f58ab760668ec"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-017",
+      "bytes": 41943040,
+      "sha256": "b442f82be786cdaa85c6209d37a5b21315e08cae2ebff9db0d5b7e3e9ecda125"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-018",
+      "bytes": 41943040,
+      "sha256": "bc34af0ce31937a5c71c3a0fe627657f6472ca8d8c38369a7e8020b32191eb48"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-019",
+      "bytes": 41943040,
+      "sha256": "88c6ec9fd2f2d0a95a464d17eb39e3670e8e0ef82541cf54527d5085b83a42b7"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-020",
+      "bytes": 41943040,
+      "sha256": "b688dd23edb46f70dc8f4e97beb388608c11ae807d2c51e13627e2b4fe6f7b48"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-021",
+      "bytes": 41943040,
+      "sha256": "e5d5a5176f44c21ffa8acd8fce5a5f48aca0da84829b72edb761029c0a3dca2d"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-022",
+      "bytes": 41943040,
+      "sha256": "c157c3e7db6e2f7c9f5ec66ca6198e95f4cb80e74887b7f2faecea359f9d47ba"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-023",
+      "bytes": 41943040,
+      "sha256": "079eff91c02b34419e493d9d2630c9ccab713eca8e21ba4bc712db4dfc505517"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-024",
+      "bytes": 41943040,
+      "sha256": "eb457f2f9ce66e8558332afbf2fd04398fa67509d59d8da158c83391b311de18"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-025",
+      "bytes": 41943040,
+      "sha256": "fc41559086b9cb27009d8017ca7790d43be92eeb4afa74556372513d35fac23e"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-026",
+      "bytes": 41943040,
+      "sha256": "e4fdfe7c6186bc1e76ada81cf9cecb494486627ddd8290179034775bf1339018"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-027",
+      "bytes": 41943040,
+      "sha256": "595ed4cf8b698b6afcc776623b72b3697d64aadac588a2efffae17902eed86b7"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-028",
+      "bytes": 41943040,
+      "sha256": "ff23f3158ea2a784a098616b744eed241362dea9909489b803da5bf7090d4a70"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-029",
+      "bytes": 41943040,
+      "sha256": "7039c445a01d8b95e5d3a470f30d8c77ddcad08c98d53a82ac4db0c0a123a9ab"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-030",
+      "bytes": 41943040,
+      "sha256": "d7416be6301a197462e758f9da56cbbddbb8d4d211cb1e6b202a7d5de5b7e499"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-031",
+      "bytes": 41943040,
+      "sha256": "f6623346219bd3fb0510ce2490fa2b146f690c2646d68180a4d80fe3e350b711"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-032",
+      "bytes": 41943040,
+      "sha256": "2505bb8a7ff4f2533ce649042671518e59fdb8b84613a55cfdc5bd92ca2290ef"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-033",
+      "bytes": 41943040,
+      "sha256": "8c31848b2386cc71790fbfffb826f9b2d48e563c4b1a4d38db079e558269369a"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-034",
+      "bytes": 41943040,
+      "sha256": "f69019354d35015a4de6be2edb9758aef64ea820a619946d9ea466377ef3b700"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-035",
+      "bytes": 41943040,
+      "sha256": "5e28358d0a618c4f83ae5fa2eebc84aa2d9b27c0d3026b630bd0f1c08e762a7a"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-036",
+      "bytes": 41943040,
+      "sha256": "55e044d30909662f2a0f14605607083ad5cff96601dc848f5addbb75c5048f3b"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-037",
+      "bytes": 41943040,
+      "sha256": "5359db108b72190f8be13eeaa90a38cbef67eb100bbd0f7e88342ffdaa15f69f"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-038",
+      "bytes": 41943040,
+      "sha256": "cb4c1b5f0f0141b6b65ef4abe3e5dfc944db9a2b86cdef963c3db97f405d5cc1"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-039",
+      "bytes": 41943040,
+      "sha256": "17da3193db3638b57ef796520719b1ab9ac882981931383995e87d69eaf8dde7"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-040",
+      "bytes": 41943040,
+      "sha256": "b69da6682ceb72b811c88170e08c86054bf36ef4368fe0966c37e9de0c99b4ed"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-041",
+      "bytes": 41943040,
+      "sha256": "81be43cf4c4d949800bf24958edada326bd57b98c6262e1c4d931cd913c6140f"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-042",
+      "bytes": 41943040,
+      "sha256": "1e42928e69d7149fcb6bf284f060d5ed087bcd6a21625f2ae65b69abcb988854"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-043",
+      "bytes": 41943040,
+      "sha256": "893b2eff96f34b75e27d3762f695638e422f35f30e59e0c3f40b7757896607fc"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-044",
+      "bytes": 41943040,
+      "sha256": "de0611b36b431548813efe685728a0226a55886474505fcde5cac6b20122220e"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-045",
+      "bytes": 41943040,
+      "sha256": "6639ca94ff69404434a975d79cff3ec5094d699115fa267770d55619d9527df4"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-046",
+      "bytes": 41943040,
+      "sha256": "92d749d39aa44a772254b0a0e52d31e636288e7d3b8537c680361d169025ce62"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-047",
+      "bytes": 41943040,
+      "sha256": "6bb8aaa7ab93f8c902a52e1a0465ee954e46ead8bdf238477b89cc4c1d37f115"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-048",
+      "bytes": 41943040,
+      "sha256": "72e341815d68ddafe1ec77cda812362673a41488050c93f591fd6fda24b4ad13"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-049",
+      "bytes": 41943040,
+      "sha256": "5136f47cdc4fe49e8a5483193129a35065f6d522aa3c59cf5825834b695402c1"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-050",
+      "bytes": 41943040,
+      "sha256": "b0fe9e993d19cfa7f3f75db9d5db157208d6530a6ac9db24ef04af77e5065a47"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-051",
+      "bytes": 41943040,
+      "sha256": "21e942db143fd0f1b02167ac01e6d8ca1a852bb795a3947339dd1b4c35e76dd1"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-052",
+      "bytes": 41943040,
+      "sha256": "4959df4f0e66842a23477670b92bf3258e9d26513d70310d4fbaa708fc66215e"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-053",
+      "bytes": 41943040,
+      "sha256": "5f1161791b5111a7254774413a8dfbe7434c4767aba5babc422cc753c6a66f72"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-054",
+      "bytes": 41943040,
+      "sha256": "6c5aeef1058a4d69b6c504fc879456930134bdf08235f0423978f75b292c2ac4"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-055",
+      "bytes": 41943040,
+      "sha256": "d66f89ab257ddef7c30bd4f8dedb6069ac8872b466a2d2ba72eea621b889eea7"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-056",
+      "bytes": 41943040,
+      "sha256": "9360b77c302dbd6a047733debba1df3ee6f99099a6bfd54f6fe8c3d8b220f5a5"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-057",
+      "bytes": 41943040,
+      "sha256": "c1d4f75b3dff8851206126f17550671a767c530c03ef1428ee41d7c5dbc3c9d9"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-058",
+      "bytes": 41943040,
+      "sha256": "b746033af0044639b9cc29abb73d363b8048f1fe552afbf09bf7786758cacf9a"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-059",
+      "bytes": 41943040,
+      "sha256": "9823a3ef4072c224c2d1bfc10dcc0ac7ee4a9bacf82bfe71fe7955b940871a7c"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-060",
+      "bytes": 41943040,
+      "sha256": "d9fab17a2510fb0116d9a5f2f8baef84cb7fccc5b351bb8a757ee690c530e89a"
+    },
+    {
+      "path": "archive/checkpoint.bundle.part-061",
+      "bytes": 19539150,
+      "sha256": "6ee099d351117cc80c2578cdfc3dc0e0c29c294cb27275e2c4ca56f168aab72b"
+    }
+  ]
+}

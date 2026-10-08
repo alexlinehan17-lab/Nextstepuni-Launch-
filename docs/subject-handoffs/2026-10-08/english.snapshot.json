@@ -1,0 +1,98 @@
+{
+  "subject": "english",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-English-Completion-20261007",
+  "branch": "codex/english-corpus-completion-20261007",
+  "sourceHead": "8deb273f1b13341dcfa85204f7e4d784b638b21f",
+  "snapshotCommit": "2f23767eaeb00cc9e25922486372e07c25409940",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/english",
+  "snapshotTree": "0cf8312a56dbdece1ce8bbc33246a781bd944c4a",
+  "changedPaths": 480,
+  "capturedLocalFiles": 483,
+  "capturedLocalBytes": 235847464,
+  "exactFileBytesVerified": true,
+  "handoff": "english.md",
+  "excluded": [
+    {
+      "path": "examiner-reports/english/papers/2021-hl-100-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2021-hl-200-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2021-ol-100-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2021-ol-200-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2022-hl-100-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2022-hl-200-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2022-ol-100-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2022-ol-200-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2023-hl-100-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2023-hl-200-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2023-ol-100-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2023-ol-200-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2024-hl-100-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2024-hl-200-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2024-ol-100-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2024-ol-200-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2025-hl-100-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2025-hl-200-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2025-ol-100-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/english/papers/2025-ol-200-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    }
+  ],
+  "originalCheckpointCommit": "3038fa2fdee7b457cc38c71f2f8711b2ae0bf9d5",
+  "snapshotBase": "4c1accc328f29cd34161d09ce21b8729f7c1c546"
+}
