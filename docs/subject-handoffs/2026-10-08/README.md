@@ -19,6 +19,10 @@ The archive is a preservation checkpoint, not a claim that every subject is fini
 | Agricultural Science | 2012 Higher English committed; 2012 Higher Irish crop/binding integration failed before publishing that batch. | [Agricultural Science](agricultural-science.md) |
 | Construction Studies and shared earlier subject work | 2015 Higher theory complete locally; 2015 Ordinary Q1 validated draft, Q2 next. Large shared worktree also preserves preceding subject work. | [Construction/shared archive](construction-studies.md) |
 
+## Combined integration is saved, not published
+
+The four locally complete subjects were combined and checked after the pause. Browser checks, targeted preservation tests, both typechecks, lint and build passed, but the full suite found unresolved shared-test/topic-mapping issues. Under the approved scope, that candidate remains unpublished. Its exact code, check results and next actions are also preserved on main: **[combined integration handoff](integration-candidate.md)**. Read this before attempting to integrate any of the four subjects.
+
 ## What is saved
 
 `snapshots.json` maps every subject to its original worktree, original HEAD, exact snapshot tree and portable restore commit. The archive includes tracked changes, new implementation files, review ledgers, draft code, original subject-specific source files where locally available, browser harnesses and review evidence. File bytes for every changed path were verified against the source worktree before packaging. Each `SUBJECT.snapshot.json` lists explicitly omitted caches, local credential containers, dependency/corpus symlinks and unrelated documents. No original worktree was reset or cleaned.
@@ -60,7 +64,7 @@ Continue NextStepUni Mark Bank / Topic Atlas work from the saved 8 October 2026 
 
 First read AGENTS.md and docs/subject-handoffs/2026-10-08/README.md, then the chosen subject's handoff and snapshot manifest. Ask me which subject to resume if I have not named one. Do not start all subjects or spawn parallel workers.
 
-Inspect current main/release history before doing any integration: Accounting, Applied Maths, PE and Politics were locally complete at the pause and may already have been integrated since. For unfinished subjects, reuse the original worktree if it is available and has no conflicting newer work; otherwise use scripts/restore-subject-checkpoint.py to restore that subject into a NEW directory. Verify the saved commit/tree and preserve every existing edit.
+Inspect current main/release history before doing any integration: Accounting, Applied Maths, PE and Politics were locally complete at the pause; their combined integration was saved but withheld because full-suite checks failed. Read integration-candidate.md for the exact failures and candidate before continuing, and check whether later work has resolved them. For unfinished subjects, reuse the original worktree if it is available and has no conflicting newer work; otherwise use scripts/restore-subject-checkpoint.py to restore that subject into a NEW directory. Verify the saved commit/tree and preserve every existing edit.
 
 Resume at the exact paper, level, language, question and source page recorded in the handoff. Follow its established review method, generators, ledgers and test/browser commands. Do not repeat finished audits, treat drafts as complete, blindly replay mutation scripts, reset another worktree, or merge an entire historical snapshot onto main. Preserve all card IDs, source material, mark allocations, finite answer routes and canonical topic mappings. Save a small validated checkpoint and update the resume note after each completed paper. Report the next action before continuing.
 ```

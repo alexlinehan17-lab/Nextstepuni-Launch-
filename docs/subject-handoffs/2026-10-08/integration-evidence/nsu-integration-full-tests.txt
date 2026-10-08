@@ -1,0 +1,258 @@
+
+> nextstepuni-app@0.0.0 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/alexlinehan/Documents/Nextstepuni-Subject-Checkpoint-20261008
+
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: Window's scrollTo() method
+Not implemented: navigation to another Document
+Not implemented: navigation to another Document
+Not implemented: navigation to another Document
+ ❯ test/paperTrailAnswers.test.ts (3446 tests | 34 failed) 3745ms
+     × hosted/2010/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 2ms
+     × hosted/2010/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2011/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2011/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2012/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2012/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2013/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2013/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2014/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 1ms
+     × hosted/2014/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2015/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2015/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2016/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2016/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2017/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2017/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2018/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2018/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2019/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2019/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2020/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2020/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2021/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2021/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2022/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2022/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2023/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2023/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2024/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2024/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2025/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2025/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 2ms
+     × hosted/2026/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+     × hosted/2026/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band 0ms
+ ❯ test/studyclixQuestionParity.test.ts (3 tests | 1 failed) 398ms
+     × resolves every matched StudyClix heading to its official NextStepUni paper card and live-course topic 348ms
+held: 2
+held: 2
+held: 3
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+Not implemented: Window's scrollTo() method
+ ❯ test/appliedMathematicsExamTopics.test.ts (7 tests | 2 failed) 30ms
+     × retains the level-aware reference menu and adds verified archived mechanics 6ms
+     × adds all anchored 2023–2026 questions and reports distinct printed totals 5ms
+ ❯ test/vaultTopics.test.ts (11 tests | 1 failed) 68ms
+     × topicsForPaper resolves a real paper and returns null for an unknown one 8ms
+ ❯ test/musicExamTopics.test.ts (21 tests | 1 failed) 31689ms
+     × reproduces all 29 recovered scheme maps and keeps only honest paper-only gaps 31007ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 39 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  test/appliedMathematicsExamTopics.test.ts > Applied Mathematics exam-topic registry > retains the level-aware reference menu and adds verified archived mechanics
+AssertionError: expected [ 'Circular Motion', …(20) ] to deeply equal [ 'Circular Motion', …(19) ]
+
+- Expected
++ Received
+
+@@ -17,6 +17,7 @@
+    "Relative Velocity",
+    "Statics & Centre of Gravity",
+    "Hydrostatics",
+    "Rigid Body Motion & Moments of Inertia",
+    "Simple Harmonic Motion & Hooke's Law",
++   "Dimensional Analysis",
+  ]
+
+ ❯ test/appliedMathematicsExamTopics.test.ts:86:97
+     84|     expect(taxonomy).not.toBeNull();
+     85|     expect(taxonomy.groups.map(group => group.label)).toEqual(['Higher…
+     86|     expect(taxonomy.topics.filter(topic => topic.level === 'higher').m…
+       |                                                                                                 ^
+     87|     expect(taxonomy.topics.filter(topic => topic.level === 'ordinary')…
+     88|     expect(topicsForSubject('applied-mathematics')).toHaveLength(38);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/39]⎯
+
+ FAIL  test/appliedMathematicsExamTopics.test.ts > Applied Mathematics exam-topic registry > adds all anchored 2023–2026 questions and reports distinct printed totals
+AssertionError: expected { questions: 318, topics: 39, …(4) } to match object { questions: 318, topics: 38, …(2) }
+(2 matching properties omitted from actual)
+
+- Expected
++ Received
+
+  {
+    "questions": 318,
+-   "topics": 38,
++   "topics": 39,
+    "yearMax": 2026,
+    "yearMin": 2010,
+  }
+
+ ❯ test/appliedMathematicsExamTopics.test.ts:170:54
+    168|       }
+    169|     }
+    170|     expect(subjectAtlasStats('applied-mathematics')).toMatchObject({
+       |                                                      ^
+    171|       questions: 318,
+    172|       topics: 38,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/39]⎯
+
+ FAIL  test/musicExamTopics.test.ts > Music exam-topic registry > reproduces all 29 recovered scheme maps and keeps only honest paper-only gaps
+Error: Test timed out in 30000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ test/musicExamTopics.test.ts:508:89
+    506|   }, 30_000);
+    507|
+    508|   it.skipIf(!(hasPyMuPDF && hasCompleteMusicPaperCorpus && hasComplete…
+       |                                                                                         ^
+    509|     'reproduces all 29 recovered scheme maps and keeps only honest pap…
+    510|     const check = execFileSync('python3', [
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/39]⎯
+
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2010/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2010/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2011/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2011/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2012/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2012/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2013/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2013/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2014/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2014/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2015/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2015/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2016/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2016/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2017/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2017/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2018/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2018/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2019/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2019/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2020/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2020/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2021/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2021/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2022/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2022/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2023/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2023/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2024/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2024/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2025/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2025/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2026/LC032ALP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+ FAIL  test/paperTrailAnswers.test.ts > Paper Trail answer sidecars — shape > hosted/2026/LC032GLP000EV.pdf.json conforms to PaperAnswerMap and stays in-band
+AssertionError: expected NaN to be greater than 9
+ ❯ test/paperTrailAnswers.test.ts:64:61
+     62|       const nums = map.q.map(q => Number(q.n));
+     63|       // question numbers strictly increasing (monotonic, no dupes)
+     64|       for (let i = 1; i < nums.length; i++) expect(nums[i]).toBeGreate…
+       |                                                             ^
+     65|
+     66|       // PRINT-ORDER gate. paperRegion.ts derives a question's crop by…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/39]⎯
+
+ FAIL  test/studyclixQuestionParity.test.ts > StudyClix official-question parity > resolves every matched StudyClix heading to its official NextStepUni paper card and live-course topic
+AssertionError: 35 failures: {"applied-mathematics":21,"physical-education":14}: expected [ …(35) ] to deeply equal []
+
+- Expected
++ Received
+
+- []
++ [
++   "applied-mathematics|applied-mathematics-higher-differential-equations|2024 - Question 3 - Part A: LC020ALP000EV.pdf Q3 maps to applied-mathematics-higher-integration, applied-mathematics-higher-further-integration-u-substitution-integration-by-parts, applied-mathematics-higher-impacts-collisions",
++   "applied-mathematics|applied-mathematics-higher-differential-equations|2023 - Paper - Section 1 - Question 1 - Part B: LC020ALP000EV.pdf Q1 maps to applied-mathematics-higher-networks-and-graphs, applied-mathematics-higher-integration, applied-mathematics-higher-further-integration-u-substitution-integration-by-parts",
++   "applied-mathematics|applied-mathematics-higher-further-integration-u-substitution-integration-by-parts|2025 - Question 2 - (iii),(iv): LC020ALP000EV.pdf Q2 maps to applied-mathematics-higher-integration, applied-mathematics-higher-differential-equations",
++   "applied-mathematics|applied-mathematics-higher-further-integration-u-substitution-integration-by-parts|2024 - Question 6 - Part B - (i): LC020ALP000EV.pdf Q6 maps to applied-mathematics-higher-difference-equations, applied-mathematics-higher-differential-equations",
++   "applied-mathematics|applied-mathematics-higher-further-integration-u-substitution-integration-by-parts|2024 - Question 4 - (v)-(vi): LC020ALP000EV.pdf Q4 maps to applied-mathematics-higher-circular-motion, applied-mathematics-higher-work-power-energy-momentum, applied-mathematics-higher-newtons-laws-connected-particles, applied-mathematics-higher-differential-equations",
++   "applied-mathematics|applied-mathematics-higher-further-integration-u-substitution-integration-by-parts|2023 - Paper - Section 1 - Question 7 - Part B - (i): LC020ALP000EV.pdf Q7 maps to applied-mathematics-higher-networks-and-graphs, applied-mathematics-higher-differential-equations",
++   "applied-mathematics|applied-mathematics-higher-further-integration-u-substitution-integration-by-parts|2023 - Paper - Section 1 - Question 4 - (i)-(iii): LC020ALP000EV.pdf Q4 maps to applied-mathematics-higher-newtons-laws-connected-particles, applied-mathematics-higher-differential-equations",
++   "applied-mathematics|applied-mathematics-higher-further-integration-u-substitution-integration-by-parts|2010 - Section 1 - Question 10 - Part B - (i): LC020ALP000EV.pdf Q10 maps to applied-mathematics-higher-differential-equations, applied-mathematics-higher-uniform-accelerated-motion",
++   "applied-mathematics|applied-mathematics-higher-hookes-law|2025 - Question 6 - Part B: LC020ALP000EV.pdf Q6 maps to applied-mathematics-higher-optimal-critical-paths, applied-mathematics-higher-work-power-energy-momentum",
++   "applied-mathematics|applied-mathematics-higher-impacts-collisions|2025 - Question 9 - Part B: LC020ALP000EV.pdf Q9 maps to applied-mathematics-higher-uniform-accelerated-motion, applied-mathematics-higher-work-power-energy-momentum",
++   "applied-mathematics|applied-mathematics-higher-networks-and-graphs|2023 - Paper - Section 1 - Question 9 - (i): LC020ALP000EV.pdf Q9 maps to applied-mathematics-higher-optimal-critical-paths",
++   "applied-mathematics|applied-mathematics-higher-networks-and-graphs|2023 - Paper - Section 1 - Question 9 - (ii)-(v): LC020ALP000EV.pdf Q9 maps to applied-mathematics-higher-optimal-critical-paths",
++   "applied-mathematics|applied-mathematics-higher-optimal-critical-paths|2026 - Question 1 - Part A - (ii): LC020ALP000EV.pdf Q1 maps to applied-mathematics-higher-networks-and-graphs, applied-mathematics-higher-difference-equations",
++   "applied-mathematics|applied-mathematics-higher-projectiles|2026 - Question 9 - Part B: LC020ALP000EV.pdf Q9 maps to applied-mathematics-higher-integration, applied-mathematics-higher-further-integration-u-substitution-integration-by-parts, applied-mathematics-higher-vectors",
++   "applied-mathematics|applied-mathematics-higher-uniform-accelerated-motion|2024 - Question 4 - (iv): LC020ALP000EV.pdf Q4 maps to applied-mathematics-higher-circular-motion, applied-mathematics-higher-work-power-energy-momentum, applied-mathematics-higher-newtons-laws-connected-particles, applied-mathematics-higher-differential-equations",
++   "applied-mathematics|applied-mathematics-higher-uniform-accelerated-motion|2023 - Paper - Section 1 - Question 3 - (v): LC020ALP000EV.pdf Q3 maps to applied-mathematics-higher-circular-motion, applied-mathematics-higher-dimensional-analysis, applied-mathematics-higher-projectiles",
++   "applied-mathematics|applied-mathematics-ordinary-networks-graphs|2024 - Question 9: LC020GLP000EV.pdf Q9 maps to applied-mathematics-ordinary-optimal-critical-paths",
++   "applied-mathematics|applied-mathematics-ordinary-networks-graphs|2023 - Paper - Section 1 - Question 10: LC020GLP000EV.pdf Q10 maps to applied-mathematics-ordinary-optimal-critical-paths",
++   "applied-mathematics|applied-mathematics-ordinary-uniform-accelerated-motion|2023 - Paper - Section 1 - Question 9 - Part a: LC020GLP000EV.pdf Q9 maps to applied-mathematics-ordinary-newtons-laws-connected-particles, applied-mathematics-ordinary-mathematical-modelling-project, applied-mathematics-ordinary-work-energy-power-momentum",
++   "applied-mathematics|applied-mathematics-ordinary-vectors|2023 - Paper - Section 1 - Question 2 - Part b: LC020GLP000EV.pdf Q2 maps to applied-mathematics-ordinary-circular-motion, applied-mathematics-ordinary-newtons-laws-connected-particles",
++   "applied-mathematics|applied-mathematics-ordinary-work-energy-power-momentum|2025 - Question 5 - Part B: LC020GLP000EV.pdf Q5 maps to applied-mathematics-ordinary-impacts-collisions, applied-mathematics-ordinary-uniform-accelerated-motion, applied-mathematics-ordinary-mathematical-modelling-project",
++   "physical-education|physical-education-higher-1-learning-and-improving-skill-technique-biomechanics|2025 - Section A - Question 2: LC225ALP000EV.pdf Q2 maps to physical-education-higher-1-learning-and-improving-skill-technique-ability-and-skilled-performance",
++   "physical-education|physical-education-higher-2-psychological-demands-of-performance|2020 - Paper - Section A - Question 4: LC225ALP000EV.pdf Q4 maps to physical-education-higher-1-learning-and-improving-skill-technique-ability-and-skilled-performance",
++   "physical-education|physical-education-higher-7-physical-activity-inclusion|2023 - Paper - Section A - Question 5: LC225ALP000EV.pdf Q5 maps to physical-education-higher-5-promoting-physical-activity",
++   "physical-education|physical-education-higher-business-enterprise-in-physical-activity-sport|2022 - Section A - Question 9: LC225ALP000EV.pdf Q9 maps to physical-education-higher-5-promoting-physical-activity",
++   "physical-education|physical-education-ordinary-1-learning-and-improving-skill-technique|2022 - Section A - Question 10: LC225GLP000EV.pdf Q10 maps to physical-education-ordinary-6-ethics-fair-play",
++   "physical-education|physical-education-ordinary-1-learning-and-improving-skill-technique|2022 - Section A - Question 12: LC225GLP000EV.pdf Q12 maps to physical-education-ordinary-7-physical-activity-inclusion",
++   "physical-education|physical-education-ordinary-1-learning-and-improving-skill-technique|2021 - Section A - Question 5: LC225GLP000EV.pdf Q5 maps to physical-education-ordinary-3-structures-strategies-roles-conventions",
++   "physical-education|physical-education-ordinary-2-physical-psychological-demands-of-performance|2023 - Section A - Question 5: LC225GLP000EV.pdf Q5 maps to physical-education-ordinary-6-ethics-fair-play",
++   "physical-education|physical-education-ordinary-2-physical-psychological-demands-of-performance|2022 - Section A - Question 3: LC225GLP000EV.pdf Q3 maps to physical-education-ordinary-1-learning-and-improving-skill-technique",
++   "physical-education|physical-education-ordinary-4-planning-for-optimum-performance|2023 - Section A - Question 3: LC225GLP000EV.pdf Q3 maps to physical-education-ordinary-3-structures-strategies-roles-conventions",
++   "physical-education|physical-education-ordinary-4-planning-for-optimum-performance|2021 - Section A - Question 6: LC225GLP000EV.pdf Q6 maps to physical-education-ordinary-3-structures-strategies-roles-conventions",
++   "physical-education|physical-education-ordinary-5-promoting-physical-activity|2022 - Section A - Question 1: LC225GLP000EV.pdf Q1 maps to physical-education-ordinary-3-structures-strategies-roles-conventions",
++   "physical-education|physical-education-ordinary-7-physical-activity-inclusion|2021 - Section A - Question 4: LC225GLP000EV.pdf Q4 maps to physical-education-ordinary-5-promoting-physical-activity",
++   "physical-education|physical-education-ordinary-business-enterprise-in-physical-activity-sport|2022 - Section A - Question 4: LC225GLP000EV.pdf Q4 maps to physical-education-ordinary-2-physical-psychological-demands-of-performance",
++ ]
+
+ ❯ test/studyclixQuestionParity.test.ts:181:101
+    179|         .map(subjectId => [subjectId, failures.filter(failure => failu…
+    180|     );
+    181|     expect(failures.slice(0, 100), `${failures.length} failures: ${JSO…
+       |                                                                                                     ^
+    182|   });
+    183|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/39]⎯
+
+ FAIL  test/vaultTopics.test.ts > Topic Vault feed primitives > topicsForPaper resolves a real paper and returns null for an unknown one
+AssertionError: expected 51 to be 9 // Object.is equality
+
+- Expected
++ Received
+
+- 9
++ 51
+
+ ❯ test/vaultTopics.test.ts:121:27
+    119|     const got = topicsForPaper(sampleTag.subjectId, sampleTag.year, sa…
+    120|     expect(got).not.toBeNull();
+    121|     expect(got!.q.length).toBe(sampleTag.q.length);
+       |                           ^
+    122|     expect(topicsForPaper('nope', 1900, 'higher', 'ev', 'nope.pdf')).t…
+    123|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/39]⎯
+
+
+ Test Files  5 failed | 304 passed (309)
+      Tests  39 failed | 6385 passed (6424)
+   Start at  10:06:30
+   Duration  62.87s (transform 28.00s, setup 12.50s, import 144.38s, tests 194.70s, environment 120.88s)
+
