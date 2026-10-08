@@ -34,10 +34,10 @@ export const submitAnonymousFeedback = onCall(
 
     const data = (request.data || {}) as FeedbackRequest;
     const validation = validateFeedbackRequest(data);
-    if (!validation.ok && validation.reason === "category") {
+    if (validation.ok === false && validation.reason === "category") {
       throw new HttpsError("invalid-argument", "Choose a feedback category.");
     }
-    if (!validation.ok && validation.reason === "message") {
+    if (validation.ok === false && validation.reason === "message") {
       throw new HttpsError("invalid-argument", "Feedback must be between 10 and 2,000 characters.");
     }
     if (!validation.ok) {

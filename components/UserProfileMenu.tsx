@@ -333,7 +333,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                     </button>
                     <button onClick={() => { onClose(); onOpenFeedback(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
                       <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><MessageSquare size={16} className="text-zinc-500" /></div>
-                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">Help us improve</span>
+                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">Give feedback</span>
                     </button>
                   </div>
                 </section>
