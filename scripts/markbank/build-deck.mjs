@@ -21,6 +21,7 @@
 
 import { readFileSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -808,6 +809,20 @@ if (!SUBJECT) {
   process.exit(1);
 }
 
+// PE now uses the complete, visually reviewed task inventories. Rebuilding
+// historical authored input must never restore incomplete point-card content.
+if (SUBJECT_ID === 'physical-education') {
+  execFileSync('python3', [resolve(ROOT, 'scripts/markbank/authoring/pe_complete.py'), '--write'],
+    { cwd: ROOT, stdio: 'inherit' });
+  const reviewed = JSON.parse(readFileSync(resolve(ROOT,
+    'components/MarkBank/cards/physical-education/reviewed.json'), 'utf8')).cards;
+  const ids = new Set(reviewed.map(card => card.id));
+  if (rawCards.some(card => !ids.has(card.id))) {
+    throw new Error('PE input contains an unreviewed card; update the paper/scheme task inventory first.');
+  }
+  process.exit(0);
+}
+
 /**
  * Reviewed repairs that must survive regeneration of the authored JSON.
  *
@@ -1478,6 +1493,7 @@ const moduleFor = (level, cards) => `/**
  */
 
 import type { SecCard } from '../../../../types/markBank';
+
 ${cards.length ? `
 const base = {
   source: 'sec' as const,
@@ -1489,6 +1505,7 @@ const base = {
 export const CARDS: SecCard[] = [
 ${cards.join('\n')}
 ];
+
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of

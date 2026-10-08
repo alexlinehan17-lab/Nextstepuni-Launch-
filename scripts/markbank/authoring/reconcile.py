@@ -122,6 +122,12 @@ def shipped_cards(subject):
     "g-parent1") and paired each with the next card's citation, which
     invented five hundred phantom orphans in Business alone.
     """
+    if subject == 'physical-education':
+        # Same manifest as the runtime level modules; old identities are also
+        # pinned independently by the generator and preservation regression.
+        reviewed_path = os.path.join(DECKS, subject, 'reviewed.json')
+        cards = json.load(open(reviewed_path, encoding='utf-8'))['cards']
+        return [(card['id'], card['questionRef']) for card in cards]
     if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society'):
         # Paper-specific facts live in a reviewed generated manifest and are
         # converted to runtime cards by factory.ts; the tiny level exports do
@@ -604,6 +610,9 @@ def content_hash(subject):
         # materially change a runtime card even when the tiny exports do not.
         for name in ('factory.ts', 'authored.json'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject == 'physical-education':
+        for name in ('factory.ts', 'reviewed.json'):
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 
 
@@ -630,7 +639,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]

@@ -193,7 +193,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
       const cur = byQ.get(key);
       if (!cur || (cur.lang !== langPref && q.lang === langPref)) byQ.set(key, q);
     }
-    return [...byQ.values()].sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || Number(a.n) - Number(b.n));
+    return [...byQ.values()].sort((a, b) => b.year - a.year || a.level.localeCompare(b.level) || a.n.localeCompare(b.n, undefined, { numeric: true }));
   }, [allEditions, langPref]);
 
   if (subjectId === 'politics-and-society' && subtopicId && politicsView === 'tasks') {

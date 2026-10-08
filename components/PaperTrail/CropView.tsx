@@ -26,7 +26,9 @@ const CropView: React.FC<{
   ariaLabel?: (page: number) => string;
   /** Shown when rendering fails. */
   failText?: string;
-}> = ({ pdf, region, ariaLabel, failText }) => {
+  /** Additional clockwise rotation. Source readers use this for full pages. */
+  rotation?: 0 | 90 | 180 | 270;
+}> = ({ pdf, region, ariaLabel, failText, rotation = 0 }) => {
   const hostRef = useRef<HTMLDivElement | null>(null);
   const [failed, setFailed] = useState(false);
 
@@ -48,7 +50,8 @@ const CropView: React.FC<{
             page.cleanup();
             return;
           }
-          const base = page.getViewport({ scale: 1 });
+          const pageRotation = ((page.rotate ?? 0) + rotation) % 360;
+          const base = page.getViewport({ scale: 1, rotation: pageRotation });
           const r = seg.r ?? [0, 0, 1, 1];
           const clipW = (r[2] - r[0]) * base.width;
           const clipH = (r[3] - r[1]) * base.height;
@@ -59,7 +62,7 @@ const CropView: React.FC<{
           let scale = (cssWidth / clipW) * dpr;
           const pixels = clipW * scale * (clipH * scale);
           if (pixels > MAX_CANVAS_PIXELS) scale *= Math.sqrt(MAX_CANVAS_PIXELS / pixels);
-          const vp = page.getViewport({ scale });
+          const vp = page.getViewport({ scale, rotation: pageRotation });
           const canvas = document.createElement('canvas');
           canvas.width = Math.floor(clipW * scale);
           canvas.height = Math.floor(clipH * scale);
@@ -93,7 +96,7 @@ const CropView: React.FC<{
       cancelled = true;
       task?.cancel();
     };
-  }, [pdf, region, ariaLabel]);
+  }, [pdf, region, ariaLabel, rotation]);
 
   return (
     <div>

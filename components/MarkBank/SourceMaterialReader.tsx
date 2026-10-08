@@ -65,8 +65,10 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   source, subjectId, year, paperFileid, documentKind = 'paper',
 }) => {
   const isIllustration = source.kind === 'source-illustration';
-  const materialLabel = documentKind === 'scheme' ? 'marking scheme'
+  const isScheme = documentKind === 'scheme' || source.kind === 'marking-scheme';
+  const materialLabel = isScheme ? 'marking scheme'
     : source.kind === 'source-data' ? 'source material'
+    : source.kind === 'exam-material' ? 'exam material'
     : isIllustration ? 'illustration sheet' : 'source text';
   const [open, setOpen] = useState(false);
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
@@ -80,8 +82,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const swipeStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
 
   const url = useMemo(() => paperUrl(paperStoragePath(
-    'lc', subjectId, year, documentKind, withPdfExtension(paperFileid),
-  )), [paperFileid, subjectId, year, documentKind]);
+    'lc', subjectId, year, isScheme ? 'scheme' : 'paper', withPdfExtension(paperFileid),
+  )), [paperFileid, subjectId, year, isScheme]);
   const regions = useMemo(
     () => source.pages.map(page => [{ p: page }]),
     [source.pages],
@@ -294,6 +296,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
                       key={`${page}-${zoom}`}
                       pdf={pdf}
                       region={regions[index]}
+                      rotation={source.pageRotations?.[page] ?? 0}
                       ariaLabel={pageAriaLabel}
                       failText="This printed page could not be rendered. Open the original paper below."
                     />
@@ -324,7 +327,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
             <strong>{source.attribution}</strong>
             <span>{source.presentationNote}</span>
             <a href={`${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
-              Open the original {documentKind === 'scheme' ? 'marking scheme' : isIllustration ? 'illustration sheet' : 'paper'}
+              Open the original {isScheme ? 'marking scheme' : isIllustration ? 'illustration sheet' : 'paper'}
             </a>
           </div>
           <div className="mb-source-reader-navigation">
@@ -363,10 +366,10 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       <button type="button" ref={triggerRef} className="mb-source-material-trigger" onClick={show}>
         <span className="mb-source-material-icon"><PageStackIcon /></span>
         <span className="mb-source-material-copy">
-          <span>Read {source.label}</span>
+          <span>{isScheme || source.kind === 'exam-material' ? 'Open' : 'Read'} {source.label}</span>
           <strong>{source.title}</strong>
           <small>
-            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {documentKind === 'scheme' ? 'official marking guidance' : source.kind === 'source-data' ? 'original documents and graphics' : isIllustration ? 'official examination imagery' : 'exact examination text'}
+            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {isScheme ? 'official marking guidance' : source.kind === 'source-data' ? 'original documents and graphics' : source.kind === 'exam-material' ? 'original examination material' : isIllustration ? 'official examination imagery' : 'exact examination text'}
           </small>
         </span>
         <span className="mb-source-material-open" aria-hidden="true">

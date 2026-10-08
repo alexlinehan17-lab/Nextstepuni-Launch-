@@ -35,6 +35,8 @@ import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geogra
 
 import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
 import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
+import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
+import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
@@ -56,6 +58,10 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
   }
   if (subject === 'geography') {
     return [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'physical-education') {
+    return [...PE_HIGHER, ...PE_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
   }
   const out: { id: string; ref: string }[] = [];
@@ -148,7 +154,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography' || subject === 'politics-and-society') identities.sort();
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -201,6 +207,12 @@ describe('Mark Bank paper-coverage ratchet', () => {
     if (subject === 'english' || subject === 'irish' || subject === 'art'
       || subject === 'geography' || subject === 'politics-and-society') {
       for (const name of ['factory.ts', 'authored.json']) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
+    }
+    if (subject === 'physical-education') {
+      for (const name of ['factory.ts', 'reviewed.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }

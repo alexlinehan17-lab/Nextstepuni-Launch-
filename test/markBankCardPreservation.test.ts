@@ -749,10 +749,12 @@ const decks = [
    * components are cards dcg-2022-hl-c5-3 .. -7. Nothing removed. */
   ['dcg:higher', DCG_HIGHER, 307, '0f693f13e6222711fc241d1d1c8c0e00d3dfd765530de8243d5117da0a1729fc'],
   ['dcg:ordinary', DCG_ORDINARY, 238, 'd0398830a5866de46dfbe76ed96ac0f924ee1764f6dad6728bc7260ae8e3e61a'],
-  /* Physical Education, carded from the written paper only: the project and
-   * the performance assessment are marked from work no paper prints. */
-  ['physical-education:higher', PE_HIGHER, 125, '2b937885f9ae0c9d7c2952d43c0c2cb44275bd31414d813dee6c98d20bb8525e'],
-  ['physical-education:ordinary', PE_ORDINARY, 96, '9f4fab469becb01ab3ce73e4b6301a270e68ea5310bd0225322b0cb65a1ca23f'],
+  /* Physical Education: all 13 paper/scheme pairs visually swept, separately
+   * marked tasks and every finite printed route reviewed. 741/741 raw asks
+   * reconciled with no exclusions, open asks or orphans. All 221 prior IDs
+   * retained; 652 added. Coursework remains outside the written-paper deck. */
+  ['physical-education:higher', PE_HIGHER, 443, '016e4e0fc8439483aa514e706583844defa97c381582bef2dd8f3534e6020d3c'],
+  ['physical-education:ordinary', PE_ORDINARY, 430, 'cc2cb42a83954fb54a963940544e041110c5a31dbe0cce4c4aff89877632ac21'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -775,10 +777,9 @@ describe('Mark Bank card preservation', () => {
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
     // Politics adds 1,086 tasks; all previous subjects retain their IDs.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(20_414);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(21_066);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
-    // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
-    // its written paper: 18,345 + 232.
+    // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
     // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
     // 16,087 + 306 + 20 + 15.

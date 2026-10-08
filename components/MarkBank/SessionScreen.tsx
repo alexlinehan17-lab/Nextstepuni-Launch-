@@ -69,6 +69,8 @@ import WaysInPanel, {
 } from './WaysInPanel';
 import SourceMaterialReader from './SourceMaterialReader';
 import PoliticsRubricPanel, { politicsMarks, type PoliticsScoreId } from './PoliticsRubricPanel';
+import PhysicalEducationRubricPanel from './PhysicalEducationRubricPanel';
+import { physicalEducationMarks, type PhysicalEducationScoreId } from './physicalEducationScoring';
 import AudioSourcePlayer from './AudioSourcePlayer';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 
@@ -290,7 +292,7 @@ export type PclmScores = Partial<Record<PclmScoreId, number>>;
 export type IrishScoreId = `irish:${string}`;
 export type ArtScoreId = `art:${string}`;
 export type GeographyScoreId = `geography:${string}`;
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -409,6 +411,7 @@ export function geographyMarks(card: SecRubricCard, scores: RubricScores): numbe
 }
 
 export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
+  if (card.rubric.system === 'physical-education') return physicalEducationMarks(card, scores);
   if (card.rubric.system === 'irish') return irishMarks(card, scores);
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
@@ -1621,6 +1624,11 @@ const RubricPanel: React.FC<{
       rubric: Extract<SecRubricCard['rubric'], { system: 'politics' }>;
     }} />;
   }
+  if (props.card.rubric.system === 'physical-education') {
+    return <PhysicalEducationRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'physical-education' }>;
+    }} />;
+  }
   if (props.card.rubric.system === 'irish') {
     return <IrishRubricPanel {...props} card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'irish' }>;
@@ -2347,7 +2355,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     ? assessmentCard.rubric.system === 'pclm' ? 'PCLM'
       : assessmentCard.rubric.system === 'irish' ? 'Irish rubric'
       : assessmentCard.rubric.system === 'politics' ? 'Politics and Society'
-      : assessmentCard.rubric.system === 'art' ? 'Art descriptor' : 'Geography allocation'
+      : assessmentCard.rubric.system === 'art' ? 'Art descriptor'
+      : assessmentCard.rubric.system === 'physical-education' ? 'Physical Education criteria' : 'Geography allocation'
     : 'rubric';
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
 

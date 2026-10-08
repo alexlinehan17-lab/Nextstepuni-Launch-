@@ -12,7 +12,7 @@
  * We never show a crop we can't stand over.
  */
 
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { BookOpenCheck, Check, ChevronDown, ExternalLink, Plus, Scale } from 'lucide-react';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import { type PaperAnswerMap, type PaperAnswerQuestion } from '../../types/paperTrail';
@@ -27,6 +27,8 @@ import {
 } from './vaultResolve';
 import { type TopicSibling } from './topics';
 import { lensFor } from '../../data/markingLens';
+import { physicalEducationTask } from './physicalEducationTasks';
+const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard'));
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
@@ -115,7 +117,7 @@ interface Props {
   onOpenInPaper: () => void;
 }
 
-const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper }) => {
+const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, onOpenInPaper }) => {
   const [visible, setVisible] = useState(false);
   const [state, setState] = useState<CardState>({ s: 'idle' });
   const [lensOpen, setLensOpen] = useState(false);
@@ -357,4 +359,11 @@ const VaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleReview, on
   );
 };
 
+const VaultQuestionCard: React.FC<Props> = props => {
+  const task = physicalEducationTask(props.sibling);
+  if (task) return <Suspense fallback={<p role="status">Loading question…</p>}>
+    <PhysicalEducationTaskCard key={task.cardId} task={task} saved={props.saved} onToggleReview={props.onToggleReview} onOpenInPaper={props.onOpenInPaper} />
+  </Suspense>;
+  return <LegacyVaultQuestionCard {...props} />;
+};
 export default VaultQuestionCard;

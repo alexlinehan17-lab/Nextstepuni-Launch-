@@ -207,13 +207,16 @@ export interface CardFigure {
  * passage, no fabricated facsimile, and no second copy bundled into the app.
  */
 export interface CardSourceMaterial {
-  kind: 'source-text' | 'source-illustration' | 'source-data';
+  kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
   title: string;
   /** One-based PDF pages, in reading order. */
   pages: number[];
+  /** Additional clockwise rotation for sideways material printed inside a
+   * portrait page. Applied to the PDF viewport, preserving the source bytes. */
+  pageRotations?: Record<number, 90 | 180 | 270>;
   /**
    * A separate official SEC document when the required material is not inside
    * the question paper itself. Art publishes its illustrations as a companion
@@ -640,7 +643,24 @@ export interface PoliticsRubric {
   schemeFileid: string;
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric;
+/** PE mixes exact allocations, descending tariffs and quality bands. The
+ * original scheme remains available after reveal, including answer diagrams
+ * and tick tables which must not be flattened into a guessed text answer. */
+export interface PhysicalEducationRubric {
+  system: 'physical-education';
+  taskRequirements: string[];
+  criteria: Array<{
+    id: string;
+    label: string;
+    maxMarks: number;
+    permittedMarks: number[];
+    guidance: string[];
+  }>;
+  schemeMaterial: CardSourceMaterial & { kind: 'marking-scheme' };
+  markingGuideNote: string;
+}
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -909,8 +929,8 @@ export function tariffReconciles(card: SecCard): boolean {
               .every((mark, index) => mark === [...permitted].sort((a, b) => a - b)[index]);
         });
     }
-    if (card.rubric.system === 'geography') {
-      const { criteria } = card.rubric;
+    if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {
+      const criteria: PhysicalEducationRubric['criteria'] = card.rubric.criteria;
       return criteria.length > 0
         && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
         && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
@@ -918,6 +938,7 @@ export function tariffReconciles(card: SecCard): boolean {
           criterion.permittedMarks.length > 0
           && Math.min(...criterion.permittedMarks) === 0
           && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+          && criterion.permittedMarks.every(mark => Number.isInteger(mark) && mark >= 0 && mark <= criterion.maxMarks)
           && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
     }
     const { assessment } = card.rubric;

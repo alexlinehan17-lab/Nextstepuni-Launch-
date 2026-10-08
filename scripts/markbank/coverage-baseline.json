@@ -585,19 +585,19 @@
     "refsHash": "98497719950dbd78"
   },
   "physical-education": {
-    "cards": 221,
-    "contentHash": "e1951977580449f7",
-    "coveragePct": 95.1,
-    "covered": 225,
-    "excluded": 480,
+    "cards": 873,
+    "contentHash": "7defea753069bc7a",
+    "coveragePct": 100.0,
+    "covered": 741,
+    "excluded": 0,
     "leaves": 741,
-    "open": 36,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 13,
       "hash": "0dbddd431bb256fe"
     },
-    "refsHash": "36d438b2d44d6126"
+    "refsHash": "7282e24c7bbdb8ca"
   },
   "physics": {
     "cards": 1133,
