@@ -1,0 +1,17 @@
+{
+  "subject": "french",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-French-Bank-Atlas-20261007",
+  "branch": "codex/french-complete-bank-atlas-20261007",
+  "sourceHead": "fdc123c3b829b9437f4e4982a514086afb8e0776",
+  "snapshotCommit": "42291f6b95a036ce7527c18a069b0ec103822d54",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/french",
+  "snapshotTree": "690101d4b263610b8d24028fc888a2ff165285b0",
+  "changedPaths": 2242,
+  "capturedLocalFiles": 2268,
+  "capturedLocalBytes": 1192576109,
+  "exactFileBytesVerified": true,
+  "handoff": "french.md",
+  "excluded": [],
+  "originalCheckpointCommit": "71445392ca24efaf04c63d0e1f1048894166e0c6",
+  "snapshotBase": "4b4e4d9a868778e07a89ae970ff5cd7cb6276442"
+}

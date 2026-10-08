@@ -1,0 +1,210 @@
+{
+  "subject": "business",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Business-Completion-20261007",
+  "branch": "codex/business-corpus-completion-20261007",
+  "sourceHead": "8deb273f1b13341dcfa85204f7e4d784b638b21f",
+  "snapshotCommit": "8bbd1be7533d0979fad294321d5047207292b1b1",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/business",
+  "snapshotTree": "98ee4a719cc2616dd4c98bf665c988ee388047d7",
+  "changedPaths": 1676,
+  "capturedLocalFiles": 1690,
+  "capturedLocalBytes": 121936524,
+  "exactFileBytesVerified": true,
+  "handoff": "business.md",
+  "excluded": [
+    {
+      "path": "examiner-reports/business/papers/2010-hl-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2010-ol-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2011-hl-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2011-ol-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2012-hl-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2012-ol-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2013-hl-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2013-ol-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2014-hl-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2014-ol-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2015-hl-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2015-ol-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2016-hl-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2016-ol-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2017-hl-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2017-ol-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2018-hl-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2018-ol-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2019-hl-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2019-ol-000-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2020-hl-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2020-hl-041-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2020-ol-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2020-ol-033-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2021-hl-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2021-hl-041-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2021-ol-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2021-ol-033-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2022-hl-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2022-hl-041-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2022-ol-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2022-ol-033-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2023-hl-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2023-hl-041-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2023-ol-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2023-ol-033-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2024-hl-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2024-hl-041-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2024-ol-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2024-ol-033-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2025-hl-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2025-hl-041-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2025-ol-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2025-ol-033-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2026-hl-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2026-hl-041-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2026-ol-032-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    },
+    {
+      "path": "examiner-reports/business/papers/2026-ol-033-paper.pdf",
+      "reason": "local symlink/directory; install dependencies or fetch corpus on restore"
+    }
+  ],
+  "originalCheckpointCommit": "d813e46077beeacfcf130da408a73b086dd7727c",
+  "snapshotBase": "4c1accc328f29cd34161d09ce21b8729f7c1c546"
+}

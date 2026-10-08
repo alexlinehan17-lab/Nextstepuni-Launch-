@@ -1,0 +1,50 @@
+{
+  "subject": "construction-studies",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Filled-Dark-Artwork-20260926",
+  "branch": "codex/filled-dark-artwork-20260926",
+  "sourceHead": "90efd9fcb9ee5da180e5bbbe8ebc7f0e3c6ff80f",
+  "snapshotCommit": "931e3daed2d658ed12806cb767f04131ff3e46c6",
+  "snapshotRef": "refs/checkpoints/portable-subjects-20261008/construction-studies",
+  "snapshotTree": "12fe0f63199b2ee3e1ac38003bed642d315bc243",
+  "changedPaths": 12071,
+  "capturedLocalFiles": 11946,
+  "capturedLocalBytes": 9438345680,
+  "exactFileBytesVerified": true,
+  "handoff": "construction-studies.md",
+  "excluded": [
+    {
+      "path": "docs/approved-kobra-live-release-2026-09-27.md",
+      "reason": "unrelated document, outside subject checkpoint"
+    },
+    {
+      "path": "docs/approved-launchpad-learning-rollout-2026-09-27.md",
+      "reason": "unrelated document, outside subject checkpoint"
+    },
+    {
+      "path": "docs/approved-progress-rollout-2026-09-27.md",
+      "reason": "unrelated document, outside subject checkpoint"
+    },
+    {
+      "path": "docs/approved-study-rollout-2026-09-27.md",
+      "reason": "unrelated document, outside subject checkpoint"
+    },
+    {
+      "path": "docs/kobra-implementation-audit-2026-09-27.md",
+      "reason": "unrelated document, outside subject checkpoint"
+    },
+    {
+      "path": "docs/session-release-2026-09-28.md",
+      "reason": "unrelated document, outside subject checkpoint"
+    },
+    {
+      "path": "tmp/pdfs/2026-cl-003-paper.png",
+      "reason": "unrelated temporary file"
+    },
+    {
+      "path": "tmp/pdfs/2026-cl-C00-paper.png",
+      "reason": "unrelated temporary file"
+    }
+  ],
+  "originalCheckpointCommit": "45dd664b41a86a1ef885b9dfff31498426b46312",
+  "snapshotBase": "b065c7fdabdec04caa80949bbd4ba2b9a44f0f66"
+}
