@@ -32,6 +32,8 @@ import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
+import { CARDS as APPLIED_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
+import { CARDS as APPLIED_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 
 import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
 import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
@@ -41,6 +43,10 @@ import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-educ
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
+  if (subject === 'applied-maths') {
+    return [...APPLIED_HIGHER, ...APPLIED_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
   if (subject === 'english') {
     return [...ENGLISH_HIGHER, ...ENGLISH_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
@@ -154,7 +160,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education') identities.sort();
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -211,8 +217,8 @@ describe('Mark Bank paper-coverage ratchet', () => {
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }
     }
-    if (subject === 'physical-education') {
-      for (const name of ['factory.ts', 'reviewed.json']) {
+    if (subject === 'physical-education' || subject === 'applied-maths') {
+      for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json'] : ['reviewed.ts', 'reviewed.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }

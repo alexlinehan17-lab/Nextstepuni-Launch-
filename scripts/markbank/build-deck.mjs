@@ -1493,7 +1493,7 @@ const moduleFor = (level, cards) => `/**
  */
 
 import type { SecCard } from '../../../../types/markBank';
-
+${SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';" : ''}
 ${cards.length ? `
 const base = {
   source: 'sec' as const,
@@ -1502,10 +1502,9 @@ const base = {
   qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
 ` : ''}
-export const CARDS: SecCard[] = [
+export const CARDS: SecCard[] = ${SUBJECT_ID === 'applied-maths' ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-];
-
+]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -1519,7 +1518,10 @@ for (const level of LEVELS) {
   const path = resolve(OUT_DIR, `${level}.ts`);
   if (!levelCards.length && !existsSync(path)) continue;
   writeFileSync(path, moduleFor(level, levelCards));
-  sizes[level] = levelCards.length;
+  const reviewedIds = SUBJECT_ID === 'applied-maths'
+    ? JSON.parse(readFileSync(resolve(OUT_DIR, 'reviewed.json'), 'utf8')).filter(card => card.level === level).map(card => card.id) : [];
+  const originalIds = levelCards.map(code => code.match(/^    id: "([^"]+)"/m)?.[1]).filter(Boolean);
+  sizes[level] = SUBJECT_ID === 'applied-maths' ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length;
   process.stderr.write(`  ${level}: ${levelCards.length} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
 }
 

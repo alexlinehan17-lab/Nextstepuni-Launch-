@@ -1,0 +1,1656 @@
+{
+  "subjectId": "applied-mathematics",
+  "year": 2026,
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Every page of the indexed Irish paper and scheme visually swept; wording, diagrams and published task boundaries compared with the English review. Translated editions link to the existing canonical practice tasks and retain their own verified source regions.",
+  "papers": [
+    {
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC020ALP000IV.pdf",
+      "schemeFileid": "LC020ALP000IV.pdf",
+      "schemeLang": "iv",
+      "paperSha256": "9a69bb61cec50569a6b78eb290015cef8439164f46fd98df485902ac7b6fd534",
+      "schemeSha256": "97c87ab8ac92717cb2719b6f52bb7b2583702802bebabbdad95fc4c7760147ca",
+      "canonicalReviewSha256": "db4f189912b238e3c62c99a1240a2ad24eca7725ad01537841a8cd47b9f4e59f",
+      "paperPagesReviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "schemePagesReviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "practiceTaskCount": 45,
+      "distinctAdditionalTasks": [],
+      "reviewNotes": [
+        "All 44 paper pages and all 22 native scheme pages visually swept. Paper pages 13, 23, 25 and 29 contain only continuation working grids; pages 41–43 additional work and page 44 the back cover. Scheme solutions occupy PDF pages 6–17, general modelling-project rubrics pages 18–20, blank page 21 and back cover 22.",
+        "All 45 canonical tasks and tariffs match. Q1(b)(i) keeps both recurrence values under one 5-mark response. Q3(i) keeps both force diagrams under one shared 5-mark response. Q4(i) keeps both direct-collision velocities under one 15-mark response, and Q4(iii) keeps both oblique-collision speeds under one shared 20-mark response. Q10(i) keeps earliest/latest event times in one holistic 20-mark task. Choice of a suitable spanning-tree algorithm and a cascade or equivalent bar chart are alternative methods for the same outputs. No additional distinct translated task or finite optional answer pool."
+      ],
+      "selectionDirectives": [
+        {
+          "page": 2,
+          "text": "Freagair ocht gceist ar bith.",
+          "classification": "exam-choice",
+          "reason": "The eight-question examination choice does not remove any printed task from practice."
+        },
+        {
+          "page": 2,
+          "text": "Scríobh do chuid freagraí le peann gorm nó le peann dubh. Ní ceadmhach peann luaidhe a úsáid",
+          "classification": "non-task",
+          "reason": "General pen-colour instruction, not a task or answer pool."
+        },
+        {
+          "page": 2,
+          "text": "na freagraí, nó ar na graif, ar na líonraí nó ar na léaráidí eile atá ar fáil. Féadfaidh sé nach",
+          "classification": "non-task",
+          "reason": "General answer-space and scanning instructions, not an answer pool."
+        },
+        {
+          "page": 2,
+          "text": "bhfeicfidh an scrúdaitheoir aon rud a scríobhfaidh tú taobh amuigh de bhoscaí na bhfreagraí.",
+          "classification": "non-task",
+          "reason": "General answer-space and scanning instructions, not an answer pool."
+        },
+        {
+          "page": 2,
+          "text": "theastaíonn an spás sin uait, lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste agus leis",
+          "classification": "non-task",
+          "reason": "General answer-space and scanning instructions, not an answer pool."
+        },
+        {
+          "page": 2,
+          "text": "ceartingearach iad ı⃗ agus ȷ⃗, faoi seach, nó soir agus ó thuaidh, faoi seach, de réir mar is cuí don",
+          "classification": "context",
+          "reason": "Horizontal/vertical or east/north is the vector-axis convention."
+        },
+        {
+          "page": 34,
+          "text": "áit arb é s díláithriú an cháithnín (ina mhéadair) ó P ag am ar bith t (ina shoicindí) agus áit a",
+          "classification": "context",
+          "reason": "Any time t defines displacement from P."
+        },
+        {
+          "page": 36,
+          "text": "Sloinn v⃗, treoluas an réada ag am ar bith t, i dtéarmaí",
+          "classification": "context",
+          "reason": "Any time t defines the projectile velocity."
+        },
+        {
+          "page": 36,
+          "text": "Sloinn r⃗, díláithriú an réada ag am ar bith t, i dtéarmaí ı⃗ agus ȷ⃗.",
+          "classification": "context",
+          "reason": "Any time t defines the projectile displacement."
+        },
+        {
+          "page": 38,
+          "text": "Seasann nóid an líonra d’imeachtaí nó do phoinơ ama le linn an Ɵonscadail. Is é an nód foinseach",
+          "classification": "context",
+          "reason": "Events and time points are equivalent descriptions of network nodes."
+        },
+        {
+          "page": 39,
+          "text": "(iii) Tarraing cairt chascáide nó barrachairt dá leithéid chun sceideal an Ɵonscadail seo a léiriú.",
+          "classification": "alternative-method",
+          "reason": "A cascade chart or equivalent bar chart represents the same required project schedule."
+        },
+        {
+          "page": 40,
+          "text": "(iv) Glac leis nach gcuirtear moill ar bith ar ghníomhaíocht ar bith agus ríomh an líon íosta",
+          "classification": "context",
+          "reason": "No activity is delayed in the given staffing scenario."
+        },
+        {
+          "page": 41,
+          "text": "Lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste agus leis an gcuid den cheist.",
+          "classification": "non-task",
+          "reason": "Additional-work page instruction, not an examination task."
+        },
+        {
+          "page": 42,
+          "text": "Lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste agus leis an gcuid den cheist.",
+          "classification": "non-task",
+          "reason": "Additional-work page instruction, not an examination task."
+        },
+        {
+          "page": 43,
+          "text": "Lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste agus leis an gcuid den cheist.",
+          "classification": "non-task",
+          "reason": "Additional-work page instruction, not an examination task."
+        },
+        {
+          "page": 44,
+          "text": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+          "classification": "non-task",
+          "reason": "Back-cover copyright notice, not an examination task or answer pool."
+        },
+        {
+          "page": 44,
+          "text": "Gaolmhar, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin chun na críche a bhfuil sé beartaithe",
+          "classification": "non-task",
+          "reason": "Back-cover copyright notice, not an examination task or answer pool."
+        },
+        {
+          "page": 44,
+          "text": "chuici. Ní ghlacann an Coimisiún aon dliteanas as sárú ar bith ar chearta tríú páirtí a eascraíonn as dáileadh nó",
+          "classification": "non-task",
+          "reason": "Back-cover copyright notice, not an examination task or answer pool."
+        }
+      ],
+      "questions": [
+        {
+          "n": "1",
+          "canonicalTaskIds": [
+            "am-2026-hl-1-a-i",
+            "am-2026-hl-1-a-ii",
+            "am-2026-hl-1-a-iii",
+            "am-2026-hl-1-b-i",
+            "am-2026-hl-1-b-ii"
+          ],
+          "paperRegion": [
+            {
+              "p": 3,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 4,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 5,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 6,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 6,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            },
+            {
+              "p": 7,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            15,
+            15,
+            5,
+            5,
+            10
+          ]
+        },
+        {
+          "n": "2",
+          "canonicalTaskIds": [
+            "am-2026-hl-2-i",
+            "am-2026-hl-2-ii",
+            "am-2026-hl-2-iii",
+            "am-2026-hl-2-iv",
+            "am-2026-hl-2-v"
+          ],
+          "paperRegion": [
+            {
+              "p": 7,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 8,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 9,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 8,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            10,
+            5,
+            5,
+            20,
+            10
+          ]
+        },
+        {
+          "n": "3",
+          "canonicalTaskIds": [
+            "am-2026-hl-3-i",
+            "am-2026-hl-3-ii",
+            "am-2026-hl-3-iii",
+            "am-2026-hl-3-iv",
+            "am-2026-hl-3-v"
+          ],
+          "paperRegion": [
+            {
+              "p": 10,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 12,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 9,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            5,
+            15,
+            5,
+            10,
+            15
+          ]
+        },
+        {
+          "n": "4",
+          "canonicalTaskIds": [
+            "am-2026-hl-4-i",
+            "am-2026-hl-4-ii",
+            "am-2026-hl-4-iii",
+            "am-2026-hl-4-iv"
+          ],
+          "paperRegion": [
+            {
+              "p": 14,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 15,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 16,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 17,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 10,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            15,
+            10,
+            20,
+            5
+          ]
+        },
+        {
+          "n": "5",
+          "canonicalTaskIds": [
+            "am-2026-hl-5-i",
+            "am-2026-hl-5-ii",
+            "am-2026-hl-5-iii",
+            "am-2026-hl-5-iv",
+            "am-2026-hl-5-v"
+          ],
+          "paperRegion": [
+            {
+              "p": 18,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 19,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 20,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 21,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 11,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            5,
+            15,
+            10,
+            10,
+            10
+          ]
+        },
+        {
+          "n": "6",
+          "canonicalTaskIds": [
+            "am-2026-hl-6-a",
+            "am-2026-hl-6-b"
+          ],
+          "paperRegion": [
+            {
+              "p": 22,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 24,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 12,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            30,
+            20
+          ]
+        },
+        {
+          "n": "7",
+          "canonicalTaskIds": [
+            "am-2026-hl-7-i",
+            "am-2026-hl-7-ii",
+            "am-2026-hl-7-iii",
+            "am-2026-hl-7-iv"
+          ],
+          "paperRegion": [
+            {
+              "p": 26,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 27,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 28,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 13,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            5,
+            10,
+            10,
+            25
+          ]
+        },
+        {
+          "n": "8",
+          "canonicalTaskIds": [
+            "am-2026-hl-8-a-i",
+            "am-2026-hl-8-a-ii",
+            "am-2026-hl-8-a-iii",
+            "am-2026-hl-8-b-i",
+            "am-2026-hl-8-b-ii"
+          ],
+          "paperRegion": [
+            {
+              "p": 30,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 31,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 32,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 33,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 14,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            5,
+            10,
+            5,
+            25,
+            5
+          ]
+        },
+        {
+          "n": "9",
+          "canonicalTaskIds": [
+            "am-2026-hl-9-a-i",
+            "am-2026-hl-9-a-ii",
+            "am-2026-hl-9-b-i",
+            "am-2026-hl-9-b-ii",
+            "am-2026-hl-9-b-iii"
+          ],
+          "paperRegion": [
+            {
+              "p": 34,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 35,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 36,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 37,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 15,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            25,
+            5,
+            5,
+            5,
+            10
+          ]
+        },
+        {
+          "n": "10",
+          "canonicalTaskIds": [
+            "am-2026-hl-10-i",
+            "am-2026-hl-10-ii",
+            "am-2026-hl-10-iii",
+            "am-2026-hl-10-iv",
+            "am-2026-hl-10-v"
+          ],
+          "paperRegion": [
+            {
+              "p": 38,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 39,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 40,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 16,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            },
+            {
+              "p": 17,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            20,
+            5,
+            15,
+            5,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC020GLP000IV.pdf",
+      "schemeFileid": "LC020GLP000IV.pdf",
+      "schemeLang": "iv",
+      "paperSha256": "6c0f7a9fd863ba4ad3e195db4ce4354d2aa8b2de436418d21ec3950a778b064a",
+      "schemeSha256": "0672ed981b7fc5d5b0d7d7f7578b83e8d8ec2ebbdcb664e3dc9d18183f965c7a",
+      "canonicalReviewSha256": "db4f189912b238e3c62c99a1240a2ad24eca7725ad01537841a8cd47b9f4e59f",
+      "paperPagesReviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "schemePagesReviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "practiceTaskCount": 58,
+      "distinctAdditionalTasks": [],
+      "reviewNotes": [
+        "All 40 paper pages and all 21 native scheme pages visually swept. Paper tasks occupy pages 3–36; pages 37–39 are additional work and page 40 the back cover. Scheme solutions occupy PDF pages 6–16, general modelling-project rubrics pages 17–19, blank page 20 and back cover 21.",
+        "All 58 canonical tasks and tariffs match. Q3(i) has three force diagrams at 5 each; Q3(iii) has two tensions at 5 each. Q8(i) has separately marked mouse-population values M1 and M2 at 5 each. Q1(b)(i) retains both collision speeds under one shared 15-mark response. Q2(iv) keeps both float times under one 5-mark response. Q10(a) keeps the complete Bellman optimisation under one holistic 35-mark scale; the named providers are network states, not optional examination tasks. No additional distinct translated task or finite optional answer pool."
+      ],
+      "selectionDirectives": [
+        {
+          "page": 2,
+          "text": "Freagair ocht gceist ar bith.",
+          "classification": "exam-choice",
+          "reason": "The eight-question examination choice does not remove any printed task from practice."
+        },
+        {
+          "page": 2,
+          "text": "Scríobh do chuid freagraí le peann gorm nó le peann dubh. Níl cead peann luaidhe a úsáid ach",
+          "classification": "non-task",
+          "reason": "General pen-colour instruction, not a task or answer pool."
+        },
+        {
+          "page": 2,
+          "text": "láthair an scrúdaitheora. Ba chóir do chuid oibre go léir a chur sna háiteanna do na freagraí, nó ar",
+          "classification": "non-task",
+          "reason": "General answer-space and scanning instructions, not an answer pool."
+        },
+        {
+          "page": 2,
+          "text": "na graif, ar na líonraí nó ar na léaráidí eile atá ar fáil. Féadfaidh sé nach bhfeicfidh an scrúdaitheoir",
+          "classification": "non-task",
+          "reason": "General answer-space and scanning instructions, not an answer pool."
+        },
+        {
+          "page": 2,
+          "text": "aon rud a scríobhfaidh tú taobh amuigh de bhoscaí na bhfreagraí.",
+          "classification": "non-task",
+          "reason": "General answer-space and scanning instructions, not an answer pool."
+        },
+        {
+          "page": 2,
+          "text": "theastaíonn an spás sin uait, lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste agus leis",
+          "classification": "non-task",
+          "reason": "General answer-space and scanning instructions, not an answer pool."
+        },
+        {
+          "page": 2,
+          "text": "ceartingearach iad ı⃗ agus ȷ⃗, faoi seach, nó soir agus ó thuaidh, faoi seach, de réir mar is cuí don",
+          "classification": "context",
+          "reason": "Horizontal/vertical or east/north is the vector-axis convention."
+        },
+        {
+          "page": 6,
+          "text": "Seasann nóid an líonra d’imeachtaí nó do phoinơ ama le linn an phróisis tógála. Is é an nód",
+          "classification": "context",
+          "reason": "Events and time points are equivalent descriptions of network nodes."
+        },
+        {
+          "page": 8,
+          "text": "Tarraing cairt chascáide nó barrachairt dá leithéid chun sceideal an Ɵonscadail seo a léiriú.",
+          "classification": "alternative-method",
+          "reason": "A cascade chart or equivalent bar chart represents the same required project schedule."
+        },
+        {
+          "page": 8,
+          "text": "chun cinn an Ɵonscadail. I bhfianaise do chairte, nó ar shlí eile, luaigh na gníomhaíochtaí",
+          "classification": "alternative-method",
+          "reason": "Use the chart or another valid method to identify all activities in progress at the specified inspection time."
+        },
+        {
+          "page": 24,
+          "text": "Uaidh sin nó ar shlí eile, ríomh an uillinn idir an dá veicteoir a⃗ agus bሬ⃗.",
+          "classification": "alternative-method",
+          "reason": "Use the preceding dot product or another valid method to find the same vector angle."
+        },
+        {
+          "page": 28,
+          "text": "Uaidh sin, nó ar shlí eile, réiƟgh an difearchothromóid chun slonn a Ĭáil le haghaidh H௡",
+          "classification": "alternative-method",
+          "reason": "Use the preceding roots or another valid method to solve the same recurrence."
+        },
+        {
+          "page": 30,
+          "text": "ón scoil iad a cheangal dá chéile chun aon líonra ríomhairí amháin a chruthú.",
+          "classification": "context",
+          "reason": "All nine computers must form one network."
+        },
+        {
+          "page": 32,
+          "text": "thógann sé chun taisteal idir gach ceann de na stadanna bus. Teastaíonn ó Amy dul ó A go M",
+          "classification": "context",
+          "reason": "Each edge gives the travel time between the specified bus stops."
+        },
+        {
+          "page": 37,
+          "text": "Lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste agus leis an gcuid den cheist.",
+          "classification": "non-task",
+          "reason": "Additional-work page instruction, not an examination task."
+        },
+        {
+          "page": 38,
+          "text": "Lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste agus leis an gcuid den cheist.",
+          "classification": "non-task",
+          "reason": "Additional-work page instruction, not an examination task."
+        },
+        {
+          "page": 39,
+          "text": "Lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste agus leis an gcuid den cheist.",
+          "classification": "non-task",
+          "reason": "Additional-work page instruction, not an examination task."
+        },
+        {
+          "page": 40,
+          "text": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+          "classification": "non-task",
+          "reason": "Back-cover copyright notice, not an examination task or answer pool."
+        },
+        {
+          "page": 40,
+          "text": "Gaolmhar, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin chun na críche a bhfuil sé beartaithe",
+          "classification": "non-task",
+          "reason": "Back-cover copyright notice, not an examination task or answer pool."
+        },
+        {
+          "page": 40,
+          "text": "chuici. Ní ghlacann an Coimisiún aon dliteanas as sárú ar bith ar chearta tríú páirtí a eascraíonn as dáileadh nó",
+          "classification": "non-task",
+          "reason": "Back-cover copyright notice, not an examination task or answer pool."
+        }
+      ],
+      "questions": [
+        {
+          "n": "1",
+          "canonicalTaskIds": [
+            "am-2026-ol-1-a",
+            "am-2026-ol-1-b-i",
+            "am-2026-ol-1-b-ii",
+            "am-2026-ol-1-b-iii",
+            "am-2026-ol-1-b-iv"
+          ],
+          "paperRegion": [
+            {
+              "p": 3,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 4,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 5,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 6,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            10,
+            15,
+            15,
+            5,
+            5
+          ]
+        },
+        {
+          "n": "2",
+          "canonicalTaskIds": [
+            "am-2026-ol-2-i",
+            "am-2026-ol-2-ii",
+            "am-2026-ol-2-iii",
+            "am-2026-ol-2-iv",
+            "am-2026-ol-2-v",
+            "am-2026-ol-2-vi"
+          ],
+          "paperRegion": [
+            {
+              "p": 6,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 7,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 8,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 7,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            },
+            {
+              "p": 8,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            15,
+            5,
+            5,
+            5,
+            15,
+            5
+          ]
+        },
+        {
+          "n": "3",
+          "canonicalTaskIds": [
+            "am-2026-ol-3-i-4kg",
+            "am-2026-ol-3-i-6kg",
+            "am-2026-ol-3-i-10kg",
+            "am-2026-ol-3-ii",
+            "am-2026-ol-3-iii-pulley-string",
+            "am-2026-ol-3-iii-table-string",
+            "am-2026-ol-3-iv",
+            "am-2026-ol-3-v"
+          ],
+          "paperRegion": [
+            {
+              "p": 9,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 10,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 11,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 9,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            5,
+            5,
+            5,
+            15,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "n": "4",
+          "canonicalTaskIds": [
+            "am-2026-ol-4-i",
+            "am-2026-ol-4-ii",
+            "am-2026-ol-4-iii",
+            "am-2026-ol-4-iv",
+            "am-2026-ol-4-v",
+            "am-2026-ol-4-vi"
+          ],
+          "paperRegion": [
+            {
+              "p": 12,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 13,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 14,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 10,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            5,
+            5,
+            15,
+            5,
+            10,
+            10
+          ]
+        },
+        {
+          "n": "5",
+          "canonicalTaskIds": [
+            "am-2026-ol-5-i",
+            "am-2026-ol-5-ii",
+            "am-2026-ol-5-iii",
+            "am-2026-ol-5-iv",
+            "am-2026-ol-5-v"
+          ],
+          "paperRegion": [
+            {
+              "p": 15,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 16,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 17,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 11,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            10,
+            10,
+            5,
+            10,
+            15
+          ]
+        },
+        {
+          "n": "6",
+          "canonicalTaskIds": [
+            "am-2026-ol-6-i",
+            "am-2026-ol-6-ii",
+            "am-2026-ol-6-iii",
+            "am-2026-ol-6-iv",
+            "am-2026-ol-6-v",
+            "am-2026-ol-6-vi"
+          ],
+          "paperRegion": [
+            {
+              "p": 18,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 19,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 20,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 21,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 12,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            10,
+            10,
+            5,
+            5,
+            10,
+            10
+          ]
+        },
+        {
+          "n": "7",
+          "canonicalTaskIds": [
+            "am-2026-ol-7-i",
+            "am-2026-ol-7-ii",
+            "am-2026-ol-7-iii",
+            "am-2026-ol-7-iv",
+            "am-2026-ol-7-v",
+            "am-2026-ol-7-vi"
+          ],
+          "paperRegion": [
+            {
+              "p": 22,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 23,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 24,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 25,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 13,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            10,
+            5,
+            5,
+            10,
+            10,
+            10
+          ]
+        },
+        {
+          "n": "8",
+          "canonicalTaskIds": [
+            "am-2026-ol-8-i-m1",
+            "am-2026-ol-8-i-m2",
+            "am-2026-ol-8-ii",
+            "am-2026-ol-8-iii",
+            "am-2026-ol-8-iv",
+            "am-2026-ol-8-v",
+            "am-2026-ol-8-vi"
+          ],
+          "paperRegion": [
+            {
+              "p": 26,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 27,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 28,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 29,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 14,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            5,
+            5,
+            10,
+            5,
+            5,
+            15,
+            5
+          ]
+        },
+        {
+          "n": "9",
+          "canonicalTaskIds": [
+            "am-2026-ol-9-a-i",
+            "am-2026-ol-9-a-ii",
+            "am-2026-ol-9-a-iii",
+            "am-2026-ol-9-b-i",
+            "am-2026-ol-9-b-ii",
+            "am-2026-ol-9-b-iii",
+            "am-2026-ol-9-b-iv"
+          ],
+          "paperRegion": [
+            {
+              "p": 30,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 31,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 32,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 33,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 15,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            15,
+            5,
+            5,
+            10,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "n": "10",
+          "canonicalTaskIds": [
+            "am-2026-ol-10-a",
+            "am-2026-ol-10-b"
+          ],
+          "paperRegion": [
+            {
+              "p": 34,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 35,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            },
+            {
+              "p": 36,
+              "r": [
+                0.04,
+                0.025,
+                0.97,
+                1
+              ]
+            }
+          ],
+          "schemeRegion": [
+            {
+              "p": 16,
+              "r": [
+                0.025,
+                0.03,
+                0.98,
+                0.98
+              ]
+            }
+          ],
+          "taskTariffs": [
+            35,
+            15
+          ]
+        }
+      ]
+    }
+  ]
+}

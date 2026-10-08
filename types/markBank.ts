@@ -207,7 +207,7 @@ export interface CardFigure {
  * passage, no fabricated facsimile, and no second copy bundled into the app.
  */
 export interface CardSourceMaterial {
-  kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme';
+  kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
@@ -217,6 +217,8 @@ export interface CardSourceMaterial {
   /** Additional clockwise rotation for sideways material printed inside a
    * portrait page. Applied to the PDF viewport, preserving the source bytes. */
   pageRotations?: Record<number, 90 | 180 | 270>;
+  /** Optional inspected crops, one per page; coordinates are PDF fractions. */
+  regions?: Array<[number, number, number, number]>;
   /**
    * A separate official SEC document when the required material is not inside
    * the question paper itself. Art publishes its illustrations as a companion
@@ -370,6 +372,8 @@ export interface SecCardBase extends CardBase {
   audioMaterial?: CardAudioMaterial;
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
+  /** Names a separately priced task within a shared printed instruction. */
+  practiceFocus?: string;
   /** The tariff printed on the paper. Row marks must reconcile against this. */
   totalMarks: number;
   schemeCitation: string;
@@ -660,7 +664,22 @@ export interface PhysicalEducationRubric {
   markingGuideNote: string;
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric;
+/** Mathematical working and drawings remain in their original SEC layout.
+ * Each allocation is one published step or scale, with its actual credit
+ * values. Error deductions apply within that allocation, never to neighbours. */
+export interface AppliedMathematicsRubric {
+  system: 'applied-mathematics';
+  solution: CardSourceMaterial & { kind: 'source-scheme' };
+  allocations: Array<{
+    id: string;
+    label: string;
+    credit: number[];
+    guidance?: string;
+  }>;
+  markingGuideNote: string;
+}
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -893,6 +912,23 @@ export function tariffReconciles(card: SecCard): boolean {
             && new Set(marks).size === marks.length
             && marks.every((mark, index) => mark === [...permitted].sort((a, b) => a - b)[index]);
         });
+    }
+    if (card.rubric.system === 'applied-mathematics') {
+      const { allocations, solution } = card.rubric;
+      return allocations.length > 0
+        && new Set(allocations.map(item => item.id)).size === allocations.length
+        && allocations.every(item => item.credit.length > 1
+          && item.credit[0] === 0
+          && item.credit.every((mark, index) => Number.isInteger(mark) && mark >= 0
+            && (index === 0 || mark > item.credit[index - 1])))
+        && allocations.reduce((sum, item) => sum + Math.max(...item.credit), 0) === card.totalMarks
+        && solution.kind === 'source-scheme'
+        && solution.pages.length > 0
+        && solution.pages.every(page => Number.isInteger(page) && page > 0)
+        && (!solution.regions || (solution.regions.length === solution.pages.length
+          && solution.regions.every(rect => rect.length === 4
+            && rect.every(value => Number.isFinite(value) && value >= 0 && value <= 1)
+            && rect[0] < rect[2] && rect[1] < rect[3])));
     }
     if (card.rubric.system === 'irish') {
       const { criteria } = card.rubric;

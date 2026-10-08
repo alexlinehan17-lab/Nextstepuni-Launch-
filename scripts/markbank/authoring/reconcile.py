@@ -145,13 +145,59 @@ def shipped_cards(subject):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if not os.path.exists(path):
             continue
-        text = open(path, encoding='utf-8').read()
+        with open(path, encoding='utf-8') as fh:
+            text = fh.read()
         for chunk in re.split(r'\.\.\.base,\s*kind:', text)[1:]:
             cid = re.search(r'\bid: "([^"]+)"', chunk)
             ref = re.search(r'questionRef: "([^"]+)"', chunk)
             if cid and ref:
                 out.append((cid.group(1), ref.group(1)))
+    if subject == 'applied-maths':
+        # Mirror withReviewedCards: preserve literal identities, apply audited
+        # corrections, then append newly reviewed tasks. CI imports the actual
+        # runtime deck and pins these same identity/ref pairs.
+        with open(os.path.join(DECKS, subject, 'reviewed.json'), encoding='utf-8') as fh:
+            reviewed = json.load(fh)
+        by_id = {card['id']: card for card in reviewed}
+        assert len(by_id) == len(reviewed), 'Duplicate Applied Mathematics runtime identity'
+        originals = {cid for cid, _ in out}
+        for cid in originals & by_id.keys():
+            assert 'reviewed-card-correction' in by_id[cid]['qa']['gates'], f'Unaudited correction: {cid}'
+        out = [(cid, by_id[cid]['questionRef'] if cid in by_id else ref) for cid, ref in out]
+        out.extend((card['id'], card['questionRef']) for card in reviewed if card['id'] not in originals)
     return out
+
+
+def reconcile_applied(census):
+    """Exact task identities: a parent citation must not hide a missing split."""
+    expected = {leaf['key'][0]: leaf['label']
+                for paper in census['papers'] for leaf in paper['leaves']}
+    assert len(expected) == sum(len(p['leaves']) for p in census['papers']), 'Duplicate census identity'
+    cards = shipped_cards('applied-maths')
+    covered, seen = set(), set()
+    orphans = []
+    for cid, ref in cards:
+        if cid in seen or expected.get(cid) != ref:
+            orphans.append({'id': cid, 'ref': ref, 'why': 'duplicate identity or no exact reviewed task/address'})
+        else:
+            covered.add(cid)
+        seen.add(cid)
+    papers = []
+    for p in census['papers']:
+        open_refs = [leaf['label'] for leaf in p['leaves'] if leaf['key'][0] not in covered]
+        papers.append({'year': p['year'], 'level': p['level'], 'paper': None,
+                       'leaves': len(p['leaves']), 'covered': len(p['leaves']) - len(open_refs),
+                       'excluded': 0, 'open': open_refs})
+    total = len(expected)
+    return {'subject': 'applied-maths', 'mode': census['mode'],
+            'cards': len(cards), 'leaves': total, 'covered': len(covered),
+            'excluded': 0, 'open': total - len(covered),
+            'coveragePct': round(100 * len(covered) / total, 1) if total else 0.0,
+            'orphans': orphans, 'unparsed': [], 'staleExclusions': load_exclusions('applied-maths'),
+            'papers': papers, 'censusFlags': 0,
+            'sourceEditions': len(census['sourceEditions']),
+            'sourceTaskLinks': sum(p['tasks'] for p in census['sourceEditions']),
+            'nativeSchemes': sum(p['lang'] == p['schemeLang'] for p in census['sourceEditions'])}
 
 
 def reconcile_manifest(subject, census):
@@ -455,11 +501,14 @@ def load_exclusions(subject):
     path = os.path.join(EXCLUSIONS, f'{subject}.json')
     if not os.path.exists(path):
         return []
-    return json.load(open(path, encoding='utf-8'))
+    with open(path, encoding='utf-8') as fh:
+        return json.load(fh)
 
 
 def reconcile_subject(subject, census=None):
     census = census or census_subject(subject)
+    if subject == 'applied-maths':
+        return reconcile_applied(census)
     if subject == 'geography':
         return reconcile_geography(census)
     if subject in ('english', 'irish', 'art', 'politics-and-society'):
@@ -610,8 +659,8 @@ def content_hash(subject):
         # materially change a runtime card even when the tiny exports do not.
         for name in ('factory.ts', 'authored.json'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
-    if subject == 'physical-education':
-        for name in ('factory.ts', 'reviewed.json'):
+    if subject in ('physical-education', 'applied-maths'):
+        for name in (('factory.ts', 'reviewed.json') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 
@@ -621,6 +670,11 @@ def papers_inventory(subject):
     only (gitignored), so a deleted or swapped paper would silently shrink
     the census — this pins their names and sizes."""
     import hashlib
+    if subject == 'applied-maths':
+        from applied_census import census_applied_maths
+        editions = census_applied_maths()['sourceEditions']
+        rows = sorted(f"{p['year']}:{p['level']}:{p['lang']}:{p['paperSha256']}:{p['schemeSha256']}" for p in editions)
+        return {'count': len(rows), 'hash': hashlib.sha256('\n'.join(rows).encode()).hexdigest()[:16]}
     root = os.path.join(ROOT, 'examiner-reports', 'politics-society' if subject == 'politics-and-society' else subject, 'papers')
     rows = sorted(f'{f}:{os.path.getsize(os.path.join(root, f))}'
                   for f in os.listdir(root) if f.endswith('.pdf'))
@@ -639,7 +693,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]
@@ -659,6 +713,8 @@ def baseline_write(results):
             'contentHash': content_hash(r['subject']),
             'excluded': r['excluded'], 'papers': papers_inventory(r['subject']),
         }
+        if r['subject'] == 'applied-maths':
+            data[r['subject']].update({k: r[k] for k in ('sourceEditions', 'sourceTaskLinks', 'nativeSchemes')})
     with open(BASELINE, 'w', encoding='utf-8') as fh:
         # Two spaces, which is how the committed baseline is formatted. At
         # indent=1 a one-subject re-measure rewrote all 272 lines of the
@@ -700,6 +756,9 @@ def main():
                       ensure_ascii=False, indent=1)
         print(f'wrote {args.json}')
     if args.baseline == 'write':
+        if any(r['subject'] == 'applied-maths' for r in results) and any(
+                r['subject'] == 'applied-maths' and (r['open'] or r['orphans'] or r['staleExclusions']) for r in results):
+            raise SystemExit('REFUSED: Applied Mathematics baseline requires zero open tasks, orphans and exclusions')
         # Writing is not a bypass: a write that would record a regression
         # against the PREVIOUS baseline refuses, so the ratchet cannot be
         # reset by the same command that maintains it.

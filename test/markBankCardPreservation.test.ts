@@ -585,8 +585,13 @@ const decks = [
    * into their stems by a page-furniture fault, which is what let them past
    * the printed-matter gate; with their own stems they are figure-blocked
    * like the rest of Question 3, and they go back to the open list. */
-  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 175, '0eb618ccbbc6c6b312acbbe23e5f6e15906dc8e6395657ff8ce3fd0837026714'],
-  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 208, '5457fa7f47995a3c74f439a7033728404ef1a719bb30cd4b404954c96174da33'],
+  // 2026-10-07: visually reviewed 2026 papers add 45 HL and 58 OL tasks;
+  // 2010–2025 contain 671 HL and 712 OL reviewed tasks, including 383 explicit
+  // corrections at shipped IDs. The archive review is ongoing.
+  // The old 175/208 ID hashes remain independently pinned in
+  // markBankAppliedMathematics.test.tsx. Older corpus completion is ongoing.
+  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 716, '923aa61e94606e2f17655df1359c9ea8b2f33c037200d7265459efd0e3d414a4'],
+  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 770, '1383838e7fedf7e49fff8eb8570b0a77fa58e5139ee855474785ec46481faf21'],
   /* Spanish is the second modern language carded, and the first subject whose
    * cards bind a source printed in a DIFFERENT booklet: its Higher Section B
    * article is a two-page loose sheet with its own SEC file id, and those 80
@@ -777,7 +782,7 @@ describe('Mark Bank card preservation', () => {
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
     // Politics adds 1,086 tasks; all previous subjects retain their IDs.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(21_066);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_169);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.

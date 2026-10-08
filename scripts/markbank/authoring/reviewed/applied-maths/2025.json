@@ -1,0 +1,5605 @@
+{
+  "subjectId": "applied-mathematics",
+  "year": 2025,
+  "reviewedAt": "2026-10-07",
+  "reviewMethod": "Independent visual sweep of all 44 Higher and 40 Ordinary paper pages and all 20 pages of each marking scheme. Published mark placements and every printed written-examination task cross-checked against the source layout. Project-assessment guidance is not a printed written-examination task.",
+  "progressIdentityReview": "All 89 shipped 2025 identities retained exactly once with original-block hashes and explicit correction records. Q2 Higher is split at the six published part boundaries, retaining the shipped identity on part (i).",
+  "papers": [
+    {
+      "level": "higher",
+      "paperSha256": "08264399581c2e7dcace1af017b632644e5fe590e8d2444a76460ac50d7be4bc",
+      "schemeSha256": "2466e2fe959b5d582611504d0937801d33c91c38fd50cc3ecaffb803e8efde3c",
+      "questionPages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        38,
+        39,
+        40
+      ],
+      "printedTaskCount": 50,
+      "practiceTaskCount": 52,
+      "availableMarks": 500,
+      "questionMarks": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 50,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      },
+      "tasks": [
+        {
+          "ref": "Q1(a)(i)",
+          "idSuffix": "1-a-i",
+          "questionText": "Write the adjacency matrix, M, for this graph.",
+          "topicId": "applied-mathematics-1-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.14
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q1(a)(ii)",
+          "idSuffix": "1-a-ii",
+          "questionText": "Calculate M².",
+          "topicId": "applied-mathematics-1-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.155,
+            0.96,
+            0.228
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                4,
+                7,
+                10
+              ],
+              "guidance": "10: correct; 7: one systemic error; 4: two systemic errors or a valid attempt; 0: no credit. Do not deduct systemic errors twice."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q1(a)(iii)",
+          "idSuffix": "1-a-iii",
+          "questionText": "What information is provided by the elements of M²?",
+          "topicId": "applied-mathematics-1-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.242,
+            0.96,
+            0.278
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q1(b)(i)",
+          "idSuffix": "1-b-i",
+          "questionText": "Draw a diagram showing the forces acting on the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.295,
+            0.96,
+            0.444
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q1(b)(ii)",
+          "idSuffix": "1-b-ii",
+          "questionText": "Calculate the tension in the string.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.461,
+            0.96,
+            0.532
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q1(b)(iii)",
+          "idSuffix": "1-b-iii",
+          "questionText": "Calculate the angular velocity of the particle.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            4,
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.554,
+            0.96,
+            0.632
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q1(b)(iv)",
+          "idSuffix": "1-b-iv",
+          "questionText": "The particle is given an increased velocity such that its period changes to 1.5 s. Calculate the new radius.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            4,
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.653,
+            0.96,
+            0.749
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(i)",
+          "idSuffix": "2",
+          "questionText": "Using the chain rule, show that a = v dv/ds.",
+          "topicId": "applied-mathematics-2-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-integration"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.133
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(ii)",
+          "idSuffix": "2-ii",
+          "questionText": "Use calculus to derive an expression for v in terms of a and s.",
+          "topicId": "applied-mathematics-2-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-integration"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.147,
+            0.96,
+            0.246
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(iii)",
+          "idSuffix": "2-iii",
+          "questionText": "Show that the upward motion can now be expressed by the differential equation: (2v/(v² + 392)) dv = −(1/20) ds.",
+          "topicId": "applied-mathematics-3-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6,
+            7
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.262,
+            0.96,
+            0.308
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(iv)",
+          "idSuffix": "2-iv",
+          "questionText": "Solve this differential equation to find an expression for v in terms of s.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6,
+            7
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.323,
+            0.96,
+            0.44
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(v)",
+          "idSuffix": "2-v",
+          "questionText": "Calculate the greatest height the particle will reach.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6,
+            7,
+            8
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.459,
+            0.96,
+            0.503
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(vi)",
+          "idSuffix": "2-vi",
+          "questionText": "By using a = dv/dt solve a differential equation to find an expression that relates v and t.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            6,
+            7,
+            9
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.518,
+            0.96,
+            0.614
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(a)(i)",
+          "idSuffix": "3-a-i",
+          "questionText": "Calculate μB.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            10
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.173
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(a)(ii)",
+          "idSuffix": "3-a-ii",
+          "questionText": "Calculate the acceleration of the movable pulley.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            10,
+            11
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.187,
+            0.96,
+            0.232
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(b)(i)",
+          "idSuffix": "3-b-i",
+          "questionText": "The electrician wishes to use the minimum length of cable required to connect every telephone within the same electrical network. Starting at telephone A, use Prim’s algorithm to calculate the minimum length of cable required.",
+          "topicId": "applied-mathematics-1-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ],
+          "paperPages": [
+            12
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.247,
+            0.96,
+            0.398
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                4,
+                7,
+                10
+              ],
+              "guidance": "10: correct; 7: one systemic error; 4: two systemic errors or a valid attempt; 0: no credit. Do not deduct systemic errors twice."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(b)(ii)",
+          "idSuffix": "3-b-ii",
+          "questionText": "Draw the electrical network that uses the minimum length of cable.",
+          "topicId": "applied-mathematics-1-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ],
+          "paperPages": [
+            12,
+            13
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.418,
+            0.96,
+            0.556
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                4,
+                7,
+                10
+              ],
+              "guidance": "10: correct; 7: one systemic error; 4: two systemic errors or a valid attempt; 0: no credit. Do not deduct systemic errors twice."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(b)(iii)",
+          "idSuffix": "3-b-iii",
+          "questionText": "Name another algorithm that could be used to calculate the minimum length of cable required.",
+          "topicId": "applied-mathematics-1-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ],
+          "paperPages": [
+            12,
+            13
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.578,
+            0.96,
+            0.617
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(i)",
+          "idSuffix": "4-i",
+          "questionText": "Show that A strikes B with a speed of 7√3/5 m s⁻¹.",
+          "topicId": "applied-mathematics-2-6",
+          "examTopicIds": [
+            "applied-mathematics-higher-work-power-energy-momentum"
+          ],
+          "paperPages": [
+            14
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.14
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(ii)",
+          "idSuffix": "4-ii",
+          "questionText": "Calculate the speed of each sphere immediately after the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-impacts-collisions"
+          ],
+          "paperPages": [
+            14,
+            15
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.154,
+            0.96,
+            0.289
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(iii)",
+          "idSuffix": "4-iii",
+          "questionText": "Show in a diagram the forces acting on B when the string makes an angle θ with the downward vertical.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            14,
+            16
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.303,
+            0.96,
+            0.447
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(iv)",
+          "idSuffix": "4-iv",
+          "questionText": "Write an expression, in terms of θ, for the height B has moved through when the string makes an angle θ with the downward vertical.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            14,
+            16
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.465,
+            0.96,
+            0.5
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(v)",
+          "idSuffix": "4-v",
+          "questionText": "Write an expression, in terms of θ, for the speed of B when the string makes an angle θ with the downward vertical.",
+          "topicId": "applied-mathematics-2-6",
+          "examTopicIds": [
+            "applied-mathematics-higher-work-power-energy-momentum"
+          ],
+          "paperPages": [
+            14,
+            15,
+            16
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.517,
+            0.96,
+            0.556
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(vi)",
+          "idSuffix": "4-vi",
+          "questionText": "Calculate the value of θ when the tension in the string attached to B is 15 N.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-higher-circular-motion"
+          ],
+          "paperPages": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.572,
+            0.96,
+            0.652
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q5(a)(i) — Force diagram for X",
+          "idSuffix": "5-a-i-x",
+          "questionText": "Show, on separate diagrams, the forces acting on each of the blocks while they are moving.",
+          "topicId": "applied-mathematics-2-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            18
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.227
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "practiceFocus": "Force diagram for X"
+        },
+        {
+          "ref": "Q5(a)(i) — Force diagram for Y",
+          "idSuffix": "5-a-i-y",
+          "questionText": "Show, on separate diagrams, the forces acting on each of the blocks while they are moving.",
+          "topicId": "applied-mathematics-2-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            18
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.227
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "practiceFocus": "Force diagram for Y"
+        },
+        {
+          "ref": "Q5(a)(ii) — Acceleration of X, including the shared normal-reaction calculation",
+          "idSuffix": "5-a-ii",
+          "questionText": "Find, in terms of β, the acceleration of each block.",
+          "topicId": "applied-mathematics-2-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            18,
+            19
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.244,
+            0.96,
+            0.33
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ],
+              "guidance": "Use the first published 5-mark placement for the shared normal reactions. The next 5 covers the acceleration of X; Y is practised separately."
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "practiceFocus": "Acceleration of X, including the shared normal-reaction calculation"
+        },
+        {
+          "ref": "Q5(a)(ii) — Acceleration of Y",
+          "idSuffix": "5-a-ii-y",
+          "questionText": "Find, in terms of β, the acceleration of each block.",
+          "topicId": "applied-mathematics-2-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            18,
+            19
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.244,
+            0.96,
+            0.33
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ],
+              "guidance": "Use only the last published 5-mark placement for the acceleration of Y. The shared normal-reaction calculation is allocated to the X task."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "practiceFocus": "Acceleration of Y"
+        },
+        {
+          "ref": "Q5(a)(iii)",
+          "idSuffix": "5-a-iii",
+          "questionText": "The blocks collide after 2 s. Calculate β.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            18,
+            19,
+            20
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.344,
+            0.96,
+            0.415
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q5(b)",
+          "idSuffix": "5-b",
+          "questionText": "Calculate the possible values of p and q.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-vectors"
+          ],
+          "paperPages": [
+            21
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.431,
+            0.96,
+            0.496
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ],
+              "guidance": "The two valid pairs use matching signs: (189/√277, 294/√277) and (−189/√277, −294/√277). The ± signs cannot be chosen independently."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q6(a)(i)",
+          "idSuffix": "6-a-i",
+          "questionText": "Use Dynamic Programming to find Éanna’s optimal strategy. Calculate how much it will cost Éanna if he uses this optimal strategy. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            22
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.524
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                8,
+                14,
+                17,
+                20
+              ],
+              "guidance": "20: correct; 17: one systemic error; 14: two systemic errors; 8: a valid attempt; 0: no credit. Do not deduct systemic errors twice."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q6(a)(ii)",
+          "idSuffix": "6-a-ii",
+          "questionText": "In the context of this question, distinguish between the concepts of stage and state.",
+          "topicId": "applied-mathematics-1-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            22,
+            23
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.541,
+            0.96,
+            0.594
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q6(b)(i)",
+          "idSuffix": "6-b-i",
+          "questionText": "Use integration to calculate the work done by Áine in extending the band horizontally to a length of 1.2 m.",
+          "topicId": "applied-mathematics-2-6",
+          "examTopicIds": [
+            "applied-mathematics-higher-work-power-energy-momentum"
+          ],
+          "paperPages": [
+            24
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.611,
+            0.96,
+            0.68
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q6(b)(ii)",
+          "idSuffix": "6-b-ii",
+          "questionText": "Brody takes the extended band and extends it further. He claims to have done twice the work that Áine did. If Brody is correct, calculate the new length of the band.",
+          "topicId": "applied-mathematics-2-6",
+          "examTopicIds": [
+            "applied-mathematics-higher-work-power-energy-momentum"
+          ],
+          "paperPages": [
+            24,
+            25
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.695,
+            0.96,
+            0.79
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(a)(i)",
+          "idSuffix": "7-a-i",
+          "questionText": "Use Dijkstra’s algorithm to find the shortest path from Oughterard to Cleggan. Calculate the length of the shortest path. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-3",
+          "examTopicIds": [
+            "applied-mathematics-higher-optimal-critical-paths"
+          ],
+          "paperPages": [
+            26
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.208
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                6,
+                12,
+                15
+              ],
+              "guidance": "15: correct; 12: one systemic error; 6: two systemic errors or a valid attempt; 0: no credit. Do not deduct systemic errors twice."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(a)(ii)",
+          "idSuffix": "7-a-ii",
+          "questionText": "Describe how a network differs from a road map.",
+          "topicId": "applied-mathematics-1-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-networks-and-graphs"
+          ],
+          "paperPages": [
+            26,
+            27
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.225,
+            0.96,
+            0.261
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(b)(i)",
+          "idSuffix": "7-b-i",
+          "questionText": "Calculate the two possible values of α.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            28
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.277,
+            0.96,
+            0.371
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(b)(ii)",
+          "idSuffix": "7-b-ii",
+          "questionText": "For the smaller value of α, calculate the velocity of the basketball as it hits the wall.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            28,
+            29
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.388,
+            0.96,
+            0.424
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(b)(iii)",
+          "idSuffix": "7-b-iii",
+          "questionText": "For the smaller value of α, calculate the horizontal distance between the wall and where the basketball lands on the ground for the first time.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            28,
+            29
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.44,
+            0.96,
+            0.494
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(a)(i)",
+          "idSuffix": "8-a-i",
+          "questionText": "Write down a difference equation to express Uₙ₊₂ in terms of Uₙ₊₁ and Uₙ, where n ≥ 0, n ∈ ℤ.",
+          "topicId": "applied-mathematics-3-1",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            30
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.105
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(a)(ii)",
+          "idSuffix": "8-a-ii",
+          "questionText": "Is this a homogeneous difference equation or an inhomogeneous difference equation? Explain your answer.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            30
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.12,
+            0.96,
+            0.158
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(a)(iii)",
+          "idSuffix": "8-a-iii",
+          "questionText": "Solve the difference equation to find an expression for Uₙ in terms of n.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            30
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.173,
+            0.96,
+            0.261
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(a)(iv)",
+          "idSuffix": "8-a-iv",
+          "questionText": "Calculate the total number of infections detected between Monday morning and Friday evening.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            30,
+            31
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.276,
+            0.96,
+            0.314
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(b)(i)",
+          "idSuffix": "8-b-i",
+          "questionText": "Using integration by parts or otherwise, derive an expression for P(t), the population at any time t, given that P(0) = 2200.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations",
+            "applied-mathematics-higher-further-integration-u-substitution-integration-by-parts"
+          ],
+          "paperPages": [
+            32
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.328,
+            0.96,
+            0.505
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(b)(ii)",
+          "idSuffix": "8-b-ii",
+          "questionText": "Calculate P(5), the population after 5 years.",
+          "topicId": "applied-mathematics-3-4",
+          "examTopicIds": [
+            "applied-mathematics-higher-differential-equations"
+          ],
+          "paperPages": [
+            32,
+            33
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.521,
+            0.96,
+            0.557
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q9(a)(i)",
+          "idSuffix": "9-a-i",
+          "questionText": "Calculate the constant deceleration required to stop the car at the light.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            34
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.153
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q9(a)(ii)",
+          "idSuffix": "9-a-ii",
+          "questionText": "Using the axes below, draw a displacement-time graph for the motion of the car from when the driver sees the traffic light change. Relevant calculations should be shown in the space provided.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            34,
+            35
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.169,
+            0.96,
+            0.223
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q9(b)",
+          "idSuffix": "9-b",
+          "questionText": "Show that the fraction of kinetic energy lost as a result of the collision is 5/24.",
+          "topicId": "applied-mathematics-2-6",
+          "examTopicIds": [
+            "applied-mathematics-higher-work-power-energy-momentum"
+          ],
+          "paperPages": [
+            36
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.239,
+            0.96,
+            0.379
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q10(a)(i)",
+          "idSuffix": "10-a-i",
+          "questionText": "Write down the values of S₂ and S₃.",
+          "topicId": "applied-mathematics-3-0",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            38
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.105
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q10(a)(ii)",
+          "idSuffix": "10-a-ii",
+          "questionText": "Solve the difference equation to find an expression for Sₙ in terms of n.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            38
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.12,
+            0.96,
+            0.316
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 5",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q10(a)(iii)",
+          "idSuffix": "10-a-iii",
+          "questionText": "The strategy is deemed successful if the service has at least 35 000 customers after one year. Is the strategy successful? Justify your answer.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-difference-equations"
+          ],
+          "paperPages": [
+            38,
+            39
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.331,
+            0.96,
+            0.369
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q10(b)",
+          "idSuffix": "10-b",
+          "questionText": "Calculate u.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-higher-projectiles"
+          ],
+          "paperPages": [
+            40
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.384,
+            0.96,
+            0.469
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        }
+      ],
+      "selectionDirectives": [
+        {
+          "page": 2,
+          "text": "Answer any eight questions.",
+          "decision": "Whole-examination choice; all ten questions are included."
+        },
+        {
+          "page": 32,
+          "text": "Using integration by parts or otherwise, derive an expression for Pሺtሻ, the population at any",
+          "decision": "Open choice of integration method, not a finite task pool."
+        }
+      ],
+      "selectionReview": [
+        {
+          "wording": "Answer any eight questions.",
+          "decision": "Whole-examination choice; all ten questions are included."
+        },
+        {
+          "wording": "Using integration by parts or otherwise, derive an expression for Pሺtሻ, the population at any",
+          "decision": "Open choice of integration method, not a finite task pool."
+        },
+        {
+          "wording": "Finite-looking networks, algorithm choices, paired values and classifications",
+          "decision": "No finite candidate answer pools occur. Network paths and campervan strategies are mathematical data in optimisation tasks. Another algorithm and one model assumption permit open valid answers. Homogeneous or inhomogeneous asks for a reasoned classification, not a choice of task. Paired numeric outputs follow the published mark placements."
+        }
+      ],
+      "markingGuideNote": "Use the published scale where printed. For other placements, select the published mark for the required working, then deduct 3 for a mathematical error or 1 for a slip or minor misreading. Select zero where no credit is earned. Do not deduct an error twice. Follow any specific matrix-entry deduction rule shown. Alternative valid methods are accepted.",
+      "boundaryReview": "Q2 contains six separately marked printed parts. The shipped Q2 identity is retained for its first task, and five new identities restore the remaining parts, including the previously absent 5-mark modelling step (iii). Q5(a)(i) gives 5 to each force diagram. Q5(a)(ii) gives 5 for the shared normal reactions, 5 for acceleration of X and 5 for acceleration of Y: X retains the shared step and original identity, Y has its own 5-mark task. Q4(ii) both speeds share a final 5. Q5(b) both signed p/q pairs, Q7(b)(i) both launch angles and Q10(a)(i) both recurrence values each share a final placement. Q6(a)(i) is one 20-mark optimisation task including cost; Q6(a)(ii) is one comparison. Q9(a)(ii) is one graph, with 5 for each required segment. Required method steps are not separate practice tasks.",
+      "cardCorrections": [
+        {
+          "cardId": "am-2025-hl-1-a-i",
+          "originalBlockSha256": "26372cafc753979e9c5fc3903210638d3f3aee8c1fa719dd7b910fd65bb74206",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-1-a-ii",
+          "originalBlockSha256": "d9ac475a4cd6c7e8f3d6d3c2209b8a793c68dfbe4ea1e8a29e2b1dff73437bca",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-1-a-iii",
+          "originalBlockSha256": "941a7eb76c7969186b8f905bff1fbdaa1cee5f65b22e20c6b9ac4f6b5aa6e793",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-1-b-ii",
+          "originalBlockSha256": "62eb7d8b48ed71e73c1a712ef8fb804bbfd83c77c70844c7d5ef8dc57a2f5937",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-1-b-iii",
+          "originalBlockSha256": "b40abd6055ee2a77d974b67839012c0114fa282ba76a0e456750ff93151200ff",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-1-b-iv",
+          "originalBlockSha256": "c111052a12949616c8396b0ecb9276785ab886c3e4e8d84403ec2c417e3569ab",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-2",
+          "originalBlockSha256": "712c7db4a382d60f027c387f2906b7ce735cefc201de8bddc04d2b92afe5676b",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities. The original 45-mark bundle incorrectly omitted part (iii). This identity now represents part (i), the first published task; parts (ii)–(vi) have explicit new identities and together the six tasks restore all 50 marks."
+        },
+        {
+          "cardId": "am-2025-hl-3-a-i",
+          "originalBlockSha256": "b614d88c255250ef27e4d0ddd9c0ae398a42106b146e44938dfe6294e81050cb",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-3-a-ii",
+          "originalBlockSha256": "17372f7c8a6ba1e883902bf4d4deb750f3426bac2058a7670db4f3a3881cdba4",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-3-b-i",
+          "originalBlockSha256": "0bd02282d6fb1db5abb8068d9134a54ae1825df09fe3a9433e61c762b96f0560",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-3-b-ii",
+          "originalBlockSha256": "45b6556cc65cd6faa95ec95dc77fd81ceccc6dac54b7bba2cdd0b85174ed70ce",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-3-b-iii",
+          "originalBlockSha256": "ff508fa2fd260a7eb5928dedd63ae7f3027463d410a5e2b56dd34d7c6d42791a",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-4-i",
+          "originalBlockSha256": "6fa741f94aef48fcfa9b56fa4db12aa760e8156ba8419b353a0f334932a860cd",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-4-ii",
+          "originalBlockSha256": "891d467cf2e68c9f1bfcfb94e021149d1127cb2a3f7ae619eca4cbc6ea141e17",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-4-iv",
+          "originalBlockSha256": "af571c7012046bf4dd5d13d439aea42e6bd4a418142a0a81176be246c8c7327c",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-4-v",
+          "originalBlockSha256": "6b34c12d801e9b6269f72da8d7a5e80b2c623a6c3366a0a1053a447d7f0026e4",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-4-vi",
+          "originalBlockSha256": "421775909d578d9beb4d998e9a48fbaf90228be657a43ae8d4068602caea4d3b",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-5-a-ii",
+          "originalBlockSha256": "c905fe60b221a3f183ff3334fbd24c5cfdce35234ca0c3cdf8b82465d51d3561",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-5-a-iii",
+          "originalBlockSha256": "d352900ca92c4e34d40e13fd13e18dcc10d8063616dad5397720863ebd6af7fe",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-5-b",
+          "originalBlockSha256": "41ceb7e2059f73c8cef5f0b36c1516084327284ac61df63d8c40f616d90f1f0c",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-6-a-ii",
+          "originalBlockSha256": "e0b12a6d29c5fc72bc63df671e20784f0880149a86d045790e7595273ce0afa1",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-6-b-i",
+          "originalBlockSha256": "d5d06024aaa789b9218ce3fab704d3f9a226d29ae9a0e27a0da3e172c5b81e20",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-6-b-ii",
+          "originalBlockSha256": "36c5fc30762362d328902a74030d259c79b6bda928225f0ae4a527138fef651c",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-7-a-i",
+          "originalBlockSha256": "eeb5bb715d119549ed5318e0a1d283cd56ec6ca31e9b8fa102cb33c26a5ad2b8",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-7-a-ii",
+          "originalBlockSha256": "e1ff2888ddca86635af93233b4c26825f7dc40b36d68cde2c976eb31fff9e055",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-7-b-i",
+          "originalBlockSha256": "814d9d3117e564057237db41b14833598a895cef2aa238a258dd6d72b2f9293e",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-7-b-ii",
+          "originalBlockSha256": "4243bd893e11f9aaa2e7c8886aff36fd4e1f033e76279ceea15c7444430cc671",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-7-b-iii",
+          "originalBlockSha256": "66f7781151a0dc65811c03ffed744e012ec8a27c3dd0739649f5ad78c77dcccd",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-8-a-i",
+          "originalBlockSha256": "74fba25a0a4361dcf59f122ae478d4e64f17d9e81adfe4fb54f37c4faf7f0ddf",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-8-a-ii",
+          "originalBlockSha256": "b967f26519be81ed7eb3d676597ab0c3ecbb8f33879700ea84ab8c9f5adf9740",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-8-a-iii",
+          "originalBlockSha256": "ee33445250ed4cec1890867b321465c68d93952c207378ce7a71ebd35a3a052c",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-8-a-iv",
+          "originalBlockSha256": "9293a3946b416d696e1312781d70bda51e7df8e9251ad7fd38809b90a9ce691e",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-8-b-i",
+          "originalBlockSha256": "0f3b5119072339b17765a5312bfdb5a88399cf7f1a29a4987a13f6fe1b595b87",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-8-b-ii",
+          "originalBlockSha256": "26de05a684d4c3caaa9a01707894e86c852ffd5faccad93cd03e794412afa838",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-9-a-i",
+          "originalBlockSha256": "4130ad58e9fc5def2ffa47ed7ac480e64ba3e650c8c7284e588c50ffadee1f4c",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-9-b",
+          "originalBlockSha256": "50a9f665bce183a78f1a36b5e35c51794a46f2fcb26c189950f4fa6256080e05",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-10-a-i",
+          "originalBlockSha256": "8cbf32b484cb67b319cec555296751b49b1875d579b644102f3b2ba761891679",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-10-a-ii",
+          "originalBlockSha256": "f0462251835cbc778e79d72032b4f76b89f0233e79f4a565d674ff776df85eb3",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-10-a-iii",
+          "originalBlockSha256": "5772ab2c1637ebc579e4a0f08cd47cd82839dbc4cec383e0ddf4470d372e3139",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-hl-10-b",
+          "originalBlockSha256": "6f0a4efaa2612ffcbf48142ec80b78769aa83f507c77ef66ec325adb4fb1158d",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        }
+      ]
+    },
+    {
+      "level": "ordinary",
+      "paperSha256": "50fb5ea4dc874e396fb5071ca42ad0e1884f6660c1ee7d33aaee83e2096fb6d9",
+      "schemeSha256": "4563ddf13af6f54733fd8192e25796debb562e96c7df88db7ab78dab4fc12ae8",
+      "questionPages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "printedTaskCount": 53,
+      "practiceTaskCount": 55,
+      "availableMarks": 500,
+      "questionMarks": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 50,
+        "5": 50,
+        "6": 50,
+        "7": 50,
+        "8": 50,
+        "9": 50,
+        "10": 50
+      },
+      "tasks": [
+        {
+          "ref": "Q1(a)",
+          "idSuffix": "1-a",
+          "questionText": "Calculate the tension in the string.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            3
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.186
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q1(b)(i) — Force diagram for the 2 kg block",
+          "idSuffix": "1-b-i-table",
+          "questionText": "Draw separate diagrams to show the forces acting on each block.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.215,
+            0.96,
+            0.39
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "practiceFocus": "Force diagram for the 2 kg block"
+        },
+        {
+          "ref": "Q1(b)(i) — Force diagram for the 4 kg block",
+          "idSuffix": "1-b-i-incline",
+          "questionText": "Draw separate diagrams to show the forces acting on each block.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            4
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.215,
+            0.96,
+            0.39
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "practiceFocus": "Force diagram for the 4 kg block"
+        },
+        {
+          "ref": "Q1(b)(ii)",
+          "idSuffix": "1-b-ii",
+          "questionText": "Calculate the common acceleration of the blocks.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            4,
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.42,
+            0.96,
+            0.512
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q1(b)(iii)",
+          "idSuffix": "1-b-iii",
+          "questionText": "Calculate the tension in the string.",
+          "topicId": "applied-mathematics-2-5",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            4,
+            5
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 6,
+          "schemeRegion": [
+            0.05,
+            0.542,
+            0.96,
+            0.586
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(a)(i)",
+          "idSuffix": "2-a-i",
+          "questionText": "Calculate the force that the rider needs to apply to give the bicycle an acceleration of 2 m s⁻².",
+          "topicId": "applied-mathematics-2-3",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            6
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.129
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(a)(ii)",
+          "idSuffix": "2-a-ii",
+          "questionText": "Calculate α.",
+          "topicId": "applied-mathematics-2-3",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-newtons-laws-connected-particles"
+          ],
+          "paperPages": [
+            6,
+            7
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.152,
+            0.96,
+            0.234
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(b)(i)",
+          "idSuffix": "2-b-i",
+          "questionText": "Solve the difference equation to find an expression for Hₙ in terms of n.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            8
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.257,
+            0.96,
+            0.299
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(b)(ii)",
+          "idSuffix": "2-b-ii",
+          "questionText": "Calculate H₄.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            8,
+            9
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.32,
+            0.96,
+            0.362
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q2(b)(iii)",
+          "idSuffix": "2-b-iii",
+          "questionText": "Calculate the total distance travelled by the tennis ball until just before its third bounce on the floor.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            8,
+            9
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.383,
+            0.96,
+            0.423
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                10
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(i)",
+          "idSuffix": "3-i",
+          "questionText": "Calculate the initial acceleration of the car.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            10
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.466,
+            0.96,
+            0.542
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(ii)",
+          "idSuffix": "3-ii",
+          "questionText": "Show that the distance the car travels while decelerating is 125 m.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            10,
+            11
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.563,
+            0.96,
+            0.651
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(iii)",
+          "idSuffix": "3-iii",
+          "questionText": "Calculate the deceleration of the car.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            10,
+            11,
+            12
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.674,
+            0.96,
+            0.735
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(iv)",
+          "idSuffix": "3-iv",
+          "questionText": "Calculate the total time it takes the car to travel from A to B.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            10,
+            12
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.758,
+            0.96,
+            0.819
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q3(v)",
+          "idSuffix": "3-v",
+          "questionText": "Calculate the average speed of the car in km hour⁻¹ as it travels from A to B.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            10,
+            12,
+            13
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 7,
+          "schemeRegion": [
+            0.05,
+            0.842,
+            0.96,
+            0.891
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(i)",
+          "idSuffix": "4-i",
+          "questionText": "Explain what is meant by a path in the context of networks.",
+          "topicId": "applied-mathematics-1-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ],
+          "paperPages": [
+            14
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.112
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(ii)",
+          "idSuffix": "4-ii",
+          "questionText": "Explain what is meant by a cycle in the context of networks.",
+          "topicId": "applied-mathematics-1-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ],
+          "paperPages": [
+            14
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.142,
+            0.96,
+            0.186
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(iii)",
+          "idSuffix": "4-iii",
+          "questionText": "Describe Dijkstra’s algorithm for finding the shortest path between two nodes in a network.",
+          "topicId": "applied-mathematics-1-3",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ],
+          "paperPages": [
+            14,
+            15
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.215,
+            0.96,
+            0.326
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(iv)",
+          "idSuffix": "4-iv",
+          "questionText": "Use Dijkstra’s algorithm to find the shortest path from A to J. Write down the shortest path. Calculate the length of the shortest path.",
+          "topicId": "applied-mathematics-1-3",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-optimal-critical-paths"
+          ],
+          "paperPages": [
+            14,
+            15
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.355,
+            0.96,
+            0.614
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                6,
+                12,
+                15
+              ],
+              "guidance": "15: correct; 12: one systemic error; 6: two systemic errors or a valid attempt; 0: no credit. Do not deduct systemic errors twice."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(v)",
+          "idSuffix": "4-v",
+          "questionText": "Explain what is meant by the minimum spanning tree for a network.",
+          "topicId": "applied-mathematics-1-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ],
+          "paperPages": [
+            14,
+            16
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 8,
+          "schemeRegion": [
+            0.05,
+            0.643,
+            0.96,
+            0.705
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q4(vi)",
+          "idSuffix": "4-vi",
+          "questionText": "Using Prim’s algorithm, find the minimum spanning tree for this network. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ],
+          "paperPages": [
+            14,
+            16
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 9,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.4
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                6,
+                12,
+                15
+              ],
+              "guidance": "15: correct; 12: one systemic error; 6: two systemic errors or a valid attempt; 0: no credit. Do not deduct systemic errors twice."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q5(a)(i)",
+          "idSuffix": "5-a-i",
+          "questionText": "Show that the speed of Q after the collision is 0.4 m s⁻¹.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ],
+          "paperPages": [
+            18
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.161
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q5(a)(ii)",
+          "idSuffix": "5-a-ii",
+          "questionText": "Calculate the speed of P after the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ],
+          "paperPages": [
+            18,
+            19
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.191,
+            0.96,
+            0.261
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ],
+              "guidance": "The scheme shows the signed velocity −2.8 m s⁻¹. The requested speed is its magnitude, 2.8 m s⁻¹."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q5(a)(iii)",
+          "idSuffix": "5-a-iii",
+          "questionText": "Calculate e, the coefficient of restitution for the collision.",
+          "topicId": "applied-mathematics-2-4",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-impacts-collisions"
+          ],
+          "paperPages": [
+            18,
+            19
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.289,
+            0.96,
+            0.376
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q5(b)(i)",
+          "idSuffix": "5-b-i",
+          "questionText": "Use a suitable model to calculate the speed of the block when it is at the end of the slide.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            20
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.403,
+            0.96,
+            0.472
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q5(b)(ii)",
+          "idSuffix": "5-b-ii",
+          "questionText": "Outline one assumption made by your model.",
+          "topicId": "applied-mathematics-0-4",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-mathematical-modelling-project",
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            20,
+            21
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 10,
+          "schemeRegion": [
+            0.05,
+            0.502,
+            0.96,
+            0.545
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q6(i)",
+          "idSuffix": "6-i",
+          "questionText": "Calculate the initial velocity of the ball in terms of i and j.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            22
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.136
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q6(ii)",
+          "idSuffix": "6-ii",
+          "questionText": "Calculate the time taken to reach the maximum height at point P.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            22,
+            23
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.166,
+            0.96,
+            0.235
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q6(iii)",
+          "idSuffix": "6-iii",
+          "questionText": "Calculate the displacement of P from O in terms of i and j.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            22,
+            23
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.264,
+            0.96,
+            0.333
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q6(iv)",
+          "idSuffix": "6-iv",
+          "questionText": "Calculate h, the height of the cliff.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            22,
+            24
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.363,
+            0.96,
+            0.406
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q6(v)",
+          "idSuffix": "6-v",
+          "questionText": "Calculate the distance |OQ|.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-projectiles"
+          ],
+          "paperPages": [
+            22,
+            24
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 11,
+          "schemeRegion": [
+            0.05,
+            0.436,
+            0.96,
+            0.508
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(a)(i)",
+          "idSuffix": "7-a-i",
+          "questionText": "Calculate ω, the angular velocity of the ball.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            25
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.151
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(a)(ii)",
+          "idSuffix": "7-a-ii",
+          "questionText": "Calculate the centripetal force on the ball.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            25
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.178,
+            0.96,
+            0.247
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(a)(iii)",
+          "idSuffix": "7-a-iii",
+          "questionText": "Calculate the time taken for 6 revolutions.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            25
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.277,
+            0.96,
+            0.352
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(b)(i)",
+          "idSuffix": "7-b-i",
+          "questionText": "Calculate r.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            26
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.382,
+            0.96,
+            0.425
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(b)(ii)",
+          "idSuffix": "7-b-ii",
+          "questionText": "Draw a diagram to show the forces acting on the marble.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            26
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.455,
+            0.96,
+            0.598
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q7(b)(iii)",
+          "idSuffix": "7-b-iii",
+          "questionText": "Calculate the force which the bowl exerts on the marble.",
+          "topicId": "applied-mathematics-2-7",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-circular-motion"
+          ],
+          "paperPages": [
+            26,
+            27
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 12,
+          "schemeRegion": [
+            0.05,
+            0.628,
+            0.96,
+            0.702
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(a)(i) — Magnitude of c",
+          "idSuffix": "8-a-i",
+          "questionText": "Calculate the magnitude and direction of c.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-vectors"
+          ],
+          "paperPages": [
+            28
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.116
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "practiceFocus": "Magnitude of c"
+        },
+        {
+          "ref": "Q8(a)(i) — Direction of c",
+          "idSuffix": "8-a-i-direction",
+          "questionText": "Calculate the magnitude and direction of c.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-vectors"
+          ],
+          "paperPages": [
+            28
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.116,
+            0.96,
+            0.149
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate.",
+          "practiceFocus": "Direction of c"
+        },
+        {
+          "ref": "Q8(a)(ii)",
+          "idSuffix": "8-a-ii",
+          "questionText": "Express d in terms of i and j.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-vectors"
+          ],
+          "paperPages": [
+            28,
+            29
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.176,
+            0.96,
+            0.223
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(a)(iii)",
+          "idSuffix": "8-a-iii",
+          "questionText": "Calculate c · d, the dot product of c and d.",
+          "topicId": "applied-mathematics-2-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-vectors"
+          ],
+          "paperPages": [
+            28,
+            29
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.253,
+            0.96,
+            0.299
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(b)(i)",
+          "idSuffix": "8-b-i",
+          "questionText": "Calculate the number of monthly repayments Seán will make over 6 years.",
+          "topicId": "applied-mathematics-3-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            30
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.33,
+            0.96,
+            0.374
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(b)(ii)",
+          "idSuffix": "8-b-ii",
+          "questionText": "Show that the value, Y, in €, which Seán owes at the end of month n may be modelled by the difference equation: Yₙ₊₁ = 1.007Yₙ − A, where n ≥ 0, n ∈ ℤ and Y₀ = 24 000.",
+          "topicId": "applied-mathematics-3-1",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            30
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.403,
+            0.96,
+            0.447
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(b)(iii)",
+          "idSuffix": "8-b-iii",
+          "questionText": "Solve the difference equation to find an expression for Yₙ in terms of n and A.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            30
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.477,
+            0.96,
+            0.565
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q8(b)(iv)",
+          "idSuffix": "8-b-iv",
+          "questionText": "Calculate the value of each repayment A.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            30,
+            31
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 13,
+          "schemeRegion": [
+            0.05,
+            0.592,
+            0.96,
+            0.67
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q9(a)(i)",
+          "idSuffix": "9-a-i",
+          "questionText": "Using Kruskal’s algorithm, find the minimum spanning tree for the network of houses. Relevant supporting work must be shown.",
+          "topicId": "applied-mathematics-1-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ],
+          "paperPages": [
+            32
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.231
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                8,
+                14,
+                17,
+                20
+              ],
+              "guidance": "20: correct; 17: one systemic error; 14: two systemic errors; 8: a valid attempt; 0: no credit. Do not deduct systemic errors twice."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q9(a)(ii)",
+          "idSuffix": "9-a-ii",
+          "questionText": "Calculate the length of piping on your minimum spanning tree.",
+          "topicId": "applied-mathematics-1-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ],
+          "paperPages": [
+            32,
+            33
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.261,
+            0.96,
+            0.305
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q9(b)(i)",
+          "idSuffix": "9-b-i",
+          "questionText": "Write M, the adjacency matrix for this graph.",
+          "topicId": "applied-mathematics-1-1",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ],
+          "paperPages": [
+            34
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.334,
+            0.96,
+            0.431
+          ],
+          "allocations": [
+            {
+              "label": "Published deduction rule",
+              "credit": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": "Start at 10 and deduct 1 for each incorrect matrix entry. Select the resulting mark; do not deduct the same error again. A wholly unattempted response is not correct."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q9(b)(ii)",
+          "idSuffix": "9-b-ii",
+          "questionText": "Calculate M².",
+          "topicId": "applied-mathematics-1-1",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ],
+          "paperPages": [
+            34,
+            35
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.436,
+            0.96,
+            0.557
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                10
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q9(b)(iii)",
+          "idSuffix": "9-b-iii",
+          "questionText": "What information is provided by the elements of M²?",
+          "topicId": "applied-mathematics-1-1",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-networks-graphs"
+          ],
+          "paperPages": [
+            34,
+            35
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 14,
+          "schemeRegion": [
+            0.05,
+            0.583,
+            0.96,
+            0.627
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q10(a)(i)",
+          "idSuffix": "10-a-i",
+          "questionText": "Calculate P₂.",
+          "topicId": "applied-mathematics-3-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            36
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.06,
+            0.96,
+            0.114
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q10(a)(ii)",
+          "idSuffix": "10-a-ii",
+          "questionText": "Solve the characteristic equation, i.e. calculate the two roots of the equation.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            36
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.142,
+            0.96,
+            0.21
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q10(a)(iii)",
+          "idSuffix": "10-a-iii",
+          "questionText": "Hence solve the difference equation to find an expression for Pₙ in terms of n.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            36,
+            37
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.24,
+            0.96,
+            0.359
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 2",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 3",
+              "credit": [
+                0,
+                5
+              ]
+            },
+            {
+              "label": "Published step 4",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q10(a)(iv)",
+          "idSuffix": "10-a-iv",
+          "questionText": "Calculate P₆ to the nearest whole number.",
+          "topicId": "applied-mathematics-3-2",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-difference-equations"
+          ],
+          "paperPages": [
+            36,
+            37
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ],
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.387,
+            0.96,
+            0.433
+          ],
+          "allocations": [
+            {
+              "label": "Published step 1",
+              "credit": [
+                0,
+                5
+              ]
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        },
+        {
+          "ref": "Q10(b)",
+          "idSuffix": "10-b",
+          "questionText": "Using the graph or otherwise, derive an expression for s, the displacement of the particle at time t, in terms of u, a and t.",
+          "topicId": "applied-mathematics-2-0",
+          "examTopicIds": [
+            "applied-mathematics-ordinary-uniform-accelerated-motion"
+          ],
+          "paperPages": [
+            38
+          ],
+          "paperRegions": [
+            [
+              0.05,
+              0.06,
+              0.97,
+              0.915
+            ]
+          ],
+          "schemePage": 15,
+          "schemeRegion": [
+            0.05,
+            0.461,
+            0.96,
+            0.514
+          ],
+          "allocations": [
+            {
+              "label": "Published scale",
+              "credit": [
+                0,
+                4,
+                7,
+                10
+              ],
+              "guidance": "10: correct; 7: one systemic error; 4: two systemic errors or a valid attempt; 0: no credit. Do not deduct systemic errors twice."
+            }
+          ],
+          "stem": "Unless otherwise indicated, take g = 9.8 m s⁻². i and j denote perpendicular unit vectors in the horizontal and vertical directions, or east and north, as appropriate."
+        }
+      ],
+      "selectionDirectives": [
+        {
+          "page": 2,
+          "text": "Answer any eight questions.",
+          "decision": "Whole-examination choice; all ten questions are included."
+        },
+        {
+          "page": 38,
+          "text": "Using the graph or otherwise, derive an expression for s, the displacement of the particle at",
+          "decision": "Open choice of derivation method, not a finite task pool."
+        }
+      ],
+      "selectionReview": [
+        {
+          "wording": "Answer any eight questions.",
+          "decision": "Whole-examination choice; all ten questions are included."
+        },
+        {
+          "wording": "Using the graph or otherwise, derive an expression for s, the displacement of the particle at",
+          "decision": "Open choice of derivation method, not a finite task pool."
+        },
+        {
+          "wording": "Finite-looking networks, algorithm choices, paired values and classifications",
+          "decision": "No finite candidate answer pools occur. Network paths and campervan strategies are mathematical data in optimisation tasks. Another algorithm and one model assumption permit open valid answers. Homogeneous or inhomogeneous asks for a reasoned classification, not a choice of task. Paired numeric outputs follow the published mark placements."
+        }
+      ],
+      "markingGuideNote": "Use the published scale where printed. For other placements, select the published mark for the required working, then deduct 3 for a mathematical error or 1 for a slip or minor misreading. Select zero where no credit is earned. Do not deduct an error twice. Follow any specific matrix-entry deduction rule shown. Alternative valid methods are accepted.",
+      "boundaryReview": "Q1(b)(i) gives 5 to each force diagram. Q8(a)(i) gives 5 separately for magnitude and direction: the magnitude retains the shipped identity and direction has a new identity. Q6(i) components are intermediate steps in one requested vector with a shared final 5, so remain together. Q4(iv) is one 15-mark shortest-path task including the length. Q9(b)(i) is one adjacency matrix with one-mark entry deductions; Q9(b)(ii) is a single 10-mark multiplication placement, without a printed marking scale. Q10(a)(ii) both roots share a final 5. Required method steps and network edges are not answer-choice pools.",
+      "cardCorrections": [
+        {
+          "cardId": "am-2025-ol-1-a",
+          "originalBlockSha256": "868af1695952b74d772b4ddfb653fcb8113b17570208a75cba71a883afaf9d3c",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-1-b-ii",
+          "originalBlockSha256": "e49eb2efe14c62f178746fd3e572413a9e381e23f7718cb1895b242f00f0925e",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-1-b-iii",
+          "originalBlockSha256": "b40bfd2780827c8329870a79c07b5e299d3165a90bd91b30c101b3ce839e7176",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-2-a-i",
+          "originalBlockSha256": "12d0de588c5028a2f2cfaa61325c9d6b202305828c6377b1d896cf3338fe4e1e",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-2-a-ii",
+          "originalBlockSha256": "d5cb1354260c6c3b4f294bde1233bb40091eef37550d8a69e420b0679237fc3c",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-2-b-i",
+          "originalBlockSha256": "f4c5305a0f21655a8d9f42126c0fe511b78c025d394b7a0e2e4c76602c35e397",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-2-b-ii",
+          "originalBlockSha256": "64af0eb229e4fb9ca94c1589c6e1765bc7ac9e460aa0f662e3c13061bf894e06",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-2-b-iii",
+          "originalBlockSha256": "dae16457ed192a8ee7b4dc52b0277eb3e733abd2adec9d8da5a703e5777474a7",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-3-i",
+          "originalBlockSha256": "01b4f3e9709158433ba1e563eb0825bc863e6df0c514cafb8becdec538262c91",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-3-ii",
+          "originalBlockSha256": "8d2ac1a0797ebd369fb78d5054318102fd08e2a6c40d95effb4d42fb2d5159e3",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-3-iii",
+          "originalBlockSha256": "800ff2a2dd71f107746a59c94407d87e1a0a3defd6550b20ea544d15df7ebc59",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-3-iv",
+          "originalBlockSha256": "d6df809ddea99d3e5f1f302c2f9bab279b5b2609acebed8a462eebd3bcc5a269",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-3-v",
+          "originalBlockSha256": "8e38fd0d035f239dcf50e4d37290e2ebaceb61f7960308a1834cdc7908b491f6",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-4-i",
+          "originalBlockSha256": "3e726918917ab86ffd093fe7868ae91c9e091cfb71de1c528879ee5a1e41bb82",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-4-ii",
+          "originalBlockSha256": "81f10a931dd494567b1deac97bbcd5347acd9e68a8c2a972930741235fd452e6",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-4-iii",
+          "originalBlockSha256": "743dfb4a8f4cb857e85731c4ba2bd2e7a67eb456499c70917b9b94ec47bdfd1f",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-4-iv",
+          "originalBlockSha256": "0ac90298e8df09d728d48f100c17a8f28ca84f829f75f6eb25b15b055154e9b8",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-4-v",
+          "originalBlockSha256": "707df2520072754fed8e71f2368d97ca1d2ca2876ebd9fe797088129b9e6f603",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-4-vi",
+          "originalBlockSha256": "191b3b5b06c91bcb0ffa89d3534c184c4a5bf3cacf9cf2c82a0488724494fc53",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-5-a-i",
+          "originalBlockSha256": "93f10a6a538d02e9003a04792ced076aa73a2d1070748da9c848c3fd85fa7b90",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-5-a-ii",
+          "originalBlockSha256": "973a183de62927cc72778fd6672875ccfc61dcf6ed4a75ded4d673fcb50c2a8e",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-5-a-iii",
+          "originalBlockSha256": "cc67de8ba896dc07b80dd8a86dcce6f1d4631b7dea8f3471a183be3bb43ccb03",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-5-b-i",
+          "originalBlockSha256": "e11ef2b7c748dae5b06ffdba8a5b8bc07620666b2708e2912c94ad85ece133e3",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-5-b-ii",
+          "originalBlockSha256": "0ce48c98b4e14acac1d57a261a284f1bd35da6b7cedd07f957bdaf2d366a8edd",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-6-i",
+          "originalBlockSha256": "8d1f32b53844b89fe1f005a6ba02a9d4f6aec29aed692b940895cb5efd60e51f",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-6-ii",
+          "originalBlockSha256": "cac87eace8099042c4ea17b0e5381ee6b020e5e1e9fc75a533f951dc96c2c020",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-6-iii",
+          "originalBlockSha256": "b54098b77abb5469675a2a46f62539b1a1bd423c0c82af11e314411f6689927d",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-6-iv",
+          "originalBlockSha256": "1b4925ef6cec4214968b5aedffe0be982e7189f627cf2710b27c6e4dd0cb5219",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-6-v",
+          "originalBlockSha256": "3dca4fc47a68570ceeb90763e38134324b675a6bc2c399699c81539e594a0e76",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-7-a-i",
+          "originalBlockSha256": "ccb89ae8a62c33ba3145f6e66905bb483e8e15c08d0b21dd5875d4efc8c4d7b6",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-7-a-ii",
+          "originalBlockSha256": "5628f083cebe82980c7bac946f1dade307cbe317f707073006a8bdfa706d56d7",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-7-a-iii",
+          "originalBlockSha256": "d09000ae585ac9ddf4e277ef97216b48002dcf5d8200d37a30499bcdfcbc4c5d",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-7-b-i",
+          "originalBlockSha256": "511f13bd2fc16baab3c3ecda3cd30c9a90b5fbbc93877b2a77feb4f444e7ee9f",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-7-b-iii",
+          "originalBlockSha256": "97862f3c77a451ee0b78e280455a79b1539b3f2eead2c2f159da3dda7ea7a303",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-8-a-i",
+          "originalBlockSha256": "3070f53b6976c5aa169dab3ab2511764684a1f8b6a80f4a8a20f162c4150df20",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-8-a-ii",
+          "originalBlockSha256": "d1f556594a9f3de8162e03ffaf4b527bd07a9db37a545e1c04b250009fca622e",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-8-b-i",
+          "originalBlockSha256": "8f6c65e3a26db31afbd285faea8ad3e97db31070379363a29d259335e66266f2",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-8-b-ii",
+          "originalBlockSha256": "a6593eb0ee9252a20e77e8b64c0e9f24f728da4acd78e3187a6d1362c926fdac",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-8-b-iii",
+          "originalBlockSha256": "1f50c34c1b34821c76607a7c87ec917716c7c8669563471cdee996d792ccdd7f",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-8-b-iv",
+          "originalBlockSha256": "ce9e4336fa870877c976a8a5b0362ea8e8e61667eeea22140c1ad359dbc84367",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-9-a-i",
+          "originalBlockSha256": "576ccc02a05a38252c4017cad06976059a925f59ef9ef574c5ce5705f2a12308",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-9-a-ii",
+          "originalBlockSha256": "2ef5aac384f757b70014ccef576246b273cf233007112c69242af6f4d7d5646f",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-9-b-i",
+          "originalBlockSha256": "45510ef8583b7c370cfafa1736889c40d8aa86e75f0ea3b8ced91e24ed4f5cd7",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-9-b-iii",
+          "originalBlockSha256": "65d2964fe9789a555efc1ea72f43df3b6188c43c844bd50487c8a138c240cafa",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-10-a-i",
+          "originalBlockSha256": "719d267f3f325217bf75e01c9608ca6e0a7597b17d8a62a9af87d066505d6dc9",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-10-a-ii",
+          "originalBlockSha256": "b28b985ebe718424d56a79d79589d8fbe3756f14d29731eaa765884f2fa9a66f",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-10-a-iii",
+          "originalBlockSha256": "4ff42a8d7bf1bf2670d68353ef33173554e86d63d5017e4c9f7db762f0b1f4b7",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-10-a-iv",
+          "originalBlockSha256": "c9037b3a5bee2c39872cf68323ce1a4ad76e7bf899c5b77bc3efa0351eac58c4",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        },
+        {
+          "cardId": "am-2025-ol-10-b",
+          "originalBlockSha256": "06de81018af5af7dc8f1ce4b1b3608fc9d7f0cdf7021ac194a16b0a3469dba84",
+          "reason": "Independently rechecked against the paper and scheme. Restore the precise prompt, complete source context and published scoring while retaining this shipped identity. Separately marked outputs have explicit new identities."
+        }
+      ]
+    }
+  ]
+}

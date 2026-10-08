@@ -16,6 +16,9 @@ import { PAPER_TOPIC_TAGS } from '../paperTrail/topicTags';
 import accountingAuditJson from './accounting.json';
 import agriculturalScienceAuditJson from './agricultural-science.json';
 import appliedMathematicsAuditJson from './applied-mathematics.json';
+import appliedMathematicsReviewedQuestions from './applied-mathematics-reviewed-questions.json';
+import appliedMathematicsArchiveTopics from './applied-mathematics-archive-topics.json';
+import { findCanonicalTopic, resolveCurriculumSpecification } from '../../curriculumRegistry';
 import artRuntimeJson from './art-runtime.json';
 import biologyRuntimeJson from './biology-runtime.json';
 import businessRuntimeJson from './business-runtime.json';
@@ -830,6 +833,21 @@ const appliedMathematicsTopics: ExamTopicDefinition[] = appliedMathematicsLevels
   }),
 );
 
+// The reference menu omits some topics found in the reviewed SEC papers.
+// Resolve each addition through the specification for its examination year.
+// These are SEC review additions, not claimed reference-page data.
+for (const archive of appliedMathematicsArchiveTopics) {
+  const appliedArchiveSpecification = resolveCurriculumSpecification('applied-mathematics', archive.specificationYear)!;
+  const node = findCanonicalTopic(appliedArchiveSpecification, archive.curriculumNodeId);
+  if (!node) throw new Error(`Unknown Applied Mathematics archive node: ${archive.curriculumNodeId}`);
+  appliedMathematicsTopics.push({
+    id: archive.id, label: node.title, level: archive.level as PaperLevel,
+    sourcePath: appliedArchiveSpecification.sources[0].url,
+    officialQuestionKeys: [], mockQuestionCount: 0,
+    curriculumNodeIds: [node.id],
+  });
+}
+
 const APPLIED_MATHEMATICS_TAXONOMY: ExamTopicTaxonomy = {
   subjectId: appliedMathematicsAudit.subjectId,
   capturedAt: appliedMathematicsAudit.capturedAt,
@@ -838,7 +856,7 @@ const APPLIED_MATHEMATICS_TAXONOMY: ExamTopicTaxonomy = {
     id: `applied-mathematics-${level}`,
     label: appliedMathematicsAudit.levels[level].label,
     level,
-    topicIds: appliedMathematicsAudit.levels[level].topics.map((topic) => topic.id),
+    topicIds: appliedMathematicsTopics.filter(topic => topic.level === level).map(topic => topic.id),
   })),
   topics: appliedMathematicsTopics,
 };
@@ -4194,6 +4212,20 @@ for (const paper of PAPER_TOPIC_TAGS) {
       });
     }
   }
+}
+
+// SEC task review takes precedence over coarser reference headings. The
+// printed-question card belongs to the union of its independently reviewed
+// tasks, with each visually verified booklet identity and its hosted answer map.
+for (const question of appliedMathematicsReviewedQuestions) {
+  const level = question.level as PaperLevel;
+  FILE_QUESTION_TOPICS.set(fileQuestionKey(
+    'applied-mathematics', level, question.year, 'main', question.fileid,
+    question.n, 'single', question.lang as PaperLang,
+  ), question.topicIds);
+  QUESTION_TOPICS.set(questionKey(
+    'applied-mathematics', level, question.year, 'main', question.n,
+  ), question.topicIds);
 }
 
 for (const paper of PAPER_TOPIC_TAGS) {

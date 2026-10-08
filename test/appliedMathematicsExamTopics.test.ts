@@ -39,6 +39,11 @@ const higherLabels = [
   'Uniform Accelerated Motion',
   'Vectors',
   'Work, Power, Energy & Momentum',
+  'Relative Velocity',
+  'Statics & Centre of Gravity',
+  'Hydrostatics',
+  'Rigid Body Motion & Moments of Inertia',
+  "Simple Harmonic Motion & Hooke's Law",
 ];
 
 const ordinaryLabels = [
@@ -75,12 +80,12 @@ describe('Applied Mathematics exam-topic registry', () => {
   const taxonomy = examTopicTaxonomyFor('applied-mathematics')!;
   const baseline = appliedMathematicsBaselineJson as Baseline;
 
-  it('pins the exact level-aware reference menu, including empty buckets', () => {
+  it('retains the level-aware reference menu and adds verified archived mechanics', () => {
     expect(taxonomy).not.toBeNull();
     expect(taxonomy.groups.map(group => group.label)).toEqual(['Higher Level', 'Ordinary Level']);
     expect(taxonomy.topics.filter(topic => topic.level === 'higher').map(topic => topic.label)).toEqual(higherLabels);
     expect(taxonomy.topics.filter(topic => topic.level === 'ordinary').map(topic => topic.label)).toEqual(ordinaryLabels);
-    expect(topicsForSubject('applied-mathematics')).toHaveLength(33);
+    expect(topicsForSubject('applied-mathematics')).toHaveLength(38);
   });
 
   it('crosswalks every exam topic to real official-curriculum nodes', () => {
@@ -164,7 +169,7 @@ describe('Applied Mathematics exam-topic registry', () => {
     }
     expect(subjectAtlasStats('applied-mathematics')).toMatchObject({
       questions: 318,
-      topics: 33,
+      topics: 38,
       yearMin: 2010,
       yearMax: 2026,
     });

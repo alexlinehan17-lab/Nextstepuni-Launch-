@@ -24,6 +24,7 @@ import type { CardSourceMaterial } from '../../types/markBank';
 import CropView from '../PaperTrail/CropView';
 import { paperStoragePath, paperUrl } from '../PaperTrail/storage';
 import { vaultPdf } from '../PaperTrail/vaultDocs';
+import { resolveSubjectId } from '../../curriculumRegistry';
 
 interface SourceMaterialReaderProps {
   source: CardSourceMaterial;
@@ -65,10 +66,11 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   source, subjectId, year, paperFileid, documentKind = 'paper',
 }) => {
   const isIllustration = source.kind === 'source-illustration';
-  const isScheme = documentKind === 'scheme' || source.kind === 'marking-scheme';
-  const materialLabel = isScheme ? 'marking scheme'
+  const isScheme = documentKind === 'scheme' || source.kind === 'marking-scheme' || source.kind === 'source-scheme';
+  const materialLabel = source.kind === 'source-scheme' ? 'worked solution' : isScheme ? 'marking scheme'
     : source.kind === 'source-data' ? 'source material'
     : source.kind === 'exam-material' ? 'exam material'
+    : source.kind === 'source-paper' ? 'question pages'
     : isIllustration ? 'illustration sheet' : 'source text';
   const [open, setOpen] = useState(false);
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
@@ -82,14 +84,15 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const swipeStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
 
   const url = useMemo(() => paperUrl(paperStoragePath(
-    'lc', subjectId, year, isScheme ? 'scheme' : 'paper', withPdfExtension(paperFileid),
+    'lc', subjectId === 'applied-maths' ? resolveSubjectId(subjectId)! : subjectId, year,
+    isScheme ? 'scheme' : 'paper', withPdfExtension(paperFileid),
   )), [paperFileid, subjectId, year, isScheme]);
   const regions = useMemo(
-    () => source.pages.map(page => [{ p: page }]),
-    [source.pages],
+    () => source.pages.map((page, index) => [{ p: page, r: source.regions?.[index] }]),
+    [source.pages, source.regions],
   );
   const pageAriaLabel = useCallback(
-    (page: number) => `${source.label}, printed examination page ${page}, shown as an image — © State Examinations Commission`,
+    (page: number) => `${source.label}, PDF page ${page}, shown as an image — © State Examinations Commission`,
     [source.label],
   );
 
@@ -129,9 +132,11 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const goTo = useCallback((next: number) => {
     const index = clamp(next, source.pages.length - 1);
     setPageIndex(index);
-    const slide = trackRef.current?.children[index] as HTMLElement | undefined;
-    if (slide && typeof slide.scrollIntoView === 'function') {
-      slide.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    const track = trackRef.current;
+    if (track && typeof track.scrollTo === 'function') {
+      // Move only the page strip. scrollIntoView also scrolls the review behind
+      // this dialog, leaving the question displaced when the reader closes.
+      track.scrollTo({ left: index * track.clientWidth, behavior: 'smooth' });
     }
   }, [source.pages.length]);
 
@@ -283,7 +288,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
               aria-label={`Source page ${index + 1} of ${source.pages.length}`}
             >
               <div className="mb-source-reader-page-meta">
-                <span>Printed page {page}</span>
+                <span>{isScheme || source.kind === 'source-paper' ? 'PDF page' : 'Printed page'} {page}</span>
                 <span>{index + 1} / {source.pages.length}</span>
               </div>
               <div className="mb-source-reader-page-pan">
@@ -369,7 +374,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
           <span>{isScheme || source.kind === 'exam-material' ? 'Open' : 'Read'} {source.label}</span>
           <strong>{source.title}</strong>
           <small>
-            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {isScheme ? 'official marking guidance' : source.kind === 'source-data' ? 'original documents and graphics' : source.kind === 'exam-material' ? 'original examination material' : isIllustration ? 'official examination imagery' : 'exact examination text'}
+            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {source.kind === 'source-scheme' ? 'official worked solution' : isScheme ? 'official marking guidance' : source.kind === 'source-data' ? 'original documents and graphics' : source.kind === 'exam-material' ? 'original examination material' : isIllustration ? 'official examination imagery' : 'exact examination text'}
           </small>
         </span>
         <span className="mb-source-material-open" aria-hidden="true">

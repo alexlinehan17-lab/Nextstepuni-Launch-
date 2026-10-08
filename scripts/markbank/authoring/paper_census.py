@@ -2788,6 +2788,9 @@ def census_lcvp(subject, year, level):
 
 
 def census_subject(subject):
+    if subject == 'applied-maths':
+        from applied_census import census_applied_maths
+        return census_applied_maths()
     cfg = SUBJECTS.get(subject, {'mode': 'merged'})
     if cfg['mode'] == 'geography':
         path = os.path.join(
