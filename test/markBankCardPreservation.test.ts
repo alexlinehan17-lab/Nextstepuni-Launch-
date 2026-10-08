@@ -85,6 +85,8 @@ import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/appl
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
 import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
 import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
+import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
+import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 
 import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
@@ -760,6 +762,10 @@ const decks = [
    * retained; 652 added. Coursework remains outside the written-paper deck. */
   ['physical-education:higher', PE_HIGHER, 443, '016e4e0fc8439483aa514e706583844defa97c381582bef2dd8f3534e6020d3c'],
   ['physical-education:ordinary', PE_ORDINARY, 430, 'cc2cb42a83954fb54a963940544e041110c5a31dbe0cce4c4aff89877632ac21'],
+  // New Accounting decks, enrolled after the complete paper/scheme sweep,
+  // zero-open reconciliation and legacy Atlas/answer-ID preservation passed.
+  ['accounting:higher', ACCOUNTING_HIGHER, 726, '711926a26f0abeb18a4c26f8b6be51263c7d69ac2738aff715f05b4f8431667f'],
+  ['accounting:ordinary', ACCOUNTING_ORDINARY, 644, '0a35e37e0360979df909459b44024d1a62b749b268594b214bf620ebaf18db86'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -782,7 +788,7 @@ describe('Mark Bank card preservation', () => {
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
     // Politics adds 1,086 tasks; all previous subjects retain their IDs.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_169);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(23_539);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -839,7 +845,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:')
-        && !name.startsWith('politics-and-society:'))
+        && !name.startsWith('politics-and-society:') && !name.startsWith('accounting:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });

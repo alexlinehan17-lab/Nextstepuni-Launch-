@@ -3,3 +3,4 @@ import type { SecRubricCard, PhysicalEducationRubric } from '../../../../types/m
 import reviewed from './reviewed.json';
 
 export const REVIEWED_CARDS = reviewed.cards as (SecRubricCard & { rubric: PhysicalEducationRubric })[];
+

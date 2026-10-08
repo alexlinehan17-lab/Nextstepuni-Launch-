@@ -10,6 +10,7 @@ import { type PaperAnswerMap } from '../../types/paperTrail';
 import { PAPER_TRAIL_INDEX, PAPER_TRAIL_SUBJECTS } from '../../paperTrailData';
 import { paperAnswersPath, paperStoragePath, paperUrl } from './storage';
 import { type TopicSibling } from './topics';
+import accountingTaskRuntime from '../../data/examTopics/accounting-task-runtime.json';
 
 export interface ResolvedSibling {
   paperUrl: string;
@@ -114,6 +115,7 @@ export const HOSTED_ANSWER_OVERRIDES = new Set([
   'applied-mathematics|2025|LC020GLP000IV.pdf',
   'applied-mathematics|2026|LC020ALP000IV.pdf',
   'applied-mathematics|2026|LC020GLP000IV.pdf',
+  ...accountingTaskRuntime.reviewedPapers,
   'physics|2012|LC021ALP000EV.pdf',
   'physics|2024|LC021ALP000EV.pdf',
   'physics|2024|LC021ALP000IV.pdf',

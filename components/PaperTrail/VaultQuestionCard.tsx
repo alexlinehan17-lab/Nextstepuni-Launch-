@@ -17,6 +17,7 @@ import { BookOpenCheck, Check, ChevronDown, ExternalLink, Plus, Scale } from 'lu
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import { type PaperAnswerMap, type PaperAnswerQuestion } from '../../types/paperTrail';
 import CropView from './CropView';
+import SourceMaterialReader from '../MarkBank/SourceMaterialReader';
 import { paperRegionFor, schemeRegionFor } from './paperRegion';
 import { vaultPdf } from './vaultDocs';
 import {
@@ -189,6 +190,7 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
   ].filter(Boolean) as string[];
 
   const canReveal = state.s === 'ready' && state.schemeUrl !== null && state.q.mode === 'crop';
+  const isAccountingTask = sibling.subjectId === 'accounting' && state.s === 'ready' && Boolean(state.q.practiceTask);
 
   return (
     <div
@@ -232,12 +234,28 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
         // Stays light in dark mode too — the card itself is forced white
         // (design system), so a zinc-950 strip here read as a black band.
         <div className="px-3 pt-3 pb-1 bg-[#fafafa]">
-          <CropView
+          {state.q.practiceTask && (
+            <div className="px-1 pb-4" style={{ color: INK }}>
+              <p className="text-[13px] font-semibold whitespace-pre-line">{state.q.practiceTask.prompt}</p>
+              {state.q.practiceTask.focus && <p className="text-[13px] mt-2">{state.q.practiceTask.focus}</p>}
+              <p className="text-[12px] mt-2 font-semibold">{state.q.practiceTask.marks} marks · Full figures and instructions {isAccountingTask ? 'in the source reader' : 'below'}</p>
+            </div>
+          )}
+          {isAccountingTask ? (
+            <div className="mark-bank-theme pb-3">
+              <SourceMaterialReader subjectId={sibling.subjectId} year={sibling.year} paperFileid={sibling.fileid}
+                source={{ kind: 'source-table', label: `Question ${sibling.n}`, title: 'Figures, tables and instructions',
+                  pages: [...new Set(state.region.map(region => region.p))],
+                  regions: state.region.map(region => ({ ...region, r: region.r ?? [0, 0, 1, 1] })),
+                  presentationNote: 'Original examination pages, preserving every table, figure and adjustment.',
+                  attribution: '© State Examinations Commission' }} />
+            </div>
+          ) : <CropView
             pdf={state.pdf}
             region={state.region}
             ariaLabel={paperCropLabel}
             failText="Couldn’t render this question — open the full paper."
-          />
+          />}
         </div>
       ) : state.s === 'fallback' ? (
         <button onClick={onOpenInPaper} className="w-full text-left px-4 py-3 text-[13px]" style={{ color: '#5a5550' }}>
@@ -332,7 +350,16 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
                 <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-2 px-1" style={{ color: '#9e9186' }}>
                   Marking scheme — © State Examinations Commission
                 </p>
-                {schemePdf && state.s === 'ready' ? (
+                {isAccountingTask ? (
+                  <div className="mark-bank-theme">
+                    <SourceMaterialReader subjectId={sibling.subjectId} year={sibling.year} paperFileid={sibling.fileid}
+                      source={{ kind: 'marking-scheme', label: `Question ${sibling.n}`, title: 'Worked solution and mark allocation',
+                        pages: [...new Set(schemeRegionFor(state.q).map(region => region.p))],
+                        regions: schemeRegionFor(state.q).map(region => ({ ...region, r: region.r ?? [0, 0, 1, 1] })),
+                        presentationNote: 'Original SEC marking scheme. Use the allocation for this task; page numbers refer to the PDF.',
+                        attribution: '© State Examinations Commission' }} />
+                  </div>
+                ) : schemePdf && state.s === 'ready' ? (
                   <CropView pdf={schemePdf} region={schemeRegionFor(state.q)} />
                 ) : schemeFailed ? (
                   <p className="text-[12px] py-3 text-center" style={{ color: '#5a5550' }}>

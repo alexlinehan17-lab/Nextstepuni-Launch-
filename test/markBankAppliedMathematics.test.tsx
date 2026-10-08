@@ -51,7 +51,7 @@ describe('Applied Mathematics independently reviewed 2026 tasks', () => {
       ['ordinary', ORDINARY, '5457fa7f47995a3c74f439a7033728404ef1a719bb30cd4b404954c96174da33'],
     ] as const) {
       const source = readFileSync(`components/MarkBank/cards/applied-maths/${level}.ts`, 'utf8');
-      const originalIds = [...source.matchAll(/^    id: "([^"]+)"/gm)].map(match => match[1]);
+      const originalIds = [...source.matchAll(/^ {4}id: "([^"]+)"/gm)].map(match => match[1]);
       expect(idHash(originalIds.map(id => ({ id })))).toBe(hash);
       expect(idHash(deck.filter(item => originalIds.includes(item.id)))).toBe(hash);
       expect(new Set(deck.map(item => item.id)).size).toBe(deck.length);
@@ -359,10 +359,10 @@ describe('Applied Mathematics independently reviewed 2024 tasks', () => {
     for (const paper of review2024.papers) {
       const deck = paper.level === 'higher' ? HIGHER : ORDINARY;
       const source = readFileSync(`components/MarkBank/cards/applied-maths/${paper.level}.ts`, 'utf8');
-      const blocks = [...source.matchAll(/  \{\n    \.\.\.base,[\s\S]*?  \} as SecCard,/g)].map(match => match[0]);
+      const blocks = [...source.matchAll(/ {2}\{\n {4}\.\.\.base,[\s\S]*? {2}\} as SecCard,/g)].map(match => match[0]);
       expect(paper.cardCorrections).toHaveLength(paper.level === 'higher' ? 37 : 47);
       for (const correction of paper.cardCorrections) {
-        const block = blocks.find(value => value.match(/^    id: "([^"]+)"/m)?.[1] === correction.cardId)!;
+        const block = blocks.find(value => value.match(/^ {4}id: "([^"]+)"/m)?.[1] === correction.cardId)!;
         expect(createHash('sha256').update(block).digest('hex')).toBe(correction.originalBlockSha256);
         const matches = deck.filter(item => item.id === correction.cardId);
         expect(matches).toHaveLength(1);
@@ -434,10 +434,10 @@ describe('Applied Mathematics independently reviewed 2023 tasks', () => {
     for (const paper of review2023.papers) {
       const deck = paper.level === 'higher' ? HIGHER : ORDINARY;
       const source = readFileSync(`components/MarkBank/cards/applied-maths/${paper.level}.ts`, 'utf8');
-      const blocks = [...source.matchAll(/  \{\n    \.\.\.base,[\s\S]*?  \} as SecCard,/g)].map(match => match[0]);
+      const blocks = [...source.matchAll(/ {2}\{\n {4}\.\.\.base,[\s\S]*? {2}\} as SecCard,/g)].map(match => match[0]);
       expect(paper.cardCorrections).toHaveLength(paper.level === 'higher' ? 37 : 43);
       for (const correction of paper.cardCorrections) {
-        const block = blocks.find(value => value.match(/^    id: "([^"]+)"/m)?.[1] === correction.cardId)!;
+        const block = blocks.find(value => value.match(/^ {4}id: "([^"]+)"/m)?.[1] === correction.cardId)!;
         expect(createHash('sha256').update(block).digest('hex')).toBe(correction.originalBlockSha256);
         const matches = deck.filter(item => item.id === correction.cardId);
         expect(matches).toHaveLength(1);
@@ -498,10 +498,10 @@ describe('Applied Mathematics independently reviewed 2022 tasks', () => {
     for (const paper of review2022.papers) {
       const deck = paper.level === 'higher' ? HIGHER : ORDINARY;
       const source = readFileSync(`components/MarkBank/cards/applied-maths/${paper.level}.ts`, 'utf8');
-      const blocks = [...source.matchAll(/  \{\n    \.\.\.base,[\s\S]*?  \} as SecCard,/g)].map(match => match[0]);
+      const blocks = [...source.matchAll(/ {2}\{\n {4}\.\.\.base,[\s\S]*? {2}\} as SecCard,/g)].map(match => match[0]);
       expect(paper.cardCorrections).toHaveLength(paper.level === 'higher' ? 31 : 33);
       for (const correction of paper.cardCorrections) {
-        const block = blocks.find(value => value.match(/^    id: "([^"]+)"/m)?.[1] === correction.cardId)!;
+        const block = blocks.find(value => value.match(/^ {4}id: "([^"]+)"/m)?.[1] === correction.cardId)!;
         expect(createHash('sha256').update(block).digest('hex')).toBe(correction.originalBlockSha256);
         const matches = deck.filter(item => item.id === correction.cardId);
         expect(matches).toHaveLength(1);
@@ -563,10 +563,10 @@ describe('Applied Mathematics independently reviewed 2021 tasks', () => {
     for (const paper of review2021.papers) {
       const deck = paper.level === 'higher' ? HIGHER : ORDINARY;
       const source = readFileSync(`components/MarkBank/cards/applied-maths/${paper.level}.ts`, 'utf8');
-      const blocks = [...source.matchAll(/  \{\n    \.\.\.base,[\s\S]*?  \} as SecCard,/g)].map(match => match[0]);
+      const blocks = [...source.matchAll(/ {2}\{\n {4}\.\.\.base,[\s\S]*? {2}\} as SecCard,/g)].map(match => match[0]);
       expect(paper.cardCorrections).toHaveLength(paper.level === 'higher' ? 30 : 36);
       for (const correction of paper.cardCorrections) {
-        const block = blocks.find(value => value.match(/^    id: "([^"]+)"/m)?.[1] === correction.cardId)!;
+        const block = blocks.find(value => value.match(/^ {4}id: "([^"]+)"/m)?.[1] === correction.cardId)!;
         expect(createHash('sha256').update(block).digest('hex')).toBe(correction.originalBlockSha256);
         const matches = deck.filter(item => item.id === correction.cardId);
         expect(matches).toHaveLength(1);

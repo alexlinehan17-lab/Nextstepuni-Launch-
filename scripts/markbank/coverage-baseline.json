@@ -1,4 +1,19 @@
 {
+  "accounting": {
+    "cards": 1370,
+    "contentHash": "4d54ebe2ad4a70d4",
+    "coveragePct": 100.0,
+    "covered": 1370,
+    "excluded": 0,
+    "leaves": 1370,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 68,
+      "hash": "88fb291dee0789bc"
+    },
+    "refsHash": "f48c96eaa74f1ab8"
+  },
   "agricultural-science": {
     "cards": 869,
     "contentHash": "9e8d8bd3223f17cf",
@@ -632,6 +647,21 @@
     },
     "refsHash": "727a4af11e33aa55"
   },
+  "politics-and-society": {
+    "cards": 1086,
+    "contentHash": "437847dfb43e3f66",
+    "coveragePct": 100.0,
+    "covered": 1086,
+    "excluded": 0,
+    "leaves": 1086,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "6c53167dc5584a52"
+    },
+    "refsHash": "3cf17ae794dc92b8"
+  },
   "portuguese": {
     "cards": 173,
     "contentHash": "6cf7010f4bce4d9b",
@@ -781,20 +811,5 @@
       "hash": "8cb689ef44820e29"
     },
     "refsHash": "ced75cb491569d9f"
-  },
-  "politics-and-society": {
-    "cards": 1086,
-    "contentHash": "437847dfb43e3f66",
-    "coveragePct": 100.0,
-    "covered": 1086,
-    "excluded": 0,
-    "leaves": 1086,
-    "open": 0,
-    "orphans": 0,
-    "papers": {
-      "count": 17,
-      "hash": "6c53167dc5584a52"
-    },
-    "refsHash": "3cf17ae794dc92b8"
   }
 }

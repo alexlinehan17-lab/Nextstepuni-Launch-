@@ -1,0 +1,3566 @@
+{
+  "subjectId": "accounting",
+  "scope": "All local Paper Trail Accounting papers, 2010–2026, Higher and Ordinary, English and Irish",
+  "method": "Independent reconciliation of visually reviewed boundaries against source files, published parent tariffs, preserved sidecars, route combinations and generated artifacts. Runtime Atlas and canonical-topic checks are in markBankAccounting.test.tsx.",
+  "sourceReconciliationPassed": true,
+  "checks": 18624,
+  "openIssues": [],
+  "sourceEditions": 68,
+  "visuallyReviewedPages": {
+    "paper": 1056,
+    "scheme": 1630
+  },
+  "logicalTasks": 1370,
+  "selectionClassifications": {
+    "paper-level-choice": 441,
+    "open-response": 105,
+    "not-a-selection": 1129,
+    "finite-pool-expanded": 1,
+    "equivalent-units": 1,
+    "comparison-required": 1,
+    "closed-pool": 2
+  },
+  "explicitSchemeFallbacks": [
+    {
+      "edition": "2020/LC032ALP000IV.pdf",
+      "scheme": "paper-trail-corpus/markingschemes/2020/LC032ALP000EV.pdf",
+      "reason": "The local Paper Trail corpus has this Irish question paper but no matching 2020 Irish marking scheme. Use the same-year, same-level English marking scheme already visually reviewed in the pinned English review; do not claim an Irish scheme inspection."
+    },
+    {
+      "edition": "2020/LC032GLP000IV.pdf",
+      "scheme": "paper-trail-corpus/markingschemes/2020/LC032GLP000EV.pdf",
+      "reason": "The local Paper Trail corpus has this Irish question paper but no matching 2020 Irish marking scheme. Use the same-year, same-level English marking scheme already visually reviewed in the pinned English review; do not claim an Irish scheme inspection."
+    }
+  ],
+  "finitePools": [
+    {
+      "edition": "2022/LC032ALP000EV.pdf",
+      "task": "6(c)",
+      "choose": 2,
+      "options": 4,
+      "variants": [
+        "6(c)-going-concern-accruals",
+        "6(c)-going-concern-consistency",
+        "6(c)-going-concern-prudence",
+        "6(c)-accruals-consistency",
+        "6(c)-accruals-prudence",
+        "6(c)-consistency-prudence"
+      ],
+      "routeMarks": 10
+    }
+  ],
+  "parentReconciliation": [
+    {
+      "edition": "2010/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2010/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)-operating-reconciliation",
+        "2(a)-cash-flow",
+        "2(a)-net-debt",
+        "2(b)(i)",
+        "2(b)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2010/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)",
+        "3(d)(i)",
+        "3(d)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2010/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2010/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2010/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)",
+        "6(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2010/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2010/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(b)",
+        "8(c)(i)-department-x",
+        "8(c)(i)-department-y",
+        "8(c)(i)-department-z",
+        "8(c)(ii)-calculation",
+        "8(c)(ii)-interpretation"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2010/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2010/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2010/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2010/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2010/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2010/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(a)(v)-and-5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2010/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)-sales",
+        "6(b)-purchases",
+        "6(c)",
+        "6(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2010/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)(i)",
+        "7(c)(ii)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2010/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2010/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2011/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2011/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2011/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)-profit-and-loss",
+        "3(a)-notes",
+        "3(b)(i)",
+        "3(b)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2011/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2011/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2011/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)(i)",
+        "6(d)(ii)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2011/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2011/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)-break-even",
+        "8(a)-margin-of-safety",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)(i)",
+        "8(f)(ii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2011/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2011/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2011/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2011/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)",
+        "3(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2011/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)(i)",
+        "4(b)(ii)",
+        "4(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2011/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2011/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)",
+        "6(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2011/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2011/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2011/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2012/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2012/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2012/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)-land-buildings",
+        "3(a)-depreciation",
+        "3(a)-land-disposal",
+        "3(a)-buildings-disposal",
+        "3(a)-revaluation-reserve",
+        "3(a)-revenue-reserve",
+        "3(b)(i)",
+        "3(b)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2012/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)-cattle-and-milk",
+        "4(b)-sheep",
+        "4(c)",
+        "4(d)",
+        "4(e)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2012/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)(i)",
+        "5(c)(ii)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2012/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)",
+        "6(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2012/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)(i)",
+        "7(a)(ii)-operating-reconciliation",
+        "7(a)(ii)-cash-flow",
+        "7(a)(ii)-net-debt",
+        "7(b)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2012/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(a)(iii)-department-1",
+        "8(a)(iii)-department-2",
+        "8(a)(iv)",
+        "8(b)(i)",
+        "8(b)(ii)",
+        "8(b)(iii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2012/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2012/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2012/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2012/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2012/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)",
+        "4(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2012/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2012/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)-sales",
+        "6(b)-purchases",
+        "6(c)",
+        "6(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2012/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2012/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)",
+        "8(g)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2012/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)",
+        "9(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2013/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2013/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)",
+        "2(d)(i)",
+        "2(d)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2013/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2013/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)(i)",
+        "4(c)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2013/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2013/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)-profit-and-loss",
+        "6(a)-balance-sheet",
+        "6(a)-notes",
+        "6(b)(i)",
+        "6(b)(ii)-audit",
+        "6(b)(ii)-qualified-report"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2013/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2013/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(b)(i)-manufacturing",
+        "8(b)(i)-assembly",
+        "8(b)(i)-finishing",
+        "8(b)(ii)",
+        "8(c)(i)-department-a",
+        "8(c)(i)-department-b",
+        "8(c)(i)-department-c",
+        "8(c)(ii)-calculation",
+        "8(c)(ii)-explanation"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2013/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2013/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)",
+        "1(c)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2013/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)(i)",
+        "2(b)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2013/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2013/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2013/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2013/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2013/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2013/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2013/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2014/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2014/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)-operating-reconciliation",
+        "2(a)-cash-flow",
+        "2(a)-net-debt",
+        "2(b)(i)",
+        "2(b)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2014/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)-profit-and-loss",
+        "3(a)-notes",
+        "3(b)(i)",
+        "3(b)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2014/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)(i)",
+        "4(c)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2014/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2014/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)",
+        "6(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2014/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2014/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)-break-even",
+        "8(a)(i)-margin-of-safety",
+        "8(a)(ii)",
+        "8(a)(iii)",
+        "8(a)(iv)",
+        "8(a)(v)",
+        "8(b)(i)-marginal",
+        "8(b)(i)-absorption",
+        "8(b)(ii)-differences",
+        "8(b)(ii)-financial-reporting"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2014/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)(i)",
+        "9(e)(ii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2014/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2014/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)",
+        "2(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2014/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2014/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2014/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2014/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)",
+        "6(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2014/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2014/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)",
+        "8(g)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2014/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2015/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2015/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)",
+        "2(d)(i)",
+        "2(d)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2015/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2015/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)-cattle-and-milk",
+        "4(b)-sheep",
+        "4(c)",
+        "4(d)",
+        "4(e)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2015/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2015/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)(i)",
+        "6(a)(ii)-operating-reconciliation",
+        "6(a)(ii)-cash-flow",
+        "6(a)(ii)-net-debt",
+        "6(b)(i)",
+        "6(b)(ii)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2015/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)-concept",
+        "7(c)-importance"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2015/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(a)(iii)",
+        "8(b)(i)-production",
+        "8(b)(i)-other",
+        "8(b)(ii)",
+        "8(b)(iii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2015/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)(i)",
+        "9(c)(ii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2015/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2015/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2015/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2015/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2015/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2015/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2015/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)-sales",
+        "7(b)-purchases",
+        "7(c)",
+        "7(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2015/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)-production-fixed",
+        "8(a)-production-variable",
+        "8(a)-packing-fixed",
+        "8(a)-packing-variable",
+        "8(b)",
+        "8(c)",
+        "8(d)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2015/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)",
+        "9(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2016/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2016/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2016/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2016/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2016/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2016/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)",
+        "6(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2016/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)-profit-and-loss",
+        "7(a)-balance-sheet",
+        "7(a)-notes",
+        "7(b)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2016/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)-production-1",
+        "8(c)-production-2",
+        "8(d)",
+        "8(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2016/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2016/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2016/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2016/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2016/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2016/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2016/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2016/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)(i)",
+        "7(a)(ii)",
+        "7(b)",
+        "7(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2016/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)",
+        "8(g)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2016/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2017/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2017/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)-operating",
+        "2(a)-cash-flow",
+        "2(a)-net-debt",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2017/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)(i)",
+        "3(a)(ii)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2017/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2017/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2017/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)",
+        "6(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2017/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2017/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)-break-even",
+        "8(b)-margin-of-safety",
+        "8(c)",
+        "8(d)",
+        "8(e)-option-1",
+        "8(e)-option-2",
+        "8(e)-report",
+        "8(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2017/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)-unit-cost",
+        "9(d)-trading",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2017/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)",
+        "1(c)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2017/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)",
+        "2(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2017/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2017/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2017/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2017/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2017/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2017/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2017/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)",
+        "9(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2018/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2018/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)",
+        "2(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2018/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2018/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2018/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2018/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)-profit-loss",
+        "6(a)-balance-sheet",
+        "6(a)-notes",
+        "6(b)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2018/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2018/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(a)(iii)",
+        "8(b)(i)-a-variable",
+        "8(b)(i)-a-fixed",
+        "8(b)(i)-b-variable",
+        "8(b)(i)-b-fixed",
+        "8(b)(i)-c-variable",
+        "8(b)(i)-c-fixed",
+        "8(b)(ii)",
+        "8(b)(iii)",
+        "8(b)(iv)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2018/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)(i)",
+        "9(a)(ii)",
+        "9(a)(iii)",
+        "9(b)(i)-option-1",
+        "9(b)(i)-option-2",
+        "9(b)(ii)",
+        "9(c)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2018/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2018/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2018/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2018/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2018/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2018/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2018/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2018/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)",
+        "8(g)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2018/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2019/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2019/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2019/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)(i)-land-buildings",
+        "3(a)(i)-revaluation",
+        "3(a)(i)-repairs",
+        "3(a)(i)-depreciation",
+        "3(a)(i)-disposal",
+        "3(a)(i)-revenue-reserve",
+        "3(a)(ii)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2019/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2019/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2019/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2019/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)(i)",
+        "7(a)(ii)-operating",
+        "7(a)(ii)-cash-flow",
+        "7(a)(ii)-net-debt",
+        "7(b)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2019/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)-x",
+        "8(c)-y",
+        "8(d)",
+        "8(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2019/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)-unit-cost",
+        "9(d)-trading",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2019/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2019/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2019/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)",
+        "3(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2019/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)(i)",
+        "4(b)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2019/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2019/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2019/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2019/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)-production-fixed",
+        "8(a)-production-variable",
+        "8(a)-servicing-fixed",
+        "8(a)-servicing-variable",
+        "8(b)",
+        "8(c)",
+        "8(d)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2019/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)",
+        "9(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2020/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2020/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)-profit-loss",
+        "2(a)-notes",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2020/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2020/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)",
+        "4(d)",
+        "4(e)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2020/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2020/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)",
+        "6(d)",
+        "6(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2020/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2020/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)-break-even",
+        "8(a)(ii)-margin-of-safety",
+        "8(a)(iii)",
+        "8(a)(iv)",
+        "8(a)(v)",
+        "8(b)(i)",
+        "8(b)(ii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2020/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2020/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1(a)",
+        "1(b)",
+        "1(c)"
+      ],
+      "allRouteMarks": 120
+    },
+    {
+      "edition": "2020/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2020/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2020/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2020/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2020/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2020/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2020/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)",
+        "8(g)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2020/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2021/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)-manufacturing",
+        "1B(a)-trading-profit",
+        "1B(b)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2021/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2021/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)",
+        "3(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2021/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2021/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2021/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)-profit-loss",
+        "6(a)-balance-sheet",
+        "6(a)-notes",
+        "6(b)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2021/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)(i)",
+        "7(a)(ii)-operating-reconciliation",
+        "7(a)(ii)-cash-flow",
+        "7(a)(ii)-net-debt",
+        "7(b)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2021/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(b)(i)-manufacturing",
+        "8(b)(i)-assembly",
+        "8(b)(i)-finishing",
+        "8(b)(ii)",
+        "8(c)(i)-department-a",
+        "8(c)(i)-department-b",
+        "8(c)(i)-department-c",
+        "8(c)(ii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2021/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)(i)",
+        "9(a)(ii)",
+        "9(a)(iii)",
+        "9(b)(i)-option-1",
+        "9(b)(i)-option-2",
+        "9(b)(ii)",
+        "9(c)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2021/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2021/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)(i)",
+        "2(b)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2021/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2021/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)",
+        "4(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2021/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2021/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2021/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2021/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2021/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)",
+        "9(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2022/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2022/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)-operating-reconciliation",
+        "2(a)-cash-flow",
+        "2(a)-net-debt",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2022/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2022/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)(i)",
+        "4(a)(ii)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2022/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2022/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)-going-concern-accruals",
+        "6(c)-going-concern-consistency",
+        "6(c)-going-concern-prudence",
+        "6(c)-accruals-consistency",
+        "6(c)-accruals-prudence",
+        "6(c)-consistency-prudence"
+      ],
+      "allRouteMarks": 150
+    },
+    {
+      "edition": "2022/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2022/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)-production-1",
+        "8(c)-production-2",
+        "8(d)",
+        "8(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2022/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)-unit-cost",
+        "9(d)-trading",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2022/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)",
+        "1B(c)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2022/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2022/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2022/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2022/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2022/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2022/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2022/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)",
+        "8(g)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2022/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2023/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2023/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2023/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2023/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2023/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2023/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)-profit-loss",
+        "6(a)-balance-sheet",
+        "6(a)-notes",
+        "6(b)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2023/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2023/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)(a)",
+        "8(a)(ii)(b)",
+        "8(a)(iii)",
+        "8(a)(iv)",
+        "8(b)(i)",
+        "8(b)(ii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2023/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2023/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2023/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2023/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)",
+        "3(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2023/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2023/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2023/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2023/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)(i)",
+        "7(a)(ii)",
+        "7(b)",
+        "7(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2023/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)-production",
+        "8(a)-servicing",
+        "8(b)",
+        "8(c)",
+        "8(d)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2023/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)",
+        "9(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2024/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2024/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)-profit-loss",
+        "2(a)-notes",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2024/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)",
+        "3(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2024/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)",
+        "4(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2024/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2024/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)(i)",
+        "6(a)(ii)-operating-reconciliation",
+        "6(a)(ii)-cash-flow",
+        "6(a)(ii)-net-debt-reconciliation",
+        "6(b)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2024/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)(i)",
+        "7(b)(ii)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2024/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(a)(iii)",
+        "8(a)(v)",
+        "8(a)(iv)-breakeven",
+        "8(a)(iv)-margin-of-safety",
+        "8(b)(i)",
+        "8(b)(ii)",
+        "8(b)(iii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2024/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2024/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)",
+        "1B(c)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2024/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)(i)",
+        "2(b)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2024/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2024/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2024/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2024/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2024/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2024/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)",
+        "8(g)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2024/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2025/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2025/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)",
+        "2(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2025/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)(i)-land-buildings",
+        "3(a)(i)-depreciation",
+        "3(a)(i)-revaluation",
+        "3(a)(i)-disposal-land",
+        "3(a)(i)-disposal-buildings",
+        "3(a)(i)-revenue-reserve",
+        "3(a)(ii)",
+        "3(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2025/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2025/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2025/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2025/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2025/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2025/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)-unit-cost",
+        "9(d)-trading",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2025/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)",
+        "1B(c)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2025/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2025/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2025/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)",
+        "4(d)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2025/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2025/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2025/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2025/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)(i)",
+        "8(a)(ii)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2025/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)",
+        "9(f)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2026/LC032ALP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2026/LC032ALP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)-operating-reconciliation",
+        "2(a)-net-debt-reconciliation",
+        "2(a)-cash-flow",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2026/LC032ALP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)",
+        "3(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2026/LC032ALP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)",
+        "4(c)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2026/LC032ALP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(a)(v)",
+        "5(b)",
+        "5(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2026/LC032ALP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)-profit-loss",
+        "6(a)-balance-sheet",
+        "6(a)-notes",
+        "6(b)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2026/LC032ALP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2026/LC032ALP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)(i)",
+        "8(b)(ii)",
+        "8(c)",
+        "8(d)",
+        "8(e)(i)-calculation",
+        "8(e)(i)-meaning",
+        "8(e)(ii)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2026/LC032ALP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)",
+        "9(d)",
+        "9(e)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2026/LC032GLP000EV.pdf",
+      "question": 1,
+      "tasks": [
+        "1A(a)",
+        "1A(b)",
+        "1B(a)",
+        "1B(b)"
+      ],
+      "allRouteMarks": 240
+    },
+    {
+      "edition": "2026/LC032GLP000EV.pdf",
+      "question": 2,
+      "tasks": [
+        "2(a)",
+        "2(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2026/LC032GLP000EV.pdf",
+      "question": 3,
+      "tasks": [
+        "3(a)",
+        "3(b)(i)",
+        "3(b)(ii)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2026/LC032GLP000EV.pdf",
+      "question": 4,
+      "tasks": [
+        "4(a)",
+        "4(b)"
+      ],
+      "allRouteMarks": 60
+    },
+    {
+      "edition": "2026/LC032GLP000EV.pdf",
+      "question": 5,
+      "tasks": [
+        "5(a)(i)",
+        "5(a)(ii)",
+        "5(a)(iii)",
+        "5(a)(iv)",
+        "5(b)(i)",
+        "5(b)(ii)",
+        "5(b)(iii)",
+        "5(b)(iv)",
+        "5(c)",
+        "5(d)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2026/LC032GLP000EV.pdf",
+      "question": 6,
+      "tasks": [
+        "6(a)",
+        "6(b)",
+        "6(c)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2026/LC032GLP000EV.pdf",
+      "question": 7,
+      "tasks": [
+        "7(a)",
+        "7(b)",
+        "7(c)",
+        "7(d)",
+        "7(e)"
+      ],
+      "allRouteMarks": 100
+    },
+    {
+      "edition": "2026/LC032GLP000EV.pdf",
+      "question": 8,
+      "tasks": [
+        "8(a)",
+        "8(b)",
+        "8(c)",
+        "8(d)",
+        "8(e)",
+        "8(f)",
+        "8(g)"
+      ],
+      "allRouteMarks": 80
+    },
+    {
+      "edition": "2026/LC032GLP000EV.pdf",
+      "question": 9,
+      "tasks": [
+        "9(a)",
+        "9(b)",
+        "9(c)"
+      ],
+      "allRouteMarks": 80
+    }
+  ]
+}

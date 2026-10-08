@@ -114,6 +114,8 @@ import { CARDS as DCG_HIGHER } from '../components/MarkBank/cards/dcg/higher';
 import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary';
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
 import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
+import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
+import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -124,6 +126,7 @@ import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-educ
  *  row caps — which is how cards with 14 and 17 rows reached the deck. Adding a
  *  subject here is a required step of the pipeline, not a follow-up. */
 const SAMPLE_CARDS = [
+  ...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY,
   ...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY,
   ...PHYS_HIGHER, ...PHYS_ORDINARY, ...AGSCI_HIGHER, ...AGSCI_ORDINARY,
   ...BUS_HIGHER, ...BUS_ORDINARY, ...HE_HIGHER, ...HE_ORDINARY,
@@ -513,6 +516,8 @@ describe('the size manifest matches the decks it describes', () => {
   // The tool reads these counts to say which decks are ready WITHOUT importing
   // them. A stale count either hides a finished deck or offers an empty one.
   test.each([
+    ['accounting', 'higher', ACCOUNTING_HIGHER],
+    ['accounting', 'ordinary', ACCOUNTING_ORDINARY],
     ['biology', 'higher', BIO_HIGHER],
     ['biology', 'ordinary', BIO_ORDINARY],
     ['chemistry', 'higher', CHEM_HIGHER],

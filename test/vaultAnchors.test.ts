@@ -68,7 +68,7 @@ describe('audited hosted answer maps', () => {
   });
 
   it('keeps the 23 original Art and Physics overrides byte-identical to their reviewed source maps', () => {
-    const originalOverrides = [...HOSTED_ANSWER_OVERRIDES].filter(key => !key.startsWith('applied-mathematics|'));
+    const originalOverrides = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('art|') || key.startsWith('physics|'));
     expect(originalOverrides).toHaveLength(23);
     for (const key of originalOverrides) {
       const [subjectId, year, fileid] = key.split('|');

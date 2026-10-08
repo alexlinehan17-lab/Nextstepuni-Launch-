@@ -122,6 +122,9 @@ def shipped_cards(subject):
     "g-parent1") and paired each with the next card's citation, which
     invented five hundred phantom orphans in Business alone.
     """
+    if subject == 'accounting':
+        cards = json.load(open(os.path.join(DECKS, subject, 'authored.json'), encoding='utf-8'))['cards']
+        return [(c['id'], f"{c['year']} {'HL' if c['level'] == 'higher' else 'OL'} Q{c['taskKey']}") for c in cards]
     if subject == 'physical-education':
         # Same manifest as the runtime level modules; old identities are also
         # pinned independently by the generator and preservation regression.
@@ -507,6 +510,12 @@ def load_exclusions(subject):
 
 def reconcile_subject(subject, census=None):
     census = census or census_subject(subject)
+    if subject == 'accounting':
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('accounting_coverage', os.path.join(ROOT, 'scripts', 'markbank', 'accounting', 'coverage.py'))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module.reconcile_accounting(census)
     if subject == 'applied-maths':
         return reconcile_applied(census)
     if subject == 'geography':
@@ -654,7 +663,7 @@ def content_hash(subject):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if os.path.exists(path):
             h.update(open(path, 'rb').read())
-    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'accounting'):
         # These corpora are data-driven, so the manifest and factory can
         # materially change a runtime card even when the tiny exports do not.
         for name in ('factory.ts', 'authored.json'):
@@ -670,6 +679,15 @@ def papers_inventory(subject):
     only (gitignored), so a deleted or swapped paper would silently shrink
     the census — this pins their names and sizes."""
     import hashlib
+    if subject == 'accounting':
+        folder = os.path.join(ROOT, 'scripts', 'markbank', 'accounting')
+        rows = []
+        for kind in ('reviewed', 'correspondence'):
+            for name in sorted(os.listdir(os.path.join(folder, kind))):
+                if name.endswith('.json'):
+                    r = json.load(open(os.path.join(folder, kind, name), encoding='utf-8'))
+                    rows.append(f"{r['year']}:{r['fileid']}:{r['paperSha256']}:{r['schemeSha256']}")
+        return {'count': len(rows), 'hash': hashlib.sha256('\n'.join(sorted(rows)).encode()).hexdigest()[:16]}
     if subject == 'applied-maths':
         from applied_census import census_applied_maths
         editions = census_applied_maths()['sourceEditions']
@@ -693,7 +711,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]

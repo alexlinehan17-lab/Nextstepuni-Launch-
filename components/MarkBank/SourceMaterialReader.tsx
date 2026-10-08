@@ -67,7 +67,10 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 }) => {
   const isIllustration = source.kind === 'source-illustration';
   const isScheme = documentKind === 'scheme' || source.kind === 'marking-scheme' || source.kind === 'source-scheme';
-  const materialLabel = source.kind === 'source-scheme' ? 'worked solution' : isScheme ? 'marking scheme'
+  const isAccounting = subjectId === 'accounting';
+  const maxZoom = isAccounting ? 3 : 2;
+  const materialLabel = source.kind === 'source-scheme' || (isAccounting && isScheme) ? 'worked solution' : isScheme ? 'marking scheme'
+    : source.kind === 'source-table' ? 'accounting data'
     : source.kind === 'source-data' ? 'source material'
     : source.kind === 'exam-material' ? 'exam material'
     : source.kind === 'source-paper' ? 'question pages'
@@ -85,10 +88,15 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   const url = useMemo(() => paperUrl(paperStoragePath(
     'lc', subjectId === 'applied-maths' ? resolveSubjectId(subjectId)! : subjectId, year,
-    isScheme ? 'scheme' : 'paper', withPdfExtension(paperFileid),
-  )), [paperFileid, subjectId, year, isScheme]);
+    isScheme ? 'scheme' : 'paper', withPdfExtension(source.sourceFileid ?? paperFileid),
+  )), [paperFileid, source.sourceFileid, subjectId, year, isScheme]);
   const regions = useMemo(
-    () => source.pages.map((page, index) => [{ p: page, r: source.regions?.[index] }]),
+    () => source.pages.map((page, index) => {
+      const crop = source.regions?.[index];
+      if (!source.regions?.length) return [{ p: page }];
+      if (Array.isArray(source.regions[0])) return [{ p: page, r: Array.isArray(crop) ? crop : undefined }];
+      return source.regions.filter((region): region is { p: number; r: [number, number, number, number]; rotate?: 0 | 90 | 180 | 270 } => !Array.isArray(region) && region.p === page);
+    }),
     [source.pages, source.regions],
   );
   const pageAriaLabel = useCallback(
@@ -230,7 +238,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const modal = open && typeof document !== 'undefined' ? createPortal(
     <div className="mark-bank-theme mb-source-reader-overlay">
       <div
-        className="mb-source-reader-dialog"
+        className={`mb-source-reader-dialog${isAccounting ? ' mb-source-reader-accounting' : ''}`}
         role="dialog"
         aria-modal="true"
         aria-labelledby="mb-source-reader-title"
@@ -254,8 +262,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
             <span aria-live="polite">{Math.round(zoom * 100)}%</span>
             <button
               type="button"
-              onClick={() => setZoom(value => Math.min(2, Number((value + 0.25).toFixed(2))))}
-              disabled={zoom >= 2}
+              onClick={() => setZoom(value => Math.min(maxZoom, Number((value + 0.25).toFixed(2))))}
+              disabled={zoom >= maxZoom}
               aria-label="Zoom in"
               title="Zoom in"
             >
@@ -288,7 +296,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
               aria-label={`Source page ${index + 1} of ${source.pages.length}`}
             >
               <div className="mb-source-reader-page-meta">
-                <span>{isScheme || source.kind === 'source-paper' ? 'PDF page' : 'Printed page'} {page}</span>
+                <span>{isScheme || source.kind === 'source-paper' || source.kind === 'source-table' ? 'PDF page' : 'Printed page'} {page}</span>
                 <span>{index + 1} / {source.pages.length}</span>
               </div>
               <div className="mb-source-reader-page-pan">
@@ -303,6 +311,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
                       region={regions[index]}
                       rotation={source.pageRotations?.[page] ?? 0}
                       ariaLabel={pageAriaLabel}
+                      maxWidth={isAccounting ? 3300 : 900}
                       failText="This printed page could not be rendered. Open the original paper below."
                     />
                   ) : failed ? (
@@ -371,10 +380,10 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       <button type="button" ref={triggerRef} className="mb-source-material-trigger" onClick={show}>
         <span className="mb-source-material-icon"><PageStackIcon /></span>
         <span className="mb-source-material-copy">
-          <span>{isScheme || source.kind === 'exam-material' ? 'Open' : 'Read'} {source.label}</span>
+          <span>{isAccounting && isScheme ? 'Open worked solution' : source.kind === 'source-table' ? 'Open accounting data' : `${source.kind === 'marking-scheme' || source.kind === 'exam-material' ? 'Open' : 'Read'} ${source.label}`}</span>
           <strong>{source.title}</strong>
           <small>
-            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {source.kind === 'source-scheme' ? 'official worked solution' : isScheme ? 'official marking guidance' : source.kind === 'source-data' ? 'original documents and graphics' : source.kind === 'exam-material' ? 'original examination material' : isIllustration ? 'official examination imagery' : 'exact examination text'}
+            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {source.kind === 'source-scheme' ? 'official worked solution' : isScheme ? 'official marking guidance' : source.kind === 'source-table' ? 'original tables and figures' : source.kind === 'source-data' ? 'original documents and graphics' : source.kind === 'exam-material' ? 'original examination material' : isIllustration ? 'official examination imagery' : 'exact examination text'}
           </small>
         </span>
         <span className="mb-source-material-open" aria-hidden="true">

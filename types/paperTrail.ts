@@ -42,6 +42,8 @@ export interface PaperItem {
 export interface PaperAnswerSeg {
   p: number;
   r?: [number, number, number, number];
+  /** Additional clockwise display rotation for sideways source tables. */
+  rotate?: 0 | 90 | 180 | 270;
 }
 
 /** One question's anchor: where it sits on the paper, and where its answer lives
@@ -54,6 +56,8 @@ export interface PaperAnswerQuestion {
   /** Optional display label shown in the reveal header instead of "Question {n}",
    *  for papers whose questions restart per section (e.g. "Text II · Q1"). */
   label?: string;
+  /** A separately marked practice task whose complete context is in the crop. */
+  practiceTask?: { prompt: string; focus?: string | null; marks: number };
   /** Optional physical sequence within the paper. `n` is a stable card identity,
    *  so a later repair that recovers previously-colliding section-restart
    *  questions must not renumber shipped cards. In that exceptional case this

@@ -14,6 +14,7 @@
 import type { PaperLang, PaperLevel } from '../../types/paperTrail';
 import { PAPER_TOPIC_TAGS } from '../paperTrail/topicTags';
 import accountingAuditJson from './accounting.json';
+import accountingTaskRuntime from './accounting-task-runtime.json';
 import agriculturalScienceAuditJson from './agricultural-science.json';
 import appliedMathematicsAuditJson from './applied-mathematics.json';
 import appliedMathematicsReviewedQuestions from './applied-mathematics-reviewed-questions.json';
@@ -3511,6 +3512,21 @@ for (const runtime of directQuestionRuntime.subjects) {
       [...new Set(topicIds)],
     );
   }
+}
+
+// Separately priced, visually reviewed Accounting tasks use the same identity
+// and topic in Mark Bank and Atlas. Preserve every existing parent question.
+for (const task of accountingTaskRuntime.tasks) {
+  FILE_QUESTION_TOPICS.set(fileQuestionKey('accounting', task.level as PaperLevel,
+    task.year, 'main', task.fileid, task.n, 'single', 'ev'), task.topicIds);
+}
+// This reviewed departmental question is absent from the external reference.
+// Its older fileless association classifies Q4 but cannot create an Atlas row;
+// bind both preserved answer-map anchors explicitly so the parent stays visible.
+for (const lang of ['ev', 'iv'] as const) {
+  FILE_QUESTION_TOPICS.set(fileQuestionKey('accounting', 'higher', 2017, 'main',
+    `LC032ALP000${lang.toUpperCase()}.pdf`, '4', 'single', lang),
+  ['accounting-higher-final-accounts-sole-trader']);
 }
 
 /**

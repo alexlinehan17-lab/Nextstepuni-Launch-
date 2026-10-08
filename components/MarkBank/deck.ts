@@ -120,6 +120,17 @@ const mandarinChineseCurriculum = CURRICULUM.find(subject => subject.id === 'man
 const physicalEducationCurriculum = CURRICULUM.find(subject => subject.id === 'physical-education');
 if (!physicalEducationCurriculum) throw new Error('Canonical Physical Education curriculum is missing');
 if (!modernGreekCurriculum) throw new Error('Canonical Modern Greek curriculum is missing');
+const accountingCurriculum = CURRICULUM.find(subject => subject.id === 'accounting');
+if (!accountingCurriculum) throw new Error('Canonical Accounting curriculum is missing');
+
+// As for English above, this catalogue is an input to curriculumRegistry.
+// Cards resolve the specification by examination year in their lazy factory.
+export const ACCOUNTING_STRANDS: StrandRef[] = accountingCurriculum.strands.map(strand => ({
+  id: strand.id, label: 'Accounting', title: strand.name,
+  topics: strand.subtopics.filter(topic => Boolean(topic.id)).map(topic => ({
+    id: topic.id!, code: topic.id!.replace(/^accounting-/, '').replaceAll('-', '.'), title: topic.name,
+  })),
+}));
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -1711,6 +1722,7 @@ function legacyCatalogueStrands(subjectId: string): StrandRef[] {
 }
 
 export const SUBJECTS = [
+  { id: 'accounting', title: 'Accounting', strands: ACCOUNTING_STRANDS, spec: 'outgoing Accounting syllabus' },
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
   { id: 'physics', title: 'Physics', strands: PHYSICS_STRANDS, spec: 'redeveloped specification' },
@@ -1764,7 +1776,6 @@ export const SUBJECTS = [
   { id: 'mandarin-chinese', title: 'Mandarin Chinese', strands: MANDARIN_CHINESE_STRANDS, spec: 'Leaving Certificate Mandarin Chinese specification, first examined 2022' },
   { id: 'ukrainian', title: 'Ukrainian', strands: UKRAINIAN_STRANDS, spec: 'Leaving Certificate Ukrainian, a non-curricular EU language, first examined 2025' },
   { id: 'dcg', title: 'Design and Communication Graphics', strands: DCG_STRANDS, spec: 'Leaving Certificate Design and Communication Graphics syllabus' },
-  { id: 'accounting', title: 'Accounting', strands: legacyCatalogueStrands('accounting'), spec: 'Leaving Certificate Accounting syllabus' },
   { id: 'music', title: 'Music', strands: legacyCatalogueStrands('music'), spec: 'Leaving Certificate Music syllabus' },
   { id: 'physics-and-chemistry', title: 'Physics and Chemistry', strands: legacyCatalogueStrands('physics-and-chemistry'), spec: 'Leaving Certificate Physics and Chemistry syllabus' },
 ] as const;
@@ -1975,6 +1986,10 @@ const DECKS: Record<string, Partial<Record<Level, () => Promise<{ CARDS: SecCard
   dcg: {
     higher: () => import('./cards/dcg/higher'),
     ordinary: () => import('./cards/dcg/ordinary'),
+  },
+  accounting: {
+    higher: () => import('./cards/accounting/higher'),
+    ordinary: () => import('./cards/accounting/ordinary'),
   },
   biology: {
     higher: () => import('./cards/biology/higher'),

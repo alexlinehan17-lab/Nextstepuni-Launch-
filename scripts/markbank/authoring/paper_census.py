@@ -55,6 +55,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
 # mode + how a component code maps to a display name. Subjects not listed use
 # 'merged' with no component split.
 SUBJECTS = {
+    'accounting': {'mode': 'accounting-reviewed'},
     'biology': {'mode': 'merged'},
     'chemistry': {'mode': 'merged'},
     'physics': {'mode': 'merged'},
@@ -2788,6 +2789,12 @@ def census_lcvp(subject, year, level):
 
 
 def census_subject(subject):
+    if subject == 'accounting':
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('accounting_coverage', os.path.join(ROOT, 'scripts', 'markbank', 'accounting', 'coverage.py'))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module.census_accounting()
     if subject == 'applied-maths':
         from applied_census import census_applied_maths
         return census_applied_maths()
