@@ -19,6 +19,7 @@ export interface StudentHomeContentProps {
   userAvatarSeed?: string;
   hasUnreadNotifications?: boolean;
   onOpenMobileProfile?: () => void;
+  onOpenFeedback?: () => void;
   allCourses: CourseData[];
   userProgress: Record<string, { unlockedSection: number }>;
   categoryTitles: Record<string, string>;
@@ -35,7 +36,7 @@ export interface StudentHomeContentProps {
   onOpenTool?: (id: string) => void;
 }
 
-export default function StudentHomeContent({ uid, userName, userAvatarSeed, hasUnreadNotifications, onOpenMobileProfile, allCourses, userProgress, categoryTitles, studySessions = [], pointsBalance = 0, onSelectModule, onGoToStudy, onGoToModules, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToInnovationZone }: StudentHomeContentProps) {
+export default function StudentHomeContent({ uid, userName, userAvatarSeed, hasUnreadNotifications, onOpenMobileProfile, onOpenFeedback, allCourses, userProgress, categoryTitles, studySessions = [], pointsBalance = 0, onSelectModule, onGoToStudy, onGoToModules, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToInnovationZone }: StudentHomeContentProps) {
   const now = new Date();
   const visit = getLastVisit(uid);
   const recent = visit && Date.now() - visit.at <= 21 * 86400000 ? visit : null;
@@ -50,7 +51,13 @@ export default function StudentHomeContent({ uid, userName, userAvatarSeed, hasU
     { title: 'Launchpad', copy: 'Your tools for the work ahead.', action: 'Open your toolkit', icon: <InnovationZoneIcon />, go: onGoToInnovationZone, coach: 'launchpad' },
   ];
   return <main className="student-home">
-    <div className="sh-date"><span className="student-eyebrow">{now.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' })}</span>{onOpenMobileProfile && <button type="button" className="sh-profile" onClick={onOpenMobileProfile} aria-label="Open profile and settings"><Avatar seed={userAvatarSeed || userName || 'student'} className="h-10 w-10" />{hasUnreadNotifications && <i aria-label="Unread notifications" />}</button>}</div>
+    <div className="sh-date">
+      <span className="student-eyebrow">{now.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' })}</span>
+      <div className="sh-home-actions">
+        {onOpenFeedback && <button type="button" className="sh-feedback" onClick={onOpenFeedback} aria-haspopup="dialog">Feedback <ArrowUpRight size={16} aria-hidden="true" /></button>}
+        {onOpenMobileProfile && <button type="button" className="sh-profile" onClick={onOpenMobileProfile} aria-label="Open profile and settings"><Avatar seed={userAvatarSeed || userName || 'student'} className="h-10 w-10" />{hasUnreadNotifications && <i aria-label="Unread notifications" />}</button>}
+      </div>
+    </div>
     <section className="sh-hero" aria-label="Welcome home">
       <div className="sh-greeting"><h1>{greeting}{firstName ? ',' : '.'}{firstName && <><br /><em>{firstName}.</em></>}</h1><p>Make a little room for what comes next.</p>{onGoToStudy && <button type="button" className="student-primary" data-coach="study" onClick={onGoToStudy}>Start a study session <ArrowUpRight size={21} /></button>}</div>
       <FieldNotes sessions={studySessions} onProgress={onGoToDashboard} />

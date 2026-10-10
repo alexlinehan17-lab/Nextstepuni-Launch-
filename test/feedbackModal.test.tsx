@@ -132,4 +132,27 @@ describe('anonymous feedback modal', () => {
     expect(feedbackSubmissionErrorMessage({ code: 'functions/resource-exhausted' }))
       .toBe('You have sent several messages today. Please try again tomorrow.');
   });
+
+  test('follows the visible viewport when a phone keyboard opens and removes listeners on close', () => {
+    const viewport = Object.assign(new EventTarget(), { height: 844, offsetTop: 0, scale: 1 });
+    const original = Object.getOwnPropertyDescriptor(window, 'visualViewport');
+    Object.defineProperty(window, 'visualViewport', { configurable: true, value: viewport });
+    try {
+      const { unmount } = render(<FeedbackModal open onClose={vi.fn()} />);
+      const overlay = screen.getByRole('dialog').parentElement!;
+      expect(overlay.style.getPropertyValue('--feedback-viewport-height')).toBe('844px');
+      viewport.height = 420;
+      viewport.offsetTop = 40;
+      viewport.dispatchEvent(new Event('resize'));
+      expect(overlay.style.getPropertyValue('--feedback-viewport-height')).toBe('420px');
+      expect(overlay.style.getPropertyValue('--feedback-viewport-top')).toBe('40px');
+      const remove = vi.spyOn(viewport, 'removeEventListener');
+      unmount();
+      expect(remove).toHaveBeenCalledWith('resize', expect.any(Function));
+      expect(remove).toHaveBeenCalledWith('scroll', expect.any(Function));
+    } finally {
+      if (original) Object.defineProperty(window, 'visualViewport', original);
+      else Reflect.deleteProperty(window, 'visualViewport');
+    }
+  });
 });

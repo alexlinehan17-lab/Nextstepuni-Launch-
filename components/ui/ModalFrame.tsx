@@ -1,4 +1,4 @@
-import React, { useId, useRef } from 'react';
+import React, { useEffect, useId, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { X } from 'lucide-react';
@@ -23,6 +23,7 @@ const widths = { sm: 'max-w-md', md: 'max-w-xl', lg: 'max-w-3xl', xl: 'max-w-5xl
 /** Paper-and-outline modal shell with shared accessibility and motion. */
 const ModalFrame: React.FC<ModalFrameProps> = ({ open, onClose, title, eyebrow, description, children, footer, width = 'md', labelledBy, variant = 'standard', closeDisabled = false }) => {
   const dialogRef = useRef<HTMLElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
   const labelId = labelledBy ?? titleId;
   const requestClose = () => { if (!closeDisabled) onClose(); };
@@ -30,10 +31,47 @@ const ModalFrame: React.FC<ModalFrameProps> = ({ open, onClose, title, eyebrow, 
   const reduceMotion = useReducedMotion();
   const isListeningRoom = variant === 'listening-room';
 
+  // iOS keeps the layout viewport behind the keyboard. Fit the feedback sheet
+  // to the visible area so its header and scrollable form remain reachable.
+  useEffect(() => {
+    const viewport = window.visualViewport;
+    if (!open || !isListeningRoom || !viewport) return;
+    let previousHeight = viewport.height;
+    let focusFrame = 0;
+    const updateViewport = () => {
+      // Preserve browser pinch zoom rather than resizing the dialog around it.
+      if (viewport.scale !== 1) return;
+      overlayRef.current?.style.setProperty('--feedback-viewport-height', `${viewport.height}px`);
+      overlayRef.current?.style.setProperty('--feedback-viewport-top', `${viewport.offsetTop}px`);
+      if (viewport.height < previousHeight) {
+        cancelAnimationFrame(focusFrame);
+        focusFrame = requestAnimationFrame(() => {
+          const field = document.activeElement;
+          const scroll = dialogRef.current?.querySelector<HTMLElement>('.feedback-scroll');
+          if (!(field instanceof HTMLElement) || !field.matches('input, textarea') || !scroll?.contains(field)) return;
+          const bounds = scroll.getBoundingClientRect();
+          const input = field.getBoundingClientRect();
+          if (input.bottom > bounds.bottom) scroll.scrollTop += input.bottom - bounds.bottom + 12;
+          else if (input.top < bounds.top) scroll.scrollTop += input.top - bounds.top - 12;
+        });
+      }
+      previousHeight = viewport.height;
+    };
+    updateViewport();
+    viewport.addEventListener('resize', updateViewport);
+    viewport.addEventListener('scroll', updateViewport);
+    return () => {
+      cancelAnimationFrame(focusFrame);
+      viewport.removeEventListener('resize', updateViewport);
+      viewport.removeEventListener('scroll', updateViewport);
+    };
+  }, [open, isListeningRoom]);
+
   return createPortal(
     <AnimatePresence>
       {open && (
         <motion.div
+          ref={overlayRef}
           data-lenis-prevent
           /* Modals render outside .product-shell, so the dark compat layer never
              reached their hard-coded light surfaces -- white panels kept
