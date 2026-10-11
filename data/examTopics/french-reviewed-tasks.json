@@ -1,5 +1,369 @@
 [
   {
+    "cardId": "fr-2014-hl-writing-b1a",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000EV.pdf",
+    "n": "B1A",
+    "parent": "B1A",
+    "topicIds": [
+      "french-higher-opinion-animals-nature-and-the-environment"
+    ],
+    "topicId": "french-7-0",
+    "pages": [
+      2,
+      3,
+      6
+    ],
+    "label": "Section B · Q1(a)"
+  },
+  {
+    "cardId": "fr-2014-hl-writing-b1b",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000EV.pdf",
+    "n": "B1B",
+    "parent": "B1B",
+    "topicIds": [
+      "french-higher-opinion-youth-teenagers-and-families"
+    ],
+    "topicId": "french-7-7",
+    "pages": [
+      4,
+      5,
+      6
+    ],
+    "label": "Section B · Q1(b)"
+  },
+  {
+    "cardId": "fr-2014-hl-writing-b2a",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000EV.pdf",
+    "n": "B2A",
+    "parent": "B2A",
+    "topicIds": [
+      "french-higher-write-a-diary"
+    ],
+    "topicId": "french-6-0",
+    "pages": [
+      8
+    ],
+    "label": "Section B · Q2(a)"
+  },
+  {
+    "cardId": "fr-2014-hl-writing-b2b",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000EV.pdf",
+    "n": "B2B",
+    "parent": "B2B",
+    "topicIds": [
+      "french-higher-write-an-email"
+    ],
+    "topicId": "french-6-3",
+    "pages": [
+      8
+    ],
+    "label": "Section B · Q2(b)"
+  },
+  {
+    "cardId": "fr-2014-hl-writing-b3a",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000EV.pdf",
+    "n": "B3A",
+    "parent": "B3A",
+    "topicIds": [
+      "french-higher-opinion-technology-and-media"
+    ],
+    "topicId": "french-7-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q3(a)"
+  },
+  {
+    "cardId": "fr-2014-hl-writing-b3b",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000EV.pdf",
+    "n": "B3B",
+    "parent": "B3B",
+    "topicIds": [
+      "french-higher-opinion-youth-teenagers-and-families"
+    ],
+    "topicId": "french-7-7",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q3(b)"
+  },
+  {
+    "cardId": "fr-2014-hl-writing-b4a",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000EV.pdf",
+    "n": "B4A",
+    "parent": "B4A",
+    "topicIds": [
+      "french-higher-opinion-health"
+    ],
+    "topicId": "french-7-2",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q4(a)"
+  },
+  {
+    "cardId": "fr-2014-hl-writing-b4b",
+    "subjectId": "french",
+    "level": "higher",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010ALP000EV.pdf",
+    "n": "B4B",
+    "parent": "B4B",
+    "topicIds": [
+      "french-higher-opinion-politics-social-issues-and-equality"
+    ],
+    "topicId": "french-7-4",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q4(b)"
+  },
+  {
+    "cardId": "fr-2014-ol-writing-b1b-field-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1B-field-1",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q1(b) · field 1"
+  },
+  {
+    "cardId": "fr-2014-ol-writing-b1b-field-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1B-field-2",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q1(b) · field 2"
+  },
+  {
+    "cardId": "fr-2014-ol-writing-b1b-field-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1B-field-3",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q1(b) · field 3"
+  },
+  {
+    "cardId": "fr-2014-ol-writing-b1b-field-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1B-field-4",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q1(b) · field 4"
+  },
+  {
+    "cardId": "fr-2014-ol-writing-b1b-field-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1B-field-5",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q1(b) · field 5"
+  },
+  {
+    "cardId": "fr-2014-ol-writing-b1b-route-6789",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1B-route-6789",
+    "parent": "B1B",
+    "topicIds": [
+      "french-ordinary-fill-in-a-form"
+    ],
+    "topicId": "french-6-5",
+    "pages": [
+      11
+    ],
+    "label": "Section B · Q1(b) · points 6, 7, 8, 9"
+  },
+  {
+    "cardId": "fr-2014-ol-writing-b2a-route-123",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B2A-route-123",
+    "parent": "B2A",
+    "topicIds": [
+      "french-ordinary-write-a-message"
+    ],
+    "topicId": "french-6-2",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q2(a) · points 1, 2, 3"
+  },
+  {
+    "cardId": "fr-2014-ol-writing-b2b-route-123",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B2B-route-123",
+    "parent": "B2B",
+    "topicIds": [
+      "french-ordinary-write-a-postcard"
+    ],
+    "topicId": "french-6-4",
+    "pages": [
+      12
+    ],
+    "label": "Section B · Q2(b) · points 1, 2, 3"
+  },
+  {
+    "cardId": "fr-2014-ol-writing-b3a-route-123",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B3A-route-123",
+    "parent": "B3A",
+    "topicIds": [
+      "french-ordinary-write-a-diary"
+    ],
+    "topicId": "french-6-0",
+    "pages": [
+      14
+    ],
+    "label": "Section B · Q3(a) · points 1, 2, 3"
+  },
+  {
+    "cardId": "fr-2014-ol-writing-b3b-route-123",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B3B-route-123",
+    "parent": "B3B",
+    "topicIds": [
+      "french-ordinary-write-a-letter"
+    ],
+    "topicId": "french-6-1",
+    "pages": [
+      14
+    ],
+    "label": "Section B · Q3(b) · points 1, 2, 3"
+  },
+  {
     "cardId": "fr-2015-hl-writing-b1a",
     "subjectId": "french",
     "level": "higher",
@@ -31802,6 +32166,206 @@
     "subjectId": "french",
     "level": "ordinary",
     "year": 2015,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1A-gap-10",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q1(a) · gap 10"
+  },
+  {
+    "cardId": "fr-2014-ol-cloze-b1a-gap-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1A-gap-1",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q1(a) · gap 1"
+  },
+  {
+    "cardId": "fr-2014-ol-cloze-b1a-gap-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1A-gap-2",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q1(a) · gap 2"
+  },
+  {
+    "cardId": "fr-2014-ol-cloze-b1a-gap-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1A-gap-3",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q1(a) · gap 3"
+  },
+  {
+    "cardId": "fr-2014-ol-cloze-b1a-gap-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1A-gap-4",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q1(a) · gap 4"
+  },
+  {
+    "cardId": "fr-2014-ol-cloze-b1a-gap-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1A-gap-5",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q1(a) · gap 5"
+  },
+  {
+    "cardId": "fr-2014-ol-cloze-b1a-gap-6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1A-gap-6",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q1(a) · gap 6"
+  },
+  {
+    "cardId": "fr-2014-ol-cloze-b1a-gap-7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1A-gap-7",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q1(a) · gap 7"
+  },
+  {
+    "cardId": "fr-2014-ol-cloze-b1a-gap-8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1A-gap-8",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q1(a) · gap 8"
+  },
+  {
+    "cardId": "fr-2014-ol-cloze-b1a-gap-9",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
+    "sitting": "main",
+    "paperKey": "single",
+    "lang": "ev",
+    "fileid": "LC010GLP000EV.pdf",
+    "n": "B1A-gap-9",
+    "parent": "B1A",
+    "topicIds": [
+      "french-ordinary-fill-in-the-gaps"
+    ],
+    "topicId": "french-6-6",
+    "pages": [
+      10
+    ],
+    "label": "Section B · Q1(a) · gap 9"
+  },
+  {
+    "cardId": "fr-2014-ol-cloze-b1a-gap-10",
+    "subjectId": "french",
+    "level": "ordinary",
+    "year": 2014,
     "sitting": "main",
     "paperKey": "single",
     "lang": "ev",

@@ -16,12 +16,12 @@ import { frenchMarks, frenchScoreId, FRENCH_ATTEMPT_ID } from '../components/Mar
 const deck = [...higher, ...ordinary];
 const correctedReadingIds = new Set(readingReview.papers.flatMap(paper => Object.values(paper.preservedCardIds ?? {})));
 
-describe('reviewed 2015–2026 French writing tasks', () => {
-  it('adds all 450 reviewed units while preserving the 260 existing identities', () => {
-    expect(cards).toHaveLength(450);
-    expect(cards.filter(card => card.level === 'higher')).toHaveLength(96);
-    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(354);
-    expect(deck).toHaveLength(2214);
+describe('reviewed 2014–2026 French writing tasks', () => {
+  it('adds all 468 reviewed units while preserving the 260 existing identities', () => {
+    expect(cards).toHaveLength(468);
+    expect(cards.filter(card => card.level === 'higher')).toHaveLength(104);
+    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(364);
+    expect(deck).toHaveLength(2242);
     expect(new Set(deck.map(card => card.id)).size).toBe(deck.length);
     for (const old of legacy) {
       const live = deck.find(card => card.id === old.id)!;
@@ -98,7 +98,7 @@ describe('reviewed 2015–2026 French writing tasks', () => {
   });
 
   it('lifts each year’s printed communication tariff line rather than one shared paraphrase', () => {
-    // 2015–2021 schemes print "Two points" on every task; from 2022 the message and
+    // 2014–2021 schemes print "Two points" on every task; from 2022 the message and
     // postcard (B2A/B2B) print "Two parts" while the diary and letter keep "Two points".
     const seen = new Map<string, number>();
     for (const card of cards.filter(card => /-writing-b[23][ab]-route-/.test(card.id))) {
@@ -110,7 +110,7 @@ describe('reviewed 2015–2026 French writing tasks', () => {
         seen.set(word, (seen.get(word) ?? 0) + 1);
       }
     }
-    expect(Object.fromEntries(seen)).toEqual({ points: 492, parts: 300 });
+    expect(Object.fromEntries(seen)).toEqual({ points: 504, parts: 300 });
   });
 
   it('keeps the 2015 email, boxed quotation and task-specific language descriptors', () => {
@@ -137,6 +137,49 @@ describe('reviewed 2015–2026 French writing tasks', () => {
     const field = group.find(card => card.id === 'fr-2015-ol-writing-b1b-field-5')!;
     expect(field.rubric.criteria[0].guidance).toEqual(['Level of French – accept any level']);
     expect(field.rubric.taskRequirements).toEqual([]);
+  });
+
+  it('keeps the 2014 cartoon, boxed article and the printed tense rule on every Ordinary task', () => {
+    const group = cards.filter(card => card.year === 2014);
+    expect(group).toHaveLength(18);
+    expect(group.filter(card => card.level === 'higher').map(card => card.totalMarks))
+      .toEqual([40, 40, 30, 30, 30, 30, 30, 30]);
+    const cartoon = group.find(card => card.id === 'fr-2014-hl-writing-b4b')!;
+    // Only part of the cartoon lettering is in the text layer; never insert a fragment.
+    expect(cartoon.questionText).toBe('Donnez vos réactions.\n(75 mots environ)');
+    expect(cartoon.sourceMaterial?.kind).toBe('source-illustration');
+    expect(cartoon.sourceMaterial?.pages).toEqual([12]);
+    const boxed = group.find(card => card.id === 'fr-2014-hl-writing-b4a')!;
+    expect(boxed.questionText.split('\n\n').slice(0, 3)).toEqual([
+      'Les cigarettes tuent 6 millions de personnes par an',
+      'Il y a une seule solution : interdire purement et simplement la cigarette !',
+      'Le Point, le 15 mai, 2012',
+    ]);
+    expect(boxed.sourceMaterial?.kind).toBe('source-text');
+    expect(group.find(card => card.id === 'fr-2014-hl-writing-b3a')!.sourceMaterial?.kind).toBe('source-illustration');
+    expect(group.find(card => card.id === 'fr-2014-hl-writing-b1b')!.additionalSourceMaterials?.[0].pages).toEqual([4, 5]);
+    expect(group.find(card => card.id === 'fr-2014-hl-writing-b2b')!.rubric.criteria[0].guidance)
+      .toEqual(['Q. 2 (a) and (b) No particular layout required.']);
+    const tense = 'N.B. Correct tense required for full marks in Communication.';
+    for (const card of group.filter(card => card.id.includes('ol-writing-') && card.id.includes('-route-'))) {
+      for (const criterion of card.rubric.criteria.filter(c => c.id.startsWith('communication-'))) {
+        expect(criterion.guidance, card.id).toContain(tense);
+      }
+    }
+    for (const card of cards.filter(card => card.year >= 2015)) {
+      expect(card.rubric.criteria.flatMap(c => c.guidance), card.id).not.toContain(tense);
+    }
+    expect(group.find(card => card.id === 'fr-2014-ol-writing-b1b-field-2')!.rubric.criteria[0].guidance)
+      .toEqual(['Christian Name – accept any reasonable Christian name']);
+    for (const parent of ['b2a', 'b2b', 'b3a']) {
+      const task = group.find(card => card.id === `fr-2014-ol-writing-${parent}-route-123`)!;
+      expect(task.rubric.criteria.at(-1)?.bands?.[1].guidance).not.toContain('some sense of register');
+    }
+    const letter = group.find(card => card.id === 'fr-2014-ol-writing-b3b-route-123')!;
+    expect(letter.questionText).toContain('You are Eamonn / Emma Ryan, 13 Orchard Place, Celbridge, Co. Kildare.');
+    expect(letter.rubric.criteria.find(c => c.id === 'format-top')?.guidance)
+      .toContain('City / town / village & date (Celbridge, le 11 juin 2014) in top right corner or underneath.');
+    expect(letter.rubric.criteria.find(c => c.id === 'language')?.bands?.[1].guidance).toContain('some sense of register');
   });
 
   it('uses the distinct 2016 Higher formal-letter grid and preserves the form discrepancy', () => {

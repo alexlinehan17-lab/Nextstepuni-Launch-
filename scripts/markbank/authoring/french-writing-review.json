@@ -1,8 +1,92 @@
 {
   "status": "partial-corpus-review",
   "reviewedAt": "2026-10-07",
-  "cards": 450,
+  "cards": 468,
   "review": [
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 12
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 13
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 15
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 4,
+      "poolSize": 4,
+      "routes": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 11,
+      "schemePage": 10
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "schemePages": [
+        16,
+        17
+      ],
+      "notes": "Eight independently priced 40/30-mark alternatives. Q1(a) and Q1(b) are open opinion prompts on their Section I passages. Q2(b) requires answers to all of Claudine’s questions (a sport practised now, the Irish sportsperson most admired, and why); they are compulsory parts of one email, not a closed pool. Q3(a) for or against, Q3(b) and Q4(b) reactions and Q4(a) agreement are open opinion scope. The Q3(a) photograph and the Q4(b) cartoon are retained in the illustration viewer; no fragment of the cartoon lettering is inserted into the question. All four form sentences and all three Ordinary writing points are required."
+    },
+    {
+      "source": "examiner-reports/french/papers/2014-hl-000-paper.pdf",
+      "sha256": "9036a371aaf93ce8117813556cae00be07e8060d4ea25b38a0441f51b84d573a"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2014-hl.pdf",
+      "sha256": "14d95779cf002d49acd18d809cb7157c48c6a6463ea39ef01cf287739557a59b"
+    },
+    {
+      "source": "examiner-reports/french/papers/2014-ol-000-paper.pdf",
+      "sha256": "04aa4a339491eea57c4f38a6685947d2eee8b25873183da14f97783053df09f7"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2014-ol.pdf",
+      "sha256": "1735c57e750914492deed6d4f1c89d8e9c073fe7f4be9364b785d1a422d73676"
+    },
     {
       "year": 2015,
       "level": "ordinary",

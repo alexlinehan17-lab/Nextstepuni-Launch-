@@ -65,14 +65,16 @@ OL_LANGUAGE = [
 
 # Each Ordinary Level message/postcard/diary/letter prints its own communication
 # tariff as an underlined heading on its scheme page. Lift it verbatim, never a
-# shared paraphrase: 2015–2021 print "Two points" on all four tasks; 2022–2026
+# shared paraphrase: 2014–2021 print "Two points" on all four tasks; 2022–2026
 # print "Two parts" for B2A/B2B and "Two points" for B3A/B3B. Entries are
 # (scheme PDF page, exact printed line); every line was checked against the
-# rendered scheme page on 11 October 2026. A year without an entry fails.
+# rendered scheme page (2015–2026 on 11 October 2026, 2014 on 11 October 2026
+# from its own scheme pages 12–15). A year without an entry fails.
 POINTS_5 = 'Two points required for 5 marks (3 + 2)'
 PARTS_5 = 'Two parts required for 5 marks (3 + 2)'
 POINTS_4 = 'Two points required for 4 marks (2 + 2)'
 OL_POINT_TARIFFS = {
+    2014: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
     2015: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
     2016: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
     2017: {'B2A': (14, POINTS_5), 'B2B': (15, POINTS_5), 'B3A': (16, POINTS_5), 'B3B': (17, POINTS_4)},
@@ -98,6 +100,19 @@ def printed_tariff(year, parent, scheme_ol, scheme_page, maximum):
     printed = [re.sub(r'\s+', ' ', text).strip() for text in scheme_ol[page - 1].get_text().splitlines()]
     assert [text for text in printed if re.search(r'required for \d+ marks', text)] == [line], (year, parent, page)
     return line
+
+
+def communication_notes(config, scheme_ol, page):
+    """A year's printed communication N.B. (2010–2014 print one on each OL
+    writing page), asserted verbatim on that page. A page that prints the
+    note while the year's source entry omits it fails rather than drops it."""
+    printed = ' '.join(scheme_ol[page - 1].get_text().split())
+    note = config.get('olCommunicationNote')
+    if note is None:
+        assert 'Correct tense required' not in printed, (config['year'], page)
+        return []
+    assert note in printed, (config['year'], page, note)
+    return [note]
 
 
 def language(maximum, descriptors):
@@ -250,6 +265,7 @@ def build_year(config):
     assert len(fields) == len(answers) == 5 and len(form_questions) == 4
     for prompt in form_questions:
         assert_on_page(prompt, doc, config['formPage'])
+    form_notes = communication_notes(config, scheme_ol, config['formSchemePage'])
     form_choose = config.get('formChoose', 3)
     assert form_choose in [3, 4]
     assert_on_page(config.get('formInstruction', 'Pour 6, 7, 8 et 9 : choisissez trois questions et répondez par des phrases complètes.'), doc, config['formPage'])
@@ -258,7 +274,7 @@ def build_year(config):
         maximum = 12 // form_choose
         clear = '3' if maximum == 3 else '3–4'
         criteria = [criterion(f'communication-{i+6}', f'Communication · question {i+6}', maximum,
-                              [form_questions[i], f'0–2: message not clear. {clear}: message clear.']) for i in chosen]
+                              [form_questions[i], f'0–2: message not clear. {clear}: message clear.'] + form_notes) for i in chosen]
         lang = language(8, ol_language)
         lang['requiresAttempt'] = True
         criteria.append(lang)
@@ -295,8 +311,9 @@ def build_year(config):
             suffix = ''.join(str(i+1) for i in chosen)
             maximum = 4 if parent == 'B3B' else 5
             tariff = printed_tariff(YEAR, parent, scheme_ol, scheme_page, maximum)
+            notes = communication_notes(config, scheme_ol, scheme_page)
             criteria = [criterion(f'communication-{i+1}', f'Communication · point {i+1}', maximum,
-                                  [answers[i], tariff + '.',
+                                  [answers[i], tariff + '.', *notes,
                                    'Assess how clearly each part is communicated.']) for i in chosen]
             if parent == 'B3B':
                 criteria = [criterion('format-top', 'Format · top of page', 3,

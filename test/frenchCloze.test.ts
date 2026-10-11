@@ -9,6 +9,7 @@ import { paperRegionFor } from '../components/PaperTrail/paperRegion';
 import { frenchMarks } from '../components/MarkBank/frenchRubric';
 
 const answers: Record<number, string[]> = {
+  2014: ['répondu', 'suis', 'bac', 'pas', 'professeurs', 'difficile', 'beaucoup', 'examens', 'robes', 'venir'],
   2015: ['écrit', 'voyage', 'dernier', 'ballon', 'passer', 'dit', 'parents', 'pas', 'avec', 'de'],
   2016: ['long', 'avec', 'pas', 'beau', 'sortais', 'copains', 'humeur', 'elle', 'espère', 'suis'],
   2017: ['lettre', 'pour', 'achetons', 'cinéma', 'vu', 'passer', 'gare', 'libre', 'te', 'peux'],
@@ -24,8 +25,8 @@ const answers: Record<number, string[]> = {
 };
 
 describe('French gap-level practice', () => {
-  it('retains all 120 separately priced gaps and the source word banks', () => {
-    expect(cards).toHaveLength(120);
+  it('retains all 130 separately priced gaps and the source word banks', () => {
+    expect(cards).toHaveLength(130);
     for (const [year, expected] of Object.entries(answers)) {
       const group = cards.filter(card => card.year === Number(year));
       expect(group).toHaveLength(10);

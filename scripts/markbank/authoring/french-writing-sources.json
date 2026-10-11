@@ -1,5 +1,193 @@
 [
   {
+    "year": 2014,
+    "hlGridPage": 17,
+    "hlSchemePageOffset": -2,
+    "hlCriteriaMax": [
+      20,
+      15
+    ],
+    "hlNoLayoutQuestion": 2,
+    "hlNoLayoutNote": "Q. 2 (a) and (b) No particular layout required.",
+    "hlPassageRefs": {
+      "B1A": 1,
+      "B1B": 2
+    },
+    "illustrationTasks": [
+      "B3A",
+      "B4B"
+    ],
+    "hlPromptParagraphs": {
+      "B2B": [
+        "Votre amie française Claudine vous a envoyé le courrier électronique suivant:",
+        "« Tu m’as dit que tu adores le sport. Tu peux me parler un peu d’un sport que tu pratiques en ce moment ?",
+        "Qui est le sportif irlandais / la sportive irlandaise que tu admires le / la plus ? Pourquoi ? »",
+        "Écrivez un courrier électronique à Claudine dans lequel vous répondez à ses questions."
+      ],
+      "B3A": [
+        "Classe Tablette Tactile",
+        "Au sujet de la tablette tactile en classe, un étudiant a tweeté :",
+        "« Ça peut être amusant, et ça peut motiver certains élèves. Mais les tablettes coûtent cher et elles peuvent être volées ou cassées. »",
+        "Êtes-vous pour ou contre les tablettes tactiles en classe ?"
+      ],
+      "B3B": [
+        "Le shopping et les jeunes, c’est toute une histoire d’amour",
+        "Pour les jeunes, le shopping est une activité sociale qu’ils prennent plaisir à réaliser en groupe. Faire les boutiques, trouver le jean qui leur plaît, la tenue pour la prochaine sortie, acheter des jeux vidéo, des livres ou même un parfum, c’est super !",
+        "Donnez vos réactions."
+      ],
+      "B4A": [
+        "Les cigarettes tuent 6 millions de personnes par an",
+        "Il y a une seule solution : interdire purement et simplement la cigarette !",
+        "Le Point, le 15 mai, 2012",
+        "Êtes-vous d’accord avec ce point de vue ?"
+      ],
+      "B4B": [
+        "Donnez vos réactions."
+      ]
+    },
+    "hlSelectionNote": "Eight independently priced 40/30-mark alternatives. Q1(a) and Q1(b) are open opinion prompts on their Section I passages. Q2(b) requires answers to all of Claudine’s questions (a sport practised now, the Irish sportsperson most admired, and why); they are compulsory parts of one email, not a closed pool. Q3(a) for or against, Q3(b) and Q4(b) reactions and Q4(a) agreement are open opinion scope. The Q3(a) photograph and the Q4(b) cartoon are retained in the illustration viewer; no fragment of the cartoon lettering is inserted into the question. All four form sentences and all three Ordinary writing points are required.",
+    "languageBottom": null,
+    "olLanguagePage": 11,
+    "formPage": 11,
+    "formSchemePage": 10,
+    "formChoose": 4,
+    "formInstruction": "N.B. Répondez à 6, 7, 8 & 9 par des phrases complètes.",
+    "form_stem": "Vous vous appelez Andrew / Anne Nolan. Vous désirez travailler dans un restaurant en Provence pendant l’été. Remplissez le formulaire suivant.",
+    "fields": [
+      "Nom",
+      "Prénom",
+      "Date de naissance",
+      "Nationalité",
+      "Nombre d’années d’étude de français"
+    ],
+    "answers": [
+      "Surname – accept any reasonable surname",
+      "Christian Name – accept any reasonable Christian name",
+      "Date of birth – accept any reasonable date",
+      "Nationality – accept any nationality",
+      "Years of study – accept any appropriate number"
+    ],
+    "form_questions": [
+      "Quels sont vos passe-temps ?",
+      "Quelle est votre matière préférée au lycée et pourquoi ?",
+      "Avez-vous déjà travaillé dans un restaurant ?",
+      "Pourquoi voulez-vous travailler en France ?"
+    ],
+    "olCommunicationNote": "N.B. Correct tense required for full marks in Communication.",
+    "letterIdentity": "You are Eamonn / Emma Ryan, 13 Orchard Place, Celbridge, Co. Kildare.",
+    "pools": [
+      [
+        "B2A",
+        12,
+        12,
+        "Leave the following message for your friend Adrien / Adrienne with whom you are staying in Lyon. Say that:",
+        [
+          "There is no food in the house at the moment.",
+          "You have gone to the butcher’s to buy some meat.",
+          "You will make the dinner this evening."
+        ],
+        [
+          "There is no food in the house / at the moment.",
+          "You have gone to the butcher’s / to buy some meat.",
+          "You will make the dinner / this evening."
+        ]
+      ],
+      [
+        "B2B",
+        12,
+        13,
+        "You are on holidays in France. Write a postcard to your friend Guy / Chantal in which you say that:",
+        [
+          "You are spending two weeks in the Alps with your family.",
+          "You went skiing yesterday and it was fantastic.",
+          "You hope to go to Switzerland next Monday."
+        ],
+        [
+          "You are spending two weeks in the Alps / with your family.",
+          "You went skiing yesterday / and it was fantastic.",
+          "You hope to go to Switzerland / next Monday."
+        ]
+      ],
+      [
+        "B3A",
+        14,
+        14,
+        "You have just moved house recently.",
+        [
+          "You like your new house and your school.",
+          "You have made some nice friends in the village.",
+          "You will play a basketball match tomorrow morning."
+        ],
+        [
+          "You like your new house / and your school.",
+          "You have made some nice friends / in the village.",
+          "You will play a basketball match / tomorrow morning."
+        ]
+      ],
+      [
+        "B3B",
+        14,
+        15,
+        "Write a formal letter to l’Office de Tourisme, 26 place de Francheville, 24000 Périgueux. In the letter:",
+        [
+          "Say that you are looking for information about the town.",
+          "Say that you want to visit Périgueux during the festival in July.",
+          "Ask if there is a youth hostel in the area."
+        ],
+        [
+          "Say that you are looking for information / about the town.",
+          "Say that you want to visit Périgueux / during the festival in July.",
+          "Ask if there is a youth hostel / in the area."
+        ]
+      ]
+    ],
+    "formatSchemePage": 18,
+    "formatSchemePages": [
+      18,
+      19
+    ],
+    "formatNotes": {
+      "top": [
+        "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
+        "City / town / village & date (Celbridge, le 11 juin 2014) in top right corner or underneath.",
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
+      ],
+      "close": [
+        "Formal ending required.",
+        "Treat one or more incorrect accents in closing formula as one mistake."
+      ],
+      "deductions": [
+        "1 mistake - ignore.",
+        "2 mistakes - deduct 1 mark.",
+        "3 mistakes - deduct 2 marks.",
+        "More than 3 mistakes - award 0.",
+        "If candidate has general layout of Top of Page correct, despite numerous mistakes - award one mark."
+      ]
+    },
+    "olTaskLanguageOmit": {
+      "B2A": {
+        "page": 12,
+        "descriptors": [
+          "some sense of register"
+        ]
+      },
+      "B2B": {
+        "page": 12,
+        "descriptors": [
+          "some sense of register"
+        ]
+      },
+      "B3A": {
+        "page": 12,
+        "descriptors": [
+          "some sense of register"
+        ]
+      }
+    },
+    "taskSourceNotes": {}
+  },
+  {
     "formatNotes": {
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
