@@ -698,7 +698,7 @@ for (const paper of papers) {
 
 // Reviewed task boundaries override generic section guesses for this exact
 // paper. Frozen baseline identities remain below; new parts/routes are additive.
-const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json', 'foundation-2010-authored.json']
+const foundationTasks = { cards: ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json', 'foundation-2010-authored.json', 'foundation-2026-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards) };
 for (const card of foundationTasks.cards) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');

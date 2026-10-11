@@ -9,6 +9,7 @@ import authored2020 from './foundation-2020-authored.json';
 import authored2019 from './foundation-2019-authored.json';
 import authored2018 from './foundation-2018-authored.json';
 import authored2010 from './foundation-2010-authored.json';
+import authored2026 from './foundation-2026-authored.json';
 import authored2011 from './foundation-2011-authored.json';
 import authored2011Aural from './foundation-2011-aural-authored.json';
 import authored2012 from './foundation-2012-authored.json';
@@ -18,7 +19,7 @@ import authored2015 from './foundation-2015-authored.json';
 import authored2016 from './foundation-2016-authored.json';
 import authored2017 from './foundation-2017-authored.json';
 
-export const CARDS: SecRubricCard[] = [authored2010, authored2011, authored2011Aural, authored2012, authored2013, authored2014, authored2015, authored2016, authored2017, authored2018, authored2019, authored2020, authored2021, authored2022, authored2023, authored2024, authored].flatMap(({ cards, review }) => cards.map((card): SecRubricCard => ({
+export const CARDS: SecRubricCard[] = [authored2010, authored2011, authored2011Aural, authored2012, authored2013, authored2014, authored2015, authored2016, authored2017, authored2018, authored2019, authored2020, authored2021, authored2022, authored2023, authored2024, authored, authored2026].flatMap(({ cards, review }) => cards.map((card): SecRubricCard => ({
   id: card.id,
   subjectId: 'irish',
   level: 'foundation',

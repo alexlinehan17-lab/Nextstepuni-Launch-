@@ -16,7 +16,7 @@ const CARDS = ALL_CARDS.filter(c => c.year === 2024);
 
 describe('reviewed 2024 Irish Foundation tasks', () => {
   it('loads and remembers Foundation without changing other subjects’ available levels', async () => {
-    expect(await loadCards('irish', 'foundation')).toHaveLength(1157);
+    expect(await loadCards('irish', 'foundation')).toHaveLength(1227);
     expect(builtDecks()).toContainEqual({ subjectId: 'irish', level: 'foundation', label: 'Irish Foundation' });
     expect(levelsForSubject('irish', 2024)).toEqual(['higher', 'ordinary', 'foundation']);
     expect(levelsForSubject('biology', 2024)).toEqual(['higher', 'ordinary']);
@@ -214,8 +214,8 @@ print('source guard passed')
     const row=inventory.papers.find(p=>p.key==='2024|foundation|LC001BLP000IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(CARDS.map(c=>c.id).sort());
     expect(row).toMatchObject({fullVisualReview:'complete',bankAtlasTaskParity:'complete',partAndSelectionReconciliation:'complete'});
-    expect(inventory.summary.indexedCards).toBe(1608);
-    expect(inventory.summary.papersPendingFullReview).toBe(73);
+    expect(inventory.summary.indexedCards).toBe(1678);
+    expect(inventory.summary.papersPendingFullReview).toBe(72);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });
