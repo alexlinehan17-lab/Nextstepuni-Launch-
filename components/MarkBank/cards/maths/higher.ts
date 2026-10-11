@@ -5069,16 +5069,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q1-a", topicId: "maths-3-1", conceptId: "two-values-which",
+    id: "maths-2023-hl-p1-q1-a", topicId: "maths-4-2", conceptId: "two-values-which",
     section: "B", questionRef: "2023 HL Paper 1 Q1(a)",
-    questionText: "Find the two values of m∈ℝ for which |5 + 3m| = 11",
+    questionText: "Find the two values of m ∈ ℝ for which |5 + 3m| = 11.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p1-q1-a-r1", kind: "anyN", verbatim: "1 linear equation.\nOne correct value of m found without work.\nAttempts at trial and improvement.", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Note: Method 1. Note: If quadratic does not have an m term award Mid Partial Credit at most. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":4,"options":["1 linear equation.\nOne correct value of m found without work.\nAttempts at trial and improvement.","One value of m found with work.","One value of m correctly found and work of merit in finding the second value. Method 2","Indication of squaring","relevant quadratic in m expanded (Line 2 of the solution)\nQuadratic is missing the m term, otherwise correct","quadratic factorised\nquadratic formula fully substituted"],"perOptionSteps":[4,4,4,3]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q1-a.png",
@@ -5099,16 +5112,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q1-b", topicId: "maths-4-1", conceptId: "real-numbers-express-terms",
     section: "B", questionRef: "2023 HL Paper 1 Q1(b)",
-    questionText: "For the real numbers h, j, and k: 1 h = k j+ k Express k in terms of h and j",
+    questionText: "For the real numbers h, j, and k: 1/h = k/(j + k). Express k in terms of h and j.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q1-b-r1", kind: "anyN", verbatim: "Work of merit in eliminating fractions", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in eliminating fractions","Terms with k transposed to one side of the equation","k(1 −h) = −j or equivalent"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q1-b.png",
@@ -5129,16 +5155,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q1-c", topicId: "maths-3-1", conceptId: "factor-value-value",
+    id: "maths-2023-hl-p1-q1-c", topicId: "maths-4-2", conceptId: "factor-value-value",
     section: "B", questionRef: "2023 HL Paper 1 Q1(c)",
-    questionText: "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p < 0. Find the value of p and the value of r. p = and r =",
+    questionText: "x² − px + 1 is a factor of x³ − 2x − 3r, where p, r ∈ ℝ and p < 0. Find the value of p and the value of r.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q1-c-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct division, or sets up long division.", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Note: Full credit -1 if p = √3 but otherwise correct Method 1 4 steps: 1. Sets up long division 2. First cycle in long division correct 3. Value of p found 4. Value of r found. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Work of merit, for example, some correct division, or sets up long division.","2 steps correct","3 steps correct Method 2 4 steps: 1. Equation set up 2. Expansion of the product (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found","Work of merit, for example, mentions linear factor","2 steps correct","3 steps correct. Method 3 1. Grid set up 2. Grid completed (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found","Work of merit, for example, mentions linear factor.","2 steps correct.","3 steps correct."],"perOptionSteps":[2,1,1,1]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q1-c.png",
@@ -5159,16 +5198,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q2-a", topicId: "maths-5-2", conceptId: "has-local-minimum-point",
     section: "B", questionRef: "2023 HL Paper 1 Q2(a)",
-    questionText: "f(x) = x² + bx + c , where b, c∈ℝ. f(x) has a local minimum point at (3, −1)",
+    questionText: "f(x) = x² + bx + c, where b, c ∈ ℝ. f(x) has a local minimum point at (3, −1). Find the value of b and the value of c.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p1-q2-a-r1", kind: "anyN", verbatim: "Work of merit, for example, f(3) or some correct differentiation\nWork of merit at completing the square\n(x−h)² + k", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, f(3) or some correct differentiation\nWork of merit at completing the square\n(x−h)² + k","b correct\nUses f(3) to find a correct equation in b and c\n(x + b/2) 2 − b²/4 + c\nWork of merit in finding both b and c\n(x−3)² + k, where k ≠ −1\n(x−h)²−1, where h ≠ 3","Finds b and work of merit in finding c\n(x−3)²−1"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q2-a.png",
@@ -5189,21 +5241,82 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q2-c", topicId: "maths-3-1", conceptId: "function-defined-its-graph-shown-each",
+    id: "maths-2023-hl-p1-q2-b", topicId: "maths-4-1", conceptId: "value-limit-lim-1000",
+    section: "B", questionRef: "2023 HL Paper 1 Q2(b)",
+    questionText: "Find the value of the following limit, where n ∈ ℕ: lim (n → ∞) [ n/(n + 1) + (n + 1000)/n + (1/3)ⁿ ]",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-q2-b-solution-1", kind: "point", verbatim: "= 2", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q2-b-solution-2", kind: "point", verbatim: "Note: Full credit for correct answer without work.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q2-b-solution-3", kind: "point", verbatim: "Work of merit, for example, indicates sum of limits", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q2-b-solution-4", kind: "point", verbatim: "Substitutes ∞ for n", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q2-b-solution-5", kind: "point", verbatim: "One limit correctly evaluated and work of merit in any one of the other two limits", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-HL-ask-p1-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q2-b.png",
+          "srcHash": "f15a5c47f8a0d1f1ed9da3a53733a83f",
+          "alt": "The question as printed on the paper — Find the value of the following limit, where n∈ℕ: (b) n n+ 1 + n+ 1000 n + ( 1 n→∞ [ lim 3 ) ] n",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-HL-paper-p009-i1",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p009-i1.png",
+          "srcHash": "fe4082df96d96cabeab9bcd5cc77ed7f",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q2(b), typeset as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q2-c", topicId: "maths-5-1", conceptId: "function-defined-its-graph-shown-each",
     section: "B", questionRef: "2023 HL Paper 1 Q2(c)",
-    questionText: "The function g(x) is defined for −2 ≤ x ≤ 2, x∈ℝ. Its graph is shown in each of the two diagrams below",
+    stem: "The function g(x) is defined for −2 ≤ x ≤ 2, x ∈ ℝ. Its graph is shown in each of the two diagrams below.",
+    questionText: "(i) Draw the graph of g(x) − 2 on the co-ordinate diagram below, for x ∈ ℝ, on as large a domain as possible. (ii) Draw the graph of g(x + 3) on the co-ordinate diagram below, for x ∈ ℝ, on as large a domain as possible.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q2-c-r1", kind: "anyN", verbatim: "Work of merit in one part, for example, one point correctly transformed\nIn part (i) any vertical translation of g(x)\nIn part (ii) any horizontal translation of g(x)\nIn part (i) finds g(x + 2) or x g(x−2)\nIn part (ii) finds g(x) −3 or g(x) + 3", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in one part, for example, one point correctly transformed\nIn part (i) any vertical translation of g(x)\nIn part (ii) any horizontal translation of g(x)\nIn part (i) finds g(x + 2) or x g(x−2)\nIn part (ii) finds g(x) −3 or g(x) + 3","One part correct\nWork of merit in both parts x"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q2-c",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q2-c.png",
           "srcHash": "afbacb5c048cab1f9815095b1f6c8c2e",
-          "alt": "The question as printed on the paper — The function g(x) is defined for −2 ≤ x ≤ 2, x∈ℝ. Its graph is shown in each of the two diagrams below. Draw the graph of g(x)−2 on the co-ordinate diagram below, for x∈ℝ, on as large a domain as possible. y 7 6 5 4… Full card prompt: The function g(x) is defined for −2 ≤ x ≤ 2, x∈ℝ. Its graph is shown in each of the two diagrams below",
+          "alt": "The question as printed on the paper — The function g(x) is defined for −2 ≤ x ≤ 2, x∈ℝ. Its graph is shown in each of the two diagrams below. Draw the graph of g(x)−2 on the co-ordinate diagram below, for x∈ℝ, on as large a domain as possible. y 7 6 5 4… Full card prompt: The function g(x) is defined for −2 ≤ x ≤ 2, x ∈ ℝ. Its graph is shown in each of the two diagrams below. (i) Draw the graph of g(x) − 2 on the co-ordinate diagram below, for x ∈ ℝ, on as large a domain as possible. (ii) Draw the graph of g(x + 3) on the co-ordinate diagram below, for x ∈ ℝ, on as large a domain as possible.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5219,16 +5332,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q3-a", topicId: "maths-3-1", conceptId: "prove-not-rational-number",
     section: "B", questionRef: "2023 HL Paper 1 Q3(a)",
-    questionText: "Prove that √2 is not a rational number",
+    questionText: "Prove that √2 is not a rational number.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q3-a-r1", kind: "anyN", verbatim: "Work of merit, for example √2 = a/b\nWork of merit in showing that a is even", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example √2 = a/b\nWork of merit in showing that a is even","Shows that a is even","Shows both a and b are even"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q3-a.png",
@@ -5249,16 +5375,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q3-b", topicId: "maths-3-1", conceptId: "positive-real-number-log3t-log9t-log27t",
+    id: "maths-2023-hl-p1-q3-b", topicId: "maths-3-2", conceptId: "positive-real-number-log3t-log9t-log27t",
     section: "B", questionRef: "2023 HL Paper 1 Q3(b)",
-    questionText: "t is a positive real number, with: log3t+ log9t+ log27t+ log81t= 10 Find the value of t. Give your answer in the form 3r, where r∈ℚ",
+    questionText: "t is a positive real number, with: log₃ t + log₉ t + log₂₇ t + log₈₁ t = 10. Find the value of t. Give your answer in the form 3^r, where r ∈ ℚ. Hint: use the formula logₐ b = (log꜀ b)/(log꜀ a).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q3-b-r1", kind: "anyN", verbatim: "Work of merit, for example, changes the base of one log (from the given equation)\nWrites either 9, 27 or 81 in the form 3^k", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: 3 steps: 1.Changing all to the same base 2. Simplifies to an equation in t with one log 3. Finds t. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, changes the base of one log (from the given equation)\nWrites either 9, 27 or 81 in the form 3^k","One correct step","2 correct steps"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q3-b.png",
@@ -5279,16 +5418,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q3-c-i", topicId: "maths-3-1", conceptId: "explain-what-log-means-positive-real",
+    id: "maths-2023-hl-p1-q3-c-i", topicId: "maths-3-2", conceptId: "explain-what-log-means-positive-real",
     section: "B", questionRef: "2023 HL Paper 1 Q3(c)(i), (ii)",
-    questionText: "Explain what log₆m means, where m is a positive real number",
+    questionText: "(i) Explain what log₆ m means, where m is a positive real number. (ii) m is a real number, and m > 6. What information does this give about the value of log₆ m?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q3-c-i-r1", kind: "anyN", verbatim: "Work of merit in (i) or (ii), for example, some reference to indices\nlog₆m > 0 or log₆m is positive", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Note: Accept 6^x = m as a valid explanation for (i). Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in (i) or (ii), for example, some reference to indices\nlog₆m > 0 or log₆m is positive","(i) or (ii) correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q3-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q3-c-i.png",
@@ -5309,16 +5461,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q4-a", topicId: "maths-4-4", conceptId: "complex-number-root-equation",
     section: "B", questionRef: "2023 HL Paper 1 Q4(a)",
-    questionText: "The complex number z₁ = 1 + i is a root of the equation z² + (3 −2i)z + p = 0",
+    stem: "In this question, i² = −1.",
+    questionText: "The complex number z₁ = 1 + i is a root of the equation z² + (3 − 2i)z + p = 0. Find the value of p, where p = a + bi, with a, b ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q4-a-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution or some correct multiplication", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Note: Any attempt involving the conjugate of 1 + i, award Low Partial Credit at most. Method 1. Marked in order: Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, some correct substitution or some correct multiplication","Fully correct substitution and multiplication Method 2","z²−(sum)z + product\nStates p is the product of the roots\nSum of the roots = −3 + 2i","Finds 2nd root\nStates sum of the roots = 3 −2i, but finishes correctly Method 3","Some correct substitution in the quadratic formula","Formula fully substituted and 1 + i substituted for z\nFormula fully substituted and set equal to 1 + i Method 4","Sets up long division but divisor must be of the form z−a + bi, where a = 1 and b = −1 (Accept b = 1 here)","First cycle of long division done correctly."],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q4-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q4-a.png",
@@ -5339,16 +5505,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q4-b", topicId: "maths-4-4", conceptId: "moivre-theorem-values-which",
     section: "B", questionRef: "2023 HL Paper 1 Q4(b)",
-    questionText: "Use De Moivre’s Theorem to find the values of w for which w² = −1 + √3i",
+    stem: "In this question, i² = −1.",
+    questionText: "Use De Moivre’s Theorem to find the values of w for which w² = −1 + √3i. Give each value of w in the form a + bi, with a, b ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p1-q4-b-r1", kind: "anyN", verbatim: "Work of merit, for example, plots −1 + √3i\nWork of merit towards finding r or 𝜃\nw = (−1 + √3i) 1/2", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit –1: Roots found correctly, but one or both in polar form. Note: polar form must be used to achieve any credit. Note: Accept correct polar form without work (i.e., finding r and 𝜽). Note: if (w²)² is found, award Mid Partial Credit at most. Note: general polar form is not required to find the roots. Note: Accept solution in decimal form. 4 steps: 1. Finds 𝜃 2. Finds r 3. One root evaluated from De Moivre’s expression 4. 2nd root found. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, plots −1 + √3i\nWork of merit towards finding r or 𝜃\nw = (−1 + √3i) 1/2","2 steps correct","3 steps correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q4-b.png",
@@ -5369,16 +5549,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q4-c-i", topicId: "maths-4-4", conceptId: "write-complex-complex-numbers-conjugate-complex",
     section: "B", questionRef: "2023 HL Paper 1 Q4(c)(i)–(iii)",
-    questionText: "(i) where Write the/iu complex is the complex numbers conjugate iu and of iu complex numbers iu and iu in their simplest form, in terms of a and b, iu is the complex conjugate of iu",
+    stem: "In this question, i² = −1. The Argand diagram below shows the complex number u = a + bi, where a, b ∈ ℝ.",
+    questionText: "(i) Write the complex numbers iu and i̅u̅ (the conjugate of iu) in their simplest form, in terms of a and b, where the conjugate of iu is written with a bar over iu. (ii) Plot and label the complex numbers iu and its conjugate on the diagram above, as accurately as possible. (iii) State a transformation, or series of transformations, that would send u to the conjugate of iu. Do not include a translation in your answer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q4-c-i-r1", kind: "anyN", verbatim: "Work of merit in one element, for example, i(a + bi)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit -1: Diagram not labelled, otherwise correct. Note: 4 elements required: iu, 𝚤u̅, plot, transformation. Note: Accept conjugate plot from either candidate’s work in (i) or by reflection of their 𝚤u̅ in the real axis. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in one element, for example, i(a + bi)","1 element correct and work of merit in a 2nd element","2 elements correct and work of merit in a 3rd element"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q4-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q4-c-i.png",
@@ -5399,16 +5593,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q5-a", topicId: "maths-5-2", conceptId: "function-defined-follows-5x2-derivative-its",
     section: "B", questionRef: "2023 HL Paper 1 Q5(a)",
-    questionText: "The function f is defined as follows, for x∈ℝ: f(x)= 1 5x2+ 7 Find f′(x), the derivative of f. Give your answer in its simplest form",
+    questionText: "The function f is defined as follows, for x ∈ ℝ: f(x) = 1/(5x² + 7). Find f′(x), the derivative of f. Give your answer in its simplest form.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p1-q5-a-r1", kind: "anyN", verbatim: "Some correct differentiation", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 12. The full scale runs to 15. Full Credit –1: f′(x) = −1(5x² + 7)^(−2)(10x). Note: Accept −10x(5x² + 7)^(−2) for full credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Some correct differentiation","Correct substitution into quotient rule\nOne error in substitution into quotient rule, but finishes correctly"],"perOptionSteps":[6,9]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,6,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q5-a.png",
@@ -5429,16 +5636,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q5-b", topicId: "maths-5-2", conceptId: "function-defined-follows-tan-value-form",
     section: "B", questionRef: "2023 HL Paper 1 Q5(b)",
-    questionText: "The function g(x) is defined as follows, for x∈ℝ, 0 < x< 𝜋: g(x) = (tan ( x 2 ))(ln x) Find the value of g′( 𝜋 2 ). Give your answer in the form a+ ln b, where a, b∈ℝ",
+    questionText: "The function g(x) is defined as follows, for x ∈ ℝ, 0 < x < π: g(x) = (tan(x/2))(ln x). Find the value of g′(π/2). Give your answer in the form a + ln b, where a, b ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q5-b-r1", kind: "anyN", verbatim: "Any correct differentiation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Full Credit –1: Answer not in the correct form. Note: No differentiation no credit 4 steps 1. Finds du/dx 2. Finds dv/dx 3. Applies the product rule correctly 𝜋 4. Evaluates at x =. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Any correct differentiation","2 steps correct","3 steps correct"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q5-b.png",
@@ -5459,21 +5679,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q5-c-i", topicId: "maths-5-2", conceptId: "value",
+    id: "maths-2023-hl-p1-q5-c-i", topicId: "maths-5-1", conceptId: "value",
     section: "B", questionRef: "2023 HL Paper 1 Q5(c)(i), (ii)",
-    questionText: "Find the value of g(f(3))",
+    stem: "The diagram below shows three sets, A, B, and C, and two functions, f and g, where f: A → B and g: B → C. #A = #C = 4 and #B = 3.",
+    questionText: "(i) Find the value of g(f(3)). (ii) Explain why g: B → C is injective but not surjective (that is, one-to-one but not onto).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q5-c-i-r1", kind: "anyN", verbatim: "Shows some understanding of injective or surjective functions.\nWork of merit in any part, for example, f(3) correct, merit in explanation of injective or surjective (e.g., in injective, #B ≤ #C)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: Three parts to check: (i) and injective and not surjective. In part (i) accept g(f(3)), where g and f are the functions from part (b). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Shows some understanding of injective or surjective functions.\nWork of merit in any part, for example, f(3) correct, merit in explanation of injective or surjective (e.g., in injective, #B ≤ #C)","One of the 3 parts correct","Two parts correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q5-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q5-c-i.png",
           "srcHash": "c06e2af9355b10684fdd860840e724f1",
-          "alt": "The question as printed on the paper — The diagram below shows three sets, A, B, and C, and two functions, f and g, where f: A→B and g: B→C. #A = #C = 4 and #B = 3. x 1 ✈ w 2 ✓ y 3 z 4 ☃ Find the value of g(f(3)). Explain why g: B→C is injective but not… Full card prompt: Find the value of g(f(3))",
+          "alt": "The question as printed on the paper — The diagram below shows three sets, A, B, and C, and two functions, f and g, where f: A→B and g: B→C. #A = #C = 4 and #B = 3. x 1 ✈ w 2 ✓ y 3 z 4 ☃ Find the value of g(f(3)). Explain why g: B→C is injective but not… Full card prompt: The diagram below shows three sets, A, B, and C, and two functions, f and g, where f: A → B and g: B → C. #A = #C = 4 and #B = 3. (i) Find the value of g(f(3)). (ii) Explain why g: B → C is injective but not surjective (that is, one-to-one but not onto).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5489,16 +5723,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q6-a-i", topicId: "maths-5-1", conceptId: "two-values-which",
+    id: "maths-2023-hl-p1-q6-a-i", topicId: "maths-4-2", conceptId: "two-values-which",
     section: "B", questionRef: "2023 HL Paper 1 Q6(a)(i)",
-    questionText: "Find the two values of x for which f(x) = g(x)",
+    stem: "f and g are two functions of x ∈ ℝ, where: f(x) = x + 4; g(x) = x² − 2.",
+    questionText: "Find the two values of x for which f(x) = g(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q6-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, equation correctly established", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, equation correctly established","Factors correct\nQuadratic formula fully substituted\nOne correct answer verified"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q6-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q6-a-i.png",
@@ -5519,21 +5767,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q6-a-ii", topicId: "maths-3-4", conceptId: "area-shaded-region-diagram-not-scale",
+    id: "maths-2023-hl-p1-q6-a-ii", topicId: "maths-5-2", conceptId: "area-shaded-region-diagram-not-scale",
     section: "B", questionRef: "2023 HL Paper 1 Q6(a)(ii)",
-    questionText: "Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x²−2, from x = −1 to x = 2",
+    stem: "f and g are two functions of x ∈ ℝ, where: f(x) = x + 4; g(x) = x² − 2.",
+    questionText: "Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x² − 2, from x = −1 to x = 2.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p1-q6-a-ii-r1", kind: "anyN", verbatim: "Integration indicated\nSome correct integration\nSets up integration of original function(s)\nSome work of merit towards finding an approximate area using the Trapezoidal Rule\nWork of merit towards finding x intercept of g(x)\nf(−1) or f(2) found", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit -1: Area = −16.5. Note: Consider as 4 steps: 1. Integrate f 2. Integrate g 3. Combine 4. Evaluate with Limits They may do these in a different order, e.g., combine f and g and then integrate this function (= 3 steps). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Integration indicated\nSome correct integration\nSets up integration of original function(s)\nSome work of merit towards finding an approximate area using the Trapezoidal Rule\nWork of merit towards finding x intercept of g(x)\nf(−1) or f(2) found","2 steps correct\n1 relevant area calculated","2 relevant areas calculated correctly\nSteps 1 and 2 correct and one relevant area calculated\n3 steps correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q6-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q6-a-ii.png",
           "srcHash": "26e000484bcabca2c18969e64cdacc88",
-          "alt": "The question as printed on the paper — f and g are two functions of x∈ℝ, where: (a) f(x) = x + 4 g(x) = x2−2 (ii) Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x2−2, from x =… Full card prompt: Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x²−2, from x = −1 to x = 2",
+          "alt": "The question as printed on the paper — f and g are two functions of x∈ℝ, where: (a) f(x) = x + 4 g(x) = x2−2 (ii) Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x2−2, from x =… Full card prompt: f and g are two functions of x ∈ ℝ, where: f(x) = x + 4; g(x) = x² − 2. Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x² − 2, from x = −1 to x = 2.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5549,16 +5811,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q6-b", topicId: "maths-5-2", conceptId: "positive-constant-ebx-work-out-value",
     section: "B", questionRef: "2023 HL Paper 1 Q6(b)",
-    questionText: "b∈ℝ is a positive constant, and: b ∫b ebx dx= e 0 Work out the value of b",
+    questionText: "b ∈ ℝ is a positive constant, and: ∫ (from 0 to b) b e^(bx) dx = e. Work out the value of b.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q6-b-r1", kind: "anyN", verbatim: "Some correct integration, for example, kebx (k ≠ 1) appears without the integral sign\n+C", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: if there is an error in integration, max of Mid Partial Credit is awarded and only if both limits are substituted correctly. Marked in order: Low Partial Credit; Mid Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some correct integration, for example, kebx (k ≠ 1) appears without the integral sign\n+C","Fully correct integration"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q6-b.png",
@@ -5579,16 +5854,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q7-a", topicId: "maths-3-3", conceptId: "work-out-fiona-speed-when-she",
+    id: "maths-2023-hl-p1-q7-a", topicId: "maths-5-1", conceptId: "work-out-fiona-speed-when-she",
     section: "B", questionRef: "2023 HL Paper 1 Q7(a)",
-    questionText: "Work out Fiona’s speed when she passes the point A",
+    stem: "Fiona is driving on a motorway. She passes a point A on the motorway. Her speed is given by: v(t) = (2/3)t³ − 6t² + 13t + 109, where v is her speed in km/hour t minutes after passing the point A, for 0 ≤ t ≤ 5 and t ∈ ℝ.",
+    questionText: "Work out Fiona’s speed when she passes the point A.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q7-a-r1", kind: "anyN", verbatim: "Some correct substitution\nIdentifies t = 0\nSubstitutes t = 5", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit -1: No unit or incorrect unit. Note: Accept correct answer without work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some correct substitution\nIdentifies t = 0\nSubstitutes t = 5"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q7-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q7-a.png",
@@ -5609,16 +5898,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q7-b", topicId: "maths-3-3", conceptId: "work-out-fiona-acceleration-rate-which",
+    id: "maths-2023-hl-p1-q7-b", topicId: "maths-5-2", conceptId: "work-out-fiona-acceleration-rate-which",
     section: "B", questionRef: "2023 HL Paper 1 Q7(b)",
-    questionText: "Work out Fiona’s acceleration (that is, the rate at which her speed is increasing) 5 minutes after she passes the point A. Give your answer in km/hour per minute",
+    stem: "Fiona is driving on a motorway. She passes a point A on the motorway. Her speed is given by: v(t) = (2/3)t³ − 6t² + 13t + 109, where v is her speed in km/hour t minutes after passing the point A, for 0 ≤ t ≤ 5 and t ∈ ℝ.",
+    questionText: "Work out Fiona’s acceleration (that is, the rate at which her speed is increasing) 5 minutes after she passes the point A. Give your answer in km/hour per minute.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q7-b-r1", kind: "anyN", verbatim: "Some correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Note: Accept correct answer without unit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Some correct differentiation","Substitution into correct derivative\nAt most one error in differentiation and finishes correctly"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q7-b.png",
@@ -5639,16 +5942,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-c", topicId: "maths-5-2", conceptId: "time-value-which-fiona-reaches-her",
     section: "B", questionRef: "2023 HL Paper 1 Q7(c)",
-    questionText: "Find the time (value of t) at which Fiona reaches her maximum speed, during the first 4 minutes after she passes the point A. Give your answer correct to 2 decimal places",
+    stem: "Fiona is driving on a motorway. She passes a point A on the motorway. Her speed is given by: v(t) = (2/3)t³ − 6t² + 13t + 109, where v is her speed in km/hour t minutes after passing the point A, for 0 ≤ t ≤ 5 and t ∈ ℝ.",
+    questionText: "Find the time (value of t) at which Fiona reaches her maximum speed, during the first 4 minutes after she passes the point A. Give your answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q7-c-r1", kind: "anyN", verbatim: "Work of merit in finding v′(t) or brings v′(t) from (b)\nStates v′(t) = 0 or similar\nv′′(t) appears", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Full Credit –1: t = 4.58 written down and not explicitly excluded; Rounded incorrectly or no rounding, otherwise correct. Note: Accept candidate’s derivative from part (b). Note: If candidate’s derivative is linear, award Low Partial Credit at most 3 steps: 1. v′(t) = 0 2. Substitutes into formula 3. Evaluates for t. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in finding v′(t) or brings v′(t) from (b)\nStates v′(t) = 0 or similar\nv′′(t) appears","2 steps correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q7-c.png",
@@ -5669,16 +5986,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-d", topicId: "maths-5-2", conceptId: "integration-work-out-fiona-average-speed",
     section: "B", questionRef: "2023 HL Paper 1 Q7(d)",
-    questionText: "Use integration to work out Fiona’s average speed over the 5 minutes after she passes the point A. Give your answer correct to 2 decimal places",
+    stem: "Fiona is driving on a motorway. She passes a point A on the motorway. Her speed is given by: v(t) = (2/3)t³ − 6t² + 13t + 109, where v is her speed in km/hour t minutes after passing the point A, for 0 ≤ t ≤ 5 and t ∈ ℝ.",
+    questionText: "Use integration to work out Fiona’s average speed over the 5 minutes after she passes the point A. Give your answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q7-d-r1", kind: "anyN", verbatim: "Work of merit, for example, integration indicated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit -1: Rounded incorrectly or no rounding, otherwise correct; Incorrect unit or no unit, otherwise correct. Note: Indication of integration is required to be awarded any credit 4 steps: 5 is omitted, treat step 1 as. Note: If not fully correct, but all other steps can be accepted as correct. Note: If speed is treated as v′(t) in (a) a correct solution must include the line, 1/5 [∫ 0 5 v′(t)dt ] 1. 1/5 [∫ 0 5 v(t)dt ] 2. Integrates correctly 3. Subs in limits 4. Evaluates correctly. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, integration indicated","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q7-d",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q7-d.png",
@@ -5699,16 +6031,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-e", topicId: "maths-5-2", conceptId: "taking-derivative-second-derivative-four-graphs",
     section: "B", questionRef: "2023 HL Paper 1 Q7(e)",
-    questionText: "Taking v′(t) to be the derivative of v, and v′′(t) to be the second derivative of v: v′(1) > 0 and v′′(1) < 0 Four graphs, A, B, C, and D, are shown below",
+    stem: "Fiona is driving on a motorway. She passes a point A on the motorway. Her speed is given by: v(t) = (2/3)t³ − 6t² + 13t + 109, where v is her speed in km/hour t minutes after passing the point A, for 0 ≤ t ≤ 5 and t ∈ ℝ.",
+    questionText: "Taking v′(t) to be the derivative of v, and v′′(t) to be the second derivative of v: v′(1) > 0 and v′′(1) < 0. Four graphs, A, B, C, and D, are shown below. Close to where t = 1, the graph of y = v(t) must look like one of the four graphs given above. Write down which graph this is. Justify your answer, using both v′(1) and v′′(1).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q7-e-r1", kind: "anyN", verbatim: "Answer correct\nWork of merit in either justification", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Justification needs to explicitly deal with both v′ and v′′, but can be a single combined sentence. Note: Substitution into v′(t) or v′′(t) is not considered work of merit. Note: Accept “the function is concave down”, or similar as a justification using v′′(1) < 0 3 elements required: 1. Answer B 2. Justification for v′(1) > 0 3. Justification for v′′(1) < 0. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Answer correct\nWork of merit in either justification","2 elements correct\nAnswer given as B or D, justified correctly using v′(1)\nAnswer given as B justified correctly using v′′(1)\nAnswer given as A justified correctly using v′′(1)\nNo answer given, but 2 justifications are correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q7-e",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q7-e.png",
@@ -5729,16 +6076,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q7-f", topicId: "maths-5-2", conceptId: "work-out-minimum-time-minutes-driver",
+    id: "maths-2023-hl-p1-q7-f", topicId: "maths-3-3", conceptId: "work-out-minimum-time-minutes-driver",
     section: "B", questionRef: "2023 HL Paper 1 Q7(f)",
-    questionText: "Work out the minimum time, in minutes, that a driver could get from A to B, while not driving above 100 km/hour",
+    stem: "There is an Average Speed Zone on the motorway, starting at the point A and ending at point B. The distance from A to B along the motorway is 10 km. Cameras record the time taken for each car to travel from the point A to the point B. Each car’s average speed from A to B is then calculated.",
+    questionText: "Work out the minimum time, in minutes, that a driver could get from A to B, while not driving above 100 km/hour.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q7-f-r1", kind: "anyN", verbatim: "Work of merit in finding time", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit –1: 1/10 (i.e. incorrect unit). Note: Accept correct answer without units. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit in finding time"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q7-f",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q7-f.png",
@@ -5759,16 +6120,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q7-g", topicId: "maths-3-3", conceptId: "rohan-drives-passes-point-driving-constant",
     section: "B", questionRef: "2023 HL Paper 1 Q7(g)",
-    questionText: "Rohan drives from A to B. He passes the point A driving at a constant speed of 120 km/hour. After 2 minutes driving at this speed, he starts to decelerate (reduce his speed) at a constant rate, until he reaches the point B. Overall, his average speed in driving from A to B is 100 km/hour. Work out Rohan’s deceleration. Give your answer in km/hour per minute",
+    stem: "There is an Average Speed Zone on the motorway, starting at the point A and ending at point B. The distance from A to B along the motorway is 10 km. Cameras record the time taken for each car to travel from the point A to the point B. Each car’s average speed from A to B is then calculated.",
+    questionText: "Rohan drives from A to B. He passes the point A driving at a constant speed of 120 km/hour. After 2 minutes driving at this speed, he starts to decelerate (reduce his speed) at a constant rate, until he reaches the point B. Overall, his average speed in driving from A to B is 100 km/hour. Work out Rohan’s deceleration. Give your answer in km/hour per minute.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q7-g-r1", kind: "anyN", verbatim: "Some correct substitution in relation to distance for first 2 minutes or time / distance for remaining part\nIndicates integration", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Full Credit -1: Answer in km/hr/hr. Note: Accept -15km/hr/min. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Some correct substitution in relation to distance for first 2 minutes or time / distance for remaining part\nIndicates integration","Identifies 4 km, 6 km or 4 minutes.","Calculates 60 km/hr after the extra 4 minutes or 90km/hr after extra 2 minutes."],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q7-g",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q7-g.png",
@@ -5789,21 +6164,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q8-a", topicId: "maths-3-3", conceptId: "olga-puts-3000-savings-account-interest",
     section: "B", questionRef: "2023 HL Paper 1 Q8(a)",
-    questionText: "Olga puts €3000 in a savings account. Interest is added annually at a rate of 2∙4% per year. Work out the amount in Olga’s account after 5 years, correct to the nearest cent",
+    stem: "Olga, Chen, Fiona, and Rohan all have bank accounts.",
+    questionText: "Olga puts €3000 in a savings account. Interest is added annually at a rate of 2·4% per year. Work out the amount in Olga’s account after 5 years, correct to the nearest cent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q8-a-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into relevant formula; finds 2.4% as a decimal", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, some correct substitution into relevant formula; finds 2.4% as a decimal"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q8-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q8-a.png",
           "srcHash": "d71fe3876a553101d390304b506b67b4",
-          "alt": "The question as printed on the paper — Olga, Chen, Fiona, and Rohan all have bank accounts. Olga puts €3000 in a savings account. Interest is added annually at a rate of 2∙4% per year. Work out the amount in Olga’s account after 5 years, correct to the… Full card prompt: Olga puts €3000 in a savings account. Interest is added annually at a rate of 2∙4% per year. Work out the amount in Olga’s account after 5 years, correct to the nearest cent",
+          "alt": "The question as printed on the paper — Olga, Chen, Fiona, and Rohan all have bank accounts. Olga puts €3000 in a savings account. Interest is added annually at a rate of 2∙4% per year. Work out the amount in Olga’s account after 5 years, correct to the… Full card prompt: Olga, Chen, Fiona, and Rohan all have bank accounts. Olga puts €3000 in a savings account. Interest is added annually at a rate of 2·4% per year. Work out the amount in Olga’s account after 5 years, correct to the nearest cent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5819,21 +6208,84 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q8-b-i", topicId: "maths-3-3", conceptId: "explain-what-meant-present-value-payment",
+    section: "B", questionRef: "2023 HL Paper 1 Q8(b)(i), (ii)",
+    stem: "Olga, Chen, Fiona, and Rohan all have bank accounts.",
+    questionText: "(i) Explain what is meant by the “present value” of a payment of €1000 in 1 year’s time, at a particular interest rate. (ii) Chen puts a different amount in a savings account with the same interest rate (2·4% per year). After 6 years, Chen has €4000 in the account. Work out how much money Chen put in the account initially, correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-q8-b-i-solution-1", kind: "point", verbatim: "It is the amount that should be invested today to amount to €1000 in 1 years’ time at the particular interest rate.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-b-i-solution-2", kind: "point", verbatim: "P = €3469·45", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-b-i-solution-3", kind: "point", verbatim: "2.4% written as a decimal", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-b-i-solution-4", kind: "point", verbatim: "(i) or (ii) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-b-i-solution-5", kind: "point", verbatim: "Work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-b-i-solution-6", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-HL-ask-p1-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q8-b-i.png",
+          "srcHash": "368db6a714cd7dfb211a4fceebd7a042",
+          "alt": "The question as printed on the paper — Explain what is meant by the “present value” of a payment of €1000 in 1 year’s time, at a particular interest rate. Chen puts a different amount in a savings account with the same interest rate (2∙4% per year). After 6… Full card prompt: Olga, Chen, Fiona, and Rohan all have bank accounts. (i) Explain what is meant by the “present value” of a payment of €1000 in 1 year’s time, at a particular interest rate. (ii) Chen puts a different amount in a savings account with the same interest rate (2·4% per year). After 6 years, Chen has €4000 in the account. Work out how much money Chen put in the account initially, correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-HL-paper-p025-i1",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p025-i1.png",
+          "srcHash": "d5c3cf9bfe8e0f9b4a4e1dfdff686213",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q8(b)(i), typeset as the State Examinations Commission set it. It reads: (i), It is the amount that should be invested today to amount to €1000 in 1 years’ time at the particular interest rate. (ii) 4000 = P(1 + 0.024)⁶ 4000/1.024⁶ = P P = €3469 · 45",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q8-c", topicId: "maths-3-3", conceptId: "fiona-taking-out-loan-same-annual",
     section: "B", questionRef: "2023 HL Paper 1 Q8(c)",
-    questionText: "Fiona is taking out a loan at the same annual interest rate (2∙4% per year). Fiona makes payments quarterly (that is, 4 times per year). Work out the quarterly interest rate that would be equivalent to an APR of 2∙4%. Give your answer as a percentage, correct to 2 decimal places",
+    stem: "Olga, Chen, Fiona, and Rohan all have bank accounts.",
+    questionText: "Fiona is taking out a loan at the same annual interest rate (2·4% per year). Fiona makes payments quarterly (that is, 4 times per year). Work out the quarterly interest rate that would be equivalent to an APR of 2·4%. Give your answer as a percentage, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q8-c-r1", kind: "anyN", verbatim: "Some correct substitution into relevant formula\n2.4% written as a decimal", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit -1: Answer given as a decimal. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some correct substitution into relevant formula\n2.4% written as a decimal","(1.024) 1/4 = 1 + i\nEvaluates correctly i = (1.024)⁴−1\nUses 3 or 12 instead of 4, but otherwise correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q8-c",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q8-c.png",
           "srcHash": "61d6b073de7996e2b79e12d23eea9b95",
-          "alt": "The question as printed on the paper — Olga, Chen, Fiona, and Rohan all have bank accounts. Olga puts €3000 in a savings account. Interest is added annually at a rate of 2∙4% per year. Work out the amount in Olga’s account after 5 years, correct to the… Full card prompt: Fiona is taking out a loan at the same annual interest rate (2∙4% per year). Fiona makes payments quarterly (that is, 4 times per year). Work out the quarterly interest rate that would be equivalent to an APR of 2∙4%. Give your answer as a percentage, correct to 2 decimal places",
+          "alt": "The question as printed on the paper — Olga, Chen, Fiona, and Rohan all have bank accounts. Olga puts €3000 in a savings account. Interest is added annually at a rate of 2∙4% per year. Work out the amount in Olga’s account after 5 years, correct to the… Full card prompt: Olga, Chen, Fiona, and Rohan all have bank accounts. Fiona is taking out a loan at the same annual interest rate (2·4% per year). Fiona makes payments quarterly (that is, 4 times per year). Work out the quarterly interest rate that would be equivalent to an APR of 2·4%. Give your answer as a percentage, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5849,21 +6301,84 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q8-e", topicId: "maths-3-3", conceptId: "park-sells-three-types-ticket-child",
+    id: "maths-2023-hl-p1-q8-d-i", topicId: "maths-3-3", conceptId: "taking-amount-rohan-puts-his-account",
+    section: "B", questionRef: "2023 HL Paper 1 Q8(d)(i), (ii)",
+    stem: "Olga, Chen, Fiona, and Rohan all have bank accounts. Rohan wants to put the same amount of money in a savings account at the start of each month for 36 months so that, at the end of 3 years, he will have a total of €12 000 in the account. Interest is calculated at a rate of 0·11% per month.",
+    questionText: "(i) Taking €A to be the amount Rohan puts in his account at the start of each month, write down a geometric series in €A to show the total amount of money in the account at the end of the 3 years. Include the first two and the last two terms. (ii) Hence, find the value of €A that will give a total of €12 000 in the account after 3 years. Give your answer correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p1-q8-d-i-solution-1", kind: "point", verbatim: "A = €326·60 [2 D.P.]", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-d-i-solution-2", kind: "point", verbatim: "Finds geometric series", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-d-i-solution-3", kind: "point", verbatim: "Substitutes into geometric formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-d-i-solution-4", kind: "point", verbatim: "Finds A", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-d-i-solution-5", kind: "point", verbatim: "1 step correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-d-i-solution-6", kind: "point", verbatim: "Substantial work of merit in both parts", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q8-d-i-solution-7", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-HL-ask-p1-q8-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q8-d-i.png",
+          "srcHash": "699002ddbff4bf8b97c22647003fc4de",
+          "alt": "The question as printed on the paper — Olga, Chen, Fiona, and Rohan all have bank accounts. Olga puts €3000 in a savings account. Interest is added annually at a rate of 2∙4% per year. Work out the amount in Olga’s account after 5 years, correct to the… Full card prompt: Olga, Chen, Fiona, and Rohan all have bank accounts. Rohan wants to put the same amount of money in a savings account at the start of each month for 36 months so that, at the end of 3 years, he will have a total of €12 000 in the account. Interest is calculated at a rate of 0·11% per month. (i) Taking €A to be the amount Rohan puts in his account at the start of each month, write down a geometric series in €A to show the total amount of money in the account at the end of the 3 years. Include the first two and the last two terms. (ii) Hence, find the value of €A that will give a total of €12 000 in the account after 3 years. Give your answer correct to the nearest cent.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-HL-paper-p026-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p026-i0.png",
+          "srcHash": "fda2d8458f4d61bce8be488d9bbdd1f4",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q8(d)(i), typeset as the State Examinations Commission set it. It reads: A(1 · 0011)³⁶ + A(1 · 0011)³⁵ + ⋯ … + A(1 · 0011)² + A(1 · 0011) OR = A[(1 · 0011)³⁶ + (1 · 0011)³⁵ + ⋯ … + (1 · 0011)² + (1 · 0011)] A[1·0011 + (1 · 0011)² + ⋯ … + (1 · 0011)³⁵ + (1 · 0011)³⁶] a = 1 · 0011, r = 1 · 0011, n = 36 A [1 ]/(1 − 1 · 0011) = 12000 12000 A = 1 · 0011(1 −1 · 0011³⁶) 1 −1 · 0011 A = €326 · 60 [2 D.P.]",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q8-e", topicId: "maths-1-2", conceptId: "park-sells-three-types-ticket-child",
     section: "B", questionRef: "2023 HL Paper 1 Q8(e)",
-    questionText: "A park sells three types of ticket: child, student, and adult. The table below gives information on the price of each ticket and the percentage of tickets sold. For example, 15% of all tickets sold are student tickets",
+    questionText: "A park sells three types of ticket: child, student, and adult. The table below gives information on the price of each ticket and the percentage of tickets sold: child €11 (52%); student €5 less than an adult ticket (15%); adult €x (33%). For example, 15% of all tickets sold are student tickets. The expected value of the price of a ticket is €13·85. Work out the value of x, the price of an adult ticket.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q8-e-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct term in E(x)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some correct term in E(x)","Fully correct equation"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q8-e",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q8-e.png",
           "srcHash": "5ad6054cf98016d91f3f1d67c3252e1e",
-          "alt": "The question as printed on the paper — A park sells three types of ticket: child, student, and adult. The table below gives information on the price of each ticket and the percentage of tickets sold. For example, 15% of all tickets sold are student tickets.… Full card prompt: A park sells three types of ticket: child, student, and adult. The table below gives information on the price of each ticket and the percentage of tickets sold. For example, 15% of all tickets sold are student tickets",
+          "alt": "The question as printed on the paper — A park sells three types of ticket: child, student, and adult. The table below gives information on the price of each ticket and the percentage of tickets sold. For example, 15% of all tickets sold are student tickets.… Full card prompt: A park sells three types of ticket: child, student, and adult. The table below gives information on the price of each ticket and the percentage of tickets sold: child €11 (52%); student €5 less than an adult ticket (15%); adult €x (33%). For example, 15% of all tickets sold are student tickets. The expected value of the price of a ticket is €13·85. Work out the value of x, the price of an adult ticket.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5879,21 +6394,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q8-f", topicId: "maths-3-3", conceptId: "when-item-being-sold-mark-profit",
     section: "B", questionRef: "2023 HL Paper 1 Q8(f)",
-    questionText: "When an item is being sold: • the mark up is the profit as a percentage of the cost price, and • the margin is the profit as a percentage of the selling price",
+    questionText: "When an item is being sold: the mark up is the profit as a percentage of the cost price, and the margin is the profit as a percentage of the selling price. A shop sells an item with a margin of 18%. Work out the mark up for this item. Give your answer as a percentage, correct to the nearest percent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q8-f-r1", kind: "anyN", verbatim: "Work of merit, for example, states CP = 82% of SP\nMentions 82%\nFinds 18% of a number", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, states CP = 82% of SP\nMentions 82%\nFinds 18% of a number"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[27],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q8-f",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q8-f.png",
           "srcHash": "d6c888aa3c005104ad6f871a1a6bb56b",
-          "alt": "The question as printed on the paper — When an item is being sold: • the mark up is the profit as a percentage of the cost price, and • the margin is the profit as a percentage of the selling price. A shop sells an item with a margin of 18%. Work out the… Full card prompt: When an item is being sold: • the mark up is the profit as a percentage of the cost price, and • the margin is the profit as a percentage of the selling price",
+          "alt": "The question as printed on the paper — When an item is being sold: • the mark up is the profit as a percentage of the cost price, and • the margin is the profit as a percentage of the selling price. A shop sells an item with a margin of 18%. Work out the… Full card prompt: When an item is being sold: the mark up is the profit as a percentage of the cost price, and the margin is the profit as a percentage of the selling price. A shop sells an item with a margin of 18%. Work out the mark up for this item. Give your answer as a percentage, correct to the nearest percent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5909,21 +6437,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q9-a-i", topicId: "maths-3-2", conceptId: "list-different-factors-you-can-write",
     section: "B", questionRef: "2023 HL Paper 1 Q9(a)(i)–(iii)",
-    questionText: "List the 5 different factors of 2⁴. You can write each one as a power of 2",
+    stem: "Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number.",
+    questionText: "(i) List the 5 different factors of 2⁴. You can write each one as a power of 2. (ii) Work out how many different factors 3⁷ has. (iii) Work out how many different factors 2¹⁰ × 3¹² has.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p1-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit in one part, for example, one correct factor in (i) or lists 2 or more factors in (ii)\nSome valid relevant statement in (ii) or (iii)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: Accept for full credit correct answers without work In (i) accept any 5 factors including negative factors In (ii) accept 16 for full credit In (iii) accept 286 factors for full credit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in one part, for example, one correct factor in (i) or lists 2 or more factors in (ii)\nSome valid relevant statement in (ii) or (iii)","One part correct","Two parts correct\nEither (i) or (ii) correct and work of merit in (iii)"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q9-a-i.png",
           "srcHash": "d5884ac9e8b95adbf66924cc4cb4a54c",
-          "alt": "The question as printed on the paper — Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number. List the 5 different factors of 2⁴. You can write each one as a power of 2. Work out how… Full card prompt: List the 5 different factors of 2⁴. You can write each one as a power of 2",
+          "alt": "The question as printed on the paper — Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number. List the 5 different factors of 2⁴. You can write each one as a power of 2. Work out how… Full card prompt: Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number. (i) List the 5 different factors of 2⁴. You can write each one as a power of 2. (ii) Work out how many different factors 3⁷ has. (iii) Work out how many different factors 2¹⁰ × 3¹² has.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5939,21 +6481,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q9-b-i", topicId: "maths-5-2", conceptId: "complete-table-showing-pairs-factors",
+    id: "maths-2023-hl-p1-q9-b-i", topicId: "maths-5-1", conceptId: "complete-table-showing-pairs-factors",
     section: "B", questionRef: "2023 HL Paper 1 Q9(b)(i)–(iii)",
-    questionText: "Complete the table below, showing the 6 pairs of factors (x and y) of 12",
+    stem: "Ava is investigating factors of different numbers. Ava also looks at the relationship between pairs of factors of a number. She makes a table to show the pairs of factors of 12 (that is, the pairs of natural numbers x and y with xy = 12).",
+    questionText: "(i) Complete the table below, showing the 6 pairs of factors (x and y) of 12. The table gives x = 1, 2, 3, 6 and y = 4 (for x = 3) and y = 1. (ii) Plot the 6 points above on the co-ordinate diagram below. One of the points is shown. (iii) Ava realises that the relationship between x and y is y = 12/x. On the co-ordinate diagram above, draw the graph of y = 12/x for x ∈ ℝ, in the domain 1 ≤ x ≤ 12.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "maths-2023-hl-p1-q9-b-i-r1", kind: "anyN", verbatim: "3 parts correct", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15. The full scale runs to 20. Full Credit -1: 11 parts correct; Correct graph with no table entries x. Note: Solution consists of 12 parts: • 6 values in table • 5 points plotted • Points joined appropriately (not with line segments). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["3 parts correct","7 parts correct","9 parts correct"],"perOptionSteps":[5,5,10]} },
     ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[28],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                23
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q9-b-i.png",
           "srcHash": "0a73ea0002e66f256b871e07a3d69307",
-          "alt": "The question as printed on the paper — Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number. List the 5 different factors of 2⁴. You can write each one as a power of 2. Work out how… Full card prompt: Complete the table below, showing the 6 pairs of factors (x and y) of 12",
+          "alt": "The question as printed on the paper — Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number. List the 5 different factors of 2⁴. You can write each one as a power of 2. Work out how… Full card prompt: Ava is investigating factors of different numbers. Ava also looks at the relationship between pairs of factors of a number. She makes a table to show the pairs of factors of 12 (that is, the pairs of natural numbers x and y with xy = 12). (i) Complete the table below, showing the 6 pairs of factors (x and y) of 12. The table gives x = 1, 2, 3, 6 and y = 4 (for x = 3) and y = 1. (ii) Plot the 6 points above on the co-ordinate diagram below. One of the points is shown. (iii) Ava realises that the relationship between x and y is y = 12/x. On the co-ordinate diagram above, draw the graph of y = 12/x for x ∈ ℝ, in the domain 1 ≤ x ≤ 12.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5969,21 +6525,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q9-c-i", topicId: "maths-5-2", conceptId: "tangent-curve-drawn-point",
     section: "B", questionRef: "2023 HL Paper 1 Q9(c)(i)",
-    questionText: "A tangent to the curve y= 12 x is drawn at the point (p, 12 p) , where p∈ℝ and p> 0",
+    stem: "Ava is investigating factors of different numbers.",
+    questionText: "A tangent to the curve y = 12/x is drawn at the point (p, 12/p), where p ∈ ℝ and p > 0. Show that the equation of this tangent is: y = −(12/p²)x + 24/p",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q9-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct differentiation, some correct substitution into equation of line formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: Method 1 & Method 2 4 steps: 1. Finds dy/dx 2. Finds slope at x = p 3. Subs slope and point (p, 12 )/p into equation of line formula 4. Finds equation in required form. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Work of merit, for example, some correct differentiation, some correct substitution into equation of line formula","2 steps correct","3 steps correct Method 3 4 steps: 1. From the given equation writes down the slope of the tangent 2. Finds dy/dx 3. Substitutes x = p in dy/dx 4. Verifies that the point (p, 12 )/p is on the given equation","Work of merit, for example, some correct differentiation, some correct substitution into the given equation","2 steps correct.","3 steps correct."],"perOptionSteps":[3,2,3,2]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[29],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q9-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q9-c-i.png",
           "srcHash": "a052c795485f11894e841adffbd7d379",
-          "alt": "The question as printed on the paper — Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number. List the 5 different factors of 2⁴. You can write each one as a power of 2. Work out how… Full card prompt: A tangent to the curve y= 12 x is drawn at the point (p, 12 p) , where p∈ℝ and p> 0",
+          "alt": "The question as printed on the paper — Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number. List the 5 different factors of 2⁴. You can write each one as a power of 2. Work out how… Full card prompt: Ava is investigating factors of different numbers. A tangent to the curve y = 12/x is drawn at the point (p, 12/p), where p ∈ ℝ and p > 0. Show that the equation of this tangent is: y = −(12/p²)x + 24/p",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5999,16 +6569,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q9-c-ii", topicId: "maths-2-3", conceptId: "area-triangle-formed-axis-axis-tangent",
+    id: "maths-2023-hl-p1-q9-c-ii", topicId: "maths-2-2", conceptId: "area-triangle-formed-axis-axis-tangent",
     section: "B", questionRef: "2023 HL Paper 1 Q9(c)(ii)",
-    questionText: "The area of the triangle formed by the x-axis, the y-axis, and the tangent y = − 12/p2 x + 24/p is always k square units, where k∈ℕ is a constant",
+    stem: "Ava is investigating factors of different numbers.",
+    questionText: "The area of the triangle formed by the x-axis, the y-axis, and the tangent y = −(12/p²)x + 24/p is always k square units, where k ∈ ℕ is a constant. Work out the value of k.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q9-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, lets x = 0 or y = 0", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Note: Method 1 4 steps: 1. Finds the x-intercept 2. Finds the y-intercept 3. Substitution into area formula 4. Finds k. Note: Accept where candidates substitute a value for p into the equation of the tangent, find both intercepts of the subsequent equation, and then find k. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Work of merit, for example, lets x = 0 or y = 0","2 steps correct","3 steps correct Method 2 1. Finds x intercept 2. Integrates the function 3. Substitutes limits 4. Finds k","Work of merit, for example, lets y = 0\nIndicates integration","2 steps correct","3 steps correct"],"perOptionSteps":[2,1,1,1]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[30],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q9-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q9-c-ii.png",
@@ -6029,16 +6613,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q10-a", topicId: "maths-2-3", conceptId: "draw-grid-based-triangle-given-grid",
+    id: "maths-2023-hl-p1-q10-a", topicId: "maths-3-4", conceptId: "draw-grid-based-triangle-given-grid",
     section: "B", questionRef: "2023 HL Paper 1 Q10(a)",
-    questionText: "Draw T₄ in the grid below, based on the triangle given on the grid",
+    stem: "A triangle has a base of length 2 units and a perpendicular height of 8 units, as shown in the diagram on the right. The diagrams below show T₁, T₂, and T₃, the first three shapes in a sequence of shapes based on this triangle. For each value of n ∈ ℕ, the shape Tₙ is made up of n rectangles of equal height laid on top of each other. Tₙ is the collection of the smallest such rectangles that completely covers the triangle.",
+    questionText: "Draw T₄ in the grid below, based on the triangle given on the grid.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p1-q10-a-r1", kind: "anyN", verbatim: "Work of merit, for example, each rectangle of height 2 units", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, each rectangle of height 2 units"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[31],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q10-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q10-a.png",
@@ -6059,16 +6657,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q10-b", topicId: "maths-3-4", conceptId: "total-area-three-rectangles-leaving-certificate",
     section: "B", questionRef: "2023 HL Paper 1 Q10(b)",
-    questionText: "Show that the total area of the three rectangles in T₃ is 26",
+    stem: "A triangle has a base of length 2 units and a perpendicular height of 8 units, as shown in the diagram on the right. The diagrams below show T₁, T₂, and T₃, the first three shapes in a sequence of shapes based on this triangle. For each value of n ∈ ℕ, the shape Tₙ is made up of n rectangles of equal height laid on top of each other. Tₙ is the collection of the smallest such rectangles that completely covers the triangle.",
+    questionText: "Show that the total area of the three rectangles in T₃ is 32/3 square units.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q10-b-r1", kind: "anyN", verbatim: "Work of merit in finding dimensions or area of one rectangle or one small triangle,\nFinds h = 8/3\nFinds the area of the large triangle", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in finding dimensions or area of one rectangle or one small triangle,\nFinds h = 8/3\nFinds the area of the large triangle","w₁ and w₂ found\nAreas of 2 rectangles found\nSum of the areas of the small triangles found with work shown"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[31],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q10-b.png",
@@ -6089,16 +6701,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q10-d", topicId: "maths-2-3", conceptId: "total-area-rectangles-term-different-sequence",
+    id: "maths-2023-hl-p1-q10-d", topicId: "maths-4-3", conceptId: "total-area-rectangles-term-different-sequence",
     section: "B", questionRef: "2023 HL Paper 1 Q10(d)",
-    questionText: "The total area of the rectangles in the n th term of a different sequence of groups of rectangles is as follows, for n∈ℕ: Total area = Aₙ = (8 (n−1))/n 8 Work out the first value of n for which Aₙ is greater than 95% of the area 2 of the triangle on the right",
+    questionText: "The total area of the rectangles in the nth term of a different sequence of groups of rectangles is as follows, for n ∈ ℕ: Total area = Aₙ = 8(n − 1)/n. Work out the first value of n for which Aₙ is greater than 95% of the area of the triangle on the right (base 2, height 8).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q10-d-r1", kind: "anyN", verbatim: "Work of merit in establishing inequality, for example, finds the area of triangle", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. The full scale runs to 10. Note: where candidates multiply both sides by n², they must find n = 20 to be awarded High Partial Credit. Marked in order: Low Partial Credit; Mid Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit in establishing inequality, for example, finds the area of triangle","Forms the correct inequality"],"perOptionSteps":[3,7]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[33],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q10-d",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q10-d.png",
@@ -6119,16 +6744,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q10-e-i", topicId: "maths-5-2", conceptId: "volume-pyramid",
     section: "B", questionRef: "2023 HL Paper 1 Q10(e)(i)",
-    questionText: "The volume of the pyramid is ∫ S(x) dx ℎ 0",
+    stem: "Diagram A below shows a square-based pyramid, with base sides of length c units. The base of the pyramid is horizontal, and its perpendicular height is h units (where c, h ∈ ℝ). Diagram B below shows the same pyramid. It also shows a horizontal square that lies within the pyramid, a distance of x units down from the top of the pyramid, where x ∈ ℝ, 0 < x < h. The area of the shaded square in Diagram B is S(x) = x²c²/h².",
+    questionText: "The volume of the pyramid is ∫ (from 0 to h) S(x) dx. Use integration to find the volume of the pyramid in cubic units, in terms of c and h.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p1-q10-e-i-r1", kind: "anyN", verbatim: "Integral set up correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Integral set up correctly","Integration is correct\nMishandles c²/ℎ2 , but otherwise correct."],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[33],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q10-e-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q10-e-i.png",
@@ -6149,16 +6788,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q10-e-ii", topicId: "maths-3-4", conceptId: "starts-increase-rate-units-per-second",
+    id: "maths-2023-hl-p1-q10-e-ii", topicId: "maths-5-2", conceptId: "starts-increase-rate-units-per-second",
     section: "B", questionRef: "2023 HL Paper 1 Q10(e)(ii)",
-    questionText: "x starts to increase at a rate of 3 units per second. This causes S(x) to increase as well",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "Diagram A below shows a square-based pyramid, with base sides of length c units. The base of the pyramid is horizontal, and its perpendicular height is h units (where c, h ∈ ℝ). Diagram B below shows the same pyramid. It also shows a horizontal square that lies within the pyramid, a distance of x units down from the top of the pyramid, where x ∈ ℝ, 0 < x < h. The area of the shaded square in Diagram B is S(x) = x²c²/h².",
+    questionText: "x starts to increase at a rate of 3 units per second. This causes S(x) to increase as well. Find the rate of change of S(x) with respect to time, at the instant when x is half the perpendicular height of the pyramid. Give your answer in square units per second, in terms of c and h.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-hl-p1-q10-e-ii-r1", kind: "anyN", verbatim: "(e)(ii) dx/dt = 3 dS/dt = dS/dx × dx/dt", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["(e)(ii) dx/dt = 3 dS/dt = dS/dx × dx/dt","S(x) = (x² c²)/ℎ²","dS/dx = c²/h² (2x)","dS/dt = c²/h² (2x)(3)","= 6c²x/h²","When x = ℎ/2","dS = 6c² (h/2) = 3c²","dS/dt = 2)/h² 6c² (h = 3c²/h","Mathematics – Higher Level"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2023-hl-p1-q10-e-ii-solution-1", kind: "point", verbatim: "= 6c²x/h²", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q10-e-ii-solution-2", kind: "point", verbatim: "States a relevant derivative, for example", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q10-e-ii-solution-3", kind: "point", verbatim: "Some correct differentiation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q10-e-ii-solution-4", kind: "point", verbatim: "Any two of the following:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q10-e-ii-solution-5", kind: "point", verbatim: "from the MPC list above", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[34],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q10-e-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q10-e-ii.png",
@@ -16814,6 +17472,38 @@ export const CARDS: SecCard[] = [
           ],
           "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q10-c", topicId: "maths-4-1", conceptId: "p1-q10-c",
+    section: "B", questionRef: "2023 HL Paper 1 Q10(c)",
+    stem: "A triangle has a base of length 2 units and a perpendicular height of 8 units, as shown in the diagram on the right. The diagrams below show T₁, T₂, and T₃, the first three shapes in a sequence of shapes based on this triangle. For each value of n ∈ ℕ, the shape Tₙ is made up of n rectangles of equal height laid on top of each other. Tₙ is the collection of the smallest such rectangles that completely covers the triangle.",
+    questionText: "Find the total area of the n rectangles in Tₙ, for n ∈ ℕ. Give your answer in square units in terms of n, in its simplest form.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-q10-c-solution-1", kind: "point", verbatim: "or equivalent", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q10-c-solution-2", kind: "point", verbatim: "Identifies 2n (or n) small triangles", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q10-c-solution-3", kind: "point", verbatim: "Base length of each small triangle found", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q10-c-solution-4", kind: "point", verbatim: "or equivalent not in closed form", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p1-q10-c-solution-5", kind: "point", verbatim: "Finds sum of the areas of the small triangles", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[32],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,

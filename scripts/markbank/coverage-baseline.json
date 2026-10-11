@@ -195,19 +195,19 @@
   "refsHash": "02b0f7ad91f8e59d"
  },
  "maths": {
-  "cards": 1015,
-  "contentHash": "88979aeeeaac0e39",
-  "coveragePct": 32.5,
-  "covered": 1130,
+  "cards": 1019,
+  "contentHash": "d52d6727124d9d2e",
+  "coveragePct": 32.7,
+  "covered": 1136,
   "excluded": 0,
   "leaves": 3474,
-  "open": 2344,
+  "open": 2338,
   "orphans": 0,
   "papers": {
    "count": 82,
    "hash": "85af10c8f0afdec2"
   },
-  "refsHash": "ebe215c253939a8c"
+  "refsHash": "b1fa84c8bfbf51bb"
  },
  "physics": {
   "cards": 1133,

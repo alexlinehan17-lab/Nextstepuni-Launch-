@@ -16081,7 +16081,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q1(a)",
-  "questionText": "Find the two values of m∈ℝ for which |5 + 3m| = 11",
+  "questionText": "Find the two values of m ∈ ℝ for which |5 + 3m| = 11.",
   "figureKey": "maths-2023-HL-paper-p006-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16120,7 +16120,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q1-a"
  },
  {
@@ -16132,7 +16132,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q1(b)",
-  "questionText": "For the real numbers h, j, and k: 1 h = k j+ k Express k in terms of h and j",
+  "questionText": "For the real numbers h, j, and k: 1/h = k/(j + k). Express k in terms of h and j.",
   "figureKey": "maths-2023-HL-paper-p007-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16167,7 +16167,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q1-b"
  },
  {
@@ -16179,7 +16179,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q1(c)",
-  "questionText": "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p < 0. Find the value of p and the value of r. p = ____________ and r = ____________",
+  "questionText": "x² − px + 1 is a factor of x³ − 2x − 3r, where p, r ∈ ℝ and p < 0. Find the value of p and the value of r.",
   "figureKey": "maths-2023-HL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16221,7 +16221,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q1-c"
  },
  {
@@ -16233,7 +16233,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q2(a)",
-  "questionText": "f(x) = x² + bx + c , where b, c∈ℝ. f(x) has a local minimum point at (3, −1)",
+  "questionText": "f(x) = x² + bx + c, where b, c ∈ ℝ. f(x) has a local minimum point at (3, −1). Find the value of b and the value of c.",
   "figureKey": "maths-2023-HL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16268,7 +16268,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q2-a"
  },
  {
@@ -16280,40 +16280,51 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q2(b)",
-  "questionText": "Find the value of the following limit, where n∈ℕ: n ] lim n→∞ [ n n+ 1 + n+ 1000 n + ( 1 3 )",
+  "questionText": "Find the value of the following limit, where n ∈ ℕ: lim (n → ∞) [ n/(n + 1) + (n + 1000)/n + (1/3)ⁿ ]",
   "figureKey": "maths-2023-HL-paper-p009-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2023-hl-p1-q2-b-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, n indicates sum of limits, divides 3) )቏ by highest power of n in one of first two terms\nSubstitutes ∞ for n\nFinds two or more terms of the sequence, Tₙ = n/(n + 1) + (n + 1000)/n + (/3) 1 n",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Full credit for correct answer n without work. ). Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "Work of merit, for example, n indicates sum of limits, divides 3) )቏ by highest power of n in one of first two terms\nSubstitutes ∞ for n\nFinds two or more terms of the sequence, Tₙ = n/(n + 1) + (n + 1000)/n + (/3) 1 n",
-      "One limit correctly evaluated and work of merit in any one of the other two limits"
-     ],
-     "perOptionSteps": [
-      2,
-      3
-     ]
-    }
+    "id": "maths-2023-hl-p1-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "= 2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "Note: Full credit for correct answer without work.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q2-b-solution-3",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, indicates sum of limits",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q2-b-solution-4",
+    "kind": "point",
+    "verbatim": "Substitutes ∞ for n",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q2-b-solution-5",
+    "kind": "point",
+    "verbatim": "One limit correctly evaluated and work of merit in any one of the other two limits",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q2-b"
  },
  {
@@ -16325,7 +16336,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q2(c)",
-  "questionText": "The function g(x) is defined for −2 ≤ x ≤ 2, x∈ℝ. Its graph is shown in each of the two diagrams below",
+  "questionText": "(i) Draw the graph of g(x) − 2 on the co-ordinate diagram below, for x ∈ ℝ, on as large a domain as possible. (ii) Draw the graph of g(x + 3) on the co-ordinate diagram below, for x ∈ ℝ, on as large a domain as possible.",
   "figureKey": "maths-2023-HL-paper-p010-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16358,8 +16369,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q2-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q2-c",
+  "stem": "The function g(x) is defined for −2 ≤ x ≤ 2, x ∈ ℝ. Its graph is shown in each of the two diagrams below."
  },
  {
   "id": "maths-2023-hl-p1-q3-a",
@@ -16370,7 +16382,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q3(a)",
-  "questionText": "Prove that √2 is not a rational number",
+  "questionText": "Prove that √2 is not a rational number.",
   "figureKey": "maths-2023-HL-paper-p011-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16405,7 +16417,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q3-a"
  },
  {
@@ -16417,7 +16429,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q3(b)",
-  "questionText": "t is a positive real number, with: log3t+ log9t+ log27t+ log81t= 10 Find the value of t. Give your answer in the form 3r, where r∈ℚ",
+  "questionText": "t is a positive real number, with: log₃ t + log₉ t + log₂₇ t + log₈₁ t = 10. Find the value of t. Give your answer in the form 3^r, where r ∈ ℚ. Hint: use the formula logₐ b = (log꜀ b)/(log꜀ a).",
   "figureKey": "maths-2023-HL-paper-p011-i1",
   "labelKey": [],
   "tariffModel": {
@@ -16452,7 +16464,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q3-b"
  },
  {
@@ -16464,7 +16476,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q3(c)(i), (ii)",
-  "questionText": "Explain what log₆m means, where m is a positive real number",
+  "questionText": "(i) Explain what log₆ m means, where m is a positive real number. (ii) m is a real number, and m > 6. What information does this give about the value of log₆ m?",
   "figureKey": "maths-2023-HL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16497,7 +16509,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q3-c-i"
  },
  {
@@ -16509,7 +16521,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q4(a)",
-  "questionText": "The complex number z₁ = 1 + i is a root of the equation z² + (3 −2i)z + p = 0",
+  "questionText": "The complex number z₁ = 1 + i is a root of the equation z² + (3 − 2i)z + p = 0. Find the value of p, where p = a + bi, with a, b ∈ ℤ.",
   "figureKey": "maths-2023-HL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16549,8 +16561,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q4-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q4-a",
+  "stem": "In this question, i² = −1."
  },
  {
   "id": "maths-2023-hl-p1-q4-b",
@@ -16561,7 +16574,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q4(b)",
-  "questionText": "Use De Moivre’s Theorem to find the values of w for which w² = −1 + √3i",
+  "questionText": "Use De Moivre’s Theorem to find the values of w for which w² = −1 + √3i. Give each value of w in the form a + bi, with a, b ∈ ℝ.",
   "figureKey": "maths-2023-HL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16596,8 +16609,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q4-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q4-b",
+  "stem": "In this question, i² = −1."
  },
  {
   "id": "maths-2023-hl-p1-q4-c-i",
@@ -16608,7 +16622,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q4(c)(i)–(iii)",
-  "questionText": "(i) where Write the/iu complex is the complex numbers conjugate iu and of iu complex numbers iu and iu in their simplest form, in terms of a and b, iu is the complex conjugate of iu",
+  "questionText": "(i) Write the complex numbers iu and i̅u̅ (the conjugate of iu) in their simplest form, in terms of a and b, where the conjugate of iu is written with a bar over iu. (ii) Plot and label the complex numbers iu and its conjugate on the diagram above, as accurately as possible. (iii) State a transformation, or series of transformations, that would send u to the conjugate of iu. Do not include a translation in your answer.",
   "figureKey": "maths-2023-HL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16643,8 +16657,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q4-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q4-c-i",
+  "stem": "In this question, i² = −1. The Argand diagram below shows the complex number u = a + bi, where a, b ∈ ℝ."
  },
  {
   "id": "maths-2023-hl-p1-q5-a",
@@ -16655,7 +16670,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q5(a)",
-  "questionText": "The function f is defined as follows, for x∈ℝ: f(x)= 1 5x2+ 7 Find f′(x), the derivative of f. Give your answer in its simplest form",
+  "questionText": "The function f is defined as follows, for x ∈ ℝ: f(x) = 1/(5x² + 7). Find f′(x), the derivative of f. Give your answer in its simplest form.",
   "figureKey": "maths-2023-HL-paper-p016-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16688,7 +16703,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q5-a"
  },
  {
@@ -16700,7 +16715,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q5(b)",
-  "questionText": "The function g(x) is defined as follows, for x∈ℝ, 0 < x< 𝜋: g(x) = (tan ( x 2 ))(ln x) Find the value of g′( 𝜋 2 ). Give your answer in the form a+ ln b, where a, b∈ℝ",
+  "questionText": "The function g(x) is defined as follows, for x ∈ ℝ, 0 < x < π: g(x) = (tan(x/2))(ln x). Find the value of g′(π/2). Give your answer in the form a + ln b, where a, b ∈ ℝ.",
   "figureKey": "maths-2023-HL-paper-p016-i1",
   "labelKey": [],
   "tariffModel": {
@@ -16735,7 +16750,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q5-b"
  },
  {
@@ -16747,7 +16762,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q5(c)(i), (ii)",
-  "questionText": "Find the value of g(f(3))",
+  "questionText": "(i) Find the value of g(f(3)). (ii) Explain why g: B → C is injective but not surjective (that is, one-to-one but not onto).",
   "figureKey": "maths-2023-HL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16782,8 +16797,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q5-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q5-c-i",
+  "stem": "The diagram below shows three sets, A, B, and C, and two functions, f and g, where f: A → B and g: B → C. #A = #C = 4 and #B = 3."
  },
  {
   "id": "maths-2023-hl-p1-q6-a-i",
@@ -16794,7 +16810,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q6(a)(i)",
-  "questionText": "Find the two values of x for which f(x) = g(x)",
+  "questionText": "Find the two values of x for which f(x) = g(x).",
   "figureKey": "maths-2023-HL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16827,8 +16843,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q6-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q6-a-i",
+  "stem": "f and g are two functions of x ∈ ℝ, where: f(x) = x + 4; g(x) = x² − 2."
  },
  {
   "id": "maths-2023-hl-p1-q6-a-ii",
@@ -16839,7 +16856,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q6(a)(ii)",
-  "questionText": "Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x²−2, from x = −1 to x = 2",
+  "questionText": "Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x² − 2, from x = −1 to x = 2.",
   "figureKey": "maths-2023-HL-paper-p019-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16874,8 +16891,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q6-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q6-a-ii",
+  "stem": "f and g are two functions of x ∈ ℝ, where: f(x) = x + 4; g(x) = x² − 2."
  },
  {
   "id": "maths-2023-hl-p1-q6-b",
@@ -16886,7 +16904,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q6(b)",
-  "questionText": "b∈ℝ is a positive constant, and: b ∫b ebx dx= e 0 Work out the value of b",
+  "questionText": "b ∈ ℝ is a positive constant, and: ∫ (from 0 to b) b e^(bx) dx = e. Work out the value of b.",
   "figureKey": "maths-2023-HL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16919,7 +16937,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q6-b"
  },
  {
@@ -16931,7 +16949,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q7(a)",
-  "questionText": "Work out Fiona’s speed when she passes the point A",
+  "questionText": "Work out Fiona’s speed when she passes the point A.",
   "figureKey": "maths-2023-HL-paper-p020-i1",
   "labelKey": [],
   "tariffModel": {
@@ -16959,8 +16977,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q7-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q7-a",
+  "stem": "Fiona is driving on a motorway. She passes a point A on the motorway. Her speed is given by: v(t) = (2/3)t³ − 6t² + 13t + 109, where v is her speed in km/hour t minutes after passing the point A, for 0 ≤ t ≤ 5 and t ∈ ℝ."
  },
  {
   "id": "maths-2023-hl-p1-q7-b",
@@ -16971,7 +16990,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q7(b)",
-  "questionText": "Work out Fiona’s acceleration (that is, the rate at which her speed is increasing) 5 minutes after she passes the point A. Give your answer in km/hour per minute",
+  "questionText": "Work out Fiona’s acceleration (that is, the rate at which her speed is increasing) 5 minutes after she passes the point A. Give your answer in km/hour per minute.",
   "figureKey": "maths-2023-HL-paper-p020-i2",
   "labelKey": [],
   "tariffModel": {
@@ -17004,8 +17023,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q7-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q7-b",
+  "stem": "Fiona is driving on a motorway. She passes a point A on the motorway. Her speed is given by: v(t) = (2/3)t³ − 6t² + 13t + 109, where v is her speed in km/hour t minutes after passing the point A, for 0 ≤ t ≤ 5 and t ∈ ℝ."
  },
  {
   "id": "maths-2023-hl-p1-q7-c",
@@ -17016,7 +17036,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q7(c)",
-  "questionText": "Find the time (value of t) at which Fiona reaches her maximum speed, during the first 4 minutes after she passes the point A. Give your answer correct to 2 decimal places",
+  "questionText": "Find the time (value of t) at which Fiona reaches her maximum speed, during the first 4 minutes after she passes the point A. Give your answer correct to 2 decimal places.",
   "figureKey": "maths-2023-HL-paper-p021-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17049,8 +17069,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q7-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q7-c",
+  "stem": "Fiona is driving on a motorway. She passes a point A on the motorway. Her speed is given by: v(t) = (2/3)t³ − 6t² + 13t + 109, where v is her speed in km/hour t minutes after passing the point A, for 0 ≤ t ≤ 5 and t ∈ ℝ."
  },
  {
   "id": "maths-2023-hl-p1-q7-d",
@@ -17061,7 +17082,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q7(d)",
-  "questionText": "Use integration to work out Fiona’s average speed over the 5 minutes after she passes the point A. Give your answer correct to 2 decimal places",
+  "questionText": "Use integration to work out Fiona’s average speed over the 5 minutes after she passes the point A. Give your answer correct to 2 decimal places.",
   "figureKey": "maths-2023-HL-paper-p022-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17096,8 +17117,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q7-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q7-d",
+  "stem": "Fiona is driving on a motorway. She passes a point A on the motorway. Her speed is given by: v(t) = (2/3)t³ − 6t² + 13t + 109, where v is her speed in km/hour t minutes after passing the point A, for 0 ≤ t ≤ 5 and t ∈ ℝ."
  },
  {
   "id": "maths-2023-hl-p1-q7-e",
@@ -17108,7 +17130,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q7(e)",
-  "questionText": "Taking v′(t) to be the derivative of v, and v′′(t) to be the second derivative of v: v′(1) > 0 and v′′(1) < 0 Four graphs, A, B, C, and D, are shown below",
+  "questionText": "Taking v′(t) to be the derivative of v, and v′′(t) to be the second derivative of v: v′(1) > 0 and v′′(1) < 0. Four graphs, A, B, C, and D, are shown below. Close to where t = 1, the graph of y = v(t) must look like one of the four graphs given above. Write down which graph this is. Justify your answer, using both v′(1) and v′′(1).",
   "figureKey": "maths-2023-HL-paper-p023-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17141,8 +17163,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q7-e"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q7-e",
+  "stem": "Fiona is driving on a motorway. She passes a point A on the motorway. Her speed is given by: v(t) = (2/3)t³ − 6t² + 13t + 109, where v is her speed in km/hour t minutes after passing the point A, for 0 ≤ t ≤ 5 and t ∈ ℝ."
  },
  {
   "id": "maths-2023-hl-p1-q7-f",
@@ -17153,7 +17176,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q7(f)",
-  "questionText": "Work out the minimum time, in minutes, that a driver could get from A to B, while not driving above 100 km/hour",
+  "questionText": "Work out the minimum time, in minutes, that a driver could get from A to B, while not driving above 100 km/hour.",
   "figureKey": "maths-2023-HL-paper-p024-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17181,8 +17204,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q7-f"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q7-f",
+  "stem": "There is an Average Speed Zone on the motorway, starting at the point A and ending at point B. The distance from A to B along the motorway is 10 km. Cameras record the time taken for each car to travel from the point A to the point B. Each car’s average speed from A to B is then calculated."
  },
  {
   "id": "maths-2023-hl-p1-q7-g",
@@ -17193,7 +17217,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q7(g)",
-  "questionText": "Rohan drives from A to B. He passes the point A driving at a constant speed of 120 km/hour. After 2 minutes driving at this speed, he starts to decelerate (reduce his speed) at a constant rate, until he reaches the point B. Overall, his average speed in driving from A to B is 100 km/hour. Work out Rohan’s deceleration. Give your answer in km/hour per minute",
+  "questionText": "Rohan drives from A to B. He passes the point A driving at a constant speed of 120 km/hour. After 2 minutes driving at this speed, he starts to decelerate (reduce his speed) at a constant rate, until he reaches the point B. Overall, his average speed in driving from A to B is 100 km/hour. Work out Rohan’s deceleration. Give your answer in km/hour per minute.",
   "figureKey": "maths-2023-HL-paper-p024-i1",
   "labelKey": [],
   "tariffModel": {
@@ -17228,8 +17252,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q7-g"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q7-g",
+  "stem": "There is an Average Speed Zone on the motorway, starting at the point A and ending at point B. The distance from A to B along the motorway is 10 km. Cameras record the time taken for each car to travel from the point A to the point B. Each car’s average speed from A to B is then calculated."
  },
  {
   "id": "maths-2023-hl-p1-q8-a",
@@ -17240,7 +17265,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q8(a)",
-  "questionText": "Olga puts €3000 in a savings account. Interest is added annually at a rate of 2∙4% per year. Work out the amount in Olga’s account after 5 years, correct to the nearest cent",
+  "questionText": "Olga puts €3000 in a savings account. Interest is added annually at a rate of 2·4% per year. Work out the amount in Olga’s account after 5 years, correct to the nearest cent.",
   "figureKey": "maths-2023-HL-paper-p025-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17268,8 +17293,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q8-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q8-a",
+  "stem": "Olga, Chen, Fiona, and Rohan all have bank accounts."
  },
  {
   "id": "maths-2023-hl-p1-q8-b-i",
@@ -17280,43 +17306,60 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q8(b)(i), (ii)",
-  "questionText": "Explain what is meant by the “present value” of a payment of €1000 in 1 year’s time, at a particular interest rate",
+  "questionText": "(i) Explain what is meant by the “present value” of a payment of €1000 in 1 year’s time, at a particular interest rate. (ii) Chen puts a different amount in a savings account with the same interest rate (2·4% per year). After 6 years, Chen has €4000 in the account. Work out how much money Chen put in the account initially, correct to the nearest cent.",
   "figureKey": "maths-2023-HL-paper-p025-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2023-hl-p1-q8-b-i-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit in (i) or (ii), for example, formula in (i), correct substitution into relevant formula in (ii)\n2.4% written as a decimal",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: In (i) Accept P = 1000/(1 + i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Work of merit in (i) or (ii), for example, formula in (i), correct substitution into relevant formula in (ii)\n2.4% written as a decimal",
-      "(i) or (ii) correct\nWork of merit in both parts",
-      "One part correct and work of merit in the other part"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
+    "id": "maths-2023-hl-p1-q8-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "It is the amount that should be invested today to amount to €1000 in 1 years’ time at the particular interest rate.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "P = €3469·45",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "2.4% written as a decimal",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "(i) or (ii) correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-b-i-solution-5",
+    "kind": "point",
+    "verbatim": "Work of merit in both parts",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-b-i-solution-6",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q8-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q8-b-i",
+  "stem": "Olga, Chen, Fiona, and Rohan all have bank accounts."
  },
  {
   "id": "maths-2023-hl-p1-q8-c",
@@ -17327,7 +17370,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q8(c)",
-  "questionText": "Fiona is taking out a loan at the same annual interest rate (2∙4% per year). Fiona makes payments quarterly (that is, 4 times per year). Work out the quarterly interest rate that would be equivalent to an APR of 2∙4%. Give your answer as a percentage, correct to 2 decimal places",
+  "questionText": "Fiona is taking out a loan at the same annual interest rate (2·4% per year). Fiona makes payments quarterly (that is, 4 times per year). Work out the quarterly interest rate that would be equivalent to an APR of 2·4%. Give your answer as a percentage, correct to 2 decimal places.",
   "figureKey": "maths-2023-HL-paper-p025-i2",
   "labelKey": [],
   "tariffModel": {
@@ -17360,8 +17403,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q8-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q8-c",
+  "stem": "Olga, Chen, Fiona, and Rohan all have bank accounts."
  },
  {
   "id": "maths-2023-hl-p1-q8-d-i",
@@ -17372,43 +17416,67 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q8(d)(i), (ii)",
-  "questionText": "Taking €A to be the amount Rohan puts in his account at the start of each month, write down a geometric series in €A to show the total amount of money in the account at the end of the 3 years. Include the first two and the last two terms",
+  "questionText": "(i) Taking €A to be the amount Rohan puts in his account at the start of each month, write down a geometric series in €A to show the total amount of money in the account at the end of the 3 years. Include the first two and the last two terms. (ii) Hence, find the value of €A that will give a total of €12 000 in the account after 3 years. Give your answer correct to the nearest cent.",
   "figureKey": "maths-2023-HL-paper-p026-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 8, 12, 15)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 15,
   "rows": [
    {
-    "id": "maths-2023-hl-p1-q8-d-i-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit in either part, for example, in (i)Writes 0.11% as a decimal; in (ii), sets answer in (i) equal to 12000",
-    "marks": 15,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit –1: Correct solution, but excludes second and/or second last term; Investments made at the end of each month, otherwise correct. Note: Consider as requiring 3 steps: 1. Finds geometric series 2. Substitutes into geometric formula 3. Finds A. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 4,
-     "options": [
-      "Work of merit in either part, for example, in (i)Writes 0.11% as a decimal; in (ii), sets answer in (i) equal to 12000",
-      "1 step correct\nSubstantial work of merit in both parts",
-      "2 steps correct"
-     ],
-     "perOptionSteps": [
-      4,
-      4,
-      7
-     ]
-    }
+    "id": "maths-2023-hl-p1-q8-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "A = €326·60 [2 D.P.]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Finds geometric series",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-d-i-solution-3",
+    "kind": "point",
+    "verbatim": "Substitutes into geometric formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-d-i-solution-4",
+    "kind": "point",
+    "verbatim": "Finds A",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-d-i-solution-5",
+    "kind": "point",
+    "verbatim": "1 step correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-d-i-solution-6",
+    "kind": "point",
+    "verbatim": "Substantial work of merit in both parts",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q8-d-i-solution-7",
+    "kind": "point",
+    "verbatim": "2 steps correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q8-d-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q8-d-i",
+  "stem": "Olga, Chen, Fiona, and Rohan all have bank accounts. Rohan wants to put the same amount of money in a savings account at the start of each month for 36 months so that, at the end of 3 years, he will have a total of €12 000 in the account. Interest is calculated at a rate of 0·11% per month."
  },
  {
   "id": "maths-2023-hl-p1-q8-e",
@@ -17419,7 +17487,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q8(e)",
-  "questionText": "A park sells three types of ticket: child, student, and adult. The table below gives information on the price of each ticket and the percentage of tickets sold. For example, 15% of all tickets sold are student tickets",
+  "questionText": "A park sells three types of ticket: child, student, and adult. The table below gives information on the price of each ticket and the percentage of tickets sold: child €11 (52%); student €5 less than an adult ticket (15%); adult €x (33%). For example, 15% of all tickets sold are student tickets. The expected value of the price of a ticket is €13·85. Work out the value of x, the price of an adult ticket.",
   "figureKey": "maths-2023-HL-paper-p026-i1",
   "labelKey": [],
   "tariffModel": {
@@ -17452,7 +17520,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q8-e"
  },
  {
@@ -17464,7 +17532,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q8(f)",
-  "questionText": "When an item is being sold: • the mark up is the profit as a percentage of the cost price, and • the margin is the profit as a percentage of the selling price",
+  "questionText": "When an item is being sold: the mark up is the profit as a percentage of the cost price, and the margin is the profit as a percentage of the selling price. A shop sells an item with a margin of 18%. Work out the mark up for this item. Give your answer as a percentage, correct to the nearest percent.",
   "figureKey": "maths-2023-HL-paper-p026-i2",
   "labelKey": [],
   "tariffModel": {
@@ -17492,7 +17560,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q8-f"
  },
  {
@@ -17504,7 +17572,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q9(a)(i)–(iii)",
-  "questionText": "List the 5 different factors of 2⁴. You can write each one as a power of 2",
+  "questionText": "(i) List the 5 different factors of 2⁴. You can write each one as a power of 2. (ii) Work out how many different factors 3⁷ has. (iii) Work out how many different factors 2¹⁰ × 3¹² has.",
   "figureKey": "maths-2023-HL-paper-p027-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17539,8 +17607,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q9-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q9-a-i",
+  "stem": "Ava is investigating factors of different numbers. First, she looks at numbers that can be written as powers of a prime number."
  },
  {
   "id": "maths-2023-hl-p1-q9-b-i",
@@ -17551,7 +17620,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q9(b)(i)–(iii)",
-  "questionText": "Complete the table below, showing the 6 pairs of factors (x and y) of 12",
+  "questionText": "(i) Complete the table below, showing the 6 pairs of factors (x and y) of 12. The table gives x = 1, 2, 3, 6 and y = 4 (for x = 3) and y = 1. (ii) Plot the 6 points above on the co-ordinate diagram below. One of the points is shown. (iii) Ava realises that the relationship between x and y is y = 12/x. On the co-ordinate diagram above, draw the graph of y = 12/x for x ∈ ℝ, in the domain 1 ≤ x ≤ 12.",
   "figureKey": "maths-2023-HL-paper-p027-i1",
   "labelKey": [],
   "tariffModel": {
@@ -17586,8 +17655,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q9-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q9-b-i",
+  "stem": "Ava is investigating factors of different numbers. Ava also looks at the relationship between pairs of factors of a number. She makes a table to show the pairs of factors of 12 (that is, the pairs of natural numbers x and y with xy = 12)."
  },
  {
   "id": "maths-2023-hl-p1-q9-c-i",
@@ -17598,7 +17668,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q9(c)(i)",
-  "questionText": "A tangent to the curve y= 12 x is drawn at the point (p, 12 p) , where p∈ℝ and p> 0",
+  "questionText": "A tangent to the curve y = 12/x is drawn at the point (p, 12/p), where p ∈ ℝ and p > 0. Show that the equation of this tangent is: y = −(12/p²)x + 24/p",
   "figureKey": "maths-2023-HL-paper-p028-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17637,8 +17707,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q9-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q9-c-i",
+  "stem": "Ava is investigating factors of different numbers."
  },
  {
   "id": "maths-2023-hl-p1-q9-c-ii",
@@ -17649,7 +17720,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q9(c)(ii)",
-  "questionText": "The area of the triangle formed by the x-axis, the y-axis, and the tangent y = − 12/p2 x + 24/p is always k square units, where k∈ℕ is a constant",
+  "questionText": "The area of the triangle formed by the x-axis, the y-axis, and the tangent y = −(12/p²)x + 24/p is always k square units, where k ∈ ℕ is a constant. Work out the value of k.",
   "figureKey": "maths-2023-HL-paper-p029-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17688,8 +17759,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q9-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q9-c-ii",
+  "stem": "Ava is investigating factors of different numbers."
  },
  {
   "id": "maths-2023-hl-p1-q10-a",
@@ -17700,7 +17772,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q10(a)",
-  "questionText": "Draw T₄ in the grid below, based on the triangle given on the grid",
+  "questionText": "Draw T₄ in the grid below, based on the triangle given on the grid.",
   "figureKey": "maths-2023-HL-paper-p030-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17728,8 +17800,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q10-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q10-a",
+  "stem": "A triangle has a base of length 2 units and a perpendicular height of 8 units, as shown in the diagram on the right. The diagrams below show T₁, T₂, and T₃, the first three shapes in a sequence of shapes based on this triangle. For each value of n ∈ ℕ, the shape Tₙ is made up of n rectangles of equal height laid on top of each other. Tₙ is the collection of the smallest such rectangles that completely covers the triangle."
  },
  {
   "id": "maths-2023-hl-p1-q10-b",
@@ -17740,7 +17813,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q10(b)",
-  "questionText": "Show that the total area of the three rectangles in T₃ is 26",
+  "questionText": "Show that the total area of the three rectangles in T₃ is 32/3 square units.",
   "figureKey": "maths-2023-HL-paper-p030-i1",
   "labelKey": [],
   "tariffModel": {
@@ -17773,8 +17846,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q10-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q10-b",
+  "stem": "A triangle has a base of length 2 units and a perpendicular height of 8 units, as shown in the diagram on the right. The diagrams below show T₁, T₂, and T₃, the first three shapes in a sequence of shapes based on this triangle. For each value of n ∈ ℕ, the shape Tₙ is made up of n rectangles of equal height laid on top of each other. Tₙ is the collection of the smallest such rectangles that completely covers the triangle."
  },
  {
   "id": "maths-2023-hl-p1-q10-d",
@@ -17785,7 +17859,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q10(d)",
-  "questionText": "The total area of the rectangles in the n th term of a different sequence of groups of rectangles is as follows, for n∈ℕ: Total area = Aₙ = (8 (n−1))/n 8 Work out the first value of n for which Aₙ is greater than 95% of the area 2 of the triangle on the right",
+  "questionText": "The total area of the rectangles in the nth term of a different sequence of groups of rectangles is as follows, for n ∈ ℕ: Total area = Aₙ = 8(n − 1)/n. Work out the first value of n for which Aₙ is greater than 95% of the area of the triangle on the right (base 2, height 8).",
   "figureKey": "maths-2023-HL-paper-p032-i0",
   "labelKey": [],
   "tariffModel": {
@@ -17818,7 +17892,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-HL-ask-p1-q10-d"
  },
  {
@@ -17830,7 +17904,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q10(e)(i)",
-  "questionText": "The volume of the pyramid is ∫ S(x) dx ℎ 0",
+  "questionText": "The volume of the pyramid is ∫ (from 0 to h) S(x) dx. Use integration to find the volume of the pyramid in cubic units, in terms of c and h.",
   "figureKey": "maths-2023-HL-paper-p032-i1",
   "labelKey": [],
   "tariffModel": {
@@ -17863,8 +17937,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q10-e-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q10-e-i",
+  "stem": "Diagram A below shows a square-based pyramid, with base sides of length c units. The base of the pyramid is horizontal, and its perpendicular height is h units (where c, h ∈ ℝ). Diagram B below shows the same pyramid. It also shows a horizontal square that lies within the pyramid, a distance of x units down from the top of the pyramid, where x ∈ ℝ, 0 < x < h. The area of the shaded square in Diagram B is S(x) = x²c²/h²."
  },
  {
   "id": "maths-2023-hl-p1-q10-e-ii",
@@ -17875,50 +17950,53 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q10(e)(ii)",
-  "questionText": "x starts to increase at a rate of 3 units per second. This causes S(x) to increase as well",
+  "questionText": "x starts to increase at a rate of 3 units per second. This causes S(x) to increase as well. Find the rate of change of S(x) with respect to time, at the instant when x is half the perpendicular height of the pyramid. Give your answer in square units per second, in terms of c and h.",
   "figureKey": "maths-2023-HL-paper-p033-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2023-hl-p1-q10-e-ii-r1",
-    "kind": "anyN",
-    "verbatim": "(e)(ii) dx/dt = 3 dS/dt = dS/dx × dx/dt",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 3,
-     "options": [
-      "(e)(ii) dx/dt = 3 dS/dt = dS/dx × dx/dt",
-      "S(x) = (x² c²)/ℎ²",
-      "dS/dx = c²/h² (2x)",
-      "dS/dt = c²/h² (2x)(3)",
-      "= 6c²x/h²",
-      "When x = ℎ/2",
-      "dS = 6c² (h/2) = 3c²",
-      "dS/dt = 2)/h² 6c² (h = 3c²/h",
-      "Mathematics – Higher Level"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      3,
-      2
-     ]
-    }
+    "id": "maths-2023-hl-p1-q10-e-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 6c²x/h²",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q10-e-ii-solution-2",
+    "kind": "point",
+    "verbatim": "States a relevant derivative, for example",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q10-e-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Some correct differentiation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q10-e-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Any two of the following:",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q10-e-ii-solution-5",
+    "kind": "point",
+    "verbatim": "from the MPC list above",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-HL-ask-p1-q10-e-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q10-e-ii",
+  "stem": "Diagram A below shows a square-based pyramid, with base sides of length c units. The base of the pyramid is horizontal, and its perpendicular height is h units (where c, h ∈ ℝ). Diagram B below shows the same pyramid. It also shows a horizontal square that lies within the pyramid, a distance of x units down from the top of the pyramid, where x ∈ ℝ, 0 < x < h. The area of the shaded square in Diagram B is S(x) = x²c²/h²."
  },
  {
   "id": "maths-2023-hl-p2-q1-a",
@@ -61659,5 +61737,59 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2023-hl-p1-q10-c",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q10-c",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 Q10(c)",
+  "stem": "A triangle has a base of length 2 units and a perpendicular height of 8 units, as shown in the diagram on the right. The diagrams below show T₁, T₂, and T₃, the first three shapes in a sequence of shapes based on this triangle. For each value of n ∈ ℕ, the shape Tₙ is made up of n rectangles of equal height laid on top of each other. Tₙ is the collection of the smallest such rectangles that completely covers the triangle.",
+  "questionText": "Find the total area of the n rectangles in Tₙ, for n ∈ ℕ. Give your answer in square units in terms of n, in its simplest form.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-q10-c-solution-1",
+    "kind": "point",
+    "verbatim": "or equivalent",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q10-c-solution-2",
+    "kind": "point",
+    "verbatim": "Identifies 2n (or n) small triangles",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q10-c-solution-3",
+    "kind": "point",
+    "verbatim": "Base length of each small triangle found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q10-c-solution-4",
+    "kind": "point",
+    "verbatim": "or equivalent not in closed form",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-hl-p1-q10-c-solution-5",
+    "kind": "point",
+    "verbatim": "Finds sum of the areas of the small triangles",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review."
  }
 ]
