@@ -1986,6 +1986,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Bull: Aberdeen Angus", marks: 4 },
     { id: "r-2", kind: "alt", verbatim: "Reason: Easy calving / good conformation / no horns (polled)", marks: 1, accepts: ["Easy calving","good conformation","no horns (polled)"], contextNote: "ONE marking point with three accepted wordings — the solidus separates alternatives here, not separate points. Any one reason earns the single mark." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2023,6 +2033,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Belgian Blue", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2068,6 +2088,16 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Mower", marks: 2, contextNote: "(d) Cutting of grass for silage" },
     { id: "r-5", kind: "point", verbatim: "Tedder", marks: 2, contextNote: "(e) Drying out grass to reduce dry matter (DM) content" },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2106,6 +2136,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Act as pollinators or support crop production", marks: 3, accepts: ["honey production","support biodiversity or ecosystem balance"], contextNote: "'3+2' means the FIRST correct role you gave scores 3 and the second scores 2 — the 3 is not tied to this particular role. Any two different roles from the scheme's list score." },
     { id: "r-2", kind: "alt", verbatim: "honey production", marks: 2, accepts: ["Act as pollinators or support crop production","support biodiversity or ecosystem balance"], contextNote: "Your second correct role, whichever it was, scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2121,6 +2161,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Use of pesticides or herbicides", marks: 3, accepts: ["monoculture","loss of habitats or food source","parasites or disease","climate change","competition from (imported) species"], contextNote: "'3+2': the first correct reason scores 3, the second scores 2. Any two different reasons from the scheme's list of six score." },
     { id: "r-2", kind: "alt", verbatim: "monoculture", marks: 2, accepts: ["Use of pesticides or herbicides","loss of habitats or food source","parasites or disease","climate change","competition from (imported) species"], contextNote: "Your second correct reason, whichever it was, scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2136,6 +2186,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Wear gloves", marks: 3, accepts: ["wear goggles","wear protective clothing","wear a face mask or breathing apparatus","precaution with sharp tools","valid machinery safety precaution"], contextNote: "'3+2': the first correct precaution scores 3, the second scores 2. The scheme adds 'accept PPE once only' — the generic word 'PPE' is credited once, so name two separate precautions. The pool ends 'other valid example', so a sensible precaution outside the list still scores.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "wear goggles", marks: 2, accepts: ["Wear gloves","wear protective clothing","wear a face mask or breathing apparatus","precaution with sharp tools","valid machinery safety precaution"], contextNote: "Your second correct precaution, whichever it was, scores 2.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p09-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p09-i0.png",
@@ -2158,49 +2218,12 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Isolate the cow", marks: 3, accepts: ["clean bedding","monitor the cow","assist during calving","allow cow to lick calf","ensure cow stands up","health and safety considerations"], contextNote: "'3+2': the first correct practice scores 3, the second scores 2. Any two different practices from the scheme's list of seven score." },
     { id: "r-2", kind: "alt", verbatim: "clean bedding", marks: 2, accepts: ["Isolate the cow","monitor the cow","assist during calving","allow cow to lick calf","ensure cow stands up","health and safety considerations"], contextNote: "Your second correct practice, whichever it was, scores 2." },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q9bi-ii", topicId: "agsci-1-3", conceptId: "agricultural-input-price-index",
-    section: "A", questionRef: "2025 OL Q9(b)(i)–(ii)",
-    stem: "The picture shows the Agricultural Price Index for 12 months up to March 2024.\nChanges in Agricultural Input Price: Electricity down 22% · Fertilisers down 40% · Feedstuffs down 21%\nChanges in Agricultural Output Price: Sheep up 30% · Cereals down 31% · Milk down 5%",
-    questionText: "(i) State if the input prices have increased or decreased. (ii) Identify what your answer in part (i) above means for farmers by placing a tick in the correct box: Costs less to produce / Cost the same to produce / Costs more to produce.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Decreased", marks: 3, contextNote: "Part (i) — all three input prices in the index fell." },
-    { id: "r-2", kind: "point", verbatim: "Costs less to produce", marks: 2, contextNote: "Part (ii) — the tick-box consequence of the answer to (i)." },
-    ],
-    figure: {
-          "candId": "agricultural-science-2025-OL-paper-p11-i0",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p11-i0.png",
-          "srcHash": "ff429aa36e2bf4b8166130177c35c78c",
-          "alt": "Cartoon-style infographic of the Agricultural Price Index for the 12 months to March 2024. A single illustrated farm landscape runs across the panel: electricity pylons and a blue tractor spraying at the left, a pink pig, a white farmhouse and grey sheds with tall metal silos in the centre, three sheep, a strip of maize, two black-and-white dairy cows and a blue-and-white 'MILK' tanker lorry at the right. Six white leader lines drop from individual items to captions along a dark green band. The left three captions read 'Electricity down 22%', 'Fertilisers down 40%' and 'Feedstuffs down 21%'; the right three read 'Sheep up 30%', 'Cereals down 31%' and 'Milk down 5%'. Underneath, a two-part coloured strip labels the halves: a yellow-green bar with red text 'Changes in Agricultural Input Price' on the left, and a gold bar with black text 'Changes in Agricultural Output Price' on the right. Beneath the graphic are part (i), 'State if the input prices have increased or decreased', and part (ii) with a cream-shaded tick table listing 'Costs less to produce', 'Cost the same to produce' and 'Costs more to produce'.",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q9biii-iv", topicId: "agsci-1-3", conceptId: "agricultural-output-price-index",
-    section: "A", questionRef: "2025 OL Q9(b)(iii)–(iv)",
-    questionText: "(iii) Which agricultural enterprise's output price has increased? (iv) Identify what your answer in part (iii) above means for farmers by placing a tick in the correct box: Increased profit / Increased cost.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Sheep", marks: 3, contextNote: "Part (iii) — sheep is the only output price up (30%); cereals and milk both fell." },
-    { id: "r-2", kind: "point", verbatim: "Increased profit", marks: 2, contextNote: "Part (iv) — the tick-box consequence of the answer to (iii)." },
-    ],
     sourceMaterial: {
           "kind": "source-illustration",
           "label": "OFFICIAL QUESTION PAGE",
           "title": "Official question page",
           "pages": [
-                11
+                10
           ],
           "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
@@ -2219,6 +2242,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "X", marks: 3, contextNote: "The paper's two tick-box options are X and Y." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p12-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p12-i0.png",
@@ -2242,6 +2275,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "90% or better chance of female calf", marks: 2, accepts: ["chance to expand the herd","can produce female calves (replacements) from best cows","improved genetic merit of herd","less unwanted calves","can reduce calving difficulties in maiden dairy heifers"], contextNote: "Two advantages are required, each worth 2. Any two different advantages from the scheme's list of six score." },
     { id: "r-2", kind: "alt", verbatim: "chance to expand the herd", marks: 2, accepts: ["90% or better chance of female calf","can produce female calves (replacements) from best cows","improved genetic merit of herd","less unwanted calves","can reduce calving difficulties in maiden dairy heifers"], contextNote: "Your second correct advantage, whichever it was, also scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p12-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p12-i0.png",
@@ -2335,6 +2378,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Less pressure on joints or improved lying behaviour", marks: 4, accepts: ["less injuries","improved cleanliness of animals","bacteria cannot thrive on rubber or improve hygiene","rubber acts as insulator so not too cold in winter or hot in summer","more comfortable surface to lie on","less noise"], contextNote: "'4+1': the first correct way scores 4 and the second only 1. Any two different ways from the scheme's list of seven score." },
     { id: "r-2", kind: "alt", verbatim: "less injuries", marks: 1, accepts: ["Less pressure on joints or improved lying behaviour","improved cleanliness of animals","bacteria cannot thrive on rubber or improve hygiene","rubber acts as insulator so not too cold in winter or hot in summer","more comfortable surface to lie on","less noise"], contextNote: "Your second correct way, whichever it was, scores 1." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p14-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p14-i0.png",
@@ -2358,6 +2411,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Easier to clean so more hygienic", marks: 4, accepts: ["improved air quality","no over ground slurry storage","no bedding required","no production of FYM","reduce labour"], contextNote: "'4+1': the first correct benefit scores 4 and the second only 1. Any two different benefits from the scheme's list of six score — but they must not be welfare points, which the question excludes." },
     { id: "r-2", kind: "alt", verbatim: "improved air quality", marks: 1, accepts: ["Easier to clean so more hygienic","no over ground slurry storage","no bedding required","no production of FYM","reduce labour"], contextNote: "Your second correct benefit, whichever it was, scores 1." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                14
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2372,6 +2435,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Ensure ewes lamb indoors", marks: 3, accepts: ["ensure lambs get colostrum","lambs kept under infra-red lamp","monitor closely","glucose injection","lamb jackets","foster multiples"], contextNote: "'3+2': the first correct way scores 3, the second scores 2. Any two different ways from the scheme's list of seven score." },
     { id: "r-2", kind: "alt", verbatim: "ensure lambs get colostrum", marks: 2, accepts: ["Ensure ewes lamb indoors","lambs kept under infra-red lamp","monitor closely","glucose injection","lamb jackets","foster multiples"], contextNote: "Your second correct way, whichever it was, scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2385,6 +2458,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(More) competition for nutrients", marks: 2, contextNote: "The bracketed word is not required — 'competition for nutrients' alone scores." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5316,6 +5399,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "20", marks: 5, contextNote: "The scheme prints the number on its own. Part (a)(i)'s reason line confirms it, reading \"Multiple samples (20) taken\"." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5330,6 +5423,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Soil augur or probe or (core) sampler or tester", marks: 4, contextNote: "One name is enough. The scheme joins these with \"or\", which in an SEC scheme marks alternatives to a single required answer, not four separate marking points." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5347,6 +5450,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "leave to settle (for 2 to 24 hours)", marks: 2, accepts: ["shake or invert","put lid on sieve and shake","note if it is gritty or smooth","note plasticity","roll soil into a ball and observe result","roll soil into a string and observe result","shape string into a ring shape and observe result"], contextNote: "The step that separates or tests the particles." },
     { id: "r-4", kind: "alt", verbatim: "measure volume of sand, silt and clay in graduated cylinder", marks: 2, accepts: ["use soil triangle to calculate soil texture","weigh soil in each sieve compartment","measure mass of soil in each sieve as a percentage of total mass","calculate as a % of total mass","valid result observed","compare result to the flow chart"], contextNote: "Reading or working out the result." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                19
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5361,6 +5474,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Loam soil", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p20-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p20-i0.png",
@@ -5384,6 +5507,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Good drainage", marks: 2, accepts: ["good aeration","good fertility","warms up easily in spring","easily cultivated","retains moisture without waterlogging"], contextNote: "Any one characteristic of a loam soil from the scheme's pool of six." },
     { id: "r-2", kind: "alt", verbatim: "good aeration", marks: 2, accepts: ["Good drainage","good fertility","warms up easily in spring","easily cultivated","retains moisture without waterlogging"], contextNote: "A second, different characteristic." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p20-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p20-i0.png",
@@ -5408,6 +5541,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "potatoes", marks: 4, accepts: ["Grass","clover","barley","wheat","oats","maize","kale"], contextNote: "A second, different crop.", openList: true },
     { id: "r-3", kind: "alt", verbatim: "barley", marks: 4, accepts: ["Grass","potatoes","clover","wheat","oats","maize","kale"], contextNote: "A third, different crop.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p20-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p20-i0.png",
@@ -5431,6 +5574,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Raises soil pH", marks: 2, accepts: ["increases nutrient availability"], contextNote: "Heading: Soil pH. The scheme prints the two wordings either side of a solidus, so either one takes the 2 marks — this is one marking point, not two." },
     { id: "r-2", kind: "alt", verbatim: "Medium term activity", marks: 2, accepts: ["takes 18 minimum months to take effect"], contextNote: "Heading: Time to take full effect. Again one 2-mark unit with two acceptable wordings." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                20
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5445,6 +5598,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "February", marks: 5, contextNote: "January reads 5.1, below the 6-degree threshold; February at 6.6 is the first month at or above it." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p21-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p21-i0.png",
@@ -5467,6 +5630,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Cattle poach land", marks: 4, accepts: ["may have to be kept in sheds longer","waterlogged soils may reduce the grazing area available or restrict access to land","grass may experience rapid growth and become overgrown","farmer might have to adjust rotational plan due to unusable land","warm temperatures may lead to rapid grass growth","cold temperatures may lead to slow growth and a need to supplement feed","more feed may be required due to reduced grass DM","wet conditions increase the risk of lameness and disease"], contextNote: "One impact only. The scheme prints a nine-point pool against a single 4-mark award, so any one of them takes the whole 4 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5481,6 +5654,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "The seeds in the polytunnel will have a higher germination rate (due to warmer temperatures)", marks: 4, accepts: ["the seeds in the polytunnel will have a higher growth rate"], contextNote: "The scheme's entry ends \"or valid hypothesis\", so any testable prediction linking the temperature to the germination takes the 4 marks.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5519,6 +5702,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The polytunnel had a higher germination rate", marks: 4, contextNote: "The scheme's full wording is \"The polytunnel had a higher germination rate because of the warmer conditions\" — a conclusion must both state the higher germination rate and tie it to the warmer conditions." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p22-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p22-i1.png",
@@ -5541,6 +5734,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "89/100 x 100/1 = 89%", marks: 4, contextNote: "The scheme allows the full 4 marks for the correct answer indicated on its own, and 2 marks for the correct method with an incorrect answer." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                22,
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p22-i1",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p22-i1.png",
@@ -5587,6 +5791,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Analytical purity of 98%", marks: null, accepts: ["pure of variety","treated with a pesticide or herbicide","free from weed seeds","fully traceable","disease free"], contextNote: "Any one characteristic other than the guaranteed germination rate. The scheme gives 3 marks to the first correct characteristic and 2 to the second, so the value follows the position, not which characteristic you named." },
     { id: "r-2", kind: "alt", verbatim: "free from weed seeds", marks: null, accepts: ["Analytical purity of 98%","pure of variety","treated with a pesticide or herbicide","fully traceable","disease free"], contextNote: "A second, different characteristic." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5625,6 +5839,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Using glass bottles or bottles from the customers instead of plastic", marks: 5, contextNote: "One point. The internal \"or\" is an alternative wording of the same idea, not a second marking point." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                24
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5664,6 +5888,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "milking parlour hygiene", marks: null, accepts: ["Diet of cow","breed of cow","bulk tank temperature","health or age of cow","stage of lactation","length of dry period","pasteurisation"], contextNote: "A second, different factor." },
     { id: "r-3", kind: "alt", verbatim: "bulk tank temperature", marks: null, accepts: ["Diet of cow","breed of cow","milking parlour hygiene","health or age of cow","stage of lactation","length of dry period","pasteurisation"], contextNote: "A third, different factor." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5679,6 +5913,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Mastitis", marks: null, accepts: ["TB","BVD","Johne's disease","IBR","Brucellosis","Leptospirosis"], contextNote: "Answer box: disease the cows are tested for. Any one of the scheme's seven." },
     { id: "r-2", kind: "alt", verbatim: "SCC", marks: null, accepts: ["TBC","CMT","butterfat","protein","presence of antibiotics (Delvo Test)","resazurin or methylene blue"], contextNote: "Answer box: milk quality test that could be carried out on the farm. Any one of the scheme's list." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5695,6 +5939,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "add 1ml of Resazurin solution", marks: 4, accepts: ["Two or more samples of milk","samples of various ages","add each sample to a sterile test tube","in water bath","for 10 mins","at 37oC","observe colour change","best quality is blue or good quality is mauve or fair is pink","average quality is pink or poorest quality is white"], contextNote: "A second, different point." },
     { id: "r-3", kind: "alt", verbatim: "observe colour change", marks: 4, accepts: ["Two or more samples of milk","samples of various ages","add each sample to a sterile test tube","add 1ml of Resazurin solution","in water bath","for 10 mins","at 37oC","best quality is blue or good quality is mauve or fair is pink","average quality is pink or poorest quality is white"], contextNote: "A third, different point." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                26
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5710,6 +5964,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "High level of nutrients", marks: 2, accepts: ["provides antibodies to support immunity","easily digestible","warms the calf or best chance in life","laxative effect"], contextNote: "Feed: colostrum. Any one of the scheme's five reasons takes the 2 marks." },
     { id: "r-2", kind: "alt", verbatim: "Source of fibre to aid digestion", marks: 2, accepts: ["promotes rumen development","transition to ruminant diet"], contextNote: "Feed: hay. Any one of the scheme's three reasons takes the 2 marks." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5725,6 +5989,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Good ventilation (to reduce chance of air borne diseases)", marks: 4, accepts: ["shed is clean (to help reduce disease)","weighing cattle and group by weight (to ensure animals are not bullied)","dosing animals for parasites (to prevent parasites)","slats to remove waste (and maintain hygiene)","access to clean water (for hydration)","sufficient (feeding) space (to reduce stress)","sufficient light (to reduce stress)"], contextNote: "'4+2': the FIRST correct welfare factor you gave scores 4 and the second scores 2 — the 4 is not tied to ventilation. Any two different factors from the scheme's list of eight score." },
     { id: "r-2", kind: "alt", verbatim: "shed is clean (to help reduce disease)", marks: 2, accepts: ["Good ventilation (to reduce chance of air borne diseases)","weighing cattle and group by weight (to ensure animals are not bullied)","dosing animals for parasites (to prevent parasites)","slats to remove waste (and maintain hygiene)","access to clean water (for hydration)","sufficient (feeding) space (to reduce stress)","sufficient light (to reduce stress)"], contextNote: "Your second correct welfare factor, whichever it was, scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5740,6 +6014,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Secure pens or fencing to prevent livestock breaking out", marks: 4, accepts: ["non-slip floors to prevent accidents with livestock","having escape route or avoid unnecessary entry","group animals by size or correct stocking density (prevent overcrowding)","headlock gates to prevent injury"], contextNote: "'4+2': the FIRST correct safety consideration scores 4 and the second scores 2. The scheme's pool ends 'any two valid answers', so a sensible safety point outside the printed list still scores.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "non-slip floors to prevent accidents with livestock", marks: 2, accepts: ["Secure pens or fencing to prevent livestock breaking out","having escape route or avoid unnecessary entry","group animals by size or correct stocking density (prevent overcrowding)","headlock gates to prevent injury"], contextNote: "Your second correct safety consideration, whichever it was, scores 2.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5757,6 +6041,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "alt", verbatim: "place beaker in oven", marks: 2, accepts: ["Weigh a sample of silage","cut silage into short lengths with a scissors","weigh a beaker and note mass","add silage to beaker","weigh silage + beaker","calculate mass of silage by subtraction","at 100oC","remove from oven and reweigh","repeat until constant mass","calculate DM","mass of dry matter divided by mass of fresh grass x 100"], contextNote: "Your third correct step, whichever it was, scores 2. 'at 100oC' and 'repeat until constant mass' are each a step in their own right." },
     { id: "r-4", kind: "alt", verbatim: "calculate DM", marks: 2, accepts: ["Weigh a sample of silage","cut silage into short lengths with a scissors","weigh a beaker and note mass","add silage to beaker","weigh silage + beaker","calculate mass of silage by subtraction","place beaker in oven","at 100oC","remove from oven and reweigh","repeat until constant mass","mass of dry matter divided by mass of fresh grass x 100"], contextNote: "Your fourth correct step, whichever it was, scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                29
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5772,6 +6066,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Stage of growth", marks: 4, accepts: ["DMD","cutting height","grass variety","sugar or moisture content","nitrate levels in grass","air in pit at fermentation or ensiling method","wilting","use of additives"], contextNote: "'4+2': the FIRST correct factor scores 4 and the second scores 2. Any two different factors from the scheme's list of nine score." },
     { id: "r-2", kind: "alt", verbatim: "DMD", marks: 2, accepts: ["Stage of growth","cutting height","grass variety","sugar or moisture content","nitrate levels in grass","air in pit at fermentation or ensiling method","wilting","use of additives"], contextNote: "Your second correct factor, whichever it was, scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5787,6 +6091,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Hay", marks: 4, accepts: ["concentrates","kale","rape","hybrid brassicas","beet"], contextNote: "Two feedstuffs are required and both slots are worth 4, so there is no order effect here. The scheme's pool ends 'other valid answer', so another genuine winter feedstuff also scores.", openList: true },
     { id: "r-2", kind: "alt", verbatim: "concentrates", marks: 4, accepts: ["Hay","kale","rape","hybrid brassicas","beet"], contextNote: "Your second correct feedstuff, whichever it was, also scores 4.", openList: true },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5803,6 +6117,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "alt", verbatim: "improve drainage or reduce compaction", marks: 3, accepts: ["Improve aeration or root growth","break down organic matter or sequester carbon","increase availability of P or increased fertility","mix layers of soil","improves structure"], contextNote: "Your second correct advantage, whichever it was, scores 3." },
     { id: "r-3", kind: "alt", verbatim: "break down organic matter or sequester carbon", marks: 2, accepts: ["Improve aeration or root growth","improve drainage or reduce compaction","increase availability of P or increased fertility","mix layers of soil","improves structure"], contextNote: "Your third correct advantage, whichever it was, scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5818,6 +6142,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Add manure or add organic matter", marks: 2, accepts: ["improve drainage or reduce compaction","liming","irrigation","min-till or reduce tillage","avoid excessive use of fertiliser or pesticide"], contextNote: "Two ways are required, each worth 2, so there is no order effect. Any two different ways from the scheme's list of six score." },
     { id: "r-2", kind: "alt", verbatim: "improve drainage or reduce compaction", marks: 2, accepts: ["Add manure or add organic matter","liming","irrigation","min-till or reduce tillage","avoid excessive use of fertiliser or pesticide"], contextNote: "Your second correct way, whichever it was, also scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5855,6 +6189,17 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Same amount of soil (clay) or water", marks: 3, accepts: ["type of soil (clay) used in each test tube","shaken for same amount of time"], contextNote: "Only ONE control variable is asked for and the whole 3 marks ride on it; the three wordings the scheme prints are alternatives, not three separate points." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                31,
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-ol-paper-p032-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-ol-paper-p032-i0.png",
@@ -5877,6 +6222,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Qualitative", marks: 3 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5894,6 +6249,16 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Seed formation and development — Phosphorus", marks: null },
     { id: "r-4", kind: "point", verbatim: "Cell wall formation — Calcium", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5908,6 +6273,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "The ratio of lean meat to fat on the animal’s body", marks: 3, accepts: ["a system use to determine the amount of fat on an animal","1= extremely thin 5 (9) = extremely fat"], contextNote: "One explanation is asked for and it carries all 3 marks; the scheme's three wordings are alternatives, not three points." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5922,6 +6297,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "BCS: 3", marks: 5 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-ol-paper-p034-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-ol-paper-p034-i0.png",
@@ -5945,6 +6330,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "More efficient management (if most calves born in a short window)", marks: 2, accepts: ["all calves at same stage of feeding","efficient labour (for tasks such as vaccinations or dosing)","more efficient breeding programme (for getting cows back in calf)","calves reach growth targets in similar time frame (for slaughter or breeding)"], contextNote: "Two advantages are required, each worth 2, so there is no order effect. Any two different advantages from the scheme's list of five score." },
     { id: "r-2", kind: "alt", verbatim: "all calves at same stage of feeding", marks: 2, accepts: ["More efficient management (if most calves born in a short window)","efficient labour (for tasks such as vaccinations or dosing)","more efficient breeding programme (for getting cows back in calf)","calves reach growth targets in similar time frame (for slaughter or breeding)"], contextNote: "Your second correct advantage, whichever it was, also scores 2." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                34
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5959,6 +6354,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "365-285 = 80 days", marks: 4 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5975,6 +6380,16 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B – weaning off: July", marks: null },
     { id: "r-3", kind: "point", verbatim: "A – drying off: December", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5990,6 +6405,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "2 separate fields indicated", marks: 5, accepts: ["younger animals separated from older animals","young animals on fresh pasture","older animals behind"], contextNote: "'5+4': the FIRST correct feature scores 5 and the second scores 4 — the 5 is not tied to drawing two fields. The scheme adds '(Points can be indicated in text)', so a labelled sketch is not the only way to score." },
     { id: "r-2", kind: "alt", verbatim: "younger animals separated from older animals", marks: 4, accepts: ["2 separate fields indicated","young animals on fresh pasture","older animals behind"], contextNote: "Your second correct feature, whichever it was, scores 4." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                35
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6005,6 +6430,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Yellow (due to carotene in grass)", marks: 2, accepts: ["higher in Vitamin A or D or E or anti-oxidants","high in omega 3 or omega 6","higher in CLA","richer flavour"], contextNote: "Two characteristics are required, each worth 2, so there is no order effect. Any two different characteristics from the scheme's list of five score." },
     { id: "r-2", kind: "alt", verbatim: "high in omega 3 or omega 6", marks: 2, accepts: ["Yellow (due to carotene in grass)","higher in Vitamin A or D or E or anti-oxidants","higher in CLA","richer flavour"], contextNote: "Your second correct characteristic, whichever it was, also scores 2. Note that 'higher in Vitamin A or D or E or anti-oxidants' is ONE point with four wordings — any one of them scores it, and naming two of them does not score twice." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -6903,6 +7338,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "A: (Butter) fat", marks: null, contextNote: "The bracketed word is context, not a requirement — \"fat\" scores." },
     { id: "r-2", kind: "point", verbatim: "B: Water", marks: null },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                25
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p25-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p25-i0.png",
@@ -7805,6 +8250,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Means: Costs less to produce", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p11-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p11-i0.png",
@@ -7827,6 +8282,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Increased profit", marks: 2 },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p11-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p11-i0.png",
@@ -7849,6 +8314,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Method: C", marks: 5, contextNote: "Three sampling patterns drawn on a field: A a tight zigzag confined to one diagonal band, B a ring of marks round the edges, C a broad W crossing the whole field." },
     { id: "r-2", kind: "alt", verbatim: "Reason: Multiple samples (20) taken", marks: 4, accepts: ["all areas of field sampled","representative of field","avoids headlands or gateways","entrances and exits or around drinking trough"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                18
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p18-i0",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p18-i0.png",
@@ -7872,6 +8347,16 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Paddocks near yard or yard at the centre of the paddocks", marks: 3, accepts: ["sheds near farmhouse","silage storage near sheds","yard has wide roadways for easy machinery movement"], contextNote: "Aerial photograph of the farmyard with three drawn yellow arrows: A points at a large circular tank with a dark open top standing on its own hardstanding, B at a long low narrow building along the bottom of the yard, C at a small pitched-roof shed on the western side." },
     { id: "r-2", kind: "point", verbatim: "roadways for access", marks: 2, accepts: ["sheds near farmhouse","silage storage near sheds","yard has wide roadways for easy machinery movement"] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p06-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p06-art.png",
@@ -7894,6 +8379,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "photograph", marks: 3, contextNote: "Aerial photograph of the farmyard with three drawn yellow arrows: A points at a large circular tank with a dark open top standing on its own hardstanding, B at a long low narrow building along the bottom of the yard, C at a small pitched-roof shed on the western side." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p06-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p06-art.png",
@@ -7921,6 +8416,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Paddocks (adjacent to each other for rotational grazing)", marks: 2, accepts: ["large paddocks could be divided into strips with electric fencing roadways for access to paddocks","little or no hedgerows","farmyard is central to the fields"], contextNote: "Aerial photograph of the farmyard with three drawn yellow arrows: A points at a large circular tank with a dark open top standing on its own hardstanding, B at a long low narrow building along the bottom of the yard, C at a small pitched-roof shed on the western side." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p06-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p06-art.png",
@@ -7929,35 +8434,6 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC024GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
-    id: "agsci-2025-ol-q1ai", topicId: "agsci-4-3-2", conceptId: "identifying-cattle-breeds-from-a-list",
-    section: "A", questionRef: "2025 OL Q1(a)(i)",
-    stem: "Jersey Holstein Friesian Charolais Limousin Or",
-    questionText: "Identify any three breeds A, B, C or D using the list below.",
-    tariffModel: {"kind":"fixed","notation":"3x2"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A: Charolais", marks: 2, accepts: ["D: Holstein Friesian"], contextNote: "Four cattle photographs under a word bank of Jersey, Holstein Friesian, Charolais and Limousin. A is a cream-white bull, B a fawn cow grazing among a fawn herd, C a deep red-brown heavily muscled bull in a straw shed, D a black-and-white cow grazing." },
-    { id: "r-2", kind: "point", verbatim: "B: Jersey", marks: 2, accepts: ["D: Holstein Friesian"] },
-    { id: "r-3", kind: "point", verbatim: "C: Limousin", marks: 2, accepts: ["D: Holstein Friesian"] },
-    ],
-    figure: {
-          "candId": "agricultural-science-2025-OL-paper-p03-art",
-          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
-          "srcHash": "3d7f24bd5114829a31454828aae981da",
-          "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
-          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Charolais","askedInThisQuestion":true},{"letter":"B","meaning":"Jersey","askedInThisQuestion":true},{"letter":"C","meaning":"Limousin","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7972,6 +8448,16 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Limousin or Charolais", marks: 4, contextNote: "Four cattle photographs under a word bank of Jersey, Holstein Friesian, Charolais and Limousin. A is a cream-white bull, B a fawn cow grazing among a fawn herd, C a deep red-brown heavily muscled bull in a straw shed, D a black-and-white cow grazing." },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Official question page",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+    },
     figure: {
           "candId": "agricultural-science-2025-OL-paper-p03-art",
           "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
@@ -16594,5 +17080,1098 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"teat","askedInThisQuestion":false},{"letter":"B","meaning":"quarter","askedInThisQuestion":true},{"letter":"C","meaning":"median suspensory ligament","askedInThisQuestion":true},{"letter":"D","meaning":"connective tissue septum","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-2","agsci-4-3-2"]), kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q1ai", topicId: "agsci-4-2", additionalTopicIds: ["agsci-4-3-2"], conceptId: "identifying-cattle-breeds-from-a-list",
+    section: "A", questionRef: "2025 OL Q1(a)(i) — A, B, C",
+    stem: "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs A, B, C.",
+    questionText: "Identify any three breeds A, B, C or D using the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Charolais", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "B: Jersey", marks: 2, contextNote: "Photograph B." },
+    { id: "r-3", kind: "point", verbatim: "C: Limousin", marks: 2, contextNote: "Photograph C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — A, B, C",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
+          "srcHash": "3d7f24bd5114829a31454828aae981da",
+          "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Charolais","askedInThisQuestion":true},{"letter":"B","meaning":"Jersey","askedInThisQuestion":true},{"letter":"C","meaning":"Limousin","askedInThisQuestion":true},{"letter":"D","meaning":"Holstein Friesian","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-2","agsci-4-3-2"]), kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q1ai-route-abd", topicId: "agsci-4-2", additionalTopicIds: ["agsci-4-3-2"], conceptId: "identifying-cattle-breeds-from-a-list",
+    section: "A", questionRef: "2025 OL Q1(a)(i) — A, B, D",
+    stem: "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs A, B, D.",
+    questionText: "Identify any three breeds A, B, C or D using the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Charolais", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "B: Jersey", marks: 2, contextNote: "Photograph B." },
+    { id: "r-3", kind: "point", verbatim: "D: Holstein Friesian", marks: 2, contextNote: "Photograph D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — A, B, D",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
+          "srcHash": "3d7f24bd5114829a31454828aae981da",
+          "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Charolais","askedInThisQuestion":true},{"letter":"B","meaning":"Jersey","askedInThisQuestion":true},{"letter":"C","meaning":"Limousin","askedInThisQuestion":false},{"letter":"D","meaning":"Holstein Friesian","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-2","agsci-4-3-2"]), kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q1ai-route-acd", topicId: "agsci-4-2", additionalTopicIds: ["agsci-4-3-2"], conceptId: "identifying-cattle-breeds-from-a-list",
+    section: "A", questionRef: "2025 OL Q1(a)(i) — A, C, D",
+    stem: "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs A, C, D.",
+    questionText: "Identify any three breeds A, B, C or D using the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Charolais", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "C: Limousin", marks: 2, contextNote: "Photograph C." },
+    { id: "r-3", kind: "point", verbatim: "D: Holstein Friesian", marks: 2, contextNote: "Photograph D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — A, C, D",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
+          "srcHash": "3d7f24bd5114829a31454828aae981da",
+          "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Charolais","askedInThisQuestion":true},{"letter":"B","meaning":"Jersey","askedInThisQuestion":false},{"letter":"C","meaning":"Limousin","askedInThisQuestion":true},{"letter":"D","meaning":"Holstein Friesian","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-2","agsci-4-3-2"]), kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q1ai-route-bcd", topicId: "agsci-4-2", additionalTopicIds: ["agsci-4-3-2"], conceptId: "identifying-cattle-breeds-from-a-list",
+    section: "A", questionRef: "2025 OL Q1(a)(i) — B, C, D",
+    stem: "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs B, C, D.",
+    questionText: "Identify any three breeds A, B, C or D using the list below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B: Jersey", marks: 2, contextNote: "Photograph B." },
+    { id: "r-2", kind: "point", verbatim: "C: Limousin", marks: 2, contextNote: "Photograph C." },
+    { id: "r-3", kind: "point", verbatim: "D: Holstein Friesian", marks: 2, contextNote: "Photograph D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — B, C, D",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
+          "srcHash": "3d7f24bd5114829a31454828aae981da",
+          "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Charolais","askedInThisQuestion":false},{"letter":"B","meaning":"Jersey","askedInThisQuestion":true},{"letter":"C","meaning":"Limousin","askedInThisQuestion":true},{"letter":"D","meaning":"Holstein Friesian","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-2-2-2"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q5a", topicId: "agsci-2-2-2", conceptId: "ideal-soil-composition",
+    section: "A", questionRef: "2025 OL Q5(a)",
+    stem: "The diagram shows the effect of soil composition on the productivity of a crop. Key: mineral and organic matter, soil water, soil air. Analyse the diagram and answer the questions that follow.",
+    questionText: "Identify with reason which picture A, B, or C has the ideal soil composition.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Picture: B", marks: 3 },
+    { id: "r-2", kind: "anyN", verbatim: "soil has (50%) mineral and organic matter or 25% air or 25% water / seed can access adequate air or water or has space to grow / adequate amounts of mineral or organic matter / seedling is largest in picture B", marks: 2, contextNote: "Reason.", group: {"claimMax":1,"perOption":2,"options":["soil has (50%) mineral and organic matter or 25% air or 25% water","seed can access adequate air or water or has space to grow","adequate amounts of mineral or organic matter","seedling is largest in picture B"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q5(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-2-2-2","agsci-2-3"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q5b", topicId: "agsci-2-2-2", additionalTopicIds: ["agsci-2-3"], conceptId: "high-mineral-organic-soil",
+    section: "A", questionRef: "2025 OL Q5(b)",
+    stem: "The diagram shows the effect of soil composition on the productivity of a crop. Key: mineral and organic matter, soil water, soil air. Analyse the diagram and answer the questions that follow.",
+    questionText: "Outline one reason why soil C has a high percentage of mineral and organic matter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "It is a clay soil / under continuous grassland / organic matter or manure or slurry or fertiliser has been added", marks: 2, group: {"claimMax":1,"perOption":2,"options":["It is a clay soil","under continuous grassland","organic matter or manure or slurry or fertiliser has been added"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q5(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q7a-route-abc", topicId: "agsci-3-2", conceptId: "identifying-grassland-plants",
+    section: "A", questionRef: "2025 OL Q7(a) — A, B, C",
+    stem: "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs A, B, C.",
+    questionText: "Identify any three plants shown in the table below using the list opposite.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: (Perennial) ryegrass", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "B: (White)clover", marks: 2, contextNote: "Photograph B." },
+    { id: "r-3", kind: "point", verbatim: "C: Nettle", marks: 2, contextNote: "Photograph C." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q7(a) — A, B, C",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q7a-route-abd", topicId: "agsci-3-2", conceptId: "identifying-grassland-plants",
+    section: "A", questionRef: "2025 OL Q7(a) — A, B, D",
+    stem: "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs A, B, D.",
+    questionText: "Identify any three plants shown in the table below using the list opposite.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: (Perennial) ryegrass", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "B: (White)clover", marks: 2, contextNote: "Photograph B." },
+    { id: "r-3", kind: "point", verbatim: "D: Chicory", marks: 2, contextNote: "Photograph D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q7(a) — A, B, D",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q7a-route-acd", topicId: "agsci-3-2", conceptId: "identifying-grassland-plants",
+    section: "A", questionRef: "2025 OL Q7(a) — A, C, D",
+    stem: "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs A, C, D.",
+    questionText: "Identify any three plants shown in the table below using the list opposite.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: (Perennial) ryegrass", marks: 2, contextNote: "Photograph A." },
+    { id: "r-2", kind: "point", verbatim: "C: Nettle", marks: 2, contextNote: "Photograph C." },
+    { id: "r-3", kind: "point", verbatim: "D: Chicory", marks: 2, contextNote: "Photograph D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q7(a) — A, C, D",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q7a-route-bcd", topicId: "agsci-3-2", conceptId: "identifying-grassland-plants",
+    section: "A", questionRef: "2025 OL Q7(a) — B, C, D",
+    stem: "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs B, C, D.",
+    questionText: "Identify any three plants shown in the table below using the list opposite.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B: (White)clover", marks: 2, contextNote: "Photograph B." },
+    { id: "r-2", kind: "point", verbatim: "C: Nettle", marks: 2, contextNote: "Photograph C." },
+    { id: "r-3", kind: "point", verbatim: "D: Chicory", marks: 2, contextNote: "Photograph D." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q7(a) — B, C, D",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-3-2","agsci-3-2"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q7b", topicId: "agsci-3-3-2", additionalTopicIds: ["agsci-3-2"], conceptId: "undesirable-sward-plant",
+    section: "A", questionRef: "2025 OL Q7(b)",
+    stem: "Part (a) shows A (perennial) ryegrass, B (white) clover, C nettle and D chicory.",
+    questionText: "State which plant from part (a) above is not desired in a grassland sward.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Nettle or C", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q7(b)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-1","agsci-4-3-3"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q9ai", topicId: "agsci-4-1", additionalTopicIds: ["agsci-4-3-3"], conceptId: "calf-birth-position",
+    section: "A", questionRef: "2025 OL Q9(a)(i)",
+    stem: "The pictures below show calves presented in various positions leading up to birth.",
+    questionText: "Identify with reason which picture A or B is the correct position for a calf at birth.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Picture: B", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Fore or front legs first (with head lying flat on top of legs) or normal presentation or easier calving", marks: 2, contextNote: "Reason." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q9(a)(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-1-3"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q9bi-ii", topicId: "agsci-1-3", conceptId: "agricultural-input-price-index",
+    section: "A", questionRef: "2025 OL Q9(b)(i)",
+    stem: "The picture shows the Agricultural Price Index for 12 months up to March 2024.\nChanges in Agricultural Input Price: Electricity down 22% · Fertilisers down 40% · Feedstuffs down 21%\nChanges in Agricultural Output Price: Sheep up 30% · Cereals down 31% · Milk down 5%",
+    questionText: "State if the input prices have increased or decreased.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Decreased", marks: 3, contextNote: "All three input prices in the index fell." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q9(b)(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p11-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p11-i0.png",
+          "srcHash": "ff429aa36e2bf4b8166130177c35c78c",
+          "alt": "Cartoon-style infographic of the Agricultural Price Index for the 12 months to March 2024. A single illustrated farm landscape runs across the panel: electricity pylons and a blue tractor spraying at the left, a pink pig, a white farmhouse and grey sheds with tall metal silos in the centre, three sheep, a strip of maize, two black-and-white dairy cows and a blue-and-white 'MILK' tanker lorry at the right. Six white leader lines drop from individual items to captions along a dark green band. The left three captions read 'Electricity down 22%', 'Fertilisers down 40%' and 'Feedstuffs down 21%'; the right three read 'Sheep up 30%', 'Cereals down 31%' and 'Milk down 5%'. Underneath, a two-part coloured strip labels the halves: a yellow-green bar with red text 'Changes in Agricultural Input Price' on the left, and a gold bar with black text 'Changes in Agricultural Output Price' on the right. Beneath the graphic are part (i), 'State if the input prices have increased or decreased', and part (ii) with a cream-shaded tick table listing 'Costs less to produce', 'Cost the same to produce' and 'Costs more to produce'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-1-3"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q9biii-iv", topicId: "agsci-1-3", conceptId: "agricultural-output-price-index",
+    section: "A", questionRef: "2025 OL Q9(b)(iii)",
+    stem: "The picture shows the Agricultural Price Index for 12 months up to March 2024.\nChanges in Agricultural Input Price: Electricity down 22% · Fertilisers down 40% · Feedstuffs down 21%\nChanges in Agricultural Output Price: Sheep up 30% · Cereals down 31% · Milk down 5%",
+    questionText: "Which agricultural enterprise’s output price has increased?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sheep", marks: 3, contextNote: "Sheep is the only output price up (30%); cereals and milk both fell." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q9(b)(iii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p11-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p11-i0.png",
+          "srcHash": "ff429aa36e2bf4b8166130177c35c78c",
+          "alt": "Cartoon-style infographic of the Agricultural Price Index for the 12 months to March 2024. A single illustrated farm landscape runs across the panel: electricity pylons and a blue tractor spraying at the left, a pink pig, a white farmhouse and grey sheds with tall metal silos in the centre, three sheep, a strip of maize, two black-and-white dairy cows and a blue-and-white 'MILK' tanker lorry at the right. Six white leader lines drop from individual items to captions along a dark green band. The left three captions read 'Electricity down 22%', 'Fertilisers down 40%' and 'Feedstuffs down 21%'; the right three read 'Sheep up 30%', 'Cereals down 31%' and 'Milk down 5%'. Underneath, a two-part coloured strip labels the halves: a yellow-green bar with red text 'Changes in Agricultural Input Price' on the left, and a gold bar with black text 'Changes in Agricultural Output Price' on the right. Beneath the graphic are part (i), 'State if the input prices have increased or decreased', and part (ii) with a cream-shaded tick table listing 'Costs less to produce', 'Cost the same to produce' and 'Costs more to produce'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-1","agsci-4-3-2"]), kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q10a", topicId: "agsci-4-1", additionalTopicIds: ["agsci-4-3-2"], conceptId: "sex-sorted-semen-cell",
+    section: "A", questionRef: "2025 OL Q10(a)",
+    stem: "The diagram shows the process of sex sorting bull semen. Analyse the picture and answer the questions that follow.",
+    questionText: "Identify the sex cell labelled A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sperm or male", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q10(a)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p12-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p12-i0.png",
+          "srcHash": "3c6d614d8aa1acce4de1219bae49ec13",
+          "alt": "Full crop of Question 10 — text on the left, diagram on the right. The stem reads 'The diagram shows the process of sex sorting bull semen.' The diagram is a vertical flow schematic of a sperm-sorting machine, read top to bottom. At the top, two sperm cells travel down a narrow channel drawn as two dark blue vertical bars; the upper sperm head carries a pink X, the lower one a blue Y, and a red arrow labelled with a bold red A points to that lower sperm cell with the blue Y in its head. Below the channel a single sperm with a pink X passes through a dark blue ellipse (the detector ring). Next, a sperm with a blue Y passes between two short black bars marked with a teal plus sign on the left and a teal minus sign on the right (the charging plates). Below that the stream splits into two: a sperm with a blue Y tagged with a teal minus symbol on the left, and a sperm with a pink X tagged with a teal plus symbol on the right. At the bottom the sorted cells fall into three cylinders — a blue cylinder labelled Y at the left receiving the minus-charged Y sperm, a pink cylinder labelled X at the right receiving the plus-charged X sperm, and a dark green cylinder in the centre receiving two sperm whose heads carry a green question mark, with a red arrow and the words 'Dead and abnormal sperm' pointing to it. On the left of the crop are part (a) with a blank answer box, part (b) with a small blue-shaded tick table whose rows are labelled X and Y, and part (c) with a blank numbered answer table.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Sperm or male","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-3","agsci-1-3"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q12ai", topicId: "agsci-4-3-3", additionalTopicIds: ["agsci-1-3"], conceptId: "lamb-mortality-cause",
+    section: "A", questionRef: "2025 OL Q12(a)(i)",
+    stem: "The graph shows the main causes of lamb mortality (death) on Irish sheep farms: chill and starvation 30%, abortion and stillbirth 40%, disease (bar not drawn), accidents and predators 5%, birth defects 5%.",
+    questionText: "Identify the main cause of lamb mortality.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Abortion and stillbirth", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q12(a)(i)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-1-4","agsci-4-3-3"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q12aii", topicId: "agsci-1-4", additionalTopicIds: ["agsci-4-3-3"], conceptId: "completing-a-bar-chart",
+    section: "A", questionRef: "2025 OL Q12(a)(ii)",
+    stem: "The graph shows the main causes of lamb mortality (death) on Irish sheep farms: chill and starvation 30%, abortion and stillbirth 40%, disease (bar not drawn), accidents and predators 5%, birth defects 5%.",
+    questionText: "Complete the graph above to show that 20% of lambs die due to disease.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Bar inserted in graph to height of 20", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q12(a)(ii)",
+          "pages": [
+                15
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-1-3"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q12bi", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-1-3"], conceptId: "lamb-growth-rate",
+    section: "A", questionRef: "2025 OL Q12(b)(i)",
+    stem: "The graph shows the lamb growth rate and weight of two lambs on Lucy’s farm. Single lamb: birth 5 kg, then 16.5, 27.5, 35, 42.5 and 50 kg at weeks 5–25. Twin lamb: birth 4.5 kg, then 14, 23.5, 29.5, 37 and 44.5 kg.",
+    questionText: "Identify which lamb (single or twin) had a higher growth rate over the 25 weeks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Single", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q12(b)(i)",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2","agsci-1-3"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q12biii", topicId: "agsci-4-3-2", additionalTopicIds: ["agsci-1-3"], conceptId: "lamb-slaughter-weight-prediction",
+    section: "A", questionRef: "2025 OL Q12(b)(iii)",
+    stem: "The graph shows the lamb growth rate and weight of two lambs on Lucy’s farm. Single lamb: birth 5 kg, then 16.5, 27.5, 35, 42.5 and 50 kg at weeks 5–25. Twin lamb: birth 4.5 kg, then 14, 23.5, 29.5, 37 and 44.5 kg.",
+    questionText: "Predict which lamb will have a higher weight at slaughter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Single", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q12(b)(iii)",
+          "pages": [
+                16
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-3-1","agsci-2-3"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q14a-ii", topicId: "agsci-3-3-1", additionalTopicIds: ["agsci-2-3"], conceptId: "weather-and-tillage-planting",
+    section: "B", questionRef: "2025 OL Q14(a)(ii)",
+    stem: "The graph shows the average monthly soil temperatures in Ballyhaise Agricultural College, Co. Cavan for 2023.",
+    questionText: "Explain the impacts of two named weather conditions on the planting of a named tillage crop.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Temperature / Precipitation", marks: 4, contextNote: "Named tillage crop: Potatoes. Two named weather conditions, 2(2).", group: {"claimMax":2,"perOption":2,"options":["Temperature","Precipitation"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Frost free warm soil temperatures needed for development of tubers / Warm temperatures improve germination and establishment / Heavy rainfall may delay the planting of the potato crop / heavy rainfall may reduce tuber size or increase disease susceptibility or cause crop failure / precipitation is crucial for tuber development and yield", marks: 5, contextNote: "One matching impact for each named condition, 3+2: the first options are temperature impacts, the rest precipitation impacts. (accept valid weather condition with matching valid impact)", group: {"claimMax":2,"perOption":3,"options":["Frost free warm soil temperatures needed for development of tubers","Warm temperatures improve germination and establishment","Heavy rainfall may delay the planting of the potato crop","heavy rainfall may reduce tuber size or increase disease susceptibility or cause crop failure","precipitation is crucial for tuber development and yield"],"perOptionSteps":[3,2]} },
+    ],
+    answerVariants: [
+          {
+                "id": "potatoes",
+                "label": "Potatoes",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Temperature / Precipitation",
+                            "marks": 4,
+                            "contextNote": "Named tillage crop: Potatoes. Two named weather conditions, 2(2).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "Temperature",
+                                        "Precipitation"
+                                  ]
+                            },
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Frost free warm soil temperatures needed for development of tubers / Warm temperatures improve germination and establishment / Heavy rainfall may delay the planting of the potato crop / heavy rainfall may reduce tuber size or increase disease susceptibility or cause crop failure / precipitation is crucial for tuber development and yield",
+                            "marks": 5,
+                            "contextNote": "One matching impact for each named condition, 3+2: the first options are temperature impacts, the rest precipitation impacts. (accept valid weather condition with matching valid impact)",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Frost free warm soil temperatures needed for development of tubers",
+                                        "Warm temperatures improve germination and establishment",
+                                        "Heavy rainfall may delay the planting of the potato crop",
+                                        "heavy rainfall may reduce tuber size or increase disease susceptibility or cause crop failure",
+                                        "precipitation is crucial for tuber development and yield"
+                                  ],
+                                  "perOptionSteps": [
+                                        3,
+                                        2
+                                  ]
+                            },
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "barley",
+                "label": "Barley",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Temperature / Precipitation",
+                            "marks": 4,
+                            "contextNote": "Named tillage crop: Barley. Two named weather conditions, 2(2).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "Temperature",
+                                        "Precipitation"
+                                  ]
+                            },
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Cold temperatures can delay germination / Warm temperatures improve germination and establishment / Heavy rainfall can reduce % germination / heavy rainfall can lead to decreased yield or crop failure / drought can reduce yield or lead to crop failure",
+                            "marks": 5,
+                            "contextNote": "One matching impact for each named condition, 3+2: the first options are temperature impacts, the rest precipitation impacts. (accept valid weather condition with matching valid impact)",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Cold temperatures can delay germination",
+                                        "Warm temperatures improve germination and establishment",
+                                        "Heavy rainfall can reduce % germination",
+                                        "heavy rainfall can lead to decreased yield or crop failure",
+                                        "drought can reduce yield or lead to crop failure"
+                                  ],
+                                  "perOptionSteps": [
+                                        3,
+                                        2
+                                  ]
+                            },
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "kale",
+                "label": "Kale",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Temperature / Precipitation",
+                            "marks": 4,
+                            "contextNote": "Named tillage crop: Kale. Two named weather conditions, 2(2).",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 2,
+                                  "options": [
+                                        "Temperature",
+                                        "Precipitation"
+                                  ]
+                            },
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Frost may damage new seedlings / kale tolerates cooler temperatures (winter crop) / Warm temperatures improve germination and establishment / Heavy rainfall can lead to decreased yield or mineral content / drought can reduce yield or lead to crop failure",
+                            "marks": 5,
+                            "contextNote": "One matching impact for each named condition, 3+2: the first options are temperature impacts, the rest precipitation impacts. (accept valid weather condition with matching valid impact)",
+                            "group": {
+                                  "claimMax": 2,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Frost may damage new seedlings",
+                                        "kale tolerates cooler temperatures (winter crop)",
+                                        "Warm temperatures improve germination and establishment",
+                                        "Heavy rainfall can lead to decreased yield or mineral content",
+                                        "drought can reduce yield or lead to crop failure"
+                                  ],
+                                  "perOptionSteps": [
+                                        3,
+                                        2
+                                  ]
+                            },
+                            "id": "r-2"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q14(a)(ii)",
+          "pages": [
+                21
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-3-1"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q14ciii-route-jk", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-3-1"], conceptId: "identifying-tillage-crops",
+    section: "B", questionRef: "2025 OL Q14(c)(iii) — J, K",
+    stem: "List: Maize, Oilseed rape, Wheat. Practice choice: photographs J and K.",
+    questionText: "The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "J: Maize", marks: 4, contextNote: "Photograph J." },
+    { id: "r-2", kind: "point", verbatim: "K: Wheat", marks: 4, contextNote: "Photograph K." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q14(c)(iii) — J, K",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-3-1"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q14ciii-route-jl", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-3-1"], conceptId: "identifying-tillage-crops",
+    section: "B", questionRef: "2025 OL Q14(c)(iii) — J, L",
+    stem: "List: Maize, Oilseed rape, Wheat. Practice choice: photographs J and L.",
+    questionText: "The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "J: Maize", marks: 4, contextNote: "Photograph J." },
+    { id: "r-2", kind: "point", verbatim: "L: Oilseed rape", marks: 4, contextNote: "Photograph L." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q14(c)(iii) — J, L",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-2","agsci-3-3-1"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q14ciii-route-kl", topicId: "agsci-3-2", additionalTopicIds: ["agsci-3-3-1"], conceptId: "identifying-tillage-crops",
+    section: "B", questionRef: "2025 OL Q14(c)(iii) — K, L",
+    stem: "List: Maize, Oilseed rape, Wheat. Practice choice: photographs K and L.",
+    questionText: "The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "K: Wheat", marks: 4, contextNote: "Photograph K." },
+    { id: "r-2", kind: "point", verbatim: "L: Oilseed rape", marks: 4, contextNote: "Photograph L." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q14(c)(iii) — K, L",
+          "pages": [
+                23
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-2"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q15di", topicId: "agsci-4-3-2", conceptId: "calf-nutrition-order",
+    section: "B", questionRef: "2025 OL Q15(d)(i)",
+    stem: "A: Calves on milk replacer. B: Calf on hay. C: Calf on grass. D: Calf fed colostrum.",
+    questionText: "The photographs below show four stages of calf nutrition from birth to six weeks old. Place each step in the correct order by matching the correct letter to the number in the box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "D / A / B / C", marks: 8, contextNote: "Correct order: D – A – B - C (calf fed colostrum, calves on milk replacer, calf on hay, calf on grass). The scheme prints 4x2.", group: {"claimMax":4,"perOption":2,"options":["D","A","B","C"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q15(d)(i)",
+          "pages": [
+                27
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-3"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q16ai", topicId: "agsci-4-3-3", conceptId: "beef-housing-features",
+    section: "B", questionRef: "2025 OL Q16(a)(i)",
+    stem: "Winter months can be hard on beef farms due to harsh weather conditions.",
+    questionText: "Identify three things that make the housing in the photograph suitable for beef animals.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Slatted floor / rubber mats / natural lighting / straw bedding / adequate space in pens / (adequate) feeding space / good ventilation / high roof for good air circulation / headlock gates / pen gates", marks: 10, group: {"claimMax":3,"perOption":4,"options":["Slatted floor","rubber mats","natural lighting","straw bedding","adequate space in pens","(adequate) feeding space","good ventilation","high roof for good air circulation","headlock gates","pen gates"],"perOptionSteps":[4,4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q16(a)(i)",
+          "pages": [
+                28
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-3-3-3","agsci-4-3-2"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q16ci", topicId: "agsci-3-3-3", additionalTopicIds: ["agsci-4-3-2"], conceptId: "silage-dry-matter-percentage",
+    section: "B", questionRef: "2025 OL Q16(c)(i)",
+    stem: "Options: 25%, 45%, 65%.",
+    questionText: "The DM% of typical forage crops is shown below in the table. Identify which DM% represents Tom’s silage, by placing a tick (✓) in the correct box.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "25%", marks: 6, contextNote: "The scheme accepts 25%." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q16(c)(i)",
+          "pages": [
+                30
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-1-2","agsci-2-2-2"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q17bii", topicId: "agsci-1-2", additionalTopicIds: ["agsci-2-2-2"], conceptId: "flocculation-investigation-order",
+    section: "B", questionRef: "2025 OL Q17(b)(ii)",
+    stem: "A: Add calcium carbonate to one of the test tubes. B: Add water to each test tube, then stopper and shake the test tubes. C: Leave to settle, one test tube stays muddy, while one test tube goes clear. D: Add clay soil to two test tubes.",
+    questionText: "Describe how a student would show that flocculation has occurred in a soil by arranging the steps of the investigation shown below in the correct order.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "D / A / B / C", marks: 16, contextNote: "Correct order: D - A - B - C (add clay soil to two test tubes; add calcium carbonate to one; add water, stopper and shake; leave to settle). The scheme prints 4x4.", group: {"claimMax":4,"perOption":4,"options":["D","A","B","C"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q17(b)(ii)",
+          "pages": [
+                31,
+                32
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-4-3-1","agsci-4-2"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q17d", topicId: "agsci-4-3-1", additionalTopicIds: ["agsci-4-2"], conceptId: "production-systems-dam-breeds",
+    section: "B", questionRef: "2025 OL Q17(d)",
+    questionText: "For a livestock enterprise you have studied state two different named systems of production. For each system identify a suitable breed of dam (female) and explain a reason for your choice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Friesian or Friesian X Hereford / Aberdeen Angus or Hereford", marks: 3, contextNote: "1: Calf to beef: breed of dam. Named breed must be linked to the choice; or other valid example." },
+    { id: "r-2", kind: "point", verbatim: "Easy calving", marks: 3, contextNote: "1: Calf to beef: reason for choice." },
+    { id: "r-3", kind: "point", verbatim: "Limousin or Charolais or Simmental", marks: 3, contextNote: "2: Suckler beef: breed of dam. Named breed must be linked to the choice; or other valid example." },
+    { id: "r-4", kind: "point", verbatim: "Good conformation / good LWG", marks: 3, contextNote: "2: Suckler beef: reason for choice." },
+    ],
+    answerVariants: [
+          {
+                "id": "beef",
+                "label": "Beef",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Friesian or Friesian X Hereford / Aberdeen Angus or Hereford",
+                            "marks": 3,
+                            "contextNote": "1: Calf to beef: breed of dam. Named breed must be linked to the choice; or other valid example.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Easy calving",
+                            "marks": 3,
+                            "contextNote": "1: Calf to beef: reason for choice.",
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Limousin or Charolais or Simmental",
+                            "marks": 3,
+                            "contextNote": "2: Suckler beef: breed of dam. Named breed must be linked to the choice; or other valid example.",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Good conformation / good LWG",
+                            "marks": 3,
+                            "contextNote": "2: Suckler beef: reason for choice.",
+                            "id": "r-4"
+                      }
+                ]
+          },
+          {
+                "id": "dairy",
+                "label": "Dairy",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Holstein Friesian",
+                            "marks": 3,
+                            "contextNote": "1: Liquid milk: breed of dam. Named breed must be linked to the choice; or other valid example.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "High milk volume",
+                            "marks": 3,
+                            "contextNote": "1: Liquid milk: reason for choice.",
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Jersey",
+                            "marks": 3,
+                            "contextNote": "2: Creamery milk: breed of dam. Named breed must be linked to the choice; or other valid example.",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "High milk solids",
+                            "marks": 3,
+                            "contextNote": "2: Creamery milk: reason for choice.",
+                            "id": "r-4"
+                      }
+                ]
+          },
+          {
+                "id": "sheep",
+                "label": "Sheep",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Blackface mountain or Wicklow cheviot",
+                            "marks": 3,
+                            "contextNote": "1: Mountain sheep: breed of dam. Named breed must be linked to the choice; or other valid example.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Good mothering ability / hardy",
+                            "marks": 3,
+                            "contextNote": "1: Mountain sheep: reason for choice.",
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Suffolk or Texel",
+                            "marks": 3,
+                            "contextNote": "2: Lowland sheep: breed of dam. Named breed must be linked to the choice; or other valid example.",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Fast growth rates / good conformation",
+                            "marks": 3,
+                            "contextNote": "2: Lowland sheep: reason for choice.",
+                            "id": "r-4"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q17(d)",
+          "pages": [
+                33
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-1-3","agsci-4-3-1"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q18ci", topicId: "agsci-1-3", additionalTopicIds: ["agsci-4-3-1"], conceptId: "dairy-export-decrease",
+    section: "B", questionRef: "2025 OL Q18(c)(i)",
+    stem: "The graph below shows Irish Dairy Exports for 2015 and 2021 (Bord Bia, 2024): cheese, butter, infant food, milk and cream, skim milk powder, in tonnes.",
+    questionText: "Identify the dairy product which decreased in exports between 2015 and 2021.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Infant food", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q18(c)(i)",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-11"},
+    ...examCardCurriculum("agricultural-science", 2025, ["agsci-1-3","agsci-4-3-1"]), kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q18cii", topicId: "agsci-1-3", additionalTopicIds: ["agsci-4-3-1"], conceptId: "butter-export-estimate",
+    section: "B", questionRef: "2025 OL Q18(c)(ii)",
+    stem: "The graph below shows Irish Dairy Exports for 2015 and 2021 (Bord Bia, 2024): cheese, butter, infant food, milk and cream, skim milk powder, in tonnes.",
+    questionText: "Using the graph, estimate the value of Irish butter exports to Ireland in 2021.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "265,000 to 275,000", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2025 Ordinary — Q18(c)(ii)",
+          "pages": [
+                36
+          ],
+          "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
   } as SecCard,
 ];

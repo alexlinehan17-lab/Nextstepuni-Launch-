@@ -237,15 +237,13 @@ describe('Ways In across the Mark Bank corpus', () => {
         '3. Optic nerve',
         '4. Lens',
       ],
+      // Corrected in place (2025 OL review): these IDs now carry part (i) and
+      // part (iii) only, because (ii) and (iv) ship as their own cards.
       'agsci-2025-ol-q9bi-ii': [
-        '(i) State if the input prices have increased or decreased.',
-        '(ii) Identify what your answer in part (i) above means for farmers by placing a tick in the correct box:',
-        'Costs less to produce / Cost the same to produce / Costs more to produce.',
+        'State if the input prices have increased or decreased.',
       ],
       'agsci-2025-ol-q9biii-iv': [
-        "(iii) Which agricultural enterprise's output price has increased?",
-        '(iv) Identify what your answer in part (iii) above means for farmers by placing a tick in the correct box:',
-        'Increased profit / Increased cost.',
+        'Which agricultural enterprise’s output price has increased?',
       ],
       'bio-2022-hl-q3-bc-fig': [
         '(b) Is the karyotype shown above from a female or a male?',

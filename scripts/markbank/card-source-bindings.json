@@ -865,6 +865,16 @@
         15
       ]
     },
+    "agsci-2025-ol-q10b": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2025-ol-q10c": {
+      "pages": [
+        12
+      ]
+    },
     "agsci-2025-ol-q11ai": {
       "kind": "text",
       "pages": [
@@ -886,11 +896,86 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-ol-q11bi": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2025-ol-q11bii": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2025-ol-q12aiii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2025-ol-q12bii": {
+      "pages": [
+        16
+      ]
+    },
     "agsci-2025-ol-q12biv": {
       "pages": [
         16
       ],
       "stripStem": true
+    },
+    "agsci-2025-ol-q13a-ii": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2025-ol-q13a-iii": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2025-ol-q13ai": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2025-ol-q13b": {
+      "pages": [
+        19
+      ]
+    },
+    "agsci-2025-ol-q13c-i": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2025-ol-q13c-ii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2025-ol-q13c-iii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2025-ol-q13c-iv": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2025-ol-q14a-i": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2025-ol-q14a-iii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2025-ol-q14b-i": {
+      "pages": [
+        22
+      ]
     },
     "agsci-2025-ol-q14b-ii": {
       "pages": [
@@ -898,11 +983,27 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-ol-q14b-iii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2025-ol-q14b-iv": {
+      "pages": [
+        22,
+        23
+      ]
+    },
     "agsci-2025-ol-q14c-i": {
       "pages": [
         23
       ],
       "stripStem": true
+    },
+    "agsci-2025-ol-q14c-ii": {
+      "pages": [
+        23
+      ]
     },
     "agsci-2025-ol-q15a-i": {
       "kind": "text",
@@ -911,11 +1012,76 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-ol-q15a-ii": {
+      "pages": [
+        24
+      ]
+    },
     "agsci-2025-ol-q15a-iii": {
       "pages": [
         24
       ],
       "stripStem": true
+    },
+    "agsci-2025-ol-q15b-i": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2025-ol-q15b-ii": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2025-ol-q15b-iii": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2025-ol-q15c": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2025-ol-q15d-ii": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2025-ol-q16aii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2025-ol-q16aiii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2025-ol-q16b": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2025-ol-q16cii": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2025-ol-q16ciii": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2025-ol-q17ai": {
+      "pages": [
+        31
+      ]
+    },
+    "agsci-2025-ol-q17aii": {
+      "pages": [
+        31
+      ]
     },
     "agsci-2025-ol-q17bi": {
       "pages": [
@@ -923,11 +1089,77 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-ol-q17biii": {
+      "pages": [
+        31,
+        32
+      ]
+    },
+    "agsci-2025-ol-q17biv": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2025-ol-q17c": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2025-ol-q18ai": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-ol-q18aii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-ol-q18aiii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-ol-q18bi": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-ol-q18bii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-ol-q18biii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-ol-q18ciii": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2025-ol-q1aii": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2025-ol-q1bi": {
+      "pages": [
+        4
+      ]
+    },
     "agsci-2025-ol-q1bii": {
       "pages": [
         4
       ],
       "stripStem": true
+    },
+    "agsci-2025-ol-q1biii": {
+      "pages": [
+        4
+      ]
     },
     "agsci-2025-ol-q2": {
       "pages": [
@@ -935,17 +1167,61 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-ol-q3": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2025-ol-q4a": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2025-ol-q4b": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2025-ol-q4c": {
+      "pages": [
+        6
+      ]
+    },
     "agsci-2025-ol-q5c": {
       "pages": [
         7
       ],
       "stripStem": true
     },
-    "agsci-2025-ol-q9biii-iv": {
+    "agsci-2025-ol-q6a": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2025-ol-q6b": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2025-ol-q8a": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2025-ol-q9aii": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2025-ol-q9bii": {
       "pages": [
         11
-      ],
-      "stripStem": true
+      ]
+    },
+    "agsci-2025-ol-q9biv": {
+      "pages": [
+        11
+      ]
     }
   },
   "biology": {

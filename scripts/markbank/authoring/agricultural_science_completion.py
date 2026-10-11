@@ -26,6 +26,7 @@ from agricultural_science_2012_hl import reviewed_tasks as reviewed_2012_hl, pap
 from agricultural_science_2026_hl import reviewed_tasks as reviewed_2026_hl, paper_review as higher_2026_review
 from agricultural_science_2026_ol import reviewed_tasks as reviewed_2026_ol, paper_review as ordinary_2026_review
 from agricultural_science_2025_hl import reviewed_tasks as reviewed_2025_hl, paper_review as higher_2025_review, SNAPSHOT, original_hash
+from agricultural_science_2025_ol import reviewed_tasks as reviewed_2025_ol, paper_review as ordinary_2025_review
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -173,9 +174,14 @@ def reviewed_tasks():
     cards.extend(higher_2025_cards)
     reviews.extend(higher_2025_tasks)
     paper_reviews.append(higher_2025_review())
+    ordinary_2025_cards, ordinary_2025_tasks, corrections_2025_ol = reviewed_2025_ol(existing)
+    cards.extend(ordinary_2025_cards)
+    reviews.extend(ordinary_2025_tasks)
+    paper_reviews.append(ordinary_2025_review())
+    corrections_2025 = {**corrections_2025, **corrections_2025_ol}
     # Batches reviewed after 7 October carry their own review date; earlier
     # reviewed card objects must stay byte-identical.
-    batch_dates = {id(card): '2026-10-11' for card in higher_2026_cards + ordinary_2026_cards + higher_2025_cards}
+    batch_dates = {id(card): '2026-10-11' for card in higher_2026_cards + ordinary_2026_cards + higher_2025_cards + ordinary_2025_cards}
     for reviewed in cards:
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
                           'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':batch_dates.get(id(reviewed),'2026-10-07')}

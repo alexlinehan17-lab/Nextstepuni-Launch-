@@ -436,7 +436,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(617);
+    expect(additions.size).toBe(644);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length).toBe(10_495);
@@ -457,6 +457,9 @@ describe('Mark Bank card preservation', () => {
       'agsci-2025-hl-q12e': 'Q12 any-four-of-five: route (e)(a)(b)(c), 10 marks.',
       'agsci-2025-hl-q14bi': 'Restores the published result mark: 4x4 + 1 = 17, so Question 14 totals 50.',
       'agsci-2025-hl-q15b': 'Any three of four printed plants: first printed route (A, B, C).',
+      'agsci-2025-ol-q1ai': 'Any three of four printed cattle breeds: first printed route (A, B, C).',
+      'agsci-2025-ol-q9bi-ii': 'Keeps part (i) only (3 marks); part (ii) already ships as agsci-2025-ol-q9bii.',
+      'agsci-2025-ol-q9biii-iv': 'Keeps part (iii) only (3 marks); part (iv) already ships as agsci-2025-ol-q9biv.',
     };
     expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
     const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
@@ -465,7 +468,7 @@ describe('Mark Bank card preservation', () => {
       expect(additions.has(id), `${id} must stay a baseline identity`).toBe(false);
     }
     const records = (agriculturalReview as { corrections: Record<string, { reason: string; originalSha256: string }> }).corrections;
-    expect(Object.keys(records).sort()).toEqual(Object.keys(corrected).filter(id => id.startsWith('agsci-2025-hl-')).sort());
+    expect(Object.keys(records).sort()).toEqual(Object.keys(corrected).filter(id => id !== 'agsci-2025-ol-q8b').sort());
     for (const record of Object.values(records)) {
       expect(record.reason).toMatch(/Visually verified paper PDF page \d+/);
       expect(record.originalSha256).toMatch(/^[0-9a-f]{64}$/);

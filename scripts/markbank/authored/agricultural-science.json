@@ -11007,73 +11007,6 @@
   "notes": "Q9(a)(i) reads the two calf-presentation pictures and is skipped pending figures; (ii) is entirely self-contained, so the stem is left empty rather than carrying a reference to pictures the card cannot show. Rows sum 3+2 = 5; Q9(a) reconciles as 5 + 5 = 10."
  },
  {
-  "id": "agsci-2025-ol-q9bi-ii",
-  "topicId": "agsci-1-3",
-  "conceptId": "agricultural-input-price-index",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 OL Q9(b)(i)–(ii)",
-  "stem": "The picture shows the Agricultural Price Index for 12 months up to March 2024.\nChanges in Agricultural Input Price: Electricity down 22% · Fertilisers down 40% · Feedstuffs down 21%\nChanges in Agricultural Output Price: Sheep up 30% · Cereals down 31% · Milk down 5%",
-  "questionText": "(i) State if the input prices have increased or decreased. (ii) Identify what your answer in part (i) above means for farmers by placing a tick in the correct box: Costs less to produce / Cost the same to produce / Costs more to produce.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Decreased",
-    "marks": 3,
-    "contextNote": "Part (i) — all three input prices in the index fell."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Costs less to produce",
-    "marks": 2,
-    "contextNote": "Part (ii) — the tick-box consequence of the answer to (i)."
-   }
-  ],
-  "notes": "The Agricultural Price Index graphic is a text infographic: every figure in it extracts as real text from the paper, and the two panels are unambiguously separated by x-position (inputs at left, outputs at right). The stem transcribes it verbatim, so the card needs no image crop. Parts (i) and (ii) are combined into one card because (ii) is phrased entirely as a reference to (i) and dangles on its own; their tariffs (3 and 2) are printed separately and are kept as separate rows summing to 5. Q9(b) reconciles as 3 + 2 + 3 + 2 = 10.",
-  "figureKey": "agricultural-science-2025-OL-paper-p11-i0"
- },
- {
-  "id": "agsci-2025-ol-q9biii-iv",
-  "topicId": "agsci-1-3",
-  "conceptId": "agricultural-output-price-index",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 OL Q9(b)(iii)–(iv)",
-  "stem": "The picture shows the Agricultural Price Index for 12 months up to March 2024.\nChanges in Agricultural Input Price: Electricity down 22% · Fertilisers down 40% · Feedstuffs down 21%\nChanges in Agricultural Output Price: Sheep up 30% · Cereals down 31% · Milk down 5%",
-  "questionText": "(iii) Which agricultural enterprise's output price has increased? (iv) Identify what your answer in part (iii) above means for farmers by placing a tick in the correct box: Increased profit / Increased cost.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Sheep",
-    "marks": 3,
-    "contextNote": "Part (iii) — sheep is the only output price up (30%); cereals and milk both fell."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Increased profit",
-    "marks": 2,
-    "contextNote": "Part (iv) — the tick-box consequence of the answer to (iii)."
-   }
-  ],
-  "notes": "Same transcribed price-index stem as the (i)–(ii) card. Parts (iii) and (iv) are combined because (iv) is written purely as a reference to (iii). Marks printed separately as 3 and 2, kept as separate rows summing to 5."
- },
- {
   "id": "agsci-2025-ol-q10b",
   "topicId": "agsci-4-1",
   "conceptId": "sex-determination-in-cattle",
@@ -35261,72 +35194,6 @@
   ],
   "stem": "The following photograph shows the layout of a dairy farm. Analyse the photograph and answer the questions that follow.",
   "figureKey": "agricultural-science-2025-OL-paper-p06-art"
- },
- {
-  "id": "agsci-2025-ol-q1ai",
-  "topicId": "agsci-4-3-2",
-  "conceptId": "identifying-cattle-breeds-from-a-list",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "agricultural-science",
-  "section": "A",
-  "questionRef": "2025 OL Q1(a)(i)",
-  "questionText": "Identify any three breeds A, B, C or D using the list below.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "3x2"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A: Charolais",
-    "marks": 2,
-    "accepts": [
-     "D: Holstein Friesian"
-    ],
-    "contextNote": "Four cattle photographs under a word bank of Jersey, Holstein Friesian, Charolais and Limousin. A is a cream-white bull, B a fawn cow grazing among a fawn herd, C a deep red-brown heavily muscled bull in a straw shed, D a black-and-white cow grazing."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "B: Jersey",
-    "marks": 2,
-    "accepts": [
-     "D: Holstein Friesian"
-    ]
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "C: Limousin",
-    "marks": 2,
-    "accepts": [
-     "D: Holstein Friesian"
-    ]
-   }
-  ],
-  "stem": "Jersey Holstein Friesian Charolais Limousin Or",
-  "notes": "Any three of the four score at 2 marks each; the fourth is carried as an accepted alternative.",
-  "figureKey": "agricultural-science-2025-OL-paper-p03-art",
-  "labelKey": [
-   {
-    "letter": "A",
-    "meaning": "Charolais",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "B",
-    "meaning": "Jersey",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "C",
-    "meaning": "Limousin",
-    "askedInThisQuestion": true
-   }
-  ]
  },
  {
   "id": "agsci-2025-ol-q1aii",
@@ -77395,6 +77262,2113 @@
     ]
    }
   ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q1ai",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q1(a)(i) — A, B, C",
+  "topicId": "agsci-4-2",
+  "curriculumNodeIds": [
+   "agsci-4-2",
+   "agsci-4-3-2"
+  ],
+  "conceptId": "identifying-cattle-breeds-from-a-list",
+  "questionText": "Identify any three breeds A, B, C or D using the list below.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A: Charolais",
+    "marks": 2,
+    "contextNote": "Photograph A.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "B: Jersey",
+    "marks": 2,
+    "contextNote": "Photograph B.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "C: Limousin",
+    "marks": 2,
+    "contextNote": "Photograph C.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — A, B, C",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-2"
+  ],
+  "stem": "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs A, B, C.",
+  "figureKey": "agricultural-science-2025-OL-paper-p03-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Charolais",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Jersey",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Limousin",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Holstein Friesian",
+    "askedInThisQuestion": false
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q1ai-route-abd",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q1(a)(i) — A, B, D",
+  "topicId": "agsci-4-2",
+  "curriculumNodeIds": [
+   "agsci-4-2",
+   "agsci-4-3-2"
+  ],
+  "conceptId": "identifying-cattle-breeds-from-a-list",
+  "questionText": "Identify any three breeds A, B, C or D using the list below.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A: Charolais",
+    "marks": 2,
+    "contextNote": "Photograph A.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "B: Jersey",
+    "marks": 2,
+    "contextNote": "Photograph B.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "D: Holstein Friesian",
+    "marks": 2,
+    "contextNote": "Photograph D.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — A, B, D",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-2"
+  ],
+  "stem": "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs A, B, D.",
+  "figureKey": "agricultural-science-2025-OL-paper-p03-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Charolais",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Jersey",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Limousin",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Holstein Friesian",
+    "askedInThisQuestion": true
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q1ai-route-acd",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q1(a)(i) — A, C, D",
+  "topicId": "agsci-4-2",
+  "curriculumNodeIds": [
+   "agsci-4-2",
+   "agsci-4-3-2"
+  ],
+  "conceptId": "identifying-cattle-breeds-from-a-list",
+  "questionText": "Identify any three breeds A, B, C or D using the list below.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A: Charolais",
+    "marks": 2,
+    "contextNote": "Photograph A.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "C: Limousin",
+    "marks": 2,
+    "contextNote": "Photograph C.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "D: Holstein Friesian",
+    "marks": 2,
+    "contextNote": "Photograph D.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — A, C, D",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-2"
+  ],
+  "stem": "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs A, C, D.",
+  "figureKey": "agricultural-science-2025-OL-paper-p03-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Charolais",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Jersey",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Limousin",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Holstein Friesian",
+    "askedInThisQuestion": true
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q1ai-route-bcd",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q1(a)(i) — B, C, D",
+  "topicId": "agsci-4-2",
+  "curriculumNodeIds": [
+   "agsci-4-2",
+   "agsci-4-3-2"
+  ],
+  "conceptId": "identifying-cattle-breeds-from-a-list",
+  "questionText": "Identify any three breeds A, B, C or D using the list below.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "B: Jersey",
+    "marks": 2,
+    "contextNote": "Photograph B.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "C: Limousin",
+    "marks": 2,
+    "contextNote": "Photograph C.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "D: Holstein Friesian",
+    "marks": 2,
+    "contextNote": "Photograph D.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q1(a)(i) — B, C, D",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-2"
+  ],
+  "stem": "Word list: Jersey, Holstein Friesian, Charolais, Limousin. Practice choice: photographs B, C, D.",
+  "figureKey": "agricultural-science-2025-OL-paper-p03-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Charolais",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Jersey",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Limousin",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Holstein Friesian",
+    "askedInThisQuestion": true
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q5a",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q5(a)",
+  "topicId": "agsci-2-2-2",
+  "curriculumNodeIds": [
+   "agsci-2-2-2"
+  ],
+  "conceptId": "ideal-soil-composition",
+  "questionText": "Identify with reason which picture A, B, or C has the ideal soil composition.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Picture: B",
+    "marks": 3,
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "soil has (50%) mineral and organic matter or 25% air or 25% water / seed can access adequate air or water or has space to grow / adequate amounts of mineral or organic matter / seedling is largest in picture B",
+    "marks": 2,
+    "contextNote": "Reason.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "soil has (50%) mineral and organic matter or 25% air or 25% water",
+      "seed can access adequate air or water or has space to grow",
+      "adequate amounts of mineral or organic matter",
+      "seedling is largest in picture B"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q5(a)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "The diagram shows the effect of soil composition on the productivity of a crop. Key: mineral and organic matter, soil water, soil air. Analyse the diagram and answer the questions that follow.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q5b",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q5(b)",
+  "topicId": "agsci-2-2-2",
+  "curriculumNodeIds": [
+   "agsci-2-2-2",
+   "agsci-2-3"
+  ],
+  "conceptId": "high-mineral-organic-soil",
+  "questionText": "Outline one reason why soil C has a high percentage of mineral and organic matter.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "It is a clay soil / under continuous grassland / organic matter or manure or slurry or fertiliser has been added",
+    "marks": 2,
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "It is a clay soil",
+      "under continuous grassland",
+      "organic matter or manure or slurry or fertiliser has been added"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q5(b)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-2-3"
+  ],
+  "stem": "The diagram shows the effect of soil composition on the productivity of a crop. Key: mineral and organic matter, soil water, soil air. Analyse the diagram and answer the questions that follow.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q7a-route-abc",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q7(a) — A, B, C",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2"
+  ],
+  "conceptId": "identifying-grassland-plants",
+  "questionText": "Identify any three plants shown in the table below using the list opposite.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A: (Perennial) ryegrass",
+    "marks": 2,
+    "contextNote": "Photograph A.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "B: (White)clover",
+    "marks": 2,
+    "contextNote": "Photograph B.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "C: Nettle",
+    "marks": 2,
+    "contextNote": "Photograph C.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q7(a) — A, B, C",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs A, B, C.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q7a-route-abd",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q7(a) — A, B, D",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2"
+  ],
+  "conceptId": "identifying-grassland-plants",
+  "questionText": "Identify any three plants shown in the table below using the list opposite.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A: (Perennial) ryegrass",
+    "marks": 2,
+    "contextNote": "Photograph A.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "B: (White)clover",
+    "marks": 2,
+    "contextNote": "Photograph B.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "D: Chicory",
+    "marks": 2,
+    "contextNote": "Photograph D.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q7(a) — A, B, D",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs A, B, D.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q7a-route-acd",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q7(a) — A, C, D",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2"
+  ],
+  "conceptId": "identifying-grassland-plants",
+  "questionText": "Identify any three plants shown in the table below using the list opposite.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "A: (Perennial) ryegrass",
+    "marks": 2,
+    "contextNote": "Photograph A.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "C: Nettle",
+    "marks": 2,
+    "contextNote": "Photograph C.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "D: Chicory",
+    "marks": 2,
+    "contextNote": "Photograph D.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q7(a) — A, C, D",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs A, C, D.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q7a-route-bcd",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q7(a) — B, C, D",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2"
+  ],
+  "conceptId": "identifying-grassland-plants",
+  "questionText": "Identify any three plants shown in the table below using the list opposite.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "B: (White)clover",
+    "marks": 2,
+    "contextNote": "Photograph B.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "C: Nettle",
+    "marks": 2,
+    "contextNote": "Photograph C.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "D: Chicory",
+    "marks": 2,
+    "contextNote": "Photograph D.",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q7(a) — B, C, D",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "List: Chicory, White clover, Perennial ryegrass, Nettle. Practice choice: photographs B, C, D.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q7b",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q7(b)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-3-2",
+   "agsci-3-2"
+  ],
+  "conceptId": "undesirable-sward-plant",
+  "questionText": "State which plant from part (a) above is not desired in a grassland sward.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Nettle or C",
+    "marks": 4,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q7(b)",
+   "pages": [
+    8
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-2"
+  ],
+  "stem": "Part (a) shows A (perennial) ryegrass, B (white) clover, C nettle and D chicory.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q9ai",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q9(a)(i)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agsci-4-1",
+   "agsci-4-3-3"
+  ],
+  "conceptId": "calf-birth-position",
+  "questionText": "Identify with reason which picture A or B is the correct position for a calf at birth.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Picture: B",
+    "marks": 3,
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Fore or front legs first (with head lying flat on top of legs) or normal presentation or easier calving",
+    "marks": 2,
+    "contextNote": "Reason.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q9(a)(i)",
+   "pages": [
+    10
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-3"
+  ],
+  "stem": "The pictures below show calves presented in various positions leading up to birth.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q9bi-ii",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q9(b)(i)",
+  "topicId": "agsci-1-3",
+  "curriculumNodeIds": [
+   "agsci-1-3"
+  ],
+  "conceptId": "agricultural-input-price-index",
+  "questionText": "State if the input prices have increased or decreased.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Decreased",
+    "marks": 3,
+    "contextNote": "All three input prices in the index fell.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q9(b)(i)",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "The picture shows the Agricultural Price Index for 12 months up to March 2024.\nChanges in Agricultural Input Price: Electricity down 22% · Fertilisers down 40% · Feedstuffs down 21%\nChanges in Agricultural Output Price: Sheep up 30% · Cereals down 31% · Milk down 5%",
+  "figureKey": "agricultural-science-2025-OL-paper-p11-i0",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q9biii-iv",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q9(b)(iii)",
+  "topicId": "agsci-1-3",
+  "curriculumNodeIds": [
+   "agsci-1-3"
+  ],
+  "conceptId": "agricultural-output-price-index",
+  "questionText": "Which agricultural enterprise’s output price has increased?",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Sheep",
+    "marks": 3,
+    "contextNote": "Sheep is the only output price up (30%); cereals and milk both fell.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q9(b)(iii)",
+   "pages": [
+    11
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "The picture shows the Agricultural Price Index for 12 months up to March 2024.\nChanges in Agricultural Input Price: Electricity down 22% · Fertilisers down 40% · Feedstuffs down 21%\nChanges in Agricultural Output Price: Sheep up 30% · Cereals down 31% · Milk down 5%",
+  "figureKey": "agricultural-science-2025-OL-paper-p11-i0",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q10a",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q10(a)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agsci-4-1",
+   "agsci-4-3-2"
+  ],
+  "conceptId": "sex-sorted-semen-cell",
+  "questionText": "Identify the sex cell labelled A.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Sperm or male",
+    "marks": 3,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q10(a)",
+   "pages": [
+    12
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-2"
+  ],
+  "stem": "The diagram shows the process of sex sorting bull semen. Analyse the picture and answer the questions that follow.",
+  "figureKey": "agricultural-science-2025-OL-paper-p12-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Sperm or male",
+    "askedInThisQuestion": true
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q12ai",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q12(a)(i)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agsci-4-3-3",
+   "agsci-1-3"
+  ],
+  "conceptId": "lamb-mortality-cause",
+  "questionText": "Identify the main cause of lamb mortality.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Abortion and stillbirth",
+    "marks": 3,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q12(a)(i)",
+   "pages": [
+    15
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-1-3"
+  ],
+  "stem": "The graph shows the main causes of lamb mortality (death) on Irish sheep farms: chill and starvation 30%, abortion and stillbirth 40%, disease (bar not drawn), accidents and predators 5%, birth defects 5%.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q12aii",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q12(a)(ii)",
+  "topicId": "agsci-1-4",
+  "curriculumNodeIds": [
+   "agsci-1-4",
+   "agsci-4-3-3"
+  ],
+  "conceptId": "completing-a-bar-chart",
+  "questionText": "Complete the graph above to show that 20% of lambs die due to disease.",
+  "rows": [
+   {
+    "kind": "criterion",
+    "verbatim": "Bar inserted in graph to height of 20",
+    "marks": 2,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q12(a)(ii)",
+   "pages": [
+    15
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-3"
+  ],
+  "stem": "The graph shows the main causes of lamb mortality (death) on Irish sheep farms: chill and starvation 30%, abortion and stillbirth 40%, disease (bar not drawn), accidents and predators 5%, birth defects 5%.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q12bi",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q12(b)(i)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-1-3"
+  ],
+  "conceptId": "lamb-growth-rate",
+  "questionText": "Identify which lamb (single or twin) had a higher growth rate over the 25 weeks.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Single",
+    "marks": 3,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q12(b)(i)",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-1-3"
+  ],
+  "stem": "The graph shows the lamb growth rate and weight of two lambs on Lucy’s farm. Single lamb: birth 5 kg, then 16.5, 27.5, 35, 42.5 and 50 kg at weeks 5–25. Twin lamb: birth 4.5 kg, then 14, 23.5, 29.5, 37 and 44.5 kg.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q12biii",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "A",
+  "questionRef": "2025 OL Q12(b)(iii)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2",
+   "agsci-1-3"
+  ],
+  "conceptId": "lamb-slaughter-weight-prediction",
+  "questionText": "Predict which lamb will have a higher weight at slaughter.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Single",
+    "marks": 3,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 3,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q12(b)(iii)",
+   "pages": [
+    16
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-1-3"
+  ],
+  "stem": "The graph shows the lamb growth rate and weight of two lambs on Lucy’s farm. Single lamb: birth 5 kg, then 16.5, 27.5, 35, 42.5 and 50 kg at weeks 5–25. Twin lamb: birth 4.5 kg, then 14, 23.5, 29.5, 37 and 44.5 kg.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q14a-ii",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q14(a)(ii)",
+  "topicId": "agsci-3-3-1",
+  "curriculumNodeIds": [
+   "agsci-3-3-1",
+   "agsci-2-3"
+  ],
+  "conceptId": "weather-and-tillage-planting",
+  "questionText": "Explain the impacts of two named weather conditions on the planting of a named tillage crop.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Temperature / Precipitation",
+    "marks": 4,
+    "contextNote": "Named tillage crop: Potatoes. Two named weather conditions, 2(2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Temperature",
+      "Precipitation"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Frost free warm soil temperatures needed for development of tubers / Warm temperatures improve germination and establishment / Heavy rainfall may delay the planting of the potato crop / heavy rainfall may reduce tuber size or increase disease susceptibility or cause crop failure / precipitation is crucial for tuber development and yield",
+    "marks": 5,
+    "contextNote": "One matching impact for each named condition, 3+2: the first options are temperature impacts, the rest precipitation impacts. (accept valid weather condition with matching valid impact)",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Frost free warm soil temperatures needed for development of tubers",
+      "Warm temperatures improve germination and establishment",
+      "Heavy rainfall may delay the planting of the potato crop",
+      "heavy rainfall may reduce tuber size or increase disease susceptibility or cause crop failure",
+      "precipitation is crucial for tuber development and yield"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q14(a)(ii)",
+   "pages": [
+    21
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-2-3"
+  ],
+  "stem": "The graph shows the average monthly soil temperatures in Ballyhaise Agricultural College, Co. Cavan for 2023.",
+  "answerVariants": [
+   {
+    "id": "potatoes",
+    "label": "Potatoes",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Temperature / Precipitation",
+      "marks": 4,
+      "contextNote": "Named tillage crop: Potatoes. Two named weather conditions, 2(2).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "Temperature",
+        "Precipitation"
+       ]
+      },
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "Frost free warm soil temperatures needed for development of tubers / Warm temperatures improve germination and establishment / Heavy rainfall may delay the planting of the potato crop / heavy rainfall may reduce tuber size or increase disease susceptibility or cause crop failure / precipitation is crucial for tuber development and yield",
+      "marks": 5,
+      "contextNote": "One matching impact for each named condition, 3+2: the first options are temperature impacts, the rest precipitation impacts. (accept valid weather condition with matching valid impact)",
+      "group": {
+       "claimMax": 2,
+       "perOption": 3,
+       "options": [
+        "Frost free warm soil temperatures needed for development of tubers",
+        "Warm temperatures improve germination and establishment",
+        "Heavy rainfall may delay the planting of the potato crop",
+        "heavy rainfall may reduce tuber size or increase disease susceptibility or cause crop failure",
+        "precipitation is crucial for tuber development and yield"
+       ],
+       "perOptionSteps": [
+        3,
+        2
+       ]
+      },
+      "id": "r-2"
+     }
+    ]
+   },
+   {
+    "id": "barley",
+    "label": "Barley",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Temperature / Precipitation",
+      "marks": 4,
+      "contextNote": "Named tillage crop: Barley. Two named weather conditions, 2(2).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "Temperature",
+        "Precipitation"
+       ]
+      },
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "Cold temperatures can delay germination / Warm temperatures improve germination and establishment / Heavy rainfall can reduce % germination / heavy rainfall can lead to decreased yield or crop failure / drought can reduce yield or lead to crop failure",
+      "marks": 5,
+      "contextNote": "One matching impact for each named condition, 3+2: the first options are temperature impacts, the rest precipitation impacts. (accept valid weather condition with matching valid impact)",
+      "group": {
+       "claimMax": 2,
+       "perOption": 3,
+       "options": [
+        "Cold temperatures can delay germination",
+        "Warm temperatures improve germination and establishment",
+        "Heavy rainfall can reduce % germination",
+        "heavy rainfall can lead to decreased yield or crop failure",
+        "drought can reduce yield or lead to crop failure"
+       ],
+       "perOptionSteps": [
+        3,
+        2
+       ]
+      },
+      "id": "r-2"
+     }
+    ]
+   },
+   {
+    "id": "kale",
+    "label": "Kale",
+    "rows": [
+     {
+      "kind": "anyN",
+      "verbatim": "Temperature / Precipitation",
+      "marks": 4,
+      "contextNote": "Named tillage crop: Kale. Two named weather conditions, 2(2).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "Temperature",
+        "Precipitation"
+       ]
+      },
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "Frost may damage new seedlings / kale tolerates cooler temperatures (winter crop) / Warm temperatures improve germination and establishment / Heavy rainfall can lead to decreased yield or mineral content / drought can reduce yield or lead to crop failure",
+      "marks": 5,
+      "contextNote": "One matching impact for each named condition, 3+2: the first options are temperature impacts, the rest precipitation impacts. (accept valid weather condition with matching valid impact)",
+      "group": {
+       "claimMax": 2,
+       "perOption": 3,
+       "options": [
+        "Frost may damage new seedlings",
+        "kale tolerates cooler temperatures (winter crop)",
+        "Warm temperatures improve germination and establishment",
+        "Heavy rainfall can lead to decreased yield or mineral content",
+        "drought can reduce yield or lead to crop failure"
+       ],
+       "perOptionSteps": [
+        3,
+        2
+       ]
+      },
+      "id": "r-2"
+     }
+    ]
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q14ciii-route-jk",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q14(c)(iii) — J, K",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2",
+   "agsci-3-3-1"
+  ],
+  "conceptId": "identifying-tillage-crops",
+  "questionText": "The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "J: Maize",
+    "marks": 4,
+    "contextNote": "Photograph J.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "K: Wheat",
+    "marks": 4,
+    "contextNote": "Photograph K.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q14(c)(iii) — J, K",
+   "pages": [
+    23
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-3-1"
+  ],
+  "stem": "List: Maize, Oilseed rape, Wheat. Practice choice: photographs J and K.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q14ciii-route-jl",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q14(c)(iii) — J, L",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2",
+   "agsci-3-3-1"
+  ],
+  "conceptId": "identifying-tillage-crops",
+  "questionText": "The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "J: Maize",
+    "marks": 4,
+    "contextNote": "Photograph J.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "L: Oilseed rape",
+    "marks": 4,
+    "contextNote": "Photograph L.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q14(c)(iii) — J, L",
+   "pages": [
+    23
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-3-1"
+  ],
+  "stem": "List: Maize, Oilseed rape, Wheat. Practice choice: photographs J and L.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q14ciii-route-kl",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q14(c)(iii) — K, L",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agsci-3-2",
+   "agsci-3-3-1"
+  ],
+  "conceptId": "identifying-tillage-crops",
+  "questionText": "The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "K: Wheat",
+    "marks": 4,
+    "contextNote": "Photograph K.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "L: Oilseed rape",
+    "marks": 4,
+    "contextNote": "Photograph L.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q14(c)(iii) — K, L",
+   "pages": [
+    23
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-3-3-1"
+  ],
+  "stem": "List: Maize, Oilseed rape, Wheat. Practice choice: photographs K and L.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q15di",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q15(d)(i)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agsci-4-3-2"
+  ],
+  "conceptId": "calf-nutrition-order",
+  "questionText": "The photographs below show four stages of calf nutrition from birth to six weeks old. Place each step in the correct order by matching the correct letter to the number in the box.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "D / A / B / C",
+    "marks": 8,
+    "contextNote": "Correct order: D – A – B - C (calf fed colostrum, calves on milk replacer, calf on hay, calf on grass). The scheme prints 4x2.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "D",
+      "A",
+      "B",
+      "C"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q15(d)(i)",
+   "pages": [
+    27
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "A: Calves on milk replacer. B: Calf on hay. C: Calf on grass. D: Calf fed colostrum.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q16ai",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q16(a)(i)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agsci-4-3-3"
+  ],
+  "conceptId": "beef-housing-features",
+  "questionText": "Identify three things that make the housing in the photograph suitable for beef animals.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Slatted floor / rubber mats / natural lighting / straw bedding / adequate space in pens / (adequate) feeding space / good ventilation / high roof for good air circulation / headlock gates / pen gates",
+    "marks": 10,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Slatted floor",
+      "rubber mats",
+      "natural lighting",
+      "straw bedding",
+      "adequate space in pens",
+      "(adequate) feeding space",
+      "good ventilation",
+      "high roof for good air circulation",
+      "headlock gates",
+      "pen gates"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      2
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q16(a)(i)",
+   "pages": [
+    28
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Winter months can be hard on beef farms due to harsh weather conditions.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q16ci",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q16(c)(i)",
+  "topicId": "agsci-3-3-3",
+  "curriculumNodeIds": [
+   "agsci-3-3-3",
+   "agsci-4-3-2"
+  ],
+  "conceptId": "silage-dry-matter-percentage",
+  "questionText": "The DM% of typical forage crops is shown below in the table. Identify which DM% represents Tom’s silage, by placing a tick (✓) in the correct box.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "25%",
+    "marks": 6,
+    "contextNote": "The scheme accepts 25%.",
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q16(c)(i)",
+   "pages": [
+    30
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-2"
+  ],
+  "stem": "Options: 25%, 45%, 65%.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q17bii",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q17(b)(ii)",
+  "topicId": "agsci-1-2",
+  "curriculumNodeIds": [
+   "agsci-1-2",
+   "agsci-2-2-2"
+  ],
+  "conceptId": "flocculation-investigation-order",
+  "questionText": "Describe how a student would show that flocculation has occurred in a soil by arranging the steps of the investigation shown below in the correct order.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "D / A / B / C",
+    "marks": 16,
+    "contextNote": "Correct order: D - A - B - C (add clay soil to two test tubes; add calcium carbonate to one; add water, stopper and shake; leave to settle). The scheme prints 4x4.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "D",
+      "A",
+      "B",
+      "C"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q17(b)(ii)",
+   "pages": [
+    31,
+    32
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-2-2-2"
+  ],
+  "stem": "A: Add calcium carbonate to one of the test tubes. B: Add water to each test tube, then stopper and shake the test tubes. C: Leave to settle, one test tube stays muddy, while one test tube goes clear. D: Add clay soil to two test tubes.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q17d",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q17(d)",
+  "topicId": "agsci-4-3-1",
+  "curriculumNodeIds": [
+   "agsci-4-3-1",
+   "agsci-4-2"
+  ],
+  "conceptId": "production-systems-dam-breeds",
+  "questionText": "For a livestock enterprise you have studied state two different named systems of production. For each system identify a suitable breed of dam (female) and explain a reason for your choice.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Friesian or Friesian X Hereford / Aberdeen Angus or Hereford",
+    "marks": 3,
+    "contextNote": "1: Calf to beef: breed of dam. Named breed must be linked to the choice; or other valid example.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Easy calving",
+    "marks": 3,
+    "contextNote": "1: Calf to beef: reason for choice.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Limousin or Charolais or Simmental",
+    "marks": 3,
+    "contextNote": "2: Suckler beef: breed of dam. Named breed must be linked to the choice; or other valid example.",
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Good conformation / good LWG",
+    "marks": 3,
+    "contextNote": "2: Suckler beef: reason for choice.",
+    "id": "r-4"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q17(d)",
+   "pages": [
+    33
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-2"
+  ],
+  "answerVariants": [
+   {
+    "id": "beef",
+    "label": "Beef",
+    "rows": [
+     {
+      "kind": "point",
+      "verbatim": "Friesian or Friesian X Hereford / Aberdeen Angus or Hereford",
+      "marks": 3,
+      "contextNote": "1: Calf to beef: breed of dam. Named breed must be linked to the choice; or other valid example.",
+      "id": "r-1"
+     },
+     {
+      "kind": "point",
+      "verbatim": "Easy calving",
+      "marks": 3,
+      "contextNote": "1: Calf to beef: reason for choice.",
+      "id": "r-2"
+     },
+     {
+      "kind": "point",
+      "verbatim": "Limousin or Charolais or Simmental",
+      "marks": 3,
+      "contextNote": "2: Suckler beef: breed of dam. Named breed must be linked to the choice; or other valid example.",
+      "id": "r-3"
+     },
+     {
+      "kind": "point",
+      "verbatim": "Good conformation / good LWG",
+      "marks": 3,
+      "contextNote": "2: Suckler beef: reason for choice.",
+      "id": "r-4"
+     }
+    ]
+   },
+   {
+    "id": "dairy",
+    "label": "Dairy",
+    "rows": [
+     {
+      "kind": "point",
+      "verbatim": "Holstein Friesian",
+      "marks": 3,
+      "contextNote": "1: Liquid milk: breed of dam. Named breed must be linked to the choice; or other valid example.",
+      "id": "r-1"
+     },
+     {
+      "kind": "point",
+      "verbatim": "High milk volume",
+      "marks": 3,
+      "contextNote": "1: Liquid milk: reason for choice.",
+      "id": "r-2"
+     },
+     {
+      "kind": "point",
+      "verbatim": "Jersey",
+      "marks": 3,
+      "contextNote": "2: Creamery milk: breed of dam. Named breed must be linked to the choice; or other valid example.",
+      "id": "r-3"
+     },
+     {
+      "kind": "point",
+      "verbatim": "High milk solids",
+      "marks": 3,
+      "contextNote": "2: Creamery milk: reason for choice.",
+      "id": "r-4"
+     }
+    ]
+   },
+   {
+    "id": "sheep",
+    "label": "Sheep",
+    "rows": [
+     {
+      "kind": "point",
+      "verbatim": "Blackface mountain or Wicklow cheviot",
+      "marks": 3,
+      "contextNote": "1: Mountain sheep: breed of dam. Named breed must be linked to the choice; or other valid example.",
+      "id": "r-1"
+     },
+     {
+      "kind": "point",
+      "verbatim": "Good mothering ability / hardy",
+      "marks": 3,
+      "contextNote": "1: Mountain sheep: reason for choice.",
+      "id": "r-2"
+     },
+     {
+      "kind": "point",
+      "verbatim": "Suffolk or Texel",
+      "marks": 3,
+      "contextNote": "2: Lowland sheep: breed of dam. Named breed must be linked to the choice; or other valid example.",
+      "id": "r-3"
+     },
+     {
+      "kind": "point",
+      "verbatim": "Fast growth rates / good conformation",
+      "marks": 3,
+      "contextNote": "2: Lowland sheep: reason for choice.",
+      "id": "r-4"
+     }
+    ]
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q18ci",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q18(c)(i)",
+  "topicId": "agsci-1-3",
+  "curriculumNodeIds": [
+   "agsci-1-3",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "dairy-export-decrease",
+  "questionText": "Identify the dairy product which decreased in exports between 2015 and 2021.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Infant food",
+    "marks": 6,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q18(c)(i)",
+   "pages": [
+    36
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "The graph below shows Irish Dairy Exports for 2015 and 2021 (Bord Bia, 2024): cheese, butter, infant food, milk and cream, skim milk powder, in tonnes.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-11"
+  }
+ },
+ {
+  "id": "agsci-2025-ol-q18cii",
+  "subjectId": "agricultural-science",
+  "year": 2025,
+  "level": "ordinary",
+  "section": "B",
+  "questionRef": "2025 OL Q18(c)(ii)",
+  "topicId": "agsci-1-3",
+  "curriculumNodeIds": [
+   "agsci-1-3",
+   "agsci-4-3-1"
+  ],
+  "conceptId": "butter-export-estimate",
+  "questionText": "Using the graph, estimate the value of Irish butter exports to Ireland in 2021.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "265,000 to 275,000",
+    "marks": 6,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2025 Ordinary — Q18(c)(ii)",
+   "pages": [
+    36
+   ],
+   "attribution": "SEC Agricultural Science 2025 Ordinary Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "additionalTopicIds": [
+   "agsci-4-3-1"
+  ],
+  "stem": "The graph below shows Irish Dairy Exports for 2015 and 2021 (Bord Bia, 2024): cheese, butter, infant food, milk and cream, skim milk powder, in tonnes.",
   "qa": {
    "gates": [
     "verbatim",

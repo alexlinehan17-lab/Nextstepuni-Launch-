@@ -776,9 +776,113 @@ POOLS_2025_HIGHER = {
     'Q15(b)': (3, ['A', 'B', 'C', 'D']),
 }
 
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER}
+# 2025 Ordinary: Section A Q1-Q12 at 10 marks, Section B Q13-Q18 at 50.
+ORDINARY_2025 = '''
+Q1(a)(i)|6|3|12|D: Holstein Friesian
+Q1(a)(ii)|4|3|12|Limousin or Charolais
+Q1(b)(i)|5|4|12|Easy calving / good conformation / no horns
+Q1(b)(ii)|2|4|12|Identify the correct meaning of the term polled
+Q1(b)(iii)|3|4|12|Belgian Blue
+Q2|10|5|12|Indicate if the following are true or false
+Q3|10|5|12|Identify the farm machinery from the descriptions
+Q4(a)|5|6|13|Paddocks near yard or yard at the centre
+Q4(b)|3|6|13|slurry storage, by placing an X on the structure
+Q4(c)|2|6|13|large paddocks could be divided into strips
+Q5(a)|5|7|13|seedling is largest in picture B
+Q5(b)|2|7|13|It is a clay soil / under continuous grassland
+Q5(c)|3|7|13|Identify the conditions
+Q6(a)|5|8|13|Act as pollinators or support crop production
+Q6(b)|5|8|13|Use of pesticides or herbicides / monoculture
+Q7(a)|6|8|14|D: Chicory
+Q7(b)|4|8|14|Nettle or C
+Q8(a)|5|9|14|Wear gloves / wear goggles
+Q8(b)|5|9|14|Symbols 2 and 3
+Q9(a)(i)|5|10|14|Fore or front legs first
+Q9(a)(ii)|5|10|14|Isolate the cow / clean bedding
+Q9(b)(i)|3|11|14|Decreased
+Q9(b)(ii)|2|11|14|Means: Costs less to produce
+Q9(b)(iii)|3|11|14|Identify which agricultural enterprise output price has increased.
+Q9(b)(iv)|2|11|14|Increased profit
+Q10(a)|3|12|15|Sperm or male
+Q10(b)|3|12|15|Identify which chromosome X or Y is responsible
+Q10(c)|4|12|15|90% or better chance of female calf
+Q11(a)(i)|3|13|15|Spring calving
+Q11(a)(ii)|3|13|15|Walking on uneven or damaged surfaces
+Q11(a)(iii)|4|13|15|5000 / 100 = €50 per cow
+Q11(b)(i)|5|14|15|Less pressure on joints or improved lying behaviour
+Q11(b)(ii)|5|14|15|Easier to clean so more hygienic
+Q12(a)(i)|3|15|16|Abortion and stillbirth
+Q12(a)(ii)|2|15|16|Bar inserted in graph to height of 20
+Q12(a)(iii)|5|15|16|Ensure ewes lamb indoors
+Q12(b)(i)|3|16|16|Identify which lamb had a higher growth rate
+Q12(b)(ii)|2|16|16|(More) competition for nutrients
+Q12(b)(iii)|3|16|16|Predict which lamb will have a higher weight at slaughter.
+Q12(b)(iv)|2|16|16|42kg
+Q13(a)(i)|9|18|17|Multiple samples (20) taken
+Q13(a)(ii)|5|18|17|Advise Mia on how many samples she should take.
+Q13(a)(iii)|4|18|17|Soil augur or probe
+Q13(b)|8|19|17|Rub soil sample between fingers
+Q13(c)(i)|4|20|17|Loam soil
+Q13(c)(ii)|4|20|17|Good drainage / good aeration
+Q13(c)(iii)|12|20|18|Grass / potatoes / clover
+Q13(c)(iv)|4|20|18|Raises soil pH / increases nutrient availability
+Q14(a)(i)|5|21|18|February
+Q14(a)(ii)|9|21|18|accept valid weather condition with matching valid impact
+Q14(a)(iii)|4|22|19|Cattle poach land
+Q14(b)(i)|4|22|19|The seeds in the polytunnel will have a higher germination rate
+Q14(b)(ii)|4|22|19|Temperature: Independent
+Q14(b)(iii)|4|22|19|The polytunnel had a higher germination rate
+Q14(b)(iv)|4|23|19|89/100 x 100/1 = 89%
+Q14(c)(i)|3|23|19|Choose the correct minimum germination rate for certified seed.
+Q14(c)(ii)|5|23|19|Analytical purity of 98%
+Q14(c)(iii)|8|23|19|L: Oilseed rape
+Q15(a)(i)|4|24|20|The value is increased by undergoing processing
+Q15(a)(ii)|5|24|20|Using glass bottles or bottles from the customers
+Q15(a)(iii)|4|24|20|Identify the meaning of pasteurisation.
+Q15(b)(i)|12|25|20|Diet of cow / breed of cow
+Q15(b)(ii)|7|25|20|Mastitis / TB / BVD
+Q15(b)(iii)|6|25|20|Identify the nutrients A and B in the chart.
+Q15(c)|12|26|20|add 1ml of Resazurin solution
+Q15(d)(i)|8|27|20|Place each step in the correct order.
+Q15(d)(ii)|4|27|20|Source of fibre to aid digestion
+Q16(a)(i)|10|28|21|Slatted floor / rubber mats
+Q16(a)(ii)|6|28|21|Good ventilation (to reduce chance of air borne diseases)
+Q16(a)(iii)|6|28|21|Secure pens or fencing
+Q16(b)|8|29|21|Weigh a sample of silage
+Q16(c)(i)|6|30|21|Identify the average DM% of grass silage.
+Q16(c)(ii)|6|30|21|Stage of growth / DMD / cutting height
+Q16(c)(iii)|8|30|21|Hay / concentrates / kale
+Q17(a)(i)|9|31|22|Improve aeration or root growth
+Q17(a)(ii)|4|31|22|Add manure or add organic matter
+Q17(b)(i)|3|31|22|Identify the statement which best describes flocculation.
+Q17(b)(ii)|16|32|22|Arrange the steps that show the order of flocculation.
+Q17(b)(iii)|3|32|22|Same amount of soil (clay) or water
+Q17(b)(iv)|3|32|22|Qualitative
+Q17(c)|12|33|22|Involved in chlorophyll production
+Q17(d)|12|33|23|Named breed must be linked to the choice
+Q18(a)(i)|3|34|23|The ratio of lean meat to fat
+Q18(a)(ii)|5|34|23|BCS: 3
+Q18(a)(iii)|4|34|23|More efficient management
+Q18(b)(i)|4|35|23|365-285 = 80 days
+Q18(b)(ii)|9|35|24|C – mating: April- May
+Q18(b)(iii)|9|35|24|2 separate fields indicated
+Q18(c)(i)|6|36|24|Infant food
+Q18(c)(ii)|6|36|24|265,000 to 275,000
+Q18(c)(iii)|4|36|24|Yellow (due to carotene in grass)
+'''
+
+POOLS_2025_ORDINARY = {
+    'Q1(a)(i)': (3, ['A', 'B', 'C', 'D']),
+    'Q7(a)': (3, ['A', 'B', 'C', 'D']),
+    'Q14(c)(iii)': (2, ['J', 'K', 'L']),
+}
+
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY}
 
 SOURCES = [
+    (2025, 'ordinary', 'G', ORDINARY_2025,
+     '481fbf4a01b2ed81472ad70745f47b2c413131939a6cc1b42cc1a16e40f458a7',
+     'c2170cf98ba10073a7fa35497bc54ba039f807b1985bf616f5556cd57918e624'),
     (2025, 'higher', 'A', HIGHER_2025,
      '5d6ace875795ceeed7f7738b6c137a17f62e7247be067b540907afa71f9880f0',
      '47f040304b88a81e2c6de9783dc71914ac5863ea80416a280cf242c64014ba6d'),
@@ -846,7 +950,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -895,6 +999,8 @@ MODERN_LAYOUTS = {
                         'marks':lambda n: 10 if n<=12 else 50},
     (2025,'higher'): {'either':{'Q2','Q3','Q4','Q9'}, 'bothWithEither':{'Q13','Q14'},
                       'marks':lambda n: 10 if n<=12 else 50},
+    (2025,'ordinary'): {'either':{'Q1','Q9','Q11','Q12'}, 'bothWithEither':{'Q15','Q17'},
+                        'marks':lambda n: 10 if n<=12 else 50},
 }
 
 
@@ -967,7 +1073,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62; 2026 Higher 91 / 112; 2026 Ordinary 85 / 114; 2025 Higher 89 / 112. Remaining editions stay open.')
+    print('Source census: 2010 Higher 55 base tasks / 62 routes; 2010 Ordinary 85; 2011 Higher 67 / 70; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56 / 62; 2026 Higher 91 / 112; 2026 Ordinary 85 / 114; 2025 Higher 89 / 112; 2025 Ordinary 91 / 99. Remaining editions stay open.')
 
 
 if __name__=='__main__':

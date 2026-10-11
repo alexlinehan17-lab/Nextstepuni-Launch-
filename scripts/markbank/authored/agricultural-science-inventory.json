@@ -5830,135 +5830,153 @@
         "sha256": "c2170cf98ba10073a7fa35497bc54ba039f807b1985bf616f5556cd57918e624",
         "pages": 25
       },
-      "authoredEnglishCardsForSitting": 72,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 99,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "4c18810fccd08db1",
           "page": 2,
           "cue": "Answer ten",
           "context": "nded that you spend about 50 minutes on Section A and 100 minutes on Section B. Section A Answer ten questions from this section. There is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 m",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section A: ten of twelve independent questions. Every question and both sides of each internal choice are retained."
         },
         {
           "id": "f9890666bf4b5f74",
           "page": 2,
           "cue": "any four",
           "context": "re is internal choice in four questions. Each question carries 10 marks. Section B Answer any four questions from this section. There is internal choice in two questions. Each question carries 50 marks. Write your Examination Number and your Day, Month and Year of Birth in the boxes on the front cover. Write your answers in bl",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B: four of six independent questions. Every question is retained."
         },
         {
           "id": "02be49493afa8e7c",
           "page": 3,
           "cue": "any ten",
           "context": "icate Examination 2025 3 Agricultural Science – Ordinary Level Section A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 Answer either (a) or (b). (a) (i) Identify any three breeds A, B, C or D using the list below. Jersey Holstein Friesian Charolais Limousin A B C D (ii) Name one beef breed fro",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Repeated Section A instruction: ten independent 10-mark questions, all retained."
         },
         {
           "id": "90d5750e2aa45b66",
           "page": 3,
           "cue": "either",
           "context": "n A 100 marks Answer any ten questions. Each question carries 10 marks. Question 1 Answer either (a) or (b). (a) (i) Identify any three breeds A, B, C or D using the list below. Jersey Holstein Friesian Charolais Limousin A B C D (ii) Name one beef breed from part (i) above.",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "02e7b70e9366b1ef",
           "page": 3,
           "cue": "any three",
           "context": "ns. Each question carries 10 marks. Question 1 Answer either (a) or (b). (a) (i) Identify any three breeds A, B, C or D using the list below. Jersey Holstein Friesian Charolais Limousin A B C D (ii) Name one beef breed from part (i) above.",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q1(a)(i) prints cattle A–D and asks for any three: all four routes at 6 marks each."
         },
         {
           "id": "54e0749a8c2f9250",
           "page": 4,
           "cue": "choose",
           "context": ") Identify with reason which bull Aberdeen Angus or Belgian Blue you would advise Jack to choose. (ii) The Aberdeen Angus Bull is polled. Identify the correct meaning of the underlined term by placing a tick () in the correct box. Double muscled Produces milk Has no horns (iii) State which bull is more likely to produce cal",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q1(b)(i) \"which bull ... you would advise Jack to choose\": the scheme accepts Aberdeen Angus only; not a route."
         },
         {
           "id": "b06358c53d0c52b9",
           "page": 6,
           "cue": "either",
           "context": "azing on dairy farms are paddock or strip grazing. Suggest why this farm may be suited to either method of grazing. 1. 2. A C B",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Q4(c) \"suited to either method of grazing\": one explanation of the farm layout, not a route choice."
         },
         {
           "id": "8a6e390f36e0a801",
           "page": 8,
           "cue": "any three",
           "context": "ribe two reasons why bee numbers have been in decline in Ireland. Question 7 (a) Identify any three plants shown in the table below using the list opposite. A B C D (b) State which plant from part (a) above is not desired in a grassland sward. Chicory White clover Perennial ryegrass Nettle 1. 2. 1. 2.",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q7(a) prints plants A–D and asks for any three: all four routes at 6 marks each."
         },
         {
           "id": "38c2a2684ba96ccf",
           "page": 9,
           "cue": "Choose",
           "context": "ning signs on the fertiliser bags which identified it as an eye irritant and a fire risk. Choose the two warning signs by placing a tick () in the correct boxes to identify these signs. 1. 2.",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q8(b): tick the two correct warning signs (already reviewed as a two-option group)."
         },
         {
           "id": "0d127836401c20be",
           "page": 10,
           "cue": "either",
           "context": "g Certificate Examination 2025 10 Agricultural Science – Ordinary Level Question 9 Answer either (a) or (b). (a) The pictures below show calves presented in various positions leading up to birth. Analyse the pictures and answer the questions that follow. A B (i) Identify with reason which picture A or B is the correct positi",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "c22de058fcbf5bdd",
           "page": 13,
           "cue": "either",
           "context": " Certificate Examination 2025 13 Agricultural Science – Ordinary Level Question 11 Answer either (a) or (b). (a) Read the article and answer the questions that follow. Lameness: Autumn time is peak risk period on dairy farms Lameness can be a huge issue on Irish dairy farms in autumn, as spring calving cows are coming to the",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q11 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "3d6d2aadcb4e0fb3",
           "page": 15,
           "cue": "either",
           "context": " Certificate Examination 2025 15 Agricultural Science – Ordinary Level Question 12 Answer either (a) or (b). (a) The graph shows the main causes of lamb mortality (death) on Irish sheep farms. Analyse the graph and answer the questions that follow. (Adapted from Dairygoldagri.ie) (i) Identify the main cause of lamb mortality",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q12 either (a) or (b): both alternatives are retained."
         },
         {
           "id": "01d5f968562bfc85",
           "page": 18,
           "cue": "any four",
           "context": "cate Examination 2025 18 Agricultural Science – Ordinary Level Section B 200 marks Answer any four questions. Each question carries 50 marks. Question 13 (a) Mia wants to take soil samples from a newly purchased field for analysis. Study the pictures and answer the questions that follow. A B C (i) Identify which method of soil",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section B heading: four of six independent 50-mark questions, all retained."
         },
         {
           "id": "66dc076510443757",
           "page": 23,
           "cue": "Choose",
           "context": "ified seed for their investigation. Certified seed has a guaranteed germination rate. (i) Choose the correct minimum germination rate for certified seed by placing a tick () in the correct box opposite. (ii) Describe two other characteristics of certified seed. (iii) The photographs below J, K and L show three common crops ",
-          "classification": "pending"
+          "classification": "answer-identification",
+          "reason": "Q14(c)(i): tick the one correct minimum germination rate (85%)."
         },
         {
           "id": "9f2f2597438fe0f3",
           "page": 23,
           "cue": "any two",
           "context": "(iii) The photographs below J, K and L show three common crops grown in Ireland. Identify any two of these crops, using the following list. Maize Oilseed rape Wheat J K L % minimum germination for certified seed 75% 85% 95% Calculation: 1. 2.",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q14(c)(iii) prints crops J, K and L and asks for any two: all three routes at 8 marks each."
         },
         {
           "id": "286650213bca37f4",
           "page": 24,
           "cue": "either",
           "context": "on 2025 24 Agricultural Science – Ordinary Level Question 15 Answer both (a) and (b) with either (c) or (d). (a) Read the article and answer the questions that follow. MILKBOT – A milk vending machine A north Clare dairy farm sells their value-added milk called Moo’ghna Milk to local people through a milk vending machine MIL",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q15: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "0c87d89efc00ea50",
           "page": 31,
           "cue": "either",
           "context": "on 2025 31 Agricultural Science – Ordinary Level Question 17 Answer both (a) and (b) with either (c) or (d). Good soil conditions are important for crop production. Earthworms have an important role in creating and maintain good soil conditions. (a) (i) Outline three advantages of earthworms in soils. (ii) Outline two ways f",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q17: (a) and (b) with either (c) or (d). Every part, including both (c) and (d), is retained."
         },
         {
           "id": "787dc7a1aba3278c",
           "page": 32,
           "cue": "one of",
           "context": "the steps of the investigation shown below in the correct order. Add calcium carbonate to one of the test tubes Add water to each test tube, then stopper and shake the test tubes Leave to settle, one test tube stays muddy, while one test tube goes clear Add clay soil to two test tubes 1 2 3 4 (iii) Identify one control varia",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "Prose inside a Q17(b)(ii) step (\"Add calcium carbonate to one of the test tubes\"); no response choice."
         }
       ]
     },
@@ -5977,7 +5995,7 @@
         "sha256": "f9d47749d55acee0a50c6706d8da603f098fafedd6d25387800c23b479e0498e",
         "pages": 25
       },
-      "authoredEnglishCardsForSitting": 72,
+      "authoredEnglishCardsForSitting": 99,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

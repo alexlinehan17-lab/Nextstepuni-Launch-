@@ -38,7 +38,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(59);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(58);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(1);
   });
 
@@ -390,7 +390,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(12);
+    expect(review.paperReviews).toHaveLength(13);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -585,6 +585,40 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(map.q.find(q => q.n === '14')?.schemeNote).toContain('17');
   });
 
+  it('reconciles the original 2025 Ordinary cards, splits the fused Q9(b) parts and expands every pool', () => {
+    const year = ordinary.filter(card => card.year === 2025);
+    expect(year).toHaveLength(99);
+    // 98 tasks from this review plus the earlier reviewed Q8(b) correction.
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2025 OL'));
+    expect(tasks).toHaveLength(99);
+    const states = tasks.map(task => (task as { originalCard?: string }).originalCard);
+    expect(states.filter(state => state === 'unchanged')).toHaveLength(68);
+    expect(states.filter(state => state === 'corrected-in-place')).toHaveLength(3);
+    expect(states.filter(state => state === 'added')).toHaveLength(27);
+    for (const [prefix, count, marks] of [['Q1(a)(i) — ', 4, 6], ['Q7(a) — ', 4, 6], ['Q14(c)(iii) — ', 3, 8]] as const) {
+      const routes = year.filter(card => card.questionRef.startsWith(`2025 OL ${prefix}`));
+      expect(routes, prefix).toHaveLength(count);
+      for (const candidate of routes) {
+        const card = get(candidate.id);
+        expect(card.totalMarks).toBe(marks);
+        expect(tariffReconciles(card)).toBe(true);
+      }
+    }
+    expect(get('agsci-2025-ol-q1ai').questionRef).toBe('2025 OL Q1(a)(i) — A, B, C');
+    expect(get('agsci-2025-ol-q9bi-ii').questionRef).toBe('2025 OL Q9(b)(i)');
+    expect(get('agsci-2025-ol-q9bi-ii').totalMarks).toBe(3);
+    expect(get('agsci-2025-ol-q9biii-iv').questionRef).toBe('2025 OL Q9(b)(iii)');
+    expect(get('agsci-2025-ol-q9bii').totalMarks).toBe(2);
+    expect(get('agsci-2025-ol-q14a-ii').answerVariants?.map(variant => variant.id)).toEqual(['potatoes', 'barley', 'kale']);
+    expect(get('agsci-2025-ol-q17d').answerVariants?.map(variant => variant.id)).toEqual(['beef', 'dairy', 'sheep']);
+    for (const variant of get('agsci-2025-ol-q17d').answerVariants!) {
+      expect(tariffReconciles({ ...get('agsci-2025-ol-q17d'), rows: variant.rows })).toBe(true);
+    }
+    const units = census.questionMarkChecks.filter(check => check.year === 2025 && check.level === 'ordinary');
+    expect(units).toHaveLength(18);
+    for (const check of units) expect(check.candidateTotalsFromScheme).toEqual([Number(check.question.slice(1)) <= 12 ? 10 : 50]);
+  });
+
   it('awards 2010 first-correct marks independently of the named instrument', () => {
     const card = get('agsci-2010-hl-q1e');
     for (const first of [0, 1, 2]) expect(marksClaimed(card, {}, { 'r-1': [first] })).toBe(6);
@@ -636,7 +670,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(706);
+    expect(atlas.markBankCards).toHaveLength(804);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;
