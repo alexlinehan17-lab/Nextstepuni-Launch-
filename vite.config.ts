@@ -202,7 +202,9 @@ export default defineConfig(() => {
         globIgnores: [
           '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
           '**/pdfjs-*/**',
-          '**/higher-*.js', '**/ordinary-*.js',
+          // Foundation decks are the same lazy subject corpora; the Irish
+          // Foundation deck passed the 3 MiB precache ceiling with the 2010 paper.
+          '**/higher-*.js', '**/ordinary-*.js', '**/foundation-*.js',
           '**/catchUpLaneData*.js', '**/commandWordData*.js',
           '**/vendor-three*.js',
           // PDF export libraries — only pulled in when a student or GC actually
