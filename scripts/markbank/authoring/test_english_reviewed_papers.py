@@ -573,5 +573,104 @@ class EnglishSourceExclusionTest(unittest.TestCase):
                          {'label': 'TEXT 1', 'title': 'A TRAVEL BLOG', 'pages': [2, 3]})
 
 
+class English2026ReviewedPapersTest(unittest.TestCase):
+    """Pin the independent 2026 reviews: tallies, routes, readers, tariffs and raw scan."""
+
+    KEYS = ('english-2026-ol-p2',)
+
+    @classmethod
+    def setUpClass(cls):
+        cls.records = {r['id']: r for r in inventory()['papers'] if r['id'] in cls.KEYS}
+        cls.tasks = {key: extract_record(record)[1] for key, record in cls.records.items()}
+        cls.by_id = {task['id']: task for tasks in cls.tasks.values() for task in tasks}
+        authored = ROOT / 'scripts/markbank/authored'
+        cls.decisions = json.loads((authored / 'english-selection-review.json').read_text())['decisions']
+        cls.ledger = json.loads((authored / 'english-task-review.json').read_text())
+        cls.raw = json.loads((authored / 'english-raw-selection-review.json').read_text())
+
+    def routes(self, key):
+        tasks = self.tasks[key]
+        routes, pending = review(tasks, {t['id']: self.decisions[t['id']] for t in tasks})
+        self.assertEqual(pending, [])
+        return routes
+
+    def test_2026_ordinary_paper_two_tally_routes_and_tariffs(self):
+        key = 'english-2026-ol-p2'
+        tasks, routes = self.tasks[key], self.routes(key)
+        self.assertEqual((len(tasks), len(routes), len({r['id'] for r in routes})), (104, 105, 105))
+        sections = {}
+        for task in tasks:
+            sections.setdefault(task['section'], []).append(task['totalMarks'])
+        self.assertEqual({s: sorted(m) for s, m in sections.items()}, {
+            'Single Text': [10] * 27 + [30] * 27, 'Comparative Study': [15] * 12 + [40] * 6,
+            'Unseen Poetry': [10, 10], 'Prescribed Poetry': [15] * 12 + [20] * 18})
+        # Only the unseen sad/hopeful choice is finite; each route keeps the 10-mark tariff and the poem.
+        variants = [r for r in routes if 'choiceParentId' in r]
+        self.assertEqual([r['id'] for r in variants], [key + '-unseen-q2-route-selection-1', key + '-unseen-q2-route-selection-2'])
+        self.assertIn('Best description: Sad', variants[0]['questionText'])
+        self.assertIn('Best description: Hopeful', variants[1]['questionText'])
+        self.assertTrue(all(r['totalMarks'] == 10 and r['sourceMaterial']['pages'] == [14] for r in variants))
+        # “Positive or negative or both” is an and/or judgement, kept whole like 2015 happy/sad/both.
+        for letter in 'abcdef':
+            decision = self.decisions[f'{key}-prescribed-{letter}-q1-b']
+            self.assertEqual(decision['kind'], 'flexible')
+            self.assertIn('2015 OL happy/sad/both', decision['reason'])
+        subset = {'tasks': {t['id']: self.ledger['tasks'][t['id']] for t in tasks}}
+        self.assertEqual(reconcile_schemes(tasks, inventory()['papers'], subset), [])
+        for task in tasks:
+            criteria = self.ledger['tasks'][task['id']]['criteria']
+            marks = task['totalMarks']
+            if marks in (30, 40):
+                self.assertEqual(criteria['allocation'], {'P': marks * 3 // 10, 'C': marks * 3 // 10,
+                                                          'L': marks * 3 // 10, 'M': marks // 10})
+                self.assertIn('cannot exceed Purpose', criteria['notes'])
+            else:
+                self.assertEqual(criteria['allocation'], {'P+C': marks * 6 // 10, 'L+M': marks * 4 // 10})
+        # Scheme PDF68 prints “ex 20” boxes under poem F Q1; the printed tariff (15) stands.
+        for part in ('q1-a', 'q1-b'):
+            entry = self.ledger['tasks'][f'{key}-prescribed-f-{part}']
+            self.assertEqual((entry['totalMarks'], entry['criteria']['allocation']), (15, {'P+C': 9, 'L+M': 6}))
+            self.assertIn('ex 20', entry['reason'])
+
+    def test_2026_ordinary_paper_two_readers_and_shared_wording(self):
+        key = 'english-2026-ol-p2'
+        pages = dict(zip('abcdef', range(15, 21)))
+        for task in self.tasks[key]:
+            source = task.get('sourceMaterial')
+            suffix = task['id'][len(key) + 1:]
+            if suffix.startswith('prescribed-'):
+                self.assertEqual(source['pages'], [pages[suffix.split('-')[1]]], suffix)
+            elif suffix.startswith('unseen-'):
+                self.assertEqual((source['title'], source['pages']), ('Long Distance', [14]))
+                self.assertIn('Moya Roddy', source['attribution'])
+            else:
+                self.assertIsNone(source, suffix)
+        self.assertEqual(self.by_id[key + '-prescribed-c-q1-b']['sourceMaterial']['title'], 'It’s Not')
+        # Each mode prints identical Q1(b)/Q2(b) wording; both stay separate tasks with their own scheme pages.
+        for mode, pages_b in (('a', ([51, 52], [52, 53])), ('b', ([53, 54], [54, 55])), ('c', ([55, 56], [56]))):
+            q1, q2 = (self.by_id[f'{key}-comparative-{mode}-q{n}-b'] for n in (1, 2))
+            self.assertEqual(q1['questionText'], q2['questionText'])
+            self.assertEqual([self.ledger['tasks'][t['id']]['schemePages'] for t in (q1, q2)], list(pages_b))
+
+    def test_2026_ordinary_paper_two_raw_scan_is_fully_classified(self):
+        key = 'english-2026-ol-p2'
+        record = self.records[key]
+        from english_raw_selection import scan
+        hits = scan([record])
+        self.assertEqual(len(hits), 167)
+        self.assertEqual(self.raw['sources'][key], record['questionPaper']['sha256'])
+        kinds = {}
+        for hit in hits:
+            decision = self.raw['decisions'][hit['id']]
+            self.assertEqual(decision['textSha256'], hit['textSha256'])
+            kinds[decision['kind']] = kinds.get(decision['kind'], 0) + 1
+            for task_id in decision.get('taskIds', []):
+                self.assertEqual(len(decision['taskIds']), 1)
+                self.assertIn(task_id, self.by_id)
+        # Tasks: Single 9×6 + Comparative 26 + Unseen 2 + Prescribed 6×6 = 118. Rubric: cover 2, “any two”
+        # 9, comparative 5, unseen 2, prescribed 1 + 6×3 = 37. Poem lines 7; final-page copyright notice 5.
+        self.assertEqual(kinds, {'tasks': 118, 'exam-instruction': 37, 'source-prose': 7, 'non-selection': 5})
+
+
 if __name__ == '__main__':
     unittest.main()

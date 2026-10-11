@@ -2815,6 +2815,28 @@
       "paperSha256": "64df6660ac6ca3b198a524841aa737e5aba7a8288fa49dfb35362dbab3d49794",
       "questionSha256": "0147d94598c22b061efb603ba2d18c3e779d3a92b9805483def6471843b79041",
       "reason": "Self-contained: an entry from the candidate’s own rediscovered First Year diary. Scheme PDF9 assesses a recognisable diary entry of their own feelings and experiences and never refers to Text 3. No passage is needed to answer faithfully, so the default Text 3 reader is removed."
+    },
+    "english-2026-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Long Distance",
+      "pages": [
+        14
+      ],
+      "attribution": "Long Distance — Moya Roddy, from her poetry collection The Dark Art of Darning, as reproduced in the SEC 2026 paper.",
+      "questionSha256": "3844e560d6acbca07b62cbd0f39090376d9f982c2457e78dd165f34afe113f9a",
+      "reason": "Paper PDF14 prints the introduction (Moya Roddy, The Dark Art of Darning), the title, both stanzas (9 + 6 lines) and the byline; visually verified. PDF15 begins Prescribed Poem A and is excluded."
+    },
+    "english-2026-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Long Distance",
+      "pages": [
+        14
+      ],
+      "attribution": "Long Distance — Moya Roddy, from her poetry collection The Dark Art of Darning, as reproduced in the SEC 2026 paper.",
+      "questionSha256": "06aef6cc9fb2ede89be5fb59ae20273229a170582a45d0cfe01f8f03f92809bd",
+      "reason": "Paper PDF14 prints the introduction (Moya Roddy, The Dark Art of Darning), the title, both stanzas (9 + 6 lines) and the byline; visually verified. PDF15 begins Prescribed Poem A and is excluded."
     }
   }
 }

@@ -25590,6 +25590,2589 @@
         "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose, unlike the 2015 OL Language-at-D rule; Mechanics is awarded on its own merits. Use the historical A–F/NG grid PDF52, not modern H/O bands; print its bands exactly."
       },
       "reason": "All 12 paper pages visually inspected, including four blank pages (PDF9–12). Exact task and award verified against the cited scheme pages. OL QA 15/15/10/10 (combined P+C 9/6, L+M 6/4), B 50 (P15 C15 L15 M5), composing 100 (P30 C30 L30 M10). All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-ol-p2-single-a-q1-a": {
+      "taskSha256": "fe9b46f13ced5bc36e84eb53e1de94fb0d2602327ce464d9d4f77912973cced9",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-a-q1-b": {
+      "taskSha256": "de3cb8537e070809d3960686780b684c05379b28bc77ce085e0fd31ec484cb21",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        22,
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-a-q1-c": {
+      "taskSha256": "4515001745c8bf19a018b6eebb1c24beca158540dc710e3c1ccad417654ef58d",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-a-q2": {
+      "taskSha256": "d0da83fcbe89dfc9067ae67d5eec0b1c54b693374ad4c8e9667d3a4758dacba2",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        23,
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-a-q3": {
+      "taskSha256": "f108a87d622bb271815c0da91c3dda443ff589e681908597906171a382a88a04",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-a-q4": {
+      "taskSha256": "c632899a080620732b89c040191067a4b44ac64620aae94f6679e3b4415d716a",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        24,
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-b-q1-a": {
+      "taskSha256": "616d4aeb0b246f1d5c2b44f7f5f1a73a482e87d2e4663c96eae710cc25d58ff5",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-b-q1-b": {
+      "taskSha256": "b463d15ed25cdb4ca31d3fd66fb661a4af8754ef53aa0e5dc79d3cca42db7828",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-b-q1-c": {
+      "taskSha256": "b403cba923247405c9517bb933e81ea90048454a0b9e38cc541d30d79a57da37",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-b-q2": {
+      "taskSha256": "af864a3ee326dec719db7e0513585d4d8c659f044ecc6ba7a4452980dd7c20d9",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme PDF27 reprints this as “a reader” and “at least three aspects”; the paper prints “an audience” and “three aspects”. Paper wording retained."
+    },
+    "english-2026-ol-p2-single-b-q3": {
+      "taskSha256": "978defca0f1988af3bf3ff7fef586bc01f6e4e9df41145a1c0f05771a82fd086",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-b-q4": {
+      "taskSha256": "917a6e0fadbb997283fa0cfefdb836b52d6eefa88d96ff52635ca625681df405",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-c-q1-a": {
+      "taskSha256": "7b5d3c7fb047494e1d9ce51d840d20e71ee73965c2e82475d88601fe4168bea0",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        28,
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-c-q1-b": {
+      "taskSha256": "30a9fb68a32395375e3bd075f2d58414decbe0b954dc9ebb93ed61c6039bfbba",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme PDF29 reprints “a poster … of of Keane’s play”; the paper prints “the poster for a new production of Keane’s play”."
+    },
+    "english-2026-ol-p2-single-c-q1-c": {
+      "taskSha256": "f34467198d68d20b0f96516f6d5a9e6446956d5d0c52c5e89423c91147c8644d",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        29,
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-c-q2": {
+      "taskSha256": "ed5f4bc221700e5cf5cbc55c476f9bab589e4bc0b64c47dd55ba467f0b39fc5e",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-c-q3": {
+      "taskSha256": "1ceaf32d02dcfc8b78d70a517258ce17cda3620949d175f285e04fa6da7e01bc",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        30,
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-c-q4": {
+      "taskSha256": "4f2831bcd3ddf5ea98722f82c63719aba643cc1c36d39a3213c44db723e51a4b",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-d-q1-a": {
+      "taskSha256": "134f81f289d3c0b42601e764c233650274ccaedc24ae814bffe1562ab70a4966",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        31,
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-d-q1-b": {
+      "taskSha256": "99f37bbfdb50f1f6ee574ac07d06f48530443dc7dcf272b743ffa729d0dd5545",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-d-q1-c": {
+      "taskSha256": "090caa755bad34701684425bf5398dd35df10c1e5a1d27ffafd0ecc057189297",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        32,
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme PDF32 reprints “relevant to an audience”; the paper prints “relevant for an audience”."
+    },
+    "english-2026-ol-p2-single-d-q2": {
+      "taskSha256": "0108806c53e14009df0d30ed13bca1870a4809e8bd12bb36c5031e2806db0fc5",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-d-q3": {
+      "taskSha256": "67ba51ee72352fe09a51790dc3520f691fa4487175a58c67fd83a113e9db2bbc",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        33,
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-d-q4": {
+      "taskSha256": "53a9bd6dac9dde56709c553902328ee4f184d703b88fd3faa29083ac18bf78f9",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-e-q1-a": {
+      "taskSha256": "daa14070853dd027c6b0be50f8d688f94cc039d9d7db7d6cdf9d36a0707bffdc",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        34,
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-e-q1-b": {
+      "taskSha256": "a67c5fcfce2b63e9a92fc253a1d52ddca89fa8c55567ec2b24f1f3c2b6ee1bb1",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-e-q1-c": {
+      "taskSha256": "96ef673f2539e1742b5f1be4e001783fb79d1bb2277bed939301a4d0dc44151e",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-e-q2": {
+      "taskSha256": "9dbc88a307b1b595996401978c3035c103ab2de70e02374bc0bcfc16abb211c3",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-e-q3": {
+      "taskSha256": "69c306d831485899c65cc6c1fa6cbc5b9ca3f06d7f2b0416eba0f1f2ab0f16c0",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-e-q4": {
+      "taskSha256": "722f0df7f9ea6ba06f05e0cfe4f2cc9959d82309aace4ba472ceb37c88c033cd",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-f-q1-a": {
+      "taskSha256": "043ba456d45733c4c8eb87650cf1392b48d72d043298b5388aba98974a6f8ed0",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme reprints “Identify a central character”; the paper prints “Identify a character”. Paper wording retained."
+    },
+    "english-2026-ol-p2-single-f-q1-b": {
+      "taskSha256": "05264a9681688e4d77a2550b3180d4a3c727ed27b264feb35bc7cd8d761fdb37",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-f-q1-c": {
+      "taskSha256": "e5b3e79f04ce40236db31d22ba52823cd97fac83d7d9cd1cac2b5bb260e5bfb1",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-f-q2": {
+      "taskSha256": "a2ca8d8b8f2ea0faa4789e545833280e8a72c400e85f2db01f8d43030bdf1604",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-f-q3": {
+      "taskSha256": "2b7566b851bdc1184c12d7b4582534c557739db5d5c492e55a1fe32ba7d548d4",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-f-q4": {
+      "taskSha256": "02f70b3c86498ca720628dd89d0b1005cb621a65c2635b29c095cf9868e7f7f6",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-g-q1-a": {
+      "taskSha256": "f5d2d28274e280853faa9c880a8e3f62b811fcf7999f9a50cf4f4e47ecbf6244",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme reprints “Identify a central character”; the paper prints “Identify a character”. Paper wording retained."
+    },
+    "english-2026-ol-p2-single-g-q1-b": {
+      "taskSha256": "181274f9d6d04eb07b8c1fe3031dbc284e210efe59c27dd300c4d90079551258",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        41,
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme PDF41 reprints “a poster for a of a new production”; paper wording retained."
+    },
+    "english-2026-ol-p2-single-g-q1-c": {
+      "taskSha256": "518b2256e91b1bddce11ec2b618ab03a983c722a6b804f294f9ce58254ac52c0",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-g-q2": {
+      "taskSha256": "f6b7f8b41181b18b4d78db55c3edfca9b2231daa20b55aeae0513c68dd72b8ed",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        42,
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-g-q3": {
+      "taskSha256": "28bffdfe447ed481afcbb7ac91dbc6a76f3fc77a18382c6cf3bb0aae5edb345e",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-g-q4": {
+      "taskSha256": "0fdbc97268b2c5e0f62b893914dc5c979480ecd77eb85c3e6bee834c00960a7f",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        43,
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-h-q1-a": {
+      "taskSha256": "c767260bbc592eb5b5135ab237bfacd3dd193009e70dfff4af17a251543ec182",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme reprints “Identify a central character”; the paper prints “Identify a character”. Paper wording retained."
+    },
+    "english-2026-ol-p2-single-h-q1-b": {
+      "taskSha256": "c166489b3ee4d24a17a51d113145b312c7b217b009bb934d23adc8aefa183157",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme reprints “the cover of new edition”; the paper prints “the front cover of a new edition”. Paper wording retained."
+    },
+    "english-2026-ol-p2-single-h-q1-c": {
+      "taskSha256": "0c183e9c1ea6b522621f7c7916a8a9d1b94785e9c1bf36c4280d000421480b7e",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-h-q2": {
+      "taskSha256": "bb9709064f66cfa9ec889578359a9fd772a473982d54c6e8d51a03a8cc72017e",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        46
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-h-q3": {
+      "taskSha256": "42d4f79f125d69e3b3fcd14a6d5f3a6c43317224bbe776094ff6e8cc2ede9007",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        46,
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-h-q4": {
+      "taskSha256": "fae6a2dac4d1808f9b0e959f7e6e904b1f33ea1c8c712ef6daa65011a43bf5d4",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-i-q1-a": {
+      "taskSha256": "e5ab51d35baed51da8304bf49d099ef8b72531993b9d68d389d1179ce576a6b3",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme reprints “Identify a central character”; the paper prints “Identify a character”. Paper wording retained."
+    },
+    "english-2026-ol-p2-single-i-q1-b": {
+      "taskSha256": "ea62ae9c4a0356bb1640be1483f8cf36dfa49b0517610c8bd3bd7170f7568628",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme reprints “the cover of new edition”; the paper prints “the front cover of a new edition”. Paper wording retained."
+    },
+    "english-2026-ol-p2-single-i-q1-c": {
+      "taskSha256": "70369bddb5aca94e7f3b4d7d582413b884c0c6788171473036cd66a6a2da4eac",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        48,
+        49
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-i-q2": {
+      "taskSha256": "9c369aca6c1cda65da627ba70115d68a26730ee4d1d273e848bb0d4539d441e4",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        49
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-i-q3": {
+      "taskSha256": "5adac9225dbf18384c983473ecb93ca5db27b966bcf2913846a221643a947e7c",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        50
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-single-i-q4": {
+      "taskSha256": "5430ea16e38345d4357b6bc59931bca1f85f8ba6e4cc9ddd4c22ee4429468f7c",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 30,
+      "schemePages": [
+        50
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-a-q1-a-i": {
+      "taskSha256": "dd3e4188d4b1af291e9e5bf5330b78cef4df639964d065ba6f94dde89d6f6b1b",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        51
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-a-q1-a-ii": {
+      "taskSha256": "9761e94115480375d2a10fbb5f5f19ad580885c3da7586e403aa5cd9e2093037",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        51
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-a-q1-b": {
+      "taskSha256": "d3293442b8062052006e89c9bcc2938f0340d4b9afc063fe7f4b82754756eee6",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 40,
+      "schemePages": [
+        51,
+        52
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-a-q2-a-i": {
+      "taskSha256": "26434ae3e2916e0bb399479e636761f46d73223cb5e69ac7b8898556aba1c476",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        52
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-a-q2-a-ii": {
+      "taskSha256": "85db0c72b57bdd03e10e82c2b447c9d352f6a476900461d6abc4a88eb2e4828a",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        52
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-a-q2-b": {
+      "taskSha256": "8db5b3ddbf5699e9af32614b955432232bbf0047bac442fc4979ff9c6273004c",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 40,
+      "schemePages": [
+        52,
+        53
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-b-q1-a-i": {
+      "taskSha256": "4c6a6fccb8f8d6e831761fe58d1b8d502c6665787f994ceb21c656845ad8157c",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        53
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-b-q1-a-ii": {
+      "taskSha256": "c97ba2efe44c3141d0eb823d64644a4f90eedff50e462beec589327e60b8c986",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        53
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-b-q1-b": {
+      "taskSha256": "dfd0a5110c5bc2fd44d2624e0ce57a6cb4ab7ea4e306f5c0521a80e14a44975d",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 40,
+      "schemePages": [
+        53,
+        54
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-b-q2-a-i": {
+      "taskSha256": "023f19e24364d7cad26b3f91052e105608cd623a5cd391df982c4ce737b6464b",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        54
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-b-q2-a-ii": {
+      "taskSha256": "b63cdf89cdbd7f2b6d6608b776a5bc053a71c04b6c8f0fc9780e24cca83b70f8",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        54
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-b-q2-b": {
+      "taskSha256": "47eff6385857632efca46cf77e8bf3352c173ec4b6c10efd3f97730d9534aa66",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 40,
+      "schemePages": [
+        54,
+        55
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-c-q1-a-i": {
+      "taskSha256": "0fa44accc9b7547c2ec6fcac5d8032fa268e306b2263437ed65fd2ee0d52e8ea",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        55
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-c-q1-a-ii": {
+      "taskSha256": "84380e841ea52907a5b3e4e3545c7215d5152fa6a7258ce11a13f4bc580f6066",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        55
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-c-q1-b": {
+      "taskSha256": "c633bda68cff99e03e948c05494780955c6aa0b64e130bb5432ac65d2de89f85",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 40,
+      "schemePages": [
+        55,
+        56
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-c-q2-a-i": {
+      "taskSha256": "4b845f04e6f151085f83a64bda56cc34683aeee4065d566796002eaba449f46c",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        56
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-c-q2-a-ii": {
+      "taskSha256": "1411f0886eab75bc1bc8ce990c4449b771a6946bc750eebf013623a996939be6",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        56
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-comparative-c-q2-b": {
+      "taskSha256": "024aaacb186ec206687efa5ee7606b1ddd9bcc24dd1e7e491963217e17cbf80c",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 40,
+      "schemePages": [
+        56
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2026 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics awarded on its own merits. Use the 2026 OL discrete grid PDF71 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-unseen-q1": {
+      "taskSha256": "de151c4de2b82deeaa914471152fd6434fdf20f1c71e7c6475aaa4599c4002a5",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        57
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-unseen-q2": {
+      "taskSha256": "7e3d7d16c3b936ee679bfc6272f8d97a76b5e441eb048190e285fca62a6fd68c",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 10,
+      "schemePages": [
+        57
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together. The 10-mark L&M O6 cell prints “2/1”; transcribe it exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-a-q1-a": {
+      "taskSha256": "2dd228aeb3a6107fa6b4cb7c4446513de2d357cce3c20aba103312f9fadcc686",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        58
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-a-q1-b": {
+      "taskSha256": "7ee2256a2141cfada3e507662c990f8b78b1f53cea35ffdd020b5dd9c44c8e96",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        58
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-a-q2-i": {
+      "taskSha256": "c0c34961b4aea3b1c0e55eb828ac05d5267b6420677a0f9439694a7eec5962bc",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        58
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-a-q2-ii": {
+      "taskSha256": "e7e4a89e860fffa0b039c94cc5328a83916a0f776138465b2340fdb5fa6bcc78",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        59
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-a-q2-iii": {
+      "taskSha256": "e4266f6f9bd11b69f81933560b5adb9e99093b65473eb82ae150e4bb23608e87",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        59
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-b-q1-a": {
+      "taskSha256": "79040f3f884c03a3950be0095d448e5760fc8d04a744216db77694ca7258460d",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        60
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-b-q1-b": {
+      "taskSha256": "e1b0243567b89df006f46cf152505abe9896bbc40a0437ef3a440cb37eaea90a",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        60
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-b-q2-i": {
+      "taskSha256": "56405de4bab6fe0afa04ccc842c8e22adb872d4c682af0becadf76c859a2c221",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        60
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-b-q2-ii": {
+      "taskSha256": "7f4f2f38d3ac7fd5bde1ef64a46dab4ecf4d6d5a6933e03a2d01d81696fff28d",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        61
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-b-q2-iii": {
+      "taskSha256": "e6749b6bf0cf2177e806c961a542073e3935c3d07284320420037d63a0af4c8f",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        61
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-c-q1-a": {
+      "taskSha256": "268713acbeb5a1c3b316cecf0a6a391ed80fb76914e36818b07a0f256e84b142",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        62
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-c-q1-b": {
+      "taskSha256": "ae4db20ff2135666d92c0e972db2c4d87636b84ff76b04ec542ea72a76314c7a",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        62
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-c-q2-i": {
+      "taskSha256": "9da43c1502b72d47b71bc53499f48875e91ee23d9cd00d0f8d6632a6d9d6b373",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        62
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-c-q2-ii": {
+      "taskSha256": "ae8560fc7ad060486ecc2d934cb4bdad14922154443a4ac0539b9c771d296a06",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        63
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-c-q2-iii": {
+      "taskSha256": "e170c7060727313d2677720ee425252d80ebe4bfb33f26c5d5e5b7beaea58dbb",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        63
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-d-q1-a": {
+      "taskSha256": "c22aeb2b16091c6af4faf697c2d1cfaa41f3869f0c14df505de737899c9884f6",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        64
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-d-q1-b": {
+      "taskSha256": "57d89aefcb5ba7de85a7fc9ce5cbb60fbf4e5ee61121ac57a5f5b57356cbafe6",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        64
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-d-q2-i": {
+      "taskSha256": "ce5b3c0bb788a39d8a1abcea1d18af4f4771124b9647026d45b11c6369cca025",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        64
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-d-q2-ii": {
+      "taskSha256": "12deb448ba831d71d4b827593e033e5beb02167da41e85a09f825921a943caf5",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        65
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-d-q2-iii": {
+      "taskSha256": "8712cecd0d1d7e3254abfa420d7f0f8f254272395d31ddca3ece5d6caae3c134",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        65
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-e-q1-a": {
+      "taskSha256": "aad38f4bf7d16595eb2201afdde576c720100322f9fbab1eb3e410cfcb471c73",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        66
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-e-q1-b": {
+      "taskSha256": "30df273921f709a6229c98f692c8cc761b12b5ecfd1236259dcab9a36ec1af87",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        66
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-e-q2-i": {
+      "taskSha256": "37f169d73b7d111503d240f40cd83311cd45ac44cb24053590266aefc6c8a41b",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        66
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-e-q2-ii": {
+      "taskSha256": "4ef2e8df0f1de58f2c3fce14eefa588db038a036aede8a458cb5100e5d3f6fe1",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        67
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-e-q2-iii": {
+      "taskSha256": "5353969d558f56aa03e470dc36e99ee85f8d6635c08c974430d3c105b1947304",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        67
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-f-q1-a": {
+      "taskSha256": "5e5a03ceaa5520496e181d6ea8fe0e25f10d04b980bd731ed7ad73466b05b4c5",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        68
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme PDF68 prints a “Combined Criteria ex 20 (P+C 12, L+M 8)” box under this part, but the paper (PDF20) and the scheme’s own question both print (15), as for poems A–E. Tariff 15; apply the 15-mark combined grid PDF72 (P+C 9, L+M 6)."
+    },
+    "english-2026-ol-p2-prescribed-f-q1-b": {
+      "taskSha256": "d3208bd74b51f4a163c3a8d92e080b2cdec49f9cb3dee349efc5cc78803e0d4c",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 15,
+      "schemePages": [
+        68
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences. Scheme PDF68 prints a “Combined Criteria ex 20 (P+C 12, L+M 8)” box under this part, but the paper (PDF20) and the scheme’s own question both print (15), as for poems A–E. Tariff 15; apply the 15-mark combined grid PDF72 (P+C 9, L+M 6)."
+    },
+    "english-2026-ol-p2-prescribed-f-q2-i": {
+      "taskSha256": "19a3865e788b09d307f0416f36be7f73c5742b24c4ce616050e8d293542784a2",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        68
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-f-q2-ii": {
+      "taskSha256": "040bb082314f5e832c1c5f6305bdbb5507e25e957facfacb595734ecfc70fae0",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        69
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-ol-p2-prescribed-f-q2-iii": {
+      "taskSha256": "de92362362407bd5fb976c6df83bdec015171971b8e3666c05cb293fd0044b5e",
+      "paperSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "totalMarks": 20,
+      "schemePages": [
+        69
+      ],
+      "generalCriteriaPages": [
+        3,
+        70,
+        71,
+        72
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
     }
   }
 }

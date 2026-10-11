@@ -1,4 +1,41 @@
-## Current checkpoint — 2016 Paper 1 (HL and OL) recorded, 2026-10-11
+## Current checkpoint — 2026 Ordinary Paper 2 recorded, 2026-10-11
+
+Supersedes the counts below. Batch order is now NEWEST FIRST (2026 OL P2, then
+2026 HL P1 and HL P2). Recorded by `tmp/english-audit/record-2026-ol-p2-review.py`.
+
+- All 20 paper pages viewed one by one. Scheme (shared OL P1/P2 scheme) text
+  PDF3, 4, 22–72 read; PDF3 and 22–72 viewed as rendered pages, including the
+  Appendix grids PDF71 (discrete O1–O8) and PDF72 (combined O1–O8).
+- Independent tally **104 tasks / 105 routes**: Single 9 × (Q1(a)(b)(c) 10 +
+  Q2–Q4 30) = 54; Comparative 3 modes × 2 questions × (15 + 15 + 40) = 18;
+  Unseen 2 × 10; Prescribed 6 × (15 + 15 + three 20-mark alternatives) = 30.
+  Only finite pool: Unseen Q2 sad/hopeful (scheme PDF57 “ultimately choose one”).
+- **Changed an earlier unreviewed decision**: Prescribed Q1(b) “positive or
+  negative or both positive and negative” (×6) is now `flexible`, not three
+  routes, matching reviewed 2010/2013/2014/2015 “X or Y or both” precedent
+  (−12 routes). 2024 OL P2 “Reflective / Hopeful / a combination of both” is
+  still an unreviewed three-route expansion: decide it the same way when 2024
+  is reviewed, or record why it differs.
+- Readers: unseen Long Distance (Moya Roddy) PDF14 only; each prescribed poem is
+  complete on ONE page (identity `sourcePages` 15–20; the default two-page span
+  opened the next poem). Title “It’S Not” corrected to “It’s Not”.
+- Scheme errata recorded (paper wording kept): PDF68 prints “ex 20” boxes under
+  poem F Q1(a)/(b) though both print (15) — tariff 15, combined 9/6; several
+  single-text reprints differ slightly (see task-review reasons).
+- Comparative Q1(b) and Q2(b) print IDENTICAL wording in all three modes; the
+  extractor’s `schemePage` for Q2(b) therefore points at Q1(b)’s page. The
+  reviewed `schemePages` in `english-task-review.json` are correct
+  ([52,53], [54,55], [56]); the publisher must use those.
+- All 167 raw hits on this paper re-classified from the viewed pages (118
+  task lines, 37 rubric, 7 poem lines, 5 copyright notice); earlier
+  auto-suggested two-task links replaced with single-task links.
+- Gate report after recording: routes 3,799; pending taskSelections 10 /
+  rawDirectives 1,133 / rawLinkedTasks 0 / schemeTasks 1,494 / paperReviews 37,
+  none from 2026 OL P2. Python 43 tests, TS 132 tests, diff check pass.
+
+---
+
+## Earlier checkpoint — 2016 Paper 1 (HL and OL) recorded, 2026-10-11
 
 Supersedes the counts below; everything else in the next section still applies.
 Recorded by `tmp/english-audit/record-2016-p1-review.py` (ignored; never rerun

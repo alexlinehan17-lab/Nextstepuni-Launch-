@@ -3602,7 +3602,10 @@
       "observedHeading": "Poetry A · The Underground",
       "paperPage": 15,
       "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
-      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        15
+      ]
     },
     "english-2026-ol-p2-prescribed-b": {
       "topicId": "english-11-28",
@@ -3611,16 +3614,22 @@
       "observedHeading": "Poetry B · Driving To The Hospital",
       "paperPage": 16,
       "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
-      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        16
+      ]
     },
     "english-2026-ol-p2-prescribed-c": {
       "topicId": "english-11-21",
-      "title": "It’S Not",
+      "title": "It’s Not",
       "canonicalLabel": "Tracy K. Smith",
-      "observedHeading": "Poetry C · It’S Not",
+      "observedHeading": "Poetry C · It’s Not",
       "paperPage": 17,
       "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
-      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        17
+      ]
     },
     "english-2026-ol-p2-prescribed-d": {
       "topicId": "english-11-45",
@@ -3629,7 +3638,10 @@
       "observedHeading": "Poetry D · This Is Just To Say",
       "paperPage": 18,
       "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
-      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        18
+      ]
     },
     "english-2026-ol-p2-prescribed-e": {
       "topicId": "english-11-0",
@@ -3638,7 +3650,10 @@
       "observedHeading": "Poetry E · The Prodigal",
       "paperPage": 19,
       "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
-      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        19
+      ]
     },
     "english-2026-ol-p2-prescribed-f": {
       "topicId": "english-11-36",
@@ -3647,7 +3662,10 @@
       "observedHeading": "Poetry F · When I Am Among The Trees",
       "paperPage": 20,
       "source": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
-      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6"
+      "sourceSha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+      "sourcePages": [
+        20
+      ]
     }
   }
 }
