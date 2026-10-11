@@ -1,0 +1,247 @@
+{
+  "construction-studies-2015-HL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q1-original.png",
+    "md5": "0d2f265cde9cf62eadc9e7313c8f7347",
+    "alt": "Original SEC Question 1: high-performance door illustration, wall and floor dimensions, scaled vertical-section task and accessible-threshold task.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q1-scheme.png",
+    "md5": "231e20c388b212bd4477d5d40b9c81fb",
+    "alt": "SEC model section through the insulated entrance door, frame, wall head, threshold and solid floor, with exploded insulated-door illustration. The foundation drawn below is not required by this question.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q1-access-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q1-access-scheme.png",
+    "md5": "64f122b4b9356140aad5c38a883a82a3",
+    "alt": "SEC model accessible-threshold details showing sloped transitions, drainage channels, door upstands and internal floor junctions.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q2-original.png",
+    "md5": "161c4b67cad9ff686bcfe2c26521cbc2",
+    "alt": "Original SEC Question 2: three external-wall functional requirements, three distinct wall constructions with materials and dimensions, and evaluation of two selected walls.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-original.png",
+    "md5": "f7fa394dc6c3aa885d835b0fda970478",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 3: source question and illustration for original.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q3-attached-exterior": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-attached-exterior.png",
+    "md5": "f906cd40cf358e67e286cb78cbdf2af1",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): attached exterior. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q3-attached-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-attached-layout.png",
+    "md5": "cfb5f759c90531f08bc73d0420fc8e0e",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): attached layout. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q3-detached-exterior": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-detached-exterior.png",
+    "md5": "b8659df9d2f5700c512d9b7b8f4f292b",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): detached exterior. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q3-detached-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-detached-layout.png",
+    "md5": "e295e34b3b204524478fa4759adadffd",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): detached layout. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q3-garden-link": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-garden-link.png",
+    "md5": "c5c19a4245d8667b7e9d776455b9e3fc",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): garden link. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q3-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q3-scheme.png",
+    "md5": "1b29ab493fdd5b707f9a71e4d508ad26",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 3: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-original.png",
+    "md5": "09590acbdf218b6e20738aacf8a76a7e",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 4: source question and illustration for original.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q4-roof": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof.png",
+    "md5": "e6df0697de8d9f0286f433f183cb8445",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q4-windows": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-windows.png",
+    "md5": "8083724d9c494b1560f6877d0493f273",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): windows. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q4-floor": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-floor.png",
+    "md5": "7d899cdf04ebe55ccf0cc90854653da4",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): floor. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q4-roof-windows": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-windows.png",
+    "md5": "01f00367358eb31fb586863aa2feeb82",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof windows. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q4-roof-floor": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q4-roof-floor.png",
+    "md5": "73aa35ec72d3e4f761656d3937440adc",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 4: marking-scheme illustration(s): roof floor. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q5-original.png",
+    "md5": "82e876485f30584d67205af31f95e91f",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 5: source question and illustration for original.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q5-window-head": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q5-window-head.png",
+    "md5": "3fa6f424821838036cac26bc6b67a74b",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 5: marking-scheme illustration(s): window head. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-original.png",
+    "md5": "3f74361759cfb9ad4690c4bc07954c19",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 6: source question and illustration for original.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q6-compact": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-compact.png",
+    "md5": "21a891a67648826f60cb93914678acfc",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): compact. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q6-flexible-maintenance": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-flexible-maintenance.png",
+    "md5": "407da66aeb9e2a564484378607847e89",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): flexible maintenance. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q6-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q6-scheme.png",
+    "md5": "8913689c769299a6e4e816e90c69cd18",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 6: marking-scheme illustration(s): scheme. These are sample accepted designs, not extra required choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q7-original.png",
+    "md5": "5fa87b6c88727b5ddf2789b220eac6e0",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 7: source question and illustration, original.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q7-roof-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q7-roof-section.png",
+    "md5": "43005ecb12e71db88db64b88abc7c0c4",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 7: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q8-original.png",
+    "md5": "4c687d547b845a2085b172079b276fbc",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 8: source question and illustration, original.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q8-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q8-system.png",
+    "md5": "c12c0705316ed4584d55aba1c70a7860",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 8: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q8-collector": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q8-collector.png",
+    "md5": "862ee9332b626eb7692c87bf17624da0",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 8: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q8-locations": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q8-locations.png",
+    "md5": "714b44b23108283c26715e6ed5d9b552",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 8: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q8-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q8-scheme.png",
+    "md5": "216931cb7cbf3cc8a9aca417f82d7994",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 8: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-original.png",
+    "md5": "1fc34e660f474de6ecc5ba0ae1857137",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 9: source question and illustration, original.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q9-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q9-scheme.png",
+    "md5": "fd9461b4d03b9e5aadc7e1301fbda627",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 9: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2015-HL-q10-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-original.png",
+    "md5": "a64d5009b812b844113ba9a5a7f499bc",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, original.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q10-alternative": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-alternative.png",
+    "md5": "004df03ec7c82a88dabb80c557b3d0de",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 10: source question and illustration, alternative.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2015-HL-q10-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2015-HL-q10-scheme.png",
+    "md5": "be58085c5473be273627bc9e28a56fd0",
+    "alt": "Original SEC 2015 Higher Construction Studies Question 10: marking-scheme model illustrations. Apply only the selected printed tasks; examples do not create extra choices.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+    "solution": true
+  }
+}

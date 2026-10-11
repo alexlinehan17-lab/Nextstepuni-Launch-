@@ -11,6 +11,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -368,6 +369,34 @@ const oldTopicForLabel = (level, label) => {
   if (!topic) throw new Error(`${level}: unknown reviewed outgoing topic ${label}`);
   return topic.id;
 };
+// Source-reviewed card topics supplement the factual reference associations.
+// Keep one original printed question, even when it has several practice tasks.
+const cardingTopics = new Map();
+const reviewDirectory = path.join(ROOT, 'scripts/markbank/atlas-reviews');
+for (const name of fs.readdirSync(reviewDirectory).filter(name => name.startsWith('construction-studies-') && name.endsWith('.json'))) {
+  const review = readJson(path.join(reviewDirectory, name));
+  if (review.subjectId !== SUBJECT_ID || review.sitting !== 'main' || review.paperKey !== 'single') {
+    throw new Error(`Unsupported Construction Studies source identity: ${name}`);
+  }
+  for (const [file, hash] of Object.entries(review.sourceHashes)) {
+    if (createHash('sha256').update(fs.readFileSync(path.join(ROOT, file))).digest('hex') !== hash) {
+      throw new Error(`Construction Studies source changed: ${file}`);
+    }
+  }
+  for (const question of review.questions) {
+    const paper = localPapers.find(p => p.level === review.level && p.year === review.year
+      && p.lang === review.lang && p.paperKey === review.paperKey && p.fileid === question.fileid);
+    if (!paper?.q.some(q => q.n === question.n)) throw new Error(`Missing original Construction Studies anchor: ${name} Q${question.n}`);
+    const indexes = question.topicIds.map(id => {
+      const index = topicIndex.get(id);
+      if (index === undefined || allTopics[index].level !== review.level) throw new Error(`Invalid Construction Studies topic: ${id}`);
+      return index;
+    });
+    if (!indexes.length) throw new Error(`Empty Construction Studies topic union: ${name}`);
+    const key = logicalIdentity(review.level, review.year, question.n);
+    cardingTopics.set(key, [...new Set([...(cardingTopics.get(key) ?? []), ...indexes])]);
+  }
+}
 const logicalEnglishPapers = localPapers.filter(paper => paper.lang === 'ev');
 const questionMappings = [];
 const retainedLocalCards = [];
@@ -398,6 +427,7 @@ for (const paper of logicalEnglishPapers) {
         evidence: review.evidence,
       });
     }
+    indexes = [...new Set([...indexes, ...(cardingTopics.get(key) ?? [])])];
     questionMappings.push([
       paper.level === 'higher' ? 'h' : 'o',
       paper.year - 2000,

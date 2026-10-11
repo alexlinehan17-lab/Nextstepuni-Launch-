@@ -1,3 +1,4 @@
+import { CONSTRUCTION_2015_HIGHER_REVIEWED_IDS } from './fixtures/construction2015Reviewed';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -293,17 +294,17 @@ describe('Construction Studies exam-topic registry', () => {
     expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 64, paperOnlyMaps: 4 });
   });
 
-  it('surfaces 323 written questions and preserves all 505 Mark Bank cards', () => {
+  it('surfaces 323 written questions, preserves 505 prior cards and adds the source-reviewed 2015 tasks', () => {
     expect(subjectAtlasStats('construction-studies')).toMatchObject({
       questions: 323,
       topics: 103,
       yearMin: 2010,
       yearMax: 2026,
     });
-    expect(CONSTRUCTION_HIGHER).toHaveLength(255);
+    expect(CONSTRUCTION_HIGHER).toHaveLength(255 + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length);
     expect(CONSTRUCTION_ORDINARY).toHaveLength(250);
     expect(new Set(
       [...CONSTRUCTION_HIGHER, ...CONSTRUCTION_ORDINARY].map(card => card.id),
-    ).size).toBe(505);
+    ).size).toBe(505 + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length);
   });
 });

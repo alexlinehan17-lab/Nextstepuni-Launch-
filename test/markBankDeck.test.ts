@@ -1,3 +1,4 @@
+import { taskGroupsFault } from '../scripts/markbank/taskGroups.mjs';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -335,7 +336,7 @@ describe('no card can repeat the fabrication that shipped first time', () => {
     const bad = SAMPLE_CARDS.filter(isPointCard)
       .filter(c => !KNOWN_OVER_ROW_CAP.has(c.id))
       .filter(c => !isValidCardId(c.id) || c.rows.length === 0
-        || c.rows.length > rowCapFor(c.tariffModel.kind))
+        || (c.taskGroups ? taskGroupsFault(c) !== null : c.rows.length > rowCapFor(c.tariffModel.kind)))
       .map(c => `${c.questionRef} (${c.id}, ${c.rows.length} rows, ${c.tariffModel.kind})`);
     expect(bad, show(bad)).toEqual([]);
   });

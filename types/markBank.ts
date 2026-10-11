@@ -110,6 +110,10 @@ export interface MarkRow {
    *  tariff model leaves per-row values undefined — render no chip rather than a
    *  wrong one. */
   marks: number | null;
+  /** Explicit partial-credit steps printed for one criterion, including zero
+   * and its maximum. A diagram marked6/3/0 must not become a binary6-mark tick.
+   * Only fixed-tariff criterion rows may use these; never inferred. */
+  permittedMarks?: number[];
   /** Alternatives the scheme prints explicitly. */
   accepts?: string[];
   /**
@@ -193,6 +197,10 @@ export interface CardFigure {
    *  the question area before reveal answers the question for the student, so
    *  the session screen holds these back until the scheme is revealed. */
   solution?: boolean;
+  /** For question-side figures only. False means this is an illustration and
+   * the written stem and prompt must remain visible. Omitted means the crop
+   * contains the complete printed question and replaces that text. */
+  includesPrompt?: boolean;
   /** Named in the paper's acknowledgements, where a figure is third-party. */
   thirdPartyRights?: string;
 }
@@ -417,6 +425,27 @@ export interface SecPointCardBase extends SecCardBase {
    *  printed candidates, bounded by the notation or the question total, and
    *  share the long-question ceiling. */
   rows: MarkRow[];
+  /** A source-published whole-question bonus, assessed separately from tasks.
+   * It is never silently credited: the student applies the printed rule. */
+  questionBonus?: {
+    id: string;
+    kind: 'criterion';
+    verbatim: string;
+    contextNote: string;
+    marks: number;
+    permittedMarks: number[];
+  };
+  /** A complete finite assessment route assembled from separately practicable
+   * tasks. Each group retains its source task, published maximum and up to five
+   * marking rows. Groups partition the rows in display order. */
+  taskGroups?: Array<{
+    sourceCardId: string;
+    label: string;
+    marks: number;
+    rowIds: string[];
+    tariffModel?: { kind: 'orderedSplit'; notation: string };
+    responseCounts?: number[];
+  }>;
   /**
    * Official marking-scheme routes for an open printed choice.
    *
@@ -1125,6 +1154,24 @@ export function tariffReconciles(card: SecCard): boolean {
         && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
   }
   const { tariffModel: t, rows, totalMarks } = card;
+  const bonus = card.questionBonus;
+  if (bonus && (t.kind !== 'fixed' || !card.taskGroups?.length
+    || !bonus.id || rows.some(row => row.id === bonus.id)
+    || bonus.kind !== 'criterion' || !bonus.verbatim.trim() || !bonus.contextNote.trim()
+    || !Number.isFinite(bonus.marks) || bonus.marks <= 0
+    || !Array.isArray(bonus.permittedMarks) || bonus.permittedMarks.length < 2
+    || bonus.permittedMarks[0] !== 0 || bonus.permittedMarks.at(-1) !== bonus.marks
+    || bonus.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)
+      || mark < 0 || (index > 0 && mark <= steps[index - 1])))) return false;
+
+  if (rows.some(row => row.permittedMarks && (
+    t.kind !== 'fixed' || row.kind !== 'criterion' || row.marks === null
+    || row.permittedMarks.length < 2
+    || row.permittedMarks[0] !== 0
+    || row.permittedMarks.at(-1) !== row.marks
+    || row.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)
+      || mark < 0 || (index > 0 && mark <= steps[index - 1]))
+  ))) return false;
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   // The scheme never printed a split, so a row carrying its own marks is a
   // value the card invented — the tariff lives on the question alone.
@@ -1141,6 +1188,7 @@ export function tariffReconciles(card: SecCard): boolean {
     if (!r.route) common += worth(r);
     else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
   }
+  common += bonus?.marks ?? 0;
   if (!byRoute.size) return common === totalMarks;
   return [...byRoute.values()].every(n => common + n === totalMarks);
 }

@@ -1,0 +1,177 @@
+{
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "sitting": "main",
+  "component": "theory",
+  "questions": [
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
+  "validatedAt": "2026-10-07T20:22:55.422778+00:00",
+  "reviewMethod": "Same-operator source-first visual review and final separate source ledger; not independent human certification.",
+  "newTasks": 39,
+  "totalReviewed2015Tasks": 102,
+  "preservedPriorCards": 568,
+  "compiledCards": {
+    "higher": 357,
+    "ordinary": 250,
+    "total": 607
+  },
+  "droppedCards": 0,
+  "newSourceFigures": 12,
+  "newWholeQuestionRoutes": 10,
+  "total2015WholeQuestionRoutes": 27,
+  "newAtlasAssociations": 14,
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "validation": [
+    {
+      "name": "source-q1-q2",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/markbank/authoring",
+        "-p",
+        "test_construction_2015_higher_q1_q2.py"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction586/source-q1-q2.log",
+      "logSha256": "b5be8cb50c631f57b236b51f87ce453f37d7a5672a6caee2babcdb1b5c89e69e"
+    },
+    {
+      "name": "source-q3-q6",
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/construction_2015_higher_q3_q6.py"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction586/source-q3-q6.log",
+      "logSha256": "35fb86d23dde44b45843a851209eb83d4bed379a7a6f1bd0ed3d8dc7c0c1010c"
+    },
+    {
+      "name": "source-q7-q10",
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/construction_2015_higher_q7_q10.py"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction586/source-q7-q10.log",
+      "logSha256": "fbc8874fd86ebfa732917cb03bf552fc480adeb6c3d471d2b8c28a7383e191eb"
+    },
+    {
+      "name": "atlas-generation",
+      "command": [
+        "node",
+        "scripts/paper-trail/build-construction-studies-exam-topic-crosswalk.mjs"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction586/atlas-generation.log",
+      "logSha256": "1b6c35d2b4b44c583dec0ff72a603e094ad8d92ac72fed472905a888b0517ef8"
+    },
+    {
+      "name": "library-generation",
+      "command": [
+        "node",
+        "scripts/markbank/build-library-topic-index.mjs"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction586/library-generation.log",
+      "logSha256": "06a4d4a8ce689e4518d3ecf62a2958dadacc630424021b7b467b0a266061dc47"
+    },
+    {
+      "name": "deck-build",
+      "command": [
+        "node",
+        "scripts/markbank/build-deck.mjs",
+        "scripts/markbank/authored/construction-studies.json"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction586/deck-build.log",
+      "logSha256": "3a0fdff087a1f5e8cd51b23bf32fa268eab719b1e417aa34dc8522cde9464e37"
+    },
+    {
+      "name": "regression",
+      "command": [
+        "npx",
+        "vitest",
+        "run",
+        "test/markBankConstruction2015HigherReviewed.test.ts",
+        "test/constructionStudiesExamTopics.test.ts",
+        "test/markBankCardPreservation.test.ts",
+        "test/curriculumRegistry.test.ts",
+        "test/markBankDeck.test.ts",
+        "--maxWorkers=1",
+        "--testTimeout=600000"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction586/regression.log",
+      "logSha256": "07ac955bc11314f3ff149e7b5ad1ebe8696b71bd3d5fbfe9a00544dfb1c96114"
+    },
+    {
+      "name": "atlas",
+      "command": [
+        "npm",
+        "run",
+        "check:markbank-atlas",
+        "--",
+        "--maxWorkers=1",
+        "--testTimeout=600000"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction586/atlas.log",
+      "logSha256": "d3d9e778c8da34d2d9891cae13a772c93e77f0c982e02e6c2f4fc86d01269b64"
+    },
+    {
+      "name": "types-test",
+      "command": [
+        "node",
+        "--max-old-space-size=12288",
+        "node_modules/typescript/lib/tsc.js",
+        "--noEmit",
+        "-p",
+        "tsconfig.test.json"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction586/types-test.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "npx",
+        "eslint",
+        "test/markBankConstruction2015HigherReviewed.test.ts",
+        "test/constructionStudiesExamTopics.test.ts",
+        "test/markBankCardPreservation.test.ts",
+        "test/fixtures/construction2015Reviewed.ts"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction586/lint.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "regressionTests": 226,
+  "atlasTests": 274,
+  "scopedCensus": {
+    "printedAsks": 27,
+    "covered": 27,
+    "open": 0,
+    "orphans": 0,
+    "unparsed": 0
+  },
+  "finalSourceAudit": "docs/markbank-audit/2026-09-28/construction-2015-higher-theory-final-source-audit.json",
+  "open": [
+    "2015Ordinary theory,practical component andIrish editions.",
+    "All other Construction papers and remaining in-scope subjects."
+  ],
+  "publication": "Local only; no commit, push, deploy or preservation-baseline reset."
+}
