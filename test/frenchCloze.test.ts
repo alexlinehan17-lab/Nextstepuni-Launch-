@@ -9,6 +9,7 @@ import { paperRegionFor } from '../components/PaperTrail/paperRegion';
 import { frenchMarks } from '../components/MarkBank/frenchRubric';
 
 const answers: Record<number, string[]> = {
+  2011: ['tout', 'malade', 'trois', 'pas', 'suis', 'mon', 'banque', 'aller', 'très', 'bonjour'],
   2012: ['musique', 'pas', 'dit', 'boulot', 'magasin', 'argent', 'est', 'samedi', 'à', 'tes'],
   2013: ['avec', 'grande', 'demandé', 'jouer', 'membre', 'deux', 'romans', 'librairie', 'poche', 'aimes'],
   2014: ['répondu', 'suis', 'bac', 'pas', 'professeurs', 'difficile', 'beaucoup', 'examens', 'robes', 'venir'],
@@ -27,8 +28,8 @@ const answers: Record<number, string[]> = {
 };
 
 describe('French gap-level practice', () => {
-  it('retains all 150 separately priced gaps and the source word banks', () => {
-    expect(cards).toHaveLength(150);
+  it('retains all 160 separately priced gaps and the source word banks', () => {
+    expect(cards).toHaveLength(160);
     for (const [year, expected] of Object.entries(answers)) {
       const group = cards.filter(card => card.year === Number(year));
       expect(group).toHaveLength(10);
@@ -71,12 +72,19 @@ describe('French gap-level practice', () => {
 
   it('lifts the 2012 capital-letter exception for samedi into every 2012 gap', () => {
     for (const card of cards.filter(card => card.year === 2012)) {
-      expect(card.rubric.answerGuide![1]).toBe('Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi).');
+      expect(card.rubric.answerGuide!.at(-1)).toBe('Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi).');
       expect(card.schemeRegion?.p).toBe(9);
     }
     for (const card of cards.filter(card => card.year !== 2012)) {
-      expect(card.rubric.answerGuide![1]).toBe('Careless transcription, including accents, deduct 1 mark. Accept capital letters.');
+      expect(card.rubric.answerGuide!.at(-1)).toBe('Careless transcription, including accents, deduct 1 mark. Accept capital letters.');
     }
+  });
+
+  it('carries the 2011 gap-9 condition printed under the answer list on that gap only', () => {
+    const note = 'N.B. Gap 9: accept « tout » for 3 marks if not already accepted in Gap 1.';
+    const group = cards.filter(card => card.year === 2011);
+    expect(group.filter(card => card.rubric.answerGuide!.includes(note)).map(card => card.id)).toEqual(['fr-2011-ol-cloze-b1a-gap-9']);
+    expect(group.find(card => card.id === 'fr-2011-ol-cloze-b1a-gap-9')!.rubric.answerGuide![0]).toBe('Gap 9: très — 3 marks.');
   });
 
   it('uses the verified completed-letter answer when the 2022 answer list is blank', () => {

@@ -1,5 +1,206 @@
 [
   {
+    "year": 2011,
+    "hlGridPage": 16,
+    "hlSchemePageOffset": -2,
+    "hlCriteriaMax": [
+      20,
+      15
+    ],
+    "hlNoLayoutQuestion": 2,
+    "hlNoLayoutNote": "Q. 2 (a) and (b) No particular layout required.",
+    "hlPassageRefs": {
+      "B1A": 1,
+      "B1B": 2
+    },
+    "illustrationTasks": [
+      "B3A",
+      "B4B"
+    ],
+    "hlTiledPages": [
+      10,
+      12
+    ],
+    "hlWordCountLines": {
+      "B2B": "(about 75 words)"
+    },
+    "hlPromptParagraphs": {
+      "B2B": [
+        "Your Belgian friend, Astrid, wants to visit Ireland in October, and has asked your advice. Write an e-mail in French to her, in which you make the following points:",
+        "- You think it’s a great idea as there will be fewer tourists at that time of year;",
+        "- Say you have a spare room and invite her to stay with you for a few days;",
+        "- Suggest a particular tourist spot she should visit, and say why;",
+        "- Ask her if she is interested in going for long walks in the west of Ireland during her stay;",
+        "- Tell her that it was very wet in Ireland last autumn, so she should bring a raincoat."
+      ],
+      "B3A": [
+        "« Trop boire, c’est le cauchemar ! »",
+        "C’est le slogan d’une campagne de prévention à destination des jeunes lancée par la Ville de Paris pour lutter contre le \"binge-drinking\", une manière de consommer l’alcool surtout pratiquée par les jeunes. C’est généralement la consommation en une seule occasion de 5 verres ou plus pour les hommes et de 4 verres ou plus pour les femmes.",
+        "Donnez vos réactions."
+      ],
+      "B3B": [
+        "L’arbitrage dans le sport",
+        "« Il faut toujours accepter les décisions d’un arbitre, même s’il fait une erreur. Il mérite le respect des joueurs et des supporters, car il a un rôle difficile. »",
+        "Guillaume, 20 ans",
+        "« Les erreurs d’arbitrage sont trop nombreuses. Moi, j’ai perdu un match important la semaine dernière à cause de l’arbitre ! À mon avis, il est temps d’introduire l’arbitrage vidéo. »",
+        "Nadine, 19 ans",
+        "Donnez vos réactions."
+      ],
+      "B4A": [
+        "Selon une étude récente, seuls 21 % des jeunes Français considèrent que la religion joue un rôle important dans leur vie.",
+        "Croyez-vous qu'en Irlande, comme en France, la religion est devenue moins importante dans la vie des jeunes ?"
+      ],
+      "B4B": [
+        "Que pensez-vous des réseaux sociaux, par exemple Facebook ou Twitter ?"
+      ]
+    },
+    "hlSelectionNote": "Eight independently priced 40/30-mark alternatives. Q1(a) and Q1(b) are open opinion prompts on their Section I passages. Q2(b) is printed in Irish and English; the English rendering is used and all five e-mail points are required. Q3(a), Q3(b) and Q4(b) reactions and Q4(a) opinion are open scope; the Q3(a) photograph and Q4(b) social-network logos are retained in the illustration viewer. Pages 10 and 12 repeat glyphs across clipping tiles; their prompts are verified against the glyph-coordinate reconstruction. All four form sentences and all three Ordinary writing points are required.",
+    "languageBottom": null,
+    "olLanguagePage": 10,
+    "formPage": 11,
+    "formSchemePage": 9,
+    "formChoose": 4,
+    "formInstruction": "N.B. Répondez à 6, 7, 8 & 9 par des phrases complètes.",
+    "form_stem": "Vous vous appelez David / Susan O’Donoghue. Vous voudriez travailler pendant l’été comme jeune fille ou garçon au pair pour une famille française. Remplissez le formulaire suivant.",
+    "fields": [
+      "Nom",
+      "Prénom",
+      "Âge",
+      "Lieu de naissance",
+      "Nombre d’années d’étude de français"
+    ],
+    "answers": [
+      "Surname – accept any reasonable name",
+      "Christian Name – accept any reasonable name",
+      "Age – accept any appropriate age (“ans” needed for full marks)",
+      "Any appropriate place acceptable",
+      "Accept any appropriate number"
+    ],
+    "form_questions": [
+      "Quelles sont vos qualités ?",
+      "Décrivez la ville / région où vous habitez.",
+      "Pourquoi désirez-vous travailler pour une famille française ?",
+      "Comment voyagerez-vous en France ?"
+    ],
+    "formQuestionNotes": {
+      "6": "Two or more qualities required for full marks"
+    },
+    "olCommunicationNote": "N.B. Correct tense required for full marks in Communication.",
+    "letterIdentity": "You are Richard / Ruth O’Riordan, Main Street, Roscrea, Co Tipperary.",
+    "diaryInstruction": "Note the following in your diary:",
+    "pools": [
+      [
+        "B2A",
+        12,
+        11,
+        "Leave the following message for your penpal Loïc / Nadine with whom you are staying in Biarritz:",
+        [
+          "You have gone out this afternoon because the weather is fine.",
+          "You are going to the library to return two books.",
+          "You will be back home at six o’clock."
+        ],
+        [
+          "You have gone out this afternoon / because the weather is fine.",
+          "You are going to the library / to return two books.",
+          "You will be back home / at six o’clock."
+        ]
+      ],
+      [
+        "B2B",
+        12,
+        12,
+        "You are on holidays in France. Write a postcard to your friend Marc / Chloé in which you say that:",
+        [
+          "You are spending two weeks in Lyon with your brother.",
+          "Yesterday, you went to see the stadium near the hotel.",
+          "You will go to the city centre on Friday to visit the museum."
+        ],
+        [
+          "You are spending two weeks in Lyon / with your brother.",
+          "Yesterday, you went to see the stadium / near the hotel.",
+          "You will go to the city centre on Friday / to visit the museum."
+        ]
+      ],
+      [
+        "B3A",
+        14,
+        13,
+        "You have just returned from a match.",
+        [
+          "You are very happy after the great match.",
+          "The atmosphere was fantastic and your team won.",
+          "You hope to go to the beach with your cousin Martin on Sunday."
+        ],
+        [
+          "You are very happy / after the great match.",
+          "The atmosphere was fantastic / and your team won.",
+          "You hope to go the beach / with your cousin Martin on Sunday."
+        ]
+      ],
+      [
+        "B3B",
+        14,
+        14,
+        "Write a formal letter to Madame la Gérante, Galeries Lafayette, 2 rue de la Marne, 44000 Nantes. In the letter say that:",
+        [
+          "You would like to apply for the job of sales assistant.",
+          "You have already worked in a shop in your village.",
+          "You will be able to start work after the 22nd June."
+        ],
+        [
+          "You would like to apply / for the job of sales assistant.",
+          "You have already worked in a shop / in your village.",
+          "You will be able to start work / after the 22nd June."
+        ]
+      ]
+    ],
+    "formatSchemePage": 17,
+    "formatSchemePages": [
+      17,
+      18
+    ],
+    "formatNotes": {
+      "top": [
+        "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
+        "City / town / village & date (Roscrea, le 15 juin 2011) in top right corner or underneath.",
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
+      ],
+      "close": [
+        "Formal ending required.",
+        "Treat one or more incorrect accents in closing formula as one mistake."
+      ],
+      "deductions": [
+        "1 mistake - ignore.",
+        "2 mistakes - deduct 1 mark.",
+        "3 mistakes - deduct 2 marks.",
+        "More than 3 mistakes - award 0.",
+        "If candidate has general layout of Top of Page correct, despite numerous mistakes - award one mark."
+      ]
+    },
+    "olTaskLanguageOmit": {
+      "B2A": {
+        "page": 11,
+        "descriptors": [
+          "some sense of register"
+        ]
+      },
+      "B2B": {
+        "page": 11,
+        "descriptors": [
+          "some sense of register"
+        ]
+      },
+      "B3A": {
+        "page": 11,
+        "descriptors": [
+          "some sense of register"
+        ]
+      }
+    },
+    "taskSourceNotes": {}
+  },
+  {
     "year": 2012,
     "hlGridPage": 14,
     "hlSchemePageOffset": -2,

@@ -14,6 +14,7 @@ import fitz
 from fr_paper import FrPaper
 from fr_selection import verify_paper
 from fr_reviewed_tasks import write_tasks
+from fr_pdf_words import fragmented_words
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / 'components/MarkBank/cards/french/writing.json'
@@ -44,6 +45,13 @@ def assert_exact(text, doc, pages, left=None):
         if compact(text) in compact(pg.get_text(clip=clip)):
             return
     raise AssertionError(('not printed verbatim', pages, text))
+
+
+def tiled_text(page):
+    """A tiled page's words rebuilt from glyph coordinates (2011 Higher pp.10, 12
+    repeat boundary glyphs across clipping tiles, so the raw text layer reads
+    "Tro p boire, c’e est le cauch hemar")."""
+    return ' '.join(word[4] for word in fragmented_words(page))
 
 
 def lift(descriptors, doc, page):
@@ -116,16 +124,17 @@ OL_LANGUAGE = [
 
 # Each Ordinary Level message/postcard/diary/letter prints its own communication
 # tariff as an underlined heading on its scheme page. Lift it verbatim, never a
-# shared paraphrase: 2012–2021 print "Two points" on all four tasks; 2022–2026
+# shared paraphrase: 2011–2021 print "Two points" on all four tasks; 2022–2026
 # print "Two parts" for B2A/B2B and "Two points" for B3A/B3B. Entries are
 # (scheme PDF page, exact printed line); every line was checked against the
 # rendered scheme page (2015–2026 on 11 October 2026; 2014 and 2013 on 11 October
-# 2026 from their own scheme pages 12–15, 2012 from pages 11–14). A year without
-# an entry fails.
+# 2026 from their own scheme pages 12–15, 2012 and 2011 from pages 11–14). A
+# year without an entry fails.
 POINTS_5 = 'Two points required for 5 marks (3 + 2)'
 PARTS_5 = 'Two parts required for 5 marks (3 + 2)'
 POINTS_4 = 'Two points required for 4 marks (2 + 2)'
 OL_POINT_TARIFFS = {
+    2011: {'B2A': (11, POINTS_5), 'B2B': (12, POINTS_5), 'B3A': (13, POINTS_5), 'B3B': (14, POINTS_4)},
     2012: {'B2A': (11, POINTS_5), 'B2B': (12, POINTS_5), 'B3A': (13, POINTS_5), 'B3B': (14, POINTS_4)},
     2013: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
     2014: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
@@ -255,7 +264,16 @@ def build_year(config):
                   15: [(11, 15), (6, 10), (0, 5)],
                   12: [(9, 12), (5, 8), (0, 4)]}[maximum]
         override = config.get('hlPromptParagraphs', {}).get(parent)
-        if override:
+        tiled = page in config.get('hlTiledPages', [])
+        if tiled:
+            # Never trust the raw layer of a tiled page: every paragraph must
+            # be verified against the glyph-coordinate reconstruction.
+            assert override, (YEAR, parent, 'a tiled page needs verified paragraphs')
+            rebuilt = compact(tiled_text(hl_doc[page - 1]))
+            for paragraph in override:
+                assert compact(paragraph) in rebuilt, (YEAR, parent, paragraph)
+            prompt = '\n\n'.join(override)
+        elif override:
             for paragraph in override:
                 assert_on_page(paragraph, hl_doc, page)
             prompt = '\n\n'.join(override)
@@ -271,7 +289,10 @@ def build_year(config):
         # The paper's own word-count line: a task printed in English (2013,
         # 2016, 2018, 2020 Q2(b)) ends "(about 75 words)", not the French line.
         count_line = config.get('hlWordCountLines', {}).get(parent, f'({word_count} mots environ)')
-        assert_exact(count_line, hl_doc, [page])
+        if tiled:
+            assert compact(count_line) in rebuilt, (YEAR, parent, count_line)
+        else:
+            assert_exact(count_line, hl_doc, [page])
         prompt += '\n' + count_line
         criteria = [criterion('communication', 'Communication', maximum, [], bands(ranges, hl_communication)),
                     criterion('language', 'Language', maximum, [], bands(ranges, hl_language))]
