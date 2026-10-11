@@ -754,14 +754,29 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
   .update(cards.map((card) => card.id).sort().join('\n'))
   .digest('hex');
 
-const recoveredConstructionIds = new Set([...CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS]);
+// Keep the original Construction count/hash frozen. Source-reviewed additions
+// have their own paper/tariff/route audit (scripts/markbank/authoring/
+// construction_*.py); never rebaseline missing IDs.
+const constructionAdditionIds = new Set([...CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS]);
+const frozenCards = (name: string, cards: readonly { id: string }[]) =>
+  name.startsWith('construction-studies:') ? cards.filter(card => !constructionAdditionIds.has(card.id)) : cards;
 
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    const previous = cards.filter(card => !recoveredConstructionIds.has(card.id));
-    expect(previous.length, `${name}: previous card count changed`).toBe(count);
+    const preserved = frozenCards(name, cards);
+    expect(preserved.length, `${name}: frozen card count changed`).toBe(count);
     expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
-    expect(identityHash(previous), `${name}: a card ID was removed or replaced`).toBe(hash);
+    expect(identityHash(preserved), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it('adds exactly the reviewed Construction tasks to the frozen pre-audit set', () => {
+    // Frozen pre-audit Construction set: 255 Higher + 250 Ordinary, counted and
+    // hashed above. Every source-reviewed task is an explicit addition on top.
+    const live = [...CONS_HIGHER, ...CONS_ORDINARY];
+    const liveIds = new Set(live.map(card => card.id));
+    for (const id of constructionAdditionIds) expect(liveIds.has(id), `missing reviewed addition ${id}`).toBe(true);
+    expect(live.filter(card => !constructionAdditionIds.has(card.id))).toHaveLength(255 + 250);
+    expect(live).toHaveLength(255 + 250 + constructionAdditionIds.size);
   });
 
   it('protects the complete current bank', () => {
@@ -772,7 +787,7 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328 + recoveredConstructionIds.size);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328 + constructionAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -830,7 +845,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
-      .reduce((total, [, cards]) => total + cards.filter(card => !recoveredConstructionIds.has(card.id)).length, 0);
+      .reduce((total, [, cards]) => total + cards.filter(card => !constructionAdditionIds.has(card.id)).length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 
