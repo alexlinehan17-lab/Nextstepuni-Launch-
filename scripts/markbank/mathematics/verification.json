@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher Level Papers 1 and 2, 2026 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1510,
-  "reviewedTasks": 839,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher Level Papers 1 and 2, 2026 Ordinary Level Papers 1 and 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1555,
+  "reviewedTasks": 884,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 205,
+  "targetedRegressionTests": 265,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -349,5 +349,26 @@
     },
     "pageErrors": [],
     "sharedReaderDefect": "After Next reaches the last source page the Next button disables and focus can drop to <body>; Escape then does not close the dialog until focus is back inside it. Observed in SourceMaterialReader (shared component), not fixed here."
+  },
+  "ordinary2026p2": {
+    "paper": "2026 Ordinary Level Paper 2",
+    "paperFileid": "LC003GLP200EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-11",
+    "independentlyReviewedTasks": 45,
+    "targetedRegressionTests": 265,
+    "previousRuntimeIdsRetained": 1510,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 22,
+    "runtimeIdsSha256": "e8385d9b38564d913911ba9001cf1ce48678c4dc6d92b8008cd48891da600b57",
+    "regressionWorkers": 1,
+    "measurementRequiredTasks": [
+      "maths-2026-ol-p2-q6-a-i",
+      "maths-2026-ol-p2-q6-a-ii-iii"
+    ],
+    "coverageBaseline": "1121/3474 asks covered, 0 orphans, 0 excluded, 2353 open",
+    "validation": "Deck generation (1,555 built, the same 13 historical rejects), Atlas generation and --check (226 placements), audit --check-reviewed, nine regression files (265/265, including coverage, accessibility and StudyClix placement tests), typecheck and diff whitespace check passed."
   }
 }

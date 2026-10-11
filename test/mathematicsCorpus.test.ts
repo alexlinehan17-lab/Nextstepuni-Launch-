@@ -27,6 +27,7 @@ import paper2 from '../scripts/markbank/mathematics/reviews/2025-higher-p2.json'
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
+import ordinary2026p2 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p2.json';
 
 describe('Mathematics booklet identities', () => {
   const question = {
@@ -462,6 +463,7 @@ describe.each([
   { level: 'higher' as const, number: 1, count: 42, review: higher2026p1 },
   { level: 'higher' as const, number: 2, count: 41, review: higher2026p2 },
   { level: 'ordinary' as const, number: 1, count: 42, review: ordinary2026p1 },
+  { level: 'ordinary' as const, number: 2, count: 45, review: ordinary2026p2 },
 ])('2026 $level Mathematics Paper $number independent source review', ({ level, number, count, review: census }) => {
   const deck = { higher: HIGHER, ordinary: ORDINARY }[level];
   const cards = deck.filter(card => card.year === 2026 && card.sourceMaterial?.sourceFileid === census.paperFileid);
@@ -549,4 +551,16 @@ it('keeps the 2026 Ordinary Paper 1 cross-letter inequality scale and Ordinary b
     expect(card(suffix).questionText, suffix).toContain(last);
   }
   expect(card('q7-a-i-ii').stem).not.toContain('20:30');
+});
+
+it('keeps the 2026 Ordinary Paper 2 bands, measurement ruler and all-or-nothing unit', () => {
+  const card = (suffix: string) => ORDINARY.find(candidate => candidate.id === `maths-2026-ol-p2-${suffix}`)!;
+  const scale = (suffix: string) => { const c = card(suffix); return 'mathematicsScale' in c && c.mathematicsScale?.marks; };
+  expect(scale('q3-a-i-ii')).toEqual([0, 4, 8, 12, 15]);
+  expect(scale('q5-a-i')).toEqual([0, 5, 10, 15]);
+  expect(scale('q6-a-i')).toEqual([0, 5, 10]);
+  expect(scale('q6-b-i')).toEqual([0, 5]);
+  for (const suffix of ['q6-a-i', 'q6-a-ii-iii']) expect(card(suffix).sourceMaterial?.measurementRequired, suffix).toBe(true);
+  expect(card('q9-c-iii').stem).toContain('350 of the 540');
+  expect(card('q10-b-iii').sourceMaterial?.pages).toEqual([27, 28]);
 });

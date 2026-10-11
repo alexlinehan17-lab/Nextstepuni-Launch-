@@ -59718,5 +59718,1626 @@
    }
   ],
   "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q1-a-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q1-a-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q1(a)(i)",
+  "stem": "The diagram below shows the line l: 2x + 3y − 18 = 0.",
+  "questionText": "l cuts the y-axis at the point P. Show that the point P is (0, 6).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q1-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "2(0) + 3(6) − 18 = 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q1-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Point fully substituted into equation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q1-a-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q1-a-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q1(a)(ii)",
+  "stem": "The diagram below shows the line l: 2x + 3y − 18 = 0. l cuts the y-axis at the point P (0, 6).",
+  "questionText": "The line l cuts the x-axis at the point (9, 0). Find the area of the triangle, in units², made between the x-axis, the y-axis, and the line l.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q1-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q1-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, relevant formula or relevant work on the diagram",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q1-b-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q1-b-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q1(b)(i)",
+  "stem": "The diagram below shows the line l: 2x + 3y − 18 = 0.",
+  "questionText": "Find the slope of the line l: 2x + 3y − 18 = 0",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q1-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Accept correct answer without work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q1-b-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q1-b-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q1(b)(ii)",
+  "stem": "The diagram below shows the line l: 2x + 3y − 18 = 0.",
+  "questionText": "The line k passes through the points A(4, −2) and B(r, 7) and is perpendicular to the line l, where r ∈ ℤ. Work out the value of r.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q1-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "r = 10",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q1-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Perpendicular slope found from (b)(i)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q1-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Slope formula fully substituted in terms of r",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q1-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "r found using a translation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q2-a-i",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-q2-a-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q2(a)(i)",
+  "stem": "Eight schools (A, B, C, D, W, X, Y, and Z) are competing in a chess tournament. The schools are divided into two groups, as shown in the table below: Group 1 is A, B, C and D; Group 2 is W, X, Y and Z. At the beginning of the tournament, each school has an equal chance of winning its group. The winner of group 1 will play the winner of group 2 in the final.",
+  "questionText": "Complete the table below to show all possible pairings for the final. Some have already been completed for you. For example, AW means that school A and school W play in the final. The table already shows AW, AX, BZ, DX and DZ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q2-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "1 correct entry",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q2-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "7 correct entries",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q2-a-ii-iii",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q2-a-ii-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q2(a)(ii), Q2(a)(iii)",
+  "stem": "Eight schools (A, B, C, D, W, X, Y, and Z) are competing in a chess tournament. The schools are divided into two groups, as shown in the table below: Group 1 is A, B, C and D; Group 2 is W, X, Y and Z. At the beginning of the tournament, each school has an equal chance of winning its group. The winner of group 1 will play the winner of group 2 in the final.",
+  "questionText": "(ii) Write down the probability that School B plays in the final. (iii) School D withdraws before the tournament begins. The groups remain the same but without school D. Each remaining school in Group 1 still has an equal chance of winning that group. Work out the probability that school B or school Z, but not both, now play in the final.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q2-a-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, correct numerator or denominator in either part or relevant work on the table",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q2-a-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q2-b-i",
+  "topicId": "maths-1-2",
+  "conceptId": "p2-q2-b-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q2(b)(i)",
+  "stem": "Erika and Peter play against each other in a different chess tournament. The probability that Erika wins a game is 0·6 and this remains the same each time they play. There are no draws.",
+  "questionText": "Write down the probability that Peter wins a game.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q2-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "1 − 0·6 = 0·4",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q2-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Use of 1",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q2-b-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q2-b-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q2(b)(ii)",
+  "stem": "Erika and Peter play against each other in a different chess tournament. The probability that Erika wins a game is 0·6 and this remains the same each time they play. There are no draws.",
+  "questionText": "The first player who wins two games wins the match. For example, Erika could win the match by winning the first game, losing the second game, and winning the third game. Work out the probability that Erika wins the match.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q2-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "EE or EPE or PEE",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q2-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "0·36 + 0·144 + 0·144",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q2-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Probability of two outcomes correctly formulated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q3-a-i-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-q3-a-i-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q3(a)(i), Q3(a)(ii)",
+  "stem": "Tara is going on a school trip. She must choose one activity from each of three categories shown below. Category 1: Zipline, Kayaking, Archery, Rock Climbing, Paddle-Boarding. Category 2: Pottery, Painting, Drama, Animation, Singing, Crochet. Category 3: Pizza-Making, Baking, Smoothie-Bar, BBQ.",
+  "questionText": "(i) Find how many different choices are possible if Tara chooses one activity from each of the three categories. (ii) The organisers need to remove one activity from one of the categories. From which category should they remove an activity if they want to keep the greatest number of possible choices? Use calculations to support your answer. Tick one box only: Category 1, Category 2 or Category 3.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q3-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "5 × 6 × 4 = 120",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q3-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Category 2 box ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q3-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Category 2: 5 × 5 × 4 = 100",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q3-b-i",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-q3-b-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q3(b)(i)",
+  "stem": "Tara is sitting her fifth-year summer exams. She will have exams in 7 subjects which can be arranged in any order on the timetable.",
+  "questionText": "In how many ways could the order of the 7 exams be arranged?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q3-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "7! = 5040",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q3-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, relevant multiplication to 7 or relevant setup",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q3-b-ii-iii",
+  "topicId": "maths-1-1",
+  "conceptId": "p2-q3-b-ii-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q3(b)(ii), Q3(b)(iii)",
+  "stem": "Tara is sitting her fifth-year summer exams. She will have exams in 7 subjects which can be arranged in any order on the timetable. Tara will have 3 exams on Monday.",
+  "questionText": "(ii) How many arrangements of 3 different exams can be made from the 7 exams? (iii) It is decided that Maths will be the first subject examined on Monday. How many arrangements can now be made for the remaining exams on Monday?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q3-b-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "7 × 6 × 5 = 210",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q3-b-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "6 × 5 = 30",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q3-b-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q4-a-i",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q4-a-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q4(a)(i)",
+  "stem": "The diagram below shows an isosceles triangle with the base extended. Some measurements are given: the two equal sides are 12 cm and the angle between them is 44°.",
+  "questionText": "Find the size of the angle marked A and the size of the angle marked B.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q4-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "180 − 44 = 136",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q4-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "B = 44 + 68 = 112[°]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q4-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "One angle correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q4-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q4-a-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q4(a)(ii)",
+  "stem": "The diagram below shows an isosceles triangle with the base extended. Some measurements are given: the two equal sides are 12 cm and the angle between them is 44°.",
+  "questionText": "Find the area of the triangle. Give your answer correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q4-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q4-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * for no units",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q4-b",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q4-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q4(b)",
+  "questionText": "A triangle PQR has the measurements: |PR| = 12 cm, |PQ| = 9 cm, |QR| = 10 cm. Use the cosine rule to work out the size of the angle ∠QPR. Give your answer correct to the nearest degree. Hint: It may be useful to draw a diagram.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "θ ≈ 55[°]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Diagram fully labelled correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q5-a-i",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q5-a-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q5(a)(i)",
+  "stem": "7 friends at a match guessed in which minute the first goal would be scored. The guesses were: 8, 11, 15, 17, 20, 20, 23.",
+  "questionText": "Write down the mode of the 7 numbers and find the range of the 7 numbers.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Mode: 20",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Range: 15 [mins] (23 − 8)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q5-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Mode or range correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q5-a-ii-iii",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q5-a-ii-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q5(a)(ii), Q5(a)(iii)",
+  "stem": "7 friends at a match guessed in which minute the first goal would be scored. The guesses were: 8, 11, 15, 17, 20, 20, 23.",
+  "questionText": "(ii) Write down the median of the 7 numbers. (iii) Seán joined these 7 friends just before the match started and also guessed in which minute the first goal would be scored. The new median, including Seán’s guess, is now 16. Which of the following must be true about Seán’s guess? Justify your answer. It may be helpful to try some values for Seán’s guess. Seán’s guess must be (tick one box only): Equal to 16; Less than or equal to 15; More than or equal to 17.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q5-a-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Median: 17 [minutes]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q5-a-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Less than or equal to 15 box ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q5-a-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Work of merit in (iii), for example, correct box ticked or a value trialled",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q5-b",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q5-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q5(b)",
+  "questionText": "A board game has a spinner. A player either wins or loses points depending on which sector the spinner lands on. The size of some of the angles of the sectors and the number of points won or lost for each sector are shown in the diagram below: the diagram gives the angles 60° and 120° and labels the sectors Win X points, Win 19 points and Lose 20 points. In one sector a player wins X points. Work out the value of X, so that the spinner is fair, that is, so that the expected value of the number of points won is equal to 0 points.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "x = 22",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "One correct term",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Two correct terms",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q6-a-i",
+  "topicId": "maths-2-4",
+  "conceptId": "p2-q6-a-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q6(a)(i)",
+  "stem": "The rectangle EFGH is an enlargement of the rectangle ABCD, as shown in the diagram below. The points A and B lie on [EF] as shown.",
+  "questionText": "Measure the length of [AB] and the length of [EF], in cm.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q6-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "10 [cm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q6-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "One correct measurement",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q6-a-ii-iii",
+  "topicId": "maths-2-4",
+  "conceptId": "p2-q6-a-ii-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q6(a)(ii), Q6(a)(iii)",
+  "stem": "The rectangle EFGH is an enlargement of the rectangle ABCD, as shown in the diagram below. The points A and B lie on [EF] as shown. Part (a)(i) asks you to measure the length of [AB] and the length of [EF], in cm.",
+  "questionText": "(ii) Use your answers to (a)(i) to work out the scale factor of the enlargement. (iii) Construct the centre of enlargement on the diagram above, and label it K.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q6-a-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Apply a * for not labelling K",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q6-a-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit in (ii), for example, relevant work towards the construction of the centre of enlargement",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q6-b-i",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q6-b-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q6(b)(i)",
+  "stem": "The point O is the centre of the circle u, and also the centre of the circle t. The points P and Q are on the circle u, and the points S and R are on the circle t. S ∈ [OP] and R ∈ [OQ]. |∠QOP| = 120°.",
+  "questionText": "Explain why |OP| = |OQ|.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q6-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "are both radii of the circle u",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q6-b-ii",
+  "topicId": "maths-2-1",
+  "conceptId": "p2-q6-b-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 2 Q6(b)(ii)",
+  "stem": "The point O is the centre of the circle u, and also the centre of the circle t. The points P and Q are on the circle u, and the points S and R are on the circle t. S ∈ [OP] and R ∈ [OQ]. |∠QOP| = 120°.",
+  "questionText": "Show that the triangles OPQ and OSR are similar. Give a reason for each statement that you make, where relevant.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q6-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Common angle",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q6-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Both triangles are isosceles",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q6-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "A second angle is equal, (30° or similar explanation given",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q7-a-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q7-a-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q7(a)(i)",
+  "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram. One of the circles, c, has equation x² + y² = 72.",
+  "questionText": "Write down the centre and radius of the circle c. Give the radius in surd form.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Centre: (0, 0)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q7-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Radius: √72",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q7-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * for radius in incorrect form",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q7-a-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q7-a-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q7(a)(ii)",
+  "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram. One of the circles, c, has equation x² + y² = 72.",
+  "questionText": "In the game, the player must move their character so they avoid the circles of light. Tony’s character is at the point (−4, 9). Investigate if the point (−4, 9) is inside or outside the circle c. Use calculations to support your answer. Tick one box only: inside c; outside c.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "97 > 72",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q7-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Outside c",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q7-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Point substituted correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q7-b-i",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q7-b-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q7(b)(i)",
+  "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram. One of the circles, c, has equation x² + y² = 72.",
+  "questionText": "First, Tony moves his character from the point A(−4, 9) to the point B(0, 12). Find the equation of the line containing the points A and B. Give your answer in the form ax + by + c = 0.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q7-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "3x − 4y + 48 = 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q7-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Slope substituted into line formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q7-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Point substituted into line formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q7-b-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q7-b-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q7(b)(ii)",
+  "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram. One of the circles, c, has equation x² + y² = 72.",
+  "questionText": "Next, Tony moves his character along a line l. He does not want his character to enter the circle c, where: l: x + y = 12; c: x² + y² = 72. Using simultaneous equations, or otherwise, show that the line l is a tangent to the circle c.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q7-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "(y − 6)² = 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q7-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Equation in terms of one variable",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q7-c-i-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q7-c-i-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q7(c)(i), Q7(c)(ii)",
+  "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram. Another light creates the circle s, with centre (5, −10) and radius 10.",
+  "questionText": "(i) Construct the circle s on the co-ordinate diagram on the right. (ii) Write down the equation of the circle s.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q7-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "(x − 5)² + (y + 10)² = 10²",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q7-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q7-d",
+  "topicId": "maths-2-2",
+  "conceptId": "p2-q7-d",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q7(d)",
+  "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram.",
+  "questionText": "Two more lights create the circles t and u, each with radius 10. t and u are shown on the co-ordinate diagram on the right. Tony wants to move his character along a horizontal line between the circle t and the circle u, without touching either circle. Write down the equation of one such horizontal line.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "y = k, where 10 < k < 15",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q7-d-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, relevant formula or relevant work on diagram",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q8-a-i",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q8-a-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q8(a)(i)",
+  "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The diagram below shows the camp for each team. Both camps are in the shape of right-angled triangles. Some measurements are also shown: |PS| = 25 m, |PQ| = 60 m and |SR| = 45 m, with right angles at P and R.",
+  "questionText": "A fence runs along the line SQ to separate the two camps. Use the theorem of Pythagoras to show that |SQ| = 65 m.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q8-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "25² + 60² = 65²",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q8-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q8-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q8-a-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q8(a)(ii)",
+  "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The diagram below shows the camp for each team. Both camps are in the shape of right-angled triangles. Some measurements are also shown: |PS| = 25 m, |PQ| = 60 m and |SR| = 45 m, with right angles at P and R. |SQ| = 65 m.",
+  "questionText": "Find the size of the angle marked θ in the diagram, that is, find |∠SQR|. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q8-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "θ = 43·8[°]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q8-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * for no or incorrect rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q8-b",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q8-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q8(b)",
+  "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The teams must complete tasks.",
+  "questionText": "One task is to approximate the area of the island. A contestant uses a map and measures the width of the island at 0·5 km intervals. These widths are given in the diagram below (1·2 km, 1·5 km, 1·3 km, 0·9 km and 0·8 km). Use the trapezoidal rule to estimate the area of the island, in km².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "= 2·85 [km²]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q8-b-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q8-b-solution-3",
+    "kind": "point",
+    "verbatim": "Some correct substitution",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q8-c",
+  "topicId": "maths-2-3",
+  "conceptId": "p2-q8-c",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q8(c)",
+  "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The teams must complete tasks.",
+  "questionText": "Another task is to row a boat from the point W to the point X, and then to the point Y. As shown in the diagram below: XY is perpendicular to AB, |∠AXW| = 42°, |∠XYW| = 65°, and |WX| = 122 m. Work out the distance from X to Y. Give your answer correct to the nearest metre.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q8-c-solution-1",
+    "kind": "point",
+    "verbatim": "= 124 [m]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q8-c-solution-2",
+    "kind": "point",
+    "verbatim": "Sine rule formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q8-d-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q8-d-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q8(d)(i)",
+  "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The teams must complete tasks. The final task involves contestants building a fence around a piece of land. The piece of land is in the shape of a sector with an angle of 225° and a radius of 50 m, as shown in the diagram on the right.",
+  "questionText": "The team must build a fence all around the perimeter of the sector. Work out the total length of the perimeter of the sector. Give your answer correct to the nearest metre.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q8-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "= 296 [m]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q8-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Length of arc found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q8-d-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q8-d-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q8(d)(ii)",
+  "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The teams must complete tasks. The final task involves contestants building a fence around a piece of land. The piece of land is in the shape of a sector with an angle of 225° and a radius of 50 m, as shown in the diagram on the right.",
+  "questionText": "The following year, the area of the sector is doubled. This is done by increasing the radius. The angle of the sector remains 225°. Work out the length of the new radius of the sector. Give your answer in metres, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q8-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "r = 70·7 [m]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q8-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Correct equation formed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q9-a-i",
+  "topicId": "maths-1-6",
+  "conceptId": "p2-q9-a-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q9(a)(i)",
+  "stem": "Noreen went to a music festival. Noreen counted the number of songs each of 10 bands played during their particular set. The results are shown in the table below: 10, 5, 10, 11, 10, 12, 9, 10, 12, 13.",
+  "questionText": "Work out the mean and standard deviation of the 10 numbers in the table above. Give each answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Mean: 10·2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q9-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Standard Deviation: 2·088 … = 2·1",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q9-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "One correct answer",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q9-a-ii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q9-a-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q9(a)(ii)",
+  "stem": "Noreen went to a music festival. Noreen counted the number of songs each of 10 bands played during their particular set. The results are shown in the table below: 10, 5, 10, 11, 10, 12, 9, 10, 12, 13.",
+  "questionText": "One band played 5 songs. Is this an outlier for the data in the table above? Refer to a measure of variability to explain your choice. Tick one box only: 5 is an outlier; 5 is not an outlier.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q9-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "5 is an outlier",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q9-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "It is more than 2 standard deviations below the mean",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q9-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "The range halves when 5 is excluded",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q9-b",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q9-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q9(b)",
+  "stem": "Noreen went to a music festival.",
+  "questionText": "The number of hours people at the festival spent watching bands were roughly normally distributed. The mean was 17 hours. The middle 95% of people spent between 14·2 and H hours watching bands. Using the Empirical Rule, find the standard deviation and find the value of H.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "H = 17 + 2·8 = 19·8",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q9-b-solution-2",
+    "kind": "point",
+    "verbatim": "One correct answer",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q9-c-i",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q9-c-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q9(c)(i)",
+  "stem": "Noreen went to a music festival. A random sample of 540 people was picked from all those who attended the music festival in 2025. They were asked if they had also attended the festival in 2024.",
+  "questionText": "Show that, for this sample, the margin of error for a population proportion is 4·3%, correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q9-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "= 4·3[%]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q9-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q9-c-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p2-q9-c-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q9(c)(ii)",
+  "stem": "Noreen went to a music festival. A random sample of 540 people was picked from all those who attended the music festival in 2025. They were asked if they had also attended the festival in 2024.",
+  "questionText": "350 of the 540 people had been at the festival in 2024. Work out the percentage of people in this sample who attended the festival in 2024. Give your answer correct to the nearest percent.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q9-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 65[%]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q9-c-iii",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q9-c-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q9(c)(iii)",
+  "stem": "Noreen went to a music festival. A random sample of 540 people was picked from all those who attended the music festival in 2025. They were asked if they had also attended the festival in 2024. 350 of the 540 people had been at the festival in 2024.",
+  "questionText": "In the past (before 2025), 67% of people who attend the festival in a given year also attended the festival the previous year. Use your answers to parts (c)(i) and (c)(ii) to test the claim that this percentage has changed for the people who attended the festival in 2025, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q9-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "60·7% ≤ p ≤ 69·3%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q9-c-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Conclusion: The percentage has not changed",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q9-c-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Reason: 67% is between 60·7% and 69·3%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q9-c-iv",
+  "topicId": "maths-1-7",
+  "conceptId": "p2-q9-c-iv",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q9(c)(iv)",
+  "stem": "Noreen went to a music festival. A random sample of 540 people was picked from all those who attended the music festival in 2025. They were asked if they had also attended the festival in 2024.",
+  "questionText": "The organisers want to reduce the margin of error for the survey. Should they increase or decrease the number of people in the sample? Remember the margin of error for the population proportion was 4·3%. Use calculations to support your answer. Tick one box only: Increase; Decrease.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q9-c-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Increase box ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q9-c-iv-solution-2",
+    "kind": "point",
+    "verbatim": "A larger sample reduces the margin of error",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q10-a",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q10-a",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q10(a)",
+  "questionText": "An ice-cream cone has a radius of 2·8 cm and a vertical height of 13·4 cm, as shown in the diagram below. The entire cone is filled with ice-cream. There is also a hemisphere, of the same radius, of ice-cream on top of the cone. By finding the volume of the cone and the volume of the hemisphere, work out the total volume of ice-cream, correct to the nearest cm³.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q10-a-solution-1",
+    "kind": "point",
+    "verbatim": "= 156 [cm³]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q10-a-solution-2",
+    "kind": "point",
+    "verbatim": "Volume of cone OR hemisphere formulated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q10-b-i",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q10-b-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q10(b)(i)",
+  "stem": "Some soft drinks companies have changed the dimensions of their cylindrical cans. The table below shows the approximate dimensions of the old and the new designs: the old can design (cylinder) has radius 3·3 cm and height 11·5 cm; the new can design (cylinder) has radius 3 cm and height h.",
+  "questionText": "Each can design has a volume of 393·4 cm³, correct to 1 decimal place. Work out the height, h, of the new can design. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q10-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "13·9 cm",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q10-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Equation set up",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q10-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * for no units",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q10-b-ii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q10-b-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q10(b)(ii)",
+  "stem": "Some soft drinks companies have changed the dimensions of their cylindrical cans. The table below shows the approximate dimensions of the old and the new designs: the old can design (cylinder) has radius 3·3 cm and height 11·5 cm; the new can design (cylinder) has radius 3 cm and height h.",
+  "questionText": "The total surface area of the new can design is 318·6 cm² correct to 1 decimal place. Work out the percentage increase in the total surface area from the old can design to the new can design. Give your answer as a percent correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q10-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "3·8 [%]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q10-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Total surface area found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q10-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Curved surface area OR area of circle formulated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q10-b-iii",
+  "topicId": "maths-3-4",
+  "conceptId": "p2-q10-b-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q10(b)(iii)",
+  "stem": "Some soft drinks companies have changed the dimensions of their cylindrical cans. The table below shows the approximate dimensions of the old and the new designs: the old can design (cylinder) has radius 3·3 cm and height 11·5 cm; the new can design (cylinder) has radius 3 cm and height h.",
+  "questionText": "Remember that the radius of the old can is 3·3 cm and that the radius of the new can is 3 cm. A shop has a shelf of length 62 cm and depth 32 cm. All cans are placed upright and are not stacked on top of each other. The cans are in rows, where the first row is placed along the edge of the shelf and each other row is placed directly behind the first row. The entire base of each can must be in contact with the shelf. The diagram below shows some of the cans on the shelf. Work out how many more cans could be placed on this shelf if the new can design was used instead of the old can design.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q10-b-iii-solution-1",
+    "kind": "point",
+    "verbatim": "9 × 4 = 36 cans",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q10-b-iii-solution-2",
+    "kind": "point",
+    "verbatim": "10 × 5 = 50 cans",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q10-b-iii-solution-3",
+    "kind": "point",
+    "verbatim": "50 − 36 = 14 extra cans",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q10-b-iii-solution-4",
+    "kind": "point",
+    "verbatim": "36 OR 50 correctly found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p2-q10-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p2-q10-c",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 2 Q10(c)",
+  "questionText": "In 2020, a soft drink had 35 grams of sugar in a 330 millilitre can. In 2021, the company made a new recipe with 30% less sugar. In 2025, the company reduced the sugar in the 2021 recipe by a further 20%. Work out how many grams of sugar are in a 500 millilitre bottle of the 2025 recipe. Give your answer correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p2-q10-c-solution-1",
+    "kind": "point",
+    "verbatim": "= 29·7 [g] of sugar",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q10-c-solution-2",
+    "kind": "point",
+    "verbatim": "Finds 70% of a relevant number",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p2-q10-c-solution-3",
+    "kind": "point",
+    "verbatim": "Converts a sugar content from 330 ml to 500 ml",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 2 and its scheme on 2026-10-11."
  }
 ]

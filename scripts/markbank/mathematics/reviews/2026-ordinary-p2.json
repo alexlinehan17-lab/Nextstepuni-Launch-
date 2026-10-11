@@ -1,0 +1,1593 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2026,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "e069a3f0153e768707271a20a5202730a111eb7f28e75b95da0abfa2378a2f7e",
+  "schemeSha256": "c35c102a77955cf6ad3c07360458296d69338cc5388d3c871d63754514e38d2a",
+  "reviewedAt": "2026-10-11",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 3–6 and 23–40 of the combined Ordinary Level scheme (general notes, the Paper 2 scale table on page 23, every Paper 2 model solution and marking note, and the blank closing pages). Each task boundary is the published scale, not a parser count.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    3,
+    4,
+    5,
+    6,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    3,
+    4,
+    23
+  ],
+  "sourceNotes": [
+    "Candidates answer any five of Q1–6 (30 marks each) and any three of Q7–10 (50 marks each): 380 offered marks, 300 candidate marks. Every question is retained; no combined multi-question cards.",
+    "45 independently marked units. Shared scales keep their parts together: Q2(a)(ii)–(iii) 5D, Q3(a)(i)–(ii) 15D, Q3(b)(ii)–(iii) 10D, Q5(a)(ii)–(iii) 10D, Q6(a)(ii)–(iii) 10D and Q7(c)(i)–(ii) 10D.",
+    "Paper 2 bands from scheme page 23: 5A 0,5; 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,5,10; 10C 0,4,7,10; 10D 0,3,5,8,10; 15C 0,5,10,15; 15D 0,4,8,12,15. The table prints the 5D ladder as “0, 2, 3. 4. 5”; it is 0, 2, 3, 4, 5. Paper 2 15D differs from Paper 1, which has no 15D.",
+    "The question booklet is LC003GLP200EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 1. All page references are PDF positions. The paper omits “(30 marks)” beside Question 5; the scheme’s scales total 30.",
+    "Q6(a)(i) asks the candidate to measure printed lengths (scheme: |AB| = 4 cm, |EF| = 10 cm), so it carries the calibrated measuring ruler.",
+    "Diagrams and tables (line l, the group and pairings tables, activity categories, isosceles triangle, spinner, rectangles ABCD and EFGH, concentric circles, co-ordinate grids, the camps, the island, the boat route, the sector, the songs table, the cone, the can table and the shelf) are read from the attached original question pages; prompts quote the paper’s own wording.",
+    "Some scheme text layers lose letters in point names (for example |OP| and |SQ| print as repeated glyphs), so card rows quote only notes whose text layer matches the printed scheme; the scheme reader shows the full published notes."
+  ],
+  "cards": [
+    {
+      "id": "maths-2026-ol-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows the line l: 2x + 3y − 18 = 0.",
+      "questionText": "l cuts the y-axis at the point P. Show that the point P is (0, 6).",
+      "solutionQuotes": [
+        "2(0) + 3(6) − 18 = 0",
+        "Point fully substituted into equation"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q1-a-ii",
+      "printedParts": [
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram below shows the line l: 2x + 3y − 18 = 0. l cuts the y-axis at the point P (0, 6).",
+      "questionText": "The line l cuts the x-axis at the point (9, 0). Find the area of the triangle, in units², made between the x-axis, the y-axis, and the line l.",
+      "solutionQuotes": [
+        "Formula fully substituted",
+        "Work of merit, for example, relevant formula or relevant work on the diagram"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q1-b-i",
+      "printedParts": [
+        "Q1(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows the line l: 2x + 3y − 18 = 0.",
+      "questionText": "Find the slope of the line l: 2x + 3y − 18 = 0",
+      "solutionQuotes": [
+        "Accept correct answer without work"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q1-b-ii",
+      "printedParts": [
+        "Q1(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "The diagram below shows the line l: 2x + 3y − 18 = 0.",
+      "questionText": "The line k passes through the points A(4, −2) and B(r, 7) and is perpendicular to the line l, where r ∈ ℤ. Work out the value of r.",
+      "solutionQuotes": [
+        "r = 10",
+        "Perpendicular slope found from (b)(i)",
+        "Slope formula fully substituted in terms of r",
+        "r found using a translation"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability",
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "Eight schools (A, B, C, D, W, X, Y, and Z) are competing in a chess tournament. The schools are divided into two groups, as shown in the table below: Group 1 is A, B, C and D; Group 2 is W, X, Y and Z. At the beginning of the tournament, each school has an equal chance of winning its group. The winner of group 1 will play the winner of group 2 in the final.",
+      "questionText": "Complete the table below to show all possible pairings for the final. Some have already been completed for you. For example, AW means that school A and school W play in the final. The table already shows AW, AX, BZ, DX and DZ.",
+      "solutionQuotes": [
+        "1 correct entry",
+        "7 correct entries"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q2-a-ii-iii",
+      "printedParts": [
+        "Q2(a)(ii)",
+        "Q2(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Eight schools (A, B, C, D, W, X, Y, and Z) are competing in a chess tournament. The schools are divided into two groups, as shown in the table below: Group 1 is A, B, C and D; Group 2 is W, X, Y and Z. At the beginning of the tournament, each school has an equal chance of winning its group. The winner of group 1 will play the winner of group 2 in the final.",
+      "questionText": "(ii) Write down the probability that School B plays in the final. (iii) School D withdraws before the tournament begins. The groups remain the same but without school D. Each remaining school in Group 1 still has an equal chance of winning that group. Work out the probability that school B or school Z, but not both, now play in the final.",
+      "solutionQuotes": [
+        "Work of merit, for example, correct numerator or denominator in either part or relevant work on the table",
+        "One part correct and work of merit in the other part"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q2-b-i",
+      "printedParts": [
+        "Q2(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Erika and Peter play against each other in a different chess tournament. The probability that Erika wins a game is 0·6 and this remains the same each time they play. There are no draws.",
+      "questionText": "Write down the probability that Peter wins a game.",
+      "solutionQuotes": [
+        "1 − 0·6 = 0·4",
+        "Use of 1"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q2-b-ii",
+      "printedParts": [
+        "Q2(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Erika and Peter play against each other in a different chess tournament. The probability that Erika wins a game is 0·6 and this remains the same each time they play. There are no draws.",
+      "questionText": "The first player who wins two games wins the match. For example, Erika could win the match by winning the first game, losing the second game, and winning the third game. Work out the probability that Erika wins the match.",
+      "solutionQuotes": [
+        "EE or EPE or PEE",
+        "0·36 + 0·144 + 0·144",
+        "Probability of two outcomes correctly formulated"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q3-a-i-ii",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "Tara is going on a school trip. She must choose one activity from each of three categories shown below. Category 1: Zipline, Kayaking, Archery, Rock Climbing, Paddle-Boarding. Category 2: Pottery, Painting, Drama, Animation, Singing, Crochet. Category 3: Pizza-Making, Baking, Smoothie-Bar, BBQ.",
+      "questionText": "(i) Find how many different choices are possible if Tara chooses one activity from each of the three categories. (ii) The organisers need to remove one activity from one of the categories. From which category should they remove an activity if they want to keep the greatest number of possible choices? Use calculations to support your answer. Tick one box only: Category 1, Category 2 or Category 3.",
+      "solutionQuotes": [
+        "5 × 6 × 4 = 120",
+        "Category 2 box ticked",
+        "Category 2: 5 × 5 × 4 = 100"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q3-b-i",
+      "printedParts": [
+        "Q3(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "Tara is sitting her fifth-year summer exams. She will have exams in 7 subjects which can be arranged in any order on the timetable.",
+      "questionText": "In how many ways could the order of the 7 exams be arranged?",
+      "solutionQuotes": [
+        "7! = 5040",
+        "Work of merit, for example, relevant multiplication to 7 or relevant setup"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q3-b-ii-iii",
+      "printedParts": [
+        "Q3(b)(ii)",
+        "Q3(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "Tara is sitting her fifth-year summer exams. She will have exams in 7 subjects which can be arranged in any order on the timetable. Tara will have 3 exams on Monday.",
+      "questionText": "(ii) How many arrangements of 3 different exams can be made from the 7 exams? (iii) It is decided that Maths will be the first subject examined on Monday. How many arrangements can now be made for the remaining exams on Monday?",
+      "solutionQuotes": [
+        "7 × 6 × 5 = 210",
+        "6 × 5 = 30",
+        "One part correct and work of merit in the other part"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The diagram below shows an isosceles triangle with the base extended. Some measurements are given: the two equal sides are 12 cm and the angle between them is 44°.",
+      "questionText": "Find the size of the angle marked A and the size of the angle marked B.",
+      "solutionQuotes": [
+        "180 − 44 = 136",
+        "B = 44 + 68 = 112[°]",
+        "One angle correct"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram below shows an isosceles triangle with the base extended. Some measurements are given: the two equal sides are 12 cm and the angle between them is 44°.",
+      "questionText": "Find the area of the triangle. Give your answer correct to the nearest whole number.",
+      "solutionQuotes": [
+        "Formula fully substituted",
+        "Apply a * for no units"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        8,
+        12,
+        15
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "questionText": "A triangle PQR has the measurements: |PR| = 12 cm, |PQ| = 9 cm, |QR| = 10 cm. Use the cosine rule to work out the size of the angle ∠QPR. Give your answer correct to the nearest degree. Hint: It may be useful to draw a diagram.",
+      "solutionQuotes": [
+        "θ ≈ 55[°]",
+        "Formula fully substituted correctly",
+        "Diagram fully labelled correctly"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "7 friends at a match guessed in which minute the first goal would be scored. The guesses were: 8, 11, 15, 17, 20, 20, 23.",
+      "questionText": "Write down the mode of the 7 numbers and find the range of the 7 numbers.",
+      "solutionQuotes": [
+        "Mode: 20",
+        "Range: 15 [mins] (23 − 8)",
+        "Mode or range correct"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q5-a-ii-iii",
+      "printedParts": [
+        "Q5(a)(ii)",
+        "Q5(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "7 friends at a match guessed in which minute the first goal would be scored. The guesses were: 8, 11, 15, 17, 20, 20, 23.",
+      "questionText": "(ii) Write down the median of the 7 numbers. (iii) Seán joined these 7 friends just before the match started and also guessed in which minute the first goal would be scored. The new median, including Seán’s guess, is now 16. Which of the following must be true about Seán’s guess? Justify your answer. It may be helpful to try some values for Seán’s guess. Seán’s guess must be (tick one box only): Equal to 16; Less than or equal to 15; More than or equal to 17.",
+      "solutionQuotes": [
+        "Median: 17 [minutes]",
+        "Less than or equal to 15 box ticked",
+        "Work of merit in (iii), for example, correct box ticked or a value trialled"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q5-b",
+      "printedParts": [
+        "Q5(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "questionText": "A board game has a spinner. A player either wins or loses points depending on which sector the spinner lands on. The size of some of the angles of the sectors and the number of points won or lost for each sector are shown in the diagram below: the diagram gives the angles 60° and 120° and labels the sectors Win X points, Win 19 points and Lose 20 points. In one sector a player wins X points. Work out the value of X, so that the spinner is fair, that is, so that the expected value of the number of points won is equal to 0 points.",
+      "solutionQuotes": [
+        "x = 22",
+        "One correct term",
+        "Two correct terms"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        5,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The rectangle EFGH is an enlargement of the rectangle ABCD, as shown in the diagram below. The points A and B lie on [EF] as shown.",
+      "questionText": "Measure the length of [AB] and the length of [EF], in cm.",
+      "solutionQuotes": [
+        "10 [cm]",
+        "One correct measurement"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2026-ol-p2-q6-a-ii-iii",
+      "printedParts": [
+        "Q6(a)(ii)",
+        "Q6(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions",
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The rectangle EFGH is an enlargement of the rectangle ABCD, as shown in the diagram below. The points A and B lie on [EF] as shown. Part (a)(i) asks you to measure the length of [AB] and the length of [EF], in cm.",
+      "questionText": "(ii) Use your answers to (a)(i) to work out the scale factor of the enlargement. (iii) Construct the centre of enlargement on the diagram above, and label it K.",
+      "solutionQuotes": [
+        "Apply a * for not labelling K",
+        "Work of merit in (ii), for example, relevant work towards the construction of the centre of enlargement"
+      ],
+      "measurementRequired": true
+    },
+    {
+      "id": "maths-2026-ol-p2-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5A",
+      "permittedMarks": [
+        0,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The point O is the centre of the circle u, and also the centre of the circle t. The points P and Q are on the circle u, and the points S and R are on the circle t. S ∈ [OP] and R ∈ [OQ]. |∠QOP| = 120°.",
+      "questionText": "Explain why |OP| = |OQ|.",
+      "solutionQuotes": [
+        "are both radii of the circle u"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q6-b-ii",
+      "printedParts": [
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The point O is the centre of the circle u, and also the centre of the circle t. The points P and Q are on the circle u, and the points S and R are on the circle t. S ∈ [OP] and R ∈ [OQ]. |∠QOP| = 120°.",
+      "questionText": "Show that the triangles OPQ and OSR are similar. Give a reason for each statement that you make, where relevant.",
+      "solutionQuotes": [
+        "Common angle",
+        "Both triangles are isosceles",
+        "A second angle is equal, (30° or similar explanation given"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram. One of the circles, c, has equation x² + y² = 72.",
+      "questionText": "Write down the centre and radius of the circle c. Give the radius in surd form.",
+      "solutionQuotes": [
+        "Centre: (0, 0)",
+        "Radius: √72",
+        "Apply a * for radius in incorrect form"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram. One of the circles, c, has equation x² + y² = 72.",
+      "questionText": "In the game, the player must move their character so they avoid the circles of light. Tony’s character is at the point (−4, 9). Investigate if the point (−4, 9) is inside or outside the circle c. Use calculations to support your answer. Tick one box only: inside c; outside c.",
+      "solutionQuotes": [
+        "97 > 72",
+        "Outside c",
+        "Point substituted correctly"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram. One of the circles, c, has equation x² + y² = 72.",
+      "questionText": "First, Tony moves his character from the point A(−4, 9) to the point B(0, 12). Find the equation of the line containing the points A and B. Give your answer in the form ax + by + c = 0.",
+      "solutionQuotes": [
+        "3x − 4y + 48 = 0",
+        "Slope substituted into line formula",
+        "Point substituted into line formula"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram. One of the circles, c, has equation x² + y² = 72.",
+      "questionText": "Next, Tony moves his character along a line l. He does not want his character to enter the circle c, where: l: x + y = 12; c: x² + y² = 72. Using simultaneous equations, or otherwise, show that the line l is a tangent to the circle c.",
+      "solutionQuotes": [
+        "(y − 6)² = 0",
+        "Equation in terms of one variable"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q7-c-i-ii",
+      "printedParts": [
+        "Q7(c)(i)",
+        "Q7(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram. Another light creates the circle s, with centre (5, −10) and radius 10.",
+      "questionText": "(i) Construct the circle s on the co-ordinate diagram on the right. (ii) Write down the equation of the circle s.",
+      "solutionQuotes": [
+        "(x − 5)² + (y + 10)² = 10²",
+        "One part correct and work of merit in the other part"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q7-d",
+      "printedParts": [
+        "Q7(d)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "In a computer game there are a number of overhead lights that each create a circle on the ground. These circles are positioned using a co-ordinate diagram.",
+      "questionText": "Two more lights create the circles t and u, each with radius 10. t and u are shown on the co-ordinate diagram on the right. Tony wants to move his character along a horizontal line between the circle t and the circle u, without touching either circle. Write down the equation of one such horizontal line.",
+      "solutionQuotes": [
+        "y = k, where 10 < k < 15",
+        "Work of merit, for example, relevant formula or relevant work on diagram"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The diagram below shows the camp for each team. Both camps are in the shape of right-angled triangles. Some measurements are also shown: |PS| = 25 m, |PQ| = 60 m and |SR| = 45 m, with right angles at P and R.",
+      "questionText": "A fence runs along the line SQ to separate the two camps. Use the theorem of Pythagoras to show that |SQ| = 65 m.",
+      "solutionQuotes": [
+        "25² + 60² = 65²",
+        "Formula fully substituted"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The diagram below shows the camp for each team. Both camps are in the shape of right-angled triangles. Some measurements are also shown: |PS| = 25 m, |PQ| = 60 m and |SR| = 45 m, with right angles at P and R. |SQ| = 65 m.",
+      "questionText": "Find the size of the angle marked θ in the diagram, that is, find |∠SQR|. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "θ = 43·8[°]",
+        "Apply a * for no or incorrect rounding"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The teams must complete tasks.",
+      "questionText": "One task is to approximate the area of the island. A contestant uses a map and measures the width of the island at 0·5 km intervals. These widths are given in the diagram below (1·2 km, 1·5 km, 1·3 km, 0·9 km and 0·8 km). Use the trapezoidal rule to estimate the area of the island, in km².",
+      "solutionQuotes": [
+        "= 2·85 [km²]",
+        "Formula fully substituted",
+        "Some correct substitution"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The teams must complete tasks.",
+      "questionText": "Another task is to row a boat from the point W to the point X, and then to the point Y. As shown in the diagram below: XY is perpendicular to AB, |∠AXW| = 42°, |∠XYW| = 65°, and |WX| = 122 m. Work out the distance from X to Y. Give your answer correct to the nearest metre.",
+      "solutionQuotes": [
+        "= 124 [m]",
+        "Sine rule formula fully substituted"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q8-d-i",
+      "printedParts": [
+        "Q8(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The teams must complete tasks. The final task involves contestants building a fence around a piece of land. The piece of land is in the shape of a sector with an angle of 225° and a radius of 50 m, as shown in the diagram on the right.",
+      "questionText": "The team must build a fence all around the perimeter of the sector. Work out the total length of the perimeter of the sector. Give your answer correct to the nearest metre.",
+      "solutionQuotes": [
+        "= 296 [m]",
+        "Length of arc found"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q8-d-ii",
+      "printedParts": [
+        "Q8(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Contestants on a reality show are based on an island. They are divided into Team A and Team B. The teams must complete tasks. The final task involves contestants building a fence around a piece of land. The piece of land is in the shape of a sector with an angle of 225° and a radius of 50 m, as shown in the diagram on the right.",
+      "questionText": "The following year, the area of the sector is doubled. This is done by increasing the radius. The angle of the sector remains 225°. Work out the length of the new radius of the sector. Give your answer in metres, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "r = 70·7 [m]",
+        "Correct equation formed"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Noreen went to a music festival. Noreen counted the number of songs each of 10 bands played during their particular set. The results are shown in the table below: 10, 5, 10, 11, 10, 12, 9, 10, 12, 13.",
+      "questionText": "Work out the mean and standard deviation of the 10 numbers in the table above. Give each answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "Mean: 10·2",
+        "Standard Deviation: 2·088 … = 2·1",
+        "One correct answer"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Noreen went to a music festival. Noreen counted the number of songs each of 10 bands played during their particular set. The results are shown in the table below: 10, 5, 10, 11, 10, 12, 9, 10, 12, 13.",
+      "questionText": "One band played 5 songs. Is this an outlier for the data in the table above? Refer to a measure of variability to explain your choice. Tick one box only: 5 is an outlier; 5 is not an outlier.",
+      "solutionQuotes": [
+        "5 is an outlier",
+        "It is more than 2 standard deviations below the mean",
+        "The range halves when 5 is excluded"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q9-b",
+      "printedParts": [
+        "Q9(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Noreen went to a music festival.",
+      "questionText": "The number of hours people at the festival spent watching bands were roughly normally distributed. The mean was 17 hours. The middle 95% of people spent between 14·2 and H hours watching bands. Using the Empirical Rule, find the standard deviation and find the value of H.",
+      "solutionQuotes": [
+        "H = 17 + 2·8 = 19·8",
+        "One correct answer"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q9-c-i",
+      "printedParts": [
+        "Q9(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Noreen went to a music festival. A random sample of 540 people was picked from all those who attended the music festival in 2025. They were asked if they had also attended the festival in 2024.",
+      "questionText": "Show that, for this sample, the margin of error for a population proportion is 4·3%, correct to 1 decimal place.",
+      "solutionQuotes": [
+        "= 4·3[%]",
+        "Formula fully substituted"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q9-c-ii",
+      "printedParts": [
+        "Q9(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Noreen went to a music festival. A random sample of 540 people was picked from all those who attended the music festival in 2025. They were asked if they had also attended the festival in 2024.",
+      "questionText": "350 of the 540 people had been at the festival in 2024. Work out the percentage of people in this sample who attended the festival in 2024. Give your answer correct to the nearest percent.",
+      "solutionQuotes": [
+        "= 65[%]"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q9-c-iii",
+      "printedParts": [
+        "Q9(c)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Noreen went to a music festival. A random sample of 540 people was picked from all those who attended the music festival in 2025. They were asked if they had also attended the festival in 2024. 350 of the 540 people had been at the festival in 2024.",
+      "questionText": "In the past (before 2025), 67% of people who attend the festival in a given year also attended the festival the previous year. Use your answers to parts (c)(i) and (c)(ii) to test the claim that this percentage has changed for the people who attended the festival in 2025, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
+      "solutionQuotes": [
+        "60·7% ≤ p ≤ 69·3%",
+        "Conclusion: The percentage has not changed",
+        "Reason: 67% is between 60·7% and 69·3%"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q9-c-iv",
+      "printedParts": [
+        "Q9(c)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "Noreen went to a music festival. A random sample of 540 people was picked from all those who attended the music festival in 2025. They were asked if they had also attended the festival in 2024.",
+      "questionText": "The organisers want to reduce the margin of error for the survey. Should they increase or decrease the number of people in the sample? Remember the margin of error for the population proportion was 4·3%. Use calculations to support your answer. Tick one box only: Increase; Decrease.",
+      "solutionQuotes": [
+        "Increase box ticked",
+        "A larger sample reduces the margin of error"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q10-a",
+      "printedParts": [
+        "Q10(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "An ice-cream cone has a radius of 2·8 cm and a vertical height of 13·4 cm, as shown in the diagram below. The entire cone is filled with ice-cream. There is also a hemisphere, of the same radius, of ice-cream on top of the cone. By finding the volume of the cone and the volume of the hemisphere, work out the total volume of ice-cream, correct to the nearest cm³.",
+      "solutionQuotes": [
+        "= 156 [cm³]",
+        "Volume of cone OR hemisphere formulated"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Some soft drinks companies have changed the dimensions of their cylindrical cans. The table below shows the approximate dimensions of the old and the new designs: the old can design (cylinder) has radius 3·3 cm and height 11·5 cm; the new can design (cylinder) has radius 3 cm and height h.",
+      "questionText": "Each can design has a volume of 393·4 cm³, correct to 1 decimal place. Work out the height, h, of the new can design. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "13·9 cm",
+        "Equation set up",
+        "Apply a * for no units"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q10-b-ii",
+      "printedParts": [
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Some soft drinks companies have changed the dimensions of their cylindrical cans. The table below shows the approximate dimensions of the old and the new designs: the old can design (cylinder) has radius 3·3 cm and height 11·5 cm; the new can design (cylinder) has radius 3 cm and height h.",
+      "questionText": "The total surface area of the new can design is 318·6 cm² correct to 1 decimal place. Work out the percentage increase in the total surface area from the old can design to the new can design. Give your answer as a percent correct to 1 decimal place.",
+      "solutionQuotes": [
+        "3·8 [%]",
+        "Total surface area found",
+        "Curved surface area OR area of circle formulated"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        27,
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Some soft drinks companies have changed the dimensions of their cylindrical cans. The table below shows the approximate dimensions of the old and the new designs: the old can design (cylinder) has radius 3·3 cm and height 11·5 cm; the new can design (cylinder) has radius 3 cm and height h.",
+      "questionText": "Remember that the radius of the old can is 3·3 cm and that the radius of the new can is 3 cm. A shop has a shelf of length 62 cm and depth 32 cm. All cans are placed upright and are not stacked on top of each other. The cans are in rows, where the first row is placed along the edge of the shelf and each other row is placed directly behind the first row. The entire base of each can must be in contact with the shelf. The diagram below shows some of the cans on the shelf. Work out how many more cans could be placed on this shelf if the new can design was used instead of the old can design.",
+      "solutionQuotes": [
+        "9 × 4 = 36 cans",
+        "10 × 5 = 50 cans",
+        "50 − 36 = 14 extra cans",
+        "36 OR 50 correctly found"
+      ]
+    },
+    {
+      "id": "maths-2026-ol-p2-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        8,
+        10
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "questionText": "In 2020, a soft drink had 35 grams of sugar in a 330 millilitre can. In 2021, the company made a new recipe with 30% less sugar. In 2025, the company reduced the sugar in the 2021 recipe by a further 20%. Work out how many grams of sugar are in a 500 millilitre bottle of the 2025 recipe. Give your answer correct to 1 decimal place.",
+      "solutionQuotes": [
+        "= 29·7 [g] of sugar",
+        "Finds 70% of a relevant number",
+        "Converts a sugar content from 330 ml to 500 ml"
+      ]
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained. No combined multi-question practice cards."
+    },
+    {
+      "pages": [
+        8
+      ],
+      "wording": "choose one activity from each of three categories / remove one activity from one of the categories",
+      "classification": "counting-context",
+      "reason": "The choices are the objects being counted (5 × 6 × 4) and the category to tick is the answer to a required comparison; nothing is a menu of practice prompts."
+    },
+    {
+      "pages": [
+        8,
+        12,
+        16,
+        23,
+        25
+      ],
+      "wording": "Tick one box only",
+      "classification": "answer-selection",
+      "reason": "The ticked category, median condition, inside/outside, outlier and increase/decrease boxes are the mathematical answers with justification, not alternative prompts."
+    },
+    {
+      "pages": [
+        13
+      ],
+      "wording": "A player either wins or loses points",
+      "classification": "given-context",
+      "reason": "Describes the spinner outcomes used in one expected-value task."
+    },
+    {
+      "pages": [
+        17
+      ],
+      "wording": "Using simultaneous equations, or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative solution methods for the same marked task; no printed pool of prompts."
+    },
+    {
+      "pages": [
+        18
+      ],
+      "wording": "Write down the equation of one such horizontal line",
+      "classification": "open-answer",
+      "reason": "Any line y = k with 10 < k < 15 earns the same scale; the set is not a finite printed pool."
+    }
+  ],
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:608632bf83aa207b": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "8:983e740376e88bbe": {
+      "classification": "counting-context",
+      "reason": "Choosing one activity per category is the counting situation itself (or the category to tick is the answer); every printed ask is required."
+    },
+    "8:89a13533ebdd287b": {
+      "classification": "counting-context",
+      "reason": "Choosing one activity per category is the counting situation itself (or the category to tick is the answer); every printed ask is required."
+    },
+    "8:587b0617f83fc8a3": {
+      "classification": "counting-context",
+      "reason": "Choosing one activity per category is the counting situation itself (or the category to tick is the answer); every printed ask is required."
+    },
+    "13:a618d0b1b01bc430": {
+      "classification": "given-context",
+      "reason": "Describes the spinner outcomes of a single expected-value task."
+    },
+    "16:ba047b3b52625c36": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "16:0b44dae27fa0b406": {
+      "classification": "given-context",
+      "reason": "Names the circle c from the game; not a selection instruction."
+    },
+    "17:f3311917d92589ee": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    },
+    "18:fb7a5dfb1ffc59f1": {
+      "classification": "open-answer",
+      "reason": "Any horizontal line strictly between the circles is accepted under one 5B scale (y = k, 10 < k < 15); nothing finite to expand."
+    }
+  }
+}
