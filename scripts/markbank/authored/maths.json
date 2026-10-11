@@ -54950,5 +54950,1625 @@
    }
   ],
   "notes": "Independently visually checked against the 2014 Foundation Paper 2 and its scheme on 2026-10-07."
+ },
+ {
+  "id": "maths-2026-hl-p1-q1-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q1-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q1(a)",
+  "questionText": "Solve the following equation in a ∈ ℝ, a ≥ −7: 5 = 1 + √(a + 7)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "a = 9",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, one relevant operation indicated or carried out",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q1-a-solution-3",
+    "kind": "point",
+    "verbatim": "Linear equation in a",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q1-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q1-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q1(b)",
+  "questionText": "Rearrange the following to write p in terms of n and s, where n, p, and s are positive real numbers: 1/n + 2/p = 3/s",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Isolates term(s) with p",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q1-b-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, finds a relevant common denominator",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q1-b-solution-3",
+    "kind": "point",
+    "verbatim": "Note: a cross on its own (indicating cross-multiplication) is not considered work of merit.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q1-c",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q1-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q1(c)",
+  "questionText": "2x² + 4x − 6 is a factor of 8x³ + 6x² − 44x + 30. Using this fact, or otherwise, solve the equation: 8x³ + 6x² − 44x + 30 = 0",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "x = −3 or x = 1",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Factorises 2x² + 4x − 6 / fully substituted quadratic formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q1-c-solution-3",
+    "kind": "point",
+    "verbatim": "Finds two roots of quadratic factor",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q1-c-solution-4",
+    "kind": "point",
+    "verbatim": "Sets up long division / array / product",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q2-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q2-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q2(a)",
+  "questionText": "By writing the recurring part as an infinite geometric series, express the following number in the form a/b where a, b ∈ ℕ: 4·36363636 … (the digits 36 recur)",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Formula for sum of infinite geometric series substituted correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, identifies a or r, or writes two relevant terms in geometric sequence",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "Award at most Low Partial Credit if an infinite geometric series is not used",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q2-b-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q2-b-i",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q2(b)(i)",
+  "stem": "Rya is taking out a loan to buy a car. The annual interest rate (APR) for her loan is 8·4%.",
+  "questionText": "Show that this APR is equivalent to a monthly interest rate of 0·67%, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q2-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "= 0·67% [2 D.P.]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q2-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "No Credit: Correct answer (0·67%) without supporting work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q2-b-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q2-b-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q2(b)(ii)",
+  "stem": "Rya is taking out a loan to buy a car. The annual interest rate (APR) for her loan is 8·4%.",
+  "questionText": "Rya’s loan is for €14 000. To pay off the loan, she makes equal repayments each month for 5 years. She makes the first repayment one month after she takes out the loan. Find the amount of each repayment Rya makes, correct to the nearest cent, and hence find the total amount of interest that Rya pays over the 5 years. Assume that the monthly interest rate for the loan is 0·67%.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q2-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= [€]284·14 [2 D.P.]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q2-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "= [€]3048·40",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q2-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Fully correct substitution into geometric / amortisation formula",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q2-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Finds interest, based on A from Step 2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q3-a",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q3-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q3(a)",
+  "questionText": "The function f(x) = (7x²)(cos(3x)). Use the product rule to find f′(x), and hence find the value of f′(π), in terms of π.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "= −14π",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit in finding f′(x), for example, finds u′(x)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q3-a-solution-3",
+    "kind": "point",
+    "verbatim": "One part is correct (finds f′(x) or f′(π)) and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q3-b-i",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q3-b-i",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q3(b)(i)",
+  "stem": "The function g(x) has the following second derivative: g′′(x) = 30x − 18. The slope of the tangent to the curve y = g(x) at the point (−1, 8) is −2.",
+  "questionText": "By integrating g′′(x), use this information to find an expression in x for g′(x), the first derivative of g(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q3-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "g′(x) = 15x² − 18x − 35",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q3-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Constant of integration is needed for Steps 3 or 4 to be correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q3-b-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q3-b-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q3(b)(ii)",
+  "stem": "The function g(x) has the following second derivative: g′′(x) = 30x − 18. The slope of the tangent to the curve y = g(x) at the point (−1, 8) is −2. Part (b)(i) asks for an expression in x for g′(x), found by integrating g′′(x).",
+  "questionText": "Hence, find an expression in x for g(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q3-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "g(x) = 5x³ − 9x² − 35x − 13",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q3-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Integrates all terms in g′(x) from part (b)(i)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q4-a",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q4-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q4(a)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "u is the complex number u = 3 − 7i. u̅ is the complex conjugate of u. Write 2u̅ + 5iu in the form a + bi, where a, b ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "= 41 + 29i",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "If i² is not shown / dealt with, award Low Partial Credit at most",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q4-b",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q4-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q4(b)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "Use de Moivre’s theorem to find the value of (3 − √3i)⁸. Give your answer in the form a + bi, where a, b ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "= −10 368 + 10368√3 i",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Candidates must engage with polar form or de Moivre’s theorem in order to be awarded any credit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Correct answer with no supporting work is awarded No Credit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q4-c",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q4-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q4(c)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "w and v are the following two complex numbers, where a, b ∈ ℝ and θ is an angle in degrees: w = a (cos 160° + i sin 160°); v = b (cos θ + i sin θ). For these two numbers, |w| = 5 and vw = −15. Use this information to find one possible set of values of a, of b, and of θ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q4-c-solution-1",
+    "kind": "point",
+    "verbatim": "Note that |a| = 5 and |b| = 3.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q4-c-solution-2",
+    "kind": "point",
+    "verbatim": "And θ = 20° [ or 380°, or … ]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q4-c-solution-3",
+    "kind": "point",
+    "verbatim": "If Step 3 is incorrect, award Mid Partial Credit at most.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q5-a",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q5-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q5(a)",
+  "questionText": "Write each of the following numbers in the form 4^r, where r ∈ ℚ: 64; 1/16; 2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q5-a-solution-1",
+    "kind": "point",
+    "verbatim": "64 = 4³",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q5-a-solution-2",
+    "kind": "point",
+    "verbatim": "2 = √4 = 4^(1/2)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q5-a-solution-3",
+    "kind": "point",
+    "verbatim": "Accept correct answers without supporting work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q5-a-solution-4",
+    "kind": "point",
+    "verbatim": "Apply a * once if answer(s) are given as the values of r",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q5-b-i-ii",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q5-b-i-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q5(b)(i), Q5(b)(ii)",
+  "stem": "The Venn diagram below shows the following three sets in ℝ: A: all integer multiples of 4 (all numbers that can be written as 4m where m ∈ ℤ); B: all numbers that can be written as 4^r, where r ∈ ℚ; D: ℝ\\ℚ, the set of irrational numbers. The set A ∩ D is shaded – there are no elements in this part of the Venn diagram.",
+  "questionText": "(i) Write each of the following numbers in the correct region in the Venn diagram on the previous page: 64, 1/16, √3, √2, 12, 1. (ii) Write down one element in ℝ that is not in any of the sets A, B, or D. Do not use any of the numbers from part (b)(i).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q5-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Any valid answer – a rational number that is neither a multiple of 4 nor a rational power of 4.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q5-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Consider solution as having 7 parts: the 6 numbers in (b)(i) that must be put in the correct region of the Venn diagram, and the answer to (b)(ii).",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q5-c",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q5-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q5(c)",
+  "questionText": "For some real number k: 4^k = 9. Find the value of k. Give your answer in the form a/(log₃ b) where a, b ∈ ℕ are constants.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q5-c-solution-1",
+    "kind": "point",
+    "verbatim": "Step 1: Equation in log₃",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q5-c-solution-2",
+    "kind": "point",
+    "verbatim": "Step 2: Linear equation in k",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q5-c-solution-3",
+    "kind": "point",
+    "verbatim": "Step 3: finds k in correct form",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q5-c-solution-4",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, 9 = 3², or some relevant use of logs",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q6-a",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q6-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q6(a)",
+  "questionText": "Prove by induction that the following is true for all n ∈ ℕ and n ≥ 7: n! > 3^n",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "P(k) stated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, P(n) checked for n ≠ 7; or P(k + 1) stated",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q6-a-solution-3",
+    "kind": "point",
+    "verbatim": "Reason for (k + 1) × 3^k > 3 × 3^k, or equivalent, must appear for Step 4 to be correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q6-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q6-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q6(b)",
+  "questionText": "Solve this equation in n ∈ ℕ: (n + 1)!/(n − 1)! = 156",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "so n = 12 [as n > 0]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "Some relevant work with factorials required to get any credit.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q6-c",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q6-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 HL Paper 1 Q6(c)",
+  "questionText": "T₁, T₂, T₃, … is a geometric sequence, where: the first term, T₁ < 2; the sum of the first two terms, T₁ + T₂ = 2; the sum of the first three terms, T₁ + T₂ + T₃ < 2. Find one possible geometric sequence for which this is true. State the first three terms of your sequence, and find the value of S₃ = T₁ + T₂ + T₃.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q6-c-solution-1",
+    "kind": "point",
+    "verbatim": "r < 0, as S₃ < S₂",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q6-c-solution-2",
+    "kind": "point",
+    "verbatim": "and S₃ = 2 + T₃ = −7",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q6-c-solution-3",
+    "kind": "point",
+    "verbatim": "Step 2 can be considered correct even if T₁ > 0.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q7-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q7-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q7(a)",
+  "stem": "A water tank is in the shape of a cylinder. Over a 4-minute period of time, the volume of water in the tank can be modelled by: V(t) = 0·025t³ − 9t² + 550·8t + 68 900, where V is in cm³ and t is the time, in seconds, for 0 ≤ t ≤ 240, t ∈ ℝ.",
+  "questionText": "Find the volume of water in the tank after 1 minute.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "= 74 948 cm³",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-a-solution-2",
+    "kind": "point",
+    "verbatim": "Treat setting t = 1 as an error rather than a slip, as it simplifies the work.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q7-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q7-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q7(b)",
+  "stem": "A water tank is in the shape of a cylinder. Over a 4-minute period of time, the volume of water in the tank can be modelled by: V(t) = 0·025t³ − 9t² + 550·8t + 68 900, where V is in cm³ and t is the time, in seconds, for 0 ≤ t ≤ 240, t ∈ ℝ.",
+  "questionText": "Use differentiation to find the rate at which the volume of water in the tank is changing after exactly 150 seconds (that is, find dV/dt at this time). Give your answer in cm³ per second.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "= −461·7 [cm³ / second]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-b-solution-2",
+    "kind": "point",
+    "verbatim": "Some differentiation required to get any credit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q7-c",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q7-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q7(c)",
+  "stem": "A water tank is in the shape of a cylinder. Over a 4-minute period of time, the volume of water in the tank can be modelled by: V(t) = 0·025t³ − 9t² + 550·8t + 68 900, where V is in cm³ and t is the time, in seconds, for 0 ≤ t ≤ 240, t ∈ ℝ.",
+  "questionText": "Find the range of values of t for which the volume of water in the tank is decreasing.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q7-c-solution-1",
+    "kind": "point",
+    "verbatim": "Answer: t ∈ (36, 204)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-c-solution-2",
+    "kind": "point",
+    "verbatim": "Accept “between 36 and 204”",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-c-solution-3",
+    "kind": "point",
+    "verbatim": "Quadratic formula fully substituted, or quadratic equation factorised",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-c-solution-4",
+    "kind": "point",
+    "verbatim": "Apply a * for endpoints of inequality included",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q7-d",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q7-d",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q7(d)",
+  "stem": "A water tank is in the shape of a cylinder. Over a 4-minute period of time, the volume of water in the tank can be modelled by: V(t) = 0·025t³ − 9t² + 550·8t + 68 900, where V is in cm³ and t is the time, in seconds, for 0 ≤ t ≤ 240, t ∈ ℝ.",
+  "questionText": "The water in the tank is in the shape of a cylinder with a constant radius of 26 cm and a height of h cm, where h ∈ ℝ, h > 0. Find dV/dh and hence, or otherwise, find the rate of change of the height of the water in the tank with respect to time after 150 seconds. Give your answer in cm per second, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "= −0·22 [cm/sec] [2 D.P.]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-d-solution-2",
+    "kind": "point",
+    "verbatim": "Accept correct answers with incorrect or no unit.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-d-solution-3",
+    "kind": "point",
+    "verbatim": "Incorrect rounding, otherwise correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q7-e",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q7-e",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q7(e)",
+  "stem": "Water is poured into another container. The function C(h) can be used to model the rate at which the height of this water is changing, in centimetres per second, when its height is h cm. C(h) is given by: C(h) = 20/(16πh − πh²) for a particular range of values of h ∈ ℝ, so that C(h) is a continuous function of h and has a local minimum value.",
+  "questionText": "Find the local minimum value of C(h). Give your answer in cm/second, correct to 1 decimal place. Use differentiation in your solution.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q7-e-solution-1",
+    "kind": "point",
+    "verbatim": "= 0·1 [cm/sec] [1 D.P.]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-e-solution-2",
+    "kind": "point",
+    "verbatim": "Carries out all necessary differentiation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-e-solution-3",
+    "kind": "point",
+    "verbatim": "Sets relevant derivative = 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q7-f",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q7-f",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q7(f)",
+  "stem": "Water is poured into another container. The function C(h) can be used to model the rate at which the height of this water is changing, in centimetres per second, when its height is h cm. C(h) is given by: C(h) = 20/(16πh − πh²) for a particular range of values of h ∈ ℝ, so that C(h) is a continuous function of h and has a local minimum value.",
+  "questionText": "C(h) is defined for all values of h ∈ ℝ for which 0 < h < M, for a constant M ∈ ℝ. Find the biggest value that M can be.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q7-f-solution-1",
+    "kind": "point",
+    "verbatim": "M = 16",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-f-solution-2",
+    "kind": "point",
+    "verbatim": "Accept correct answer without supporting work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q7-f-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * for “M < 16”",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q8-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-a",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q8(a)",
+  "stem": "Rían is tuning a piano. He has an app on his phone that can measure the frequency, in Hertz (Hz), of any note on the piano. Rían calls one of the notes Concert A, and tunes it so that it has a frequency of 440 Hz. He then uses the following function F(x), for x ∈ ℝ, to help him tune the other notes on the piano: F(x) = 440 × 2^(x/12). For each note on the piano, Rían counts how many notes above (or below) Concert A it is. Rían tunes the note that is x notes above Concert A to the frequency F(x), for x ∈ ℕ. He tunes the note that is x notes below Concert A to the frequency F(−x), for x ∈ ℕ.",
+  "questionText": "Rían tunes the note that is 11 notes above Concert A. By setting x = 11, use F(x) to find the frequency of this note, correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q8-a-solution-1",
+    "kind": "point",
+    "verbatim": "= 831 [Hz]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q8-a-solution-2",
+    "kind": "point",
+    "verbatim": "Note: must sub in 11 in order to be awarded any credit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q8-b",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q8(b)",
+  "stem": "Rían is tuning a piano. He has an app on his phone that can measure the frequency, in Hertz (Hz), of any note on the piano. Rían calls one of the notes Concert A, and tunes it so that it has a frequency of 440 Hz. He then uses the following function F(x), for x ∈ ℝ, to help him tune the other notes on the piano: F(x) = 440 × 2^(x/12). For each note on the piano, Rían counts how many notes above (or below) Concert A it is. Rían tunes the note that is x notes above Concert A to the frequency F(x), for x ∈ ℕ. He tunes the note that is x notes below Concert A to the frequency F(−x), for x ∈ ℕ.",
+  "questionText": "Rían tunes the note that is 6 notes below Concert A. Find the frequency of this note. Give your answer in Hz, correct to 4 significant figures.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q8-b-solution-1",
+    "kind": "point",
+    "verbatim": "= 311·1 [Hz] [4 sig figs]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q8-b-solution-2",
+    "kind": "point",
+    "verbatim": "Note: 6 or −6 must appear in substitution for x in order to be awarded any credit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q8-c",
+  "topicId": "maths-3-2",
+  "conceptId": "p1-q8-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q8(c)",
+  "stem": "Rían is tuning a piano. He has an app on his phone that can measure the frequency, in Hertz (Hz), of any note on the piano. Rían calls one of the notes Concert A, and tunes it so that it has a frequency of 440 Hz. He then uses the following function F(x), for x ∈ ℝ, to help him tune the other notes on the piano: F(x) = 440 × 2^(x/12). For each note on the piano, Rían counts how many notes above (or below) Concert A it is. Rían tunes the note that is x notes above Concert A to the frequency F(x), for x ∈ ℕ. He tunes the note that is x notes below Concert A to the frequency F(−x), for x ∈ ℕ.",
+  "questionText": "Rían knows that the note that is seven notes above Concert A has a frequency of approximately 660 Hz. Find the actual value of x ∈ ℝ for which F(x) = 660. Give your answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q8-c-solution-1",
+    "kind": "point",
+    "verbatim": "= 7·02 [2 D.P.]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q8-c-solution-2",
+    "kind": "point",
+    "verbatim": "Correct answer with no supporting work is awarded No Credit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q8-d",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-d",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q8(d)",
+  "stem": "Rían is tuning a piano. He has an app on his phone that can measure the frequency, in Hertz (Hz), of any note on the piano. Rían calls one of the notes Concert A, and tunes it so that it has a frequency of 440 Hz. He then uses the following function F(x), for x ∈ ℝ, to help him tune the other notes on the piano: F(x) = 440 × 2^(x/12). For each note on the piano, Rían counts how many notes above (or below) Concert A it is. Rían tunes the note that is x notes above Concert A to the frequency F(x), for x ∈ ℕ. He tunes the note that is x notes below Concert A to the frequency F(−x), for x ∈ ℕ.",
+  "questionText": "Find an expression for F′(x), the derivative of F with respect to x. You do not need to simplify your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q8-d-solution-1",
+    "kind": "point",
+    "verbatim": "Consider solution as requiring 4 terms",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q8-d-solution-2",
+    "kind": "point",
+    "verbatim": "3 terms correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q8-d-solution-3",
+    "kind": "point",
+    "verbatim": "Accept correct answer without supporting work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q8-e-i-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-e-i-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q8(e)(i), Q8(e)(ii)",
+  "stem": "G(x) is another function that can be used to define the frequency of notes, for x ∈ ℝ. For some number k ∈ ℝ: G(k) = 197 and G′(k) = 5·8.",
+  "questionText": "(i) Using only this information, estimate the value of G(k + 2). Show your working out. (ii) The function G(x) is of the form G(x) = Ae^(bx), where A and b are positive constants. Based on this, state whether the estimate for G(k + 2) from part (e)(i) is too big or too small, compared to the actual value of G(k + 2), or if we don’t have enough information to be sure. Justify your answer. It may be helpful to draw a diagram. Tick one box only: the estimate is too big; the estimate is too small; we can’t be sure.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q8-e-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 208·6",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q8-e-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "The estimate is too small.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q8-e-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "The graph curves upwards, so it [the graph of the actual value] is always above the tangent line.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q8-e-i-ii-solution-4",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q8-f",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q8-f",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q8(f)",
+  "questionText": "Each person in a choir is either a soprano (S), an alto (A), a tenor (T), or a base (B). In this choir: there are 384 people in total; there are twice as many altos as there are sopranos; there are 12 more tenors than there are bases; the number of (sopranos plus altos) is three times the number of (tenors plus bases). Work out the number of sopranos, of altos, of tenors, and of bases in the choir.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q8-f-solution-1",
+    "kind": "point",
+    "verbatim": "S = 96; A = 192; T = 54; B = 42",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q8-f-solution-2",
+    "kind": "point",
+    "verbatim": "Writes down 4 correct equations",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q8-f-solution-3",
+    "kind": "point",
+    "verbatim": "Finds three remaining values",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q9-a-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-a-b",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q9(a), Q9(b)",
+  "stem": "Ella goes swimming. In one session, she swims in sets. The first three sets are shown in the table below. In each set, she swims a certain number of different distances, called shuttles. There are 3 shuttles in Set 1: first 20 m, then 40 m, then 20 m. This gives a total distance of 80 m for Set 1. The first shuttle in each set is 20 m. The shuttles increase in length by 20 m until they reach the maximum for that set, and then decrease by 20 m until the shuttle length returns to 20 m. The longest shuttle in each set is 20 m longer than the longest shuttle in the previous set. In the table, Set 1 has shuttles 20, 40, 20, 3 shuttles and a total distance of 80 m; Set 2 has shuttles 20, 40, 60, 40, 20 and 5 shuttles; Set 3 has shuttles 20, 40, 60, 80, 60, 40, 20 and a total distance of 320 m; the row for Set 4 is empty.",
+  "questionText": "(a) Fill in the missing values in the table above – all of the shuttles for Set 4, and the 4 other missing values. Suppose that Ella keeps swimming longer and longer sets in this way, indefinitely. (b) Find the length of the 12th shuttle in Set 14.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q9-a-b-solution-1",
+    "kind": "point",
+    "verbatim": "12 × 20 = 240 m",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-a-b-solution-2",
+    "kind": "point",
+    "verbatim": "Consider solution as requiring 6 parts: the five entries in the table, and part (b)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-a-b-solution-3",
+    "kind": "point",
+    "verbatim": "3 terms correct in the shuttles of Set 4",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q9-c",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q9(c)",
+  "stem": "Ella goes swimming. In one session, she swims in sets. The first three sets are shown in the table below. In each set, she swims a certain number of different distances, called shuttles. There are 3 shuttles in Set 1: first 20 m, then 40 m, then 20 m. This gives a total distance of 80 m for Set 1. The first shuttle in each set is 20 m. The shuttles increase in length by 20 m until they reach the maximum for that set, and then decrease by 20 m until the shuttle length returns to 20 m. The longest shuttle in each set is 20 m longer than the longest shuttle in the previous set. In the table, Set 1 has shuttles 20, 40, 20, 3 shuttles and a total distance of 80 m; Set 2 has shuttles 20, 40, 60, 40, 20 and 5 shuttles; Set 3 has shuttles 20, 40, 60, 80, 60, 40, 20 and a total distance of 320 m; the row for Set 4 is empty. Suppose that Ella keeps swimming longer and longer sets in this way, indefinitely.",
+  "questionText": "Find a formula, in terms of n ∈ ℕ, for the total distance (in metres) for Set n. Give your answer in the form an² + bn + c, where a, b, c ∈ ℝ are constants.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "Dist. = 20n² + 40n + 20",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-c-solution-2",
+    "kind": "point",
+    "verbatim": "Fully substituted closed form",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q9-d",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-d",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q9(d)",
+  "stem": "Ella goes swimming. In one session, she swims in sets. The first three sets are shown in the table below. In each set, she swims a certain number of different distances, called shuttles. There are 3 shuttles in Set 1: first 20 m, then 40 m, then 20 m. This gives a total distance of 80 m for Set 1. The first shuttle in each set is 20 m. The shuttles increase in length by 20 m until they reach the maximum for that set, and then decrease by 20 m until the shuttle length returns to 20 m. The longest shuttle in each set is 20 m longer than the longest shuttle in the previous set. In the table, Set 1 has shuttles 20, 40, 20, 3 shuttles and a total distance of 80 m; Set 2 has shuttles 20, 40, 60, 40, 20 and 5 shuttles; Set 3 has shuttles 20, 40, 60, 80, 60, 40, 20 and a total distance of 320 m; the row for Set 4 is empty. Suppose that Ella keeps swimming longer and longer sets in this way, indefinitely.",
+  "questionText": "In Set h, shuttle 21 and shuttle 43 are the same length. Find the value of h.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "So ℎ = 31",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-d-solution-2",
+    "kind": "point",
+    "verbatim": "Middle shuttle is number",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-d-solution-3",
+    "kind": "point",
+    "verbatim": "Finds 32 with supporting work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q9-e",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-e",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q9(e)",
+  "stem": "Ella goes swimming. In one session, she swims in sets. The first three sets are shown in the table below. In each set, she swims a certain number of different distances, called shuttles. There are 3 shuttles in Set 1: first 20 m, then 40 m, then 20 m. This gives a total distance of 80 m for Set 1. The first shuttle in each set is 20 m. The shuttles increase in length by 20 m until they reach the maximum for that set, and then decrease by 20 m until the shuttle length returns to 20 m. The longest shuttle in each set is 20 m longer than the longest shuttle in the previous set. In the table, Set 1 has shuttles 20, 40, 20, 3 shuttles and a total distance of 80 m; Set 2 has shuttles 20, 40, 60, 40, 20 and 5 shuttles; Set 3 has shuttles 20, 40, 60, 80, 60, 40, 20 and a total distance of 320 m; the row for Set 4 is empty. Suppose that Ella keeps swimming longer and longer sets in this way, indefinitely.",
+  "questionText": "Find an expression in k ∈ ℕ for the length of the kth shuttle in Set 18, where 19 ≤ k ≤ 37.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q9-e-solution-1",
+    "kind": "point",
+    "verbatim": "T₁₉ = 19 × 20 = 380",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-e-solution-2",
+    "kind": "point",
+    "verbatim": "So a = 760",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-e-solution-3",
+    "kind": "point",
+    "verbatim": "a − 20(19) = 380",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-e-solution-4",
+    "kind": "point",
+    "verbatim": "a + 18d = 380",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q9-f",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q9-f",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q9(f)",
+  "stem": "As part of her training, Ella also lifts weights. The number of times in a row that she can lift any given weight is called the number of reps that she can do with that weight. There are different formulas that Ella can use to estimate the heaviest weight that she could lift just once, called her one-repetition maximum (M). Two of these formulas are shown below. Each formula gives a value for M in kg, using the fact that Ella can do r reps with a weight of w kg. Epley formula: M = w × (1 + r/30). Brzycki formula: M = w × (36/(37 − r)).",
+  "questionText": "Find the difference in the value of M given by each formula for 5 reps (r = 5). Give your answer as a fraction in terms of w.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q9-f-solution-1",
+    "kind": "point",
+    "verbatim": "Both formulae substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-f-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * if the answer is the coefficient of w",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-f-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * if the fraction is not simplified",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q9-g",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q9-g",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q9(g)",
+  "stem": "As part of her training, Ella also lifts weights. The number of times in a row that she can lift any given weight is called the number of reps that she can do with that weight. There are different formulas that Ella can use to estimate the heaviest weight that she could lift just once, called her one-repetition maximum (M). Two of these formulas are shown below. Each formula gives a value for M in kg, using the fact that Ella can do r reps with a weight of w kg. Epley formula: M = w × (1 + r/30). Brzycki formula: M = w × (36/(37 − r)).",
+  "questionText": "Solve an equation to find the number of reps (r) for which the two formulas give the same value of M, for any given weight w.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q9-g-solution-1",
+    "kind": "point",
+    "verbatim": "i.e. r = 10 [as r ≥ 0]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-g-solution-2",
+    "kind": "point",
+    "verbatim": "Forms equation without r in denominator",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q9-g-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * if r = 10 and r = −3 are found, but r = 10 is not selected.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q10-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q10-a-i-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q10(a)(i), Q10(a)(ii)",
+  "stem": "Darek is looking at patterns in the co-ordinate plane.",
+  "questionText": "(i) The diagram below shows the graphs of the functions g(x) and g(x) + 1. Draw and label the graph of y = g(x) + 3 on the diagram below, using the same axes and scales. (ii) The diagram below shows the graphs of the functions h(x) and h(x − 1). Draw and label the graph of y = h(x + 2) on the diagram below, using the same axes and scales.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q10-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "1 part correct ((i) or (ii))",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q10-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit in both parts",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q10-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * once if multiple graphs drawn, but correct graph is not labelled",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q10-b-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q10-b-i-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q10(b)(i), Q10(b)(ii)",
+  "stem": "Darek is looking at patterns in the co-ordinate plane. The diagram below shows part of the graph of the periodic function f(x). The diagram shows more than one full period. The graph of the function repeats in this way for all of x ∈ ℝ. Use the graph to answer parts (b), (c), and (d).",
+  "questionText": "(i) State the period of the function f(x). (ii) There are an infinite number of whole numbers n ∈ ℤ, n ≠ 0, for which the graph of y = f(x) and the graph of y = f(x + n) are the same. State three possible values of n. Note that the graph of f(x + n) is the graph of f(x) shifted n units horizontally.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q10-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Any three non-zero multiples of 5, for example: 5, 20, −10",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q10-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Accept period of −5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q10-c",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q10-c",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q10(c)",
+  "stem": "Darek is looking at patterns in the co-ordinate plane. The diagram below shows part of the graph of the periodic function f(x). The diagram shows more than one full period. The graph of the function repeats in this way for all of x ∈ ℝ. Use the graph to answer parts (b), (c), and (d).",
+  "questionText": "Find the value of ∫ (from 0 to 3) f(x) dx. Show all your working out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q10-c-solution-1",
+    "kind": "point",
+    "verbatim": "Here, “area” is taken to mean “signed area”.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q10-c-solution-2",
+    "kind": "point",
+    "verbatim": "Finds total signed area",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q10-c-solution-3",
+    "kind": "point",
+    "verbatim": "Note: there needs to be some work with negative area in order for Step 4 to be considered correct.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q10-d",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q10-d",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q10(d)",
+  "stem": "Darek is looking at patterns in the co-ordinate plane. The diagram below shows part of the graph of the periodic function f(x). The diagram shows more than one full period. The graph of the function repeats in this way for all of x ∈ ℝ. Use the graph to answer parts (b), (c), and (d).",
+  "questionText": "Based on the graph of f(x) on the previous page, f′(x), the derivative of f(x), is defined for x ∈ ℝ where 0 < x < 6 and x ≠ 1, 2, 5. The diagram on the right shows part of the graph of y = f′(x). It is equal to 3 for 0 < x < 1 and is equal to 0 for 1 < x < 2. Draw the graph of y = f′(x) in the diagram on the right, for 2 < x < 6, x ∈ ℝ, x ≠ 5.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q10-d-solution-1",
+    "kind": "point",
+    "verbatim": "No penalty is applied for mishandling graph at x = 2, 5, or 6",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q10-d-solution-2",
+    "kind": "point",
+    "verbatim": "1 portion fully correct (for x ∈ (2, 5) or for x ∈ (5, 6))",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q10-e",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q10-e",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q10(e)",
+  "stem": "Darek is looking at patterns in the co-ordinate plane.",
+  "questionText": "j(x) is a different function of x, with j(x) ≥ 0 for all x ∈ ℝ. For a constant a > 1: ∫ (from 1 to a) j(x) dx = 200. Use this to find the value of the following in terms of a and b, where b > 0 is a constant: ∫ (from 1 to a) [ j(x) + b ] dx",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q10-e-solution-1",
+    "kind": "point",
+    "verbatim": "= 200 + b(a − 1)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q10-e-solution-2",
+    "kind": "point",
+    "verbatim": "Accept correct answer without supporting work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q10-e-solution-3",
+    "kind": "point",
+    "verbatim": "Finds required area.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-hl-p1-q10-f-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q10-f-i-ii",
+  "level": "higher",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 HL Paper 1 Q10(f)(i), Q10(f)(ii)",
+  "stem": "Darek is investigating if there are any functions h for which h(x + 1) = h(x) + 2. He begins by looking at functions of the form: h(x) = ax² + bx + c, where a, b, c ∈ ℝ are constants.",
+  "questionText": "(i) Darek knows that h(x + 1) = ax² + 2ax + a + bx + b + c. Use this to find the values of a and b that make the following true for all values of x: h(x + 1) = h(x) + 2. (ii) State what information your values of a and b from part (f)(i) give about the graph of y = h(x).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-hl-p1-q10-f-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "It must be a [straight] line with a slope of 2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q10-f-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Equates x terms / one correct equation in a and b",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-hl-p1-q10-f-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Equates constant terms / second correct equation in a and b",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Higher Level Paper 1 and its scheme on 2026-10-11."
  }
 ]

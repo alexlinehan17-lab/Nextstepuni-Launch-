@@ -24,6 +24,7 @@ import { resolveCurriculumSpecification, findCanonicalTopic } from '../curriculu
 import { examTopicIdsForQuestion } from '../data/examTopics/registry';
 import review from '../scripts/markbank/mathematics/reviews/2025-higher-p1.json';
 import paper2 from '../scripts/markbank/mathematics/reviews/2025-higher-p2.json';
+import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 
 describe('Mathematics booklet identities', () => {
   const question = {
@@ -452,4 +453,62 @@ it('restores omitted Ordinary subparts and symbols without changing their card i
   expect(card('p2-q4-a-ii').questionText).toContain('ax + by + c = 0');
   expect(card('p2-q5-b-ii').questionText).toContain('triangles ABD and ACD');
   expect(card('p2-q10-b-ii').questionText).toContain('(iii)');
+});
+
+
+describe.each([
+  { level: 'higher' as const, number: 1, count: 42, review: higher2026p1 },
+])('2026 $level Mathematics Paper $number independent source review', ({ level, number, count, review: census }) => {
+  const deck = { higher: HIGHER, ordinary: ORDINARY }[level];
+  const cards = deck.filter(card => card.year === 2026 && card.sourceMaterial?.sourceFileid === census.paperFileid);
+
+  it('retains every published marking unit and all 380 offered marks', () => {
+    expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
+    expect(cards).toHaveLength(count);
+    expect(new Set(cards.map(card => card.id)).size).toBe(count);
+    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(380);
+    for (const [question, marks] of Object.entries(census.printedQuestionMarks)) {
+      expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
+        .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
+    }
+  });
+
+  it('carries complete prompts, original pages, exact scales and both topic placements', () => {
+    const specification = resolveCurriculumSpecification('mathematics', 2026)!;
+    expect(specification.id).toBe(census.specificationId);
+    for (const task of census.cards) {
+      const card = cards.find(candidate => candidate.id === task.id)!;
+      expect(card.level, card.id).toBe(level);
+      expect(card.stem ?? '', card.id).toBe((task as { stem?: string }).stem ?? '');
+      expect(card.questionText, card.id).toBe(task.questionText);
+      expect(card.questionRef, card.id).toContain(`Paper ${number} ${task.printedParts.join(', ')}`);
+      expect(card.paperFileid, card.id).toBe(census.paperFileid.replace(/\.pdf$/, ''));
+      expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
+      expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
+      expect('mathematicsScale' in card && card.mathematicsScale?.schemePages, card.id).toEqual(task.schemePages);
+      expect('mathematicsScale' in card && card.mathematicsScale?.schemeFileid, card.id).toBe(census.schemeFileid);
+      expect(card.topicId, card.id).toBe(task.topicId);
+      expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
+      const question = task.printedParts[0].match(/^Q(\d+)/)![1];
+      expect(examTopicIdsForQuestion('mathematics', level, 2026, 'main', question, census.paperKey, 'ev', census.paperFileid), card.id)
+        .toEqual(expect.arrayContaining(task.examTopicIds));
+    }
+  });
+});
+
+it('keeps the 2026 Higher Paper 1 shared scales and continued scheme pages together', () => {
+  const card = (suffix: string) => HIGHER.find(candidate => candidate.id === `maths-2026-hl-p1-${suffix}`)!;
+  for (const [suffix, marks, last] of [
+    ['q5-b-i-ii', 10, '(ii)'], ['q8-e-i-ii', 5, '(ii)'], ['q9-a-b', 10, '(b)'],
+    ['q10-a-i-ii', 10, '(ii)'], ['q10-b-i-ii', 5, '(ii)'], ['q10-f-i-ii', 15, '(ii)'],
+  ] as const) {
+    expect(card(suffix).totalMarks, suffix).toBe(marks);
+    expect(card(suffix).questionText, suffix).toContain(last);
+  }
+  const cubic = card('q1-c');
+  expect('mathematicsScale' in cubic && cubic.mathematicsScale?.schemePages).toEqual([8, 9]);
+  const induction = card('q6-a');
+  expect('mathematicsScale' in induction && induction.mathematicsScale?.marks).toEqual([0, 3, 8, 12, 15]);
+  expect(card('q7-f').sourceMaterial?.pages).toEqual([18, 19]);
+  expect(card('q8-e-i-ii').questionText).toContain('Tick one box only');
 });

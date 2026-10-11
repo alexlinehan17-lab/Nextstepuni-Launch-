@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1385,
-  "reviewedTasks": 714,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1427,
+  "reviewedTasks": 756,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 193,
+  "targetedRegressionTests": 197,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -261,5 +261,21 @@
     "reviewedQuestionDeduplicationIncludesBooklet": true,
     "targetedRegressionTests": 183,
     "typecheck": "passed"
+  },
+  "higher2026p1": {
+    "paper": "2026 Higher Level Paper 1",
+    "paperFileid": "LC003ALP100EV.pdf",
+    "schemeFileid": "LC003ALP000EV.pdf",
+    "reviewedAt": "2026-10-11",
+    "independentlyReviewedTasks": 42,
+    "targetedRegressionTests": 197,
+    "previousRuntimeIdsRetained": 1385,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 41,
+    "runtimeIdsSha256": "72fd375014d7f092ac8c29c703d7298f1c9647b92ca4ce0eab688bfa7d570d51",
+    "regressionWorkers": 1,
+    "validation": "Deck generation (1,427 built, the same 13 historical rejects), Atlas generation and --check (196 placements), audit --check-reviewed, six regression files (197/197), typecheck and diff whitespace check passed. Production build and browser pass deferred to the end of the 2026 batch."
   }
 }
