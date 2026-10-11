@@ -139,6 +139,27 @@ describe('reviewed 2012–2026 French writing tasks', () => {
     expect(field.rubric.taskRequirements).toEqual([]);
   });
 
+  it('reproduces each year’s printed wording: word-count line, diary instruction, grid case and letter notes', () => {
+    for (const year of [2013, 2016, 2018, 2020]) {
+      expect(cards.find(card => card.id === `fr-${year}-hl-writing-b2b`)!.questionText.endsWith('\n(about 75 words)')).toBe(true);
+    }
+    expect(cards.filter(card => card.questionText.includes('(about 75 words)'))).toHaveLength(4);
+    for (const card of cards.filter(card => card.id.includes('-ol-writing-b3a-route-'))) {
+      const instruction = card.year >= 2021 ? 'Note three of the following five points in French in your diary:'
+        : card.year >= 2017 ? 'Note the following in French in your diary:' : 'Note the following in your diary:';
+      expect(card.questionText.split('\n\n')[0].endsWith(` ${instruction}`), card.id).toBe(true);
+      expect(card.questionText).not.toContain('Note the selected points');
+    }
+    const byId = (id: string) => cards.find(card => card.id === id)!;
+    expect(byId('fr-2017-hl-writing-b1a').rubric.criteria[1].bands?.[0].guidance[0]).toBe('idiomatic French');
+    expect(byId('fr-2016-hl-writing-b1a').rubric.criteria[1].bands?.[0].guidance[0]).toBe('Idiomatic French');
+    expect(byId('fr-2013-ol-writing-b1b-route-6789').rubric.criteria.at(-1)?.bands?.[2].guidance)
+      .toEqual(['Most verb endings, tenses, agreements incorrect', 'Most words misspelt', 'No sense of register']);
+    expect(byId('fr-2015-ol-writing-b3b-route-123').rubric.criteria[0].guidance).toContain('Include “Irlande”. Accept “Ireland” / “Éire”.');
+    expect(byId('fr-2026-ol-writing-b3b-route-123').rubric.criteria[0].guidance).toContain('Include Irlande, accept “Ireland” / “Éire”.');
+    expect(byId('fr-2017-ol-writing-b2a-route-123').rubric.criteria[0].guidance[0]).toBe('You have a toothache / and you can’t eat');
+  });
+
   it('keeps the 2012 form-sentence condition, boxed quotation and earlier scheme layout', () => {
     const group = cards.filter(card => card.year === 2012);
     expect(group).toHaveLength(18);

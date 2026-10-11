@@ -185,7 +185,8 @@
         ]
       }
     },
-    "taskSourceNotes": {}
+    "taskSourceNotes": {},
+    "diaryInstruction": "Note the following in your diary:"
   },
   {
     "year": 2013,
@@ -375,7 +376,11 @@
         ]
       }
     },
-    "taskSourceNotes": {}
+    "taskSourceNotes": {},
+    "diaryInstruction": "Note the following in your diary:",
+    "hlWordCountLines": {
+      "B2B": "(about 75 words)"
+    }
   },
   {
     "year": 2014,
@@ -563,15 +568,16 @@
         ]
       }
     },
-    "taskSourceNotes": {}
+    "taskSourceNotes": {},
+    "diaryInstruction": "Note the following in your diary:"
   },
   {
     "formatNotes": {
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (e.g. Mullingar, le 10 juin 2015) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and her address.",
+        "Include “Irlande”. Accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -729,15 +735,16 @@
           "some sense of register"
         ]
       }
-    }
+    },
+    "diaryInstruction": "Note the following in your diary:"
   },
   {
     "formatNotes": {
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Buncrana, le 15 juin 2016) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -908,6 +915,10 @@
           "The scheme allocates 6 marks to Formule (letter format), 12 to Communication and 12 to Language. It does not publish a further breakdown of the 6 format marks for this Higher Level task. Use the formal letter layout and the supplied identities and addresses."
         ]
       }
+    },
+    "diaryInstruction": "Note the following in your diary:",
+    "hlWordCountLines": {
+      "B2B": "(about 75 words)"
     }
   },
   {
@@ -915,8 +926,8 @@
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Tullamore, le 15 avril, 2017) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -994,7 +1005,7 @@
           "You will be home at 4 p.m."
         ],
         [
-          "You have a toothache / and you can’t eat.",
+          "You have a toothache / and you can’t eat",
           "You have gone to the dentist / by bus.",
           "You will be home / at 4p.m."
         ]
@@ -1057,15 +1068,16 @@
       "ordinary": {
         "B3B": "Source discrepancy: the paper prints rue Pasterolli, while the marking-scheme appendix prints rue Pastorelli. This task retains the address printed in the paper."
       }
-    }
+    },
+    "diaryInstruction": "Note the following in French in your diary:"
   },
   {
     "formatNotes": {
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Mallow, le 15 avril, 2018) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -1211,15 +1223,19 @@
       21,
       22
     ],
-    "hlSchemePageOffset": -2
+    "hlSchemePageOffset": -2,
+    "diaryInstruction": "Note the following in French in your diary:",
+    "hlWordCountLines": {
+      "B2B": "(about 75 words)"
+    }
   },
   {
     "formatNotes": {
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Clonmel, le 12 juin, 2019) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -1350,15 +1366,16 @@
     "formatSchemePages": [
       18,
       19
-    ]
+    ],
+    "diaryInstruction": "Note the following in French in your diary:"
   },
   {
     "formatNotes": {
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Birr, le 18 novembre, 2020) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -1494,7 +1511,11 @@
           "Ask him to send you information/ on the campsite."
         ]
       ]
-    ]
+    ],
+    "diaryInstruction": "Note the following in French in your diary:",
+    "hlWordCountLines": {
+      "B2B": "(about 75 words)"
+    }
   },
   {
     "year": 2021,
@@ -1612,8 +1633,8 @@
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Callan, le 18 mai 2021) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -1647,7 +1668,8 @@
       "Higher Q1 tasks are 40 marks (20 Communication + 20 Language); Q2–Q6 tasks are 30 (15 + 15).",
       "The Ordinary bottom language band has three descriptors. It does not include the vocabulary descriptor introduced in later schemes."
     ],
-    "hlSelectionNote": "Q1a/b/c are independent alternatives. Q4 email bullets are all required. Q1c asks about personal travel intentions and destinations, with open response scope. Gender alternatives and personal experience do not define task pools."
+    "hlSelectionNote": "Q1a/b/c are independent alternatives. Q4 email bullets are all required. Q1c asks about personal travel intentions and destinations, with open response scope. Gender alternatives and personal experience do not define task pools.",
+    "diaryInstruction": "Note three of the following five points in French in your diary:"
   },
   {
     "year": 2022,
@@ -1765,8 +1787,8 @@
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Ennis, le 18 mai 2022) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -1799,7 +1821,8 @@
       "Higher Q1 tasks are 40 marks (20 Communication + 20 Language); Q2–Q6 tasks are 30 (15 + 15).",
       "The 2022 Higher PDF has a one-page offset: PDF page 15 is printed page 14. Viewer regions use PDF indices; citations distinguish both."
     ],
-    "hlSchemePageOffset": -1
+    "hlSchemePageOffset": -1,
+    "diaryInstruction": "Note three of the following five points in French in your diary:"
   },
   {
     "year": 2023,
@@ -1917,8 +1940,8 @@
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Macroom, le 18 mai 2023) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -1961,7 +1984,8 @@
     },
     "sourceNotes": [
       "The cartoon speech/text is retained in the original illustration. Its text layer interleaves the three separate bubbles; the card uses the title and the printed ask."
-    ]
+    ],
+    "diaryInstruction": "Note three of the following five points in French in your diary:"
   },
   {
     "year": 2024,
@@ -2079,8 +2103,8 @@
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Cobh, le 18 mai 2024) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -2107,7 +2131,8 @@
       "B4",
       "B5",
       "B6"
-    ]
+    ],
+    "diaryInstruction": "Note three of the following five points in French in your diary:"
   },
   {
     "year": 2025,
@@ -2225,8 +2250,8 @@
       "top": [
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Courtown, le 18 mai 2025) in top right corner or underneath.",
-        "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -2253,7 +2278,8 @@
       "B4",
       "B5",
       "B6"
-    ]
+    ],
+    "diaryInstruction": "Note three of the following five points in French in your diary:"
   },
   {
     "year": 2026,
@@ -2372,7 +2398,7 @@
         "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
         "City / town / village & date (Tralee, le 18 mai 2026) in top right corner or underneath.",
         "Directly under (b) the name (or title) of the destinataire and his / her address.",
-        "Include Irlande, accept Ireland / Éire."
+        "Include Irlande, accept “Ireland” / “Éire”."
       ],
       "close": [
         "Formal ending required.",
@@ -2399,6 +2425,7 @@
       "B4",
       "B5",
       "B6"
-    ]
+    ],
+    "diaryInstruction": "Note three of the following five points in French in your diary:"
   }
 ]
