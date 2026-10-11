@@ -511,5 +511,691 @@
    362,
    330
   ]
+ },
+ "biology-2026-ol-q10-heart": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q10-heart.png",
+  "md5": "75aa1c57f00d7bf6c1b4f098205b0f2f",
+  "alt": "Photograph of a heart with its front side facing up. A label Coronary artery points to a blood vessel running diagonally down across the front. Arrows mark the two sides near the base of the heart: R on the left of the photograph and L on the right.",
+  "lettersVisible": [
+   "R",
+   "L"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q10(b)(i)2",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   401,
+   187,
+   543,
+   362
+  ]
+ },
+ "biology-2026-ol-q10-stems": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q10-stems.png",
+  "md5": "7331d9bb7ebf0092e1d1348c66f9fa47",
+  "alt": "Two light micrographs of stem cross-sections, one above the other. A: a round section with many small dark vascular bundles scattered all through it. B: a round section with larger vascular bundles set in a single ring near the edge. Arrows from the words Vascular bundles point to bundles in both sections.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q10(b)(ii)1",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: alamy.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   428,
+   420,
+   541,
+   668
+  ]
+ },
+ "biology-2026-ol-q10b-i-1-question": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q10b-i-1-question.png",
+  "md5": "675a8162a9856f910d907793d2cbab54",
+  "alt": "The printed question: (b)(i) The following questions relate to the dissection of an ox's or sheep's heart. The photograph shows a heart with its front side facing up. 1. Using a dotted line (a short row of dots is printed between the brackets), indicate on the photograph where an incision should be made. Beside it, the photograph of the heart from the front: a label Coronary artery points to a vessel running diagonally down across it, and arrows mark R on the left of the photograph and L on the right.",
+  "lettersVisible": [
+   "R",
+   "L"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q10(b)(i)1",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   82,
+   156,
+   545,
+   364
+  ],
+  "maskedFurniture": [
+   [
+    110,
+    224,
+    404,
+    366
+   ]
+  ]
+ },
+ "biology-2026-ol-q10b-i-1-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q10b-i-1-scheme.png",
+  "md5": "d7c08f1f6704eeebad472a6dd1125a09",
+  "alt": "The marking scheme's copy of the heart photograph with two thick dashed lines drawn on it, parallel to each other, each running diagonally from upper right down to lower left across the front of the heart; one crosses its middle and the other lies nearer its right-hand side.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q10(b)(i)1",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level marking scheme — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   143,
+   289,
+   216,
+   392
+  ],
+  "solution": true
+ },
+ "biology-2026-ol-q12-dna": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q12-dna.png",
+  "md5": "780b1a2aa51bed21006fb999ac326c04",
+  "alt": "Ladder diagram of a DNA molecule: four rungs leave the left-hand strand from boxes holding the bases C, G, A and T, top to bottom; each rung is dotted across the middle and ends in an empty box at the right-hand strand.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q12(c)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   424,
+   528,
+   541,
+   686
+  ]
+ },
+ "biology-2026-ol-q12-punnett": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q12-punnett.png",
+  "md5": "44afe52cbd9d811d92c246c1b137ab7f",
+  "alt": "Three rose photographs captioned Red (RR), Pink followed by a blank line, and White (rr). Below them, an empty Punnett square: one box at the top labelled Genotype of white rose gamete; two boxes down the left side labelled Genotypes of pink rose gametes; two long boxes labelled Offspring genotypes; and two blank lines to the right labelled Matching offspring phenotypes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q12(b)(ii)1",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com; State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   312,
+   172,
+   542,
+   466
+  ],
+  "maskedFurniture": [
+   [
+    312,
+    172,
+    350,
+    240
+   ],
+   [
+    312,
+    262,
+    405,
+    280
+   ]
+  ]
+ },
+ "biology-2026-ol-q12-roses": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q12-roses.png",
+  "md5": "a3d30584fa072d032ced64fe932f06d0",
+  "alt": "Three rose photographs side by side, captioned Red (RR), Pink followed by a blank line, and White (rr).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q12(b)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   354,
+   172,
+   541,
+   252
+  ]
+ },
+ "biology-2026-ol-q13-axes": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q13-axes.png",
+  "md5": "4a6f7c1944dd1bb6d64f39739a0853ce",
+  "alt": "A pair of blank axes: a vertical arrow and a horizontal arrow meeting at the lower left, with an empty label box beside the vertical axis and another below the horizontal axis.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q13(c)(v)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   210,
+   618,
+   382,
+   746
+  ]
+ },
+ "biology-2026-ol-q13-equation": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q13-equation.png",
+  "md5": "3f76fe946203af3e69c4bacf81b34663",
+  "alt": "Word equation: Carbon dioxide plus a box labelled A, then an arrow marked Light energy above and Chlorophyll below, leading to a box labelled B plus Oxygen.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q13(b)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   116,
+   184,
+   482,
+   222
+  ]
+ },
+ "biology-2026-ol-q13-formula": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q13-formula.png",
+  "md5": "bd7f6c232f97c7bc69b646c8199d5560",
+  "alt": "The letters C, H and O, each followed by an empty box for its number.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q13(b)(ii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   444,
+   250,
+   540,
+   280
+  ]
+ },
+ "biology-2026-ol-q14-digestive": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q14-digestive.png",
+  "md5": "1b5558ce187edd2b566142b3546a0e34",
+  "alt": "Line drawing of the human digestive system. Printed labels name the Liver, the Pancreas and the Small intestine. Arrow A points to the narrow tube entering from the top; arrow C to the bag-shaped organ that tube leads into, on the right below the liver; arrow B to the start of the wide, pouched tube that frames the small intestine on three sides.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q14(b)(iv)1",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   302,
+   248,
+   545,
+   474
+  ]
+ },
+ "biology-2026-ol-q15-foetus": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q15-foetus.png",
+  "md5": "151b5aec46df853a7e586a8196664cf7",
+  "alt": "Side-view diagram of a pregnant abdomen with a foetus curled head-down inside the uterus. A label Placenta points to the thick ribbed pad on the uterine wall at the left, joined to the foetus by a coiled cord.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q15(b)(ii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   398,
+   216,
+   542,
+   390
+  ]
+ },
+ "biology-2026-ol-q15-sperm": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q15-sperm.png",
+  "md5": "81823beaffe5cd66631df99661d7af56",
+  "alt": "Line drawing of a sperm cell. Arrow C points to the oval end at the upper right; arrow B to the short beaded section just behind it; arrow A to the long thin thread curving away to the lower left.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q15(c)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   372,
+   481,
+   545,
+   604
+  ]
+ },
+ "biology-2026-ol-q16-heart": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q16-heart.png",
+  "md5": "4b528b330a3c02f79142965d6dc53162",
+  "alt": "Outline diagram of the right side of the heart. A label Right atrium points into the upper chamber. Arrow A points to a vessel entering that chamber at the top left; arrow B to a flap where the upper chamber opens into the lower one; arrow C into the large lower chamber, from which a vessel rises up the right-hand side.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q16(c)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   405,
+   54,
+   545,
+   268
+  ]
+ },
+ "biology-2026-ol-q16-joint": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q16-joint.png",
+  "md5": "22e16ad0af774e10db8f3a7feaf63015",
+  "alt": "Diagram of a joint in section: two bone ends, spongy inside, meet within a capsule. Arrow A points to the outer band wrapping the joint; two arrows labelled B point to the smooth caps over the ends of both bones; arrow C points to the dark space between the bone ends.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q16(a)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   392,
+   94,
+   548,
+   270
+  ]
+ },
+ "biology-2026-ol-q16-skin": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q16-skin.png",
+  "md5": "3a0c97f2cc71d071c7bdd2872956fde1",
+  "alt": "Diagram of a block of skin with hairs growing out of the surface. A bracket labelled P marks the thin top layer; arrow Q points to a hair shaft where it passes through that layer; arrow R points to a thin tube rising to the surface from a coiled knot in the lower layer; arrow S points to a small lobed sac beside the hair.",
+  "lettersVisible": [
+   "P",
+   "Q",
+   "R",
+   "S"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q16(b)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   336,
+   410,
+   545,
+   614
+  ]
+ },
+ "biology-2026-ol-q16-tissues": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q16-tissues.png",
+  "md5": "52c744b9873d60823cdf7760a2cb1a74",
+  "alt": "Two drawings of plant vascular tissue side by side. Tissue A: long tubes whose labels read No end-walls between cells and Thick walls with lignin. Tissue B: a column of cells whose label reads Cells have end-walls with pores (sieve plate), with a row of smaller cells alongside, each holding a dark nucleus.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q16(d)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   136,
+   379,
+   468,
+   566
+  ]
+ },
+ "biology-2026-ol-q16c-ii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q16c-ii-question.png",
+  "md5": "9dd79a936d10ec1c8d6cba8d6616b563",
+  "alt": "The printed question: (c) The diagram shows the right side of the human heart. (ii) Copy the diagram, without the labels, into your answerbook and draw at least two arrows to indicate the direction of blood flow through the right-hand side of the heart. Beside it, the outline diagram of the right side of the heart: a label Right atrium points into the upper chamber, and arrows A, B and C point to a vessel entering at the top left, a flap between the upper and lower chambers, and the large lower chamber.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q16(c)(ii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   82,
+   56,
+   545,
+   272
+  ],
+  "maskedFurniture": [
+   [
+    110,
+    72,
+    405,
+    146
+   ],
+   [
+    110,
+    204,
+    405,
+    274
+   ]
+  ]
+ },
+ "biology-2026-ol-q16c-ii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q16c-ii-scheme.png",
+  "md5": "38d8a8cbf09be80b920f863a1df44df3",
+  "alt": "The marking scheme's copy of the heart diagram with two arrows drawn on it: one runs from the vessel at the top left down into the upper chamber; the other runs from the lower chamber up through the vessel on the right-hand side and out at the top.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q16(c)(ii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 27,
+  "sourceRect": [
+   158,
+   222,
+   254,
+   416
+  ],
+  "solution": true
+ },
+ "biology-2026-ol-q17-ear": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q17-ear.png",
+  "md5": "1e3b4cb949d2c9a588865082fa4cf3e2",
+  "alt": "Diagram of the human ear in section. Arrow A points to the outer flap of the ear; arrow B to the thin membrane across the inner end of the ear canal; arrow C to the three looped tubes above the coiled cochlea; arrow D to the tube running down and away from the middle ear.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q17(a)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: istockphoto.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   306,
+   100,
+   545,
+   264
+  ]
+ },
+ "biology-2026-ol-q17-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q17-flower.png",
+  "md5": "9e7d3f7a9dea193ff09e666e2f0b7fe7",
+  "alt": "Diagram of a flower in section. Arrow X points to the top of the central column; arrow Z to the swollen chamber at its base; arrow Y to the thin stalk of one of the oval structures around it, one of which is labelled Anther.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q17(c)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Adapted from Sarah Greenwood, wikimedia.org",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   388,
+   56,
+   545,
+   180
+  ]
+ },
+ "biology-2026-ol-q17-organisms": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q17-organisms.png",
+  "md5": "881d5be6052100b2d0ee15cf7d3efcef",
+  "alt": "Two boxed diagrams. Diagram A: upright stalks rising from a horizontal thread with root-like branches below, each stalk topped by a round head full of small dots. Diagram B: two oval cells, a small one joined to the top of a larger one, each with a dark nucleus and a pale vacuole.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q17(d)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: shutterstock.com; dreamstime.com",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   380,
+   323,
+   540,
+   466
+  ]
+ },
+ "biology-2026-ol-q17-table": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q17-table.png",
+  "md5": "e2e5f15b9cc0b270b5081716fe2d6b6f",
+  "alt": "Table with three columns: Name of gland, Hormone, and Function of hormone. Row 1: blank, Growth hormone, Growth. Row 2: blank, blank, Fight or flight response (the phrase in quotation marks). Row 3: Thyroid, blank, Controls the rate of metabolism.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q17(b)(iii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   140,
+   534,
+   542,
+   642
+  ]
+ },
+ "biology-2026-ol-q17d-table": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q17d-table.png",
+  "md5": "7c7fa997162ae9c8f28ea037c27581e5",
+  "alt": "Table with two columns, Organism and Reproduces by..., and two rows: Yeast with an empty box, and Rhizopus with an empty box.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q17(d)(iii)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   140,
+   470,
+   364,
+   530
+  ]
+ },
+ "biology-2026-ol-q4-evidence": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q4-evidence.png",
+  "md5": "dc74ce869e07b37d3ca2e9fb9a41f802",
+  "alt": "Three boxed panels numbered 1 to 3. Panel 1: outline drawings of early embryos of a fish, a turtle, a chicken and a human, each curled, with a dark eye spot and small slits behind the head, all very alike. Panel 2: the forelimb bones of a human arm, a cat leg, a bat wing and a whale flipper side by side, each built from one upper bone, two lower bones and many finger bones. Panel 3: a photograph of a fossil in rock, captioned Trilobite (an extinct organism).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q4(b)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: Bach H, Bernhardt D, Crome W et al (1967b) Entwicklung der Organismen. Lehrbuch der Biologie. Volk und Wissen, Berlin; shutterstock.com; James L. Amos, nationalgeographic.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   112,
+   178,
+   542,
+   359
+  ]
+ },
+ "biology-2026-ol-q5-food-web": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q5-food-web.png",
+  "md5": "751c4457bb89ea837806380316e8eb7d",
+  "alt": "Food web of pictured organisms joined by arrows. Oak tree, Leaf litter and Blackberry bush sit along the bottom. Arrows run from Oak tree to Squirrel, Caterpillar and Wood mouse; from Leaf litter to Earthworm; from Earthworm to Shrew and Wood mouse; from Blackberry bush to Shrew, Wood mouse and Fox; from Caterpillar to Shrew; from Squirrel to Owl; from Shrew to Owl, Badger and Fox; and from Wood mouse to Owl, Badger and Fox.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q5(a)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: dreamstime.com; shutterstock.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   112,
+   74,
+   482,
+   324
+  ]
+ },
+ "biology-2026-ol-q6-bacterium": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q6-bacterium.png",
+  "md5": "79a82650d0c3f74dacd21cf4aa2b8447",
+  "alt": "Diagram of a rod-shaped cell with rounded ends. Arrow X points to a small ring inside the cell; arrow Y points to the inner line of the cell boundary and arrow Z to its outer layer. A tangled loop of thread lies in the middle of the cell, and a long whip-like tail leaving one end is labelled Flagellum.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q6(a)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   350,
+   54,
+   575,
+   222
+  ]
+ },
+ "biology-2026-ol-q7-breathing": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q7-breathing.png",
+  "md5": "89dfef01681339b396e6311edca4887c",
+  "alt": "Diagram of the human breathing system beside a table. The head and neck are shown in side section above a tube that runs down the neck and divides into two large sacs, with a curved band beneath them. Circled numbers point to: 1, the tube in the neck; 3, a box-shaped part at the top of that tube; 4, the rings along it; 2, one of the two branches the tube divides into; 7, the two large sacs; 8, the curved band below them. A magnified circle shows a fine airway, 6, ending in a bunch of tiny round sacs, 5. The table has columns Named part and Number: Alveolus is struck through with 5 filled in as the example, then the Number box is empty beside Diaphragm, Lungs, Bronchus, Trachea (windpipe), Bronchiole, Rings of cartilage and Larynx (voice box).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q7(a) — Bronchiole",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   84,
+   136,
+   541,
+   414
+  ]
+ },
+ "biology-2026-ol-q8-microscope": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q8-microscope.png",
+  "md5": "8d688f70732589783af6b7d216b32495",
+  "alt": "Photograph of a light microscope. Arrow A points to the short cylinder at the very top of the body tube; arrow B points to one of the short lenses on the rotating turret above the stage.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q8(a)(i)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: alamy.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   464,
+   116,
+   543,
+   240
+  ]
+ },
+ "biology-2026-ol-q8-photos": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q8-photos.png",
+  "md5": "82370b6a4af16eaffdced391c3893305",
+  "alt": "Two black-and-white light micrographs side by side. Left: long, many-sided cells packed in rows, each with a dark nucleus; an arrow from the words Cell wall points to the thick line between two cells. Right: a few flat, irregular cells with dark nuclei and no thick boundary lines, beside the words No cell wall.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q8(b)(vi)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: microbehunter.com; shutterstock.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   136,
+   645,
+   512,
+   724
+  ]
+ },
+ "biology-2026-ol-q9-flasks": {
+  "src": "/exam-figures/biology/markbank/biology-2026-ol-q9-flasks.png",
+  "md5": "1a6be21f860a4babf07b969749318da4",
+  "alt": "Two conical flasks side by side. The left flask holds grey, opaque liquid, labelled Cloudy product; the right flask holds clear liquid, labelled Non-cloudy (clear) product.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2026 OL Q9(b)(vi)",
+  "year": 2026,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2026 Ordinary Level examination paper — © State Examinations Commission; source credited in the paper's acknowledgements: biorender.com",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   140,
+   621,
+   528,
+   710
+  ]
  }
 }

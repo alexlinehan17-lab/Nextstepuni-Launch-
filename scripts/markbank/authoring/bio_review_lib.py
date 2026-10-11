@@ -47,7 +47,7 @@ LEVEL_WORD = {'hl': 'higher', 'ol': 'ordinary'}
 # What may stand in front of a selection on its printed line: part markers
 # ("(b)", "(iii)", "2.") and the scheme's asterisk. Anything else in front means
 # the selector cut into a sentence, which is refused.
-_LEAD = re.compile(r'^(?:\s*(?:\([a-h]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)|\d{1,2}\.|\*))*\s*$')
+_LEAD = re.compile(r'^(?:\s*(?:\([a-h]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)|\d{1,2}\.|[A-Z]:|\*))*\s*$')
 # ...or a whole earlier SENTENCE on the same printed line: a selection may open
 # at a sentence boundary ("...of the leaf.  To which tissue type...").
 _AFTER_SENTENCE = re.compile(r'[.?!:]\s+$')
@@ -72,6 +72,35 @@ def sha256(path):
     return h.hexdigest()
 
 
+# Symbol-font glyphs, decoded by the font they are set in. A PDF stores a
+# Wingdings character at 0xF000 + its code, and the code means different things
+# in different symbol fonts (0xF081 is a circled 1 in Wingdings and a bullet in
+# another), so the font is read with the character. Wingdings numbers its
+# circled digits 0x81-0x8A for 1-10; 0xFC is its check mark, as is Wingdings 2's
+# 0x50 (the same mapping derive_glyphs.LIGATURE records for the bank).
+def _decode_symbol(ch, font):
+    o = ord(ch)
+    if 'Wingdings' in font and 'Wingdings2' not in font.replace(' ', ''):
+        if 0xF081 <= o <= 0xF08A:
+            return chr(0x2460 + o - 0xF081)
+        if o == 0xF0FC:
+            return '\u2713'
+    if 'Wingdings2' in font.replace(' ', '') and o == 0xF050:
+        return '\u2713'
+    return ch
+
+
+def _page_lines(page):
+    """The page's printed lines, as page.get_text() returns them, with each
+    symbol-font glyph decoded by its own font."""
+    out = []
+    for b in page.get_text('dict')['blocks']:
+        for ln in b.get('lines', []):
+            out.append(''.join(''.join(_decode_symbol(c, sp['font']) for c in sp['text'])
+                               for sp in ln['spans']))
+    return out
+
+
 def _norm(line):
     line = unligature(line.replace(' ', ' ').replace(' ', ' '))
     return re.sub(r'\s+', ' ', line).strip()
@@ -88,10 +117,60 @@ class Src:
         self.pages = self.doc.page_count
         self.lines = {}
         for i, page in enumerate(self.doc):
-            self.lines[i + 1] = [n for n in (_norm(l) for l in page.get_text().splitlines()) if n]
+            self.lines[i + 1] = [n for n in (_norm(l) for l in _page_lines(page)) if n]
 
     def page_text(self, page):
         return ' '.join(self.lines[page])
+
+    # ---- geometry: answers the scheme prints as a mark, not as words ------
+    def find_box(self, page, text, clip=None):
+        """Bounding boxes of `text` on the page (inside `clip` when given)."""
+        pg = self.doc[page - 1]
+        hits = [fitz.Rect(h) for h in pg.search_for(text)]
+        return [h for h in hits if clip is None or self._inside(h, clip)]
+
+    def find_exact(self, page, text, clip=None):
+        """As find_box, but case-sensitive: the box must read exactly `text`
+        (PyMuPDF's search ignores case, so "True" also finds "true or false")."""
+        pg = self.doc[page - 1]
+        return [b for b in self.find_box(page, text, clip)
+                if _norm(pg.get_textbox(b)) == text]
+
+    # A glyph belongs to a clip when its CENTRE is inside it. PyMuPDF's own
+    # clip keeps anything that merely touches the rectangle, so two adjacent
+    # clips (one row of a table and the next) could both claim a glyph.
+    @staticmethod
+    def _inside(r, clip):
+        cx, cy = (r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2
+        return clip[0] <= cx <= clip[2] and clip[1] <= cy <= clip[3]
+
+    def _chars(self, page, clip):
+        pg = self.doc[page - 1]
+        for b in pg.get_text('rawdict')['blocks']:
+            for ln in b.get('lines', []):
+                for sp in ln['spans']:
+                    for ch in sp['chars']:
+                        r = fitz.Rect(ch['bbox'])
+                        if self._inside(r, clip):
+                            yield r, ch['c'], sp['font']
+
+    def answer_ticks(self, page, clip):
+        """The examiner's answer ticks: the Wingdings check mark (U+F0FC) drawn
+        at answer size. The same glyph printed small inside a question's own
+        "(tick)" instruction is ignored by its height."""
+        return [r for r, c, _ in self._chars(page, clip)
+                if c in ('\uf0fc', '\u2713') and r.height > 18]
+
+    def wingdings_digits(self, page, clip):
+        """Circled numbers set in Wingdings (U+F081 = 1 ... U+F08A = 10), with
+        their boxes, decoded by the font's own encoding."""
+        return [(r, ord(c) - 0xF080) for r, c, font in self._chars(page, clip)
+                if 'Wingdings' in font and 0xF081 <= ord(c) <= 0xF08A]
+
+    def words(self, page, clip):
+        pg = self.doc[page - 1]
+        return [(fitz.Rect(w[:4]), w[4]) for w in pg.get_text('words')
+                if self._inside(fitz.Rect(w[:4]), clip)]
 
     def _line_of(self, page, anchor, lo, hi, what):
         L = self.lines[page]
@@ -171,10 +250,11 @@ def join_lines(segments):
 # The ledger is data. These constructors only record selectors; nothing is
 # lifted until build() runs against the PDFs.
 
-def Q(page, start, end=None, doc=None, after=None, before=None, nth=1):
-    """A slice of the QUESTION paper (doc defaults to the task's booklet)."""
+def Q(page, start, end=None, doc=None, after=None, before=None, nth=1, br=False):
+    """A slice of the QUESTION paper (doc defaults to the task's booklet).
+    `br` starts it on a new line, as the paper sets printed options."""
     return {'src': 'paper', 'doc': doc, 'page': page, 'start': start, 'end': end,
-            'after': after, 'before': before, 'nth': nth}
+            'after': after, 'before': before, 'nth': nth, 'br': br}
 
 
 def M(marker, page, doc=None):
@@ -199,11 +279,11 @@ def S(start, end=None, page=None, after=None, before=None, nth=1):
 
 
 def pt(sel, marks, label=None, kind=None, note=None, units=None, first_alt=False,
-       note_sel=None):
+       note_sel=None, note_lead=None):
     """One marking row lifted whole from the scheme."""
     return {'type': 'pt', 'sel': sel, 'marks': marks, 'label': label, 'kind': kind,
             'note': note, 'units': units or [marks], 'first_alt': first_alt,
-            'note_sel': note_sel}
+            'note_sel': note_sel, 'note_lead': note_lead}
 
 
 def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None):
@@ -214,14 +294,29 @@ def anyn(sel, claim, per, steps=None, note=None, options=None, note_sel=None):
             'note': note, 'options': options, 'note_sel': note_sel}
 
 
+def G(kind, page=None, clip=None, expect=None, **kw):
+    """A row whose answer the scheme prints as a MARK rather than as words: a
+    tick in a box, a circled number, letters in boxes. The value is read from
+    the glyphs' positions on the scheme page; `expect` is the reviewer's own
+    reading of the rendered page, and the two must agree."""
+    return {'type': 'geo', 'kind': kind, 'page': page, 'clip': clip, 'expect': expect, **kw}
+
+
 def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
       qfig=None, labels=None, source_pages=None, route=None, notes='', decision='',
-      paper_pages=None, scheme_pages=None, leaf=None):
-    """One reviewed task -> one card."""
+      paper_pages=None, scheme_pages=None, leaf=None, held=None, item=None):
+    """One reviewed task -> one card (or, with `held`, a reviewed task kept
+    out of the bank for the stated reason and reported as open).
+
+    `route` names one option of a closed choose-one pool: the pool's cards are
+    alternatives and its tariff counts once. `item` = (slug, label) names one
+    separately priced entry of a printed list carded on its own: every item
+    counts."""
     return dict(key=key, ref=ref, sec=sec, q=q, rows=rows, topic=topic, concept=concept,
                 sq=sq, total=total, stem=stem or [], fig=fig, qfig=qfig, labels=labels or [],
                 source_pages=source_pages, route=route, notes=notes, decision=decision,
-                paper_pages=paper_pages, scheme_pages=scheme_pages, leaf=leaf)
+                paper_pages=paper_pages, scheme_pages=scheme_pages, leaf=leaf, held=held,
+                item=item)
 
 
 def L(letter, meaning_sel, asked):

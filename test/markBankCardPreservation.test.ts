@@ -108,7 +108,13 @@ const decks = [
    * expanded into their three printed areas each. Nothing removed: the 673
    * cards from 2021-2025 keep their identity hash, pinned below. */
   ['biology:higher', BIO_HIGHER, 861, 'c05852c5659b8d0d88e873a68d0d907f4a35328a24259b2328db0f82e6434748'],
-  ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
+  /* 2026-10-11: biology ordinary 686 -> 873. The 2026 Ordinary sitting is
+   * added from the same review (bio_review_2026_ol.py): 183 tasks, 187 cards
+   * once the four closed choose-one pools (Q7(c), Q13(b)(vi), Q16(c)(vi),
+   * Q17(a)(iv)) are expanded, and one task (Q12(b)(ii)2) held over a scheme
+   * misprint. Nothing removed: the 686 cards from 2021-2025 keep their
+   * identity hash, pinned below. */
+  ['biology:ordinary', BIO_ORDINARY, 873, 'aa51f373eca47284591b389b60a534ef663c9fddee03c42c87b4378a72816f9e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
    *
@@ -773,7 +779,8 @@ describe('Mark Bank card preservation', () => {
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
     // ...and the 2026 Higher Biology review: 19,328 + 188.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_516);
+    // ...and the 2026 Ordinary Biology review: 19,516 + 187.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_703);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -859,6 +866,9 @@ describe('Mark Bank card preservation', () => {
     const added = BIO_HIGHER.filter(card => card.year === 2026);
     expect(added).toHaveLength(188);
     expect(added.every(card => card.id.startsWith('bio-2026-hl-'))).toBe(true);
+    const addedOrdinary = BIO_ORDINARY.filter(card => card.year === 2026);
+    expect(addedOrdinary).toHaveLength(187);
+    expect(addedOrdinary.every(card => card.id.startsWith('bio-2026-ol-'))).toBe(true);
   });
 
   it('adds the Art choose-two routes without replacing any existing card id', () => {

@@ -120,13 +120,115 @@ def strip_stars(text):
     return re.sub(r'\s+', ' ', text.replace('*', '')).strip()
 
 
+# ----------------------------------------------------------------- geometry --
+
+def _center(r):
+    return ((r.x0 + r.x1) / 2, (r.y0 + r.y1) / 2)
+
+
+def read_geo(lifter, spec, sp):
+    """The answer a scheme prints as a mark, read from glyph positions."""
+    src = lifter.srcs['scheme']
+    page = spec.get('page') or sp
+    clip = spec['clip']
+    kind = spec['kind']
+    lifter.used['scheme'].add(page)
+    if kind in ('tick-row', 'tick-col'):
+        ticks = src.answer_ticks(page, clip)
+        if len(ticks) != 1:
+            raise Refusal(f'{kind} p{page} {clip}: {len(ticks)} answer ticks, expected 1')
+        tx, ty = _center(ticks[0])
+        if kind == 'tick-row':
+            scored = []
+            for choice in spec['choices']:
+                # A choice is its printed text, or (text, clip) where the same
+                # words print twice in the row ("Cell wall" / "No cell wall").
+                choice, cclip = choice if isinstance(choice, (tuple, list)) else (choice, clip)
+                boxes = src.find_box(page, choice, cclip)
+                if not boxes:
+                    raise Refusal(f'tick-row p{page}: choice {choice!r} not printed in {cclip}')
+                b = boxes[0]
+                dy = abs((b.y0 + b.y1) / 2 - ty)
+                dx = abs(ticks[0].x0 - b.x1)
+                scored.append((round(dy / 6), dx, choice))
+            value = min(scored)[2]
+        else:
+            scored = []
+            for head in spec['headers']:
+                boxes = [b for b in src.find_exact(page, head) if b.y1 <= clip[1] + 2]
+                if not boxes:
+                    raise Refusal(f'tick-col p{page}: header {head!r} not above {clip}')
+                b = max(boxes, key=lambda r: r.y0)
+                if sum(1 for r in boxes if abs(r.y0 - b.y0) < 2) > 1:
+                    raise Refusal(f'tick-col p{page}: header {head!r} printed twice on one line')
+                scored.append((abs((b.x0 + b.x1) / 2 - tx), head))
+            value = min(scored)[1]
+    elif kind == 'circled':
+        boxes = src.find_box(page, spec['part'], clip)
+        if not boxes:
+            raise Refusal(f'circled p{page}: {spec["part"]!r} not printed in {clip}')
+        b = boxes[0]
+        row = [n for r, n in src.wingdings_digits(page, clip)
+               if abs(_center(r)[1] - (b.y0 + b.y1) / 2) < 6 and r.x0 > b.x1]
+        if len(row) != 1:
+            raise Refusal(f'circled p{page}: {len(row)} circled numbers beside {spec["part"]!r}')
+        value = f'{spec["part"]} — {chr(0x2460 + row[0] - 1)}'
+    elif kind == 'tokens':
+        words = sorted(src.words(page, clip), key=lambda w: (round(w[0].y0 / 8), w[0].x0))
+        value = ' '.join(t for _, t in words)
+    elif kind == 'lines':
+        # Printed rows, top to bottom, each read left to right: a formula the
+        # scheme sets as its letters over their numbers ("C H O" / "6 12 6").
+        rows = []
+        for r, t in sorted(src.words(page, clip), key=lambda w: _center(w[0])[1]):
+            cy = _center(r)[1]
+            if rows and abs(rows[-1][0] - cy) < 6:
+                rows[-1][1].append((r.x0, t))
+            else:
+                rows.append([cy, [(r.x0, t)]])
+        value = ' — '.join(' '.join(t for _, t in sorted(cells)) for _, cells in rows)
+    elif kind == 'tokens-x':
+        # Left to right only: a formula whose subscripts sit below the line.
+        words = sorted(src.words(page, clip), key=lambda w: w[0].x0)
+        value = ' '.join(t for _, t in words)
+    elif kind == 'pair':
+        words = [(r, t) for r, t in src.words(page, clip) if len(t) == 1]
+        rows = []
+        for r, t in sorted(words, key=lambda w: _center(w[0])[1]):
+            cy = _center(r)[1]
+            if rows and abs(rows[-1][0] - cy) < 6:
+                rows[-1][1].append((r.x0, t))
+            else:
+                rows.append([cy, [(r.x0, t)]])
+        pairs = [' — '.join(t for _, t in sorted(cells)) for _, cells in rows]
+        value = pairs[spec['index']]
+    else:
+        raise Refusal(f'unknown geometry kind {kind!r}')
+    if value != spec['expect']:
+        raise Refusal(f'{kind} p{page}: glyph positions read {value!r}, reviewer read '
+                      f'{spec["expect"]!r}')
+    return value
+
+
 # ------------------------------------------------------------------- building --
 
 def build_row(lifter, spec, row_id, task_doc, sp, lo):
     notes = []
-    if spec['type'] == 'pt':
+    if spec['type'] == 'geo':
+        value = read_geo(lifter, spec, sp)
+        label = None
+        if spec.get('label'):
+            label, _ = lifter.lift(spec['label'], task_doc, sp, lo)
+            label = strip_stars(label).rstrip(':').strip()
+        kind = spec.get('row_kind') or ('gate' if spec.get('gate') else 'point')
+        row = {'id': row_id, 'kind': kind,
+               'verbatim': f'{label} — {value}' if label else value, 'marks': spec['marks']}
+        if kind == 'gate':
+            row['exactTermRequired'] = True
+        units, worth = [spec['marks']], spec['marks']
+    elif spec['type'] == 'pt':
         text, meta = lifter.lift(spec['sel'], task_doc, sp, lo)
-        starred = meta['starred'] or text.startswith('*')
+        starred = meta['starred'] or '*' in text
         if spec.get('first_alt'):
             text = text.split(' or ')[0]
         text = strip_stars(text)
@@ -154,6 +256,9 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
         options, starred_any = [], False
         if spec.get('options'):
             for o in spec['options']:
+                if o.get('type') == 'geo':
+                    options.append(read_geo(lifter, o, sp))
+                    continue
                 sel = o['sel'] if 'sel' in o else o
                 osel = dict(sel)
                 if isinstance(o, dict) and o.get('end_nth'):
@@ -184,7 +289,8 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
             raise Refusal(f'{row_id}: {len(options)} options for claim {spec["claim"]}')
     if spec.get('note_sel'):
         n, _ = lifter.lift(spec['note_sel'], task_doc, sp, lo)
-        notes.append(strip_stars(n))
+        n = strip_stars(n)
+        notes.append(f'{spec["note_lead"]} {n}' if spec.get('note_lead') else n)
     if spec.get('note'):
         notes.append(spec['note'])
     if notes:
@@ -211,7 +317,7 @@ def build(ledger, year, level):
     fail(problems)
 
     # --- tasks ------------------------------------------------------------
-    cards, audit_tasks = [], []
+    cards, audit_tasks, held = [], [], []
     units_by = defaultdict(Counter)
     totals_q, totals_part = defaultdict(int), defaultdict(int)
     seen_ids = set()
@@ -224,7 +330,14 @@ def build(ledger, year, level):
             txt, meta = lifter.lift(s, doc)
             qparts.append(txt)
             qmetas.append(meta)
-        qtext = join(qparts)
+        qtext = ''
+        for s_, txt in zip(qsels, qparts):
+            if not qtext:
+                qtext = txt
+            elif s_.get('br'):
+                qtext = f'{qtext}\n{txt}'
+            else:
+                qtext = join([qtext, txt])
         stem = join(lifter.lift(s, doc)[0] for s in t['stem'])
         # The scheme's reprint: the pairing anchor and the scope of the rows.
         sq = t['sq']
@@ -264,7 +377,8 @@ def build(ledger, year, level):
                 variants.append({'id': vid, 'label': vlabel, 'rows': vrows})
         qn, letter, roman, item = B.parse_ref(t['ref'])
         key_part = (qn, letter)
-        cid = B.card_id(year, level, t['ref'], t['route'])
+        item = t.get('item')
+        cid = B.card_id(year, level, t['ref'], t['route'] or (item[0] if item else None))
         if cid in seen_ids:
             problems.append(f'{cid}: duplicate card id')
         seen_ids.add(cid)
@@ -279,7 +393,8 @@ def build(ledger, year, level):
         card = {
             'id': cid, 'subjectId': 'biology', 'topicId': t['topic'], 'conceptId': t['concept'],
             'section': t['sec'],
-            'questionRef': f'{year} {LT} {t["ref"]}' + (f' — {t["route"]}' if t['route'] else ''),
+            'questionRef': f'{year} {LT} {t["ref"]}' + (f' — {t["route"]}' if t['route'] else '')
+                           + (f' — {item[1]}' if item else ''),
         }
         if stem:
             card['stem'] = stem
@@ -312,22 +427,39 @@ def build(ledger, year, level):
                 'presentationNote': 'Open the exact examination page to use its published chart, '
                                     'table, photograph or diagram.',
             }
-        cards.append(card)
+        if t.get('held'):
+            held.append({'key': t['key'], 'id': cid, 'questionRef': card['questionRef'],
+                         'total': t['total'], 'reason': t['held'],
+                         'schemeRows': [r['verbatim'] for r in rows]})
+        else:
+            cards.append(card)
         audit_tasks.append({
+            'status': 'held' if t.get('held') else 'carded',
             'key': t['key'], 'id': cid, 'questionRef': card['questionRef'], 'section': t['sec'],
             'paper': {'doc': doc, 'pages': sorted({m['page'] for m in qmetas})},
             'scheme': {'pages': sorted({sq['page']})},
             'total': t['total'], 'markUnits': task_units, 'topic': t['topic'],
-            'concept': t['concept'], 'route': t['route'], 'rows': len(rows),
+            'concept': t['concept'], 'route': t['route'],
+            **({'item': item[1]} if item else {}), 'rows': len(rows),
             'figure': t['fig'], 'questionFigure': t['qfig'],
             'sourcePages': t['source_pages'], 'pairingScore': round(score, 2),
             'decision': t['decision'] or None, 'notes': t['notes'] or None,
         })
 
     # --- totals and checksums --------------------------------------------
+    ladders = getattr(ledger, 'LADDERS', {})
     for qn, total in ledger.QUESTION_TOTALS.items():
         got = totals_q.get(qn, 0)
-        if qn in ledger.BEST_OF:
+        if qn in ladders:
+            # One ladder over the whole question ("6(3) + (2)"): each response
+            # is carded at the ladder's step, and the ladder, not the sum of
+            # the cards, makes the printed total.
+            steps = ladders[qn]
+            units = sorted(units_by.get(qn, Counter()).elements())
+            if len(units) != len(steps) or set(units) != {steps[0]} or sum(steps) != total:
+                problems.append(f'Q{qn}: {len(units)} responses at {set(units)} do not fit the '
+                                f'ladder {steps} to {total}')
+        elif qn in getattr(ledger, 'BEST_OF', {}):
             n, per = ledger.BEST_OF[qn]
             parts = [c for c in cards
                      if B.parse_ref(c['questionRef'].split(' ', 2)[2].split(' — ')[0])[0] == qn]
@@ -349,6 +481,8 @@ def build(ledger, year, level):
     leaves = set(PC.leaves_of(parts))
     claimed = set()
     for t in ledger.TASKS:
+        if t.get('held'):
+            continue
         qn, letter, roman, _ = B.parse_ref(t['ref'])
         key = (qn, letter, roman)
         hit = [l for l in leaves if l == key or (l[0] == qn and l[1] == letter and roman is None)]
@@ -372,6 +506,33 @@ def build(ledger, year, level):
         if t['topic'] not in nodes:
             problems.append(f'{t["key"]}: topic {t["topic"]} is not among the Atlas topics for '
                             f'Q{qn} ({sorted(nodes)})')
+
+    # --- column layouts ---------------------------------------------------
+    # A two-column scheme layout reads into the text layer line by line, so
+    # which column a row belongs to is checked from where it is printed: the
+    # row's left edge must sit nearest the left edge of its own heading.
+    layout = []
+    for check in getattr(ledger, 'LAYOUT_CHECKS', []):
+        doc, page, item, heads, want = check[:5]
+        clip = check[5] if len(check) > 5 else None
+        src = lifter.srcs[doc]
+        ib = src.find_exact(page, item, clip)
+        if len(ib) != 1:
+            problems.append(f'layout {doc} p{page}: {item!r} printed {len(ib)} times')
+            continue
+        ib = ib[0]
+        scored = []
+        for h in heads:
+            hb = [b for b in src.find_exact(page, h, clip) if b.y0 < ib.y0]
+            if not hb:
+                problems.append(f'layout {doc} p{page}: no {h!r} above {item!r}')
+                continue
+            b = max(hb, key=lambda r: r.y0)
+            scored.append((abs(b.x0 - ib.x0), h))
+        if scored and min(scored)[1] != want:
+            problems.append(f'layout {doc} p{page}: {item!r} sits under {min(scored)[1]!r}, '
+                            f'ledger says {want!r}')
+        layout.append({'doc': doc, 'page': page, 'item': item, 'column': want})
     fail(problems)
     checks = {
         'censusLeaves': len(leaves), 'censusLeavesClaimed': len(claimed),
@@ -381,6 +542,8 @@ def build(ledger, year, level):
                      'Atlas topics (biology-<year>-exam-topic-map.json via '
                      'biology-curriculum-crosswalk.json)',
         'tickChecksumsMatched': len(ledger.CHECKSUMS),
+        **({'layoutChecks': layout} if layout else {}),
+        'held': held,
     }
     return lifter, cards, audit_tasks, checks
 
@@ -389,12 +552,18 @@ def build(ledger, year, level):
 
 def figures(ledger, lifter, year, level, write):
     out, records = {}, []
+    # Crops render from a freshly opened copy of each PDF: the lifter's copy
+    # has had every page's text layer read, and PyMuPDF 1.2x on this machine
+    # intermittently crashes building a display list on such a page.
+    fresh = {}
     for suffix, spec in ledger.FIGURES.items():
         doc, page, rect, credit, letters, alt, solution = spec[:7]
         masks = spec[7] if len(spec) > 7 else []
         key = f'biology-{year}-{level}-{suffix}'
         src = lifter.srcs[doc]
-        pg = src.doc[page - 1]
+        if doc not in fresh:
+            fresh[doc] = fitz.open(src.path)
+        pg = fresh[doc][page - 1]
         clip = fitz.Rect(*rect)
         if not pg.rect.contains(clip):
             raise Refusal(f'{key}: crop {rect} leaves page {page}')
@@ -445,8 +614,12 @@ def write_all(ledger, year, level, cards, audit_tasks, figs, lifter, checks):
     lost = [i for i in before if i not in new_ids]
     if lost:
         raise Refusal(f'refusing to drop existing card ids: {lost}')
+    # The sitting's cards go back where they were (appended when new), so a
+    # re-run leaves every other card, and the bank's order, untouched.
+    at = next((i for i, c in enumerate(bank) if c['id'].startswith(prefix)), len(bank))
     kept = [c for c in bank if not c['id'].startswith(prefix)]
-    bank = kept + cards
+    at -= sum(1 for c in bank[:at] if c['id'].startswith(prefix))
+    bank = kept[:at] + cards + kept[at:]
     with open(AUTHORED, 'w', encoding='utf-8') as fh:
         fh.write(json.dumps(bank, indent=1, ensure_ascii=False))
 
@@ -520,10 +693,20 @@ def main():
             write_all(ledger, args.year, args.level, cards, audit_tasks, figs, lifter, checks)
     except Refusal as e:
         print(f'REFUSED {args.year} {args.level}:\n{e}')
-        sys.exit(1)
+        sys.stdout.flush()
+        os._exit(1)
     base = len({t['key'] for t in ledger.TASKS})
     print(f'biology {args.year} {args.level}: {base} reviewed tasks -> {len(cards)} cards, '
-          f'{len(figs)} figures' + (' (written)' if args.write else ' (check only)'))
+          f'{len(checks["held"])} held, {len(figs)} figures'
+          + (' (written)' if args.write else ' (check only)'))
+    for h in checks['held']:
+        print(f'  HELD {h["questionRef"]}: {h["reason"]}')
+    # Leave without interpreter teardown: PyMuPDF 1.26 on this machine
+    # intermittently segfaults freeing its documents at exit, which would turn
+    # a finished run's status into 139 after all its work is done.
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(0)
 
 
 if __name__ == '__main__':
