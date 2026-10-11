@@ -135,7 +135,9 @@ describe('Mathematics exam-topic registry', () => {
       expect(ids.length).toBeGreaterThan(0);
       expect(ids.filter(id => !canonicalIds.has(id))).toEqual([]);
     }
-    expectEveryExistingCardMapped('mathematics', 140, 1281, 1632, taxonomy);
+    // 1632 StudyClix placements plus 12 independently reviewed Foundation
+    // placements StudyClix never had: all eleven 2022 questions and 2023 Q10.
+    expectEveryExistingCardMapped('mathematics', 140, 1281, 1644, taxonomy);
   });
 });
 

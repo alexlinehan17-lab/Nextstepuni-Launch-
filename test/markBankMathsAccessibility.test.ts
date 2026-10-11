@@ -14,7 +14,11 @@ describe('Maths question presentation', () => {
       expect(card.sourceMaterial?.kind, card.id).toBe('source-question');
       expect(card.sourceMaterial?.pages.length, card.id).toBeGreaterThan(0);
       expect(card.sourceMaterial?.attribution, card.id).toContain('Foundation');
-      expect(card.questionText.length, card.id).toBeGreaterThan(15);
+      // A short printed ask ("Find |AD|.") is complete when the card carries its
+      // printed setup as the stem; otherwise the prompt itself must carry it.
+      const standsAlone = card.questionText.length > 15
+        || (card.questionText.length >= 8 && (card.stem ?? '').length >= 20);
+      expect(standsAlone, card.id).toBe(true);
     }
   });
 
