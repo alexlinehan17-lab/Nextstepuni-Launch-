@@ -272,15 +272,15 @@
     },
     "english-2026-hl-p1-composing-6": {
       "kind": "source-text",
-      "label": "SOURCE MATERIAL",
-      "title": "The young woman in the hansom cab",
+      "label": "TEXT 2",
+      "title": "Influential Life Moment",
       "pages": [
         4,
         5
       ],
-      "attribution": "Source as reproduced in the official SEC English paper.",
-      "reason": "The story must feature this specific character from Text 2.",
-      "questionSha256": "2d2eaa28ce626dfe76ca90d7900f2bc3f38e0245e0fc5b1f0ab18158eca953ad"
+      "attribution": "Elif Shafak — edited extract from her 2024 novel There are Rivers in the Sky, with three images (PDF4–5). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "2d2eaa28ce626dfe76ca90d7900f2bc3f38e0245e0fc5b1f0ab18158eca953ad",
+      "reason": "The story must feature “the young woman in TEXT 2”; scheme PDF20 expects inferences from TEXT 2 about the character (social setting/status, attitude). She appears on PDF5 (hansom cab, silk fan, wealthy lady looking through Arthur); the Victorian London setting is introduced on PDF4. The whole text is retained under its printed heading, replacing an unreviewed reader that carried an invented title."
     },
     "english-2018-ol-p2-unseen-q1": {
       "kind": "source-text",
@@ -2837,6 +2837,114 @@
       "attribution": "Long Distance — Moya Roddy, from her poetry collection The Dark Art of Darning, as reproduced in the SEC 2026 paper.",
       "questionSha256": "06aef6cc9fb2ede89be5fb59ae20273229a170582a45d0cfe01f8f03f92809bd",
       "reason": "Paper PDF14 prints the introduction (Moya Roddy, The Dark Art of Darning), the title, both stanzas (9 + 6 lines) and the byline; visually verified. PDF15 begins Prescribed Poem A and is excluded."
+    },
+    "english-2026-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "An Influential Place - My Unquenchable City",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Jeanette Winterson — edited article published in the Financial Times magazine in May 2024, with two images (PDF2–3). The introduction on PDF2 prints the first name “Jeannette”; the acknowledgements (PDF12) print “Jeanette”. As reproduced in the SEC 2026 paper.",
+      "questionSha256": "8022d0fc602af0cac5cac51bf0c842134e554862c452c9be618435c4706f7c98",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF5: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2026-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "An Influential Place - My Unquenchable City",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Jeanette Winterson — edited article published in the Financial Times magazine in May 2024, with two images (PDF2–3). The introduction on PDF2 prints the first name “Jeannette”; the acknowledgements (PDF12) print “Jeanette”. As reproduced in the SEC 2026 paper.",
+      "questionSha256": "aafd5c3e4c042c4cd17ae0725b753b1715c99ee3cac3069a479207255ff8cbcc",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF5: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2026-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "An Influential Place - My Unquenchable City",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Jeanette Winterson — edited article published in the Financial Times magazine in May 2024, with two images (PDF2–3). The introduction on PDF2 prints the first name “Jeannette”; the acknowledgements (PDF12) print “Jeanette”. As reproduced in the SEC 2026 paper.",
+      "questionSha256": "77b3c120ef8e202ad654f311ac60b2caf3fcb9ffb345a542941a5e98d18ef3b7",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF5: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2026-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Influential Life Moment",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Elif Shafak — edited extract from her 2024 novel There are Rivers in the Sky, with three images (PDF4–5). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "57c2d5f449b266fcb80a13ef6e8875217ed1054ae78f3b76c4fb33ac94a24291",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF5: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2026-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Influential Life Moment",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Elif Shafak — edited extract from her 2024 novel There are Rivers in the Sky, with three images (PDF4–5). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "37edd52bace981b06ec7541309fec4ee19e76f3f4460f6268b4779f23580dfb7",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF5: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2026-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Influential Life Moment",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Elif Shafak — edited extract from her 2024 novel There are Rivers in the Sky, with three images (PDF4–5). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "560965b2302e9a396eed5bb76ee3eb2dffe3c3e854bb69a4344dff743a80c43c",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF5: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2026-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Influence of the Arts",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Two edited extracts: Colm Tóibín, from his essay on Thomson Gunn in Ship in Full Sail, and Enuma Okoro, Art can Change how we Understand the World, with two images (PDF6–7). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "ffc763f7f77b76137fa4a638832b210b66045d428aab6fc3c96434b87f1b2225",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF5: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2026-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Influence of the Arts",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Two edited extracts: Colm Tóibín, from his essay on Thomson Gunn in Ship in Full Sail, and Enuma Okoro, Art can Change how we Understand the World, with two images (PDF6–7). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "df028503a1c7718fc7b425962258b317ff3a236ffe49e7438f50e66943430d59",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF5: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2026-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Influence of the Arts",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Two edited extracts: Colm Tóibín, from his essay on Thomson Gunn in Ship in Full Sail, and Enuma Okoro, Art can Change how we Understand the World, with two images (PDF6–7). As reproduced in the SEC 2026 paper.",
+      "questionSha256": "2f1df173131810b745d03ba3d200d88f4613f9275cc447dc52193980e220b5e9",
+      "reason": "Full 12-page visual sweep: heading, introduction, every column of the passage and the images checked. Scheme PDF5: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
     }
   }
 }

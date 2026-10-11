@@ -28173,6 +28173,472 @@
         "notes": "One global mark from the 2026 OL combined grid PDF72 (O1–O8), P+C and L+M read together."
       },
       "reason": "All 20 paper pages visually inspected one by one; exact task and award verified against the cited scheme pages, all viewed as rendered pages. Single Text Q1(a)(b)(c) 10 each (combined P+C 6, L+M 4), Q2–Q4 30 (discrete 9/9/9/3); Comparative (a)(i)/(ii) 15 (combined 9/6), (b) 40 (discrete 12/12/12/4); Unseen 10 (combined 6/4); Prescribed Q1(a)/(b) 15 (combined 9/6), Q2 (i)/(ii)/(iii) 20 (combined 12/8). Paper wording retained where the scheme reprints it with minor differences."
+    },
+    "english-2026-hl-p1-t1-a-i": {
+      "taskSha256": "85e3a1916cb7d0cef15c10dc6d228c6efa035e062a400787c6fddd13508927dc",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 15,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t1-a-ii": {
+      "taskSha256": "dc90d73166ce6bc159d67e905d2c9c869ae01d1f1a897fd184ef2ec85b5b2a93",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 15,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t1-a-iii": {
+      "taskSha256": "48af60474974131882d3a89588efc57cf5b2a04ae1b302bad6fb35cf246d8173",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 20,
+      "schemePages": [
+        6
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t1-b": {
+      "taskSha256": "5cfa0fb6a44e406668056d19b6d03604c71acbaf83f2c5183180045eb4b942bd",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 50,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t2-a-i": {
+      "taskSha256": "6603b7479d8cfdc600163889bd14b6547a6a4a3831eb3862f801fa7eaae700e1",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 15,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t2-a-ii": {
+      "taskSha256": "1d8f76b335e826ccca17c8e44f3abaef3bb2bfb295db33e316c4fa262e88fd91",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 15,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t2-a-iii": {
+      "taskSha256": "8670ee6751d3c20829c6cc78f9b195f7e6765f5e0b2c1e40fdae990ef0ea796d",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 20,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t2-b": {
+      "taskSha256": "9fa00ea8c02983c2313229a26f5020bf1c65f9fa721f2775f65d98a01a6e24d8",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 50,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t3-a-i": {
+      "taskSha256": "528036b68dcc323b48c2f8fea2f0e5b0723584012636deca6a92dd2e18fe6865",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 15,
+      "schemePages": [
+        11
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t3-a-ii": {
+      "taskSha256": "615da7a8bf87ae83a44a95cd994b77dd8161403e7da979e4fd75d826172338d3",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 15,
+      "schemePages": [
+        11
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t3-a-iii": {
+      "taskSha256": "ac1b4a1ab0cf5be7d555bab2dacf4d31032740549313bbc2ede35deb116cf1fd",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 20,
+      "schemePages": [
+        12
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF52); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-t3-b": {
+      "taskSha256": "df026e299473d86f63dd1b3ccc3f99917fc6bba47d32a341a63cd73931a705f8",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 50,
+      "schemePages": [
+        13
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-composing-1": {
+      "taskSha256": "d23474f300266fc8bc0d33639e04963da3cb7c031affeb578c6aa868060b4ace",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        15
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-composing-2": {
+      "taskSha256": "35e7eb81dbb626809551b96d9093eab8605e32fcaddaab26333b77ee1ed28567",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        16
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-composing-3": {
+      "taskSha256": "4d07219b25f1b7569e43b9cf584a577dad12be8bddb94225cf810e3ab261ca6d",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        17
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-composing-4": {
+      "taskSha256": "5027c53ecc4476a5d9c146b020bf99f3a0d3e41ca08cf2c6e7cd947af332d94e",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        18
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-composing-5": {
+      "taskSha256": "61f1329e24d28b63e60fa61d0647684fa1b51d5c5bf23a921319b824ab54f2a9",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        19
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-composing-6": {
+      "taskSha256": "86d3e3a02cd5c52f4c0ac18db073001ecc9cdb6c9f5922d86ff8874215218c61",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        20
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
+    },
+    "english-2026-hl-p1-composing-7": {
+      "taskSha256": "6570b4b7cd219afdbc1e1a971785e96172791a6616980b39ff5013ddef7de9f3",
+      "paperSha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        21
+      ],
+      "generalCriteriaPages": [
+        4,
+        5,
+        51,
+        52,
+        55
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2026 HL PDF4: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the H1–H8 discrete grid printed with the task and on PDF52."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the three blank pages (PDF9–11). Exact task and award verified against the cited scheme pages, all viewed. HL QA 15/15/20: one mark “ex 15/20 by reference to the criteria for assessment” from the printed H1–H8 band (combined grid PDF52); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10. All fixed internal routes reviewed; no invented splits or submarks."
     }
   }
 }

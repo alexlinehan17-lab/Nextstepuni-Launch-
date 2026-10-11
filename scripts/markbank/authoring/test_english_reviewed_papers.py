@@ -576,7 +576,7 @@ class EnglishSourceExclusionTest(unittest.TestCase):
 class English2026ReviewedPapersTest(unittest.TestCase):
     """Pin the independent 2026 reviews: tallies, routes, readers, tariffs and raw scan."""
 
-    KEYS = ('english-2026-ol-p2',)
+    KEYS = ('english-2026-ol-p2', 'english-2026-hl-p1')
 
     @classmethod
     def setUpClass(cls):
@@ -670,6 +670,47 @@ class English2026ReviewedPapersTest(unittest.TestCase):
         # Tasks: Single 9×6 + Comparative 26 + Unseen 2 + Prescribed 6×6 = 118. Rubric: cover 2, “any two”
         # 9, comparative 5, unseen 2, prescribed 1 + 6×3 = 37. Poem lines 7; final-page copyright notice 5.
         self.assertEqual(kinds, {'tasks': 118, 'exam-instruction': 37, 'source-prose': 7, 'non-selection': 5})
+
+    def test_2026_higher_paper_one_routes_readers_and_criteria(self):
+        key = 'english-2026-hl-p1'
+        tasks, routes = self.tasks[key], self.routes(key)
+        self.assertEqual((len(tasks), len(routes), len({r['id'] for r in routes})), (19, 20, 20))
+        motion = [r for r in routes if 'choiceParentId' in r]
+        self.assertEqual([r['id'] for r in motion], [key + '-composing-5-route-selection-1', key + '-composing-5-route-selection-2'])
+        self.assertTrue(all(r['totalMarks'] == 100 for r in motion))
+        self.assertIn('For the motion', motion[0]['questionText'])
+        self.assertIn('Against the motion', motion[1]['questionText'])
+        for suffix in ('t1-b', 't3-a-i', 't3-a-iii'):
+            self.assertEqual(self.decisions[f'{key}-{suffix}']['kind'], 'flexible')
+        titles = {1: ('An Influential Place - My Unquenchable City', [2, 3]), 2: ('Influential Life Moment', [4, 5]),
+                  3: ('Influence of the Arts', [6, 7])}
+        for task in tasks:
+            suffix = task['id'][len(key) + 1:]
+            source = task.get('sourceMaterial')
+            if '-a-' in suffix:
+                self.assertEqual((source['title'], source['pages']), titles[int(suffix[1])])
+            elif suffix == 'composing-6':
+                self.assertEqual((source['label'], source['title'], source['pages']), ('TEXT 2', 'Influential Life Moment', [4, 5]))
+            else:
+                self.assertIsNone(source, suffix)
+            criteria = self.ledger['tasks'][task['id']]['criteria']
+            if task['totalMarks'] in (15, 20):
+                self.assertEqual(criteria['mode'], 'holistic')
+                self.assertNotIn('allocation', criteria)
+            else:
+                marks = task['totalMarks']
+                self.assertEqual(criteria['allocation'], {'P': marks * 3 // 10, 'C': marks * 3 // 10,
+                                                          'L': marks * 3 // 10, 'M': marks // 10})
+        # Printed wording is kept even where the question misspells the writer.
+        self.assertIn('Enuma Okora asserts', self.by_id[key + '-t3-a-ii']['questionText'])
+        subset = {'tasks': {t['id']: self.ledger['tasks'][t['id']] for t in tasks}}
+        self.assertEqual(reconcile_schemes(tasks, inventory()['papers'], subset), [])
+        from english_raw_selection import scan
+        kinds = {}
+        for hit in scan([self.records[key]]):
+            kind = self.raw['decisions'][hit['id']]['kind']
+            kinds[kind] = kinds.get(kind, 0) + 1
+        self.assertEqual(kinds, {'tasks': 9, 'exam-instruction': 2, 'source-prose': 27, 'non-selection': 4})
 
 
 if __name__ == '__main__':

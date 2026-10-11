@@ -1705,7 +1705,7 @@
     "english-2026-hl-p1-t3-a-iii": {
       "questionSha256": "2f1df173131810b745d03ba3d200d88f4613f9275cc447dc52193980e220b5e9",
       "kind": "flexible",
-      "reason": "The paper explicitly permits a flexible mixture or number of aspects. These are not mutually exclusive fixed-size answer routes."
+      "reason": "Paper PDF7 and scheme PDF12: four features of style, referring to either or both writers. The number of writers is flexible; both “thought-provoking” and “engaging” must be addressed. One 20-mark response."
     },
     "english-2012-hl-p1-t3-b": {
       "questionSha256": "8ebf3e662c0cb10e2dfab7a9e64173cf0444a322357f8255e27ae7dfaf03ec46",
@@ -2463,17 +2463,17 @@
     "english-2026-hl-p1-t1-b": {
       "questionSha256": "887e5cd1ef5c870ab868d2f5bb3e25b9b7fef540946cbc40236ee52095830f21",
       "kind": "flexible",
-      "reason": "The register may be serious, humorous, or a mixture; this flexible direction does not prescribe a fixed answer-route selection. The other listed content is required."
+      "reason": "Paper PDF3 and scheme PDF7: the article may be serious or humorous or a combination of both, so register is flexible. Describing the landscape, exploring positive societal changes and discussing challenges are all required within one 50-mark article."
     },
     "english-2026-hl-p1-t2-b": {
       "questionSha256": "0425c1b9488d1e1c434515e522ed8209d70740095b862a8d3ea540861a926a15",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF10: the candidate explains their own stance on continuing to produce postage stamps, challenges expected opposing arguments and considers future correspondence. The stance is free, not a printed for/against motion. One 50-mark letter."
     },
     "english-2026-hl-p1-t3-b": {
       "questionSha256": "74fe2dba3591417c42800ed95529e73e24469f70b40b429173bcf7b71580a8ca",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF13: one proposal describing the event, its logistics and its community impact. The event is the candidate’s own choice. One 50-mark response."
     },
     "english-2026-ol-p1-t1-b": {
       "questionSha256": "0bf5c626c6d0e713d7f2e610f8fb35f8587f533fe8dba39b067d226ab61c131c",
@@ -3113,7 +3113,8 @@
     "english-2026-hl-p1-composing-5": {
       "questionSha256": "78df03a606a533b6bd588330936bc00251f25567ca209d192e16394782ec33b8",
       "kind": "finite",
-      "reason": "The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "expectedRoutes": 2,
+      "reason": "Paper PDF8 and scheme PDF19: a speech for or against the motion “Social-media influencers are best ignored”; candidates are expected to argue on one side of the motion. Two 100-mark routes; arguments, register and audience remain open.",
       "pools": [
         {
           "id": "selection",
@@ -3130,8 +3131,7 @@
             }
           ]
         }
-      ],
-      "expectedRoutes": 2
+      ]
     },
     "english-2026-ol-p1-composing-3": {
       "questionSha256": "26d5f13a54de1ccef3f6644fe735988d6d22868f3f7b53992ccc05d44ca62a63",
@@ -4169,32 +4169,32 @@
     "english-2026-hl-p1-composing-1": {
       "questionSha256": "1a0563646ca67b30a02ab0aa07b7af96c806e15e86f661e34a027226bea6a5b3",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a short story with a character at odds with a community under a negative influence; variety of approaches allowed. One 100-mark composition."
     },
     "english-2026-hl-p1-composing-2": {
       "questionSha256": "e01427f1bee9135991f60111ac99c16f43b4e20a1de609c5435ad84ad929890c",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF16: a personal essay reflecting on how being creative plays a role in at least two aspects of the candidate’s life. “Many aspects” is a flexible minimum, not a pool. One 100-mark composition."
     },
     "english-2026-hl-p1-composing-3": {
       "questionSha256": "ed6238ebde4d1e19505292bb8307a095aa0ddb3083ce011f52a169cc611f949a",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF17: an opinion piece about music, musicians and the music industry; all three elements are required, not necessarily equally. One 100-mark composition."
     },
     "english-2026-hl-p1-composing-4": {
       "questionSha256": "9cf075c60d400411953e259114144eff7edfe7eb20a8dfc37b926d21ab802c45",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF18: a discursive essay on the extent to which inherited legacies should be valued and respected; broad interpretation of “legacies”. One 100-mark composition."
     },
     "english-2026-hl-p1-composing-6": {
       "questionSha256": "2d2eaa28ce626dfe76ca90d7900f2bc3f38e0245e0fc5b1f0ab18158eca953ad",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF20: a short story featuring the young woman in TEXT 2 as a character with a significant influence on others; variety of approaches. One 100-mark composition."
     },
     "english-2026-hl-p1-composing-7": {
       "questionSha256": "8fec18e5f360d90f5a5ecd681f466bce85bb67ba3784675a2b2ad64efbc68d5e",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF21: a personal essay reflecting on one enriching moment “in more than one way”; the moment may be layered. One 100-mark composition."
     },
     "english-2026-ol-p1-composing-1": {
       "questionSha256": "5eb1fc4c1453fb11025db3058d881787579747d50e5626ab61eda393d1d7bd45",
@@ -16057,6 +16057,46 @@
       "questionSha256": "3844e560d6acbca07b62cbd0f39090376d9f982c2457e78dd165f34afe113f9a",
       "kind": "open",
       "reason": "Scheme PDF57: explain why the poem is called ‘Long Distance’, allowing a broad interpretation within reason. One open 10-mark response."
+    },
+    "english-2026-hl-p1-t1-a-i": {
+      "questionSha256": "8022d0fc602af0cac5cac51bf0c842134e554862c452c9be618435c4706f7c98",
+      "kind": "open",
+      "reason": "Develop three points: three distinct points of the candidate’s own, supported from the text (scheme PDF5). One 15-mark response; the points are not a printed pool."
+    },
+    "english-2026-hl-p1-t1-a-ii": {
+      "questionSha256": "aafd5c3e4c042c4cd17ae0725b753b1715c99ee3cac3069a479207255ff8cbcc",
+      "kind": "open",
+      "reason": "Scheme PDF6: “Allow for a variety of personal opinions”; at least two points. “How valid” is a graded judgement, not two exclusive routes. One 15-mark response."
+    },
+    "english-2026-hl-p1-t1-a-iii": {
+      "questionSha256": "77b3c120ef8e202ad654f311ac60b2caf3fcb9ffb345a542941a5e98d18ef3b7",
+      "kind": "open",
+      "reason": "Scheme PDF6: four features of style chosen freely from the text; candidates must engage with both “thought-provoking” and “colourful”, although not necessarily equally. One 20-mark response."
+    },
+    "english-2026-hl-p1-t2-a-i": {
+      "questionSha256": "57c2d5f449b266fcb80a13ef6e8875217ed1054ae78f3b76c4fb33ac94a24291",
+      "kind": "open",
+      "reason": "Develop three points: three distinct points of the candidate’s own, supported from the text (scheme PDF8). One 15-mark response; the points are not a printed pool."
+    },
+    "english-2026-hl-p1-t2-a-ii": {
+      "questionSha256": "37edd52bace981b06ec7541309fec4ee19e76f3f4460f6268b4779f23580dfb7",
+      "kind": "open",
+      "reason": "Scheme PDF8: “Allow for a variety of personal opinions”; at least two points. “How valid” is a graded judgement, not two exclusive routes. One 15-mark response."
+    },
+    "english-2026-hl-p1-t2-a-iii": {
+      "questionSha256": "560965b2302e9a396eed5bb76ee3eb2dffe3c3e854bb69a4344dff743a80c43c",
+      "kind": "open",
+      "reason": "Scheme PDF9: four features of style chosen freely from the text; candidates must engage with both “thought-provoking” and “evocative”, although not necessarily equally. One 20-mark response."
+    },
+    "english-2026-hl-p1-t3-a-i": {
+      "questionSha256": "ffc763f7f77b76137fa4a638832b210b66045d428aab6fc3c96434b87f1b2225",
+      "kind": "flexible",
+      "reason": "Paper asks for a reading of both extracts; scheme PDF11 lets candidates refer to either or both extracts. Three points of their own; one 15-mark response."
+    },
+    "english-2026-hl-p1-t3-a-ii": {
+      "questionSha256": "df028503a1c7718fc7b425962258b317ff3a236ffe49e7438f50e66943430d59",
+      "kind": "open",
+      "reason": "Scheme PDF11: “Allow for a variety of personal opinions”; at least two points. “How valid” is a graded judgement, not two exclusive routes. One 15-mark response. The question prints “Okora”; the passage and scheme spell Okoro."
     }
   }
 }

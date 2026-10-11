@@ -1,7 +1,29 @@
-## Current checkpoint — 2026 Ordinary Paper 2 recorded, 2026-10-11
+## Current checkpoint — 2026 Higher Paper 1 recorded, 2026-10-11
 
-Supersedes the counts below. Batch order is now NEWEST FIRST (2026 OL P2, then
-2026 HL P1 and HL P2). Recorded by `tmp/english-audit/record-2026-ol-p2-review.py`.
+Supersedes the counts below. Recorded by `tmp/english-audit/record-2026-hl-p1-review.py`.
+
+- All 12 paper pages viewed (PDF9–11 “no examination material”, PDF12
+  acknowledgements/copyright). Scheme (shared HL P1/P2) text PDF4–21, 51–57;
+  PDF4–21, 52 (H1–H8 grids) and 55 (misreading rules) viewed.
+- Independent tally **19 tasks / 20 routes**; only finite pool composing 5
+  for/against (scheme PDF19 “argue on one side”). T1 B register, T3 A(i)
+  either/both extracts and T3 A(iii) either/both writers are flexible.
+- Readers now under printed headings: TEXT 2 “Influential Life Moment” and
+  TEXT 3 “Influence of the Arts” (the extractor had taken the introduction
+  sentence as the title). Composing 6 keeps TEXT 2 PDF4–5 under its printed
+  heading (replaces an unreviewed invented title). B tasks carry no reader.
+- Criteria: QA 15/20 holistic H1–H8 (PDF52); B 50 and composing 100 discrete,
+  C/L ≤ P (PDF4). T3 A(ii) prints “Okora” (passage/scheme Okoro); kept.
+- All 42 raw hits classified (9 task lines, 2 rubric, 27 passage prose,
+  4 notice). Gate: routes 3,799; pending taskSelections 10 / raw 1,100 /
+  scheme 1,475 / paperReviews 36, none from 2026 HL P1. Python 44, TS 132.
+
+---
+
+## Earlier checkpoint — 2026 Ordinary Paper 2 recorded, 2026-10-11
+
+Batch order is now NEWEST FIRST (2026 OL P2, then 2026 HL P1 and HL P2).
+Recorded by `tmp/english-audit/record-2026-ol-p2-review.py`.
 
 - All 20 paper pages viewed one by one. Scheme (shared OL P1/P2 scheme) text
   PDF3, 4, 22–72 read; PDF3 and 22–72 viewed as rendered pages, including the
