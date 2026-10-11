@@ -291,6 +291,18 @@ class Task:
     note: str = ''
 
 
+def sums(*options: Sequence[int]) -> tuple[int, ...]:
+    """Every total reachable by awarding one value from each printed line."""
+    totals = {0}
+    for values in options:
+        totals = {total + value for total in totals for value in values}
+    return tuple(sorted(totals))
+
+
+def steps(maximum: int, step: int) -> tuple[int, ...]:
+    return tuple(range(0, maximum + 1, step))
+
+
 def evens(maximum: int, step: int = 2) -> tuple[int, ...]:
     return tuple(range(0, maximum + 1, step))
 
@@ -340,6 +352,26 @@ class Sitting:
             return self.scheme.table_lines(piece.page, piece.start)
         return self.scheme.line_slice(
             piece.page, piece.start, piece.end, piece.clip, piece.after)
+
+
+FURNITURE = re.compile(r'\[\d+m\]|(?:Sub\s*[-–]?\s*total|Total)\s+\d+m|\d{1,2}')
+JOINERS = {'the', 'of', 'and', 'for', 'to', 'be', 'a', 'an', 'awarded', 'out', 'can', 'in',
+           'on', 'with', 'from', 'than', 'that', 'by', 'or', 'labelling'}
+
+
+def clean_directions(lines: list[str]) -> list[str]:
+    """Scheme directions as printed, with tariff furniture removed and lines
+    the PDF wrapped mid-sentence rejoined."""
+    out: list[str] = []
+    for line in lines:
+        if FURNITURE.fullmatch(line):
+            continue
+        if (out and not re.search(r'[.:;!?)]$', out[-1]) and not line.startswith('•')
+                and (line[:1].islower() or out[-1].split()[-1].lower() in JOINERS)):
+            out[-1] = f'{out[-1]} {line}'
+        else:
+            out.append(line)
+    return out
 
 
 def display(text: str) -> str:
@@ -405,12 +437,19 @@ def build_task_cards(sitting: Sitting, task: Task, fileid: str,
                 # heading only some of the scheme's pages print.
                 optional = anchor.startswith('?')
                 anchor = anchor.lstrip('?')
+                # '@n' picks the nth of several identical printed lines.
+                nth = None
+                if re.search(r'@\d+$', anchor):
+                    anchor, nth = anchor.rsplit('@', 1)
+                    nth = int(nth)
                 if anchor.startswith('='):
                     hits = [i for i, line in enumerate(lines) if line == compact(anchor[1:])]
                 else:
                     hits = [i for i, line in enumerate(lines) if compact(anchor) in line]
                 if optional and not hits:
                     continue
+                if nth is not None:
+                    hits = hits[nth:nth + 1]
                 if len(hits) != 1:
                     raise AssertionError(
                         f'{task.key} {route.slug}: criterion line {anchor!r} '
@@ -427,8 +466,8 @@ def build_task_cards(sitting: Sitting, task: Task, fileid: str,
                 'guidanceKind': criterion.kind,
                 'guidance': guidance,
             })
-        directions = [line for i, line in enumerate(lines) if i not in used
-                      and not re.fullmatch(r'\[\d+m\]', line)]
+        directions = clean_directions(
+            [line for i, line in enumerate(lines) if i not in used])
         topic = route.topic or task.topic
         topic_id = f'geography-{topic}'
         if topic_id not in topic_ids:

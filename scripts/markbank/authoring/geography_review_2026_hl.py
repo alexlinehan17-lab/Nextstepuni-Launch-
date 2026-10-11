@@ -296,7 +296,8 @@ PART_ONE += [
          row_labels=(L(10, 'A Bridge'), L(10, 'B Industrial Estate'), L(10, 'C Sports Stadium'), L(10, 'E Housing Estate'))),
     # Q10 Weather (UV chart on the page)
     Task('p1-10-i', P1, '10', '(i)', 2, 11, L(11, 'Weather'),
-         (L(11, '(i) Which UV Index category is least prominent', 'Moderate High Low'),),
+         (L(11, '(i) Which UV Index category is least prominent', 'Tick (✓) the correct box.'),
+          L(11, 'Moderate High Low')),
          (S(4, 'Q.10 (i)', '(ii) Moderate', RIGHT),), (fixed('Category', 2, 'Q.10 (i) Low (1-2)'),),
          '2-7', (H + 'weather-climate',), ('page',), ID + 'p1-q10', True, stem=Q10_STEM),
     Task('p1-10-ii', P1, '10', '(ii)', 2, 11, L(11, 'Weather'),

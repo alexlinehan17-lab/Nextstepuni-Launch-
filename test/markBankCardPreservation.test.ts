@@ -488,7 +488,11 @@ const decks = [
    * scripts/markbank/authored/geography-reviewed-audit.json; removing them
    * reproduces the previous frozen hash exactly (asserted below). */
   ['geography:higher', GEOGRAPHY_HIGHER, 498, 'b3da6e37a9382a9e46982e8bbe25bc93db763372cf8e582d4597c1cb1d5e014a'],
-  ['geography:ordinary', GEOGRAPHY_ORDINARY, 309, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
+  /* 2026-10-11: the 2026 Ordinary sitting was reviewed the same way. 309 ->
+   * 387: all 58 of its shipped ids survive and 78 are added, one per
+   * separately priced printed part (the Ordinary scheme prices every A, B
+   * and C roman on its own). Removing them reproduces the previous hash. */
+  ['geography:ordinary', GEOGRAPHY_ORDINARY, 387, '35b9adba5bbba2a0c019e5460937490544ce76a2b7f7bcee23d7cad549602c49'],
   /* Recovered from the completed Computer Science authoring branch and rebuilt
    * through the same source, tariff, figure and structural guards as every
    * other subject. */
@@ -775,8 +779,8 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    // Geography's 2026 Higher review adds 53 separately priced parts: 19,328 + 53.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_381);
+    // Geography's 2026 reviews add separately priced parts: 19,328 + 53 (Higher) + 78 (Ordinary).
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_459);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -835,8 +839,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    // 9,768 + the 53 Geography parts added by the 2026 Higher review.
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_821);
+    // 9,768 + the 53 + 78 Geography parts added by the 2026 reviews.
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_899);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
@@ -851,14 +855,17 @@ describe('Mark Bank card preservation', () => {
       .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
   });
 
-  it('adds the reviewed 2026 Higher Geography parts without replacing a card id', () => {
-    const review = geographyReview.reviewedSittings
-      .find(sitting => sitting.year === 2026 && sitting.level === 'higher')!;
-    const added = new Set<string>(review.addedIds);
-    expect(added.size).toBe(53);
-    expect(identityHash(GEOGRAPHY_HIGHER.filter(card => !added.has(card.id))))
-      .toBe('7768fb37a748daf2cda31ae9f8c97b6bb632b44f1243332ce5edfac06361bacc');
-  });
+  it.each([
+    ['higher', GEOGRAPHY_HIGHER, 53, '7768fb37a748daf2cda31ae9f8c97b6bb632b44f1243332ce5edfac06361bacc'],
+    ['ordinary', GEOGRAPHY_ORDINARY, 78, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
+  ] as const)('adds the reviewed 2026 %s Geography parts without replacing a card id',
+    (level, cards, count, previous) => {
+      const review = geographyReview.reviewedSittings
+        .find(sitting => sitting.year === 2026 && sitting.level === level)!;
+      const added = new Set<string>(review.addedIds);
+      expect(added.size).toBe(count);
+      expect(identityHash(cards.filter(card => !added.has(card.id)))).toBe(previous);
+    });
 
   it('adds the Art choose-two routes without replacing any existing card id', () => {
     const correctionIds = new Set(ART_ORDINARY

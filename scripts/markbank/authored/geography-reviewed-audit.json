@@ -4210,6 +4210,4514 @@
         }
       ],
       "rule": "Independent review ledger: Leaving Certificate Geography 2026 Higher Level.\n\nSources (English editions, Paper Trail index, sizes and SHA-256 pinned in\nEXPECTED_SOURCES): Part One and Answerbook LC005ALP042EV (48 pages), Part Two\nLC005ALP043EV (20 pages), marking scheme LC005ALP000EV (66 pages), and the\ncommon companions — 1:50 000 Dundalk map LC005CLP003EV, its legend\nLC005CLPC00EV and the Dundalk aerial photograph LC005CLP004EV.\n\nVisual sweep (every page rendered and read on 2026-10-11):\n  Part One booklet p1 cover; p2 instructions (Part One \"Attempt any TEN\",\n  80 marks; Part Two \"attempt FOUR\", 320 marks); p3-p13 Questions 1-12 (p8\n  holds Q6 and Q7); p14 Part Two answerbook instructions; p15-p18 graph-paper\n  answer pages; p19-p47 lined answer pages; p48 copyright/back cover.\n  Part Two booklet p1 cover; p2 Part Two instructions; p3-p5 Section 1\n  (Q1-Q3); p6-p9 Section 2 (Q4-Q6); p10 Section 3 divider; p11-p16 Electives\n  (Q7-Q12); p17 Section 4 divider; p18-p19 Options (Q13-Q24); p20 copyright.\n  Scheme p1 cover; p2-p3 notes and annotation key; p4 Part One table (two\n  columns: Q1-Q6, Q7-Q12); p5-p42 Part Two Q1-Q12 (one A/B/C task per page,\n  2B route (ii) on p10); p43 Section 4 divider; p44 outline scheme and Overall\n  Coherence descriptors; p45 option annotations; p46-p57 Q13-Q24; p58-p63\n  Geographical Investigation (coursework, not a written-paper task); p64\n  prescribed investigation topics; p65 Irish-language bonus marks; p66 blank.\n  Companions: the map extract (Dundalk, eastings 01-13, northings 04-13), the\n  OS legend sheet and the oblique aerial photograph of Dundalk. NOTE: the\n  generator formerly attached CLPC00 as the \"map extract\" and CLP003 as the\n  \"legend\"; the renders show the reverse, and the ids are corrected here.\n\nBoundaries. Every printed part the scheme prices separately is its own task:\nPart One (i), (ii) and lettered (ii)(a)/(b) true/false items; Part Two A-part\nromans; every B/C task and every option. A part whose rows share ONE printed\ninstruction and ONE closed answer pool (the Part One matching and location\ntables, A-part \"Name each of the features labelled A, B, C and D\") stays one\ntask with a criterion per scheme row: the rows have no printed address of\ntheir own and could only be separated by writing new prompts. The scheme's\nroman/letter rows follow the printed table rows; this was checked visually\nfor Q1-Q6 and Q9 (e.g. Q2 Oxbow lake=C, River braiding=B, Lateral\nmoraines=D, Fjord=A against the four photographs).\n\nTariffs are read off the scheme: an \"a + b marks\" line is one criterion of\na+b with partial a; \"n x SRPs\" is n SRPs at 2 marks; sketch features are\n\"shown 3 (3/1/0) + label 1\" (map/aerial) or \"shown 2 (2/1/0) + named 2\"\n(outline map); options are aspects (3 @ 20 or 4 @ 15, select to benefit) up\nto 60 plus Overall Coherence graded 20/17/14/10/6/0. Every task total equals\nthe paper's printed tariff ([8m], [20m], [30m], [80m]) and the scheme's own\nsplit where it prints one ([16m] + [4m] for 9A and 10A).\n\nExaminer annotation tables (REF/I/N/Ex/Dg icons) restate allocations already\nprinted above them and are not carried into guidance."
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "lang": "ev",
+      "status": "reviewed",
+      "reviewedAt": "2026-10-11",
+      "sources": {
+        "paper1": {
+          "fileid": "LC005GLP042EV.pdf",
+          "bytes": 6521540,
+          "sha256": "9f924481009cfbeeb41f3338de08b7da6f8a78d3779c3c58de41a0247814a836",
+          "pages": 40
+        },
+        "paper2": {
+          "fileid": "LC005GLP043EV.pdf",
+          "bytes": 4047293,
+          "sha256": "6bbf2d3317a632301b92f2cc82ff4cc63d7c32bd7fd018f3da81eaf86854bba7",
+          "pages": 20
+        },
+        "scheme": {
+          "fileid": "LC005GLP000EV.pdf",
+          "bytes": 2028337,
+          "sha256": "d635bb178f21ff6f0a41a9995a285fd40346e3c780d0ecf6f38e16f1f72aad2a",
+          "pages": 34
+        },
+        "map": {
+          "fileid": "LC005CLP003EV.pdf",
+          "bytes": 12880588,
+          "sha256": "c85370b476bdbe49d644384087b3285c949bd48cd6dd136ac8de281663a4f9ed",
+          "pages": 1
+        },
+        "legend": {
+          "fileid": "LC005CLPC00EV.pdf",
+          "bytes": 4131805,
+          "sha256": "19206e65d97a44922be08077be0d38e84641994fc6f8c77861a1fe8aafe9dd8d",
+          "pages": 1
+        },
+        "aerial": {
+          "fileid": "LC005CLP004EV.pdf",
+          "bytes": 8614880,
+          "sha256": "00dc6d8aca9ad932147b7720d030c4fb51830bdeb69d5e2abdc40799d56c5c3f",
+          "pages": 1
+        }
+      },
+      "pageReview": {
+        "paper1": {
+          "1": "cover",
+          "2": "instructions",
+          "3": "question",
+          "4": "question",
+          "5": "question",
+          "6": "question",
+          "7": "question",
+          "8": "question",
+          "9": "question",
+          "10": "question",
+          "11": "question",
+          "12": "question",
+          "13": "answerbook instructions",
+          "14": "graph-paper answer page",
+          "15": "graph-paper answer page",
+          "16": "graph-paper answer page",
+          "17": "graph-paper answer page",
+          "18": "lined answer page",
+          "19": "lined answer page",
+          "20": "lined answer page",
+          "21": "lined answer page",
+          "22": "lined answer page",
+          "23": "lined answer page",
+          "24": "lined answer page",
+          "25": "lined answer page",
+          "26": "lined answer page",
+          "27": "lined answer page",
+          "28": "lined answer page",
+          "29": "lined answer page",
+          "30": "lined answer page",
+          "31": "lined answer page",
+          "32": "lined answer page",
+          "33": "lined answer page",
+          "34": "lined answer page",
+          "35": "lined answer page",
+          "36": "lined answer page",
+          "37": "lined answer page",
+          "38": "lined answer page",
+          "39": "lined answer page",
+          "40": "copyright/back cover"
+        },
+        "paper2": {
+          "1": "cover",
+          "2": "Part Two instructions",
+          "3": "question",
+          "4": "question",
+          "5": "question",
+          "6": "question",
+          "7": "question",
+          "8": "question",
+          "9": "question",
+          "10": "question",
+          "12": "question",
+          "13": "question",
+          "14": "question",
+          "15": "question",
+          "16": "question",
+          "17": "question",
+          "11": "section divider",
+          "18": "blank (do not hand up)",
+          "19": "blank (do not hand up)",
+          "20": "copyright/back cover"
+        },
+        "scheme": {
+          "1": "cover",
+          "2": "notes",
+          "3": "geographical investigation (coursework)",
+          "4": "investigation presentation breakdown",
+          "5": "Part One table",
+          "6": "Part One table",
+          "7": "Part Two instructions",
+          "8": "Part Two allocation",
+          "9": "Part Two allocation",
+          "10": "Part Two allocation",
+          "11": "Part Two allocation",
+          "12": "Part Two allocation",
+          "13": "Part Two allocation",
+          "14": "Part Two allocation",
+          "15": "Part Two allocation",
+          "16": "Part Two allocation",
+          "17": "Part Two allocation",
+          "18": "Part Two allocation",
+          "19": "Part Two allocation",
+          "20": "section divider",
+          "21": "Part Two allocation",
+          "22": "Part Two allocation",
+          "23": "Part Two allocation",
+          "24": "Part Two allocation",
+          "25": "Part Two allocation",
+          "26": "Part Two allocation",
+          "27": "Part Two allocation",
+          "28": "Part Two allocation",
+          "29": "Part Two allocation",
+          "30": "Part Two allocation",
+          "31": "Part Two allocation",
+          "32": "Part Two allocation",
+          "33": "Irish-language bonus marks",
+          "34": "blank"
+        }
+      },
+      "selectionScan": [
+        [
+          1,
+          2,
+          "attempt any ten"
+        ],
+        [
+          1,
+          2,
+          "attempt three"
+        ],
+        [
+          1,
+          3,
+          "attempt any ten"
+        ],
+        [
+          1,
+          4,
+          "any two"
+        ],
+        [
+          2,
+          2,
+          "attempt three"
+        ],
+        [
+          2,
+          3,
+          "answer (i) or (ii)"
+        ],
+        [
+          2,
+          3,
+          "any two"
+        ],
+        [
+          2,
+          3,
+          "any two"
+        ],
+        [
+          2,
+          5,
+          "one of the following"
+        ],
+        [
+          2,
+          6,
+          "one of the following"
+        ],
+        [
+          2,
+          7,
+          "any one"
+        ],
+        [
+          2,
+          8,
+          "any two"
+        ],
+        [
+          2,
+          10,
+          "any one"
+        ],
+        [
+          2,
+          12,
+          "one of the following"
+        ],
+        [
+          2,
+          12,
+          "any one"
+        ]
+      ],
+      "selectionReview": [
+        {
+          "scan": [
+            [
+              1,
+              2,
+              "attempt any ten"
+            ],
+            [
+              1,
+              2,
+              "attempt three"
+            ],
+            [
+              1,
+              3,
+              "attempt any ten"
+            ],
+            [
+              2,
+              2,
+              "attempt three"
+            ]
+          ],
+          "kind": "exam-attempt-rule",
+          "reason": "Part One any ten of twelve and Part Two three questions from two sections are attempt rules; every question is carded."
+        },
+        {
+          "scan": [
+            [
+              2,
+              3,
+              "answer (i) or (ii)"
+            ]
+          ],
+          "kind": "closed-route",
+          "reason": "1B: (i) or (ii) -> two routes, each with its own scheme allocation."
+        },
+        {
+          "scan": [
+            [
+              2,
+              5,
+              "one of the following"
+            ]
+          ],
+          "kind": "closed-choose-one",
+          "reason": "2C: one of four printed bullets -> four routes."
+        },
+        {
+          "scan": [
+            [
+              2,
+              6,
+              "one of the following"
+            ]
+          ],
+          "kind": "closed-choose-one",
+          "reason": "3C: one of three printed surface processes -> three routes."
+        },
+        {
+          "scan": [
+            [
+              2,
+              8,
+              "any two"
+            ]
+          ],
+          "kind": "closed-choose-two",
+          "reason": "5B: any two of three printed activities -> C(3,2) = 3 routes."
+        },
+        {
+          "scan": [
+            [
+              2,
+              12,
+              "one of the following"
+            ]
+          ],
+          "kind": "closed-choose-one",
+          "reason": "7B: one of three printed activities -> three routes."
+        },
+        {
+          "scan": [
+            [
+              1,
+              4,
+              "any two"
+            ],
+            [
+              2,
+              3,
+              "any two"
+            ],
+            [
+              2,
+              3,
+              "any two"
+            ],
+            [
+              2,
+              7,
+              "any one"
+            ],
+            [
+              2,
+              10,
+              "any one"
+            ],
+            [
+              2,
+              12,
+              "any one"
+            ]
+          ],
+          "kind": "open-response",
+          "reason": "No printed pool: Part One Q2(iii) any two metamorphic rocks; 1B(i) any two landforms and 1B(ii) any two mass movement processes (the student chooses; the scheme prices two @ 20m); 4C any one region (the factor box is illustrative, not a choice); 6C any one urban area; 7C(i) any one EU policy."
+        }
+      ],
+      "questionTotals": {
+        "Part 1 Q1": 10,
+        "Part 1 Q10": 10,
+        "Part 1 Q11": 10,
+        "Part 1 Q12": 10,
+        "Part 1 Q2": 10,
+        "Part 1 Q3": 10,
+        "Part 1 Q4": 10,
+        "Part 1 Q5": 10,
+        "Part 1 Q6": 10,
+        "Part 1 Q7": 10,
+        "Part 1 Q8": 10,
+        "Part 1 Q9": 10,
+        "Part 2 Q10A": 30,
+        "Part 2 Q10B": 40,
+        "Part 2 Q10C": 30,
+        "Part 2 Q11A": 30,
+        "Part 2 Q11B": 40,
+        "Part 2 Q11C": 30,
+        "Part 2 Q12A": 30,
+        "Part 2 Q12B": 40,
+        "Part 2 Q12C": 30,
+        "Part 2 Q1A": 30,
+        "Part 2 Q1B": 40,
+        "Part 2 Q1C": 30,
+        "Part 2 Q2A": 30,
+        "Part 2 Q2B": 40,
+        "Part 2 Q2C": 30,
+        "Part 2 Q3A": 30,
+        "Part 2 Q3B": 40,
+        "Part 2 Q3C": 30,
+        "Part 2 Q4A": 30,
+        "Part 2 Q4B": 40,
+        "Part 2 Q4C": 30,
+        "Part 2 Q5A": 30,
+        "Part 2 Q5B": 40,
+        "Part 2 Q5C": 30,
+        "Part 2 Q6A": 30,
+        "Part 2 Q6B": 40,
+        "Part 2 Q6C": 30,
+        "Part 2 Q7A": 30,
+        "Part 2 Q7B": 40,
+        "Part 2 Q7C": 30,
+        "Part 2 Q8A": 30,
+        "Part 2 Q8B": 40,
+        "Part 2 Q8C": 30,
+        "Part 2 Q9A": 30,
+        "Part 2 Q9B": 40,
+        "Part 2 Q9C": 30
+      },
+      "taskCount": 126,
+      "cardCount": 136,
+      "legacyIds": [
+        "geography-2026-ol-p1-q1",
+        "geography-2026-ol-p1-q10",
+        "geography-2026-ol-p1-q11",
+        "geography-2026-ol-p1-q12",
+        "geography-2026-ol-p1-q2",
+        "geography-2026-ol-p1-q3",
+        "geography-2026-ol-p1-q4",
+        "geography-2026-ol-p1-q5",
+        "geography-2026-ol-p1-q6",
+        "geography-2026-ol-p1-q7",
+        "geography-2026-ol-p1-q8",
+        "geography-2026-ol-p1-q9",
+        "geography-2026-ol-p2-q10a",
+        "geography-2026-ol-p2-q10b",
+        "geography-2026-ol-p2-q10c",
+        "geography-2026-ol-p2-q11a",
+        "geography-2026-ol-p2-q11b",
+        "geography-2026-ol-p2-q11c",
+        "geography-2026-ol-p2-q12a",
+        "geography-2026-ol-p2-q12b",
+        "geography-2026-ol-p2-q12c",
+        "geography-2026-ol-p2-q1a",
+        "geography-2026-ol-p2-q1b-route-i",
+        "geography-2026-ol-p2-q1b-route-ii",
+        "geography-2026-ol-p2-q1c",
+        "geography-2026-ol-p2-q2a",
+        "geography-2026-ol-p2-q2b",
+        "geography-2026-ol-p2-q2c-geothermal-energy-production",
+        "geography-2026-ol-p2-q2c-mining",
+        "geography-2026-ol-p2-q2c-oil-gas-exploitation",
+        "geography-2026-ol-p2-q2c-quarrying",
+        "geography-2026-ol-p2-q3a",
+        "geography-2026-ol-p2-q3b",
+        "geography-2026-ol-p2-q3c-coastal-processes",
+        "geography-2026-ol-p2-q3c-mass-movement-processes",
+        "geography-2026-ol-p2-q3c-river-processes",
+        "geography-2026-ol-p2-q4a",
+        "geography-2026-ol-p2-q4b",
+        "geography-2026-ol-p2-q4c",
+        "geography-2026-ol-p2-q5a",
+        "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
+        "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-reasons-why-tourists-are-attra",
+        "geography-2026-ol-p2-q5b-the-importance-of-manufacturing-to-the-reasons-why-tourists-are-attra",
+        "geography-2026-ol-p2-q5c",
+        "geography-2026-ol-p2-q6a",
+        "geography-2026-ol-p2-q6b",
+        "geography-2026-ol-p2-q6c",
+        "geography-2026-ol-p2-q7a",
+        "geography-2026-ol-p2-q7b-financial-services",
+        "geography-2026-ol-p2-q7b-services-and-footloose-industries",
+        "geography-2026-ol-p2-q7b-tourism",
+        "geography-2026-ol-p2-q7c",
+        "geography-2026-ol-p2-q8a",
+        "geography-2026-ol-p2-q8b",
+        "geography-2026-ol-p2-q8c",
+        "geography-2026-ol-p2-q9a",
+        "geography-2026-ol-p2-q9b",
+        "geography-2026-ol-p2-q9c"
+      ],
+      "addedIds": [
+        "geography-2026-ol-p1-q1-ii",
+        "geography-2026-ol-p1-q10-ii",
+        "geography-2026-ol-p1-q11-ii",
+        "geography-2026-ol-p1-q11-iii",
+        "geography-2026-ol-p1-q11-iv",
+        "geography-2026-ol-p1-q11-v",
+        "geography-2026-ol-p1-q12-ii",
+        "geography-2026-ol-p1-q12-iii",
+        "geography-2026-ol-p1-q12-iv",
+        "geography-2026-ol-p1-q12-v",
+        "geography-2026-ol-p1-q2-ii-a",
+        "geography-2026-ol-p1-q2-ii-b",
+        "geography-2026-ol-p1-q2-iii",
+        "geography-2026-ol-p1-q3-ii",
+        "geography-2026-ol-p1-q4-ii",
+        "geography-2026-ol-p1-q5-ii",
+        "geography-2026-ol-p1-q6-ii",
+        "geography-2026-ol-p1-q7-ii",
+        "geography-2026-ol-p1-q7-iii",
+        "geography-2026-ol-p1-q8-ii",
+        "geography-2026-ol-p1-q8-iii",
+        "geography-2026-ol-p1-q8-iv",
+        "geography-2026-ol-p1-q8-v",
+        "geography-2026-ol-p2-q10c-ii",
+        "geography-2026-ol-p2-q10c-iii",
+        "geography-2026-ol-p2-q11a-ii",
+        "geography-2026-ol-p2-q11b-ii",
+        "geography-2026-ol-p2-q11b-iii",
+        "geography-2026-ol-p2-q11c-ii",
+        "geography-2026-ol-p2-q11c-iii",
+        "geography-2026-ol-p2-q11c-iv",
+        "geography-2026-ol-p2-q12a-ii",
+        "geography-2026-ol-p2-q12a-iii",
+        "geography-2026-ol-p2-q12a-iv",
+        "geography-2026-ol-p2-q12a-v",
+        "geography-2026-ol-p2-q12b-ii",
+        "geography-2026-ol-p2-q12b-iii",
+        "geography-2026-ol-p2-q12b-iv",
+        "geography-2026-ol-p2-q12c-ii",
+        "geography-2026-ol-p2-q1c-ii",
+        "geography-2026-ol-p2-q1c-iii",
+        "geography-2026-ol-p2-q2a-ii",
+        "geography-2026-ol-p2-q2a-iii",
+        "geography-2026-ol-p2-q2b-ii",
+        "geography-2026-ol-p2-q2b-iii",
+        "geography-2026-ol-p2-q3a-ii",
+        "geography-2026-ol-p2-q3a-iii",
+        "geography-2026-ol-p2-q3a-iv",
+        "geography-2026-ol-p2-q3a-v",
+        "geography-2026-ol-p2-q3b-ii",
+        "geography-2026-ol-p2-q3b-iii",
+        "geography-2026-ol-p2-q3b-iv",
+        "geography-2026-ol-p2-q4b-ii",
+        "geography-2026-ol-p2-q4b-iii",
+        "geography-2026-ol-p2-q5a-ii",
+        "geography-2026-ol-p2-q5a-iii",
+        "geography-2026-ol-p2-q5a-iv",
+        "geography-2026-ol-p2-q5a-v",
+        "geography-2026-ol-p2-q5c-ii",
+        "geography-2026-ol-p2-q6a-ii",
+        "geography-2026-ol-p2-q6a-iii",
+        "geography-2026-ol-p2-q6a-iv",
+        "geography-2026-ol-p2-q6a-v",
+        "geography-2026-ol-p2-q6b-ii",
+        "geography-2026-ol-p2-q6b-iii",
+        "geography-2026-ol-p2-q7c-ii",
+        "geography-2026-ol-p2-q8a-ii",
+        "geography-2026-ol-p2-q8a-iii",
+        "geography-2026-ol-p2-q8a-iv",
+        "geography-2026-ol-p2-q8a-v",
+        "geography-2026-ol-p2-q8b-ii",
+        "geography-2026-ol-p2-q8b-iii",
+        "geography-2026-ol-p2-q8b-iv",
+        "geography-2026-ol-p2-q8c-ii",
+        "geography-2026-ol-p2-q9a-ii",
+        "geography-2026-ol-p2-q9b-ii",
+        "geography-2026-ol-p2-q9b-iii",
+        "geography-2026-ol-p2-q9c-ii"
+      ],
+      "idCorrections": [
+        {
+          "id": "geography-2026-ol-p1-q1",
+          "nowQuestionRef": "2026 OL Part 1 Q1(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p1-q2",
+          "nowQuestionRef": "2026 OL Part 1 Q2(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p1-q3",
+          "nowQuestionRef": "2026 OL Part 1 Q3(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p1-q4",
+          "nowQuestionRef": "2026 OL Part 1 Q4(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p1-q5",
+          "nowQuestionRef": "2026 OL Part 1 Q5(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p1-q6",
+          "nowQuestionRef": "2026 OL Part 1 Q6(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p1-q7",
+          "nowQuestionRef": "2026 OL Part 1 Q7(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p1-q8",
+          "nowQuestionRef": "2026 OL Part 1 Q8(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p1-q10",
+          "nowQuestionRef": "2026 OL Part 1 Q10(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p1-q11",
+          "nowQuestionRef": "2026 OL Part 1 Q11(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p1-q12",
+          "nowQuestionRef": "2026 OL Part 1 Q12(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q1c",
+          "nowQuestionRef": "2026 OL Part 2 Q1C(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q2a",
+          "nowQuestionRef": "2026 OL Part 2 Q2A(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q2b",
+          "nowQuestionRef": "2026 OL Part 2 Q2B(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q3a",
+          "nowQuestionRef": "2026 OL Part 2 Q3A(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q3b",
+          "nowQuestionRef": "2026 OL Part 2 Q3B(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q4b",
+          "nowQuestionRef": "2026 OL Part 2 Q4B(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q5a",
+          "nowQuestionRef": "2026 OL Part 2 Q5A(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q5c",
+          "nowQuestionRef": "2026 OL Part 2 Q5C(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q6a",
+          "nowQuestionRef": "2026 OL Part 2 Q6A(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q6b",
+          "nowQuestionRef": "2026 OL Part 2 Q6B(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q7c",
+          "nowQuestionRef": "2026 OL Part 2 Q7C(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q8a",
+          "nowQuestionRef": "2026 OL Part 2 Q8A(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q8b",
+          "nowQuestionRef": "2026 OL Part 2 Q8B(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q8c",
+          "nowQuestionRef": "2026 OL Part 2 Q8C(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q9a",
+          "nowQuestionRef": "2026 OL Part 2 Q9A(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q9b",
+          "nowQuestionRef": "2026 OL Part 2 Q9B(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q9c",
+          "nowQuestionRef": "2026 OL Part 2 Q9C(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q10c",
+          "nowQuestionRef": "2026 OL Part 2 Q10C(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q11a",
+          "nowQuestionRef": "2026 OL Part 2 Q11A(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q11b",
+          "nowQuestionRef": "2026 OL Part 2 Q11B(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q11c",
+          "nowQuestionRef": "2026 OL Part 2 Q11C(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q12a",
+          "nowQuestionRef": "2026 OL Part 2 Q12A(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q12b",
+          "nowQuestionRef": "2026 OL Part 2 Q12B(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        },
+        {
+          "id": "geography-2026-ol-p2-q12c",
+          "nowQuestionRef": "2026 OL Part 2 Q12C(i)",
+          "reason": "The shipped card held every part of a question the scheme prices part by part. Its id is kept on the first separately priced part; the other parts are new cards with their own published allocation."
+        }
+      ],
+      "tasks": [
+        {
+          "key": "p1-1-i",
+          "questionRef": "2026 OL Part 1 Q1(i)",
+          "marks": 8,
+          "paperPage": 3,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Inner core",
+              "maxMarks": 2
+            },
+            {
+              "label": "Mantle",
+              "maxMarks": 2
+            },
+            {
+              "label": "Crust",
+              "maxMarks": 2
+            },
+            {
+              "label": "Outer core",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q1"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-1-ii",
+          "questionRef": "2026 OL Part 1 Q1(ii)",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q1-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-i",
+          "questionRef": "2026 OL Part 1 Q2(i)",
+          "marks": 2,
+          "paperPage": 4,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Location",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q2"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-ii-a",
+          "questionRef": "2026 OL Part 1 Q2(ii)(a)",
+          "marks": 2,
+          "paperPage": 4,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Statement (a)",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q2-ii-a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-ii-b",
+          "questionRef": "2026 OL Part 1 Q2(ii)(b)",
+          "marks": 2,
+          "paperPage": 4,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Statement (b)",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q2-ii-b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-iii",
+          "questionRef": "2026 OL Part 1 Q2(iii)",
+          "marks": 4,
+          "paperPage": 4,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Two metamorphic rocks",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q2-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-3-i",
+          "questionRef": "2026 OL Part 1 Q3(i)",
+          "marks": 2,
+          "paperPage": 5,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Coastal defence",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q3"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-3-ii",
+          "questionRef": "2026 OL Part 1 Q3(ii)",
+          "marks": 8,
+          "paperPage": 5,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Cliff",
+              "maxMarks": 2
+            },
+            {
+              "label": "Beach",
+              "maxMarks": 2
+            },
+            {
+              "label": "Sand Bar",
+              "maxMarks": 2
+            },
+            {
+              "label": "Blowhole",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-10"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q3-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-4-i",
+          "questionRef": "2026 OL Part 1 Q4(i)",
+          "marks": 8,
+          "paperPage": 6,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Vent",
+              "maxMarks": 2
+            },
+            {
+              "label": "Crater",
+              "maxMarks": 2
+            },
+            {
+              "label": "Ash Cloud",
+              "maxMarks": 2
+            },
+            {
+              "label": "Magma chamber",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q4"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-4-ii",
+          "questionRef": "2026 OL Part 1 Q4(ii)",
+          "marks": 2,
+          "paperPage": 6,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "One way",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q4-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-5-i",
+          "questionRef": "2026 OL Part 1 Q5(i)",
+          "marks": 8,
+          "paperPage": 7,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Wildfires on the island of Maderia",
+              "maxMarks": 2
+            },
+            {
+              "label": "River meanders in Baton Rouge",
+              "maxMarks": 2
+            },
+            {
+              "label": "Cyclone approaching Port Douglas",
+              "maxMarks": 2
+            },
+            {
+              "label": "Dust cloud over the Sahara Desert",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q5"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-5-ii",
+          "questionRef": "2026 OL Part 1 Q5(ii)",
+          "marks": 2,
+          "paperPage": 7,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos",
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q5-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-6-i",
+          "questionRef": "2026 OL Part 1 Q6(i)",
+          "marks": 5,
+          "paperPage": 8,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Area",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q6"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-6-ii",
+          "questionRef": "2026 OL Part 1 Q6(ii)",
+          "marks": 5,
+          "paperPage": 8,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Length",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q6-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-7-i",
+          "questionRef": "2026 OL Part 1 Q7(i)",
+          "marks": 6,
+          "paperPage": 8,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "J 118 044:",
+              "maxMarks": 2
+            },
+            {
+              "label": "J 071 063:",
+              "maxMarks": 2
+            },
+            {
+              "label": "J 058 125:",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q7"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-7-ii",
+          "questionRef": "2026 OL Part 1 Q7(ii)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Spot height",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q7-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-7-iii",
+          "questionRef": "2026 OL Part 1 Q7(iii)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Symbol",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q7-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-i",
+          "questionRef": "2026 OL Part 1 Q8(i)",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q8"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-ii",
+          "questionRef": "2026 OL Part 1 Q8(ii)",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q8-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-iii",
+          "questionRef": "2026 OL Part 1 Q8(iii)",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q8-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-iv",
+          "questionRef": "2026 OL Part 1 Q8(iv)",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q8-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-v",
+          "questionRef": "2026 OL Part 1 Q8(v)",
+          "marks": 2,
+          "paperPage": 9,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q8-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9",
+          "questionRef": "2026 OL Part 1 Q9",
+          "marks": 10,
+          "paperPage": 9,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "The Islamic World",
+              "maxMarks": 2
+            },
+            {
+              "label": "Donegal County Council",
+              "maxMarks": 2
+            },
+            {
+              "label": "Paris, France",
+              "maxMarks": 2
+            },
+            {
+              "label": "Sambre Meuse Valley, Belgium",
+              "maxMarks": 2
+            },
+            {
+              "label": "Mediterranean",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-1-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european",
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q9"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-i",
+          "questionRef": "2026 OL Part 1 Q10(i)",
+          "marks": 8,
+          "paperPage": 10,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Isobar",
+              "maxMarks": 2
+            },
+            {
+              "label": "Area of high pressure",
+              "maxMarks": 2
+            },
+            {
+              "label": "Warm Front",
+              "maxMarks": 2
+            },
+            {
+              "label": "Area of low pressure",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q10"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-ii",
+          "questionRef": "2026 OL Part 1 Q10(ii)",
+          "marks": 2,
+          "paperPage": 10,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Symbol",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q10-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-i",
+          "questionRef": "2026 OL Part 1 Q11(i)",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Answer",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q11"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-ii",
+          "questionRef": "2026 OL Part 1 Q11(ii)",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Answer",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q11-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-iii",
+          "questionRef": "2026 OL Part 1 Q11(iii)",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Answer",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q11-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-iv",
+          "questionRef": "2026 OL Part 1 Q11(iv)",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Answer",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q11-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-v",
+          "questionRef": "2026 OL Part 1 Q11(v)",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Answer",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q11-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-i",
+          "questionRef": "2026 OL Part 1 Q12(i)",
+          "marks": 2,
+          "paperPage": 12,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Answer",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions",
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q12"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-ii",
+          "questionRef": "2026 OL Part 1 Q12(ii)",
+          "marks": 2,
+          "paperPage": 12,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Answer",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions",
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q12-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-iii",
+          "questionRef": "2026 OL Part 1 Q12(iii)",
+          "marks": 2,
+          "paperPage": 12,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Answer",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions",
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q12-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-iv",
+          "questionRef": "2026 OL Part 1 Q12(iv)",
+          "marks": 2,
+          "paperPage": 12,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Answer",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions",
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q12-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-v",
+          "questionRef": "2026 OL Part 1 Q12(v)",
+          "marks": 2,
+          "paperPage": 12,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Answer",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions",
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p1-q12-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1a",
+          "questionRef": "2026 OL Part 2 Q1A",
+          "marks": 30,
+          "paperPage": 3,
+          "schemePages": [
+            8
+          ],
+          "criteria": [
+            {
+              "label": "Limits/frame",
+              "maxMarks": 1
+            },
+            {
+              "label": "Proportions (landscape)",
+              "maxMarks": 2
+            },
+            {
+              "label": "Overall impression",
+              "maxMarks": 2
+            },
+            {
+              "label": "The coastline",
+              "maxMarks": 5
+            },
+            {
+              "label": "An area of land over 200m in height",
+              "maxMarks": 5
+            },
+            {
+              "label": "An area of deciduous woodland",
+              "maxMarks": 5
+            },
+            {
+              "label": "The railway line",
+              "maxMarks": 5
+            },
+            {
+              "label": "The Flurry River",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q1a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1b",
+          "questionRef": "2026 OL Part 2 Q1B",
+          "marks": 40,
+          "paperPage": 3,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Landform 1",
+              "maxMarks": 20
+            },
+            {
+              "label": "Landform 2",
+              "maxMarks": 20
+            }
+          ],
+          "topicIds": [
+            "geography-0-4",
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-glaciation",
+            "geography-ordinary-rivers",
+            "geography-ordinary-rocks-weathering-mass-movement",
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q1b-route-i",
+            "geography-2026-ol-p2-q1b-route-ii"
+          ],
+          "routes": [
+            "Route (i)",
+            "Route (ii)"
+          ]
+        },
+        {
+          "key": "p2-1c-i",
+          "questionRef": "2026 OL Part 2 Q1C(i)",
+          "marks": 6,
+          "paperPage": 3,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Two locations",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-earthquakes-volcanoes"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q1c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1c-ii",
+          "questionRef": "2026 OL Part 2 Q1C(ii)",
+          "marks": 3,
+          "paperPage": 3,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Scale",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-earthquakes-volcanoes"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q1c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1c-iii",
+          "questionRef": "2026 OL Part 2 Q1C(iii)",
+          "marks": 21,
+          "paperPage": 3,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Explanation/description",
+              "maxMarks": 21
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-earthquakes-volcanoes"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q1c-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-i",
+          "questionRef": "2026 OL Part 2 Q2A(i)",
+          "marks": 9,
+          "paperPage": 4,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Waterfall",
+              "maxMarks": 3
+            },
+            {
+              "label": "Sea stack",
+              "maxMarks": 3
+            },
+            {
+              "label": "Drumlin",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-0-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-glaciation",
+            "geography-ordinary-rivers",
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q2a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-ii",
+          "questionRef": "2026 OL Part 2 Q2A(ii)",
+          "marks": 9,
+          "paperPage": 4,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Coastal erosion",
+              "maxMarks": 3
+            },
+            {
+              "label": "Glacial deposition",
+              "maxMarks": 3
+            },
+            {
+              "label": "River erosion",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-0-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-glaciation",
+            "geography-ordinary-rivers",
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q2a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-iii",
+          "questionRef": "2026 OL Part 2 Q2A(iii)",
+          "marks": 12,
+          "paperPage": 4,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Hydraulic action",
+              "maxMarks": 6
+            },
+            {
+              "label": "Abrasion",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-0-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rivers",
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q2a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2b-i",
+          "questionRef": "2026 OL Part 2 Q2B(i)",
+          "marks": 4,
+          "paperPage": 4,
+          "schemePages": [
+            11
+          ],
+          "criteria": [
+            {
+              "label": "Karst landscape named",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-karst-regions"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q2b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2b-ii",
+          "questionRef": "2026 OL Part 2 Q2B(ii)",
+          "marks": 18,
+          "paperPage": 4,
+          "schemePages": [
+            11
+          ],
+          "criteria": [
+            {
+              "label": "Feature named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Diagram(s): two aspects",
+              "maxMarks": 4
+            },
+            {
+              "label": "Formation explained",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-karst-regions"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q2b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2b-iii",
+          "questionRef": "2026 OL Part 2 Q2B(iii)",
+          "marks": 18,
+          "paperPage": 4,
+          "schemePages": [
+            11
+          ],
+          "criteria": [
+            {
+              "label": "Feature named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Diagram(s): two aspects",
+              "maxMarks": 4
+            },
+            {
+              "label": "Formation explained",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-karst-regions"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q2b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2c",
+          "questionRef": "2026 OL Part 2 Q2C",
+          "marks": 30,
+          "paperPage": 5,
+          "schemePages": [
+            11
+          ],
+          "criteria": [
+            {
+              "label": "Description/explanation",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-0-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q2c-quarrying",
+            "geography-2026-ol-p2-q2c-mining",
+            "geography-2026-ol-p2-q2c-oil-gas-exploitation",
+            "geography-2026-ol-p2-q2c-geothermal-energy-production"
+          ],
+          "routes": [
+            "Quarrying",
+            "Mining",
+            "Oil/Gas exploitation",
+            "Geothermal energy production"
+          ]
+        },
+        {
+          "key": "p2-3a-i",
+          "questionRef": "2026 OL Part 2 Q3A(i)",
+          "marks": 6,
+          "paperPage": 6,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Country",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q3a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-ii",
+          "questionRef": "2026 OL Part 2 Q3A(ii)",
+          "marks": 6,
+          "paperPage": 6,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Cause",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q3a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-iii",
+          "questionRef": "2026 OL Part 2 Q3A(iii)",
+          "marks": 6,
+          "paperPage": 6,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Preparation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q3a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-iv",
+          "questionRef": "2026 OL Part 2 Q3A(iv)",
+          "marks": 6,
+          "paperPage": 6,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Two effects",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q3a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-v",
+          "questionRef": "2026 OL Part 2 Q3A(v)",
+          "marks": 6,
+          "paperPage": 6,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q3a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3b-i",
+          "questionRef": "2026 OL Part 2 Q3B(i)",
+          "marks": 3,
+          "paperPage": 6,
+          "schemePages": [
+            13
+          ],
+          "criteria": [
+            {
+              "label": "Igneous rock named",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q3b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3b-ii",
+          "questionRef": "2026 OL Part 2 Q3B(ii)",
+          "marks": 3,
+          "paperPage": 6,
+          "schemePages": [
+            13
+          ],
+          "criteria": [
+            {
+              "label": "Location",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q3b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3b-iii",
+          "questionRef": "2026 OL Part 2 Q3B(iii)",
+          "marks": 7,
+          "paperPage": 6,
+          "schemePages": [
+            13
+          ],
+          "criteria": [
+            {
+              "label": "Two uses",
+              "maxMarks": 7
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q3b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3b-iv",
+          "questionRef": "2026 OL Part 2 Q3B(iv)",
+          "marks": 27,
+          "paperPage": 6,
+          "schemePages": [
+            13
+          ],
+          "criteria": [
+            {
+              "label": "Description/explanation",
+              "maxMarks": 27
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q3b-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3c",
+          "questionRef": "2026 OL Part 2 Q3C",
+          "marks": 30,
+          "paperPage": 6,
+          "schemePages": [
+            13
+          ],
+          "criteria": [
+            {
+              "label": "Interaction identified",
+              "maxMarks": 3
+            },
+            {
+              "label": "Explanation",
+              "maxMarks": 27
+            }
+          ],
+          "topicIds": [
+            "geography-0-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rivers",
+            "geography-ordinary-rocks-weathering-mass-movement",
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q3c-river-processes",
+            "geography-2026-ol-p2-q3c-coastal-processes",
+            "geography-2026-ol-p2-q3c-mass-movement-processes"
+          ],
+          "routes": [
+            "River processes",
+            "Coastal processes",
+            "Mass movement processes"
+          ]
+        },
+        {
+          "key": "p2-4a",
+          "questionRef": "2026 OL Part 2 Q4A",
+          "marks": 30,
+          "paperPage": 7,
+          "schemePages": [
+            14
+          ],
+          "criteria": [
+            {
+              "label": "Outline of region",
+              "maxMarks": 6
+            },
+            {
+              "label": "River",
+              "maxMarks": 6
+            },
+            {
+              "label": "Town/City 1",
+              "maxMarks": 6
+            },
+            {
+              "label": "Town/City 2",
+              "maxMarks": 6
+            },
+            {
+              "label": "Relief (upland/lowland)",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-1-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-continental"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q4a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-4b-i",
+          "questionRef": "2026 OL Part 2 Q4B(i)",
+          "marks": 4,
+          "paperPage": 7,
+          "schemePages": [
+            15
+          ],
+          "criteria": [
+            {
+              "label": "Primary economic activity named",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q4b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-4b-ii",
+          "questionRef": "2026 OL Part 2 Q4B(ii)",
+          "marks": 27,
+          "paperPage": 7,
+          "schemePages": [
+            15
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 27
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q4b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-4b-iii",
+          "questionRef": "2026 OL Part 2 Q4B(iii)",
+          "marks": 9,
+          "paperPage": 7,
+          "schemePages": [
+            15
+          ],
+          "criteria": [
+            {
+              "label": "Description",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q4b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-4c",
+          "questionRef": "2026 OL Part 2 Q4C",
+          "marks": 30,
+          "paperPage": 7,
+          "schemePages": [
+            15
+          ],
+          "criteria": [
+            {
+              "label": "Description/explanation",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-1-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-continental",
+            "geography-ordinary-regions-european",
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q4c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-i",
+          "questionRef": "2026 OL Part 2 Q5A(i)",
+          "marks": 6,
+          "paperPage": 8,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Age group",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q5a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-ii",
+          "questionRef": "2026 OL Part 2 Q5A(ii)",
+          "marks": 6,
+          "paperPage": 8,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Language",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q5a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-iii",
+          "questionRef": "2026 OL Part 2 Q5A(iii)",
+          "marks": 6,
+          "paperPage": 8,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Total",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q5a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-iv",
+          "questionRef": "2026 OL Part 2 Q5A(iv)",
+          "marks": 6,
+          "paperPage": 8,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "One way",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-1-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q5a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-v",
+          "questionRef": "2026 OL Part 2 Q5A(v)",
+          "marks": 6,
+          "paperPage": 8,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Brief explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-1-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q5a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5b",
+          "questionRef": "2026 OL Part 2 Q5B",
+          "marks": 40,
+          "paperPage": 8,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Region named",
+              "maxMarks": 4
+            },
+            {
+              "label": "Activity 1 explained",
+              "maxMarks": 18
+            },
+            {
+              "label": "Activity 2 explained",
+              "maxMarks": 18
+            }
+          ],
+          "topicIds": [
+            "geography-1-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-continental"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-importance-of-manufacturing-to",
+            "geography-2026-ol-p2-q5b-the-factors-influencing-agricultur-the-reasons-why-tourists-are-attra",
+            "geography-2026-ol-p2-q5b-the-importance-of-manufacturing-to-the-reasons-why-tourists-are-attra"
+          ],
+          "routes": [
+            "The factors influencing agriculture in the region + The importance of manufacturing to the region",
+            "The factors influencing agriculture in the region + The reasons why tourists are attracted to the region",
+            "The importance of manufacturing to the region + The reasons why tourists are attracted to the region"
+          ]
+        },
+        {
+          "key": "p2-5c-i",
+          "questionRef": "2026 OL Part 2 Q5C(i)",
+          "marks": 15,
+          "paperPage": 8,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Core region named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Explanation",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-1-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european",
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q5c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5c-ii",
+          "questionRef": "2026 OL Part 2 Q5C(ii)",
+          "marks": 15,
+          "paperPage": 8,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Peripheral region named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Explanation",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-1-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european",
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q5c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-i",
+          "questionRef": "2026 OL Part 2 Q6A(i)",
+          "marks": 6,
+          "paperPage": 9,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Former member",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-1-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q6a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-ii",
+          "questionRef": "2026 OL Part 2 Q6A(ii)",
+          "marks": 6,
+          "paperPage": 9,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Candidate country",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-1-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q6a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-iii",
+          "questionRef": "2026 OL Part 2 Q6A(iii)",
+          "marks": 6,
+          "paperPage": 9,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-1-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q6a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-iv",
+          "questionRef": "2026 OL Part 2 Q6A(iv)",
+          "marks": 6,
+          "paperPage": 9,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Two advantages",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-ireland-the-eu",
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q6a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-v",
+          "questionRef": "2026 OL Part 2 Q6A(v)",
+          "marks": 6,
+          "paperPage": 9,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Brief explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-1-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q6a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6b-i",
+          "questionRef": "2026 OL Part 2 Q6B(i)",
+          "marks": 4,
+          "paperPage": 10,
+          "schemePages": [
+            19
+          ],
+          "criteria": [
+            {
+              "label": "Tertiary economic activity named",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q6b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6b-ii",
+          "questionRef": "2026 OL Part 2 Q6B(ii)",
+          "marks": 27,
+          "paperPage": 10,
+          "schemePages": [
+            19
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 27
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q6b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6b-iii",
+          "questionRef": "2026 OL Part 2 Q6B(iii)",
+          "marks": 9,
+          "paperPage": 10,
+          "schemePages": [
+            19
+          ],
+          "criteria": [
+            {
+              "label": "Description",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q6b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6c",
+          "questionRef": "2026 OL Part 2 Q6C",
+          "marks": 30,
+          "paperPage": 10,
+          "schemePages": [
+            19
+          ],
+          "criteria": [
+            {
+              "label": "Description/explanation",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-1-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european",
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q6c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7a",
+          "questionRef": "2026 OL Part 2 Q7A",
+          "marks": 30,
+          "paperPage": 12,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "Limits/frame",
+              "maxMarks": 1
+            },
+            {
+              "label": "Proportions (landscape)",
+              "maxMarks": 2
+            },
+            {
+              "label": "Overall impression",
+              "maxMarks": 2
+            },
+            {
+              "label": "The river",
+              "maxMarks": 5
+            },
+            {
+              "label": "A bridge",
+              "maxMarks": 5
+            },
+            {
+              "label": "A recreational area",
+              "maxMarks": 5
+            },
+            {
+              "label": "An agricultural area in the right foreground",
+              "maxMarks": 5
+            },
+            {
+              "label": "A warehouse in the centre foreground",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q7a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7b",
+          "questionRef": "2026 OL Part 2 Q7B",
+          "marks": 40,
+          "paperPage": 12,
+          "schemePages": [
+            22
+          ],
+          "criteria": [
+            {
+              "label": "Named developed economy",
+              "maxMarks": 4
+            },
+            {
+              "label": "Description/explanation",
+              "maxMarks": 36
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q7b-tourism",
+            "geography-2026-ol-p2-q7b-financial-services",
+            "geography-2026-ol-p2-q7b-services-and-footloose-industries"
+          ],
+          "routes": [
+            "Tourism",
+            "Financial services",
+            "Services and footloose industries"
+          ]
+        },
+        {
+          "key": "p2-7c-i",
+          "questionRef": "2026 OL Part 2 Q7C(i)",
+          "marks": 3,
+          "paperPage": 12,
+          "schemePages": [
+            22
+          ],
+          "criteria": [
+            {
+              "label": "Policy named",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-ireland-the-eu"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q7c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7c-ii",
+          "questionRef": "2026 OL Part 2 Q7C(ii)",
+          "marks": 27,
+          "paperPage": 12,
+          "schemePages": [
+            22
+          ],
+          "criteria": [
+            {
+              "label": "Effect identified",
+              "maxMarks": 3
+            },
+            {
+              "label": "Description and explanation",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-ireland-the-eu"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q7c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-i",
+          "questionRef": "2026 OL Part 2 Q8A(i)",
+          "marks": 6,
+          "paperPage": 13,
+          "schemePages": [
+            23
+          ],
+          "criteria": [
+            {
+              "label": "Solar panels",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q8a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-ii",
+          "questionRef": "2026 OL Part 2 Q8A(ii)",
+          "marks": 6,
+          "paperPage": 13,
+          "schemePages": [
+            23
+          ],
+          "criteria": [
+            {
+              "label": "Clean energy",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q8a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-iii",
+          "questionRef": "2026 OL Part 2 Q8A(iii)",
+          "marks": 6,
+          "paperPage": 13,
+          "schemePages": [
+            23
+          ],
+          "criteria": [
+            {
+              "label": "Benefit",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q8a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-iv",
+          "questionRef": "2026 OL Part 2 Q8A(iv)",
+          "marks": 6,
+          "paperPage": 13,
+          "schemePages": [
+            23
+          ],
+          "criteria": [
+            {
+              "label": "Two sources",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q8a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-v",
+          "questionRef": "2026 OL Part 2 Q8A(v)",
+          "marks": 6,
+          "paperPage": 13,
+          "schemePages": [
+            23
+          ],
+          "criteria": [
+            {
+              "label": "Brief explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q8a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8b-i",
+          "questionRef": "2026 OL Part 2 Q8B(i)",
+          "marks": 4,
+          "paperPage": 13,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "MNC named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Location stated",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-3-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-multinationals-globalisation"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q8b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8b-ii",
+          "questionRef": "2026 OL Part 2 Q8B(ii)",
+          "marks": 6,
+          "paperPage": 13,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Raw material named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Product named",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-3-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-multinationals-globalisation"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q8b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8b-iii",
+          "questionRef": "2026 OL Part 2 Q8B(iii)",
+          "marks": 21,
+          "paperPage": 13,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 21
+            }
+          ],
+          "topicIds": [
+            "geography-3-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-multinationals-globalisation"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q8b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8b-iv",
+          "questionRef": "2026 OL Part 2 Q8B(iv)",
+          "marks": 9,
+          "paperPage": 13,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-3-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-multinationals-globalisation"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q8b-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8c-i",
+          "questionRef": "2026 OL Part 2 Q8C(i)",
+          "marks": 3,
+          "paperPage": 13,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Example named",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-environmental-impact"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q8c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8c-ii",
+          "questionRef": "2026 OL Part 2 Q8C(ii)",
+          "marks": 27,
+          "paperPage": 13,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Description and explanation",
+              "maxMarks": 27
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-environmental-impact"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q8c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9a-i",
+          "questionRef": "2026 OL Part 2 Q9A(i)",
+          "marks": 24,
+          "paperPage": 14,
+          "schemePages": [
+            25
+          ],
+          "criteria": [
+            {
+              "label": "Graph paper",
+              "maxMarks": 3
+            },
+            {
+              "label": "Vertical axis labelled / circle",
+              "maxMarks": 3
+            },
+            {
+              "label": "Horizontal axis labelled / centred",
+              "maxMarks": 3
+            },
+            {
+              "label": "5 items illustrated",
+              "maxMarks": 15
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q9a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9a-ii",
+          "questionRef": "2026 OL Part 2 Q9A(ii)",
+          "marks": 6,
+          "paperPage": 14,
+          "schemePages": [
+            25
+          ],
+          "criteria": [
+            {
+              "label": "Two reasons",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-developing-economies"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q9a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9b-i",
+          "questionRef": "2026 OL Part 2 Q9B(i)",
+          "marks": 4,
+          "paperPage": 14,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Six-figure grid reference",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q9b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9b-ii",
+          "questionRef": "2026 OL Part 2 Q9B(ii)",
+          "marks": 27,
+          "paperPage": 14,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Reasons explained",
+              "maxMarks": 27
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q9b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9b-iii",
+          "questionRef": "2026 OL Part 2 Q9B(iii)",
+          "marks": 9,
+          "paperPage": 14,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "One disadvantage described",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q9b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9c-i",
+          "questionRef": "2026 OL Part 2 Q9C(i)",
+          "marks": 6,
+          "paperPage": 14,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Two fossil fuels",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q9c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9c-ii",
+          "questionRef": "2026 OL Part 2 Q9C(ii)",
+          "marks": 24,
+          "paperPage": 14,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Impact identified",
+              "maxMarks": 3
+            },
+            {
+              "label": "Description/explanation",
+              "maxMarks": 21
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-environmental-impact"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q9c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10a",
+          "questionRef": "2026 OL Part 2 Q10A",
+          "marks": 30,
+          "paperPage": 15,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Limits/frame",
+              "maxMarks": 1
+            },
+            {
+              "label": "Proportions (landscape)",
+              "maxMarks": 2
+            },
+            {
+              "label": "Overall impression",
+              "maxMarks": 2
+            },
+            {
+              "label": "The river",
+              "maxMarks": 5
+            },
+            {
+              "label": "A car park",
+              "maxMarks": 5
+            },
+            {
+              "label": "An industrial area in the background",
+              "maxMarks": 5
+            },
+            {
+              "label": "A sports ground in the right middleground",
+              "maxMarks": 5
+            },
+            {
+              "label": "An area of terraced housing in the left middleground",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q10a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10b",
+          "questionRef": "2026 OL Part 2 Q10B",
+          "marks": 40,
+          "paperPage": 15,
+          "schemePages": [
+            28
+          ],
+          "criteria": [
+            {
+              "label": "Factors named",
+              "maxMarks": 10
+            },
+            {
+              "label": "Description/explanation",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-4-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q10b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10c-i",
+          "questionRef": "2026 OL Part 2 Q10C(i)",
+          "marks": 3,
+          "paperPage": 15,
+          "schemePages": [
+            28
+          ],
+          "criteria": [
+            {
+              "label": "City named",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q10c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10c-ii",
+          "questionRef": "2026 OL Part 2 Q10C(ii)",
+          "marks": 18,
+          "paperPage": 15,
+          "schemePages": [
+            28
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 18
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q10c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10c-iii",
+          "questionRef": "2026 OL Part 2 Q10C(iii)",
+          "marks": 9,
+          "paperPage": 15,
+          "schemePages": [
+            28
+          ],
+          "criteria": [
+            {
+              "label": "Description",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q10c-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-i",
+          "questionRef": "2026 OL Part 2 Q11A(i)",
+          "marks": 24,
+          "paperPage": 16,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Graph paper",
+              "maxMarks": 3
+            },
+            {
+              "label": "Vertical axis labelled / circle",
+              "maxMarks": 3
+            },
+            {
+              "label": "Horizontal axis labelled / centred",
+              "maxMarks": 3
+            },
+            {
+              "label": "5 items illustrated",
+              "maxMarks": 15
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q11a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-ii",
+          "questionRef": "2026 OL Part 2 Q11A(ii)",
+          "marks": 6,
+          "paperPage": 16,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Brief explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-4-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q11a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11b-i",
+          "questionRef": "2026 OL Part 2 Q11B(i)",
+          "marks": 4,
+          "paperPage": 16,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Two reasons",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-4-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q11b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11b-ii",
+          "questionRef": "2026 OL Part 2 Q11B(ii)",
+          "marks": 18,
+          "paperPage": 16,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Description/explanation",
+              "maxMarks": 18
+            }
+          ],
+          "topicIds": [
+            "geography-4-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q11b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11b-iii",
+          "questionRef": "2026 OL Part 2 Q11B(iii)",
+          "marks": 18,
+          "paperPage": 16,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Description/explanation",
+              "maxMarks": 18
+            }
+          ],
+          "topicIds": [
+            "geography-4-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q11b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11c-i",
+          "questionRef": "2026 OL Part 2 Q11C(i)",
+          "marks": 3,
+          "paperPage": 16,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Grid reference",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q11c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11c-ii",
+          "questionRef": "2026 OL Part 2 Q11C(ii)",
+          "marks": 12,
+          "paperPage": 16,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q11c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11c-iii",
+          "questionRef": "2026 OL Part 2 Q11C(iii)",
+          "marks": 3,
+          "paperPage": 16,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Grid reference",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q11c-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11c-iv",
+          "questionRef": "2026 OL Part 2 Q11C(iv)",
+          "marks": 12,
+          "paperPage": 16,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q11c-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12a-i",
+          "questionRef": "2026 OL Part 2 Q12A(i)",
+          "marks": 6,
+          "paperPage": 17,
+          "schemePages": [
+            31
+          ],
+          "criteria": [
+            {
+              "label": "City",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-4-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q12a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12a-ii",
+          "questionRef": "2026 OL Part 2 Q12A(ii)",
+          "marks": 6,
+          "paperPage": 17,
+          "schemePages": [
+            31
+          ],
+          "criteria": [
+            {
+              "label": "Percent",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-4-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q12a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12a-iii",
+          "questionRef": "2026 OL Part 2 Q12A(iii)",
+          "marks": 6,
+          "paperPage": 17,
+          "schemePages": [
+            31
+          ],
+          "criteria": [
+            {
+              "label": "New homes",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-4-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q12a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12a-iv",
+          "questionRef": "2026 OL Part 2 Q12A(iv)",
+          "marks": 6,
+          "paperPage": 17,
+          "schemePages": [
+            31
+          ],
+          "criteria": [
+            {
+              "label": "Two reasons",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q12a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12a-v",
+          "questionRef": "2026 OL Part 2 Q12A(v)",
+          "marks": 6,
+          "paperPage": 17,
+          "schemePages": [
+            31
+          ],
+          "criteria": [
+            {
+              "label": "Brief explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-4-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2026-ol-p2-q12a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12b-i",
+          "questionRef": "2026 OL Part 2 Q12B(i)",
+          "marks": 4,
+          "paperPage": 17,
+          "schemePages": [
+            32
+          ],
+          "criteria": [
+            {
+              "label": "Developing world city named",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q12b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12b-ii",
+          "questionRef": "2026 OL Part 2 Q12B(ii)",
+          "marks": 15,
+          "paperPage": 17,
+          "schemePages": [
+            32
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 15
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q12b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12b-iii",
+          "questionRef": "2026 OL Part 2 Q12B(iii)",
+          "marks": 12,
+          "paperPage": 17,
+          "schemePages": [
+            32
+          ],
+          "criteria": [
+            {
+              "label": "Description",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q12b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12b-iv",
+          "questionRef": "2026 OL Part 2 Q12B(iv)",
+          "marks": 9,
+          "paperPage": 17,
+          "schemePages": [
+            32
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q12b-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12c-i",
+          "questionRef": "2026 OL Part 2 Q12C(i)",
+          "marks": 6,
+          "paperPage": 17,
+          "schemePages": [
+            32
+          ],
+          "criteria": [
+            {
+              "label": "Brief explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-4-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q12c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12c-ii",
+          "questionRef": "2026 OL Part 2 Q12C(ii)",
+          "marks": 24,
+          "paperPage": 17,
+          "schemePages": [
+            32
+          ],
+          "criteria": [
+            {
+              "label": "Description/explanation",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-4-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2026-ol-p2-q12c-ii"
+          ],
+          "routes": []
+        }
+      ],
+      "rule": "Independent review ledger: Leaving Certificate Geography 2026 Ordinary Level.\n\nSources (English editions, Paper Trail index, sizes and SHA-256 pinned in\nEXPECTED_SOURCES): Part One and Answerbook LC005GLP042EV (40 pages), Part Two\nLC005GLP043EV (20 pages), marking scheme LC005GLP000EV (34 pages), and the\ncommon companions shared with Higher Level — 1:50 000 Dundalk map\nLC005CLP003EV, its legend LC005CLPC00EV and the Dundalk aerial photograph\nLC005CLP004EV.\n\nVisual sweep (every page rendered and read on 2026-10-11):\n  Part One booklet p1 cover (400 marks); p2 instructions (Part One \"Attempt\n  any TEN\", 100 marks; Part Two \"attempt THREE\", 300 marks); p3-p12\n  Questions 1-12 (p8 holds Q6 and Q7, p9 holds Q8 and Q9); p13 Part Two\n  answerbook instructions; p14-p17 graph-paper answer pages; p18-p39 lined\n  answer pages; p40 copyright/back cover.\n  Part Two booklet p1 cover; p2 Part Two instructions; p3-p6 Section 1\n  (Q1-Q3; p5 holds only 2C); p7-p10 Section 2 (Q4-Q6); p11 Section 3 divider;\n  p12-p17 Electives (Q7-Q12); p18-p19 \"Do not hand this up\" blanks; p20\n  copyright/back cover.\n  Scheme p1 cover; p2 notes; p3-p4 Geographical Investigation (coursework,\n  not a written-paper task) and its presentation breakdown; p5-p6 Part One\n  table; p7 Part Two instructions; p8-p32 Q1-Q12 (A/B/C, each roman priced);\n  p33 Irish-language bonus marks; p34 blank.\n\nBoundaries follow the published allocation: at Ordinary Level the scheme\nprices every printed roman of every A, B and C part (e.g. 1C (i) 3m + 3m,\n(ii) 3m, (iii) 7 SRPs @ 3m), so each roman is its own task. Part One romans\nand lettered true/false items are tasks; a matching or location table under\nONE printed instruction stays one task with a criterion per scheme row (the\nscheme's rows follow the printed table rows; each was checked against the\nimage: Q1 Inner core=D, Mantle=B, Crust=A, Outer core=C; Q4 Vent=D,\nCrater=C, Ash Cloud=A, Magma chamber=B; Q5 Madeira=B, Baton Rouge=C, Port\nDouglas=A, Sahara=D; Q9 Islamic World=B, Donegal County Council=D, Paris=E,\nSambre Meuse=A, Mediterranean=C; Q10 Isobar=B, high=C, warm front=A, low=D).\nA part whose wording depends on an earlier part (\"named in part (i) above\",\n\"this multinational company\") carries that earlier printed part in its stem.\n\nTariffs: an SRP is 3 marks at Ordinary Level; \"a + b\" lines are one criterion\nwith partial credit a; graded lines keep their printed grades; sketch items\nare \"showing 3 (3/1/0) + labelled 2\"; 4A items are \"named 2 + shown 4\n(4/2/0)\". Every question totals 10 (Part One) or 100 = 30 + 40 + 30 (Part\nTwo) as printed.\n\nWording: the paper wins where the scheme reprints it differently (1B\n\"labelled diagrams\", 2B \"with the aid of a diagram\", 2A \"Sea stack\",\n7B \"Services and footloose industries.\")."
     }
   ]
 }

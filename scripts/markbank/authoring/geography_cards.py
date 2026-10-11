@@ -43,6 +43,7 @@ import fitz
 
 import geography_review as GR
 import geography_review_2026_hl as REVIEW_2026_HL
+import geography_review_2026_ol as REVIEW_2026_OL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -64,6 +65,7 @@ CROSSWALK = os.path.join(
 # Their cards come from the review ledger, not from the generic reader below.
 REVIEWED = {
     (2026, 'higher'): REVIEW_2026_HL,
+    (2026, 'ordinary'): REVIEW_2026_OL,
 }
 
 YEARS = tuple(range(2021, 2027))
