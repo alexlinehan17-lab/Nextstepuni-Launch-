@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher Level Papers 1 and 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1468,
-  "reviewedTasks": 797,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher Level Papers 1 and 2, 2026 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1510,
+  "reviewedTasks": 839,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 201,
+  "targetedRegressionTests": 205,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed through all reviewed Foundation 2014–2026 and all five 2025 English papers",
+  "productionBuild": "passed on 2026-10-11 through all reviewed Foundation 2014–2026, all five 2025 English papers, 2026 HL P1/P2 and 2026 OL P1",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -296,5 +296,58 @@
       "maths-2026-hl-p2-q3-a"
     ],
     "validation": "Deck generation (1,468 built, the same 13 historical rejects), Atlas generation and --check (206 placements), audit --check-reviewed, six regression files (201/201), typecheck and diff whitespace check passed. Production build and browser pass deferred to the end of the 2026 batch."
+  },
+  "ordinary2026p1": {
+    "paper": "2026 Ordinary Level Paper 1",
+    "paperFileid": "LC003GLP100EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-11",
+    "independentlyReviewedTasks": 42,
+    "targetedRegressionTests": 205,
+    "previousRuntimeIdsRetained": 1468,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 20,
+    "runtimeIdsSha256": "2704aa2d1a0c3c875516593e180d8a7d4489eae8bbf802cde7938940bf24333b",
+    "regressionWorkers": 1,
+    "validation": "Deck generation (1,510 built, the same 13 historical rejects), Atlas generation and --check (216 placements), audit --check-reviewed, six regression files (205/205), typecheck, production build and diff whitespace check passed."
+  },
+  "browser2026": {
+    "engine": "Chrome via Playwright, local Vite on port 5701 with the worktree's PDF mirror",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "cards": [
+      "maths-2026-hl-p1-q5-b-i-ii",
+      "maths-2026-hl-p2-q3-a",
+      "maths-2026-ol-p1-q10-b-c"
+    ],
+    "questionPagesRender": true,
+    "multiPageNavigation": true,
+    "schemeHiddenBeforeReveal": true,
+    "exclusiveScaleAwards": {
+      "hl10D": 5,
+      "hl10C": 7,
+      "ol10D": 5
+    },
+    "schemeReaderRenders": true,
+    "escapeAndFocusReturn": true,
+    "rulerKnownPrintedLengthCm": 6.155,
+    "rulerReadingsCm": {
+      "desktop100": 6.16,
+      "desktop125": 6.17,
+      "mobile100": 6.15,
+      "mobile125": 6.17
+    },
+    "pageErrors": [],
+    "sharedReaderDefect": "After Next reaches the last source page the Next button disables and focus can drop to <body>; Escape then does not close the dialog until focus is back inside it. Observed in SourceMaterialReader (shared component), not fixed here."
   }
 }

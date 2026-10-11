@@ -26,6 +26,7 @@ import review from '../scripts/markbank/mathematics/reviews/2025-higher-p1.json'
 import paper2 from '../scripts/markbank/mathematics/reviews/2025-higher-p2.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
+import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
 
 describe('Mathematics booklet identities', () => {
   const question = {
@@ -460,6 +461,7 @@ it('restores omitted Ordinary subparts and symbols without changing their card i
 describe.each([
   { level: 'higher' as const, number: 1, count: 42, review: higher2026p1 },
   { level: 'higher' as const, number: 2, count: 41, review: higher2026p2 },
+  { level: 'ordinary' as const, number: 1, count: 42, review: ordinary2026p1 },
 ])('2026 $level Mathematics Paper $number independent source review', ({ level, number, count, review: census }) => {
   const deck = { higher: HIGHER, ordinary: ORDINARY }[level];
   const cards = deck.filter(card => card.year === 2026 && card.sourceMaterial?.sourceFileid === census.paperFileid);
@@ -531,4 +533,20 @@ it('keeps the 2026 Higher Paper 2 all-or-nothing scales, shared units and constr
   expect(card('q3-a').sourceMaterial?.measurementRequired).toBe(true);
   expect(card('q10-c-i').sourceMaterial?.pages).toEqual([29, 30]);
   expect(card('q10-c-i').stem).toContain('p is the probability');
+});
+
+it('keeps the 2026 Ordinary Paper 1 cross-letter inequality scale and Ordinary bands', () => {
+  const card = (suffix: string) => ORDINARY.find(candidate => candidate.id === `maths-2026-ol-p1-${suffix}`)!;
+  const inequalities = card('q10-b-c');
+  expect(inequalities.totalMarks).toBe(10);
+  expect(inequalities.questionRef).toContain('Q10(b)(i), Q10(b)(ii), Q10(c)(i), Q10(c)(ii)');
+  expect('mathematicsScale' in inequalities && inequalities.mathematicsScale?.marks).toEqual([0, 3, 5, 8, 10]);
+  const quadratic = card('q2-b');
+  expect('mathematicsScale' in quadratic && quadratic.mathematicsScale?.marks).toEqual([0, 5, 11, 15]);
+  const lunch = card('q1-a');
+  expect('mathematicsScale' in lunch && lunch.mathematicsScale?.marks).toEqual([0, 4, 7, 10]);
+  for (const [suffix, last] of [['q4-c-i-ii-iii', '(iii)'], ['q8-a-i-ii', '(ii)'], ['q10-a-iv-v', '(v)']] as const) {
+    expect(card(suffix).questionText, suffix).toContain(last);
+  }
+  expect(card('q7-a-i-ii').stem).not.toContain('20:30');
 });

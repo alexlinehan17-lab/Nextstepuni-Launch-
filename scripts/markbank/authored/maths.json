@@ -58163,5 +58163,1560 @@
    }
   ],
   "notes": "Independently visually checked against the 2026 Higher Level Paper 2 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q1-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-a",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q1(a)",
+  "questionText": "Sara pays for lunch for herself and a friend. Sara’s lunch costs €34·60 and her friend’s lunch costs €28·90. A service charge of 12% is then added on. Find the total cost of lunch, after the service charge has been added on.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "(34·6 + 28·9)1·12 = [€]71·12",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "Accept correct answer without work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q1-a-solution-3",
+    "kind": "point",
+    "verbatim": "Finds total service charge (7·62)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q1-b-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-b-i-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q1(b)(i), Q1(b)(ii)",
+  "stem": "David buys a car for €22 600. It depreciates (goes down in value) by 18% each year, compounded annually.",
+  "questionText": "(i) How much does the car depreciate by in the 1st year? (ii) Find the value of the car after 2 years.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q1-b-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "22 600 × 0·18 = 4068",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q1-b-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "18 532 × 0·82 = [€]15 196·24",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q1-b-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q1-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-c",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q1(c)",
+  "questionText": "A machine was bought for €28 000. The value of the machine depreciated by k% each year for 2 years, where k ∈ ℝ. After 2 years, the machine was valued at €20 230. Using the following formula, or otherwise, work out the value of k, where F is the value of the machine after t years and P is the initial value of the machine: F = P(1 − k/100)^t",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "k = 15%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q1-c-solution-3",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, some correct substitution or trial and improvement",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q2-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q2-a",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q2(a)",
+  "questionText": "Expand and simplify: (3x − 5)² + 4x + 6",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "9x² − 26x + 31",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "9x² − 30x + 25",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q2-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q2-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q2(b)",
+  "questionText": "Solve the following equation in x ∈ ℝ: 3x² − 4x − 5 = 0. Give each answer correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "= 2·12",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "= −0·79",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q2-b-solution-3",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q2-b-solution-4",
+    "kind": "point",
+    "verbatim": "Apply a * for second value of x not found",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q2-c",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q2-c",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q2(c)",
+  "questionText": "Solve the following equation in x ∈ ℝ, where x ≠ 3, −3: 5/(x + 3) − 5/(x − 3) = 6",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "x = 2 , −2",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "Note: Use of CD leading to linear equation then LPC at most",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q2-c-solution-3",
+    "kind": "point",
+    "verbatim": "Sets up quadratic equation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q3-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q3-a",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q3(a)",
+  "questionText": "Kim is making bread. She prepares 2200 grams of bread mix. For every 500 grams of mix, she needs to bake it for 25 minutes. Work out how many minutes it takes to bake the bread.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "4·4 × 25 = 110 [minutes]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Finds 4·4",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q3-b",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q3-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q3(b)",
+  "questionText": "Write 140 as a product of its prime factors.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "2 × 2 × 5 × 7",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Three prime factors of 140 identified",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "A correct product of 140 including two prime factors",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q3-c-i-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q3-c-i-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q3(c)(i), Q3(c)(ii)",
+  "stem": "x² + px + r is a quadratic function in which p, r are constants. This function has roots at x = 3 and x = −7.",
+  "questionText": "(i) Write down two factors of this function. (ii) Hence, or otherwise, find the value of p and the value of r, where p, r ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q3-c-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Factor one = x − 3",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q3-c-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Factor two = x + 7",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q3-c-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "p = 4 r = −21",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q4-a",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q4-a",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q4(a)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "The complex numbers z₁ and z₂ are shown on the Argand diagram below. Using the Argand diagram, write down the values of z₁ and z₂ in the form a + bi, where a, b ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "z₁ = −2 + 3i",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "z₂ = 4 + i",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q4-a-solution-3",
+    "kind": "point",
+    "verbatim": "Answers not given in the correct form",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q4-b",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q4-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q4(b)",
+  "stem": "In this question, i² = −1.",
+  "questionText": "Find the value of the following expression: i(2 − i) + i²(2 − i). Give your answer in the form a + bi, where a, b ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "−1 + 3i",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Correct multiplication AND substitutes −1 for i²",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q4-c-i-ii-iii",
+  "topicId": "maths-3-1",
+  "conceptId": "p1-q4-c-i-ii-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q4(c)(i), Q4(c)(ii), Q4(c)(iii)",
+  "stem": "In this question, i² = −1. The complex number u is shown on the Argand diagram below. Four other complex numbers, labelled, A, B, C, and D, are also shown on the Argand diagram. The diagram is drawn to scale. Use the diagram to answer parts (c)(i) to (c)(iii).",
+  "questionText": "(i) Write down one possible complex number that u could be. Give your answer in the form a + bi, where a, b ∈ ℤ. (ii) Plot and label u̅ as accurately as you can on the Argand diagram above, where u̅ is the complex conjugate of u. (iii) Which of the complex numbers A, B, C, or D is equal to u + u̅? Tick one box only.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q4-c-i-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "1 + 3i",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q4-c-i-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "(iii) Box C ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q4-c-i-ii-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Note: In (ii) if u̅ plotted correctly but not labelled apply * penalty for part (ii)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q5-a-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q5-a-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q5(a)(i)",
+  "stem": "The first three terms of an arithmetic sequence are: 12, 17, 22, …",
+  "questionText": "Write down the next three terms of the sequence.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "27, 32, 37",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Finds term four",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q5-a-ii-iii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q5-a-ii-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q5(a)(ii), Q5(a)(iii)",
+  "stem": "The first three terms of an arithmetic sequence are: 12, 17, 22, …",
+  "questionText": "(ii) Find an expression for Tₙ, the nth term of the sequence. (iii) Hence, or otherwise, find the value of T₂₀, the 20th term in the sequence.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q5-a-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "T₂₀ = 5(20) + 7 = 107",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q5-a-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q5-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q5-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q5(b)",
+  "questionText": "The first three terms of a different arithmetic sequence are: 6, x, −4, … Find the value of x.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "x = 1",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "Finds d",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q5-c",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q5-c",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q5(c)",
+  "questionText": "The first three terms of another arithmetic sequence are: 43, 39, 35, … The first n terms of this sequence are added so that their sum is less than zero. Find the smallest such value of n.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q5-c-solution-1",
+    "kind": "point",
+    "verbatim": "n = 23",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q5-c-solution-2",
+    "kind": "point",
+    "verbatim": "Answer given as 22·5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q5-c-solution-3",
+    "kind": "point",
+    "verbatim": "Sn formula fully substituted AND equated to 0 or < 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q6-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q6-a-i-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q6(a)(i), Q6(a)(ii)",
+  "stem": "The function g is defined as g(x) = 2x − 3, for x ∈ ℝ.",
+  "questionText": "(i) Find g(4). (ii) Find the value of x for which g(x) = 11.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q6-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "g(4) = 2(4) − 3 = 5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q6-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "x = 7",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q6-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "One part correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q6-b",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q6-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q6(b)",
+  "questionText": "The function h is defined as h(x) = 3x² − 2x + 1. Find h′(x), the derivative of h(x), and hence find the co-ordinates of the local minimum point of h.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "6x − 2 = 0",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "Correct differentiation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Solves for x",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q6-b-solution-4",
+    "kind": "point",
+    "verbatim": "Answer not written as a couple",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q6-c",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q6-c",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2026 OL Paper 1 Q6(c)",
+  "questionText": "The diagram below shows the graph of the quadratic function k(x). The three diagrams below, A, B, and C, show the graphs of three linear functions. One of these is the graph of k′(x), that is, the derivative of k(x). Which of the graphs in the diagrams A, B, or C is the graph of k′(x)? Justify your answer. Tick one box only.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q6-c-solution-1",
+    "kind": "point",
+    "verbatim": "Box C ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q6-c-solution-2",
+    "kind": "point",
+    "verbatim": "Positive slope AND positive x intercept",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q6-c-solution-3",
+    "kind": "point",
+    "verbatim": "Box C ticked and work of merit in explanation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q7-a-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-a-i-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q7(a)(i), Q7(a)(ii)",
+  "stem": "Part of the bus timetable from Dublin Airport to Waterford Bus Station is shown below. Use the timetable to answer parts (a)(i), (a)(ii), and (a)(iii). The timetable on the original page gives the times of routes A to F at each stop from Dublin Airport to Waterford Bus Station.",
+  "questionText": "(i) Cathal took one of the buses from the table above and arrived in Waterford Bus Station between 18:00 and 21:00. Which bus did he take? Tick one box only: A, B, C, D, E or F. (ii) Work out how long it takes Bus B to travel from Dublin Airport to Waterford Bus Station.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q7-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Box D ticked",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q7-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "14: 00 − 10: 50 = 3: 10",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q7-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q7-a-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-a-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q7(a)(iii)",
+  "stem": "Part of the bus timetable from Dublin Airport to Waterford Bus Station is shown below. Use the timetable to answer parts (a)(i), (a)(ii), and (a)(iii). The timetable on the original page gives the times of routes A to F at each stop from Dublin Airport to Waterford Bus Station.",
+  "questionText": "In the table, T represents the time that bus E arrives at Gowran. It takes bus E 3 minutes less to travel from Royal Oak to Gowran than it does to travel from Gowran to Thomastown. Find the time represented by T.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q7-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "= 21: 33",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q7-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Finds 9 minutes",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q7-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q7-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q7(b)",
+  "questionText": "The cost of an adult ticket from Dublin Airport to Waterford Bus Station is €x and the cost of a child ticket is €y. 3 adult tickets and 4 child tickets cost €144. 2 adult tickets and 1 child ticket cost €71. Find the value of x and the value of y.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "x = [€]28",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q7-b-solution-2",
+    "kind": "point",
+    "verbatim": "y = [€]15",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q7-b-solution-3",
+    "kind": "point",
+    "verbatim": "Two equations in terms of x and y written.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q7-c-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-c-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q7(c)(i)",
+  "stem": "Luan, Shea, and Tara are all PAYE workers. Their tax rates and bands are shown in the table below: the first €44 000 of annual income is taxed at 20% and the balance at 40%. Assume that no other deductions are made from their income.",
+  "questionText": "Luan has a gross annual income of €37 600. He only pays tax at the lower rate. He has an annual tax credit of €4000. Work out his net annual tax and hence work out his net annual pay.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q7-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "7520 − 4000 = 3520",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q7-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "37 600 − 3520 = [€]34 080",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q7-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * if net annual tax is not written",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q7-c-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-c-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q7(c)(ii)",
+  "stem": "Luan, Shea, and Tara are all PAYE workers. Their tax rates and bands are shown in the table below: the first €44 000 of annual income is taxed at 20% and the balance at 40%. Assume that no other deductions are made from their income.",
+  "questionText": "Shea has a gross annual income of €63 400. He has an annual tax credit of €4000. Work out his net annual tax.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q7-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "(16 560) − 4000 = [€]12 560",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q7-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Finds tax paid at higher rate",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q7-c-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-c-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q7(c)(iii)",
+  "stem": "Luan, Shea, and Tara are all PAYE workers. Their tax rates and bands are shown in the table below: the first €44 000 of annual income is taxed at 20% and the balance at 40%. Assume that no other deductions are made from their income.",
+  "questionText": "Tara has a net annual tax of €17 000. She pays income tax at both tax rates. She has an annual tax credit of €4000. Work out her gross annual income.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q7-c-iii-solution-1",
+    "kind": "point",
+    "verbatim": "= [€]74 500",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q7-c-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Finds gross pay at which higher rate is paid (30 500)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q8-a-i-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-a-i-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q8(a)(i), Q8(a)(ii)",
+  "stem": "The travel agency Sunshine Escapes are planning how much money to spend on advertising per month. They predict that their monthly sales can be modelled by the function: S(x) = −x³ + 9·6x² + 25, where S(x) is the monthly sales (in thousands of euro) and x is the amount spent on advertising per month (the advertising spend in thousands of euro), with 0 ≤ x ≤ 7, x ∈ ℝ.",
+  "questionText": "(i) Complete the table below to show the value of S(x) for each of the given values of x. Give each answer correct to the nearest whole number, where relevant. The table gives S(1) = 34, S(5) = 140 and S(7) = 152, and leaves x = 0, 2, 3, 4 and 6 to complete. (ii) Draw the graph of S(x) on the axes below, for 0 ≤ x ≤ 7, x ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q8-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Note: Solution requires 14 items, 5 values in table, 8 points plotted and the curve",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q8-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * if 13 items correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q8-a-iii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-a-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q8(a)(iii)",
+  "stem": "The travel agency Sunshine Escapes are planning how much money to spend on advertising per month. They predict that their monthly sales can be modelled by the function: S(x) = −x³ + 9·6x² + 25, where S(x) is the monthly sales (in thousands of euro) and x is the amount spent on advertising per month (the advertising spend in thousands of euro), with 0 ≤ x ≤ 7, x ∈ ℝ.",
+  "questionText": "Use your graph to estimate the advertising spend (in thousands of euro) that is needed to give monthly sales of €100 000. Show your work on the graph.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q8-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "3·5 or 3500",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q8-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, some relevant work on diagram",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q8-a-iv",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-a-iv",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q8(a)(iv)",
+  "stem": "The travel agency Sunshine Escapes are planning how much money to spend on advertising per month. They predict that their monthly sales can be modelled by the function: S(x) = −x³ + 9·6x² + 25, where S(x) is the monthly sales (in thousands of euro) and x is the amount spent on advertising per month (the advertising spend in thousands of euro), with 0 ≤ x ≤ 7, x ∈ ℝ.",
+  "questionText": "Use calculus to find the value of x that gives the maximum monthly sales according to the model. Remember: S(x) = −x³ + 9·6x² + 25.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q8-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "S′(x) = −3x² + 19·2x",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q8-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "x = 6·4",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q8-a-iv-solution-3",
+    "kind": "point",
+    "verbatim": "Equates S′(x) to zero",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q8-a-v",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q8-a-v",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q8(a)(v)",
+  "stem": "The travel agency Sunshine Escapes are planning how much money to spend on advertising per month. They predict that their monthly sales can be modelled by the function: S(x) = −x³ + 9·6x² + 25, where S(x) is the monthly sales (in thousands of euro) and x is the amount spent on advertising per month (the advertising spend in thousands of euro), with 0 ≤ x ≤ 7, x ∈ ℝ.",
+  "questionText": "The sales team spent €5000 on advertising in one particular month and the actual sales were €125 000 in the same month. Using the relevant value from the table on the previous page, find the percentage error in the predicted sales model, S(x), for that month.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q8-a-v-solution-1",
+    "kind": "point",
+    "verbatim": "Error = 140 000 − 125 000 = 15 000",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q8-a-v-solution-2",
+    "kind": "point",
+    "verbatim": "Formula fully substituted",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q8-b-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-b-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q8(b)(i)",
+  "stem": "The weekly pay for a holiday representative, €P, is given by the formula: P = rh + 2rt, where: r = hourly rate of pay; h = the number of hours worked at the hourly rate of pay, and t = the number of overtime hours worked.",
+  "questionText": "Philip has an hourly rate of pay of €15 per hour. On a particular week, Philip worked 39 hours at the hourly rate of pay. He also worked 5 hours overtime. Find Philip’s pay for this week.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q8-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "P = [€]735",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q8-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Fully correct substitution into P",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q8-b-ii-iii",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-b-ii-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q8(b)(ii), Q8(b)(iii)",
+  "stem": "The weekly pay for a holiday representative, €P, is given by the formula: P = rh + 2rt, where: r = hourly rate of pay; h = the number of hours worked at the hourly rate of pay, and t = the number of overtime hours worked.",
+  "questionText": "(ii) Rearrange the formula P = rh + 2rt to write r in terms of P, h, and t. (iii) Philip’s hourly rate of pay is increased. The next week he is paid a total of €892·50 for working 35 hours at the hourly rate of pay and 8 hours overtime. Using your answer from (b)(ii), or otherwise, work out Philip’s new hourly rate of pay.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q8-b-ii-iii-solution-1",
+    "kind": "point",
+    "verbatim": "= [€]17·5 [per hour]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q8-b-ii-iii-solution-2",
+    "kind": "point",
+    "verbatim": "One part correct and work of merit in the other part",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q9-a-i-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-a-i-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q9(a)(i), Q9(a)(ii)",
+  "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club. Dean does a number of sets as part of his running training session. One set consists of four 10-second runs and four 10-second rests. The times and the distances for each run are shown in the table below: Run 1 38 m, Run 2 41 m, Run 3 44 m and Run 4 41 m, each run and each rest taking 10 seconds. For example, in Run 1 Dean runs 38 m.",
+  "questionText": "(i) Find how many seconds it takes Dean to do one set, that is, find the total time of the 4 runs and 4 rests. (ii) Find the distance, in metres, that Dean runs in one set.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q9-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "80 [seconds]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q9-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "164 [metres]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q9-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "One part correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q9-a-iii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-a-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q9(a)(iii)",
+  "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club. Dean does a number of sets as part of his running training session. One set consists of four 10-second runs and four 10-second rests. The times and the distances for each run are shown in the table below: Run 1 38 m, Run 2 41 m, Run 3 44 m and Run 4 41 m, each run and each rest taking 10 seconds. For example, in Run 1 Dean runs 38 m.",
+  "questionText": "Dean keeps repeating the set above. Find the total distance Dean will have run after 7 minutes.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q9-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "820 + 38 = 858 m",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q9-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "5 full sets plus 20 seconds",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q9-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * for no units",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q9-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-b",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q9(b)",
+  "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club.",
+  "questionText": "Dean, Saoirse, Kayla, and Olor enter the London marathon. The entry fee is £80 sterling per person plus a carbon offset levy of £145 sterling per person. The total cost, in euro, for the 4 people is €1020. Work out the exchange rate used, that is, work out how much sterling is equal to €1. Give your answer correct to 3 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "€1 = [£]0·882",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q9-b-solution-2",
+    "kind": "point",
+    "verbatim": "Finds 225 AND 255",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q9-b-solution-3",
+    "kind": "point",
+    "verbatim": "Finds 900",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q9-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-c",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q9(c)",
+  "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club.",
+  "questionText": "Saoirse completes a 5 km run in 25 minutes. Work out her average speed for the 5 km run. Give your answer in metres per second correct to 1 decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "= 3·3 [m/s]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q9-d-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-d-i",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q9(d)(i)",
+  "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club. The diagram below shows a walkway, from the start point A to the point B. The length of the walkway is 4·8 km. When a person reaches the point B they must then go back to the start point A. Kayla and Olor both leave the point A at the same time. Kayla is running 2 times as fast as Olor is walking, and they both move at a constant speed.",
+  "questionText": "When Kayla reaches the point B, how far will Olor have walked?",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q9-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "2·4 km",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q9-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * for no units",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q9-d-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q9-d-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q9(d)(ii)",
+  "stem": "Dean, Saoirse, Kayla, and Olor are all members of a running club. The diagram below shows a walkway, from the start point A to the point B. The length of the walkway is 4·8 km. When a person reaches the point B they must then go back to the start point A. Kayla and Olor both leave the point A at the same time. Kayla is running 2 times as fast as Olor is walking, and they both move at a constant speed.",
+  "questionText": "Work out the distance Olor will have walked from A, in km, when he meets Kayla, as she is running back along the walkway from B to A.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q9-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "= 3·2 [km]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q9-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Identifies ratio as 2: 1",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q9-d-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Finds 6·4 (distance run by Kayla)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q10-a-i-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "p1-q10-a-i-ii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q10(a)(i), Q10(a)(ii)",
+  "stem": "The co-ordinate diagram below shows the cross section of the ladder and top of a child’s slide. A, B, and C are points on the slide. The slide is on horizontal ground (x-axis). Each unit in the diagram is 1 m. The ladder, labelled l(x), goes from the point A to the point B. The top of the slide goes from the point B to the point C. You will draw the downward part of the slide later.",
+  "questionText": "(i) Write down the height of the slide in metres. (ii) Write down the length of the top of the slide, that is, the distance from B to C. Give your answer in centimetres.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q10-a-i-ii-solution-1",
+    "kind": "point",
+    "verbatim": "2 [m]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q10-a-i-ii-solution-2",
+    "kind": "point",
+    "verbatim": "40 [cm]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q10-a-i-ii-solution-3",
+    "kind": "point",
+    "verbatim": "In (ii) answer given as 0·4",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q10-a-iii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q10-a-iii",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q10(a)(iii)",
+  "stem": "The co-ordinate diagram below shows the cross section of the ladder and top of a child’s slide. A, B, and C are points on the slide. The slide is on horizontal ground (x-axis). Each unit in the diagram is 1 m. The ladder, labelled l(x), goes from the point A to the point B. The top of the slide goes from the point B to the point C. You will draw the downward part of the slide later.",
+  "questionText": "In the diagram on the previous page, the graph of the function l(x) from A to B represents the ladder, where: l(x) = 2·5x + 3. Find l′(x) and explain what this means in the context of the question.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q10-a-iii-solution-1",
+    "kind": "point",
+    "verbatim": "l′(x) = 2·5",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q10-a-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Slope of the ladder",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q10-a-iii-solution-3",
+    "kind": "point",
+    "verbatim": "l′(x) = 2·5 written but explanation is incorrect",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q10-a-iv-v",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q10-a-iv-v",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q10(a)(iv), Q10(a)(v)",
+  "stem": "The co-ordinate diagram below shows the cross section of the ladder and top of a child’s slide. A, B, and C are points on the slide. The slide is on horizontal ground (x-axis). Each unit in the diagram is 1 m. The ladder, labelled l(x), goes from the point A to the point B. The top of the slide goes from the point B to the point C. You will draw the downward part of the slide later. The height of the downward part of the slide can be modelled by the function: d(x) = 2 × 0·2^x, where d(x) is the height of the slide, for 0 ≤ x ≤ 1·6, x ∈ ℝ.",
+  "questionText": "(iv) Complete the table below to show the value of d(x) for each of the given values of x. Give each value of d(x) correct to 2 decimal places, where relevant. The table gives d(0) = 2, d(0·2) = 1·45, d(0·8) = 0·55 and d(1·6) = 0·15, and leaves x = 0·4, 0·6, 1, 1·2 and 1·4 to complete. (v) Draw the graph of d(x) on the axes on the previous page, for 0 ≤ x ≤ 1·6, x ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q10-a-iv-v-solution-1",
+    "kind": "point",
+    "verbatim": "Note: Solution requires 14 items, 5 values in table, 8 points plotted and the curve",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q10-a-iv-v-solution-2",
+    "kind": "point",
+    "verbatim": "Apply a * if 13 items correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q10-b-c",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-q10-b-c",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q10(b)(i), Q10(b)(ii), Q10(c)(i), Q10(c)(ii)",
+  "stem": "Another slide in a children’s play area has two restrictions on its use.",
+  "questionText": "(b) All children using the slide must be at least 95 cm tall. (i) By writing in the missing symbol (<, >, ≤, or ≥), complete the inequality below to show this information, where h cm is the height of a child: h ☐ 95. (ii) Graph the inequality from part (b)(i) on the following number line for h ∈ ℝ, showing the allowable heights. (c) All children using the slide must also be at least 4 years old but younger than 12 years old. (i) By writing in the missing symbols, complete the inequality below to show this information, where A years is the age of a child: 4 ☐ A ☐ 12. (ii) Graph the inequality from part (c)(i) on the following number line for A ∈ ℝ, showing the allowable ages.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q10-b-c-solution-1",
+    "kind": "point",
+    "verbatim": "4 years ≤ A < 12 years",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q10-b-c-solution-2",
+    "kind": "point",
+    "verbatim": "(b) OR (c) correct",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q10-b-c-solution-3",
+    "kind": "point",
+    "verbatim": "Work of merit in (b) AND (c)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
+ },
+ {
+  "id": "maths-2026-ol-p1-q10-d",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q10-d",
+  "level": "ordinary",
+  "year": 2026,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2026 OL Paper 1 Q10(d)",
+  "questionText": "It takes 4 employees 13 hours working together to make a slide. On a particular day, the 4 employees work together for 2 hours making a slide. Then 1 employee leaves and the other 3 continue to finish making the slide. Find how long it takes the remaining 3 employees to finish making the slide. Assume that all employees work at the same rate. Give your answer in hours and minutes.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2026-ol-p1-q10-d-solution-1",
+    "kind": "point",
+    "verbatim": "= 14 [hours] 40 [minutes]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q10-d-solution-2",
+    "kind": "point",
+    "verbatim": "Finds 44",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2026-ol-p1-q10-d-solution-3",
+    "kind": "point",
+    "verbatim": "Apply a * if answer given in hours or minutes",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Independently visually checked against the 2026 Ordinary Level Paper 1 and its scheme on 2026-10-11."
  }
 ]
