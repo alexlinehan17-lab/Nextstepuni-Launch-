@@ -272,8 +272,10 @@ describe('Irish prompt, paper and source integrity', () => {
       expect(audio.secFileid, card.id).toBe('LC001ZLP017IV.mp3');
       expect(audio.canonicalUrl, card.id).toBe(
         `https://www.examinations.ie/archive/exampapers/${card.year}/LC001ZLP017IV.mp3`);
-      expect(audio.playbackUrl, card.id).toMatch(/^https:\/\/educateplus\.ie\//);
-      expect(audio.attribution, card.id).toContain('State Examinations Commission');
+      // Official SEC file only; the former mirrors were verified identical
+      // (irish-listening-audio-verification.json) and are no longer used.
+      expect(audio.playbackUrl, card.id).toBe(audio.canonicalUrl);
+      expect(audio.attribution, card.id).toBe('© State Examinations Commission.');
     }
     const grid = byId.get('irish-2021-ol-p1-listening-a-f1')!;
     expect(irishRubric(grid).criteria[0].guidance.join(' ')).toContain('oifig@gaeilge.ie');
