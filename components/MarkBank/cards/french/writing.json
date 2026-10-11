@@ -1,5 +1,3067 @@
 [
   {
+    "id": "fr-2013-hl-writing-b1a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010ALP000EV",
+    "section": "B",
+    "questionRef": "2013 HL Section B Q1(a)",
+    "questionText": "Selon le texte de la Section I, Q.1, « Julia a fait beaucoup de belles rencontres et aucune mauvaise ». La semaine dernière, vous avez fait de l’auto-stop pour la première fois et vous avez eu une très bonne expérience. Racontez ce qui s’est passé. (Votre récit peut être réel ou imaginaire.)\n(90 mots environ)",
+    "totalMarks": 40,
+    "topicId": "french-6-7",
+    "conceptId": "french-writing-french-6-7",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1A",
+      "title": "Printed writing task",
+      "pages": [
+        6
+      ],
+      "attribution": "SEC French 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Higher Level marking scheme, p.16 (PDF page 18) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer in French, approximately 90 words."
+      ],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Idiomatic French",
+                "Rich vocabulary",
+                "Complex sentences well handled",
+                "Few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "Vocabulary adequate",
+                "Verbs generally correct",
+                "Rule of agreement generally respected",
+                "Not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "Problems with vocabulary",
+                "Most verbs incorrect",
+                "Basic rule of agreement not respected",
+                "Many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-text",
+        "label": "Section A passage",
+        "title": "Reading passage referenced by this task",
+        "pages": [
+          2,
+          3
+        ],
+        "attribution": "SEC French 2013 Higher Level — © State Examinations Commission.",
+        "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+      }
+    ]
+  },
+  {
+    "id": "fr-2013-hl-writing-b1b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010ALP000EV",
+    "section": "B",
+    "questionRef": "2013 HL Section B Q1(b)",
+    "questionText": "Selon le texte de la Section I, Q.2, Jeanne a fait des études supérieures mais elle n’a pas trouvé d’emploi permanent. Pour réussir dans le monde du travail aujourd’hui, est-il nécessaire d’aller à l’université et d’obtenir une licence ?\n(90 mots environ)",
+    "totalMarks": 40,
+    "topicId": "french-7-1",
+    "conceptId": "french-writing-french-7-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        6
+      ],
+      "attribution": "SEC French 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Higher Level marking scheme, p.16 (PDF page 18) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer in French, approximately 90 words."
+      ],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 20,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "guidance": [
+                "Idiomatic French",
+                "Rich vocabulary",
+                "Complex sentences well handled",
+                "Few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "Vocabulary adequate",
+                "Verbs generally correct",
+                "Rule of agreement generally respected",
+                "Not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+              ],
+              "guidance": [
+                "Problems with vocabulary",
+                "Most verbs incorrect",
+                "Basic rule of agreement not respected",
+                "Many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    },
+    "additionalSourceMaterials": [
+      {
+        "kind": "source-text",
+        "label": "Section A passage",
+        "title": "Reading passage referenced by this task",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "SEC French 2013 Higher Level — © State Examinations Commission.",
+        "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+      }
+    ]
+  },
+  {
+    "id": "fr-2013-hl-writing-b2a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010ALP000EV",
+    "section": "B",
+    "questionRef": "2013 HL Section B Q2(a)",
+    "questionText": "Vos parents sont partis passer le weekend à Paris et ils vous ont laissé(e) seul(e) dans la maison. Alors, vous avez décidé de profiter de leur absence et d’organiser une fête chez vous le samedi soir. Qu’est-ce que vous notez à ce sujet dans votre journal intime, après la fête ?\n(75 mots environ)",
+    "totalMarks": 30,
+    "topicId": "french-6-0",
+    "conceptId": "french-writing-french-6-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B2A",
+      "title": "Printed writing task",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC French 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Higher Level marking scheme, p.16 (PDF page 18) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer in French, approximately 75 words."
+      ],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Q. 2 (a) and (b) No particular layout required."
+          ],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Idiomatic French",
+                "Rich vocabulary",
+                "Complex sentences well handled",
+                "Few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "Vocabulary adequate",
+                "Verbs generally correct",
+                "Rule of agreement generally respected",
+                "Not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Problems with vocabulary",
+                "Most verbs incorrect",
+                "Basic rule of agreement not respected",
+                "Many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-hl-writing-b2b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010ALP000EV",
+    "section": "B",
+    "questionRef": "2013 HL Section B Q2(b)",
+    "questionText": "You are staying with a French family who have gone out for the day. Write the following message.\n\n- After lunch, their elderly neighbour phoned to ask for help;\n\n- She had fallen in the kitchen and had cut her head;\n\n- You went to her house and saw that it was serious;\n\n- You are accompanying her to the hospital in an ambulance;\n\n- You do not know what time you will be back but will phone later.\n(75 mots environ)",
+    "totalMarks": 30,
+    "topicId": "french-6-2",
+    "conceptId": "french-writing-french-6-2",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B2B",
+      "title": "Printed writing task",
+      "pages": [
+        8
+      ],
+      "attribution": "SEC French 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Higher Level marking scheme, p.16 (PDF page 18) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer in French, approximately 75 words."
+      ],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [
+            "Q. 2 (a) and (b) No particular layout required."
+          ],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Idiomatic French",
+                "Rich vocabulary",
+                "Complex sentences well handled",
+                "Few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "Vocabulary adequate",
+                "Verbs generally correct",
+                "Rule of agreement generally respected",
+                "Not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Problems with vocabulary",
+                "Most verbs incorrect",
+                "Basic rule of agreement not respected",
+                "Many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-hl-writing-b3a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010ALP000EV",
+    "section": "B",
+    "questionRef": "2013 HL Section B Q3(a)",
+    "questionText": "Un des plus grands bonheurs de la vie, c’est l’amitié.\n\nQu’en pensez-vous ?\n(75 mots environ)",
+    "totalMarks": 30,
+    "topicId": "french-7-7",
+    "conceptId": "french-writing-french-7-7",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "Writing illustration",
+      "title": "Original writing prompt and illustration",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Open the illustration before answering the prompt."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Higher Level marking scheme, p.16 (PDF page 18) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer in French, approximately 75 words."
+      ],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Idiomatic French",
+                "Rich vocabulary",
+                "Complex sentences well handled",
+                "Few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "Vocabulary adequate",
+                "Verbs generally correct",
+                "Rule of agreement generally respected",
+                "Not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Problems with vocabulary",
+                "Most verbs incorrect",
+                "Basic rule of agreement not respected",
+                "Many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-hl-writing-b3b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010ALP000EV",
+    "section": "B",
+    "questionRef": "2013 HL Section B Q3(b)",
+    "questionText": "The Gathering, c’est une succession de festivals et de réunions organisés en Irlande tout au long de l’année 2013. L’idée est d’attirer autant d’Irlandais et de descendants d’Irlandais que possible, afin de renforcer les liens de la diaspora irlandaise et de montrer aux visiteurs tout ce que l’Irlande peut offrir.\n\nQu’est-ce que vous pensez du Gathering ?\n(75 mots environ)",
+    "totalMarks": 30,
+    "topicId": "french-7-3",
+    "conceptId": "french-writing-french-7-3",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "Writing illustration",
+      "title": "Original writing prompt and illustration",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Open the illustration before answering the prompt."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Higher Level marking scheme, p.16 (PDF page 18) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer in French, approximately 75 words."
+      ],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Idiomatic French",
+                "Rich vocabulary",
+                "Complex sentences well handled",
+                "Few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "Vocabulary adequate",
+                "Verbs generally correct",
+                "Rule of agreement generally respected",
+                "Not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Problems with vocabulary",
+                "Most verbs incorrect",
+                "Basic rule of agreement not respected",
+                "Many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-hl-writing-b4a",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010ALP000EV",
+    "section": "B",
+    "questionRef": "2013 HL Section B Q4(a)",
+    "questionText": "L’influence des célébrités sur les jeunes\n\nAujourd’hui, les célébrités représentent des idoles pour les jeunes, et leur influence est considérable. Certaines célébrités peuvent inspirer aux jeunes des ambitions, mais d’autres célébrités peuvent avoir une mauvaise influence sur eux.\n\nDonnez votre réaction.\n(75 mots environ)",
+    "totalMarks": 30,
+    "topicId": "french-7-7",
+    "conceptId": "french-writing-french-7-7",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "Writing illustration",
+      "title": "Original writing prompt and illustration",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Open the illustration before answering the prompt."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Higher Level marking scheme, p.16 (PDF page 18) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer in French, approximately 75 words."
+      ],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Idiomatic French",
+                "Rich vocabulary",
+                "Complex sentences well handled",
+                "Few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "Vocabulary adequate",
+                "Verbs generally correct",
+                "Rule of agreement generally respected",
+                "Not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Problems with vocabulary",
+                "Most verbs incorrect",
+                "Basic rule of agreement not respected",
+                "Many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-hl-writing-b4b",
+    "subjectId": "french",
+    "level": "higher",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010ALP000EV",
+    "section": "B",
+    "questionRef": "2013 HL Section B Q4(b)",
+    "questionText": "Le scandale de la viande de cheval !\n\nDonnez votre réaction.\n(75 mots environ)",
+    "totalMarks": 30,
+    "topicId": "french-7-4",
+    "conceptId": "french-writing-french-7-4",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "Writing illustration",
+      "title": "Original writing prompt and illustration",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2013 Higher Level — © State Examinations Commission.",
+      "presentationNote": "Open the illustration before answering the prompt."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Higher Level marking scheme, p.16 (PDF page 18) — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010ALP000EV.pdf",
+      "p": 18,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer in French, approximately 75 words."
+      ],
+      "criteria": [
+        {
+          "id": "communication",
+          "label": "Communication",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Stimulus material well exploited",
+                "High level of textual coherence",
+                "Clarity in argumentation",
+                "Communicative intention fulfilled",
+                "Little or no irrelevant material",
+                "Few mistakes in register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "More or less competent treatment of stimulus material",
+                "Reasonable level of textual coherence",
+                "Comprehensible for French monoglot",
+                "Communicative intention more or less respected",
+                "Some irrelevant material",
+                "Not too many mistakes in register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Mere transcription or very poor treatment of stimulus material",
+                "Lack of textual coherence",
+                "French monoglot would have difficulty understanding",
+                "Communicative intention stultified",
+                "A lot of irrelevant material",
+                "Mistakes in register"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "Idiomatic French",
+                "Rich vocabulary",
+                "Complex sentences well handled",
+                "Few mistakes in verbs, agreement or spelling"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "Vocabulary adequate",
+                "Verbs generally correct",
+                "Rule of agreement generally respected",
+                "Not too many mistakes in spelling"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "Problems with vocabulary",
+                "Most verbs incorrect",
+                "Basic rule of agreement not respected",
+                "Many mistakes in spelling"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-ol-writing-b1b-field-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(b) · field 1",
+    "questionText": "Vous vous appelez Denis / Denise Cronin. Vous voulez participer à un échange scolaire entre la France et l’Irlande. Remplissez le formulaire suivant.\n\n1. Nom :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        11
+      ],
+      "attribution": "SEC French 2013 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Nom",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Surname – accept any reasonable surname"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-ol-writing-b1b-field-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(b) · field 2",
+    "questionText": "Vous vous appelez Denis / Denise Cronin. Vous voulez participer à un échange scolaire entre la France et l’Irlande. Remplissez le formulaire suivant.\n\n2. Prénom :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        11
+      ],
+      "attribution": "SEC French 2013 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Prénom",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Christian Name – accept any reasonable Christian name"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-ol-writing-b1b-field-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(b) · field 3",
+    "questionText": "Vous vous appelez Denis / Denise Cronin. Vous voulez participer à un échange scolaire entre la France et l’Irlande. Remplissez le formulaire suivant.\n\n3. Âge :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        11
+      ],
+      "attribution": "SEC French 2013 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Âge",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Age – accept any reasonable age"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-ol-writing-b1b-field-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(b) · field 4",
+    "questionText": "Vous vous appelez Denis / Denise Cronin. Vous voulez participer à un échange scolaire entre la France et l’Irlande. Remplissez le formulaire suivant.\n\n4. Langue(s) parlée(s) :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        11
+      ],
+      "attribution": "SEC French 2013 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Langue(s) parlée(s)",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "Language(s) spoken – 1 language acceptable for full marks"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-ol-writing-b1b-field-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(b) · field 5",
+    "questionText": "Vous vous appelez Denis / Denise Cronin. Vous voulez participer à un échange scolaire entre la France et l’Irlande. Remplissez le formulaire suivant.\n\n5. Nombre de frères et sœurs :",
+    "totalMarks": 2,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        11
+      ],
+      "attribution": "SEC French 2013 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [],
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "Nombre de frères et sœurs",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidance": [
+            "References to both brother(s) & sister(s) required here"
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-ol-writing-b1b-route-6789",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(b) · points 6, 7, 8, 9",
+    "questionText": "Vous vous appelez Denis / Denise Cronin. Vous voulez participer à un échange scolaire entre la France et l’Irlande. Remplissez le formulaire suivant.\n\n6. Donnez une brève description de votre région.\n7. Qu’est-ce que vous aimez faire avec votre famille ?\n8. Avez-vous déjà visité la France ?\n9. Pourquoi voulez-vous participer à un échange scolaire ?",
+    "totalMarks": 20,
+    "topicId": "french-6-5",
+    "conceptId": "french-writing-french-6-5",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B1B",
+      "title": "Printed writing task",
+      "pages": [
+        11
+      ],
+      "attribution": "SEC French 2013 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Answer all four questions in complete French sentences."
+      ],
+      "criteria": [
+        {
+          "id": "communication-6",
+          "label": "Communication · question 6",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [
+            "Donnez une brève description de votre région.",
+            "0–2: message not clear. 3: message clear.",
+            "N.B. Correct tense required for full marks in Communication."
+          ]
+        },
+        {
+          "id": "communication-7",
+          "label": "Communication · question 7",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [
+            "Qu’est-ce que vous aimez faire avec votre famille ?",
+            "0–2: message not clear. 3: message clear.",
+            "N.B. Correct tense required for full marks in Communication."
+          ]
+        },
+        {
+          "id": "communication-8",
+          "label": "Communication · question 8",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [
+            "Avez-vous déjà visité la France ?",
+            "0–2: message not clear. 3: message clear.",
+            "N.B. Correct tense required for full marks in Communication."
+          ]
+        },
+        {
+          "id": "communication-9",
+          "label": "Communication · question 9",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [
+            "Pourquoi voulez-vous participer à un échange scolaire ?",
+            "0–2: message not clear. 3: message clear.",
+            "N.B. Correct tense required for full marks in Communication."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 8,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                6,
+                7,
+                8
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2
+              ],
+              "guidance": [
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ],
+          "requiresAttempt": true
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-ol-writing-b2a-route-123",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q2(a) · points 1, 2, 3",
+    "questionText": "Leave the following message for your friend Marc / Rosine with whom you are staying in Cannes. Say that:\n\n• You have gone to the seaside with your friends.\n• The sun is shining and it is very warm.\n• You will be back for dinner at 7 o’clock.",
+    "totalMarks": 30,
+    "topicId": "french-6-2",
+    "conceptId": "french-writing-french-6-2",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B2A",
+      "title": "Printed writing task",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2013 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.12 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 12,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Write in French and include all three required points.",
+        "No marks for layout."
+      ],
+      "criteria": [
+        {
+          "id": "communication-1",
+          "label": "Communication · point 1",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You have gone to the seaside / with your friends.",
+            "Two points required for 5 marks (3 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "communication-2",
+          "label": "Communication · point 2",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "The sun is shining / and it is very warm.",
+            "Two points required for 5 marks (3 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "communication-3",
+          "label": "Communication · point 3",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You will be back for dinner / at 7 o’clock.",
+            "Two points required for 5 marks (3 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-ol-writing-b2b-route-123",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q2(b) · points 1, 2, 3",
+    "questionText": "You are on a school tour in France. Write a postcard to your friend Frédéric / Isabelle in which you say that:\n\n• You are on a school tour in France.\n• You bought bread in a bakery yesterday.\n• You will visit Versailles next Sunday.",
+    "totalMarks": 30,
+    "topicId": "french-6-4",
+    "conceptId": "french-writing-french-6-4",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B2B",
+      "title": "Printed writing task",
+      "pages": [
+        12
+      ],
+      "attribution": "SEC French 2013 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.13 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 13,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Write in French and include all three required points.",
+        "No marks for layout."
+      ],
+      "criteria": [
+        {
+          "id": "communication-1",
+          "label": "Communication · point 1",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You are on a school tour / in France.",
+            "Two points required for 5 marks (3 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "communication-2",
+          "label": "Communication · point 2",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You bought bread / in a bakery yesterday.",
+            "Two points required for 5 marks (3 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "communication-3",
+          "label": "Communication · point 3",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You will visit Versailles / next Sunday.",
+            "Two points required for 5 marks (3 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-ol-writing-b3a-route-123",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q3(a) · points 1, 2, 3",
+    "questionText": "You have just returned from a concert.\nNote the selected points in French in your diary.\n\n• The concert was in England and it was great.\n• You loved the atmosphere and the music.\n• You hope to see the group in Limerick next month.",
+    "totalMarks": 30,
+    "topicId": "french-6-0",
+    "conceptId": "french-writing-french-6-0",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B3A",
+      "title": "Printed writing task",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC French 2013 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.14 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 14,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Write in French and include all three required points.",
+        "No marks for layout."
+      ],
+      "criteria": [
+        {
+          "id": "communication-1",
+          "label": "Communication · point 1",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "The concert was in England / and it was great.",
+            "Two points required for 5 marks (3 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "communication-2",
+          "label": "Communication · point 2",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You loved the atmosphere / and the music.",
+            "Two points required for 5 marks (3 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "communication-3",
+          "label": "Communication · point 3",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidance": [
+            "You hope to see the group / in Limerick next month.",
+            "Two points required for 5 marks (3 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 15,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "guidance": [
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ]
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
+    "id": "fr-2013-ol-writing-b3b-route-123",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q3(b) · points 1, 2, 3",
+    "questionText": "Write a formal letter to Accor Hôtel, 27 quai Claude Bernard, 38000 Grenoble. In the letter:\n\n• Say that you intend to visit Grenoble next autumn.\n• Say that you would like to book a room for two people.\n• Ask if there is a swimming pool in the hotel.\n\nYou are Anthony / Anne O’Rourke, 3 Woodview, Athlone, Co. Westmeath.",
+    "totalMarks": 30,
+    "topicId": "french-6-1",
+    "conceptId": "french-writing-french-6-1",
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Section B · B3B",
+      "title": "Printed writing task",
+      "pages": [
+        14
+      ],
+      "attribution": "SEC French 2013 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Open the original task, including its illustrations and layout, then return to your answer."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, pp.15, 19, 20 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 15,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "qa": {
+      "gates": [
+        "paper-prompt",
+        "published-french-grid",
+        "finite-route-expansion",
+        "visual-paper-scheme-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Write in French and include all three required points.",
+        "Use the formal letter layout and the supplied addresses."
+      ],
+      "criteria": [
+        {
+          "id": "format-top",
+          "label": "Format · top of page",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [
+            "France not necessary in address.",
+            "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
+            "City / town / village & date (Athlone, le 12 juin 2013) in top right corner or underneath.",
+            "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+            "Include “Irlande”, accept “Ireland” / “Éire”.",
+            "[Note: Accept “Monsieur le Directeur” or “Madame la Directrice” in the address above]",
+            "1 mistake - ignore.",
+            "2 mistakes - deduct 1 mark.",
+            "3 mistakes - deduct 2 marks.",
+            "More than 3 mistakes - award 0.",
+            "If candidate has general layout of Top of Page correct, despite numerous mistakes - award one mark."
+          ]
+        },
+        {
+          "id": "format-close",
+          "label": "Format · closing formula",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "guidance": [
+            "Formal ending required.",
+            "Treat one or more incorrect accents in closing formula as one mistake.",
+            "1 mistake - ignore.",
+            "2 mistakes - deduct 1 mark.",
+            "3 mistakes - deduct 2 marks.",
+            "More than 3 mistakes - award 0.",
+            "If candidate has general layout of Top of Page correct, despite numerous mistakes - award one mark."
+          ]
+        },
+        {
+          "id": "communication-1",
+          "label": "Communication · point 1",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "Say that you intend to visit Grenoble / next autumn.",
+            "Two points required for 4 marks (2 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "communication-2",
+          "label": "Communication · point 2",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "Say that you would like to book a room / for two people.",
+            "Two points required for 4 marks (2 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "communication-3",
+          "label": "Communication · point 3",
+          "maxMarks": 4,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "guidance": [
+            "Ask if there is a swimming pool / in the hotel.",
+            "Two points required for 4 marks (2 + 2).",
+            "N.B. Correct tense required for full marks in Communication.",
+            "Assess how clearly each part is communicated."
+          ]
+        },
+        {
+          "id": "language",
+          "label": "Language",
+          "maxMarks": 12,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "guidance": [],
+          "bands": [
+            {
+              "label": "Top",
+              "marks": [
+                9,
+                10,
+                11,
+                12
+              ],
+              "guidance": [
+                "very good range of vocabulary",
+                "verb endings, agreements, tenses nearly always correct",
+                "nearly all words spelt correctly",
+                "good sense of register"
+              ]
+            },
+            {
+              "label": "Middle",
+              "marks": [
+                5,
+                6,
+                7,
+                8
+              ],
+              "guidance": [
+                "reasonable to good range of vocabulary",
+                "verb endings, tenses, agreements correct more often than incorrect",
+                "at least half the words spelt correctly",
+                "some sense of register"
+              ]
+            },
+            {
+              "label": "Bottom",
+              "marks": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "guidance": [
+                "most verb endings, tenses, agreements incorrect",
+                "most words misspelt",
+                "no sense of register"
+              ]
+            }
+          ],
+          "requiresAttempt": true
+        }
+      ],
+      "markingGuideNote": "Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together."
+    }
+  },
+  {
     "id": "fr-2014-hl-writing-b1a",
     "subjectId": "french",
     "level": "higher",

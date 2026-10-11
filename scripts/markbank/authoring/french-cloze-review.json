@@ -462,9 +462,57 @@
       ],
       "wordBankReason": "Full-width ten-word bank visually verified in printed order; the bilingual column reader drops its last word (difficile).",
       "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
+    },
+    {
+      "year": 2013,
+      "paperPage": 10,
+      "schemePage": 10,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2013-ol-000-paper.pdf",
+          "sha256": "c611880cbd4802fb58d6a31917e1b45a42a6216c4a7619dc5c67457fe566ffde"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2013-ol.pdf",
+          "sha256": "46995adf87052146185f3f04186e5038e57cf2ffe69000a0d4b663302d15e075"
+        }
+      ],
+      "answers": [
+        "avec",
+        "grande",
+        "demandé",
+        "jouer",
+        "membre",
+        "deux",
+        "romans",
+        "librairie",
+        "poche",
+        "aimes"
+      ],
+      "wordBank": [
+        "jouer",
+        "grande",
+        "romans",
+        "avec",
+        "poche",
+        "deux",
+        "demandé",
+        "librairie",
+        "membre",
+        "aimes"
+      ],
+      "wordBankReason": "Full-width ten-word bank visually verified in printed order; the bilingual column reader drops its last word (aimes).",
+      "letterRepairs": [
+        {
+          "extracted": "dans la ___________ Ça coûte",
+          "printed": "dans la ___________ . Ça coûte",
+          "reason": "Paper p10 prints the full stop after gap 8 at the end of the line; the column reader dropped it, joining gaps 8 and 9 into one sentence."
+        }
+      ],
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
     }
   ],
-  "expectedCards": 130,
+  "expectedCards": 140,
   "boundaryDecision": "Each of ten gaps is separately priced at 3 marks. The word bank contains possible answers, not selectable task alternatives. Preserve the original whole-letter practice cards and add each separately practicable gap.",
   "verifiedCorrections": [
     "2022 OL scheme p11 leaves item 10 empty in the numbered answer list, but its completed letter explicitly prints du in On pourrait faire du vélo. The paper word bank also contains du. All ten gaps are supported.",
