@@ -2,12 +2,14 @@ import { CARDS as ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
 import ordinary1 from '../scripts/markbank/mathematics/reviews/2025-ordinary-p1.json';
 import ordinary2 from '../scripts/markbank/mathematics/reviews/2025-ordinary-p2.json';
 import { describe, expect, it } from 'vitest';
-import { logicalQuestionIdentity } from '../components/PaperTrail/topics';
+import { logicalQuestionIdentity, topicsForPaper } from '../components/PaperTrail/topics';
 import { CARDS as FOUNDATION } from '../components/MarkBank/cards/maths/foundation';
 import foundation from '../scripts/markbank/mathematics/reviews/2025-foundation-single.json';
 import foundation2026 from '../scripts/markbank/mathematics/reviews/2026-foundation-single.json';
 import foundation2024 from '../scripts/markbank/mathematics/reviews/2024-foundation-single.json';
 import foundation2023 from '../scripts/markbank/mathematics/reviews/2023-foundation-single.json';
+import foundation2014p2 from '../scripts/markbank/mathematics/reviews/2014-foundation-p2-project.json';
+import foundation2014p2Answers from '../scripts/paper-trail/answers/2014/LC003BLP230EV.pdf.json';
 import foundation2014p1 from '../scripts/markbank/mathematics/reviews/2014-foundation-p1-project.json';
 import foundation2015 from '../scripts/markbank/mathematics/reviews/2015-foundation-p1.json';
 import foundation2016 from '../scripts/markbank/mathematics/reviews/2016-foundation-p1.json';
@@ -140,6 +142,7 @@ describe('2025 Higher Mathematics Paper 1 independent source review', () => {
 
 
 describe.each([
+  { year: 2014, count: 48, offered: 325, review: foundation2014p2 },
   { year: 2014, count: 36, offered: 300, review: foundation2014p1 },
   { year: 2015, count: 35, offered: 300, review: foundation2015 },
   { year: 2016, count: 39, offered: 300, review: foundation2016 },
@@ -190,6 +193,50 @@ describe.each([
 
 describe('Foundation Mathematics marking boundaries and source context', () => {
   const task = (year: number, suffix: string) => FOUNDATION.find(card => card.id === `maths-${year}-fl-${suffix}`)!;
+
+  it('retains both 2014 Paper 2 routes and their original candidate tariff', () => {
+    const choices = foundation2014p2.finiteChoices[0];
+    expect(choices.choose).toBe(1);
+    expect(choices.options).toEqual(['8A', '8B']);
+    const routes = choices.options.map(option => foundation2014p2.cards.filter(card =>
+      card.printedParts[0].startsWith(`Q${option}(`)));
+    expect(routes.map(route => route.length)).toEqual([3, 4]);
+    expect(new Set(routes.flat().map(card => card.id)).size).toBe(7);
+    for (const route of routes) {
+      expect(route.reduce((total, card) => total + card.totalMarks, 0)).toBe(choices.routeMarks);
+      for (const expected of route) {
+        const card = FOUNDATION.find(card => card.id === expected.id)!;
+        expect(card.questionText).toBe(expected.questionText);
+        expect(card.totalMarks).toBe(expected.totalMarks);
+      }
+    }
+    const mandatory = foundation2014p2.cards.filter(card => !/^Q8[AB]\(/.test(card.printedParts[0]));
+    const mandatoryMarks = mandatory.reduce((sum, card) => sum + card.totalMarks, 0);
+    expect(mandatoryMarks + choices.choose * choices.routeMarks).toBe(300);
+    expect(mandatoryMarks + choices.options.length * choices.routeMarks).toBe(325);
+    const atlas = topicsForPaper('mathematics', 2014, 'foundation', 'ev', foundation2014p2.paperFileid)!;
+    expect(atlas.q.filter(question => /^8/.test(question.n)).map(question => question.n)).toEqual(['8']);
+    const source = foundation2014p2Answers.q.find(question => question.n === '8')!;
+    expect(source.pP).toBe(12);
+    expect(source.region.map(region => region.p)).toEqual(expect.arrayContaining([41, 42]));
+  });
+
+  it('keeps Paper 2 credit bands and all continued data and diagrams', () => {
+    const table = task(2014, 'p2-project-q2-b-i');
+    expect('mathematicsScale' in table && table.mathematicsScale?.marks).toEqual([0, 2, 3, 4, 5]);
+    const events = task(2014, 'p2-project-q2-b-ii-iii-iv');
+    expect(events.totalMarks).toBe(5);
+    expect(events.questionText).toContain('(iv)');
+    expect(events.sourceMaterial?.pages).toEqual([4, 5]);
+    const slope = task(2014, 'p2-project-q4-a');
+    expect('mathematicsScale' in slope && slope.mathematicsScale?.marks).toEqual([0, 5, 7, 10]);
+    expect(task(2014, 'p2-project-q5-c-ii').sourceMaterial?.pages).toEqual([8, 9]);
+    expect(task(2014, 'p2-project-q9-b-iv').sourceMaterial?.pages).toEqual([14, 15]);
+    const stairs = task(2014, 'p2-project-q10-a-v');
+    expect(stairs.sourceMaterial?.pages).toEqual([16, 17]);
+    expect(stairs.stem).toContain('1 m wide');
+    expect(stairs.stem).toContain('10 steps');
+  });
 
   it('preserves the 2014 graph instructions and the complete average-speed sources', () => {
     const speed = task(2014, 'p1-project-q10-d-i-ii');

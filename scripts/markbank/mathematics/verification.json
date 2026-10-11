@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Paper 1",
-  "runtimeCards": 1337,
-  "reviewedTasks": 666,
+  "scope": "All five 2025 English-language Mathematics papers plus Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1385,
+  "reviewedTasks": 714,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 188,
+  "targetedRegressionTests": 193,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed through all reviewed Foundation 2019–2026 and all five 2025 English papers",
+  "productionBuild": "passed through all reviewed Foundation 2014–2026 and all five 2025 English papers",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -127,7 +127,7 @@
     "runtimeIdsSha256": "7dafb251bb020e8148edef424447fa8d2316737c5202a4982ffc26e0fef1e3a9",
     "regressionWorkers": 1
   },
-  "latestBatch": {
+  "foundation2014p1": {
     "paper": "2014 Foundation Project Maths Paper 1",
     "independentlyReviewedTasks": 36,
     "targetedRegressionTests": 188,
@@ -139,6 +139,21 @@
     "runtimeIdsSha256": "755a49f0ca28c45dd3ee5875d0ab7463f08fb9d0453d0ba4dfb4195f234d776e",
     "regressionWorkers": 1,
     "validation": "Deck and Atlas generation, typecheck, six regression files and diff whitespace check passed. Production build last passed through the 2019 batch."
+  },
+  "latestBatch": {
+    "paper": "2014 Foundation Project Maths Paper 2",
+    "paperFileid": "LC003BLP230EV.pdf",
+    "schemeFileid": "LC003BLP000EV.pdf",
+    "independentlyReviewedTasks": 48,
+    "targetedRegressionTests": 193,
+    "previousRuntimeIdsRetained": 1337,
+    "offeredMarks": 325,
+    "candidateMarks": 300,
+    "paperPagesInspected": 20,
+    "schemePagesInspected": 30,
+    "runtimeIdsSha256": "b5f19ce07aa145ca181cc69d57b907a63d13f6b3f39938fef673ed351fc9ed2f",
+    "regressionWorkers": 1,
+    "validation": "Deck and Atlas generation (186 placements), typecheck, six regression files (193/193) and diff whitespace check passed on 2026-10-07; the six files, Atlas --check and audit --check-reviewed were re-run on 2026-10-11 with the same results. Production build passed in 2m20s with the service worker generated (large-chunk advisory only)."
   },
   "foundation2022": {
     "paper": "2022 Foundation",

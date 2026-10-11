@@ -10,7 +10,10 @@ const mappings = [];
 for (const paper of mathematicsReviews()) {
   const questions = new Map();
   for (const card of paper.cards) {
-    const numbers = [...new Set(card.printedParts.map(part => part.match(/^Q(\d+)/)?.[1]))];
+    // Some historical alternatives (Q8A/Q8B) share one verified Q8 source
+    // card. Keep that explicit parent anchor instead of inventing dead jumps.
+    const numbers = card.atlasQuestionNumber ? [card.atlasQuestionNumber]
+      : [...new Set(card.printedParts.map(part => part.match(/^Q(\d+[A-Z]?)/)?.[1]))];
     if (numbers.some(number => !number)) throw new Error(`${card.id}: missing printed question number`);
     const indexes = card.examTopicIds.map(id => {
       const index = topicIds.indexOf(id);

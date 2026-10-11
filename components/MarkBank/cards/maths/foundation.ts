@@ -13834,4 +13834,1333 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q1-a", topicId: "maths-1-2", conceptId: "p2-project-q1-a",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q1(a)",
+    stem: "In an experiment, a number is chosen at random from the set {2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 28, 30}.",
+    questionText: "Some possible outcomes are listed in the table below. Find the probability of each outcome and write your answers in the table: the number is odd; the number is even; the number is 25; the number is less than 8.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q1-a-solution-1", kind: "point", verbatim: "One correct answer or relevant work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q1-a-solution-2", kind: "point", verbatim: "Two correct answers", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q1-a-solution-3", kind: "point", verbatim: "Three correct answers", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[33,49],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q1-b-i", topicId: "maths-3-1", conceptId: "p2-project-q1-b-i",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q1(b)(i)",
+    stem: "Mary surveyed 150 students to find which social networking sites they use. Some of the results are shown in the Venn diagram below: 20 use Snapchat only, 90 use both Snapchat and Twitter, and 10 use Twitter only.",
+    questionText: "Find the number of students who used neither of the two sites.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q1-b-i-solution-1", kind: "point", verbatim: "Calculates number of students who use either of two sites", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q1-b-i-solution-2", kind: "point", verbatim: "150 –120 = 30", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[33,49],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q1-b-ii", topicId: "maths-1-2", conceptId: "p2-project-q1-b-ii",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q1(b)(ii)",
+    stem: "Mary surveyed 150 students to find which social networking sites they use. Some of the results are shown in the Venn diagram below: 20 use Snapchat only, 90 use both Snapchat and Twitter, and 10 use Twitter only.",
+    questionText: "One student is chosen at random from those surveyed. Find the probability that the student used both sites.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q1-b-ii-solution-1", kind: "point", verbatim: "Correct numerator or correct denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q1-b-ii-solution-2", kind: "point", verbatim: "Inverted fraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[33,49],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q2-a-i", topicId: "maths-1-2", conceptId: "p2-project-q2-a-i",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q2(a)(i)",
+    stem: "A fair spinner has four equal sectors, Red, Green, Yellow, and Blue. The spinner is spun.",
+    questionText: "What is the probability it stops on the yellow sector?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q2-a-i-solution-1", kind: "point", verbatim: "Correct numerator or correct denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q2-a-i-solution-2", kind: "point", verbatim: "Inverted fraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[34,50],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q2-a-ii", topicId: "maths-1-2", conceptId: "p2-project-q2-a-ii",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q2(a)(ii)",
+    stem: "A fair spinner has four equal sectors, Red, Green, Yellow, and Blue. The spinner is spun.",
+    questionText: "What is the probability it stops on the red or the green sector?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q2-a-ii-solution-1", kind: "point", verbatim: "Correct numerator or correct denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q2-a-ii-solution-2", kind: "point", verbatim: "Inverted fraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[34,50],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q2-a-iii", topicId: "maths-1-2", conceptId: "p2-project-q2-a-iii",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q2(a)(iii)",
+    stem: "A fair spinner has four equal sectors, Red, Green, Yellow, and Blue. The spinner is spun.",
+    questionText: "What is the probability it stops on any colour except blue?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q2-a-iii-solution-1", kind: "point", verbatim: "Correct numerator or correct denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q2-a-iii-solution-2", kind: "point", verbatim: "Inverted fraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[34,50],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q2-b-i", topicId: "maths-1-2", conceptId: "p2-project-q2-b-i",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q2(b)(i)",
+    stem: "Joe plays a game with four coloured cards and a fair die. Each card is a different colour: Black, White, Grey and Silver. Joe picks a card at random and rolls the die.",
+    questionText: "The table below shows some of the possible outcomes. Complete the table. Its rows are Black, White, Grey and Silver and its columns are 1, 2, 3, 4, 5, 6. The entries B, 1; W, 5; and G, 2 are already given.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q2-b-i-solution-1", kind: "point", verbatim: "One correct entry or relevant work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q2-b-i-solution-2", kind: "point", verbatim: "At least ten correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q2-b-i-solution-3", kind: "point", verbatim: "At least fifteen correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[34,50],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q2-b-ii-iii-iv", topicId: "maths-1-2", conceptId: "p2-project-q2-b-ii-iii-iv",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q2(b)(ii), Q2(b)(iii), Q2(b)(iv)",
+    stem: "Joe plays a game with four coloured cards and a fair die. Each card is a different colour: Black, White, Grey and Silver. Joe picks a card at random and rolls the die.",
+    questionText: "Find the probability that Joe will get: (ii) a black card and a 6; (iii) a white or a grey card, and a 5; (iv) a silver card and an even number.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q2-b-ii-iii-iv-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q2-b-ii-iii-iv-solution-2", kind: "point", verbatim: "One correct answer", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[35,50],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q3-a", topicId: "maths-1-6", conceptId: "p2-project-q3-a",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q3(a)",
+    stem: "The number of dinners sold in a school canteen over four weeks is shown in the table below. In Monday-to-Friday order, the numbers are: Week 1: 42, 52, 12, 38, 45; Week 2: 39, 42, 9, 29, 42; Week 3: 52, 37, 11, 50, 48; Week 4: 39, 55, 7, 47, 35.",
+    questionText: "Construct a stem-and-leaf plot of the data. The stems 0, 1, 2, 3, 4, 5 and the key 5|2 = 52 are given.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q3-a-solution-1", kind: "point", verbatim: "Diagram mainly correct but with some error(s)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[36,51],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q3-b", topicId: "maths-1-6", conceptId: "p2-project-q3-b",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q3(b)",
+    stem: "The number of dinners sold in a school canteen over four weeks is shown in the table below. In Monday-to-Friday order, the numbers are: Week 1: 42, 52, 12, 38, 45; Week 2: 39, 42, 9, 29, 42; Week 3: 52, 37, 11, 50, 48; Week 4: 39, 55, 7, 47, 35.",
+    questionText: "Find the median and the mode of the data.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q3-b-solution-1", kind: "point", verbatim: "Median or Mode correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[36,51],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q3-c", topicId: "maths-3-3", conceptId: "p2-project-q3-c",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q3(c)",
+    stem: "The number of dinners sold in a school canteen over four weeks is shown in the table below. In Monday-to-Friday order, the numbers are: Week 1: 42, 52, 12, 38, 45; Week 2: 39, 42, 9, 29, 42; Week 3: 52, 37, 11, 50, 48; Week 4: 39, 55, 7, 47, 35.",
+    questionText: "A school meal costs €2·50. Find the total cost of the meals in Week 1.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q3-c-solution-1", kind: "point", verbatim: "Calculates number of meals in Week1", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[36,51],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q4-a", topicId: "maths-2-2", conceptId: "p2-project-q4-a",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q4(a)",
+    stem: "P (3, −4) and Q (−2, 0) are two points.",
+    questionText: "Find the slope of the line PQ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q4-a-solution-1", kind: "point", verbatim: "Identifies the correct formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q4-a-solution-2", kind: "point", verbatim: "Substitutes correctly into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[37,51],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q4-b", topicId: "maths-2-2", conceptId: "p2-project-q4-b",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q4(b)",
+    stem: "P (3, −4) and Q (−2, 0) are two points.",
+    questionText: "Find the equation of the line PQ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q4-b-solution-1", kind: "point", verbatim: "Identifies the correct formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q4-b-solution-2", kind: "point", verbatim: "Substitutes correctly into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[37,51],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q4-c", topicId: "maths-2-2", conceptId: "p2-project-q4-c",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q4(c)",
+    stem: "P (3, −4) and Q (−2, 0) are two points.",
+    questionText: "A line l passes through the point (7, 5) and is parallel to PQ. Find the equation of l.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q4-c-solution-1", kind: "point", verbatim: "Identifies the correct formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q4-c-solution-2", kind: "point", verbatim: "Substitutes correctly into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[37,51],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q5-a", topicId: "maths-2-2", conceptId: "p2-project-q5-a",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q5(a)",
+    stem: "A, B and C are the points A (4, 6), B (1, 2) and C (7, 2).",
+    questionText: "Plot the points A (4, 6), B (1, 2) and C (7, 2) on the co-ordinate plane below. Label each point clearly.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q5-a-solution-1", kind: "point", verbatim: "One point correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q5-a-solution-2", kind: "point", verbatim: "Two points correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q5-a-solution-3", kind: "point", verbatim: "x and y co-ordinates obviously interchanged", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[38,52],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q5-b", topicId: "maths-2-2", conceptId: "p2-project-q5-b",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q5(b)",
+    stem: "A, B and C are the points A (4, 6), B (1, 2) and C (7, 2).",
+    questionText: "Find the mid-point of [BC].",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q5-b-solution-1", kind: "point", verbatim: "Identifies the correct formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q5-b-solution-2", kind: "point", verbatim: "Substitutes correctly into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[38,52],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q5-c-i", topicId: "maths-2-2", conceptId: "p2-project-q5-c-i",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q5(c)(i)",
+    stem: "A, B and C are the points A (4, 6), B (1, 2) and C (7, 2).",
+    questionText: "Find |BC|, the distance from B to C.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q5-c-i-solution-1", kind: "point", verbatim: "Identifies the correct formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q5-c-i-solution-2", kind: "point", verbatim: "Substitutes correctly into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[38,52],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q5-c-ii", topicId: "maths-2-2", conceptId: "p2-project-q5-c-ii",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q5(c)(ii)",
+    stem: "A, B and C are the points A (4, 6), B (1, 2) and C (7, 2).",
+    questionText: "Use the distance formula to find |AB|.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q5-c-ii-solution-1", kind: "point", verbatim: "Identifies the correct formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q5-c-ii-solution-2", kind: "point", verbatim: "Substitutes correctly into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[38,52],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8,
+                9
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q6-a", topicId: "maths-1-6", conceptId: "p2-project-q6-a",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q6(a)",
+    stem: "Jack recorded the different things he did during a 24 hour period. He displayed the information in the following pie chart. The angles are School 90°, Social Networking 120°, Sleeping 105°, and the remaining sector Eating Meals & Homework.",
+    questionText: "Which activity did Jack spend the most time on?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q6-a-solution-1", kind: "point", verbatim: "Social Networking", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q6-a-solution-2", kind: "point", verbatim: "Incorrect activity chosen", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[39,53],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q6-b", topicId: "maths-1-6", conceptId: "p2-project-q6-b",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q6(b)",
+    stem: "Jack recorded the different things he did during a 24 hour period. He displayed the information in the following pie chart. The angles are School 90°, Social Networking 120°, Sleeping 105°, and the remaining sector Eating Meals & Homework.",
+    questionText: "Find the size of the angle for ‘Eating Meals & Homework’.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q6-b-solution-1", kind: "point", verbatim: "Calculates size of angle for total of other activities", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[39,53],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q6-c", topicId: "maths-1-6", conceptId: "p2-project-q6-c",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q6(c)",
+    stem: "Jack recorded the different things he did during a 24 hour period. He displayed the information in the following pie chart. The angles are School 90°, Social Networking 120°, Sleeping 105°, and the remaining sector Eating Meals & Homework.",
+    questionText: "How long did Jack spend eating meals and doing his homework?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q6-c-solution-1", kind: "point", verbatim: "Converts size of angle to equivalent fraction", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[39,53],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q6-d", topicId: "maths-3-3", conceptId: "p2-project-q6-d",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q6(d)",
+    stem: "Jack recorded the different things he did during a 24 hour period. He displayed the information in the following pie chart. The angles are School 90°, Social Networking 120°, Sleeping 105°, and the remaining sector Eating Meals & Homework.",
+    questionText: "40% of the time he spent eating meals and doing his homework was spent eating. Find how long he spent at his homework.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q6-d-solution-1", kind: "point", verbatim: "Calculates % time at his homework", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[39,53],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q7-a", topicId: "maths-2-4", conceptId: "p2-project-q7-a",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q7(a)",
+    stem: "David is speaking at a conference. He wishes to project images from his laptop onto a large screen. The dimensions of his laptop screen are 34·5 cm by 19·3 cm. The enlargement of David’s images will fill the large screen exactly. The scale factor of the enlargement is 5.",
+    questionText: "Find the width of the large screen.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q7-a-solution-1", kind: "point", verbatim: "Correct use of scale factor", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[40,54],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q7-b", topicId: "maths-2-4", conceptId: "p2-project-q7-b",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q7(b)",
+    stem: "David is speaking at a conference. He wishes to project images from his laptop onto a large screen. The dimensions of his laptop screen are 34·5 cm by 19·3 cm. The enlargement of David’s images will fill the large screen exactly. The scale factor of the enlargement is 5.",
+    questionText: "Find the height of the large screen.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q7-b-solution-1", kind: "point", verbatim: "Correct use of scale factor", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[40,54],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q7-c", topicId: "maths-2-4", conceptId: "p2-project-q7-c",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q7(c)",
+    stem: "David is speaking at a conference. He wishes to project images from his laptop onto a large screen. The dimensions of his laptop screen are 34·5 cm by 19·3 cm. The enlargement of David’s images will fill the large screen exactly. The scale factor of the enlargement is 5.",
+    questionText: "Find the area of the large screen.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q7-c-solution-1", kind: "point", verbatim: "Substitutes correctly into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[40,54],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q7-d", topicId: "maths-2-4", conceptId: "p2-project-q7-d",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q7(d)",
+    stem: "David is speaking at a conference. He wishes to project images from his laptop onto a large screen. The dimensions of his laptop screen are 34·5 cm by 19·3 cm. The enlargement of David’s images will fill the large screen exactly. The scale factor of the enlargement is 5.",
+    questionText: "Find the area of David’s laptop screen.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q7-d-solution-1", kind: "point", verbatim: "Correct use of scale factor", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[40,54],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q7-e", topicId: "maths-2-4", conceptId: "p2-project-q7-e",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q7(e)",
+    stem: "David is speaking at a conference. He wishes to project images from his laptop onto a large screen. The dimensions of his laptop screen are 34·5 cm by 19·3 cm. The enlargement of David’s images will fill the large screen exactly. The scale factor of the enlargement is 5.",
+    questionText: "Find the ratio, area of the large screen : area of David’s laptop screen.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q7-e-solution-1", kind: "point", verbatim: "Correct numerator or correct denominator", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[40,54],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q8a-a", topicId: "maths-2-1", conceptId: "p2-project-q8a-a",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q8A(a)",
+    stem: "The original diagram shows a circle with centre O and a point A on the circle, joined by radius [OA]. This is Question 8A, an alternative to Question 8B.",
+    questionText: "In the diagram below, construct a tangent to the circle at the point A.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q8a-a-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[41,55],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q8a-b", topicId: "maths-2-2", conceptId: "p2-project-q8a-b",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q8A(b)",
+    stem: "The original diagram shows a circle with centre O and a point A on the circle, joined by radius [OA]. This is Question 8A, an alternative to Question 8B.",
+    questionText: "The slope of the tangent at A is multiplied by the slope of the radius [OA]. Write down the result.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q8a-b-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[41,55],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q8a-c", topicId: "maths-2-1", conceptId: "p2-project-q8a-c",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q8A(c)",
+    stem: "The original diagram shows a circle with centre O and a point A on the circle, joined by radius [OA]. This is Question 8A, an alternative to Question 8B.",
+    questionText: "A second tangent is drawn to the circle at the point D. This line is parallel to the tangent at A. Mark the point D on the circle.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q8a-c-solution-1", kind: "point", verbatim: "Draws correct tangent", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[41,55],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q8b-a", topicId: "maths-2-1", conceptId: "p2-project-q8b-a",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q8B(a)",
+    stem: "ABC is a right-angled triangle, with |∠BAC| = 90°. A circle of centre O passes through the points A, B and C, as shown. |AB| = 6 cm and |AC| = 8 cm. [BC] is a diameter of the circle. This is Question 8B, an alternative to Question 8A.",
+    questionText: "Find |BC|.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q8b-a-solution-1", kind: "point", verbatim: "Pythagoras substituted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[42,55],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q8b-b", topicId: "maths-2-1", conceptId: "p2-project-q8b-b",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q8B(b)",
+    stem: "ABC is a right-angled triangle, with |∠BAC| = 90°. A circle of centre O passes through the points A, B and C, as shown. |AB| = 6 cm and |AC| = 8 cm. [BC] is a diameter of the circle. This is Question 8B, an alternative to Question 8A.",
+    questionText: "What is the length of [OA]?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q8b-b-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[42,55],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q8b-c-i", topicId: "maths-2-1", conceptId: "p2-project-q8b-c-i",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q8B(c)(i)",
+    stem: "ABC is a right-angled triangle, with |∠BAC| = 90°. A circle of centre O passes through the points A, B and C, as shown. |AB| = 6 cm and |AC| = 8 cm. [BC] is a diameter of the circle. This is Question 8B, an alternative to Question 8A.",
+    questionText: "Identify two isosceles triangles from the diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q8b-c-i-solution-1", kind: "point", verbatim: "Identifies a triangle from diagram", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q8b-c-i-solution-2", kind: "point", verbatim: "One triangle correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[42,55],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q8b-c-ii", topicId: "maths-2-1", conceptId: "p2-project-q8b-c-ii",
+    section: "A", questionRef: "2014 FL Paper 2 (Project Maths) Q8B(c)(ii)",
+    stem: "ABC is a right-angled triangle, with |∠BAC| = 90°. A circle of centre O passes through the points A, B and C, as shown. |AB| = 6 cm and |AC| = 8 cm. [BC] is a diameter of the circle. This is Question 8B, an alternative to Question 8A.",
+    questionText: "Given that |∠AOC| = 106°, to the nearest degree, find the following: |∠AOB| and |∠OBA|.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q8b-c-ii-solution-1", kind: "point", verbatim: "One angle correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[42,55],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q9-a-i", topicId: "maths-1-6", conceptId: "p2-project-q9-a-i",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q9(a)(i)",
+    stem: "The mean monthly midday temperatures at Malin Head in 2013 are shown in Table 1. The temperature is measured in degrees Celsius. January to December: 7, 8, 9, 7, 10, 12, 13, 16, 13, 8, 7, 8.",
+    questionText: "Which month had the highest mean temperature?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q9-a-i-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10B","marks":[0,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[43,56],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q9-a-ii", topicId: "maths-1-6", conceptId: "p2-project-q9-a-ii",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q9(a)(ii)",
+    stem: "The mean monthly midday temperatures at Malin Head in 2013 are shown in Table 1. The temperature is measured in degrees Celsius. January to December: 7, 8, 9, 7, 10, 12, 13, 16, 13, 8, 7, 8.",
+    questionText: "Find the difference between the highest mean temperature and the lowest mean temperature.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q9-a-ii-solution-1", kind: "point", verbatim: "Highest and lowest temperature identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q9-a-ii-solution-2", kind: "point", verbatim: "One amount identified", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[43,56],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q9-a-iii", topicId: "maths-1-6", conceptId: "p2-project-q9-a-iii",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q9(a)(iii)",
+    stem: "The mean monthly midday temperatures at Malin Head in 2013 are shown in Table 1. The temperature is measured in degrees Celsius. January to December: 7, 8, 9, 7, 10, 12, 13, 16, 13, 8, 7, 8.",
+    questionText: "Find the mean annual midday temperature at Malin Head for 2013, correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q9-a-iii-solution-1", kind: "point", verbatim: "Numerator or denominator correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q9-a-iii-solution-2", kind: "point", verbatim: "Numerator and denominator correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[43,56],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q9-b-i", topicId: "maths-1-6", conceptId: "p2-project-q9-b-i",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q9(b)(i)",
+    stem: "Rita owns a caravan park at Malin Head. She recorded the number of children who stayed in each caravan in her park on a Friday night in August 2013. The results are shown below in six rows: 3, 2, 0, 4, 2; 5, 3, 4, 1, 7; 3, 5, 2, 5, 1; 6, 4, 7, 6, 1; 3, 5, 7, 1, 2; 0, 4, 2, 3, 5.",
+    questionText: "How many caravans did she survey?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q9-b-i-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[43,56],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q9-b-ii", topicId: "maths-1-6", conceptId: "p2-project-q9-b-ii",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q9(b)(ii)",
+    stem: "Rita owns a caravan park at Malin Head. She recorded the number of children who stayed in each caravan in her park on a Friday night in August 2013. The results are shown below in six rows: 3, 2, 0, 4, 2; 5, 3, 4, 1, 7; 3, 5, 2, 5, 1; 6, 4, 7, 6, 1; 3, 5, 7, 1, 2; 0, 4, 2, 3, 5.",
+    questionText: "Complete Table 2: for each number of children per caravan, 0, 1, 2, 3, 4, 5, 6 and 7, enter the number of caravans.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q9-b-ii-solution-1", kind: "point", verbatim: "One correct entry", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q9-b-ii-solution-2", kind: "point", verbatim: "At least two correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2014-fl-p2-project-q9-b-ii-solution-3", kind: "point", verbatim: "At least five correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[44,56],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q9-b-iii", topicId: "maths-1-6", conceptId: "p2-project-q9-b-iii",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q9(b)(iii)",
+    stem: "Rita owns a caravan park at Malin Head. She recorded the number of children who stayed in each caravan in her park on a Friday night in August 2013. The results are shown below in six rows: 3, 2, 0, 4, 2; 5, 3, 4, 1, 7; 3, 5, 2, 5, 1; 6, 4, 7, 6, 1; 3, 5, 7, 1, 2; 0, 4, 2, 3, 5.",
+    questionText: "How many children were in the park on that night?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q9-b-iii-solution-1", kind: "point", verbatim: "Calculates correct f(x)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[44,56],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q9-b-iv", topicId: "maths-1-6", conceptId: "p2-project-q9-b-iv",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q9(b)(iv)",
+    stem: "Rita owns a caravan park at Malin Head. She recorded the number of children who stayed in each caravan in her park on a Friday night in August 2013. The results are shown below in six rows: 3, 2, 0, 4, 2; 5, 3, 4, 1, 7; 3, 5, 2, 5, 1; 6, 4, 7, 6, 1; 3, 5, 7, 1, 2; 0, 4, 2, 3, 5. Part (b)(ii) asks you to complete Table 2 with the number of caravans for each number of children, 0–7.",
+    questionText: "Represent the data in Table 2 using a suitable chart.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q9-b-iv-solution-1", kind: "point", verbatim: "Diagram mainly correct but with some error(s)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[44,56],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q10-a-i", topicId: "maths-2-1", conceptId: "p2-project-q10-a-i",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q10(a)(i)",
+    stem: "Sean is installing a flight of stairs in a new house. The height from the floor to the top of the stairs is 2·5 m. The distance from the foot of the stairs to the wall is 3 m, as shown. The diagram labels the foot A, the wall at floor level B and the top C, with AB = 3 m and BC = 2·5 m.",
+    questionText: "Find |AC|, the length of the stairs, correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q10-a-i-solution-1", kind: "point", verbatim: "Pythagoras substituted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[45,57],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q10-a-ii", topicId: "maths-3-3", conceptId: "p2-project-q10-a-ii",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q10(a)(ii)",
+    stem: "Sean is installing a flight of stairs in a new house. The height from the floor to the top of the stairs is 2·5 m. The distance from the foot of the stairs to the wall is 3 m, as shown. The diagram labels the foot A, the wall at floor level B and the top C, with AB = 3 m and BC = 2·5 m.",
+    questionText: "There are 10 steps on the stairs. Find the height of each riser, in metres.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q10-a-ii-solution-1", kind: "point", verbatim: "Fraction formulated correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[45,57],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q10-a-iii", topicId: "maths-3-3", conceptId: "p2-project-q10-a-iii",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q10(a)(iii)",
+    stem: "Sean is installing a flight of stairs in a new house. The height from the floor to the top of the stairs is 2·5 m. The distance from the foot of the stairs to the wall is 3 m, as shown. The diagram labels the foot A, the wall at floor level B and the top C, with AB = 3 m and BC = 2·5 m.",
+    questionText: "There are 10 steps on the stairs. Find the depth of each tread, in metres.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q10-a-iii-solution-1", kind: "point", verbatim: "Fraction formulated correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[45,57],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q10-a-iv", topicId: "maths-3-4", conceptId: "p2-project-q10-a-iv",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q10(a)(iv)",
+    stem: "Sean is installing a flight of stairs in a new house. The height from the floor to the top of the stairs is 2·5 m. The distance from the foot of the stairs to the wall is 3 m, as shown. The diagram labels the foot A, the wall at floor level B and the top C, with AB = 3 m and BC = 2·5 m. There are 10 steps on the stairs.",
+    questionText: "The stairs are 1 m wide. Find the total area of wood required to build the steps of the stairs.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q10-a-iv-solution-1", kind: "point", verbatim: "Substitutes correctly into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[45,57],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q10-a-v", topicId: "maths-3-3", conceptId: "p2-project-q10-a-v",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q10(a)(v)",
+    stem: "Sean is installing a flight of stairs in a new house. The height from the floor to the top of the stairs is 2·5 m. The distance from the foot of the stairs to the wall is 3 m, as shown. The diagram labels the foot A, the wall at floor level B and the top C, with AB = 3 m and BC = 2·5 m. There are 10 steps on the stairs. The stairs are 1 m wide. Part (a)(iv) asks for the total area of wood required to build the steps.",
+    questionText: "The wood to build the stairs costs €120 per square metre. Find the total cost of the wood needed to make the stairs.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q10-a-v-solution-1", kind: "point", verbatim: "Substitutes correctly into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[46,57],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q10-b-i", topicId: "maths-3-4", conceptId: "p2-project-q10-b-i",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q10(b)(i)",
+    stem: "Sean is installing a flight of stairs in a new house. The height from the floor to the top of the stairs is 2·5 m. The distance from the foot of the stairs to the wall is 3 m, as shown. The diagram labels the foot A, the wall at floor level B and the top C, with AB = 3 m and BC = 2·5 m.",
+    questionText: "Sean wants to make a storage area under the stairs. He closes the space under the stairs with a triangular sheet of plywood. Find the area of the triangle ABC.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q10-b-i-solution-1", kind: "point", verbatim: "Substitutes correctly into formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[46,57],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-07"},
+    year: 2014, level: "foundation",
+    paperFileid: "LC003BLP230EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2014 Foundation Level — © State Examinations Commission.",
+    id: "maths-2014-fl-p2-project-q10-b-ii", topicId: "maths-2-3", conceptId: "p2-project-q10-b-ii",
+    section: "B", questionRef: "2014 FL Paper 2 (Project Maths) Q10(b)(ii)",
+    stem: "Sean is installing a flight of stairs in a new house. The height from the floor to the top of the stairs is 2·5 m. The distance from the foot of the stairs to the wall is 3 m, as shown. The diagram labels the foot A, the wall at floor level B and the top C, with AB = 3 m and BC = 2·5 m.",
+    questionText: "Find |∠CAB|, the angle between the floor and the stairs, correct to the nearest degree.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2014-fl-p2-project-q10-b-ii-solution-1", kind: "point", verbatim: "Any work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003BLP000EV.pdf","schemePages":[46,57],"generalNotesPages":[47,48]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003BLP230EV.pdf",
+          "attribution": "SEC Mathematics 2014 Foundation Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
 ];

@@ -143,7 +143,7 @@ def main():
                 totals = Counter()
                 parts = []
                 for card in review['cards']:
-                    totals[re.match(r'Q(\d+)', card['printedParts'][0])[1]] += card['totalMarks']
+                    totals[re.match(r'Q(\d+[A-Z]?)', card['printedParts'][0])[1]] += card['totalMarks']
                     parts.extend(card['printedParts'])
                     if card['id'] not in runtime:
                         errors.append(f"{card['id']}: reviewed task absent from runtime")
