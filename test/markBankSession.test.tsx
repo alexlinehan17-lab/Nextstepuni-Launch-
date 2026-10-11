@@ -314,6 +314,21 @@ describe('the question comes first and stays', () => {
     expect(original).not.toHaveAttribute('href', expect.stringContaining('LC014ALP000EV.pdf'));
   });
 
+  test('keeps keyboard focus inside the source reader when the last page disables Next', () => {
+    const irish = IRISH_HIGHER.find(entry => entry.id === 'irish-2025-hl-p2-literature-4-f')!;
+    renderSession([irish]);
+    fireEvent.click(screen.getByRole('button', { name: /Read Litríocht Bhreise/i }));
+    const dialog = screen.getByRole('dialog', { name: /Caoineadh Airt Uí Laoghaire/i });
+    const next = within(dialog).getByRole('button', { name: 'Next source page' });
+    next.focus();
+    fireEvent.click(next);
+    expect(next).toBeDisabled();
+    // Focus moves to the arrow that can still act, so Escape and Tab keep working.
+    expect(document.activeElement).toBe(within(dialog).getByRole('button', { name: 'Previous source page' }));
+    fireEvent.keyDown(document.activeElement!, { key: 'Escape' });
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  });
+
   test('keeps every Irish additional-poetry part when opening and closing both printed versions', () => {
     const irish = IRISH_HIGHER.find(entry => entry.id === 'irish-2025-hl-p2-literature-4-f')!;
     renderSession([irish]);

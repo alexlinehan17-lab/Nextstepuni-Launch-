@@ -82,6 +82,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const [zoom, setZoom] = useState(1);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   const closeRef = useRef<HTMLButtonElement | null>(null);
+  const previousRef = useRef<HTMLButtonElement | null>(null);
+  const nextRef = useRef<HTMLButtonElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
   const scrollFrame = useRef<number | null>(null);
   const requestedPage = useRef<number | null>(null);
@@ -220,6 +222,20 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     completeSwipe(touch.clientX, touch.clientY, -2);
   }, [completeSwipe]);
 
+  // Reaching the first or last page disables the arrow that was just pressed,
+  // and a disabled control drops keyboard focus out of the dialog — after which
+  // Escape and the Tab trap no longer reach it. Keep focus on the arrow that can
+  // still move, or on Close when the source has a single page.
+  useEffect(() => {
+    if (!open) return;
+    const active = document.activeElement as HTMLButtonElement | null;
+    const lostFocus = !active || active === document.body || active.disabled === true;
+    if (!lostFocus) return;
+    if (active !== previousRef.current && active !== nextRef.current && active !== document.body && active) return;
+    const fallback = pageIndex === 0 ? nextRef.current : previousRef.current;
+    (fallback && !fallback.disabled ? fallback : closeRef.current)?.focus();
+  }, [open, pageIndex]);
+
   const trapDialogKeys = useCallback((event: React.KeyboardEvent<HTMLDivElement>) => {
     if (event.key === 'Escape') {
       event.preventDefault();
@@ -357,6 +373,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
           </div>
           <div className="mb-source-reader-navigation">
             <button
+              ref={previousRef}
               type="button" onClick={() => goTo(pageIndex - 1)} disabled={pageIndex === 0}
               aria-label="Previous source page"
             >
@@ -374,6 +391,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
               ))}
             </div>
             <button
+              ref={nextRef}
               type="button" onClick={() => goTo(pageIndex + 1)} disabled={pageIndex === source.pages.length - 1}
               aria-label="Next source page"
             >
