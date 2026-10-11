@@ -44,6 +44,7 @@ import fitz
 import geography_review as GR
 import geography_review_2026_hl as REVIEW_2026_HL
 import geography_review_2026_ol as REVIEW_2026_OL
+import geography_review_2025_hl as REVIEW_2025_HL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -66,6 +67,7 @@ CROSSWALK = os.path.join(
 REVIEWED = {
     (2026, 'higher'): REVIEW_2026_HL,
     (2026, 'ordinary'): REVIEW_2026_OL,
+    (2025, 'higher'): REVIEW_2025_HL,
 }
 
 YEARS = tuple(range(2021, 2027))
@@ -78,17 +80,12 @@ PART_TWO_MARKS = {
     'ordinary': {'A': 30, 'B': 40, 'C': 30},
 }
 
-# Paper Trail identities for the common 2026 companion set. The map extract,
-# its legend and the aerial are separate official documents, so cards retain
-# them separately instead of fabricating one combined page.
-# Verified by rendering each document (2026-10-11): CLP003 is the 1:50 000
-# Dundalk extract, CLPC00 is the Ordnance Survey legend sheet and CLP004 is the
-# aerial photograph. These were previously attached the wrong way round.
-COMPANION_SOURCE_FILEIDS = {
-    'map': 'LC005CLP003EV',
-    'legend': 'LC005CLPC00EV',
-    'aerial': 'LC005CLP004EV',
-}
+# The map extract, its legend and the aerial photograph are separate official
+# documents, so cards retain them separately instead of fabricating one
+# combined page. Their identities per year are in COMPANIONS below (CLP003 is
+# the 1:50 000 extract and CLPC00 the legend; they were once attached the wrong
+# way round). Older sittings without a reviewed ledger still hold their
+# companion tasks.
 COMPANION_SOURCE_YEARS = frozenset({2026})
 
 SPACE_CHARS = ('\xa0', '\u2007', '\u202f')
@@ -877,17 +874,54 @@ def question_page_source(
     }
 
 
-def companion_material(kind: str) -> dict[str, Any]:
+# The separate official companions of each sitting (map extract, OS legend,
+# aerial photograph), keyed by year. Identities come from Paper Trail's index;
+# each was rendered and checked by eye before it was listed here.
+COMPANIONS: dict[int, dict[str, str]] = {
+    2026: {'place': 'Dundalk', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV'},
+    # 2025's aerial photograph is published only as a JPEG image.
+    2025: {'place': 'Oughterard', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+}
+
+
+COMPANION_CACHE = os.path.join(ROOT, 'tmp', 'geography-audit', 'companions')
+STORAGE = ('https://firebasestorage.googleapis.com/v0/b/nextstepuni-app.firebasestorage.app/o/'
+           'papers%2Flc%2Fgeography%2F{year}%2Fpaper%2F{name}?alt=media')
+
+
+def companion_path(year: int, fileid: str, fetch: bool = False) -> str:
+    """The local copy of a companion: the harvested corpus, else a copy of the
+    same Paper Trail storage object kept in a git-ignored cache. Its bytes are
+    checked against the review ledger by the caller."""
+    name = fileid if '.' in fileid else f'{fileid}.pdf'
+    cached = os.path.join(COMPANION_CACHE, f'{year}-{name}')
+    for path in (os.path.join(GR.CORPUS_ROOT, str(year), name), cached):
+        if os.path.exists(path):
+            return path
+    if fetch:
+        import urllib.request
+        os.makedirs(COMPANION_CACHE, exist_ok=True)
+        urllib.request.urlretrieve(STORAGE.format(year=year, name=name), cached)
+        return cached
+    raise AssertionError(
+        f'{year} companion {name} is not available locally; run '
+        'geography_cards.py --fetch-companions')
+
+
+def companion_material(kind: str, year: int = 2026) -> dict[str, Any]:
     """One separate official companion document, shown as its own source."""
+    files = COMPANIONS[year]
     if kind == 'map':
         return {
             'kind': 'source-illustration',
             'label': 'OS MAP',
             'title': 'Official 1:50 000 map extract',
             'pages': [1],
-            'sourceFileid': COMPANION_SOURCE_FILEIDS['map'],
+            'sourceFileid': files['map'],
             'attribution': (
-                'State Examinations Commission Geography 2026 Ordnance '
+                f'State Examinations Commission Geography {year} Ordnance '
                 'Survey map — © State Examinations Commission.'),
             'presentationNote': (
                 'The exact official map extract supplied with the '
@@ -899,9 +933,9 @@ def companion_material(kind: str) -> dict[str, Any]:
             'label': 'MAP LEGEND',
             'title': 'Official Ordnance Survey legend',
             'pages': [1],
-            'sourceFileid': COMPANION_SOURCE_FILEIDS['legend'],
+            'sourceFileid': files['legend'],
             'attribution': (
-                'State Examinations Commission Geography 2026 Ordnance '
+                f'State Examinations Commission Geography {year} Ordnance '
                 'Survey legend — © State Examinations Commission.'),
             'presentationNote': (
                 'The exact official legend supplied with the examination, '
@@ -911,11 +945,11 @@ def companion_material(kind: str) -> dict[str, Any]:
         return {
             'kind': 'source-illustration',
             'label': 'AERIAL PHOTOGRAPH',
-            'title': 'Official Dundalk aerial photograph',
+            'title': f"Official {files['place']} aerial photograph",
             'pages': [1],
-            'sourceFileid': COMPANION_SOURCE_FILEIDS['aerial'],
+            'sourceFileid': files['aerial'],
             'attribution': (
-                'State Examinations Commission Geography 2026 aerial '
+                f'State Examinations Commission Geography {year} aerial '
                 'photograph — © State Examinations Commission.'),
             'presentationNote': (
                 'The exact official examination photograph, preserved at its '
@@ -1030,10 +1064,14 @@ def reviewed_sitting(year: int, level: str, review: Any,
     for part in (1, 2):
         if fileids[(year, level, part)] + '.pdf' != review.EXPECTED_SOURCES[f'paper{part}'][0]:
             raise AssertionError(f'{year} {level} Part {part}: Paper Trail file id changed')
-    for kind, fileid in COMPANION_SOURCE_FILEIDS.items():
-        path = os.path.join(GR.CORPUS_ROOT, str(year), fileid + '.pdf')
-        sources[kind] = {'fileid': fileid + '.pdf', 'bytes': os.path.getsize(path),
+    for kind in ('map', 'legend', 'aerial'):
+        path = companion_path(year, COMPANIONS[year][kind])
+        sources[kind] = {'fileid': os.path.basename(path).split(f'{year}-')[-1],
+                         'bytes': os.path.getsize(path),
                          'sha256': GR.sha256(path), 'pages': len(fitz.open(path))}
+        expected = review.EXPECTED_SOURCES.get(kind)
+        if expected and (sources[kind]['fileid'], sources[kind]['bytes']) != expected:
+            raise AssertionError(f'{year} {level} {kind}: {sources[kind]} != {expected}')
     scan = GR.selection_scan(sitting)
     if scan != review.EXPECTED_SELECTION_SCAN:
         raise AssertionError(f'{year} {level}: unclassified or stale selection directives '
@@ -1042,7 +1080,7 @@ def reviewed_sitting(year: int, level: str, review: Any,
     if sorted(map(tuple, classified)) != sorted(map(tuple, scan)):
         raise AssertionError(f'{year} {level}: selection review does not classify the scan')
 
-    companions = {kind: companion_material(kind) for kind in COMPANION_SOURCE_FILEIDS}
+    companions = {kind: companion_material(kind, year) for kind in ('map', 'legend', 'aerial')}
     cards: list[dict[str, Any]] = []
     tasks_out, base_tasks, selection_rows = [], [], []
     totals: dict[tuple[int, str], int] = {}
@@ -1353,7 +1391,13 @@ def serialised() -> tuple[str, str, str, str]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
+    parser.add_argument('--fetch-companions', action='store_true',
+                        help='download reviewed sittings\' missing companions from Paper Trail storage')
     args = parser.parse_args()
+    if args.fetch_companions:
+        for year in sorted({year for year, _level in REVIEWED}):
+            for kind in ('map', 'legend', 'aerial'):
+                companion_path(year, COMPANIONS[year][kind], fetch=True)
     authored, census, audit, atlas = serialised()
     # The deck-size manifest is shared by every subject; only the Geography
     # entry is ours to restate.

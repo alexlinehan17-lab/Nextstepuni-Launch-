@@ -38,6 +38,7 @@ LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
 # Symbol-font glyphs the SEC PDFs use for ticks and bullets. They are mapped
 # to their printed meaning, never deleted, so "ticking (✓)" survives.
 GLYPHS = {
+    '\u27a2': '•',  # the arrowhead bullet some schemes print
     '': '✓', '': '•', '': '•', '': '•', '': '•',
     '­': '', 'ﬀ': 'ff', 'ﬁ': 'fi', 'ﬂ': 'fl',
     'ﬃ': 'ffi', 'ﬄ': 'ffl', '\xa0': ' ', ' ': ' ',
@@ -149,6 +150,7 @@ class Document:
             joined = ' · '.join(c for c in (compact(text) for _, text in cells) if c)
             # A bullet glyph set as its own cell belongs to the text beside it.
             joined = re.sub(r'^• · ', '• ', joined)
+            joined = re.sub(r'^•(?=\S)', '• ', joined)
             if joined:
                 out.append((cells[0][0], top, bottom, joined, padded))
         merged: list[str] = []
@@ -220,8 +222,12 @@ class Document:
                     f'not found after {start!r}')
             last = later[0]
         out = lines[first:last]
-        # Page furniture: a bare printed page number is never guidance.
-        return [line for line in out if not re.fullmatch(r'\d{1,2}', line)]
+        # Page furniture: a bare printed page number or the running footer
+        # ("Leaving Certificate Examination 2025" / "Geography – Higher level,
+        # Part Two · 31") is never guidance.
+        return [line for line in out if not re.fullmatch(
+            r'\d{1,2}|Leaving Certificate Examination \d{4}|'
+            r'Geography\s*[–-]\s*(?:Higher|Ordinary) level,.*', line)]
 
 
 @dataclass(frozen=True)

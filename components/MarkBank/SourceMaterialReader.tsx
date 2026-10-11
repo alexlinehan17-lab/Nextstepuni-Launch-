@@ -32,8 +32,12 @@ interface SourceMaterialReaderProps {
   paperFileid: string;
 }
 
+// Some official companions (an aerial photograph, an older legend) are
+// published as a single image rather than a PDF. Keep their real extension so
+// the exact SEC file is shown, never a re-encoded copy.
+const IMAGE_FILE = /\.(?:jpe?g|png)$/i;
 const withPdfExtension = (fileid: string) =>
-  fileid.toLowerCase().endsWith('.pdf') ? fileid : `${fileid}.pdf`;
+  fileid.toLowerCase().endsWith('.pdf') || IMAGE_FILE.test(fileid) ? fileid : `${fileid}.pdf`;
 
 const clamp = (value: number, max: number) => Math.max(0, Math.min(max, value));
 
@@ -64,6 +68,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   source, subjectId, year, paperFileid,
 }) => {
   const isIllustration = source.kind === 'source-illustration';
+  const isImage = IMAGE_FILE.test(paperFileid);
   const materialLabel = isIllustration ? 'illustration sheet' : 'source text';
   const [open, setOpen] = useState(false);
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
@@ -94,13 +99,14 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, []);
 
   const show = useCallback(() => {
+    setFailed(false);
     setPageIndex(0);
     setZoom(1);
     setOpen(true);
   }, []);
 
   useEffect(() => {
-    if (!open) return;
+    if (!open || isImage) return;
     let cancelled = false;
     setFailed(false);
     setPdf(null);
@@ -108,7 +114,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       .then(document => { if (!cancelled) setPdf(document); })
       .catch(() => { if (!cancelled) setFailed(true); });
     return () => { cancelled = true; };
-  }, [open, url]);
+  }, [isImage, open, url]);
 
   useEffect(() => {
     if (!open) return;
@@ -286,7 +292,21 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
                   className="mb-source-reader-paper"
                   style={{ width: `${zoom * 100}%` }}
                 >
-                  {pdf ? (
+                  {isImage ? (
+                    failed ? (
+                      <div className="mb-source-reader-failed">
+                        <strong>That image did not load.</strong>
+                        <span>You can open the original examination image below.</span>
+                      </div>
+                    ) : (
+                      <img
+                        src={url}
+                        alt={pageAriaLabel(page)}
+                        onError={() => setFailed(true)}
+                        style={{ display: 'block', width: '100%', height: 'auto' }}
+                      />
+                    )
+                  ) : pdf ? (
                     <CropView
                       key={`${page}-${zoom}`}
                       pdf={pdf}
@@ -320,7 +340,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
           <div className="mb-source-reader-provenance">
             <strong>{source.attribution}</strong>
             <span>{source.presentationNote}</span>
-            <a href={`${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
+            <a href={isImage ? url : `${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
               Open the original {isIllustration ? 'illustration sheet' : 'paper'}
             </a>
           </div>
