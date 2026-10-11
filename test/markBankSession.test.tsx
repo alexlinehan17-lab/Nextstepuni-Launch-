@@ -657,6 +657,24 @@ describe('claiming marks', () => {
     await waitFor(() => expect(strip.textContent).toMatch(/\b2\b/), { timeout: 1000 });
   });
 
+  test('names unclaimed points in the scheme\'s own case', () => {
+    // Regression: the band lowercased every name, so a gamete "R" read as "r"
+    // and the formula "C H O" as "c h o" — a different answer from the scheme's.
+    const c = card({
+      totalMarks: 6,
+      rows: [
+        row({ id: 'r1', verbatim: 'Gamete — R', marks: 3 }),
+        row({ id: 'r2', verbatim: 'Elements — C H O', marks: 3 }),
+      ],
+    });
+    renderSession([c]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    const strip = screen.getByText(/Not claimed yet/i).parentElement!;
+    expect(strip.textContent).toContain('Gamete — R');
+    expect(strip.textContent).toContain('C H O');
+    expect(strip.textContent).not.toMatch(/c h o/);
+  });
+
   test('the marks-left figure can never exceed the marks on the card', async () => {
     // Regression: the count-down animation seeded its clock from
     // performance.now() while receiving rAF's own timestamp. Where those epochs
