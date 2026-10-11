@@ -27,15 +27,15 @@
     },
     "matchedLocalCardLinks": 744,
     "localPaperVariants": 91,
-    "localPhysicalMappings": 2328,
-    "distinctStudentFacingQuestions": 2328,
+    "localPhysicalMappings": 2387,
+    "distinctStudentFacingQuestions": 2387,
     "referenceMappedLocalQuestions": 686,
-    "retainedLocalQuestions": 1642,
+    "retainedLocalQuestions": 1701,
     "hostedPaperAnchorMaps": 91,
     "preservedBaselineVariants": 26,
     "preservedBaselineCards": 286,
     "newlyAddedPaperVariants": 65,
-    "newlyAddedPhysicalMappings": 2042,
+    "newlyAddedPhysicalMappings": 2101,
     "emptyOfficialReferenceTopics": [
       "irish-higher-danta-breise",
       "irish-higher-poetry-deireadh-na-feide",
@@ -44729,6 +44729,803 @@
         "irish-ordinary-write-a-conversation"
       ],
       "provenance": "reference"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F1-1a",
+      "topicIds": [
+        "irish-ordinary-aurals-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F1-1b",
+      "topicIds": [
+        "irish-ordinary-aurals-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F1-2a",
+      "topicIds": [
+        "irish-ordinary-aurals-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F1-2b",
+      "topicIds": [
+        "irish-ordinary-aurals-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F2-1a",
+      "topicIds": [
+        "irish-ordinary-aurals-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F2-1b",
+      "topicIds": [
+        "irish-ordinary-aurals-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F2-2a",
+      "topicIds": [
+        "irish-ordinary-aurals-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-A-F2-2b",
+      "topicIds": [
+        "irish-ordinary-aurals-fogra-announcement"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C1-M1-1",
+      "topicIds": [
+        "irish-ordinary-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C1-M1-2",
+      "topicIds": [
+        "irish-ordinary-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C1-M2-1",
+      "topicIds": [
+        "irish-ordinary-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C1-M2-2",
+      "topicIds": [
+        "irish-ordinary-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C2-M1-1",
+      "topicIds": [
+        "irish-ordinary-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C2-M1-2",
+      "topicIds": [
+        "irish-ordinary-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C2-M2-1",
+      "topicIds": [
+        "irish-ordinary-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-B-C2-M2-2",
+      "topicIds": [
+        "irish-ordinary-aural-comhra-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-C-P1-1",
+      "topicIds": [
+        "irish-ordinary-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-C-P1-2",
+      "topicIds": [
+        "irish-ordinary-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-C-P2-1",
+      "topicIds": [
+        "irish-ordinary-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "L-C-P2-2",
+      "topicIds": [
+        "irish-ordinary-aural-piosa-nuachta-news-pieces"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-iii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-i",
+      "topicIds": [
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-i",
+      "topicIds": [
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-D-i",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-D-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-i-B-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-i-B-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-ii-B-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-ii-B-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-iii-B-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-iii-B-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-i-C-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-i-C-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-ii-C-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-ii-C-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-iii-C-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-iii-C-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-i-D-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-i-D-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-ii-D-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-ii-D-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-iii-D-i",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-A-iii-D-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-blogcreative-writing-task",
+        "irish-ordinary-write-a-conversation"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-i-C-i",
+      "topicIds": [
+        "irish-ordinary-write-a-letteremail",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-i-C-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-letteremail",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-ii-C-i",
+      "topicIds": [
+        "irish-ordinary-write-a-letteremail",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-ii-C-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-letteremail",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-i-D-i",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-i-D-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-ii-D-i",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-B-ii-D-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation",
+        "irish-ordinary-write-a-story"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-i-D-i",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation",
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-i-D-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation",
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-ii-D-i",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation",
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
+    },
+    {
+      "level": "ordinary",
+      "lang": "iv",
+      "year": 2026,
+      "fileid": "LC001GLP100IV.pdf",
+      "paperKey": "p1",
+      "kind": "p1",
+      "n": "W-C-ii-D-ii",
+      "topicIds": [
+        "irish-ordinary-write-a-conversation",
+        "irish-ordinary-write-a-letteremail"
+      ],
+      "provenance": "retained-local"
     },
     {
       "level": "ordinary",

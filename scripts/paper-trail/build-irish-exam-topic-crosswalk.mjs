@@ -30,7 +30,7 @@ const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/irish-runtime.json');
 const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/irish-curriculum-crosswalk.json');
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
-const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json']
+const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
   .filter(card => card.reviewedAt && card.atlasQuestionId);
 const reference = readJson(REFERENCE_PATH);
@@ -728,12 +728,17 @@ for (const card of reviewedHigherTasks) {
   const existing = paper.q.find(q => q.n === card.atlasQuestionId);
   // Paper 1: listening questions keep their recording-section family; each
   // composition title keeps its printed writing form(s).
-  const paperOneTopics = {
+  const paperOneTopics = card.level === 'higher' ? {
     'irish-1-0': [H.announcement], 'irish-1-1': [H.conversation], 'irish-1-2': [H.news],
     'irish-2-0': [H.essay, H.article], 'irish-2-3': [H.story], 'irish-2-4': [H.debate], 'irish-2-5': [H.debate],
+  } : {
+    'irish-1-0': [O.announcement], 'irish-1-1': [O.conversation], 'irish-1-2': [O.news],
+    'irish-2-6': [O.blog], 'irish-2-3': [O.story], 'irish-2-8': [O.letter], 'irish-2-9': [O.writtenConversation],
   };
+  // A two-composition selection covers every member's writing form.
+  const paperOneIds = card.memberCardIds ? [card.topicId, ...(card.additionalTopicIds ?? [])] : [card.topicId];
   const baseTopicIds = card.paper === 1
-    ? paperOneTopics[card.topicId] ?? (() => { throw new Error('Unmapped reviewed Paper 1 topic: ' + card.id); })()
+    ? [...new Set(paperOneIds.flatMap(id => paperOneTopics[id] ?? (id === 'irish-2-2' ? [] : (() => { throw new Error('Unmapped reviewed Paper 1 topic: ' + card.id + ' ' + id); })())))]
     : card.id.includes('-reading-')
     ? card.topicId === 'irish-3-3' ? [H.grammar]
       : (card.additionalTopicIds ?? []).includes('irish-3-3') ? [H.reading,H.grammar] : [H.reading]

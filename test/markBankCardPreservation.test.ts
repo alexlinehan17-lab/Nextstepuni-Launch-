@@ -77,6 +77,21 @@ const addedIrishRoutes = new Set([
     'literature-4-a','literature-4-b','literature-4-c','literature-4-d','literature-4-e','literature-4-f'].map(key => `irish-2026-hl-p2-${key}`),
 ]);
 
+// Paper-reviewed Ordinary additions are tracked the same way beside the frozen
+// 185-ID Ordinary hash (2026 Ordinary Paper 1, reviewed 2026-10-11).
+const addedIrishOrdinaryRoutes = new Set([
+  ...['a-f1-q1a','a-f1-q1b','a-f1-q2a','a-f1-q2b','a-f2-q1a','a-f2-q1b','a-f2-q2a','a-f2-q2b',
+    'b-c1-first-q1','b-c1-first-q2','b-c1-second-q1','b-c1-second-q2','b-c2-first-q1','b-c2-first-q2','b-c2-second-q1','b-c2-second-q2',
+    'c-p1-q1','c-p1-q2','c-p2-q1','c-p2-q2'].map(key => `irish-2026-ol-p1-listening-${key}`),
+  ...(() => {
+    const titles: Record<string, string[]> = { a: ['i','ii','iii'], b: ['i','ii'], c: ['i','ii'], d: ['i','ii'] };
+    const singles = Object.entries(titles).flatMap(([g, list]) => list.map(t => `${g}-${t}`));
+    const pairs = ['a','b','c','d'].flatMap((g1, i) => ['a','b','c','d'].slice(i + 1).flatMap(g2 =>
+      titles[g1].flatMap(t1 => titles[g2].map(t2 => `${g1}-${t1}-${g2}-${t2}`))));
+    return [...singles, ...pairs].map(key => `irish-2026-ol-p1-composition-${key}`);
+  })(),
+]);
+
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
@@ -420,7 +435,7 @@ const decks = [
   /* Original 400 Irish identities. Their presence does not establish coverage
    * of every task or route; the full 2010–2026 review remains in progress. */
   ['irish:higher', IRISH_HIGHER.filter(card => !addedIrishRoutes.has(card.id)), 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
-  ['irish:ordinary', IRISH_ORDINARY, 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
+  ['irish:ordinary', IRISH_ORDINARY.filter(card => !addedIrishOrdinaryRoutes.has(card.id)), 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
   /* 2026-08-30: complete Art written-paper launch. All 462 separately marked
    * tasks and finite printed answer routes across 2021–2025 are present. This
    * includes all ten heading pairs for 2025 OL Q4(a), while keeping Section
@@ -466,6 +481,9 @@ describe('Mark Bank card preservation', () => {
     expect(IRISH_HIGHER.filter(card => addedIrishRoutes.has(card.id)).map(card => card.id).sort())
       .toEqual([...addedIrishRoutes].sort());
     expect(IRISH_HIGHER).toHaveLength(215 + addedIrishRoutes.size);
+    expect(IRISH_ORDINARY.filter(card => addedIrishOrdinaryRoutes.has(card.id)).map(card => card.id).sort())
+      .toEqual([...addedIrishOrdinaryRoutes].sort());
+    expect(IRISH_ORDINARY).toHaveLength(185 + addedIrishOrdinaryRoutes.size);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
