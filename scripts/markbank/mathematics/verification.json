@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1557,
-  "reviewedTasks": 925,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher Level Papers 1 and 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1558,
+  "reviewedTasks": 965,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 267,
+  "targetedRegressionTests": 277,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -43,7 +43,7 @@
   },
   "wholeSubjectComplete": false,
   "typecheck": "passed",
-  "productionBuild": "passed on 2026-10-11 through all reviewed Foundation 2014–2026, all five 2025 English papers, 2026 HL P1/P2 and 2026 OL P1",
+  "productionBuild": "passed on 2026-10-11 after 2024 HL Paper 2 (all reviewed Foundation 2014–2026, all five 2025 papers, all four 2026 HL/OL papers, 2024 HL P1/P2)",
   "foundation": {
     "independentlyReviewedTasks": 42,
     "offeredMarks": 375,
@@ -391,5 +391,67 @@
     "schemePagesInspected": 29,
     "coverageBaseline": "1125/3474 asks covered, 0 orphans, 0 excluded, 2349 open",
     "validation": "Deck generation (1,557 built, 12 historical rejects), Atlas generation and --check (236 placements), audit --check-reviewed, nine regression files (267/267), typecheck and diff whitespace check passed."
+  },
+  "higher2024p2": {
+    "paper": "2024 Higher Level Paper 2",
+    "paperFileid": "LC003ALP200EV.pdf",
+    "schemeFileid": "LC003ALP000EV.pdf",
+    "reviewedAt": "2026-10-11",
+    "independentlyReviewedTasks": 40,
+    "existingRuntimeCardsReviewed": 39,
+    "addedRuntimeCards": [
+      "maths-2024-hl-p2-q7-a-ii"
+    ],
+    "boundaryCorrections": {
+      "maths-2024-hl-p2-q7-a-i": "re-cited from Q7(a)(i), (ii) to Q7(a)(i); rows from its own 5C notes",
+      "maths-2024-hl-p2-q1-b": "re-cited as Q1(b), (c) (one 15C scale); crop that omitted the table and part (c) removed in favour of the lifted prompt and original page",
+      "maths-2024-hl-p2-q2-d": "page furniture removed from rows",
+      "maths-2024-hl-p2-q10-c-i": "page furniture removed from rows"
+    },
+    "targetedRegressionTests": 277,
+    "previousRuntimeIdsRetained": 1557,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 28,
+    "coverageBaseline": "1126/3474 asks covered, 0 orphans, 0 excluded, 2348 open",
+    "validation": "Deck generation (1,558 built, 12 historical rejects), Atlas generation and --check (246 placements), audit --check-reviewed, twelve regression files (277/277), typecheck, production build and diff whitespace check passed."
+  },
+  "browserBatch2": {
+    "engine": "Chrome via Playwright, local Vite on port 5701 with the worktree's PDF mirror",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "cards": [
+      "maths-2026-ol-p2-q6-a-i",
+      "maths-2024-hl-p1-q8-a-i-ii",
+      "maths-2024-hl-p2-q1-b",
+      "maths-2024-hl-p2-q7-a-ii"
+    ],
+    "questionPagesRender": true,
+    "schemeHiddenBeforeReveal": true,
+    "exclusiveScaleAwards": {
+      "ol10B": 5,
+      "hl10D": 5,
+      "hl15C": 8,
+      "hl10C": 6
+    },
+    "schemeReaderRenders": true,
+    "escapeAndFocusReturn": true,
+    "rulerKnownPrintedLengthCm": 3.999,
+    "rulerReadingsCm": {
+      "desktop100": 4.01,
+      "desktop125": 4.0,
+      "mobile100": 3.98,
+      "mobile125": 3.99
+    },
+    "pageErrors": []
   }
 }

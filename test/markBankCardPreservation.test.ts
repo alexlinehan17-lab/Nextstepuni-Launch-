@@ -430,6 +430,8 @@ const reviewedMathematicsAdditions = new Set([
   // 2024 HL Paper 1 review: Q8(a) had no card; Q9(b) was authored but
   // refused by the provenance gate, so neither ID ever shipped before.
   'maths-2024-hl-p1-q8-a-i-ii', 'maths-2024-hl-p1-q9-b-i',
+  // 2024 HL Paper 2 review: Q7(a)(ii) had no card of its own.
+  'maths-2024-hl-p2-q7-a-ii',
 ]);
 // Whole Higher/Ordinary papers reviewed independently from 2026-10-11 onward.
 // Each paper's new tasks are pinned by their own identity hash below.

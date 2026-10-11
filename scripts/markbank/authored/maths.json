@@ -25573,7 +25573,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q1(a)(i)–(iii)",
-  "questionText": "The mode of the data is 34 metres. Use this to write down the value of a",
+  "questionText": "(i) The mode of the data is 34 metres. Use this to write down the value of a. (ii) The range of the data is 49 metres. Use this to find the value of b and the value of c. (iii) The median of the data is 43·5 metres. Use this to find the value of d.",
   "figureKey": "maths-2024-HL-paper-p031-i0",
   "labelKey": [],
   "tariffModel": {
@@ -25608,8 +25608,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q1-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q1-a-i",
+  "stem": "A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have been replaced with the letters a, b, c, and d. Stem 2: b, 2, 7; stem 3: a, 4, 4, 5, 8; stem 4: 0, 1, d, 5, 6, 9; stem 5: 2, 3, 7, 7, 8; stem 6: 1, 8, c. Key: 2|7 = 27 metres."
  },
  {
   "id": "maths-2024-hl-p2-q1-b",
@@ -25619,8 +25620,8 @@
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2024 HL Paper 2 Q1(b)",
-  "questionText": "How would you best describe how the results changed for these students, from the initial test to the re-test?",
+  "questionRef": "2024 HL Paper 2 Q1(b), (c)",
+  "questionText": "(b) How would you best describe how the results changed for these students, from the initial test to the re-test? (c) The swimming coach worked out r, the correlation coefficient between the distance in the initial test and the distance in the re-test, for these seven students. Find the value of r, correct to 4 decimal places.",
   "figureKey": "maths-2024-HL-paper-p031-i1",
   "labelKey": [],
   "tariffModel": {
@@ -25653,8 +25654,8 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q1-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "stem": "Seven of the 22 students took swimming lessons. They were re-tested after the lessons, to see how far they could now swim without stopping. The table and graph below show the results of the initial test and of the re-test for these students. The initial-test distances are 22, 34, 38, 45, 49, 57 and 61 m; the matching re-test distances are 25, 40, 65, 96, 142, 262 and 350 m."
  },
  {
   "id": "maths-2024-hl-p2-q2-a",
@@ -25665,7 +25666,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q2(a)",
-  "questionText": "The table below shows the prizes, in euro, that a player can win in a game, as well as the probability of winning each prize. The player wins at most one prize each time that she plays. Some of the prizes are given in terms of x∈ℝ",
+  "questionText": "The table below shows the prizes, in euro, that a player can win in a game, as well as the probability of winning each prize. The player wins at most one prize each time that she plays. Some of the prizes are given in terms of x ∈ ℝ. The table gives the prizes None, 2, x − 10 and x with probabilities 30%, 40%, 28% and 2%. It costs €10 to play the game once. The game is fair – that is, the expected value of the winnings, taking the cost into account, is €0. Work out the value of x.",
   "figureKey": "maths-2024-HL-paper-p032-i0",
   "labelKey": [],
   "tariffModel": {
@@ -25698,7 +25699,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q2-a"
  },
  {
@@ -25710,7 +25711,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q2(b)",
-  "questionText": "A and B are mutually exclusive events",
+  "questionText": "A and B are mutually exclusive events. P(A) = 0·1 and P(B) = 0·4. Write down the value of each of the following: P(A ∩ B) and P(A ∪ B).",
   "figureKey": "maths-2024-HL-paper-p032-i1",
   "labelKey": [],
   "tariffModel": {
@@ -25738,7 +25739,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q2-b"
  },
  {
@@ -25750,7 +25751,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q2(c)",
-  "questionText": "C and D are two other events, with universal set U. P(C) = 0∙5 and P(D) = 0∙7",
+  "questionText": "C and D are two other events, with universal set U. P(C) = 0·5 and P(D) = 0·7. Find the maximum value of P[(C ∪ D)′]. Note: (C ∪ D)′ is the complement of the set C ∪ D in the set U.",
   "figureKey": "maths-2024-HL-paper-p032-i2",
   "labelKey": [],
   "tariffModel": {
@@ -25778,7 +25779,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q2-c"
  },
  {
@@ -25790,37 +25791,23 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q2(d)",
-  "questionText": "E is the event that it will be raining tomorrow morning. F is the event that I will wear a coat going outside tomorrow morning",
+  "questionText": "E is the event that it will be raining tomorrow morning. F is the event that I will wear a coat going outside tomorrow morning. Explain why it would not be reasonable to assume that E and F are independent events.",
   "figureKey": "maths-2024-HL-paper-p032-i3",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2024-hl-p2-q2-d-r1",
-    "kind": "anyN",
-    "verbatim": "If it is raining I am more likely to wear a coat than if it",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 1,
-     "perOption": 5,
-     "options": [
-      "If it is raining I am more likely to wear a coat than if it",
-      "isn’t",
-      "Mathematics – Higher Level"
-     ]
-    }
+    "id": "maths-2024-hl-p2-q2-d-solution-1",
+    "kind": "point",
+    "verbatim": "If it is raining I am more likely to wear a coat than if it isn’t",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q2-d"
  },
  {
@@ -25832,7 +25819,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q3(a)",
-  "questionText": "A is a parallelogram. |A| = 10 cm, |B| = 13 cm, and |∠A| = 110°. Find the area of A, correct to the nearest cm²",
+  "questionText": "ABCD is a parallelogram. |AB| = 10 cm, |BC| = 13 cm, and |∠ABC| = 110°. Find the area of ABCD, correct to the nearest cm².",
   "figureKey": "maths-2024-HL-paper-p033-i0",
   "labelKey": [],
   "tariffModel": {
@@ -25865,7 +25852,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q3-a"
  },
  {
@@ -25877,7 +25864,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q3(b)",
-  "questionText": "X is an angle, with 0° ≤X ≤ 360°, and = √3/2 cos(2X) = √3 Find all the possible values of X",
+  "questionText": "X is an angle, with 0° ≤ X ≤ 360°, and cos(2X) = √3/2. Find all the possible values of X.",
   "figureKey": "maths-2024-HL-paper-p033-i1",
   "labelKey": [],
   "tariffModel": {
@@ -25912,7 +25899,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q3-b"
  },
  {
@@ -25924,7 +25911,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q3(c)",
-  "questionText": "K is a triangle where |M| = 15√3 cm, |M| = 45 cm, and |∠K| = 25°. 𝜃 is the angle ∠L",
+  "questionText": "KLM is a triangle where |MK| = 15√3 cm, |ML| = 45 cm, and |∠KLM| = 25°. θ is the angle ∠LKM. Work out the two possible values of θ, for 0° < θ < 180°. Give each answer correct to the nearest degree.",
   "figureKey": "maths-2024-HL-paper-p033-i2",
   "labelKey": [],
   "tariffModel": {
@@ -25959,7 +25946,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q3-c"
  },
  {
@@ -25971,7 +25958,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q4(a)",
-  "questionText": "Construct the centroid of the triangle P below",
+  "questionText": "Construct the centroid of the triangle PQR below. Show all your construction lines clearly. Where measurement is used, show all relevant measurements and calculations clearly.",
   "figureKey": "maths-2024-HL-paper-p034-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26006,7 +25993,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q4-a"
  },
  {
@@ -26018,7 +26005,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q4(b)",
-  "questionText": "The lines A, B, and C in the diagram below are parallel. E∈D and B∈A",
+  "questionText": "The lines AD, BE, and CF in the diagram below are parallel. E ∈ DF and B ∈ AC. |AB| = |BC|. Prove that |DE| = |EF|. (That is, prove that if three parallel lines cut off equal segments on some transversal line, then they will cut off equal segments on any other transversal.) Give a reason for each statement that you make in your proof, as appropriate.",
   "figureKey": "maths-2024-HL-paper-p034-i1",
   "labelKey": [],
   "tariffModel": {
@@ -26053,7 +26040,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q4-b"
  },
  {
@@ -26065,7 +26052,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q5(a)(i)",
-  "questionText": "Write down the centre and radius of the circle s",
+  "questionText": "Write down the centre and radius of the circle s.",
   "figureKey": "maths-2024-HL-paper-p035-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26100,8 +26087,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q5-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q5-a-i",
+  "stem": "The circle s has equation: x² + y² + 4x − 6y + 5 = 0"
  },
  {
   "id": "maths-2024-hl-p2-q5-a-ii",
@@ -26112,7 +26100,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q5(a)(ii)",
-  "questionText": "The circle c has equation: (x−2)² + (y + 1)² = 72 Show that the circles s and c touch internally",
+  "questionText": "The circle c has equation: (x − 2)² + (y + 1)² = 72. Show that the circles s and c touch internally.",
   "figureKey": "maths-2024-HL-paper-p035-i1",
   "labelKey": [],
   "tariffModel": {
@@ -26147,8 +26135,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q5-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q5-a-ii",
+  "stem": "The circle s has equation: x² + y² + 4x − 6y + 5 = 0"
  },
  {
   "id": "maths-2024-hl-p2-q5-b",
@@ -26159,7 +26148,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q5(b)",
-  "questionText": "Another circle has its centre on the vertical line through the point (9, 0)",
+  "questionText": "Another circle has its centre on the vertical line through the point (9, 0). The points (7, 10) and (12, 8) are on this circle. Find the equation of this circle. Note that your answer may contain non-integer values.",
   "figureKey": "maths-2024-HL-paper-p036-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26194,7 +26183,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q5-b"
  },
  {
@@ -26206,7 +26195,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q6(a)",
-  "questionText": "[A] is a line segment. The point C (6, 11) divides the line segment [A] internally in the ratio 1: 3",
+  "questionText": "[AB] is a line segment. The point C (6, 11) divides the line segment [AB] internally in the ratio 1 : 3. A is the point (1, 13). Find the co-ordinates of the point B.",
   "figureKey": "maths-2024-HL-paper-p037-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26241,7 +26230,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q6-a"
  },
  {
@@ -26253,7 +26242,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q6(b)",
-  "questionText": "Find the perpendicular distance from the point (5, −2) to the line: 4/3 xx − 11 y = 4 x−11",
+  "questionText": "Find the perpendicular distance from the point (5, −2) to the line: y = (4/3)x − 11",
   "figureKey": "maths-2024-HL-paper-p037-i1",
   "labelKey": [],
   "tariffModel": {
@@ -26286,7 +26275,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2024-HL-ask-p2-q6-b"
  },
  {
@@ -26298,7 +26287,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q6(c)(i), (ii)",
-  "questionText": "How many different pairs of points can be picked from these 16 points?",
+  "questionText": "(i) How many different pairs of points can be picked from these 16 points? (ii) The two points that are picked are joined with a straight line. Find the probability that this line is horizontal.",
   "figureKey": "maths-2024-HL-paper-p038-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26333,8 +26322,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q6-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q6-c-i",
+  "stem": "In the co-ordinate diagram below, 16 points are marked with a dot (●). These are all of the points of the form (m, n), where m, n ∈ ℕ and m, n ≤ 4. A pair of these points is picked at random."
  },
  {
   "id": "maths-2024-hl-p2-q7-a-i",
@@ -26344,50 +26334,47 @@
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2024 HL Paper 2 Q7(a)(i), (ii)",
-  "questionText": "One person is picked at random from the people who stayed in a PK Hotel in 2023. Find the probability that this person is less than 50 years old",
+  "questionRef": "2024 HL Paper 2 Q7(a)(i)",
+  "questionText": "One person is picked at random from the people who stayed in a PK Hotel in 2023. Find the probability that this person is less than 50 years old.",
   "figureKey": "maths-2024-HL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 3, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2024-hl-p2-q7-a-i-r1",
-    "kind": "anyN",
-    "verbatim": "(a) (i) zz = (50 − 48·2)/10·6 = 0·1698",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Full Credit –1: Apply a * for incorrect or no rounding. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 2,
-     "options": [
-      "(a) (i) zz = (50 − 48·2)/10·6 = 0·1698",
-      "P(z < 0·17) = 0∙5675 o 56·75%",
-      "(a)(ii)",
-      "Oldest 10% ∴90% less than ‘A’ years old",
-      "So, z = 1·28 (or 1·29)",
-      "1·28 = (AA − 48·2)/10·6",
-      "A = 61·768",
-      "Using z = 1·29, A = 61·874",
-      "A = 62 [nearest whole number]"
-     ],
-     "perOptionSteps": [
-      2,
-      1,
-      2
-     ]
-    }
+    "id": "maths-2024-hl-p2-q7-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "P(z < 0·17) = 0·5675",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q7-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "56·75%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q7-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates μ or σ",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q7-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "Finds z-score",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q7-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q7-a-i",
+  "stem": "PK Hotels is a hotel chain in Europe. The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48·2 years and a standard deviation of 10·6 years."
  },
  {
   "id": "maths-2024-hl-p2-q7-b-i",
@@ -26398,7 +26385,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q7(b)(i)",
-  "questionText": "6 of the PK Hotel customers are picked at random. Find the probability that exactly 2 of them used the pool",
+  "questionText": "6 of the PK Hotel customers are picked at random. Find the probability that exactly 2 of them used the pool.",
   "figureKey": "maths-2024-HL-paper-p039-i1",
   "labelKey": [],
   "tariffModel": {
@@ -26431,8 +26418,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q7-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q7-b-i",
+  "stem": "PK Hotels is a hotel chain in Europe. During their most recent stay, 1/5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii)."
  },
  {
   "id": "maths-2024-hl-p2-q7-b-ii",
@@ -26443,7 +26431,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q7(b)(ii)",
-  "questionText": "n of the PK Hotel customers are picked at random, where n∈ℕ",
+  "questionText": "n of the PK Hotel customers are picked at random, where n ∈ ℕ. The probability that none of them used the pool, correct to 4 decimal places, is 0·0047. Work out the value of n.",
   "figureKey": "maths-2024-HL-paper-p040-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26476,8 +26464,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q7-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q7-b-ii",
+  "stem": "PK Hotels is a hotel chain in Europe. During their most recent stay, 1/5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii)."
  },
  {
   "id": "maths-2024-hl-p2-q7-c",
@@ -26488,7 +26477,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q7(c)",
-  "questionText": "PK Hotels are testing a new booking system",
+  "questionText": "PK Hotels are testing a new booking system. 45% of people who log on to the PK Hotels website are shown the old booking system; the other 55% are shown the new booking system. People are assigned the booking system (old or new) at random. One third of people who see the old booking system end up booking a room. Two fifths of people who see the new booking system end up booking a room. One person is selected at random from those who booked a room through the PK Hotels website. Find the probability that this person used the new booking system. Give your answer as a percentage, correct to the nearest percent.",
   "figureKey": "maths-2024-HL-paper-p040-i1",
   "labelKey": [],
   "tariffModel": {
@@ -26523,8 +26512,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q7-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q7-c",
+  "stem": "PK Hotels is a hotel chain in Europe."
  },
  {
   "id": "maths-2024-hl-p2-q7-d",
@@ -26535,7 +26525,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q7(d)",
-  "questionText": "In 2020, PK Hotels were rated the best hotel chain in Europe by 75% of their customers",
+  "questionText": "In 2020, PK Hotels were rated the best hotel chain in Europe by 75% of their customers. In 2024, PK Hotels carried out a survey of a random sample of 1000 of their customers to see if this percentage had changed. Of these, 765 rated PK Hotels the best hotel chain in Europe. Carry out a hypothesis test at the 5% level of significance to see if this shows a change in the percentage of their customers who rate PK Hotels the best chain in Europe. State your null hypothesis and your alternative hypothesis, state your conclusion, and give a reason for your conclusion.",
   "figureKey": "maths-2024-HL-paper-p041-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26570,8 +26560,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q7-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q7-d",
+  "stem": "PK Hotels is a hotel chain in Europe."
  },
  {
   "id": "maths-2024-hl-p2-q8-a",
@@ -26582,7 +26573,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q8(a)",
-  "questionText": "He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle",
+  "questionText": "He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle. Find the dimensions of this rectangle. Give your answers in cm, correct to 1 decimal place where appropriate.",
   "figureKey": "maths-2024-HL-paper-p042-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26615,8 +26606,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q8-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q8-a",
+  "stem": "Tommy makes ornaments from metal and glass."
  },
  {
   "id": "maths-2024-hl-p2-q8-b",
@@ -26627,7 +26619,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q8(b)",
-  "questionText": "Tommy makes another cylinder with a height of 22 cm and a diameter of 12 cm",
+  "questionText": "Tommy makes another cylinder with a height of 22 cm and a diameter of 12 cm. This cylinder fits exactly inside a glass sphere. The top and bottom edges of the cylinder touch the sphere. Find the volume of the sphere, in cm³, correct to 1 decimal place. Use the Theorem of Pythagoras in your solution.",
   "figureKey": "maths-2024-HL-paper-p042-i1",
   "labelKey": [],
   "tariffModel": {
@@ -26662,8 +26654,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q8-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q8-b",
+  "stem": "Tommy makes ornaments from metal and glass."
  },
  {
   "id": "maths-2024-hl-p2-q8-c-i",
@@ -26674,7 +26667,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q8(c)(i), (ii)",
-  "questionText": "The diagram is symmetrical about the line D. State why |∠C| = 90°",
+  "questionText": "(i) The diagram is symmetrical about the line DC. State why |∠CBD| = 90°. (ii) Hence, or otherwise, prove that the triangles BCE and DBE are similar. Give a reason for each statement that you make, where appropriate.",
   "figureKey": "maths-2024-HL-paper-p043-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26709,8 +26702,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q8-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q8-c-i",
+  "stem": "Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E."
  },
  {
   "id": "maths-2024-hl-p2-q8-c-iii",
@@ -26721,7 +26715,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q8(c)(iii)",
-  "questionText": "(iii) The top cone has a radius of r and a height of h; that is, |E| = r and |E| = h. The sphere, represented by s, has a radius of 10 cm",
+  "questionText": "The top cone has a radius of r and a height of h; that is, |EB| = r and |EC| = h. The sphere, represented by s, has a radius of 10 cm. Use the similar triangles BCE and DBE to show that: r² = 20h − h²",
   "figureKey": "maths-2024-HL-paper-p043-i1",
   "labelKey": [],
   "tariffModel": {
@@ -26754,8 +26748,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q8-c-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q8-c-iii",
+  "stem": "Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E."
  },
  {
   "id": "maths-2024-hl-p2-q8-c-iv",
@@ -26766,7 +26761,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q8(c)(iv)",
-  "questionText": "(iv) Hence, write the volume of the top cone in terms of h and 𝜋, and find the value of h that gives the maximum volume for the top cone",
+  "questionText": "Hence, write the volume of the top cone in terms of h and π, and find the value of h that gives the maximum volume for the top cone.",
   "figureKey": "maths-2024-HL-paper-p043-i2",
   "labelKey": [],
   "tariffModel": {
@@ -26799,8 +26794,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q8-c-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q8-c-iv",
+  "stem": "Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E. The top cone has a radius of r and a height of h; that is, |EB| = r and |EC| = h. The sphere, represented by s, has a radius of 10 cm. Part (c)(iii) shows that r² = 20h − h²."
  },
  {
   "id": "maths-2024-hl-p2-q9-a-i",
@@ -26811,7 +26807,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q9(a)(i)",
-  "questionText": "Write down the equation of the circle s",
+  "questionText": "Write down the equation of the circle s.",
   "figureKey": "maths-2024-HL-paper-p045-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26839,8 +26835,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q9-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q9-a-i",
+  "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12."
  },
  {
   "id": "maths-2024-hl-p2-q9-a-ii",
@@ -26851,7 +26848,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q9(a)(ii)",
-  "questionText": "Ameena is at the point (a, 8) on the stream (circle s), where a∈ℝ, a > 0. Work out the value of a. Give your answer in surd form",
+  "questionText": "Ameena is at the point (a, 8) on the stream (circle s), where a ∈ ℝ, a > 0. Work out the value of a. Give your answer in surd form.",
   "figureKey": "maths-2024-HL-paper-p045-i1",
   "labelKey": [],
   "tariffModel": {
@@ -26884,8 +26881,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q9-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q9-a-ii",
+  "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12."
  },
  {
   "id": "maths-2024-hl-p2-q9-a-iii",
@@ -26896,7 +26894,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q9(a)(iii)",
-  "questionText": "(iii) Petro is at the point P(10, 6). Work out the shortest distance from the point P to the stream (circle s)",
+  "questionText": "Petro is at the point P(10, 6). Work out the shortest distance from the point P to the stream (circle s). Give your answer correct to the nearest metre. Remember that each unit on the diagram represents 100 metres.",
   "figureKey": "maths-2024-HL-paper-p045-i2",
   "labelKey": [],
   "tariffModel": {
@@ -26929,8 +26927,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q9-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q9-a-iii",
+  "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12."
  },
  {
   "id": "maths-2024-hl-p2-q9-b",
@@ -26941,7 +26940,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q9(b)",
-  "questionText": "There is a straight path, l, that is not shown on the diagram. l is parallel to the y-axis, and is a tangent to the stream s in the first quadrant",
+  "questionText": "There is a straight path, l, that is not shown on the diagram. l is parallel to the y-axis, and is a tangent to the stream s in the first quadrant. Write down the equation of this path l. Remember that the radius of s is 12.",
   "figureKey": "maths-2024-HL-paper-p045-i3",
   "labelKey": [],
   "tariffModel": {
@@ -26969,8 +26968,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q9-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q9-b",
+  "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12."
  },
  {
   "id": "maths-2024-hl-p2-q9-c",
@@ -26981,7 +26981,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q9(c)",
-  "questionText": "Find the co-ordinates of the point on the road w that is closest to the point P(10, 6). It might be useful to find the equation of the line through P that is perpendicular to w",
+  "questionText": "Find the co-ordinates of the point on the road w that is closest to the point P(10, 6). It might be useful to find the equation of the line through P that is perpendicular to w.",
   "figureKey": "maths-2024-HL-paper-p046-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27016,8 +27016,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q9-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q9-c",
+  "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The line segment w represents a road, where w has the equation: x − 3y = 9 for 0 ≤ y ≤ 8."
  },
  {
   "id": "maths-2024-hl-p2-q9-d",
@@ -27028,7 +27029,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q9(d)",
-  "questionText": "Fiadh is at the point F(9, 0) on the road w",
+  "questionText": "Fiadh is at the point F(9, 0) on the road w. She travels 1200 m along the road w away from the point F, in the first quadrant, and then stops. Work out the co-ordinates of the point at which she stops. Give each value correct to 1 decimal place. Remember that each unit on the diagram represents 100 metres.",
   "figureKey": "maths-2024-HL-paper-p047-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27063,8 +27064,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q9-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q9-d",
+  "stem": "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The line segment w represents a road, where w has the equation: x − 3y = 9 for 0 ≤ y ≤ 8."
  },
  {
   "id": "maths-2024-hl-p2-q10-a-i",
@@ -27075,7 +27077,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q10(a)(i)",
-  "questionText": "Show that |O| = 120 cm",
+  "questionText": "Show that |OB| = 120 cm.",
   "figureKey": "maths-2024-HL-paper-p048-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27103,8 +27105,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q10-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q10-a-i",
+  "stem": "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm. In the diagram below, the line segment [AB] shows a type of wiper blade. [AB] rotates around the point O, where O ∈ AB, until it reaches the position [A′B′]. The region that it cleans is ABB′A′, which is the sector OBB′ with the sector OAA′ removed. A, A′, B, and B′ lie on the rectangle PQRS, and N lies on the arc from B to B′. The line segment [RQ] is extended 20 cm to T, as shown. ∠OTR is a right angle."
  },
  {
   "id": "maths-2024-hl-p2-q10-a-ii",
@@ -27115,7 +27118,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q10(a)(ii)",
-  "questionText": "Hence, show that |∠B| = 41∙4°, correct to 1 decimal place",
+  "questionText": "Hence, show that |∠BOT| = 41·4°, correct to 1 decimal place.",
   "figureKey": "maths-2024-HL-paper-p048-i1",
   "labelKey": [],
   "tariffModel": {
@@ -27148,8 +27151,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q10-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q10-a-ii",
+  "stem": "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm. In the diagram below, the line segment [AB] shows a type of wiper blade. [AB] rotates around the point O, where O ∈ AB, until it reaches the position [A′B′]. The region that it cleans is ABB′A′, which is the sector OBB′ with the sector OAA′ removed. A, A′, B, and B′ lie on the rectangle PQRS, and N lies on the arc from B to B′. The line segment [RQ] is extended 20 cm to T, as shown. ∠OTR is a right angle."
  },
  {
   "id": "maths-2024-hl-p2-q10-a-iii",
@@ -27160,7 +27164,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q10(a)(iii)",
-  "questionText": "(iii) Hence, work out the area of A′A′",
+  "questionText": "Hence, work out the area of ABB′A′. Remember that ABB′A′ is the sector OBB′ with the sector OAA′ removed. Give your answer correct to the nearest cm².",
   "figureKey": "maths-2024-HL-paper-p048-i2",
   "labelKey": [],
   "tariffModel": {
@@ -27195,8 +27199,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q10-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q10-a-iii",
+  "stem": "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm. In the diagram below, the line segment [AB] shows a type of wiper blade. [AB] rotates around the point O, where O ∈ AB, until it reaches the position [A′B′]. The region that it cleans is ABB′A′, which is the sector OBB′ with the sector OAA′ removed. A, A′, B, and B′ lie on the rectangle PQRS, and N lies on the arc from B to B′. The line segment [RQ] is extended 20 cm to T, as shown. ∠OTR is a right angle."
  },
  {
   "id": "maths-2024-hl-p2-q10-b",
@@ -27207,7 +27212,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q10(b)",
-  "questionText": "Moving the point O along the line N changes the size of the wiper blade and the region that it cleans. In the diagram below, [D] rotates about O, where O∈D, until it reaches [D′E′]. As in part (a), E and E′ lie on the rectangle P",
+  "questionText": "Moving the point O along the line NM changes the size of the wiper blade and the region that it cleans. In the diagram below, [DE] rotates about O, where O ∈ DE, until it reaches [D′E′]. As in part (a), E and E′ lie on the rectangle PQRS. Here, |∠E′OE| = 105°. By setting |OE| = x, use the triangle OEE′ and the Cosine Rule to find the value of |OE|. Give your answer in cm, correct to 1 decimal place.",
   "figureKey": "maths-2024-HL-paper-p049-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27242,8 +27247,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q10-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q10-b",
+  "stem": "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm."
  },
  {
   "id": "maths-2024-hl-p2-q10-c-i",
@@ -27258,38 +27264,35 @@
   "figureKey": "maths-2024-HL-paper-p049-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2024-hl-p2-q10-c-i-r1",
-    "kind": "anyN",
-    "verbatim": "(i) 3⁵ = 243",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Note: Accept correct answer without work • Work of merit, for example, lists some correct patterns. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "(i) 3⁵ = 243",
-      "(c)(i)",
-      "Mathematics – Higher Level"
-     ],
-     "perOptionSteps": [
-      2,
-      3
-     ]
-    }
+    "id": "maths-2024-hl-p2-q10-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "3⁵ = 243",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q10-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Accept correct answer without work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q10-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, lists some correct patterns",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q10-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q10-c-i",
+  "stem": "Mattie is driving home. On the way, she passes five traffic lights. Each traffic light is either red (R), green (G), or orange (O) when she arrives at it. One day, she notes the pattern made by the colour of each traffic light when she arrives at it. For example, this pattern could be R R O G R."
  },
  {
   "id": "maths-2024-hl-p2-q10-c-ii",
@@ -27300,7 +27303,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q10(c)(ii), (iii)",
-  "questionText": "How many different patterns could the five traffic lights make, if the first light is red and the fifth light is not red?",
+  "questionText": "(ii) How many different patterns could the five traffic lights make, if the first light is red and the fifth light is not red? (iii) How many different patterns could the five traffic lights make if no two consecutive lights are the same colour?",
   "figureKey": "maths-2024-HL-paper-p050-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27335,8 +27338,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2024-HL-ask-p2-q10-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q10-c-ii",
+  "stem": "Mattie is driving home. On the way, she passes five traffic lights. Each traffic light is either red (R), green (G), or orange (O) when she arrives at it. One day, she notes the pattern made by the colour of each traffic light when she arrives at it. For example, this pattern could be R R O G R."
  },
  {
   "id": "maths-2024-ol-p1-q1-a-i",
@@ -61443,5 +61447,73 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2024-hl-p2-q7-a-ii",
+  "topicId": "maths-1-3",
+  "conceptId": "p2-q7-a-ii",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 Q7(a)(ii)",
+  "stem": "PK Hotels is a hotel chain in Europe. The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48·2 years and a standard deviation of 10·6 years.",
+  "questionText": "Exactly 10% of people who stayed in a PK Hotel in 2023 are at least A years old. Find the value of A, correct to the nearest whole number.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-q7-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "A = 62 [nearest whole number]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q7-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Oldest 10% ∴ 90% less than ‘A’ years old",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q7-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Finds z-value",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q7-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Writes equation in A",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q7-a-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Finds value of A",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q7-a-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, mentions 90%, or finds z-value of 10%",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2024-hl-p2-q7-a-ii-solution-7",
+    "kind": "point",
+    "verbatim": "Apply a * for incorrect or no rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2024 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review."
  }
 ]

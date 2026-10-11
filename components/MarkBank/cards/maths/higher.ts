@@ -8991,21 +8991,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q1-a-i", topicId: "maths-4-2", conceptId: "mode-data-metres-write-down-value",
+    id: "maths-2024-hl-p2-q1-a-i", topicId: "maths-1-6", conceptId: "mode-data-metres-write-down-value",
     section: "B", questionRef: "2024 HL Paper 2 Q1(a)(i)–(iii)",
-    questionText: "The mode of the data is 34 metres. Use this to write down the value of a",
+    stem: "A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have been replaced with the letters a, b, c, and d. Stem 2: b, 2, 7; stem 3: a, 4, 4, 5, 8; stem 4: 0, 1, d, 5, 6, 9; stem 5: 2, 3, 7, 7, 8; stem 6: 1, 8, c. Key: 2|7 = 27 metres.",
+    questionText: "(i) The mode of the data is 34 metres. Use this to write down the value of a. (ii) The range of the data is 49 metres. Use this to find the value of b and the value of c. (iii) The median of the data is 43·5 metres. Use this to find the value of d.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p2-q1-a-i-r1", kind: "anyN", verbatim: "Work of merit in finding one value, for example, indicates median is between \"4d\" and 45", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Full Credit –1: Apply a * if both digits are given instead of just second digit in parts (ii) and (iii), once only. Do not penalise thereafter. Note: solution requires 4 values:a, b, c, a d Full credit for correct answers without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in finding one value, for example, indicates median is between \"4d\" and 45","Two values correct\nOne value correct and work of merit in finding two other values","Three values correct\nTwo values correct and work of merit in finding the other two values"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[32],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q1-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q1-a-i.png",
           "srcHash": "460d3b61613fc81f44a4ec7f477cd236",
-          "alt": "The question as printed on the paper — A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have… Full card prompt: The mode of the data is 34 metres. Use this to write down the value of a",
+          "alt": "The question as printed on the paper — A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have… Full card prompt: A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have been replaced with the letters a, b, c, and d. Stem 2: b, 2, 7; stem 3: a, 4, 4, 5, 8; stem 4: 0, 1, d, 5, 6, 9; stem 5: 2, 3, 7, 7, 8; stem 6: 1, 8, c. Key: 2|7 = 27 metres. (i) The mode of the data is 34 metres. Use this to write down the value of a. (ii) The range of the data is 49 metres. Use this to find the value of b and the value of c. (iii) The median of the data is 43·5 metres. Use this to find the value of d.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9021,23 +9035,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q1-b", topicId: "maths-4-2", conceptId: "how-would-you-best-describe-how",
-    section: "B", questionRef: "2024 HL Paper 2 Q1(b)",
-    questionText: "How would you best describe how the results changed for these students, from the initial test to the re-test?",
+    id: "maths-2024-hl-p2-q1-b", topicId: "maths-1-6", conceptId: "how-would-you-best-describe-how",
+    section: "B", questionRef: "2024 HL Paper 2 Q1(b), (c)",
+    stem: "Seven of the 22 students took swimming lessons. They were re-tested after the lessons, to see how far they could now swim without stopping. The table and graph below show the results of the initial test and of the re-test for these students. The initial-test distances are 22, 34, 38, 45, 49, 57 and 61 m; the matching re-test distances are 25, 40, 65, 96, 142, 262 and 350 m.",
+    questionText: "(b) How would you best describe how the results changed for these students, from the initial test to the re-test? (c) The swimming coach worked out r, the correlation coefficient between the distance in the initial test and the distance in the re-test, for these seven students. Find the value of r, correct to 4 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p2-q1-b-r1", kind: "anyN", verbatim: "Work of merit in (b), for example, mentions that swimmers improved, or reference to non-linearity", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8. The full scale runs to 15. Full Credit –1: Apply a * for incorrect rounding in (c) (incorrect to 4 DP, or correct to a different number of DP). Note: In (b), needs to mention both increase for these students and non-linearity of increase (for example, “the better swimmers improved more”) to be considered correct. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Work of merit in (b), for example, mentions that swimmers improved, or reference to non-linearity","(b) or (c) correct"],"perOptionSteps":[6,9]} },
     ],
-    questionFigure: {
-          "candId": "maths-2024-HL-ask-p2-q1-b",
-          "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q1-b.png",
-          "srcHash": "143444a4d398136ae70143a436862890",
-          "alt": "The question as printed on the paper — A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have… Full card prompt: How would you best describe how the results changed for these students, from the initial test to the re-test?",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
+    mathematicsScale: {"code":"15C","marks":[0,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[32],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
     figure: {
           "candId": "maths-2024-HL-paper-p031-i1",
@@ -9051,21 +9071,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q2-a", topicId: "maths-1-2", conceptId: "table-shows-prizes-euro-player-can",
     section: "B", questionRef: "2024 HL Paper 2 Q2(a)",
-    questionText: "The table below shows the prizes, in euro, that a player can win in a game, as well as the probability of winning each prize. The player wins at most one prize each time that she plays. Some of the prizes are given in terms of x∈ℝ",
+    questionText: "The table below shows the prizes, in euro, that a player can win in a game, as well as the probability of winning each prize. The player wins at most one prize each time that she plays. Some of the prizes are given in terms of x ∈ ℝ. The table gives the prizes None, 2, x − 10 and x with probabilities 30%, 40%, 28% and 2%. It costs €10 to play the game once. The game is fair – that is, the expected value of the winnings, taking the cost into account, is €0. Work out the value of x.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q2-a-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct term in E(x)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some correct term in E(x)","Fully correct equation"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[33],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q2-a.png",
           "srcHash": "d33d6a7e208708db56b0bdc6b5113d16",
-          "alt": "The question as printed on the paper — The table below shows the prizes, in euro, that a player can win in a game, as well as the probability of winning each prize. The player wins at most one prize each time that she plays. Some of the prizes are given in… Full card prompt: The table below shows the prizes, in euro, that a player can win in a game, as well as the probability of winning each prize. The player wins at most one prize each time that she plays. Some of the prizes are given in terms of x∈ℝ",
+          "alt": "The question as printed on the paper — The table below shows the prizes, in euro, that a player can win in a game, as well as the probability of winning each prize. The player wins at most one prize each time that she plays. Some of the prizes are given in… Full card prompt: The table below shows the prizes, in euro, that a player can win in a game, as well as the probability of winning each prize. The player wins at most one prize each time that she plays. Some of the prizes are given in terms of x ∈ ℝ. The table gives the prizes None, 2, x − 10 and x with probabilities 30%, 40%, 28% and 2%. It costs €10 to play the game once. The game is fair – that is, the expected value of the winnings, taking the cost into account, is €0. Work out the value of x.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9081,16 +9114,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q2-b", topicId: "maths-1-2", conceptId: "mutually-exclusive-events",
     section: "B", questionRef: "2024 HL Paper 2 Q2(b)",
-    questionText: "A and B are mutually exclusive events",
+    questionText: "A and B are mutually exclusive events. P(A) = 0·1 and P(B) = 0·4. Write down the value of each of the following: P(A ∩ B) and P(A ∪ B).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q2-b-r1", kind: "anyN", verbatim: "Work of merit, for example, correct relevant formula, such as P(A∪B) = P(A) + P(B) −P(A∩B); draws Venn diagram with some relevant use of 0∙1 and/or 0∙4", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, correct relevant formula, such as P(A∪B) = P(A) + P(B) −P(A∩B); draws Venn diagram with some relevant use of 0∙1 and/or 0∙4"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[33],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q2-b.png",
@@ -9111,16 +9157,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q2-c", topicId: "maths-1-2", conceptId: "two-other-events-universal-set",
     section: "B", questionRef: "2024 HL Paper 2 Q2(c)",
-    questionText: "C and D are two other events, with universal set U. P(C) = 0∙5 and P(D) = 0∙7",
+    questionText: "C and D are two other events, with universal set U. P(C) = 0·5 and P(D) = 0·7. Find the maximum value of P[(C ∪ D)′]. Note: (C ∪ D)′ is the complement of the set C ∪ D in the set U.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q2-c-r1", kind: "anyN", verbatim: "Work of merit, for example, Venn diagram with some relevant use of 0∙5 and/or 0∙7\nStates that C∩D needs to be maximised or that C∪D needs to be minimised\nIndicates that one set is a subset of the other", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, Venn diagram with some relevant use of 0∙5 and/or 0∙7\nStates that C∩D needs to be maximised or that C∪D needs to be minimised\nIndicates that one set is a subset of the other"]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[33],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q2-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q2-c.png",
@@ -9141,16 +9200,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q2-d", topicId: "maths-1-2", conceptId: "event-will-raining-tomorrow-morning-event",
     section: "B", questionRef: "2024 HL Paper 2 Q2(d)",
-    questionText: "E is the event that it will be raining tomorrow morning. F is the event that I will wear a coat going outside tomorrow morning",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    questionText: "E is the event that it will be raining tomorrow morning. F is the event that I will wear a coat going outside tomorrow morning. Explain why it would not be reasonable to assume that E and F are independent events.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-hl-p2-q2-d-r1", kind: "anyN", verbatim: "If it is raining I am more likely to wear a coat than if it", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["If it is raining I am more likely to wear a coat than if it","isn’t","Mathematics – Higher Level"]} },
+    { id: "maths-2024-hl-p2-q2-d-solution-1", kind: "point", verbatim: "If it is raining I am more likely to wear a coat than if it isn’t", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"5A","marks":[0,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[33],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q2-d",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q2-d.png",
@@ -9171,16 +9243,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q3-a", topicId: "maths-3-4", conceptId: "parallelogram-110-area-correct-nearest",
+    id: "maths-2024-hl-p2-q3-a", topicId: "maths-2-3", conceptId: "parallelogram-110-area-correct-nearest",
     section: "B", questionRef: "2024 HL Paper 2 Q3(a)",
-    questionText: "A is a parallelogram. |A| = 10 cm, |B| = 13 cm, and |∠A| = 110°. Find the area of A, correct to the nearest cm²",
+    questionText: "ABCD is a parallelogram. |AB| = 10 cm, |BC| = 13 cm, and |∠ABC| = 110°. Find the area of ABCD, correct to the nearest cm².",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p2-q3-a-r1", kind: "anyN", verbatim: "Work of merit, for example, triangle formula with some correct substitution; formula ah with some correct substitution or further work; formula asin C with some correct substitution; a correctly labelled diagram", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8. The full scale runs to 15. Full Credit-1: No rounding or incorrect rounding; Calculator in incorrect mode. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Work of merit, for example, triangle formula with some correct substitution; formula ah with some correct substitution or further work; formula asin C with some correct substitution; a correctly labelled diagram","Fully correct substitution into parallelogram formula\nFully correct substitution in area of triangle formula"],"perOptionSteps":[6,9]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[34],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q3-a.png",
@@ -9201,16 +9286,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q3-b", topicId: "maths-2-3", conceptId: "angle-360-cos-all-possible-values",
     section: "B", questionRef: "2024 HL Paper 2 Q3(b)",
-    questionText: "X is an angle, with 0° ≤X ≤ 360°, and = √3/2 cos(2X) = √3 Find all the possible values of X",
+    questionText: "X is an angle, with 0° ≤ X ≤ 360°, and cos(2X) = √3/2. Find all the possible values of X.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q3-b-r1", kind: "anyN", verbatim: "Work of merit in finding reference angle", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit in finding reference angle","One correct value of X found\nTwo correct values of 2X found","Two correct values of X found\nAll 4 correct values of 2X found but fails to find X"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[34],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q3-b.png",
@@ -9231,16 +9329,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q3-c", topicId: "maths-2-3", conceptId: "triangle-angle",
     section: "B", questionRef: "2024 HL Paper 2 Q3(c)",
-    questionText: "K is a triangle where |M| = 15√3 cm, |M| = 45 cm, and |∠K| = 25°. 𝜃 is the angle ∠L",
+    questionText: "KLM is a triangle where |MK| = 15√3 cm, |ML| = 45 cm, and |∠KLM| = 25°. θ is the angle ∠LKM. Work out the two possible values of θ, for 0° < θ < 180°. Give each answer correct to the nearest degree.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q3-c-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into the Sine rule, or correctly labelled diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit-1: Apply a * if not rounded correctly. Note: Accept correct answer without units (degrees). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct substitution into the Sine rule, or correctly labelled diagram","Sine rule with fully correct substitution","One correct angle found"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[34],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q3-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q3-c.png",
@@ -9261,16 +9372,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q4-a", topicId: "maths-2-3", conceptId: "construct-centroid-triangle",
+    id: "maths-2024-hl-p2-q4-a", topicId: "maths-2-1", conceptId: "construct-centroid-triangle",
     section: "B", questionRef: "2024 HL Paper 2 Q4(a)",
-    questionText: "Construct the centroid of the triangle P below",
+    questionText: "Construct the centroid of the triangle PQR below. Show all your construction lines clearly. Where measurement is used, show all relevant measurements and calculations clearly.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p2-q4-a-r1", kind: "anyN", verbatim: "Work of merit in finding the midpoint of any side, for example, measures the length of one side", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in finding the midpoint of any side, for example, measures the length of one side","Midpoints of 2 sides identified (construction/measurements shown)\nOne median drawn with no construction/measurements shown","One median drawn (construction/measurements shown)\n2 medians with no construction"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[35],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "measurementRequired": true,
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q4-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q4-a.png",
@@ -9291,21 +9416,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q4-b", topicId: "maths-2-1", conceptId: "lines-diagram-parallel",
     section: "B", questionRef: "2024 HL Paper 2 Q4(b)",
-    questionText: "The lines A, B, and C in the diagram below are parallel. E∈D and B∈A",
+    questionText: "The lines AD, BE, and CF in the diagram below are parallel. E ∈ DF and B ∈ AC. |AB| = |BC|. Prove that |DE| = |EF|. (That is, prove that if three parallel lines cut off equal segments on some transversal line, then they will cut off equal segments on any other transversal.) Give a reason for each statement that you make in your proof, as appropriate.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p2-q4-b-r1", kind: "anyN", verbatim: "Work of merit, for example, correct construction indicated, identifies parallelograms, reference to congruency", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, correct construction indicated, identifies parallelograms, reference to congruency","Construction, and 2 correct steps in establishing congruency of ΔX and ΔY (no justifications)","Construction, and 3 correct steps (including correct relevant side) in establishing congruency of ΔX and ΔY, with at least one justification\nFully correct logical statements, but no justifications"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[35],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q4-b.png",
           "srcHash": "bd58e230e0b2b531a747356f140d42e7",
-          "alt": "The question as printed on the paper — The lines A, B, and C in the diagram below are parallel. E∈D and B∈A. |A| = |B|. Prove that |D| = |E| . (That is, prove that if three parallel lines cut off equal segments on some transversal line, then they will cut… Full card prompt: The lines A, B, and C in the diagram below are parallel. E∈D and B∈A",
+          "alt": "The question as printed on the paper — The lines A, B, and C in the diagram below are parallel. E∈D and B∈A. |A| = |B|. Prove that |D| = |E| . (That is, prove that if three parallel lines cut off equal segments on some transversal line, then they will cut… Full card prompt: The lines AD, BE, and CF in the diagram below are parallel. E ∈ DF and B ∈ AC. |AB| = |BC|. Prove that |DE| = |EF|. (That is, prove that if three parallel lines cut off equal segments on some transversal line, then they will cut off equal segments on any other transversal.) Give a reason for each statement that you make in your proof, as appropriate.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9321,16 +9459,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q5-a-i", topicId: "maths-2-2", conceptId: "write-down-centre-radius-circle",
     section: "B", questionRef: "2024 HL Paper 2 Q5(a)(i)",
-    questionText: "Write down the centre and radius of the circle s",
+    stem: "The circle s has equation: x² + y² + 4x − 6y + 5 = 0",
+    questionText: "Write down the centre and radius of the circle s.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q5-a-i-r1", kind: "anyN", verbatim: "Work of merit in finding centre or radius, for example, identifies g, f or c", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in finding centre or radius, for example, identifies g, f or c","Centre correct\nRadius correct","One of centre or radius correct and work of merit in finding the other"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[36],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q5-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q5-a-i.png",
@@ -9351,16 +9503,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q5-a-ii", topicId: "maths-2-2", conceptId: "circle-has-equation-circles-touch-internally",
     section: "B", questionRef: "2024 HL Paper 2 Q5(a)(ii)",
-    questionText: "The circle c has equation: (x−2)² + (y + 1)² = 72 Show that the circles s and c touch internally",
+    stem: "The circle s has equation: x² + y² + 4x − 6y + 5 = 0",
+    questionText: "The circle c has equation: (x − 2)² + (y + 1)² = 72. Show that the circles s and c touch internally.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q5-a-ii-r1", kind: "anyN", verbatim: "Work of merit in any one of the 4 steps", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit –1: Apply a * if there is no conclusion or an incorrect conclusion. Note: Consider the solution as having 4 steps before the conclusion: 1. Find centre of circle c 2. Find radius of circle c 3. Find distance between the centres of circle c and circle s 4. Find difference in radii. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in any one of the 4 steps","2 correct steps","3 correct steps"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[36],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q5-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q5-a-ii.png",
@@ -9381,21 +9547,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q5-b", topicId: "maths-2-2", conceptId: "another-circle-has-its-centre-vertical",
     section: "B", questionRef: "2024 HL Paper 2 Q5(b)",
-    questionText: "Another circle has its centre on the vertical line through the point (9, 0)",
+    questionText: "Another circle has its centre on the vertical line through the point (9, 0). The points (7, 10) and (12, 8) are on this circle. Find the equation of this circle. Note that your answer may contain non-integer values.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q5-b-r1", kind: "anyN", verbatim: "Work of merit in finding the centre/ radius\nSome substitution into general equation of a circle\nWork of merit in finding midpoint or slope of chord joining (7, 10) to (12, 8)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in finding the centre/ radius\nSome substitution into general equation of a circle\nWork of merit in finding midpoint or slope of chord joining (7, 10) to (12, 8)","√(9 −7)² + (k−10)² and √(12 −9)² + (8 −k)²\nTwo of E A, B, o C\nFinds equation of the line perpendicular to the chord joining (7, 10) to (12, 8)","Finds kk = 31/4 (Method 1 or 3)\nTwo independent equations in f and c (Method 2)"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[37],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q5-b.png",
           "srcHash": "bb9ae2d69e7a2edd9a08a0815167721d",
-          "alt": "The question as printed on the paper — Another circle has its centre on the (7, 10) vertical line through the point (9, 0). (12, 8) The points (7, 10) and (12, 8) are on this circle. Find the equation of this circle. Note that your answer may contain x… Full card prompt: Another circle has its centre on the vertical line through the point (9, 0)",
+          "alt": "The question as printed on the paper — Another circle has its centre on the (7, 10) vertical line through the point (9, 0). (12, 8) The points (7, 10) and (12, 8) are on this circle. Find the equation of this circle. Note that your answer may contain x… Full card prompt: Another circle has its centre on the vertical line through the point (9, 0). The points (7, 10) and (12, 8) are on this circle. Find the equation of this circle. Note that your answer may contain non-integer values.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9411,16 +9590,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q6-a", topicId: "maths-2-2", conceptId: "line-segment-point-divides-line-segment",
     section: "B", questionRef: "2024 HL Paper 2 Q6(a)",
-    questionText: "[A] is a line segment. The point C (6, 11) divides the line segment [A] internally in the ratio 1: 3",
+    questionText: "[AB] is a line segment. The point C (6, 11) divides the line segment [AB] internally in the ratio 1 : 3. A is the point (1, 13). Find the co-ordinates of the point B.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q6-a-r1", kind: "anyN", verbatim: "Work of merit, for example, identifies one correct part of translation; some correct substitution into formula; relevant diagram with labelling", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, identifies one correct part of translation; some correct substitution into formula; relevant diagram with labelling","Initial translation correct\nFully correct substitution into formula\nTreats C as midpoint, otherwise correct.","Identifies trebling/quadrupling of initial translation\n6 = (xx₂ + 3)/4 and 11 = ,/4 yy₂ + 39 or equivalent\nx₂ correct or y₂ correct"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[38],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q6-a.png",
@@ -9441,16 +9633,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q6-b", topicId: "maths-2-2", conceptId: "perpendicular-distance-point-line",
     section: "B", questionRef: "2024 HL Paper 2 Q6(b)",
-    questionText: "Find the perpendicular distance from the point (5, −2) to the line: 4/3 xx − 11 y = 4 x−11",
+    questionText: "Find the perpendicular distance from the point (5, −2) to the line: y = (4/3)x − 11",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q6-b-r1", kind: "anyN", verbatim: "Work of merit in one step, for example, some correct transposition", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit –1: Apply a * if the modulus is omitted. Note: Consider the solution as having 3 steps: 1. Rewrite the equation in the form a + b + c = 0 2. Substitute into formula 3. Evaluate. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in one step, for example, some correct transposition","2 steps correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[38],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q6-b.png",
@@ -9471,21 +9676,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q6-c-i", topicId: "maths-2-2", conceptId: "how-many-different-pairs-points-can",
+    id: "maths-2024-hl-p2-q6-c-i", topicId: "maths-1-1", conceptId: "how-many-different-pairs-points-can",
     section: "B", questionRef: "2024 HL Paper 2 Q6(c)(i), (ii)",
-    questionText: "How many different pairs of points can be picked from these 16 points?",
+    stem: "In the co-ordinate diagram below, 16 points are marked with a dot (●). These are all of the points of the form (m, n), where m, n ∈ ℕ and m, n ≤ 4. A pair of these points is picked at random.",
+    questionText: "(i) How many different pairs of points can be picked from these 16 points? (ii) The two points that are picked are joined with a straight line. Find the probability that this line is horizontal.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p2-q6-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, in (i), uses 16 in calculation, or, in (ii), gets some number divided by 120 or 240, as appropriate; or draws horizontal lines joining given points on diagram", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Note: Accept solutions where pairs are considered unordered or ordered. Note that the answer in (c)(ii) should be the same regardless. If pairs are treated as ordered in one part and unordered in the other, award HPC at most. Note: Accept for full credit correct answers without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, in (i), uses 16 in calculation, or, in (ii), gets some number divided by 120 or 240, as appropriate; or draws horizontal lines joining given points on diagram","One part correct\nWork of merit in both parts. Note that WOM in the diagram can only count as WOM in one part","One part correct and work of merit in the other part"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[39],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q6-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q6-c-i.png",
           "srcHash": "e2b831a6cdc47bd6096cfe04d84042db",
-          "alt": "The question as printed on the paper — In the co-ordinate diagram below, 16 points are marked with a dot ( ). These are all of the points of the form (m, n), where m, n∈ℕ and m, n ≤ 4. y 4 3 2 1 x 0 0 1 2 3 4 A pair of these points is picked at random. How… Full card prompt: How many different pairs of points can be picked from these 16 points?",
+          "alt": "The question as printed on the paper — In the co-ordinate diagram below, 16 points are marked with a dot ( ). These are all of the points of the form (m, n), where m, n∈ℕ and m, n ≤ 4. y 4 3 2 1 x 0 0 1 2 3 4 A pair of these points is picked at random. How… Full card prompt: In the co-ordinate diagram below, 16 points are marked with a dot (●). These are all of the points of the form (m, n), where m, n ∈ ℕ and m, n ≤ 4. A pair of these points is picked at random. (i) How many different pairs of points can be picked from these 16 points? (ii) The two points that are picked are joined with a straight line. Find the probability that this line is horizontal.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9501,21 +9720,38 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q7-a-i", topicId: "maths-1-2", conceptId: "one-person-picked-random-people-who",
-    section: "B", questionRef: "2024 HL Paper 2 Q7(a)(i), (ii)",
-    questionText: "One person is picked at random from the people who stayed in a PK Hotel in 2023. Find the probability that this person is less than 50 years old",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    id: "maths-2024-hl-p2-q7-a-i", topicId: "maths-1-3", conceptId: "one-person-picked-random-people-who",
+    section: "B", questionRef: "2024 HL Paper 2 Q7(a)(i)",
+    stem: "PK Hotels is a hotel chain in Europe. The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48·2 years and a standard deviation of 10·6 years.",
+    questionText: "One person is picked at random from the people who stayed in a PK Hotel in 2023. Find the probability that this person is less than 50 years old.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-hl-p2-q7-a-i-r1", kind: "anyN", verbatim: "(a) (i) zz = (50 − 48·2)/10·6 = 0·1698", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Full Credit –1: Apply a * for incorrect or no rounding. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["(a) (i) zz = (50 − 48·2)/10·6 = 0·1698","P(z < 0·17) = 0∙5675 o 56·75%","(a)(ii)","Oldest 10% ∴90% less than ‘A’ years old","So, z = 1·28 (or 1·29)","1·28 = (AA − 48·2)/10·6","A = 61·768","Using z = 1·29, A = 61·874","A = 62 [nearest whole number]"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2024-hl-p2-q7-a-i-solution-1", kind: "point", verbatim: "P(z < 0·17) = 0·5675", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q7-a-i-solution-2", kind: "point", verbatim: "56·75%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q7-a-i-solution-3", kind: "point", verbatim: "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates μ or σ", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q7-a-i-solution-4", kind: "point", verbatim: "Finds z-score", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[40],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q7-a-i.png",
           "srcHash": "4a5ae995287b18d42a32e650dfd1f785",
-          "alt": "The question as printed on the paper — PK Hotels is a hotel chain in Europe. The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48∙2 years and a standard deviation of 10∙6 years. One person is picked… Full card prompt: One person is picked at random from the people who stayed in a PK Hotel in 2023. Find the probability that this person is less than 50 years old",
+          "alt": "The question as printed on the paper — PK Hotels is a hotel chain in Europe. The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48∙2 years and a standard deviation of 10∙6 years. One person is picked… Full card prompt: PK Hotels is a hotel chain in Europe. The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48·2 years and a standard deviation of 10·6 years. One person is picked at random from the people who stayed in a PK Hotel in 2023. Find the probability that this person is less than 50 years old.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9531,21 +9767,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q7-b-i", topicId: "maths-1-2", conceptId: "hotel-customers-picked-random-probability-exactly",
+    id: "maths-2024-hl-p2-q7-b-i", topicId: "maths-1-3", conceptId: "hotel-customers-picked-random-probability-exactly",
     section: "B", questionRef: "2024 HL Paper 2 Q7(b)(i)",
-    questionText: "6 of the PK Hotel customers are picked at random. Find the probability that exactly 2 of them used the pool",
+    stem: "PK Hotels is a hotel chain in Europe. During their most recent stay, 1/5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii).",
+    questionText: "6 of the PK Hotel customers are picked at random. Find the probability that exactly 2 of them used the pool.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q7-b-i-r1", kind: "anyN", verbatim: "WOM, for example, mentions 4/5 or (⁶ 2); or P(success) = 1/5", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: No penalty applies if answer is rounded to either 3 or 4 decimal places. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["WOM, for example, mentions 4/5 or (⁶ 2); or P(success) = 1/5","(⁶ 2) ( 1/5) 2 ( 4/5) 4\n( 1/5) 2 ( 4/5) 4 evaluated"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[40],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q7-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q7-b-i.png",
           "srcHash": "4ace3a3a7d8a297d3d89e9fc355022f3",
-          "alt": "The question as printed on the paper — PK Hotels is a hotel chain in Europe. 1 (b) During their most recent stay, 5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii). 6 of the PK Hotel customers are picked at random. Find the… Full card prompt: 6 of the PK Hotel customers are picked at random. Find the probability that exactly 2 of them used the pool",
+          "alt": "The question as printed on the paper — PK Hotels is a hotel chain in Europe. 1 (b) During their most recent stay, 5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii). 6 of the PK Hotel customers are picked at random. Find the… Full card prompt: PK Hotels is a hotel chain in Europe. During their most recent stay, 1/5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii). 6 of the PK Hotel customers are picked at random. Find the probability that exactly 2 of them used the pool.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9561,16 +9811,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q7-b-ii", topicId: "maths-1-2", conceptId: "hotel-customers-picked-random",
+    id: "maths-2024-hl-p2-q7-b-ii", topicId: "maths-1-3", conceptId: "hotel-customers-picked-random",
     section: "B", questionRef: "2024 HL Paper 2 Q7(b)(ii)",
-    questionText: "n of the PK Hotel customers are picked at random, where n∈ℕ",
+    stem: "PK Hotels is a hotel chain in Europe. During their most recent stay, 1/5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii).",
+    questionText: "n of the PK Hotel customers are picked at random, where n ∈ ℕ. The probability that none of them used the pool, correct to 4 decimal places, is 0·0047. Work out the value of n.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q7-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, mentions (ⁿ 0), ( 1/5) 0 or 4/5", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit -1: Apply a * for answer not rounded correctly. Note: Accept n = 24 if it is indicated that 0∙ 8²⁴ = 0∙ 0047 … for Full Credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, mentions (ⁿ 0), ( 1/5) 0 or 4/5","Fully correct equation"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[41],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q7-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q7-b-ii.png",
@@ -9591,21 +9856,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q7-c", topicId: "maths-1-2", conceptId: "hotels-testing-new-booking-system",
     section: "B", questionRef: "2024 HL Paper 2 Q7(c)",
-    questionText: "PK Hotels are testing a new booking system",
+    stem: "PK Hotels is a hotel chain in Europe.",
+    questionText: "PK Hotels are testing a new booking system. 45% of people who log on to the PK Hotels website are shown the old booking system; the other 55% are shown the new booking system. People are assigned the booking system (old or new) at random. One third of people who see the old booking system end up booking a room. Two fifths of people who see the new booking system end up booking a room. One person is selected at random from those who booked a room through the PK Hotels website. Find the probability that this person used the new booking system. Give your answer as a percentage, correct to the nearest percent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p2-q7-c-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct relevant multiplication\nTree diagram with some correct value(s)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Full Credit -1: Apply a * for answer not in correct form. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, one correct relevant multiplication\nTree diagram with some correct value(s)","37/100 or 11/50 (or equivalent)","37/100 and 11/50"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[41],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q7-c.png",
           "srcHash": "ff70a1103a638ef5b1839a6a461c9357",
-          "alt": "The question as printed on the paper — PK Hotels is a hotel chain in Europe. (c) PK Hotels are testing a new booking system. 45% of people who log on to the PK Hotels website are shown the old booking system; the other 55% are shown the new booking system.… Full card prompt: PK Hotels are testing a new booking system",
+          "alt": "The question as printed on the paper — PK Hotels is a hotel chain in Europe. (c) PK Hotels are testing a new booking system. 45% of people who log on to the PK Hotels website are shown the old booking system; the other 55% are shown the new booking system.… Full card prompt: PK Hotels is a hotel chain in Europe. PK Hotels are testing a new booking system. 45% of people who log on to the PK Hotels website are shown the old booking system; the other 55% are shown the new booking system. People are assigned the booking system (old or new) at random. One third of people who see the old booking system end up booking a room. Two fifths of people who see the new booking system end up booking a room. One person is selected at random from those who booked a room through the PK Hotels website. Find the probability that this person used the new booking system. Give your answer as a percentage, correct to the nearest percent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9621,21 +9900,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q7-d", topicId: "maths-1-2", conceptId: "2020-hotels-were-rated-best-hotel",
+    id: "maths-2024-hl-p2-q7-d", topicId: "maths-1-7", conceptId: "2020-hotels-were-rated-best-hotel",
     section: "B", questionRef: "2024 HL Paper 2 Q7(d)",
-    questionText: "In 2020, PK Hotels were rated the best hotel chain in Europe by 75% of their customers",
+    stem: "PK Hotels is a hotel chain in Europe.",
+    questionText: "In 2020, PK Hotels were rated the best hotel chain in Europe by 75% of their customers. In 2024, PK Hotels carried out a survey of a random sample of 1000 of their customers to see if this percentage had changed. Of these, 765 rated PK Hotels the best hotel chain in Europe. Carry out a hypothesis test at the 5% level of significance to see if this shows a change in the percentage of their customers who rate PK Hotels the best chain in Europe. State your null hypothesis and your alternative hypothesis, state your conclusion, and give a reason for your conclusion.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q7-d-r1", kind: "anyN", verbatim: "Work of merit in one step", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: 4 steps to check: 1. Hypotheses 2. Calculations 3. Conclusion 4. Reason Reason may be included with Calculations (or Conclusion), and must be based on relevant calculations – if either a confidence interval or test statistic is not found, a conclusion cannot be drawn If the null or alternative hypothesis is incorrect, then Step 1 is not considered correct. In this case, mark Steps 2 and 4 as if the null and alternative hypothesis had been given. However, Step 3 (conclusion) cannot be considered correct, so award Mid Partial Credit at most. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in one step","Two steps correct","Three steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[42],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q7-d",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q7-d.png",
           "srcHash": "3cf5ec8e721bef2d9ccfbdf29bb680bb",
-          "alt": "The question as printed on the paper — PK Hotels is a hotel chain in Europe. (d) In 2020, PK Hotels were rated the best hotel chain in Europe by 75% of their customers. In 2024, PK Hotels carried out a survey of a random sample of 1000 of their customers to… Full card prompt: In 2020, PK Hotels were rated the best hotel chain in Europe by 75% of their customers",
+          "alt": "The question as printed on the paper — PK Hotels is a hotel chain in Europe. (d) In 2020, PK Hotels were rated the best hotel chain in Europe by 75% of their customers. In 2024, PK Hotels carried out a survey of a random sample of 1000 of their customers to… Full card prompt: PK Hotels is a hotel chain in Europe. In 2020, PK Hotels were rated the best hotel chain in Europe by 75% of their customers. In 2024, PK Hotels carried out a survey of a random sample of 1000 of their customers to see if this percentage had changed. Of these, 765 rated PK Hotels the best hotel chain in Europe. Carry out a hypothesis test at the 5% level of significance to see if this shows a change in the percentage of their customers who rate PK Hotels the best chain in Europe. State your null hypothesis and your alternative hypothesis, state your conclusion, and give a reason for your conclusion.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9651,21 +9944,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q8-a", topicId: "maths-3-4", conceptId: "makes-open-metal-cylinder-height-radius",
     section: "B", questionRef: "2024 HL Paper 2 Q8(a)",
-    questionText: "He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle",
+    stem: "Tommy makes ornaments from metal and glass.",
+    questionText: "He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle. Find the dimensions of this rectangle. Give your answers in cm, correct to 1 decimal place where appropriate.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q8-a-r1", kind: "anyN", verbatim: "Work of merit in finding length, for example, circumference formula\nWidth correct\n2𝜋h = 150𝜋", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit-1: Apply a * if dimensions are not rounded correctly to one decimal place where appropriate. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit in finding length, for example, circumference formula\nWidth correct\n2𝜋h = 150𝜋","Width correct and work of merit in finding length"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[43],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q8-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-a.png",
           "srcHash": "c9d1e0b53bc002bd16381e348cdb4f60",
-          "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle. Find the dimensions of this rectangle. Give your answers… Full card prompt: He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle",
+          "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle. Find the dimensions of this rectangle. Give your answers… Full card prompt: Tommy makes ornaments from metal and glass. He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle. Find the dimensions of this rectangle. Give your answers in cm, correct to 1 decimal place where appropriate.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9681,21 +9988,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q8-b", topicId: "maths-3-4", conceptId: "tommy-makes-another-cylinder-height-diameter",
     section: "B", questionRef: "2024 HL Paper 2 Q8(b)",
-    questionText: "Tommy makes another cylinder with a height of 22 cm and a diameter of 12 cm",
+    stem: "Tommy makes ornaments from metal and glass.",
+    questionText: "Tommy makes another cylinder with a height of 22 cm and a diameter of 12 cm. This cylinder fits exactly inside a glass sphere. The top and bottom edges of the cylinder touch the sphere. Find the volume of the sphere, in cm³, correct to 1 decimal place. Use the Theorem of Pythagoras in your solution.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q8-b-r1", kind: "anyN", verbatim: "Work of merit, for example, radius of cylinder = 6cm", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: 4 steps: 1. Sets up Pythagoras 2. Finds r 3. Subs into volume formula 4. Evaluates volume. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, radius of cylinder = 6cm","2 steps correct\n1 step correct and work of merit in 2 other steps","3 steps correct"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[43],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q8-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-b.png",
           "srcHash": "23792c41b6c2e61c1dfa90d7fb92f46a",
-          "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. (b) Tommy makes another cylinder with a height of 22 cm and a diameter of 12 cm. This cylinder fits exactly inside a glass sphere. The top and bottom edges of the cylinder… Full card prompt: Tommy makes another cylinder with a height of 22 cm and a diameter of 12 cm",
+          "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. (b) Tommy makes another cylinder with a height of 22 cm and a diameter of 12 cm. This cylinder fits exactly inside a glass sphere. The top and bottom edges of the cylinder… Full card prompt: Tommy makes ornaments from metal and glass. Tommy makes another cylinder with a height of 22 cm and a diameter of 12 cm. This cylinder fits exactly inside a glass sphere. The top and bottom edges of the cylinder touch the sphere. Find the volume of the sphere, in cm³, correct to 1 decimal place. Use the Theorem of Pythagoras in your solution.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9711,21 +10032,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q8-c-i", topicId: "maths-3-4", conceptId: "diagram-symmetrical-about-line-state-why",
+    id: "maths-2024-hl-p2-q8-c-i", topicId: "maths-2-1", conceptId: "diagram-symmetrical-about-line-state-why",
     section: "B", questionRef: "2024 HL Paper 2 Q8(c)(i), (ii)",
-    questionText: "The diagram is symmetrical about the line D. State why |∠C| = 90°",
+    stem: "Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E.",
+    questionText: "(i) The diagram is symmetrical about the line DC. State why |∠CBD| = 90°. (ii) Hence, or otherwise, prove that the triangles BCE and DBE are similar. Give a reason for each statement that you make, where appropriate.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 8, 11, 13, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "maths-2024-hl-p2-q8-c-i-r1", kind: "anyN", verbatim: "Part (i) correct\nWork of merit in part (ii), for example, identifies 2 equal angles", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 8, two parts for 11, three parts for 13. The full scale runs to 20. Note: Much of the work for (ii) may be presented on the diagram. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":8,"options":["Part (i) correct\nWork of merit in part (ii), for example, identifies 2 equal angles","Part (i) correct and one pair of corresponding angles in triangles B and D identified in Part (ii)\nTwo pairs of corresponding angles in triangles B and D identified in Part (ii)","(ii) correct (with justification for |∠E| = |∠D| o |∠C| = |∠E|)\n(i) correct and two pairs of corresponding angles in triangles B and D identified in Part (ii)"],"perOptionSteps":[8,3,9]} },
     ],
+    mathematicsScale: {"code":"20D","marks":[0,8,11,13,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[44],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q8-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-c-i.png",
           "srcHash": "34b0f196799057ad3976512c8e8d0725",
-          "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section… Full card prompt: The diagram is symmetrical about the line D. State why |∠C| = 90°",
+          "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section… Full card prompt: Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E. (i) The diagram is symmetrical about the line DC. State why |∠CBD| = 90°. (ii) Hence, or otherwise, prove that the triangles BCE and DBE are similar. Give a reason for each statement that you make, where appropriate.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9741,21 +10076,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q8-c-iii", topicId: "maths-3-4", conceptId: "iii-top-cone-has-radius-height",
+    id: "maths-2024-hl-p2-q8-c-iii", topicId: "maths-2-1", conceptId: "iii-top-cone-has-radius-height",
     section: "B", questionRef: "2024 HL Paper 2 Q8(c)(iii)",
-    questionText: "(iii) The top cone has a radius of r and a height of h; that is, |E| = r and |E| = h. The sphere, represented by s, has a radius of 10 cm",
+    stem: "Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E.",
+    questionText: "The top cone has a radius of r and a height of h; that is, |EB| = r and |EC| = h. The sphere, represented by s, has a radius of 10 cm. Use the similar triangles BCE and DBE to show that: r² = 20h − h²",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q8-c-iii-r1", kind: "anyN", verbatim: "Work of merit in setting up ratio, for example |E| = 20 −h", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit –1: r² = h(20 −h). Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in setting up ratio, for example |E| = 20 −h","rr/(20−h) = h/rr"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[44],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q8-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-c-iii.png",
           "srcHash": "fdba8f00a9ea36cd0958b187c2107668",
-          "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section… Full card prompt: (iii) The top cone has a radius of r and a height of h; that is, |E| = r and |E| = h. The sphere, represented by s, has a radius of 10 cm",
+          "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section… Full card prompt: Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E. The top cone has a radius of r and a height of h; that is, |EB| = r and |EC| = h. The sphere, represented by s, has a radius of 10 cm. Use the similar triangles BCE and DBE to show that: r² = 20h − h²",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9771,21 +10121,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q8-c-iv", topicId: "maths-5-2", conceptId: "write-volume-top-cone-terms-value",
     section: "B", questionRef: "2024 HL Paper 2 Q8(c)(iv)",
-    questionText: "(iv) Hence, write the volume of the top cone in terms of h and 𝜋, and find the value of h that gives the maximum volume for the top cone",
+    stem: "Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E. The top cone has a radius of r and a height of h; that is, |EB| = r and |EC| = h. The sphere, represented by s, has a radius of 10 cm. Part (c)(iii) shows that r² = 20h − h².",
+    questionText: "Hence, write the volume of the top cone in terms of h and π, and find the value of h that gives the maximum volume for the top cone.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q8-c-iv-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct differentiation or substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Consider solution involving 3 steps: 1: Express V in terms of 𝜋 and h 2: Find dddd/ddh 3: Solve for h, when dddd/ddh = 0. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some correct differentiation or substitution","2 steps correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[44,45],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q8-c-iv",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-c-iv.png",
           "srcHash": "45431013f8d3f6c79ba05b0bf406a8b2",
-          "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section… Full card prompt: (iv) Hence, write the volume of the top cone in terms of h and 𝜋, and find the value of h that gives the maximum volume for the top cone",
+          "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section… Full card prompt: Tommy makes ornaments from metal and glass. Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of the sphere, shows the cones as two triangles, ABC and ADB, with a common side [AB]. ABC is the top cone. The points A, B, C, and D all lie on the circle s, which represents the cross-section of the sphere. The lines AB and CD intersect at the point E. The top cone has a radius of r and a height of h; that is, |EB| = r and |EC| = h. The sphere, represented by s, has a radius of 10 cm. Part (c)(iii) shows that r² = 20h − h². Hence, write the volume of the top cone in terms of h and π, and find the value of h that gives the maximum volume for the top cone.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -9801,16 +10166,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-a-i", topicId: "maths-2-2", conceptId: "write-down-equation-circle",
     section: "B", questionRef: "2024 HL Paper 2 Q9(a)(i)",
-    questionText: "Write down the equation of the circle s",
+    stem: "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12.",
+    questionText: "Write down the equation of the circle s.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into equation of circle; or indication of radius on the diagram", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, some correct substitution into equation of circle; or indication of radius on the diagram"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[46],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q9-a-i.png",
@@ -9831,16 +10210,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q9-a-ii", topicId: "maths-3-2", conceptId: "ameena-point-stream-circle-work-out",
+    id: "maths-2024-hl-p2-q9-a-ii", topicId: "maths-2-2", conceptId: "ameena-point-stream-circle-work-out",
     section: "B", questionRef: "2024 HL Paper 2 Q9(a)(ii)",
-    questionText: "Ameena is at the point (a, 8) on the stream (circle s), where a∈ℝ, a > 0. Work out the value of a. Give your answer in surd form",
+    stem: "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12.",
+    questionText: "Ameena is at the point (a, 8) on the stream (circle s), where a ∈ ℝ, a > 0. Work out the value of a. Give your answer in surd form.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q9-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into equation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit-1: Apply a * if 1 −√63 is also presented as a solution. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct substitution into equation","a² −2a−62 = 0\n(a−1)² = 63"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[46],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q9-a-ii.png",
@@ -9861,16 +10255,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-a-iii", topicId: "maths-2-2", conceptId: "iii-petro-point-work-out-shortest",
     section: "B", questionRef: "2024 HL Paper 2 Q9(a)(iii)",
-    questionText: "(iii) Petro is at the point P(10, 6). Work out the shortest distance from the point P to the stream (circle s)",
+    stem: "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12.",
+    questionText: "Petro is at the point P(10, 6). Work out the shortest distance from the point P to the stream (circle s). Give your answer correct to the nearest metre. Remember that each unit on the diagram represents 100 metres.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q9-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into distance/perpendicular distance formula; finds slope of C;", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some correct substitution into distance/perpendicular distance formula; finds slope of C;","|P| −radius = √202 −12 or equivalent F C−1\nApply a * for no rounding or incorrect rounding"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[46],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q9-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q9-a-iii.png",
@@ -9891,16 +10300,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-b", topicId: "maths-2-2", conceptId: "there-straight-path-not-shown-diagram",
     section: "B", questionRef: "2024 HL Paper 2 Q9(b)",
-    questionText: "There is a straight path, l, that is not shown on the diagram. l is parallel to the y-axis, and is a tangent to the stream s in the first quadrant",
+    stem: "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The arc in the diagram represents part of a stream. The arc is part of a circle s with centre C(1, 17) and radius 12.",
+    questionText: "There is a straight path, l, that is not shown on the diagram. l is parallel to the y-axis, and is a tangent to the stream s in the first quadrant. Write down the equation of this path l. Remember that the radius of s is 12.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q9-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some indication that equation is of form x = constant, or draws in relevant tangent or normal", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, some indication that equation is of form x = constant, or draws in relevant tangent or normal"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[46],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q9-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q9-b.png",
@@ -9921,16 +10344,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-c", topicId: "maths-2-2", conceptId: "ordinates-point-road-closest-point-might",
     section: "B", questionRef: "2024 HL Paper 2 Q9(c)",
-    questionText: "Find the co-ordinates of the point on the road w that is closest to the point P(10, 6). It might be useful to find the equation of the line through P that is perpendicular to w",
+    stem: "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The line segment w represents a road, where w has the equation: x − 3y = 9 for 0 ≤ y ≤ 8.",
+    questionText: "Find the co-ordinates of the point on the road w that is closest to the point P(10, 6). It might be useful to find the equation of the line through P that is perpendicular to w.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q9-c-r1", kind: "anyN", verbatim: "Work of merit, for example, −3y = −x + 9", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Consider the solution involving 5 steps: 1. Find the slope of w 2. Find the perpendicular slope 3. Find the equation of the line through P that is perpendicular to w 4. Find one co-ordinate of the point of intersection of the two lines 5. Find the other co-ordinate of the point of intersection of the two lines. Note: w: x−3y = 9, therefore eq. of ⊥ l i 3x + y + c = 0 (Step 1 & Step 2). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, −3y = −x + 9","2 steps correct and work of merit in another step","4 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[47],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q9-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q9-c.png",
@@ -9951,16 +10388,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q9-d", topicId: "maths-2-2", conceptId: "fiadh-point-road",
     section: "B", questionRef: "2024 HL Paper 2 Q9(d)",
-    questionText: "Fiadh is at the point F(9, 0) on the road w",
+    stem: "Ameena, Petro, and Fiadh are taking part in an adventure race. The co-ordinate diagram below shows part of the course for this race. Each unit on the diagram represents 100 metres. The line segment w represents a road, where w has the equation: x − 3y = 9 for 0 ≤ y ≤ 8.",
+    questionText: "Fiadh is at the point F(9, 0) on the road w. She travels 1200 m along the road w away from the point F, in the first quadrant, and then stops. Work out the co-ordinates of the point at which she stops. Give each value correct to 1 decimal place. Remember that each unit on the diagram represents 100 metres.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-hl-p2-q9-d-r1", kind: "anyN", verbatim: "Work of merit in identifying inputs for Pythagoras; slope of ww = 1/3; 1200m = 12 units", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Full Credit-1: Apply a * for no rounding or incorrect rounding, once only. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in identifying inputs for Pythagoras; slope of ww = 1/3; 1200m = 12 units","y² + (3y)² = (12)² or equivalent\nFinds angle between line w and the positive direction of the x−a","Finds x or y value"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[48],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24,
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q9-d",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q9-d.png",
@@ -9981,16 +10433,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q10-a-i", topicId: "maths-2-3", conceptId: "120",
+    id: "maths-2024-hl-p2-q10-a-i", topicId: "maths-2-1", conceptId: "120",
     section: "B", questionRef: "2024 HL Paper 2 Q10(a)(i)",
-    questionText: "Show that |O| = 120 cm",
+    stem: "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm. In the diagram below, the line segment [AB] shows a type of wiper blade. [AB] rotates around the point O, where O ∈ AB, until it reaches the position [A′B′]. The region that it cleans is ABB′A′, which is the sector OBB′ with the sector OAA′ removed. A, A′, B, and B′ lie on the rectangle PQRS, and N lies on the arc from B to B′. The line segment [RQ] is extended 20 cm to T, as shown. ∠OTR is a right angle.",
+    questionText: "Show that |OB| = 120 cm.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-hl-p2-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, states|O| = |O|", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, states|O| = |O|"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[49],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q10-a-i.png",
@@ -10011,16 +10477,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q10-a-ii", topicId: "maths-2-3", conceptId: "correct-decimal-place",
     section: "B", questionRef: "2024 HL Paper 2 Q10(a)(ii)",
-    questionText: "Hence, show that |∠B| = 41∙4°, correct to 1 decimal place",
+    stem: "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm. In the diagram below, the line segment [AB] shows a type of wiper blade. [AB] rotates around the point O, where O ∈ AB, until it reaches the position [A′B′]. The region that it cleans is ABB′A′, which is the sector OBB′ with the sector OAA′ removed. A, A′, B, and B′ lie on the rectangle PQRS, and N lies on the arc from B to B′. The line segment [RQ] is extended 20 cm to T, as shown. ∠OTR is a right angle.",
+    questionText: "Hence, show that |∠BOT| = 41·4°, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q10-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into a trigonometric ratio", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some correct substitution into a trigonometric ratio","cos ∠BBBBBB = 90/120 or equivalent"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[49],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q10-a-ii.png",
@@ -10041,16 +10522,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q10-a-iii", topicId: "maths-3-4", conceptId: "iii-work-out-area",
     section: "B", questionRef: "2024 HL Paper 2 Q10(a)(iii)",
-    questionText: "(iii) Hence, work out the area of A′A′",
+    stem: "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm. In the diagram below, the line segment [AB] shows a type of wiper blade. [AB] rotates around the point O, where O ∈ AB, until it reaches the position [A′B′]. The region that it cleans is ABB′A′, which is the sector OBB′ with the sector OAA′ removed. A, A′, B, and B′ lie on the rectangle PQRS, and N lies on the arc from B to B′. The line segment [RQ] is extended 20 cm to T, as shown. ∠OTR is a right angle.",
+    questionText: "Hence, work out the area of ABB′A′. Remember that ABB′A′ is the sector OBB′ with the sector OAA′ removed. Give your answer correct to the nearest cm².",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q10-a-iii-r1", kind: "anyN", verbatim: "Work of merit in one step, for example, finds |∠A|", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Consider solution as involving 4 steps: 1: Finds |O| 2: Finds |∠B′| 3: Finds area of one sector (either B′ or A′) 4: Finds area of second sector and finishes. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in one step, for example, finds |∠A|","One step correct and work of merit in another step","Three steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[49],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q10-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q10-a-iii.png",
@@ -10071,16 +10567,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
     id: "maths-2024-hl-p2-q10-b", topicId: "maths-2-3", conceptId: "moving-point-along-line-changes-size",
     section: "B", questionRef: "2024 HL Paper 2 Q10(b)",
-    questionText: "Moving the point O along the line N changes the size of the wiper blade and the region that it cleans. In the diagram below, [D] rotates about O, where O∈D, until it reaches [D′E′]. As in part (a), E and E′ lie on the rectangle P",
+    stem: "A company makes windscreen wipers. In this question, the rectangle PQRS has a width of 180 cm and a height of 100 cm. M is the midpoint of [PQ], N is the midpoint of [SR], and O ∈ NM. All lengths are given in cm.",
+    questionText: "Moving the point O along the line NM changes the size of the wiper blade and the region that it cleans. In the diagram below, [DE] rotates about O, where O ∈ DE, until it reaches [D′E′]. As in part (a), E and E′ lie on the rectangle PQRS. Here, |∠E′OE| = 105°. By setting |OE| = x, use the triangle OEE′ and the Cosine Rule to find the value of |OE|. Give your answer in cm, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into Cosine Rule, or correctly indicates x on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Consider solution as involving 3 steps: Method 1: 1. Substitutes into Cosine Rule 2. Isolates x² 3. Evaluates x OR Method 2: 1. Finds angle 37.5° 2. Substitutes into Cosine Rule 3. Evaluates x. Note: Award Mid Partial Credit at most if the Cosine Rule is not used to find x. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct substitution into Cosine Rule, or correctly indicates x on the diagram","1 step correct","2 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[50],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q10-b.png",
@@ -10101,16 +10611,32 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q10-c-i", topicId: "maths-2-3", conceptId: "how-many-different-patterns-could-five",
+    id: "maths-2024-hl-p2-q10-c-i", topicId: "maths-1-1", conceptId: "how-many-different-patterns-could-five",
     section: "B", questionRef: "2024 HL Paper 2 Q10(c)(i)",
+    stem: "Mattie is driving home. On the way, she passes five traffic lights. Each traffic light is either red (R), green (G), or orange (O) when she arrives at it. One day, she notes the pattern made by the colour of each traffic light when she arrives at it. For example, this pattern could be R R O G R.",
     questionText: "How many different patterns could the five traffic lights make?",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-hl-p2-q10-c-i-r1", kind: "anyN", verbatim: "(i) 3⁵ = 243", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Note: Accept correct answer without work • Work of merit, for example, lists some correct patterns. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["(i) 3⁵ = 243","(c)(i)","Mathematics – Higher Level"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-hl-p2-q10-c-i-solution-1", kind: "point", verbatim: "3⁵ = 243", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q10-c-i-solution-2", kind: "point", verbatim: "Accept correct answer without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q10-c-i-solution-3", kind: "point", verbatim: "Work of merit, for example, lists some correct patterns", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[50],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q10-c-i.png",
@@ -10131,16 +10657,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q10-c-ii", topicId: "maths-2-3", conceptId: "how-many-different-patterns-could-five",
+    id: "maths-2024-hl-p2-q10-c-ii", topicId: "maths-1-1", conceptId: "how-many-different-patterns-could-five",
     section: "B", questionRef: "2024 HL Paper 2 Q10(c)(ii), (iii)",
-    questionText: "How many different patterns could the five traffic lights make, if the first light is red and the fifth light is not red?",
+    stem: "Mattie is driving home. On the way, she passes five traffic lights. Each traffic light is either red (R), green (G), or orange (O) when she arrives at it. One day, she notes the pattern made by the colour of each traffic light when she arrives at it. For example, this pattern could be R R O G R.",
+    questionText: "(ii) How many different patterns could the five traffic lights make, if the first light is red and the fifth light is not red? (iii) How many different patterns could the five traffic lights make if no two consecutive lights are the same colour?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-hl-p2-q10-c-ii-r1", kind: "anyN", verbatim: "Work of merit in one part, for example, lists some correct patterns", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer(s) without work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in one part, for example, lists some correct patterns","One part correct\nWork of merit in both parts","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[51],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q10-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q10-c-ii.png",
@@ -16240,6 +16780,39 @@ export const CARDS: SecCard[] = [
                 19
           ],
           "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2024, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-q7-a-ii", topicId: "maths-1-3", conceptId: "p2-q7-a-ii",
+    section: "B", questionRef: "2024 HL Paper 2 Q7(a)(ii)",
+    stem: "PK Hotels is a hotel chain in Europe. The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48·2 years and a standard deviation of 10·6 years.",
+    questionText: "Exactly 10% of people who stayed in a PK Hotel in 2023 are at least A years old. Find the value of A, correct to the nearest whole number.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p2-q7-a-ii-solution-1", kind: "point", verbatim: "A = 62 [nearest whole number]", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q7-a-ii-solution-2", kind: "point", verbatim: "Oldest 10% ∴ 90% less than ‘A’ years old", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q7-a-ii-solution-3", kind: "point", verbatim: "Finds z-value", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q7-a-ii-solution-4", kind: "point", verbatim: "Writes equation in A", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q7-a-ii-solution-5", kind: "point", verbatim: "Finds value of A", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q7-a-ii-solution-6", kind: "point", verbatim: "Work of merit, for example, mentions 90%, or finds z-value of 10%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-hl-p2-q7-a-ii-solution-7", kind: "point", verbatim: "Apply a * for incorrect or no rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[40],"generalNotesPages":[30,31]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2024 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
