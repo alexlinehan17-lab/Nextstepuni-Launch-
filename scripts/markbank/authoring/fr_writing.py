@@ -28,6 +28,57 @@ def assert_on_page(text, doc, page):
     assert norm(text) in norm(doc[page - 1].get_text()), (page, text)
 
 
+HYPHENS = str.maketrans({'\u2010': '-', '\u2011': '-'})
+
+
+def compact(text):
+    """Whitespace removed and hyphen glyphs unified; every other character kept."""
+    return re.sub(r'\s+', '', text).translate(HYPHENS)
+
+
+def assert_exact(text, doc, pages, left=None):
+    """Lift, never write: the entry must be the page's own characters."""
+    for page in pages:
+        pg = doc[page - 1]
+        clip = fitz.Rect(left, 0, pg.rect.width, pg.rect.height) if left else None
+        if compact(text) in compact(pg.get_text(clip=clip)):
+            return
+    raise AssertionError(('not printed verbatim', pages, text))
+
+
+def lift(descriptors, doc, page):
+    """Each grid descriptor as that scheme page prints it.
+
+    The shared lists only name the descriptors. The words are matched in order
+    where a printed line begins (after any bullet glyph, dash or band range, but
+    never after another word, so "Mistakes in register" cannot match inside
+    "Few mistakes in register"), and the card keeps the page's own
+    capitalisation and internal punctuation: 2017 Higher prints "idiomatic
+    French", 2013 Ordinary prints "Most words misspelt".
+    """
+    text, starts = '', set()
+    for line in doc[page - 1].get_text().splitlines():
+        line = ' '.join(line.split())
+        if not line:
+            continue
+        if text:
+            text += ' '
+        starts.add(len(text))
+        text += line
+    lifted = []
+    for descriptor in descriptors:
+        words = re.findall(r'\w+', descriptor)
+        pattern = re.compile(r'(?<!\w)' + r'\W+'.join(map(re.escape, words)) + r'(?!\w)', re.I)
+        found = set()
+        for m in pattern.finditer(text):
+            line_start = max(start for start in starts if start <= m.start())
+            if not re.search(r'[^\W\d_]', text[line_start:m.start()]):
+                found.add(m.group(0))
+        assert len(found) == 1, (page, descriptor, found)
+        lifted.append(found.pop())
+    return lifted
+
+
 def criterion(id, label, maximum, guidance, bands=None, allowed=None):
     return dict(id=id, label=label, maxMarks=maximum,
                 permittedMarks=allowed or list(range(maximum + 1)), guidance=guidance,
@@ -193,6 +244,8 @@ def build_year(config):
     for notes in COMMUNICATION + HL_LANGUAGE:
         for note in notes:
             assert_on_page(note, scheme_hl, config['hlGridPage'])
+    hl_communication = [lift(notes, scheme_hl, config['hlGridPage']) for notes in COMMUNICATION]
+    hl_language = [lift(notes, scheme_hl, config['hlGridPage']) for notes in HL_LANGUAGE]
     for q, letter, prompt, page in paper.section_b_asks():
         parent = f'B{q}{(letter or "").upper()}'
         task_grid = config.get('hlTaskGrids', {}).get(parent, {})
@@ -215,9 +268,13 @@ def build_year(config):
         if q == 3 and YEAR == 2026:
             prompt = prompt.replace(' - Comment', '\n- Comment').replace(' - Avez', '\n- Avez')
         word_count = 90 if q == 1 else 75
-        prompt += f'\n({word_count} mots environ)'
-        criteria = [criterion('communication', 'Communication', maximum, [], bands(ranges, COMMUNICATION)),
-                    criterion('language', 'Language', maximum, [], bands(ranges, HL_LANGUAGE))]
+        # The paper's own word-count line: a task printed in English (2013,
+        # 2016, 2018, 2020 Q2(b)) ends "(about 75 words)", not the French line.
+        count_line = config.get('hlWordCountLines', {}).get(parent, f'({word_count} mots environ)')
+        assert_exact(count_line, hl_doc, [page])
+        prompt += '\n' + count_line
+        criteria = [criterion('communication', 'Communication', maximum, [], bands(ranges, hl_communication)),
+                    criterion('language', 'Language', maximum, [], bands(ranges, hl_language))]
         if task_grid.get('formatMarks'):
             assert_on_page('Formule', scheme_hl, config['hlGridPage'] - 1)
             criteria.insert(0, criterion('format', 'Formule · letter format', task_grid['formatMarks'],
@@ -252,22 +309,29 @@ def build_year(config):
     format_notes = config['formatNotes']
     for note in format_notes['top'] + format_notes['close'] + format_notes['deductions']:
         assert any(norm(note) in norm(scheme_ol[p - 1].get_text()) for p in format_pages), note
+        assert_exact(note, scheme_ol, format_pages)
     for notes in ol_language:
         for note in notes:
             assert_on_page(note, scheme_ol, config['olLanguagePage'])
+    ol_language_names = ol_language
+    ol_language = [lift(notes, scheme_ol, config['olLanguagePage']) for notes in ol_language_names]
     form_stem = config['form_stem']
     assert_on_page(form_stem, doc, config['formPage'])
+    assert_exact(form_stem, doc, [config['formPage']])
     fields = config['fields']
     answers = config['answers']
     for number, (field, answer) in enumerate(zip(fields, answers), 1):
         assert_on_page(field, doc, config['formPage'])
         assert_on_page(answer, scheme_ol, config['formSchemePage'])
+        assert_exact(field, doc, [config['formPage']])
+        assert_exact(answer, scheme_ol, [config['formSchemePage']])
         add('ordinary', f'B1B-field-{number}', 'B1B', f'{form_stem}\n\n{number}. {field} :', config['formPage'], config['formSchemePage'],
             [criterion('answer', field, 2, [answer], allowed=config.get('fieldAllowed', {}).get(str(number), [0, 2]))])
     form_questions = config['form_questions']
     assert len(fields) == len(answers) == 5 and len(form_questions) == 4
     for prompt in form_questions:
         assert_on_page(prompt, doc, config['formPage'])
+        assert_exact(prompt, doc, [config['formPage']])
     # 2012 prints the form's tense N.B. at the top of the following scheme page.
     form_notes = communication_notes(config, scheme_ol, config.get('formNotePage', config['formSchemePage']))
     # A scheme may price one form sentence with its own condition (2012 Q7:
@@ -304,10 +368,11 @@ def build_year(config):
             source_text = norm(scheme_ol[language_override['page'] - 1].get_text())
             for descriptor in omitted:
                 assert norm(descriptor) not in source_text, (YEAR, parent, descriptor)
-            task_language = [[note for note in notes if note not in omitted] for notes in ol_language]
-            for notes in task_language:
+            task_names = [[note for note in notes if note not in omitted] for notes in ol_language_names]
+            for notes in task_names:
                 for note in notes:
                     assert_on_page(note, scheme_ol, language_override['page'])
+            task_language = [lift(notes, scheme_ol, language_override['page']) for notes in task_names]
         # Check the English column separately: text extraction of the whole
         # bilingual page interleaves Irish and English in some SEC editions.
         clip_text = doc[page-1].get_text(clip=fitz.Rect(290, 0, doc[page-1].rect.width, doc[page-1].rect.height))
@@ -315,10 +380,19 @@ def build_year(config):
         assert len(points) in [3, 5]
         if len(points) == 5:
             assert 'three' in clip_text.lower()
+        assert_exact(stem, doc, [page], 290)
         for point, answer in zip(points, answers):
             assert point.strip() and answer.strip(), (YEAR, parent)
             assert norm(point) in norm(clip_text), (parent, point)
             assert_on_page(answer, scheme_ol, scheme_page)
+            assert_exact(point, doc, [page], 290)
+            assert_exact(answer, scheme_ol, [scheme_page])
+        if parent == 'B3A':
+            # Each year's own diary instruction, e.g. "Note the following in your
+            # diary:" (2012–2016) or "Note three of the following five points in
+            # French in your diary:" (2021–2026).
+            diary_instruction = config['diaryInstruction']
+            assert_exact(diary_instruction, doc, [page], 290)
         for chosen in combinations(range(len(points)), 3):
             suffix = ''.join(str(i+1) for i in chosen)
             maximum = 4 if parent == 'B3B' else 5
@@ -336,11 +410,12 @@ def build_year(config):
             if parent == 'B3B':
                 lang['requiresAttempt'] = True
             criteria.append(lang)
-            context = stem + ('\nNote the selected points in French in your diary.' if parent == 'B3A' else '')
+            context = stem + (' ' + diary_instruction if parent == 'B3A' else '')
             context += '\n\n' + '\n'.join(f'• {points[i]}' for i in chosen)
             if parent == 'B3B':
                 context += '\n\n' + config['letterIdentity']
                 assert norm(config['letterIdentity']) in norm(clip_text)
+                assert_exact(config['letterIdentity'], doc, [page], 290)
             add('ordinary', f'{parent}-route-{suffix}', parent, context, page, scheme_page, criteria,
                 ['Write in French and include all three required points.' if len(points) == 3 else 'Write in French and include all three points selected for this practice route.',
                  'No marks for layout.' if parent != 'B3B' else 'Use the formal letter layout and the supplied addresses.'])
