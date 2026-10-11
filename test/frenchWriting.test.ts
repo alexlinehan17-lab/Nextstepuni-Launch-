@@ -16,12 +16,12 @@ import { frenchMarks, frenchScoreId, FRENCH_ATTEMPT_ID } from '../components/Mar
 const deck = [...higher, ...ordinary];
 const correctedReadingIds = new Set(readingReview.papers.flatMap(paper => Object.values(paper.preservedCardIds ?? {})));
 
-describe('reviewed 2011–2026 French writing tasks', () => {
-  it('adds all 522 reviewed units while preserving the 260 existing identities', () => {
-    expect(cards).toHaveLength(522);
-    expect(cards.filter(card => card.level === 'higher')).toHaveLength(128);
-    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(394);
-    expect(deck).toHaveLength(2326);
+describe('reviewed 2010–2026 French writing tasks', () => {
+  it('adds all 540 reviewed units while preserving the 260 existing identities', () => {
+    expect(cards).toHaveLength(540);
+    expect(cards.filter(card => card.level === 'higher')).toHaveLength(136);
+    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(404);
+    expect(deck).toHaveLength(2354);
     expect(new Set(deck.map(card => card.id)).size).toBe(deck.length);
     for (const old of legacy) {
       const live = deck.find(card => card.id === old.id)!;
@@ -98,7 +98,7 @@ describe('reviewed 2011–2026 French writing tasks', () => {
   });
 
   it('lifts each year’s printed communication tariff line rather than one shared paraphrase', () => {
-    // 2011–2021 schemes print "Two points" on every task; from 2022 the message and
+    // 2010–2021 schemes print "Two points" on every task; from 2022 the message and
     // postcard (B2A/B2B) print "Two parts" while the diary and letter keep "Two points".
     const seen = new Map<string, number>();
     for (const card of cards.filter(card => /-writing-b[23][ab]-route-/.test(card.id))) {
@@ -110,7 +110,7 @@ describe('reviewed 2011–2026 French writing tasks', () => {
         seen.set(word, (seen.get(word) ?? 0) + 1);
       }
     }
-    expect(Object.fromEntries(seen)).toEqual({ points: 540, parts: 300 });
+    expect(Object.fromEntries(seen)).toEqual({ points: 552, parts: 300 });
   });
 
   it('keeps the 2015 email, boxed quotation and task-specific language descriptors', () => {
@@ -140,10 +140,10 @@ describe('reviewed 2011–2026 French writing tasks', () => {
   });
 
   it('reproduces each year’s printed wording: word-count line, diary instruction, grid case and letter notes', () => {
-    for (const year of [2011, 2013, 2016, 2018, 2020]) {
+    for (const year of [2010, 2011, 2013, 2016, 2018, 2020]) {
       expect(cards.find(card => card.id === `fr-${year}-hl-writing-b2b`)!.questionText.endsWith('\n(about 75 words)')).toBe(true);
     }
-    expect(cards.filter(card => card.questionText.includes('(about 75 words)'))).toHaveLength(5);
+    expect(cards.filter(card => card.questionText.includes('(about 75 words)'))).toHaveLength(6);
     for (const card of cards.filter(card => card.id.includes('-ol-writing-b3a-route-'))) {
       const instruction = card.year >= 2021 ? 'Note three of the following five points in French in your diary:'
         : card.year >= 2017 ? 'Note the following in French in your diary:' : 'Note the following in your diary:';
@@ -158,6 +158,26 @@ describe('reviewed 2011–2026 French writing tasks', () => {
     expect(byId('fr-2015-ol-writing-b3b-route-123').rubric.criteria[0].guidance).toContain('Include “Irlande”. Accept “Ireland” / “Éire”.');
     expect(byId('fr-2026-ol-writing-b3b-route-123').rubric.criteria[0].guidance).toContain('Include Irlande, accept “Ireland” / “Éire”.');
     expect(byId('fr-2017-ol-writing-b2a-route-123').rubric.criteria[0].guidance[0]).toBe('You have a toothache / and you can’t eat');
+  });
+
+  it('keeps the 2010 page-specific tense note, form condition and cartoon board text', () => {
+    const group = cards.filter(card => card.year === 2010);
+    expect(group).toHaveLength(18);
+    const message = group.find(card => card.id === 'fr-2010-ol-writing-b2a-route-123')!;
+    // Scheme p11 prints "NB." where pp.9 and 12-14 print "N.B.".
+    expect(message.rubric.criteria[0].guidance).toContain('NB. Correct tense required for full marks in Communication.');
+    expect(group.find(card => card.id === 'fr-2010-ol-writing-b2b-route-123')!.rubric.criteria[0].guidance)
+      .toContain('N.B. Correct tense required for full marks in Communication.');
+    const form = group.find(card => card.id === 'fr-2010-ol-writing-b1b-route-6789')!;
+    expect(form.rubric.criteria.find(c => c.id === 'communication-7')?.guidance).toContain('Two or more subjects required for full marks');
+    const cartoon = group.find(card => card.id === 'fr-2010-hl-writing-b3a')!;
+    expect(cartoon.questionText).toContain('Le « fast food » fait partie du style de vie');
+    expect(cartoon.questionText).not.toContain('HAMBURGER');
+    expect(cartoon.sourceMaterial?.kind).toBe('source-illustration');
+    expect(group.find(card => card.id === 'fr-2010-hl-writing-b1a')!.additionalSourceMaterials?.[0].pages).toEqual([2, 3]);
+    const letter = group.find(card => card.id === 'fr-2010-ol-writing-b3b-route-123')!;
+    expect(letter.rubric.criteria.find(c => c.id === 'format-top')?.guidance)
+      .toContain('Name and address of sender in top left corner – with name on first line, number & street on second line, etc.');
   });
 
   it('verifies the tiled 2011 Higher prompts against their rebuilt words and keeps the form conditions', () => {
