@@ -1,0 +1,3523 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2026,
+  "level": "ordinary",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "reviewedAt": "2026-10-11T21:31:21.525990+00:00",
+  "authoringReview": "scripts/markbank/authored/construction-studies-2026-ordinary-reviewed.json",
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2026/LC029GLP000EV.pdf": "3c68a9431babde5a5ba814a72fdd790ffbe44fbc3e00444dc37867e20a3003c6",
+    "paper-trail-corpus/markingschemes/2026/LC029GLP000EV.pdf": "4d5b0f5d024e248e2d1398ceb6641d3800f1c880bf01a1327977d648637a0011"
+  },
+  "expectedRuntimeCards": 166,
+  "reason": "2026 Ordinary main English theory: all nine printed questions and 166 source-reviewed tasks, including all 126 Q8 choose-five routes. Joinery/tools nodes without an Ordinary reference heading are declared in taxonomyGaps. Practical/Irish/other papers remain open.",
+  "questions": [
+    {
+      "n": "1",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-question-one-drawing-questions"
+      ]
+    },
+    {
+      "n": "2",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "n": "3",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-drainage",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "n": "4",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "n": "5",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-windows-doors"
+      ]
+    },
+    {
+      "n": "6",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "n": "7",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "n": "8",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "n": "9",
+      "fileid": "LC029GLP000EV.pdf",
+      "topicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "cardId": "cons-2026-ol-q1-a",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-2-4",
+        "cons-3-3",
+        "cons-4-2",
+        "cons-3-4",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Scaled drawing (1.5) of a strip foundation (2.4), cavity external wall (3.3), insulated solid ground floor (4.2), membranes and DPC (3.4) and insulation (6.2).",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q1-b",
+      "markBankTopicId": "cons-3-4",
+      "canonicalTopicIds": [
+        "cons-3-4",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "Damp-proof membrane / radon barrier (3.4) in the solid ground floor (4.2).",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q1-complete",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-2-4",
+        "cons-3-3",
+        "cons-4-2",
+        "cons-3-4",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-question-one-drawing-questions",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q2-a",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Benefits of insulation (6.2) through reduced heat loss and running costs (6.3).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q2-b",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Insulating material and method (6.2) applied to the existing external wall (3.3).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q2-c",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Thermal upgrading of the envelope (6.2) and its running-cost benefit (6.3).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q2-complete",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-6-3",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q3-a",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-5-1"
+      ],
+      "canonicalTopicReview": "Cold water supply with storage cistern (5.2) and protection of the installation (5.1).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q3-b",
+      "markBankTopicId": "cons-5-4",
+      "canonicalTopicIds": [
+        "cons-5-4"
+      ],
+      "canonicalTopicReview": "Rainwater collected from roof drainage (5.4).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q3-complete",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2",
+        "cons-5-1",
+        "cons-5-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q4-a",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Planning permission (1.3).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q4-b",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Site layout for a new dwelling (1.3).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q4-c",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Planning application requirements (1.3).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q4-complete",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q5-a",
+      "markBankTopicId": "cons-3-7",
+      "canonicalTopicIds": [
+        "cons-3-7",
+        "cons-3-3",
+        "cons-3-4",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "External door and frame (3.7) in a cavity wall (3.3) with lintels and stepped DPC (3.4) and insulation (6.2).",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q5-b",
+      "markBankTopicId": "cons-3-3",
+      "canonicalTopicIds": [
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Cavity wall ties (3.3).",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q5-complete",
+      "markBankTopicId": "cons-3-7",
+      "canonicalTopicIds": [
+        "cons-3-7",
+        "cons-3-3",
+        "cons-3-4",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q6-a-scroll-saw",
+      "markBankTopicId": "cons-9-4",
+      "canonicalTopicIds": [
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Safe use of tools and equipment in the Construction Studies room (9.4).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q6-a-spray-finish",
+      "markBankTopicId": "cons-9-4",
+      "canonicalTopicIds": [
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Safe use of tools and equipment in the Construction Studies room (9.4).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q6-a",
+      "markBankTopicId": "cons-9-4",
+      "canonicalTopicIds": [
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q6-b",
+      "markBankTopicId": "cons-9-4",
+      "canonicalTopicIds": [
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Safe use of a pillar drill (9.4).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q6-c",
+      "markBankTopicId": "cons-9-4",
+      "canonicalTopicIds": [
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Safety training for tools and machinery (9.4).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q6-complete",
+      "markBankTopicId": "cons-9-4",
+      "canonicalTopicIds": [
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q7-a",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Design of the external environment of a dwelling (1.2).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q7-b",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Layout of the external environment of a dwelling (1.2).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q7-c",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Solar gain and orientation (6.4) in the design of the dwelling’s surroundings (1.2).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q7-complete",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-triple-glazing",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Glazing (3.6) and its insulating performance (6.2).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-wind-turbine",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Renewable energy and the built environment (1.2). The outgoing syllabus has no renewable-electricity node; 1.2 matches the Planning, Sustainability & Environment reference heading.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-carbon-monoxide-alarm",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7"
+      ],
+      "canonicalTopicReview": "Building regulations (1.9) for fuel-burning appliances and flues (5.7).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-mortise-and-tenon-joint",
+      "markBankTopicId": "cons-10-1",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4"
+      ],
+      "canonicalTopicReview": "Joints (10.1) and the choice of joint for strength (10.4). The Ordinary reference taxonomy has no joinery heading; the question keeps its existing Wood, Rot & Ventilation association and 10.1/10.4 are declared outside that heading's crosswalk.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-butt-hinge",
+      "markBankTopicId": "cons-4-5",
+      "canonicalTopicIds": [
+        "cons-4-5",
+        "cons-3-7"
+      ],
+      "canonicalTopicReview": "Door ironmongery and second fixing (4.5, 3.7).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-ball-valve",
+      "markBankTopicId": "cons-5-2",
+      "canonicalTopicIds": [
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "Water-supply valves (5.2).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-cordless-circular-saw",
+      "markBankTopicId": "cons-9-2",
+      "canonicalTopicIds": [
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Power tools (9.2) and safety with electricity (9.4). The Ordinary reference taxonomy has no tools heading; 9.2 is declared outside the Site Safety crosswalk, which covers 9.4.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-fascia-board",
+      "markBankTopicId": "cons-3-10",
+      "canonicalTopicIds": [
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Eaves detail (3.10).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-smart-meter",
+      "markBankTopicId": "cons-5-8",
+      "canonicalTopicIds": [
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Domestic electrical installation (5.8).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--ball-valve",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--cordless-circular-saw",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--butt-hinge--ball-valve",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--butt-hinge--cordless-circular-saw",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--butt-hinge--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--butt-hinge--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--ball-valve--cordless-circular-saw",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--ball-valve--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-5-2",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--ball-valve--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-5-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--carbon-monoxide-alarm--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--mortise-and-tenon-joint--butt-hinge--ball-valve",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--mortise-and-tenon-joint--butt-hinge--cordless-circular-saw",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--mortise-and-tenon-joint--butt-hinge--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--mortise-and-tenon-joint--butt-hinge--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--mortise-and-tenon-joint--ball-valve--cordless-circular-saw",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--mortise-and-tenon-joint--ball-valve--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--mortise-and-tenon-joint--ball-valve--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--mortise-and-tenon-joint--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--mortise-and-tenon-joint--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--mortise-and-tenon-joint--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--butt-hinge--ball-valve--cordless-circular-saw",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--butt-hinge--ball-valve--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--butt-hinge--ball-valve--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--butt-hinge--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--butt-hinge--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--butt-hinge--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--ball-valve--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--ball-valve--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--ball-valve--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-5-2",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--wind-turbine--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--ball-valve",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--cordless-circular-saw",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--mortise-and-tenon-joint--ball-valve--cordless-circular-saw",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--mortise-and-tenon-joint--ball-valve--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--mortise-and-tenon-joint--ball-valve--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--mortise-and-tenon-joint--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--mortise-and-tenon-joint--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--mortise-and-tenon-joint--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--butt-hinge--ball-valve--cordless-circular-saw",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--butt-hinge--ball-valve--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--butt-hinge--ball-valve--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--butt-hinge--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--butt-hinge--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--butt-hinge--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--ball-valve--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--ball-valve--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--ball-valve--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-5-2",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--carbon-monoxide-alarm--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--mortise-and-tenon-joint--butt-hinge--ball-valve--cordless-circular-saw",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--mortise-and-tenon-joint--butt-hinge--ball-valve--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--mortise-and-tenon-joint--butt-hinge--ball-valve--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--mortise-and-tenon-joint--butt-hinge--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--mortise-and-tenon-joint--butt-hinge--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--mortise-and-tenon-joint--butt-hinge--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--mortise-and-tenon-joint--ball-valve--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--mortise-and-tenon-joint--ball-valve--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--mortise-and-tenon-joint--ball-valve--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--mortise-and-tenon-joint--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--butt-hinge--ball-valve--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--butt-hinge--ball-valve--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--butt-hinge--ball-valve--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--butt-hinge--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-triple-glazing--ball-valve--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-6-2",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-heat-loss-insulation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--ball-valve",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--cordless-circular-saw",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--fascia-board",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--ball-valve--cordless-circular-saw",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--ball-valve--fascia-board",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--ball-valve--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--mortise-and-tenon-joint--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--butt-hinge--ball-valve--cordless-circular-saw",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--butt-hinge--ball-valve--fascia-board",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--butt-hinge--ball-valve--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--butt-hinge--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--butt-hinge--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--butt-hinge--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--ball-valve--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--ball-valve--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--ball-valve--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-5-2",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--carbon-monoxide-alarm--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-9",
+        "cons-5-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--mortise-and-tenon-joint--butt-hinge--ball-valve--cordless-circular-saw",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--mortise-and-tenon-joint--butt-hinge--ball-valve--fascia-board",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--mortise-and-tenon-joint--butt-hinge--ball-valve--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--mortise-and-tenon-joint--butt-hinge--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--mortise-and-tenon-joint--butt-hinge--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--mortise-and-tenon-joint--butt-hinge--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--mortise-and-tenon-joint--ball-valve--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--mortise-and-tenon-joint--ball-valve--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--mortise-and-tenon-joint--ball-valve--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--mortise-and-tenon-joint--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--butt-hinge--ball-valve--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--butt-hinge--ball-valve--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--butt-hinge--ball-valve--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--butt-hinge--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-wind-turbine--ball-valve--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--ball-valve--cordless-circular-saw",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--ball-valve--fascia-board",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--ball-valve--smart-meter",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--mortise-and-tenon-joint--butt-hinge--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--mortise-and-tenon-joint--ball-valve--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--mortise-and-tenon-joint--ball-valve--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--mortise-and-tenon-joint--ball-valve--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--mortise-and-tenon-joint--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-10-1",
+        "cons-10-4",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--butt-hinge--ball-valve--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--butt-hinge--ball-valve--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--butt-hinge--ball-valve--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--butt-hinge--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-carbon-monoxide-alarm--ball-valve--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-1-9",
+      "canonicalTopicIds": [
+        "cons-1-9",
+        "cons-5-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-fire-places-fire-prevention",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-mortise-and-tenon-joint--butt-hinge--ball-valve--cordless-circular-saw--fascia-board",
+      "markBankTopicId": "cons-10-1",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-mortise-and-tenon-joint--butt-hinge--ball-valve--cordless-circular-saw--smart-meter",
+      "markBankTopicId": "cons-10-1",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-mortise-and-tenon-joint--butt-hinge--ball-valve--fascia-board--smart-meter",
+      "markBankTopicId": "cons-10-1",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-mortise-and-tenon-joint--butt-hinge--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-10-1",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4",
+        "cons-4-5",
+        "cons-3-7",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs",
+        "construction-studies-ordinary-services-water-gas-electrical"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-mortise-and-tenon-joint--ball-valve--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-10-1",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-wood-rot-ventilation",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q8-complete-butt-hinge--ball-valve--cordless-circular-saw--fascia-board--smart-meter",
+      "markBankTopicId": "cons-4-5",
+      "canonicalTopicIds": [
+        "cons-4-5",
+        "cons-3-7",
+        "cons-5-2",
+        "cons-9-2",
+        "cons-9-4",
+        "cons-3-10",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-services-water-gas-electrical",
+        "construction-studies-ordinary-site-safety",
+        "construction-studies-ordinary-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q9-a",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Adapting an existing dwelling (1.2).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q9-b",
+      "markBankTopicId": "cons-3-5",
+      "canonicalTopicIds": [
+        "cons-3-5",
+        "cons-3-7"
+      ],
+      "canonicalTopicReview": "Windows (3.5) and external doors (3.7) added to the extension.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-windows-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q9-c",
+      "markBankTopicId": "cons-3-2",
+      "canonicalTopicIds": [
+        "cons-3-2",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "External envelope cladding (3.2) in timber (10.3).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    },
+    {
+      "cardId": "cons-2026-ol-q9-complete",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-3-5",
+        "cons-3-7",
+        "cons-3-2",
+        "cons-10-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-ordinary-planning-sustainability-environment",
+        "construction-studies-ordinary-windows-doors",
+        "construction-studies-ordinary-foundations-floors-walls",
+        "construction-studies-ordinary-wood-rot-ventilation"
+      ]
+    }
+  ],
+  "taxonomyGaps": [
+    {
+      "cardId": "cons-2026-ol-q8-mortise-and-tenon-joint",
+      "canonicalTopicIds": [
+        "cons-10-1",
+        "cons-10-4"
+      ],
+      "atlasTopicId": "construction-studies-ordinary-wood-rot-ventilation",
+      "reason": "No Ordinary outgoing reference heading covers joinery (10.1, 10.4)."
+    },
+    {
+      "cardId": "cons-2026-ol-q8-cordless-circular-saw",
+      "canonicalTopicIds": [
+        "cons-9-2"
+      ],
+      "atlasTopicId": "construction-studies-ordinary-site-safety",
+      "reason": "No Ordinary outgoing reference heading covers tools (9.2)."
+    }
+  ]
+}

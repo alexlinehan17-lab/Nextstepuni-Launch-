@@ -1,5 +1,5 @@
 import { CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS } from './fixtures/construction2015Reviewed';
-import { CONSTRUCTION_2026_HIGHER_REVIEWED_IDS } from './fixtures/construction2026Reviewed';
+import { CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS } from './fixtures/construction2026Reviewed';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -754,7 +754,7 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
   .update(cards.map((card) => card.id).sort().join('\n'))
   .digest('hex');
 
-const recoveredConstructionIds = new Set([...CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS]);
+const recoveredConstructionIds = new Set([...CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS, ...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS]);
 
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
