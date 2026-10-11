@@ -9,6 +9,7 @@ import { paperRegionFor } from '../components/PaperTrail/paperRegion';
 import { frenchMarks } from '../components/MarkBank/frenchRubric';
 
 const answers: Record<number, string[]> = {
+  2012: ['musique', 'pas', 'dit', 'boulot', 'magasin', 'argent', 'est', 'samedi', 'à', 'tes'],
   2013: ['avec', 'grande', 'demandé', 'jouer', 'membre', 'deux', 'romans', 'librairie', 'poche', 'aimes'],
   2014: ['répondu', 'suis', 'bac', 'pas', 'professeurs', 'difficile', 'beaucoup', 'examens', 'robes', 'venir'],
   2015: ['écrit', 'voyage', 'dernier', 'ballon', 'passer', 'dit', 'parents', 'pas', 'avec', 'de'],
@@ -26,8 +27,8 @@ const answers: Record<number, string[]> = {
 };
 
 describe('French gap-level practice', () => {
-  it('retains all 140 separately priced gaps and the source word banks', () => {
-    expect(cards).toHaveLength(140);
+  it('retains all 150 separately priced gaps and the source word banks', () => {
+    expect(cards).toHaveLength(150);
     for (const [year, expected] of Object.entries(answers)) {
       const group = cards.filter(card => card.year === Number(year));
       expect(group).toHaveLength(10);
@@ -56,14 +57,25 @@ describe('French gap-level practice', () => {
     expect(first.questionText.split('Mots proposés : ')[1]).toBe('courses, mon, suis, tous, argent, organisé, pas, cadeau, en, ranger');
   });
 
-  it('restores printed words the column reader dropped from the 2013, 2016 and 2017 letters', () => {
+  it('restores printed words the column reader dropped from the 2012, 2013, 2016 and 2017 letters', () => {
     const excerpt = (id: string) => cards.find(card => card.id === id)!.questionText.split('\n\n')[1];
+    expect(excerpt('fr-2012-ol-cloze-b1a-gap-10')).toBe('Dis bonjour de ma part à [10] parents.');
     expect(excerpt('fr-2013-ol-cloze-b1a-gap-8')).toBe('J’achète mes livres dans la [8] .');
     expect(excerpt('fr-2013-ol-cloze-b1a-gap-9')).toBe('Ça coûte cher, donc je n’ai jamais assez d’argent de [9] .');
     expect(excerpt('fr-2017-ol-cloze-b1a-gap-5')).toBe('Hier soir, j’ai [5] un film d’espionnage.');
     expect(excerpt('fr-2017-ol-cloze-b1a-gap-10')).toBe('Téléphone-moi ou envoie-moi un texto pour me dire si tu [10] venir.');
     for (const gap of [5, 6, 7]) {
       expect(excerpt(`fr-2016-ol-cloze-b1a-gap-${gap}`)).toBe('Quand je [5] avec mes [6] , Orla était toujours de mauvaise [7] .');
+    }
+  });
+
+  it('lifts the 2012 capital-letter exception for samedi into every 2012 gap', () => {
+    for (const card of cards.filter(card => card.year === 2012)) {
+      expect(card.rubric.answerGuide![1]).toBe('Careless transcription, including accents, deduct 1 mark. Accept capital letters (apart from samedi).');
+      expect(card.schemeRegion?.p).toBe(9);
+    }
+    for (const card of cards.filter(card => card.year !== 2012)) {
+      expect(card.rubric.answerGuide![1]).toBe('Careless transcription, including accents, deduct 1 mark. Accept capital letters.');
     }
   });
 

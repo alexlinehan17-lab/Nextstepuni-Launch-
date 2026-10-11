@@ -65,15 +65,17 @@ OL_LANGUAGE = [
 
 # Each Ordinary Level message/postcard/diary/letter prints its own communication
 # tariff as an underlined heading on its scheme page. Lift it verbatim, never a
-# shared paraphrase: 2013–2021 print "Two points" on all four tasks; 2022–2026
+# shared paraphrase: 2012–2021 print "Two points" on all four tasks; 2022–2026
 # print "Two parts" for B2A/B2B and "Two points" for B3A/B3B. Entries are
 # (scheme PDF page, exact printed line); every line was checked against the
 # rendered scheme page (2015–2026 on 11 October 2026; 2014 and 2013 on 11 October
-# 2026 from their own scheme pages 12–15). A year without an entry fails.
+# 2026 from their own scheme pages 12–15, 2012 from pages 11–14). A year without
+# an entry fails.
 POINTS_5 = 'Two points required for 5 marks (3 + 2)'
 PARTS_5 = 'Two parts required for 5 marks (3 + 2)'
 POINTS_4 = 'Two points required for 4 marks (2 + 2)'
 OL_POINT_TARIFFS = {
+    2012: {'B2A': (11, POINTS_5), 'B2B': (12, POINTS_5), 'B3A': (13, POINTS_5), 'B3B': (14, POINTS_4)},
     2013: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
     2014: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
     2015: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
@@ -266,7 +268,14 @@ def build_year(config):
     assert len(fields) == len(answers) == 5 and len(form_questions) == 4
     for prompt in form_questions:
         assert_on_page(prompt, doc, config['formPage'])
-    form_notes = communication_notes(config, scheme_ol, config['formSchemePage'])
+    # 2012 prints the form's tense N.B. at the top of the following scheme page.
+    form_notes = communication_notes(config, scheme_ol, config.get('formNotePage', config['formSchemePage']))
+    # A scheme may price one form sentence with its own condition (2012 Q7:
+    # "Two or more sports required here for full marks"); lift it verbatim.
+    form_question_notes = config.get('formQuestionNotes', {})
+    form_scheme_text = ' '.join(scheme_ol[config['formSchemePage'] - 1].get_text().split())
+    for number, note in form_question_notes.items():
+        assert number in {'6', '7', '8', '9'} and note in form_scheme_text, (YEAR, number, note)
     form_choose = config.get('formChoose', 3)
     assert form_choose in [3, 4]
     assert_on_page(config.get('formInstruction', 'Pour 6, 7, 8 et 9 : choisissez trois questions et répondez par des phrases complètes.'), doc, config['formPage'])
@@ -275,7 +284,9 @@ def build_year(config):
         maximum = 12 // form_choose
         clear = '3' if maximum == 3 else '3–4'
         criteria = [criterion(f'communication-{i+6}', f'Communication · question {i+6}', maximum,
-                              [form_questions[i], f'0–2: message not clear. {clear}: message clear.'] + form_notes) for i in chosen]
+                              [form_questions[i], f'0–2: message not clear. {clear}: message clear.',
+                               *([form_question_notes[str(i + 6)]] if str(i + 6) in form_question_notes else []),
+                               *form_notes]) for i in chosen]
         lang = language(8, ol_language)
         lang['requiresAttempt'] = True
         criteria.append(lang)

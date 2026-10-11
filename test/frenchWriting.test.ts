@@ -16,12 +16,12 @@ import { frenchMarks, frenchScoreId, FRENCH_ATTEMPT_ID } from '../components/Mar
 const deck = [...higher, ...ordinary];
 const correctedReadingIds = new Set(readingReview.papers.flatMap(paper => Object.values(paper.preservedCardIds ?? {})));
 
-describe('reviewed 2013–2026 French writing tasks', () => {
-  it('adds all 486 reviewed units while preserving the 260 existing identities', () => {
-    expect(cards).toHaveLength(486);
-    expect(cards.filter(card => card.level === 'higher')).toHaveLength(112);
-    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(374);
-    expect(deck).toHaveLength(2270);
+describe('reviewed 2012–2026 French writing tasks', () => {
+  it('adds all 504 reviewed units while preserving the 260 existing identities', () => {
+    expect(cards).toHaveLength(504);
+    expect(cards.filter(card => card.level === 'higher')).toHaveLength(120);
+    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(384);
+    expect(deck).toHaveLength(2298);
     expect(new Set(deck.map(card => card.id)).size).toBe(deck.length);
     for (const old of legacy) {
       const live = deck.find(card => card.id === old.id)!;
@@ -98,7 +98,7 @@ describe('reviewed 2013–2026 French writing tasks', () => {
   });
 
   it('lifts each year’s printed communication tariff line rather than one shared paraphrase', () => {
-    // 2013–2021 schemes print "Two points" on every task; from 2022 the message and
+    // 2012–2021 schemes print "Two points" on every task; from 2022 the message and
     // postcard (B2A/B2B) print "Two parts" while the diary and letter keep "Two points".
     const seen = new Map<string, number>();
     for (const card of cards.filter(card => /-writing-b[23][ab]-route-/.test(card.id))) {
@@ -110,7 +110,7 @@ describe('reviewed 2013–2026 French writing tasks', () => {
         seen.set(word, (seen.get(word) ?? 0) + 1);
       }
     }
-    expect(Object.fromEntries(seen)).toEqual({ points: 516, parts: 300 });
+    expect(Object.fromEntries(seen)).toEqual({ points: 528, parts: 300 });
   });
 
   it('keeps the 2015 email, boxed quotation and task-specific language descriptors', () => {
@@ -137,6 +137,30 @@ describe('reviewed 2013–2026 French writing tasks', () => {
     const field = group.find(card => card.id === 'fr-2015-ol-writing-b1b-field-5')!;
     expect(field.rubric.criteria[0].guidance).toEqual(['Level of French – accept any level']);
     expect(field.rubric.taskRequirements).toEqual([]);
+  });
+
+  it('keeps the 2012 form-sentence condition, boxed quotation and earlier scheme layout', () => {
+    const group = cards.filter(card => card.year === 2012);
+    expect(group).toHaveLength(18);
+    const form = group.find(card => card.id === 'fr-2012-ol-writing-b1b-route-6789')!;
+    const tense = 'N.B. Correct tense required for full marks in Communication.';
+    expect(form.rubric.criteria.find(c => c.id === 'communication-7')?.guidance).toEqual([
+      'Quels sports pratiquez-vous ?', '0–2: message not clear. 3: message clear.',
+      'Two or more sports required here for full marks', tense,
+    ]);
+    for (const id of ['communication-6', 'communication-8', 'communication-9']) {
+      expect(form.rubric.criteria.find(c => c.id === id)?.guidance).not.toContain('Two or more sports required here for full marks');
+    }
+    expect(form.schemeCitation).toContain('p.9');
+    const quote = group.find(card => card.id === 'fr-2012-hl-writing-b3b')!;
+    expect(quote.questionText.split('\n\n').slice(1, 3)).toEqual(['Solange, 22 ans.', 'Donnez vos réactions.\n(75 mots environ)']);
+    expect(quote.sourceMaterial?.kind).toBe('source-text');
+    expect(group.find(card => card.id === 'fr-2012-hl-writing-b4a')!.sourceMaterial?.kind).toBe('source-illustration');
+    const message = group.find(card => card.id === 'fr-2012-ol-writing-b2a-route-123')!;
+    expect(message.questionText).toContain('• He will arrive tomorrow at half-past ten.');
+    expect(message.schemeCitation).toContain('p.11');
+    expect(message.rubric.criteria.at(-1)?.bands?.[1].guidance).not.toContain('some sense of register');
+    expect(group.find(card => card.id === 'fr-2012-ol-writing-b3b-route-123')!.schemeCitation).toContain('pp.14, 17, 18');
   });
 
   it('keeps the 2013 bilingual message, illustrated prompts and scheme-specific form and letter rules', () => {

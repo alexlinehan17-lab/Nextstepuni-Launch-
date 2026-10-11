@@ -1,5 +1,193 @@
 [
   {
+    "year": 2012,
+    "hlGridPage": 14,
+    "hlSchemePageOffset": -2,
+    "hlCriteriaMax": [
+      20,
+      15
+    ],
+    "hlNoLayoutQuestion": 2,
+    "hlNoLayoutNote": "Q. 2 (a) and (b) No particular layout required.",
+    "hlPassageRefs": {
+      "B1A": 1,
+      "B1B": 2
+    },
+    "illustrationTasks": [
+      "B3A",
+      "B4A"
+    ],
+    "hlPromptParagraphs": {
+      "B2B": [
+        "Votre ami français, Jean-Luc, vous a envoyé le courrier électronique suivant:",
+        "« Dans ton dernier courriel tu m’as dit que, dans les écoles en Irlande, tout le monde apprend l’irlandais. Pourquoi étudier cette langue ? Est-ce que c’est facile ? Tu aimes cette matière ? »",
+        "Écrivez un courrier électronique à Jean-Luc dans lequel vous répondez à ses questions."
+      ],
+      "B3A": [
+        "Selon un sondage récent, 40% des Français sont allés à un concert en 2011.",
+        "À votre avis, les concerts (par exemple, Oxegen) sont-ils une expérience formidable, ou plutôt un gaspillage d’argent ?"
+      ],
+      "B3B": [
+        "« Il y a trop d’émissions sportives à la télé : le tennis, le golf, le rugby......... ! Et cette année, avec EURO 2012 et tous les matchs de football, c’est encore pire. Ça m’énerve ! »",
+        "Solange, 22 ans.",
+        "Donnez vos réactions."
+      ],
+      "B4A": [
+        "Manifester dans les rues, c'est un bon moyen de protester contre l'injustice ou contre des décisions politiques.",
+        "Êtes-vous d'accord ?"
+      ],
+      "B4B": [
+        "On peut passer des vacances formidables en Irlande, qui ne coûtent pas trop cher. Il n’y a pas besoin d’aller à l’étranger.",
+        "Donnez vos réactions."
+      ]
+    },
+    "hlSelectionNote": "Eight independently priced 40/30-mark alternatives. Q1(a) is an open opinion prompt on its Section I passage; Q1(b) real/imaginary is open creative scope. Q2(b) requires answers to all three of Jean-Luc’s questions; they are compulsory parts of one email, not a closed pool. Q3(a) concerts, Q3(b) and Q4(b) reactions and Q4(a) agreement are open opinion scope; the Q3(a) and Q4(a) photographs are retained in the illustration viewer. All four form sentences and all three Ordinary writing points are required.",
+    "languageBottom": null,
+    "olLanguagePage": 10,
+    "formPage": 11,
+    "formSchemePage": 9,
+    "formNotePage": 10,
+    "formChoose": 4,
+    "formInstruction": "N.B. Répondez à 6, 7, 8 & 9 par des phrases complètes.",
+    "form_stem": "Vous vous appelez Shane / Sheila Moynihan. Vous voulez travailler comme animateur / animatrice dans une colonie de vacances en Alsace pour l’été. Remplissez le formulaire suivant.",
+    "fields": [
+      "Nom",
+      "Prénom",
+      "Date de naissance",
+      "Nationalité",
+      "Niveau de français"
+    ],
+    "answers": [
+      "Surname – accept any reasonable surname",
+      "Christian Name – accept any reasonable Christian name",
+      "Date of Birth – accept any reasonable date of birth",
+      "Nationality – accept any appropriate nationality",
+      "Level / ability acceptable here"
+    ],
+    "form_questions": [
+      "Donnez une brève description de votre personnalité.",
+      "Quels sports pratiquez-vous ?",
+      "Pourquoi voulez-vous travailler dans une colonie de vacances en France ?",
+      "Quand est-ce que vous pouvez commencer le travail ?"
+    ],
+    "formQuestionNotes": {
+      "7": "Two or more sports required here for full marks"
+    },
+    "olCommunicationNote": "N.B. Correct tense required for full marks in Communication.",
+    "letterIdentity": "You are Denis / Deirdre O’Leary, Market Street, Letterkenny, Co. Donegal.",
+    "pools": [
+      [
+        "B2A",
+        12,
+        11,
+        "Leave the following message for your friend Vincent / Odile with whom you are staying in Reims. Say that:",
+        [
+          "The television in the living-room is broken.",
+          "You phoned an electrician this morning.",
+          "He will arrive tomorrow at half-past ten."
+        ],
+        [
+          "The television in the living-room / is broken.",
+          "You phoned an electrician / this morning.",
+          "He will arrive tomorrow / at half-past ten."
+        ]
+      ],
+      [
+        "B2B",
+        12,
+        12,
+        "You are on holidays in Annecy. Write a postcard to your friend André / Céline in which you say that:",
+        [
+          "You arrived at the campsite last Thursday.",
+          "There are lots of tents and caravans here.",
+          "Tomorrow you will go swimming in the lake."
+        ],
+        [
+          "You arrived at the campsite / last Thursday.",
+          "There are lots of tents / and caravans here.",
+          "Tomorrow you will go swimming / in the lake."
+        ]
+      ],
+      [
+        "B3A",
+        14,
+        13,
+        "It is your 18th birthday today.",
+        [
+          "It’s your birthday today and you are delighted.",
+          "You received lots of presents from your family.",
+          "You will go to a night-club this evening with your friends."
+        ],
+        [
+          "It’s your birthday today / and you are delighted.",
+          "You received lots of presents / from your family.",
+          "You will go to a night-club this evening / with your friends."
+        ]
+      ],
+      [
+        "B3B",
+        14,
+        14,
+        "Write a formal letter to L’Office de Tourisme, 11 rue Saint-Yves, 35064 Rennes. In the letter:",
+        [
+          "Say that you are looking for information about Brittany.",
+          "Say that you hope to visit the area during the summer holidays.",
+          "Ask them to send a list of hotels and restaurants in Rennes."
+        ],
+        [
+          "Say that you are looking for information / about Brittany.",
+          "Say that you hope to visit the area / during the summer holidays.",
+          "Ask them to send a list of / hotels and restaurants in Rennes."
+        ]
+      ]
+    ],
+    "formatSchemePage": 17,
+    "formatSchemePages": [
+      17,
+      18
+    ],
+    "formatNotes": {
+      "top": [
+        "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
+        "City / town / village & date (Letterkenny, le 13 juin 2012) in top right corner or underneath.",
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”."
+      ],
+      "close": [
+        "Formal ending required.",
+        "Treat one or more incorrect accents in closing formula as one mistake."
+      ],
+      "deductions": [
+        "1 mistake - ignore.",
+        "2 mistakes - deduct 1 mark.",
+        "3 mistakes - deduct 2 marks.",
+        "More than 3 mistakes - award 0.",
+        "If candidate has general layout of Top of Page correct, despite numerous mistakes - award one mark."
+      ]
+    },
+    "olTaskLanguageOmit": {
+      "B2A": {
+        "page": 11,
+        "descriptors": [
+          "some sense of register"
+        ]
+      },
+      "B2B": {
+        "page": 11,
+        "descriptors": [
+          "some sense of register"
+        ]
+      },
+      "B3A": {
+        "page": 11,
+        "descriptors": [
+          "some sense of register"
+        ]
+      }
+    },
+    "taskSourceNotes": {}
+  },
+  {
     "year": 2013,
     "hlGridPage": 18,
     "hlSchemePageOffset": -2,

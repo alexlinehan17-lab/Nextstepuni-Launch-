@@ -228,7 +228,7 @@ describe('French exam-topic registry', () => {
 
   it('retains 1,003 archive questions and adds the reviewed task boundaries', () => {
     expect(subjectAtlasStats('french')).toMatchObject({
-      questions: 3157,
+      questions: 3177,
       topics: 33,
       yearMin: 2010,
       yearMax: 2026,
