@@ -402,9 +402,50 @@
       ],
       "wordBankReason": "Full-width ten-word bank visually verified in printed order.",
       "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
+    },
+    {
+      "year": 2014,
+      "paperPage": 10,
+      "schemePage": 10,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2014-ol-000-paper.pdf",
+          "sha256": "04aa4a339491eea57c4f38a6685947d2eee8b25873183da14f97783053df09f7"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2014-ol.pdf",
+          "sha256": "1735c57e750914492deed6d4f1c89d8e9c073fe7f4be9364b785d1a422d73676"
+        }
+      ],
+      "answers": [
+        "répondu",
+        "suis",
+        "bac",
+        "pas",
+        "professeurs",
+        "difficile",
+        "beaucoup",
+        "examens",
+        "robes",
+        "venir"
+      ],
+      "wordBank": [
+        "suis",
+        "beaucoup",
+        "examens",
+        "répondu",
+        "pas",
+        "robes",
+        "professeurs",
+        "bac",
+        "venir",
+        "difficile"
+      ],
+      "wordBankReason": "Full-width ten-word bank visually verified in printed order; the bilingual column reader drops its last word (difficile).",
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
     }
   ],
-  "expectedCards": 120,
+  "expectedCards": 130,
   "boundaryDecision": "Each of ten gaps is separately priced at 3 marks. The word bank contains possible answers, not selectable task alternatives. Preserve the original whole-letter practice cards and add each separately practicable gap.",
   "verifiedCorrections": [
     "2022 OL scheme p11 leaves item 10 empty in the numbered answer list, but its completed letter explicitly prints du in On pourrait faire du vélo. The paper word bank also contains du. All ten gaps are supported.",
