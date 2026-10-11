@@ -200,7 +200,7 @@ print('source guards passed')
     const row=inventory.papers.find(p=>p.key==='2016|foundation|LC001BLP000IV.pdf')!;
     expect(row.markBankCardIds.slice().sort()).toEqual(cards.map(c=>c.id).sort());
     expect(row).toMatchObject({fullVisualReview:'complete',bankAtlasTaskParity:'complete',partAndSelectionReconciliation:'complete'});
-    expect(inventory.summary.papersPendingFullReview).toBe(68);
+    expect(inventory.summary.papersPendingFullReview).toBe(67);
     expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

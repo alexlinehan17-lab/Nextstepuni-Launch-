@@ -163,6 +163,6 @@ print('source guard passed')
     expect(sourceReview.audio.unverifiedCandidate.decision).toContain('never substituted');
     expect(written.review.reviewedPaperPages).toHaveLength(16);expect(written.review.reviewedSchemePages).toHaveLength(17);
     expect(sourceReview.reviewedPaperPages['LC001BLPA00IV.pdf']).toHaveLength(8);
-    expect(inventory.summary.papersPendingFullReview).toBe(68);expect(inventory.summary.orphanCardIds).toEqual([]);
+    expect(inventory.summary.papersPendingFullReview).toBe(67);expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

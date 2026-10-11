@@ -47,6 +47,9 @@ def inventory(corpus: Path) -> dict:
                    for name in ['foundation-authored.json', 'foundation-2024-authored.json', 'foundation-2023-authored.json', 'foundation-2022-authored.json', 'foundation-2021-authored.json', 'foundation-2020-authored.json', 'foundation-2019-authored.json', 'foundation-2018-authored.json', 'foundation-2017-authored.json', 'foundation-2016-authored.json', 'foundation-2015-authored.json', 'foundation-2014-authored.json', 'foundation-2013-authored.json', 'foundation-2012-authored.json', 'foundation-2011-authored.json', 'foundation-2011-aural-authored.json', 'foundation-2010-authored.json', 'foundation-2026-authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json']]
     reviews = [dict(f['review'], cardIds=[c['id'] for c in f['cards']]) for f in foundations]
     reviews += json.loads((ROOT / 'scripts/markbank/authored/irish-paper-reviews.json').read_text())
+    # Reviewed legacy components: the cards stay in authored.json; each review names them.
+    reviews += [json.loads(path.read_text())
+                for path in sorted((ROOT / 'scripts/markbank/authored').glob('irish-*-component-review.json'))]
     assert len({(r['year'],r['level'],r['paperFileid']) for r in reviews})==len(reviews)
     tags = json.loads((ROOT / 'scripts/paper-trail/topic-tags/tags/irish.json').read_text())
     # A source gap is a component whose authority material cannot be obtained
