@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { taskGroupsFault } from './taskGroups.mjs';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -993,6 +994,13 @@ const q = (s) => JSON.stringify(String(s));
  */
 function tariffFault(c) {
   const t = c.tariffModel ?? { kind: 'fixed' };
+  if (c.rows.some(row => row.permittedMarks && (
+    t.kind !== 'fixed' || row.kind !== 'criterion' || !Number.isFinite(row.marks)
+    || !Array.isArray(row.permittedMarks) || row.permittedMarks.length < 2
+    || row.permittedMarks[0] !== 0 || row.permittedMarks.at(-1) !== row.marks
+    || row.permittedMarks.some((mark, index, steps) => !Number.isFinite(mark)
+      || mark < 0 || (index > 0 && mark <= steps[index - 1]))
+  ))) return 'invalid published criterion mark steps';
   if (t.kind === 'orderedSplit' || t.kind === 'questionTotal') {
     return c.rows.every(r => r.marks === null || r.marks === undefined)
       ? null : `a ${t.kind} tariff cannot give rows their own marks`;
@@ -1014,6 +1022,7 @@ function tariffFault(c) {
     if (!r.route) common += worth(r);
     else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + worth(r));
   }
+  common += c.questionBonus?.marks ?? 0;
   if (!byRoute.size) {
     return common === c.totalMarks ? null : `rows sum to ${common}, tariff is ${c.totalMarks}`;
   }
@@ -1183,6 +1192,10 @@ const seenHash = new Map();
 let unresolvedPapers = 0;
 
 for (const c of cards) {
+  if (c.questionFigureIncludesPrompt !== undefined
+      && (typeof c.questionFigureIncludesPrompt !== 'boolean' || !c.questionFigureKey)) {
+    throw new Error(`${c.id}: questionFigureIncludesPrompt requires a question figure and a boolean value`);
+  }
   if (byQuestion.get(c.questionRef) !== c) {
     dropped.push(`${c.id}: superseded for ${c.questionRef} by a card carrying its figure`);
     continue;
@@ -1193,7 +1206,7 @@ for (const c of cards) {
   // layout exactly. Keep the accessible text prompt, but remove blank-rule
   // scaffolding and page furniture so students do not see a noisy OCR copy
   // above the official crop.
-  if (c.questionFigureKey) {
+  if (c.questionFigureKey && c.questionFigureIncludesPrompt !== false) {
     const originalQuestionText = c.questionText;
     c.questionText = String(c.questionText)
       .replace(/_{3,}/g, '')
@@ -1220,6 +1233,9 @@ for (const c of cards) {
 
   const badGroup = groupFault(c);
   if (badGroup) { dropped.push(`${c.id}: ${badGroup}`); continue; }
+
+  const badTaskGroups = taskGroupsFault(c);
+  if (badTaskGroups) { dropped.push(`${c.id}: ${badTaskGroups}`); continue; }
 
   const badVariants = answerVariantsFault(c);
   if (badVariants) { dropped.push(`${c.id}: ${badVariants}`); continue; }
@@ -1254,7 +1270,7 @@ for (const c of cards) {
   const relabelled = relabelDistractors(c);
   if (relabelled) repaired.push(relabelled);
 
-  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows)].flat()) {
+  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
     const cap = optionCapFor(c.section);
     if (r.group && r.group.options.length > cap) {
       overCap.push(`${c.id}: row "${r.id}" shows ${r.group.options.length} options in section ${c.section}, over the ${cap} agreed for a short question`);
@@ -1323,7 +1339,7 @@ for (const c of cards) {
   const scheme = schemeFor(SUBJECT_ID, c);
   if (!scheme) { dropped.push(`${c.id}: no scheme on disk for ${c.year} ${c.level}`); continue; }
   const untraceable = [];
-  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows)].flat()) {
+  for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
     const claims = r.kind === 'anyN' && r.group ? r.group.options : [String(r.verbatim).split(/\s[—-]\s/).pop()];
     for (const claim of claims) {
       if (!claimMatches(scheme, claim)) untraceable.push(claim);
@@ -1373,6 +1389,7 @@ for (const c of cards) {
     if (rec.solution) { dropped.push(`${c.id}: question figure "${c.questionFigureKey}" is a solution crop`); continue; }
     questionFigure = { candId: rec.candId, src: rec.src, srcHash: rec.srcHash,
       alt: accessibleQuestionFigureAlt(rec.alt, c), lettersVisible: [], attribution: rec.attribution };
+    if (c.questionFigureIncludesPrompt !== undefined) questionFigure.includesPrompt = c.questionFigureIncludesPrompt;
   }
 
   seenId.add(c.id);
@@ -1381,6 +1398,7 @@ for (const c of cards) {
       `marks: ${r.marks === null || r.marks === undefined ? 'null' : r.marks}`];
     if (r.accepts?.length) parts.push(`accepts: ${JSON.stringify(r.accepts)}`);
     if (r.contextNote) parts.push(`contextNote: ${q(r.contextNote)}`);
+    if (r.permittedMarks) parts.push(`permittedMarks: ${JSON.stringify(r.permittedMarks)}`);
     if (r.openList) parts.push('openList: true');
     if (r.exactTermRequired) parts.push('exactTermRequired: true');
     if (r.route) parts.push(`route: ${q(r.route)}`);
@@ -1419,7 +1437,7 @@ for (const c of cards) {
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
     rows: [
 ${rows}
-    ],${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${c.taskGroups ? `\n    taskGroups: ${JSON.stringify(c.taskGroups)},` : ''}${c.questionBonus ? `\n    questionBonus: ${JSON.stringify(c.questionBonus)},` : ''}${c.answerVariants ? `\n    answerVariants: ${JSON.stringify(c.answerVariants, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.sourceMaterial ? `\n    sourceMaterial: ${JSON.stringify(c.sourceMaterial, null, 6).replace(/\n/g, '\n    ')},` : ''}${c.additionalSourceMaterials?.length ? `\n    additionalSourceMaterials: ${JSON.stringify(c.additionalSourceMaterials, null, 6).replace(/\n/g, '\n    ')},` : ''}${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,` });
 }
 

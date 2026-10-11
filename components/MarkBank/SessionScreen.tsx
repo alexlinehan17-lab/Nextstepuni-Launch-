@@ -121,11 +121,21 @@ const SANS = "'DM Sans', system-ui, sans-serif";
 const MONO = "'Roboto Mono', ui-monospace, monospace";
 
 /** How the student answered one row. */
-type RowClaim = 'no' | 'yes' | 'synonym';
+type RowClaim = 'no' | 'yes' | 'synonym' | number;
 
 /** A row absent from the claims map has not been claimed. Defaulting the other
  *  way silently credits every row a caller forgot to mention. */
-const isClaimed = (claims: Record<string, RowClaim>, id: string) => (claims[id] ?? 'no') !== 'no';
+const isClaimed = (claims: Record<string, RowClaim>, id: string) => {
+  const claim = claims[id] ?? 'no';
+  return typeof claim === 'number' ? Number.isFinite(claim) && claim > 0 : claim !== 'no';
+};
+
+/** Numeric claims are accepted only at explicitly published criterion steps. */
+export const criterionMarksClaimed = (row: MarkRow, claim: RowClaim) => {
+  if (!row.permittedMarks) return 0;
+  if (claim === 'yes') return row.marks ?? 0;
+  return typeof claim === 'number' && row.permittedMarks.includes(claim) ? claim : 0;
+};
 
 export interface SessionCardResult {
   cardId: string;
@@ -196,7 +206,7 @@ export function claimableTotal(card: SecCard): number {
     if (!r.route) common += rowMarks(r);
     else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + rowMarks(r));
   }
-  return common + Math.max(0, ...byRoute.values());
+  return common + Math.max(0, ...byRoute.values()) + (card.questionBonus?.marks ?? 0);
 }
 
 /** Only a `fixed` tariff may show per-row mark chips: for the other conventions
@@ -225,6 +235,7 @@ export function marksClaimed(
   if (!isPointCard(card)) return 0;
   if (!showsRowMarks(card)) return 0;
   const route = committedRoute(card, claims);
+  const bonus = card.questionBonus;
   return card.rows.reduce((n, r, i) => {
     const id = rowId(r, i);
     // Points from an abandoned route earn nothing: the scheme forbids taking a
@@ -236,8 +247,9 @@ export function marksClaimed(
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
       return n + claimedMarks(r.group, chosen);
     }
+    if (r.permittedMarks) return n + criterionMarksClaimed(r, claims[id] ?? 'no');
     return isClaimed(claims, id) ? n + rowMarks(r) : n;
-  }, 0);
+  }, 0) + (bonus ? criterionMarksClaimed(bonus, claims[bonus.id] ?? 'no') : 0);
 }
 
 /**
@@ -494,6 +506,30 @@ const MarkRowView: React.FC<{
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
+
+  if (row.permittedMarks) {
+    const selected = criterionMarksClaimed(row, claim);
+    return (
+      <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
+        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}` }}>{row.verbatim}</strong>
+        {row.accepts?.length ? <p style={{ color: MUTED }}>{row.accepts.join(' · ')}</p> : null}
+        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
+        <div role="group" aria-label={`Marks for ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+          {row.permittedMarks.map(mark => (
+            <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
+              aria-label={`Award ${mark} marks for ${row.verbatim}`}
+              onClick={() => onClaim(id, mark)}
+              style={{ padding: '8px 12px', borderRadius: 6, border: `1px solid ${MUTED_BORDER}`,
+                background: selected === mark ? INK : 'var(--mb-paper)',
+                color: selected === mark ? 'var(--mb-paper)' : INK, cursor: blocked ? 'default' : 'pointer' }}>
+              {mark}
+            </button>
+          ))}
+        </div>
+        {blocked && blockedReason ? <p>{blockedReason}</p> : null}
+      </section>
+    );
+  }
 
   // A bounded "Any four 4(3)" group. The scheme lets a student bank any four of
   // nine, so each option is claimed on its own: treating the whole group as one
@@ -2286,6 +2322,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     if (!assessmentCard || !isPointCard(assessmentCard)) return {};
     const out: Record<string, RowClaim> = {};
     assessmentCard.rows.forEach((r, i) => { out[rowId(r, i)] = claimOf(rowId(r, i)); });
+    if (assessmentCard.questionBonus) out[assessmentCard.questionBonus.id] = claimOf(assessmentCard.questionBonus.id);
     return out;
   }, [assessmentCard, claimOf]);
 
@@ -2408,6 +2445,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         allPicks[id] = Array.from({ length: r.group.claimMax }, (_, k) => k);
       }
     });
+    if (assessmentCard.questionBonus) all[assessmentCard.questionBonus.id] = 'yes';
     setClaims(prev => ({ ...prev, ...all }));
     setPicks(prev => ({ ...prev, ...allPicks }));
   }, [assessmentCard]);
@@ -2514,6 +2552,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     : assessmentCard.level === 'common' ? 'COMMON LEVEL' : 'ORDINARY LEVEL';
   const figure = 'figure' in assessmentCard ? assessmentCard.figure : undefined;
   const questionFigure = 'questionFigure' in assessmentCard ? assessmentCard.questionFigure : undefined;
+  const printedQuestionReplacesText = Boolean(questionFigure && questionFigure.includesPrompt !== false);
   const sourceMaterial = assessmentCard.sourceMaterial;
   const sourceMaterials = [
     ...(sourceMaterial ? [sourceMaterial] : []),
@@ -2779,7 +2818,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </span>
             </div>
 
-            {assessmentCard.stem && !questionFigure && (
+            {assessmentCard.stem && !printedQuestionReplacesText && (
               <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2 }}>{assessmentCard.stem}</p>
             )}
 
@@ -2799,7 +2838,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
-            {!questionFigure && (audioMaterial ? (
+            {!printedQuestionReplacesText && (audioMaterial ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
                 <ListeningQuestionSet cards={listeningCards} />
@@ -2987,9 +3026,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
                       {assessmentCard.rows.map((row, i) => {
                         const id = rowId(row, i);
+                        const taskGroup = assessmentCard.taskGroups?.find(group => group.rowIds[0] === id);
                         return (
+                          <React.Fragment key={id}>
+                          {taskGroup && (
+                            <h3 style={{ margin: '24px 0 8px', paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}`, font: `600 16px/1.4 ${SERIF}`, color: INK }}>
+                              {taskGroup.label} · {taskGroup.marks} marks
+                            </h3>
+                          )}
                           <MarkRowView
-                            key={id}
                             row={row} id={id} index={i}
                             claim={claimOf(id)}
                             showMarks={showsRowMarks(assessmentCard)}
@@ -3008,8 +3053,27 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                             onClaim={setClaim}
                             onPick={togglePick}
                           />
+                          </React.Fragment>
                         );
                       })}
+
+                      {assessmentCard.questionBonus && (
+                        <div style={{ marginTop: 18, paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}` }}>
+                          <h3 style={{ margin: '0 0 8px', font: `600 16px/1.4 ${SERIF}`, color: INK }}>Question bonus</h3>
+                          <MarkRowView
+                            row={assessmentCard.questionBonus}
+                            id={assessmentCard.questionBonus.id}
+                            index={assessmentCard.rows.length}
+                            claim={claimOf(assessmentCard.questionBonus.id)}
+                            showMarks={true}
+                            blocked={false}
+                            reduced={reduced}
+                            picks={[]}
+                            onClaim={setClaim}
+                            onPick={togglePick}
+                          />
+                        </div>
+                      )}
 
                       {assessmentCard.tariffModel.kind === 'orderedSplit' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>

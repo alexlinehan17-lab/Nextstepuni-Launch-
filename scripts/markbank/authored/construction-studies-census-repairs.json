@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "repairs": [
+    {
+      "year": 2015,
+      "level": "hl",
+      "questionNumber": 3,
+      "source": {
+        "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+        "page": 2,
+        "sha256": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+        "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+      },
+      "reason": "The original Q3 introductory options(i)/(ii)describe attachedA anddetachedB buildings. The actual assessed parts(a)–(c)follow. The generic parser retained onlythetwointroductoryromans andabsorbedallthreequestions into(ii),creating16falseorphan cards. Replace these headings withthethreeoriginalletteredtasks;theintroductoryoptions remainmandatorycontext inallreviewedcards.",
+      "prior": [
+        {
+          "key": [
+            3,
+            null,
+            "i"
+          ],
+          "text": "building a single-storey extension onto the rear of the house at A. or",
+          "sha256": "76a33b50da0110edef092a1211c92397ff44979c525a871a0202b34be77f614e"
+        },
+        {
+          "key": [
+            3,
+            null,
+            "ii"
+          ],
+          "text": "building a detached, free-standing space in the garden at B. (a) Discuss in detail two advantages and two disadvantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design and internal layout for an attractive study/family space. Show in your design how the proposed space is to link with the surrounding rear garden. (c) Discuss two advantages of designing a space that links with the rear garden.",
+          "sha256": "27dfa9945a6ea726b6b6f013e1dda093e79d82de3a70e1a10e044370b41ce643"
+        }
+      ],
+      "parts": [
+        {
+          "key": [
+            3,
+            "a",
+            null
+          ],
+          "text": "Discuss in detail two advantages and two disadvantages of each option listed at (i) and (ii) above."
+        },
+        {
+          "key": [
+            3,
+            "b",
+            null
+          ],
+          "text": "Select one of the above options and, using notes and freehand sketches, show a proposed external design and internal layout for an attractive study/family space. Show in your design how the proposed space is to link with the surrounding rear garden."
+        },
+        {
+          "key": [
+            3,
+            "c",
+            null
+          ],
+          "text": "Discuss two advantages of designing a space that links with the rear garden."
+        }
+      ]
+    }
+  ]
+}

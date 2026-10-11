@@ -1,0 +1,461 @@
+{
+  "checkpoint": 587,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "fileid": "LC029ALP000EV.pdf",
+  "component": "theory",
+  "reviewedAt": "2026-10-07T20:21:35.921049+00:00",
+  "status": "2015 Higher main English theory reconciled: final source ledger and all runtime gates passed.",
+  "reviewMethod": "Same-operator final manual source pass, separately enumerated from original paper/mark tables; not independent human certification. Initial whole-source visual intake plus final printed task/route/boundary reconciliation.",
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "sourceChecks": [
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "page": 1,
+      "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+    },
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "page": 2,
+      "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+    },
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "page": 3,
+      "textSha256": "a9a19d86286d787961792a6cc090048e15b4f9827ecde57d3921d926764726db"
+    },
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "page": 4,
+      "textSha256": "67db118f9bd16640d8c6d6998ba582caa9160be34d740a9fc1a10afe94e11475"
+    },
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "page": 5,
+      "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+    },
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "page": 6,
+      "textSha256": "d118a63313d9052bb22d4b4cc9195b267d9cac17a9ec53a9cfc2198a5ac8cc65"
+    },
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "page": 7,
+      "textSha256": "d118a63313d9052bb22d4b4cc9195b267d9cac17a9ec53a9cfc2198a5ac8cc65"
+    },
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "page": 8,
+      "textSha256": "d118a63313d9052bb22d4b4cc9195b267d9cac17a9ec53a9cfc2198a5ac8cc65"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 2,
+      "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 4,
+      "textSha256": "bf3014c1d7d8eaf0b60d6bf75e8e8614ca1f2d13212f1666ecbe384016ef9747"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 5,
+      "textSha256": "a0668ff39c35ab68a66320ae312d1035aafb24f83d2b25f2fda8453571e6f354"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 6,
+      "textSha256": "fb10e160bce5df2510cfaa027af4e557e7cce6f586df90afb01107c0de56596d"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 7,
+      "textSha256": "caf8fccdfff1661565cd87f4a1c5f4a8be2d82cf2b25e2f62dc571012c0df985"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 8,
+      "textSha256": "6883c56128dc91ae2d600729985229a95ab068b118428ce0929cc0727cbd2400"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 9,
+      "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 10,
+      "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 11,
+      "textSha256": "6704a1da818a867585d08691de9ab8297ef5e468d96b847efd8d67e7eeb8cc68"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 12,
+      "textSha256": "bfb6a3f7c3af09c0302fddf9e6de855f0acdbd58837e0dfb5b076e918677558a"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 13,
+      "textSha256": "e0741f17688f900301dcf02b22d487e8371d40d9f6eaeef427f027b1ce6e9e21"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 14,
+      "textSha256": "e4403a6c0c6522d8a433b8de468cba3ae71ffd9df372129175bc912da2e6cadb"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 15,
+      "textSha256": "d0b565e02b8815321532c3242abc9d691819cc362cdab6a9036af16ecaa79de7"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 16,
+      "textSha256": "7317edc51959850290726d49fcf28ead9f12b49e0ec4a9b15073f8e32d7b7c41"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 17,
+      "textSha256": "dc5f2b29bb54efadba56b813918032c3e77638544395226585ce95c1973d55fb"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 18,
+      "textSha256": "f4a8d3e31ead2959911a9795169f46406e3642e76f46b472447f85c28615551d"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 19,
+      "textSha256": "2f5ce60023bddd9de7aaf13c175a2867366d0910ebf72faf3136de227d21b9bb"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 20,
+      "textSha256": "7a98782b47e7245fc1cc026cb815c5f1a0a4d907b8a10b3296c6345e736470ad"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 21,
+      "textSha256": "25ecd6606a44844d93d8c949b89cfa213132e97c080b4d20a9fbe5b3feba96b1"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 22,
+      "textSha256": "ef157504b4721e01d0bc28b70dc6fb5a8ab436f41d0ad82381193e9dd43dad96"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 23,
+      "textSha256": "9c12c0805b3fc3c192cfff4403640cf78e65e7d65ec9b1176f79e7d239fcb1f1"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 24,
+      "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 25,
+      "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 26,
+      "textSha256": "9a604ada8f84ac13e2ee8116a5f957613bf3954fdd039dd5ccebb3577ce74e38"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 27,
+      "textSha256": "f1b521e54eb94e620028d1a598edc2d0f602f205d06bfd16fa37692f6b7fdcb1"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 28,
+      "textSha256": "47459481bf9f744aa56377564afd963edcfad85fbc7b64efc704f92eb3c3e20d"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 29,
+      "textSha256": "a5c2fb0dff1b554c09183b8809512b811d7d785873f7e01d40c1636d618c08f6"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 30,
+      "textSha256": "79a8a287a8db043326ce5a07dc6daf76f875b4f3d96d259e87fdae257e98a739"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 32,
+      "textSha256": "d1196401c8f85885b7bd6edda1de66009991bf2732d4166865c2198e6e82db76"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 33,
+      "textSha256": "ffca3c819c4fdaa72698588492c06f8f7a69e69aec9844ec201c2116057da3a1"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 34,
+      "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 35,
+      "textSha256": "38637f871831c7e7faad2d8510ea4078f0b8a52b4711c54437a6254887363ea6"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 36,
+      "textSha256": "2df61ee76fdc1bf13e997622983e88f00ad69e2887e4a9ac3b496a67618b394b"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 37,
+      "textSha256": "1739fa80ba14617d85eab8769672ff12a0e0fadaf0d5e7487216b21a5e803014"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 38,
+      "textSha256": "cb2d02aac0bf0d778a737d17d627f01d1f4f5af7904d16f68dd35edf988a0521"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 39,
+      "textSha256": "216b1017df458bd861e9b2d26af8d69e443e1fee4bd5e2b05ce474d9ed1578c5"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 40,
+      "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 41,
+      "textSha256": "164e18b0f7aedf8ae18476918726ab188c9c804f90d8e3bdb3aa619c53835a45"
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 42,
+      "textSha256": "ea2ec784ea345d02604940c631e76f7f23b3c917453314913d94e9be23197789"
+    }
+  ],
+  "questions": [
+    {
+      "q": "1",
+      "paper": 2,
+      "scheme": [
+        4,
+        5,
+        32
+      ],
+      "marks": {
+        "a": 52,
+        "b": 8
+      },
+      "wholeRoutes": 1,
+      "tasks": 3,
+      "review": "a: best11 drawing/annotation details3+1=44 plus draughting4/scale4; b single shared8 access criterion, no invented4+4. Required 1:10 section from500mm below floor to300mm above frame; door/wall/floor specification carried throughout."
+    },
+    {
+      "q": "2",
+      "paper": 2,
+      "scheme": [
+        6,
+        7,
+        8,
+        33
+      ],
+      "marks": {
+        "a": 24,
+        "b": 24,
+        "c": 12
+      },
+      "wholeRoutes": 1,
+      "tasks": 4,
+      "review": "Three functional requirements are open; three wall systems are open; any2 of the student-selected systems is response-dependent, not a finite named printed pool. b includes materials3 and dimensions3 in addition to notes/sketches18. c evaluations3+3, recommendation3, justification3."
+    },
+    {
+      "q": "3",
+      "paper": 2,
+      "scheme": [
+        9,
+        10,
+        11,
+        34
+      ],
+      "marks": {
+        "a": 24,
+        "b": 30,
+        "c": 6
+      },
+      "wholeRoutes": 2,
+      "tasks": 18,
+      "review": "a requires BOTH A and B, two advantages and two disadvantages of EACH. Only b chooses A or B. b splits external12/internal12/garden-link6. c two open advantages3each. Retain south M–M wall,400mm wall and5×3m study/family space."
+    },
+    {
+      "q": "4",
+      "paper": 3,
+      "scheme": [
+        12,
+        13,
+        14,
+        35
+      ],
+      "marks": {
+        "a": 20,
+        "b": 40
+      },
+      "wholeRoutes": 9,
+      "tasks": 21,
+      "review": "a choose2of3 local character/breathability/reuse. b choose2of3 roof/windows/floor. Independent pairs yield3×3=9 whole60 routes. Roof/windows/floor source examples remain complete, including composite panels."
+    },
+    {
+      "q": "5",
+      "paper": 3,
+      "scheme": [
+        15,
+        16,
+        17,
+        36
+      ],
+      "marks": {
+        "a": 30,
+        "b": 20,
+        "c": 10
+      },
+      "wholeRoutes": 1,
+      "tasks": 6,
+      "review": "a wall U-value30 despite incorrect scheme heading ground floor. b BOTH new10 and existing10. Printed8h×7days×35weeks=1960h controls over scheme3157h typo. Literal input calculation and scheme rounding alternatives retained. c window-head water ingress notes5/sketch5."
+    },
+    {
+      "q": "6",
+      "paper": 4,
+      "scheme": [
+        18,
+        19,
+        20,
+        37
+      ],
+      "marks": {
+        "a": 30,
+        "b": 20,
+        "c": 10
+      },
+      "wholeRoutes": 3,
+      "tasks": 11,
+      "review": "a three open low-impact features10each. b fixed choose2of3 compact form/flexible design/low maintenance; three pairs. c open NZEB discussion point4/discussion6; qualify historical source claims. No menu fanout for a."
+    },
+    {
+      "q": "7",
+      "paper": 4,
+      "scheme": [
+        21,
+        38
+      ],
+      "marks": {
+        "a": 52,
+        "b": 8
+      },
+      "wholeRoutes": 1,
+      "tasks": 5,
+      "review": "a best10 details3+1=40, fourdimensions4, scale4/draughting4. b explicitly eaves4/ridge4. Printed225×40mm floor joists retained over generic ceiling-joist wording;45°,6m,400mmwall,100mmsupport,25mmboards,three slate courses."
+    },
+    {
+      "q": "8",
+      "paper": 4,
+      "scheme": [
+        22,
+        23,
+        39
+      ],
+      "marks": {
+        "a": 40,
+        "b": 8,
+        "c": 12
+      },
+      "wholeRoutes": 1,
+      "tasks": 6,
+      "review": "a best9 details3+1=36 plus2pipesizes2each=4. b notes4/sketch4. c chimney6 andhotpress6, eachnotes3/sketch3. Two independent zones andthree radiators EACHfloor;stove+solarthermalforheatingANDhotwater. Storagecapacitiesnotpipesizes."
+    },
+    {
+      "q": "9",
+      "paper": 5,
+      "scheme": [
+        24,
+        25,
+        40
+      ],
+      "marks": {
+        "a": 48,
+        "b": 12
+      },
+      "wholeRoutes": 4,
+      "tasks": 13,
+      "review": "FOUR circled locations:eaves,upperfloor,cill,groundfloor. Any3=>4triples,eachlocationnotes8/sketch8. Windowhead in scheme is NOT a fifthcircledoption. b twoopenpoints2+discussion4 each."
+    },
+    {
+      "q": "10",
+      "paper": 5,
+      "scheme": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        41,
+        42
+      ],
+      "marks": {
+        "primary-a": 32,
+        "primary-b": 14,
+        "primary-c": 14,
+        "alternative-discussion": 24,
+        "alternative-glazing": 6,
+        "alternative-guidelines": 30
+      },
+      "wholeRoutes": 4,
+      "tasks": 15,
+      "review": "PRIMARY achoose2of3airtightness/spaceheating/indoorair=>3pairs,16each. bthermalmass14,cshading14. ALTERNATIVE separately60:threeopenpoints3+5each=24,glazing6shared,threeopenguidelines4+6each=30. Originalpassageincluded. Bothalternatives share printedQ10 Atlasanchor;never120."
+    }
+  ],
+  "reviewedTasks": 102,
+  "wholeQuestionRoutes": 27,
+  "wholeQuestionTariff": 60,
+  "originalNumberedQuestions": 10,
+  "originalPrintedAlternativeQuestion10": true,
+  "blankPaperPages": [
+    6,
+    7,
+    8
+  ],
+  "printedAsksCovered": 27,
+  "printedAsksOpen": 0,
+  "orphanCards": 0,
+  "unparsedCards": 0,
+  "wholeExamSelection": "Question1 plus four other questions for300 marks. This selects questions from the paper, not another independently practicable single-question task; no full-exam Cartesian deck is generated.",
+  "sourceFigures": 35,
+  "atlasBridge": "scripts/markbank/atlas-reviews/construction-studies-2015-higher.json",
+  "cautions": [
+    "Do not equate102cards or27censusasks with independent proof; evidence is the original page/marking-boundary ledger and question source validators.",
+    "2015practical150-mark component and Irish edition remain separate open work.",
+    "Other years/levels remain open; older2010–2014asks inlegacydenominator are outside active2015–2026scope."
+  ],
+  "publication": "Local only; no commit/push/deploy or preservation-baseline reset.",
+  "validatedAt": "2026-10-07T20:22:55.422778+00:00",
+  "validationReport": "construction-q7-q10-validation.json",
+  "componentComplete": true
+}

@@ -1,3 +1,4 @@
+import { CONSTRUCTION_2015_HIGHER_REVIEWED_IDS } from './fixtures/construction2015Reviewed';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -752,11 +753,14 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
   .update(cards.map((card) => card.id).sort().join('\n'))
   .digest('hex');
 
+const recoveredConstructionIds = new Set(CONSTRUCTION_2015_HIGHER_REVIEWED_IDS);
+
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    expect(cards.length, `${name}: card count changed`).toBe(count);
-    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(count);
-    expect(identityHash(cards), `${name}: a card ID was removed or replaced`).toBe(hash);
+    const previous = cards.filter(card => !recoveredConstructionIds.has(card.id));
+    expect(previous.length, `${name}: previous card count changed`).toBe(count);
+    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
+    expect(identityHash(previous), `${name}: a card ID was removed or replaced`).toBe(hash);
   });
 
   it('protects the complete current bank', () => {
@@ -767,7 +771,7 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328 + recoveredConstructionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -825,7 +829,7 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
-      .reduce((total, [, cards]) => total + cards.length, 0);
+      .reduce((total, [, cards]) => total + cards.filter(card => !recoveredConstructionIds.has(card.id)).length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 
