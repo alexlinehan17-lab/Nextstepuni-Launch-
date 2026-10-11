@@ -480,19 +480,8 @@ const decks = [
    * census-held; every 2026 task ships with its complete official source set.
    * The 2021 HL Q6C choose-two audit also adds its nine missing combinations
    * while retaining the original card id for saved-progress continuity. */
-  /* 2026-10-11: the 2026 Higher sitting was independently reviewed paper by
-   * paper. 445 -> 498: every one of its 73 shipped ids survives (an id that
-   * named a whole question now names that question's first separately priced
-   * part) and 53 ids are added for the other printed parts the scheme prices
-   * on their own. The added ids are listed in
-   * scripts/markbank/authored/geography-reviewed-audit.json; removing them
-   * reproduces the previous frozen hash exactly (asserted below). */
-  ['geography:higher', GEOGRAPHY_HIGHER, 498, 'b3da6e37a9382a9e46982e8bbe25bc93db763372cf8e582d4597c1cb1d5e014a'],
-  /* 2026-10-11: the 2026 Ordinary sitting was reviewed the same way. 309 ->
-   * 387: all 58 of its shipped ids survive and 78 are added, one per
-   * separately priced printed part (the Ordinary scheme prices every A, B
-   * and C roman on its own). Removing them reproduces the previous hash. */
-  ['geography:ordinary', GEOGRAPHY_ORDINARY, 387, '35b9adba5bbba2a0c019e5460937490544ce76a2b7f7bcee23d7cad549602c49'],
+  ['geography:higher', GEOGRAPHY_HIGHER, 445, '7768fb37a748daf2cda31ae9f8c97b6bb632b44f1243332ce5edfac06361bacc'],
+  ['geography:ordinary', GEOGRAPHY_ORDINARY, 309, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
   /* Recovered from the completed Computer Science authoring branch and rebuilt
    * through the same source, tariff, figure and structural guards as every
    * other subject. */
@@ -764,11 +753,24 @@ const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
   .update(cards.map((card) => card.id).sort().join('\n'))
   .digest('hex');
 
+// Keep the original Geography count/hash frozen. Independently reviewed
+// sittings (scripts/markbank/authored/geography-reviewed-audit.json) keep every
+// shipped ID — an ID that named a whole question now names its first
+// separately priced part — and add new IDs for the other printed parts and
+// routes. Those additions are tracked here, on top of the frozen set.
+const geographyLegacyIds = new Set(geographyReview.reviewedSittings
+  .flatMap(sitting => sitting.legacyIds));
+const geographyAdditionIds = new Set<string>(geographyReview.reviewedSittings
+  .flatMap(sitting => sitting.addedIds));
+const frozenCards = (name: string, cards: readonly { id: string }[]) =>
+  name.startsWith('geography:') ? cards.filter(card => !geographyAdditionIds.has(card.id)) : cards;
+
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    expect(cards.length, `${name}: card count changed`).toBe(count);
-    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(count);
-    expect(identityHash(cards), `${name}: a card ID was removed or replaced`).toBe(hash);
+    const preserved = frozenCards(name, cards);
+    expect(preserved.length, `${name}: frozen card count changed`).toBe(count);
+    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
+    expect(identityHash(preserved), `${name}: a card ID was removed or replaced`).toBe(hash);
   });
 
   it('protects the complete current bank', () => {
@@ -779,8 +781,9 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    // Geography's 2026 reviews add separately priced parts: 19,328 + 53 (Higher) + 78 (Ordinary).
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_459);
+    // Geography keeps its original card set frozen; reviewed additions are counted on top.
+    expect(decks.reduce((total, [name, cards]) => total + frozenCards(name, cards).length, 0)).toBe(19_328);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328 + geographyAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -838,9 +841,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
-      .reduce((total, [, cards]) => total + cards.length, 0);
-    // 9,768 + the 53 + 78 Geography parts added by the 2026 reviews.
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_899);
+      .reduce((total, [name, cards]) => total + frozenCards(name, cards).length, 0);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
@@ -849,23 +851,34 @@ describe('Mark Bank card preservation', () => {
       .map(card => card.id));
     expect(addedHigherRoutes.size).toBe(9);
     expect(identityHash(GEOGRAPHY_HIGHER.filter(card =>
-      card.year <= 2025 && !addedHigherRoutes.has(card.id))))
+      card.year <= 2025 && !addedHigherRoutes.has(card.id) && !geographyAdditionIds.has(card.id))))
       .toBe('db478deb519637edeacce1fd96db3cf50e893e7cf1e8a72cc28c40694b0281ea');
-    expect(identityHash(GEOGRAPHY_ORDINARY.filter(card => card.year <= 2025)))
+    expect(identityHash(GEOGRAPHY_ORDINARY.filter(card =>
+      card.year <= 2025 && !geographyAdditionIds.has(card.id))))
       .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
   });
 
-  it.each([
-    ['higher', GEOGRAPHY_HIGHER, 53, '7768fb37a748daf2cda31ae9f8c97b6bb632b44f1243332ce5edfac06361bacc'],
-    ['ordinary', GEOGRAPHY_ORDINARY, 78, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
-  ] as const)('adds the reviewed 2026 %s Geography parts without replacing a card id',
-    (level, cards, count, previous) => {
-      const review = geographyReview.reviewedSittings
-        .find(sitting => sitting.year === 2026 && sitting.level === level)!;
-      const added = new Set<string>(review.addedIds);
-      expect(added.size).toBe(count);
-      expect(identityHash(cards.filter(card => !added.has(card.id)))).toBe(previous);
-    });
+  it('adds the reviewed Geography parts on top of the frozen 754 without replacing any', () => {
+    /* 2026-10-11: 2026 Higher (+53) and 2026 Ordinary (+78), each reviewed
+     * page by page against its scheme. Every addition is a new, unique ID that
+     * never reuses an original ID; every reviewed sitting's shipped IDs are
+     * still present. */
+    expect(geographyAdditionIds.size).toBe(131);
+    const all = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY];
+    const ids = all.map(card => card.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    const flat = geographyReview.reviewedSittings.flatMap(sitting => sitting.addedIds);
+    expect(flat).toHaveLength(geographyAdditionIds.size);
+    for (const id of geographyAdditionIds) {
+      expect(ids, id).toContain(id);
+      expect(geographyLegacyIds.has(id), id).toBe(false);
+    }
+    for (const id of geographyLegacyIds) expect(ids, id).toContain(id);
+    expect(GEOGRAPHY_HIGHER).toHaveLength(445 + GEOGRAPHY_HIGHER
+      .filter(card => geographyAdditionIds.has(card.id)).length);
+    expect(GEOGRAPHY_ORDINARY).toHaveLength(309 + GEOGRAPHY_ORDINARY
+      .filter(card => geographyAdditionIds.has(card.id)).length);
+  });
 
   it('adds the Art choose-two routes without replacing any existing card id', () => {
     const correctionIds = new Set(ART_ORDINARY
