@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 1565,
-  "reviewedTasks": 1088,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 1571,
+  "reviewedTasks": 1129,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 295,
+  "targetedRegressionTests": 292,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -560,5 +560,41 @@
     "schemeReaderRenders": true,
     "escapeAndFocusReturn": true,
     "pageErrors": []
+  },
+  "higher2023p2": {
+    "paper": "2023 Higher Level Paper 2",
+    "paperFileid": "LC003ALP200EV.pdf",
+    "schemeFileid": "LC003ALP000EV.pdf",
+    "reviewedAt": "2026-10-11",
+    "independentlyReviewedTasks": 41,
+    "existingRuntimeCardsReviewed": 35,
+    "addedRuntimeCards": [
+      "maths-2023-hl-p2-q2-b",
+      "maths-2023-hl-p2-q8-b-i",
+      "maths-2023-hl-p2-q8-d-i",
+      "maths-2023-hl-p2-q8-d-ii",
+      "maths-2023-hl-p2-q9-c-i"
+    ],
+    "restoredHeldBackCards": [
+      "maths-2023-hl-p2-q1-b"
+    ],
+    "rowRepairs": [
+      "maths-2023-hl-p2-q8-a",
+      "maths-2023-hl-p2-q9-a-i",
+      "maths-2023-hl-p2-q8-ii"
+    ],
+    "correctionsUpdated": [
+      "maths-2023-hl-p2-q4-ii",
+      "maths-2023-hl-p2-q8-ii"
+    ],
+    "historicalRejectsRemaining": 5,
+    "targetedRegressionTests": 292,
+    "previousRuntimeIdsRetained": 1565,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 34,
+    "coverageBaseline": "1142/3474 asks covered, 0 orphans, 0 excluded, 2332 open",
+    "validation": "Deck generation (1,571 built, 5 historical rejects), Atlas generation and --check (286 placements), audit --check-reviewed, ten regression files (292/292), typecheck and diff whitespace check passed."
   }
 }

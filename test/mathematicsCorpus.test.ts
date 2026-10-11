@@ -27,6 +27,7 @@ import paper2 from '../scripts/markbank/mathematics/reviews/2025-higher-p2.json'
 import higher2024p1 from '../scripts/markbank/mathematics/reviews/2024-higher-p1.json';
 import higher2024p2 from '../scripts/markbank/mathematics/reviews/2024-higher-p2.json';
 import higher2023p1 from '../scripts/markbank/mathematics/reviews/2023-higher-p1.json';
+import higher2023p2 from '../scripts/markbank/mathematics/reviews/2023-higher-p2.json';
 import ordinary2024p1 from '../scripts/markbank/mathematics/reviews/2024-ordinary-p1.json';
 import ordinary2024p2 from '../scripts/markbank/mathematics/reviews/2024-ordinary-p2.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
@@ -747,5 +748,37 @@ describe('2023 Higher Mathematics Paper 1 independent source review', () => {
     expect(rate.rows.map(row => row.verbatim).join(' ')).not.toContain('Mathematics – Higher Level');
     const pattern = cards.find(card => card.id === 'maths-2023-hl-p1-q10-c')!;
     expect('mathematicsScale' in pattern && pattern.mathematicsScale?.marks).toEqual([0, 2, 3, 5]);
+  });
+});
+
+describe('2023 Higher Mathematics Paper 2 independent source review', () => {
+  const cards = HIGHER.filter(card => card.year === 2023 && card.questionRef.includes('Paper 2'));
+
+  it('retains all 41 published scale units and all 380 offered marks', () => {
+    expect(cards.map(card => card.id).sort()).toEqual(higher2023p2.cards.map(card => card.id).sort());
+    expect(cards).toHaveLength(41);
+    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(380);
+    for (const [question, marks] of Object.entries(higher2023p2.printedQuestionMarks)) {
+      expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
+        .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
+    }
+  });
+
+  it('restores prompts, corrects citations and files every task in both taxonomies', () => {
+    const specification = resolveCurriculumSpecification('mathematics', 2023)!;
+    for (const task of higher2023p2.cards) {
+      const card = cards.find(candidate => candidate.id === task.id)!;
+      expect(card.stem ?? '', card.id).toBe((task as { stem?: string }).stem ?? '');
+      expect(card.questionText, card.id).toBe(task.questionText);
+      expect(card.questionRef, card.id).toContain(task.printedParts[0].match(/^Q\d+\([a-z]\)/)![0]);
+      expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
+      expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
+      expect(card.topicId, card.id).toBe(task.topicId);
+      expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
+      const question = task.printedParts[0].match(/^Q(\d+)/)![1];
+      expect(examTopicIdsForQuestion('mathematics', 'higher', 2023, 'main', question, 'p2', 'ev', higher2023p2.paperFileid), card.id)
+        .toEqual(expect.arrayContaining(task.examTopicIds));
+      expect(card.rows.map(row => row.verbatim).join(' '), card.id).not.toContain('Mathematics – Higher Level');
+    }
   });
 });

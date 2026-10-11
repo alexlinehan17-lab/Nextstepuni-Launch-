@@ -934,17 +934,19 @@
   },
   "maths": {
     "maths-2023-hl-p2-q4-ii": {
-      "reason": "The paper prints this as part (a)(ii). The scheme parser dropped its parent letter and merged the neighbouring parts into the prompt; this correction restores the exact self-contained task.",
+      "reason": "The paper prints this as part (a)(ii). The scheme parser dropped its parent letter and merged the neighbouring parts into the prompt; this correction restores the exact self-contained task. Stem and ask re-lifted verbatim from the paper in the 2026-10-11 independent review.",
       "set": {
         "questionRef": "2023 HL Paper 2 Q4(a)(ii)",
-        "questionText": "The circle c has equation (x − h)² + (y + 3)² = 12, where h ∈ ℝ. The perpendicular distance from the line x − 4y + 7 = 0 to the centre of the circle c is 5 units. Work out the two possible values of h. Give each answer in surd form."
+        "stem": "The circle c has equation: (x − h)² + (y + 3)² = 12, where h ∈ ℝ.",
+        "questionText": "The perpendicular distance from the line x − 4y + 7 = 0 to the centre of the circle c is 5 units. Work out the two possible values of h. Give each answer in surd form."
       }
     },
     "maths-2023-hl-p2-q8-ii": {
-      "reason": "The paper prints this as part (b)(ii). The scheme parser dropped its parent letter and substituted the asks from parts (a) and (b)(i); this correction restores the data and exact hypothesis-test task.",
+      "reason": "The paper prints this as part (b)(ii). The scheme parser dropped its parent letter and substituted the asks from parts (a) and (b)(i); this correction restores the data and exact hypothesis-test task. Stem and ask re-lifted verbatim from the paper in the 2026-10-11 independent review.",
       "set": {
         "questionRef": "2023 HL Paper 2 Q8(b)(ii)",
-        "questionText": "In Ireland, players’ word-game scores are approximately normally distributed with a mean of 3·87 and a standard deviation of 0·36. A random sample of 64 Galway players has a mean score of 3·74. A local newspaper claims that Galway players have a different mean score to players in Ireland. Carry out a hypothesis test at the 5% level of significance to test this claim. State your null hypothesis, alternative hypothesis, conclusion, and a reason for your conclusion."
+        "stem": "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A random sample of 64 Galway players has a mean score of 3·74. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland. Players in Ireland have a mean score of 3·87 with a standard deviation of 0·36.",
+        "questionText": "Carry out a hypothesis test at the 5% level of significance to test the newspaper’s claim that Galway players have a different mean score to players in Ireland. State your null hypothesis, state your alternative hypothesis, state your conclusion, and give a reason for your conclusion."
       }
     }
   },

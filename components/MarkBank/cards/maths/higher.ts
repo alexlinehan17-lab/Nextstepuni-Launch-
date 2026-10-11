@@ -6837,21 +6837,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q1-a", topicId: "maths-1-2", conceptId: "fiona-plays-game-number-times",
     section: "B", questionRef: "2023 HL Paper 2 Q1(a)",
-    questionText: "Fiona plays the game a number of times",
+    stem: "A circular spinner has 12 sectors, as follows: 5 sectors are labelled €6; 3 sectors are labelled €9; the rest are labelled €0. In a game, the spinner is spun once. The spinner is equally likely to land on each sector. The player gets the amount of money shown on the sector that the spinner lands on.",
+    questionText: "Fiona plays the game a number of times. Work out the probability that Fiona gets €6, then €9, then €6 the first three times she plays. Give your answer correct to 4 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q1-a-r1", kind: "anyN", verbatim: "Any correct relevant probability stated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Full Credit -1: Incorrect rounding or no rounding. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Any correct relevant probability stated","P(€6) = 5/12 and P(€9) = 3/12 and some multiplication indicated\n5/12 × 3/12 × 5/12\n5/12 × 3/11 × 5/10 and continues"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[39],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q1-a.png",
           "srcHash": "921898a180a80d0162363e69c870b4f4",
-          "alt": "The question as printed on the paper — A circular spinner has 12 sectors, as follows: €9 €0 • 5 sectors are labelled €6 €6 €6 • 3 sectors are labelled €9 • The rest are labelled €0. (€0 €0)/(€9 €6) In a game, the spinner is spun once. The spinner is equally… Full card prompt: Fiona plays the game a number of times",
+          "alt": "The question as printed on the paper — A circular spinner has 12 sectors, as follows: €9 €0 • 5 sectors are labelled €6 €6 €6 • 3 sectors are labelled €9 • The rest are labelled €0. (€0 €0)/(€9 €6) In a game, the spinner is spun once. The spinner is equally… Full card prompt: A circular spinner has 12 sectors, as follows: 5 sectors are labelled €6; 3 sectors are labelled €9; the rest are labelled €0. In a game, the spinner is spun once. The spinner is equally likely to land on each sector. The player gets the amount of money shown on the sector that the spinner lands on. Fiona plays the game a number of times. Work out the probability that Fiona gets €6, then €9, then €6 the first three times she plays. Give your answer correct to 4 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -6867,21 +6881,85 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q1-b", topicId: "maths-1-3", conceptId: "rohan-also-plays-game-number-times",
+    section: "B", questionRef: "2023 HL Paper 2 Q1(b)",
+    stem: "A circular spinner has 12 sectors, as follows: 5 sectors are labelled €6; 3 sectors are labelled €9; the rest are labelled €0. In a game, the spinner is spun once. The spinner is equally likely to land on each sector. The player gets the amount of money shown on the sector that the spinner lands on.",
+    questionText: "Rohan also plays the game a number of times. Find the probability that Rohan gets €9 for the 3rd time, on the 8th time that he plays the game. Give your answer correct to 4 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-q1-b-solution-1", kind: "point", verbatim: "= 0·0779 [4 d.p.]", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q1-b-solution-2", kind: "point", verbatim: "Consider the solution as being the product of four terms:", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q1-b-solution-3", kind: "point", verbatim: "Product of two correct terms evaluated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q1-b-solution-4", kind: "point", verbatim: "Product of three correct terms", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q1-b-solution-5", kind: "point", verbatim: "for the last day", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[39],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-HL-ask-p2-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q1-b.png",
+          "srcHash": "9ade8fffad88f4bcd66114b6130b320b",
+          "alt": "The question as printed on the paper — A circular spinner has 12 sectors, as follows: €9 €0 • 5 sectors are labelled €6 €6 €6 • 3 sectors are labelled €9 • The rest are labelled €0. (€0 €0)/(€9 €6) In a game, the spinner is spun once. The spinner is equally… Full card prompt: A circular spinner has 12 sectors, as follows: 5 sectors are labelled €6; 3 sectors are labelled €9; the rest are labelled €0. In a game, the spinner is spun once. The spinner is equally likely to land on each sector. The player gets the amount of money shown on the sector that the spinner lands on. Rohan also plays the game a number of times. Find the probability that Rohan gets €9 for the 3rd time, on the 8th time that he plays the game. Give your answer correct to 4 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-HL-paper-p038-i1",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p038-i1.png",
+          "srcHash": "f20acd60dcc444392d7588ead757e10b",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: Success = getting a 9 P(success) = 1/4 Failure = not getting a 9 P(failure) = 3/4 2 successes in first 7 spins and then success = (7 2) (1/4) 2 (3/4) 5 × 1/4 = 0 · 07786 … = 0 · 0779 [4 d.p.] Mathematics – Higher Level",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q1-c", topicId: "maths-1-2", conceptId: "olga-plays-game-times-probability-olga",
     section: "B", questionRef: "2023 HL Paper 2 Q1(c)",
-    questionText: "Olga plays the game 2 times. Find the probability that Olga gets less than €16 in total from playing the game. Give your answer correct to 4 decimal places",
+    stem: "A circular spinner has 12 sectors, as follows: 5 sectors are labelled €6; 3 sectors are labelled €9; the rest are labelled €0. In a game, the spinner is spun once. The spinner is equally likely to land on each sector. The player gets the amount of money shown on the sector that the spinner lands on.",
+    questionText: "Olga plays the game 2 times. Find the probability that Olga gets less than €16 in total from playing the game. Give your answer correct to 4 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q1-c-r1", kind: "anyN", verbatim: "Relevant probability\nRelevant work on establishing the condition, for example, indicates P(9,9), or lists three that are in line with the condition (e.g.,(0,0), (0,6), (0,9))", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit -1: No rounding or incorrect rounding. Note: Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Relevant probability\nRelevant work on establishing the condition, for example, indicates P(9,9), or lists three that are in line with the condition (e.g.,(0,0), (0,6), (0,9))","1/4 × 1/4 indicated\nProbability calculated correctly for three pairs on the table??","16 or equivalent\nProbability calculated correctly for six pairs on the table??"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[40],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q1-c.png",
           "srcHash": "090cd6d13af445e229381ea94e087bde",
-          "alt": "The question as printed on the paper — A circular spinner has 12 sectors, as follows: €9 €0 • 5 sectors are labelled €6 €6 €6 • 3 sectors are labelled €9 • The rest are labelled €0. (€0 €0)/(€9 €6) In a game, the spinner is spun once. The spinner is equally… Full card prompt: Olga plays the game 2 times. Find the probability that Olga gets less than €16 in total from playing the game. Give your answer correct to 4 decimal places",
+          "alt": "The question as printed on the paper — A circular spinner has 12 sectors, as follows: €9 €0 • 5 sectors are labelled €6 €6 €6 • 3 sectors are labelled €9 • The rest are labelled €0. (€0 €0)/(€9 €6) In a game, the spinner is spun once. The spinner is equally… Full card prompt: A circular spinner has 12 sectors, as follows: 5 sectors are labelled €6; 3 sectors are labelled €9; the rest are labelled €0. In a game, the spinner is spun once. The spinner is equally likely to land on each sector. The player gets the amount of money shown on the sector that the spinner lands on. Olga plays the game 2 times. Find the probability that Olga gets less than €16 in total from playing the game. Give your answer correct to 4 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -6897,16 +6975,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q2-a", topicId: "maths-2-3", conceptId: "prove-sin-sin-acos-cos-asin",
     section: "B", questionRef: "2023 HL Paper 2 Q2(a)",
-    questionText: "Prove that sin(A + B) = sin Acos B + cos Asin B",
+    questionText: "Prove that sin(A + B) = sin A cos B + cos A sin B.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q2-a-r1", kind: "anyN", verbatim: "Work of merit, for example 30 + 45, or some correct substitution into relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Note: OR √2) + √3 2( 2( √2) for full credit. Note: Accept. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example 30 + 45, or some correct substitution into relevant formula","sin 30 cos 45 + cos 30 sin 45 or equivalent"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[41],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q2-a.png",
@@ -6927,16 +7018,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q2-c", topicId: "maths-2-3", conceptId: "all-solutions-equation-360-sin-sin",
     section: "B", questionRef: "2023 HL Paper 2 Q2(c)",
-    questionText: "Find all solutions of the following equation in t, for 0° ≤t ≤ 360°: sin t = sin(2t)",
+    questionText: "Find all solutions of the following equation in t, for 0° ≤ t ≤ 360°: sin t = sin(2t)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q2-c-r1", kind: "anyN", verbatim: "Work of merit, for example, effort to expand sin2t or some correct transposition", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Full Credit –1: Apply a * for each solution omitted from Step 3 or Step 4 Method 2. Note: Method 1 Consider as involving 4 steps: 1. Replaces sin2t with 2 sintcost 2. sint[1 − 2 cost] = 0 stated or implied 3. Solves sint = 0 4. Solves 1 −2 cost = 0 OR 1. sin2t−sint = 0 2. 2cos 3t/2 sin t/2 = 0 3. Solves cos 3t/2 = 0 4. Solves sin t/2 = 0. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Work of merit, for example, effort to expand sin2t or some correct transposition","2 steps correct","3 steps correct","One correct solution","3 correct values verified","4 correct values verified\nAll values correct but no work shown"],"perOptionSteps":[3,2,3,2]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[42],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q2-c",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q2-c.png",
@@ -6957,16 +7061,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q3-a", topicId: "maths-2-3", conceptId: "area-triangle-vertices",
+    id: "maths-2023-hl-p2-q3-a", topicId: "maths-2-2", conceptId: "area-triangle-vertices",
     section: "B", questionRef: "2023 HL Paper 2 Q3(a)",
-    questionText: "Find the area of the triangle with vertices (4, 6), (−3, −1), and (0, 11)",
+    questionText: "Find the area of the triangle with vertices (4, 6), (−3, −1), and (0, 11).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p2-q3-a-r1", kind: "anyN", verbatim: "Work of merit in translating one point to (0,0)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Note: Method1. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Work of merit in translating one point to (0,0)","Three points correctly translated\nTwo of the given points subbed in to the area formula and evaluated","Correct substitution into Area formula\nOne error in translating points and finishes correctly Method 2","Work of merit, for example, finds one relevant piece of data eg. length of one side","All information relevant to one formula calculated, for example, the lengths of 2 sides and the included angle; or the length of one side and the perpendicular height","Correct substitution into Area formula"],"perOptionSteps":[4,4,4,3]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[43],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q3-a.png",
@@ -6987,16 +7104,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q3-b-i", topicId: "maths-2-2", conceptId: "midpoint",
     section: "B", questionRef: "2023 HL Paper 2 Q3(b)(i)",
-    questionText: "Show that the midpoint of [AB] is (2, k+l 2 )",
+    stem: "A(−1, k) and B(5, l) are two points, where k, l ∈ ℚ.",
+    questionText: "Show that the midpoint of [AB] is (2, (k + l)/2).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p2-q3-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into relevant formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, some correct substitution into relevant formula"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[44],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q3-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q3-b-i.png",
@@ -7017,16 +7148,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q3-b-ii", topicId: "maths-2-2", conceptId: "perpendicular-bisector-value-value",
     section: "B", questionRef: "2023 HL Paper 2 Q3(b)(ii)",
-    questionText: "The perpendicular bisector of [AB] is: 3x+ 2y−14 = 0 Find the value of l and the value of k",
+    stem: "A(−1, k) and B(5, l) are two points, where k, l ∈ ℚ.",
+    questionText: "The perpendicular bisector of [AB] is: 3x + 2y − 14 = 0. Find the value of l and the value of k.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q3-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant use of midpoint of [A, B], or finds a relevant slope (of AB or of bisector)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, relevant use of midpoint of [A, B], or finds a relevant slope (of AB or of bisector)","Equation 1 or 2 correct found\nFinds equation of perpendicular bisector in terms of l and k","Equation 1 and 2 correct found"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[45],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q3-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q3-b-ii.png",
@@ -7047,16 +7192,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q4-ii", topicId: "maths-2-2", conceptId: "circle-has-equation-write-down-centre",
     section: "B", questionRef: "2023 HL Paper 2 Q4(a)(ii)",
-    questionText: "The circle c has equation (x − h)² + (y + 3)² = 12, where h ∈ ℝ. The perpendicular distance from the line x − 4y + 7 = 0 to the centre of the circle c is 5 units. Work out the two possible values of h. Give each answer in surd form.",
+    stem: "The circle c has equation: (x − h)² + (y + 3)² = 12, where h ∈ ℝ.",
+    questionText: "The perpendicular distance from the line x − 4y + 7 = 0 to the centre of the circle c is 5 units. Work out the two possible values of h. Give each answer in surd form.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p2-q4-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some substitution into relevant formula, or draws diagram with relevant figures (5, centre marked, and line)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: 3 steps: 1. (|h−4(−3) + 7|)/(√(1)² + (−4)²) (|h−4(−3) + 7|)/(√(1)² + (−4)²) 2. (|ℎ−4(−3) + 7|)/(√(1)² + (−4)²) (|ℎ−4(−3) + 7|)/(√(1)² + (−4)²) = 5 3. Find values of h. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, some substitution into relevant formula, or draws diagram with relevant figures (5, centre marked, and line)","1 step correct","2 steps correct"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[46],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q4-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q4-ii.png",
@@ -7077,16 +7236,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q4-a-i", topicId: "maths-2-2", conceptId: "write-down-centre-radius-circle-terms",
     section: "B", questionRef: "2023 HL Paper 2 Q4(a)(i)",
-    questionText: "Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate",
+    stem: "The circle c has equation: (x − h)² + (y + 3)² = 12, where h ∈ ℝ.",
+    questionText: "Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q4-a-i-r1", kind: "anyN", verbatim: "Work of merit towards finding x- ordinate or y-ordinate of the centre", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit towards finding x- ordinate or y-ordinate of the centre","Centre or radius correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[46],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q4-a-i.png",
@@ -7107,21 +7280,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q4-b", topicId: "maths-3-1", conceptId: "circle-passes-through-points-shown-diagram",
+    id: "maths-2023-hl-p2-q4-b", topicId: "maths-2-2", conceptId: "circle-passes-through-points-shown-diagram",
     section: "B", questionRef: "2023 HL Paper 2 Q4(b)",
-    questionText: "The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 <a<5, a∈ℝ",
+    questionText: "The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 < a < 5, a ∈ ℝ. The radius of the circle s is √20. Find the equation of the circle s.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p2-q4-b-r1", kind: "anyN", verbatim: "Some correct substitution of relevant point", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Full Credit –1: Finds the relevant constants, but equation of circle not stated; Finds equation of circles for both values of h but does not select the correct one. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Some correct substitution of relevant point","Finds k = −1\nFinds f = 1\n4 independent equations in g, f, c and a","k = −1 and quadratic equation in h\nFinds f = 1 and quadratic equation in g"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[47],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q4-b.png",
           "srcHash": "2244afdfb039c90e57adc26f434aaeab",
-          "alt": "The question as printed on the paper — The circle s passes through the points s (8, 1), (a, 3), and (a, −5), as shown in the (a, 3) diagram on the right (not to scale), where 0 < a < 5, a∈ℝ. (8, 1) The radius of the circle s is √20. x Find the equation of… Full card prompt: The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 <a<5, a∈ℝ",
+          "alt": "The question as printed on the paper — The circle s passes through the points s (8, 1), (a, 3), and (a, −5), as shown in the (a, 3) diagram on the right (not to scale), where 0 < a < 5, a∈ℝ. (8, 1) The radius of the circle s is √20. x Find the equation of… Full card prompt: The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 < a < 5, a ∈ ℝ. The radius of the circle s is √20. Find the equation of the circle s.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7137,21 +7323,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q5-a-i", topicId: "maths-1-6", conceptId: "work-out-mean-standard-deviation-number",
     section: "B", questionRef: "2023 HL Paper 2 Q5(a)(i)–(iii)",
-    questionText: "Work out the mean and standard deviation of the number of red cubes per trial, for these 7 trials. Give each answer correct to 1 decimal place",
+    stem: "Rohan has a large number of small cubes. The cubes are identical in size. Some of the cubes are red, some are green, and the rest are blue. Rohan carries out an experiment in which he picks out 5 different cubes at random. He records the number of cubes of each colour, and replaces the 5 cubes. He then repeats this process a number of times. The table below shows the number of cubes of each colour the first 7 times Rohan does this, labelled Trial A to Trial G: red 0, 3, 2, 2, 4, 5, 1; green 4, 2, 0, 3, 0, 0, 2; blue 1, 0, 3, 0, 1, 0, 2.",
+    questionText: "(i) Work out the mean and standard deviation of the number of red cubes per trial, for these 7 trials. Give each answer correct to 1 decimal place. (ii) Work out the correlation coefficient between the number of red cubes and the number of green cubes per trial, for these 7 trials. Give your answer correct to 3 decimal places. (iii) Rohan repeats this experiment a large number of times. Explain why you would expect the correlation coefficient between the number of red cubes and the number of green cubes per trial to be negative.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 12, 17, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "maths-2023-hl-p2-q5-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, finds the total number of red cubes", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 12, three parts for 17. The full scale runs to 20. Full Credit -1: One or more answers not to required number of decimal places. Note: Accept correct answer without supporting work Consider solution as requiring 4 items: 1. Mean 2. Standard deviation 3. r 4. Explanation. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Work of merit, for example, finds the total number of red cubes","1 item correct and work of merit in any other item","3 items correct"],"perOptionSteps":[6,6,8]} },
     ],
+    mathematicsScale: {"code":"20D","marks":[0,6,12,17,20],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[48],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q5-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q5-a-i.png",
           "srcHash": "65991ab9268fb896bfb1dde8ee96cf8a",
-          "alt": "The question as printed on the paper — Rohan has a large number of small cubes. The cubes are identical in size. Some of the cubes are red, some are green, and the rest are blue. Rohan carries out an experiment in which he picks out 5 different cubes at… Full card prompt: Work out the mean and standard deviation of the number of red cubes per trial, for these 7 trials. Give each answer correct to 1 decimal place",
+          "alt": "The question as printed on the paper — Rohan has a large number of small cubes. The cubes are identical in size. Some of the cubes are red, some are green, and the rest are blue. Rohan carries out an experiment in which he picks out 5 different cubes at… Full card prompt: Rohan has a large number of small cubes. The cubes are identical in size. Some of the cubes are red, some are green, and the rest are blue. Rohan carries out an experiment in which he picks out 5 different cubes at random. He records the number of cubes of each colour, and replaces the 5 cubes. He then repeats this process a number of times. The table below shows the number of cubes of each colour the first 7 times Rohan does this, labelled Trial A to Trial G: red 0, 3, 2, 2, 4, 5, 1; green 4, 2, 0, 3, 0, 0, 2; blue 1, 0, 3, 0, 1, 0, 2. (i) Work out the mean and standard deviation of the number of red cubes per trial, for these 7 trials. Give each answer correct to 1 decimal place. (ii) Work out the correlation coefficient between the number of red cubes and the number of green cubes per trial, for these 7 trials. Give your answer correct to 3 decimal places. (iii) Rohan repeats this experiment a large number of times. Explain why you would expect the correlation coefficient between the number of red cubes and the number of green cubes per trial to be negative.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7167,21 +7367,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q5-b", topicId: "maths-1-6", conceptId: "rohan-makes-solid-cuboid-dimensions-using",
+    id: "maths-2023-hl-p2-q5-b", topicId: "maths-3-4", conceptId: "rohan-makes-solid-cuboid-dimensions-using",
     section: "B", questionRef: "2023 HL Paper 2 Q5(b)",
-    questionText: "Rohan makes a solid cuboid of dimensions 5 × 3 × 4 using his small cubes. Each small cube has sides of length 1 unit. Some of the small cubes have 1 face, 2 faces, or 3 faces on the outside of the cuboid. Other small cubes have no faces on the outside of the cuboid",
+    stem: "Rohan has a large number of small cubes. The cubes are identical in size.",
+    questionText: "Rohan makes a solid cuboid of dimensions 5 × 3 × 4 using his small cubes. Each small cube has sides of length 1 unit. Some of the small cubes have 1 face, 2 faces, or 3 faces on the outside of the cuboid. Other small cubes have no faces on the outside of the cuboid. In the diagram below, the small cube that is shaded has 3 faces on the outside of the cuboid. Fill in the table below, showing the number of small cubes with 3 faces, 2 faces, 1 face, or no faces on the outside of this cuboid. Show your working out. One of the values is filled in for you: 22 small cubes have 1 face on the outside.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant work on the diagram\nOne correct value\nReference to total of 60 cubes", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, relevant work on the diagram\nOne correct value\nReference to total of 60 cubes","Two correct values"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[48],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q5-b.png",
           "srcHash": "311f037e3b6271dccfda8713c211b8a9",
-          "alt": "The question as printed on the paper — Rohan has a large number of small cubes. The cubes are identical in size. Some of the cubes are red, some are green, and the rest are blue. Rohan carries out an experiment in which he picks out 5 different cubes at… Full card prompt: Rohan makes a solid cuboid of dimensions 5 × 3 × 4 using his small cubes. Each small cube has sides of length 1 unit. Some of the small cubes have 1 face, 2 faces, or 3 faces on the outside of the cuboid. Other small cubes have no faces on the outside of the cuboid",
+          "alt": "The question as printed on the paper — Rohan has a large number of small cubes. The cubes are identical in size. Some of the cubes are red, some are green, and the rest are blue. Rohan carries out an experiment in which he picks out 5 different cubes at… Full card prompt: Rohan has a large number of small cubes. The cubes are identical in size. Rohan makes a solid cuboid of dimensions 5 × 3 × 4 using his small cubes. Each small cube has sides of length 1 unit. Some of the small cubes have 1 face, 2 faces, or 3 faces on the outside of the cuboid. Other small cubes have no faces on the outside of the cuboid. In the diagram below, the small cube that is shaded has 3 faces on the outside of the cuboid. Fill in the table below, showing the number of small cubes with 3 faces, 2 faces, 1 face, or no faces on the outside of this cuboid. Show your working out. One of the values is filled in for you: 22 small cubes have 1 face on the outside.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7197,16 +7411,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q6-a", topicId: "maths-2-3", conceptId: "state-whether-statement-true-false-two",
+    id: "maths-2023-hl-p2-q6-a", topicId: "maths-2-1", conceptId: "state-whether-statement-true-false-two",
     section: "B", questionRef: "2023 HL Paper 2 Q6(a)",
-    questionText: "State whether the following statement is true or false: Two angles are vertically opposite if, and only if, they are equal in size",
+    questionText: "State whether the following statement is true or false: Two angles are vertically opposite if, and only if, they are equal in size. Justify your answer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p2-q6-a-r1", kind: "anyN", verbatim: "Correct answer with no justification\nStates True and justifies (ignores “and only if", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Correct answer with no justification\nStates True and justifies (ignores “and only if"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[49],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q6-a.png",
@@ -7227,16 +7454,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q6-b-i", topicId: "maths-2-1", conceptId: "prove-diagram-congruent-triangles-reason-each",
     section: "B", questionRef: "2023 HL Paper 2 Q6(b)(i)",
-    questionText: "Prove that |FE| = |EH|, in Diagram B. Use congruent triangles. Give a reason for each statement that you make in your proof",
+    stem: "The two diagrams below show the same rectangle, ACEG (not to scale). The points B, D, and F lie on [AC], [CE], and [EG], respectively, as shown. |AB| = 20 cm, |BC| = 30 cm, and |AG| = 90 cm. |∠GFA| = |∠EFD| = |∠DBC| = θ, where θ ∈ ℝ. In Diagram B, [GE] and [BD] are extended, and they meet at the point H.",
+    questionText: "Prove that |FE| = |EH|, in Diagram B. Use congruent triangles. Give a reason for each statement that you make in your proof.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p2-q6-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, |∠EHD| = |∠DBC| indicated", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit -1: |FE| = |EH| not stated. Note: Consider the solution as having 4 elements: 3 steps and a conclusion: Steps 1, 2 & 3: 3 correct statements for congruency (with justifications) and Conclusion (with reason). Note: To prove by SAS, candidates will have to establish that |∠FDE| = |∠HDE angle. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, |∠EHD| = |∠DBC| indicated","2 correct steps (no justifications)","3 correct steps (including one side) with at least one justification\nAll 3 steps correct and conclusion stated (no justifications)"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[49],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q6-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q6-b-i.png",
@@ -7257,16 +7499,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q6-b-ii", topicId: "maths-2-3", conceptId: "otherwise-size-angle-correct-nearest-degree",
     section: "B", questionRef: "2023 HL Paper 2 Q6(b)(ii)",
-    questionText: "Hence, or otherwise, find the size of the angle 𝜃. Give your answer correct to the nearest degree",
+    stem: "The two diagrams below show the same rectangle, ACEG (not to scale). The points B, D, and F lie on [AC], [CE], and [EG], respectively, as shown. |AB| = 20 cm, |BC| = 30 cm, and |AG| = 90 cm. |∠GFA| = |∠EFD| = |∠DBC| = θ, where θ ∈ ℝ. In Diagram B, [GE] and [BD] are extended, and they meet at the point H.",
+    questionText: "Hence, or otherwise, find the size of the angle θ. Give your answer correct to the nearest degree.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q6-b-ii-r1", kind: "anyN", verbatim: "Work of merit in finding any side of a relevant triangle", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit -1: Incorrect rounding or no rounding. Note: 4 steps: 1. |FE| = 1/2 |AB| = 10 2. Finds 2nd side in a relevant triangle 3. Trignometric equation set up 4. Finds 𝜃. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in finding any side of a relevant triangle","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[50],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14,
+                15
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q6-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q6-b-ii.png",
@@ -7287,16 +7544,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q7-a", topicId: "maths-3-4", conceptId: "diagram-shows-road-which-not-scale",
+    id: "maths-2023-hl-p2-q7-a", topicId: "maths-2-3", conceptId: "diagram-shows-road-which-not-scale",
     section: "B", questionRef: "2023 HL Paper 2 Q7(a)",
-    questionText: "The diagram below shows a road [AB], which is not to scale. AC is horizontal and BC is vertical. |BC| = 9 m and |AB| = 70 m",
+    stem: "Olga is a cyclist.",
+    questionText: "The diagram below shows a road [AB], which is not to scale. AC is horizontal and BC is vertical. |BC| = 9 m and |AB| = 70 m. The gradient of the road [AB] is |BC|/|AC| written as a percentage. Find the gradient of [AB], correct to the nearest percent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q7-a-r1", kind: "anyN", verbatim: "Work of merit, for example, 70² = 4900 , gradient = 9/70", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Full Credit -1: Incorrect rounding or no rounding. Note: 3 steps: 1. Sets up Pythagoras 2. Finds |AC| 3. Finds the gradient. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, 70² = 4900 , gradient = 9/70","2 steps correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[51],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q7-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q7-a.png",
@@ -7317,21 +7588,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q7-b", topicId: "maths-3-4", conceptId: "olga-wants-measure-vertical-height-hill",
+    id: "maths-2023-hl-p2-q7-b", topicId: "maths-2-3", conceptId: "olga-wants-measure-vertical-height-hill",
     section: "B", questionRef: "2023 HL Paper 2 Q7(b)",
-    questionText: "Olga wants to measure the vertical height of a hill. The point H is at the top of the hill. The points R and P are 20 m apart on horizontal ground, at the bottom of the hill",
+    stem: "Olga is a cyclist.",
+    questionText: "Olga wants to measure the vertical height of a hill. The point H is at the top of the hill. The points R and P are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the angle of elevation from R to H. Taking O to be the point directly below H that is horizontal with R and P, Olga also measures the angles ∠OPR and ∠ORP. All of these are shown in the diagram below (not to scale): the angle of elevation is 17°, |∠ORP| = 88° and |∠OPR| = 87°. Work out the distance |OH|, the vertical height of the top of the hill relative to the points R and P. Give your answer correct to the nearest metre.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q7-b-r1", kind: "anyN", verbatim: "Work of merit, for example, finds | < POR|, some correct substitution into ‘sine rule’", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit -1: Calculator in incorrect mode; No rounding or incorrect rounding. Note: 4 steps: 1. Substitution into ‘sine rule’ 2. Finds |RO| 3. Sets up trigonometric equation to solve |HO| 4. Finds |HO|. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, finds | < POR|, some correct substitution into ‘sine rule’","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[51],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q7-b.png",
           "srcHash": "e684a0d4abbca9a0ec82b5040b8864ef",
-          "alt": "The question as printed on the paper — Olga is a cyclist. Olga wants to measure the vertical height of a hill. The point H is at the top of the hill. (b) The points R and P are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the… Full card prompt: Olga wants to measure the vertical height of a hill. The point H is at the top of the hill. The points R and P are 20 m apart on horizontal ground, at the bottom of the hill",
+          "alt": "The question as printed on the paper — Olga is a cyclist. Olga wants to measure the vertical height of a hill. The point H is at the top of the hill. (b) The points R and P are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the… Full card prompt: Olga is a cyclist. Olga wants to measure the vertical height of a hill. The point H is at the top of the hill. The points R and P are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the angle of elevation from R to H. Taking O to be the point directly below H that is horizontal with R and P, Olga also measures the angles ∠OPR and ∠ORP. All of these are shown in the diagram below (not to scale): the angle of elevation is 17°, |∠ORP| = 88° and |∠OPR| = 87°. Work out the distance |OH|, the vertical height of the top of the hill relative to the points R and P. Give your answer correct to the nearest metre.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7347,21 +7632,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q7-c", topicId: "maths-5-2", conceptId: "values-marked-graph-minimum-maximum-values",
+    id: "maths-2023-hl-p2-q7-c", topicId: "maths-2-3", conceptId: "values-marked-graph-minimum-maximum-values",
     section: "B", questionRef: "2023 HL Paper 2 Q7(c), (d)",
-    questionText: "Find the values marked a and b on the graph, the minimum and maximum values of V",
+    stem: "Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds.",
+    questionText: "(c) Find the values marked a and b on the graph, the minimum and maximum values of V. (d) What is the connection between V′(t), the derivative of V, and whether Olga is breathing in or breathing out?",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q7-c-r1", kind: "anyN", verbatim: "Work of merit in finding either a or b\nWork of merit in part (d), for example, indicates that V′ is the rate of change of volume of air", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Note: in (d), accept correct explanation for breathing in or breathing out. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in finding either a or b\nWork of merit in part (d), for example, indicates that V′ is the rate of change of volume of air","(c) or (d) correct\nWork of merit in both (c) and (d)","One part correct and work of merit in other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[52],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q7-c.png",
           "srcHash": "cdad6536c3623d2f1d7b631a675c9cdd",
-          "alt": "The question as printed on the paper — Olga is a cyclist. Olga wants to measure the vertical height of a hill. The point H is at the top of the hill. (b) The points R and P are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the… Full card prompt: Find the values marked a and b on the graph, the minimum and maximum values of V",
+          "alt": "The question as printed on the paper — Olga is a cyclist. Olga wants to measure the vertical height of a hill. The point H is at the top of the hill. (b) The points R and P are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the… Full card prompt: Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds. (c) Find the values marked a and b on the graph, the minimum and maximum values of V. (d) What is the connection between V′(t), the derivative of V, and whether Olga is breathing in or breathing out?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7377,21 +7676,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q7-e-i", topicId: "maths-3-4", conceptId: "volume-air-olga-lungs-half-second",
+    id: "maths-2023-hl-p2-q7-e-i", topicId: "maths-2-3", conceptId: "volume-air-olga-lungs-half-second",
     section: "B", questionRef: "2023 HL Paper 2 Q7(e)(i)",
-    questionText: "Find the volume of air in Olga’s lungs, half a second after t = 0",
+    stem: "Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds.",
+    questionText: "Use the formula V(t) = 2 − 0·4 cos((π/2)t) to find each of the following, when Olga is resting. Give each answer correct to 3 decimal places. Find the volume of air in Olga’s lungs, half a second after t = 0.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p2-q7-e-i-r1", kind: "anyN", verbatim: "Some relevant substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit -1: Calculator in incorrect mode; No rounding or incorrect rounding; No units or incorrect units. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some relevant substitution"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[52],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18,
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q7-e-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q7-e-i.png",
           "srcHash": "8e5f4244e113ef7886356b48c919a4f5",
-          "alt": "The question as printed on the paper — Olga is a cyclist. Use the formula V(t) = 2 −0∙4 cos ( 2t) to find each of the following, when Olga is resting. (e) Give each answer correct to 3 decimal places. Find the volume of air in Olga’s lungs, half a second… Full card prompt: Find the volume of air in Olga’s lungs, half a second after t = 0",
+          "alt": "The question as printed on the paper — Olga is a cyclist. Use the formula V(t) = 2 −0∙4 cos ( 2t) to find each of the following, when Olga is resting. (e) Give each answer correct to 3 decimal places. Find the volume of air in Olga’s lungs, half a second… Full card prompt: Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds. Use the formula V(t) = 2 − 0·4 cos((π/2)t) to find each of the following, when Olga is resting. Give each answer correct to 3 decimal places. Find the volume of air in Olga’s lungs, half a second after t = 0.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7407,21 +7721,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q7-e-ii", topicId: "maths-3-4", conceptId: "rate-which-volume-air-olga-lungs",
+    id: "maths-2023-hl-p2-q7-e-ii", topicId: "maths-5-2", conceptId: "rate-which-volume-air-olga-lungs",
     section: "B", questionRef: "2023 HL Paper 2 Q7(e)(ii)",
-    questionText: "Find the rate at which the volume of air in Olga’s lungs is increasing, half a second after t = 0",
+    stem: "Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds.",
+    questionText: "Use the formula V(t) = 2 − 0·4 cos((π/2)t), when Olga is resting, giving your answer correct to 3 decimal places. Find the rate at which the volume of air in Olga’s lungs is increasing, half a second after t = 0.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q7-e-ii-r1", kind: "anyN", verbatim: "Work of merit in finding V′(t)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Full Credit -1: Calculator in incorrect mode; No rounding or incorrect rounding; No units or incorrect units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in finding V′(t)","V′(t) correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[52],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18,
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q7-e-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q7-e-ii.png",
           "srcHash": "580ea82647762e7e9ef0947c72263898",
-          "alt": "The question as printed on the paper — Olga is a cyclist. Use the formula V(t) = 2 −0∙4 cos ( 2t) to find each of the following, when Olga is resting. (e) Give each answer correct to 3 decimal places. Find the rate at which the volume of air in Olga’s lungs… Full card prompt: Find the rate at which the volume of air in Olga’s lungs is increasing, half a second after t = 0",
+          "alt": "The question as printed on the paper — Olga is a cyclist. Use the formula V(t) = 2 −0∙4 cos ( 2t) to find each of the following, when Olga is resting. (e) Give each answer correct to 3 decimal places. Find the rate at which the volume of air in Olga’s lungs… Full card prompt: Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds. Use the formula V(t) = 2 − 0·4 cos((π/2)t), when Olga is resting, giving your answer correct to 3 decimal places. Find the rate at which the volume of air in Olga’s lungs is increasing, half a second after t = 0.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7437,21 +7766,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q7-f", topicId: "maths-3-4", conceptId: "olga-breathing-also-measured-while-she",
+    id: "maths-2023-hl-p2-q7-f", topicId: "maths-2-3", conceptId: "olga-breathing-also-measured-while-she",
     section: "B", questionRef: "2023 HL Paper 2 Q7(f)",
-    questionText: "Olga’s breathing is also measured while she is doing gentle exercise. During this time: • when she breathes in fully, the volume of air in her lungs is 3∙6 litres • when she breathes out fully, the volume of air in her lungs is 1∙3 litres • she breathes in and out twice as many times per minute as when she is resting",
+    stem: "Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds.",
+    questionText: "Olga’s breathing is also measured while she is doing gentle exercise. During this time: when she breathes in fully, the volume of air in her lungs is 3·6 litres; when she breathes out fully, the volume of air in her lungs is 1·3 litres; she breathes in and out twice as many times per minute as when she is resting. Use this information to write a formula for E(t), the volume of air in Olga’s lungs during this time, t seconds after she has breathed out fully. Give your answer in the form E(t) = a + b cos(ct), where a, b, c, t ∈ ℝ, and ct is in radians.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p2-q7-f-r1", kind: "anyN", verbatim: "Work of merit in finding any of a, b or c\nAny work on graph towards finding a, b, or c", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Full Credit -1: E(t) = 2 · 45 + 1 · 15 cos 𝜋t. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit in finding any of a, b or c\nAny work on graph towards finding a, b, or c","One of a, b or c correct","Two of a, b or c correct"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[53],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18,
+                19
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q7-f",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q7-f.png",
           "srcHash": "827736fc37bf396ceabfe42fdf28057a",
-          "alt": "The question as printed on the paper — Olga is a cyclist. (f) Olga’s breathing is also measured while she is doing gentle exercise. During this time: • when she breathes in fully, the volume of air in her lungs is 3∙6 litres • when she breathes out fully,… Full card prompt: Olga’s breathing is also measured while she is doing gentle exercise. During this time: • when she breathes in fully, the volume of air in her lungs is 3∙6 litres • when she breathes out fully, the volume of air in her lungs is 1∙3 litres • she breathes in and out twice as many times per minute as when she is resting",
+          "alt": "The question as printed on the paper — Olga is a cyclist. (f) Olga’s breathing is also measured while she is doing gentle exercise. During this time: • when she breathes in fully, the volume of air in her lungs is 3∙6 litres • when she breathes out fully,… Full card prompt: Olga is a cyclist. Olga has some tests done to measure her lung capacity. When she is resting, the volume of air, V, in her lungs after t seconds can be modelled by: V(t) = 2 − 0·4 cos((π/2)t), where V is in litres, t ≥ 0 is the time in seconds from a given point in time, and (π/2)t is in radians. The diagram below shows the graph of the function y = V(t) for the first 9 seconds. Olga’s breathing is also measured while she is doing gentle exercise. During this time: when she breathes in fully, the volume of air in her lungs is 3·6 litres; when she breathes out fully, the volume of air in her lungs is 1·3 litres; she breathes in and out twice as many times per minute as when she is resting. Use this information to write a formula for E(t), the volume of air in Olga’s lungs during this time, t seconds after she has breathed out fully. Give your answer in the form E(t) = a + b cos(ct), where a, b, c, t ∈ ℝ, and ct is in radians.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7467,16 +7811,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q8-ii", topicId: "maths-1-2", conceptId: "ireland-players-scores-approximately-normally-distributed",
+    id: "maths-2023-hl-p2-q8-ii", topicId: "maths-1-7", conceptId: "ireland-players-scores-approximately-normally-distributed",
     section: "B", questionRef: "2023 HL Paper 2 Q8(b)(ii)",
-    questionText: "In Ireland, players’ word-game scores are approximately normally distributed with a mean of 3·87 and a standard deviation of 0·36. A random sample of 64 Galway players has a mean score of 3·74. A local newspaper claims that Galway players have a different mean score to players in Ireland. Carry out a hypothesis test at the 5% level of significance to test this claim. State your null hypothesis, alternative hypothesis, conclusion, and a reason for your conclusion.",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A random sample of 64 Galway players has a mean score of 3·74. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland. Players in Ireland have a mean score of 3·87 with a standard deviation of 0·36.",
+    questionText: "Carry out a hypothesis test at the 5% level of significance to test the newspaper’s claim that Galway players have a different mean score to players in Ireland. State your null hypothesis, state your alternative hypothesis, state your conclusion, and give a reason for your conclusion.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-hl-p2-q8-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct calculation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: If H₀ and H₁ are reversed, treat as one error. Note: treat solution as requiring the four parts laid out in answer grid. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some correct calculation","Two parts correct"],"perOptionSteps":[2,3]} },
+    { id: "maths-2023-hl-p2-q8-ii-solution-1", kind: "point", verbatim: "We reject null hypothesis.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-ii-solution-2", kind: "point", verbatim: "Galway players do take a different average number of attempts.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-ii-solution-3", kind: "point", verbatim: "3 · 87 is NOT within the confidence interval", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-ii-solution-4", kind: "point", verbatim: "Note: If H0 and H1 are reversed, treat as one error", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-ii-solution-5", kind: "point", verbatim: "Two parts correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[55],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q8-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q8-ii.png",
@@ -7497,21 +7859,40 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q8-a", topicId: "maths-1-6", conceptId: "ireland-players-scores-approximately-normally-distributed",
+    id: "maths-2023-hl-p2-q8-a", topicId: "maths-1-3", conceptId: "ireland-players-scores-approximately-normally-distributed",
     section: "B", questionRef: "2023 HL Paper 2 Q8(a)",
-    questionText: "In Ireland, players’ scores are approximately normally distributed, with a mean of 3·87 and a standard deviation of 0·36",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word.",
+    questionText: "In Ireland, players’ scores are approximately normally distributed, with a mean of 3·87 and a standard deviation of 0·36. A player is selected at random from the players in Ireland. Find the probability that this player has a score of less than 3·5.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-hl-p2-q8-a-r1", kind: "anyN", verbatim: "(a) z = (x − 𝜇)/𝜎 = (3 · 5 − 3 · 87)/(0 · 36) = −1 · 03", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Note: 1. Find z -score 2. Find 0· 8485 3. Find solution. Note: Accept z = 1. 03 as correct z -score in Step 1, but must be handled correctly for Step 3. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["(a) z = (x − 𝜇)/𝜎 = (3 · 5 − 3 · 87)/(0 · 36) = −1 · 03","P(x < 3 · 5)","= P(z < −1 · 03)","= 1 −P(z < 1 · 03)","= 1 −0 · 8485","= 0 · 1515","(b) (i) x̅ ± 1 · 96 𝜎/√n 𝜎/√n","3 · 74 − 1 · 96 (0 (· 36)/√64 ) = 3 · 6518","3 · 74 + 1 · 96 (0 (· 36)/√64 ) = 3 · 8282","C.I. : 3 · 6518 ≤ 𝜇≤3 · 8282","Mathematics – Higher Level"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2023-hl-p2-q8-a-solution-1", kind: "point", verbatim: "= 0 · 1515", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-a-solution-2", kind: "point", verbatim: "Find z -score", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-a-solution-3", kind: "point", verbatim: "Find solution", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-a-solution-4", kind: "point", verbatim: "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates μ or σ", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-a-solution-5", kind: "point", verbatim: "Correct z-score or", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-a-solution-6", kind: "point", verbatim: "Finds z-score and further work, for example, finds 0.8485 or indicates", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[54],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q8-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q8-a.png",
           "srcHash": "99e09275f3480b6f3980695a0a4249ca",
-          "alt": "The question as printed on the paper — An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s∈ℝ, based on how many attempts it takes them to guess the word. In… Full card prompt: In Ireland, players’ scores are approximately normally distributed, with a mean of 3·87 and a standard deviation of 0·36",
+          "alt": "The question as printed on the paper — An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s∈ℝ, based on how many attempts it takes them to guess the word. In… Full card prompt: An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. In Ireland, players’ scores are approximately normally distributed, with a mean of 3·87 and a standard deviation of 0·36. A player is selected at random from the players in Ireland. Find the probability that this player has a score of less than 3·5.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7527,21 +7908,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q8-c", topicId: "maths-1-5", conceptId: "national-newspaper-conducts-survey-random-sample",
+    id: "maths-2023-hl-p2-q8-c", topicId: "maths-1-7", conceptId: "national-newspaper-conducts-survey-random-sample",
     section: "B", questionRef: "2023 HL Paper 2 Q8(c)",
-    questionText: "A national newspaper conducts a survey on a random sample of n teenagers in Ireland. 35% of the sample said they play the online word game every day",
+    stem: "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word.",
+    questionText: "A national newspaper conducts a survey on a random sample of n teenagers in Ireland. 35% of the sample said they play the online word game every day. Based on this, a 95% confidence interval for the percentage, p, of all teenagers in Ireland who play the game every day was calculated, as accurately as possible. Correct to one decimal place, this interval was: 26·5% ≤ p ≤ 43·5%. Use this to work out the value of n, the number of teenagers surveyed.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q8-c-r1", kind: "anyN", verbatim: "Some correct substitution into relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit -1: Incorrect rounding. Note: 4 steps: 1. 1·96√0·35(1−0·35) n 2. Finds 0.085 or equivalent 3. Sets up equation 4. Solves. Note: If margin of error is used ie.E = 1/√n 1/√n award Mid Partial Credit at most. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some correct substitution into relevant formula","2 correct steps","3 correct steps"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[56],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q8-c",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q8-c.png",
           "srcHash": "591b3421d6a6fabfb8720dc18574f4f6",
-          "alt": "The question as printed on the paper — An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s∈ℝ, based on how many attempts it takes them to guess the word. In… Full card prompt: A national newspaper conducts a survey on a random sample of n teenagers in Ireland. 35% of the sample said they play the online word game every day",
+          "alt": "The question as printed on the paper — An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s∈ℝ, based on how many attempts it takes them to guess the word. In… Full card prompt: An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A national newspaper conducts a survey on a random sample of n teenagers in Ireland. 35% of the sample said they play the online word game every day. Based on this, a 95% confidence interval for the percentage, p, of all teenagers in Ireland who play the game every day was calculated, as accurately as possible. Correct to one decimal place, this interval was: 26·5% ≤ p ≤ 43·5%. Use this to work out the value of n, the number of teenagers surveyed.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7557,21 +7952,37 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q9-a-i", topicId: "maths-2-3", conceptId: "work-out-length-side-square-tile",
+    id: "maths-2023-hl-p2-q9-a-i", topicId: "maths-3-4", conceptId: "work-out-length-side-square-tile",
     section: "B", questionRef: "2023 HL Paper 2 Q9(a)(i)",
-    questionText: "Work out the length of the side of the square tile, correct to 1 decimal place",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a regular hexagon can be split into 6 congruent equilateral triangles.) A square tile and a hexagonal tile each have an area of 140 cm².",
+    questionText: "Work out the length of the side of the square tile, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-hl-p2-q9-a-i-r1", kind: "anyN", verbatim: "(a) (i) Square: l = l²/√140 = = 140 11.83..", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Full Credit -1: Incorrect rounding, or no rounding; No unit or incorrect unit. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["(a) (i) Square: l = l²/√140 = = 140 11.83..","l = 11.8 cm [1 d.p.]","Mathematics – Higher Level"],"perOptionSteps":[2,3]} },
+    { id: "maths-2023-hl-p2-q9-a-i-solution-1", kind: "point", verbatim: "l = 11.8 cm [1 d.p.]", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q9-a-i-solution-2", kind: "point", verbatim: "Incorrect rounding, or no rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q9-a-i-solution-3", kind: "point", verbatim: "No unit or incorrect unit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[59],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q9-a-i.png",
           "srcHash": "68de3373c09526c01ec340b3f76cd2a4",
-          "alt": "The question as printed on the paper — Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note:… Full card prompt: Work out the length of the side of the square tile, correct to 1 decimal place",
+          "alt": "The question as printed on the paper — Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note:… Full card prompt: Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a regular hexagon can be split into 6 congruent equilateral triangles.) A square tile and a hexagonal tile each have an area of 140 cm². Work out the length of the side of the square tile, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7587,21 +7998,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q9-a-ii", topicId: "maths-3-1", conceptId: "hexagonal-tile-has-sides-length-work",
+    id: "maths-2023-hl-p2-q9-a-ii", topicId: "maths-2-3", conceptId: "hexagonal-tile-has-sides-length-work",
     section: "B", questionRef: "2023 HL Paper 2 Q9(a)(ii)",
-    questionText: "The hexagonal tile has sides of length x cm, where x∈ℝ. Work out the value of x, correct to 1 decimal place",
+    stem: "Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a regular hexagon can be split into 6 congruent equilateral triangles.) A square tile and a hexagonal tile each have an area of 140 cm².",
+    questionText: "The hexagonal tile has sides of length x cm, where x ∈ ℝ. Work out the value of x, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q9-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, finds area of one triangle; finds the area of one trapezium, work towards finding perpendicular height", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Full Credit -1: No rounding or incorrect rounding. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, finds area of one triangle; finds the area of one trapezium, work towards finding perpendicular height","Equation in x formed"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[60],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q9-a-ii.png",
           "srcHash": "8610f61d27f6a86cfe27b21685d0b819",
-          "alt": "The question as printed on the paper — Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note:… Full card prompt: The hexagonal tile has sides of length x cm, where x∈ℝ. Work out the value of x, correct to 1 decimal place",
+          "alt": "The question as printed on the paper — Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note:… Full card prompt: Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a regular hexagon can be split into 6 congruent equilateral triangles.) A square tile and a hexagonal tile each have an area of 140 cm². The hexagonal tile has sides of length x cm, where x ∈ ℝ. Work out the value of x, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7617,21 +8042,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q9-b-i", topicId: "maths-2-3", conceptId: "part",
     section: "B", questionRef: "2023 HL Paper 2 Q9(b)(i)",
-    questionText: "|AD| = 8 cm, |AE| = 6 cm, and |ED| = 4 cm",
+    stem: "Ava is looking at different tilings, that is, different ways of covering a region with shapes. Next, Ava looks at more complicated tilings. The tiling below is made up of two shapes: an arrowhead (ABED) and a quadrilateral (EBCD). The point E lies on the line AC, and both shapes are symmetrical about AC (diagrams not to scale).",
+    questionText: "|AD| = 8 cm, |AE| = 6 cm, and |ED| = 4 cm. As shown in the diagram, α = ∠DAE. Show that α = cos⁻¹(7/8).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q9-b-i-r1", kind: "anyN", verbatim: "Correct formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct formula with some substitution","cos 𝛼 = (6² + 8²−4²)/2(6)(8) or equivalent\n16 = 100 −96cos𝛼\nUses the cosine rule to find either ∠ADE or ∠DEA"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[61],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q9-b-i.png",
           "srcHash": "3793e8fc7a74d06002dad15b9d62fe88",
-          "alt": "The question as printed on the paper — Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note:… Full card prompt: |AD| = 8 cm, |AE| = 6 cm, and |ED| = 4 cm",
+          "alt": "The question as printed on the paper — Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note:… Full card prompt: Ava is looking at different tilings, that is, different ways of covering a region with shapes. Next, Ava looks at more complicated tilings. The tiling below is made up of two shapes: an arrowhead (ABED) and a quadrilateral (EBCD). The point E lies on the line AC, and both shapes are symmetrical about AC (diagrams not to scale). |AD| = 8 cm, |AE| = 6 cm, and |ED| = 4 cm. As shown in the diagram, α = ∠DAE. Show that α = cos⁻¹(7/8).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7647,21 +8086,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q9-b-ii", topicId: "maths-2-3", conceptId: "diagram-adc-abc",
     section: "B", questionRef: "2023 HL Paper 2 Q9(b)(ii)",
-    questionText: "In the diagram|∠ADC| = |∠ABC| = 90°",
+    stem: "Ava is looking at different tilings, that is, different ways of covering a region with shapes. Next, Ava looks at more complicated tilings. The tiling below is made up of two shapes: an arrowhead (ABED) and a quadrilateral (EBCD). The point E lies on the line AC, and both shapes are symmetrical about AC (diagrams not to scale). |AD| = 8 cm and α = ∠DAE = cos⁻¹(7/8).",
+    questionText: "In the diagram |∠ADC| = |∠ABC| = 90°. Use this, and part (b)(i), to work out the total area of the quadrilateral ABCD, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Work of merit in finding a relevant side or angle", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8. The full scale runs to 10. Full Credit -1: No rounding or incorrect rounding; No unit or incorrect unit. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in finding a relevant side or angle","Correctly finds relevant sides and/or angles to allow for area to be found, for example, |CD|, or 𝛼 and |AC|","Correctly filled formula for area of triangle ACD"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[61],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q9-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q9-b-ii.png",
           "srcHash": "91e05f146d49a3d0e82c52353f8908f9",
-          "alt": "The question as printed on the paper — Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note:… Full card prompt: In the diagram|∠ADC| = |∠ABC| = 90°",
+          "alt": "The question as printed on the paper — Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note:… Full card prompt: Ava is looking at different tilings, that is, different ways of covering a region with shapes. Next, Ava looks at more complicated tilings. The tiling below is made up of two shapes: an arrowhead (ABED) and a quadrilateral (EBCD). The point E lies on the line AC, and both shapes are symmetrical about AC (diagrams not to scale). |AD| = 8 cm and α = ∠DAE = cos⁻¹(7/8). In the diagram |∠ADC| = |∠ABC| = 90°. Use this, and part (b)(i), to work out the total area of the quadrilateral ABCD, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7677,21 +8130,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q9-c-ii", topicId: "maths-2-3", conceptId: "point-lies-axis",
+    id: "maths-2023-hl-p2-q9-c-ii", topicId: "maths-2-2", conceptId: "point-lies-axis",
     section: "B", questionRef: "2023 HL Paper 2 Q9(c)(ii)",
-    questionText: "The point P lies on the x-axis",
+    stem: "Ava is looking at different tilings, that is, different ways of covering a region with shapes. Ava also looks at a tiling of the inside of the unit circle c: x² + y² = 1. The diagram on the right (not to scale) shows the circle c and another circle, s. The points P and Q are on both circles. The part of s that lies inside c is an edge of a number of tiles. Ava wants to find the equation of the circle s. |∠QOP| = 45° and Q is the point (−1/√2, 1/√2).",
+    questionText: "The point P lies on the x-axis. The centre of the circle s lies on the tangent to c at the point P and on the tangent to c at the point Q. Find the centre and the radius of the circle s. Give your answers in surd form.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q9-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, any relevant work on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Note: Consider the solution as having three steps: 1. Finds that the x co-ordinate of the centre = −1 2. Indicates that the y co-ordinate of the centre = r, the radius of circle s 3. Finds r. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, any relevant work on the diagram","Two steps correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[63],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q9-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q9-c-ii.png",
           "srcHash": "e2f17e4962b76327249a013f8b2b7fbe",
-          "alt": "The question as printed on the paper — Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note:… Full card prompt: The point P lies on the x-axis",
+          "alt": "The question as printed on the paper — Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note:… Full card prompt: Ava is looking at different tilings, that is, different ways of covering a region with shapes. Ava also looks at a tiling of the inside of the unit circle c: x² + y² = 1. The diagram on the right (not to scale) shows the circle c and another circle, s. The points P and Q are on both circles. The part of s that lies inside c is an edge of a number of tiles. Ava wants to find the equation of the circle s. |∠QOP| = 45° and Q is the point (−1/√2, 1/√2). The point P lies on the x-axis. The centre of the circle s lies on the tangent to c at the point P and on the tangent to c at the point Q. Find the centre and the radius of the circle s. Give your answers in surd form.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7707,16 +8175,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q10-a-i", topicId: "maths-3-4", conceptId: "part",
+    id: "maths-2023-hl-p2-q10-a-i", topicId: "maths-2-4", conceptId: "part",
     section: "B", questionRef: "2023 HL Paper 2 Q10(a)(i)",
-    questionText: "Show that |BE| = 40 cm",
+    stem: "Séamus has a basin in the shape of an inverted right circular cone with the lower part removed, as shown in the diagram on the right below (diagrams not to scale). The radius of the original cone is 15 cm, and |CE|, the slant height of the basin, is 10 cm. The base of the basin is a horizontal circle with a radius of 12 cm, as shown. The basin is open – it does not have a top.",
+    questionText: "Show that |BE| = 40 cm.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit in establishing equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in establishing equation","Correct equation set up\n40/12 = 50/15 or equivalent"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[64],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q10-a-i.png",
@@ -7737,16 +8219,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q10-a-ii", topicId: "maths-3-4", conceptId: "total-internal-surface-area-basin-correct",
     section: "B", questionRef: "2023 HL Paper 2 Q10(a)(ii)",
-    questionText: "Find the total internal surface area of the basin, correct to 1 decimal place",
+    stem: "Séamus has a basin in the shape of an inverted right circular cone with the lower part removed, as shown in the diagram on the right below (diagrams not to scale). The radius of the original cone is 15 cm, and |CE|, the slant height of the basin, is 10 cm. The base of the basin is a horizontal circle with a radius of 12 cm, as shown. The basin is open – it does not have a top. |BE| = 40 cm.",
+    questionText: "Find the total internal surface area of the basin, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-hl-p2-q10-a-ii-r1", kind: "anyN", verbatim: "Some correct substitution into 𝜋RL or 𝜋rl or 𝜋r²\n𝜋RL−𝜋rl + 𝜋r²\n𝜋RL−𝜋rl", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit -1: No rounding or incorrect rounding; No unit or incorrect unit. Note: Candidate may use 𝝅(r + R)l, where l = 10 to find the curved surface area. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Some correct substitution into 𝜋RL or 𝜋rl or 𝜋r²\n𝜋RL−𝜋rl + 𝜋r²\n𝜋RL−𝜋rl","One of 𝜋RL or 𝜋rl or 𝜋r² fully substituted and calculated\nFully correct substitution in to 𝜋RL−𝜋rl\n𝜋RL−𝜋rl + 𝜋r² with some substitution","𝜋RL−𝜋rl + 𝜋r² fully substituted\n𝜋RL−𝜋rl calculated"],"perOptionSteps":[4,4,7]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,8,12,15],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[64],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q10-a-ii.png",
@@ -7767,16 +8263,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q10-a-iii", topicId: "maths-3-4", conceptId: "iii-draw-diagram-net-curved-surface",
     section: "B", questionRef: "2023 HL Paper 2 Q10(a)(iii)",
-    questionText: "(iii) Draw a diagram of the net of the curved surface of the basin. Show your working out",
+    stem: "Séamus has a basin in the shape of an inverted right circular cone with the lower part removed, as shown in the diagram on the right below (diagrams not to scale). The radius of the original cone is 15 cm, and |CE|, the slant height of the basin, is 10 cm. The base of the basin is a horizontal circle with a radius of 12 cm, as shown. The basin is open – it does not have a top. |BE| = 40 cm.",
+    questionText: "Draw a diagram of the net of the curved surface of the basin. Show your working out. Include on your diagram enough measurements of lengths and/or angles so that the net could be constructed using a ruler, straight edge, compass, and protractor, without any further calculation. Your diagram may need to include lines that are not part of the net itself, like the broken lines in the diagram on the previous page.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p2-q10-a-iii-r1", kind: "anyN", verbatim: "Net of a cone drawn\nWork of merit in calculating angle.\nCorrect structure but no measurements or incorrect measurements given", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: Three measurements required: angle subtended at the centre and 2 relevant lengths of line segments. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Net of a cone drawn\nWork of merit in calculating angle.\nCorrect structure but no measurements or incorrect measurements given","Correct structure with one correct measurement given\nAngle correctly calculated","Correct structure with one incorrect measurement"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[65],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q10-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q10-a-iii.png",
@@ -7797,16 +8308,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q10-b-i", topicId: "maths-3-4", conceptId: "work-out-how-many-such-codes",
+    id: "maths-2023-hl-p2-q10-b-i", topicId: "maths-1-1", conceptId: "work-out-how-many-such-codes",
     section: "B", questionRef: "2023 HL Paper 2 Q10(b)(i)",
-    questionText: "Work out how many such codes are possible",
+    stem: "Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once.",
+    questionText: "Work out how many such codes are possible.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p2-q10-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, lists some correct code", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Full Credit-1: 9 × 9 × 9 × 9 evaluated; 10 × 9 × 8 × 7 evaluated. Note: Accept correct answer without work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, lists some correct code"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[66],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q10-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q10-b-i.png",
@@ -7827,21 +8352,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q10-b-ii", topicId: "maths-3-4", conceptId: "work-out-how-many-these-codes",
+    id: "maths-2023-hl-p2-q10-b-ii", topicId: "maths-1-1", conceptId: "work-out-how-many-these-codes",
     section: "B", questionRef: "2023 HL Paper 2 Q10(b)(ii)",
-    questionText: "Work out how many of these codes contain the digit 2",
+    stem: "Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once.",
+    questionText: "Work out how many of these codes contain the digit 2.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-hl-p2-q10-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, lists some correct codes, brings answer from b(i) down to b(ii)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, lists some correct codes, brings answer from b(i) down to b(ii)","1 × 8 × 7 × 6 or 1/9 × 3024\n1680"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[66],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q10-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q10-b-ii.png",
           "srcHash": "fddff6d5b81109382b39cd068a939f72",
-          "alt": "The question as printed on the paper — Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once. Work out how many such codes are possible. Work out how many of… Full card prompt: Work out how many of these codes contain the digit 2",
+          "alt": "The question as printed on the paper — Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once. Work out how many such codes are possible. Work out how many of… Full card prompt: Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once. Work out how many of these codes contain the digit 2.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7857,21 +8396,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "higher",
     paperFileid: "LC003ALP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q10-b-iii", topicId: "maths-3-4", conceptId: "iii-work-out-how-many-codes",
+    id: "maths-2023-hl-p2-q10-b-iii", topicId: "maths-1-1", conceptId: "iii-work-out-how-many-codes",
     section: "B", questionRef: "2023 HL Paper 2 Q10(b)(iii)",
-    questionText: "(iii) Work out how many of the codes in part (b)(i) have the sum of their first three digits equal to their fourth digit. (The codes can contain the digit 2, although they do not have to.) 30",
+    stem: "Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once.",
+    questionText: "Work out how many of the codes in part (b)(i) have the sum of their first three digits equal to their fourth digit. (The codes can contain the digit 2, although they do not have to.)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-hl-p2-q10-b-iii-r1", kind: "anyN", verbatim: "Work of merit in listing some codes", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in listing some codes","All 7 combinations listed\nOne correct combination and mentions 3! or 6 possible arrangements"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[66],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q10-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q10-b-iii.png",
           "srcHash": "b45f4f445d32e0525fd2a6d69af05651",
-          "alt": "The question as printed on the paper — Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once. Work out how many such codes are possible. Work out how many of… Full card prompt: (iii) Work out how many of the codes in part (b)(i) have the sum of their first three digits equal to their fourth digit. (The codes can contain the digit 2, although they do not have to.) 30",
+          "alt": "The question as printed on the paper — Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once. Work out how many such codes are possible. Work out how many of… Full card prompt: Séamus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once. Work out how many of the codes in part (b)(i) have the sum of their first three digits equal to their fourth digit. (The codes can contain the digit 2, although they do not have to.)",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -17503,6 +18056,156 @@ export const CARDS: SecCard[] = [
                 27
           ],
           "sourceFileid": "LC003ALP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q2-b", topicId: "maths-2-3", conceptId: "p2-q2-b",
+    section: "A", questionRef: "2023 HL Paper 2 Q2(b)",
+    stem: "Part (a) proves that sin(A + B) = sin A cos B + cos A sin B.",
+    questionText: "Using the formula in part (a), and without using a calculator, find the value of sin 75°. Give your answer in surd form.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-q2-b-solution-1", kind: "point", verbatim: "Work of merit, for example 30 + 45, or some correct substitution into relevant formula", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q2-b-solution-2", kind: "point", verbatim: "sin 30 cos 45 + cos 30 sin 45 or equivalent", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[41],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q8-b-i", topicId: "maths-1-7", conceptId: "p2-q8-b-i",
+    section: "B", questionRef: "2023 HL Paper 2 Q8(b)(i)",
+    stem: "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A random sample of 64 Galway players has a mean score of 3·74. Based on this, a local newspaper claims that Galway players have a different mean score to players in Ireland.",
+    questionText: "Use the information about this sample to construct a 95% confidence interval for the mean score of all Galway players. Use the standard deviation of 0·36 in your calculations.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-q8-b-i-solution-1", kind: "point", verbatim: "C.I. : 3 · 6518 ≤ 𝜇≤3 · 8282", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-b-i-solution-2", kind: "point", verbatim: "Note: If √64 is omitted, award Low Partial Credit at most", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-b-i-solution-3", kind: "point", verbatim: "Confidence interval fully substituted", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-b-i-solution-4", kind: "point", verbatim: "One side of interval only caculated", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,4,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[54],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q8-d-i", topicId: "maths-1-2", conceptId: "p2-q8-d-i",
+    section: "B", questionRef: "2023 HL Paper 2 Q8(d)(i)",
+    stem: "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A player wins the game if they guess the word with 6 guesses or less. The organisers of the game record the following statistics for players in Europe: 80% of players win the game each day; 90% of players who win the game will play it again the following day; 25% of players who do not win the game will play it again the following day. Some of this information is shown in the tree diagram below, based on the 360 000 people who played the game on 1st June. The squares represent proportions. The rectangles labelled PLAY, WIN, and LOSE represent the number of people who play, win, and lose the game, respectively. For example, 0·8 of the 360 000 people who played the game on 1st June won the game. Assume that, for people who play the game on a number of days, winning the game on one day is independent of winning it on another day.",
+    questionText: "Complete the tree diagram, by writing the proportion associated with each branch of the tree diagram into the appropriate square and writing the number of people who play, win, and lose the game into the appropriate rectangle.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-q8-d-i-solution-1", kind: "point", verbatim: "19 entries to check", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-d-i-solution-2", kind: "point", verbatim: "At least one correct entry", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-d-i-solution-3", kind: "point", verbatim: "Eight correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-d-i-solution-4", kind: "point", verbatim: "14 correct entries", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-d-i-solution-5", kind: "point", verbatim: "One incorrect entry", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[57],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q8-d-ii", topicId: "maths-1-2", conceptId: "p2-q8-d-ii",
+    section: "B", questionRef: "2023 HL Paper 2 Q8(d)(ii)",
+    stem: "An online word game involves trying to guess a five-letter word in as few attempts as possible. For this game, each player is given a score s, where s ∈ ℝ, based on how many attempts it takes them to guess the word. A player wins the game if they guess the word with 6 guesses or less. The organisers of the game record the following statistics for players in Europe: 80% of players win the game each day; 90% of players who win the game will play it again the following day; 25% of players who do not win the game will play it again the following day. Some of this information is shown in the tree diagram below, based on the 360 000 people who played the game on 1st June. The squares represent proportions. The rectangles labelled PLAY, WIN, and LOSE represent the number of people who play, win, and lose the game, respectively. For example, 0·8 of the 360 000 people who played the game on 1st June won the game. Assume that, for people who play the game on a number of days, winning the game on one day is independent of winning it on another day.",
+    questionText: "One person is picked at random from those who played the game on all three days (1st, 2nd, and 3rd June). Find the probability that this person lost on 1st June or 2nd June (or on both).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-q8-d-ii-solution-1", kind: "point", verbatim: "Finds the total number of players who played on all three days", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-d-ii-solution-2", kind: "point", verbatim: "Finds the number of players who lost", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-d-ii-solution-3", kind: "point", verbatim: "Finds probability", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q8-d-ii-solution-4", kind: "point", verbatim: "2 steps correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[58],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
+          "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "higher",
+    paperFileid: "LC003ALP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q9-c-i", topicId: "maths-2-3", conceptId: "p2-q9-c-i",
+    section: "B", questionRef: "2023 HL Paper 2 Q9(c)(i)",
+    stem: "Ava is looking at different tilings, that is, different ways of covering a region with shapes. Ava also looks at a tiling of the inside of the unit circle c: x² + y² = 1. The diagram on the right (not to scale) shows the circle c and another circle, s. The points P and Q are on both circles. The part of s that lies inside c is an edge of a number of tiles. Ava wants to find the equation of the circle s.",
+    questionText: "|∠QOP| = 45°, where O is the point (0, 0). Show that the point Q has co-ordinates (−1/√2, 1/√2).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-q9-c-i-solution-1", kind: "point", verbatim: "Note: Check drawing for relevant work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q9-c-i-solution-2", kind: "point", verbatim: "Work of merit in finding x or y ordinate", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-hl-p2-q9-c-i-solution-3", kind: "point", verbatim: "But x in 2nd quadrant.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003ALP000EV.pdf","schemePages":[62],"generalNotesPages":[36,37]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003ALP200EV.pdf",
           "attribution": "SEC Mathematics 2023 Higher Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },

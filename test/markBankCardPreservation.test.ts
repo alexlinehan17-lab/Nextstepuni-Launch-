@@ -436,6 +436,9 @@ const reviewedMathematicsAdditions = new Set([
   'maths-2024-ol-p1-q2-c', 'maths-2024-ol-p1-q3-a', 'maths-2024-ol-p1-q10-b-iv',
   // 2023 HL Paper 1 review: Q10(c) had no card; three were refused by the build.
   'maths-2023-hl-p1-q10-c', 'maths-2023-hl-p1-q2-b', 'maths-2023-hl-p1-q8-b-i', 'maths-2023-hl-p1-q8-d-i',
+  // 2023 HL Paper 2 review: five units had no card; Q1(b) was refused by the build.
+  'maths-2023-hl-p2-q2-b', 'maths-2023-hl-p2-q8-b-i', 'maths-2023-hl-p2-q8-d-i', 'maths-2023-hl-p2-q8-d-ii',
+  'maths-2023-hl-p2-q9-c-i', 'maths-2023-hl-p2-q1-b',
 ]);
 // Whole Higher/Ordinary papers reviewed independently from 2026-10-11 onward.
 // Each paper's new tasks are pinned by their own identity hash below.
