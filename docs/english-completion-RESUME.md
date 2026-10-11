@@ -1,3 +1,30 @@
+## Current checkpoint — runtime publisher shipped on branch, 2026-10-11
+
+Supersedes the counts below for runtime/Atlas state; review ledgers unchanged.
+
+- `english_publish.py` publishes paper by paper: only papers whose OWN gate
+  (`english_review_gate.check_paper`) passes. 33 papers / 1,526 cards today
+  (2010-2015 all four, 2016 HL/OL P1, 2018 all four, 2026 OL P2, HL P1, HL P2).
+  `--check` must stay clean; regenerate after recording any new paper review.
+- Legacy 2021-2025 (650 cards, 10 aliases) untouched; refused for publication
+  until `english-legacy-bridge.json` maps every legacy card of a paper.
+- Grids/caps: `english-marking-grids.json` (exact prints; bound to scheme sha +
+  page cells). HL 2010-2015 no cap, OL 2010-2015 Language-at-D, 2016/2018 HL/
+  2026 C/L<=P, 2018 OL none. Runtime `capRule` + `printedGrid`.
+- Atlas: 65 additive archive topics (builder reads
+  `data/examTopics/english-reviewed-archive-topics.json`; re-run
+  `build-english-geography-exam-topic-runtime.mjs` after publishing) and exact
+  booklet links unioned in the registry (771 -> 954 mappings). 2026 OL P2's 19
+  blocks wait for its answer-map upload + index rebuild (answers flag).
+- Coverage baseline (English only): 2186/2783 covered, 597 open declared
+  (unreviewed candidate tasks of the 15 non-legacy, unpublished papers).
+- Browser QA: `tmp/english-audit/run-published-browser.sh` (port 5702, QA-only
+  vite config allowing the symlinked pdf.js worker, local PDF mirror).
+- NEXT reviews: 2026 OL P1, 2025, 2016 P2, 2017, 2019-2024; each new reviewed
+  paper then publishes by re-running the publisher (+ Atlas builder, baseline).
+
+---
+
 ## Current checkpoint — 2026 Higher Paper 2 recorded, 2026-10-11
 
 Supersedes the counts below. Recorded by `tmp/english-audit/record-2026-hl-p2-review.py`.
