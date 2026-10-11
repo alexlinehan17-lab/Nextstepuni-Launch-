@@ -14,14 +14,15 @@
     "referenceOfficialAssociations": 739,
     "referenceMockAssociations": 505,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 505,
+    "matchedAssociations": 486,
+    "referenceAnomalyAssociations": 19,
     "sourceBlockedAssociations": 234,
     "sourceBlockedByReason": {
       "deferred": 60,
       "preCorpus": 170,
       "oralMaterial": 4
     },
-    "matchedLocalCardLinks": 992,
+    "matchedLocalCardLinks": 922,
     "localPaperVariants": 98,
     "localPhysicalMappings": 1423,
     "distinctStudentFacingQuestions": 1003,
@@ -2231,7 +2232,6 @@
         "kind": "written",
         "fileid": "LC010ALP000EV.pdf",
         "questionNumbers": [
-          "11",
           "12",
           "13",
           "14",
@@ -2244,7 +2244,11 @@
           "21",
           "22"
         ]
-      }
+      },
+      "excludedQuestionNumbers": [
+        "11"
+      ],
+      "exclusionReason": "The circus passage is explicitly adapted from La Croix on paper page2. Archive marker11 is at PDF page3 y0.6602, the A1 opinion question, but inherited tags misfile it as the novel passage."
     },
     {
       "topicId": "french-higher-literarynovel-comprehension",
@@ -9178,7 +9182,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A4",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9195,7 +9199,8 @@
           "29",
           "30"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Official paper page 10 names À plein tube !, Fabrice Librini 2014, beneath a fictional first-person narrative by Étienne. It is a book extract, not an article. The pre-existing Mark Bank classification was correct; override the inherited Atlas article association for the entire fourth comprehension and its reviewed tasks."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9335,7 +9340,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A1",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9350,7 +9355,8 @@
           "5",
           "6"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page 4 explicitly identifies this as an article from the magazine PHOSPHORE. Use the specific magazine-extract classification in both products."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9359,7 +9365,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A2",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9376,7 +9382,8 @@
           "13",
           "14"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page 6 explicitly identifies this as an article from the magazine MAXI. Use the specific magazine-extract classification in both products."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9385,7 +9392,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A1",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9400,7 +9407,8 @@
           "5",
           "6"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: The source introduction on paper page 2 explicitly identifies GÉO ADO magazine. File in the specific magazine/website-extract topic."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9409,7 +9417,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A2",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9426,7 +9434,8 @@
           "13",
           "14"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: The source introduction on paper page 4 explicitly identifies PHOSPHORE magazine. File in the specific magazine/website-extract topic."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9435,7 +9444,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A2",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9445,7 +9454,8 @@
         "questionNumbers": [
           "6"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page4 explicitly identifies PHOSPHORE magazine."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9454,7 +9464,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A2",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9464,7 +9474,8 @@
         "questionNumbers": [
           "2"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page4 explicitly credits FEMINA magazine, correcting the inherited Article label."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9473,7 +9484,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A2",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9483,7 +9494,8 @@
         "questionNumbers": [
           "2"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: The printed introduction explicitly credits GÉO ADO magazine; correct the inherited Article tag."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9492,7 +9504,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A2",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9502,7 +9514,8 @@
         "questionNumbers": [
           "2"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: The printed introduction explicitly credits the Tour de France website on paper page4; correct the old crosswalk Article classification."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9511,7 +9524,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A3",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9521,7 +9534,8 @@
         "questionNumbers": [
           "3"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: The printed introduction explicitly credits various websites on paper page6; correct the old crosswalk Article classification."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9530,7 +9544,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A1",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9540,7 +9554,8 @@
         "questionNumbers": [
           "1"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page2 credits GEO ADO magazine; correct the inherited Article tag."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9549,7 +9564,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A2",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9559,7 +9574,8 @@
         "questionNumbers": [
           "2"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page4 credits MISS magazine; correct the inherited Article tag."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9587,7 +9603,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A1",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9597,7 +9613,8 @@
         "questionNumbers": [
           "1"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page2 explicitly describes an article taken from a website; the original primary tag was correct but the inherited Atlas topic was Article."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9606,7 +9623,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A2",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9616,7 +9633,8 @@
         "questionNumbers": [
           "2"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page4 explicitly credits MAXI magazine; correct the inherited Article tag."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9625,7 +9643,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A3",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9635,7 +9653,8 @@
         "questionNumbers": [
           "3"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page6 explicitly credits OKAPI magazine; correct the inherited Article tag."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-article",
@@ -9796,7 +9815,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A1",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9811,7 +9830,8 @@
           "5",
           "6"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page 4 explicitly identifies an article adapted from Phosphore magazine, not a book extract. Use the specific magazine-extract topic."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-book-extract",
@@ -10217,7 +10237,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A4",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -10234,7 +10254,8 @@
           "29",
           "30"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page 10 credits François Sautereau, 2008, adapted from Les kilos..., and presents a third-person narrative. Preserve the original Mark Bank Book Extract classification and correct the inherited Atlas Interview assignment."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-interview",
@@ -10675,7 +10696,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A3",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -10692,7 +10713,8 @@
           "21",
           "22"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page 8 explicitly identifies an interview with Sonia and presents questions with her answers. Use Interview rather than the inherited general magazine-extract assignment."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-other-website-magazine-extracts",
@@ -10911,7 +10933,7 @@
       "sitting": "main",
       "paperKey": "single",
       "referenceSlot": "A1",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -10921,7 +10943,8 @@
         "questionNumbers": [
           "1"
         ]
-      }
+      },
+      "reason": "Reviewed SEC source: Paper page2 explicitly credits Le Parisien. The archive card tag is Article but the old crosswalk misroutes it to Other Website & Magazine Extracts; align both with the printed newspaper source."
     },
     {
       "topicId": "french-ordinary-reading-comprehension-other-website-magazine-extracts",

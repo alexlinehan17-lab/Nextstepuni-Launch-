@@ -1,6 +1,6 @@
 # StudyClix official-question parity ledger
 
-Generated: 2026-10-11T17:45:32.573Z
+Generated: 2026-10-11T18:30:29.252Z
 
 This is the question-level completion ledger. Mock questions are excluded. A
 topic is complete only when every factual StudyClix State-exam heading points
@@ -23,7 +23,7 @@ paper/marking-scheme boundary has been visually checked.
 | economics | 40 | 1,120 | 903 | 217 | 0 | 31 |
 | engineering | 74 | 2,921 | 2,287 | 634 | 0 | 63 |
 | english | 86 | 566 | 392 | 174 | 0 | 52 |
-| french | 33 | 739 | 505 | 234 | 0 | 32 |
+| french | 33 | 739 | 486 | 234 | 0 | 32 |
 | geography | 96 | 5,475 | 3,791 | 1,684 | 0 | 91 |
 | german | 25 | 479 | 379 | 100 | 0 | 22 |
 | history | 24 | 466 | 405 | 59 | 0 | 24 |
@@ -43,7 +43,7 @@ paper/marking-scheme boundary has been visually checked.
 | technology | 37 | 1,190 | 1,118 | 72 | 0 | 26 |
 
 Total: **1,609 topics**, **37,105 official topic associations**, 
-**27,229 matched**, **9,856 source blocked**, and **0 awaiting exact crosswalk review**.
+**27,210 matched**, **9,856 source blocked**, and **0 awaiting exact crosswalk review**.
 
 The machine-readable companion contains every non-matched heading under its
 exact subject and topic: `data/examTopics/studyclix-question-parity.json`.

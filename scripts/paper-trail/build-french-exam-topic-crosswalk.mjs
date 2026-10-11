@@ -633,6 +633,49 @@ if (duplicateMappings.length) {
   throw new Error(`Duplicate French local mappings: ${[...new Set(duplicateMappings)].join(', ')}`);
 }
 
+// A reviewed SEC source correction (french-reading-review.json, which must
+// carry a written reason) can contradict an inherited StudyClix association:
+// e.g. a passage StudyClix files as a newspaper article that the paper credits
+// to a magazine. Record that contradiction as an audited reference anomaly
+// rather than silently keeping a heading the live card no longer carries. A
+// question the reference merely misnumbered (2014 HL archive marker 11, which
+// belongs to passage 1) is dropped from that heading's targets. Contradictions
+// without a reviewed correction stay "matched" so the parity test flags them.
+const mappingByQuestion = new Map(localQuestionMappings.map(mapping => [
+  [mapping.level, mapping.lang, mapping.year, mapping.fileid, mapping.n].join('|'), mapping,
+]));
+const correctionReason = (association, number) => {
+  const record = readingReview.papers.find(item => item.year === association.year
+    && item.level === (association.target.level === 'higher' ? 'hl' : 'ol'));
+  const question = paperMap.get(paperIdentity({ subjectId: 'french', year: association.year, ...association.target }))
+    ?.q.find(item => item.n === number);
+  const slot = question?.referenceSlot ?? '';
+  return /^A[1-4]$/.test(slot)
+    ? (record?.questionTopicCorrections?.[number] ?? record?.topicCorrections?.[slot.slice(1)])?.reason
+    : undefined;
+};
+for (const association of associations) {
+  if (association.resolution !== 'matched') continue;
+  const contradicted = association.target.questionNumbers.filter(number => {
+    const mapping = mappingByQuestion.get([
+      association.target.level, association.target.lang, association.year, association.target.fileid, number,
+    ].join('|'));
+    return mapping?.provenance === 'reviewed-reading-source' && !mapping.topicIds.includes(association.topicId);
+  });
+  if (!contradicted.length) continue;
+  const reasons = [...new Set(contradicted.map(number => correctionReason(association, number)))];
+  if (reasons.some(reason => !reason)) throw new Error(`French anomaly lacks a reviewed reason: ${association.heading}`);
+  const kept = association.target.questionNumbers.filter(number => !contradicted.includes(number));
+  if (kept.length) {
+    association.target.questionNumbers = kept;
+    association.excludedQuestionNumbers = contradicted;
+    association.exclusionReason = reasons.join(' ');
+  } else {
+    association.resolution = 'reference-anomaly';
+    association.reason = `Reviewed SEC source: ${reasons.join(' ')}`;
+  }
+}
+
 const tagPapers = localPapers.map(paper => ({
   subjectId: 'french',
   level: paper.level,
@@ -703,10 +746,11 @@ const summary = {
   referenceOfficialAssociations: associations.length,
   referenceMockAssociations: referenceTopics.reduce((sum, topic) => sum + topic.mockQuestionCount, 0),
   referenceProviderSampleAssociations: referenceTopics.reduce((sum, topic) => sum + topic.providerSampleQuestionCount, 0),
-  matchedAssociations: matched.length,
+  matchedAssociations: associations.filter(association => association.resolution === 'matched').length,
+  referenceAnomalyAssociations: associations.filter(association => association.resolution === 'reference-anomaly').length,
   sourceBlockedAssociations: sourceBlocked.length,
   sourceBlockedByReason: blockedByReason,
-  matchedLocalCardLinks: matched.reduce((sum, association) => sum + association.target.questionNumbers.length, 0),
+  matchedLocalCardLinks: associations.filter(association => association.resolution === 'matched').reduce((sum, association) => sum + association.target.questionNumbers.length, 0),
   localPaperVariants: localPapers.length,
   localPhysicalMappings: localQuestionMappings.length,
   distinctStudentFacingQuestions: logicalQuestions.size,
