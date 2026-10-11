@@ -33,8 +33,8 @@ describe('visually reviewed French reading tasks', () => {
     expect(cards).toHaveLength(925);
     expect(cards.filter(card => card.level === 'higher')).toHaveLength(372);
     expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(553);
-    expect([...higher, ...ordinary]).toHaveLength(2298);
-    expect(new Set([...higher, ...ordinary].map(card => card.id)).size).toBe(2298);
+    expect([...higher, ...ordinary]).toHaveLength(2326);
+    expect(new Set([...higher, ...ordinary].map(card => card.id)).size).toBe(2326);
     for (const year of [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]) {
       for (const [level, counts, totals] of [
         ['higher', [2015, 2019].includes(year) ? [11, 10] : [11, 11], [60, 60]], ['ordinary', year === 2010 ? [5, 5, 7, 8] : year === 2011 ? [10, 9, 8, 8] : year === 2012 ? [9, 8, 9, 8] : year === 2013 ? [8, 8, 8, 9] : year === 2014 ? [8, 8, 8, 10] : year === 2015 ? [5, 5, 8, 8] : year === 2016 ? [8, 10, 8, 8] : year === 2018 ? [9, 8, 9, 8] : year === 2022 ? [9, 9, 8, 8] : [2021, 2024].includes(year) ? [8, 9, 8, 8] : [9, 8, 8, 8], [40, 40, 40, 40]],

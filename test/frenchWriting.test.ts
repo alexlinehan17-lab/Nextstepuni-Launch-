@@ -16,12 +16,12 @@ import { frenchMarks, frenchScoreId, FRENCH_ATTEMPT_ID } from '../components/Mar
 const deck = [...higher, ...ordinary];
 const correctedReadingIds = new Set(readingReview.papers.flatMap(paper => Object.values(paper.preservedCardIds ?? {})));
 
-describe('reviewed 2012–2026 French writing tasks', () => {
-  it('adds all 504 reviewed units while preserving the 260 existing identities', () => {
-    expect(cards).toHaveLength(504);
-    expect(cards.filter(card => card.level === 'higher')).toHaveLength(120);
-    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(384);
-    expect(deck).toHaveLength(2298);
+describe('reviewed 2011–2026 French writing tasks', () => {
+  it('adds all 522 reviewed units while preserving the 260 existing identities', () => {
+    expect(cards).toHaveLength(522);
+    expect(cards.filter(card => card.level === 'higher')).toHaveLength(128);
+    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(394);
+    expect(deck).toHaveLength(2326);
     expect(new Set(deck.map(card => card.id)).size).toBe(deck.length);
     for (const old of legacy) {
       const live = deck.find(card => card.id === old.id)!;
@@ -98,7 +98,7 @@ describe('reviewed 2012–2026 French writing tasks', () => {
   });
 
   it('lifts each year’s printed communication tariff line rather than one shared paraphrase', () => {
-    // 2012–2021 schemes print "Two points" on every task; from 2022 the message and
+    // 2011–2021 schemes print "Two points" on every task; from 2022 the message and
     // postcard (B2A/B2B) print "Two parts" while the diary and letter keep "Two points".
     const seen = new Map<string, number>();
     for (const card of cards.filter(card => /-writing-b[23][ab]-route-/.test(card.id))) {
@@ -110,7 +110,7 @@ describe('reviewed 2012–2026 French writing tasks', () => {
         seen.set(word, (seen.get(word) ?? 0) + 1);
       }
     }
-    expect(Object.fromEntries(seen)).toEqual({ points: 528, parts: 300 });
+    expect(Object.fromEntries(seen)).toEqual({ points: 540, parts: 300 });
   });
 
   it('keeps the 2015 email, boxed quotation and task-specific language descriptors', () => {
@@ -140,10 +140,10 @@ describe('reviewed 2012–2026 French writing tasks', () => {
   });
 
   it('reproduces each year’s printed wording: word-count line, diary instruction, grid case and letter notes', () => {
-    for (const year of [2013, 2016, 2018, 2020]) {
+    for (const year of [2011, 2013, 2016, 2018, 2020]) {
       expect(cards.find(card => card.id === `fr-${year}-hl-writing-b2b`)!.questionText.endsWith('\n(about 75 words)')).toBe(true);
     }
-    expect(cards.filter(card => card.questionText.includes('(about 75 words)'))).toHaveLength(4);
+    expect(cards.filter(card => card.questionText.includes('(about 75 words)'))).toHaveLength(5);
     for (const card of cards.filter(card => card.id.includes('-ol-writing-b3a-route-'))) {
       const instruction = card.year >= 2021 ? 'Note three of the following five points in French in your diary:'
         : card.year >= 2017 ? 'Note the following in French in your diary:' : 'Note the following in your diary:';
@@ -158,6 +158,31 @@ describe('reviewed 2012–2026 French writing tasks', () => {
     expect(byId('fr-2015-ol-writing-b3b-route-123').rubric.criteria[0].guidance).toContain('Include “Irlande”. Accept “Ireland” / “Éire”.');
     expect(byId('fr-2026-ol-writing-b3b-route-123').rubric.criteria[0].guidance).toContain('Include Irlande, accept “Ireland” / “Éire”.');
     expect(byId('fr-2017-ol-writing-b2a-route-123').rubric.criteria[0].guidance[0]).toBe('You have a toothache / and you can’t eat');
+  });
+
+  it('verifies the tiled 2011 Higher prompts against their rebuilt words and keeps the form conditions', () => {
+    const group = cards.filter(card => card.year === 2011);
+    expect(group).toHaveLength(18);
+    const slogan = group.find(card => card.id === 'fr-2011-hl-writing-b3a')!;
+    expect(slogan.questionText.split('\n\n')[0]).toBe('« Trop boire, c’est le cauchemar ! »');
+    expect(slogan.sourceMaterial?.kind).toBe('source-illustration');
+    const referees = group.find(card => card.id === 'fr-2011-hl-writing-b3b')!;
+    expect(referees.questionText.split('\n\n')).toHaveLength(6);
+    expect(referees.questionText).toContain('Guillaume, 20 ans');
+    expect(referees.questionText).toContain('Nadine, 19 ans');
+    // The raw text layer of these pages repeats glyphs ("Tro p boire"); none may reach a card.
+    for (const card of group) expect(card.questionText, card.id).not.toMatch(/Tro p|cauch hemar|mo ots|Twitt ter/);
+    expect(group.find(card => card.id === 'fr-2011-hl-writing-b4b')!.sourceMaterial?.kind).toBe('source-illustration');
+    const email = group.find(card => card.id === 'fr-2011-hl-writing-b2b')!;
+    expect(email.questionText.match(/^- /gm)).toHaveLength(5);
+    expect(email.questionText).not.toContain('Ba mhaith');
+    const form = group.find(card => card.id === 'fr-2011-ol-writing-b1b-route-6789')!;
+    expect(form.rubric.criteria.find(c => c.id === 'communication-6')?.guidance).toContain('Two or more qualities required for full marks');
+    expect(group.find(card => card.id === 'fr-2011-ol-writing-b1b-field-3')!.rubric.criteria[0].guidance)
+      .toEqual(['Age – accept any appropriate age (“ans” needed for full marks)']);
+    const diary = group.find(card => card.id === 'fr-2011-ol-writing-b3a-route-123')!;
+    expect(diary.rubric.criteria.find(c => c.id === 'communication-3')?.guidance[0]).toBe('You hope to go the beach / with your cousin Martin on Sunday.');
+    expect(diary.questionText).toContain('• You hope to go to the beach with your cousin Martin on Sunday.');
   });
 
   it('keeps the 2012 form-sentence condition, boxed quotation and earlier scheme layout', () => {

@@ -546,9 +546,40 @@
         }
       ],
       "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
+    },
+    {
+      "year": 2011,
+      "paperPage": 10,
+      "schemePage": 9,
+      "sources": [
+        {
+          "path": "examiner-reports/french/papers/2011-ol-000-paper.pdf",
+          "sha256": "8cfddcac3a8845e5a955fcd193637432e1e0ded174101153250c5c6062b1b03e"
+        },
+        {
+          "path": "examiner-reports/french/schemes/2011-ol.pdf",
+          "sha256": "7e7b09615f35ed3f99418f15b05c063d700925ec4f9060ea57cbdb577d487230"
+        }
+      ],
+      "answers": [
+        "tout",
+        "malade",
+        "trois",
+        "pas",
+        "suis",
+        "mon",
+        "banque",
+        "aller",
+        "très",
+        "bonjour"
+      ],
+      "gapNotes": {
+        "9": "N.B. Gap 9: accept « tout » for 3 marks if not already accepted in Gap 1."
+      },
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the full letter and bank."
     }
   ],
-  "expectedCards": 150,
+  "expectedCards": 160,
   "boundaryDecision": "Each of ten gaps is separately priced at 3 marks. The word bank contains possible answers, not selectable task alternatives. Preserve the original whole-letter practice cards and add each separately practicable gap.",
   "verifiedCorrections": [
     "2022 OL scheme p11 leaves item 10 empty in the numbered answer list, but its completed letter explicitly prints du in On pourrait faire du vélo. The paper word bank also contains du. All ten gaps are supported.",
