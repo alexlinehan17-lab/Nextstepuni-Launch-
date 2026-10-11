@@ -194,6 +194,6 @@ print('Both source guards and duplicate-glyph reconstruction passed')
       expect(batch.review.reviewedSchemePages).toHaveLength(20);
     }
     expect(written.review.reviewedPaperPages).toHaveLength(16);expect(aural.review.reviewedPaperPages).toHaveLength(8);
-    expect(inventory.summary.papersPendingFullReview).toBe(69);expect(inventory.summary.orphanCardIds).toEqual([]);
+    expect(inventory.summary.papersPendingFullReview).toBe(68);expect(inventory.summary.orphanCardIds).toEqual([]);
   });
 });

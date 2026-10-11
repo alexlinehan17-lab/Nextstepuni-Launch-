@@ -78,7 +78,7 @@ const addedIrishRoutes = new Set([
 ]);
 
 // Paper-reviewed Ordinary additions are tracked the same way beside the frozen
-// 185-ID Ordinary hash (2026 Ordinary Paper 1, reviewed 2026-10-11).
+// 185-ID Ordinary hash (2026 Ordinary Papers 1 and 2, reviewed 2026-10-11).
 const addedIrishOrdinaryRoutes = new Set([
   ...['a-f1-q1a','a-f1-q1b','a-f1-q2a','a-f1-q2b','a-f2-q1a','a-f2-q1b','a-f2-q2a','a-f2-q2b',
     'b-c1-first-q1','b-c1-first-q2','b-c1-second-q1','b-c1-second-q2','b-c2-first-q1','b-c2-first-q2','b-c2-second-q1','b-c2-second-q2',
@@ -89,6 +89,27 @@ const addedIrishOrdinaryRoutes = new Set([
     const pairs = ['a','b','c','d'].flatMap((g1, i) => ['a','b','c','d'].slice(i + 1).flatMap(g2 =>
       titles[g1].flatMap(t1 => titles[g2].map(t2 => `${g1}-${t1}-${g2}-${t2}`))));
     return [...singles, ...pairs].map(key => `irish-2026-ol-p1-composition-${key}`);
+  })(),
+  // 2026 Ordinary Paper 2: ten reading questions and their twenty parts, the
+  // prescribed/optional literature routes with printed sub-questions, and the
+  // sixteen two-route selections within 2A, 2B, 3A and 3B.
+  ...['a','b'].flatMap(p => [1,2,3,4,5].flatMap(q => [`reading-${p}-q${q}`, `reading-${p}-q${q}-a`, `reading-${p}-q${q}-b`]))
+    .map(key => `irish-2026-ol-p2-${key}`),
+  ...(() => {
+    const parts = (route: string, labels: string[]) => [route, ...labels.map(label => `${route}-${label}`)];
+    const five = ['i','ii','iii','iv','v'], three = ['i','ii','iii'];
+    const routes = [
+      ...parts('prose-2a-a-caca-milis', five), ...parts('prose-2a-a-an-lasair-choille', five), 'prose-2a-b', ...parts('prose-2a-c', five),
+      'prose-2b-a-scannan', 'prose-2b-a-drama', 'prose-2b-b', 'prose-2b-c',
+      ...parts('poetry-3a-a', three), ...parts('poetry-3a-b', [...three, 'i-a', 'i-b', 'i-c', 'i-d']), ...parts('poetry-3a-c', three),
+      'poetry-3b-a', 'poetry-3b-b', 'poetry-3b-c',
+    ];
+    const selections = [
+      'prose-2a-a-caca-milis--b', 'prose-2a-a-caca-milis--c', 'prose-2a-a-an-lasair-choille--b', 'prose-2a-a-an-lasair-choille--c', 'prose-2a-b--c',
+      'prose-2b-a-scannan--b', 'prose-2b-a-scannan--c', 'prose-2b-a-drama--b', 'prose-2b-a-drama--c', 'prose-2b-b--c',
+      'poetry-3a-a--b', 'poetry-3a-a--c', 'poetry-3a-b--c', 'poetry-3b-a--b', 'poetry-3b-a--c', 'poetry-3b-b--c',
+    ];
+    return [...routes, ...selections].map(key => `irish-2026-ol-p2-${key}`);
   })(),
 ]);
 
