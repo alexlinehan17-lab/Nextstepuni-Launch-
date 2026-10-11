@@ -94,17 +94,10 @@ ADDITIONAL_TOPICS = {
     'éiceolaí': 'irish-6-10',
 }
 
-AUDIO = {
-    2025: 'https://educateplus.ie/sites/default/files/2025_6.mp3',
-    2024: 'https://educateplus.ie/sites/default/files/2024_6.mp3',
-    2023: 'https://educateplus.ie/sites/default/files/2023_4.mp3',
-    2022: 'https://educateplus.ie/sites/default/files/2022_5.mp3',
-}
-AUDIO_2021 = {
-    'A': 'https://educateplus.ie/sites/default/files/2021%20LC%20Irish%20Cuid%20A.mp3',
-    'B': 'https://educateplus.ie/sites/default/files/2021%20LC%20Irish%20Cuid%20B.mp3',
-    'C': 'https://educateplus.ie/sites/default/files/2021%20LC%20Irish%20Cuid%20C.mp3',
-}
+# Listening cards play the official SEC recording. The earlier Educateplus
+# playback mirrors were verified against it on 2026-10-11 (2022–2025: the same
+# bytes; 2021: the official recording split at the Cuid A/B/C boundaries) and are
+# no longer used; see irish-listening-audio-verification.json.
 
 
 def clean_unicode(value: str) -> str:
@@ -464,8 +457,8 @@ def source_material(label: str, title: str, pages: list[int]) -> dict:
 
 
 def audio_material(year: int, section: str, label: str) -> dict:
-    playback = AUDIO_2021[section] if year == 2021 else AUDIO[year]
     fileid = 'LC001ZLP017IV.mp3'
+    playback = f'https://www.examinations.ie/archive/exampapers/{year}/{fileid}'
     return {
         'kind': 'source-audio',
         'label': label,
@@ -473,7 +466,7 @@ def audio_material(year: int, section: str, label: str) -> dict:
         'playbackUrl': playback,
         'secFileid': fileid,
         'canonicalUrl': f'https://www.examinations.ie/archive/exampapers/{year}/{fileid}',
-        'attribution': '© State Examinations Commission. Verified playback mirror: Educateplus.',
+        'attribution': '© State Examinations Commission.',
         'presentationNote': 'Play the official recording and use the section heading on this card to follow the correct part.',
     }
 
