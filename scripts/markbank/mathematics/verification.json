@@ -1,8 +1,8 @@
 {
   "date": "2026-10-07",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher Papers 1 and 2 and Ordinary Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
   "runtimeCards": 1561,
-  "reviewedTasks": 1004,
+  "reviewedTasks": 1047,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 273,
+  "targetedRegressionTests": 288,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -475,5 +475,31 @@
     "schemePagesInspected": 23,
     "coverageBaseline": "1129/3474 asks covered, 0 orphans, 0 excluded, 2345 open",
     "validation": "Deck generation (1,561 built, 9 historical rejects), Atlas generation and --check (256 placements), audit --check-reviewed, nine regression files (273/273), typecheck and diff whitespace check passed."
+  },
+  "ordinary2024p2": {
+    "paper": "2024 Ordinary Level Paper 2",
+    "paperFileid": "LC003GLP200EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-11",
+    "independentlyReviewedTasks": 43,
+    "existingRuntimeCardsReviewed": 43,
+    "rowRepairs": [
+      "maths-2024-ol-p2-q5-a-ii",
+      "maths-2024-ol-p2-q8-a-ii",
+      "maths-2024-ol-p2-q7-b-iii",
+      "maths-2024-ol-p2-q2-c"
+    ],
+    "deductionsMovedOutOfBands": 18,
+    "reCited": {
+      "maths-2024-ol-p2-q2-c": "Q2(c), (d)"
+    },
+    "targetedRegressionTests": 288,
+    "previousRuntimeIdsRetained": 1561,
+    "offeredMarks": 380,
+    "candidateMarks": 300,
+    "paperPagesInspected": 32,
+    "schemePagesInspected": 26,
+    "coverageBaseline": "1130/3474 asks covered, 0 orphans, 0 excluded, 2344 open",
+    "validation": "Deck generation (1,561 built, 9 historical rejects), Atlas generation and --check (266 placements), audit --check-reviewed, ten regression files (288/288, including coverage, schemes, accessibility and StudyClix placement tests), typecheck and diff whitespace check passed."
   }
 }

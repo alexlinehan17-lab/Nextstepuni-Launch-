@@ -27,6 +27,7 @@ import paper2 from '../scripts/markbank/mathematics/reviews/2025-higher-p2.json'
 import higher2024p1 from '../scripts/markbank/mathematics/reviews/2024-higher-p1.json';
 import higher2024p2 from '../scripts/markbank/mathematics/reviews/2024-higher-p2.json';
 import ordinary2024p1 from '../scripts/markbank/mathematics/reviews/2024-ordinary-p1.json';
+import ordinary2024p2 from '../scripts/markbank/mathematics/reviews/2024-ordinary-p2.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
@@ -658,6 +659,7 @@ describe('2024 Higher Mathematics Paper 2 independent source review', () => {
 
 describe.each([
   { number: 1, count: 39, review: ordinary2024p1 },
+  { number: 2, count: 43, review: ordinary2024p2 },
 ])('2024 Ordinary Mathematics Paper $number independent source review', ({ number, count, review: census }) => {
   const cards = ORDINARY.filter(card => card.year === 2024 && card.questionRef.includes(`Paper ${number}`));
 
@@ -695,4 +697,19 @@ it('ships the three 2024 Ordinary Paper 1 tasks the build used to refuse', () =>
     expect(card, suffix).toBeDefined();
     expect(card!.rows.length, suffix).toBeGreaterThan(1);
   }
+});
+
+it('keeps 2024 Ordinary Paper 2 deductions out of the credit bands and re-cites Q2(c)-(d)', () => {
+  const p2 = ORDINARY.filter(card => card.year === 2024 && card.questionRef.includes('Paper 2'));
+  for (const card of p2) {
+    for (const row of card.rows) {
+      const options = row.group?.options ?? [row.verbatim];
+      expect(options.join(' '), card.id).not.toMatch(/Full Credit \(-1\)|TTTTTT/);
+    }
+  }
+  const cards = p2.find(card => card.id === 'maths-2024-ol-p2-q2-c')!;
+  expect(cards.questionRef).toBe('2024 OL Paper 2 Q2(c), (d)');
+  expect(cards.questionText).toContain('(d)');
+  const sleep = p2.find(card => card.id === 'maths-2024-ol-p2-q5-a-ii')!;
+  expect(sleep.rows.map(row => row.verbatim)).toContain('5% OR 97·5%');
 });

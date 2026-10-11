@@ -9970,21 +9970,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q1-a-i", topicId: "maths-1-6", conceptId: "write-scores-order-lowest-highest-spaces",
     section: "B", questionRef: "2024 OL Paper 2 Q1(a)(i), (ii)",
-    questionText: "Write the scores in order, from the lowest to the highest in the spaces below",
+    stem: "The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y ∈ ℕ. The scores are X, 91, 76, 82, 37, 42, 74, 54 and Y.",
+    questionText: "(i) Write the scores in order, from the lowest to the highest in the spaces below. (ii) Find the median of these scores and explain what this score means in the context of the question.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-ol-p2-q1-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, any two numbers in order in (i) OR some understanding of the median in (ii)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Note: Three items involved in solution: 1. Order of scores 2. Identify the Median 3. Explanation. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, any two numbers in order in (i) OR some understanding of the median in (ii)","One item correct","Two items correct\nOne part correct and work of merit in the other part"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q1-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q1-a-i.png",
           "srcHash": "f48d8b9c8733b8843bd83a928702c09c",
-          "alt": "The question as printed on the paper — The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y∈ℕ. X 91 76 82 37 42 74 54 Y Write the scores in order, from the lowest to the… Full card prompt: Write the scores in order, from the lowest to the highest in the spaces below",
+          "alt": "The question as printed on the paper — The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y∈ℕ. X 91 76 82 37 42 74 54 Y Write the scores in order, from the lowest to the… Full card prompt: The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y ∈ ℕ. The scores are X, 91, 76, 82, 37, 42, 74, 54 and Y. (i) Write the scores in order, from the lowest to the highest in the spaces below. (ii) Find the median of these scores and explain what this score means in the context of the question.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10000,21 +10014,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q1-a-iii", topicId: "maths-5-1", conceptId: "iii-all-students-received-different-scores",
+    id: "maths-2024-ol-p2-q1-a-iii", topicId: "maths-1-6", conceptId: "iii-all-students-received-different-scores",
     section: "B", questionRef: "2024 OL Paper 2 Q1(a)(iii)",
-    questionText: "(iii) All students received different scores in the test. The range of the scores is 61",
+    stem: "The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y ∈ ℕ. The scores are X, 91, 76, 82, 37, 42, 74, 54 and Y.",
+    questionText: "All students received different scores in the test. The range of the scores is 61. Work out the maximum possible value of X and the corresponding value of Y.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p2-q1-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, some understanding of the range (91-37)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, some understanding of the range (91-37)","Identifies X = 36"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4,
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q1-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q1-a-iii.png",
           "srcHash": "e54a99c0b7a742cb23248fc3f81c3d19",
-          "alt": "The question as printed on the paper — The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y∈ℕ. X 91 76 82 37 42 74 54 Y Write the scores in order, from the lowest to the… Full card prompt: (iii) All students received different scores in the test. The range of the scores is 61",
+          "alt": "The question as printed on the paper — The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y∈ℕ. X 91 76 82 37 42 74 54 Y Write the scores in order, from the lowest to the… Full card prompt: The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y ∈ ℕ. The scores are X, 91, 76, 82, 37, 42, 74, 54 and Y. All students received different scores in the test. The range of the scores is 61. Work out the maximum possible value of X and the corresponding value of Y.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10030,16 +10059,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q1-b", topicId: "maths-1-6", conceptId: "different-group-five-students-did-maths",
     section: "B", questionRef: "2024 OL Paper 2 Q1(b)",
-    questionText: "A different group of five students did a maths question. Their scores were as follows, where t∈ℕ: 15, 16, 19, t, 26 The mean of the five scores is 19∙6",
+    questionText: "A different group of five students did a maths question. Their scores were as follows, where t ∈ ℕ: 15, 16, 19, t, 26. The mean of the five scores is 19·6. Work out the value of t.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p2-q1-b-r1", kind: "anyN", verbatim: "Correct relevant formula\nWork of merit, for example, some addition of terms", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct relevant formula\nWork of merit, for example, some addition of terms","Correct formula fully substituted"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q1-b.png",
@@ -10060,21 +10102,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q2-a", topicId: "maths-1-3", conceptId: "complete-table-all-possible-outcomes-when",
+    id: "maths-2024-ol-p2-q2-a", topicId: "maths-1-1", conceptId: "complete-table-all-possible-outcomes-when",
     section: "B", questionRef: "2024 OL Paper 2 Q2(a)",
-    questionText: "Complete the table below to show all possible outcomes when a card is chosen. Some have already been completed for you. For example, G2 means the green card with the number 2",
+    stem: "Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7.",
+    questionText: "Complete the table below to show all possible outcomes when a card is chosen. Some have already been completed for you. For example, G2 means the green card with the number 2. The table already shows G2 and R5.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p2-q2-a-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct value", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one correct value","7 or more correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[28],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q2-a.png",
           "srcHash": "cd4962eeac4b27989c2e7d870aa408eb",
-          "alt": "The question as printed on the paper — Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. Complete the table below to show all possible outcomes when a card is chosen.… Full card prompt: Complete the table below to show all possible outcomes when a card is chosen. Some have already been completed for you. For example, G2 means the green card with the number 2",
+          "alt": "The question as printed on the paper — Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. Complete the table below to show all possible outcomes when a card is chosen.… Full card prompt: Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. Complete the table below to show all possible outcomes when a card is chosen. Some have already been completed for you. For example, G2 means the green card with the number 2. The table already shows G2 and R5.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10090,21 +10146,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q2-b", topicId: "maths-1-2", conceptId: "card-chosen-random-work-out-probability",
     section: "B", questionRef: "2024 OL Paper 2 Q2(b)",
-    questionText: "A card is chosen at random. Work out the probability of getting a card with an even number",
+    stem: "Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7.",
+    questionText: "A card is chosen at random. Work out the probability of getting a card with an even number.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p2-q2-b-r1", kind: "anyN", verbatim: "Work of merit, for example, 6 or 14 in the correct position or on its own", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, 6 or 14 in the correct position or on its own"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[28],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q2-b.png",
           "srcHash": "8184aa930ff08ebb576bf6270f97321b",
-          "alt": "The question as printed on the paper — Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. Complete the table below to show all possible outcomes when a card is chosen.… Full card prompt: A card is chosen at random. Work out the probability of getting a card with an even number",
+          "alt": "The question as printed on the paper — Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. Complete the table below to show all possible outcomes when a card is chosen.… Full card prompt: Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. A card is chosen at random. Work out the probability of getting a card with an even number.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10120,21 +10190,41 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q2-c", topicId: "maths-1-2", conceptId: "picks-card-random-doesn-replace-red",
-    section: "B", questionRef: "2024 OL Paper 2 Q2(c)",
-    questionText: "Seán picks a card at random and doesn’t replace it. It is Red 5 (R5). He then picks a second card at random",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    section: "B", questionRef: "2024 OL Paper 2 Q2(c), (d)",
+    stem: "Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7.",
+    questionText: "(c) Seán picks a card at random and doesn’t replace it. It is Red 5 (R5). He then picks a second card at random. What is the probability that the second card is a green card? Seán puts back the two cards. (d) Seán picks a card at random and doesn’t replace it. He then picks a second card at random. Find the probability that the second card is a different colour and a different number from the first card.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
     rows: [
-    { id: "maths-2024-ol-p2-q2-c-r1", kind: "anyN", verbatim: "Work of merit, for example, 7 or 13 in the correct position or on its own in (c) OR 6 or 13 in the correct position or on its own in (d)\nRelevant partial listing", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, 7 or 13 in the correct position or on its own in (c) OR 6 or 13 in the correct position or on its own in (d)\nRelevant partial listing","Work of merit in (c) AND (d)\n(c) OR (d) correct","One part correct and work of merit in the other part"],"perOptionSteps":[4,2,9]} },
+    { id: "maths-2024-ol-p2-q2-c-solution-1", kind: "point", verbatim: "= 7/13", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q2-c-solution-2", kind: "point", verbatim: "= 6/13", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q2-c-solution-3", kind: "point", verbatim: "Relevant partial listing", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q2-c-solution-4", kind: "point", verbatim: "Work of merit in (c) AND (d)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q2-c-solution-5", kind: "point", verbatim: "(c) OR (d) correct", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q2-c-solution-6", kind: "point", verbatim: "One part correct and work of merit in the other part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[28],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6,
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q2-c",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q2-c.png",
           "srcHash": "87968fd2881b84082922aac9d6b2bc28",
-          "alt": "The question as printed on the paper — Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. Complete the table below to show all possible outcomes when a card is chosen.… Full card prompt: Seán picks a card at random and doesn’t replace it. It is Red 5 (R5). He then picks a second card at random",
+          "alt": "The question as printed on the paper — Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. Complete the table below to show all possible outcomes when a card is chosen.… Full card prompt: Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. (c) Seán picks a card at random and doesn’t replace it. It is Red 5 (R5). He then picks a second card at random. What is the probability that the second card is a green card? Seán puts back the two cards. (d) Seán picks a card at random and doesn’t replace it. He then picks a second card at random. Find the probability that the second card is a different colour and a different number from the first card.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10150,16 +10240,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q3-a-i", topicId: "maths-2-2", conceptId: "point-lies",
     section: "B", questionRef: "2024 OL Paper 2 Q3(a)(i), (ii)",
-    questionText: "Show that the point (4, 1) lies on l",
+    stem: "A line, l, has the equation: y = (1/2)x − 1",
+    questionText: "(i) Show that the point (4, 1) lies on l. (ii) Draw the line l on the co-ordinate diagram below, in the domain −4 ≤ x ≤ 5, x ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2024-ol-p2-q3-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution in (i), effort at getting another point in (ii) or any correct point from l drawn on the graph.", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, some correct substitution in (i), effort at getting another point in (ii) or any correct point from l drawn on the graph.","Work of merit in (i) AND (ii)\n(i) OR (ii) correct","One part correct and work of merit in the other part Full Credit (-1)\nLine not drawn with a ruler\nLine drawn in reduced domain"],"perOptionSteps":[4,2,9]} },
+    { id: "maths-2024-ol-p2-q3-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution in (i), effort at getting another point in (ii) or any correct point from l drawn on the graph.", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Line not drawn with a ruler; Line drawn in reduced domain.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, some correct substitution in (i), effort at getting another point in (ii) or any correct point from l drawn on the graph.","Work of merit in (i) AND (ii)\n(i) OR (ii) correct","One part correct and work of merit in the other part"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[29],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q3-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q3-a-i.png",
@@ -10180,16 +10284,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q3-b", topicId: "maths-2-2", conceptId: "four-lines-drawn-ordinate-diagram-labelled",
     section: "B", questionRef: "2024 OL Paper 2 Q3(b)",
-    questionText: "Four lines are drawn on the co-ordinate diagram below, labelled a, b, c and d. Their slopes are given in the table below",
+    questionText: "Four lines are drawn on the co-ordinate diagram below, labelled a, b, c and d. Their slopes are given in the table below: 3, −1, 1/2 and 0. Write a, b, c and d in the correct place in the table to match each line to its slope.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p2-q3-b-r1", kind: "anyN", verbatim: "Work of merit, for example, definition of slope\nOne slope correctly identified", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, definition of slope\nOne slope correctly identified","Two slopes correctly identified"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[29],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q3-b.png",
@@ -10210,16 +10327,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q3-c", topicId: "maths-2-2", conceptId: "equation-line-through-points",
     section: "B", questionRef: "2024 OL Paper 2 Q3(c)",
-    questionText: "Find the equation of the line through the points (0, 6) and (2, 9)",
+    questionText: "Find the equation of the line through the points (0, 6) and (2, 9).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p2-q3-c-r1", kind: "anyN", verbatim: "Work of merit, for example, a relevant formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, a relevant formula","Some correct substitution into a relevant formula\nSlope found","One error but finishes correctly"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[30],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q3-c",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q3-c.png",
@@ -10240,16 +10370,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q4-a-i", topicId: "maths-2-2", conceptId: "write-down-centre-radius-circle",
     section: "B", questionRef: "2024 OL Paper 2 Q4(a)(i)",
-    questionText: "Write down the centre and radius of the circle k",
+    stem: "The circle k has equation: (x − 5)² + (y + 3)² = 25",
+    questionText: "Write down the centre and radius of the circle k.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p2-q4-a-i-r1", kind: "anyN", verbatim: "Correct relevant formula\nWork of merit, for example, identifies h or k or r²", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Correct relevant formula\nWork of merit, for example, identifies h or k or r²","Either centre or radius correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[31],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q4-a-i.png",
@@ -10270,21 +10414,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q4-a-ii", topicId: "maths-2-2", conceptId: "algebra-investigate-point-inside-outside-circle",
     section: "B", questionRef: "2024 OL Paper 2 Q4(a)(ii)",
-    questionText: "Use algebra to investigate if the point (9, 2) is on, inside, or outside the circle k",
+    stem: "The circle k has equation: (x − 5)² + (y + 3)² = 25",
+    questionText: "Use algebra to investigate if the point (9, 2) is on, inside, or outside the circle k. Tick one box only: (9, 2) is on k; (9, 2) is inside k; (9, 2) is outside k.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p2-q4-a-ii-r1", kind: "anyN", verbatim: "Only correct box ticked\nCorrect relevant formula\nWork of merit, for example, some correct substitution\nUse of radius from (a)(i)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Only correct box ticked\nCorrect relevant formula\nWork of merit, for example, some correct substitution\nUse of radius from (a)(i)","Fully substituted distance formula"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[31],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q4-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q4-a-ii.png",
           "srcHash": "d883637516766cf0b8d598dd47109d5a",
-          "alt": "The question as printed on the paper — (a) The circle k has equation: (x−5)2 + (y + 3)2 = 25 (ii) Use algebra to investigate if the point (9, 2) is on, inside, or outside the circle k. Answer: (9, 2) is (9, 2) is (9, 2) is on k inside k outside k (Tick (✓)… Full card prompt: Use algebra to investigate if the point (9, 2) is on, inside, or outside the circle k",
+          "alt": "The question as printed on the paper — (a) The circle k has equation: (x−5)2 + (y + 3)2 = 25 (ii) Use algebra to investigate if the point (9, 2) is on, inside, or outside the circle k. Answer: (9, 2) is (9, 2) is (9, 2) is on k inside k outside k (Tick (✓)… Full card prompt: The circle k has equation: (x − 5)² + (y + 3)² = 25 Use algebra to investigate if the point (9, 2) is on, inside, or outside the circle k. Tick one box only: (9, 2) is on k; (9, 2) is inside k; (9, 2) is outside k.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10300,16 +10458,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q4-b", topicId: "maths-2-2", conceptId: "different-circle-has-centre-radius-construct",
     section: "B", questionRef: "2024 OL Paper 2 Q4(b)",
-    questionText: "A different circle has centre (4, −1) and radius 3. Construct this circle on the co-ordinate diagram below",
+    questionText: "A different circle has centre (4, −1) and radius 3. Construct this circle on the co-ordinate diagram below.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p2-q4-b-r1", kind: "anyN", verbatim: "Work of merit, for example, centre point plotted", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, centre point plotted","Circle of radius 3 drawn\nCircle not constructed, drawn by hand\nCircle constructed with centre correct and incorrect radius"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[31],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q4-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q4-b.png",
@@ -10330,16 +10501,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q4-c", topicId: "maths-2-2", conceptId: "point-lowest-point-circle-centre-shown",
     section: "B", questionRef: "2024 OL Paper 2 Q4(c)",
-    questionText: "The point (2, 1) is the lowest point on the circle s with centre c, as shown in the diagram below. The y-axis is a tangent to the circle s",
+    questionText: "The point (2, 1) is the lowest point on the circle s with centre c, as shown in the diagram below. The y-axis is a tangent to the circle s. Work out the radius and the centre of the circle s.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p2-q4-c-r1", kind: "anyN", verbatim: "Work of merit, for example, an ordinate of centre correct\nRelevant work on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, an ordinate of centre correct\nRelevant work on the diagram","Centre or radius correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[32],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q4-c",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q4-c.png",
@@ -10360,21 +10544,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q5-a-i", topicId: "maths-1-2", conceptId: "fill-three-missing-numbers-horizontal-axis",
+    id: "maths-2024-ol-p2-q5-a-i", topicId: "maths-1-3", conceptId: "fill-three-missing-numbers-horizontal-axis",
     section: "B", questionRef: "2024 OL Paper 2 Q5(a)(i)",
-    questionText: "Fill in the three missing numbers on the horizontal axis",
+    stem: "A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 68% slept between 7·2 and 8·4 hours, as shown on the diagram below. Use the empirical rule to answer parts (a)(i) and (a)(ii).",
+    questionText: "Fill in the three missing numbers on the horizontal axis.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p2-q5-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, correct relevant formula\nEffort at calculating the mean of 7.2 and 8.4\nEffort at finding 𝜎\nOne entry correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, correct relevant formula\nEffort at calculating the mean of 7.2 and 8.4\nEffort at finding 𝜎\nOne entry correct","Two entries correct"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q5-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q5-a-i.png",
           "srcHash": "de3105271e53bbc8c3a409477dd684aa",
-          "alt": "The question as printed on the paper — A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 6% slept between 7∙2 and 8∙4 hours, as shown on the diagram below. Use… Full card prompt: Fill in the three missing numbers on the horizontal axis",
+          "alt": "The question as printed on the paper — A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 6% slept between 7∙2 and 8∙4 hours, as shown on the diagram below. Use… Full card prompt: A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 68% slept between 7·2 and 8·4 hours, as shown on the diagram below. Use the empirical rule to answer parts (a)(i) and (a)(ii). Fill in the three missing numbers on the horizontal axis.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10390,21 +10588,40 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q5-a-ii", topicId: "maths-3-3", conceptId: "research-says-year-old-should-get",
+    id: "maths-2024-ol-p2-q5-a-ii", topicId: "maths-1-3", conceptId: "research-says-year-old-should-get",
     section: "B", questionRef: "2024 OL Paper 2 Q5(a)(ii)",
+    stem: "A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 68% slept between 7·2 and 8·4 hours, as shown on the diagram below. Use the empirical rule to answer parts (a)(i) and (a)(ii).",
     questionText: "Research says that a 17-year-old should get at least 9 hours of sleep each night. What percentage of this sample got at least 9 hours of sleep on the previous night?",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q5-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, shades in correct area or µ + 2σ\n95%\nUse of Z score would merit at most L.P.C.", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Note: Accept correct answer without work. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, shades in correct area or µ + 2σ\n95%\nUse of Z score would merit at most L.P.C."]} },
+    { id: "maths-2024-ol-p2-q5-a-ii-solution-1", kind: "point", verbatim: "100% − 97·5%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q5-a-ii-solution-2", kind: "point", verbatim: "= 2·5 [%]", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q5-a-ii-solution-3", kind: "point", verbatim: "Work of merit, for example, shades in correct area or μ + 2σ", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q5-a-ii-solution-4", kind: "point", verbatim: "95%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q5-a-ii-solution-5", kind: "point", verbatim: "Use of Z score would merit at most L.P.C.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q5-a-ii-solution-6", kind: "point", verbatim: "5% OR 97·5%", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q5-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q5-a-ii.png",
           "srcHash": "ebda554e461261e883743a2a2f587aa5",
-          "alt": "The question as printed on the paper — A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 6% slept between 7∙2 and 8∙4 hours, as shown on the diagram below. Use… Full card prompt: Research says that a 17-year-old should get at least 9 hours of sleep each night. What percentage of this sample got at least 9 hours of sleep on the previous night?",
+          "alt": "The question as printed on the paper — A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 6% slept between 7∙2 and 8∙4 hours, as shown on the diagram below. Use… Full card prompt: A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 68% slept between 7·2 and 8·4 hours, as shown on the diagram below. Use the empirical rule to answer parts (a)(i) and (a)(ii). Research says that a 17-year-old should get at least 9 hours of sleep each night. What percentage of this sample got at least 9 hours of sleep on the previous night?",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10420,21 +10637,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q5-b-i", topicId: "maths-1-2", conceptId: "what-probability-does-not-get-recommended",
     section: "B", questionRef: "2024 OL Paper 2 Q5(b)(i), (ii)",
-    questionText: "What is the probability that he does not get the recommended amount of sleep on a particular night?",
+    stem: "Owen records the number of hours of sleep that he gets each night for several weeks. Based on this, he calculates that he gets the recommended amount of sleep 10% of the time.",
+    questionText: "(i) What is the probability that he does not get the recommended amount of sleep on a particular night? (ii) Beginning on a Sunday night, Owen records his sleep each night for a week. Find the probability that Owen gets the recommended amount of sleep for the first time on Tuesday night (the third night). Assume that the number of hours of sleep Owen gets on different nights are independent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-ol-p2-q5-b-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, mentions 1\nWork of merit in (ii), for example, two relevant probabilities multiplied", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in (i), for example, mentions 1\nWork of merit in (ii), for example, two relevant probabilities multiplied","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other"],"perOptionSteps":[4,2,9]} },
     ],
+    mathematicsScale: {"code":"15D","marks":[0,4,6,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[34],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q5-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q5-b-i.png",
           "srcHash": "582eb797748199bb3d9aebf5e88e8724",
-          "alt": "The question as printed on the paper — Owen records the number of hours of sleep that he gets each night for several weeks. Based on this, he calculates that he gets the recommended amount of sleep 10% of the time. What is the probability that he does not… Full card prompt: What is the probability that he does not get the recommended amount of sleep on a particular night?",
+          "alt": "The question as printed on the paper — Owen records the number of hours of sleep that he gets each night for several weeks. Based on this, he calculates that he gets the recommended amount of sleep 10% of the time. What is the probability that he does not… Full card prompt: Owen records the number of hours of sleep that he gets each night for several weeks. Based on this, he calculates that he gets the recommended amount of sleep 10% of the time. (i) What is the probability that he does not get the recommended amount of sleep on a particular night? (ii) Beginning on a Sunday night, Owen records his sleep each night for a week. Find the probability that Owen gets the recommended amount of sleep for the first time on Tuesday night (the third night). Assume that the number of hours of sleep Owen gets on different nights are independent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10450,21 +10681,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q6-a-i", topicId: "maths-2-4", conceptId: "construct-bisector-angle-using-only-compass",
+    id: "maths-2024-ol-p2-q6-a-i", topicId: "maths-2-1", conceptId: "construct-bisector-angle-using-only-compass",
     section: "B", questionRef: "2024 OL Paper 2 Q6(a)(i), (ii)",
-    questionText: "Construct the bisector of the angle X, using only a compass and straight edge",
+    stem: "The diagram below shows the triangle XYZ.",
+    questionText: "(i) Construct the bisector of the angle XYZ, using only a compass and straight edge. Show all your construction lines and arcs clearly. (ii) Hence, construct the incentre of the triangle XYZ below.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 9, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2024-ol-p2-q6-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i) OR (ii), for example, one correct arc in (i)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 9. The full scale runs to 15. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Work of merit in (i) OR (ii), for example, one correct arc in (i)","One correct bisector Full Credit (-1):\nBisectors do not intersect (Incircle not identified)"],"perOptionSteps":[6,9]} },
+    { id: "maths-2024-ol-p2-q6-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i) OR (ii), for example, one correct arc in (i)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 9. The full scale runs to 15. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Bisectors do not intersect (Incircle not identified).", openList: true, group: {"claimMax":2,"perOption":6,"options":["Work of merit in (i) OR (ii), for example, one correct arc in (i)","One correct bisector"],"perOptionSteps":[6,9]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,6,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q6-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q6-a-i.png",
           "srcHash": "48671c27c29db5a65934820bf9855a90",
-          "alt": "The question as printed on the paper — The diagram below shows the triangle X. Construct the bisector of the angle X, using only a compass and straight edge. Show all your construction lines and arcs clearly. Hence, construct the incentre of the triangle X… Full card prompt: Construct the bisector of the angle X, using only a compass and straight edge",
+          "alt": "The question as printed on the paper — The diagram below shows the triangle X. Construct the bisector of the angle X, using only a compass and straight edge. Show all your construction lines and arcs clearly. Hence, construct the incentre of the triangle X… Full card prompt: The diagram below shows the triangle XYZ. (i) Construct the bisector of the angle XYZ, using only a compass and straight edge. Show all your construction lines and arcs clearly. (ii) Hence, construct the incentre of the triangle XYZ below.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10480,21 +10725,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q6-b-i", topicId: "maths-2-4", conceptId: "scale-factor",
     section: "B", questionRef: "2024 OL Paper 2 Q6(b)(i), (ii)",
-    questionText: "Use |B| and |D| to show the scale factor is 3∙5",
+    stem: "The diagram below shows the triangles ABC and ADE (not to scale). The triangle ADE is the image of the triangle ABC under enlargement. Some of the lengths are shown in the diagram: |AC| = 6, |BC| = 4 and |DE| = 14.",
+    questionText: "(i) Use |BC| and |DE| to show the scale factor is 3·5. (ii) |AC| = 6 units. Use the scale factor to find the distance from C to E, that is, find |CE|.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p2-q6-b-i-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, effort at linking object length to image length\nWork of merit in (ii), for example, some relevant use of the scale factor", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Three items involved in solution: 1. Calculating the scale factor 2. Finding |A| 3. Finding |C|. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, effort at linking object length to image length\nWork of merit in (ii), for example, some relevant use of the scale factor","Work of merit in (i) AND (ii)\nOne item correct","Two items correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q6-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q6-b-i.png",
           "srcHash": "6cdbe33d268f8ec49a0c0a230bbdad8b",
-          "alt": "The question as printed on the paper — The diagram below shows the triangles A and A (not to scale). The triangle A is the image of the triangle A under enlargement. Some of the lengths are shown in the diagram. 14 6 4 Use |B| and |D| to show the scale… Full card prompt: Use |B| and |D| to show the scale factor is 3∙5",
+          "alt": "The question as printed on the paper — The diagram below shows the triangles A and A (not to scale). The triangle A is the image of the triangle A under enlargement. Some of the lengths are shown in the diagram. 14 6 4 Use |B| and |D| to show the scale… Full card prompt: The diagram below shows the triangles ABC and ADE (not to scale). The triangle ADE is the image of the triangle ABC under enlargement. Some of the lengths are shown in the diagram: |AC| = 6, |BC| = 4 and |DE| = 14. (i) Use |BC| and |DE| to show the scale factor is 3·5. (ii) |AC| = 6 units. Use the scale factor to find the distance from C to E, that is, find |CE|.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10510,21 +10769,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q6-b-iii", topicId: "maths-2-3", conceptId: "iii-area-triangle-units-area-triangle",
+    id: "maths-2024-ol-p2-q6-b-iii", topicId: "maths-2-4", conceptId: "iii-area-triangle-units-area-triangle",
     section: "B", questionRef: "2024 OL Paper 2 Q6(b)(iii)",
-    questionText: "(iii) The area of the triangle A is 11 units². Find the area of the triangle A",
+    stem: "The diagram below shows the triangles ABC and ADE (not to scale). The triangle ADE is the image of the triangle ABC under enlargement. Some of the lengths are shown in the diagram: |AC| = 6, |BC| = 4 and |DE| = 14. The scale factor is 3·5.",
+    questionText: "The area of the triangle ABC is 11 units². Find the area of the triangle ADE.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p2-q6-b-iii-r1", kind: "anyN", verbatim: "Some work of merit, for example, squaring k or multiplying by k", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Note: Accept correct answers without units. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some work of merit, for example, squaring k or multiplying by k"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q6-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q6-b-iii.png",
           "srcHash": "5b22180c1984762c7ae1d8ff49ba9e09",
-          "alt": "The question as printed on the paper — The diagram below shows the triangles A and A (not to scale). The triangle A is the image of the triangle A under enlargement. Some of the lengths are shown in the diagram. 14 6 4 Use |B| and |D| to show the scale… Full card prompt: (iii) The area of the triangle A is 11 units². Find the area of the triangle A",
+          "alt": "The question as printed on the paper — The diagram below shows the triangles A and A (not to scale). The triangle A is the image of the triangle A under enlargement. Some of the lengths are shown in the diagram. 14 6 4 Use |B| and |D| to show the scale… Full card prompt: The diagram below shows the triangles ABC and ADE (not to scale). The triangle ADE is the image of the triangle ABC under enlargement. Some of the lengths are shown in the diagram: |AC| = 6, |BC| = 4 and |DE| = 14. The scale factor is 3·5. The area of the triangle ABC is 11 units². Find the area of the triangle ADE.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10540,21 +10813,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q7-a-i", topicId: "maths-1-6", conceptId: "complete-back-back-stem-leaf-plot",
     section: "B", questionRef: "2024 OL Paper 2 Q7(a)(i)",
-    questionText: "Complete the back-to-back stem-and-leaf plot below to show this information. Two values are already filled in",
+    stem: "A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87.",
+    questionText: "Complete the back-to-back stem-and-leaf plot below to show this information. Two values are already filled in (0 | 6 = 60 bpm before exercise and 7 | 1 = 71 bpm after exercise).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q7-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, one value filled in correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one value filled in correctly","11 correct values Full Credit (-1):\nOne incorrect or missing value"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q7-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, one value filled in correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): One incorrect or missing value.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one value filled in correctly","11 correct values"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q7-a-i.png",
           "srcHash": "a202f96562711e6bc77b8aa42dc3e73b",
-          "alt": "The question as printed on the paper — A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute… Full card prompt: Complete the back-to-back stem-and-leaf plot below to show this information. Two values are already filled in",
+          "alt": "The question as printed on the paper — A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute… Full card prompt: A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87. Complete the back-to-back stem-and-leaf plot below to show this information. Two values are already filled in (0 | 6 = 60 bpm before exercise and 7 | 1 = 71 bpm after exercise).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10570,21 +10857,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q7-a-ii", topicId: "maths-1-6", conceptId: "work-out-mean-standard-deviation-heart",
     section: "B", questionRef: "2024 OL Paper 2 Q7(a)(ii)",
-    questionText: "Work out the mean and standard deviation of the heart rate after exercise. Give each answer correct to 1 decimal place",
+    stem: "A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87.",
+    questionText: "Work out the mean and standard deviation of the heart rate after exercise. Give each answer correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q7-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, effort at calculating mean or correct relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Note: Accept correct answers without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, effort at calculating mean or correct relevant formula","Correct formula fully substituted\nOne correct answer Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q7-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, effort at calculating mean or correct relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Note: Accept correct answers without work. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, effort at calculating mean or correct relevant formula","Correct formula fully substituted\nOne correct answer"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q7-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q7-a-ii.png",
           "srcHash": "c3b40ac114632bb3608dd3d29c1d7b37",
-          "alt": "The question as printed on the paper — A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute… Full card prompt: Work out the mean and standard deviation of the heart rate after exercise. Give each answer correct to 1 decimal place",
+          "alt": "The question as printed on the paper — A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute… Full card prompt: A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87. Work out the mean and standard deviation of the heart rate after exercise. Give each answer correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10600,21 +10902,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q7-a-iii", topicId: "maths-1-6", conceptId: "iii-based-stem-leaf-plot-how",
     section: "B", questionRef: "2024 OL Paper 2 Q7(a)(iii)",
-    questionText: "(iii) Based on your stem-and-leaf plot, how has the standard deviation changed following exercise? Give a reason for your answer",
+    stem: "A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87.",
+    questionText: "Based on your stem-and-leaf plot, how has the standard deviation changed following exercise? Give a reason for your answer. Tick one box only: Increased; Decreased; Stayed the same.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p2-q7-a-iii-r1", kind: "anyN", verbatim: "Correct box ticked but no or incorrect reason given", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Correct box ticked but no or incorrect reason given"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q7-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q7-a-iii.png",
           "srcHash": "4864d50b36c754280aa138f45608f479",
-          "alt": "The question as printed on the paper — A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute… Full card prompt: (iii) Based on your stem-and-leaf plot, how has the standard deviation changed following exercise? Give a reason for your answer",
+          "alt": "The question as printed on the paper — A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute… Full card prompt: A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87. Based on your stem-and-leaf plot, how has the standard deviation changed following exercise? Give a reason for your answer. Tick one box only: Increased; Decreased; Stayed the same.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10630,21 +10947,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q7-a-iv", topicId: "maths-1-7", conceptId: "correlation-coefficient-between-heart-rate-before",
     section: "B", questionRef: "2024 OL Paper 2 Q7(a)(iv)",
-    questionText: "(iv) r is the correlation coefficient between the heart rate before exercise and the heart rate after exercise",
+    stem: "A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87.",
+    questionText: "A scatter plot of the data is shown in the diagram below. r is the correlation coefficient between the heart rate before exercise and the heart rate after exercise. Based on the diagram above, pick the value from the list below that is closest to r. Give a reason for your answer. Tick one box only: −0·8, −0·2, 0·3 or 0·9.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p2-q7-a-iv-r1", kind: "anyN", verbatim: "Correct box ticked\nr = 0 ∙3 and supporting reason\nRelevant work on diagram", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Correct box ticked\nr = 0 ∙3 and supporting reason\nRelevant work on diagram"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                18
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q7-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q7-a-iv.png",
           "srcHash": "35a2d55bee44e0f8370991018bf0c074",
-          "alt": "The question as printed on the paper — A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute… Full card prompt: (iv) r is the correlation coefficient between the heart rate before exercise and the heart rate after exercise",
+          "alt": "The question as printed on the paper — A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute… Full card prompt: A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87. A scatter plot of the data is shown in the diagram below. r is the correlation coefficient between the heart rate before exercise and the heart rate after exercise. Based on the diagram above, pick the value from the list below that is closest to r. Give a reason for your answer. Tick one box only: −0·8, −0·2, 0·3 or 0·9.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10660,16 +10992,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q7-b-i", topicId: "maths-1-7", conceptId: "sample-margin-error-population-proportion-correct",
     section: "B", questionRef: "2024 OL Paper 2 Q7(b)(i)",
-    questionText: "Show that, for this sample, the margin of error for a population proportion is 5∙3%, correct to 1 decimal place",
+    stem: "A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway.",
+    questionText: "Show that, for this sample, the margin of error for a population proportion is 5·3%, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q7-b-i-r1", kind: "anyN", verbatim: "Work of merit for example n = 355\nCorrect relevant formula ( 1/√nn)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit for example n = 355\nCorrect relevant formula ( 1/√nn)","Correct formula fully substituted Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-ol-p2-q7-b-i-r1", kind: "anyN", verbatim: "Work of merit for example n = 355\nCorrect relevant formula ( 1/√nn)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit for example n = 355\nCorrect relevant formula ( 1/√nn)","Correct formula fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[37],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q7-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q7-b-i.png",
@@ -10690,21 +11036,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q7-b-ii", topicId: "maths-3-3", conceptId: "355-runners-finished-run-under-minutes",
     section: "B", questionRef: "2024 OL Paper 2 Q7(b)(ii)",
-    questionText: "96 of the 355 runners finished the run in under 25 minutes. Work out the percentage of runners in this sample who finished the park run in under 25 minutes. Give your answer correct to the nearest percent",
+    stem: "A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway.",
+    questionText: "96 of the 355 runners finished the run in under 25 minutes. Work out the percentage of runners in this sample who finished the park run in under 25 minutes. Give your answer correct to the nearest percent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q7-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 96/355 OR × 100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 96/355 OR × 100","96/355 × 100 OR 0.27042 Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-ol-p2-q7-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 96/355 OR × 100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 96/355 OR × 100","96/355 × 100 OR 0.27042"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[37],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q7-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q7-b-ii.png",
           "srcHash": "a9d944f4f4a1f3128281bccb778252d9",
-          "alt": "The question as printed on the paper — A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway. Show that, for this sample, the margin of error for a population proportion is 5∙3%, correct to 1 decimal place. 96… Full card prompt: 96 of the 355 runners finished the run in under 25 minutes. Work out the percentage of runners in this sample who finished the park run in under 25 minutes. Give your answer correct to the nearest percent",
+          "alt": "The question as printed on the paper — A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway. Show that, for this sample, the margin of error for a population proportion is 5∙3%, correct to 1 decimal place. 96… Full card prompt: A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway. 96 of the 355 runners finished the run in under 25 minutes. Work out the percentage of runners in this sample who finished the park run in under 25 minutes. Give your answer correct to the nearest percent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10720,21 +11080,39 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q7-b-iii", topicId: "maths-1-6", conceptId: "iii-running-club-commentator-said-galway",
+    id: "maths-2024-ol-p2-q7-b-iii", topicId: "maths-1-7", conceptId: "iii-running-club-commentator-said-galway",
     section: "B", questionRef: "2024 OL Paper 2 Q7(b)(iii)",
-    questionText: "(iii) A running club commentator said that Galway park run times have changed since 2019. In 2019 it was reported that 24% of all runners finished the park run in under 25 minutes",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway. The margin of error is 5·3%, and 96 of the 355 runners (27%) finished in under 25 minutes.",
+    questionText: "A running club commentator said that Galway park run times have changed since 2019. In 2019 it was reported that 24% of all runners finished the park run in under 25 minutes. Use your answers to parts (b)(i) and (b)(ii) to test the claim that the percentage of runners who finish the park run in under 25 minutes has changed since 2019, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q7-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes answer from (b)(i) or (b)(ii) in this part\npp̂ ± 1/√nn", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, writes answer from (b)(i) or (b)(ii) in this part\npp̂ ± 1/√nn","One boundary formed: OR 27 + 5 ∙3 27 −5 ∙3","Both boundaries formed: AND 27 + 5 ∙3 27 −5 ∙3 but no conclusion and reason Full Credit (-1):\nEither conclusion OR reason missing OR incorrect"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2024-ol-p2-q7-b-iii-solution-1", kind: "point", verbatim: "21·7 ≤ p ≤ 32·3", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q7-b-iii-solution-2", kind: "point", verbatim: "No change to the population percentage", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q7-b-iii-solution-3", kind: "point", verbatim: "24% is inside the range found. Within the CI.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q7-b-iii-solution-4", kind: "point", verbatim: "Work of merit, for example, writes answer from (b)(i) or (b)(ii) in this part", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q7-b-iii-solution-5", kind: "point", verbatim: "Either conclusion OR reason missing OR incorrect", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q7-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q7-b-iii.png",
           "srcHash": "0073161cb4242bdaa558937eadc8b0e4",
-          "alt": "The question as printed on the paper — A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway. Show that, for this sample, the margin of error for a population proportion is 5∙3%, correct to 1 decimal place. 96… Full card prompt: (iii) A running club commentator said that Galway park run times have changed since 2019. In 2019 it was reported that 24% of all runners finished the park run in under 25 minutes",
+          "alt": "The question as printed on the paper — A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway. Show that, for this sample, the margin of error for a population proportion is 5∙3%, correct to 1 decimal place. 96… Full card prompt: A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway. The margin of error is 5·3%, and 96 of the 355 runners (27%) finished in under 25 minutes. A running club commentator said that Galway park run times have changed since 2019. In 2019 it was reported that 24% of all runners finished the park run in under 25 minutes. Use your answers to parts (b)(i) and (b)(ii) to test the claim that the percentage of runners who finish the park run in under 25 minutes has changed since 2019, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10750,21 +11128,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q8-a-i", topicId: "maths-2-1", conceptId: "theorem-pythagoras-length-cable-metres-correct",
+    id: "maths-2024-ol-p2-q8-a-i", topicId: "maths-2-3", conceptId: "theorem-pythagoras-length-cable-metres-correct",
     section: "B", questionRef: "2024 OL Paper 2 Q8(a)(i)",
-    questionText: "Use the Theorem of Pythagoras to find the length of the cable, |G|. Give your answer in metres, correct to 1 decimal place",
+    stem: "A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [FH], with |FH| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal ground. G is 1·4 m from the base of the sign H, as shown in the diagram below (not to scale).",
+    questionText: "Use the Theorem of Pythagoras to find the length of the cable, |GF|. Give your answer in metres, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q8-a-i-r1", kind: "anyN", verbatim: "Correct relevant formula\nUse of Cosine Rule would merit at most L.P.C.", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct relevant formula\nUse of Cosine Rule would merit at most L.P.C.","Correct formula fully substituted\nOne error in substitution and finishes correctly Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q8-a-i-r1", kind: "anyN", verbatim: "Correct relevant formula\nUse of Cosine Rule would merit at most L.P.C.", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct relevant formula\nUse of Cosine Rule would merit at most L.P.C.","Correct formula fully substituted\nOne error in substitution and finishes correctly"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q8-a-i.png",
           "srcHash": "898f09562d81f5930bc94e02d0f01ac5",
-          "alt": "The question as printed on the paper — A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [F], with |F| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal… Full card prompt: Use the Theorem of Pythagoras to find the length of the cable, |G|. Give your answer in metres, correct to 1 decimal place",
+          "alt": "The question as printed on the paper — A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [F], with |F| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal… Full card prompt: A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [FH], with |FH| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal ground. G is 1·4 m from the base of the sign H, as shown in the diagram below (not to scale). Use the Theorem of Pythagoras to find the length of the cable, |GF|. Give your answer in metres, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10780,21 +11172,38 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q8-a-ii", topicId: "maths-2-3", conceptId: "size-angle-correct-nearest-degree",
     section: "B", questionRef: "2024 OL Paper 2 Q8(a)(ii)",
-    questionText: "Show that the size of the angle ∠F = 65°, correct to the nearest degree",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    stem: "A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [FH], with |FH| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal ground. G is 1·4 m from the base of the sign H, as shown in the diagram below (not to scale).",
+    questionText: "Show that the size of the angle ∠FGH = 65°, correct to the nearest degree.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q8-a-ii-r1", kind: "anyN", verbatim: "TTTTTT AA = 3/1∙4 or similar\nFinds ∠G using trigonometry (25°) Full Credit (-1):\nApply a * for no or incorrect rounding", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["TTTTTT AA = 3/1∙4 or similar\nFinds ∠G using trigonometry (25°) Full Credit (-1):\nApply a * for no or incorrect rounding"]} },
+    { id: "maths-2024-ol-p2-q8-a-ii-solution-1", kind: "point", verbatim: "A = 65[°]", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q8-a-ii-solution-2", kind: "point", verbatim: "Work of merit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q8-a-ii-solution-3", kind: "point", verbatim: "using trigonometry (25°)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2024-ol-p2-q8-a-ii-solution-4", kind: "point", verbatim: "Apply a * for no or incorrect rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q8-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q8-a-ii.png",
           "srcHash": "33dc260e3e6d5625545763d5d8e631ab",
-          "alt": "The question as printed on the paper — A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [F], with |F| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal… Full card prompt: Show that the size of the angle ∠F = 65°, correct to the nearest degree",
+          "alt": "The question as printed on the paper — A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [F], with |F| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal… Full card prompt: A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [FH], with |FH| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal ground. G is 1·4 m from the base of the sign H, as shown in the diagram below (not to scale). Show that the size of the angle ∠FGH = 65°, correct to the nearest degree.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10810,21 +11219,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q8-a-iii", topicId: "maths-2-3", conceptId: "iii-second-cable-tied-sign-point",
     section: "B", questionRef: "2024 OL Paper 2 Q8(a)(iii)",
-    questionText: "(iii) A second cable from G is tied to the sign, at the point K, where K is half way up the sign [F]",
+    stem: "A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [FH], with |FH| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal ground. G is 1·4 m from the base of the sign H, as shown in the diagram below (not to scale).",
+    questionText: "A second cable from G is tied to the sign, at the point K, where K is half way up the sign [FH]. Mairéad says that the size of the new angle ∠KGH is half the size of the angle ∠FGH. Is Mairéad correct? Use calculations to support your answer. Tick one box only: Yes or No.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q8-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, correct box ticked\n1∙5 or 32∙5 written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, correct box ticked\n1∙5 or 32∙5 written","Answer as 47° Full Credit (-1):\nCorrect box not ticked\nNo conclusion"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-ol-p2-q8-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, correct box ticked\n1∙5 or 32∙5 written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Correct box not ticked; No conclusion.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, correct box ticked\n1∙5 or 32∙5 written","Answer as 47°"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20,
+                21
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q8-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q8-a-iii.png",
           "srcHash": "dc98001fddc538491cd5b6488bee6e1a",
-          "alt": "The question as printed on the paper — A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [F], with |F| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal… Full card prompt: (iii) A second cable from G is tied to the sign, at the point K, where K is half way up the sign [F]",
+          "alt": "The question as printed on the paper — A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [F], with |F| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal… Full card prompt: A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [FH], with |FH| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal ground. G is 1·4 m from the base of the sign H, as shown in the diagram below (not to scale). A second cable from G is tied to the sign, at the point K, where K is half way up the sign [FH]. Mairéad says that the size of the new angle ∠KGH is half the size of the angle ∠FGH. Is Mairéad correct? Use calculations to support your answer. Tick one box only: Yes or No.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10840,16 +11264,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q8-b-i", topicId: "maths-2-3", conceptId: "part",
     section: "B", questionRef: "2024 OL Paper 2 Q8(b)(i)",
-    questionText: "|A| = 12 cm, |A| = 10 cm, and |∠A| = 37°",
+    stem: "The fish shop has a logo with some measurements as shown in the diagram below (not to scale).",
+    questionText: "|AB| = 12 cm, |AC| = 10 cm, and |∠ABC| = 37°. Work out the size of the angle θ, where θ is the angle ∠BCA. Give your answer correct to the nearest degree.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, sine rule formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, sine rule formula","Correct formula fully substituted Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, sine rule formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, sine rule formula","Correct formula fully substituted"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[40],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q8-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q8-b-i.png",
@@ -10870,16 +11308,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q8-b-ii", topicId: "maths-2-3", conceptId: "110",
     section: "B", questionRef: "2024 OL Paper 2 Q8(b)(ii)",
-    questionText: "|C| = 22 cm, |E| = 11·8 cm, and |∠E| = 110°",
+    stem: "The fish shop has a logo with some measurements as shown in the diagram below (not to scale).",
+    questionText: "|CF| = 22 cm, |EF| = 11·8 cm, and |∠EFC| = 110°. Use the cosine rule to work out the distance |CE|. Give your answer correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q8-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, cosine rule formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, cosine rule formula","Correct formula fully substituted Full Credit (-1):\nApply a * for no or incorrect rounding\nApply a * for incorrect units"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q8-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, cosine rule formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding; Apply a * for incorrect units.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, cosine rule formula","Correct formula fully substituted"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[40],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q8-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q8-b-ii.png",
@@ -10900,16 +11353,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q8-b-iii", topicId: "maths-3-4", conceptId: "iii-symmetrical-about-work-out-total",
+    id: "maths-2024-ol-p2-q8-b-iii", topicId: "maths-2-3", conceptId: "iii-symmetrical-about-work-out-total",
     section: "B", questionRef: "2024 OL Paper 2 Q8(b)(iii)",
-    questionText: "(iii) C is symmetrical about [C]. Work out the total area of C. Give your answer correct to the nearest cm²",
+    stem: "The fish shop has a logo with some measurements as shown in the diagram below (not to scale). |CF| = 22 cm, |EF| = 11·8 cm, and |∠EFC| = 110°.",
+    questionText: "CDEF is symmetrical about [CE]. Work out the total area of CDEF. Give your answer correct to the nearest cm².",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q8-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, area of triangle formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, area of triangle formula","Area formula fully substituted\nArea of triangle CEF given as answer Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q8-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, area of triangle formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, area of triangle formula","Area formula fully substituted\nArea of triangle CEF given as answer"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[40],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q8-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q8-b-iii.png",
@@ -10930,21 +11398,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q9-a-i", topicId: "maths-3-4", conceptId: "how-many-different-choices-available-you",
+    id: "maths-2024-ol-p2-q9-a-i", topicId: "maths-1-1", conceptId: "how-many-different-choices-available-you",
     section: "B", questionRef: "2024 OL Paper 2 Q9(a)(i), (ii)",
-    questionText: "How many different choices are available if you must choose only one flavour, one topping, and either a cone or a tub?",
+    stem: "Diarmuid owns an ice cream van. Diarmuid sells: 7 different flavours of ice cream; 4 different toppings; 2 containers: a choice of a cone or a tub.",
+    questionText: "(i) How many different choices are available if you must choose only one flavour, one topping, and either a cone or a tub? (ii) Diarmuid wants to maximise the number of choices available to his customers. He can only add either an extra flavour or an extra topping. Should he add an extra flavour or an extra topping? Use calculations to support your answer. Tick one box only: Extra flavour or Extra topping.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some relevant multiplication in part (i) or (ii)\nCorrect box ticked but no justification", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some relevant multiplication in part (i) or (ii)\nCorrect box ticked but no justification","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part Full Credit (-1):\nCorrect answer but no or incorrect conclusion"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2024-ol-p2-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some relevant multiplication in part (i) or (ii)\nCorrect box ticked but no justification", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Correct answer but no or incorrect conclusion.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some relevant multiplication in part (i) or (ii)\nCorrect box ticked but no justification","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-a-i.png",
           "srcHash": "39c99ccf1a45d9af801847c42cb22ca2",
-          "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. Diarmuid sells: • 7 different flavours of ice cream • 4 different toppings • 2 containers: a choice of a cone or a tub. How many different choices are available if you must choose only… Full card prompt: How many different choices are available if you must choose only one flavour, one topping, and either a cone or a tub?",
+          "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. Diarmuid sells: • 7 different flavours of ice cream • 4 different toppings • 2 containers: a choice of a cone or a tub. How many different choices are available if you must choose only… Full card prompt: Diarmuid owns an ice cream van. Diarmuid sells: 7 different flavours of ice cream; 4 different toppings; 2 containers: a choice of a cone or a tub. (i) How many different choices are available if you must choose only one flavour, one topping, and either a cone or a tub? (ii) Diarmuid wants to maximise the number of choices available to his customers. He can only add either an extra flavour or an extra topping. Should he add an extra flavour or an extra topping? Use calculations to support your answer. Tick one box only: Extra flavour or Extra topping.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10960,21 +11442,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q9-b-i", topicId: "maths-3-4", conceptId: "complete-venn-diagram-number-customers-each",
+    id: "maths-2024-ol-p2-q9-b-i", topicId: "maths-1-2", conceptId: "complete-venn-diagram-number-customers-each",
     section: "B", questionRef: "2024 OL Paper 2 Q9(b)(i)",
-    questionText: "Complete the Venn diagram below, to show the number of customers in each region",
+    stem: "Diarmuid owns an ice cream van. One day, Diarmuid recorded the ice cream choices of the first 100 customers. Vanilla (V) flavour was bought by 42 customers. A cone (C) was bought by 37 customers. 45 customers bought neither vanilla nor a cone. This information is shown in the Venn diagram below.",
+    questionText: "Complete the Venn diagram below, to show the number of customers in each region.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p2-q9-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some relevant calculation 100 −45 OR 79, 24, 124 written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4. The full scale runs to 10. Note: Accept correct values without work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, some relevant calculation 100 −45 OR 79, 24, 124 written"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,4,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-b-i.png",
           "srcHash": "89d987d6065add6c34f4fc7bac59d856",
-          "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. One day, Diarmuid recorded the ice cream choices of the first 100 customers. Vanilla (V) flavour was bought by 42 customers. A cone (C) was bought by 37 customers. 45 customers bought… Full card prompt: Complete the Venn diagram below, to show the number of customers in each region",
+          "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. One day, Diarmuid recorded the ice cream choices of the first 100 customers. Vanilla (V) flavour was bought by 42 customers. A cone (C) was bought by 37 customers. 45 customers bought… Full card prompt: Diarmuid owns an ice cream van. One day, Diarmuid recorded the ice cream choices of the first 100 customers. Vanilla (V) flavour was bought by 42 customers. A cone (C) was bought by 37 customers. 45 customers bought neither vanilla nor a cone. This information is shown in the Venn diagram below. Complete the Venn diagram below, to show the number of customers in each region.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -10990,21 +11486,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q9-b-ii", topicId: "maths-1-2", conceptId: "customer-picked-random-first-100-customers",
     section: "B", questionRef: "2024 OL Paper 2 Q9(b)(ii)",
-    questionText: "A customer is picked at random from the first 100 customers. Find the probability that this customer bought a cone with a flavour other than vanilla",
+    stem: "Diarmuid owns an ice cream van. One day, Diarmuid recorded the ice cream choices of the first 100 customers. Vanilla (V) flavour was bought by 42 customers. A cone (C) was bought by 37 customers. 45 customers bought neither vanilla nor a cone. This information is shown in the Venn diagram below.",
+    questionText: "A customer is picked at random from the first 100 customers. Find the probability that this customer bought a cone with a flavour other than vanilla.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2024-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 13 or 100 written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, 13 or 100 written"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[41],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q9-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-b-ii.png",
           "srcHash": "1460f8ddc6cf22a8dc3ac0b9fb8867ca",
-          "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. One day, Diarmuid recorded the ice cream choices of the first 100 customers. Vanilla (V) flavour was bought by 42 customers. A cone (C) was bought by 37 customers. 45 customers bought… Full card prompt: A customer is picked at random from the first 100 customers. Find the probability that this customer bought a cone with a flavour other than vanilla",
+          "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. One day, Diarmuid recorded the ice cream choices of the first 100 customers. Vanilla (V) flavour was bought by 42 customers. A cone (C) was bought by 37 customers. 45 customers bought… Full card prompt: Diarmuid owns an ice cream van. One day, Diarmuid recorded the ice cream choices of the first 100 customers. Vanilla (V) flavour was bought by 42 customers. A cone (C) was bought by 37 customers. 45 customers bought neither vanilla nor a cone. This information is shown in the Venn diagram below. A customer is picked at random from the first 100 customers. Find the probability that this customer bought a cone with a flavour other than vanilla.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -11020,21 +11530,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q9-c", topicId: "maths-3-4", conceptId: "general-sales-ice-creams-increase-weather",
+    id: "maths-2024-ol-p2-q9-c", topicId: "maths-1-2", conceptId: "general-sales-ice-creams-increase-weather",
     section: "B", questionRef: "2024 OL Paper 2 Q9(c)",
-    questionText: "In general, sales of ice creams increase as weather conditions improve",
+    stem: "Diarmuid owns an ice cream van.",
+    questionText: "In general, sales of ice creams increase as weather conditions improve. Diarmuid’s typical ice cream sales for different weather conditions are shown in the table below. The table also shows the probability of each weather condition next Sunday: Wet €150 (30%); Dry and cold €200 (45%); Dry and warm €450 (25%). Use the information in the table to work out the expected value of Diarmuid’s ice cream sales next Sunday.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p2-q9-c-r1", kind: "anyN", verbatim: "Work of merit, correct relevant formula\nOne correct term OR operation indicated, for example, 150(0 ∙3) or similar", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, correct relevant formula\nOne correct term OR operation indicated, for example, 150(0 ∙3) or similar","Two correct terms indicated"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q9-c",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-c.png",
           "srcHash": "2648e95464e399b17fbe02b1602c9632",
-          "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. (c) In general, sales of ice creams increase as weather conditions improve. Diarmuid’s typical ice cream sales for different weather conditions are shown in the table below. The table… Full card prompt: In general, sales of ice creams increase as weather conditions improve",
+          "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. (c) In general, sales of ice creams increase as weather conditions improve. Diarmuid’s typical ice cream sales for different weather conditions are shown in the table below. The table… Full card prompt: Diarmuid owns an ice cream van. In general, sales of ice creams increase as weather conditions improve. Diarmuid’s typical ice cream sales for different weather conditions are shown in the table below. The table also shows the probability of each weather condition next Sunday: Wet €150 (30%); Dry and cold €200 (45%); Dry and warm €450 (25%). Use the information in the table to work out the expected value of Diarmuid’s ice cream sales next Sunday.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -11050,16 +11574,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q9-d-i", topicId: "maths-3-4", conceptId: "size-angle-length-arc",
     section: "B", questionRef: "2024 OL Paper 2 Q9(d)(i)",
-    questionText: "Find the size of the angle 𝜃 and hence, find the length of the arc s",
+    stem: "Diarmuid owns an ice cream van. Diarmuid has a logo of an ice cream cone on the side of his van. The logo is made up of a sector of a circle with radius 20 cm, and two identical right-angled triangles, as shown in the diagram (not to scale). The arc of the sector is labelled s. The sizes of some of the angles are shown: two angles of 70° at the centre.",
+    questionText: "Find the size of the angle θ and hence, find the length of the arc s. Give the length in cm, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q9-d-i-r1", kind: "anyN", verbatim: "Work of merit, for example, new relevant angle found\nCorrect relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Note: Accept correct answers without units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, new relevant angle found\nCorrect relevant formula","220 found and correct formula fully substituted Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q9-d-i-r1", kind: "anyN", verbatim: "Work of merit, for example, new relevant angle found\nCorrect relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5. The full scale runs to 10. Note: Accept correct answers without units. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, new relevant angle found\nCorrect relevant formula","220 found and correct formula fully substituted"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,5,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q9-d-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-d-i.png",
@@ -11080,16 +11618,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q9-d-ii", topicId: "maths-2-3", conceptId: "trigonometry-work-out-length-side-labelled",
     section: "B", questionRef: "2024 OL Paper 2 Q9(d)(ii)",
-    questionText: "Use trigonometry to work out the length of the side labelled l. Give your answer correct to the nearest cm",
+    stem: "Diarmuid owns an ice cream van. Diarmuid has a logo of an ice cream cone on the side of his van. The logo is made up of a sector of a circle with radius 20 cm, and two identical right-angled triangles, as shown in the diagram (not to scale). The arc of the sector is labelled s. The sizes of some of the angles are shown: two angles of 70° at the centre.",
+    questionText: "Use trigonometry to work out the length of the side labelled l. Give your answer correct to the nearest cm.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q9-d-ii-r1", kind: "anyN", verbatim: "Some relevant use of trigonometry", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some relevant use of trigonometry","Tan 70 = ll/20 or similar Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-ol-p2-q9-d-ii-r1", kind: "anyN", verbatim: "Some relevant use of trigonometry", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Some relevant use of trigonometry","Tan 70 = ll/20 or similar"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[42],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q9-d-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-d-ii.png",
@@ -11110,16 +11662,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q10-a-i", topicId: "maths-3-4", conceptId: "conversion-rate-mile-convert-121-miles",
+    id: "maths-2024-ol-p2-q10-a-i", topicId: "maths-3-3", conceptId: "conversion-rate-mile-convert-121-miles",
     section: "B", questionRef: "2024 OL Paper 2 Q10(a)(i)–(iii)",
-    questionText: "Use the conversion rate of 1 mile = 1∙61 km to convert 121 miles to km",
+    stem: "In Wimbledon Tennis Tournament 2023, the fastest women’s serve was by Aryna Sabalenka at 121 miles per hour. (Source www.wimbledon.org)",
+    questionText: "(i) Use the conversion rate of 1 mile = 1·61 km to convert 121 miles to km. (ii) Convert one hour to seconds. (iii) Use your answers to parts (a)(i) and (a)(ii) to convert 121 miles per hour to metres per second. Give your answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i) OR (ii) OR (iii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer without units. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i) OR (ii) OR (iii)","Work of merit in two parts\nOne part correct","One part correct and work of merit in the other two parts\nTwo parts correct Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2024-ol-p2-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit in (i) OR (ii) OR (iii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer without units. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i) OR (ii) OR (iii)","Work of merit in two parts\nOne part correct","One part correct and work of merit in the other two parts\nTwo parts correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[43],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q10-a-i.png",
@@ -11140,21 +11706,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q10-b", topicId: "maths-3-4", conceptId: "tennis-balls-shape-sphere-professional-tennis",
     section: "B", questionRef: "2024 OL Paper 2 Q10(b)",
-    questionText: "Tennis balls are in the shape of a sphere. For professional tennis matches, tennis balls can be of slightly different sizes",
+    questionText: "Tennis balls are in the shape of a sphere. For professional tennis matches, tennis balls can be of slightly different sizes. The smallest size allowed has a radius of 3·27 cm. Find the surface area of this tennis ball. Give your answer in cm², correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, correct formula\nSome correct substitution into Surface Area formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, correct formula\nSome correct substitution into Surface Area formula","Correct formula fully substituted Full Credit (-1):\nIncorrect rounding"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, correct formula\nSome correct substitution into Surface Area formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Incorrect rounding.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, correct formula\nSome correct substitution into Surface Area formula","Correct formula fully substituted"],"perOptionSteps":[2,3]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,2,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[43],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q10-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q10-b.png",
           "srcHash": "f26e839e90349d7a11a7d222e1097eed",
-          "alt": "The question as printed on the paper — Tennis balls are in the shape of a sphere. For professional tennis matches, tennis balls can be of slightly different sizes. The smallest size allowed has a radius of 3∙27 cm. Find the surface area of this tennis ball.… Full card prompt: Tennis balls are in the shape of a sphere. For professional tennis matches, tennis balls can be of slightly different sizes",
+          "alt": "The question as printed on the paper — Tennis balls are in the shape of a sphere. For professional tennis matches, tennis balls can be of slightly different sizes. The smallest size allowed has a radius of 3∙27 cm. Find the surface area of this tennis ball.… Full card prompt: Tennis balls are in the shape of a sphere. For professional tennis matches, tennis balls can be of slightly different sizes. The smallest size allowed has a radius of 3·27 cm. Find the surface area of this tennis ball. Give your answer in cm², correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -11170,21 +11749,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q10-c", topicId: "maths-3-4", conceptId: "cross-section-tennis-ball-shown-diagram",
     section: "B", questionRef: "2024 OL Paper 2 Q10(c)",
-    questionText: "The cross-section of a tennis ball is shown in the diagram on the right",
+    questionText: "The cross-section of a tennis ball is shown in the diagram on the right. The ball is made up of an air-filled centre and a rubber layer of uniform thickness. The external radius (r₁) of the tennis ball is 3·4 cm. The internal radius (r₂) of the rubber layer is 3·1 cm. Find the volume of the rubber layer. Give your answer in cm³, correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q10-c-r1", kind: "anyN", verbatim: "Some work of merit in any step, for example, volume of sphere formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer without units Three steps involved in solution: 1. Volume of outer sphere 2. Volume of inner sphere 3. Subtract both volumes. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some work of merit in any step, for example, volume of sphere formula","One step correct","Two steps correct Full Credit (-1):\nApply a * for no or incorrect rounding"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2024-ol-p2-q10-c-r1", kind: "anyN", verbatim: "Some work of merit in any step, for example, volume of sphere formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer without units Three steps involved in solution: 1. Volume of outer sphere 2. Volume of inner sphere 3. Subtract both volumes. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some work of merit in any step, for example, volume of sphere formula","One step correct","Two steps correct"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[44],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                29
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q10-c",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q10-c.png",
           "srcHash": "626767152191f98c1ca089d43d054a6a",
-          "alt": "The question as printed on the paper — The cross-section of a tennis ball is shown in the diagram on the right. r₁ The ball is made up of an air-filled centre and a rubber layer of uniform thickness. r₂ The external radius (r₁) of the tennis ball is 3∙4 cm.… Full card prompt: The cross-section of a tennis ball is shown in the diagram on the right",
+          "alt": "The question as printed on the paper — The cross-section of a tennis ball is shown in the diagram on the right. r₁ The ball is made up of an air-filled centre and a rubber layer of uniform thickness. r₂ The external radius (r₁) of the tennis ball is 3∙4 cm.… Full card prompt: The cross-section of a tennis ball is shown in the diagram on the right. The ball is made up of an air-filled centre and a rubber layer of uniform thickness. The external radius (r₁) of the tennis ball is 3·4 cm. The internal radius (r₂) of the rubber layer is 3·1 cm. Find the volume of the rubber layer. Give your answer in cm³, correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -11200,16 +11792,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q10-d-i", topicId: "maths-3-4", conceptId: "part",
     section: "B", questionRef: "2024 OL Paper 2 Q10(d)(i), (ii)",
-    questionText: "Show that h = 20∙4 cm",
+    stem: "The diagram on the right shows the smallest closed cylindrical container that contains three identical tennis balls, arranged one directly on top of the other. The radius of each tennis ball is 3·4 cm. The height of the cylinder is h.",
+    questionText: "(i) Show that h = 20·4 cm. (ii) Hence, calculate the volume of the cylinder. Give your answer correct to nearest whole number.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q10-d-i-r1", kind: "anyN", verbatim: "Work of merit in (i) OR (ii), for example, correct formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i) OR (ii), for example, correct formula","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part Full Credit (-1):\nApply a * for no or incorrect rounding\nApply a * for no units"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2024-ol-p2-q10-d-i-r1", kind: "anyN", verbatim: "Work of merit in (i) OR (ii), for example, correct formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit. Full Credit −1 (a deduction, not a band): Apply a * for no or incorrect rounding; Apply a * for no units.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i) OR (ii), for example, correct formula","Work of merit in (i) AND (ii)\nOne part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,3,5,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[45],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q10-d-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q10-d-ii.png",
@@ -11230,16 +11836,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2024, level: "ordinary",
     paperFileid: "LC003GLP200EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p2-q10-d-iii", topicId: "maths-3-4", conceptId: "iii-three-tennis-balls-could-also",
     section: "B", questionRef: "2024 OL Paper 2 Q10(d)(iii)",
-    questionText: "(iii) The three tennis balls could also be arranged, one directly on top of the other, inside a closed rectangular box, as shown below",
+    stem: "The diagram on the right shows the smallest closed cylindrical container that contains three identical tennis balls, arranged one directly on top of the other. The radius of each tennis ball is 3·4 cm. The height of the cylinder is h.",
+    questionText: "The three tennis balls could also be arranged, one directly on top of the other, inside a closed rectangular box, as shown below. Find the surface area of the smallest such rectangular box, in cm².",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 9, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2024-ol-p2-q10-d-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, two relevant length multiplied\nIdentifies the length/width/height", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 9. The full scale runs to 15. Note: Accept correct answer without units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Work of merit, for example, two relevant length multiplied\nIdentifies the length/width/height","Correct formula fully substituted\nCalculates one relevant area (46.24, 138.72)"],"perOptionSteps":[6,9]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,6,9,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[45],"generalNotesPages":[24,25]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                30
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2024 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q10-d-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q10-d-iii.png",

@@ -1,0 +1,1303 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2024,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p2",
+  "paperFileid": "LC003GLP200EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "89b5eb1d5f5bc1e53ef27ab61b4fe6b467306dd837182a2ca9f2e9403bf638fe",
+  "schemeSha256": "c856460b3a5a9b69a4ee84eb9661cfc32a76489fc5dc5c9a52b6dfc7176490d3",
+  "reviewedAt": "2026-10-11",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 23–48 of the combined Ordinary Level scheme (Paper 2 title page, the Paper 2 scale table on page 24, the slips note and printed summary of allocations on page 25, annotation palette, every Paper 2 model solution and marking note, and the closing pages). Each task boundary is the published scale, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    24,
+    25
+  ],
+  "sourceNotes": [
+    "Candidates answer any five of Q1–6 (30 marks each) and any three of Q7–10 (50 marks each): 380 offered marks, 300 candidate marks. Every question is retained.",
+    "43 independently marked units, matching the printed summary of allocations on scheme page 25.",
+    "Paper 2 bands from scheme page 24: 5B 0,2,5; 5C 0,2,3,5; 5D 0,2,3,4,5; 10B 0,4,10; 10C 0,4,5,10; 10D 0,3,5,7,10; 15C 0,6,9,15; 15D 0,4,6,8,15. They differ from the Paper 1 bands (for example 10C is 0,4,6,10 on Paper 1).",
+    "All 43 units were already in the deck. Corrections, all keeping IDs: Q2(c) shares one 15D scale with Q2(d), so its card is re-cited as Q2(c), (d) and carries both prompts. Q5(a)(ii) had lost its high-partial band; Q8(a)(ii) carried a text-layer artefact (“TTTTTT AA”); Q7(b)(iii) carried its boundary inequalities out of order; their marking points are re-quoted from the printed scheme. Where a “Full Credit (−1)” deduction had been welded onto the last credit band, it is moved to the note, because it is a deduction and not a band. Prompts are restored from the paper and topics corrected as metadata.",
+    "Q6(a) is a compass-and-straight-edge construction (no measurement); no ruler is attached.",
+    "The question booklet is LC003GLP200EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 1. All page references are PDF positions."
+  ],
+  "cards": [
+    {
+      "id": "maths-2024-ol-p2-q1-a-i",
+      "printedParts": [
+        "Q1(a)(i)",
+        "Q1(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y ∈ ℕ. The scores are X, 91, 76, 82, 37, 42, 74, 54 and Y.",
+      "questionText": "(i) Write the scores in order, from the lowest to the highest in the spaces below. (ii) Find the median of these scores and explain what this score means in the context of the question."
+    },
+    {
+      "id": "maths-2024-ol-p2-q1-a-iii",
+      "printedParts": [
+        "Q1(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "The scores for 9 students in a history test are given in the table below. X is the lowest score and Y is the highest score, where X, Y ∈ ℕ. The scores are X, 91, 76, 82, 37, 42, 74, 54 and Y.",
+      "questionText": "All students received different scores in the test. The range of the scores is 61. Work out the maximum possible value of X and the corresponding value of Y."
+    },
+    {
+      "id": "maths-2024-ol-p2-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        27
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "questionText": "A different group of five students did a maths question. Their scores were as follows, where t ∈ ℕ: 15, 16, 19, t, 26. The mean of the five scores is 19·6. Work out the value of t."
+    },
+    {
+      "id": "maths-2024-ol-p2-q2-a",
+      "printedParts": [
+        "Q2(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability",
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7.",
+      "questionText": "Complete the table below to show all possible outcomes when a card is chosen. Some have already been completed for you. For example, G2 means the green card with the number 2. The table already shows G2 and R5."
+    },
+    {
+      "id": "maths-2024-ol-p2-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7.",
+      "questionText": "A card is chosen at random. Work out the probability of getting a card with an even number."
+    },
+    {
+      "id": "maths-2024-ol-p2-q2-c",
+      "printedParts": [
+        "Q2(c)",
+        "Q2(d)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        28
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7.",
+      "questionText": "(c) Seán picks a card at random and doesn’t replace it. It is Red 5 (R5). He then picks a second card at random. What is the probability that the second card is a green card? Seán puts back the two cards. (d) Seán picks a card at random and doesn’t replace it. He then picks a second card at random. Find the probability that the second card is a different colour and a different number from the first card."
+    },
+    {
+      "id": "maths-2024-ol-p2-q3-a-i",
+      "printedParts": [
+        "Q3(a)(i)",
+        "Q3(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A line, l, has the equation: y = (1/2)x − 1",
+      "questionText": "(i) Show that the point (4, 1) lies on l. (ii) Draw the line l on the co-ordinate diagram below, in the domain −4 ≤ x ≤ 5, x ∈ ℝ."
+    },
+    {
+      "id": "maths-2024-ol-p2-q3-b",
+      "printedParts": [
+        "Q3(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        29
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Four lines are drawn on the co-ordinate diagram below, labelled a, b, c and d. Their slopes are given in the table below: 3, −1, 1/2 and 0. Write a, b, c and d in the correct place in the table to match each line to its slope."
+    },
+    {
+      "id": "maths-2024-ol-p2-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        30
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "questionText": "Find the equation of the line through the points (0, 6) and (2, 9)."
+    },
+    {
+      "id": "maths-2024-ol-p2-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle k has equation: (x − 5)² + (y + 3)² = 25",
+      "questionText": "Write down the centre and radius of the circle k."
+    },
+    {
+      "id": "maths-2024-ol-p2-q4-a-ii",
+      "printedParts": [
+        "Q4(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "stem": "The circle k has equation: (x − 5)² + (y + 3)² = 25",
+      "questionText": "Use algebra to investigate if the point (9, 2) is on, inside, or outside the circle k. Tick one box only: (9, 2) is on k; (9, 2) is inside k; (9, 2) is outside k."
+    },
+    {
+      "id": "maths-2024-ol-p2-q4-b",
+      "printedParts": [
+        "Q4(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        31
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "A different circle has centre (4, −1) and radius 3. Construct this circle on the co-ordinate diagram below."
+    },
+    {
+      "id": "maths-2024-ol-p2-q4-c",
+      "printedParts": [
+        "Q4(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        32
+      ],
+      "topicId": "maths-2-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-co-ordinate-geometry-the-circle"
+      ],
+      "questionText": "The point (2, 1) is the lowest point on the circle s with centre c, as shown in the diagram below. The y-axis is a tangent to the circle s. Work out the radius and the centre of the circle s."
+    },
+    {
+      "id": "maths-2024-ol-p2-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 68% slept between 7·2 and 8·4 hours, as shown on the diagram below. Use the empirical rule to answer parts (a)(i) and (a)(ii).",
+      "questionText": "Fill in the three missing numbers on the horizontal axis."
+    },
+    {
+      "id": "maths-2024-ol-p2-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        33
+      ],
+      "topicId": "maths-1-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 68% slept between 7·2 and 8·4 hours, as shown on the diagram below. Use the empirical rule to answer parts (a)(i) and (a)(ii).",
+      "questionText": "Research says that a 17-year-old should get at least 9 hours of sleep each night. What percentage of this sample got at least 9 hours of sleep on the previous night?"
+    },
+    {
+      "id": "maths-2024-ol-p2-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)",
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        15
+      ],
+      "schemePages": [
+        34
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Owen records the number of hours of sleep that he gets each night for several weeks. Based on this, he calculates that he gets the recommended amount of sleep 10% of the time.",
+      "questionText": "(i) What is the probability that he does not get the recommended amount of sleep on a particular night? (ii) Beginning on a Sunday night, Owen records his sleep each night for a week. Find the probability that Owen gets the recommended amount of sleep for the first time on Tuesday night (the third night). Assume that the number of hours of sleep Owen gets on different nights are independent."
+    },
+    {
+      "id": "maths-2024-ol-p2-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)",
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        9,
+        15
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry-proofs-and-constructions"
+      ],
+      "stem": "The diagram below shows the triangle XYZ.",
+      "questionText": "(i) Construct the bisector of the angle XYZ, using only a compass and straight edge. Show all your construction lines and arcs clearly. (ii) Hence, construct the incentre of the triangle XYZ below."
+    },
+    {
+      "id": "maths-2024-ol-p2-q6-b-i",
+      "printedParts": [
+        "Q6(b)(i)",
+        "Q6(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry"
+      ],
+      "stem": "The diagram below shows the triangles ABC and ADE (not to scale). The triangle ADE is the image of the triangle ABC under enlargement. Some of the lengths are shown in the diagram: |AC| = 6, |BC| = 4 and |DE| = 14.",
+      "questionText": "(i) Use |BC| and |DE| to show the scale factor is 3·5. (ii) |AC| = 6 units. Use the scale factor to find the distance from C to E, that is, find |CE|."
+    },
+    {
+      "id": "maths-2024-ol-p2-q6-b-iii",
+      "printedParts": [
+        "Q6(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        35
+      ],
+      "topicId": "maths-2-4",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-geometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram below shows the triangles ABC and ADE (not to scale). The triangle ADE is the image of the triangle ABC under enlargement. Some of the lengths are shown in the diagram: |AC| = 6, |BC| = 4 and |DE| = 14. The scale factor is 3·5.",
+      "questionText": "The area of the triangle ABC is 11 units². Find the area of the triangle ADE."
+    },
+    {
+      "id": "maths-2024-ol-p2-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87.",
+      "questionText": "Complete the back-to-back stem-and-leaf plot below to show this information. Two values are already filled in (0 | 6 = 60 bpm before exercise and 7 | 1 = 71 bpm after exercise)."
+    },
+    {
+      "id": "maths-2024-ol-p2-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87.",
+      "questionText": "Work out the mean and standard deviation of the heart rate after exercise. Give each answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2024-ol-p2-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-6",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87.",
+      "questionText": "Based on your stem-and-leaf plot, how has the standard deviation changed following exercise? Give a reason for your answer. Tick one box only: Increased; Decreased; Stayed the same."
+    },
+    {
+      "id": "maths-2024-ol-p2-q7-a-iv",
+      "printedParts": [
+        "Q7(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        36
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        16,
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (bpm). Employees A to J: before exercise 60, 76, 68, 89, 67, 65, 77, 83, 88, 70; after exercise 71, 81, 79, 108, 91, 83, 102, 113, 118, 87.",
+      "questionText": "A scatter plot of the data is shown in the diagram below. r is the correlation coefficient between the heart rate before exercise and the heart rate after exercise. Based on the diagram above, pick the value from the list below that is closest to r. Give a reason for your answer. Tick one box only: −0·8, −0·2, 0·3 or 0·9."
+    },
+    {
+      "id": "maths-2024-ol-p2-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway.",
+      "questionText": "Show that, for this sample, the margin of error for a population proportion is 5·3%, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2024-ol-p2-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        37
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway.",
+      "questionText": "96 of the 355 runners finished the run in under 25 minutes. Work out the percentage of runners in this sample who finished the park run in under 25 minutes. Give your answer correct to the nearest percent."
+    },
+    {
+      "id": "maths-2024-ol-p2-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        38
+      ],
+      "topicId": "maths-1-7",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-statistics"
+      ],
+      "stem": "A random sample of 355 people was picked from everyone who took part in a park run in 2023 in Galway. The margin of error is 5·3%, and 96 of the 355 runners (27%) finished in under 25 minutes.",
+      "questionText": "A running club commentator said that Galway park run times have changed since 2019. In 2019 it was reported that 24% of all runners finished the park run in under 25 minutes. Use your answers to parts (b)(i) and (b)(ii) to test the claim that the percentage of runners who finish the park run in under 25 minutes has changed since 2019, at the 5% level of significance. Show relevant calculations, state your conclusion, and give a reason for your conclusion."
+    },
+    {
+      "id": "maths-2024-ol-p2-q8-a-i",
+      "printedParts": [
+        "Q8(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [FH], with |FH| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal ground. G is 1·4 m from the base of the sign H, as shown in the diagram below (not to scale).",
+      "questionText": "Use the Theorem of Pythagoras to find the length of the cable, |GF|. Give your answer in metres, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2024-ol-p2-q8-a-ii",
+      "printedParts": [
+        "Q8(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [FH], with |FH| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal ground. G is 1·4 m from the base of the sign H, as shown in the diagram below (not to scale).",
+      "questionText": "Show that the size of the angle ∠FGH = 65°, correct to the nearest degree."
+    },
+    {
+      "id": "maths-2024-ol-p2-q8-a-iii",
+      "printedParts": [
+        "Q8(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        39
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "A fish shop has a vertical sign outside its front door. In the diagram below, the sign is represented by [FH], with |FH| = 3 m. A cable is tied at the top of the sign, F, and is secured at the point G on the horizontal ground. G is 1·4 m from the base of the sign H, as shown in the diagram below (not to scale).",
+      "questionText": "A second cable from G is tied to the sign, at the point K, where K is half way up the sign [FH]. Mairéad says that the size of the new angle ∠KGH is half the size of the angle ∠FGH. Is Mairéad correct? Use calculations to support your answer. Tick one box only: Yes or No."
+    },
+    {
+      "id": "maths-2024-ol-p2-q8-b-i",
+      "printedParts": [
+        "Q8(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The fish shop has a logo with some measurements as shown in the diagram below (not to scale).",
+      "questionText": "|AB| = 12 cm, |AC| = 10 cm, and |∠ABC| = 37°. Work out the size of the angle θ, where θ is the angle ∠BCA. Give your answer correct to the nearest degree."
+    },
+    {
+      "id": "maths-2024-ol-p2-q8-b-ii",
+      "printedParts": [
+        "Q8(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "The fish shop has a logo with some measurements as shown in the diagram below (not to scale).",
+      "questionText": "|CF| = 22 cm, |EF| = 11·8 cm, and |∠EFC| = 110°. Use the cosine rule to work out the distance |CE|. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2024-ol-p2-q8-b-iii",
+      "printedParts": [
+        "Q8(b)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        40
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry",
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The fish shop has a logo with some measurements as shown in the diagram below (not to scale). |CF| = 22 cm, |EF| = 11·8 cm, and |∠EFC| = 110°.",
+      "questionText": "CDEF is symmetrical about [CE]. Work out the total area of CDEF. Give your answer correct to the nearest cm²."
+    },
+    {
+      "id": "maths-2024-ol-p2-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)",
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-counting"
+      ],
+      "stem": "Diarmuid owns an ice cream van. Diarmuid sells: 7 different flavours of ice cream; 4 different toppings; 2 containers: a choice of a cone or a tub.",
+      "questionText": "(i) How many different choices are available if you must choose only one flavour, one topping, and either a cone or a tub? (ii) Diarmuid wants to maximise the number of choices available to his customers. He can only add either an extra flavour or an extra topping. Should he add an extra flavour or an extra topping? Use calculations to support your answer. Tick one box only: Extra flavour or Extra topping."
+    },
+    {
+      "id": "maths-2024-ol-p2-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        4,
+        10
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Diarmuid owns an ice cream van. One day, Diarmuid recorded the ice cream choices of the first 100 customers. Vanilla (V) flavour was bought by 42 customers. A cone (C) was bought by 37 customers. 45 customers bought neither vanilla nor a cone. This information is shown in the Venn diagram below.",
+      "questionText": "Complete the Venn diagram below, to show the number of customers in each region."
+    },
+    {
+      "id": "maths-2024-ol-p2-q9-b-ii",
+      "printedParts": [
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        2,
+        5
+      ],
+      "schemePages": [
+        41
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Diarmuid owns an ice cream van. One day, Diarmuid recorded the ice cream choices of the first 100 customers. Vanilla (V) flavour was bought by 42 customers. A cone (C) was bought by 37 customers. 45 customers bought neither vanilla nor a cone. This information is shown in the Venn diagram below.",
+      "questionText": "A customer is picked at random from the first 100 customers. Find the probability that this customer bought a cone with a flavour other than vanilla."
+    },
+    {
+      "id": "maths-2024-ol-p2-q9-c",
+      "printedParts": [
+        "Q9(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-1-2",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Diarmuid owns an ice cream van.",
+      "questionText": "In general, sales of ice creams increase as weather conditions improve. Diarmuid’s typical ice cream sales for different weather conditions are shown in the table below. The table also shows the probability of each weather condition next Sunday: Wet €150 (30%); Dry and cold €200 (45%); Dry and warm €450 (25%). Use the information in the table to work out the expected value of Diarmuid’s ice cream sales next Sunday."
+    },
+    {
+      "id": "maths-2024-ol-p2-q9-d-i",
+      "printedParts": [
+        "Q9(d)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        5,
+        10
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Diarmuid owns an ice cream van. Diarmuid has a logo of an ice cream cone on the side of his van. The logo is made up of a sector of a circle with radius 20 cm, and two identical right-angled triangles, as shown in the diagram (not to scale). The arc of the sector is labelled s. The sizes of some of the angles are shown: two angles of 70° at the centre.",
+      "questionText": "Find the size of the angle θ and hence, find the length of the arc s. Give the length in cm, correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2024-ol-p2-q9-d-ii",
+      "printedParts": [
+        "Q9(d)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        42
+      ],
+      "topicId": "maths-2-3",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-trigonometry"
+      ],
+      "stem": "Diarmuid owns an ice cream van. Diarmuid has a logo of an ice cream cone on the side of his van. The logo is made up of a sector of a circle with radius 20 cm, and two identical right-angled triangles, as shown in the diagram (not to scale). The arc of the sector is labelled s. The sizes of some of the angles are shown: two angles of 70° at the centre.",
+      "questionText": "Use trigonometry to work out the length of the side labelled l. Give your answer correct to the nearest cm."
+    },
+    {
+      "id": "maths-2024-ol-p2-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)",
+        "Q10(a)(ii)",
+        "Q10(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "In Wimbledon Tennis Tournament 2023, the fastest women’s serve was by Aryna Sabalenka at 121 miles per hour. (Source www.wimbledon.org)",
+      "questionText": "(i) Use the conversion rate of 1 mile = 1·61 km to convert 121 miles to km. (ii) Convert one hour to seconds. (iii) Use your answers to parts (a)(i) and (a)(ii) to convert 121 miles per hour to metres per second. Give your answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2024-ol-p2-q10-b",
+      "printedParts": [
+        "Q10(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "schemePages": [
+        43
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Tennis balls are in the shape of a sphere. For professional tennis matches, tennis balls can be of slightly different sizes. The smallest size allowed has a radius of 3·27 cm. Find the surface area of this tennis ball. Give your answer in cm², correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2024-ol-p2-q10-c",
+      "printedParts": [
+        "Q10(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        44
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "The cross-section of a tennis ball is shown in the diagram on the right. The ball is made up of an air-filled centre and a rubber layer of uniform thickness. The external radius (r₁) of the tennis ball is 3·4 cm. The internal radius (r₂) of the rubber layer is 3·1 cm. Find the volume of the rubber layer. Give your answer in cm³, correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2024-ol-p2-q10-d-i",
+      "printedParts": [
+        "Q10(d)(i)",
+        "Q10(d)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram on the right shows the smallest closed cylindrical container that contains three identical tennis balls, arranged one directly on top of the other. The radius of each tennis ball is 3·4 cm. The height of the cylinder is h.",
+      "questionText": "(i) Show that h = 20·4 cm. (ii) Hence, calculate the volume of the cylinder. Give your answer correct to nearest whole number."
+    },
+    {
+      "id": "maths-2024-ol-p2-q10-d-iii",
+      "printedParts": [
+        "Q10(d)(iii)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        9,
+        15
+      ],
+      "schemePages": [
+        45
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        30
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "The diagram on the right shows the smallest closed cylindrical container that contains three identical tennis balls, arranged one directly on top of the other. The radius of each tennis ball is 3·4 cm. The height of the cylinder is h.",
+      "questionText": "The three tennis balls could also be arranged, one directly on top of the other, inside a closed rectangular box, as shown below. Find the surface area of the smallest such rectangular box, in cm²."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        24
+      ],
+      "wording": "choose only one flavour, one topping, and either a cone or a tub / either an extra flavour or an extra topping",
+      "classification": "counting-context",
+      "reason": "The menu choices are the objects counted (7 × 4 × 2); the extra flavour/topping box is the answer to one required comparison."
+    },
+    {
+      "pages": [
+        10,
+        17,
+        18,
+        21
+      ],
+      "wording": "Tick one box only",
+      "classification": "answer-selection",
+      "reason": "On/inside/outside, increased/decreased, the closest r and Yes/No are answers with justification, not alternative prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:e62f745bd6de8966": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "16:9bee8aac40cc7bd8": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "24:09b14f23a705b6a2": {
+      "classification": "counting-context",
+      "reason": "The menu choices are the outcomes counted, or the extra-item box is the answer to one required comparison; not a choice of prompts."
+    },
+    "24:b80fd86b733de057": {
+      "classification": "counting-context",
+      "reason": "The menu choices are the outcomes counted, or the extra-item box is the answer to one required comparison; not a choice of prompts."
+    },
+    "24:029ab0364c9d46c3": {
+      "classification": "counting-context",
+      "reason": "The menu choices are the outcomes counted, or the extra-item box is the answer to one required comparison; not a choice of prompts."
+    }
+  }
+}
