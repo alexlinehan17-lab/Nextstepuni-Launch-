@@ -65,15 +65,16 @@ OL_LANGUAGE = [
 
 # Each Ordinary Level message/postcard/diary/letter prints its own communication
 # tariff as an underlined heading on its scheme page. Lift it verbatim, never a
-# shared paraphrase: 2014–2021 print "Two points" on all four tasks; 2022–2026
+# shared paraphrase: 2013–2021 print "Two points" on all four tasks; 2022–2026
 # print "Two parts" for B2A/B2B and "Two points" for B3A/B3B. Entries are
 # (scheme PDF page, exact printed line); every line was checked against the
-# rendered scheme page (2015–2026 on 11 October 2026, 2014 on 11 October 2026
-# from its own scheme pages 12–15). A year without an entry fails.
+# rendered scheme page (2015–2026 on 11 October 2026; 2014 and 2013 on 11 October
+# 2026 from their own scheme pages 12–15). A year without an entry fails.
 POINTS_5 = 'Two points required for 5 marks (3 + 2)'
 PARTS_5 = 'Two parts required for 5 marks (3 + 2)'
 POINTS_4 = 'Two points required for 4 marks (2 + 2)'
 OL_POINT_TARIFFS = {
+    2013: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
     2014: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
     2015: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},
     2016: {'B2A': (12, POINTS_5), 'B2B': (13, POINTS_5), 'B3A': (14, POINTS_5), 'B3B': (15, POINTS_4)},

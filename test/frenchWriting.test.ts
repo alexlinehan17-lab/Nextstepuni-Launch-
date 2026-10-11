@@ -16,12 +16,12 @@ import { frenchMarks, frenchScoreId, FRENCH_ATTEMPT_ID } from '../components/Mar
 const deck = [...higher, ...ordinary];
 const correctedReadingIds = new Set(readingReview.papers.flatMap(paper => Object.values(paper.preservedCardIds ?? {})));
 
-describe('reviewed 2014–2026 French writing tasks', () => {
-  it('adds all 468 reviewed units while preserving the 260 existing identities', () => {
-    expect(cards).toHaveLength(468);
-    expect(cards.filter(card => card.level === 'higher')).toHaveLength(104);
-    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(364);
-    expect(deck).toHaveLength(2242);
+describe('reviewed 2013–2026 French writing tasks', () => {
+  it('adds all 486 reviewed units while preserving the 260 existing identities', () => {
+    expect(cards).toHaveLength(486);
+    expect(cards.filter(card => card.level === 'higher')).toHaveLength(112);
+    expect(cards.filter(card => card.level === 'ordinary')).toHaveLength(374);
+    expect(deck).toHaveLength(2270);
     expect(new Set(deck.map(card => card.id)).size).toBe(deck.length);
     for (const old of legacy) {
       const live = deck.find(card => card.id === old.id)!;
@@ -98,7 +98,7 @@ describe('reviewed 2014–2026 French writing tasks', () => {
   });
 
   it('lifts each year’s printed communication tariff line rather than one shared paraphrase', () => {
-    // 2014–2021 schemes print "Two points" on every task; from 2022 the message and
+    // 2013–2021 schemes print "Two points" on every task; from 2022 the message and
     // postcard (B2A/B2B) print "Two parts" while the diary and letter keep "Two points".
     const seen = new Map<string, number>();
     for (const card of cards.filter(card => /-writing-b[23][ab]-route-/.test(card.id))) {
@@ -110,7 +110,7 @@ describe('reviewed 2014–2026 French writing tasks', () => {
         seen.set(word, (seen.get(word) ?? 0) + 1);
       }
     }
-    expect(Object.fromEntries(seen)).toEqual({ points: 504, parts: 300 });
+    expect(Object.fromEntries(seen)).toEqual({ points: 516, parts: 300 });
   });
 
   it('keeps the 2015 email, boxed quotation and task-specific language descriptors', () => {
@@ -137,6 +137,30 @@ describe('reviewed 2014–2026 French writing tasks', () => {
     const field = group.find(card => card.id === 'fr-2015-ol-writing-b1b-field-5')!;
     expect(field.rubric.criteria[0].guidance).toEqual(['Level of French – accept any level']);
     expect(field.rubric.taskRequirements).toEqual([]);
+  });
+
+  it('keeps the 2013 bilingual message, illustrated prompts and scheme-specific form and letter rules', () => {
+    const group = cards.filter(card => card.year === 2013);
+    expect(group).toHaveLength(18);
+    const message = group.find(card => card.id === 'fr-2013-hl-writing-b2b')!;
+    // Printed in Irish then English: only the English rendering, all five points.
+    expect(message.questionText.match(/^- /gm)).toHaveLength(5);
+    expect(message.questionText).toContain('You are staying with a French family who have gone out for the day.');
+    expect(message.questionText).not.toContain('teaghlach');
+    expect(message.questionText).not.toContain('___');
+    const cartoon = group.find(card => card.id === 'fr-2013-hl-writing-b4b')!;
+    expect(cartoon.questionText).toBe('Le scandale de la viande de cheval !\n\nDonnez votre réaction.\n(75 mots environ)');
+    for (const id of ['b3a', 'b3b', 'b4a', 'b4b']) {
+      expect(group.find(card => card.id === `fr-2013-hl-writing-${id}`)!.sourceMaterial?.kind).toBe('source-illustration');
+    }
+    expect(group.find(card => card.id === 'fr-2013-ol-writing-b1b-field-5')!.rubric.criteria[0].guidance)
+      .toEqual(['References to both brother(s) & sister(s) required here']);
+    const letter = group.find(card => card.id === 'fr-2013-ol-writing-b3b-route-123')!;
+    expect(letter.rubric.criteria.find(c => c.id === 'format-top')?.guidance)
+      .toContain('[Note: Accept “Monsieur le Directeur” or “Madame la Directrice” in the address above]');
+    expect(letter.schemeCitation).toContain('pp.15, 19, 20');
+    const postcard = group.find(card => card.id === 'fr-2013-ol-writing-b2b-route-123')!;
+    expect(postcard.rubric.criteria[0].guidance).toContain('N.B. Correct tense required for full marks in Communication.');
   });
 
   it('keeps the 2014 cartoon, boxed article and the printed tense rule on every Ordinary task', () => {

@@ -6298,6 +6298,440 @@
           "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
         }
       ]
+    },
+    "2013-hl-000-paper.pdf": {
+      "sha256": "d9410f0a888873060853c94725f3738f71c4565e603393146f897901deb2b615",
+      "directives": [
+        {
+          "key": "1:1:6a0057021c78",
+          "page": 1,
+          "phrase": "1 of",
+          "context": "Lch 1 de 16 / Page 1 of 16 Coimisiún na Scrúduithe Stáit State Examinations Commission ____________________ SCRÚDÚ NA hARDTEISTIMÉIREACHTA, 2013 LEAVING CERTIFICATE EXAMINATION, 2013 ______________",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        },
+        {
+          "key": "2:1:786bd60635f5",
+          "page": 2,
+          "phrase": "2 of",
+          "context": "Lch 2 de 16 / Page 2 of 16 SECTION I: COMPRÉHENSION ÉCRITE (120) Répondez à la Question 1 et à la Question 2. Lisez les passages suivants et répondez aux questions. Dans le cas des questions à choix m",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "2:2:672c170ce77d",
+          "page": 2,
+          "phrase": "choix multiple",
+          "context": "ion 2. Lisez les passages suivants et répondez aux questions. Dans le cas des questions à choix multiple, indiquez la bonne réponse en marquant (a) ou (b) ou (c) ou (d) dans la case. Aux autres questions en français, il faut répondre en français. Aux questions posées en irlandais/ang",
+          "policy": "mcq-answer",
+          "reason": "One answer inside each MCQ; distractors are not alternative tasks."
+        },
+        {
+          "key": "2:3:811db858c364",
+          "page": 2,
+          "phrase": "choisi",
+          "context": "et sa copine Chantal, se sont positionnés à 300 m de l’entrée de l’autoroute A6. Ils ont choisi l’auto-stop pour rejoindre des amis à Genève en Suisse, car « tous les trains étaient pleins ou coûtaient une fortune ». Robert tend le pouce et veille sur les sacs à dos, tandis",
+          "policy": "source-content",
+          "reason": "Selection wording belongs to the source passage, not a candidate task-selection instruction."
+        },
+        {
+          "key": "3:1:468bdddc6846",
+          "page": 3,
+          "phrase": "3 of",
+          "context": "Lch 3 de 16 / Page 3 of 16 (ii) Qu’est-ce qui suggère que l’attente de Robert et de Chantal était désagréable ? (Section 2) __________________________________________________________________________",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "4:1:5de0d1e84a03",
+          "page": 4,
+          "phrase": "4 of",
+          "context": "Lch 4 de 16 / Page 4 of 16 Q.2 Jeanne, 28 ans, a quitté son village natal pour travailler à Paris. Elle y habite seule. 1. Paris, 8 h 30. Comme tous les matins, Jeanne attendait le bus qui la conduisa",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "5:1:8581f20e4837",
+          "page": 5,
+          "phrase": "5 of",
+          "context": "Lch 5 de 16 / Page 5 of 16 3. (i) D’après Jeanne, où exactement Mathieu trouvera-t-il les photocopies ? (Section 2) ____________________________________________________________________________ (ii",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "6:1:377fb6801ede",
+          "page": 6,
+          "phrase": "6 of",
+          "context": "Lch 6 de 16 / Page 6 of 16 SECTION II: PRODUCTION ÉCRITE (100) Répondez à trois questions – la Question 1 et deux des Questions 2, 3 et 4. N.B. LA QUESTION 1 EST OBLIGATOIRE. Q.1. Répondez à (a) ou",
+          "policy": "exam-administration",
+          "reason": "Printed page numbering, not task selection."
+        },
+        {
+          "key": "6:2:466b05c2892b",
+          "page": 6,
+          "phrase": "Répondez à trois",
+          "context": "Lch 6 de 16 / Page 6 of 16 SECTION II: PRODUCTION ÉCRITE (100) Répondez à trois questions – la Question 1 et deux des Questions 2, 3 et 4. N.B. LA QUESTION 1 EST OBLIGATOIRE. Q.1. Répondez à (a) ou à (b). (40 points) (a) Selon le texte de la Section I, Q.1",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff (Q1 40 marks; Q2–Q4 30 marks). Q2(b) requires all five message points. Q3 and Q4 opinions and reactions are open scope, not finite task pools."
+        },
+        {
+          "key": "6:3:cb96d81def53",
+          "page": 6,
+          "phrase": "deux des Questions",
+          "context": "f 16 SECTION II: PRODUCTION ÉCRITE (100) Répondez à trois questions – la Question 1 et deux des Questions 2, 3 et 4. N.B. LA QUESTION 1 EST OBLIGATOIRE. Q.1. Répondez à (a) ou à (b). (40 points) (a) Selon le texte de la Section I, Q.1, « Julia a fait beaucoup de belles rencontres e",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff (Q1 40 marks; Q2–Q4 30 marks). Q2(b) requires all five message points. Q3 and Q4 opinions and reactions are open scope, not finite task pools."
+        },
+        {
+          "key": "6:4:33929a4aa3ca",
+          "page": 6,
+          "phrase": "Répondez à (a)",
+          "context": "la Question 1 et deux des Questions 2, 3 et 4. N.B. LA QUESTION 1 EST OBLIGATOIRE. Q.1. Répondez à (a) ou à (b). (40 points) (a) Selon le texte de la Section I, Q.1, « Julia a fait beaucoup de belles rencontres et aucune mauvaise ». La semaine dernière, vous avez fait de l’auto-s",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff (Q1 40 marks; Q2–Q4 30 marks). Q2(b) requires all five message points. Q3 and Q4 opinions and reactions are open scope, not finite task pools."
+        },
+        {
+          "key": "6:5:827415dbd702",
+          "page": 6,
+          "phrase": "réel ou imaginaire",
+          "context": "us avez eu une très bonne expérience. Racontez ce qui s’est passé. (Votre récit peut être réel ou imaginaire.) (90 mots environ) OU (b) Selon le texte de la Section I, Q.2, Jeanne a fait des études supérieures mais elle n’a pas trouvé d’emploi permanent. Pour réussir dans le monde",
+          "policy": "open-scope",
+          "reason": "Candidate supplies their own real or invented narrative; no closed printed response pool."
+        },
+        {
+          "key": "6:6:88a58929b0e5",
+          "page": 6,
+          "phrase": "OU",
+          "context": "contez ce qui s’est passé. (Votre récit peut être réel ou imaginaire.) (90 mots environ) OU (b) Selon le texte de la Section I, Q.2, Jeanne a fait des études supérieures mais elle n’a pas trouvé d’emploi permanent. Pour réussir dans le monde du travail aujourd’hui, est-",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff (Q1 40 marks; Q2–Q4 30 marks). Q2(b) requires all five message points. Q3 and Q4 opinions and reactions are open scope, not finite task pools."
+        },
+        {
+          "key": "7:1:72fa361ca9be",
+          "page": 7,
+          "phrase": "7 of",
+          "context": "Lch 7 de 16 / Page 7 of 16 _____________________________________________________________________________________ _____________________________________________________________________________________ _",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        },
+        {
+          "key": "8:1:8b835ba86599",
+          "page": 8,
+          "phrase": "8 of",
+          "context": "Lch 8 de 16 / Page 8 of 16 Q.2. Répondez à (a) ou à (b). (30 points) (a) Vos parents sont partis passer le weekend à Paris et ils vous ont laissé(e) seul(e) dans la maison. Alors, vous avez décidé de",
+          "policy": "exam-administration",
+          "reason": "Printed page numbering, not task selection."
+        },
+        {
+          "key": "8:2:3f4e0b407793",
+          "page": 8,
+          "phrase": "Répondez à (a)",
+          "context": "Lch 8 de 16 / Page 8 of 16 Q.2. Répondez à (a) ou à (b). (30 points) (a) Vos parents sont partis passer le weekend à Paris et ils vous ont laissé(e) seul(e) dans la maison. Alors, vous avez décidé de profiter de leur absence",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff (Q1 40 marks; Q2–Q4 30 marks). Q2(b) requires all five message points. Q3 and Q4 opinions and reactions are open scope, not finite task pools."
+        },
+        {
+          "key": "8:3:8bb0079fb8e5",
+          "page": 8,
+          "phrase": "OU",
+          "context": "ce que vous notez à ce sujet dans votre journal intime, après la fête ? (75 mots environ) OU (b) Tá tú ag fanacht le teaghlach Francach atá imithe amach don lá. Scríobh an teachtaireacht a leanas. - Chuir a gcomharsa aosta glao teileafóin orthu tar éis lóin, ag lorg cabh",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff (Q1 40 marks; Q2–Q4 30 marks). Q2(b) requires all five message points. Q3 and Q4 opinions and reactions are open scope, not finite task pools."
+        },
+        {
+          "key": "9:1:e87c9c15b00a",
+          "page": 9,
+          "phrase": "9 of",
+          "context": "Lch 9 de 16 / Page 9 of 16 _____________________________________________________________________________________ _____________________________________________________________________________________ _",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        },
+        {
+          "key": "10:1:7e660aa7a5b8",
+          "page": 10,
+          "phrase": "10 of",
+          "context": "Lch 10 de 16 / Page 10 of 16 Q.3. Répondez à (a) ou à (b). (30 points) (a) Un des plus grands bonheurs de la vie, c’est l’amitié. Qu’en pensez-vous ? (75 mots environ) OU (b)",
+          "policy": "exam-administration",
+          "reason": "Printed page numbering, not task selection."
+        },
+        {
+          "key": "10:2:3fdbeb8ffa9a",
+          "page": 10,
+          "phrase": "Répondez à (a)",
+          "context": "Lch 10 de 16 / Page 10 of 16 Q.3. Répondez à (a) ou à (b). (30 points) (a) Un des plus grands bonheurs de la vie, c’est l’amitié. Qu’en pensez-vous ? (75 mots environ) OU (b) Qu’est-ce que vou",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff (Q1 40 marks; Q2–Q4 30 marks). Q2(b) requires all five message points. Q3 and Q4 opinions and reactions are open scope, not finite task pools."
+        },
+        {
+          "key": "10:3:03c140be30b5",
+          "page": 10,
+          "phrase": "OU",
+          "context": "lus grands bonheurs de la vie, c’est l’amitié. Qu’en pensez-vous ? (75 mots environ) OU (b) Qu’est-ce que vous pensez du Gathering ? (75 mots environ) The Gathering, c’est une succession de festivals et de réunions organisés en Irlande tout",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff (Q1 40 marks; Q2–Q4 30 marks). Q2(b) requires all five message points. Q3 and Q4 opinions and reactions are open scope, not finite task pools."
+        },
+        {
+          "key": "11:1:522bc26b76e1",
+          "page": 11,
+          "phrase": "11 of",
+          "context": "Lch 11 de 16 / Page 11 of 16 _____________________________________________________________________________________ _____________________________________________________________________________________ _",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        },
+        {
+          "key": "12:1:af6a0a6ed068",
+          "page": 12,
+          "phrase": "12 of",
+          "context": "Lch 12 de 16 / Page 12 of 16 Q.4. Répondez à (a) ou à (b). (30 points) (a) L’influence des célébrités sur les jeunes Aujourd’hui, les célébrités représentent des idoles pour les jeunes,",
+          "policy": "exam-administration",
+          "reason": "Printed page numbering, not task selection."
+        },
+        {
+          "key": "12:2:ef67c017536c",
+          "page": 12,
+          "phrase": "Répondez à (a)",
+          "context": "Lch 12 de 16 / Page 12 of 16 Q.4. Répondez à (a) ou à (b). (30 points) (a) L’influence des célébrités sur les jeunes Aujourd’hui, les célébrités représentent des idoles pour les jeunes, et leur influence est con",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff (Q1 40 marks; Q2–Q4 30 marks). Q2(b) requires all five message points. Q3 and Q4 opinions and reactions are open scope, not finite task pools."
+        },
+        {
+          "key": "12:3:46f741c7da6e",
+          "page": 12,
+          "phrase": "OU",
+          "context": "peuvent avoir une mauvaise influence sur eux. Donnez votre réaction. (75 mots environ) OU (b) Le scandale de la viande de cheval ! Donnez votre réaction. (75 mots environ)",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff (Q1 40 marks; Q2–Q4 30 marks). Q2(b) requires all five message points. Q3 and Q4 opinions and reactions are open scope, not finite task pools."
+        },
+        {
+          "key": "13:1:0af7014ac018",
+          "page": 13,
+          "phrase": "13 of",
+          "context": "Lch 13 de 16 / Page 13 of 16 _____________________________________________________________________________________ _____________________________________________________________________________________ _",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        },
+        {
+          "key": "14:1:72b062333cc9",
+          "page": 14,
+          "phrase": "14 of",
+          "context": "Lch 14 de 16 / Page 14 of 16 Leathanach Bán Blank Page",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        },
+        {
+          "key": "15:1:974fe757debd",
+          "page": 15,
+          "phrase": "15 of",
+          "context": "Lch 15 de 16 / Page 15 of 16 Leathanach Bán Blank Page",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        },
+        {
+          "key": "16:1:2f8880f92060",
+          "page": 16,
+          "phrase": "16 of",
+          "context": "Lch 16 de 16 / Page 16 of 16 Leathanach Bán Blank Page",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        }
+      ]
+    },
+    "2013-ol-000-paper.pdf": {
+      "sha256": "c611880cbd4802fb58d6a31917e1b45a42a6216c4a7619dc5c67457fe566ffde",
+      "directives": [
+        {
+          "key": "1:1:1ed507c80e2a",
+          "page": 1,
+          "phrase": "1 of",
+          "context": "Lch 1 de 16 / Page 1 of 16 2013. M13 Coimisiún na Scrúduithe Stáit State Examinations Commission ____________________ SCRÚDÚ NA hARDTEISTIMÉIREACHTA, 2013 LEAVING CERTIFICATE EXAMINATION, 2013 _______",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        },
+        {
+          "key": "2:1:a3626918863c",
+          "page": 2,
+          "phrase": "2 of",
+          "context": "Lch 2 de 16 / Page 2 of 16 ROINN I (160 marc) SECTION I (160 marks) Répondez aux questions 1 à 4. Aux questions posées en irlandais/anglais il faut répondre en irlandais ou en anglais. C.1 Tá an cur",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "3:1:923e8b79438d",
+          "page": 3,
+          "phrase": "3 of",
+          "context": "Lch 3 de 16 / Page 3 of 16 FREAGAIR IAD SEO I nGAEILGE ANSWER IN ENGLISH 1. Ainmnigh dhá rud a dhéanann daoine ar 31 Nollaig sa Fhrainc. (Roinn 1) 1. Name two things that people do on December 31st in",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "4:1:43121ac33ce4",
+          "page": 4,
+          "phrase": "4 of",
+          "context": "Lch 4 de 16 / Page 4 of 16 C.2 San alt seo as an iris GÉO ADO, labhraíonn triúr déagóirí faoina saol ar Mayotte, oileán san Aigéan Indiach. Q.2 In this article from the magazine GÉO ADO, three teenagers",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "5:1:e5d06e8a9e03",
+          "page": 5,
+          "phrase": "5 of",
+          "context": "Lch 5 de 16 / Page 5 of 16 FREAGAIR IAD SEO I nGAEILGE ANSWER IN ENGLISH 1. De réir Mariama, cad a tharla sa bhliain 2011? (Roinn 1) 1. According to Mariama, what happened in 2011? (Section 1) 2.",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "6:1:0b37ab6fe0be",
+          "page": 6,
+          "phrase": "6 of",
+          "context": "Lch 6 de 16 / Page 6 of 16 C.3 Tá an t-agallamh seo leis an amhránaí Keen’V (Kevin Bonnet) athchóirithe as láithreáin ghréasáin éagsúla. Q.3 This interview with the singer Keen’V (Kevin Bonnet) is ad",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "6:2:68740d720526",
+          "page": 6,
+          "phrase": "choisi",
+          "context": "various websites. 1. Pourrais-tu te présenter ? Je m’appelle Kevin Bonnet, mais j’ai choisi le nom Keen’V. Je n’ai pas fait de très longues études, mais j’ai étudié la psychologie et la sociologie à la fac. Je me suis fait connaître grâce à Internet. Au départ, j’ai just",
+          "policy": "source-content",
+          "reason": "Selection wording belongs to the source passage, not a candidate task-selection instruction."
+        },
+        {
+          "key": "7:1:cfb2adacd7af",
+          "page": 7,
+          "phrase": "7 of",
+          "context": "Lch 7 de 16 / Page 7 of 16 3. Certains gens pensaient que Kevin était arrogant. Expliquez pourquoi. (Section 2) _______________________________________________________________________________ 4. Pourq",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "8:1:38ec1dfbc06c",
+          "page": 8,
+          "phrase": "8 of",
+          "context": "Lch 8 de 16 / Page 8 of 16 C.4 Is déagóir í Diane. Tugann Madame Richon, feighlí páistí, aire dá deartháir óg Victor, de ghnáth. Q.4 Diane is a teenager. A baby-minder, Madame Richon, normally looks aft",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "9:1:eaf3cb8711bc",
+          "page": 9,
+          "phrase": "9 of",
+          "context": "Lch 9 de 16 / Page 9 of 16 3. Trouvez dans la deuxième section un verbe au présent. ________________________________________________________________________________ 4. Quand est-ce que maman travaille",
+          "policy": "exam-administration",
+          "reason": "Page numbering, not task selection."
+        },
+        {
+          "key": "10:1:41456079e444",
+          "page": 10,
+          "phrase": "10 of",
+          "context": "Lch 10 de 16 / Page 10 of 16 ROINN II (60 MARC) SECTION II (60 MARKS) EXPRESSION ÉCRITE Dans cette section, choisissez deux des options A, B, C. Rédigez vos réponses en français. A Répondez à (a) ou à",
+          "policy": "exam-administration",
+          "reason": "Printed page numbering, not task selection."
+        },
+        {
+          "key": "10:2:75a642710aad",
+          "page": 10,
+          "phrase": "choisissez",
+          "context": "of 16 ROINN II (60 MARC) SECTION II (60 MARKS) EXPRESSION ÉCRITE Dans cette section, choisissez deux des options A, B, C. Rédigez vos réponses en français. A Répondez à (a) ou à (b) (a) Complétez la lettre ci-dessous en écrivant les mots suivants dans les espaces approprié",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff. All five form fields and all four form sentences (6, 7, 8 and 9) are required, and all three printed points of the message, postcard, diary and formal letter are required."
+        },
+        {
+          "key": "10:3:29cbb440347f",
+          "page": 10,
+          "phrase": "Répondez à (a)",
+          "context": "cette section, choisissez deux des options A, B, C. Rédigez vos réponses en français. A Répondez à (a) ou à (b) (a) Complétez la lettre ci-dessous en écrivant les mots suivants dans les espaces appropriés. (N.B. Cette liste n’est pas dans le bon ordre.) jouer, grande, romans, a",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff. All five form fields and all four form sentences (6, 7, 8 and 9) are required, and all three printed points of the message, postcard, diary and formal letter are required."
+        },
+        {
+          "key": "11:1:64311f0b891e",
+          "page": 11,
+          "phrase": "11 of",
+          "context": "Lch 11 de 16 / Page 11 of 16 OU (b) Vous vous appelez Denis / Denise Cronin. Vous voulez participer à un échange scolaire entre la France et l’Irlande. Remplissez le formulaire suivant. N.B. Répondez à",
+          "policy": "exam-administration",
+          "reason": "Printed page numbering, not task selection."
+        },
+        {
+          "key": "11:2:e1e8b7baf100",
+          "page": 11,
+          "phrase": "OU",
+          "context": "Lch 11 de 16 / Page 11 of 16 OU (b) Vous vous appelez Denis / Denise Cronin. Vous voulez participer à un échange scolaire entre la France et l’Irlande. Remplissez le formulaire suivant. N.B. Répondez à 6, 7, 8",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff. All five form fields and all four form sentences (6, 7, 8 and 9) are required, and all three printed points of the message, postcard, diary and formal letter are required."
+        },
+        {
+          "key": "12:1:4c80bbae1044",
+          "page": 12,
+          "phrase": "12 of",
+          "context": "Lch 12 de 16 / Page 12 of 16 B Répondez à (a) ou à (b). (a) Fág an teachtaireacht seo a leanas do do chara Marc / Rosine a bhfuil tú ag fanacht leis / léi in Cannes. Abair: - Go bhfuil tú imithe cois",
+          "policy": "exam-administration",
+          "reason": "Printed page numbering, not task selection."
+        },
+        {
+          "key": "12:2:ab7a2c5a184c",
+          "page": 12,
+          "phrase": "Répondez à (a)",
+          "context": "Lch 12 de 16 / Page 12 of 16 B Répondez à (a) ou à (b). (a) Fág an teachtaireacht seo a leanas do do chara Marc / Rosine a bhfuil tú ag fanacht leis / léi in Cannes. Abair: - Go bhfuil tú imithe cois farraige le do cha",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff. All five form fields and all four form sentences (6, 7, 8 and 9) are required, and all three printed points of the message, postcard, diary and formal letter are required."
+        },
+        {
+          "key": "12:3:dbaedd501626",
+          "page": 12,
+          "phrase": "OU",
+          "context": "The sun is shining and it is very warm. - You will be back for dinner at 7 o’clock. OU (b) Tá tú ar thuras scoile sa Fhrainc. Scríobh cárta poist chuig do chara Frédéric / Isabelle agus abair ann: - Go bhfuil tú ar thuras scoile sa Fhrainc. - Gur cheannaigh",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff. All five form fields and all four form sentences (6, 7, 8 and 9) are required, and all three printed points of the message, postcard, diary and formal letter are required."
+        },
+        {
+          "key": "13:1:55164affc2e0",
+          "page": 13,
+          "phrase": "13 of",
+          "context": "Lch 13 de 16 / Page 13 of 16 _______________________________________________________________________________________ ______________________________________________________________________________________",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        },
+        {
+          "key": "14:1:c1abe3598b1c",
+          "page": 14,
+          "phrase": "14 of",
+          "context": "Lch 14 de 16 / Page 14 of 16 C Répondez à (a) ou à (b). (a) Tá tú díreach ar ais ó cheolchoirm. Déan nóta faoi seo a leanas i do dhialann: - Go raibh an cheolchoirm i Sasana agus go raibh sí go hiont",
+          "policy": "exam-administration",
+          "reason": "Printed page numbering, not task selection."
+        },
+        {
+          "key": "14:2:bccb72affc01",
+          "page": 14,
+          "phrase": "Répondez à (a)",
+          "context": "Lch 14 de 16 / Page 14 of 16 C Répondez à (a) ou à (b). (a) Tá tú díreach ar ais ó cheolchoirm. Déan nóta faoi seo a leanas i do dhialann: - Go raibh an cheolchoirm i Sasana agus go raibh sí go hiontach. - Gur thaitin",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff. All five form fields and all four form sentences (6, 7, 8 and 9) are required, and all three printed points of the message, postcard, diary and formal letter are required."
+        },
+        {
+          "key": "14:3:b898ed86e3d2",
+          "page": 14,
+          "phrase": "OU",
+          "context": "loved the atmosphere and the music. - You hope to see the group in Limerick next month. OU (b) Scríobh litir fhoirmiúil chuig Accor Hôtel, 27 quai Claude Bernard, 38000 Grenoble. Sa litir: - Abair go bhfuil sé ar intinn agat cuairt a thabhairt ar Grenoble an fómhar",
+          "policy": "independent-tasks",
+          "reason": "Every lettered writing alternative has its own published tariff. All five form fields and all four form sentences (6, 7, 8 and 9) are required, and all three printed points of the message, postcard, diary and formal letter are required."
+        },
+        {
+          "key": "15:1:8726f097a31b",
+          "page": 15,
+          "phrase": "15 of",
+          "context": "Lch 15 de 16 / Page 15 of 16 ____________________________________________________________________________________________ _________________________________________________________________________________",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        },
+        {
+          "key": "16:1:0679e38e600b",
+          "page": 16,
+          "phrase": "16 of",
+          "context": "Lch 16 de 16 / Page 16 of 16 Blank Page Leathanach Bán",
+          "policy": "exam-administration",
+          "reason": "Page numbering or optional extra answer pages; no new task-selection pool."
+        }
+      ]
     }
   },
   "additionalReviewedChoices": [

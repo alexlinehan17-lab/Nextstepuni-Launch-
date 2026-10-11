@@ -1,8 +1,92 @@
 {
   "status": "partial-corpus-review",
   "reviewedAt": "2026-10-07",
-  "cards": 468,
+  "cards": 486,
   "review": [
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "question": "B2A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 12
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "question": "B2B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 12,
+      "schemePage": 13
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "question": "B3A",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 14
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "question": "B3B",
+      "choose": 3,
+      "poolSize": 3,
+      "routes": 1,
+      "paperPage": 14,
+      "schemePage": 15
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "question": "B1B",
+      "choose": 4,
+      "poolSize": 4,
+      "routes": 1,
+      "separatelyMarkedFields": 5,
+      "paperPage": 11,
+      "schemePage": 10
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "question": "B",
+      "routes": 8,
+      "paperPages": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "schemePages": [
+        17,
+        18
+      ],
+      "notes": "Eight independently priced 40/30-mark alternatives. Q1(a) real/imaginary is open creative scope; Q1(b) is an open opinion prompt on its Section I passage. Q2(b) is printed in Irish and English; the English rendering is used and all five message points are required. Q3(a), Q3(b), Q4(a) and Q4(b) are open opinion or reaction scope; the Q3(a) photograph, Q3(b) logo, Q4(a) caricatures and Q4(b) cartoon are retained in the illustration viewer, and no hand-lettered cartoon text is inserted into the question. All four form sentences and all three Ordinary writing points are required."
+    },
+    {
+      "source": "examiner-reports/french/papers/2013-hl-000-paper.pdf",
+      "sha256": "d9410f0a888873060853c94725f3738f71c4565e603393146f897901deb2b615"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2013-hl.pdf",
+      "sha256": "fdf4f0688f38aaeb7b1b1995e9f09cb24787822d7aede34270a91df844a9d79e"
+    },
+    {
+      "source": "examiner-reports/french/papers/2013-ol-000-paper.pdf",
+      "sha256": "c611880cbd4802fb58d6a31917e1b45a42a6216c4a7619dc5c67457fe566ffde"
+    },
+    {
+      "source": "examiner-reports/french/schemes/2013-ol.pdf",
+      "sha256": "46995adf87052146185f3f04186e5038e57cf2ffe69000a0d4b663302d15e075"
+    },
     {
       "year": 2014,
       "level": "ordinary",

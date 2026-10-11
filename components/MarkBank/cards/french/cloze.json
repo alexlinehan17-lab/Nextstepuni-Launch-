@@ -9358,5 +9358,725 @@
       "humanReviewedBy": "agent-verified",
       "humanReviewedAt": "2026-10-07"
     }
+  },
+  {
+    "id": "fr-2013-ol-cloze-b1a-gap-1",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(a) · gap 1",
+    "questionText": "Complétez l’espace [1] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nJ’étais très heureux de recevoir ta lettre [1] la belle photo de ta maison.\n\nMots proposés : jouer, grande, romans, avec, poche, deux, demandé, librairie, membre, aimes",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 1",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 1: avec — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2013-ol-cloze-b1a-gap-2",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(a) · gap 2",
+    "questionText": "Complétez l’espace [2] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nC’est vraiment une [2] maison magnifique.\n\nMots proposés : jouer, grande, romans, avec, poche, deux, demandé, librairie, membre, aimes",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 2",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 2: grande — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2013-ol-cloze-b1a-gap-3",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(a) · gap 3",
+    "questionText": "Complétez l’espace [3] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nTu m’as [3] de te parler de mes passetemps.\n\nMots proposés : jouer, grande, romans, avec, poche, deux, demandé, librairie, membre, aimes",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 3",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 3: demandé — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2013-ol-cloze-b1a-gap-4",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(a) · gap 4",
+    "questionText": "Complétez l’espace [4] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nEh bien, j’adore [4] au foot et je suis [5] de l’équipe de football de ma région.\n\nMots proposés : jouer, grande, romans, avec, poche, deux, demandé, librairie, membre, aimes",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 4",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 4: jouer — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2013-ol-cloze-b1a-gap-5",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(a) · gap 5",
+    "questionText": "Complétez l’espace [5] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nEh bien, j’adore [4] au foot et je suis [5] de l’équipe de football de ma région.\n\nMots proposés : jouer, grande, romans, avec, poche, deux, demandé, librairie, membre, aimes",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 5",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 5: membre — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2013-ol-cloze-b1a-gap-6",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(a) · gap 6",
+    "questionText": "Complétez l’espace [6] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nJe m’entraîne [6] fois par semaine et, en général, nous avons un match le weekend.\n\nMots proposés : jouer, grande, romans, avec, poche, deux, demandé, librairie, membre, aimes",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 6",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 6: deux — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2013-ol-cloze-b1a-gap-7",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(a) · gap 7",
+    "questionText": "Complétez l’espace [7] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nAussi, je passe des heures à lire des [7] d’aventure.\n\nMots proposés : jouer, grande, romans, avec, poche, deux, demandé, librairie, membre, aimes",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 7",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 7: romans — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2013-ol-cloze-b1a-gap-8",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(a) · gap 8",
+    "questionText": "Complétez l’espace [8] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nJ’achète mes livres dans la [8] .\n\nMots proposés : jouer, grande, romans, avec, poche, deux, demandé, librairie, membre, aimes",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 8",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 8: librairie — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2013-ol-cloze-b1a-gap-9",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(a) · gap 9",
+    "questionText": "Complétez l’espace [9] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nÇa coûte cher, donc je n’ai jamais assez d’argent de [9] .\n\nMots proposés : jouer, grande, romans, avec, poche, deux, demandé, librairie, membre, aimes",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 9",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 9: poche — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
+  },
+  {
+    "id": "fr-2013-ol-cloze-b1a-gap-10",
+    "subjectId": "french",
+    "level": "ordinary",
+    "source": "sec",
+    "kind": "rubric",
+    "year": 2013,
+    "paperFileid": "LC010GLP000EV",
+    "section": "B",
+    "questionRef": "2013 OL Section B Q1(a) · gap 10",
+    "questionText": "Complétez l’espace [10] de la lettre avec un mot de la liste. Les espaces sont numérotés dans l’ordre du texte.\n\nEt toi, qu’est-ce que tu [10] faire comme passetemps ?\n\nMots proposés : jouer, grande, romans, avec, poche, deux, demandé, librairie, membre, aimes",
+    "topicId": "french-6-6",
+    "conceptId": "cloze-letter-gap-fill",
+    "totalMarks": 3,
+    "sourceMaterial": {
+      "kind": "source-text",
+      "label": "Original letter",
+      "title": "Section B · Q1(a) — gap 10",
+      "pages": [
+        10
+      ],
+      "attribution": "SEC French 2013 Ordinary Level examination paper — © State Examinations Commission.",
+      "presentationNote": "Read the complete letter and its word bank. Gaps are counted in the order they appear in the original letter."
+    },
+    "specVersion": "lc-french-syllabus",
+    "schemeCitation": "SEC French 2013 Ordinary Level marking scheme, p.10 — © State Examinations Commission.",
+    "schemeRegion": {
+      "schemeFileid": "LC010GLP000EV.pdf",
+      "p": 10,
+      "r": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "rubric": {
+      "system": "french",
+      "taskRequirements": [
+        "Complete only the selected gap."
+      ],
+      "answerGuide": [
+        "Gap 10: aimes — 3 marks.",
+        "Careless transcription, including accents, deduct 1 mark. Accept capital letters."
+      ],
+      "criteria": [
+        {
+          "id": "response",
+          "label": "Response",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            2,
+            3
+          ],
+          "guidance": [
+            "3 marks for the correct word; 2 if a transcription error is the only fault; otherwise 0."
+          ]
+        }
+      ],
+      "markingGuideNote": "The complete exercise awards 3 marks for each of ten gaps. This card assesses one gap."
+    },
+    "qa": {
+      "gates": [
+        "visual-paper-scheme-review",
+        "published-gap-tariff",
+        "selection-review"
+      ],
+      "humanReviewedBy": "agent-verified",
+      "humanReviewedAt": "2026-10-07"
+    }
   }
 ]

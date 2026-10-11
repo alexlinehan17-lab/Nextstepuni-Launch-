@@ -1,5 +1,195 @@
 [
   {
+    "year": 2013,
+    "hlGridPage": 18,
+    "hlSchemePageOffset": -2,
+    "hlCriteriaMax": [
+      20,
+      15
+    ],
+    "hlNoLayoutQuestion": 2,
+    "hlNoLayoutNote": "Q. 2 (a) and (b) No particular layout required.",
+    "hlPassageRefs": {
+      "B1A": 1,
+      "B1B": 2
+    },
+    "illustrationTasks": [
+      "B3A",
+      "B3B",
+      "B4A",
+      "B4B"
+    ],
+    "hlPromptParagraphs": {
+      "B2B": [
+        "You are staying with a French family who have gone out for the day. Write the following message.",
+        "- After lunch, their elderly neighbour phoned to ask for help;",
+        "- She had fallen in the kitchen and had cut her head;",
+        "- You went to her house and saw that it was serious;",
+        "- You are accompanying her to the hospital in an ambulance;",
+        "- You do not know what time you will be back but will phone later."
+      ],
+      "B3A": [
+        "Un des plus grands bonheurs de la vie, c’est l’amitié.",
+        "Qu’en pensez-vous ?"
+      ],
+      "B3B": [
+        "The Gathering, c’est une succession de festivals et de réunions organisés en Irlande tout au long de l’année 2013. L’idée est d’attirer autant d’Irlandais et de descendants d’Irlandais que possible, afin de renforcer les liens de la diaspora irlandaise et de montrer aux visiteurs tout ce que l’Irlande peut offrir.",
+        "Qu’est-ce que vous pensez du Gathering ?"
+      ],
+      "B4A": [
+        "L’influence des célébrités sur les jeunes",
+        "Aujourd’hui, les célébrités représentent des idoles pour les jeunes, et leur influence est considérable. Certaines célébrités peuvent inspirer aux jeunes des ambitions, mais d’autres célébrités peuvent avoir une mauvaise influence sur eux.",
+        "Donnez votre réaction."
+      ],
+      "B4B": [
+        "Le scandale de la viande de cheval !",
+        "Donnez votre réaction."
+      ]
+    },
+    "hlSelectionNote": "Eight independently priced 40/30-mark alternatives. Q1(a) real/imaginary is open creative scope; Q1(b) is an open opinion prompt on its Section I passage. Q2(b) is printed in Irish and English; the English rendering is used and all five message points are required. Q3(a), Q3(b), Q4(a) and Q4(b) are open opinion or reaction scope; the Q3(a) photograph, Q3(b) logo, Q4(a) caricatures and Q4(b) cartoon are retained in the illustration viewer, and no hand-lettered cartoon text is inserted into the question. All four form sentences and all three Ordinary writing points are required.",
+    "languageBottom": null,
+    "olLanguagePage": 11,
+    "formPage": 11,
+    "formSchemePage": 10,
+    "formChoose": 4,
+    "formInstruction": "N.B. Répondez à 6, 7, 8 & 9 par des phrases complètes.",
+    "form_stem": "Vous vous appelez Denis / Denise Cronin. Vous voulez participer à un échange scolaire entre la France et l’Irlande. Remplissez le formulaire suivant.",
+    "fields": [
+      "Nom",
+      "Prénom",
+      "Âge",
+      "Langue(s) parlée(s)",
+      "Nombre de frères et sœurs"
+    ],
+    "answers": [
+      "Surname – accept any reasonable surname",
+      "Christian Name – accept any reasonable Christian name",
+      "Age – accept any reasonable age",
+      "Language(s) spoken – 1 language acceptable for full marks",
+      "References to both brother(s) & sister(s) required here"
+    ],
+    "form_questions": [
+      "Donnez une brève description de votre région.",
+      "Qu’est-ce que vous aimez faire avec votre famille ?",
+      "Avez-vous déjà visité la France ?",
+      "Pourquoi voulez-vous participer à un échange scolaire ?"
+    ],
+    "olCommunicationNote": "N.B. Correct tense required for full marks in Communication.",
+    "letterIdentity": "You are Anthony / Anne O’Rourke, 3 Woodview, Athlone, Co. Westmeath.",
+    "pools": [
+      [
+        "B2A",
+        12,
+        12,
+        "Leave the following message for your friend Marc / Rosine with whom you are staying in Cannes. Say that:",
+        [
+          "You have gone to the seaside with your friends.",
+          "The sun is shining and it is very warm.",
+          "You will be back for dinner at 7 o’clock."
+        ],
+        [
+          "You have gone to the seaside / with your friends.",
+          "The sun is shining / and it is very warm.",
+          "You will be back for dinner / at 7 o’clock."
+        ]
+      ],
+      [
+        "B2B",
+        12,
+        13,
+        "You are on a school tour in France. Write a postcard to your friend Frédéric / Isabelle in which you say that:",
+        [
+          "You are on a school tour in France.",
+          "You bought bread in a bakery yesterday.",
+          "You will visit Versailles next Sunday."
+        ],
+        [
+          "You are on a school tour / in France.",
+          "You bought bread / in a bakery yesterday.",
+          "You will visit Versailles / next Sunday."
+        ]
+      ],
+      [
+        "B3A",
+        14,
+        14,
+        "You have just returned from a concert.",
+        [
+          "The concert was in England and it was great.",
+          "You loved the atmosphere and the music.",
+          "You hope to see the group in Limerick next month."
+        ],
+        [
+          "The concert was in England / and it was great.",
+          "You loved the atmosphere / and the music.",
+          "You hope to see the group / in Limerick next month."
+        ]
+      ],
+      [
+        "B3B",
+        14,
+        15,
+        "Write a formal letter to Accor Hôtel, 27 quai Claude Bernard, 38000 Grenoble. In the letter:",
+        [
+          "Say that you intend to visit Grenoble next autumn.",
+          "Say that you would like to book a room for two people.",
+          "Ask if there is a swimming pool in the hotel."
+        ],
+        [
+          "Say that you intend to visit Grenoble / next autumn.",
+          "Say that you would like to book a room / for two people.",
+          "Ask if there is a swimming pool / in the hotel."
+        ]
+      ]
+    ],
+    "formatSchemePage": 19,
+    "formatSchemePages": [
+      19,
+      20
+    ],
+    "formatNotes": {
+      "top": [
+        "Name and address of sender in top left corner – with name on first line, number and street on second line, etc.",
+        "City / town / village & date (Athlone, le 12 juin 2013) in top right corner or underneath.",
+        "Directly under (b) the name (or title) of the “destinataire” and his / her address.",
+        "Include “Irlande”, accept “Ireland” / “Éire”.",
+        "[Note: Accept “Monsieur le Directeur” or “Madame la Directrice” in the address above]"
+      ],
+      "close": [
+        "Formal ending required.",
+        "Treat one or more incorrect accents in closing formula as one mistake."
+      ],
+      "deductions": [
+        "1 mistake - ignore.",
+        "2 mistakes - deduct 1 mark.",
+        "3 mistakes - deduct 2 marks.",
+        "More than 3 mistakes - award 0.",
+        "If candidate has general layout of Top of Page correct, despite numerous mistakes - award one mark."
+      ]
+    },
+    "olTaskLanguageOmit": {
+      "B2A": {
+        "page": 12,
+        "descriptors": [
+          "some sense of register"
+        ]
+      },
+      "B2B": {
+        "page": 12,
+        "descriptors": [
+          "some sense of register"
+        ]
+      },
+      "B3A": {
+        "page": 12,
+        "descriptors": [
+          "some sense of register"
+        ]
+      }
+    },
+    "taskSourceNotes": {}
+  },
+  {
     "year": 2014,
     "hlGridPage": 17,
     "hlSchemePageOffset": -2,
