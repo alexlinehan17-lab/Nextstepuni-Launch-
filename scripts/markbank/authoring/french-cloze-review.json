@@ -319,7 +319,19 @@
         "libre"
       ],
       "wordBankReason": "Pin the full-width ten-word bank in visually verified printed order, including its words to the right of the inferred column split.",
-      "boundaryDecision": "Ten separately priced3markgaps; keep full letter and source bank."
+      "boundaryDecision": "Ten separately priced3markgaps; keep full letter and source bank.",
+      "letterRepairs": [
+        {
+          "extracted": "C’est mon passe-temps préféré. ______________ un film",
+          "printed": "C’est mon passe-temps préféré. Hier soir, j’ai ______________ un film",
+          "reason": "Paper p10 prints “Hier soir, j’ai” at the end of the line before gap 5; the column reader dropped it, leaving gap 5 without its subject and auxiliary."
+        },
+        {
+          "extracted": "pour me dire si tu ______________ Bien à toi",
+          "printed": "pour me dire si tu ______________ venir. Bien à toi",
+          "reason": "Paper p10 prints “venir.” after gap 10 at the end of the line; the column reader dropped it."
+        }
+      ]
     },
     {
       "year": 2016,
@@ -360,7 +372,14 @@
         "long"
       ],
       "wordBankReason": "Full-width bank visually verified in printed order.",
-      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the complete letter and source bank."
+      "boundaryDecision": "Ten separately priced 3-mark gaps; retain the complete letter and source bank.",
+      "letterRepairs": [
+        {
+          "extracted": "avec mes ____________ était toujours",
+          "printed": "avec mes ____________ , Orla était toujours",
+          "reason": "Paper p10 prints “, Orla” after gap 6 at the end of the line; the column reader dropped it, leaving gap 7’s sentence without its subject."
+        }
+      ]
     },
     {
       "year": 2015,
