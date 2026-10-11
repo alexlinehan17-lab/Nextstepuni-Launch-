@@ -47,6 +47,26 @@ def assert_exact(text, doc, pages, left=None):
     raise AssertionError(('not printed verbatim', pages, text))
 
 
+def printed_line(doc, page, pattern, left=None):
+    """The one line on that page matching `pattern`, as printed.
+
+    Whitespace is collapsed and a superscript ordinal the text layer splits
+    ("1 st Category") is rejoined; every other character is the page's own.
+    """
+    pg = doc[page - 1]
+    clip = fitz.Rect(left, 0, pg.rect.width, pg.rect.height) if left else None
+    text = re.sub(r'(\d) (st|nd|rd|th)\b', r'\1\2', ' '.join(pg.get_text(clip=clip).split()))
+    found = {m.group(0) for m in re.finditer(pattern, text)}
+    assert len(found) == 1, (page, pattern, found)
+    return found.pop()
+
+
+# NextStepUni's own guidance. Shown only under the app-labelled practice notes,
+# never in a field the panel attributes to the SEC.
+PRACTICE_GRID = ('Use the published descriptors to place the response you wrote. The marks apply to this '
+                 'selected task; alternative routes are not added together.')
+
+
 def tiled_text(page):
     """A tiled page's words rebuilt from glyph coordinates (2011 Higher pp.10, 12
     repeat boundary glyphs across clipping tiles, so the raw text layer reads
@@ -204,7 +224,7 @@ def build_year(config):
     runtime = json.loads((ROOT / 'data/examTopics/french-runtime.json').read_text())
     cards, mappings, audit = [], [], []
 
-    def add(level, n, parent, prompt, page, scheme_page, criteria, requirements=None, passage=None):
+    def add(level, n, parent, prompt, page, scheme_page, criteria, requirements=None, passage=None, practice=None):
         entry = next(e for e in entries if e['year'] == YEAR and e['level'] == level and e['lang'] == 'ev')
         item = next(p for p in entry['papers'] if p['label'] == 'Exam Paper')
         paper = next(p for p in tags if p['year'] == YEAR and p['level'] == level and p['fileid'] == item['doc']['f'])
@@ -232,7 +252,7 @@ def build_year(config):
                     qa=dict(gates=['paper-prompt', 'published-french-grid', 'finite-route-expansion', 'visual-paper-scheme-review'],
                             humanReviewedBy='agent-verified', humanReviewedAt='2026-10-07'),
                     rubric=dict(system='french', taskRequirements=requirements or [], criteria=criteria,
-                                markingGuideNote='Use the published descriptors to assess the response you wrote. The marks apply to this selected task; alternative routes are not added together.'))
+                                markingGuideNote='', practiceNotes=[*(practice or []), PRACTICE_GRID]))
         if level == 'higher' and config.get('hlSchemePageOffset'):
             printed_page = scheme_page + config['hlSchemePageOffset']
             card['schemeCitation'] = card['schemeCitation'].replace(f'p.{scheme_page}', f'p.{printed_page} (PDF page {scheme_page})')
@@ -241,7 +261,8 @@ def build_year(config):
         task_notes = config.get('taskSourceNotes', {}).get(level, {})
         source_note = task_notes.get(n, task_notes.get(parent))
         if source_note:
-            card['rubric']['taskRequirements'].append(source_note)
+            # A source discrepancy is our disclosure, not SEC text.
+            card['rubric']['practiceNotes'].insert(0, source_note)
         cards.append(card)
         mappings.append(dict(cardId=cid, subjectId='french', level=level, year=YEAR, sitting='main',
                              paperKey='single', lang='ev', fileid=item['doc']['f'], n=n, parent=parent,
@@ -306,13 +327,14 @@ def build_year(config):
                 'hlNoLayoutTasks' not in config and q == config['hlNoLayoutQuestion']):
             note = config.get('hlNoLayoutNote', f'Q. {q} – no particular layout required')
             assert_on_page(note, scheme_hl, config['hlGridPage'] - 1)
-            criteria[0]['guidance'] = [note.rstrip('.') + '.']
+            assert_exact(note, scheme_hl, [config['hlGridPage'] - 1])
+            criteria[0]['guidance'] = [note]
         if q == 1:
             # 2010 Q1(a) says "Dans le texte de la Question 1 (Section I)".
             ref = re.search(r'Section\s*(?:A|I),\s*Q[.,]\s*([12])|Question\s*([12])\s*\(Section\s*I\)', prompt, re.I)
             assert ref and int(ref[1] or ref[2]) == config['hlPassageRefs'][parent], (YEAR, parent, prompt)
-        add('higher', parent, parent, prompt, page, config['hlGridPage'], criteria,
-            [f'Answer in French, approximately {word_count} words.'],
+        add('higher', parent, parent, prompt, page, config['hlGridPage'], criteria, [],
+            practice=['Write your answer in French.'],
             passage=paper.rc_pages[config['hlPassageRefs'][parent]] if q == 1 else None)
         if task_grid.get('formatMarks'):
             offset = config.get('hlSchemePageOffset', 0)
@@ -339,6 +361,9 @@ def build_year(config):
             assert_on_page(note, scheme_ol, config['olLanguagePage'])
     ol_language_names = ol_language
     ol_language = [lift(notes, scheme_ol, config['olLanguagePage']) for notes in ol_language_names]
+    # The paper's own Section II instruction, printed above Option A every year.
+    section_page = FrPaper(YEAR, 'ol').section_b_page + 1
+    in_french = printed_line(doc, section_page, r'Rédigez vos réponses en français\.')
     form_stem = config['form_stem']
     assert_on_page(form_stem, doc, config['formPage'])
     assert_exact(form_stem, doc, [config['formPage']])
@@ -366,13 +391,16 @@ def build_year(config):
         assert number in {'6', '7', '8', '9'} and note in form_scheme_text, (YEAR, number, note)
     form_choose = config.get('formChoose', 3)
     assert form_choose in [3, 4]
-    assert_on_page(config.get('formInstruction', 'Pour 6, 7, 8 et 9 : choisissez trois questions et répondez par des phrases complètes.'), doc, config['formPage'])
+    form_instruction = config.get('formInstruction', 'Pour 6, 7, 8 et 9 : choisissez trois questions et répondez par des phrases complètes.')
+    assert_on_page(form_instruction, doc, config['formPage'])
+    assert_exact(form_instruction, doc, [config['formPage']])
+    form_categories = [printed_line(scheme_ol, config['formSchemePage'], r'1st Category[^.]*?message not clear\.'),
+                       printed_line(scheme_ol, config['formSchemePage'], r'2nd Category[^.]*?message clear\.')]
     for chosen in combinations(range(4), form_choose):
         selected = [f'{i+6}. {form_questions[i]}' for i in chosen]
         maximum = 12 // form_choose
-        clear = '3' if maximum == 3 else '3–4'
         criteria = [criterion(f'communication-{i+6}', f'Communication · question {i+6}', maximum,
-                              [form_questions[i], f'0–2: message not clear. {clear}: message clear.',
+                              [form_questions[i], *form_categories,
                                *([form_question_notes[str(i + 6)]] if str(i + 6) in form_question_notes else []),
                                *form_notes]) for i in chosen]
         lang = language(8, ol_language)
@@ -380,7 +408,8 @@ def build_year(config):
         criteria.append(lang)
         suffix = ''.join(str(i+6) for i in chosen)
         add('ordinary', f'B1B-route-{suffix}', 'B1B', form_stem + '\n\n' + '\n'.join(selected), config['formPage'], config['formSchemePage'], criteria,
-            ['Answer all four questions in complete French sentences.' if form_choose == 4 else 'Answer the three selected questions in complete French sentences.'])
+            [form_instruction],
+            practice=[] if form_choose == 4 else ['This practice route answers three of the four printed questions.'])
 
     pools = config['pools']
     assert {pool[0] for pool in pools} == {'B2A', 'B2B', 'B3A', 'B3B'}
@@ -422,12 +451,14 @@ def build_year(config):
             maximum = 4 if parent == 'B3B' else 5
             tariff = printed_tariff(YEAR, parent, scheme_ol, scheme_page, maximum)
             notes = communication_notes(config, scheme_ol, scheme_page)
+            categories = [printed_line(scheme_ol, scheme_page, r'1st Category[^.]*?message not clear\.'),
+                          printed_line(scheme_ol, scheme_page, r'2nd Category[^.]*?message clear\.')]
             criteria = [criterion(f'communication-{i+1}', f'Communication · point {i+1}', maximum,
-                                  [answers[i], tariff + '.', *notes,
-                                   'Assess how clearly each part is communicated.']) for i in chosen]
+                                  [answers[i], tariff, *notes, *categories]) for i in chosen]
             if parent == 'B3B':
                 criteria = [criterion('format-top', 'Format · top of page', 3,
-                                      ['France not necessary in address.'] + format_notes['top'] + format_notes['deductions']),
+                                      [printed_line(scheme_ol, scheme_page, r'Top of page\s*\S\s*3 marks \(France not necessary in address\)')]
+                                      + format_notes['top'] + format_notes['deductions']),
                             criterion('format-close', 'Format · closing formula', 3,
                                       format_notes['close'] + format_notes['deductions'])] + criteria
             lang = language(12 if parent == 'B3B' else 15, task_language)
@@ -440,9 +471,11 @@ def build_year(config):
                 context += '\n\n' + config['letterIdentity']
                 assert norm(config['letterIdentity']) in norm(clip_text)
                 assert_exact(config['letterIdentity'], doc, [page], 290)
+            layout = [] if parent == 'B3B' else [printed_line(scheme_ol, scheme_page, r'(?:Ignore layout|No marks for layout)\.')]
             add('ordinary', f'{parent}-route-{suffix}', parent, context, page, scheme_page, criteria,
-                ['Write in French and include all three required points.' if len(points) == 3 else 'Write in French and include all three points selected for this practice route.',
-                 'No marks for layout.' if parent != 'B3B' else 'Use the formal letter layout and the supplied addresses.'])
+                [in_french, *layout],
+                practice=(['This practice route uses three of the five printed points.'] if len(points) == 5 else [])
+                + (['Use the formal letter layout and the supplied addresses.'] if parent == 'B3B' else []))
             if parent == 'B3B':
                 cards[-1]['schemeCitation'] = cards[-1]['schemeCitation'].replace(
                     f'p.{scheme_page}', 'pp.' + ', '.join(map(str, [scheme_page, *format_pages])))
