@@ -27,6 +27,16 @@ def build():
         verify_paper(Path(paper.path), pages=[record['paperPage']])
         text, page = next((text, page) for q, letter, text, page in paper.section_b_asks() if q == 1 and letter == 'a')
         assert page == record['paperPage']
+        with fitz.open(paper.path) as source_pdf:
+            printed_page = source_pdf[page - 1].get_text(sort=True)
+        compact = lambda value: re.sub(r'\s+', '', value)
+        # The bilingual column reader can drop words printed past its column
+        # bound. Each repair restores text visually verified on the page: the
+        # extracted run must occur once and the restored run must be printed.
+        for repair in record.get('letterRepairs', []):
+            assert text.count(repair['extracted']) == 1 and repair['reason'], (year, repair)
+            assert compact(repair['printed']) in compact(printed_page), (year, repair)
+            text = text.replace(repair['extracted'], repair['printed'])
         assert len(re.findall(r'_{3,}', text)) == 10
         bank_start = text.index('(N.B.')
         bank_start = text.index(')', bank_start) + 1
@@ -37,10 +47,7 @@ def build():
             # Pin all ten words to the original page, preserving their order.
             words = record['wordBank']
             assert len(words) == 10 and record['wordBankReason']
-            with fitz.open(paper.path) as source_pdf:
-                raw_page = source_pdf[page - 1].get_text(sort=True)
-            compact = lambda value: re.sub(r'\s+', '', value)
-            assert compact(','.join(words)) in compact(raw_page), year
+            assert compact(','.join(words)) in compact(printed_page), year
         else:
             words = text[bank_start:].strip().split(',', 9)
             words = [word.strip() for word in words[:9]] + [words[9].split()[0]]
@@ -61,6 +68,9 @@ def build():
         else:
             letter_start = re.search(r'Ch(?:er|ère) [^,]+,', text).end()
         body = text[letter_start:].strip()
+        # Fail closed on any dropped word or mark: apart from whitespace, the
+        # whole letter body every gap excerpt is cut from is the printed page.
+        assert compact(body) in compact(printed_page), (year, 'letter body differs from the printed page')
         counter = iter(range(1, 11))
         numbered = re.sub(r'_{3,}', lambda _: f'[{next(counter)}]', body)
         entry = next(e for e in entries if e['year'] == year and e['level'] == 'ordinary' and e['lang'] == 'ev')

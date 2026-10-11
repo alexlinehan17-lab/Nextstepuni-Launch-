@@ -55,6 +55,15 @@ describe('French gap-level practice', () => {
     expect(first.questionText.split('Mots proposés : ')[1]).toBe('courses, mon, suis, tous, argent, organisé, pas, cadeau, en, ranger');
   });
 
+  it('restores printed words the column reader dropped from the 2016 and 2017 letters', () => {
+    const excerpt = (id: string) => cards.find(card => card.id === id)!.questionText.split('\n\n')[1];
+    expect(excerpt('fr-2017-ol-cloze-b1a-gap-5')).toBe('Hier soir, j’ai [5] un film d’espionnage.');
+    expect(excerpt('fr-2017-ol-cloze-b1a-gap-10')).toBe('Téléphone-moi ou envoie-moi un texto pour me dire si tu [10] venir.');
+    for (const gap of [5, 6, 7]) {
+      expect(excerpt(`fr-2016-ol-cloze-b1a-gap-${gap}`)).toBe('Quand je [5] avec mes [6] , Orla était toujours de mauvaise [7] .');
+    }
+  });
+
   it('uses the verified completed-letter answer when the 2022 answer list is blank', () => {
     const card = cards.find(card => card.id === 'fr-2022-ol-cloze-b1a-gap-10')!;
     expect(card.rubric.answerGuide![0]).toContain('du');
