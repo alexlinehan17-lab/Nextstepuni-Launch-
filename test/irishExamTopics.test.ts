@@ -165,25 +165,28 @@ describe('Irish exam-topic registry', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(irishCrosswalk.summary).toMatchObject({
       localPaperVariants: 91,
-      localPhysicalMappings: 2224,
-      distinctStudentFacingQuestions: 2224,
+      localPhysicalMappings: 2256,
+      distinctStudentFacingQuestions: 2256,
       referenceMappedLocalQuestions: 686,
-      retainedLocalQuestions: 1538,
+      retainedLocalQuestions: 1570,
       hostedPaperAnchorMaps: 91,
       preservedBaselineVariants: 26,
       preservedBaselineCards: 286,
       newlyAddedPaperVariants: 65,
-      newlyAddedPhysicalMappings: 1938,
+      newlyAddedPhysicalMappings: 1970,
     });
     expect(papers).toHaveLength(91);
-    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(2224);
+    expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(2256);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
     const indexPapers = PAPER_TRAIL_INDEX.irish.flatMap(entry => entry.papers);
     expect(indexPapers).toHaveLength(91);
 
-    expect(topicsForPaper('irish', 2026, 'higher', 'iv', 'LC001ALP100IV.pdf')?.q.map(q => q.n))
-      .toEqual(['1', '2', '3', '4', 'W-A', 'W-B', 'W-C']);
+    // The seven section identities stay first; the reviewed Paper 1 questions
+    // and composition titles are additive (23 listening + 9 composition).
+    const higher2026P1 = topicsForPaper('irish', 2026, 'higher', 'iv', 'LC001ALP100IV.pdf')?.q.map(q => q.n) ?? [];
+    expect(higher2026P1.slice(0, 7)).toEqual(['1', '2', '3', '4', 'W-A', 'W-B', 'W-C']);
+    expect(higher2026P1).toHaveLength(7 + 32);
     expect(topicsForPaper('irish', 2026, 'foundation', 'iv', 'LC001BLP100IV.pdf')?.q.map(q => q.n))
       .toContain('R-3C');
     expect(topicsForPaper('irish', 2010, 'higher', 'iv', 'LC001ALP200IV.pdf')?.q.map(q => q.n))
@@ -194,7 +197,7 @@ describe('Irish exam-topic registry', () => {
     const topics = new Map(taxonomy.topics.map(topic => [topic.id, topic]));
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(examQuestionTopicMappingsForSubject('irish').filter(mapping => mapping.lang === 'iv'))
-      .toHaveLength(2224);
+      .toHaveLength(2256);
     for (const paper of papers) {
       for (const question of paper.q) {
         const ids = browseTopicIdsForQuestion(paper, question);
@@ -239,7 +242,7 @@ describe('Irish exam-topic registry', () => {
     ]);
   });
 
-  it('ships a finite paper-only fallback for all 2224 cards', () => {
+  it('ships a finite paper-only fallback for all 2256 cards', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'irish');
     expect(VAULT_PREFER_ANCHORS.get('irish')?.('LC001ALP100IV.pdf')).toBe(true);
     for (const paper of papers) {
@@ -261,9 +264,9 @@ describe('Irish exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 2224 questions while keeping provider-only and oral buckets visibly empty', () => {
+  it('surfaces all 2256 questions while keeping provider-only and oral buckets visibly empty', () => {
     expect(subjectAtlasStats('irish')).toMatchObject({
-      questions: 2224,
+      questions: 2256,
       topics: 66,
       yearMin: 2010,
       yearMax: 2026,

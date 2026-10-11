@@ -30,8 +30,9 @@ const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/irish-runtime.json');
 const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/irish-curriculum-crosswalk.json');
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
-const reviewedHigherTasks = readJson(path.join(ROOT, 'components/MarkBank/cards/irish/authored.json'))
-  .cards.filter(card => card.reviewedAt && card.atlasQuestionId);
+const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json']
+  .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
+  .filter(card => card.reviewedAt && card.atlasQuestionId);
 const reference = readJson(REFERENCE_PATH);
 const preservationBaseline = readJson(BASELINE_PATH);
 const referenceTopics = Object.entries(reference.variants).flatMap(([level, variant]) => (
@@ -725,7 +726,15 @@ for (const card of reviewedHigherTasks) {
   const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === card.paperFileid + '.pdf');
   if (!paper) throw new Error('Unindexed reviewed Higher task: ' + card.id);
   const existing = paper.q.find(q => q.n === card.atlasQuestionId);
-  const baseTopicIds = card.id.includes('-reading-')
+  // Paper 1: listening questions keep their recording-section family; each
+  // composition title keeps its printed writing form(s).
+  const paperOneTopics = {
+    'irish-1-0': [H.announcement], 'irish-1-1': [H.conversation], 'irish-1-2': [H.news],
+    'irish-2-0': [H.essay, H.article], 'irish-2-3': [H.story], 'irish-2-4': [H.debate], 'irish-2-5': [H.debate],
+  };
+  const baseTopicIds = card.paper === 1
+    ? paperOneTopics[card.topicId] ?? (() => { throw new Error('Unmapped reviewed Paper 1 topic: ' + card.id); })()
+    : card.id.includes('-reading-')
     ? card.topicId === 'irish-3-3' ? [H.grammar]
       : (card.additionalTopicIds ?? []).includes('irish-3-3') ? [H.reading,H.grammar] : [H.reading]
     : card.atlasQuestionId === 'X-4F' ? [H.extraPoetry,H.historic]
@@ -746,7 +755,7 @@ for (const card of reviewedHigherTasks) {
   if (existing) paper.q.splice(paper.q.indexOf(existing), 1);
   addQuestion(paper, {
     n: card.atlasQuestionId,
-    label: card.questionRef.replace(/^\d{4} HL Paper 2 /, ''),
+    label: card.questionRef.replace(/^\d{4} HL Paper [12] /, ''),
     baseTopicIds,
     anchor: { pP: card.reviewedPaperPages[0], pY: [0, 1],
       paperRegion: card.reviewedPaperPages.map(p => ({ p, r: [0, 0, 1, 1] })),
@@ -758,6 +767,8 @@ for (const card of reviewedHigherTasks) {
   question.reviewedSchemePages = card.schemePages;
   question.practiceInstruction = card.practiceInstruction ?? ('Don chárta seo: ' + question.label + '.'
     + (card.selectedRoute ? ' Freagair (i), (ii) agus (iii).' : ''));
+  if (card.audioMaterial) question.audioMaterial = card.audioMaterial;
+  if (card.schemeFileid) paper.reviewedHigherSchemeFileid = card.schemeFileid + '.pdf';
   paper.hasReviewedHigherTasks = true;
 }
 for (const reviewedFoundation of papers.filter(p => p.hasReviewedFoundationTasks)) {
@@ -1145,7 +1156,8 @@ for (const paper of papers) {
   fs.writeFileSync(outputPath, JSON.stringify(artifact) + '\n');
   if (paper.hasReviewedFoundationTasks || paper.hasReviewedHigherTasks) {
     const { paperOnly, ...answerMap } = artifact;
-    answerMap.schemeFileid = paper.hasReviewedFoundationTasks ? paper.reviewedFoundationSchemeFileid : 'LC001ALP000IV.pdf';
+    answerMap.schemeFileid = paper.hasReviewedFoundationTasks ? paper.reviewedFoundationSchemeFileid
+      : paper.reviewedHigherSchemeFileid ?? 'LC001ALP000IV.pdf';
     answerMap.band = paper.hasReviewedFoundationTasks ? [3, 16] : [27, 41];
     answerMap.maxCropPages = 10;
     answerMap.q = artifact.q.filter(q => paper.q.find(question => question.n === q.n).reviewedSchemePages).map(q => {

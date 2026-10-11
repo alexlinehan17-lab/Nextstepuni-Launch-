@@ -60,6 +60,12 @@ const addedIrishRoutes = new Set([
   ...['a','b'].flatMap(passage => ['a','b'].map(part => `irish-2024-hl-p2-reading-${passage}-q6-${part}`)),
   ...['1-bi','4-bi','4-bii','5-bii'].flatMap(key => [1,2].map(slot => `irish-2024-hl-p2-reading-b-q${key}-${slot}`)),
   ...[1,2].map(slot => `irish-2024-hl-p2-reading-b-q6-b-${slot}`),
+  // 2026 Higher Paper 1, paper-reviewed 2026-10-11: 23 listening questions and 9 composition titles.
+  ...['a-f1-q1a','a-f1-q1b','a-f1-q2','a-f1-q3','a-f2-q1','a-f2-q2','a-f2-q3',
+    'b-c1-first-q1','b-c1-first-q2','b-c1-first-q3','b-c1-second-q1','b-c1-second-q2',
+    'b-c2-first-q1','b-c2-first-q2','b-c2-first-q3','b-c2-second-q1','b-c2-second-q2','b-c2-second-q3',
+    'c-p1-q1','c-p1-q2','c-p1-q3','c-p2-q1','c-p2-q2'].map(key => `irish-2026-hl-p1-listening-${key}`),
+  ...['a-a','a-b','a-c','a-d','a-e','b-a','b-b','c-a','c-b'].map(key => `irish-2026-hl-p1-composition-${key}`),
 ]);
 
 const decks = [
