@@ -5519,21 +5519,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q1-a", topicId: "maths-3-3", conceptId: "house-valued-240-000-start-2019",
     section: "B", questionRef: "2023 OL Paper 1 Q1(a)",
-    questionText: "A house is valued at €240 000 at the start of 2019",
+    stem: "The prices of houses in a particular area have been increasing over a number of years.",
+    questionText: "A house is valued at €240 000 at the start of 2019. By the start of 2020, the price of the house has increased by 8%. By the start of 2021, the price of the house has increased by a further 9%, based on the 2020 price. Work out the price of the house at the start of 2020, and the price at the start of 2021.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q1-a-r1", kind: "anyN", verbatim: "Work of merit, for example writes 1 ∙ 08 or 1 ∙ 09 or 8/100 or 9/100", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Two steps Involved in solution 1. Finds 259 200 2. 1 ∙09 applied correctly to answer for Step 1. Note: Accept both correct answers without supporting work. Note: Full Credit -1 : correct answer without work €282 528. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example writes 1 ∙ 08 or 1 ∙ 09 or 8/100 or 9/100","One step correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q1-a.png",
           "srcHash": "ffcbe60a44c5b011dfc2cd4e851df814",
-          "alt": "The question as printed on the paper — A house is valued at €240 000 at the start of 2019. By the start of 2020, the price of the house has increased by 8%. By the start of 2021, the price of the house has increased by a further 9%, based on the 2020 price.… Full card prompt: A house is valued at €240 000 at the start of 2019",
+          "alt": "The question as printed on the paper — A house is valued at €240 000 at the start of 2019. By the start of 2020, the price of the house has increased by 8%. By the start of 2021, the price of the house has increased by a further 9%, based on the 2020 price.… Full card prompt: The prices of houses in a particular area have been increasing over a number of years. A house is valued at €240 000 at the start of 2019. By the start of 2020, the price of the house has increased by 8%. By the start of 2021, the price of the house has increased by a further 9%, based on the 2020 price. Work out the price of the house at the start of 2020, and the price at the start of 2021.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5549,21 +5563,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q1-b", topicId: "maths-3-3", conceptId: "another-house-was-valued-460-000",
     section: "B", questionRef: "2023 OL Paper 1 Q1(b)",
-    questionText: "Another house was valued at €460 000. One year later, the value of this house had gone up to €472 000",
+    stem: "The prices of houses in a particular area have been increasing over a number of years.",
+    questionText: "Another house was valued at €460 000. One year later, the value of this house had gone up to €472 000. Work out the percentage increase in the value of this house over the year. Give your answer correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q1-b-r1", kind: "anyN", verbatim: "Writes 12000\nWrites (472 000)/(460 000)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept correct answer without supporting work for full credit. Note: Full Credit -1 : 2 ∙608 without work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Writes 12000\nWrites (472 000)/(460 000)","(472 000−460 000)/(460 000) × 100 or 102.6"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[7],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q1-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q1-b.png",
           "srcHash": "9b3b052ee3c2ae85903f7584d1b7b488",
-          "alt": "The question as printed on the paper — The prices of houses in a particular area have been increasing over a number of years. A house is valued at €240 000 at the start of 2019. By the start of 2020, the price of the house has increased by 8%. By the start… Full card prompt: Another house was valued at €460 000. One year later, the value of this house had gone up to €472 000",
+          "alt": "The question as printed on the paper — The prices of houses in a particular area have been increasing over a number of years. A house is valued at €240 000 at the start of 2019. By the start of 2020, the price of the house has increased by 8%. By the start… Full card prompt: The prices of houses in a particular area have been increasing over a number of years. Another house was valued at €460 000. One year later, the value of this house had gone up to €472 000. Work out the percentage increase in the value of this house over the year. Give your answer correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5579,21 +5607,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q1-c", topicId: "maths-3-3", conceptId: "third-house-was-valued-265-000",
     section: "B", questionRef: "2023 OL Paper 1 Q1(c)",
-    questionText: "A third house was valued at €265 000",
+    stem: "The prices of houses in a particular area have been increasing over a number of years.",
+    questionText: "A third house was valued at €265 000. Over the following 4 years, the value of the house increased by r% each year compared to the previous year, where r ∈ ℝ. After 4 years, the house was valued at €370 000. Work out the value of r, by setting F = 370 000, P = 265 000, and t = 4 in this equation: F = P(1 + r/100)^t. Give your answer correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q1-c-r1", kind: "anyN", verbatim: "Some correct substitution into F = P (1 + r/100) t", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Apply F* for incorrect or no rounding. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Some correct substitution into F = P (1 + r/100) t","Fully correct substitution"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[8],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q1-c.png",
           "srcHash": "3d80553cebcca7fdbbec4e7444860bcb",
-          "alt": "The question as printed on the paper — The prices of houses in a particular area have been increasing over a number of years. A house is valued at €240 000 at the start of 2019. By the start of 2020, the price of the house has increased by 8%. By the start… Full card prompt: A third house was valued at €265 000",
+          "alt": "The question as printed on the paper — The prices of houses in a particular area have been increasing over a number of years. A house is valued at €240 000 at the start of 2019. By the start of 2020, the price of the house has increased by 8%. By the start… Full card prompt: The prices of houses in a particular area have been increasing over a number of years. A third house was valued at €265 000. Over the following 4 years, the value of the house increased by r% each year compared to the previous year, where r ∈ ℝ. After 4 years, the house was valued at €370 000. Work out the value of r, by setting F = 370 000, P = 265 000, and t = 4 in this equation: F = P(1 + r/100)^t. Give your answer correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5609,21 +5651,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q2-a-i", topicId: "maths-4-4", conceptId: "plot-label-complex-conjugate-diagram",
+    id: "maths-2023-ol-p1-q2-a-i", topicId: "maths-3-1", conceptId: "plot-label-complex-conjugate-diagram",
     section: "B", questionRef: "2023 OL Paper 1 Q2(a)(i), (ii)",
-    questionText: "Plot and label z₁̅ , the complex conjugate of z₁ , on the diagram above",
+    stem: "In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = 5 + i and z₃ = 6 − 2i.",
+    questionText: "(i) Plot and label z̅₁, the complex conjugate of z₁, on the diagram above. (ii) Plot and label z₂ and z₃ on the diagram above.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q2-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example shows knowledge of conjugate, OR plots one of z₂ or z₃\nWrites z̅₁ only but nothing plotted", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Note: Award F* if plots all three points correctly but no or incorrect labels Re z₃. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example shows knowledge of conjugate, OR plots one of z₂ or z₃\nWrites z̅₁ only but nothing plotted","Plots z̅₁\nWrites z̅₁ but doesn’t plot and plots one of z₂ or z₃\nPlots z₂ and z₃ but doesn’t deal with z̅₁","Plots z̅₁ and one of z₂ or z₃"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q2-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q2-a-i.png",
           "srcHash": "20b8f411c36c1ce85732e2c780a88c0d",
-          "alt": "The question as printed on the paper — In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. Im 3 2 1 Re -1 1 2 3 4 5 6 7 -1 -2 z₁ -3 -4 Plot and label z₁̅ , the complex conjugate of z₁ , on the diagram above. z₂ and z₃ are… Full card prompt: Plot and label z₁̅ , the complex conjugate of z₁ , on the diagram above",
+          "alt": "The question as printed on the paper — In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. Im 3 2 1 Re -1 1 2 3 4 5 6 7 -1 -2 z₁ -3 -4 Plot and label z₁̅ , the complex conjugate of z₁ , on the diagram above. z₂ and z₃ are… Full card prompt: In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = 5 + i and z₃ = 6 − 2i. (i) Plot and label z̅₁, the complex conjugate of z₁, on the diagram above. (ii) Plot and label z₂ and z₃ on the diagram above.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5639,16 +5695,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q2-a-iii", topicId: "maths-3-1", conceptId: "iii-write-form",
     section: "B", questionRef: "2023 OL Paper 1 Q2(a)(iii)",
-    questionText: "(iii) Write 4z₂−5z₃ in the form a + bi, where a, b∈ℤ",
+    stem: "In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = 5 + i and z₃ = 6 − 2i.",
+    questionText: "Write 4z₂ − 5z₃ in the form a + bi, where a, b ∈ ℤ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q2-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example , correctly substitutes z₂ or z₃ or does distribution on one of z₂ or z₃ without showing the substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example , correctly substitutes z₂ or z₃ or does distribution on one of z₂ or z₃ without showing the substitution","Full substitution and distribution"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[9],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q2-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q2-a-iii.png",
@@ -5669,21 +5739,82 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q2-b", topicId: "maths-4-4", conceptId: "complex-numbers-shown-argand-diagram-diagram",
+    id: "maths-2023-ol-p1-q2-a-iv", topicId: "maths-3-1", conceptId: "work-out-value-surd-form",
+    section: "B", questionRef: "2023 OL Paper 1 Q2(a)(iv)",
+    stem: "In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = 5 + i and z₃ = 6 − 2i.",
+    questionText: "Work out the value of |z₃|. Give your answer in surd form.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-q2-a-iv-solution-1", kind: "point", verbatim: "Writes 6² or (−2)²", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q2-a-iv-solution-2", kind: "point", verbatim: "Note: Accept correct answer without supporting work for full credit", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q2-a-iv-solution-3", kind: "point", verbatim: "Note: Full Credit -1 : 6 · 3 without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6,
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2023-OL-ask-p1-q2-a-iv",
+          "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q2-a-iv.png",
+          "srcHash": "1ac4a5981611c48bfb54bb3fc0d199a0",
+          "alt": "The question as printed on the paper — In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. Im 3 2 1 Re -1 1 2 3 4 5 6 7 -1 -2 z₁ -3 -4 Plot and label z₁̅ , the complex conjugate of z₁ , on the diagram above.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2023-OL-paper-p009-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p009-i0.png",
+          "srcHash": "d6ee79bd98346310b8fb4af415b09709",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q2(a)(iv), typeset as the State Examinations Commission set it. It reads: √6² + (−2)² = √40 or 2√10",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-q2-b", topicId: "maths-3-1", conceptId: "complex-numbers-shown-argand-diagram-diagram",
     section: "B", questionRef: "2023 OL Paper 1 Q2(b)",
-    questionText: "The complex numbers z₄ , z₅ , z₆ , and z₇ are shown on the Argand diagram below. The diagram is to scale",
+    stem: "In this question, i² = −1.",
+    questionText: "The complex numbers z₄, z₅, z₆, and z₇ are shown on the Argand diagram below. The diagram is to scale. Tick one box to indicate which of z₄, z₅, z₆, or z₇ has the largest modulus. Give a reason for your answer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q2-b-r1", kind: "anyN", verbatim: "Correct box ticked\nShows knowledge of meaning of modulus\nJoined to origin on diagram\nCorrectly explains the meaning of modulus but ticks the wrong box", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Note: Accept z₅ ticked and “furthest” for full credit. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Correct box ticked\nShows knowledge of meaning of modulus\nJoined to origin on diagram\nCorrectly explains the meaning of modulus but ticks the wrong box"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[10],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q2-b.png",
           "srcHash": "9d30675adc480463fe3d15e3c620e571",
-          "alt": "The question as printed on the paper — The complex numbers z₄ , z₅ , z₆ , and z₇ are shown on the Argand diagram below. The diagram is to scale. Im z₇ z₄ Re z₆ z₅ Tick one box to indicate which of z₄ , z₅ , z₆ , or z₇ has the largest modulus. Give a reason… Full card prompt: The complex numbers z₄ , z₅ , z₆ , and z₇ are shown on the Argand diagram below. The diagram is to scale",
+          "alt": "The question as printed on the paper — The complex numbers z₄ , z₅ , z₆ , and z₇ are shown on the Argand diagram below. The diagram is to scale. Im z₇ z₄ Re z₆ z₅ Tick one box to indicate which of z₄ , z₅ , z₆ , or z₇ has the largest modulus. Give a reason… Full card prompt: In this question, i² = −1. The complex numbers z₄, z₅, z₆, and z₇ are shown on the Argand diagram below. The diagram is to scale. Tick one box to indicate which of z₄, z₅, z₆, or z₇ has the largest modulus. Give a reason for your answer.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5699,16 +5830,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q3-a", topicId: "maths-4-2", conceptId: "solve-equation",
     section: "B", questionRef: "2023 OL Paper 1 Q3(a)",
-    questionText: "Solve the following equation in x∈ℝ : 3(2x+ 4)−5 = 3",
+    questionText: "Solve the following equation in x ∈ ℝ: 3(2x + 4) − 5 = 3",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-ol-p1-q3-a-r1", kind: "anyN", verbatim: "Work of merit for example one correct operation", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 10. The full scale runs to 15. Note: Steps/(1. Distribution) of 3 2. Transposing done 3. Solves. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Work of merit for example one correct operation","Two steps correct"],"perOptionSteps":[6,9]} },
     ],
+    mathematicsScale: {"code":"15C","marks":[0,6,10,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q3-a.png",
@@ -5729,16 +5873,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q3-c", topicId: "maths-4-2", conceptId: "algebra-solve-simultaneous-equations",
     section: "B", questionRef: "2023 OL Paper 1 Q3(c)",
-    questionText: "Use algebra to solve the following simultaneous equations: x−y + 1 = 0 2x + 4y = 19",
+    questionText: "Use algebra to solve the following simultaneous equations: x − y + 1 = 0; 2x + 4y = 19",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q3-c-r1", kind: "anyN", verbatim: "Some work of merit, for example, relevant work in isolating one variable in one equation, or indicates multiplying one equation by a constant", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Note: Four steps involved in solution. 1. Multiplies equation(s) so that 1 variable will cancel / express one variable in terms of the other 2. Produce one equation in one variable 3. Find value of one variable 4. Find value of second variable. Note: depending on method, step 3 may be automatically done when step 2 is completed. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Some work of merit, for example, relevant work in isolating one variable in one equation, or indicates multiplying one equation by a constant","Two steps correct","Three steps correct"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[12],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q3-c",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q3-c.png",
@@ -5759,21 +5916,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q4-a-i", topicId: "maths-5-2", conceptId: "estimate-value-work-graph",
+    id: "maths-2023-ol-p1-q4-a-i", topicId: "maths-5-1", conceptId: "estimate-value-work-graph",
     section: "B", questionRef: "2023 OL Paper 1 Q4(a)(i)–(iii)",
-    questionText: "Estimate the value of g(1∙5). Show your work on the graph. g(1∙5) :",
+    stem: "The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x ∈ ℝ. Use the graph to answer parts (a)(i) to (a)(iv).",
+    questionText: "(i) Estimate the value of g(1·5). Show your work on the graph. (ii) Estimate the value of x for which g(x) = −6. Show your work on the graph. (iii) Tick one box to show how many real roots the function g(x) has in this domain (0, 1, 2 or 3). Give a reason for your answer.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q4-a-i-r1", kind: "anyN", verbatim: "One item correct\nWork of merit on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Note: Four items: 1. (i) 2. (ii) 3. Correct box ticked 4. Reason. Note: Apply F* if fully correct but no work on graph or incorrect work on graph. Note: Tolerance in (ii) −3 < x < −2 ∙5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["One item correct\nWork of merit on the diagram","Two items correct","Three items correct"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q4-a-i.png",
           "srcHash": "d6827a7f3740ec7d5a322d70770863b3",
-          "alt": "The question as printed on the paper — The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x∈ℝ. Use the graph to answer parts (a)(i) to (a)(iv). y y = g(x) 9 8 7 6 5 4 3 2 1 1 -3 -1 -2 2 x -1 -2 -3 -4 -5 -6 -7 -8 -9… Full card prompt: Estimate the value of g(1∙5). Show your work on the graph. g(1∙5) :",
+          "alt": "The question as printed on the paper — The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x∈ℝ. Use the graph to answer parts (a)(i) to (a)(iv). y y = g(x) 9 8 7 6 5 4 3 2 1 1 -3 -1 -2 2 x -1 -2 -3 -4 -5 -6 -7 -8 -9… Full card prompt: The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x ∈ ℝ. Use the graph to answer parts (a)(i) to (a)(iv). (i) Estimate the value of g(1·5). Show your work on the graph. (ii) Estimate the value of x for which g(x) = −6. Show your work on the graph. (iii) Tick one box to show how many real roots the function g(x) has in this domain (0, 1, 2 or 3). Give a reason for your answer.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5789,21 +5960,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q4-a-iv", topicId: "maths-5-2", conceptId: "graph-estimate-ordinates-local-maximum-point",
+    id: "maths-2023-ol-p1-q4-a-iv", topicId: "maths-5-1", conceptId: "graph-estimate-ordinates-local-maximum-point",
     section: "B", questionRef: "2023 OL Paper 1 Q4(a)(iv)",
-    questionText: "(iv) From the graph, estimate the co-ordinates of the local maximum point and the local minimum point of g(x), as accurately as possible",
+    stem: "The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x ∈ ℝ. Use the graph to answer parts (a)(i) to (a)(iv).",
+    questionText: "From the graph, estimate the co-ordinates of the local maximum point and the local minimum point of g(x), as accurately as possible.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q4-a-iv-r1", kind: "anyN", verbatim: "Work of merit, for example, indicated on diagram", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Note: Tolerance: Max; −1 ∙9 ≤ x ≤ −1 ∙3, −1 ∙1 ≤ y ≤ −0 ∙9 Min;0 < x < 0 ∙5, −3 ∙5 ≤ y < −3. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example, indicated on diagram"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[13],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10,
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q4-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q4-a-iv.png",
           "srcHash": "fb15d51b300c91ca2ae12e58c5a22019",
-          "alt": "The question as printed on the paper — The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x∈ℝ. Use the graph to answer parts (a)(i) to (a)(iv). y y = g(x) 9 8 7 6 5 4 3 2 1 1 -3 -1 -2 2 x -1 -2 -3 -4 -5 -6 -7 -8 -9… Full card prompt: (iv) From the graph, estimate the co-ordinates of the local maximum point and the local minimum point of g(x), as accurately as possible",
+          "alt": "The question as printed on the paper — The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x∈ℝ. Use the graph to answer parts (a)(i) to (a)(iv). y y = g(x) 9 8 7 6 5 4 3 2 1 1 -3 -1 -2 2 x -1 -2 -3 -4 -5 -6 -7 -8 -9… Full card prompt: The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x ∈ ℝ. Use the graph to answer parts (a)(i) to (a)(iv). From the graph, estimate the co-ordinates of the local maximum point and the local minimum point of g(x), as accurately as possible.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5819,16 +6005,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q4-b-i", topicId: "maths-5-2", conceptId: "derivative",
     section: "B", questionRef: "2023 OL Paper 1 Q4(b)(i)",
-    questionText: "Find h′(x), the derivative of h(x)",
+    stem: "A different function, h(x), has the following equation: h(x) = x³ + 2x² − x − 8",
+    questionText: "Find h′(x), the derivative of h(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q4-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example writes dy/dx\nOne term differentiated correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example writes dy/dx\nOne term differentiated correctly","Two terms differentiated correctly"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q4-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q4-b-i.png",
@@ -5849,16 +6049,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q4-b-ii", topicId: "maths-5-1", conceptId: "equation-tangent-point",
+    id: "maths-2023-ol-p1-q4-b-ii", topicId: "maths-5-2", conceptId: "equation-tangent-point",
     section: "B", questionRef: "2023 OL Paper 1 Q4(b)(ii)",
-    questionText: "Find the equation of the tangent to h(x) at the point (2, 6)",
+    stem: "A different function, h(x), has the following equation: h(x) = x³ + 2x² − x − 8",
+    questionText: "Find the equation of the tangent to h(x) at the point (2, 6).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q4-b-ii-r1", kind: "anyN", verbatim: "Writes answer of part (i) in answer box of (ii)\nWrites y−y₁ = m(x−x₁) or y = mx + c", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Writes answer of part (i) in answer box of (ii)\nWrites y−y₁ = m(x−x₁) or y = mx + c","Evaluates slope using answer of part (i) and some work on equation of line formula"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[14],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q4-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q4-b-ii.png",
@@ -5879,21 +6093,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q5-a-i", topicId: "maths-3-3", conceptId: "costs-000-lay-240-metres-railway",
     section: "B", questionRef: "2023 OL Paper 1 Q5(a)(i)",
-    questionText: "It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at the same rate",
+    stem: "A company is repairing a railway line. As part of this work, it is laying new railway tracks.",
+    questionText: "It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at the same rate.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q5-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example 80 metres or 1/3 or 50, etc", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7. The full scale runs to 10. Note: Accept correct answer without supporting work for full credit. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example 80 metres or 1/3 or 50, etc"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q5-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q5-a-i.png",
           "srcHash": "102b043d2ad6381ae23d37e7e4a420c3",
-          "alt": "The question as printed on the paper — A company is repairing a railway line. As part of this work, it is laying new railway tracks. It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at… Full card prompt: It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at the same rate",
+          "alt": "The question as printed on the paper — A company is repairing a railway line. As part of this work, it is laying new railway tracks. It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at… Full card prompt: A company is repairing a railway line. As part of this work, it is laying new railway tracks. It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at the same rate.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5909,21 +6137,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q5-a-ii", topicId: "maths-3-3", conceptId: "would-take-people-days-replace-tracks",
     section: "B", questionRef: "2023 OL Paper 1 Q5(a)(ii)",
-    questionText: "It would take 6 people 8 days to replace the tracks on a different part of the railway line. Work out how long it would take 4 people to replace these tracks, each working at the same speed",
+    stem: "A company is repairing a railway line. As part of this work, it is laying new railway tracks.",
+    questionText: "It would take 6 people 8 days to replace the tracks on a different part of the railway line. Work out how long it would take 4 people to replace these tracks, each working at the same speed.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q5-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example (6 + 8)/4 , 6 × 8, divides by 4", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Note: Accept correct answer without supporting work for full credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example (6 + 8)/4 , 6 × 8, divides by 4","Finds 48\n(6 + 8)/4 = 14/4 days (or (6 + 8)/4 = 3 1/2 days)"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q5-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q5-a-ii.png",
           "srcHash": "a0f997acc232c286089443e5b6683d44",
-          "alt": "The question as printed on the paper — A company is repairing a railway line. As part of this work, it is laying new railway tracks. It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at… Full card prompt: It would take 6 people 8 days to replace the tracks on a different part of the railway line. Work out how long it would take 4 people to replace these tracks, each working at the same speed",
+          "alt": "The question as printed on the paper — A company is repairing a railway line. As part of this work, it is laying new railway tracks. It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at… Full card prompt: A company is repairing a railway line. As part of this work, it is laying new railway tracks. It would take 6 people 8 days to replace the tracks on a different part of the railway line. Work out how long it would take 4 people to replace these tracks, each working at the same speed.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5939,16 +6181,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q5-b-i", topicId: "maths-3-3", conceptId: "work-out-time-takes-train-get",
     section: "B", questionRef: "2023 OL Paper 1 Q5(b)(i)",
-    questionText: "Work out the time it takes the train to get from A to B. Give your answer in hours, as a fraction",
+    stem: "Two towns, A and B, are 120 km apart. A train travels from A to B at an average speed of 180 km/hour.",
+    questionText: "Work out the time it takes the train to get from A to B. Give your answer in hours, as a fraction.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q5-b-i-r1", kind: "anyN", verbatim: "Time = Distance/Speed", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7. The full scale runs to 10. Note: Full Credit -1 : 40 minutes OR 0 ∙67. Note: Accept correct answer without supporting work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Time = Distance/Speed"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[15],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q5-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q5-b-i.png",
@@ -5969,21 +6225,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q5-b-ii", topicId: "maths-3-3", conceptId: "way-back-train-travels-average-speed",
     section: "B", questionRef: "2023 OL Paper 1 Q5(b)(ii)",
-    questionText: "On the way back from B to A, the train travels at an average speed of 220 km/hour. Work out the average speed of the train for the entire journey, while it is travelling from A to B and back again. Give your answer in km/hour",
+    stem: "Two towns, A and B, are 120 km apart. A train travels from A to B at an average speed of 180 km/hour.",
+    questionText: "On the way back from B to A, the train travels at an average speed of 220 km/hour. Work out the average speed of the train for the entire journey, while it is travelling from A to B and back again. Give your answer in km/hour. Hint: first work out the total time taken for the entire journey.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q5-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, Time = Distance/Speed , OR 2(120) OR writes answer from part (i) into answer box of (ii)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4. The full scale runs to 5. Note: 4 Steps in solution: 1. T1 2. T2 3. Sets up equation 4. Finishes correctly. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, Time = Distance/Speed , OR 2(120) OR writes answer from part (i) into answer box of (ii)","Two parts correct","Three parts correct"],"perOptionSteps":[2,1,2]} },
     ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[16],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q5-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q5-b-ii.png",
           "srcHash": "5cf74a65256e03470824de0d61ad2fdc",
-          "alt": "The question as printed on the paper — Two towns, A and B, are 120 km apart. A train travels from A to B at an average speed of 180 km/hour. Work out the time it takes the train to get from A to B. Give your answer in hours, as a fraction. On the way back… Full card prompt: On the way back from B to A, the train travels at an average speed of 220 km/hour. Work out the average speed of the train for the entire journey, while it is travelling from A to B and back again. Give your answer in km/hour",
+          "alt": "The question as printed on the paper — Two towns, A and B, are 120 km apart. A train travels from A to B at an average speed of 180 km/hour. Work out the time it takes the train to get from A to B. Give your answer in hours, as a fraction. On the way back… Full card prompt: Two towns, A and B, are 120 km apart. A train travels from A to B at an average speed of 180 km/hour. On the way back from B to A, the train travels at an average speed of 220 km/hour. Work out the average speed of the train for the entire journey, while it is travelling from A to B and back again. Give your answer in km/hour. Hint: first work out the total time taken for the entire journey.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5999,16 +6269,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q6-a-i", topicId: "maths-4-1", conceptId: "value",
+    id: "maths-2023-ol-p1-q6-a-i", topicId: "maths-5-1", conceptId: "value",
     section: "B", questionRef: "2023 OL Paper 1 Q6(a)(i)",
-    questionText: "Find the value of g(−5)",
+    stem: "g(x) is the following function in x ∈ ℝ: g(x) = x² + 8x − 6",
+    questionText: "Find the value of g(−5).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q6-a-i-r1", kind: "anyN", verbatim: "Some correct substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Note: Accept correct answer without supporting work for. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Some correct substitution"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q6-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q6-a-i.png",
@@ -6029,16 +6313,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q6-a-ii", topicId: "maths-5-2", conceptId: "calculus-value-which-gives-minimum-value",
     section: "B", questionRef: "2023 OL Paper 1 Q6(a)(ii)",
-    questionText: "Use calculus to find the value of x which gives the minimum value of g(x)",
+    stem: "g(x) is the following function in x ∈ ℝ: g(x) = x² + 8x − 6",
+    questionText: "Use calculus to find the value of x which gives the minimum value of g(x).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q6-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example writes dy/dx", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Note: Zero marks for solving x² + 8x−6 = 0. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example writes dy/dx"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q6-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q6-a-ii.png",
@@ -6059,16 +6357,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q6-b", topicId: "maths-4-1", conceptId: "expand-simplify",
     section: "B", questionRef: "2023 OL Paper 1 Q6(b)",
-    questionText: "Expand and simplify (2x−4)²−6",
+    questionText: "Expand and simplify (2x − 4)² − 6.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q6-b-r1", kind: "anyN", verbatim: "One term correct in expansion of (2x−4)²\nWrites (2x−4) (2x−4)\nIgnores twice the product and just writes 4x²∓16 for the squaring", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["One term correct in expansion of (2x−4)²\nWrites (2x−4) (2x−4)\nIgnores twice the product and just writes 4x²∓16 for the squaring","Writes 4x²−8x−8x + 16"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[17],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q6-b.png",
@@ -6089,16 +6400,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q6-c", topicId: "maths-4-2", conceptId: "solve-equation-9x2-each-correct-decimal",
     section: "B", questionRef: "2023 OL Paper 1 Q6(c)",
-    questionText: "Solve the following equation in x: 9x2+ 6x−5 = 0 Give each answer correct to 2 decimal places",
+    questionText: "Solve the following equation in x: 9x² + 6x − 5 = 0. Give each answer correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q6-c-r1", kind: "anyN", verbatim: "Minus b formula written\nWork of merit, for example identifies one of a, b or c", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Three steps involved in solution: 1. Identifies a, b, and c 2. Fully substituted formula 3. Both correctly evaluated. Note: Apply F* if incorrect or no rounding, once only. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Minus b formula written\nWork of merit, for example identifies one of a, b or c","Two steps correct\nFormula fully correctly substituted\nSecond value not found"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[18],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q6-c",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q6-c.png",
@@ -6119,21 +6443,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q7-a-i", topicId: "maths-1-2", conceptId: "value-when",
+    id: "maths-2023-ol-p1-q7-a-i", topicId: "maths-5-1", conceptId: "value-when",
     section: "B", questionRef: "2023 OL Paper 1 Q7(a)(i)",
-    questionText: "Find the value of C when S = 15",
+    stem: "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil.",
+    questionText: "Find the value of C when S = 15.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q7-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example substitutes in the 15 to the given formula or writes 15 + 10", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7. The full scale runs to 10. Note: Apply F* for 1000/25. Note: Accept correct answer without supporting work for. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example substitutes in the 15 to the given formula or writes 15 + 10"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q7-a-i.png",
           "srcHash": "804f2a103ee59adfc2ee28038ebdd657",
-          "alt": "The question as printed on the paper — When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is… Full card prompt: Find the value of C when S = 15",
+          "alt": "The question as printed on the paper — When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is… Full card prompt: When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil. Find the value of C when S = 15.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6149,21 +6487,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q7-a-ii", topicId: "maths-1-2", conceptId: "when-increases-does-increase-decrease",
+    id: "maths-2023-ol-p1-q7-a-ii", topicId: "maths-5-1", conceptId: "when-increases-does-increase-decrease",
     section: "B", questionRef: "2023 OL Paper 1 Q7(a)(ii)",
-    questionText: "When S increases, does C increase or decrease?",
+    stem: "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil.",
+    questionText: "When S increases, does C increase or decrease? Justify your answer, using the equation C = 1000/(S + 10).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q7-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example answer correct (i.e. decreases) or indicates denominator gets bigger", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example answer correct (i.e. decreases) or indicates denominator gets bigger"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q7-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q7-a-ii.png",
           "srcHash": "dd16917a9333edcf632733b8ada8e018",
-          "alt": "The question as printed on the paper — When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is… Full card prompt: When S increases, does C increase or decrease?",
+          "alt": "The question as printed on the paper — When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is… Full card prompt: When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil. When S increases, does C increase or decrease? Justify your answer, using the equation C = 1000/(S + 10).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6179,21 +6531,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q7-a-iii", topicId: "maths-4-1", conceptId: "iii-rearrange-equation-write-terms",
     section: "B", questionRef: "2023 OL Paper 1 Q7(a)(iii)",
-    questionText: "(iii) Rearrange the equation to write S in terms of C",
+    stem: "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil.",
+    questionText: "Rearrange the equation to write S in terms of C.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q7-a-iii-r1", kind: "anyN", verbatim: "One term correct when multiplying across by (S + 10)\nWrites C(S + 10)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Note: S = 1000/(C + 10) without work is zero marks. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One term correct when multiplying across by (S + 10)\nWrites C(S + 10)","CS = 1000 −10C"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[19],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q7-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q7-a-iii.png",
           "srcHash": "6473fdc8025a2c58a6f10ce8059029a3",
-          "alt": "The question as printed on the paper — When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is… Full card prompt: (iii) Rearrange the equation to write S in terms of C",
+          "alt": "The question as printed on the paper — When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is… Full card prompt: When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil. Rearrange the equation to write S in terms of C.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6209,21 +6576,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q7-a-iv", topicId: "maths-5-1", conceptId: "values-100-part-iii-otherwise-range",
+    id: "maths-2023-ol-p1-q7-a-iv", topicId: "maths-4-2", conceptId: "values-100-part-iii-otherwise-range",
     section: "B", questionRef: "2023 OL Paper 1 Q7(a)(iv)",
-    questionText: "(iv) The values for C go from 30 to 100. Use your answer from part (a)(iii), or otherwise, to find the range of values of S",
+    stem: "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil.",
+    questionText: "The values for C go from 30 to 100. Use your answer from part (a)(iii), or otherwise, to find the range of values of S.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q7-a-iv-r1", kind: "anyN", verbatim: "Carries answer from part (iii) down\nSome correct substitution into C = 1000/(S + 10)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Award F* if both numbers are calculated correctly but no range indicated. Note: Accept correct answers, 0 and 23 , without supporting work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Carries answer from part (iii) down\nSome correct substitution into C = 1000/(S + 10)","Both formulas fully correctly substituted\nOne value correct"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16,
+                17
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q7-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q7-a-iv.png",
           "srcHash": "09306e7b913c63ffeb532e80f5cc12c7",
-          "alt": "The question as printed on the paper — When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is… Full card prompt: (iv) The values for C go from 30 to 100. Use your answer from part (a)(iii), or otherwise, to find the range of values of S",
+          "alt": "The question as printed on the paper — When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is… Full card prompt: When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil. The values for C go from 30 to 100. Use your answer from part (a)(iii), or otherwise, to find the range of values of S.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6239,21 +6621,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q7-b-i", topicId: "maths-1-2", conceptId: "write-down-probability-raining-start-end",
+    id: "maths-2023-ol-p1-q7-b-i", topicId: "maths-5-1", conceptId: "write-down-probability-raining-start-end",
     section: "B", questionRef: "2023 OL Paper 1 Q7(b)(i)",
-    questionText: "Write down the probability that it is raining at the start and the end of the day, that is, find the value of P(0) and P(24)",
+    stem: "Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ.",
+    questionText: "Write down the probability that it is raining at the start and the end of the day, that is, find the value of P(0) and P(24).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q7-b-i-r1", kind: "anyN", verbatim: "Some correct substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept correct answers without supporting work for full credit. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Some correct substitution","One value correct\nBoth formulas fully substituted"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q7-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q7-b-i.png",
           "srcHash": "5b8a42572a929396a28032d1a1d5f802",
-          "alt": "The question as printed on the paper — Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0∙3 + 0∙02 t. Here, P(t) is the probability that it is raining t hours… Full card prompt: Write down the probability that it is raining at the start and the end of the day, that is, find the value of P(0) and P(24)",
+          "alt": "The question as printed on the paper — Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0∙3 + 0∙02 t. Here, P(t) is the probability that it is raining t hours… Full card prompt: Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ. Write down the probability that it is raining at the start and the end of the day, that is, find the value of P(0) and P(24).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6269,21 +6665,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q7-b-ii", topicId: "maths-5-2", conceptId: "value-derivative-explain-what-value-means",
     section: "B", questionRef: "2023 OL Paper 1 Q7(b)(ii)",
-    questionText: "Find the value of P′(t), the derivative of t, and explain what the value of P′(t) means in this context",
+    stem: "Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ.",
+    questionText: "Find the value of P′(t), the derivative of t, and explain what the value of P′(t) means in this context.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q7-b-ii-r1", kind: "anyN", verbatim: "Work of merit in either P′(t) or in explaining the meaning\nWrites dy/dx", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit in either P′(t) or in explaining the meaning\nWrites dy/dx"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q7-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q7-b-ii.png",
           "srcHash": "7125452be3ccd46ea25a684190d63a48",
-          "alt": "The question as printed on the paper — Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0∙3 + 0∙02 t. Here, P(t) is the probability that it is raining t hours… Full card prompt: Find the value of P′(t), the derivative of t, and explain what the value of P′(t) means in this context",
+          "alt": "The question as printed on the paper — Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0∙3 + 0∙02 t. Here, P(t) is the probability that it is raining t hours… Full card prompt: Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ. Find the value of P′(t), the derivative of t, and explain what the value of P′(t) means in this context.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6299,21 +6709,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q7-b-iii", topicId: "maths-1-2", conceptId: "certain-time-probability-raining-according-model",
+    id: "maths-2023-ol-p1-q7-b-iii", topicId: "maths-5-1", conceptId: "certain-time-probability-raining-according-model",
     section: "B", questionRef: "2023 OL Paper 1 Q7(b)(iii)",
-    questionText: "At a certain time, the probability that it is raining, according to this model, is 0∙35. Work out the probability that it is raining exactly 1 hour later, according to this model",
+    stem: "Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ.",
+    questionText: "At a certain time, the probability that it is raining, according to this model, is 0·35. Work out the probability that it is raining exactly 1 hour later, according to this model.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q7-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example indicates the probability will be higher", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example indicates the probability will be higher"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[20],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                18
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q7-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q7-b-iii.png",
           "srcHash": "055f76cc447acb46cde820e4052aa474",
-          "alt": "The question as printed on the paper — Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0∙3 + 0∙02 t. Here, P(t) is the probability that it is raining t hours… Full card prompt: At a certain time, the probability that it is raining, according to this model, is 0∙35. Work out the probability that it is raining exactly 1 hour later, according to this model",
+          "alt": "The question as printed on the paper — Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0∙3 + 0∙02 t. Here, P(t) is the probability that it is raining t hours… Full card prompt: Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ. At a certain time, the probability that it is raining, according to this model, is 0·35. Work out the probability that it is raining exactly 1 hour later, according to this model.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6329,21 +6753,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q8-a", topicId: "maths-3-4", conceptId: "area-whole-garden-total-area-rectangle",
     section: "B", questionRef: "2023 OL Paper 1 Q8(a)",
-    questionText: "Find the area of the whole garden (that is, the total area of the rectangle)",
+    stem: "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale).",
+    questionText: "Find the area of the whole garden (that is, the total area of the rectangle).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q8-a-r1", kind: "anyN", verbatim: "Work of merit, for example writes area is length multiplied by breadth, or 50 × something", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7. The full scale runs to 10. Note: Accept correct answer without supporting work for full credit. Note: Apply F* if no units or incorrect units. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example writes area is length multiplied by breadth, or 50 × something"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q8-a",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q8-a.png",
           "srcHash": "c4a26a620ab3fa984fde1329a3301c49",
-          "alt": "The question as printed on the paper — A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). 14 m 10 m 12 m 10 m 8 m 2 m 3 m 30 m 18 m 50 m Find the area of the whole garden… Full card prompt: Find the area of the whole garden (that is, the total area of the rectangle)",
+          "alt": "The question as printed on the paper — A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). 14 m 10 m 12 m 10 m 8 m 2 m 3 m 30 m 18 m 50 m Find the area of the whole garden… Full card prompt: A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). Find the area of the whole garden (that is, the total area of the rectangle).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6359,21 +6797,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q8-b", topicId: "maths-3-4", conceptId: "width-pond-measured-intervals-metres-starting",
     section: "B", questionRef: "2023 OL Paper 1 Q8(b)",
-    questionText: "The width of the pond is measured at intervals of 3 metres, starting at the right-hand edge of the pond. These measurements are given on the diagram, correct to the nearest metre",
+    stem: "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale).",
+    questionText: "The width of the pond is measured at intervals of 3 metres, starting at the right-hand edge of the pond. These measurements are given on the diagram, correct to the nearest metre (2, 8, 10, 12, 14, 10 m and 0 at the left-hand point). Use the Trapezoidal Rule (and the measurements in the diagram above) to work out an estimate for the area of the pond.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q8-b-r1", kind: "anyN", verbatim: "Trapezoidal Rule written\nWork of merit on the diagram", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Note: Apply F* if no units or incorrect units. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Trapezoidal Rule written\nWork of merit on the diagram","Full correct substitution"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q8-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q8-b.png",
           "srcHash": "d23d188ae76b1868a5c52c2808fbe921",
-          "alt": "The question as printed on the paper — A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). 14 m 10 m 12 m 10 m 8 m 2 m 3 m 30 m 18 m 50 m Find the area of the whole garden… Full card prompt: The width of the pond is measured at intervals of 3 metres, starting at the right-hand edge of the pond. These measurements are given on the diagram, correct to the nearest metre",
+          "alt": "The question as printed on the paper — A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). 14 m 10 m 12 m 10 m 8 m 2 m 3 m 30 m 18 m 50 m Find the area of the whole garden… Full card prompt: A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). The width of the pond is measured at intervals of 3 metres, starting at the right-hand edge of the pond. These measurements are given on the diagram, correct to the nearest metre (2, 8, 10, 12, 14, 10 m and 0 at the left-hand point). Use the Trapezoidal Rule (and the measurements in the diagram above) to work out an estimate for the area of the pond.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6389,21 +6841,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q8-c", topicId: "maths-3-4", conceptId: "suggest-way-which-trapezoidal-rule-could",
     section: "B", questionRef: "2023 OL Paper 1 Q8(c)",
-    questionText: "Suggest a way by which the Trapezoidal Rule could be used (with different measurements) to get a potentially more accurate estimate of the area of the pond",
+    stem: "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale).",
+    questionText: "Suggest a way by which the Trapezoidal Rule could be used (with different measurements) to get a potentially more accurate estimate of the area of the pond.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q8-c-r1", kind: "anyN", verbatim: "Work of merit, for example consistent extra vertical lines drawn on diagram", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example consistent extra vertical lines drawn on diagram"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                19,
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q8-c",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q8-c.png",
           "srcHash": "eb34cb28a530ec8964047e8caa868956",
-          "alt": "The question as printed on the paper — A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). 14 m 10 m 12 m 10 m 8 m 2 m 3 m 30 m 18 m 50 m Find the area of the whole garden… Full card prompt: Suggest a way by which the Trapezoidal Rule could be used (with different measurements) to get a potentially more accurate estimate of the area of the pond",
+          "alt": "The question as printed on the paper — A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). 14 m 10 m 12 m 10 m 8 m 2 m 3 m 30 m 18 m 50 m Find the area of the whole garden… Full card prompt: A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). Suggest a way by which the Trapezoidal Rule could be used (with different measurements) to get a potentially more accurate estimate of the area of the pond.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6419,21 +6886,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q8-d", topicId: "maths-3-4", conceptId: "apart-pond-rest-rectangular-garden-covered",
     section: "B", questionRef: "2023 OL Paper 1 Q8(d)",
-    questionText: "Apart from the pond, the rest of the rectangular garden is covered in grass. The actual area of the pond is 172 m²",
+    stem: "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale).",
+    questionText: "Apart from the pond, the rest of the rectangular garden is covered in grass. The actual area of the pond is 172 m². All of the grass in the garden needs to be resown. The cost is €2·55 per square metre that needs to be resown. Work out the cost of resowing the grass. Give your answer correct to the nearest ten euro.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q8-d-r1", kind: "anyN", verbatim: "1500 −172 or 1328 written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Apply F* if 165 used and finished out. Note: Apply F* if incorrect or no rounding. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["1500 −172 or 1328 written","1328 × 2 ∙55"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[21],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                20
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q8-d",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q8-d.png",
           "srcHash": "aab3e0d6cd89cab200c148276efe350e",
-          "alt": "The question as printed on the paper — A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). 14 m 10 m 12 m 10 m 8 m 2 m 3 m 30 m 18 m 50 m Find the area of the whole garden… Full card prompt: Apart from the pond, the rest of the rectangular garden is covered in grass. The actual area of the pond is 172 m²",
+          "alt": "The question as printed on the paper — A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). 14 m 10 m 12 m 10 m 8 m 2 m 3 m 30 m 18 m 50 m Find the area of the whole garden… Full card prompt: A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale). Apart from the pond, the rest of the rectangular garden is covered in grass. The actual area of the pond is 172 m². All of the grass in the garden needs to be resown. The cost is €2·55 per square metre that needs to be resown. Work out the cost of resowing the grass. Give your answer correct to the nearest ten euro.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6449,21 +6930,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q8-e", topicId: "maths-3-3", conceptId: "some-materials-were-imported-england-gardener",
     section: "B", questionRef: "2023 OL Paper 1 Q8(e)",
-    questionText: "Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16∙9%. Work out the cost of the materials before the Import Duty was added. Give your answer correct to the nearest penny (that is, to 2 decimal places)",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    questionText: "Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16·9%. Work out the cost of the materials before the Import Duty was added. Give your answer correct to the nearest penny (that is, to 2 decimal places).",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q8-e-r1", kind: "anyN", verbatim: "Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Apply F* if incorrect or no rounding. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169","116∙9 840 × 100 or 840/1∙169"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p1-q8-e-solution-1", kind: "point", verbatim: "= £718 · 56 [nearest penny]", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q8-e-solution-2", kind: "point", verbatim: "Writes 116 · 9% or 100 + 16 · 9 or 1 · 169", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q8-e-solution-3", kind: "point", verbatim: "Note: Apply F* if incorrect or no rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q8-e",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q8-e.png",
           "srcHash": "b8f6c08d3e1f7c2f4f7e47b64634ec7d",
-          "alt": "The question as printed on the paper — Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16∙9%. Work out the cost of the materials before the Import Duty was… Full card prompt: Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16∙9%. Work out the cost of the materials before the Import Duty was added. Give your answer correct to the nearest penny (that is, to 2 decimal places)",
+          "alt": "The question as printed on the paper — Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16∙9%. Work out the cost of the materials before the Import Duty was… Full card prompt: Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16·9%. Work out the cost of the materials before the Import Duty was added. Give your answer correct to the nearest penny (that is, to 2 decimal places).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6479,16 +6975,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q8-f", topicId: "maths-3-3", conceptId: "gardener-paid-840-euro-exchange-rate",
     section: "B", questionRef: "2023 OL Paper 1 Q8(f)",
-    questionText: "The gardener paid the £840 in euro. The exchange rate was €1 = £0∙8547. He also paid a fee of 2∙5% of the £840 as a commission",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    stem: "Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840.",
+    questionText: "The gardener paid the £840 in euro. The exchange rate was €1 = £0·8547. He also paid a fee of 2·5% of the £840 as a commission. Work out how much he paid in total, in euro, correct to the nearest cent.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q8-f-r1", kind: "anyN", verbatim: "(f) 840/(0 ∙ 8547) × 1 ∙ 025 = 1007 ∙ 371007", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Note: Apply F* if incorrect or no rounding. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["(f) 840/(0 ∙ 8547) × 1 ∙ 025 = 1007 ∙ 371007","€1007 ∙37","Mathematics – Ordinary Level"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p1-q8-f-solution-1", kind: "point", verbatim: "€1007 · 37", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q8-f-solution-2", kind: "point", verbatim: "Work of merit in either the exchange rate calculation or the commission calculation", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q8-f-solution-3", kind: "point", verbatim: "Writes 21 or 861", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q8-f-solution-4", kind: "point", verbatim: "Writes 982.80 with or without work", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q8-f-solution-5", kind: "point", verbatim: "Note: Apply F* if incorrect or no rounding", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[22],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                21
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q8-f",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q8-f.png",
@@ -6509,21 +7023,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q9-a-i", topicId: "maths-4-2", conceptId: "diagram-estimate-number-actual-new-cases",
+    id: "maths-2023-ol-p1-q9-a-i", topicId: "maths-5-1", conceptId: "diagram-estimate-number-actual-new-cases",
     section: "B", questionRef: "2023 OL Paper 1 Q9(a)(i)",
-    questionText: "From the diagram, estimate the number of actual new cases there were on day t = 12, using the relevant dot",
+    stem: "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time.",
+    questionText: "From the diagram, estimate the number of actual new cases there were on day t = 12, using the relevant dot.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q9-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example work on diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7. The full scale runs to 10. Note: Tolerance: 1300 ≤ x ≤ 1700. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example work on diagram"]} },
     ],
+    mathematicsScale: {"code":"10B","marks":[0,7,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-i.png",
           "srcHash": "3d5de45a3a4a61efd9565d4ddd93ce9d",
-          "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model… Full card prompt: From the diagram, estimate the number of actual new cases there were on day t = 12, using the relevant dot",
+          "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model… Full card prompt: The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. From the diagram, estimate the number of actual new cases there were on day t = 12, using the relevant dot.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6539,21 +7067,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q9-a-ii", topicId: "maths-3-3", conceptId: "work-out-percentage-error-model-value",
     section: "B", questionRef: "2023 OL Paper 1 Q9(a)(ii)",
-    questionText: "Work out the percentage error in the model’s value for day t = 12. Use your answer to part (a)(i) above as the actual value for day t = 12. Give your answer correct to the nearest percent",
+    stem: "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time.",
+    questionText: "According to the model (the curve), there were 1000 new cases on day t = 12. Work out the percentage error in the model’s value for day t = 12. Use your answer to part (a)(i) above as the actual value for day t = 12. Give your answer correct to the nearest percent.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q9-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example answer from part (i) brought down", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Note: Apply F* if incorrect or no Rounding. Note: Accept correct answer without supporting work. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example answer from part (i) brought down"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-ii.png",
           "srcHash": "68060809add2c411a0110f52fa7d5322",
-          "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model… Full card prompt: Work out the percentage error in the model’s value for day t = 12. Use your answer to part (a)(i) above as the actual value for day t = 12. Give your answer correct to the nearest percent",
+          "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model… Full card prompt: The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. According to the model (the curve), there were 1000 new cases on day t = 12. Work out the percentage error in the model’s value for day t = 12. Use your answer to part (a)(i) above as the actual value for day t = 12. Give your answer correct to the nearest percent.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6569,21 +7111,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q9-a-iii", topicId: "maths-4-2", conceptId: "iii-takes-approximately-days-daily-number",
+    id: "maths-2023-ol-p1-q9-a-iii", topicId: "maths-5-1", conceptId: "iii-takes-approximately-days-daily-number",
     section: "B", questionRef: "2023 OL Paper 1 Q9(a)(iii)",
-    questionText: "(iii) Show that it takes approximately 5 days for the daily number of new cases to double, according to the model (that is, according to the curve in the diagram)",
+    stem: "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time.",
+    questionText: "Show that it takes approximately 5 days for the daily number of new cases to double, according to the model (that is, according to the curve in the diagram).",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q9-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example values of some days written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example values of some days written"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q9-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-iii.png",
           "srcHash": "a30fa4150dad0b2455f1c8867a64408a",
-          "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model… Full card prompt: (iii) Show that it takes approximately 5 days for the daily number of new cases to double, according to the model (that is, according to the curve in the diagram)",
+          "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model… Full card prompt: The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. Show that it takes approximately 5 days for the daily number of new cases to double, according to the model (that is, according to the curve in the diagram).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6599,21 +7156,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q9-a-iv", topicId: "maths-4-2", conceptId: "estimate-what-day-value-number-new",
+    id: "maths-2023-ol-p1-q9-a-iv", topicId: "maths-4-1", conceptId: "estimate-what-day-value-number-new",
     section: "B", questionRef: "2023 OL Paper 1 Q9(a)(iv)",
-    questionText: "(iv) Hence, estimate on what day (value of t) the number of new cases will first be at least 100 000, according to the model. Show your working out",
+    stem: "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. The daily number of new cases doubles approximately every 5 days, according to the model.",
+    questionText: "Hence, estimate on what day (value of t) the number of new cases will first be at least 100 000, according to the model. Show your working out.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q9-a-iv-r1", kind: "anyN", verbatim: "Some iteration of 5 days causing doubling\nAny given day written with approx. value from graph, for example Day 5 = 400", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Note: Any day on the graph is a valid starting point. Note: Where D(k) < 100000 and D(k + 5) > 100000,. Note: accept any k + 1 to k + 4 as the solution. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some iteration of 5 days causing doubling\nAny given day written with approx. value from graph, for example Day 5 = 400","Doubling the cases more than once or reaching Day 45"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[23],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                22,
+                23
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q9-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-iv.png",
           "srcHash": "ecee30b92c708e11d66f091ef4d88bf5",
-          "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model… Full card prompt: (iv) Hence, estimate on what day (value of t) the number of new cases will first be at least 100 000, according to the model. Show your working out",
+          "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model… Full card prompt: The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. The daily number of new cases doubles approximately every 5 days, according to the model. Hence, estimate on what day (value of t) the number of new cases will first be at least 100 000, according to the model. Show your working out.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6629,21 +7201,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q9-b-i", topicId: "maths-4-2", conceptId: "fill-table-values-given-values-each",
+    id: "maths-2023-ol-p1-q9-b-i", topicId: "maths-5-1", conceptId: "fill-table-values-given-values-each",
     section: "B", questionRef: "2023 OL Paper 1 Q9(b)(i), (ii)",
-    questionText: "Fill in the table below to show the values of D(t) for the given values of t. Give each value correct to the nearest whole number",
+    stem: "The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1·18^t, where D is the daily number of new cases and t is the time in days from t = 0 to t = 14.",
+    questionText: "(i) Fill in the table below to show the values of D(t) for the given values of t. Give each value correct to the nearest whole number. The table gives D(2) = 2924 and D(6) = 5669 and leaves t = 0, 1, 3, 4 and 5 to complete. (ii) Draw the graph of y = D(t) on the axes below, for 0 ≤ t ≤ 6 and t ∈ ℝ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10, 15, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
     { id: "maths-2023-ol-p1-q9-b-i-r1", kind: "anyN", verbatim: "1 to 4 elements correct", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10, three parts for 15. The full scale runs to 20. Note: 5669 3450 4071 4804. Note: Solution requires 13 elements, 5 values in table, 7 plots and an appropriate curve. Note: Award F* if 12 elements correct from the required 13. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":7,"options":["1 to 4 elements correct","5 to 9 elements correct","10 or 11 elements correct"],"perOptionSteps":[7,3,10]} },
     ],
+    mathematicsScale: {"code":"20D","marks":[0,7,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                24
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-b-i.png",
           "srcHash": "25c8b994375c9d4937db9ecf8baf20cf",
-          "alt": "The question as printed on the paper — The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1∙18^t where D is the daily number of new cases and t is the time in days from t = 0 to t = 14. Fill in the table… Full card prompt: Fill in the table below to show the values of D(t) for the given values of t. Give each value correct to the nearest whole number",
+          "alt": "The question as printed on the paper — The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1∙18^t where D is the daily number of new cases and t is the time in days from t = 0 to t = 14. Fill in the table… Full card prompt: The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1·18^t, where D is the daily number of new cases and t is the time in days from t = 0 to t = 14. (i) Fill in the table below to show the values of D(t) for the given values of t. Give each value correct to the nearest whole number. The table gives D(2) = 2924 and D(6) = 5669 and leaves t = 0, 1, 3, 4 and 5 to complete. (ii) Draw the graph of y = D(t) on the axes below, for 0 ≤ t ≤ 6 and t ∈ ℝ.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6659,21 +7245,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q9-b-iii", topicId: "maths-4-2", conceptId: "iii-measures-put-place-slow-down",
+    id: "maths-2023-ol-p1-q9-b-iii", topicId: "maths-3-2", conceptId: "iii-measures-put-place-slow-down",
     section: "B", questionRef: "2023 OL Paper 1 Q9(b)(iii)",
-    questionText: "(iii) Measures are put in place to slow down the spread of the disease. From t = 14 days onwards, the number of new daily cases starts to decrease",
+    stem: "The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1·18^t, where D is the daily number of new cases and t is the time in days from t = 0 to t = 14.",
+    questionText: "Measures are put in place to slow down the spread of the disease. From t = 14 days onwards, the number of new daily cases starts to decrease. For t ≥ 14, the daily number of new cases on day t can be modelled by: K(t) = a × 0·83^t. On t = 14 days, there are 21 309 cases, according to this model. Use this to work out the value of a. Give your answer in the form b × 10ⁿ, where 1 ≤ b < 10, n ∈ ℕ, and b is correct to 2 decimal places.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q9-b-iii-r1", kind: "anyN", verbatim: "Some correct substitution into 21 309 = a × 0 ∙83¹⁴", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Note: Early rounding of 0 ∙83¹⁴ to 0 ∙07 or 0 ∙1 is to be treated as an * (-1) and no further * applies if finishes to 3∙04 or 2 ∙13 in final step. Note: Apply F* if incorrect or no rounding in final step. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some correct substitution into 21 309 = a × 0 ∙83¹⁴","a = (21 309)/0∙83¹⁴"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                25
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q9-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-b-iii.png",
           "srcHash": "6993e41883ac543ee7929312f3ef4cf4",
-          "alt": "The question as printed on the paper — The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1∙18^t where D is the daily number of new cases and t is the time in days from t = 0 to t = 14. Fill in the table… Full card prompt: (iii) Measures are put in place to slow down the spread of the disease. From t = 14 days onwards, the number of new daily cases starts to decrease",
+          "alt": "The question as printed on the paper — The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1∙18^t where D is the daily number of new cases and t is the time in days from t = 0 to t = 14. Fill in the table… Full card prompt: The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1·18^t, where D is the daily number of new cases and t is the time in days from t = 0 to t = 14. Measures are put in place to slow down the spread of the disease. From t = 14 days onwards, the number of new daily cases starts to decrease. For t ≥ 14, the daily number of new cases on day t can be modelled by: K(t) = a × 0·83^t. On t = 14 days, there are 21 309 cases, according to this model. Use this to work out the value of a. Give your answer in the form b × 10ⁿ, where 1 ≤ b < 10, n ∈ ℕ, and b is correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6689,16 +7289,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q10-a-i", topicId: "maths-3-4", conceptId: "volume-cylinder-diameter-height-correct-nearest",
     section: "B", questionRef: "2023 OL Paper 1 Q10(a)(i)",
-    questionText: "Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. Give your answer correct to the nearest mm³",
+    questionText: "Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. Give your answer correct to the nearest mm³.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example cylinder formula or some correct substitution without formula\nWrites r = 9", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Note: Award F* for answer of 405 𝜋 with or without work. Note: Accept correct answer without supporting work. Note: Apply F* if incorrect or no rounding. Marked in order: Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Work of merit, for example cylinder formula or some correct substitution without formula\nWrites r = 9"]} },
     ],
+    mathematicsScale: {"code":"5B","marks":[0,3,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q10-a-i.png",
@@ -6719,21 +7332,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q10-a-ii", topicId: "maths-3-4", conceptId: "metal-ring-could-made-removing-cylinder",
     section: "B", questionRef: "2023 OL Paper 1 Q10(a)(ii)",
-    questionText: "A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm from the cylinder in part (a)(i)",
+    stem: "Part (a)(i) is a cylinder with a diameter of 18 mm and a height of 5 mm.",
+    questionText: "A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm from the cylinder in part (a)(i). Work out the volume of metal in this ring, correct to the nearest mm³.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q10-a-ii-r1", kind: "anyN", verbatim: "Work of merit for example, Answer carried down from part (i)\nWrites cylinder formula\nWrites r = 7 or r = 9 or 245 or 245π", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Note: Apply F* if incorrect or no rounding or 160π with work. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit for example, Answer carried down from part (i)\nWrites cylinder formula\nWrites r = 7 or r = 9 or 245 or 245π","𝜋× 9² × 5 −𝜋× 7² × 5 (or similar)"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q10-a-ii.png",
           "srcHash": "cc485ae67ffa6074c3c2fa755869a002",
-          "alt": "The question as printed on the paper — Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. Give your answer correct to the nearest mm³. 5 mm 18 mm A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm… Full card prompt: A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm from the cylinder in part (a)(i)",
+          "alt": "The question as printed on the paper — Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. Give your answer correct to the nearest mm³. 5 mm 18 mm A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm… Full card prompt: Part (a)(i) is a cylinder with a diameter of 18 mm and a height of 5 mm. A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm from the cylinder in part (a)(i). Work out the volume of metal in this ring, correct to the nearest mm³.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6749,16 +7376,31 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q10-b-i", topicId: "maths-3-3", conceptId: "one-particular-ring-weighs-grams-contains",
     section: "B", questionRef: "2023 OL Paper 1 Q10(b)(i), (ii)",
-    questionText: "One particular ring weighs 8 grams. It contains 3 grams of pure gold",
+    stem: "Many gold rings are made of a mixture of pure gold and other metals.",
+    questionText: "(i) One particular ring weighs 8 grams. It contains 3 grams of pure gold. Work out the percentage of the weight of this ring that is pure gold. (ii) Pink gold is made up of pure gold, copper, and silver. The ratio of the weight of pure gold to copper to silver is 15 : 4 : 1, respectively. Work out the number of grams of pure gold in a pink gold ring that weighs 25 grams.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q10-b-i-r1", kind: "anyN", verbatim: "Work of merit in (i) or (ii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Note: Accept correct answers without supporting work. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in (i) or (ii)","Work of merit in (i) and (ii)\nOne part correct","One part correct and work of merit in the other"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[25],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                26,
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q10-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q10-b-i.png",
@@ -6779,16 +7421,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q10-b-iii", topicId: "maths-3-1", conceptId: "iii-rose-gold-made-pure-gold",
     section: "B", questionRef: "2023 OL Paper 1 Q10(b)(iii)",
-    questionText: "(iii) Rose gold is made up of 75% pure gold, 22∙25% copper, and 2∙75% silver. Express the ratio of pure gold : copper : silver in rose gold in the ratio a∶b∶c, in its simplest form, where a, b, c∈ℕ",
+    stem: "Many gold rings are made of a mixture of pure gold and other metals.",
+    questionText: "Rose gold is made up of 75% pure gold, 22·25% copper, and 2·75% silver. Express the ratio of pure gold : copper : silver in rose gold in the ratio a : b : c, in its simplest form, where a, b, c ∈ ℕ.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q10-b-iii-r1", kind: "anyN", verbatim: "Work of merit for example, ratios set up (even with the % symbols in)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit for example, ratios set up (even with the % symbols in)","7500: 2225: 275\nAny 3 natural numbers in the correct ratio, but not simplified"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                27
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q10-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q10-b-iii.png",
@@ -6809,21 +7465,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q10-c-i", topicId: "maths-3-3", conceptId: "work-out-cost-per-year-insuring",
     section: "B", questionRef: "2023 OL Paper 1 Q10(c)(i)",
-    questionText: "Work out the cost per year of insuring a ring valued at €1800",
+    stem: "The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000.",
+    questionText: "Work out the cost per year of insuring a ring valued at €1800.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q10-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example writes €10 or €16 or ∙01 or ∙02\nWrites 800", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example writes €10 or €16 or ∙01 or ∙02\nWrites 800","1000 × 0 ∙01 + (800 × 0 ∙02)"],"perOptionSteps":[3,2]} },
     ],
+    mathematicsScale: {"code":"5C","marks":[0,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q10-c-i.png",
           "srcHash": "195dd2aad01e895564057a0168e32886",
-          "alt": "The question as printed on the paper — The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r∈ℝ, r > 0. Value Rate per year First €1000 1% of the value 2% of the… Full card prompt: Work out the cost per year of insuring a ring valued at €1800",
+          "alt": "The question as printed on the paper — The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r∈ℝ, r > 0. Value Rate per year First €1000 1% of the value 2% of the… Full card prompt: The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000. Work out the cost per year of insuring a ring valued at €1800.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6839,21 +7509,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q10-c-ii", topicId: "maths-3-3", conceptId: "cost-insuring-particular-necklace-142-per",
     section: "B", questionRef: "2023 OL Paper 1 Q10(c)(ii)",
-    questionText: "The cost of insuring a particular necklace is €142∙80 per year. Work out the value of this necklace",
+    stem: "The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000.",
+    questionText: "The cost of insuring a particular necklace is €142·80 per year. Work out the value of this necklace.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q10-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example writes €10 or 132 ∙8 or ∙01 or ∙02", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example writes €10 or 132 ∙8 or ∙01 or ∙02","Writes 6640"],"perOptionSteps":[4,6]} },
     ],
+    mathematicsScale: {"code":"10C","marks":[0,4,6,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q10-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q10-c-ii.png",
           "srcHash": "97745febce79e0f0652a8aca22458b73",
-          "alt": "The question as printed on the paper — The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r∈ℝ, r > 0. Value Rate per year First €1000 1% of the value 2% of the… Full card prompt: The cost of insuring a particular necklace is €142∙80 per year. Work out the value of this necklace",
+          "alt": "The question as printed on the paper — The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r∈ℝ, r > 0. Value Rate per year First €1000 1% of the value 2% of the… Full card prompt: The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000. The cost of insuring a particular necklace is €142·80 per year. Work out the value of this necklace.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6869,21 +7553,36 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
     year: 2023, level: "ordinary",
     paperFileid: "LC003GLP100EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q10-c-iii", topicId: "maths-3-3", conceptId: "iii-brooch-valued-500-cost-per",
     section: "B", questionRef: "2023 OL Paper 1 Q10(c)(iii)",
-    questionText: "(iii) A brooch is valued at €17 500. The cost per year of insuring the brooch is €435",
+    stem: "The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000.",
+    questionText: "A brooch is valued at €17 500. The cost per year of insuring the brooch is €435. Work out r, the rate of the insurance charged on the amount of the value of the brooch which is in excess of €10 000. Give your answer as a percentage, correct to 1 decimal place.",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q10-c-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes €10 or €180 or ∙01 or ∙02\n7500 written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Note: Apply F* if incorrect or no rounding. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, writes €10 or €180 or ∙01 or ∙02\n7500 written","Finds €190 (with work)","Finds €245"],"perOptionSteps":[4,2,4]} },
     ],
+    mathematicsScale: {"code":"10D","marks":[0,4,6,8,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                28,
+                29
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q10-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q10-c-iii.png",
           "srcHash": "d043145117ffd87d2d81e616fb618edf",
-          "alt": "The question as printed on the paper — The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r∈ℝ, r > 0. Value Rate per year First €1000 1% of the value 2% of the… Full card prompt: (iii) A brooch is valued at €17 500. The cost per year of insuring the brooch is €435",
+          "alt": "The question as printed on the paper — The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r∈ℝ, r > 0. Value Rate per year First €1000 1% of the value 2% of the… Full card prompt: The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000. A brooch is valued at €17 500. The cost per year of insuring the brooch is €435. Work out r, the rate of the insurance charged on the amount of the value of the brooch which is in excess of €10 000. Give your answer as a percentage, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -18012,6 +18711,37 @@ export const CARDS: SecCard[] = [
           ],
           "sourceFileid": "LC003GLP200EV.pdf",
           "attribution": "SEC Mathematics 2026 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-11"},
+    year: 2023, level: "ordinary",
+    paperFileid: "LC003GLP100EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-q3-b", topicId: "maths-4-3", conceptId: "p1-q3-b",
+    section: "A", questionRef: "2023 OL Paper 1 Q3(b)(i)–(iii)",
+    questionText: "Graph each of the following inequalities on the given number line (−4 to 4). Note that x comes from a different set of numbers in each case. (i) x ≤ 2·8, where x ∈ ℝ. (ii) x ≤ 2·8, where x ∈ ℤ. (iii) x ≤ 2·8, where x ∈ ℕ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-q3-b-solution-1", kind: "point", verbatim: "Work of merit, for example, shows knowledge of ℝ, ℤ, or ℕ.", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q3-b-solution-2", kind: "point", verbatim: "One of the three inequalities graphed correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q3-b-solution-3", kind: "point", verbatim: "Work of merit in 2 or 3 inequalities", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q3-b-solution-4", kind: "point", verbatim: "Two of the inequalities graphed correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q3-b-solution-5", kind: "point", verbatim: "Note: Accept 0 in (iii)", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    { id: "maths-2023-ol-p1-q3-b-solution-6", kind: "point", verbatim: "Note: Apply a * the first time ≥ is used instead of ≤; accept it thereafter", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[11],"generalNotesPages":[4,5]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP100EV.pdf",
+          "attribution": "SEC Mathematics 2023 Ordinary Level examination paper — © State Examinations Commission.",
           "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
     },
   } as SecCard,

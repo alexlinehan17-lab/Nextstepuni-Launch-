@@ -30,6 +30,7 @@ import higher2023p1 from '../scripts/markbank/mathematics/reviews/2023-higher-p1
 import higher2023p2 from '../scripts/markbank/mathematics/reviews/2023-higher-p2.json';
 import ordinary2024p1 from '../scripts/markbank/mathematics/reviews/2024-ordinary-p1.json';
 import ordinary2024p2 from '../scripts/markbank/mathematics/reviews/2024-ordinary-p2.json';
+import ordinary2023p1 from '../scripts/markbank/mathematics/reviews/2023-ordinary-p1.json';
 import higher2026p1 from '../scripts/markbank/mathematics/reviews/2026-higher-p1.json';
 import higher2026p2 from '../scripts/markbank/mathematics/reviews/2026-higher-p2.json';
 import ordinary2026p1 from '../scripts/markbank/mathematics/reviews/2026-ordinary-p1.json';
@@ -779,6 +780,41 @@ describe('2023 Higher Mathematics Paper 2 independent source review', () => {
       expect(examTopicIdsForQuestion('mathematics', 'higher', 2023, 'main', question, 'p2', 'ev', higher2023p2.paperFileid), card.id)
         .toEqual(expect.arrayContaining(task.examTopicIds));
       expect(card.rows.map(row => row.verbatim).join(' '), card.id).not.toContain('Mathematics – Higher Level');
+    }
+  });
+});
+
+describe.each([
+  { number: 1, count: 48, review: ordinary2023p1 },
+])('2023 Ordinary Mathematics Paper $number independent source review', ({ number, count, review: census }) => {
+  const cards = ORDINARY.filter(card => card.year === 2023 && card.questionRef.includes(`Paper ${number}`));
+
+  it('retains every published unit and all 380 offered marks', () => {
+    expect(cards.map(card => card.id).sort()).toEqual(census.cards.map(card => card.id).sort());
+    expect(cards).toHaveLength(count);
+    expect(cards.reduce((total, card) => total + card.totalMarks, 0)).toBe(380);
+    for (const [question, marks] of Object.entries(census.printedQuestionMarks)) {
+      expect(cards.filter(card => new RegExp(`Q${question}\\(`).test(card.questionRef))
+        .reduce((total, card) => total + card.totalMarks, 0), `Q${question}`).toBe(marks);
+    }
+  });
+
+  it('restores prompts and files every task in both taxonomies without page furniture', () => {
+    const specification = resolveCurriculumSpecification('mathematics', 2023)!;
+    for (const task of census.cards) {
+      const card = cards.find(candidate => candidate.id === task.id)!;
+      expect(card.stem ?? '', card.id).toBe((task as { stem?: string }).stem ?? '');
+      expect(card.questionText, card.id).toBe(task.questionText);
+      expect(card.sourceMaterial?.pages, card.id).toEqual(task.sourcePages);
+      expect('mathematicsScale' in card && card.mathematicsScale?.marks, card.id).toEqual(task.permittedMarks);
+      expect(card.topicId, card.id).toBe(task.topicId);
+      expect(findCanonicalTopic(specification, card.topicId), card.id).toBeDefined();
+      const question = task.printedParts[0].match(/^Q(\d+)/)![1];
+      expect(examTopicIdsForQuestion('mathematics', 'ordinary', 2023, 'main', question, `p${number}`, 'ev', census.paperFileid), card.id)
+        .toEqual(expect.arrayContaining(task.examTopicIds));
+      for (const row of card.rows) {
+        expect((row.group?.options ?? [row.verbatim]).join(' '), card.id).not.toMatch(/Ordinary Level|Full Credit \(-1\)/);
+      }
     }
   });
 });

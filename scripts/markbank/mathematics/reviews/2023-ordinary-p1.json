@@ -1,0 +1,1411 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mathematics",
+  "year": 2023,
+  "level": "ordinary",
+  "lang": "ev",
+  "paperKey": "p1",
+  "paperFileid": "LC003GLP100EV.pdf",
+  "schemeFileid": "LC003GLP000EV.pdf",
+  "specificationId": "mathematics:2015",
+  "paperSha256": "26642151d3386f62adf452b67b2560e260074f177626db4577af383772762cfc",
+  "schemeSha256": "f002a1a1573c51aa6c33a551b33c93eaa654ae9d4b764fd942a131ed7fc8a9ca",
+  "reviewedAt": "2026-10-11",
+  "reviewMethod": "Independent visual reading of all 32 question-paper pages and PDF pages 1–27 of the combined Ordinary Level scheme (cover, notes, the Paper 1 scale table on page 4, the slips note and summary of allocations on page 5, annotation palette, every Paper 1 model solution and marking note, and the Paper 2 title page). Each task boundary is the published scale, cross-checked against the printed summary.",
+  "paperPagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "schemePagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "printedQuestionMarks": {
+    "1": 30,
+    "2": 30,
+    "3": 30,
+    "4": 30,
+    "5": 30,
+    "6": 30,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50
+  },
+  "fullCreditMinusOne": true,
+  "generalNotesPages": [
+    4,
+    5
+  ],
+  "sourceNotes": [
+    "Candidates answer any five of Q1–6 (30 marks each) and any three of Q7–10 (50 marks each): 380 offered marks, 300 candidate marks. Every question is retained.",
+    "48 independently marked units, matching the printed summary of allocations on scheme page 5.",
+    "Paper 1 bands from scheme page 4: 5B 0,3,5; 5C 0,3,4,5; 5D 0,2,3,4,5; 10B 0,7,10; 10C 0,4,6,10; 10D 0,4,6,8,10; 15C 0,6,10,15; 20D 0,7,10,15,20.",
+    "Before this review the deck held 47 of the 48 units and shipped 46. Q3(b)(i)–(iii) (graphing the same inequality over ℝ, ℤ and ℕ, one 5D scale) is added. Q2(a)(iv), refused by the provenance gate over garbled credit text, now ships with quoted notes. Q8(e) carried a garbled stacked fraction and Q8(f) shipped its model-solution lines plus the scheme page header as marking points; their rows are re-quoted from the printed scheme. All existing IDs are kept; prompts are restored from the paper and topics corrected as metadata.",
+    "The question booklet is LC003GLP100EV.pdf; its indexed scheme LC003GLP000EV.pdf is shared with Paper 2. All page references are PDF positions. The paper prints “the derivative of t” in Q7(b)(ii); the prompt keeps the printed wording."
+  ],
+  "cards": [
+    {
+      "id": "maths-2023-ol-p1-q1-a",
+      "printedParts": [
+        "Q1(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The prices of houses in a particular area have been increasing over a number of years.",
+      "questionText": "A house is valued at €240 000 at the start of 2019. By the start of 2020, the price of the house has increased by 8%. By the start of 2021, the price of the house has increased by a further 9%, based on the 2020 price. Work out the price of the house at the start of 2020, and the price at the start of 2021."
+    },
+    {
+      "id": "maths-2023-ol-p1-q1-b",
+      "printedParts": [
+        "Q1(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        7
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        4
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The prices of houses in a particular area have been increasing over a number of years.",
+      "questionText": "Another house was valued at €460 000. One year later, the value of this house had gone up to €472 000. Work out the percentage increase in the value of this house over the year. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2023-ol-p1-q1-c",
+      "printedParts": [
+        "Q1(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        8
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        5
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The prices of houses in a particular area have been increasing over a number of years.",
+      "questionText": "A third house was valued at €265 000. Over the following 4 years, the value of the house increased by r% each year compared to the previous year, where r ∈ ℝ. After 4 years, the house was valued at €370 000. Work out the value of r, by setting F = 370 000, P = 265 000, and t = 4 in this equation: F = P(1 + r/100)^t. Give your answer correct to 1 decimal place."
+    },
+    {
+      "id": "maths-2023-ol-p1-q2-a-i",
+      "printedParts": [
+        "Q2(a)(i)",
+        "Q2(a)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = 5 + i and z₃ = 6 − 2i.",
+      "questionText": "(i) Plot and label z̅₁, the complex conjugate of z₁, on the diagram above. (ii) Plot and label z₂ and z₃ on the diagram above."
+    },
+    {
+      "id": "maths-2023-ol-p1-q2-a-iii",
+      "printedParts": [
+        "Q2(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        9
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        6
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = 5 + i and z₃ = 6 − 2i.",
+      "questionText": "Write 4z₂ − 5z₃ in the form a + bi, where a, b ∈ ℤ."
+    },
+    {
+      "id": "maths-2023-ol-p1-q2-a-iv",
+      "printedParts": [
+        "Q2(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = 5 + i and z₃ = 6 − 2i.",
+      "questionText": "Work out the value of |z₃|. Give your answer in surd form."
+    },
+    {
+      "id": "maths-2023-ol-p1-q2-b",
+      "printedParts": [
+        "Q2(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        10
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        7
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-complex-numbers"
+      ],
+      "stem": "In this question, i² = −1.",
+      "questionText": "The complex numbers z₄, z₅, z₆, and z₇ are shown on the Argand diagram below. The diagram is to scale. Tick one box to indicate which of z₄, z₅, z₆, or z₇ has the largest modulus. Give a reason for your answer."
+    },
+    {
+      "id": "maths-2023-ol-p1-q3-a",
+      "printedParts": [
+        "Q3(a)"
+      ],
+      "totalMarks": 15,
+      "scale": "15C",
+      "permittedMarks": [
+        0,
+        6,
+        10,
+        15
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the following equation in x ∈ ℝ: 3(2x + 4) − 5 = 3"
+    },
+    {
+      "id": "maths-2023-ol-p1-q3-b",
+      "printedParts": [
+        "Q3(b)(i)",
+        "Q3(b)(ii)",
+        "Q3(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        11
+      ],
+      "topicId": "maths-4-3",
+      "sourcePages": [
+        8
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "questionText": "Graph each of the following inequalities on the given number line (−4 to 4). Note that x comes from a different set of numbers in each case. (i) x ≤ 2·8, where x ∈ ℝ. (ii) x ≤ 2·8, where x ∈ ℤ. (iii) x ≤ 2·8, where x ∈ ℕ."
+    },
+    {
+      "id": "maths-2023-ol-p1-q3-c",
+      "printedParts": [
+        "Q3(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        12
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        9
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Use algebra to solve the following simultaneous equations: x − y + 1 = 0; 2x + 4y = 19"
+    },
+    {
+      "id": "maths-2023-ol-p1-q4-a-i",
+      "printedParts": [
+        "Q4(a)(i)",
+        "Q4(a)(ii)",
+        "Q4(a)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x ∈ ℝ. Use the graph to answer parts (a)(i) to (a)(iv).",
+      "questionText": "(i) Estimate the value of g(1·5). Show your work on the graph. (ii) Estimate the value of x for which g(x) = −6. Show your work on the graph. (iii) Tick one box to show how many real roots the function g(x) has in this domain (0, 1, 2 or 3). Give a reason for your answer."
+    },
+    {
+      "id": "maths-2023-ol-p1-q4-a-iv",
+      "printedParts": [
+        "Q4(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        13
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x ∈ ℝ. Use the graph to answer parts (a)(i) to (a)(iv).",
+      "questionText": "From the graph, estimate the co-ordinates of the local maximum point and the local minimum point of g(x), as accurately as possible."
+    },
+    {
+      "id": "maths-2023-ol-p1-q4-b-i",
+      "printedParts": [
+        "Q4(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "A different function, h(x), has the following equation: h(x) = x³ + 2x² − x − 8",
+      "questionText": "Find h′(x), the derivative of h(x)."
+    },
+    {
+      "id": "maths-2023-ol-p1-q4-b-ii",
+      "printedParts": [
+        "Q4(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        14
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        11
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation",
+        "mathematics-ordinary-co-ordinate-geometry-of-the-line"
+      ],
+      "stem": "A different function, h(x), has the following equation: h(x) = x³ + 2x² − x − 8",
+      "questionText": "Find the equation of the tangent to h(x) at the point (2, 6)."
+    },
+    {
+      "id": "maths-2023-ol-p1-q5-a-i",
+      "printedParts": [
+        "Q5(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "A company is repairing a railway line. As part of this work, it is laying new railway tracks.",
+      "questionText": "It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at the same rate."
+    },
+    {
+      "id": "maths-2023-ol-p1-q5-a-ii",
+      "printedParts": [
+        "Q5(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        12
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "A company is repairing a railway line. As part of this work, it is laying new railway tracks.",
+      "questionText": "It would take 6 people 8 days to replace the tracks on a different part of the railway line. Work out how long it would take 4 people to replace these tracks, each working at the same speed."
+    },
+    {
+      "id": "maths-2023-ol-p1-q5-b-i",
+      "printedParts": [
+        "Q5(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        7,
+        10
+      ],
+      "schemePages": [
+        15
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Two towns, A and B, are 120 km apart. A train travels from A to B at an average speed of 180 km/hour.",
+      "questionText": "Work out the time it takes the train to get from A to B. Give your answer in hours, as a fraction."
+    },
+    {
+      "id": "maths-2023-ol-p1-q5-b-ii",
+      "printedParts": [
+        "Q5(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5D",
+      "permittedMarks": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        16
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        13
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Two towns, A and B, are 120 km apart. A train travels from A to B at an average speed of 180 km/hour.",
+      "questionText": "On the way back from B to A, the train travels at an average speed of 220 km/hour. Work out the average speed of the train for the entire journey, while it is travelling from A to B and back again. Give your answer in km/hour. Hint: first work out the total time taken for the entire journey."
+    },
+    {
+      "id": "maths-2023-ol-p1-q6-a-i",
+      "printedParts": [
+        "Q6(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "g(x) is the following function in x ∈ ℝ: g(x) = x² + 8x − 6",
+      "questionText": "Find the value of g(−5)."
+    },
+    {
+      "id": "maths-2023-ol-p1-q6-a-ii",
+      "printedParts": [
+        "Q6(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "g(x) is the following function in x ∈ ℝ: g(x) = x² + 8x − 6",
+      "questionText": "Use calculus to find the value of x which gives the minimum value of g(x)."
+    },
+    {
+      "id": "maths-2023-ol-p1-q6-b",
+      "printedParts": [
+        "Q6(b)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        17
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        14
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "questionText": "Expand and simplify (2x − 4)² − 6."
+    },
+    {
+      "id": "maths-2023-ol-p1-q6-c",
+      "printedParts": [
+        "Q6(c)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        18
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        15
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations"
+      ],
+      "questionText": "Solve the following equation in x: 9x² + 6x − 5 = 0. Give each answer correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2023-ol-p1-q7-a-i",
+      "printedParts": [
+        "Q7(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        7,
+        10
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil.",
+      "questionText": "Find the value of C when S = 15."
+    },
+    {
+      "id": "maths-2023-ol-p1-q7-a-ii",
+      "printedParts": [
+        "Q7(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        16
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil.",
+      "questionText": "When S increases, does C increase or decrease? Justify your answer, using the equation C = 1000/(S + 10)."
+    },
+    {
+      "id": "maths-2023-ol-p1-q7-a-iii",
+      "printedParts": [
+        "Q7(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        19
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra"
+      ],
+      "stem": "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil.",
+      "questionText": "Rearrange the equation to write S in terms of C."
+    },
+    {
+      "id": "maths-2023-ol-p1-q7-a-iv",
+      "printedParts": [
+        "Q7(a)(iv)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-4-2",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-algebra-equations",
+        "mathematics-ordinary-functions"
+      ],
+      "stem": "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil.",
+      "questionText": "The values for C go from 30 to 100. Use your answer from part (a)(iii), or otherwise, to find the range of values of S."
+    },
+    {
+      "id": "maths-2023-ol-p1-q7-b-i",
+      "printedParts": [
+        "Q7(b)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions",
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ.",
+      "questionText": "Write down the probability that it is raining at the start and the end of the day, that is, find the value of P(0) and P(24)."
+    },
+    {
+      "id": "maths-2023-ol-p1-q7-b-ii",
+      "printedParts": [
+        "Q7(b)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-2",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-differentiation"
+      ],
+      "stem": "Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ.",
+      "questionText": "Find the value of P′(t), the derivative of t, and explain what the value of P′(t) means in this context."
+    },
+    {
+      "id": "maths-2023-ol-p1-q7-b-iii",
+      "printedParts": [
+        "Q7(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        20
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        18
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-functions",
+        "mathematics-ordinary-probability"
+      ],
+      "stem": "Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ.",
+      "questionText": "At a certain time, the probability that it is raining, according to this model, is 0·35. Work out the probability that it is raining exactly 1 hour later, according to this model."
+    },
+    {
+      "id": "maths-2023-ol-p1-q8-a",
+      "printedParts": [
+        "Q8(a)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        7,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale).",
+      "questionText": "Find the area of the whole garden (that is, the total area of the rectangle)."
+    },
+    {
+      "id": "maths-2023-ol-p1-q8-b",
+      "printedParts": [
+        "Q8(b)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale).",
+      "questionText": "The width of the pond is measured at intervals of 3 metres, starting at the right-hand edge of the pond. These measurements are given on the diagram, correct to the nearest metre (2, 8, 10, 12, 14, 10 m and 0 at the left-hand point). Use the Trapezoidal Rule (and the measurements in the diagram above) to work out an estimate for the area of the pond."
+    },
+    {
+      "id": "maths-2023-ol-p1-q8-c",
+      "printedParts": [
+        "Q8(c)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        19,
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale).",
+      "questionText": "Suggest a way by which the Trapezoidal Rule could be used (with different measurements) to get a potentially more accurate estimate of the area of the pond."
+    },
+    {
+      "id": "maths-2023-ol-p1-q8-d",
+      "printedParts": [
+        "Q8(d)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        21
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        20
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume",
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale).",
+      "questionText": "Apart from the pond, the rest of the rectangular garden is covered in grass. The actual area of the pond is 172 m². All of the grass in the garden needs to be resown. The cost is €2·55 per square metre that needs to be resown. Work out the cost of resowing the grass. Give your answer correct to the nearest ten euro."
+    },
+    {
+      "id": "maths-2023-ol-p1-q8-e",
+      "printedParts": [
+        "Q8(e)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "questionText": "Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16·9%. Work out the cost of the materials before the Import Duty was added. Give your answer correct to the nearest penny (that is, to 2 decimal places)."
+    },
+    {
+      "id": "maths-2023-ol-p1-q8-f",
+      "printedParts": [
+        "Q8(f)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        22
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        21
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840.",
+      "questionText": "The gardener paid the £840 in euro. The exchange rate was €1 = £0·8547. He also paid a fee of 2·5% of the £840 as a commission. Work out how much he paid in total, in euro, correct to the nearest cent."
+    },
+    {
+      "id": "maths-2023-ol-p1-q9-a-i",
+      "printedParts": [
+        "Q9(a)(i)"
+      ],
+      "totalMarks": 10,
+      "scale": "10B",
+      "permittedMarks": [
+        0,
+        7,
+        10
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time.",
+      "questionText": "From the diagram, estimate the number of actual new cases there were on day t = 12, using the relevant dot."
+    },
+    {
+      "id": "maths-2023-ol-p1-q9-a-ii",
+      "printedParts": [
+        "Q9(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        22
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time.",
+      "questionText": "According to the model (the curve), there were 1000 new cases on day t = 12. Work out the percentage error in the model’s value for day t = 12. Use your answer to part (a)(i) above as the actual value for day t = 12. Give your answer correct to the nearest percent."
+    },
+    {
+      "id": "maths-2023-ol-p1-q9-a-iii",
+      "printedParts": [
+        "Q9(a)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time.",
+      "questionText": "Show that it takes approximately 5 days for the daily number of new cases to double, according to the model (that is, according to the curve in the diagram)."
+    },
+    {
+      "id": "maths-2023-ol-p1-q9-a-iv",
+      "printedParts": [
+        "Q9(a)(iv)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        23
+      ],
+      "topicId": "maths-4-1",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-sequences-series",
+        "mathematics-ordinary-graphing-functions"
+      ],
+      "stem": "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. The daily number of new cases doubles approximately every 5 days, according to the model.",
+      "questionText": "Hence, estimate on what day (value of t) the number of new cases will first be at least 100 000, according to the model. Show your working out."
+    },
+    {
+      "id": "maths-2023-ol-p1-q9-b-i",
+      "printedParts": [
+        "Q9(b)(i)",
+        "Q9(b)(ii)"
+      ],
+      "totalMarks": 20,
+      "scale": "20D",
+      "permittedMarks": [
+        0,
+        7,
+        10,
+        15,
+        20
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-5-1",
+      "sourcePages": [
+        24
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-graphing-functions",
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1·18^t, where D is the daily number of new cases and t is the time in days from t = 0 to t = 14.",
+      "questionText": "(i) Fill in the table below to show the values of D(t) for the given values of t. Give each value correct to the nearest whole number. The table gives D(2) = 2924 and D(6) = 5669 and leaves t = 0, 1, 3, 4 and 5 to complete. (ii) Draw the graph of y = D(t) on the axes below, for 0 ≤ t ≤ 6 and t ∈ ℝ."
+    },
+    {
+      "id": "maths-2023-ol-p1-q9-b-iii",
+      "printedParts": [
+        "Q9(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        24
+      ],
+      "topicId": "maths-3-2",
+      "sourcePages": [
+        25
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-indices"
+      ],
+      "stem": "The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1·18^t, where D is the daily number of new cases and t is the time in days from t = 0 to t = 14.",
+      "questionText": "Measures are put in place to slow down the spread of the disease. From t = 14 days onwards, the number of new daily cases starts to decrease. For t ≥ 14, the daily number of new cases on day t can be modelled by: K(t) = a × 0·83^t. On t = 14 days, there are 21 309 cases, according to this model. Use this to work out the value of a. Give your answer in the form b × 10ⁿ, where 1 ≤ b < 10, n ∈ ℕ, and b is correct to 2 decimal places."
+    },
+    {
+      "id": "maths-2023-ol-p1-q10-a-i",
+      "printedParts": [
+        "Q10(a)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5B",
+      "permittedMarks": [
+        0,
+        3,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "questionText": "Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. Give your answer correct to the nearest mm³."
+    },
+    {
+      "id": "maths-2023-ol-p1-q10-a-ii",
+      "printedParts": [
+        "Q10(a)(ii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-3-4",
+      "sourcePages": [
+        26
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-area-volume"
+      ],
+      "stem": "Part (a)(i) is a cylinder with a diameter of 18 mm and a height of 5 mm.",
+      "questionText": "A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm from the cylinder in part (a)(i). Work out the volume of metal in this ring, correct to the nearest mm³."
+    },
+    {
+      "id": "maths-2023-ol-p1-q10-b-i",
+      "printedParts": [
+        "Q10(b)(i)",
+        "Q10(b)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        25
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Many gold rings are made of a mixture of pure gold and other metals.",
+      "questionText": "(i) One particular ring weighs 8 grams. It contains 3 grams of pure gold. Work out the percentage of the weight of this ring that is pure gold. (ii) Pink gold is made up of pure gold, copper, and silver. The ratio of the weight of pure gold to copper to silver is 15 : 4 : 1, respectively. Work out the number of grams of pure gold in a pink gold ring that weighs 25 grams."
+    },
+    {
+      "id": "maths-2023-ol-p1-q10-b-iii",
+      "printedParts": [
+        "Q10(b)(iii)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-1",
+      "sourcePages": [
+        27
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-number-systems"
+      ],
+      "stem": "Many gold rings are made of a mixture of pure gold and other metals.",
+      "questionText": "Rose gold is made up of 75% pure gold, 22·25% copper, and 2·75% silver. Express the ratio of pure gold : copper : silver in rose gold in the ratio a : b : c, in its simplest form, where a, b, c ∈ ℕ."
+    },
+    {
+      "id": "maths-2023-ol-p1-q10-c-i",
+      "printedParts": [
+        "Q10(c)(i)"
+      ],
+      "totalMarks": 5,
+      "scale": "5C",
+      "permittedMarks": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000.",
+      "questionText": "Work out the cost per year of insuring a ring valued at €1800."
+    },
+    {
+      "id": "maths-2023-ol-p1-q10-c-ii",
+      "printedParts": [
+        "Q10(c)(ii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10C",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        28
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000.",
+      "questionText": "The cost of insuring a particular necklace is €142·80 per year. Work out the value of this necklace."
+    },
+    {
+      "id": "maths-2023-ol-p1-q10-c-iii",
+      "printedParts": [
+        "Q10(c)(iii)"
+      ],
+      "totalMarks": 10,
+      "scale": "10D",
+      "permittedMarks": [
+        0,
+        4,
+        6,
+        8,
+        10
+      ],
+      "schemePages": [
+        26
+      ],
+      "topicId": "maths-3-3",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "examTopicIds": [
+        "mathematics-ordinary-financial-maths"
+      ],
+      "stem": "The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000.",
+      "questionText": "A brooch is valued at €17 500. The cost per year of insuring the brooch is €435. Work out r, the rate of the insurance charged on the amount of the value of the brooch which is in excess of €10 000. Give your answer as a percentage, correct to 1 decimal place."
+    }
+  ],
+  "selectionReview": [
+    {
+      "pages": [
+        3,
+        4,
+        16
+      ],
+      "wording": "any five / any three questions",
+      "classification": "exam-level-selection",
+      "reason": "Candidates select independently marked questions; every question is retained."
+    },
+    {
+      "pages": [
+        17
+      ],
+      "wording": "or otherwise",
+      "classification": "method-choice",
+      "reason": "Alternative solution methods for the same marked task; no printed pool of prompts."
+    },
+    {
+      "pages": [
+        7,
+        10
+      ],
+      "wording": "Tick one box",
+      "classification": "answer-selection",
+      "reason": "The number with the largest modulus and the number of real roots are answers with justification, not alternative prompts."
+    }
+  ],
+  "selectionDecisions": {
+    "3:8e58f60456ec7ed4": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "3:991950edb18a685a": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "4:31e06bce7ed677c8": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "16:64731b166ca45bc1": {
+      "classification": "exam-level-selection",
+      "reason": "Select separately marked questions for the examination; every question is retained for practice."
+    },
+    "17:41aed7008dcbf485": {
+      "classification": "method-choice",
+      "reason": "Alternative solving methods for the same marked task, with no printed pool of prompts."
+    }
+  }
+}

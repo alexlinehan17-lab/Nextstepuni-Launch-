@@ -19715,7 +19715,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q1(a)",
-  "questionText": "A house is valued at €240 000 at the start of 2019",
+  "questionText": "A house is valued at €240 000 at the start of 2019. By the start of 2020, the price of the house has increased by 8%. By the start of 2021, the price of the house has increased by a further 9%, based on the 2020 price. Work out the price of the house at the start of 2020, and the price at the start of 2021.",
   "figureKey": "maths-2023-OL-paper-p006-i0",
   "labelKey": [],
   "tariffModel": {
@@ -19748,8 +19748,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q1-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q1-a",
+  "stem": "The prices of houses in a particular area have been increasing over a number of years."
  },
  {
   "id": "maths-2023-ol-p1-q1-b",
@@ -19760,7 +19761,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q1(b)",
-  "questionText": "Another house was valued at €460 000. One year later, the value of this house had gone up to €472 000",
+  "questionText": "Another house was valued at €460 000. One year later, the value of this house had gone up to €472 000. Work out the percentage increase in the value of this house over the year. Give your answer correct to 1 decimal place.",
   "figureKey": "maths-2023-OL-paper-p006-i1",
   "labelKey": [],
   "tariffModel": {
@@ -19793,8 +19794,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q1-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q1-b",
+  "stem": "The prices of houses in a particular area have been increasing over a number of years."
  },
  {
   "id": "maths-2023-ol-p1-q1-c",
@@ -19805,7 +19807,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q1(c)",
-  "questionText": "A third house was valued at €265 000",
+  "questionText": "A third house was valued at €265 000. Over the following 4 years, the value of the house increased by r% each year compared to the previous year, where r ∈ ℝ. After 4 years, the house was valued at €370 000. Work out the value of r, by setting F = 370 000, P = 265 000, and t = 4 in this equation: F = P(1 + r/100)^t. Give your answer correct to 1 decimal place.",
   "figureKey": "maths-2023-OL-paper-p007-i0",
   "labelKey": [],
   "tariffModel": {
@@ -19838,8 +19840,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q1-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q1-c",
+  "stem": "The prices of houses in a particular area have been increasing over a number of years."
  },
  {
   "id": "maths-2023-ol-p1-q2-a-i",
@@ -19850,7 +19853,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q2(a)(i), (ii)",
-  "questionText": "Plot and label z₁̅ , the complex conjugate of z₁ , on the diagram above",
+  "questionText": "(i) Plot and label z̅₁, the complex conjugate of z₁, on the diagram above. (ii) Plot and label z₂ and z₃ on the diagram above.",
   "figureKey": "maths-2023-OL-paper-p008-i0",
   "labelKey": [],
   "tariffModel": {
@@ -19885,8 +19888,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q2-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q2-a-i",
+  "stem": "In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = 5 + i and z₃ = 6 − 2i."
  },
  {
   "id": "maths-2023-ol-p1-q2-a-iii",
@@ -19897,7 +19901,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q2(a)(iii)",
-  "questionText": "(iii) Write 4z₂−5z₃ in the form a + bi, where a, b∈ℤ",
+  "questionText": "Write 4z₂ − 5z₃ in the form a + bi, where a, b ∈ ℤ.",
   "figureKey": "maths-2023-OL-paper-p008-i1",
   "labelKey": [],
   "tariffModel": {
@@ -19930,8 +19934,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q2-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q2-a-iii",
+  "stem": "In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = 5 + i and z₃ = 6 − 2i."
  },
  {
   "id": "maths-2023-ol-p1-q2-a-iv",
@@ -19942,36 +19947,39 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q2(a)(iv)",
-  "questionText": "(iv) Work out the value of |z₃|. Give your answer in surd form",
+  "questionText": "Work out the value of |z₃|. Give your answer in surd form.",
   "figureKey": "maths-2023-OL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 4, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2023-ol-p1-q2-a-iv-r1",
-    "kind": "anyN",
-    "verbatim": "Writes Writes (6² or (−2)²)/(√a² + b²)\nHigh (Partial Credit)/(√6² + (−2)²)",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Note: Accept correct answer without supporting work for full credit. Note: Full Credit -1 : 6 ∙3 without work. Marked in order: Low Partial Credit.",
-    "group": {
-     "claimMax": 1,
-     "perOption": 5,
-     "options": [
-      "Writes Writes (6² or (−2)²)/(√a² + b²)\nHigh (Partial Credit)/(√6² + (−2)²)"
-     ]
-    }
+    "id": "maths-2023-ol-p1-q2-a-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Writes 6² or (−2)²",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q2-a-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Note: Accept correct answer without supporting work for full credit",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q2-a-iv-solution-3",
+    "kind": "point",
+    "verbatim": "Note: Full Credit -1 : 6 · 3 without work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q2-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q2-a-iv",
+  "stem": "In this question, i² = −1. The complex number z₁ is shown on the Argand diagram below. z₂ and z₃ are two other complex numbers. z₂ = 5 + i and z₃ = 6 − 2i."
  },
  {
   "id": "maths-2023-ol-p1-q2-b",
@@ -19982,7 +19990,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q2(b)",
-  "questionText": "The complex numbers z₄ , z₅ , z₆ , and z₇ are shown on the Argand diagram below. The diagram is to scale",
+  "questionText": "The complex numbers z₄, z₅, z₆, and z₇ are shown on the Argand diagram below. The diagram is to scale. Tick one box to indicate which of z₄, z₅, z₆, or z₇ has the largest modulus. Give a reason for your answer.",
   "figureKey": "maths-2023-OL-paper-p009-i1",
   "labelKey": [],
   "tariffModel": {
@@ -20010,8 +20018,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q2-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q2-b",
+  "stem": "In this question, i² = −1."
  },
  {
   "id": "maths-2023-ol-p1-q3-a",
@@ -20022,7 +20031,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q3(a)",
-  "questionText": "Solve the following equation in x∈ℝ : 3(2x+ 4)−5 = 3",
+  "questionText": "Solve the following equation in x ∈ ℝ: 3(2x + 4) − 5 = 3",
   "figureKey": "maths-2023-OL-paper-p010-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20055,7 +20064,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-OL-ask-p1-q3-a"
  },
  {
@@ -20067,7 +20076,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q3(c)",
-  "questionText": "Use algebra to solve the following simultaneous equations: x−y + 1 = 0 2x + 4y = 19",
+  "questionText": "Use algebra to solve the following simultaneous equations: x − y + 1 = 0; 2x + 4y = 19",
   "figureKey": "maths-2023-OL-paper-p011-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20102,7 +20111,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-OL-ask-p1-q3-c"
  },
  {
@@ -20114,7 +20123,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q4(a)(i)–(iii)",
-  "questionText": "Estimate the value of g(1∙5). Show your work on the graph. g(1∙5) :",
+  "questionText": "(i) Estimate the value of g(1·5). Show your work on the graph. (ii) Estimate the value of x for which g(x) = −6. Show your work on the graph. (iii) Tick one box to show how many real roots the function g(x) has in this domain (0, 1, 2 or 3). Give a reason for your answer.",
   "figureKey": "maths-2023-OL-paper-p012-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20149,8 +20158,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q4-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q4-a-i",
+  "stem": "The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x ∈ ℝ. Use the graph to answer parts (a)(i) to (a)(iv)."
  },
  {
   "id": "maths-2023-ol-p1-q4-a-iv",
@@ -20161,7 +20171,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q4(a)(iv)",
-  "questionText": "(iv) From the graph, estimate the co-ordinates of the local maximum point and the local minimum point of g(x), as accurately as possible",
+  "questionText": "From the graph, estimate the co-ordinates of the local maximum point and the local minimum point of g(x), as accurately as possible.",
   "figureKey": "maths-2023-OL-paper-p012-i1",
   "labelKey": [],
   "tariffModel": {
@@ -20189,8 +20199,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q4-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q4-a-iv",
+  "stem": "The graph of the function g is shown on the co-ordinate diagram below, for −3 ≤ x ≤ 2, x ∈ ℝ. Use the graph to answer parts (a)(i) to (a)(iv)."
  },
  {
   "id": "maths-2023-ol-p1-q4-b-i",
@@ -20201,7 +20212,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q4(b)(i)",
-  "questionText": "Find h′(x), the derivative of h(x)",
+  "questionText": "Find h′(x), the derivative of h(x).",
   "figureKey": "maths-2023-OL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20234,8 +20245,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q4-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q4-b-i",
+  "stem": "A different function, h(x), has the following equation: h(x) = x³ + 2x² − x − 8"
  },
  {
   "id": "maths-2023-ol-p1-q4-b-ii",
@@ -20246,7 +20258,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q4(b)(ii)",
-  "questionText": "Find the equation of the tangent to h(x) at the point (2, 6)",
+  "questionText": "Find the equation of the tangent to h(x) at the point (2, 6).",
   "figureKey": "maths-2023-OL-paper-p013-i1",
   "labelKey": [],
   "tariffModel": {
@@ -20279,8 +20291,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q4-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q4-b-ii",
+  "stem": "A different function, h(x), has the following equation: h(x) = x³ + 2x² − x − 8"
  },
  {
   "id": "maths-2023-ol-p1-q5-a-i",
@@ -20291,7 +20304,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q5(a)(i)",
-  "questionText": "It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at the same rate",
+  "questionText": "It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at the same rate.",
   "figureKey": "maths-2023-OL-paper-p014-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20319,8 +20332,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q5-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q5-a-i",
+  "stem": "A company is repairing a railway line. As part of this work, it is laying new railway tracks."
  },
  {
   "id": "maths-2023-ol-p1-q5-a-ii",
@@ -20331,7 +20345,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q5(a)(ii)",
-  "questionText": "It would take 6 people 8 days to replace the tracks on a different part of the railway line. Work out how long it would take 4 people to replace these tracks, each working at the same speed",
+  "questionText": "It would take 6 people 8 days to replace the tracks on a different part of the railway line. Work out how long it would take 4 people to replace these tracks, each working at the same speed.",
   "figureKey": "maths-2023-OL-paper-p014-i1",
   "labelKey": [],
   "tariffModel": {
@@ -20364,8 +20378,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q5-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q5-a-ii",
+  "stem": "A company is repairing a railway line. As part of this work, it is laying new railway tracks."
  },
  {
   "id": "maths-2023-ol-p1-q5-b-i",
@@ -20376,7 +20391,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q5(b)(i)",
-  "questionText": "Work out the time it takes the train to get from A to B. Give your answer in hours, as a fraction",
+  "questionText": "Work out the time it takes the train to get from A to B. Give your answer in hours, as a fraction.",
   "figureKey": "maths-2023-OL-paper-p014-i2",
   "labelKey": [],
   "tariffModel": {
@@ -20404,8 +20419,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q5-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q5-b-i",
+  "stem": "Two towns, A and B, are 120 km apart. A train travels from A to B at an average speed of 180 km/hour."
  },
  {
   "id": "maths-2023-ol-p1-q5-b-ii",
@@ -20416,7 +20432,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q5(b)(ii)",
-  "questionText": "On the way back from B to A, the train travels at an average speed of 220 km/hour. Work out the average speed of the train for the entire journey, while it is travelling from A to B and back again. Give your answer in km/hour",
+  "questionText": "On the way back from B to A, the train travels at an average speed of 220 km/hour. Work out the average speed of the train for the entire journey, while it is travelling from A to B and back again. Give your answer in km/hour. Hint: first work out the total time taken for the entire journey.",
   "figureKey": "maths-2023-OL-paper-p015-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20451,8 +20467,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q5-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q5-b-ii",
+  "stem": "Two towns, A and B, are 120 km apart. A train travels from A to B at an average speed of 180 km/hour."
  },
  {
   "id": "maths-2023-ol-p1-q6-a-i",
@@ -20463,7 +20480,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q6(a)(i)",
-  "questionText": "Find the value of g(−5)",
+  "questionText": "Find the value of g(−5).",
   "figureKey": "maths-2023-OL-paper-p016-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20491,8 +20508,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q6-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q6-a-i",
+  "stem": "g(x) is the following function in x ∈ ℝ: g(x) = x² + 8x − 6"
  },
  {
   "id": "maths-2023-ol-p1-q6-a-ii",
@@ -20503,7 +20521,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q6(a)(ii)",
-  "questionText": "Use calculus to find the value of x which gives the minimum value of g(x)",
+  "questionText": "Use calculus to find the value of x which gives the minimum value of g(x).",
   "figureKey": "maths-2023-OL-paper-p016-i1",
   "labelKey": [],
   "tariffModel": {
@@ -20531,8 +20549,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q6-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q6-a-ii",
+  "stem": "g(x) is the following function in x ∈ ℝ: g(x) = x² + 8x − 6"
  },
  {
   "id": "maths-2023-ol-p1-q6-b",
@@ -20543,7 +20562,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q6(b)",
-  "questionText": "Expand and simplify (2x−4)²−6",
+  "questionText": "Expand and simplify (2x − 4)² − 6.",
   "figureKey": "maths-2023-OL-paper-p016-i2",
   "labelKey": [],
   "tariffModel": {
@@ -20576,7 +20595,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-OL-ask-p1-q6-b"
  },
  {
@@ -20588,7 +20607,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q6(c)",
-  "questionText": "Solve the following equation in x: 9x2+ 6x−5 = 0 Give each answer correct to 2 decimal places",
+  "questionText": "Solve the following equation in x: 9x² + 6x − 5 = 0. Give each answer correct to 2 decimal places.",
   "figureKey": "maths-2023-OL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20621,7 +20640,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-OL-ask-p1-q6-c"
  },
  {
@@ -20633,7 +20652,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q7(a)(i)",
-  "questionText": "Find the value of C when S = 15",
+  "questionText": "Find the value of C when S = 15.",
   "figureKey": "maths-2023-OL-paper-p018-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20661,8 +20680,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q7-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q7-a-i",
+  "stem": "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil."
  },
  {
   "id": "maths-2023-ol-p1-q7-a-ii",
@@ -20673,7 +20693,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q7(a)(ii)",
-  "questionText": "When S increases, does C increase or decrease?",
+  "questionText": "When S increases, does C increase or decrease? Justify your answer, using the equation C = 1000/(S + 10).",
   "figureKey": "maths-2023-OL-paper-p018-i1",
   "labelKey": [],
   "tariffModel": {
@@ -20701,8 +20721,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q7-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q7-a-ii",
+  "stem": "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil."
  },
  {
   "id": "maths-2023-ol-p1-q7-a-iii",
@@ -20713,7 +20734,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q7(a)(iii)",
-  "questionText": "(iii) Rearrange the equation to write S in terms of C",
+  "questionText": "Rearrange the equation to write S in terms of C.",
   "figureKey": "maths-2023-OL-paper-p018-i2",
   "labelKey": [],
   "tariffModel": {
@@ -20746,8 +20767,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q7-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q7-a-iii",
+  "stem": "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil."
  },
  {
   "id": "maths-2023-ol-p1-q7-a-iv",
@@ -20758,7 +20780,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q7(a)(iv)",
-  "questionText": "(iv) The values for C go from 30 to 100. Use your answer from part (a)(iii), or otherwise, to find the range of values of S",
+  "questionText": "The values for C go from 30 to 100. Use your answer from part (a)(iii), or otherwise, to find the range of values of S.",
   "figureKey": "maths-2023-OL-paper-p019-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20791,8 +20813,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q7-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q7-a-iv",
+  "stem": "When it rains on land, some of the rain soaks into the land, and the rest runs off the land. The runoff curve number, C, is a number used when estimating the amount of rain that runs off a particular area of land. C is given by: C = 1000/(S + 10), where S is a measure of the maximum amount of rain that can soak into the soil."
  },
  {
   "id": "maths-2023-ol-p1-q7-b-i",
@@ -20803,7 +20826,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q7(b)(i)",
-  "questionText": "Write down the probability that it is raining at the start and the end of the day, that is, find the value of P(0) and P(24)",
+  "questionText": "Write down the probability that it is raining at the start and the end of the day, that is, find the value of P(0) and P(24).",
   "figureKey": "maths-2023-OL-paper-p019-i1",
   "labelKey": [],
   "tariffModel": {
@@ -20836,8 +20859,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q7-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q7-b-i",
+  "stem": "Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ."
  },
  {
   "id": "maths-2023-ol-p1-q7-b-ii",
@@ -20848,7 +20872,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q7(b)(ii)",
-  "questionText": "Find the value of P′(t), the derivative of t, and explain what the value of P′(t) means in this context",
+  "questionText": "Find the value of P′(t), the derivative of t, and explain what the value of P′(t) means in this context.",
   "figureKey": "maths-2023-OL-paper-p019-i2",
   "labelKey": [],
   "tariffModel": {
@@ -20876,8 +20900,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q7-b-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q7-b-ii",
+  "stem": "Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ."
  },
  {
   "id": "maths-2023-ol-p1-q7-b-iii",
@@ -20888,7 +20913,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q7(b)(iii)",
-  "questionText": "At a certain time, the probability that it is raining, according to this model, is 0∙35. Work out the probability that it is raining exactly 1 hour later, according to this model",
+  "questionText": "At a certain time, the probability that it is raining, according to this model, is 0·35. Work out the probability that it is raining exactly 1 hour later, according to this model.",
   "figureKey": "maths-2023-OL-paper-p019-i3",
   "labelKey": [],
   "tariffModel": {
@@ -20916,8 +20941,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q7-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q7-b-iii",
+  "stem": "Over the course of one day (24 hours), the probability that it is raining in Waterville, P(t), could be modelled by the following function: P(t) = 0·3 + 0·02t. Here, P(t) is the probability that it is raining t hours after the start of the day, with 0 ≤ t ≤ 24, t ∈ ℝ."
  },
  {
   "id": "maths-2023-ol-p1-q8-a",
@@ -20928,7 +20954,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q8(a)",
-  "questionText": "Find the area of the whole garden (that is, the total area of the rectangle)",
+  "questionText": "Find the area of the whole garden (that is, the total area of the rectangle).",
   "figureKey": "maths-2023-OL-paper-p020-i0",
   "labelKey": [],
   "tariffModel": {
@@ -20956,8 +20982,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q8-a"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q8-a",
+  "stem": "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale)."
  },
  {
   "id": "maths-2023-ol-p1-q8-b",
@@ -20968,7 +20995,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q8(b)",
-  "questionText": "The width of the pond is measured at intervals of 3 metres, starting at the right-hand edge of the pond. These measurements are given on the diagram, correct to the nearest metre",
+  "questionText": "The width of the pond is measured at intervals of 3 metres, starting at the right-hand edge of the pond. These measurements are given on the diagram, correct to the nearest metre (2, 8, 10, 12, 14, 10 m and 0 at the left-hand point). Use the Trapezoidal Rule (and the measurements in the diagram above) to work out an estimate for the area of the pond.",
   "figureKey": "maths-2023-OL-paper-p020-i1",
   "labelKey": [],
   "tariffModel": {
@@ -21001,8 +21028,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q8-b"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q8-b",
+  "stem": "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale)."
  },
  {
   "id": "maths-2023-ol-p1-q8-c",
@@ -21013,7 +21041,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q8(c)",
-  "questionText": "Suggest a way by which the Trapezoidal Rule could be used (with different measurements) to get a potentially more accurate estimate of the area of the pond",
+  "questionText": "Suggest a way by which the Trapezoidal Rule could be used (with different measurements) to get a potentially more accurate estimate of the area of the pond.",
   "figureKey": "maths-2023-OL-paper-p020-i2",
   "labelKey": [],
   "tariffModel": {
@@ -21041,8 +21069,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q8-c"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q8-c",
+  "stem": "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale)."
  },
  {
   "id": "maths-2023-ol-p1-q8-d",
@@ -21053,7 +21082,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q8(d)",
-  "questionText": "Apart from the pond, the rest of the rectangular garden is covered in grass. The actual area of the pond is 172 m²",
+  "questionText": "Apart from the pond, the rest of the rectangular garden is covered in grass. The actual area of the pond is 172 m². All of the grass in the garden needs to be resown. The cost is €2·55 per square metre that needs to be resown. Work out the cost of resowing the grass. Give your answer correct to the nearest ten euro.",
   "figureKey": "maths-2023-OL-paper-p020-i3",
   "labelKey": [],
   "tariffModel": {
@@ -21086,8 +21115,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q8-d"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q8-d",
+  "stem": "A rectangular garden (50 m by 30 m) contains an irregularly shaped pond of length 18 m, as shown in the diagram below (not to scale)."
  },
  {
   "id": "maths-2023-ol-p1-q8-e",
@@ -21098,40 +21128,37 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q8(e)",
-  "questionText": "Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16∙9%. Work out the cost of the materials before the Import Duty was added. Give your answer correct to the nearest penny (that is, to 2 decimal places)",
+  "questionText": "Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16·9%. Work out the cost of the materials before the Import Duty was added. Give your answer correct to the nearest penny (that is, to 2 decimal places).",
   "figureKey": "maths-2023-OL-paper-p021-i0",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 6, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2023-ol-p1-q8-e-r1",
-    "kind": "anyN",
-    "verbatim": "Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Apply F* if incorrect or no rounding. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 4,
-     "options": [
-      "Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169",
-      "116∙9 840 × 100 or 840/1∙169"
-     ],
-     "perOptionSteps": [
-      4,
-      6
-     ]
-    }
+    "id": "maths-2023-ol-p1-q8-e-solution-1",
+    "kind": "point",
+    "verbatim": "= £718 · 56 [nearest penny]",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q8-e-solution-2",
+    "kind": "point",
+    "verbatim": "Writes 116 · 9% or 100 + 16 · 9 or 1 · 169",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q8-e-solution-3",
+    "kind": "point",
+    "verbatim": "Note: Apply F* if incorrect or no rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-OL-ask-p1-q8-e"
  },
  {
@@ -21143,43 +21170,53 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q8(f)",
-  "questionText": "The gardener paid the £840 in euro. The exchange rate was €1 = £0∙8547. He also paid a fee of 2∙5% of the £840 as a commission",
+  "questionText": "The gardener paid the £840 in euro. The exchange rate was €1 = £0·8547. He also paid a fee of 2·5% of the £840 as a commission. Work out how much he paid in total, in euro, correct to the nearest cent.",
   "figureKey": "maths-2023-OL-paper-p021-i1",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 6, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "questionTotal"
   },
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2023-ol-p1-q8-f-r1",
-    "kind": "anyN",
-    "verbatim": "(f) 840/(0 ∙ 8547) × 1 ∙ 025 = 1007 ∙ 371007",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Note: Apply F* if incorrect or no rounding. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 4,
-     "options": [
-      "(f) 840/(0 ∙ 8547) × 1 ∙ 025 = 1007 ∙ 371007",
-      "€1007 ∙37",
-      "Mathematics – Ordinary Level"
-     ],
-     "perOptionSteps": [
-      4,
-      2,
-      4
-     ]
-    }
+    "id": "maths-2023-ol-p1-q8-f-solution-1",
+    "kind": "point",
+    "verbatim": "€1007 · 37",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q8-f-solution-2",
+    "kind": "point",
+    "verbatim": "Work of merit in either the exchange rate calculation or the commission calculation",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q8-f-solution-3",
+    "kind": "point",
+    "verbatim": "Writes 21 or 861",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q8-f-solution-4",
+    "kind": "point",
+    "verbatim": "Writes 982.80 with or without work",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q8-f-solution-5",
+    "kind": "point",
+    "verbatim": "Note: Apply F* if incorrect or no rounding",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q8-f"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q8-f",
+  "stem": "Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840."
  },
  {
   "id": "maths-2023-ol-p1-q9-a-i",
@@ -21190,7 +21227,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q9(a)(i)",
-  "questionText": "From the diagram, estimate the number of actual new cases there were on day t = 12, using the relevant dot",
+  "questionText": "From the diagram, estimate the number of actual new cases there were on day t = 12, using the relevant dot.",
   "figureKey": "maths-2023-OL-paper-p022-i0",
   "labelKey": [],
   "tariffModel": {
@@ -21218,8 +21255,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q9-a-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q9-a-i",
+  "stem": "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time."
  },
  {
   "id": "maths-2023-ol-p1-q9-a-ii",
@@ -21230,7 +21268,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q9(a)(ii)",
-  "questionText": "Work out the percentage error in the model’s value for day t = 12. Use your answer to part (a)(i) above as the actual value for day t = 12. Give your answer correct to the nearest percent",
+  "questionText": "According to the model (the curve), there were 1000 new cases on day t = 12. Work out the percentage error in the model’s value for day t = 12. Use your answer to part (a)(i) above as the actual value for day t = 12. Give your answer correct to the nearest percent.",
   "figureKey": "maths-2023-OL-paper-p022-i1",
   "labelKey": [],
   "tariffModel": {
@@ -21258,8 +21296,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q9-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q9-a-ii",
+  "stem": "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time."
  },
  {
   "id": "maths-2023-ol-p1-q9-a-iii",
@@ -21270,7 +21309,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q9(a)(iii)",
-  "questionText": "(iii) Show that it takes approximately 5 days for the daily number of new cases to double, according to the model (that is, according to the curve in the diagram)",
+  "questionText": "Show that it takes approximately 5 days for the daily number of new cases to double, according to the model (that is, according to the curve in the diagram).",
   "figureKey": "maths-2023-OL-paper-p022-i2",
   "labelKey": [],
   "tariffModel": {
@@ -21298,8 +21337,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q9-a-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q9-a-iii",
+  "stem": "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time."
  },
  {
   "id": "maths-2023-ol-p1-q9-a-iv",
@@ -21310,7 +21350,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q9(a)(iv)",
-  "questionText": "(iv) Hence, estimate on what day (value of t) the number of new cases will first be at least 100 000, according to the model. Show your working out",
+  "questionText": "Hence, estimate on what day (value of t) the number of new cases will first be at least 100 000, according to the model. Show your working out.",
   "figureKey": "maths-2023-OL-paper-p022-i3",
   "labelKey": [],
   "tariffModel": {
@@ -21343,8 +21383,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q9-a-iv"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q9-a-iv",
+  "stem": "The diagram below shows the actual daily number of new cases of a disease, from day t = 0 to day t = 25. It also shows the number of cases according to a mathematical model over this period of time. The daily number of new cases doubles approximately every 5 days, according to the model."
  },
  {
   "id": "maths-2023-ol-p1-q9-b-i",
@@ -21355,7 +21396,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q9(b)(i), (ii)",
-  "questionText": "Fill in the table below to show the values of D(t) for the given values of t. Give each value correct to the nearest whole number",
+  "questionText": "(i) Fill in the table below to show the values of D(t) for the given values of t. Give each value correct to the nearest whole number. The table gives D(2) = 2924 and D(6) = 5669 and leaves t = 0, 1, 3, 4 and 5 to complete. (ii) Draw the graph of y = D(t) on the axes below, for 0 ≤ t ≤ 6 and t ∈ ℝ.",
   "figureKey": "maths-2023-OL-paper-p023-i0",
   "labelKey": [],
   "tariffModel": {
@@ -21390,8 +21431,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q9-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q9-b-i",
+  "stem": "The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1·18^t, where D is the daily number of new cases and t is the time in days from t = 0 to t = 14."
  },
  {
   "id": "maths-2023-ol-p1-q9-b-iii",
@@ -21402,7 +21444,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q9(b)(iii)",
-  "questionText": "(iii) Measures are put in place to slow down the spread of the disease. From t = 14 days onwards, the number of new daily cases starts to decrease",
+  "questionText": "Measures are put in place to slow down the spread of the disease. From t = 14 days onwards, the number of new daily cases starts to decrease. For t ≥ 14, the daily number of new cases on day t can be modelled by: K(t) = a × 0·83^t. On t = 14 days, there are 21 309 cases, according to this model. Use this to work out the value of a. Give your answer in the form b × 10ⁿ, where 1 ≤ b < 10, n ∈ ℕ, and b is correct to 2 decimal places.",
   "figureKey": "maths-2023-OL-paper-p023-i1",
   "labelKey": [],
   "tariffModel": {
@@ -21435,8 +21477,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q9-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q9-b-iii",
+  "stem": "The daily number of new cases of a different disease can be modelled using the function: D(t) = 2100 × 1·18^t, where D is the daily number of new cases and t is the time in days from t = 0 to t = 14."
  },
  {
   "id": "maths-2023-ol-p1-q10-a-i",
@@ -21447,7 +21490,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q10(a)(i)",
-  "questionText": "Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. Give your answer correct to the nearest mm³",
+  "questionText": "Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. Give your answer correct to the nearest mm³.",
   "figureKey": "maths-2023-OL-paper-p024-i0",
   "labelKey": [],
   "tariffModel": {
@@ -21475,7 +21518,7 @@
     }
    }
   ],
-  "notes": "",
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2023-OL-ask-p1-q10-a-i"
  },
  {
@@ -21487,7 +21530,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q10(a)(ii)",
-  "questionText": "A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm from the cylinder in part (a)(i)",
+  "questionText": "A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm from the cylinder in part (a)(i). Work out the volume of metal in this ring, correct to the nearest mm³.",
   "figureKey": "maths-2023-OL-paper-p024-i1",
   "labelKey": [],
   "tariffModel": {
@@ -21520,8 +21563,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q10-a-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q10-a-ii",
+  "stem": "Part (a)(i) is a cylinder with a diameter of 18 mm and a height of 5 mm."
  },
  {
   "id": "maths-2023-ol-p1-q10-b-i",
@@ -21532,7 +21576,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q10(b)(i), (ii)",
-  "questionText": "One particular ring weighs 8 grams. It contains 3 grams of pure gold",
+  "questionText": "(i) One particular ring weighs 8 grams. It contains 3 grams of pure gold. Work out the percentage of the weight of this ring that is pure gold. (ii) Pink gold is made up of pure gold, copper, and silver. The ratio of the weight of pure gold to copper to silver is 15 : 4 : 1, respectively. Work out the number of grams of pure gold in a pink gold ring that weighs 25 grams.",
   "figureKey": "maths-2023-OL-paper-p024-i2",
   "labelKey": [],
   "tariffModel": {
@@ -21567,8 +21611,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q10-b-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q10-b-i",
+  "stem": "Many gold rings are made of a mixture of pure gold and other metals."
  },
  {
   "id": "maths-2023-ol-p1-q10-b-iii",
@@ -21579,7 +21624,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q10(b)(iii)",
-  "questionText": "(iii) Rose gold is made up of 75% pure gold, 22∙25% copper, and 2∙75% silver. Express the ratio of pure gold : copper : silver in rose gold in the ratio a∶b∶c, in its simplest form, where a, b, c∈ℕ",
+  "questionText": "Rose gold is made up of 75% pure gold, 22·25% copper, and 2·75% silver. Express the ratio of pure gold : copper : silver in rose gold in the ratio a : b : c, in its simplest form, where a, b, c ∈ ℕ.",
   "figureKey": "maths-2023-OL-paper-p025-i0",
   "labelKey": [],
   "tariffModel": {
@@ -21612,8 +21657,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q10-b-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q10-b-iii",
+  "stem": "Many gold rings are made of a mixture of pure gold and other metals."
  },
  {
   "id": "maths-2023-ol-p1-q10-c-i",
@@ -21624,7 +21670,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q10(c)(i)",
-  "questionText": "Work out the cost per year of insuring a ring valued at €1800",
+  "questionText": "Work out the cost per year of insuring a ring valued at €1800.",
   "figureKey": "maths-2023-OL-paper-p025-i1",
   "labelKey": [],
   "tariffModel": {
@@ -21657,8 +21703,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q10-c-i"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q10-c-i",
+  "stem": "The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000."
  },
  {
   "id": "maths-2023-ol-p1-q10-c-ii",
@@ -21669,7 +21716,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q10(c)(ii)",
-  "questionText": "The cost of insuring a particular necklace is €142∙80 per year. Work out the value of this necklace",
+  "questionText": "The cost of insuring a particular necklace is €142·80 per year. Work out the value of this necklace.",
   "figureKey": "maths-2023-OL-paper-p025-i2",
   "labelKey": [],
   "tariffModel": {
@@ -21702,8 +21749,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q10-c-ii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q10-c-ii",
+  "stem": "The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000."
  },
  {
   "id": "maths-2023-ol-p1-q10-c-iii",
@@ -21714,7 +21762,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q10(c)(iii)",
-  "questionText": "(iii) A brooch is valued at €17 500. The cost per year of insuring the brooch is €435",
+  "questionText": "A brooch is valued at €17 500. The cost per year of insuring the brooch is €435. Work out r, the rate of the insurance charged on the amount of the value of the brooch which is in excess of €10 000. Give your answer as a percentage, correct to 1 decimal place.",
   "figureKey": "maths-2023-OL-paper-p025-i3",
   "labelKey": [],
   "tariffModel": {
@@ -21749,8 +21797,9 @@
     }
    }
   ],
-  "notes": "",
-  "questionFigureKey": "maths-2023-OL-ask-p1-q10-c-iii"
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q10-c-iii",
+  "stem": "The cost of insuring a piece of jewellery depends on its value. The table below shows the rates charged per year by one insurance company, where r ∈ ℝ, r > 0: first €1000 at 1% of the value; next €9000 at 2% of the excess over €1000, plus the cost of insuring the first €1000; amount in excess of €10 000 at r% of the excess over €10 000, plus the cost of insuring the first €10 000."
  },
  {
   "id": "maths-2023-ol-p2-q1-a-i",
@@ -62066,5 +62115,65 @@
    }
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2023 Higher Level Paper 2 on 2026-10-11; exact question and scheme pages attached by the independent review."
+ },
+ {
+  "id": "maths-2023-ol-p1-q3-b",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-q3-b",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2023 OL Paper 1 Q3(b)(i)–(iii)",
+  "questionText": "Graph each of the following inequalities on the given number line (−4 to 4). Note that x comes from a different set of numbers in each case. (i) x ≤ 2·8, where x ∈ ℝ. (ii) x ≤ 2·8, where x ∈ ℤ. (iii) x ≤ 2·8, where x ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Work of merit, for example, shows knowledge of ℝ, ℤ, or ℕ.",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "One of the three inequalities graphed correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Work of merit in 2 or 3 inequalities",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q3-b-solution-4",
+    "kind": "point",
+    "verbatim": "Two of the inequalities graphed correctly",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q3-b-solution-5",
+    "kind": "point",
+    "verbatim": "Note: Accept 0 in (iii)",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   },
+   {
+    "id": "maths-2023-ol-p1-q3-b-solution-6",
+    "kind": "point",
+    "verbatim": "Note: Apply a * the first time ≥ is used instead of ≤; accept it thereafter",
+    "marks": null,
+    "contextNote": "The original scheme reader provides the full solution, including graphical answers and all credit notes."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2023 Ordinary Level Paper 1 on 2026-10-11; exact question and scheme pages attached by the independent review."
  }
 ]
