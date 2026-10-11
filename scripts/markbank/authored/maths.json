@@ -55084,7 +55084,7 @@
   "subjectId": "maths",
   "section": "A",
   "questionRef": "2026 HL Paper 1 Q2(a)",
-  "questionText": "By writing the recurring part as an infinite geometric series, express the following number in the form a/b where a, b ∈ ℕ: 4·36363636 … (the digits 36 recur)",
+  "questionText": "By writing the recurring part as an infinite geometric series, express the following number in the form a/b where a, b ∈ ℕ: 4·36363636 …",
   "tariffModel": {
    "kind": "questionTotal"
   },

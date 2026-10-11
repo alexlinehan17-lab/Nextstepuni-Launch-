@@ -234,7 +234,7 @@
       "examTopicIds": [
         "mathematics-higher-sequences-series"
       ],
-      "questionText": "By writing the recurring part as an infinite geometric series, express the following number in the form a/b where a, b ∈ ℕ: 4·36363636 … (the digits 36 recur)",
+      "questionText": "By writing the recurring part as an infinite geometric series, express the following number in the form a/b where a, b ∈ ℕ: 4·36363636 …",
       "solutionQuotes": [
         "Formula for sum of infinite geometric series substituted correctly",
         "Work of merit, for example, identifies a or r, or writes two relevant terms in geometric sequence",

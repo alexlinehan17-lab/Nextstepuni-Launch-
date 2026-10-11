@@ -13317,7 +13317,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2026 Higher Level — © State Examinations Commission.",
     id: "maths-2026-hl-p1-q2-a", topicId: "maths-4-1", conceptId: "p1-q2-a",
     section: "A", questionRef: "2026 HL Paper 1 Q2(a)",
-    questionText: "By writing the recurring part as an infinite geometric series, express the following number in the form a/b where a, b ∈ ℕ: 4·36363636 … (the digits 36 recur)",
+    questionText: "By writing the recurring part as an infinite geometric series, express the following number in the form a/b where a, b ∈ ℕ: 4·36363636 …",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "maths-2026-hl-p1-q2-a-solution-1", kind: "point", verbatim: "Formula for sum of infinite geometric series substituted correctly", marks: null, contextNote: "The original scheme reader provides the full solution, including graphical answers and all credit notes." },
