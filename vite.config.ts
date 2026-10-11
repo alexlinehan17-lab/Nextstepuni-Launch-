@@ -278,6 +278,11 @@ export default defineConfig(() => {
               // subject must not push either the renderer over the 2 MiB raw-JS
               // ceiling or the static-data chunks over the 1.2 MB warning
               // threshold. They are still fetched only when Paper Trail opens.
+              // French's reviewed task identities (every writing route, cloze gap,
+              // reading and listening task, 2010-2026) are the largest exam-topic
+              // registry; on their own they keep exam-topic-data under the 3 MiB
+              // precache ceiling instead of silently dropping it from the cache.
+              if (id.includes('/data/examTopics/french-')) return 'exam-topic-french';
               if (id.includes('/data/examTopics/')) return 'exam-topic-data';
               if (id.includes('/data/paperTrail/')) return 'paper-topic-data';
               // Vite's __vitePreload helper and Rollup's CJS interop helpers are
